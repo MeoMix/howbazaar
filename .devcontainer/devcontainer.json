@@ -10,9 +10,16 @@
 			"version": "22"
 		}
 	},
-	"postCreateCommand": "git config --global --add safe.directory $(pwd)"
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [],
+	"forwardPorts": [5173],
+	"postCreateCommand": "git config --global --add safe.directory $(pwd)",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"svelte.svelte-vscode"
+			]
+		}
+	}
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "uname -a",
 	// Configure tool-specific properties.
