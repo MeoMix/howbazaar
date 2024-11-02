@@ -1,17 +1,27 @@
 <script lang="ts">
     import data from "$lib/v2_Cards.json";
 
-    type TierType = "Bronze" | "Silver" | "Gold" | "Diamond";
+    const tierOrder = [
+        "Bronze",
+        "Silver",
+        "Gold",
+        "Diamond",
+        "Legendary",
+    ] as const;
+
+    type TierType = (typeof tierOrder)[number];
 
     type Tier = {
         Attributes: { [key: string]: number };
     };
 
-    type Tiers = {
-        Bronze?: Tier;
-        Silver?: Tier;
-        Gold?: Tier;
-        Diamond?: Tier;
+    type Tiers = Partial<Record<TierType, Tier>>;
+
+    type Ability = {
+        TranslationKey: string;
+        Action: {
+            AttributeType?: string;
+        };
     };
 
     interface TCardItem {
@@ -25,9 +35,7 @@
             }>;
         };
         Abilities: {
-            [key: string]: {
-                TranslationKey: string;
-            };
+            [key: string]: Ability;
         };
         Auras: {
             [key: string]: {
@@ -39,7 +47,7 @@
                 };
             };
         };
-        StartingTier: string;
+        StartingTier: TierType;
         Tags: string[];
         HiddenTags: string[];
         Heroes: string[];
@@ -50,8 +58,6 @@
         $type: "TCardEncounterStep";
     }
 
-    type Entry = TCardItem | TCardEncounterStep;
-
     function isTCardItem(entry: any): entry is TCardItem {
         return entry.$type === "TCardItem" && "Tiers" in entry;
     }
@@ -60,7 +66,9 @@
         return cardItem.SpawningEligibility === "Always";
     }
 
-    const tierOrder = ["Bronze", "Silver", "Gold", "Diamond"] as const;
+    function getAbilityValue(ability: Ability): string | undefined {
+        return undefined;
+    }
 
     const filteredEntries = Object.values(data).filter(
         isTCardItem,
@@ -68,8 +76,8 @@
 
     const filteredCardItems = filteredEntries.filter(isSpawningEligibleCard);
 
-    function extractAbilities(attributes: Tier["Attributes"]): string[] {
-        const abilities: string[] = [];
+    function extractAbilityNames(attributes: Tier["Attributes"]): string[] {
+        const abilityNames: string[] = [];
 
         // Get all keys from the item in the order they appear
         const keys = Object.keys(attributes);
@@ -97,23 +105,20 @@
             const prefixMatch = key.match(/^[a-z]+|^[A-Z][a-z]*/);
             if (prefixMatch) {
                 const ability = prefixMatch[0];
-                // Add to abilities array only if it's not already included
-                if (!abilities.includes(ability)) {
-                    abilities.push(ability);
+                // Add to abilityNames array only if it's not already included
+                if (!abilityNames.includes(ability)) {
+                    abilityNames.push(ability);
                 }
             }
         }
 
-        return abilities;
+        return abilityNames;
     }
 
     const cardItems = filteredCardItems.map((entry: TCardItem) => {
-        const tierAttributes: Record<TierType, any> = {
-            Bronze: {},
-            Silver: {},
-            Gold: {},
-            Diamond: {},
-        };
+        const tierAttributes = Object.fromEntries(
+            tierOrder.map((tier) => [tier, {}]),
+        ) as Record<TierType, any>;
 
         let accumulatedAttributes = {};
 
@@ -133,32 +138,21 @@
             }
         }
 
-        const startingTier = entry.StartingTier as
-            | "Bronze"
-            | "Silver"
-            | "Gold"
-            | "Diamond";
+        const startingTier = entry.StartingTier;
         let hiddenTags = entry.HiddenTags;
 
-        // TODO: Why can this be empty?
-        let startingTierAttributes = tierAttributes[startingTier];
-
-        const extractedAbilities = startingTierAttributes
-            ? extractAbilities(startingTierAttributes)
-            : [];
-
-        if (entry.Localization.Title.Text === "DJ Rob0t") {
-            debugger;
-        }
+        const startingTierAttributes = tierAttributes[startingTier];
+        const extractedAbilityNames = extractAbilityNames(startingTierAttributes);
 
         // There are localization entries which aren't used - filter out the unused entries rather than relying on localization as a single source of truth
-        const abilityLocalizationKeys = Object.values(entry.Abilities).map(
-            ({ TranslationKey }) => TranslationKey,
-        );
+        const abilities = Object.values(entry.Abilities);
 
         // Sadly, there are also duplicate keys! Need to take just the last instance when duplicates exist.
         // Create a Map to store only the last occurrence of each Content.Key
-        const uniqueTooltips = new Map<string, { text: string }>();
+        const uniqueTooltips = new Map<
+            string,
+            { text: string; ability: Ability }
+        >();
 
         // Loop through Tooltips in reverse to ensure only the last occurrence is stored
         for (let i = entry.Localization.Tooltips.length - 1; i >= 0; i--) {
@@ -166,20 +160,30 @@
             const key = tooltip.Content.Key;
 
             // Only add to the Map if the key is in abilityLocalizationKeys and hasn't been added yet
-            if (
-                abilityLocalizationKeys.includes(key) &&
-                !uniqueTooltips.has(key)
-            ) {
-                uniqueTooltips.set(key, { text: tooltip.Content.Text });
+            let ability = abilities.find(
+                (entry) => entry.TranslationKey === key,
+            );
+
+            if (ability && !uniqueTooltips.has(key)) {
+                uniqueTooltips.set(key, {
+                    text: tooltip.Content.Text,
+                    ability,
+                });
             }
         }
 
         const rawAbilities = Array.from(uniqueTooltips.entries())
-            .filter(([key]) => abilityLocalizationKeys.includes(key))
+            .filter(([key]) =>
+                abilities.some((entry) => entry.TranslationKey === key),
+            )
             .sort(
                 (a, b) =>
-                    abilityLocalizationKeys.indexOf(a[0]) -
-                    abilityLocalizationKeys.indexOf(b[0]),
+                    abilities.findIndex(
+                        (entry) => entry.TranslationKey === a[0],
+                    ) -
+                    abilities.findIndex(
+                        (entry) => entry.TranslationKey === b[0],
+                    ),
             )
             .map(([, value]) => value);
 
@@ -191,23 +195,23 @@
             });
         };
 
-        const getAttributeByAbility = (
-            ability: string,
+        const getAttributeByAbilityName = (
+            abilityName: string,
             suffix: string,
         ): string => {
             // Determine attribute name based on tag and suffix
             let attribute = "";
 
             if (
-                ability === "Burn" ||
-                ability === "Shield" ||
-                ability == "Poison"
+                abilityName === "Burn" ||
+                abilityName === "Shield" ||
+                abilityName == "Poison"
             ) {
-                attribute = `${ability}Apply${suffix}`;
-            } else if (ability === "AmmoReference") {
+                attribute = `${abilityName}Apply${suffix}`;
+            } else if (abilityName === "AmmoReference") {
                 attribute = `Reload${suffix}`;
             } else {
-                attribute = `${ability}${suffix}`;
+                attribute = `${abilityName}${suffix}`;
             }
 
             return attribute;
@@ -215,6 +219,7 @@
 
         const formattedAbilities = rawAbilities.map((ability) => {
             let modifiedText = ability.text;
+            let test = getAbilityValue(ability.ability);
 
             let customOffset = 0;
 
@@ -234,8 +239,11 @@
                 // Iterate over each placeholder to replace them if found
                 placeholders.forEach(({ placeholder, suffix }) => {
                     if (modifiedText?.includes(placeholder)) {
-                        let ability = extractedAbilities[abilityIndex];
-                        let attribute = getAttributeByAbility(ability, suffix);
+                        let abilityName = extractedAbilityNames[abilityIndex];
+                        let attribute = getAttributeByAbilityName(
+                            abilityName,
+                            suffix,
+                        );
 
                         // Retrieve the value from the tier attributes
                         let tierAttribute = tierAttributes[startingTier];
@@ -258,12 +266,12 @@
                         // This seems like an especially egregious issue in the quality of the input data, but it is what it is.
                         // Should track when this occurs because it could lead to quality issues in the app.
                         if (value === undefined) {
-                            let ability =
-                                extractedAbilities[
-                                    extractedAbilities.length - 1
+                            let abilityName =
+                                extractedAbilityNames[
+                                    extractedAbilityNames.length - 1
                                 ];
-                            let attribute = getAttributeByAbility(
-                                ability,
+                            let attribute = getAttributeByAbilityName(
+                                abilityName,
                                 suffix,
                             );
                             value = tierAttribute
