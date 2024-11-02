@@ -29,6 +29,16 @@
                 TranslationKey: string;
             };
         };
+        Auras: {
+            [key: string]: {
+                Action: {
+                    // AttributeType: string;
+                    Value: {
+                        AttributeType: string;
+                    };
+                };
+            };
+        };
         StartingTier: string;
         Tags: string[];
         HiddenTags: string[];
@@ -63,10 +73,12 @@
 
         // Get all keys from the item in the order they appear
         const keys = Object.keys(attributes);
-        const multicastIndex = keys.indexOf("Multicast");
-        const sellPriceIndex = keys.lastIndexOf("SellPrice");
+        const startIndex = keys.indexOf("Multicast");
+        // NOTE: Vanessa's Tripwire doesn't include Multicast at all. In this scenario, SellPrice is what I need to use.
+        // Maybe the rule should be that items which don't have CooldownMax won't have MultiCast.
+        // const sellPriceIndex = keys.lastIndexOf("SellPrice");
 
-        const startIndex = Math.max(multicastIndex, sellPriceIndex);
+        // const startIndex = Math.max(multicastIndex, sellPriceIndex);
 
         if (startIndex === -1) {
             return [];
@@ -135,8 +147,8 @@
             ? extractAbilities(startingTierAttributes)
             : [];
 
-        if (entry.Localization.Title.Text === "Lighthouse") {
-            console.log("extractedAbilities", extractedAbilities);
+        if (entry.Localization.Title.Text === "DJ Rob0t") {
+            debugger;
         }
 
         // There are localization entries which aren't used - filter out the unused entries rather than relying on localization as a single source of truth
@@ -162,10 +174,14 @@
             }
         }
 
-        // Convert the Map back to an array, preserving the order of abilityLocalizationKeys
-        const rawAbilities = abilityLocalizationKeys
-            .filter((key) => uniqueTooltips.has(key))
-            .map((key) => uniqueTooltips.get(key)!);
+        const rawAbilities = Array.from(uniqueTooltips.entries())
+            .filter(([key]) => abilityLocalizationKeys.includes(key))
+            .sort(
+                (a, b) =>
+                    abilityLocalizationKeys.indexOf(a[0]) -
+                    abilityLocalizationKeys.indexOf(b[0]),
+            )
+            .map(([, value]) => value);
 
         const convertMillisecondsToSeconds = (text: string) => {
             return text.replace(/(\d+)\s*seconds/g, (_, milliseconds) => {
@@ -266,6 +282,27 @@
                 });
             }
 
+            // TODO: not sure max auras
+            for (let auraIndex = 0; auraIndex < 10; auraIndex++) {
+                const placeholder = `{aura.${auraIndex}}`;
+
+                if (modifiedText?.includes(placeholder)) {
+                    let attribute =
+                        entry.Auras[auraIndex].Action.Value.AttributeType;
+
+                    let tierAttribute = tierAttributes[startingTier];
+
+                    let value = tierAttribute
+                        ? tierAttribute[attribute]
+                        : undefined;
+
+                    // Replace the placeholder in the modified text if the value exists
+                    if (value !== undefined) {
+                        modifiedText = modifiedText.replace(placeholder, value);
+                    }
+                }
+            }
+
             // Apply convertMillisecondsToSeconds only once to the final modified text
             if (modifiedText !== ability.text) {
                 ability.text = convertMillisecondsToSeconds(modifiedText);
@@ -287,7 +324,7 @@
 
     // Set of predefined hero names for the filter
     const heroOptions = ["Vanessa", "Dooley", "Pygmalien"];
-    let selectedHero = "Vanessa"; // Holds the current hero filter selection
+    let selectedHero = "Dooley"; // Holds the current hero filter selection
 
     // Derived array to display entries based on the selected hero
     $: displayedEntries = selectedHero
