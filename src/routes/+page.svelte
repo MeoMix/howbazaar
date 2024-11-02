@@ -47,7 +47,7 @@
     }
 
     function isSpawningEligibleCard(cardItem: TCardItem): boolean {
-        return cardItem.SpawningEligibility !== "Never";
+        return cardItem.SpawningEligibility === "Always";
     }
 
     const tierOrder = ["Bronze", "Silver", "Gold", "Diamond"] as const;
@@ -113,6 +113,8 @@
         const formattedAbilities = rawAbilities.map((ability) => {
             let modifiedText = ability.text;
 
+            let customOffset = 0;
+
             for (let abilityIndex = 0; abilityIndex < 5; abilityIndex++) {
                 // Define both potential placeholders
                 const placeholders = [
@@ -154,8 +156,12 @@
                         // Fall back to custom attribute lookup if needed
                         if (value === undefined) {
                             value = tierAttribute
-                                ? tierAttribute[`Custom_${abilityIndex}`]
+                                ? tierAttribute[`Custom_${customOffset}`]
                                 : undefined;
+
+                            if (value !== undefined) {
+                                customOffset += 1;
+                            }
                         }
 
                         // Replace the placeholder in the modified text if the value exists
