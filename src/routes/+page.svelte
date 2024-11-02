@@ -4,7 +4,7 @@
     type TierType = "Bronze" | "Silver" | "Gold" | "Diamond";
 
     type Tier = {
-        Attributes: any;
+        Attributes: { [key: string]: number };
     };
 
     type Tiers = {
@@ -58,6 +58,43 @@
 
     const filteredCardItems = filteredEntries.filter(isSpawningEligibleCard);
 
+    function extractAbilities(attributes: Tier["Attributes"]): string[] {
+        const abilities: string[] = [];
+
+        // Get all keys from the item in the order they appear
+        const keys = Object.keys(attributes);
+        const multicastIndex = keys.indexOf("Multicast");
+        const sellPriceIndex = keys.lastIndexOf("SellPrice");
+
+        const startIndex = Math.max(multicastIndex, sellPriceIndex);
+
+        if (startIndex === -1) {
+            return [];
+        }
+
+        // Start iterating after "Multicast"
+        for (let i = startIndex + 1; i < keys.length; i++) {
+            const key = keys[i];
+
+            // Ignore "Custom" prefixed items
+            if (key.startsWith("Custom")) {
+                continue;
+            }
+
+            // Use regex to capture the prefix based on capitalization
+            const prefixMatch = key.match(/^[a-z]+|^[A-Z][a-z]*/);
+            if (prefixMatch) {
+                const ability = prefixMatch[0];
+                // Add to abilities array only if it's not already included
+                if (!abilities.includes(ability)) {
+                    abilities.push(ability);
+                }
+            }
+        }
+
+        return abilities;
+    }
+
     const cardItems = filteredCardItems.map((entry: TCardItem) => {
         const tierAttributes: Record<TierType, any> = {
             Bronze: {},
@@ -91,16 +128,44 @@
             | "Diamond";
         let hiddenTags = entry.HiddenTags;
 
+        // TODO: Why can this be empty?
+        let startingTierAttributes = tierAttributes[startingTier];
+
+        const extractedAbilities = startingTierAttributes
+            ? extractAbilities(startingTierAttributes)
+            : [];
+
+        if (entry.Localization.Title.Text === "Lighthouse") {
+            console.log("extractedAbilities", extractedAbilities);
+        }
+
         // There are localization entries which aren't used - filter out the unused entries rather than relying on localization as a single source of truth
         const abilityLocalizationKeys = Object.values(entry.Abilities).map(
             ({ TranslationKey }) => TranslationKey,
         );
 
-        const rawAbilities = entry.Localization.Tooltips.filter((entry) =>
-            abilityLocalizationKeys.includes(entry.Content.Key),
-        ).map((tooltip) => ({
-            text: tooltip.Content.Text,
-        }));
+        // Sadly, there are also duplicate keys! Need to take just the last instance when duplicates exist.
+        // Create a Map to store only the last occurrence of each Content.Key
+        const uniqueTooltips = new Map<string, { text: string }>();
+
+        // Loop through Tooltips in reverse to ensure only the last occurrence is stored
+        for (let i = entry.Localization.Tooltips.length - 1; i >= 0; i--) {
+            const tooltip = entry.Localization.Tooltips[i];
+            const key = tooltip.Content.Key;
+
+            // Only add to the Map if the key is in abilityLocalizationKeys and hasn't been added yet
+            if (
+                abilityLocalizationKeys.includes(key) &&
+                !uniqueTooltips.has(key)
+            ) {
+                uniqueTooltips.set(key, { text: tooltip.Content.Text });
+            }
+        }
+
+        // Convert the Map back to an array, preserving the order of abilityLocalizationKeys
+        const rawAbilities = abilityLocalizationKeys
+            .filter((key) => uniqueTooltips.has(key))
+            .map((key) => uniqueTooltips.get(key)!);
 
         const convertMillisecondsToSeconds = (text: string) => {
             return text.replace(/(\d+)\s*seconds/g, (_, milliseconds) => {
@@ -108,6 +173,28 @@
                 const seconds = parseInt(milliseconds, 10) / 1000;
                 return `${seconds} seconds`;
             });
+        };
+
+        const getAttributeByAbility = (
+            ability: string,
+            suffix: string,
+        ): string => {
+            // Determine attribute name based on tag and suffix
+            let attribute = "";
+
+            if (
+                ability === "Burn" ||
+                ability === "Shield" ||
+                ability == "Poison"
+            ) {
+                attribute = `${ability}Apply${suffix}`;
+            } else if (ability === "AmmoReference") {
+                attribute = `Reload${suffix}`;
+            } else {
+                attribute = `${ability}${suffix}`;
+            }
+
+            return attribute;
         };
 
         const formattedAbilities = rawAbilities.map((ability) => {
@@ -131,21 +218,8 @@
                 // Iterate over each placeholder to replace them if found
                 placeholders.forEach(({ placeholder, suffix }) => {
                     if (modifiedText?.includes(placeholder)) {
-                        let tag = hiddenTags[abilityIndex];
-
-                        // Determine attribute name based on tag and suffix
-                        let attribute = "";
-                        if (
-                            tag === "Burn" ||
-                            tag === "Shield" ||
-                            tag == "Poison"
-                        ) {
-                            attribute = `${tag}Apply${suffix}`;
-                        } else if (tag === "AmmoReference") {
-                            attribute = `Reload${suffix}`;
-                        } else {
-                            attribute = `${tag}${suffix}`;
-                        }
+                        let ability = extractedAbilities[abilityIndex];
+                        let attribute = getAttributeByAbility(ability, suffix);
 
                         // Retrieve the value from the tier attributes
                         let tierAttribute = tierAttributes[startingTier];
@@ -162,6 +236,23 @@
                             if (value !== undefined) {
                                 customOffset += 1;
                             }
+                        }
+
+                        // If falling back to custom attribute failed, but there was some attribute to use, fall back to using it.
+                        // This seems like an especially egregious issue in the quality of the input data, but it is what it is.
+                        // Should track when this occurs because it could lead to quality issues in the app.
+                        if (value === undefined) {
+                            let ability =
+                                extractedAbilities[
+                                    extractedAbilities.length - 1
+                                ];
+                            let attribute = getAttributeByAbility(
+                                ability,
+                                suffix,
+                            );
+                            value = tierAttribute
+                                ? tierAttribute[attribute]
+                                : undefined;
                         }
 
                         // Replace the placeholder in the modified text if the value exists
