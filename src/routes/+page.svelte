@@ -99,6 +99,7 @@
         StartingTier: TierType;
         Tags: string[];
         HiddenTags: string[];
+        Size: "Small" | "Medium" | "Large";
         Heroes: string[];
         SpawningEligibility: "Always" | "Never" | "GuidOnly";
     }
@@ -338,7 +339,10 @@
 
         const tierAttributesMap = tierOrder.reduce(
             (acc, tier) => {
-                const currentAttributes = entry.Tiers[tier]?.Attributes || {};
+                // Check if the current tier is present in entry.Tiers
+                if (!entry.Tiers[tier]) return acc;
+
+                const currentAttributes = entry.Tiers[tier].Attributes || {};
                 acc[tier] = {
                     ...(acc[tierOrder[tierOrder.indexOf(tier) - 1]] || {}),
                     ...currentAttributes,
@@ -347,7 +351,6 @@
             },
             {} as Record<TierType, Tier["Attributes"]>,
         );
-
         // TODO: Instead of defaulting to starting tier - use whichever tier is being viewed so as to support information regarding all tiers.
         const startingTierAttributes = tierAttributesMap[entry.StartingTier];
 
@@ -393,13 +396,14 @@
             tiers: tierAttributesMap,
             tags: entry.Tags,
             hiddenTags: entry.HiddenTags,
+            size: entry.Size,
             heroes: entry.Heroes,
         };
     });
 
     // Set of predefined hero names for the filter
     const heroOptions = ["Vanessa", "Dooley", "Pygmalien", "Common"];
-    let selectedHero = "Common"; // Holds the current hero filter selection
+    let selectedHero = ""; // Holds the current hero filter selection
 
     // Derived array to display entries based on the selected hero
     $: displayedEntries = selectedHero
@@ -411,8 +415,9 @@
 
 <div>
     <label>
+        Filter Items:
         <select bind:value={selectedHero}>
-            <option value="">All Heroes</option>
+            <option value="">All</option>
             {#each heroOptions as hero}
                 <option value={hero}>{hero}</option>
             {/each}
@@ -425,6 +430,7 @@
         <li>
             <div>{entry.name}</div>
             <div>Heroes: {entry.heroes.join(", ")}</div>
+            <div>Size: {entry.size}</div>
             <div>Tags: {entry.tags.join(", ")}</div>
             <div>Hidden Tags: {entry.hiddenTags.join(", ")}</div>
             <div>Starting Tier: {entry.startingTier}</div>
