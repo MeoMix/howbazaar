@@ -80,10 +80,6 @@
         SpawningEligibility: "Always" | "Never" | "GuidOnly";
     }
 
-    interface TCardEncounterStep {
-        $type: "TCardEncounterStep";
-    }
-
     function isTCardItem(entry: any): entry is TCardItem {
         return entry.$type === "TCardItem" && "Tiers" in entry;
     }
@@ -160,7 +156,9 @@
         } else if (actionType === "TActionCardModifyAttribute") {
             if (ability.Action.Value!.$type === "TFixedValue") {
                 abilityValue = ability.Action.Value!.Value;
-            } else if (ability.Action.Value!.$type === "TReferenceValueCardAttribute") {
+            } else if (
+                ability.Action.Value!.$type === "TReferenceValueCardAttribute"
+            ) {
                 // This isn't knowable outside of game context, so just default to 0.
                 abilityValue = 0;
             } else {
@@ -203,75 +201,46 @@
     const filteredCardItems = filteredEntries.filter(isSpawningEligibleCard);
 
     const cardItems = filteredCardItems.map((entry: TCardItem) => {
-        const tierAttributesMap = Object.fromEntries(
-            tierOrder.map((tier) => [tier, {}]),
-        ) as Record<TierType, Tier["Attributes"]>;
-
-        let accumulatedAttributes = {};
-
-        for (const tier of tierOrder) {
-            const currentTier = entry.Tiers[tier];
-            if (currentTier && currentTier.Attributes) {
-                const currentAttributes = currentTier.Attributes;
-
-                accumulatedAttributes = {
-                    ...accumulatedAttributes,
-                    ...currentAttributes,
-                };
-
-                tierAttributesMap[tier] = { ...accumulatedAttributes };
-            } else {
-                tierAttributesMap[tier] = { ...accumulatedAttributes };
-            }
-        }
-
-        const startingTier = entry.StartingTier;
-
-        let hiddenTags = entry.HiddenTags;
-
-        const startingTierAttributes = tierAttributesMap[startingTier];
-  
-        // There are localization entries which aren't used - filter out the unused entries rather than relying on localization as a single source of truth
+        // TODO: Not sure I can just discard the keys because I can't always rely on the Id being correct (?!)
         const abilities = Object.values(entry.Abilities);
 
-        // Sadly, there are also duplicate keys! Need to take just the last instance when duplicates exist.
-        // Create a Map to store only the last occurrence of each Content.Key
+        // Filter duplicate localization entries, prioritize the last occurring entry.
         const uniqueTooltips = new Map<string, string>();
+        [...entry.Localization.Tooltips]
+            .reverse()
+            .forEach(({ Content: { Key, Text } }) => {
+                // Filter unused localization entries, rely on ability definitions, not localization, as source of truth for what is shown.
+                if (
+                    abilities.some(
+                        ({ TranslationKey }) => TranslationKey === Key,
+                    ) &&
+                    !uniqueTooltips.has(Key)
+                ) {
+                    uniqueTooltips.set(Key, Text);
+                }
+            });
 
-        // Loop through Tooltips in reverse to ensure only the last occurrence is stored
-        for (let i = entry.Localization.Tooltips.length - 1; i >= 0; i--) {
-            const tooltip = entry.Localization.Tooltips[i];
-            const key = tooltip.Content.Key;
+        // Map to ordered tooltip texts based on abilities order.
+        const rawAbilityTexts = abilities
+            .map(({ TranslationKey }) => uniqueTooltips.get(TranslationKey))
+            .filter((text): text is string => text !== undefined);
 
-            // Only add to the Map if the key is in abilityLocalizationKeys and hasn't been added yet
-            let ability = abilities.find(
-                (entry) => entry.TranslationKey === key,
-            );
-
-            if (ability && !uniqueTooltips.has(key)) {
-                uniqueTooltips.set(key, tooltip.Content.Text);
-            }
-        }
-
-        const rawAbilityTexts = Array.from(uniqueTooltips.entries())
-            .filter(([key]) =>
-                abilities.some((entry) => entry.TranslationKey === key),
-            )
-            .sort(
-                (a, b) =>
-                    abilities.findIndex(
-                        (entry) => entry.TranslationKey === a[0],
-                    ) -
-                    abilities.findIndex(
-                        (entry) => entry.TranslationKey === b[0],
-                    ),
-            )
-            .map(([, value]) => value);
+        const tierAttributesMap = tierOrder.reduce(
+            (acc, tier) => {
+                const currentAttributes = entry.Tiers[tier]?.Attributes || {};
+                acc[tier] = {
+                    ...(acc[tierOrder[tierOrder.indexOf(tier) - 1]] || {}),
+                    ...currentAttributes,
+                };
+                return acc;
+            },
+            {} as Record<TierType, Tier["Attributes"]>,
+        );
 
         let abilityValueMap = getAbilityValueMap(
             abilities,
             // TODO: Instead of defaulting to starting tier - use whichever tier is being viewed so as to support information regarding all tiers.
-            startingTierAttributes,
+            tierAttributesMap[entry.StartingTier],
         );
 
         // TODO: Wanted Poster is broken because they're reusing the same ID for two abilities unintentionally
@@ -319,14 +288,14 @@
             startingTier: entry.StartingTier,
             tiers: tierAttributesMap,
             tags: entry.Tags,
-            hiddenTags,
+            hiddenTags: entry.HiddenTags,
             heroes: entry.Heroes,
         };
     });
 
     // Set of predefined hero names for the filter
     const heroOptions = ["Vanessa", "Dooley", "Pygmalien"];
-    let selectedHero = "Pygmalien"; // Holds the current hero filter selection
+    let selectedHero = "Vanessa"; // Holds the current hero filter selection
 
     // Derived array to display entries based on the selected hero
     $: displayedEntries = selectedHero
