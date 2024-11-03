@@ -47,7 +47,12 @@
 
     type AbilityActionValue =
         | { AttributeType: string; $type?: never; Value?: never }
-        | { $type: "TFixedValue"; Value: number; AttributeType?: never };
+        | { $type: "TFixedValue"; Value: number; AttributeType?: never }
+        | {
+              $type: "TReferenceValueCardAttribute";
+              Target: { $type: "TTargetCardSelf" };
+              AttributeType?: never;
+          };
 
     type AbilitySpawnContext = {
         Limit: {
@@ -175,9 +180,12 @@
             if (ability.Action.Value!.$type === "TFixedValue") {
                 abilityValue = ability.Action.Value!.Value;
             } else if (
-                ability.Action.Value!.$type === "TReferenceValueCardAttribute"
+                ability.Action.Value!.$type ===
+                    "TReferenceValueCardAttribute" &&
+                ability.Action.Value!.Target.$type !== "TTargetCardSelf"
             ) {
                 // This isn't knowable outside of game context, so just default to 0.
+                // TODO: console.warn?
                 abilityValue = 0;
             } else {
                 abilityName = ability.Action.Value!.AttributeType!;
@@ -193,7 +201,13 @@
         if (abilityValue == undefined) {
             let attribute = "";
             if (abilityName) {
-                attribute = `${abilityName}${abilityName.includes("Custom") ? "" : suffix}`;
+                // Check for existence of suffix because there's some dirty data.
+                // As an example, Rocket Boots "AttributeType" is "HasteAmount" rather than the expected "Haste"
+                if (abilityName.includes(suffix)) {
+                    attribute = abilityName;
+                } else {
+                    attribute = `${abilityName}${abilityName.includes("Custom") ? "" : suffix}`;
+                }
             }
 
             abilityValue = tierAttributes[attribute];
@@ -268,8 +282,29 @@
 
     const filteredCardItems = filteredEntries.filter(isSpawningEligibleCard);
 
+    // Sanity check on Abilities and Aura IDs before proceeding.
+    // This fixes "Wanted Poster" and ...
+    for (let entry of filteredCardItems) {
+        for (let [abilityKey, ability] of Object.entries(entry.Abilities)) {
+            if (ability.Id !== abilityKey) {
+                console.warn(
+                    `WARNING: ${entry.Localization.Title.Text} - ability key/id mismatch for  ${abilityKey} / ${ability.Id}. Changing id to match key.`,
+                );
+                ability.Id = abilityKey;
+            }
+        }
+
+        for (let [auraKey, aura] of Object.entries(entry.Auras)) {
+            if (aura.Id !== auraKey) {
+                console.warn(
+                    `WARNING: ${entry.Localization.Title.Text} - aura key/id mismatch ${auraKey} / ${aura.Id}. Changing id to match key.`,
+                );
+                aura.Id = auraKey;
+            }
+        }
+    }
+
     const cardItems = filteredCardItems.map((entry: TCardItem) => {
-        // TODO: Not sure I can just discard the keys because I can't always rely on the Id being correct (?!)
         const abilities = Object.values(entry.Abilities);
 
         // Filter duplicate localization entries, prioritize the last occurring entry.
@@ -289,9 +324,17 @@
             });
 
         // Map to ordered tooltip texts based on abilities order.
-        const rawAbilityTexts = abilities
-            .map(({ TranslationKey }) => uniqueTooltips.get(TranslationKey))
-            .filter((text): text is string => text !== undefined);
+        const rawAbilityTexts = Array.from(uniqueTooltips.entries())
+            .sort(
+                (a, b) =>
+                    abilities.findIndex(
+                        ({ TranslationKey }) => TranslationKey === a[0],
+                    ) -
+                    abilities.findIndex(
+                        ({ TranslationKey }) => TranslationKey === b[0],
+                    ),
+            )
+            .map(([, value]) => value);
 
         const tierAttributesMap = tierOrder.reduce(
             (acc, tier) => {
@@ -314,11 +357,6 @@
         );
 
         const auras = Object.values(entry.Auras);
-
-        // TODO: Wanted Poster is broken because they're reusing the same ID for two abilities unintentionally
-        // if (entry.Localization.Title.Text === "Wanted Poster") {
-        //     debugger;
-        // }
 
         let auraValueMap = getAuraValueMap(auras, startingTierAttributes);
 
@@ -360,8 +398,8 @@
     });
 
     // Set of predefined hero names for the filter
-    const heroOptions = ["Vanessa", "Dooley", "Pygmalien"];
-    let selectedHero = "Vanessa"; // Holds the current hero filter selection
+    const heroOptions = ["Vanessa", "Dooley", "Pygmalien", "Common"];
+    let selectedHero = "Common"; // Holds the current hero filter selection
 
     // Derived array to display entries based on the selected hero
     $: displayedEntries = selectedHero
