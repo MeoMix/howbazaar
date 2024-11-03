@@ -17,8 +17,20 @@
 
     type Tiers = Partial<Record<TierType, Tier>>;
 
-    // TODO: build this up
-    type AbilityActionType = "TActionCardHaste" | unknown;
+    type AbilityActionType =
+        | "TActionCardHaste"
+        | "TActionPlayerDamage"
+        | "TActionCardSlow"
+        | "TActionPlayerBurnApply"
+        | "TActionPlayerShieldApply"
+        | "TActionPlayerHeal"
+        | "TActionPlayerPoisonApply"
+        | "TActionCardReload"
+        | "TActionCardFreeze"
+        | "TActionCardCharge"
+        | "TActionCardModifyAttribute"
+        | "TActionPlayerModifyAttribute"
+        | "TActionGameSpawnCards";
 
     // TODO: tighten up the expectations here
     type AbilityAction =
@@ -50,6 +62,19 @@
         Action: AbilityAction;
     };
 
+    type Aura = {
+        Id: string;
+        Action: {
+            $type: "TAuraActionCardModifyAttribute";
+            Value: {
+                AttributeType: string;
+                Modifier?: {
+                    Value: number;
+                };
+            };
+        };
+    };
+
     interface TCardItem {
         $type: "TCardItem";
         Tiers: Tiers;
@@ -64,14 +89,7 @@
             [key: string]: Ability;
         };
         Auras: {
-            [key: string]: {
-                Action: {
-                    // AttributeType: string;
-                    Value: {
-                        AttributeType: string;
-                    };
-                };
-            };
+            [key: string]: Aura;
         };
         StartingTier: TierType;
         Tags: string[];
@@ -127,7 +145,7 @@
     function getAbilityValue(
         ability: Ability,
         tierAttributes: Tier["Attributes"],
-        suffix: "Amount" | "Targets" | "",
+        suffix: "Amount" | "Targets",
     ): number | undefined {
         let abilityValue: number | undefined;
         let abilityName = "";
@@ -163,11 +181,9 @@
                 abilityValue = 0;
             } else {
                 abilityName = ability.Action.Value!.AttributeType!;
-                suffix = "";
             }
         } else if (actionType === "TActionPlayerModifyAttribute") {
             abilityName = ability.Action.Value!.AttributeType!;
-            suffix = "";
         } else if (actionType === "TActionGameSpawnCards") {
             if (ability.Action.SpawnContext!.Limit.$type === "TFixedValue") {
                 abilityValue = ability.Action.SpawnContext!.Limit.Value;
@@ -177,7 +193,7 @@
         if (abilityValue == undefined) {
             let attribute = "";
             if (abilityName) {
-                attribute = `${abilityName}${suffix}`;
+                attribute = `${abilityName}${abilityName.includes("Custom") ? "" : suffix}`;
             }
 
             abilityValue = tierAttributes[attribute];
@@ -192,6 +208,58 @@
         }
 
         return abilityValue;
+    }
+
+    function getAuraValueMap(
+        auras: Aura[],
+        tierAttributes: Tier["Attributes"],
+    ): {
+        [key: string]: number | undefined;
+    } {
+        return auras.reduce(
+            (acc, aura) => {
+                let amountAuraValue = getAuraValue(aura, tierAttributes);
+
+                if (amountAuraValue !== undefined) {
+                    acc[aura.Id] = amountAuraValue;
+                }
+
+                // Support Pyg's "Fork Lift" which uses `aura2.mod`
+                let modAuraValue = getAuraValue(aura, tierAttributes, "Mod");
+                if (modAuraValue !== undefined) {
+                    acc[`${aura.Id}.mod`] = modAuraValue;
+                }
+
+                return acc;
+            },
+            {} as { [key: string]: number | undefined },
+        );
+    }
+
+    function getAuraValue(
+        aura: Aura,
+        tierAttributes: Tier["Attributes"],
+        modifierFlag: "Mod" | undefined,
+    ): number | undefined {
+        let auraValue: number | undefined;
+        let attributeName = "";
+
+        const actionType = aura.Action.$type;
+
+        if (actionType === "TAuraActionCardModifyAttribute") {
+            attributeName = aura.Action.Value.AttributeType;
+
+            // NOTE: It's kind of weird this isn't multiplied by some other value, but this looks correct at time of writing.
+            if (modifierFlag === "Mod" && aura.Action.Value.Modifier) {
+                auraValue = aura.Action.Value.Modifier.Value;
+            }
+        }
+
+        if (auraValue == undefined) {
+            auraValue = tierAttributes[attributeName];
+        }
+
+        return auraValue;
     }
 
     const filteredEntries = Object.values(data).filter(
@@ -237,16 +305,22 @@
             {} as Record<TierType, Tier["Attributes"]>,
         );
 
+        // TODO: Instead of defaulting to starting tier - use whichever tier is being viewed so as to support information regarding all tiers.
+        const startingTierAttributes = tierAttributesMap[entry.StartingTier];
+
         let abilityValueMap = getAbilityValueMap(
             abilities,
-            // TODO: Instead of defaulting to starting tier - use whichever tier is being viewed so as to support information regarding all tiers.
-            tierAttributesMap[entry.StartingTier],
+            startingTierAttributes,
         );
+
+        const auras = Object.values(entry.Auras);
 
         // TODO: Wanted Poster is broken because they're reusing the same ID for two abilities unintentionally
         // if (entry.Localization.Title.Text === "Wanted Poster") {
         //     debugger;
         // }
+
+        let auraValueMap = getAuraValueMap(auras, startingTierAttributes);
 
         const abilityTexts = rawAbilityTexts.map((rawAbilityText) => {
             let abilityText = rawAbilityText;
@@ -262,22 +336,14 @@
                 }
             }
 
-            // TODO: not sure max auras
-            // for (let auraIndex = 0; auraIndex < 10; auraIndex++) {
-            //     const placeholder = `{aura.${auraIndex}}`;
-
-            //     if (modifiedText?.includes(placeholder)) {
-            //         let attribute =
-            //             entry.Auras[auraIndex].Action.Value.AttributeType;
-
-            //         let abilityValue = tierAttribute[attribute];
-
-            //         // Replace the placeholder in the modified text if the value exists
-            //         if (abilityValue !== undefined) {
-            //             modifiedText = modifiedText.replace(placeholder, abilityValue);
-            //         }
-            //     }
-            // }
+            for (let [auraId, auraValue] of Object.entries(auraValueMap)) {
+                if (auraValue !== undefined) {
+                    abilityText = abilityText.replace(
+                        new RegExp(`\\{aura\\.${auraId}\\}`, "g"),
+                        `${auraValue}`,
+                    );
+                }
+            }
 
             return abilityText;
         });
