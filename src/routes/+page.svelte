@@ -239,7 +239,7 @@
     function getAuraValue(
         aura: Aura,
         tierAttributes: Tier["Attributes"],
-        modifierFlag: "Mod" | undefined,
+        modifierFlag?: "Mod",
     ): number | undefined {
         let auraValue: number | undefined;
         let attributeName = "";
