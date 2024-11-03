@@ -17,11 +17,37 @@
 
     type Tiers = Partial<Record<TierType, Tier>>;
 
-    type Ability = {
-        TranslationKey: string;
-        Action: {
-            AttributeType?: string;
+    // TODO: build this up
+    type AbilityActionType = "TActionCardHaste" | unknown;
+
+    // TODO: tighten up the expectations here
+    type AbilityAction =
+        | {
+              $type: AbilityActionType;
+              Value: AbilityActionValue;
+              SpawnContext?: never;
+          }
+        | {
+              $type: AbilityActionType;
+              SpawnContext: AbilitySpawnContext;
+              Value?: never;
+          };
+
+    type AbilityActionValue =
+        | { AttributeType: string; $type?: never; Value?: never }
+        | { $type: "TFixedValue"; Value: number; AttributeType?: never };
+
+    type AbilitySpawnContext = {
+        Limit: {
+            $type: "TFixedValue";
+            Value: number;
         };
+    };
+
+    type Ability = {
+        Id: string;
+        TranslationKey: string;
+        Action: AbilityAction;
     };
 
     interface TCardItem {
@@ -66,8 +92,108 @@
         return cardItem.SpawningEligibility === "Always";
     }
 
-    function getAbilityValue(ability: Ability): string | undefined {
-        return undefined;
+    function getAbilityValueMap(
+        abilities: Ability[],
+        tierAttributes: Tier["Attributes"],
+    ): {
+        [key: string]: number | undefined;
+    } {
+        return abilities.reduce(
+            (acc, ability) => {
+                let amountAbilityValue = getAbilityValue(
+                    ability,
+                    tierAttributes,
+                    "Amount",
+                );
+                if (amountAbilityValue !== undefined) {
+                    acc[ability.Id] = amountAbilityValue;
+                }
+
+                let targetsAbilityValue = getAbilityValue(
+                    ability,
+                    tierAttributes,
+                    "Targets",
+                );
+                if (targetsAbilityValue !== undefined) {
+                    acc[`${ability.Id}.targets`] = targetsAbilityValue;
+                }
+
+                return acc;
+            },
+            {} as { [key: string]: number | undefined },
+        );
+    }
+
+    // Determine the attribute name relevant to the ability by looking at its metadata.
+    // There might not be a relevant attribute name - might be able to skip directly to a fixed value.
+    // If there is an attribute name then look up the value by the name.
+    // If all else fails then can consider falling back to looking up by ability id and assuming its an index offset, but this isn't desirable.
+    function getAbilityValue(
+        ability: Ability,
+        tierAttributes: Tier["Attributes"],
+        suffix: "Amount" | "Targets" | "",
+    ): number | undefined {
+        let abilityValue: number | undefined;
+        let abilityName = "";
+        const actionType = ability.Action.$type;
+
+        if (actionType === "TActionCardHaste") {
+            abilityName = "Haste";
+        } else if (actionType === "TActionPlayerDamage") {
+            abilityName = "Damage";
+        } else if (actionType === "TActionCardSlow") {
+            abilityName = "Slow";
+        } else if (actionType === "TActionPlayerBurnApply") {
+            abilityName = "BurnApply";
+        } else if (actionType === "TActionPlayerShieldApply") {
+            abilityName = "ShieldApply";
+        } else if (actionType === "TActionPlayerHeal") {
+            abilityName = "Heal";
+        } else if (actionType === "TActionPlayerPoisonApply") {
+            abilityName = "PoisonApply";
+        } else if (actionType === "TActionCardReload") {
+            abilityName = "Reload";
+        } else if (actionType === "TActionCardFreeze") {
+            abilityName = "Freeze";
+        } else if (actionType === "TActionCardCharge") {
+            abilityName = "Charge";
+        } else if (actionType === "TActionCardModifyAttribute") {
+            if (ability.Action.Value!.$type === "TFixedValue") {
+                abilityValue = ability.Action.Value!.Value;
+            } else if (ability.Action.Value!.$type === "TReferenceValueCardAttribute") {
+                // This isn't knowable outside of game context, so just default to 0.
+                abilityValue = 0;
+            } else {
+                abilityName = ability.Action.Value!.AttributeType!;
+                suffix = "";
+            }
+        } else if (actionType === "TActionPlayerModifyAttribute") {
+            abilityName = ability.Action.Value!.AttributeType!;
+            suffix = "";
+        } else if (actionType === "TActionGameSpawnCards") {
+            if (ability.Action.SpawnContext!.Limit.$type === "TFixedValue") {
+                abilityValue = ability.Action.SpawnContext!.Limit.Value;
+            }
+        }
+
+        if (abilityValue == undefined) {
+            let attribute = "";
+            if (abilityName) {
+                attribute = `${abilityName}${suffix}`;
+            }
+
+            abilityValue = tierAttributes[attribute];
+        }
+
+        // Amount is often representing time in milliseconds, handle that here to represent as seconds.
+        // There's some poor data quality in the input data that expects this even when not associated with the phrase "seconds"
+        // because the formatted value is being used in other contexts.
+        // As an example, Marbles would read "When you use an adjacent Small item, slow 1000 item for 1 seconds" if we're not careful.
+        if (abilityValue >= 1000) {
+            abilityValue /= 1000;
+        }
+
+        return abilityValue;
     }
 
     const filteredEntries = Object.values(data).filter(
@@ -76,49 +202,10 @@
 
     const filteredCardItems = filteredEntries.filter(isSpawningEligibleCard);
 
-    function extractAbilityNames(attributes: Tier["Attributes"]): string[] {
-        const abilityNames: string[] = [];
-
-        // Get all keys from the item in the order they appear
-        const keys = Object.keys(attributes);
-        const startIndex = keys.indexOf("Multicast");
-        // NOTE: Vanessa's Tripwire doesn't include Multicast at all. In this scenario, SellPrice is what I need to use.
-        // Maybe the rule should be that items which don't have CooldownMax won't have MultiCast.
-        // const sellPriceIndex = keys.lastIndexOf("SellPrice");
-
-        // const startIndex = Math.max(multicastIndex, sellPriceIndex);
-
-        if (startIndex === -1) {
-            return [];
-        }
-
-        // Start iterating after "Multicast"
-        for (let i = startIndex + 1; i < keys.length; i++) {
-            const key = keys[i];
-
-            // Ignore "Custom" prefixed items
-            if (key.startsWith("Custom")) {
-                continue;
-            }
-
-            // Use regex to capture the prefix based on capitalization
-            const prefixMatch = key.match(/^[a-z]+|^[A-Z][a-z]*/);
-            if (prefixMatch) {
-                const ability = prefixMatch[0];
-                // Add to abilityNames array only if it's not already included
-                if (!abilityNames.includes(ability)) {
-                    abilityNames.push(ability);
-                }
-            }
-        }
-
-        return abilityNames;
-    }
-
     const cardItems = filteredCardItems.map((entry: TCardItem) => {
-        const tierAttributes = Object.fromEntries(
+        const tierAttributesMap = Object.fromEntries(
             tierOrder.map((tier) => [tier, {}]),
-        ) as Record<TierType, any>;
+        ) as Record<TierType, Tier["Attributes"]>;
 
         let accumulatedAttributes = {};
 
@@ -132,27 +219,24 @@
                     ...currentAttributes,
                 };
 
-                tierAttributes[tier] = { ...accumulatedAttributes };
+                tierAttributesMap[tier] = { ...accumulatedAttributes };
             } else {
-                tierAttributes[tier] = { ...accumulatedAttributes };
+                tierAttributesMap[tier] = { ...accumulatedAttributes };
             }
         }
 
         const startingTier = entry.StartingTier;
+
         let hiddenTags = entry.HiddenTags;
 
-        const startingTierAttributes = tierAttributes[startingTier];
-        const extractedAbilityNames = extractAbilityNames(startingTierAttributes);
-
+        const startingTierAttributes = tierAttributesMap[startingTier];
+  
         // There are localization entries which aren't used - filter out the unused entries rather than relying on localization as a single source of truth
         const abilities = Object.values(entry.Abilities);
 
         // Sadly, there are also duplicate keys! Need to take just the last instance when duplicates exist.
         // Create a Map to store only the last occurrence of each Content.Key
-        const uniqueTooltips = new Map<
-            string,
-            { text: string; ability: Ability }
-        >();
+        const uniqueTooltips = new Map<string, string>();
 
         // Loop through Tooltips in reverse to ensure only the last occurrence is stored
         for (let i = entry.Localization.Tooltips.length - 1; i >= 0; i--) {
@@ -165,14 +249,11 @@
             );
 
             if (ability && !uniqueTooltips.has(key)) {
-                uniqueTooltips.set(key, {
-                    text: tooltip.Content.Text,
-                    ability,
-                });
+                uniqueTooltips.set(key, tooltip.Content.Text);
             }
         }
 
-        const rawAbilities = Array.from(uniqueTooltips.entries())
+        const rawAbilityTexts = Array.from(uniqueTooltips.entries())
             .filter(([key]) =>
                 abilities.some((entry) => entry.TranslationKey === key),
             )
@@ -187,143 +268,56 @@
             )
             .map(([, value]) => value);
 
-        const convertMillisecondsToSeconds = (text: string) => {
-            return text.replace(/(\d+)\s*seconds/g, (_, milliseconds) => {
-                // Convert milliseconds to seconds
-                const seconds = parseInt(milliseconds, 10) / 1000;
-                return `${seconds} seconds`;
-            });
-        };
+        let abilityValueMap = getAbilityValueMap(
+            abilities,
+            // TODO: Instead of defaulting to starting tier - use whichever tier is being viewed so as to support information regarding all tiers.
+            startingTierAttributes,
+        );
 
-        const getAttributeByAbilityName = (
-            abilityName: string,
-            suffix: string,
-        ): string => {
-            // Determine attribute name based on tag and suffix
-            let attribute = "";
+        // TODO: Wanted Poster is broken because they're reusing the same ID for two abilities unintentionally
+        // if (entry.Localization.Title.Text === "Wanted Poster") {
+        //     debugger;
+        // }
 
-            if (
-                abilityName === "Burn" ||
-                abilityName === "Shield" ||
-                abilityName == "Poison"
-            ) {
-                attribute = `${abilityName}Apply${suffix}`;
-            } else if (abilityName === "AmmoReference") {
-                attribute = `Reload${suffix}`;
-            } else {
-                attribute = `${abilityName}${suffix}`;
-            }
+        const abilityTexts = rawAbilityTexts.map((rawAbilityText) => {
+            let abilityText = rawAbilityText;
 
-            return attribute;
-        };
-
-        const formattedAbilities = rawAbilities.map((ability) => {
-            let modifiedText = ability.text;
-            let test = getAbilityValue(ability.ability);
-
-            let customOffset = 0;
-
-            for (let abilityIndex = 0; abilityIndex < 5; abilityIndex++) {
-                // Define both potential placeholders
-                const placeholders = [
-                    {
-                        placeholder: `{ability.${abilityIndex}}`,
-                        suffix: "Amount",
-                    },
-                    {
-                        placeholder: `{ability.${abilityIndex}.targets}`,
-                        suffix: "Targets",
-                    },
-                ];
-
-                // Iterate over each placeholder to replace them if found
-                placeholders.forEach(({ placeholder, suffix }) => {
-                    if (modifiedText?.includes(placeholder)) {
-                        let abilityName = extractedAbilityNames[abilityIndex];
-                        let attribute = getAttributeByAbilityName(
-                            abilityName,
-                            suffix,
-                        );
-
-                        // Retrieve the value from the tier attributes
-                        let tierAttribute = tierAttributes[startingTier];
-                        let value = tierAttribute
-                            ? tierAttribute[attribute]
-                            : undefined;
-
-                        // Fall back to custom attribute lookup if needed
-                        if (value === undefined) {
-                            value = tierAttribute
-                                ? tierAttribute[`Custom_${customOffset}`]
-                                : undefined;
-
-                            if (value !== undefined) {
-                                customOffset += 1;
-                            }
-                        }
-
-                        // If falling back to custom attribute failed, but there was some attribute to use, fall back to using it.
-                        // This seems like an especially egregious issue in the quality of the input data, but it is what it is.
-                        // Should track when this occurs because it could lead to quality issues in the app.
-                        if (value === undefined) {
-                            let abilityName =
-                                extractedAbilityNames[
-                                    extractedAbilityNames.length - 1
-                                ];
-                            let attribute = getAttributeByAbilityName(
-                                abilityName,
-                                suffix,
-                            );
-                            value = tierAttribute
-                                ? tierAttribute[attribute]
-                                : undefined;
-                        }
-
-                        // Replace the placeholder in the modified text if the value exists
-                        if (value !== undefined) {
-                            modifiedText = modifiedText.replace(
-                                placeholder,
-                                value,
-                            );
-                        }
-                    }
-                });
-            }
-
-            // TODO: not sure max auras
-            for (let auraIndex = 0; auraIndex < 10; auraIndex++) {
-                const placeholder = `{aura.${auraIndex}}`;
-
-                if (modifiedText?.includes(placeholder)) {
-                    let attribute =
-                        entry.Auras[auraIndex].Action.Value.AttributeType;
-
-                    let tierAttribute = tierAttributes[startingTier];
-
-                    let value = tierAttribute
-                        ? tierAttribute[attribute]
-                        : undefined;
-
-                    // Replace the placeholder in the modified text if the value exists
-                    if (value !== undefined) {
-                        modifiedText = modifiedText.replace(placeholder, value);
-                    }
+            for (let [abilityId, abilityValue] of Object.entries(
+                abilityValueMap,
+            )) {
+                if (abilityValue !== undefined) {
+                    abilityText = abilityText.replace(
+                        new RegExp(`\\{ability\\.${abilityId}\\}`, "g"),
+                        `${abilityValue}`,
+                    );
                 }
             }
 
-            // Apply convertMillisecondsToSeconds only once to the final modified text
-            if (modifiedText !== ability.text) {
-                ability.text = convertMillisecondsToSeconds(modifiedText);
-            }
+            // TODO: not sure max auras
+            // for (let auraIndex = 0; auraIndex < 10; auraIndex++) {
+            //     const placeholder = `{aura.${auraIndex}}`;
 
-            return ability;
+            //     if (modifiedText?.includes(placeholder)) {
+            //         let attribute =
+            //             entry.Auras[auraIndex].Action.Value.AttributeType;
+
+            //         let abilityValue = tierAttribute[attribute];
+
+            //         // Replace the placeholder in the modified text if the value exists
+            //         if (abilityValue !== undefined) {
+            //             modifiedText = modifiedText.replace(placeholder, abilityValue);
+            //         }
+            //     }
+            // }
+
+            return abilityText;
         });
 
         return {
             name: entry.Localization.Title.Text,
-            abilities: formattedAbilities,
+            abilityTexts,
             startingTier: entry.StartingTier,
-            tiers: tierAttributes,
+            tiers: tierAttributesMap,
             tags: entry.Tags,
             hiddenTags,
             heroes: entry.Heroes,
@@ -332,7 +326,7 @@
 
     // Set of predefined hero names for the filter
     const heroOptions = ["Vanessa", "Dooley", "Pygmalien"];
-    let selectedHero = "Dooley"; // Holds the current hero filter selection
+    let selectedHero = "Pygmalien"; // Holds the current hero filter selection
 
     // Derived array to display entries based on the selected hero
     $: displayedEntries = selectedHero
@@ -357,14 +351,14 @@
     {#each displayedEntries as entry}
         <li>
             <div>{entry.name}</div>
-            <!-- <div>Heroes: {entry.heroes.join(", ")}</div> -->
+            <div>Heroes: {entry.heroes.join(", ")}</div>
             <div>Tags: {entry.tags.join(", ")}</div>
             <div>Hidden Tags: {entry.hiddenTags.join(", ")}</div>
             <div>Starting Tier: {entry.startingTier}</div>
             <div>
                 <ul>
-                    {#each entry.abilities as ability}
-                        <li>{ability.text}</li>
+                    {#each entry.abilityTexts as abilityText}
+                        <li>{abilityText}</li>
                     {/each}
                 </ul>
             </div>
