@@ -69,6 +69,7 @@
 
     type Aura = {
         Id: string;
+        TranslationKey: string;
         Action: {
             $type: "TAuraActionCardModifyAttribute";
             Value: {
@@ -307,6 +308,7 @@
 
     const cardItems = filteredCardItems.map((entry: TCardItem) => {
         const abilities = Object.values(entry.Abilities);
+        const auras = Object.values(entry.Auras);
 
         // Filter duplicate localization entries, prioritize the last occurring entry.
         const uniqueTooltips = new Map<string, string>();
@@ -315,9 +317,11 @@
             .forEach(({ Content: { Key, Text } }) => {
                 // Filter unused localization entries, rely on ability definitions, not localization, as source of truth for what is shown.
                 if (
-                    abilities.some(
+                    (abilities.some(
                         ({ TranslationKey }) => TranslationKey === Key,
-                    ) &&
+                    ) || auras.some(
+                        ({ TranslationKey }) => TranslationKey === Key,
+                    )) &&
                     !uniqueTooltips.has(Key)
                 ) {
                     uniqueTooltips.set(Key, Text);
@@ -332,6 +336,16 @@
                         ({ TranslationKey }) => TranslationKey === a[0],
                     ) -
                     abilities.findIndex(
+                        ({ TranslationKey }) => TranslationKey === b[0],
+                    ),
+            )
+            // TODO: Don't double sort.. need to think of a better solution
+            .sort(
+                (a, b) =>
+                    auras.findIndex(
+                        ({ TranslationKey }) => TranslationKey === a[0],
+                    ) -
+                    auras.findIndex(
                         ({ TranslationKey }) => TranslationKey === b[0],
                     ),
             )
@@ -359,7 +373,6 @@
             startingTierAttributes,
         );
 
-        const auras = Object.values(entry.Auras);
 
         let auraValueMap = getAuraValueMap(auras, startingTierAttributes);
 
