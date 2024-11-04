@@ -362,18 +362,22 @@
 
         const tierAttributesMap = tierOrder.reduce(
             (acc, tier) => {
-                // Check if the current tier is present in entry.Tiers
-                if (!entry.Tiers[tier]) return acc;
+                const currentAttributes = entry.Tiers[tier]?.Attributes;
 
-                const currentAttributes = entry.Tiers[tier].Attributes || {};
-                acc[tier] = {
-                    ...(acc[tierOrder[tierOrder.indexOf(tier) - 1]] || {}),
-                    ...currentAttributes,
-                };
+                // Only merge with the previous tier if current tier has attributes.
+                acc[tier] = currentAttributes
+                    ? {
+                          ...(acc[tierOrder[tierOrder.indexOf(tier) - 1]] ||
+                              {}),
+                          ...currentAttributes,
+                      }
+                    : {}; // If no attributes, keep it as an empty object.
+
                 return acc;
             },
             {} as Record<TierType, Tier["Attributes"]>,
         );
+        
         // TODO: Instead of defaulting to starting tier - use whichever tier is being viewed so as to support information regarding all tiers.
         const startingTierAttributes = tierAttributesMap[entry.StartingTier];
 
@@ -428,7 +432,7 @@
                         ) {
                             return false;
                         }
-   
+
                         return true;
                     })
                     .map(([tierAttributeName, tierAttributeValue]) => {
@@ -487,7 +491,6 @@
     <h1 class="text-3xl font-bold">Hello, World! Welcome to How Bazaar!</h1>
 </div>
 
-<!-- Tabs Component -->
 <Tabs>
     <TabItem title="Items" open={true}>
         <!-- Items Tab Content -->
@@ -532,26 +535,26 @@
                         </ul>
                     </div>
 
-                    <div>
-                        <ul class="space-y-2">
-                            {#each entry.tiers as tier}
-                                <li class="bg-gray-100 p-2 rounded-lg">
-                                    <div class="font-semibold">{tier.name}</div>
-                                    <ul
-                                        class="ml-4 list-inside list-disc space-y-1"
-                                    >
-                                        {#each tier.attributes as attribute}
-                                            <li class="text-gray-600">
-                                                <span class="font-medium"
-                                                    >{attribute.name}:</span
-                                                >
-                                                {attribute.value} {attribute.valueDescriptor}
-                                            </li>
-                                        {/each}
-                                    </ul>
-                                </li>
-                            {/each}
-                        </ul>
+                    <!-- Fixed 5-column layout for Tiers -->
+                    <div class="grid grid-cols-5 gap-4">
+                        {#each entry.tiers as tier}
+                            <div class="p-2 rounded-lg bg-gray-100">
+                                <div class="font-semibold">{tier.name}</div>
+                                <ul
+                                    class="ml-4 list-inside list-disc space-y-1"
+                                >
+                                    {#each tier.attributes as attribute}
+                                        <li class="text-gray-600">
+                                            <span class="font-medium"
+                                                >{attribute.name}:</span
+                                            >
+                                            {attribute.value}
+                                            {attribute.valueDescriptor}
+                                        </li>
+                                    {/each}
+                                </ul>
+                            </div>
+                        {/each}
                     </div>
                 </li>
             {/each}
