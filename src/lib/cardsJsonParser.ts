@@ -212,133 +212,89 @@ export function parseJson(cardsJson: CardsJson) {
         const abilities = Object.values(entry.Abilities);
         const auras = Object.values(entry.Auras);
 
-        // Filter duplicate localization entries, prioritize the last occurring entry.
-        const uniqueTooltips = new Map<string, string>();
-        [...entry.Localization.Tooltips]
-            .reverse()
-            .forEach(({ Content: { Key, Text } }) => {
-                // Filter unused localization entries, rely on ability definitions, not localization, as source of truth for what is shown.
-                if (
-                    (abilities.some(
-                        ({ TranslationKey }) => TranslationKey === Key,
-                    ) ||
-                        auras.some(
-                            ({ TranslationKey }) => TranslationKey === Key,
-                        )) &&
-                    !uniqueTooltips.has(Key)
-                ) {
-                    uniqueTooltips.set(Key, Text);
-                }
-            });
-
-        // Map to ordered tooltip texts based on abilities order.
-        const rawAbilityTexts = Array.from(uniqueTooltips.entries())
-            .sort(
-                (a, b) =>
-                    abilities.findIndex(
-                        ({ TranslationKey }) => TranslationKey === a[0],
-                    ) -
-                    abilities.findIndex(
-                        ({ TranslationKey }) => TranslationKey === b[0],
-                    ),
-            )
-            // TODO: Don't double sort.. need to think of a better solution
-            .sort(
-                (a, b) =>
-                    auras.findIndex(
-                        ({ TranslationKey }) => TranslationKey === a[0],
-                    ) -
-                    auras.findIndex(
-                        ({ TranslationKey }) => TranslationKey === b[0],
-                    ),
-            )
-            .map(([, value]) => value);
-
-        const tierAttributesMap = tierOrder.reduce(
+        const tierMap = tierOrder.reduce(
             (acc, tier) => {
-                const currentAttributes = entry.Tiers[tier]?.Attributes;
+                const currentTier = entry.Tiers[tier];
+                const previousTier = acc[tierOrder[tierOrder.indexOf(tier) - 1]];
 
-                // Only merge with the previous tier if current tier has attributes.
-                acc[tier] = currentAttributes
-                    ? {
-                        ...(acc[tierOrder[tierOrder.indexOf(tier) - 1]] ||
-                            {}),
-                        ...currentAttributes,
-                    }
-                    : {}; // If no attributes, keep it as an empty object.
+                // Only merge with the previous tier if the current tier has attributes.
+                acc[tier] = {
+                    Attributes: currentTier?.Attributes
+                        ? {
+                            ...(previousTier?.Attributes || {}),
+                            ...currentTier.Attributes,
+                        }
+                        : {}, // If no attributes, keep it as an empty object.
+                    TooltipIds: currentTier?.TooltipIds || [], // Retain TooltipIds without merging.
+                };
 
                 return acc;
             },
-            {} as Record<TierType, Tier["Attributes"]>,
+            {} as Record<TierType, Pick<Tier, "Attributes" | "TooltipIds">>
         );
 
         // Map each tier to its attributes and ability texts
-        const tiers = Object.entries(tierAttributesMap).map(
-            ([tierName, tierAttributes]) => {
-                // Map abilities and auras for the current tier
-                let abilityValueMap = getAbilityValueMap(
-                    abilities,
-                    tierAttributes,
-                );
-                let auraValueMap = getAuraValueMap(auras, tierAttributes);
+        const tiers = Object.fromEntries(Object.entries(tierMap).map(
+            ([tierName, tier]) => {
+                // TODO: It's fucking weird this can miss when looking up by tooltipId which should be a key
+                const rawTooltips = tier.TooltipIds.map(tooltipId => entry.Localization.Tooltips[tooltipId]?.Content.Text).filter(Boolean);
+                const rawAttributes = tier.Attributes;
+
+                let abilityValueMap = getAbilityValueMap(abilities, rawAttributes);
+                let auraValueMap = getAuraValueMap(auras, rawAttributes);
 
                 // Filter and format tier attributes for display
-                let displayedTierAttributes = Object.entries(tierAttributes)
-                    .filter(([tierAttributeName, tierAttributeValue]) => {
+                let attributes = Object.entries(rawAttributes)
+                    .filter(([attributeName, attributeValue]) => {
                         // Exclude "BuyPrice" and "SellPrice"
                         if (
-                            tierAttributeName === "BuyPrice" ||
-                            tierAttributeName === "SellPrice" ||
-                            tierAttributeName.includes("Amount") ||
-                            tierAttributeName.includes("Targets")
+                            attributeName.includes("Price") ||
+                            attributeName.includes("Amount") ||
+                            attributeName.includes("Targets") ||
+                            attributeName.includes("Custom_")
                         ) {
                             return false;
                         }
                         // Exclude "Multicast" if its value is 1
                         if (
-                            tierAttributeName === "Multicast" &&
-                            tierAttributeValue === 1
+                            attributeName === "Multicast" &&
+                            attributeValue === 1
                         ) {
-                            return false;
-                        }
-
-                        // Exclude "Custom_"
-                        if (tierAttributeName.includes("Custom_")) {
                             return false;
                         }
 
                         return true;
                     })
-                    .map(([tierAttributeName, tierAttributeValue]) => {
+                    .map(([attributeName, attributeValue]) => {
                         // Add spaces between words for TitleCased attribute names
-                        let formattedName = tierAttributeName
+                        let formattedName = attributeName
                             .replace(/([a-z])([A-Z])/g, "$1 $2") // Add spaces for TitleCase
                             .trim(); // Trim extra spaces from replacements
 
                         // Rename "CooldownMax" specifically to "Cooldown"
-                        if (tierAttributeName === "CooldownMax") {
+                        if (attributeName === "CooldownMax") {
                             formattedName = "Cooldown";
                         }
 
                         // Initialize valueDescriptor and adjust tierAttributeValue if >= 1000
                         let valueDescriptor = null;
-                        if (tierAttributeValue >= 1000) {
-                            tierAttributeValue = tierAttributeValue / 1000;
+                        if (attributeValue >= 1000) {
+                            attributeValue = attributeValue / 1000;
                             valueDescriptor = "seconds";
                         }
 
                         return {
                             name: formattedName,
-                            value: tierAttributeValue,
+                            value: attributeValue,
                             valueDescriptor: valueDescriptor,
                         };
                     });
 
                 // Generate ability texts for the current tier
-                const tierAbilityTexts =
-                    Object.entries(tierAttributes).length > 0
-                        ? rawAbilityTexts.map((rawAbilityText) => {
-                            let abilityText = rawAbilityText;
+                const tooltips =
+                    Object.entries(rawAttributes).length > 0
+                        ? rawTooltips.map((rawTooltip) => {
+                            let abilityText = rawTooltip;
 
                             // Replace ability placeholders with tier-specific values
                             for (let [
@@ -376,13 +332,12 @@ export function parseJson(cardsJson: CardsJson) {
                         : [];
 
                 // Return tier data, including attributes and calculated ability texts
-                return {
-                    name: tierName,
-                    attributes: displayedTierAttributes,
-                    abilityTexts: tierAbilityTexts,
-                };
+                return [tierName, {
+                    attributes,
+                    tooltips,
+                }]
             },
-        );
+        ));
 
         return {
             name: entry.Localization.Title.Text,

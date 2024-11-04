@@ -66,13 +66,11 @@ type AbilitySpawnContext = {
 
 export type Ability = {
     Id: string;
-    TranslationKey: string;
     Action: AbilityAction;
 };
 
 export type Aura = {
     Id: string;
-    TranslationKey: string;
     Action: {
         $type: "TAuraActionCardModifyAttribute";
         Value: {
@@ -116,14 +114,16 @@ export type CardsJson = { [key: string]: CardItem };
 export type ClientSideCardItem = {
     name: string;
     tiers: {
-        name: string;
-        attributes: {
-            name: string;
-            value: number;
-            valueDescriptor: string | null;
-        }[];
-        abilityTexts: string[];
-    }[];
+        // TODO: This should be TierType
+        [key: string]: {
+            attributes: {
+                name: string;
+                value: number;
+                valueDescriptor: string | null;
+            }[];
+            tooltips: string[];
+        }
+    };
     tags: string[];
     hiddenTags: string[];
     size: CardItemSize;

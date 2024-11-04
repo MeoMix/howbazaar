@@ -69,9 +69,9 @@
                     <div
                         class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4"
                     >
-                        {#each entry.tiers as tier}
+                        {#each Object.entries(entry.tiers) as [tierType, tier]}
                             <div class="p-2 rounded-lg bg-gray-100">
-                                <div class="font-semibold">{tier.name}</div>
+                                <div class="font-semibold">{tierType}</div>
 
                                 <ul
                                     class="ml-4 list-inside list-disc space-y-1"
@@ -86,9 +86,9 @@
                                         </li>
                                     {/each}
 
-                                    {#each tier.abilityTexts as abilityText}
+                                    {#each tier.tooltips as tooltip}
                                         <li class="text-gray-600">
-                                            {abilityText}
+                                            {tooltip}
                                         </li>
                                     {/each}
                                 </ul>

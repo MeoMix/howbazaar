@@ -3,9 +3,32 @@ import { parseJson } from './cardsJsonParser';
 import billDozerJson from '../test/json/billDozer';
 
 describe('cardJsonParser', () => {
-  it('should correctly parse valid JSON', () => {
-    const expectedOutput = false;
+  it('should parse "Bill Dozer" correctly with correct cooldown reduction texts for each tier', () => {
+    const parsedOutput = parseJson(billDozerJson);
 
-    expect(parseJson(billDozerJson)).toEqual(expectedOutput);
+    const searchPhrase = "Your other Friends' cooldowns are reduced by";
+
+    const expectedTooltips = {
+      Diamond: `${searchPhrase} 40%.`,
+      Gold: `${searchPhrase} 30%.`,
+      Silver: `${searchPhrase} 20%.`,
+    };
+
+    // Extract the actual tooltips for each tier using the searchPhrase
+    const actualTooltips = {
+      // TODO: Need to fix capitalization discrepancies
+      Diamond: parsedOutput[0].tiers.Diamond.tooltips.find((text) =>
+        text.includes(searchPhrase)
+      ),
+      Gold: parsedOutput[0].tiers.Gold.tooltips.find((text) =>
+        text.includes(searchPhrase)
+      ),
+      Silver: parsedOutput[0].tiers.Silver.tooltips.find((text) =>
+        text.includes(searchPhrase)
+      ),
+    };
+
+    // Check if the extracted texts match the expected values
+    expect(actualTooltips).toEqual(expectedTooltips);
   });
 });
