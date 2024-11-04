@@ -10,6 +10,8 @@ export type TierType = (typeof tierOrder)[number];
 
 export type Tier = {
     Attributes: { [key: string]: number };
+    // TODO: add support for AbilityIds[] and AuraIds[]
+    TooltipIds: readonly number[];
 };
 
 type Tiers = Partial<Record<TierType, Tier>>;
@@ -40,6 +42,10 @@ type AbilityAction =
         $type: AbilityActionType;
         SpawnContext: AbilitySpawnContext;
         Value?: never;
+    } | {
+        $type: "TActionPlayerDamage" | "TActionCardModifyAttribute",
+        SpawnContext?: never;
+        Value?: never;
     };
 
 type AbilityActionValue =
@@ -48,7 +54,7 @@ type AbilityActionValue =
     | {
         $type: "TReferenceValueCardAttribute";
         Target: { $type: "TTargetCardSelf" };
-        AttributeType?: never;
+        AttributeType?: string;
     };
 
 type AbilitySpawnContext = {
@@ -86,10 +92,9 @@ export type CardItem = {
     Tiers: Tiers;
     Localization: {
         Title: { Text: string };
-        Tooltips: Array<{
-            Key: string;
+        Tooltips: readonly {
             Content: { Key: string; Text: string };
-        }>;
+        }[];
     };
     Abilities: {
         [key: string]: Ability;
@@ -98,12 +103,14 @@ export type CardItem = {
         [key: string]: Aura;
     };
     StartingTier: TierType;
-    Tags: string[];
-    HiddenTags: string[];
+    Tags: readonly string[];
+    HiddenTags: readonly string[];
     Size: CardItemSize;
-    Heroes: string[];
+    Heroes: readonly string[];
     SpawningEligibility: "Always" | "Never" | "GuidOnly";
 }
+
+export type CardsJson = { [key: string]: CardItem };
 
 // TODO: Fix naming
 export type ClientSideCardItem = {

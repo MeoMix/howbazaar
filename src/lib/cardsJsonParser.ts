@@ -1,5 +1,4 @@
-import { tierOrder, type Ability, type Aura, type CardItem, type Tier, type TierType } from "./types";
-import data from "./v2_Cards.json";
+import { tierOrder, type Ability, type Aura, type CardItem, type CardsJson, type Tier, type TierType } from "./types";
 
 // JSON contains testing data which isn't shown in game during normal operations
 // I didn't see a good flag for hiding these so I'm explicitly banning them.
@@ -177,10 +176,10 @@ function getAuraValue(
     return auraValue;
 }
 
-export default function getParsedJson() {
+export function parseJson(cardsJson: CardsJson) {
     const isTCardItem = (entry: any): entry is CardItem =>
         entry.$type === "TCardItem" && "Tiers" in entry;
-    const allCardItems = Object.values(data).filter(isTCardItem) as CardItem[];
+    const allCardItems = Object.values(cardsJson).filter(isTCardItem) as CardItem[];
     const filteredCardItems = allCardItems.filter(
         ({ SpawningEligibility, Id }) =>
             SpawningEligibility !== "Never" &&
@@ -388,10 +387,10 @@ export default function getParsedJson() {
         return {
             name: entry.Localization.Title.Text,
             tiers,
-            tags: entry.Tags,
-            hiddenTags: entry.HiddenTags,
+            tags: entry.Tags.map(tag => tag),
+            hiddenTags: entry.HiddenTags.map(hiddenTag => hiddenTag),
             size: entry.Size,
-            heroes: entry.Heroes,
+            heroes: entry.Heroes.map(hero => hero),
         };
     });
 
