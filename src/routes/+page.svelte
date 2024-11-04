@@ -1,5 +1,6 @@
 <script lang="ts">
     import data from "$lib/v2_Cards.json";
+    import { Tabs, TabItem } from "flowbite-svelte";
 
     // JSON contains testing data which isn't shown in game during normal operations
     // I didn't see a good flag for hiding these so I'm explicitly banning them.
@@ -9,7 +10,7 @@
         // "TEST ENCHANTMENT KATANA"
         "54f957f2-9522-486b-a7c6-bb234f74846e",
         // "[Community Team] Katana"
-        "16e3ebba-d530-489c-8439-3b47a4182c09"
+        "16e3ebba-d530-489c-8439-3b47a4182c09",
     ];
 
     const tierOrder = [
@@ -282,9 +283,14 @@
         return auraValue;
     }
 
-    const isTCardItem = (entry: any): entry is TCardItem => entry.$type === "TCardItem" && "Tiers" in entry;
+    const isTCardItem = (entry: any): entry is TCardItem =>
+        entry.$type === "TCardItem" && "Tiers" in entry;
     const allCardItems = Object.values(data).filter(isTCardItem) as TCardItem[];
-    const filteredCardItems = allCardItems.filter(({ SpawningEligibility, Id }) => SpawningEligibility !== "Never" && !explicitlyHiddenItemIds.includes(Id));
+    const filteredCardItems = allCardItems.filter(
+        ({ SpawningEligibility, Id }) =>
+            SpawningEligibility !== "Never" &&
+            !explicitlyHiddenItemIds.includes(Id),
+    );
 
     // Sanity check on Abilities and Aura IDs before proceeding.
     // This fixes "Wanted Poster" and ...
@@ -321,9 +327,10 @@
                 if (
                     (abilities.some(
                         ({ TranslationKey }) => TranslationKey === Key,
-                    ) || auras.some(
-                        ({ TranslationKey }) => TranslationKey === Key,
-                    )) &&
+                    ) ||
+                        auras.some(
+                            ({ TranslationKey }) => TranslationKey === Key,
+                        )) &&
                     !uniqueTooltips.has(Key)
                 ) {
                     uniqueTooltips.set(Key, Text);
@@ -375,7 +382,6 @@
             startingTierAttributes,
         );
 
-
         let auraValueMap = getAuraValueMap(auras, startingTierAttributes);
 
         const abilityTexts = rawAbilityTexts.map((rawAbilityText) => {
@@ -404,11 +410,62 @@
             return abilityText;
         });
 
+        const tiers = Object.entries(tierAttributesMap).map(
+            ([tierName, tierAttributes]) => {
+                let displayedTierAttributes = Object.entries(tierAttributes)
+                    .filter(([tierAttributeName, tierAttributeValue]) => {
+                        // Exclude "BuyPrice" and "SellPrice"
+                        if (
+                            tierAttributeName === "BuyPrice" ||
+                            tierAttributeName === "SellPrice"
+                        ) {
+                            return false;
+                        }
+                        // Exclude "Multicast" if its value is 1
+                        if (
+                            tierAttributeName === "Multicast" &&
+                            tierAttributeValue === 1
+                        ) {
+                            return false;
+                        }
+   
+                        return true;
+                    })
+                    .map(([tierAttributeName, tierAttributeValue]) => {
+                        // Add spaces between words for TitleCased attribute names
+                        let formattedName = tierAttributeName
+                            .replace(/([a-z])([A-Z])/g, "$1 $2") // Add spaces for TitleCase
+                            .replace(/\b(Amount|Apply)\b/g, "") // Remove "Amount" and "Apply"
+                            .trim(); // Trim extra spaces from replacements
+
+                        // Rename "CooldownMax" specifically to "Cooldown"
+                        if (tierAttributeName === "CooldownMax") {
+                            formattedName = "Cooldown";
+                        }
+
+                        // Initialize valueDescriptor and adjust tierAttributeValue if >= 1000
+                        let valueDescriptor = null;
+                        if (tierAttributeValue >= 1000) {
+                            tierAttributeValue = tierAttributeValue / 1000;
+                            valueDescriptor = "seconds";
+                        }
+
+                        return {
+                            name: formattedName,
+                            value: tierAttributeValue,
+                            valueDescriptor: valueDescriptor,
+                        };
+                    });
+
+                return { name: tierName, attributes: displayedTierAttributes };
+            },
+        );
+
         return {
             name: entry.Localization.Title.Text,
             abilityTexts,
             startingTier: entry.StartingTier,
-            tiers: tierAttributesMap,
+            tiers,
             tags: entry.Tags,
             hiddenTags: entry.HiddenTags,
             size: entry.Size,
@@ -426,52 +483,83 @@
         : cardItems;
 </script>
 
-<h1>Hello, World! Welcome to How Bazaar!</h1>
-
-<div>
-    <label>
-        Filter Items:
-        <select bind:value={selectedHero}>
-            <option value="">All</option>
-            {#each heroOptions as hero}
-                <option value={hero}>{hero}</option>
-            {/each}
-        </select>
-    </label>
+<div class="text-center mb-6">
+    <h1 class="text-3xl font-bold">Hello, World! Welcome to How Bazaar!</h1>
 </div>
 
-<ul>
-    {#each displayedEntries as entry}
-        <li>
-            <div>{entry.name}</div>
-            <div>Heroes: {entry.heroes.join(", ")}</div>
-            <div>Size: {entry.size}</div>
-            <div>Tags: {entry.tags.join(", ")}</div>
-            <div>Hidden Tags: {entry.hiddenTags.join(", ")}</div>
-            <div>Starting Tier: {entry.startingTier}</div>
-            <div>
-                <ul>
-                    {#each entry.abilityTexts as abilityText}
-                        <li>{abilityText}</li>
+<!-- Tabs Component -->
+<Tabs>
+    <TabItem title="Items" open={true}>
+        <!-- Items Tab Content -->
+        <div class="mb-4">
+            <label class="block font-semibold text-lg">
+                Filter Items:
+                <select
+                    bind:value={selectedHero}
+                    class="border border-gray-300 rounded-md p-2 ml-2 focus:outline-none focus:ring focus:border-blue-300"
+                >
+                    <option value="">All</option>
+                    {#each heroOptions as hero}
+                        <option value={hero}>{hero}</option>
                     {/each}
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    {#each Object.entries(entry.tiers) as [tierName, tierAttributes]}
-                        <li>
-                            {tierName}
-                            <ul>
-                                {#each Object.entries(tierAttributes) as [tierAttributeName, tierAttributeValue]}
-                                    <li>
-                                        {tierAttributeName}: {tierAttributeValue}
-                                    </li>
-                                {/each}
-                            </ul>
-                        </li>
-                    {/each}
-                </ul>
-            </div>
-        </li>
-    {/each}
-</ul>
+                </select>
+            </label>
+        </div>
+
+        <ul class="space-y-4">
+            {#each displayedEntries as entry}
+                <li class="p-4 border border-gray-200 rounded-lg shadow-sm">
+                    <div class="font-bold text-xl mb-2">{entry.name}</div>
+                    <div class="text-gray-700 mb-1">
+                        Heroes: {entry.heroes.join(", ")}
+                    </div>
+                    <div class="text-gray-700 mb-1">Size: {entry.size}</div>
+                    <div class="text-gray-700 mb-1">
+                        Tags: {entry.tags.join(", ")}
+                    </div>
+                    <div class="text-gray-500 mb-1 text-sm">
+                        Hidden Tags: {entry.hiddenTags.join(", ")}
+                    </div>
+                    <div class="text-gray-700 mb-3">
+                        Starting Tier: {entry.startingTier}
+                    </div>
+
+                    <div class="mb-3">
+                        <ul class="list-disc list-inside space-y-1">
+                            {#each entry.abilityTexts as abilityText}
+                                <li class="text-gray-600">{abilityText}</li>
+                            {/each}
+                        </ul>
+                    </div>
+
+                    <div>
+                        <ul class="space-y-2">
+                            {#each entry.tiers as tier}
+                                <li class="bg-gray-100 p-2 rounded-lg">
+                                    <div class="font-semibold">{tier.name}</div>
+                                    <ul
+                                        class="ml-4 list-inside list-disc space-y-1"
+                                    >
+                                        {#each tier.attributes as attribute}
+                                            <li class="text-gray-600">
+                                                <span class="font-medium"
+                                                    >{attribute.name}:</span
+                                                >
+                                                {attribute.value} {attribute.valueDescriptor}
+                                            </li>
+                                        {/each}
+                                    </ul>
+                                </li>
+                            {/each}
+                        </ul>
+                    </div>
+                </li>
+            {/each}
+        </ul>
+    </TabItem>
+
+    <TabItem title="Skills">
+        <!-- Skills Tab Content (Placeholder) -->
+        <p class="text-gray-700">Skills content goes here.</p>
+    </TabItem>
+</Tabs>
