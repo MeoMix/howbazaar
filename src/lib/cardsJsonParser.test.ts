@@ -1,6 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import { parseJson } from './cardsJsonParser';
 import billDozerJson from '../test/json/billDozer';
+import amberJson from '../test/json/amber';
 
 describe('cardJsonParser', () => {
   it('should parse "Bill Dozer" correctly with correct cooldown reduction texts for each tier', () => {
@@ -30,5 +31,13 @@ describe('cardJsonParser', () => {
 
     // Check if the extracted texts match the expected values
     expect(actualTooltips).toEqual(expectedTooltips);
+  });
+
+  it('should parse "Amber" correctly by replacing its {aura.1} with a correct value', () => {
+    const parsedOutput = parseJson(amberJson);
+
+    const searchPhrase = "Your other Slow items have";
+
+    expect(parsedOutput[0].tiers.Silver.tooltips.find((text) => text.includes(searchPhrase))).toEqual(`${searchPhrase} +1 Slow.`);
   });
 });

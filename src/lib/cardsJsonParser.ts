@@ -161,11 +161,20 @@ function getAuraValue(
     const actionType = aura.Action.$type;
 
     if (actionType === "TAuraActionCardModifyAttribute") {
-        attributeName = aura.Action.Value.AttributeType;
+        if (aura.Action.Value!.$type === "TFixedValue") {
+            auraValue = aura.Action.Value!.Value;
 
-        // NOTE: It's kind of weird this isn't multiplied by some other value, but this looks correct at time of writing.
-        if (modifierFlag === "Mod" && aura.Action.Value.Modifier) {
-            auraValue = aura.Action.Value.Modifier.Value;
+            // TODO: Getting too messy with fixing the 1000 -> 1 conversion stuff. Need to think of a better/consistent approach.
+            // if (auraValue >= 1000) {
+            //     auraValue /= 1000;
+            // }
+        } else {
+            attributeName = aura.Action.Value.AttributeType;
+
+            // NOTE: It's kind of weird this isn't multiplied by some other value, but this looks correct at time of writing.
+            if (modifierFlag === "Mod" && aura.Action.Value.Modifier) {
+                auraValue = aura.Action.Value.Modifier.Value;
+            }
         }
     }
 
@@ -278,10 +287,10 @@ export function parseJson(cardsJson: CardsJson) {
 
                         // Initialize valueDescriptor and adjust tierAttributeValue if >= 1000
                         let valueDescriptor = null;
-                        if (attributeValue >= 1000) {
-                            attributeValue = attributeValue / 1000;
-                            valueDescriptor = "seconds";
-                        }
+                        // if (attributeValue >= 1000) {
+                        //     attributeValue = attributeValue / 1000;
+                        //     valueDescriptor = "seconds";
+                        // }
 
                         return {
                             name: formattedName,
