@@ -1,6 +1,17 @@
 <script lang="ts">
     import data from "$lib/v2_Cards.json";
 
+    // JSON contains testing data which isn't shown in game during normal operations
+    // I didn't see a good flag for hiding these so I'm explicitly banning them.
+    // Originally I tried filtering out "GuidOnly" but there's many items which should be shown
+    // that fit this critera - such as Dooley's cores.
+    const explicitlyHiddenItemIds = [
+        // "TEST ENCHANTMENT KATANA"
+        "54f957f2-9522-486b-a7c6-bb234f74846e",
+        // "[Community Team] Katana"
+        "16e3ebba-d530-489c-8439-3b47a4182c09"
+    ];
+
     const tierOrder = [
         "Bronze",
         "Silver",
@@ -83,6 +94,7 @@
 
     interface TCardItem {
         $type: "TCardItem";
+        Id: string;
         Tiers: Tiers;
         Localization: {
             Title: { Text: string };
@@ -103,14 +115,6 @@
         Size: "Small" | "Medium" | "Large";
         Heroes: string[];
         SpawningEligibility: "Always" | "Never" | "GuidOnly";
-    }
-
-    function isTCardItem(entry: any): entry is TCardItem {
-        return entry.$type === "TCardItem" && "Tiers" in entry;
-    }
-
-    function isSpawningEligibleCard(cardItem: TCardItem): boolean {
-        return cardItem.SpawningEligibility === "Always";
     }
 
     function getAbilityValueMap(
@@ -278,11 +282,9 @@
         return auraValue;
     }
 
-    const filteredEntries = Object.values(data).filter(
-        isTCardItem,
-    ) as TCardItem[];
-
-    const filteredCardItems = filteredEntries.filter(isSpawningEligibleCard);
+    const isTCardItem = (entry: any): entry is TCardItem => entry.$type === "TCardItem" && "Tiers" in entry;
+    const allCardItems = Object.values(data).filter(isTCardItem) as TCardItem[];
+    const filteredCardItems = allCardItems.filter(({ SpawningEligibility, Id }) => SpawningEligibility !== "Never" && !explicitlyHiddenItemIds.includes(Id));
 
     // Sanity check on Abilities and Aura IDs before proceeding.
     // This fixes "Wanted Poster" and ...
