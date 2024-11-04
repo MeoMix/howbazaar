@@ -377,51 +377,26 @@
             },
             {} as Record<TierType, Tier["Attributes"]>,
         );
-        
-        // TODO: Instead of defaulting to starting tier - use whichever tier is being viewed so as to support information regarding all tiers.
-        const startingTierAttributes = tierAttributesMap[entry.StartingTier];
 
-        let abilityValueMap = getAbilityValueMap(
-            abilities,
-            startingTierAttributes,
-        );
-
-        let auraValueMap = getAuraValueMap(auras, startingTierAttributes);
-
-        const abilityTexts = rawAbilityTexts.map((rawAbilityText) => {
-            let abilityText = rawAbilityText;
-
-            for (let [abilityId, abilityValue] of Object.entries(
-                abilityValueMap,
-            )) {
-                if (abilityValue !== undefined) {
-                    abilityText = abilityText.replace(
-                        new RegExp(`\\{ability\\.${abilityId}\\}`, "g"),
-                        `${abilityValue}`,
-                    );
-                }
-            }
-
-            for (let [auraId, auraValue] of Object.entries(auraValueMap)) {
-                if (auraValue !== undefined) {
-                    abilityText = abilityText.replace(
-                        new RegExp(`\\{aura\\.${auraId}\\}`, "g"),
-                        `${auraValue}`,
-                    );
-                }
-            }
-
-            return abilityText;
-        });
-
+        // Map each tier to its attributes and ability texts
         const tiers = Object.entries(tierAttributesMap).map(
             ([tierName, tierAttributes]) => {
+                // Map abilities and auras for the current tier
+                let abilityValueMap = getAbilityValueMap(
+                    abilities,
+                    tierAttributes,
+                );
+                let auraValueMap = getAuraValueMap(auras, tierAttributes);
+
+                // Filter and format tier attributes for display
                 let displayedTierAttributes = Object.entries(tierAttributes)
                     .filter(([tierAttributeName, tierAttributeValue]) => {
                         // Exclude "BuyPrice" and "SellPrice"
                         if (
                             tierAttributeName === "BuyPrice" ||
-                            tierAttributeName === "SellPrice"
+                            tierAttributeName === "SellPrice" ||
+                            tierAttributeName.includes("Amount") ||
+                            tierAttributeName.includes("Targets")
                         ) {
                             return false;
                         }
@@ -433,13 +408,17 @@
                             return false;
                         }
 
+                        // Exclude "Custom_"
+                        if (tierAttributeName.includes("Custom_")) {
+                            return false;
+                        }
+
                         return true;
                     })
                     .map(([tierAttributeName, tierAttributeValue]) => {
                         // Add spaces between words for TitleCased attribute names
                         let formattedName = tierAttributeName
                             .replace(/([a-z])([A-Z])/g, "$1 $2") // Add spaces for TitleCase
-                            .replace(/\b(Amount|Apply)\b/g, "") // Remove "Amount" and "Apply"
                             .trim(); // Trim extra spaces from replacements
 
                         // Rename "CooldownMax" specifically to "Cooldown"
@@ -461,14 +440,58 @@
                         };
                     });
 
-                return { name: tierName, attributes: displayedTierAttributes };
+                // Generate ability texts for the current tier
+                const tierAbilityTexts =
+                    Object.entries(tierAttributes).length > 0
+                        ? rawAbilityTexts.map((rawAbilityText) => {
+                              let abilityText = rawAbilityText;
+
+                              // Replace ability placeholders with tier-specific values
+                              for (let [
+                                  abilityId,
+                                  abilityValue,
+                              ] of Object.entries(abilityValueMap)) {
+                                  if (abilityValue !== undefined) {
+                                      abilityText = abilityText.replace(
+                                          new RegExp(
+                                              `\\{ability\\.${abilityId}\\}`,
+                                              "g",
+                                          ),
+                                          `${abilityValue}`,
+                                      );
+                                  }
+                              }
+
+                              // Replace aura placeholders with tier-specific values
+                              for (let [auraId, auraValue] of Object.entries(
+                                  auraValueMap,
+                              )) {
+                                  if (auraValue !== undefined) {
+                                      abilityText = abilityText.replace(
+                                          new RegExp(
+                                              `\\{aura\\.${auraId}\\}`,
+                                              "g",
+                                          ),
+                                          `${auraValue}`,
+                                      );
+                                  }
+                              }
+
+                              return abilityText;
+                          })
+                        : [];
+
+                // Return tier data, including attributes and calculated ability texts
+                return {
+                    name: tierName,
+                    attributes: displayedTierAttributes,
+                    abilityTexts: tierAbilityTexts,
+                };
             },
         );
 
         return {
             name: entry.Localization.Title.Text,
-            abilityTexts,
-            startingTier: entry.StartingTier,
             tiers,
             tags: entry.Tags,
             hiddenTags: entry.HiddenTags,
@@ -488,12 +511,11 @@
 </script>
 
 <div class="text-center mb-6">
-    <h1 class="text-3xl font-bold">Hello, World! Welcome to How Bazaar!</h1>
+    <h1 class="text-3xl font-bold">Welcome to How Bazaar!</h1>
 </div>
 
 <Tabs>
     <TabItem title="Items" open={true}>
-        <!-- Items Tab Content -->
         <div class="mb-4">
             <label class="block font-semibold text-lg">
                 Filter Items:
@@ -513,33 +535,38 @@
             {#each displayedEntries as entry}
                 <li class="p-4 border border-gray-200 rounded-lg shadow-sm">
                     <div class="font-bold text-xl mb-2">{entry.name}</div>
-                    <div class="text-gray-700 mb-1">
-                        Heroes: {entry.heroes.join(", ")}
-                    </div>
-                    <div class="text-gray-700 mb-1">Size: {entry.size}</div>
-                    <div class="text-gray-700 mb-1">
-                        Tags: {entry.tags.join(", ")}
-                    </div>
-                    <div class="text-gray-500 mb-1 text-sm">
-                        Hidden Tags: {entry.hiddenTags.join(", ")}
-                    </div>
-                    <div class="text-gray-700 mb-3">
-                        Starting Tier: {entry.startingTier}
+
+                    <div class="flex mb-1 text-gray-700 gap-4">
+                        <span class="font-semibold w-24 text-right">Heroes</span
+                        >
+                        <span>{entry.heroes.join(", ")}</span>
                     </div>
 
-                    <div class="mb-3">
-                        <ul class="list-disc list-inside space-y-1">
-                            {#each entry.abilityTexts as abilityText}
-                                <li class="text-gray-600">{abilityText}</li>
-                            {/each}
-                        </ul>
+                    <div class="flex mb-1 text-gray-700 gap-4">
+                        <span class="font-semibold w-24 text-right">Size</span>
+                        <span>{entry.size}</span>
                     </div>
 
-                    <!-- Fixed 5-column layout for Tiers -->
-                    <div class="grid grid-cols-5 gap-4">
+                    <div class="flex mb-1 text-gray-700 gap-4">
+                        <span class="font-semibold w-24 text-right">Tags</span>
+                        <span>{entry.tags.join(", ")}</span>
+                    </div>
+
+                    <div class="flex mb-1 text-gray-700 gap-4">
+                        <span class="font-semibold w-24 text-right"
+                            >Hidden Tags</span
+                        >
+                        <span>{entry.hiddenTags.join(", ")}</span>
+                    </div>
+
+                    <!-- Responsive grid for tiers -->
+                    <div
+                        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4"
+                    >
                         {#each entry.tiers as tier}
                             <div class="p-2 rounded-lg bg-gray-100">
                                 <div class="font-semibold">{tier.name}</div>
+
                                 <ul
                                     class="ml-4 list-inside list-disc space-y-1"
                                 >
@@ -552,6 +579,12 @@
                                             {attribute.valueDescriptor}
                                         </li>
                                     {/each}
+
+                                    {#each tier.abilityTexts as abilityText}
+                                        <li class="text-gray-600">
+                                            {abilityText}
+                                        </li>
+                                    {/each}
                                 </ul>
                             </div>
                         {/each}
@@ -562,7 +595,6 @@
     </TabItem>
 
     <TabItem title="Skills">
-        <!-- Skills Tab Content (Placeholder) -->
-        <p class="text-gray-700">Skills content goes here.</p>
+        <p class="text-gray-700">Coming Soon!</p>
     </TabItem>
 </Tabs>
