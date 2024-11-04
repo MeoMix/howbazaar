@@ -160,7 +160,6 @@ function getAuraValue(
 
     const actionType = aura.Action.$type;
 
-
     if (actionType === "TAuraActionCardModifyAttribute") {
         if (aura.Action.Value!.$type === "TFixedValue") {
             auraValue = aura.Action.Value!.Value;
@@ -169,6 +168,8 @@ function getAuraValue(
             // if (auraValue >= 1000) {
             //     auraValue /= 1000;
             // }
+        } else if (aura.Action.Value!.$type === "TReferenceValueCardCount") {
+            auraValue = aura.Action.Value!.Modifier.Value;
         } else {
             attributeName = aura.Action.Value.AttributeType;
 

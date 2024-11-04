@@ -31,7 +31,7 @@ type AbilityActionType =
     | "TActionPlayerModifyAttribute"
     | "TActionGameSpawnCards";
 
-// TODO: tighten up the expectations here
+// TODO: tighten up the expectations here - this basically doesn't make any sense / provide any value as written
 type AbilityAction =
     | {
         $type: AbilityActionType;
@@ -43,7 +43,7 @@ type AbilityAction =
         SpawnContext: AbilitySpawnContext;
         Value?: never;
     } | {
-        $type: "TActionPlayerDamage" | "TActionCardModifyAttribute" | "TActionCardSlow" | "TActionCardReload",
+        $type: AbilityActionType,
         SpawnContext?: never;
         Value?: never;
     };
@@ -78,6 +78,12 @@ export type Aura = {
             $type: "TReferenceValueCardAttribute";
             AttributeType: string;
             Modifier?: {
+                Value: number;
+            };
+        }
+        | {
+            $type: "TReferenceValueCardCount";
+            Modifier: {
                 Value: number;
             };
         }
