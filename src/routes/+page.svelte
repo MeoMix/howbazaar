@@ -65,34 +65,43 @@
                         <span>{entry.hiddenTags.join(", ")}</span>
                     </div>
 
-                    <!-- Responsive grid for tiers -->
                     <div
-                        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4"
+                        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
                     >
                         {#each Object.entries(entry.tiers) as [tierType, tier]}
-                            <div class="p-2 rounded-lg bg-gray-100">
-                                <div class="font-semibold">{tierType}</div>
-
-                                <ul
-                                    class="ml-4 list-inside list-disc space-y-1"
+                            {#if tierType !== "Legendary"}
+                                <div
+                                    class={tier.attributes.length > 0
+                                        ? "p-2 rounded-lg bg-gray-100"
+                                        : ""}
                                 >
-                                    {#each tier.attributes as attribute}
-                                        <li class="text-gray-600">
-                                            <span class="font-medium"
-                                                >{attribute.name}:</span
-                                            >
-                                            {attribute.value}
-                                            {attribute.valueDescriptor}
-                                        </li>
-                                    {/each}
+                                    {#if tier.attributes.length > 0}
+                                        <div class="font-semibold">
+                                            {tierType}
+                                        </div>
 
-                                    {#each tier.tooltips as tooltip}
-                                        <li class="text-gray-600">
-                                            {tooltip}
-                                        </li>
-                                    {/each}
-                                </ul>
-                            </div>
+                                        <ul
+                                            class="ml-4 list-inside list-disc space-y-1"
+                                        >
+                                            {#each tier.attributes as attribute}
+                                                <li class="text-gray-600">
+                                                    <span class="font-medium"
+                                                        >{attribute.name}:</span
+                                                    >
+                                                    {attribute.value}
+                                                    {attribute.valueDescriptor}
+                                                </li>
+                                            {/each}
+
+                                            {#each tier.tooltips as tooltip}
+                                                <li class="text-gray-600">
+                                                    {tooltip}
+                                                </li>
+                                            {/each}
+                                        </ul>
+                                    {/if}
+                                </div>
+                            {/if}
                         {/each}
                     </div>
                 </li>
