@@ -1,17 +1,19 @@
 <script lang="ts">
-    import getParsedJson from "$lib/cardsJsonParser";
+    import type { ClientSideCardItem } from "$lib/types";
     import { Tabs, TabItem } from "flowbite-svelte";
 
-    const cardItems = getParsedJson();
+    let { data }: { data: { cardItems: ClientSideCardItem[] } } = $props();
 
-    // Set of predefined hero names for the filter
     const heroOptions = ["Vanessa", "Dooley", "Pygmalien", "Common"];
-    let selectedHero = ""; // Holds the current hero filter selection
+    let selectedHero = $state("");
 
-    // Derived array to display entries based on the selected hero
-    $: displayedEntries = selectedHero
-        ? cardItems.filter((cardItem) => cardItem.heroes.includes(selectedHero))
-        : cardItems;
+    let displayedEntries = $derived(
+        selectedHero
+            ? data.cardItems.filter((cardItem) =>
+                  cardItem.heroes.includes(selectedHero),
+              )
+            : data.cardItems,
+    );
 </script>
 
 <div class="text-center mb-6">
