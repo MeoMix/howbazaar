@@ -43,7 +43,7 @@ type AbilityAction =
         SpawnContext: AbilitySpawnContext;
         Value?: never;
     } | {
-        $type: "TActionPlayerDamage" | "TActionCardModifyAttribute" | "TActionCardSlow",
+        $type: "TActionPlayerDamage" | "TActionCardModifyAttribute" | "TActionCardSlow" | "TActionCardReload",
         SpawnContext?: never;
         Value?: never;
     };
@@ -71,7 +71,7 @@ export type Ability = {
 
 export type Aura = {
     Id: string;
-    Action: {
+    Action: | {
         $type: "TAuraActionCardModifyAttribute";
         Value:
         | {
@@ -85,7 +85,13 @@ export type Aura = {
             $type: "TFixedValue";
             Value: number;
         };
-    };
+    } | {
+        $type: "TAuraActionPlayerModifyAttribute";
+        Value: {
+            $type: "TReferenceValueCardAttribute";
+            AttributeType: string;
+        }
+    }
 };
 
 type CardItemSize = "Small" | "Medium" | "Large";

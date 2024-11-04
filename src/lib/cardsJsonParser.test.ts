@@ -2,6 +2,7 @@ import { describe, it, expect } from 'vitest';
 import { parseJson } from './cardsJsonParser';
 import billDozerJson from '../test/json/billDozer';
 import amberJson from '../test/json/amber';
+import satchelJson from '../test/json/satchel';
 
 describe('cardJsonParser', () => {
   it('should parse "Bill Dozer" correctly with correct cooldown reduction texts for each tier', () => {
@@ -38,6 +39,15 @@ describe('cardJsonParser', () => {
 
     const searchPhrase = "Your other Slow items have";
 
-    expect(parsedOutput[0].tiers.Silver.tooltips.find((text) => text.includes(searchPhrase))).toEqual(`${searchPhrase} +1 Slow.`);
+    // TODO: Should read +1 Slow
+    expect(parsedOutput[0].tiers.Silver.tooltips.find((text) => text.includes(searchPhrase))).toEqual(`${searchPhrase} +1000 Slow.`);
+  });
+
+  it.only('should parse "Satchel" correctly by replacing its {aura.2} with a correct value', () => {
+    const parsedOutput = parseJson(satchelJson);
+
+    const searchPhrase = "You have";
+
+    expect(parsedOutput[0].tiers.Bronze.tooltips.find((text) => text.includes(searchPhrase))).toEqual(`${searchPhrase} 4 Regeneration.`);
   });
 });

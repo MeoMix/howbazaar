@@ -160,6 +160,7 @@ function getAuraValue(
 
     const actionType = aura.Action.$type;
 
+
     if (actionType === "TAuraActionCardModifyAttribute") {
         if (aura.Action.Value!.$type === "TFixedValue") {
             auraValue = aura.Action.Value!.Value;
@@ -176,6 +177,8 @@ function getAuraValue(
                 auraValue = aura.Action.Value.Modifier.Value;
             }
         }
+    } else if (actionType === "TAuraActionPlayerModifyAttribute") {
+        attributeName = aura.Action.Value.AttributeType;
     }
 
     if (auraValue == undefined) {
