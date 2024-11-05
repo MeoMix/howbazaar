@@ -125,14 +125,6 @@ function getAbilityValue(
         abilityValue = tierAttributes[attribute];
     }
 
-    // Amount is often representing time in milliseconds, handle that here to represent as seconds.
-    // There's some poor data quality in the input data that expects this even when not associated with the phrase "seconds"
-    // because the formatted value is being used in other contexts.
-    // As an example, Marbles would read "When you use an adjacent Small item, slow 1000 item for 1 seconds" if we're not careful.
-    // if (abilityValue >= 1000) {
-    //     abilityValue /= 1000;
-    // }
-
     return abilityValue;
 }
 
@@ -175,11 +167,6 @@ function getAuraValue(
     if (actionType === "TAuraActionCardModifyAttribute") {
         if (aura.Action.Value!.$type === "TFixedValue") {
             auraValue = aura.Action.Value!.Value;
-
-            // TODO: Getting too messy with fixing the 1000 -> 1 conversion stuff. Need to think of a better/consistent approach.
-            // if (auraValue >= 1000) {
-            //     auraValue /= 1000;
-            // }
         } else if (aura.Action.Value!.$type === "TReferenceValueCardCount") {
             auraValue = aura.Action.Value!.Modifier.Value;
         } else {
@@ -310,10 +297,10 @@ export function parseJson(cardsJson: CardsJson) {
 
                         // Initialize valueDescriptor and adjust tierAttributeValue if >= 1000
                         let valueDescriptor = null;
-                        // if (attributeValue >= 1000) {
-                        //     attributeValue = attributeValue / 1000;
-                        //     valueDescriptor = "seconds";
-                        // }
+                        if (attributeValue >= 1000) {
+                            attributeValue = attributeValue / 1000;
+                            valueDescriptor = "seconds";
+                        }
 
                         return {
                             name: formattedName,
@@ -356,6 +343,38 @@ export function parseJson(cardsJson: CardsJson) {
                             );
                         }
                     }
+
+                    // Generally format milliseconds -> seconds
+                    // Don't be too greedy with the matching to avoid converting Life Preserver HP or Gavel Damage
+                    tooltip = tooltip.replace(/\b(\d{4,})\b(?=\s+second[s]?\b)/g, (match) => {
+                        const milliseconds = parseInt(match, 10);
+                        return `${milliseconds / 1000}`;
+                    });
+
+                    // Fixes Rocket Boots which display with +4000 Haste.
+                    tooltip = tooltip.replace(/\b(\d{4,})\b(?=\s+Haste[s]?\b)/g, (match) => {
+                        const hasteLarge = parseInt(match, 10);
+                        return `${hasteLarge / 1000}`;
+                    });
+
+                    // Fixes Amber which display with "+1000 Slow"
+                    tooltip = tooltip.replace(/\b(\d{4,})\b(?=\s+Slow[s]?\b)/g, (match) => {
+                        const slowLarge = parseInt(match, 10);
+                        return `${slowLarge / 1000}`;
+                    });
+
+                    // Fixes Marbles which displays with "slow 1000 item"
+                    tooltip = tooltip.replace(/(?<=\bslow\s+)(\d{4,})\b/g, (match) => {
+                        const slowLarge = parseInt(match, 10);
+                        return `${slowLarge / 1000}`;
+                    });
+
+                    // Fixes Chronobarrier and Fort which displays with "cooldowns are increase by 2000"
+                    tooltip = tooltip.replace(/(?<=cooldowns are increased by\s+)(\d{4,})\b/g, (match) => {
+                        const cooldownLarge = parseInt(match, 10);
+                        return `${cooldownLarge / 1000}`;
+                    });
+
 
                     return tooltip;
                 });
