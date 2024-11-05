@@ -550,28 +550,95 @@ export default {
                 ]
             },
             "Radiant": {
-                "Abilities": {},
+                "Abilities": {
+                    "e1": {
+                        "Id": "e1",
+                        "InternalName": "Radiant ",
+                        "InternalDescription": "When this item gains Freeze, remove Freeze from it.",
+                        "Action": {
+                            "$type": "TActionCardModifyAttribute",
+                            "Value": {
+                                "$type": "TFixedValue",
+                                "Value": 1000000.0
+                            },
+                            "AttributeType": "Freeze",
+                            "Operation": "Subtract",
+                            "Duration": null,
+                            "TargetCount": null,
+                            "Target": {
+                                "$type": "TTargetCardSelf",
+                                "Conditions": null
+                            }
+                        },
+                        "ActiveIn": "HandOnly",
+                        "MigrationData": "169c15f1-2082-410e-8633-ebe1a843c97c",
+                        "Prerequisites": null,
+                        "Priority": "Low",
+                        "TranslationKey": "db02baf95ec3866b3bcf0761025fd005",
+                        "Trigger": {
+                            "$type": "TTriggerOnCardAttributeChanged",
+                            "Subject": {
+                                "$type": "TTargetCardSelf",
+                                "Conditions": null
+                            },
+                            "AttributeChanged": "Freeze",
+                            "ChangeType": "Gain"
+                        },
+                        "VFXConfig": {
+                            "VFXIsTakeover": false,
+                            "VFXOverrideKey": null,
+                            "VFXShouldPlay": true
+                        }
+                    },
+                    "e2": {
+                        "Id": "e2",
+                        "InternalName": "Radiant Slow",
+                        "InternalDescription": "When this item gains Slow, remove Slow from it.",
+                        "Action": {
+                            "$type": "TActionCardModifyAttribute",
+                            "Value": {
+                                "$type": "TFixedValue",
+                                "Value": 1000000.0
+                            },
+                            "AttributeType": "Slow",
+                            "Operation": "Subtract",
+                            "Duration": null,
+                            "TargetCount": null,
+                            "Target": {
+                                "$type": "TTargetCardSelf",
+                                "Conditions": null
+                            }
+                        },
+                        "ActiveIn": "HandOnly",
+                        "MigrationData": "169c15f1-2082-410e-8633-ebe1a843c97c",
+                        "Prerequisites": null,
+                        "Priority": "Low",
+                        "TranslationKey": "db02baf95ec3866b3bcf0761025fd005",
+                        "Trigger": {
+                            "$type": "TTriggerOnCardAttributeChanged",
+                            "Subject": {
+                                "$type": "TTargetCardSelf",
+                                "Conditions": null
+                            },
+                            "AttributeChanged": "Slow",
+                            "ChangeType": "Gain"
+                        },
+                        "VFXConfig": {
+                            "VFXIsTakeover": false,
+                            "VFXOverrideKey": null,
+                            "VFXShouldPlay": true
+                        }
+                    }
+                },
                 "Attributes": {},
                 "Auras": {},
-                "HasAbilities": false,
+                "HasAbilities": true,
                 "HasAuras": false,
-                "HiddenTags": [
-                    "Slow"
-                ],
+                "HiddenTags": [],
                 "Localization": {
-                    "Tooltips": [
-                        {
-                            "Content": {
-                                "Key": "6cd40fd7-752d-49a7-9211-ed3343058789",
-                                "Text": "This cannot be Frozen, Slowed or Destroyed."
-                            },
-                            "TooltipType": "Passive"
-                        }
-                    ]
+                    "Tooltips": []
                 },
-                "Tags": [
-                    "Friend"
-                ]
+                "Tags": []
             }
         },
         "Type": "Item",

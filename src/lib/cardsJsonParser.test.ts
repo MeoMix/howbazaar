@@ -52,7 +52,7 @@ describe('cardJsonParser', () => {
     expect(parsedOutput.tiers.Bronze.tooltips.find((text) => text.includes(searchPhrase))).toEqual(`${searchPhrase} 4 Regeneration.`);
   });
 
-  it.only('should parse "Uwashiwali Bird" correctly by replacing its {aura.1} with a correct value', () => {
+  it('should parse "Uwashiwali Bird" correctly by replacing its {aura.1} with a correct value', () => {
     const parsedOutput = parseJson(uwashiwaliBirdJson)[0];
 
     const searchPhrase = "This has";
