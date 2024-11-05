@@ -1,9 +1,9 @@
-import cardsJson from "$lib/v2_Cards.json";
+import cardsJson from "$lib/v2_Cards.json" assert { type: "json" };
 import { parseJson } from "$lib/cardsJsonParser";
-import type { CardsJson, ClientSideCardItem } from "$lib/types";
+import type { CardsJson } from "$lib/types";
 
-export function load(): { cardItems: ClientSideCardItem[] } {
-    const cardItems = parseJson(cardsJson as CardsJson);
+export function load() {
+    const cards = parseJson(cardsJson as CardsJson);
 
-    return { cardItems };
+    return { cards };
 }

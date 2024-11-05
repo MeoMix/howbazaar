@@ -1,4 +1,8 @@
-import { tierOrder, type Ability, type Aura, type CardItem, type CardsJson, type Tier, type TierType } from "./types";
+// TODO: Some of QuickTypes outputs are less than ideal
+// I think I can generate a better typedef by interfacing with quicktype-core rather than the CLI
+// https://github.com/glideapps/quicktype?tab=readme-ov-file#calling-quicktype-from-javascript
+import type { CardsJson, ClientSideCard } from "./types";
+import type { V2CardsD as Card, Ability, Bronze as Tier, Aura, Tiers, Tier as TierType } from "./v2_Cards";
 
 // JSON contains testing data which isn't shown in game during normal operations
 // I didn't see a good flag for hiding these so I'm explicitly banning them.
@@ -49,6 +53,8 @@ function getAbilityValueMap(
     );
 }
 
+
+// TODO: Stop using ! and ??
 // Determine the attribute name relevant to the ability by looking at its metadata.
 // There might not be a relevant attribute name - might be able to skip directly to a fixed value.
 // If there is an attribute name then look up the value by the name.
@@ -88,9 +94,8 @@ function getAbilityValue(
         if (ability.Action.Value!.$type === "TFixedValue") {
             abilityValue = ability.Action.Value!.Value;
         } else if (
-            ability.Action.Value!.$type ===
-            "TReferenceValueCardAttribute" &&
-            ability.Action.Value!.Target.$type !== "TTargetCardSelf"
+            ability.Action.Value!.$type === "TReferenceValueCardAttribute" &&
+            ability.Action.Value!.Target?.$type !== "TTargetCardSelf"
         ) {
             // This isn't knowable outside of game context, so just default to 0.
             // TODO: console.warn?
@@ -154,6 +159,7 @@ function getAuraValueMap(
     );
 }
 
+// TODO: Stop using ! and ??
 function getAuraValue(
     aura: Aura,
     tierAttributes: Tier["Attributes"],
@@ -168,9 +174,9 @@ function getAuraValue(
         if (aura.Action.Value!.$type === "TFixedValue") {
             auraValue = aura.Action.Value!.Value;
         } else if (aura.Action.Value!.$type === "TReferenceValueCardCount") {
-            auraValue = aura.Action.Value!.Modifier.Value;
+            auraValue = aura.Action.Value!.Modifier!.Value;
         } else {
-            attributeName = aura.Action.Value.AttributeType;
+            attributeName = aura.Action.Value.AttributeType ?? '';
 
             // NOTE: It's kind of weird this isn't multiplied by some other value, but this looks correct at time of writing.
             if (modifierFlag === "Mod" && aura.Action.Value.Modifier) {
@@ -178,7 +184,7 @@ function getAuraValue(
             }
         }
     } else if (actionType === "TAuraActionPlayerModifyAttribute") {
-        attributeName = aura.Action.Value.AttributeType;
+        attributeName = aura.Action.Value.AttributeType ?? '';
     }
 
     if (auraValue == undefined) {
@@ -188,14 +194,15 @@ function getAuraValue(
     return auraValue;
 }
 
-export function parseJson(cardsJson: CardsJson) {
-    const isTCardItem = (entry: any): entry is CardItem => entry.$type === "TCardItem" || entry.$type === "TCardSkill";
-    const allCardItems = Object.values(cardsJson).filter(isTCardItem) as CardItem[];
-    const filteredCardItems = allCardItems.filter(
-        ({ SpawningEligibility, Id }) =>
-            SpawningEligibility !== "Never" &&
-            !explicitlyHiddenItemIds.includes(Id),
-    );
+export function parseJson(cardsJson: CardsJson): ClientSideCard[] {
+    const isItemOrSkill = (entry: Card): entry is Card & { Tiers: Tiers, $type: "TCardItem" | "TCardSkill", Localization: { Title: { Text: string } } } =>
+        (entry.$type === "TCardItem" || entry.$type === "TCardSkill") &&
+        entry.SpawningEligibility !== "Never" &&
+        entry.Tiers !== undefined &&
+        entry.Localization.Title.Text !== null &&
+        !explicitlyHiddenItemIds.includes(entry.Id);
+
+    const filteredCardItems = Object.values(cardsJson).filter(isItemOrSkill);
 
     // Sanity check on Abilities and Aura IDs before proceeding.
     // This fixes "Wanted Poster" and ...
@@ -219,9 +226,12 @@ export function parseJson(cardsJson: CardsJson) {
         }
     }
 
-    const cardItems = filteredCardItems.map((entry: CardItem) => {
+    const cardItems = filteredCardItems.map(entry => {
         const abilities = Object.values(entry.Abilities);
         const auras = Object.values(entry.Auras);
+
+        // TODO: Do I want Legendary here?
+        const tierOrder: TierType[] = ["Bronze", "Silver", "Gold", "Diamond", "Legendary"];
 
         const tierMap = tierOrder.reduce(
             (acc, tier) => {
@@ -247,12 +257,13 @@ export function parseJson(cardsJson: CardsJson) {
         // Map each tier to its attributes and ability texts
         const tiers = Object.fromEntries(Object.entries(tierMap).map(
             ([tierName, tier]) => {
-                // TODO: It's fucking weird this can miss when looking up by tooltipId which should be a key
-                let rawTooltips = tier.TooltipIds.map(tooltipId => entry.Localization.Tooltips[tooltipId]?.Content.Text);
+                const rawTooltips = tier.TooltipIds
+                    .map(tooltipId => entry.Localization.Tooltips[tooltipId]?.Content.Text)
+                    .filter((tooltip): tooltip is string => tooltip !== undefined && tooltip !== null);
 
-                if (rawTooltips.some(tooltip => tooltip === undefined)) {
+                // TODO: It's weird this can miss when looking up by tooltipId which should be a key
+                if (rawTooltips.length !== tier.TooltipIds.length) {
                     console.warn(entry.Localization.Title.Text + ': Failed to match on tooltip');
-                    rawTooltips = rawTooltips.filter(Boolean);
                 }
 
                 const rawAttributes = tier.Attributes;

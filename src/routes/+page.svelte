@@ -1,18 +1,16 @@
 <script lang="ts">
-    import type { ClientSideCardItem } from "$lib/types";
+    import type { ClientSideCard } from "$lib/types";
     import { Tabs, TabItem } from "flowbite-svelte";
 
-    let { data }: { data: { cardItems: ClientSideCardItem[] } } = $props();
+    let { data }: { data: { cards: ClientSideCard[] } } = $props();
 
     const heroOptions = ["Vanessa", "Dooley", "Pygmalien", "Common"];
     let selectedHero = $state("");
 
     let displayedEntries = $derived(
         selectedHero
-            ? data.cardItems.filter((cardItem) =>
-                  cardItem.heroes.includes(selectedHero),
-              )
-            : data.cardItems,
+            ? data.cards.filter((card) => card.heroes.includes(selectedHero))
+            : data.cards,
     );
 </script>
 
@@ -38,7 +36,7 @@
         </div>
 
         <ul class="space-y-4">
-            {#each displayedEntries.filter(entry => entry.$type === "TCardItem") as entry}
+            {#each displayedEntries.filter((entry) => entry.$type === "TCardItem") as entry}
                 <li class="p-4 border border-gray-200 rounded-lg shadow-sm">
                     <div class="font-bold text-xl mb-2">{entry.name}</div>
 
@@ -126,7 +124,7 @@
         </div>
 
         <ul class="space-y-4">
-            {#each displayedEntries.filter(entry => entry.$type === "TCardSkill") as entry}
+            {#each displayedEntries.filter((entry) => entry.$type === "TCardSkill") as entry}
                 <li class="p-4 border border-gray-200 rounded-lg shadow-sm">
                     <div class="font-bold text-xl mb-2">{entry.name}</div>
 

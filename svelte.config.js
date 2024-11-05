@@ -17,7 +17,7 @@ const config = {
 
 	plugins: [
 		svelte({
-			compilerOPtions: {
+			compilerOptions: {
 				// Enable strict mode to enforce Svelte 5 syntax
 				strict: true
 			}
