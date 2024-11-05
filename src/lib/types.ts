@@ -18,15 +18,16 @@ type Tiers = Partial<Record<TierType, Tier>>;
 
 type AbilityActionType =
     | "TActionCardHaste"
-    | "TActionPlayerDamage"
     | "TActionCardSlow"
-    | "TActionPlayerBurnApply"
-    | "TActionPlayerShieldApply"
-    | "TActionPlayerHeal"
-    | "TActionPlayerPoisonApply"
     | "TActionCardReload"
     | "TActionCardFreeze"
     | "TActionCardCharge"
+    | "TActionPlayerBurnApply"
+    | "TActionPlayerPoisonApply"
+    | "TActionPlayerShieldApply"
+    | "TActionPlayerJoyApply"
+    | "TActionPlayerHeal"
+    | "TActionPlayerDamage"
     | "TActionCardModifyAttribute"
     | "TActionPlayerModifyAttribute"
     | "TActionGameSpawnCards";

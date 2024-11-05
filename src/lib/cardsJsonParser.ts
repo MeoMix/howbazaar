@@ -37,6 +37,12 @@ function getAbilityValueMap(
                 acc[`${ability.Id}.targets`] = targetsAbilityValue;
             }
 
+            // TODO: Support Ginger Bread Man
+            // let modAbilityValue = getAbilityValue(ability, tierAttributes, "Amount");
+            // if (modAbilityValue !== undefined) {
+            //     acc[`${ability.Id}.mod`] = modAbilityValue;
+            // }
+
             return acc;
         },
         {} as { [key: string]: number | undefined },
@@ -50,7 +56,7 @@ function getAbilityValueMap(
 function getAbilityValue(
     ability: Ability,
     tierAttributes: Tier["Attributes"],
-    suffix: "Amount" | "Targets",
+    suffix: "Amount" | "Targets" | "Mod",
 ): number | undefined {
     let abilityValue: number | undefined;
     let abilityName = "";
@@ -76,6 +82,8 @@ function getAbilityValue(
         abilityName = "Freeze";
     } else if (actionType === "TActionCardCharge") {
         abilityName = "Charge";
+    } else if (actionType === "TActionPlayerJoyApply") {
+        abilityName = "JoyApply";
     } else if (actionType === "TActionCardModifyAttribute") {
         if (ability.Action.Value!.$type === "TFixedValue") {
             abilityValue = ability.Action.Value!.Value;
