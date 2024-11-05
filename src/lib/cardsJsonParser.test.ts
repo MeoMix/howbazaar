@@ -60,15 +60,13 @@ describe('cardJsonParser', () => {
 
     const searchPhrase = "This has";
 
-    // TODO: Would expect this to be [0] rather than [2]
-    expect(uwashiwaliBirdCard.tiers.Bronze.tooltips.find((text) => text.includes(searchPhrase))).toEqual(`${searchPhrase} +2 Multicast for each Property you have. [2]`);
+    expect(uwashiwaliBirdCard.tiers.Bronze.tooltips.find((text) => text.includes(searchPhrase))).toEqual(`${searchPhrase} +2 Multicast for each Property you have.`);
   });
 
   it('should parse "Healthy Collector" correctly by replacing its {aura.0.mod} with a correct value', () => {
     const healthyCollector = cards.find(card => card.name === "Healthy Collector")!;
     const searchPhrase = "You have +";
 
-    // TODO: would expect this to be [0] rather than [35]
-    expect(healthyCollector.tiers.Bronze.tooltips.find((text) => text.includes(searchPhrase))).toEqual(`${searchPhrase}35 Max Health for each Non-Weapon item you have. [35]`);
+    expect(healthyCollector.tiers.Bronze.tooltips.find((text) => text.includes(searchPhrase))).toEqual(`${searchPhrase}35 Max Health for each Non-Weapon item you have.`);
   });
 });

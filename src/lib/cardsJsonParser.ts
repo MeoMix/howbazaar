@@ -321,6 +321,9 @@ export function parseJson(cardsJson: CardsJson): ClientSideCard[] {
                 const tooltips = rawTooltips.map((rawTooltip) => {
                     let tooltip = rawTooltip;
 
+                    // Remove [{}] from the tooltip text as it indicates a value which is reliant on game state to compute properly.
+                    tooltip = tooltip.replace(/\[\{.*?\}\]/g, "").trim();
+
                     // Replace ability placeholders with tier-specific values
                     for (let [
                         abilityId,
