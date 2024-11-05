@@ -104,7 +104,8 @@ export type Aura = {
 type CardItemSize = "Small" | "Medium" | "Large";
 
 export type CardItem = {
-    $type: "TCardItem";
+    // TODO: Change to Type
+    $type: "TCardItem" | "TCardSkill";
     Id: string;
     Tiers: Tiers;
     Localization: {
@@ -131,6 +132,8 @@ export type CardsJson = { [key: string]: CardItem };
 
 // TODO: Fix naming
 export type ClientSideCardItem = {
+    // TODO: Change to Type
+    $type: "TCardItem" | "TCardSkill";
     name: string;
     tiers: {
         // TODO: This should be TierType

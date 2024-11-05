@@ -189,12 +189,11 @@ function getAuraValue(
 }
 
 export function parseJson(cardsJson: CardsJson) {
-    const isTCardItem = (entry: any): entry is CardItem =>
-        entry.$type === "TCardItem" && "Tiers" in entry;
+    const isTCardItem = (entry: any): entry is CardItem => entry.$type === "TCardItem" || entry.$type === "TCardSkill";
     const allCardItems = Object.values(cardsJson).filter(isTCardItem) as CardItem[];
     const filteredCardItems = allCardItems.filter(
-        ({ SpawningEligibility, Id }) =>
-            SpawningEligibility !== "Never" &&
+        ({ SpawningEligibility, Id, $type }) =>
+            (SpawningEligibility !== "Never" || $type === "TCardSkill") &&
             !explicitlyHiddenItemIds.includes(Id),
     );
 
@@ -388,6 +387,7 @@ export function parseJson(cardsJson: CardsJson) {
 
         return {
             name: entry.Localization.Title.Text,
+            $type: entry.$type,
             tiers,
             tags: entry.Tags.map(tag => tag),
             hiddenTags: entry.HiddenTags.map(hiddenTag => hiddenTag),
