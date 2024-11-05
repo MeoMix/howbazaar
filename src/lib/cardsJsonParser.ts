@@ -375,7 +375,6 @@ export function parseJson(cardsJson: CardsJson) {
                         return `${cooldownLarge / 1000}`;
                     });
 
-
                     return tooltip;
                 });
 
@@ -386,10 +385,6 @@ export function parseJson(cardsJson: CardsJson) {
                 }]
             },
         ));
-
-        if (entry.Localization.Title.Text === "Bag of Jewels") {
-            console.log('tiers:', tiers);
-        }
 
         return {
             name: entry.Localization.Title.Text,
