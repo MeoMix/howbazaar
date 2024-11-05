@@ -117,9 +117,9 @@ function getAbilityValue(
     // There's some poor data quality in the input data that expects this even when not associated with the phrase "seconds"
     // because the formatted value is being used in other contexts.
     // As an example, Marbles would read "When you use an adjacent Small item, slow 1000 item for 1 seconds" if we're not careful.
-    if (abilityValue >= 1000) {
-        abilityValue /= 1000;
-    }
+    // if (abilityValue >= 1000) {
+    //     abilityValue /= 1000;
+    // }
 
     return abilityValue;
 }
@@ -250,7 +250,13 @@ export function parseJson(cardsJson: CardsJson) {
         const tiers = Object.fromEntries(Object.entries(tierMap).map(
             ([tierName, tier]) => {
                 // TODO: It's fucking weird this can miss when looking up by tooltipId which should be a key
-                const rawTooltips = tier.TooltipIds.map(tooltipId => entry.Localization.Tooltips[tooltipId]?.Content.Text).filter(Boolean);
+                let rawTooltips = tier.TooltipIds.map(tooltipId => entry.Localization.Tooltips[tooltipId]?.Content.Text); //.filter(Boolean);
+
+                if (rawTooltips.some(tooltip => tooltip === undefined)) {
+                    console.warn(entry.Localization.Title.Text + ': Failed to match on tooltip');
+                    rawTooltips = rawTooltips.filter(Boolean);
+                }
+
                 const rawAttributes = tier.Attributes;
 
                 let abilityValueMap = getAbilityValueMap(abilities, rawAttributes);
@@ -304,45 +310,42 @@ export function parseJson(cardsJson: CardsJson) {
                     });
 
                 // Generate ability texts for the current tier
-                const tooltips =
-                    Object.entries(rawAttributes).length > 0
-                        ? rawTooltips.map((rawTooltip) => {
-                            let abilityText = rawTooltip;
+                const tooltips = rawTooltips.map((rawTooltip) => {
+                    let tooltip = rawTooltip;
 
-                            // Replace ability placeholders with tier-specific values
-                            for (let [
-                                abilityId,
-                                abilityValue,
-                            ] of Object.entries(abilityValueMap)) {
-                                if (abilityValue !== undefined) {
-                                    abilityText = abilityText.replace(
-                                        new RegExp(
-                                            `\\{ability\\.${abilityId}\\}`,
-                                            "g",
-                                        ),
-                                        `${abilityValue}`,
-                                    );
-                                }
-                            }
+                    // Replace ability placeholders with tier-specific values
+                    for (let [
+                        abilityId,
+                        abilityValue,
+                    ] of Object.entries(abilityValueMap)) {
+                        if (abilityValue !== undefined) {
+                            tooltip = tooltip.replace(
+                                new RegExp(
+                                    `\\{ability\\.${abilityId}\\}`,
+                                    "g",
+                                ),
+                                `${abilityValue}`,
+                            );
+                        }
+                    }
 
-                            // Replace aura placeholders with tier-specific values
-                            for (let [auraId, auraValue] of Object.entries(
-                                auraValueMap,
-                            )) {
-                                if (auraValue !== undefined) {
-                                    abilityText = abilityText.replace(
-                                        new RegExp(
-                                            `\\{aura\\.${auraId}\\}`,
-                                            "g",
-                                        ),
-                                        `${auraValue}`,
-                                    );
-                                }
-                            }
+                    // Replace aura placeholders with tier-specific values
+                    for (let [auraId, auraValue] of Object.entries(
+                        auraValueMap,
+                    )) {
+                        if (auraValue !== undefined) {
+                            tooltip = tooltip.replace(
+                                new RegExp(
+                                    `\\{aura\\.${auraId}\\}`,
+                                    "g",
+                                ),
+                                `${auraValue}`,
+                            );
+                        }
+                    }
 
-                            return abilityText;
-                        })
-                        : [];
+                    return tooltip;
+                });
 
                 // Return tier data, including attributes and calculated ability texts
                 return [tierName, {
@@ -351,6 +354,10 @@ export function parseJson(cardsJson: CardsJson) {
                 }]
             },
         ));
+
+        if (entry.Localization.Title.Text === "Bag of Jewels") {
+            console.log('tiers:', tiers);
+        }
 
         return {
             name: entry.Localization.Title.Text,

@@ -71,11 +71,11 @@
                         {#each Object.entries(entry.tiers) as [tierType, tier]}
                             {#if tierType !== "Legendary"}
                                 <div
-                                    class={tier.attributes.length > 0
+                                    class={tier.tooltips.length > 0
                                         ? "p-2 rounded-lg bg-gray-100"
                                         : ""}
                                 >
-                                    {#if tier.attributes.length > 0}
+                                    {#if tier.tooltips.length > 0}
                                         <div class="font-semibold">
                                             {tierType}
                                         </div>
