@@ -192,8 +192,8 @@ export function parseJson(cardsJson: CardsJson) {
     const isTCardItem = (entry: any): entry is CardItem => entry.$type === "TCardItem" || entry.$type === "TCardSkill";
     const allCardItems = Object.values(cardsJson).filter(isTCardItem) as CardItem[];
     const filteredCardItems = allCardItems.filter(
-        ({ SpawningEligibility, Id, $type }) =>
-            (SpawningEligibility !== "Never" || $type === "TCardSkill") &&
+        ({ SpawningEligibility, Id }) =>
+            SpawningEligibility !== "Never" &&
             !explicitlyHiddenItemIds.includes(Id),
     );
 
