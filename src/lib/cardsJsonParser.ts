@@ -91,7 +91,11 @@ function getAbilityValue(
             abilityName = ability.Action.Value!.AttributeType!;
         }
     } else if (actionType === "TActionPlayerModifyAttribute") {
-        abilityName = ability.Action.Value!.AttributeType!;
+        if (ability.Action.Value?.$type === "TFixedValue") {
+            abilityValue = ability.Action.Value.Value;
+        } else {
+            abilityName = ability.Action.Value!.AttributeType!;
+        }
     } else if (actionType === "TActionGameSpawnCards") {
         if (ability.Action.SpawnContext!.Limit.$type === "TFixedValue") {
             abilityValue = ability.Action.SpawnContext!.Limit.Value;
@@ -250,7 +254,7 @@ export function parseJson(cardsJson: CardsJson) {
         const tiers = Object.fromEntries(Object.entries(tierMap).map(
             ([tierName, tier]) => {
                 // TODO: It's fucking weird this can miss when looking up by tooltipId which should be a key
-                let rawTooltips = tier.TooltipIds.map(tooltipId => entry.Localization.Tooltips[tooltipId]?.Content.Text); //.filter(Boolean);
+                let rawTooltips = tier.TooltipIds.map(tooltipId => entry.Localization.Tooltips[tooltipId]?.Content.Text);
 
                 if (rawTooltips.some(tooltip => tooltip === undefined)) {
                     console.warn(entry.Localization.Title.Text + ': Failed to match on tooltip');
@@ -260,6 +264,7 @@ export function parseJson(cardsJson: CardsJson) {
                 const rawAttributes = tier.Attributes;
 
                 let abilityValueMap = getAbilityValueMap(abilities, rawAttributes);
+
                 let auraValueMap = getAuraValueMap(auras, rawAttributes);
 
                 // Filter and format tier attributes for display
