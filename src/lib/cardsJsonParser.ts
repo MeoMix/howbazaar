@@ -170,7 +170,7 @@ function getAuraValue(
 
     const actionType = aura.Action.$type;
 
-    if (actionType === "TAuraActionCardModifyAttribute") {
+    if (actionType === "TAuraActionCardModifyAttribute" || actionType === "TAuraActionPlayerModifyAttribute") {
         if (aura.Action.Value!.$type === "TFixedValue") {
             auraValue = aura.Action.Value!.Value;
         } else if (aura.Action.Value!.$type === "TReferenceValueCardCount") {
@@ -183,8 +183,6 @@ function getAuraValue(
                 auraValue = aura.Action.Value.Modifier.Value;
             }
         }
-    } else if (actionType === "TAuraActionPlayerModifyAttribute") {
-        attributeName = aura.Action.Value.AttributeType ?? '';
     }
 
     if (auraValue == undefined) {
@@ -400,10 +398,10 @@ export function parseJson(cardsJson: CardsJson): ClientSideCard[] {
             name: entry.Localization.Title.Text,
             $type: entry.$type,
             tiers,
-            tags: entry.Tags.map(tag => tag),
-            hiddenTags: entry.HiddenTags.map(hiddenTag => hiddenTag),
+            tags: entry.Tags,
+            hiddenTags: entry.HiddenTags,
             size: entry.Size,
-            heroes: entry.Heroes.map(hero => hero),
+            heroes: entry.Heroes,
         };
     });
 
