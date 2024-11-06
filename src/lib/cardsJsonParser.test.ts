@@ -69,4 +69,11 @@ describe('cardJsonParser', () => {
 
     expect(healthyCollector.tiers.Bronze.tooltips.find((text) => text.includes(searchPhrase))).toEqual(`${searchPhrase}35 Max Health for each Non-Weapon item you have.`);
   });
+
+  it('should parse "Memory Card" correctly by replacing its {ability.1} with a correct value', () => {
+    const healthyCollector = cards.find(card => card.name === "Memory Card")!;
+    const searchPhrase = "When you sell this, give The Core + Damage equal to this item's value.";
+
+    expect(healthyCollector.tiers.Bronze.tooltips.find((text) => text.includes(searchPhrase))).toEqual(`${searchPhrase} 1`);
+  });
 });

@@ -2,7 +2,7 @@
 // I think I can generate a better typedef by interfacing with quicktype-core rather than the CLI
 // https://github.com/glideapps/quicktype?tab=readme-ov-file#calling-quicktype-from-javascript
 import type { CardsJson, ClientSideCard } from "./types";
-import type { V2CardsD as Card, Ability, Bronze as Tier, Aura, Tiers, Tier as TierType } from "./v2_Cards";
+import type { V2CardsD as Card, Ability, Bronze as Tier, Aura, Tiers, Tier as TierType, AbilityAction, AuraAction } from "./v2_Cards";
 
 // JSON contains testing data which isn't shown in game during normal operations
 // I didn't see a good flag for hiding these so I'm explicitly banning them.
@@ -13,6 +13,8 @@ const explicitlyHiddenItemIds = [
     "54f957f2-9522-486b-a7c6-bb234f74846e",
     // "[Community Team] Katana"
     "16e3ebba-d530-489c-8439-3b47a4182c09",
+    // "Gingerbread Man" (Joy isn't enabled currently),
+    "8b2ce029-7f69-401c-9811-3a6398237a90"
 ];
 
 function getAbilityValueMap(
@@ -23,8 +25,8 @@ function getAbilityValueMap(
 } {
     return abilities.reduce(
         (acc, ability) => {
-            let amountAbilityValue = getAbilityValue(
-                ability,
+            let amountAbilityValue = getAttributeValue(
+                ability.Action,
                 tierAttributes,
                 "Amount",
             );
@@ -32,8 +34,8 @@ function getAbilityValueMap(
                 acc[ability.Id] = amountAbilityValue;
             }
 
-            let targetsAbilityValue = getAbilityValue(
-                ability,
+            let targetsAbilityValue = getAttributeValue(
+                ability.Action,
                 tierAttributes,
                 "Targets",
             );
@@ -41,96 +43,10 @@ function getAbilityValueMap(
                 acc[`${ability.Id}.targets`] = targetsAbilityValue;
             }
 
-            // TODO: Support Ginger Bread Man
-            // let modAbilityValue = getAbilityValue(ability, tierAttributes, "Amount");
-            // if (modAbilityValue !== undefined) {
-            //     acc[`${ability.Id}.mod`] = modAbilityValue;
-            // }
-
             return acc;
         },
         {} as { [key: string]: number | undefined },
     );
-}
-
-
-// TODO: Stop using ! and ??
-// Determine the attribute name relevant to the ability by looking at its metadata.
-// There might not be a relevant attribute name - might be able to skip directly to a fixed value.
-// If there is an attribute name then look up the value by the name.
-// If all else fails then can consider falling back to looking up by ability id and assuming its an index offset, but this isn't desirable.
-function getAbilityValue(
-    ability: Ability,
-    tierAttributes: Tier["Attributes"],
-    suffix: "Amount" | "Targets" | "Mod",
-): number | undefined {
-    let abilityValue: number | undefined;
-    let abilityName = "";
-    const actionType = ability.Action.$type;
-
-    if (actionType === "TActionCardHaste") {
-        abilityName = "Haste";
-    } else if (actionType === "TActionPlayerDamage") {
-        abilityName = "Damage";
-    } else if (actionType === "TActionCardSlow") {
-        abilityName = "Slow";
-    } else if (actionType === "TActionPlayerBurnApply") {
-        abilityName = "BurnApply";
-    } else if (actionType === "TActionPlayerShieldApply") {
-        abilityName = "ShieldApply";
-    } else if (actionType === "TActionPlayerHeal") {
-        abilityName = "Heal";
-    } else if (actionType === "TActionPlayerPoisonApply") {
-        abilityName = "PoisonApply";
-    } else if (actionType === "TActionCardReload") {
-        abilityName = "Reload";
-    } else if (actionType === "TActionCardFreeze") {
-        abilityName = "Freeze";
-    } else if (actionType === "TActionCardCharge") {
-        abilityName = "Charge";
-    } else if (actionType === "TActionPlayerJoyApply") {
-        abilityName = "JoyApply";
-    } else if (actionType === "TActionCardModifyAttribute") {
-        if (ability.Action.Value!.$type === "TFixedValue") {
-            abilityValue = ability.Action.Value!.Value;
-        } else if (
-            ability.Action.Value!.$type === "TReferenceValueCardAttribute" &&
-            ability.Action.Value!.Target?.$type !== "TTargetCardSelf"
-        ) {
-            // This isn't knowable outside of game context, so just default to 0.
-            // TODO: console.warn?
-            abilityValue = 0;
-        } else {
-            abilityName = ability.Action.Value!.AttributeType!;
-        }
-    } else if (actionType === "TActionPlayerModifyAttribute") {
-        if (ability.Action.Value?.$type === "TFixedValue") {
-            abilityValue = ability.Action.Value.Value;
-        } else {
-            abilityName = ability.Action.Value!.AttributeType!;
-        }
-    } else if (actionType === "TActionGameSpawnCards") {
-        if (ability.Action.SpawnContext!.Limit.$type === "TFixedValue") {
-            abilityValue = ability.Action.SpawnContext!.Limit.Value;
-        }
-    }
-
-    if (abilityValue == undefined) {
-        let attribute = "";
-        if (abilityName) {
-            // Check for existence of suffix because there's some dirty data.
-            // As an example, Rocket Boots "AttributeType" is "HasteAmount" rather than the expected "Haste"
-            if (abilityName.includes(suffix)) {
-                attribute = abilityName;
-            } else {
-                attribute = `${abilityName}${abilityName.includes("Custom") ? "" : suffix}`;
-            }
-        }
-
-        abilityValue = tierAttributes[attribute];
-    }
-
-    return abilityValue;
 }
 
 function getAuraValueMap(
@@ -141,14 +57,14 @@ function getAuraValueMap(
 } {
     return auras.reduce(
         (acc, aura) => {
-            let amountAuraValue = getAuraValue(aura, tierAttributes);
+            let amountAuraValue = getAttributeValue(aura.Action, tierAttributes, "Amount");
 
             if (amountAuraValue !== undefined) {
                 acc[aura.Id] = amountAuraValue;
             }
 
-            // Support Pyg's "Fork Lift" which uses `aura2.mod`
-            let modAuraValue = getAuraValue(aura, tierAttributes, "Mod");
+            // Support Dooley's "Fork Lift" which uses `aura2.mod`
+            let modAuraValue = getAttributeValue(aura.Action, tierAttributes, "Amount");
             if (modAuraValue !== undefined) {
                 acc[`${aura.Id}.mod`] = modAuraValue;
             }
@@ -159,37 +75,75 @@ function getAuraValueMap(
     );
 }
 
-// TODO: Stop using ! and ??
-function getAuraValue(
-    aura: Aura,
+// Determine the attribute name relevant to an aura/ability action by looking at its metadata.
+// There might not be a relevant attribute name - might be able to skip directly to a fixed value.
+// If there is an attribute name then look up the value by the name.
+function getAttributeValue(
+    action: AbilityAction | AuraAction,
     tierAttributes: Tier["Attributes"],
-    modifierFlag?: "Mod",
+    suffix: "Amount" | "Targets",
 ): number | undefined {
-    let auraValue: number | undefined;
+    let attributeValue: number | undefined;
     let attributeName = "";
+    const actionType = action.$type;
 
-    const actionType = aura.Action.$type;
+    if (actionType.includes("ModifyAttribute")) {
+        if (action.Value?.$type === "TFixedValue") {
+            attributeValue = action.Value.Value;
+        } else if (action.Value?.$type === "TReferenceValueCardCount") {
+            attributeValue = action.Value.Modifier?.Value;
+        } else if (
+            action.Value?.$type === "TReferenceValueCardAttribute" &&
+            action.Value?.Target?.$type !== "TTargetCardSelf"
+        ) {
+            // Some values require context based on game state beyond the current card which isn't known to this website.
+            attributeValue = 0;
+        } else if (action.Value?.Modifier) {
+            attributeValue = action.Value.Modifier.Value;
+        } else if (action.Value?.AttributeType) {
+            attributeName = action.Value?.AttributeType;
+        }
+    } else if (actionType === "TActionGameSpawnCards") {
+        if (action.SpawnContext?.Limit.$type === "TFixedValue") {
+            attributeValue = action.SpawnContext.Limit.Value;
+        }
+    } else {
+        attributeName = actionType.replace(/^TAction(Card|Player)/, "");
+    }
 
-    if (actionType === "TAuraActionCardModifyAttribute" || actionType === "TAuraActionPlayerModifyAttribute") {
-        if (aura.Action.Value!.$type === "TFixedValue") {
-            auraValue = aura.Action.Value!.Value;
-        } else if (aura.Action.Value!.$type === "TReferenceValueCardCount") {
-            auraValue = aura.Action.Value!.Modifier!.Value;
+    if (attributeValue == undefined && attributeName) {
+        const noSuffixAttributeNames = [
+            "BuyPrice",
+            "SellPrice",
+            "HealthMax",
+            "CritChance",
+            "Gold",
+            "CooldownMax",
+            "HealthRegen",
+            "Experience",
+            "Prestige",
+            "Income",
+            "AmmoMax",
+            "Shield",
+            "Counter",
+            "Multicast",
+            "Lifesteal",
+            "Level",
+            "Health",
+            "Ammo",
+            "DamageCrit"
+        ];
+
+        // Check for existence of suffix because there's some dirty data.
+        // As an example, Rocket Boots "AttributeType" is "HasteAmount" rather than the expected "Haste"
+        if (attributeName.includes(suffix) || attributeName.includes("Custom_") || noSuffixAttributeNames.includes(attributeName)) {
+            attributeValue = tierAttributes[attributeName];
         } else {
-            attributeName = aura.Action.Value.AttributeType ?? '';
-
-            // NOTE: It's kind of weird this isn't multiplied by some other value, but this looks correct at time of writing.
-            if (modifierFlag === "Mod" && aura.Action.Value.Modifier) {
-                auraValue = aura.Action.Value.Modifier.Value;
-            }
+            attributeValue = tierAttributes[`${attributeName}${suffix}`];
         }
     }
 
-    if (auraValue == undefined) {
-        auraValue = tierAttributes[attributeName];
-    }
-
-    return auraValue;
+    return attributeValue;
 }
 
 export function parseJson(cardsJson: CardsJson): ClientSideCard[] {
