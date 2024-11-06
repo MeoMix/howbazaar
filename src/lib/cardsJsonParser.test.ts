@@ -60,14 +60,14 @@ describe('cardJsonParser', () => {
 
     const searchPhrase = "This has";
 
-    expect(uwashiwaliBirdCard.tiers.Bronze.tooltips.find((text) => text.includes(searchPhrase))).toEqual(`${searchPhrase} +2 Multicast for each Property you have.`);
+    expect(uwashiwaliBirdCard.tiers.Bronze.tooltips.find((text) => text.includes(searchPhrase))).toEqual(`${searchPhrase} +2 Multicast for each Property you have. [0]`);
   });
 
   it('should parse "Healthy Collector" correctly by replacing its {aura.0.mod} with a correct value', () => {
     const healthyCollector = cards.find(card => card.name === "Healthy Collector")!;
     const searchPhrase = "You have +";
 
-    expect(healthyCollector.tiers.Bronze.tooltips.find((text) => text.includes(searchPhrase))).toEqual(`${searchPhrase}35 Max Health for each Non-Weapon item you have.`);
+    expect(healthyCollector.tiers.Bronze.tooltips.find((text) => text.includes(searchPhrase))).toEqual(`${searchPhrase}35 Max Health for each Non-Weapon item you have. [0]`);
   });
 
   it('should parse "Memory Card" correctly by replacing its {ability.1} with a correct value', () => {
@@ -75,5 +75,26 @@ describe('cardJsonParser', () => {
     const searchPhrase = "When you sell this, give The Core + Damage equal to this item's value.";
 
     expect(healthyCollector.tiers.Bronze.tooltips.find((text) => text.includes(searchPhrase))).toEqual(`${searchPhrase} 1`);
+  });
+
+  it('should parse "Crook" correctly by replacing its {aura.4} with a correct value (by relying on modifiers)', () => {
+    const crook = cards.find(card => card.name === "Crook")!;
+    const searchPhrase = "Your Weapons have +";
+
+    expect(crook.tiers.Silver.tooltips.find((text) => text.includes(searchPhrase))).toEqual(`${searchPhrase}10 Damage for each Medium item you have.`);
+  });
+
+  it('should parse "Fire Claw" correctly by replacing its [{aura.1}] with a correct value', () => {
+    const fireClaw = cards.find(card => card.name === "Fire Claw")!;
+    const searchPhrase = "This has + Burn equal to the Burn of your other items. ";
+
+    expect(fireClaw.tiers.Bronze.tooltips.find((text) => text.includes(searchPhrase))).toEqual(`${searchPhrase}[0]`);
+  });
+
+  it('should parse "Fishing Net" correctly by replacing its {ability.0.targets} with a correct value', () => {
+    const fishingNet = cards.find(card => card.name === "Fishing Net")!;
+    const searchPhrase = "Slow ";
+
+    expect(fishingNet.tiers.Bronze.tooltips.find((text) => text.includes(searchPhrase))).toEqual(`${searchPhrase}1 item for 3 seconds.`);
   });
 });
