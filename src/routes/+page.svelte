@@ -135,11 +135,6 @@
                     </div>
 
                     <div class="flex mb-1 text-gray-700 gap-4">
-                        <span class="font-semibold w-24 text-right">Size</span>
-                        <span>{entry.size}</span>
-                    </div>
-
-                    <div class="flex mb-1 text-gray-700 gap-4">
                         <span class="font-semibold w-24 text-right">Tags</span>
                         <span>{entry.tags.join(", ")}</span>
                     </div>
