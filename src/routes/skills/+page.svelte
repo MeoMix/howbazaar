@@ -1,5 +1,5 @@
 <script lang="ts">
-    import type { ClientSideCard } from "$lib/types";
+    import type { ClientSideCard, ClientSideCardSkill } from "$lib/types";
     import CardSkill from "$lib/components/CardSkill.svelte";
 
     const { data }: { data: { cards: ClientSideCard[] } } = $props();
@@ -7,14 +7,14 @@
     let selectedHero = $state("");
 
     const heroOptions = ["Vanessa", "Dooley", "Pygmalien", "Common"];
-    const displayedCards = data.cards.filter((card) => card.type === "Skill");
+    const cardSkills = data.cards.filter(
+        (card): card is ClientSideCardSkill => card.type === "Skill",
+    );
 
     const filteredCards = $derived(
         selectedHero
-            ? displayedCards.filter((card) =>
-                  card.heroes.includes(selectedHero),
-              )
-            : displayedCards,
+            ? cardSkills.filter((card) => card.heroes.includes(selectedHero))
+            : cardSkills,
     );
 </script>
 

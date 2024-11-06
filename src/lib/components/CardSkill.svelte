@@ -1,9 +1,9 @@
 <script lang="ts">
-    import type { ClientSideCard } from "$lib/types";
+    import type { ClientSideCardSkill } from "$lib/types";
     import { copyCardLink } from "$lib/stores/clipboard";
+    import type { Entries } from "type-fest";
 
-    // TODO: might be nice to tighten this type to Skill
-    export let card: ClientSideCard;
+    export let card: ClientSideCardSkill;
 
     const id = card.name.replace(/\s+/g, "_");
 </script>
@@ -34,7 +34,7 @@
     <div
         class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
     >
-        {#each Object.entries(card.tiers).filter(([tierType]) => tierType !== "Legendary") as [tierType, tier]}
+        {#each (Object.entries(card.tiers) as Entries<typeof card.tiers>).filter(([tierType]) => tierType !== "Legendary") as [tierType, tier]}
             {#if tier.tooltips.length === 0}
                 <div></div>
             {:else}

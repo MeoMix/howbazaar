@@ -1,7 +1,8 @@
 // TODO: Some of QuickTypes outputs are less than ideal
 // I think I can generate a better typedef by interfacing with quicktype-core rather than the CLI
 // https://github.com/glideapps/quicktype?tab=readme-ov-file#calling-quicktype-from-javascript
-import type { CardsJson, ClientSideCard } from "./types";
+import type { Entries } from "type-fest";
+import type { CardsJson, ClientSideCard, ClientSideTier } from "./types";
 import type { V2CardsD as Card, Ability, Bronze as Tier, Aura, Tiers, Tier as TierType, AbilityAction, AuraAction } from "./v2_Cards";
 
 // JSON contains testing data which isn't shown in game during normal operations
@@ -182,7 +183,6 @@ export function parseJson(cardsJson: CardsJson): ClientSideCard[] {
         const abilities = Object.values(entry.Abilities);
         const auras = Object.values(entry.Auras);
 
-        // TODO: Do I want Legendary here?
         const tierOrder: TierType[] = ["Bronze", "Silver", "Gold", "Diamond", "Legendary"];
 
         const tierMap = tierOrder.reduce(
@@ -206,8 +206,7 @@ export function parseJson(cardsJson: CardsJson): ClientSideCard[] {
             {} as Record<TierType, Pick<Tier, "Attributes" | "TooltipIds">>
         );
 
-        // Map each tier to its attributes and ability texts
-        const tiers = Object.fromEntries(Object.entries(tierMap).map(
+        const tiers = Object.fromEntries((Object.entries(tierMap) as Entries<typeof tierMap>).map(
             ([tierName, tier]) => {
                 const rawTooltips = tier.TooltipIds
                     .map(tooltipId => entry.Localization.Tooltips[tooltipId]?.Content.Text)
@@ -349,7 +348,7 @@ export function parseJson(cardsJson: CardsJson): ClientSideCard[] {
                     tooltips,
                 }]
             },
-        ));
+        )) as Record<TierType, ClientSideTier>;
 
         return {
             name: entry.Localization.Title.Text,

@@ -1,5 +1,5 @@
 <script lang="ts">
-    import type { ClientSideCard } from "$lib/types";
+    import type { ClientSideCard, ClientSideCardItem } from "$lib/types";
     import CardItem from "$lib/components/CardItem.svelte";
 
     const { data }: { data: { cards: ClientSideCard[] } } = $props();
@@ -7,14 +7,15 @@
     let selectedHero = $state("");
 
     const heroOptions = ["Vanessa", "Dooley", "Pygmalien", "Common"];
-    const displayedCards = data.cards.filter((card) => card.type === "Item");
 
-    const filteredCards = $derived(
+    const cardItems = data.cards.filter(
+        (card): card is ClientSideCardItem => card.type === "Item",
+    );
+
+    const filteredCardItems = $derived(
         selectedHero
-            ? displayedCards.filter((card) =>
-                  card.heroes.includes(selectedHero),
-              )
-            : displayedCards,
+            ? cardItems.filter((card) => card.heroes.includes(selectedHero))
+            : cardItems,
     );
 </script>
 
@@ -34,7 +35,7 @@
 </div>
 
 <div class="space-y-4">
-    {#each filteredCards as card}
+    {#each filteredCardItems as card}
         <CardItem {card} />
     {/each}
 </div>
