@@ -147,8 +147,8 @@ function getAttributeValue(
 }
 
 export function parseJson(cardsJson: CardsJson): ClientSideCard[] {
-    const isItemOrSkill = (entry: Card): entry is Card & { Tiers: Tiers, $type: "TCardItem" | "TCardSkill", Localization: { Title: { Text: string } } } =>
-        (entry.$type === "TCardItem" || entry.$type === "TCardSkill") &&
+    const isItemOrSkill = (entry: Card): entry is Card & { Tiers: Tiers, Type: "Item" | "Skill", Localization: { Title: { Text: string } } } =>
+        (entry.Type === "Item" || entry.Type === "Skill") &&
         entry.SpawningEligibility !== "Never" &&
         entry.Tiers !== undefined &&
         entry.Localization.Title.Text !== null &&
@@ -353,7 +353,7 @@ export function parseJson(cardsJson: CardsJson): ClientSideCard[] {
 
         return {
             name: entry.Localization.Title.Text,
-            $type: entry.$type,
+            type: entry.Type,
             tiers,
             tags: entry.Tags,
             hiddenTags: entry.HiddenTags,

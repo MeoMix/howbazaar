@@ -4,8 +4,7 @@ export type CardsJson = { [key: string]: Card };
 
 // TODO: Fix naming
 export type ClientSideCard = {
-    // TODO: Change to Type
-    $type: "TCardItem" | "TCardSkill";
+    type: "Item" | "Skill";
     name: string;
     tiers: {
         // TODO: This should be TierType

@@ -36,7 +36,7 @@
         </div>
 
         <ul class="space-y-4">
-            {#each displayedEntries.filter((entry) => entry.$type === "TCardItem") as entry}
+            {#each displayedEntries.filter((entry) => entry.type === "Item") as entry}
                 <li class="p-4 border border-gray-200 rounded-lg shadow-sm">
                     <div class="font-bold text-xl mb-2">{entry.name}</div>
 
@@ -124,7 +124,7 @@
         </div>
 
         <ul class="space-y-4">
-            {#each displayedEntries.filter((entry) => entry.$type === "TCardSkill") as entry}
+            {#each displayedEntries.filter((entry) => entry.type === "Skill") as entry}
                 <li class="p-4 border border-gray-200 rounded-lg shadow-sm">
                     <div class="font-bold text-xl mb-2">{entry.name}</div>
 
