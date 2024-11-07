@@ -103,6 +103,7 @@ describe('cardJsonParser', () => {
       const fishingNet = cards.find(card => card.name === "Fishing Net")!;
       const heavyEnchantment = fishingNet.enchantments.find(enchantment => enchantment.name === 'Heavy')!;
 
+      expect(heavyEnchantment.tooltips.length).toEqual(1);
       expect(heavyEnchantment.tooltips[0]).toEqual('x2 Slow');
     });
 
@@ -110,15 +111,63 @@ describe('cardJsonParser', () => {
       const magnifyingGlass = cards.find(card => card.name === "Magnifying Glass")!;
       const heavyEnchantment = magnifyingGlass.enchantments.find(enchantment => enchantment.name === 'Obsidian')!;
 
+      expect(heavyEnchantment.tooltips.length).toEqual(1);
       expect(heavyEnchantment.tooltips[0]).toEqual('Lifesteal 100');
     });
 
-    // TODO: I think Heavy Induction Aegis might be bugged in-game?
-    // it('should parse "Heavy Induction Aegis" correctly by replacing its {ability.e1} with a correct value', () => {
-    //   const inductionAegis = cards.find(card => card.name === "Induction Aegis")!;
-    //   const heavyEnchantment = inductionAegis.enchantments.find(enchantment => enchantment.name === 'Heavy')!;
+    it('should parse "Turbo Bomb Squad" correctly by replacing its {abiltiy.e1} (which is a typo) with a correct value', () => {
+      const bombSquad = cards.find(card => card.name === "Bomb Squad")!;
+      const turboEnchantment = bombSquad.enchantments.find(enchantment => enchantment.name === 'Turbo')!;
 
-    //   expect(heavyEnchantment.tooltips[0]).toEqual('Slow 1 item for 1 seconds.');
-    // });
+      expect(turboEnchantment.tooltips.length).toEqual(1);
+      expect(turboEnchantment.tooltips[0]).toEqual('Haste 1 item for 2 seconds.');
+    });
+
+    it('should parse "Deadly Port" correctly by replacing its {aura.e1.} (which is a typo) with a correct value', () => {
+      const port = cards.find(card => card.name === "Port")!;
+      const deadlyEnchantment = port.enchantments.find(enchantment => enchantment.name === 'Deadly')!;
+
+      expect(deadlyEnchantment.tooltips.length).toEqual(1);
+      expect(deadlyEnchantment.tooltips[0]).toEqual('Your Ammo items have +20% Crit Chance.');
+    });
+
+    it('should parse "Swash Buckle" correctly by excluding Shiny which is an invalid enchantment', () => {
+      const swashBuckle = cards.find(card => card.name === "Swash Buckle")!;
+      const shinyEnchantment = swashBuckle.enchantments.find(enchantment => enchantment.name === 'Shiny')!;
+
+      expect(shinyEnchantment).toBeUndefined();
+    });
+
+    it('should parse "Orbital Polisher" correctly by excluding Shiny which is an invalid enchantment', () => {
+      const orbitalPolisher = cards.find(card => card.name === "Orbital Polisher")!;
+      const shinyEnchantment = orbitalPolisher.enchantments.find(enchantment => enchantment.name === 'Shiny')!;
+
+      expect(shinyEnchantment).toBeUndefined();
+    });
+
+    it('should parse "Heavy Multitool" correctly by providing a custom tooltip rather than trying to inject variables into the existing tooltip', () => {
+      const multitool = cards.find(card => card.name === "Multitool")!;
+      const heavyEnchantment = multitool.enchantments.find(enchantment => enchantment.name === 'Heavy')!;
+
+      expect(heavyEnchantment.tooltips.length).toEqual(1);
+      expect(heavyEnchantment.tooltips[0]).toEqual('+2 Slow');
+    });
+    
+    it('should parse "Heavy Induction Aegis" correctly by replacing {ability.e1} with attribute values derived from StartingTier', () => {
+      const inductionAegis = cards.find(card => card.name === "Induction Aegis")!;
+      const heavyEnchantment = inductionAegis.enchantments.find(enchantment => enchantment.name === 'Heavy')!;
+
+      expect(heavyEnchantment.tooltips.length).toEqual(1);
+      expect(heavyEnchantment.tooltips[0]).toEqual('Slow 1 item for 1 seconds.');
+    });
+
+    it('should parse "Deadly Sextant" correctly by replacing its {aura.0} with a correct value', () => {
+      const sextant = cards.find(card => card.name === "Sextant")!;
+      const deadlyEnchantment = sextant.enchantments.find(enchantment => enchantment.name === 'Deadly')!;
+
+      expect(deadlyEnchantment.tooltips.length).toEqual(1);
+      expect(deadlyEnchantment.tooltips[0]).toEqual('Adjacent items have an additional +25% Crit Chance');
+    });
+
   });
 });
