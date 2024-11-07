@@ -210,6 +210,68 @@ function prettyPrintTooltip(tooltip: string) {
     return tooltip;
 }
 
+function getDisplayedAttributes(attributes: Tier["Attributes"]) {
+    // Filter and format tier attributes for display
+    let displayedAttributes = Object.entries(attributes)
+        .filter(([attributeName, attributeValue]) => {
+            // Exclude unuseful data that is implicit and/or not readable by the user.
+            if (
+                attributeName.includes("Price") ||
+                attributeName.includes("Amount") ||
+                attributeName.includes("Targets") ||
+                attributeName.includes("Custom_")
+            ) {
+                return false;
+            }
+            // Exclude "Multicast" if its value is 1 because that's an implicit default
+            if (
+                attributeName === "Multicast" &&
+                attributeValue === 1
+            ) {
+                return false;
+            }
+
+            return true;
+        })
+        .map(([attributeName, attributeValue]) => {
+            // Add spaces between words for TitleCased attribute names
+            let formattedName = attributeName
+                .replace(/([a-z])([A-Z])/g, "$1 $2")
+                .trim();
+
+            // Rename "CooldownMax" specifically to "Cooldown"
+            if (attributeName === "CooldownMax") {
+                formattedName = "Cooldown";
+            }
+
+            // Initialize valueDescriptor and adjust tierAttributeValue if >= 1000
+            let valueDescriptor = null;
+            if (attributeValue >= 1000) {
+                attributeValue = attributeValue / 1000;
+                valueDescriptor = "seconds";
+            }
+
+            return {
+                name: formattedName,
+                value: attributeValue,
+                valueDescriptor: valueDescriptor,
+            };
+        });
+
+    return displayedAttributes;
+}
+
+function getDisplayedTooltips(tooltips: string[], abilities: Ability[], auras: Aura[], attributes: Tier["Attributes"] ) {
+    const displayedTooltips = tooltips.map((rawTooltip) => {
+        let tooltip = replaceTemplatingWithValues(rawTooltip, abilities, auras, attributes);
+        let prettyTooltip = prettyPrintTooltip(tooltip);
+
+        return prettyTooltip;
+    });
+
+    return displayedTooltips;
+}
+
 type ValidCard = Card & { Tiers: Tiers, Type: "Item" | "Skill", Localization: { Title: { Text: string } } };
 
 export function parseJson(cardsJson: CardsJson): ClientSideCard[] {
@@ -260,63 +322,12 @@ export function parseJson(cardsJson: CardsJson): ClientSideCard[] {
                     console.warn(card.Localization.Title.Text + ': Failed to match on tooltip');
                 }
 
-                // Filter and format tier attributes for display
-                let attributes = Object.entries(tier.Attributes)
-                    .filter(([attributeName, attributeValue]) => {
-                        // Exclude unuseful data that is implicit and/or not readable by the user.
-                        if (
-                            attributeName.includes("Price") ||
-                            attributeName.includes("Amount") ||
-                            attributeName.includes("Targets") ||
-                            attributeName.includes("Custom_")
-                        ) {
-                            return false;
-                        }
-                        // Exclude "Multicast" if its value is 1 because that's an implicit default
-                        if (
-                            attributeName === "Multicast" &&
-                            attributeValue === 1
-                        ) {
-                            return false;
-                        }
-
-                        return true;
-                    })
-                    .map(([attributeName, attributeValue]) => {
-                        // Add spaces between words for TitleCased attribute names
-                        let formattedName = attributeName
-                            .replace(/([a-z])([A-Z])/g, "$1 $2")
-                            .trim();
-
-                        // Rename "CooldownMax" specifically to "Cooldown"
-                        if (attributeName === "CooldownMax") {
-                            formattedName = "Cooldown";
-                        }
-
-                        // Initialize valueDescriptor and adjust tierAttributeValue if >= 1000
-                        let valueDescriptor = null;
-                        if (attributeValue >= 1000) {
-                            attributeValue = attributeValue / 1000;
-                            valueDescriptor = "seconds";
-                        }
-
-                        return {
-                            name: formattedName,
-                            value: attributeValue,
-                            valueDescriptor: valueDescriptor,
-                        };
-                    });
-
-                const tooltips = rawTooltips.map((rawTooltip) => {
-                    let tooltip = replaceTemplatingWithValues(rawTooltip, abilities, auras, tier.Attributes);
-                    let prettyTooltip = prettyPrintTooltip(tooltip);
-
-                    return prettyTooltip;
-                });
+                let tooltips = getDisplayedTooltips(rawTooltips, abilities, auras, tier.Attributes);
+                let attributes = getDisplayedAttributes(tier.Attributes);
 
                 return [tierName, {
-                    attributes,
                     tooltips,
+                    attributes,
                 }]
             },
         )) as Record<TierType, ClientSideTier>;
