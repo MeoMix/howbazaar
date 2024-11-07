@@ -107,10 +107,18 @@ describe('cardJsonParser', () => {
     });
 
     it('should parse "Obsidian Magnifying Glass" correctly by providing a custom tooltip for the lifesteal attribute', () => {
-      const fishingNet = cards.find(card => card.name === "Magnifying Glass")!;
-      const heavyEnchantment = fishingNet.enchantments.find(enchantment => enchantment.name === 'Obsidian')!;
+      const magnifyingGlass = cards.find(card => card.name === "Magnifying Glass")!;
+      const heavyEnchantment = magnifyingGlass.enchantments.find(enchantment => enchantment.name === 'Obsidian')!;
 
       expect(heavyEnchantment.tooltips[0]).toEqual('Lifesteal 100');
     });
+
+    // TODO: I think Heavy Induction Aegis might be bugged in-game?
+    // it('should parse "Heavy Induction Aegis" correctly by replacing its {ability.e1} with a correct value', () => {
+    //   const inductionAegis = cards.find(card => card.name === "Induction Aegis")!;
+    //   const heavyEnchantment = inductionAegis.enchantments.find(enchantment => enchantment.name === 'Heavy')!;
+
+    //   expect(heavyEnchantment.tooltips[0]).toEqual('Slow 1 item for 1 seconds.');
+    // });
   });
 });
