@@ -97,4 +97,20 @@ describe('cardJsonParser', () => {
 
     expect(fishingNet.tiers.Bronze.tooltips.find((text) => text.includes(searchPhrase))).toEqual(`${searchPhrase}1 item for 3 seconds.`);
   });
+
+  describe('Enchantments', () => {
+    it('should parse "Heavy Fishing Net" correctly by providing a custom tooltip for the enchantment aura', () => {
+      const fishingNet = cards.find(card => card.name === "Fishing Net")!;
+      const heavyEnchantment = fishingNet.enchantments.find(enchantment => enchantment.name === 'Heavy')!;
+
+      expect(heavyEnchantment.tooltips[0]).toEqual('x2 Slow');
+    });
+
+    it('should parse "Obsidian Magnifying Glass" correctly by providing a custom tooltip for the lifesteal attribute', () => {
+      const fishingNet = cards.find(card => card.name === "Magnifying Glass")!;
+      const heavyEnchantment = fishingNet.enchantments.find(enchantment => enchantment.name === 'Obsidian')!;
+
+      expect(heavyEnchantment.tooltips[0]).toEqual('Lifesteal 100');
+    });
+  });
 });

@@ -69,4 +69,24 @@
             {/if}
         {/each}
     </div>
+
+    {#if card.enchantments.length > 0}
+        <div class={"my-4 p-2 rounded-lg bg-gray-100"}>
+            <div class="font-semibold">
+                Enchantments
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                {#each card.enchantments as enchantment}
+                    <div>
+                        <div class="font-semibold">
+                            {enchantment.name}
+                        </div>
+                        {#each enchantment.tooltips as tooltip}
+                            <div>{tooltip}</div>
+                        {/each}
+                    </div>
+                {/each}
+            </div>
+        </div>
+    {/if}
 </div>

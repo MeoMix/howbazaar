@@ -11,6 +11,11 @@ export type ClientSideTier = {
     tooltips: string[];
 };
 
+type ClientSideEnchantment = {
+    name: string;
+    tooltips: string[];
+};
+
 // TODO: Fix naming
 export type ClientSideCard = {
     type: "Item" | "Skill";
@@ -22,6 +27,7 @@ export type ClientSideCard = {
     hiddenTags: string[];
     size: "Small" | "Medium" | "Large";
     heroes: string[];
+    enchantments: ClientSideEnchantment[]
 }
 
 export type ClientSideCardItem = ClientSideCard & { type: "Item" };

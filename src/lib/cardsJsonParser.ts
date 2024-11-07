@@ -3,7 +3,7 @@
 // https://github.com/glideapps/quicktype?tab=readme-ov-file#calling-quicktype-from-javascript
 import type { Entries } from "type-fest";
 import type { CardsJson, ClientSideCard, ClientSideTier } from "./types";
-import type { V2CardsD as Card, Bronze as Tier, Tiers, Tier as TierType, AbilityAction, AuraAction, Ability, Aura, Attributes } from "./v2_Cards";
+import type { V2CardsD as Card, Bronze as Tier, Tiers, Tier as TierType, AbilityAction, AuraAction, Ability, Aura, Attributes, Operation } from "./v2_Cards";
 
 // JSON contains testing data which isn't shown in game during normal operations
 // I didn't see a good flag for hiding these so I'm explicitly banning them.
@@ -75,6 +75,68 @@ function getAttributeValue(
     return attributeValue;
 }
 
+// TODO: Evaluate merging this with getAttributeValue
+function getEnchantmentAttributeNameAndValue(
+    action: AbilityAction | AuraAction,
+    tierAttributes: Tier["Attributes"],
+    qualifier: AttributeQualifier
+): { name: string | undefined; value: number | undefined, operation: Operation | undefined } {
+    let attributeValue: number | undefined;
+    let attributeName = "MISSING";
+    let operation: Operation | undefined;
+    const actionType = action.$type;
+
+    if (actionType.includes("ModifyAttribute")) {
+        if (action.Value?.$type === "TFixedValue") {
+            attributeName = action.AttributeType!;
+            attributeValue = action.Value.Value;
+            operation = action.Operation!;
+        } else if (
+            (action.Value?.$type === "TReferenceValueCardAttribute" || action.Value?.$type === "TReferenceValueCardAttributeAggregate") &&
+            action.Value?.Target?.$type !== "TTargetCardSelf"
+        ) {
+            // Some values require context based on game state beyond the current card which isn't known to this website.
+            attributeValue = 0;
+        } else if (action.Value?.Modifier) {
+            // If there's a modifier, and if modifier mode is multiply, then get the attribute type and multiply it by modifier rather than just using modifier.
+            attributeValue = action.Value.Modifier.Value;
+            operation = action.Operation!;
+
+            if (qualifier.isMod) {
+                return {
+                    name: attributeName,
+                    value: attributeValue,
+                    operation
+                };
+            }
+
+            if (action.Value.Modifier.ModifyMode === "Multiply") {
+                let modifierAttributeName = action.Value.AttributeType;
+                let modifierAttributeValue = modifierAttributeName === undefined ? 0 : getAttributeValueFromTier(modifierAttributeName, tierAttributes, qualifier);
+                attributeValue *= modifierAttributeValue;
+            }
+        } else if (action.Value?.AttributeType) {
+            attributeName = action.Value?.AttributeType;
+        }
+    } else if (actionType === "TActionGameSpawnCards") {
+        if (action.SpawnContext?.Limit.$type === "TFixedValue") {
+            attributeValue = action.SpawnContext.Limit.Value;
+        }
+    } else {
+        attributeName = actionType.replace(/^TAction(Card|Player)/, "");
+    }
+
+    if (attributeValue == undefined && attributeName) {
+        attributeValue = getAttributeValueFromTier(attributeName, tierAttributes, qualifier);
+    }
+
+    return {
+        name: attributeName,
+        value: attributeValue,
+        operation
+    };
+}
+
 function getAttributeValueFromTier(attributeName: string, tierAttributes: Tier["Attributes"], qualifier: AttributeQualifier) {
     const noSuffixAttributeNames = [
         "BuyPrice",
@@ -143,8 +205,7 @@ function getTierMap(card: ValidCard) {
 }
 
 function replaceTemplatingWithValues(tooltip: string, abilities: Ability[], auras: Aura[], attributes: Tier["Attributes"]) {
-    // TODO: might need expand this pattern a bit, need to support mod and e/E prefix
-    const abilityPattern = /\{ability\.(\d+)(\.targets)?\}/g;
+    const abilityPattern = /\{ability\.(\w+)(\.targets)?\}/g;
     tooltip = tooltip.replace(abilityPattern, (match, id, targetMatch) => {
         const ability = abilities.find(a => a.Id === id);
 
@@ -158,7 +219,7 @@ function replaceTemplatingWithValues(tooltip: string, abilities: Ability[], aura
         return value !== undefined ? `${value}` : match;
     });
 
-    const auraPattern = /\{aura\.(\d+)(\.mod)?\}/g;
+    const auraPattern = /\{aura\.(\w+)(\.mod)?\}/g;
     tooltip = tooltip.replace(auraPattern, (match, id, modMatch) => {
         const aura = auras.find(a => a.Id === id);
 
@@ -261,7 +322,7 @@ function getDisplayedAttributes(attributes: Tier["Attributes"]) {
     return displayedAttributes;
 }
 
-function getDisplayedTooltips(tooltips: string[], abilities: Ability[], auras: Aura[], attributes: Tier["Attributes"] ) {
+function getDisplayedTooltips(tooltips: string[], abilities: Ability[], auras: Aura[], attributes: Tier["Attributes"]) {
     const displayedTooltips = tooltips.map((rawTooltip) => {
         let tooltip = replaceTemplatingWithValues(rawTooltip, abilities, auras, attributes);
         let prettyTooltip = prettyPrintTooltip(tooltip);
@@ -332,6 +393,75 @@ export function parseJson(cardsJson: CardsJson): ClientSideCard[] {
             },
         )) as Record<TierType, ClientSideTier>;
 
+        const enchantments = card.Enchantments ? (Object.entries(card.Enchantments) as Entries<typeof card.Enchantments>).map(([enchantmentName, enchantment]) => {
+            if (!enchantment) {
+                return {
+                    name: "missing",
+                    tooltips: []
+                };
+            }
+
+            // getEnchantmentAttributeNameAndValue
+            // TODO: These are typed as any
+            const enchantmentAbilities = Object.values(enchantment.Abilities).filter(item => item.Action);
+            const enchantmentAuras = Object.values(enchantment.Auras).filter(item => item.Action);
+            const enchantmentAttributes = enchantment.Attributes as {
+                [key: string]: number;
+            };
+
+            if (card.Localization.Title.Text === "Magnifying Glass" && enchantmentName === 'Obsidian') {
+                console.log('yo');
+            }
+
+            const rawTooltips = enchantment.Localization.Tooltips
+                .map(tooltip => tooltip.Content.Text).filter((tooltip): tooltip is string => tooltip !== undefined && tooltip !== null) ?? [];
+
+            let tooltips = [];
+            if (rawTooltips.length === 0) {
+                let actions = [...enchantmentAuras, ...enchantmentAbilities].map(item => item.Action);
+
+                for (let action of actions) {
+                    const result = getEnchantmentAttributeNameAndValue(action, enchantmentAttributes, { isMod: false, isTargets: false });
+                    let sign = '';
+
+                    if (result.operation === "Add") {
+                        sign = "+";
+                    } else if (result.operation === "Subtract") {
+                        sign = "-";
+                    } else if (result.operation === "Multiply") {
+                        sign = "x"
+                    }
+
+                    let value = result.value ?? 0;
+                    value = value >= 1000 ? value / 1000 : value;
+
+                    let name = result.name?.replace('Amount', '').replace('Apply', '') ?? '';
+
+                    name = name
+                        .replace(/([a-z])([A-Z])/g, "$1 $2")
+                        .trim();
+        
+
+                    let chance = name?.includes('Chance') ? '%' : '';
+
+                    tooltips.push(`${sign}${value}${chance} ${name} `);
+                }
+
+                if (actions.length === 0) {
+                    for (let [attributeName, attributeValue] of Object.entries(enchantmentAttributes)) {
+                        tooltips.push(`${attributeName} ${attributeValue}`);
+                    }
+                }
+            } else {
+                tooltips = getDisplayedTooltips(rawTooltips, enchantmentAbilities, enchantmentAuras, enchantmentAttributes);
+            }
+
+            return {
+                name: enchantmentName,
+                tooltips,
+            };
+        }) : [];
+
         return {
             name: card.Localization.Title.Text,
             type: card.Type,
@@ -340,6 +470,7 @@ export function parseJson(cardsJson: CardsJson): ClientSideCard[] {
             hiddenTags: card.HiddenTags,
             size: card.Size,
             heroes: card.Heroes,
+            enchantments,
         };
     });
 
