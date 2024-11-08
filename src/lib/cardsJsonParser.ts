@@ -484,11 +484,6 @@ export function parseJson(cardsJson: CardsJson): ClientSideCard[] {
                 enchantmentAttributes = { ...enchantmentAttributes, ...tierMap[card.StartingTier].Attributes ?? {} };
             }
 
-            if (card.Localization.Title.Text === "Star Chart" && enchantmentName === 'Deadly') {
-                console.log('yo');
-            }
-
-
             let tooltips = [];
             if (rawTooltips.length === 0) {
                 let actions = [...enchantmentAuras, ...enchantmentAbilities].map(item => item.Action);
@@ -536,6 +531,10 @@ export function parseJson(cardsJson: CardsJson): ClientSideCard[] {
                     // Rename "CooldownMax" specifically to "Cooldown"
                     if (name === "CooldownMax") {
                         name = `Cooldown${sign === "Double" ? " Reduction" : ''}`;
+                    }
+
+                    if (name === "SellPrice") {
+                        name = "Value";
                     }
 
                     name = name
