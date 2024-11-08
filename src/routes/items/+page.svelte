@@ -5,16 +5,15 @@
 
     const { data }: { data: { cards: ClientSideCard[] } } = $props();
 
-    let selectedHero = $state("");
+    let selectedHero = $state("All");
 
-    const heroOptions = ["Vanessa", "Dooley", "Pygmalien", "Common"];
-
+    const heroOptions = ["All", "Vanessa", "Dooley", "Pygmalien", "Stelle", "Jules", "Mak", "Common"];
     const cardItems = data.cards.filter(
         (card): card is ClientSideCardItem => card.type === "Item",
     );
 
-    const filteredCardItems = $derived(
-        selectedHero
+    const filteredCards = $derived(
+        selectedHero !== "All"
             ? cardItems.filter((card) => card.heroes.includes(selectedHero))
             : cardItems,
     );
@@ -26,13 +25,14 @@
 
         <Select
             items={heroOptions.map((hero) => ({ value: hero, name: hero }))}
+            bind:value={selectedHero}
             class="w-48"
         />
     </Label>
 </div>
 
 <div class="space-y-4">
-    {#each filteredCardItems as card}
+    {#each filteredCards as card}
         <CardItem {card} />
     {/each}
 </div>
