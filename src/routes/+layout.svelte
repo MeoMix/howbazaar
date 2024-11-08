@@ -4,7 +4,7 @@
     import { inject } from "@vercel/analytics";
     inject({ mode: dev ? "development" : "production" });
 
-    import { Tabs, TabItem, Toast } from "flowbite-svelte";
+    import { Tabs, TabItem, Toast, DarkMode, Navbar, NavBrand } from "flowbite-svelte";
     import { CheckCircleSolid } from "flowbite-svelte-icons";
     import { onMount } from "svelte";
     import type { Snippet } from "svelte";
@@ -40,16 +40,32 @@
         activeTabName = tabName;
         goto(`${tabName}`);
     }
+
+    let isDarkMode = $state(false);
+
+    function toggleDarkMode() {
+        isDarkMode = !isDarkMode;
+    }
 </script>
 
-<div class="relative min-h-screen flex flex-col">
-    <div class="text-center mb-6">
-        <h1 class="text-3xl font-bold">Welcome to How Bazaar!</h1>
-    </div>
+<header class="flex-none w-full mx-auto bg-white dark:bg-slate-950">
+    <Navbar>
+        <NavBrand>
+         <span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white pl-4">
+             How Bazaar
+         </span>
+        </NavBrand> 
+ 
+        <div class="flex items-center ml-auto">
+            <DarkMode class="inline-block dark:hover:text-white hover:text-gray-900" />
+        </div>
+     </Navbar>
+</header>
 
-    <div class="flex-grow overflow-y-auto p-4">
+<div class={'relative min-h-screen flex flex-col'}>
+    <div class="flex-grow overflow-y-auto p-4 bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-gray-100">
         <Tabs>
-            <TabItem title="Items" open={activeTabName === "items"} on:click={() => setTab("items")}>  
+            <TabItem title="Items" open={activeTabName === "items"} on:click={() => setTab("items")}>
                 {@render children()}
             </TabItem>
 
@@ -62,16 +78,16 @@
     <div class="fixed bottom-0 left-0 w-full flex justify-center p-4">
         <Toast
             position="bottom-left"
-            color="green"
+            color={isDarkMode ? "indigo" : "green"}
             transition={fly}
             params={{ y: 100, duration: 300 }}
             bind:toastStatus
         >
             <svelte:fragment slot="icon">
-                <CheckCircleSolid class="w-5 h-5" />
+                <CheckCircleSolid class="w-5 h-5 text-gray-900 dark:text-gray-100" />
                 <span class="sr-only">Check icon</span>
             </svelte:fragment>
-            Link copied to clipboard
+            <span class="text-gray-900 dark:text-gray-100">Link copied to clipboard</span>
         </Toast>
     </div>
 </div>

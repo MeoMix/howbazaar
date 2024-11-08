@@ -1,6 +1,7 @@
 <script lang="ts">
     import type { ClientSideCard, ClientSideCardSkill } from "$lib/types";
     import CardSkill from "$lib/components/CardSkill.svelte";
+    import { Label, Select } from "flowbite-svelte";
 
     const { data }: { data: { cards: ClientSideCard[] } } = $props();
 
@@ -19,18 +20,14 @@
 </script>
 
 <div class="mb-4">
-    <label class="block font-semibold text-lg">
-        Filter Skills:
-        <select
-            bind:value={selectedHero}
-            class="border border-gray-300 rounded-md p-2 ml-2 focus:outline-none focus:ring focus:border-blue-300"
-        >
-            <option value="">All</option>
-            {#each heroOptions as hero}
-                <option value={hero}>{hero}</option>
-            {/each}
-        </select>
-    </label>
+    <Label class="font-semibold text-lg">
+        Filter Skills
+
+        <Select
+            items={heroOptions.map((hero) => ({ value: hero, name: hero }))}
+            class="w-48"
+        />
+    </Label>
 </div>
 
 <div class="space-y-4">
