@@ -5,16 +5,12 @@
     import { filterCards, prepareFilterOptions } from "$lib/utils/filterUtils";
 
     const { data }: { data: { cards: ClientSideCard[] } } = $props();
-    const cardItems = data.cards.filter(
-        (card): card is ClientSideCardItem => card.type === "Item",
-    );
+    const cardItems = data.cards
+        .filter((card): card is ClientSideCardItem => card.type === "Item")
+        .sort((a, b) => a.name.localeCompare(b.name));
 
-    const { 
-        heroOptions, 
-        minimumTierOptions, 
-        tagOptions,
-        hiddenTagOptions
-    } = prepareFilterOptions(cardItems);
+    const { heroOptions, minimumTierOptions, tagOptions, hiddenTagOptions } =
+        prepareFilterOptions(cardItems);
 
     let selectedHeroes = $state([] as string[]);
     let selectedTiers = $state([] as string[]);

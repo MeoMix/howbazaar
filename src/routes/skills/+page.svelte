@@ -5,16 +5,12 @@
     import CardFilters from "$lib/components/CardFilters.svelte";
 
     const { data }: { data: { cards: ClientSideCard[] } } = $props();
-    const cardSkills = data.cards.filter(
-        (card): card is ClientSideCardSkill => card.type === "Skill",
-    );
+    const cardSkills = data.cards
+        .filter((card): card is ClientSideCardSkill => card.type === "Skill")
+        .sort((a, b) => a.name.localeCompare(b.name));
 
-    const { 
-        heroOptions, 
-        minimumTierOptions, 
-        tagOptions,
-        hiddenTagOptions
-    } = prepareFilterOptions(cardSkills);
+    const { heroOptions, minimumTierOptions, tagOptions, hiddenTagOptions } =
+        prepareFilterOptions(cardSkills);
 
     let selectedHeroes = $state([] as string[]);
     let selectedTiers = $state([] as string[]);
@@ -30,7 +26,6 @@
             selectedHiddenTags,
         ),
     );
-
 </script>
 
 <CardFilters
