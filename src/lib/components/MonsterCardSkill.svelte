@@ -2,8 +2,10 @@
     import type { ClientSideCardSkill, ClientSideTierType } from "$lib/types";
     import { Card } from "flowbite-svelte";
 
-    export let card: ClientSideCardSkill;
-    export let tier: ClientSideTierType;
+    const {
+        card,
+        tier,
+    }: { card: ClientSideCardSkill; tier: ClientSideTierType } = $props();
 </script>
 
 <div class="p-4 border border-gray-200 rounded-lg shadow-sm">

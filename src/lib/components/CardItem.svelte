@@ -4,9 +4,9 @@
     import type { Entries } from "type-fest";
     import { Card } from "flowbite-svelte";
 
-    export let card: ClientSideCardItem;
+    const { card }: { card: ClientSideCardItem } = $props();
 
-    const id = card.name.replace(/\s+/g, "_");
+    const id = $derived(card.name.replace(/\s+/g, "_"));
 </script>
 
 <div class="p-4 border border-gray-200 rounded-lg shadow-sm" {id}>

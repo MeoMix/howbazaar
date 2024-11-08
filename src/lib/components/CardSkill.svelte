@@ -4,15 +4,15 @@
     import type { Entries } from "type-fest";
     import { Card } from "flowbite-svelte";
 
-    export let card: ClientSideCardSkill;
+    const { card }: { card: ClientSideCardSkill } = $props();
 
-    const id = card.name.replace(/\s+/g, "_");
+    const id = $derived(card.name.replace(/\s+/g, "_"));
 </script>
 
 <div class="p-4 border border-gray-200 rounded-lg shadow-sm" {id}>
     <div class="font-bold text-2xl mb-2">
         {card.name}
-        <button onclick={() => copyCardLink(id)} title="Copy link to this item">
+        <button onclick={() => copyCardLink(id)} title="Copy link to this skill">
             🔗
         </button>
     </div>

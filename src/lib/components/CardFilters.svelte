@@ -1,15 +1,26 @@
 <script lang="ts">
     import { Label, Button } from "flowbite-svelte";
-    export let heroOptions: string[] = [];
-    export let minimumTierOptions: string[] = [];
-    export let tagOptions: string[] = [];
-    export let hiddenTagOptions: string[] = [];
-    
-    export let selectedHeroes: string[] = [];
-    export let selectedTiers: string[] = [];
-    export let selectedTags: string[] = [];
-    export let selectedHiddenTags: string[] = [];
 
+    let {
+        heroOptions,
+        minimumTierOptions,
+        tagOptions,
+        hiddenTagOptions,
+        selectedHeroes = $bindable(),
+        selectedTiers = $bindable(),
+        selectedTags = $bindable(),
+        selectedHiddenTags = $bindable(),
+    }: {
+        heroOptions: string[],
+        minimumTierOptions: string[],
+        tagOptions: string[],
+        hiddenTagOptions: string[],
+        selectedHeroes: string[],
+        selectedTiers: string[],
+        selectedTags: string[],
+        selectedHiddenTags: string[]
+    } = $props();
+    
     const handleSelection = (selectedArray: string[], item: string) => {
         if (selectedArray.includes(item)) {
             return selectedArray.filter((i) => i !== item);
