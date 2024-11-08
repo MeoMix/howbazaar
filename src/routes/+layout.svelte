@@ -72,6 +72,10 @@
             <TabItem title="Skills" open={activeTabName === "skills"} on:click={() => setTab("skills")}>
                 {@render children()}
             </TabItem>
+
+            <TabItem title="Monsters" open={activeTabName === "monsters"} on:click={() => setTab("monsters")}>
+                {@render children()}
+            </TabItem>
         </Tabs>
     </div>
 

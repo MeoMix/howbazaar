@@ -575,6 +575,7 @@ export function parseJson(cardsJson: CardsJson): ClientSideCard[] {
         }).filter(enchantment => enchantment.tooltips.length > 0) : [];
 
         return {
+            id: card.Id,
             name: card.Localization.Title.Text,
             type: card.Type,
             tiers,

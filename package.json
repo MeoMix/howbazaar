@@ -9,7 +9,8 @@
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"test": "vitest",
-		"generate-types": "npx quicktype src/lib/v2_Cards.json -o src/lib/v2_Cards.d.ts --just-types --prefer-unions"
+		"generate-types": "npx quicktype src/lib/v2_Cards.json -o src/lib/v2_Cards.d.ts --just-types --prefer-unions && npx quicktype src/lib/v2_Monsters.json -o src/lib/v2_Monsters.d.ts --just-types --prefer-unions"
+
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^3.0.0",

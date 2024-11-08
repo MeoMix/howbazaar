@@ -185,5 +185,7 @@ describe('cardJsonParser', () => {
       expect(shinyEnchantment.tooltips.length).toEqual(2);
       expect(shinyEnchantment.tooltips[1]).toEqual('Double Cooldown Reduction');
     });
+
+    // TODO: restorative force field says "heal 0" 
   });
 });
