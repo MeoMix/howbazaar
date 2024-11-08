@@ -24,6 +24,7 @@ export type ClientSideCard = {
     id: string;
     type: "Item" | "Skill";
     name: string;
+    startingTier: TierType;
     tiers: {
         [key in TierType]: ClientSideTier
     };

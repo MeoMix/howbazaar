@@ -578,6 +578,7 @@ export function parseJson(cardsJson: CardsJson): ClientSideCard[] {
             id: card.Id,
             name: card.Localization.Title.Text,
             type: card.Type,
+            startingTier: card.StartingTier,
             tiers,
             tags: card.Tags,
             hiddenTags: card.HiddenTags,
