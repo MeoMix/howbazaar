@@ -515,19 +515,13 @@ export function parseJson(cardsJson: CardsJson): ClientSideCard[] {
                     }
 
                     let sign = '';
-                    let useDescriptiveSign = false;
-
                     if (result.operation === "Add") {
                         sign = "+";
                     } else if (result.operation === "Subtract") {
                         sign = "-";
                     } else if (result.operation === "Multiply") {
-                        if (result.value === 2) {
+                        if (result.value === 2 || (result.value === 0.5 && result.name === "CooldownMax")) {
                             sign = "Double";
-                            useDescriptiveSign = true;
-                        } else if (result.value === 0.5) {
-                            sign = "Halve";
-                            useDescriptiveSign = true;
                         } else {
                             sign = "x";
                         }
@@ -541,17 +535,17 @@ export function parseJson(cardsJson: CardsJson): ClientSideCard[] {
                     // TODO: Some of this was copied from getDisplayedAttributes
                     // Rename "CooldownMax" specifically to "Cooldown"
                     if (name === "CooldownMax") {
-                        name = "Cooldown";
+                        name = `Cooldown${sign === "Double" ? " Reduction" : ''}`;
                     }
 
                     name = name
                         .replace(/([a-z])([A-Z])/g, "$1 $2")
                         .trim();
 
-                    let chance = (!useDescriptiveSign && name?.includes('Chance')) ? '%' : '';
+                    let chance = (sign !== "Double" && name?.includes('Chance')) ? '%' : '';
                     let prefixString = result.targetMode === "Neighbor" ? "Adjacent items have an additional " : "";
 
-                    let tooltip = `${prefixString}${sign}${useDescriptiveSign ? '' : value}${chance} ${name}`;
+                    let tooltip = `${prefixString}${sign}${sign === "Double" ? '' : value}${chance} ${name}`;
 
                     if (tooltip === "-1000 Freeze") {
                         tooltip = "Cannot be Frozen";

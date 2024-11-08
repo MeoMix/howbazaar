@@ -183,8 +183,7 @@ describe('cardJsonParser', () => {
       const shinyEnchantment = starChart.enchantments.find(enchantment => enchantment.name === 'Shiny')!;
 
       expect(shinyEnchantment.tooltips.length).toEqual(2);
-      // TODO: This reads weird and feels like it might be an in-game bug.
-      expect(shinyEnchantment.tooltips[1]).toEqual('Halve Cooldown');
+      expect(shinyEnchantment.tooltips[1]).toEqual('Double Cooldown Reduction');
     });
   });
 });
