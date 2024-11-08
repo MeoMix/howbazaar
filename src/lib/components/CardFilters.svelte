@@ -6,21 +6,25 @@
         minimumTierOptions,
         tagOptions,
         hiddenTagOptions,
+        sizeOptions,
         selectedHeroes = $bindable(),
         selectedTiers = $bindable(),
         selectedTags = $bindable(),
         selectedHiddenTags = $bindable(),
+        selectedSizes = $bindable(),
     }: {
-        heroOptions: string[],
-        minimumTierOptions: string[],
-        tagOptions: string[],
-        hiddenTagOptions: string[],
-        selectedHeroes: string[],
-        selectedTiers: string[],
-        selectedTags: string[],
-        selectedHiddenTags: string[]
+        heroOptions: string[];
+        minimumTierOptions: string[];
+        tagOptions: string[];
+        hiddenTagOptions: string[];
+        sizeOptions: string[];
+        selectedHeroes: string[];
+        selectedTiers: string[];
+        selectedTags: string[];
+        selectedHiddenTags: string[];
+        selectedSizes: string[];
     } = $props();
-    
+
     const handleSelection = (selectedArray: string[], item: string) => {
         if (selectedArray.includes(item)) {
             return selectedArray.filter((i) => i !== item);
@@ -40,7 +44,11 @@
                     outline={!selectedHeroes.includes(hero)}
                     pill
                     color={selectedHeroes.includes(hero) ? "primary" : "light"}
-                    onclick={() => selectedHeroes = handleSelection(selectedHeroes, hero)}
+                    onclick={() =>
+                        (selectedHeroes = handleSelection(
+                            selectedHeroes,
+                            hero,
+                        ))}
                     class="transition-colors focus:outline-none border-2"
                 >
                     {hero}
@@ -58,7 +66,8 @@
                     outline={!selectedTiers.includes(tier)}
                     pill
                     color={selectedTiers.includes(tier) ? "primary" : "light"}
-                    onclick={() => selectedTiers = handleSelection(selectedTiers, tier)}
+                    onclick={() =>
+                        (selectedTiers = handleSelection(selectedTiers, tier))}
                     class="transition-colors focus:outline-none border-2"
                 >
                     {tier}
@@ -66,6 +75,32 @@
             {/each}
         </div>
     </div>
+
+    {#if sizeOptions.length > 0}
+        <div>
+            <Label class="font-semibold text-lg">Sizes Tiers</Label>
+            <div class="flex flex-wrap gap-2 mt-2">
+                {#each sizeOptions as size}
+                    <Button
+                        size="xs"
+                        outline={!selectedSizes.includes(size)}
+                        pill
+                        color={selectedSizes.includes(size)
+                            ? "primary"
+                            : "light"}
+                        onclick={() =>
+                            (selectedSizes = handleSelection(
+                                selectedSizes,
+                                size,
+                            ))}
+                        class="transition-colors focus:outline-none border-2"
+                    >
+                        {size}
+                    </Button>
+                {/each}
+            </div>
+        </div>
+    {/if}
 
     <div>
         <Label class="font-semibold text-lg">Tags</Label>
@@ -76,7 +111,8 @@
                     outline={!selectedTags.includes(tag)}
                     pill
                     color={selectedTags.includes(tag) ? "primary" : "light"}
-                    onclick={() => selectedTags = handleSelection(selectedTags, tag)}
+                    onclick={() =>
+                        (selectedTags = handleSelection(selectedTags, tag))}
                     class="transition-colors focus:outline-none border-2"
                 >
                     {tag}
@@ -93,8 +129,14 @@
                     size="xs"
                     outline={!selectedHiddenTags.includes(hiddenTag)}
                     pill
-                    color={selectedHiddenTags.includes(hiddenTag) ? "primary" : "light"}
-                    onclick={() => selectedHiddenTags = handleSelection(selectedHiddenTags, hiddenTag)}
+                    color={selectedHiddenTags.includes(hiddenTag)
+                        ? "primary"
+                        : "light"}
+                    onclick={() =>
+                        (selectedHiddenTags = handleSelection(
+                            selectedHiddenTags,
+                            hiddenTag,
+                        ))}
                     class="transition-colors focus:outline-none border-2"
                 >
                     {hiddenTag}

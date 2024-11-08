@@ -19,21 +19,25 @@ export function prepareFilterOptions(cards: ClientSideCard[]) {
 
     const minimumTierOptions = ["Bronze", "Silver", "Gold", "Diamond"];
 
+    const sizeOptions = ["Small", "Medium", "Large"];
+
     return {
         heroOptions,
         minimumTierOptions,
         tagOptions,
-        hiddenTagOptions
+        hiddenTagOptions,
+        sizeOptions
     };
 }
 
 // TODO: These types could be tighter
-export function filterCards<T extends { heroes: string[]; startingTier: string; tags: string[]; hiddenTags: string[] }>(
+export function filterCards<T extends { heroes: string[]; startingTier: string; tags: string[]; hiddenTags: string[], size: string }>(
     cardItems: T[],
     selectedHeroes: string[],
     selectedTiers: string[],
     selectedTags: string[],
-    selectedHiddenTags: string[]
+    selectedHiddenTags: string[],
+    selectedSizes: string[]
 ): T[] {
     return cardItems.filter((card) => {
         const matchesHero =
@@ -48,7 +52,10 @@ export function filterCards<T extends { heroes: string[]; startingTier: string; 
         const matchesHiddenTag =
             selectedHiddenTags.length === 0 ||
             (card.hiddenTags && selectedHiddenTags.some((hiddenTag) => card.hiddenTags.includes(hiddenTag)));
+        const matchesSizes =
+            selectedSizes.length === 0 ||
+            (card.size && selectedSizes.includes(card.size));
 
-        return matchesHero && matchesTier && matchesTag && matchesHiddenTag;
+        return matchesHero && matchesTier && matchesTag && matchesHiddenTag && matchesSizes;
     });
 }
