@@ -1,35 +1,48 @@
 <script lang="ts">
     import type { ClientSideCard, ClientSideCardSkill } from "$lib/types";
     import CardSkill from "$lib/components/CardSkill.svelte";
-    import { Label, Select } from "flowbite-svelte";
+    import { filterCards, prepareFilterOptions } from "$lib/utils/filterUtils";
+    import CardFilters from "$lib/components/CardFilters.svelte";
 
     const { data }: { data: { cards: ClientSideCard[] } } = $props();
-
-    let selectedHero = $state("All");
-
-    const heroOptions = ["All", "Vanessa", "Dooley", "Pygmalien", "Stelle", "Jules", "Mak", "Common"];
     const cardSkills = data.cards.filter(
         (card): card is ClientSideCardSkill => card.type === "Skill",
     );
 
+    const { 
+        heroOptions, 
+        minimumTierOptions, 
+        tagOptions,
+        hiddenTagOptions
+    } = prepareFilterOptions(cardSkills);
+
+    let selectedHeroes = $state([] as string[]);
+    let selectedTiers = $state([] as string[]);
+    let selectedTags = $state([] as string[]);
+    let selectedHiddenTags = $state([] as string[]);
+
     const filteredCards = $derived(
-        selectedHero !== "All"
-            ? cardSkills.filter((card) => card.heroes.includes(selectedHero))
-            : cardSkills,
+        filterCards(
+            cardSkills,
+            selectedHeroes,
+            selectedTiers,
+            selectedTags,
+            selectedHiddenTags,
+        ),
     );
+
 </script>
 
-<div class="mb-4">
-    <Label class="font-semibold text-lg">
-        Filter Skills
-
-        <Select
-            items={heroOptions.map((hero) => ({ value: hero, name: hero }))}
-            bind:value={selectedHero}
-            class="w-48"
-        />
-    </Label>
-</div>
+<CardFilters
+    {heroOptions}
+    {minimumTierOptions}
+    {tagOptions}
+    {hiddenTagOptions}
+    bind:selectedHeroes
+    bind:selectedTiers
+    bind:selectedTags
+    bind:selectedHiddenTags
+/>
 
 <div class="space-y-4">
     {#each filteredCards as card}
