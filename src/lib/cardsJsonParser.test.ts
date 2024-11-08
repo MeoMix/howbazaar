@@ -104,7 +104,7 @@ describe('cardJsonParser', () => {
       const heavyEnchantment = fishingNet.enchantments.find(enchantment => enchantment.name === 'Heavy')!;
 
       expect(heavyEnchantment.tooltips.length).toEqual(1);
-      expect(heavyEnchantment.tooltips[0]).toEqual('x2 Slow');
+      expect(heavyEnchantment.tooltips[0]).toEqual('Double Slow');
     });
 
     it('should parse "Obsidian Magnifying Glass" correctly by providing a custom tooltip for the lifesteal attribute', () => {
@@ -112,7 +112,8 @@ describe('cardJsonParser', () => {
       const heavyEnchantment = magnifyingGlass.enchantments.find(enchantment => enchantment.name === 'Obsidian')!;
 
       expect(heavyEnchantment.tooltips.length).toEqual(1);
-      expect(heavyEnchantment.tooltips[0]).toEqual('Lifesteal 100');
+      // Excludes 100 because 100% is implicit, can add 100% later if fractional lifesteal is introduced.
+      expect(heavyEnchantment.tooltips[0]).toEqual('Lifesteal');
     });
 
     it('should parse "Turbo Bomb Squad" correctly by replacing its {abiltiy.e1} (which is a typo) with a correct value', () => {
@@ -169,5 +170,21 @@ describe('cardJsonParser', () => {
       expect(deadlyEnchantment.tooltips[0]).toEqual('Adjacent items have an additional +25% Crit Chance');
     });
 
+    it('should parse "Deadly Star Chart" correctly by replacing its "2.0 Custom_0" with a correct attribute name', () => {
+      const starChart = cards.find(card => card.name === "Star Chart")!;
+      const deadlyEnchantment = starChart.enchantments.find(enchantment => enchantment.name === 'Deadly')!;
+
+      expect(deadlyEnchantment.tooltips.length).toEqual(1);
+      expect(deadlyEnchantment.tooltips[0]).toEqual('Double Crit Chance');
+    });
+
+    it('should parse "Shiny Star Chart" correctly by replacing its "0.5 Custom_1" with a correct attribute name', () => {
+      const starChart = cards.find(card => card.name === "Star Chart")!;
+      const shinyEnchantment = starChart.enchantments.find(enchantment => enchantment.name === 'Shiny')!;
+
+      expect(shinyEnchantment.tooltips.length).toEqual(2);
+      // TODO: This reads weird and feels like it might be an in-game bug.
+      expect(shinyEnchantment.tooltips[1]).toEqual('Halve Cooldown');
+    });
   });
 });

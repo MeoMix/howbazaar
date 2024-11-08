@@ -429,11 +429,6 @@ export function parseJson(cardsJson: CardsJson): ClientSideCard[] {
                     tooltips: []
                 };
             }
-
-            // if (card.Localization.Title.Text === "Sextant" && enchantmentName === 'Deadly') {
-            //     console.log('yo');
-            // }
-
             const enchantmentAbilities = Object.values(enchantment.Abilities).filter(item => item.Action) as Ability[];
             const enchantmentAuras = Object.values(enchantment.Auras).filter(item => item.Action) as Aura[];
 
@@ -489,40 +484,91 @@ export function parseJson(cardsJson: CardsJson): ClientSideCard[] {
                 enchantmentAttributes = { ...enchantmentAttributes, ...tierMap[card.StartingTier].Attributes ?? {} };
             }
 
+            if (card.Localization.Title.Text === "Star Chart" && enchantmentName === 'Deadly') {
+                console.log('yo');
+            }
+
+
             let tooltips = [];
             if (rawTooltips.length === 0) {
                 let actions = [...enchantmentAuras, ...enchantmentAbilities].map(item => item.Action);
 
                 for (let action of actions) {
                     const result = getEnchantmentAttributeNameAndValue(action, enchantmentAttributes, { isMod: false, isTargets: false });
+
+                    if (result.name?.includes("Custom_")) {
+                        // Replace Custom with correct attribute name.
+                        // Need to search through Auras and Abilities looking for Action.Value.AttributeType which matches
+                        let matchingAction = [
+                            ...abilities.filter(ability => ability.Action).map(ability => ability.Action),
+                            ...auras.filter(aura => aura.Action).map(aura => aura.Action)
+                        ].find(action => action.Value?.AttributeType === result.name);
+
+                        if (matchingAction?.AttributeType) {
+                            // Sometimes this can still match to Custom which indicates bad data.
+                            result.name = matchingAction.AttributeType;
+                        }
+                    }
+
+                    if (!result.name || result.name.includes("Custom")) {
+                        continue;
+                    }
+
                     let sign = '';
+                    let useDescriptiveSign = false;
 
                     if (result.operation === "Add") {
                         sign = "+";
                     } else if (result.operation === "Subtract") {
                         sign = "-";
                     } else if (result.operation === "Multiply") {
-                        sign = "x"
+                        if (result.value === 2) {
+                            sign = "Double";
+                            useDescriptiveSign = true;
+                        } else if (result.value === 0.5) {
+                            sign = "Halve";
+                            useDescriptiveSign = true;
+                        } else {
+                            sign = "x";
+                        }
                     }
 
                     let value = result.value ?? 0;
                     value = value >= 1000 ? value / 1000 : value;
 
                     let name = result.name?.replace('Amount', '').replace('Apply', '') ?? '';
+                
+                    // TODO: Some of this was copied from getDisplayedAttributes
+                    // Rename "CooldownMax" specifically to "Cooldown"
+                    if (name === "CooldownMax") {
+                        name = "Cooldown";
+                    }
 
                     name = name
                         .replace(/([a-z])([A-Z])/g, "$1 $2")
                         .trim();
 
-                    let chance = name?.includes('Chance') ? '%' : '';
+                    let chance = (!useDescriptiveSign && name?.includes('Chance')) ? '%' : '';
                     let prefixString = result.targetMode === "Neighbor" ? "Adjacent items have an additional " : "";
 
-                    tooltips.push(`${prefixString}${sign}${value}${chance} ${name}`);
+                    let tooltip = `${prefixString}${sign}${useDescriptiveSign ? '' : value}${chance} ${name}`;
+
+                    if (tooltip === "-1000 Freeze") {
+                        tooltip = "Cannot be Frozen";
+                    } else if (tooltip === "-1000 Slow") {
+                        tooltip = "Cannot be Slowed";
+                    }
+
+                    tooltips.push(tooltip);
+                }
+
+                if (enchantmentName === "Radiant") {
+                    tooltips.push("Cannot be Destroyed");
                 }
 
                 if (actions.length === 0) {
                     for (let [attributeName, attributeValue] of Object.entries(enchantmentAttributes)) {
-                        tooltips.push(`${attributeName} ${attributeValue}`);
+                        tooltips.push(`${attributeName}${attributeName === "Lifesteal" ? "" : attributeValue}`.trim());
                     }
                 }
             } else {
