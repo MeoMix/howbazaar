@@ -1,13 +1,13 @@
 import { describe, it, expect, beforeAll } from 'vitest';
 import { parseJson } from './cardsJsonParser';
 import cardsJson from "$lib/v2_Cards.json" assert { type: "json" };
-import type { CardsJson, ClientSideCard } from './types';
+import type { CardsJson, ClientSideCardItem, ClientSideCardSkill } from './types';
 
 describe('cardJsonParser', () => {
-  let cards: ClientSideCard[];
+  let cards: (ClientSideCardItem | ClientSideCardSkill)[];
 
   beforeAll(() => {
-    cards = parseJson(cardsJson as CardsJson);
+    cards = parseJson(cardsJson as CardsJson).filter(card => card.type !== "CombatEncounter");
   });
 
   it('should parse "Bill Dozer" correctly with correct cooldown reduction texts for each tier', () => {
@@ -153,7 +153,7 @@ describe('cardJsonParser', () => {
       expect(heavyEnchantment.tooltips.length).toEqual(1);
       expect(heavyEnchantment.tooltips[0]).toEqual('+2 Slow');
     });
-    
+
     it('should parse "Heavy Induction Aegis" correctly by replacing {ability.e1} with attribute values derived from StartingTier', () => {
       const inductionAegis = cards.find(card => card.name === "Induction Aegis")!;
       const heavyEnchantment = inductionAegis.enchantments.find(enchantment => enchantment.name === 'Heavy')!;
@@ -186,6 +186,12 @@ describe('cardJsonParser', () => {
       expect(shinyEnchantment.tooltips[1]).toEqual('Double Cooldown Reduction');
     });
 
-    // TODO: restorative force field says "heal 0" 
+    it('should parse "Restorative Force Field" correctly by replacing its "Heal {ability.e1}." with a reference to Shield Amount', () => {
+      const forceField = cards.find(card => card.name === "Force Field")!;
+      const restorativeEnchantment = forceField.enchantments.find(enchantment => enchantment.name === 'Restorative')!;
+
+      expect(restorativeEnchantment.tooltips.length).toEqual(1);
+      expect(restorativeEnchantment.tooltips[0]).toEqual('Heal equal to your shield.');
+    });
   });
 });

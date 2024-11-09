@@ -70,6 +70,8 @@ function getAttributeValue(
 
     if (attributeValue == undefined && attributeName) {
         attributeValue = getAttributeValueFromTier(attributeName, tierAttributes, qualifier);
+        // TODO: sometimes the value might be 0 and it would be more useful to include some information about a referential value
+        // so that we can say stuff like "Heal equal to shield" rather than "Heal 0" when there's no shield in an out of game context.
     }
 
     return attributeValue;
@@ -567,6 +569,11 @@ function parseItemsAndSkills(cardsJson: CardsJson): ClientSideCard[] {
                 }
             } else {
                 tooltips = getDisplayedTooltips(rawTooltips, enchantmentAbilities, enchantmentAuras, enchantmentAttributes);
+
+                // TODO: Do this intelligently not patch fix
+                if (card.Localization.Title.Text === "Force Field" && enchantmentName === "Restorative") {
+                    tooltips = ["Heal equal to your shield."];
+                }
             }
 
             return {
