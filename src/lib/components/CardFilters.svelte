@@ -24,7 +24,7 @@
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
     <CardFilter
-        label="Heroes & Heroines"
+        label="Heroes"
         options={heroOptions}
         bind:selectedOptions={selectedHeroes}
     />
