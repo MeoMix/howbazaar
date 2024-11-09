@@ -20,24 +20,40 @@ type ClientSideEnchantment = {
 export type ClientSideTierType = TierType;
 
 // TODO: Fix naming
-export type ClientSideCard = {
+export type ClientSideCard = ClientSideCardItem | ClientSideCardSkill | ClientSideCardCombatEncounter;
+
+export type ClientSideCardItem = {
     id: string;
-    type: "Item" | "Skill";
+    type: "Item";
     name: string;
     startingTier: TierType;
-    tiers: {
-        [key in TierType]: ClientSideTier
-    };
+    tiers: { [key in TierType]: ClientSideTier };
     tags: string[];
     hiddenTags: string[];
     size: "Small" | "Medium" | "Large";
     heroes: string[];
-    enchantments: ClientSideEnchantment[]
-}
+    enchantments: ClientSideEnchantment[];
+};
 
-export type ClientSideCardItem = ClientSideCard & { type: "Item" };
-export type ClientSideCardSkill = ClientSideCard & { type: "Skill" };
+export type ClientSideCardSkill = {
+    id: string;
+    type: "Skill";
+    name: string;
+    startingTier: TierType;
+    tiers: { [key in TierType]: ClientSideTier };
+    tags: string[];
+    hiddenTags: string[];
+    size: "Small" | "Medium" | "Large";
+    heroes: string[];
+    enchantments: ClientSideEnchantment[];
+};
 
+export type ClientSideCardCombatEncounter = {
+    id: string;
+    type: "CombatEncounter";
+    name: string;
+    monsterTemplateId: string;
+};
 
 export type MonstersJson = { [key: string]: Monster };
 

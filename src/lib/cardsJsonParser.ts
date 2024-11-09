@@ -180,7 +180,7 @@ function getAttributeValueFromTier(attributeName: string, tierAttributes: Tier["
     return attributeValue;
 }
 
-function getTierMap(card: ValidCard) {
+function getTierMap(card: ValidItemOrSkillCard) {
     const tierOrder: TierType[] = ["Bronze", "Silver", "Gold", "Diamond", "Legendary"];
 
     // Tier Attributes in v2_Cards.json are represented with an implied inheritance hierarchy.
@@ -362,10 +362,11 @@ function getDisplayedTooltips(tooltips: string[], abilities: Ability[], auras: A
     return displayedTooltips;
 }
 
-type ValidCard = Card & { Tiers: Tiers, Type: "Item" | "Skill", Localization: { Title: { Text: string } } };
+type ValidItemOrSkillCard = Card & { Tiers: Tiers, Type: "Item" | "Skill", Localization: { Title: { Text: string } } };
+type ValidCombatEncounterCard = Card & { Type: "CombatEncounter", Localization: { Title: { Text: string } }, CombatantType: { MonsterTemplateId: string;} };
 
-export function parseJson(cardsJson: CardsJson): ClientSideCard[] {
-    const isItemOrSkill = (entry: Card): entry is ValidCard =>
+function parseItemsAndSkills(cardsJson: CardsJson): ClientSideCard[] {
+    const isItemOrSkill = (entry: Card): entry is ValidItemOrSkillCard =>
         (entry.Type === "Item" || entry.Type === "Skill") &&
         entry.SpawningEligibility !== "Never" &&
         entry.Tiers !== undefined &&
@@ -526,7 +527,7 @@ export function parseJson(cardsJson: CardsJson): ClientSideCard[] {
                     value = value >= 1000 ? value / 1000 : value;
 
                     let name = result.name?.replace('Amount', '').replace('Apply', '') ?? '';
-                
+
                     // TODO: Some of this was copied from getDisplayedAttributes
                     // Rename "CooldownMax" specifically to "Cooldown"
                     if (name === "CooldownMax") {
@@ -589,4 +590,33 @@ export function parseJson(cardsJson: CardsJson): ClientSideCard[] {
     });
 
     return cards;
+}
+
+
+function parseEncounterCards(cardsJson: CardsJson) {
+    const isEncounter = (entry: Card): entry is ValidCombatEncounterCard =>
+        entry.Type === "CombatEncounter" &&
+        entry.SpawningEligibility !== "Never" &&
+        entry.CombatantType !== undefined &&
+        entry.Localization.Title.Text !== null;
+
+    const validCards = Object.values(cardsJson).filter(isEncounter);
+
+    const cards = validCards.map((card) => {
+        return {
+            id: card.Id,
+            type: card.Type,
+            name: card.Localization.Title.Text,
+            monsterTemplateId: card.CombatantType.MonsterTemplateId
+        };
+    });
+
+    return cards;
+}
+
+export function parseJson(cardsJson: CardsJson): ClientSideCard[] {
+    const itemAndSkillCards = parseItemsAndSkills(cardsJson);
+    const encounterCards = parseEncounterCards(cardsJson);
+
+    return [...itemAndSkillCards, ...encounterCards];
 }

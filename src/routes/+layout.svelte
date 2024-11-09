@@ -64,7 +64,7 @@
 
 <div class={'relative min-h-screen flex flex-col'}>
     <div class="flex-grow overflow-y-auto p-4 bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-gray-100">
-        <Tabs>
+        <Tabs tabStyle="underline">
             <TabItem title="Items" open={activeTabName === "items"} on:click={() => setTab("items")}>
                 {@render children()}
             </TabItem>
