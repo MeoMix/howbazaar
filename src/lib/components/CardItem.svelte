@@ -3,6 +3,7 @@
     import { copyCardLink } from "$lib/stores/clipboard";
     import type { Entries } from "type-fest";
     import { Card } from "flowbite-svelte";
+    import { filterTags } from "$lib/utils/filterUtils";
 
     const { card }: { card: ClientSideCardItem } = $props();
 
@@ -29,12 +30,7 @@
 
     <div class="flex mb-1 gap-4">
         <span class="font-semibold w-24 text-right whitespace-nowrap">Tags</span>
-        <span>{card.tags.join(", ")}</span>
-    </div>
-
-    <div class="flex mb-1 gap-4">
-        <span class="font-semibold w-24 text-right whitespace-nowrap">Hidden Tags</span>
-        <span>{card.hiddenTags.join(", ")}</span>
+        <span>{filterTags(card.tags, card.hiddenTags).join(", ")}</span>
     </div>
 
     <div class="font-semibold text-xl mt-4 mb-2">

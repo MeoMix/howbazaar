@@ -1,4 +1,4 @@
-import type { ClientSideCardCombatEncounter, ClientSideCardItem, ClientSideCardSkill, ClientSideMonster } from "$lib/types";
+import type { ClientSideCardItem, ClientSideCardSkill, ClientSideMonster } from "$lib/types";
 
 // TODO: if this diverges any more maybe separate entirely
 export function prepareItemAndSkillFilterOptions(cards: (ClientSideCardItem | ClientSideCardSkill)[]) {
@@ -11,11 +11,7 @@ export function prepareItemAndSkillFilterOptions(cards: (ClientSideCardItem | Cl
     ];
 
     const tagOptions = Array.from(
-        new Set(cards.flatMap((card) => card.tags))
-    ).sort();
-
-    const hiddenTagOptions = Array.from(
-        new Set(cards.flatMap((card) => card.hiddenTags))
+        new Set(cards.flatMap((card) => filterTags(card.tags, card.hiddenTags)))
     ).sort();
 
     const minimumTierOptions = ["Bronze", "Silver", "Gold", "Diamond"];
@@ -26,7 +22,6 @@ export function prepareItemAndSkillFilterOptions(cards: (ClientSideCardItem | Cl
         heroOptions,
         minimumTierOptions,
         tagOptions,
-        hiddenTagOptions,
         sizeOptions
     };
 }
@@ -37,7 +32,6 @@ export function filterItemAndSkillCards<T extends { heroes: string[]; startingTi
     selectedHeroes: string[],
     selectedTiers: string[],
     selectedTags: string[],
-    selectedHiddenTags: string[],
     selectedSizes: string[]
 ): T[] {
     return cards.filter((card) => {
@@ -47,17 +41,22 @@ export function filterItemAndSkillCards<T extends { heroes: string[]; startingTi
         const matchesTier =
             selectedTiers.length === 0 ||
             (card.startingTier && selectedTiers.includes(card.startingTier));
+
+        // Make this a looser match than "includes" to support "Economy" matching "EconomyReference"
         const matchesTag =
             selectedTags.length === 0 ||
-            (card.tags && selectedTags.some((tag) => card.tags.includes(tag)));
-        const matchesHiddenTag =
-            selectedHiddenTags.length === 0 ||
-            (card.hiddenTags && selectedHiddenTags.some((hiddenTag) => card.hiddenTags.includes(hiddenTag)));
+            (card.tags &&
+                selectedTags.some((tag) =>
+                    card.tags.some((cardTag) => cardTag.startsWith(tag)) ||
+                    card.hiddenTags.some((hiddenTag) => hiddenTag.startsWith(tag))
+                )
+            );
+
         const matchesSizes =
             selectedSizes.length === 0 ||
             (card.size && selectedSizes.includes(card.size));
 
-        return matchesHero && matchesTier && matchesTag && matchesHiddenTag && matchesSizes;
+        return matchesHero && matchesTier && matchesTag && matchesSizes;
     });
 }
 
@@ -69,4 +68,14 @@ export function filterMonsters(monsters: ClientSideMonster[], selectedLevels: nu
 
         return matchesLevel;
     });
+}
+
+// Users don't want to see "Reference" in their tags because it's unintuitive to them.
+// The underlying game implementation needs to keep the two types of tags distinct, though.
+// Sometimes there's duplicates (i.e. Slow vs SlowReference) and other times there aren't (i.e. EconomyReference)
+// So, drop Reference, but then ensure the list is distinct.
+export function filterTags(tags: string[], hiddenTags: string[]) {
+    return Array.from(
+        new Set([...tags, ...hiddenTags].map(tag => tag.replace('Reference', '')))
+    ).sort();
 }

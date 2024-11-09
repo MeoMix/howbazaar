@@ -12,7 +12,7 @@
         .filter((card): card is ClientSideCardSkill => card.type === "Skill")
         .sort((a, b) => a.name.localeCompare(b.name));
 
-    const { heroOptions, minimumTierOptions, tagOptions, hiddenTagOptions } =
+    const { heroOptions, minimumTierOptions, tagOptions } =
         prepareItemAndSkillFilterOptions(cardSkills);
 
     const sizeOptions: string[] = [];
@@ -20,7 +20,6 @@
     let selectedHeroes = $state([] as string[]);
     let selectedTiers = $state([] as string[]);
     let selectedTags = $state([] as string[]);
-    let selectedHiddenTags = $state([] as string[]);
     let selectedSizes = $state([] as string[]);
 
     const filteredCards = $derived(
@@ -29,7 +28,6 @@
             selectedHeroes,
             selectedTiers,
             selectedTags,
-            selectedHiddenTags,
             selectedSizes,
         ),
     );
@@ -39,12 +37,10 @@
     {heroOptions}
     {minimumTierOptions}
     {tagOptions}
-    {hiddenTagOptions}
     {sizeOptions}
     bind:selectedHeroes
     bind:selectedTiers
     bind:selectedTags
-    bind:selectedHiddenTags
     bind:selectedSizes
 />
 

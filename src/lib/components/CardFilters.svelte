@@ -5,23 +5,19 @@
         heroOptions,
         minimumTierOptions,
         tagOptions,
-        hiddenTagOptions,
         sizeOptions,
         selectedHeroes = $bindable(),
         selectedTiers = $bindable(),
         selectedTags = $bindable(),
-        selectedHiddenTags = $bindable(),
         selectedSizes = $bindable(),
     } = $props<{
         heroOptions: string[];
         minimumTierOptions: string[];
         tagOptions: string[];
-        hiddenTagOptions: string[];
         sizeOptions: string[];
         selectedHeroes: string[];
         selectedTiers: string[];
         selectedTags: string[];
-        selectedHiddenTags: string[];
         selectedSizes: string[];
     }>();
 </script>
@@ -48,10 +44,5 @@
         label="Tags"
         options={tagOptions}
         bind:selectedOptions={selectedTags}
-    />
-    <CardFilter
-        label="Hidden Tags"
-        options={hiddenTagOptions}
-        bind:selectedOptions={selectedHiddenTags}
     />
 </div>

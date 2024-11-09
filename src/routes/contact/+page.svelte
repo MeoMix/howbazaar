@@ -48,7 +48,10 @@
                 Refactor some server-side code to make long-term support of item enchantments easier.
             </li>
             <li>
-                Try to decide if "Hidden Tags" and "Tags" should be merged into one, large "Tags" section.
+                <span class="line-through">
+                    Try to decide if "Hidden Tags" and "Tags" should be merged into one, large "Tags" section.
+                </span>
+                Done!
             </li>
         </ul>
     </div>
