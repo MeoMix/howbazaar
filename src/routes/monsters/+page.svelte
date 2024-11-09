@@ -42,6 +42,12 @@
               )
             : sortedMonsters,
     );
+
+    function camelToTitle(text: string) {
+        return text
+            .replace(/([a-z])([A-Z])/g, "$1 $2")
+            .replace(/^./, (str) => str.toUpperCase());
+    }
 </script>
 
 <div class="text-3xl py-4">
@@ -66,8 +72,9 @@
         <div>
             {#each Object.entries(monster.attributes) as [attributeName, attributeValue]}
                 <div class="flex mb-1 gap-4">
-                    <span class="font-semibold w-24 text-right">{attributeName}</span>
-                    <span>{attributeValue}</span>
+                    <span class="font-semibold w-24 text-right capitalize whitespace-nowrap">{camelToTitle(attributeName)}</span>
+                    <!-- Capitalize the first letter of the attributeValue (if needed) -->
+                    <span class="capitalize">{attributeValue}</span>
                 </div>
             {/each}
 
