@@ -76,6 +76,10 @@
             <TabItem title="Monsters" open={activeTabName === "monsters"} on:click={() => setTab("monsters")}>
                 {@render children()}
             </TabItem>
+
+            <TabItem title="Contact Website Developer / Upcoming Features" open={activeTabName === "contact"} on:click={() => setTab("contact")}>
+                {@render children()}
+            </TabItem>
         </Tabs>
     </div>
 
