@@ -599,7 +599,6 @@ function parseItemsAndSkills(cardsJson: CardsJson): ClientSideCard[] {
     return cards;
 }
 
-
 function parseEncounterCards(cardsJson: CardsJson) {
     const isEncounter = (entry: Card): entry is ValidCombatEncounterCard =>
         entry.Type === "CombatEncounter" &&
