@@ -31,7 +31,7 @@ export function parseJson(monstersJson: MonstersJson, cards: ClientSideCard[]): 
                 attributes: {
                     level: monster.Player.Attributes.Level,
                     health: monster.Player.Attributes.HealthMax,
-                    healthRegen: monster.Player.Attributes.HealthRegen ?? 0,
+                    // healthRegen: monster.Player.Attributes.HealthRegen ?? 0,
                 },
                 // Only include items with a matching card
                 items: monster.Player.Hand.Items.map(item => {

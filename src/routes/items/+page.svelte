@@ -2,7 +2,7 @@
     import type { ClientSideCard, ClientSideCardItem } from "$lib/types";
     import CardItem from "$lib/components/CardItem.svelte";
     import CardFilters from "$lib/components/CardFilters.svelte";
-    import { filterCards, prepareFilterOptions } from "$lib/utils/filterUtils";
+    import { filterItemAndSkillCards, prepareItemAndSkillFilterOptions } from "$lib/utils/filterUtils";
 
     const { data }: { data: { cards: ClientSideCard[] } } = $props();
     const cardItems = data.cards
@@ -15,7 +15,7 @@
         tagOptions,
         hiddenTagOptions,
         sizeOptions,
-    } = prepareFilterOptions(cardItems);
+    } = prepareItemAndSkillFilterOptions(cardItems);
 
     let selectedHeroes = $state([] as string[]);
     let selectedTiers = $state([] as string[]);
@@ -24,7 +24,7 @@
     let selectedSizes = $state([] as string[]);
 
     const filteredCards = $derived(
-        filterCards(
+        filterItemAndSkillCards(
             cardItems,
             selectedHeroes,
             selectedTiers,

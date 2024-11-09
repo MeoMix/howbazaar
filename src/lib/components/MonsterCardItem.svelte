@@ -14,17 +14,17 @@
     </div>
 
     <div class="flex mb-1 gap-4">
-        <span class="font-semibold w-24 text-right">Size</span>
+        <span class="font-semibold w-24 text-right whitespace-nowrap">Size</span>
         <span>{card.size}</span>
     </div>
 
     <div class="flex mb-1 gap-4">
-        <span class="font-semibold w-24 text-right">Tags</span>
+        <span class="font-semibold w-24 text-right whitespace-nowrap">Tags</span>
         <span>{card.tags.join(", ")}</span>
     </div>
 
     <div class="flex mb-1 gap-4">
-        <span class="font-semibold w-24 text-right">Hidden Tags</span>
+        <span class="font-semibold w-24 text-right whitespace-nowrap">Hidden Tags</span>
         <span>{card.hiddenTags.join(", ")}</span>
     </div>
 

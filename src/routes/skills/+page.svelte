@@ -1,7 +1,10 @@
 <script lang="ts">
     import type { ClientSideCard, ClientSideCardSkill } from "$lib/types";
     import CardSkill from "$lib/components/CardSkill.svelte";
-    import { filterCards, prepareFilterOptions } from "$lib/utils/filterUtils";
+    import {
+        filterItemAndSkillCards,
+        prepareItemAndSkillFilterOptions,
+    } from "$lib/utils/filterUtils";
     import CardFilters from "$lib/components/CardFilters.svelte";
 
     const { data }: { data: { cards: ClientSideCard[] } } = $props();
@@ -10,7 +13,7 @@
         .sort((a, b) => a.name.localeCompare(b.name));
 
     const { heroOptions, minimumTierOptions, tagOptions, hiddenTagOptions } =
-        prepareFilterOptions(cardSkills);
+        prepareItemAndSkillFilterOptions(cardSkills);
 
     const sizeOptions: string[] = [];
 
@@ -21,7 +24,7 @@
     let selectedSizes = $state([] as string[]);
 
     const filteredCards = $derived(
-        filterCards(
+        filterItemAndSkillCards(
             cardSkills,
             selectedHeroes,
             selectedTiers,

@@ -1,6 +1,7 @@
-import type { ClientSideCard, ClientSideCardItem, ClientSideCardSkill } from "$lib/types";
+import type { ClientSideCardCombatEncounter, ClientSideCardItem, ClientSideCardSkill, ClientSideMonster } from "$lib/types";
 
-export function prepareFilterOptions(cards: ClientSideCard[]) {
+// TODO: if this diverges any more maybe separate entirely
+export function prepareItemAndSkillFilterOptions(cards: (ClientSideCardItem | ClientSideCardSkill)[]) {
     const uniqueHeroes = Array.from(
         new Set(cards.flatMap((card) => card.heroes))
     );
@@ -31,15 +32,15 @@ export function prepareFilterOptions(cards: ClientSideCard[]) {
 }
 
 // TODO: These types could be tighter
-export function filterCards<T extends { heroes: string[]; startingTier: string; tags: string[]; hiddenTags: string[], size: string }>(
-    cardItems: T[],
+export function filterItemAndSkillCards<T extends { heroes: string[]; startingTier: string; tags: string[]; hiddenTags: string[], size: string }>(
+    cards: T[],
     selectedHeroes: string[],
     selectedTiers: string[],
     selectedTags: string[],
     selectedHiddenTags: string[],
     selectedSizes: string[]
 ): T[] {
-    return cardItems.filter((card) => {
+    return cards.filter((card) => {
         const matchesHero =
             selectedHeroes.length === 0 ||
             (card.heroes && selectedHeroes.some((hero) => card.heroes.includes(hero)));
@@ -57,5 +58,15 @@ export function filterCards<T extends { heroes: string[]; startingTier: string; 
             (card.size && selectedSizes.includes(card.size));
 
         return matchesHero && matchesTier && matchesTag && matchesHiddenTag && matchesSizes;
+    });
+}
+
+export function filterMonsters(monsters: ClientSideMonster[], selectedLevels: number[]) {
+    return monsters.filter((monster) => {
+        const matchesLevel =
+            selectedLevels.length === 0 ||
+            (monster.attributes.level && selectedLevels.includes(monster.attributes.level));
+
+        return matchesLevel;
     });
 }
