@@ -40,12 +40,6 @@
         activeTabName = tabName;
         goto(`${tabName}`);
     }
-
-    let isDarkMode = $state(false);
-
-    function toggleDarkMode() {
-        isDarkMode = !isDarkMode;
-    }
 </script>
 
 <header class="flex-none w-full mx-auto bg-white dark:bg-slate-950">
@@ -86,7 +80,7 @@
     <div class="fixed bottom-0 left-0 w-full flex justify-center p-4">
         <Toast
             position="bottom-left"
-            color={isDarkMode ? "indigo" : "green"}
+            color={"green"}
             transition={fly}
             params={{ y: 100, duration: 300 }}
             bind:toastStatus
