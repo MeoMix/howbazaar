@@ -63,7 +63,6 @@ export type ClientSideMonster = {
     attributes: {
         level: number,
         health: number,
-        // healthRegen: number,
     };
     items: {
         card: ClientSideCardItem,

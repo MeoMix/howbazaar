@@ -33,7 +33,12 @@
                 <div></div>
             {:else}
                 <Card size="xl">
-                    <div class="text-lg font-semibold mb-2">
+                    <div class="text-lg font-semibold mb-2"   
+                        class:text-tiers-bronze={tierType === 'Bronze'}
+                        class:text-tiers-silver={tierType === 'Silver'}
+                        class:text-tiers-gold={tierType === 'Gold'}
+                        class:text-tiers-diamond={tierType === 'Diamond'}
+                    >
                         {tierType}
                     </div>
 

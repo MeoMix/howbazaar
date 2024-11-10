@@ -20,7 +20,13 @@
     <CardBadges primaryBadges={tags.map((text) => ({ text }))} />
 
     <Card size="xl" class="mt-4">
-        <div class="text-lg font-semibold mb-2">
+        <div
+            class="text-lg font-semibold mb-2"
+            class:text-tiers-bronze={tier === "Bronze"}
+            class:text-tiers-silver={tier === "Silver"}
+            class:text-tiers-gold={tier === "Gold"}
+            class:text-tiers-diamond={tier === "Diamond"}
+        >
             {tier}
         </div>
 

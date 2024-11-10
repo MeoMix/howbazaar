@@ -34,7 +34,12 @@
                 <div></div>
             {:else}
                 <Card size="xl">
-                    <div class="text-lg font-semibold mb-2">
+                    <div class="text-lg font-semibold mb-2"   
+                        class:text-tiers-bronze={tierType === 'Bronze'}
+                        class:text-tiers-silver={tierType === 'Silver'}
+                        class:text-tiers-gold={tierType === 'Gold'}
+                        class:text-tiers-diamond={tierType === 'Diamond'}
+                    >
                         {tierType}
                     </div>
 
@@ -65,9 +70,24 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {#each card.enchantments as enchantment}
                 <Card size="xl">
-                    <div class="text-lg font-semibold mb-2">
+                    <div
+                        class="text-lg font-semibold mb-2"
+                        class:text-enchantments-heavy={enchantment.name === 'Heavy'}
+                        class:text-enchantments-icy={enchantment.name === 'Icy'}
+                        class:text-enchantments-turbo={enchantment.name === 'Turbo'}
+                        class:text-enchantments-shielded={enchantment.name === 'Shielded'}
+                        class:text-enchantments-restorative={enchantment.name === 'Restorative'}
+                        class:text-enchantments-toxic={enchantment.name === 'Toxic'}
+                        class:text-enchantments-fiery={enchantment.name === 'Fiery'}
+                        class:text-enchantments-shiny={enchantment.name === 'Shiny'}
+                        class:text-enchantments-deadly={enchantment.name === 'Deadly'}
+                        class:text-enchantments-radiant={enchantment.name === 'Radiant'}
+                        class:text-enchantments-obsidian={enchantment.name === 'Obsidian'}
+                        class:text-enchantments-golden={enchantment.name === 'Golden'}
+                    >
                         {enchantment.name}
                     </div>
+
                     {#each enchantment.tooltips as tooltip}
                         <div>{tooltip}</div>
                     {/each}
