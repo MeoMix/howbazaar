@@ -28,39 +28,35 @@
     <div
         class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
     >
-        {#each (Object.entries(card.tiers) as Entries<typeof card.tiers>).filter(([tierType]) => tierType !== "Legendary") as [tierType, tier]}
-            {#if tier.tooltips.length === 0}
-                <div></div>
-            {:else}
-                <Card size="xl">
-                    <div class="text-lg font-semibold mb-2"   
-                        class:text-tiers-bronze={tierType === 'Bronze'}
-                        class:text-tiers-silver={tierType === 'Silver'}
-                        class:text-tiers-gold={tierType === 'Gold'}
-                        class:text-tiers-diamond={tierType === 'Diamond'}
-                    >
-                        {tierType}
-                    </div>
+        {#each (Object.entries(card.tiers) as Entries<typeof card.tiers>).filter(([tierType, tier]) => tierType !== "Legendary" && tier.tooltips.length > 0) as [tierType, tier]}
+            <Card size="xl">
+                <div class="text-lg font-semibold mb-2"   
+                    class:text-tiers-bronze={tierType === 'Bronze'}
+                    class:text-tiers-silver={tierType === 'Silver'}
+                    class:text-tiers-gold={tierType === 'Gold'}
+                    class:text-tiers-diamond={tierType === 'Diamond'}
+                >
+                    {tierType}
+                </div>
 
-                    <div class="mb-2">
-                        {#each tier.attributes as attribute}
-                            <div>
-                                <span class="font-medium"
-                                    >{attribute.name}:</span
-                                >
-                                {attribute.value}
-                                {attribute.valueDescriptor}
-                            </div>
-                        {/each}
+                <div class="mb-2">
+                    {#each tier.attributes as attribute}
+                        <div>
+                            <span class="font-medium"
+                                >{attribute.name}:</span
+                            >
+                            {attribute.value}
+                            {attribute.valueDescriptor}
+                        </div>
+                    {/each}
 
-                        {#each tier.tooltips as tooltip}
-                            <div>
-                                {tooltip}
-                            </div>
-                        {/each}
-                    </div>
-                </Card>
-            {/if}
+                    {#each tier.tooltips as tooltip}
+                        <div>
+                            {tooltip}
+                        </div>
+                    {/each}
+                </div>
+            </Card>
         {/each}
     </div>
 </div>

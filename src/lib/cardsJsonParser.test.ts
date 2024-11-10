@@ -10,6 +10,71 @@ describe('cardJsonParser', () => {
     cards = parseJson(cardsJson as CardsJson).filter(card => card.type !== "CombatEncounter");
   });
 
+  // it.only('checks for cards with an increasing number of tooltips in higher tiers', () => {
+  //   const cardsWithExtraTooltips: { cardName: string; tier: string; additionalTooltipsCount: number }[] = [];
+  
+  //   cards.forEach(card => {
+  //     let previousTooltipCount = 0;
+  
+  //     // Loop through each tier in order (assuming tier order is Bronze, Silver, Gold, Diamond)
+  //     Object.entries(card.tiers).forEach(([tierName, tier]) => {
+  //       const currentTooltipCount = tier.tooltips ? tier.tooltips.length : 0;
+  
+  //       // Check if the current tier has more tooltips than the previous tier
+  //       if (currentTooltipCount > previousTooltipCount) {
+  //         const additionalTooltipsCount = currentTooltipCount - previousTooltipCount;
+  //         cardsWithExtraTooltips.push({
+  //           cardName: card.name,
+  //           tier: tierName,
+  //           additionalTooltipsCount,
+  //         });
+  //       }
+  
+  //       // Update the previousTooltipCount to the current tier's count
+  //       previousTooltipCount = currentTooltipCount;
+  //     });
+  //   });
+  
+  //   if (cardsWithExtraTooltips.length > 0) {
+  //     console.log("Cards with an increasing number of tooltips in higher tiers:", cardsWithExtraTooltips);
+  //   } else {
+  //     console.log("No cards have an increasing number of tooltips in higher tiers.");
+  //   }
+  
+  //   // Optionally assert based on your expectations
+  //   expect(cardsWithExtraTooltips.length).toBeGreaterThan(0); // Adjust as needed
+  // });
+  
+
+  // it.only('checks for cards with changing cooldowns across tiers', () => {
+  //   const cardsWithChangingCooldowns: string[] = [];
+  
+  //   cards.forEach(card => {
+  //     // Extract cooldown values across tiers
+  //     const cooldownValues = Object.entries(card.tiers)
+  //       .map(([_, tier]) => {
+  //         const cooldownAttribute = tier.attributes.find(attribute => attribute.name === "Cooldown");
+  //         return cooldownAttribute ? cooldownAttribute.value : null;
+  //       })
+  //       .filter(value => value !== null);
+  
+  //     // Check if any cooldown value is different from others in the array
+  //     const hasChangingCooldown = cooldownValues.some((value, index, arr) => value !== arr[0]);
+  
+  //     if (hasChangingCooldown) {
+  //       cardsWithChangingCooldowns.push(card.name);
+  //     }
+  //   });
+  
+  //   if (cardsWithChangingCooldowns.length > 0) {
+  //     console.log("Cards with changing cooldowns:", cardsWithChangingCooldowns);
+  //   } else {
+  //     console.log("No cards have changing cooldowns across tiers.");
+  //   }
+  
+  //   expect(cardsWithChangingCooldowns.length).toBeGreaterThan(0); // Adjust expectation as needed
+  // });
+
   it('should parse "Bill Dozer" correctly with correct cooldown reduction texts for each tier', () => {
     const billDozerCard = cards.find(card => card.name === "Bill Dozer")!;
 

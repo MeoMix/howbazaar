@@ -39,8 +39,8 @@ export default {
           fiery: '#FF4500',       // Intense orange-red for Fiery
           shiny: '#FFD700',       // Gold for Shiny
           deadly: '#8B0000',      // Dark red for Deadly
-          radiant: '#FFF5BA',     // Soft yellow with a glow for Radiant
-          obsidian: '#2C2C2C',    // Near-black for Obsidian
+          radiant: '#FFE48A',     // Soft yellow with a glow for Radiant
+          obsidian: '#4A4A4A',    // Near-black for Obsidian
           golden: '#FFD700',      // Vibrant gold for Golden
         }
       }
