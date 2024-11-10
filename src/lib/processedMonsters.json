@@ -1640,7 +1640,8 @@
             }
           ]
         },
-        "tier": "Diamond"
+        "tier": "Diamond",
+        "enchantmentName": "Shiny"
       },
       {
         "card": {
@@ -1783,7 +1784,8 @@
             }
           ]
         },
-        "tier": "Diamond"
+        "tier": "Diamond",
+        "enchantmentName": "Shiny"
       },
       {
         "card": {
@@ -7795,7 +7797,8 @@
             }
           ]
         },
-        "tier": "Bronze"
+        "tier": "Bronze",
+        "enchantmentName": "Toxic"
       },
       {
         "card": {
@@ -8374,7 +8377,8 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tier": "Silver",
+        "enchantmentName": "Toxic"
       },
       {
         "card": {
@@ -10442,7 +10446,8 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tier": "Gold",
+        "enchantmentName": "Fiery"
       },
       {
         "card": {
@@ -17453,7 +17458,8 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tier": "Silver",
+        "enchantmentName": "Obsidian"
       },
       {
         "card": {
@@ -17596,7 +17602,8 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tier": "Silver",
+        "enchantmentName": "Obsidian"
       },
       {
         "card": {
@@ -19242,7 +19249,8 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tier": "Gold",
+        "enchantmentName": "Toxic"
       },
       {
         "card": {
@@ -19939,7 +19947,8 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tier": "Gold",
+        "enchantmentName": "Toxic"
       }
     ],
     "skills": [
@@ -21447,7 +21456,8 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tier": "Silver",
+        "enchantmentName": "Toxic"
       },
       {
         "card": {
@@ -23264,7 +23274,8 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tier": "Gold",
+        "enchantmentName": "Icy"
       },
       {
         "card": {
@@ -50622,7 +50633,8 @@
             }
           ]
         },
-        "tier": "Bronze"
+        "tier": "Bronze",
+        "enchantmentName": "Restorative"
       },
       {
         "card": {
@@ -50993,7 +51005,8 @@
             }
           ]
         },
-        "tier": "Bronze"
+        "tier": "Bronze",
+        "enchantmentName": "Restorative"
       }
     ],
     "skills": [
@@ -60697,7 +60710,8 @@
             }
           ]
         },
-        "tier": "Bronze"
+        "tier": "Bronze",
+        "enchantmentName": "Fiery"
       },
       {
         "card": {
@@ -60845,7 +60859,8 @@
             }
           ]
         },
-        "tier": "Bronze"
+        "tier": "Bronze",
+        "enchantmentName": "Fiery"
       },
       {
         "card": {

@@ -63841,7 +63841,7 @@
       {
         "name": "Deadly",
         "tooltips": [
-          "0 MISSING"
+          "Shield Properties adjacent to this have + Crit Chance equal to the value of your highest value item. [0]"
         ]
       },
       {

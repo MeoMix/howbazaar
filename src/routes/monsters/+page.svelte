@@ -21,7 +21,7 @@
 </script>
 
 <div class="text-3xl py-4">
-    This is all a work in progress :) Check back soon for better filtering + enchantment support.
+    This is all a work in progress :) Check back soon for a much improved UI
 </div>
 
 <!-- TODO: Maybe adopt CardFilters here? Or stop using CardFilters entirely and promote use of individual filter? -->
@@ -53,7 +53,11 @@
                 class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
             >
                 {#each monster.items as item}
-                    <MonsterCardItem card={item.card} tier={item.tier} />
+                    <MonsterCardItem
+                        card={item.card}
+                        tier={item.tier}
+                        enchantmentName={item.enchantmentName}
+                    />
                 {/each}
             </div>
 

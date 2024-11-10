@@ -31,7 +31,6 @@ export function parseJson(monstersJson: MonstersJson, cards: ClientSideCard[]): 
                 attributes: {
                     level: monster.Player.Attributes.Level,
                     health: monster.Player.Attributes.HealthMax,
-                    // healthRegen: monster.Player.Attributes.HealthRegen ?? 0,
                 },
                 // Only include items with a matching card
                 items: monster.Player.Hand.Items.map(item => {
@@ -45,7 +44,7 @@ export function parseJson(monstersJson: MonstersJson, cards: ClientSideCard[]): 
                         );
                     }
 
-                    return card ? { card, tier: item.Tier } : null;
+                    return card ? { card, tier: item.Tier, enchantmentName: item.EnchantmentType ?? undefined } : null;
                 }).filter((item) => item !== null),
 
                 // Only include skills with a matching card

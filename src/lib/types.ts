@@ -12,7 +12,7 @@ export type ClientSideTier = {
     tooltips: string[];
 };
 
-type ClientSideEnchantment = {
+export type ClientSideEnchantment = {
     // TODO: This type could be tighter
     name: string;
     tooltips: string[];
@@ -68,6 +68,8 @@ export type ClientSideMonster = {
     items: {
         card: ClientSideCardItem,
         tier: ClientSideTierType
+        // TODO: tighten this name
+        enchantmentName: string | undefined;
     }[],
     skills: {
         card: ClientSideCardSkill,
