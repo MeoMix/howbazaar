@@ -13,6 +13,7 @@ export type ClientSideTier = {
 };
 
 type ClientSideEnchantment = {
+    // TODO: This type could be tighter
     name: string;
     tooltips: string[];
 };

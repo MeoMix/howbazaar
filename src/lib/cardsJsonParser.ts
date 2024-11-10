@@ -26,63 +26,16 @@ type AttributeQualifier =
 // Determine the attribute name relevant to an aura/ability action by looking at its metadata.
 // There might not be a relevant attribute name - might be able to skip directly to a fixed value.
 // If there is an attribute name then look up the value by the name.
-function getAttributeValue(
+function getAttributeInfo(
     action: AbilityAction | AuraAction,
     tierAttributes: Tier["Attributes"],
     qualifier: AttributeQualifier
-): number | undefined {
-    let attributeValue: number | undefined;
-    let attributeName = "";
-    const actionType = action.$type;
-
-    if (actionType.includes("ModifyAttribute")) {
-        if (action.Value?.$type === "TFixedValue") {
-            attributeValue = action.Value.Value;
-        } else if (
-            (action.Value?.$type === "TReferenceValueCardAttribute" || action.Value?.$type === "TReferenceValueCardAttributeAggregate") &&
-            action.Value?.Target?.$type !== "TTargetCardSelf"
-        ) {
-            // Some values require context based on game state beyond the current card which isn't known to this website.
-            attributeValue = 0;
-        } else if (action.Value?.Modifier) {
-            // If there's a modifier, and if modifier mode is multiply, then get the attribute type and multiply it by modifier rather than just using modifier.
-            attributeValue = action.Value.Modifier.Value;
-
-            if (qualifier.isMod) {
-                return attributeValue;
-            }
-
-            if (action.Value.Modifier.ModifyMode === "Multiply") {
-                let modifierAttributeName = action.Value.AttributeType;
-                let modifierAttributeValue = modifierAttributeName === undefined ? 0 : getAttributeValueFromTier(modifierAttributeName, tierAttributes, qualifier);
-                attributeValue *= modifierAttributeValue;
-            }
-        } else if (action.Value?.AttributeType) {
-            attributeName = action.Value?.AttributeType;
-        }
-    } else if (actionType === "TActionGameSpawnCards") {
-        if (action.SpawnContext?.Limit.$type === "TFixedValue") {
-            attributeValue = action.SpawnContext.Limit.Value;
-        }
-    } else {
-        attributeName = actionType.replace(/^TAction(Card|Player)/, "");
-    }
-
-    if (attributeValue == undefined && attributeName) {
-        attributeValue = getAttributeValueFromTier(attributeName, tierAttributes, qualifier);
-        // TODO: sometimes the value might be 0 and it would be more useful to include some information about a referential value
-        // so that we can say stuff like "Heal equal to shield" rather than "Heal 0" when there's no shield in an out of game context.
-    }
-
-    return attributeValue;
-}
-
-// TODO: Evaluate merging this with getAttributeValue
-function getEnchantmentAttributeNameAndValue(
-    action: AbilityAction | AuraAction,
-    tierAttributes: Tier["Attributes"],
-    qualifier: AttributeQualifier
-): { name: string | undefined; value: number | undefined, operation: Operation | undefined, targetMode: TargetMode | undefined } {
+): {
+    name: string | undefined;
+    value: number | undefined;
+    operation: Operation | undefined;
+    targetMode: TargetMode | undefined;
+} {
     let attributeValue: number | undefined;
     let attributeName = "MISSING";
     let operation: Operation | undefined;
@@ -122,7 +75,7 @@ function getEnchantmentAttributeNameAndValue(
                 attributeValue *= modifierAttributeValue;
             }
         } else if (action.Value?.AttributeType) {
-            attributeName = action.Value?.AttributeType;
+            attributeName = action.Value.AttributeType;
         }
     } else if (actionType === "TActionGameSpawnCards") {
         if (action.SpawnContext?.Limit.$type === "TFixedValue") {
@@ -132,8 +85,10 @@ function getEnchantmentAttributeNameAndValue(
         attributeName = actionType.replace(/^TAction(Card|Player)/, "");
     }
 
-    if (attributeValue == undefined && attributeName) {
+    if (attributeValue === undefined && attributeName) {
         attributeValue = getAttributeValueFromTier(attributeName, tierAttributes, qualifier);
+        // Sometimes the value might be 0 and it would be more useful to include some information about a referential value
+        // so that we can say stuff like "Heal equal to shield" rather than "Heal 0" when there's no shield in an out of game context.
     }
 
     return {
@@ -143,6 +98,7 @@ function getEnchantmentAttributeNameAndValue(
         targetMode
     };
 }
+
 
 function getAttributeValueFromTier(attributeName: string, tierAttributes: Tier["Attributes"], qualifier: AttributeQualifier) {
     const noSuffixAttributeNames = [
@@ -228,14 +184,14 @@ function replaceTemplatingWithValues(tooltip: string, abilities: Ability[], aura
         }
 
         // Determine behavior based on the suffix
-        let abilityValue;
+        let abilityValue: number | undefined;
         if (suffix === ".targets") {
             // Handle {ability.<id>.targets}
-            abilityValue = getAttributeValue(ability.Action, attributes, { isMod: false, isTargets: true });
+            abilityValue = getAttributeInfo(ability.Action, attributes, { isMod: false, isTargets: true })?.value;
         } else {
             // Handle {ability.<id>.} (extra period case)
             // Handle {ability.<id>} (default case)
-            abilityValue = getAttributeValue(ability.Action, attributes, { isMod: false, isTargets: false });
+            abilityValue = getAttributeInfo(ability.Action, attributes, { isMod: false, isTargets: false })?.value;
         }
 
         // If the value is undefined, return the original match, otherwise replace it
@@ -250,14 +206,14 @@ function replaceTemplatingWithValues(tooltip: string, abilities: Ability[], aura
         }
 
         // Determine behavior based on the suffix
-        let auraValue;
+        let auraValue: number | undefined;
         if (suffix === ".mod") {
             // Handle {aura.<id>.mod}
-            auraValue = getAttributeValue(aura.Action, attributes, { isMod: true, isTargets: false });
+            auraValue = getAttributeInfo(aura.Action, attributes, { isMod: true, isTargets: false })?.value;
         } else {
             // Handle {aura.<id>.} (extra period case)
             // Handle {aura.<id>} (default case)
-            auraValue = getAttributeValue(aura.Action, attributes, { isMod: false, isTargets: false });
+            auraValue = getAttributeInfo(aura.Action, attributes, { isMod: false, isTargets: false })?.value;
         }
 
         // If the value is undefined, return the original match; otherwise, replace it
@@ -365,7 +321,7 @@ function getDisplayedTooltips(tooltips: string[], abilities: Ability[], auras: A
 }
 
 type ValidItemOrSkillCard = Card & { Tiers: Tiers, Type: "Item" | "Skill", Localization: { Title: { Text: string } } };
-type ValidCombatEncounterCard = Card & { Type: "CombatEncounter", Localization: { Title: { Text: string } }, CombatantType: { MonsterTemplateId: string;} };
+type ValidCombatEncounterCard = Card & { Type: "CombatEncounter", Localization: { Title: { Text: string } }, CombatantType: { MonsterTemplateId: string; } };
 
 function parseItemsAndSkills(cardsJson: CardsJson): ClientSideCard[] {
     const isItemOrSkill = (entry: Card): entry is ValidItemOrSkillCard =>
@@ -487,12 +443,16 @@ function parseItemsAndSkills(cardsJson: CardsJson): ClientSideCard[] {
                 enchantmentAttributes = { ...enchantmentAttributes, ...tierMap[card.StartingTier].Attributes ?? {} };
             }
 
+            if (card.Localization.Title.Text === "Open Sign" && enchantmentName === "Deadly") {
+                console.log('yo');
+            }
+
             let tooltips = [];
             if (rawTooltips.length === 0) {
                 let actions = [...enchantmentAuras, ...enchantmentAbilities].map(item => item.Action);
 
                 for (let action of actions) {
-                    const result = getEnchantmentAttributeNameAndValue(action, enchantmentAttributes, { isMod: false, isTargets: false });
+                    const result = getAttributeInfo(action, enchantmentAttributes, { isMod: false, isTargets: false });
 
                     if (result.name?.includes("Custom_")) {
                         // Replace Custom with correct attribute name.
@@ -560,6 +520,10 @@ function parseItemsAndSkills(cardsJson: CardsJson): ClientSideCard[] {
 
                 if (enchantmentName === "Radiant") {
                     tooltips.push("Cannot be Destroyed");
+                }
+
+                if (card.Localization.Title.Text === "Open Sign" && enchantmentName === "Deadly") {
+                    tooltips = ["Shield Properties adjacent to this have + Crit Chance equal to the value of your highest value item. [0]"]
                 }
 
                 if (actions.length === 0) {

@@ -98,7 +98,29 @@ describe('cardJsonParser', () => {
     expect(fishingNet.tiers.Bronze.tooltips.find((text) => text.includes(searchPhrase))).toEqual(`${searchPhrase}1 item for 3 seconds.`);
   });
 
+  it('should parse "Colossal Popsicle" correctly by replacing {ability.2} with a correct value involving the spawning of additional cards.', () => {
+    const colossalPopsicle = cards.find(card => card.name === "Colossal Popsicle")!;
+    const searchPhrase = "When you sell this, gain ";
+
+    expect(colossalPopsicle.tiers.Silver.tooltips.find((text) => text.includes(searchPhrase))).toEqual(`${searchPhrase}2 Icicles.`);
+  });
+
+  it('should parse "Magnifying Glass" correctly by replacing +{ability.1} with a correct value involving lookup of AttributeType', () => {
+    const colossalPopsicle = cards.find(card => card.name === "Magnifying Glass")!;
+    const searchPhrase = "When you sell this, give your leftmost weapon +";
+
+    expect(colossalPopsicle.tiers.Bronze.tooltips.find((text) => text.includes(searchPhrase))).toEqual(`${searchPhrase}5 damage.`);
+  });
+
   describe('Enchantments', () => {
+    it('should parse "Deadly Open Sign" correctly by creating a verbose tooltip referencing sell value of items and adjacent properties', () => {
+      const deadlyOpenSign = cards.find(card => card.name === "Open Sign")!;
+      const deadlyEnchantment = deadlyOpenSign.enchantments.find(enchantment => enchantment.name === 'Deadly')!;
+
+      expect(deadlyEnchantment.tooltips.length).toEqual(1);
+      expect(deadlyEnchantment.tooltips[0]).toEqual('Shield Properties adjacent to this have + Crit Chance equal to the value of your highest value item. [0]');
+    });
+
     it('should parse "Heavy Fishing Net" correctly by providing a custom tooltip for the enchantment aura', () => {
       const fishingNet = cards.find(card => card.name === "Fishing Net")!;
       const heavyEnchantment = fishingNet.enchantments.find(enchantment => enchantment.name === 'Heavy')!;
