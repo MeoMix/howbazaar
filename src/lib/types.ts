@@ -26,8 +26,8 @@ export type ClientSideCardItem = {
     id: string;
     type: "Item";
     name: string;
-    startingTier: TierType;
-    tiers: { [key in TierType]: ClientSideTier };
+    startingTier: ClientSideTierType;
+    tiers: { [key in ClientSideTierType]: ClientSideTier };
     tags: string[];
     hiddenTags: string[];
     size: "Small" | "Medium" | "Large";
@@ -39,8 +39,8 @@ export type ClientSideCardSkill = {
     id: string;
     type: "Skill";
     name: string;
-    startingTier: TierType;
-    tiers: { [key in TierType]: ClientSideTier };
+    startingTier: ClientSideTierType;
+    tiers: { [key in ClientSideTierType]: ClientSideTier };
     tags: string[];
     hiddenTags: string[];
     size: "Small" | "Medium" | "Large";
@@ -66,10 +66,10 @@ export type ClientSideMonster = {
     };
     items: {
         card: ClientSideCardItem,
-        tier: TierType
+        tier: ClientSideTierType
     }[],
     skills: {
         card: ClientSideCardSkill,
-        tier: TierType
+        tier: ClientSideTierType
     }[]
 }

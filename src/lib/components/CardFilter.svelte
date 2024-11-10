@@ -1,10 +1,16 @@
 <script lang="ts">
-    import { Label, Button } from "flowbite-svelte";
+    import { Label, Button, Toggle } from "flowbite-svelte";
 
-    let { label, options, selectedOptions = $bindable() } = $props<{
+    let {
+        label,
+        options,
+        selectedOptions = $bindable(),
+        mustMatchAll = $bindable(),
+    } = $props<{
         label: string;
         options: string[] | number[];
         selectedOptions: string[] | number[];
+        mustMatchAll?: boolean;
     }>();
 
     const handleSelection = (selectedArray: string[], item: string) => {
@@ -17,8 +23,20 @@
 </script>
 
 <div>
-    <Label class="font-semibold text-lg">{label}</Label>
-    <div class="flex flex-wrap gap-2 mt-2">
+    <div class="mb-2">
+        <Label class="font-semibold text-lg">{label}</Label>
+        {#if mustMatchAll !== undefined}
+            <Toggle
+                class="mt-2"
+                checked={mustMatchAll}
+                on:click={() => {
+                    mustMatchAll = !mustMatchAll;
+                }}>Must Match All</Toggle
+            >
+        {/if}
+    </div>
+
+    <div class="flex flex-wrap gap-2">
         {#each options as option}
             <Button
                 size="xs"

@@ -21,7 +21,7 @@
 </script>
 
 <div class="text-3xl py-4">
-    This is all a work in progress :) Check back tomorrow.
+    This is all a work in progress :) Check back soon for better filtering + enchantment support.
 </div>
 
 <!-- TODO: Maybe adopt CardFilters here? Or stop using CardFilters entirely and promote use of individual filter? -->

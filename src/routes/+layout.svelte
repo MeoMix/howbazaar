@@ -6,7 +6,6 @@
 
     import { Tabs, TabItem, Toast, DarkMode, Navbar, NavBrand } from "flowbite-svelte";
     import { CheckCircleSolid } from "flowbite-svelte-icons";
-    import { onMount } from "svelte";
     import type { Snippet } from "svelte";
     import { fly } from "svelte/transition";
     import { page } from "$app/stores";
@@ -23,16 +22,6 @@
     });
 
     let { children }: { children: Snippet } = $props();
-
-    onMount(() => {
-        const hash = window.location.hash.slice(1);
-        if (hash) {
-
-            document
-                .getElementById(hash)
-                ?.scrollIntoView({ behavior: "smooth" });
-        }
-    });
 
     let activeTabName = $state($page.url.pathname.replace(/^\//, '')|| "items");
 

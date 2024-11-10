@@ -10,6 +10,7 @@
         selectedTiers = $bindable(),
         selectedTags = $bindable(),
         selectedSizes = $bindable(),
+        mustMatchAllTags = $bindable(),
     } = $props<{
         heroOptions: string[];
         minimumTierOptions: string[];
@@ -19,6 +20,7 @@
         selectedTiers: string[];
         selectedTags: string[];
         selectedSizes: string[];
+        mustMatchAllTags: boolean;
     }>();
 </script>
 
@@ -44,5 +46,6 @@
         label="Tags"
         options={tagOptions}
         bind:selectedOptions={selectedTags}
+        bind:mustMatchAll={mustMatchAllTags}
     />
 </div>
