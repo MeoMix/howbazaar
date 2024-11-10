@@ -1,11 +1,15 @@
 <script lang="ts">
     import type { ClientSideCardSkill, ClientSideTierType } from "$lib/types";
     import { Card } from "flowbite-svelte";
+    import CardBadges from "./CardBadges.svelte";
+    import { filterTags } from "$lib/utils/filterUtils";
 
     const {
         card,
         tier,
     }: { card: ClientSideCardSkill; tier: ClientSideTierType } = $props();
+
+    const tags = $derived(filterTags(card.tags, card.hiddenTags));
 </script>
 
 <div class="p-4 border border-gray-200 rounded-lg shadow-sm">
@@ -13,12 +17,9 @@
         {card.name}
     </div>
 
-    <div class="flex mb-1 gap-4">
-        <span class="font-semibold w-24 text-right whitespace-nowrap">Tags</span>
-        <span>{[...card.tags, ...card.hiddenTags].sort().join(", ")}</span>
-    </div>
+    <CardBadges primaryBadges={tags.map((text) => ({ text }))} />
 
-    <Card size="xl">
+    <Card size="xl" class="mt-4">
         <div class="text-lg font-semibold mb-2">
             {tier}
         </div>

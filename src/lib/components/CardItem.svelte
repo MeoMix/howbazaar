@@ -4,10 +4,12 @@
     import type { Entries } from "type-fest";
     import { Card } from "flowbite-svelte";
     import { filterTags } from "$lib/utils/filterUtils";
+    import CardBadges from "./CardBadges.svelte";
 
     const { card }: { card: ClientSideCardItem } = $props();
 
     const id = $derived(card.name.replace(/\s+/g, "_"));
+    const tags = $derived(filterTags(card.tags, card.hiddenTags));
 </script>
 
 <div class="p-4 border border-gray-200 rounded-lg shadow-sm" {id}>
@@ -18,24 +20,12 @@
         </button>
     </div>
 
-    <div class="flex mb-1 gap-4">
-        <span class="font-semibold w-24 text-right whitespace-nowrap">Heroes</span>
-        <span>{card.heroes.join(", ")}</span>
-    </div>
-
-    <div class="flex mb-1 gap-4">
-        <span class="font-semibold w-24 text-right whitespace-nowrap">Size</span>
-        <span>{card.size}</span>
-    </div>
-
-    <div class="flex mb-1 gap-4">
-        <span class="font-semibold w-24 text-right whitespace-nowrap">Tags</span>
-        <span>{filterTags(card.tags, card.hiddenTags).join(", ")}</span>
-    </div>
+    <CardBadges primaryBadges={[...card.heroes, card.size].map(text => ({ text }))} secondaryBadges={tags.map(text => ({ text }))} />
 
     <div class="font-semibold text-xl mt-4 mb-2">
         Tiers
     </div>
+    
     <div
         class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
     >
