@@ -179,45 +179,25 @@ function replaceTemplatingWithValues(tooltip: string, abilities: Ability[], aura
     tooltip = tooltip.replace(abilityPattern, (match, id, suffix) => {
         const ability = abilities.find(a => a.Id === id);
 
-        if (!ability) {
-            return match;
+        let abilityValue;
+        if (ability) {
+            const attributeInfo = getAttributeInfo(ability.Action, attributes, { isMod: false, isTargets: suffix === ".targets" });
+            abilityValue = attributeInfo?.value;
         }
 
-        // Determine behavior based on the suffix
-        let abilityValue: number | undefined;
-        if (suffix === ".targets") {
-            // Handle {ability.<id>.targets}
-            abilityValue = getAttributeInfo(ability.Action, attributes, { isMod: false, isTargets: true })?.value;
-        } else {
-            // Handle {ability.<id>.} (extra period case)
-            // Handle {ability.<id>} (default case)
-            abilityValue = getAttributeInfo(ability.Action, attributes, { isMod: false, isTargets: false })?.value;
-        }
-
-        // If the value is undefined, return the original match, otherwise replace it
-        return abilityValue !== undefined ? `${abilityValue}` : match;
+        return abilityValue === undefined ? match : `${abilityValue}`;
     });
 
     tooltip = tooltip.replace(auraPattern, (match, id, suffix) => {
         const aura = auras.find(a => a.Id.toLowerCase() === id.toLowerCase());
 
-        if (!aura) {
-            return match;
+        let auraValue;
+        if (aura) {
+            const attributeInfo = getAttributeInfo(aura.Action, attributes, { isMod: suffix === ".mod", isTargets: false })
+            auraValue = attributeInfo?.value;
         }
 
-        // Determine behavior based on the suffix
-        let auraValue: number | undefined;
-        if (suffix === ".mod") {
-            // Handle {aura.<id>.mod}
-            auraValue = getAttributeInfo(aura.Action, attributes, { isMod: true, isTargets: false })?.value;
-        } else {
-            // Handle {aura.<id>.} (extra period case)
-            // Handle {aura.<id>} (default case)
-            auraValue = getAttributeInfo(aura.Action, attributes, { isMod: false, isTargets: false })?.value;
-        }
-
-        // If the value is undefined, return the original match; otherwise, replace it
-        return auraValue !== undefined ? `${auraValue}` : match;
+        return auraValue === undefined ? match : `${auraValue}`;
     });
 
     return tooltip;
@@ -443,10 +423,6 @@ function parseItemsAndSkills(cardsJson: CardsJson): ClientSideCard[] {
                 enchantmentAttributes = { ...enchantmentAttributes, ...tierMap[card.StartingTier].Attributes ?? {} };
             }
 
-            if (card.Localization.Title.Text === "Open Sign" && enchantmentName === "Deadly") {
-                console.log('yo');
-            }
-
             let tooltips = [];
             if (rawTooltips.length === 0) {
                 let actions = [...enchantmentAuras, ...enchantmentAbilities].map(item => item.Action);
@@ -522,6 +498,7 @@ function parseItemsAndSkills(cardsJson: CardsJson): ClientSideCard[] {
                     tooltips.push("Cannot be Destroyed");
                 }
 
+                // TODO: Do this intelligently not patch fix
                 if (card.Localization.Title.Text === "Open Sign" && enchantmentName === "Deadly") {
                     tooltips = ["Shield Properties adjacent to this have + Crit Chance equal to the value of your highest value item. [0]"]
                 }
