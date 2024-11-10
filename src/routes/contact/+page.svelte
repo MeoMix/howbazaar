@@ -15,14 +15,17 @@
         requests, or bug reports!
     </div>
     <div class="my-2">
-        I can be reached on Discord, @MeoMix on The Bazaar's server or User ID: 303241372989915136, or on Reddit <a
+        I can be reached on Discord, @MeoMix on The Bazaar's server or User ID:
+        303241372989915136, or on Reddit <a
             class="bold"
             href="https://www.reddit.com/user/MeoMix/"
             >https://www.reddit.com/user/MeoMix/</a
         >
     </div>
     <div class="my-2">
-        I'm terminally on the computer, so you should have no trouble reaching me, but I do sleep from 10pm to 6am PST. Feel free to leave me a message if I'm not responding.
+        I'm terminally on the computer, so you should have no trouble reaching
+        me, but I do sleep from 10pm to 6am PST. Feel free to leave me a message
+        if I'm not responding.
     </div>
 </div>
 
@@ -32,75 +35,80 @@
     <div>
         Tomorrow:
         <ul class="ml-8">
+            <li>Add support for enchantment effects on monster items.</li>
             <li>
-                Add support for enchantment effects on monster items.
-            </li>
-            <li>
-                Add "Clear Filters" button
-            </li>
-            <li>
-                Try to figure out a good UI for supporting exclusive filters. For example, "Show me all skills that only Vanessa can get"
-            </li>
-            <li>
-                Try to add support for filtering items by those which can be acquired via Monster Encounters.
-            </li>
-            <li>
-                Refactor some server-side code to make long-term support of item enchantments easier.
+                <span class="line-through"> Add "Clear Filters" button </span>
+                Done!
             </li>
             <li>
                 <span class="line-through">
-                    Try to decide if "Hidden Tags" and "Tags" should be merged into one, large "Tags" section.
+                    Try to figure out a good UI for supporting exclusive
+                    filters. For example, "Show me all skills that only Vanessa
+                    can get"
+                </span>
+                Done! (Poorly but good enough for a few weeks)
+            </li>
+            <li>
+                Try to add support for filtering items by those which can be
+                acquired via Monster Encounters.
+            </li>
+            <li>
+                Refactor some server-side code to make long-term support of item
+                enchantments easier.
+            </li>
+            <li>
+                <span class="line-through">
+                    Make website lag less by implementing lazy loading for
+                    search results.
+                </span>
+                Done!
+            </li>
+            <li>
+                <span class="line-through">
+                    Try to decide if "Hidden Tags" and "Tags" should be merged
+                    into one, large "Tags" section.
                 </span>
                 Done!
             </li>
         </ul>
     </div>
 
-    <div>
-        Later, but soon:
-    </div>
+    <div>Later, but soon:</div>
 
     <ul class="ml-8">
+        <li>Add support for item and skill images</li>
         <li>
-            Add support for item and skill images
-        </li>
-        <li>
-            Add support for knowing the probability of getting an item from a merchant on a given day.
+            Add support for knowing the probability of getting an item from a
+            merchant on a given day.
         </li>
         <li>
             Add supporting information for merchants and non-combat encounters
         </li>
         <li>
-            Add support for patch change logs. Be able to show users exactly what items changed and how when patches go live.
+            Add support for patch change logs. Be able to show users exactly
+            what items changed and how when patches go live.
         </li>
     </ul>
 
-    <div>
-        Much later, not soon:
-    </div>
+    <div>Much later, not soon:</div>
     <ul class="ml-8">
         <li>
-            Theorycrafting build support. Be able to discover which item builds are doing the best.
+            Theorycrafting build support. Be able to discover which item builds
+            are doing the best.
         </li>
         <li>
-            In-game extension, but need The Bazaar to produce gameplay logs first, cannot begin work on this.
+            In-game extension, but need The Bazaar to produce gameplay logs
+            first, cannot begin work on this.
         </li>
-        <li>
-            ????
-        </li>
+        <li>????</li>
     </ul>
 </div>
 
-
 <div class="text-lg">
-    <div>
-        Okie. That's all~~
-    </div>
+    <div>Okie. That's all~~</div>
 
     <div class="text-red-500">
-        {"<3"} 
+        {"<3"}
     </div>
-    <div>
-        - Meo
-    </div>
+    <div>- Meo</div>
 </div>

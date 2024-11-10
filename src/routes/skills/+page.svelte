@@ -44,7 +44,7 @@
         ),
     );
 
-    let itemsToDisplay = $state(20); // Start with 20 items
+    let itemsToDisplay = $state(10);
     const visibleCards = $derived(filteredCards.slice(0, itemsToDisplay));
 
     let loadMoreTrigger: HTMLDivElement | null = null; // Reference for the intersection observer
@@ -57,7 +57,7 @@
             (entries) => {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
-                        itemsToDisplay += 20; // Load 20 more items
+                        itemsToDisplay += 10;
                     }
                 });
             },
@@ -85,6 +85,18 @@
                 ?.scrollIntoView({ behavior: "instant" });
         }
     });
+
+    function clearSearch() {
+        selectedHeroes = [];
+        selectedTiers = [];
+        selectedTags = [];
+        mustMatchAllTags = false;
+        selectedSizes = [];
+        searchText = '';
+        includeTitle = false;
+        includeNonEnchantmentText = false;
+        includeEnchantmentText = false;
+    }
 </script>
 
 <!-- TODO: merge this with CardFilters? -->
@@ -129,6 +141,10 @@
     bind:selectedSizes
     bind:mustMatchAllTags
 />
+
+<Button class="mb-4" outline on:click={clearSearch}>
+    Clear Search
+</Button>
 
 <div class="space-y-4">
     <div class="text-lg">
