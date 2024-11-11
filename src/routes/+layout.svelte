@@ -25,8 +25,8 @@
     const activeUrl = $derived($page.url.pathname);
 </script>
 
-<Navbar class="sticky top-0 z-10 border-b">
-    <NavBrand>
+<Navbar class="sticky top-0 z-10 border-b bg-white dark:bg-gray-800">
+    <NavBrand href="/">
         <span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
             How Bazaar
         </span>
@@ -45,7 +45,7 @@
     </NavUl>
 </Navbar>
 
-<div class="relative min-h-screen flex flex-col bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 ">
+<div class="relative min-h-screen flex flex-col text-gray-900 dark:text-gray-100 ">
     <div class="flex-grow overflow-y-auto px-2 sm:px-4 max-w-[120rem] w-full mx-auto">
         {@render children()}
     </div>
