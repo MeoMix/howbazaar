@@ -19,7 +19,7 @@ export function prepareItemAndSkillFilterOptions(cards: (ClientSideCardItem | Cl
 }
 
 // TODO: These types could be tighter
-export function filterItemAndSkillCards<T extends { heroes: string[]; startingTier: string; tags: string[]; hiddenTags: string[], size: string; name: string; tooltips?: string[]; tiers?: { [key in ClientSideTierType]: ClientSideTier }, enchantments?: { name: string; tooltips: string[] }[] }>(
+export function filterItemAndSkillCards<T extends ClientSideCardItem | ClientSideCardSkill>(
     cards: T[],
     selectedHeroes: string[],
     selectedTiers: string[],
@@ -63,12 +63,11 @@ export function filterItemAndSkillCards<T extends { heroes: string[]; startingTi
                 ? card.name.toLowerCase().includes(lowerSearchText)
                 : (
                     card.name.toLowerCase().includes(lowerSearchText) ||
-                    card.tooltips?.some(tip => tip.toLowerCase().includes(lowerSearchText)) ||
                     card.tags?.some(tag => tag.toLowerCase().includes(lowerSearchText)) ||
                     card.hiddenTags?.some(hiddenTag => hiddenTag.toLowerCase().includes(lowerSearchText)) ||
                     card.size?.toLowerCase().includes(lowerSearchText) ||
                     card.heroes?.some(hero => hero.toLowerCase().includes(lowerSearchText)) ||
-                    validTiers.some(([tierName]) => tierName.toLowerCase().includes(lowerSearchText)) ||
+                    validTiers.some(([tierName, tier]) => tierName.toLowerCase().includes(lowerSearchText) || tier.tooltips.some(tooltip => tooltip.toLowerCase().includes(lowerSearchText) || tier.attributes.some(attribute => `${attribute.name} ${attribute.value} ${attribute.valueDescriptor}`.toLowerCase().includes(lowerSearchText)))) ||
                     card.enchantments?.some(e =>
                         e.name.toLowerCase().includes(lowerSearchText) ||
                         e.tooltips.some(tip => tip.toLowerCase().includes(lowerSearchText))
