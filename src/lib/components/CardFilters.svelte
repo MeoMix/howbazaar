@@ -1,7 +1,8 @@
 <script lang="ts">
-    import { Button, Input, Label } from "flowbite-svelte";
+    import { Button, ButtonGroup, Input, InputAddon } from "flowbite-svelte";
     import CardFilter from "./CardFilter.svelte";
     import { onMount } from "svelte";
+    import { SearchSolid } from "flowbite-svelte-icons";
 
     let {
         heroOptions,
@@ -56,10 +57,17 @@
     });
 </script>
 
-<div class="mb-4">
-    <Label class="font-semibold text-lg mb-2">Search</Label>
-
-    <Input type="text" placeholder="Search items..." bind:value={searchText} />
+<div class="mt-8 mb-4">
+    <ButtonGroup class="w-full">
+        <Input
+            type="text"
+            placeholder="Search items..."
+            bind:value={searchText}
+        />
+        <InputAddon>
+            <SearchSolid class="w-4 h-4 text-gray-500 dark:text-gray-400" />
+        </InputAddon>
+    </ButtonGroup>
 
     <div class="flex gap-2 mt-2">
         <Button
@@ -101,4 +109,6 @@
     />
 </div>
 
-<Button class="mb-4" outline on:click={clearSearch}>Clear Search</Button>
+<Button class="mb-4" outline on:click={clearSearch} color="dark"
+    >Clear Search</Button
+>

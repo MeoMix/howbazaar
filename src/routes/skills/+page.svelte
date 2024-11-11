@@ -83,8 +83,6 @@
     <div class="text-lg">
         {#if visibleCards.length === 0}
             No Skills Found. Check Your Search.
-        {:else}
-            {filteredCards.length} Skill{filteredCards.length === 1 ? "" : "s"} Found
         {/if}
     </div>
 

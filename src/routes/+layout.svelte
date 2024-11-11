@@ -4,12 +4,11 @@
     import { inject } from "@vercel/analytics";
     inject({ mode: dev ? "development" : "production" });
 
-    import { Tabs, TabItem, Toast, DarkMode, Navbar, NavBrand } from "flowbite-svelte";
+    import { Toast, DarkMode, Navbar, NavBrand, NavUl, NavLi, NavHamburger } from "flowbite-svelte";
     import { CheckCircleSolid } from "flowbite-svelte-icons";
     import type { Snippet } from "svelte";
     import { fly } from "svelte/transition";
     import { page } from "$app/stores";
-    import { goto } from "$app/navigation";
     import { clipboardState } from "$lib/stores/clipboard";
 
     let toastStatus = $state(false);
@@ -23,47 +22,32 @@
 
     let { children }: { children: Snippet } = $props();
 
-    let activeTabName = $state($page.url.pathname.replace(/^\//, '')|| "items");
-
-    function setTab(tabName: string) {
-        activeTabName = tabName;
-        goto(`${tabName}`);
-    }
+    const activeUrl = $derived($page.url.pathname);
 </script>
 
-<header class="flex-none w-full mx-auto bg-white dark:bg-slate-950">
-    <Navbar>
-        <NavBrand>
-         <span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white pl-4">
-             How Bazaar
-         </span>
-        </NavBrand>
- 
-        <div class="flex items-center ml-auto">
-            <DarkMode class="inline-block dark:hover:text-white hover:text-gray-900" />
-        </div>
-     </Navbar>
-</header>
+<Navbar class="sticky top-0 z-10 border-b">
+    <NavBrand>
+        <span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
+            How Bazaar
+        </span>
+    </NavBrand>
+    
+    <div class="flex md:order-2">
+        <DarkMode class="hover:text-gray-900 dark:hover:text-white" />
+        <NavHamburger class="hover:text-gray-900 dark:hover:text-white" />
+    </div>
 
-<div class={'relative min-h-screen flex flex-col'}>
-    <div class="flex-grow overflow-y-auto p-4 bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-gray-100">
-        <Tabs tabStyle="underline">
-            <TabItem title="Items" open={activeTabName === "items"} on:click={() => setTab("items")}>
-                {@render children()}
-            </TabItem>
+    <NavUl {activeUrl}>
+        <NavLi href="/items">Items</NavLi>
+        <NavLi href="/skills">Skills</NavLi>
+        <NavLi href="/monsters">Monsters</NavLi>
+        <NavLi href="/contact">Contact & Upcoming Features</NavLi>
+    </NavUl>
+</Navbar>
 
-            <TabItem title="Skills" open={activeTabName === "skills"} on:click={() => setTab("skills")}>
-                {@render children()}
-            </TabItem>
-
-            <TabItem title="Monsters" open={activeTabName === "monsters"} on:click={() => setTab("monsters")}>
-                {@render children()}
-            </TabItem>
-
-            <TabItem title="Contact & Upcoming Features" open={activeTabName === "contact"} on:click={() => setTab("contact")}>
-                {@render children()}
-            </TabItem>
-        </Tabs>
+<div class="relative min-h-screen flex flex-col bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 ">
+    <div class="flex-grow overflow-y-auto px-2 sm:px-4 max-w-[120rem] w-full mx-auto">
+        {@render children()}
     </div>
 
     <div class="fixed bottom-0 left-0 w-full flex justify-center p-4">
