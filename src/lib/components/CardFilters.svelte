@@ -1,5 +1,7 @@
 <script lang="ts">
+    import { Button, Input, Label } from "flowbite-svelte";
     import CardFilter from "./CardFilter.svelte";
+    import { onMount } from "svelte";
 
     let {
         heroOptions,
@@ -11,6 +13,8 @@
         selectedTags = $bindable(),
         selectedSizes = $bindable(),
         mustMatchAllTags = $bindable(),
+        searchText = $bindable(),
+        isSearchNameOnly = $bindable(),
     } = $props<{
         heroOptions: string[];
         minimumTierOptions: string[];
@@ -21,8 +25,55 @@
         selectedTags: string[];
         selectedSizes: string[];
         mustMatchAllTags: boolean;
+        searchText: string;
+        isSearchNameOnly: boolean;
     }>();
+
+    function clearSearch() {
+        selectedHeroes = [];
+        selectedTiers = [];
+        selectedTags = [];
+        mustMatchAllTags = false;
+        selectedSizes = [];
+        searchText = "";
+        isSearchNameOnly = false;
+    }
+
+    onMount(async () => {
+        const hash = window.location.hash.slice(1);
+        if (hash) {
+            isSearchNameOnly = true;
+            searchText = hash.replace("_", " ");
+
+            // Wait until Svelte has updated the DOM
+            // await tick();
+
+            // // Then scroll into view
+            // document
+            //     .getElementById(hash)
+            //     ?.scrollIntoView({ behavior: "instant" });
+        }
+    });
 </script>
+
+<div class="mb-4">
+    <Label class="font-semibold text-lg mb-2">Search</Label>
+
+    <Input type="text" placeholder="Search items..." bind:value={searchText} />
+
+    <div class="flex gap-2 mt-2">
+        <Button
+            size="xs"
+            outline={!isSearchNameOnly}
+            pill
+            color={isSearchNameOnly ? "primary" : "light"}
+            on:click={() => (isSearchNameOnly = !isSearchNameOnly)}
+            class="transition-colors focus:outline-none border-2"
+        >
+            Name Only
+        </Button>
+    </div>
+</div>
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
     <CardFilter
@@ -49,3 +100,5 @@
         bind:mustMatchAll={mustMatchAllTags}
     />
 </div>
+
+<Button class="mb-4" outline on:click={clearSearch}>Clear Search</Button>

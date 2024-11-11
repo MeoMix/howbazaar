@@ -6,8 +6,6 @@
         prepareItemAndSkillFilterOptions,
     } from "$lib/utils/filterUtils";
     import CardFilters from "$lib/components/CardFilters.svelte";
-    import { onMount, tick } from "svelte";
-    import { Button, Input, Label } from "flowbite-svelte";
 
     const { data }: { data: { cards: ClientSideCard[] } } = $props();
     const cardSkills = data.cards
@@ -65,53 +63,7 @@
         // Cleanup observer on component destroy
         return () => observer.disconnect();
     });
-
-    onMount(async () => {
-        const hash = window.location.hash.slice(1);
-        if (hash) {
-            isSearchNameOnly = true;
-            searchText = hash.replace("_", " ");
-
-            // Wait until Svelte has updated the DOM
-            await tick();
-
-            // Then scroll into view
-            document
-                .getElementById(hash)
-                ?.scrollIntoView({ behavior: "instant" });
-        }
-    });
-
-    function clearSearch() {
-        selectedHeroes = [];
-        selectedTiers = [];
-        selectedTags = [];
-        mustMatchAllTags = false;
-        selectedSizes = [];
-        searchText = "";
-        isSearchNameOnly = false;
-    }
 </script>
-
-<!-- TODO: merge this with CardFilters? -->
-<div class="mb-4">
-    <Label class="font-semibold text-lg mb-2">Search</Label>
-
-    <Input type="text" placeholder="Search skills..." bind:value={searchText} />
-
-    <div class="flex gap-2 mt-2">
-        <Button
-            size="xs"
-            outline={!isSearchNameOnly}
-            pill
-            color={isSearchNameOnly ? "primary" : "light"}
-            on:click={() => (isSearchNameOnly = !isSearchNameOnly)}
-            class="transition-colors focus:outline-none border-2"
-        >
-            Name Only
-        </Button>
-    </div>
-</div>
 
 <CardFilters
     {heroOptions}
@@ -123,9 +75,9 @@
     bind:selectedTags
     bind:selectedSizes
     bind:mustMatchAllTags
+    bind:searchText
+    bind:isSearchNameOnly
 />
-
-<Button class="mb-4" outline on:click={clearSearch}>Clear Search</Button>
 
 <div class="space-y-4">
     <div class="text-lg">
