@@ -3,12 +3,12 @@
 
     const { 
         items, 
-        emptyMessage,
+        listItemName,
         listItem,
         batchSize = 10,
     }: {
         items: T[];
-        emptyMessage: string;
+        listItemName: string;
         listItem: Snippet<[T]>;
         batchSize?: number;
     } = $props();
@@ -40,9 +40,7 @@
 
 <div class="space-y-4">
     <div class="text-lg">
-        {#if visibleItems.length === 0}
-            {emptyMessage}
-        {/if}
+        {visibleItems.length} {listItemName}{visibleItems.length === 1 ? '' : 's'} found.
     </div>
 
     {#each visibleItems as item}

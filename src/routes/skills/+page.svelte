@@ -58,4 +58,4 @@
     <CardSkill {card} />
 {/snippet}
 
-<LazyLoadList items={filteredCards} {listItem} emptyMessage="No skills found." />
+<LazyLoadList items={filteredCards} {listItem} listItemName="skill" />

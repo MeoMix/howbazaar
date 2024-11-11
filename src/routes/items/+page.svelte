@@ -56,4 +56,4 @@
     <CardItem {card} />
 {/snippet}
 
-<LazyLoadList items={filteredCards} {listItem} emptyMessage="No items found." />
+<LazyLoadList items={filteredCards} {listItem} listItemName="item" />
