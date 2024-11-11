@@ -16,7 +16,7 @@
         mustMatchAllTags = $bindable(),
         searchText = $bindable(),
         isSearchNameOnly = $bindable(),
-    } = $props<{
+    }: {
         heroOptions: string[];
         minimumTierOptions: string[];
         tagOptions: string[];
@@ -28,7 +28,7 @@
         mustMatchAllTags: boolean;
         searchText: string;
         isSearchNameOnly: boolean;
-    }>();
+    } = $props();
 
     function clearSearch() {
         selectedHeroes = [];

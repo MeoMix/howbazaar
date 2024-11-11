@@ -1,10 +1,13 @@
 <script lang="ts">
     import { Badge } from "flowbite-svelte";
 
-    const { primaryBadges, secondaryBadges } = $props<{
+    const {
+        primaryBadges,
+        secondaryBadges = [],
+    }: {
         primaryBadges: { text: string }[];
         secondaryBadges?: { text: string }[];
-    }>();
+    } = $props();
 </script>
 
 <div class="flex flex-wrap gap-2">

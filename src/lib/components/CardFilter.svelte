@@ -1,17 +1,19 @@
 <script lang="ts">
     import { Label, Button, Toggle } from "flowbite-svelte";
+    
+    type OptionType = string | number;
 
     let {
         label,
         options,
         selectedOptions = $bindable(),
         mustMatchAll = $bindable(),
-    } = $props<{
+    }: {
         label: string;
-        options: string[] | number[];
-        selectedOptions: string[] | number[];
+        options: OptionType[];
+        selectedOptions: OptionType[];
         mustMatchAll?: boolean;
-    }>();
+    } = $props();
 
     const handleSelection = (selectedArray: string[], item: string) => {
         if (selectedArray.includes(item)) {

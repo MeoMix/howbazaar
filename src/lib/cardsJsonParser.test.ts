@@ -280,5 +280,7 @@ describe('cardJsonParser', () => {
       expect(restorativeEnchantment.tooltips.length).toEqual(1);
       expect(restorativeEnchantment.tooltips[0]).toEqual('Heal equal to your shield.');
     });
+
+    // TODO: Deadly Critical Core says +100 Damage Crit which isn't very clear
   });
 });
