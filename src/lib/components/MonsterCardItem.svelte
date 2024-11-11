@@ -1,17 +1,18 @@
 <script lang="ts">
-    import type { ClientSideCardItem, ClientSideTierType } from "$lib/types";
+    import type { ClientSideCardItem, ClientSideTierType, EnchantmentType } from "$lib/types";
     import { filterTags } from "$lib/utils/filterUtils";
     import { Card } from "flowbite-svelte";
     import CardBadges from "./CardBadges.svelte";
+    import { getEnchantmentClass, getTierClass } from "$lib/utils/classUtils";
 
     const {
         card,
-        tier,
+        tierType,
         enchantmentName,
     }: {
         card: ClientSideCardItem;
-        tier: ClientSideTierType;
-        enchantmentName: string | undefined;
+        tierType: ClientSideTierType;
+        enchantmentName: EnchantmentType | undefined;
     } = $props();
 
     const enchantment = $derived(
@@ -34,18 +35,12 @@
     />
 
     <Card size="xl" class="mt-4">
-        <div
-            class="text-lg font-semibold mb-2"
-            class:text-tiers-bronze={tier === "Bronze"}
-            class:text-tiers-silver={tier === "Silver"}
-            class:text-tiers-gold={tier === "Gold"}
-            class:text-tiers-diamond={tier === "Diamond"}
-        >
-            {tier}
+        <div class="text-lg font-semibold mb-2 {getTierClass(tierType)}">
+            {tierType}
         </div>
 
         <div class="mb-2">
-            {#each card.tiers[tier].attributes as attribute}
+            {#each card.tiers[tierType].attributes as attribute}
                 <div>
                     <span class="font-medium">{attribute.name}</span>
                     {attribute.value}
@@ -54,7 +49,7 @@
             {/each}
         </div>
 
-        {#each card.tiers[tier].tooltips as tooltip}
+        {#each card.tiers[tierType].tooltips as tooltip}
             <div>
                 {tooltip}
             </div>
@@ -63,19 +58,7 @@
         {#if enchantment}
             <Card size="xl" class="mt-4">
                 <div
-                    class="text-lg font-semibold mb-2"
-                    class:text-enchantments-heavy={enchantment.name === 'Heavy'}
-                    class:text-enchantments-icy={enchantment.name === 'Icy'}
-                    class:text-enchantments-turbo={enchantment.name === 'Turbo'}
-                    class:text-enchantments-shielded={enchantment.name === 'Shielded'}
-                    class:text-enchantments-restorative={enchantment.name === 'Restorative'}
-                    class:text-enchantments-toxic={enchantment.name === 'Toxic'}
-                    class:text-enchantments-fiery={enchantment.name === 'Fiery'}
-                    class:text-enchantments-shiny={enchantment.name === 'Shiny'}
-                    class:text-enchantments-deadly={enchantment.name === 'Deadly'}
-                    class:text-enchantments-radiant={enchantment.name === 'Radiant'}
-                    class:text-enchantments-obsidian={enchantment.name === 'Obsidian'}
-                    class:text-enchantments-golden={enchantment.name === 'Golden'}
+                    class="text-lg font-semibold mb-2 {getEnchantmentClass(enchantment.name)}"
                 >
                     {enchantment.name}
                 </div>

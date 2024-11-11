@@ -5,6 +5,7 @@
     import { Card } from "flowbite-svelte";
     import { filterTags } from "$lib/utils/filterUtils";
     import CardBadges from "./CardBadges.svelte";
+    import { getEnchantmentClass, getTierClass } from "$lib/utils/classUtils";
 
     const { card }: { card: ClientSideCardItem } = $props();
 
@@ -31,12 +32,7 @@
     >
         {#each (Object.entries(card.tiers) as Entries<typeof card.tiers>).filter(([tierType, tier]) => tierType !== "Legendary" && tier.tooltips.length > 0) as [tierType, tier]}
             <Card size="xl">
-                <div class="text-lg font-semibold mb-2"   
-                    class:text-tiers-bronze={tierType === 'Bronze'}
-                    class:text-tiers-silver={tierType === 'Silver'}
-                    class:text-tiers-gold={tierType === 'Gold'}
-                    class:text-tiers-diamond={tierType === 'Diamond'}
-                >
+                <div class="text-lg font-semibold mb-2 {getTierClass(tierType)}">
                     {tierType}
                 </div>
 
@@ -66,21 +62,7 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-4">
             {#each card.enchantments as enchantment}
                 <Card size="xl">
-                    <div
-                        class="text-lg font-semibold mb-2"
-                        class:text-enchantments-heavy={enchantment.name === 'Heavy'}
-                        class:text-enchantments-icy={enchantment.name === 'Icy'}
-                        class:text-enchantments-turbo={enchantment.name === 'Turbo'}
-                        class:text-enchantments-shielded={enchantment.name === 'Shielded'}
-                        class:text-enchantments-restorative={enchantment.name === 'Restorative'}
-                        class:text-enchantments-toxic={enchantment.name === 'Toxic'}
-                        class:text-enchantments-fiery={enchantment.name === 'Fiery'}
-                        class:text-enchantments-shiny={enchantment.name === 'Shiny'}
-                        class:text-enchantments-deadly={enchantment.name === 'Deadly'}
-                        class:text-enchantments-radiant={enchantment.name === 'Radiant'}
-                        class:text-enchantments-obsidian={enchantment.name === 'Obsidian'}
-                        class:text-enchantments-golden={enchantment.name === 'Golden'}
-                    >
+                    <div class="text-lg font-semibold mb-2 {getEnchantmentClass(enchantment.name)}">
                         {enchantment.name}
                     </div>
 

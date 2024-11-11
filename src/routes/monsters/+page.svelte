@@ -55,7 +55,7 @@
                 {#each monster.items as item}
                     <MonsterCardItem
                         card={item.card}
-                        tier={item.tier}
+                        tierType={item.tierType}
                         enchantmentName={item.enchantmentName}
                     />
                 {/each}
@@ -67,7 +67,7 @@
                     class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
                 >
                     {#each monster.skills as skill}
-                        <MonsterCardSkill card={skill.card} tier={skill.tier} />
+                        <MonsterCardSkill card={skill.card} tierType={skill.tierType} />
                     {/each}
                 </div>
             {/if}

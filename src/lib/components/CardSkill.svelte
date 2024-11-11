@@ -5,6 +5,7 @@
     import { Card } from "flowbite-svelte";
     import { filterTags } from "$lib/utils/filterUtils";
     import CardBadges from "./CardBadges.svelte";
+    import { getTierClass } from "$lib/utils/classUtils";
 
     const { card }: { card: ClientSideCardSkill } = $props();
 
@@ -30,12 +31,7 @@
     >
         {#each (Object.entries(card.tiers) as Entries<typeof card.tiers>).filter(([tierType, tier]) => tierType !== "Legendary" && tier.tooltips.length > 0) as [tierType, tier]}
             <Card size="xl">
-                <div class="text-lg font-semibold mb-2"   
-                    class:text-tiers-bronze={tierType === 'Bronze'}
-                    class:text-tiers-silver={tierType === 'Silver'}
-                    class:text-tiers-gold={tierType === 'Gold'}
-                    class:text-tiers-diamond={tierType === 'Diamond'}
-                >
+                <div class="text-lg font-semibold mb-2 {getTierClass(tierType)}">
                     {tierType}
                 </div>
 

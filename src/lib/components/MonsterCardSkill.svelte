@@ -3,11 +3,12 @@
     import { Card } from "flowbite-svelte";
     import CardBadges from "./CardBadges.svelte";
     import { filterTags } from "$lib/utils/filterUtils";
+    import { getTierClass } from "$lib/utils/classUtils";
 
     const {
         card,
-        tier,
-    }: { card: ClientSideCardSkill; tier: ClientSideTierType } = $props();
+        tierType,
+    }: { card: ClientSideCardSkill; tierType: ClientSideTierType } = $props();
 
     const tags = $derived(filterTags(card.tags, card.hiddenTags));
 </script>
@@ -20,18 +21,12 @@
     <CardBadges primaryBadges={tags.map((text) => ({ text }))} />
 
     <Card size="xl" class="mt-4">
-        <div
-            class="text-lg font-semibold mb-2"
-            class:text-tiers-bronze={tier === "Bronze"}
-            class:text-tiers-silver={tier === "Silver"}
-            class:text-tiers-gold={tier === "Gold"}
-            class:text-tiers-diamond={tier === "Diamond"}
-        >
-            {tier}
+        <div class="text-lg font-semibold mb-2 {getTierClass(tierType)}">
+            {tierType}
         </div>
 
         <div class="mb-2">
-            {#each card.tiers[tier].attributes as attribute}
+            {#each card.tiers[tierType].attributes as attribute}
                 <div>
                     <span class="font-medium">{attribute.name}:</span>
                     {attribute.value}
@@ -39,7 +34,7 @@
                 </div>
             {/each}
 
-            {#each card.tiers[tier].tooltips as tooltip}
+            {#each card.tiers[tierType].tooltips as tooltip}
                 <div>
                     {tooltip}
                 </div>

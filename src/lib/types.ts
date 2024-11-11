@@ -12,9 +12,10 @@ export type ClientSideTier = {
     tooltips: string[];
 };
 
-export type ClientSideEnchantment = {
-    // TODO: This type could be tighter
-    name: string;
+export type EnchantmentType = 'Heavy' | 'Icy' | 'Turbo' | 'Shielded' | 'Restorative' | 'Toxic' | 'Fiery' | 'Shiny' | 'Deadly' | 'Radiant' | 'Obsidian' | 'Golden';
+
+type ClientSideEnchantment = {
+    name: EnchantmentType;
     tooltips: string[];
 };
 
@@ -66,12 +67,11 @@ export type ClientSideMonster = {
     };
     items: {
         card: ClientSideCardItem,
-        tier: ClientSideTierType
-        // TODO: tighten this name
-        enchantmentName: string | undefined;
+        tierType: ClientSideTierType
+        enchantmentName: EnchantmentType | undefined;
     }[],
     skills: {
         card: ClientSideCardSkill,
-        tier: ClientSideTierType
+        tierType: ClientSideTierType
     }[]
 }

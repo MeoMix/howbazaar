@@ -44,7 +44,7 @@ export function parseJson(monstersJson: MonstersJson, cards: ClientSideCard[]): 
                         );
                     }
 
-                    return card ? { card, tier: item.Tier, enchantmentName: item.EnchantmentType ?? undefined } : null;
+                    return card ? { card, tierType: item.Tier, enchantmentName: item.EnchantmentType ?? undefined } : null;
                 }).filter((item) => item !== null),
 
                 // Only include skills with a matching card
@@ -59,7 +59,7 @@ export function parseJson(monstersJson: MonstersJson, cards: ClientSideCard[]): 
                         );
                     }
 
-                    return card ? { card, tier: skill.Tier } : null;
+                    return card ? { card, tierType: skill.Tier } : null;
                 }).filter((skill) => skill !== null),
             };
         })

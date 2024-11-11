@@ -25,9 +25,7 @@ export default {
           silver: '#C0C0C0',
           gold: '#FFD700',
           diamond: '#B9F2FF',
-        },
-        test: {
-          blue: '#B9F2FF'
+          legendary: '#6A0DAD',
         },
         enchantments: {
           heavy: '#4B4B4B',       // Dark gray for Heavy

@@ -23,7 +23,7 @@
         >
     </div>
     <div class="my-2">
-        I'm terminally on the computer, so you should have no trouble reaching
+        I'm terminally online, so you should have no trouble reaching
         me, but I do sleep from 10pm to 6am PST. Feel free to leave me a message
         if I'm not responding.
     </div>
@@ -35,7 +35,11 @@
     <div>
         Tomorrow:
         <ul class="ml-8">
-            <li>Add support for enchantment effects on monster items.</li>
+            <li>
+                <span class="line-through">
+                    Add support for enchantment effects on monster items.
+                </span>
+            </li>
             <li>
                 <span class="line-through"> Add "Clear Filters" button </span>
                 Done!

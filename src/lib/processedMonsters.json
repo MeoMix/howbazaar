@@ -53,7 +53,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       },
       {
         "card": {
@@ -196,7 +196,7 @@
             }
           ]
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       },
       {
         "card": {
@@ -339,7 +339,7 @@
             }
           ]
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       },
       {
         "card": {
@@ -388,7 +388,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       }
     ],
     "skills": [
@@ -445,7 +445,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       }
     ]
   },
@@ -503,7 +503,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Diamond"
+        "tierType": "Diamond"
       },
       {
         "card": {
@@ -642,7 +642,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -733,7 +733,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -865,7 +865,7 @@
             }
           ]
         },
-        "tier": "Diamond"
+        "tierType": "Diamond"
       },
       {
         "card": {
@@ -956,7 +956,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -1086,7 +1086,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -1135,7 +1135,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Diamond"
+        "tierType": "Diamond"
       }
     ],
     "skills": [
@@ -1188,7 +1188,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -1237,7 +1237,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -1292,7 +1292,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       }
     ]
   },
@@ -1350,7 +1350,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       },
       {
         "card": {
@@ -1399,7 +1399,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -1448,7 +1448,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -1497,7 +1497,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Diamond"
+        "tierType": "Diamond"
       },
       {
         "card": {
@@ -1640,7 +1640,7 @@
             }
           ]
         },
-        "tier": "Diamond",
+        "tierType": "Diamond",
         "enchantmentName": "Shiny"
       },
       {
@@ -1784,7 +1784,7 @@
             }
           ]
         },
-        "tier": "Diamond",
+        "tierType": "Diamond",
         "enchantmentName": "Shiny"
       },
       {
@@ -1834,7 +1834,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Diamond"
+        "tierType": "Diamond"
       },
       {
         "card": {
@@ -1883,7 +1883,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -1932,7 +1932,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -1981,7 +1981,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       }
     ],
     "skills": [
@@ -2031,7 +2031,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       },
       {
         "card": {
@@ -2086,7 +2086,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       }
     ]
   },
@@ -2143,7 +2143,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -2243,7 +2243,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -2408,7 +2408,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -2549,7 +2549,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -2692,7 +2692,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -2739,7 +2739,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       }
     ],
     "skills": [
@@ -2786,7 +2786,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -2841,7 +2841,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -2894,7 +2894,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       }
     ]
   },
@@ -2950,7 +2950,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -3087,7 +3087,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -3276,7 +3276,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -3381,7 +3381,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -3521,7 +3521,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -3690,7 +3690,7 @@
             }
           ]
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       },
       {
         "card": {
@@ -3737,7 +3737,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       }
     ],
     "skills": [
@@ -3784,7 +3784,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       }
     ]
   },
@@ -3862,7 +3862,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -3995,7 +3995,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -4145,7 +4145,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -4289,7 +4289,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -4431,7 +4431,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -4563,7 +4563,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -4632,7 +4632,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       }
     ],
     "skills": [
@@ -4681,7 +4681,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       }
     ]
   },
@@ -4739,7 +4739,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       },
       {
         "card": {
@@ -4879,7 +4879,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -5001,7 +5001,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -5122,7 +5122,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -5255,7 +5255,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -5386,7 +5386,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -5526,7 +5526,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -5575,7 +5575,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       }
     ],
     "skills": [
@@ -5624,7 +5624,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       }
     ]
   },
@@ -5762,7 +5762,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -5900,7 +5900,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -6058,7 +6058,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -6192,7 +6192,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -6325,7 +6325,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -6468,7 +6468,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -6610,7 +6610,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -6774,7 +6774,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       }
     ],
     "skills": [
@@ -6820,7 +6820,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -6873,7 +6873,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       }
     ]
   },
@@ -6931,7 +6931,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Diamond"
+        "tierType": "Diamond"
       },
       {
         "card": {
@@ -7070,7 +7070,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -7218,7 +7218,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -7358,7 +7358,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -7497,7 +7497,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -7545,7 +7545,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       }
     ],
     "skills": [
@@ -7596,7 +7596,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       }
     ]
   },
@@ -7654,7 +7654,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       },
       {
         "card": {
@@ -7797,7 +7797,7 @@
             }
           ]
         },
-        "tier": "Bronze",
+        "tierType": "Bronze",
         "enchantmentName": "Toxic"
       },
       {
@@ -7941,7 +7941,7 @@
             }
           ]
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       },
       {
         "card": {
@@ -7990,7 +7990,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       }
     ],
     "skills": [
@@ -8040,7 +8040,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       }
     ]
   },
@@ -8098,7 +8098,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       },
       {
         "card": {
@@ -8229,7 +8229,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -8377,7 +8377,7 @@
             }
           ]
         },
-        "tier": "Silver",
+        "tierType": "Silver",
         "enchantmentName": "Toxic"
       },
       {
@@ -8518,7 +8518,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -8659,7 +8659,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -8794,7 +8794,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       }
     ],
     "skills": [
@@ -8843,7 +8843,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -8894,7 +8894,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       },
       {
         "card": {
@@ -8944,7 +8944,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       }
     ]
   },
@@ -9000,7 +9000,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -9143,7 +9143,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -9307,7 +9307,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -9476,7 +9476,7 @@
             }
           ]
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       },
       {
         "card": {
@@ -9619,7 +9619,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -9759,7 +9759,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -9807,7 +9807,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       }
     ],
     "skills": [
@@ -9856,7 +9856,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -9911,7 +9911,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       }
     ]
   },
@@ -10060,7 +10060,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -10192,7 +10192,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -10303,7 +10303,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -10446,7 +10446,7 @@
             }
           ]
         },
-        "tier": "Gold",
+        "tierType": "Gold",
         "enchantmentName": "Fiery"
       },
       {
@@ -10558,7 +10558,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       }
     ],
     "skills": [
@@ -10602,7 +10602,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Legendary"
+        "tierType": "Legendary"
       },
       {
         "card": {
@@ -10650,7 +10650,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       }
     ]
   },
@@ -10812,7 +10812,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -10970,7 +10970,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -11126,7 +11126,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -11233,7 +11233,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -11389,7 +11389,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -11529,7 +11529,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -11669,7 +11669,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       }
     ],
     "skills": [
@@ -11717,7 +11717,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       }
     ]
   },
@@ -11868,7 +11868,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -12001,7 +12001,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -12121,7 +12121,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -12239,7 +12239,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -12377,7 +12377,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       }
     ],
     "skills": [
@@ -12425,7 +12425,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       }
     ]
   },
@@ -12482,7 +12482,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -12605,7 +12605,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -12738,7 +12738,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -12886,7 +12886,7 @@
             }
           ]
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       },
       {
         "card": {
@@ -13034,7 +13034,7 @@
             }
           ]
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       },
       {
         "card": {
@@ -13167,7 +13167,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -13290,7 +13290,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -13338,7 +13338,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       }
     ],
     "skills": [
@@ -13387,7 +13387,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -13440,7 +13440,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       }
     ]
   },
@@ -13556,7 +13556,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -13663,7 +13663,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -13770,7 +13770,7 @@
             }
           ]
         },
-        "tier": "Diamond"
+        "tierType": "Diamond"
       },
       {
         "card": {
@@ -13895,7 +13895,7 @@
             }
           ]
         },
-        "tier": "Diamond"
+        "tierType": "Diamond"
       },
       {
         "card": {
@@ -14002,7 +14002,7 @@
             }
           ]
         },
-        "tier": "Diamond"
+        "tierType": "Diamond"
       },
       {
         "card": {
@@ -14109,7 +14109,7 @@
             }
           ]
         },
-        "tier": "Diamond"
+        "tierType": "Diamond"
       },
       {
         "card": {
@@ -14234,7 +14234,7 @@
             }
           ]
         },
-        "tier": "Diamond"
+        "tierType": "Diamond"
       },
       {
         "card": {
@@ -14341,7 +14341,7 @@
             }
           ]
         },
-        "tier": "Diamond"
+        "tierType": "Diamond"
       },
       {
         "card": {
@@ -14448,7 +14448,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -14555,7 +14555,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       }
     ],
     "skills": [
@@ -14599,7 +14599,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Diamond"
+        "tierType": "Diamond"
       },
       {
         "card": {
@@ -14654,7 +14654,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -14709,7 +14709,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       }
     ]
   },
@@ -14767,7 +14767,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       },
       {
         "card": {
@@ -14885,7 +14885,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -15022,7 +15022,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -15211,7 +15211,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -15316,7 +15316,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -15474,7 +15474,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       }
     ],
     "skills": [
@@ -15524,7 +15524,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -15579,7 +15579,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -15634,7 +15634,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -15689,7 +15689,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       }
     ]
   },
@@ -15746,7 +15746,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       },
       {
         "card": {
@@ -15891,7 +15891,7 @@
             }
           ]
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       },
       {
         "card": {
@@ -15939,7 +15939,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       }
     ],
     "skills": [
@@ -15991,7 +15991,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       }
     ]
   },
@@ -16140,7 +16140,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -16270,7 +16270,7 @@
             }
           ]
         },
-        "tier": "Diamond"
+        "tierType": "Diamond"
       },
       {
         "card": {
@@ -16394,7 +16394,7 @@
             }
           ]
         },
-        "tier": "Diamond"
+        "tierType": "Diamond"
       },
       {
         "card": {
@@ -16552,7 +16552,7 @@
             }
           ]
         },
-        "tier": "Diamond"
+        "tierType": "Diamond"
       },
       {
         "card": {
@@ -16682,7 +16682,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -16822,7 +16822,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       }
     ],
     "skills": [
@@ -16868,7 +16868,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Diamond"
+        "tierType": "Diamond"
       },
       {
         "card": {
@@ -16923,7 +16923,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Diamond"
+        "tierType": "Diamond"
       },
       {
         "card": {
@@ -16978,7 +16978,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Diamond"
+        "tierType": "Diamond"
       }
     ]
   },
@@ -17036,7 +17036,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -17167,7 +17167,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -17315,7 +17315,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -17458,7 +17458,7 @@
             }
           ]
         },
-        "tier": "Silver",
+        "tierType": "Silver",
         "enchantmentName": "Obsidian"
       },
       {
@@ -17602,7 +17602,7 @@
             }
           ]
         },
-        "tier": "Silver",
+        "tierType": "Silver",
         "enchantmentName": "Obsidian"
       },
       {
@@ -17751,7 +17751,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -17799,7 +17799,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -17848,7 +17848,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       }
     ],
     "skills": [
@@ -17900,7 +17900,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       }
     ]
   },
@@ -18052,7 +18052,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -18234,7 +18234,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -18353,7 +18353,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -18493,7 +18493,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -18635,7 +18635,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -18778,7 +18778,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -18897,7 +18897,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       }
     ],
     "skills": [
@@ -18944,7 +18944,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -18999,7 +18999,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -19052,7 +19052,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       }
     ]
   },
@@ -19104,7 +19104,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Diamond"
+        "tierType": "Diamond"
       },
       {
         "card": {
@@ -19249,7 +19249,7 @@
             }
           ]
         },
-        "tier": "Gold",
+        "tierType": "Gold",
         "enchantmentName": "Toxic"
       },
       {
@@ -19382,7 +19382,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -19534,7 +19534,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -19651,7 +19651,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -19800,7 +19800,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -19947,7 +19947,7 @@
             }
           ]
         },
-        "tier": "Gold",
+        "tierType": "Gold",
         "enchantmentName": "Toxic"
       }
     ],
@@ -19992,7 +19992,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Diamond"
+        "tierType": "Diamond"
       },
       {
         "card": {
@@ -20047,7 +20047,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -20102,7 +20102,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       }
     ]
   },
@@ -20226,7 +20226,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -20360,7 +20360,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -20475,7 +20475,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -20621,7 +20621,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -20763,7 +20763,7 @@
             }
           ]
         },
-        "tier": "Diamond"
+        "tierType": "Diamond"
       },
       {
         "card": {
@@ -20915,7 +20915,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -21014,7 +21014,7 @@
             }
           ]
         },
-        "tier": "Diamond"
+        "tierType": "Diamond"
       }
     ],
     "skills": [
@@ -21061,7 +21061,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -21109,7 +21109,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       }
     ]
   },
@@ -21167,7 +21167,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -21216,7 +21216,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       },
       {
         "card": {
@@ -21313,7 +21313,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -21456,7 +21456,7 @@
             }
           ]
         },
-        "tier": "Silver",
+        "tierType": "Silver",
         "enchantmentName": "Toxic"
       },
       {
@@ -21592,7 +21592,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -21689,7 +21689,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -21831,7 +21831,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -21989,7 +21989,7 @@
             }
           ]
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       },
       {
         "card": {
@@ -22038,7 +22038,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       },
       {
         "card": {
@@ -22087,7 +22087,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       }
     ],
     "skills": [
@@ -22138,7 +22138,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       }
     ]
   },
@@ -22272,7 +22272,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -22415,7 +22415,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -22548,7 +22548,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -22670,7 +22670,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -22801,7 +22801,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       }
     ],
     "skills": []
@@ -22910,7 +22910,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -23025,7 +23025,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -23152,7 +23152,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -23274,7 +23274,7 @@
             }
           ]
         },
-        "tier": "Gold",
+        "tierType": "Gold",
         "enchantmentName": "Icy"
       },
       {
@@ -23402,7 +23402,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       }
     ],
     "skills": [
@@ -23452,7 +23452,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       }
     ]
   },
@@ -23557,7 +23557,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -23689,7 +23689,7 @@
             }
           ]
         },
-        "tier": "Diamond"
+        "tierType": "Diamond"
       },
       {
         "card": {
@@ -23813,7 +23813,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -23965,7 +23965,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -24117,7 +24117,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -24161,7 +24161,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Diamond"
+        "tierType": "Diamond"
       }
     ],
     "skills": [
@@ -24208,7 +24208,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -24255,7 +24255,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       }
     ]
   },
@@ -24406,7 +24406,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -24548,7 +24548,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -24683,7 +24683,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -24816,7 +24816,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -24951,7 +24951,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -25091,7 +25091,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       }
     ],
     "skills": [
@@ -25137,7 +25137,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Diamond"
+        "tierType": "Diamond"
       }
     ]
   },
@@ -25194,7 +25194,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -25362,7 +25362,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -25509,7 +25509,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -25581,7 +25581,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -25631,7 +25631,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -25795,7 +25795,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -25867,7 +25867,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -25915,7 +25915,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       }
     ],
     "skills": [
@@ -25969,7 +25969,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -26024,7 +26024,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       }
     ]
   },
@@ -26081,7 +26081,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -26235,7 +26235,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -26376,7 +26376,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -26424,7 +26424,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       }
     ],
     "skills": [
@@ -26476,7 +26476,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       },
       {
         "card": {
@@ -26524,7 +26524,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       }
     ]
   },
@@ -26582,7 +26582,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -26631,7 +26631,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -26755,7 +26755,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -26869,7 +26869,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -26972,7 +26972,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -27134,7 +27134,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -27183,7 +27183,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -27232,7 +27232,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       }
     ],
     "skills": [
@@ -27281,7 +27281,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       }
     ]
   },
@@ -27359,7 +27359,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -27490,7 +27490,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -27623,7 +27623,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -27757,7 +27757,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -27890,7 +27890,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -27959,7 +27959,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       }
     ],
     "skills": [
@@ -28009,7 +28009,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       }
     ]
   },
@@ -28182,7 +28182,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -28303,7 +28303,7 @@
             }
           ]
         },
-        "tier": "Legendary"
+        "tierType": "Legendary"
       },
       {
         "card": {
@@ -28439,7 +28439,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -28607,7 +28607,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -28762,7 +28762,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -28805,7 +28805,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Diamond"
+        "tierType": "Diamond"
       }
     ],
     "skills": [
@@ -28851,7 +28851,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -28906,7 +28906,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       }
     ]
   },
@@ -28964,7 +28964,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -29095,7 +29095,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -29237,7 +29237,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -29376,7 +29376,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -29516,7 +29516,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -29655,7 +29655,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -29704,7 +29704,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       }
     ],
     "skills": [
@@ -29753,7 +29753,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -29804,7 +29804,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -29853,7 +29853,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       }
     ]
   },
@@ -29910,7 +29910,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       },
       {
         "card": {
@@ -30010,7 +30010,7 @@
             }
           ]
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       },
       {
         "card": {
@@ -30155,7 +30155,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -30284,7 +30284,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -30332,7 +30332,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       }
     ],
     "skills": [
@@ -30382,7 +30382,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       },
       {
         "card": {
@@ -30435,7 +30435,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       }
     ]
   },
@@ -30633,7 +30633,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -30771,7 +30771,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -30960,7 +30960,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -31108,7 +31108,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -31221,7 +31221,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -31358,7 +31358,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -31489,7 +31489,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       }
     ],
     "skills": [
@@ -31535,7 +31535,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       }
     ]
   },
@@ -31593,7 +31593,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -31707,7 +31707,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -31831,7 +31831,7 @@
             }
           ]
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       },
       {
         "card": {
@@ -31880,7 +31880,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       }
     ],
     "skills": [
@@ -31932,7 +31932,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       },
       {
         "card": {
@@ -31985,7 +31985,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       }
     ]
   },
@@ -32042,7 +32042,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -32203,7 +32203,7 @@
             }
           ]
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       },
       {
         "card": {
@@ -32352,7 +32352,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -32494,7 +32494,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -32633,7 +32633,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -32681,7 +32681,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       }
     ],
     "skills": [
@@ -32731,7 +32731,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       }
     ]
   },
@@ -32867,7 +32867,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -32985,7 +32985,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -33126,7 +33126,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -33282,7 +33282,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -33405,7 +33405,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       }
     ],
     "skills": [
@@ -33455,7 +33455,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       }
     ]
   },
@@ -33622,7 +33622,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -33769,7 +33769,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -33953,7 +33953,7 @@
             }
           ]
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       },
       {
         "card": {
@@ -34111,7 +34111,7 @@
             }
           ]
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       },
       {
         "card": {
@@ -34246,7 +34246,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -34400,7 +34400,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -34555,7 +34555,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       }
     ],
     "skills": [
@@ -34603,7 +34603,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       }
     ]
   },
@@ -34744,7 +34744,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -34879,7 +34879,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -35017,7 +35017,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -35146,7 +35146,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -35269,7 +35269,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       }
     ],
     "skills": [
@@ -35320,7 +35320,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       }
     ]
   },
@@ -35462,7 +35462,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -35593,7 +35593,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -35692,7 +35692,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -35790,7 +35790,7 @@
             }
           ]
         },
-        "tier": "Legendary"
+        "tierType": "Legendary"
       },
       {
         "card": {
@@ -35889,7 +35889,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -36002,7 +36002,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -36132,7 +36132,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -36263,7 +36263,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       }
     ],
     "skills": [
@@ -36312,7 +36312,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -36359,7 +36359,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -36409,7 +36409,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       }
     ]
   },
@@ -36467,7 +36467,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       },
       {
         "card": {
@@ -36629,7 +36629,7 @@
             }
           ]
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       },
       {
         "card": {
@@ -36776,7 +36776,7 @@
             }
           ]
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       },
       {
         "card": {
@@ -36824,7 +36824,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       }
     ],
     "skills": [
@@ -36875,7 +36875,7 @@
           "heroes": [],
           "enchantments": []
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       }
     ]
   },
@@ -36932,7 +36932,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -37082,7 +37082,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -37224,7 +37224,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -37357,7 +37357,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -37489,7 +37489,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -37618,7 +37618,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       }
     ],
     "skills": [
@@ -37667,7 +37667,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       }
     ]
   },
@@ -37773,7 +37773,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -37903,7 +37903,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -37998,7 +37998,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -38141,7 +38141,7 @@
             }
           ]
         },
-        "tier": "Diamond"
+        "tierType": "Diamond"
       },
       {
         "card": {
@@ -38276,7 +38276,7 @@
             }
           ]
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       },
       {
         "card": {
@@ -38407,7 +38407,7 @@
             }
           ]
         },
-        "tier": "Diamond"
+        "tierType": "Diamond"
       },
       {
         "card": {
@@ -38538,7 +38538,7 @@
             }
           ]
         },
-        "tier": "Diamond"
+        "tierType": "Diamond"
       },
       {
         "card": {
@@ -38662,7 +38662,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       }
     ],
     "skills": [
@@ -38706,7 +38706,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Diamond"
+        "tierType": "Diamond"
       },
       {
         "card": {
@@ -38761,7 +38761,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       }
     ]
   },
@@ -38818,7 +38818,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -38966,7 +38966,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -39105,7 +39105,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -39247,7 +39247,7 @@
             }
           ]
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       },
       {
         "card": {
@@ -39389,7 +39389,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -39541,7 +39541,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -39589,7 +39589,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       }
     ],
     "skills": [
@@ -39640,7 +39640,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       },
       {
         "card": {
@@ -39687,7 +39687,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       }
     ]
   },
@@ -39744,7 +39744,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -39892,7 +39892,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -40035,7 +40035,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -40174,7 +40174,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       }
     ],
     "skills": [
@@ -40224,7 +40224,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       },
       {
         "card": {
@@ -40274,7 +40274,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       }
     ]
   },
@@ -40331,7 +40331,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -40478,7 +40478,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -40617,7 +40617,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -40757,7 +40757,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -40805,7 +40805,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Diamond"
+        "tierType": "Diamond"
       }
     ],
     "skills": [
@@ -40862,7 +40862,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       }
     ]
   },
@@ -40993,7 +40993,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -41117,7 +41117,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -41269,7 +41269,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -41400,7 +41400,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -41531,7 +41531,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -41671,7 +41671,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       }
     ],
     "skills": [
@@ -41719,7 +41719,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       }
     ]
   },
@@ -41828,7 +41828,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -41966,7 +41966,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -42083,7 +42083,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -42213,7 +42213,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -42319,7 +42319,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -42471,7 +42471,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       }
     ],
     "skills": [
@@ -42518,7 +42518,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Diamond"
+        "tierType": "Diamond"
       },
       {
         "card": {
@@ -42573,7 +42573,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -42628,7 +42628,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       }
     ]
   },
@@ -42777,7 +42777,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -42924,7 +42924,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -43055,7 +43055,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -43189,7 +43189,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -43328,7 +43328,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -43435,7 +43435,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -43560,7 +43560,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       }
     ],
     "skills": [
@@ -43611,7 +43611,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       }
     ]
   },
@@ -43669,7 +43669,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -43801,7 +43801,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -43938,7 +43938,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -44070,7 +44070,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -44213,7 +44213,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -44322,7 +44322,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -44458,7 +44458,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -44501,7 +44501,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Diamond"
+        "tierType": "Diamond"
       },
       {
         "card": {
@@ -44550,7 +44550,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       }
     ],
     "skills": [
@@ -44599,7 +44599,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -44649,7 +44649,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       }
     ]
   },
@@ -44737,7 +44737,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -44816,7 +44816,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -44895,7 +44895,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -44974,7 +44974,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -45113,7 +45113,7 @@
             }
           ]
         },
-        "tier": "Diamond"
+        "tierType": "Diamond"
       },
       {
         "card": {
@@ -45192,7 +45192,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -45271,7 +45271,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -45350,7 +45350,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -45429,7 +45429,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       }
     ],
     "skills": [
@@ -45477,7 +45477,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -45519,7 +45519,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Diamond"
+        "tierType": "Diamond"
       },
       {
         "card": {
@@ -45574,7 +45574,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Diamond"
+        "tierType": "Diamond"
       }
     ]
   },
@@ -45690,7 +45690,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -45827,7 +45827,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -45976,7 +45976,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -46119,7 +46119,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -46262,7 +46262,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -46394,7 +46394,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -46526,7 +46526,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -46662,7 +46662,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       }
     ],
     "skills": [
@@ -46708,7 +46708,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       },
       {
         "card": {
@@ -46757,7 +46757,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       },
       {
         "card": {
@@ -46806,7 +46806,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       }
     ]
   },
@@ -46926,7 +46926,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -47058,7 +47058,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -47190,7 +47190,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -47299,7 +47299,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -47408,7 +47408,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -47525,7 +47525,7 @@
             }
           ]
         },
-        "tier": "Diamond"
+        "tierType": "Diamond"
       }
     ],
     "skills": [
@@ -47567,7 +47567,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Diamond"
+        "tierType": "Diamond"
       },
       {
         "card": {
@@ -47609,7 +47609,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       }
     ]
   },
@@ -47732,7 +47732,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -47863,7 +47863,7 @@
             }
           ]
         },
-        "tier": "Diamond"
+        "tierType": "Diamond"
       },
       {
         "card": {
@@ -47988,7 +47988,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -48106,7 +48106,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       }
     ],
     "skills": [
@@ -48151,7 +48151,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Diamond"
+        "tierType": "Diamond"
       },
       {
         "card": {
@@ -48195,7 +48195,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Diamond"
+        "tierType": "Diamond"
       },
       {
         "card": {
@@ -48245,7 +48245,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Diamond"
+        "tierType": "Diamond"
       }
     ]
   },
@@ -48378,7 +48378,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -48509,7 +48509,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -48572,7 +48572,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -48683,7 +48683,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       }
     ],
     "skills": [
@@ -48727,7 +48727,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Diamond"
+        "tierType": "Diamond"
       }
     ]
   },
@@ -48785,7 +48785,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       },
       {
         "card": {
@@ -48955,7 +48955,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -49103,7 +49103,7 @@
             }
           ]
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       },
       {
         "card": {
@@ -49261,7 +49261,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -49310,7 +49310,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       }
     ],
     "skills": [
@@ -49360,7 +49360,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       }
     ]
   },
@@ -49500,7 +49500,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -49630,7 +49630,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -49752,7 +49752,7 @@
             }
           ]
         },
-        "tier": "Diamond"
+        "tierType": "Diamond"
       },
       {
         "card": {
@@ -49852,7 +49852,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -49987,7 +49987,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -50118,7 +50118,7 @@
             }
           ]
         },
-        "tier": "Diamond"
+        "tierType": "Diamond"
       },
       {
         "card": {
@@ -50251,7 +50251,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -50391,7 +50391,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       }
     ],
     "skills": [
@@ -50440,7 +50440,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -50485,7 +50485,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       }
     ]
   },
@@ -50633,7 +50633,7 @@
             }
           ]
         },
-        "tier": "Bronze",
+        "tierType": "Bronze",
         "enchantmentName": "Restorative"
       },
       {
@@ -50683,7 +50683,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -50817,7 +50817,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -50866,7 +50866,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -51005,7 +51005,7 @@
             }
           ]
         },
-        "tier": "Bronze",
+        "tierType": "Bronze",
         "enchantmentName": "Restorative"
       }
     ],
@@ -51054,7 +51054,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -51109,7 +51109,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       }
     ]
   },
@@ -51168,7 +51168,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -51318,7 +51318,7 @@
             }
           ]
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       },
       {
         "card": {
@@ -51455,7 +51455,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -51592,7 +51592,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       }
     ],
     "skills": [
@@ -51643,7 +51643,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       },
       {
         "card": {
@@ -51693,7 +51693,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       }
     ]
   },
@@ -51826,7 +51826,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -51926,7 +51926,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -52053,7 +52053,7 @@
             }
           ]
         },
-        "tier": "Legendary"
+        "tierType": "Legendary"
       },
       {
         "card": {
@@ -52177,7 +52177,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -52339,7 +52339,7 @@
             }
           ]
         },
-        "tier": "Diamond"
+        "tierType": "Diamond"
       }
     ],
     "skills": [
@@ -52385,7 +52385,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Diamond"
+        "tierType": "Diamond"
       },
       {
         "card": {
@@ -52440,7 +52440,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Diamond"
+        "tierType": "Diamond"
       },
       {
         "card": {
@@ -52490,7 +52490,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       }
     ]
   },
@@ -52616,7 +52616,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -52759,7 +52759,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -52902,7 +52902,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -53051,7 +53051,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -53175,7 +53175,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -53307,7 +53307,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -53422,7 +53422,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       }
     ],
     "skills": [
@@ -53467,7 +53467,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Diamond"
+        "tierType": "Diamond"
       },
       {
         "card": {
@@ -53517,7 +53517,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       }
     ]
   },
@@ -53715,7 +53715,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -53852,7 +53852,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -54041,7 +54041,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -54205,7 +54205,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -54355,7 +54355,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -54505,7 +54505,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -54622,7 +54622,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -54719,7 +54719,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -54867,7 +54867,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       }
     ],
     "skills": [
@@ -54913,7 +54913,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Diamond"
+        "tierType": "Diamond"
       },
       {
         "card": {
@@ -54968,7 +54968,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -55023,7 +55023,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       }
     ]
   },
@@ -55081,7 +55081,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       },
       {
         "card": {
@@ -55218,7 +55218,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -55309,7 +55309,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -55400,7 +55400,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -55491,7 +55491,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -55582,7 +55582,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -55631,7 +55631,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       }
     ],
     "skills": [
@@ -55681,7 +55681,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       },
       {
         "card": {
@@ -55733,7 +55733,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       }
     ]
   },
@@ -55791,7 +55791,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       },
       {
         "card": {
@@ -55955,7 +55955,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -56103,7 +56103,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -56251,7 +56251,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -56415,7 +56415,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -56464,7 +56464,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       }
     ],
     "skills": [
@@ -56519,7 +56519,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       }
     ]
   },
@@ -56576,7 +56576,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       },
       {
         "card": {
@@ -56718,7 +56718,7 @@
             }
           ]
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       },
       {
         "card": {
@@ -56854,7 +56854,7 @@
             }
           ]
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       }
     ],
     "skills": []
@@ -57003,7 +57003,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -57141,7 +57141,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -57284,7 +57284,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -57427,7 +57427,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -57574,7 +57574,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -57704,7 +57704,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       }
     ],
     "skills": [
@@ -57754,7 +57754,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       }
     ]
   },
@@ -57813,7 +57813,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Diamond"
+        "tierType": "Diamond"
       },
       {
         "card": {
@@ -57954,7 +57954,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -58103,7 +58103,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -58239,7 +58239,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -58384,7 +58384,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -58501,7 +58501,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -58551,7 +58551,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Diamond"
+        "tierType": "Diamond"
       }
     ],
     "skills": [
@@ -58601,7 +58601,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -58651,7 +58651,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       }
     ]
   },
@@ -58792,7 +58792,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -58940,7 +58940,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -59088,7 +59088,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -59237,7 +59237,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -59382,7 +59382,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       }
     ],
     "skills": [
@@ -59431,7 +59431,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -59478,7 +59478,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       }
     ]
   },
@@ -59586,7 +59586,7 @@
             }
           ]
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       },
       {
         "card": {
@@ -59728,7 +59728,7 @@
             }
           ]
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       },
       {
         "card": {
@@ -59875,7 +59875,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -60027,7 +60027,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -60159,7 +60159,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       }
     ],
     "skills": [
@@ -60210,7 +60210,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       }
     ]
   },
@@ -60268,7 +60268,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       },
       {
         "card": {
@@ -60405,7 +60405,7 @@
             }
           ]
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       },
       {
         "card": {
@@ -60454,7 +60454,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       }
     ],
     "skills": []
@@ -60513,7 +60513,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       },
       {
         "card": {
@@ -60562,7 +60562,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       },
       {
         "card": {
@@ -60710,7 +60710,7 @@
             }
           ]
         },
-        "tier": "Bronze",
+        "tierType": "Bronze",
         "enchantmentName": "Fiery"
       },
       {
@@ -60859,7 +60859,7 @@
             }
           ]
         },
-        "tier": "Bronze",
+        "tierType": "Bronze",
         "enchantmentName": "Fiery"
       },
       {
@@ -60909,7 +60909,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       },
       {
         "card": {
@@ -60957,7 +60957,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       }
     ],
     "skills": [
@@ -61007,7 +61007,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Bronze"
+        "tierType": "Bronze"
       }
     ]
   },
@@ -61065,7 +61065,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -61205,7 +61205,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -61320,7 +61320,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -61469,7 +61469,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -61610,7 +61610,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -61751,7 +61751,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -61800,7 +61800,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       }
     ],
     "skills": [
@@ -61848,7 +61848,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       }
     ]
   },
@@ -61987,7 +61987,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -62119,7 +62119,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -62236,7 +62236,7 @@
             }
           ]
         },
-        "tier": "Legendary"
+        "tierType": "Legendary"
       },
       {
         "card": {
@@ -62368,7 +62368,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -62481,7 +62481,7 @@
             }
           ]
         },
-        "tier": "Diamond"
+        "tierType": "Diamond"
       }
     ],
     "skills": [
@@ -62528,7 +62528,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -62573,7 +62573,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       }
     ]
   },
@@ -62728,7 +62728,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -62898,7 +62898,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -63050,7 +63050,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -63208,7 +63208,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -63343,7 +63343,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       },
       {
         "card": {
@@ -63501,7 +63501,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -63659,7 +63659,7 @@
             }
           ]
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -63794,7 +63794,7 @@
             }
           ]
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       }
     ],
     "skills": [
@@ -63843,7 +63843,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Silver"
+        "tierType": "Silver"
       },
       {
         "card": {
@@ -63888,7 +63888,7 @@
           ],
           "enchantments": []
         },
-        "tier": "Gold"
+        "tierType": "Gold"
       }
     ]
   }
