@@ -1,6 +1,6 @@
 <script lang="ts">
     import { Label, Button, Toggle } from "flowbite-svelte";
-    
+
     type OptionType = string | number;
 
     let {
@@ -15,7 +15,7 @@
         mustMatchAll?: boolean;
     } = $props();
 
-    const handleSelection = (selectedArray: string[], item: string) => {
+    const handleSelection = (selectedArray: OptionType[], item: OptionType) => {
         if (selectedArray.includes(item)) {
             return selectedArray.filter((i) => i !== item);
         } else {

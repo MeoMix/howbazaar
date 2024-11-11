@@ -1,11 +1,11 @@
-import type { ClientSideCardItem, ClientSideCardSkill, ClientSideMonster, ClientSideTier, ClientSideTierType } from "$lib/types";
+import type { ClientSideCardItem, ClientSideCardSkill, ClientSideHero, ClientSideHiddenTag, ClientSideMonster, ClientSideSize, ClientSideTag, ClientSideTierType } from "$lib/types";
 import type { Entries } from "type-fest";
 
 // TODO: if this diverges any more maybe separate entirely
 export function prepareItemAndSkillFilterOptions(cards: (ClientSideCardItem | ClientSideCardSkill)[]) {
     const heroOptions = ["Vanessa", "Pygmalien", "Dooley", "Jules", "Stelle", "Mak", "Common"];
     const minimumTierOptions = ["Bronze", "Silver", "Gold", "Diamond"];
-    const sizeOptions = ["Small", "Medium", "Large"];
+    const sizeOptions: ClientSideSize[] = ["Small", "Medium", "Large"];
     const tagOptions = Array.from(
         new Set(cards.flatMap((card) => filterTags(card.tags, card.hiddenTags)))
     ).sort();
@@ -21,10 +21,10 @@ export function prepareItemAndSkillFilterOptions(cards: (ClientSideCardItem | Cl
 // TODO: These types could be tighter
 export function filterItemAndSkillCards<T extends ClientSideCardItem | ClientSideCardSkill>(
     cards: T[],
-    selectedHeroes: string[],
-    selectedTiers: string[],
-    selectedTags: string[],
-    selectedSizes: string[],
+    selectedHeroes: ClientSideHero[],
+    selectedTiers: ClientSideTierType[],
+    selectedTags: (ClientSideTag | ClientSideHiddenTag)[],
+    selectedSizes: ClientSideSize[],
     searchText: string,
     isSearchNameOnly: boolean,
     mustMatchAllTags: boolean

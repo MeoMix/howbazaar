@@ -1,5 +1,5 @@
 <script lang="ts">
-    import type { ClientSideCard, ClientSideCardSkill } from "$lib/types";
+    import type { ClientSideCard, ClientSideCardSkill, ClientSideHero, ClientSideHiddenTag, ClientSideSize, ClientSideTag, ClientSideTierType } from "$lib/types";
     import CardSkill from "$lib/components/CardSkill.svelte";
     import {
         filterItemAndSkillCards,
@@ -18,11 +18,11 @@
 
     const sizeOptions: string[] = [];
 
-    let selectedHeroes = $state([] as string[]);
-    let selectedTiers = $state([] as string[]);
-    let selectedTags = $state([] as string[]);
+    let selectedHeroes = $state([] as ClientSideHero[]);
+    let selectedTiers = $state([] as ClientSideTierType[]);
+    let selectedTags = $state([] as (ClientSideTag | ClientSideHiddenTag)[]);
     let mustMatchAllTags = $state(false);
-    let selectedSizes = $state([] as string[]);
+    let selectedSizes = $state([] as ClientSideSize[]);
     let searchText = $state("");
     let isSearchNameOnly = $state(false);
 

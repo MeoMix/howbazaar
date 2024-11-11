@@ -1,6 +1,6 @@
-import type { EnchantmentType, ClientSideTierType } from "$lib/types";
+import type { ClientSideEnchantmentType, ClientSideTierType } from "$lib/types";
 
-export function getEnchantmentClass(enchantmentName: EnchantmentType) {
+export function getEnchantmentClass(enchantmentName: ClientSideEnchantmentType) {
     const enchantmentClasses = {
         Heavy: 'text-enchantments-heavy',
         Icy: 'text-enchantments-icy',
