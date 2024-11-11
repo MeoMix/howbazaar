@@ -35,9 +35,7 @@ export function filterItemAndSkillCards<T extends { heroes: string[]; startingTi
     selectedTags: string[],
     selectedSizes: string[],
     searchText: string,
-    includeTitle: boolean,
-    includeNonEnchantmentText: boolean,
-    includeEnchantmentText: boolean,
+    isSearchNameOnly: boolean,
     mustMatchAllTags: boolean
 ): T[] {
     const lowerSearchText = searchText.toLowerCase();
@@ -70,29 +68,21 @@ export function filterItemAndSkillCards<T extends { heroes: string[]; startingTi
         const validTiers = card.tiers ? (Object.entries(card.tiers) as Entries<typeof card.tiers>).filter(([tierType, tier]) => tierType !== "Legendary" && tier.tooltips.length !== 0) : [];
 
         const matchesSearchText = lowerSearchText === '' || (
-            // If all are false, treat them as if they are all true
-            (includeTitle || includeNonEnchantmentText || includeEnchantmentText || (
-                includeTitle = true,
-                includeNonEnchantmentText = true,
-                includeEnchantmentText = true
-            )) &&
-            (
-                (includeTitle && card.name.toLowerCase().includes(lowerSearchText)) ||
-                (includeNonEnchantmentText && (
+            isSearchNameOnly
+                ? card.name.toLowerCase().includes(lowerSearchText)
+                : (
+                    card.name.toLowerCase().includes(lowerSearchText) ||
                     card.tooltips?.some(tip => tip.toLowerCase().includes(lowerSearchText)) ||
                     card.tags?.some(tag => tag.toLowerCase().includes(lowerSearchText)) ||
                     card.hiddenTags?.some(hiddenTag => hiddenTag.toLowerCase().includes(lowerSearchText)) ||
                     card.size?.toLowerCase().includes(lowerSearchText) ||
                     card.heroes?.some(hero => hero.toLowerCase().includes(lowerSearchText)) ||
-                    validTiers.some(([tierName]) => tierName.toLowerCase().includes(lowerSearchText))
-                )) ||
-                (includeEnchantmentText && (
+                    validTiers.some(([tierName]) => tierName.toLowerCase().includes(lowerSearchText)) ||
                     card.enchantments?.some(e =>
                         e.name.toLowerCase().includes(lowerSearchText) ||
                         e.tooltips.some(tip => tip.toLowerCase().includes(lowerSearchText))
                     )
-                ))
-            )
+                )
         );
 
         return matchesHero && matchesTier && matchesTag && matchesSizes && matchesSearchText;

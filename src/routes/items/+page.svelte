@@ -23,9 +23,7 @@
     let mustMatchAllTags = $state(false);
     let selectedSizes = $state([] as string[]);
     let searchText = $state("");
-    let includeTitle = $state(false);
-    let includeNonEnchantmentText = $state(false);
-    let includeEnchantmentText = $state(false);
+    let isSearchNameOnly = $state(false);
 
     const filteredCards = $derived(
         filterItemAndSkillCards(
@@ -35,9 +33,7 @@
             selectedTags,
             selectedSizes,
             searchText,
-            includeTitle,
-            includeNonEnchantmentText,
-            includeEnchantmentText,
+            isSearchNameOnly,
             mustMatchAllTags,
         ),
     );
@@ -71,7 +67,7 @@
     onMount(async () => {
         const hash = window.location.hash.slice(1);
         if (hash) {
-            includeTitle = true;
+            isSearchNameOnly = true;
             searchText = hash.replace("_", " ");
 
             // Wait until Svelte has updated the DOM
@@ -91,9 +87,7 @@
         mustMatchAllTags = false;
         selectedSizes = [];
         searchText = "";
-        includeTitle = false;
-        includeNonEnchantmentText = false;
-        includeEnchantmentText = false;
+        isSearchNameOnly = false;
     }
 </script>
 
@@ -106,34 +100,13 @@
     <div class="flex gap-2 mt-2">
         <Button
             size="xs"
-            outline={!includeTitle}
+            outline={!isSearchNameOnly}
             pill
-            color={includeTitle ? "primary" : "light"}
-            on:click={() => (includeTitle = !includeTitle)}
+            color={isSearchNameOnly ? "primary" : "light"}
+            on:click={() => (isSearchNameOnly = !isSearchNameOnly)}
             class="transition-colors focus:outline-none border-2"
         >
-            Include Title
-        </Button>
-        <Button
-            size="xs"
-            outline={!includeNonEnchantmentText}
-            pill
-            color={includeNonEnchantmentText ? "primary" : "light"}
-            on:click={() =>
-                (includeNonEnchantmentText = !includeNonEnchantmentText)}
-            class="transition-colors focus:outline-none border-2"
-        >
-            Include Non-Enchantment Text
-        </Button>
-        <Button
-            size="xs"
-            outline={!includeEnchantmentText}
-            pill
-            color={includeEnchantmentText ? "primary" : "light"}
-            on:click={() => (includeEnchantmentText = !includeEnchantmentText)}
-            class="transition-colors focus:outline-none border-2"
-        >
-            Include Enchantment Text
+            Name Only
         </Button>
     </div>
 </div>
