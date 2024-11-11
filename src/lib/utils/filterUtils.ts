@@ -3,21 +3,12 @@ import type { Entries } from "type-fest";
 
 // TODO: if this diverges any more maybe separate entirely
 export function prepareItemAndSkillFilterOptions(cards: (ClientSideCardItem | ClientSideCardSkill)[]) {
-    const uniqueHeroes = Array.from(
-        new Set(cards.flatMap((card) => card.heroes))
-    );
-    const heroOptions = ["Vanessa", "Dooley", "Pygmalien",
-        ...uniqueHeroes.filter(hero => !["Vanessa", "Dooley", "Pygmalien", "Common"].includes(hero)),
-        "Common"
-    ];
-
+    const heroOptions = ["Vanessa", "Pygmalien", "Dooley", "Jules", "Stelle", "Mak", "Common"];
+    const minimumTierOptions = ["Bronze", "Silver", "Gold", "Diamond"];
+    const sizeOptions = ["Small", "Medium", "Large"];
     const tagOptions = Array.from(
         new Set(cards.flatMap((card) => filterTags(card.tags, card.hiddenTags)))
     ).sort();
-
-    const minimumTierOptions = ["Bronze", "Silver", "Gold", "Diamond"];
-
-    const sizeOptions = ["Small", "Medium", "Large"];
 
     return {
         heroOptions,

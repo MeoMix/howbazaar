@@ -45,14 +45,6 @@
         if (hash) {
             isSearchNameOnly = true;
             searchText = hash.replace("_", " ");
-
-            // Wait until Svelte has updated the DOM
-            // await tick();
-
-            // // Then scroll into view
-            // document
-            //     .getElementById(hash)
-            //     ?.scrollIntoView({ behavior: "instant" });
         }
     });
 </script>
@@ -94,6 +86,12 @@
         options={minimumTierOptions}
         bind:selectedOptions={selectedTiers}
     />
+    <CardFilter
+        label="Tags"
+        options={tagOptions}
+        bind:selectedOptions={selectedTags}
+        bind:mustMatchAll={mustMatchAllTags}
+    />
     {#if sizeOptions.length > 0}
         <CardFilter
             label="Sizes"
@@ -101,12 +99,6 @@
             bind:selectedOptions={selectedSizes}
         />
     {/if}
-    <CardFilter
-        label="Tags"
-        options={tagOptions}
-        bind:selectedOptions={selectedTags}
-        bind:mustMatchAll={mustMatchAllTags}
-    />
 </div>
 
 <Button class="mb-4" outline on:click={clearSearch} color="dark"
