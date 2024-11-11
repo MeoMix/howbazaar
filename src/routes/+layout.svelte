@@ -37,7 +37,7 @@
          <span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white pl-4">
              How Bazaar
          </span>
-        </NavBrand> 
+        </NavBrand>
  
         <div class="flex items-center ml-auto">
             <DarkMode class="inline-block dark:hover:text-white hover:text-gray-900" />
@@ -60,7 +60,7 @@
                 {@render children()}
             </TabItem>
 
-            <TabItem title="Contact Website Developer / Upcoming Features" open={activeTabName === "contact"} on:click={() => setTab("contact")}>
+            <TabItem title="Contact & Upcoming Features" open={activeTabName === "contact"} on:click={() => setTab("contact")}>
                 {@render children()}
             </TabItem>
         </Tabs>

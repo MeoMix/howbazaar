@@ -81,8 +81,6 @@
     <div class="text-lg">
         {#if visibleCards.length === 0}
             No Items Found. Check Your Search.
-        {:else}
-            {filteredCards.length} Item{filteredCards.length === 1 ? "" : "s"} Found
         {/if}
     </div>
 
