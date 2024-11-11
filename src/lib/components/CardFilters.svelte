@@ -37,7 +37,7 @@
     />
     {#if sizeOptions.length > 0}
         <CardFilter
-            label="Sizes Tiers"
+            label="Sizes"
             options={sizeOptions}
             bind:selectedOptions={selectedSizes}
         />

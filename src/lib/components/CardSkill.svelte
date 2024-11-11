@@ -30,7 +30,7 @@
         class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
     >
         {#each (Object.entries(card.tiers) as Entries<typeof card.tiers>).filter(([tierType, tier]) => tierType !== "Legendary" && tier.tooltips.length > 0) as [tierType, tier]}
-            <Card size="xl">
+            <Card size="xl" padding="sm">
                 <div class="text-lg font-semibold mb-2 {getTierClass(tierType)}">
                     {tierType}
                 </div>

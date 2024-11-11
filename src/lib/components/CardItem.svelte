@@ -31,7 +31,7 @@
         class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
     >
         {#each (Object.entries(card.tiers) as Entries<typeof card.tiers>).filter(([tierType, tier]) => tierType !== "Legendary" && tier.tooltips.length > 0) as [tierType, tier]}
-            <Card size="xl">
+            <Card size="xl" padding="sm">
                 <div class="text-lg font-semibold mb-2 {getTierClass(tierType)}">
                     {tierType}
                 </div>
@@ -61,7 +61,7 @@
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-4">
             {#each card.enchantments as enchantment}
-                <Card size="xl">
+                <Card size="xl" padding="sm">
                     <div class="text-lg font-semibold mb-2 {getEnchantmentClass(enchantment.name)}">
                         {enchantment.name}
                     </div>

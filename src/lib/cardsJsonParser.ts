@@ -300,6 +300,31 @@ function getDisplayedTooltips(tooltips: string[], abilities: Ability[], auras: A
     return displayedTooltips;
 }
 
+function mergeCannotBeStrings(tooltips: string[]) {
+    const cannotBeSet = new Set();
+    const result = [];
+
+    tooltips.forEach(tooltip => {
+        if (tooltip.startsWith("Cannot be ")) {
+            cannotBeSet.add(tooltip.replace("Cannot be ", ""));
+        } else {
+            result.push(tooltip);
+        }
+    });
+
+    if (cannotBeSet.size > 0) {
+        const modifiers = Array.from(cannotBeSet);
+        const mergedCannotBe =
+            "Cannot be " +
+            (modifiers.length > 1
+                ? modifiers.slice(0, -1).join(", ") + ", or " + modifiers.slice(-1)
+                : modifiers[0]);
+        result.push(mergedCannotBe);
+    }
+
+    return result;
+}
+
 type ValidItemOrSkillCard = Card & { Tiers: Tiers, Type: "Item" | "Skill", Localization: { Title: { Text: string } } };
 type ValidCombatEncounterCard = Card & { Type: "CombatEncounter", Localization: { Title: { Text: string } }, CombatantType: { MonsterTemplateId: string; } };
 
@@ -497,6 +522,8 @@ function parseItemsAndSkills(cardsJson: CardsJson): ClientSideCard[] {
                 if (enchantmentName === "Radiant") {
                     tooltips.push("Cannot be Destroyed");
                 }
+
+                tooltips = mergeCannotBeStrings(tooltips);
 
                 // TODO: Do this intelligently not patch fix
                 if (card.Localization.Title.Text === "Open Sign" && enchantmentName === "Deadly") {

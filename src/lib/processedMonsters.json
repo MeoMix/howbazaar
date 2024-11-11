@@ -183,9 +183,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -326,9 +324,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -635,9 +631,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -852,9 +846,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -1079,9 +1071,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -1627,9 +1617,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -1771,9 +1759,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -2236,9 +2222,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -2395,9 +2379,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -2542,9 +2524,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -2685,9 +2665,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -3080,9 +3058,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -3263,9 +3239,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -3374,9 +3348,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -3508,9 +3480,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -3677,9 +3647,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -3855,9 +3823,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -3988,9 +3954,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -4132,9 +4096,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -4276,9 +4238,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -4424,9 +4384,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -4556,9 +4514,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -4625,9 +4581,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -4872,9 +4826,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -4994,9 +4946,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -5115,9 +5065,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -5248,9 +5196,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -5379,9 +5325,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -5519,9 +5463,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -5749,9 +5691,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -5887,9 +5827,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -6051,9 +5989,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -6185,9 +6121,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -6318,9 +6252,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -6455,9 +6387,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -6603,9 +6533,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -6761,9 +6689,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -7063,9 +6989,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -7205,9 +7129,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -7351,9 +7273,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -7490,9 +7410,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -7784,9 +7702,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -7928,9 +7844,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -8216,9 +8130,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -8364,9 +8276,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -8511,9 +8421,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -8652,9 +8560,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -8787,9 +8693,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -9130,9 +9034,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -9294,9 +9196,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -9463,9 +9363,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -9612,9 +9510,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -9746,9 +9642,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -10047,9 +9941,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -10179,9 +10071,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -10296,9 +10186,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -10433,9 +10321,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -10551,9 +10437,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -10799,9 +10683,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -10957,9 +10839,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -11119,9 +10999,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -11226,9 +11104,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -11382,9 +11258,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -11522,9 +11396,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -11662,9 +11534,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -11861,9 +11731,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -11994,9 +11862,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -12232,9 +12098,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -12364,9 +12228,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -12598,9 +12460,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -12731,9 +12591,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -12873,9 +12731,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -13021,9 +12877,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -13160,9 +13014,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -13283,9 +13135,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -13549,9 +13399,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -13656,9 +13504,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -13763,9 +13609,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -13882,9 +13726,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -13995,9 +13837,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -14102,9 +13942,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -14221,9 +14059,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -14334,9 +14170,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -14441,9 +14275,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -14548,9 +14380,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -14878,9 +14708,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -15015,9 +14843,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -15198,9 +15024,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -15309,9 +15133,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -15467,9 +15289,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -15884,9 +15704,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -16133,9 +15951,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -16257,9 +16073,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -16381,9 +16195,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -16545,9 +16357,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -16669,9 +16479,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -16815,9 +16623,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -17160,9 +16966,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -17302,9 +17106,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -17445,9 +17247,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -17589,9 +17389,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -17738,9 +17536,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -18045,9 +17841,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -18227,9 +18021,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -18346,9 +18138,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -18480,9 +18270,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -18622,9 +18410,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -18765,9 +18551,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -18890,9 +18674,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -19236,9 +19018,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -19369,9 +19149,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -19521,9 +19299,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -19644,9 +19420,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -19787,9 +19561,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -19934,9 +19706,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -20219,9 +19989,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -20353,9 +20121,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -20468,9 +20234,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -20608,9 +20372,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -20750,9 +20512,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -20908,9 +20668,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -21306,9 +21064,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -21443,9 +21199,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -21585,9 +21339,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -21682,9 +21434,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -21824,9 +21574,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -21982,9 +21730,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -22265,9 +22011,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -22408,9 +22152,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -22541,9 +22283,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -22663,9 +22403,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -22788,9 +22526,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -23018,9 +22754,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -23145,9 +22879,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -23267,9 +22999,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -23395,9 +23125,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -23550,9 +23278,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -23676,9 +23402,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -23806,9 +23530,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -23952,9 +23674,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -24110,9 +23830,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -24399,9 +24117,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -24535,9 +24251,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -24676,9 +24390,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -24809,9 +24521,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -24944,9 +24654,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -25084,9 +24792,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -25349,9 +25055,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -25496,9 +25200,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -25782,9 +25484,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -26222,9 +25922,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -26369,9 +26067,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -26748,9 +26444,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -26856,9 +26550,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -26965,9 +26657,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -27127,9 +26817,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -27352,9 +27040,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -27483,9 +27169,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -27616,9 +27300,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -27750,9 +27432,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -27883,9 +27563,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -27952,9 +27630,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -28169,9 +27845,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -28290,9 +27964,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -28432,9 +28104,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -28594,9 +28264,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -28755,9 +28423,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -29082,9 +28748,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -29230,9 +28894,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -29369,9 +29031,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -29509,9 +29169,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -29648,9 +29306,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -30003,9 +29659,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -30142,9 +29796,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -30277,9 +29929,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -30620,9 +30270,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -30758,9 +30406,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -30947,9 +30593,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -31095,9 +30739,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -31214,9 +30856,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -31351,9 +30991,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -31482,9 +31120,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -31694,9 +31330,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -31824,9 +31458,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -32196,9 +31828,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -32339,9 +31969,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -32487,9 +32115,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -32620,9 +32246,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -32860,9 +32484,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -32978,9 +32600,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -33113,9 +32733,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -33275,9 +32893,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -33398,9 +33014,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -33609,9 +33223,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -33762,9 +33374,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -33940,9 +33550,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -34104,9 +33712,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -34239,9 +33845,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -34387,9 +33991,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -34542,9 +34144,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -34731,9 +34331,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -34872,9 +34470,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -35004,9 +34600,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -35133,9 +34727,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -35262,9 +34854,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -35455,9 +35045,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -35586,9 +35174,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -35783,9 +35369,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -35995,9 +35579,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -36125,9 +35707,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -36256,9 +35836,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -36622,9 +36200,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -36763,9 +36339,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -37069,9 +36643,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -37217,9 +36789,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -37344,9 +36914,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -37476,9 +37044,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -37605,9 +37171,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -37766,9 +37330,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -37896,9 +37458,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -38128,9 +37688,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -38269,9 +37827,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -38400,9 +37956,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -38531,9 +38085,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -38655,9 +38207,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -38953,9 +38503,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -39092,9 +38640,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -39240,9 +38786,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -39382,9 +38926,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -39534,9 +39076,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -39879,9 +39419,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -40028,9 +39566,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -40161,9 +39697,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -40465,9 +39999,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -40610,9 +40142,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -40750,9 +40280,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -40986,9 +40514,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -41110,9 +40636,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -41262,9 +40786,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -41393,9 +40915,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -41518,9 +41038,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -41664,9 +41182,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -41821,9 +41337,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -41953,9 +41467,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -42076,9 +41588,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -42200,9 +41710,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -42312,9 +41820,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -42464,9 +41970,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -42770,9 +42274,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -42917,9 +42419,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -43048,9 +42548,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -43182,9 +42680,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -43315,9 +42811,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -43428,9 +42922,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -43553,9 +43045,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -43788,9 +43278,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -43925,9 +43413,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -44063,9 +43549,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -44206,9 +43690,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -44309,9 +43791,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -44451,9 +43931,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -45100,9 +44578,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -45683,9 +45159,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -45814,9 +45288,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -45963,9 +45435,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -46112,9 +45582,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -46255,9 +45723,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -46381,9 +45847,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -46513,9 +45977,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -46655,9 +46117,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -46919,9 +46379,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -47051,9 +46509,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -47183,9 +46639,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -47286,9 +46740,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -47395,9 +46847,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -47518,9 +46968,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -47725,9 +47173,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -47850,9 +47296,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -47981,9 +47425,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -48099,9 +47541,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -48365,9 +47805,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -48502,9 +47940,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -48676,9 +48112,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -48942,9 +48376,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -49090,9 +48522,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -49254,9 +48684,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -49493,9 +48921,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -49623,9 +49049,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -49745,9 +49169,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -49845,9 +49267,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -49980,9 +49400,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -50111,9 +49529,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -50244,9 +49660,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -50384,9 +49798,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -50626,9 +50038,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -50810,9 +50220,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -50998,9 +50406,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -51305,9 +50711,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -51442,9 +50846,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -51579,9 +50981,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -51819,9 +51219,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -51919,9 +51317,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -52040,9 +51436,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -52170,9 +51564,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -52332,9 +51724,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -52609,9 +51999,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -52752,9 +52140,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -52895,9 +52281,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -53038,9 +52422,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -53168,9 +52550,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -53294,9 +52674,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -53415,9 +52793,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -53702,9 +53078,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -53845,9 +53219,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -54028,9 +53400,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -54192,9 +53562,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -54342,9 +53710,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -54492,9 +53858,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -54615,9 +53979,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -54712,9 +54074,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -54854,9 +54214,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -55211,9 +54569,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -55942,9 +55298,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -56090,9 +55444,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -56238,9 +55590,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -56402,9 +55752,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -56711,9 +56059,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -56847,9 +56193,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -56990,9 +56334,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -57128,9 +56470,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -57271,9 +56611,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -57414,9 +56752,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -57561,9 +56897,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -57691,9 +57025,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -57947,9 +57279,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -58090,9 +57420,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -58232,9 +57560,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -58371,9 +57697,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -58494,9 +57818,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -58779,9 +58101,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -58927,9 +58247,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -59075,9 +58393,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -59230,9 +58546,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -59369,9 +58683,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -59721,9 +59033,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -59862,9 +59172,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -60014,9 +59322,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -60152,9 +59458,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -60398,9 +59702,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -60697,9 +59999,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -60846,9 +60146,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -61192,9 +60490,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -61307,9 +60603,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -61462,9 +60756,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -61603,9 +60895,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -61744,9 +61034,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -61980,9 +61268,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -62112,9 +61398,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -62229,9 +61513,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -62361,9 +61643,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -62474,9 +61754,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -62721,9 +61999,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -62885,9 +62161,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             },
             {
@@ -63043,9 +62317,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -63201,9 +62473,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -63336,9 +62606,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -63494,9 +62762,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -63652,9 +62918,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]
@@ -63787,9 +63051,7 @@
             {
               "name": "Radiant",
               "tooltips": [
-                "Cannot be Frozen",
-                "Cannot be Slowed",
-                "Cannot be Destroyed"
+                "Cannot be Frozen, Slowed, or Destroyed"
               ]
             }
           ]

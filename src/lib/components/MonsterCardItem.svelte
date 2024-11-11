@@ -34,7 +34,7 @@
         secondaryBadges={tags.map((text) => ({ text }))}
     />
 
-    <Card size="xl" class="mt-4">
+    <Card size="xl" padding="sm" class="mt-4">
         <div class="text-lg font-semibold mb-2 {getTierClass(tierType)}">
             {tierType}
         </div>
@@ -56,7 +56,7 @@
         {/each}
 
         {#if enchantment}
-            <Card size="xl" class="mt-4">
+            <Card size="xl" padding="sm" class="mt-4">
                 <div
                     class="text-lg font-semibold mb-2 {getEnchantmentClass(enchantment.name)}"
                 >
