@@ -63,7 +63,7 @@
     }
 </script>
 
-<div class="mt-8">
+<div class="mt-8 mb-4">
     <ButtonGroup class="w-full">
         <Input
             type="text"
@@ -109,32 +109,32 @@
             Clear Search
         </Button>
     </div>
-</div>
 
-{#if isShowingAdvancedFilters}
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-4">
-        <CardFilter
-            label="Heroes"
-            options={heroOptions}
-            bind:selectedOptions={selectedHeroes}
-        />
-        <CardFilter
-            label="Starting Tiers"
-            options={minimumTierOptions}
-            bind:selectedOptions={selectedTiers}
-        />
-        <CardFilter
-            label="Tags"
-            options={tagOptions}
-            bind:selectedOptions={selectedTags}
-            bind:mustMatchAll={mustMatchAllTags}
-        />
-        {#if sizeOptions.length > 0}
+    {#if isShowingAdvancedFilters}
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
             <CardFilter
-                label="Sizes"
-                options={sizeOptions}
-                bind:selectedOptions={selectedSizes}
+                label="Heroes"
+                options={heroOptions}
+                bind:selectedOptions={selectedHeroes}
             />
-        {/if}
-    </div>
-{/if}
+            <CardFilter
+                label="Starting Tiers"
+                options={minimumTierOptions}
+                bind:selectedOptions={selectedTiers}
+            />
+            <CardFilter
+                label="Tags"
+                options={tagOptions}
+                bind:selectedOptions={selectedTags}
+                bind:mustMatchAll={mustMatchAllTags}
+            />
+            {#if sizeOptions.length > 0}
+                <CardFilter
+                    label="Sizes"
+                    options={sizeOptions}
+                    bind:selectedOptions={selectedSizes}
+                />
+            {/if}
+        </div>
+    {/if}
+</div>
