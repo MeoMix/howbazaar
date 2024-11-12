@@ -27,6 +27,8 @@ export function parseJson(monstersJson: MonstersJson, cards: ClientSideCard[]): 
             }
 
             return {
+                // TODO: careful.. this is cards id not monsters id..
+                cardId: matchingCard.id,
                 name: matchingCard.name,
                 attributes: {
                     level: monster.Player.Attributes.Level,

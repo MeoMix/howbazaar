@@ -1,5 +1,6 @@
 [
   {
+    "cardId": "bb1e3506-3735-4669-be90-915a55a7ee05",
     "name": "Fanged Inglet",
     "attributes": {
       "level": 1,
@@ -446,6 +447,7 @@
     ]
   },
   {
+    "cardId": "e3a8efa1-1dfc-4dd5-a1fe-7daaa8315e18",
     "name": "Infernal",
     "attributes": {
       "level": 9,
@@ -1287,6 +1289,7 @@
     ]
   },
   {
+    "cardId": "47c042ba-707a-4e00-aea2-c1ed2ed880e5",
     "name": "Sabretooth",
     "attributes": {
       "level": 5,
@@ -2077,6 +2080,7 @@
     ]
   },
   {
+    "cardId": "59917a2d-3253-44f4-aaa4-ca30b512eb59",
     "name": "Hakurvian Rocket Trooper",
     "attributes": {
       "level": 6,
@@ -2877,6 +2881,7 @@
     ]
   },
   {
+    "cardId": "ae118438-c54d-4129-98d1-b576e4a4d380",
     "name": "Preening Duelist",
     "attributes": {
       "level": 5,
@@ -3757,6 +3762,7 @@
     ]
   },
   {
+    "cardId": "c472b821-e68b-4567-b7e1-3e63f67936b3",
     "name": "Mod Squad",
     "attributes": {
       "level": 7,
@@ -4640,6 +4646,7 @@
     ]
   },
   {
+    "cardId": "962bf2b2-fc1b-4ad3-9526-15d76d3bb0de",
     "name": "Enclave Weeper",
     "attributes": {
       "level": 8,
@@ -5571,6 +5578,7 @@
     ]
   },
   {
+    "cardId": "d63f985a-2960-408e-97ea-f023d4afd440",
     "name": "Weapons Platform",
     "attributes": {
       "level": 11,
@@ -6804,6 +6812,7 @@
     ]
   },
   {
+    "cardId": "9e637cb7-18cf-460d-9c50-5401ee4be521",
     "name": "Retiree",
     "attributes": {
       "level": 5,
@@ -7519,6 +7528,7 @@
     ]
   },
   {
+    "cardId": "b79845a7-f806-4e7a-9011-d98ebd22a323",
     "name": "Viper",
     "attributes": {
       "level": 1,
@@ -7959,6 +7969,7 @@
     ]
   },
   {
+    "cardId": "3cc29888-4a6b-468e-9cb1-0c6f88f7cb7b",
     "name": "Gorgon Noble",
     "attributes": {
       "level": 7,
@@ -8853,6 +8864,7 @@
     ]
   },
   {
+    "cardId": "38936647-a688-49d1-8e5c-9c2c79f18a18",
     "name": "Scout Trooper",
     "attributes": {
       "level": 5,
@@ -9810,6 +9822,7 @@
     ]
   },
   {
+    "cardId": "608eb88e-c6d8-41c3-ac88-c20aeb185664",
     "name": "Radiant Corsair",
     "attributes": {
       "level": 12,
@@ -10539,6 +10552,7 @@
     ]
   },
   {
+    "cardId": "d29f6522-e0f5-4e3b-87cf-5f4e332962c7",
     "name": "Infernal Frigate",
     "attributes": {
       "level": 9,
@@ -11592,6 +11606,7 @@
     ]
   },
   {
+    "cardId": "f9e17ce4-c82d-44c2-8406-ad33277a3b1c",
     "name": "Sergeant Suds",
     "attributes": {
       "level": 7,
@@ -12292,6 +12307,7 @@
     ]
   },
   {
+    "cardId": "a48cb3e2-1ae2-4d37-aaee-e6f7af7e2404",
     "name": "Cosmic Roc",
     "attributes": {
       "level": 8,
@@ -13295,6 +13311,7 @@
     ]
   },
   {
+    "cardId": "72411b58-e99a-44a9-a43f-9767896c7508",
     "name": "Mr. Moo",
     "attributes": {
       "level": 10,
@@ -14544,6 +14561,7 @@
     ]
   },
   {
+    "cardId": "6129261a-c4e5-4ff9-b057-58ae1ef29bf7",
     "name": "Bloodreef Raider",
     "attributes": {
       "level": 5,
@@ -15514,6 +15532,7 @@
     ]
   },
   {
+    "cardId": "035ace94-61e5-4343-8383-83044ea4e08e",
     "name": "Haunted Kimono",
     "attributes": {
       "level": 1,
@@ -15814,6 +15833,7 @@
     ]
   },
   {
+    "cardId": "8f73d2d6-6071-4464-bb19-8e0783de4df0",
     "name": "Lord Arken",
     "attributes": {
       "level": 15,
@@ -16789,6 +16809,7 @@
     ]
   },
   {
+    "cardId": "78139f32-94b1-4dc6-9ef0-374c3c8863a7",
     "name": "Dire Inglet",
     "attributes": {
       "level": 6,
@@ -17701,6 +17722,7 @@
     ]
   },
   {
+    "cardId": "4ccdd72f-cfce-4ea6-9bda-caabd5b0fbf8",
     "name": "Boss Harrow",
     "attributes": {
       "level": 10,
@@ -18839,6 +18861,7 @@
     ]
   },
   {
+    "cardId": "2b0437f4-6977-4f84-aeb6-6545cbf5632d",
     "name": "Thug",
     "attributes": {
       "level": 8,
@@ -19877,6 +19900,7 @@
     ]
   },
   {
+    "cardId": "58477f3f-70f1-4000-9ad0-9e0f44b42349",
     "name": "Volkas Enforcer",
     "attributes": {
       "level": 12,
@@ -20872,6 +20896,7 @@
     ]
   },
   {
+    "cardId": "224ba8a9-3781-4403-8bfc-527b4e64b8aa",
     "name": "Viper Tyrant",
     "attributes": {
       "level": 7,
@@ -21889,6 +21914,7 @@
     ]
   },
   {
+    "cardId": "3836d71e-c6ea-4ef7-a9c7-ce698001e991",
     "name": "Burninator Bot",
     "attributes": {
       "level": 10,
@@ -22543,6 +22569,7 @@
     "skills": []
   },
   {
+    "cardId": "23a21c0f-e163-4817-ba15-0e899d19d387",
     "name": "Chilly Charles",
     "attributes": {
       "level": 9,
@@ -23185,6 +23212,7 @@
     ]
   },
   {
+    "cardId": "45de3316-8847-4321-ba1c-83a808bad369",
     "name": "Frost Street Champion",
     "attributes": {
       "level": 12,
@@ -23978,6 +24006,7 @@
     ]
   },
   {
+    "cardId": "a871d83c-fbe0-4b38-b004-6cc598b31239",
     "name": "Master Alchemist",
     "attributes": {
       "level": 10,
@@ -24848,6 +24877,7 @@
     ]
   },
   {
+    "cardId": "b93f5b44-ba9f-4196-a94e-c5de17ab5c5d",
     "name": "Boarrior",
     "attributes": {
       "level": 4,
@@ -25729,6 +25759,7 @@
     ]
   },
   {
+    "cardId": "9c167a0c-d348-4e09-8f6b-be0ac65d3cda",
     "name": "Tent City Mayor",
     "attributes": {
       "level": 3,
@@ -26225,6 +26256,7 @@
     ]
   },
   {
+    "cardId": "bc5fa0a4-8ca9-4384-a283-9c7c84b27169",
     "name": "Dire Mosquito",
     "attributes": {
       "level": 6,
@@ -26974,6 +27006,7 @@
     ]
   },
   {
+    "cardId": "b511bd4d-5ad6-4f54-bc74-89622da4d956",
     "name": "Techno Virus",
     "attributes": {
       "level": 6,
@@ -27690,6 +27723,7 @@
     ]
   },
   {
+    "cardId": "fc59e9b3-88be-450c-b2dc-65d58a33d1d0",
     "name": "Lord of the Wastes",
     "attributes": {
       "level": 15,
@@ -28577,6 +28611,7 @@
     ]
   },
   {
+    "cardId": "105b820e-34ee-484e-a7a1-011032ec7eec",
     "name": "Joyful Jack",
     "attributes": {
       "level": 8,
@@ -29514,6 +29549,7 @@
     ]
   },
   {
+    "cardId": "66245d12-d5eb-4c08-9185-6ddaf626bbd3",
     "name": "Covetous Thief",
     "attributes": {
       "level": 3,
@@ -30090,6 +30126,7 @@
     ]
   },
   {
+    "cardId": "0f0b2074-06d7-4aea-a5aa-9e603602215a",
     "name": "Bounty Hunter",
     "attributes": {
       "level": 9,
@@ -31176,6 +31213,7 @@
     ]
   },
   {
+    "cardId": "c69bf8e8-944c-4b42-b59e-8ad568e0d3f7",
     "name": "Giant Mosquito",
     "attributes": {
       "level": 2,
@@ -31622,6 +31660,7 @@
     ]
   },
   {
+    "cardId": "1eabe08b-2949-407d-b22d-c6e579e0cd14",
     "name": "Rogue Scrapper",
     "attributes": {
       "level": 4,
@@ -32360,6 +32399,7 @@
     ]
   },
   {
+    "cardId": "7590dbeb-8087-4464-90f0-96aeee910186",
     "name": "Bloodreef Captain",
     "attributes": {
       "level": 9,
@@ -33074,6 +33114,7 @@
     ]
   },
   {
+    "cardId": "365122bf-7bb0-4fa3-93bd-06bf5a94e324",
     "name": "Trash Golem",
     "attributes": {
       "level": 7,
@@ -34208,6 +34249,7 @@
     ]
   },
   {
+    "cardId": "93d7bb74-2d23-4ccc-a99f-9380afaf738a",
     "name": "Dr. Vortex",
     "attributes": {
       "level": 10,
@@ -34915,6 +34957,7 @@
     ]
   },
   {
+    "cardId": "69af3106-78fd-4a74-b150-ec41442cdbba",
     "name": "Lich",
     "attributes": {
       "level": 10,
@@ -35992,6 +36035,7 @@
     ]
   },
   {
+    "cardId": "bd0711a6-d9d9-4a47-8a18-8f991057f7dd",
     "name": "Kyver Drone",
     "attributes": {
       "level": 1,
@@ -36454,6 +36498,7 @@
     ]
   },
   {
+    "cardId": "a2baf3bc-6164-4a16-ab41-48b450f694d1",
     "name": "Foreman",
     "attributes": {
       "level": 7,
@@ -37236,6 +37281,7 @@
     ]
   },
   {
+    "cardId": "1e1f7b6d-746b-44d5-9906-fff137c75ef1",
     "name": "Trash Titan",
     "attributes": {
       "level": 11,
@@ -38316,6 +38362,7 @@
     ]
   },
   {
+    "cardId": "4a4542cd-91d8-4463-84fc-c111fc7535ee",
     "name": "Boilerroom Brawler",
     "attributes": {
       "level": 4,
@@ -39232,6 +39279,7 @@
     ]
   },
   {
+    "cardId": "66e0b55f-022d-4c54-9558-ce7d077a01dd",
     "name": "Eccentric Etherwright",
     "attributes": {
       "level": 5,
@@ -39813,6 +39861,7 @@
     ]
   },
   {
+    "cardId": "8eb6cf35-27ab-4726-b9f7-05133a4b94b8",
     "name": "Deadly Crooner",
     "attributes": {
       "level": 6,
@@ -40395,6 +40444,7 @@
     ]
   },
   {
+    "cardId": "87ab01e1-55a7-4934-8201-b005b540616f",
     "name": "Oasis Guardian",
     "attributes": {
       "level": 9,
@@ -41240,6 +41290,7 @@
     ]
   },
   {
+    "cardId": "c7405d35-b9fd-49bb-8dcd-a412d7cb9022",
     "name": "Ferros Khan",
     "attributes": {
       "level": 10,
@@ -42137,6 +42188,7 @@
     ]
   },
   {
+    "cardId": "d9e56b4c-8ad2-465d-b44c-45a7f2562bde",
     "name": "Shock Trooper",
     "attributes": {
       "level": 9,
@@ -43106,6 +43158,7 @@
     ]
   },
   {
+    "cardId": "508e42ec-fdc6-4316-b1af-f85508d182b5",
     "name": "Treasure Turtle",
     "attributes": {
       "level": 9,
@@ -44132,6 +44185,7 @@
     ]
   },
   {
+    "cardId": "96349563-bfb5-46ef-8dff-dbf1ff0d4196",
     "name": "Veteran Octopus",
     "attributes": {
       "level": 13,
@@ -45055,6 +45109,7 @@
     ]
   },
   {
+    "cardId": "254b6aca-26a9-4014-86c3-0da827519c73",
     "name": "Roaming Isle",
     "attributes": {
       "level": 11,
@@ -46271,6 +46326,7 @@
     ]
   },
   {
+    "cardId": "568d3090-6703-4c42-bd65-ba50f883e869",
     "name": "Void Golem",
     "attributes": {
       "level": 12,
@@ -47062,6 +47118,7 @@
     ]
   },
   {
+    "cardId": "fb2e242e-daf3-4771-bede-21b3adf03739",
     "name": "Awakened District",
     "attributes": {
       "level": 15,
@@ -47690,6 +47747,7 @@
     ]
   },
   {
+    "cardId": "265d1068-e90d-49c4-8013-ed2e856ead8f",
     "name": "Property Baron",
     "attributes": {
       "level": 11,
@@ -48166,6 +48224,7 @@
     ]
   },
   {
+    "cardId": "8e389a21-9e14-49c4-bdf3-24183f9f9295",
     "name": "Dabbling Apprentice",
     "attributes": {
       "level": 3,
@@ -48793,6 +48852,7 @@
     ]
   },
   {
+    "cardId": "fc3dee8e-aef5-41c9-95a8-d91ad54adede",
     "name": "Enclave Revenant",
     "attributes": {
       "level": 12,
@@ -49902,6 +49962,7 @@
     ]
   },
   {
+    "cardId": "0f15f62d-67c4-4564-91a3-c78a05ddce1d",
     "name": "Infernal Envoy",
     "attributes": {
       "level": 6,
@@ -50520,6 +50581,7 @@
     ]
   },
   {
+    "cardId": "289ff978-dd65-4484-b905-8ee16d28033c",
     "name": "Coconut Crab",
     "attributes": {
       "level": 2,
@@ -51098,6 +51160,7 @@
     ]
   },
   {
+    "cardId": "be75b034-f986-4cdd-b871-5e8258865c29",
     "name": "Death Knight Reaper",
     "attributes": {
       "level": 13,
@@ -51885,6 +51948,7 @@
     ]
   },
   {
+    "cardId": "a04b33a7-eb29-456a-9a7c-63dd8553b872",
     "name": "Wandering Shoal",
     "attributes": {
       "level": 10,
@@ -52898,6 +52962,7 @@
     ]
   },
   {
+    "cardId": "338f3c4b-9238-41d2-a0e0-0d825cded307",
     "name": "Elite Duelist",
     "attributes": {
       "level": 9,
@@ -54386,6 +54451,7 @@
     ]
   },
   {
+    "cardId": "33d9d397-339e-4962-8e9f-1ed1604842ff",
     "name": "Flame Juggler",
     "attributes": {
       "level": 6,
@@ -55094,6 +55160,7 @@
     ]
   },
   {
+    "cardId": "91e59b0c-968c-4c45-9391-5104571fee28",
     "name": "Outlands Dervish",
     "attributes": {
       "level": 4,
@@ -55872,6 +55939,7 @@
     ]
   },
   {
+    "cardId": "1d24717f-7bfb-48e9-9320-6a69d72e233e",
     "name": "Banannabal",
     "attributes": {
       "level": 1,
@@ -56204,6 +56272,7 @@
     "skills": []
   },
   {
+    "cardId": "a1c3df15-1058-44ff-bee9-0991cfba2068",
     "name": "Robo-Bouncer",
     "attributes": {
       "level": 10,
@@ -57091,6 +57160,7 @@
     ]
   },
   {
+    "cardId": "5253c1ef-af51-43ac-a307-4e707e5747a6",
     "name": "Hydrodude",
     "attributes": {
       "level": 7,
@@ -57978,6 +58048,7 @@
     ]
   },
   {
+    "cardId": "d50543f3-132c-4c43-9230-50a5e96087d9",
     "name": "Loan Shark",
     "attributes": {
       "level": 8,
@@ -58795,6 +58866,7 @@
     ]
   },
   {
+    "cardId": "55046a2f-f81e-4720-aefa-e74b14a06dad",
     "name": "Frost Street Challenger",
     "attributes": {
       "level": 4,
@@ -59519,6 +59591,7 @@
     ]
   },
   {
+    "cardId": "45c473f5-25bd-4c1c-8357-cfe460c58f69",
     "name": "Pyro",
     "attributes": {
       "level": 1,
@@ -59762,6 +59835,7 @@
     "skills": []
   },
   {
+    "cardId": "04b60df4-91d9-4065-94e0-f9f462a3b104",
     "name": "Tempest Flamedancer",
     "attributes": {
       "level": 3,
@@ -60310,6 +60384,7 @@
     ]
   },
   {
+    "cardId": "7294ff99-ca2b-409e-838f-0efdb10dded0",
     "name": "Zookeeper",
     "attributes": {
       "level": 6,
@@ -61141,6 +61216,7 @@
     ]
   },
   {
+    "cardId": "776c224d-1e4e-4a20-8516-550b94c05ff1",
     "name": "Void Colossus",
     "attributes": {
       "level": 15,
@@ -61856,6 +61932,7 @@
     ]
   },
   {
+    "cardId": "492c7f84-3cb2-40bb-8a55-29355143bee2",
     "name": "Hulking Experiment",
     "attributes": {
       "level": 10,

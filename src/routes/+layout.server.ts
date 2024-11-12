@@ -1,16 +1,18 @@
-import cardsJson from "$lib/v2_Cards.json" assert { type: "json" };
-import monstersJson from "$lib/v2_Monsters.json" assert { type: "json" };
+// import cardsJson from "$lib/v2_Cards.json" assert { type: "json" };
+// import monstersJson from "$lib/v2_Monsters.json" assert { type: "json" };
 
 import preprocessedCardsJson from "$lib/processedCards.json" assert { type: "json" };
 import preprocessedMonstersJson from "$lib/processedMonsters.json" assert { type: "json" };
+import preprocessedDayHoursJson from "$lib/processedDayHours.json" assert { type: "json" };
 
-import { parseJson as parseCardsJson } from "$lib/cardsJsonParser";
-import { parseJson as parseMonstersJson } from "$lib/monstersJsonParser";
-import type { CardsJson, ClientSideCard, ClientSideMonster, MonstersJson } from "$lib/types";
+// import { parseJson as parseCardsJson } from "$lib/cardsJsonParser";
+// import { parseJson as parseMonstersJson } from "$lib/monstersJsonParser";
+import type { CardsJson, ClientSideCard, ClientSideDayHours, ClientSideMonster, MonstersJson } from "$lib/types";
 import { redirect } from "@sveltejs/kit";
 
 let cachedCards: ClientSideCard[];
 let cachedMonsters: ClientSideMonster[];
+let cachedDayHours: ClientSideDayHours[];
 
 export function load({ url }) {
     if (url.pathname === '/') {
@@ -27,5 +29,9 @@ export function load({ url }) {
         // cachedMonsters = parseMonstersJson(monstersJson as MonstersJson, cachedCards)
     }
 
-    return { cards: cachedCards, monsters: cachedMonsters };
+    if (!cachedDayHours) {
+        cachedDayHours = preprocessedDayHoursJson as ClientSideDayHours[];
+    }
+
+    return { cards: cachedCards, monsters: cachedMonsters, dayHours: cachedDayHours };
 }

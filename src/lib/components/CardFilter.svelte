@@ -6,20 +6,31 @@
     let {
         label,
         options,
+        isSingleSelection = false,
         selectedOptions = $bindable(),
         mustMatchAll = $bindable(),
     }: {
         label: string;
         options: OptionType[];
+        isSingleSelection?: boolean;
         selectedOptions: OptionType[];
         mustMatchAll?: boolean;
     } = $props();
 
-    const handleSelection = (selectedArray: OptionType[], item: OptionType) => {
-        if (selectedArray.includes(item)) {
-            return selectedArray.filter((i) => i !== item);
+    const handleSelection = (
+        selectedArray: OptionType[],
+        item: OptionType,
+    ): OptionType[] => {
+        if (isSingleSelection) {
+            // If single selection mode, return an array with only the selected item
+            return selectedArray.includes(item) ? [] : [item];
         } else {
-            return [...selectedArray, item];
+            // For multiple selection mode, toggle the item in the selected array
+            if (selectedArray.includes(item)) {
+                return selectedArray.filter((i) => i !== item);
+            } else {
+                return [...selectedArray, item];
+            }
         }
     };
 </script>

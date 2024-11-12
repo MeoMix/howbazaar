@@ -1,4 +1,4 @@
-import type { ClientSideCardItem, ClientSideCardSkill, ClientSideHero, ClientSideHiddenTag, ClientSideMonster, ClientSideSize, ClientSideTag, ClientSideTierType } from "$lib/types";
+import type { ClientSideCardItem, ClientSideCardSkill, ClientSideDayHours, ClientSideHero, ClientSideHiddenTag, ClientSideMonster, ClientSideSize, ClientSideTag, ClientSideTierType } from "$lib/types";
 import type { Entries } from "type-fest";
 
 // TODO: if this diverges any more maybe separate entirely
@@ -76,16 +76,6 @@ export function filterItemAndSkillCards<T extends ClientSideCardItem | ClientSid
         );
 
         return matchesHero && matchesTier && matchesTag && matchesSizes && matchesSearchText;
-    });
-}
-
-export function filterMonsters(monsters: ClientSideMonster[], selectedLevels: number[]) {
-    return monsters.filter((monster) => {
-        const matchesLevel =
-            selectedLevels.length === 0 ||
-            (monster.attributes.level && selectedLevels.includes(monster.attributes.level));
-
-        return matchesLevel;
     });
 }
 
