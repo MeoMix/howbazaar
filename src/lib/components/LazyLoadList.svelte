@@ -43,7 +43,7 @@
 <div class="space-y-4">
     {#if showSearchCount}
         <div class="text-lg">
-            {visibleItems.length} {listItemName}{visibleItems.length === 1 ? '' : 's'} found.
+            {items.length} {listItemName}{items.length === 1 ? '' : 's'} found.
         </div>
     {/if}
 
