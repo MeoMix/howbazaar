@@ -19,6 +19,10 @@
             (a, b) => a.attributes.level - b.attributes.level,
         ),
     );
+
+    // const monsterEncounterDayHours = $derived(
+    //     data.dayHours.filter(dayHour => dayHour.day <= 10 && dayHour.hour === 3)
+    // );
 </script>
 
 <div class="text-3xl py-4">
@@ -33,6 +37,22 @@
         bind:selectedOptions={selectedLevels}
     />
 </div>
+<!-- 
+<div>
+    Spawn Groups Test
+
+    {#each monsterEncounterDayHours as dayHour}
+        Day: {dayHour.day}
+
+        {#each dayHour.spawnGroups as spawnGroup}
+            <div>
+                {#each spawnGroup.ids as id}
+                    {data.monsters.find(monster => monster.cardId === id)?.name ?? "MISSING"}
+                {/each}
+            </div>
+        {/each}
+    {/each}
+</div> -->
 
 {#snippet listItem(monster: ClientSideMonster)}
     <div class="font-bold text-2xl mb-2">{monster.name}</div>
@@ -49,10 +69,10 @@
 
         <div class="font-semibold text-xl mt-4 mb-2">Cards</div>
 
-        <!-- <div
+        <div
             class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
-        > -->
-        <div class="grid grid-cols-10 gap-4">
+        >
+        <!-- <div class="grid grid-cols-10 gap-4"> -->
             {#each monster.items as item}
                 <MonsterCardItem
                     card={item.card}
@@ -62,7 +82,7 @@
             {/each}
         </div>
 
-        <!-- {#if monster.skills.length > 0}
+        {#if monster.skills.length > 0}
             <div class="font-semibold text-xl mt-4 mb-2">Skills</div>
             <div
                 class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
@@ -71,8 +91,8 @@
                     <MonsterCardSkill card={skill.card} tierType={skill.tierType} />
                 {/each}
             </div>
-        {/if} -->
+        {/if}
     </div>
 {/snippet}
 
-<LazyLoadList items={filteredMonsters} {listItem} listItemName="monster" />
+<LazyLoadList items={filteredMonsters} {listItem} listItemName="monster" showSearchCount={false} />

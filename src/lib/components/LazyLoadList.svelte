@@ -6,11 +6,13 @@
         listItemName,
         listItem,
         batchSize = 10,
+        showSearchCount = true
     }: {
         items: T[];
         listItemName: string;
         listItem: Snippet<[T]>;
         batchSize?: number;
+        showSearchCount?: boolean;
     } = $props();
 
     let itemsToDisplay = $state(batchSize);
@@ -39,9 +41,11 @@
 </script>
 
 <div class="space-y-4">
-    <div class="text-lg">
-        {visibleItems.length} {listItemName}{visibleItems.length === 1 ? '' : 's'} found.
-    </div>
+    {#if showSearchCount}
+        <div class="text-lg">
+            {visibleItems.length} {listItemName}{visibleItems.length === 1 ? '' : 's'} found.
+        </div>
+    {/if}
 
     {#each visibleItems as item}
         {@render listItem(item)}
