@@ -47,4 +47,14 @@ describe('MonsterEncounterService', () => {
 
         expect(viperEncounter).toBeDefined();
     });
+
+    it('should not contain duplicate entries for Veteran Octopus', () => {
+        const veteranOctopusEncounters = monsterEncounterDays.flatMap((monsterEncounterDay) =>
+            monsterEncounterDay.groups.flatMap((group) =>
+                group.filter((monsterEncounter) => monsterEncounter.cardName === "Veteran Octopus")
+            )
+        );
+    
+        expect(veteranOctopusEncounters.length).toBe(1);
+    });
 });
