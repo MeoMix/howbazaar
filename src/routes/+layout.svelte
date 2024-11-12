@@ -6,7 +6,7 @@
 
     import { Toast, DarkMode, Navbar, NavBrand, NavUl, NavLi, NavHamburger } from "flowbite-svelte";
     import { CheckCircleSolid } from "flowbite-svelte-icons";
-    import { onMount, type Snippet } from "svelte";
+    import { type Snippet } from "svelte";
     import { fly } from "svelte/transition";
     import { page } from "$app/stores";
     import { clipboardState } from "$lib/stores/clipboard";
