@@ -6,7 +6,7 @@
 
     import { Toast, DarkMode, Navbar, NavBrand, NavUl, NavLi, NavHamburger } from "flowbite-svelte";
     import { CheckCircleSolid } from "flowbite-svelte-icons";
-    import type { Snippet } from "svelte";
+    import { onMount, type Snippet } from "svelte";
     import { fly } from "svelte/transition";
     import { page } from "$app/stores";
     import { clipboardState } from "$lib/stores/clipboard";
@@ -23,10 +23,11 @@
     let { children }: { children: Snippet } = $props();
 
     const activeUrl = $derived($page.url.pathname);
+    const searchParams = $derived($page.url.searchParams);
 </script>
 
 <Navbar class="sticky top-0 z-10 border-b bg-white dark:bg-gray-800">
-    <NavBrand href="/">
+    <NavBrand href={`/items?${searchParams}`}>
         <span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
             How Bazaar
         </span>
@@ -38,10 +39,10 @@
     </div>
 
     <NavUl {activeUrl}>
-        <NavLi href="/items">Items</NavLi>
-        <NavLi href="/skills">Skills</NavLi>
-        <NavLi href="/monsters">Monsters</NavLi>
-        <NavLi href="/contact">Contact & Upcoming Features</NavLi>
+        <NavLi href={`/items?${searchParams}`}>Items</NavLi>
+        <NavLi href={`/skills?${searchParams}`}>Skills</NavLi>
+        <NavLi href={`/monsters?${searchParams}`}>Monsters</NavLi>
+        <NavLi href={`/contact?${searchParams}`}>Contact & Upcoming Features</NavLi>
     </NavUl>
 </Navbar>
 

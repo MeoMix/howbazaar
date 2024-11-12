@@ -3,6 +3,8 @@
     import CardFilter from "./CardFilter.svelte";
     import { onMount } from "svelte";
     import { SearchSolid } from "flowbite-svelte-icons";
+    import { page } from "$app/stores";
+    import { goto } from "$app/navigation";
 
     let {
         heroOptions,
@@ -40,6 +42,10 @@
         isSearchNameOnly = false;
     }
 
+    let isShowingAdvancedFilters = $state(
+        $page.url.searchParams.has("isShowingAdvancedFilters"),
+    );
+
     onMount(async () => {
         const hash = window.location.hash.slice(1);
         if (hash) {
@@ -47,9 +53,17 @@
             searchText = hash.replace("_", " ");
         }
     });
+
+    function toggleAdvancedFilters() {
+        isShowingAdvancedFilters = !isShowingAdvancedFilters;
+
+        let query = new URLSearchParams($page.url.searchParams.toString());
+        query.set("isShowingAdvancedFilters", `${isShowingAdvancedFilters}`);
+        goto(`?${query.toString()}`, { replaceState: true });
+    }
 </script>
 
-<div class="mt-8 mb-4">
+<div class="mt-8">
     <ButtonGroup class="w-full">
         <Input
             type="text"
@@ -70,37 +84,57 @@
             on:click={() => (isSearchNameOnly = !isSearchNameOnly)}
             class="transition-colors focus:outline-none border-2"
         >
-            Name Only
+            Search Name Only
+        </Button>
+
+        <Button
+            size="xs"
+            outline={!isShowingAdvancedFilters}
+            pill
+            color={isShowingAdvancedFilters ? "primary" : "light"}
+            on:click={toggleAdvancedFilters}
+            class="transition-colors focus:outline-none border-2"
+        >
+            Show Advanced Filters
+        </Button>
+
+        <Button
+            size="xs"
+            outline
+            pill
+            color={"primary"}
+            on:click={() => clearSearch}
+            class="ml-auto transition-colors focus:outline-none border-2"
+        >
+            Clear Search
         </Button>
     </div>
 </div>
 
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
-    <CardFilter
-        label="Heroes"
-        options={heroOptions}
-        bind:selectedOptions={selectedHeroes}
-    />
-    <CardFilter
-        label="Starting Tiers"
-        options={minimumTierOptions}
-        bind:selectedOptions={selectedTiers}
-    />
-    <CardFilter
-        label="Tags"
-        options={tagOptions}
-        bind:selectedOptions={selectedTags}
-        bind:mustMatchAll={mustMatchAllTags}
-    />
-    {#if sizeOptions.length > 0}
+{#if isShowingAdvancedFilters}
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-4">
         <CardFilter
-            label="Sizes"
-            options={sizeOptions}
-            bind:selectedOptions={selectedSizes}
+            label="Heroes"
+            options={heroOptions}
+            bind:selectedOptions={selectedHeroes}
         />
-    {/if}
-</div>
-
-<Button class="mb-4" outline on:click={clearSearch} color="dark"
-    >Clear Search</Button
->
+        <CardFilter
+            label="Starting Tiers"
+            options={minimumTierOptions}
+            bind:selectedOptions={selectedTiers}
+        />
+        <CardFilter
+            label="Tags"
+            options={tagOptions}
+            bind:selectedOptions={selectedTags}
+            bind:mustMatchAll={mustMatchAllTags}
+        />
+        {#if sizeOptions.length > 0}
+            <CardFilter
+                label="Sizes"
+                options={sizeOptions}
+                bind:selectedOptions={selectedSizes}
+            />
+        {/if}
+    </div>
+{/if}
