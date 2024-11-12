@@ -66,3 +66,13 @@
         </Toast>
     </div>
 </div>
+
+<div class="mx-auto text-center bg-yellow-400 border-4 border-black p-4 max-w-xs">
+    <img src="https://viluukiao9kyljph.public.blob.vercel-storage.com/webring.webp" loading="lazy" alt="Join the Webring" class="mx-auto mb-4 border-2 border-black">
+
+    <a href="https://bazaarrank.com/" target="_blank" class="inline-block mx-2 my-2 py-2 px-4 bg-orange-500 text-white border-2 border-black font-bold uppercase shadow-lg hover:bg-green-500">
+        Visit Our Partner Site - Bazaarrank
+    </a>
+    <small class="block mt-2 text-gray-600">More sites coming soon!</small>
+    <small class="block mt-2 text-gray-600">(Also this is kind of a joke, you don't have a virus, but if you want to check out The Bazaar leaderboards, click above.)</small>
+</div>
