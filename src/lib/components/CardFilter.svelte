@@ -40,12 +40,14 @@
         <Label class="font-semibold text-lg">{label}</Label>
         {#if mustMatchAll !== undefined}
             <Toggle
-                class="mt-2"
+                class="mt-2 inline-flex"
                 checked={mustMatchAll}
                 on:click={() => {
                     mustMatchAll = !mustMatchAll;
-                }}>Must Match All</Toggle
+                }}
             >
+                Must Match All
+            </Toggle>
         {/if}
     </div>
 

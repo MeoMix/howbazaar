@@ -103,7 +103,7 @@
             outline
             pill
             color={"primary"}
-            on:click={() => clearSearch}
+            on:click={clearSearch}
             class="ml-auto transition-colors focus:outline-none border-2"
         >
             Clear Search
