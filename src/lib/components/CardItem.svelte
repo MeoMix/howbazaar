@@ -59,7 +59,7 @@
         <div class="font-semibold text-xl mt-4 mb-2">
             Enchantments
         </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-4">
+        <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-4">
             {#each card.enchantments as enchantment}
                 <Card size="xl" padding="sm">
                     <div class="text-lg font-semibold mb-2 {getEnchantmentClass(enchantment.name)}">
