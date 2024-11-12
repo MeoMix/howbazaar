@@ -1,37 +1,26 @@
-// import cardsJson from "$lib/v2_Cards.json" assert { type: "json" };
-// import monstersJson from "$lib/v2_Monsters.json" assert { type: "json" };
+import parsedCards from "$lib/processedCards.json" assert { type: "json" };
+import parsedMonsters from "$lib/processedMonsters.json" assert { type: "json" };
+import parsedDayHours from "$lib/processedDayHours.json" assert { type: "json" };
 
-import preprocessedCardsJson from "$lib/processedCards.json" assert { type: "json" };
-import preprocessedMonstersJson from "$lib/processedMonsters.json" assert { type: "json" };
-import preprocessedDayHoursJson from "$lib/processedDayHours.json" assert { type: "json" };
-
-// import { parseJson as parseCardsJson } from "$lib/cardsJsonParser";
-// import { parseJson as parseMonstersJson } from "$lib/monstersJsonParser";
-import type { CardsJson, ClientSideCard, ClientSideDayHours, ClientSideMonster, MonstersJson } from "$lib/types";
+import type { ClientSideCard, Monster, MonsterEncounterDay } from "$lib/types";
 import { redirect } from "@sveltejs/kit";
+import { getMonsterEncounterDays } from "$lib/services/monsterEncounterService";
 
-let cachedCards: ClientSideCard[];
-let cachedMonsters: ClientSideMonster[];
-let cachedDayHours: ClientSideDayHours[];
+let cards: ClientSideCard[];
+let monsterEncounterDays: MonsterEncounterDay[];
 
 export function load({ url }) {
     if (url.pathname === '/') {
         redirect(302, '/items');
     }
-
-    if (!cachedCards) {
-        cachedCards = preprocessedCardsJson as ClientSideCard[];
-        // cachedCards = parseCardsJson(cardsJson as CardsJson)
+    
+    if (!cards) {
+        cards = parsedCards as ClientSideCard[];
     }
 
-    if (!cachedMonsters) {
-        cachedMonsters = preprocessedMonstersJson as ClientSideMonster[];
-        // cachedMonsters = parseMonstersJson(monstersJson as MonstersJson, cachedCards)
+    if (!monsterEncounterDays) {
+        monsterEncounterDays = getMonsterEncounterDays(cards, parsedMonsters as Monster[], parsedDayHours);
     }
 
-    if (!cachedDayHours) {
-        cachedDayHours = preprocessedDayHoursJson as ClientSideDayHours[];
-    }
-
-    return { cards: cachedCards, monsters: cachedMonsters, dayHours: cachedDayHours };
+    return { cards, monsterEncounterDays };
 }

@@ -15,13 +15,9 @@ const processedDayHoursPath = path.resolve('./src/lib/processedDayHours.json');
 
 async function preprocessData() {
     try {
-        console.log('running');
         // Process the cards and monsters data
         const processedCards = parseCardsJson(cardsJson as CardsJson);
-        
-        console.log('running2');
-        const processedMonsters = parseMonstersJson(monstersJson as MonstersJson, processedCards);
-
+        const processedMonsters = parseMonstersJson(monstersJson as MonstersJson);
         const processedDayHours = parseDayHoursJson(dayHoursJson as DayHoursJson);
 
         // Write processed cards data to disk

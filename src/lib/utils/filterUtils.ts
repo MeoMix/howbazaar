@@ -1,4 +1,4 @@
-import type { ClientSideCardItem, ClientSideCardSkill, ClientSideDayHours, ClientSideHero, ClientSideHiddenTag, ClientSideMonster, ClientSideSize, ClientSideTag, ClientSideTierType } from "$lib/types";
+import type { ClientSideCardItem, ClientSideCardSkill, ClientSideHero, ClientSideHiddenTag, ClientSideSize, ClientSideTag, ClientSideTierType } from "$lib/types";
 import type { Entries } from "type-fest";
 
 // TODO: if this diverges any more maybe separate entirely
@@ -18,7 +18,6 @@ export function prepareItemAndSkillFilterOptions(cards: (ClientSideCardItem | Cl
     };
 }
 
-// TODO: These types could be tighter
 export function filterItemAndSkillCards<T extends ClientSideCardItem | ClientSideCardSkill>(
     cards: T[],
     selectedHeroes: ClientSideHero[],

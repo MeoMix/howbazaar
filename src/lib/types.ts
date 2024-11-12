@@ -1,5 +1,5 @@
 import type { V2CardsD as Card, Hero, HiddenTag, Size, Tag, Tier as TierType } from "$lib/v2_Cards";
-import type { The04747408_De0E4944_B79D23_Ca41008619 as Monster } from "$lib/v2_Monsters";
+import type { The04747408_De0E4944_B79D23_Ca41008619 as JsonMonsterType } from "$lib/v2_Monsters";
 import type { V2DayHoursD as DayHour } from "$lib/v2_DayHours";
 
 export type CardsJson = { [key: string]: Card };
@@ -62,25 +62,21 @@ export type ClientSideCardCombatEncounter = {
     monsterTemplateId: string;
 };
 
-export type MonstersJson = { [key: string]: Monster };
+export type MonstersJson = { [key: string]: JsonMonsterType };
 
-export type ClientSideMonster = {
-    cardId: string;
-    name: string;
-    attributes: {
-        level: number,
-        health: number,
-    };
+export type Monster = {
+    id: string;
+    level: number;
+    health: number;
     items: {
-        card: ClientSideCardItem,
-        tierType: ClientSideTierType
-        // TODO: name vs type
-        enchantmentName: ClientSideEnchantmentType | undefined;
-    }[],
+        templateId: string;
+        tierType: TierType;
+        enchantmentType: ClientSideEnchantmentType | undefined;
+    }[];
     skills: {
-        card: ClientSideCardSkill,
-        tierType: ClientSideTierType
-    }[]
+        templateId: string;
+        tierType: TierType;
+    }[];
 }
 
 export type DayHoursJson = { [key: string]: DayHour };
@@ -89,6 +85,33 @@ export type ClientSideDayHours = {
     day: number;
     hour: number;
     spawnGroups: {
+        // TODO: maybe rename to cardId for clarity
         ids: string[]
     }[];
+};
+
+
+type MonsterEncounterItem = {
+    card: ClientSideCardItem;
+    tierType: ClientSideTierType;
+    enchantmentType: ClientSideEnchantmentType | undefined;
+};
+
+type MonsterEncounterSkill = {
+    card: ClientSideCardSkill;
+    tierType: ClientSideTierType;
+};
+
+export type MonsterEncounter = {
+    cardId: string;
+    cardName: string;
+    level: number;
+    health: number;
+    items: MonsterEncounterItem[];
+    skills: MonsterEncounterSkill[];
+};
+
+export type MonsterEncounterDay = {
+    day: number;
+    groups: MonsterEncounter[][];
 };

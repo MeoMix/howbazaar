@@ -2,18 +2,18 @@
     import CardFilter from "$lib/components/CardFilter.svelte";
     import LazyLoadList from "$lib/components/LazyLoadList.svelte";
     import MonsterEncounter from "$lib/components/MonsterEncounter.svelte";
-    import type { ClientSideDayHours, ClientSideMonster } from "$lib/types";
+    import type { MonsterEncounterDay, MonsterEncounter as MonsterEncounterType } from "$lib/types";
 
-    const { data }: { data: { monsters: ClientSideMonster[], dayHours: ClientSideDayHours[] } } = $props();
+    const { data }: { data: { monsterEncounterDays: MonsterEncounterDay[] } } = $props();
 
     // TODO: Add support for days past 10, logic is more convoluted. Or maybe say 10+
-    const monsterEncounterDayHours = $derived(
-        data.dayHours.filter(dayHour => dayHour.day <= 10 && dayHour.hour === 3).sort((dayHourA, dayHourB) => dayHourA.day - dayHourB.day)
+    const monsterEncounterDays = $derived(
+        data.monsterEncounterDays.sort((dayHourA, dayHourB) => dayHourA.day - dayHourB.day)
     );
 
     let selectedDays = $state([] as number[]);
-    const filteredDayHours = $derived(
-        monsterEncounterDayHours.filter(({ day }) => selectedDays.length === 0 || selectedDays.includes(day))
+    const filteredMonsterEncounterDays = $derived(
+        monsterEncounterDays.filter(({ day }) => selectedDays.length === 0 || selectedDays.includes(day))
     );
 </script>
 
@@ -24,30 +24,28 @@
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
     <CardFilter
         label="Day"
-        options={monsterEncounterDayHours.map(dayHour => dayHour.day)}
+        options={monsterEncounterDays.map(({ day }) => day)}
         isSingleSelection={true}
         bind:selectedOptions={selectedDays}
     />
 </div>
 
-{#snippet dayListItem(dayHour: ClientSideDayHours)}
+{#snippet dayListItem(monsterEncounterDay: MonsterEncounterDay)}
     <div class="text-3xl bold">
-        Day {dayHour.day}
+        Day {monsterEncounterDay.day}
     </div>
 
-    {#each dayHour.spawnGroups as spawnGroup}
+    {#each monsterEncounterDay.groups as monsterEncounters}
         <div>
-            {#each spawnGroup.ids as id}
-                {#if data.monsters.find(monster => monster.cardId === id)}
-                    {@render listItem(data.monsters.find(monster => monster.cardId === id)!)}
-                {/if}
+            {#each monsterEncounters as monsterEncounter}
+                {@render listItem(monsterEncounter)}
             {/each}
         </div>
     {/each}
 {/snippet}
 
-{#snippet listItem(monster: ClientSideMonster)}
-    <MonsterEncounter {monster} />
+{#snippet listItem(monsterEncounter: MonsterEncounterType)}
+    <MonsterEncounter {monsterEncounter} />
 {/snippet}
 
-<LazyLoadList items={filteredDayHours} listItem={dayListItem} listItemName="day" showSearchCount={false}/>
+<LazyLoadList items={filteredMonsterEncounterDays} listItem={dayListItem} listItemName="day" showSearchCount={false}/>
