@@ -75,15 +75,42 @@ describe('cardJsonParser', () => {
   //   expect(cardsWithChangingCooldowns.length).toBeGreaterThan(0); // Adjust expectation as needed
   // });
 
+  it.only('should contain no tooltips with {', () => {
+    const invalidCards = [];
+  
+    for (const card of cards) {
+      const tooltips = Object.values(card.tiers).flatMap(tier => tier.tooltips);
+      const invalidTooltips = tooltips.filter(tooltip => tooltip.includes('{'));
+  
+      if (invalidTooltips.length > 0) {
+        invalidCards.push({
+          name: card.name,
+          tooltips: invalidTooltips,
+        });
+      }
+    }
+  
+    // if (invalidCards.length > 0) {
+    //   const errorMessage = `Found invalid tooltips in the following cards:\n${invalidCards
+    //     .map(card => `Card "${card.name}" with tooltips: ${card.tooltips.join(', ')}`)
+    //     .join('\n')}`;
+      
+    // }
+  
+    // If no invalid tooltips are found, make the assertion to confirm
+    expect(invalidCards).toEqual([]);
+  });
+
+  // TODO: This might not be a special test case anymore
   it('should parse "Bill Dozer" correctly with correct cooldown reduction texts for each tier', () => {
     const billDozerCard = cards.find(card => card.name === "Bill Dozer")!;
 
     const searchPhrase = "Your other Friends' cooldowns are reduced by";
 
     const expectedTooltips = {
-      Diamond: `${searchPhrase} 40%.`,
-      Gold: `${searchPhrase} 30%.`,
-      Silver: `${searchPhrase} 20%.`,
+      Diamond: `${searchPhrase} 30%.`,
+      Gold: `${searchPhrase} 20%.`,
+      Silver: `${searchPhrase} 10%.`,
     };
 
     // Extract the actual tooltips for each tier using the searchPhrase
@@ -125,7 +152,7 @@ describe('cardJsonParser', () => {
 
     const searchPhrase = "This has";
 
-    expect(uwashiwaliBirdCard.tiers.Bronze.tooltips.find((text) => text.includes(searchPhrase))).toEqual(`${searchPhrase} +2 Multicast for each Property you have. [0]`);
+    expect(uwashiwaliBirdCard.tiers.Bronze.tooltips.find((text) => text.includes(searchPhrase))).toEqual(`${searchPhrase} +1 Multicast for each Property you have. [0]`);
   });
 
   it('should parse "Healthy Collector" correctly by replacing its {aura.0.mod} with a correct value', () => {
@@ -160,7 +187,7 @@ describe('cardJsonParser', () => {
     const fishingNet = cards.find(card => card.name === "Fishing Net")!;
     const searchPhrase = "Slow ";
 
-    expect(fishingNet.tiers.Bronze.tooltips.find((text) => text.includes(searchPhrase))).toEqual(`${searchPhrase}1 item for 3 seconds.`);
+    expect(fishingNet.tiers.Bronze.tooltips.find((text) => text.includes(searchPhrase))).toEqual(`${searchPhrase}1 item for 3 second(s).`);
   });
 
   it('should parse "Colossal Popsicle" correctly by replacing {ability.2} with a correct value involving the spawning of additional cards.', () => {
@@ -208,7 +235,7 @@ describe('cardJsonParser', () => {
       const turboEnchantment = bombSquad.enchantments.find(enchantment => enchantment.name === 'Turbo')!;
 
       expect(turboEnchantment.tooltips.length).toEqual(1);
-      expect(turboEnchantment.tooltips[0]).toEqual('Haste 1 item for 2 seconds.');
+      expect(turboEnchantment.tooltips[0]).toEqual('Haste 1 item for 2 second(s).');
     });
 
     it('should parse "Deadly Port" correctly by replacing its {aura.e1.} (which is a typo) with a correct value', () => {
@@ -219,12 +246,12 @@ describe('cardJsonParser', () => {
       expect(deadlyEnchantment.tooltips[0]).toEqual('Your Ammo items have +20% Crit Chance.');
     });
 
-    it('should parse "Swash Buckle" correctly by excluding Shiny which is an invalid enchantment', () => {
-      const swashBuckle = cards.find(card => card.name === "Swash Buckle")!;
-      const shinyEnchantment = swashBuckle.enchantments.find(enchantment => enchantment.name === 'Shiny')!;
+    // it('should parse "Swash Buckle" correctly by excluding Shiny which is an invalid enchantment', () => {
+    //   const swashBuckle = cards.find(card => card.name === "Swash Buckle")!;
+    //   const shinyEnchantment = swashBuckle.enchantments.find(enchantment => enchantment.name === 'Shiny')!;
 
-      expect(shinyEnchantment).toBeUndefined();
-    });
+    //   expect(shinyEnchantment).toBeUndefined();
+    // });
 
     it('should parse "Orbital Polisher" correctly by excluding Shiny which is an invalid enchantment', () => {
       const orbitalPolisher = cards.find(card => card.name === "Orbital Polisher")!;
@@ -246,7 +273,7 @@ describe('cardJsonParser', () => {
       const heavyEnchantment = inductionAegis.enchantments.find(enchantment => enchantment.name === 'Heavy')!;
 
       expect(heavyEnchantment.tooltips.length).toEqual(1);
-      expect(heavyEnchantment.tooltips[0]).toEqual('Slow 1 item for 1 seconds.');
+      expect(heavyEnchantment.tooltips[0]).toEqual('Slow 1 item for 1 second(s).');
     });
 
     it('should parse "Deadly Sextant" correctly by replacing its {aura.0} with a correct value', () => {

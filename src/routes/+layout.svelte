@@ -30,7 +30,8 @@
         </span>
     </NavBrand>
     
-    <div class="flex md:order-2">
+    <div class="flex md:order-2 items-center">
+        <span class="font-bold text-lime-500 mr-2">Updated for Nov 13th patch!</span>
         <DarkMode class="hover:text-gray-900 dark:hover:text-white" />
         <NavHamburger class="hover:text-gray-900 dark:hover:text-white" />
     </div>

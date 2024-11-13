@@ -797,7 +797,7 @@
       },
       {
         "templateId": "4a30e8b0-f1d1-44c0-b2a7-0a8d12c1e297",
-        "tierType": "Gold"
+        "tierType": "Silver"
       },
       {
         "templateId": "03e4c71d-5317-4c35-a0fb-5348356edc03",
@@ -2674,6 +2674,18 @@
     ]
   },
   {
+    "id": "e98f8212-6dc2-463d-87cc-9d407c60c50d",
+    "level": 20,
+    "health": 1000,
+    "items": [],
+    "skills": [
+      {
+        "templateId": "fcb51ffd-6d25-4e74-871a-7dc0de2bae91",
+        "tierType": "Legendary"
+      }
+    ]
+  },
+  {
     "id": "7719b6d8-7977-4d49-88a2-da29a19ad235",
     "level": 4,
     "health": 500,
@@ -2761,7 +2773,7 @@
         "tierType": "Gold"
       },
       {
-        "templateId": "84b74f1e-0960-4c71-bb4f-d35e114250c2",
+        "templateId": "a490a838-37ed-4812-88fa-9e9a88d2eb8d",
         "tierType": "Silver"
       },
       {
