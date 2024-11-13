@@ -47,6 +47,7 @@
         alt={card.name}
         class="mb-2 h-[200px]"
         width={card.size === "Small" ? 100 : card.size === "Medium" ? 200 : 300}
+        loading="lazy"
     />
 
     <CardBadges
