@@ -75,32 +75,6 @@ describe('cardJsonParser', () => {
   //   expect(cardsWithChangingCooldowns.length).toBeGreaterThan(0); // Adjust expectation as needed
   // });
 
-  it.only('should contain no tooltips with {', () => {
-    const invalidCards = [];
-  
-    for (const card of cards) {
-      const tooltips = Object.values(card.tiers).flatMap(tier => tier.tooltips);
-      const invalidTooltips = tooltips.filter(tooltip => tooltip.includes('{'));
-  
-      if (invalidTooltips.length > 0) {
-        invalidCards.push({
-          name: card.name,
-          tooltips: invalidTooltips,
-        });
-      }
-    }
-  
-    // if (invalidCards.length > 0) {
-    //   const errorMessage = `Found invalid tooltips in the following cards:\n${invalidCards
-    //     .map(card => `Card "${card.name}" with tooltips: ${card.tooltips.join(', ')}`)
-    //     .join('\n')}`;
-      
-    // }
-  
-    // If no invalid tooltips are found, make the assertion to confirm
-    expect(invalidCards).toEqual([]);
-  });
-
   // TODO: This might not be a special test case anymore
   it('should parse "Bill Dozer" correctly with correct cooldown reduction texts for each tier', () => {
     const billDozerCard = cards.find(card => card.name === "Bill Dozer")!;
@@ -202,6 +176,25 @@ describe('cardJsonParser', () => {
     const searchPhrase = "When you sell this, give your leftmost weapon +";
 
     expect(colossalPopsicle.tiers.Bronze.tooltips.find((text) => text.includes(searchPhrase))).toEqual(`${searchPhrase}5 damage.`);
+  });
+
+  it('should contain no tooltips with {', () => {
+    const invalidCards = [];
+  
+    for (const card of cards) {
+      const tooltips = Object.values(card.tiers).flatMap(tier => tier.tooltips);
+      const invalidTooltips = tooltips.filter(tooltip => tooltip.includes('{'));
+  
+      if (invalidTooltips.length > 0) {
+        invalidCards.push({
+          name: card.name,
+          tooltips: invalidTooltips,
+        });
+      }
+    }
+  
+    // If no invalid tooltips are found, make the assertion to confirm
+    expect(invalidCards).toEqual([]);
   });
 
   describe('Enchantments', () => {
@@ -308,6 +301,23 @@ describe('cardJsonParser', () => {
       expect(restorativeEnchantment.tooltips[0]).toEqual('Heal equal to your shield.');
     });
 
-    // TODO: Deadly Critical Core says +100 Damage Crit which isn't very clear
+    it('should contain no enchantment tooltips with {', () => {
+      const invalidCards = [];
+    
+      for (const card of cards) {
+        const tooltips = card.enchantments.flatMap(enchantment => enchantment.tooltips);
+        const invalidTooltips = tooltips.filter(tooltip => tooltip.includes('{'));
+    
+        if (invalidTooltips.length > 0) {
+          invalidCards.push({
+            name: card.name,
+            tooltips: invalidTooltips,
+          });
+        }
+      }
+    
+      // If no invalid tooltips are found, make the assertion to confirm
+      expect(invalidCards).toEqual([]);
+    });
   });
 });

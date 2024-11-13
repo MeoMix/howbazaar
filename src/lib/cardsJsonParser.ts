@@ -169,14 +169,14 @@ function getTierMap(card: ValidItemOrSkillCard) {
 
 // NOTE: intentionally use a loose regex match because sometimes the JSON data contains typos.
 // const abilityPattern = /\{a\w{0,5}y\.(\w+)(\s*\.targets)?\}/gi;
-const abilityPattern = /\{a\w{0,5}y\.(\w+)(\.targets|\.?)\}/gi;
+const abilityPattern = /\{a\w{0,5}y\.(\w+)(\.targets|\.?)\|?(%)?\}/gi;
 
 // Unified pattern for {aura.<id>}, {aura.<id>.mod}, and {aura.<id>.}
 // {aura<id>.} is a typo of {aura.<id>} and should be handled the same
-const auraPattern = /\{a\w{0,3}a\.(\w+)(\.mod|\.?)\}/gi;
+const auraPattern = /\{a\w{0,3}a\.(\w+)(\.mod|\.?)\|?(%)?\}/gi;
 
 function replaceTemplatingWithValues(tooltip: string, abilities: Ability[], auras: Aura[], attributes: Tier["Attributes"]) {
-    tooltip = tooltip.replace(abilityPattern, (match, id, suffix) => {
+    tooltip = tooltip.replace(abilityPattern, (match, id, suffix, percentSuffix) => {
         const ability = abilities.find(a => a.Id === id);
 
         let abilityValue;
@@ -185,10 +185,10 @@ function replaceTemplatingWithValues(tooltip: string, abilities: Ability[], aura
             abilityValue = attributeInfo?.value;
         }
 
-        return abilityValue === undefined ? match : `${abilityValue}`;
+        return abilityValue === undefined ? match : `${abilityValue}${percentSuffix ? '%' : ''}`;
     });
 
-    tooltip = tooltip.replace(auraPattern, (match, id, suffix) => {
+    tooltip = tooltip.replace(auraPattern, (match, id, suffix, percentSuffix) => {
         const aura = auras.find(a => a.Id.toLowerCase() === id.toLowerCase());
 
         let auraValue;
@@ -197,7 +197,21 @@ function replaceTemplatingWithValues(tooltip: string, abilities: Ability[], aura
             auraValue = attributeInfo?.value;
         }
 
-        return auraValue === undefined ? match : `${auraValue}`;
+        return auraValue === undefined ? match : `${auraValue}${percentSuffix ? '%' : ''}`;
+    });
+
+    // TODO: THIS IS SHIT.
+    // Sometimes they say {ability.e1} when they mean {aura.e1} so after doing the correct swaps, do a second sweep but using auras rather than abilities.
+    tooltip = tooltip.replace(abilityPattern, (match, id, suffix, percentSuffix) => {
+        const aura = auras.find(a => a.Id === id);
+
+        let auraValue;
+        if (aura) {
+            const attributeInfo = getAttributeInfo(aura.Action, attributes, { isMod: false, isTargets: suffix === ".targets" });
+            auraValue = attributeInfo?.value;
+        }
+
+        return auraValue === undefined ? match : `${auraValue}${percentSuffix ? '%' : ''}`;
     });
 
     return tooltip;
