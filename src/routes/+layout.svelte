@@ -21,13 +21,10 @@
     });
 
     let { children }: { children: Snippet } = $props();
-
-    const activeUrl = $derived($page.url.pathname);
-    const searchParams = $derived($page.url.searchParams);
 </script>
 
 <Navbar class="sticky top-0 z-10 border-b bg-white dark:bg-gray-800">
-    <NavBrand href={`/items?${searchParams}`}>
+    <NavBrand href={`/items${$page.url.search}`}>
         <span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
             How Bazaar
         </span>
@@ -38,11 +35,11 @@
         <NavHamburger class="hover:text-gray-900 dark:hover:text-white" />
     </div>
 
-    <NavUl {activeUrl}>
-        <NavLi href={`/items?${searchParams}`}>Items</NavLi>
-        <NavLi href={`/skills?${searchParams}`}>Skills</NavLi>
-        <NavLi href={`/monsters?${searchParams}`}>Monsters</NavLi>
-        <NavLi href={`/contact?${searchParams}`}>Contact & Upcoming Features</NavLi>
+    <NavUl activeUrl={$page.url.pathname}>
+        <NavLi href={`/items${$page.url.search}`}>Items</NavLi>
+        <NavLi href={`/skills${$page.url.search}`}>Skills</NavLi>
+        <NavLi href={`/monsters${$page.url.search}`}>Monsters</NavLi>
+        <NavLi href={`/contact${$page.url.search}`}>Contact & Upcoming Features</NavLi>
     </NavUl>
 </Navbar>
 
