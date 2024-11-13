@@ -1,19 +1,22 @@
 <script lang="ts">
     import CardFilter from "$lib/components/CardFilter.svelte";
-    import LazyLoadList from "$lib/components/LazyLoadList.svelte";
     import MonsterEncounter from "$lib/components/MonsterEncounter.svelte";
-    import type { MonsterEncounterDay, MonsterEncounter as MonsterEncounterType } from "$lib/types";
+    import type { MonsterEncounterDay } from "$lib/types";
 
-    const { data }: { data: { monsterEncounterDays: MonsterEncounterDay[] } } = $props();
+    const { data }: { data: { monsterEncounterDays: MonsterEncounterDay[] } } =
+        $props();
 
     // TODO: Add support for days past 10, logic is more convoluted. Or maybe say 10+
     const monsterEncounterDays = $derived(
-        data.monsterEncounterDays.sort((dayHourA, dayHourB) => dayHourA.day - dayHourB.day)
+        data.monsterEncounterDays.sort(
+            (dayHourA, dayHourB) => dayHourA.day - dayHourB.day,
+        ),
     );
 
-    let selectedDays = $state([] as number[]);
+    // TODO: Think I should rewrite this to be `selectedDay`
+    let selectedDays = $state([1]);
     const filteredMonsterEncounterDays = $derived(
-        monsterEncounterDays.filter(({ day }) => selectedDays.length === 0 || selectedDays.includes(day))
+        monsterEncounterDays.filter(({ day }) => selectedDays.includes(day)),
     );
 </script>
 
@@ -30,22 +33,18 @@
     />
 </div>
 
-{#snippet dayListItem(monsterEncounterDay: MonsterEncounterDay)}
-    <div class="text-3xl bold">
-        Day {monsterEncounterDay.day}
-    </div>
-
-    {#each monsterEncounterDay.groups as monsterEncounters}
-        <div>
-            {#each monsterEncounters as monsterEncounter}
-                {@render listItem(monsterEncounter)}
-            {/each}
+<div class="space-y-4">
+    {#each filteredMonsterEncounterDays as monsterEncounterDay}
+        <div class="text-3xl bold">
+            Day {monsterEncounterDay.day}
         </div>
+
+        {#each monsterEncounterDay.groups as monsterEncounters}
+            <div>
+                {#each monsterEncounters as monsterEncounter}
+                    <MonsterEncounter {monsterEncounter} />
+                {/each}
+            </div>
+        {/each}
     {/each}
-{/snippet}
-
-{#snippet listItem(monsterEncounter: MonsterEncounterType)}
-    <MonsterEncounter {monsterEncounter} />
-{/snippet}
-
-<LazyLoadList items={filteredMonsterEncounterDays} listItem={dayListItem} listItemName="day" showSearchCount={false}/>
+</div>
