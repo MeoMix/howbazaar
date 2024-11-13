@@ -5,7 +5,7 @@ import dotenv from 'dotenv';
 
 dotenv.config({ path: '.env.development.local' });
 
-const inputFolder = './static/webp-items';
+const inputFolder = './scripts/images/webp-items/resized';
 const token = process.env.BLOB_READ_WRITE_TOKEN;
 
 if (!token) {
@@ -25,7 +25,7 @@ async function uploadImages() {
 
       try {
         // Upload the file to Vercel Blob Storage
-        const { url } = await put(`images/${file}`, fileContent, { access: 'public', addRandomSuffix: false });
+        const { url } = await put(`items/${file}`, fileContent, { access: 'public', addRandomSuffix: false });
         console.log(`Uploaded ${file} to ${url}`);
       } catch (error) {
         console.error(`Failed to upload ${file}:`, error);

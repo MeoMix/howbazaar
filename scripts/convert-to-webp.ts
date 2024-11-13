@@ -2,8 +2,8 @@ import fs from 'fs';
 import path from 'path';
 import sharp from 'sharp';
 
-const inputFolder = './static/items/';
-const outputFolder = './static/webp-items/';
+const inputFolder = './scripts/images/items/';
+const outputFolder = './scripts/images/webp-items/';
 
 // Create output folder if it doesn't exist
 if (!fs.existsSync(outputFolder)) {

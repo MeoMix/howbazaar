@@ -2,7 +2,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 
 // Directory containing your images
-const directoryPath = './static/items/';
+const directoryPath = './scripts/images/items/';
 
 // Parse command-line arguments to check for dry run mode
 const isDryRun = process.argv.includes('--dry-run');
@@ -28,18 +28,18 @@ const cleanFileName = (fileName: string): string => {
       'Bar of Gold': 'BarofGold',
       'ClockworkDaggers': 'ClockworkBlades',
       'GolfClub': 'GolfClubs',
-      'CrowsNest': 'Crow\'sNest',
+      'CrowsNest': 'CrowsNest',
       'Forcefield': 'ForceField',
       'HakurvanLauncher': 'HakurvianLauncher',
       'SolarPanels': 'SolarFarm',
-      'YoYo': 'Yo-Yo',
+      'YoYo': 'YoYo',
       'AlienLeeches': 'Leeches',
       'KirgSalamanderPup': 'SalamanderPup',
       'OuroborusStatue': 'OuroborosStatue',
       'CosmicAmulet1': 'CosmicAmulet',
       'CrusherClaw1': 'CrusherClaw',
       'TommyGun': 'TommooGun',
-      'MortarandPestle': 'Mortar&Pestle',
+      'MortarandPestle': 'MortarPestle',
       'Silencer ': 'Silencer',
       'GumballRed': 'RedGumball',
       'GumballGreen': 'GreenGumball',
@@ -51,7 +51,7 @@ const cleanFileName = (fileName: string): string => {
       'Fireballs': 'CharCole',
       'Snowtel': 'Igloo',
       'FlashGrenade': 'Flashbang',
-      'CaptainsWheel': 'Captain\'sWheel',
+      'CaptainsWheel': 'CaptainsWheel',
       'Seaweed1': 'Seaweed',
       'Ring': 'SoulRing',
       'AvantGuard': 'Cybersecurity',

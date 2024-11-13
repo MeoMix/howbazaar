@@ -1,12 +1,12 @@
 import fs from 'fs';
 import path from 'path';
-import cardsJson from './src/lib/v2_Cards.json';
-import monstersJson from './src/lib/v2_Monsters.json';
-import dayHoursJson from './src/lib/v2_DayHours.json';
-import { parseJson as parseCardsJson } from './src/lib/cardsJsonParser.ts';
-import { parseJson as parseMonstersJson } from './src/lib/monstersJsonParser.ts';
-import { parseJson as parseDayHoursJson } from './src/lib/dayHoursJsonParser.ts';
-import type { CardsJson, DayHoursJson, MonstersJson } from './src/lib/types.ts';
+import cardsJson from '../src/lib/v2_Cards.json';
+import monstersJson from '../src/lib/v2_Monsters.json';
+import dayHoursJson from '../src/lib/v2_DayHours.json';
+import { parseJson as parseCardsJson } from '../src/lib/cardsJsonParser.ts';
+import { parseJson as parseMonstersJson } from '../src/lib/monstersJsonParser.ts';
+import { parseJson as parseDayHoursJson } from '../src/lib/dayHoursJsonParser.ts';
+import type { CardsJson, DayHoursJson, MonstersJson } from '../src/lib/types.ts';
 
 // Define the output file paths
 const processedCardsPath = path.resolve('./src/lib/processedCards.json');
