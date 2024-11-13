@@ -1,8 +1,0 @@
-{
-    "rewrites": [
-        {
-            "source": "/sneaky/:match*",
-            "destination": "https://howbazaar.gg/_vercel/insights/:match*"
-        }
-    ]
-}

@@ -1,14 +1,3 @@
-<svelte:head>
-    <script>
-        window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-    </script>
-    {#if import.meta.env.MODE === 'development'}
-        <script async src="https://va.vercel-scripts.com/v1/script.debug.js" data-endpoint="/sneaky"></script>
-    {:else}
-        <script async src="/sneaky/script.js" data-endpoint="/sneaky"></script>
-    {/if}
-</svelte:head>
-
 <script lang="ts">
     import "../app.css";
     import { dev } from "$app/environment";
