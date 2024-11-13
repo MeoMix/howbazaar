@@ -3,8 +3,8 @@ import path from 'path';
 import sharp from 'sharp';
 
 // Define the paths
-const imagesFolder = "./scripts/images/webp-items/";
-const outputFolder = "./scripts/images/webp-items/resized";
+const imagesFolder = "./scripts/images/webp-skills/";
+const outputFolder = "./scripts/images/webp-skills/resized";
 
 async function checkAndResizeImages() {
     if (!fs.existsSync(outputFolder)) {
@@ -26,6 +26,8 @@ async function checkAndResizeImages() {
             // Skip resizing if image is already 256x256 or smaller
             if (width <= 256 && height <= 256) {
                 console.log(`Skipping ${file} as it is already 256x256 or smaller.`);
+                await image.toFile(path.join(outputFolder, file));
+
                 continue;
             }
 

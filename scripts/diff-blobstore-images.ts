@@ -2,7 +2,6 @@ import { promises as fs } from 'fs';
 import { list } from '@vercel/blob';
 import dotenv from 'dotenv';
 
-
 import cardsJson from '../src/lib/v2_Cards.json';
 import monstersJson from '../src/lib/v2_Monsters.json';
 import dayHoursJson from '../src/lib/v2_DayHours.json';

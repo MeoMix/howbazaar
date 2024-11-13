@@ -2,8 +2,8 @@ import fs from 'fs';
 import path from 'path';
 import sharp from 'sharp';
 
-const inputFolder = './scripts/images/items/';
-const outputFolder = './scripts/images/webp-items/';
+const inputFolder = './scripts/images/skills/';
+const outputFolder = './scripts/images/webp-skills/';
 
 // Create output folder if it doesn't exist
 if (!fs.existsSync(outputFolder)) {
@@ -17,9 +17,9 @@ fs.readdir(inputFolder, (err, files) => {
   }
 
   files.forEach(file => {
-    if (path.extname(file).toLowerCase() === '.jpg' || path.extname(file).toLowerCase() === '.jpeg') {
+    if (path.extname(file).toLowerCase() === '.jpg' || path.extname(file).toLowerCase() === '.jpeg' || path.extname(file).toLowerCase() === '.png') {
       const inputPath = path.join(inputFolder, file);
-      const outputPath = path.join(outputFolder, file.replace(/\.(jpg|jpeg)$/i, '.webp'));
+      const outputPath = path.join(outputFolder, file.replace(/\.(jpg|jpeg|png)$/i, '.webp'));
 
       sharp(inputPath)
         .webp({ quality: 80 })

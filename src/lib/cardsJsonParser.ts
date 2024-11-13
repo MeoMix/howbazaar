@@ -561,6 +561,7 @@ function parseItemsAndSkills(cardsJson: CardsJson): ClientSideCard[] {
             size: card.Size,
             heroes: card.Heroes,
             enchantments,
+            artKey: card.ArtKey,
         };
     });
 

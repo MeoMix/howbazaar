@@ -18,6 +18,14 @@
         {card.name}
     </div>
 
+    <img
+        src={`https://viluukiao9kyljph.public.blob.vercel-storage.com/skills/${card.name.replace(/[\s&'-]+/g, "")}.webp`}
+        alt={card.name}
+        class="mb-2 h-[200px]"
+        width={200}
+        loading="lazy"
+    />
+
     <CardBadges primaryBadges={tags.map((text) => ({ text }))} />
 
     <Card size="xl" padding="sm" class="mt-4">
