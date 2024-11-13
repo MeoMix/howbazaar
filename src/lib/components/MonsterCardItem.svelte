@@ -43,7 +43,7 @@
 
     <!-- TODO: consider deriving blob URL from env variable instead of hardcoding -->
     <img
-        src={`https://viluukiao9kyljph.public.blob.vercel-storage.com/images/${card.name.replace(/[\s&'-]+/g, "")}.webp`}
+        src={`https://viluukiao9kyljph.public.blob.vercel-storage.com/items/${card.name.replace(/[\s&'-]+/g, "")}.webp`}
         alt={card.name}
         class="mb-2 h-[200px]"
         width={card.size === "Small" ? 100 : card.size === "Medium" ? 200 : 300}
