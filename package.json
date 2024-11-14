@@ -13,6 +13,7 @@
 		"preprocess-data": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"ESNext\"}' tsx scripts/preprocess-data.ts",
 		"rename-item-images": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"ESNext\"}' tsx scripts/rename-item-images.ts",
 		"rename-skill-images": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"ESNext\"}' tsx scripts/rename-skill-images.ts",
+		"rename-encounter-images": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"ESNext\"}' tsx scripts/rename-encounter-images.ts",
 		"consolidate-images": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"ESNext\"}' tsx scripts/consolidate-images.ts",
 		"upload-images": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"ESNext\"}' tsx scripts/upload-images.ts",
 		"diff-blobstore-images": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"ESNext\"}' tsx scripts/diff-blobstore-images.ts",

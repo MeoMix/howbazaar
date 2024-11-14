@@ -2,8 +2,8 @@ import fs from 'fs';
 import path from 'path';
 import sharp from 'sharp';
 
-const inputFolder = './scripts/images/skills/';
-const outputFolder = './scripts/images/webp-skills/';
+const inputFolder = './scripts/images/encounters/';
+const outputFolder = './scripts/images/webp-encounters/';
 
 // Create output folder if it doesn't exist
 if (!fs.existsSync(outputFolder)) {

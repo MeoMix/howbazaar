@@ -3,8 +3,8 @@ import path from 'path';
 import sharp from 'sharp';
 
 // Define the paths
-const imagesFolder = "./scripts/images/webp-skills/";
-const outputFolder = "./scripts/images/webp-skills/resized";
+const imagesFolder = "./scripts/images/webp-encounters/";
+const outputFolder = "./scripts/images/webp-encounters/resized";
 
 async function checkAndResizeImages() {
     if (!fs.existsSync(outputFolder)) {
@@ -32,7 +32,7 @@ async function checkAndResizeImages() {
             }
 
             // Halve the dimensions as long as they stay above 256x256
-            while (width > 256 && height > 256) {
+            while (width / 2 >= 256 && height / 2 >= 256) {
                 width = Math.floor(width / 2);
                 height = Math.floor(height / 2);
             }

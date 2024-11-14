@@ -9,7 +9,6 @@ import { parseJson as parseMonstersJson } from '../src/lib/monstersJsonParser.ts
 import { parseJson as parseDayHoursJson } from '../src/lib/dayHoursJsonParser.ts';
 import type { CardsJson, DayHoursJson, Monster, MonsterEncounterDay, MonstersJson } from "../src/lib/types";
 import { getMonsterEncounterDays } from "../src/lib/services/monsterEncounterService";
-import sharp from 'sharp';
 
 // Initially missing skills from the original export given to me by Book:
 // 'Icon_SKILL_MON_ToxicFriendship',

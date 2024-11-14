@@ -5,7 +5,7 @@ import dotenv from 'dotenv';
 
 dotenv.config({ path: '.env.development.local' });
 
-const type = 'skills';
+const type = 'monsters';
 const inputFolder = `./scripts/images/webp-${type}/resized`;
 const token = process.env.BLOB_READ_WRITE_TOKEN;
 
