@@ -2,19 +2,18 @@ import fs from 'fs';
 import path from 'path';
 import sharp from 'sharp';
 
-// Define the paths
-const imagesFolder = "./scripts/images/webp-encounters/";
-const outputFolder = "./scripts/images/webp-encounters/resized";
-
-async function checkAndResizeImages() {
+export async function checkAndResizeImages(inputFolder: string, outputFolder: string) {
     if (!fs.existsSync(outputFolder)) {
         fs.mkdirSync(outputFolder);
     }
 
-    const files = fs.readdirSync(imagesFolder).filter(file => file.endsWith('.webp'));
+    const files = fs.readdirSync(inputFolder).filter(file => {
+        const filePath = path.join(inputFolder, file);
+        return fs.statSync(filePath).isFile();
+    });
 
-    for (const file of files) {
-        const filePath = path.join(imagesFolder, file);
+    const resizePromises = files.map(async (file) => {
+        const filePath = path.join(inputFolder, file);
 
         try {
             const image = sharp(filePath);
@@ -26,9 +25,7 @@ async function checkAndResizeImages() {
             // Skip resizing if image is already 256x256 or smaller
             if (width <= 256 && height <= 256) {
                 console.log(`Skipping ${file} as it is already 256x256 or smaller.`);
-                await image.toFile(path.join(outputFolder, file));
-
-                continue;
+                return image.toFile(path.join(outputFolder, file));
             }
 
             // Halve the dimensions as long as they stay above 256x256
@@ -40,15 +37,15 @@ async function checkAndResizeImages() {
             console.log(`Resizing ${file} to ${width}x${height}...`);
 
             // Perform the resize
-            await image
+            return image
                 .resize(width, height)
-                .toFile(path.join(outputFolder, file));
-
-            console.log(`Resized ${file} and saved to resized folder.`);
+                .toFile(path.join(outputFolder, file)).then(() => {
+                    console.log(`Resized ${file} and saved to resized folder.`);
+                });
         } catch (error) {
             console.error(`Failed to process ${file}:`, error);
         }
-    }
-}
+    });
 
-checkAndResizeImages().catch(error => console.error("Error processing images:", error));
+    await Promise.all(resizePromises);
+}

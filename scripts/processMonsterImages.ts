@@ -1,14 +1,19 @@
-import * as fs from 'fs/promises';
+import fs from 'fs';
+import fsPromises from 'fs/promises';
 import path from 'path';
 
 import cardsJson from '../src/lib/v2_Cards.json';
 import monstersJson from '../src/lib/v2_Monsters.json';
 import dayHoursJson from '../src/lib/v2_DayHours.json';
-import { parseJson as parseCardsJson } from '../src/lib/cardsJsonParser.ts';
-import { parseJson as parseMonstersJson } from '../src/lib/monstersJsonParser.ts';
-import { parseJson as parseDayHoursJson } from '../src/lib/dayHoursJsonParser.ts';
+import { parseJson as parseCardsJson } from '../src/lib/cardsJsonParser';
+import { parseJson as parseMonstersJson } from '../src/lib/monstersJsonParser';
+import { parseJson as parseDayHoursJson } from '../src/lib/dayHoursJsonParser';
 import type { CardsJson, DayHoursJson, Monster, MonsterEncounterDay, MonstersJson } from "../src/lib/types";
 import { getMonsterEncounterDays } from "../src/lib/services/monsterEncounterService";
+import { checkAndResizeImages } from './checkAndResizeImages';
+import { convertImagesToAvif } from './convertImagesToAvif';
+import sharp from 'sharp';
+import { getSanitizedFileName, removeSpecialCharacters } from './stringUtils';
 
 // NOTES:
 // Got the majority of encounter images by searching for _Portrait and exporting all those that started with Monster and ended in Portrait
@@ -25,9 +30,31 @@ import { getMonsterEncounterDays } from "../src/lib/services/monsterEncounterSer
 // 'EnclaveRevenant', -- prefixed with Event
 // 'Robo-Bouncer' -- only one copy exists (with the BG suffix), named Robobouncer
 
-const assetPath = './scripts/images/encounters/';
+const inputDirectory = './scripts/images/';
+const assetType = 'monsters';
+const assetPath = `${inputDirectory}${assetType}/`;
+const outputDirectory = './static/images/';
 
-async function renameSkillImages() {
+// Define a mapping for manual overrides with shorthand names
+const nameToFileMap: Record<string, string> = {
+    'DireInglet': 'DireIngle',
+    'HakurvianRocketTrooper': 'HarkuvianRocketTrooper',
+    'LordoftheWastes': 'LordOfTheWastes',
+    'BurninatorBot': 'IncinerationBot',
+    'ShockTrooper': 'Shocktrooper',
+    'ScoutTrooper': 'Scouttrooper',
+    'PropertyBaron': 'PropertyMogul',
+    'KyverDrone': 'KyverNest',
+    'TrashGolem': 'TrashBandit',
+    'RogueScrapper': 'RogueScraper',
+    'TempestFlamedancer': 'TempestBravo',
+    'Thug': 'Mugger',
+    'DeathKnightReaper': 'Reaper',
+    'DrVortex': 'MadScientist',
+    'RoboBouncer': 'Robobouncer'
+};
+
+async function processMonsterImages() {
     const parsedCards = parseCardsJson(cardsJson as CardsJson);
     const parsedMonsters = parseMonstersJson(monstersJson as MonstersJson);
     const parsedDayHours = parseDayHoursJson(dayHoursJson as DayHoursJson);
@@ -36,31 +63,12 @@ async function renameSkillImages() {
     const monsterEncounterNames = monsterEncounterDays.flatMap(({ groups }) =>
         groups.flatMap(group =>
             group.flatMap(monsterEncounter =>
-                monsterEncounter.cardName.replace(/\s+/g, '').replace(/[-'&]/g, '')
+                removeSpecialCharacters(monsterEncounter.cardName)
             )
         )
     );
 
     console.log('monsterEncounterNames', monsterEncounterNames);
-
-    // Define a mapping for manual overrides with shorthand names
-    const nameToFileMap: Record<string, string> = {
-        'DireInglet': 'DireIngle',
-        'HakurvianRocketTrooper': 'HarkuvianRocketTrooper',
-        'LordoftheWastes': 'LordOfTheWastes',
-        'BurninatorBot': 'IncinerationBot',
-        'ShockTrooper': 'Shocktrooper',
-        'ScoutTrooper': 'Scouttrooper',
-        'PropertyBaron': 'PropertyMogul',
-        'KyverDrone': 'KyverNest',
-        'TrashGolem': 'TrashBandit',
-        'RogueScrapper': 'RogueScraper',
-        'TempestFlamedancer': 'TempestBravo',
-        'Thug': 'Mugger',
-        'DeathKnightReaper': 'Reaper',
-        'Dr.Vortex': 'MadScientist',
-        'RoboBouncer': 'Robobouncer'
-    };
 
     // Adjust the mapping to the full expected file name format
     const adjustedNameToFileMap = Object.fromEntries(
@@ -70,7 +78,7 @@ async function renameSkillImages() {
     // Start by cleaning the files to make comparison easier.
     await cleanFileNames(assetPath).catch(console.error);
 
-    const files = await fs.readdir(assetPath);
+    const files = await fsPromises.readdir(assetPath);
 
     // List of files that are not matched by any monsterEncounterNames or adjustedNameToFileMap
     const unmatchedFiles = files.filter(file => {
@@ -102,7 +110,7 @@ async function renameSkillImages() {
     for (const file of unmatchedFiles) {
         const filePath = path.join(assetPath, file);
         try {
-            await fs.unlink(filePath);
+            await fsPromises.unlink(filePath);
             console.log(`Deleted unmatched file: ${file}`);
         } catch (error) {
             console.error(`Failed to delete ${file}:`, error);
@@ -122,12 +130,12 @@ async function renameSkillImages() {
         try {
             // Rename _Portrait files if they exist
             if (await fileExists(originalFilePathPortrait)) {
-                await fs.rename(originalFilePathPortrait, newFilePathPortrait);
+                await fsPromises.rename(originalFilePathPortrait, newFilePathPortrait);
                 console.log(`Renamed ${originalFilePathPortrait} to ${newFilePathPortrait}`);
             }
             // Rename _PortraitBG files if they exist
             if (await fileExists(originalFilePathPortraitBG)) {
-                await fs.rename(originalFilePathPortraitBG, newFilePathPortraitBG);
+                await fsPromises.rename(originalFilePathPortraitBG, newFilePathPortraitBG);
                 console.log(`Renamed ${originalFilePathPortraitBG} to ${newFilePathPortraitBG}`);
             }
         } catch (error) {
@@ -135,25 +143,33 @@ async function renameSkillImages() {
         }
     }
 
-    // Sanitize file names
-    for (const file of files) {
-        const sanitizedFileName = file.replace(/[-'&]/g, '');
+    await sanitizeFileNames(files);
+    await mergeImages(assetPath, `${assetPath}/merged`);
+    await convertImagesToAvif(`${assetPath}/merged`, `${inputDirectory}/${assetType}-avif`);
+    await checkAndResizeImages(`${inputDirectory}/${assetType}-avif`, `${outputDirectory}/${assetType}`);
+}
+
+processMonsterImages().catch(console.error);
+
+async function sanitizeFileNames(files: string[]) {
+    const renamePromises = files.map(async (file) => {
+        const sanitizedFileName = getSanitizedFileName(file);
         const originalFilePath = path.join(assetPath, file);
         const sanitizedFilePath = path.join(assetPath, sanitizedFileName);
 
         // Rename the file only if the sanitized name is different
         if (file !== sanitizedFileName) {
             try {
-                await fs.rename(originalFilePath, sanitizedFilePath);
+                await fsPromises.rename(originalFilePath, sanitizedFilePath);
                 console.log(`Renamed ${file} to ${sanitizedFileName}`);
             } catch (error) {
                 console.error(`Failed to rename ${file}:`, error);
             }
         }
-    }
-}
+    });
 
-renameSkillImages().catch(console.error);
+    await Promise.all(renamePromises);
+}
 
 async function cleanFileNames(folderPath: string) {
     // Define prefixes and suffix to remove
@@ -162,13 +178,13 @@ async function cleanFileNames(folderPath: string) {
     const replacementSuffix = "_Portrait";
 
     // Read all files in the directory
-    const files = await fs.readdir(folderPath);
+    const files = await fsPromises.readdir(folderPath);
 
     for (const file of files) {
         const originalFilePath = path.join(folderPath, file);
 
         // Skip if it's not a file
-        const stats = await fs.stat(originalFilePath);
+        const stats = await fsPromises.stat(originalFilePath);
         if (!stats.isFile()) continue;
 
         // Remove all instances of prefixes from the file name
@@ -187,14 +203,14 @@ async function cleanFileNames(folderPath: string) {
         newFileName = newFileName.replace(/_BG(?=\.[^.]+$)/, '_PortraitBG');
 
         // Sanitize the name
-        newFileName = newFileName.replace(/[-'&]/g, '');
+        newFileName = getSanitizedFileName(newFileName);
 
         // Generate the new file path
         const newFilePath = path.join(folderPath, newFileName);
 
         // Rename the file if the name has changed
         if (originalFilePath !== newFilePath) {
-            await fs.rename(originalFilePath, newFilePath);
+            await fsPromises.rename(originalFilePath, newFilePath);
             console.log(`Renamed: ${file} -> ${newFileName}`);
         }
     }
@@ -202,9 +218,69 @@ async function cleanFileNames(folderPath: string) {
 
 async function fileExists(filePath: string): Promise<boolean> {
     try {
-        await fs.access(filePath);
+        await fsPromises.access(filePath);
         return true;
     } catch {
         return false;
     }
+}
+
+async function mergeImages(inputFolder: string, outputFolder: string) {
+    if (!fs.existsSync(outputFolder)) {
+        fs.mkdirSync(outputFolder, { recursive: true });
+    }
+
+    const files = fs.readdirSync(inputFolder);
+    const portraitMap: Record<string, string> = {};
+
+    // Sort files into portrait and background pairs
+    files.forEach(file => {
+        const match = file.match(/^(.*?)(_Portrait|_PortraitBG)\.png$/);
+        if (match) {
+            const baseName = match[1];
+            if (!portraitMap[baseName]) {
+                portraitMap[baseName] = '';
+            }
+            portraitMap[baseName] += ` ${file}`;
+        }
+    });
+
+    const mergePromises = Object.entries(portraitMap).map(async ([baseName, fileNames]) => {
+        const [portraitFile, backgroundFile] = fileNames.trim().split(' ');
+
+        if (portraitFile && backgroundFile) {
+            // Load both images and composite them
+            const portraitPath = path.join(inputFolder, portraitFile);
+            const backgroundPath = path.join(inputFolder, backgroundFile);
+            const outputPath = path.join(outputFolder, `${baseName}.png`);
+
+            try {
+                const bgImage = sharp(backgroundPath);
+                const { width, height } = await bgImage.metadata();
+
+                await bgImage
+                    .composite([{ input: portraitPath, gravity: 'center' }])
+                    .resize(width, height) // Ensures they match, in case of minor differences
+                    .toFile(outputPath);
+
+                console.log(`Merged ${portraitFile} and ${backgroundFile} into ${outputPath}`);
+            } catch (err) {
+                console.error(`Error merging images for ${baseName}:`, err);
+            }
+        } else {
+            // Only one image found, save it as is
+            const singleFile = portraitFile || backgroundFile;
+            const singleFilePath = path.join(inputFolder, singleFile);
+            const outputPath = path.join(outputFolder, `${baseName}.png`);
+
+            try {
+                await sharp(singleFilePath).toFile(outputPath);
+                console.log(`Saved ${singleFile} as ${outputPath}`);
+            } catch (err) {
+                console.error(`Error saving image for ${baseName}:`, err);
+            }
+        }
+    });
+
+    await Promise.all(mergePromises);
 }

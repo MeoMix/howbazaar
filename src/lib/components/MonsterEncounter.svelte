@@ -1,52 +1,17 @@
 <script lang="ts">
     import type { MonsterEncounter as MonsterEncounterType } from "$lib/types";
-    import { onMount } from "svelte";
     import MonsterCardItem from "./MonsterCardItem.svelte";
     import MonsterCardSkill from "./MonsterCardSkill.svelte";
 
     const { monsterEncounter }: { monsterEncounter: MonsterEncounterType } =
         $props();
-    const sanitizedCardName = $derived(
-        monsterEncounter.cardName.replace(/[\s&'-]+/g, ""),
-    );
-
-    // Check if the _Portrait image exists
-    let portraitExists = $state(false);
-    onMount(async () => {
-        try {
-            const response = await fetch(
-                `https://viluukiao9kyljph.public.blob.vercel-storage.com/monsters/${sanitizedCardName}_Portrait.webp`,
-            );
-            portraitExists = response.ok;
-        } catch {
-            portraitExists = false;
-        }
-    });
 </script>
 
-<div class="font-bold text-2xl mb-2">{monsterEncounter.cardName}</div>
+<div class="mt-8">
+    <div class="font-bold text-3xl mb-1">
+        {monsterEncounter.cardName}
+    </div>
 
-<div class="relative w-[256px] h-[256px] mb-2">
-    <img
-        src={`https://viluukiao9kyljph.public.blob.vercel-storage.com/monsters/${sanitizedCardName}_PortraitBG.webp`}
-        alt={`${sanitizedCardName} Background Portrait`}
-        class="absolute top-0 left-0 h-full w-full"
-        width={256}
-        height={256}
-        loading="lazy"
-    />
-    {#if portraitExists}
-        <img
-            src={`https://viluukiao9kyljph.public.blob.vercel-storage.com/monsters/${sanitizedCardName}_Portrait.webp`}
-            alt={`${sanitizedCardName} Portrait`}
-            class="absolute top-0 left-0 h-full w-full"
-            width={256}
-            height={256}
-            loading="lazy"
-        />
-    {/if}
-</div>
-<div>
     <div class="flex mb-1 gap-4">
         <span class="font-semibold w-24 text-right capitalize whitespace-nowrap"
             >Health</span
@@ -64,7 +29,7 @@
     <div class="font-semibold text-xl mt-4 mb-2">Cards</div>
 
     <div
-        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
+        class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-2"
     >
         {#each monsterEncounter.items as item}
             <MonsterCardItem
@@ -78,7 +43,7 @@
     {#if monsterEncounter.skills.length > 0}
         <div class="font-semibold text-xl mt-4 mb-2">Skills</div>
         <div
-            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
+            class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-2"
         >
             {#each monsterEncounter.skills as skill}
                 <MonsterCardSkill card={skill.card} tierType={skill.tierType} />

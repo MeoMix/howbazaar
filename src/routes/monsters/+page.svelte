@@ -1,11 +1,11 @@
-<svelte:head>
-    <title>Monsters · How Bazaar</title>
-</svelte:head>
-
 <script lang="ts">
     import CardFilter from "$lib/components/CardFilter.svelte";
     import MonsterEncounter from "$lib/components/MonsterEncounter.svelte";
-    import type { MonsterEncounterDay } from "$lib/types";
+    import MonsterEncounterPreview from "$lib/components/MonsterEncounterPreview.svelte";
+    import type {
+        MonsterEncounterDay,
+        MonsterEncounter as MonsterEncounterType,
+    } from "$lib/types";
 
     const { data }: { data: { monsterEncounterDays: MonsterEncounterDay[] } } =
         $props();
@@ -22,13 +22,29 @@
     const filteredMonsterEncounterDays = $derived(
         monsterEncounterDays.filter(({ day }) => selectedDays.includes(day)),
     );
+
+    let selectedMonsterEncounter = $state() as MonsterEncounterType | undefined;
+    function toggleEncounter(monsterEncounter: MonsterEncounterType) {
+        if (selectedMonsterEncounter?.cardId === monsterEncounter.cardId) {
+            selectedMonsterEncounter = undefined;
+        } else {
+            selectedMonsterEncounter = monsterEncounter;
+        }
+    }
+
+    // TODO: No idea if this is the correct way to do this, feels like it's not
+    $effect.pre(() => {
+        if (selectedDays) {
+            selectedMonsterEncounter = undefined;
+        }
+    });
 </script>
 
-<div class="text-3xl py-4">
-    This is all a work in progress :) Check back soon for a much improved UI
-</div>
+<svelte:head>
+    <title>Monsters · How Bazaar</title>
+</svelte:head>
 
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
+<div class="my-4">
     <CardFilter
         label="Day"
         options={monsterEncounterDays.map(({ day }) => day)}
@@ -37,18 +53,26 @@
     />
 </div>
 
-<div class="space-y-4">
-    {#each filteredMonsterEncounterDays as monsterEncounterDay}
-        <div class="text-3xl bold">
-            Day {monsterEncounterDay.day}
-        </div>
+{#each filteredMonsterEncounterDays as monsterEncounterDay}
+    <div class="text-2xl font-bold">
+        Day {monsterEncounterDay.day}
+    </div>
 
+    <div class="grid gap-2 justify-items-center grid-cols-5">
         {#each monsterEncounterDay.groups as monsterEncounters}
-            <div>
-                {#each monsterEncounters as monsterEncounter}
-                    <MonsterEncounter {monsterEncounter} />
-                {/each}
-            </div>
+            {#each monsterEncounters as monsterEncounter}
+                <MonsterEncounterPreview
+                    {monsterEncounter}
+                    {toggleEncounter}
+                    isActive={!selectedMonsterEncounter ||
+                        selectedMonsterEncounter?.cardId ===
+                            monsterEncounter.cardId}
+                />
+            {/each}
         {/each}
-    {/each}
-</div>
+    </div>
+
+    {#if selectedMonsterEncounter}
+        <MonsterEncounter monsterEncounter={selectedMonsterEncounter} />
+    {/if}
+{/each}
