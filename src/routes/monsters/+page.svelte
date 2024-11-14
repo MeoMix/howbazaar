@@ -1,5 +1,5 @@
 <svelte:head>
-    <title>How Bazaar - Monsters</title>
+    <title>Monsters · How Bazaar</title>
 </svelte:head>
 
 <script lang="ts">

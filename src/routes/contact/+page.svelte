@@ -1,5 +1,5 @@
 <svelte:head>
-    <title>How Bazaar - Contact & Upcoming Features</title>
+    <title>Contact & Upcoming Features · How Bazaar</title>
 </svelte:head>
 
 <div class="bold text-4xl mb-8">Hi!</div>

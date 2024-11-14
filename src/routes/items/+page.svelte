@@ -1,5 +1,5 @@
 <svelte:head>
-    <title>How Bazaar - Items</title>
+    <title>Items · How Bazaar</title>
 </svelte:head>
 
 <script lang="ts">
