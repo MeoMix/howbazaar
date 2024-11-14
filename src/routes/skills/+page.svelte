@@ -1,3 +1,7 @@
+<svelte:head>
+    <title>How Bazaar - Skills</title>
+</svelte:head>
+
 <script lang="ts">
     import type { ClientSideCard, ClientSideCardSkill, ClientSideHero, ClientSideHiddenTag, ClientSideSize, ClientSideTag, ClientSideTierType } from "$lib/types";
     import CardSkill from "$lib/components/CardSkill.svelte";

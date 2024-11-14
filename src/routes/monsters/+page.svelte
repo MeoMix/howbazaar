@@ -1,3 +1,7 @@
+<svelte:head>
+    <title>How Bazaar - Monsters</title>
+</svelte:head>
+
 <script lang="ts">
     import CardFilter from "$lib/components/CardFilter.svelte";
     import MonsterEncounter from "$lib/components/MonsterEncounter.svelte";

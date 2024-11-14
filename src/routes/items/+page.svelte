@@ -1,3 +1,7 @@
+<svelte:head>
+    <title>How Bazaar - Items</title>
+</svelte:head>
+
 <script lang="ts">
     import type { ClientSideCard, ClientSideCardItem, ClientSideHero, ClientSideHiddenTag, ClientSideSize, ClientSideTag, ClientSideTierType } from "$lib/types";
     import CardItem from "$lib/components/CardItem.svelte";
