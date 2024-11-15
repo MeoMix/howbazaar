@@ -57,25 +57,29 @@
 </div>
 
 {#each filteredMonsterEncounterDays as monsterEncounterDay}
-    <div class="text-2xl font-bold">
-        Day {monsterEncounterDay.day}
-    </div>
+    <div class="mb-8">
+        <div class="text-2xl font-bold">
+            Day {monsterEncounterDay.day}
+        </div>
 
-    <div class="grid gap-2 justify-items-center grid-cols-5">
-        {#each monsterEncounterDay.groups as monsterEncounters}
-            {#each monsterEncounters as monsterEncounter}
-                <MonsterEncounterPreview
-                    {monsterEncounter}
-                    {toggleEncounter}
-                    isActive={!selectedMonsterEncounter ||
-                        selectedMonsterEncounter?.cardId ===
-                            monsterEncounter.cardId}
-                />
+        <div class="grid gap-2 justify-items-center grid-cols-5">
+            {#each monsterEncounterDay.groups as monsterEncounters}
+                {#each monsterEncounters as monsterEncounter}
+                    <MonsterEncounterPreview
+                        {monsterEncounter}
+                        {toggleEncounter}
+                        isActive={!selectedMonsterEncounter ||
+                            selectedMonsterEncounter?.cardId ===
+                                monsterEncounter.cardId}
+                    />
+                {/each}
             {/each}
-        {/each}
-    </div>
+        </div>
 
-    {#if selectedMonsterEncounter}
-        <MonsterEncounter monsterEncounter={selectedMonsterEncounter} />
-    {/if}
+        {#if selectedMonsterEncounter && monsterEncounterDay.groups
+                .flat()
+                .some((encounter) => encounter.cardId === selectedMonsterEncounter?.cardId)}
+            <MonsterEncounter monsterEncounter={selectedMonsterEncounter} />
+        {/if}
+    </div>
 {/each}
