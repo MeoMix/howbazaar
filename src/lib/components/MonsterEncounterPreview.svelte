@@ -21,15 +21,16 @@
     }
 </script>
 
-<button
-    onclick={viewDetails}
-    class="relative w-full h-full flex flex-col items-center justify-start"
->
-    <div class="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl font-bold mb-1 text-center w-full h-12 flex items-center justify-center overflow-hidden">
+<button onclick={viewDetails} class="w-full flex flex-col items-center group">
+    <div
+        class="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl font-bold mb-1 text-center w-full h-12 flex items-center justify-center overflow-hidden"
+    >
         {monsterEncounter.cardName}
     </div>
 
-    <div class="relative rounded-full overflow-hidden transition-all transform group w-full max-w-[10rem] aspect-[1/1]">
+    <div
+        class="relative rounded-full overflow-hidden transition-all transform w-full max-w-[10rem] aspect-[1/1]"
+    >
         <img
             src={`/images/monsters/${sanitizedCardName}.avif`}
             alt={`${monsterEncounter.cardName}`}
@@ -40,7 +41,10 @@
         <div
             class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
         >
-            <span class="text-white font-bold text-xs sm:text-sm md:text-base lg:text-lg">View</span>
+            <span
+                class="text-white font-bold text-xs sm:text-sm md:text-base lg:text-lg"
+                >View</span
+            >
         </div>
     </div>
 </button>
