@@ -39,15 +39,24 @@ export function filterItemAndSkillCards<T extends ClientSideCardItem | ClientSid
             (card.startingTier && selectedTiers.includes(card.startingTier));
 
         // Make this a looser match than "includes" to support "Economy" matching "EconomyReference"
+        // Don't just use "startsWith" though because there's "Heal" and "Health" which are distinct.
         const matchesTag = selectedTags.length === 0 || (card.tags && (
             mustMatchAllTags
                 ? selectedTags.every((tag) =>
-                    card.tags.some((cardTag) => cardTag.startsWith(tag)) ||
-                    card.hiddenTags.some((hiddenTag) => hiddenTag.startsWith(tag))
+                    card.tags.some((cardTag) => 
+                        cardTag === tag || cardTag === `${tag}Reference`
+                    ) ||
+                    card.hiddenTags.some((hiddenTag) => 
+                        hiddenTag === tag || hiddenTag === `${tag}Reference`
+                    )
                 )
                 : selectedTags.some((tag) =>
-                    card.tags.some((cardTag) => cardTag.startsWith(tag)) ||
-                    card.hiddenTags.some((hiddenTag) => hiddenTag.startsWith(tag))
+                    card.tags.some((cardTag) => 
+                        cardTag === tag || cardTag === `${tag}Reference`
+                    ) ||
+                    card.hiddenTags.some((hiddenTag) => 
+                        hiddenTag === tag || hiddenTag === `${tag}Reference`
+                    )
                 )
         ));
 
