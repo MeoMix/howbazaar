@@ -66,8 +66,8 @@
     </div>
 </div>
 
-<div class="mx-auto text-center bg-yellow-400 border-4 border-black p-4 max-w-xs">
-    <img src="https://viluukiao9kyljph.public.blob.vercel-storage.com/webring.webp" loading="lazy" alt="Join the Webring" class="mx-auto mb-4 border-2 border-black">
+<div class="mx-auto text-center bg-yellow-400 border-4 border-black p-4 my-4 max-w-xs">
+    <img src="/images/webring.avif" loading="lazy" alt="Join the Webring" class="mx-auto mb-4 border-2 border-black">
 
     <a href="https://bazaarrank.com/" target="_blank" class="inline-block mx-2 my-2 py-2 px-4 bg-orange-500 text-white border-2 border-black font-bold uppercase shadow-lg hover:bg-green-500">
         Visit Our Partner Site - Bazaarrank
