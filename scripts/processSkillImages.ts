@@ -7,8 +7,15 @@ import dayHoursJson from '../src/lib/v2_DayHours.json';
 import { parseJson as parseCardsJson } from '../src/lib/cardsJsonParser.ts';
 import { parseJson as parseMonstersJson } from '../src/lib/monstersJsonParser.ts';
 import { parseJson as parseDayHoursJson } from '../src/lib/dayHoursJsonParser.ts';
-import type { CardsJson, DayHoursJson, Monster, MonsterEncounterDay, MonstersJson } from "../src/lib/types";
-import { getMonsterEncounterDays } from "../src/lib/services/monsterEncounterService";
+import type { CardsJson, DayHoursJson, Monster, MonsterEncounterDay, MonstersJson } from "../src/lib/types.ts";
+import { getMonsterEncounterDays } from "../src/lib/services/monsterEncounterService.ts";
+import { flattenDirectory } from './flattenDirectory.ts';
+import { removeSpecialCharacters } from './utils/stringUtils.ts';
+import { deleteFiles } from './utils/fileUtils.ts';
+import { checkAndResizeImages, convertImagesToAvif } from './utils/imageUtils.ts';
+
+// Command:
+// .\AssetStudioModCLI "C:\Program Files\Tempo Launcher - Beta\The Bazaar game_64\bazaarwinprodlatest\TheBazaar_Data\StreamingAssets\aa\StandaloneWindows64\defaultlocalgroup_assets_all.bundle" --filter-by-name Icon_SKILL -t tex2d -o ./skills
 
 // Initially missing skills from the original export given to me by Book:
 // 'Icon_SKILL_MON_ToxicFriendship',
@@ -17,9 +24,16 @@ import { getMonsterEncounterDays } from "../src/lib/services/monsterEncounterSer
 // 'Icon_SKILL_MON_AugmentedWeaponry',
 // 'Icon_SKILL_MON_AugmentedDefenses',
 // 'Icon_SKILL_MON_PurifyingFlame'
-const assetPath = './scripts/images/skills/';
+const inputDirectory = './scripts/images/';
+const assetType = 'skills';
+const assetPath = `${inputDirectory}${assetType}/`;
+const outputDirectory = './static/images/';
 
+// TODO: This seems to be appending (1) onto files in a failure scenario
 async function renameSkillImages() {
+    // AssetStudioModCLI exports images using a folder hierarchy which isn't helpful - the files are named in a distinct way so just flatten the directory.
+    await flattenDirectory(assetPath);
+
     // Parse data
     const parsedCards = parseCardsJson(cardsJson as CardsJson);
     const parsedMonsters = parseMonstersJson(monstersJson as MonstersJson);
@@ -33,7 +47,7 @@ async function renameSkillImages() {
                 group.flatMap(monsterEncounter =>
                     monsterEncounter.skills.map(skill => {
                         const { name, artKey } = skill.card;
-                        const nameWithoutSpecialCharacters = name.replace(/[\s&'-]+/g, "");
+                        const nameWithoutSpecialCharacters = removeSpecialCharacters(name);
                         const artKeyWithoutExtension = path.parse(artKey).name; // Remove file extension from artKey
                         return [artKeyWithoutExtension, { artKey: artKeyWithoutExtension, nameWithoutSpecialCharacters }];
                     })
@@ -63,27 +77,28 @@ async function renameSkillImages() {
         if (originalFile) {
             const originalFilePath = `${assetPath}${originalFile}`;
             const newFilePath = `${assetPath}${nameWithoutSpecialCharacters}${path.extname(originalFile)}`;
-    
+
             // Rename the file if the new name is different from the current name
             if (originalFilePath !== newFilePath) {
                 await fs.rename(originalFilePath, newFilePath);
                 console.log(`Renamed "${originalFile}" to "${nameWithoutSpecialCharacters}${path.extname(originalFile)}"`);
             }
-    
+
             // Add the original file name to renamedFiles
             renamedFiles.add(originalFile);
         }
     }
-    
+
     // Delete files that weren't renamed (exclude files that were renamed by original name)
     const unusedFiles = files.filter(file => !renamedFiles.has(file));
-    for (const unusedFile of unusedFiles) {
-        const unusedFilePath = `${assetPath}${unusedFile}`;
-        await fs.unlink(unusedFilePath);
-        console.log(`Deleted unused file: "${unusedFile}"`);
-    }
+    await deleteFiles(unusedFiles, assetPath);
 
     console.log("All skill images renamed and unused files deleted.");
+
+    // TODO: sanitizeFileNames ?
+
+    await convertImagesToAvif(`${assetPath}`, `${inputDirectory}/${assetType}-avif`);
+    await checkAndResizeImages(`${inputDirectory}/${assetType}-avif`, `${outputDirectory}/${assetType}`);
 }
 
 renameSkillImages().catch(console.error);

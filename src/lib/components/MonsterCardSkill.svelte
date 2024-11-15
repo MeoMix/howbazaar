@@ -4,11 +4,14 @@
     import CardBadges from "./CardBadges.svelte";
     import { filterTags } from "$lib/utils/filterUtils";
     import { getTierClass } from "$lib/utils/classUtils";
+    import { removeSpecialCharacters } from "$lib/utils/stringUtils";
 
     const {
         card,
         tierType,
     }: { card: ClientSideCardSkill; tierType: ClientSideTierType } = $props();
+
+    const sanitizedCardName = $derived(removeSpecialCharacters(card.name));
 
     const tags = $derived(filterTags(card.tags, card.hiddenTags));
 </script>
@@ -19,7 +22,7 @@
     </div>
 
     <img
-        src={`https://viluukiao9kyljph.public.blob.vercel-storage.com/skills/${card.name.replace(/[\s&'-]+/g, "")}.webp`}
+        src={`/images/skills/${sanitizedCardName}.avif`}
         alt={card.name}
         class="mb-2 h-[200px]"
         width={200}

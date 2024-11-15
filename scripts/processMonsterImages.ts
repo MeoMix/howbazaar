@@ -10,10 +10,10 @@ import { parseJson as parseMonstersJson } from '../src/lib/monstersJsonParser';
 import { parseJson as parseDayHoursJson } from '../src/lib/dayHoursJsonParser';
 import type { CardsJson, DayHoursJson, Monster, MonsterEncounterDay, MonstersJson } from "../src/lib/types";
 import { getMonsterEncounterDays } from "../src/lib/services/monsterEncounterService";
-import { checkAndResizeImages } from './checkAndResizeImages';
-import { convertImagesToAvif } from './convertImagesToAvif';
 import sharp from 'sharp';
-import { getSanitizedFileName, removeSpecialCharacters } from './stringUtils';
+import { getSanitizedFileName, removeSpecialCharacters } from './utils/stringUtils';
+import { deleteFiles } from './utils/fileUtils';
+import { checkAndResizeImages, convertImagesToAvif } from './utils/imageUtils';
 
 // NOTES:
 // Got the majority of encounter images by searching for _Portrait and exporting all those that started with Monster and ended in Portrait
@@ -106,16 +106,7 @@ async function processMonsterImages() {
 
     console.log('Deleting unmatched');
 
-    // Delete unmatched files
-    for (const file of unmatchedFiles) {
-        const filePath = path.join(assetPath, file);
-        try {
-            await fsPromises.unlink(filePath);
-            console.log(`Deleted unmatched file: ${file}`);
-        } catch (error) {
-            console.error(`Failed to delete ${file}:`, error);
-        }
-    }
+    await deleteFiles(unmatchedFiles, assetPath);
 
     console.log('Fixing names');
 
@@ -151,6 +142,7 @@ async function processMonsterImages() {
 
 processMonsterImages().catch(console.error);
 
+// TODO: I forget why this is necessary
 async function sanitizeFileNames(files: string[]) {
     const renamePromises = files.map(async (file) => {
         const sanitizedFileName = getSanitizedFileName(file);
