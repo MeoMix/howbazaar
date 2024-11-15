@@ -1,130 +1,245 @@
 import * as fs from 'fs';
 import * as path from 'path';
 
+import cardsJson from '../src/lib/v2_Cards.json';
+import monstersJson from '../src/lib/v2_Monsters.json';
+import dayHoursJson from '../src/lib/v2_DayHours.json';
+import { deleteFiles } from './utils/fileUtils';
+import { parseJson as parseCardsJson } from '../src/lib/cardsJsonParser.ts';
+import { parseJson as parseMonstersJson } from '../src/lib/monstersJsonParser.ts';
+import { parseJson as parseDayHoursJson } from '../src/lib/dayHoursJsonParser.ts';
+import type { CardsJson, DayHoursJson, Monster, MonsterEncounterDay, MonstersJson } from "../src/lib/types.ts";
+import { getMonsterEncounterDays } from "../src/lib/services/monsterEncounterService.ts";
+import { removeSpecialCharacters } from './utils/stringUtils';
+import { checkAndResizeImages, convertImagesToAvif } from './utils/imageUtils';
+
+// Command:
+// Needs to be whole folder - not all assets found in defaultlocalgroup_assets_all
+// .\AssetStudioModCLI "C:\Program Files\Tempo Launcher - Beta\The Bazaar game_64\bazaarwinprodlatest\TheBazaar_Data\StreamingAssets\aa\StandaloneWindows64" --filter-by-name CF_,PNG_,Ectoplasm,Seaweed,Octopus,Snowflake -g none --image-format jpg -t tex2d -o ./items
+
+// Results in missing these exports:
+// Missing 10 item images: [
+//   'Ectoplasm', //Ectoplasm
+//   'BarofGold', // this one was just a file name issue
+//   'IllusoRay', // this is because this one is formatted as PNG_S_VAN_IllusoRay
+//   'ThievesGuildMedallion', // PNG_S_NTR_ThievesGuildMedallion
+//   'Seaweed', // Seaweed1
+//   'RedPigglesX', // duplicate file
+//   'PeskyPete', // CF_S_Van_PeskyPete_D
+//   'Barrel', // CF_M_Van_Barrel_D
+//   'TinyCutlass', // Reuse cutlass
+//   'Octopus', // Flat_Octopus
+//   'Snowflake' //Snowflake
+// ]
+
 // Directory containing your images
-const directoryPath = './scripts/images/items/';
-
-// Parse command-line arguments to check for dry run mode
-const isDryRun = process.argv.includes('--dry-run');
-
-// Check if a file ends with "_Mask.jpeg" and should be deleted
-const shouldDelete = (fileName: string): boolean => {
-  return fileName.endsWith('_Mask.jpeg') || fileName.endsWith('._FX.jpeg');
-};
+const inputDirectory = './scripts/images/';
+const assetType = 'items';
+const assetPath = `${inputDirectory}${assetType}/`;
+const outputDirectory = './static/images/';
 
 // Remove unwanted prefixes and suffixes from the filename
 const cleanFileName = (fileName: string): string => {
-    // Define one-off renaming rules
-    const renameRules: { [key: string]: string } = {
-      'Fangs': 'Fang',
-      'BlueBananas': 'Bluenanas',
-      'MedKit': 'Medkit',
-      'Cinder': 'Cinders',
-      'VialOfBlood': 'VialofBlood',
-      'EyeOfTheColossus': 'EyeoftheColossus',
-      'SoulOfTheDistrict': 'SouloftheDistrict',
-      'Saphire': 'Sapphire',
-      'GoodDog': 'Dog',
-      'Bar of Gold': 'BarofGold',
-      'ClockworkDaggers': 'ClockworkBlades',
-      'GolfClub': 'GolfClubs',
-      'CrowsNest': 'CrowsNest',
-      'Forcefield': 'ForceField',
-      'HakurvanLauncher': 'HakurvianLauncher',
-      'SolarPanels': 'SolarFarm',
-      'YoYo': 'YoYo',
-      'AlienLeeches': 'Leeches',
-      'KirgSalamanderPup': 'SalamanderPup',
-      'OuroborusStatue': 'OuroborosStatue',
-      'CosmicAmulet1': 'CosmicAmulet',
-      'CrusherClaw1': 'CrusherClaw',
-      'TommyGun': 'TommooGun',
-      'MortarandPestle': 'MortarPestle',
-      'Silencer ': 'Silencer',
-      'GumballRed': 'RedGumball',
-      'GumballGreen': 'GreenGumball',
-      'GumballBlue': 'BlueGumball',
-      'GumballYellow': 'YellowGumball',
-      'TuskBayonets': 'TuskedHelm',
-      'PigglesRed': 'RedPigglesA',
-      'Snowball': 'Icicle',
-      'Fireballs': 'CharCole',
-      'Snowtel': 'Igloo',
-      'FlashGrenade': 'Flashbang',
-      'CaptainsWheel': 'CaptainsWheel',
-      'Seaweed1': 'Seaweed',
-      'Ring': 'SoulRing',
-      'AvantGuard': 'Cybersecurity',
-      'Whip': 'MortalCoil',
-      'Sickle': 'IcePick'
-    };
-  
-    // Remove the "CF_" prefix and the following size identifier if present
-    fileName = fileName.replace(/^CF_[SML]_/, '');
-  
-    // Remove any three-letter identifier if present
-    fileName = fileName.replace(/^[A-Z]{3}_/, '');
-  
-    // Check if the file has any underscore suffix like "_D.jpeg" or "_D1.jpeg"
-    const lastUnderscoreIndex = fileName.lastIndexOf('_');
-    if (lastUnderscoreIndex !== -1) {
-      // If there is an underscore in the suffix, remove it and everything after
-      fileName = fileName.slice(0, lastUnderscoreIndex) + path.extname(fileName);
-    }
-  
-    // Apply specific renaming rules if the filename matches any key in renameRules
-    const baseName = path.basename(fileName, path.extname(fileName)); // Get base filename without extension
-    if (renameRules[baseName]) {
-      fileName = renameRules[baseName] + path.extname(fileName); // Replace base name and keep the extension
-    }
-  
-    return fileName;
+  // Define one-off renaming rules
+  const renameRules: { [key: string]: string } = {
+    'Fangs': 'Fang',
+    'BlueBananas': 'Bluenanas',
+    'MedKit': 'Medkit',
+    'Cinder': 'Cinders',
+    'VialOfBlood': 'VialofBlood',
+    'EyeOfTheColossus': 'EyeoftheColossus',
+    'SoulOfTheDistrict': 'SouloftheDistrict',
+    'Saphire': 'Sapphire',
+    'GoodDog': 'Dog',
+    'GoldBar': 'BarofGold',
+    'ClockworkDaggers': 'ClockworkBlades',
+    'GolfClub': 'GolfClubs',
+    'CrowsNest': 'CrowsNest',
+    'Forcefield': 'ForceField',
+    'HakurvanLauncher': 'HakurvianLauncher',
+    'SolarPanels': 'SolarFarm',
+    'YoYo': 'YoYo',
+    'AlienLeeches': 'Leeches',
+    'KirgSalamanderPup': 'SalamanderPup',
+    'OuroborusStatue': 'OuroborosStatue',
+    'CosmicAmulet1': 'CosmicAmulet',
+    'CrusherClaw1': 'CrusherClaw',
+    'TommyGun': 'TommooGun',
+    'MortarandPestle': 'MortarPestle',
+    'Silencer ': 'Silencer',
+    'GumballRed': 'RedGumball',
+    'GumballGreen': 'GreenGumball',
+    'GumballBlue': 'BlueGumball',
+    'GumballYellow': 'YellowGumball',
+    'TuskBayonets': 'TuskedHelm',
+    'PigglesRed': 'RedPigglesA',
+    'Snowball': 'Icicle',
+    'Fireballs': 'CharCole',
+    'Snowtel': 'Igloo',
+    'FlashGrenade': 'Flashbang',
+    'CaptainsWheel': 'CaptainsWheel',
+    'Seaweed1': 'Seaweed',
+    'Ring': 'SoulRing',
+    'AvantGuard': 'Cybersecurity',
+    'Whip': 'MortalCoil',
+    'Sickle': 'IcePick',
+    'Flat_Octopus': 'Octopus',
   };
 
-// Process files with or without making changes based on dry run mode
-const processItemImages = () => {
-  fs.readdir(directoryPath, (err, files) => {
-    if (err) {
-      console.error('Error reading directory:', err);
-      return;
-    }
+  // Remove the "CF_" prefix and the following size identifier if present
+  fileName = fileName.replace(/^(CF|PNG)_[SML]_/, '');
 
-    files.forEach(file => {
-      const filePath = path.join(directoryPath, file);
+  // Remove any three-letter identifier if present (Van, Pyg, etc)
+  fileName = fileName.replace(/^[A-Z]{3}_/i, '');
 
-      // Check if the file should be deleted
-      if (shouldDelete(file)) {
-        if (isDryRun) {
-          console.log(`[Dry Run] Would delete: ${file}`);
-        } else {
-          fs.unlink(filePath, err => {
-            if (err) console.error(`Error deleting ${file}:`, err);
-            else console.log(`Deleted ${file}`);
-          });
-        }
-        return;
-      }
+  // Remove _D or _D1 from end of file name
+  fileName = fileName.replace(/_D\d?$/, '');
 
-      // Generate the new file name
-      const newFileName = cleanFileName(file);
-      const newFilePath = path.join(directoryPath, newFileName);
+  // Apply specific renaming rules if the filename matches any key in renameRules
+  const baseName = path.basename(fileName, path.extname(fileName)); // Get base filename without extension
+  if (renameRules[baseName]) {
+    fileName = renameRules[baseName] + path.extname(fileName); // Replace base name and keep the extension
+  }
 
-      // Check if renaming is needed
-      if (newFileName !== file) {
-        if (isDryRun) {
-          console.log(`[Dry Run] Would rename ${file} to ${newFileName}`);
-        } else {
-          fs.rename(filePath, newFilePath, err => {
-            if (err) console.error(`Error renaming ${file} to ${newFileName}:`, err);
-            else console.log(`Renamed ${file} to ${newFileName}`);
-          });
-        }
-      } else {
-        console.log(`No renaming needed for: ${file}`);
-      }
-    });
-  });
+  return fileName;
 };
 
-// Run the script
-processItemImages();
+// Process files with or without making changes based on dry run mode
+async function processItemImages() {
+  await deleteKnownUselessFiles();
+
+  // Parse data
+  const parsedCards = parseCardsJson(cardsJson as CardsJson);
+  const parsedMonsters = parseMonstersJson(monstersJson as MonstersJson);
+  const parsedDayHours = parseDayHoursJson(dayHoursJson as DayHoursJson);
+  const monsterEncounterDays = getMonsterEncounterDays(parsedCards, parsedMonsters as Monster[], parsedDayHours) as MonsterEncounterDay[];
+
+  const itemCardNames = Array.from(new Set(
+    monsterEncounterDays.flatMap(({ groups }) =>
+      groups.flatMap(group =>
+        group.flatMap(monsterEncounter =>
+          monsterEncounter.items.map(item => {
+            return removeSpecialCharacters(item.card.name);
+          })
+        )
+      )
+    )
+  ).values());
+
+  console.log('Cleaning file names');
+  await cleanFileNames();
+
+  console.log('Duplicating files');
+  await duplicateFiles();
+
+  const files = await fs.promises.readdir(assetPath);
+
+  // Create a map of file -> cleanFileName
+  const fileCleanNameMap = new Map(files.map(file => [file, cleanFileName(path.parse(file).name)]));
+
+  // Extract the clean filenames and card names into sets for quick lookups
+  const cleanedFileNames = new Set(fileCleanNameMap.values());
+  const itemCardNameSet = new Set(itemCardNames);
+
+  // Determine missing file names
+  const missingFileNames = itemCardNames.filter(cardName => !cleanedFileNames.has(cardName));
+
+  // Determine unused files
+  const unusedFiles = Array.from(fileCleanNameMap.entries())
+    .filter(([_, cleanName]) => !itemCardNameSet.has(cleanName))
+    .map(([originalFile]) => originalFile);
+
+  if (unusedFiles.length > 0) {
+    console.log(`Unused files:`, unusedFiles);
+    await deleteFiles(unusedFiles, assetPath);
+  }
+
+  // Exit if there are missing files
+  if (missingFileNames.length > 0) {
+    console.error(`Missing ${missingFileNames.length} item images:`, missingFileNames);
+    return;
+  }
+  
+  await convertImagesToAvif(`${assetPath}`, `${inputDirectory}/${assetType}-avif`);
+  await checkAndResizeImages(`${inputDirectory}/${assetType}-avif`, `${outputDirectory}/${assetType}`);
+}
+
+processItemImages().catch(console.error);
+
+async function deleteKnownUselessFiles() {
+  const files = await fs.promises.readdir(assetPath);
+  const filesToDelete = files.filter(file =>
+    file.endsWith('Mask.jpeg') ||
+    file.endsWith('._FX.jpeg') ||
+    file.endsWith('Portrait.jpeg') ||
+    file.endsWith('PortraitBG.jpeg') ||
+    /_#\d{1,10}\.jpeg$/.test(file) // Matches '_#<numbers>.jpeg', where <numbers> is 1-10 digits
+  );
+
+  await deleteFiles(filesToDelete, assetPath);
+}
+
+async function cleanFileNames() {
+  const files = await fs.promises.readdir(assetPath);
+
+  // Extract full file names, including extensions
+  for (const file of files) {
+    const filePath = path.join(assetPath, file);
+
+    const { name, ext } = path.parse(file); // Split file name and extension
+    const newFileName = `${cleanFileName(name)}${ext}`; // Append the cleaned name with the original extension
+    const newFilePath = path.join(assetPath, newFileName);
+
+    if (newFileName !== file) {
+      try {
+        await fs.promises.rename(filePath, newFilePath);
+        console.log(`Renamed ${file} to ${newFileName}`);
+      } catch (err) {
+        console.error(`Error renaming ${file} to ${newFileName}:`, err);
+      }
+    } else {
+      console.log(`No renaming needed for: ${file}`);
+    }
+  }
+}
+
+async function duplicateFiles() {
+  // Map of files to duplicate
+  const duplicateMappings = {
+    'RedPigglesA': 'RedPigglesX',
+    'Cutlass': 'TinyCutlass'
+  };
+
+  try {
+    const files = await fs.promises.readdir(assetPath);
+    const missingFiles: string[] = [];
+
+    for (const [sourceFile, targetFile] of Object.entries(duplicateMappings)) {
+      // Find source file by name regardless of extension
+      const sourceMatch = files.find(file => path.parse(file).name === sourceFile);
+
+      if (sourceMatch) {
+        const sourceFilePath = path.join(assetPath, sourceMatch);
+        const sourceExt = path.extname(sourceMatch);
+        const targetFilePath = path.join(assetPath, `${targetFile}${sourceExt}`);
+
+        try {
+          // Copy the file
+          await fs.promises.copyFile(sourceFilePath, targetFilePath);
+          console.log(`Copied ${sourceMatch} to ${targetFile}${sourceExt}`);
+        } catch (err) {
+          console.error(`Error copying ${sourceMatch} to ${targetFile}${sourceExt}:`, err.message);
+        }
+      } else {
+        missingFiles.push(sourceFile);
+      }
+    }
+
+    // Log missing files
+    if (missingFiles.length > 0) {
+      console.error('The following files were not found:', missingFiles.join(', '));
+    }
+  } catch (err) {
+    console.error('Error reading directory:', err.message);
+  }
+}

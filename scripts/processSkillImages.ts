@@ -10,11 +10,11 @@ import { parseJson as parseDayHoursJson } from '../src/lib/dayHoursJsonParser.ts
 import type { CardsJson, DayHoursJson, Monster, MonsterEncounterDay, MonstersJson } from "../src/lib/types.ts";
 import { getMonsterEncounterDays } from "../src/lib/services/monsterEncounterService.ts";
 import { removeSpecialCharacters } from './utils/stringUtils.ts';
-import { deleteFiles, flattenDirectory } from './utils/fileUtils.ts';
+import { deleteFiles } from './utils/fileUtils.ts';
 import { checkAndResizeImages, convertImagesToAvif } from './utils/imageUtils.ts';
 
 // Command:
-// .\AssetStudioModCLI "C:\Program Files\Tempo Launcher - Beta\The Bazaar game_64\bazaarwinprodlatest\TheBazaar_Data\StreamingAssets\aa\StandaloneWindows64\defaultlocalgroup_assets_all.bundle" --filter-by-name Icon_SKILL -t tex2d -o ./skills
+// .\AssetStudioModCLI "C:\Program Files\Tempo Launcher - Beta\The Bazaar game_64\bazaarwinprodlatest\TheBazaar_Data\StreamingAssets\aa\StandaloneWindows64\defaultlocalgroup_assets_all.bundle" --filter-by-name Icon_SKILL -g none -t tex2d -o ./skills
 
 // Initially missing skills from the original export given to me by Book:
 // 'Icon_SKILL_MON_ToxicFriendship',
@@ -30,9 +30,6 @@ const outputDirectory = './static/images/';
 
 // TODO: This seems to be appending (1) onto files in a failure scenario
 async function renameSkillImages() {
-    // AssetStudioModCLI exports images using a folder hierarchy which isn't helpful - the files are named in a distinct way so just flatten the directory.
-    await flattenDirectory(assetPath);
-
     // Parse data
     const parsedCards = parseCardsJson(cardsJson as CardsJson);
     const parsedMonsters = parseMonstersJson(monstersJson as MonstersJson);

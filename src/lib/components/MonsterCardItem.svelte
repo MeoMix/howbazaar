@@ -8,6 +8,7 @@
     import { Card } from "flowbite-svelte";
     import CardBadges from "./CardBadges.svelte";
     import { getEnchantmentClass, getTierClass } from "$lib/utils/classUtils";
+    import { removeSpecialCharacters } from "$lib/utils/stringUtils";
 
     const {
         card,
@@ -25,6 +26,7 @@
         ),
     );
 
+    const sanitizedCardName = $derived(removeSpecialCharacters(card.name));
     const tags = $derived(filterTags(card.tags, card.hiddenTags));
 
     const columnSpanClass = $derived(
@@ -41,9 +43,8 @@
         {card.name}
     </div>
 
-    <!-- TODO: consider deriving blob URL from env variable instead of hardcoding -->
     <img
-        src={`https://viluukiao9kyljph.public.blob.vercel-storage.com/items/${card.name.replace(/[\s&'-]+/g, "")}.webp`}
+        src={`/images/items/${sanitizedCardName}.avif`}
         alt={card.name}
         class="mb-2 h-[200px]"
         width={card.size === "Small" ? 100 : card.size === "Medium" ? 200 : 300}
