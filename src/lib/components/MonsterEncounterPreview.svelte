@@ -1,15 +1,14 @@
 <script lang="ts">
-    import type { MonsterEncounter as MonsterEncounterType } from "$lib/types";
+    import type { MonsterEncounter } from "$lib/types";
     import { removeSpecialCharacters } from "$lib/utils/stringUtils";
 
-    // TODO: fix typing of viewDetails
     const {
         monsterEncounter,
         toggleEncounter,
         isActive,
     }: {
-        monsterEncounter: MonsterEncounterType;
-        toggleEncounter: any;
+        monsterEncounter: MonsterEncounter;
+        toggleEncounter: (encounter: MonsterEncounter) => void;
         isActive: boolean;
     } = $props();
     const sanitizedCardName = $derived(
