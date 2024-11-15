@@ -18,9 +18,12 @@
     );
 
     // TODO: Think I should rewrite this to be `selectedDay`
-    let selectedDays = $state([1]);
+    let selectedDays = $state([] as number[]);
     const filteredMonsterEncounterDays = $derived(
-        monsterEncounterDays.filter(({ day }) => selectedDays.includes(day)),
+        monsterEncounterDays.filter(
+            ({ day }) =>
+                selectedDays.length === 0 || selectedDays.includes(day),
+        ),
     );
 
     let selectedMonsterEncounter = $state() as MonsterEncounterType | undefined;
