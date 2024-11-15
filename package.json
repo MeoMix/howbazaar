@@ -13,7 +13,7 @@
 		"preprocess-data": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"ESNext\"}' tsx scripts/preprocess-data.ts",
 		"processSkillImages": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"ESNext\"}' tsx scripts/processSkillImages.ts",
 		"processMonsterImages": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"ESNext\"}' tsx scripts/processMonsterImages.ts",
-		"consolidate-images": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"ESNext\"}' tsx scripts/consolidate-images.ts"
+		"processItemImages": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"ESNext\"}' tsx scripts/processItemImages.ts"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^3.0.0",

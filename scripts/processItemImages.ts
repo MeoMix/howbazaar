@@ -82,7 +82,7 @@ const cleanFileName = (fileName: string): string => {
   };
 
 // Process files with or without making changes based on dry run mode
-const processFiles = () => {
+const processItemImages = () => {
   fs.readdir(directoryPath, (err, files) => {
     if (err) {
       console.error('Error reading directory:', err);
@@ -127,4 +127,4 @@ const processFiles = () => {
 };
 
 // Run the script
-processFiles();
+processItemImages();

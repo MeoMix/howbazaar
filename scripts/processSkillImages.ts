@@ -9,9 +9,8 @@ import { parseJson as parseMonstersJson } from '../src/lib/monstersJsonParser.ts
 import { parseJson as parseDayHoursJson } from '../src/lib/dayHoursJsonParser.ts';
 import type { CardsJson, DayHoursJson, Monster, MonsterEncounterDay, MonstersJson } from "../src/lib/types.ts";
 import { getMonsterEncounterDays } from "../src/lib/services/monsterEncounterService.ts";
-import { flattenDirectory } from './flattenDirectory.ts';
 import { removeSpecialCharacters } from './utils/stringUtils.ts';
-import { deleteFiles } from './utils/fileUtils.ts';
+import { deleteFiles, flattenDirectory } from './utils/fileUtils.ts';
 import { checkAndResizeImages, convertImagesToAvif } from './utils/imageUtils.ts';
 
 // Command:
