@@ -7,38 +7,35 @@
         label,
         options,
         selectedOptionValues = $bindable(),
-        mustMatchAll = $bindable(),
+        isMatchAny = $bindable(),
         onSelect,
     }: {
         label: string;
         options: Option[];
         selectedOptionValues: Option["value"][];
-        mustMatchAll?: boolean;
+        isMatchAny?: boolean;
         onSelect?: (value: Option["value"][]) => void;
     } = $props();
 
     const handleSelection = (
-        selectedArray: Option["value"][],
-        item: Option["value"],
+        selectedValues: Option["value"][],
+        value: Option["value"],
     ): Option["value"][] => {
-        // For multiple selection mode, toggle the item in the selected array
-        if (selectedArray.includes(item)) {
-            return selectedArray.filter((i) => i !== item);
-        } else {
-            return [...selectedArray, item];
-        }
+        return selectedValues.includes(value)
+            ? selectedValues.filter((i) => i !== value)
+            : [...selectedValues, value];
     };
 </script>
 
 <div>
     <div class="mb-2">
         <Label class="font-semibold text-lg">{label}</Label>
-        {#if mustMatchAll !== undefined}
+        {#if isMatchAny !== undefined}
             <Toggle
                 class="mt-2 inline-flex"
-                checked={mustMatchAll}
+                checked={isMatchAny}
                 on:click={() => {
-                    mustMatchAll = !mustMatchAll;
+                    isMatchAny = !isMatchAny;
 
                     if (onSelect) {
                         onSelect(selectedOptionValues);

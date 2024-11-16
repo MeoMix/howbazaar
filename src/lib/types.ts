@@ -122,3 +122,5 @@ export type Option = {
     name: string;
     value: string | number;
 };
+
+export type TriState = "on" | "off" | "unset";

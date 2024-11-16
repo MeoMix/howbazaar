@@ -7,6 +7,7 @@
         ClientSideSize,
         ClientSideTag,
         ClientSideTierType,
+        TriState,
     } from "$lib/types";
     import CardItem from "$lib/components/CardItem.svelte";
     import CardFilters from "$lib/components/CardFilters.svelte";
@@ -26,8 +27,18 @@
 
     let selectedHeroes = $state([] as ClientSideHero[]);
     let selectedTiers = $state([] as ClientSideTierType[]);
-    let selectedTags = $state([] as (ClientSideTag | ClientSideHiddenTag)[]);
-    let mustMatchAllTags = $state(false);
+
+    // Generate tagStates with default "unset" value
+    let tagStates = $state(
+        Object.fromEntries(
+            tagOptions.map((tagOption) => [
+                tagOption.value,
+                "unset" as TriState,
+            ]),
+        ) as Record<ClientSideTag | ClientSideHiddenTag, TriState>,
+    );
+
+    let isMatchAnyTags = $state(false);
     let selectedSizes = $state([] as ClientSideSize[]);
     let searchText = $state("");
     let isSearchNameOnly = $state(false);
@@ -38,12 +49,12 @@
             cardItems,
             selectedHeroes,
             selectedTiers,
-            selectedTags,
+            tagStates,
             selectedSizes,
             searchText,
             isSearchNameOnly,
             isSearchEnchantments,
-            mustMatchAllTags,
+            isMatchAnyTags,
         ),
     );
 </script>
@@ -61,9 +72,9 @@
     canFilterEnchantments
     bind:selectedHeroes
     bind:selectedTiers
-    bind:selectedTags
+    bind:tagStates
     bind:selectedSizes
-    bind:mustMatchAllTags
+    bind:isMatchAnyTags
     bind:searchText
     bind:isSearchNameOnly
     bind:isSearchEnchantments

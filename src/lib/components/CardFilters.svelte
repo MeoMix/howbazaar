@@ -1,12 +1,13 @@
 <script lang="ts">
     import { Button } from "flowbite-svelte";
-    import CardFilter from "./MultiSelectFilter.svelte";
+    import MultiSelectFilter from "./MultiSelectFilter.svelte";
     import FilterToggle from "./FilterToggle.svelte";
     import { onMount } from "svelte";
     import { page } from "$app/stores";
     import { goto } from "$app/navigation";
-    import type { Option } from "$lib/types";
+    import type { Option, TriState } from "$lib/types";
     import SearchInput from "./SearchInput.svelte";
+    import MultiSelectTriFilter from "./MultiSelectTriFilter.svelte";
 
     let {
         heroOptions,
@@ -17,9 +18,9 @@
         canFilterEnchantments = false,
         selectedHeroes = $bindable(),
         selectedTiers = $bindable(),
-        selectedTags = $bindable(),
+        tagStates = $bindable(),
         selectedSizes = $bindable(),
-        mustMatchAllTags = $bindable(),
+        isMatchAnyTags = $bindable(),
         searchText = $bindable(),
         isSearchNameOnly = $bindable(),
         isSearchEnchantments = $bindable(),
@@ -32,9 +33,9 @@
         canFilterEnchantments?: boolean;
         selectedHeroes: string[];
         selectedTiers: string[];
-        selectedTags: string[];
+        tagStates: Record<string, TriState>;
         selectedSizes: string[];
-        mustMatchAllTags: boolean;
+        isMatchAnyTags: boolean;
         searchText: string;
         isSearchNameOnly: boolean;
         isSearchEnchantments: boolean;
@@ -43,8 +44,11 @@
     function clearSearch() {
         selectedHeroes = [];
         selectedTiers = [];
-        selectedTags = [];
-        mustMatchAllTags = false;
+        // Reset all tags to "unset"
+        tagStates = Object.fromEntries(
+            tagOptions.map((option) => [option.value, "unset"]),
+        );
+        isMatchAnyTags = false;
         selectedSizes = [];
         searchText = "";
         isSearchNameOnly = false;
@@ -110,24 +114,24 @@
 
     {#if isShowingAdvancedFilters}
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
-            <CardFilter
+            <MultiSelectFilter
                 label="Heroes"
                 options={heroOptions}
                 bind:selectedOptionValues={selectedHeroes}
             />
-            <CardFilter
+            <MultiSelectFilter
                 label="Starting Tiers"
                 options={minimumTierOptions}
                 bind:selectedOptionValues={selectedTiers}
             />
-            <CardFilter
+            <MultiSelectTriFilter
                 label="Tags"
                 options={tagOptions}
-                bind:selectedOptionValues={selectedTags}
-                bind:mustMatchAll={mustMatchAllTags}
+                bind:triStates={tagStates}
+                bind:isMatchAny={isMatchAnyTags}
             />
             {#if sizeOptions.length > 0}
-                <CardFilter
+                <MultiSelectFilter
                     label="Sizes"
                     options={sizeOptions}
                     bind:selectedOptionValues={selectedSizes}

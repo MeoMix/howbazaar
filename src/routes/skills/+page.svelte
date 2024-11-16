@@ -7,6 +7,7 @@
         ClientSideSize,
         ClientSideTag,
         ClientSideTierType,
+        TriState,
     } from "$lib/types";
     import CardSkill from "$lib/components/CardSkill.svelte";
     import {
@@ -26,8 +27,16 @@
 
     let selectedHeroes = $state([] as ClientSideHero[]);
     let selectedTiers = $state([] as ClientSideTierType[]);
-    let selectedTags = $state([] as (ClientSideTag | ClientSideHiddenTag)[]);
-    let mustMatchAllTags = $state(false);
+    // Generate tagStates with default "unset" value
+    let tagStates = $state(
+        Object.fromEntries(
+            tagOptions.map((tagOption) => [
+                tagOption.value,
+                "unset" as TriState,
+            ]),
+        ) as Record<ClientSideTag | ClientSideHiddenTag, TriState>,
+    );
+    let isMatchAnyTags = $state(false);
     // TODO: It's weird this has to declare selectedSizes when it doesn't filter on it
     let selectedSizes = $state([] as ClientSideSize[]);
     let searchText = $state("");
@@ -40,12 +49,12 @@
             cardSkills,
             selectedHeroes,
             selectedTiers,
-            selectedTags,
+            tagStates,
             selectedSizes,
             searchText,
             isSearchNameOnly,
             isSearchEnchantments,
-            mustMatchAllTags,
+            isMatchAnyTags,
         ),
     );
 </script>
@@ -61,9 +70,9 @@
     searchPlaceholder="Search skills..."
     bind:selectedHeroes
     bind:selectedTiers
-    bind:selectedTags
+    bind:tagStates
     bind:selectedSizes
-    bind:mustMatchAllTags
+    bind:isMatchAnyTags
     bind:searchText
     bind:isSearchNameOnly
     bind:isSearchEnchantments

@@ -1,4 +1,4 @@
-import type { ClientSideCardItem, ClientSideCardSkill, ClientSideHero, ClientSideHiddenTag, ClientSideSize, ClientSideTag, ClientSideTierType } from "$lib/types";
+import type { ClientSideCardItem, ClientSideCardSkill, ClientSideHero, ClientSideHiddenTag, ClientSideSize, ClientSideTag, ClientSideTierType, TriState } from "$lib/types";
 import type { Entries } from "type-fest";
 
 export function prepareItemAndSkillFilterOptions(cards: (ClientSideCardItem | ClientSideCardSkill)[]) {
@@ -22,12 +22,12 @@ export function filterItemAndSkillCards<T extends ClientSideCardItem | ClientSid
     cards: T[],
     selectedHeroes: ClientSideHero[],
     selectedTiers: ClientSideTierType[],
-    selectedTags: (ClientSideTag | ClientSideHiddenTag)[],
+    tagStates: Record<ClientSideTag | ClientSideHiddenTag, TriState>,
     selectedSizes: ClientSideSize[],
     searchText: string,
     isSearchNameOnly: boolean,
     isSearchEnchantments: boolean,
-    mustMatchAllTags: boolean
+    isMatchAnyTags: boolean
 ): T[] {
     const lowerSearchText = searchText.toLowerCase();
 
@@ -39,27 +39,56 @@ export function filterItemAndSkillCards<T extends ClientSideCardItem | ClientSid
             selectedTiers.length === 0 ||
             (card.startingTier && selectedTiers.includes(card.startingTier));
 
-        // Make this a looser match than "includes" to support "Economy" matching "EconomyReference"
-        // Don't just use "startsWith" though because there's "Heal" and "Health" which are distinct.
-        const matchesTag = selectedTags.length === 0 || (card.tags && (
-            mustMatchAllTags
-                ? selectedTags.every((tag) =>
-                    card.tags.some((cardTag) =>
-                        cardTag === tag || cardTag === `${tag}Reference`
-                    ) ||
-                    card.hiddenTags.some((hiddenTag) =>
-                        hiddenTag === tag || hiddenTag === `${tag}Reference`
-                    )
-                )
-                : selectedTags.some((tag) =>
-                    card.tags.some((cardTag) =>
-                        cardTag === tag || cardTag === `${tag}Reference`
-                    ) ||
-                    card.hiddenTags.some((hiddenTag) =>
-                        hiddenTag === tag || hiddenTag === `${tag}Reference`
-                    )
-                )
-        ));
+        // Updated matchesTag logic to use tagStates
+        const matchesTag = (() => {
+            const tagEntries = Object.entries(tagStates);
+
+            if (isMatchAnyTags) {
+                // At least one "on" tag must match (if any are "on"), and "off" tags are ignored
+                const hasOnTags = tagEntries.some(([_, state]) => state === "on");
+
+                if (hasOnTags) {
+                    return tagEntries.some(([tag, state]) => {
+                        const isTagMatch = (cardTag: string) =>
+                            cardTag === tag || cardTag === `${tag}Reference`;
+
+                        return (
+                            state === "on" &&
+                            (card.tags?.some(isTagMatch) ||
+                                card.hiddenTags?.some(isTagMatch))
+                        );
+                    });
+                }
+
+                // If no tags are "on", all cards pass the filter
+                return true;
+            } else {
+                // All "on" tags must be present, and no "off" tags can be present
+                return tagEntries.every(([tag, state]) => {
+                    const isTagMatch = (cardTag: string) =>
+                        cardTag === tag || cardTag === `${tag}Reference`;
+
+                    if (state === "on") {
+                        // Card must have this "on" tag
+                        return (
+                            card.tags?.some(isTagMatch) ||
+                            card.hiddenTags?.some(isTagMatch)
+                        );
+                    }
+
+                    if (state === "off") {
+                        // Card must not have this "off" tag
+                        return (
+                            !card.tags?.some(isTagMatch) &&
+                            !card.hiddenTags?.some(isTagMatch)
+                        );
+                    }
+
+                    // "unset" tags don't matter
+                    return true;
+                });
+            }
+        })();
 
         const matchesSizes =
             selectedSizes.length === 0 ||
