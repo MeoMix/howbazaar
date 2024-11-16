@@ -379,7 +379,7 @@ function parseItemsAndSkills(cardsJson: CardsJson): ClientSideCard[] {
         const auras = Object.values(card.Auras);
         const tierMap = getTierMap(card);
 
-        const tiers = Object.fromEntries((Object.entries(tierMap) as Entries<typeof tierMap>).map(
+        let tiers = Object.fromEntries((Object.entries(tierMap) as Entries<typeof tierMap>).map(
             ([tierName, tier]) => {
                 const rawTooltips = tier.TooltipIds
                     .map(tooltipId => card.Localization.Tooltips[tooltipId]?.Content.Text)
@@ -572,15 +572,26 @@ function parseItemsAndSkills(cardsJson: CardsJson): ClientSideCard[] {
             hiddenTags = hiddenTags.filter(tag => tag !== 'Regen');
         }
 
-        // Fix bad data related to starting tiers
-        // let startingTier = card.StartingTier;
-        // const invalidLegendaries = ["Eye of the Colossus", "Infernal Greatsword", "Necronomicon", "Octopus", "Scythe", "Singularity", "Soul of the District", "Teddy", "The Eclipse", ""]
+        // Fix bad data related to starting tiers. These are all Legendary.
+        let startingTier = card.StartingTier;
+        const invalidLegendaries = ["Eye of the Colossus", "Infernal Greatsword", "Octopus", "Necronomicon", "Scythe", "Singularity", "Soul of the District", "Teddy", "The Eclipse", "Flamberge"];
+        if (invalidLegendaries.includes(name)) {
+            startingTier = "Legendary";
+            tiers = Object.fromEntries((Object.entries(tiers) as Entries<Record<TierType, ClientSideTier>>).map(
+                ([tierType, tier]) => {
+                    return [tierType, tierType === "Legendary" ? tier : {
+                        tooltips: [] as string[],
+                        attributes: {},
+                    }]
+                },
+            )) as Record<TierType, ClientSideTier>;
+        }
 
         return {
             id: card.Id,
             name,
             type: card.Type,
-            startingTier: card.StartingTier,
+            startingTier,
             tiers,
             tags: card.Tags,
             hiddenTags,

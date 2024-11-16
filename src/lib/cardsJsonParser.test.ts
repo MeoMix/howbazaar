@@ -178,7 +178,7 @@ describe('cardJsonParser', () => {
     expect(colossalPopsicle.tiers.Bronze.tooltips.find((text) => text.includes(searchPhrase))).toEqual(`${searchPhrase}5 damage.`);
   });
 
-  it.only('should parse "Tripwire" without a Regen hidden tag', () => {
+  it('should parse "Tripwire" without a Regen hidden tag', () => {
     const tripwire = cards.find(card => card.name === "Tripwire")!;
 
     expect(tripwire.hiddenTags.includes('Regen')).toBe(false);

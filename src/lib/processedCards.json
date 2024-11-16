@@ -14346,28 +14346,19 @@
     "tiers": {
       "Bronze": {
         "tooltips": [],
-        "attributes": []
+        "attributes": {}
       },
       "Silver": {
         "tooltips": [],
-        "attributes": []
+        "attributes": {}
       },
       "Gold": {
         "tooltips": [],
-        "attributes": []
+        "attributes": {}
       },
       "Diamond": {
-        "tooltips": [
-          "Use all your other items.",
-          "When you use an item, deal 50 damage."
-        ],
-        "attributes": [
-          {
-            "name": "Cooldown",
-            "value": 15,
-            "valueDescriptor": "seconds"
-          }
-        ]
+        "tooltips": [],
+        "attributes": {}
       },
       "Legendary": {
         "tooltips": [
@@ -18182,22 +18173,19 @@
     "tiers": {
       "Bronze": {
         "tooltips": [],
-        "attributes": []
+        "attributes": {}
       },
       "Silver": {
         "tooltips": [],
-        "attributes": []
+        "attributes": {}
       },
       "Gold": {
         "tooltips": [],
-        "attributes": []
+        "attributes": {}
       },
       "Diamond": {
-        "tooltips": [
-          "When ANY non-weapon item is used, Poison 3 and gain 3 Regen for the fight.",
-          "Your items have their cooldowns increased by 1 second(s)."
-        ],
-        "attributes": []
+        "tooltips": [],
+        "attributes": {}
       },
       "Legendary": {
         "tooltips": [
@@ -20194,32 +20182,19 @@
     "tiers": {
       "Bronze": {
         "tooltips": [],
-        "attributes": []
+        "attributes": {}
       },
       "Silver": {
         "tooltips": [],
-        "attributes": []
+        "attributes": {}
       },
       "Gold": {
         "tooltips": [],
-        "attributes": []
+        "attributes": {}
       },
       "Diamond": {
-        "tooltips": [
-          "Deal 8 damage."
-        ],
-        "attributes": [
-          {
-            "name": "Cooldown",
-            "value": 8,
-            "valueDescriptor": "seconds"
-          },
-          {
-            "name": "Multicast",
-            "value": 8,
-            "valueDescriptor": null
-          }
-        ]
+        "tooltips": [],
+        "attributes": {}
       },
       "Legendary": {
         "tooltips": [
@@ -26898,28 +26873,19 @@
     "tiers": {
       "Bronze": {
         "tooltips": [],
-        "attributes": []
+        "attributes": {}
       },
       "Silver": {
         "tooltips": [],
-        "attributes": []
+        "attributes": {}
       },
       "Gold": {
         "tooltips": [],
-        "attributes": []
+        "attributes": {}
       },
       "Diamond": {
-        "tooltips": [
-          "Destroy an enemy item for the fight.",
-          "When you use an adjacent item, charge this 1 second(s)."
-        ],
-        "attributes": [
-          {
-            "name": "Cooldown",
-            "value": 10,
-            "valueDescriptor": "seconds"
-          }
-        ]
+        "tooltips": [],
+        "attributes": {}
       },
       "Legendary": {
         "tooltips": [
@@ -32005,32 +31971,23 @@
     "id": "8938035e-be96-4827-bd34-7258253bd942",
     "name": "Flamberge",
     "type": "Item",
-    "startingTier": "Diamond",
+    "startingTier": "Legendary",
     "tiers": {
       "Bronze": {
         "tooltips": [],
-        "attributes": []
+        "attributes": {}
       },
       "Silver": {
         "tooltips": [],
-        "attributes": []
+        "attributes": {}
       },
       "Gold": {
         "tooltips": [],
-        "attributes": []
+        "attributes": {}
       },
       "Diamond": {
-        "tooltips": [
-          "Deal 200 damage.",
-          "This deals quadruple crit damage."
-        ],
-        "attributes": [
-          {
-            "name": "Cooldown",
-            "value": 8,
-            "valueDescriptor": "seconds"
-          }
-        ]
+        "tooltips": [],
+        "attributes": {}
       },
       "Legendary": {
         "tooltips": [
@@ -34799,29 +34756,19 @@
     "tiers": {
       "Bronze": {
         "tooltips": [],
-        "attributes": []
+        "attributes": {}
       },
       "Silver": {
         "tooltips": [],
-        "attributes": []
+        "attributes": {}
       },
       "Gold": {
         "tooltips": [],
-        "attributes": []
+        "attributes": {}
       },
       "Diamond": {
-        "tooltips": [
-          "Deal 2 damage.",
-          "Burn equal to this item's damage.",
-          "This item gains + Damage for the fight equal to your enemy's Burn."
-        ],
-        "attributes": [
-          {
-            "name": "Cooldown",
-            "value": 8,
-            "valueDescriptor": "seconds"
-          }
-        ]
+        "tooltips": [],
+        "attributes": {}
       },
       "Legendary": {
         "tooltips": [
@@ -37439,34 +37386,19 @@
     "tiers": {
       "Bronze": {
         "tooltips": [],
-        "attributes": []
+        "attributes": {}
       },
       "Silver": {
         "tooltips": [],
-        "attributes": []
+        "attributes": {}
       },
       "Gold": {
         "tooltips": [],
-        "attributes": []
+        "attributes": {}
       },
       "Diamond": {
-        "tooltips": [
-          "Deal 100 damage.",
-          "When you use an adjacent Friend or Ammo item, charge this 1 second(s).",
-          "When you take damage, this gains 5% Crit Chance for the fight."
-        ],
-        "attributes": [
-          {
-            "name": "Cooldown",
-            "value": 10,
-            "valueDescriptor": "seconds"
-          },
-          {
-            "name": "Multicast",
-            "value": 2,
-            "valueDescriptor": null
-          }
-        ]
+        "tooltips": [],
+        "attributes": {}
       },
       "Legendary": {
         "tooltips": [
@@ -46512,27 +46444,19 @@
     "tiers": {
       "Bronze": {
         "tooltips": [],
-        "attributes": []
+        "attributes": {}
       },
       "Silver": {
         "tooltips": [],
-        "attributes": []
+        "attributes": {}
       },
       "Gold": {
         "tooltips": [],
-        "attributes": []
+        "attributes": {}
       },
       "Diamond": {
-        "tooltips": [
-          "Destroy a small enemy item for the fight."
-        ],
-        "attributes": [
-          {
-            "name": "Cooldown",
-            "value": 9,
-            "valueDescriptor": "seconds"
-          }
-        ]
+        "tooltips": [],
+        "attributes": {}
       },
       "Legendary": {
         "tooltips": [
@@ -50754,27 +50678,19 @@
     "tiers": {
       "Bronze": {
         "tooltips": [],
-        "attributes": []
+        "attributes": {}
       },
       "Silver": {
         "tooltips": [],
-        "attributes": []
+        "attributes": {}
       },
       "Gold": {
         "tooltips": [],
-        "attributes": []
+        "attributes": {}
       },
       "Diamond": {
-        "tooltips": [
-          "Deal damage equal to a third of your enemy's max health."
-        ],
-        "attributes": [
-          {
-            "name": "Cooldown",
-            "value": 10,
-            "valueDescriptor": "seconds"
-          }
-        ]
+        "tooltips": [],
+        "attributes": {}
       },
       "Legendary": {
         "tooltips": [
@@ -67964,28 +67880,19 @@
     "tiers": {
       "Bronze": {
         "tooltips": [],
-        "attributes": []
+        "attributes": {}
       },
       "Silver": {
         "tooltips": [],
-        "attributes": []
+        "attributes": {}
       },
       "Gold": {
         "tooltips": [],
-        "attributes": []
+        "attributes": {}
       },
       "Diamond": {
-        "tooltips": [
-          "Shield equal to your current Health.",
-          "Deal damage equal to your shield."
-        ],
-        "attributes": [
-          {
-            "name": "Cooldown",
-            "value": 12,
-            "valueDescriptor": "seconds"
-          }
-        ]
+        "tooltips": [],
+        "attributes": {}
       },
       "Legendary": {
         "tooltips": [

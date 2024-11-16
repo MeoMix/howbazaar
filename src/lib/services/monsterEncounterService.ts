@@ -1,4 +1,4 @@
-import type { ClientSideCard, ClientSideCardCombatEncounter, ClientSideCardItem, ClientSideCardSkill, ClientSideDayHours, Monster, MonsterEncounterDay } from "$lib/types";
+import type { ClientSideCard, ClientSideCardCombatEncounter, ClientSideCardItem, ClientSideCardSkill, ClientSideDayHours, ClientSideTierType, Monster, MonsterEncounterDay } from "$lib/types";
 
 export function getMonsterEncounterDays(
     cards: ClientSideCard[],
@@ -44,9 +44,13 @@ export function getMonsterEncounterDays(
                                 return null;
                             }
 
+                            // Some items in v2_Monsters have invalid tier types because the starting tier of the item
+                            // was changed, or because they're legendaries but not represented as such in the data.
+                            const tierType = getValidTierType(item.tierType, card.startingTier);
+
                             return {
                                 card,
-                                tierType: item.tierType,
+                                tierType,
                                 enchantmentType: item.enchantmentType
                             };
                         }).filter(result => result !== null),
@@ -60,9 +64,12 @@ export function getMonsterEncounterDays(
                                 return null;
                             }
 
+                            // Not aware of this being an issue/necessary but applying it for skills just to be cautious.
+                            const tierType = getValidTierType(skill.tierType, card.startingTier);
+
                             return {
                                 card,
-                                tierType: skill.tierType
+                                tierType
                             };
                         }).filter(result => result !== null),
                     };
@@ -78,4 +85,11 @@ export function getMonsterEncounterDays(
     });
 
     return monsterEncounterDays;
+}
+
+const tiers = ["Bronze", "Silver", "Gold", "Diamond", "Legendary"];
+function getValidTierType(itemTierType: ClientSideTierType, cardStartingTier: ClientSideTierType): ClientSideTierType {
+    return tiers.indexOf(itemTierType) < tiers.indexOf(cardStartingTier)
+        ? cardStartingTier
+        : itemTierType;
 }

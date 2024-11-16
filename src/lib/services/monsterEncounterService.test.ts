@@ -58,6 +58,17 @@ describe('MonsterEncounterService', () => {
         expect(veteranOctopusEncounters.length).toBe(1);
     });
 
+    it('should consider Veteran Octopus\'s Octopus item a Legendary', () => {
+        const veteranOctopus = monsterEncounterDays
+            .flatMap((day) => day.groups)
+            .flatMap((group) => group)
+            .find((monsterEncounter) => monsterEncounter.cardName === "Veteran Octopus");
+
+        const octopus = veteranOctopus?.items.find(item => item.card.name === "Octopus");
+
+        expect(octopus?.tierType).toEqual("Legendary");
+    });
+
     it('should have item details for Lord of the Waste\'s Legendary Flamberge', () => {
         const lordOfTheWastes = monsterEncounterDays
             .flatMap((day) => day.groups)
@@ -66,6 +77,17 @@ describe('MonsterEncounterService', () => {
 
         const flamberge = lordOfTheWastes?.items.find(item => item.card.name === "Flamberge");
 
-        expect(flamberge?.card.tiers["Legendary"]).toEqual(flamberge?.card.tiers["Diamond"]);
+        expect(flamberge?.card.tiers[flamberge.tierType]?.tooltips).toHaveLength(2);
+    });
+
+    it('should have item details for Thug\'s Spices (at Diamond not Gold)', () => {
+        const thug = monsterEncounterDays
+            .flatMap((day) => day.groups)
+            .flatMap((group) => group)
+            .find((monsterEncounter) => monsterEncounter.cardName === "Thug");
+
+        const spices = thug?.items.find(item => item.card.name === "Spices");
+
+        expect(spices?.card.tiers[spices.tierType]?.tooltips).toHaveLength(1);
     });
 });

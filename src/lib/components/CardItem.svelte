@@ -11,6 +11,18 @@
 
     const id = $derived(card.name.replace(/\s+/g, "_"));
     const tags = $derived(filterTags(card.tags, card.hiddenTags));
+
+    const tiers = $derived(
+        (Object.entries(card.tiers) as Entries<typeof card.tiers>).filter(
+            ([tierType, tier]) =>
+                (card.startingTier === "Legendary" &&
+                    tier.tooltips.length > 0 &&
+                    tierType === "Legendary") ||
+                (card.startingTier !== "Legendary" &&
+                    tier.tooltips.length > 0 &&
+                    tierType !== "Legendary"),
+        ),
+    );
 </script>
 
 <div class="p-4 border border-gray-200 rounded-lg shadow-sm" {id}>
@@ -21,18 +33,21 @@
         </button>
     </div>
 
-    <CardBadges primaryBadges={[...card.heroes, card.size].map(text => ({ text }))} secondaryBadges={tags.map(text => ({ text }))} />
+    <CardBadges
+        primaryBadges={[...card.heroes, card.size].map((text) => ({ text }))}
+        secondaryBadges={tags.map((text) => ({ text }))}
+    />
 
-    <div class="font-semibold text-xl mt-4 mb-2">
-        Tiers
-    </div>
-    
+    <div class="font-semibold text-xl mt-4 mb-2">Tiers</div>
+
     <div
         class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
     >
-        {#each (Object.entries(card.tiers) as Entries<typeof card.tiers>).filter(([tierType, tier]) => tierType !== "Legendary" && tier.tooltips.length > 0) as [tierType, tier]}
+        {#each tiers as [tierType, tier]}
             <Card size="xl" padding="sm">
-                <div class="text-lg font-semibold mb-2 {getTierClass(tierType)}">
+                <div
+                    class="text-lg font-semibold mb-2 {getTierClass(tierType)}"
+                >
                     {tierType}
                 </div>
 
@@ -56,13 +71,17 @@
     </div>
 
     {#if card.enchantments.length > 0}
-        <div class="font-semibold text-xl mt-4 mb-2">
-            Enchantments
-        </div>
-        <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-4">
+        <div class="font-semibold text-xl mt-4 mb-2">Enchantments</div>
+        <div
+            class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-4"
+        >
             {#each card.enchantments as enchantment}
                 <Card size="xl" padding="sm">
-                    <div class="text-lg font-semibold mb-2 {getEnchantmentClass(enchantment.name)}">
+                    <div
+                        class="text-lg font-semibold mb-2 {getEnchantmentClass(
+                            enchantment.name,
+                        )}"
+                    >
                         {enchantment.name}
                     </div>
 
