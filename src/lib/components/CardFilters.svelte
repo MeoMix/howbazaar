@@ -1,6 +1,6 @@
 <script lang="ts">
     import { Button, ButtonGroup, Input, InputAddon } from "flowbite-svelte";
-    import CardFilter from "./CardFilter.svelte";
+    import CardFilter from "./MultiSelectFilter.svelte";
     import { onMount } from "svelte";
     import { SearchSolid } from "flowbite-svelte-icons";
     import { page } from "$app/stores";
