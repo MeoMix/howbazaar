@@ -4,17 +4,16 @@
         ClientSideCardSkill,
         ClientSideHero,
         ClientSideHiddenTag,
-        ClientSideSize,
         ClientSideTag,
         ClientSideTierType,
         TriState,
     } from "$lib/types";
     import CardSkill from "$lib/components/CardSkill.svelte";
     import {
-        filterItemAndSkillCards,
-        prepareItemAndSkillFilterOptions,
+        filterSkillCards,
+        getCardFilterOptions,
     } from "$lib/utils/filterUtils";
-    import CardFilters from "$lib/components/CardFilters.svelte";
+    import CardSkillFilters from "$lib/components/CardSkillFilters.svelte";
     import LazyLoadList from "$lib/components/LazyLoadList.svelte";
 
     const { data }: { data: { cards: ClientSideCard[] } } = $props();
@@ -23,7 +22,7 @@
         .sort((a, b) => a.name.localeCompare(b.name));
 
     const { heroOptions, minimumTierOptions, tagOptions } =
-        prepareItemAndSkillFilterOptions(cardSkills);
+        getCardFilterOptions(cardSkills);
 
     let selectedHeroes = $state([] as ClientSideHero[]);
     let selectedTiers = $state([] as ClientSideTierType[]);
@@ -37,23 +36,17 @@
         ) as Record<ClientSideTag | ClientSideHiddenTag, TriState>,
     );
     let isMatchAnyTags = $state(false);
-    // TODO: It's weird this has to declare selectedSizes when it doesn't filter on it
-    let selectedSizes = $state([] as ClientSideSize[]);
     let searchText = $state("");
     let isSearchNameOnly = $state(false);
-    // TODO: It's weird this has to declare isSearchEnchantments when skills don't have enchantments
-    let isSearchEnchantments = $state(false);
 
     const filteredCards = $derived(
-        filterItemAndSkillCards(
+        filterSkillCards(
             cardSkills,
             selectedHeroes,
             selectedTiers,
             tagStates,
-            selectedSizes,
             searchText,
             isSearchNameOnly,
-            isSearchEnchantments,
             isMatchAnyTags,
         ),
     );
@@ -63,19 +56,16 @@
     <title>Skills · How Bazaar</title>
 </svelte:head>
 
-<CardFilters
+<CardSkillFilters
     {heroOptions}
     {minimumTierOptions}
     {tagOptions}
-    searchPlaceholder="Search skills..."
     bind:selectedHeroes
     bind:selectedTiers
     bind:tagStates
-    bind:selectedSizes
     bind:isMatchAnyTags
     bind:searchText
     bind:isSearchNameOnly
-    bind:isSearchEnchantments
 />
 
 {#snippet listItem(card: ClientSideCardSkill)}

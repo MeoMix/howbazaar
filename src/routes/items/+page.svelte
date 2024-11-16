@@ -10,10 +10,10 @@
         TriState,
     } from "$lib/types";
     import CardItem from "$lib/components/CardItem.svelte";
-    import CardFilters from "$lib/components/CardFilters.svelte";
+    import CardItemFilters from "$lib/components/CardItemFilters.svelte";
     import {
-        filterItemAndSkillCards,
-        prepareItemAndSkillFilterOptions,
+        filterItemCards,
+        getCardFilterOptions,
     } from "$lib/utils/filterUtils";
     import LazyLoadList from "$lib/components/LazyLoadList.svelte";
 
@@ -23,7 +23,7 @@
         .sort((a, b) => a.name.localeCompare(b.name));
 
     const { heroOptions, minimumTierOptions, tagOptions, sizeOptions } =
-        prepareItemAndSkillFilterOptions(cardItems);
+        getCardFilterOptions(cardItems);
 
     let selectedHeroes = $state([] as ClientSideHero[]);
     let selectedTiers = $state([] as ClientSideTierType[]);
@@ -45,7 +45,7 @@
     let isSearchEnchantments = $state(false);
 
     const filteredCards = $derived(
-        filterItemAndSkillCards(
+        filterItemCards(
             cardItems,
             selectedHeroes,
             selectedTiers,
@@ -63,13 +63,11 @@
     <title>Items · How Bazaar</title>
 </svelte:head>
 
-<CardFilters
+<CardItemFilters
     {heroOptions}
     {minimumTierOptions}
     {tagOptions}
     {sizeOptions}
-    searchPlaceholder="Search items..."
-    canFilterEnchantments
     bind:selectedHeroes
     bind:selectedTiers
     bind:tagStates

@@ -4,55 +4,43 @@
     import FilterToggle from "./FilterToggle.svelte";
     import { onMount } from "svelte";
     import { page } from "$app/stores";
-    import { goto } from "$app/navigation";
     import type { Option, TriState } from "$lib/types";
     import SearchInput from "./SearchInput.svelte";
     import MultiSelectTriFilter from "./MultiSelectTriFilter.svelte";
+    import AdvancedFilterToggle from "./AdvancedFilterToggle.svelte";
 
     let {
         heroOptions,
         minimumTierOptions,
         tagOptions,
-        sizeOptions = [],
-        searchPlaceholder,
-        canFilterEnchantments = false,
         selectedHeroes = $bindable(),
         selectedTiers = $bindable(),
         tagStates = $bindable(),
-        selectedSizes = $bindable(),
         isMatchAnyTags = $bindable(),
         searchText = $bindable(),
         isSearchNameOnly = $bindable(),
-        isSearchEnchantments = $bindable(),
     }: {
         heroOptions: Option[];
         minimumTierOptions: Option[];
         tagOptions: Option[];
-        sizeOptions?: Option[];
-        searchPlaceholder: string;
         canFilterEnchantments?: boolean;
         selectedHeroes: string[];
         selectedTiers: string[];
         tagStates: Record<string, TriState>;
-        selectedSizes: string[];
         isMatchAnyTags: boolean;
         searchText: string;
         isSearchNameOnly: boolean;
-        isSearchEnchantments: boolean;
     } = $props();
 
     function clearSearch() {
         selectedHeroes = [];
         selectedTiers = [];
-        // Reset all tags to "unset"
         tagStates = Object.fromEntries(
             tagOptions.map((option) => [option.value, "unset"]),
         );
         isMatchAnyTags = false;
-        selectedSizes = [];
         searchText = "";
         isSearchNameOnly = false;
-        isSearchEnchantments = false;
     }
 
     let isShowingAdvancedFilters = $state(
@@ -66,39 +54,19 @@
             searchText = hash.replace("_", " ");
         }
     });
-
-    function toggleAdvancedFilters() {
-        isShowingAdvancedFilters = !isShowingAdvancedFilters;
-
-        let query = new URLSearchParams($page.url.searchParams.toString());
-        query.set("isShowingAdvancedFilters", `${isShowingAdvancedFilters}`);
-        goto(`?${query.toString()}`, { replaceState: true });
-    }
 </script>
 
 <div class="mt-8 mb-4">
-    <SearchInput placeholder={searchPlaceholder} bind:value={searchText} />
+    <SearchInput placeholder="Search skills..." bind:value={searchText} />
 
     <div class="flex gap-2 mt-2">
-        <FilterToggle
-            isEnabled={isShowingAdvancedFilters}
-            label="Show Advanced Filters"
-            onClick={toggleAdvancedFilters}
-        />
+        <AdvancedFilterToggle bind:isShowingAdvancedFilters={isShowingAdvancedFilters} />
 
         <FilterToggle
             isEnabled={isSearchNameOnly}
             label="Search Name Only"
             onClick={() => (isSearchNameOnly = !isSearchNameOnly)}
         />
-
-        {#if canFilterEnchantments}
-            <FilterToggle
-                isEnabled={isSearchEnchantments}
-                label="Search Enchantments"
-                onClick={() => (isSearchEnchantments = !isSearchEnchantments)}
-            />
-        {/if}
 
         <Button
             size="xs"
@@ -130,13 +98,6 @@
                 bind:triStates={tagStates}
                 bind:isMatchAny={isMatchAnyTags}
             />
-            {#if sizeOptions.length > 0}
-                <MultiSelectFilter
-                    label="Sizes"
-                    options={sizeOptions}
-                    bind:selectedOptionValues={selectedSizes}
-                />
-            {/if}
         </div>
     {/if}
 </div>

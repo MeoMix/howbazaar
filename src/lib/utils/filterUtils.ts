@@ -1,7 +1,7 @@
 import type { ClientSideCardItem, ClientSideCardSkill, ClientSideHero, ClientSideHiddenTag, ClientSideSize, ClientSideTag, ClientSideTierType, TriState } from "$lib/types";
 import type { Entries } from "type-fest";
 
-export function prepareItemAndSkillFilterOptions(cards: (ClientSideCardItem | ClientSideCardSkill)[]) {
+export function getCardFilterOptions(cards: (ClientSideCardItem | ClientSideCardSkill)[]) {
     // TODO: Technically these option types could be tighter than string
     const heroOptions = ["Vanessa", "Pygmalien", "Dooley", "Jules", "Stelle", "Mak", "Common"].map(hero => ({ name: hero, value: hero }));
     const minimumTierOptions = ["Bronze", "Silver", "Gold", "Diamond", "Legendary"].map(minimumTier => ({ name: minimumTier, value: minimumTier }));
@@ -18,8 +18,80 @@ export function prepareItemAndSkillFilterOptions(cards: (ClientSideCardItem | Cl
     };
 }
 
-export function filterItemAndSkillCards<T extends ClientSideCardItem | ClientSideCardSkill>(
-    cards: T[],
+function matchesHero(cardHeroes: ClientSideHero[], selectedHeroes: ClientSideHero[]): boolean {
+    return selectedHeroes.length === 0 || selectedHeroes.some(hero => cardHeroes.includes(hero));
+}
+
+function matchesTier(cardTier: ClientSideTierType, selectedTiers: ClientSideTierType[]): boolean {
+    return selectedTiers.length === 0 || selectedTiers.includes(cardTier);
+}
+
+function matchesTag(
+    cardTags: string[] | undefined,
+    cardHiddenTags: string[] | undefined,
+    tagStates: Record<ClientSideTag | ClientSideHiddenTag, TriState>,
+    isMatchAnyTags: boolean
+): boolean {
+    const tagEntries = Object.entries(tagStates);
+
+    if (isMatchAnyTags) {
+        const hasOnTags = tagEntries.some(([_, state]) => state === "on");
+        if (hasOnTags) {
+            return tagEntries.some(([tag, state]) => {
+                const isTagMatch = (cardTag: string) => cardTag === tag || cardTag === `${tag}Reference`;
+                return state === "on" && (cardTags?.some(isTagMatch) || cardHiddenTags?.some(isTagMatch));
+            });
+        }
+        return true; // No tags are "on"; pass all cards
+    }
+
+    return tagEntries.every(([tag, state]) => {
+        const isTagMatch = (cardTag: string) => cardTag === tag || cardTag === `${tag}Reference`;
+        if (state === "on") {
+            return cardTags?.some(isTagMatch) || cardHiddenTags?.some(isTagMatch);
+        }
+        if (state === "off") {
+            return !cardTags?.some(isTagMatch) && !cardHiddenTags?.some(isTagMatch);
+        }
+        return true; // "unset" tags don't affect filtering
+    });
+}
+
+function matchesSearchText(
+    card: ClientSideCardItem | ClientSideCardSkill,
+    lowerSearchText: string,
+    isSearchNameOnly: boolean,
+    isSearchEnchantments: boolean
+): boolean {
+    if (lowerSearchText === '') return true;
+
+    const validTiers = card.tiers
+        ? (Object.entries(card.tiers) as Entries<typeof card.tiers>)
+            .filter(([tierType, tier]) => tierType !== "Legendary" && tier.tooltips.length !== 0)
+        : [];
+
+    return isSearchNameOnly
+        ? card.name.toLowerCase().includes(lowerSearchText)
+        : card.name.toLowerCase().includes(lowerSearchText) ||
+        card.tags?.some(tag => tag.toLowerCase().includes(lowerSearchText)) ||
+        card.hiddenTags?.some(hiddenTag => hiddenTag.toLowerCase().includes(lowerSearchText)) ||
+        card.size?.toLowerCase().includes(lowerSearchText) ||
+        card.heroes?.some(hero => hero.toLowerCase().includes(lowerSearchText)) ||
+        validTiers.some(([tierName, tier]) =>
+            tierName.toLowerCase().includes(lowerSearchText) ||
+            tier.tooltips.some(tooltip => tooltip.toLowerCase().includes(lowerSearchText)) ||
+            tier.attributes.some(attribute =>
+                `${attribute.name} ${attribute.value} ${attribute.valueDescriptor}`.toLowerCase().includes(lowerSearchText)
+            )
+        ) ||
+        (isSearchEnchantments && card.enchantments?.some(e =>
+            e.name.toLowerCase().includes(lowerSearchText) ||
+            e.tooltips.some(tip => tip.toLowerCase().includes(lowerSearchText))
+        ));
+}
+
+export function filterItemCards(
+    cards: ClientSideCardItem[],
     selectedHeroes: ClientSideHero[],
     selectedTiers: ClientSideTierType[],
     tagStates: Record<ClientSideTag | ClientSideHiddenTag, TriState>,
@@ -28,92 +100,38 @@ export function filterItemAndSkillCards<T extends ClientSideCardItem | ClientSid
     isSearchNameOnly: boolean,
     isSearchEnchantments: boolean,
     isMatchAnyTags: boolean
-): T[] {
+): ClientSideCardItem[] {
     const lowerSearchText = searchText.toLowerCase();
 
-    return cards.filter((card) => {
-        const matchesHero =
-            selectedHeroes.length === 0 ||
-            (card.heroes && selectedHeroes.some((hero) => card.heroes.includes(hero)));
-        const matchesTier =
-            selectedTiers.length === 0 ||
-            (card.startingTier && selectedTiers.includes(card.startingTier));
-
-        // Updated matchesTag logic to use tagStates
-        const matchesTag = (() => {
-            const tagEntries = Object.entries(tagStates);
-
-            if (isMatchAnyTags) {
-                // At least one "on" tag must match (if any are "on"), and "off" tags are ignored
-                const hasOnTags = tagEntries.some(([_, state]) => state === "on");
-
-                if (hasOnTags) {
-                    return tagEntries.some(([tag, state]) => {
-                        const isTagMatch = (cardTag: string) =>
-                            cardTag === tag || cardTag === `${tag}Reference`;
-
-                        return (
-                            state === "on" &&
-                            (card.tags?.some(isTagMatch) ||
-                                card.hiddenTags?.some(isTagMatch))
-                        );
-                    });
-                }
-
-                // If no tags are "on", all cards pass the filter
-                return true;
-            } else {
-                // All "on" tags must be present, and no "off" tags can be present
-                return tagEntries.every(([tag, state]) => {
-                    const isTagMatch = (cardTag: string) =>
-                        cardTag === tag || cardTag === `${tag}Reference`;
-
-                    if (state === "on") {
-                        // Card must have this "on" tag
-                        return (
-                            card.tags?.some(isTagMatch) ||
-                            card.hiddenTags?.some(isTagMatch)
-                        );
-                    }
-
-                    if (state === "off") {
-                        // Card must not have this "off" tag
-                        return (
-                            !card.tags?.some(isTagMatch) &&
-                            !card.hiddenTags?.some(isTagMatch)
-                        );
-                    }
-
-                    // "unset" tags don't matter
-                    return true;
-                });
-            }
-        })();
-
-        const matchesSizes =
-            selectedSizes.length === 0 ||
-            (card.size && selectedSizes.includes(card.size));
-
-        const validTiers = card.tiers ? (Object.entries(card.tiers) as Entries<typeof card.tiers>).filter(([tierType, tier]) => tierType !== "Legendary" && tier.tooltips.length !== 0) : [];
-
-        const matchesSearchText = lowerSearchText === '' || (
-            isSearchNameOnly
-                ? card.name.toLowerCase().includes(lowerSearchText)
-                : (
-                    card.name.toLowerCase().includes(lowerSearchText) ||
-                    card.tags?.some(tag => tag.toLowerCase().includes(lowerSearchText)) ||
-                    card.hiddenTags?.some(hiddenTag => hiddenTag.toLowerCase().includes(lowerSearchText)) ||
-                    card.size?.toLowerCase().includes(lowerSearchText) ||
-                    card.heroes?.some(hero => hero.toLowerCase().includes(lowerSearchText)) ||
-                    validTiers.some(([tierName, tier]) => tierName.toLowerCase().includes(lowerSearchText) || tier.tooltips.some(tooltip => tooltip.toLowerCase().includes(lowerSearchText) || tier.attributes.some(attribute => `${attribute.name} ${attribute.value} ${attribute.valueDescriptor}`.toLowerCase().includes(lowerSearchText)))) ||
-                    (isSearchEnchantments ? card.enchantments?.some(e =>
-                        e.name.toLowerCase().includes(lowerSearchText) ||
-                        e.tooltips.some(tip => tip.toLowerCase().includes(lowerSearchText))
-                    ) : false)
-                )
+    return cards.filter(card => {
+        return (
+            matchesHero(card.heroes, selectedHeroes) &&
+            matchesTier(card.startingTier, selectedTiers) &&
+            matchesTag(card.tags, card.hiddenTags, tagStates, isMatchAnyTags) &&
+            (selectedSizes.length === 0 || (card.size && selectedSizes.includes(card.size))) &&
+            matchesSearchText(card, lowerSearchText, isSearchNameOnly, isSearchEnchantments)
         );
+    });
+}
 
-        return matchesHero && matchesTier && matchesTag && matchesSizes && matchesSearchText;
+export function filterSkillCards(
+    cards: ClientSideCardSkill[],
+    selectedHeroes: ClientSideHero[],
+    selectedTiers: ClientSideTierType[],
+    tagStates: Record<ClientSideTag | ClientSideHiddenTag, TriState>,
+    searchText: string,
+    isSearchNameOnly: boolean,
+    isMatchAnyTags: boolean
+): ClientSideCardSkill[] {
+    const lowerSearchText = searchText.toLowerCase();
+
+    return cards.filter(card => {
+        return (
+            matchesHero(card.heroes, selectedHeroes) &&
+            matchesTier(card.startingTier, selectedTiers) &&
+            matchesTag(card.tags, card.hiddenTags, tagStates, isMatchAnyTags) &&
+            matchesSearchText(card, lowerSearchText, isSearchNameOnly, false)
+        );
     });
 }
 
