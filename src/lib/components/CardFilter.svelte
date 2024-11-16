@@ -1,26 +1,25 @@
 <script lang="ts">
     import { Label, Button, Toggle } from "flowbite-svelte";
-
-    type OptionType = string | number;
+    import type { Option } from '$lib/types';
 
     let {
         label,
         options,
         isSingleSelection = false,
-        selectedOptions = $bindable(),
+        selectedOptionValues = $bindable(),
         mustMatchAll = $bindable(),
     }: {
         label: string;
-        options: OptionType[];
+        options: Option[];
         isSingleSelection?: boolean;
-        selectedOptions: OptionType[];
+        selectedOptionValues: Option["value"][];
         mustMatchAll?: boolean;
     } = $props();
 
     const handleSelection = (
-        selectedArray: OptionType[],
-        item: OptionType,
-    ): OptionType[] => {
+        selectedArray: Option["value"][],
+        item: Option["value"],
+    ): Option["value"][] => {
         if (isSingleSelection) {
             // If single selection mode, return an array with only the selected item
             return selectedArray.includes(item) ? [] : [item];
@@ -55,15 +54,15 @@
         {#each options as option}
             <Button
                 size="xs"
-                outline={!selectedOptions.includes(option)}
+                outline={!selectedOptionValues.includes(option.value)}
                 pill
-                color={selectedOptions.includes(option) ? "primary" : "light"}
+                color={selectedOptionValues.includes(option.value) ? "primary" : "light"}
                 on:click={() => {
-                    selectedOptions = handleSelection(selectedOptions, option);
+                    selectedOptionValues = handleSelection(selectedOptionValues, option.value);
                 }}
                 class="transition-colors focus:outline-none border-2"
             >
-                {option}
+                {option.name}
             </Button>
         {/each}
     </div>

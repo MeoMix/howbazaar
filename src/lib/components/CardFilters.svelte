@@ -5,12 +5,13 @@
     import { SearchSolid } from "flowbite-svelte-icons";
     import { page } from "$app/stores";
     import { goto } from "$app/navigation";
+    import type { Option } from "$lib/types";
 
     let {
         heroOptions,
         minimumTierOptions,
         tagOptions,
-        sizeOptions,
+        sizeOptions = [],
         selectedHeroes = $bindable(),
         selectedTiers = $bindable(),
         selectedTags = $bindable(),
@@ -19,10 +20,10 @@
         searchText = $bindable(),
         isSearchNameOnly = $bindable(),
     }: {
-        heroOptions: string[];
-        minimumTierOptions: string[];
-        tagOptions: string[];
-        sizeOptions: string[];
+        heroOptions: Option[];
+        minimumTierOptions: Option[];
+        tagOptions: Option[];
+        sizeOptions?: Option[];
         selectedHeroes: string[];
         selectedTiers: string[];
         selectedTags: string[];
@@ -115,24 +116,24 @@
             <CardFilter
                 label="Heroes"
                 options={heroOptions}
-                bind:selectedOptions={selectedHeroes}
+                bind:selectedOptionValues={selectedHeroes}
             />
             <CardFilter
                 label="Starting Tiers"
                 options={minimumTierOptions}
-                bind:selectedOptions={selectedTiers}
+                bind:selectedOptionValues={selectedTiers}
             />
             <CardFilter
                 label="Tags"
                 options={tagOptions}
-                bind:selectedOptions={selectedTags}
+                bind:selectedOptionValues={selectedTags}
                 bind:mustMatchAll={mustMatchAllTags}
             />
             {#if sizeOptions.length > 0}
                 <CardFilter
                     label="Sizes"
                     options={sizeOptions}
-                    bind:selectedOptions={selectedSizes}
+                    bind:selectedOptionValues={selectedSizes}
                 />
             {/if}
         </div>

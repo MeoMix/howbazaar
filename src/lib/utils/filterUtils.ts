@@ -1,14 +1,14 @@
 import type { ClientSideCardItem, ClientSideCardSkill, ClientSideHero, ClientSideHiddenTag, ClientSideSize, ClientSideTag, ClientSideTierType } from "$lib/types";
 import type { Entries } from "type-fest";
 
-// TODO: if this diverges any more maybe separate entirely
 export function prepareItemAndSkillFilterOptions(cards: (ClientSideCardItem | ClientSideCardSkill)[]) {
-    const heroOptions = ["Vanessa", "Pygmalien", "Dooley", "Jules", "Stelle", "Mak", "Common"];
-    const minimumTierOptions = ["Bronze", "Silver", "Gold", "Diamond"];
-    const sizeOptions: ClientSideSize[] = ["Small", "Medium", "Large"];
+    // TODO: Technically these option types could be tighter than string
+    const heroOptions = ["Vanessa", "Pygmalien", "Dooley", "Jules", "Stelle", "Mak", "Common"].map(hero => ({ name: hero, value: hero }));
+    const minimumTierOptions = ["Bronze", "Silver", "Gold", "Diamond"].map(minimumTier => ({ name: minimumTier, value: minimumTier }));
+    const sizeOptions = ["Small", "Medium", "Large"].map(size => ({ name: size, value: size }));
     const tagOptions = Array.from(
         new Set(cards.flatMap((card) => filterTags(card.tags, card.hiddenTags)))
-    ).sort();
+    ).sort().map(tag => ({ name: tag, value: tag }));
 
     return {
         heroOptions,
@@ -43,18 +43,18 @@ export function filterItemAndSkillCards<T extends ClientSideCardItem | ClientSid
         const matchesTag = selectedTags.length === 0 || (card.tags && (
             mustMatchAllTags
                 ? selectedTags.every((tag) =>
-                    card.tags.some((cardTag) => 
+                    card.tags.some((cardTag) =>
                         cardTag === tag || cardTag === `${tag}Reference`
                     ) ||
-                    card.hiddenTags.some((hiddenTag) => 
+                    card.hiddenTags.some((hiddenTag) =>
                         hiddenTag === tag || hiddenTag === `${tag}Reference`
                     )
                 )
                 : selectedTags.some((tag) =>
-                    card.tags.some((cardTag) => 
+                    card.tags.some((cardTag) =>
                         cardTag === tag || cardTag === `${tag}Reference`
                     ) ||
-                    card.hiddenTags.some((hiddenTag) => 
+                    card.hiddenTags.some((hiddenTag) =>
                         hiddenTag === tag || hiddenTag === `${tag}Reference`
                     )
                 )

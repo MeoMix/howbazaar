@@ -117,3 +117,8 @@ export type MonsterEncounterDay = {
     day: number;
     groups: MonsterEncounter[][];
 };
+
+export type Option = {
+    name: string;
+    value: string | number;
+};

@@ -1,9 +1,13 @@
-<svelte:head>
-    <title>Items · How Bazaar</title>
-</svelte:head>
-
 <script lang="ts">
-    import type { ClientSideCard, ClientSideCardItem, ClientSideHero, ClientSideHiddenTag, ClientSideSize, ClientSideTag, ClientSideTierType } from "$lib/types";
+    import type {
+        ClientSideCard,
+        ClientSideCardItem,
+        ClientSideHero,
+        ClientSideHiddenTag,
+        ClientSideSize,
+        ClientSideTag,
+        ClientSideTierType,
+    } from "$lib/types";
     import CardItem from "$lib/components/CardItem.svelte";
     import CardFilters from "$lib/components/CardFilters.svelte";
     import {
@@ -41,6 +45,10 @@
         ),
     );
 </script>
+
+<svelte:head>
+    <title>Items · How Bazaar</title>
+</svelte:head>
 
 <CardFilters
     {heroOptions}

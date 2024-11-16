@@ -1,9 +1,13 @@
-<svelte:head>
-    <title>Skills · How Bazaar</title>
-</svelte:head>
-
 <script lang="ts">
-    import type { ClientSideCard, ClientSideCardSkill, ClientSideHero, ClientSideHiddenTag, ClientSideSize, ClientSideTag, ClientSideTierType } from "$lib/types";
+    import type {
+        ClientSideCard,
+        ClientSideCardSkill,
+        ClientSideHero,
+        ClientSideHiddenTag,
+        ClientSideSize,
+        ClientSideTag,
+        ClientSideTierType,
+    } from "$lib/types";
     import CardSkill from "$lib/components/CardSkill.svelte";
     import {
         filterItemAndSkillCards,
@@ -20,12 +24,11 @@
     const { heroOptions, minimumTierOptions, tagOptions } =
         prepareItemAndSkillFilterOptions(cardSkills);
 
-    const sizeOptions: string[] = [];
-
     let selectedHeroes = $state([] as ClientSideHero[]);
     let selectedTiers = $state([] as ClientSideTierType[]);
     let selectedTags = $state([] as (ClientSideTag | ClientSideHiddenTag)[]);
     let mustMatchAllTags = $state(false);
+    // TODO: It's weird this has to declare selectedSizes when it doesn't filter on it
     let selectedSizes = $state([] as ClientSideSize[]);
     let searchText = $state("");
     let isSearchNameOnly = $state(false);
@@ -44,11 +47,14 @@
     );
 </script>
 
+<svelte:head>
+    <title>Skills · How Bazaar</title>
+</svelte:head>
+
 <CardFilters
     {heroOptions}
     {minimumTierOptions}
     {tagOptions}
-    {sizeOptions}
     bind:selectedHeroes
     bind:selectedTiers
     bind:selectedTags

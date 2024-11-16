@@ -10,7 +10,6 @@
     const { data }: { data: { monsterEncounterDays: MonsterEncounterDay[] } } =
         $props();
 
-    // TODO: Add support for days past 10, logic is more convoluted. Or maybe say 10+
     const monsterEncounterDays = $derived(
         data.monsterEncounterDays.sort(
             (dayHourA, dayHourB) => dayHourA.day - dayHourB.day,
@@ -50,9 +49,12 @@
 <div class="my-4">
     <CardFilter
         label="Day"
-        options={monsterEncounterDays.map(({ day }) => day)}
+        options={monsterEncounterDays.map(({ day }) => ({
+            name: `${day}${day === 10 ? "+" : ""}`,
+            value: day,
+        }))}
         isSingleSelection={true}
-        bind:selectedOptions={selectedDays}
+        bind:selectedOptionValues={selectedDays}
     />
 </div>
 
