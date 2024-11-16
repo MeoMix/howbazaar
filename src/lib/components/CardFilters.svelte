@@ -1,6 +1,7 @@
 <script lang="ts">
     import { Button, ButtonGroup, Input, InputAddon } from "flowbite-svelte";
     import CardFilter from "./MultiSelectFilter.svelte";
+    import FilterToggle from "./FilterToggle.svelte";
     import { onMount } from "svelte";
     import { SearchSolid } from "flowbite-svelte-icons";
     import { page } from "$app/stores";
@@ -77,27 +78,17 @@
     </ButtonGroup>
 
     <div class="flex gap-2 mt-2">
-        <Button
-            size="xs"
-            outline={!isSearchNameOnly}
-            pill
-            color={isSearchNameOnly ? "primary" : "light"}
-            on:click={() => (isSearchNameOnly = !isSearchNameOnly)}
-            class="transition-colors focus:outline-none border-2"
-        >
-            Search Name Only
-        </Button>
+        <FilterToggle
+            isEnabled={isSearchNameOnly}
+            label="Search Name Only"
+            onClick={() => (isSearchNameOnly = !isSearchNameOnly)}
+        />
 
-        <Button
-            size="xs"
-            outline={!isShowingAdvancedFilters}
-            pill
-            color={isShowingAdvancedFilters ? "primary" : "light"}
-            on:click={toggleAdvancedFilters}
-            class="transition-colors focus:outline-none border-2"
-        >
-            Show Advanced Filters
-        </Button>
+        <FilterToggle
+            isEnabled={isShowingAdvancedFilters}
+            label="Show Advanced Filters"
+            onClick={toggleAdvancedFilters}
+        />
 
         <Button
             size="xs"

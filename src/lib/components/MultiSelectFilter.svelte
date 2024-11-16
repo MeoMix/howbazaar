@@ -1,6 +1,7 @@
 <script lang="ts">
-    import { Label, Button, Toggle } from "flowbite-svelte";
+    import { Label, Toggle } from "flowbite-svelte";
     import type { Option } from "$lib/types";
+    import FilterToggle from "./FilterToggle.svelte";
 
     let {
         label,
@@ -51,14 +52,10 @@
 
     <div class="flex flex-wrap gap-2">
         {#each options as option}
-            <Button
-                size="xs"
-                outline={!selectedOptionValues.includes(option.value)}
-                pill
-                color={selectedOptionValues.includes(option.value)
-                    ? "primary"
-                    : "light"}
-                on:click={() => {
+            <FilterToggle
+                isEnabled={selectedOptionValues.includes(option.value)}
+                label={option.name}
+                onClick={() => {
                     selectedOptionValues = handleSelection(
                         selectedOptionValues,
                         option.value,
@@ -68,10 +65,7 @@
                         onSelect(selectedOptionValues);
                     }
                 }}
-                class="transition-colors focus:outline-none border-2"
-            >
-                {option.name}
-            </Button>
+            />
         {/each}
     </div>
 </div>
