@@ -22,24 +22,52 @@ function matchesHero(cardHeroes: ClientSideHero[], selectedHeroes: ClientSideHer
     return selectedHeroes.length === 0 || selectedHeroes.some(hero => cardHeroes.includes(hero));
 }
 
+function matchesHeroState(
+    cardHeroes: ClientSideHero[],
+    heroStates: Record<ClientSideHero, TriState>,
+    isMatchAnyHero: boolean
+): boolean {
+    const heroEntries = Object.entries(heroStates);
+
+    if (isMatchAnyHero) {
+        const hasOnHeroes = heroEntries.some(([_, state]) => state === "on");
+        if (hasOnHeroes) {
+            return heroEntries.some(([hero, state]) => {
+                return state === "on" && cardHeroes.some(cardHero => cardHero === hero);
+            });
+        }
+        return true; // No heroes are "on"; pass all cards
+    }
+
+    return heroEntries.every(([hero, state]) => {
+        if (state === "on") {
+            return cardHeroes.some(cardHero => cardHero === hero);
+        }
+        if (state === "off") {
+            return !cardHeroes.some(cardHero => cardHero === hero);
+        }
+        return true; // "unset" tags don't affect filtering
+    });
+}
+
 function matchesTier(cardTier: ClientSideTierType, selectedTiers: ClientSideTierType[]): boolean {
     return selectedTiers.length === 0 || selectedTiers.includes(cardTier);
 }
 
-function matchesTag(
-    cardTags: string[] | undefined,
-    cardHiddenTags: string[] | undefined,
+function matchesTagState(
+    cardTags: string[],
+    cardHiddenTags: string[],
     tagStates: Record<ClientSideTag | ClientSideHiddenTag, TriState>,
-    isMatchAnyTags: boolean
+    isMatchAnyTag: boolean
 ): boolean {
     const tagEntries = Object.entries(tagStates);
 
-    if (isMatchAnyTags) {
+    if (isMatchAnyTag) {
         const hasOnTags = tagEntries.some(([_, state]) => state === "on");
         if (hasOnTags) {
             return tagEntries.some(([tag, state]) => {
                 const isTagMatch = (cardTag: string) => cardTag === tag || cardTag === `${tag}Reference`;
-                return state === "on" && (cardTags?.some(isTagMatch) || cardHiddenTags?.some(isTagMatch));
+                return state === "on" && (cardTags.some(isTagMatch) || cardHiddenTags.some(isTagMatch));
             });
         }
         return true; // No tags are "on"; pass all cards
@@ -48,10 +76,10 @@ function matchesTag(
     return tagEntries.every(([tag, state]) => {
         const isTagMatch = (cardTag: string) => cardTag === tag || cardTag === `${tag}Reference`;
         if (state === "on") {
-            return cardTags?.some(isTagMatch) || cardHiddenTags?.some(isTagMatch);
+            return cardTags.some(isTagMatch) || cardHiddenTags.some(isTagMatch);
         }
         if (state === "off") {
-            return !cardTags?.some(isTagMatch) && !cardHiddenTags?.some(isTagMatch);
+            return !cardTags.some(isTagMatch) && !cardHiddenTags.some(isTagMatch);
         }
         return true; // "unset" tags don't affect filtering
     });
@@ -99,7 +127,7 @@ export function filterItemCards(
     searchText: string,
     isSearchNameOnly: boolean,
     isSearchEnchantments: boolean,
-    isMatchAnyTags: boolean
+    isMatchAnyTag: boolean
 ): ClientSideCardItem[] {
     const lowerSearchText = searchText.toLowerCase();
 
@@ -107,7 +135,7 @@ export function filterItemCards(
         return (
             matchesHero(card.heroes, selectedHeroes) &&
             matchesTier(card.startingTier, selectedTiers) &&
-            matchesTag(card.tags, card.hiddenTags, tagStates, isMatchAnyTags) &&
+            matchesTagState(card.tags, card.hiddenTags, tagStates, isMatchAnyTag) &&
             (selectedSizes.length === 0 || (card.size && selectedSizes.includes(card.size))) &&
             matchesSearchText(card, lowerSearchText, isSearchNameOnly, isSearchEnchantments)
         );
@@ -116,20 +144,21 @@ export function filterItemCards(
 
 export function filterSkillCards(
     cards: ClientSideCardSkill[],
-    selectedHeroes: ClientSideHero[],
+    heroStates: Record<ClientSideHero, TriState>,
     selectedTiers: ClientSideTierType[],
     tagStates: Record<ClientSideTag | ClientSideHiddenTag, TriState>,
     searchText: string,
     isSearchNameOnly: boolean,
-    isMatchAnyTags: boolean
+    isMatchAnyTag: boolean,
+    isMatchAnyHero: boolean
 ): ClientSideCardSkill[] {
     const lowerSearchText = searchText.toLowerCase();
 
     return cards.filter(card => {
         return (
-            matchesHero(card.heroes, selectedHeroes) &&
+            matchesHeroState(card.heroes, heroStates, isMatchAnyHero) &&
             matchesTier(card.startingTier, selectedTiers) &&
-            matchesTag(card.tags, card.hiddenTags, tagStates, isMatchAnyTags) &&
+            matchesTagState(card.tags, card.hiddenTags, tagStates, isMatchAnyTag) &&
             matchesSearchText(card, lowerSearchText, isSearchNameOnly, false)
         );
     });

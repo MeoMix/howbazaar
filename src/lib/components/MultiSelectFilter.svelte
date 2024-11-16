@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { Label, Toggle } from "flowbite-svelte";
+    import { Label } from "flowbite-svelte";
     import type { Option } from "$lib/types";
     import FilterToggle from "./FilterToggle.svelte";
 
@@ -7,13 +7,11 @@
         label,
         options,
         selectedOptionValues = $bindable(),
-        isMatchAny = $bindable(),
         onSelect,
     }: {
         label: string;
         options: Option[];
         selectedOptionValues: Option["value"][];
-        isMatchAny?: boolean;
         onSelect?: (value: Option["value"][]) => void;
     } = $props();
 
@@ -30,21 +28,6 @@
 <div>
     <div class="mb-2">
         <Label class="font-semibold text-lg">{label}</Label>
-        {#if isMatchAny !== undefined}
-            <Toggle
-                class="mt-2 inline-flex"
-                checked={isMatchAny}
-                on:click={() => {
-                    isMatchAny = !isMatchAny;
-
-                    if (onSelect) {
-                        onSelect(selectedOptionValues);
-                    }
-                }}
-            >
-                Must Match All
-            </Toggle>
-        {/if}
     </div>
 
     <div class="flex flex-wrap gap-2">

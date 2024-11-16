@@ -4,7 +4,12 @@
     import FilterToggle from "./FilterToggle.svelte";
     import { onMount } from "svelte";
     import { page } from "$app/stores";
-    import type { Option, TriState } from "$lib/types";
+    import type {
+        ClientSideHiddenTag,
+        ClientSideTag,
+        Option,
+        TriState,
+    } from "$lib/types";
     import SearchInput from "./SearchInput.svelte";
     import MultiSelectTriFilter from "./MultiSelectTriFilter.svelte";
     import AdvancedFilterToggle from "./AdvancedFilterToggle.svelte";
@@ -18,7 +23,7 @@
         selectedTiers = $bindable(),
         tagStates = $bindable(),
         selectedSizes = $bindable(),
-        isMatchAnyTags = $bindable(),
+        isMatchAnyTag = $bindable(),
         searchText = $bindable(),
         isSearchNameOnly = $bindable(),
         isSearchEnchantments = $bindable(),
@@ -30,9 +35,9 @@
         canFilterEnchantments?: boolean;
         selectedHeroes: string[];
         selectedTiers: string[];
-        tagStates: Record<string, TriState>;
+        tagStates: Record<ClientSideTag | ClientSideHiddenTag, TriState>;
         selectedSizes: string[];
-        isMatchAnyTags: boolean;
+        isMatchAnyTag: boolean;
         searchText: string;
         isSearchNameOnly: boolean;
         isSearchEnchantments: boolean;
@@ -43,8 +48,8 @@
         selectedTiers = [];
         tagStates = Object.fromEntries(
             tagOptions.map((option) => [option.value, "unset"]),
-        );
-        isMatchAnyTags = false;
+        ) as Record<ClientSideTag | ClientSideHiddenTag, TriState>;
+        isMatchAnyTag = false;
         selectedSizes = [];
         searchText = "";
         isSearchNameOnly = false;
@@ -110,7 +115,7 @@
                 label="Tags"
                 options={tagOptions}
                 bind:triStates={tagStates}
-                bind:isMatchAny={isMatchAnyTags}
+                bind:isMatchAny={isMatchAnyTag}
             />
             <MultiSelectFilter
                 label="Sizes"

@@ -24,7 +24,15 @@
     const { heroOptions, minimumTierOptions, tagOptions } =
         getCardFilterOptions(cardSkills);
 
-    let selectedHeroes = $state([] as ClientSideHero[]);
+    let heroStates = $state(
+        Object.fromEntries(
+            heroOptions.map((heroOption) => [
+                heroOption.value,
+                "unset" as TriState,
+            ]),
+        ) as Record<ClientSideHero, TriState>,
+    );
+
     let selectedTiers = $state([] as ClientSideTierType[]);
     // Generate tagStates with default "unset" value
     let tagStates = $state(
@@ -35,19 +43,21 @@
             ]),
         ) as Record<ClientSideTag | ClientSideHiddenTag, TriState>,
     );
-    let isMatchAnyTags = $state(false);
+    let isMatchAnyTag = $state(false);
+    let isMatchAnyHero = $state(false);
     let searchText = $state("");
     let isSearchNameOnly = $state(false);
 
     const filteredCards = $derived(
         filterSkillCards(
             cardSkills,
-            selectedHeroes,
+            heroStates,
             selectedTiers,
             tagStates,
             searchText,
             isSearchNameOnly,
-            isMatchAnyTags,
+            isMatchAnyTag,
+            isMatchAnyHero
         ),
     );
 </script>
@@ -60,10 +70,11 @@
     {heroOptions}
     {minimumTierOptions}
     {tagOptions}
-    bind:selectedHeroes
+    bind:heroStates
     bind:selectedTiers
     bind:tagStates
-    bind:isMatchAnyTags
+    bind:isMatchAnyTag
+    bind:isMatchAnyHero
     bind:searchText
     bind:isSearchNameOnly
 />

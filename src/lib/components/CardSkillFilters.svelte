@@ -4,7 +4,13 @@
     import FilterToggle from "./FilterToggle.svelte";
     import { onMount } from "svelte";
     import { page } from "$app/stores";
-    import type { Option, TriState } from "$lib/types";
+    import type {
+        ClientSideHero,
+        ClientSideHiddenTag,
+        ClientSideTag,
+        Option,
+        TriState,
+    } from "$lib/types";
     import SearchInput from "./SearchInput.svelte";
     import MultiSelectTriFilter from "./MultiSelectTriFilter.svelte";
     import AdvancedFilterToggle from "./AdvancedFilterToggle.svelte";
@@ -13,10 +19,11 @@
         heroOptions,
         minimumTierOptions,
         tagOptions,
-        selectedHeroes = $bindable(),
+        heroStates = $bindable(),
         selectedTiers = $bindable(),
         tagStates = $bindable(),
-        isMatchAnyTags = $bindable(),
+        isMatchAnyTag = $bindable(),
+        isMatchAnyHero = $bindable(),
         searchText = $bindable(),
         isSearchNameOnly = $bindable(),
     }: {
@@ -24,21 +31,25 @@
         minimumTierOptions: Option[];
         tagOptions: Option[];
         canFilterEnchantments?: boolean;
-        selectedHeroes: string[];
+        heroStates: Record<ClientSideHero, TriState>;
         selectedTiers: string[];
-        tagStates: Record<string, TriState>;
-        isMatchAnyTags: boolean;
+        tagStates: Record<ClientSideTag | ClientSideHiddenTag, TriState>;
+        isMatchAnyTag: boolean;
+        isMatchAnyHero: boolean;
         searchText: string;
         isSearchNameOnly: boolean;
     } = $props();
 
     function clearSearch() {
-        selectedHeroes = [];
+        heroStates = Object.fromEntries(
+            heroOptions.map((option) => [option.value, "unset"]),
+        ) as Record<ClientSideHero, TriState>;
         selectedTiers = [];
         tagStates = Object.fromEntries(
             tagOptions.map((option) => [option.value, "unset"]),
-        );
-        isMatchAnyTags = false;
+        ) as Record<ClientSideTag | ClientSideHiddenTag, TriState>;
+        isMatchAnyTag = false;
+        isMatchAnyHero = false;
         searchText = "";
         isSearchNameOnly = false;
     }
@@ -60,7 +71,7 @@
     <SearchInput placeholder="Search skills..." bind:value={searchText} />
 
     <div class="flex gap-2 mt-2">
-        <AdvancedFilterToggle bind:isShowingAdvancedFilters={isShowingAdvancedFilters} />
+        <AdvancedFilterToggle bind:isShowingAdvancedFilters />
 
         <FilterToggle
             isEnabled={isSearchNameOnly}
@@ -82,11 +93,13 @@
 
     {#if isShowingAdvancedFilters}
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
-            <MultiSelectFilter
+            <MultiSelectTriFilter
                 label="Heroes"
                 options={heroOptions}
-                bind:selectedOptionValues={selectedHeroes}
+                bind:triStates={heroStates}
+                bind:isMatchAny={isMatchAnyHero}
             />
+
             <MultiSelectFilter
                 label="Starting Tiers"
                 options={minimumTierOptions}
@@ -96,7 +109,7 @@
                 label="Tags"
                 options={tagOptions}
                 bind:triStates={tagStates}
-                bind:isMatchAny={isMatchAnyTags}
+                bind:isMatchAny={isMatchAnyTag}
             />
         </div>
     {/if}

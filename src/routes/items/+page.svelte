@@ -38,7 +38,7 @@
         ) as Record<ClientSideTag | ClientSideHiddenTag, TriState>,
     );
 
-    let isMatchAnyTags = $state(false);
+    let isMatchAnyTag = $state(false);
     let selectedSizes = $state([] as ClientSideSize[]);
     let searchText = $state("");
     let isSearchNameOnly = $state(false);
@@ -54,7 +54,7 @@
             searchText,
             isSearchNameOnly,
             isSearchEnchantments,
-            isMatchAnyTags,
+            isMatchAnyTag,
         ),
     );
 </script>
@@ -72,7 +72,7 @@
     bind:selectedTiers
     bind:tagStates
     bind:selectedSizes
-    bind:isMatchAnyTags
+    bind:isMatchAnyTag
     bind:searchText
     bind:isSearchNameOnly
     bind:isSearchEnchantments
