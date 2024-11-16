@@ -572,6 +572,10 @@ function parseItemsAndSkills(cardsJson: CardsJson): ClientSideCard[] {
             hiddenTags = hiddenTags.filter(tag => tag !== 'Regen');
         }
 
+        // Fix bad data related to starting tiers
+        // let startingTier = card.StartingTier;
+        // const invalidLegendaries = ["Eye of the Colossus", "Infernal Greatsword", "Necronomicon", "Octopus", "Scythe", "Singularity", "Soul of the District", "Teddy", "The Eclipse", ""]
+
         return {
             id: card.Id,
             name,

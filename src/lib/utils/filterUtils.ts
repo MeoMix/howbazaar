@@ -4,7 +4,7 @@ import type { Entries } from "type-fest";
 export function prepareItemAndSkillFilterOptions(cards: (ClientSideCardItem | ClientSideCardSkill)[]) {
     // TODO: Technically these option types could be tighter than string
     const heroOptions = ["Vanessa", "Pygmalien", "Dooley", "Jules", "Stelle", "Mak", "Common"].map(hero => ({ name: hero, value: hero }));
-    const minimumTierOptions = ["Bronze", "Silver", "Gold", "Diamond", "Legendary"].map(minimumTier => ({ name: minimumTier, value: minimumTier }));
+    const minimumTierOptions = ["Bronze", "Silver", "Gold", "Diamond"].map(minimumTier => ({ name: minimumTier, value: minimumTier }));
     const sizeOptions = ["Small", "Medium", "Large"].map(size => ({ name: size, value: size }));
     const tagOptions = Array.from(
         new Set(cards.flatMap((card) => filterTags(card.tags, card.hiddenTags)))
