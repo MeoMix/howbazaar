@@ -5372,21 +5372,21 @@
       },
       "Silver": {
         "tooltips": [
-          "At the start of each fight, gain shield equal to 25% of your max health. [{ability.0|%}]",
+          "At the start of each fight, gain shield equal to 25% of your max health. [0%]",
           "When you use an item, lose 10% of your current shield."
         ],
         "attributes": []
       },
       "Gold": {
         "tooltips": [
-          "At the start of each fight, gain shield equal to 50% of your max health. [{ability.0|%}]",
+          "At the start of each fight, gain shield equal to 50% of your max health. [0%]",
           "When you use an item, lose 10% of your current shield."
         ],
         "attributes": []
       },
       "Diamond": {
         "tooltips": [
-          "At the start of each fight, gain shield equal to 75% of your max health. [{ability.0|%}]",
+          "At the start of each fight, gain shield equal to 75% of your max health. [0%]",
           "When you use an item, lose 10% of your current shield."
         ],
         "attributes": []
@@ -47210,7 +47210,7 @@
       {
         "name": "Deadly",
         "tooltips": [
-          "This has +{ability.e1}% Crit Chance."
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -51461,13 +51461,13 @@
       },
       "Gold": {
         "tooltips": [
-          "The first time you fall below half health each fight, Shield equal to 20% of your Max Health. [{ability.0|%}]"
+          "The first time you fall below half health each fight, Shield equal to 20% of your Max Health. [0%]"
         ],
         "attributes": []
       },
       "Diamond": {
         "tooltips": [
-          "The first time you fall below half health each fight, Shield equal to 30% of your Max Health. [{ability.0|%}]"
+          "The first time you fall below half health each fight, Shield equal to 30% of your Max Health. [0%]"
         ],
         "attributes": []
       },
@@ -64561,7 +64561,7 @@
       {
         "name": "Deadly",
         "tooltips": [
-          "This has +{ability.e1}% Crit Chance."
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -65994,7 +65994,6 @@
     },
     "tags": [],
     "hiddenTags": [
-      "Regen",
       "SlowReference"
     ],
     "size": "Medium",

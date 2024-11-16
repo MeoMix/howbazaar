@@ -564,6 +564,14 @@ function parseItemsAndSkills(cardsJson: CardsJson): ClientSideCard[] {
             };
         }).filter(enchantment => enchantment.tooltips.length > 0) : [];
 
+        let hiddenTags = card.HiddenTags;
+        const name = card.Localization.Title.Text;
+        
+        // TODO: Remove this in a future patch -- just bad data.
+        if (name === "Tripwire" && hiddenTags.includes('Regen')) {
+            hiddenTags = hiddenTags.filter(tag => tag !== 'Regen');
+        }
+
         return {
             id: card.Id,
             name: card.Localization.Title.Text,
@@ -571,7 +579,7 @@ function parseItemsAndSkills(cardsJson: CardsJson): ClientSideCard[] {
             startingTier: card.StartingTier,
             tiers,
             tags: card.Tags,
-            hiddenTags: card.HiddenTags,
+            hiddenTags,
             size: card.Size,
             heroes: card.Heroes,
             enchantments,
