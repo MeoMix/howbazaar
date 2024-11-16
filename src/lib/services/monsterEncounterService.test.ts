@@ -54,7 +54,18 @@ describe('MonsterEncounterService', () => {
                 group.filter((monsterEncounter) => monsterEncounter.cardName === "Veteran Octopus")
             )
         );
-    
+
         expect(veteranOctopusEncounters.length).toBe(1);
+    });
+
+    it('should have item details for Lord of the Waste\'s Legendary Flamberge', () => {
+        const lordOfTheWastes = monsterEncounterDays
+            .flatMap((day) => day.groups)
+            .flatMap((group) => group)
+            .find((monsterEncounter) => monsterEncounter.cardName === "Lord of the Wastes");
+
+        const flamberge = lordOfTheWastes?.items.find(item => item.card.name === "Flamberge");
+
+        expect(flamberge?.card.tiers["Legendary"]).toEqual(flamberge?.card.tiers["Diamond"]);
     });
 });

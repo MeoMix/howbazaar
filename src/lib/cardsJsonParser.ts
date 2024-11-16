@@ -152,13 +152,13 @@ function getTierMap(card: ValidItemOrSkillCard) {
 
             // Only merge with the previous tier if the current tier has attributes.
             acc[tier] = {
-                Attributes: currentTier?.Attributes
-                    ? {
-                        ...(previousTier?.Attributes || {}),
-                        ...currentTier.Attributes,
-                    }
-                    : {}, // If no attributes, keep it as an empty object.
-                TooltipIds: currentTier?.TooltipIds || [], // Retain TooltipIds without merging.
+                Attributes: {
+                    ...(previousTier?.Attributes ?? {}),
+                    ...(currentTier?.Attributes ?? {}),
+                },
+                // Attempt to support the fact that game data can be wrong and say Legendary doesn't exist and yet monster encounter
+                // contains Legendary items.
+                TooltipIds: currentTier === undefined && previousTier !== undefined ? previousTier.TooltipIds : (currentTier?.TooltipIds ?? [])
             };
 
             return acc;
@@ -566,7 +566,7 @@ function parseItemsAndSkills(cardsJson: CardsJson): ClientSideCard[] {
 
         let hiddenTags = card.HiddenTags;
         const name = card.Localization.Title.Text;
-        
+
         // TODO: Remove this in a future patch -- just bad data.
         if (name === "Tripwire" && hiddenTags.includes('Regen')) {
             hiddenTags = hiddenTags.filter(tag => tag !== 'Regen');
@@ -574,7 +574,7 @@ function parseItemsAndSkills(cardsJson: CardsJson): ClientSideCard[] {
 
         return {
             id: card.Id,
-            name: card.Localization.Title.Text,
+            name,
             type: card.Type,
             startingTier: card.StartingTier,
             tiers,
