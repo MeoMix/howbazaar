@@ -59058,7 +59058,8 @@
       {
         "name": "Radiant",
         "tooltips": [
-          "Cannot be Frozen, Slowed, or Destroyed"
+          "-1000 Freeze",
+          "-1000 Slow"
         ]
       }
     ],
