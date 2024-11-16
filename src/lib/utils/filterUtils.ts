@@ -26,6 +26,7 @@ export function filterItemAndSkillCards<T extends ClientSideCardItem | ClientSid
     selectedSizes: ClientSideSize[],
     searchText: string,
     isSearchNameOnly: boolean,
+    isSearchEnchantments: boolean,
     mustMatchAllTags: boolean
 ): T[] {
     const lowerSearchText = searchText.toLowerCase();
@@ -76,10 +77,10 @@ export function filterItemAndSkillCards<T extends ClientSideCardItem | ClientSid
                     card.size?.toLowerCase().includes(lowerSearchText) ||
                     card.heroes?.some(hero => hero.toLowerCase().includes(lowerSearchText)) ||
                     validTiers.some(([tierName, tier]) => tierName.toLowerCase().includes(lowerSearchText) || tier.tooltips.some(tooltip => tooltip.toLowerCase().includes(lowerSearchText) || tier.attributes.some(attribute => `${attribute.name} ${attribute.value} ${attribute.valueDescriptor}`.toLowerCase().includes(lowerSearchText)))) ||
-                    card.enchantments?.some(e =>
+                    (isSearchEnchantments ? card.enchantments?.some(e =>
                         e.name.toLowerCase().includes(lowerSearchText) ||
                         e.tooltips.some(tip => tip.toLowerCase().includes(lowerSearchText))
-                    )
+                    ) : false)
                 )
         );
 

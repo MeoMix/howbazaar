@@ -31,6 +31,7 @@
     let selectedSizes = $state([] as ClientSideSize[]);
     let searchText = $state("");
     let isSearchNameOnly = $state(false);
+    let isSearchEnchantments = $state(false);
 
     const filteredCards = $derived(
         filterItemAndSkillCards(
@@ -41,6 +42,7 @@
             selectedSizes,
             searchText,
             isSearchNameOnly,
+            isSearchEnchantments,
             mustMatchAllTags,
         ),
     );
@@ -55,6 +57,8 @@
     {minimumTierOptions}
     {tagOptions}
     {sizeOptions}
+    searchPlaceholder="Search items..."
+    canFilterEnchantments
     bind:selectedHeroes
     bind:selectedTiers
     bind:selectedTags
@@ -62,6 +66,7 @@
     bind:mustMatchAllTags
     bind:searchText
     bind:isSearchNameOnly
+    bind:isSearchEnchantments
 />
 
 {#snippet listItem(card: ClientSideCardItem)}

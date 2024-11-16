@@ -32,6 +32,8 @@
     let selectedSizes = $state([] as ClientSideSize[]);
     let searchText = $state("");
     let isSearchNameOnly = $state(false);
+    // TODO: It's weird this has to declare isSearchEnchantments when skills don't have enchantments
+    let isSearchEnchantments = $state(false);
 
     const filteredCards = $derived(
         filterItemAndSkillCards(
@@ -42,6 +44,7 @@
             selectedSizes,
             searchText,
             isSearchNameOnly,
+            isSearchEnchantments,
             mustMatchAllTags,
         ),
     );
@@ -55,6 +58,7 @@
     {heroOptions}
     {minimumTierOptions}
     {tagOptions}
+    searchPlaceholder="Search skills..."
     bind:selectedHeroes
     bind:selectedTiers
     bind:selectedTags
@@ -62,6 +66,7 @@
     bind:mustMatchAllTags
     bind:searchText
     bind:isSearchNameOnly
+    bind:isSearchEnchantments
 />
 
 {#snippet listItem(card: ClientSideCardSkill)}
