@@ -95,7 +95,7 @@
         {#if canFilterEnchantments}
             <FilterToggle
                 isEnabled={isSearchEnchantments}
-                label="Include Enchantments"
+                label="Search Enchantments"
                 onClick={() => (isSearchEnchantments = !isSearchEnchantments)}
             />
         {/if}
