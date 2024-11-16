@@ -11,7 +11,7 @@
         label: string;
         state: TriState;
         value: Option["value"];
-        onClick: (value: Option["value"]) => void; // Pass the value back
+        onClick: (value: Option["value"]) => void;
     } = $props();
 
     function getColor() {
