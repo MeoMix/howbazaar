@@ -5,7 +5,6 @@
     import { Card } from "flowbite-svelte";
     import { filterTags } from "$lib/utils/filterUtils";
     import CardBadges from "./CardBadges.svelte";
-    import { getEnchantmentClass, getTierClass } from "$lib/utils/classUtils";
 
     const { card }: { card: ClientSideCardItem } = $props();
 
@@ -46,7 +45,7 @@
         {#each tiers as [tierType, tier]}
             <Card size="xl" padding="sm">
                 <div
-                    class="text-lg font-semibold mb-2 {getTierClass(tierType)}"
+                    class={`text-lg font-semibold mb-2 text-tiers-${tierType.toLowerCase()}`}
                 >
                     {tierType}
                 </div>
@@ -78,9 +77,7 @@
             {#each card.enchantments as enchantment}
                 <Card size="xl" padding="sm">
                     <div
-                        class="text-lg font-semibold mb-2 {getEnchantmentClass(
-                            enchantment.name,
-                        )}"
+                        class={`text-lg font-semibold mb-2 text-enchantments-${enchantment.name.toLowerCase()}`}
                     >
                         {enchantment.name}
                     </div>

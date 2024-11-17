@@ -29,7 +29,7 @@
     <div class="font-semibold text-xl mt-4 mb-2">Cards</div>
 
     <div
-        class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-2"
+        class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-2"
     >
         {#each monsterEncounter.items as item}
             <MonsterCardItem
@@ -43,7 +43,7 @@
     {#if monsterEncounter.skills.length > 0}
         <div class="font-semibold text-xl mt-4 mb-2">Skills</div>
         <div
-            class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-2"
+            class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-2"
         >
             {#each monsterEncounter.skills as skill}
                 <MonsterCardSkill card={skill.card} tierType={skill.tierType} />
