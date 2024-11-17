@@ -102,7 +102,7 @@ function matchesSearchText(
     const substringMatch = (text: string, searchText: string): boolean =>
         text.toLowerCase().includes(searchText.toLowerCase());
 
-    const fuzzyMatch = (text: string, searchText: string, threshold: number = 2): boolean => {
+    const fuzzyMatch = (text: string, searchText: string, threshold: number = 1): boolean => {
         const distance = levenshtein(text.toLowerCase(), searchText.toLowerCase());
         return distance <= threshold;
     };
