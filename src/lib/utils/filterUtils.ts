@@ -98,24 +98,66 @@ function matchesSearchText(
             .filter(([tierType, tier]) => tierType !== "Legendary" && tier.tooltips.length !== 0)
         : [];
 
+    // Substring and fuzzy matching functions
+    const substringMatch = (text: string, searchText: string): boolean =>
+        text.toLowerCase().includes(searchText.toLowerCase());
+
+    const fuzzyMatch = (text: string, searchText: string, threshold: number = 2): boolean => {
+        const distance = levenshtein(text.toLowerCase(), searchText.toLowerCase());
+        return distance <= threshold;
+    };
+
+    const levenshtein = (a: string, b: string): number => {
+        const matrix = Array.from({ length: a.length + 1 }, (_, i) =>
+            Array(b.length + 1).fill(i)
+        );
+
+        for (let j = 0; j <= b.length; j++) matrix[0][j] = j;
+
+        for (let i = 1; i <= a.length; i++) {
+            for (let j = 1; j <= b.length; j++) {
+                const cost = a[i - 1] === b[j - 1] ? 0 : 1;
+                matrix[i][j] = Math.min(
+                    matrix[i - 1][j] + 1, // Deletion
+                    matrix[i][j - 1] + 1, // Insertion
+                    matrix[i - 1][j - 1] + cost // Substitution
+                );
+            }
+        }
+
+        return matrix[a.length][b.length];
+    };
+
+    const hybridMatch = (text: string, searchText: string): boolean => {
+        const isShortInput = searchText.length <= 3; // Threshold to treat short inputs differently
+        return substringMatch(text, searchText) || (!isShortInput && fuzzyMatch(text, searchText));
+    };
+
+    const hybridMatchArray = (arr: string[] | undefined, searchText: string): boolean =>
+        arr?.some(item => hybridMatch(item, searchText)) ?? false;
+
+    const hybridMatchTier = validTiers.some(([tierName, tier]) =>
+        hybridMatch(tierName, lowerSearchText) ||
+        tier.tooltips.some(tooltip => hybridMatch(tooltip, lowerSearchText)) ||
+        tier.attributes.some(attribute =>
+            hybridMatch(`${attribute.name} ${attribute.value} ${attribute.valueDescriptor}`, lowerSearchText)
+        )
+    );
+
+    const hybridMatchEnchantments = isSearchEnchantments && card.enchantments?.some(e =>
+        hybridMatch(e.name, lowerSearchText) ||
+        e.tooltips.some(tip => hybridMatch(tip, lowerSearchText))
+    );
+
     return isSearchNameOnly
-        ? card.name.toLowerCase().includes(lowerSearchText)
-        : card.name.toLowerCase().includes(lowerSearchText) ||
-        card.tags?.some(tag => tag.toLowerCase().includes(lowerSearchText)) ||
-        card.hiddenTags?.some(hiddenTag => hiddenTag.toLowerCase().includes(lowerSearchText)) ||
-        card.size?.toLowerCase().includes(lowerSearchText) ||
-        card.heroes?.some(hero => hero.toLowerCase().includes(lowerSearchText)) ||
-        validTiers.some(([tierName, tier]) =>
-            tierName.toLowerCase().includes(lowerSearchText) ||
-            tier.tooltips.some(tooltip => tooltip.toLowerCase().includes(lowerSearchText)) ||
-            tier.attributes.some(attribute =>
-                `${attribute.name} ${attribute.value} ${attribute.valueDescriptor}`.toLowerCase().includes(lowerSearchText)
-            )
-        ) ||
-        (isSearchEnchantments && card.enchantments?.some(e =>
-            e.name.toLowerCase().includes(lowerSearchText) ||
-            e.tooltips.some(tip => tip.toLowerCase().includes(lowerSearchText))
-        ));
+        ? hybridMatch(card.name, lowerSearchText)
+        : hybridMatch(card.name, lowerSearchText) ||
+        hybridMatchArray(card.tags, lowerSearchText) ||
+        hybridMatchArray(card.hiddenTags, lowerSearchText) ||
+        (card.size && hybridMatch(card.size, lowerSearchText)) ||
+        hybridMatchArray(card.heroes, lowerSearchText) ||
+        hybridMatchTier ||
+        hybridMatchEnchantments;
 }
 
 export function filterItemCards(
