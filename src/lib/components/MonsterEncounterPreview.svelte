@@ -28,12 +28,13 @@
     </div>
 
     <div
-        class="relative rounded-full overflow-hidden transition-all transform w-full max-w-[10rem] aspect-[1/1]"
+        class="relative rounded-t-full overflow-hidden transition-all transform w-full max-w-[10rem] aspect-[1/1]"
+        style="clip-path: inset(0 0 10px 0 round 0 0 5% 5%);"
     >
         <img
             src={`/images/monsters/${sanitizedCardName}.avif`}
             alt={`${monsterEncounter.cardName}`}
-            class={`absolute top-0 left-0 h-full w-full transition-all group-hover:scale-105 ${
+            class={`absolute top-0 left-0 h-full w-full transition-all scale-110 group-hover:scale-[115%] ${
                 isActive ? "grayscale-[0%]" : "grayscale-[100%]"
             }`}
         />
