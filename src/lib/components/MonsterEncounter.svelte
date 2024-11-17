@@ -15,7 +15,18 @@
 
     <Badge large rounded border color="green">{monsterEncounter.health} health</Badge>
 
-    <div class="font-semibold text-xl mt-4 mb-2">Items</div>
+    {#if monsterEncounter.skills.length > 0}
+        <div class="font-semibold text-2xl mt-4 mb-2">Skills</div>
+        <div
+            class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-2"
+        >
+            {#each monsterEncounter.skills as skill}
+                <MonsterCardSkill card={skill.card} tierType={skill.tierType} />
+            {/each}
+        </div>
+    {/if}
+
+    <div class="font-semibold text-2xl mt-4 mb-2">Items</div>
 
     <div
         class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-2"
@@ -28,15 +39,4 @@
             />
         {/each}
     </div>
-
-    {#if monsterEncounter.skills.length > 0}
-        <div class="font-semibold text-xl mt-4 mb-2">Skills</div>
-        <div
-            class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-2"
-        >
-            {#each monsterEncounter.skills as skill}
-                <MonsterCardSkill card={skill.card} tierType={skill.tierType} />
-            {/each}
-        </div>
-    {/if}
 </div>
