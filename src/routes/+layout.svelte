@@ -87,18 +87,17 @@
         </Toast>
     </div>
 
-    <Footer footerType="sitemap" class="mt-8 mb-4">
+    <Footer
+        footerType="sitemap"
+        class="bg-white dark:bg-gray-800 py-6 border-t text-gray-500 dark:text-gray-400 border-gray-200 dark:border-gray-700 divide-gray-200 dark:divide-gray-700 "
+    >
         <div class="mx-auto text-center">
             <div>
-                <h2 class="mb-6 text-sm font-semibold text-gray-400 uppercase">
+                <h2 class="mb-4 text-sm font-semibold text-gray-400 uppercase">
                     Partner Websites
                 </h2>
-                <FooterLinkGroup ulClass="text-gray-300">
-                    <FooterLink
-                        liClass="mb-4"
-                        href="https://bazaarrank.com/"
-                        target="_blank"
-                    >
+                <FooterLinkGroup ulClass="text-gray-700 dark:text-gray-300">
+                    <FooterLink href="https://bazaarrank.com/" target="_blank">
                         Bazaar Rank - Legendary Player Rankings
                     </FooterLink>
                 </FooterLinkGroup>
