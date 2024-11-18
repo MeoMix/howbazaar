@@ -1,12 +1,12 @@
 import parsedCards from "$lib/processedCards.json" assert { type: "json" };
-import type { ClientSideCard } from "$lib/types";
+import type { ClientSideCard, ClientSideCardSkill } from "$lib/types";
 
-let cards: ClientSideCard[];
+let skills: ClientSideCardSkill[];
 
 export function load() {
-    if (!cards) {
-        cards = parsedCards as ClientSideCard[];
+    if (!skills) {
+        skills = (parsedCards as ClientSideCard[]).filter((card): card is ClientSideCardSkill => card.type === "Skill");
     }
 
-    return { cards };
+    return { skills };
 }

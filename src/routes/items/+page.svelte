@@ -1,6 +1,5 @@
 <script lang="ts">
     import type {
-        ClientSideCard,
         ClientSideCardItem,
         ClientSideHero,
         ClientSideHiddenTag,
@@ -17,10 +16,8 @@
     } from "$lib/utils/filterUtils";
     import LazyLoadList from "$lib/components/LazyLoadList.svelte";
 
-    const { data }: { data: { cards: ClientSideCard[] } } = $props();
-    const cardItems = data.cards
-        .filter((card): card is ClientSideCardItem => card.type === "Item")
-        .sort((a, b) => a.name.localeCompare(b.name));
+    const { data }: { data: { items: ClientSideCardItem[] } } = $props();
+    const cardItems = data.items.sort((a, b) => a.name.localeCompare(b.name));
 
     const { heroOptions, minimumTierOptions, tagOptions, sizeOptions } =
         getCardFilterOptions(cardItems);
