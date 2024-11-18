@@ -28,7 +28,7 @@
         <img
             src={`/images/skills/${sanitizedCardName}.avif`}
             alt={card.name}
-            class="relative h-[200px] z-10 mx-auto"
+            class="relative h-[200px] mx-auto"
             width={card.size === "Small"
                 ? 100
                 : card.size === "Medium"
