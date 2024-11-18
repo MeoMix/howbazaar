@@ -16,7 +16,7 @@
         FooterLinkGroup,
         FooterLink,
     } from "flowbite-svelte";
-    import { CheckCircleSolid } from "flowbite-svelte-icons";
+    import CheckCircleOutline from "flowbite-svelte-icons/CheckCircleOutline.svelte";
     import { type Snippet } from "svelte";
     import { fly } from "svelte/transition";
     import { page } from "$app/stores";
@@ -76,7 +76,7 @@
             bind:toastStatus
         >
             <svelte:fragment slot="icon">
-                <CheckCircleSolid
+                <CheckCircleOutline
                     class="w-5 h-5 text-gray-900 dark:text-gray-100"
                 />
                 <span class="sr-only">Check icon</span>
