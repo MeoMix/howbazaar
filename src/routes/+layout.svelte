@@ -4,7 +4,18 @@
     import { inject } from "@vercel/analytics";
     inject({ mode: dev ? "development" : "production" });
 
-    import { Toast, DarkMode, Navbar, NavBrand, NavUl, NavLi, NavHamburger } from "flowbite-svelte";
+    import {
+        Toast,
+        DarkMode,
+        Navbar,
+        NavBrand,
+        NavUl,
+        NavLi,
+        NavHamburger,
+        Footer,
+        FooterLinkGroup,
+        FooterLink,
+    } from "flowbite-svelte";
     import { CheckCircleSolid } from "flowbite-svelte-icons";
     import { type Snippet } from "svelte";
     import { fly } from "svelte/transition";
@@ -17,39 +28,46 @@
         clearTimeout(toastClearTimeout);
         toastStatus = value !== "";
 
-        toastClearTimeout = setTimeout(() => toastStatus = false, 3000);
+        toastClearTimeout = setTimeout(() => (toastStatus = false), 3000);
     });
 
     let { children }: { children: Snippet } = $props();
 </script>
 
-<Navbar class="sticky top-0 z-10 border-b bg-white dark:bg-gray-800">
-    <NavBrand href={`/items${$page.url.search}`}>
-        <span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
-            How Bazaar
-        </span>
-    </NavBrand>
-    
-    <div class="flex md:order-2 items-center">
-        <!-- <span class="font-bold text-lime-500 mr-2">Updated 11/13 patch</span> -->
-        <DarkMode class="hover:text-gray-900 dark:hover:text-white" />
-        <NavHamburger class="hover:text-gray-900 dark:hover:text-white" />
-    </div>
+<div
+    class="flex flex-col min-h-screen bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100"
+>
+    <Navbar class="sticky top-0 z-10 border-b bg-white dark:bg-gray-800">
+        <NavBrand href={`/items${$page.url.search}`}>
+            <span
+                class="self-center whitespace-nowrap text-xl font-semibold dark:text-white"
+            >
+                How Bazaar
+            </span>
+        </NavBrand>
 
-    <NavUl activeUrl={$page.url.pathname}>
-        <NavLi href={`/items${$page.url.search}`}>Items</NavLi>
-        <NavLi href={`/skills${$page.url.search}`}>Skills</NavLi>
-        <NavLi href={`/monsters${$page.url.search}`}>Monsters</NavLi>
-        <NavLi href={`/contact${$page.url.search}`}>Contact & Upcoming Features</NavLi>
-    </NavUl>
-</Navbar>
+        <div class="flex md:order-2 items-center">
+            <DarkMode class="hover:text-gray-900 dark:hover:text-white" />
+            <NavHamburger class="hover:text-gray-900 dark:hover:text-white" />
+        </div>
 
-<div class="relative min-h-screen flex flex-col text-gray-900 dark:text-gray-100 ">
-    <div class="flex-grow overflow-y-auto px-2 sm:px-4 max-w-[120rem] w-full mx-auto">
+        <NavUl activeUrl={$page.url.pathname}>
+            <NavLi href={`/items${$page.url.search}`}>Items</NavLi>
+            <NavLi href={`/skills${$page.url.search}`}>Skills</NavLi>
+            <NavLi href={`/monsters${$page.url.search}`}>Monsters</NavLi>
+            <NavLi href={`/contact${$page.url.search}`}
+                >Contact & Upcoming Features</NavLi
+            >
+        </NavUl>
+    </Navbar>
+
+    <div
+        class="flex-grow px-2 sm:px-4 max-w-[120rem] w-full mx-auto overflow-y-auto"
+    >
         {@render children()}
     </div>
 
-    <div class="fixed bottom-0 left-0 w-full flex justify-center p-4">
+    <div class="fixed bottom-0 left-0 w-full flex justify-center">
         <Toast
             position="bottom-left"
             color={"green"}
@@ -58,20 +76,33 @@
             bind:toastStatus
         >
             <svelte:fragment slot="icon">
-                <CheckCircleSolid class="w-5 h-5 text-gray-900 dark:text-gray-100" />
+                <CheckCircleSolid
+                    class="w-5 h-5 text-gray-900 dark:text-gray-100"
+                />
                 <span class="sr-only">Check icon</span>
             </svelte:fragment>
-            <span class="text-gray-900 dark:text-gray-100">Link copied to clipboard</span>
+            <span class="text-gray-900 dark:text-gray-100"
+                >Link copied to clipboard</span
+            >
         </Toast>
     </div>
-</div>
 
-<div class="mx-auto text-center bg-yellow-400 border-4 border-black p-4 my-4 max-w-xs">
-    <img src="/images/webring.avif" loading="lazy" alt="Join the Webring" class="mx-auto mb-4 border-2 border-black">
-
-    <a href="https://bazaarrank.com/" target="_blank" class="inline-block mx-2 my-2 py-2 px-4 bg-orange-500 text-white border-2 border-black font-bold uppercase shadow-lg hover:bg-green-500">
-        Visit Our Partner Site - Bazaarrank
-    </a>
-    <small class="block mt-2 text-gray-600">More sites coming soon!</small>
-    <small class="block mt-2 text-gray-600">(Also this is kind of a joke, you don't have a virus, but if you want to check out The Bazaar leaderboards, click above.)</small>
+    <Footer footerType="sitemap" class="mt-8 mb-4">
+        <div class="mx-auto text-center">
+            <div>
+                <h2 class="mb-6 text-sm font-semibold text-gray-400 uppercase">
+                    Partner Websites
+                </h2>
+                <FooterLinkGroup ulClass="text-gray-300">
+                    <FooterLink
+                        liClass="mb-4"
+                        href="https://bazaarrank.com/"
+                        target="_blank"
+                    >
+                        Bazaar Rank - Legendary Player Rankings
+                    </FooterLink>
+                </FooterLinkGroup>
+            </div>
+        </div>
+    </Footer>
 </div>
