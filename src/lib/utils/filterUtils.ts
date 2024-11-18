@@ -138,10 +138,7 @@ function matchesSearchText(
 
     const hybridMatchTier = validTiers.some(([tierName, tier]) =>
         hybridMatch(tierName, lowerSearchText) ||
-        tier.tooltips.some(tooltip => hybridMatch(tooltip, lowerSearchText)) ||
-        tier.attributes.some(attribute =>
-            hybridMatch(`${attribute.name} ${attribute.value} ${attribute.valueDescriptor}`, lowerSearchText)
-        )
+        tier.tooltips.some(tooltip => hybridMatch(tooltip, lowerSearchText))
     );
 
     const hybridMatchEnchantments = isSearchEnchantments && card.enchantments?.some(e =>

@@ -5,11 +5,6 @@ import type { V2DayHoursD as DayHour } from "$lib/v2_DayHours";
 export type CardsJson = { [key: string]: Card };
 
 export type ClientSideTier = {
-    attributes: {
-        name: string;
-        value: number;
-        valueDescriptor: string | null;
-    }[];
     tooltips: string[];
 };
 

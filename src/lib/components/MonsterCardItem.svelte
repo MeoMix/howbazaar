@@ -68,18 +68,6 @@
             secondaryBadges={tags.map((text) => ({ text }))}
         />
 
-        {#if card.tiers[tierType].attributes.length > 0}
-            <div>
-                {#each card.tiers[tierType].attributes as attribute}
-                    <div>
-                        <span class="font-medium">{attribute.name}</span>
-                        {attribute.value}
-                        {attribute.valueDescriptor}
-                    </div>
-                {/each}
-            </div>
-        {/if}
-
         {#each card.tiers[tierType].tooltips as tooltip}
             <div>
                 {tooltip}

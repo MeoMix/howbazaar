@@ -41,14 +41,6 @@
                 </div>
 
                 <div class="mb-2">
-                    {#each tier.attributes as attribute}
-                        <div>
-                            <span class="font-medium">{attribute.name}:</span>
-                            {attribute.value}
-                            {attribute.valueDescriptor}
-                        </div>
-                    {/each}
-
                     {#each tier.tooltips as tooltip}
                         <div>
                             {tooltip}

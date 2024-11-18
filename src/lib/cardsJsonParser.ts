@@ -276,6 +276,7 @@ function getDisplayedAttributes(attributes: Tier["Attributes"]) {
             return true;
         })
         .map(([attributeName, attributeValue]) => {
+            // TODO: Stop copy/pasting this - want to reuse with the other location
             // Add spaces between words for TitleCased attribute names
             let formattedName = attributeName
                 .replace(/([a-z])([A-Z])/g, "$1 $2")
@@ -290,7 +291,11 @@ function getDisplayedAttributes(attributes: Tier["Attributes"]) {
             let valueDescriptor = null;
             if (attributeValue >= 1000) {
                 attributeValue = attributeValue / 1000;
-                valueDescriptor = "seconds";
+                valueDescriptor = " seconds";
+            }
+
+            if (attributeName.includes("Chance")) {
+                valueDescriptor = "%";
             }
 
             return {
@@ -367,10 +372,11 @@ function parseItemsAndSkills(cardsJson: CardsJson): ClientSideCard[] {
 
                 let tooltips = getDisplayedTooltips(rawTooltips, abilities, auras, tier.Attributes);
                 let attributes = getDisplayedAttributes(tier.Attributes);
+                let attributeTooltips = attributes.map(attribute => `${attribute.name} ${attribute.value}${attribute.valueDescriptor ?? ""}`.trim());
 
                 return [tierName, {
-                    tooltips,
-                    attributes,
+                    tooltips: [...attributeTooltips, ...tooltips],
+                    // attributes,
                 }]
             },
         )) as Record<TierType, ClientSideTier>;
