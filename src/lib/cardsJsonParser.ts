@@ -372,7 +372,7 @@ function parseItemsAndSkills(cardsJson: CardsJson): ClientSideCard[] {
 
                 let tooltips = getDisplayedTooltips(rawTooltips, abilities, auras, tier.Attributes);
                 let attributes = getDisplayedAttributes(tier.Attributes);
-                let attributeTooltips = attributes.map(attribute => `${attribute.name} ${attribute.value}${attribute.valueDescriptor ?? ""}`.trim());
+                let attributeTooltips = attributes.map(attribute => `${attribute.name} ${Math.round(attribute.value)}${attribute.valueDescriptor ?? ""}`.trim());
 
                 return [tierName, {
                     tooltips: [...attributeTooltips, ...tooltips],
@@ -515,7 +515,7 @@ function parseItemsAndSkills(cardsJson: CardsJson): ClientSideCard[] {
 
                 if (actions.length === 0) {
                     for (let [attributeName, attributeValue] of Object.entries(enchantmentAttributes)) {
-                        tooltips.push(`${attributeName}${attributeName === "Lifesteal" ? "" : attributeValue}`.trim());
+                        tooltips.push(`${attributeName}${attributeName === "Lifesteal" ? "" : Math.round(attributeValue)}`.trim());
                     }
                 }
             } else {

@@ -204,6 +204,20 @@ describe('cardJsonParser', () => {
     expect(gearnolaBar.tiers.Diamond.tooltips).toHaveLength(4);
   });
 
+  it('should round Critical Core\'s CooldownMax to the nearest integer', () => {
+    const criticalCore = cards.find(card => card.name === "Critical Core")!;
+    const cooldownTooltip = criticalCore.tiers["Gold"].tooltips.find(tooltip => tooltip.includes("Cooldown"));
+
+    expect(cooldownTooltip).toContain("6 seconds");
+  });
+
+  // it('should fix Critical Core\'s tooltip to not contain a typo "1"', () => {
+  //   const criticalCore = cards.find(card => card.name === "Critical Core")!;
+  //   const chargeTooltip = criticalCore.tiers["Gold"].tooltips.find(tooltip => tooltip.includes("When you use any"));
+
+  //   expect(chargeTooltip).toEqual("When you use any item to the left of this, Charge this 1 second(s)");
+  // });
+
   it('should contain no tooltips with {', () => {
     const invalidCards = [];
 
