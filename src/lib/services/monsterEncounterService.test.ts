@@ -23,6 +23,17 @@ describe('MonsterEncounterService', () => {
         monsterEncounterDays = getMonsterEncounterDays(cards, monsters, dayHours);
     });
 
+    it('should have a Coconut Crab that only has one Sea Shell', () => {
+        const coconutCrab = monsterEncounterDays
+            .flatMap((day) => day.groups)
+            .flatMap((group) => group)
+            .find((monsterEncounter) => monsterEncounter.cardName === "Coconut Crab");
+
+        const seaShells = coconutCrab?.items.filter(item => item.card.name === "Sea Shell");
+
+        expect(seaShells).toHaveLength(1);
+    });
+
     it('should have an Eccentric Etherwright even though they are duplicate entries in v2_Cards which might confuse v2_Monsters', () => {
         const eccentricEtherwrightEncounter = monsterEncounterDays.find((monsterEncounterDay) =>
             monsterEncounterDay.groups.some((group) =>
@@ -77,7 +88,7 @@ describe('MonsterEncounterService', () => {
 
         const flamberge = lordOfTheWastes?.items.find(item => item.card.name === "Flamberge");
 
-        expect(flamberge?.card.tiers[flamberge.tierType]?.tooltips).toHaveLength(2);
+        expect(flamberge?.card.tiers[flamberge.tierType]?.tooltips).toHaveLength(3);
     });
 
     it('should have item details for Thug\'s Spices (at Diamond not Gold)', () => {
@@ -88,6 +99,6 @@ describe('MonsterEncounterService', () => {
 
         const spices = thug?.items.find(item => item.card.name === "Spices");
 
-        expect(spices?.card.tiers[spices.tierType]?.tooltips).toHaveLength(1);
+        expect(spices?.card.tiers[spices.tierType]?.tooltips).toHaveLength(3);
     });
 });

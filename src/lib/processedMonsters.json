@@ -6,19 +6,23 @@
     "items": [
       {
         "templateId": "fb41fdef-d83b-4674-8cb3-9a224aa8f84a",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_3"
       },
       {
         "templateId": "7cbc8056-482b-4ccf-887a-ddb2702c856c",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_4"
       },
       {
         "templateId": "7cbc8056-482b-4ccf-887a-ddb2702c856c",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_5"
       },
       {
         "templateId": "fb41fdef-d83b-4674-8cb3-9a224aa8f84a",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_6"
       }
     ],
     "skills": [
@@ -35,23 +39,28 @@
     "items": [
       {
         "templateId": "16e3ebba-d530-489c-8439-3b47a4182c09",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_0"
       },
       {
         "templateId": "16e3ebba-d530-489c-8439-3b47a4182c09",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_2"
       },
       {
         "templateId": "16e3ebba-d530-489c-8439-3b47a4182c09",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_4"
       },
       {
         "templateId": "16e3ebba-d530-489c-8439-3b47a4182c09",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_6"
       },
       {
         "templateId": "16e3ebba-d530-489c-8439-3b47a4182c09",
-        "tierType": "Diamond"
+        "tierType": "Diamond",
+        "socketId": "Socket_8"
       }
     ],
     "skills": []
@@ -63,31 +72,38 @@
     "items": [
       {
         "templateId": "d45bb1dd-5342-4c69-b7fe-f56d3fac7d1f",
-        "tierType": "Diamond"
+        "tierType": "Diamond",
+        "socketId": "Socket_0"
       },
       {
         "templateId": "e3070870-881c-497d-879f-2d91e962e0e2",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_1"
       },
       {
         "templateId": "8535493a-67ae-4248-a34d-176549948686",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_3"
       },
       {
         "templateId": "3c9c0a73-ea2e-4ff2-be75-fd4363f72d37",
-        "tierType": "Diamond"
+        "tierType": "Diamond",
+        "socketId": "Socket_4"
       },
       {
         "templateId": "8535493a-67ae-4248-a34d-176549948686",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_7"
       },
       {
         "templateId": "37222f02-3767-44ef-a8ed-000c90d3330e",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_8"
       },
       {
         "templateId": "d45bb1dd-5342-4c69-b7fe-f56d3fac7d1f",
-        "tierType": "Diamond"
+        "tierType": "Diamond",
+        "socketId": "Socket_9"
       }
     ],
     "skills": [
@@ -112,45 +128,55 @@
     "items": [
       {
         "templateId": "fb41fdef-d83b-4674-8cb3-9a224aa8f84a",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_0"
       },
       {
         "templateId": "fb41fdef-d83b-4674-8cb3-9a224aa8f84a",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_1"
       },
       {
         "templateId": "fb41fdef-d83b-4674-8cb3-9a224aa8f84a",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_2"
       },
       {
         "templateId": "fb41fdef-d83b-4674-8cb3-9a224aa8f84a",
-        "tierType": "Diamond"
+        "tierType": "Diamond",
+        "socketId": "Socket_3"
       },
       {
         "templateId": "7cbc8056-482b-4ccf-887a-ddb2702c856c",
         "tierType": "Diamond",
+        "socketId": "Socket_4",
         "enchantmentType": "Shiny"
       },
       {
         "templateId": "7cbc8056-482b-4ccf-887a-ddb2702c856c",
         "tierType": "Diamond",
+        "socketId": "Socket_5",
         "enchantmentType": "Shiny"
       },
       {
         "templateId": "fb41fdef-d83b-4674-8cb3-9a224aa8f84a",
-        "tierType": "Diamond"
+        "tierType": "Diamond",
+        "socketId": "Socket_6"
       },
       {
         "templateId": "fb41fdef-d83b-4674-8cb3-9a224aa8f84a",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_7"
       },
       {
         "templateId": "fb41fdef-d83b-4674-8cb3-9a224aa8f84a",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_8"
       },
       {
         "templateId": "fb41fdef-d83b-4674-8cb3-9a224aa8f84a",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_9"
       }
     ],
     "skills": [
@@ -171,27 +197,33 @@
     "items": [
       {
         "templateId": "0022c409-c839-41e8-8022-65a407457dfe",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_0"
       },
       {
         "templateId": "6f70e0cf-8349-4f14-a121-6c9065dc514c",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_1"
       },
       {
         "templateId": "3e97f309-24f2-4850-ab35-6eb6c1fe832f",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_3"
       },
       {
         "templateId": "4e1770dd-2a10-440c-924a-c80afbbb269a",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_6"
       },
       {
         "templateId": "f8b41c46-8adc-4e84-835a-831e2e3d84d1",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_8"
       },
       {
         "templateId": "3e563d2a-87e7-4e9a-bfa2-3268b27b7447",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_9"
       }
     ],
     "skills": [
@@ -216,31 +248,38 @@
     "items": [
       {
         "templateId": "3e563d2a-87e7-4e9a-bfa2-3268b27b7447",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_1"
       },
       {
         "templateId": "03e4c71d-5317-4c35-a0fb-5348356edc03",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_2"
       },
       {
         "templateId": "92e7ab18-a035-43c7-a53c-965aeecbe357",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_3"
       },
       {
         "templateId": "55377bdf-359b-495c-895c-c7852511c915",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_4"
       },
       {
         "templateId": "65527be1-b100-4a4c-98d1-4f8975368b5b",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_5"
       },
       {
         "templateId": "e13d521c-b960-4072-83db-fe4af598dd57",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_7"
       },
       {
         "templateId": "3e563d2a-87e7-4e9a-bfa2-3268b27b7447",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_8"
       }
     ],
     "skills": [
@@ -257,31 +296,38 @@
     "items": [
       {
         "templateId": "2434460c-af35-4dde-a69f-1f8781c807d2",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_1"
       },
       {
         "templateId": "bfa02e6a-1e0d-4e88-830e-850097026a02",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_2"
       },
       {
         "templateId": "f07fc136-5917-4915-a9d5-2246cb290b0d",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_3"
       },
       {
         "templateId": "c9f75211-7012-418d-b53f-3f5ac5959b62",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_4"
       },
       {
         "templateId": "894df8d8-e6a5-4310-919e-7a6d85fc7e49",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_7"
       },
       {
         "templateId": "83fae686-a12e-4626-8574-e6141f611fbc",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_8"
       },
       {
         "templateId": "2434460c-af35-4dde-a69f-1f8781c807d2",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_9"
       }
     ],
     "skills": [
@@ -298,35 +344,43 @@
     "items": [
       {
         "templateId": "562d768a-6aaf-4704-be8b-4dc9e6311b11",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_0"
       },
       {
         "templateId": "09132149-783d-4d5a-900c-31135bffab44",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_1"
       },
       {
         "templateId": "f08af933-8712-44fe-9542-338e0fec0a45",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_2"
       },
       {
         "templateId": "35e2a1dd-739d-4434-95c5-2b9ce5f07a5c",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_4"
       },
       {
         "templateId": "720765c7-c0c5-4059-b3b4-53758f61338f",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_6"
       },
       {
         "templateId": "7b731de3-3598-46f4-b61f-75b7a0065d8a",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_7"
       },
       {
         "templateId": "09132149-783d-4d5a-900c-31135bffab44",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_8"
       },
       {
         "templateId": "08bb5055-bd8d-4f86-bff6-24f8cb47f509",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_9"
       }
     ],
     "skills": [
@@ -343,35 +397,43 @@
     "items": [
       {
         "templateId": "ca77281c-f912-4db3-86ce-64842a4ccdaa",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_0"
       },
       {
         "templateId": "c39f3c39-77d9-49ee-9850-400e7d5fe484",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_1"
       },
       {
         "templateId": "b769eef3-b324-4704-91fd-3a971c6f47b4",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_4"
       },
       {
         "templateId": "d576f5e8-abfb-44cb-a777-be7cf714e02d",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_5"
       },
       {
         "templateId": "bfa02e6a-1e0d-4e88-830e-850097026a02",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_6"
       },
       {
         "templateId": "7bff4c56-752c-47f3-89d0-e85aa917319f",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_7"
       },
       {
         "templateId": "33c9b825-946c-45f8-a0f3-8c0f493dbc45",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_8"
       },
       {
         "templateId": "f0608f5b-5c6a-4c71-8cc4-f8abbdd951c9",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_9"
       }
     ],
     "skills": [
@@ -392,27 +454,33 @@
     "items": [
       {
         "templateId": "f212afe2-08d1-40e3-978b-762d345bc7e5",
-        "tierType": "Diamond"
+        "tierType": "Diamond",
+        "socketId": "Socket_1"
       },
       {
         "templateId": "96e51b95-eaab-40ea-9a89-381727ce2434",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_2"
       },
       {
         "templateId": "26621cbf-809d-4522-ad24-34443af96f27",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_3"
       },
       {
         "templateId": "843ddc82-9d87-4995-b81c-bf31ae45fd30",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_5"
       },
       {
         "templateId": "96e51b95-eaab-40ea-9a89-381727ce2434",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_7"
       },
       {
         "templateId": "da766a09-0352-4966-829f-20bda8da48d7",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_8"
       }
     ],
     "skills": [
@@ -429,20 +497,24 @@
     "items": [
       {
         "templateId": "638a6b50-7803-4da5-9514-ca0627fd7b5f",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_3"
       },
       {
         "templateId": "7cbc8056-482b-4ccf-887a-ddb2702c856c",
         "tierType": "Bronze",
+        "socketId": "Socket_4",
         "enchantmentType": "Toxic"
       },
       {
         "templateId": "7cbc8056-482b-4ccf-887a-ddb2702c856c",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_5"
       },
       {
         "templateId": "562d768a-6aaf-4704-be8b-4dc9e6311b11",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_6"
       }
     ],
     "skills": [
@@ -459,28 +531,34 @@
     "items": [
       {
         "templateId": "08bb5055-bd8d-4f86-bff6-24f8cb47f509",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_1"
       },
       {
         "templateId": "1afb5eef-e964-4767-b9a6-8d1a76cef645",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_2"
       },
       {
         "templateId": "af24dea0-6cc9-49dc-acec-d90313b46b72",
         "tierType": "Silver",
+        "socketId": "Socket_3",
         "enchantmentType": "Toxic"
       },
       {
         "templateId": "0bf49a3b-e610-4f2b-8420-1a8a7d48e70a",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_5"
       },
       {
         "templateId": "014d9c98-e823-443c-98a3-6367ab81c956",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_7"
       },
       {
         "templateId": "2c79dcd7-3205-4d41-85e9-daecb8d1c7c5",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_8"
       }
     ],
     "skills": [
@@ -505,31 +583,38 @@
     "items": [
       {
         "templateId": "3e563d2a-87e7-4e9a-bfa2-3268b27b7447",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_1"
       },
       {
         "templateId": "7bff4c56-752c-47f3-89d0-e85aa917319f",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_2"
       },
       {
         "templateId": "f0608f5b-5c6a-4c71-8cc4-f8abbdd951c9",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_3"
       },
       {
         "templateId": "b89ae3b6-6383-47a3-94fe-2571d30a564a",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_4"
       },
       {
         "templateId": "fc2f0122-129b-41e8-942e-a6a10a1c5962",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_5"
       },
       {
         "templateId": "44710a21-395d-4f78-bdaf-e562c544ae91",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_7"
       },
       {
         "templateId": "0022c409-c839-41e8-8022-65a407457dfe",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_8"
       }
     ],
     "skills": [
@@ -550,24 +635,29 @@
     "items": [
       {
         "templateId": "44710a21-395d-4f78-bdaf-e562c544ae91",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_0"
       },
       {
         "templateId": "20d85338-b625-4b9a-95a7-8a60805e061f",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_1"
       },
       {
         "templateId": "a043f66d-2320-46f6-8bac-131afeb770d2",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_3"
       },
       {
         "templateId": "54f957f2-9522-486b-a7c6-bb234f74846c",
         "tierType": "Gold",
+        "socketId": "Socket_5",
         "enchantmentType": "Fiery"
       },
       {
         "templateId": "36211e0c-1806-4234-b661-3c05e2625a0a",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_7"
       }
     ],
     "skills": [
@@ -588,31 +678,38 @@
     "items": [
       {
         "templateId": "73ca1d2f-f4d3-42c4-8980-0255f5ecd472",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_0"
       },
       {
         "templateId": "2a1ae50b-6d0d-48a8-9f68-b804e8793030",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_3"
       },
       {
         "templateId": "13f852ba-1d3d-4c1a-b6db-79072e0b19d0",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_5"
       },
       {
         "templateId": "14b297c5-db65-492d-aad7-9ffe101cae5f",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_6"
       },
       {
         "templateId": "13f852ba-1d3d-4c1a-b6db-79072e0b19d0",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_7"
       },
       {
         "templateId": "55ef5f5c-0ffc-4598-a6bd-66d8235da56a",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_8"
       },
       {
         "templateId": "55ef5f5c-0ffc-4598-a6bd-66d8235da56a",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_9"
       }
     ],
     "skills": [
@@ -629,23 +726,28 @@
     "items": [
       {
         "templateId": "027ef534-d047-4e18-8496-d9fd4773e15d",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_0"
       },
       {
         "templateId": "c2a74791-1d79-45bd-841d-2e3f2a61da8f",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_3"
       },
       {
         "templateId": "ae6ddbd0-d007-482a-8d2a-d3f6a5a1b29e",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_6"
       },
       {
         "templateId": "d619c665-1d58-46e8-828f-6e7e36a86a7d",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_7"
       },
       {
         "templateId": "3866978f-da19-45a8-9f28-d03b6d3aafc4",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_8"
       }
     ],
     "skills": [
@@ -662,35 +764,43 @@
     "items": [
       {
         "templateId": "55f11b65-77fa-4d70-9250-8a40d03961ad",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_0"
       },
       {
         "templateId": "39f47d29-2ef3-4057-bb60-33acd3dd12a2",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_1"
       },
       {
         "templateId": "c45a7c22-ae24-4246-bb6c-a83324a8546c",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_2"
       },
       {
         "templateId": "d66bcc8c-a817-4b0c-bda1-eb13b28acb2b",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_4"
       },
       {
         "templateId": "d66bcc8c-a817-4b0c-bda1-eb13b28acb2b",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_5"
       },
       {
         "templateId": "c45a7c22-ae24-4246-bb6c-a83324a8546c",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_6"
       },
       {
         "templateId": "39f47d29-2ef3-4057-bb60-33acd3dd12a2",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_8"
       },
       {
         "templateId": "55f11b65-77fa-4d70-9250-8a40d03961ad",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_9"
       }
     ],
     "skills": [
@@ -711,11 +821,13 @@
     "items": [
       {
         "templateId": "c7b72f4f-3bff-46f4-9c94-55243ad6703b",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_4"
       },
       {
         "templateId": "7cbc8056-482b-4ccf-887a-ddb2702c856c",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_5"
       }
     ],
     "skills": [
@@ -732,43 +844,53 @@
     "items": [
       {
         "templateId": "14b297c5-db65-492d-aad7-9ffe101cae5f",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_0"
       },
       {
         "templateId": "14b297c5-db65-492d-aad7-9ffe101cae5f",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_1"
       },
       {
         "templateId": "14b297c5-db65-492d-aad7-9ffe101cae5f",
-        "tierType": "Diamond"
+        "tierType": "Diamond",
+        "socketId": "Socket_2"
       },
       {
         "templateId": "347a3f68-b4bc-49c4-856d-534b14b47459",
-        "tierType": "Diamond"
+        "tierType": "Diamond",
+        "socketId": "Socket_3"
       },
       {
         "templateId": "14b297c5-db65-492d-aad7-9ffe101cae5f",
-        "tierType": "Diamond"
+        "tierType": "Diamond",
+        "socketId": "Socket_4"
       },
       {
         "templateId": "14b297c5-db65-492d-aad7-9ffe101cae5f",
-        "tierType": "Diamond"
+        "tierType": "Diamond",
+        "socketId": "Socket_5"
       },
       {
         "templateId": "347a3f68-b4bc-49c4-856d-534b14b47459",
-        "tierType": "Diamond"
+        "tierType": "Diamond",
+        "socketId": "Socket_6"
       },
       {
         "templateId": "14b297c5-db65-492d-aad7-9ffe101cae5f",
-        "tierType": "Diamond"
+        "tierType": "Diamond",
+        "socketId": "Socket_7"
       },
       {
         "templateId": "14b297c5-db65-492d-aad7-9ffe101cae5f",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_8"
       },
       {
         "templateId": "14b297c5-db65-492d-aad7-9ffe101cae5f",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_9"
       }
     ],
     "skills": [
@@ -793,27 +915,33 @@
     "items": [
       {
         "templateId": "5a9bd869-4614-4edf-941d-5f44e0bb1519",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_1"
       },
       {
         "templateId": "4a30e8b0-f1d1-44c0-b2a7-0a8d12c1e297",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_2"
       },
       {
         "templateId": "03e4c71d-5317-4c35-a0fb-5348356edc03",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_5"
       },
       {
         "templateId": "92e7ab18-a035-43c7-a53c-965aeecbe357",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_6"
       },
       {
         "templateId": "55377bdf-359b-495c-895c-c7852511c915",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_7"
       },
       {
         "templateId": "4fdc947b-3646-429e-ba4e-bb693fe44bc2",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_8"
       }
     ],
     "skills": [
@@ -842,7 +970,8 @@
     "items": [
       {
         "templateId": "35b7a978-275b-48f0-8e3d-9be2391c6a78",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_4"
       }
     ],
     "skills": []
@@ -854,31 +983,38 @@
     "items": [
       {
         "templateId": "292115b4-a145-476e-b3a7-0fe199b5c1af",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_0"
       },
       {
         "templateId": "e3070870-881c-497d-879f-2d91e962e0e2",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_1"
       },
       {
         "templateId": "3b32361e-2ddc-47b6-bcce-0ac560cb407b",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_3"
       },
       {
         "templateId": "2f4625b6-42e1-42e8-9f50-82edf038fac1",
-        "tierType": "Diamond"
+        "tierType": "Diamond",
+        "socketId": "Socket_4"
       },
       {
         "templateId": "3b32361e-2ddc-47b6-bcce-0ac560cb407b",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_6"
       },
       {
         "templateId": "e3070870-881c-497d-879f-2d91e962e0e2",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_7"
       },
       {
         "templateId": "292115b4-a145-476e-b3a7-0fe199b5c1af",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_9"
       }
     ],
     "skills": [
@@ -895,15 +1031,18 @@
     "items": [
       {
         "templateId": "6ba3778c-e760-44f3-b3b4-a4b4ca267cc2",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_3"
       },
       {
         "templateId": "aff2d8f4-528a-4229-8175-8901fcadcb70",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_4"
       },
       {
         "templateId": "6ba3778c-e760-44f3-b3b4-a4b4ca267cc2",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_6"
       }
     ],
     "skills": [
@@ -920,27 +1059,33 @@
     "items": [
       {
         "templateId": "55ef5f5c-0ffc-4598-a6bd-66d8235da56a",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_0"
       },
       {
         "templateId": "6e576444-85ce-4922-84e1-8ad88c5b83f1",
-        "tierType": "Diamond"
+        "tierType": "Diamond",
+        "socketId": "Socket_1"
       },
       {
         "templateId": "c600d27d-0df0-4f05-a2ab-4a64a0d9fa32",
-        "tierType": "Diamond"
+        "tierType": "Diamond",
+        "socketId": "Socket_3"
       },
       {
         "templateId": "b769eef3-b324-4704-91fd-3a971c6f47b4",
-        "tierType": "Diamond"
+        "tierType": "Diamond",
+        "socketId": "Socket_6"
       },
       {
         "templateId": "6e576444-85ce-4922-84e1-8ad88c5b83f1",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_7"
       },
       {
         "templateId": "55ef5f5c-0ffc-4598-a6bd-66d8235da56a",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_9"
       }
     ],
     "skills": [
@@ -965,37 +1110,45 @@
     "items": [
       {
         "templateId": "fb41fdef-d83b-4674-8cb3-9a224aa8f84a",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_1"
       },
       {
         "templateId": "7f706346-b364-4791-a104-ed6fe03e87e1",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_2"
       },
       {
         "templateId": "d66bcc8c-a817-4b0c-bda1-eb13b28acb2b",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_3"
       },
       {
         "templateId": "7cbc8056-482b-4ccf-887a-ddb2702c856c",
         "tierType": "Silver",
+        "socketId": "Socket_4",
         "enchantmentType": "Obsidian"
       },
       {
         "templateId": "7cbc8056-482b-4ccf-887a-ddb2702c856c",
         "tierType": "Silver",
+        "socketId": "Socket_5",
         "enchantmentType": "Obsidian"
       },
       {
         "templateId": "d66bcc8c-a817-4b0c-bda1-eb13b28acb2b",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_6"
       },
       {
         "templateId": "0022c409-c839-41e8-8022-65a407457dfe",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_7"
       },
       {
         "templateId": "fb41fdef-d83b-4674-8cb3-9a224aa8f84a",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_8"
       }
     ],
     "skills": [
@@ -1012,11 +1165,13 @@
     "items": [
       {
         "templateId": "c7b72f4f-3bff-46f4-9c94-55243ad6703b",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_4"
       },
       {
         "templateId": "7cbc8056-482b-4ccf-887a-ddb2702c856c",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_5"
       }
     ],
     "skills": [
@@ -1033,31 +1188,38 @@
     "items": [
       {
         "templateId": "fc2f0122-129b-41e8-942e-a6a10a1c5962",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_0"
       },
       {
         "templateId": "f43844fe-cefa-40c7-ba86-e601c3596064",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_2"
       },
       {
         "templateId": "6146cacd-202c-489f-88c0-f77ef3e0fda6",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_4"
       },
       {
         "templateId": "44710a21-395d-4f78-bdaf-e562c544ae91",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_5"
       },
       {
         "templateId": "e041875b-2949-4c56-8e01-ac50dbb06af6",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_6"
       },
       {
         "templateId": "54f957f2-9522-486b-a7c6-bb234f74846c",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_7"
       },
       {
         "templateId": "6146cacd-202c-489f-88c0-f77ef3e0fda6",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_9"
       }
     ],
     "skills": [
@@ -1082,35 +1244,43 @@
     "items": [
       {
         "templateId": "6031a849-e93e-41fb-a41f-a2c4d8be8929",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_0"
       },
       {
         "templateId": "3d766165-a7f8-4286-8d37-976d5e101522",
-        "tierType": "Diamond"
+        "tierType": "Diamond",
+        "socketId": "Socket_1"
       },
       {
         "templateId": "694a08fe-e8ff-4a45-9693-4c68f11a1f8b",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_4"
       },
       {
         "templateId": "c553a41a-1e8a-48c5-8b04-df60451b7795",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_5"
       },
       {
         "templateId": "0b4d7632-b3b4-42ce-a5fc-3fafb8f1c409",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_6"
       },
       {
         "templateId": "7b731de3-3598-46f4-b61f-75b7a0065d8a",
-        "tierType": "Diamond"
+        "tierType": "Diamond",
+        "socketId": "Socket_7"
       },
       {
         "templateId": "7b731de3-3598-46f4-b61f-75b7a0065d8a",
-        "tierType": "Diamond"
+        "tierType": "Diamond",
+        "socketId": "Socket_8"
       },
       {
         "templateId": "6b02f653-a294-443e-8b85-2be47b6a1c12",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_9"
       }
     ],
     "skills": [
@@ -1127,32 +1297,39 @@
     "items": [
       {
         "templateId": "1e48bd28-cd41-49e9-9e22-b44da30ef6be",
-        "tierType": "Diamond"
+        "tierType": "Diamond",
+        "socketId": "Socket_0"
       },
       {
         "templateId": "5e17cfc3-25c0-4a74-8a33-07ee972e6f6e",
         "tierType": "Gold",
+        "socketId": "Socket_1",
         "enchantmentType": "Toxic"
       },
       {
         "templateId": "20d85338-b625-4b9a-95a7-8a60805e061f",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_2"
       },
       {
         "templateId": "d022cc12-8fe2-442c-af6e-165eb97ed055",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_4"
       },
       {
         "templateId": "c05828f1-39e6-47aa-9041-216dfa60d83d",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_6"
       },
       {
         "templateId": "bede53aa-8d47-4d6c-b302-2e684e8c3fcf",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_7"
       },
       {
         "templateId": "3b924a0a-f423-4286-8d08-9ade57b2ebae",
         "tierType": "Gold",
+        "socketId": "Socket_9",
         "enchantmentType": "Toxic"
       }
     ],
@@ -1178,31 +1355,38 @@
     "items": [
       {
         "templateId": "e5c4c116-32ca-4856-83d2-721e0e751b2e",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_0"
       },
       {
         "templateId": "1179ed38-2357-4718-a0c7-c30d56493d08",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_2"
       },
       {
         "templateId": "428de0f0-bf0d-4da6-9abe-dde8f2174aa9",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_4"
       },
       {
         "templateId": "4bb254dc-4b02-4c4b-8198-a310bdb122e4",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_5"
       },
       {
         "templateId": "a8664dac-7a88-4af0-990e-afe7217e123f",
-        "tierType": "Diamond"
+        "tierType": "Diamond",
+        "socketId": "Socket_7"
       },
       {
         "templateId": "28db3caa-7727-4d1c-9758-df42975e4811",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_8"
       },
       {
         "templateId": "e21985a8-fe05-4142-ab65-93c110545ec3",
-        "tierType": "Diamond"
+        "tierType": "Diamond",
+        "socketId": "Socket_9"
       }
     ],
     "skills": [
@@ -1223,11 +1407,13 @@
     "items": [
       {
         "templateId": "c7b72f4f-3bff-46f4-9c94-55243ad6703b",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_4"
       },
       {
         "templateId": "7cbc8056-482b-4ccf-887a-ddb2702c856c",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_5"
       }
     ],
     "skills": [
@@ -1244,44 +1430,54 @@
     "items": [
       {
         "templateId": "638a6b50-7803-4da5-9514-ca0627fd7b5f",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_0"
       },
       {
         "templateId": "562d768a-6aaf-4704-be8b-4dc9e6311b11",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_1"
       },
       {
         "templateId": "6031a849-e93e-41fb-a41f-a2c4d8be8929",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_2"
       },
       {
         "templateId": "7cbc8056-482b-4ccf-887a-ddb2702c856c",
         "tierType": "Silver",
+        "socketId": "Socket_3",
         "enchantmentType": "Toxic"
       },
       {
         "templateId": "2c79dcd7-3205-4d41-85e9-daecb8d1c7c5",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_4"
       },
       {
         "templateId": "6031a849-e93e-41fb-a41f-a2c4d8be8929",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_5"
       },
       {
         "templateId": "c0eb01d3-5f8e-4271-8045-ec283a47bcaa",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_6"
       },
       {
         "templateId": "f6f7b04f-9e4c-4107-af98-5288e8c568fd",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_7"
       },
       {
         "templateId": "562d768a-6aaf-4704-be8b-4dc9e6311b11",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_8"
       },
       {
         "templateId": "638a6b50-7803-4da5-9514-ca0627fd7b5f",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_9"
       }
     ],
     "skills": [
@@ -1302,23 +1498,28 @@
     "items": [
       {
         "templateId": "eed2dc49-267a-4e8c-8ea6-d37dff677e8c",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_0"
       },
       {
         "templateId": "fc2f0122-129b-41e8-942e-a6a10a1c5962",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_1"
       },
       {
         "templateId": "0e66c016-9a8b-4aa0-8f01-b5a5fb739da4",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_3"
       },
       {
         "templateId": "2fd61ab1-d256-4d43-8691-c6f730b41c67",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_6"
       },
       {
         "templateId": "dccb72af-f46b-4a84-a0d1-918c8d285c4e",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_8"
       }
     ],
     "skills": [
@@ -1335,11 +1536,13 @@
     "items": [
       {
         "templateId": "c7b72f4f-3bff-46f4-9c94-55243ad6703b",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_4"
       },
       {
         "templateId": "7cbc8056-482b-4ccf-887a-ddb2702c856c",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_5"
       }
     ],
     "skills": [
@@ -1356,7 +1559,8 @@
     "items": [
       {
         "templateId": "08d9f6b5-c5ab-4e5b-8c1e-9a5edebb8618",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_4"
       }
     ],
     "skills": [
@@ -1373,24 +1577,29 @@
     "items": [
       {
         "templateId": "e21985a8-fe05-4142-ab65-93c110545ec3",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_0"
       },
       {
         "templateId": "ba625e9a-9c8b-4c21-bf6e-e7a6ff264019",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_1"
       },
       {
         "templateId": "012658f4-b289-4f10-917c-a9a1f3f9ca03",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_2"
       },
       {
         "templateId": "a4b48bb6-180a-49fd-bb1c-c6beb372b6de",
         "tierType": "Gold",
+        "socketId": "Socket_5",
         "enchantmentType": "Icy"
       },
       {
         "templateId": "acaebb2b-fe63-4de0-9d9e-949673c08a47",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_7"
       }
     ],
     "skills": [
@@ -1407,11 +1616,13 @@
     "items": [
       {
         "templateId": "c7b72f4f-3bff-46f4-9c94-55243ad6703b",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_4"
       },
       {
         "templateId": "7cbc8056-482b-4ccf-887a-ddb2702c856c",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_5"
       }
     ],
     "skills": [
@@ -1428,11 +1639,13 @@
     "items": [
       {
         "templateId": "c7b72f4f-3bff-46f4-9c94-55243ad6703b",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_4"
       },
       {
         "templateId": "7cbc8056-482b-4ccf-887a-ddb2702c856c",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_5"
       }
     ],
     "skills": [
@@ -1449,23 +1662,28 @@
     "items": [
       {
         "templateId": "0591d8b4-2632-4c41-9f73-48896237256d",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_0"
       },
       {
         "templateId": "809d6638-4e8e-4b14-867a-c6feccbeae9d",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_2"
       },
       {
         "templateId": "7cc657b3-6a37-427a-b14e-7e12c3a2277a",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_3"
       },
       {
         "templateId": "e1f77ca7-8c4c-4e40-8a42-fd125f6104ae",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_5"
       },
       {
         "templateId": "4bb19ca8-9729-423d-8e15-6053314b51df",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_7"
       }
     ],
     "skills": [
@@ -1482,27 +1700,33 @@
     "items": [
       {
         "templateId": "7326c177-d5c8-4e27-b8b4-acf565745019",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_0"
       },
       {
         "templateId": "bfb765fc-764c-4e16-aa17-0e10efda4b5b",
-        "tierType": "Diamond"
+        "tierType": "Diamond",
+        "socketId": "Socket_3"
       },
       {
         "templateId": "447c40e6-7aec-4391-8be7-df4952815d40",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_5"
       },
       {
         "templateId": "53b62ecb-bcbc-4a86-bd6f-027467970109",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_6"
       },
       {
         "templateId": "28db3caa-7727-4d1c-9758-df42975e4811",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_8"
       },
       {
         "templateId": "9f478d9d-cc98-4ff2-926a-5eeb09bd044c",
-        "tierType": "Diamond"
+        "tierType": "Diamond",
+        "socketId": "Socket_9"
       }
     ],
     "skills": [
@@ -1523,27 +1747,33 @@
     "items": [
       {
         "templateId": "57842875-bc49-4ec9-af82-29c2dbed4087",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_0"
       },
       {
         "templateId": "cb519fbf-1f2c-4dd1-ba9b-3dc031fd7cbe",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_2"
       },
       {
         "templateId": "2974e199-fa53-4d40-87a6-0ec6722a4aef",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_4"
       },
       {
         "templateId": "ad02d867-252b-45b5-9625-4480807caeff",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_5"
       },
       {
         "templateId": "2974e199-fa53-4d40-87a6-0ec6722a4aef",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_7"
       },
       {
         "templateId": "d1788cd1-cd70-4391-a0d9-c50fc9e08d9a",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_8"
       }
     ],
     "skills": [
@@ -1564,35 +1794,43 @@
     "items": [
       {
         "templateId": "6ba3778c-e760-44f3-b3b4-a4b4ca267cc2",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_1"
       },
       {
         "templateId": "aa97a75d-3bdf-4f1b-bc2b-457375e31e0f",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_2"
       },
       {
         "templateId": "529a7e95-b350-4fd6-96fd-fef80d4c1462",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_3"
       },
       {
         "templateId": "844efa15-de6f-4fec-a438-21904969577b",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_4"
       },
       {
         "templateId": "6d6199b4-82a4-441d-9329-f4164737ac6b",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_5"
       },
       {
         "templateId": "8391a75d-56e7-4206-a16e-62dbd986925f",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_6"
       },
       {
         "templateId": "48d24eb0-d953-409c-9602-1d3d4c4278c5",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_7"
       },
       {
         "templateId": "dc3bf5cb-45fa-46c7-9a0e-3f3bfb01697d",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_8"
       }
     ],
     "skills": [
@@ -1613,19 +1851,23 @@
     "items": [
       {
         "templateId": "6ba3778c-e760-44f3-b3b4-a4b4ca267cc2",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_2"
       },
       {
         "templateId": "6965d291-610d-46b7-a10d-83578b0e1981",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_3"
       },
       {
         "templateId": "40c54925-3b1b-475d-9d68-6b668fd023fe",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_5"
       },
       {
         "templateId": "dc3bf5cb-45fa-46c7-9a0e-3f3bfb01697d",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_8"
       }
     ],
     "skills": [
@@ -1646,35 +1888,43 @@
     "items": [
       {
         "templateId": "4826832f-f3a5-4c40-b8fa-737f002074fa",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_1"
       },
       {
         "templateId": "4826832f-f3a5-4c40-b8fa-737f002074fa",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_2"
       },
       {
         "templateId": "26ddca65-5309-4600-88f7-1eb5ffbb5788",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_3"
       },
       {
         "templateId": "ffcc9b4e-24f2-479b-ab80-7bfbaec664f2",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_4"
       },
       {
         "templateId": "9bdc7dad-5016-4743-9b44-1e20b03a1961",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_5"
       },
       {
         "templateId": "5a162b5d-4802-4f56-a30e-19b3c8ef677c",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_6"
       },
       {
         "templateId": "4826832f-f3a5-4c40-b8fa-737f002074fa",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_7"
       },
       {
         "templateId": "4826832f-f3a5-4c40-b8fa-737f002074fa",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_8"
       }
     ],
     "skills": [
@@ -1691,27 +1941,33 @@
     "items": [
       {
         "templateId": "2434460c-af35-4dde-a69f-1f8781c807d2",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_1"
       },
       {
         "templateId": "ae039b3e-ef98-4dc7-a97c-1e06d2627e57",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_2"
       },
       {
         "templateId": "020a0ec0-21e6-41af-899f-063573ba9ca5",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_3"
       },
       {
         "templateId": "552247e1-74f8-4414-88bb-1b868f3f296d",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_4"
       },
       {
         "templateId": "020a0ec0-21e6-41af-899f-063573ba9ca5",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_7"
       },
       {
         "templateId": "2434460c-af35-4dde-a69f-1f8781c807d2",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_8"
       }
     ],
     "skills": [
@@ -1728,27 +1984,33 @@
     "items": [
       {
         "templateId": "8391a75d-56e7-4206-a16e-62dbd986925f",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_0"
       },
       {
         "templateId": "8938035e-be96-4827-bd34-7258253bd942",
-        "tierType": "Legendary"
+        "tierType": "Legendary",
+        "socketId": "Socket_1"
       },
       {
         "templateId": "25545684-3fd5-4adf-abcc-0e2bb6c500c1",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_4"
       },
       {
         "templateId": "fd95b873-24a4-4af6-8b08-296f24a3576c",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_6"
       },
       {
         "templateId": "01f6e150-ba23-429c-a43b-2508f63fc798",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_8"
       },
       {
         "templateId": "ac92c118-c073-465c-8d89-abafa0dcb144",
-        "tierType": "Diamond"
+        "tierType": "Diamond",
+        "socketId": "Socket_9"
       }
     ],
     "skills": [
@@ -1769,19 +2031,23 @@
     "items": [
       {
         "templateId": "529a7e95-b350-4fd6-96fd-fef80d4c1462",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_3"
       },
       {
         "templateId": "529a7e95-b350-4fd6-96fd-fef80d4c1462",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_4"
       },
       {
         "templateId": "a825509b-e34c-459f-8226-d329b38458b0",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_5"
       },
       {
         "templateId": "bfe81509-5512-4e53-a208-2aac08a0fce4",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_6"
       }
     ],
     "skills": [
@@ -1798,19 +2064,23 @@
     "items": [
       {
         "templateId": "9ad15f24-4def-4d82-8545-d73794cfbaf2",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_2"
       },
       {
         "templateId": "95ff786e-b6bf-4bad-9d5c-6b2b41e9f0c3",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_3"
       },
       {
         "templateId": "40814ac2-ee63-4482-8f3b-d2242750fbd8",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_5"
       },
       {
         "templateId": "9ad15f24-4def-4d82-8545-d73794cfbaf2",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_7"
       }
     ],
     "skills": [
@@ -1831,31 +2101,38 @@
     "items": [
       {
         "templateId": "562d768a-6aaf-4704-be8b-4dc9e6311b11",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_0"
       },
       {
         "templateId": "1afb5eef-e964-4767-b9a6-8d1a76cef645",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_1"
       },
       {
         "templateId": "1ce6ea48-4049-4e66-b792-d360ae9ffedf",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_2"
       },
       {
         "templateId": "96e51b95-eaab-40ea-9a89-381727ce2434",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_5"
       },
       {
         "templateId": "843ddc82-9d87-4995-b81c-bf31ae45fd30",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_6"
       },
       {
         "templateId": "96e51b95-eaab-40ea-9a89-381727ce2434",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_8"
       },
       {
         "templateId": "562d768a-6aaf-4704-be8b-4dc9e6311b11",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_9"
       }
     ],
     "skills": [
@@ -1880,23 +2157,28 @@
     "items": [
       {
         "templateId": "15a2cf7d-4e08-4358-8bd1-730919719023",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_1"
       },
       {
         "templateId": "6f70e0cf-8349-4f14-a121-6c9065dc514c",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_3"
       },
       {
         "templateId": "5e17cfc3-25c0-4a74-8a33-07ee972e6f6e",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_5"
       },
       {
         "templateId": "893f5fec-30ed-4a1e-b896-5b086d952da4",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_6"
       },
       {
         "templateId": "dc3bf5cb-45fa-46c7-9a0e-3f3bfb01697d",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_8"
       }
     ],
     "skills": [
@@ -1917,31 +2199,38 @@
     "items": [
       {
         "templateId": "92e7ab18-a035-43c7-a53c-965aeecbe357",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_0"
       },
       {
         "templateId": "4b823c6b-3e35-47a2-9b65-177e911aca1a",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_1"
       },
       {
         "templateId": "92e7ab18-a035-43c7-a53c-965aeecbe357",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_3"
       },
       {
         "templateId": "1b955b8d-0ea6-4437-935c-d588be5898c1",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_4"
       },
       {
         "templateId": "8b994da7-7aa3-40cd-aafd-c84f0913d0c9",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_6"
       },
       {
         "templateId": "c5362859-48d7-4f5e-84ed-f8430b84a8ae",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_8"
       },
       {
         "templateId": "7f706346-b364-4791-a104-ed6fe03e87e1",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_9"
       }
     ],
     "skills": [
@@ -1958,19 +2247,23 @@
     "items": [
       {
         "templateId": "9ad15f24-4def-4d82-8545-d73794cfbaf2",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_3"
       },
       {
         "templateId": "95ff786e-b6bf-4bad-9d5c-6b2b41e9f0c3",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_4"
       },
       {
         "templateId": "eda51b14-8420-4da4-ba82-89513e5deaa2",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_6"
       },
       {
         "templateId": "eda51b14-8420-4da4-ba82-89513e5deaa2",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_7"
       }
     ],
     "skills": [
@@ -2139,19 +2432,23 @@
     "items": [
       {
         "templateId": "4826832f-f3a5-4c40-b8fa-737f002074fa",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_3"
       },
       {
         "templateId": "ffcc9b4e-24f2-479b-ab80-7bfbaec664f2",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_4"
       },
       {
         "templateId": "26ddca65-5309-4600-88f7-1eb5ffbb5788",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_5"
       },
       {
         "templateId": "4826832f-f3a5-4c40-b8fa-737f002074fa",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_6"
       }
     ],
     "skills": [
@@ -2172,27 +2469,33 @@
     "items": [
       {
         "templateId": "6ba3778c-e760-44f3-b3b4-a4b4ca267cc2",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_1"
       },
       {
         "templateId": "8bbfd341-660f-4b9f-9c95-2e40c7d05c1f",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_2"
       },
       {
         "templateId": "bede53aa-8d47-4d6c-b302-2e684e8c3fcf",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_3"
       },
       {
         "templateId": "51696368-e409-4771-8baf-22c6da533cd8",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_5"
       },
       {
         "templateId": "1bdbc6f6-2690-445a-877e-90dbbd5e4658",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_7"
       },
       {
         "templateId": "da766a09-0352-4966-829f-20bda8da48d7",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_8"
       }
     ],
     "skills": [
@@ -2209,23 +2512,28 @@
     "items": [
       {
         "templateId": "6870c295-6a4d-4175-b378-c961df9933de",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_0"
       },
       {
         "templateId": "4a30e8b0-f1d1-44c0-b2a7-0a8d12c1e297",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_2"
       },
       {
         "templateId": "e31de147-378e-40af-a6ba-3314fc0bf601",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_5"
       },
       {
         "templateId": "13f852ba-1d3d-4c1a-b6db-79072e0b19d0",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_8"
       },
       {
         "templateId": "bbf63b5c-57c3-4412-beb5-18bfec2372e6",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_9"
       }
     ],
     "skills": [
@@ -2246,27 +2554,33 @@
     "items": [
       {
         "templateId": "f8b41c46-8adc-4e84-835a-831e2e3d84d1",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_0"
       },
       {
         "templateId": "223bc3f1-8dc6-429b-8c17-af64b24836ec",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_1"
       },
       {
         "templateId": "3de8a2de-9ae9-4e68-ac2a-0987a7fa8717",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_3"
       },
       {
         "templateId": "6870c295-6a4d-4175-b378-c961df9933de",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_5"
       },
       {
         "templateId": "18100c8e-24db-4568-bd8c-4c8914557e11",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_7"
       },
       {
         "templateId": "ca77281c-f912-4db3-86ce-64842a4ccdaa",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_9"
       }
     ],
     "skills": [
@@ -2288,51 +2602,61 @@
       {
         "templateId": "7cbc8056-482b-4ccf-887a-ddb2702c856c",
         "tierType": "Gold",
+        "socketId": "Socket_0",
         "enchantmentType": "Heavy"
       },
       {
         "templateId": "7cbc8056-482b-4ccf-887a-ddb2702c856c",
         "tierType": "Gold",
+        "socketId": "Socket_1",
         "enchantmentType": "Icy"
       },
       {
         "templateId": "7cbc8056-482b-4ccf-887a-ddb2702c856c",
         "tierType": "Gold",
+        "socketId": "Socket_2",
         "enchantmentType": "Fiery"
       },
       {
         "templateId": "7cbc8056-482b-4ccf-887a-ddb2702c856c",
         "tierType": "Gold",
+        "socketId": "Socket_3",
         "enchantmentType": "Obsidian"
       },
       {
         "templateId": "7cbc8056-482b-4ccf-887a-ddb2702c856c",
         "tierType": "Gold",
+        "socketId": "Socket_4",
         "enchantmentType": "Shiny"
       },
       {
         "templateId": "7cbc8056-482b-4ccf-887a-ddb2702c856c",
         "tierType": "Gold",
+        "socketId": "Socket_5",
         "enchantmentType": "Shiny"
       },
       {
         "templateId": "7cbc8056-482b-4ccf-887a-ddb2702c856c",
         "tierType": "Gold",
+        "socketId": "Socket_6",
         "enchantmentType": "Obsidian"
       },
       {
         "templateId": "7cbc8056-482b-4ccf-887a-ddb2702c856c",
         "tierType": "Gold",
+        "socketId": "Socket_7",
         "enchantmentType": "Fiery"
       },
       {
         "templateId": "7cbc8056-482b-4ccf-887a-ddb2702c856c",
         "tierType": "Gold",
+        "socketId": "Socket_8",
         "enchantmentType": "Icy"
       },
       {
         "templateId": "7cbc8056-482b-4ccf-887a-ddb2702c856c",
         "tierType": "Gold",
+        "socketId": "Socket_9",
         "enchantmentType": "Heavy"
       }
     ],
@@ -2354,31 +2678,38 @@
     "items": [
       {
         "templateId": "3d766165-a7f8-4286-8d37-976d5e101522",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_0"
       },
       {
         "templateId": "a35ea0aa-ff0f-4366-b3dd-561cae7ed725",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_3"
       },
       {
         "templateId": "2fcdf96f-e1c4-45cd-8efd-0b8352267483",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_4"
       },
       {
         "templateId": "f6f7b04f-9e4c-4107-af98-5288e8c568fd",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_5"
       },
       {
         "templateId": "2974e199-fa53-4d40-87a6-0ec6722a4aef",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_6"
       },
       {
         "templateId": "e6a183ce-0ea9-4981-bbfb-95be32b93de2",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_7"
       },
       {
         "templateId": "5b4ff0c0-ca13-4606-9db3-4219d33ab2a0",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_8"
       }
     ],
     "skills": [
@@ -2395,23 +2726,28 @@
     "items": [
       {
         "templateId": "0930fbea-e3ae-45d4-a1c7-a26c5abb63aa",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_0"
       },
       {
         "templateId": "2e4c2528-f3e8-4743-a1c9-637012d9eb76",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_3"
       },
       {
         "templateId": "2e10cce3-b242-411b-a35f-0882341e71a7",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_4"
       },
       {
         "templateId": "ca77281c-f912-4db3-86ce-64842a4ccdaa",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_6"
       },
       {
         "templateId": "bf90b501-0d87-49ae-a82a-5941db70179c",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_7"
       }
     ],
     "skills": [
@@ -2428,35 +2764,43 @@
     "items": [
       {
         "templateId": "ad02d867-252b-45b5-9625-4480807caeff",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_0"
       },
       {
         "templateId": "7b731de3-3598-46f4-b61f-75b7a0065d8a",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_2"
       },
       {
         "templateId": "e21985a8-fe05-4142-ab65-93c110545ec3",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_3"
       },
       {
         "templateId": "5aa3022a-2e75-46a8-9cfb-983a97139d05",
-        "tierType": "Legendary"
+        "tierType": "Legendary",
+        "socketId": "Socket_4"
       },
       {
         "templateId": "e21985a8-fe05-4142-ab65-93c110545ec3",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_6"
       },
       {
         "templateId": "8a0aad5c-caff-4963-b8e9-861bc5ace1ce",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_7"
       },
       {
         "templateId": "c553a41a-1e8a-48c5-8b04-df60451b7795",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_8"
       },
       {
         "templateId": "b642b5dd-180e-4980-bffd-c90110fdc96f",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_9"
       }
     ],
     "skills": [
@@ -2481,11 +2825,13 @@
     "items": [
       {
         "templateId": "c7b72f4f-3bff-46f4-9c94-55243ad6703b",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_4"
       },
       {
         "templateId": "7cbc8056-482b-4ccf-887a-ddb2702c856c",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_5"
       }
     ],
     "skills": [
@@ -2502,11 +2848,13 @@
     "items": [
       {
         "templateId": "c7b72f4f-3bff-46f4-9c94-55243ad6703b",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_4"
       },
       {
         "templateId": "7cbc8056-482b-4ccf-887a-ddb2702c856c",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_5"
       }
     ],
     "skills": [
@@ -2523,11 +2871,13 @@
     "items": [
       {
         "templateId": "c7b72f4f-3bff-46f4-9c94-55243ad6703b",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_4"
       },
       {
         "templateId": "7cbc8056-482b-4ccf-887a-ddb2702c856c",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_5"
       }
     ],
     "skills": [
@@ -2544,19 +2894,23 @@
     "items": [
       {
         "templateId": "4826832f-f3a5-4c40-b8fa-737f002074fa",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_3"
       },
       {
         "templateId": "5a162b5d-4802-4f56-a30e-19b3c8ef677c",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_4"
       },
       {
         "templateId": "53099361-599f-4c1a-ad4a-d2fbb491b756",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_5"
       },
       {
         "templateId": "0022c409-c839-41e8-8022-65a407457dfe",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_7"
       }
     ],
     "skills": [
@@ -2573,27 +2927,33 @@
     "items": [
       {
         "templateId": "6ba3778c-e760-44f3-b3b4-a4b4ca267cc2",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_0"
       },
       {
         "templateId": "f07fc136-5917-4915-a9d5-2246cb290b0d",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_1"
       },
       {
         "templateId": "33c9b825-946c-45f8-a0f3-8c0f493dbc45",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_2"
       },
       {
         "templateId": "a7ceeecc-d802-4bbf-9521-afe89db4af45",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_3"
       },
       {
         "templateId": "74d0780a-4d98-478e-b136-f1810bc88346",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_6"
       },
       {
         "templateId": "ca77281c-f912-4db3-86ce-64842a4ccdaa",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_9"
       }
     ],
     "skills": [
@@ -2610,11 +2970,13 @@
     "items": [
       {
         "templateId": "c7b72f4f-3bff-46f4-9c94-55243ad6703b",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_4"
       },
       {
         "templateId": "7cbc8056-482b-4ccf-887a-ddb2702c856c",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_5"
       }
     ],
     "skills": [
@@ -2631,35 +2993,43 @@
     "items": [
       {
         "templateId": "6031a849-e93e-41fb-a41f-a2c4d8be8929",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_0"
       },
       {
         "templateId": "c553a41a-1e8a-48c5-8b04-df60451b7795",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_1"
       },
       {
         "templateId": "694a08fe-e8ff-4a45-9693-4c68f11a1f8b",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_2"
       },
       {
         "templateId": "f7241086-8b2d-4882-80c9-a0ddb46910ad",
-        "tierType": "Diamond"
+        "tierType": "Diamond",
+        "socketId": "Socket_3"
       },
       {
         "templateId": "0b4d7632-b3b4-42ce-a5fc-3fafb8f1c409",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_6"
       },
       {
         "templateId": "7b731de3-3598-46f4-b61f-75b7a0065d8a",
-        "tierType": "Diamond"
+        "tierType": "Diamond",
+        "socketId": "Socket_7"
       },
       {
         "templateId": "7b731de3-3598-46f4-b61f-75b7a0065d8a",
-        "tierType": "Diamond"
+        "tierType": "Diamond",
+        "socketId": "Socket_8"
       },
       {
         "templateId": "6b02f653-a294-443e-8b85-2be47b6a1c12",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_9"
       }
     ],
     "skills": [
@@ -2692,31 +3062,38 @@
     "items": [
       {
         "templateId": "dc3bf5cb-45fa-46c7-9a0e-3f3bfb01697d",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_1"
       },
       {
         "templateId": "f8dd1239-f4a3-4bca-b975-2125906e7fcb",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_2"
       },
       {
         "templateId": "27e2ea0b-4e39-4826-be29-9f5505d5938a",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_3"
       },
       {
         "templateId": "4cf73614-52fd-4c59-8002-bbff087951ba",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_4"
       },
       {
         "templateId": "189c31f3-1641-4e05-bf78-800e71ffc0e7",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_6"
       },
       {
         "templateId": "54040bca-14e5-4f6d-bfa8-b67658adda0b",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_7"
       },
       {
         "templateId": "0022c409-c839-41e8-8022-65a407457dfe",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_8"
       }
     ],
     "skills": [
@@ -2737,19 +3114,23 @@
     "items": [
       {
         "templateId": "6ba3778c-e760-44f3-b3b4-a4b4ca267cc2",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_2"
       },
       {
         "templateId": "85f59c88-c391-4a03-8c3b-f312518e81de",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_3"
       },
       {
         "templateId": "f8b41c46-8adc-4e84-835a-831e2e3d84d1",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_6"
       },
       {
         "templateId": "1bdbc6f6-2690-445a-877e-90dbbd5e4658",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_7"
       }
     ],
     "skills": [
@@ -2770,23 +3151,28 @@
     "items": [
       {
         "templateId": "da766a09-0352-4966-829f-20bda8da48d7",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_1"
       },
       {
         "templateId": "a490a838-37ed-4812-88fa-9e9a88d2eb8d",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_2"
       },
       {
         "templateId": "c9c9a413-59b3-4fc8-b4ab-dcfac0a44e90",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_3"
       },
       {
         "templateId": "b20bdd25-921e-490d-a28e-599ac70d15f7",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_5"
       },
       {
         "templateId": "6ba3778c-e760-44f3-b3b4-a4b4ca267cc2",
-        "tierType": "Diamond"
+        "tierType": "Diamond",
+        "socketId": "Socket_7"
       }
     ],
     "skills": [
@@ -2803,27 +3189,33 @@
     "items": [
       {
         "templateId": "f08af933-8712-44fe-9542-338e0fec0a45",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_0"
       },
       {
         "templateId": "6b02f653-a294-443e-8b85-2be47b6a1c12",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_2"
       },
       {
         "templateId": "f42936ef-6efd-478a-9ed2-fd759df65f97",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_3"
       },
       {
         "templateId": "95640018-a5d3-4119-8c4f-5509e161c689",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_4"
       },
       {
         "templateId": "da049bef-7176-4226-b078-dac37a503835",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_5"
       },
       {
         "templateId": "0bf49a3b-e610-4f2b-8420-1a8a7d48e70a",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_8"
       }
     ],
     "skills": [
@@ -2840,27 +3232,33 @@
     "items": [
       {
         "templateId": "6f70e0cf-8349-4f14-a121-6c9065dc514c",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_0"
       },
       {
         "templateId": "fc8eb8ad-f5bd-495b-a157-e813dbe748bf",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_2"
       },
       {
         "templateId": "02fa39ce-6cc0-4ad2-bd35-5c70a47354d6",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_4"
       },
       {
         "templateId": "35ca6175-1317-4f32-b953-dbe6c9acd8cd",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_5"
       },
       {
         "templateId": "905f9340-4272-4f82-88e4-4a2f79f1be96",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_7"
       },
       {
         "templateId": "54040bca-14e5-4f6d-bfa8-b67658adda0b",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_9"
       }
     ],
     "skills": [
@@ -2885,31 +3283,38 @@
     "items": [
       {
         "templateId": "08630fca-24b9-4d9b-9dbf-7da743a09dfa",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_0"
       },
       {
         "templateId": "a35ea0aa-ff0f-4366-b3dd-561cae7ed725",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_2"
       },
       {
         "templateId": "ae039b3e-ef98-4dc7-a97c-1e06d2627e57",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_3"
       },
       {
         "templateId": "357d7a25-aae0-4d4f-9360-4ed1cc107962",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_4"
       },
       {
         "templateId": "98f9fc74-145f-4d13-85bf-3229b9257aa0",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_6"
       },
       {
         "templateId": "14b297c5-db65-492d-aad7-9ffe101cae5f",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_8"
       },
       {
         "templateId": "eed2dc49-267a-4e8c-8ea6-d37dff677e8c",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_9"
       }
     ],
     "skills": [
@@ -2926,11 +3331,13 @@
     "items": [
       {
         "templateId": "c7b72f4f-3bff-46f4-9c94-55243ad6703b",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_4"
       },
       {
         "templateId": "7cbc8056-482b-4ccf-887a-ddb2702c856c",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_5"
       }
     ],
     "skills": [
@@ -2947,39 +3354,48 @@
     "items": [
       {
         "templateId": "5ded844c-5279-4c30-9198-309fba0b651b",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_0"
       },
       {
         "templateId": "88e65c34-6865-4222-8eec-c18d48b2aa8d",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_1"
       },
       {
         "templateId": "eda51b14-8420-4da4-ba82-89513e5deaa2",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_2"
       },
       {
         "templateId": "f16f5464-02f0-4b00-9f7b-d7e7b65a1e80",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_3"
       },
       {
         "templateId": "b325d26f-0625-406c-89d4-30e011b30b9e",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_5"
       },
       {
         "templateId": "1312cf29-3dbb-446f-88b2-0d4999e68d78",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_6"
       },
       {
         "templateId": "46b1261c-a04c-4a35-8a9e-6763a5d85c43",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_7"
       },
       {
         "templateId": "ac92c118-c073-465c-8d89-abafa0dcb144",
-        "tierType": "Diamond"
+        "tierType": "Diamond",
+        "socketId": "Socket_8"
       },
       {
         "templateId": "5ded844c-5279-4c30-9198-309fba0b651b",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_9"
       }
     ],
     "skills": [
@@ -3000,39 +3416,48 @@
     "items": [
       {
         "templateId": "97d8654e-532b-4960-8f5b-5822562d3450",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_0"
       },
       {
         "templateId": "97d8654e-532b-4960-8f5b-5822562d3450",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_1"
       },
       {
         "templateId": "97d8654e-532b-4960-8f5b-5822562d3450",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_2"
       },
       {
         "templateId": "97d8654e-532b-4960-8f5b-5822562d3450",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_3"
       },
       {
         "templateId": "82d41afc-d1a9-41ee-a03d-fd9305bef8b5",
-        "tierType": "Diamond"
+        "tierType": "Diamond",
+        "socketId": "Socket_4"
       },
       {
         "templateId": "97d8654e-532b-4960-8f5b-5822562d3450",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_6"
       },
       {
         "templateId": "97d8654e-532b-4960-8f5b-5822562d3450",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_7"
       },
       {
         "templateId": "97d8654e-532b-4960-8f5b-5822562d3450",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_8"
       },
       {
         "templateId": "97d8654e-532b-4960-8f5b-5822562d3450",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_9"
       }
     ],
     "skills": [
@@ -3057,35 +3482,43 @@
     "items": [
       {
         "templateId": "4da45ad1-6793-458c-9c72-d03fa273ebfd",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_0"
       },
       {
         "templateId": "eda51b14-8420-4da4-ba82-89513e5deaa2",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_3"
       },
       {
         "templateId": "0abf14a3-8a87-4c87-a7a9-793a3fa3d4db",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_4"
       },
       {
         "templateId": "b325d26f-0625-406c-89d4-30e011b30b9e",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_5"
       },
       {
         "templateId": "b4ccf465-fbf6-4fd4-b4ed-515594ed8722",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_6"
       },
       {
         "templateId": "88e65c34-6865-4222-8eec-c18d48b2aa8d",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_7"
       },
       {
         "templateId": "88e65c34-6865-4222-8eec-c18d48b2aa8d",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_8"
       },
       {
         "templateId": "46b1261c-a04c-4a35-8a9e-6763a5d85c43",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_9"
       }
     ],
     "skills": [
@@ -3110,27 +3543,33 @@
     "items": [
       {
         "templateId": "cb766f97-21b4-43b9-af0e-c47bc7a3b4fd",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_0"
       },
       {
         "templateId": "baec36c3-2c41-47fa-bd54-6f1d6b34e8d0",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_1"
       },
       {
         "templateId": "baec36c3-2c41-47fa-bd54-6f1d6b34e8d0",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_3"
       },
       {
         "templateId": "a0c3a02b-4d29-4159-805e-3501463d1ca1",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_5"
       },
       {
         "templateId": "a0c3a02b-4d29-4159-805e-3501463d1ca1",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_7"
       },
       {
         "templateId": "c05828f1-39e6-47aa-9041-216dfa60d83d",
-        "tierType": "Diamond"
+        "tierType": "Diamond",
+        "socketId": "Socket_9"
       }
     ],
     "skills": [
@@ -3151,19 +3590,23 @@
     "items": [
       {
         "templateId": "530b642b-4a31-4cc4-a7ae-ea22d607ad4d",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_0"
       },
       {
         "templateId": "d154b0ed-4fe3-4abe-a08c-fbc622a64500",
-        "tierType": "Diamond"
+        "tierType": "Diamond",
+        "socketId": "Socket_3"
       },
       {
         "templateId": "40d8b44a-8e2f-4081-8163-043d76ddbafa",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_5"
       },
       {
         "templateId": "d7a66bfb-963f-4c13-8c2b-0bef35a650c8",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_8"
       }
     ],
     "skills": [
@@ -3188,19 +3631,23 @@
     "items": [
       {
         "templateId": "fc01f3c3-5562-4616-aa12-005834d6647f",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_0"
       },
       {
         "templateId": "14cd589f-5648-4fc7-82d1-c62da0047982",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_3"
       },
       {
         "templateId": "18e2e46f-6419-44b3-80fa-11b13bc7b831",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_6"
       },
       {
         "templateId": "6aa8be90-55f4-4fec-bd92-811e175657a1",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_9"
       }
     ],
     "skills": [
@@ -3217,23 +3664,28 @@
     "items": [
       {
         "templateId": "08bb5055-bd8d-4f86-bff6-24f8cb47f509",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_2"
       },
       {
         "templateId": "df87dc00-f0fe-4e47-b864-ad6b4bfea81a",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_3"
       },
       {
         "templateId": "e574a4ba-f984-446c-ae5b-75d75cd4b857",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_4"
       },
       {
         "templateId": "cf3a7956-f400-42e1-bae1-d3678d76fd01",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_5"
       },
       {
         "templateId": "08bb5055-bd8d-4f86-bff6-24f8cb47f509",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_6"
       }
     ],
     "skills": [
@@ -3250,35 +3702,43 @@
     "items": [
       {
         "templateId": "b642b5dd-180e-4980-bffd-c90110fdc96f",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_0"
       },
       {
         "templateId": "c553a41a-1e8a-48c5-8b04-df60451b7795",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_1"
       },
       {
         "templateId": "f08af933-8712-44fe-9542-338e0fec0a45",
-        "tierType": "Diamond"
+        "tierType": "Diamond",
+        "socketId": "Socket_2"
       },
       {
         "templateId": "6f70e0cf-8349-4f14-a121-6c9065dc514c",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_4"
       },
       {
         "templateId": "2c79dcd7-3205-4d41-85e9-daecb8d1c7c5",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_6"
       },
       {
         "templateId": "7b731de3-3598-46f4-b61f-75b7a0065d8a",
-        "tierType": "Diamond"
+        "tierType": "Diamond",
+        "socketId": "Socket_7"
       },
       {
         "templateId": "720765c7-c0c5-4059-b3b4-53758f61338f",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_8"
       },
       {
         "templateId": "09132149-783d-4d5a-900c-31135bffab44",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_9"
       }
     ],
     "skills": [
@@ -3300,23 +3760,28 @@
       {
         "templateId": "e3070870-881c-497d-879f-2d91e962e0e2",
         "tierType": "Bronze",
+        "socketId": "Socket_1",
         "enchantmentType": "Restorative"
       },
       {
         "templateId": "d45bb1dd-5342-4c69-b7fe-f56d3fac7d1f",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_3"
       },
       {
         "templateId": "7e2634eb-9489-4462-8fe4-1c5b8c07adc2",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_4"
       },
       {
         "templateId": "d45bb1dd-5342-4c69-b7fe-f56d3fac7d1f",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_6"
       },
       {
         "templateId": "e3070870-881c-497d-879f-2d91e962e0e2",
         "tierType": "Bronze",
+        "socketId": "Socket_7",
         "enchantmentType": "Restorative"
       }
     ],
@@ -3338,19 +3803,23 @@
     "items": [
       {
         "templateId": "9ad15f24-4def-4d82-8545-d73794cfbaf2",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_3"
       },
       {
         "templateId": "95ff786e-b6bf-4bad-9d5c-6b2b41e9f0c3",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_4"
       },
       {
         "templateId": "eda51b14-8420-4da4-ba82-89513e5deaa2",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_6"
       },
       {
         "templateId": "eda51b14-8420-4da4-ba82-89513e5deaa2",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_7"
       }
     ],
     "skills": [
@@ -3371,23 +3840,28 @@
     "items": [
       {
         "templateId": "447c40e6-7aec-4391-8be7-df4952815d40",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_0"
       },
       {
         "templateId": "6f70e0cf-8349-4f14-a121-6c9065dc514c",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_1"
       },
       {
         "templateId": "0c710f33-d0fd-40c8-aa2d-34fc20f23140",
-        "tierType": "Legendary"
+        "tierType": "Legendary",
+        "socketId": "Socket_3"
       },
       {
         "templateId": "86f9a35d-73d6-456c-b56d-ddb6adc64175",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_5"
       },
       {
         "templateId": "a0345f93-0c0a-44fa-a7e4-2135acb16bcc",
-        "tierType": "Diamond"
+        "tierType": "Diamond",
+        "socketId": "Socket_7"
       }
     ],
     "skills": [
@@ -3412,31 +3886,38 @@
     "items": [
       {
         "templateId": "8ff7ebb6-a783-403a-ae29-7e89d0c90040",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_0"
       },
       {
         "templateId": "e6d331a7-c0e3-4619-9eee-c7c5023969bb",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_1"
       },
       {
         "templateId": "b91bfce3-8b58-44a3-8250-ca91c3100598",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_2"
       },
       {
         "templateId": "ad02d867-252b-45b5-9625-4480807caeff",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_4"
       },
       {
         "templateId": "b91bfce3-8b58-44a3-8250-ca91c3100598",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_6"
       },
       {
         "templateId": "c0455f22-2fb9-4ce6-a65f-e874e3d86ff0",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_8"
       },
       {
         "templateId": "d62fb885-2107-4942-a947-112817054a22",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_9"
       }
     ],
     "skills": [
@@ -3453,31 +3934,38 @@
     "items": [
       {
         "templateId": "c6ab4982-da6c-4a1a-934d-820c45014646",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_0"
       },
       {
         "templateId": "b325d26f-0625-406c-89d4-30e011b30b9e",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_3"
       },
       {
         "templateId": "b4ccf465-fbf6-4fd4-b4ed-515594ed8722",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_4"
       },
       {
         "templateId": "840b6bc5-4786-40bc-b864-cc5c2b78641a",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_5"
       },
       {
         "templateId": "26ddca65-5309-4600-88f7-1eb5ffbb5788",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_6"
       },
       {
         "templateId": "88e65c34-6865-4222-8eec-c18d48b2aa8d",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_7"
       },
       {
         "templateId": "91766035-9d5c-49df-b6b1-25ff7328af5b",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_8"
       }
     ],
     "skills": [
@@ -3498,11 +3986,13 @@
     "items": [
       {
         "templateId": "0a04345c-1319-4640-a4f1-02f88256a82d",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_0"
       },
       {
         "templateId": "ed5688bd-99ff-4734-84f4-95fa1210c8bd",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_3"
       }
     ],
     "skills": []
@@ -3514,39 +4004,48 @@
     "items": [
       {
         "templateId": "92e7ab18-a035-43c7-a53c-965aeecbe357",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_0"
       },
       {
         "templateId": "03e4c71d-5317-4c35-a0fb-5348356edc03",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_1"
       },
       {
         "templateId": "92e7ab18-a035-43c7-a53c-965aeecbe357",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_2"
       },
       {
         "templateId": "8391a75d-56e7-4206-a16e-62dbd986925f",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_3"
       },
       {
         "templateId": "9e5e3d9e-ad05-4340-9071-4fccecb79695",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_4"
       },
       {
         "templateId": "9e5e3d9e-ad05-4340-9071-4fccecb79695",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_5"
       },
       {
         "templateId": "c05828f1-39e6-47aa-9041-216dfa60d83d",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_6"
       },
       {
         "templateId": "2aab9da1-bfd1-4f3f-8cda-69f3c909158b",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_7"
       },
       {
         "templateId": "dc0a123c-61df-44c5-9281-41d0430b4123",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_8"
       }
     ],
     "skills": [
@@ -3571,31 +4070,38 @@
     "items": [
       {
         "templateId": "d45bb1dd-5342-4c69-b7fe-f56d3fac7d1f",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_1"
       },
       {
         "templateId": "3d212e22-12eb-427e-ab96-e7baf1229a7b",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_2"
       },
       {
         "templateId": "8535493a-67ae-4248-a34d-176549948686",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_3"
       },
       {
         "templateId": "8535493a-67ae-4248-a34d-176549948686",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_4"
       },
       {
         "templateId": "8535493a-67ae-4248-a34d-176549948686",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_5"
       },
       {
         "templateId": "8535493a-67ae-4248-a34d-176549948686",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_6"
       },
       {
         "templateId": "d45bb1dd-5342-4c69-b7fe-f56d3fac7d1f",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_7"
       }
     ],
     "skills": [
@@ -3616,27 +4122,33 @@
     "items": [
       {
         "templateId": "5a9bd869-4614-4edf-941d-5f44e0bb1519",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_1"
       },
       {
         "templateId": "8391a75d-56e7-4206-a16e-62dbd986925f",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_2"
       },
       {
         "templateId": "af24dea0-6cc9-49dc-acec-d90313b46b72",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_3"
       },
       {
         "templateId": "af24dea0-6cc9-49dc-acec-d90313b46b72",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_5"
       },
       {
         "templateId": "8391a75d-56e7-4206-a16e-62dbd986925f",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_7"
       },
       {
         "templateId": "5a9bd869-4614-4edf-941d-5f44e0bb1519",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_8"
       }
     ],
     "skills": [
@@ -3653,11 +4165,13 @@
     "items": [
       {
         "templateId": "c7b72f4f-3bff-46f4-9c94-55243ad6703b",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_4"
       },
       {
         "templateId": "7cbc8056-482b-4ccf-887a-ddb2702c856c",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_5"
       }
     ],
     "skills": [
@@ -3674,15 +4188,18 @@
     "items": [
       {
         "templateId": "da766a09-0352-4966-829f-20bda8da48d7",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_3"
       },
       {
         "templateId": "3890374d-4952-471d-b550-e230d0ce5343",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_4"
       },
       {
         "templateId": "0966f887-5aaf-44a5-90fa-ecb194270513",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_5"
       }
     ],
     "skills": [
@@ -3699,27 +4216,33 @@
     "items": [
       {
         "templateId": "9e0bca07-56bd-4217-b258-ef1dabd42209",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_0"
       },
       {
         "templateId": "cc0c3ddc-c4c4-4b2a-beb4-142973639f44",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_2"
       },
       {
         "templateId": "54f957f2-9522-486b-a7c6-bb234f74846c",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_4"
       },
       {
         "templateId": "7bff4c56-752c-47f3-89d0-e85aa917319f",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_6"
       },
       {
         "templateId": "dec20bd9-9c83-4fcb-a5d2-e71352ed78d5",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_7"
       },
       {
         "templateId": "6e576444-85ce-4922-84e1-8ad88c5b83f1",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_8"
       }
     ],
     "skills": [
@@ -3736,31 +4259,38 @@
     "items": [
       {
         "templateId": "9ad15f24-4def-4d82-8545-d73794cfbaf2",
-        "tierType": "Diamond"
+        "tierType": "Diamond",
+        "socketId": "Socket_1"
       },
       {
         "templateId": "c7435ab5-dd8b-4c78-a5a4-6b2795dacaf3",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_2"
       },
       {
         "templateId": "840b6bc5-4786-40bc-b864-cc5c2b78641a",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_3"
       },
       {
         "templateId": "e75ea50a-e67c-47e4-a4b1-304b87b90cf9",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_4"
       },
       {
         "templateId": "00e3a7ff-af5e-47ce-a2c0-2d4ec31ac7d7",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_5"
       },
       {
         "templateId": "c6ab4982-da6c-4a1a-934d-820c45014646",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_6"
       },
       {
         "templateId": "deaad0b0-27bc-4800-928f-0fdf443d2c2d",
-        "tierType": "Diamond"
+        "tierType": "Diamond",
+        "socketId": "Socket_9"
       }
     ],
     "skills": [
@@ -3781,23 +4311,28 @@
     "items": [
       {
         "templateId": "2834ede9-01e9-4b68-8f1f-70f83187c78f",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_0"
       },
       {
         "templateId": "edd857da-ac11-4640-bc1a-217ef8385f72",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_2"
       },
       {
         "templateId": "edd857da-ac11-4640-bc1a-217ef8385f72",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_4"
       },
       {
         "templateId": "c926fac8-f9ba-4430-a01a-a71a32c501c7",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_6"
       },
       {
         "templateId": "8f61677c-aa75-4275-b8b4-3cbaca1fdcbf",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_8"
       }
     ],
     "skills": [
@@ -3818,23 +4353,28 @@
     "items": [
       {
         "templateId": "e21985a8-fe05-4142-ab65-93c110545ec3",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_1"
       },
       {
         "templateId": "34fcf624-ccba-42a8-b4fc-837e0002a163",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_2"
       },
       {
         "templateId": "b02a2b57-da9c-4ad6-88ac-219b3bfec103",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_4"
       },
       {
         "templateId": "53b62ecb-bcbc-4a86-bd6f-027467970109",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_5"
       },
       {
         "templateId": "4680e750-4ea4-421a-b486-194c805ad6a8",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_7"
       }
     ],
     "skills": [
@@ -3851,11 +4391,13 @@
     "items": [
       {
         "templateId": "c7b72f4f-3bff-46f4-9c94-55243ad6703b",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_4"
       },
       {
         "templateId": "7cbc8056-482b-4ccf-887a-ddb2702c856c",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_5"
       }
     ],
     "skills": [
@@ -3872,15 +4414,18 @@
     "items": [
       {
         "templateId": "d45bb1dd-5342-4c69-b7fe-f56d3fac7d1f",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_3"
       },
       {
         "templateId": "3d212e22-12eb-427e-ab96-e7baf1229a7b",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_4"
       },
       {
         "templateId": "d45bb1dd-5342-4c69-b7fe-f56d3fac7d1f",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_5"
       }
     ],
     "skills": [
@@ -3898,51 +4443,61 @@
       {
         "templateId": "7cbc8056-482b-4ccf-887a-ddb2702c856c",
         "tierType": "Diamond",
+        "socketId": "Socket_0",
         "enchantmentType": "Heavy"
       },
       {
         "templateId": "7cbc8056-482b-4ccf-887a-ddb2702c856c",
         "tierType": "Diamond",
+        "socketId": "Socket_1",
         "enchantmentType": "Icy"
       },
       {
         "templateId": "7cbc8056-482b-4ccf-887a-ddb2702c856c",
         "tierType": "Diamond",
+        "socketId": "Socket_2",
         "enchantmentType": "Fiery"
       },
       {
         "templateId": "7cbc8056-482b-4ccf-887a-ddb2702c856c",
         "tierType": "Diamond",
+        "socketId": "Socket_3",
         "enchantmentType": "Obsidian"
       },
       {
         "templateId": "7cbc8056-482b-4ccf-887a-ddb2702c856c",
         "tierType": "Diamond",
+        "socketId": "Socket_4",
         "enchantmentType": "Shiny"
       },
       {
         "templateId": "7cbc8056-482b-4ccf-887a-ddb2702c856c",
         "tierType": "Diamond",
+        "socketId": "Socket_5",
         "enchantmentType": "Shiny"
       },
       {
         "templateId": "7cbc8056-482b-4ccf-887a-ddb2702c856c",
         "tierType": "Diamond",
+        "socketId": "Socket_6",
         "enchantmentType": "Obsidian"
       },
       {
         "templateId": "7cbc8056-482b-4ccf-887a-ddb2702c856c",
         "tierType": "Diamond",
+        "socketId": "Socket_7",
         "enchantmentType": "Fiery"
       },
       {
         "templateId": "7cbc8056-482b-4ccf-887a-ddb2702c856c",
         "tierType": "Diamond",
+        "socketId": "Socket_8",
         "enchantmentType": "Icy"
       },
       {
         "templateId": "7cbc8056-482b-4ccf-887a-ddb2702c856c",
         "tierType": "Diamond",
+        "socketId": "Socket_9",
         "enchantmentType": "Heavy"
       }
     ],
@@ -3960,11 +4515,13 @@
     "items": [
       {
         "templateId": "c7b72f4f-3bff-46f4-9c94-55243ad6703b",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_4"
       },
       {
         "templateId": "7cbc8056-482b-4ccf-887a-ddb2702c856c",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_5"
       }
     ],
     "skills": [
@@ -3981,29 +4538,35 @@
     "items": [
       {
         "templateId": "d45bb1dd-5342-4c69-b7fe-f56d3fac7d1f",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_1"
       },
       {
         "templateId": "5a9bd869-4614-4edf-941d-5f44e0bb1519",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_2"
       },
       {
         "templateId": "1b955b8d-0ea6-4437-935c-d588be5898c1",
         "tierType": "Bronze",
+        "socketId": "Socket_3",
         "enchantmentType": "Fiery"
       },
       {
         "templateId": "1b955b8d-0ea6-4437-935c-d588be5898c1",
         "tierType": "Bronze",
+        "socketId": "Socket_5",
         "enchantmentType": "Fiery"
       },
       {
         "templateId": "5a9bd869-4614-4edf-941d-5f44e0bb1519",
-        "tierType": "Bronze"
+        "tierType": "Bronze",
+        "socketId": "Socket_7"
       },
       {
         "templateId": "dc3bf5cb-45fa-46c7-9a0e-3f3bfb01697d",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_8"
       }
     ],
     "skills": [
@@ -4020,31 +4583,38 @@
     "items": [
       {
         "templateId": "fb41fdef-d83b-4674-8cb3-9a224aa8f84a",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_0"
       },
       {
         "templateId": "1ff59248-bf6c-49e1-9c45-59989df19693",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_1"
       },
       {
         "templateId": "d903dda8-9c30-4325-a727-c885ad972025",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_2"
       },
       {
         "templateId": "8019736a-bb1e-4cbd-a3f8-2bfa9b943b6f",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_4"
       },
       {
         "templateId": "41dea658-7e38-471a-aa20-e018734526f0",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_6"
       },
       {
         "templateId": "014d9c98-e823-443c-98a3-6367ab81c956",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_8"
       },
       {
         "templateId": "fb41fdef-d83b-4674-8cb3-9a224aa8f84a",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_9"
       }
     ],
     "skills": [
@@ -4061,23 +4631,28 @@
     "items": [
       {
         "templateId": "37222f02-3767-44ef-a8ed-000c90d3330e",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_0"
       },
       {
         "templateId": "baec36c3-2c41-47fa-bd54-6f1d6b34e8d0",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_1"
       },
       {
         "templateId": "3373c95c-6910-4414-8134-abf2ff1c90fa",
-        "tierType": "Legendary"
+        "tierType": "Legendary",
+        "socketId": "Socket_3"
       },
       {
         "templateId": "baec36c3-2c41-47fa-bd54-6f1d6b34e8d0",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_6"
       },
       {
         "templateId": "cfd94b43-c547-4dea-a977-658a388e75d4",
-        "tierType": "Diamond"
+        "tierType": "Diamond",
+        "socketId": "Socket_8"
       }
     ],
     "skills": [
@@ -4098,35 +4673,43 @@
     "items": [
       {
         "templateId": "3718910f-3b43-4c4b-8904-d1dbfce56c13",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_0"
       },
       {
         "templateId": "df87dc00-f0fe-4e47-b864-ad6b4bfea81a",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_3"
       },
       {
         "templateId": "54040bca-14e5-4f6d-bfa8-b67658adda0b",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_4"
       },
       {
         "templateId": "cf3a7956-f400-42e1-bae1-d3678d76fd01",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_5"
       },
       {
         "templateId": "2974e199-fa53-4d40-87a6-0ec6722a4aef",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_6"
       },
       {
         "templateId": "f6f7b04f-9e4c-4107-af98-5288e8c568fd",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_7"
       },
       {
         "templateId": "f6f7b04f-9e4c-4107-af98-5288e8c568fd",
-        "tierType": "Silver"
+        "tierType": "Silver",
+        "socketId": "Socket_8"
       },
       {
         "templateId": "2974e199-fa53-4d40-87a6-0ec6722a4aef",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "socketId": "Socket_9"
       }
     ],
     "skills": [

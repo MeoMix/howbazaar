@@ -68,6 +68,8 @@ export type Monster = {
     items: {
         templateId: string;
         tierType: TierType;
+        // TODO: ideally this property wouldn't be sent client side as it's not needed
+        socketId: string;
         enchantmentType: ClientSideEnchantmentType | undefined;
     }[];
     skills: {
