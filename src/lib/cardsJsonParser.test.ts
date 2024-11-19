@@ -12,14 +12,14 @@ describe('cardJsonParser', () => {
 
   // it.only('checks for cards with an increasing number of tooltips in higher tiers', () => {
   //   const cardsWithExtraTooltips: { cardName: string; tier: string; additionalTooltipsCount: number }[] = [];
-  
+
   //   cards.forEach(card => {
   //     let previousTooltipCount = 0;
-  
+
   //     // Loop through each tier in order (assuming tier order is Bronze, Silver, Gold, Diamond)
   //     Object.entries(card.tiers).forEach(([tierName, tier]) => {
   //       const currentTooltipCount = tier.tooltips ? tier.tooltips.length : 0;
-  
+
   //       // Check if the current tier has more tooltips than the previous tier
   //       if (currentTooltipCount > previousTooltipCount) {
   //         const additionalTooltipsCount = currentTooltipCount - previousTooltipCount;
@@ -29,26 +29,26 @@ describe('cardJsonParser', () => {
   //           additionalTooltipsCount,
   //         });
   //       }
-  
+
   //       // Update the previousTooltipCount to the current tier's count
   //       previousTooltipCount = currentTooltipCount;
   //     });
   //   });
-  
+
   //   if (cardsWithExtraTooltips.length > 0) {
   //     console.log("Cards with an increasing number of tooltips in higher tiers:", cardsWithExtraTooltips);
   //   } else {
   //     console.log("No cards have an increasing number of tooltips in higher tiers.");
   //   }
-  
+
   //   // Optionally assert based on your expectations
   //   expect(cardsWithExtraTooltips.length).toBeGreaterThan(0); // Adjust as needed
   // });
-  
+
 
   // it.only('checks for cards with changing cooldowns across tiers', () => {
   //   const cardsWithChangingCooldowns: string[] = [];
-  
+
   //   cards.forEach(card => {
   //     // Extract cooldown values across tiers
   //     const cooldownValues = Object.entries(card.tiers)
@@ -57,21 +57,21 @@ describe('cardJsonParser', () => {
   //         return cooldownAttribute ? cooldownAttribute.value : null;
   //       })
   //       .filter(value => value !== null);
-  
+
   //     // Check if any cooldown value is different from others in the array
   //     const hasChangingCooldown = cooldownValues.some((value, index, arr) => value !== arr[0]);
-  
+
   //     if (hasChangingCooldown) {
   //       cardsWithChangingCooldowns.push(card.name);
   //     }
   //   });
-  
+
   //   if (cardsWithChangingCooldowns.length > 0) {
   //     console.log("Cards with changing cooldowns:", cardsWithChangingCooldowns);
   //   } else {
   //     console.log("No cards have changing cooldowns across tiers.");
   //   }
-  
+
   //   expect(cardsWithChangingCooldowns.length).toBeGreaterThan(0); // Adjust expectation as needed
   // });
 
@@ -184,13 +184,33 @@ describe('cardJsonParser', () => {
     expect(tripwire.hiddenTags.includes('Regen')).toBe(false);
   });
 
+  it('should parse Astrolabe such that related tooltips use identical sentence structure', () => {
+    const astrolabe = cards.find(card => card.name === "Astrolabe")!;
+
+    expect(astrolabe.tiers.Silver.tooltips[2]).toContain("When you use a non-weapon item, it and this gains");
+    expect(astrolabe.tiers.Gold.tooltips[2]).toContain("When you use a non-weapon item, it and this gains");
+    expect(astrolabe.tiers.Diamond.tooltips[2]).toContain("When you use a non-weapon item, it and this gains");
+  });
+
+  it('should parse Dooley\'s Scarf such that it does not include duplicate tooltips in Gold/Diamond', () => {
+    const dooleysScarf = cards.find(card => card.name === "Dooley's Scarf")!;
+    expect(dooleysScarf.tiers.Silver.tooltips).toHaveLength(3);
+    expect(dooleysScarf.tiers.Gold.tooltips).toHaveLength(3);
+    expect(dooleysScarf.tiers.Diamond.tooltips).toHaveLength(3);
+  });
+
+  it('should parse Gearnola Bar such that it does not include duplicate tooltips in Diamond', () => {
+    const gearnolaBar = cards.find(card => card.name === "Gearnola Bar")!;
+    expect(gearnolaBar.tiers.Diamond.tooltips).toHaveLength(4);
+  });
+
   it('should contain no tooltips with {', () => {
     const invalidCards = [];
-  
+
     for (const card of cards) {
       const tooltips = Object.values(card.tiers).flatMap(tier => tier.tooltips);
       const invalidTooltips = tooltips.filter(tooltip => tooltip.includes('{'));
-  
+
       if (invalidTooltips.length > 0) {
         invalidCards.push({
           name: card.name,
@@ -198,7 +218,7 @@ describe('cardJsonParser', () => {
         });
       }
     }
-  
+
     // If no invalid tooltips are found, make the assertion to confirm
     expect(invalidCards).toEqual([]);
   });
@@ -309,11 +329,11 @@ describe('cardJsonParser', () => {
 
     it('should contain no enchantment tooltips with {', () => {
       const invalidCards = [];
-    
+
       for (const card of cards) {
         const tooltips = card.enchantments.flatMap(enchantment => enchantment.tooltips);
         const invalidTooltips = tooltips.filter(tooltip => tooltip.includes('{'));
-    
+
         if (invalidTooltips.length > 0) {
           invalidCards.push({
             name: card.name,
@@ -321,7 +341,7 @@ describe('cardJsonParser', () => {
           });
         }
       }
-    
+
       // If no invalid tooltips are found, make the assertion to confirm
       expect(invalidCards).toEqual([]);
     });

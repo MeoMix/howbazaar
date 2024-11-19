@@ -6951,7 +6951,6 @@
         "tooltips": [
           "Cooldown 4 seconds",
           "Shield 40.",
-          "When this or an adjacent item gains Freeze, Shield 40 and remove Freeze from it.",
           "When this or an adjacent item gains Freeze, Shield 40 and remove Freeze from it."
         ]
       },
@@ -6959,7 +6958,6 @@
         "tooltips": [
           "Cooldown 4 seconds",
           "Shield 60.",
-          "When this or an adjacent item gains Freeze, Shield 60 and remove Freeze from it.",
           "When this or an adjacent item gains Freeze, Shield 60 and remove Freeze from it."
         ]
       },
@@ -6967,7 +6965,6 @@
         "tooltips": [
           "Cooldown 4 seconds",
           "Shield 60.",
-          "When this or an adjacent item gains Freeze, Shield 60 and remove Freeze from it.",
           "When this or an adjacent item gains Freeze, Shield 60 and remove Freeze from it."
         ]
       }
@@ -25563,7 +25560,7 @@
         "tooltips": [
           "Cooldown 4 seconds",
           "Shield 15.",
-          "When you use another non-weapon item, this and it gains Haste 1 second(s)."
+          "When you use a non-weapon item, it and this gains Haste 1 second(s)."
         ]
       },
       "Gold": {
@@ -39673,7 +39670,6 @@
           "Cooldown 4 seconds",
           "Ammo Max 2",
           "Shield 80.",
-          "When you sell a Tool, this gains 1 Max Ammo.",
           "When you sell a Tool, this gains 1 Max Ammo."
         ]
       },
@@ -39682,7 +39678,6 @@
           "Cooldown 4 seconds",
           "Ammo Max 2",
           "Shield 80.",
-          "When you sell a Tool, this gains 1 Max Ammo.",
           "When you sell a Tool, this gains 1 Max Ammo."
         ]
       }

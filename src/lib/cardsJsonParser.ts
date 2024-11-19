@@ -541,6 +541,25 @@ function parseItemsAndSkills(cardsJson: CardsJson): ClientSideCard[] {
             hiddenTags = hiddenTags.filter(tag => tag !== 'Regen');
         }
 
+        // Astrolabe has one tooltip that uses the phrase "this and it" where the others say "it and this"
+        if (name === "Astrolabe") {
+            const searchString = "When you use another non-weapon item, this and it gains";
+            const brokenTooltipIndex = tiers.Silver.tooltips.findIndex(tooltip => tooltip.includes(searchString));
+
+            if (brokenTooltipIndex > -1) {
+                tiers.Silver.tooltips[brokenTooltipIndex] = tiers.Silver.tooltips[brokenTooltipIndex].replace(searchString, "When you use a non-weapon item, it and this gains");
+            }
+        }
+
+        // Generally sanitisize each tier of tooltips and ensure there's no duplicates.
+        // This occurs on Dooley's Scarf as well as Gearnola Bar at time of writing.
+        tiers = Object.fromEntries(
+            Object.entries(tiers).map(([tierType, tier]) => {
+                tier.tooltips = [...new Set(tier.tooltips)];
+                return [tierType, tier];
+            })
+        ) as typeof tiers;
+
         // Fix bad data related to starting tiers. These are all Legendary.
         let startingTier = card.StartingTier;
         const invalidLegendaries = ["Eye of the Colossus", "Infernal Greatsword", "Octopus", "Necronomicon", "Scythe", "Singularity", "Soul of the District", "Teddy", "The Eclipse", "Flamberge"];
