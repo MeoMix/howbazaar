@@ -218,6 +218,13 @@ describe('cardJsonParser', () => {
     expect(damageTooltip).toContain("This deals quadruple damage if it is your only friend.");
   });
 
+  it('should fix Flamethrower\'s extraneous "of" in tooltip', () => {
+    const flamethrower = cards.find(card => card.name === "Flamethrower")!;
+    const burnTooltip = flamethrower.tiers["Gold"].tooltips.find(tooltip => tooltip.includes("Burn equal to double"));
+
+    expect(burnTooltip).toContain("Burn equal to double this item's damage.");
+  });
+
   // it('should fix Critical Core\'s tooltip to not contain a typo "1"', () => {
   //   const criticalCore = cards.find(card => card.name === "Critical Core")!;
   //   const chargeTooltip = criticalCore.tiers["Gold"].tooltips.find(tooltip => tooltip.includes("When you use any"));

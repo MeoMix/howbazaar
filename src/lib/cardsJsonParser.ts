@@ -569,6 +569,15 @@ function parseItemsAndSkills(cardsJson: CardsJson): ClientSideCard[] {
             }
         }
 
+        if (name === "Flamethrower") {
+            const searchString = "double of this";
+            const brokenTooltipIndex = tiers.Gold.tooltips.findIndex(tooltip => tooltip.includes(searchString));
+
+            if (brokenTooltipIndex > -1) {
+                tiers.Gold.tooltips[brokenTooltipIndex] = tiers.Gold.tooltips[brokenTooltipIndex].replace(searchString, "double this");
+            }
+        }
+
         // Fix bad data related to starting tiers. These are all Legendary.
         let startingTier = card.StartingTier;
         const invalidLegendaries = ["Eye of the Colossus", "Infernal Greatsword", "Octopus", "Necronomicon", "Scythe", "Singularity", "Soul of the District", "Teddy", "The Eclipse", "Flamberge"];
