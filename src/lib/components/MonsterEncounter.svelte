@@ -13,7 +13,9 @@
         {monsterEncounter.cardName}
     </div>
 
-    <Badge large rounded border color="green">{monsterEncounter.health} health</Badge>
+    <Badge large rounded border color="green"
+        >{monsterEncounter.health} health</Badge
+    >
 
     {#if monsterEncounter.skills.length > 0}
         <div class="font-semibold text-2xl mt-4 mb-2">Skills</div>

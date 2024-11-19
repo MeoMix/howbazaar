@@ -33,7 +33,13 @@
     </div>
 
     <CardBadges
-        primaryBadges={[...card.heroes, card.size].map((text) => ({ text }))}
+        primaryBadges={[
+            {
+                text: `${card.startingTier}+`,
+                color: card.startingTier.toLowerCase(),
+            },
+            ...[...card.heroes, card.size].map((text) => ({ text })),
+        ]}
         secondaryBadges={tags.map((text) => ({ text }))}
     />
 

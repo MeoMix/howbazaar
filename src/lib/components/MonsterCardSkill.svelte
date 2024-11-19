@@ -43,7 +43,10 @@
         </div>
 
         <CardBadges
-            primaryBadges={[tierType, card.size].map((text) => ({ text }))}
+            primaryBadges={[
+                { text: tierType, color: tierType.toLowerCase() },
+                { text: card.size },
+            ]}
             secondaryBadges={tags.map((text) => ({ text }))}
         />
 
