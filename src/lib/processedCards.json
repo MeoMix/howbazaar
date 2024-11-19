@@ -4252,7 +4252,7 @@
         "tooltips": [
           "Cooldown 4 seconds",
           "Haste another item for 1 second(s).",
-          "Slow an item for 1 second(s)."
+          "Slow 1 item for 1 second(s)."
         ]
       },
       "Silver": {
@@ -22497,7 +22497,7 @@
         "tooltips": [
           "Cooldown 6 seconds",
           "Deal 2 damage.",
-          "Burn equal to double of this item's damage."
+          "Burn equal to double this item's damage."
         ]
       },
       "Diamond": {
@@ -26974,7 +26974,7 @@
         "tooltips": [
           "Cooldown 12 seconds",
           "Deal 20 damage for each Weapon you have.",
-          "This deals quadruple damage if its your only friend."
+          "This deals quadruple damage if it is your only friend."
         ]
       },
       "Legendary": {
@@ -56608,7 +56608,7 @@
           "Cooldown 7 seconds",
           "Deal 10 damage.",
           "This and items to the right of this have +15% Crit Chance.",
-          "When you use any to the left of this, Charge this 1000 1 second(s).",
+          "When you use any to the left of this, Charge this 1 second(s).",
           "When you Crit with any item, Charge this 1 second(s)."
         ]
       },
@@ -56617,34 +56617,34 @@
           "Cooldown 7 seconds",
           "Deal 30 damage.",
           "This and items to the right of this have +20% Crit Chance.",
-          "When you use any to the left of this, Charge this 1000 1 second(s).",
+          "When you use any to the left of this, Charge this 1 second(s).",
           "When you Crit with any item, Charge this 1 second(s)."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 5.999 seconds",
+          "Cooldown 6 seconds",
           "Deal 60 damage.",
           "This and items to the right of this have +25% Crit Chance.",
-          "When you use any to the left of this, Charge this 1000 1 second(s).",
+          "When you use any to the left of this, Charge this 1 second(s).",
           "When you Crit with any item, Charge this 1 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 4.999 seconds",
+          "Cooldown 5 seconds",
           "Deal 100 damage.",
           "This and items to the right of this have +30% Crit Chance.",
-          "When you use any to the left of this, Charge this 1000 1 second(s).",
+          "When you use any to the left of this, Charge this 1 second(s).",
           "When you Crit with any item, Charge this 1 second(s)."
         ]
       },
       "Legendary": {
         "tooltips": [
-          "Cooldown 4.999 seconds",
+          "Cooldown 5 seconds",
           "Deal 100 damage.",
           "This and items to the right of this have +30% Crit Chance.",
-          "When you use any to the left of this, Charge this 1000 1 second(s).",
+          "When you use any to the left of this, Charge this 1 second(s).",
           "When you Crit with any item, Charge this 1 second(s)."
         ]
       }
