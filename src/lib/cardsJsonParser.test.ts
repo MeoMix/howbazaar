@@ -232,12 +232,12 @@ describe('cardJsonParser', () => {
     expect(slowTooltip).toContain("Slow 1 item for 1 second(s).");
   });
 
-  // it('should fix Critical Core\'s tooltip to not contain a typo "1"', () => {
-  //   const criticalCore = cards.find(card => card.name === "Critical Core")!;
-  //   const chargeTooltip = criticalCore.tiers["Gold"].tooltips.find(tooltip => tooltip.includes("When you use any"));
+  it('should fix Critical Core\'s tooltip to not contain a typo "1"', () => {
+    const criticalCore = cards.find(card => card.name === "Critical Core")!;
+    const chargeTooltip = criticalCore.tiers.Bronze.tooltips.find(tooltip => tooltip.includes("When you use any"));
 
-  //   expect(chargeTooltip).toEqual("When you use any item to the left of this, Charge this 1 second(s)");
-  // });
+    expect(chargeTooltip).toEqual("When you use any to the left of this, Charge this 1 second(s).");
+  });
 
   it('should contain no tooltips with {', () => {
     const invalidCards = [];

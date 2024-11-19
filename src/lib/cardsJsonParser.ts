@@ -361,13 +361,20 @@ function parseItemsAndSkills(cardsJson: CardsJson): ClientSideCard[] {
 
         let tiers = Object.fromEntries((Object.entries(tierMap) as Entries<typeof tierMap>).map(
             ([tierName, tier]) => {
-                const rawTooltips = tier.TooltipIds
+                let rawTooltips = tier.TooltipIds
                     .map(tooltipId => card.Localization.Tooltips[tooltipId]?.Content.Text)
                     .filter((tooltip): tooltip is string => tooltip !== undefined && tooltip !== null);
 
                 // TODO: It's weird this can miss when looking up by tooltipId which should be a key
                 if (rawTooltips.length !== tier.TooltipIds.length) {
                     console.warn(card.Localization.Title.Text + ': Failed to match on tooltip');
+                }
+
+                // Patch Fix Critical Core having a typo'ed tooltip.
+                if (card.Localization.Title.Text === "Critical Core") {
+                    rawTooltips = rawTooltips.map((rawTooltip) => {
+                        return rawTooltip.replace("{ability.1} 1", "{ability.1}");
+                    });
                 }
 
                 let tooltips = getDisplayedTooltips(rawTooltips, abilities, auras, tier.Attributes);
