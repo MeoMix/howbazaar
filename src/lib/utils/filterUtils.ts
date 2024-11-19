@@ -170,15 +170,28 @@ export function filterItemCards(
 ): ClientSideCardItem[] {
     const lowerSearchText = searchText.toLowerCase();
 
-    return cards.filter(card => {
+    // Apply all filters (except search text) first
+    const filteredCards = cards.filter(card => {
         return (
             matchesHero(card.heroes, selectedHeroes) &&
             matchesTier(card.startingTier, selectedTiers) &&
             matchesTagState(card.tags, card.hiddenTags, tagStates, isMatchAnyTag) &&
-            (selectedSizes.length === 0 || (card.size && selectedSizes.includes(card.size))) &&
-            matchesSearchText(card, lowerSearchText, isSearchNameOnly, isSearchEnchantments)
+            (selectedSizes.length === 0 || (card.size && selectedSizes.includes(card.size)))
         );
     });
+
+    // Separate exact matches from filtered results
+    const exactMatches = filteredCards.filter(card => card.name.toLowerCase() === lowerSearchText);
+
+    // If exact matches exist, prioritize them
+    if (exactMatches.length > 0) {
+        return exactMatches;
+    }
+
+    // Otherwise, fallback to fuzzy search on the remaining filtered cards
+    return filteredCards.filter(card =>
+        matchesSearchText(card, lowerSearchText, isSearchNameOnly, isSearchEnchantments)
+    );
 }
 
 export function filterSkillCards(
@@ -193,14 +206,27 @@ export function filterSkillCards(
 ): ClientSideCardSkill[] {
     const lowerSearchText = searchText.toLowerCase();
 
-    return cards.filter(card => {
+    // Apply all filters (except search text) first
+    const filteredCards = cards.filter(card => {
         return (
             matchesHeroState(card.heroes, heroStates, isMatchAnyHero) &&
             matchesTier(card.startingTier, selectedTiers) &&
-            matchesTagState(card.tags, card.hiddenTags, tagStates, isMatchAnyTag) &&
-            matchesSearchText(card, lowerSearchText, isSearchNameOnly, false)
+            matchesTagState(card.tags, card.hiddenTags, tagStates, isMatchAnyTag)
         );
     });
+
+    // Separate exact matches from filtered results
+    const exactMatches = filteredCards.filter(card => card.name.toLowerCase() === lowerSearchText);
+
+    // If exact matches exist, prioritize them
+    if (exactMatches.length > 0) {
+        return exactMatches;
+    }
+
+    // Otherwise, fallback to fuzzy search on the remaining filtered cards
+    return filteredCards.filter(card =>
+        matchesSearchText(card, lowerSearchText, isSearchNameOnly, false)
+    );
 }
 
 // Users don't want to see "Reference" in their tags because it's unintuitive to them.
