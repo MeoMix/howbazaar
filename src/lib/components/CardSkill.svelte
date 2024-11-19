@@ -26,7 +26,7 @@
     <CardBadges
         primaryBadges={[
             {
-                text: `${card.startingTier}+`,
+                text: `${card.startingTier}${card.startingTier === "Legendary" ? "" : "+"}`,
                 color: card.startingTier.toLowerCase(),
             },
             ...[...card.heroes, card.size].map((text) => ({ text })),
