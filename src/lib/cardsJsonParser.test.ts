@@ -211,6 +211,13 @@ describe('cardJsonParser', () => {
     expect(cooldownTooltip).toContain("6 seconds");
   });
 
+  it('should fix Cybersecurity\'s inconsistent language across tooltips', () => {
+    const cybersecurity = cards.find(card => card.name === "Cybersecurity")!;
+    const damageTooltip = cybersecurity.tiers["Diamond"].tooltips.find(tooltip => tooltip.includes("This deals quadruple damage"));
+
+    expect(damageTooltip).toContain("This deals quadruple damage if it is your only friend.");
+  });
+
   // it('should fix Critical Core\'s tooltip to not contain a typo "1"', () => {
   //   const criticalCore = cards.find(card => card.name === "Critical Core")!;
   //   const chargeTooltip = criticalCore.tiers["Gold"].tooltips.find(tooltip => tooltip.includes("When you use any"));

@@ -536,6 +536,15 @@ function parseItemsAndSkills(cardsJson: CardsJson): ClientSideCard[] {
         let hiddenTags = card.HiddenTags;
         const name = card.Localization.Title.Text;
 
+        // Generally sanitisize each tier of tooltips and ensure there's no duplicates.
+        // This occurs on Dooley's Scarf as well as Gearnola Bar at time of writing.
+        tiers = Object.fromEntries(
+            Object.entries(tiers).map(([tierType, tier]) => {
+                tier.tooltips = [...new Set(tier.tooltips)];
+                return [tierType, tier];
+            })
+        ) as typeof tiers;
+
         // TODO: Remove this in a future patch -- just bad data.
         if (name === "Tripwire" && hiddenTags.includes('Regen')) {
             hiddenTags = hiddenTags.filter(tag => tag !== 'Regen');
@@ -551,14 +560,14 @@ function parseItemsAndSkills(cardsJson: CardsJson): ClientSideCard[] {
             }
         }
 
-        // Generally sanitisize each tier of tooltips and ensure there's no duplicates.
-        // This occurs on Dooley's Scarf as well as Gearnola Bar at time of writing.
-        tiers = Object.fromEntries(
-            Object.entries(tiers).map(([tierType, tier]) => {
-                tier.tooltips = [...new Set(tier.tooltips)];
-                return [tierType, tier];
-            })
-        ) as typeof tiers;
+        if (name === "Cybersecurity") {
+            const searchString = "if its your";
+            const brokenTooltipIndex = tiers.Diamond.tooltips.findIndex(tooltip => tooltip.includes(searchString));
+
+            if (brokenTooltipIndex > -1) {
+                tiers.Diamond.tooltips[brokenTooltipIndex] = tiers.Diamond.tooltips[brokenTooltipIndex].replace(searchString, "if it is your");
+            }
+        }
 
         // Fix bad data related to starting tiers. These are all Legendary.
         let startingTier = card.StartingTier;
