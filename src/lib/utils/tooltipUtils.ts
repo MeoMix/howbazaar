@@ -1,0 +1,276 @@
+import type { ClientSideTierType } from "$lib/types";
+
+export function replaceMultiplier(input: string): string {
+    const multiplierMap: Record<string, string> = {
+        double: "2x",
+        twice: "2x",
+        triple: "3x",
+        quadruple: "4x",
+    };
+
+    // Match "equal to (double|triple|quadruple)" and preserve the rest of the sentence
+    return input.replace(
+        /equal to (double|twice|triple|quadruple)/,
+        (match, multiplier) => `equal to ${multiplierMap[multiplier]}`
+    ).replace(
+        /equal to (?!2x|3x|4x)/, // For cases with "this" or other default words
+        "equal to 1x "
+    );
+}
+
+export function mergeStrings(strings: string[]): string {
+    if (strings.length === 0) return "";
+
+    // Tokenize strings into arrays of words, splitting by whitespace
+    const tokenized = strings.map(str => str.split(/\s+/));
+    const maxTokens = Math.max(...tokenized.map(tokens => tokens.length));
+
+    // Compare tokens column by column
+    const mergedTokens: string[] = [];
+    for (let i = 0; i < maxTokens; i++) {
+        const column = tokenized.map(tokens => tokens[i] || ""); // Get the token at position i or empty string
+
+        // Check if all tokens in the column are identical
+        const uniqueTokens = Array.from(new Set(column));
+        if (uniqueTokens.length === 1) {
+            mergedTokens.push(uniqueTokens[0]); // Use the single identical token
+        } else {
+            const group = column.join("/").replace(/\/+$/, ""); // Join non-matching tokens, handling empty tokens
+            mergedTokens.push(`(${group})`);
+        }
+    }
+
+    // Reconstruct the merged string
+    return cleanup(mergedTokens.join(" ").replace(/\s+/g, " ").trim());
+}
+
+function cleanup(input: string) {
+    return clean1x(mergeAdjacentParentheses(collapseIdenticalParentheses(convertMultipliersToPercentages(replaceAorAnWithOne(normalizePlurality(adjustPunctuationInsideParentheses(input)))))));
+}
+
+// replaceMultipler overreaches sometimes and leaves 1x in situations where the 1x doesn't get combined with 2x/3x
+function clean1x(input: string): string {
+    // Step 1: Remove all instances of "1x" that are NOT surrounded by parentheses
+    const without1x = input.replace(/1x(?![^(]*\))/g, "");
+
+    // Step 2: Collapse multiple consecutive spaces into a single space
+    const cleaned = without1x.replace(/\s+/g, " ").trim();
+
+    return cleaned;
+}
+
+function collapseIdenticalParentheses(input: string): string {
+    // Regular expression to match all substrings within parentheses
+    const regex = /\(([^)]+)\)/g;
+
+    // Replace the matched substrings based on the collapsing logic
+    return input.replace(regex, (match, group: string) => {
+        // Split the content by '/'
+        const parts = group.split('/');
+
+        // Only process if there is at least one '/' (i.e., multiple parts)
+        if (parts.length > 1) {
+            // Check if all parts are identical
+            const allIdentical = parts.every(part => part === parts[0]);
+
+            if (allIdentical) {
+                return parts[0]; // Replace with the single unique part
+            }
+        }
+
+        // If conditions are not met, return the original match unmodified
+        return match;
+    });
+}
+
+function convertMultipliersToPercentages(input: string): string {
+    return input.replace(/\(([^)]+)\)/g, (match, content: string) => {
+        // Split the content inside the parentheses
+        const parts = content.split('/');
+        // Check if there's an existing percentage in the parts
+        const hasPercentage = parts.some((part) => /\+?\d+%/.test(part));
+
+        if (!hasPercentage) {
+            // If no percentage exists, return the match unchanged
+            return match;
+        }
+
+        // Replace 'double', 'triple', 'quadruple' with percentages
+        const updatedParts = parts.map((part) => {
+            switch (part.trim().toLowerCase()) {
+                case 'double':
+                    return '+100%';
+                case 'triple':
+                    return '+200%';
+                case 'quadruple':
+                    return '+300%';
+                default:
+                    return part;
+            }
+        });
+
+        // Join the updated parts back together and return the updated parenthesis
+        return `(${updatedParts.join('/')})`;
+    });
+}
+
+function normalizePlurality(input: string): string {
+    return input.replace(/\(([^)]+)\)/g, (match, group) => {
+        const parts = group.split('/');
+        const uniqueParts = Array.from(new Set(parts));
+
+        // Check if all parts differ solely by plurality (e.g., "item/items/items/items")
+        if (
+            uniqueParts.length === 2 &&
+            uniqueParts[1] === `${uniqueParts[0]}s`
+        ) {
+            return `${uniqueParts[0]}(s)`; // Replace with the plural form (e.g., "items")
+        }
+
+        // Do not alter groups that are simple optional suffixes like "(s)"
+        if (uniqueParts.length === 1) {
+            return match; // Retain "(s)" or similar cases unchanged
+        }
+
+        return match; // Keep original match if no conditions are met
+    });
+}
+
+/**
+ * Function to merge adjacent parenthesis groups of the form `(/word)`
+ * into a single group with words separated by spaces.
+ * 
+ * @param input - The input string to process.
+ * @returns The processed string with merged parenthesis groups.
+ */
+function mergeAdjacentParentheses(input: string): string {
+    // Regular expression to find two or more adjacent `(/word)` groups.
+    const regex = /(\(\/[^)]+\))(?:\s*(\(\/[^)]+\)))+/g;
+
+    // Replace each matched sequence with a single merged group.
+    return input.replace(regex, (match) => {
+        // Extract all `(/word)` parts within the matched sequence.
+        const tokens = match.match(/\(\/[^)]+\)/g);
+        if (tokens) {
+            // Remove the leading `(/` and trailing `)` from each token to get the word.
+            const words = tokens.map(token => token.slice(2, -1));
+            // Join the words with a space.
+            const mergedContent = words.join(' ');
+            // Wrap the merged content back into a single `(/...)` group.
+            return `(/${mergedContent})`;
+        }
+        // If no tokens are found, return the original match unmodified.
+        return match;
+    });
+}
+
+function replaceAorAnWithOne(input: string): string {
+    // Regular expression to match text inside parentheses
+    const regex = /\(([^)]+)\)/g;
+
+    // Replace matches inside parentheses
+    return input.replace(regex, (match) => {
+        return match.replace(/\b(a|an)\b/gi, "1");
+    });
+}
+
+function adjustPunctuationInsideParentheses(input: string): string {
+    return input.replace(/\(([^)]+)\)/g, (_, content) => {
+        // Remove all periods and commas from inside the parentheses
+        const sanitizedContent = content.replace(/[.,]+/g, '').trim();
+        // Append a single period or comma outside if any existed inside
+        const punctuation = content.match(/[.,]/) ? '.' : '';
+        return `(${sanitizedContent})${punctuation}`;
+    });
+}
+
+export function unifyTooltips(tooltipsByTier: string[][]): string[] {
+    const maxTooltips = Math.max(...tooltipsByTier.map(tooltips => tooltips.length));
+    const transposed: string[][] = Array.from({ length: maxTooltips }, (_, i) =>
+        tooltipsByTier.map(tooltips => tooltips[i]).filter(Boolean)
+    );
+
+    return transposed.map(tooltipGroup => {
+        const allIdentical = tooltipGroup.every(tooltip => tooltip === tooltipGroup[0]);
+        if (allIdentical) {
+            return tooltipGroup[0];
+        }
+
+        return mergeStrings(tooltipGroup.map(replaceMultiplier));
+    });
+}
+
+const tierOrder = ["Bronze", "Silver", "Gold", "Diamond", "Legendary"] as const;
+
+/**
+ * Parses a tooltip string and assigns colors to parts within parentheses.
+ *
+ * @param {string} str - The tooltip string to parse.
+ * @param {string} startingTier - The starting tier of the card.
+ * @returns {Array} An array of parts where each part is either a string or an array of colored segments.
+ */
+export function parseTooltipForRendering(str: string, startingTier: ClientSideTierType) {
+    const output = [];
+    const regex = /(\([^)]*\))/g; // Matches content within parentheses
+    let lastIndex = 0;
+    let match;
+
+    while ((match = regex.exec(str)) !== null) {
+      const index = match.index;
+
+      // Add text before the current parenthesis
+      if (index > lastIndex) {
+        output.push(str.substring(lastIndex, index));
+      }
+
+      // Extract content within parentheses without the parentheses
+      const parenthesisContent = match[1].slice(1, -1);
+
+      // Check if the content contains slashes
+      const containsSlashes = parenthesisContent.includes("/");
+
+      if (containsSlashes) {
+        // Split the content by '/'
+        const parts = parenthesisContent.split('/');
+
+        // Determine the starting index based on the startingTier
+        let startTierIndex = tierOrder.indexOf(startingTier);
+        if (startTierIndex === -1) {
+          startTierIndex = 0; // Default to "bronze" if startingTier is invalid
+        }
+
+        let coloredParts: { text: string, tierType: ClientSideTierType | null }[] = [];
+
+        // Assign tiers starting from the startingTier
+        parts.forEach((part, i) => {
+          const tierIndex = startTierIndex + i;
+          if (tierIndex < tierOrder.length) {
+            const tierType = tierOrder[tierIndex];
+            coloredParts.push({ text: part.trim(), tierType });
+          } else {
+            // If tiers exceed the defined order, render without coloring
+            coloredParts.push({ text: part.trim(), tierType: null });
+          }
+        });
+
+        // Add the parenthesis block to the output with bold and colored parts
+        output.push({
+          bold: true,
+          parts: coloredParts,
+          original: match[1], // Original parenthesis including parentheses
+        });
+      } else {
+        // No slashes: Render the entire parenthesis as plain text
+        output.push(match[1]);
+      }
+
+      lastIndex = regex.lastIndex;
+    }
+
+    // Add any remaining text after the last parenthesis
+    if (lastIndex < str.length) {
+      output.push(str.substring(lastIndex));
+    }
+
+    return output;
+}

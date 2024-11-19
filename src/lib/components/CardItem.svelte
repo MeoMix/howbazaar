@@ -5,6 +5,7 @@
     import { Card } from "flowbite-svelte";
     import { filterTags } from "$lib/utils/filterUtils";
     import CardBadges from "./CardBadges.svelte";
+    import UnifiedTooltips from "./UnifiedTooltips.svelte";
 
     const { card }: { card: ClientSideCardItem } = $props();
 
@@ -43,27 +44,12 @@
         secondaryBadges={tags.map((text) => ({ text }))}
     />
 
-    <div class="font-semibold text-xl mt-4 mb-2">Tiers</div>
+    <div class="font-semibold text-xl mt-4 mb-2">Description</div>
 
-    <div
-        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
-    >
-        {#each tiers as [tierType, tier]}
-            <Card size="xl" padding="sm">
-                <div
-                    class={`text-lg font-semibold mb-2 text-tiers-${tierType.toLowerCase()}`}
-                >
-                    {tierType}
-                </div>
-
-                {#each tier.tooltips as tooltip}
-                    <div>
-                        {tooltip}
-                    </div>
-                {/each}
-            </Card>
-        {/each}
-    </div>
+    <UnifiedTooltips
+        unifiedTooltips={card.unifiedTooltips}
+        startingTier={card.startingTier}
+    />
 
     {#if card.enchantments.length > 0}
         <div class="font-semibold text-xl mt-4 mb-2">Enchantments</div>

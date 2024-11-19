@@ -2,6 +2,7 @@ import { describe, it, expect, beforeAll } from 'vitest';
 import { parseJson } from './cardsJsonParser';
 import cardsJson from "$lib/v2_Cards.json" assert { type: "json" };
 import type { CardsJson, ClientSideCardItem, ClientSideCardSkill } from './types';
+import { mergeStrings, replaceMultiplier } from './utils/tooltipUtils';
 
 describe('cardJsonParser', () => {
   let cards: (ClientSideCardItem | ClientSideCardSkill)[];
@@ -9,6 +10,219 @@ describe('cardJsonParser', () => {
   beforeAll(() => {
     cards = parseJson(cardsJson as CardsJson).filter(card => card.type !== "CombatEncounter");
   });
+
+  describe('mergeStrings', () => {
+    it('first', () => {
+      const strings = [
+        "Haste 1 Aquatic item for 2 second(s).",
+        "Haste 2 Aquatic items for 2 second(s).",
+        "Haste 3 Aquatic items for 2 second(s).",
+        "Haste 4 Aquatic items for 2 second(s)."
+      ];
+
+      const mergedString = mergeStrings(strings);
+      expect(mergedString).toEqual("Haste (1/2/3/4) Aquatic items for 2 second(s).");
+    });
+
+    it('second', () => {
+      const strings = [
+        "Slow 1 item for 1 second(s).",
+        "Slow 2 items for 1 second(s).",
+        "Slow 3 items for 1 second(s).",
+        "Slow 4 items for 2 second(s)."
+      ];
+
+      const mergedString = mergeStrings(strings);
+
+      expect(mergedString).toEqual("Slow (1/2/3/4) items for (1/1/1/2) second(s).");
+    });
+
+    it('third', () => {
+      const strings = [
+        "When you use the Core or another Ray, your Weapons gain +3 Damage for the fight.",
+        "When you use the Core or another Ray, your Weapons gain +4 Damage for the fight.",
+        "When you use the Core or another Ray, your Weapons gain +5 Damage for the fight."
+      ];
+
+      const mergedString = mergeStrings(strings);
+
+      expect(mergedString).toEqual("When you use the Core or another Ray, your Weapons gain (+3/+4/+5) Damage for the fight.");
+    });
+
+    it('fourth', () => {
+      const strings = [
+        "The Property to the left of this has double value in combat and has its cooldown reduced by 10%.",
+        "The Property to the left of this has double value in combat and has its cooldown reduced by 20%.",
+        "The Property to the left of this has double value in combat and has its cooldown reduced by 30%."
+      ];
+
+      const mergedString = mergeStrings(strings);
+
+      expect(mergedString).toEqual("The Property to the left of this has double value in combat and has its cooldown reduced by (10%/20%/30%).");
+    });
+
+    it('fifth', () => {
+      const strings = [
+        "Heal equal to this item's value.",
+        "Heal equal to double this item's value.",
+        "Heal equal to triple this item's value.",
+        "Heal equal to quadruple this item's value."
+      ].map(replaceMultiplier);
+
+      const mergedString = mergeStrings(strings);
+
+      expect(mergedString).toEqual("Heal equal to (1x/2x/3x/4x) this item's value.");
+    });
+
+    it('sixth', () => {
+      const strings = [
+        "You have +50% Max Health.",
+        "You have +75% Max Health.",
+        "You have double Max Health."
+      ];
+
+      const mergedString = mergeStrings(strings);
+
+      // TODO: prefer +100% instead of double
+      expect(mergedString).toEqual("You have (+50%/+75%/double) Max Health.");
+    });
+
+    it('seventh', () => {
+      const strings = [
+        "Adjacent items have +3% Crit chance.",
+        "Adjacent items have +6% Crit chance.",
+        "Adjacent items have +9% Crit chance.",
+        "Adjacent items have +12% Crit chance."
+      ];
+
+      const mergedString = mergeStrings(strings);
+
+      // TODO: prefer +100% instead of double
+      expect(mergedString).toEqual("Adjacent items have (+3%/+6%/+9%/+12%) Crit chance.");
+    });
+  });
+
+  // TODO: Need to represent attributes as tooltips for unification too because sometimes Cooldown changes.
+  describe.only('unifiedTooltips', () => {
+    it('should unify Abacus tooltips', () => {
+      const abacus = cards.find(card => card.name === "Abacus")!;
+
+      expect(abacus.unifiedTooltips[1]).toEqual(
+        'Shield equal to (1x/2x) the value of the adjacent items.'
+      );
+    });
+
+    it('should unify Agility Boots', () => {
+      const agilityBoots = cards.find(card => card.name === "Agility Boots")!;
+
+      expect(agilityBoots.unifiedTooltips[0]).toEqual(
+        'Adjacent items have (+3%/+6%/+9%/+12%) Crit chance.'
+      );
+    });
+
+    it('should unify Alpha Ray', () => {
+      const alphaRay = cards.find(card => card.name === "Alpha Ray")!;
+
+      expect(alphaRay.unifiedTooltips[2]).toEqual(
+        'When you use the Core or another Ray, your Weapons gain (+3/+4/+5) Damage for the fight.'
+      );
+    });
+
+    it('should unify Ambergris', () => {
+      const ambergris = cards.find(card => card.name === "Ambergris")!;
+
+      expect(ambergris.unifiedTooltips[2]).toEqual(
+        'When you buy another Aquatic item, this gains (1/2/3/4) Value.'
+      );
+    });
+
+    it('should unify Atlas Stone (no changes)', () => {
+      const atlasStone = cards.find(card => card.name === "Atlas Stone")!;
+
+      expect(atlasStone.unifiedTooltips[2]).toEqual(
+        'Double this item\'s damage for the fight.'
+      );
+    });
+
+    it('should unify Balcony', () => {
+      const balcony = cards.find(card => card.name === "Balcony")!;
+
+      expect(balcony.unifiedTooltips[0]).toEqual(
+        'The Property to the left of this has double value in combat and has its cooldown reduced by (10%/20%/30%).'
+      );
+    });
+
+    it('should unify Beach Ball', () => {
+      const beachBall = cards.find(card => card.name === "Beach Ball")!;
+
+      expect(beachBall.unifiedTooltips[1]).toEqual(
+        'Haste (1/2/3/4) Aquatic item(s) for 2 second(s).'
+      );
+    });
+
+    it('should unify Belt', () => {
+      const belt = cards.find(card => card.name === "Belt")!;
+
+      expect(belt.unifiedTooltips[0]).toEqual(
+        'You have (+50%/+75%/+100%) Max Health.'
+      );
+    });
+
+    it('should unify Clamera', () => {
+      const clamera = cards.find(card => card.name === "Clamera")!;
+
+      expect(clamera.unifiedTooltips[1]).toEqual(
+        'Slow (1/2/3/4) item(s) for (1/1/1/2) second(s).',
+      );
+    });
+
+    it('should unify Closed Sign', () => {
+      const closedSign = cards.find(card => card.name === "Closed Sign")!;
+
+      expect(closedSign.unifiedTooltips[0]).toEqual(
+        'You have Regeneration equal to (1x/2x) adjacent properties\' values. [0]'
+      );
+    });
+
+    it('should unify Chocoholic', () => {
+      const chocoholic = cards.find(card => card.name === "Chocoholic")!;
+
+      expect(chocoholic.unifiedTooltips[0]).toEqual(
+        'When you sell a medium or large item, get (1/2) Chocolate Bar(s).'
+      );
+    });
+
+    it('should unify Scrap Metal', () => {
+      const scrapMetal = cards.find(card => card.name === "Scrap Metal")!;
+
+      expect(scrapMetal.unifiedTooltips[0]).toEqual(
+        'When you sell this, upgrade The Core. (/and reduce its cooldown by 1 second(s).)'
+      );
+    });
+
+    it('should unify Virus Cooldown', () => {
+      const virus = cards.find(card => card.name === "Virus")!;
+
+      expect(virus.unifiedTooltips[0]).toEqual(
+        'Cooldown (12/5/5) seconds'
+      );
+    });
+  });
+
+  // it.only('Check tooltip merger practicality', () => {
+  //   const results = cards.slice(0, 30).map(card => {
+  //     const tooltipsByTier = Object.values(card.tiers).map(tier => tier.tooltips);
+
+  //     const unifiedTooltips = unifyTooltips(tooltipsByTier);
+
+  //     return {
+  //       name: card.name,
+  //       tooltips: unifiedTooltips,
+  //     };
+  //   });
+
+  //   console.log(results);
+  // });
 
   // it.only('checks for cards with an increasing number of tooltips in higher tiers', () => {
   //   const cardsWithExtraTooltips: { cardName: string; tier: string; additionalTooltipsCount: number }[] = [];

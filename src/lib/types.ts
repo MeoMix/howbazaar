@@ -36,6 +36,7 @@ export type ClientSideCardItem = {
     heroes: ClientSideHero[];
     enchantments: ClientSideEnchantment[];
     artKey?: string;
+    unifiedTooltips: string[];
 };
 
 export type ClientSideCardSkill = {
@@ -50,6 +51,7 @@ export type ClientSideCardSkill = {
     heroes: ClientSideHero[];
     enchantments: ClientSideEnchantment[];
     artKey: string;
+    unifiedTooltips: string[];
 };
 
 export type ClientSideCardCombatEncounter = {

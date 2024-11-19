@@ -3,7 +3,8 @@
 // https://github.com/glideapps/quicktype?tab=readme-ov-file#calling-quicktype-from-javascript
 import type { Entries } from "type-fest";
 import type { CardsJson, ClientSideCard, ClientSideTier } from "./types";
-import type { V2CardsD as Card, Bronze as Tier, Tiers, Tier as TierType, AbilityAction, AuraAction, Ability, Aura, Attributes, Operation, TargetMode } from "./v2_Cards";
+import type { V2CardsD as Card, Bronze as Tier, Tiers, Tier as TierType, AbilityAction, AuraAction, Ability, Aura, Operation, TargetMode } from "./v2_Cards";
+import { unifyTooltips } from "./utils/tooltipUtils";
 
 // JSON contains testing data which isn't shown in game during normal operations
 // I didn't see a good flag for hiding these so I'm explicitly banning them.
@@ -609,6 +610,13 @@ function parseItemsAndSkills(cardsJson: CardsJson): ClientSideCard[] {
             )) as Record<TierType, ClientSideTier>;
         }
 
+        // Items which aren't Legendary shouldn't show unified tooltips which include Legendary since
+        // that is nonsense and would only confuse the user even if it's "technically true"
+        const tooltipsByTier = Object.entries(tiers)
+            .filter(([tierType]) => startingTier === "Legendary" || tierType !== "Legendary")
+            .map(([, tier]) => tier.tooltips);
+        const unifiedTooltips = unifyTooltips(tooltipsByTier);
+
         return {
             id: card.Id,
             name,
@@ -621,6 +629,7 @@ function parseItemsAndSkills(cardsJson: CardsJson): ClientSideCard[] {
             heroes: card.Heroes,
             enchantments,
             artKey: card.ArtKey,
+            unifiedTooltips
         };
     });
 
