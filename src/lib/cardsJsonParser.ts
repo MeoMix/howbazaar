@@ -578,6 +578,15 @@ function parseItemsAndSkills(cardsJson: CardsJson): ClientSideCard[] {
             }
         }
 
+        if (name === "Multitool") {
+            const searchString = "Slow an item";
+            const brokenTooltipIndex = tiers.Bronze.tooltips.findIndex(tooltip => tooltip.includes(searchString));
+
+            if (brokenTooltipIndex > -1) {
+                tiers.Bronze.tooltips[brokenTooltipIndex] = tiers.Bronze.tooltips[brokenTooltipIndex].replace(searchString, "Slow 1 item");
+            }
+        }
+
         // Fix bad data related to starting tiers. These are all Legendary.
         let startingTier = card.StartingTier;
         const invalidLegendaries = ["Eye of the Colossus", "Infernal Greatsword", "Octopus", "Necronomicon", "Scythe", "Singularity", "Soul of the District", "Teddy", "The Eclipse", "Flamberge"];

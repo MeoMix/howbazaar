@@ -225,6 +225,13 @@ describe('cardJsonParser', () => {
     expect(burnTooltip).toContain("Burn equal to double this item's damage.");
   });
 
+  it('should fix Multitool\'s extraneous "an" in tooltip', () => {
+    const multitool = cards.find(card => card.name === "Multitool")!;
+    const slowTooltip = multitool.tiers["Bronze"].tooltips.find(tooltip => tooltip.includes("Slow"));
+
+    expect(slowTooltip).toContain("Slow 1 item for 1 second(s).");
+  });
+
   // it('should fix Critical Core\'s tooltip to not contain a typo "1"', () => {
   //   const criticalCore = cards.find(card => card.name === "Critical Core")!;
   //   const chargeTooltip = criticalCore.tiers["Gold"].tooltips.find(tooltip => tooltip.includes("When you use any"));
