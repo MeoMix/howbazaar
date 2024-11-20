@@ -45,7 +45,7 @@ export default {
     './node_modules/flowbite-svelte/dist/footer/FooterLinkGroup.svelte',
     './node_modules/flowbite-svelte/dist/forms/Label.svelte',
     './node_modules/flowbite-svelte/dist/forms/Input.svelte',
-    './node_modules/flowbite-svelte/dist/forms/Label.svelte',
+    './node_modules/flowbite-svelte/dist/forms/Toggle.svelte',
     './node_modules/flowbite-svelte/dist/forms/InputAddon.svelte',
     './node_modules/flowbite-svelte/dist/toast/Toast.svelte',
     './node_modules/flowbite-svelte/dist/navbar/*.svelte',
