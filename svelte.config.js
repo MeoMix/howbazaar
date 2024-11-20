@@ -10,16 +10,7 @@ const config = {
 
 	kit: {
 		// https://svelte.dev/docs/kit/adapter-vercel
-		adapter: adapter({
-			images: {
-				sizes: [256],
-				formats: ['image/avif'],
-				// Serving all images locally - hash will change when image content changes and invalidate the cache
-				// So, prefer a really long cache expiration (1yr) to save on bandwidth.
-				minimumCacheTTL: 31536000,
-				domains: []
-			}
-		})
+		adapter: adapter()
 	},
 
 	plugins: [
