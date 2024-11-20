@@ -1,5 +1,6 @@
 <script lang="ts">
     import type { MonsterEncounter } from "$lib/types";
+    import { optimize } from "$lib/utils/imageUtil";
     import { removeSpecialCharacters } from "$lib/utils/stringUtils";
 
     const {
@@ -32,7 +33,7 @@
         style="clip-path: inset(0 0 10px 0 round 0 0 5% 5%);"
     >
         <img
-            src={`/images/monsters/${sanitizedCardName}.avif`}
+            srcset={optimize(`/images/monsters/${sanitizedCardName}.avif`)}
             alt={`${monsterEncounter.cardName}`}
             class={`absolute top-0 left-0 h-full w-full transition-all scale-110 group-hover:scale-[115%] ${
                 isActive ? "grayscale-[0%]" : "grayscale-[100%]"
