@@ -18,7 +18,7 @@ export async function convertImagesToAvif(inputFolder: string, outputFolder: str
                 const outputPath = path.join(outputFolder, file.replace(/\.(jpg|jpeg|png)$/i, '.avif'));
 
                 try {
-                    return sharp(inputPath).avif({ quality: 80 }).toFile(outputPath).then(() => {
+                    return sharp(inputPath).avif({ quality: 40 }).toFile(outputPath).then(() => {
                         console.log('Converted', file, 'to', outputPath);
                     });
                 } catch (err) {
