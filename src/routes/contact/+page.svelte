@@ -2,14 +2,13 @@
     <title>Contact & Upcoming Features · How Bazaar</title>
 </svelte:head>
 
-<div class="bold text-4xl mb-8">Hi!</div>
+<div class="bold text-4xl mb-8 mt-8">Hi!</div>
 
 <div class="text-lg mb-8">
     <div class="my-2">
         Thanks for visiting my humble little website :) I hope you're finding it
         useful so far.
     </div>
-
     <div class="my-2">
         I'm very interested in making this the best spot to get all your The
         Bazaar information.
@@ -19,7 +18,7 @@
         requests, or bug reports!
     </div>
     <div class="my-2">
-        I can be reached on Discord, @MeoMix on The Bazaar's server or User ID:
+        I can be reached on Discord, <span class="font-bold">@MeoMix</span> on The Bazaar's server or User ID:
         303241372989915136, or on Reddit <a
             class="bold"
             href="https://www.reddit.com/user/MeoMix/"
@@ -27,89 +26,99 @@
         >
     </div>
     <div class="my-2">
-        I'm terminally online, so you should have no trouble reaching
-        me, but I do sleep from 10pm to 6am PST. Feel free to leave me a message
-        if I'm not responding.
+        I'm terminally online, so you should have no trouble reaching me, but I
+        do sleep from 10pm to 6am PST. Feel free to leave me a message if I'm
+        not responding.
+    </div>
+    <div class="my-2">
+        Oh, and P.S. I have spent <span class="font-bold text-red-500">~200+ hours</span> building this site, working 10
+        hours/day since launch. <span class="font-bold text-green-500">Please be kind</span> when expressing constructive
+        criticism about the website. Thank you.
     </div>
 </div>
 
 <div class="text-lg mb-8">
-    <div>Upcoming Features as of November 8th, 2024:</div>
+    <div class="mb-4 font-bold">
+        Upcoming Features as of November 19th, 2024:
+    </div>
 
-    <div>
-        Tomorrow:
+    <div class="mb-8">
+        <span class="font-semibold">Soon (tomorrow?)</span>
+
         <ul class="ml-8">
             <li>
-                <span class="line-through">
-                    Add support for enchantment effects on monster items.
-                </span>
+                Optimize website bandwidth to survive increasing user load
+                without incurring large server costs. Thank you so much for all
+                the interest and support!
             </li>
             <li>
-                <span class="line-through"> Add "Clear Filters" button </span>
-                Done!
+                Polish some lingering issues with the design around legibility,
+                colors, lightmode.
             </li>
             <li>
-                <span class="line-through">
-                    Try to figure out a good UI for supporting exclusive
-                    filters. For example, "Show me all skills that only Vanessa
-                    can get"
-                </span>
-                Done! (Poorly but good enough for a few weeks)
+                Add support for images to Items and Skills pages! This has been
+                a long-standing request.
             </li>
             <li>
-                Try to add support for filtering items by those which can be
-                acquired via Monster Encounters.
-            </li>
-            <li>
-                Refactor some server-side code to make long-term support of item
-                enchantments easier.
-            </li>
-            <li>
-                <span class="line-through">
-                    Make website lag less by implementing lazy loading for
-                    search results.
-                </span>
-                Done!
-            </li>
-            <li>
-                <span class="line-through">
-                    Try to decide if "Hidden Tags" and "Tags" should be merged
-                    into one, large "Tags" section.
-                </span>
-                Done!
+                Assuming a Wednesday patch comes out, update website to reflect
+                new patch changes.
             </li>
         </ul>
     </div>
 
-    <div>Later, but soon:</div>
+    <div class="mb-8">
+        <span class="font-semibold">A little later (this week/weekend?)</span>
 
-    <ul class="ml-8">
-        <li>Add support for item and skill images</li>
-        <li>
-            Add support for knowing the probability of getting an item from a
-            merchant on a given day.
-        </li>
-        <li>
-            Add supporting information for merchants and non-combat encounters
-        </li>
-        <li>
-            Add support for patch change logs. Be able to show users exactly
-            what items changed and how when patches go live.
-        </li>
-    </ul>
+        <ul class="ml-8">
+            <li>
+                Rewrite some server code related to parsing enchantment data. A
+                couple of enchantments are hardcoded currently due to
+                limitations in my scripts. I do not want to be in a position
+                where I have to manually manage new card/enchantment additions
+                to the game.
+            </li>
+            <li>
+                Add the ability to use Item/Skill search to find Items/Skills
+                which are dropped by specific Monster Encounters.
+            </li>
+            <li>
+                Add monsters to the Monsters page which are only able to be
+                encountered via events rather than Hour 3 encounters.
+            </li>
+        </ul>
+    </div>
 
-    <div>Much later, not soon:</div>
-    <ul class="ml-8">
-        <li>
-            Theorycrafting build support. Be able to discover which item builds
-            are doing the best.
-        </li>
-        <li>
-            In-game extension, but need The Bazaar to produce gameplay logs
-            first, cannot begin work on this.
-        </li>
-        <li>????</li>
-    </ul>
+    <div class="mb-8">
+        <span class="font-semibold"> After that... (early next week)</span>
+
+        <ul class="ml-8">
+            <li>
+                Begin creating a new page to display Vendor information. Allow
+                users to see what items/skills they could get from a vendor with
+                bronze/silver/gold/diamond tier probabilities influenced by
+                filtering on current day.
+            </li>
+        </ul>
+    </div>
+
+    <div class="mb-8">
+        <span class="font-semibold">Much later</span>
+        <ul class="ml-8">
+            <li>
+                Allow users to prototype builds online. Users will be able to
+                share a link to their build to discuss it with others. This will
+                be rudimentary. It won't show DPS or anything like that. It'll
+                just be a way to select up to 10 items, some enchantments, some
+                skills, and then share those selections with others.
+            </li>
+            <li>
+                Create an in-game extension to allow users to gain insights from
+                the data exposed by the website. Allow users to submit their
+                in-game data to the website to allow the website to show popular
+                items/builds.
+            </li>
+        </ul>
+    </div>
 </div>
 
 <div class="text-lg">
