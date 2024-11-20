@@ -33,7 +33,23 @@ const safelist = [
 ];
 
 export default {
-  content: ['./src/**/*.{html,js,svelte,ts}', './node_modules/flowbite-svelte/**/*.{html,js,svelte,ts}'],
+  content: [
+    './src/**/*.{html,js,svelte,ts}',
+    './node_modules/flowbite-svelte/dist/badge/Badge.svelte',
+    './node_modules/flowbite-svelte/dist/button-group/ButtonGroup.svelte',
+    './node_modules/flowbite-svelte/dist/buttons/Button.svelte',
+    './node_modules/flowbite-svelte/dist/cards/Card.svelte',
+    './node_modules/flowbite-svelte/dist/darkmode/DarkMode.svelte',
+    './node_modules/flowbite-svelte/dist/footer/Footer.svelte',
+    './node_modules/flowbite-svelte/dist/footer/FooterLink.svelte',
+    './node_modules/flowbite-svelte/dist/footer/FooterLinkGroup.svelte',
+    './node_modules/flowbite-svelte/dist/forms/Label.svelte',
+    './node_modules/flowbite-svelte/dist/forms/Input.svelte',
+    './node_modules/flowbite-svelte/dist/forms/Label.svelte',
+    './node_modules/flowbite-svelte/dist/forms/InputAddon.svelte',
+    './node_modules/flowbite-svelte/dist/toast/Toast.svelte',
+    './node_modules/flowbite-svelte/dist/navbar/*.svelte',
+  ],
   darkMode: 'selector',
   theme: {
     extend: {
