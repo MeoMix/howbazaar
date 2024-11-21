@@ -1,12 +1,15 @@
-import parsedCards from "$lib/processedCards.json" assert { type: "json" };
-import type { ClientSideCard, ClientSideCardSkill } from "$lib/types";
+import { getVersionedSkills } from "$lib/utils/dataUtils";
+import { getCardFilterOptions } from "$lib/utils/filterUtils";
 
-let skills: ClientSideCardSkill[];
+export async function load() {
+    // Don't send skills as part of `load` to save on bandwidth. Just send the version so client can conditionally hit API.
+    const { skills, version } = getVersionedSkills();
+    const { heroOptions, tagOptions, minimumTierOptions } = getCardFilterOptions(skills)
 
-export function load() {
-    if (!skills) {
-        skills = (parsedCards as ClientSideCard[]).filter((card): card is ClientSideCardSkill => card.type === "Skill");
-    }
-
-    return { skills };
+    return {
+        heroOptions,
+        tagOptions,
+        minimumTierOptions,
+        version,
+    };
 }

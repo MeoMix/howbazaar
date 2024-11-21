@@ -10,28 +10,57 @@
     } from "$lib/types";
     import CardItem from "$lib/components/CardItem.svelte";
     import CardItemFilters from "$lib/components/CardItemFilters.svelte";
-    import {
-        filterItemCards,
-        getCardFilterOptions,
-    } from "$lib/utils/filterUtils";
+    import { filterItemCards } from "$lib/utils/filterUtils";
     import LazyLoadList from "$lib/components/LazyLoadList.svelte";
+    import type { PageData } from "./$types";
+    import { onMount } from "svelte";
+    import { itemsStore } from "$lib/stores/itemsStore";
+    import { fetchJson } from "$lib/utils/fetchUtils";
 
-    const { data }: { data: { items: ClientSideCardItem[] } } = $props();
-    const cardItems = data.items.sort((a, b) => a.name.localeCompare(b.name));
+    const { data }: { data: PageData } = $props();
 
-    const { heroOptions, minimumTierOptions, tagOptions, sizeOptions } =
-        getCardFilterOptions(cardItems);
+    let isLoading = $state(false);
+    let hasError = $state(false);
+    let cardItems = $state([] as ClientSideCardItem[]);
+    let version = $state(null as string | null);
+
+    onMount(async () => {
+        itemsStore.subscribe((store) => {
+            // If the server informs us that what's written to the store is stale - don't use it.
+            if (data.version === store.version) {
+                cardItems = store.items;
+                version = store.version;
+            }
+        })();
+
+        if (cardItems.length === 0 || !version) {
+            try {
+                isLoading = true;
+                const response = await fetchJson<ClientSideCardItem[]>(
+                    "/api/items",
+                    data.version,
+                );
+                itemsStore.set({
+                    items: response.data,
+                    version: response.version,
+                });
+                cardItems = response.data;
+                version = response.version;
+            } catch (error) {
+                console.error(error);
+                hasError = true;
+            } finally {
+                isLoading = false;
+            }
+        }
+    });
 
     let selectedHeroes = $state([] as ClientSideHero[]);
     let selectedTiers = $state([] as ClientSideTierType[]);
 
-    // Generate tagStates with default "unset" value
     let tagStates = $state(
         Object.fromEntries(
-            tagOptions.map((tagOption) => [
-                tagOption.value,
-                "unset" as TriState,
-            ]),
+            data.tagOptions.map(({ value }) => [value, "unset"]),
         ) as Record<ClientSideTag | ClientSideHiddenTag, TriState>,
     );
 
@@ -61,10 +90,10 @@
 </svelte:head>
 
 <CardItemFilters
-    {heroOptions}
-    {minimumTierOptions}
-    {tagOptions}
-    {sizeOptions}
+    heroOptions={data.heroOptions}
+    minimumTierOptions={data.minimumTierOptions}
+    tagOptions={data.tagOptions}
+    sizeOptions={data.sizeOptions}
     bind:selectedHeroes
     bind:selectedTiers
     bind:tagStates

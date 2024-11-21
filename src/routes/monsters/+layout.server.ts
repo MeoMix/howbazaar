@@ -1,21 +1,12 @@
-import parsedCards from "$lib/processedCards.json" assert { type: "json" };
-import parsedMonsters from "$lib/processedMonsters.json" assert { type: "json" };
-import parsedDayHours from "$lib/processedDayHours.json" assert { type: "json" };
-
-import type { ClientSideCard, Monster, MonsterEncounterDay } from "$lib/types";
-import { getMonsterEncounterDays } from "$lib/services/monsterEncounterService";
-
-let cards: ClientSideCard[];
-let monsterEncounterDays: MonsterEncounterDay[];
+import { getVersionedMonsterEncounterDays } from "$lib/utils/dataUtils";
 
 export function load() {
-    if (!monsterEncounterDays) {
-        if (!cards) {
-            cards = parsedCards as ClientSideCard[];
-        }
+    const { monsterEncounterDays, version } = getVersionedMonsterEncounterDays();
 
-        monsterEncounterDays = getMonsterEncounterDays(cards, parsedMonsters as Monster[], parsedDayHours);
-    }
+    const dayOptions = monsterEncounterDays.map(({ day }) => ({
+        name: `${day}${day === 10 ? "+" : ""}`,
+        value: day,
+    }));
 
-    return { monsterEncounterDays };
+    return { version, dayOptions };
 }

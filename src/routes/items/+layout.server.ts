@@ -1,12 +1,16 @@
-import parsedCards from "$lib/processedCards.json" assert { type: "json" };
-import type { ClientSideCard, ClientSideCardItem } from "$lib/types";
-
-let items: ClientSideCardItem[];
+import { getVersionedItems } from "$lib/utils/dataUtils";
+import { getCardFilterOptions } from "$lib/utils/filterUtils";
 
 export function load() {
-    if (!items) {
-        items = (parsedCards as ClientSideCard[]).filter((card): card is ClientSideCardItem => card.type === "Item");
-    }
+    const { items, version } = getVersionedItems();
 
-    return { items };
+    const { heroOptions, tagOptions, minimumTierOptions, sizeOptions } = getCardFilterOptions(items)
+
+    return {
+        heroOptions,
+        tagOptions,
+        minimumTierOptions,
+        sizeOptions,
+        version,
+    };
 }

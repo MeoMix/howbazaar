@@ -1,11 +1,14 @@
 import type { ClientSideCardItem, ClientSideCardSkill, ClientSideHero, ClientSideHiddenTag, ClientSideSize, ClientSideTag, ClientSideTierType, TriState } from "$lib/types";
 import type { Entries } from "type-fest";
 
+const heroes = ["Vanessa", "Pygmalien", "Dooley", "Jules", "Stelle", "Mak", "Common"] as const;
+const tierTypes = ["Bronze", "Silver", "Gold", "Diamond", "Legendary"] as const;
+const sizes = ["Small", "Medium", "Large"];
+
 export function getCardFilterOptions(cards: (ClientSideCardItem | ClientSideCardSkill)[]) {
-    // TODO: Technically these option types could be tighter than string
-    const heroOptions = ["Vanessa", "Pygmalien", "Dooley", "Jules", "Stelle", "Mak", "Common"].map(hero => ({ name: hero, value: hero }));
-    const minimumTierOptions = ["Bronze", "Silver", "Gold", "Diamond", "Legendary"].map(minimumTier => ({ name: minimumTier, value: minimumTier }));
-    const sizeOptions = ["Small", "Medium", "Large"].map(size => ({ name: size, value: size }));
+    const heroOptions = heroes.map(hero => ({ name: hero, value: hero }));
+    const minimumTierOptions = tierTypes.map(minimumTier => ({ name: minimumTier, value: minimumTier }));
+    const sizeOptions = sizes.map(size => ({ name: size, value: size }));
     const tagOptions = Array.from(
         new Set(cards.flatMap((card) => filterTags(card.tags, card.hiddenTags)))
     ).sort().map(tag => ({ name: tag, value: tag }));
@@ -233,7 +236,8 @@ export function filterSkillCards(
 // The underlying game implementation needs to keep the two types of tags distinct, though.
 // Sometimes there's duplicates (i.e. Slow vs SlowReference) and other times there aren't (i.e. EconomyReference)
 // So, drop Reference, but then ensure the list is distinct.
-export function filterTags(tags: string[], hiddenTags: string[]) {
+export function filterTags(tags: ClientSideTag[], hiddenTags: ClientSideHiddenTag[]) {
+    // TODO: tighten types here?
     return Array.from(
         new Set([...tags, ...hiddenTags].map(tag => tag.replace('Reference', '')))
     ).sort();

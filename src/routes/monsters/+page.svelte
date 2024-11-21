@@ -6,15 +6,48 @@
         MonsterEncounter as MonsterEncounterType,
     } from "$lib/types";
     import SingleSelectFilter from "$lib/components/SingleSelectFilter.svelte";
+    import type { PageData } from "./$types";
+    import { onMount } from "svelte";
+    import { monsterEncounterDaysStore } from "$lib/stores/monsterEncounterDaysStore";
+    import { fetchJson } from "$lib/utils/fetchUtils";
 
-    const { data }: { data: { monsterEncounterDays: MonsterEncounterDay[] } } =
-        $props();
+    const { data }: { data: PageData } = $props();
 
-    const monsterEncounterDays = $derived(
-        data.monsterEncounterDays.sort(
-            (dayHourA, dayHourB) => dayHourA.day - dayHourB.day,
-        ),
-    );
+    let isLoading = $state(false);
+    let hasError = $state(false);
+    let monsterEncounterDays = $state([] as MonsterEncounterDay[]);
+    let version = $state(null as string | null);
+
+    onMount(async () => {
+        monsterEncounterDaysStore.subscribe((store) => {
+            // If the server informs us that what's written to the store is stale - don't use it.
+            if (data.version === store.version) {
+                monsterEncounterDays = store.monsterEncounterDays;
+                version = store.version;
+            }
+        })();
+
+        if (monsterEncounterDays.length === 0 || !version) {
+            try {
+                isLoading = true;
+                const response = await fetchJson<MonsterEncounterDay[]>(
+                    "/api/monsterEncounterDays",
+                    data.version,
+                );
+                monsterEncounterDaysStore.set({
+                    monsterEncounterDays: response.data,
+                    version: response.version,
+                });
+                monsterEncounterDays = response.data;
+                version = response.version;
+            } catch (error) {
+                console.error(error);
+                hasError = true;
+            } finally {
+                isLoading = false;
+            }
+        }
+    });
 
     let selectedDay = $state(undefined) as number | undefined;
     const filteredMonsterEncounterDays = $derived(
@@ -32,13 +65,6 @@
         }
     }
 
-    const dayOptions = $derived(
-        monsterEncounterDays.map(({ day }) => ({
-            name: `${day}${day === 10 ? "+" : ""}`,
-            value: day,
-        })),
-    );
-
     function onSelectDay() {
         selectedMonsterEncounter = undefined;
     }
@@ -51,7 +77,7 @@
 <div class="my-4">
     <SingleSelectFilter
         label="Day"
-        options={dayOptions}
+        options={data.dayOptions}
         onSelect={onSelectDay}
         bind:selectedOptionValue={selectedDay}
     />
