@@ -41,7 +41,7 @@
 
 <div class="text-lg mb-8">
     <div class="mb-4 font-bold">
-        Upcoming Features as of November 19th, 2024:
+        Upcoming Features as of November 21th, 2024:
     </div>
 
     <div class="mb-8">
