@@ -17,10 +17,11 @@ export const GET: RequestHandler = ({ url, request }) => {
         return new Response(null, { status: 304 });
     }
 
-    return json(monsterEncounterDays,
+    return json({ data: monsterEncounterDays, version: serverVersion },
         {
             headers: {
                 "Cache-Control": `public, max-age=${clientETag ? "3600" : "31536000"}`, // Cache briefly if relying on etag otherwise for a long time
+                // TODO: This gets stripped off when serving through Vercel
                 "ETag": serverVersion,
             },
         }

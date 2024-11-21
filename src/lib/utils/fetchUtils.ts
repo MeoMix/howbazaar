@@ -24,11 +24,9 @@ export async function fetchJson<T>(
 
     // Parse and return data with new version
     const data = await response.json();
-    const newEtag = response.headers.get("ETag");
-
-    if (newEtag === null) {
-        throw new Error(`Data returned without version header`);
+    if (!data.version) {
+        throw new Error(`Data returned without version`);
     }
 
-    return { data, version: newEtag };
+    return data;
 }
