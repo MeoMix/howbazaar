@@ -18,10 +18,9 @@
         requests, or bug reports!
     </div>
     <div class="my-2">
-        I can be reached on Discord, <span class="font-bold">@MeoMix</span> on The Bazaar's server or User ID:
-        303241372989915136, or on Reddit <a
-            class="bold"
-            href="https://www.reddit.com/user/MeoMix/"
+        I can be reached on Discord, <span class="font-bold">@MeoMix</span> on
+        The Bazaar's server or User ID: 303241372989915136, or on Reddit
+        <a class="bold" href="https://www.reddit.com/user/MeoMix/"
             >https://www.reddit.com/user/MeoMix/</a
         >
     </div>
@@ -31,9 +30,12 @@
         not responding.
     </div>
     <div class="my-2">
-        Oh, and P.S. I have spent <span class="font-bold text-red-500">~200+ hours</span> building this site, working 10
-        hours/day since launch. <span class="font-bold text-green-500">Please be kind</span> when expressing constructive
-        criticism about the website. Thank you.
+        Oh, and P.S. I have spent <span class="font-bold text-red-500"
+            >~200+ hours</span
+        >
+        building this site, working 10 hours/day since launch.
+        <span class="font-bold text-green-500">Please be kind</span> when expressing
+        constructive criticism about the website. Thank you.
     </div>
 </div>
 
@@ -47,9 +49,12 @@
 
         <ul class="ml-8">
             <li>
-                Optimize website bandwidth to survive increasing user load
-                without incurring large server costs. Thank you so much for all
-                the interest and support!
+                <span class="line-through">
+                    Optimize website bandwidth to survive increasing user load
+                    without incurring large server costs. Thank you so much for
+                    all the interest and support!
+                </span>
+                <span class="font-bold text-green-500">Done!</span>
             </li>
             <li>
                 Polish some lingering issues with the design around legibility,
