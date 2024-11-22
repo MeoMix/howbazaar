@@ -57,8 +57,11 @@
                 <span class="font-bold text-green-500">Done!</span>
             </li>
             <li>
-                Polish some lingering issues with the design around legibility,
-                colors, lightmode.
+                <span>
+                    Polish some lingering issues with the design around legibility,
+                    colors, lightmode.
+                </span>
+                <span class="font-bold text-orange-500">(This is taking longer than expected. I made a first pass at some issues, but need at least another day)</span>
             </li>
             <li>
                 Add support for images to Items and Skills pages! This has been

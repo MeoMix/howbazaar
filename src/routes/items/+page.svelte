@@ -104,8 +104,12 @@
     bind:isSearchEnchantments
 />
 
-{#snippet listItem(card: ClientSideCardItem)}
-    <CardItem {card} />
-{/snippet}
+{#if isLoading}
+    <div>Loading items...</div>
+{:else}
+    {#snippet listItem(card: ClientSideCardItem)}
+        <CardItem {card} />
+    {/snippet}
 
-<LazyLoadList items={filteredCards} {listItem} listItemName="item" />
+    <LazyLoadList items={filteredCards} {listItem} listItemName="item" />
+{/if}

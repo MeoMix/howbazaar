@@ -1,19 +1,20 @@
 /** @type {import('tailwindcss').Config} */
 import flowbitePlugin from 'flowbite/plugin';
 
+// Regular Color; F6D9AB
 const enchantments = {
-  heavy: '#4B4B4B',       // Dark gray for Heavy
-  icy: '#A0EFFF',         // Light icy blue for Icy
-  turbo: '#FF5733',       // Vibrant orange-red for Turbo
-  shielded: '#3A9AD9',    // Strong blue for Shielded
-  restorative: '#7FBF7F', // Calming green for Restorative
-  toxic: '#98FB98',       // Poisonous green for Toxic
-  fiery: '#FF4500',       // Intense orange-red for Fiery
-  shiny: '#FFD700',       // Gold for Shiny
-  deadly: '#8B0000',      // Dark red for Deadly
-  radiant: '#FFE48A',     // Soft yellow with a glow for Radiant
-  obsidian: '#4A4A4A',    // Near-black for Obsidian
-  golden: '#FFD700',      // Vibrant gold for Golden
+  heavy: '#CCA06E',       // Bazaar's Slow
+  icy: '#3EC8F8',         // Bazaar's Freeze
+  turbo: '#00EAC2',       // Bazaar's Haste
+  shielded: '#F4D021',    // Bazaar's Shield
+  restorative: '#8FEA31', // Bazaar's Heal
+  toxic: '#0EBE4E',       // Bazaar's Poison
+  fiery: '#FA943E',       // Bazaar's Burn Orange
+  shiny: '#F6D9AB',       // Bazaar's Regular
+  deadly: '#F5523C',      // Bazaar's Crit
+  radiant: '#F6D9AB',     // Bazaar's Regular
+  obsidian: '#F6D9AB',    // Bazaar's Regular
+  golden: '#F4D021',      // Bazaar's Value
 };
 
 const tiers = {
@@ -68,6 +69,11 @@ export default {
         },
         enchantments,
         tiers,
+        bazaar: {
+          background: '#150c0b',
+          orange: '#ff9c1c',
+          tan: '#f0cead'
+        }
       },
     },
   },

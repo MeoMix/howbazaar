@@ -12,39 +12,39 @@
     } = $props();
 </script>
 
-<div
-    class="grid grid-cols-1"
->
-    <Card size="xl" padding="sm">
-        {#each unifiedTooltips as tooltip}
-            <div>
-                {#each parseTooltipForRendering(tooltip, startingTier) as part}
-                    {#if typeof part === "string"}
-                        {part}
-                    {:else}
-                        <span class={part.bold ? "font-semibold whitespace-nowrap" : ""}>
-                            {"( "}
+<ul class="list-inside leading-loose">
+    {#each unifiedTooltips as tooltip}
+        <li>
+            {#each parseTooltipForRendering(tooltip, startingTier) as part}
+                {#if typeof part === "string"}
+                    {part}
+                {:else}
+                    <span
+                        class={part.bold
+                            ? "font-semibold whitespace-nowrap"
+                            : ""}
+                    >
+                        {"( "}
 
-                            {#each part.parts as subpart, index}
-                                {#if subpart.tierType}
-                                    <span
-                                        class={`text-tiers-${subpart.tierType.toLowerCase()}`}
-                                    >
-                                        {subpart.text}
-                                    </span>
-                                {:else}
+                        {#each part.parts as subpart, index}
+                            {#if subpart.tierType}
+                                <span
+                                    class={`text-tiers-${subpart.tierType.toLowerCase()}`}
+                                >
                                     {subpart.text}
-                                {/if}
+                                </span>
+                            {:else}
+                                {subpart.text}
+                            {/if}
 
-                                {#if index < part.parts.length - 1}
-                                    {" / "}
-                                {/if}
-                            {/each}
-                            {" )"}
-                        </span>
-                    {/if}
-                {/each}
-            </div>
-        {/each}
-    </Card>
-</div>
+                            {#if index < part.parts.length - 1}
+                                {" / "}
+                            {/if}
+                        {/each}
+                        {" )"}
+                    </span>
+                {/if}
+            {/each}
+        </li>
+    {/each}
+</ul>

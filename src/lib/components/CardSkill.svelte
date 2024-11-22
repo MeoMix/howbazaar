@@ -13,32 +13,41 @@
     const tags = $derived(filterTags(card.tags, card.hiddenTags));
 </script>
 
-<div class="p-4 border border-gray-200 rounded-lg shadow-sm" {id}>
-    <div class="font-bold text-2xl mb-2">
-        {card.name}
-        <button
-            onclick={() => copyCardLink(id)}
-            title="Copy link to this skill"
-        >
-            🔗
-        </button>
+<Card
+    padding="none"
+    size="xl"
+    class={`relative border-2 text-black dark:text-white`}
+    {id}
+>
+    <div class="flex flex-col gap-2 p-4 relative">
+        <div class="font-bold text-2xl">
+            {card.name}
+            <button
+                onclick={() => copyCardLink(id)}
+                title="Copy link to this skill"
+            >
+                🔗
+            </button>
+        </div>
+
+        <CardBadges
+            primaryBadges={[
+                {
+                    text: `${card.startingTier}${card.startingTier === "Legendary" ? "" : "+"}`,
+                    color: card.startingTier.toLowerCase(),
+                },
+                ...[...card.heroes, card.size].map((text) => ({ text })),
+            ]}
+            secondaryBadges={tags.map((text) => ({ text }))}
+        />
+
+        <div
+            class="h-[1px] my-4 bg-gradient-to-r from-transparent via-gray-200 dark:via-gray-700 to-transparent"
+        ></div>
+
+        <UnifiedTooltips
+            unifiedTooltips={card.unifiedTooltips}
+            startingTier={card.startingTier}
+        />
     </div>
-
-    <CardBadges
-        primaryBadges={[
-            {
-                text: `${card.startingTier}${card.startingTier === "Legendary" ? "" : "+"}`,
-                color: card.startingTier.toLowerCase(),
-            },
-            ...[...card.heroes, card.size].map((text) => ({ text })),
-        ]}
-        secondaryBadges={tags.map((text) => ({ text }))}
-    />
-
-    <div class="font-semibold text-xl mt-4 mb-2">Description</div>
-
-    <UnifiedTooltips
-        unifiedTooltips={card.unifiedTooltips}
-        startingTier={card.startingTier}
-    />
-</div>
+</Card>

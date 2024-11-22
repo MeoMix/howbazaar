@@ -7,7 +7,7 @@
     import { filterTags } from "$lib/utils/filterUtils";
     import { Card } from "flowbite-svelte";
     import CardBadges from "./CardBadges.svelte";
-    import { removeSpecialCharacters } from "$lib/utils/stringUtils";
+    import CardImage from "./CardImage.svelte";
 
     const {
         card,
@@ -25,7 +25,6 @@
         ),
     );
 
-    const sanitizedCardName = $derived(removeSpecialCharacters(card.name));
     const tags = $derived(filterTags(card.tags, card.hiddenTags));
 </script>
 
@@ -33,23 +32,7 @@
     padding="none"
     class={`relative text-black border-2 dark:text-white border-tiers-${tierType.toLowerCase()} dark:border-tiers-${tierType.toLowerCase()}`}
 >
-    <div class="relative overflow-hidden rounded-t-md">
-        <div
-            class="absolute inset-0 bg-cover bg-center blur-xl brightness-50"
-            style={`background-image: url('/images/items/${sanitizedCardName}.avif');`}
-        ></div>
-
-        <img
-            src={`/images/items/${sanitizedCardName}.avif`}
-            alt={card.name}
-            class="relative h-[200px] mx-auto"
-            width={card.size === "Small"
-                ? 100
-                : card.size === "Medium"
-                  ? 200
-                  : 300}
-        />
-    </div>
+    <CardImage name={card.name} type="items" size={card.size} />
 
     <div class="flex flex-col gap-2 p-4 relative">
         <div class="font-bold text-2xl">
