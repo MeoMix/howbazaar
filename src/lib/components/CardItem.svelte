@@ -25,7 +25,7 @@
 <Card
     padding="none"
     size="xl"
-    class={`relative border-2 text-black dark:text-white`}
+    class={`relative border-2 text-gray-900 dark:bg-bazaar-background dark:text-bazaar-tan700 dark:border-bazaar-orange`}
     {id}
 >
     <div class="flex flex-col gap-2 p-4 relative">
@@ -51,7 +51,7 @@
         />
 
         <div
-            class="h-[1px] my-4 bg-gradient-to-r from-transparent via-gray-200 dark:via-gray-700 to-transparent"
+            class="h-[1px] my-4 bg-gradient-to-r from-transparent via-gray-200 dark:via-bazaar-orange to-transparent"
         ></div>
 
         <UnifiedTooltips
@@ -61,7 +61,7 @@
 
         {#if filteredEnchantments.length > 0}
             <div
-                class="h-[1px] my-4 bg-gradient-to-r from-transparent via-gray-200 dark:via-gray-700 to-transparent"
+                class="h-[1px] my-4 bg-gradient-to-r from-transparent via-gray-200 dark:via-bazaar-orange to-transparent"
             ></div>
 
             <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-4">

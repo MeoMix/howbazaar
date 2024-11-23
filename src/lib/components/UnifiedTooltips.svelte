@@ -29,7 +29,7 @@
                         {#each part.parts as subpart, index}
                             {#if subpart.tierType}
                                 <span
-                                    class={`text-tiers-${subpart.tierType.toLowerCase()}`}
+                                    class={`text-tiers-${subpart.tierType.toLowerCase()}-500`}
                                 >
                                     {subpart.text}
                                 </span>
@@ -38,7 +38,7 @@
                             {/if}
 
                             {#if index < part.parts.length - 1}
-                                {" / "}
+                                {" » "}
                             {/if}
                         {/each}
                         {" )"}

@@ -95,9 +95,7 @@
                     <MonsterEncounterPreview
                         {monsterEncounter}
                         {toggleEncounter}
-                        isActive={!selectedMonsterEncounter ||
-                            selectedMonsterEncounter?.cardId ===
-                                monsterEncounter.cardId}
+                        isActive={selectedMonsterEncounter?.cardId === monsterEncounter.cardId}
                     />
                 {/each}
             {/each}

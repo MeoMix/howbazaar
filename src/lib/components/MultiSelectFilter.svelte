@@ -27,7 +27,9 @@
 
 <div>
     <div class="mb-2">
-        <Label class="font-semibold text-lg">{label}</Label>
+        <Label class="font-semibold text-lg dark:text-bazaar-tan700"
+            >{label}</Label
+        >
     </div>
 
     <div class="flex flex-wrap gap-2">

@@ -20,7 +20,10 @@
     }
 </script>
 
-<button onclick={viewDetails} class="w-full flex flex-col items-center group">
+<button
+    onclick={viewDetails}
+    class={`w-full flex flex-col items-center group hover:text-bazaar-orange dark:hover:text-bazaar-orange ${isActive ? "text-bazaar-orange dark:text-bazaar-orange" : ""}`}
+>
     <div
         class="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl font-bold mb-1 text-center w-full h-12 flex items-center justify-center overflow-hidden"
     >
@@ -34,9 +37,7 @@
         <img
             src={`/images/monsters/${sanitizedCardName}.avif`}
             alt={`${monsterEncounter.cardName}`}
-            class={`absolute top-0 left-0 h-full w-full transition-all scale-110 group-hover:scale-[115%] ${
-                isActive ? "grayscale-[0%]" : "grayscale-[100%]"
-            }`}
+            class={`absolute top-0 left-0 h-full w-full transition-all scale-110 group-hover:scale-[125%] ${isActive ? "scale-[125%]" : ""}`}
             loading="lazy"
         />
         <div

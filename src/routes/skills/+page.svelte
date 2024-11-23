@@ -105,12 +105,14 @@
     bind:isSearchNameOnly
 />
 
-{#if isLoading}
-    <div>Loading skills...</div>
-{:else}
-    {#snippet listItem(card: ClientSideCardSkill)}
-        <CardSkill {card} />
-    {/snippet}
+<div class="mx-auto w-full max-w-full sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg">
+    {#if isLoading}
+        <div>Loading skills...</div>
+    {:else}
+        {#snippet listItem(card: ClientSideCardSkill)}
+            <CardSkill {card} />
+        {/snippet}
 
-    <LazyLoadList items={filteredCards} {listItem} listItemName="skill" />
-{/if}
+        <LazyLoadList items={filteredCards} {listItem} listItemName="skill" />
+    {/if}
+</div>

@@ -11,21 +11,17 @@
 
     const getBadgeClasses = (color?: string) => {
         if (color) {
-            return `text-tiers-${color} border-tiers-${color}`;
+            return `dark:bg-tiers-${color}-900 text-tiers-${color}-400 dark:text-tiers-${color}-400 border-tiers-${color}-400 dark:border-tiers-${color}-400`;
+        } else {
+            return "dark:bg-bazaar-brown text-gray-500 dark:text-bazaar-tan700 dark:border-bazaar-brown600";
         }
-        return "";
     };
 </script>
 
 <div class="flex flex-col gap-2">
     <div class="flex flex-wrap gap-2">
         {#each primaryBadges as primaryBadge}
-            <Badge
-                rounded
-                border
-                class={getBadgeClasses(primaryBadge.color)}
-                {...primaryBadge.color ? { color: "none" } : { color: "dark" }}
-            >
+            <Badge rounded border class={getBadgeClasses(primaryBadge.color)}>
                 {primaryBadge.text}
             </Badge>
         {/each}
@@ -38,7 +34,6 @@
                     rounded
                     border
                     class={getBadgeClasses(secondaryBadge.color)}
-                    {...secondaryBadge.color ? { color: "none" } : { color: "dark" }}
                 >
                     {secondaryBadge.text}
                 </Badge>

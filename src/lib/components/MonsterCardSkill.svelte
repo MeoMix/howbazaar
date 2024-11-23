@@ -15,7 +15,7 @@
 
 <Card
     padding="none"
-    class={`text-black border-2 dark:text-white border-tiers-${tierType.toLowerCase()} dark:border-tiers-${tierType.toLowerCase()}`}
+    class={`text-gray-900 border-2 dark:text-white dark:bg-bazaar-background dark:text-bazaar-tan700 border-tiers-${tierType.toLowerCase()}-400 dark:border-tiers-${tierType.toLowerCase()}-400`}
 >
     <CardImage name={card.name} type="skills" size={card.size} />
 

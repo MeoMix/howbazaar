@@ -30,7 +30,7 @@
 
 <Card
     padding="none"
-    class={`relative text-black border-2 dark:text-white border-tiers-${tierType.toLowerCase()} dark:border-tiers-${tierType.toLowerCase()}`}
+    class={`relative text-gray-900 border-2 dark:bg-bazaar-background dark:text-bazaar-tan700 border-tiers-${tierType.toLowerCase()}-400 dark:border-tiers-${tierType.toLowerCase()}-400`}
 >
     <CardImage name={card.name} type="items" size={card.size} />
 

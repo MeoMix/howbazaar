@@ -35,23 +35,35 @@
 </script>
 
 <div
-    class="flex flex-col min-h-screen bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100"
+    class="flex flex-col min-h-screen bg-white dark:bg-bazaar-background text-gray-900 dark:text-bazaar-tan700"
 >
-    <Navbar class="sticky top-0 z-10 border-b bg-white dark:bg-gray-800">
+    <Navbar
+        class="sticky top-0 z-10 bg-white dark:bg-bazaar-background dark:text-bazaar-tan700"
+    >
         <NavBrand href={`/items${$page.url.search}`}>
             <span
-                class="self-center whitespace-nowrap text-xl font-semibold dark:text-white"
+                class="self-center whitespace-nowrap text-xl font-semibold dark:text-bazaar-tan700 hover:text-bazaar-orange dark:hover:text-bazaar-orange"
             >
                 How Bazaar
             </span>
         </NavBrand>
 
         <div class="flex md:order-2 items-center">
-            <DarkMode class="hover:text-gray-900 dark:hover:text-white" />
-            <NavHamburger class="hover:text-gray-900 dark:hover:text-white" />
+            <DarkMode
+                class="hover:text-gray-900 dark:text-bazaar-tan700 dark:hover:text-bazaar-orange dark:hover:bg-bazaar-brown"
+            />
+            <NavHamburger
+                class="hover:text-gray-900 dark:text-bazaar-tan700 dark:hover:text-bazaar-orange dark:hover:bg-bazaar-brown"
+                classMenu="outline-none"
+            />
         </div>
 
-        <NavUl activeUrl={$page.url.pathname}>
+        <NavUl
+            activeUrl={`${$page.url.pathname}${$page.url.search}`}
+            nonActiveClass="dark:text-bazaar-tan700 md:dark:hover:text-bazaar-orange hover:bg-gray-200 dark:hover:bg-bazaar-brown hover:text-bazaar-orange dark:hover:text-bazaar-orange md:hover:bg-transparent md:dark:hover:bg-transparent"
+            activeClass="text-bazaar-orange dark:text-bazaar-orange md:text-bazaar-orange md:dark:text-bazaar-orange bg-gray-200 dark:bg-bazaar-brown md:bg-transparent md:dark:bg-transparent"
+            ulClass="flex flex-col p-4 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:text-sm md:font-medium dark:bg-bazaar-background dark:border-bazaar-brown"
+        >
             <NavLi href={`/items${$page.url.search}`}>Items</NavLi>
             <NavLi href={`/skills${$page.url.search}`}>Skills</NavLi>
             <NavLi href={`/monsters${$page.url.search}`}>Monsters</NavLi>
@@ -59,10 +71,13 @@
                 >Contact & Upcoming Features</NavLi
             >
         </NavUl>
+        <div
+            class="absolute inset-x-0 bottom-0 h-[1px] bg-gradient-to-r from-transparent via-gray-200 to-transparent dark:via-bazaar-orange"
+        ></div>
     </Navbar>
 
     <div
-        class="flex-grow px-2 sm:px-4 max-w-[120rem] w-full mx-auto overflow-y-auto"
+        class="flex-grow px-2 sm:px-4 max-w-[120rem] w-full mx-auto overflow-y-hidden"
     >
         {@render children()}
     </div>
@@ -89,14 +104,22 @@
 
     <Footer
         footerType="sitemap"
-        class="bg-white dark:bg-gray-800 py-6 border-t text-gray-500 dark:text-gray-400 border-gray-200 dark:border-gray-700 divide-gray-200 dark:divide-gray-700 "
+        class="py-6 bg-white dark:bg-bazaar-background"
     >
+        <div
+            class="h-[1px] my-6 bg-gradient-to-r from-transparent via-gray-200 to-transparent dark:via-bazaar-orange"
+        ></div>
+
         <div class="mx-auto text-center">
             <div>
-                <h2 class="mb-4 text-sm font-semibold text-gray-400 uppercase">
+                <h2
+                    class="mb-4 text-sm font-semibold uppercase text-gray-400 dark:text-bazaar-tan300"
+                >
                     Partner Websites
                 </h2>
-                <FooterLinkGroup ulClass="text-gray-700 dark:text-gray-300">
+                <FooterLinkGroup
+                    ulClass="text-gray-700 dark:text-bazaar-tan500"
+                >
                     <FooterLink href="https://bazaarrank.com/" target="_blank">
                         Bazaar Rank - Legendary Player Rankings
                     </FooterLink>

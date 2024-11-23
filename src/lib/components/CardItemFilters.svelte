@@ -91,7 +91,7 @@
             size="xs"
             outline
             pill
-            color={"primary"}
+            color={"red"}
             on:click={clearSearch}
             class="ml-auto transition-colors focus:outline-none border-2"
         >
