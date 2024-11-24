@@ -2,13 +2,8 @@ import * as fs from 'fs/promises';
 import path from 'path';
 
 import cardsJson from '../src/lib/v2_Cards.json';
-import monstersJson from '../src/lib/v2_Monsters.json';
-import dayHoursJson from '../src/lib/v2_DayHours.json';
 import { parseJson as parseCardsJson } from '../src/lib/cardsJsonParser.ts';
-import { parseJson as parseMonstersJson } from '../src/lib/monstersJsonParser.ts';
-import { parseJson as parseDayHoursJson } from '../src/lib/dayHoursJsonParser.ts';
-import type { CardsJson, DayHoursJson, Monster, MonsterEncounterDay, MonstersJson } from "../src/lib/types.ts";
-import { getMonsterEncounterDays } from "../src/lib/services/monsterEncounterService.ts";
+import type { CardsJson } from "../src/lib/types.ts";
 import { removeSpecialCharacters } from './utils/stringUtils.ts';
 import { deleteFiles } from './utils/fileUtils.ts';
 import { checkAndResizeImages, convertImagesToAvif } from './utils/imageUtils.ts';
@@ -30,27 +25,15 @@ const outputDirectory = './static/images/';
 
 // TODO: This seems to be appending (1) onto files in a failure scenario
 async function renameSkillImages() {
-    // Parse data
     const parsedCards = parseCardsJson(cardsJson as CardsJson);
-    const parsedMonsters = parseMonstersJson(monstersJson as MonstersJson);
-    const parsedDayHours = parseDayHoursJson(dayHoursJson as DayHoursJson);
-    const monsterEncounterDays = getMonsterEncounterDays(parsedCards, parsedMonsters as Monster[], parsedDayHours) as MonsterEncounterDay[];
+    const skillCards = parsedCards.filter(card => card.type === "Skill");
 
     // Collect skillArtEntries with artKey and corresponding name without spaces
-    const skillArtEntries = Array.from(new Map(
-        monsterEncounterDays.flatMap(({ groups }) =>
-            groups.flatMap(group =>
-                group.flatMap(monsterEncounter =>
-                    monsterEncounter.skills.map(skill => {
-                        const { name, artKey } = skill.card;
-                        const nameWithoutSpecialCharacters = removeSpecialCharacters(name);
-                        const artKeyWithoutExtension = path.parse(artKey).name; // Remove file extension from artKey
-                        return [artKeyWithoutExtension, { artKey: artKeyWithoutExtension, nameWithoutSpecialCharacters }];
-                    })
-                )
-            )
-        )
-    ).values());
+    const skillArtEntries = skillCards.map(({ name, artKey }) => {
+        const nameWithoutSpecialCharacters = removeSpecialCharacters(name);
+        const artKeyWithoutExtension = path.parse(artKey).name; // Remove file extension from artKey
+        return { artKey: artKeyWithoutExtension, nameWithoutSpecialCharacters, name };
+    }).filter(entry => !!entry.artKey);
 
     // Get file names in the local directory (without extensions)
     const files = await fs.readdir(assetPath);
@@ -61,7 +44,7 @@ async function renameSkillImages() {
 
     // Exit if there are missing files
     if (stillMissing.length > 0) {
-        console.error(`Missing ${stillMissing.length} skill images:`, stillMissing.map(({ artKey }) => artKey));
+        console.error(`Missing ${stillMissing.length} skill images:`, stillMissing.map(({ artKey, name }) => `${artKey} ${name}`));
         return;
     }
 
