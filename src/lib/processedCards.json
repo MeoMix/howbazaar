@@ -109,12 +109,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -233,12 +227,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -406,12 +394,6 @@
         "tooltips": [
           "Your Piranhas have +50% Crit Chance."
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "4f9c85a0ba7db074bba1863bfaee531d",
@@ -527,12 +509,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -796,12 +772,6 @@
         "tooltips": [
           "+50% Crit Chance"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "12119f9b84356ad46b6f2460fd5163f7",
@@ -909,12 +879,6 @@
         "name": "Deadly",
         "tooltips": [
           "Your small items have +20% Crit Chance."
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -1076,12 +1040,6 @@
         "tooltips": [
           "Lifesteal"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "cf1803cb83d30a643b492e45f10e39bc",
@@ -1189,12 +1147,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -1307,12 +1259,6 @@
         "tooltips": [
           "The Core has +50% Crit Chance."
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "1d9edb676f7da224c9227b4227bea06a",
@@ -1424,12 +1370,6 @@
         "tooltips": [
           "Double Crit Chance"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "e4edef72fa16e9846ab84a69f876973d",
@@ -1530,12 +1470,6 @@
         "name": "Shiny",
         "tooltips": [
           "+1 Multicast"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -1781,12 +1715,6 @@
         "tooltips": [
           "+1 Multicast"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "0d83ac5a60876db41a1c3ba689b1998c",
@@ -1958,12 +1886,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -2125,12 +2047,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -2296,12 +2212,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -2473,12 +2383,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -2641,12 +2545,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -2759,12 +2657,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -2957,12 +2849,6 @@
         "tooltips": [
           "Double Crit Chance"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "3d858932e04d0c544a771a19c1cdb4da",
@@ -3116,12 +3002,6 @@
         "tooltips": [
           "+50% Crit Chance"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "c071a2553d11f644c9470418fb14f078",
@@ -3230,12 +3110,6 @@
         "name": "Shiny",
         "tooltips": [
           "+1 Multicast"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -3346,12 +3220,6 @@
         "tooltips": [
           "Give an item gain 20% Crit Chance for the fight."
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "8569fa39899c79d438f5715b0dea33c8",
@@ -3460,12 +3328,6 @@
         "name": "Deadly",
         "tooltips": [
           "When you Shield, your items gain +6% Crit Chance for the fight."
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -3580,12 +3442,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -3687,12 +3543,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Deadly",
         "tooltips": [
           "When you use an Aquatic item, give your items +3% Crit for this fight."
@@ -3744,12 +3594,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -3903,12 +3747,6 @@
         "tooltips": [
           "+50% Crit Chance"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "78ec681a0cd840641a6145cc0d28ab38",
@@ -4023,12 +3861,6 @@
         "name": "Deadly",
         "tooltips": [
           "Your items gain +25% Crit Chance for the fight."
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -4190,12 +4022,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -4379,12 +4205,6 @@
         "tooltips": [
           "+50% Crit Chance"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "dceec3658fc6bd54b93b771fc77705b6",
@@ -4552,12 +4372,6 @@
         "tooltips": [
           "+50% Crit Chance"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "177840c3c32452f4bbbc113c58213c32",
@@ -4664,12 +4478,6 @@
         "tooltips": [
           "+50% Crit Chance"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "c40551b736be9a64d909f18296064b87",
@@ -4774,12 +4582,6 @@
         "name": "Shiny",
         "tooltips": [
           "+1 Multicast"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -4948,12 +4750,6 @@
         "name": "Deadly",
         "tooltips": [
           "Your Vehicles have +50% Crit Chance."
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -5124,12 +4920,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -5285,12 +5075,6 @@
         "tooltips": [
           "+1 Multicast"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "d35a6d172b043d94c9f330807121cc1c",
@@ -5443,12 +5227,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -5577,12 +5355,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -5684,12 +5456,6 @@
         "name": "Shiny",
         "tooltips": [
           "Double Charge"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -5828,12 +5594,6 @@
         "name": "Shiny",
         "tooltips": [
           "+1 Multicast"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -5989,12 +5749,6 @@
         "name": "Shiny",
         "tooltips": [
           "+1 Multicast"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -6188,12 +5942,6 @@
         "tooltips": [
           "+1 Multicast"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "b2c0b0f9756dc7d47b7c0839575e7f53",
@@ -6309,12 +6057,6 @@
         "name": "Deadly",
         "tooltips": [
           "Your Tools have +20% Crit Chance."
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -6483,12 +6225,6 @@
         "name": "Deadly",
         "tooltips": [
           "The first time you fall below half health each fight, your items gain 25% Crit Chance."
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -6700,12 +6436,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -6947,12 +6677,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -7177,12 +6901,6 @@
         "tooltips": [
           "Your weapons gain 10% Crit Chance for the fight."
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "f50a353ee24732341b23c8cc4372da4f",
@@ -7378,12 +7096,6 @@
         "tooltips": [
           "+50% Crit Chance"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "1f460ba8f6e961a43822bd7b689275bc",
@@ -7497,12 +7209,6 @@
         "name": "Deadly",
         "tooltips": [
           "When you Haste, your items gain 6% Crit Chance for the fight."
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -7667,12 +7373,6 @@
         "tooltips": [
           "The item to the left of this gains +20% Crit Chance for the fight."
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "2603b5f920d983449b5b0075dde53acc",
@@ -7782,12 +7482,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -7913,12 +7607,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -8033,12 +7721,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -8162,12 +7844,6 @@
         "name": "Shiny",
         "tooltips": [
           "+1 Multicast"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -8465,12 +8141,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -8587,12 +8257,6 @@
         "tooltips": [
           "+50% Crit Chance"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "776ef5f832a374742b6637e1991266f1",
@@ -8703,12 +8367,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -8824,12 +8482,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -8961,12 +8613,6 @@
         "tooltips": [
           "+50% Crit Chance"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "17e15e602b317e845a671648f6a1b095",
@@ -9093,12 +8739,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -9295,12 +8935,6 @@
         "tooltips": [
           "When you use the leftmost item, the rightmost item gains +25% Crit Chance for the fight."
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "b9883ad465f49a64facfe26f9467002a",
@@ -9422,12 +9056,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -9538,12 +9166,6 @@
         "tooltips": [
           "+1 Multicast"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "f6b1f59eccbfef2489d00dda15c6dd5e",
@@ -9651,12 +9273,6 @@
         "tooltips": [
           "+50% Crit Chance"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "1adb01ea836196a45a1ebb64ff11fe48",
@@ -9744,12 +9360,6 @@
         "name": "Deadly",
         "tooltips": [
           "Your items have +10% Crit Chance for each Medium item you have."
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -9864,12 +9474,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -10000,12 +9604,6 @@
         "tooltips": [
           "+50% Crit Chance"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "a29934fabd2493c4fb1e6f4f6abcf5b8",
@@ -10101,12 +9699,6 @@
         "name": "Fiery",
         "tooltips": [
           "When you use an item, Burn 2."
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -10211,12 +9803,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -10372,12 +9958,6 @@
         "tooltips": [
           "+50% Crit Chance"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "18b131852fb2b184c89c2019da5fe774",
@@ -10477,12 +10057,6 @@
         "name": "Deadly",
         "tooltips": [
           "Adjacent items have +25% Crit Chance."
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -10592,12 +10166,6 @@
         "name": "Deadly",
         "tooltips": [
           "Give the Weapon to the right of this +20% Crit Chance for the fight."
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -10755,12 +10323,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -10921,12 +10483,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -11135,12 +10691,6 @@
         "name": "Shiny",
         "tooltips": [
           "Double Value"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -11430,12 +10980,6 @@
         "tooltips": [
           "+50% Crit Chance"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "09dd73c0c134398498877cc5e4b9e1a4",
@@ -11703,12 +11247,6 @@
         "tooltips": [
           "When you Freeze, an item gains +25% Crit Chance for the fight."
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "21c32243e0f50424ebeae4ea7404fc30",
@@ -11827,12 +11365,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -11998,12 +11530,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -12107,12 +11633,6 @@
         "name": "Shiny",
         "tooltips": [
           "+1 Multicast"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -12228,12 +11748,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -12310,12 +11824,6 @@
         "name": "Shiny",
         "tooltips": [
           "This gains double value when an item is upgraded."
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -12418,12 +11926,6 @@
         "name": "Shiny",
         "tooltips": [
           "+1 Multicast"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -12581,12 +12083,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -12704,12 +12200,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -12873,12 +12363,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -12974,12 +12458,6 @@
         "name": "Fiery",
         "tooltips": [
           "When you use the item to the right of this, burn 3."
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -13122,12 +12600,6 @@
         "tooltips": [
           "+10% Crit Chance"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "9355cf137ca1cf844804095e610a0f5d",
@@ -13235,12 +12707,6 @@
         "name": "Deadly",
         "tooltips": [
           "Your Vehicles have +50% Crit Chance."
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -13358,12 +12824,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -13527,12 +12987,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -13775,12 +13229,6 @@
         "name": "Shiny",
         "tooltips": [
           "+1 Multicast"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -14034,12 +13482,6 @@
         "tooltips": [
           "Your items gain 10% Crit Chance for the fight."
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "998193dd3811fbe4cb0bbcac839cefbd",
@@ -14242,12 +13684,6 @@
         "name": "Shiny",
         "tooltips": [
           "+1 Multicast"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -14526,12 +13962,6 @@
         "tooltips": [
           "+1 Slow Targets"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "12b9707a5fc60004881bf051cb51937f",
@@ -14643,12 +14073,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -14765,12 +14189,6 @@
         "name": "Shiny",
         "tooltips": [
           "+1 Multicast"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -14986,12 +14404,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -15156,12 +14568,6 @@
         "tooltips": [
           "+50% Crit Chance"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "99796868cc77a5f48b480081b78d207a",
@@ -15277,12 +14683,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -15407,12 +14807,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -15526,12 +14920,6 @@
         "tooltips": [
           "When you Haste, your items gain +5% Crit Chance for the fight."
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "25c3bc57c0fc35f4081f4939e5b50637",
@@ -15640,12 +15028,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -15769,12 +15151,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -15908,12 +15284,6 @@
         "name": "Fiery",
         "tooltips": [
           "When a non-weapon item is used, burn 2."
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -16089,12 +15459,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -16205,12 +15569,6 @@
         "name": "Shiny",
         "tooltips": [
           "+1 Multicast"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -16377,12 +15735,6 @@
         "tooltips": [
           "+50% Crit Chance"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "db2d770ef3a367747a73e6a36a2436f5",
@@ -16492,12 +15844,6 @@
         "name": "Shiny",
         "tooltips": [
           "+1 Multicast"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -16654,12 +16000,6 @@
         "tooltips": [
           "+50% Crit Chance"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "16fb0ac9f698eff4e98870956aa86eba",
@@ -16777,12 +16117,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -16945,12 +16279,6 @@
         "tooltips": [
           "Adjacent items have an additional +25% Crit Chance"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "e43eeedaff86c684490ad654a88a44f3",
@@ -17058,12 +16386,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -17178,12 +16500,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -17347,12 +16663,6 @@
         "tooltips": [
           "+50% Crit Chance"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "07b994cbff3f2e943941a7ba9b285e16",
@@ -17512,12 +16822,6 @@
         "tooltips": [
           "+50% Crit Chance"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "66f85f3f789b692498f9fed24b086327",
@@ -17622,12 +16926,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -17742,12 +17040,6 @@
         "tooltips": [
           "When you use a weapon, it gains 10% Crit Chance for the fight."
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "4ddeca6f965bcc84594d3da534bc1a1e",
@@ -17861,12 +17153,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -17993,12 +17279,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -18108,12 +17388,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -18231,12 +17505,6 @@
         "tooltips": [
           "+50% Crit Chance"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "5352675b472338b47bf88a375c47a86d",
@@ -18344,12 +17612,6 @@
         "name": "Shiny",
         "tooltips": [
           "+1 Multicast"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -18506,12 +17768,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -18732,12 +17988,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -18866,12 +18116,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -18984,12 +18228,6 @@
         "tooltips": [
           "Double Experience"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "d38248fb431eaf94d8b75bb0319c92e0",
@@ -19095,12 +18333,6 @@
         "name": "Shiny",
         "tooltips": [
           "+1 Multicast"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -19213,12 +18445,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -19395,12 +18621,6 @@
         "tooltips": [
           "Your Ammo items have +20% Crit Chance."
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "4729ee9102c869e4894fd90fa96e7431",
@@ -19496,12 +18716,6 @@
         "name": "Deadly",
         "tooltips": [
           "When you use a Property, your items gain 20% Crit Chance for the fight."
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -19608,12 +18822,6 @@
         "name": "Shiny",
         "tooltips": [
           "+1 Multicast"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -19727,12 +18935,6 @@
         "tooltips": [
           "+50% Crit Chance"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "7cedec35cbaab3a47938e5c82240c82a",
@@ -19841,12 +19043,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -19964,12 +19160,6 @@
         "tooltips": [
           "+1 Multicast"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "1b37e1abfac0593488769d2d0efea2a9",
@@ -20080,12 +19270,6 @@
         "name": "Shiny",
         "tooltips": [
           "If you have two or fewer weapons, they have Lifesteal."
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -20248,12 +19432,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -20361,12 +19539,6 @@
         "name": "Deadly",
         "tooltips": [
           "When you Slow, your items gain 10% Crit Chance for the fight."
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -20625,12 +19797,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -20846,12 +20012,6 @@
         "tooltips": [
           "+50% Crit Chance"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "ce44c789e2fd1b445be02f5dc0fa21ac",
@@ -20960,12 +20120,6 @@
         "name": "Shiny",
         "tooltips": [
           "+1 Multicast"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -21161,12 +20315,6 @@
         "name": "Shiny",
         "tooltips": [
           "This has double Regeneration gain."
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -21407,12 +20555,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
@@ -21568,12 +20710,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -21915,12 +21051,6 @@
         "tooltips": [
           "+50% Crit Chance"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "9cb661dd22f0f3e4491676676f1f238b",
@@ -22043,12 +21173,6 @@
         "tooltips": [
           "+50% Crit Chance"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "b39a99ab6726a67429f4e3ee40fc99cd",
@@ -22159,12 +21283,6 @@
         "name": "Deadly",
         "tooltips": [
           "The Weapon to the left of this has +50% Crit Chance."
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -22281,12 +21399,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -22552,12 +21664,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -22729,12 +21835,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -22853,12 +21953,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -23080,12 +22174,6 @@
         "tooltips": [
           "+50% Crit Chance"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "fb9e16748f4a80c4c8abb440aa92714c",
@@ -23250,12 +22338,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -23376,12 +22458,6 @@
         "tooltips": [
           "+50% Crit Chance"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "743a92e4bd843854399f262829e9d977",
@@ -23478,12 +22554,6 @@
         "name": "Shiny",
         "tooltips": [
           "+1 Multicast"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -23684,12 +22754,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -23990,12 +23054,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -24114,12 +23172,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -24535,12 +23587,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -24605,12 +23651,6 @@
         "name": "Shiny",
         "tooltips": [
           "Double Value"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -24774,12 +23814,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -25038,12 +24072,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -25212,12 +24240,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -25426,12 +24448,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -25652,12 +24668,6 @@
         "tooltips": [
           "+50% Crit Chance"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "0715e50d24cb854479bb0fd1e19077fb",
@@ -25772,12 +24782,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -26108,12 +25112,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -26226,12 +25224,6 @@
         "tooltips": [
           "+1 Multicast"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "1db9ffacce733ed42ba5400c6a0640c3",
@@ -26337,12 +25329,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -26465,12 +25451,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -26708,12 +25688,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -26915,12 +25889,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
@@ -27013,12 +25981,6 @@
         "name": "Fiery",
         "tooltips": [
           "When you use an adjacent weapon, Burn 1."
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -27127,12 +26089,6 @@
         "name": "Shiny",
         "tooltips": [
           "+1 Multicast"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -27247,12 +26203,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -27588,12 +26538,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -27749,12 +26693,6 @@
         "tooltips": [
           "When you Slow, your items gain 5% Crit Chance for the fight."
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "7083e98b188b59b4cb82cba3764e6cee",
@@ -27870,12 +26808,6 @@
         "tooltips": [
           "+50% Crit Chance"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "548e7d6aada38d84598b7452de850162",
@@ -27980,12 +26912,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -28154,12 +27080,6 @@
         "tooltips": [
           "+50% Crit Chance"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "5711b25e7e4f12b458bb75b080fbfca8",
@@ -28268,12 +27188,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -28386,12 +27300,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -28561,12 +27469,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -28750,12 +27652,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -28866,12 +27762,6 @@
         "name": "Shiny",
         "tooltips": [
           "+1 Multicast"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -29030,12 +27920,6 @@
         "tooltips": [
           "+50% Crit Chance"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "98c0947aa2a22fd42ab40b36bcab36f4",
@@ -29145,12 +28029,6 @@
         "name": "Deadly",
         "tooltips": [
           "Your Food and Tools gain 20% Crit Chance for the fight."
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -29344,12 +28222,6 @@
         "tooltips": [
           "Double Crit Chance"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "4ad232eb3104acd47aab562f8cc6cb68",
@@ -29453,12 +28325,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -29616,12 +28482,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -29742,12 +28602,6 @@
         "tooltips": [
           "Give the item to the left +25% Crit Chance for the fight."
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "4f02522b2d453a64880e3a20de486081",
@@ -29851,12 +28705,6 @@
         "tooltips": [
           "When you use an adjacent item, it gains 20% Crit Chance for the fight."
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "b1f80971ada2d6340ae758f09a3cc817",
@@ -29955,12 +28803,6 @@
         "name": "Shiny",
         "tooltips": [
           "+1 Multicast"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -30077,12 +28919,6 @@
         "tooltips": [
           "Double Crit Chance"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "817e79c1abd653c4fa81bc689fd78cef",
@@ -30183,12 +29019,6 @@
         "name": "Deadly",
         "tooltips": [
           "When you use a non-weapon item, your items gain +3% Crit Chance for the fight."
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -30312,12 +29142,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -30426,12 +29250,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -30584,12 +29402,6 @@
         "tooltips": [
           "Double Charge",
           "Double Damage"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -30750,12 +29562,6 @@
         "tooltips": [
           "Your weapons have + Crit Chance % equal to this item's value."
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "4783139b19e7bb94390666e94585eb62",
@@ -30879,12 +29685,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -30999,12 +29799,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -31166,12 +29960,6 @@
         "tooltips": [
           "Adjacent items gain 10% Crit chance for the fight."
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "2ad63626ff005d1419e02939c700f799",
@@ -31286,12 +30074,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -31423,12 +30205,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -31532,12 +30308,6 @@
         "name": "Deadly",
         "tooltips": [
           "The item to the left of this has +50% Crit Chance."
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -31701,12 +30471,6 @@
         "name": "Deadly",
         "tooltips": [
           "When you Haste, your items gain +3% Crit Chance for the fight."
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -31923,12 +30687,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -32094,12 +30852,6 @@
         "tooltips": [
           "Your items have +10% Crit Chance."
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "aa2f5c04f25eb9b48a26337c59ce95f2",
@@ -32263,12 +31015,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -32388,12 +31134,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -32504,12 +31244,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -32716,12 +31450,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -32776,12 +31504,6 @@
         "name": "Shiny",
         "tooltips": [
           "+1 Multicast"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -32895,12 +31617,6 @@
         "tooltips": [
           "+50% Crit Chance"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "2416153d5e930804a89efb49588d0561",
@@ -33006,12 +31722,6 @@
         "tooltips": [
           "+50% Crit Chance"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "340af00ee7df6e147a21298cc6c6bfa8",
@@ -33114,12 +31824,6 @@
         "name": "Shiny",
         "tooltips": [
           "Double Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -33569,12 +32273,6 @@
         "tooltips": [
           "Double Crit Chance"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "3d7ef41f415852c48948e7ae9a057c2c",
@@ -33688,12 +32386,6 @@
         "tooltips": [
           "+50% Crit Chance"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "532fe21558740e14eb5ad9c0ccad7332",
@@ -33798,12 +32490,6 @@
         "name": "Deadly",
         "tooltips": [
           "Adjacent items gain 10% Crit Chance for the fight."
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -33922,12 +32608,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -34055,12 +32735,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -34179,12 +32853,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -34454,12 +33122,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -34694,12 +33356,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
@@ -34862,12 +33518,6 @@
         "tooltips": [
           "Your Piggles have -1 cooldown."
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "c85556c717a77f440acc6bbf00e6ab95",
@@ -35016,12 +33666,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -35279,12 +33923,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -35447,12 +34085,6 @@
         "name": "Shiny",
         "tooltips": [
           "+1 Multicast"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -35630,12 +34262,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -35809,12 +34435,6 @@
         "tooltips": [
           "+50% Crit Chance"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "633cf2459d38f0643afb51fb4785b694",
@@ -35921,12 +34541,6 @@
         "tooltips": [
           "+1 Multicast"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "3e9d2b14e096c5145a639a2914a4734d",
@@ -36029,12 +34643,6 @@
         "name": "Deadly",
         "tooltips": [
           "At the start of each day, your items gain 10% Crit Chance."
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -36143,12 +34751,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -36390,12 +34992,6 @@
         "tooltips": [
           "Adjacent ammo items have +25% Crit Chance."
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "b3d3f6f4b16ef2b46a7548c3d8d521b1",
@@ -36504,12 +35100,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -36672,12 +35262,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -36898,12 +35482,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -37011,12 +35589,6 @@
         "name": "Shiny",
         "tooltips": [
           "+1 Multicast"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -37135,12 +35707,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -37393,12 +35959,6 @@
         "tooltips": [
           "+50% Crit Chance"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "c020b97fa4f0a224fa674ec1a3bcb804",
@@ -37508,12 +36068,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -37689,12 +36243,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -37804,12 +36352,6 @@
         "name": "Shiny",
         "tooltips": [
           "+1 Multicast"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -38018,12 +36560,6 @@
         "tooltips": [
           "Your items have +25% Crit Chance."
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "83b4448b94213de4a8f2e2600f0997af",
@@ -38135,12 +36671,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -38439,12 +36969,6 @@
         "tooltips": [
           "+50% Crit Chance"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "42b684e5cb87d2f4c8989925cd87579b",
@@ -38610,12 +37134,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -38740,12 +37258,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -38909,12 +37421,6 @@
         "tooltips": [
           "Double Damage",
           "Double Haste"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -39174,12 +37680,6 @@
         "tooltips": [
           "+50% Crit Chance"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "7ba2f877b1cc7dd499c975ec835fb2eb",
@@ -39301,12 +37801,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -39418,12 +37912,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -39761,12 +38249,6 @@
         "tooltips": [
           "+50% Crit Chance"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "cf1f6e51233cd7f4aab50112e3dab8da",
@@ -39970,12 +38452,6 @@
         "tooltips": [
           "When you Slow, your items gain 3% Crit Chance."
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "82ef94c3a3b4108438f11a630951d396",
@@ -40134,12 +38610,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -40318,12 +38788,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -40387,12 +38851,6 @@
         "name": "Golden",
         "tooltips": [
           "When you buy a property, gain 1 Gold."
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -40530,12 +38988,6 @@
         "tooltips": [
           "+1 Multicast"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "9b9d554b9e313444185969d46e7d2fc8",
@@ -40598,12 +39050,6 @@
         "name": "Deadly",
         "tooltips": [
           "Adjacent properties have +50% Crit Chance."
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -40948,12 +39394,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -41073,12 +39513,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -41247,12 +39681,6 @@
         "tooltips": [
           "Your Lifesteal Weapons have +50% Crit Chance."
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "8248081c837fd2b4fae754b857ce2c19",
@@ -41369,12 +39797,6 @@
         "tooltips": [
           "+50% Crit Chance"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "8a14ba5294a5bcd4aa3054a70808daef",
@@ -41438,12 +39860,6 @@
         "name": "Shiny",
         "tooltips": [
           "Double Health Max"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -41552,12 +39968,6 @@
         "name": "Shiny",
         "tooltips": [
           "+1 Multicast"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -41725,12 +40135,6 @@
         "tooltips": [
           "+50% Crit Chance"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "e69707b6c9f2bb841bcffdadf5a3c74e",
@@ -41895,12 +40299,6 @@
         "tooltips": [
           "+50% Crit Chance"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "2252cbd7dca8d2a4c945d60f3d56aca5",
@@ -42017,12 +40415,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -42222,12 +40614,6 @@
         "tooltips": [
           "+50% Crit Chance"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "87e2898c14fed894eb3e75aac61c90bb",
@@ -42342,12 +40728,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -42466,12 +40846,6 @@
         "tooltips": [
           "The weapon to the left has +50% Crit Chance."
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "a87a7f72c9cc21b438eed8eb03e6c25d",
@@ -42588,12 +40962,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -42702,12 +41070,6 @@
         "tooltips": [
           "When you use an adjacent Small item, your Small items gain +6% Crit Chance for the fight."
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "ea31b1531184c2b4c92da9ade3924229",
@@ -42813,12 +41175,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -43002,12 +41358,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -43072,12 +41422,6 @@
         "name": "Shiny",
         "tooltips": [
           "Get 2 Gumballs and Spare Change instead."
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -43196,12 +41540,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -43313,12 +41651,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -43434,12 +41766,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -43562,12 +41888,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -43676,12 +41996,6 @@
         "name": "Shiny",
         "tooltips": [
           "Double Value"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -43798,12 +42112,6 @@
         "name": "Shiny",
         "tooltips": [
           "At the start of each hour, get an additional 2 Spare Change."
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -43926,12 +42234,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -44044,12 +42346,6 @@
         "name": "Shiny",
         "tooltips": [
           "+1 Multicast"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -44196,12 +42492,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -44314,12 +42604,6 @@
         "name": "Shiny",
         "tooltips": [
           "+1 Multicast"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -44479,12 +42763,6 @@
         "tooltips": [
           "+50% Crit Chance"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "5d542d33d842aa743aa60db028bb816f",
@@ -44595,12 +42873,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -44724,12 +42996,6 @@
         "tooltips": [
           "Your weapons and tools gain 25% Crit Chance for the fight."
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "05c033e1684ea3c4eb4962a95fc30641",
@@ -44849,12 +43115,6 @@
         "name": "Deadly",
         "tooltips": [
           "When you sell this, the Core gains Crit Chance equal to this item's value. 1"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -45110,12 +43370,6 @@
         "tooltips": [
           "+50% Crit Chance"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "c2fb85b6042d20f438970e5a2a399224",
@@ -45235,12 +43489,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -45451,12 +43699,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -45574,12 +43816,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -45757,12 +43993,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -45885,12 +44115,6 @@
         "tooltips": [
           "+50% Crit Chance"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "27908d4237d4abc49a9ab61b2135d8a8",
@@ -46001,12 +44225,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -46122,12 +44340,6 @@
         "name": "Shiny",
         "tooltips": [
           "+1 Multicast"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -46279,12 +44491,6 @@
         "tooltips": [
           "Double Crit Chance"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "10898538c111cd242a9c0eae5dc6a030",
@@ -46395,12 +44601,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -46607,12 +44807,6 @@
         "tooltips": [
           "Adjacent items have +25% Crit Chance."
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "dbf5e0dc32fc79e439b3623ce247fd74",
@@ -46761,12 +44955,6 @@
         "tooltips": [
           "+50% Crit Chance"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "665e91b3be6e64a49815abd70074b4db",
@@ -46875,12 +45063,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -47041,12 +45223,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -47163,12 +45339,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -47290,12 +45460,6 @@
         "name": "Deadly",
         "tooltips": [
           "Your items gain Crit Chance equal to this item's value for the fight."
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -47439,12 +45603,6 @@
         "name": "Deadly",
         "tooltips": [
           "Your items have Crit Chance equal to this item's value."
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -47600,12 +45758,6 @@
         "tooltips": [
           "Your Aquatic items gain +10% Crit Chance for the fight."
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "3abf88a09dcbc8e439c9bec98ba10c86",
@@ -47716,12 +45868,6 @@
         "name": "Deadly",
         "tooltips": [
           "When you Heal, your items gain +10% Crit Chance for the fight."
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -47877,12 +46023,6 @@
         "tooltips": [
           "When you Slow, your items gain +10% Crit Chance for the fight."
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "8ec37600a1be69f498bbc2b23ed01dee",
@@ -47995,12 +46135,6 @@
         "tooltips": [
           "+50% Crit Chance"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "932dd12c597910447b8cd61b7f547509",
@@ -48110,12 +46244,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -48229,12 +46357,6 @@
         "name": "Deadly",
         "tooltips": [
           "Your items gain +10% Crit Chance for the fight."
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -48392,12 +46514,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -48562,12 +46678,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -48771,12 +46881,6 @@
         "tooltips": [
           "+1 Multicast"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "dbad81873cd5d3e419adeeea3b5c9ca0",
@@ -48933,12 +47037,6 @@
         "name": "Deadly",
         "tooltips": [
           "The Property to the left has +50% Crit Chance."
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -49188,12 +47286,6 @@
         "tooltips": [
           "+50% Crit Chance"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "0f5383f162814a942ae20e1a7ac90e81",
@@ -49345,12 +47437,6 @@
         "name": "Shiny",
         "tooltips": [
           "+1 Multicast"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -49888,12 +47974,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -50002,12 +48082,6 @@
         "name": "Shiny",
         "tooltips": [
           "+1 Multicast"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -50147,12 +48221,6 @@
         "tooltips": [
           "At the start of each fight, burn 24."
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "bc087bcdb212d2b449365c5aab69473b",
@@ -50264,12 +48332,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -50387,12 +48449,6 @@
         "tooltips": [
           "+50% Crit Chance"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "12181380f18d0ad42bf46d3cfae4a09b",
@@ -50493,12 +48549,6 @@
         "name": "Shiny",
         "tooltips": [
           "Double Value"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -50701,12 +48751,6 @@
         "name": "Deadly",
         "tooltips": [
           "Adjacent items gain 10% Crit Chance for the fight."
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -50921,12 +48965,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -51072,12 +49110,6 @@
         "name": "Shiny",
         "tooltips": [
           "+1 Multicast"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -51237,12 +49269,6 @@
         "name": "Fiery",
         "tooltips": [
           "When you Slow, Burn 2."
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -51502,12 +49528,6 @@
         "tooltips": [
           "+1 Multicast"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "d5021437ee1b5cf4290fd95b969e246e",
@@ -51629,12 +49649,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -51851,12 +49865,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -51973,12 +49981,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -52329,12 +50331,6 @@
         "tooltips": [
           "+50% Crit Chance"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "d7157a2feb66cc44ebe839bc6e03e665",
@@ -52442,12 +50438,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -52721,12 +50711,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -52850,12 +50834,6 @@
         "tooltips": [
           "+50% Crit Chance"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "e0e26506fb0bdec47abcc73bc60fc146",
@@ -52971,12 +50949,6 @@
         "tooltips": [
           "+50% Crit Chance"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "3e91075fe8d76344ba3386808e309f1e",
@@ -53087,12 +51059,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -53358,12 +51324,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -53485,12 +51445,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -53601,12 +51555,6 @@
         "name": "Deadly",
         "tooltips": [
           "Adjacent Ammo items have +25% Crit Chance."
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -53724,12 +51672,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -53835,12 +51777,6 @@
         "name": "Deadly",
         "tooltips": [
           "Your items gain +25% Crit Chance for the fight."
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -54147,12 +52083,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -54403,12 +52333,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -54676,12 +52600,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
@@ -54790,12 +52708,6 @@
         "name": "Deadly",
         "tooltips": [
           "Enemy items have -100% Crit Chance."
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -55088,12 +53000,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -55466,12 +53372,6 @@
         "tooltips": [
           "+50% Crit Chance"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "783c219b4d7f3db4ab70d33ec2e9c1d2",
@@ -55627,12 +53527,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
@@ -55738,12 +53632,6 @@
         "name": "Shiny",
         "tooltips": [
           "+1 Multicast"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -55866,12 +53754,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -56130,12 +54012,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -56255,12 +54131,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -56426,12 +54296,6 @@
         "tooltips": [
           "+50% Crit Chance"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "1e4df0d48639a704e903a678087f48d8",
@@ -56540,12 +54404,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -56706,12 +54564,6 @@
         "name": "Shiny",
         "tooltips": [
           "+1 Multicast"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -56964,12 +54816,6 @@
         "tooltips": [
           "Give the Ammo item to the right of this +20% Crit Chance for the fight."
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "ea5640cf867f66748b81bb4f48a56ba4",
@@ -57177,12 +55023,6 @@
         "tooltips": [
           "+50% Crit Chance"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "19d07e90923113142b24c2aa8a951bd6",
@@ -57351,12 +55191,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -57478,12 +55312,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -57585,12 +55413,6 @@
         "name": "Shiny",
         "tooltips": [
           "+1 Multicast"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -58018,12 +55840,6 @@
         "tooltips": [
           "+50% Crit Chance"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "3f5acc478b3ca20468dd9a7cc538eede",
@@ -58140,12 +55956,6 @@
         "tooltips": [
           "+50% Crit Chance"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "59e50a43d17bf6b4593b22a5f36a0d94",
@@ -58234,12 +56044,6 @@
         "name": "Deadly",
         "tooltips": [
           "Your Small items have +20% Crit Chance."
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -58355,12 +56159,6 @@
         "tooltips": [
           "Your Aquatic items have +25% Crit Chance."
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "d9e8d848621085c41963bf657e58bd7f",
@@ -58473,12 +56271,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -58598,12 +56390,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -58772,12 +56558,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -58976,12 +56756,6 @@
         "tooltips": [
           "+50% Crit Chance"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "62899524e12e84144b7a34bf9d3c1b19",
@@ -59086,12 +56860,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -59237,12 +57005,6 @@
         "tooltips": [
           "When your enemy uses an item, burn 4."
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "80818f8f49a92ef4997e16c70afb1c11",
@@ -59348,12 +57110,6 @@
         "tooltips": [
           "+50% Crit Chance"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "717e499841344b9479bfb0d6a51df861",
@@ -59421,12 +57177,6 @@
         "name": "Deadly",
         "tooltips": [
           "Shield Properties adjacent to this have + Crit Chance equal to the value of your highest value item. [0]"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -59556,12 +57306,6 @@
         "name": "Deadly",
         "tooltips": [
           "This has +50% Crit Chance."
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -59863,12 +57607,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -59976,12 +57714,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -60103,12 +57835,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -60280,12 +58006,6 @@
         "tooltips": [
           "+50% Crit Chance"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "ee9464ac16abd7341ab613c9f307aa7b",
@@ -60403,12 +58123,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -60520,12 +58234,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -60649,12 +58357,6 @@
         "name": "Deadly",
         "tooltips": [
           "When you Shield, your items gain 6% Crit Chance for the fight."
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -60954,12 +58656,6 @@
         "tooltips": [
           "Double Slow"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "ce4f771d6ed4589468ff22f7b0f95432",
@@ -61108,12 +58804,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -61337,12 +59027,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -61461,12 +59145,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -61638,12 +59316,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -61745,12 +59417,6 @@
         "name": "Shiny",
         "tooltips": [
           "+1 Multicast"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -61867,12 +59533,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -61998,12 +59658,6 @@
         ]
       },
       {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "name": "Obsidian",
         "tooltips": [
           "Lifesteal"
@@ -62117,12 +59771,6 @@
         "name": "Shiny",
         "tooltips": [
           "+1 Multicast"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -62239,12 +59887,6 @@
         "name": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -62492,12 +60134,6 @@
         "tooltips": [
           "When you use an adjacent item, the other adjacent item gains 25% Crit Chance."
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "3b9e1ad401fbc374587dfdd32f0671b1",
@@ -62611,12 +60247,6 @@
         "name": "Deadly",
         "tooltips": [
           "Your items gain +20% Crit Chance for the fight."
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -62772,12 +60402,6 @@
         "tooltips": [
           "This has double Crit Chance bonus."
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "a540011b01fed86489f4714edccaeff6",
@@ -62882,12 +60506,6 @@
         "tooltips": [
           "+50% Crit Chance"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "3812162a5ea17744483e26897c64bef8",
@@ -62935,50 +60553,6 @@
     "artKey": "Icon_Skill_MON_Lurk_01.png",
     "unifiedTooltips": [
       "If you have only one medium item, its cooldown is reduced by 30%."
-    ]
-  },
-  {
-    "id": "d562bfda-d926-44da-9e64-95ce81e3e6a9",
-    "name": "SkillCard - Speed",
-    "type": "Skill",
-    "startingTier": "Bronze",
-    "tiers": {
-      "Bronze": {
-        "tooltips": [
-          "Gain 10 Speed."
-        ]
-      },
-      "Silver": {
-        "tooltips": [
-          "Gain 10 Speed."
-        ]
-      },
-      "Gold": {
-        "tooltips": [
-          "Gain 10 Speed."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "Gain 10 Speed."
-        ]
-      },
-      "Legendary": {
-        "tooltips": [
-          "Gain 10 Speed."
-        ]
-      }
-    },
-    "tags": [],
-    "hiddenTags": [
-      "Cooldown"
-    ],
-    "size": "Medium",
-    "heroes": [],
-    "enchantments": [],
-    "artKey": "",
-    "unifiedTooltips": [
-      "Gain 10 Speed."
     ]
   },
   {
@@ -63120,12 +60694,6 @@
         "tooltips": [
           "Double Crit Chance"
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "e842d7f6bc753494298d8ec87ab0bd9c",
@@ -63221,12 +60789,6 @@
         "name": "Shiny",
         "tooltips": [
           "+1 Multicast"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -63339,12 +60901,6 @@
         "tooltips": [
           "Adjacent properties have +25% Crit Chance."
         ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
       }
     ],
     "artKey": "0603943d1046dde49b484ae7ed3d6678",
@@ -63454,12 +61010,6 @@
         "name": "Deadly",
         "tooltips": [
           "Double Crit Chance"
-        ]
-      },
-      {
-        "name": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],

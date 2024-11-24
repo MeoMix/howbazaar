@@ -6,6 +6,7 @@
     import { filterTags } from "$lib/utils/filterUtils";
     import CardBadges from "./CardBadges.svelte";
     import UnifiedTooltips from "./UnifiedTooltips.svelte";
+    import CardImage from "./CardImage.svelte";
 
     const { card }: { card: ClientSideCardSkill } = $props();
 
@@ -19,6 +20,8 @@
     class={`w-full relative border-2 text-gray-900 dark:bg-bazaar-background dark:text-bazaar-tan700 dark:border-bazaar-orange`}
     {id}
 >
+    <CardImage name={card.name} type="skills" size={card.size} />
+
     <div class="flex flex-col gap-2 p-4 relative">
         <div class="font-bold text-2xl">
             {card.name}

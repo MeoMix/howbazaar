@@ -57,19 +57,34 @@
                 <span class="font-bold text-green-500">Done!</span>
             </li>
             <li>
-                <span>
-                    Polish some lingering issues with the design around legibility,
-                    colors, lightmode.
+                <span class="line-through">
+                    Polish some lingering issues with the design around
+                    legibility, colors, lightmode.
                 </span>
-                <span class="font-bold text-orange-500">(This is taking longer than expected. I made a first pass at some issues, but need at least another day)</span>
+                <span class="font-bold text-green"
+                    >Mostly Done! I'll work on the UI more in a week, need to
+                    focus on features.</span
+                >
             </li>
             <li>
-                Add support for images to Items and Skills pages! This has been
-                a long-standing request.
+                <span class="line-through">
+                    Add support for images to Items and Skills pages! This has
+                    been a long-standing request.
+                </span>
+                <span class="font-bold text-green-500"
+                    >Mostly Done! I'm not 100% sold on the UI for presenting
+                    images, but they're there!</span
+                >
             </li>
             <li>
-                Assuming a Wednesday patch comes out, update website to reflect
-                new patch changes.
+                <span class="line-through">
+                    Assuming a Wednesday patch comes out, update website to
+                    reflect new patch changes.
+                </span>
+
+                <span class="font-bold text-green-500">
+                    Patch didn't change any data available to my scripts.
+                </span>
             </li>
         </ul>
     </div>

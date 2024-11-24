@@ -329,6 +329,7 @@ function parseItemsAndSkills(cardsJson: CardsJson): ClientSideCard[] {
         entry.SpawningEligibility !== "Never" &&
         entry.Tiers !== undefined &&
         entry.Localization.Title.Text !== null &&
+        !!entry.ArtKey &&
         !explicitlyHiddenItemIds.includes(entry.Id);
 
     const validCards = Object.values(cardsJson).filter(isItemOrSkill);
@@ -533,6 +534,15 @@ function parseItemsAndSkills(cardsJson: CardsJson): ClientSideCard[] {
                 if (card.Localization.Title.Text === "Force Field" && enchantmentName === "Restorative") {
                     tooltips = ["Heal equal to your shield."];
                 }
+            }
+
+            // Explicitly filter out Radiant's default case because only complete beginners don't know what it does
+            // and because it appears on ~every item while also being quite wordy. Just doesn't add a lot of value.
+            if (enchantmentName === "Radiant" && tooltips[0]?.includes("This cannot be Frozen")) {
+                return {
+                    name: enchantmentName,
+                    tooltips: []
+                };
             }
 
             return {

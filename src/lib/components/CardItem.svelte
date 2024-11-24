@@ -5,21 +5,12 @@
     import { filterTags } from "$lib/utils/filterUtils";
     import CardBadges from "./CardBadges.svelte";
     import UnifiedTooltips from "./UnifiedTooltips.svelte";
+    import CardImage from "./CardImage.svelte";
 
     const { card }: { card: ClientSideCardItem } = $props();
 
     const id = $derived(card.name.replace(/\s+/g, "_"));
     const tags = $derived(filterTags(card.tags, card.hiddenTags));
-    // TODO: Filter this out server-side at some point. Just didn't want to invalidate the cache for a minor change.
-    const filteredEnchantments = $derived(
-        card.enchantments.filter(
-            (enchantment) =>
-                !(
-                    enchantment.name === "Radiant" &&
-                    enchantment.tooltips[0]?.includes("This cannot be Frozen")
-                ),
-        ),
-    );
 </script>
 
 <Card
@@ -28,6 +19,8 @@
     class={`relative border-2 text-gray-900 dark:bg-bazaar-background dark:text-bazaar-tan700 dark:border-bazaar-orange`}
     {id}
 >
+    <CardImage name={card.name} type="items" size={card.size} />
+
     <div class="flex flex-col gap-2 p-4 relative">
         <div class="font-bold text-2xl">
             {card.name}
@@ -59,13 +52,13 @@
             startingTier={card.startingTier}
         />
 
-        {#if filteredEnchantments.length > 0}
+        {#if card.enchantments.length > 0}
             <div
                 class="h-[1px] my-4 bg-gradient-to-r from-transparent via-gray-200 dark:via-bazaar-orange to-transparent"
             ></div>
 
             <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-4">
-                {#each filteredEnchantments as enchantment}
+                {#each card.enchantments as enchantment}
                     <div>
                         <div
                             class={`text-lg font-semibold text-enchantments-${enchantment.name.toLowerCase()}`}
