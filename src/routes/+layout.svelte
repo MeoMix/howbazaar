@@ -88,17 +88,13 @@
             color={"green"}
             transition={fly}
             params={{ y: 100, duration: 300 }}
+            divClass={`w-full max-w-xs p-4 text-gray-500 bg-white shadow dark:text-bazaar-tan700 dark:bg-bazaar-brown dark:shadow-bazaar-brown600 gap-3`}
             bind:toastStatus
         >
             <svelte:fragment slot="icon">
-                <CheckCircleOutline
-                    class="w-5 h-5 text-gray-900 dark:text-gray-100"
-                />
-                <span class="sr-only">Check icon</span>
+                <CheckCircleOutline class="w-5 h-5" />
             </svelte:fragment>
-            <span class="text-gray-900 dark:text-gray-100"
-                >Link copied to clipboard</span
-            >
+            <span>Link copied to clipboard</span>
         </Toast>
     </div>
 
