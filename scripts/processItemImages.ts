@@ -2,14 +2,9 @@ import * as fs from 'fs';
 import * as path from 'path';
 
 import cardsJson from '../src/lib/v2_Cards.json';
-import monstersJson from '../src/lib/v2_Monsters.json';
-import dayHoursJson from '../src/lib/v2_DayHours.json';
 import { deleteFiles } from './utils/fileUtils';
 import { parseJson as parseCardsJson } from '../src/lib/cardsJsonParser.ts';
-import { parseJson as parseMonstersJson } from '../src/lib/monstersJsonParser.ts';
-import { parseJson as parseDayHoursJson } from '../src/lib/dayHoursJsonParser.ts';
-import type { CardsJson, DayHoursJson, Monster, MonsterEncounterDay, MonstersJson } from "../src/lib/types.ts";
-import { getMonsterEncounterDays } from "../src/lib/services/monsterEncounterService.ts";
+import type { CardsJson } from "../src/lib/types.ts";
 import { removeSpecialCharacters } from './utils/stringUtils';
 import { checkAndResizeImages, convertImagesToAvif } from './utils/imageUtils';
 
@@ -143,6 +138,8 @@ const cleanFileName = (fileName: string): string => {
   return fileName;
 };
 
+// TODO: This script should ideally intelligently copy files to the end directory
+// Right now it triggers git commits on files which were (effectively) unmodified.
 // Process files with or without making changes based on dry run mode
 async function processItemImages() {
   await deleteKnownUselessFiles();
