@@ -58,7 +58,6 @@ const cleanFileName = (fileName: string): string => {
     'Forcefield': 'ForceField',
     'HakurvanLauncher': 'HakurvianLauncher',
     'SolarPanels': 'SolarFarm',
-    'YoYo': 'YoYo',
     'AlienLeeches': 'Leeches',
     'KirgSalamanderPup': 'SalamanderPup',
     'OuroborusStatue': 'OuroborosStatue',
@@ -73,6 +72,8 @@ const cleanFileName = (fileName: string): string => {
     'GumballYellow': 'YellowGumball',
     'TuskBayonets': 'TuskedHelm',
     'PigglesRed': 'RedPigglesA',
+    'PigglesYellow': 'YellowPigglesA',
+    'PigglesBlue': 'BluePigglesA',
     'Snowball': 'Icicle',
     'Fireballs': 'CharCole',
     'Snowtel': 'Igloo',
@@ -84,7 +85,45 @@ const cleanFileName = (fileName: string): string => {
     'Whip': 'MortalCoil',
     'Sickle': 'IcePick',
     'Flat_Octopus': 'Octopus',
+    'PickledAlienVeggies': 'PickledPeppers',
+    'Blowtorch': 'BlowTorch',
+    'ChronoBarrier': 'Chronobarrier',
+    'DragonsTooth': 'DragonTooth',
+    'DJCircuitBreaker': 'DJRob0t',
+    'MarbleScaleMail': 'MarbleScalemail',
+    'PepperMill': 'BlackPepper',
+    'Claw': 'ClawArm',
+    'Jaballianlongbow': 'JaballianLongbow',
+    'JaballianDagger': 'PygmaliensDagger',
+    'SlingShot': 'Slingshot',
+    'BusyBees': 'BusyBee',
+    'BelleLista': 'Bellelista',
+    'ViciousTeddyBear': 'Teddy',
+    'Boots': 'Bootstraps',
+    'Dinonysus': 'MommaSaur',
+    'TrappedDoor': 'BoobyTrap',
+    'SwitchBlade': 'Switchblade',
+    'Schematic': 'Schematics',
+    'Chassis': 'CombatCore',
+    'PowerCore': 'TheCore',
+    'Contract': 'Deed',
+    'MetalSaw': 'Hacksaw',
+    'Matryoshka': 'NestingDoll',
+    'Stash': 'Lockbox',
+    'EpicEpicureanChocolate': 'EpicureanChocolate',
+    'DooleysBed': 'ChargingStation',
+    'Chuck': 'Clawrence',
+    'Balista': 'Ballista',
+    'BuisnessCard': 'BusinessCard',
+    'WallMaker': 'BrickBuddy',
+    'Roburglars': 'MechMoles',
+    'Titanium': 'Pyrocarbon',
+    'AlienAxe': 'RuneAxe',
+    'PowerShoes': 'AgilityBoots'
   };
+
+  // Sometimes there's a literal space at the end of the filename. Madness.
+  fileName = fileName.trim();
 
   // Remove the "CF_" prefix and the following size identifier if present
   fileName = fileName.replace(/^(CF|PNG)_[SML]_/, '');
@@ -110,21 +149,7 @@ async function processItemImages() {
 
   // Parse data
   const parsedCards = parseCardsJson(cardsJson as CardsJson);
-  const parsedMonsters = parseMonstersJson(monstersJson as MonstersJson);
-  const parsedDayHours = parseDayHoursJson(dayHoursJson as DayHoursJson);
-  const monsterEncounterDays = getMonsterEncounterDays(parsedCards, parsedMonsters as Monster[], parsedDayHours) as MonsterEncounterDay[];
-
-  const itemCardNames = Array.from(new Set(
-    monsterEncounterDays.flatMap(({ groups }) =>
-      groups.flatMap(group =>
-        group.flatMap(monsterEncounter =>
-          monsterEncounter.items.map(item => {
-            return removeSpecialCharacters(item.card.name);
-          })
-        )
-      )
-    )
-  ).values());
+  const itemCardNames = parsedCards.filter(card => card.type === "Item").map(item => removeSpecialCharacters(item.name));
 
   console.log('Cleaning file names');
   await cleanFileNames();
@@ -137,12 +162,20 @@ async function processItemImages() {
   // Create a map of file -> cleanFileName
   const fileCleanNameMap = new Map(files.map(file => [file, cleanFileName(path.parse(file).name)]));
 
+  console.log('fileCleanNameMap', fileCleanNameMap);
+
   // Extract the clean filenames and card names into sets for quick lookups
   const cleanedFileNames = new Set(fileCleanNameMap.values());
   const itemCardNameSet = new Set(itemCardNames);
 
   // Determine missing file names
   const missingFileNames = itemCardNames.filter(cardName => !cleanedFileNames.has(cardName));
+
+  // Exit if there are missing files
+  if (missingFileNames.length > 0) {
+    console.error(`Missing ${missingFileNames.length} item images:`, missingFileNames);
+    return;
+  }
 
   // Determine unused files
   const unusedFiles = Array.from(fileCleanNameMap.entries())
@@ -154,12 +187,6 @@ async function processItemImages() {
     await deleteFiles(unusedFiles, assetPath);
   }
 
-  // Exit if there are missing files
-  if (missingFileNames.length > 0) {
-    console.error(`Missing ${missingFileNames.length} item images:`, missingFileNames);
-    return;
-  }
-  
   await convertImagesToAvif(`${assetPath}`, `${inputDirectory}/${assetType}-avif`);
   await checkAndResizeImages(`${inputDirectory}/${assetType}-avif`, `${outputDirectory}/${assetType}`);
 }
@@ -206,29 +233,35 @@ async function cleanFileNames() {
 async function duplicateFiles() {
   // Map of files to duplicate
   const duplicateMappings = {
-    'RedPigglesA': 'RedPigglesX',
-    'Cutlass': 'TinyCutlass'
+    'RedPigglesA': ['RedPigglesX', 'RedPigglesL', 'RedPigglesR'],
+    'YellowPigglesA': ['YellowPigglesX', 'YellowPigglesL', 'YellowPigglesR'],
+    'BluePigglesA': ['BluePigglesX', 'BluePigglesL', 'BluePigglesR'],
+    // TODO: It's weird this is needed?
+    'Cutlass': ['TinyCutlass']
   };
 
   try {
     const files = await fs.promises.readdir(assetPath);
     const missingFiles: string[] = [];
 
-    for (const [sourceFile, targetFile] of Object.entries(duplicateMappings)) {
+    for (const [sourceFile, targetFiles] of Object.entries(duplicateMappings)) {
       // Find source file by name regardless of extension
       const sourceMatch = files.find(file => path.parse(file).name === sourceFile);
 
       if (sourceMatch) {
         const sourceFilePath = path.join(assetPath, sourceMatch);
         const sourceExt = path.extname(sourceMatch);
-        const targetFilePath = path.join(assetPath, `${targetFile}${sourceExt}`);
 
-        try {
-          // Copy the file
-          await fs.promises.copyFile(sourceFilePath, targetFilePath);
-          console.log(`Copied ${sourceMatch} to ${targetFile}${sourceExt}`);
-        } catch (err) {
-          console.error(`Error copying ${sourceMatch} to ${targetFile}${sourceExt}:`, err.message);
+        for (const targetFile of targetFiles) {
+          const targetFilePath = path.join(assetPath, `${targetFile}${sourceExt}`);
+
+          try {
+            // Copy the file
+            await fs.promises.copyFile(sourceFilePath, targetFilePath);
+            console.log(`Copied ${sourceMatch} to ${targetFile}${sourceExt}`);
+          } catch (err) {
+            console.error(`Error copying ${sourceMatch} to ${targetFile}${sourceExt}:`, err.message);
+          }
         }
       } else {
         missingFiles.push(sourceFile);
