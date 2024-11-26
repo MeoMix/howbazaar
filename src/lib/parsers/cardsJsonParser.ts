@@ -2,7 +2,7 @@
 // I think I can generate a better typedef by interfacing with quicktype-core rather than the CLI
 // https://github.com/glideapps/quicktype?tab=readme-ov-file#calling-quicktype-from-javascript
 import type { Entries } from "type-fest";
-import type { CardsJson, ClientSideCard, ClientSideTier } from "$lib/types";
+import type { CardsJson, ClientSideCard, ClientSideCardCombatEncounter, ClientSideCardItem, ClientSideCardSkill, ClientSideTier } from "$lib/types";
 import type { V2CardsD as Card, Bronze as Tier, Tiers, Tier as TierType, AbilityAction, AuraAction, Ability, Aura, Operation, TargetMode } from "$lib/v2_Cards";
 import { unifyTooltips } from "$lib/utils/tooltipUtils";
 
@@ -139,7 +139,7 @@ function getAttributeValueFromTier(attributeName: string, tierAttributes: Tier["
     return attributeValue;
 }
 
-function getTierMap(card: ValidItemOrSkillCard) {
+function getTierMap(card: (ValidItemCard | ValidSkillCard)) {
     const tierOrder: TierType[] = ["Bronze", "Silver", "Gold", "Diamond", "Legendary"];
 
     // Tier Attributes in v2_Cards.json are represented with an implied inheritance hierarchy.
@@ -320,19 +320,19 @@ function getDisplayedTooltips(tooltips: string[], abilities: Ability[], auras: A
     return displayedTooltips;
 }
 
-type ValidItemOrSkillCard = Card & { Tiers: Tiers, Type: "Item" | "Skill", Localization: { Title: { Text: string } } };
+type ValidItemCard = Card & { Tiers: Tiers, Type: "Item", Localization: { Title: { Text: string } } };
+type ValidSkillCard = Card & { Tiers: Tiers, Type: "Skill", Localization: { Title: { Text: string } } };
 type ValidCombatEncounterCard = Card & { Type: "CombatEncounter", Localization: { Title: { Text: string } }, CombatantType: { MonsterTemplateId: string; } };
 
-function parseItemsAndSkills(cardsJson: CardsJson): ClientSideCard[] {
-    const isItemOrSkill = (entry: Card): entry is ValidItemOrSkillCard =>
-        (entry.Type === "Item" || entry.Type === "Skill") &&
+function parseItemCards(cardsJson: CardsJson): ClientSideCardItem[] {
+    const isValidItemCard = (entry: Card): entry is ValidItemCard =>
+        entry.Type === "Item" &&
         entry.SpawningEligibility !== "Never" &&
         entry.Tiers !== undefined &&
         entry.Localization.Title.Text !== null &&
-        !!entry.ArtKey &&
         !explicitlyHiddenItemIds.includes(entry.Id);
 
-    const validCards = Object.values(cardsJson).filter(isItemOrSkill);
+    const validCards = Object.values(cardsJson).filter(isValidItemCard);
 
     // Sanity check on Abilities and Aura IDs before proceeding.
     // This fixes "Wanted Poster" and ...
@@ -638,7 +638,6 @@ function parseItemsAndSkills(cardsJson: CardsJson): ClientSideCard[] {
             size: card.Size,
             heroes: card.Heroes,
             enchantments,
-            artKey: card.ArtKey,
             unifiedTooltips
         };
     });
@@ -646,7 +645,115 @@ function parseItemsAndSkills(cardsJson: CardsJson): ClientSideCard[] {
     return cards;
 }
 
-function parseEncounterCards(cardsJson: CardsJson) {
+function parseSkillCards(cardsJson: CardsJson): ClientSideCardSkill[] {
+    const isValidSkillCard = (entry: Card): entry is ValidSkillCard =>
+        entry.Type === "Skill" &&
+        entry.SpawningEligibility !== "Never" &&
+        entry.Tiers !== undefined &&
+        entry.Localization.Title.Text !== null &&
+        !!entry.ArtKey;
+
+    const validSkillCards = Object.values(cardsJson).filter(isValidSkillCard);
+
+    // Sanity check on Abilities and Aura IDs before proceeding.
+    // This fixes "Wanted Poster" and ...
+    for (let card of validSkillCards) {
+        for (let [abilityKey, ability] of Object.entries(card.Abilities)) {
+            if (ability.Id !== abilityKey) {
+                console.warn(
+                    `WARNING: ${card.Localization.Title.Text} - ability key/id mismatch for  ${abilityKey} / ${ability.Id}. Changing id to match key.`,
+                );
+                ability.Id = abilityKey;
+            }
+        }
+
+        for (let [auraKey, aura] of Object.entries(card.Auras)) {
+            if (aura.Id !== auraKey) {
+                console.warn(
+                    `WARNING: ${card.Localization.Title.Text} - aura key/id mismatch ${auraKey} / ${aura.Id}. Changing id to match key.`,
+                );
+                aura.Id = auraKey;
+            }
+        }
+    }
+
+    const skillCards = validSkillCards.map(card => {
+        const abilities = Object.values(card.Abilities);
+        const auras = Object.values(card.Auras);
+        const tierMap = getTierMap(card);
+
+        let tiers = Object.fromEntries((Object.entries(tierMap) as Entries<typeof tierMap>).map(
+            ([tierName, tier]) => {
+                let rawTooltips = tier.TooltipIds
+                    .map(tooltipId => card.Localization.Tooltips[tooltipId]?.Content.Text)
+                    .filter((tooltip): tooltip is string => tooltip !== undefined && tooltip !== null);
+
+                // TODO: It's weird this can miss when looking up by tooltipId which should be a key
+                if (rawTooltips.length !== tier.TooltipIds.length) {
+                    console.warn(card.Localization.Title.Text + ': Failed to match on tooltip');
+                }
+
+                // Patch Fix Critical Core having a typo'ed tooltip.
+                if (card.Localization.Title.Text === "Critical Core") {
+                    rawTooltips = rawTooltips.map((rawTooltip) => {
+                        return rawTooltip.replace("{ability.1} 1", "{ability.1}");
+                    });
+                }
+
+                let tooltips = getDisplayedTooltips(rawTooltips, abilities, auras, tier.Attributes);
+                let attributes = getDisplayedAttributes(tier.Attributes);
+                let attributeTooltips = attributes.map(attribute => `${attribute.name} ${Math.round(attribute.value)}${attribute.valueDescriptor ?? ""}`.trim());
+
+                return [tierName, {
+                    tooltips: [...attributeTooltips, ...tooltips],
+                    // attributes,
+                }]
+            },
+        )) as Record<TierType, ClientSideTier>;
+
+        let hiddenTags = card.HiddenTags;
+        const name = card.Localization.Title.Text;
+
+        // Generally sanitisize each tier of tooltips and ensure there's no duplicates.
+        // This occurs on Dooley's Scarf as well as Gearnola Bar at time of writing.
+        tiers = Object.fromEntries(
+            Object.entries(tiers).map(([tierType, tier]) => {
+                tier.tooltips = [...new Set(tier.tooltips)];
+                return [tierType, tier];
+            })
+        ) as typeof tiers;
+
+        // Fix bad data related to starting tiers. These are all Legendary.
+        let startingTier = card.StartingTier;
+
+        // Items which aren't Legendary shouldn't show unified tooltips which include Legendary since
+        // that is nonsense and would only confuse the user even if it's "technically true"
+        const tooltipsByTier = Object.entries(tiers)
+            .filter(([tierType]) => startingTier === "Legendary" || tierType !== "Legendary")
+            .map(([, tier]) => tier.tooltips);
+        const unifiedTooltips = unifyTooltips(tooltipsByTier);
+
+        return {
+            id: card.Id,
+            name,
+            type: card.Type,
+            startingTier,
+            tiers,
+            tags: card.Tags,
+            hiddenTags,
+            // TODO: remove
+            enchantments: [],
+            size: card.Size,
+            heroes: card.Heroes,
+            artKey: card.ArtKey,
+            unifiedTooltips
+        };
+    });
+
+    return skillCards;
+}
+
+function parseCombatEncounterCards(cardsJson: CardsJson) {
     const isEncounter = (entry: Card): entry is ValidCombatEncounterCard =>
         entry.Type === "CombatEncounter" &&
         entry.SpawningEligibility !== "Never" &&
@@ -667,9 +774,18 @@ function parseEncounterCards(cardsJson: CardsJson) {
     return cards;
 }
 
-export function parseJson(cardsJson: CardsJson): ClientSideCard[] {
-    const itemAndSkillCards = parseItemsAndSkills(cardsJson);
-    const encounterCards = parseEncounterCards(cardsJson);
+export function parseJson(cardsJson: CardsJson): {
+    itemCards: ClientSideCardItem[],
+    skillCards: ClientSideCardSkill[],
+    combatEncounterCards: ClientSideCardCombatEncounter[],
+} {
+    const itemCards = parseItemCards(cardsJson);
+    const skillCards = parseSkillCards(cardsJson);
+    const combatEncounterCards = parseCombatEncounterCards(cardsJson);
 
-    return [...itemAndSkillCards, ...encounterCards];
+    return {
+        itemCards,
+        skillCards,
+        combatEncounterCards,
+    };
 }

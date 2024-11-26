@@ -3,7 +3,7 @@ import * as path from 'path';
 
 import cardsJson from '../src/lib/v2_Cards.json';
 import { deleteFiles } from './utils/fileUtils';
-import { parseJson as parseCardsJson } from '../src/lib/cardsJsonParser.ts';
+import { parseJson as parseCardsJson } from '../src/lib/parsers/cardsJsonParser.ts';
 import type { CardsJson } from "../src/lib/types.ts";
 import { removeSpecialCharacters } from './utils/stringUtils';
 import { checkAndResizeImages, convertImagesToAvif } from './utils/imageUtils';

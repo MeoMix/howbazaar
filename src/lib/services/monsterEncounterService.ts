@@ -1,7 +1,9 @@
-import type { ClientSideCard, ClientSideCardCombatEncounter, ClientSideCardItem, ClientSideCardSkill, ClientSideDayHours, ClientSideTierType, Monster, MonsterEncounterDay } from "$lib/types";
+import type { ClientSideCardCombatEncounter, ClientSideCardItem, ClientSideCardSkill, ClientSideDayHours, ClientSideTierType, Monster, MonsterEncounterDay } from "$lib/types";
 
 export function getMonsterEncounterDays(
-    cards: ClientSideCard[],
+    itemCards: ClientSideCardItem[],
+    skillCards: ClientSideCardSkill[],
+    combatEncounterCards: ClientSideCardCombatEncounter[],
     monsters: Monster[],
     dayHours: ClientSideDayHours[]
 ): MonsterEncounterDay[] {
@@ -20,20 +22,18 @@ export function getMonsterEncounterDays(
                     return true;
                 })
                 .map(cardId => {
-                    const card = cards.find(card => card.id === cardId && card.type === "CombatEncounter") as ClientSideCardCombatEncounter | undefined;
+                    const combatEncounter = combatEncounterCards.find(card => card.id === cardId);
 
-                    if (card === undefined) {
+                    if (combatEncounter === undefined) {
                         console.log(`Failed to find card with cardId: ${cardId}`);
                         return null;
                     }
 
-                    const cardName = card.name;
-                    const monster = monsters.find(monster => monster.id === card.monsterTemplateId)!;
+                    const cardName = combatEncounter.name;
+                    const monster = monsters.find(monster => monster.id === combatEncounter.monsterTemplateId)!;
 
                     const items = monster.items.map(item => {
-                        const itemCard = cards.find(
-                            card => card.id === item.templateId && card.type === "Item"
-                        ) as ClientSideCardItem | undefined;
+                        const itemCard = itemCards.find(card => card.id === item.templateId);
 
                         if (itemCard === undefined) {
                             console.log(`Failed to find card item with id: ${item.templateId}`);
@@ -57,20 +57,18 @@ export function getMonsterEncounterDays(
                     }).filter(result => result !== null);
 
                     const skills = monster.skills.map(skill => {
-                        const card = cards.find(
-                            card => card.id === skill.templateId && card.type === "Skill"
-                        ) as ClientSideCardSkill | undefined;
+                        const skillCard = skillCards.find(card => card.id === skill.templateId) as ClientSideCardSkill | undefined;
 
-                        if (card === undefined) {
+                        if (skillCard === undefined) {
                             console.log(`Failed to find card skill with id: ${skill.templateId}`);
                             return null;
                         }
 
                         // Not aware of this being an issue/necessary but applying it for skills just to be cautious.
-                        const tierType = getValidTierType(skill.tierType, card.startingTier);
+                        const tierType = getValidTierType(skill.tierType, skillCard.startingTier);
 
                         return {
-                            card,
+                            card: skillCard,
                             tierType
                         };
                     }).filter(result => result !== null);

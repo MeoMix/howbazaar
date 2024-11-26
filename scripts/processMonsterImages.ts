@@ -5,9 +5,9 @@ import path from 'path';
 import cardsJson from '../src/lib/v2_Cards.json';
 import monstersJson from '../src/lib/v2_Monsters.json';
 import dayHoursJson from '../src/lib/v2_DayHours.json';
-import { parseJson as parseCardsJson } from '../src/lib/cardsJsonParser';
-import { parseJson as parseMonstersJson } from '../src/lib/monstersJsonParser';
-import { parseJson as parseDayHoursJson } from '../src/lib/dayHoursJsonParser';
+import { parseJson as parseCardsJson } from '../src/lib/parsers/cardsJsonParser';
+import { parseJson as parseMonstersJson } from '../src/lib/parsers/monstersJsonParser';
+import { parseJson as parseDayHoursJson } from '../src/lib/parsers/dayHoursJsonParser';
 import type { CardsJson, DayHoursJson, Monster, MonsterEncounterDay, MonstersJson } from "../src/lib/types";
 import { getMonsterEncounterDays } from "../src/lib/services/monsterEncounterService";
 import sharp from 'sharp';
@@ -55,10 +55,14 @@ const nameToFileMap: Record<string, string> = {
 };
 
 async function processMonsterImages() {
-    const parsedCards = parseCardsJson(cardsJson as CardsJson);
+    const {
+        itemCards,
+        skillCards,
+        combatEncounterCards,
+    } = parseCardsJson(cardsJson as CardsJson);
     const parsedMonsters = parseMonstersJson(monstersJson as MonstersJson);
     const parsedDayHours = parseDayHoursJson(dayHoursJson as DayHoursJson);
-    const monsterEncounterDays = getMonsterEncounterDays(parsedCards, parsedMonsters as Monster[], parsedDayHours) as MonsterEncounterDay[];
+    const monsterEncounterDays = getMonsterEncounterDays(itemCards, skillCards, combatEncounterCards, parsedMonsters as Monster[], parsedDayHours) as MonsterEncounterDay[];
 
     const monsterEncounterNames = monsterEncounterDays.flatMap(({ groups }) =>
         groups.flatMap(group =>

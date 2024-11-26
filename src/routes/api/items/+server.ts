@@ -1,14 +1,14 @@
 import { json } from "@sveltejs/kit";
 import type { RequestHandler } from "@sveltejs/kit";
-import type { ClientSideCard, ItemsApiResponse } from "$lib/types";
+import type { ClientSideCardItem, ItemsApiResponse } from "$lib/types";
 import { getHash } from "$lib/utils/dataUtils";
 import { getItems } from "$lib/services/itemService";
-import parsedCards from "$lib/processedCards.json" assert { type: "json" };
+import parsedItemCards from "$lib/processedItemCards.json" assert { type: "json" };
 
 let serverVersion: string | undefined;
 
 export const GET: RequestHandler = ({ url, request }) => {
-    const items = getItems(parsedCards as ClientSideCard[]);
+    const items = getItems(parsedItemCards as ClientSideCardItem[]);
     serverVersion ??= getHash(items);
 
     // Check for requested version via query parameter

@@ -1,20 +1,24 @@
 import { json } from "@sveltejs/kit";
 import type { RequestHandler } from "@sveltejs/kit";
-import type { ClientSideCard, ClientSideDayHours, Monster, MonsterEncounterDaysApiResponse } from "$lib/types";
+import type { ClientSideCardCombatEncounter, ClientSideCardItem, ClientSideCardSkill, ClientSideDayHours, Monster, MonsterEncounterDaysApiResponse } from "$lib/types";
 import { getMonsterEncounterDays } from "$lib/services/monsterEncounterService";
 import { getHash } from "$lib/utils/dataUtils";
-import parsedCards from "$lib/processedCards.json" assert { type: "json" };
+import parsedItemCards from "$lib/processedItemCards.json" assert { type: "json" };
+import parsedSkillCards from "$lib/processedSkillCards.json" assert { type: "json" };
+import parsedCombatEncounterCards from "$lib/processedCombatEncounterCards.json" assert { type: "json" };
 import parsedMonsters from "$lib/processedMonsters.json" assert { type: "json" };
 import parsedDayHours from "$lib/processedDayHours.json" assert { type: "json" };
 
 let serverVersion: string | undefined;
 
 export const GET: RequestHandler = ({ url, request }) => {
-    const cards = parsedCards as ClientSideCard[];
+    const itemCards = parsedItemCards as ClientSideCardItem[];
+    const skillCards = parsedSkillCards as ClientSideCardSkill[];
+    const combatEncounterCards = parsedCombatEncounterCards as ClientSideCardCombatEncounter[];
     const monsters = parsedMonsters as Monster[];
     const dayHours = parsedDayHours as ClientSideDayHours[];
 
-    const monsterEncounterDays = getMonsterEncounterDays(cards, monsters, dayHours)
+    const monsterEncounterDays = getMonsterEncounterDays(itemCards, skillCards, combatEncounterCards, monsters, dayHours)
     serverVersion ??= getHash(monsterEncounterDays);
 
     // Check for requested version via query parameter

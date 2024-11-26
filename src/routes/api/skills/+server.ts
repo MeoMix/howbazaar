@@ -1,14 +1,14 @@
 import { json } from "@sveltejs/kit";
 import type { RequestHandler } from "@sveltejs/kit";
 import { getHash } from "$lib/utils/dataUtils";
-import type { ClientSideCard, SkillsApiResponse } from "$lib/types";
+import type { ClientSideCardSkill, SkillsApiResponse } from "$lib/types";
 import { getSkills } from "$lib/services/skillService";
-import parsedCards from "$lib/processedCards.json" assert { type: "json" };
+import parsedSkillCards from "$lib/processedSkillCards.json" assert { type: "json" };
 
 let serverVersion: string | undefined;
 
 export const GET: RequestHandler = ({ url, request }) => {
-    const skills = getSkills(parsedCards as ClientSideCard[]);
+    const skills = getSkills(parsedSkillCards as ClientSideCardSkill[]);
     serverVersion ??= getHash(skills);
 
     // Check for requested version via query parameter
