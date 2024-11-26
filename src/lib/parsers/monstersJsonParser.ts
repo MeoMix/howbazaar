@@ -1,5 +1,5 @@
 
-import type { ClientSideEnchantmentType, Monster, MonstersJson } from "./types";
+import type { ClientSideEnchantmentType, Monster, MonstersJson } from "../types";
 
 export function parseJson(monstersJson: MonstersJson): Monster[] {
     const monsters = Object.values(monstersJson)

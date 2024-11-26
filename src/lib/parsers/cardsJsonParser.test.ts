@@ -1,8 +1,7 @@
 import { describe, it, expect, beforeAll } from 'vitest';
 import { parseJson } from './cardsJsonParser';
 import cardsJson from "$lib/v2_Cards.json" assert { type: "json" };
-import type { CardsJson, ClientSideCardItem, ClientSideCardSkill } from './types';
-import { mergeStrings, replaceMultiplier } from './utils/tooltipUtils';
+import type { CardsJson, ClientSideCardItem, ClientSideCardSkill } from '$lib/types';
 
 describe('cardJsonParser', () => {
   let cards: (ClientSideCardItem | ClientSideCardSkill)[];
@@ -11,99 +10,7 @@ describe('cardJsonParser', () => {
     cards = parseJson(cardsJson as CardsJson).filter(card => card.type !== "CombatEncounter");
   });
 
-  describe('mergeStrings', () => {
-    it('first', () => {
-      const strings = [
-        "Haste 1 Aquatic item for 2 second(s).",
-        "Haste 2 Aquatic items for 2 second(s).",
-        "Haste 3 Aquatic items for 2 second(s).",
-        "Haste 4 Aquatic items for 2 second(s)."
-      ];
-
-      const mergedString = mergeStrings(strings);
-      expect(mergedString).toEqual("Haste (1/2/3/4) Aquatic items for 2 second(s).");
-    });
-
-    it('second', () => {
-      const strings = [
-        "Slow 1 item for 1 second(s).",
-        "Slow 2 items for 1 second(s).",
-        "Slow 3 items for 1 second(s).",
-        "Slow 4 items for 2 second(s)."
-      ];
-
-      const mergedString = mergeStrings(strings);
-
-      expect(mergedString).toEqual("Slow (1/2/3/4) items for (1/1/1/2) second(s).");
-    });
-
-    it('third', () => {
-      const strings = [
-        "When you use the Core or another Ray, your Weapons gain +3 Damage for the fight.",
-        "When you use the Core or another Ray, your Weapons gain +4 Damage for the fight.",
-        "When you use the Core or another Ray, your Weapons gain +5 Damage for the fight."
-      ];
-
-      const mergedString = mergeStrings(strings);
-
-      expect(mergedString).toEqual("When you use the Core or another Ray, your Weapons gain (+3/+4/+5) Damage for the fight.");
-    });
-
-    it('fourth', () => {
-      const strings = [
-        "The Property to the left of this has double value in combat and has its cooldown reduced by 10%.",
-        "The Property to the left of this has double value in combat and has its cooldown reduced by 20%.",
-        "The Property to the left of this has double value in combat and has its cooldown reduced by 30%."
-      ];
-
-      const mergedString = mergeStrings(strings);
-
-      expect(mergedString).toEqual("The Property to the left of this has double value in combat and has its cooldown reduced by (10%/20%/30%).");
-    });
-
-    it('fifth', () => {
-      const strings = [
-        "Heal equal to this item's value.",
-        "Heal equal to double this item's value.",
-        "Heal equal to triple this item's value.",
-        "Heal equal to quadruple this item's value."
-      ].map(replaceMultiplier);
-
-      const mergedString = mergeStrings(strings);
-
-      expect(mergedString).toEqual("Heal equal to (1x/2x/3x/4x) this item's value.");
-    });
-
-    it('sixth', () => {
-      const strings = [
-        "You have +50% Max Health.",
-        "You have +75% Max Health.",
-        "You have double Max Health."
-      ];
-
-      const mergedString = mergeStrings(strings);
-
-      // TODO: prefer +100% instead of double
-      expect(mergedString).toEqual("You have (+50%/+75%/double) Max Health.");
-    });
-
-    it('seventh', () => {
-      const strings = [
-        "Adjacent items have +3% Crit chance.",
-        "Adjacent items have +6% Crit chance.",
-        "Adjacent items have +9% Crit chance.",
-        "Adjacent items have +12% Crit chance."
-      ];
-
-      const mergedString = mergeStrings(strings);
-
-      // TODO: prefer +100% instead of double
-      expect(mergedString).toEqual("Adjacent items have (+3%/+6%/+9%/+12%) Crit chance.");
-    });
-  });
-
-  // TODO: Need to represent attributes as tooltips for unification too because sometimes Cooldown changes.
-  describe.only('unifiedTooltips', () => {
+  describe('unifiedTooltips', () => {
     it('should unify Abacus tooltips', () => {
       const abacus = cards.find(card => card.name === "Abacus")!;
 

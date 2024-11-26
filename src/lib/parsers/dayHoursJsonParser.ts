@@ -1,4 +1,4 @@
-import type { ClientSideDayHours, DayHoursJson } from "./types";
+import type { ClientSideDayHours, DayHoursJson } from "$lib/types";
 
 export function parseJson(dayHoursJson: DayHoursJson): ClientSideDayHours[] {
     const dayHoursList = Object.values(dayHoursJson)

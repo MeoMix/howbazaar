@@ -1,11 +1,11 @@
 import { describe, it, expect, beforeAll } from 'vitest';
-import { parseJson as parseCardsJson } from '../cardsJsonParser';
-import { parseJson as parseMonstersJson } from '../monstersJsonParser';
-import { parseJson as parseDayHoursJson } from '../dayHoursJsonParser';
+import { parseJson as parseCardsJson } from '$lib/parsers/cardsJsonParser';
+import { parseJson as parseMonstersJson } from '$lib/parsers/monstersJsonParser';
+import { parseJson as parseDayHoursJson } from '$lib/parsers/dayHoursJsonParser';
 import cardsJson from "$lib/v2_Cards.json" assert { type: "json" };
 import monstersJson from "$lib/v2_Monsters.json" assert { type: "json" };
 import dayHoursJson from "$lib/v2_DayHours.json" assert { type: "json" };
-import type { CardsJson, Monster, MonsterEncounterDay, MonstersJson } from '../types';
+import type { CardsJson, Monster, MonsterEncounterDay, MonstersJson } from '$lib/types';
 import type { ClientSideCard, ClientSideDayHours, DayHoursJson } from '$lib/types';
 import { getMonsterEncounterDays } from './monsterEncounterService';
 
