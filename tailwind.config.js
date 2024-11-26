@@ -95,6 +95,7 @@ const tiers = {
 
 // Dynamically generate class strings for Tailwind safelist
 const safelist = [
+  'sr-only',
   ...Object.entries(enchantments).flatMap(([e]) => [
     `text-enchantments-${e}`,
     `border-enchantments-${e}`,
