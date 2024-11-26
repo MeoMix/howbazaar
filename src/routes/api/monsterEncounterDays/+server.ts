@@ -1,32 +1,21 @@
 import { json } from "@sveltejs/kit";
 import type { RequestHandler } from "@sveltejs/kit";
-import type { ClientSideCard, ClientSideDayHours, Monster, MonsterEncounterDay, MonsterEncounterDaysApiResponse } from "$lib/types";
+import type { ClientSideCard, ClientSideDayHours, Monster, MonsterEncounterDaysApiResponse } from "$lib/types";
 import { getMonsterEncounterDays } from "$lib/services/monsterEncounterService";
 import { getHash } from "$lib/utils/dataUtils";
 import parsedCards from "$lib/processedCards.json" assert { type: "json" };
 import parsedMonsters from "$lib/processedMonsters.json" assert { type: "json" };
 import parsedDayHours from "$lib/processedDayHours.json" assert { type: "json" };
 
-let monsterEncounterDaysHash: string | undefined;
-function getVersionedMonsterEncounterDays(): { monsterEncounterDays: MonsterEncounterDay[]; version: string; } {
+let serverVersion: string | undefined;
+
+export const GET: RequestHandler = ({ url, request }) => {
     const cards = parsedCards as ClientSideCard[];
     const monsters = parsedMonsters as Monster[];
     const dayHours = parsedDayHours as ClientSideDayHours[];
 
     const monsterEncounterDays = getMonsterEncounterDays(cards, monsters, dayHours)
-
-    if (monsterEncounterDaysHash === undefined) {
-        monsterEncounterDaysHash = getHash(monsterEncounterDays);
-    }
-
-    return {
-        monsterEncounterDays: monsterEncounterDays.sort((a, b) => a.day - b.day),
-        version: monsterEncounterDaysHash,
-    };
-}
-
-export const GET: RequestHandler = ({ url, request }) => {
-    const { monsterEncounterDays, version: serverVersion } = getVersionedMonsterEncounterDays();
+    serverVersion ??= getHash(monsterEncounterDays);
 
     // Check for requested version via query parameter
     const requestedVersion = url.searchParams.get("version");
@@ -40,7 +29,7 @@ export const GET: RequestHandler = ({ url, request }) => {
         return new Response(null, { status: 304 });
     }
 
-    const response: MonsterEncounterDaysApiResponse = { data: monsterEncounterDays, version: serverVersion };
+    const response: MonsterEncounterDaysApiResponse = { data: monsterEncounterDays.sort((a, b) => a.day - b.day), version: serverVersion };
 
     return json(response,
         {

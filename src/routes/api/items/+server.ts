@@ -1,26 +1,15 @@
 import { json } from "@sveltejs/kit";
 import type { RequestHandler } from "@sveltejs/kit";
-import type { ClientSideCard, ClientSideCardItem, ItemsApiResponse } from "$lib/types";
-import parsedCards from "$lib/processedCards.json" assert { type: "json" };
+import type { ClientSideCard, ItemsApiResponse } from "$lib/types";
 import { getHash } from "$lib/utils/dataUtils";
+import { getItems } from "$lib/services/itemService";
+import parsedCards from "$lib/processedCards.json" assert { type: "json" };
 
-let itemsHash: string | undefined;
-function getVersionedItems(): { items: ClientSideCardItem[]; version: string; } {
-    const items = (parsedCards as ClientSideCard[])
-        .filter((card): card is ClientSideCardItem => card.type === "Item");
-
-    if (itemsHash === undefined) {
-        itemsHash = getHash(items);
-    }
-
-    return {
-        items: items.sort((a, b) => a.name.localeCompare(b.name)),
-        version: itemsHash,
-    };
-}
+let serverVersion: string | undefined;
 
 export const GET: RequestHandler = ({ url, request }) => {
-    const { items, version: serverVersion } = getVersionedItems();
+    const items = getItems(parsedCards as ClientSideCard[]);
+    serverVersion ??= getHash(items);
 
     // Check for requested version via query parameter
     const requestedVersion = url.searchParams.get("version");
@@ -34,7 +23,7 @@ export const GET: RequestHandler = ({ url, request }) => {
         return new Response(null, { status: 304 });
     }
 
-    const response: ItemsApiResponse = { data: items, version: serverVersion };
+    const response: ItemsApiResponse = { data: items.sort((a, b) => a.name.localeCompare(b.name)), version: serverVersion };
 
     return json(response,
         {
