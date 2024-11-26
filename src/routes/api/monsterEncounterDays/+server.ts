@@ -1,6 +1,29 @@
 import { json } from "@sveltejs/kit";
 import type { RequestHandler } from "@sveltejs/kit";
-import { getVersionedMonsterEncounterDays } from "$lib/utils/dataUtils";
+import type { ClientSideCard, ClientSideDayHours, Monster, MonsterEncounterDay, MonsterEncounterDaysApiResponse } from "$lib/types";
+import { getMonsterEncounterDays } from "$lib/services/monsterEncounterService";
+import { getHash } from "$lib/utils/dataUtils";
+import parsedCards from "$lib/processedCards.json" assert { type: "json" };
+import parsedMonsters from "$lib/processedMonsters.json" assert { type: "json" };
+import parsedDayHours from "$lib/processedDayHours.json" assert { type: "json" };
+
+let monsterEncounterDaysHash: string | undefined;
+function getVersionedMonsterEncounterDays(): { monsterEncounterDays: MonsterEncounterDay[]; version: string; } {
+    const cards = parsedCards as ClientSideCard[];
+    const monsters = parsedMonsters as Monster[];
+    const dayHours = parsedDayHours as ClientSideDayHours[];
+
+    const monsterEncounterDays = getMonsterEncounterDays(cards, monsters, dayHours)
+
+    if (monsterEncounterDaysHash === undefined) {
+        monsterEncounterDaysHash = getHash(monsterEncounterDays);
+    }
+
+    return {
+        monsterEncounterDays: monsterEncounterDays.sort((a, b) => a.day - b.day),
+        version: monsterEncounterDaysHash,
+    };
+}
 
 export const GET: RequestHandler = ({ url, request }) => {
     const { monsterEncounterDays, version: serverVersion } = getVersionedMonsterEncounterDays();
@@ -17,7 +40,9 @@ export const GET: RequestHandler = ({ url, request }) => {
         return new Response(null, { status: 304 });
     }
 
-    return json({ data: monsterEncounterDays, version: serverVersion },
+    const response: MonsterEncounterDaysApiResponse = { data: monsterEncounterDays, version: serverVersion };
+
+    return json(response,
         {
             headers: {
                 "Cache-Control": `public, max-age=${clientETag ? "3600" : "31536000"}`, // Cache briefly if relying on etag otherwise for a long time

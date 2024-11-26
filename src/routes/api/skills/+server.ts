@@ -1,6 +1,24 @@
 import { json } from "@sveltejs/kit";
 import type { RequestHandler } from "@sveltejs/kit";
-import { getVersionedSkills } from "$lib/utils/dataUtils";
+import { getHash } from "$lib/utils/dataUtils";
+import type { ClientSideCard, ClientSideCardSkill, SkillsApiResponse } from "$lib/types";
+import parsedCards from "$lib/processedCards.json" assert { type: "json" };
+
+let skillsHash: string | undefined;
+
+function getVersionedSkills(): { skills: ClientSideCardSkill[]; version: string; } {
+    const skills = (parsedCards as ClientSideCard[])
+        .filter((card): card is ClientSideCardSkill => card.type === "Skill");
+
+    if (skillsHash === undefined) {
+        skillsHash = getHash(skills);
+    }
+
+    return {
+        skills: skills.sort((a, b) => a.name.localeCompare(b.name)),
+        version: skillsHash,
+    };
+}
 
 export const GET: RequestHandler = ({ url, request }) => {
     const { skills, version: serverVersion } = getVersionedSkills();
@@ -17,7 +35,9 @@ export const GET: RequestHandler = ({ url, request }) => {
         return new Response(null, { status: 304 });
     }
 
-    return json({ data: skills, version: serverVersion },
+    const response: SkillsApiResponse = { data: skills, version: serverVersion };
+
+    return json(response,
         {
             headers: {
                 "Cache-Control": `public, max-age=${clientETag ? "3600" : "31536000"}`, // Cache briefly if relying on etag otherwise for a long time

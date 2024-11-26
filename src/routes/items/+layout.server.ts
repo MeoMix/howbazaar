@@ -1,9 +1,14 @@
-import { getVersionedItems } from "$lib/utils/dataUtils";
+import type { ItemsApiResponse } from "$lib/types";
 import { getCardFilterOptions } from "$lib/utils/filterUtils";
 
-export function load() {
-    const { items, version } = getVersionedItems();
+export async function load({ fetch }) {
+    const response = await fetch('/api/items');
 
+    if (!response.ok) {
+        throw new Error(`Failed to load items: ${response.statusText}`);
+    }
+
+    const { data: items, version }: ItemsApiResponse = await response.json();
     const { heroOptions, tagOptions, minimumTierOptions, sizeOptions } = getCardFilterOptions(items)
 
     return {

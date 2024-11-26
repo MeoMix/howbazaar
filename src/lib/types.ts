@@ -123,3 +123,18 @@ export type Option = {
 };
 
 export type TriState = "on" | "off" | "unset";
+
+export type ItemsApiResponse = {
+    data: ClientSideCardItem[];
+    version: string;
+}
+
+export type SkillsApiResponse = {
+    data: ClientSideCardSkill[];
+    version: string;
+}
+
+export type MonsterEncounterDaysApiResponse = {
+    data: MonsterEncounterDay[];
+    version: string;
+}

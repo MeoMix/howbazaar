@@ -1,7 +1,13 @@
-import { getVersionedMonsterEncounterDays } from "$lib/utils/dataUtils";
+import type { MonsterEncounterDaysApiResponse } from "$lib/types";
 
-export function load() {
-    const { monsterEncounterDays, version } = getVersionedMonsterEncounterDays();
+export async function load({ fetch }) {
+    const response = await fetch('/api/monsterEncounterDays');
+
+    if (!response.ok) {
+        throw new Error(`Failed to load monsterEncounterDays: ${response.statusText}`);
+    }
+
+    const { data: monsterEncounterDays, version }: MonsterEncounterDaysApiResponse = await response.json();
 
     const dayOptions = monsterEncounterDays.map(({ day }) => ({
         name: `${day}${day === 10 ? "+" : ""}`,
