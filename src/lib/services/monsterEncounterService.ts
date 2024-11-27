@@ -1,12 +1,13 @@
-import type { ParsedCombatEncounterCard, ParsedItemCard, ParsedSkillCard, ParsedDayHour, TierType, ParsedMonster, MonsterEncounterDay } from "$lib/types";
+import type { ParsedCombatEncounterCard, ParsedItemCard, ParsedSkillCard, ParsedDayHour, TierType, ParsedMonster, ClientSideMonsterEncounterDay } from "$lib/types";
 
+// TODO: This should reduce 'MonsterEncounterDay' which is converted to DTO in the API layer.
 export function getMonsterEncounterDays(
     itemCards: ParsedItemCard[],
     skillCards: ParsedSkillCard[],
     combatEncounterCards: ParsedCombatEncounterCard[],
     monsters: ParsedMonster[],
     dayHours: ParsedDayHour[]
-): MonsterEncounterDay[] {
+): ClientSideMonsterEncounterDay[] {
     let monsterEncounterDayHours = dayHours.filter(({ day, hour }) => day <= 10 && hour === 3);
 
     const monsterEncounterDays = monsterEncounterDayHours.map((dayHour) => {

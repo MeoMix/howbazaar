@@ -390,10 +390,10 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
             },
         )) as Record<TierType, { tooltips: string[] }>;
 
-        const enchantments = card.Enchantments ? (Object.entries(card.Enchantments) as Entries<typeof card.Enchantments>).map(([enchantmentName, enchantment]) => {
+        const enchantments = card.Enchantments ? (Object.entries(card.Enchantments) as Entries<typeof card.Enchantments>).map(([enchantmentType, enchantment]) => {
             if (!enchantment) {
                 return {
-                    name: enchantmentName,
+                    type: enchantmentType,
                     tooltips: []
                 };
             }
@@ -406,7 +406,7 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
             if (Object.values(enchantment.Abilities).length > 0 && enchantmentAbilities.length === 0 ||
                 Object.values(enchantment.Auras).length > 0 && enchantmentAuras.length === 0) {
                 return {
-                    name: enchantmentName,
+                    type: enchantmentType,
                     tooltips: []
                 };
             }
@@ -518,7 +518,7 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
                 }
 
                 // TODO: Do this intelligently not patch fix
-                if (card.Localization.Title.Text === "Open Sign" && enchantmentName === "Deadly") {
+                if (card.Localization.Title.Text === "Open Sign" && enchantmentType === "Deadly") {
                     tooltips = ["Shield Properties adjacent to this have + Crit Chance equal to the value of your highest value item. [0]"]
                 }
 
@@ -531,22 +531,22 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
                 tooltips = getDisplayedTooltips(rawTooltips, enchantmentAbilities, enchantmentAuras, enchantmentAttributes);
 
                 // TODO: Do this intelligently not patch fix
-                if (card.Localization.Title.Text === "Force Field" && enchantmentName === "Restorative") {
+                if (card.Localization.Title.Text === "Force Field" && enchantmentType === "Restorative") {
                     tooltips = ["Heal equal to your shield."];
                 }
             }
 
             // Explicitly filter out Radiant's default case because only complete beginners don't know what it does
             // and because it appears on ~every item while also being quite wordy. Just doesn't add a lot of value.
-            if (enchantmentName === "Radiant" && tooltips[0]?.includes("This cannot be Frozen")) {
+            if (enchantmentType === "Radiant" && tooltips[0]?.includes("This cannot be Frozen")) {
                 return {
-                    name: enchantmentName,
+                    type: enchantmentType,
                     tooltips: []
                 };
             }
 
             return {
-                name: enchantmentName,
+                type: enchantmentType,
                 tooltips,
             };
         }).filter(enchantment => enchantment.tooltips.length > 0) : [];

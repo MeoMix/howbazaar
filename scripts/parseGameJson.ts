@@ -16,15 +16,15 @@ async function parseGameJson() {
             skillCards,
             combatEncounterCards
         } = parseCardsJson(cardsJson as CardsJson);
-        const processedMonsters = parseMonstersJson(monstersJson as MonstersJson);
-        const processedDayHours = parseDayHoursJson(dayHoursJson as DayHoursJson);
+        const monsters = parseMonstersJson(monstersJson as MonstersJson);
+        const dayHours = parseDayHoursJson(dayHoursJson as DayHoursJson);
 
         // Write processed cards data to disk
         writeTypeScriptDefaultExport('parsedItemCards', itemCards, 'ParsedItemCard');
         writeTypeScriptDefaultExport('parsedSkillCards', skillCards, 'ParsedSkillCard');
         writeTypeScriptDefaultExport('parsedCombatEncounterCards', combatEncounterCards, 'ParsedCombatEncounterCard');
-        writeTypeScriptDefaultExport('parsedMonsters', processedMonsters, 'ParsedMonster');
-        writeTypeScriptDefaultExport('parsedDayHours', processedDayHours, 'ParsedDayHour');
+        writeTypeScriptDefaultExport('parsedMonsters', monsters, 'ParsedMonster');
+        writeTypeScriptDefaultExport('parsedDayHours', dayHours, 'ParsedDayHour');
     } catch (error) {
         console.error('Error processing data:', error);
         process.exit(1);

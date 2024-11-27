@@ -1,10 +1,10 @@
 <script lang="ts">
-    import type { MonsterEncounter as MonsterEncounterType } from "$lib/types";
+    import type { ClientSideMonsterEncounter } from "$lib/types";
     import { Badge } from "flowbite-svelte";
     import MonsterCardItem from "./MonsterCardItem.svelte";
     import MonsterCardSkill from "./MonsterCardSkill.svelte";
 
-    const { monsterEncounter }: { monsterEncounter: MonsterEncounterType } =
+    const { monsterEncounter }: { monsterEncounter: ClientSideMonsterEncounter } =
         $props();
 
     const id = $derived(monsterEncounter.cardName.replace(/\s+/g, "_"));
@@ -39,7 +39,7 @@
             <MonsterCardItem
                 card={item.card}
                 tierType={item.tierType}
-                enchantmentName={item.enchantmentType}
+                enchantmentType={item.enchantmentType}
             />
         {/each}
     </div>

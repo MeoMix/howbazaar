@@ -58,61 +58,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 25."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 40."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 2."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 4."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -171,61 +171,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Golden",
+        "type": "Golden",
         "tooltips": [
           "Double Value"
         ]
       },
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 3 items for 4 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 6 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 3 items for 4 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield equal the value of your items."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Double Heal"
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 6."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 9."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -291,55 +291,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Double Slow"
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 3 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 80."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 120."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 8."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 12."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "Your Piranhas have +50% Crit Chance."
         ]
@@ -405,61 +405,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 3 items for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 3 items for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Double Shield"
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal equal to your shield."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 6."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 9."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -614,55 +614,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 3 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 80."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 120."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 8."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Double Burn"
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -720,55 +720,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Double Haste"
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 100."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 150."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 10."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 15."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "Your small items have +20% Crit Chance."
         ]
@@ -828,55 +828,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Double Slow"
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "When your enemy uses a non-Weapon item, freeze it for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "When your enemy uses a Weapon, haste 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "When your enemy uses a non-Weapon item, shield 30."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "When your enemy uses a non-Weapon item, heal 45."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "When your enemy uses a Weapon, poison 3."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "When your enemy uses a Weapon, burn 4."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "Double Damage"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -934,61 +934,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 4 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 4 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 120."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 180."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 12."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 18."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -1043,55 +1043,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 40."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 60."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 4."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 6."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "The Core has +50% Crit Chance."
         ]
@@ -1151,56 +1151,56 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "At the start of each fight, Slow 3 items for 4 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "At the start of each fight, Freeze 2 items for 4 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "At the start of each fight, Haste 3 items for 4 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "At the start of each fight, Shield 120."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "You have +12 Regeneration."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "At the start of each fight, poison 12."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "At the start of each fight, burn 16."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "Double Crit Chance",
           "Double Cooldown Reduction"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "Double Crit Chance"
         ]
@@ -1257,49 +1257,49 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Double Haste"
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 20."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 30."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 2."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 3."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
@@ -1360,49 +1360,49 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 items for 4 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "+1 Freeze Targets"
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "When you freeze, Haste 1 items for 4 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Double Shield"
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "When you freeze, heal 60."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "When you freeze, poison 4."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "When you freeze, burn 6."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
@@ -1519,61 +1519,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 3 items for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Double Freeze"
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 3 items for 3 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 120."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 180."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 12."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 18."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -1634,61 +1634,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 3 items for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 4 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Double Haste"
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 150."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 225."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 15."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 22."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -1795,55 +1795,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 3 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Double Shield"
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 120."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 8."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 12."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -1909,61 +1909,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 30."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 45."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 3."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 4."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -2023,61 +2023,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 25."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 40."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 2."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 4."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -2136,55 +2136,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 15."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 20."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 1."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Double Burn"
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -2238,55 +2238,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "When you Crit, Slow 1 items for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "When you Crit, Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "When you Crit, Haste 1 items for 3 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "When you Crit, Shield 30."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "When you Crit, Heal 45."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "When you Crit, Poison 3."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "When you Crit, Burn 4."
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "Double Crit Chance"
         ]
@@ -2342,55 +2342,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Double Shield"
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 16."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 2."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 4."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -2455,49 +2455,49 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 4 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 4 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 4 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 60."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 90."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 6."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 9."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
@@ -2556,55 +2556,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 25."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 40."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 2."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 4."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "Give an item gain 20% Crit Chance for the fight."
         ]
@@ -2663,55 +2663,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Double Shield"
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "When you Shield, your Heal items gain 2 Heal for the fight."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "When you Shield, your Poison items gain 1 Poison for the fight."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "When you Shield, your Burn items gain 1 Burn for the fight."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "When you Shield, your items gain +6% Crit Chance for the fight."
         ]
@@ -2772,61 +2772,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "When you use an adjacent item, Slow 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "When you use an adjacent item, Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "When you use an adjacent item, Haste 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "When you use an adjacent item, Shield 15."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "When you use an adjacent item, Heal 20."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "When you use an adjacent item, Poison 1."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "When you use an adjacent item, Burn 2."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -2877,55 +2877,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "When you use an Aquatic item, Slow 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "When you use an Aquatic item, Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "When you use an Aquatic item, Haste 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Double Shield"
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "When you use an Aquatic item, Heal 15."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "When you use an Aquatic item, Poison 1."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "When you use an Aquatic item, Burn 2."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "When you use an Aquatic item, give your items +3% Crit for this fight."
         ]
@@ -2971,7 +2971,7 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -3031,55 +3031,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "When you gain Regeneration, Slow 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "When you gain Regeneration, Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "When you gain Regeneration, Haste 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "When you gain Regeneration, Shield 15."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "When you gain Regeneration, Heal 20."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "When you gain Regeneration, Poison 1."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Double Burn"
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -3144,55 +3144,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Double Slow"
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze all enemy items for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste your items for 5 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 160."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 240."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 16."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Double Burn"
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "Your items gain +25% Crit Chance for the fight."
         ]
@@ -3259,61 +3259,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 20."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 30."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 2."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 3."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -3383,61 +3383,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Golden",
+        "type": "Golden",
         "tooltips": [
           "Double Value"
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield equal to triple this item's value."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Double Heal"
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 2."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 3."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -3552,55 +3552,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "+2 Slow"
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "+2 Haste"
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 6."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 8."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 1."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 2."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -3656,55 +3656,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Double Shield"
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 90."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 6."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 9."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -3765,55 +3765,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 30."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Double Heal"
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 3."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 4."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -3875,55 +3875,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "When you use a Vehicle, Slow 2 items for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "When you use a Vehicle, Freeze 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Double Haste"
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "When you use a Vehicle, Shield 60."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "When you use a Vehicle, Heal 90."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "When you use a Vehicle, Poison 6."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Double Burn"
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "Your Vehicles have +50% Crit Chance."
         ]
@@ -3988,61 +3988,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 3 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Your Shield items gain +3 Shield for the fight."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Your Heal items gain +4 Heal for the fight."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Your Poison items gain +1 Poison for the fight."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Your Burn items gain +1 Burn for the fight."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -4104,49 +4104,49 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Double Slow"
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 40."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 60."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 4."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 6."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
@@ -4199,61 +4199,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield equal to this item's ammo."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal equal to this item's ammo."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 1."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 1."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -4319,67 +4319,67 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Golden",
+        "type": "Golden",
         "tooltips": [
           "Your Small items have +1 value."
         ]
       },
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 60."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 90."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 6."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 9."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -4433,49 +4433,49 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 99 items for 10 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 12 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 3 items for 8 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 300."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 450."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 30."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 45."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "Double Charge"
         ]
@@ -4525,49 +4525,49 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Use a slow item."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Use a Freeze item."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Use a Haste item."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Use a Shield item."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Use a Heal item."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Use a Poison item."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Use a Burn item."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
@@ -4632,55 +4632,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Double Shield"
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Double Heal"
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 4."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 6."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -4739,49 +4739,49 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Double Slow"
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 25."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 40."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 2."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 4."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
@@ -4847,55 +4847,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Double Shield"
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 90."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 6."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 9."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "Your Tools have +20% Crit Chance."
         ]
@@ -4961,61 +4961,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Double Slow"
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "The first time you fall below half health each fight, Freeze 1 item for 4 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "The time you fall below half health, 2 haste all your items for 4 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "The first time you fall below half health each fight, Shield 60."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "The first time you fall below half health each fight, Heal 90."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "The first time you fall below half health each fight, Poison 6."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "The first time you fall below half health each fight, Burn 9."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "The first time you fall below half health each fight, your items gain 25% Crit Chance."
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -5076,61 +5076,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 3 items for 4 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 6 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 3 items for 4 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 150."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 225."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 15."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 22."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -5260,61 +5260,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 15."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 20."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 1."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 2."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -5439,55 +5439,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 20."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 30."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 2."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 3."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "Your weapons gain 10% Crit Chance for the fight."
         ]
@@ -5547,55 +5547,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Double Shield"
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 60."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 4."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 6."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -5659,61 +5659,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "When you Haste, Slow 1 items for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "When you Haste, Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Double Haste"
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "When you Haste, Shield 10."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "When you Haste, Heal 20."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "When you Haste, Poison 1."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "When you Haste, Burn 2."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "When you Haste, your items gain 6% Crit Chance for the fight."
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -5770,55 +5770,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "The Shield item to the left of this gains 20 Shield for the fight."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "The Heal item to the left of this gains 30 Heal for the fight."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "The Poison item to the left of this gains 2 Poison for the fight."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "The Burn item to the left of this gains 3 burn for the fight."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "The item to the left of this gains +20% Crit Chance for the fight."
         ]
@@ -5878,61 +5878,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 3 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 90."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 135."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 9."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 13."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -5998,61 +5998,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 3 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Double Shield"
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal equal to your Shield."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 8."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 12."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -6113,61 +6113,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 3 items for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 3 items for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 75."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 110."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 7."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 11."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -6240,55 +6240,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 3 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Double Shield"
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 120."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 8."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 12."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -6340,49 +6340,49 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "When you use the item to the left of this, Slow 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "When you use the item to the left of this, Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Double Haste"
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "When you use the item to the left of this, Shield 15."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "When you use the item to the left of this, Heal 20."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "When you use the item to the left of this, Poison 1."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "When you use the item to the left of this, Burn 2."
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "When you use the item to the left of this, the item to the right of this gains 20% Crit Chance for the fight."
         ]
@@ -6436,55 +6436,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "SlowAmount0"
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "When you slow, Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "When you slow, haste 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "When you slow, shield 10."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "When you slow, heal 15."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "When you slow, poison 1."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "When you slow, burn 1."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "Double Damage"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -6546,55 +6546,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Double Shield"
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 45."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 3."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Double Burn"
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -6649,61 +6649,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Golden",
+        "type": "Golden",
         "tooltips": [
           "Adjacent items have +50% Value."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Double Shield"
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal equal to the value of adjacent items."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 2."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 3."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -6768,61 +6768,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Double Freeze"
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 35."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 50."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 3."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 5."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -6890,61 +6890,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 3 items for 1 second(s)."
         ]
       },
       {
-        "name": "Golden",
+        "type": "Golden",
         "tooltips": [
           "Double Value"
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 3 items for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Double Shield"
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal equal to triple this item's value."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 4."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 7."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -7015,61 +7015,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Golden",
+        "type": "Golden",
         "tooltips": [
           "Your spare change have +1 value."
         ]
       },
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 3 items for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 3 items for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield equal to this item's Heal."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Double Heal"
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 7."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 11."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -7119,55 +7119,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "When you use your leftmost item, Slow 1 item 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "When you use your leftmost item, Freeze 1 item 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "When you use your leftmost item, Haste your rightmost item 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "When you use your leftmost item, Shield 15."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "When you use your leftmost item, Heal 20."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "When you use your leftmost item, Poison 1."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "When you use your leftmost item, Burn 2."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "Double Charge"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "When you use the leftmost item, the rightmost item gains +25% Crit Chance for the fight."
         ]
@@ -7230,67 +7230,67 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Golden",
+        "type": "Golden",
         "tooltips": [
           "Your weapons have +1 value."
         ]
       },
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 60."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 90."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 6."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 9."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -7352,49 +7352,49 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 3 items for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Double Freeze"
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 3 items for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 90."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 135."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 9."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 13."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
@@ -7451,55 +7451,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "When you use an item, Slow 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "When you use an item, Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "When you use an item, Haste 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Double Shield"
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "When you use an item, Heal 45."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "When you use an item, Poison 3."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "When you use an item, Burn 4."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -7561,37 +7561,37 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Your Shield items have +10 Shield for each Medium item you have."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Your Heal items have +15 Heal for each Medium item you have."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Your Poison items have +2 Poison for each Medium item you have."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Your Burn items have +3 Burn for each Medium item you have."
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "Your items have +10% Crit Chance for each Medium item you have."
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -7649,61 +7649,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 4 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 4 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 4 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 120."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 180."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 12."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 18."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -7770,61 +7770,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 1 second(s)."
         ]
       },
       {
-        "name": "Golden",
+        "type": "Golden",
         "tooltips": [
           "This has double income bonus."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Double Shield"
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 45."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 3."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 4."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -7882,43 +7882,43 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "When you use an item, Slow 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "When you use an item, Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "When you use an item, Haste 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "When you use an item, Shield 10."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Double Heal"
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "When you use an item, Poison 1."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "When you use an item, Burn 2."
         ]
@@ -7972,55 +7972,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "The first time you would die each fight, slow all your opponent's items for 6 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "The first time you would die each fight, freeze all enemy items for 3 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "The first time you would die each fight, haste all your items for 6 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "The first time you would die each fight, shield equal to 25% of your max health."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "The first time you would die each fight, cleanse all Burn and Poison and gain 20 Regeneration for the fight."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "The first time you would die each fight, poison equal to 2% of your max health."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "The first time you would die each fight, burn equal to 2% of your max health."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -8082,55 +8082,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 25."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Double Heal"
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 2."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 4."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -8180,55 +8180,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "When you use an adjacent item, slow 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "When you use an adjacent item, freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "When you use an adjacent item, haste it for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "When you use an adjacent item, shield 10."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "When you use an adjacent item, heal 15."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "When you use an adjacent item, poison 1."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Double Burn"
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "Double Ammo Max"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "Adjacent items have +25% Crit Chance."
         ]
@@ -8287,55 +8287,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste the Weapon to the right for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 20."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 30."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 2."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 3."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "Give the Weapon to the right of this +20% Crit Chance for the fight."
         ]
@@ -8397,55 +8397,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 items for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 50."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 75."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 5."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Double Burn"
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -8511,61 +8511,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 60."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 90."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 6."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 9."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -8664,13 +8664,13 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Golden",
+        "type": "Golden",
         "tooltips": [
           "This has double value."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "Double Value"
         ]
@@ -8761,55 +8761,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 4 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 4 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield equal to 4% of your Max Health."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Double Heal"
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 6."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 9."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -8858,67 +8858,67 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "And make the item Heavy if able."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "And make the item Icy if able."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "And make the item Turbo if able."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "And make the item Shielded if able."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "And make the item Restorative if able."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "And make the item Toxic if able."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "And make the item Fiery if able."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "And make the item Shiny if able."
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "And make the item Deadly if able."
         ]
       },
       {
-        "name": "Radiant",
+        "type": "Radiant",
         "tooltips": [
           "And make the item Radiant if able."
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "And make the item Obsidian if able."
         ]
@@ -8978,55 +8978,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "When you Freeze, Slow 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Double Freeze"
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "When you Freeze, Haste 1 items for 3 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "When you Freeze, Shield 20."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "When you Freeze, Heal 30."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "This has double Poison."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "When you Freeze, Burn 3."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "When you Freeze, an item gains +25% Crit Chance for the fight."
         ]
@@ -9089,61 +9089,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Golden",
+        "type": "Golden",
         "tooltips": [
           "Your non-weapon items have +1 value."
         ]
       },
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 4 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 3 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Double Shield"
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 105."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 7."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 10."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -9215,61 +9215,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 6 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 6 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 6 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 100."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 150."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 10."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Double Burn"
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -9325,49 +9325,49 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Double Freeze"
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 35."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 50."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 3."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 5."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
@@ -9429,61 +9429,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 40."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 60."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 4."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 6."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -9548,19 +9548,19 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Golden",
+        "type": "Golden",
         "tooltips": [
           "Double Value"
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "This gains double value when an item is upgraded."
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "Double Crit Chance"
         ]
@@ -9612,49 +9612,49 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 25."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 40."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 2."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 4."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
@@ -9704,13 +9704,13 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Golden",
+        "type": "Golden",
         "tooltips": [
           "This has double value."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "This has +2 value gain."
         ]
@@ -9758,55 +9758,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 3 items for 5 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 2 item for 3 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 3 items for 5 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 240."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 360."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 24."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 36."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -9870,55 +9870,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 40."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Double Heal"
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Double Poison"
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 6."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -9984,61 +9984,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 20."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 30."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 2."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 3."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -10092,43 +10092,43 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "When you use the item to the right of this, Slow 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "When you use the item to the right of this, Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Double Haste"
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "When you use the item to the right of this, shield 20."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "When you use the item to the right of this, heal 30."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "When you use the item to the right of this, poison 2."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "When you use the item to the right of this, burn 3."
         ]
@@ -10175,55 +10175,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "When you use an item, slow an item for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "When you use an item, freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "When you use an item, haste 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "When you use an item, Shield 30."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "When you use an item, Heal 45."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "When you use an item, Poison 3."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "When you use an item, Burn 2."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "Double Charge"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+10% Crit Chance"
         ]
@@ -10281,55 +10281,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "+1 Slow Targets"
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Double Haste"
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 70."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 105."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 7."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 10."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "Your Vehicles have +50% Crit Chance."
         ]
@@ -10396,61 +10396,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 25."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 40."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 2."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 4."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -10510,61 +10510,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 20."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 30."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 2."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 3."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -10614,7 +10614,7 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Golden",
+        "type": "Golden",
         "tooltips": [
           "Your small items have +1 value"
         ]
@@ -10659,49 +10659,49 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 3 items for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 4 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 3 items for 3 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 150."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 225."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 15."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 22."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
@@ -10767,55 +10767,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 60."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 90."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 6."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 9."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "Your items gain 10% Crit Chance for the fight."
         ]
@@ -10881,49 +10881,49 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Double Freeze"
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 50."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 75."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 5."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 7."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
@@ -10974,49 +10974,49 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "+1 Slow Targets"
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "When you use an adjacent weapon, freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "When you use an adjacent weapon, haste 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "When you use an adjacent weapon, shield 10"
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "When you use an adjacent weapon, heal 15"
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "When you use an adjacent weapon, poison 1"
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "When you use an adjacent weapon, burn 1"
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Slow Targets"
         ]
@@ -11078,61 +11078,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 35."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 50."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 3."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 5."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -11198,49 +11198,49 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 50."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 75."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 5."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 7."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
@@ -11311,61 +11311,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 6 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 160."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 240."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 16."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 24."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "This has double Crit Damage."
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -11427,55 +11427,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Double Shield"
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 75."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 5."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 7."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -11541,55 +11541,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 45."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Double Heal"
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 4."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 7."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -11660,61 +11660,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 20."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 30."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 2."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Double Burn"
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -11773,55 +11773,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "When you Haste, Slow 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "When you Haste, Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "At the start of each fight, Haste 2 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "When you Haste, Shield 15."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "When you Haste, Heal 20."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Double Poison"
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "When you Haste, Burn 2."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "Double Poison"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "When you Haste, your items gain +5% Crit Chance for the fight."
         ]
@@ -11880,61 +11880,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 3 items for 6 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 9 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 3 items for 4 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 160."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 240."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 16."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 24."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           ""
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -12001,55 +12001,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Double Shield"
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 45."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Double Poison"
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 4."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -12096,43 +12096,43 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "When a non-weapon item is used, Slow 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "When a non-weapon item is used, Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "When a non-weapon item is used, Haste 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "When a non-weapon item is used, shield 15."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "When a non-weapon item is used, heal 20."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Double Poison"
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "When a non-weapon item is used, burn 2."
         ]
@@ -12252,61 +12252,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 3 items for 4 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "+1 Freeze Targets"
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 3 items for 4 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 180."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 270."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 18."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 27."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -12369,49 +12369,49 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Double Haste"
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 40."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 60."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 4."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 6."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
@@ -12477,55 +12477,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 30."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 45."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 3."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Double Burn"
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -12591,49 +12591,49 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "+1 Slow Targets"
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Double Shield"
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 45."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 3."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 4."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
@@ -12700,55 +12700,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Double Haste"
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 40."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 60."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Double Poison"
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 5."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -12816,61 +12816,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 3 items for 4 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 6 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 3 items for 4 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 180."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 270."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 18."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 27."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -12930,55 +12930,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "When you Crit, Slow 1 items for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "When you Crit, Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Double Haste"
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "When you Crit, Shield 15."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "When you Crit, Heal 20."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "When you Crit, Poison 1."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "When you Crit, Burn 2."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "This has double Crit Chance bonus and Haste duration."
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "Adjacent items have an additional +25% Crit Chance"
         ]
@@ -13036,55 +13036,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 30."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 45."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Double Poison"
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 4."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -13148,55 +13148,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Double Shield"
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Double Heal"
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 5."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 7."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -13267,55 +13267,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 70."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 105."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 7."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 10."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -13382,55 +13382,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 30."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 45."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Double Poison"
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 4."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -13481,61 +13481,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second"
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 10."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 15."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 1."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 1."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -13586,61 +13586,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "When you use a weapon, slow 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "When you use a weapon, freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "When you use a weapon, haste 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "When you use a weapon, shield 30."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "When you use a weapon, heal 45."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "When you use a weapon, poison 3."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "When you use a weapon, burn 4."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "Double Damage"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "When you use a weapon, it gains 10% Crit Chance for the fight."
         ]
@@ -13704,61 +13704,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 3 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 80."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 120."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 8."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 12."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -13825,61 +13825,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 40."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 60."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 4."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 6."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -13935,55 +13935,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Double Shield"
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 75."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 5."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 7."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -14049,55 +14049,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 50."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 75."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 5."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Double Burn"
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -14161,49 +14161,49 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "+1 Slow Targets"
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "+1 Freeze Targets"
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 3 items for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 45."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 70."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 4."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Double Burn"
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
@@ -14269,61 +14269,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 40."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 60."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 4."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 5."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -14480,61 +14480,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 20."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 30."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 2."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 3."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -14606,61 +14606,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 3 items for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 3 item for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Double Shield"
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 60."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 6."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 9."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -14718,55 +14718,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "At the start of the fight, Slow 3 items for 4 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "At the start of the fight, Freeze 2 item for 4 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "At the start of the fight, Haste 3 items for 4 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "At the start of each fight, Shield 120."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "You have +12 Regeneration."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "At the start of the fight, poison 12."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "At the start of the fight, burn 16."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "Double Experience"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "Double Experience"
         ]
@@ -14828,49 +14828,49 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "+1 Slow Targets"
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 20."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 30."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 2."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 3."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
@@ -14932,61 +14932,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 80."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 120."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 8."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 12."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -15102,56 +15102,56 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 3 items for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 3 items for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 90."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 135."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 9."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 13."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+2 Reload",
           "+3 Ammo Max"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "Your Ammo items have +20% Crit Chance."
         ]
@@ -15203,49 +15203,49 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "When you use a Property, Slow 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "This has +1 second to Freeze."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "When you use a Property, Haste 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "When you use a Property, Shield 20."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "When you use a Property, Heal 30."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "When you use a Property, Poison 3."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "When you use a Property, Burn 4."
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "When you use a Property, your items gain 20% Crit Chance for the fight."
         ]
@@ -15307,49 +15307,49 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Double Freeze"
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 30."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 45."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 3."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 4."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
@@ -15411,55 +15411,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 40."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 60."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 4."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Double Burn"
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -15518,61 +15518,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 3 items for 4 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 6 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 3 items for 4 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 200."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 300."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 20."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 30."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -15638,49 +15638,49 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Double Haste"
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 40."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 60."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 4."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 6."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
@@ -15741,55 +15741,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "When you crit with a Weapon, slow 1 item for 4 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "When you crit with a weapon, Freeze 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "When you crit with a weapon, haste 1 item for 4 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "When you crit with a weapon, shield 40."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "When you crit with a Weapon, Heal 60."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "When you crit with a weapon, poison 4"
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "When you crit with a weapon, burn 6"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "Your Weapons have double Crit damage."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "If you have two or fewer weapons, they have Lifesteal."
         ]
@@ -15850,61 +15850,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 3 items for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 4 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 3 items for 3 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 150."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 225."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 15."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 22."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -15958,55 +15958,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "At the start of each fight, Slow 2 enemy items for 4 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "When you slow, freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "When you slow, haste 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "When you slow, shield 30."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "When you slow, heal 45."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "When you slow, poison 3."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Double Burn"
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "When you Slow, your items gain 10% Crit Chance for the fight."
         ]
@@ -16117,61 +16117,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 60."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 90."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 6."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 9."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -16237,55 +16237,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 3 items for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 3 items for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Double Shield"
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 135."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 9."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 13."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -16350,55 +16350,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 20."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Double Heal"
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 2."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 3."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -16454,49 +16454,49 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "At the start of each fight, Slow 2 items for 4 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "When you slow, freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "When you slow, haste 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "When you slow, shield 30."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "When you slow, heal 45."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "When you slow, poison 3."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "When you slow, burn 5."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "This has double Regeneration gain."
         ]
@@ -16554,55 +16554,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Double Shield"
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 60."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 4."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 6."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -16660,55 +16660,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 60."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 90."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 6."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 9."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -16771,55 +16771,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 4 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 4 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 60."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 90."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Double Poison"
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 9."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -16891,55 +16891,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 3 items for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 4 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 3 items for 3 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 150."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 225."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 15."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 22."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -16999,56 +16999,56 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "When you use the weapon to the left, Slow 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "When you use the weapon to the left, Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "When you use the weapon to the left, haste it for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "When you use the weapon to the left, shield 8."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "When you use the weapon to the left, heal 10."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "When you use the weapon to the left, poison 1."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "When you use the weapon to the left, burn 2."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "Double Damage",
           "Double Cooldown Reduction"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "The Weapon to the left of this has +50% Crit Chance."
         ]
@@ -17114,61 +17114,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 60."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 90."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 6."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 9."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -17240,61 +17240,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 100 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 60."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 90."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 6."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 9."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -17363,61 +17363,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Double Shield"
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "When this gains Haste, your Heal items gain 5 Heal for the fight."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "When this gains Haste, your Poison items gain 1 Poison for the fight."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "When this gains Haste, your Burn items gain 1 Burn for the fight."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -17482,55 +17482,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 50."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Double Heal"
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 5."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Double Burn"
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -17598,61 +17598,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Golden",
+        "type": "Golden",
         "tooltips": [
           "Double Value"
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield equal to triple this item's value."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Double Heal"
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 1."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 1."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -17713,61 +17713,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 50."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 75."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 5."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 7."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -17833,55 +17833,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Double Shield"
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 60."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 4."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 6."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -17930,49 +17930,49 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "When you use an adjacent item, Slow 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "When you use an adjacent item, Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "When you use an adjacent item, Haste 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "When you use an adjacent item, Shield 30."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "When you use an adjacent item, Heal 45."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "When you use an adjacent item, Poison 3."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "When you use an adjacent item, Burn 4."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
@@ -18118,61 +18118,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 60."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 90."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison equal to double this item's damage."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Double Burn"
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -18283,61 +18283,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 35."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 50."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 3."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 5."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -18402,61 +18402,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 40."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 60."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 4."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 6."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -18610,55 +18610,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "When you Burn, Slow 1 items for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "When you Burn, Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "+1 Haste Targets"
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Double Shield"
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "When you Burn, Heal 20."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "When you Burn, Poison 2."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "At the start of each fight, Burn 12."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "When you Burn, your items gain 6% Crit Chance."
         ]
@@ -18722,61 +18722,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 35."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 50."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 3."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 5."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -18829,13 +18829,13 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Golden",
+        "type": "Golden",
         "tooltips": [
           "Double Value"
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "Double Value"
         ]
@@ -18901,61 +18901,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Double Shield"
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 45."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 3."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 4."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -19020,61 +19020,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 30."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 45."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 3."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 4."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+100 Damage Crit"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -19140,67 +19140,67 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 3 items for 3 second(s)."
         ]
       },
       {
-        "name": "Golden",
+        "type": "Golden",
         "tooltips": [
           "When you buy an item, gain 1 Gold."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 4 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 3 items for 3 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 150."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 225."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 15."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 22."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -19266,61 +19266,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 50."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 75."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 5."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 7."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -19434,55 +19434,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 20."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 30."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Double Poison"
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Double Burn"
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -19547,55 +19547,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "When you Heal, Slow 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "When you Heal, Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "When you Heal, Haste 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Double Shield"
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Double Heal"
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "When you Heal, Poison 1."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "When you Heal, Burn 2."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -19648,61 +19648,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 3 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 1\n\ndouble this item's shield for the fight"
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 1\n\ndouble this item's healing for the fight"
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 1\n\ndouble this item's poison for the fight"
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 1\n\ndouble this item's burn for the fight"
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -19766,49 +19766,49 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Double Freeze"
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Double Shield"
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 45."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 3."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 4."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
@@ -19864,55 +19864,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 40."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Double Heal"
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 4."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 6."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -19978,67 +19978,67 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 1 second(s)."
         ]
       },
       {
-        "name": "Golden",
+        "type": "Golden",
         "tooltips": [
           "When you sell this, fill your board and stash with spare change instead."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 40."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 60."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 4."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 6."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -20168,61 +20168,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 6 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 6 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 6 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 180."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 240."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 18."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 24."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "This has double Crit Damage."
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -20286,55 +20286,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Double Haste"
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Double Shield"
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 60."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 4."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 6."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -20385,43 +20385,43 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "When you use an adjacent weapon, Slow 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "When you use an adjacent weapon, Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "When you use an adjacent weapon, Haste 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "When you use an adjacent weapon, Shield 10."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "When you use an adjacent weapon, Heal 15."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Double Poison"
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "When you use an adjacent weapon, Burn 1."
         ]
@@ -20485,49 +20485,49 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "+2 Slow Targets"
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 35."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 50."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 3."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 5."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
@@ -20585,61 +20585,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Golden",
+        "type": "Golden",
         "tooltips": [
           "You have +3 Income."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Double Shield"
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal equal to double your Gold."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 3."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 4."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -20687,55 +20687,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "When your enemy uses an item, Slow 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "When your enemy uses an item, Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "When your enemy uses an item, Haste 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "When your enemy uses an item, Shield 15."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "When your enemy uses an item, Heal 20."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "When your enemy uses an item, Poison 1."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "When your enemy uses an item, Burn 2."
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "When your enemy uses an item, your items gain 5% Crit Chance for the fight."
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -20793,55 +20793,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "+1 Slow Targets"
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "When you Slow, Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "When you Slow, Haste 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "When you Slow, Shield 10."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Double Heal"
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "When you Slow, Poison 1."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "When you Slow, Burn 1."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "When you Slow, your items gain 5% Crit Chance for the fight."
         ]
@@ -20906,55 +20906,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 15."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 20."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 1."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Double Burn"
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -21005,61 +21005,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 3 items for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 4 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 3 items for 3 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 120."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 180."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 12."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 18."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -21168,55 +21168,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 10."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Double Heal"
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 1."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 1."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+0 MISSING"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -21275,55 +21275,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 3 items for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 3 items for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Double Shield"
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal equal to triple the value of your items."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 6."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 9."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -21385,61 +21385,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 4 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 4 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 4 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 120."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 180."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 12."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 18."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -21510,61 +21510,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Double Slow"
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 70."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 105."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 7."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 10."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -21638,61 +21638,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 3 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 80."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 120."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 8."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 12."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -21749,61 +21749,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 500 to the player with the most health."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 500 to the player with the most health."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 50 to the player with the lowest health."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 50 to the player with the lowest health."
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -21865,55 +21865,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 3 items for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 3 items for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 75."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Double Heal"
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 7."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 11."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -21973,55 +21973,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Double Haste"
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 30."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 45."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 3."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 4."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "Your Food and Tools gain 20% Crit Chance for the fight."
         ]
@@ -22073,55 +22073,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "At the start of the fight, Slow 2 items for 4 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "At the start of the fight, Freeze 1 item for 4 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "At the start of the fight, Haste 2 items for 4 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "At the start of each fight, Shield 60."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "You have +6 Regeneration."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "At the start of the fight, poison 6."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "At the start of the fight, burn 8."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "Double Crit Chance"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "Double Crit Chance"
         ]
@@ -22175,55 +22175,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 items for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Double Shield"
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 90."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 6."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 9."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -22283,61 +22283,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 70."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 105."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 7."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 10."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -22403,55 +22403,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 30."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 45."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 3."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 4."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "Give the item to the left +25% Crit Chance for the fight."
         ]
@@ -22504,55 +22504,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "When you use an adjacent item, slow 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "When you use an adjacent item, freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "When you use an adjacent item, haste 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Double Shield"
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "When you use an adjacent item, heal 30."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "When you use an adjacent item, poison 3."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "When you use an adjacent item, burn 4."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "When you use an adjacent item, it gains 20% Crit Chance for the fight."
         ]
@@ -22607,49 +22607,49 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 30."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 45."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 3."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 4."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
@@ -22714,55 +22714,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 20."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 30."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 2."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 3."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "Double Crit Chance"
         ]
@@ -22813,55 +22813,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "When you use a non-weapon item, slow 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "When you use a non-weapon item, freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "When you use a non-weapon item, haste 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "When you use a non-weapon item, shield 10."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "When you use a non-weapon item, heal 15."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "When you use a non-weapon item, poison 1."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Double Burn"
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "Double Burn"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "When you use a non-weapon item, your items gain +3% Crit Chance for the fight."
         ]
@@ -22925,67 +22925,67 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Golden",
+        "type": "Golden",
         "tooltips": [
           "This has double value."
         ]
       },
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 40."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 60."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 4."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 6."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -23036,61 +23036,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 3 items for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 4 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 3 items for 3 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 120."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 180."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison equal to this item's damage."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Double Burn"
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -23146,49 +23146,49 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "When you use the Core, slow 1 item for 4 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "When you use the core, Freeze 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "When you use the core, Haste 1 item for 4 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "When you use the core, shield 40."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "When you use the core, heal 60."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "When you use the core, poison 4."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "When you use the core, burn 6."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "Double Charge",
           "Double Damage"
@@ -23290,61 +23290,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Golden",
+        "type": "Golden",
         "tooltips": [
           "Double Value"
         ]
       },
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "At the start of each fight, Slow 3 items for 4 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "At the start of each fight, Freeze 2 item for 4 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "At the start of each fight, Haste 3 items for 4 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Your Shield items have + Shield equal to this item's value."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "You have +Regeneration equal to this item's value."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "At the start of each fight, poison 12."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "At the start of each fight, burn 16."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "Double Value"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "Your weapons have + Crit Chance % equal to this item's value."
         ]
@@ -23415,61 +23415,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 8."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 10."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 1."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 3."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -23530,55 +23530,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Double Haste"
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 50."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 75."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 5."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 7."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -23686,55 +23686,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 20."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 30."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 2."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 3."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "Adjacent items gain 10% Crit chance for the fight."
         ]
@@ -23799,61 +23799,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 20."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 30."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 4."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 6."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -23925,61 +23925,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "+1 Slow Targets"
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 80."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 120."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 8."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 12."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -24029,55 +24029,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "When you use the item to the left of this, slow 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "When you use the item to the left of this, Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "When you use the item to the left of this, haste 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "When you use the item to the left of this, shield 20"
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "When you use the item to the left of this, heal 30"
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "When you use the item to the left of this, poison 2"
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "When you use the item to the left of this, burn 3"
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "The item to the Right of this has its cooldown reduced by 25%."
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "The item to the left of this has +50% Crit Chance."
         ]
@@ -24137,55 +24137,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "When you Haste, Slow 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "When you Haste, Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Double Haste"
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "When you Haste, Shield 6."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Double Heal"
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "When you Haste, Poison 1."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "When you Haste, Burn 1."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "When you Haste, your items gain +3% Crit Chance for the fight."
         ]
@@ -24298,61 +24298,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 30."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 45."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 3."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 4."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -24415,55 +24415,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 3 items for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Double Haste"
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 90."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 135."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 9."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 13."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "Your items have +10% Crit Chance."
         ]
@@ -24530,61 +24530,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 35."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 50."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 3."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 5."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -24647,61 +24647,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 10 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 10 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 10 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 500."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 750."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 50."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 75."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -24758,55 +24758,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 30."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 45."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 3."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Double Burn"
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -24861,49 +24861,49 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "At the start of each fight, slow 2 item for 4 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Double Freeze"
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "At the start of each fight, haste 2 items for 4 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "At the start of each fight, shield 60."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "At the start of each fight, gain 6 Regeneration for the fight."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "At the start of each fight, poison 6"
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "At the start of each fight, Burn 8."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Freeze Targets"
         ]
@@ -24953,61 +24953,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 3 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 100."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 150."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 10."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 15."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -25056,7 +25056,7 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
@@ -25118,55 +25118,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Double Shield"
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Double Heal"
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 2."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 3."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -25221,55 +25221,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 20."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 30."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Double Poison"
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 3."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -25327,7 +25327,7 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "Double Crit Chance"
         ]
@@ -25439,49 +25439,49 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "When you use the item to the right of this, Slow 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "When you use the item to the right of this, Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "When you use the item to the right of this, Haste 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "When you use the item to the right of this, Shield 15."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "When you use the item to the right of this, Heal 20."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "When you use the item to the right of this, Poison 1."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "When you use the item to the right of this, Burn 2."
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "When you use the item to the right of this, the item to the left of this gains 20% Crit Chance for the fight."
         ]
@@ -25539,55 +25539,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 15."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 20."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 1."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 2."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "Double Crit Chance"
         ]
@@ -25656,49 +25656,49 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "+1 Slow Targets"
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "+1 Freeze Targets"
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 70."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 105."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Double Poison"
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Double Burn"
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -25759,49 +25759,49 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 35."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 50."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 3."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 5."
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "Adjacent items gain 10% Crit Chance for the fight."
         ]
@@ -25863,67 +25863,67 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Golden",
+        "type": "Golden",
         "tooltips": [
           "This gains additional damage equal equal to value of the gold gained."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield equal to this item's damage."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal equal to this item's damage."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 4."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 6."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -25991,61 +25991,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 3 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 80."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 120."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 8."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 12."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -26110,55 +26110,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Double Haste"
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 40."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 60."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 4."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 6."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -26209,7 +26209,7 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Golden",
+        "type": "Golden",
         "tooltips": [
           "Your Chocolate Bars and Spare Change have +1 value."
         ]
@@ -26269,61 +26269,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 40."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 60."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 4."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 6."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -26385,67 +26385,67 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "And make the item Heavy if able."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "And make the item Icy if able."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "And make the item Turbo if able."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "And make the item Shielded if able."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "And make the item Restorative if able."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "And make the item Toxic if able."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "And make the item Fiery if able."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "And make the item Shiny if able."
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "And make the item Deadly if able."
         ]
       },
       {
-        "name": "Radiant",
+        "type": "Radiant",
         "tooltips": [
           "And make the item Radiant if able."
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "And make the item Obsidian if able."
         ]
@@ -26505,55 +26505,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 30."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Double Heal"
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 3."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 4."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -26616,55 +26616,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 35."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 50."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 3."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 5."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "Your Piggles have -1 cooldown."
         ]
@@ -26723,55 +26723,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 50."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 75."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 5."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Double Burn"
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -26829,61 +26829,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 40."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 60."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 4."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 6."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -26955,55 +26955,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 3 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 80."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 120."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 8."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Double Burn"
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -27075,61 +27075,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Double Shield"
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 75."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 5."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 7."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -27206,55 +27206,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 30."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 45."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 3."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 4."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -27316,49 +27316,49 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Double Slow"
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 45."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 70."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 4."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 7."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
@@ -27411,55 +27411,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "At the start of the fight, Slow 3 items for 5 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "At the start of the fight, Freeze 2 item for 4 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "At the start of the fight, Haste 3 items for 5 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "At the start of each fight, Shield 120."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "You have +12 Regeneration."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "At the start of the fight, poison 12."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "At the start of the fight, burn 16."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "Double Health Max"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "At the start of each day, your items gain 10% Crit Chance."
         ]
@@ -27517,55 +27517,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 40."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 60."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Double Poison"
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn equal to your Regeneration."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -27618,55 +27618,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "At the start of the fight, Slow 2 items for 4 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "At the start of each fight, Freeze 1 item for 4 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "At the start of the fight, Haste adjacent items for 3 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Adjacent Shield items have +20 Shield."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Adjacent items have +30 Heal."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Adjacent Poison items have +3 Poison."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Adjacent Burn items have +2 Burn."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "This has double Ammo bonus."
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "Adjacent ammo items have +25% Crit Chance."
         ]
@@ -27725,55 +27725,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 40."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 60."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 4."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Double Burn"
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -27883,61 +27883,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 3 items for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 4 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 3 items for 3 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 150."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 225."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 15."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 22."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -28002,61 +28002,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 20."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 30."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 2."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 3."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -28116,49 +28116,49 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 60."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 90."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 6."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 9."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
@@ -28226,61 +28226,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 3 items for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 3 items for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 75."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 110."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 7."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 11."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -28345,55 +28345,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 3 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Double Shield"
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 120."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 8."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 12."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -28453,55 +28453,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Double Shield"
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 45."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 3."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Double Burn"
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -28573,61 +28573,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 20."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 30."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 2."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 3."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "When you Haste, your items gain +6% Crit Chance for the fight."
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -28689,55 +28689,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Double Shield"
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 30 for each Aquatic item you have."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 1 for each Aquatic item you have."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 2 for each Aquatic item you have."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -28794,56 +28794,56 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "When you use an adjacent item, slow 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "When you use an adjacent item, freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "When you use an adjacent item, haste 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "When you use an adjacent item, shield 20."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "When you use an adjacent item, heal 30."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "When you use an adjacent item, poison 2."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "When you use an adjacent item, burn 3."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "Double Cooldown Reduction",
           "Double Damage"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "Your items have +25% Crit Chance."
         ]
@@ -28905,55 +28905,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 20."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Double Heal"
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 2."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 3."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -29107,13 +29107,13 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "DamageAmount0"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -29224,61 +29224,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 3 items for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 3 items for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield equal to 15% of your Max Health."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal equal to 15% of your Max Health."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 9."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 13."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -29349,55 +29349,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 3 items for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 3 items for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 75."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 110."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Double Poison"
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Double Burn"
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -29513,56 +29513,56 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "When you use a weapon, slow 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "When you use a weapon, freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Double Haste"
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "When you use a weapon, shield 30."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "When you use a weapon, heal 45."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "When you use a weapon, poison 3."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "When you use a weapon, burn 4."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "Double Damage",
           "Double Haste"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "When your enemy uses an item, your items gain +10% Crit Chance for the fight."
         ]
@@ -29628,55 +29628,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 60."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 90."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 6."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 9."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -29739,67 +29739,67 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Golden",
+        "type": "Golden",
         "tooltips": [
           "Double Gold"
         ]
       },
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 40."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 60."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 4."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 5."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -29857,55 +29857,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "When you use the left to the left of this, Slow 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "When you use the left to the left of this, Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "When you use the left to the left of this, Haste 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "When you use the left to the left of this, Shield 15."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "When you use the left to the left of this, Heal 20."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Double Poison"
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "When you use the left to the left of this, Burn 1."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -30007,55 +30007,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 60."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 90."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 6."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Double Burn"
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -30115,55 +30115,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "+1 Slow Targets"
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "When you Slow, Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "When you Slow, Haste 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "When you Slow, Shield 10."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "When you Slow, Heal 15."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "When you Slow, Poison 1."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "When you Slow, Burn 1."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "When you Slow, your items gain 3% Crit Chance."
         ]
@@ -30228,61 +30228,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 45."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 70."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 4."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 7."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -30354,61 +30354,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 3 items for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 4 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Double Haste"
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 120."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 180."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 12."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Double Burn"
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -30466,7 +30466,7 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Golden",
+        "type": "Golden",
         "tooltips": [
           "When you buy a property, gain 1 Gold."
         ]
@@ -30509,49 +30509,49 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 4 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 4 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 60."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 90."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 6."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 9."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
@@ -30600,19 +30600,19 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Golden",
+        "type": "Golden",
         "tooltips": [
           "You have +3 Income."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "You have additional Regeneration equal to the value of adjacent properties."
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "Adjacent properties have +50% Crit Chance."
         ]
@@ -30716,61 +30716,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 3 items for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 4 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 3 items for 3 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 120."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 180."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 12."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 18."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -30836,61 +30836,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 20."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 30."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 2."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 3."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -30956,55 +30956,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 3 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 80."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 120."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 8."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 12."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "Your Lifesteal Weapons have +50% Crit Chance."
         ]
@@ -31070,55 +31070,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 60."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 90."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 6."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Double Burn"
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -31174,13 +31174,13 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Golden",
+        "type": "Golden",
         "tooltips": [
           "Double Income"
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "Double Health Max"
         ]
@@ -31244,49 +31244,49 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 20."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 30."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 2."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 3."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
@@ -31355,55 +31355,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Double Shield"
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 60."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 4."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 6."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -31475,55 +31475,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "+1 Slow Targets"
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 30."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 45."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 3."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 4."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -31590,55 +31590,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 3 items for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 4 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 3 items for 3 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 135."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 200."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Double Poison"
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 20."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -31700,55 +31700,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 60."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 90."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 6."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 9."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -31813,61 +31813,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 30."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 45."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 3."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 4."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -31922,61 +31922,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "When you use the weapon to the left of this, slow 1 items for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "When you use the weapon to the left of this, Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "When you use the weapon to the left of this, Haste it for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "When you use the weapon to the left of this, Shield 15."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "When you use the weapon to the left of this, Heal 20."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "When you use the weapon to the left of this, Poison 1."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "When you use the weapon to the left of this, burn 2."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "Double Damage"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "The weapon to the left has +50% Crit Chance."
         ]
@@ -32040,61 +32040,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 3 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 80."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 120."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 8."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 12."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -32148,55 +32148,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Double Slow"
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "When you use an adjacent small item, freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "When you use an adjacent small item, haste 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "When you use an adjacent small item, shield 15."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "When you use an adjacent small item, heal 20."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "When you use an adjacent small item, poison 1."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "When you use an adjacent small item, burn 2."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Slow Targets"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "When you use an adjacent Small item, your Small items gain +6% Crit Chance for the fight."
         ]
@@ -32252,61 +32252,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 3 items for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 3 items for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 0."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal equal to triple the value of your items."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 7."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 11."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -32428,61 +32428,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 6 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 6 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 6 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 120."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 180."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 12."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 18."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -32535,13 +32535,13 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Golden",
+        "type": "Golden",
         "tooltips": [
           "Get 2 Gumballs and Spare Change instead."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "Get 2 Gumballs and Spare Change instead."
         ]
@@ -32606,61 +32606,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 25."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 40."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 2."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 4."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "Double Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -32718,55 +32718,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 30."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 45."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Double Poison"
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 4."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -32831,61 +32831,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "+1 Slow Targets"
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 25."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 40."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 2."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 4."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -32948,61 +32948,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 20."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 30."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 2."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 3."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "This has +50% Crit Chance."
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -33061,13 +33061,13 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Golden",
+        "type": "Golden",
         "tooltips": [
           "Double Value"
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "Double Value"
         ]
@@ -33173,13 +33173,13 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Golden",
+        "type": "Golden",
         "tooltips": [
           "You have +3 Income."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "At the start of each hour, get an additional 2 Spare Change."
         ]
@@ -33248,61 +33248,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 20."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 30."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 2."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 3."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -33367,49 +33367,49 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "+1 Freeze Targets"
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 30."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 45."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 3."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 4."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
@@ -33457,61 +33457,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield equal to a third of your enemy's max health.."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal equal to a third of your enemy's max health."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 6."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 9."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -33576,49 +33576,49 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "When you Haste, Slow 1 items for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "When you Haste, Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "+1 Haste Targets"
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "When you Haste, Shield 15."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "When you Haste, Heal 20."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Double Poison"
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "When you Haste, Burn 2."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
@@ -33684,55 +33684,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 70."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Double Heal"
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 7."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 11."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -33793,61 +33793,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 6."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 9."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 1."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 1."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -33913,55 +33913,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 3 items for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 4 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Double Haste"
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 120."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 180."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 12."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 18."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "Your weapons and tools gain 25% Crit Chance for the fight."
         ]
@@ -34025,61 +34025,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Golden",
+        "type": "Golden",
         "tooltips": [
           "Double Value"
         ]
       },
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 4 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 4 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 60."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 90."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 6."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 9."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "When you sell this, the Core gains Crit Chance equal to this item's value. 1"
         ]
@@ -34135,55 +34135,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield equal to double your gold."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Double Heal"
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 3."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 4."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -34253,61 +34253,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 60"
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 90."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 6."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 9."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -34361,43 +34361,43 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "At the start of each fight, slow 2 item for 4 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "At the start of each fight, Freeze 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "At the start of each fight, haste 2 item for 4 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "At the start of each fight, shield 60%."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "At the start of each fight, gain 6 Regeneration for the fight."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "At the start of each fight, poison 6"
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Double Burn"
         ]
@@ -34456,61 +34456,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Double Freeze"
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 3 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 80."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 120."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 8."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 12."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -34574,61 +34574,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 80."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 120."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 8."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 12."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -34699,61 +34699,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 3 items for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 3 items for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 90."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 135."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Double Poison"
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Double Burn"
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -34821,55 +34821,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Double Shield"
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 75."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 5."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 7."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -34930,61 +34930,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 20."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 30."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 2."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 4."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -35049,55 +35049,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Double Shield"
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 60."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 6."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 9."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -35152,49 +35152,49 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "When you use an item from another hero, Slow 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "When you use an item from another hero, Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "When you use an item from another hero, haste it for 3 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "When you use an item from another hero, shield 20."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "When you use an item from another hero, heal 30."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "When you use an item from another hero, poison 2."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "When you use an item from another hero, burn 3."
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "Double Crit Chance"
         ]
@@ -35255,61 +35255,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 20."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 30."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 2."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 3."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -35413,55 +35413,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 45."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 70."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 4."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 7."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "Adjacent items have +25% Crit Chance."
         ]
@@ -35512,55 +35512,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Double Shield"
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal equal to your enemy's Burn."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 7."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Double Burn"
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -35619,55 +35619,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 30."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 45."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 3."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Double Burn"
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -35772,61 +35772,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "When you use an Ammo item, Slow 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "When you use an Ammo item, Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "When you use an Ammo item, Haste 1 items for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "When you use an Ammo item, Shield 15."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "When you use an Ammo item, Heal 20."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "When you use an Ammo item, Poison 1."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "When you use an Ammo item, Burn 2."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "When you use an Ammo item, give your items +50% Crit Chance for this fight."
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -35889,55 +35889,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 15."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 20."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 1."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 2."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -36002,61 +36002,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Golden",
+        "type": "Golden",
         "tooltips": [
           "This has double value."
         ]
       },
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 3 items for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 3 items for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Your Shield items gain Shield equal to this item's value for the fight."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Your Heal items gain Heal equal to this item's value for the fight."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Your Poison items gain Poison equal to 10% of this item's value for the fight."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Your Burn items gain Burn equal to 15% of this item's value for the fight."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "Your items gain Crit Chance equal to this item's value for the fight."
         ]
@@ -36115,43 +36115,43 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Golden",
+        "type": "Golden",
         "tooltips": [
           "Double Value"
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Your Shield items have + Shield equal to this item's value."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Your Heal items have + Heal equal to this item's value."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Your Poison items have + Poison equal to 10% of this item's value."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Your Burn items have + Burn equal to 15% of this item's value."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "Double Health Max"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "Your items have Crit Chance equal to this item's value."
         ]
@@ -36210,55 +36210,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Double Haste"
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 40."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 60."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 4."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 6."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "Your Aquatic items gain +10% Crit Chance for the fight."
         ]
@@ -36319,55 +36319,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "When you Heal, Slow 1 items for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "When you Heal, Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "When you Heal, Haste 1 items for 3 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "When you Heal, Shield 30."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Double Heal"
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "When you Heal, Poison 3."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "When you Heal, Burn 4."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "When you Heal, your items gain +10% Crit Chance for the fight."
         ]
@@ -36429,55 +36429,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "+1 Slow Targets"
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "When you Slow, Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Double Haste"
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "When you Slow, Shield 30."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "When you Slow, Heal 45."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "When you Slow, Poison 3."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "When you Slow, Burn 4."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "When you Slow, your items gain +10% Crit Chance for the fight."
         ]
@@ -36539,55 +36539,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 40."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 60."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Double Poison"
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Double Burn"
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -36647,55 +36647,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 20."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 30."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 2."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Double Burn"
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -36758,55 +36758,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 3 items for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 4 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Double Haste"
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 120."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 180."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 12."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 18."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "Your items gain +10% Crit Chance for the fight."
         ]
@@ -36867,61 +36867,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 3 items for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 4 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 3 items for 3 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Double Shield"
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 225."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 15."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 22."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -36983,55 +36983,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Double Shield"
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 45."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 3."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 4."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -37147,49 +37147,49 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "+1 Slow Targets"
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 50."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 75."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 5."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 7."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
@@ -37243,61 +37243,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Golden",
+        "type": "Golden",
         "tooltips": [
           "The Property to the left of this has triple value."
         ]
       },
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "When you use the property to the left of this, Slow 2 item for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "When you use the property to the left of this, Freeze 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "When you use the property to the left of this, Haste 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "When you use the property to the left of this, shield 20."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "When you use the property to the left of this, heal 30."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "When you use the property to the left of this, poison 2."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "When you use the property to the left of this, burn 3."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "The Property to the left has +1 Multicast."
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "The Property to the left has +50% Crit Chance."
         ]
@@ -37406,55 +37406,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield equal to your opponent's Poison."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Double Heal"
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Double Poison"
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 4."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -37517,49 +37517,49 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "+1 Slow Targets"
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 60."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 90."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 6."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 9."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
@@ -37625,61 +37625,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 10."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 15."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 1."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 1."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -37740,49 +37740,49 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Double Haste"
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 100."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 150."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 10."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 15."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
@@ -37880,43 +37880,43 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "At the start of each fight, Slow 4 enemy items for 4 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "At the start of each fight, Freeze 2 item for 4 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "At the start of each fight, Haste 4 items for 4 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "At the start of each fight, shield 0."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "You have +18 Regeneration."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "At the start of each fight, poison 18."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "At the start of each fight, burn 24."
         ]
@@ -37978,61 +37978,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 3 items for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 3 items for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Double Shield"
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal equal to this item's damage."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 3."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 5."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -38092,55 +38092,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 30."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 45."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 3."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Double Burn"
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -38231,13 +38231,13 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Golden",
+        "type": "Golden",
         "tooltips": [
           "Double Value"
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "Double Value"
         ]
@@ -38350,49 +38350,49 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Double Shield"
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Adjacent Poison items gain 1 Poison for the fight."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Adjacent Burn items gain 1 burn for the fight."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "Adjacent items gain 10% Crit Chance for the fight."
         ]
@@ -38466,61 +38466,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 25."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 40."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 2."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Double Burn"
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -38575,49 +38575,49 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow both players' items for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Double Freeze"
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste both players' items for 3 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 50."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 75."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 5."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 7."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
@@ -38736,49 +38736,49 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "This has +1 Slow targets."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "When you Slow, Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "When you Slow, Haste 1 items for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "When you Slow, Shield 15."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "When you Slow, Heal 20."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Double Poison"
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "When you Slow, Burn 2."
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "When you Slow, your items gain +6% Crit Chance for the fight."
         ]
@@ -38826,61 +38826,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "When you use an aquatic item, slow 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "When you use an aquatic item, freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "When you use an aquatic item, Haste 1 for 3 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "When you use an aquatic item, shield 20."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "When you use an aquatic item, heal 30."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "When you use an aquatic item, poison 2."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "When you use an aquatic item, burn 3."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "Your Aquatic items have +10% Crit Chance."
         ]
       },
       {
-        "name": "Radiant",
+        "type": "Radiant",
         "tooltips": [
           "-1000 Freeze",
           "-1000 Slow"
@@ -38938,49 +38938,49 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "+1 Freeze Targets"
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 40."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 60."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 4."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 6."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
@@ -39052,55 +39052,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 15."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 20."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 1."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Double Burn"
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -39168,61 +39168,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 3 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 100."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 150."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 10."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 15."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -39285,61 +39285,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "+2 Slow Targets"
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 35."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 50."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 3."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 5."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -39445,55 +39445,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "When you Poison, Slow 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "When you Poison, Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "When you Poison, Haste 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "When you Poison, Shield 15."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "When you Poison, Heal 20."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Double Poison"
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "When you Poison, Burn 2."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -39551,55 +39551,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 3 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 80."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 120."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 8."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 12."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -39672,61 +39672,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 3 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 80."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 120."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 8."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 12."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "this weapon deals double damage on critical hits."
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -39789,61 +39789,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Golden",
+        "type": "Golden",
         "tooltips": [
           "Your small items have +1 value"
         ]
       },
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 3 items for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 3 items for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield equal to 10% of your Max Health."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Double Heal"
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 9."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 13."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -39908,55 +39908,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Double Shield"
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 15."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 2."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 3."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -40017,61 +40017,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 3 items for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Double Freeze Targets"
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 3 items for 4 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 200."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 300."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 20."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 30."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -40138,61 +40138,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 items for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 items for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 20."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 30."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 2."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 3."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -40250,68 +40250,68 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Golden",
+        "type": "Golden",
         "tooltips": [
           "+1 Damage",
           "-1 Gold"
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 20."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 30."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 2."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 3."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -40368,55 +40368,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Double Haste"
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 40."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 60."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 4."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 6."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "Adjacent Ammo items have +25% Crit Chance."
         ]
@@ -40474,67 +40474,67 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Golden",
+        "type": "Golden",
         "tooltips": [
           "Double Value"
         ]
       },
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield equal to this item's value."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal equal to this item's value."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 4."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 6."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -40586,55 +40586,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 item for 6 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 6 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 6 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Your Shield items gain shield equal to your weakest Shield item's Shield for the fight."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Your Heal items gain Heal equal to your weakest Heal item's Heal for the fight."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Your Poison items gain Poison equal to your weakest Poison item's Poison for the fight."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Your Burn items gain damage equal to your weakest Burn item's Burn for the fight."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "Your items gain +25% Crit Chance for the fight."
         ]
@@ -40699,61 +40699,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 70."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 105."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 7."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 10."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -40813,61 +40813,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 20."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 30."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 2."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 3."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -40934,61 +40934,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Golden",
+        "type": "Golden",
         "tooltips": [
           "Double Value"
         ]
       },
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 3 items for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 3 items for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Double Shield"
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal equal to triple this item's value."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 4."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 7."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -41043,55 +41043,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "When you use an item, slow 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "When you use an item freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "When you use an item haste 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Double Shield"
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "When you use an item, Heal 15."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "When you use an item poison 1"
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "When you use an item burn 2"
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "Enemy items have -100% Crit Chance."
         ]
@@ -41152,67 +41152,67 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "And make the item Heavy if able."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "And make the item Icy if able."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "And make the item Turbo if able."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "And make the item Shielded if able."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "And make the item Restorative if able."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "And make the item Toxic if able."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "And make the item Fiery if able."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "And make the item Shiny if able."
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "And make the item Deadly if able."
         ]
       },
       {
-        "name": "Radiant",
+        "type": "Radiant",
         "tooltips": [
           "And make the item Radiant if able."
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "And make the item Obsidian if able."
         ]
@@ -41283,61 +41283,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 40."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 60."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 4."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 6."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -41393,13 +41393,13 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Golden",
+        "type": "Golden",
         "tooltips": [
           "Double Value"
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "This has +2 value gain."
         ]
@@ -41555,55 +41555,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Double Shield"
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 60."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 4."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 6."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -41667,55 +41667,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Double Shield"
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal equal to this item's Ammo."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 1."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 1."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -41773,55 +41773,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Double Haste"
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 20."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 30."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 2."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 3."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "An adjacent item gains 20% Crit Chance for the fight."
         ]
@@ -41887,55 +41887,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 30."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 45."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Double Poison"
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 4."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -42045,61 +42045,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 3 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Double Shield"
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 120."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 8."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 12."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -42159,61 +42159,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Golden",
+        "type": "Golden",
         "tooltips": [
           "Double Value"
         ]
       },
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Double Shield"
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal equal to triple this item's value."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 2."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 3."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -42277,55 +42277,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 25."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 40."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Double Poison"
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 4."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -42384,55 +42384,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 60."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 90."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 6."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Double Burn"
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -42546,55 +42546,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Double Haste"
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 80."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 120."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 8."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 12."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "Your friends gain +10% Crit Chance for the fight."
         ]
@@ -42654,55 +42654,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 20."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 30."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 2."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 3."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "Give the Ammo item to the right of this +20% Crit Chance for the fight."
         ]
@@ -42765,55 +42765,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 15."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 20."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 1."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Double Burn"
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -42927,61 +42927,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 100."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 150."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 10."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 15."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -43046,61 +43046,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 40."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 60."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 4."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 6."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -43154,49 +43154,49 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 10 items for 4 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Double Freeze"
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 3 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 100."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 150."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 10."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 15."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
@@ -43316,13 +43316,13 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Golden",
+        "type": "Golden",
         "tooltips": [
           "Double Value"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "Double Crit Chance"
         ]
@@ -43385,55 +43385,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 30."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 45."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 3."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Double Burn"
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -43493,61 +43493,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Golden",
+        "type": "Golden",
         "tooltips": [
           "The Gumball is now free!"
         ]
       },
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Double Shield"
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 60."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 4."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 6."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -43598,43 +43598,43 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "At the start of each fight, Slow small enemy items for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "At the start of each fight, Freeze 1 item for 4 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Double Haste"
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "At the start of each fight, Shield 60."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "At the start of each fight, poison 3."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "At the start of each fight, burn 3."
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "Your Small items have +20% Crit Chance."
         ]
@@ -43698,55 +43698,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "+2 Haste Targets"
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 80."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 120."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 8."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 12."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "Your Aquatic items have +25% Crit Chance."
         ]
@@ -43809,61 +43809,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 40."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 60."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 4."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 6."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -43926,61 +43926,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 50."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 75."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 5."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 7."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -44046,55 +44046,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 3 items for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 3 items for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Double Shield"
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 90."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 6."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 9."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -44157,55 +44157,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 4 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 4 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 4 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Double Shield"
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 165."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 11."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 16."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -44256,61 +44256,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 4 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 4 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 4 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Double Shield"
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal equal to your current Shield."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 12."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 18."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -44360,43 +44360,43 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "When your enemy uses an item, slow 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Double Freeze"
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "When your enemy uses an item, haste 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "When your enemy uses an item, shield 30."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "When your enemy uses an item, heal 45."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "When your enemy uses an item, poison 3."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "When your enemy uses an item, burn 4."
         ]
@@ -44451,55 +44451,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 3 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 100."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 150."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 10."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Double Burn"
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -44553,19 +44553,19 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Golden",
+        "type": "Golden",
         "tooltips": [
           "Adjacent properties have double value."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "This has double Damage and Shield bonus."
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "Shield Properties adjacent to this have + Crit Chance equal to the value of your highest value item. [0]"
         ]
@@ -44644,61 +44644,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 3 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 80."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 120."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 8."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 12."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "This has +50% Crit Chance."
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -44800,61 +44800,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 3 items for 10 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 15 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 3 items for 10 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield equal to your Max Health."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal equal to your Max Health."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 100."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 50."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -44908,61 +44908,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield equal to triple this item's damage."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal equal to triple this item's damage."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Double Poison"
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn equal to the item's damage."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -45027,61 +45027,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 10."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 15."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 1."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 1."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -45147,55 +45147,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 9."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 12."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 2."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 3."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -45260,61 +45260,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 3 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 100."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 150."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 10."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 15."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -45372,61 +45372,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 20."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 30."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 2."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 3."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -45493,61 +45493,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "When you Shield, Slow 1 items for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "When you Shield, Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "When you Shield, Haste 1 items for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Double Shield"
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "When you Shield, Heal equal to this item's damage."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "When you Shield, Poison 1."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "When you Shield, Burn 2."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "When you Shield, your items gain 6% Crit Chance for the fight."
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -45596,67 +45596,67 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "And make the item Heavy if able."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "And make the item Icy if able."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "And make the item Turbo if able."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "And make the item Shielded if able."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "And make the item Restorative if able."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "And make the item Toxic if able."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "And make the item Fiery if able."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "And make the item Shiny if able."
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "And make the item Deadly if able."
         ]
       },
       {
-        "name": "Radiant",
+        "type": "Radiant",
         "tooltips": [
           "And make the item Radiant if able."
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "And make the item Obsidian if able."
         ]
@@ -45701,49 +45701,49 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Double Slow"
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "When your enemy uses an item, freeze it for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "When your enemy uses an item, haste 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "When your enemy uses an item, shield 15."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "When your enemy uses an item, heal 20."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "When your enemy uses an item, poison 1."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "When your enemy uses an item, burn 2."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "Double Slow"
         ]
@@ -45797,55 +45797,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 70."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 105."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 7."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "This has double Burn."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -45968,61 +45968,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 20."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 30."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 2."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 3."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -46087,61 +46087,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 45."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal equal to this item's damage."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison equal to this item's damage."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Double Burn"
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -46202,61 +46202,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 3 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 100."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 150."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 10."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 15."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -46310,49 +46310,49 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 1 item for 4 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "+1 Freeze"
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 4 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 60."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 90."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 6."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 9."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
@@ -46418,61 +46418,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 3 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 100."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 150."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 10."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 15."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -46538,61 +46538,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 60."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 90."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 6."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 9."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -46658,49 +46658,49 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "This has +1 Slow targets."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 30."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 45."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 3."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 4."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
@@ -46766,61 +46766,61 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 3 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 100."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 150."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 10."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 15."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
       },
       {
-        "name": "Obsidian",
+        "type": "Obsidian",
         "tooltips": [
           "Lifesteal"
         ]
@@ -46871,55 +46871,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "When you use an adjacent item, Slow 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "When you use an adjacent item, Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Double Haste"
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "When you use an adjacent item, Shield 10."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "When you use an adjacent item, Heal 15."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "When you use an adjacent item, Poison 1."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "When you use an adjacent item, Poison 1."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "Double Haste"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "When you use an adjacent item, the other adjacent item gains 25% Crit Chance."
         ]
@@ -46983,55 +46983,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 4 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Your Shield items gain +15 shield for the fight."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Double Heal"
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Your Poison items gain +2 poison for the fight."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Your Burn items gain +3 burn for the fight."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "Your items gain +20% Crit Chance for the fight."
         ]
@@ -47086,13 +47086,13 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "This has double damage, shield and heal bonus."
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "This has double Crit Chance bonus."
         ]
@@ -47146,55 +47146,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Freeze 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 2 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 50."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 75."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Double Poison"
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 7."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
         ]
@@ -47249,55 +47249,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "When you crit with an adjacent item, Slow 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "When you crit with an adjacent item, Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "When you crit with an adjacent item, haste 1 item for 3 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "When you crit with an adjacent item, shield 20."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "When you crit with an adjacent item, heal 30."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "When you crit with an adjacent item, poison 2."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "When you crit with an adjacent item, burn 3."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "Double Crit Chance"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "Double Crit Chance"
         ]
@@ -47349,49 +47349,49 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "When you use the Core, Slow 1 items for 3 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Double Freeze"
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "When you use the Core, Haste 1 items for 3 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "When you use the Core, Shield 20."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "When you use the Core, Heal 30."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "When you use the Core, Poison 2."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "When you use the Core, Burn 3."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
@@ -47452,55 +47452,55 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "Slow 2 items for 1 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "Double Freeze"
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "Haste 2 items for 1 second(s)."
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "Shield 30."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "Heal 45."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "Poison 3."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "Burn 4."
         ]
       },
       {
-        "name": "Shiny",
+        "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "Adjacent properties have +25% Crit Chance."
         ]
@@ -47566,49 +47566,49 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "name": "Heavy",
+        "type": "Heavy",
         "tooltips": [
           "When you Crit, Slow 1 item for 2 second(s)."
         ]
       },
       {
-        "name": "Icy",
+        "type": "Icy",
         "tooltips": [
           "When you Crit, Freeze 1 item for 1 second(s)."
         ]
       },
       {
-        "name": "Turbo",
+        "type": "Turbo",
         "tooltips": [
           "+1 Haste Targets"
         ]
       },
       {
-        "name": "Shielded",
+        "type": "Shielded",
         "tooltips": [
           "When you Crit, Shield 15."
         ]
       },
       {
-        "name": "Restorative",
+        "type": "Restorative",
         "tooltips": [
           "When you Crit, Heal 20."
         ]
       },
       {
-        "name": "Toxic",
+        "type": "Toxic",
         "tooltips": [
           "When you Crit, Poison 1."
         ]
       },
       {
-        "name": "Fiery",
+        "type": "Fiery",
         "tooltips": [
           "When you Crit, Burn 2."
         ]
       },
       {
-        "name": "Deadly",
+        "type": "Deadly",
         "tooltips": [
           "Double Crit Chance"
         ]

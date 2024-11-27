@@ -2,8 +2,8 @@
     import MonsterEncounter from "$lib/components/MonsterEncounter.svelte";
     import MonsterEncounterPreview from "$lib/components/MonsterEncounterPreview.svelte";
     import type {
-        MonsterEncounterDay,
-        MonsterEncounter as MonsterEncounterType,
+        ClientSideMonsterEncounterDay,
+        ClientSideMonsterEncounter,
     } from "$lib/types";
     import SingleSelectFilter from "$lib/components/SingleSelectFilter.svelte";
     import type { PageData } from "./$types";
@@ -15,7 +15,7 @@
 
     let isLoading = $state(false);
     let hasError = $state(false);
-    let monsterEncounterDays = $state([] as MonsterEncounterDay[]);
+    let monsterEncounterDays = $state([] as ClientSideMonsterEncounterDay[]);
     let version = $state(null as string | null);
 
     onMount(async () => {
@@ -30,7 +30,7 @@
         if (monsterEncounterDays.length === 0 || !version) {
             try {
                 isLoading = true;
-                const response = await fetchJson<MonsterEncounterDay[]>(
+                const response = await fetchJson<ClientSideMonsterEncounterDay[]>(
                     "/api/monsterEncounterDays",
                     data.version,
                 );
@@ -74,8 +74,8 @@
             : monsterEncounterDays.filter(({ day }) => selectedDay === day),
     );
 
-    let selectedMonsterEncounter = $state() as MonsterEncounterType | undefined;
-    function toggleEncounter(monsterEncounter: MonsterEncounterType) {
+    let selectedMonsterEncounter = $state() as ClientSideMonsterEncounter | undefined;
+    function toggleEncounter(monsterEncounter: ClientSideMonsterEncounter) {
         if (selectedMonsterEncounter?.cardId === monsterEncounter.cardId) {
             selectedMonsterEncounter = undefined;
         } else {

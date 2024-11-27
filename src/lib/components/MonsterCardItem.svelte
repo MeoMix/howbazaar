@@ -12,16 +12,16 @@
     const {
         card,
         tierType,
-        enchantmentName,
+        enchantmentType,
     }: {
         card: ClientSideItemCard;
         tierType: TierType;
-        enchantmentName: EnchantmentType | undefined;
+        enchantmentType: EnchantmentType | undefined;
     } = $props();
 
     const enchantment = $derived(
         card.enchantments.find(
-            (enchantment) => enchantment.name === enchantmentName,
+            (enchantment) => enchantment.type === enchantmentType,
         ),
     );
 
@@ -38,9 +38,9 @@
         <div class="font-bold text-2xl">
             {#if enchantment}
                 <span
-                    class={`text-enchantments-${enchantment.name.toLowerCase()}`}
+                    class={`text-enchantments-${enchantment.type.toLowerCase()}`}
                 >
-                    {enchantment.name}
+                    {enchantment.type}
                 </span>
             {/if}
             {card.name}

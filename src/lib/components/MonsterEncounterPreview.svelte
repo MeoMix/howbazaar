@@ -1,5 +1,5 @@
 <script lang="ts">
-    import type { MonsterEncounter } from "$lib/types";
+    import type { ClientSideMonsterEncounter } from "$lib/types";
     import { removeSpecialCharacters } from "$lib/utils/stringUtils";
 
     const {
@@ -7,8 +7,8 @@
         toggleEncounter,
         isActive,
     }: {
-        monsterEncounter: MonsterEncounter;
-        toggleEncounter: (encounter: MonsterEncounter) => void;
+        monsterEncounter: ClientSideMonsterEncounter;
+        toggleEncounter: (encounter: ClientSideMonsterEncounter) => void;
         isActive: boolean;
     } = $props();
     const sanitizedCardName = $derived(

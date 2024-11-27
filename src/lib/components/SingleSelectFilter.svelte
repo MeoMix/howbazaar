@@ -17,11 +17,9 @@
 </script>
 
 <div>
-    <div class="mb-2">
-        <Label class="font-semibold text-lg dark:text-bazaar-tan700"
-            >{label}</Label
-        >
-    </div>
+    <Label class="mb-2 font-semibold text-lg dark:text-bazaar-tan700"
+        >{label}</Label
+    >
 
     <div class="flex flex-wrap gap-2">
         {#each options as option}

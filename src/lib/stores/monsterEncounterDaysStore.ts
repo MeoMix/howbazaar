@@ -1,4 +1,4 @@
-import type { MonsterEncounterDay } from '$lib/types';
+import type { ClientSideMonsterEncounterDay } from '$lib/types';
 import { writable } from 'svelte/store';
 import { browser } from '$app/environment'; // Svelte-specific browser check
 
@@ -7,7 +7,7 @@ const LOCAL_STORAGE_KEY = 'monsterEncounterDaysStore';
 
 type MonsterEncounterDaysStoreData = {
     version: string | null;
-    monsterEncounterDays: MonsterEncounterDay[];
+    monsterEncounterDays: ClientSideMonsterEncounterDay[];
 }
 
 // Load initial data from localStorage if in a browser environment
@@ -20,19 +20,19 @@ const initialData = browser
                 ? JSON.parse(storedData) as MonsterEncounterDaysStoreData
                 : {
                     version: null as string | null,
-                    monsterEncounterDays: [] as MonsterEncounterDay[],
+                    monsterEncounterDays: [] as ClientSideMonsterEncounterDay[],
                 };
         } catch (err) {
             console.error(`Error parsing localStorage key "${LOCAL_STORAGE_KEY}":`, err);
             return {
                 version: null as string | null,
-                monsterEncounterDays: [] as MonsterEncounterDay[],
+                monsterEncounterDays: [] as ClientSideMonsterEncounterDay[],
             };
         }
     })()
     : {
         version: null as string | null,
-        monsterEncounterDays: [] as MonsterEncounterDay[],
+        monsterEncounterDays: [] as ClientSideMonsterEncounterDay[],
     };
 
 // Create a writable store

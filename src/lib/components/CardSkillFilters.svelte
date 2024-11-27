@@ -1,16 +1,10 @@
 <script lang="ts">
-    import { Button } from "flowbite-svelte";
+    import { Button, Label } from "flowbite-svelte";
     import MultiSelectFilter from "./MultiSelectFilter.svelte";
     import FilterToggle from "./FilterToggle.svelte";
     import { onMount } from "svelte";
     import { page } from "$app/stores";
-    import type {
-        Hero,
-        HiddenTag,
-        Tag,
-        Option,
-        TriState,
-    } from "$lib/types";
+    import type { Hero, HiddenTag, Tag, Option, TriState } from "$lib/types";
     import SearchInput from "./SearchInput.svelte";
     import MultiSelectTriFilter from "./MultiSelectTriFilter.svelte";
     import AdvancedFilterToggle from "./AdvancedFilterToggle.svelte";
@@ -26,6 +20,7 @@
         isMatchAnyHero = $bindable(),
         searchText = $bindable(),
         isSearchNameOnly = $bindable(),
+        isMonsterDropsOnly = $bindable(),
     }: {
         heroOptions: Option[];
         minimumTierOptions: Option[];
@@ -38,6 +33,7 @@
         isMatchAnyHero: boolean;
         searchText: string;
         isSearchNameOnly: boolean;
+        isMonsterDropsOnly: boolean;
     } = $props();
 
     function clearSearch() {
@@ -52,6 +48,7 @@
         isMatchAnyHero = false;
         searchText = "";
         isSearchNameOnly = false;
+        isMonsterDropsOnly = false;
     }
 
     let isShowingAdvancedFilters = $state(
@@ -111,6 +108,23 @@
                 bind:triStates={tagStates}
                 bind:isMatchAny={isMatchAnyTag}
             />
+
+            <div>
+                <Label
+                    class="mb-2 font-semibold text-lg dark:text-bazaar-tan700"
+                    >Misc</Label
+                >
+
+                <div class="flex flex-wrap gap-2">
+                    <FilterToggle
+                        isEnabled={isMonsterDropsOnly}
+                        label={"Monster Drops Only"}
+                        onClick={() => {
+                            isMonsterDropsOnly = !isMonsterDropsOnly;
+                        }}
+                    />
+                </div>
+            </div>
         </div>
     {/if}
 </div>

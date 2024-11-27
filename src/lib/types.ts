@@ -10,7 +10,7 @@ type ClientSideTier = {
 };
 
 type ClientSideEnchantment = {
-    name: EnchantmentType;
+    type: EnchantmentType;
     tooltips: string[];
 };
 
@@ -110,29 +110,29 @@ export type ParsedDayHour = {
     }[];
 };
 
-type MonsterEncounterItem = {
+type ClientSideMonsterEncounterItem = {
     card: ClientSideItemCard;
     tierType: TierType;
     enchantmentType: EnchantmentType | undefined;
 };
 
-type MonsterEncounterSkill = {
+type ClientSideMonsterEncounterSkill = {
     card: ClientSideSkillCard;
     tierType: TierType;
 };
 
-export type MonsterEncounter = {
+export type ClientSideMonsterEncounter = {
     cardId: string;
     cardName: string;
     level: number;
     health: number;
-    items: MonsterEncounterItem[];
-    skills: MonsterEncounterSkill[];
+    items: ClientSideMonsterEncounterItem[];
+    skills: ClientSideMonsterEncounterSkill[];
 };
 
-export type MonsterEncounterDay = {
+export type ClientSideMonsterEncounterDay = {
     day: number;
-    groups: MonsterEncounter[][];
+    groups: ClientSideMonsterEncounter[][];
 };
 
 export type Option = {
@@ -153,6 +153,6 @@ export type SkillsApiResponse = {
 }
 
 export type MonsterEncounterDaysApiResponse = {
-    data: MonsterEncounterDay[];
+    data: ClientSideMonsterEncounterDay[];
     version: string;
 }

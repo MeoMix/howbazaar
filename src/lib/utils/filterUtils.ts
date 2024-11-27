@@ -145,7 +145,7 @@ function matchesSearchText(
     );
 
     const hybridMatchEnchantments = isSearchEnchantments && ('enchantments' in card) && card.enchantments.some(e =>
-        hybridMatch(e.name, lowerSearchText) ||
+        hybridMatch(e.type, lowerSearchText) ||
         e.tooltips.some(tip => hybridMatch(tip, lowerSearchText))
     );
 
@@ -169,13 +169,15 @@ export function filterItemCards(
     searchText: string,
     isSearchNameOnly: boolean,
     isSearchEnchantments: boolean,
-    isMatchAnyTag: boolean
+    isMatchAnyTag: boolean,
+    isMonsterDropsOnly: boolean
 ): ClientSideItemCard[] {
     const lowerSearchText = searchText.toLowerCase();
 
     // Apply all filters (except search text) first
     const filteredCards = cards.filter(card => {
         return (
+            (isMonsterDropsOnly ? card.combatEncounters.length > 0 : true) &&
             matchesHero(card.heroes, selectedHeroes) &&
             matchesTier(card.startingTier, selectedTiers) &&
             matchesTagState(card.tags, card.hiddenTags, tagStates, isMatchAnyTag) &&
@@ -205,13 +207,15 @@ export function filterSkillCards(
     searchText: string,
     isSearchNameOnly: boolean,
     isMatchAnyTag: boolean,
-    isMatchAnyHero: boolean
+    isMatchAnyHero: boolean,
+    isMonsterDropsOnly: boolean
 ): ClientSideSkillCard[] {
     const lowerSearchText = searchText.toLowerCase();
 
     // Apply all filters (except search text) first
     const filteredCards = cards.filter(card => {
         return (
+            (isMonsterDropsOnly ? card.combatEncounters.length > 0 : true) &&
             matchesHeroState(card.heroes, heroStates, isMatchAnyHero) &&
             matchesTier(card.startingTier, selectedTiers) &&
             matchesTagState(card.tags, card.hiddenTags, tagStates, isMatchAnyTag)

@@ -306,7 +306,7 @@ describe('cardJsonParser', () => {
   describe('Enchantments', () => {
     it('should parse "Deadly Open Sign" correctly by creating a verbose tooltip referencing sell value of items and adjacent properties', () => {
       const deadlyOpenSign = itemCards.find(card => card.name === "Open Sign")!;
-      const deadlyEnchantment = deadlyOpenSign.enchantments.find(enchantment => enchantment.name === 'Deadly')!;
+      const deadlyEnchantment = deadlyOpenSign.enchantments.find(enchantment => enchantment.type === 'Deadly')!;
 
       expect(deadlyEnchantment.tooltips.length).toEqual(1);
       expect(deadlyEnchantment.tooltips[0]).toEqual('Shield Properties adjacent to this have + Crit Chance equal to the value of your highest value item. [0]');
@@ -314,7 +314,7 @@ describe('cardJsonParser', () => {
 
     it('should parse "Heavy Fishing Net" correctly by providing a custom tooltip for the enchantment aura', () => {
       const fishingNet = itemCards.find(card => card.name === "Fishing Net")!;
-      const heavyEnchantment = fishingNet.enchantments.find(enchantment => enchantment.name === 'Heavy')!;
+      const heavyEnchantment = fishingNet.enchantments.find(enchantment => enchantment.type === 'Heavy')!;
 
       expect(heavyEnchantment.tooltips.length).toEqual(1);
       expect(heavyEnchantment.tooltips[0]).toEqual('Double Slow');
@@ -322,7 +322,7 @@ describe('cardJsonParser', () => {
 
     it('should parse "Obsidian Magnifying Glass" correctly by providing a custom tooltip for the lifesteal attribute', () => {
       const magnifyingGlass = itemCards.find(card => card.name === "Magnifying Glass")!;
-      const heavyEnchantment = magnifyingGlass.enchantments.find(enchantment => enchantment.name === 'Obsidian')!;
+      const heavyEnchantment = magnifyingGlass.enchantments.find(enchantment => enchantment.type === 'Obsidian')!;
 
       expect(heavyEnchantment.tooltips.length).toEqual(1);
       // Excludes 100 because 100% is implicit, can add 100% later if fractional lifesteal is introduced.
@@ -331,7 +331,7 @@ describe('cardJsonParser', () => {
 
     it('should parse "Turbo Bomb Squad" correctly by replacing its {abiltiy.e1} (which is a typo) with a correct value', () => {
       const bombSquad = itemCards.find(card => card.name === "Bomb Squad")!;
-      const turboEnchantment = bombSquad.enchantments.find(enchantment => enchantment.name === 'Turbo')!;
+      const turboEnchantment = bombSquad.enchantments.find(enchantment => enchantment.type === 'Turbo')!;
 
       expect(turboEnchantment.tooltips.length).toEqual(1);
       expect(turboEnchantment.tooltips[0]).toEqual('Haste 1 item for 2 second(s).');
@@ -339,7 +339,7 @@ describe('cardJsonParser', () => {
 
     it('should parse "Deadly Port" correctly by replacing its {aura.e1.} (which is a typo) with a correct value', () => {
       const port = itemCards.find(card => card.name === "Port")!;
-      const deadlyEnchantment = port.enchantments.find(enchantment => enchantment.name === 'Deadly')!;
+      const deadlyEnchantment = port.enchantments.find(enchantment => enchantment.type === 'Deadly')!;
 
       expect(deadlyEnchantment.tooltips.length).toEqual(1);
       expect(deadlyEnchantment.tooltips[0]).toEqual('Your Ammo items have +20% Crit Chance.');
@@ -347,21 +347,21 @@ describe('cardJsonParser', () => {
 
     // it('should parse "Swash Buckle" correctly by excluding Shiny which is an invalid enchantment', () => {
     //   const swashBuckle = cards.find(card => card.name === "Swash Buckle")!;
-    //   const shinyEnchantment = swashBuckle.enchantments.find(enchantment => enchantment.name === 'Shiny')!;
+    //   const shinyEnchantment = swashBuckle.enchantments.find(enchantment => enchantment.type === 'Shiny')!;
 
     //   expect(shinyEnchantment).toBeUndefined();
     // });
 
     it('should parse "Orbital Polisher" correctly by excluding Shiny which is an invalid enchantment', () => {
       const orbitalPolisher = itemCards.find(card => card.name === "Orbital Polisher")!;
-      const shinyEnchantment = orbitalPolisher.enchantments.find(enchantment => enchantment.name === 'Shiny')!;
+      const shinyEnchantment = orbitalPolisher.enchantments.find(enchantment => enchantment.type === 'Shiny')!;
 
       expect(shinyEnchantment).toBeUndefined();
     });
 
     it('should parse "Heavy Multitool" correctly by providing a custom tooltip rather than trying to inject variables into the existing tooltip', () => {
       const multitool = itemCards.find(card => card.name === "Multitool")!;
-      const heavyEnchantment = multitool.enchantments.find(enchantment => enchantment.name === 'Heavy')!;
+      const heavyEnchantment = multitool.enchantments.find(enchantment => enchantment.type === 'Heavy')!;
 
       expect(heavyEnchantment.tooltips.length).toEqual(1);
       expect(heavyEnchantment.tooltips[0]).toEqual('+2 Slow');
@@ -369,7 +369,7 @@ describe('cardJsonParser', () => {
 
     it('should parse "Heavy Induction Aegis" correctly by replacing {ability.e1} with attribute values derived from StartingTier', () => {
       const inductionAegis = itemCards.find(card => card.name === "Induction Aegis")!;
-      const heavyEnchantment = inductionAegis.enchantments.find(enchantment => enchantment.name === 'Heavy')!;
+      const heavyEnchantment = inductionAegis.enchantments.find(enchantment => enchantment.type === 'Heavy')!;
 
       expect(heavyEnchantment.tooltips.length).toEqual(1);
       expect(heavyEnchantment.tooltips[0]).toEqual('Slow 1 item for 1 second(s).');
@@ -377,7 +377,7 @@ describe('cardJsonParser', () => {
 
     it('should parse "Deadly Sextant" correctly by replacing its {aura.0} with a correct value', () => {
       const sextant = itemCards.find(card => card.name === "Sextant")!;
-      const deadlyEnchantment = sextant.enchantments.find(enchantment => enchantment.name === 'Deadly')!;
+      const deadlyEnchantment = sextant.enchantments.find(enchantment => enchantment.type === 'Deadly')!;
 
       expect(deadlyEnchantment.tooltips.length).toEqual(1);
       expect(deadlyEnchantment.tooltips[0]).toEqual('Adjacent items have an additional +25% Crit Chance');
@@ -385,7 +385,7 @@ describe('cardJsonParser', () => {
 
     it('should parse "Deadly Star Chart" correctly by replacing its "2.0 Custom_0" with a correct attribute name', () => {
       const starChart = itemCards.find(card => card.name === "Star Chart")!;
-      const deadlyEnchantment = starChart.enchantments.find(enchantment => enchantment.name === 'Deadly')!;
+      const deadlyEnchantment = starChart.enchantments.find(enchantment => enchantment.type === 'Deadly')!;
 
       expect(deadlyEnchantment.tooltips.length).toEqual(1);
       expect(deadlyEnchantment.tooltips[0]).toEqual('Double Crit Chance');
@@ -393,7 +393,7 @@ describe('cardJsonParser', () => {
 
     it('should parse "Shiny Star Chart" correctly by replacing its "0.5 Custom_1" with a correct attribute name', () => {
       const starChart = itemCards.find(card => card.name === "Star Chart")!;
-      const shinyEnchantment = starChart.enchantments.find(enchantment => enchantment.name === 'Shiny')!;
+      const shinyEnchantment = starChart.enchantments.find(enchantment => enchantment.type === 'Shiny')!;
 
       expect(shinyEnchantment.tooltips.length).toEqual(2);
       expect(shinyEnchantment.tooltips[1]).toEqual('Double Cooldown Reduction');
@@ -401,7 +401,7 @@ describe('cardJsonParser', () => {
 
     it('should parse "Restorative Force Field" correctly by replacing its "Heal {ability.e1}." with a reference to Shield Amount', () => {
       const forceField = itemCards.find(card => card.name === "Force Field")!;
-      const restorativeEnchantment = forceField.enchantments.find(enchantment => enchantment.name === 'Restorative')!;
+      const restorativeEnchantment = forceField.enchantments.find(enchantment => enchantment.type === 'Restorative')!;
 
       expect(restorativeEnchantment.tooltips.length).toEqual(1);
       expect(restorativeEnchantment.tooltips[0]).toEqual('Heal equal to your shield.');

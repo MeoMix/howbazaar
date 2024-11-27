@@ -66,9 +66,9 @@
                 {#each card.enchantments as enchantment}
                     <div>
                         <div
-                            class={`text-lg font-semibold text-enchantments-${enchantment.name.toLowerCase()}`}
+                            class={`text-lg font-semibold text-enchantments-${enchantment.type.toLowerCase()}`}
                         >
-                            {enchantment.name}
+                            {enchantment.type}
                         </div>
 
                         {#each enchantment.tooltips as tooltip}

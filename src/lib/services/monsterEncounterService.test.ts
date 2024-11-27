@@ -4,11 +4,11 @@ import parsedSkillCards from "$lib/db/parsedSkillCards";
 import parsedCombatEncounterCards from "$lib/db/parsedCombatEncounterCards";
 import parsedMonsters from "$lib/db/parsedMonsters";
 import parsedDayHours from "$lib/db/parsedDayHours";
-import type { MonsterEncounterDay } from '$lib/types';
+import type { ClientSideMonsterEncounterDay } from '$lib/types';
 import { getMonsterEncounterDays } from './monsterEncounterService';
 
 describe('MonsterEncounterService', () => {
-    let monsterEncounterDays: MonsterEncounterDay[];
+    let monsterEncounterDays: ClientSideMonsterEncounterDay[];
 
     beforeAll(() => {
         monsterEncounterDays = getMonsterEncounterDays(parsedItemCards, parsedSkillCards, parsedCombatEncounterCards, parsedMonsters, parsedDayHours);

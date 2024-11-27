@@ -69,6 +69,7 @@
     let searchText = $state("");
     let isSearchNameOnly = $state(false);
     let isSearchEnchantments = $state(false);
+    let isMonsterDropsOnly = $state(false);
 
     const filteredCards = $derived(
         filterItemCards(
@@ -81,6 +82,7 @@
             isSearchNameOnly,
             isSearchEnchantments,
             isMatchAnyTag,
+            isMonsterDropsOnly,
         ),
     );
 </script>
@@ -102,6 +104,7 @@
     bind:searchText
     bind:isSearchNameOnly
     bind:isSearchEnchantments
+    bind:isMonsterDropsOnly
 />
 
 <div class="mx-auto w-full max-w-full sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg">

@@ -1,15 +1,10 @@
 <script lang="ts">
-    import { Button } from "flowbite-svelte";
+    import { Button, Label } from "flowbite-svelte";
     import MultiSelectFilter from "./MultiSelectFilter.svelte";
     import FilterToggle from "./FilterToggle.svelte";
     import { onMount } from "svelte";
     import { page } from "$app/stores";
-    import type {
-        HiddenTag,
-        Tag,
-        Option,
-        TriState,
-    } from "$lib/types";
+    import type { HiddenTag, Tag, Option, TriState } from "$lib/types";
     import SearchInput from "./SearchInput.svelte";
     import MultiSelectTriFilter from "./MultiSelectTriFilter.svelte";
     import AdvancedFilterToggle from "./AdvancedFilterToggle.svelte";
@@ -27,6 +22,7 @@
         searchText = $bindable(),
         isSearchNameOnly = $bindable(),
         isSearchEnchantments = $bindable(),
+        isMonsterDropsOnly = $bindable(),
     }: {
         heroOptions: Option[];
         minimumTierOptions: Option[];
@@ -41,6 +37,7 @@
         searchText: string;
         isSearchNameOnly: boolean;
         isSearchEnchantments: boolean;
+        isMonsterDropsOnly: boolean;
     } = $props();
 
     function clearSearch() {
@@ -54,6 +51,7 @@
         searchText = "";
         isSearchNameOnly = false;
         isSearchEnchantments = false;
+        isMonsterDropsOnly = false;
     }
 
     let isShowingAdvancedFilters = $state(
@@ -122,6 +120,23 @@
                 options={sizeOptions}
                 bind:selectedOptionValues={selectedSizes}
             />
+
+            <div>
+                <Label
+                    class="mb-2 font-semibold text-lg dark:text-bazaar-tan700"
+                    >Misc</Label
+                >
+
+                <div class="flex flex-wrap gap-2">
+                    <FilterToggle
+                        isEnabled={isMonsterDropsOnly}
+                        label={"Monster Drops Only"}
+                        onClick={() => {
+                            isMonsterDropsOnly = !isMonsterDropsOnly;
+                        }}
+                    />
+                </div>
+            </div>
         </div>
     {/if}
 </div>

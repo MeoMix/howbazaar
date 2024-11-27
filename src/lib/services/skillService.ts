@@ -5,7 +5,6 @@ import { getMonsterEncounterDays } from "./monsterEncounterService";
 export function getSkills(
     skillCards: ParsedSkillCard[],
     itemCards: ParsedItemCard[],
-    // TODO: DI would be nice 
     combatEncounterCards: ParsedCombatEncounterCard[],
     monsters: ParsedMonster[],
     dayHours: ParsedDayHour[]
@@ -23,7 +22,9 @@ export function getSkills(
 
         return {
             ...skillCard,
-            combatEncounters: combatEncounters.map(({ cardId, cardName }) => ({ cardId, cardName })).sort((a, b) => a.cardName.localeCompare(b.cardName)),
+            combatEncounters: combatEncounters
+                .sort((a, b) => a.level - b.level || a.cardName.localeCompare(b.cardName))
+                .map(({ cardId, cardName }) => ({ cardId, cardName })),
         };
     });
 

@@ -12,7 +12,7 @@ import parsedDayHours from "$lib/db/parsedDayHours";
 let serverVersion: string | undefined;
 
 export const GET: RequestHandler = ({ url, request }) => {
-    const monsterEncounterDays = getMonsterEncounterDays(parsedItemCards, parsedSkillCards, parsedCombatEncounterCards, parsedMonsters, parsedDayHours)
+    const monsterEncounterDays = getMonsterEncounterDays(parsedItemCards, parsedSkillCards, parsedCombatEncounterCards, parsedMonsters, parsedDayHours);
     serverVersion ??= getHash(monsterEncounterDays);
 
     // Check for requested version via query parameter
