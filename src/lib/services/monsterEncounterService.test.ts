@@ -1,24 +1,17 @@
 import { describe, it, expect, beforeAll } from 'vitest';
-import parsedItemCards from "$lib/processedItemCards.json" assert { type: "json" };
-import parsedSkillCards from "$lib/processedSkillCards.json" assert { type: "json" };
-import parsedCombatEncounterCards from "$lib/processedCombatEncounterCards.json" assert { type: "json" };
-import parsedMonsters from "$lib/processedMonsters.json" assert { type: "json" };
-import parsedDayHours from "$lib/processedDayHours.json" assert { type: "json" };
-import type { ParsedCardCombatEncounter, ParsedCardItem, ParsedCardSkill, Monster, MonsterEncounterDay } from '$lib/types';
-import type { ClientSideDayHours } from '$lib/types';
+import parsedItemCards from "$lib/processedItemCards";
+import parsedSkillCards from "$lib/processedSkillCards";
+import parsedCombatEncounterCards from "$lib/processedCombatEncounterCards";
+import parsedMonsters from "$lib/processedMonsters";
+import parsedDayHours from "$lib/processedDayHours";
+import type { MonsterEncounterDay } from '$lib/types';
 import { getMonsterEncounterDays } from './monsterEncounterService';
 
 describe('MonsterEncounterService', () => {
-    let itemCards = parsedItemCards as ParsedCardItem[];
-    let skillCards = parsedSkillCards as ParsedCardSkill[];
-    let combatEncounterCards = parsedCombatEncounterCards as ParsedCardCombatEncounter[];
-    let monsters = parsedMonsters as Monster[];
-    let dayHours = parsedDayHours as ClientSideDayHours[];
-
     let monsterEncounterDays: MonsterEncounterDay[];
 
     beforeAll(() => {
-        monsterEncounterDays = getMonsterEncounterDays(itemCards, skillCards, combatEncounterCards, monsters, dayHours);
+        monsterEncounterDays = getMonsterEncounterDays(parsedItemCards, parsedSkillCards, parsedCombatEncounterCards, parsedMonsters, parsedDayHours);
     });
 
     it('should have a Coconut Crab that only has one Sea Shell', () => {

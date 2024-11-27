@@ -1,8 +1,11 @@
-[
+// Auto-generated file. Do not edit directly.
+// TypeScript representation of processed data.
+import type { ParsedCardSkill } from '$lib/types';
+
+const data: ParsedCardSkill[] = [
   {
     "id": "b1b9ff21-32ac-436a-bd3c-120563b26bea",
     "name": "Third Degree Burns",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -51,7 +54,6 @@
   {
     "id": "41b9dac8-8020-4a0b-bd4e-c069b4cb1caf",
     "name": "Honed Strike",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -97,7 +99,6 @@
   {
     "id": "b6334c78-623c-4662-8642-8e05555d873a",
     "name": "Quick Freeze",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -146,7 +147,6 @@
   {
     "id": "a03e4ce6-4480-4edc-b612-8e1f6700cc26",
     "name": "Flashy Pilot",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -189,7 +189,6 @@
   {
     "id": "d6251362-7c11-4a7e-9d6d-97f445f2f828",
     "name": "Burn Containment",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -232,7 +231,6 @@
   {
     "id": "00f1ae18-33a6-499d-b2ea-319ac3debab9",
     "name": "Left Eye",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -282,7 +280,6 @@
   {
     "id": "7434f3a5-2432-4603-b6d7-46febb9272fd",
     "name": "Tracer Fire",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -328,7 +325,6 @@
   {
     "id": "b76e0b9a-481c-4128-9ed3-a290f3b21b4f",
     "name": "Peaceful Eye",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -379,7 +375,6 @@
   {
     "id": "c5936035-d32a-4d82-8dfc-44deb993b5ea",
     "name": "Pickpocket",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -424,7 +419,6 @@
   {
     "id": "8c16e6c8-2f44-4335-b31e-5b2268bf790e",
     "name": "Finesse Shield",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -468,7 +462,6 @@
   {
     "id": "6f593cc1-b44a-43d6-a83b-a68fb477aef2",
     "name": "Venomous Vitality",
-    "type": "Skill",
     "startingTier": "Diamond",
     "tiers": {
       "Bronze": {
@@ -509,7 +502,6 @@
   {
     "id": "f1c3b934-254a-459f-9078-023edbcfcb03",
     "name": "Healthy Collector",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -555,7 +547,6 @@
   {
     "id": "a89060ce-17fa-4706-9c6c-79c0834eeb2c",
     "name": "Liquid Cooled",
-    "type": "Skill",
     "startingTier": "Diamond",
     "tiers": {
       "Bronze": {
@@ -596,7 +587,6 @@
   {
     "id": "d8e7fa0a-9127-4a11-a84e-d479a011a92d",
     "name": "Improvised Poison",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -639,7 +629,6 @@
   {
     "id": "3510040e-9d43-4e2a-867e-96cc6740a139",
     "name": "Improvised Weaponry",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -688,7 +677,6 @@
   {
     "id": "71433809-d05a-4544-9959-aff20ae5db93",
     "name": "Iron Sharpens Iron",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -737,7 +725,6 @@
   {
     "id": "115c2677-6880-4400-af80-f5afa3d502fe",
     "name": "Defense Grid",
-    "type": "Skill",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -788,7 +775,6 @@
   {
     "id": "2c637e34-ea4d-4532-9118-fddd9e637342",
     "name": "Improvised Heal",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -832,7 +818,6 @@
   {
     "id": "1e8293e9-c60f-464a-9d44-21e766978edc",
     "name": "Improvised Burn",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -878,7 +863,6 @@
   {
     "id": "0dd4d40e-ac14-4a57-8c7f-9d47a5bdd38a",
     "name": "Desperate Strike",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -921,7 +905,6 @@
   {
     "id": "19b74e9a-6723-4e94-a955-2c39ca48dbd0",
     "name": "Flamedancer",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -966,7 +949,6 @@
   {
     "id": "dff033fb-0fd4-4ae9-a9c2-ed8a81657d08",
     "name": "Cash Deposits",
-    "type": "Skill",
     "startingTier": "Diamond",
     "tiers": {
       "Bronze": {
@@ -1008,7 +990,6 @@
   {
     "id": "d071e4de-f87f-41b5-b02d-d622e35c0b4d",
     "name": "Juggler",
-    "type": "Skill",
     "startingTier": "Diamond",
     "tiers": {
       "Bronze": {
@@ -1047,7 +1028,6 @@
   {
     "id": "338b9fbe-0131-4d89-8661-13aa2dd0c9a1",
     "name": "Submerged",
-    "type": "Skill",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -1098,7 +1078,6 @@
   {
     "id": "13f4df45-8f29-4a48-8a2b-b8176e17c85d",
     "name": "Retaliatory Toxins",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -1145,7 +1124,6 @@
   {
     "id": "cb8e9ed1-764e-4fa5-a2b8-61c2eddcbf7e",
     "name": "Grease Fire",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -1190,7 +1168,6 @@
   {
     "id": "c3f674a0-4025-45e1-b611-bf70fd6f279c",
     "name": "Lifting",
-    "type": "Skill",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -1239,7 +1216,6 @@
   {
     "id": "3b3b1f2b-7f43-440d-807b-61eea3a65cb0",
     "name": "Void Rage",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -1281,7 +1257,6 @@
   {
     "id": "c9c884fd-849e-4541-b770-4658c2e6e609",
     "name": "Foreboding Winds",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -1322,7 +1297,6 @@
   {
     "id": "1d0b3080-14a8-41c5-9449-9b48f46d4726",
     "name": "Makeshift Plate",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -1364,7 +1338,6 @@
   {
     "id": "f6a49c4a-7ee7-4aa7-8162-392eee2d3835",
     "name": "First Flames",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -1413,7 +1386,6 @@
   {
     "id": "760fd7aa-fce6-4779-818e-99ba51274010",
     "name": "Like Clockwork",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -1460,7 +1432,6 @@
   {
     "id": "813b4dd8-3fd3-4824-be6e-bce2b1f175a3",
     "name": "Sharpened Steel",
-    "type": "Skill",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -1505,7 +1476,6 @@
   {
     "id": "a9e56561-95d9-46c4-83e3-499e6b159013",
     "name": "Alacrity",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -1552,7 +1522,6 @@
   {
     "id": "c5ce101a-3af2-49ce-bcc9-42481355c58e",
     "name": "Follow-Up Care",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -1598,7 +1567,6 @@
   {
     "id": "b57df6d6-fc6c-4401-ad41-77f83388eabe",
     "name": "Distributed Systems",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -1639,7 +1607,6 @@
   {
     "id": "b21d98f7-d677-4598-8b53-5bfd8301d26a",
     "name": "Petrifying Gaze",
-    "type": "Skill",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -1683,7 +1650,6 @@
   {
     "id": "f380f03c-3c71-4cae-b423-43fa31a5c3a3",
     "name": "Big Guns",
-    "type": "Skill",
     "startingTier": "Diamond",
     "tiers": {
       "Bronze": {
@@ -1726,7 +1692,6 @@
   {
     "id": "eea71cd9-2688-4c4d-99e7-6eee44cf47a2",
     "name": "Panic",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -1771,7 +1736,6 @@
   {
     "id": "19c967e5-f4c0-4c11-bb96-aa039369600a",
     "name": "Large Appetites",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -1817,7 +1781,6 @@
   {
     "id": "d675442d-7d59-4f13-9209-6e1a4ae7a1fc",
     "name": "Burning Rage",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -1865,7 +1828,6 @@
   {
     "id": "1448f669-4c0f-4f86-a23c-00fb647b1153",
     "name": "Slowed Targets",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -1910,7 +1872,6 @@
   {
     "id": "1c47afbe-2e26-4b63-b50c-1bff7d48b88b",
     "name": "Creeping Chill",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -1959,7 +1920,6 @@
   {
     "id": "1c40716a-d125-4deb-8ada-8b177c5ff071",
     "name": "Brawler",
-    "type": "Skill",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -2004,7 +1964,6 @@
   {
     "id": "b3c7f45e-23f3-44c8-adca-3ca99376e848",
     "name": "Master Salesman",
-    "type": "Skill",
     "startingTier": "Diamond",
     "tiers": {
       "Bronze": {
@@ -2043,7 +2002,6 @@
   {
     "id": "7919e8b0-d749-4c13-892e-bc794c8cf06e",
     "name": "Heat Shield",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -2086,7 +2044,6 @@
   {
     "id": "6bd675c5-a9a3-4a04-b3b3-c6ed09904bc2",
     "name": "Clean Storefront",
-    "type": "Skill",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -2129,7 +2086,6 @@
   {
     "id": "b89ebdeb-1954-47c8-97fe-8cc3008f2a25",
     "name": "Revitalizing Toxins",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -2175,7 +2131,6 @@
   {
     "id": "0526054f-98da-4e95-be68-d25b26bb0fe3",
     "name": "Trained",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -2221,7 +2176,6 @@
   {
     "id": "afe451fd-7726-4ed6-9ad9-48d917a12012",
     "name": "Specialist",
-    "type": "Skill",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -2268,7 +2222,6 @@
   {
     "id": "6550ba8c-8d90-41f8-82c8-a0af040458ce",
     "name": "Depth Charge",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -2313,7 +2266,6 @@
   {
     "id": "304d505a-d914-4264-9142-b6efb7aca1ff",
     "name": "Flurry of Blows",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -2357,7 +2309,6 @@
   {
     "id": "a1975546-334f-4137-85cc-43a4c8ae49f3",
     "name": "Regenerative",
-    "type": "Skill",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -2401,7 +2352,6 @@
   {
     "id": "aa603f52-3788-40c2-bb99-53e92a69b3f5",
     "name": "Rust",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -2446,7 +2396,6 @@
   {
     "id": "a3695c78-63e4-45a9-a2b9-9b2827325527",
     "name": "Quality over Quantity",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -2492,7 +2441,6 @@
   {
     "id": "050ff26a-59ec-4666-89b0-b0630a75149a",
     "name": "Hard Shell",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -2538,7 +2486,6 @@
   {
     "id": "8d41a164-2667-4df4-91ed-3da224b8c63a",
     "name": "Focused Rage",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -2580,7 +2527,6 @@
   {
     "id": "b0b38699-beb0-4012-b4f0-bc424f4ba787",
     "name": "Prime Real Estate",
-    "type": "Skill",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -2625,7 +2571,6 @@
   {
     "id": "5e193004-5e5f-4166-96a0-9a51a3ef8443",
     "name": "Flanking Shield",
-    "type": "Skill",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -2670,7 +2615,6 @@
   {
     "id": "d179345d-953d-4c59-a324-5c2504951644",
     "name": "Emergency Draught",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -2716,7 +2660,6 @@
   {
     "id": "b5160cb5-5d92-420b-8883-b67e701b5e5f",
     "name": "Righty Tighty",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -2759,7 +2702,6 @@
   {
     "id": "d31c4499-c05a-4d7b-8571-a19e102c3169",
     "name": "Improved Toxins",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -2806,7 +2748,6 @@
   {
     "id": "a6cc6854-91aa-4a30-9936-33db1cf16119",
     "name": "Firepower",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -2849,7 +2790,6 @@
   {
     "id": "318e27ee-611e-4e8b-bf3b-ae9982494453",
     "name": "The Best Defense",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -2897,7 +2837,6 @@
   {
     "id": "fcb51ffd-6d25-4e74-871a-7dc0de2bae91",
     "name": "Sparring Partner",
-    "type": "Skill",
     "startingTier": "Legendary",
     "tiers": {
       "Bronze": {
@@ -2934,7 +2873,6 @@
   {
     "id": "3d75530d-ebad-46fa-a0da-04df6cdb9e5a",
     "name": "Reinforced Steel",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -2978,7 +2916,6 @@
   {
     "id": "1798b189-818a-456d-b7c5-efddf8da15c2",
     "name": "Advanced Synthetics",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -3018,7 +2955,6 @@
   {
     "id": "529f2133-0d39-4827-9788-2b90c5356b7e",
     "name": "Moth to a Flame",
-    "type": "Skill",
     "startingTier": "Diamond",
     "tiers": {
       "Bronze": {
@@ -3059,7 +2995,6 @@
   {
     "id": "c2e26fae-a435-44ff-8613-8977247ee972",
     "name": "Intrusion Countermeasures",
-    "type": "Skill",
     "startingTier": "Diamond",
     "tiers": {
       "Bronze": {
@@ -3098,7 +3033,6 @@
   {
     "id": "07fbd5ab-c52a-42d8-801d-8992c44714de",
     "name": "Standardized Toxins",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -3145,7 +3079,6 @@
   {
     "id": "76e1e841-8b6c-4871-a077-b17f4806675d",
     "name": "Heated Shells",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -3188,7 +3121,6 @@
   {
     "id": "9d7c0a60-c957-4513-81d8-2ba957b58fb1",
     "name": "Poisonous Opener",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -3235,7 +3167,6 @@
   {
     "id": "fbbfbef7-8fe4-4ac0-81fa-09afb59e0fcc",
     "name": "Strength",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -3287,7 +3218,6 @@
   {
     "id": "d4471fb1-a60b-4f64-9c60-ae0e8c930306",
     "name": "Minimalist",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -3328,7 +3258,6 @@
   {
     "id": "a59bc243-7c8b-447a-8ab7-968f662b1c50",
     "name": "Waters of Infinity",
-    "type": "Skill",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -3371,7 +3300,6 @@
   {
     "id": "994de267-673b-4838-9302-1b3b47ab0934",
     "name": "Boar Market",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -3415,7 +3343,6 @@
   {
     "id": "4fda14aa-365f-478f-8a27-b9b53c97c56a",
     "name": "Mixed Message",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -3462,7 +3389,6 @@
   {
     "id": "a885b513-3fe3-4795-a10e-c2e4f6b5f1f6",
     "name": "Parting Shot",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -3504,7 +3430,6 @@
   {
     "id": "570a7c19-0dab-459f-b545-6ade12a69312",
     "name": "Toxic Friendship",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -3547,7 +3472,6 @@
   {
     "id": "69336595-1135-4e17-8192-247e0478d020",
     "name": "Lefty Loosey",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -3590,7 +3514,6 @@
   {
     "id": "3c9eefb8-f348-486b-9ec2-a4920f71bee4",
     "name": "Well-Oiled Machine",
-    "type": "Skill",
     "startingTier": "Diamond",
     "tiers": {
       "Bronze": {
@@ -3631,7 +3554,6 @@
   {
     "id": "f08ab88b-c40e-4f4e-9419-e7501f9224ec",
     "name": "Paralytic Poison",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -3679,7 +3601,6 @@
   {
     "id": "870ed8e7-9c1f-4be0-b84c-00ebcf475a74",
     "name": "Cosmic Wind",
-    "type": "Skill",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -3723,7 +3644,6 @@
   {
     "id": "6c3d41e4-1ca7-4be5-b0e2-6cadbbd2bd27",
     "name": "Tools of the Trade",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -3768,7 +3688,6 @@
   {
     "id": "0eb35f18-3c03-4ea6-9af4-b7345bce1e3c",
     "name": "Beautiful Friendship",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -3812,7 +3731,6 @@
   {
     "id": "dd9d1ad7-8c28-46da-9f98-aaa2cc55cd00",
     "name": "Equivalent Exchange",
-    "type": "Skill",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -3856,7 +3774,6 @@
   {
     "id": "7ab9d9a7-09b2-4dab-b821-eaaf0fb84523",
     "name": "Thick Hide",
-    "type": "Skill",
     "startingTier": "Diamond",
     "tiers": {
       "Bronze": {
@@ -3896,7 +3813,6 @@
   {
     "id": "113091ab-c543-4745-9dc4-18ab1cdfb3b8",
     "name": "Arbitrage",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -3943,7 +3859,6 @@
   {
     "id": "4225d131-791a-4ea4-ab0e-80a3343a3253",
     "name": "Defensive Stance",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -3988,7 +3903,6 @@
   {
     "id": "b7b9f86e-689d-44ec-889d-026e8d45081c",
     "name": "Frontal Shielding",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -4037,7 +3951,6 @@
   {
     "id": "239aeabb-0b0c-484d-a761-ee68ede3223c",
     "name": "Lash Out",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -4082,7 +3995,6 @@
   {
     "id": "ef12c160-99ce-4171-a7ba-7fccaaafa239",
     "name": "First Strike",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -4132,7 +4044,6 @@
   {
     "id": "9215b678-2833-427b-bc97-75a90968c634",
     "name": "Ravenous",
-    "type": "Skill",
     "startingTier": "Legendary",
     "tiers": {
       "Bronze": {
@@ -4169,7 +4080,6 @@
   {
     "id": "976d7de6-8191-44c4-8270-2ebc47775fe8",
     "name": "Rear Shielding",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -4218,7 +4128,6 @@
   {
     "id": "73722d74-be04-4c9a-a925-6f235feeb11f",
     "name": "Void Render",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -4257,7 +4166,6 @@
   {
     "id": "b2cc190c-ddbd-487c-b99a-ed21150b6c10",
     "name": "Chocoholic",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -4298,7 +4206,6 @@
   {
     "id": "09f668a1-82f6-42d5-94fa-88af3568edd8",
     "name": "Hypnotic Drain",
-    "type": "Skill",
     "startingTier": "Diamond",
     "tiers": {
       "Bronze": {
@@ -4339,7 +4246,6 @@
   {
     "id": "e7cc942b-96c5-4b90-a916-b3db0ee4bfe7",
     "name": "Snowstorm",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -4385,7 +4291,6 @@
   {
     "id": "c149f8da-b64e-46f4-bf80-f6f4cae88fbc",
     "name": "Housewarming Gifts",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -4426,7 +4331,6 @@
   {
     "id": "12291452-e5c6-4d98-98c6-69f766536dbd",
     "name": "Critical Aid",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -4472,7 +4376,6 @@
   {
     "id": "f1e354bd-d94c-48fa-b63e-5012f68129a9",
     "name": "Letting off Steam",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -4516,7 +4419,6 @@
   {
     "id": "1d9eb8d1-ef94-4847-b472-28290159e894",
     "name": "Warm Hugs",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -4558,7 +4460,6 @@
   {
     "id": "f9628cc5-fdf8-49cf-8807-d7b85f457aa8",
     "name": "One Shot, One Kill",
-    "type": "Skill",
     "startingTier": "Diamond",
     "tiers": {
       "Bronze": {
@@ -4600,7 +4501,6 @@
   {
     "id": "9ec041be-6f89-4e95-963d-1deb7460e1d0",
     "name": "Circle of Life",
-    "type": "Skill",
     "startingTier": "Diamond",
     "tiers": {
       "Bronze": {
@@ -4642,7 +4542,6 @@
   {
     "id": "6216741f-f7fe-4de0-82c0-3733263378f1",
     "name": "Critical Protector",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -4688,7 +4587,6 @@
   {
     "id": "f3abf6be-b28d-42f5-a239-7208c2dcde25",
     "name": "Outmaneuver",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -4733,7 +4631,6 @@
   {
     "id": "09c4c894-0397-47e5-9635-7b1f4c49527a",
     "name": "Power Broker",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -4777,7 +4674,6 @@
   {
     "id": "c4c70f57-c51e-4bc4-848c-0f0e7fbddd28",
     "name": "Small Weaponry",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -4829,7 +4725,6 @@
   {
     "id": "7f097b31-c29e-4082-a835-6d6457c2d536",
     "name": "Ignition",
-    "type": "Skill",
     "startingTier": "Diamond",
     "tiers": {
       "Bronze": {
@@ -4860,7 +4755,6 @@
   {
     "id": "3728b5fe-43aa-4f77-b7a8-b20c3b359295",
     "name": "Creeping Toxins",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -4907,7 +4801,6 @@
   {
     "id": "6914df97-567f-4d9a-9473-d3de39a09e86",
     "name": "Frozen Shot",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -4952,7 +4845,6 @@
   {
     "id": "1fb47cc1-c38f-4240-8f7f-04a78222f5e7",
     "name": "Toxic",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -4995,7 +4887,6 @@
   {
     "id": "b2e947ce-a8d9-46e0-8249-22a6a97fbffc",
     "name": "Blizzard",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -5037,7 +4928,6 @@
   {
     "id": "aa59ff52-e4de-4728-bf9c-3ac8411ecbd8",
     "name": "Large Poisons",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -5082,7 +4972,6 @@
   {
     "id": "3715da61-af37-49c6-aa7d-68804484b685",
     "name": "Chemical Fire",
-    "type": "Skill",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -5133,7 +5022,6 @@
   {
     "id": "25c63d19-8254-47f8-acc9-519ee5a69e1f",
     "name": "Left-Handed",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -5185,7 +5073,6 @@
   {
     "id": "82d8a964-4068-44c0-a123-af96e5c350d4",
     "name": "Heavy Mettle",
-    "type": "Skill",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -5230,7 +5117,6 @@
   {
     "id": "8e02521d-4353-4a1d-9d2e-80f6f1e22f53",
     "name": "Purifying Flame",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -5272,7 +5158,6 @@
   {
     "id": "7e32e9be-23d1-4d3f-a103-0a0db10bc4f4",
     "name": "Cauterize",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -5314,7 +5199,6 @@
   {
     "id": "9cd3f8a9-3ca8-482b-8f4c-79f9d1d3400e",
     "name": "Trader",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -5355,7 +5239,6 @@
   {
     "id": "b7edb810-2ead-4e1c-965d-d787eacc6fd3",
     "name": "Shatter",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -5404,7 +5287,6 @@
   {
     "id": "69e15083-66e9-40ca-a3c9-f8bdd8b3887d",
     "name": "Desperate Freeze",
-    "type": "Skill",
     "startingTier": "Diamond",
     "tiers": {
       "Bronze": {
@@ -5442,7 +5324,6 @@
   {
     "id": "13989ad3-2122-4d86-a323-bb90fda8360b",
     "name": "Bloodhound",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -5488,7 +5369,6 @@
   {
     "id": "f74f460e-6b49-43a9-9b9f-9b6fe36d28e9",
     "name": "Void Energy",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -5530,7 +5410,6 @@
   {
     "id": "83d940dd-4b3d-4b0c-9f46-43d0041f5626",
     "name": "Combat Medic",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -5573,7 +5452,6 @@
   {
     "id": "0045d15e-ac74-436f-a200-eeedab7baf90",
     "name": "Backroom Dealings",
-    "type": "Skill",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -5617,7 +5495,6 @@
   {
     "id": "34ad2511-dec9-4e8f-8392-1cc691e77b87",
     "name": "Deadly Eye",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -5669,7 +5546,6 @@
   {
     "id": "f3f43bb9-1177-458f-8244-aaf409a050dd",
     "name": "Balanced Friendship",
-    "type": "Skill",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -5716,7 +5592,6 @@
   {
     "id": "f2782115-1920-4bf2-9306-32697bcfee15",
     "name": "Critical Captain",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -5763,7 +5638,6 @@
   {
     "id": "d56a6e90-f664-4791-8b78-5c8bd3f45f80",
     "name": "Sick Burn",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -5806,7 +5680,6 @@
   {
     "id": "f568cc30-31d8-48b3-8d26-a0f2032ebc6f",
     "name": "Diamond-tier Heart",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -5848,7 +5721,6 @@
   {
     "id": "d1505b87-551f-4786-818c-3c441f920d7b",
     "name": "Re-Tooled",
-    "type": "Skill",
     "startingTier": "Diamond",
     "tiers": {
       "Bronze": {
@@ -5892,7 +5764,6 @@
   {
     "id": "31e244c7-e013-4e6c-a51c-4f0ca8d10472",
     "name": "Strong Arm",
-    "type": "Skill",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -5938,7 +5809,6 @@
   {
     "id": "50eaea1d-0159-4feb-b855-9965cd7eddc2",
     "name": "Heavy Machinery",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -5981,7 +5851,6 @@
   {
     "id": "ab0ae449-82f3-414d-82d0-1ebc73ba5ee5",
     "name": "Command Ship",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -6026,7 +5895,6 @@
   {
     "id": "560a532c-73f4-4edd-b197-0127e2ca4cc9",
     "name": "Arms Dealer",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -6075,7 +5943,6 @@
   {
     "id": "e43da7b1-1190-469a-b6c6-43d8e3ca0ad6",
     "name": "Standard Ordnance",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -6127,7 +5994,6 @@
   {
     "id": "66d65bb7-09fa-4262-b0a1-12a29ac9e946",
     "name": "Glass Cannon",
-    "type": "Skill",
     "startingTier": "Diamond",
     "tiers": {
       "Bronze": {
@@ -6171,7 +6037,6 @@
   {
     "id": "4589a64c-fdc8-4334-a2c7-05a3a8b2c5da",
     "name": "Rapid Thaw",
-    "type": "Skill",
     "startingTier": "Diamond",
     "tiers": {
       "Bronze": {
@@ -6210,7 +6075,6 @@
   {
     "id": "05ea3ce6-0626-45c5-af36-a7711200d431",
     "name": "Initial Chill",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -6258,7 +6122,6 @@
   {
     "id": "9a8aedfe-6b97-4db9-8676-c774292637ee",
     "name": "Titanium Casing",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -6301,7 +6164,6 @@
   {
     "id": "18c6637b-14c7-4311-b853-e3fd74c613eb",
     "name": "Right-Handed",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -6353,7 +6215,6 @@
   {
     "id": "e2b02661-62c8-42da-be35-3b15eebdb31d",
     "name": "Cryomastery",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -6395,7 +6256,6 @@
   {
     "id": "c1ffec09-0567-47fe-b80e-4f55f62ee7fd",
     "name": "Anything to Win",
-    "type": "Skill",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -6440,7 +6300,6 @@
   {
     "id": "7b6a982f-7196-4d3e-8674-825fddba80d2",
     "name": "Shored Up",
-    "type": "Skill",
     "startingTier": "Diamond",
     "tiers": {
       "Bronze": {
@@ -6481,7 +6340,6 @@
   {
     "id": "035a7356-9021-4ba9-8c87-6a88181660ea",
     "name": "Big Ego",
-    "type": "Skill",
     "startingTier": "Diamond",
     "tiers": {
       "Bronze": {
@@ -6522,7 +6380,6 @@
   {
     "id": "b49dd22b-ef95-4f7e-954e-556e1e431d4a",
     "name": "Keen Eye",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -6572,7 +6429,6 @@
   {
     "id": "6a2b0ffc-bb7b-4ad3-a20c-8b46f9684a12",
     "name": "Quick Ignition",
-    "type": "Skill",
     "startingTier": "Diamond",
     "tiers": {
       "Bronze": {
@@ -6615,7 +6471,6 @@
   {
     "id": "a2200487-1d56-4383-8671-781049f8f7de",
     "name": "Honed Arsenal",
-    "type": "Skill",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -6665,7 +6520,6 @@
   {
     "id": "369a6704-2727-4cea-be27-01b76c82df45",
     "name": "Hunker Down",
-    "type": "Skill",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -6709,7 +6563,6 @@
   {
     "id": "72010bea-fadf-4f64-9cba-d34bfd014388",
     "name": "Draconic Rage",
-    "type": "Skill",
     "startingTier": "Diamond",
     "tiers": {
       "Bronze": {
@@ -6748,7 +6601,6 @@
   {
     "id": "57a19498-4525-4f15-9aa2-d0b21cf20d73",
     "name": "Party Like it's 011111001111",
-    "type": "Skill",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -6794,7 +6646,6 @@
   {
     "id": "08adc2fd-986c-4e8f-914e-fda9703ace3d",
     "name": "Assault Focus",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -6836,7 +6687,6 @@
   {
     "id": "b6c90dc6-f497-4fe4-90a1-759947180884",
     "name": "Fiery",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -6885,7 +6735,6 @@
   {
     "id": "254017cc-e3b9-486e-9276-850867ceba6b",
     "name": "Standardized Defenses",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -6932,7 +6781,6 @@
   {
     "id": "53aa52ea-b2b7-4b8a-8109-4f67fb4a3e29",
     "name": "Adaptive Ordinance",
-    "type": "Skill",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -6976,7 +6824,6 @@
   {
     "id": "cac848c8-dc77-4277-ba9f-df282b9f36ef",
     "name": "Nanite Healing",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -7022,7 +6869,6 @@
   {
     "id": "639fdb70-8dde-4301-ab75-426556a65eb6",
     "name": "Trickle Down Economics",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -7063,7 +6909,6 @@
   {
     "id": "5de1aaae-adb9-48a4-81fc-aff714956656",
     "name": "Pyromania",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -7104,7 +6949,6 @@
   {
     "id": "d53d5ba0-b087-42a2-9523-2a44d9001e07",
     "name": "Inexorable",
-    "type": "Skill",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -7147,7 +6991,6 @@
   {
     "id": "6a332b72-d300-486b-9659-1ca83e064ed2",
     "name": "Staying Power",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -7194,7 +7037,6 @@
   {
     "id": "9ff2cb3f-99dd-425b-b44f-14a1d0271f56",
     "name": "Stop That!",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -7237,7 +7079,6 @@
   {
     "id": "d08258b5-be49-410e-a650-4dfa01b35662",
     "name": "Invigorating Cold",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -7281,7 +7122,6 @@
   {
     "id": "2c4b4d14-19db-4d75-9fb6-a377d9ca9882",
     "name": "Chilling Touch",
-    "type": "Skill",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -7325,7 +7165,6 @@
   {
     "id": "0cb66928-870b-4c6b-9325-2c53f774eab9",
     "name": "Final Flame",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -7374,7 +7213,6 @@
   {
     "id": "56450d16-bc69-43fd-bb89-4aff071cda29",
     "name": "Unwavering",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -7415,7 +7253,6 @@
   {
     "id": "51cec489-1988-48ff-95af-0235b374803e",
     "name": "Rigged",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -7460,7 +7297,6 @@
   {
     "id": "9d910b0a-9ef3-447f-ab41-195effb68f21",
     "name": "Hot Spot",
-    "type": "Skill",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -7506,7 +7342,6 @@
   {
     "id": "81881146-f3ba-4092-9041-9f68cc30b732",
     "name": "Lethargy",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -7549,7 +7384,6 @@
   {
     "id": "b6936741-8ec9-42f1-a6ec-d76061141f7d",
     "name": "Standardized Care",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -7595,7 +7429,6 @@
   {
     "id": "6e95c90d-e4b4-42c3-b5e9-3c390d762c92",
     "name": "Shield Bash",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -7639,7 +7472,6 @@
   {
     "id": "42ca6153-fe5b-44b4-a043-f14870659472",
     "name": "Oceanic Rush",
-    "type": "Skill",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -7684,7 +7516,6 @@
   {
     "id": "5780e3ce-316c-4871-bfb8-45261b686fc2",
     "name": "Captain's Charge",
-    "type": "Skill",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -7730,7 +7561,6 @@
   {
     "id": "4797e5ba-c3ac-4b32-a7ef-93c0a45d1c4f",
     "name": "The Right Tool",
-    "type": "Skill",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -7775,7 +7605,6 @@
   {
     "id": "1e63e9bd-603a-4965-a6e8-4e180377c0ff",
     "name": "Temporal Strike",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -7820,7 +7649,6 @@
   {
     "id": "40118425-c016-4400-826d-f6ea40b2fc39",
     "name": "Flashy Mechanic",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -7864,7 +7692,6 @@
   {
     "id": "b76a00ad-8034-4ad8-9f55-9fdc279cf60e",
     "name": "Time to Tinker",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -7910,7 +7737,6 @@
   {
     "id": "fb409226-bf38-4275-b775-7fab879a1d6f",
     "name": "Retool",
-    "type": "Skill",
     "startingTier": "Diamond",
     "tiers": {
       "Bronze": {
@@ -7951,7 +7777,6 @@
   {
     "id": "292f58c0-409b-4de7-a8d2-099a8629aa5e",
     "name": "Toughness",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -7998,7 +7823,6 @@
   {
     "id": "a2351de3-f077-4631-81fa-5b0f8c2cbb23",
     "name": "Into the Void",
-    "type": "Skill",
     "startingTier": "Diamond",
     "tiers": {
       "Bronze": {
@@ -8035,7 +7859,6 @@
   {
     "id": "09c59ebf-d2f9-4862-9c30-396b9ddfdd89",
     "name": "Fiery Rebirth",
-    "type": "Skill",
     "startingTier": "Legendary",
     "tiers": {
       "Bronze": {
@@ -8072,7 +7895,6 @@
   {
     "id": "3c42764f-2a89-4fa2-b901-ca2ec127c411",
     "name": "Prosperity",
-    "type": "Skill",
     "startingTier": "Diamond",
     "tiers": {
       "Bronze": {
@@ -8112,7 +7934,6 @@
   {
     "id": "dfe40f90-61de-46dc-b807-0da587140e9d",
     "name": "Ambush",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -8153,7 +7974,6 @@
   {
     "id": "f38a0fb0-b94a-4701-9330-d14a943ac5c4",
     "name": "Right Eye",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -8203,7 +8023,6 @@
   {
     "id": "61ffd0e3-a0fe-43d2-8112-85fc90580d71",
     "name": "Property Mogul",
-    "type": "Skill",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -8248,7 +8067,6 @@
   {
     "id": "3735516a-1517-40fe-b158-9ccee3758fef",
     "name": "Building Crescendo",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -8298,7 +8116,6 @@
   {
     "id": "1e75f81b-f982-4642-b33d-497336784f9e",
     "name": "Stunning Strike",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -8344,7 +8161,6 @@
   {
     "id": "d2f910bc-3490-456f-8ab0-aedda752bc5c",
     "name": "Crashing Waves",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -8388,7 +8204,6 @@
   {
     "id": "c6a57594-4358-44de-b888-64216df4aa05",
     "name": "Healthy Tip",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -8430,7 +8245,6 @@
   {
     "id": "f0955884-1ea7-4cac-ad73-c30798d3642c",
     "name": "Sharp Corners",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -8476,7 +8290,6 @@
   {
     "id": "f6883b13-0dd2-475f-92e9-760102341bda",
     "name": "Conflagration",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -8521,7 +8334,6 @@
   {
     "id": "f7ae1ab0-16dc-46af-9a77-b23b7f33104f",
     "name": "Backup Defenses",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -8565,7 +8377,6 @@
   {
     "id": "158c1575-71c6-406c-82c9-f4435d9b37ca",
     "name": "Emergency Shield",
-    "type": "Skill",
     "startingTier": "Diamond",
     "tiers": {
       "Bronze": {
@@ -8606,7 +8417,6 @@
   {
     "id": "8c36b532-0eb5-49f8-9128-a50b17ef3eed",
     "name": "Flanking Toxins",
-    "type": "Skill",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -8651,7 +8461,6 @@
   {
     "id": "7518cb66-252b-4b9c-9d4d-269aaad8daf3",
     "name": "Flanking Fire",
-    "type": "Skill",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -8696,7 +8505,6 @@
   {
     "id": "ec327a59-8fde-444f-b29b-73b22c248c4e",
     "name": "Renovation",
-    "type": "Skill",
     "startingTier": "Diamond",
     "tiers": {
       "Bronze": {
@@ -8735,7 +8543,6 @@
   {
     "id": "b9ac862b-7599-4d1c-96c7-99e4edaad05f",
     "name": "Reserve Shield",
-    "type": "Skill",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -8781,7 +8588,6 @@
   {
     "id": "6b47d5d7-cd43-4efb-9e3b-5ee3c07a7f7d",
     "name": "Long Strides",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -8822,7 +8628,6 @@
   {
     "id": "e5602f0a-0f7f-4832-97cc-59bc7b605804",
     "name": "Frozen Synapse",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -8866,7 +8671,6 @@
   {
     "id": "315dc6e8-bc86-4ea5-9c6a-23848028456a",
     "name": "Gunner",
-    "type": "Skill",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -8910,7 +8714,6 @@
   {
     "id": "32e45628-c864-4f99-a2e8-94efe6f37cdc",
     "name": "Static Acceleration",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -8954,7 +8757,6 @@
   {
     "id": "52f43602-8404-4a38-9d16-b1845489851c",
     "name": "Ammo Stash",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -8999,7 +8801,6 @@
   {
     "id": "20db8a31-f74d-40d2-a5a5-db28e3261bea",
     "name": "Diamond Fangs",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -9044,7 +8845,6 @@
   {
     "id": "62154f7f-ea50-4703-aa2e-d2d4ae55e9b0",
     "name": "Big Numbers",
-    "type": "Skill",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -9092,7 +8892,6 @@
   {
     "id": "fb89bd6d-2677-435a-a73a-e0350cdab29e",
     "name": "Overclocked",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -9140,7 +8939,6 @@
   {
     "id": "883043eb-5a5f-4fa2-9cae-185f51019b11",
     "name": "Microfiber",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -9187,7 +8985,6 @@
   {
     "id": "ffceb0c7-7913-4339-8013-f1bcc67cca9c",
     "name": "Firestarter",
-    "type": "Skill",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -9230,7 +9027,6 @@
   {
     "id": "2aabac27-fb64-44df-96f5-b1dac0b23b1c",
     "name": "Hardened Shield",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -9273,7 +9069,6 @@
   {
     "id": "65a77e2d-6c13-46c2-ae28-c521502a8be3",
     "name": "Medical Ward",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -9319,7 +9114,6 @@
   {
     "id": "42c33f6c-a233-4ad1-8f04-b1cadac3a15f",
     "name": "Toxin Injector",
-    "type": "Skill",
     "startingTier": "Diamond",
     "tiers": {
       "Bronze": {
@@ -9361,7 +9155,6 @@
   {
     "id": "9dacb0ad-a016-40ff-a54a-24d807c0988f",
     "name": "Vengeance",
-    "type": "Skill",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -9400,7 +9193,6 @@
   {
     "id": "4e2e23aa-a3d1-46b0-9d59-c06fb64bea2f",
     "name": "First Responder",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -9446,7 +9238,6 @@
   {
     "id": "ff37ca26-2e4a-49bc-982d-49ff434e7295",
     "name": "Flashy Reload",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -9488,7 +9279,6 @@
   {
     "id": "8a42ef6e-3a7e-41f4-a741-6a33839afe64",
     "name": "Reaching the Summit",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -9533,7 +9323,6 @@
   {
     "id": "614a7ba0-6c7f-4686-88e2-42ecfe2d8735",
     "name": "Heal Power",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -9579,7 +9368,6 @@
   {
     "id": "1aa32e3b-fb93-4d4e-9630-f6168cd77cdc",
     "name": "Final Dose",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -9626,7 +9414,6 @@
   {
     "id": "1c4c5aaa-6aa2-4329-a55a-ac75e987ee95",
     "name": "Arms Race",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -9669,7 +9456,6 @@
   {
     "id": "5ff845f5-6cb5-40b8-957f-8a6ae47c3962",
     "name": "Red Envelope",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -9719,7 +9505,6 @@
   {
     "id": "cdf1d8f2-851b-43a8-bc8b-6d3ce2d4bca9",
     "name": "Tall Buildings",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -9762,7 +9547,6 @@
   {
     "id": "ee178ba8-666d-426f-8499-1bd611a91802",
     "name": "Burst of Flame",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -9807,7 +9591,6 @@
   {
     "id": "94b80fbf-4d21-4439-beb2-e1bdf56cea03",
     "name": "Flanking Shots",
-    "type": "Skill",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -9857,7 +9640,6 @@
   {
     "id": "ab4d7a85-3eb2-43e8-aa11-f94581f5690f",
     "name": "Living Flame",
-    "type": "Skill",
     "startingTier": "Diamond",
     "tiers": {
       "Bronze": {
@@ -9901,7 +9683,6 @@
   {
     "id": "e9218caf-28ed-4e9a-a24b-358d4852d88b",
     "name": "Frostfire",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -9951,7 +9732,6 @@
   {
     "id": "280eb842-0600-4f2c-bbf9-01926b43f1dc",
     "name": "Emergency Burn",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -9998,7 +9778,6 @@
   {
     "id": "4b491993-ccc9-4021-a347-5492a51f7b30",
     "name": "Second Wind",
-    "type": "Skill",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -10044,7 +9823,6 @@
   {
     "id": "dfeaa982-9ed6-4aee-840e-628fa8b508bd",
     "name": "Toxic Exposure",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -10087,7 +9865,6 @@
   {
     "id": "fa2dfc79-67be-4307-95d9-b4279ab58900",
     "name": "Buddy System",
-    "type": "Skill",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -10133,7 +9910,6 @@
   {
     "id": "b3c4ed70-958a-42e5-b4d4-16b27c03ac54",
     "name": "Knife Tricks",
-    "type": "Skill",
     "startingTier": "Diamond",
     "tiers": {
       "Bronze": {
@@ -10179,7 +9955,6 @@
   {
     "id": "76ae19fd-2783-4c21-919a-cdce66bb8948",
     "name": "Workin' Hard",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -10225,7 +10000,6 @@
   {
     "id": "f9170d20-9caa-41ca-82dd-9536f2f75dd6",
     "name": "Neophiliac",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -10271,7 +10045,6 @@
   {
     "id": "abba2590-426d-449f-8f19-4a3bd51ae4fe",
     "name": "Industrialist",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -10314,7 +10087,6 @@
   {
     "id": "756024f8-ad19-4f9b-a3c1-3a93c285b5d1",
     "name": "Aggressive",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -10361,7 +10133,6 @@
   {
     "id": "e2bed270-5a6c-46ae-ab7e-a0d34f6da903",
     "name": "Commercial Zoning",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -10405,7 +10176,6 @@
   {
     "id": "d52f6759-3ab5-46f4-87d1-bc719634c0d8",
     "name": "Ice Bullets",
-    "type": "Skill",
     "startingTier": "Diamond",
     "tiers": {
       "Bronze": {
@@ -10446,7 +10216,6 @@
   {
     "id": "c318939d-3ba2-41d8-ad5d-1b8267c0cf22",
     "name": "Augmented Defenses",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -10491,7 +10260,6 @@
   {
     "id": "015bc348-773e-4009-87ff-231452431bba",
     "name": "Heavy Weaponry",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -10543,7 +10311,6 @@
   {
     "id": "d5b180a2-9dfa-43e3-bfb9-3e15dac0398e",
     "name": "Rush",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -10590,7 +10357,6 @@
   {
     "id": "13bcf77b-0ad0-4dd3-85ed-927799691a72",
     "name": "Tempering",
-    "type": "Skill",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -10634,7 +10400,6 @@
   {
     "id": "3849770c-59df-4471-b0b0-f02713be8bb0",
     "name": "Full Arsenal",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -10679,7 +10444,6 @@
   {
     "id": "b7938579-8bc3-4bbf-b002-ffa1870acd50",
     "name": "Paralyzing Rush",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -10723,7 +10487,6 @@
   {
     "id": "fd3f0e7b-27ac-4bde-87f8-5ec61b19c4f7",
     "name": "Sabotage",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -10768,7 +10531,6 @@
   {
     "id": "ed7379d4-38ee-48b0-9ef0-61ed3c57ec22",
     "name": "Extreme Comfort",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -10814,7 +10576,6 @@
   {
     "id": "11a262fe-e1e7-4656-a07c-f6a3a1249352",
     "name": "Second Degree Burns",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -10863,7 +10624,6 @@
   {
     "id": "9b8912ec-1219-4cdf-acd5-cf9b73438280",
     "name": "Net Launcher",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -10911,7 +10671,6 @@
   {
     "id": "64727f7e-adfd-4f25-aa4e-1f127b9d5b70",
     "name": "All Talk",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -10953,7 +10712,6 @@
   {
     "id": "c7261fd4-ef40-4091-abb2-dcf5694ae2ac",
     "name": "Endurance",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -10995,7 +10753,6 @@
   {
     "id": "61c83a38-2976-45d1-95c7-cafe4f34ed51",
     "name": "Slow and Steady",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -11042,7 +10799,6 @@
   {
     "id": "76ac0aa6-ef43-4a5b-9a30-f0ab4186dc83",
     "name": "Healthy Lifestyle",
-    "type": "Skill",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -11087,7 +10843,6 @@
   {
     "id": "35cd34d4-80f5-48bd-95ed-5bb7fde3d21c",
     "name": "Flanking Aid",
-    "type": "Skill",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -11131,7 +10886,6 @@
   {
     "id": "04168bfd-eac1-40ff-ad34-bc10cb92e636",
     "name": "Initial Dose",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -11178,7 +10932,6 @@
   {
     "id": "bead31da-27fe-4056-ab77-1adbb37bb973",
     "name": "Open for Business",
-    "type": "Skill",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -11223,7 +10976,6 @@
   {
     "id": "13d1b66a-1d45-4e8e-9921-8312253fc48e",
     "name": "Barnacle Crusted",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -11266,7 +11018,6 @@
   {
     "id": "2a2ef40a-38d6-4441-ad43-76fc01f31eb4",
     "name": "Precision Diver",
-    "type": "Skill",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -11311,7 +11062,6 @@
   {
     "id": "4a443bdd-f949-4fb5-9ccd-a710f74d2311",
     "name": "Passive Aggressive",
-    "type": "Skill",
     "startingTier": "Diamond",
     "tiers": {
       "Bronze": {
@@ -11350,7 +11100,6 @@
   {
     "id": "063df89c-4fe9-4e89-a0c4-a0af4dedc9bb",
     "name": "Rapid Relief",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -11393,7 +11142,6 @@
   {
     "id": "d09d1ff8-a49b-485b-b1e3-ea50c4af5781",
     "name": "Immolating Spark",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -11442,7 +11190,6 @@
   {
     "id": "7a301c09-3e32-473a-ba6c-89097657a400",
     "name": "Flanking Criticals",
-    "type": "Skill",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -11490,7 +11237,6 @@
   {
     "id": "8e4fed70-3ad9-488d-8c77-f926c1621544",
     "name": "Reel 'Em In",
-    "type": "Skill",
     "startingTier": "Diamond",
     "tiers": {
       "Bronze": {
@@ -11530,7 +11276,6 @@
   {
     "id": "b7c2ce67-0da5-4360-9eda-b328817affe6",
     "name": "Heavy Shielding",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -11577,7 +11322,6 @@
   {
     "id": "4bcc9eeb-5fa9-4b1f-85b1-d3dfd198d38f",
     "name": "Augmented Weaponry",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -11624,7 +11368,6 @@
   {
     "id": "ae41f574-fc9f-492a-8ae0-45853ab607a6",
     "name": "Critical Investments",
-    "type": "Skill",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -11669,7 +11412,6 @@
   {
     "id": "3b4c3700-6c77-4954-a3e1-dfeaeab08c4a",
     "name": "Hardly Workin'",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -11714,7 +11456,6 @@
   {
     "id": "08db2099-a4a9-4d95-afad-e86d4abbf829",
     "name": "Exposing Toxins",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -11758,7 +11499,6 @@
   {
     "id": "dec273b3-155e-4fbd-9629-5dbd2900e032",
     "name": "Coolant Leak",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -11802,7 +11542,6 @@
   {
     "id": "2efc2530-badd-4460-9b03-9d34a10a85de",
     "name": "Frozen Flames",
-    "type": "Skill",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -11852,7 +11591,6 @@
   {
     "id": "42a245de-4281-40d1-ad98-7a79b471aefe",
     "name": "Berserker",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -11895,7 +11633,6 @@
   {
     "id": "daec4b27-bd32-434e-85ef-4bd4629e7d11",
     "name": "Bold Under Pressure",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -11939,7 +11676,6 @@
   {
     "id": "5fca38e0-2144-422d-b9bd-85a3cd443215",
     "name": "Expert Pilot",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -11988,7 +11724,6 @@
   {
     "id": "fd927bfc-ff5a-4d9c-87ce-b9510a22e444",
     "name": "Improvised Protection",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -12034,7 +11769,6 @@
   {
     "id": "03968f2d-5f40-464a-bf1f-9475836157cd",
     "name": "Jury Rigger",
-    "type": "Skill",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -12077,7 +11811,6 @@
   {
     "id": "8e2f3e1c-bd00-4b58-b746-a6ae18f804c3",
     "name": "Hyper Focus",
-    "type": "Skill",
     "startingTier": "Diamond",
     "tiers": {
       "Bronze": {
@@ -12116,7 +11849,6 @@
   {
     "id": "e7488436-6835-4e5e-971c-ba0a60f58529",
     "name": "Bullet Time",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -12158,7 +11890,6 @@
   {
     "id": "f422485c-b23a-4c3f-9ad4-9d22718dc204",
     "name": "Artillery Spotter",
-    "type": "Skill",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -12204,7 +11935,6 @@
   {
     "id": "e8770458-220a-45bd-bfef-d6045b152d29",
     "name": "Bonk",
-    "type": "Skill",
     "startingTier": "Diamond",
     "tiers": {
       "Bronze": {
@@ -12240,4 +11970,6 @@
       "Enemy cooldowns are increased by 1 second(s)."
     ]
   }
-]
+];
+
+export default data;

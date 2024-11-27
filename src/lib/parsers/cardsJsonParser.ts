@@ -614,7 +614,7 @@ function parseItemCards(cardsJson: CardsJson): ParsedCardItem[] {
                 ([tierType, tier]) => {
                     return [tierType, tierType === "Legendary" ? tier : {
                         tooltips: [] as string[],
-                        attributes: {},
+                        // attributes: {},
                     }]
                 },
             )) as Record<TierType, ClientSideTier>;
@@ -630,7 +630,6 @@ function parseItemCards(cardsJson: CardsJson): ParsedCardItem[] {
         return {
             id: card.Id,
             name,
-            type: card.Type,
             startingTier,
             tiers,
             tags: card.Tags,
@@ -736,7 +735,6 @@ function parseSkillCards(cardsJson: CardsJson): ParsedCardSkill[] {
         return {
             id: card.Id,
             name,
-            type: card.Type,
             startingTier,
             tiers,
             tags: card.Tags,
@@ -763,7 +761,6 @@ function parseCombatEncounterCards(cardsJson: CardsJson) {
     const cards = validCards.map((card) => {
         return {
             id: card.Id,
-            type: card.Type,
             name: card.Localization.Title.Text,
             monsterTemplateId: card.CombatantType.MonsterTemplateId
         };

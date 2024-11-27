@@ -88,6 +88,7 @@ export type ClientSideCombatEncounterSummary = {
 
 export type ParsedCardCombatEncounter = {
     id: string;
+    // TODO: this could be more tightly typed
     name: string;
     monsterTemplateId: string;
 };
@@ -101,7 +102,7 @@ export type Monster = {
         tierType: TierType;
         // TODO: ideally this property wouldn't be sent client side as it's not needed
         socketId: string;
-        enchantmentType: ClientSideEnchantmentType | undefined;
+        enchantmentType?: ClientSideEnchantmentType;
     }[];
     skills: {
         templateId: string;
@@ -117,7 +118,6 @@ export type ClientSideDayHours = {
         ids: string[]
     }[];
 };
-
 
 type MonsterEncounterItem = {
     card: ClientSideCardItem;

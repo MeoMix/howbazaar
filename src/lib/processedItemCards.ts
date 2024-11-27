@@ -1,8 +1,11 @@
-[
+// Auto-generated file. Do not edit directly.
+// TypeScript representation of processed data.
+import type { ParsedCardItem } from '$lib/types';
+
+const data: ParsedCardItem[] = [
   {
     "id": "aaf1216d-69b6-406e-98af-6a9bec12c8b4",
     "name": "Magnifying Glass",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -124,7 +127,6 @@
   {
     "id": "14cd589f-5648-4fc7-82d1-c62da0047982",
     "name": "Subscraper",
-    "type": "Item",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -238,7 +240,6 @@
   {
     "id": "63e5a09e-ad7c-44ee-ba7d-d1b515ae8e9e",
     "name": "Fishing Net",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -353,7 +354,6 @@
   {
     "id": "85f59c88-c391-4a03-8c3b-f312518e81de",
     "name": "Force Field",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -474,7 +474,6 @@
   {
     "id": "5ded844c-5279-4c30-9198-309fba0b651b",
     "name": "Bag of Jewels",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -520,7 +519,6 @@
   {
     "id": "f212afe2-08d1-40e3-978b-762d345bc7e5",
     "name": "Spare Change",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -566,7 +564,6 @@
   {
     "id": "41dea658-7e38-471a-aa20-e018734526f0",
     "name": "Salamander Pup",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -680,7 +677,6 @@
   {
     "id": "430ed105-2d64-4f3b-afd1-73ed0db39217",
     "name": "Rowboat",
-    "type": "Item",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -787,7 +783,6 @@
   {
     "id": "c6ab4982-da6c-4a1a-934d-820c45014646",
     "name": "Electric Eels",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -895,7 +890,6 @@
   {
     "id": "20d85338-b625-4b9a-95a7-8a60805e061f",
     "name": "Anchor",
-    "type": "Item",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -1009,7 +1003,6 @@
   {
     "id": "5bd6513a-85ab-4ba6-b82d-af875da697cf",
     "name": "Remote Control",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -1112,7 +1105,6 @@
   {
     "id": "5abf3441-11cb-4dbd-8d69-d4829f8df687",
     "name": "Star Chart",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -1222,7 +1214,6 @@
   {
     "id": "af085ed1-25e7-49a6-b72f-9bf8e4779132",
     "name": "GPU",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -1322,7 +1313,6 @@
   {
     "id": "acaebb2b-fe63-4de0-9d9e-949673c08a47",
     "name": "Igloo",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -1427,7 +1417,6 @@
   {
     "id": "1d8d4dea-aaf9-4041-aa54-ae133f552d55",
     "name": "Blue Piggles R",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -1478,7 +1467,6 @@
   {
     "id": "793b64b2-20a8-42ca-a592-54c9c3f814f8",
     "name": "Colossal Popsicle",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -1601,7 +1589,6 @@
   {
     "id": "74d0780a-4d98-478e-b136-f1810bc88346",
     "name": "Fork Lift",
-    "type": "Item",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -1716,7 +1703,6 @@
   {
     "id": "0022c409-c839-41e8-8022-65a407457dfe",
     "name": "Eagle Talisman",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -1761,7 +1747,6 @@
   {
     "id": "a3d3bf9c-5b26-405d-881d-c9aa6283f142",
     "name": "Marble Scalemail",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -1873,7 +1858,6 @@
   {
     "id": "b2681448-9dec-47c7-bb4f-58c51830735d",
     "name": "Atlatl",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -1994,7 +1978,6 @@
   {
     "id": "7bff4c56-752c-47f3-89d0-e85aa917319f",
     "name": "Laser Pistol",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -2108,7 +2091,6 @@
   {
     "id": "3d212e22-12eb-427e-ab96-e7baf1229a7b",
     "name": "Lighter",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -2216,7 +2198,6 @@
   {
     "id": "a4475e25-4562-4228-9e36-99ae0986b23c",
     "name": "Palanquin",
-    "type": "Item",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -2319,7 +2300,6 @@
   {
     "id": "39f47d29-2ef3-4057-bb60-33acd3dd12a2",
     "name": "Cosmic Amulet",
-    "type": "Item",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -2425,7 +2405,6 @@
   {
     "id": "899bc2a7-eec8-42e5-9c99-49b592617114",
     "name": "Harpoon",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -2533,7 +2512,6 @@
   {
     "id": "a541c31d-7b4b-45f6-bceb-c9971f8b06b5",
     "name": "Cooling Fan",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -2641,7 +2619,6 @@
   {
     "id": "c9930f2d-507e-4187-8889-b55bbd88ea18",
     "name": "Robe",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -2749,7 +2726,6 @@
   {
     "id": "2e10cce3-b242-411b-a35f-0882341e71a7",
     "name": "Tesla Coil",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -2865,7 +2841,6 @@
   {
     "id": "1312cf29-3dbb-446f-88b2-0d4999e68d78",
     "name": "Pearl",
-    "type": "Item",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -2963,7 +2938,6 @@
   {
     "id": "a1a898d3-4e07-41bb-a293-bb41fa39a6df",
     "name": "Magician's Top Hat",
-    "type": "Item",
     "startingTier": "Diamond",
     "tiers": {
       "Bronze": {
@@ -3010,7 +2984,6 @@
   {
     "id": "720765c7-c0c5-4059-b3b4-53758f61338f",
     "name": "Thurible",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -3121,7 +3094,6 @@
   {
     "id": "a35ea0aa-ff0f-4366-b3dd-561cae7ed725",
     "name": "Plasma Grenade",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -3236,7 +3208,6 @@
   {
     "id": "1b955b8d-0ea6-4437-935c-d588be5898c1",
     "name": "Cutlass",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -3357,7 +3328,6 @@
   {
     "id": "7da204dd-87ed-45cb-b62b-61904b41baa4",
     "name": "Crystal Bonsai",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -3483,7 +3453,6 @@
   {
     "id": "1a3d4cde-333c-4936-b147-263d73f6d200",
     "name": "Chocolate Bar",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -3532,7 +3501,6 @@
   {
     "id": "189c31f3-1641-4e05-bf78-800e71ffc0e7",
     "name": "Multitool",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -3647,7 +3615,6 @@
   {
     "id": "fea7450f-bc68-4bf9-8d34-99acd9399cbe",
     "name": "Chronobarrier",
-    "type": "Item",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -3752,7 +3719,6 @@
   {
     "id": "88e65c34-6865-4222-8eec-c18d48b2aa8d",
     "name": "Seaweed",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -3862,7 +3828,6 @@
   {
     "id": "18100c8e-24db-4568-bd8c-4c8914557e11",
     "name": "Propane Tank",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -3973,7 +3938,6 @@
   {
     "id": "9d289951-bda7-4f74-a5cf-dbe350c0cae5",
     "name": "Lumboars",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -4094,7 +4058,6 @@
   {
     "id": "9ede03ef-5257-4a77-a725-5c4713662208",
     "name": "Dock Lines",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -4197,7 +4160,6 @@
   {
     "id": "347a3f68-b4bc-49c4-856d-534b14b47459",
     "name": "Tommoo Gun",
-    "type": "Item",
     "startingTier": "Diamond",
     "tiers": {
       "Bronze": {
@@ -4306,7 +4268,6 @@
   {
     "id": "6965d291-610d-46b7-a10d-83578b0e1981",
     "name": "Dog",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -4433,7 +4394,6 @@
   {
     "id": "627ce721-2f70-454d-9aa2-5895ece3e6ee",
     "name": "Dam",
-    "type": "Item",
     "startingTier": "Diamond",
     "tiers": {
       "Bronze": {
@@ -4530,7 +4490,6 @@
   {
     "id": "6aa8be90-55f4-4fec-bd92-811e175657a1",
     "name": "Keychain",
-    "type": "Item",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -4622,7 +4581,6 @@
   {
     "id": "44c8a733-c1ae-4815-88b8-070aaa45037c",
     "name": "Life Preserver",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -4737,7 +4695,6 @@
   {
     "id": "26ddca65-5309-4600-88f7-1eb5ffbb5788",
     "name": "Amber",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -4839,7 +4796,6 @@
   {
     "id": "4cf73614-52fd-4c59-8002-bbff087951ba",
     "name": "Toolbox",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -4954,7 +4910,6 @@
   {
     "id": "dcd24486-3e93-4428-a414-caeba6720237",
     "name": "Pepper Spray",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -5075,7 +5030,6 @@
   {
     "id": "c39f3c39-77d9-49ee-9850-400e7d5fe484",
     "name": "Kinetic Cannon",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -5191,7 +5145,6 @@
   {
     "id": "9b499211-2c75-4781-a0e2-a0dab7d5dc5a",
     "name": "Candy Mail",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -5257,7 +5210,6 @@
   {
     "id": "a490a838-37ed-4812-88fa-9e9a88d2eb8d",
     "name": "Haladie",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -5377,7 +5329,6 @@
   {
     "id": "8863af7b-4b2d-4456-81d8-e1d9f0dce4a9",
     "name": "Super Syrup",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -5443,7 +5394,6 @@
   {
     "id": "7f706346-b364-4791-a104-ed6fe03e87e1",
     "name": "Broken Shackles",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -5552,7 +5502,6 @@
   {
     "id": "f2b5c675-6dc3-4c92-89b6-5d6da1e99006",
     "name": "Dooley's Scarf",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -5661,7 +5610,6 @@
   {
     "id": "3de8a2de-9ae9-4e68-ac2a-0987a7fa8717",
     "name": "Race Carl",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -5780,7 +5728,6 @@
   {
     "id": "893f5fec-30ed-4a1e-b896-5b086d952da4",
     "name": "Grindstone",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -5885,7 +5832,6 @@
   {
     "id": "3866978f-da19-45a8-9f28-d03b6d3aafc4",
     "name": "Hydraulic Squeezer",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -6001,7 +5947,6 @@
   {
     "id": "8ec1c3f9-6220-431b-b3b0-52b3be2e20f5",
     "name": "Spiky Shield",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -6122,7 +6067,6 @@
   {
     "id": "e6451368-8fdf-48ae-8369-cb09cca48749",
     "name": "Railgun",
-    "type": "Item",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -6239,7 +6183,6 @@
   {
     "id": "88ca9279-a62c-4bdb-ba2c-06871a7c5b7d",
     "name": "Armored Core",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -6361,7 +6304,6 @@
   {
     "id": "694a08fe-e8ff-4a45-9693-4c68f11a1f8b",
     "name": "Catalyst",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -6453,7 +6395,6 @@
   {
     "id": "ffcc9b4e-24f2-479b-ab80-7bfbaec664f2",
     "name": "Proboscis",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -6556,7 +6497,6 @@
   {
     "id": "08630fca-24b9-4d9b-9dbf-7da743a09dfa",
     "name": "Welding Helmet",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -6669,7 +6609,6 @@
   {
     "id": "a05d23cb-af36-42fa-aab1-568aba7f30c6",
     "name": "Abacus",
-    "type": "Item",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -6778,7 +6717,6 @@
   {
     "id": "a8664dac-7a88-4af0-990e-afe7217e123f",
     "name": "Ice Pick",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -6900,7 +6838,6 @@
   {
     "id": "43190b98-4f7f-4b2e-b92e-32b07b7fc2e1",
     "name": "Fixer Upper",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -7022,7 +6959,6 @@
   {
     "id": "49895243-8b5d-407f-9c8c-efdd05b3a34a",
     "name": "Money Tree",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -7149,7 +7085,6 @@
   {
     "id": "7d270d9f-9201-4e1a-9d66-467e11d4b5c1",
     "name": "Fiber Optics",
-    "type": "Item",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -7245,7 +7180,6 @@
   {
     "id": "6ada601b-88a5-4eaf-8813-805bd51c7f9b",
     "name": "Regal Blade",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -7371,7 +7305,6 @@
   {
     "id": "012658f4-b289-4f10-917c-a9a1f3f9ca03",
     "name": "Ice Cream Truck",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -7476,7 +7409,6 @@
   {
     "id": "530b642b-4a31-4cc4-a7ae-ea22d607ad4d",
     "name": "Landscraper",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -7581,7 +7513,6 @@
   {
     "id": "d903dda8-9c30-4325-a727-c885ad972025",
     "name": "Crook",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -7675,7 +7606,6 @@
   {
     "id": "9a7d5711-930a-4815-86cc-4e357680730c",
     "name": "Lion Cane",
-    "type": "Item",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -7788,7 +7718,6 @@
   {
     "id": "c926fac8-f9ba-4430-a01a-a71a32c501c7",
     "name": "ATM",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -7910,7 +7839,6 @@
   {
     "id": "2fdde51e-5bf5-4136-b86f-3f83053cbf25",
     "name": "Vineyard",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -8004,7 +7932,6 @@
   {
     "id": "3b1e3858-93d4-45c8-892b-b66aec1b14a9",
     "name": "Luxury Tents",
-    "type": "Item",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -8107,7 +8034,6 @@
   {
     "id": "01f6e150-ba23-429c-a43b-2508f63fc798",
     "name": "Myrrh",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -8219,7 +8145,6 @@
   {
     "id": "14b297c5-db65-492d-aad7-9ffe101cae5f",
     "name": "Incendiary Rounds",
-    "type": "Item",
     "startingTier": "Diamond",
     "tiers": {
       "Bronze": {
@@ -8317,7 +8242,6 @@
   {
     "id": "b23c5988-7091-4b77-a7fb-134c0d0a3285",
     "name": "Honing Steel",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -8425,7 +8349,6 @@
   {
     "id": "357d7a25-aae0-4d4f-9360-4ed1cc107962",
     "name": "Welding Torch",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -8537,7 +8460,6 @@
   {
     "id": "26621cbf-809d-4522-ad24-34443af96f27",
     "name": "Golf Clubs",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -8658,7 +8580,6 @@
   {
     "id": "6ba3778c-e760-44f3-b3b4-a4b4ca267cc2",
     "name": "Scrap",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -8703,7 +8624,6 @@
   {
     "id": "5a4c4c98-d41e-43f8-aa39-a74847e2ff3c",
     "name": "Deed",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -8764,7 +8684,6 @@
   {
     "id": "c9a88c39-28e0-4618-907d-aec77f44d817",
     "name": "Arken's Ring",
-    "type": "Item",
     "startingTier": "Diamond",
     "tiers": {
       "Bronze": {
@@ -8801,7 +8720,6 @@
   {
     "id": "0c501dff-aa3a-4091-9c1e-2df43faef2e1",
     "name": "Tea Set",
-    "type": "Item",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -8906,7 +8824,6 @@
   {
     "id": "a167bf66-e29e-43d2-b30e-a480600c992d",
     "name": "Scrap Metal",
-    "type": "Item",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -9014,7 +8931,6 @@
   {
     "id": "1fbbefea-2da0-46a5-b60d-dad9478ade86",
     "name": "Ice 9000",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -9125,7 +9041,6 @@
   {
     "id": "aff2d8f4-528a-4229-8175-8901fcadcb70",
     "name": "Silk",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -9243,7 +9158,6 @@
   {
     "id": "c74239b9-563c-4672-b664-9c9f22329f19",
     "name": "Cannon",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -9371,7 +9285,6 @@
   {
     "id": "a5f3616b-ad8c-434a-89d0-311698061bd4",
     "name": "Isochoric Freezer",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -9468,7 +9381,6 @@
   {
     "id": "84650135-9f2d-4ee6-b1e5-a011a256ce0d",
     "name": "Angry Balloon Bot",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -9586,7 +9498,6 @@
   {
     "id": "f4827638-60ff-4101-a52f-037c04791ee5",
     "name": "Schematics",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -9664,7 +9575,6 @@
   {
     "id": "8a0aad5c-caff-4963-b8e9-861bc5ace1ce",
     "name": "Wand",
-    "type": "Item",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -9758,7 +9668,6 @@
   {
     "id": "1e46dbf7-2fe0-4ec1-a657-c3c623eeca6e",
     "name": "Masterpiece",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -9814,24 +9723,19 @@
   {
     "id": "c600d27d-0df0-4f05-a2ab-4a64a0d9fa32",
     "name": "The Eclipse",
-    "type": "Item",
     "startingTier": "Legendary",
     "tiers": {
       "Bronze": {
-        "tooltips": [],
-        "attributes": {}
+        "tooltips": []
       },
       "Silver": {
-        "tooltips": [],
-        "attributes": {}
+        "tooltips": []
       },
       "Gold": {
-        "tooltips": [],
-        "attributes": {}
+        "tooltips": []
       },
       "Diamond": {
-        "tooltips": [],
-        "attributes": {}
+        "tooltips": []
       },
       "Legendary": {
         "tooltips": [
@@ -9917,7 +9821,6 @@
   {
     "id": "0bf49a3b-e610-4f2b-8420-1a8a7d48e70a",
     "name": "Nightshade",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -10030,7 +9933,6 @@
   {
     "id": "e574a4ba-f984-446c-ae5b-75d75cd4b857",
     "name": "Tazidian Dagger",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -10151,7 +10053,6 @@
   {
     "id": "6f70e0cf-8349-4f14-a121-6c9065dc514c",
     "name": "Shadowed Cloak",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -10240,7 +10141,6 @@
   {
     "id": "ff06b63a-15ee-49be-80b1-5fb52b4e1616",
     "name": "Windmill",
-    "type": "Item",
     "startingTier": "Diamond",
     "tiers": {
       "Bronze": {
@@ -10336,7 +10236,6 @@
   {
     "id": "223bc3f1-8dc6-429b-8c17-af64b24836ec",
     "name": "Sirens",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -10445,7 +10344,6 @@
   {
     "id": "840b6bc5-4786-40bc-b864-cc5c2b78641a",
     "name": "Piranha",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -10567,7 +10465,6 @@
   {
     "id": "7cbc8056-482b-4ccf-887a-ddb2702c856c",
     "name": "Fang",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -10681,7 +10578,6 @@
   {
     "id": "234ae6aa-b94b-456d-a2fb-f0cbcaa9c655",
     "name": "Loupe",
-    "type": "Item",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -10731,7 +10627,6 @@
   {
     "id": "405245d8-b81d-4015-8ed9-70e80f5eb980",
     "name": "Antimatter Chamber",
-    "type": "Item",
     "startingTier": "Diamond",
     "tiers": {
       "Bronze": {
@@ -10820,7 +10715,6 @@
   {
     "id": "fc2f0122-129b-41e8-942e-a6a10a1c5962",
     "name": "Weakpoint Detector",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -10936,7 +10830,6 @@
   {
     "id": "28db3caa-7727-4d1c-9758-df42975e4811",
     "name": "Frost Potion",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -11045,7 +10938,6 @@
   {
     "id": "9bdc7dad-5016-4743-9b44-1e20b03a1961",
     "name": "Neural Toxin",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -11137,7 +11029,6 @@
   {
     "id": "865a673a-beae-4f5c-b04a-dd3fd026bc6d",
     "name": "Flagship",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -11256,7 +11147,6 @@
   {
     "id": "1b518cd8-57d3-4747-8afa-3b99aae88e62",
     "name": "Walter Cooler",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -11365,7 +11255,6 @@
   {
     "id": "2fcdf96f-e1c4-45cd-8efd-0b8352267483",
     "name": "Grenade",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -11492,7 +11381,6 @@
   {
     "id": "f16f5464-02f0-4b00-9f7b-d7e7b65a1e80",
     "name": "Turtle Shell",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -11602,7 +11490,6 @@
   {
     "id": "3890374d-4952-471d-b550-e230d0ce5343",
     "name": "Bluenanas",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -11717,7 +11604,6 @@
   {
     "id": "2a1ae50b-6d0d-48a8-9f68-b804e8793030",
     "name": "Rocket Launcher",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -11845,7 +11731,6 @@
   {
     "id": "91766035-9d5c-49df-b6b1-25ff7328af5b",
     "name": "Pufferfish",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -11949,7 +11834,6 @@
   {
     "id": "096e4b73-803c-4405-9710-db71b20fb183",
     "name": "Ballista",
-    "type": "Item",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -12066,7 +11950,6 @@
   {
     "id": "c0eb01d3-5f8e-4271-8045-ec283a47bcaa",
     "name": "Copper Ed",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -12181,24 +12064,19 @@
   {
     "id": "5aa3022a-2e75-46a8-9cfb-983a97139d05",
     "name": "Necronomicon",
-    "type": "Item",
     "startingTier": "Legendary",
     "tiers": {
       "Bronze": {
-        "tooltips": [],
-        "attributes": {}
+        "tooltips": []
       },
       "Silver": {
-        "tooltips": [],
-        "attributes": {}
+        "tooltips": []
       },
       "Gold": {
-        "tooltips": [],
-        "attributes": {}
+        "tooltips": []
       },
       "Diamond": {
-        "tooltips": [],
-        "attributes": {}
+        "tooltips": []
       },
       "Legendary": {
         "tooltips": [
@@ -12268,7 +12146,6 @@
   {
     "id": "d8e476dd-8184-4cb5-8cca-df1cb66c4305",
     "name": "Yellow Piggles L",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -12319,7 +12196,6 @@
   {
     "id": "53b62ecb-bcbc-4a86-bd6f-027467970109",
     "name": "Frozen Bludgeon",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -12446,7 +12322,6 @@
   {
     "id": "6870c295-6a4d-4175-b378-c961df9933de",
     "name": "Captain's Wheel",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -12551,7 +12426,6 @@
   {
     "id": "894df8d8-e6a5-4310-919e-7a6d85fc7e49",
     "name": "Bomb Squad",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -12666,7 +12540,6 @@
   {
     "id": "0966f887-5aaf-44a5-90fa-ecb194270513",
     "name": "Duct Tape",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -12775,7 +12648,6 @@
   {
     "id": "b4ccf465-fbf6-4fd4-b4ed-515594ed8722",
     "name": "Jellyfish",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -12891,7 +12763,6 @@
   {
     "id": "3e97f309-24f2-4850-ab35-6eb6c1fe832f",
     "name": "Hakurvian Launcher",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -13015,7 +12886,6 @@
   {
     "id": "f0590898-273f-479e-b74e-3472ecfbc02f",
     "name": "Sextant",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -13122,7 +12992,6 @@
   {
     "id": "c553a41a-1e8a-48c5-8b04-df60451b7795",
     "name": "Emerald",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -13230,7 +13099,6 @@
   {
     "id": "b20bdd25-921e-490d-a28e-599ac70d15f7",
     "name": "Textiles",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -13343,7 +13211,6 @@
   {
     "id": "3ce7312c-aa95-4711-9a2b-827609a380b4",
     "name": "Satchel",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -13464,7 +13331,6 @@
   {
     "id": "f6f7b04f-9e4c-4107-af98-5288e8c568fd",
     "name": "Noxious Potion",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -13579,24 +13445,19 @@
   {
     "id": "82d41afc-d1a9-41ee-a03d-fd9305bef8b5",
     "name": "Octopus",
-    "type": "Item",
     "startingTier": "Legendary",
     "tiers": {
       "Bronze": {
-        "tooltips": [],
-        "attributes": {}
+        "tooltips": []
       },
       "Silver": {
-        "tooltips": [],
-        "attributes": {}
+        "tooltips": []
       },
       "Gold": {
-        "tooltips": [],
-        "attributes": {}
+        "tooltips": []
       },
       "Diamond": {
-        "tooltips": [],
-        "attributes": {}
+        "tooltips": []
       },
       "Legendary": {
         "tooltips": [
@@ -13689,7 +13550,6 @@
   {
     "id": "c264f900-4482-4f8c-b99d-22a5a529fb2a",
     "name": "Cannonade",
-    "type": "Item",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -13793,7 +13653,6 @@
   {
     "id": "59a494e4-66b2-4412-8934-dcf7d19585bf",
     "name": "Diana-Saur",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -13915,7 +13774,6 @@
   {
     "id": "edd857da-ac11-4640-bc1a-217ef8385f72",
     "name": "Sharkclaws",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -14036,7 +13894,6 @@
   {
     "id": "2abed747-432d-4307-98ce-0a0ec244d904",
     "name": "Apropos Chapeau",
-    "type": "Item",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -14141,7 +13998,6 @@
   {
     "id": "cf3a7956-f400-42e1-bae1-d3678d76fd01",
     "name": "Fire Potion",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -14256,7 +14112,6 @@
   {
     "id": "bf90b501-0d87-49ae-a82a-5941db70179c",
     "name": "Weather Machine",
-    "type": "Item",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -14364,7 +14219,6 @@
   {
     "id": "d6819596-2601-4757-8b72-2d708971023d",
     "name": "Switchblade",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -14484,7 +14338,6 @@
   {
     "id": "fb41fdef-d83b-4674-8cb3-9a224aa8f84a",
     "name": "Pelt",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -14530,7 +14383,6 @@
   {
     "id": "35b7a978-275b-48f0-8e3d-9be2391c6a78",
     "name": "Bulky Package",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -14578,7 +14430,6 @@
   {
     "id": "529a7e95-b350-4fd6-96fd-fef80d4c1462",
     "name": "Old Sword",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -14698,7 +14549,6 @@
   {
     "id": "cfc3db0f-c8f2-4acf-bf9b-80e170ca3120",
     "name": "Combat Core",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -14827,7 +14677,6 @@
   {
     "id": "8b994da7-7aa3-40cd-aafd-c84f0913d0c9",
     "name": "Wanted Poster",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -14931,7 +14780,6 @@
   {
     "id": "434ba656-da96-429a-9db1-c22ef271cd1f",
     "name": "Cool LEDs",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -15037,7 +14885,6 @@
   {
     "id": "98f9fc74-145f-4d13-85bf-3229b9257aa0",
     "name": "Plasma Rifle",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -15154,7 +15001,6 @@
   {
     "id": "d4586506-d4d6-45d5-866b-796203f8d9d3",
     "name": "Yellow Piggles X",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -15205,7 +15051,6 @@
   {
     "id": "17b00db1-57cd-40f1-ac4a-302915939b97",
     "name": "Port",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -15322,7 +15167,6 @@
   {
     "id": "fe1a40e3-cedc-4a7f-83f0-998286f71725",
     "name": "Booby Trap",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -15414,7 +15258,6 @@
   {
     "id": "e7cc828b-4a2b-4207-9a6a-c955553c632d",
     "name": "Beta Ray",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -15521,7 +15364,6 @@
   {
     "id": "8ff7ebb6-a783-403a-ae29-7e89d0c90040",
     "name": "Curry",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -15632,7 +15474,6 @@
   {
     "id": "da049bef-7176-4226-b078-dac37a503835",
     "name": "Fossilized Femur",
-    "type": "Item",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -15746,7 +15587,6 @@
   {
     "id": "54040bca-14e5-4f6d-bfa8-b67658adda0b",
     "name": "Energy Potion",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -15855,7 +15695,6 @@
   {
     "id": "4a30e8b0-f1d1-44c0-b2a7-0a8d12c1e297",
     "name": "Crow's Nest",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -15964,7 +15803,6 @@
   {
     "id": "a7ceeecc-d802-4bbf-9521-afe89db4af45",
     "name": "Crane",
-    "type": "Item",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -16082,7 +15920,6 @@
   {
     "id": "36211e0c-1806-4234-b661-3c05e2625a0a",
     "name": "Lighthouse",
-    "type": "Item",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -16182,7 +16019,6 @@
   {
     "id": "9ad15f24-4def-4d82-8545-d73794cfbaf2",
     "name": "Coconut",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -16229,7 +16065,6 @@
   {
     "id": "2a7c377e-5ab7-4e27-bd03-ecaa29b69131",
     "name": "Javelin",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -16352,7 +16187,6 @@
   {
     "id": "40c54925-3b1b-475d-9d68-6b668fd023fe",
     "name": "Temporary Shelter",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -16466,7 +16300,6 @@
   {
     "id": "bdb95fa6-1607-4fd6-a78b-063f826df717",
     "name": "Coral",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -16580,7 +16413,6 @@
   {
     "id": "4da45ad1-6793-458c-9c72-d03fa273ebfd",
     "name": "Tropical Island",
-    "type": "Item",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -16678,7 +16510,6 @@
   {
     "id": "35ca6175-1317-4f32-b953-dbe6c9acd8cd",
     "name": "Barrel",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -16786,7 +16617,6 @@
   {
     "id": "d50bb808-14f8-4554-950d-d0630899ba85",
     "name": "Hacksaw",
-    "type": "Item",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -16893,7 +16723,6 @@
   {
     "id": "020a0ec0-21e6-41af-899f-063573ba9ca5",
     "name": "Virus",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -17006,7 +16835,6 @@
   {
     "id": "a0345f93-0c0a-44fa-a7e4-2135acb16bcc",
     "name": "Runic Great Axe",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -17127,7 +16955,6 @@
   {
     "id": "02fa39ce-6cc0-4ad2-bd35-5c70a47354d6",
     "name": "Silencer",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -17235,7 +17062,6 @@
   {
     "id": "60a1f7ce-4685-4f4c-86f2-5e0f23b60da0",
     "name": "Repeater",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -17358,7 +17184,6 @@
   {
     "id": "4bb254dc-4b02-4c4b-8198-a310bdb122e4",
     "name": "Icebreaker",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -17486,7 +17311,6 @@
   {
     "id": "a99be8d9-006d-4c3d-8f79-cf3a8ea65bbd",
     "name": "Mech-Moles",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -17609,7 +17433,6 @@
   {
     "id": "7e2634eb-9489-4462-8fe4-1c5b8c07adc2",
     "name": "Sunlight Spear",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -17723,7 +17546,6 @@
   {
     "id": "42f78ed2-0141-47f3-9bcd-71b433b1273b",
     "name": "Ambergris",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -17845,7 +17667,6 @@
   {
     "id": "4b823c6b-3e35-47a2-9b65-177e911aca1a",
     "name": "Thrown Net",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -17961,7 +17782,6 @@
   {
     "id": "4fdc947b-3646-429e-ba4e-bb693fe44bc2",
     "name": "Shield Potion",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -18076,24 +17896,19 @@
   {
     "id": "3373c95c-6910-4414-8134-abf2ff1c90fa",
     "name": "Eye of the Colossus",
-    "type": "Item",
     "startingTier": "Legendary",
     "tiers": {
       "Bronze": {
-        "tooltips": [],
-        "attributes": {}
+        "tooltips": []
       },
       "Silver": {
-        "tooltips": [],
-        "attributes": {}
+        "tooltips": []
       },
       "Gold": {
-        "tooltips": [],
-        "attributes": {}
+        "tooltips": []
       },
       "Diamond": {
-        "tooltips": [],
-        "attributes": {}
+        "tooltips": []
       },
       "Legendary": {
         "tooltips": [
@@ -18172,7 +17987,6 @@
   {
     "id": "15a2cf7d-4e08-4358-8bd1-730919719023",
     "name": "Safe",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -18217,7 +18031,6 @@
   {
     "id": "3e563d2a-87e7-4e9a-bfa2-3268b27b7447",
     "name": "Gunpowder",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -18261,7 +18074,6 @@
   {
     "id": "dccb72af-f46b-4a84-a0d1-918c8d285c4e",
     "name": "Flamethrower",
-    "type": "Item",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -18375,7 +18187,6 @@
   {
     "id": "638a6b50-7803-4da5-9514-ca0627fd7b5f",
     "name": "Gland",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -18421,7 +18232,6 @@
   {
     "id": "b02a2b57-da9c-4ad6-88ac-219b3bfec103",
     "name": "Handaxe",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -18542,7 +18352,6 @@
   {
     "id": "3b924a0a-f423-4286-8d08-9ade57b2ebae",
     "name": "Brass Knuckles",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -18662,7 +18471,6 @@
   {
     "id": "ce7ff94f-29e4-4f2d-bca9-cca83eacf774",
     "name": "Blue Piggles R",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -18713,7 +18521,6 @@
   {
     "id": "103cd65b-0b3d-418d-92d8-0dfa5f19d7c4",
     "name": "Shipment",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -18761,7 +18568,6 @@
   {
     "id": "b91bfce3-8b58-44a3-8250-ca91c3100598",
     "name": "Oven Mitts",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -18866,7 +18672,6 @@
   {
     "id": "cd651487-174f-49dd-9022-c27e1fcd2f7c",
     "name": "Rune Axe",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -18986,7 +18791,6 @@
   {
     "id": "2434460c-af35-4dde-a69f-1f8781c807d2",
     "name": "Crypto",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -19044,7 +18848,6 @@
   {
     "id": "f07fc136-5917-4915-a9d5-2246cb290b0d",
     "name": "Chris Army Knife",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -19167,7 +18970,6 @@
   {
     "id": "8391a75d-56e7-4206-a16e-62dbd986925f",
     "name": "Shoe Blade",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -19287,7 +19089,6 @@
   {
     "id": "d7cef361-2948-4b18-ad44-9c8b145d22ac",
     "name": "Beast of Burden",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -19414,7 +19215,6 @@
   {
     "id": "dc0a123c-61df-44c5-9281-41d0430b4123",
     "name": "Knife Set",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -19535,7 +19335,6 @@
   {
     "id": "73998555-1f68-440b-b28f-84c0f9f07579",
     "name": "Blue Gumball",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -19582,7 +19381,6 @@
   {
     "id": "d1788cd1-cd70-4391-a0d9-c50fc9e08d9a",
     "name": "Weather Glass",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -19700,7 +19498,6 @@
   {
     "id": "843ddc82-9d87-4995-b81c-bf31ae45fd30",
     "name": "Bushel",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -19813,7 +19610,6 @@
   {
     "id": "c39eed44-0e6a-4720-9d70-817b737449ec",
     "name": "Atlas Stone",
-    "type": "Item",
     "startingTier": "Diamond",
     "tiers": {
       "Bronze": {
@@ -19921,7 +19717,6 @@
   {
     "id": "1179ed38-2357-4718-a0c7-c30d56493d08",
     "name": "Cryosleeve",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -20028,7 +19823,6 @@
   {
     "id": "a4b48bb6-180a-49fd-bb1c-c6beb372b6de",
     "name": "Hammock",
-    "type": "Item",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -20133,7 +19927,6 @@
   {
     "id": "0c99ece6-4aa5-40ac-a663-dc81df03a694",
     "name": "Briefcase",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -20260,7 +20053,6 @@
   {
     "id": "97d8654e-532b-4960-8f5b-5822562d3450",
     "name": "Tiny Cutlass",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -20320,7 +20112,6 @@
   {
     "id": "5e7abe19-0087-4bb1-a8bf-617706cc67c9",
     "name": "Musket",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -20448,7 +20239,6 @@
   {
     "id": "844f0836-fa5f-485d-83ba-e0795dd3c937",
     "name": "Astrolabe",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -20559,7 +20349,6 @@
   {
     "id": "6031a849-e93e-41fb-a41f-a2c4d8be8929",
     "name": "Venom",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -20645,7 +20434,6 @@
   {
     "id": "e75ea50a-e67c-47e4-a4b1-304b87b90cf9",
     "name": "IllusoRay",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -20754,7 +20542,6 @@
   {
     "id": "ec5e8e2a-c35e-4098-bdae-63ea9f3d6fd3",
     "name": "Monocle",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -20866,7 +20653,6 @@
   {
     "id": "a0c3a02b-4d29-4159-805e-3501463d1ca1",
     "name": "Caltrops",
-    "type": "Item",
     "startingTier": "Diamond",
     "tiers": {
       "Bronze": {
@@ -20962,7 +20748,6 @@
   {
     "id": "95640018-a5d3-4119-8c4f-5509e161c689",
     "name": "Incense",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -21071,7 +20856,6 @@
   {
     "id": "666f4084-48cc-4558-b678-a46ba18c1bf2",
     "name": "Soldering Gun",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -21186,24 +20970,19 @@
   {
     "id": "8938035e-be96-4827-bd34-7258253bd942",
     "name": "Flamberge",
-    "type": "Item",
     "startingTier": "Legendary",
     "tiers": {
       "Bronze": {
-        "tooltips": [],
-        "attributes": {}
+        "tooltips": []
       },
       "Silver": {
-        "tooltips": [],
-        "attributes": {}
+        "tooltips": []
       },
       "Gold": {
-        "tooltips": [],
-        "attributes": {}
+        "tooltips": []
       },
       "Diamond": {
-        "tooltips": [],
-        "attributes": {}
+        "tooltips": []
       },
       "Legendary": {
         "tooltips": [
@@ -21295,7 +21074,6 @@
   {
     "id": "55f11b65-77fa-4d70-9250-8a40d03961ad",
     "name": "Feather",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -21340,7 +21118,6 @@
   {
     "id": "54c74b82-0a7d-4dab-a335-f3b0b8b2157c",
     "name": "Uwashiwali Bird",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -21454,7 +21231,6 @@
   {
     "id": "40d8b44a-8e2f-4081-8163-043d76ddbafa",
     "name": "Spacescraper",
-    "type": "Item",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -21562,7 +21338,6 @@
   {
     "id": "9e0bca07-56bd-4217-b258-ef1dabd42209",
     "name": "Cybersecurity",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -21679,7 +21454,6 @@
   {
     "id": "d022cc12-8fe2-442c-af6e-165eb97ed055",
     "name": "Improvised Bludgeon",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -21806,7 +21580,6 @@
   {
     "id": "eeeb02b5-9e8d-4af8-9902-2a77b1f838e7",
     "name": "The Core",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -21935,7 +21708,6 @@
   {
     "id": "8ae203cd-a429-4ade-b5e3-a612a906d71a",
     "name": "Gavel",
-    "type": "Item",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -22045,7 +21817,6 @@
   {
     "id": "b6cd2ee1-f44f-44a5-9652-c577800a427f",
     "name": "Hot Springs",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -22157,7 +21928,6 @@
   {
     "id": "63356fed-efeb-461b-a57d-e9d61c821bc8",
     "name": "Butter",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -22265,7 +22035,6 @@
   {
     "id": "44a27d67-3ef2-4a5d-b38e-5d43065ae363",
     "name": "Vanessa's Amulet",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -22365,7 +22134,6 @@
   {
     "id": "23960499-a306-44f3-bab4-8c901ff37dc3",
     "name": "Pyrocarbon",
-    "type": "Item",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -22470,7 +22238,6 @@
   {
     "id": "2834ede9-01e9-4b68-8f1f-70f83187c78f",
     "name": "Sharkray",
-    "type": "Item",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -22585,7 +22352,6 @@
   {
     "id": "b769eef3-b324-4704-91fd-3a971c6f47b4",
     "name": "Battery",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -22700,7 +22466,6 @@
   {
     "id": "c14e76be-2dd6-4d0b-8652-04c6b46412d5",
     "name": "Model Ship",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -22800,7 +22565,6 @@
   {
     "id": "71231a4d-4ba5-48ee-8d6d-4a533d08bebf",
     "name": "Lens",
-    "type": "Item",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -22900,7 +22664,6 @@
   {
     "id": "c7435ab5-dd8b-4c78-a5a4-6b2795dacaf3",
     "name": "Chum",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -23014,7 +22777,6 @@
   {
     "id": "64c62815-9c8a-40fa-a963-3fc09a46bbae",
     "name": "Matchbox",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -23112,7 +22874,6 @@
   {
     "id": "0fc3f9d6-01ce-4793-8ece-b0e05ef6441e",
     "name": "Slingshot",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -23239,24 +23000,19 @@
   {
     "id": "3c9c0a73-ea2e-4ff2-be75-fd4363f72d37",
     "name": "Infernal Greatsword",
-    "type": "Item",
     "startingTier": "Legendary",
     "tiers": {
       "Bronze": {
-        "tooltips": [],
-        "attributes": {}
+        "tooltips": []
       },
       "Silver": {
-        "tooltips": [],
-        "attributes": {}
+        "tooltips": []
       },
       "Gold": {
-        "tooltips": [],
-        "attributes": {}
+        "tooltips": []
       },
       "Diamond": {
-        "tooltips": [],
-        "attributes": {}
+        "tooltips": []
       },
       "Legendary": {
         "tooltips": [
@@ -23350,7 +23106,6 @@
   {
     "id": "fcd72525-0b3f-4472-a7cc-0e4e5750acdd",
     "name": "Charging Station",
-    "type": "Item",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -23448,7 +23203,6 @@
   {
     "id": "562d768a-6aaf-4704-be8b-4dc9e6311b11",
     "name": "Extract",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -23494,7 +23248,6 @@
   {
     "id": "ae142862-37fd-42b6-b131-48977d29595e",
     "name": "Lockbox",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -23605,7 +23358,6 @@
   {
     "id": "e13d521c-b960-4072-83db-fe4af598dd57",
     "name": "Throwing Knives",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -23733,7 +23485,6 @@
   {
     "id": "7d64073a-816f-476d-b704-e58b539b9b7a",
     "name": "Motherboard",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -23842,7 +23593,6 @@
   {
     "id": "4f8bc475-212c-49cf-b3e5-d1f971897a24",
     "name": "Belt",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -23885,7 +23635,6 @@
   {
     "id": "33c9b825-946c-45f8-a0f3-8c0f493dbc45",
     "name": "Power Sander",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -24000,7 +23749,6 @@
   {
     "id": "cbe0436a-3573-4bbb-968b-9bb61343c2a7",
     "name": "Flail",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -24120,7 +23868,6 @@
   {
     "id": "b89ae3b6-6383-47a3-94fe-2571d30a564a",
     "name": "Bolas",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -24248,7 +23995,6 @@
   {
     "id": "b6afda86-9dec-4580-b1e3-4d1cc59c3029",
     "name": "Phonograph",
-    "type": "Item",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -24344,7 +24090,6 @@
   {
     "id": "bfa02e6a-1e0d-4e88-830e-850097026a02",
     "name": "First Aiden",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -24455,7 +24200,6 @@
   {
     "id": "08d9f6b5-c5ab-4e5b-8c1e-9a5edebb8618",
     "name": "Pinata",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -24498,7 +24242,6 @@
   {
     "id": "a4cb5a88-1abb-4fb0-b4dc-a1b7eedebd64",
     "name": "Jaballian Longbow",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -24625,7 +24368,6 @@
   {
     "id": "d8106a24-647f-40c6-8587-22f977931d76",
     "name": "Waterwheel",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -24736,7 +24478,6 @@
   {
     "id": "349fc81f-2b3a-4d39-beaa-6a0d5105a19a",
     "name": "Hatchet",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -24858,7 +24599,6 @@
   {
     "id": "5b4ff0c0-ca13-4606-9db3-4219d33ab2a0",
     "name": "Powder Keg",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -24976,7 +24716,6 @@
   {
     "id": "bbf63b5c-57c3-4412-beb5-18bfec2372e6",
     "name": "Pesky Pete",
-    "type": "Item",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -25082,7 +24821,6 @@
   {
     "id": "e21985a8-fe05-4142-ab65-93c110545ec3",
     "name": "Icicle",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -25178,24 +24916,19 @@
   {
     "id": "cbec1d5f-096e-49d0-b736-60091fd3f9aa",
     "name": "Teddy",
-    "type": "Item",
     "startingTier": "Legendary",
     "tiers": {
       "Bronze": {
-        "tooltips": [],
-        "attributes": {}
+        "tooltips": []
       },
       "Silver": {
-        "tooltips": [],
-        "attributes": {}
+        "tooltips": []
       },
       "Gold": {
-        "tooltips": [],
-        "attributes": {}
+        "tooltips": []
       },
       "Diamond": {
-        "tooltips": [],
-        "attributes": {}
+        "tooltips": []
       },
       "Legendary": {
         "tooltips": [
@@ -25291,7 +25024,6 @@
   {
     "id": "11a5306d-f114-4f8d-abcc-442c3a979317",
     "name": "Robotic Factory",
-    "type": "Item",
     "startingTier": "Diamond",
     "tiers": {
       "Bronze": {
@@ -25337,7 +25069,6 @@
   {
     "id": "09132149-783d-4d5a-900c-31135bffab44",
     "name": "Bandages",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -25450,7 +25181,6 @@
   {
     "id": "0229faa7-2eec-4746-9134-ade4f3aebe45",
     "name": "Gamma Ray",
-    "type": "Item",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -25554,7 +25284,6 @@
   {
     "id": "f98213d6-2c40-45a7-ac35-f5eca615d9cd",
     "name": "Agility Boots",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -25612,7 +25341,6 @@
   {
     "id": "48d24eb0-d953-409c-9602-1d3d4c4278c5",
     "name": "Red Piggles X",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -25663,7 +25391,6 @@
   {
     "id": "ae6ddbd0-d007-482a-8d2a-d3f6a5a1b29e",
     "name": "Rivet Gun",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -25769,7 +25496,6 @@
   {
     "id": "2e4c2528-f3e8-4743-a1c9-637012d9eb76",
     "name": "Lightbulb",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -25875,7 +25601,6 @@
   {
     "id": "2974e199-fa53-4d40-87a6-0ec6722a4aef",
     "name": "Rainbow Potion",
-    "type": "Item",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -25991,7 +25716,6 @@
   {
     "id": "d619c665-1d58-46e8-828f-6e7e36a86a7d",
     "name": "Orbital Polisher",
-    "type": "Item",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -26092,7 +25816,6 @@
   {
     "id": "8f61677c-aa75-4275-b8b4-3cbaca1fdcbf",
     "name": "Cash Cannon",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -26215,7 +25938,6 @@
   {
     "id": "95ff786e-b6bf-4bad-9d5c-6b2b41e9f0c3",
     "name": "Crusher Claw",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -26338,7 +26060,6 @@
   {
     "id": "4e1770dd-2a10-440c-924a-c80afbbb269a",
     "name": "Rocket Boots",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -26452,7 +26173,6 @@
   {
     "id": "7827d946-0204-4897-b3e4-bd7cec8e3979",
     "name": "Vending Machine",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -26502,7 +26222,6 @@
   {
     "id": "03b1fd16-6b0d-4847-a76f-6c586f7c5958",
     "name": "Kukri",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -26619,7 +26338,6 @@
   {
     "id": "f8dd1239-f4a3-4bca-b975-2125906e7fcb",
     "name": "Hammer",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -26742,7 +26460,6 @@
   {
     "id": "1afb5eef-e964-4767-b9a6-8d1a76cef645",
     "name": "Black Rose",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -26851,7 +26568,6 @@
   {
     "id": "7fa2b9c8-f038-44f9-8143-a4f8ee7f34bf",
     "name": "Piggles",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -26963,7 +26679,6 @@
   {
     "id": "37222f02-3767-44ef-a8ed-000c90d3330e",
     "name": "Ruby",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -27071,7 +26786,6 @@
   {
     "id": "fec7b75b-980f-4744-b1c1-19ce00b117e8",
     "name": "Claw Arm",
-    "type": "Item",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -27184,7 +26898,6 @@
   {
     "id": "9b9ea23a-408c-4e08-9b09-9f791285d16c",
     "name": "Ignition Core",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -27306,7 +27019,6 @@
   {
     "id": "aa97a75d-3bdf-4f1b-bc2b-457375e31e0f",
     "name": "Tusked Helm",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -27433,7 +27145,6 @@
   {
     "id": "f43844fe-cefa-40c7-ba86-e601c3596064",
     "name": "Runic Double Bow",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -27560,7 +27271,6 @@
   {
     "id": "c5362859-48d7-4f5e-84ed-f8430b84a8ae",
     "name": "Flashbang",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -27663,7 +27373,6 @@
   {
     "id": "07df297d-e116-42a4-9596-4af674764d1b",
     "name": "Globe",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -27763,7 +27472,6 @@
   {
     "id": "b642b5dd-180e-4980-bffd-c90110fdc96f",
     "name": "Soul Ring",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -27872,7 +27580,6 @@
   {
     "id": "55377bdf-359b-495c-895c-c7852511c915",
     "name": "Cannonball",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -27972,7 +27679,6 @@
   {
     "id": "83fae686-a12e-4626-8574-e6141f611fbc",
     "name": "Char Cole",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -28082,7 +27788,6 @@
   {
     "id": "2df8f38b-bb9f-4247-afe9-525067c9e29e",
     "name": "Blue Piggles L",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -28133,7 +27838,6 @@
   {
     "id": "f7241086-8b2d-4882-80c9-a0ddb46910ad",
     "name": "Junkyard Lance",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -28247,7 +27951,6 @@
   {
     "id": "e6a183ce-0ea9-4981-bbfb-95be32b93de2",
     "name": "Grapeshot",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -28369,7 +28072,6 @@
   {
     "id": "86769097-271e-46ee-8d42-317c6d8a7a09",
     "name": "Atomic Clock",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -28471,7 +28173,6 @@
   {
     "id": "c9f75211-7012-418d-b53f-3f5ac5959b62",
     "name": "Bill Dozer",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -28595,7 +28296,6 @@
   {
     "id": "acfdf9cc-6a8c-43ef-8b30-14f4843b2f28",
     "name": "Security Camera",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -28708,7 +28408,6 @@
   {
     "id": "eed2dc49-267a-4e8c-8ea6-d37dff677e8c",
     "name": "Induction Aegis",
-    "type": "Item",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -28818,7 +28517,6 @@
   {
     "id": "0ff18fe4-b105-4118-8d6c-8852140b5146",
     "name": "Miss Isles",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -28946,7 +28644,6 @@
   {
     "id": "eda51b14-8420-4da4-ba82-89513e5deaa2",
     "name": "Sea Shell",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -29054,7 +28751,6 @@
   {
     "id": "953402e4-1430-48ab-8156-6193c9d8a7d4",
     "name": "Figurehead",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -29161,7 +28857,6 @@
   {
     "id": "96e51b95-eaab-40ea-9a89-381727ce2434",
     "name": "Succulents",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -29273,7 +28968,6 @@
   {
     "id": "deaad0b0-27bc-4800-928f-0fdf443d2c2d",
     "name": "Citrus",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -29320,7 +29014,6 @@
   {
     "id": "9c21ee00-116d-4868-a215-3f9b57bc8657",
     "name": "Yellow Piggles A",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -29371,7 +29064,6 @@
   {
     "id": "20300be0-939f-4a1f-ba8a-eb0f778675a2",
     "name": "Exoskeleton",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -29435,7 +29127,6 @@
   {
     "id": "b57d9963-d241-40c9-8f9f-f9925a2da661",
     "name": "Red Piggles R",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -29486,7 +29177,6 @@
   {
     "id": "e37638c3-4e5c-472c-96f9-b503a86e0fe3",
     "name": "Double Whammy",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -29603,7 +29293,6 @@
   {
     "id": "3718910f-3b43-4c4b-8904-d1dbfce56c13",
     "name": "Athanor",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -29724,7 +29413,6 @@
   {
     "id": "367c2ad9-94b3-4f01-a130-a673922244ef",
     "name": "Cookies",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -29784,7 +29472,6 @@
   {
     "id": "9ab4ba04-0c08-4374-b86e-e94dcaaca334",
     "name": "Jaballian Drum",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -29889,7 +29576,6 @@
   {
     "id": "8019736a-bb1e-4cbd-a3f8-2bfa9b943b6f",
     "name": "Leeches",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -30006,7 +29692,6 @@
   {
     "id": "5e17cfc3-25c0-4a74-8a33-07ee972e6f6e",
     "name": "Concealed Dagger",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -30129,7 +29814,6 @@
   {
     "id": "6b02f653-a294-443e-8b85-2be47b6a1c12",
     "name": "Venomander",
-    "type": "Item",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -30236,7 +29920,6 @@
   {
     "id": "ac92c118-c073-465c-8d89-abafa0dcb144",
     "name": "Genie Lamp",
-    "type": "Item",
     "startingTier": "Diamond",
     "tiers": {
       "Bronze": {
@@ -30276,7 +29959,6 @@
   {
     "id": "e3070870-881c-497d-879f-2d91e962e0e2",
     "name": "Fire Claw",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -30388,7 +30070,6 @@
   {
     "id": "1e9649ce-e350-4c0b-b763-5e4c7e038010",
     "name": "Earrings",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -30497,7 +30178,6 @@
   {
     "id": "ab8a9c5e-3d2a-45e6-9d65-ddd0fdfdac01",
     "name": "Hammlet",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -30617,7 +30297,6 @@
   {
     "id": "73ca1d2f-f4d3-42c4-8980-0255f5ecd472",
     "name": "Trebuchet",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -30745,7 +30424,6 @@
   {
     "id": "6676145e-d1e2-469a-b111-d5c4edfc0a30",
     "name": "Beehive",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -30802,24 +30480,19 @@
   {
     "id": "cb766f97-21b4-43b9-af0e-c47bc7a3b4fd",
     "name": "Singularity",
-    "type": "Item",
     "startingTier": "Legendary",
     "tiers": {
       "Bronze": {
-        "tooltips": [],
-        "attributes": {}
+        "tooltips": []
       },
       "Silver": {
-        "tooltips": [],
-        "attributes": {}
+        "tooltips": []
       },
       "Gold": {
-        "tooltips": [],
-        "attributes": {}
+        "tooltips": []
       },
       "Diamond": {
-        "tooltips": [],
-        "attributes": {}
+        "tooltips": []
       },
       "Legendary": {
         "tooltips": [
@@ -30892,7 +30565,6 @@
   {
     "id": "a21b1e80-c633-487b-9292-7552519198c8",
     "name": "Closed Sign",
-    "type": "Item",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -30953,7 +30625,6 @@
   {
     "id": "5a9bd869-4614-4edf-941d-5f44e0bb1519",
     "name": "Bar of Gold",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -30999,7 +30670,6 @@
   {
     "id": "d06e3d7d-24a9-4fec-a9a4-55a710484382",
     "name": "Momma-Saur",
-    "type": "Item",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -31116,7 +30786,6 @@
   {
     "id": "dec20bd9-9c83-4fcb-a5d2-e71352ed78d5",
     "name": "Sunderer",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -31236,7 +30905,6 @@
   {
     "id": "57842875-bc49-4ec9-af82-29c2dbed4087",
     "name": "Mortar & Pestle",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -31351,7 +31019,6 @@
   {
     "id": "1abd962d-8628-47ac-a5ad-5ae02c1afc86",
     "name": "Micro Dave",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -31466,7 +31133,6 @@
   {
     "id": "c9beb35d-e6c6-4e3a-ad2c-1d64db11be07",
     "name": "Signet Ring",
-    "type": "Item",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -31528,7 +31194,6 @@
   {
     "id": "ba6ba8f6-7076-406a-89e6-ddaa39044959",
     "name": "Lifting Gloves",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -31636,7 +31301,6 @@
   {
     "id": "8bbfd341-660f-4b9f-9c95-2e40c7d05c1f",
     "name": "Gearnola Bar",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -31755,7 +31419,6 @@
   {
     "id": "5a162b5d-4802-4f56-a30e-19b3c8ef677c",
     "name": "Stinger",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -31876,7 +31539,6 @@
   {
     "id": "1ce6ea48-4049-4e66-b792-d360ae9ffedf",
     "name": "Poppy Field",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -31991,7 +31653,6 @@
   {
     "id": "c45a7c22-ae24-4246-bb6c-a83324a8546c",
     "name": "Cosmic Plumage",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -32102,7 +31763,6 @@
   {
     "id": "cc0c3ddc-c4c4-4b2a-beb4-142973639f44",
     "name": "Pulse Rifle",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -32222,7 +31882,6 @@
   {
     "id": "6146cacd-202c-489f-88c0-f77ef3e0fda6",
     "name": "Bayonet",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -32330,7 +31989,6 @@
   {
     "id": "214d9c9d-d222-4afa-b63e-ca028c859647",
     "name": "Arbalest",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -32452,7 +32110,6 @@
   {
     "id": "a87c42a5-b21e-4179-9827-ceea46c25033",
     "name": "Marbles",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -32552,7 +32209,6 @@
   {
     "id": "fc01f3c3-5562-4616-aa12-005834d6647f",
     "name": "Skyscraper",
-    "type": "Item",
     "startingTier": "Diamond",
     "tiers": {
       "Bronze": {
@@ -32666,7 +32322,6 @@
   {
     "id": "3868bcee-4463-4c34-9a9b-b1ab1fa49260",
     "name": "Yellow Piggles R",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -32717,7 +32372,6 @@
   {
     "id": "9778f31c-87b0-4d8d-8289-50e90dd7edc5",
     "name": "Torpedo",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -32845,7 +32499,6 @@
   {
     "id": "783cda9d-1550-42d5-9651-51883da5ad66",
     "name": "Cargo Shorts",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -32901,7 +32554,6 @@
   {
     "id": "0abf14a3-8a87-4c87-a7a9-793a3fa3d4db",
     "name": "Pet Rock",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -33023,7 +32675,6 @@
   {
     "id": "0b4d7632-b3b4-42ce-a5fc-3fafb8f1c409",
     "name": "Hemlock",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -33129,7 +32780,6 @@
   {
     "id": "e041875b-2949-4c56-8e01-ac50dbb06af6",
     "name": "Jitte",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -33251,7 +32901,6 @@
   {
     "id": "00e3a7ff-af5e-47ce-a2c0-2d4ec31ac7d7",
     "name": "Narwhal",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -33367,7 +33016,6 @@
   {
     "id": "6c77228f-9a62-4274-a4a5-cee77f88f6ec",
     "name": "Stained Glass Window",
-    "type": "Item",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -33435,7 +33083,6 @@
   {
     "id": "d5e2cff2-31b5-48eb-86ff-9543ea0c6d40",
     "name": "Knee Brace",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -33486,7 +33133,6 @@
   {
     "id": "4c8c35c4-ab16-465c-92be-0113dd99d3df",
     "name": "Cash Register",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -33546,7 +33192,6 @@
   {
     "id": "1dcc7604-4f84-46e9-bbd1-2456317ec0ed",
     "name": "Rifle",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -33673,7 +33318,6 @@
   {
     "id": "d576f5e8-abfb-44cb-a777-be7cf714e02d",
     "name": "Coolant",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -33780,24 +33424,19 @@
   {
     "id": "0c710f33-d0fd-40c8-aa2d-34fc20f23140",
     "name": "Scythe",
-    "type": "Item",
     "startingTier": "Legendary",
     "tiers": {
       "Bronze": {
-        "tooltips": [],
-        "attributes": {}
+        "tooltips": []
       },
       "Silver": {
-        "tooltips": [],
-        "attributes": {}
+        "tooltips": []
       },
       "Gold": {
-        "tooltips": [],
-        "attributes": {}
+        "tooltips": []
       },
       "Diamond": {
-        "tooltips": [],
-        "attributes": {}
+        "tooltips": []
       },
       "Legendary": {
         "tooltips": [
@@ -33886,7 +33525,6 @@
   {
     "id": "b263ef6f-02a9-449b-b9c5-74ec0e6cbfc9",
     "name": "Monitor Lizard",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -33995,7 +33633,6 @@
   {
     "id": "51696368-e409-4771-8baf-22c6da533cd8",
     "name": "Junkyard Repairbot",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -34110,7 +33747,6 @@
   {
     "id": "9e5e3d9e-ad05-4340-9071-4fccecb79695",
     "name": "Butterfly Swords",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -34226,7 +33862,6 @@
   {
     "id": "027ef534-d047-4e18-8496-d9fd4773e15d",
     "name": "Dishwasher",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -34341,7 +33976,6 @@
   {
     "id": "566b5c63-4201-41d3-b6d5-0eb527db396a",
     "name": "Memory Card",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -34460,7 +34094,6 @@
   {
     "id": "64e3569f-e023-49a5-ab75-f9613c338d53",
     "name": "Oinkment",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -34564,7 +34197,6 @@
   {
     "id": "3c9fb662-4088-47f6-a927-0b064154bbbb",
     "name": "Double Barrel",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -34691,7 +34323,6 @@
   {
     "id": "8535493a-67ae-4248-a34d-176549948686",
     "name": "Magma Core",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -34779,7 +34410,6 @@
   {
     "id": "bfb765fc-764c-4e16-aa17-0e10efda4b5b",
     "name": "Nitrogen Hammer",
-    "type": "Item",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -34896,7 +34526,6 @@
   {
     "id": "628cd703-f0c6-4c76-b5bd-72c8aebf5314",
     "name": "Bellelista",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -35014,7 +34643,6 @@
   {
     "id": "3d766165-a7f8-4286-8d37-976d5e101522",
     "name": "Junkyard Catapult",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -35142,7 +34770,6 @@
   {
     "id": "62595dd0-5df0-4f2a-92bb-2be97f10d3fd",
     "name": "Brick Buddy",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -35257,7 +34884,6 @@
   {
     "id": "8ff354c3-1ffa-4251-9323-272f5e9f7312",
     "name": "Alpha Ray",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -35373,7 +34999,6 @@
   {
     "id": "40814ac2-ee63-4482-8f3b-d2242750fbd8",
     "name": "Coral Armor",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -35487,7 +35112,6 @@
   {
     "id": "905f9340-4272-4f82-88e4-4a2f79f1be96",
     "name": "Disguise",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -35584,7 +35208,6 @@
   {
     "id": "1bdbc6f6-2690-445a-877e-90dbbd5e4658",
     "name": "Barbed Wire",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -35701,7 +35324,6 @@
   {
     "id": "d0a15bf6-fc3a-47c5-84c5-7c34c6996598",
     "name": "Green Gumball",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -35748,7 +35370,6 @@
   {
     "id": "f16526f8-f3f7-4b79-aec0-b6bd729806a1",
     "name": "Capacitor",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -35854,7 +35475,6 @@
   {
     "id": "cfd94b43-c547-4dea-a977-658a388e75d4",
     "name": "Void Shield",
-    "type": "Item",
     "startingTier": "Diamond",
     "tiers": {
       "Bronze": {
@@ -35955,7 +35575,6 @@
   {
     "id": "c1c4f8fc-548d-4ae6-bfca-1c7ea2aca212",
     "name": "Omega Ray",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -36063,7 +35682,6 @@
   {
     "id": "da766a09-0352-4966-829f-20bda8da48d7",
     "name": "Medkit",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -36108,7 +35726,6 @@
   {
     "id": "65527be1-b100-4a4c-98d1-4f8975368b5b",
     "name": "Pistol Sword",
-    "type": "Item",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -36225,7 +35842,6 @@
   {
     "id": "2c79dcd7-3205-4d41-85e9-daecb8d1c7c5",
     "name": "Basilisk Fang",
-    "type": "Item",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -36337,7 +35953,6 @@
   {
     "id": "3d185981-0b60-47ce-9ed3-58be5d7b2737",
     "name": "Pyg's Gym",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -36456,7 +36071,6 @@
   {
     "id": "31b35938-9402-4990-b4d9-473ce5887af9",
     "name": "Pawn Shop",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -36551,7 +36165,6 @@
   {
     "id": "7efc7f90-e89c-4d26-b881-65f7d2d3bdd2",
     "name": "Beach Ball",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -36659,7 +36272,6 @@
   {
     "id": "c2a74791-1d79-45bd-841d-2e3f2a61da8f",
     "name": "Hogwash",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -36770,7 +36382,6 @@
   {
     "id": "0e66c016-9a8b-4aa0-8f01-b5a5fb739da4",
     "name": "Pylon",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -36881,7 +36492,6 @@
   {
     "id": "ad02d867-252b-45b5-9625-4480807caeff",
     "name": "Cauldron",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -36992,7 +36602,6 @@
   {
     "id": "ae039b3e-ef98-4dc7-a97c-1e06d2627e57",
     "name": "Nitro",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -37101,7 +36710,6 @@
   {
     "id": "552247e1-74f8-4414-88bb-1b868f3f296d",
     "name": "Solar Farm",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -37213,7 +36821,6 @@
   {
     "id": "0930fbea-e3ae-45d4-a1c7-a26c5abb63aa",
     "name": "Lightning Rod",
-    "type": "Item",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -37330,7 +36937,6 @@
   {
     "id": "c9dd4c7b-d2c0-491a-95b6-d1a163e9d755",
     "name": "Balloon Bot",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -37440,7 +37046,6 @@
   {
     "id": "8124f91b-3b4f-40ae-9493-057a0be7feb9",
     "name": "Blue Piggles X",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -37491,7 +37096,6 @@
   {
     "id": "f42936ef-6efd-478a-9ed2-fd759df65f97",
     "name": "Sleeping Potion",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -37600,7 +37204,6 @@
   {
     "id": "d7a66bfb-963f-4c13-8c2b-0bef35a650c8",
     "name": "Balcony",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -37707,7 +37310,6 @@
   {
     "id": "94e28682-a012-4dd0-8ce8-7fe180aa6127",
     "name": "Busy Bee",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -37759,7 +37361,6 @@
   {
     "id": "7b731de3-3598-46f4-b61f-75b7a0065d8a",
     "name": "Ectoplasm",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -37868,7 +37469,6 @@
   {
     "id": "0da76b08-b287-4b9b-b57b-305af8848a81",
     "name": "Makeshift Barricade",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -37974,7 +37574,6 @@
   {
     "id": "f0608f5b-5c6a-4c71-8cc4-f8abbdd951c9",
     "name": "Uzi",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -38095,7 +37694,6 @@
   {
     "id": "49f2d11c-6c2b-465f-a7f4-90315dee7670",
     "name": "DJ Rob0t",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -38199,7 +37797,6 @@
   {
     "id": "dc3bf5cb-45fa-46c7-9a0e-3f3bfb01697d",
     "name": "Sharpening Stone",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -38244,7 +37841,6 @@
   {
     "id": "e923019b-fd40-487c-85af-edaa930095b8",
     "name": "Bunker",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -38333,7 +37929,6 @@
   {
     "id": "616089ae-766e-4f55-b4a1-d38f6a882ef1",
     "name": "Submarine",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -38452,7 +38047,6 @@
   {
     "id": "302d710c-335d-4fd4-af3c-34789e55acd3",
     "name": "Blow Torch",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -38560,7 +38154,6 @@
   {
     "id": "1e48bd28-cd41-49e9-9e22-b44da30ef6be",
     "name": "Thieves Guild Medallion",
-    "type": "Item",
     "startingTier": "Diamond",
     "tiers": {
       "Bronze": {
@@ -38600,7 +38193,6 @@
   {
     "id": "45defd20-6c4e-40a7-b2eb-4c4d2284eabd",
     "name": "Rewards Card",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -38658,7 +38250,6 @@
   {
     "id": "d45bb1dd-5342-4c69-b7fe-f56d3fac7d1f",
     "name": "Cinders",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -38704,7 +38295,6 @@
   {
     "id": "c9c9a413-59b3-4fc8-b4ab-dcfac0a44e90",
     "name": "Ganjo",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -38818,7 +38408,6 @@
   {
     "id": "df87dc00-f0fe-4e47-b864-ad6b4bfea81a",
     "name": "Bottled Lightning",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -38947,7 +38536,6 @@
   {
     "id": "428de0f0-bf0d-4da6-9abe-dde8f2174aa9",
     "name": "Stopwatch",
-    "type": "Item",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -39043,7 +38631,6 @@
   {
     "id": "764ad6f5-f9a0-4edc-8692-fa166abe2ba3",
     "name": "Nanobots",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -39098,7 +38685,6 @@
   {
     "id": "0e02eed0-3d9b-4651-8ce8-a48ee1c59fdf",
     "name": "Chemsnail",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -39207,7 +38793,6 @@
   {
     "id": "ea887c05-b3e9-4a3c-abc6-0181bdf6bc5a",
     "name": "Shipwreck",
-    "type": "Item",
     "startingTier": "Diamond",
     "tiers": {
       "Bronze": {
@@ -39309,7 +38894,6 @@
   {
     "id": "447c40e6-7aec-4391-8be7-df4952815d40",
     "name": "Sapphire",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -39411,7 +38995,6 @@
   {
     "id": "e6d331a7-c0e3-4619-9eee-c7c5023969bb",
     "name": "Black Pepper",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -39533,7 +39116,6 @@
   {
     "id": "bede53aa-8d47-4d6c-b302-2e684e8c3fcf",
     "name": "Junkyard Club",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -39655,7 +39237,6 @@
   {
     "id": "44710a21-395d-4f78-bdaf-e562c544ae91",
     "name": "Grappling Hook",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -39773,7 +39354,6 @@
   {
     "id": "844efa15-de6f-4fec-a438-21904969577b",
     "name": "Red Piggles A",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -39824,7 +39404,6 @@
   {
     "id": "f08af933-8712-44fe-9542-338e0fec0a45",
     "name": "Ouroboros Statue",
-    "type": "Item",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -39929,7 +39508,6 @@
   {
     "id": "86f9a35d-73d6-456c-b56d-ddb6adc64175",
     "name": "Mortal Coil",
-    "type": "Item",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -40036,7 +39614,6 @@
   {
     "id": "9131cedf-e5e7-4a23-a90e-2576048419e8",
     "name": "Weaponized Core",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -40165,7 +39742,6 @@
   {
     "id": "832afbee-fdb4-47e2-b4ac-0206b8955816",
     "name": "Lemonade Stand",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -40282,7 +39858,6 @@
   {
     "id": "189575f2-cf55-44ee-a70b-362ce75c9c9e",
     "name": "Wallace",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -40396,7 +39971,6 @@
   {
     "id": "60fc7e96-c754-40be-803b-e9237aeb920d",
     "name": "Giant Ice Club",
-    "type": "Item",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -40513,7 +40087,6 @@
   {
     "id": "d66bcc8c-a817-4b0c-bda1-eb13b28acb2b",
     "name": "Claws",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -40634,7 +40207,6 @@
   {
     "id": "3b32361e-2ddc-47b6-bcce-0ac560cb407b",
     "name": "Dragon Tooth",
-    "type": "Item",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -40754,7 +40326,6 @@
   {
     "id": "fcdd6627-8a87-4c3d-8bc9-59f6742da494",
     "name": "Ramrod",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -40859,7 +40430,6 @@
   {
     "id": "9ca6a93b-10e9-4138-abd1-0ff2e7c2c985",
     "name": "Pygmalien's Dagger",
-    "type": "Item",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -40979,7 +40549,6 @@
   {
     "id": "c05828f1-39e6-47aa-9041-216dfa60d83d",
     "name": "Spices",
-    "type": "Item",
     "startingTier": "Diamond",
     "tiers": {
       "Bronze": {
@@ -41080,7 +40649,6 @@
   {
     "id": "cb519fbf-1f2c-4dd1-ba9b-3dc031fd7cbe",
     "name": "Refractor",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -41200,7 +40768,6 @@
   {
     "id": "54f957f2-9522-486b-a7c6-bb234f74846c",
     "name": "Katana",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -41314,7 +40881,6 @@
   {
     "id": "813e44ee-d4a8-4d94-9a78-101004c5eded",
     "name": "Cove",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -41437,7 +41003,6 @@
   {
     "id": "fb9bc349-bc38-40f4-a67e-a9c580e1e681",
     "name": "Fort",
-    "type": "Item",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -41540,7 +41105,6 @@
   {
     "id": "27e2ea0b-4e39-4826-be29-9f5505d5938a",
     "name": "Wrench",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -41663,7 +41227,6 @@
   {
     "id": "fd95b873-24a4-4af6-8b08-296f24a3576c",
     "name": "Magic Carpet",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -41790,7 +41353,6 @@
   {
     "id": "b553bdf2-bde8-408b-9e78-336eab394546",
     "name": "Business Card",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -41851,7 +41413,6 @@
   {
     "id": "9f478d9d-cc98-4ff2-926a-5eeb09bd044c",
     "name": "Snowflake",
-    "type": "Item",
     "startingTier": "Diamond",
     "tiers": {
       "Bronze": {
@@ -41892,7 +41453,6 @@
   {
     "id": "b3c06ff9-f0e1-4527-81aa-2f71d7bf6503",
     "name": "Red Piggles L",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -41943,7 +41503,6 @@
   {
     "id": "f8b41c46-8adc-4e84-835a-831e2e3d84d1",
     "name": "Goggles",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -42059,7 +41618,6 @@
   {
     "id": "c65da89e-3504-40e7-87a8-10defcb7f07b",
     "name": "Nesting Doll",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -42173,7 +41731,6 @@
   {
     "id": "ca77281c-f912-4db3-86ce-64842a4ccdaa",
     "name": "Cog",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -42278,7 +41835,6 @@
   {
     "id": "b325d26f-0625-406c-89d4-30e011b30b9e",
     "name": "Catfish",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -42394,7 +41950,6 @@
   {
     "id": "19379b88-4fe5-474c-a254-d266c0435bf4",
     "name": "Upgrade Hammer",
-    "type": "Item",
     "startingTier": "Diamond",
     "tiers": {
       "Bronze": {
@@ -42433,7 +41988,6 @@
   {
     "id": "1cce58b4-701c-46c0-aec7-c41f81186b61",
     "name": "Spiked Buckler",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -42561,7 +42115,6 @@
   {
     "id": "b4462dd4-2a2d-412b-b532-c47bba6f93c1",
     "name": "Jewelry",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -42674,7 +42227,6 @@
   {
     "id": "014d9c98-e823-443c-98a3-6367ab81c956",
     "name": "Trained Spider",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -42788,7 +42340,6 @@
   {
     "id": "baec36c3-2c41-47fa-bd54-6f1d6b34e8d0",
     "name": "Void Ray",
-    "type": "Item",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -42897,7 +42448,6 @@
   {
     "id": "4826832f-f3a5-4c40-b8fa-737f002074fa",
     "name": "Insect Wing",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -42943,7 +42493,6 @@
   {
     "id": "44366f1e-a46b-4b41-9bf7-a1dec75bb6d6",
     "name": "Companion Core",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -43060,7 +42609,6 @@
   {
     "id": "03e4c71d-5317-4c35-a0fb-5348356edc03",
     "name": "Powder Flask",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -43168,7 +42716,6 @@
   {
     "id": "13f852ba-1d3d-4c1a-b6db-79072e0b19d0",
     "name": "Pop Snappers",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -43281,7 +42828,6 @@
   {
     "id": "08bb5055-bd8d-4f86-bff6-24f8cb47f509",
     "name": "Vial of Blood",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -43327,7 +42873,6 @@
   {
     "id": "63f124c0-f94c-4850-8522-215d2e72a815",
     "name": "Power Drill",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -43451,7 +42996,6 @@
   {
     "id": "111a690e-0afc-41f1-adb5-c8c055b64627",
     "name": "Laser Security System",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -43571,7 +43115,6 @@
   {
     "id": "e5c4c116-32ca-4856-83d2-721e0e751b2e",
     "name": "Cryosphere",
-    "type": "Item",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -43667,7 +43210,6 @@
   {
     "id": "ca45968e-c996-412b-b359-7bfc3e70e893",
     "name": "Epicurean Chocolate",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -43733,7 +43275,6 @@
   {
     "id": "18e2e46f-6419-44b3-80fa-11b13bc7b831",
     "name": "Billboard",
-    "type": "Item",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -43795,7 +43336,6 @@
   {
     "id": "55ef5f5c-0ffc-4598-a6bd-66d8235da56a",
     "name": "Thrusters",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -43908,7 +43448,6 @@
   {
     "id": "c53eff8b-0407-4e8c-adaf-70b2a66b3528",
     "name": "Gumball Machine",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -44023,7 +43562,6 @@
   {
     "id": "2aab9da1-bfd1-4f3f-8cda-69f3c909158b",
     "name": "Holsters",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -44109,7 +43647,6 @@
   {
     "id": "bb1b65d5-ead6-4828-adb9-688c7e2aabb6",
     "name": "Fishing Rod",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -44224,7 +43761,6 @@
   {
     "id": "d6a5d92f-113e-4a1e-96ec-99f04ea29992",
     "name": "Blunderbuss",
-    "type": "Item",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -44343,7 +43879,6 @@
   {
     "id": "da73d4b8-d857-4121-9a6f-c621546d36e3",
     "name": "Clawrence",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -44460,7 +43995,6 @@
   {
     "id": "53e336a7-709a-46a6-84ed-bb58b9e998bb",
     "name": "Tourist Chariot",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -44575,7 +44109,6 @@
   {
     "id": "26cd871b-5fc4-4b8a-a4cf-6d33d5462c22",
     "name": "Blast Doors",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -44687,24 +44220,19 @@
   {
     "id": "d154b0ed-4fe3-4abe-a08c-fbc622a64500",
     "name": "Soul of the District",
-    "type": "Item",
     "startingTier": "Legendary",
     "tiers": {
       "Bronze": {
-        "tooltips": [],
-        "attributes": {}
+        "tooltips": []
       },
       "Silver": {
-        "tooltips": [],
-        "attributes": {}
+        "tooltips": []
       },
       "Gold": {
-        "tooltips": [],
-        "attributes": {}
+        "tooltips": []
       },
       "Diamond": {
-        "tooltips": [],
-        "attributes": {}
+        "tooltips": []
       },
       "Legendary": {
         "tooltips": [
@@ -44797,7 +44325,6 @@
   {
     "id": "7326c177-d5c8-4e27-b8b4-acf565745019",
     "name": "Iceberg",
-    "type": "Item",
     "startingTier": "Diamond",
     "tiers": {
       "Bronze": {
@@ -44882,7 +44409,6 @@
   {
     "id": "069755d6-fa1b-4c09-a7c9-31c3338184f3",
     "name": "Pickled Peppers",
-    "type": "Item",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -44988,7 +44514,6 @@
   {
     "id": "6d529d36-e679-4124-8a96-d0b74dc767ee",
     "name": "Open Sign",
-    "type": "Item",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -45054,7 +44579,6 @@
   {
     "id": "a5fda359-ceb0-4b00-bcac-810c9cecef8e",
     "name": "Critical Core",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -45191,7 +44715,6 @@
   {
     "id": "6d6199b4-82a4-441d-9329-f4164737ac6b",
     "name": "Red Gumball",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -45238,7 +44761,6 @@
   {
     "id": "b59a6072-5eb3-4782-b683-a20ee9294e54",
     "name": "The Boulder",
-    "type": "Item",
     "startingTier": "Diamond",
     "tiers": {
       "Bronze": {
@@ -45347,7 +44869,6 @@
   {
     "id": "35355805-5d48-4a42-bb7b-68d240d9a306",
     "name": "Blowgun",
-    "type": "Item",
     "startingTier": "Diamond",
     "tiers": {
       "Bronze": {
@@ -45456,7 +44977,6 @@
   {
     "id": "84b74f1e-0960-4c71-bb4f-d35e114250c2",
     "name": "Yo-Yo",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -45576,7 +45096,6 @@
   {
     "id": "6076200d-dc08-47a2-a7d2-dfa2e484422a",
     "name": "Ritual Dagger",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -45691,7 +45210,6 @@
   {
     "id": "53099361-599f-4c1a-ad4a-d2fbb491b756",
     "name": "Langxian",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -45811,7 +45329,6 @@
   {
     "id": "6e576444-85ce-4922-84e1-8ad88c5b83f1",
     "name": "Gatling Gun",
-    "type": "Item",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -45924,7 +45441,6 @@
   {
     "id": "6b8ca1d0-f4ff-440d-8a9e-51efc4d7ce01",
     "name": "Harmadillo",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -46046,7 +45562,6 @@
   {
     "id": "9c97827a-f6c3-4abd-b7c1-bc1b37cc82f0",
     "name": "Bootstraps",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -46154,7 +45669,6 @@
   {
     "id": "b0f10d7f-d1df-4fb5-a88f-01b8cffd7fe4",
     "name": "Tripwire",
-    "type": "Item",
     "startingTier": "Diamond",
     "tiers": {
       "Bronze": {
@@ -46242,7 +45756,6 @@
   {
     "id": "2fd61ab1-d256-4d43-8691-c6f730b41c67",
     "name": "Thermal Lance",
-    "type": "Item",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -46347,7 +45860,6 @@
   {
     "id": "acbddaec-41a7-452e-b4aa-357e75553d55",
     "name": "Yellow Gumball",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -46394,7 +45906,6 @@
   {
     "id": "92e7ab18-a035-43c7-a53c-965aeecbe357",
     "name": "Revolver",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -46528,7 +46039,6 @@
   {
     "id": "1ff59248-bf6c-49e1-9c45-59989df19693",
     "name": "Dragon Whelp",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -46646,7 +46156,6 @@
   {
     "id": "fc8eb8ad-f5bd-495b-a157-e813dbe748bf",
     "name": "Sniper Rifle",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -46762,7 +46271,6 @@
   {
     "id": "ba625e9a-9c8b-4c21-bf6e-e7a6ff264019",
     "name": "Ice Cubes",
-    "type": "Item",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -46858,7 +46366,6 @@
   {
     "id": "20198f06-d36f-4abe-88a5-c2d6b936742c",
     "name": "Rolling Pin",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -46980,7 +46487,6 @@
   {
     "id": "af24dea0-6cc9-49dc-acec-d90313b46b72",
     "name": "Clockwork Blades",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -47101,7 +46607,6 @@
   {
     "id": "46b1261c-a04c-4a35-8a9e-6763a5d85c43",
     "name": "Clamera",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -47210,7 +46715,6 @@
   {
     "id": "7d55da10-108e-43b6-bf86-4893f5b9060d",
     "name": "Shovel",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -47331,7 +46835,6 @@
   {
     "id": "bccd64e7-750d-4150-977e-943b8a5d74bf",
     "name": "Metronome",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -47429,7 +46932,6 @@
   {
     "id": "34fcf624-ccba-42a8-b4fc-837e0002a163",
     "name": "Weights",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -47544,7 +47046,6 @@
   {
     "id": "69688b74-fd2b-42a2-a018-2b720a13f95a",
     "name": "Swash Buckle",
-    "type": "Item",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -47605,7 +47106,6 @@
   {
     "id": "35e2a1dd-739d-4434-95c5-2b9ce5f07a5c",
     "name": "Death Caps",
-    "type": "Item",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -47709,7 +47209,6 @@
   {
     "id": "a043f66d-2320-46f6-8bac-131afeb770d2",
     "name": "Spyglass",
-    "type": "Item",
     "startingTier": "Gold",
     "tiers": {
       "Bronze": {
@@ -47812,7 +47311,6 @@
   {
     "id": "ac596c59-295e-491f-8503-172b094e9773",
     "name": "Pierre Conditioner",
-    "type": "Item",
     "startingTier": "Diamond",
     "tiers": {
       "Bronze": {
@@ -47908,7 +47406,6 @@
   {
     "id": "4680e750-4ea4-421a-b486-194c805ad6a8",
     "name": "Snow Globe",
-    "type": "Item",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -48018,7 +47515,6 @@
   {
     "id": "25545684-3fd5-4adf-abcc-0e2bb6c500c1",
     "name": "Pendulum",
-    "type": "Item",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -48124,4 +47620,6 @@
       "When you Crit, Haste an item for (1/2/3/4) second(s)."
     ]
   }
-]
+];
+
+export default data;

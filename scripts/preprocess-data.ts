@@ -8,14 +8,6 @@ import { parseJson as parseMonstersJson } from '../src/lib/parsers/monstersJsonP
 import { parseJson as parseDayHoursJson } from '../src/lib/parsers/dayHoursJsonParser.ts';
 import type { CardsJson, DayHoursJson, MonstersJson } from '../src/lib/types.ts';
 
-// Define the output file paths
-// TODO: It would probably make sense to store these as TypeScript for better type safety
-const processedItemCardsPath = path.resolve('./src/lib/processedItemCards.json');
-const processedSkillCardsPath = path.resolve('./src/lib/processedSkillCards.json');
-const processedCombatEncounterCardsPath = path.resolve('./src/lib/processedCombatEncounterCards.json');
-const processedMonstersPath = path.resolve('./src/lib/processedMonsters.json');
-const processedDayHoursPath = path.resolve('./src/lib/processedDayHours.json');
-
 async function preprocessData() {
     try {
         // Process the cards and monsters data
@@ -28,21 +20,13 @@ async function preprocessData() {
         const processedDayHours = parseDayHoursJson(dayHoursJson as DayHoursJson);
 
         // Write processed cards data to disk
-        fs.writeFileSync(processedItemCardsPath, JSON.stringify(itemCards, null, 2));
-        console.log(`Saved item cards to ${processedItemCardsPath}`);
-
-        fs.writeFileSync(processedSkillCardsPath, JSON.stringify(skillCards, null, 2));
-        console.log(`Saved skill cards to ${processedSkillCardsPath}`);
-
-        fs.writeFileSync(processedCombatEncounterCardsPath, JSON.stringify(combatEncounterCards, null, 2));
-        console.log(`Saved combat encounter cards to ${processedCombatEncounterCardsPath}`);
-
-        // Write processed monsters data to disk
-        fs.writeFileSync(processedMonstersPath, JSON.stringify(processedMonsters, null, 2));
-        console.log(`Saved monsters to ${processedMonstersPath}`);
-
-        fs.writeFileSync(processedDayHoursPath, JSON.stringify(processedDayHours, null, 2));
-        console.log(`Saved day hours to ${processedDayHoursPath}`);
+        writeTypeScriptDefaultExport('processedItemCards', itemCards, 'ParsedCardItem');
+        writeTypeScriptDefaultExport('processedSkillCards', skillCards, 'ParsedCardSkill');
+        writeTypeScriptDefaultExport('processedCombatEncounterCards', combatEncounterCards, 'ParsedCardCombatEncounter');
+        // TODO: rename to ParsedMonster
+        writeTypeScriptDefaultExport('processedMonsters', processedMonsters, 'Monster');
+        // TODO: rename to ParsedDayHours
+        writeTypeScriptDefaultExport('processedDayHours', processedDayHours, 'ClientSideDayHours');
     } catch (error) {
         console.error('Error processing data:', error);
         process.exit(1);
@@ -50,3 +34,20 @@ async function preprocessData() {
 }
 
 preprocessData();
+
+function writeTypeScriptDefaultExport(fileName: string, data: any, typeName: string) {
+    const typeSafeData = JSON.stringify(data, null, 2);
+    const fileContent = `// Auto-generated file. Do not edit directly.
+// TypeScript representation of processed data.
+import type { ${typeName} } from '$lib/types';
+
+const data: ${typeName}[] = ${typeSafeData};
+
+export default data;
+`;
+
+    const filePath = path.resolve(`./src/lib/${fileName}.ts`);
+
+    fs.writeFileSync(filePath, fileContent);
+    console.log(`Saved ${typeName} file with default export to ${filePath}`);
+}

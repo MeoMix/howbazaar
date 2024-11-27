@@ -61,7 +61,7 @@ export function getMonsterEncounterDays(
                     }).filter(result => result !== null);
 
                     const skills = monster.skills.map(skill => {
-                        const skillCard = skillCards.find(card => card.id === skill.templateId) as ParsedCardSkill | undefined;
+                        const skillCard = skillCards.find(card => card.id === skill.templateId);
 
                         if (skillCard === undefined) {
                             console.log(`Failed to find card skill with id: ${skill.templateId}`);
