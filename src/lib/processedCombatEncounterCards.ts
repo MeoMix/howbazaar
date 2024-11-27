@@ -1,8 +1,8 @@
 // Auto-generated file. Do not edit directly.
 // TypeScript representation of processed data.
-import type { ParsedCardCombatEncounter } from '$lib/types';
+import type { ParsedCombatEncounterCard } from '$lib/types';
 
-const data: ParsedCardCombatEncounter[] = [
+const data: ParsedCombatEncounterCard[] = [
   {
     "id": "70e45a3a-3bf6-4097-aa14-be9e7d794914",
     "name": "Rogue Scrapper",

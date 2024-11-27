@@ -1,5 +1,5 @@
 <script lang="ts">
-    import type { ClientSideSize } from "$lib/types";
+    import type { Size } from "$lib/types";
     import { removeSpecialCharacters } from "$lib/utils/stringUtils";
 
     const {
@@ -9,7 +9,7 @@
     }: {
         name: string;
         type: "items" | "skills";
-        size: ClientSideSize;
+        size: Size;
     } = $props();
 
     const sanitizedCardName = $derived(removeSpecialCharacters(name));

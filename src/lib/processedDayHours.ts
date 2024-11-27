@@ -1,8 +1,8 @@
 // Auto-generated file. Do not edit directly.
 // TypeScript representation of processed data.
-import type { ClientSideDayHours } from '$lib/types';
+import type { ParsedDayHours } from '$lib/types';
 
-const data: ClientSideDayHours[] = [
+const data: ParsedDayHours[] = [
   {
     "day": 24,
     "hour": 2,

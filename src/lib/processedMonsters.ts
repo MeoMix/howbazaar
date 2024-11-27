@@ -1,8 +1,8 @@
 // Auto-generated file. Do not edit directly.
 // TypeScript representation of processed data.
-import type { Monster } from '$lib/types';
+import type { ParsedMonster } from '$lib/types';
 
-const data: Monster[] = [
+const data: ParsedMonster[] = [
   {
     "id": "d7391818-e677-4c98-994d-71e25ed2d41c",
     "level": 1,

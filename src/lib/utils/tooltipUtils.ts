@@ -1,4 +1,4 @@
-import type { ClientSideTierType } from "$lib/types";
+import type { TierType } from "$lib/types";
 
 export function replaceMultiplier(input: string): string {
     const multiplierMap: Record<string, string> = {
@@ -209,7 +209,7 @@ const tierOrder = ["Bronze", "Silver", "Gold", "Diamond", "Legendary"] as const;
  * @param {string} startingTier - The starting tier of the card.
  * @returns {Array} An array of parts where each part is either a string or an array of colored segments.
  */
-export function parseTooltipForRendering(str: string, startingTier: ClientSideTierType) {
+export function parseTooltipForRendering(str: string, startingTier: TierType) {
     const output = [];
     const regex = /(\([^)]*\))/g; // Matches content within parentheses
     let lastIndex = 0;
@@ -239,7 +239,7 @@ export function parseTooltipForRendering(str: string, startingTier: ClientSideTi
           startTierIndex = 0; // Default to "bronze" if startingTier is invalid
         }
 
-        let coloredParts: { text: string, tierType: ClientSideTierType | null }[] = [];
+        let coloredParts: { text: string, tierType: TierType | null }[] = [];
 
         // Assign tiers starting from the startingTier
         parts.forEach((part, i) => {

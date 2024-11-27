@@ -1,4 +1,4 @@
-import type { ClientSideCardSkill } from '$lib/types';
+import type { ClientSideSkillCard } from '$lib/types';
 import { writable } from 'svelte/store';
 import { browser } from '$app/environment'; // Svelte-specific browser check
 
@@ -7,7 +7,7 @@ const LOCAL_STORAGE_KEY = 'skillsStore';
 
 type SkillsStoreData = {
     version: string | null;
-    skills: ClientSideCardSkill[];
+    skills: ClientSideSkillCard[];
 }
 
 // Load initial data from localStorage if in a browser environment
@@ -20,19 +20,19 @@ const initialData = browser
                 ? JSON.parse(storedData) as SkillsStoreData
                 : {
                     version: null as string | null,
-                    skills: [] as ClientSideCardSkill[],
+                    skills: [] as ClientSideSkillCard[],
                 };
         } catch (err) {
             console.error(`Error parsing localStorage key "${LOCAL_STORAGE_KEY}":`, err);
             return {
                 version: null as string | null,
-                skills: [] as ClientSideCardSkill[],
+                skills: [] as ClientSideSkillCard[],
             };
         }
     })()
     : {
         version: null as string | null,
-        skills: [] as ClientSideCardSkill[],
+        skills: [] as ClientSideSkillCard[],
     };
 
 // Create a writable store

@@ -1,5 +1,5 @@
 <script lang="ts">
-    import type { ClientSideCardSkill } from "$lib/types";
+    import type { ClientSideSkillCard } from "$lib/types";
     import { copyCardLink } from "$lib/stores/clipboard";
     import { Card } from "flowbite-svelte";
     import { filterTags } from "$lib/utils/filterUtils";
@@ -8,7 +8,7 @@
     import CardImage from "./CardImage.svelte";
     import CardCombatEncounters from "./CardCombatEncounters.svelte";
 
-    const { card }: { card: ClientSideCardSkill } = $props();
+    const { card }: { card: ClientSideSkillCard } = $props();
 
     const id = $derived(card.name.replace(/\s+/g, "_"));
     const tags = $derived(filterTags(card.tags, card.hiddenTags));

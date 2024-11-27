@@ -2,9 +2,10 @@
 // I think I can generate a better typedef by interfacing with quicktype-core rather than the CLI
 // https://github.com/glideapps/quicktype?tab=readme-ov-file#calling-quicktype-from-javascript
 import type { Entries } from "type-fest";
-import type { CardsJson, ParsedCardCombatEncounter, ParsedCardItem, ParsedCardSkill, ClientSideTier } from "$lib/types";
+import type { ParsedCombatEncounterCard, ParsedItemCard, ParsedSkillCard } from "$lib/types";
 import type { V2CardsD as Card, Bronze as Tier, Tiers, Tier as TierType, AbilityAction, AuraAction, Ability, Aura, Operation, TargetMode } from "./v2_Cards";
 import { unifyTooltips } from "$lib/utils/tooltipUtils";
+import type { CardsJson } from "./types.parser";
 
 // JSON contains testing data which isn't shown in game during normal operations
 // I didn't see a good flag for hiding these so I'm explicitly banning them.
@@ -324,7 +325,7 @@ type ValidItemCard = Card & { Tiers: Tiers, Type: "Item", Localization: { Title:
 type ValidSkillCard = Card & { Tiers: Tiers, Type: "Skill", Localization: { Title: { Text: string } } };
 type ValidCombatEncounterCard = Card & { Type: "CombatEncounter", Localization: { Title: { Text: string } }, CombatantType: { MonsterTemplateId: string; } };
 
-function parseItemCards(cardsJson: CardsJson): ParsedCardItem[] {
+function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
     const isValidItemCard = (entry: Card): entry is ValidItemCard =>
         entry.Type === "Item" &&
         entry.SpawningEligibility !== "Never" &&
@@ -385,10 +386,9 @@ function parseItemCards(cardsJson: CardsJson): ParsedCardItem[] {
 
                 return [tierName, {
                     tooltips: [...attributeTooltips, ...tooltips],
-                    // attributes,
                 }]
             },
-        )) as Record<TierType, ClientSideTier>;
+        )) as Record<TierType, { tooltips: string[] }>;
 
         const enchantments = card.Enchantments ? (Object.entries(card.Enchantments) as Entries<typeof card.Enchantments>).map(([enchantmentName, enchantment]) => {
             if (!enchantment) {
@@ -610,14 +610,13 @@ function parseItemCards(cardsJson: CardsJson): ParsedCardItem[] {
         const invalidLegendaries = ["Eye of the Colossus", "Infernal Greatsword", "Octopus", "Necronomicon", "Scythe", "Singularity", "Soul of the District", "Teddy", "The Eclipse", "Flamberge"];
         if (invalidLegendaries.includes(name)) {
             startingTier = "Legendary";
-            tiers = Object.fromEntries((Object.entries(tiers) as Entries<Record<TierType, ClientSideTier>>).map(
+            tiers = Object.fromEntries((Object.entries(tiers) as Entries<Record<TierType, { tooltips: string[] }>>).map(
                 ([tierType, tier]) => {
                     return [tierType, tierType === "Legendary" ? tier : {
                         tooltips: [] as string[],
-                        // attributes: {},
                     }]
                 },
-            )) as Record<TierType, ClientSideTier>;
+            )) as Record<TierType, { tooltips: string[] }>;
         }
 
         // Items which aren't Legendary shouldn't show unified tooltips which include Legendary since
@@ -644,7 +643,7 @@ function parseItemCards(cardsJson: CardsJson): ParsedCardItem[] {
     return cards;
 }
 
-function parseSkillCards(cardsJson: CardsJson): ParsedCardSkill[] {
+function parseSkillCards(cardsJson: CardsJson): ParsedSkillCard[] {
     const isValidSkillCard = (entry: Card): entry is ValidSkillCard =>
         entry.Type === "Skill" &&
         entry.SpawningEligibility !== "Never" &&
@@ -705,10 +704,9 @@ function parseSkillCards(cardsJson: CardsJson): ParsedCardSkill[] {
 
                 return [tierName, {
                     tooltips: [...attributeTooltips, ...tooltips],
-                    // attributes,
                 }]
             },
-        )) as Record<TierType, ClientSideTier>;
+        )) as Record<TierType, { tooltips: string[] }>;
 
         let hiddenTags = card.HiddenTags;
         const name = card.Localization.Title.Text;
@@ -770,9 +768,9 @@ function parseCombatEncounterCards(cardsJson: CardsJson) {
 }
 
 export function parseJson(cardsJson: CardsJson): {
-    itemCards: ParsedCardItem[],
-    skillCards: ParsedCardSkill[],
-    combatEncounterCards: ParsedCardCombatEncounter[],
+    itemCards: ParsedItemCard[],
+    skillCards: ParsedSkillCard[],
+    combatEncounterCards: ParsedCombatEncounterCard[],
 } {
     const itemCards = parseItemCards(cardsJson);
     const skillCards = parseSkillCards(cardsJson);

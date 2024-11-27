@@ -5,8 +5,8 @@
     import { onMount } from "svelte";
     import { page } from "$app/stores";
     import type {
-        ClientSideHiddenTag,
-        ClientSideTag,
+        HiddenTag,
+        Tag,
         Option,
         TriState,
     } from "$lib/types";
@@ -35,7 +35,7 @@
         canFilterEnchantments?: boolean;
         selectedHeroes: string[];
         selectedTiers: string[];
-        tagStates: Record<ClientSideTag | ClientSideHiddenTag, TriState>;
+        tagStates: Record<Tag | HiddenTag, TriState>;
         selectedSizes: string[];
         isMatchAnyTag: boolean;
         searchText: string;
@@ -48,7 +48,7 @@
         selectedTiers = [];
         tagStates = Object.fromEntries(
             tagOptions.map((option) => [option.value, "unset"]),
-        ) as Record<ClientSideTag | ClientSideHiddenTag, TriState>;
+        ) as Record<Tag | HiddenTag, TriState>;
         isMatchAnyTag = false;
         selectedSizes = [];
         searchText = "";

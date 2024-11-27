@@ -1,6 +1,6 @@
 <script lang="ts">
     import { Card } from "flowbite-svelte";
-    import type { ClientSideTierType } from "$lib/types";
+    import type { TierType } from "$lib/types";
     import { parseTooltipForRendering } from "$lib/utils/tooltipUtils";
 
     const {
@@ -8,7 +8,7 @@
         startingTier,
     }: {
         unifiedTooltips: string[];
-        startingTier: ClientSideTierType;
+        startingTier: TierType;
     } = $props();
 </script>
 

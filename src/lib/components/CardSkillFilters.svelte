@@ -5,9 +5,9 @@
     import { onMount } from "svelte";
     import { page } from "$app/stores";
     import type {
-        ClientSideHero,
-        ClientSideHiddenTag,
-        ClientSideTag,
+        Hero,
+        HiddenTag,
+        Tag,
         Option,
         TriState,
     } from "$lib/types";
@@ -31,9 +31,9 @@
         minimumTierOptions: Option[];
         tagOptions: Option[];
         canFilterEnchantments?: boolean;
-        heroStates: Record<ClientSideHero, TriState>;
+        heroStates: Record<Hero, TriState>;
         selectedTiers: string[];
-        tagStates: Record<ClientSideTag | ClientSideHiddenTag, TriState>;
+        tagStates: Record<Tag | HiddenTag, TriState>;
         isMatchAnyTag: boolean;
         isMatchAnyHero: boolean;
         searchText: string;
@@ -43,11 +43,11 @@
     function clearSearch() {
         heroStates = Object.fromEntries(
             heroOptions.map((option) => [option.value, "unset"]),
-        ) as Record<ClientSideHero, TriState>;
+        ) as Record<Hero, TriState>;
         selectedTiers = [];
         tagStates = Object.fromEntries(
             tagOptions.map((option) => [option.value, "unset"]),
-        ) as Record<ClientSideTag | ClientSideHiddenTag, TriState>;
+        ) as Record<Tag | HiddenTag, TriState>;
         isMatchAnyTag = false;
         isMatchAnyHero = false;
         searchText = "";

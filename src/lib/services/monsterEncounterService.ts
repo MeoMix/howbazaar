@@ -1,11 +1,11 @@
-import type { ParsedCardCombatEncounter, ParsedCardItem, ParsedCardSkill, ClientSideDayHours, ClientSideTierType, Monster, MonsterEncounterDay } from "$lib/types";
+import type { ParsedCombatEncounterCard, ParsedItemCard, ParsedSkillCard, ParsedDayHours, TierType, ParsedMonster, MonsterEncounterDay } from "$lib/types";
 
 export function getMonsterEncounterDays(
-    itemCards: ParsedCardItem[],
-    skillCards: ParsedCardSkill[],
-    combatEncounterCards: ParsedCardCombatEncounter[],
-    monsters: Monster[],
-    dayHours: ClientSideDayHours[]
+    itemCards: ParsedItemCard[],
+    skillCards: ParsedSkillCard[],
+    combatEncounterCards: ParsedCombatEncounterCard[],
+    monsters: ParsedMonster[],
+    dayHours: ParsedDayHours[]
 ): MonsterEncounterDay[] {
     let monsterEncounterDayHours = dayHours.filter(({ day, hour }) => day <= 10 && hour === 3);
 
@@ -104,7 +104,7 @@ export function getMonsterEncounterDays(
 }
 
 const tiers = ["Bronze", "Silver", "Gold", "Diamond", "Legendary"];
-function getValidTierType(itemTierType: ClientSideTierType, cardStartingTier: ClientSideTierType): ClientSideTierType {
+function getValidTierType(itemTierType: TierType, cardStartingTier: TierType): TierType {
     return tiers.indexOf(itemTierType) < tiers.indexOf(cardStartingTier)
         ? cardStartingTier
         : itemTierType;

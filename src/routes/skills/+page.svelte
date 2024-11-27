@@ -1,10 +1,10 @@
 <script lang="ts">
     import type {
-        ClientSideCardSkill,
-        ClientSideHero,
-        ClientSideHiddenTag,
-        ClientSideTag,
-        ClientSideTierType,
+        ClientSideSkillCard,
+        Hero,
+        HiddenTag,
+        Tag,
+        TierType,
         TriState,
     } from "$lib/types";
     import CardSkill from "$lib/components/CardSkill.svelte";
@@ -20,7 +20,7 @@
 
     let isLoading = $state(false);
     let hasError = $state(false);
-    let cardSkills = $state([] as ClientSideCardSkill[]);
+    let cardSkills = $state([] as ClientSideSkillCard[]);
     let version = $state(null as string | null);
 
     onMount(async () => {
@@ -35,7 +35,7 @@
         if (cardSkills.length === 0 || !version) {
             try {
                 isLoading = true;
-                const response = await fetchJson<ClientSideCardSkill[]>(
+                const response = await fetchJson<ClientSideSkillCard[]>(
                     "/api/skills",
                     data.version,
                 );
@@ -57,16 +57,16 @@
     let heroStates = $state(
         Object.fromEntries(
             data.heroOptions.map(({ value }) => [value, "unset"]),
-        ) as Record<ClientSideHero, TriState>,
+        ) as Record<Hero, TriState>,
     );
 
     let tagStates = $state(
         Object.fromEntries(
             data.tagOptions.map(({ value }) => [value, "unset"]),
-        ) as Record<ClientSideTag | ClientSideHiddenTag, TriState>,
+        ) as Record<Tag | HiddenTag, TriState>,
     );
 
-    let selectedTiers = $state([] as ClientSideTierType[]);
+    let selectedTiers = $state([] as TierType[]);
     let isMatchAnyTag = $state(false);
     let isMatchAnyHero = $state(false);
     let searchText = $state("");
@@ -109,7 +109,7 @@
     {#if isLoading}
         <div>Loading skills...</div>
     {:else}
-        {#snippet listItem(card: ClientSideCardSkill)}
+        {#snippet listItem(card: ClientSideSkillCard)}
             <CardSkill {card} />
         {/snippet}
 

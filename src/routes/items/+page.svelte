@@ -1,11 +1,11 @@
 <script lang="ts">
     import type {
-        ClientSideCardItem,
-        ClientSideHero,
-        ClientSideHiddenTag,
-        ClientSideSize,
-        ClientSideTag,
-        ClientSideTierType,
+        ClientSideItemCard,
+        Hero,
+        HiddenTag,
+        Size,
+        Tag,
+        TierType,
         TriState,
     } from "$lib/types";
     import CardItem from "$lib/components/CardItem.svelte";
@@ -21,7 +21,7 @@
 
     let isLoading = $state(false);
     let hasError = $state(false);
-    let cardItems = $state([] as ClientSideCardItem[]);
+    let cardItems = $state([] as ClientSideItemCard[]);
     let version = $state(null as string | null);
 
     onMount(async () => {
@@ -36,7 +36,7 @@
         if (cardItems.length === 0 || !version) {
             try {
                 isLoading = true;
-                const response = await fetchJson<ClientSideCardItem[]>(
+                const response = await fetchJson<ClientSideItemCard[]>(
                     "/api/items",
                     data.version,
                 );
@@ -55,17 +55,17 @@
         }
     });
 
-    let selectedHeroes = $state([] as ClientSideHero[]);
-    let selectedTiers = $state([] as ClientSideTierType[]);
+    let selectedHeroes = $state([] as Hero[]);
+    let selectedTiers = $state([] as TierType[]);
 
     let tagStates = $state(
         Object.fromEntries(
             data.tagOptions.map(({ value }) => [value, "unset"]),
-        ) as Record<ClientSideTag | ClientSideHiddenTag, TriState>,
+        ) as Record<Tag | HiddenTag, TriState>,
     );
 
     let isMatchAnyTag = $state(false);
-    let selectedSizes = $state([] as ClientSideSize[]);
+    let selectedSizes = $state([] as Size[]);
     let searchText = $state("");
     let isSearchNameOnly = $state(false);
     let isSearchEnchantments = $state(false);
@@ -108,7 +108,7 @@
     {#if isLoading}
         <div>Loading items...</div>
     {:else}
-        {#snippet listItem(card: ClientSideCardItem)}
+        {#snippet listItem(card: ClientSideItemCard)}
             <CardItem {card} />
         {/snippet}
 

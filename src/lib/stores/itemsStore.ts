@@ -1,4 +1,4 @@
-import type { ClientSideCardItem } from '$lib/types';
+import type { ClientSideItemCard } from '$lib/types';
 import { writable } from 'svelte/store';
 import { browser } from '$app/environment'; // Svelte-specific browser check
 
@@ -7,7 +7,7 @@ const LOCAL_STORAGE_KEY = 'itemsStore';
 
 type ItemsStoreData = {
     version: string | null;
-    items: ClientSideCardItem[];
+    items: ClientSideItemCard[];
 }
 
 // Load initial data from localStorage if in a browser environment
@@ -20,19 +20,19 @@ const initialData = browser
                 ? JSON.parse(storedData) as ItemsStoreData
                 : {
                     version: null as string | null,
-                    items: [] as ClientSideCardItem[],
+                    items: [] as ClientSideItemCard[],
                 };
         } catch (err) {
             console.error(`Error parsing localStorage key "${LOCAL_STORAGE_KEY}":`, err);
             return {
                 version: null as string | null,
-                items: [] as ClientSideCardItem[],
+                items: [] as ClientSideItemCard[],
             };
         }
     })()
     : {
         version: null as string | null,
-        items: [] as ClientSideCardItem[],
+        items: [] as ClientSideItemCard[],
     };
 
 // Create a writable store

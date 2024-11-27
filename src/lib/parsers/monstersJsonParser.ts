@@ -1,7 +1,8 @@
 
-import type { ClientSideEnchantmentType, Monster, MonstersJson } from "../types";
+import type { EnchantmentType, ParsedMonster } from "../types";
+import type { MonstersJson } from "./types.parser";
 
-export function parseJson(monstersJson: MonstersJson): Monster[] {
+export function parseJson(monstersJson: MonstersJson): ParsedMonster[] {
     const monsters = Object.values(monstersJson)
         .map(monster => {
             return {
@@ -13,7 +14,7 @@ export function parseJson(monstersJson: MonstersJson): Monster[] {
                     tierType: item.Tier,
                     socketId: item.SocketId!,
                     // TODO: Weird this isn't typed appropriately
-                    enchantmentType: (item.EnchantmentType as ClientSideEnchantmentType) ?? undefined
+                    enchantmentType: (item.EnchantmentType as EnchantmentType) ?? undefined
                 })),
                 skills: monster.Player.Skills.map(skill => ({
                     templateId: skill.TemplateId,

@@ -6,7 +6,7 @@ import dayHoursJson from '../src/lib/parsers/v2_DayHours.json';
 import { parseJson as parseCardsJson } from '../src/lib/parsers/cardsJsonParser.ts';
 import { parseJson as parseMonstersJson } from '../src/lib/parsers/monstersJsonParser.ts';
 import { parseJson as parseDayHoursJson } from '../src/lib/parsers/dayHoursJsonParser.ts';
-import type { CardsJson, DayHoursJson, MonstersJson } from '../src/lib/types.ts';
+import type { CardsJson, DayHoursJson, MonstersJson } from '../src/lib/parsers/types.parser.d.ts';
 
 async function preprocessData() {
     try {
@@ -20,13 +20,11 @@ async function preprocessData() {
         const processedDayHours = parseDayHoursJson(dayHoursJson as DayHoursJson);
 
         // Write processed cards data to disk
-        writeTypeScriptDefaultExport('processedItemCards', itemCards, 'ParsedCardItem');
-        writeTypeScriptDefaultExport('processedSkillCards', skillCards, 'ParsedCardSkill');
-        writeTypeScriptDefaultExport('processedCombatEncounterCards', combatEncounterCards, 'ParsedCardCombatEncounter');
-        // TODO: rename to ParsedMonster
-        writeTypeScriptDefaultExport('processedMonsters', processedMonsters, 'Monster');
-        // TODO: rename to ParsedDayHours
-        writeTypeScriptDefaultExport('processedDayHours', processedDayHours, 'ClientSideDayHours');
+        writeTypeScriptDefaultExport('processedItemCards', itemCards, 'ParsedItemCard');
+        writeTypeScriptDefaultExport('processedSkillCards', skillCards, 'ParsedSkillCard');
+        writeTypeScriptDefaultExport('processedCombatEncounterCards', combatEncounterCards, 'ParsedCombatEncounterCard');
+        writeTypeScriptDefaultExport('processedMonsters', processedMonsters, 'ParsedMonster');
+        writeTypeScriptDefaultExport('processedDayHours', processedDayHours, 'ParsedDayHours');
     } catch (error) {
         console.error('Error processing data:', error);
         process.exit(1);

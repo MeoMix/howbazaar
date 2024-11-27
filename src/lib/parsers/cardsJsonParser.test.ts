@@ -1,11 +1,12 @@
 import { describe, it, expect, beforeAll } from 'vitest';
 import { parseJson } from './cardsJsonParser';
 import cardsJson from "./v2_Cards.json" assert { type: "json" };
-import type { CardsJson, ParsedCardItem, ParsedCardSkill } from '$lib/types';
+import type { ParsedItemCard, ParsedSkillCard } from '$lib/types';
+import type { CardsJson } from './types.parser';
 
 describe('cardJsonParser', () => {
-  let itemCards: ParsedCardItem[];
-  let skillCards: ParsedCardSkill[];
+  let itemCards: ParsedItemCard[];
+  let skillCards: ParsedSkillCard[];
 
   beforeAll(() => {
     const parsedJson = parseJson(cardsJson as CardsJson);

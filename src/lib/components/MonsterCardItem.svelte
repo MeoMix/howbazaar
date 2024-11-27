@@ -1,8 +1,8 @@
 <script lang="ts">
     import type {
-        ClientSideCardItem,
-        ClientSideTierType,
-        ClientSideEnchantmentType,
+        ClientSideItemCard,
+        TierType,
+        EnchantmentType,
     } from "$lib/types";
     import { filterTags } from "$lib/utils/filterUtils";
     import { Card } from "flowbite-svelte";
@@ -14,9 +14,9 @@
         tierType,
         enchantmentName,
     }: {
-        card: ClientSideCardItem;
-        tierType: ClientSideTierType;
-        enchantmentName: ClientSideEnchantmentType | undefined;
+        card: ClientSideItemCard;
+        tierType: TierType;
+        enchantmentName: EnchantmentType | undefined;
     } = $props();
 
     const enchantment = $derived(

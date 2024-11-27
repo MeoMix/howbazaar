@@ -1,8 +1,8 @@
 // Auto-generated file. Do not edit directly.
 // TypeScript representation of processed data.
-import type { ParsedCardSkill } from '$lib/types';
+import type { ParsedSkillCard } from '$lib/types';
 
-const data: ParsedCardSkill[] = [
+const data: ParsedSkillCard[] = [
   {
     "id": "b1b9ff21-32ac-436a-bd3c-120563b26bea",
     "name": "Third Degree Burns",

@@ -1,30 +1,21 @@
-import type { V2CardsD as Card, Hero, HiddenTag, Size, Tag, Tier as TierType } from "$lib/parsers/v2_Cards";
-import type { The04747408_De0E4944_B79D23_Ca41008619 as JsonMonsterType } from "$lib/parsers/v2_Monsters";
-import type { V2DayHoursD as DayHour } from "$lib/parsers/v2_DayHours";
+export type EnchantmentType = 'Heavy' | 'Icy' | 'Turbo' | 'Shielded' | 'Restorative' | 'Toxic' | 'Fiery' | 'Shiny' | 'Deadly' | 'Radiant' | 'Obsidian' | 'Golden';
+export type Hero = "Pygmalien" | "Vanessa" | "Stelle" | "Jules" | "Dooley" | "Mak" | "Common";
+export type TierType = "Silver" | "Diamond" | "Bronze" | "Gold" | "Legendary";
+export type Size = "Small" | "Medium" | "Large";
+export type Tag = "Merchant" | "Weapon" | "Shield" | "Heal" | "Joy" | "Burn" | "Poison" | "Core" | "Property" | "Aquatic" | "Friend" | "Freeze" | "Potion" | "Vehicle" | "Tool" | "Food" | "Slow" | "Haste" | "Damage" | "Unsellable";
+export type HiddenTag = "Crit" | "EconomyReference" | "Damage" | "Cooldown" | "Heal" | "Active" | "Value" | "BurnReference" | "Slow" | "DamageReference" | "Shield" | "Passive" | "NonWeapon" | "FreezeReference" | "Freeze" | "CritReference" | "Gold" | "Burn" | "Toughness" | "Multicast" | "Haste" | "HealReference" | "ShieldReference" | "HasteReference" | "Poison" | "Ammo" | "JoyReference" | "Regen" | "PoisonReference" | "Health" | "Joy" | "Income" | "HealthReference" | "Charge" | "SlowReference" | "Lifesteal" | "AmmoReference" | "Experience" | "CooldownReference" | "RegenReference";
 
-export type CardsJson = { [key: string]: Card };
-export type MonstersJson = { [key: string]: JsonMonsterType };
-export type DayHoursJson = { [key: string]: DayHour };
-
-export type ClientSideTier = {
+type ClientSideTier = {
     tooltips: string[];
 };
-
-export type ClientSideEnchantmentType = 'Heavy' | 'Icy' | 'Turbo' | 'Shielded' | 'Restorative' | 'Toxic' | 'Fiery' | 'Shiny' | 'Deadly' | 'Radiant' | 'Obsidian' | 'Golden';
 
 type ClientSideEnchantment = {
-    name: ClientSideEnchantmentType;
+    name: EnchantmentType;
     tooltips: string[];
 };
 
-export type ClientSideHero = Hero;
-export type ClientSideTierType = TierType;
-export type ClientSideSize = Size;
-export type ClientSideTag = Tag;
-export type ClientSideHiddenTag = HiddenTag;
-
 // TODO: Fix naming
-export type ParsedCardItem = {
+export type ParsedItemCard = {
     id: string;
     name: string;
     startingTier: TierType;
@@ -39,21 +30,21 @@ export type ParsedCardItem = {
     unifiedTooltips: string[];
 };
 
-export type ClientSideCardItem = {
+export type ClientSideItemCard = {
     id: string;
     name: string;
-    startingTier: ClientSideTierType;
-    tiers: { [key in ClientSideTierType]: ClientSideTier };
-    tags: ClientSideTag[];
-    hiddenTags: ClientSideHiddenTag[];
-    size: ClientSideSize;
-    heroes: ClientSideHero[];
+    startingTier: TierType;
+    tiers: { [key in TierType]: ClientSideTier };
+    tags: Tag[];
+    hiddenTags: HiddenTag[];
+    size: Size;
+    heroes: Hero[];
     enchantments: ClientSideEnchantment[];
     unifiedTooltips: string[];
     combatEncounters: ClientSideCombatEncounterSummary[];
 };
 
-export type ParsedCardSkill = {
+export type ParsedSkillCard = {
     id: string;
     name: string;
     startingTier: TierType;
@@ -68,15 +59,15 @@ export type ParsedCardSkill = {
     unifiedTooltips: string[];
 };
 
-export type ClientSideCardSkill = {
+export type ClientSideSkillCard = {
     id: string;
     name: string;
-    startingTier: ClientSideTierType;
-    tiers: { [key in ClientSideTierType]: ClientSideTier };
-    tags: ClientSideTag[];
-    hiddenTags: ClientSideHiddenTag[];
-    size: ClientSideSize;
-    heroes: ClientSideHero[];
+    startingTier: TierType;
+    tiers: { [key in TierType]: ClientSideTier };
+    tags: Tag[];
+    hiddenTags: HiddenTag[];
+    size: Size;
+    heroes: Hero[];
     unifiedTooltips: string[];
     combatEncounters: ClientSideCombatEncounterSummary[];
 };
@@ -86,14 +77,14 @@ export type ClientSideCombatEncounterSummary = {
     cardName: string;
 }
 
-export type ParsedCardCombatEncounter = {
+export type ParsedCombatEncounterCard = {
     id: string;
     // TODO: this could be more tightly typed
     name: string;
     monsterTemplateId: string;
 };
 
-export type Monster = {
+export type ParsedMonster = {
     id: string;
     level: number;
     health: number;
@@ -102,7 +93,7 @@ export type Monster = {
         tierType: TierType;
         // TODO: ideally this property wouldn't be sent client side as it's not needed
         socketId: string;
-        enchantmentType?: ClientSideEnchantmentType;
+        enchantmentType?: EnchantmentType;
     }[];
     skills: {
         templateId: string;
@@ -110,7 +101,7 @@ export type Monster = {
     }[];
 }
 
-export type ClientSideDayHours = {
+export type ParsedDayHours = {
     day: number;
     hour: number;
     spawnGroups: {
@@ -120,14 +111,14 @@ export type ClientSideDayHours = {
 };
 
 type MonsterEncounterItem = {
-    card: ClientSideCardItem;
-    tierType: ClientSideTierType;
-    enchantmentType: ClientSideEnchantmentType | undefined;
+    card: ClientSideItemCard;
+    tierType: TierType;
+    enchantmentType: EnchantmentType | undefined;
 };
 
 type MonsterEncounterSkill = {
-    card: ClientSideCardSkill;
-    tierType: ClientSideTierType;
+    card: ClientSideSkillCard;
+    tierType: TierType;
 };
 
 export type MonsterEncounter = {
@@ -152,12 +143,12 @@ export type Option = {
 export type TriState = "on" | "off" | "unset";
 
 export type ItemsApiResponse = {
-    data: ClientSideCardItem[];
+    data: ClientSideItemCard[];
     version: string;
 }
 
 export type SkillsApiResponse = {
-    data: ClientSideCardSkill[];
+    data: ClientSideSkillCard[];
     version: string;
 }
 

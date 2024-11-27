@@ -1,16 +1,15 @@
-import type { ParsedCardItem, ParsedCardSkill, ParsedCardCombatEncounter, Monster, ClientSideDayHours, ClientSideCardSkill } from "$lib/types";
+import type { ParsedItemCard, ParsedSkillCard, ParsedCombatEncounterCard, ParsedMonster, ParsedDayHours, ClientSideSkillCard } from "$lib/types";
 import { getMonsterEncounterDays } from "./monsterEncounterService";
 
-// TODO: This shouldn't be Clien
 // TODO: This shouldn't be ClientSideCardSkill[]
 export function getSkills(
-    skillCards: ParsedCardSkill[],
-    itemCards: ParsedCardItem[],
+    skillCards: ParsedSkillCard[],
+    itemCards: ParsedItemCard[],
     // TODO: DI would be nice 
-    combatEncounterCards: ParsedCardCombatEncounter[],
-    monsters: Monster[],
-    dayHours: ClientSideDayHours[]
-): ClientSideCardSkill[] {
+    combatEncounterCards: ParsedCombatEncounterCard[],
+    monsters: ParsedMonster[],
+    dayHours: ParsedDayHours[]
+): ClientSideSkillCard[] {
     const monsterEncounterDays = getMonsterEncounterDays(itemCards, skillCards, combatEncounterCards, monsters, dayHours);
 
     const mappedSkillCards = skillCards.map(skillCard => {

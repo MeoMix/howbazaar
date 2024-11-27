@@ -1,5 +1,5 @@
 <script lang="ts">
-    import type { ClientSideCardSkill, ClientSideTierType } from "$lib/types";
+    import type { ClientSideSkillCard, TierType } from "$lib/types";
     import { Card } from "flowbite-svelte";
     import CardBadges from "./CardBadges.svelte";
     import { filterTags } from "$lib/utils/filterUtils";
@@ -8,7 +8,7 @@
     const {
         card,
         tierType,
-    }: { card: ClientSideCardSkill; tierType: ClientSideTierType } = $props();
+    }: { card: ClientSideSkillCard; tierType: TierType } = $props();
 
     const tags = $derived(filterTags(card.tags, card.hiddenTags));
 </script>

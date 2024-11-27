@@ -1,8 +1,8 @@
 // Auto-generated file. Do not edit directly.
 // TypeScript representation of processed data.
-import type { ParsedCardItem } from '$lib/types';
+import type { ParsedItemCard } from '$lib/types';
 
-const data: ParsedCardItem[] = [
+const data: ParsedItemCard[] = [
   {
     "id": "aaf1216d-69b6-406e-98af-6a9bec12c8b4",
     "name": "Magnifying Glass",

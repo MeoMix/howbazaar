@@ -1,11 +1,11 @@
-import type { ClientSideCardItem, ClientSideCardSkill, ClientSideHero, ClientSideHiddenTag, ClientSideSize, ClientSideTag, ClientSideTierType, TriState } from "$lib/types";
+import type { ClientSideItemCard, ClientSideSkillCard, Hero, HiddenTag, Size, Tag, TierType, TriState } from "$lib/types";
 import type { Entries } from "type-fest";
 
 const heroes = ["Vanessa", "Pygmalien", "Dooley", "Jules", "Stelle", "Mak", "Common"] as const;
 const tierTypes = ["Bronze", "Silver", "Gold", "Diamond", "Legendary"] as const;
 const sizes = ["Small", "Medium", "Large"];
 
-export function getCardFilterOptions(cards: (ClientSideCardItem | ClientSideCardSkill)[]) {
+export function getCardFilterOptions(cards: (ClientSideItemCard | ClientSideSkillCard)[]) {
     const heroOptions = heroes.map(hero => ({ name: hero, value: hero }));
     const minimumTierOptions = tierTypes.map(minimumTier => ({ name: minimumTier, value: minimumTier }));
     const sizeOptions = sizes.map(size => ({ name: size, value: size }));
@@ -21,13 +21,13 @@ export function getCardFilterOptions(cards: (ClientSideCardItem | ClientSideCard
     };
 }
 
-function matchesHero(cardHeroes: ClientSideHero[], selectedHeroes: ClientSideHero[]): boolean {
+function matchesHero(cardHeroes: Hero[], selectedHeroes: Hero[]): boolean {
     return selectedHeroes.length === 0 || selectedHeroes.some(hero => cardHeroes.includes(hero));
 }
 
 function matchesHeroState(
-    cardHeroes: ClientSideHero[],
-    heroStates: Record<ClientSideHero, TriState>,
+    cardHeroes: Hero[],
+    heroStates: Record<Hero, TriState>,
     isMatchAnyHero: boolean
 ): boolean {
     const heroEntries = Object.entries(heroStates);
@@ -53,14 +53,14 @@ function matchesHeroState(
     });
 }
 
-function matchesTier(cardTier: ClientSideTierType, selectedTiers: ClientSideTierType[]): boolean {
+function matchesTier(cardTier: TierType, selectedTiers: TierType[]): boolean {
     return selectedTiers.length === 0 || selectedTiers.includes(cardTier);
 }
 
 function matchesTagState(
     cardTags: string[],
     cardHiddenTags: string[],
-    tagStates: Record<ClientSideTag | ClientSideHiddenTag, TriState>,
+    tagStates: Record<Tag | HiddenTag, TriState>,
     isMatchAnyTag: boolean
 ): boolean {
     const tagEntries = Object.entries(tagStates);
@@ -89,7 +89,7 @@ function matchesTagState(
 }
 
 function matchesSearchText(
-    card: ClientSideCardItem | ClientSideCardSkill,
+    card: ClientSideItemCard | ClientSideSkillCard,
     lowerSearchText: string,
     isSearchNameOnly: boolean,
     isSearchEnchantments: boolean
@@ -161,16 +161,16 @@ function matchesSearchText(
 }
 
 export function filterItemCards(
-    cards: ClientSideCardItem[],
-    selectedHeroes: ClientSideHero[],
-    selectedTiers: ClientSideTierType[],
-    tagStates: Record<ClientSideTag | ClientSideHiddenTag, TriState>,
-    selectedSizes: ClientSideSize[],
+    cards: ClientSideItemCard[],
+    selectedHeroes: Hero[],
+    selectedTiers: TierType[],
+    tagStates: Record<Tag | HiddenTag, TriState>,
+    selectedSizes: Size[],
     searchText: string,
     isSearchNameOnly: boolean,
     isSearchEnchantments: boolean,
     isMatchAnyTag: boolean
-): ClientSideCardItem[] {
+): ClientSideItemCard[] {
     const lowerSearchText = searchText.toLowerCase();
 
     // Apply all filters (except search text) first
@@ -198,15 +198,15 @@ export function filterItemCards(
 }
 
 export function filterSkillCards(
-    cards: ClientSideCardSkill[],
-    heroStates: Record<ClientSideHero, TriState>,
-    selectedTiers: ClientSideTierType[],
-    tagStates: Record<ClientSideTag | ClientSideHiddenTag, TriState>,
+    cards: ClientSideSkillCard[],
+    heroStates: Record<Hero, TriState>,
+    selectedTiers: TierType[],
+    tagStates: Record<Tag | HiddenTag, TriState>,
     searchText: string,
     isSearchNameOnly: boolean,
     isMatchAnyTag: boolean,
     isMatchAnyHero: boolean
-): ClientSideCardSkill[] {
+): ClientSideSkillCard[] {
     const lowerSearchText = searchText.toLowerCase();
 
     // Apply all filters (except search text) first
@@ -236,7 +236,7 @@ export function filterSkillCards(
 // The underlying game implementation needs to keep the two types of tags distinct, though.
 // Sometimes there's duplicates (i.e. Slow vs SlowReference) and other times there aren't (i.e. EconomyReference)
 // So, drop Reference, but then ensure the list is distinct.
-export function filterTags(tags: ClientSideTag[], hiddenTags: ClientSideHiddenTag[]) {
+export function filterTags(tags: Tag[], hiddenTags: HiddenTag[]) {
     // TODO: tighten types here?
     return Array.from(
         new Set([...tags, ...hiddenTags].map(tag => tag.replace('Reference', '')))
