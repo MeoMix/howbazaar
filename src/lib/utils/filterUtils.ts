@@ -144,7 +144,7 @@ function matchesSearchText(
         tier.tooltips.some(tooltip => hybridMatch(tooltip, lowerSearchText))
     );
 
-    const hybridMatchEnchantments = isSearchEnchantments && card.enchantments?.some(e =>
+    const hybridMatchEnchantments = isSearchEnchantments && ('enchantments' in card) && card.enchantments.some(e =>
         hybridMatch(e.name, lowerSearchText) ||
         e.tooltips.some(tip => hybridMatch(tip, lowerSearchText))
     );

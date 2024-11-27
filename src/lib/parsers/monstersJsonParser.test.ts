@@ -1,6 +1,6 @@
 import { describe, it, expect, beforeAll } from 'vitest';
 import { parseJson } from './monstersJsonParser';
-import monstersJson from "$lib/v2_Monsters.json" assert { type: "json" };
+import monstersJson from "./v2_Monsters.json" assert { type: "json" };
 import type { Monster, MonstersJson } from '$lib/types';
 
 describe('monstersJsonParser', () => {

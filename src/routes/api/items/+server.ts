@@ -1,14 +1,18 @@
 import { json } from "@sveltejs/kit";
 import type { RequestHandler } from "@sveltejs/kit";
-import type { ClientSideCardItem, ItemsApiResponse } from "$lib/types";
+import type { ParsedCardItem, ItemsApiResponse, ParsedCardSkill, ParsedCardCombatEncounter, Monster, ClientSideDayHours } from "$lib/types";
 import { getHash } from "$lib/utils/dataUtils";
 import { getItems } from "$lib/services/itemService";
 import parsedItemCards from "$lib/processedItemCards.json" assert { type: "json" };
+import parsedSkillCards from "$lib/processedSkillCards.json" assert { type: "json" };
+import parsedCombatEncounterCards from "$lib/processedCombatEncounterCards.json" assert { type: "json" };
+import parsedMonsters from "$lib/processedMonsters.json" assert { type: "json" };
+import parsedDayHours from "$lib/processedDayHours.json" assert { type: "json" };
 
 let serverVersion: string | undefined;
 
 export const GET: RequestHandler = ({ url, request }) => {
-    const items = getItems(parsedItemCards as ClientSideCardItem[]);
+    const items = getItems(parsedItemCards as ParsedCardItem[], parsedSkillCards as ParsedCardSkill[], parsedCombatEncounterCards as ParsedCardCombatEncounter[], parsedMonsters as Monster[], parsedDayHours as ClientSideDayHours[]);
     serverVersion ??= getHash(items);
 
     // Check for requested version via query parameter

@@ -1,12 +1,12 @@
 <script lang="ts">
     import type { ClientSideCardSkill } from "$lib/types";
     import { copyCardLink } from "$lib/stores/clipboard";
-    import type { Entries } from "type-fest";
     import { Card } from "flowbite-svelte";
     import { filterTags } from "$lib/utils/filterUtils";
     import CardBadges from "./CardBadges.svelte";
     import UnifiedTooltips from "./UnifiedTooltips.svelte";
     import CardImage from "./CardImage.svelte";
+    import CardCombatEncounters from "./CardCombatEncounters.svelte";
 
     const { card }: { card: ClientSideCardSkill } = $props();
 
@@ -43,6 +43,10 @@
             ]}
             secondaryBadges={tags.map((text) => ({ text }))}
         />
+
+        {#if card.combatEncounters.length > 0}
+            <CardCombatEncounters combatEncounters={card.combatEncounters} />
+        {/if}
 
         <div
             class="h-[1px] my-4 bg-gradient-to-r from-transparent via-gray-200 dark:via-bazaar-orange to-transparent"

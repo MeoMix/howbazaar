@@ -1,9 +1,9 @@
-import type { ClientSideCardCombatEncounter, ClientSideCardItem, ClientSideCardSkill, ClientSideDayHours, ClientSideTierType, Monster, MonsterEncounterDay } from "$lib/types";
+import type { ParsedCardCombatEncounter, ParsedCardItem, ParsedCardSkill, ClientSideDayHours, ClientSideTierType, Monster, MonsterEncounterDay } from "$lib/types";
 
 export function getMonsterEncounterDays(
-    itemCards: ClientSideCardItem[],
-    skillCards: ClientSideCardSkill[],
-    combatEncounterCards: ClientSideCardCombatEncounter[],
+    itemCards: ParsedCardItem[],
+    skillCards: ParsedCardSkill[],
+    combatEncounterCards: ParsedCardCombatEncounter[],
     monsters: Monster[],
     dayHours: ClientSideDayHours[]
 ): MonsterEncounterDay[] {
@@ -50,14 +50,18 @@ export function getMonsterEncounterDays(
                         const tierType = getValidTierType(item.tierType, itemCard.startingTier);
 
                         return {
-                            card: itemCard,
+                            card: {
+                                ...itemCard,
+                                // TODO: Use a different type for card here
+                                combatEncounters: [],
+                            },
                             tierType,
                             enchantmentType: item.enchantmentType
                         };
                     }).filter(result => result !== null);
 
                     const skills = monster.skills.map(skill => {
-                        const skillCard = skillCards.find(card => card.id === skill.templateId) as ClientSideCardSkill | undefined;
+                        const skillCard = skillCards.find(card => card.id === skill.templateId) as ParsedCardSkill | undefined;
 
                         if (skillCard === undefined) {
                             console.log(`Failed to find card skill with id: ${skill.templateId}`);
@@ -68,7 +72,11 @@ export function getMonsterEncounterDays(
                         const tierType = getValidTierType(skill.tierType, skillCard.startingTier);
 
                         return {
-                            card: skillCard,
+                            card: {
+                                ...skillCard,
+                                // TODO: Use a different type for card here
+                                combatEncounters: [],
+                            },
                             tierType
                         };
                     }).filter(result => result !== null);

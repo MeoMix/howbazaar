@@ -2,8 +2,8 @@
 // I think I can generate a better typedef by interfacing with quicktype-core rather than the CLI
 // https://github.com/glideapps/quicktype?tab=readme-ov-file#calling-quicktype-from-javascript
 import type { Entries } from "type-fest";
-import type { CardsJson, ClientSideCard, ClientSideCardCombatEncounter, ClientSideCardItem, ClientSideCardSkill, ClientSideTier } from "$lib/types";
-import type { V2CardsD as Card, Bronze as Tier, Tiers, Tier as TierType, AbilityAction, AuraAction, Ability, Aura, Operation, TargetMode } from "$lib/v2_Cards";
+import type { CardsJson, ParsedCardCombatEncounter, ParsedCardItem, ParsedCardSkill, ClientSideTier } from "$lib/types";
+import type { V2CardsD as Card, Bronze as Tier, Tiers, Tier as TierType, AbilityAction, AuraAction, Ability, Aura, Operation, TargetMode } from "./v2_Cards";
 import { unifyTooltips } from "$lib/utils/tooltipUtils";
 
 // JSON contains testing data which isn't shown in game during normal operations
@@ -324,7 +324,7 @@ type ValidItemCard = Card & { Tiers: Tiers, Type: "Item", Localization: { Title:
 type ValidSkillCard = Card & { Tiers: Tiers, Type: "Skill", Localization: { Title: { Text: string } } };
 type ValidCombatEncounterCard = Card & { Type: "CombatEncounter", Localization: { Title: { Text: string } }, CombatantType: { MonsterTemplateId: string; } };
 
-function parseItemCards(cardsJson: CardsJson): ClientSideCardItem[] {
+function parseItemCards(cardsJson: CardsJson): ParsedCardItem[] {
     const isValidItemCard = (entry: Card): entry is ValidItemCard =>
         entry.Type === "Item" &&
         entry.SpawningEligibility !== "Never" &&
@@ -645,7 +645,7 @@ function parseItemCards(cardsJson: CardsJson): ClientSideCardItem[] {
     return cards;
 }
 
-function parseSkillCards(cardsJson: CardsJson): ClientSideCardSkill[] {
+function parseSkillCards(cardsJson: CardsJson): ParsedCardSkill[] {
     const isValidSkillCard = (entry: Card): entry is ValidSkillCard =>
         entry.Type === "Skill" &&
         entry.SpawningEligibility !== "Never" &&
@@ -741,8 +741,6 @@ function parseSkillCards(cardsJson: CardsJson): ClientSideCardSkill[] {
             tiers,
             tags: card.Tags,
             hiddenTags,
-            // TODO: remove
-            enchantments: [],
             size: card.Size,
             heroes: card.Heroes,
             artKey: card.ArtKey,
@@ -775,9 +773,9 @@ function parseCombatEncounterCards(cardsJson: CardsJson) {
 }
 
 export function parseJson(cardsJson: CardsJson): {
-    itemCards: ClientSideCardItem[],
-    skillCards: ClientSideCardSkill[],
-    combatEncounterCards: ClientSideCardCombatEncounter[],
+    itemCards: ParsedCardItem[],
+    skillCards: ParsedCardSkill[],
+    combatEncounterCards: ParsedCardCombatEncounter[],
 } {
     const itemCards = parseItemCards(cardsJson);
     const skillCards = parseSkillCards(cardsJson);

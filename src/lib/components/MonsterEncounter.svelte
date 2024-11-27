@@ -6,9 +6,11 @@
 
     const { monsterEncounter }: { monsterEncounter: MonsterEncounterType } =
         $props();
+
+    const id = $derived(monsterEncounter.cardName.replace(/\s+/g, "_"));
 </script>
 
-<div class="mt-8">
+<div class="mt-8" {id}>
     <div class="font-bold text-3xl mb-2">
         {monsterEncounter.cardName}
     </div>

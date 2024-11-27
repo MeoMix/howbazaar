@@ -1,10 +1,9 @@
 import * as fs from 'fs';
 import * as path from 'path';
 
-import cardsJson from '../src/lib/v2_Cards.json';
 import { deleteFiles } from './utils/fileUtils';
-import { parseJson as parseCardsJson } from '../src/lib/parsers/cardsJsonParser.ts';
-import type { CardsJson } from "../src/lib/types.ts";
+import parsedItemCards from "../src/lib/processedItemCards.json" assert { type: "json" };
+import type { ParsedCardItem } from "../src/lib/types.ts";
 import { removeSpecialCharacters } from './utils/stringUtils';
 import { checkAndResizeImages, convertImagesToAvif } from './utils/imageUtils';
 
@@ -145,8 +144,7 @@ async function processItemImages() {
   await deleteKnownUselessFiles();
 
   // Parse data
-  const parsedCards = parseCardsJson(cardsJson as CardsJson);
-  const itemCardNames = parsedCards.filter(card => card.type === "Item").map(item => removeSpecialCharacters(item.name));
+  const itemCardNames = (parsedItemCards as ParsedCardItem[]).map(item => removeSpecialCharacters(item.name));
 
   console.log('Cleaning file names');
   await cleanFileNames();

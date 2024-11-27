@@ -47,6 +47,24 @@
                 isLoading = false;
             }
         }
+
+        const hash = window.location.hash.slice(1);
+        if (hash) {
+            const combatEncounter = monsterEncounterDays
+                .flatMap((day) =>
+                    day.groups.flatMap((group) =>
+                        group.find(
+                            (encounter) =>
+                                encounter.cardName.replace(/\s+/g, "_") === hash,
+                        ),
+                    ),
+                )
+                .find(Boolean); // Ensure only a non-falsy value is returned
+
+            if (combatEncounter) {
+                selectedMonsterEncounter = combatEncounter;
+            }
+        }
     });
 
     let selectedDay = $state(undefined) as number | undefined;
@@ -95,7 +113,8 @@
                     <MonsterEncounterPreview
                         {monsterEncounter}
                         {toggleEncounter}
-                        isActive={selectedMonsterEncounter?.cardId === monsterEncounter.cardId}
+                        isActive={selectedMonsterEncounter?.cardId ===
+                            monsterEncounter.cardId}
                     />
                 {/each}
             {/each}

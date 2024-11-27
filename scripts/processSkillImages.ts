@@ -1,9 +1,8 @@
 import * as fs from 'fs/promises';
 import path from 'path';
 
-import cardsJson from '../src/lib/v2_Cards.json';
-import { parseJson as parseCardsJson } from '../src/lib/parsers/cardsJsonParser.ts';
-import type { CardsJson } from "../src/lib/types.ts";
+import parsedSkillCards from "../src/lib/processedSkillCards.json" assert { type: "json" };
+import type { ParsedCardSkill } from "../src/lib/types.ts";
 import { removeSpecialCharacters } from './utils/stringUtils.ts';
 import { deleteFiles } from './utils/fileUtils.ts';
 import { checkAndResizeImages, convertImagesToAvif } from './utils/imageUtils.ts';
@@ -25,8 +24,7 @@ const outputDirectory = './static/images/';
 
 // TODO: This seems to be appending (1) onto files in a failure scenario
 async function renameSkillImages() {
-    const parsedCards = parseCardsJson(cardsJson as CardsJson);
-    const skillCards = parsedCards.filter(card => card.type === "Skill");
+    const skillCards = parsedSkillCards as ParsedCardSkill[];
 
     // Collect skillArtEntries with artKey and corresponding name without spaces
     const skillArtEntries = skillCards.map(({ name, artKey }) => {

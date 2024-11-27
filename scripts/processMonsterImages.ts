@@ -1,14 +1,12 @@
 import fs from 'fs';
 import fsPromises from 'fs/promises';
 import path from 'path';
-
-import cardsJson from '../src/lib/v2_Cards.json';
-import monstersJson from '../src/lib/v2_Monsters.json';
-import dayHoursJson from '../src/lib/v2_DayHours.json';
-import { parseJson as parseCardsJson } from '../src/lib/parsers/cardsJsonParser';
-import { parseJson as parseMonstersJson } from '../src/lib/parsers/monstersJsonParser';
-import { parseJson as parseDayHoursJson } from '../src/lib/parsers/dayHoursJsonParser';
-import type { CardsJson, DayHoursJson, Monster, MonsterEncounterDay, MonstersJson } from "../src/lib/types";
+import parsedItemCards from "../src/lib/processedItemCards.json" assert { type: "json" };
+import parsedSkillCards from "../src/lib/processedSkillCards.json" assert { type: "json" };
+import parsedCombatEncounterCards from "../src/lib/processedCombatEncounterCards.json" assert { type: "json" };
+import parsedMonsters from "../src/lib/processedMonsters.json" assert { type: "json" };
+import parsedDayHours from "../src/lib/processedDayHours.json" assert { type: "json" };
+import type { ClientSideCardCombatEncounter, Monster, MonsterEncounterDay, ParsedCardItem, ParsedCardSkill } from "../src/lib/types";
 import { getMonsterEncounterDays } from "../src/lib/services/monsterEncounterService";
 import sharp from 'sharp';
 import { getSanitizedFileName, removeSpecialCharacters } from './utils/stringUtils';
@@ -55,14 +53,7 @@ const nameToFileMap: Record<string, string> = {
 };
 
 async function processMonsterImages() {
-    const {
-        itemCards,
-        skillCards,
-        combatEncounterCards,
-    } = parseCardsJson(cardsJson as CardsJson);
-    const parsedMonsters = parseMonstersJson(monstersJson as MonstersJson);
-    const parsedDayHours = parseDayHoursJson(dayHoursJson as DayHoursJson);
-    const monsterEncounterDays = getMonsterEncounterDays(itemCards, skillCards, combatEncounterCards, parsedMonsters as Monster[], parsedDayHours) as MonsterEncounterDay[];
+    const monsterEncounterDays = getMonsterEncounterDays(parsedItemCards as ParsedCardItem[], parsedSkillCards as ParsedCardSkill[], parsedCombatEncounterCards as ClientSideCardCombatEncounter[], parsedMonsters as Monster[], parsedDayHours) as MonsterEncounterDay[];
 
     const monsterEncounterNames = monsterEncounterDays.flatMap(({ groups }) =>
         groups.flatMap(group =>

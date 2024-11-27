@@ -1,32 +1,23 @@
 import { describe, it, expect, beforeAll } from 'vitest';
-import { parseJson as parseCardsJson } from '$lib/parsers/cardsJsonParser';
-import { parseJson as parseMonstersJson } from '$lib/parsers/monstersJsonParser';
-import { parseJson as parseDayHoursJson } from '$lib/parsers/dayHoursJsonParser';
-import cardsJson from "$lib/v2_Cards.json" assert { type: "json" };
-import monstersJson from "$lib/v2_Monsters.json" assert { type: "json" };
-import dayHoursJson from "$lib/v2_DayHours.json" assert { type: "json" };
-import type { CardsJson, ClientSideCardCombatEncounter, ClientSideCardItem, ClientSideCardSkill, Monster, MonsterEncounterDay, MonstersJson } from '$lib/types';
-import type { ClientSideDayHours, DayHoursJson } from '$lib/types';
+import parsedItemCards from "$lib/processedItemCards.json" assert { type: "json" };
+import parsedSkillCards from "$lib/processedSkillCards.json" assert { type: "json" };
+import parsedCombatEncounterCards from "$lib/processedCombatEncounterCards.json" assert { type: "json" };
+import parsedMonsters from "$lib/processedMonsters.json" assert { type: "json" };
+import parsedDayHours from "$lib/processedDayHours.json" assert { type: "json" };
+import type { ParsedCardCombatEncounter, ParsedCardItem, ParsedCardSkill, Monster, MonsterEncounterDay } from '$lib/types';
+import type { ClientSideDayHours } from '$lib/types';
 import { getMonsterEncounterDays } from './monsterEncounterService';
 
 describe('MonsterEncounterService', () => {
-    let itemCards: ClientSideCardItem[];
-    let skillCards: ClientSideCardSkill[];
-    let combatEncounterCards: ClientSideCardCombatEncounter[];
+    let itemCards = parsedItemCards as ParsedCardItem[];
+    let skillCards = parsedSkillCards as ParsedCardSkill[];
+    let combatEncounterCards = parsedCombatEncounterCards as ParsedCardCombatEncounter[];
+    let monsters = parsedMonsters as Monster[];
+    let dayHours = parsedDayHours as ClientSideDayHours[];
 
-    let monsters: Monster[];
-    let dayHours: ClientSideDayHours[];
     let monsterEncounterDays: MonsterEncounterDay[];
 
     beforeAll(() => {
-        const parsedCardsJson = parseCardsJson(cardsJson as CardsJson);
-        itemCards = parsedCardsJson.itemCards;
-        skillCards = parsedCardsJson.skillCards;
-        combatEncounterCards = parsedCardsJson.combatEncounterCards;
-
-        monsters = parseMonstersJson(monstersJson as MonstersJson);
-        dayHours = parseDayHoursJson(dayHoursJson as DayHoursJson);
-
         monsterEncounterDays = getMonsterEncounterDays(itemCards, skillCards, combatEncounterCards, monsters, dayHours);
     });
 

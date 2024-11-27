@@ -35,7 +35,6 @@
     "hiddenTags": [
       "BurnReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -81,7 +80,6 @@
     "hiddenTags": [
       "CritReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -133,7 +131,6 @@
       "HasteReference",
       "Freeze"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Dooley",
@@ -178,7 +175,6 @@
       "Vehicle"
     ],
     "hiddenTags": [],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -223,7 +219,6 @@
       "BurnReference",
       "Shield"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Dooley",
@@ -270,7 +265,6 @@
     "hiddenTags": [
       "Crit"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -318,7 +312,6 @@
       "BurnReference",
       "Crit"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -369,7 +362,6 @@
       "Crit",
       "NonWeapon"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -420,7 +412,6 @@
     "hiddenTags": [
       "Gold"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -463,7 +454,6 @@
       "ShieldReference",
       "Cooldown"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -506,7 +496,6 @@
       "Regen",
       "PoisonReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -553,7 +542,6 @@
     "hiddenTags": [
       "NonWeapon"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -596,7 +584,6 @@
     "hiddenTags": [
       "Freeze"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -639,7 +626,6 @@
       "PoisonReference",
       "CritReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -685,7 +671,6 @@
       "DamageReference",
       "CritReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -738,7 +723,6 @@
     "hiddenTags": [
       "DamageReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -788,7 +772,6 @@
     "hiddenTags": [
       "HealthReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -835,7 +818,6 @@
       "HealReference",
       "CritReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -880,7 +862,6 @@
       "BurnReference",
       "CritReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -926,7 +907,6 @@
     "hiddenTags": [
       "Crit"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -974,7 +954,6 @@
     "hiddenTags": [
       "BurnReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -1017,7 +996,6 @@
       "DamageReference",
       "Gold"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -1057,7 +1035,6 @@
     "hiddenTags": [
       "Cooldown"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -1108,7 +1085,6 @@
     "hiddenTags": [
       "DamageReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -1155,7 +1131,6 @@
     "hiddenTags": [
       "Poison"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Dooley",
@@ -1201,7 +1176,6 @@
     "hiddenTags": [
       "Burn"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Dooley",
@@ -1249,7 +1223,6 @@
     "hiddenTags": [
       "DamageReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -1296,7 +1269,6 @@
       "Haste",
       "BurnReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -1338,7 +1310,6 @@
     "hiddenTags": [
       "Crit"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -1381,7 +1352,6 @@
       "Shield",
       "EconomyReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -1427,7 +1397,6 @@
     "hiddenTags": [
       "Burn"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -1479,7 +1448,6 @@
     "hiddenTags": [
       "DamageReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -1525,7 +1493,6 @@
     "hiddenTags": [
       "Crit"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -1568,7 +1535,6 @@
       "Charge",
       "CritReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -1619,7 +1585,6 @@
     "hiddenTags": [
       "HealReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -1662,7 +1627,6 @@
     "hiddenTags": [
       "Haste"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -1707,7 +1671,6 @@
       "Freeze",
       "HealthReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -1749,7 +1712,6 @@
     "hiddenTags": [
       "DamageReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -1797,7 +1759,6 @@
     "hiddenTags": [
       "Ammo"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -1839,7 +1800,6 @@
     "hiddenTags": [
       "Health"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -1893,7 +1853,6 @@
       "BurnReference",
       "DamageReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -1936,7 +1895,6 @@
       "SlowReference",
       "Crit"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -1986,7 +1944,6 @@
       "SlowReference",
       "Freeze"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Dooley",
@@ -2035,7 +1992,6 @@
     "hiddenTags": [
       "Health"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -2075,7 +2031,6 @@
     "hiddenTags": [
       "Value"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -2118,7 +2073,6 @@
       "BurnReference",
       "Shield"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Dooley",
@@ -2163,7 +2117,6 @@
     "hiddenTags": [
       "Value"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -2210,7 +2163,6 @@
       "Regen",
       "PoisonReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -2259,7 +2211,6 @@
       "DamageReference",
       "SlowReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [],
     "artKey": "Icon_Skill_MON_Trained.png",
@@ -2303,7 +2254,6 @@
     "hiddenTags": [
       "ShieldReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -2351,7 +2301,6 @@
       "Ammo",
       "DamageReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -2395,7 +2344,6 @@
     "hiddenTags": [
       "Haste"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -2440,7 +2388,6 @@
     "hiddenTags": [
       "Regen"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Stelle",
@@ -2487,7 +2434,6 @@
     "hiddenTags": [
       "Slow"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -2532,7 +2478,6 @@
       "Lifesteal",
       "Crit"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -2581,7 +2526,6 @@
       "Shield",
       "HealthReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -2623,7 +2567,6 @@
     "hiddenTags": [
       "Crit"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -2670,7 +2613,6 @@
     "hiddenTags": [
       "Crit"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -2714,7 +2656,6 @@
     "hiddenTags": [
       "ShieldReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -2762,7 +2703,6 @@
     "hiddenTags": [
       "Regen"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -2805,7 +2745,6 @@
     "hiddenTags": [
       "Slow"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Dooley",
@@ -2853,7 +2792,6 @@
     "hiddenTags": [
       "PoisonReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -2899,7 +2837,6 @@
     "hiddenTags": [
       "DamageReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -2943,7 +2880,6 @@
     "hiddenTags": [
       "DamageReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -2986,7 +2922,6 @@
     },
     "tags": [],
     "hiddenTags": [],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -3031,7 +2966,6 @@
       "DamageReference",
       "ShieldReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -3071,7 +3005,6 @@
     },
     "tags": [],
     "hiddenTags": [],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Dooley",
@@ -3113,7 +3046,6 @@
       "Regen",
       "BurnReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Dooley",
@@ -3154,7 +3086,6 @@
       "Friend"
     ],
     "hiddenTags": [],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -3200,7 +3131,6 @@
     "hiddenTags": [
       "PoisonReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -3245,7 +3175,6 @@
       "Burn",
       "Ammo"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -3292,7 +3221,6 @@
     "hiddenTags": [
       "Poison"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -3342,7 +3270,6 @@
     "hiddenTags": [
       "DamageReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Jules",
@@ -3389,7 +3316,6 @@
     "hiddenTags": [
       "Cooldown"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -3433,7 +3359,6 @@
     "hiddenTags": [
       "Regen"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -3478,7 +3403,6 @@
       "DamageReference",
       "EconomyReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -3522,7 +3446,6 @@
     "hiddenTags": [
       "Haste"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -3569,7 +3492,6 @@
       "Crit",
       "AmmoReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -3613,7 +3535,6 @@
     "hiddenTags": [
       "Poison"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -3655,7 +3576,6 @@
     "hiddenTags": [
       "Haste"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Dooley",
@@ -3699,7 +3619,6 @@
     "hiddenTags": [
       "DamageReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -3746,7 +3665,6 @@
       "PoisonReference",
       "Freeze"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Dooley",
@@ -3793,7 +3711,6 @@
       "CritReference",
       "Haste"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -3837,7 +3754,6 @@
     "hiddenTags": [
       "Haste"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Dooley",
@@ -3884,7 +3800,6 @@
     "hiddenTags": [
       "DamageReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -3929,7 +3844,6 @@
       "Poison",
       "HealReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -3970,7 +3884,6 @@
       "SlowReference",
       "CooldownReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -4016,7 +3929,6 @@
     "hiddenTags": [
       "Gold"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -4062,7 +3974,6 @@
     "hiddenTags": [
       "ShieldReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -4110,7 +4021,6 @@
     "hiddenTags": [
       "ShieldReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -4160,7 +4070,6 @@
     "hiddenTags": [
       "Poison"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -4205,7 +4114,6 @@
     "hiddenTags": [
       "Crit"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -4249,7 +4157,6 @@
     },
     "tags": [],
     "hiddenTags": [],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -4295,7 +4202,6 @@
     "hiddenTags": [
       "ShieldReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -4339,7 +4245,6 @@
     },
     "tags": [],
     "hiddenTags": [],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -4381,7 +4286,6 @@
     "hiddenTags": [
       "Health"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -4423,7 +4327,6 @@
     "hiddenTags": [
       "Freeze"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -4470,7 +4373,6 @@
       "FreezeReference",
       "DamageReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -4512,7 +4414,6 @@
       "Property"
     ],
     "hiddenTags": [],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -4558,7 +4459,6 @@
     "hiddenTags": [
       "HealthReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -4604,7 +4504,6 @@
       "Haste",
       "BurnReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -4646,7 +4545,6 @@
     "hiddenTags": [
       "Burn"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Dooley",
@@ -4690,7 +4588,6 @@
       "DamageReference",
       "CooldownReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -4732,7 +4629,6 @@
     "hiddenTags": [
       "Lifesteal"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -4779,7 +4675,6 @@
     "hiddenTags": [
       "ShieldReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -4825,7 +4720,6 @@
       "Cooldown",
       "SlowReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -4871,7 +4765,6 @@
       "DamageReference",
       "EconomyReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -4919,7 +4812,6 @@
     "hiddenTags": [
       "DamageReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Jules",
@@ -4958,7 +4850,6 @@
     },
     "tags": [],
     "hiddenTags": [],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Stelle"
@@ -5002,7 +4893,6 @@
     "hiddenTags": [
       "PoisonReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -5048,7 +4938,6 @@
     "hiddenTags": [
       "Freeze"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Jules",
@@ -5093,7 +4982,6 @@
       "DamageReference",
       "PoisonReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -5137,7 +5025,6 @@
       "Freeze",
       "NonWeapon"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -5183,7 +5070,6 @@
     "hiddenTags": [
       "PoisonReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Mak"
@@ -5232,7 +5118,6 @@
       "PoisonReference",
       "BurnReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -5283,7 +5168,6 @@
     "hiddenTags": [
       "DamageReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Jules",
@@ -5332,7 +5216,6 @@
     "hiddenTags": [
       "ShieldReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -5377,7 +5260,6 @@
       "BurnReference",
       "RegenReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -5419,7 +5301,6 @@
     "hiddenTags": [
       "Heal"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -5462,7 +5343,6 @@
     "hiddenTags": [
       "Value"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -5507,7 +5387,6 @@
       "FreezeReference",
       "DamageReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -5550,7 +5429,6 @@
     },
     "tags": [],
     "hiddenTags": [],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -5597,7 +5475,6 @@
     "hiddenTags": [
       "Crit"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -5641,7 +5518,6 @@
       "BurnReference",
       "ShieldReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -5684,7 +5560,6 @@
       "HealReference",
       "Crit"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -5729,7 +5604,6 @@
     "hiddenTags": [
       "Health"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -5778,7 +5652,6 @@
     "hiddenTags": [
       "Crit"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -5830,7 +5703,6 @@
       "ShieldReference",
       "DamageReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -5877,7 +5749,6 @@
     "hiddenTags": [
       "Crit"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -5922,7 +5793,6 @@
       "Burn",
       "PoisonReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -5965,7 +5835,6 @@
     "hiddenTags": [
       "Health"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -6006,7 +5875,6 @@
       "Tool"
     ],
     "hiddenTags": [],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -6058,7 +5926,6 @@
       "Damage",
       "EconomyReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -6102,7 +5969,6 @@
     "hiddenTags": [
       "Haste"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -6146,7 +6012,6 @@
     "hiddenTags": [
       "Cooldown"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -6197,7 +6062,6 @@
       "Health",
       "EconomyReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -6246,7 +6110,6 @@
     "hiddenTags": [
       "DamageReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Jules",
@@ -6293,7 +6156,6 @@
     "hiddenTags": [
       "DamageReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -6334,7 +6196,6 @@
     },
     "tags": [],
     "hiddenTags": [],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -6382,7 +6243,6 @@
     "hiddenTags": [
       "Freeze"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -6429,7 +6289,6 @@
     "hiddenTags": [
       "ShieldReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -6477,7 +6336,6 @@
     "hiddenTags": [
       "DamageReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Jules",
@@ -6525,7 +6383,6 @@
       "Shield",
       "FreezeReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -6571,7 +6428,6 @@
       "Burn",
       "NonWeapon"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -6613,7 +6469,6 @@
       "HealReference",
       "Shield"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -6655,7 +6510,6 @@
     "hiddenTags": [
       "Lifesteal"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -6701,7 +6555,6 @@
     "hiddenTags": [
       "Crit"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -6747,7 +6600,6 @@
       "BurnReference",
       "Haste"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -6796,7 +6648,6 @@
     "hiddenTags": [
       "Crit"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -6846,7 +6697,6 @@
       "Shield",
       "HealthReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -6886,7 +6736,6 @@
     "hiddenTags": [
       "Burn"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -6933,7 +6782,6 @@
     "hiddenTags": [
       "DamageReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -6976,7 +6824,6 @@
       "Slow",
       "NonWeapon"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -7022,7 +6869,6 @@
     "hiddenTags": [
       "BurnReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -7072,7 +6918,6 @@
     "hiddenTags": [
       "ShieldReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Stelle",
@@ -7119,7 +6964,6 @@
       "Regen",
       "AmmoReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -7165,7 +7009,6 @@
     "hiddenTags": [
       "HealReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -7208,7 +7051,6 @@
     "hiddenTags": [
       "Haste"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -7250,7 +7092,6 @@
     "hiddenTags": [
       "Burn"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -7294,7 +7135,6 @@
     "hiddenTags": [
       "Crit"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -7342,7 +7182,6 @@
     "hiddenTags": [
       "Heal"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -7384,7 +7223,6 @@
     "hiddenTags": [
       "Slow"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -7429,7 +7267,6 @@
       "Haste",
       "FreezeReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Dooley",
@@ -7476,7 +7313,6 @@
       "FreezeReference",
       "Slow"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -7522,7 +7358,6 @@
     "hiddenTags": [
       "BurnReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -7568,7 +7403,6 @@
     "hiddenTags": [
       "Shield"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -7614,7 +7448,6 @@
     "hiddenTags": [
       "Haste"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -7658,7 +7491,6 @@
     "hiddenTags": [
       "Burn"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -7703,7 +7535,6 @@
     "hiddenTags": [
       "Cooldown"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -7751,7 +7582,6 @@
     "hiddenTags": [
       "HealReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -7794,7 +7624,6 @@
     "hiddenTags": [
       "Damage"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -7843,7 +7672,6 @@
     "hiddenTags": [
       "Haste"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -7887,7 +7715,6 @@
     "hiddenTags": [
       "Haste"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -7936,7 +7763,6 @@
     "hiddenTags": [
       "DamageReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -7980,7 +7806,6 @@
     "hiddenTags": [
       "Slow"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -8024,7 +7849,6 @@
       "Tool"
     ],
     "hiddenTags": [],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -8074,7 +7898,6 @@
       "Shield",
       "HasteReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -8116,7 +7939,6 @@
     "hiddenTags": [
       "AmmoReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -8162,7 +7984,6 @@
     "hiddenTags": [
       "ShieldReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -8202,7 +8023,6 @@
     },
     "tags": [],
     "hiddenTags": [],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -8240,7 +8060,6 @@
     },
     "tags": [],
     "hiddenTags": [],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -8281,7 +8100,6 @@
       "Shield",
       "EconomyReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -8323,7 +8141,6 @@
     "hiddenTags": [
       "Damage"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -8369,7 +8186,6 @@
     "hiddenTags": [
       "Crit"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -8420,7 +8236,6 @@
     "hiddenTags": [
       "Health"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -8465,7 +8280,6 @@
     "hiddenTags": [
       "Crit"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -8518,7 +8332,6 @@
       "CritReference",
       "Freeze"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -8563,7 +8376,6 @@
     "hiddenTags": [
       "Haste"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -8606,7 +8418,6 @@
       "Health",
       "EconomyReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -8651,7 +8462,6 @@
       "ShieldReference",
       "DamageReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -8695,7 +8505,6 @@
     "hiddenTags": [
       "BurnReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -8742,7 +8551,6 @@
       "Shield",
       "HealthReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -8784,7 +8592,6 @@
     "hiddenTags": [
       "Shield"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -8830,7 +8637,6 @@
     "hiddenTags": [
       "PoisonReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -8876,7 +8682,6 @@
     "hiddenTags": [
       "BurnReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -8918,7 +8723,6 @@
       "Property"
     ],
     "hiddenTags": [],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -8963,7 +8767,6 @@
       "Shield",
       "HealthReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -9007,7 +8810,6 @@
     "hiddenTags": [
       "Cooldown"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -9052,7 +8854,6 @@
       "FreezeReference",
       "DamageReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -9096,7 +8897,6 @@
     "hiddenTags": [
       "Ammo"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -9140,7 +8940,6 @@
       "HasteReference",
       "Crit"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Dooley",
@@ -9188,7 +8987,6 @@
     "hiddenTags": [
       "Ammo"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -9234,7 +9032,6 @@
     "hiddenTags": [
       "Cooldown"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -9278,7 +9075,6 @@
     "hiddenTags": [
       "Crit"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -9331,7 +9127,6 @@
       "BurnReference",
       "Cooldown"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -9378,7 +9173,6 @@
     "hiddenTags": [
       "ShieldReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Stelle",
@@ -9424,7 +9218,6 @@
     "hiddenTags": [
       "Burn"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -9466,7 +9259,6 @@
     "hiddenTags": [
       "ShieldReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -9514,7 +9306,6 @@
     "hiddenTags": [
       "HealReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -9556,7 +9347,6 @@
       "PoisonReference",
       "Haste"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -9598,7 +9388,6 @@
     "hiddenTags": [
       "Cooldown"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -9644,7 +9433,6 @@
     "hiddenTags": [
       "HealReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -9688,7 +9476,6 @@
       "Ammo",
       "CritReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -9730,7 +9517,6 @@
     "hiddenTags": [
       "FreezeReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -9780,7 +9566,6 @@
     "hiddenTags": [
       "HealReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -9827,7 +9612,6 @@
     "hiddenTags": [
       "PoisonReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -9873,7 +9657,6 @@
     "hiddenTags": [
       "Crit"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -9919,7 +9702,6 @@
     "hiddenTags": [
       "Gold"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -9968,7 +9750,6 @@
     "hiddenTags": [
       "Haste"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -10014,7 +9795,6 @@
     "hiddenTags": [
       "Burn"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -10060,7 +9840,6 @@
     "hiddenTags": [
       "DamageReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -10106,7 +9885,6 @@
       "Burn",
       "Cooldown"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -10157,7 +9935,6 @@
       "BurnReference",
       "Freeze"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Dooley",
@@ -10207,7 +9984,6 @@
     "hiddenTags": [
       "Burn"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Dooley",
@@ -10254,7 +10030,6 @@
       "Heal",
       "HealthReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -10298,7 +10073,6 @@
     "hiddenTags": [
       "PoisonReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -10347,7 +10121,6 @@
     "hiddenTags": [
       "Cooldown"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -10389,7 +10162,6 @@
     "hiddenTags": [
       "Cooldown"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -10439,7 +10211,6 @@
     "hiddenTags": [
       "DamageReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Dooley",
@@ -10488,7 +10259,6 @@
       "HasteReference",
       "Cooldown"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -10532,7 +10302,6 @@
     "hiddenTags": [
       "Cooldown"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -10580,7 +10349,6 @@
     "hiddenTags": [
       "Crit"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -10625,7 +10393,6 @@
       "Damage",
       "EconomyReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -10666,7 +10433,6 @@
       "FreezeReference",
       "Ammo"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -10713,7 +10479,6 @@
     "hiddenTags": [
       "ShieldReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -10761,7 +10526,6 @@
     "hiddenTags": [
       "DamageReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Jules",
@@ -10814,7 +10578,6 @@
     "hiddenTags": [
       "Haste"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -10858,7 +10621,6 @@
     "hiddenTags": [
       "Damage"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -10905,7 +10667,6 @@
     "hiddenTags": [
       "Cooldown"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -10950,7 +10711,6 @@
       "SlowReference",
       "Haste"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -10994,7 +10754,6 @@
     "hiddenTags": [
       "Slow"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -11043,7 +10802,6 @@
       "HealReference",
       "ShieldReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -11089,7 +10847,6 @@
     "hiddenTags": [
       "BurnReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -11139,7 +10896,6 @@
     "hiddenTags": [
       "Slow"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -11185,7 +10941,6 @@
       "DamageReference",
       "HealthReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -11227,7 +10982,6 @@
     "hiddenTags": [
       "HealReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -11273,7 +11027,6 @@
       "DamageReference",
       "SlowReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -11321,7 +11074,6 @@
       "NonWeapon",
       "Regen"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -11366,7 +11118,6 @@
     "hiddenTags": [
       "HealReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -11413,7 +11164,6 @@
     "hiddenTags": [
       "PoisonReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -11461,7 +11211,6 @@
     "hiddenTags": [
       "Income"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -11505,7 +11254,6 @@
     "hiddenTags": [
       "Cooldown"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -11551,7 +11299,6 @@
     "hiddenTags": [
       "Crit"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -11591,7 +11338,6 @@
     "hiddenTags": [
       "Charge"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -11634,7 +11380,6 @@
       "HealReference",
       "Cooldown"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -11681,7 +11426,6 @@
     "hiddenTags": [
       "BurnReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -11729,7 +11473,6 @@
     "hiddenTags": [
       "Crit"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -11774,7 +11517,6 @@
     "hiddenTags": [
       "Cooldown"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -11821,7 +11563,6 @@
     "hiddenTags": [
       "ShieldReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Stelle",
@@ -11871,7 +11612,6 @@
     "hiddenTags": [
       "DamageReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -11917,7 +11657,6 @@
     "hiddenTags": [
       "Crit"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -11960,7 +11699,6 @@
       "SlowReference",
       "Regen"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Dooley",
@@ -12006,7 +11744,6 @@
       "Poison",
       "Crit"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -12050,7 +11787,6 @@
     "hiddenTags": [
       "Freeze"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -12099,7 +11835,6 @@
     "hiddenTags": [
       "FreezeReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -12148,7 +11883,6 @@
     "hiddenTags": [
       "Cooldown"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -12190,7 +11924,6 @@
     "hiddenTags": [
       "Haste"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -12241,7 +11974,6 @@
       "Vehicle"
     ],
     "hiddenTags": [],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Stelle"
@@ -12286,7 +12018,6 @@
       "ShieldReference",
       "CritReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -12334,7 +12065,6 @@
     "hiddenTags": [
       "Ammo"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -12374,7 +12104,6 @@
     "hiddenTags": [
       "Cooldown"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -12417,7 +12146,6 @@
       "Slow",
       "AmmoReference"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -12459,7 +12187,6 @@
     "hiddenTags": [
       "Crit"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -12504,7 +12231,6 @@
     "hiddenTags": [
       "Cooldown"
     ],
-    "enchantments": [],
     "size": "Medium",
     "heroes": [
       "Common"

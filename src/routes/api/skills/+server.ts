@@ -1,14 +1,18 @@
 import { json } from "@sveltejs/kit";
 import type { RequestHandler } from "@sveltejs/kit";
 import { getHash } from "$lib/utils/dataUtils";
-import type { ClientSideCardSkill, SkillsApiResponse } from "$lib/types";
+import type { ParsedCardCombatEncounter, ClientSideDayHours, Monster, ParsedCardItem, ParsedCardSkill, SkillsApiResponse } from "$lib/types";
 import { getSkills } from "$lib/services/skillService";
+import parsedItemCards from "$lib/processedItemCards.json" assert { type: "json" };
 import parsedSkillCards from "$lib/processedSkillCards.json" assert { type: "json" };
+import parsedCombatEncounterCards from "$lib/processedCombatEncounterCards.json" ;
+import parsedMonsters from "$lib/processedMonsters.json" assert { type: "json" };
+import parsedDayHours from "$lib/processedDayHours.json" assert { type: "json" };
 
 let serverVersion: string | undefined;
 
 export const GET: RequestHandler = ({ url, request }) => {
-    const skills = getSkills(parsedSkillCards as ClientSideCardSkill[]);
+    const skills = getSkills(parsedSkillCards as ParsedCardSkill[], parsedItemCards as ParsedCardItem[], parsedCombatEncounterCards as ParsedCardCombatEncounter[], parsedMonsters as Monster[], parsedDayHours as ClientSideDayHours[]);
     serverVersion ??= getHash(skills);
 
     // Check for requested version via query parameter
@@ -23,7 +27,8 @@ export const GET: RequestHandler = ({ url, request }) => {
         return new Response(null, { status: 304 });
     }
 
-    const response: SkillsApiResponse = { data: skills, version: serverVersion };
+    // TODO: Should I move sorting to before hashing since client doesn't resort?
+    const response: SkillsApiResponse = { data: skills.sort((a, b) => a.name.localeCompare(b.name)), version: serverVersion };
 
     return json(response,
         {

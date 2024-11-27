@@ -1,8 +1,10 @@
-import type { V2CardsD as Card, Hero, HiddenTag, Size, Tag, Tier as TierType } from "$lib/v2_Cards";
-import type { The04747408_De0E4944_B79D23_Ca41008619 as JsonMonsterType } from "$lib/v2_Monsters";
-import type { V2DayHoursD as DayHour } from "$lib/v2_DayHours";
+import type { V2CardsD as Card, Hero, HiddenTag, Size, Tag, Tier as TierType } from "$lib/parsers/v2_Cards";
+import type { The04747408_De0E4944_B79D23_Ca41008619 as JsonMonsterType } from "$lib/parsers/v2_Monsters";
+import type { V2DayHoursD as DayHour } from "$lib/parsers/v2_DayHours";
 
 export type CardsJson = { [key: string]: Card };
+export type MonstersJson = { [key: string]: JsonMonsterType };
+export type DayHoursJson = { [key: string]: DayHour };
 
 export type ClientSideTier = {
     tooltips: string[];
@@ -22,11 +24,23 @@ export type ClientSideTag = Tag;
 export type ClientSideHiddenTag = HiddenTag;
 
 // TODO: Fix naming
-export type ClientSideCard = ClientSideCardItem | ClientSideCardSkill | ClientSideCardCombatEncounter;
+export type ParsedCardItem = {
+    id: string;
+    name: string;
+    startingTier: TierType;
+    tiers: { [key in TierType]: {
+        tooltips: string[];
+    } };
+    tags: Tag[];
+    hiddenTags: HiddenTag[];
+    size: Size;
+    heroes: Hero[];
+    enchantments: ClientSideEnchantment[];
+    unifiedTooltips: string[];
+};
 
 export type ClientSideCardItem = {
     id: string;
-    type: "Item";
     name: string;
     startingTier: ClientSideTierType;
     tiers: { [key in ClientSideTierType]: ClientSideTier };
@@ -35,13 +49,27 @@ export type ClientSideCardItem = {
     size: ClientSideSize;
     heroes: ClientSideHero[];
     enchantments: ClientSideEnchantment[];
-    artKey?: string;
+    unifiedTooltips: string[];
+    combatEncounters: ClientSideCombatEncounterSummary[];
+};
+
+export type ParsedCardSkill = {
+    id: string;
+    name: string;
+    startingTier: TierType;
+    tiers: { [key in TierType]: {
+        tooltips: string[];
+    } };
+    tags: Tag[];
+    hiddenTags: HiddenTag[];
+    size: Size;
+    heroes: Hero[];
+    artKey: string;
     unifiedTooltips: string[];
 };
 
 export type ClientSideCardSkill = {
     id: string;
-    type: "Skill";
     name: string;
     startingTier: ClientSideTierType;
     tiers: { [key in ClientSideTierType]: ClientSideTier };
@@ -49,19 +77,20 @@ export type ClientSideCardSkill = {
     hiddenTags: ClientSideHiddenTag[];
     size: ClientSideSize;
     heroes: ClientSideHero[];
-    enchantments: ClientSideEnchantment[];
-    artKey: string;
     unifiedTooltips: string[];
+    combatEncounters: ClientSideCombatEncounterSummary[];
 };
 
-export type ClientSideCardCombatEncounter = {
+export type ClientSideCombatEncounterSummary = {
+    cardId: string;
+    cardName: string;
+}
+
+export type ParsedCardCombatEncounter = {
     id: string;
-    type: "CombatEncounter";
     name: string;
     monsterTemplateId: string;
 };
-
-export type MonstersJson = { [key: string]: JsonMonsterType };
 
 export type Monster = {
     id: string;
@@ -79,8 +108,6 @@ export type Monster = {
         tierType: TierType;
     }[];
 }
-
-export type DayHoursJson = { [key: string]: DayHour };
 
 export type ClientSideDayHours = {
     day: number;
