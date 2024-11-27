@@ -1,4 +1,4 @@
-import type { ParsedItemCard, ParsedSkillCard, ParsedCombatEncounterCard, ParsedMonster, ParsedDayHours, ClientSideSkillCard } from "$lib/types";
+import type { ParsedItemCard, ParsedSkillCard, ParsedCombatEncounterCard, ParsedMonster, ParsedDayHour, ClientSideSkillCard } from "$lib/types";
 import { getMonsterEncounterDays } from "./monsterEncounterService";
 
 // TODO: This shouldn't be ClientSideCardSkill[]
@@ -8,7 +8,7 @@ export function getSkills(
     // TODO: DI would be nice 
     combatEncounterCards: ParsedCombatEncounterCard[],
     monsters: ParsedMonster[],
-    dayHours: ParsedDayHours[]
+    dayHours: ParsedDayHour[]
 ): ClientSideSkillCard[] {
     const monsterEncounterDays = getMonsterEncounterDays(itemCards, skillCards, combatEncounterCards, monsters, dayHours);
 

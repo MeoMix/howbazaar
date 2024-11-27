@@ -3,11 +3,11 @@ import type { RequestHandler } from "@sveltejs/kit";
 import type { ItemsApiResponse } from "$lib/types";
 import { getHash } from "$lib/utils/dataUtils";
 import { getItems } from "$lib/services/itemService";
-import parsedItemCards from "$lib/processedItemCards";
-import parsedSkillCards from "$lib/processedSkillCards";
-import parsedCombatEncounterCards from "$lib/processedCombatEncounterCards";
-import parsedMonsters from "$lib/processedMonsters";
-import parsedDayHours from "$lib/processedDayHours";
+import parsedItemCards from "$lib/db/parsedItemCards";
+import parsedSkillCards from "$lib/db/parsedSkillCards";
+import parsedCombatEncounterCards from "$lib/db/parsedCombatEncounterCards";
+import parsedMonsters from "$lib/db/parsedMonsters";
+import parsedDayHours from "$lib/db/parsedDayHours";
 
 let serverVersion: string | undefined;
 

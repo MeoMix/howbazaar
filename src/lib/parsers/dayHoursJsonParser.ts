@@ -1,7 +1,7 @@
-import type { ParsedDayHours } from "$lib/types";
+import type { ParsedDayHour } from "$lib/types";
 import type { DayHoursJson } from "./types.parser";
 
-export function parseJson(dayHoursJson: DayHoursJson): ParsedDayHours[] {
+export function parseJson(dayHoursJson: DayHoursJson): ParsedDayHour[] {
     const dayHoursList = Object.values(dayHoursJson)
         .filter((dayHour) => dayHour.SpawnContext.Limit.Value === 3)
         .map((dayHour) => {

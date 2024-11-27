@@ -1,11 +1,11 @@
 import fs from 'fs';
 import fsPromises from 'fs/promises';
 import path from 'path';
-import parsedItemCards from "../src/lib/processedItemCards";
-import parsedSkillCards from "../src/lib/processedSkillCards";
-import parsedCombatEncounterCards from "../src/lib/processedCombatEncounterCards";
-import parsedMonsters from "../src/lib/processedMonsters";
-import parsedDayHours from "../src/lib/processedDayHours";
+import parsedItemCards from "../src/lib/db/parsedItemCards";
+import parsedSkillCards from "../src/lib/db/parsedSkillCards";
+import parsedCombatEncounterCards from "../src/lib/db/parsedCombatEncounterCards";
+import parsedMonsters from "../src/lib/db/parsedMonsters";
+import parsedDayHours from "../src/lib/db/parsedDayHours";
 import { getMonsterEncounterDays } from "../src/lib/services/monsterEncounterService";
 import sharp from 'sharp';
 import { getSanitizedFileName, removeSpecialCharacters } from './utils/stringUtils';

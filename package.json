@@ -10,7 +10,7 @@
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"test": "vitest",
 		"generate-types": "npx quicktype src/lib/parsers/v2_Cards.json -o src/lib/parsers/v2_Cards.d.ts --just-types --prefer-unions && npx quicktype src/lib/parsers/v2_Monsters.json -o src/lib/parsers/v2_Monsters.d.ts --just-types --prefer-unions && npx quicktype src/lib/parsers/v2_DayHours.json -o src/lib/parsers/v2_DayHours.d.ts --just-types --prefer-unions",
-		"preprocess-data": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"ESNext\"}' tsx scripts/preprocess-data.ts",
+		"parseGameJson": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"ESNext\"}' tsx scripts/parseGameJson.ts",
 		"processSkillImages": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"ESNext\"}' tsx scripts/processSkillImages.ts",
 		"processMonsterImages": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"ESNext\"}' tsx scripts/processMonsterImages.ts",
 		"processItemImages": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"ESNext\"}' tsx scripts/processItemImages.ts"

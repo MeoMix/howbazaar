@@ -101,7 +101,7 @@ export type ParsedMonster = {
     }[];
 }
 
-export type ParsedDayHours = {
+export type ParsedDayHour = {
     day: number;
     hour: number;
     spawnGroups: {
