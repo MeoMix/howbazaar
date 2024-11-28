@@ -152,15 +152,19 @@ function getTierMap(card: (ValidItemCard | ValidSkillCard)) {
             const currentTier = card.Tiers[tier];
             const previousTier = acc[tierOrder[tierOrder.indexOf(tier) - 1]];
 
-            // Only merge with the previous tier if the current tier has attributes.
+            // If Diamond exists, treat Legendary as nonexistent for inheritance purposes
+            const shouldSkipMerge = tier === "Legendary" && acc["Diamond"];
+
+            // Only merge with the previous tier if the current tier has attributes and it's not skipped
             acc[tier] = {
                 Attributes: {
                     ...(previousTier?.Attributes ?? {}),
-                    ...(currentTier?.Attributes ?? {}),
+                    ...(shouldSkipMerge ? {} : currentTier?.Attributes ?? {}),
                 },
-                // Attempt to support the fact that game data can be wrong and say Legendary doesn't exist and yet monster encounter
-                // contains Legendary items.
-                TooltipIds: currentTier === undefined && previousTier !== undefined ? previousTier.TooltipIds : (currentTier?.TooltipIds ?? [])
+                // TooltipIds should still inherit if necessary, but prioritize Diamond over Legendary
+                TooltipIds: shouldSkipMerge
+                    ? acc["Diamond"].TooltipIds
+                    : (currentTier?.TooltipIds ?? (previousTier?.TooltipIds ?? [])),
             };
 
             return acc;
@@ -689,13 +693,6 @@ function parseSkillCards(cardsJson: CardsJson): ParsedSkillCard[] {
                 // TODO: It's weird this can miss when looking up by tooltipId which should be a key
                 if (rawTooltips.length !== tier.TooltipIds.length) {
                     console.warn(card.Localization.Title.Text + ': Failed to match on tooltip');
-                }
-
-                // Patch Fix Critical Core having a typo'ed tooltip.
-                if (card.Localization.Title.Text === "Critical Core") {
-                    rawTooltips = rawTooltips.map((rawTooltip) => {
-                        return rawTooltip.replace("{ability.1} 1", "{ability.1}");
-                    });
                 }
 
                 let tooltips = getDisplayedTooltips(rawTooltips, abilities, auras, tier.Attributes);

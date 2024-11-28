@@ -9741,7 +9741,7 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Cooldown 15 seconds",
           "Use all your other items.",
-          "When you use an item, deal 40 damage."
+          "When you use an item, deal 50 damage."
         ]
       }
     },
@@ -9815,7 +9815,7 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "Cooldown 15 seconds",
       "Use all your other items.",
-      "When you use an item, deal 40 damage."
+      "When you use an item, deal 50 damage."
     ]
   },
   {
@@ -12080,7 +12080,7 @@ const data: ParsedItemCard[] = [
       },
       "Legendary": {
         "tooltips": [
-          "When ANY non-weapon item is used, Poison 3 and gain 1 Regen for the fight.",
+          "When ANY non-weapon item is used, Poison 3 and gain 3 Regen for the fight.",
           "Your items have their cooldowns increased by 1 second(s)."
         ]
       }
@@ -12139,7 +12139,7 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "When ANY non-weapon item is used, Poison 3 and gain 1 Regen for the fight.",
+      "When ANY non-weapon item is used, Poison 3 and gain 3 Regen for the fight.",
       "Your items have their cooldowns increased by 1 second(s)."
     ]
   },
@@ -17912,7 +17912,7 @@ const data: ParsedItemCard[] = [
       },
       "Legendary": {
         "tooltips": [
-          "Cooldown 30 seconds",
+          "Cooldown 10 seconds",
           "Destroy an enemy item for the fight.",
           "When you use an adjacent item, charge this 1 second(s)."
         ]
@@ -17979,7 +17979,7 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "Cooldown 30 seconds",
+      "Cooldown 10 seconds",
       "Destroy an enemy item for the fight.",
       "When you use an adjacent item, charge this 1 second(s)."
     ]
@@ -30496,7 +30496,7 @@ const data: ParsedItemCard[] = [
       },
       "Legendary": {
         "tooltips": [
-          "Cooldown 15 seconds",
+          "Cooldown 9 seconds",
           "Destroy a small enemy item for the fight."
         ]
       }
@@ -30558,7 +30558,7 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "Cooldown 15 seconds",
+      "Cooldown 9 seconds",
       "Destroy a small enemy item for the fight."
     ]
   },

@@ -284,6 +284,13 @@ describe('cardJsonParser', () => {
     expect(chargeTooltip).toEqual("When you use any to the left of this, Charge this 1 second(s).");
   });
 
+  it('should ignore Diamond attributes on Legendaries to fix Eye of the Collosus cooldown', () => {
+    const eyeOfTheColossus = itemCards.find(card => card.name === "Eye of the Colossus")!;
+    const cooldownTooltip = eyeOfTheColossus.tiers.Legendary.tooltips.find(tooltip => tooltip.includes("Cooldown"));
+
+    expect(cooldownTooltip).toEqual("Cooldown 10 seconds");
+  });
+
   it('should contain no tooltips with {', () => {
     const invalidCards = [];
 
