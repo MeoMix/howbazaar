@@ -14,6 +14,7 @@
 
 <ButtonGroup class="w-full">
     <Input
+        autofocus
         type="text"
         {placeholder}
         bind:value
