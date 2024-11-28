@@ -31,6 +31,11 @@
         toastClearTimeout = setTimeout(() => (toastStatus = false), 3000);
     });
 
+    let isHamburgerMenuOpen = $state(false);
+    const onNavLiClick = () => {
+        isHamburgerMenuOpen = false;
+    };
+
     let { children }: { children: Snippet } = $props();
 </script>
 
@@ -55,6 +60,9 @@
             <NavHamburger
                 class="hover:text-gray-900 dark:text-bazaar-tan700 dark:hover:text-bazaar-orange dark:hover:bg-bazaar-brown"
                 classMenu="outline-none"
+                onClick={() => {
+                    isHamburgerMenuOpen = !isHamburgerMenuOpen;
+                }}
             />
         </div>
 
@@ -63,11 +71,19 @@
             nonActiveClass="dark:text-bazaar-tan700 md:dark:hover:text-bazaar-orange hover:bg-gray-200 dark:hover:bg-bazaar-brown hover:text-bazaar-orange dark:hover:text-bazaar-orange md:hover:bg-transparent md:dark:hover:bg-transparent"
             activeClass="text-bazaar-orange dark:text-bazaar-orange md:text-bazaar-orange md:dark:text-bazaar-orange bg-gray-200 dark:bg-bazaar-brown md:bg-transparent md:dark:bg-transparent"
             ulClass="flex flex-col p-4 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:text-sm md:font-medium dark:bg-bazaar-background dark:border-bazaar-brown"
+            slideParams={{ duration: 0 }}
+            hidden={!isHamburgerMenuOpen}
         >
-            <NavLi href={`/items${$page.url.search}`}>Items</NavLi>
-            <NavLi href={`/skills${$page.url.search}`}>Skills</NavLi>
-            <NavLi href={`/monsters${$page.url.search}`}>Monsters</NavLi>
-            <NavLi href={`/contact${$page.url.search}`}
+            <NavLi href={`/items${$page.url.search}`} on:click={onNavLiClick}
+                >Items</NavLi
+            >
+            <NavLi href={`/skills${$page.url.search}`} on:click={onNavLiClick}
+                >Skills</NavLi
+            >
+            <NavLi href={`/monsters${$page.url.search}`} on:click={onNavLiClick}
+                >Monsters</NavLi
+            >
+            <NavLi href={`/contact${$page.url.search}`} on:click={onNavLiClick}
                 >Contact & Upcoming Features</NavLi
             >
         </NavUl>
