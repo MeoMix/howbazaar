@@ -61,7 +61,7 @@
                     Polish some lingering issues with the design around
                     legibility, colors, lightmode.
                 </span>
-                <span class="font-bold text-green"
+                <span class="font-bold text-green-500"
                     >Mostly Done! I'll work on the UI more in a week, need to
                     focus on features.</span
                 >
@@ -100,9 +100,14 @@
                 where I have to manually manage new card/enchantment additions
                 to the game.
             </li>
+
             <li>
-                Add the ability to use Item/Skill search to find Items/Skills
-                which are dropped by specific Monster Encounters.
+                <span class="line-through">
+                    Add the ability to use Item/Skill search to find
+                    Items/Skills which are dropped by specific Monster
+                    Encounters.
+                </span>
+                <span class="font-bold text-green-500"> Done! </span>
             </li>
             <li>
                 Add monsters to the Monsters page which are only able to be
