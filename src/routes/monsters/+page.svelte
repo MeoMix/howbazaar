@@ -7,7 +7,7 @@
     } from "$lib/types";
     import SingleSelectFilter from "$lib/components/SingleSelectFilter.svelte";
     import type { PageData } from "./$types";
-    import { onMount } from "svelte";
+    import { onMount, tick } from "svelte";
     import { monsterEncounterDaysStore } from "$lib/stores/monsterEncounterDaysStore";
     import { fetchJson } from "$lib/utils/fetchUtils";
 
@@ -30,10 +30,9 @@
         if (monsterEncounterDays.length === 0 || !version) {
             try {
                 isLoading = true;
-                const response = await fetchJson<ClientSideMonsterEncounterDay[]>(
-                    "/api/monsterEncounterDays",
-                    data.version,
-                );
+                const response = await fetchJson<
+                    ClientSideMonsterEncounterDay[]
+                >("/api/monsterEncounterDays", data.version);
                 monsterEncounterDaysStore.set({
                     monsterEncounterDays: response.data,
                     version: response.version,
@@ -48,14 +47,15 @@
             }
         }
 
-        const hash = window.location.hash.slice(1);
+        const hash = window.location.hash;
         if (hash) {
             const combatEncounter = monsterEncounterDays
                 .flatMap((day) =>
                     day.groups.flatMap((group) =>
                         group.find(
                             (encounter) =>
-                                encounter.cardName.replace(/\s+/g, "_") === hash,
+                                encounter.cardName.replace(/\s+/g, "_") ===
+                                hash.slice(1),
                         ),
                     ),
                 )
@@ -63,6 +63,17 @@
 
             if (combatEncounter) {
                 selectedMonsterEncounter = combatEncounter;
+
+                await tick();
+
+                // Do this manually so it works even if data is fetched after page loads
+                const targetElement = document.querySelector(hash);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: "instant",
+                        block: "start",
+                    });
+                }
             }
         }
     });
@@ -74,7 +85,9 @@
             : monsterEncounterDays.filter(({ day }) => selectedDay === day),
     );
 
-    let selectedMonsterEncounter = $state() as ClientSideMonsterEncounter | undefined;
+    let selectedMonsterEncounter = $state() as
+        | ClientSideMonsterEncounter
+        | undefined;
     function toggleEncounter(monsterEncounter: ClientSideMonsterEncounter) {
         if (selectedMonsterEncounter?.cardId === monsterEncounter.cardId) {
             selectedMonsterEncounter = undefined;
