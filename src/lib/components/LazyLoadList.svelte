@@ -1,23 +1,23 @@
 <script lang="ts" generics="T">
     import type { Snippet } from "svelte";
 
-    const { 
-        items, 
+    const {
+        items,
         listItemName,
         listItem,
+        headerControls,
         batchSize = 5,
-        showSearchCount = true
     }: {
         items: T[];
         listItemName: string;
         listItem: Snippet<[T]>;
+        headerControls?: Snippet;
         batchSize?: number;
-        showSearchCount?: boolean;
     } = $props();
 
     let itemsToDisplay = $state(batchSize);
     const visibleItems = $derived(items.slice(0, itemsToDisplay));
-    
+
     let loadMoreTrigger: HTMLDivElement | null = null;
 
     $effect(() => {
@@ -31,7 +31,7 @@
                     }
                 });
             },
-            { rootMargin: "400px" }
+            { rootMargin: "400px" },
         );
 
         observer.observe(loadMoreTrigger);
@@ -41,11 +41,16 @@
 </script>
 
 <div class="space-y-4">
-    {#if showSearchCount}
+    <div class="flex justify-between items-center">
         <div class="text-lg">
-            {items.length} {listItemName}{items.length === 1 ? '' : 's'} found.
+            {items.length}
+            {listItemName}{items.length === 1 ? "" : "s"} found.
         </div>
-    {/if}
+
+        {#if headerControls}
+            {@render headerControls()}
+        {/if}
+    </div>
 
     {#each visibleItems as item}
         {@render listItem(item)}

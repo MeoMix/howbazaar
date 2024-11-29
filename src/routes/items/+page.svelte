@@ -16,6 +16,7 @@
     import { onMount } from "svelte";
     import { itemsStore } from "$lib/stores/itemsStore";
     import { fetchJson } from "$lib/utils/fetchUtils";
+    import Switch from "$lib/components/Switch.svelte";
 
     const { data }: { data: PageData } = $props();
 
@@ -70,6 +71,8 @@
     let isSearchNameOnly = $state(false);
     let isSearchEnchantments = $state(false);
     let isMonsterDropsOnly = $state(false);
+    // TODO: Consider persisting this in a store and/or in local storage
+    let areEnchantmentsShown = $state(true);
 
     const filteredCards = $derived(
         filterItemCards(
@@ -85,6 +88,10 @@
             isMonsterDropsOnly,
         ),
     );
+
+    const onToggleEnchantments = () => {
+        areEnchantmentsShown = !areEnchantmentsShown;
+    };
 </script>
 
 <svelte:head>
@@ -112,9 +119,13 @@
         <div>Loading items...</div>
     {:else}
         {#snippet listItem(card: ClientSideItemCard)}
-            <CardItem {card} />
+            <CardItem {card} {areEnchantmentsShown} />
         {/snippet}
 
-        <LazyLoadList items={filteredCards} {listItem} listItemName="item" />
+        {#snippet headerControls()}
+            <Switch isChecked={areEnchantmentsShown} onClick={onToggleEnchantments} label="Show Enchantments" />
+        {/snippet}
+
+        <LazyLoadList items={filteredCards} {listItem} {headerControls} listItemName="item" />
     {/if}
 </div>

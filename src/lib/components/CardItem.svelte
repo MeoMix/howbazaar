@@ -8,7 +8,10 @@
     import CardImage from "./CardImage.svelte";
     import CardCombatEncounters from "./CardCombatEncounters.svelte";
 
-    const { card }: { card: ClientSideItemCard } = $props();
+    const {
+        card,
+        areEnchantmentsShown,
+    }: { card: ClientSideItemCard; areEnchantmentsShown: boolean } = $props();
 
     const id = $derived(card.name.replace(/\s+/g, "_"));
     const tags = $derived(filterTags(card.tags, card.hiddenTags));
@@ -23,9 +26,7 @@
     <div
         class="grid grid-cols-[66.66%_33.33%] md:grid-cols-[70%_30%] lg:grid-cols-[75%_25%]"
     >
-        <div
-            class="max-w-full col-start-2 row-span-1 md:row-span-2"
-        >
+        <div class="max-w-full col-start-2 row-span-1 md:row-span-2">
             <CardImage name={card.name} type="items" size={card.size} />
         </div>
         <div class="col-start-1 row-start-1 px-4 pt-4">
@@ -64,13 +65,15 @@
                 ></div>
             </div>
         </div>
-        <div class={`col-start-1 row-start-2 col-span-2 md:col-span-1 px-4 ${card.enchantments.length === 0 ? 'pb-4' : ''}`}>
+        <div
+            class={`col-start-1 row-start-2 col-span-2 md:col-span-1 px-4 ${card.enchantments.length === 0 || !areEnchantmentsShown ? "pb-4" : ""}`}
+        >
             <UnifiedTooltips
                 unifiedTooltips={card.unifiedTooltips}
                 startingTier={card.startingTier}
             />
         </div>
-        {#if card.enchantments.length > 0}
+        {#if card.enchantments.length > 0 && areEnchantmentsShown}
             <div class="col-span-2 px-4 pb-4">
                 <div
                     class="h-[1px] my-4 bg-gradient-to-r from-transparent via-gray-200 dark:via-bazaar-orange to-transparent"

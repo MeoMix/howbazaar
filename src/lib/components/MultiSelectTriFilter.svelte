@@ -1,7 +1,8 @@
 <script lang="ts">
     import FilterTriToggle from "./FilterTriToggle.svelte";
     import type { Option, TriState } from "$lib/types";
-    import { Label, Toggle } from "flowbite-svelte";
+    import { Label } from "flowbite-svelte";
+    import Switch from "./Switch.svelte";
 
     let {
         label,
@@ -38,21 +39,18 @@
             >{label}</Label
         >
         {#if isMatchAny !== undefined}
-            <Toggle
-                class="mt-2 inline-flex dark:text-bazaar-tan700"
-                classDiv="dark:bg-bazaar-tan200 dark:after:bg-bazaar-tan700 peer-focus:ring-bazaar-orange dark:peer-focus:ring-bazaar-orange400 peer-checked:bg-bazaar-orange"
-                checked={isMatchAny}
-                on:click={() => {
+            <Switch
+                isChecked={isMatchAny}
+                onClick={() => {
                     isMatchAny = !isMatchAny;
 
                     if (onSelect) {
                         onSelect(triStates);
                     }
                 }}
-            >
-                <svelte:fragment slot="offLabel">Match All</svelte:fragment>
-                Match Any
-            </Toggle>
+                label="Match Any"
+                offLabel="Match All"
+            />
         {/if}
     </div>
 
