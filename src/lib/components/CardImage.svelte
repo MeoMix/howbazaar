@@ -12,19 +12,29 @@
         size: Size;
     } = $props();
 
-    const sanitizedCardName = $derived(removeSpecialCharacters(name));
+    const sanitizedCardName = removeSpecialCharacters(name);
+
+    let widthClass = $state("");
+    if (size === "Small") {
+        widthClass = "w-1/3"; // 33.3333%
+    } else if (size === "Medium") {
+        widthClass = "w-2/3"; // 66.6667%
+    } else if (size === "Large") {
+        widthClass = "w-full"; // 100%
+    }
 </script>
 
-<div class="relative overflow-hidden rounded-t-md">
-    <div
-        class="absolute inset-0 bg-cover bg-center blur-xl brightness-50"
-        style={`background-image: url('/images/${type}/${sanitizedCardName}.avif');`}
-    ></div>
+<div class="relative overflow-hidden rounded-md mx-auto w-full pb-[66.6667%]">
+    <img
+        src={`/images/${type}/${sanitizedCardName}.avif`}
+        alt={`${name} background`}
+        class="absolute inset-0 w-full h-full object-cover blur-xl brightness-50"
+        aria-hidden="true"
+    />
 
     <img
         src={`/images/${type}/${sanitizedCardName}.avif`}
         alt={name}
-        class="relative h-[200px] mx-auto"
-        width={size === "Small" ? 100 : size === "Medium" ? 200 : 300}
+        class={`absolute top-0 bottom-0 left-0 right-0 mx-auto ${widthClass} h-full object-fill`}
     />
 </div>
