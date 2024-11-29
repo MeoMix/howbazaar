@@ -5,7 +5,7 @@
         items, 
         listItemName,
         listItem,
-        batchSize = 10,
+        batchSize = 5,
         showSearchCount = true
     }: {
         items: T[];
