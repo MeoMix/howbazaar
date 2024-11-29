@@ -8,6 +8,7 @@
     import { Card } from "flowbite-svelte";
     import CardBadges from "./CardBadges.svelte";
     import CardImage from "./CardImage.svelte";
+    import Divider from "./Divider.svelte";
 
     const {
         card,
@@ -54,9 +55,7 @@
             secondaryBadges={tags.map((text) => ({ text }))}
         />
         
-        <div
-            class="h-[1px] my-4 bg-gradient-to-r from-transparent via-gray-200 dark:via-bazaar-orange to-transparent"
-        ></div>
+        <Divider />
 
         {#each card.tiers[tierType].tooltips as tooltip}
             <div>

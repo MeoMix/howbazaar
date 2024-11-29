@@ -7,6 +7,7 @@
     import UnifiedTooltips from "./UnifiedTooltips.svelte";
     import CardImage from "./CardImage.svelte";
     import CardCombatEncounters from "./CardCombatEncounters.svelte";
+    import Divider from "./Divider.svelte";
 
     const { card }: { card: ClientSideSkillCard } = $props();
 
@@ -55,9 +56,7 @@
                     />
                 {/if}
 
-                <div
-                    class="h-[1px] my-4 bg-gradient-to-r from-transparent via-gray-200 dark:via-bazaar-orange to-transparent"
-                ></div>
+                <Divider />
             </div>
         </div>
         <div

@@ -7,6 +7,7 @@
     import UnifiedTooltips from "./UnifiedTooltips.svelte";
     import CardImage from "./CardImage.svelte";
     import CardCombatEncounters from "./CardCombatEncounters.svelte";
+    import Divider from "./Divider.svelte";
 
     const {
         card,
@@ -60,9 +61,7 @@
                     />
                 {/if}
 
-                <div
-                    class="h-[1px] my-4 bg-gradient-to-r from-transparent via-gray-200 dark:via-bazaar-orange to-transparent"
-                ></div>
+                <Divider />
             </div>
         </div>
         <div
@@ -75,9 +74,7 @@
         </div>
         {#if card.enchantments.length > 0 && areEnchantmentsShown}
             <div class="col-span-2 px-4 pb-4">
-                <div
-                    class="h-[1px] my-4 bg-gradient-to-r from-transparent via-gray-200 dark:via-bazaar-orange to-transparent"
-                ></div>
+                <Divider />
 
                 <div
                     class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-4"
