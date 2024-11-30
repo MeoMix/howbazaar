@@ -14,13 +14,14 @@
 
     const sanitizedCardName = $derived(removeSpecialCharacters(name));
 
-    let widthClass = $state("");
-    if (size === "Small") {
-        widthClass = "w-1/3"; // 33.3333%
-    } else if (size === "Medium") {
-        widthClass = "w-2/3"; // 66.6667%
-    } else if (size === "Large") {
-        widthClass = "w-full"; // 100%
+    function getWidthClass() {
+        if (size === "Small") {
+            return "w-1/3"; // 33.3333%
+        } else if (size === "Medium") {
+            return "w-2/3"; // 66.6667%
+        } else if (size === "Large") {
+            return "w-full"; // 100%
+        }
     }
 </script>
 
@@ -35,6 +36,6 @@
     <img
         src={`/images/${type}/${sanitizedCardName}.avif`}
         alt={name}
-        class={`absolute top-0 bottom-0 left-0 right-0 mx-auto ${widthClass} h-full object-fill`}
+        class={`absolute top-0 bottom-0 left-0 right-0 mx-auto ${getWidthClass()} h-full object-fill`}
     />
 </div>
