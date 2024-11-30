@@ -19,13 +19,11 @@ self.addEventListener('fetch', event => {
     if (event.request.destination === 'image') {
         const url = new URL(event.request.url);
         if (!url.pathname.startsWith('/images/')) {
-            console.log('ignoring image with url:', url.pathname);			
             return;
         }
 
         event.respondWith((async () => {
             const cachedResponse = await caches.match(event.request);
-            console.log('cache response for url:', url.pathname, cachedResponse);
             if (cachedResponse) {
                 return cachedResponse;
             }
@@ -33,7 +31,6 @@ self.addEventListener('fetch', event => {
                 const networkResponse = await fetch(event.request);
                 const cache = await caches.open(CACHE_NAME);
                 cache.put(event.request, networkResponse.clone());
-                console.log('caching image:', url.pathname);
                 await cleanCache(cache);
                 return networkResponse;
             } catch (error) {
