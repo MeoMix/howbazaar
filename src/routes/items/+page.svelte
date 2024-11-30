@@ -3,6 +3,7 @@
         ClientSideItemCard,
         Hero,
         HiddenTag,
+        ItemSortOptions,
         Size,
         Tag,
         TierType,
@@ -10,13 +11,14 @@
     } from "$lib/types";
     import CardItem from "$lib/components/CardItem.svelte";
     import CardItemFilters from "$lib/components/CardItemFilters.svelte";
-    import { filterItemCards } from "$lib/utils/filterUtils";
+    import { filterItemCards, sortCards } from "$lib/utils/filterUtils";
     import LazyLoadList from "$lib/components/LazyLoadList.svelte";
     import type { PageData } from "./$types";
     import { onMount } from "svelte";
     import { itemsStore } from "$lib/stores/itemsStore";
     import { fetchJson } from "$lib/utils/fetchUtils";
     import Switch from "$lib/components/Switch.svelte";
+    import Select from "$lib/components/Select.svelte";
 
     const { data }: { data: PageData } = $props();
 
@@ -73,25 +75,48 @@
     let isMonsterDropsOnly = $state(false);
     // TODO: Consider persisting this in a store and/or in local storage
     let areEnchantmentsShown = $state(true);
+    let selectedSortOption = $state("alphabetical" as ItemSortOptions);
 
     const filteredCards = $derived(
-        filterItemCards(
-            cardItems,
-            selectedHeroes,
-            selectedTiers,
-            tagStates,
-            selectedSizes,
-            searchText,
-            isSearchNameOnly,
-            isSearchEnchantments,
-            isMatchAnyTag,
-            isMonsterDropsOnly,
+        sortCards(
+            filterItemCards(
+                cardItems,
+                selectedHeroes,
+                selectedTiers,
+                tagStates,
+                selectedSizes,
+                searchText,
+                isSearchNameOnly,
+                isSearchEnchantments,
+                isMatchAnyTag,
+                isMonsterDropsOnly,
+            ),
+            selectedSortOption,
         ),
     );
 
     const onToggleEnchantments = () => {
         areEnchantmentsShown = !areEnchantmentsShown;
     };
+
+    let sortOptions: { name: string; value: ItemSortOptions }[] = [
+        {
+            value: "alphabetical",
+            name: "A-Z",
+        },
+        {
+            value: "tier",
+            name: "Tier",
+        },
+        {
+            value: "size",
+            name: "Size",
+        },
+        {
+            value: "hero",
+            name: "Hero",
+        },
+    ];
 </script>
 
 <svelte:head>
@@ -114,7 +139,9 @@
     bind:isMonsterDropsOnly
 />
 
-<div class="mx-auto w-full max-w-full sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg">
+<div
+    class="mx-auto w-full max-w-full sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg"
+>
     {#if isLoading}
         <div>Loading items...</div>
     {:else}
@@ -123,9 +150,25 @@
         {/snippet}
 
         {#snippet headerControls()}
-            <Switch isChecked={areEnchantmentsShown} onClick={onToggleEnchantments} label="Show Enchantments" />
+            <Switch
+                isChecked={areEnchantmentsShown}
+                onClick={onToggleEnchantments}
+                label="Show Enchantments"
+            />
+            <Select
+                options={sortOptions}
+                selectedOption={selectedSortOption}
+                onSelectOption={(option) => {
+                    selectedSortOption = option;
+                }}
+            />
         {/snippet}
 
-        <LazyLoadList items={filteredCards} {listItem} {headerControls} listItemName="item" />
+        <LazyLoadList
+            items={filteredCards}
+            {listItem}
+            {headerControls}
+            listItemName="item"
+        />
     {/if}
 </div>

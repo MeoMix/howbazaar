@@ -42,14 +42,16 @@
 
 <div class="space-y-4">
     <div class="flex justify-between items-center">
-        <div class="text-lg">
+        <div class="text-lg flex-grow">
             {items.length}
             {listItemName}{items.length === 1 ? "" : "s"} found.
         </div>
-
-        {#if headerControls}
-            {@render headerControls()}
-        {/if}
+    
+        <div class="flex space-x-2">
+            {#if headerControls}
+                {@render headerControls()}
+            {/if}
+        </div>
     </div>
 
     {#each visibleItems as item}

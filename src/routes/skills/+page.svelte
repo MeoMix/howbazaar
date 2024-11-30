@@ -3,18 +3,20 @@
         ClientSideSkillCard,
         Hero,
         HiddenTag,
+        SkillSortOptions,
         Tag,
         TierType,
         TriState,
     } from "$lib/types";
     import CardSkill from "$lib/components/CardSkill.svelte";
-    import { filterSkillCards } from "$lib/utils/filterUtils";
+    import { filterSkillCards, sortCards } from "$lib/utils/filterUtils";
     import CardSkillFilters from "$lib/components/CardSkillFilters.svelte";
     import LazyLoadList from "$lib/components/LazyLoadList.svelte";
     import { onMount } from "svelte";
     import { fetchJson } from "$lib/utils/fetchUtils";
     import type { PageData } from "./$types";
     import { skillsStore } from "$lib/stores/skillsStore";
+    import Select from "$lib/components/Select.svelte";
 
     const { data }: { data: PageData } = $props();
 
@@ -72,22 +74,39 @@
     let searchText = $state("");
     let isSearchNameOnly = $state(false);
     let isMonsterDropsOnly = $state(false);
+    let selectedSortOption = $state("alphabetical" as SkillSortOptions);
 
     const filteredCards = $derived(
-        heroStates && tagStates
-            ? filterSkillCards(
-                  cardSkills,
-                  heroStates,
-                  selectedTiers,
-                  tagStates,
-                  searchText,
-                  isSearchNameOnly,
-                  isMatchAnyTag,
-                  isMatchAnyHero,
-                  isMonsterDropsOnly,
-              )
-            : [],
+        sortCards(
+            filterSkillCards(
+                cardSkills,
+                heroStates,
+                selectedTiers,
+                tagStates,
+                searchText,
+                isSearchNameOnly,
+                isMatchAnyTag,
+                isMatchAnyHero,
+                isMonsterDropsOnly,
+            ),
+            selectedSortOption,
+        ),
     );
+
+    let sortOptions: { name: string; value: SkillSortOptions }[] = [
+        {
+            value: "alphabetical",
+            name: "A-Z",
+        },
+        {
+            value: "tier",
+            name: "Tier",
+        },
+        {
+            value: "hero",
+            name: "Hero",
+        },
+    ];
 </script>
 
 <svelte:head>
@@ -108,7 +127,9 @@
     bind:isMonsterDropsOnly
 />
 
-<div class="mx-auto w-full max-w-full sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg">
+<div
+    class="mx-auto w-full max-w-full sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg"
+>
     {#if isLoading}
         <div>Loading skills...</div>
     {:else}
@@ -116,6 +137,21 @@
             <CardSkill {card} />
         {/snippet}
 
-        <LazyLoadList items={filteredCards} {listItem} listItemName="skill" />
+        {#snippet headerControls()}
+            <Select
+                options={sortOptions}
+                selectedOption={selectedSortOption}
+                onSelectOption={(option) => {
+                    selectedSortOption = option;
+                }}
+            />
+        {/snippet}
+
+        <LazyLoadList
+            items={filteredCards}
+            {listItem}
+            {headerControls}
+            listItemName="skill"
+        />
     {/if}
 </div>

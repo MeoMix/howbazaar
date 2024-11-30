@@ -124,6 +124,8 @@ export default {
     './node_modules/flowbite-svelte/dist/buttons/Button.svelte',
     './node_modules/flowbite-svelte/dist/cards/Card.svelte',
     './node_modules/flowbite-svelte/dist/darkmode/DarkMode.svelte',
+    './node_modules/flowbite-svelte/dist/dropdown/Dropdown.svelte',
+    './node_modules/flowbite-svelte/dist/dropdown/DropdownItem.svelte',
     './node_modules/flowbite-svelte/dist/footer/Footer.svelte',
     './node_modules/flowbite-svelte/dist/footer/FooterLink.svelte',
     './node_modules/flowbite-svelte/dist/footer/FooterLinkGroup.svelte',

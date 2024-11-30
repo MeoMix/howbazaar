@@ -1,14 +1,14 @@
-import type { ClientSideItemCard, ClientSideSkillCard, Hero, HiddenTag, Size, Tag, TierType, TriState } from "$lib/types";
+import type { ClientSideItemCard, ClientSideSkillCard, Hero, HiddenTag, ItemSortOptions, Size, SkillSortOptions, Tag, TierType, TriState } from "$lib/types";
 import type { Entries } from "type-fest";
 
-const heroes = ["Vanessa", "Pygmalien", "Dooley", "Jules", "Stelle", "Mak", "Common"] as const;
-const tierTypes = ["Bronze", "Silver", "Gold", "Diamond", "Legendary"] as const;
-const sizes = ["Small", "Medium", "Large"];
+export const heroOrder = ["Vanessa", "Pygmalien", "Dooley", "Jules", "Stelle", "Mak", "Common"] as const;
+export const tierOrder = ["Bronze", "Silver", "Gold", "Diamond", "Legendary"] as const;
+export const sizeOrder = ["Small", "Medium", "Large"];
 
 export function getCardFilterOptions(cards: (ClientSideItemCard | ClientSideSkillCard)[]) {
-    const heroOptions = heroes.map(hero => ({ name: hero, value: hero }));
-    const minimumTierOptions = tierTypes.map(minimumTier => ({ name: minimumTier, value: minimumTier }));
-    const sizeOptions = sizes.map(size => ({ name: size, value: size }));
+    const heroOptions = heroOrder.map(hero => ({ name: hero, value: hero }));
+    const minimumTierOptions = tierOrder.map(minimumTier => ({ name: minimumTier, value: minimumTier }));
+    const sizeOptions = sizeOrder.map(size => ({ name: size, value: size }));
     const tagOptions = Array.from(
         new Set(cards.flatMap((card) => filterTags(card.tags, card.hiddenTags)))
     ).sort().map(tag => ({ name: tag, value: tag }));
@@ -246,3 +246,33 @@ export function filterTags(tags: Tag[], hiddenTags: HiddenTag[]) {
         new Set([...tags, ...hiddenTags].map(tag => tag.replace('Reference', '')))
     ).sort();
 }
+
+export function sortCards<T extends (ClientSideItemCard | ClientSideSkillCard)>(cards: T[], selectedSortOption: (ItemSortOptions | SkillSortOptions)) {
+    return cards.sort((a, b) => {
+        if (selectedSortOption === "alphabetical") {
+            return a.name.localeCompare(b.name);
+        } else if (selectedSortOption === "tier") {
+            // Sort by tier using tierOrder
+            const tierComparison = tierOrder.indexOf(a.startingTier) - tierOrder.indexOf(b.startingTier);
+            if (tierComparison !== 0) {
+                return tierComparison;
+            }
+            // Sort alphabetically within the same tier
+            return a.name.localeCompare(b.name);
+        } else if (selectedSortOption === "size") {
+            // Sort by size using sizeOrder
+            return sizeOrder.indexOf(a.size) - sizeOrder.indexOf(b.size);
+        } else if (selectedSortOption === "hero") {
+            // Sort by heroes[0] using heroOrder
+            const heroComparison = heroOrder.indexOf(a.heroes[0]) - heroOrder.indexOf(b.heroes[0]);
+            if (heroComparison !== 0) {
+                return heroComparison;
+            }
+            // Sort alphabetically within the same hero
+            return a.name.localeCompare(b.name);
+        }
+
+        // Default to alphabetical sorting
+        return a.name.localeCompare(b.name);
+    });
+};

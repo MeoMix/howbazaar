@@ -156,3 +156,6 @@ export type MonsterEncounterDaysApiResponse = {
     data: ClientSideMonsterEncounterDay[];
     version: string;
 }
+
+export type ItemSortOptions = "alphabetical" | "tier" | "size" | "hero";
+export type SkillSortOptions = "alphabetical" | "tier" | "hero";
