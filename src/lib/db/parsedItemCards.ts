@@ -431,7 +431,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to your shield."
+          "Heal equal to your shield. [BUGGED IN GAME. GIVES VERY LITTLE HEAL]"
         ]
       },
       {

@@ -411,7 +411,7 @@ describe('cardJsonParser', () => {
       const restorativeEnchantment = forceField.enchantments.find(enchantment => enchantment.type === 'Restorative')!;
 
       expect(restorativeEnchantment.tooltips.length).toEqual(1);
-      expect(restorativeEnchantment.tooltips[0]).toEqual('Heal equal to your shield.');
+      expect(restorativeEnchantment.tooltips[0]).toEqual('Heal equal to your shield. [BUGGED IN GAME. GIVES VERY LITTLE HEAL]');
     });
 
     it('should contain no enchantment tooltips with {', () => {

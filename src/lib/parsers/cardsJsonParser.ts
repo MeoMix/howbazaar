@@ -536,7 +536,7 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
 
                 // TODO: Do this intelligently not patch fix
                 if (card.Localization.Title.Text === "Force Field" && enchantmentType === "Restorative") {
-                    tooltips = ["Heal equal to your shield."];
+                    tooltips = ["Heal equal to your shield. [BUGGED IN GAME. GIVES VERY LITTLE HEAL]"];
                 }
             }
 
