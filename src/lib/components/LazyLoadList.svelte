@@ -6,7 +6,7 @@
         listItemName,
         listItem,
         headerControls,
-        batchSize = 5,
+        batchSize = 10,
     }: {
         items: T[];
         listItemName: string;
