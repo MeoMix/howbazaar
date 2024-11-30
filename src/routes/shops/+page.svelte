@@ -57,67 +57,7 @@
             Gold: 0.4,
             Diamond: 0.1,
         },
-        "10": {
-            Bronze: 0.0,
-            Silver: 0.3,
-            Gold: 0.5,
-            Diamond: 0.2,
-        },
-        "11": {
-            Bronze: 0.0,
-            Silver: 0.3,
-            Gold: 0.5,
-            Diamond: 0.2,
-        },
-        "12": {
-            Bronze: 0.0,
-            Silver: 0.3,
-            Gold: 0.5,
-            Diamond: 0.2,
-        },
-        "13": {
-            Bronze: 0.0,
-            Silver: 0.3,
-            Gold: 0.5,
-            Diamond: 0.2,
-        },
-        "14": {
-            Bronze: 0.0,
-            Silver: 0.3,
-            Gold: 0.5,
-            Diamond: 0.2,
-        },
-        "15": {
-            Bronze: 0.0,
-            Silver: 0.3,
-            Gold: 0.5,
-            Diamond: 0.2,
-        },
-        "16": {
-            Bronze: 0.0,
-            Silver: 0.3,
-            Gold: 0.5,
-            Diamond: 0.2,
-        },
-        "17": {
-            Bronze: 0.0,
-            Silver: 0.3,
-            Gold: 0.5,
-            Diamond: 0.2,
-        },
-        "18": {
-            Bronze: 0.0,
-            Silver: 0.3,
-            Gold: 0.5,
-            Diamond: 0.2,
-        },
-        "19": {
-            Bronze: 0.0,
-            Silver: 0.3,
-            Gold: 0.5,
-            Diamond: 0.2,
-        },
-        "20": {
+        "10+": {
             Bronze: 0.0,
             Silver: 0.3,
             Gold: 0.5,
