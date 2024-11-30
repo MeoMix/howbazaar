@@ -17,6 +17,7 @@
         FooterLink,
     } from "flowbite-svelte";
     import CheckCircleOutline from "flowbite-svelte-icons/CheckCircleOutline.svelte";
+    import DiscordSolid from "flowbite-svelte-icons/DiscordSolid.svelte";
     import { type Snippet } from "svelte";
     import { fly } from "svelte/transition";
     import { page } from "$app/stores";
@@ -71,6 +72,13 @@
         </NavBrand>
 
         <div class="flex md:order-2 items-center">
+            <a
+                href="https://discord.gg/VrGGFYEXXz"
+                target="_blank"
+                class="hover:text-gray-900 dark:text-bazaar-tan700 dark:hover:text-bazaar-orange dark:hover:bg-bazaar-brown p-2.5 rounded-lg"
+            >
+                <DiscordSolid />
+            </a>
             <DarkMode
                 class="hover:text-gray-900 dark:text-bazaar-tan700 dark:hover:text-bazaar-orange dark:hover:bg-bazaar-brown"
             />
@@ -87,24 +95,34 @@
             activeUrl={`${$page.url.pathname}${$page.url.search}`}
             nonActiveClass="dark:text-bazaar-tan700 md:dark:hover:text-bazaar-orange hover:bg-gray-200 dark:hover:bg-bazaar-brown hover:text-bazaar-orange dark:hover:text-bazaar-orange md:hover:bg-transparent md:dark:hover:bg-transparent"
             activeClass="text-bazaar-orange dark:text-bazaar-orange md:text-bazaar-orange md:dark:text-bazaar-orange bg-gray-200 dark:bg-bazaar-brown md:bg-transparent md:dark:bg-transparent"
-            ulClass="flex flex-col p-4 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:text-sm md:font-medium dark:bg-bazaar-background dark:border-bazaar-brown"
+            ulClass="flex flex-col mt-4 md:flex-row md:space-x-0 rtl:space-x-reverse md:mt-0 md:text-sm md:font-medium dark:bg-bazaar-background dark:border-bazaar-brown"
             slideParams={{ duration: 0 }}
             hidden={!isHamburgerMenuOpen}
         >
-            <NavLi href={`/items${$page.url.search}`} on:click={onNavLiClick}
-                >Items</NavLi
+            <NavLi
+                class="md:p-4"
+                href={`/items${$page.url.search}`}
+                on:click={onNavLiClick}>Items</NavLi
             >
-            <NavLi href={`/skills${$page.url.search}`} on:click={onNavLiClick}
-                >Skills</NavLi
+            <NavLi
+                class="md:p-4"
+                href={`/skills${$page.url.search}`}
+                on:click={onNavLiClick}>Skills</NavLi
             >
-            <NavLi href={`/monsters${$page.url.search}`} on:click={onNavLiClick}
-                >Monsters</NavLi
+            <NavLi
+                class="md:p-4"
+                href={`/monsters${$page.url.search}`}
+                on:click={onNavLiClick}>Monsters</NavLi
             >
-            <NavLi href={`/shops${$page.url.search}`} on:click={onNavLiClick}
-                >Shops</NavLi
+            <NavLi
+                class="md:p-4"
+                href={`/shops${$page.url.search}`}
+                on:click={onNavLiClick}>Shops</NavLi
             >
-            <NavLi href={`/contact${$page.url.search}`} on:click={onNavLiClick}
-                >Contact & Upcoming Features</NavLi
+            <NavLi
+                class="md:p-4"
+                href={`/contact${$page.url.search}`}
+                on:click={onNavLiClick}>Contact & Upcoming Features</NavLi
             >
         </NavUl>
         <div
