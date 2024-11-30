@@ -1,5 +1,6 @@
 import type { ClientSideItemCard, ClientSideSkillCard, Hero, HiddenTag, ItemSortOptions, Size, SkillSortOptions, Tag, TierType, TriState } from "$lib/types";
 import type { Entries } from "type-fest";
+import levenshtein from 'fast-levenshtein';
 
 export const heroOrder = ["Vanessa", "Pygmalien", "Dooley", "Jules", "Stelle", "Mak", "Common"] as const;
 export const tierOrder = ["Bronze", "Silver", "Gold", "Diamond", "Legendary"] as const;
@@ -106,29 +107,8 @@ function matchesSearchText(
         text.toLowerCase().includes(searchText.toLowerCase());
 
     const fuzzyMatch = (text: string, searchText: string, threshold: number = 1): boolean => {
-        const distance = levenshtein(text.toLowerCase(), searchText.toLowerCase());
+        const distance = levenshtein.get(text.toLowerCase(), searchText.toLowerCase());
         return distance <= threshold;
-    };
-
-    const levenshtein = (a: string, b: string): number => {
-        const matrix = Array.from({ length: a.length + 1 }, (_, i) =>
-            Array(b.length + 1).fill(i)
-        );
-
-        for (let j = 0; j <= b.length; j++) matrix[0][j] = j;
-
-        for (let i = 1; i <= a.length; i++) {
-            for (let j = 1; j <= b.length; j++) {
-                const cost = a[i - 1] === b[j - 1] ? 0 : 1;
-                matrix[i][j] = Math.min(
-                    matrix[i - 1][j] + 1, // Deletion
-                    matrix[i][j - 1] + 1, // Insertion
-                    matrix[i - 1][j - 1] + cost // Substitution
-                );
-            }
-        }
-
-        return matrix[a.length][b.length];
     };
 
     const hybridMatch = (text: string, searchText: string): boolean => {
