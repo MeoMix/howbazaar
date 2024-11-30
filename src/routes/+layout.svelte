@@ -22,6 +22,20 @@
     import { page } from "$app/stores";
     import { clipboardState } from "$lib/stores/clipboard";
 
+    if ("serviceWorker" in navigator) {
+        navigator.serviceWorker
+            .register("/service-worker.js", { scope: '/images/' })
+            .then((registration) => {
+                console.log(
+                    "Service Worker registered with scope:",
+                    registration.scope,
+                );
+            })
+            .catch((error) => {
+                console.error("Service Worker registration failed:", error);
+            });
+    }
+
     let toastStatus = $state(false);
     let toastClearTimeout: ReturnType<typeof setTimeout>;
     clipboardState.subscribe((value) => {

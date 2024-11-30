@@ -1,6 +1,4 @@
 <script lang="ts">
-    import Divider from "$lib/components/Divider.svelte";
-
     // TODO: Don't hardcode this client-side
     const dayTiersMap = {
         "1": {
