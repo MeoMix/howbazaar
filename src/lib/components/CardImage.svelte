@@ -12,7 +12,7 @@
         size: Size;
     } = $props();
 
-    const sanitizedCardName = removeSpecialCharacters(name);
+    const sanitizedCardName = $derived(removeSpecialCharacters(name));
 
     let widthClass = $state("");
     if (size === "Small") {
