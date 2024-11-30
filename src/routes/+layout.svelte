@@ -83,6 +83,9 @@
             <NavLi href={`/monsters${$page.url.search}`} on:click={onNavLiClick}
                 >Monsters</NavLi
             >
+            <NavLi href={`/shops${$page.url.search}`} on:click={onNavLiClick}
+                >Shops</NavLi
+            >
             <NavLi href={`/contact${$page.url.search}`} on:click={onNavLiClick}
                 >Contact & Upcoming Features</NavLi
             >
