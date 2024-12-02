@@ -52,7 +52,7 @@
     }
 
     let isShowingAdvancedFilters = $state(
-        $page.url.searchParams.has("isShowingAdvancedFilters"),
+        $page.url.searchParams.get("isShowingAdvancedFilters") === "true",
     );
 
     onMount(async () => {
