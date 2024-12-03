@@ -1812,14 +1812,9 @@ const data: ParsedMonster[] = [
         "socketId": "Socket_3"
       },
       {
-        "templateId": "844efa15-de6f-4fec-a438-21904969577b",
+        "templateId": "349fc81f-2b3a-4d39-beaa-6a0d5105a19a",
         "tierType": "Silver",
         "socketId": "Socket_4"
-      },
-      {
-        "templateId": "6d6199b4-82a4-441d-9329-f4164737ac6b",
-        "tierType": "Silver",
-        "socketId": "Socket_5"
       },
       {
         "templateId": "8391a75d-56e7-4206-a16e-62dbd986925f",
@@ -1827,9 +1822,9 @@ const data: ParsedMonster[] = [
         "socketId": "Socket_6"
       },
       {
-        "templateId": "48d24eb0-d953-409c-9602-1d3d4c4278c5",
+        "templateId": "9d289951-bda7-4f74-a5cf-dbe350c0cae5",
         "tierType": "Silver",
-        "socketId": "Socket_7"
+        "socketId": "Socket_6"
       },
       {
         "templateId": "dc3bf5cb-45fa-46c7-9a0e-3f3bfb01697d",
@@ -3048,18 +3043,6 @@ const data: ParsedMonster[] = [
     ]
   },
   {
-    "id": "e98f8212-6dc2-463d-87cc-9d407c60c50d",
-    "level": 20,
-    "health": 1000,
-    "items": [],
-    "skills": [
-      {
-        "templateId": "fcb51ffd-6d25-4e74-871a-7dc0de2bae91",
-        "tierType": "Legendary"
-      }
-    ]
-  },
-  {
     "id": "7719b6d8-7977-4d49-88a2-da29a19ad235",
     "level": 4,
     "health": 500,
@@ -3070,12 +3053,12 @@ const data: ParsedMonster[] = [
         "socketId": "Socket_1"
       },
       {
-        "templateId": "f8dd1239-f4a3-4bca-b975-2125906e7fcb",
-        "tierType": "Silver",
+        "templateId": "d619c665-1d58-46e8-828f-6e7e36a86a7d",
+        "tierType": "Gold",
         "socketId": "Socket_2"
       },
       {
-        "templateId": "27e2ea0b-4e39-4826-be29-9f5505d5938a",
+        "templateId": "f8b41c46-8adc-4e84-835a-831e2e3d84d1",
         "tierType": "Silver",
         "socketId": "Socket_3"
       },
@@ -4435,6 +4418,10 @@ const data: ParsedMonster[] = [
     "skills": [
       {
         "templateId": "f9b262a7-73fc-43b0-ad69-da351e927829",
+        "tierType": "Bronze"
+      },
+      {
+        "templateId": "b6c90dc6-f497-4fe4-90a1-759947180884",
         "tierType": "Bronze"
       }
     ]
