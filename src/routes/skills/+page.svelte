@@ -74,7 +74,7 @@
     let searchText = $state("");
     let isSearchNameOnly = $state(false);
     let isMonsterDropsOnly = $state(false);
-    let selectedSortOption = $state("alphabetical" as SkillSortOptions);
+    let selectedSortOption = $state("name" as SkillSortOptions);
 
     const filteredCards = $derived(
         sortCards(
@@ -95,8 +95,8 @@
 
     let sortOptions: { name: string; value: SkillSortOptions }[] = [
         {
-            value: "alphabetical",
-            name: "A-Z",
+            value: "name",
+            name: "Name",
         },
         {
             value: "tier",

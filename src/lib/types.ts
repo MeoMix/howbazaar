@@ -157,5 +157,5 @@ export type MonsterEncounterDaysApiResponse = {
     version: string;
 }
 
-export type ItemSortOptions = "alphabetical" | "tier" | "size" | "hero";
-export type SkillSortOptions = "alphabetical" | "tier" | "hero";
+export type ItemSortOptions = "name" | "tier" | "size" | "hero";
+export type SkillSortOptions = "name" | "tier" | "hero";

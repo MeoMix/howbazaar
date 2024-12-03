@@ -75,7 +75,7 @@
     let isMonsterDropsOnly = $state(false);
     // TODO: Consider persisting this in a store and/or in local storage
     let areEnchantmentsShown = $state(true);
-    let selectedSortOption = $state("alphabetical" as ItemSortOptions);
+    let selectedSortOption = $state("name" as ItemSortOptions);
 
     const filteredCards = $derived(
         sortCards(
@@ -101,8 +101,8 @@
 
     let sortOptions: { name: string; value: ItemSortOptions }[] = [
         {
-            value: "alphabetical",
-            name: "A-Z",
+            value: "name",
+            name: "Name",
         },
         {
             value: "tier",
