@@ -13,7 +13,9 @@
 		"parseGameJson": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"ESNext\"}' tsx scripts/parseGameJson.ts",
 		"processSkillImages": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"ESNext\"}' tsx scripts/processSkillImages.ts",
 		"processMonsterImages": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"ESNext\"}' tsx scripts/processMonsterImages.ts",
-		"processItemImages": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"ESNext\"}' tsx scripts/processItemImages.ts"
+		"processItemImages": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"ESNext\"}' tsx scripts/processItemImages.ts",
+		"extractIds": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"ESNext\"}' tsx scripts/extractIds.ts",
+		"extractMonsterTemplateIds": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"ESNext\"}' tsx scripts/extractMonsterTemplateIds.ts"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-vercel": "^5.4.7",

@@ -31,7 +31,12 @@ export function getMonsterEncounterDays(
                     }
 
                     const cardName = combatEncounter.name;
-                    const monster = monsters.find(monster => monster.id === combatEncounter.monsterTemplateId)!;
+                    const monster = monsters.find(monster => monster.id === combatEncounter.monsterTemplateId);
+
+                    if (monster === undefined) {
+                        console.log(`Failed to find monster with templateId: ${combatEncounter.monsterTemplateId}`);
+                        return null;
+                    }
 
                     const items = monster.items.map(item => {
                         const itemCard = itemCards.find(card => card.id === item.templateId);

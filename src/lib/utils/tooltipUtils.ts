@@ -210,7 +210,12 @@ const tierOrder = ["Bronze", "Silver", "Gold", "Diamond", "Legendary"] as const;
  * @returns {Array} An array of parts where each part is either a string or an array of colored segments.
  */
 export function parseTooltipForRendering(str: string, startingTier: TierType) {
-    const output = [];
+    const output: string[] = [];
+
+    if (!str) {
+        return output;
+    }
+
     const regex = /(\([^)]*\))/g; // Matches content within parentheses
     let lastIndex = 0;
     let match;

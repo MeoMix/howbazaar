@@ -105,6 +105,13 @@
     <title>Monsters · How Bazaar</title>
 </svelte:head>
 
+<div class="text-lg text-red-500">
+    WARNING: This information has not been updated to reflect the Dec 3rd patch.
+    The files used to generate this info were deleted on Tempo's side. A new
+    approach to acquiring the information needs to be devised. Until then, all
+    updates to this area will need to be done manually.
+</div>
+
 <div class="my-4">
     <SingleSelectFilter
         label="Day"

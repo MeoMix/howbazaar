@@ -6,6 +6,9 @@ import type { ParsedCombatEncounterCard, ParsedItemCard, ParsedSkillCard } from 
 import type { V2CardsD as Card, Bronze as Tier, Tiers, Tier as TierType, AbilityAction, AuraAction, Ability, Aura, Operation, TargetMode } from "./v2_Cards";
 import { unifyTooltips } from "$lib/utils/tooltipUtils";
 import type { CardsJson } from "./types.parser";
+import invalidItemIds from "./invalidItemIds.json";
+import invalidSkillIds from "./invalidSkillIds.json";
+import monsterTemplateIdMapping from "./monsterTemplateIdMapping.json";
 
 // JSON contains testing data which isn't shown in game during normal operations
 // I didn't see a good flag for hiding these so I'm explicitly banning them.
@@ -335,6 +338,8 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
         entry.SpawningEligibility !== "Never" &&
         entry.Tiers !== undefined &&
         entry.Localization.Title.Text !== null &&
+        !entry.Localization.Title.Text.includes("[DEBUG]") &&
+        !invalidItemIds.includes(entry.Id) &&
         !explicitlyHiddenItemIds.includes(entry.Id);
 
     const validCards = Object.values(cardsJson).filter(isValidItemCard);
@@ -342,6 +347,11 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
     // Sanity check on Abilities and Aura IDs before proceeding.
     // This fixes "Wanted Poster" and ...
     for (let card of validCards) {
+        if (card.Localization.Title.Text === "Flamethrower") {
+            console.log('yo');
+            debugger;
+        }
+
         for (let [abilityKey, ability] of Object.entries(card.Abilities)) {
             if (ability.Id !== abilityKey) {
                 console.warn(
@@ -359,6 +369,29 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
                 aura.Id = auraKey;
             }
         }
+
+        if (card.Enchantments) {
+            for (let [_enchantmentType, enchantment] of Object.entries(card.Enchantments)) {
+                for (let [abilityKey, ability] of Object.entries(enchantment.Abilities as { [key: string]: Ability })) {
+                    if (ability.Id !== abilityKey) {
+                        console.warn(
+                            `WARNING: ${card.Localization.Title.Text} - ability key/id mismatch for  ${abilityKey} / ${ability.Id}. Changing id to match key.`,
+                        );
+                        ability.Id = abilityKey;
+                    }
+                }
+
+                for (let [auraKey, aura] of Object.entries(enchantment.Auras as { [key: string]: Aura })) {
+                    if (aura.Id !== auraKey) {
+                        console.warn(
+                            `WARNING: ${card.Localization.Title.Text} - aura key/id mismatch ${auraKey} / ${aura.Id}. Changing id to match key.`,
+                        );
+                        aura.Id = auraKey;
+                    }
+                }
+            }
+        }
+
     }
 
     const cards = validCards.map(card => {
@@ -401,6 +434,12 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
                     tooltips: []
                 };
             }
+
+            if (card.Localization.Title.Text === "Flamethrower" && enchantmentType === "Toxic") {
+                console.log('yo');
+                debugger;
+            }
+
             const enchantmentAbilities = Object.values(enchantment.Abilities).filter(item => item.Action) as Ability[];
             const enchantmentAuras = Object.values(enchantment.Auras).filter(item => item.Action) as Aura[];
 
@@ -440,6 +479,11 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
                         // Perform actions with `aura` and `suffix` as needed
                         // Example condition: check if `aura` has the required properties
                         if (aura.Action.$type === "TAuraActionCardModifyAttribute" && aura.Action.Target?.$type === "TTargetCardSelf") {
+                            // TODO: Why do I need an exception here?
+                            if (card.Localization.Title.Text === "Flamethrower" && enchantmentType === "Toxic") {
+                                return true;
+                            }
+
                             return false;
                         }
                     }
@@ -573,14 +617,14 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
         }
 
         // Astrolabe has one tooltip that uses the phrase "this and it" where the others say "it and this"
-        if (name === "Astrolabe") {
-            const searchString = "When you use another non-weapon item, this and it gains";
-            const brokenTooltipIndex = tiers.Silver.tooltips.findIndex(tooltip => tooltip.includes(searchString));
+        // if (name === "Astrolabe") {
+        //     const searchString = "When you use another non-weapon item, this and it gains";
+        //     const brokenTooltipIndex = tiers.Silver.tooltips.findIndex(tooltip => tooltip.includes(searchString));
 
-            if (brokenTooltipIndex > -1) {
-                tiers.Silver.tooltips[brokenTooltipIndex] = tiers.Silver.tooltips[brokenTooltipIndex].replace(searchString, "When you use a non-weapon item, it and this gains");
-            }
-        }
+        //     if (brokenTooltipIndex > -1) {
+        //         tiers.Silver.tooltips[brokenTooltipIndex] = tiers.Silver.tooltips[brokenTooltipIndex].replace(searchString, "When you use a non-weapon item, it and this gains");
+        //     }
+        // }
 
         if (name === "Cybersecurity") {
             const searchString = "if its your";
@@ -591,14 +635,14 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
             }
         }
 
-        if (name === "Flamethrower") {
-            const searchString = "double of this";
-            const brokenTooltipIndex = tiers.Gold.tooltips.findIndex(tooltip => tooltip.includes(searchString));
+        // if (name === "Flamethrower") {
+        //     const searchString = "double of this";
+        //     const brokenTooltipIndex = tiers.Gold.tooltips.findIndex(tooltip => tooltip.includes(searchString));
 
-            if (brokenTooltipIndex > -1) {
-                tiers.Gold.tooltips[brokenTooltipIndex] = tiers.Gold.tooltips[brokenTooltipIndex].replace(searchString, "double this");
-            }
-        }
+        //     if (brokenTooltipIndex > -1) {
+        //         tiers.Gold.tooltips[brokenTooltipIndex] = tiers.Gold.tooltips[brokenTooltipIndex].replace(searchString, "double this");
+        //     }
+        // }
 
         if (name === "Multitool") {
             const searchString = "Slow an item";
@@ -653,6 +697,8 @@ function parseSkillCards(cardsJson: CardsJson): ParsedSkillCard[] {
         entry.SpawningEligibility !== "Never" &&
         entry.Tiers !== undefined &&
         entry.Localization.Title.Text !== null &&
+        !entry.Localization.Title.Text.includes("[DEBUG]") &&
+        !invalidSkillIds.includes(entry.Id) &&
         !!entry.ArtKey;
 
     const validSkillCards = Object.values(cardsJson).filter(isValidSkillCard);
@@ -749,6 +795,7 @@ function parseCombatEncounterCards(cardsJson: CardsJson) {
         entry.Type === "CombatEncounter" &&
         entry.SpawningEligibility !== "Never" &&
         entry.CombatantType !== undefined &&
+        (monsterTemplateIdMapping as any)[entry.Id] &&
         entry.Localization.Title.Text !== null;
 
     const validCards = Object.values(cardsJson).filter(isEncounter);
@@ -757,7 +804,7 @@ function parseCombatEncounterCards(cardsJson: CardsJson) {
         return {
             id: card.Id,
             name: card.Localization.Title.Text,
-            monsterTemplateId: card.CombatantType.MonsterTemplateId
+            monsterTemplateId: (monsterTemplateIdMapping as any)[card.Id]
         };
     });
 

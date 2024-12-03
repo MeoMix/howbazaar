@@ -14,6 +14,11 @@ const data: ParsedCombatEncounterCard[] = [
     "monsterTemplateId": "00000000-0000-0000-0000-000000000000"
   },
   {
+    "id": "068d7ed2-3716-4bab-9240-9d7ff63c6fa3",
+    "name": "Training Dummy",
+    "monsterTemplateId": "29549218-4198-44f1-8ebc-e118dd693ddb"
+  },
+  {
     "id": "289ff978-dd65-4484-b905-8ee16d28033c",
     "name": "Coconut Crab",
     "monsterTemplateId": "2e9ed78c-6070-4802-9e98-e1090fe5bd78"
@@ -314,6 +319,11 @@ const data: ParsedCombatEncounterCard[] = [
     "monsterTemplateId": "ce7b529c-819f-41c8-8fc6-8c58968ab2fe"
   },
   {
+    "id": "5ee7d5e2-1df7-4335-9cac-09a5c749b859",
+    "name": "Training Dummy",
+    "monsterTemplateId": "1d95020b-e3a7-4210-8a8e-638126b2137b"
+  },
+  {
     "id": "59917a2d-3253-44f4-aaa4-ca30b512eb59",
     "name": "Hakurvian Rocket Trooper",
     "monsterTemplateId": "aa372e93-c5b0-42e9-8b0c-cd4746d0382c"
@@ -322,6 +332,11 @@ const data: ParsedCombatEncounterCard[] = [
     "id": "254b6aca-26a9-4014-86c3-0da827519c73",
     "name": "Roaming Isle",
     "monsterTemplateId": "b40ae00e-f6df-4920-90a4-a49ea53fbdb5"
+  },
+  {
+    "id": "76c8dc41-96c9-4c05-acb1-5eaab4ea8e17",
+    "name": "Car Conductor",
+    "monsterTemplateId": "75efe2bc-97e2-4b72-b1e2-778ab3bc3645"
   },
   {
     "id": "e417b047-a681-4e85-90b7-22ab71f73bf0",
@@ -392,6 +407,11 @@ const data: ParsedCombatEncounterCard[] = [
     "id": "b93f5b44-ba9f-4196-a94e-c5de17ab5c5d",
     "name": "Boarrior",
     "monsterTemplateId": "6d939dd0-fd9b-46b8-8861-cccb818757da"
+  },
+  {
+    "id": "d0e031f9-16c8-4ebf-a9bf-986dc3f41a1f",
+    "name": "Skill Board Test Monster",
+    "monsterTemplateId": "a6d543e2-e4fc-4e7d-a2b3-998ee6ef1a50"
   },
   {
     "id": "7294ff99-ca2b-409e-838f-0efdb10dded0",
@@ -479,6 +499,11 @@ const data: ParsedCombatEncounterCard[] = [
     "monsterTemplateId": "ee26b888-c50f-43cf-848b-ca572b6e9583"
   },
   {
+    "id": "b98f8dc6-5173-4882-a227-a3019c486c37",
+    "name": "QA Test Monster",
+    "monsterTemplateId": "5b3da8f1-5834-4a8d-967f-f98e8989b26f"
+  },
+  {
     "id": "78139f32-94b1-4dc6-9ef0-374c3c8863a7",
     "name": "Dire Inglet",
     "monsterTemplateId": "626224f6-4aea-458f-8947-86a4798de419"
@@ -512,6 +537,11 @@ const data: ParsedCombatEncounterCard[] = [
     "id": "265d1068-e90d-49c4-8013-ed2e856ead8f",
     "name": "Property Baron",
     "monsterTemplateId": "c084c86f-7908-41d7-9c2b-13ab7dfef4b3"
+  },
+  {
+    "id": "78c335a6-42bc-45e2-a8e7-e9a1dce7502d",
+    "name": "Cloudtop Officer",
+    "monsterTemplateId": "9af5fe85-c06f-4227-906c-e5f8df83a0fd"
   },
   {
     "id": "d9e56b4c-8ad2-465d-b44c-45a7f2562bde",
