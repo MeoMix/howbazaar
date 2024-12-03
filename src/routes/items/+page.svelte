@@ -123,25 +123,25 @@
     <title>Items · How Bazaar</title>
 </svelte:head>
 
-<CardItemFilters
-    heroOptions={data.heroOptions}
-    minimumTierOptions={data.minimumTierOptions}
-    tagOptions={data.tagOptions}
-    sizeOptions={data.sizeOptions}
-    bind:selectedHeroes
-    bind:selectedTiers
-    bind:tagStates
-    bind:selectedSizes
-    bind:isMatchAnyTag
-    bind:searchText
-    bind:isSearchNameOnly
-    bind:isSearchEnchantments
-    bind:isMonsterDropsOnly
-/>
-
 <div
-    class="mx-auto w-full max-w-full sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg"
+    class="mx-auto w-full max-w-full sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl"
 >
+    <CardItemFilters
+        heroOptions={data.heroOptions}
+        minimumTierOptions={data.minimumTierOptions}
+        tagOptions={data.tagOptions}
+        sizeOptions={data.sizeOptions}
+        bind:selectedHeroes
+        bind:selectedTiers
+        bind:tagStates
+        bind:selectedSizes
+        bind:isMatchAnyTag
+        bind:searchText
+        bind:isSearchNameOnly
+        bind:isSearchEnchantments
+        bind:isMonsterDropsOnly
+    />
+
     {#if isLoading}
         <div>Loading items...</div>
     {:else}

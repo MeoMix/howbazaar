@@ -22,16 +22,10 @@
 
 <button
     onclick={viewDetails}
-    class={`w-full flex flex-col items-center group hover:text-bazaar-orange dark:hover:text-bazaar-orange ${isActive ? "text-bazaar-orange dark:text-bazaar-orange" : ""}`}
+    class={`p-2 pb-0 border rounded-lg border-bazaar-brown w-full flex flex-col md:flex-row items-center md:items-start group hover:text-bazaar-orange dark:hover:text-bazaar-orange dark:hover:border-bazaar-orange ${isActive ? "border-bazaar-orange text-bazaar-orange dark:text-bazaar-orange" : ""}`}
 >
     <div
-        class="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl font-bold mb-1 text-center w-full h-12 flex items-center justify-center overflow-hidden"
-    >
-        {monsterEncounter.cardName}
-    </div>
-
-    <div
-        class="relative rounded-t-full overflow-hidden transition-all transform w-full max-w-[10rem] aspect-[1/1]"
+        class="max-w-24 relative rounded-t-full overflow-hidden transition-all transform w-[10rem] aspect-[1/1] md:mr-4"
         style="clip-path: inset(0 0 10px 0 round 0 0 5% 5%);"
     >
         <img
@@ -47,6 +41,18 @@
                 class="text-white font-bold text-xs sm:text-sm md:text-base lg:text-lg"
                 >View</span
             >
+        </div>
+    </div>
+
+    <div
+        class="flex flex-col text-sm md:text-base lg:text-lg font-semibold text-center md:text-left md:flex-1"
+    >
+        <div>
+            {monsterEncounter.cardName}
+        </div>
+
+        <div class="text-green-700 whitespace-nowrap">
+            {monsterEncounter.health} health
         </div>
     </div>
 </button>

@@ -113,23 +113,23 @@
     <title>Skills · How Bazaar</title>
 </svelte:head>
 
-<CardSkillFilters
-    heroOptions={data.heroOptions}
-    minimumTierOptions={data.minimumTierOptions}
-    tagOptions={data.tagOptions}
-    bind:heroStates
-    bind:selectedTiers
-    bind:tagStates
-    bind:isMatchAnyTag
-    bind:isMatchAnyHero
-    bind:searchText
-    bind:isSearchNameOnly
-    bind:isMonsterDropsOnly
-/>
-
 <div
-    class="mx-auto w-full max-w-full sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg"
+    class="mx-auto w-full max-w-full sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl"
 >
+    <CardSkillFilters
+        heroOptions={data.heroOptions}
+        minimumTierOptions={data.minimumTierOptions}
+        tagOptions={data.tagOptions}
+        bind:heroStates
+        bind:selectedTiers
+        bind:tagStates
+        bind:isMatchAnyTag
+        bind:isMatchAnyHero
+        bind:searchText
+        bind:isSearchNameOnly
+        bind:isMonsterDropsOnly
+    />
+
     {#if isLoading}
         <div>Loading skills...</div>
     {:else}

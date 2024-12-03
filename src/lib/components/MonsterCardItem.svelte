@@ -6,9 +6,8 @@
     } from "$lib/types";
     import { filterTags } from "$lib/utils/filterUtils";
     import { Card } from "flowbite-svelte";
-    import CardBadges from "./CardBadges.svelte";
-    import CardImage from "./CardImage.svelte";
     import Divider from "./Divider.svelte";
+    import MonsterCardImage from "./MonsterCardImage.svelte";
 
     const {
         card,
@@ -31,12 +30,12 @@
 
 <Card
     padding="none"
-    class={`relative text-gray-900 border-2 dark:bg-bazaar-background dark:text-bazaar-tan700 border-tiers-${tierType.toLowerCase()}-400 dark:border-tiers-${tierType.toLowerCase()}-400`}
+    class={`h-full relative text-gray-900 border-2 dark:bg-bazaar-background dark:text-bazaar-tan700 border-tiers-${tierType.toLowerCase()}-400 dark:border-tiers-${tierType.toLowerCase()}-400`}
 >
-    <CardImage name={card.name} type="items" size={card.size} />
+    <MonsterCardImage name={card.name} type="items" size={card.size} />
 
-    <div class="flex flex-col gap-2 p-4 relative">
-        <div class="font-bold text-2xl">
+    <div class="flex flex-col px-4 pb-4 py-2 relative">
+        <div class="font-bold text-lg md:text-xl">
             {#if enchantment}
                 <span
                     class={`text-enchantments-${enchantment.type.toLowerCase()}`}
@@ -47,25 +46,17 @@
             {card.name}
         </div>
 
-        <CardBadges
-            primaryBadges={[
-                { text: tierType, color: tierType.toLowerCase() },
-                { text: card.size },
-            ]}
-            secondaryBadges={tags.map((text) => ({ text }))}
-        />
-        
         <Divider />
 
         {#each card.tiers[tierType].tooltips as tooltip}
-            <div>
+            <div class="text-sm md:text-base">
                 {tooltip}
             </div>
         {/each}
 
         {#if enchantment}
             {#each enchantment.tooltips as tooltip}
-                <div>{tooltip}</div>
+                <div class="text-sm md:text-base">{tooltip}</div>
             {/each}
         {/if}
     </div>
