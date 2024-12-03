@@ -37,7 +37,7 @@ const cleanFileName = (fileName: string): string => {
   const renameRules: { [key: string]: string } = {
     'Fangs': 'Fang',
     'BlueBananas': 'Bluenanas',
-    'MedKit': 'Medkit',
+
     'Cinder': 'Cinders',
     'VialOfBlood': 'VialofBlood',
     'EyeOfTheColossus': 'EyeoftheColossus',
