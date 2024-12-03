@@ -18443,7 +18443,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Toxic",
         "tooltips": [
-          "Poison equal to {aura.e9} times this item's damage."
+          "Poison equal to 2 times this item's damage."
         ]
       },
       {

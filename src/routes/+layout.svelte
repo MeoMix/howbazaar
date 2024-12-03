@@ -15,6 +15,7 @@
         Footer,
         FooterLinkGroup,
         FooterLink,
+        Badge,
     } from "flowbite-svelte";
     import CheckCircleOutline from "flowbite-svelte-icons/CheckCircleOutline.svelte";
     import DiscordSolid from "flowbite-svelte-icons/DiscordSolid.svelte";
@@ -63,11 +64,22 @@
     <Navbar
         class="sticky top-0 z-10 bg-white dark:bg-bazaar-background dark:text-bazaar-tan700"
     >
-        <NavBrand href={`/items${$page.url.search}`}>
+        <NavBrand
+            href={`/items${$page.url.search}`}
+            class="relative inline-block"
+        >
             <span
-                class="self-center whitespace-nowrap text-xl font-semibold dark:text-bazaar-tan700 hover:text-bazaar-orange dark:hover:text-bazaar-orange"
+                class="self-center whitespace-nowrap text-xl font-semibold dark:text-bazaar-tan700 hover:text-bazaar-orange dark:hover:text-bazaar-orange relative z-10"
             >
-                How Bazaar
+                <!-- How Bazaar -->
+                <Badge
+                    border
+                    large
+                    color="green"
+                    class="whitespace-nowrap"
+                >
+                    Updated Dec 3
+                </Badge>
             </span>
         </NavBrand>
 
