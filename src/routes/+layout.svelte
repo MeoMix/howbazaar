@@ -23,23 +23,6 @@
     import { fly } from "svelte/transition";
     import { page } from "$app/stores";
     import { clipboardState } from "$lib/stores/clipboard";
-    import { browser } from "$app/environment";
-
-    if (browser) {
-        if ("serviceWorker" in navigator) {
-            navigator.serviceWorker
-                .register("/service-worker.js")
-                .then((registration) => {
-                    console.log(
-                        "Service Worker registered with scope:",
-                        registration.scope,
-                    );
-                })
-                .catch((error) => {
-                    console.error("Service Worker registration failed:", error);
-                });
-        }
-    }
 
     let toastStatus = $state(false);
     let toastClearTimeout: ReturnType<typeof setTimeout>;
