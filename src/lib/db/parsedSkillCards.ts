@@ -2076,6 +2076,48 @@ const data: ParsedSkillCard[] = [
     ]
   },
   {
+    "id": "1df8d85a-9095-4ab9-952a-c668a4d5d51c",
+    "name": "Electrified Hull",
+    "startingTier": "Gold",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": [
+          "The first 5 times you Shield each fight, charge an item 1 second(s)."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "The first 5 times you Shield each fight, charge an item 2 second(s)."
+        ]
+      },
+      "Legendary": {
+        "tooltips": [
+          "The first 5 times you Shield each fight, charge an item 2 second(s)."
+        ]
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "ShieldReference",
+      "Charge"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Pygmalien",
+      "Dooley"
+    ],
+    "artKey": "Icon_Skill_DOO_NumberOneStunner.png",
+    "unifiedTooltips": [
+      "The first 5 times you Shield each fight, charge an item (1/2) second(s)."
+    ]
+  },
+  {
     "id": "b89ebdeb-1954-47c8-97fe-8cc3008f2a25",
     "name": "Revitalizing Toxins",
     "startingTier": "Bronze",
@@ -8410,6 +8452,55 @@ const data: ParsedSkillCard[] = [
     ]
   },
   {
+    "id": "d08bdeb9-ef08-48be-9df7-0edd9fcff6cf",
+    "name": "Stout Fire",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "When you gain Burn, gain 3 Regeneration and increase the damage of your weapons by 3 for the fight."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "When you gain Burn, gain 6 Regeneration and increase the damage of your weapons by 6 for the fight."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "When you gain Burn, gain 9 Regeneration and increase the damage of your weapons by 9 for the fight."
+        ]
+      },
+      "Legendary": {
+        "tooltips": [
+          "When you gain Burn, gain 9 Regeneration and increase the damage of your weapons by 9 for the fight."
+        ]
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "Regen",
+      "DamageReference",
+      "BurnReference"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Pygmalien",
+      "Vanessa",
+      "Dooley",
+      "Jules",
+      "Stelle",
+      "Mak"
+    ],
+    "artKey": "Icon_Skill_StoutFire.png",
+    "unifiedTooltips": [
+      "When you gain Burn, gain (3/6/9) Regeneration and increase the damage of your weapons by (3/6/9) for the fight."
+    ]
+  },
+  {
     "id": "158c1575-71c6-406c-82c9-f4435d9b37ca",
     "name": "Emergency Shield",
     "startingTier": "Diamond",
@@ -9146,6 +9237,48 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_MedicalWard.png",
     "unifiedTooltips": [
       "Your Large Heal items have (+12/+36/+72/+120) Heal."
+    ]
+  },
+  {
+    "id": "d1e825ba-653c-4993-8002-50c3933c5827",
+    "name": "Machine Learning",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "When you buy or upgrade this, upgrade the core."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "When you buy or upgrade this, upgrade the core."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "When you buy or upgrade this, upgrade the core."
+        ]
+      },
+      "Legendary": {
+        "tooltips": [
+          "When you buy or upgrade this, upgrade the core."
+        ]
+      }
+    },
+    "tags": [
+      "Core"
+    ],
+    "hiddenTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Dooley"
+    ],
+    "artKey": "Icon_Skill_DOO_MachineLearning.png",
+    "unifiedTooltips": [
+      "When you buy or upgrade this, upgrade the core."
     ]
   },
   {

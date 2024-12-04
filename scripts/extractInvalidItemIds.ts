@@ -7,6 +7,17 @@ const allowedList = [
   'aaa7d8fc-dd1b-42b3-9ea0-3b982f2f3790'
 ];
 
+const validCardPacks = ['Dooley_Core', 'Pygmalien_Core', 'Vanessa_Core'];
+
+const getByCriteria = (data: any) => {
+  return Object.values(data)
+    .filter((entry: any) => entry.Type === "Item" && entry.SpawningEligibility === "Never" && !allowedList.includes(entry.Id) && validCardPacks.includes(entry.CardPackId))
+    .map((entry: any) => entry.Id);
+};
+
+console.log('how many?', getByCriteria(cardsJson).length);
+
+
 // Filter the entries
 const getIdsByCriteria = (data: any) => {
   return Object.values(data)
@@ -18,7 +29,7 @@ const getIdsByCriteria = (data: any) => {
 const filteredIds = getIdsByCriteria(cardsJson);
 
 // Output the result
-console.log('Filtered Ids:', filteredIds);
+// console.log('Filtered Ids:', filteredIds);
 
 // Optional: Save to a file
 const filePath = path.resolve(`./src/lib/parsers/invalidItemIds.json`);
