@@ -14,7 +14,7 @@
 		"processSkillImages": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"ESNext\"}' tsx scripts/processSkillImages.ts",
 		"processMonsterImages": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"ESNext\"}' tsx scripts/processMonsterImages.ts",
 		"processItemImages": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"ESNext\"}' tsx scripts/processItemImages.ts",
-		"extractIds": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"ESNext\"}' tsx scripts/extractIds.ts",
+		"extractInvalidItemIds": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"ESNext\"}' tsx scripts/extractInvalidItemIds.ts",
 		"extractInvalidSkillIds": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"ESNext\"}' tsx scripts/extractInvalidSkillIds.ts",
 		"extractMonsterTemplateIds": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"ESNext\"}' tsx scripts/extractMonsterTemplateIds.ts"
 	},
