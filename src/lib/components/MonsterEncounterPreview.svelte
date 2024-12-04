@@ -47,7 +47,7 @@
     <div
         class="flex flex-col text-sm md:text-base lg:text-lg font-semibold text-center md:text-left md:flex-1"
     >
-        <div class={`h-10 md:h-[fit]`}>
+        <div class={`h-10 md:h-auto`}>
             {monsterEncounter.cardName}
         </div>
 
