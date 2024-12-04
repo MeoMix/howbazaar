@@ -5673,6 +5673,47 @@ const data: ParsedSkillCard[] = [
     ]
   },
   {
+    "id": "7931571a-3d32-41e8-bf7b-ca6b4d1b7a3d",
+    "name": "Burning Shield",
+    "startingTier": "Gold",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": [
+          "The first time you fall below half health each fight, Shield equal to the total Burn of your items. 0"
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "The first time you fall below half health each fight, Shield equal to double the total Burn of your items. 0"
+        ]
+      },
+      "Legendary": {
+        "tooltips": [
+          "The first time you fall below half health each fight, Shield equal to double the total Burn of your items. 0"
+        ]
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "BurnReference",
+      "Shield"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Dooley"
+    ],
+    "artKey": "Icon_Skill_BurningShield.png",
+    "unifiedTooltips": [
+      "The first time you fall below half health each fight, Shield equal to (1x/2x) the total Burn of your items. 0"
+    ]
+  },
+  {
     "id": "f568cc30-31d8-48b3-8d26-a0f2032ebc6f",
     "name": "Diamond-tier Heart",
     "startingTier": "Gold",
