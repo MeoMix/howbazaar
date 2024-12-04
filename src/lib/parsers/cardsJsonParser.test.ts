@@ -418,7 +418,7 @@ describe('cardJsonParser', () => {
       const restorativeEnchantment = forceField.enchantments.find(enchantment => enchantment.type === 'Restorative')!;
 
       expect(restorativeEnchantment.tooltips.length).toEqual(1);
-      expect(restorativeEnchantment.tooltips[0]).toEqual('Heal equal to your shield. [BUGGED IN GAME. GIVES VERY LITTLE HEAL]');
+      expect(restorativeEnchantment.tooltips[0]).toEqual('Heal equal to your shield.');
     });
 
     it('should parse "Toxic Flamethrower" correctly by replacing its "{aura.e9}" with a reference to Custom_3 (poison multiplier)', () => {
