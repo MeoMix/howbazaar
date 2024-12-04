@@ -11142,6 +11142,50 @@ const data: ParsedSkillCard[] = [
     ]
   },
   {
+    "id": "b8f04ea6-ecdd-46a0-9ae6-397a090d294b",
+    "name": "Corrosive Toxins",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "When you Poison, enemy Weapons lose 3 damage."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "When you Poison, enemy Weapons lose 6 damage."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "When you Poison, enemy Weapons lose 9 damage."
+        ]
+      },
+      "Legendary": {
+        "tooltips": [
+          "When you Poison, enemy Weapons lose 9 damage."
+        ]
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "PoisonReference"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Vanessa",
+      "Dooley",
+      "Mak"
+    ],
+    "artKey": "Icon_Skill_RapidInfection.png",
+    "unifiedTooltips": [
+      "When you Poison, enemy Weapons lose (3/6/9) damage."
+    ]
+  },
+  {
     "id": "d09d1ff8-a49b-485b-b1e3-ea50c4af5781",
     "name": "Immolating Spark",
     "startingTier": "Bronze",
