@@ -29,9 +29,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your Large Burn items have +16 Burn."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -73,9 +71,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you Crit with an item, it gains +10% Crit Chance for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -122,9 +118,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "The first time you Haste each fight, Freeze an item for 6 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -166,9 +160,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you use a Vehicle, your items gain 30% Crit chance."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -208,9 +200,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you gain Burn, Shield 40."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -254,9 +244,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your leftmost item has +20% Crit chance."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -299,9 +287,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you burn, your items gain +3% Crit Chance for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -348,9 +334,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your Non-Weapon items have +10% Crit chance."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -398,9 +382,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "At the start of each fight, gain 4 gold."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -438,9 +420,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "While your enemy has more health than you, your Shield items have their cooldowns reduced by 20%."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -479,9 +459,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "You have Regeneration equal to half the Poison on your enemy."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -525,9 +503,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "You have +300 Max Health for each Non-Weapon item you have. [0]"
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -564,9 +540,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "The first time you use the Core each fight, freeze an item for 6 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -606,9 +580,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you Crit, your Poison items gain 2 Poison for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -648,9 +620,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you Crit, your weapons gain 20 Damage for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -700,9 +670,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your leftmost Weapon has +2 damage. When you buy a weapon, increase this bonus by 5."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -748,9 +716,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "At the start of each fight, gain shield equal to 50% of your max health."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -791,9 +757,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you Crit, your Heal items gain 20 Heal for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -834,9 +798,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you Crit, your Burn items gain 3 Burn for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -879,9 +841,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "While you have less health than your opponent, your items gain 25% Crit Chance."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -925,9 +885,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your Burn items have +8% Crit Chance."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -963,9 +921,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your weapons have + damage equal to your gold."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -1004,9 +960,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you use a small item, Charge a large item for 1 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -1049,10 +1003,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your Weapons have +6 Damage for each Aquatic item you have. [0]",
-          "Your Shield items have +6 Shield for each Aquatic item you have. [0]"
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -1098,9 +1049,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "The first time you fall below half health each fight, Poison 16."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -1140,9 +1089,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you use a tool, Burn 5."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -1186,9 +1133,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your weapons have +1 Damage. When you buy a Weapon, increase this bonus by +3 Damage."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -1230,9 +1175,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you burn, Haste an item for 2 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -1271,9 +1214,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When any player uses an item, all items gain 4% Crit Chance the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -1313,9 +1254,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your Shield items have +1 Shield for every 2 gold you have. [NaN]"
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -1358,9 +1297,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "The first time you use a Large item each fight, Burn 20."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -1406,9 +1343,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you level up, give your Weapons +20 damage. If you have a Weapon Core, double this."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -1450,9 +1385,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you use a Weapon, Adjacent items gain 12% Crit Chance the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -1492,9 +1425,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "The first 5 times you Crit each fight, charge an item 2 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -1537,9 +1468,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your rightmost Heal item has +60 Heal."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -1578,9 +1507,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you use a large item, haste 3 small items for 3 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -1620,9 +1547,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "The first time you fall below half health each fight, Freeze all enemy items for 3 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -1659,9 +1584,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Double the damage of your Large weapons."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -1707,9 +1630,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "The first time you fall below 50% health each fight, reload 8 items."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -1747,9 +1668,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "If you have 4 or fewer items, you have +2000 Max Health."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -1796,9 +1715,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you Burn, your Weapons gain +8 damage the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -1839,9 +1756,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you Slow, your items gain +3% Crit Chance for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -1887,9 +1802,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "The first time you Slow each fight, Freeze an item for 6 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -1933,9 +1846,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "You have +300 Max Health for each Weapon you have. [0]"
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -1973,9 +1884,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your items have double value during combat."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -2013,9 +1922,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you Burn, gain Shield equal to double that item's Burn."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -2057,9 +1964,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your leftmost item has +50 value during combat."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -2097,9 +2002,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "The first 5 times you Shield each fight, charge an item 2 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -2143,9 +2046,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you Poison, gain 8 Regeneration for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -2188,9 +2089,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you slow, a random weapon gains +20 damage this fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -2231,9 +2130,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "If you have exactly 1 weapon, your Shield items have +30 shield."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -2275,9 +2172,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "If you have exactly one weapon, give it +10 Max Ammo.\nIf it is aquatic, give it +40 damage."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -2319,9 +2214,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "The first 5 times you use a Weapon each fight, charge an item 2 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -2363,9 +2256,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "You have 30 Regeneration."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -2409,9 +2300,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "At the start of each fight, slow an item for 9 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -2449,9 +2338,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "If you have exactly one weapon, it has Lifesteal and 10% Crit Chance."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -2498,9 +2385,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "The first time you fall below half health each fight, Shield equal to 50% of your Max Health. [0]"
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -2539,9 +2424,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "The first time you fall below half health each fight, double all your items' Crit Chance for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -2582,9 +2465,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you use a Property, adjacent items gain 15 Crit chance for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -2626,9 +2507,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "The first time you use a Large item each fight, adjacent Shield items gain 50 Shield for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -2672,9 +2551,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "The first time you fall below half health each fight, gain 40 Regeneration for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -2713,9 +2590,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you use your rightmost item, slow an item for 2 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -2759,9 +2634,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your Poison items have +4 Poison."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -2801,9 +2674,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you use the Core, adjacent weapons gain 10 damage for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -2843,9 +2714,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you use a weapon, give weapons adjacent to it +8 damage for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -2883,9 +2752,7 @@ const data: ParsedSkillCard[] = [
         "tooltips": []
       },
       "Diamond": {
-        "tooltips": [
-          "When you would die, Cleanse all Burn and Poison, double your Max Health and Heal to full. In addition, your enemy gains 1 Gold (this increases by 1 each time this occurs)."
-        ]
+        "tooltips": []
       },
       "Legendary": {
         "tooltips": [
@@ -2926,9 +2793,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you use a Property, your Weapons gain +10 damage and your Shield items gain +10 shield for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -2969,9 +2834,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you Level Up, upgrade a Silver-tier item."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -3006,9 +2869,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "You have Regeneration equal to half the Burn on your enemy."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -3046,9 +2907,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "The first time you fall below half health in a fight, use your Friends."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -3090,9 +2949,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your Medium Poison items have +8 Poison."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -3134,9 +2991,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you use an Ammo item, Burn 4."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -3180,9 +3035,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "The first time you use a Large item each fight, Poison 11."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -3226,9 +3079,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your Weapons deal +20 Damage."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -3273,9 +3124,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "If you have no weapons, your items' cooldowns are reduced by 20%."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -3315,9 +3164,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "You have +16 Regeneration."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -3355,9 +3202,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your leftmost and rightmost Weapons have + Damage equal to double their value."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -3398,9 +3243,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you use a non-Weapon item, a Weapon gains Haste for 2 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -3444,9 +3287,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you use an item with Ammo, give it +10% Crit Chance for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -3485,9 +3326,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you use a Friend, Poison 2."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -3527,9 +3366,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you use your leftmost item, Haste an item for 2 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -3567,9 +3404,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you use The Core, reduce a random item's cooldown by 5% for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -3613,9 +3448,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "The first time you Poison each fight, Freeze an item for 6 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -3658,9 +3491,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you Crit, Haste an item for 3 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -3699,9 +3530,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you use a tool, a Tool gains haste for 2 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -3743,9 +3572,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you use a Friend, your weapons gain 4 damage for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -3788,9 +3615,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you Heal, Poison 3."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -3827,9 +3652,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you slow, charge an item 1 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -3872,9 +3695,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you win a fight against a player, gain 5 gold."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -3916,9 +3737,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you use a weapon, your Shield items gain 9 Shield for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -3964,9 +3783,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your leftmost Shield item has +50 Shield."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -4012,9 +3829,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "At the start of each fight, Poison 12."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -4054,10 +3869,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your items have +50% Crit Chance.",
-          "When you use an item, all your items lose 10% crit chance for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -4094,9 +3906,7 @@ const data: ParsedSkillCard[] = [
         "tooltips": []
       },
       "Diamond": {
-        "tooltips": [
-          "The first time you fall below half health each fight, destroy a random item for the fight."
-        ]
+        "tooltips": []
       },
       "Legendary": {
         "tooltips": [
@@ -4141,9 +3951,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your rightmost Shield item has +50 Shield."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -4185,9 +3993,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you destroy an item during combat, your Weapons gain 200 damage and your burn items gain 20 Burn for this fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -4223,9 +4029,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you sell a medium or large item, get 2 Chocolate Bars."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -4261,9 +4065,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you use a weapon, Freeze a smaller item for 2 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -4307,9 +4109,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you freeze, your weapons gain 8 damage for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -4348,9 +4148,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you buy a property, gain 2 Chocolate Bars and 2 Spare Change."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -4392,9 +4190,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your Heal items have +12% Crit chance."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -4433,9 +4229,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you Burn, Haste the Core for 2 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -4476,9 +4270,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you use a Friend, Burn 3."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -4515,9 +4307,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "If you only have one weapon, it deals triple damage and has its cooldown increased by 50%."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -4555,9 +4345,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your leftmost Weapon has lifesteal."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -4602,9 +4390,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your Shield items have +12% Crit chance."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -4643,9 +4429,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you Slow, Haste a vehicle for 4 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -4687,9 +4471,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your weapons have + damage equal to double your income."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -4734,9 +4516,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your Small Weapons deal +30 Damage."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -4815,9 +4595,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your slowest Poison item has +9 Poison."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -4857,9 +4635,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you use your slowest weapon, freeze a smaller item for 2 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -4901,9 +4677,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you poison, your weapons gain 6 damage for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -4943,9 +4717,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "At the start of each fight, Freeze all non-weapon items for 3 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -4988,9 +4760,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your Large Poison items have +16 Poison."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -5033,10 +4803,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your Burn items have +3 Burn.",
-          "Your Poison items have +3 Poison."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -5082,9 +4849,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your leftmost Weapon deals +40 Damage."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -5131,9 +4896,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your Shield items have + Shield equal to triple your level. [NaN]"
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -5173,9 +4936,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you gain Regeneration, a Burn item gains 2 Burn.."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -5214,9 +4975,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you gain Burn, Heal 60."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -5255,9 +5014,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "At the start of each day, your items gain 2 value."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -5295,9 +5052,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you freeze, give your Weapons +15 damage for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -5341,9 +5096,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "The first time you fall below half health each fight, remove Freeze and Slow from your items and Cleanse half your Burn and Poison."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -5384,9 +5137,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "The first time your opponent falls below half health each fight, Charge your items 4 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -5425,9 +5176,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you Burn, your Shield items gain 5 Shield the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -5466,9 +5215,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you Heal, an item gains 5% Crit Chance for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -5510,9 +5257,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you visit a Merchant, gain 75 Max Health."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -5555,9 +5300,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your Weapons have +10% Crit chance."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -5604,9 +5347,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your Weapons have +6 damage and Shield items have +6 shield for each friend you have. [0, 0]"
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -5652,9 +5393,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "The first time you use a Large item each fight, give your items +16% Crit Chance for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -5694,9 +5433,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you Poison, Charge 1 Burn item for 2 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -5736,9 +5473,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "The first time you fall below half health each fight, Shield equal to double the total Burn of your items. 0"
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -5777,9 +5512,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "You have +500 Max Health for each Diamond-tier item you have. [0]"
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -5816,9 +5549,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your leftmost Tool has Multicast."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -5863,9 +5594,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your Weapons have + Damage equal to triple your income. [NaN]"
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -5906,9 +5635,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you use the Core, Haste 2 items for 4 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -5948,9 +5675,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "If you have a vehicle, reduce your non-vehicle items' cooldowns by 10%."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -5996,9 +5721,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you sell a Weapon, gain 40 Max Health."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -6043,9 +5766,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your Medium Weapons deal +60 Damage."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -6088,9 +5809,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Both players' weapons have double damage."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -6131,9 +5850,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When your opponent Freezes your items, reduce the duration by 1 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -6175,9 +5892,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "The first time you use a Large item each fight, Freeze an item for 10 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -6218,9 +5933,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you use The Core, your Shield items gain 20 Shield for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -6264,9 +5977,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your rightmost Weapon has +40 Damage."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -6311,9 +6022,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you Freeze, your Shield items gain 5 Shield for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -6354,9 +6063,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you use a non-weapon item, Burn 3 and Poison 3."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -6394,9 +6101,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you Heal, Shield 100."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -6434,9 +6139,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your Weapons have Lifesteal."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -6480,9 +6183,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your items have +12% Crit chance."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -6523,9 +6224,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "At the start of each fight, Haste your burn items for 2 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -6569,9 +6268,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your items have +5% Crit Chance per Weapon you have. [0%]"
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -6618,9 +6315,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "The first time you fall below half health each fight, Shield equal to 80% of your Max Health. [0]"
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -6657,9 +6352,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you use a Medium item, give a Burn item +15 burn."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -6699,9 +6392,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you upgrade a Friend, your other items gain 9 bonus Damage, 9 bonus Shield and 3 bonus Burn."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -6742,9 +6433,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When any non-weapon item is used, slow it for 4 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -6787,9 +6476,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your Burn items have +4 Burn."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -6835,9 +6522,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your Medium Shield items have +60 shield."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -6879,9 +6564,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "You have 6 Regeneration for each item with Ammo you have. [0]"
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -6924,9 +6607,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your Small Heal items have +30 Heal."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -6965,9 +6646,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you use a large item, haste an item for 4 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -7005,9 +6684,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you use a large item, Burn 15."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -7047,9 +6724,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your items have +2% crit chance. When you start a fight, increase this bonus by +6%."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -7091,9 +6766,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you use a Tool, Heal 20."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -7133,9 +6806,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "The first time you fall below half health each fight, slow enemy items for 4 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -7175,9 +6846,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "The first time you freeze each fight, Haste your items for 5 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -7220,9 +6889,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "The first time you Freeze each fight, Slow all your opponent's items for 7 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -7265,9 +6932,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your rightmost Burn item has +10 Burn."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -7309,9 +6974,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you use an item, Shield 40."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -7353,9 +7016,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "At the start of each fight, Haste 5 items for 3 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -7395,9 +7056,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you use your leftmost item, Burn 4."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -7438,9 +7097,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "All items have a cooldown increase of 50%."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -7482,9 +7139,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your Medium Heal items have +60 Heal."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -7523,9 +7178,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When your enemy uses a non-weapon item, deal 20 damage."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -7568,9 +7221,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "At the start of each fight, Haste 3 Aquatic items for 6 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -7612,9 +7263,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "The first time you use a Large item each fight, Haste adjacent items for 12 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -7657,9 +7306,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your non-tool items have +15% Crit Chance for each tool you have. [0]"
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -7699,9 +7346,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "If you have exactly one weapon, when you use it, slow an item for 4 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -7743,9 +7388,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you use a Tool, items adjacent to it gain 10% Crit chance."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -7790,9 +7433,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you Haste, Shield 40."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -7829,9 +7470,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you use a Tool, reload 1 to adjacent items."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -7875,9 +7514,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your Shield items have +20 Shield."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -7915,9 +7552,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "At the start of each fight, destroy an item on each player's board for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -7946,9 +7581,7 @@ const data: ParsedSkillCard[] = [
         "tooltips": []
       },
       "Diamond": {
-        "tooltips": [
-          "The first time you would die each fight, Heal to full, Cleanse your Burn and Poison, and Burn yourself 30."
-        ]
+        "tooltips": []
       },
       "Legendary": {
         "tooltips": [
@@ -7987,9 +7620,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your Shield items have + Shield equal to the value of your Items. [0]"
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -8028,9 +7659,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "At the start of each fight, deal damage equal to 30% of the enemy's Max Health."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -8072,9 +7701,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your rightmost item has +20% Crit chance."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -8119,9 +7746,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you buy a Property, gain 150 Max Health."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -8163,10 +7788,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you use an item, your items gain 15% crit chance for the fight.",
-          "Your items have 50% less crit chance."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -8214,9 +7836,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "The first time you Crit each fight, Freeze an item for 6 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -8255,9 +7875,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you use an Aquatic item, Haste a weapon for 2 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -8298,9 +7916,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you gain gold, gain Max Health equal to double the amount of gold gained."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -8341,9 +7957,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you Shield, your weapons gain 9 damage for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -8386,9 +8000,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you use an item with Burn, that item gains 2 Burn for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -8430,9 +8042,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "The first time you fall below half health each fight, Shield equal to 30% of your Max Health. [0%]"
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -8475,9 +8085,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you gain Burn, gain 9 Regeneration and increase the damage of your weapons by 9 for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -8520,9 +8128,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "The first time you fall below half health each fight, use your highest Shield item."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -8564,9 +8170,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "The first time you use a Large item each fight, adjacent Poison items gain 8 Poison for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -8608,9 +8212,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "The first time you use a Large item each fight, Adjacent items gain 13 Burn for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -8648,9 +8250,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you level up, upgrade a Property."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -8690,9 +8290,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "The first time you use a Large item each fight, Shield equal to 30% of your max health."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -8733,9 +8331,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "If you have 4 or fewer items, your items have their cooldowns reduced by 10%."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -8773,9 +8369,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you Freeze, Haste the Core for 4 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -8818,9 +8412,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your items have +3 Max Ammo."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -8859,9 +8451,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you Haste, give your items +2% crit chance for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -8906,9 +8496,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your leftmost item with Ammo has +4 Max Ammo."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -8950,9 +8538,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your Small Diamond-tier items have their cooldowns reduced by 60%."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -8992,9 +8578,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your large items have +40% crit chance"
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -9039,10 +8623,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "The Core has its cooldown reduced by 15%.",
-          "While you have Burn, double this effect."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -9088,9 +8669,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your Small Shield items have +30 shield."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -9132,9 +8711,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "At the start of each fight, burn 35."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -9174,9 +8751,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When your enemy uses a Weapon, your Shield items gain 9 Shield for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -9220,9 +8795,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your Large Heal items have +120 Heal."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -9263,9 +8836,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you buy or upgrade this, upgrade the core."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -9301,9 +8872,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "At the start of each fight, Haste your Poison items for 2 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -9346,9 +8915,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your leftmost and rightmost items have their cooldowns reduced by 15%."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -9390,9 +8957,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your leftmost Heal item has +60 Heal."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -9431,9 +8996,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you Crit with an item, reload another item +2 ammo."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -9472,9 +9035,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you Freeze, your items gain +4% Crit Chance for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -9520,9 +9081,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your Heal items have +30 Heal."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -9565,9 +9124,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your rightmost Poison item has +8 Poison."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -9607,9 +9164,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your items have +2% Crit Chance for each weapon you have. [0]"
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -9653,9 +9208,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you buy this, gain 10 gold."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -9698,9 +9251,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you use a Property, haste items adjacent to it 2 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -9744,9 +9295,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "The first time your opponent falls below half health, Burn 25."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -9786,9 +9335,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "The first time you use a Large item each fight, adjacent weapons gain 50 Damage for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -9831,9 +9378,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "The first time you fall below half health each fight, your Burn items have their cooldowns reduced by 50% for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -9880,9 +9425,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "The first time you Burn each fight, Freeze an item for 6 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -9929,9 +9472,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "The first time you fall below half health each fight, Burn 25."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -9973,9 +9514,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "The first time you use a Large item each fight, heal 60% of your max health."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -10016,9 +9555,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you Poison, your enemy loses 10 Max Health for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -10060,9 +9597,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "If you have exactly one friend, reduce its and the Core's cooldown by 15%."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -10101,9 +9636,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you use a weapon, reduce its cooldown by 5% for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -10148,9 +9681,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your weapons have +4 Damage for each Tool you have. [0]"
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -10193,9 +9724,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "The first time you freeze, burn, slow, poison, and haste each fight, charge an item 4 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -10238,9 +9767,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Reduce the cooldown of your Properties by 15%."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -10284,9 +9811,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you use a Weapon, give it +8% crit chance the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -10326,9 +9851,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you use a Property, deal damage equal to double your gold. [NaN]"
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -10367,9 +9890,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you Freeze, reload an item."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -10413,9 +9934,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your Shield items have +1 Shield. When you sell a small item, increase this bonus by +4 Shield."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -10457,9 +9976,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your Large Weapons deal +120 Damage."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -10508,9 +10025,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "At the start of each fight, Haste a weapon 9 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -10552,9 +10067,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you use a weapon, give it +9 damage for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -10593,9 +10106,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your item's cooldowns are reduced by 10% if you have a Vehicle, reduced by 10% if you have a Weapon, and reduced by 10% if you have a Tool."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -10637,9 +10148,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you Slow, Haste a Weapon 2 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -10680,9 +10189,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "The first 5 times you use a Tool each fight, Slow a random item for 2 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -10728,9 +10235,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you heal, your Shield items gain 12 shield for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -10773,9 +10278,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your Medium Burn items have +8 Burn."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -10821,9 +10324,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "The first time you use a Large item each fight, Slow 4 items for 5 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -10864,9 +10365,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "While you have more than half Health, your weapons have +50 damage."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -10907,9 +10406,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you use a weapon, give your Healing items +30 Healing for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -10948,9 +10445,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you Slow, your weapons gain 6 damage for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -10996,9 +10491,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "You have 3 Regeneration for each non-weapon item you have. [0]"
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -11040,9 +10533,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "The first time you use a Large item each fight, Adjacent items gain 25 Healing for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -11085,9 +10576,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your leftmost Poison item has +8 Poison."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -11129,9 +10618,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "You have +3 income for each Property you have (including Stash)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -11171,9 +10658,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Reduce the cooldown of your aquatic items by 20%."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -11215,9 +10700,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your Aquatic items have +12% Crit chance."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -11255,9 +10738,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your items have +5% Crit Chance for each item you have without a cooldown. [0]"
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -11295,9 +10776,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "While your enemy has more health than you, your Heal items have their cooldowns reduced by 20%."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -11339,9 +10818,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you Poison, enemy Weapons lose 9 damage."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -11385,9 +10862,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your leftmost Burn item has +10 Burn."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -11431,9 +10906,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "The first time you use a Large item each fight, Adjacent items gain 25% Crit Chance for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -11474,9 +10947,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "The first time your opponent falls below half health each fight, your items have their cooldowns reduced by 50% for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -11519,9 +10990,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your Large Shield items have +120 shield."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -11565,9 +11034,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your weapons have +1 Damage. When you sell a small item, increase this bonus by +4 Damage."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -11609,9 +11076,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your Properties have +12% Crit chance."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -11651,9 +11116,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you Slow, gain 4 Regeneration for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -11695,9 +11158,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you Poison, your items gain +3% Crit Chance for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -11738,9 +11199,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "The first 5 times you use your rightmost item, freeze 1 item for 2 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -11785,9 +11244,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When your items gain Freeze, Burn 16."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -11830,9 +11287,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "While your enemy has more health than you, your Weapons have their cooldowns reduced by 20%."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -11872,9 +11327,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "The first time you fall below half health each fight, Haste your items 4 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -11919,11 +11372,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 10 seconds",
-          "Your Shield Vehicles gain 60% Shield.",
-          "Your Weapon Vehicles gain 60% Damage."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -11963,9 +11412,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you Crit, your Shield items gain 20 Shield for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -12010,9 +11457,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you use an item with Ammo, reload 3 the item to the left of it."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -12048,9 +11493,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "If you have only one medium item, its cooldown is reduced by 30%."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -12088,9 +11531,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "The first 5 times you use an Ammo item each fight, Slow a random item for 2 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -12129,9 +11570,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "If you have 4 or fewer items, your items have +20% Crit Chance."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -12172,9 +11611,7 @@ const data: ParsedSkillCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Enemy cooldowns are increased by 1 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],

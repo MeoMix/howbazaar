@@ -37,11 +37,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 5 seconds",
-          "Deal 50 damage.",
-          "When you sell this, give your leftmost weapon +50 damage."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -149,11 +145,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 4 seconds",
-          "Heal equal to 6 times the value of your items.",
-          "Your other items gain +value equal to this item's value in combat."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -270,11 +262,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 8 seconds",
-          "Slow 4 item for 3 second(s).",
-          "At the start of each day, get a Piranha."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -384,11 +372,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 4 seconds",
-          "Shield 80.",
-          "Deal damage equal to your shield."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -496,9 +480,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Sells for gold"
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -538,9 +520,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Sells for gold"
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -590,11 +570,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 8 seconds",
-          "Burn 10.",
-          "When you sell this, your leftmost Burn item gains +6 Burn."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -695,11 +671,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 10 seconds",
-          "Haste your Small items for 2 second(s).",
-          "When you use an adjacent Aquatic item, Haste this 2 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -802,10 +774,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When your enemy uses a Weapon, deal 20 damage.",
-          "When your enemy uses a non-Weapon item, Slow it for 3 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -908,11 +877,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 12 seconds",
-          "Deal damage equal to 30% of your enemy's Max Health.",
-          "When you use an adjacent item, this gains Haste for 4 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -1022,10 +987,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Use the Core."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -1127,10 +1089,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Adjacent items have +25% Crit Chance.",
-          "Adjacent items have their cooldown reduced by 25%."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -1235,10 +1194,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 4 seconds",
-          "Haste the Core for 4 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -1334,11 +1290,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Freeze 1 item for 4 second(s).",
-          "When you Freeze, Shield 40."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -1438,10 +1390,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 3 seconds",
-          "The item to the right of this gains 16% Crit Chance for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -1546,12 +1495,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 8 seconds",
-          "Deal 200 damage.",
-          "Freeze 2 items for 3 second(s).",
-          "When you sell this, gain 2 Icicles."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -1661,11 +1605,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 10 seconds",
-          "Deal 100 damage for each item to the left of this.",
-          "Haste this and the items on the right of this for 4 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -1775,9 +1715,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you sell this, your leftmost item gains 20% Crit Chance."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -1840,11 +1778,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 8 seconds",
-          "Shield 200.",
-          "When you sell this, your Shield items gain 12 Shield."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -1951,11 +1885,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 10 seconds",
-          "Deal 80 damage.",
-          "This item's cooldown is reduced by 1% for every 2 damage it has."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -2067,10 +1997,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 5 seconds",
-          "Deal 80 damage."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -2180,10 +2107,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 3 seconds",
-          "Burn 5."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -2281,10 +2205,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your items have +40% Crit Chance.",
-          "When you Crit with an item, reduce their cooldown by 10% for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -2385,11 +2306,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 8 seconds",
-          "Shield 100.",
-          "When this gains haste, give your items +5% crit chance for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -2498,11 +2415,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 5 seconds",
-          "Ammo Max 1",
-          "Destroy a small item."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -2601,11 +2514,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 5 seconds",
-          "Give the Core +15% Crit Chance for the fight.",
-          "While you have Burn, reduce this item's cooldown by 50%."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -2709,11 +2618,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Shield 15.",
-          "When you Shield, your Shield items gain 3 Shield for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -2820,11 +2725,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 5 seconds",
-          "Deal 80 damage.",
-          "When you use an adjacent item, Charge this 2 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -2939,11 +2840,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 5 seconds",
-          "Shield 40.",
-          "When you use another Aquatic item, Charge this 1 second."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -3038,9 +2935,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you sell this, upgrade your leftmost item."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -3091,11 +2986,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 8 seconds",
-          "Gain 6 Regeneration for the fight.",
-          "When you gain Regeneration, Burn 4."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -3209,12 +3100,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 8 seconds",
-          "Ammo Max 1",
-          "Burn both players 40.",
-          "Slow enemy items for 4 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -3328,12 +3214,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 5 seconds",
-          "Multicast 2",
-          "Deal 48 damage.",
-          "This deals double Crit damage."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -3454,12 +3335,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 4 seconds",
-          "Heal equal to quadruple this item's value.",
-          "At the start of each fight with Crystal Bonsai, this gains 8 value.",
-          "When you lose a fight with Crystal Bonsai, this item loses all of its value."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -3567,9 +3443,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you sell this, gain 40 Max Health."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -3628,11 +3502,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 4 seconds",
-          "Haste another item for 4 second(s).",
-          "Slow 1 item for 4 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -3734,11 +3604,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Shield 100.",
-          "Enemy item cooldowns are increased by 2."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -3842,11 +3708,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Heal 20.",
-          "When you use an Aquatic item, this gains 15 Heal for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -3951,11 +3813,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 9 seconds",
-          "Haste your Vehicles for 5 second(s).",
-          "When you use a Vehicle, Burn 5."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -4069,12 +3927,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 8 seconds",
-          "Multicast 2",
-          "Deal 40 damage.",
-          "Your weapons gain 8 damage for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -4186,10 +4039,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 4 seconds",
-          "Slow 4 item(s) for 3 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -4280,11 +4130,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 2 seconds",
-          "Ammo Max 50",
-          "Deal damage equal to this item's ammo."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -4400,11 +4246,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Deal 80 Damage",
-          "When you sell a small item, this gains 12 damage."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -4514,11 +4356,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 20 seconds",
-          "Destroy this, all enemy small items for the fight and slow all enemy medium items for 10 second(s).",
-          "When you use another Aquatic item, charge this 1 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -4612,10 +4450,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 8 seconds",
-          "Use a property."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -4713,11 +4548,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Shield 80.",
-          "The first time you would die each fight, Heal 2000."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -4823,11 +4654,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 5 seconds",
-          "Slow 3 items for 3 second(s).",
-          "Your other Slow items have +1 Slow."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -4928,11 +4755,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Shield 100.",
-          "Your other tools have their cooldowns reduced by 20%."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -5042,11 +4865,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 5 seconds",
-          "Deal 50 damage.",
-          "The first time you fall below half health each fight, slow all enemy items for 4 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -5158,11 +4977,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 8 seconds",
-          "Deal 100 damage.",
-          "When you use a Small item, give this 40 damage for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -5281,12 +5096,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 4 seconds",
-          "Ammo Max 10",
-          "Adjacent Shield items permanently gain +4 Shield.",
-          "This permanently loses 1 Max Ammo."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -5342,11 +5152,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Multicast 2",
-          "Deal 32 damage."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -5465,12 +5271,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 4 seconds",
-          "Ammo Max 10",
-          "Adjacent items permanently gain 4% Crit chance.",
-          "This permanently loses 1 Max Ammo."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -5522,11 +5323,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Your weapons gain 8 damage for the fight.",
-          "When you use a Weapon, charge this 1 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -5630,11 +5427,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 4 seconds",
-          "Shield 60.",
-          "When this or an adjacent item gains Freeze, Shield 60 and remove Freeze from it."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -5742,11 +5535,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 8 seconds",
-          "Deal 160 damage",
-          "When you Haste, charge this 2 seconds."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -5857,10 +5646,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 3 seconds",
-          "Give the weapon to the left of this +30 damage for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -5963,11 +5749,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 9 seconds",
-          "Deal 59 damage.",
-          "When you use a Tool, your weapons gain 4 damage for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -6083,11 +5865,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 8 seconds",
-          "Shield 40.",
-          "Deal damage equal to your shield."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -6178,12 +5956,7 @@ const data: ParsedItemCard[] = [
         "tooltips": []
       },
       "Silver": {
-        "tooltips": [
-          "Cooldown 10 seconds",
-          "Multicast 2",
-          "Deal 100 damage.",
-          "When you use the Core or a Ray, charge this 3 second(s)."
-        ]
+        "tooltips": []
       },
       "Gold": {
         "tooltips": [
@@ -6202,12 +5975,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 10 seconds",
-          "Multicast 2",
-          "Deal 400 damage.",
-          "When you use the Core or a Ray, charge this 3 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -6286,7 +6054,7 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "Cooldown 10 seconds",
       "Multicast 2",
-      "Deal (100/200/400) damage.",
+      "Deal (200/400) damage.",
       "When you use the Core or a Ray, charge this 3 second(s)."
     ]
   },
@@ -6328,12 +6096,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Shield 120.",
-          "Give Shield items to the right of this +40 Shield for the fight.",
-          "When you use any item to the left of this, Charge this 1 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -6435,9 +6198,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you use the item to the left of this, haste the item to the right of this for 3 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -6528,9 +6289,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you slow, deal 12 damage."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -6638,11 +6397,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 3 seconds",
-          "Shield 48.",
-          "Burn 5."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -6740,10 +6495,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 4 seconds",
-          "Shield equal to twice the value of the adjacent items."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -6857,12 +6609,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 7 seconds",
-          "Deal 80 damage.",
-          "Freeze 1 item for 3 second(s).",
-          "When you Freeze, this gains 15 damage for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -6979,11 +6726,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 3 seconds",
-          "Shield equal to quadruple this item's value.",
-          "At the start of each day, upgrade this."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -7103,12 +6846,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 5 seconds",
-          "Heal 10.",
-          "When you Level Up, get a Spare Change.",
-          "When you sell a Spare Change, this gains 40 Heal."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -7213,9 +6951,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you use your leftmost item, charge your rightmost item 2 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -7320,11 +7056,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Deal 80 damage.",
-          "When you sell a Weapon, give this 40 damage."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -7441,11 +7173,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Freeze 1 item for 4 second(s).",
-          "When you use another non-weapon item, charge this 1 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -7548,12 +7276,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Shield equal to this item's value.",
-          "At the start of each hour, this gains 1 value.",
-          "When you use another item, charge this 4 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -7661,11 +7384,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 5 seconds",
-          "Deal 40 damage.",
-          "Your Medium Weapons have +40 Damage for each Medium item you have."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -7750,11 +7469,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Deal damage equal to 20% of your Max Health.",
-          "When you Level Up, gain 200 Max Health."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -7870,11 +7585,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 3 seconds",
-          "Gain Shield equal to quadruple your Income.",
-          "When you buy this, you gain 5 Income."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -7990,12 +7701,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Heal equal to this item's value.",
-          "At the start of each hour, this gains 1 value.",
-          "When you use another item, charge this 4 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -8097,10 +7803,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "The first time you would die each fight, Heal for 50% of your Max Health.",
-          "Your Heal items have +1 Multicast."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -8209,11 +7912,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 5 seconds",
-          "Crit Chance 20%",
-          "Heal 100."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -8307,10 +8006,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you use an adjacent item, Burn 2.",
-          "Adjacent items have +1 ammo."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -8413,10 +8109,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 4 seconds",
-          "Give the weapon to the right of this +20 damage for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -8524,11 +8217,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 5 seconds",
-          "Burn 10.",
-          "While you have Shield, this item's cooldown is reduced by 50%."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -8638,11 +8327,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 7 seconds",
-          "Deal 160 damage.",
-          "When you Heal, this gains 20 damage for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -8750,9 +8435,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you sell this, give your leftmost Shield item +16 Shield."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -8808,10 +8491,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you sell a Large item, this gains 6 Sell Value.",
-          "Your items have double value in combat."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -8861,9 +8541,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you sell this, recover 5 Prestige."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -8903,11 +8581,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Heal equal to 8% of your Max Health.",
-          "When you use a non-weapon item, permanently gain +4 Max Health."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -9003,9 +8677,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you sell this, upgrade The Core and reduce its cooldown by 1 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -9126,12 +8798,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 8 seconds",
-          "Poison 12.",
-          "Freeze 1 item for 4 second(s).",
-          "When you Freeze, this gains 4 Poison for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -9242,11 +8909,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 7 seconds",
-          "Shield 80.",
-          "When you sell another non-weapon item, this gains Shield 16."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -9363,12 +9026,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 4 seconds",
-          "Ammo Max 2",
-          "Deal 200 damage.",
-          "Burn 12."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -9479,10 +9137,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 7 seconds",
-          "Freeze 1 item for 3 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -9578,11 +9233,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 3 seconds",
-          "Deal 10 damage.",
-          "When you lose Shield, this gains damage equal to 40% of the Shield lost."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -9689,10 +9340,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your tools and vehicles have {aura.0}% Crit Chance.",
-          "When you use a Tool, charge a Vehicle {ability.1} seconds."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -9746,10 +9394,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 5 seconds",
-          "Charge your other non-weapon items 2 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -9839,9 +9484,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "At the start of each hour, this gains 3 value."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -10004,11 +9647,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 4 seconds",
-          "Poison 4.",
-          "Heal 40."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -10116,11 +9755,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 4 seconds",
-          "Deal 20 damage.",
-          "Adjacent Potions have +1 Ammo."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -10228,9 +9863,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you use the item to the right of this, Haste it for 4 second(s). If it is a weapon, it also gains +9 damage for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -10310,9 +9943,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you use an item, charge another item +1 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -10415,11 +10046,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 7 seconds",
-          "Slow 1 item for 6 second(s).",
-          "When you slow, Haste a Vehicle for 6 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -10527,11 +10154,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 5 seconds",
-          "Deal 40 damage.",
-          "This deals double Crit damage."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -10644,10 +10267,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 4 seconds",
-          "Deal 40 damage."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -10749,9 +10369,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "At the start of each day, your Small items gain 2 value."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -10803,10 +10421,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 10 seconds",
-          "Destroy this and 3 small enemy items for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -10904,11 +10519,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Your weapons gain 12 damage for the fight.",
-          "When you slow, charge this 2 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -11019,11 +10630,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 5 seconds",
-          "Ammo Max 1",
-          "Freeze 4 item(s) for 1 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -11117,9 +10724,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you use an adjacent weapon, slow 1 item for 3 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -11214,11 +10819,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Deal 100 damage.",
-          "If you have another Tool, Ammo, Property or Friend this has +1 Multicast for each."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -11336,11 +10937,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 10 seconds",
-          "Permanently gain 20 Max Health.",
-          "When you use an adjacent friend, charge this 1 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -11448,12 +11045,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 4 seconds",
-          "Ammo Max 1",
-          "Crit Chance 25%",
-          "Deal 240 damage."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -11566,11 +11158,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 5 seconds",
-          "Give your items +10 Shield for the fight.",
-          "When you use another non-weapon, Shield 30."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -11679,11 +11267,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 9 seconds",
-          "Heal 80.",
-          "When you sell this, gain 200 Max Health."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -11795,13 +11379,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Multicast 3",
-          "Deal 40 damage.",
-          "Burn 6.",
-          "While your enemy has Burn, this has double damage."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -11920,11 +11498,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Poison 12.",
-          "When you Haste, charge this 3 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -12029,12 +11603,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 10 seconds",
-          "Ammo Max 2",
-          "Deal 150 damage.",
-          "When you use another item with Ammo, this gains 2 Multicast for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -12151,11 +11720,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Poison 4.",
-          "Gain 20 shield."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -12343,10 +11908,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 3 seconds",
-          "Give your Shield item to the left of this +16 Shield for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -12450,12 +12012,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 12 seconds",
-          "Deal 120 damage.",
-          "Freeze 1 item for 4 second(s).",
-          "When you freeze an item, your weapons gain 10 damage for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -12568,11 +12125,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 4 seconds",
-          "Haste adjacent items for 3 second(s).",
-          "When you use a Vehicle or Large item, charge this 2 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -12676,11 +12229,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Burn 8.",
-          "When you use an adjacent friend, charge this 2 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -12790,11 +12339,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Slow 1 item for 4 second(s).",
-          "When you use an adjacent item, Shield 40."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -12898,11 +12443,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 8 seconds",
-          "Poison 4.",
-          "When you use an adjacent Aquatic item, this gains Haste for 4 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -13017,12 +12558,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 8 seconds",
-          "Ammo Max 2",
-          "Deal 600 damage.",
-          "When this gains Haste, it also gains 20% Crit Chance for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -13131,10 +12667,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you Crit, Haste an item for 3 second(s).",
-          "Adjacent items have +50% Crit Chance."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -13240,11 +12773,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Poison 3.",
-          "Increase your other items' Poison by 1."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -13352,11 +12881,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 4 seconds",
-          "Shield 80.",
-          "Heal equal to your Shield."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -13468,12 +12993,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 8 seconds",
-          "Reload a potion.",
-          "You have 12 Regeneration.",
-          "When you buy a Potion, increase the Regeneration this item gives by 3."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -13584,11 +13104,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 3 seconds",
-          "Ammo Max 1",
-          "Poison both players 10."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -13791,9 +13307,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you use a weapon, deal 100 damage."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -13905,12 +13419,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 8 seconds",
-          "Deal 160 damage.",
-          "If your enemy has at least 4 items, destroy a small enemy item for the fight.",
-          "When you destroy an item during combat, your Dinosaurs permanently gain 20 damage."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -14027,11 +13536,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 4 seconds",
-          "Deal 40 damage.",
-          "Your weapons gain 12 damage for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -14139,11 +13644,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 5 seconds",
-          "Shield 60.",
-          "When you Shield, adjacent weapons gain 20 damage for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -14251,11 +13752,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 5 seconds",
-          "Ammo Max 1",
-          "Burn 15."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -14359,12 +13856,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 3 seconds",
-          "Burn 3.",
-          "Freeze 1 item for 2 second(s).",
-          "Slow 1 item for 3 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -14472,11 +13964,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 8 seconds",
-          "Deal 80 damage.",
-          "When you use an adjacent Weapon, give it +12 damage for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -14583,9 +14071,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Sells for gold"
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -14632,9 +14118,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Farai will return for this"
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -14687,11 +14171,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 4 seconds",
-          "Deal 40 damage.",
-          "When you sell this, give your leftmost weapon +10 Damage."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -14809,13 +14289,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 4 seconds",
-          "Deal 80 damage.",
-          "Shield 80.",
-          "When you use any item to the left of this, this gains 30 Damage for the fight.",
-          "When you use any item to the right of this, this gains 30 Shield for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -14928,10 +14402,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you win a fight against a player, gain 3 XP. If you had Wanted Poster on your board, gain 1 additional XP.",
-          "Your items have 30% Crit Chance."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -15038,11 +14509,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 4 seconds",
-          "Slow 1 item for 4 second(s).",
-          "When you use the Core, slow an item for 4 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -15139,11 +14606,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 8 seconds",
-          "Deal 200 damage.",
-          "When you Burn, this gains 75 damage for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -15255,10 +14718,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 3 seconds",
-          "Your Shield items gain 4 Shield for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -15357,12 +14817,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Reload all your items 1 Ammo and charge them 1 second.",
-          "Your items have +3 Max Ammo.",
-          "At the start of each day, get a Gold-tier Small item with Ammo."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -15463,9 +14918,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you use a Property, Freeze an item 3 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -15564,11 +15017,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Freeze 1 small item for 4 second(s).",
-          "When you use the Core or another Ray, charge this 2 second."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -15666,11 +15115,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 8 seconds",
-          "Burn 8.",
-          "Charge another small item 5 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -15772,11 +15217,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 12 seconds",
-          "Deal 400 damage.",
-          "When you Slow, charge this 2 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -15893,11 +15334,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 4 seconds",
-          "Ammo Max 1",
-          "Haste your items for 8 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -15997,10 +15434,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your weapons have +100% Crit Chance.",
-          "If you have exactly one weapon, that Weapon has lifesteal."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -16103,12 +15537,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 10 seconds",
-          "Deal 200 damage.",
-          "When you use an adjacent Large item, this gains 60% damage for the fight.",
-          "When you use an adjacent Medium item, this gains 40% damage for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -16218,11 +15647,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Burn 12.",
-          "When you Slow, charge this 3 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -16325,9 +15750,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you sell this, gain 40 Max Health."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -16383,12 +15806,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 5 seconds",
-          "Ammo Max 2",
-          "Deal 300 damage.",
-          "When you Haste, Reload this 1 Ammo."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -16506,11 +15924,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Shield 80.",
-          "When you sell a Small item, this gains 20 Shield."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -16619,11 +16033,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 4 seconds",
-          "Heal 40.",
-          "When you buy an Aquatic item, this gains Heal 12."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -16722,10 +16132,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you Slow, gain 4 Regeneration for the fight.",
-          "At the start of each hour, get a Coconut or Citrus."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -16825,11 +16232,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 4 seconds",
-          "Shield 40.",
-          "When you use a non-weapon item, this gains 20 Shield for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -16928,11 +16331,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Deal 50 damage.",
-          "The first time you use this each fight, destroy a small enemy item for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -17041,12 +16440,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 5 seconds",
-          "Poison 3.",
-          "Destroy another small item on each player's board for the fight.",
-          "When you destroy an item, this gains 15 Poison for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -17158,12 +16552,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 10 seconds",
-          "Lifesteal 100",
-          "Deal 100 damage.",
-          "Your Weapons with lifesteal gain +100 damage for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -17269,10 +16658,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "The weapon to the left of this has +50 damage.",
-          "If you have exactly one weapon, reduce its cooldown by 40%."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -17378,12 +16764,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Ammo Max 6",
-          "Deal 100 damage.",
-          "When you use another item with Ammo, charge this 3 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -17503,13 +16884,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Deal 160 damage.",
-          "Remove Freeze from your items.",
-          "When any item gains freeze, charge this +3 second(s).",
-          "When this item gains Freeze, remove Freeze from it."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -17627,12 +17002,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Deal 100 damage.",
-          "When this gains Haste, your weapons gain 4 damage the fight.",
-          "When this gains Haste, your Shield items gain 4 shield the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -17750,12 +17120,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Heal 120.",
-          "Burn 1.",
-          "When you Heal, this gains 6 Burn for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -17864,11 +17229,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Heal equal to quadruple this item's value.",
-          "When you buy another Aquatic item, this gains 4 Value."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -17981,11 +17342,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 5 seconds",
-          "Deal 15 damage.",
-          "Your Weapons gain 4 damage for the fight and your opponent's Weapons lose 4 damage for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -18100,11 +17457,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 4 seconds",
-          "Ammo Max 1",
-          "Shield 300."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -18297,9 +17650,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you sell this, get 3 Spare Change."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -18339,9 +17690,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you sell this, your leftmost item with Ammo gains 3 Max Ammo."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -18390,11 +17739,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Deal 4 damage.",
-          "Burn equal to 2 times this item's damage."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -18503,9 +17848,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you sell this, gain 4 Regeneration."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -18562,11 +17905,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 7 seconds",
-          "Deal 40 damage.",
-          "Your weapons have +15 damage."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -18682,11 +18021,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 8 seconds",
-          "Deal 40 damage.",
-          "This has double damage."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -18797,10 +18132,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 3 seconds",
-          "Adjacent items gain 8% Crit Chance for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -18899,10 +18231,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you sell this, get 3 Gold-tier Small items.",
-          "This item has no base Value."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -18946,10 +18275,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you burn, Shield 15.",
-          "When you Burn, Haste an item for 3 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -19057,11 +18383,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 7 seconds",
-          "Deal 120 damage.",
-          "When you sell this, your weapons gain 4 Damage."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -19169,9 +18491,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "At the start of each hour, set this item's value to a number between 0 and 40."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -19234,11 +18554,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 5 seconds",
-          "Deal 40 damage.",
-          "Shield 40."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -19356,11 +18672,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Crit Chance 100%",
-          "Deal 80 damage."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -19475,11 +18787,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 10 seconds",
-          "Deal 160 damage.",
-          "When you buy another item, this gains 40 damage."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -19601,11 +18909,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 5 seconds",
-          "Deal 80 damage.",
-          "When you use a weapon, charge this 2 seconds."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -19713,9 +19017,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you sell this, give your items +4% Crit Chance."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -19777,12 +19079,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Burn 8.",
-          "Poison 4.",
-          "If you have another item with Burn, Poison, Slow, or Freeze, this has +1 Multicast for each."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -19895,11 +19192,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 5 seconds",
-          "Heal 80.",
-          "When you Shield, charge this 2 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -19995,11 +19288,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 8 seconds",
-          "Deal 1 damage.",
-          "Double this item's damage for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -20114,11 +19403,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 3 seconds",
-          "Freeze this for 2 second(s).",
-          "When ANY item gains Freeze, Shield 60."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -20212,11 +19497,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 12 seconds",
-          "Heal 200.",
-          "This item's cooldown is reduced by 5 seconds for each adjacent large item."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -20324,11 +19605,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 4 seconds",
-          "Deal 80 damage.",
-          "When you sell this, get 2 Spare Change."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -20454,12 +19731,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 5 seconds",
-          "Multicast 2",
-          "Deal 48 damage.",
-          "This deals double Crit damage."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -20517,13 +19789,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 5 seconds",
-          "Ammo Max 1",
-          "Crit Chance 100%",
-          "Deal 200 damage.",
-          "When you Burn, reload this 1 ammo."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -20638,11 +19904,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Shield 80.",
-          "When you use another non-weapon item, Haste it for 3 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -20742,9 +20004,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you use an adjacent weapon, poison 3."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -20837,11 +20097,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 7 seconds",
-          "Slow 1 item for 4 second(s).",
-          "For each adjacent Friend, this gains 1 Multicast."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -20938,10 +20194,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Shield equal to triple your gold."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -21042,9 +20295,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When your enemy uses an item, deal 1 damage."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -21147,11 +20398,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 10 seconds",
-          "Slow 1 item for 6 second(s).",
-          "When you Slow, Heal 32."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -21258,12 +20505,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 5 seconds",
-          "Burn 3.",
-          "This has +1 Multicast if it is adjacent to a Friend.",
-          "This has +1 Multicast if it is adjacent to a Tool."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -21468,9 +20710,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you sell this, reduce your items' cooldowns by 8%."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -21527,11 +20767,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 4 seconds",
-          "Heal 80.",
-          "This has +1 Multicast for each Property you have. [0]"
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -21632,11 +20868,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Shield equal to 3 times the value of your items.",
-          "This has triple value in combat."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -21743,11 +20975,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 12 seconds",
-          "Deal 20 damage for each Weapon you have.",
-          "This deals quadruple damage if its your only friend."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -21867,12 +21095,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 7 seconds",
-          "Deal 160 damage.",
-          "Slow 2 items for 6 second(s).",
-          "When you sell this, your leftmost Slow item gains +4 Slow."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -21993,12 +21216,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Deal 80 damage.",
-          "Charge all items to the right of this 1 second(s).",
-          "When you use any item to the left of this, Charge this 1 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -22107,10 +21325,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 8 seconds",
-          "Deal 1000 damage to the player with less health."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -22225,11 +21440,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 5 seconds",
-          "Heal 200.",
-          "When you sell this, your Heal items gain 40 Heal."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -22332,10 +21543,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Adjacent Food and Tools gain Haste for 3 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -22435,9 +21643,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your items have +40% Crit Chance."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -22534,11 +21740,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Shield 150.",
-          "When you gain Burn, Haste your items 2 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -22639,11 +21841,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 7 seconds",
-          "Deal 40 damage.",
-          "When you Haste, this gains 40 damage for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -22761,11 +21959,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 4 seconds",
-          "Ammo Max 4",
-          "Charge the item to the left of this 4 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -22867,9 +22061,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you use an adjacent item, Shield 80."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -22966,11 +22158,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Give the core +10 damage for the fight.",
-          "When this gains haste, charge it 2 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -23073,11 +22261,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 4 seconds",
-          "Your Aquatic items gain 5% Crit Chance for the fight.",
-          "When you buy this, get a Piranha."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -23176,9 +22360,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you use a non-weapon item, Burn 4."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -23283,11 +22465,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 3 seconds",
-          "Deal 120 damage.",
-          "This has +4 Max Ammo for each small item you have. [0]"
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -23505,10 +22683,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you use the item to the left of this, charge the item to the right for 2 second(s).",
-          "When you use the Core, give it +40 damage for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -23603,9 +22778,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you sell this, your leftmost Poison item gains +4 Poison."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -23661,10 +22834,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you win a fight, this gains 3 value.",
-          "Your weapons have + damage equal to this item's value. [16]"
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -23782,12 +22952,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 2 seconds",
-          "Ammo Max 3",
-          "Deal 40 damage.",
-          "When you Crit, charge this 1 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -23901,11 +23066,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 5 seconds",
-          "Haste the Core for 4 second(s).",
-          "When the Core gains Haste, give it +30 damage the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -24003,9 +23164,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "You have double Max Health."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -24055,11 +23214,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 4 seconds",
-          "adjacent weapons gain 12 damage for the fight.",
-          "adjacent Shield items gain 12 Shield for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -24169,11 +23324,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Multicast 3",
-          "Deal 40 damage."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -24292,12 +23443,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 4 seconds",
-          "Ammo Max 2",
-          "Deal 160 damage.",
-          "Slow 1 item for 5 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -24403,9 +23549,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "The item to the left of this has its cooldown reduced by 50%."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -24510,11 +23654,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 3 seconds",
-          "Heal 80.",
-          "Haste 1 item for 4 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -24616,9 +23756,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you sell this, get 3 Chocolate Bars."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -24670,12 +23808,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 8 seconds",
-          "Multicast 2",
-          "Deal 240 damage.",
-          "This has +1 Multicast if you have more health than your enemy."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -24788,11 +23921,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Haste your other items 3 second(s).",
-          "When you use an adjacent item, charge this 3 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -24902,11 +24031,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 5 seconds",
-          "Deal 48 damage.",
-          "When you buy this, get a Spare Change."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -25019,11 +24144,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 20 seconds",
-          "Deal damage equal to 50% of your enemy's Max Health and destroy this.",
-          "When you Burn, charge this 2 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -25132,11 +24253,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Burn 6.",
-          "For each adjacent Friend or Property, this gains +8 Burn."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -25237,9 +24354,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "At the start of each fight, freeze 1 item for 6 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -25432,9 +24547,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your Friends have +1 Multicast."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -25491,11 +24604,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 4 seconds",
-          "Heal 40.",
-          "Shield 40."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -25603,11 +24712,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 5 seconds",
-          "Poison 4.",
-          "When you use the Core or another Ray, your Poison items gain 4 Poison for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -25710,10 +24815,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Adjacent items have +12% Crit chance.",
-          "When you sell this, give your items +4% Crit Chance."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -25767,10 +24869,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 3 seconds",
-          "Your weapons gain 4 damage for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -25866,11 +24965,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 9 seconds",
-          "Deal 30 Damage.",
-          "When you use the item to the right of this, Charge the item to the left of this 2 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -25971,10 +25066,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 3 seconds",
-          "Adjacent items gain 8% Crit chance for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -26078,14 +25170,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 7 seconds",
-          "Ammo Max 1",
-          "Burn 6.",
-          "Poison 3.",
-          "Freeze 1 item for 3 second(s).",
-          "Slow 1 item for 6 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -26187,11 +25272,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 7 seconds",
-          "Adjacent items gain 10 Damage for the fight.",
-          "Adjacent items gain 10 Shield for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -26291,11 +25372,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Deal 200 damage.",
-          "When you gain gold, permanently give this + damage equal to triple the amount of gold gained."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -26417,11 +25494,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 8 seconds",
-          "Your Shield items gain 8 Shield for the fight.",
-          "Deal damage equal to the highest shield value of items you have."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -26538,11 +25611,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 4 seconds",
-          "Haste adjacent items for 4 second(s).",
-          "When you sell this, give your leftmost Haste item +4 Haste."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -26641,9 +25710,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "At the start of each day, get 3 Chocolate Bars or Spare Changes."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -26700,11 +25767,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 8 seconds",
-          "Deal 40 damage.",
-          "When you heal, this gains 12 damage for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -26816,11 +25879,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 9 seconds",
-          "Deal 80 damage.",
-          "When you Level Up, if you have at least 3 tools, upgrade the item to the left of this."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -26938,11 +25997,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Heal 50.",
-          "When you Poison, charge this 2 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -27051,11 +26106,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 7 seconds",
-          "Charge adjacent Small items 4 second(s).",
-          "When you win a fight, get a Piggle."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -27158,11 +26209,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 10 seconds",
-          "Burn 8.",
-          "Increase your other items' Burn by 2."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -27261,11 +26308,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 4 seconds",
-          "Deal 10 damage.",
-          "When this gains Haste, this and the weapon to the left gains 10 damage for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -27385,12 +26428,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Burn 15.",
-          "Burn items to the right of this gain 4 Burn for the fight.",
-          "When you use any item to the left of this, Charge this 1 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -27506,12 +26544,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 10 seconds",
-          "Multicast 2",
-          "Deal 40 damage.",
-          "Shield 40."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -27636,13 +26669,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Multicast 2",
-          "Lifesteal 100",
-          "Deal 100 Damage.",
-          "This deals double Crit damage."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -27749,11 +26776,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Ammo Max 1",
-          "Slow all enemy items for 5 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -27845,9 +26868,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "At the start of each day, gain 300 Max Health."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -27950,11 +26971,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 8 seconds",
-          "Poison equal to your Regeneration.",
-          "You have +3 Regeneration."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -28054,9 +27071,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Adjacent items have +4 Max Ammo."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -28157,11 +27172,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 8 seconds",
-          "Burn 3.",
-          "When you use another friend, this gains 3 Burn for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -28266,10 +27277,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 3 seconds",
-          "The item to the left of this gains 16% Crit Chance for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -28371,10 +27379,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 10 seconds",
-          "Deal 100 damage for each Small item you have (including Stash)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -28487,12 +27492,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 3 seconds",
-          "Ammo Max 2",
-          "Deal 60 damage.",
-          "When you use another item with Ammo, this reloads 1 ammo."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -28605,11 +27605,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 1 seconds",
-          "Ammo Max 3",
-          "Increase a random enemy item's cooldown by 3 seconds for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -28711,12 +27707,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 5 seconds",
-          "Deal 40 damage.",
-          "When you use another Friend, this gains 30 damage for the fight.",
-          "Your other Friends' cooldowns are reduced by 30%."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -28835,11 +27826,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 8 seconds",
-          "Shield 160.",
-          "Your Shield items have +50% Crit Chance."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -28947,11 +27934,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 4 seconds",
-          "Shield 40.",
-          "Burn 5."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -29062,13 +28045,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 3 seconds",
-          "Ammo Max 3",
-          "Multicast 2",
-          "Deal 40 damage.",
-          "When you use the Core, reload this."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -29183,10 +28160,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 5 seconds",
-          "Shield 40 for each Aquatic item you have."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -29287,10 +28261,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Aquatic items to the left of this have their cooldowns reduced by 30%.",
-          "Weapons to the right of this have +100 damage."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -29399,11 +28370,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 4 seconds",
-          "Heal 4.",
-          "This permanently gains 4 Heal."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -29502,9 +28469,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you sell this, gain 4 Regeneration."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -29557,10 +28522,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 3 seconds",
-          "Give your adjacent Shield items +8 Shield for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -29656,10 +28618,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Adjacent Weapons have +40 damage.",
-          "When you sell this, your weapons gain 8 damage."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -29719,10 +28678,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 3 seconds",
-          "Give your weapon to the right of this +16 damage for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -29818,11 +28774,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 12 seconds",
-          "Multicast 2",
-          "Deal damage equal to 20% of your Max Health."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -29942,12 +28894,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 5 seconds",
-          "Burn 8.",
-          "Poison 4.",
-          "Reload your Potions."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -30059,11 +29006,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 5 seconds",
-          "When you sell this, you lose 40 Max Health.",
-          "When you sell this, gain 4 Regeneration."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -30115,10 +29058,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you use a weapon, your weapons gain 3 Damage for the fight.",
-          "When you use a Weapon, Haste it for 3 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -30229,12 +29169,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Lifesteal 100",
-          "Deal 40 Damage.",
-          "When you poison, this gains 20 damage for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -30342,11 +29277,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 8 seconds",
-          "Deal 48 damage.",
-          "Gain 3 gold."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -30460,11 +29391,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 8 seconds",
-          "Poison 2.",
-          "When you use the item to the left of this, gain 2 Regeneration for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -30560,9 +29487,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you sell this, gain access to the genie Rit."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -30613,11 +29538,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Burn 12.",
-          "This has + Burn equal to the Burn of your other items. [0]"
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -30720,11 +29641,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 5 seconds",
-          "Slow 1 item for 3 second(s).",
-          "When you slow, permanently gain 3 Max Health."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -30828,11 +29745,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 9 seconds",
-          "Deal 60 damage.",
-          "When you Slow, charge this 1 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -30955,12 +29868,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 8 seconds",
-          "Deal 200 damage.",
-          "Burn 20.",
-          "When you use a Weapon or Haste, charge this 1 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -31071,10 +29979,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When your enemy uses a weapon, charge your Busy Bees 1 second.",
-          "When you buy a Property, get a Busy Bee and give your Busy Bees +15 damage."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -31207,9 +30112,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "You have Regeneration equal to double adjacent properties' values. [0]"
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -31271,9 +30174,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Sells for gold"
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -31318,12 +30219,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 8 seconds",
-          "Deal 400 damage.",
-          "If your enemy has at least 4 items, destroy a small or medium enemy item for the fight.",
-          "When you destroy an item during combat, your Dinosaurs permanently gain 50 damage."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -31440,11 +30336,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 4 seconds",
-          "Deal 40 damage.",
-          "Your enemy's Shield items lose 20 Shield for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -31559,11 +30451,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 8 seconds",
-          "Give your Lifesteal Weapons +20 damage for the fight.",
-          "The weapon on the right has Lifesteal."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -31672,11 +30560,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Burn 12.",
-          "When you use a small item, charge this 1 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -31761,10 +30645,7 @@ const data: ParsedItemCard[] = [
         "tooltips": []
       },
       "Silver": {
-        "tooltips": [
-          "At the start of each hour, gain 10 Max Health.",
-          "You have +1 Income."
-        ]
+        "tooltips": []
       },
       "Gold": {
         "tooltips": [
@@ -31779,10 +30660,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "At the start of each hour, gain 30 Max Health.",
-          "You have +3 Income."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -31809,8 +30687,8 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "At the start of each hour, gain (10/20/30) Max Health.",
-      "You have (+1/+2/+3) Income."
+      "At the start of each hour, gain (20/30) Max Health.",
+      "You have (+2/+3) Income."
     ]
   },
   {
@@ -31847,11 +30725,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 4 seconds",
-          "Your weapons gain 4 damage for the fight.",
-          "When you sell this, your weapons gain 12 damage."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -31958,12 +30832,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 4 seconds",
-          "Ammo Max 2",
-          "Shield 120.",
-          "When you sell a Tool, give this +1 Max Ammo."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -32076,12 +30945,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 9 seconds",
-          "Lifesteal 100",
-          "Deal 40 damage.",
-          "Slow 1 item for 4 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -32192,11 +31056,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Poison 12.",
-          "If you have no weapons, your items have their cooldowns reduced by 20%."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -32302,11 +31162,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Your Shield items gain 12 shield and your Weapons +12 damage for the fight.",
-          "When you crit, charge this 1 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -32416,11 +31272,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 4 seconds",
-          "Deal 80 damage.",
-          "This has +1 Multicast if it is adjacent to a Friend. Double this if it is your only Friend."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -32527,9 +31379,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you use the Weapon to the left of this, deal 40 damage."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -32641,12 +31491,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 8 seconds",
-          "Ammo Max 1",
-          "Deal 200 damage.",
-          "When you Haste, this gains 75 damage for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -32763,11 +31608,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 3 seconds",
-          "Slow 1 item for 4 second(s).",
-          "When you use an adjacent Small item, charge this 1 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -32857,12 +31698,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Deal damage equal to 3 times the value of your items.",
-          "This has double value in combat.",
-          "If you have 4 or fewer items in-play, this has +1 Multicast."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -32977,10 +31813,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 3 seconds",
-          "Give your Shield item to the right of this +16 Shield for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -33082,13 +31915,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 10 seconds",
-          "Ammo Max 1",
-          "Deal 200 damage.",
-          "When you use another Aquatic or item with Ammo, this gains 60 damage for the fight.",
-          "If the item is Large, Reload 1 Ammo."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -33197,9 +32024,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you buy, sell or upgrade this, get 1 Candy and 1 Spare Change."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -33262,11 +32087,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 5 seconds",
-          "Deal 40 damage.",
-          "If this is your only friend, your items have +20% Crit Chance."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -33379,10 +32200,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Poison 5."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -33487,12 +32305,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 5 seconds",
-          "Deal 15 damage.",
-          "Slow 1 item for 3 second(s).",
-          "When you slow, this gains 20 damage for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -33605,10 +32418,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 4 seconds",
-          "Deal 40 damage."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -33718,12 +32528,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you win a fight with Stained Glass Window, your Properties in play gain 6 value.",
-          "When you lose a fight with Stained Glass Window, your Properties in play lose 2 value.",
-          "The Property to the right of this has double value in combat.",
-          "If you have 4 or fewer items in-play, their cooldowns are reduced 20%."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -33787,10 +32592,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "If this is on your board at the start of each day, gain 400 Max Health.",
-          "The cooldown of your items are increased by 1 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -33841,9 +32643,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "At the start of each day, get 2 Spare Change."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -33912,12 +32712,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 2 seconds",
-          "Ammo Max 1",
-          "Deal 40 damage.",
-          "When you use this, reload this 1 Ammo if it is your only weapon."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -34034,11 +32829,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Freeze 1 item for 4 second(s).",
-          "Cleanse half your Burn."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -34240,11 +33031,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Haste 1 item for 4 second(s).",
-          "When you Haste, Poison 5."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -34348,11 +33135,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 7 seconds",
-          "Heal 240.",
-          "When you sell this, give your leftmost Heal item +50 Heal."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -34457,11 +33240,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 7 seconds",
-          "Multicast 4",
-          "Deal 5 damage."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -34576,11 +33355,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 8 seconds",
-          "Haste your tools for 4 second(s).",
-          "Your weapons gain 80 damage for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -34690,11 +33465,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 10 seconds",
-          "This gains 1 Value.",
-          "When you sell this, give The Core + Damage equal to quadruple this item's value. 32"
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -34801,10 +33572,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 5 seconds",
-          "Heal equal to triple your gold."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -34915,12 +33683,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 3 seconds",
-          "Ammo Max 2",
-          "Multicast 2",
-          "Deal 120 damage."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -35029,9 +33792,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "At the start of each fight, Burn 15."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -35118,12 +33879,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 8 seconds",
-          "Deal 50 damage.",
-          "Freeze 1 item for 2 second(s).",
-          "When you freeze an item, this gains 50 damage for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -35239,12 +33995,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 8 seconds",
-          "Deal 80 damage.",
-          "When you Haste, this gains 30 damage for the fight.",
-          "When this gains Haste, charge it 1 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -35364,13 +34115,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Ammo Max 1",
-          "Deal 75 damage.",
-          "Burn 10.",
-          "Poison 8"
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -35489,11 +34234,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 5 seconds",
-          "Shield 160.",
-          "When you use an adjacent Friend, this gains 40 Shield for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -35603,11 +34344,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 5 seconds",
-          "Deal 40 damage.",
-          "When you use the Core or another Ray, your Weapons gain +12 Damage for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -35722,11 +34459,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Shield 80.",
-          "When you buy another Aquatic item, this gains 16 Shield."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -35828,10 +34561,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you buy this, get a non-Vanessa item.",
-          "Your items from other Heroes have +50% Crit Chance."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -35927,11 +34657,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 4 seconds",
-          "Deal 20 damage.",
-          "When you Shield, this gains 20 Damage for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -36039,9 +34765,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you sell this, gain 40 Max Health."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -36091,10 +34815,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Charge adjacent items 1 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -36188,11 +34909,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 7 seconds",
-          "Gain Shield equal to your enemy's burn.",
-          "When your enemy uses an item, Burn 1."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -36300,11 +35017,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Burn 8.",
-          "When you use the Core or another Ray, your Burn items gain 4 Burn for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -36403,9 +35116,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you sell this, your leftmost Heal item gains 20 Heal."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -36462,12 +35173,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 3 seconds",
-          "Ammo Max 3",
-          "Deal 30 damage.",
-          "When you use an item with Ammo, deal 30 damage."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -36578,12 +35284,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 3 seconds",
-          "Lifesteal 100",
-          "Deal 20 damage.",
-          "When you Poison, this gains 20% Crit Chance for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -36691,11 +35392,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 5 seconds",
-          "Your weapons gain Damage equal to this item's value for the fight.",
-          "When you buy a weapon, this gains 3 value and you gain 100 max health."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -36806,10 +35503,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you sell an item, this gains 3 value.",
-          "You have increased max health equal to 20 times this item's value. [480]"
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -36903,10 +35597,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 4 seconds",
-          "Haste 4 Aquatic items for 2 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -37010,11 +35701,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 4 seconds",
-          "Heal equal to 12% of your Max Health.",
-          "When you Heal, gain 30 Max Health for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -37120,11 +35807,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 3 seconds",
-          "Slow 1 item for 3 second(s).",
-          "When you Slow, Haste an item for 3 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -37230,11 +35913,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 4 seconds",
-          "Burn 6.",
-          "Poison 3."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -37340,11 +36019,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 4 seconds",
-          "Burn both players 8.",
-          "Charge an item 3 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -37451,12 +36126,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Give your other items Haste for 3 second(s).",
-          "Gain 12 Regeneration for the fight.",
-          "When you Burn, charge this for 2 seconds."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -37562,12 +36232,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 10 seconds",
-          "Deal 20 damage.",
-          "Shield 20.",
-          "When any player uses an item, this gains 20 damage and 20 shield for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -37680,11 +36345,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 4 seconds",
-          "When you use the weapon to the right of this, this gains 30 Shield for the fight.",
-          "Shield 80."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -37789,10 +36450,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 3 seconds",
-          "Give your items +4% Crit Chance for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -37898,11 +36556,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 5 seconds",
-          "Ammo Max 1",
-          "Slow 2 items for 10 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -37996,9 +36650,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "The Property to the left of this has double value in combat and has its cooldown reduced by 30%."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -38105,10 +36757,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Deal 20 damage."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -38219,11 +36868,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Poison 3.",
-          "Heal equal to your opponent's Poison."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -38331,11 +36976,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Slow 1 items for 4 second(s).",
-          "When you sell this, your leftmost Slow item gains 4 second to Slow."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -38436,11 +37077,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 2 seconds",
-          "Ammo Max 12",
-          "Deal 16 damage."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -38552,11 +37189,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 10 seconds",
-          "Haste your Friends for 3 second(s).",
-          "When you buy this, get 3 Nanobots."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -38651,9 +37284,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you sell this, your leftmost Weapon gains 12 Damage."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -38706,9 +37337,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you take damage from an item, Shield equal to 50% of the damage dealt."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -38803,11 +37432,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 8 seconds",
-          "Deal 160 damage.",
-          "When you use the Core, charge this 4 second."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -38918,11 +37543,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 3 seconds",
-          "Deal 100 damage.",
-          "Gain Shield equal to this item's damage."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -39036,10 +37657,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Burn 8."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -39133,9 +37751,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you sell this, gain access to the Thieves Guild."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -39175,9 +37791,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you visit a Merchant, this and the item to the left of this gains 4 value."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -39232,9 +37846,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you sell this, your leftmost Burn item gains +4 Burn."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -39301,12 +37913,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 4 seconds",
-          "Adjacent weapons gain 20 Damage for the fight.",
-          "Adjacent Heal items gain 20 Heal for the fight.",
-          "Adjacent Shield items gain 20 Shield for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -39420,12 +38027,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 5 seconds",
-          "Ammo Max 1",
-          "Deal 250 damage.",
-          "Burn 10."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -39534,10 +38136,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 10 seconds",
-          "Freeze both players' items for 2 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -39635,10 +38234,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Deal 50 damage for each Small Friend you have."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -39747,11 +38343,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Poison 12.",
-          "When you Slow, charge this 3 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -39847,9 +38439,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your Aquatic items have +1 Multicast."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -39958,11 +38548,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 8 seconds",
-          "Freeze 1 item for 5 second(s).",
-          "Increase your other items' Freeze by 1 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -40067,12 +38653,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 7 seconds",
-          "Multicast 2",
-          "Burn 4.",
-          "Charge adjacent items 3 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -40183,11 +38764,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 10 seconds",
-          "Deal 240 damage.",
-          "When you sell this, your weapons gain 10 damage."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -40299,11 +38876,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 7 seconds",
-          "Deal 40 damage.",
-          "Slow 1 item for 5 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -40416,10 +38989,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 3 seconds",
-          "Give your adjacent weapons +12 damage for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -40511,11 +39081,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 9 seconds",
-          "Poison 6.",
-          "When you Poison, gain +2 Regeneration for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -40615,11 +39181,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 8 seconds",
-          "Deal 200 damage.",
-          "The weapon to the left of this has lifesteal."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -40733,12 +39295,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Deal 80 damage.",
-          "Give Weapons to the right of this +20 damage for the fight.",
-          "When you use any item to the left of this, Charge this 1 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -40853,11 +39410,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 5 seconds",
-          "Heal equal to 15% of your Max Health.",
-          "When you sell a Small item, gain 40 Max Health."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -40973,11 +39526,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Shield 20.",
-          "This gains 20 Shield for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -41080,12 +39629,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 9 seconds",
-          "Deal 1000 damage.",
-          "The first time you fall below half health each fight, Freeze 1 item for 100 second(s).",
-          "When any item gains Freeze, charge this 3 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -41202,11 +39746,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 4 seconds",
-          "Deal 80 Damage.",
-          "This deals double Crit damage."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -41313,11 +39853,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 9 seconds",
-          "Deal 20 damage.",
-          "At the start of each fight with Dragon Tooth, spend 3 gold and your weapons permanently gain 10 damage."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -41434,10 +39970,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 8 seconds",
-          "Reload adjacent items with Ammo 3 Ammo and Haste them 3 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -41537,11 +40070,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 4 seconds",
-          "Deal damage equal to double this item's value.",
-          "When you sell an item, give this 2 value."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -41652,11 +40181,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 8 seconds",
-          "Ammo Max 1",
-          "Your weapons gain damage equal to your weakest weapon's damage for the fight. [0]"
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -41760,11 +40285,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 7 seconds",
-          "Deal 20 damage.",
-          "When you Slow, Freeze, Burn or Poison, this gains 30 damage for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -41879,10 +40400,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 2 seconds",
-          "Deal 40 damage."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -41996,11 +40514,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 3 seconds",
-          "Shield equal to quadruple this item's value.",
-          "When you sell an item, this gains 2 value."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -42108,10 +40622,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you use an item, Shield 20.",
-          "Enemy item cooldowns are increased by 2."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -42211,11 +40722,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 3 seconds",
-          "Deal 15 damage.",
-          "At the start of each day, upgrade your leftmost tool."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -42341,12 +40848,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 4 seconds",
-          "Crit Chance 50%",
-          "Deal 40.",
-          "When you Crit, this gains 40 damage for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -42457,10 +40959,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you visit a Merchant, this gains 3 value.",
-          "For every 5 Merchants you visit, upgrade this. [Merchants Visited: 0]"
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -42510,9 +41009,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you sell this, Enchant your leftmost item with Icy."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -42563,10 +41060,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 3 seconds",
-          "Give your weapon to the left of this +16 damage for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -42666,11 +41160,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 7 seconds",
-          "Shield 120.",
-          "When this gains Haste, give your items +8% Crit chance for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -42780,12 +41270,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 2 seconds",
-          "Ammo Max 8",
-          "Shield equal to this item's Ammo.",
-          "At the start of each day, this gains 3 Max Ammo."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -42887,10 +41372,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 4 seconds",
-          "Haste an adjacent item for 3 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -42998,11 +41480,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Poison 4.",
-          "When this gains Haste, give it +4 Poison for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -43099,9 +41577,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you sell this, upgrade your leftmost item."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -43220,12 +41696,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 8 seconds",
-          "Deal 80 damage.",
-          "Shield 80.",
-          "When you sell this, your leftmost item gains +10 Damage if it is a Weapon and +10 Shield if it is a Shield item."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -43339,10 +41810,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 3 seconds",
-          "Shield equal to quadruple this item's value."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -43455,11 +41923,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 5 seconds",
-          "Poison 4.",
-          "When you sell this, your leftmost Poison item gains +4 Poison."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -43562,12 +42026,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Multicast 2",
-          "Burn 6.",
-          "When you Shield, this gains 2 Burn for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -43668,9 +42127,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you sell this, reduce your leftmost item's cooldown by 12%."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -43733,11 +42190,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Haste your other friends 4 second(s).",
-          "When you use another Friend, Charge this 1 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -43845,10 +42298,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 4 seconds",
-          "Reload the item to the right of this 4 Ammo."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -43956,11 +42406,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 3 seconds",
-          "Ammo Max 3",
-          "Burn 10."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -44058,9 +42504,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you sell this, gain 3 XP."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -44117,11 +42561,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 10 seconds",
-          "Deal 160 damage.",
-          "When you Haste, Slow, Freeze, Burn or Poison, charge this 1 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -44241,11 +42681,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 8 seconds",
-          "Deal 40 damage.",
-          "When you use a property, this gains 40 damage for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -44350,10 +42786,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 10 seconds",
-          "Freeze all items other than The Core for 3 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -44459,12 +42892,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 4 seconds",
-          "Ammo Max 10",
-          "Adjacent Weapons permanently gain +4 Damage.",
-          "This permanently loses 1 Max Ammo."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -44510,10 +42938,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Your Properties have +50% Crit Chance.",
-          "At the start of each day, your items gain 2 value."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -44587,11 +43012,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Burn both players 5.",
-          "Adjacent items have their cooldowns reduced by 15%."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -44695,11 +43116,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 5 seconds",
-          "Shield 30.",
-          "At the start of each hour, spend 2 gold to get a Gumball."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -44803,9 +43220,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "At the start of each fight, your Small items gain Haste for 3 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -44898,11 +43313,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 8 seconds",
-          "Haste the Aquatic item to the right for 5 second(s).",
-          "At the start of each day, get a Small aquatic item."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -45006,12 +43417,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 4 seconds",
-          "Ammo Max 6",
-          "Deal 100 damage.",
-          "When you Burn, charge this 2 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -45126,11 +43532,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 5 seconds",
-          "Deal 10 damage.",
-          "When you use a Friend, this gains 40 damage for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -45246,11 +43648,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 4 seconds",
-          "Shield 160.",
-          "When you sell this, give your items +4 value."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -45364,12 +43762,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 10 seconds",
-          "Shield 1000.",
-          "When you would take damage from an item, charge this 2 seconds.",
-          "The first time you fall below half health each fight, use this."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -45567,9 +43960,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When your enemy uses an item, Freeze it for 1 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -45657,11 +44048,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 10 seconds",
-          "Burn 10.",
-          "When you Burn, this gains 10 Burn for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -45760,10 +44147,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Weapon Properties adjacent to this have + Damage equal to double the value of your highest value item. [0]",
-          "Shield Properties adjacent to this have + Shield equal to double the value of your highest value item. [0]"
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -45843,13 +44227,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Deal 80 damage.",
-          "This and items to the right of this have +30% Crit Chance.",
-          "When you use any to the left of this, Charge this 1 second(s).",
-          "When you Crit with any item, Charge this 1 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -45963,9 +44341,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you sell this, your weapons gain 4 damage."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -46010,11 +44386,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 24 seconds",
-          "Ammo Max 1",
-          "Deal damage equal to your enemy's max health."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -46118,11 +44490,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Deal 2 damage.",
-          "Poison equal to this item's damage."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -46238,11 +44606,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Deal 20 damage.",
-          "When you use an adjacent item, charge this 3 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -46357,11 +44721,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 4 seconds",
-          "Lifesteal 100",
-          "Deal 40 damage."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -46471,11 +44831,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 10 seconds",
-          "Deal 200 damage.",
-          "When you win a fight with Langxian, this gains 100 damage."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -46582,11 +44938,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 4 seconds",
-          "Deal 20 damage.",
-          "Reduce this item's cooldown by 20% for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -46702,11 +45054,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Deal 160 damage.",
-          "When you Shield, charge this 2 second."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -46813,9 +45161,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Every 50 you spend, upgrade a random item of a lower tier. [Gold Spent: 0]"
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -46916,9 +45262,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When your enemy uses an item, Slow it for 1 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -47013,11 +45357,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 7 seconds",
-          "Burn 6.",
-          "When this is Hasted, this gains 6 Burn for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -47117,9 +45457,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you sell this, your Shield items gain 4 Shield."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -47190,13 +45528,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 3 seconds",
-          "Ammo Max 6",
-          "Crit Chance 20%",
-          "Deal 40 damage.",
-          "When you Crit, reload 2 Ammo."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -47311,11 +45643,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 9 seconds",
-          "Deal 3 damage.",
-          "Burn equal to this item's damage."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -47428,11 +45756,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 10 seconds",
-          "Deal 100 damage.",
-          "This deals 10 times more damage if it is your only weapon."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -47537,10 +45861,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 9 seconds",
-          "Freeze 3 small items for 2 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -47642,11 +45963,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 10 seconds",
-          "Deal 150 Damage",
-          "When this gains haste, give it +30 damage for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -47763,11 +46080,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Deal 160 damage.",
-          "When you sell this, reduce your items' cooldown by 4%."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -47883,11 +46196,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 9 seconds",
-          "Slow 4 items for 1 second(s).",
-          "At the start of each fight, use this."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -47990,11 +46299,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 10 seconds",
-          "Deal 160 damage.",
-          "At the start of each day, get a small item from any hero."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -48100,9 +46405,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "When you use an adjacent item, give the other adjacent item haste for 3 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -48207,11 +46510,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 5 seconds",
-          "Your weapons gain 20 Damage and your Heal gain 20 Heal for the fight.",
-          "When you heal while at max health, charge this 2 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -48312,10 +46611,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Adjacent items have +50% Crit Chance.",
-          "Adjacent items have bonus damage, heal, or shield equal to their Crit Chance."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -48374,11 +46670,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 5 seconds",
-          "Poison 2.",
-          "Increase the poison of your items by 2 for the fight."
-        ]
+        "tooltips": []
       }
     },
     "tags": [],
@@ -48476,10 +46768,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Adjacent items have +50% Crit Chance.",
-          "At the start of each fight, a random enemy item has its cooldown increased by 6 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -48576,11 +46865,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 5 seconds",
-          "Freeze 1 item for 1 second(s).",
-          "When you use the Core, Freeze an item for 1 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -48679,11 +46964,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Freeze 1 item for 3 second(s).",
-          "This has +1 Multicast for each adjacent to a Property."
-        ]
+        "tooltips": []
       }
     },
     "tags": [
@@ -48788,10 +47069,7 @@ const data: ParsedItemCard[] = [
         ]
       },
       "Legendary": {
-        "tooltips": [
-          "Adjacent items have +40% Crit Chance.",
-          "When you Crit, Haste an item for 4 second(s)."
-        ]
+        "tooltips": []
       }
     },
     "tags": [

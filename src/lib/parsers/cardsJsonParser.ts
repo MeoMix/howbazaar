@@ -23,6 +23,8 @@ const explicitlyHiddenItemIds = [
     "8b2ce029-7f69-401c-9811-3a6398237a90"
 ];
 
+const tierOrder: TierType[] = ["Bronze", "Silver", "Gold", "Diamond", "Legendary"];
+
 type AttributeQualifier =
     | { isMod: true; isTargets: false }
     | { isMod: false; isTargets: true }
@@ -144,8 +146,6 @@ function getAttributeValueFromTier(attributeName: string, tierAttributes: Tier["
 }
 
 function getTierMap(card: (ValidItemCard | ValidSkillCard)) {
-    const tierOrder: TierType[] = ["Bronze", "Silver", "Gold", "Diamond", "Legendary"];
-
     // Tier Attributes in v2_Cards.json are represented with an implied inheritance hierarchy.
     // That is, all attributes declared in Bronze are inherited by Silver and then Silver can overwrite attributes
     // by declaring them again. This isn't an especially useful way of working with the data. So, manually
@@ -328,6 +328,39 @@ function getDisplayedTooltips(tooltips: string[], abilities: Ability[], auras: A
     return displayedTooltips;
 }
 
+
+// Sometimes data gets left behind in tiers (i.e. an items starting tier is changed to Gold and the underlying data retains info regarding Silver)
+// Drop this data as to not confuse unifyTooltips.
+// Also, Legendary data only applies to Legendary items not to all items, so drop Legendary from non-Legendary items even though it's a "tier above"
+function filterTooltipsByStartingTier(
+    startingTier: TierType,
+    tiers: Record<TierType, { tooltips: string[] }>
+): Record<TierType, { tooltips: string[] }> {
+    const startingIndex = tierOrder.indexOf(startingTier);
+
+    return Object.fromEntries(
+        Object.entries(tiers).map(([tierType, tier]) => {
+            // Check if the tier is "Legendary"
+            if (tierType === "Legendary") {
+                // Only keep tooltips if the startingTier is "Legendary"
+                return [
+                    tierType,
+                    startingTier === "Legendary" ? tier : { tooltips: [] as string[] },
+                ];
+            }
+
+            // For non-Legendary tiers, filter out tooltips that belong to "Legendary"
+            // Empty tooltips for tiers preceding the startingTier
+            return [
+                tierType,
+                (tierOrder.indexOf(tierType as TierType) >= startingIndex && tierType !== "Legendary") 
+                    ? { tooltips: tier.tooltips }
+                    : { tooltips: [] as string[] },
+            ];
+        })
+    ) as Record<TierType, { tooltips: string[] }>;
+}
+
 type ValidItemCard = Card & { Tiers: Tiers, Type: "Item", Localization: { Title: { Text: string } } };
 type ValidSkillCard = Card & { Tiers: Tiers, Type: "Skill", Localization: { Title: { Text: string } } };
 type ValidCombatEncounterCard = Card & { Type: "CombatEncounter", Localization: { Title: { Text: string } }, CombatantType: { MonsterTemplateId: string; } };
@@ -344,14 +377,10 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
 
     const validCards = Object.values(cardsJson).filter(isValidItemCard);
 
+    // TODO: I think I could avoid having to do this if I relied on key rather than converting to values and relying on Id.
     // Sanity check on Abilities and Aura IDs before proceeding.
     // This fixes "Wanted Poster" and ...
     for (let card of validCards) {
-        if (card.Localization.Title.Text === "Flamethrower") {
-            console.log('yo');
-            debugger;
-        }
-
         for (let [abilityKey, ability] of Object.entries(card.Abilities)) {
             if (ability.Id !== abilityKey) {
                 console.warn(
@@ -616,16 +645,6 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
             hiddenTags = hiddenTags.filter(tag => tag !== 'Regen');
         }
 
-        // Astrolabe has one tooltip that uses the phrase "this and it" where the others say "it and this"
-        // if (name === "Astrolabe") {
-        //     const searchString = "When you use another non-weapon item, this and it gains";
-        //     const brokenTooltipIndex = tiers.Silver.tooltips.findIndex(tooltip => tooltip.includes(searchString));
-
-        //     if (brokenTooltipIndex > -1) {
-        //         tiers.Silver.tooltips[brokenTooltipIndex] = tiers.Silver.tooltips[brokenTooltipIndex].replace(searchString, "When you use a non-weapon item, it and this gains");
-        //     }
-        // }
-
         if (name === "Cybersecurity") {
             const searchString = "if its your";
             const brokenTooltipIndex = tiers.Diamond.tooltips.findIndex(tooltip => tooltip.includes(searchString));
@@ -634,15 +653,6 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
                 tiers.Diamond.tooltips[brokenTooltipIndex] = tiers.Diamond.tooltips[brokenTooltipIndex].replace(searchString, "if it is your");
             }
         }
-
-        // if (name === "Flamethrower") {
-        //     const searchString = "double of this";
-        //     const brokenTooltipIndex = tiers.Gold.tooltips.findIndex(tooltip => tooltip.includes(searchString));
-
-        //     if (brokenTooltipIndex > -1) {
-        //         tiers.Gold.tooltips[brokenTooltipIndex] = tiers.Gold.tooltips[brokenTooltipIndex].replace(searchString, "double this");
-        //     }
-        // }
 
         if (name === "Multitool") {
             const searchString = "Slow an item";
@@ -658,21 +668,13 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
         const invalidLegendaries = ["Eye of the Colossus", "Infernal Greatsword", "Octopus", "Necronomicon", "Scythe", "Singularity", "Soul of the District", "Teddy", "The Eclipse", "Flamberge"];
         if (invalidLegendaries.includes(name)) {
             startingTier = "Legendary";
-            tiers = Object.fromEntries((Object.entries(tiers) as Entries<Record<TierType, { tooltips: string[] }>>).map(
-                ([tierType, tier]) => {
-                    return [tierType, tierType === "Legendary" ? tier : {
-                        tooltips: [] as string[],
-                    }]
-                },
-            )) as Record<TierType, { tooltips: string[] }>;
         }
 
-        // Items which aren't Legendary shouldn't show unified tooltips which include Legendary since
-        // that is nonsense and would only confuse the user even if it's "technically true"
-        const tooltipsByTier = Object.entries(tiers)
-            .filter(([tierType]) => startingTier === "Legendary" || tierType !== "Legendary")
-            .map(([, tier]) => tier.tooltips);
-        const unifiedTooltips = unifyTooltips(tooltipsByTier);
+        // Sometimes data gets left behind in tiers (i.e. an items starting tier is changed to Gold and the underlying data retains info regarding Silver)
+        // Drop this data as to not confuse unifyTooltips.
+        tiers = filterTooltipsByStartingTier(startingTier, tiers);
+
+        const unifiedTooltips = unifyTooltips(Object.entries(tiers).map(([, tier]) => tier.tooltips));
 
         return {
             id: card.Id,
@@ -766,12 +768,9 @@ function parseSkillCards(cardsJson: CardsJson): ParsedSkillCard[] {
         // Fix bad data related to starting tiers. These are all Legendary.
         let startingTier = card.StartingTier;
 
-        // Items which aren't Legendary shouldn't show unified tooltips which include Legendary since
-        // that is nonsense and would only confuse the user even if it's "technically true"
-        const tooltipsByTier = Object.entries(tiers)
-            .filter(([tierType]) => startingTier === "Legendary" || tierType !== "Legendary")
-            .map(([, tier]) => tier.tooltips);
-        const unifiedTooltips = unifyTooltips(tooltipsByTier);
+        tiers = filterTooltipsByStartingTier(startingTier, tiers);
+
+        const unifiedTooltips = unifyTooltips(Object.entries(tiers).map(([, tier]) => tier.tooltips));
 
         return {
             id: card.Id,
