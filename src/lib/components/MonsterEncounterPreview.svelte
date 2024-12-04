@@ -47,11 +47,11 @@
     <div
         class="flex flex-col text-sm md:text-base lg:text-lg font-semibold text-center md:text-left md:flex-1"
     >
-        <div>
+        <div class={`h-10 md:h-[fit]`}>
             {monsterEncounter.cardName}
         </div>
 
-        <div class="text-green-700 whitespace-nowrap">
+        <div class={`text-green-700 whitespace-nowrap mb-2 md:mb-0`}>
             {monsterEncounter.health} health
         </div>
     </div>
