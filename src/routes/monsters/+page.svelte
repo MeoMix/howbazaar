@@ -5,11 +5,12 @@
         ClientSideMonsterEncounterDay,
         ClientSideMonsterEncounter,
     } from "$lib/types";
-    import SingleSelectFilter from "$lib/components/SingleSelectFilter.svelte";
     import type { PageData } from "./$types";
     import { onMount, tick } from "svelte";
     import { monsterEncounterDaysStore } from "$lib/stores/monsterEncounterDaysStore";
     import { fetchJson } from "$lib/utils/fetchUtils";
+    import MonsterFilters from "$lib/components/MonsterFilters.svelte";
+    import LazyLoadList from "$lib/components/LazyLoadList.svelte";
 
     const { data }: { data: PageData } = $props();
 
@@ -78,11 +79,28 @@
         }
     });
 
+    let searchText = $state("");
     let selectedDay = $state(undefined) as number | undefined;
     const filteredMonsterEncounterDays = $derived(
         selectedDay === undefined
             ? monsterEncounterDays
             : monsterEncounterDays.filter(({ day }) => selectedDay === day),
+    );
+
+    function filterBySearchText(monsters: ClientSideMonsterEncounter[]) {
+        return monsters.filter((monster) =>
+            monster.cardName.toLowerCase().includes(searchText.toLowerCase()),
+        );
+    }
+
+    const filteredMonsters = $derived(
+        searchText === ""
+            ? []
+            : filterBySearchText(
+                  filteredMonsterEncounterDays.flatMap((encounter) =>
+                      encounter.groups.flatMap((group) => group),
+                  ),
+              ),
     );
 
     let selectedMonsterEncounter = $state() as
@@ -124,58 +142,76 @@
 <div
     class="mx-auto w-full max-w-full sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl"
 >
-    <div class="my-4">
-        <SingleSelectFilter
-            label="Day"
-            options={data.dayOptions}
-            onSelect={onSelectDay}
-            bind:selectedOptionValue={selectedDay}
-        />
-    </div>
+    <MonsterFilters
+        dayOptions={data.dayOptions}
+        bind:searchText
+        bind:selectedDay
+        {onSelectDay}
+    />
 
-    {#each filteredMonsterEncounterDays as monsterEncounterDay}
+    {#if isLoading}
+        <div>Loading monsters...</div>
+    {:else if filteredMonsters.length > 0}
         <div class="mb-8">
-            <div class="text-2xl font-bold mb-4">
-                {#if monsterEncounterDay.day === "event"}
-                    Event
-                {:else}
-                    Day {monsterEncounterDay.day}
+            {#snippet listItem(monsterEncounter: ClientSideMonsterEncounter)}
+                <MonsterEncounter {monsterEncounter} />
+            {/snippet}
+
+            <LazyLoadList
+                items={filteredMonsters}
+                {listItem}
+                listItemName="monster"
+            />
+        </div>
+    {:else}
+        {#each filteredMonsterEncounterDays as monsterEncounterDay}
+            <div class="mb-8">
+                <div class="text-2xl font-bold mb-4">
+                    {#if monsterEncounterDay.day === "event"}
+                        Event
+                    {:else}
+                        Day {monsterEncounterDay.day}
+                    {/if}
+                </div>
+
+                <div class="grid grid-cols-3 gap-1">
+                    {#each monsterEncounterDay.groups as monsterEncounters}
+                        {#if monsterEncounterDay.groups.length < 3}
+                            {#each monsterEncounters as monsterEncounter}
+                                <div
+                                    class="grid grid-cols-1 gap-1 auto-rows-min"
+                                >
+                                    <MonsterEncounterPreview
+                                        {monsterEncounter}
+                                        {toggleEncounter}
+                                        isActive={selectedMonsterEncounter?.cardId ===
+                                            monsterEncounter.cardId}
+                                    />
+                                </div>
+                            {/each}
+                        {:else}
+                            <div class="grid grid-cols-1 gap-1 auto-rows-min">
+                                {#each monsterEncounters as monsterEncounter}
+                                    <MonsterEncounterPreview
+                                        {monsterEncounter}
+                                        {toggleEncounter}
+                                        isActive={selectedMonsterEncounter?.cardId ===
+                                            monsterEncounter.cardId}
+                                    />
+                                {/each}
+                            </div>
+                        {/if}
+                    {/each}
+                </div>
+
+                {#if selectedMonsterEncounter && monsterEncounterDay.groups
+                        .flat()
+                        .some((encounter) => encounter.cardId === selectedMonsterEncounter?.cardId)}
+                    <MonsterEncounter
+                        monsterEncounter={selectedMonsterEncounter}
+                    />
                 {/if}
             </div>
-
-            <div class="grid grid-cols-3 gap-1">
-                {#each monsterEncounterDay.groups as monsterEncounters}
-                    {#if monsterEncounterDay.groups.length < 3}
-                        {#each monsterEncounters as monsterEncounter}
-                            <div class="grid grid-cols-1 gap-1 auto-rows-min">
-                                <MonsterEncounterPreview
-                                    {monsterEncounter}
-                                    {toggleEncounter}
-                                    isActive={selectedMonsterEncounter?.cardId ===
-                                        monsterEncounter.cardId}
-                                />
-                            </div>
-                        {/each}
-                    {:else}
-                        <div class="grid grid-cols-1 gap-1 auto-rows-min">
-                            {#each monsterEncounters as monsterEncounter}
-                                <MonsterEncounterPreview
-                                    {monsterEncounter}
-                                    {toggleEncounter}
-                                    isActive={selectedMonsterEncounter?.cardId ===
-                                        monsterEncounter.cardId}
-                                />
-                            {/each}
-                        </div>
-                    {/if}
-                {/each}
-            </div>
-
-            {#if selectedMonsterEncounter && monsterEncounterDay.groups
-                    .flat()
-                    .some((encounter) => encounter.cardId === selectedMonsterEncounter?.cardId)}
-                <MonsterEncounter monsterEncounter={selectedMonsterEncounter} />
-            {/if}
-        </div>
-    {/each}
+        {/each}
+    {/if}
 </div>
