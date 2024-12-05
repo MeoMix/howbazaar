@@ -63,12 +63,12 @@
                 <span class="font-bold text-green-500">Done!</span>
             </li>
             <li>
-                <span class="">
+                <span class="line-through">
                     Broadly improve the UX of the Monsters Page. Add a search
                     bar, try to scale images down a bit, make it easier to tell
                     items/skills at a glance.
                 </span>
-                <span class="font-bold text-green-500">This is 2/3 done. Still working on search.</span>
+                <span class="font-bold text-green-500">Done!</span>
             </li>
             <li>
                 <span class="">
