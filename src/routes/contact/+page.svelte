@@ -48,7 +48,7 @@
 
 <div class="text-lg mb-8">
     <div class="text-2xl mb-4 font-semibold">
-        Upcoming Features as of November 29th, 2024:
+        Upcoming Features as of Dec 5th, 2024:
     </div>
 
     <div class="mb-8">
@@ -68,7 +68,7 @@
                     bar, try to scale images down a bit, make it easier to tell
                     items/skills at a glance.
                 </span>
-                <span class="font-bold text-green-500"></span>
+                <span class="font-bold text-green-500">This is 2/3 done. Still working on search.</span>
             </li>
             <li>
                 <span class="">
@@ -76,7 +76,7 @@
                     improves load time of website / reduces network requests to
                     server.
                 </span>
-                <span class="font-bold text-green-500"></span>
+                <span class="font-bold text-green-500">This change was reverted and I'm investigating why it didn't work as I'd hoped</span>
             </li>
         </ul>
     </div>
