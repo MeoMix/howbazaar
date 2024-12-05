@@ -613,6 +613,10 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
                 }
             }
 
+            if (card.Localization.Title.Text === "Uwashiwali Bird" && enchantmentType === "Shiny") {
+                tooltips = ["This has +1 Multicast for each Property you have."]
+            }
+
             // Explicitly filter out Radiant's default case because only complete beginners don't know what it does
             // and because it appears on ~every item while also being quite wordy. Just doesn't add a lot of value.
             if (enchantmentType === "Radiant" && tooltips[0]?.includes("This cannot be Frozen")) {

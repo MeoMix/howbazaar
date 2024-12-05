@@ -20826,7 +20826,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+0 MISSING"
+          "This has +1 Multicast for each Property you have."
         ]
       },
       {
