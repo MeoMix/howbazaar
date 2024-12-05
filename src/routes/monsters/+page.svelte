@@ -11,6 +11,7 @@
     import { fetchJson } from "$lib/utils/fetchUtils";
     import MonsterFilters from "$lib/components/MonsterFilters.svelte";
     import LazyLoadList from "$lib/components/LazyLoadList.svelte";
+    import { filterMonsters } from "$lib/utils/filterUtils";
 
     const { data }: { data: PageData } = $props();
 
@@ -87,19 +88,15 @@
             : monsterEncounterDays.filter(({ day }) => selectedDay === day),
     );
 
-    function filterBySearchText(monsters: ClientSideMonsterEncounter[]) {
-        return monsters.filter((monster) =>
-            monster.cardName.toLowerCase().includes(searchText.toLowerCase()),
-        );
-    }
 
     const filteredMonsters = $derived(
         searchText === ""
             ? []
-            : filterBySearchText(
+            : filterMonsters(
                   filteredMonsterEncounterDays.flatMap((encounter) =>
                       encounter.groups.flatMap((group) => group),
                   ),
+                  searchText
               ),
     );
 
