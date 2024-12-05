@@ -26,7 +26,7 @@ export function getMonsterEncounterDays(
                     const combatEncounter = combatEncounterCards.find(card => card.id === cardId);
 
                     if (combatEncounter === undefined) {
-                        console.log(`Failed to find card with cardId: ${cardId}`);
+                        //console.log(`Failed to find card with cardId: ${cardId}`);
                         return null;
                     }
 
@@ -34,7 +34,7 @@ export function getMonsterEncounterDays(
                     const monster = monsters.find(monster => monster.id === combatEncounter.monsterTemplateId);
 
                     if (monster === undefined) {
-                        console.log(`Failed to find monster with templateId: ${combatEncounter.monsterTemplateId}`);
+                        //console.log(`Failed to find monster with templateId: ${combatEncounter.monsterTemplateId}`);
                         return null;
                     }
 
@@ -42,7 +42,7 @@ export function getMonsterEncounterDays(
                         const itemCard = itemCards.find(card => card.id === item.templateId);
 
                         if (itemCard === undefined) {
-                            console.log(`Failed to find card item with id: ${item.templateId}`);
+                            //console.log(`Failed to find card item with id: ${item.templateId}`);
                             return null;
                         }
 
@@ -70,7 +70,7 @@ export function getMonsterEncounterDays(
                         const skillCard = skillCards.find(card => card.id === skill.templateId);
 
                         if (skillCard === undefined) {
-                            console.log(`Failed to find card skill with id: ${skill.templateId}`);
+                            //console.log(`Failed to find card skill with id: ${skill.templateId}`);
                             return null;
                         }
 
