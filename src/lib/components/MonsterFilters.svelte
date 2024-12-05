@@ -3,6 +3,7 @@
     import SearchInput from "./SearchInput.svelte";
     import SingleSelectFilter from "./SingleSelectFilter.svelte";
     import type { Option } from "$lib/types";
+    import { onMount } from "svelte";
 
     let {
         dayOptions,
@@ -20,6 +21,13 @@
         selectedDay = undefined;
         searchText = "";
     }
+
+    onMount(async () => {
+        const hash = window.location.hash.slice(1);
+        if (hash) {
+            searchText = hash.replace("_", " ");
+        }
+    });
 </script>
 
 <div class="mt-8 mb-4">

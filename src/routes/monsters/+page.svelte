@@ -48,36 +48,6 @@
                 isLoading = false;
             }
         }
-
-        const hash = window.location.hash;
-        if (hash) {
-            const combatEncounter = monsterEncounterDays
-                .flatMap((day) =>
-                    day.groups.flatMap((group) =>
-                        group.find(
-                            (encounter) =>
-                                encounter.cardName.replace(/\s+/g, "_") ===
-                                hash.slice(1),
-                        ),
-                    ),
-                )
-                .find(Boolean); // Ensure only a non-falsy value is returned
-
-            if (combatEncounter) {
-                selectedMonsterEncounter = combatEncounter;
-
-                await tick();
-
-                // Do this manually so it works even if data is fetched after page loads
-                const targetElement = document.querySelector(hash);
-                if (targetElement) {
-                    targetElement.scrollIntoView({
-                        behavior: "instant",
-                        block: "start",
-                    });
-                }
-            }
-        }
     });
 
     let searchText = $state("");
@@ -88,7 +58,6 @@
             : monsterEncounterDays.filter(({ day }) => selectedDay === day),
     );
 
-
     const filteredMonsters = $derived(
         searchText === ""
             ? []
@@ -96,7 +65,7 @@
                   filteredMonsterEncounterDays.flatMap((encounter) =>
                       encounter.groups.flatMap((group) => group),
                   ),
-                  searchText
+                  searchText,
               ),
     );
 
