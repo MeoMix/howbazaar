@@ -1,6 +1,6 @@
 import type { ParsedCombatEncounterCard, ParsedItemCard, ParsedSkillCard, ParsedDayHour, TierType, ParsedMonster, ClientSideMonsterEncounterDay } from "$lib/types";
 
-// TODO: This should reduce 'MonsterEncounterDay' which is converted to DTO in the API layer.
+// TODO: This should return 'MonsterEncounterDay' which is converted to DTO in the API layer.
 export function getMonsterEncounterDays(
     itemCards: ParsedItemCard[],
     skillCards: ParsedSkillCard[],
@@ -8,9 +8,24 @@ export function getMonsterEncounterDays(
     monsters: ParsedMonster[],
     dayHours: ParsedDayHour[]
 ): ClientSideMonsterEncounterDay[] {
-    let monsterEncounterDayHours = dayHours.filter(({ day, hour }) => day <= 10 && hour === 3);
+    const monsterEncounterDayHours = dayHours.filter(({ day, hour }) => day <= 10 && hour === 3);
 
-    const monsterEncounterDays = monsterEncounterDayHours.map((dayHour) => {
+    // Sparring Partner, Mr. Moo, and Bounty Hunter are "Event" monsters
+    const allMonsterEncounters = [...monsterEncounterDayHours, {
+        day: "event" as const,
+        spawnGroups: [{
+            ids: [
+                // Sparring Partner
+                "60be5dca-6908-439c-843a-92dcb5b5dc4e",
+                // Mr. Moo
+                "72411b58-e99a-44a9-a43f-9767896c7508",
+                // Bounty Hunter
+                "0f0b2074-06d7-4aea-a5aa-9e603602215a"
+            ]
+        }]
+    }];
+
+    const monsterEncounterDays: ClientSideMonsterEncounterDay[] = allMonsterEncounters.map((dayHour) => {
         const groups = dayHour.spawnGroups.map(group => {
             const uniqueIds = new Set<string>();
 
@@ -26,7 +41,7 @@ export function getMonsterEncounterDays(
                     const combatEncounter = combatEncounterCards.find(card => card.id === cardId);
 
                     if (combatEncounter === undefined) {
-                        //console.log(`Failed to find card with cardId: ${cardId}`);
+                        console.log(`Failed to find card with cardId: ${cardId}`);
                         return null;
                     }
 
@@ -43,11 +58,6 @@ export function getMonsterEncounterDays(
 
                         if (itemCard === undefined) {
                             //console.log(`Failed to find card item with id: ${item.templateId}`);
-                            return null;
-                        }
-
-                        // BUG: For some god awful reason v2_Monsters says Coconut Crab has two Sea Shells when it only has one?
-                        if (cardName === "Coconut Crab" && itemCard.name === "Sea Shell" && item.socketId === "Socket_7") {
                             return null;
                         }
 

@@ -464,11 +464,6 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
                 };
             }
 
-            if (card.Localization.Title.Text === "Flamethrower" && enchantmentType === "Toxic") {
-                console.log('yo');
-                debugger;
-            }
-
             const enchantmentAbilities = Object.values(enchantment.Abilities).filter(item => item.Action) as Ability[];
             const enchantmentAuras = Object.values(enchantment.Auras).filter(item => item.Action) as Aura[];
 

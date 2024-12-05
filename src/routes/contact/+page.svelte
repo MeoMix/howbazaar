@@ -56,11 +56,11 @@
 
         <ul class="ml-8 leading-loose">
             <li>
-                <span class="">
+                <span class="line-through">
                     Add monsters to the Monsters page which are only able to be
                     encountered via events rather than Hour 3 encounters.
                 </span>
-                <span class="font-bold text-green-500"></span>
+                <span class="font-bold text-green-500">Done!</span>
             </li>
             <li>
                 <span class="">

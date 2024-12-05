@@ -131,7 +131,7 @@ export type ClientSideMonsterEncounter = {
 };
 
 export type ClientSideMonsterEncounterDay = {
-    day: number;
+    day: number | "event";
     groups: ClientSideMonsterEncounter[][];
 };
 

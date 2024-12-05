@@ -26,6 +26,7 @@ import { checkAndResizeImages, convertImagesToAvif } from './utils/imageUtils';
 // 'FerrosKhan', -- prefixed with ENC
 // 'EnclaveRevenant', -- prefixed with Event
 // 'Robo-Bouncer' -- only one copy exists (with the BG suffix), named Robobouncer
+// 'Bounty Hunter' -- prefixed with ENC
 
 const inputDirectory = './scripts/images/';
 const assetType = 'monsters';
@@ -48,7 +49,8 @@ const nameToFileMap: Record<string, string> = {
     'Thug': 'Mugger',
     'DeathKnightReaper': 'Reaper',
     'DrVortex': 'MadScientist',
-    'RoboBouncer': 'Robobouncer'
+    'RoboBouncer': 'Robobouncer',
+    'BountyHunter': 'BountyHunters'
 };
 
 async function processMonsterImages() {

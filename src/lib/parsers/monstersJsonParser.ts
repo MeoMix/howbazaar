@@ -28,6 +28,12 @@ export function parseJson(monstersJson: MonstersJson): ParsedMonster[] {
 
 function patchMonsters(monsters: ParsedMonster[]) {
     monsters.forEach((monster) => {
+        // Coconut Crab
+        if (monster.id === "2e9ed78c-6070-4802-9e98-e1090fe5bd78" ) {
+            // v2_Monsters says Coconut Crab has two Sea Shells when it only has one
+            monster.items = monster.items.filter(item => !(item.templateId === "eda51b14-8420-4da4-ba82-89513e5deaa2" && item.socketId === "Socket_7"));
+        }
+
         // Pyro
         if (monster.id === "b712a602-1843-4fc3-85ad-b8e3b7bca489") {
             monster.skills.push({
@@ -85,8 +91,5 @@ function patchMonsters(monsters: ParsedMonster[]) {
         return monster;
     });
 
-    // Sparring Partner is no longer an Hour 3 encounter.
-    const filteredMonsters = monsters.filter(monster => monster.id !== "e98f8212-6dc2-463d-87cc-9d407c60c50d");
-
-    return filteredMonsters;
+    return monsters;
 }

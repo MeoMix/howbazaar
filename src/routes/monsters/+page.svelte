@@ -136,7 +136,11 @@
     {#each filteredMonsterEncounterDays as monsterEncounterDay}
         <div class="mb-8">
             <div class="text-2xl font-bold mb-4">
-                Day {monsterEncounterDay.day}
+                {#if monsterEncounterDay.day === "event"}
+                    Event
+                {:else}
+                    Day {monsterEncounterDay.day}
+                {/if}
             </div>
 
             <div class="grid grid-cols-3 gap-1">

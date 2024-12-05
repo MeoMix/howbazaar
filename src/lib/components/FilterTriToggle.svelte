@@ -51,7 +51,7 @@
     pill
     color="none"
     on:click={() => onClick(value)}
-    class={`transition-colors focus:outline-none border-2 ${getToggleClasses(state)}`}
+    class={`capitalize transition-colors focus:outline-none border-2 ${getToggleClasses(state)}`}
 >
     {label}
 </Button>

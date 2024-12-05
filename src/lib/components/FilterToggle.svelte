@@ -25,7 +25,7 @@
     outline={!isEnabled}
     pill
     on:click={onClick}
-    class={`transition-colors focus:outline-none border-2 ${getToggleClasses(isEnabled)}`}
+    class={`capitalize transition-colors focus:outline-none border-2 ${getToggleClasses(isEnabled)}`}
 >
     {label}
 </Button>
