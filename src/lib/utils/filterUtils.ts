@@ -229,7 +229,7 @@ export function filterTags(tags: Tag[], hiddenTags: HiddenTag[]) {
 
 export function sortCards<T extends (ClientSideItemCard | ClientSideSkillCard)>(cards: T[], selectedSortOption: (ItemSortOptions | SkillSortOptions)) {
     return cards.sort((a, b) => {
-        if (selectedSortOption === "alphabetical") {
+        if (selectedSortOption === "name") {
             return a.name.localeCompare(b.name);
         } else if (selectedSortOption === "tier") {
             // Sort by tier using tierOrder
