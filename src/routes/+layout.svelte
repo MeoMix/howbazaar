@@ -23,6 +23,23 @@
     import { fly } from "svelte/transition";
     import { page } from "$app/stores";
     import { clipboardState } from "$lib/stores/clipboard";
+    import { browser } from "$app/environment";
+
+    if (browser && "serviceWorker" in navigator) {
+        navigator.serviceWorker.getRegistrations().then((registrations) => {
+            registrations.forEach((registration) => {
+                registration.unregister().then((success) => {
+                    if (success) {
+                        console.log(
+                            "Service Worker unregistered successfully.",
+                        );
+                    } else {
+                        console.log("Failed to unregister Service Worker.");
+                    }
+                });
+            });
+        });
+    }
 
     let toastStatus = $state(false);
     let toastClearTimeout: ReturnType<typeof setTimeout>;
@@ -55,12 +72,7 @@
                 class="self-center whitespace-nowrap text-xl font-semibold dark:text-bazaar-tan700 hover:text-bazaar-orange dark:hover:text-bazaar-orange relative z-10"
             >
                 <!-- How Bazaar -->
-                <Badge
-                    border
-                    large
-                    color="green"
-                    class="whitespace-nowrap"
-                >
+                <Badge border large color="green" class="whitespace-nowrap">
                     Updated Dec 3
                 </Badge>
             </span>
