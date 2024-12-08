@@ -54,7 +54,7 @@
         {/if}
     </div>
 
-    <div class="flex flex-wrap gap-2">
+    <div class="flex flex-wrap gap-1">
         {#each options as option}
             <FilterTriToggle
                 label={option.name}

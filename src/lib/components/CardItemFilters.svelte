@@ -98,7 +98,15 @@
     </div>
 
     {#if isShowingAdvancedFilters}
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
+        <div class="grid grid-cols-2 mt-4 gap-y-4">
+            <div class="col-span-full">
+                <MultiSelectTriFilter
+                    label="Tags"
+                    options={tagOptions}
+                    bind:triStates={tagStates}
+                    bind:isMatchAny={isMatchAnyTag}
+                />
+            </div>
             <MultiSelectFilter
                 label="Heroes"
                 options={heroOptions}
@@ -108,12 +116,6 @@
                 label="Starting Tiers"
                 options={minimumTierOptions}
                 bind:selectedOptionValues={selectedTiers}
-            />
-            <MultiSelectTriFilter
-                label="Tags"
-                options={tagOptions}
-                bind:triStates={tagStates}
-                bind:isMatchAny={isMatchAnyTag}
             />
             <MultiSelectFilter
                 label="Sizes"

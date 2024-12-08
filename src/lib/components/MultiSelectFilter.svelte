@@ -30,7 +30,7 @@
         >{label}</Label
     >
 
-    <div class="flex flex-wrap gap-2">
+    <div class="flex flex-wrap gap-1">
         {#each options as option}
             <FilterToggle
                 isEnabled={selectedOptionValues.includes(option.value)}
