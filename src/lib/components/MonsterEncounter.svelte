@@ -13,6 +13,12 @@
 <div class="mt-8" {id}>
     <div class="font-bold text-2xl mb-2">
         {monsterEncounter.cardName}
+
+        ·
+        
+        <span class={`text-xl text-green-700 whitespace-nowrap`}>
+            {monsterEncounter.health} health
+        </span>
     </div>
 
     <div

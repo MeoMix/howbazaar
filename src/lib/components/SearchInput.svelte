@@ -1,5 +1,4 @@
 <script lang="ts">
-    // TODO: Should I use Search component?
     import { ButtonGroup, Input, InputAddon } from "flowbite-svelte";
     import SearchOutline from "flowbite-svelte-icons/SearchOutline.svelte";
 
