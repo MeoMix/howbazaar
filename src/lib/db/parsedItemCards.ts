@@ -17605,6 +17605,105 @@ const data: ParsedItemCard[] = [
     ]
   },
   {
+    "id": "8eb91c44-0e07-4e89-8cad-dfe99b8ef443",
+    "name": "Red Button",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Charge adjacent Large items 2 second(s)."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Charge adjacent Large items 3 second(s)."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Charge adjacent Large items 4 second(s)."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "Charge"
+    ],
+    "size": "Small",
+    "heroes": [
+      "Dooley"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 1 item for 2 second(s)."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze 1 item for 1 second(s)."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 1 item for 2 second(s)."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield 30."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal 45."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison 3."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn 4."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "Adjacent items gain +10% Crit Chance for the fight."
+        ]
+      }
+    ],
+    "unifiedTooltips": [
+      "Cooldown 6 seconds",
+      "Charge adjacent Large items (2/3/4) second(s)."
+    ]
+  },
+  {
     "id": "4b823c6b-3e35-47a2-9b65-177e911aca1a",
     "name": "Thrown Net",
     "startingTier": "Silver",
