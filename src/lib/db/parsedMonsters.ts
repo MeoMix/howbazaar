@@ -726,7 +726,7 @@ const data: ParsedMonster[] = [
   {
     "id": "e27b5f5f-2b71-42c5-a839-37e0aca0a8a5",
     "level": 7,
-    "health": 1300,
+    "health": 1200,
     "items": [
       {
         "templateId": "027ef534-d047-4e18-8496-d9fd4773e15d",
@@ -915,7 +915,7 @@ const data: ParsedMonster[] = [
   {
     "id": "c4488147-71e7-4383-95d7-f96910221060",
     "level": 5,
-    "health": 750,
+    "health": 650,
     "items": [
       {
         "templateId": "5a9bd869-4614-4edf-941d-5f44e0bb1519",
@@ -4297,7 +4297,7 @@ const data: ParsedMonster[] = [
   {
     "id": "ecb2508b-07b1-4712-a82a-fb47c433ed6a",
     "level": 8,
-    "health": 1650,
+    "health": 1550,
     "items": [
       {
         "templateId": "2834ede9-01e9-4b68-8f1f-70f83187c78f",
@@ -4400,7 +4400,7 @@ const data: ParsedMonster[] = [
   {
     "id": "b712a602-1843-4fc3-85ad-b8e3b7bca489",
     "level": 1,
-    "health": 150,
+    "health": 100,
     "items": [
       {
         "templateId": "d45bb1dd-5342-4c69-b7fe-f56d3fac7d1f",
