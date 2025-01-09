@@ -266,7 +266,7 @@
     "Player": {
       "Attributes": {
         "Prestige": 50,
-        "HealthMax": 700,
+        "HealthMax": 650,
         "Level": 5
       },
       "Hand": {
@@ -1035,7 +1035,7 @@
     "Player": {
       "Attributes": {
         "Prestige": 50,
-        "HealthMax": 100,
+        "HealthMax": 75,
         "Level": 1
       },
       "Hand": {
@@ -6052,7 +6052,7 @@
     "Player": {
       "Attributes": {
         "Prestige": 50,
-        "HealthMax": 150,
+        "HealthMax": 100,
         "Level": 1
       },
       "Hand": {
@@ -6414,7 +6414,7 @@
     "Player": {
       "Attributes": {
         "Prestige": 50,
-        "HealthMax": 500,
+        "HealthMax": 450,
         "Level": 4
       },
       "Hand": {
@@ -9514,7 +9514,7 @@
     "Player": {
       "Attributes": {
         "Prestige": 50,
-        "HealthMax": 350,
+        "HealthMax": 300,
         "Level": 3
       },
       "Hand": {
@@ -9706,7 +9706,7 @@
     "Player": {
       "Attributes": {
         "Prestige": 50,
-        "HealthMax": 6000,
+        "HealthMax": 4700,
         "Level": 15
       },
       "Hand": {
