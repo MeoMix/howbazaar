@@ -4,7 +4,9 @@ import cardsJson from './v2_Cards.json';
 
 const allowedList = [
   // Arc Blaster:
-  'aaa7d8fc-dd1b-42b3-9ea0-3b982f2f3790'
+  'aaa7d8fc-dd1b-42b3-9ea0-3b982f2f3790',
+  // Fuel Rod:
+  'b9d4df16-0876-45ee-a35e-700d7b68cb6f'
 ];
 
 const validCardPacks = ['Dooley_Core', 'Pygmalien_Core', 'Vanessa_Core'];

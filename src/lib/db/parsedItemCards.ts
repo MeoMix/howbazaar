@@ -12458,7 +12458,7 @@ const data: ParsedItemCard[] = [
           "Cooldown 6 seconds",
           "Shield 5.",
           "Slow 1 item for 1 second(s).",
-          "When you use an adjacent item, Charge this 1000."
+          "When you use an adjacent item, Charge this 1 second(s)."
         ]
       },
       "Silver": {
@@ -12466,7 +12466,7 @@ const data: ParsedItemCard[] = [
           "Cooldown 6 seconds",
           "Shield 10.",
           "Slow 1 item for 2 second(s).",
-          "When you use an adjacent item, Charge this 1000."
+          "When you use an adjacent item, Charge this 1 second(s)."
         ]
       },
       "Gold": {
@@ -12474,7 +12474,7 @@ const data: ParsedItemCard[] = [
           "Cooldown 6 seconds",
           "Shield 20.",
           "Slow 1 item for 3 second(s).",
-          "When you use an adjacent item, Charge this 1000."
+          "When you use an adjacent item, Charge this 1 second(s)."
         ]
       },
       "Diamond": {
@@ -12482,7 +12482,7 @@ const data: ParsedItemCard[] = [
           "Cooldown 6 seconds",
           "Shield 40.",
           "Slow 1 item for 4 second(s).",
-          "When you use an adjacent item, Charge this 1000."
+          "When you use an adjacent item, Charge this 1 second(s)."
         ]
       },
       "Legendary": {
@@ -12560,7 +12560,7 @@ const data: ParsedItemCard[] = [
       "Cooldown 6 seconds",
       "Shield (5/10/20/40).",
       "Slow 1 item for (1/2/3/4) second(s).",
-      "When you use an adjacent item, Charge this 1000."
+      "When you use an adjacent item, Charge this 1 second(s)."
     ]
   },
   {
@@ -14861,6 +14861,119 @@ const data: ParsedItemCard[] = [
       "Cooldown 8 seconds",
       "Deal (50/100/200) damage.",
       "When you Burn, this gains (25/50/75) damage for the fight."
+    ]
+  },
+  {
+    "id": "b9d4df16-0876-45ee-a35e-700d7b68cb6f",
+    "name": "Fuel Rod",
+    "startingTier": "Bronze",
+    "tiers": {
+      "Bronze": {
+        "tooltips": [
+          "Cooldown 8 seconds",
+          "Burn both players 5.",
+          "Haste adjacent items for 1 second(s).",
+          "Adjacent Vehicles have their cooldowns reduced by 5%."
+        ]
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 8 seconds",
+          "Burn both players 10.",
+          "Haste adjacent items for 2 second(s).",
+          "Adjacent Vehicles have their cooldowns reduced by 10%."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 8 seconds",
+          "Burn both players 15.",
+          "Haste adjacent items for 3 second(s).",
+          "Adjacent Vehicles have their cooldowns reduced by 15%."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 8 seconds",
+          "Burn both players 20.",
+          "Haste adjacent items for 4 second(s).",
+          "Adjacent Vehicles have their cooldowns reduced by 20%."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "Burn",
+      "Haste"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Dooley"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 2 items for 3 second(s)."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze 1 item for 3 second(s)."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "This has double Haste duration."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield 90."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal 120."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison 9."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "This has double Burn."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "+50% Crit Chance"
+        ]
+      }
+    ],
+    "unifiedTooltips": [
+      "Cooldown 8 seconds",
+      "Burn both players (5/10/15/20).",
+      "Haste adjacent items for (1/2/3/4) second(s).",
+      "Adjacent Vehicles have their cooldowns reduced by (5%/10%/15%/20%)."
     ]
   },
   {

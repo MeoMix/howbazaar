@@ -23,6 +23,7 @@ import { checkAndResizeImages, convertImagesToAvif } from './utils/imageUtils';
 //   'TinyCutlass', // Reuse cutlass
 //   'Octopus', // Flat_Octopus
 //   'Snowflake' //Snowflake
+//   'FuelRod', //NuclearReactor
 // ]
 
 // Directory containing your images
@@ -111,7 +112,9 @@ const cleanFileName = (fileName: string): string => {
     'Roburglars': 'MechMoles',
     'Titanium': 'Pyrocarbon',
     'AlienAxe': 'RuneAxe',
-    'PowerShoes': 'AgilityBoots'
+    'PowerShoes': 'AgilityBoots',
+    'NuclearReactor': 'FuelRod',
+    'ForkLift': 'Forklift'
   };
 
   // Sometimes there's a literal space at the end of the filename. Madness.

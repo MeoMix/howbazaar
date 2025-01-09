@@ -2785,7 +2785,7 @@
     "Player": {
       "Attributes": {
         "Prestige": 50,
-        "HealthMax": 3500,
+        "HealthMax": 3200,
         "Level": 12
       },
       "Hand": {
@@ -7708,7 +7708,7 @@
     "Player": {
       "Attributes": {
         "Prestige": 50,
-        "HealthMax": 3600,
+        "HealthMax": 3200,
         "Level": 12
       },
       "Hand": {
@@ -8793,7 +8793,7 @@
     "Player": {
       "Attributes": {
         "Prestige": 50,
-        "HealthMax": 2500,
+        "HealthMax": 2325,
         "Level": 10
       },
       "Hand": {
