@@ -613,7 +613,7 @@
     "Player": {
       "Attributes": {
         "Prestige": 50,
-        "HealthMax": 1300,
+        "HealthMax": 1200,
         "Level": 7
       },
       "Hand": {
