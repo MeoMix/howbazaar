@@ -64,7 +64,7 @@ function patchMonsters(monsters: ParsedMonster[]) {
                 // Insert Lumboars after Shoe Blade
                 monster.items.splice(shoeBladeIndex + 1, 0, {
                     templateId: "9d289951-bda7-4f74-a5cf-dbe350c0cae5",
-                    tierType: "Silver",
+                    tierType: "Bronze",
                     socketId: "Socket_6",
                     enchantmentType: undefined
                 });

@@ -531,7 +531,7 @@ const data: ParsedMonster[] = [
   {
     "id": "20061be9-0823-41c8-afae-60f49073058f",
     "level": 7,
-    "health": 1300,
+    "health": 1200,
     "items": [
       {
         "templateId": "08bb5055-bd8d-4f86-bff6-24f8cb47f509",
@@ -901,14 +901,6 @@ const data: ParsedMonster[] = [
       {
         "templateId": "4a443bdd-f949-4fb5-9ccd-a710f74d2311",
         "tierType": "Diamond"
-      },
-      {
-        "templateId": "25c63d19-8254-47f8-acc9-519ee5a69e1f",
-        "tierType": "Gold"
-      },
-      {
-        "templateId": "18c6637b-14c7-4311-b853-e3fd74c613eb",
-        "tierType": "Gold"
       }
     ]
   },
@@ -1096,14 +1088,6 @@ const data: ParsedMonster[] = [
       {
         "templateId": "56450d16-bc69-43fd-bb89-4aff071cda29",
         "tierType": "Diamond"
-      },
-      {
-        "templateId": "015bc348-773e-4009-87ff-231452431bba",
-        "tierType": "Diamond"
-      },
-      {
-        "templateId": "e43da7b1-1190-469a-b6c6-43d8e3ca0ad6",
-        "tierType": "Diamond"
       }
     ]
   },
@@ -1188,7 +1172,7 @@ const data: ParsedMonster[] = [
   {
     "id": "518bd4b2-97f4-44f9-8b74-933962339751",
     "level": 10,
-    "health": 2750,
+    "health": 2325,
     "items": [
       {
         "templateId": "fc2f0122-129b-41e8-942e-a6a10a1c5962",
@@ -1341,14 +1325,6 @@ const data: ParsedMonster[] = [
       {
         "templateId": "e8770458-220a-45bd-bfef-d6045b152d29",
         "tierType": "Diamond"
-      },
-      {
-        "templateId": "fbbfbef7-8fe4-4ac0-81fa-09afb59e0fcc",
-        "tierType": "Silver"
-      },
-      {
-        "templateId": "c4c70f57-c51e-4bc4-848c-0f0e7fbddd28",
-        "tierType": "Silver"
       }
     ]
   },
@@ -1798,12 +1774,12 @@ const data: ParsedMonster[] = [
     "items": [
       {
         "templateId": "6ba3778c-e760-44f3-b3b4-a4b4ca267cc2",
-        "tierType": "Gold",
+        "tierType": "Silver",
         "socketId": "Socket_1"
       },
       {
         "templateId": "aa97a75d-3bdf-4f1b-bc2b-457375e31e0f",
-        "tierType": "Silver",
+        "tierType": "Bronze",
         "socketId": "Socket_2"
       },
       {
@@ -1823,7 +1799,7 @@ const data: ParsedMonster[] = [
       },
       {
         "templateId": "9d289951-bda7-4f74-a5cf-dbe350c0cae5",
-        "tierType": "Silver",
+        "tierType": "Bronze",
         "socketId": "Socket_6"
       },
       {
@@ -2918,7 +2894,7 @@ const data: ParsedMonster[] = [
   {
     "id": "f43985fe-7e14-4797-a86d-71ee83195154",
     "level": 7,
-    "health": 1300,
+    "health": 1200,
     "items": [
       {
         "templateId": "6ba3778c-e760-44f3-b3b4-a4b4ca267cc2",
@@ -3132,10 +3108,6 @@ const data: ParsedMonster[] = [
       {
         "templateId": "51cec489-1988-48ff-95af-0235b374803e",
         "tierType": "Bronze"
-      },
-      {
-        "templateId": "292f58c0-409b-4de7-a8d2-099a8629aa5e",
-        "tierType": "Silver"
       }
     ]
   },
@@ -4056,7 +4028,7 @@ const data: ParsedMonster[] = [
   {
     "id": "04747408-de0e-4944-b79d-23ca41008619",
     "level": 6,
-    "health": 750,
+    "health": 900,
     "items": [
       {
         "templateId": "d45bb1dd-5342-4c69-b7fe-f56d3fac7d1f",
