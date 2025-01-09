@@ -7972,7 +7972,7 @@
     "Player": {
       "Attributes": {
         "Prestige": 50,
-        "HealthMax": 250,
+        "HealthMax": 200,
         "Level": 2
       },
       "Hand": {
