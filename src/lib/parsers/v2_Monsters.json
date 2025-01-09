@@ -2158,7 +2158,7 @@
     "Player": {
       "Attributes": {
         "Prestige": 50,
-        "HealthMax": 150,
+        "HealthMax": 100,
         "Level": 1
       },
       "Hand": {
@@ -3768,8 +3768,8 @@
     "Player": {
       "Attributes": {
         "Prestige": 50,
-        "HealthMax": 550,
-        "Level": 4
+        "HealthMax": 300,
+        "Level": 3
       },
       "Hand": {
         "Items": [
@@ -3860,14 +3860,6 @@
         {
           "$type": "TCardInstanceSkill",
           "TemplateId": "b7b9f86e-689d-44ec-889d-026e8d45081c",
-          "TemplateVersion": "1.0.0",
-          "InstanceId": null,
-          "Tier": "Silver",
-          "Attributes": {}
-        },
-        {
-          "$type": "TCardInstanceSkill",
-          "TemplateId": "fbbfbef7-8fe4-4ac0-81fa-09afb59e0fcc",
           "TemplateVersion": "1.0.0",
           "InstanceId": null,
           "Tier": "Silver",
@@ -5180,7 +5172,7 @@
     "Player": {
       "Attributes": {
         "Prestige": 50,
-        "HealthMax": 550,
+        "HealthMax": 450,
         "Level": 4
       },
       "Hand": {
@@ -6531,7 +6523,7 @@
     "Player": {
       "Attributes": {
         "Prestige": 50,
-        "HealthMax": 750,
+        "HealthMax": 650,
         "Level": 5
       },
       "Hand": {
