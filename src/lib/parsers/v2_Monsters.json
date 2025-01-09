@@ -3883,7 +3883,7 @@
   "f820c620-244a-46c4-bace-51eb70ce48e6": {
     "Id": "f820c620-244a-46c4-bace-51eb70ce48e6",
     "Version": "1.0.0",
-    "InternalName": "Tent City Mayor",
+    "InternalName": "Trashtown Mayor",
     "Player": {
       "Attributes": {
         "Prestige": 50,
@@ -7170,7 +7170,7 @@
     "Player": {
       "Attributes": {
         "Prestige": 50,
-        "HealthMax": 4200,
+        "HealthMax": 8888,
         "Level": 13
       },
       "Hand": {
@@ -8853,7 +8853,7 @@
   "73163ebc-46fd-43f0-9693-8666ccc9da09": {
     "Id": "73163ebc-46fd-43f0-9693-8666ccc9da09",
     "Version": "1.0.0",
-    "InternalName": "Robo-Bouncer",
+    "InternalName": "Bouncertron",
     "Player": {
       "Attributes": {
         "Prestige": 50,
