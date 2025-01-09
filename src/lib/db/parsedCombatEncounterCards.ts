@@ -45,7 +45,7 @@ const data: ParsedCombatEncounterCard[] = [
   },
   {
     "id": "a1c3df15-1058-44ff-bee9-0991cfba2068",
-    "name": "Robo-Bouncer",
+    "name": "Bouncertron",
     "monsterTemplateId": "73163ebc-46fd-43f0-9693-8666ccc9da09"
   },
   {
@@ -54,14 +54,14 @@ const data: ParsedCombatEncounterCard[] = [
     "monsterTemplateId": "54030dd4-8051-4c21-abcd-9205df585ea5"
   },
   {
-    "id": "b79845a7-f806-4e7a-9011-d98ebd22a323",
-    "name": "Viper",
-    "monsterTemplateId": "e07396b2-a71e-46e7-b32b-d9568585dd93"
-  },
-  {
     "id": "a75621b9-11a2-4405-8254-0e58a300110f",
     "name": "Infernal Envoy",
     "monsterTemplateId": "3f3d11c5-b943-45d1-80b3-a567130708f0"
+  },
+  {
+    "id": "b79845a7-f806-4e7a-9011-d98ebd22a323",
+    "name": "Viper",
+    "monsterTemplateId": "e07396b2-a71e-46e7-b32b-d9568585dd93"
   },
   {
     "id": "5253c1ef-af51-43ac-a307-4e707e5747a6",
@@ -310,7 +310,7 @@ const data: ParsedCombatEncounterCard[] = [
   },
   {
     "id": "9c167a0c-d348-4e09-8f6b-be0ac65d3cda",
-    "name": "Tent City Mayor",
+    "name": "Trashtown Mayor",
     "monsterTemplateId": "f820c620-244a-46c4-bace-51eb70ce48e6"
   },
   {

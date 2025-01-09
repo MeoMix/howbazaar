@@ -115,6 +115,13 @@
         {onSelectDay}
     />
 
+    <div class="my-8 font-semibold text-red-500">
+        WARNING: This data is still out of date (I can't update it
+        automatically). I'm working on updating it manually, but it'll take
+        time. Feel free to ping me in the Discord with issues.
+    </div>
+
+
     {#if isLoading}
         <div>Loading monsters...</div>
     {:else if filteredMonsters.length > 0}

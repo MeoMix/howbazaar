@@ -640,18 +640,18 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
         ) as typeof tiers;
 
         // TODO: Remove this in a future patch -- just bad data.
-        if (name === "Tripwire" && hiddenTags.includes('Regen')) {
-            hiddenTags = hiddenTags.filter(tag => tag !== 'Regen');
-        }
+        // if (name === "Tripwire" && hiddenTags.includes('Regen')) {
+        //     hiddenTags = hiddenTags.filter(tag => tag !== 'Regen');
+        // }
 
-        if (name === "Cybersecurity") {
-            const searchString = "if its your";
-            const brokenTooltipIndex = tiers.Diamond.tooltips.findIndex(tooltip => tooltip.includes(searchString));
+        // if (name === "Cybersecurity") {
+        //     const searchString = "if its your";
+        //     const brokenTooltipIndex = tiers.Diamond.tooltips.findIndex(tooltip => tooltip.includes(searchString));
 
-            if (brokenTooltipIndex > -1) {
-                tiers.Diamond.tooltips[brokenTooltipIndex] = tiers.Diamond.tooltips[brokenTooltipIndex].replace(searchString, "if it is your");
-            }
-        }
+        //     if (brokenTooltipIndex > -1) {
+        //         tiers.Diamond.tooltips[brokenTooltipIndex] = tiers.Diamond.tooltips[brokenTooltipIndex].replace(searchString, "if it is your");
+        //     }
+        // }
 
         if (name === "Multitool") {
             const searchString = "Slow an item";
