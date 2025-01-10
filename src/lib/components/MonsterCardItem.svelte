@@ -4,7 +4,6 @@
         TierType,
         EnchantmentType,
     } from "$lib/types";
-    import { filterTags } from "$lib/utils/filterUtils";
     import { Card } from "flowbite-svelte";
     import Divider from "./Divider.svelte";
     import MonsterCardImage from "./MonsterCardImage.svelte";
@@ -24,8 +23,6 @@
             (enchantment) => enchantment.type === enchantmentType,
         ),
     );
-
-    const tags = $derived(filterTags(card.tags, card.hiddenTags));
 </script>
 
 <Card

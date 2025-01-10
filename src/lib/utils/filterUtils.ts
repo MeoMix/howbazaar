@@ -70,7 +70,7 @@ function matchesTagState(
         const hasOnTags = tagEntries.some(([_, state]) => state === "on");
         if (hasOnTags) {
             return tagEntries.some(([tag, state]) => {
-                const isTagMatch = (cardTag: string) => cardTag === tag || cardTag === `${tag}Reference`;
+                const isTagMatch = (cardTag: string) => cardTag === tag || (cardTag === `${tag}Reference` && tag === 'Economy');
                 return state === "on" && (cardTags.some(isTagMatch) || cardHiddenTags.some(isTagMatch));
             });
         }
@@ -78,7 +78,7 @@ function matchesTagState(
     }
 
     return tagEntries.every(([tag, state]) => {
-        const isTagMatch = (cardTag: string) => cardTag === tag || cardTag === `${tag}Reference`;
+        const isTagMatch = (cardTag: string) => cardTag === tag || (cardTag === `${tag}Reference` && tag === 'Economy');
         if (state === "on") {
             return cardTags.some(isTagMatch) || cardHiddenTags.some(isTagMatch);
         }
@@ -259,14 +259,11 @@ export function filterMonsters(monsters: ClientSideMonsterEncounter[], searchTex
     );
 }
 
-// Users don't want to see "Reference" in their tags because it's unintuitive to them.
-// The underlying game implementation needs to keep the two types of tags distinct, though.
-// Sometimes there's duplicates (i.e. Slow vs SlowReference) and other times there aren't (i.e. EconomyReference)
-// So, drop Reference, but then ensure the list is distinct.
+// TODO: There's probably a better spot to put this, but rename EconomyReference to Economy because there's no Economy
+// tag, so might as well use a shorter form.
 export function filterTags(tags: Tag[], hiddenTags: HiddenTag[]) {
-    // TODO: tighten types here?
     return Array.from(
-        new Set([...tags, ...hiddenTags].map(tag => tag.replace('Reference', '')))
+        new Set([...tags, ...hiddenTags].map(tag => tag.replace('EconomyReference', 'Economy')))
     ).sort();
 }
 
