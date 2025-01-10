@@ -21140,59 +21140,6 @@ const data: ParsedItemCard[] = [
     ]
   },
   {
-    "id": "0fa524e3-c2a4-4509-b91a-6b9d60da5e07",
-    "name": "Loupe",
-    "startingTier": "Gold",
-    "tiers": {
-      "Bronze": {
-        "tooltips": []
-      },
-      "Silver": {
-        "tooltips": []
-      },
-      "Gold": {
-        "tooltips": [
-          "Your items have +1000 value."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "Your items have +1000 value."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [
-      "Tool"
-    ],
-    "hiddenTags": [
-      "Value"
-    ],
-    "size": "Small",
-    "heroes": [
-      "Pygmalien"
-    ],
-    "enchantments": [
-      {
-        "type": "Golden",
-        "tooltips": [
-          "Your small items have +1 value."
-        ]
-      },
-      {
-        "type": "Shiny",
-        "tooltips": [
-          "This has double value gain."
-        ]
-      }
-    ],
-    "unifiedTooltips": [
-      "Your items have +1000 value."
-    ]
-  },
-  {
     "id": "666f4084-48cc-4558-b678-a46ba18c1bf2",
     "name": "Soldering Gun",
     "startingTier": "Silver",

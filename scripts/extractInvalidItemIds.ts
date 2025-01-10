@@ -15,12 +15,17 @@ const allowedList = [
   '855cf2a5-930b-43db-b388-9f814f80a4fb',
 ];
 
+const disallowedList = [
+  // Loupe Debug:
+  '0fa524e3-c2a4-4509-b91a-6b9d60da5e07',
+];
+
 const validCardPacks = ['Dooley_Core', 'Pygmalien_Core', 'Vanessa_Core'];
 
 const getByCriteria = (data: any) => {
-  return Object.values(data)
+  return [...disallowedList, ...Object.values(data)
     .filter((entry: any) => entry.Type === "Item" && entry.SpawningEligibility === "Never" && !allowedList.includes(entry.Id) && validCardPacks.includes(entry.CardPackId))
-    .map((entry: any) => entry.Id);
+    .map((entry: any) => entry.Id)];
 };
 
 console.log('how many?', getByCriteria(cardsJson).length);
@@ -28,9 +33,9 @@ console.log('how many?', getByCriteria(cardsJson).length);
 
 // Filter the entries
 const getIdsByCriteria = (data: any) => {
-  return Object.values(data)
+  return [...disallowedList, ...Object.values(data)
     .filter((entry: any) => entry.Type === "Item" && entry.SpawningEligibility === "Never" && !allowedList.includes(entry.Id))
-    .map((entry: any) => entry.Id);
+    .map((entry: any) => entry.Id)];
 };
 
 // Run the filter function
