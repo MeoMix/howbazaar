@@ -9543,7 +9543,7 @@
     "Player": {
       "Attributes": {
         "Prestige": 50,
-        "HealthMax": 1000,
+        "HealthMax": 900,
         "Level": 6
       },
       "Hand": {

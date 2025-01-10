@@ -4542,7 +4542,7 @@ const data: ParsedMonster[] = [
   {
     "id": "2551f0d8-a57c-4670-993d-13b8b7ee2791",
     "level": 6,
-    "health": 1000,
+    "health": 900,
     "items": [
       {
         "templateId": "fb41fdef-d83b-4674-8cb3-9a224aa8f84a",
