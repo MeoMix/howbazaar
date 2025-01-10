@@ -13,6 +13,8 @@ const allowedList = [
   '2aab9e1b-8c8d-49d0-be45-5884731ebb08',
   // Piggy Bank:
   '855cf2a5-930b-43db-b388-9f814f80a4fb',
+  // Black Ice:
+  'f0a58209-1a26-42ac-a243-7c2fd9d6ce33'
 ];
 
 const disallowedList = [
