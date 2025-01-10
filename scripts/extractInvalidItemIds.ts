@@ -10,7 +10,9 @@ const allowedList = [
   // Red Button:
   '8eb91c44-0e07-4e89-8cad-dfe99b8ef443',
   // Truffles:
-  '2aab9e1b-8c8d-49d0-be45-5884731ebb08'
+  '2aab9e1b-8c8d-49d0-be45-5884731ebb08',
+  // Piggy Bank:
+  '855cf2a5-930b-43db-b388-9f814f80a4fb',
 ];
 
 const validCardPacks = ['Dooley_Core', 'Pygmalien_Core', 'Vanessa_Core'];

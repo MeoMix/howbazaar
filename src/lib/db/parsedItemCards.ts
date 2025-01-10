@@ -16069,6 +16069,67 @@ const data: ParsedItemCard[] = [
     ]
   },
   {
+    "id": "855cf2a5-930b-43db-b388-9f814f80a4fb",
+    "name": "Piggy Bank",
+    "startingTier": "Bronze",
+    "tiers": {
+      "Bronze": {
+        "tooltips": [
+          "When you sell this, get Spare Change equal to its value.",
+          "At the start of each hour, spend 2 gold to gain 1 value."
+        ]
+      },
+      "Silver": {
+        "tooltips": [
+          "When you sell this, get Spare Change equal to its value.",
+          "At the start of each hour, spend 2 gold to gain 1 value."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "When you sell this, get Spare Change equal to its value.",
+          "At the start of each hour, spend 2 gold to gain 1 value."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "When you sell this, get Spare Change equal to its value.",
+          "At the start of each hour, spend 2 gold to gain 1 value."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "EconomyReference",
+      "Value"
+    ],
+    "size": "Small",
+    "heroes": [
+      "Pygmalien"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "Double Value"
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "Double Value"
+        ]
+      }
+    ],
+    "unifiedTooltips": [
+      "When you sell this, get Spare Change equal to its value.",
+      "At the start of each hour, spend 2 gold to gain 1 value."
+    ]
+  },
+  {
     "id": "2a7c377e-5ab7-4e27-bd03-ecaa29b69131",
     "name": "Javelin",
     "startingTier": "Silver",
