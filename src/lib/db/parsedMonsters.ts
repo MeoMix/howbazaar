@@ -3788,10 +3788,6 @@ const data: ParsedMonster[] = [
       {
         "templateId": "050ff26a-59ec-4666-89b0-b0630a75149a",
         "tierType": "Bronze"
-      },
-      {
-        "templateId": "292f58c0-409b-4de7-a8d2-099a8629aa5e",
-        "tierType": "Bronze"
       }
     ]
   },
@@ -4404,7 +4400,7 @@ const data: ParsedMonster[] = [
   {
     "id": "7f6cecb6-3f07-4606-8d62-21c0b5e4e369",
     "level": 11,
-    "health": 3000,
+    "health": 2750,
     "items": [
       {
         "templateId": "7cbc8056-482b-4ccf-887a-ddb2702c856c",

@@ -10,7 +10,7 @@ export function getMonsterEncounterDays(
 ): ClientSideMonsterEncounterDay[] {
     const monsterEncounterDayHours = dayHours.filter(({ day, hour }) => day <= 10 && hour === 3);
 
-    // Sparring Partner, Mr. Moo, and Bounty Hunter are "Event" monsters
+    // Sparring Partner, Mr. Moo, Bounty Hunter, and Mimic are "Event" monsters
     const allMonsterEncounters = [...monsterEncounterDayHours, {
         day: "event" as const,
         spawnGroups: [{
@@ -20,7 +20,9 @@ export function getMonsterEncounterDays(
                 // Mr. Moo
                 "72411b58-e99a-44a9-a43f-9767896c7508",
                 // Bounty Hunter
-                "0f0b2074-06d7-4aea-a5aa-9e603602215a"
+                "0f0b2074-06d7-4aea-a5aa-9e603602215a",
+                // Mimic
+                "85420ae1-363b-4e84-8405-cc1a306b00fb",
             ]
         }]
     }];
