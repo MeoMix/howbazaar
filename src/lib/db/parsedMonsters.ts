@@ -1818,10 +1818,15 @@ const data: ParsedMonster[] = [
   {
     "id": "f820c620-244a-46c4-bace-51eb70ce48e6",
     "level": 3,
-    "health": 400,
+    "health": 1200,
     "items": [
       {
-        "templateId": "6ba3778c-e760-44f3-b3b4-a4b4ca267cc2",
+        "templateId": "dc3bf5cb-45fa-46c7-9a0e-3f3bfb01697d",
+        "tierType": "Silver",
+        "socketId": "Socket_1"
+      },
+      {
+        "templateId": "3b924a0a-f423-4286-8d08-9ade57b2ebae",
         "tierType": "Silver",
         "socketId": "Socket_2"
       },
@@ -1836,8 +1841,8 @@ const data: ParsedMonster[] = [
         "socketId": "Socket_5"
       },
       {
-        "templateId": "dc3bf5cb-45fa-46c7-9a0e-3f3bfb01697d",
-        "tierType": "Silver",
+        "templateId": "dcd24486-3e93-4428-a414-caeba6720237",
+        "tierType": "Gold",
         "socketId": "Socket_8"
       }
     ],
