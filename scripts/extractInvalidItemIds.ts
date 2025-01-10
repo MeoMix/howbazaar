@@ -8,7 +8,9 @@ const allowedList = [
   // Fuel Rod:
   'b9d4df16-0876-45ee-a35e-700d7b68cb6f',
   // Red Button:
-  '8eb91c44-0e07-4e89-8cad-dfe99b8ef443'
+  '8eb91c44-0e07-4e89-8cad-dfe99b8ef443',
+  // Truffles:
+  '2aab9e1b-8c8d-49d0-be45-5884731ebb08'
 ];
 
 const validCardPacks = ['Dooley_Core', 'Pygmalien_Core', 'Vanessa_Core'];

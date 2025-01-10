@@ -3435,10 +3435,6 @@ const data: ParsedMonster[] = [
       {
         "templateId": "8e2f3e1c-bd00-4b58-b746-a6ae18f804c3",
         "tierType": "Diamond"
-      },
-      {
-        "templateId": "e43da7b1-1190-469a-b6c6-43d8e3ca0ad6",
-        "tierType": "Diamond"
       }
     ]
   },
