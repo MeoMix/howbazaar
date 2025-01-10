@@ -7220,14 +7220,6 @@
           "InstanceId": null,
           "Tier": "Diamond",
           "Attributes": {}
-        },
-        {
-          "$type": "TCardInstanceSkill",
-          "TemplateId": "e43da7b1-1190-469a-b6c6-43d8e3ca0ad6",
-          "TemplateVersion": "1.0.0",
-          "InstanceId": null,
-          "Tier": "Diamond",
-          "Attributes": {}
         }
       ],
       "Stash": {
