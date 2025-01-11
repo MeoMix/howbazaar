@@ -197,7 +197,7 @@ const data: ParsedMonster[] = [
   {
     "id": "aa372e93-c5b0-42e9-8b0c-cd4746d0382c",
     "level": 6,
-    "health": 1000,
+    "health": 900,
     "items": [
       {
         "templateId": "0022c409-c839-41e8-8022-65a407457dfe",
@@ -248,7 +248,7 @@ const data: ParsedMonster[] = [
   {
     "id": "a0b78419-e252-4bdc-8861-4325ecbeadd0",
     "level": 5,
-    "health": 700,
+    "health": 650,
     "items": [
       {
         "templateId": "3e563d2a-87e7-4e9a-bfa2-3268b27b7447",
@@ -344,7 +344,7 @@ const data: ParsedMonster[] = [
   {
     "id": "96553caa-fac6-484f-8b71-0bff3c06a483",
     "level": 8,
-    "health": 1700,
+    "health": 1550,
     "items": [
       {
         "templateId": "562d768a-6aaf-4704-be8b-4dc9e6311b11",
@@ -397,7 +397,7 @@ const data: ParsedMonster[] = [
   {
     "id": "6a6fffdc-100a-436e-823c-77e712a71d57",
     "level": 11,
-    "health": 3000,
+    "health": 2750,
     "items": [
       {
         "templateId": "ca77281c-f912-4db3-86ce-64842a4ccdaa",
@@ -454,7 +454,7 @@ const data: ParsedMonster[] = [
   {
     "id": "0fb23601-c5a2-47a0-94bb-655d93372354",
     "level": 5,
-    "health": 750,
+    "health": 650,
     "items": [
       {
         "templateId": "f212afe2-08d1-40e3-978b-762d345bc7e5",
@@ -477,7 +477,7 @@ const data: ParsedMonster[] = [
         "socketId": "Socket_5"
       },
       {
-        "templateId": "96e51b95-eaab-40ea-9a89-381727ce2434",
+        "templateId": "09132149-783d-4d5a-900c-31135bffab44",
         "tierType": "Silver",
         "socketId": "Socket_7"
       },
@@ -635,7 +635,7 @@ const data: ParsedMonster[] = [
   {
     "id": "a859bd39-a384-43e8-9299-08a73c6810a6",
     "level": 12,
-    "health": 3600,
+    "health": 3200,
     "items": [
       {
         "templateId": "44710a21-395d-4f78-bdaf-e562c544ae91",
@@ -678,7 +678,7 @@ const data: ParsedMonster[] = [
   {
     "id": "f8cf1723-aa0c-4019-8c59-842cecda1c93",
     "level": 9,
-    "health": 2050,
+    "health": 1925,
     "items": [
       {
         "templateId": "73ca1d2f-f4d3-42c4-8980-0255f5ecd472",
@@ -1474,7 +1474,7 @@ const data: ParsedMonster[] = [
   {
     "id": "1ed6f8c6-13a9-48a2-995f-c61af0602777",
     "level": 10,
-    "health": 2500,
+    "health": 2325,
     "items": [
       {
         "templateId": "eed2dc49-267a-4e8c-8ea6-d37dff677e8c",
@@ -1676,7 +1676,7 @@ const data: ParsedMonster[] = [
   {
     "id": "e873dbd7-86aa-4fec-9206-28591346939a",
     "level": 12,
-    "health": 3600,
+    "health": 3200,
     "items": [
       {
         "templateId": "7326c177-d5c8-4e27-b8b4-acf565745019",
@@ -1723,7 +1723,7 @@ const data: ParsedMonster[] = [
   {
     "id": "8c211464-5961-449b-b5e9-b222c601e3c1",
     "level": 10,
-    "health": 2500,
+    "health": 2325,
     "items": [
       {
         "templateId": "57842875-bc49-4ec9-af82-29c2dbed4087",
@@ -1913,7 +1913,7 @@ const data: ParsedMonster[] = [
   {
     "id": "ee26b888-c50f-43cf-848b-ca572b6e9583",
     "level": 6,
-    "health": 1000,
+    "health": 900,
     "items": [
       {
         "templateId": "2434460c-af35-4dde-a69f-1f8781c807d2",
@@ -1956,7 +1956,7 @@ const data: ParsedMonster[] = [
   {
     "id": "16038f84-3cec-4ccd-b58b-2ce974442142",
     "level": 15,
-    "health": 5500,
+    "health": 3675,
     "items": [
       {
         "templateId": "8391a75d-56e7-4206-a16e-62dbd986925f",
@@ -2171,7 +2171,7 @@ const data: ParsedMonster[] = [
   {
     "id": "622b8e58-b073-4c75-9d57-322d0f16435d",
     "level": 9,
-    "health": 2000,
+    "health": 1550,
     "items": [
       {
         "templateId": "92e7ab18-a035-43c7-a53c-965aeecbe357",
@@ -2484,7 +2484,7 @@ const data: ParsedMonster[] = [
   {
     "id": "fdcb435f-d6c4-4657-81b5-1888e8eefe5a",
     "level": 9,
-    "health": 2050,
+    "health": 1925,
     "items": [
       {
         "templateId": "6870c295-6a4d-4175-b378-c961df9933de",
@@ -2500,6 +2500,11 @@ const data: ParsedMonster[] = [
         "templateId": "e31de147-378e-40af-a6ba-3314fc0bf601",
         "tierType": "Gold",
         "socketId": "Socket_5"
+      },
+      {
+        "templateId": "865a673a-beae-4f5c-b04a-dd3fd026bc6d",
+        "tierType": "Gold",
+        "socketId": "Socket_7"
       },
       {
         "templateId": "13f852ba-1d3d-4c1a-b6db-79072e0b19d0",
@@ -2526,7 +2531,7 @@ const data: ParsedMonster[] = [
   {
     "id": "75efe2bc-97e2-4b72-b1e2-778ab3bc3645",
     "level": 9,
-    "health": 2050,
+    "health": 1925,
     "items": [
       {
         "templateId": "f8b41c46-8adc-4e84-835a-831e2e3d84d1",
@@ -3119,7 +3124,7 @@ const data: ParsedMonster[] = [
   {
     "id": "418f33bf-b721-4e89-a1dd-c375b3174df9",
     "level": 6,
-    "health": 1000,
+    "health": 900,
     "items": [
       {
         "templateId": "da766a09-0352-4966-829f-20bda8da48d7",
@@ -3157,7 +3162,7 @@ const data: ParsedMonster[] = [
   {
     "id": "e18b8358-920d-48d7-b90c-37e455135991",
     "level": 9,
-    "health": 2100,
+    "health": 1925,
     "items": [
       {
         "templateId": "f08af933-8712-44fe-9542-338e0fec0a45",
@@ -3200,7 +3205,7 @@ const data: ParsedMonster[] = [
   {
     "id": "c2fd54df-9cd2-4f61-ae6e-9b6c8cf87785",
     "level": 10,
-    "health": 2600,
+    "health": 2325,
     "items": [
       {
         "templateId": "6f70e0cf-8349-4f14-a121-6c9065dc514c",
@@ -3446,7 +3451,7 @@ const data: ParsedMonster[] = [
   {
     "id": "b40ae00e-f6df-4920-90a4-a49ea53fbdb5",
     "level": 11,
-    "health": 3300,
+    "health": 2750,
     "items": [
       {
         "templateId": "4da45ad1-6793-458c-9c72-d03fa273ebfd",
@@ -3507,7 +3512,7 @@ const data: ParsedMonster[] = [
   {
     "id": "e9ea36fe-dfcf-459a-b57f-0cf6e4fe62a5",
     "level": 12,
-    "health": 3600,
+    "health": 3675,
     "items": [
       {
         "templateId": "cb766f97-21b4-43b9-af0e-c47bc7a3b4fd",
@@ -3595,7 +3600,7 @@ const data: ParsedMonster[] = [
   {
     "id": "c084c86f-7908-41d7-9c2b-13ab7dfef4b3",
     "level": 11,
-    "health": 3200,
+    "health": 2750,
     "items": [
       {
         "templateId": "fc01f3c3-5562-4616-aa12-005834d6647f",
@@ -3795,7 +3800,7 @@ const data: ParsedMonster[] = [
   {
     "id": "ce7b529c-819f-41c8-8fc6-8c58968ab2fe",
     "level": 13,
-    "health": 4200,
+    "health": 3675,
     "items": [
       {
         "templateId": "447c40e6-7aec-4391-8be7-df4952815d40",
@@ -3889,7 +3894,7 @@ const data: ParsedMonster[] = [
   {
     "id": "1177568a-757f-469f-9438-8f3bfeacd93f",
     "level": 10,
-    "health": 2700,
+    "health": 2325,
     "items": [
       {
         "templateId": "c6ab4982-da6c-4a1a-934d-820c45014646",
@@ -3959,7 +3964,7 @@ const data: ParsedMonster[] = [
   {
     "id": "f57b2a63-e4a2-4d9a-88b3-b1c3a3cf36d7",
     "level": 9,
-    "health": 2500,
+    "health": 2325,
     "items": [
       {
         "templateId": "92e7ab18-a035-43c7-a53c-965aeecbe357",
@@ -4077,7 +4082,7 @@ const data: ParsedMonster[] = [
   {
     "id": "b3f9a83f-772b-4286-bf21-cd2d86a13b58",
     "level": 4,
-    "health": 500,
+    "health": 450,
     "items": [
       {
         "templateId": "5a9bd869-4614-4edf-941d-5f44e0bb1519",
@@ -4632,7 +4637,7 @@ const data: ParsedMonster[] = [
   {
     "id": "616ce451-b85d-478a-82a8-8a28105994f5",
     "level": 10,
-    "health": 2800,
+    "health": 2325,
     "items": [
       {
         "templateId": "3718910f-3b43-4c4b-8904-d1dbfce56c13",
