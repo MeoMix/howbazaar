@@ -1041,12 +1041,7 @@ const data: ParsedMonster[] = [
         "socketId": "Socket_6"
       }
     ],
-    "skills": [
-      {
-        "templateId": "254017cc-e3b9-486e-9276-850867ceba6b",
-        "tierType": "Bronze"
-      }
-    ]
+    "skills": []
   },
   {
     "id": "6c87be29-e82d-4ce1-ac79-8a642b8e0c4f",

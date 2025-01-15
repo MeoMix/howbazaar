@@ -2181,14 +2181,6 @@
         "UnlockedSlots": 120
       },
       "Skills": [
-        {
-          "$type": "TCardInstanceSkill",
-          "TemplateId": "254017cc-e3b9-486e-9276-850867ceba6b",
-          "TemplateVersion": "1.0.0",
-          "InstanceId": null,
-          "Tier": "Bronze",
-          "Attributes": {}
-        }
       ],
       "Stash": {
         "Items": [],
