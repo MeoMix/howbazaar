@@ -63,7 +63,7 @@ function getAttributeInfo(
             attributeValue = 0;
         } else if (action.Value?.Modifier) {
             // If there's a modifier, and if modifier mode is multiply, then get the attribute type and multiply it by modifier rather than just using modifier.
-            attributeValue = action.Value.Modifier.Value;
+            attributeValue = action.Value.Modifier.Value.Value;
             operation = action.Operation!;
             targetMode = action.Target?.TargetMode;
 
@@ -428,6 +428,10 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
         const auras = Object.values(card.Auras);
         const tierMap = getTierMap(card);
 
+        if (card.Localization.Title.Text === "Satchel") {
+            console.log('yo');
+        }
+
         let tiers = Object.fromEntries((Object.entries(tierMap) as Entries<typeof tierMap>).map(
             ([tierName, tier]) => {
                 let rawTooltips = tier.TooltipIds
@@ -638,20 +642,6 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
                 return [tierType, tier];
             })
         ) as typeof tiers;
-
-        // TODO: Remove this in a future patch -- just bad data.
-        // if (name === "Tripwire" && hiddenTags.includes('Regen')) {
-        //     hiddenTags = hiddenTags.filter(tag => tag !== 'Regen');
-        // }
-
-        // if (name === "Cybersecurity") {
-        //     const searchString = "if its your";
-        //     const brokenTooltipIndex = tiers.Diamond.tooltips.findIndex(tooltip => tooltip.includes(searchString));
-
-        //     if (brokenTooltipIndex > -1) {
-        //         tiers.Diamond.tooltips[brokenTooltipIndex] = tiers.Diamond.tooltips[brokenTooltipIndex].replace(searchString, "if it is your");
-        //     }
-        // }
 
         if (name === "Multitool") {
             const searchString = "Slow an item";

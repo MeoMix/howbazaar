@@ -11,27 +11,36 @@ const allowedList = [
   'd1e825ba-653c-4993-8002-50c3933c5827',
   // Electrified Hull
   '1df8d85a-9095-4ab9-952a-c668a4d5d51c',
+  // Heavy Firepower
+  'e634860d-fec5-43c1-a6ca-a349450ae9c8',
+  // Tiny Dancer
+  '36410add-d0de-4618-a099-ceb32a87c589',
+  // Noisy Cricket
+  'c38468ba-2636-4818-a821-6fb7e73d7110',
+  // Invigorating Blade
+  '549263e2-4ab4-4fe8-a552-e94486b3e91b',
+  // CPU Throttling
+  '3dd2dbac-97ee-4fc4-ac31-4d885d19e2ed',
+  // Toxic Flame
+  'cbd2810c-4713-4503-a97d-30e73ccaebb7',
   // Stout Fire
-  'd08bdeb9-ef08-48be-9df7-0edd9fcff6cf',
+  // 'd08bdeb9-ef08-48be-9df7-0edd9fcff6cf',
 ];
 
-const validCardPacks = ['Dooley_Core', 'Pygmalien_Core', 'Vanessa_Core'];
-
-const getByCriteria = (data: any) => {
-  return Object.values(data)
-    .filter((entry: any) => entry.Type === "Skill" && entry.SpawningEligibility === "Never" && !allowedList.includes(entry.Id) && validCardPacks.includes(entry.CardPackId))
-    .map((entry: any) => entry.Id);
-};
-
-console.log('how many?', getByCriteria(cardsJson).length);
-
-
+const disallowedList = [
+  // Cauterize:
+  "7e32e9be-23d1-4d3f-a103-0a0db10bc4f4",
+  // Rapid Thaw:
+  "4589a64c-fdc8-4334-a2c7-05a3a8b2c5da",
+  // Stout Fire:
+  // "d08bdeb9-ef08-48be-9df7-0edd9fcff6cf"
+];
 
 // Filter the entries
 const getIdsByCriteria = (data: any) => {
-  return Object.values(data)
+  return [...disallowedList, ...Object.values(data)
     .filter((entry: any) => entry.Type === "Skill" && entry.SpawningEligibility === "Never" && !allowedList.includes(entry.Id))
-    .map((entry: any) => entry.Id);
+    .map((entry: any) => entry.Id)];
 };
 
 // Run the filter function

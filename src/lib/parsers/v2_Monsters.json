@@ -2685,7 +2685,7 @@
             "$type": "TCardInstanceItem",
             "EnchantmentType": null,
             "SocketId": "Socket_0",
-            "TemplateId": "1e48bd28-cd41-49e9-9e22-b44da30ef6be",
+            "TemplateId": "5a9bd869-4614-4edf-941d-5f44e0bb1519",
             "TemplateVersion": "1.0.0",
             "InstanceId": null,
             "Tier": "Diamond",
@@ -4173,7 +4173,7 @@
             "$type": "TCardInstanceItem",
             "EnchantmentType": null,
             "SocketId": "Socket_9",
-            "TemplateId": "ac92c118-c073-465c-8d89-abafa0dcb144",
+            "TemplateId": "5a9bd869-4614-4edf-941d-5f44e0bb1519",
             "TemplateVersion": "1.0.0",
             "InstanceId": null,
             "Tier": "Diamond",
@@ -5736,7 +5736,7 @@
     "Player": {
       "Attributes": {
         "Prestige": 50,
-        "HealthMax": 2325,
+        "HealthMax": 1900,
         "Level": 10
       },
       "Hand": {
@@ -5839,14 +5839,6 @@
           "TemplateVersion": "1.0.0",
           "InstanceId": null,
           "Tier": "Gold",
-          "Attributes": {}
-        },
-        {
-          "$type": "TCardInstanceSkill",
-          "TemplateId": "d31c4499-c05a-4d7b-8571-a19e102c3169",
-          "TemplateVersion": "1.0.0",
-          "InstanceId": null,
-          "Tier": "Silver",
           "Attributes": {}
         }
       ],
@@ -7068,7 +7060,7 @@
             "$type": "TCardInstanceItem",
             "EnchantmentType": null,
             "SocketId": "Socket_8",
-            "TemplateId": "ac92c118-c073-465c-8d89-abafa0dcb144",
+            "TemplateId": "5a9bd869-4614-4edf-941d-5f44e0bb1519",
             "TemplateVersion": "1.0.0",
             "InstanceId": null,
             "Tier": "Diamond",
@@ -8482,16 +8474,6 @@
       },
       "Hand": {
         "Items": [
-          {
-            "$type": "TCardInstanceItem",
-            "EnchantmentType": null,
-            "SocketId": "Socket_1",
-            "TemplateId": "d45bb1dd-5342-4c69-b7fe-f56d3fac7d1f",
-            "TemplateVersion": "1.0.0",
-            "InstanceId": null,
-            "Tier": "Bronze",
-            "Attributes": {}
-          },
           {
             "$type": "TCardInstanceItem",
             "EnchantmentType": null,

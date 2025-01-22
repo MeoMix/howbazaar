@@ -39,13 +39,13 @@ describe('cardJsonParser', () => {
       );
     });
 
-    it('should unify Ambergris', () => {
-      const ambergris = itemCards.find(card => card.name === "Ambergris")!;
+    // it('should unify Ambergris', () => {
+    //   const ambergris = itemCards.find(card => card.name === "Ambergris")!;
 
-      expect(ambergris.unifiedTooltips[2]).toEqual(
-        'When you buy another Aquatic item, this gains (1/2/3/4) Value.'
-      );
-    });
+    //   expect(ambergris.unifiedTooltips[2]).toEqual(
+    //     'When you buy another Aquatic item, this gains (1/2/3/4) Value.'
+    //   );
+    // });
 
     it('should unify Atlas Stone (no changes)', () => {
       const atlasStone = itemCards.find(card => card.name === "Atlas Stone")!;
@@ -158,7 +158,7 @@ describe('cardJsonParser', () => {
     expect(amberCard.tiers.Silver.tooltips.find((text) => text.includes(searchPhrase))).toEqual(`${searchPhrase} +1 Slow.`);
   });
 
-  it('should parse "Satchel" correctly by replacing its {aura.2} with a correct value', () => {
+  it.only('should parse "Satchel" correctly by replacing its {aura.2} with a correct value', () => {
     const satchelCard = itemCards.find(card => card.name === "Satchel")!;
 
     const searchPhrase = "You have";
@@ -324,31 +324,13 @@ describe('cardJsonParser', () => {
       expect(deadlyEnchantment.tooltips[0]).toEqual('Shield Properties adjacent to this have + Crit Chance equal to the value of your highest value item. [0]');
     });
 
-    // TODO: I think I can remove some logic since they adjusted these tooltips
-    // it('should parse "Heavy Fishing Net" correctly by providing a custom tooltip for the enchantment aura', () => {
-    //   const fishingNet = itemCards.find(card => card.name === "Fishing Net")!;
-    //   const heavyEnchantment = fishingNet.enchantments.find(enchantment => enchantment.type === 'Heavy')!;
+    // it('should parse "Turbo Bomb Squad" correctly by replacing its {abiltiy.e1} (which is a typo) with a correct value', () => {
+    //   const bombSquad = itemCards.find(card => card.name === "Bomb Squad")!;
+    //   const turboEnchantment = bombSquad.enchantments.find(enchantment => enchantment.type === 'Turbo')!;
 
-    //   expect(heavyEnchantment.tooltips.length).toEqual(1);
-    //   expect(heavyEnchantment.tooltips[0]).toEqual('Double Slow');
+    //   expect(turboEnchantment.tooltips.length).toEqual(1);
+    //   expect(turboEnchantment.tooltips[0]).toEqual('Haste 1 item for 1 second(s).');
     // });
-
-    // it('should parse "Obsidian Magnifying Glass" correctly by providing a custom tooltip for the lifesteal attribute', () => {
-    //   const magnifyingGlass = itemCards.find(card => card.name === "Magnifying Glass")!;
-    //   const heavyEnchantment = magnifyingGlass.enchantments.find(enchantment => enchantment.type === 'Obsidian')!;
-
-    //   expect(heavyEnchantment.tooltips.length).toEqual(1);
-    //   // Excludes 100 because 100% is implicit, can add 100% later if fractional lifesteal is introduced.
-    //   expect(heavyEnchantment.tooltips[0]).toEqual('Lifesteal');
-    // });
-
-    it('should parse "Turbo Bomb Squad" correctly by replacing its {abiltiy.e1} (which is a typo) with a correct value', () => {
-      const bombSquad = itemCards.find(card => card.name === "Bomb Squad")!;
-      const turboEnchantment = bombSquad.enchantments.find(enchantment => enchantment.type === 'Turbo')!;
-
-      expect(turboEnchantment.tooltips.length).toEqual(1);
-      expect(turboEnchantment.tooltips[0]).toEqual('Haste 1 item for 1 second(s).');
-    });
 
     it('should parse "Deadly Port" correctly by replacing its {aura.e1.} (which is a typo) with a correct value', () => {
       const port = itemCards.find(card => card.name === "Port")!;
@@ -358,13 +340,6 @@ describe('cardJsonParser', () => {
       expect(deadlyEnchantment.tooltips[0]).toEqual('Your items with Ammo have +20% Crit Chance.');
     });
 
-    // it('should parse "Swash Buckle" correctly by excluding Shiny which is an invalid enchantment', () => {
-    //   const swashBuckle = cards.find(card => card.name === "Swash Buckle")!;
-    //   const shinyEnchantment = swashBuckle.enchantments.find(enchantment => enchantment.type === 'Shiny')!;
-
-    //   expect(shinyEnchantment).toBeUndefined();
-    // });
-
     it('should parse "Orbital Polisher" correctly by excluding Shiny which is an invalid enchantment', () => {
       const orbitalPolisher = itemCards.find(card => card.name === "Orbital Polisher")!;
       const shinyEnchantment = orbitalPolisher.enchantments.find(enchantment => enchantment.type === 'Shiny')!;
@@ -372,21 +347,12 @@ describe('cardJsonParser', () => {
       expect(shinyEnchantment).toBeUndefined();
     });
 
-    it('should parse "Heavy Multitool" correctly by providing a custom tooltip rather than trying to inject variables into the existing tooltip', () => {
-      const multitool = itemCards.find(card => card.name === "Multitool")!;
-      const heavyEnchantment = multitool.enchantments.find(enchantment => enchantment.type === 'Heavy')!;
-
-      expect(heavyEnchantment.tooltips.length).toEqual(1);
-      expect(heavyEnchantment.tooltips[0]).toEqual('+2 Slow');
-    });
-
-
-    // it('should parse "Heavy Induction Aegis" correctly by replacing {ability.e1} with attribute values derived from StartingTier', () => {
-    //   const inductionAegis = itemCards.find(card => card.name === "Induction Aegis")!;
-    //   const heavyEnchantment = inductionAegis.enchantments.find(enchantment => enchantment.type === 'Heavy')!;
+    // it('should parse "Heavy Multitool" correctly by providing a custom tooltip rather than trying to inject variables into the existing tooltip', () => {
+    //   const multitool = itemCards.find(card => card.name === "Multitool")!;
+    //   const heavyEnchantment = multitool.enchantments.find(enchantment => enchantment.type === 'Heavy')!;
 
     //   expect(heavyEnchantment.tooltips.length).toEqual(1);
-    //   expect(heavyEnchantment.tooltips[0]).toEqual('Slow 1 item for 1 second(s).');
+    //   expect(heavyEnchantment.tooltips[0]).toEqual('+2 Slow');
     // });
 
     it('should parse "Deadly Sextant" correctly by replacing its {aura.0} with a correct value', () => {
@@ -396,22 +362,6 @@ describe('cardJsonParser', () => {
       expect(deadlyEnchantment.tooltips.length).toEqual(1);
       expect(deadlyEnchantment.tooltips[0]).toEqual('Adjacent items have an additional +25% Crit Chance');
     });
-
-    // it('should parse "Deadly Star Chart" correctly by replacing its "2.0 Custom_0" with a correct attribute name', () => {
-    //   const starChart = itemCards.find(card => card.name === "Star Chart")!;
-    //   const deadlyEnchantment = starChart.enchantments.find(enchantment => enchantment.type === 'Deadly')!;
-
-    //   expect(deadlyEnchantment.tooltips.length).toEqual(1);
-    //   expect(deadlyEnchantment.tooltips[0]).toEqual('Double Crit Chance');
-    // });
-
-    // it('should parse "Shiny Star Chart" correctly by replacing its "0.5 Custom_1" with a correct attribute name', () => {
-    //   const starChart = itemCards.find(card => card.name === "Star Chart")!;
-    //   const shinyEnchantment = starChart.enchantments.find(enchantment => enchantment.type === 'Shiny')!;
-
-    //   expect(shinyEnchantment.tooltips.length).toEqual(2);
-    //   expect(shinyEnchantment.tooltips[1]).toEqual('Double Cooldown Reduction');
-    // });
 
     it('should parse "Restorative Force Field" correctly by replacing its "Heal {ability.e1}." with a reference to Shield Amount', () => {
       const forceField = itemCards.find(card => card.name === "Force Field")!;

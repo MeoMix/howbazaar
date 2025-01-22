@@ -230,7 +230,7 @@ export type LimitType = "TFixedValue" | "TReferenceValueCardAttribute" | "TRefer
 
 export interface Modifier {
     ModifyMode: Operation;
-    Value:      number;
+    Value:      { Value: number };
 }
 
 export interface ConditionsClass {
