@@ -9,13 +9,6 @@ import { checkAndResizeImages, convertImagesToAvif } from './utils/imageUtils.ts
 // Command:
 // .\AssetStudioModCLI "C:\Program Files\Tempo Launcher - Beta\The Bazaar game_64\bazaarwinprodlatest\TheBazaar_Data\StreamingAssets\aa\StandaloneWindows64\defaultlocalgroup_assets_all.bundle" --filter-by-name Icon_SKILL -g none -t tex2d -o ./skills
 
-// Initially missing skills from the original export given to me by Book:
-// 'Icon_SKILL_MON_ToxicFriendship',
-// 'Icon_SKILL_MON_ExtremeComfort',
-// 'Icon_SKILL_MON_CleanStorefront',
-// 'Icon_SKILL_MON_AugmentedWeaponry',
-// 'Icon_SKILL_MON_AugmentedDefenses',
-// 'Icon_SKILL_MON_PurifyingFlame'
 const inputDirectory = './scripts/images/';
 const assetType = 'skills';
 const assetPath = `${inputDirectory}${assetType}/`;

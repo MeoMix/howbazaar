@@ -34,6 +34,8 @@ const disallowedList = [
   "4589a64c-fdc8-4334-a2c7-05a3a8b2c5da",
   // Stout Fire:
   // "d08bdeb9-ef08-48be-9df7-0edd9fcff6cf"
+  // "[DEBUG] Defense Grid"
+  "69edc2fa-7aba-457e-bbcf-05f2e0f18139"
 ];
 
 // Filter the entries

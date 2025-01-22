@@ -3345,53 +3345,6 @@ const data: ParsedSkillCard[] = [
     ]
   },
   {
-    "id": "69edc2fa-7aba-457e-bbcf-05f2e0f18139",
-    "name": "Defense Grid",
-    "startingTier": "Silver",
-    "tiers": {
-      "Bronze": {
-        "tooltips": []
-      },
-      "Silver": {
-        "tooltips": [
-          "At the start of each fight, gain shield equal to 25% of your max health. [0%]",
-          "When you use an item, lose 10% of your current shield."
-        ]
-      },
-      "Gold": {
-        "tooltips": [
-          "At the start of each fight, gain shield equal to 50% of your max health. [0%]",
-          "When you use an item, lose 10% of your current shield."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "At the start of each fight, gain shield equal to 75% of your max health. [0%]",
-          "When you use an item, lose 10% of your current shield."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [],
-    "hiddenTags": [
-      "HealthReference"
-    ],
-    "size": "Medium",
-    "heroes": [
-      "Pygmalien",
-      "Dooley",
-      "Stelle",
-      "Mak"
-    ],
-    "artKey": "Icon_Skill_DefenseGrid.png",
-    "unifiedTooltips": [
-      "At the start of each fight, gain shield equal to (25%/50%/75%) of your max health. [0%]",
-      "When you use an item, lose 10% of your current shield."
-    ]
-  },
-  {
     "id": "4fda14aa-365f-478f-8a27-b9b53c97c56a",
     "name": "Mixed Message",
     "startingTier": "Gold",
