@@ -114,7 +114,8 @@ const cleanFileName = (fileName: string): string => {
     'AlienAxe': 'RuneAxe',
     'PowerShoes': 'AgilityBoots',
     'NuclearReactor': 'FuelRod',
-    'ForkLift': 'Forklift'
+    'ForkLift': 'Forklift',
+    'Waterwheel': 'WaterWheel'
   };
 
   // Sometimes there's a literal space at the end of the filename. Madness.
