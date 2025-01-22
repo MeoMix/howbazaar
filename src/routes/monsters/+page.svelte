@@ -115,12 +115,6 @@
         {onSelectDay}
     />
 
-    <div class="my-8 font-semibold text-yellow-500">
-        NOTE: Some monsters had skills removed, but they're still dropping those skills as loot. Unclear if the bug is with loot table or if skills should not have been removed.
-        For example, Lord Arken can still drop the Heavy Weaponry skill. Possibly also occurring with Veteran Octopus, Coconut Crab, Thug, and Mr. Moo.
-    </div>
-
-
     {#if isLoading}
         <div>Loading monsters...</div>
     {:else if filteredMonsters.length > 0}
