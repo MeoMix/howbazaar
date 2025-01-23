@@ -1112,20 +1112,20 @@ const data: ParsedSkillCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "Your Weapons have +{aura.0.mod} Damage for each Aquatic item you have. [NaN]",
-          "Your Shield items have +{aura.1.mod} Shield for each Aquatic item you have. [NaN]"
+          "Your Weapons have +0 Damage for each Aquatic item you have. [0]",
+          "Your Shield items have +0 Shield for each Aquatic item you have. [0]"
         ]
       },
       "Gold": {
         "tooltips": [
-          "Your Weapons have +{aura.0.mod} Damage for each Aquatic item you have. [NaN]",
-          "Your Shield items have +{aura.1.mod} Shield for each Aquatic item you have. [NaN]"
+          "Your Weapons have +0 Damage for each Aquatic item you have. [0]",
+          "Your Shield items have +0 Shield for each Aquatic item you have. [0]"
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Your Weapons have +{aura.0.mod} Damage for each Aquatic item you have. [NaN]",
-          "Your Shield items have +{aura.1.mod} Shield for each Aquatic item you have. [NaN]"
+          "Your Weapons have +0 Damage for each Aquatic item you have. [0]",
+          "Your Shield items have +0 Shield for each Aquatic item you have. [0]"
         ]
       },
       "Legendary": {
@@ -1146,8 +1146,8 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_VAN_Submerged",
     "unifiedTooltips": [
-      "Your Weapons have +{aura.0.mod} Damage for each Aquatic item you have. [NaN]",
-      "Your Shield items have +{aura.1.mod} Shield for each Aquatic item you have. [NaN]"
+      "Your Weapons have +0 Damage for each Aquatic item you have. [0]",
+      "Your Shield items have +0 Shield for each Aquatic item you have. [0]"
     ]
   },
   {

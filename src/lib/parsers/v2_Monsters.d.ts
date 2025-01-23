@@ -150,11 +150,11 @@ export type Type = "TCardInstanceItem" | "TCardInstanceSkill";
 export interface SkillAttributes {
 }
 
-export type SocketID = "Socket_1" | "Socket_2" | "Socket_3" | "Socket_4" | "Socket_5" | "Socket_6" | "Socket_7" | "Socket_0" | "Socket_8" | "Socket_9";
+export type SocketID = "Socket_2" | "Socket_3" | "Socket_4" | "Socket_5" | "Socket_6" | "Socket_7" | "Socket_0" | "Socket_1" | "Socket_8" | "Socket_9";
 
 export type Version = "1.0.0";
 
-export type Tier = "Bronze" | "Silver" | "Gold" | "Diamond" | "Legendary";
+export type Tier = "Silver" | "Bronze" | "Gold" | "Diamond" | "Legendary";
 
 export interface The5A882CdbC8Df497B86D5B27Ba95225Ed {
     Id:           string;

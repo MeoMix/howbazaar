@@ -7433,21 +7433,21 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Cooldown 5 seconds",
           "Deal 16 damage.",
-          "Your Medium Weapons have +{aura.1.mod} Damage for each Medium item you have. [NaN]"
+          "Your Medium Weapons have +0 Damage for each Medium item you have. [0]"
         ]
       },
       "Gold": {
         "tooltips": [
           "Cooldown 5 seconds",
           "Deal 16 damage.",
-          "Your Medium Weapons have +{aura.1.mod} Damage for each Medium item you have. [NaN]"
+          "Your Medium Weapons have +0 Damage for each Medium item you have. [0]"
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 5 seconds",
           "Deal 16 damage.",
-          "Your Medium Weapons have +{aura.1.mod} Damage for each Medium item you have. [NaN]"
+          "Your Medium Weapons have +0 Damage for each Medium item you have. [0]"
         ]
       },
       "Legendary": {
@@ -7525,7 +7525,7 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Deal 16 damage.",
-      "Your Medium Weapons have +{aura.1.mod} Damage for each Medium item you have. [NaN]"
+      "Your Medium Weapons have +0 Damage for each Medium item you have. [0]"
     ]
   },
   {

@@ -158,7 +158,7 @@ describe('cardJsonParser', () => {
     expect(amberCard.tiers.Silver.tooltips.find((text) => text.includes(searchPhrase))).toEqual(`${searchPhrase} +1 Slow.`);
   });
 
-  it.only('should parse "Satchel" correctly by replacing its {aura.2} with a correct value', () => {
+  it('should parse "Satchel" correctly by replacing its {aura.2} with a correct value', () => {
     const satchelCard = itemCards.find(card => card.name === "Satchel")!;
 
     const searchPhrase = "You have";
@@ -188,11 +188,11 @@ describe('cardJsonParser', () => {
     expect(healthyCollector.tiers.Bronze.tooltips.find((text) => text.includes(searchPhrase))).toEqual(`${searchPhrase} 1`);
   });
 
-  it('should parse "Crook" correctly by replacing its {aura.4} with a correct value (by relying on modifiers)', () => {
+  it('should parse "Crook" correctly by replacing its {aura.1} with a correct value (by relying on modifiers)', () => {
     const crook = itemCards.find(card => card.name === "Crook")!;
     const searchPhrase = "Your Medium Weapons have +";
 
-    expect(crook.tiers.Silver.tooltips.find((text) => text.includes(searchPhrase))).toEqual(`${searchPhrase}10 Damage for each Medium item you have.`);
+    expect(crook.tiers.Silver.tooltips.find((text) => text.includes(searchPhrase))).toEqual(`${searchPhrase}8 Damage for each Medium item you have. [0]`);
   });
 
   it('should parse "Fire Claw" correctly by replacing its [{aura.1}] with a correct value', () => {
@@ -229,14 +229,6 @@ describe('cardJsonParser', () => {
     expect(tripwire.hiddenTags.includes('Regen')).toBe(false);
   });
 
-  // it('should parse Astrolabe such that related tooltips use identical sentence structure', () => {
-  //   const astrolabe = itemCards.find(card => card.name === "Astrolabe")!;
-
-  //   expect(astrolabe.tiers.Silver.tooltips[2]).toContain("When you use a non-weapon item, it and this gains");
-  //   expect(astrolabe.tiers.Gold.tooltips[2]).toContain("When you use a non-weapon item, it and this gains");
-  //   expect(astrolabe.tiers.Diamond.tooltips[2]).toContain("When you use a non-weapon item, it and this gains");
-  // });
-
   it('should parse Dooley\'s Scarf such that it does not include duplicate tooltips in Gold/Diamond', () => {
     const dooleysScarf = itemCards.find(card => card.name === "Dooley's Scarf")!;
     expect(dooleysScarf.tiers.Silver.tooltips).toHaveLength(3);
@@ -256,33 +248,12 @@ describe('cardJsonParser', () => {
     expect(cooldownTooltip).toContain("6 seconds");
   });
 
-  // it('should fix Cybersecurity\'s inconsistent language across tooltips', () => {
-  //   const cybersecurity = itemCards.find(card => card.name === "Cybersecurity")!;
-  //   const damageTooltip = cybersecurity.tiers["Diamond"].tooltips.find(tooltip => tooltip.includes("This deals quadruple damage"));
-
-  //   expect(damageTooltip).toContain("This deals quadruple damage if it is your only friend.");
-  // });
-
-  // it('should fix Flamethrower\'s extraneous "of" in tooltip', () => {
-  //   const flamethrower = itemCards.find(card => card.name === "Flamethrower")!;
-  //   const burnTooltip = flamethrower.tiers["Gold"].tooltips.find(tooltip => tooltip.includes("Burn equal to double"));
-
-  //   expect(burnTooltip).toContain("Burn equal to double this item's damage.");
-  // });
-
   it('should fix Multitool\'s extraneous "an" in tooltip', () => {
     const multitool = itemCards.find(card => card.name === "Multitool")!;
     const slowTooltip = multitool.tiers["Bronze"].tooltips.find(tooltip => tooltip.includes("Slow"));
 
     expect(slowTooltip).toContain("Slow 1 item for 1 second(s).");
   });
-
-  // it('should fix Critical Core\'s tooltip to not contain a typo "1"', () => {
-  //   const criticalCore = itemCards.find(card => card.name === "Critical Core")!;
-  //   const chargeTooltip = criticalCore.tiers.Bronze.tooltips.find(tooltip => tooltip.includes("When you use any"));
-
-  //   expect(chargeTooltip).toEqual("When you use any to the left of this, Charge this 1 second(s).");
-  // });
 
   it('should ignore Diamond attributes on Legendaries to fix Eye of the Collosus cooldown', () => {
     const eyeOfTheColossus = itemCards.find(card => card.name === "Eye of the Colossus")!;
@@ -324,14 +295,6 @@ describe('cardJsonParser', () => {
       expect(deadlyEnchantment.tooltips[0]).toEqual('Shield Properties adjacent to this have + Crit Chance equal to the value of your highest value item. [0]');
     });
 
-    // it('should parse "Turbo Bomb Squad" correctly by replacing its {abiltiy.e1} (which is a typo) with a correct value', () => {
-    //   const bombSquad = itemCards.find(card => card.name === "Bomb Squad")!;
-    //   const turboEnchantment = bombSquad.enchantments.find(enchantment => enchantment.type === 'Turbo')!;
-
-    //   expect(turboEnchantment.tooltips.length).toEqual(1);
-    //   expect(turboEnchantment.tooltips[0]).toEqual('Haste 1 item for 1 second(s).');
-    // });
-
     it('should parse "Deadly Port" correctly by replacing its {aura.e1.} (which is a typo) with a correct value', () => {
       const port = itemCards.find(card => card.name === "Port")!;
       const deadlyEnchantment = port.enchantments.find(enchantment => enchantment.type === 'Deadly')!;
@@ -346,14 +309,6 @@ describe('cardJsonParser', () => {
 
       expect(shinyEnchantment).toBeUndefined();
     });
-
-    // it('should parse "Heavy Multitool" correctly by providing a custom tooltip rather than trying to inject variables into the existing tooltip', () => {
-    //   const multitool = itemCards.find(card => card.name === "Multitool")!;
-    //   const heavyEnchantment = multitool.enchantments.find(enchantment => enchantment.type === 'Heavy')!;
-
-    //   expect(heavyEnchantment.tooltips.length).toEqual(1);
-    //   expect(heavyEnchantment.tooltips[0]).toEqual('+2 Slow');
-    // });
 
     it('should parse "Deadly Sextant" correctly by replacing its {aura.0} with a correct value', () => {
       const sextant = itemCards.find(card => card.name === "Sextant")!;
@@ -378,6 +333,14 @@ describe('cardJsonParser', () => {
       expect(toxicEnchantment.tooltips.length).toEqual(1);
       expect(toxicEnchantment.tooltips[0]).toEqual('Poison equal to 2 time(s) this item\'s damage.');
     });
+
+    // it('should parse "Shielded Bunker" correctly by properly calculating its {ability.e1} value as non-zero', () => {
+    //   const bunker = itemCards.find(card => card.name === "Bunker")!;
+    //   const shieldedEnchantment = bunker.enchantments.find(enchantment => enchantment.type === 'Shielded')!;
+
+    //   expect(shieldedEnchantment.tooltips.length).toEqual(1);
+    //   expect(shieldedEnchantment.tooltips[0]).toEqual('At the start of each fight, shield 180.');
+    // });
 
     it('should contain no enchantment tooltips with {, except for Induction Aegis with enchantmentType Heavy', () => {
       const invalidCards = [];

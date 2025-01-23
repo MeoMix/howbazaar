@@ -2,8 +2,8 @@ export type EnchantmentType = 'Heavy' | 'Icy' | 'Turbo' | 'Shielded' | 'Restorat
 export type Hero = "Pygmalien" | "Vanessa" | "Stelle" | "Jules" | "Dooley" | "Mak" | "Common";
 export type TierType = "Silver" | "Diamond" | "Bronze" | "Gold" | "Legendary";
 export type Size = "Small" | "Medium" | "Large";
-export type Tag = "Merchant" | "Weapon" | "Shield" | "Heal" | "Joy" | "Burn" | "Poison" | "Core" | "Property" | "Aquatic" | "Friend" | "Freeze" | "Potion" | "Vehicle" | "Tool" | "Food" | "Slow" | "Haste" | "Damage" | "Unsellable";
-export type HiddenTag = "Crit" | "EconomyReference" | "Damage" | "Cooldown" | "Heal" | "Active" | "Value" | "BurnReference" | "Slow" | "DamageReference" | "Shield" | "Passive" | "NonWeapon" | "FreezeReference" | "Freeze" | "CritReference" | "Gold" | "Burn" | "Toughness" | "Multicast" | "Haste" | "HealReference" | "ShieldReference" | "HasteReference" | "Poison" | "Ammo" | "JoyReference" | "Regen" | "PoisonReference" | "Health" | "Joy" | "Income" | "HealthReference" | "Charge" | "SlowReference" | "Lifesteal" | "AmmoReference" | "Experience" | "CooldownReference" | "RegenReference";
+export type Tag = "Weapon" | "Shield" | "Heal" | "Joy" | "Burn" | "Poison" | "Merchant" | "Core" | "Property" | "Friend" | "Freeze" | "Aquatic" | "Vehicle" | "Tool" | "Potion" | "Food" | "Dragon" | "Tech" | "Ray" | "Dinosaur" | "Haste" | "Slow" | "Damage" | "Loot" | "Unsellable" | "Apparel" | "Toy";
+export type HiddenTag = "Crit" | "Damage" | "Cooldown" | "Heal" | "Value" | "EconomyReference" | "BurnReference" | "Slow" | "Active" | "Shield" | "Burn" | "DamageReference" | "CritReference" | "Gold" | "Passive" | "NonWeapon" | "Multicast" | "Haste" | "HealReference" | "ShieldReference" | "HasteReference" | "Freeze" | "Poison" | "Ammo" | "Charge" | "JoyReference" | "Regen" | "PoisonReference" | "Health" | "Joy" | "Income" | "HealthReference" | "FreezeReference" | "SlowReference" | "AmmoReference" | "Toughness" | "Lifesteal" | "Experience" | "RegenReference";
 
 type ClientSideTier = {
     tooltips: string[];

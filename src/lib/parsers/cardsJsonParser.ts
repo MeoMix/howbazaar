@@ -3,7 +3,7 @@
 // https://github.com/glideapps/quicktype?tab=readme-ov-file#calling-quicktype-from-javascript
 import type { Entries } from "type-fest";
 import type { ParsedCombatEncounterCard, ParsedItemCard, ParsedSkillCard } from "$lib/types";
-import type { V2CardsD as Card, Bronze as Tier, Tiers, Tier as TierType, AbilityAction, AuraAction, Ability, Aura, Operation, TargetMode } from "./v2_Cards";
+import type { V2CardsD as Card, Bronze as Tier, Tiers, Tier as TierType, AbilityAction, AuraAction, Ability, Aura, Operation, Origin } from "./v2_Cards";
 import { unifyTooltips } from "$lib/utils/tooltipUtils";
 import type { CardsJson } from "./types.parser";
 import invalidItemIds from "./invalidItemIds.json";
@@ -41,12 +41,12 @@ function getAttributeInfo(
     name: string | undefined;
     value: number | undefined;
     operation: Operation | undefined;
-    targetMode: TargetMode | undefined;
+    targetMode: Origin | undefined;
 } {
     let attributeValue: number | undefined;
     let attributeName = "MISSING";
     let operation: Operation | undefined;
-    let targetMode: TargetMode | undefined;
+    let targetMode: Origin | undefined;
     const actionType = action.$type;
 
     if (actionType.includes("ModifyAttribute")) {
@@ -63,11 +63,17 @@ function getAttributeInfo(
             attributeValue = 0;
         } else if (action.Value?.Modifier) {
             // If there's a modifier, and if modifier mode is multiply, then get the attribute type and multiply it by modifier rather than just using modifier.
-            attributeValue = action.Value.Modifier.Value.Value;
+            attributeValue = action.Value.Modifier.Value.Value ?? action.Value.Modifier.Value.DefaultValue!;
             operation = action.Operation!;
             targetMode = action.Target?.TargetMode;
 
             if (qualifier.isMod) {
+                // If there is no Action.Value.Modifier.Value.Value then look at AttributeType
+                if (action.Value.Modifier.Value.Value === undefined) {
+                    let modifierAttributeName = action.Value.Modifier.Value.AttributeType;
+                    attributeValue = modifierAttributeName === undefined ? 0 : getAttributeValueFromTier(modifierAttributeName, tierAttributes, qualifier);
+                }
+
                 return {
                     name: attributeName,
                     value: attributeValue,
@@ -368,7 +374,7 @@ type ValidCombatEncounterCard = Card & { Type: "CombatEncounter", Localization: 
 function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
     const isValidItemCard = (entry: Card): entry is ValidItemCard =>
         entry.Type === "Item" &&
-        entry.SpawningEligibility !== "Never" &&
+        // entry.SpawningEligibility !== "Never" &&
         entry.Tiers !== undefined &&
         entry.Localization.Title.Text !== null &&
         !entry.Localization.Title.Text.includes("[DEBUG]") &&
@@ -428,7 +434,7 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
         const auras = Object.values(card.Auras);
         const tierMap = getTierMap(card);
 
-        if (card.Localization.Title.Text === "Satchel") {
+        if (card.Localization.Title.Text === "Crook") {
             console.log('yo');
         }
 
@@ -441,13 +447,6 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
                 // TODO: It's weird this can miss when looking up by tooltipId which should be a key
                 if (rawTooltips.length !== tier.TooltipIds.length) {
                     console.warn(card.Localization.Title.Text + ': Failed to match on tooltip');
-                }
-
-                // Patch Fix Critical Core having a typo'ed tooltip.
-                if (card.Localization.Title.Text === "Critical Core") {
-                    rawTooltips = rawTooltips.map((rawTooltip) => {
-                        return rawTooltip.replace("{ability.1} 1", "{ability.1}");
-                    });
                 }
 
                 let tooltips = getDisplayedTooltips(rawTooltips, abilities, auras, tier.Attributes);
@@ -467,6 +466,10 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
                     tooltips: []
                 };
             }
+
+            // if (card.Localization.Title.Text === "Bunker" && enchantmentType === "Shielded") {
+            //     console.log('yo');
+            // }
 
             const enchantmentAbilities = Object.values(enchantment.Abilities).filter(item => item.Action) as Ability[];
             const enchantmentAuras = Object.values(enchantment.Auras).filter(item => item.Action) as Aura[];
@@ -685,7 +688,7 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
 function parseSkillCards(cardsJson: CardsJson): ParsedSkillCard[] {
     const isValidSkillCard = (entry: Card): entry is ValidSkillCard =>
         entry.Type === "Skill" &&
-        entry.SpawningEligibility !== "Never" &&
+        // entry.SpawningEligibility !== "Never" &&
         entry.Tiers !== undefined &&
         entry.Localization.Title.Text !== null &&
         !entry.Localization.Title.Text.includes("[DEBUG]") &&
@@ -781,7 +784,7 @@ function parseSkillCards(cardsJson: CardsJson): ParsedSkillCard[] {
 function parseCombatEncounterCards(cardsJson: CardsJson) {
     const isEncounter = (entry: Card): entry is ValidCombatEncounterCard =>
         entry.Type === "CombatEncounter" &&
-        entry.SpawningEligibility !== "Never" &&
+        // entry.SpawningEligibility !== "Never" &&
         entry.CombatantType !== undefined &&
         (monsterTemplateIdMapping as any)[entry.Id] &&
         entry.Localization.Title.Text !== null;
