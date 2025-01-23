@@ -23,8 +23,8 @@ const allowedList = [
   '3dd2dbac-97ee-4fc4-ac31-4d885d19e2ed',
   // Toxic Flame
   'cbd2810c-4713-4503-a97d-30e73ccaebb7',
-  // Stout Fire
-  // 'd08bdeb9-ef08-48be-9df7-0edd9fcff6cf',
+  // Loaded Fury
+  'a80d8cc7-3472-45cb-ac33-11fe7e583e42',
 ];
 
 const disallowedList = [

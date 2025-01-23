@@ -3875,6 +3875,47 @@ const data: ParsedSkillCard[] = [
     ]
   },
   {
+    "id": "a80d8cc7-3472-45cb-ac33-11fe7e583e42",
+    "name": "Loaded Fury",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Your items have +0 damage for each ammo you have on your items in play. [0]"
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Your items have +0 damage for each ammo you have on your items in play. [0]"
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Your items have +0 damage for each ammo you have on your items in play. [0]"
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "Ammo",
+      "DamageReference"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Vanessa"
+    ],
+    "artKey": "Icon_Skill_ScopedShot.png",
+    "unifiedTooltips": [
+      "Your items have +0 damage for each ammo you have on your items in play. [0]"
+    ]
+  },
+  {
     "id": "b7b9f86e-689d-44ec-889d-026e8d45081c",
     "name": "Frontal Shielding",
     "startingTier": "Bronze",
