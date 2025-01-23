@@ -11269,6 +11269,49 @@ const data: ParsedSkillCard[] = [
     ]
   },
   {
+    "id": "202e4917-e744-41bf-965a-81edcded9d5f",
+    "name": "Toxic Weapons",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Your Poison items have +2 Poison for each Weapon you have. [0]"
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Your Poison items have +4 Poison for each Weapon you have. [0]"
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Your Poison items have +6 Poison for each Weapon you have. [0]"
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Weapon"
+    ],
+    "hiddenTags": [
+      "PoisonReference"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Vanessa",
+      "Mak"
+    ],
+    "artKey": "Icon_Skill_ExoticHerbs.png",
+    "unifiedTooltips": [
+      "Your Poison items have (+2/+4/+6) Poison for each Weapon you have. [0]"
+    ]
+  },
+  {
     "id": "ae41f574-fc9f-492a-8ae0-45853ab607a6",
     "name": "Critical Investments",
     "startingTier": "Silver",

@@ -25,6 +25,8 @@ const allowedList = [
   'cbd2810c-4713-4503-a97d-30e73ccaebb7',
   // Loaded Fury
   'a80d8cc7-3472-45cb-ac33-11fe7e583e42',
+  // Toxic Weapons
+  '202e4917-e744-41bf-965a-81edcded9d5f',
 ];
 
 const disallowedList = [
