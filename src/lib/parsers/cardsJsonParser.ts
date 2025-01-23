@@ -426,17 +426,13 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
                 }
             }
         }
-
     }
 
     const cards = validCards.map(card => {
         const abilities = Object.values(card.Abilities);
         const auras = Object.values(card.Auras);
         const tierMap = getTierMap(card);
-
-        if (card.Localization.Title.Text === "Crook") {
-            console.log('yo');
-        }
+        const remarks = [] as string[];
 
         let tiers = Object.fromEntries((Object.entries(tierMap) as Entries<typeof tierMap>).map(
             ([tierName, tier]) => {
@@ -466,10 +462,6 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
                     tooltips: []
                 };
             }
-
-            // if (card.Localization.Title.Text === "Bunker" && enchantmentType === "Shielded") {
-            //     console.log('yo');
-            // }
 
             const enchantmentAbilities = Object.values(enchantment.Abilities).filter(item => item.Action) as Ability[];
             const enchantmentAuras = Object.values(enchantment.Auras).filter(item => item.Action) as Aura[];
@@ -524,11 +516,16 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
             });
 
             // In scenarios involving enchantment tooltips, we might need to (rarely) rely on attribute values from the item itself.
-            // This occurs with Heavy Induction Aegis.
+            // This occurs with Restorative Security Camera.
             // Can't always merge starting attributes, though, because in other scenarios we need to manually construct tooltips 
             // from enchantment attributes and *only* enchantment attributes not starting tier attributes.
             if (rawTooltips.length > 0) {
-                enchantmentAttributes = { ...enchantmentAttributes, ...tierMap[card.StartingTier].Attributes ?? {} };
+                const tierAttributes = tierMap[card.StartingTier]?.Attributes ?? {};
+                for (const [key, value] of Object.entries(tierAttributes)) {
+                    if (value !== 0 || !(key in enchantmentAttributes)) {
+                        enchantmentAttributes[key] = value;
+                    }
+                }
             }
 
             let tooltips = [];
@@ -668,6 +665,10 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
 
         const unifiedTooltips = unifyTooltips(Object.entries(tiers).map(([, tier]) => tier.tooltips));
 
+        if (name === "Security Camera") {
+            remarks.push("Restorative Enchantment is implemented weird. Crit Chance scales with item tier, so 20% at Bronze or 50% at Diamond. This is the only enchant in the game which scales with tier. Expect this to change.")
+        }
+
         return {
             id: card.Id,
             name,
@@ -678,7 +679,8 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
             size: card.Size,
             heroes: card.Heroes,
             enchantments,
-            unifiedTooltips
+            unifiedTooltips,
+            remarks
         };
     });
 

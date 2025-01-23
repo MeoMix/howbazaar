@@ -334,23 +334,27 @@ describe('cardJsonParser', () => {
       expect(toxicEnchantment.tooltips[0]).toEqual('Poison equal to 2 time(s) this item\'s damage.');
     });
 
-    // it('should parse "Shielded Bunker" correctly by properly calculating its {ability.e1} value as non-zero', () => {
-    //   const bunker = itemCards.find(card => card.name === "Bunker")!;
-    //   const shieldedEnchantment = bunker.enchantments.find(enchantment => enchantment.type === 'Shielded')!;
+    it('should parse "Shielded Bunker" correctly by properly calculating its {ability.e1} value as non-zero', () => {
+      const bunker = itemCards.find(card => card.name === "Bunker")!;
+      const shieldedEnchantment = bunker.enchantments.find(enchantment => enchantment.type === 'Shielded')!;
 
-    //   expect(shieldedEnchantment.tooltips.length).toEqual(1);
-    //   expect(shieldedEnchantment.tooltips[0]).toEqual('At the start of each fight, shield 180.');
-    // });
+      expect(shieldedEnchantment.tooltips.length).toEqual(1);
+      expect(shieldedEnchantment.tooltips[0]).toEqual('At the start of each fight, shield 180.');
+    });
+
+    it('should parse "Restorative Security Camera" correctly by reading its value from the base items attribute at the default tier', () => {
+      const securityCamera = itemCards.find(card => card.name === "Security Camera")!;
+      const restorativeEnchantment = securityCamera.enchantments.find(enchantment => enchantment.type === 'Restorative')!;
+
+      expect(restorativeEnchantment.tooltips.length).toEqual(2);
+      expect(restorativeEnchantment.tooltips[1]).toEqual('Your other Heal items have +20% Crit Chance.');
+    });
 
     it('should contain no enchantment tooltips with {, except for Induction Aegis with enchantmentType Heavy', () => {
       const invalidCards = [];
 
       for (const card of itemCards) {
         const invalidTooltips = card.enchantments
-          .filter(enchantment => {
-            // I think Heavy Induction Aegis is broken in-game
-            return !(card.name === "Induction Aegis" && enchantment.type === "Heavy");
-          })
           .flatMap(enchantment => enchantment.tooltips.filter(tooltip => tooltip.includes('{')));
 
         if (invalidTooltips.length > 0) {

@@ -28,6 +28,7 @@ export type ParsedItemCard = {
     heroes: Hero[];
     enchantments: ClientSideEnchantment[];
     unifiedTooltips: string[];
+    remarks: string[];
 };
 
 export type ClientSideItemCard = {
@@ -42,6 +43,7 @@ export type ClientSideItemCard = {
     enchantments: ClientSideEnchantment[];
     unifiedTooltips: string[];
     combatEncounters: ClientSideCombatEncounterSummary[];
+    remarks: string[]
 };
 
 export type ParsedSkillCard = {
