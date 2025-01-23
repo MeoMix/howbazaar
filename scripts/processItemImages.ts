@@ -197,6 +197,8 @@ async function deleteKnownUselessFiles() {
     file.endsWith('._FX.jpeg') ||
     file.endsWith('Portrait.jpeg') ||
     file.endsWith('PortraitBG.jpeg') ||
+    // There's two files both named "Feather" and only one is correct (the purple feather)
+    file.endsWith('CF_S_STE_Feather_D.jpeg') ||
     /_#\d{1,10}\.jpeg$/.test(file) // Matches '_#<numbers>.jpeg', where <numbers> is 1-10 digits
   );
 
