@@ -39631,7 +39631,9 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "Your Aquatic items have +1 Multicast."
     ],
-    "remarks": []
+    "remarks": [
+      "Radiant Enchantment is bugged and doesn't work in the current patch. Do not enchant your item with Radiant."
+    ]
   },
   {
     "id": "447c40e6-7aec-4391-8be7-df4952815d40",
