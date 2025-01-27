@@ -3008,10 +3008,6 @@ const data: ParsedMonster[] = [
       {
         "templateId": "d071e4de-f87f-41b5-b02d-d622e35c0b4d",
         "tierType": "Diamond"
-      },
-      {
-        "templateId": "015bc348-773e-4009-87ff-231452431bba",
-        "tierType": "Gold"
       }
     ]
   },
@@ -4057,10 +4053,6 @@ const data: ParsedMonster[] = [
     "skills": [
       {
         "templateId": "ee178ba8-666d-426f-8499-1bd611a91802",
-        "tierType": "Bronze"
-      },
-      {
-        "templateId": "b6c90dc6-f497-4fe4-90a1-759947180884",
         "tierType": "Bronze"
       }
     ]

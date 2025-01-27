@@ -47,7 +47,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_ThirdDegreeBurns.png",
     "unifiedTooltips": [
       "Your Large Burn items have (+4/+8/+12/+16) Burn."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "41b9dac8-8020-4a0b-bd4e-c069b4cb1caf",
@@ -86,7 +87,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_HonedStrike.png",
     "unifiedTooltips": [
       "When you Crit with an item, it gains (+5%/+10%) Crit Chance for the fight."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "b6334c78-623c-4662-8642-8e05555d873a",
@@ -130,7 +132,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_QuickFreeze.png",
     "unifiedTooltips": [
       "The first time you Haste each fight, Freeze an item for (3/4/5) second(s)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "36410add-d0de-4618-a099-ceb32a87c589",
@@ -171,7 +174,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_TinyDancer.png",
     "unifiedTooltips": [
       "If you have at least 7 items in play, your items have their cooldowns reduced by (5%/10%/15%)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "a03e4ce6-4480-4edc-b612-8e1f6700cc26",
@@ -213,7 +217,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_FlashyPilot.png",
     "unifiedTooltips": [
       "When you use a Vehicle, your items gain (10%/20%/30%) Crit chance."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "d6251362-7c11-4a7e-9d6d-97f445f2f828",
@@ -253,7 +258,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_Incinerate.png",
     "unifiedTooltips": [
       "The first (5/10) times you Burn each fight, Charge 1 Shield item 1 second(s)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "00f1ae18-33a6-499d-b2ea-319ac3debab9",
@@ -300,7 +306,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_LeftEyeDominant.png",
     "unifiedTooltips": [
       "Your leftmost item has (+8%/+16%/+24%/+32%) Crit chance."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "7434f3a5-2432-4603-b6d7-46febb9272fd",
@@ -345,7 +352,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_TracerFire.png",
     "unifiedTooltips": [
       "When you burn, your items gain (+1%/+2%/+3%) Crit Chance for the fight."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "b76e0b9a-481c-4128-9ed3-a290f3b21b4f",
@@ -393,7 +401,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_PeacefulEye.png",
     "unifiedTooltips": [
       "Your Non-Weapon items have (+5%/+10%/+15%/+20%) Crit chance."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "c5936035-d32a-4d82-8dfc-44deb993b5ea",
@@ -435,7 +444,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_MON_Greed_02.png",
     "unifiedTooltips": [
       "At the start of each fight, gain (1/2/3/4) gold."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "80b1dcad-fc56-43a2-8bcc-cc41e62a7616",
@@ -478,7 +488,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_MON_HeatLover.png",
     "unifiedTooltips": [
       "When you or your enemy Burns, gain (2/4/6/8) Regeneration for the fight."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "8c16e6c8-2f44-4335-b31e-5b2268bf790e",
@@ -521,7 +532,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_FinesseShield.png",
     "unifiedTooltips": [
       "While your enemy has more health than you, your Shield items have their cooldowns reduced by (5%/10%/20%)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "6f593cc1-b44a-43d6-a83b-a68fb477aef2",
@@ -559,7 +571,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_NaturalRemedy.png",
     "unifiedTooltips": [
       "You have Regeneration equal to half the Poison on your enemy."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "f1c3b934-254a-459f-9078-023edbcfcb03",
@@ -601,7 +614,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_HealthyCollector.png",
     "unifiedTooltips": [
       "You have (+35/+100/+200/+300) Max Health for each Non-Weapon item you have. [0]"
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "a89060ce-17fa-4706-9c6c-79c0834eeb2c",
@@ -641,7 +655,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_DOO_LiquidCooled.png",
     "unifiedTooltips": [
       "The first (5/10) times use the Core each fight, Freeze 1 item of equal or smaller size for 1 second(s)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "d8e7fa0a-9127-4a11-a84e-d479a011a92d",
@@ -681,7 +696,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_ImprovisedPoison.png",
     "unifiedTooltips": [
       "When you Crit, your Poison items gain (1/2) Poison for the fight."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "3510040e-9d43-4e2a-867e-96cc6740a139",
@@ -729,7 +745,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_ImprovisedWeaponry.png",
     "unifiedTooltips": [
       "When you Crit, your weapons gain (5/10/15) Damage for the fight."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "71433809-d05a-4544-9959-aff20ae5db93",
@@ -773,7 +790,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_IronSharpensIron.png",
     "unifiedTooltips": [
       "Your leftmost Weapon has +2 damage. When you buy a weapon, increase this bonus by (2/3/4)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "115c2677-6880-4400-af80-f5afa3d502fe",
@@ -818,7 +836,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_DefenseGrid.png",
     "unifiedTooltips": [
       "At the start of each fight, gain shield equal to (10%/20%/35%/50%) of your max health."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "2c637e34-ea4d-4532-9118-fddd9e637342",
@@ -861,7 +880,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_ImprovisedHealing.png",
     "unifiedTooltips": [
       "When you Crit, your Heal items gain (10/20/30) Heal for the fight."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "1e8293e9-c60f-464a-9d44-21e766978edc",
@@ -901,7 +921,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_ImprovisedBurn.png",
     "unifiedTooltips": [
       "When you Crit, your Burn items gain (1/2) Burn for the fight."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "3dd2dbac-97ee-4fc4-ac31-4d885d19e2ed",
@@ -941,7 +962,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_CPUThrotteling.png",
     "unifiedTooltips": [
       "The first (5/10) times you use The Core each fight, Slow 1 item for 2 second(s)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "0dd4d40e-ac14-4a57-8c7f-9d47a5bdd38a",
@@ -983,7 +1005,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_DesperateStrike.png",
     "unifiedTooltips": [
       "While you have less health than your opponent, your items gain (10%/15%/20%) Crit Chance."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "19b74e9a-6723-4e94-a955-2c39ca48dbd0",
@@ -1025,7 +1048,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_MON_FlameWall_01",
     "unifiedTooltips": [
       "Your Burn items have (+2%/+4%/+6%/+8%) Crit Chance."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "dff033fb-0fd4-4ae9-a9c2-ed8a81657d08",
@@ -1064,7 +1088,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_CashDeposits.png",
     "unifiedTooltips": [
       "Your weapons have + damage equal to your gold."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "d071e4de-f87f-41b5-b02d-d622e35c0b4d",
@@ -1100,7 +1125,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_MON_TrashTitan_02.png",
     "unifiedTooltips": [
       "When you use a small item, Charge a large item for 1 second(s)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "338b9fbe-0131-4d89-8661-13aa2dd0c9a1",
@@ -1148,7 +1174,8 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "Your Weapons have (+3/+6/+9) Damage for each Aquatic item you have. [0]",
       "Your Shield items have (+3/+6/+9) Shield for each Aquatic item you have. [0]"
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "13f4df45-8f29-4a48-8a2b-b8176e17c85d",
@@ -1190,7 +1217,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_RetalitoryToxins.png",
     "unifiedTooltips": [
       "The first time you fall below half health each fight, Poison (20/30/40)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "cb8e9ed1-764e-4fa5-a2b8-61c2eddcbf7e",
@@ -1232,7 +1260,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_GreaseFire.png",
     "unifiedTooltips": [
       "When you use a tool, Burn (3/5)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "c3f674a0-4025-45e1-b611-bf70fd6f279c",
@@ -1276,7 +1305,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_Lifting.png",
     "unifiedTooltips": [
       "Your weapons have +1 Damage. When you buy a Weapon, increase this bonus by (+1/+2/+3) Damage."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "3b3b1f2b-7f43-440d-807b-61eea3a65cb0",
@@ -1315,7 +1345,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_MON_VoidRake.png",
     "unifiedTooltips": [
       "When you burn, Haste an item for (1/2) second(s)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "c9c884fd-849e-4541-b770-4658c2e6e609",
@@ -1353,7 +1384,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_MON_LordOfWastes_01.png",
     "unifiedTooltips": [
       "When any player uses an item, all items gain (2%/4%) Crit Chance for the fight."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "1d0b3080-14a8-41c5-9449-9b48f46d4726",
@@ -1394,7 +1426,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_MakeshiftPlate.png",
     "unifiedTooltips": [
       "Your Shield items have +1 Shield for every (4/3/2) gold you have. [NaN]"
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "f6a49c4a-7ee7-4aa7-8162-392eee2d3835",
@@ -1438,7 +1471,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_FirstFlames.png",
     "unifiedTooltips": [
       "The first time you use a Large item each fight, Burn (10/15/20)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "760fd7aa-fce6-4779-818e-99ba51274010",
@@ -1482,7 +1516,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_DOO_LikeClockwork.png",
     "unifiedTooltips": [
       "When you level up, give your Weapons (+5/+10/+15/+20) damage. If you have a Weapon Core, double this."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "813b4dd8-3fd3-4824-be6e-bce2b1f175a3",
@@ -1524,7 +1559,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_MON_SharpenedSteel.png",
     "unifiedTooltips": [
       "When you use a Weapon, Adjacent items gain (4%/8%/12%) Crit Chance for the fight."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "a9e56561-95d9-46c4-83e3-499e6b159013",
@@ -1564,7 +1600,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_Alacrity.png",
     "unifiedTooltips": [
       "The first (5/10) times you Crit each fight, Charge 1 item 1 second(s)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "c5ce101a-3af2-49ce-bcc9-42481355c58e",
@@ -1607,7 +1644,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_FollowUpCare.png",
     "unifiedTooltips": [
       "Your rightmost Heal item has (+20/+35/+50/+65) Heal."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "b57df6d6-fc6c-4401-ad41-77f83388eabe",
@@ -1645,7 +1683,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_DistributedSystems.png",
     "unifiedTooltips": [
       "When you use a large item, haste (2/3) small items for (2/3) second(s)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "b21d98f7-d677-4598-8b53-5bfd8301d26a",
@@ -1686,7 +1725,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_MON_PetrifyingGaze_01.png",
     "unifiedTooltips": [
       "The first time you fall below half health each fight, Freeze all enemy items for (1/2/3) second(s)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "f380f03c-3c71-4cae-b423-43fa31a5c3a3",
@@ -1726,7 +1766,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_BigGuns.png",
     "unifiedTooltips": [
       "Double the damage of your Large weapons."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "eea71cd9-2688-4c4d-99e7-6eee44cf47a2",
@@ -1768,7 +1809,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_MON_DabblingApprentice_01.png",
     "unifiedTooltips": [
       "The first time you fall below 50% health each fight, reload (2/4/6/8) items."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "19c967e5-f4c0-4c11-bb96-aa039369600a",
@@ -1813,7 +1855,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_LargeAppetites.png",
     "unifiedTooltips": [
       "If you have 4 or fewer items, you have (+500/+1000/+2000) Max Health."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "d675442d-7d59-4f13-9209-6e1a4ae7a1fc",
@@ -1858,7 +1901,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_MON_DisdainForLife_01",
     "unifiedTooltips": [
       "When you Burn, your Weapons gain (+2/+4/+6/+8) damage for the fight."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "1448f669-4c0f-4f86-a23c-00fb647b1153",
@@ -1902,7 +1946,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_SlowedTargets.png",
     "unifiedTooltips": [
       "When you Slow, your items gain (+1%/+2%/+3%) Crit Chance for the fight."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "1c47afbe-2e26-4b63-b50c-1bff7d48b88b",
@@ -1946,7 +1991,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_CreepingChill.png",
     "unifiedTooltips": [
       "The first time you Slow each fight, Freeze an item for (3/4/5) second(s)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "1c40716a-d125-4deb-8ada-8b177c5ff071",
@@ -1988,7 +2034,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_Brawler.png",
     "unifiedTooltips": [
       "You have (+100/+200/+300) Max Health for each Weapon you have. [0]"
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "b3c7f45e-23f3-44c8-adca-3ca99376e848",
@@ -2024,7 +2071,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_MasterSalesman.png",
     "unifiedTooltips": [
       "Your items have double value during combat."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "7919e8b0-d749-4c13-892e-bc794c8cf06e",
@@ -2064,7 +2112,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_HeatShield.png",
     "unifiedTooltips": [
       "When you Burn with an item, gain Shield equal to (1x/2x) that item's Burn."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "6bd675c5-a9a3-4a04-b3b3-c6ed09904bc2",
@@ -2104,7 +2153,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_SKILL_MON_CleanStorefront.png",
     "unifiedTooltips": [
       "Your leftmost item has (+15/+30/+50) value during combat."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "1df8d85a-9095-4ab9-952a-c668a4d5d51c",
@@ -2144,7 +2194,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_DOO_NumberOneStunner.png",
     "unifiedTooltips": [
       "The first (4/8) times you Shield each fight, Charge 1 item 1 second(s)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "b89ebdeb-1954-47c8-97fe-8cc3008f2a25",
@@ -2187,6 +2238,9 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_MON_RevitalizingToxins.png",
     "unifiedTooltips": [
       "When you or your enemy Poisons, gain (2/4/6/8) Regeneration for the fight."
+    ],
+    "remarks": [
+      "This is partially bugged in the current patch and only triggers when you poison not when enemy poisons."
     ]
   },
   {
@@ -2230,7 +2284,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_MON_Trained.png",
     "unifiedTooltips": [
       "When you slow, a weapon gains (+5/+10/+15/+20) damage for the fight."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "afe451fd-7726-4ed6-9ad9-48d917a12012",
@@ -2274,7 +2329,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_Specialist.png",
     "unifiedTooltips": [
       "If you have exactly 1 weapon, your Shield items have (+10/+20/+30) shield."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "6550ba8c-8d90-41f8-82c8-a0af040458ce",
@@ -2319,7 +2375,8 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "If you have exactly one weapon, it has (+5/+10) Max Ammo.",
       "...if it is also Aquatic, it has (+25/+50) Damage."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "304d505a-d914-4264-9142-b6efb7aca1ff",
@@ -2359,7 +2416,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_ExtraArms.png",
     "unifiedTooltips": [
       "The first (4/8) times you use a Weapon each fight, charge 1 item 1 second(s)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "a1975546-334f-4137-85cc-43a4c8ae49f3",
@@ -2401,7 +2459,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_Regenerative.png",
     "unifiedTooltips": [
       "You have (10/20/30) Regeneration."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "aa603f52-3788-40c2-bb99-53e92a69b3f5",
@@ -2443,7 +2502,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_MON_RogueScrapper_01.png",
     "unifiedTooltips": [
       "At the start of each fight, slow an item for (3/5/7/9) second(s)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "a3695c78-63e4-45a9-a2b9-9b2827325527",
@@ -2486,7 +2546,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_QualityOverQuantity.png",
     "unifiedTooltips": [
       "If you have exactly one weapon, it has Lifesteal and (5%/10%) Crit Chance."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "050ff26a-59ec-4666-89b0-b0630a75149a",
@@ -2529,7 +2590,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_MON_Withdraw_01",
     "unifiedTooltips": [
       "The first time you fall below half health each fight, Shield equal to (20%/30%/40%/50%) of your Max Health. [0]"
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "8d41a164-2667-4df4-91ed-3da224b8c63a",
@@ -2566,7 +2628,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_FocusedRage.png",
     "unifiedTooltips": [
       "The first time you fall below half health each fight, double all your items' Crit Chance for the fight."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "b0b38699-beb0-4012-b4f0-bc424f4ba787",
@@ -2608,7 +2671,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_PrimeRealEstate.png",
     "unifiedTooltips": [
       "When you use a Property, adjacent items gain (5/10/15) Crit chance for the fight."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "5e193004-5e5f-4166-96a0-9a51a3ef8443",
@@ -2650,7 +2714,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_FlankingShield.png",
     "unifiedTooltips": [
       "The first time you use a Large item each fight, adjacent Shield items gain (15/30/50) Shield for the fight."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "d179345d-953d-4c59-a324-5c2504951644",
@@ -2690,7 +2755,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_EmergencyDraught.png",
     "unifiedTooltips": [
       "The first time you fall below half health each fight, gain (20/30/40) Regeneration for the fight."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "b5160cb5-5d92-420b-8883-b67e701b5e5f",
@@ -2730,7 +2796,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_RightyTighty.png",
     "unifiedTooltips": [
       "The first (5/10) times you use your rightmost item each fight, slow 1 item for 1 second(s)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "d31c4499-c05a-4d7b-8571-a19e102c3169",
@@ -2774,7 +2841,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_ImprovedToxins.png",
     "unifiedTooltips": [
       "Your Poison items have (+2/+4/+6/+8) Poison."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "a6cc6854-91aa-4a30-9936-33db1cf16119",
@@ -2816,7 +2884,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_DOO_Firepower.png",
     "unifiedTooltips": [
       "When you use the Core, adjacent weapons gain (10/20/30) damage for the fight."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "318e27ee-611e-4e8b-bf3b-ae9982494453",
@@ -2858,7 +2927,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_TheBestDefence.png",
     "unifiedTooltips": [
       "When you use a weapon, give weapons adjacent to it (+3/+6/+9) damage for the fight."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "fcb51ffd-6d25-4e74-871a-7dc0de2bae91",
@@ -2892,7 +2962,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_MON_MoneyMachine.png",
     "unifiedTooltips": [
       "When you would die, Cleanse all Burn and Poison, double your Max Health and Heal to full. In addition, your enemy gains 1 Gold."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "3d75530d-ebad-46fa-a0da-04df6cdb9e5a",
@@ -2935,7 +3006,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_PYG_ReinforcedSteel.png",
     "unifiedTooltips": [
       "When you use a Property, your Weapons gain (+5/+10/+15) damage and your Shield items gain (+5/+10/+15) shield for the fight."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "1798b189-818a-456d-b7c5-efddf8da15c2",
@@ -2972,7 +3044,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_DOO_AdvancedSynthetics.png",
     "unifiedTooltips": [
       "When you Level Up, upgrade a (Bronze-tier/Silver-tier) item."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "529f2133-0d39-4827-9788-2b90c5356b7e",
@@ -3010,7 +3083,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_MothtoaFlame.png",
     "unifiedTooltips": [
       "You have Regeneration equal to half the Burn on your enemy."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "c2e26fae-a435-44ff-8613-8977247ee972",
@@ -3046,7 +3120,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_DOO_IntrusionCountermeasures.png",
     "unifiedTooltips": [
       "The first time you fall below half health in a fight, use your Friends."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "07fbd5ab-c52a-42d8-801d-8992c44714de",
@@ -3090,7 +3165,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_StandadizedPoison.png",
     "unifiedTooltips": [
       "Your Medium Poison items have (+2/+4/+6/+8) Poison."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "76e1e841-8b6c-4871-a077-b17f4806675d",
@@ -3132,7 +3208,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_HeatedShells.png",
     "unifiedTooltips": [
       "When you use an Ammo item, Burn (2/3/4)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "9d7c0a60-c957-4513-81d8-2ba957b58fb1",
@@ -3174,7 +3251,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_PoisonousOpener.png",
     "unifiedTooltips": [
       "The first time you use a Large item each fight, Poison (10/15/20)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "fbbfbef7-8fe4-4ac0-81fa-09afb59e0fcc",
@@ -3223,7 +3301,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_Strenght.png",
     "unifiedTooltips": [
       "Your Weapons deal (+10/+15/+20/+25) Damage."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "d4471fb1-a60b-4f64-9c60-ae0e8c930306",
@@ -3261,7 +3340,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_Minimalist.png",
     "unifiedTooltips": [
       "If you have no weapons, your items' cooldowns are reduced by (10%/20%)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "a59bc243-7c8b-447a-8ab7-968f662b1c50",
@@ -3301,7 +3381,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_MON_WatersofInfinity.png",
     "unifiedTooltips": [
       "You have (+8/+12/+16) Regeneration."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "994de267-673b-4838-9302-1b3b47ab0934",
@@ -3342,7 +3423,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_PYG_BoarMarket.png",
     "unifiedTooltips": [
       "Your leftmost and rightmost Weapons have + Damage equal to (1x/2x) their value."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "4fda14aa-365f-478f-8a27-b9b53c97c56a",
@@ -3386,7 +3468,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_MixedMessage.png",
     "unifiedTooltips": [
       "The first (4/8) times you use a non-Weapon item each fight, Charge 1 Weapon 1 second(s)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "a885b513-3fe3-4795-a10e-c2e4f6b5f1f6",
@@ -3425,7 +3508,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_VAN_PartingShot.png",
     "unifiedTooltips": [
       "When you use an item with Ammo, give it (+5%/+10%) Crit Chance for the fight."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "570a7c19-0dab-459f-b545-6ade12a69312",
@@ -3465,7 +3549,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_SKILL_MON_ToxicFriendship.png",
     "unifiedTooltips": [
       "When you use a Friend, Poison (1/2)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "69336595-1135-4e17-8192-247e0478d020",
@@ -3505,7 +3590,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_STE_LeftyLoosey.png",
     "unifiedTooltips": [
       "The first (5/10) times you use your leftmost item each fight, Haste 1 item for 1 second(s)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "3c9eefb8-f348-486b-9ec2-a4920f71bee4",
@@ -3543,7 +3629,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_DOO_WellOiledMachine.png",
     "unifiedTooltips": [
       "When you use The Core, reduce an item's cooldown by 5% for the fight."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "f08ab88b-c40e-4f4e-9419-e7501f9224ec",
@@ -3586,7 +3673,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_ParalyticPoison.png",
     "unifiedTooltips": [
       "The first time you Poison each fight, Freeze an item for (3/4/5) second(s)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "870ed8e7-9c1f-4be0-b84c-00ebcf475a74",
@@ -3627,7 +3715,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_MON_Skyfall_01.png",
     "unifiedTooltips": [
       "When you Crit, Haste an item for (1/2/3) second(s)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "6c3d41e4-1ca7-4be5-b0e2-6cadbbd2bd27",
@@ -3669,7 +3758,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_ToolsOFTheTrade.png",
     "unifiedTooltips": [
       "The first (5/10) times you use a Tool each fight, Haste 1 Tool for 1 second(s)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "0eb35f18-3c03-4ea6-9af4-b7345bce1e3c",
@@ -3710,7 +3800,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_DOO_BeautifulFriendship.png",
     "unifiedTooltips": [
       "When you use a Friend, your weapons gain (3/6) damage for the fight."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "dd9d1ad7-8c28-46da-9f98-aaa2cc55cd00",
@@ -3747,7 +3838,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_MON_SpreadingInfection_02.png",
     "unifiedTooltips": [
       "When you Heal, charge a Poison 1 second."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "7ab9d9a7-09b2-4dab-b821-eaaf0fb84523",
@@ -3784,7 +3876,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_MON_Smack_01.png",
     "unifiedTooltips": [
       "When you slow, charge an item 1 second(s)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "113091ab-c543-4745-9dc4-18ab1cdfb3b8",
@@ -3828,7 +3921,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_CaptainsDue.png",
     "unifiedTooltips": [
       "When you win a fight against a player, gain (2/3/4/5) gold."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "4225d131-791a-4ea4-ab0e-80a3343a3253",
@@ -3872,7 +3966,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_DefensiveWeapons.png",
     "unifiedTooltips": [
       "When you use a weapon, your Shield items gain (3/6/9) Shield for the fight."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "a80d8cc7-3472-45cb-ac33-11fe7e583e42",
@@ -3913,7 +4008,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_ScopedShot.png",
     "unifiedTooltips": [
       "Your items have +0 damage for each ammo you have on your items in play. [0]"
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "b7b9f86e-689d-44ec-889d-026e8d45081c",
@@ -3959,7 +4055,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_FrontalShielding.png",
     "unifiedTooltips": [
       "Your leftmost Shield item has (+20/+30/+40/+50) Shield."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "239aeabb-0b0c-484d-a761-ee68ede3223c",
@@ -4001,7 +4098,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_MON_LashOut_01",
     "unifiedTooltips": [
       "At the start of each fight, Poison (3/6/9/12)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "ef12c160-99ce-4171-a7ba-7fccaaafa239",
@@ -4047,7 +4145,8 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "Your items have (+30%/+50%) Crit Chance.",
       "When you use an item, all your items lose 10% crit chance for the fight."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "9215b678-2833-427b-bc97-75a90968c634",
@@ -4081,7 +4180,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_Ravenous.png",
     "unifiedTooltips": [
       "The first time you fall below half health each fight, destroy an item for the fight."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "976d7de6-8191-44c4-8270-2ebc47775fe8",
@@ -4127,7 +4227,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_RearShielding.png",
     "unifiedTooltips": [
       "Your rightmost Shield item has (+20/+30/+40/+50) Shield."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "73722d74-be04-4c9a-a925-6f235feeb11f",
@@ -4163,7 +4264,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_MON_VoidRender.png",
     "unifiedTooltips": [
       "When you destroy an item during combat, your Weapons gain (100/200) damage and your burn items gain (10/20) Burn for the fight."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "b2cc190c-ddbd-487c-b99a-ed21150b6c10",
@@ -4201,7 +4303,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_PYG_Chocoholic.png",
     "unifiedTooltips": [
       "When you sell a medium or large item, get (1/2) Chocolate Bar(s)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "09f668a1-82f6-42d5-94fa-88af3568edd8",
@@ -4239,7 +4342,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_FinesseWeapon.png",
     "unifiedTooltips": [
       "When you use a weapon with Lifesteal, Freeze a smaller item for 2 second(s)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "e7cc942b-96c5-4b90-a916-b3db0ee4bfe7",
@@ -4282,7 +4386,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_MON_TheColdShoulder_01.png",
     "unifiedTooltips": [
       "When you freeze, your weapons gain (2/4/6/8) damage for the fight."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "c149f8da-b64e-46f4-bf80-f6f4cae88fbc",
@@ -4320,7 +4425,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_Reclaimer.png",
     "unifiedTooltips": [
       "When you buy a property, gain (1/2) Chocolate Bar(s) and (1/2) Spare Change."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "12291452-e5c6-4d98-98c6-69f766536dbd",
@@ -4363,7 +4469,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_CriticalAid.png",
     "unifiedTooltips": [
       "Your Heal items have (+5%/+10%/+15%/+20%) Crit chance."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "f1e354bd-d94c-48fa-b63e-5012f68129a9",
@@ -4404,7 +4511,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_DOO_LettingOffSteam.png",
     "unifiedTooltips": [
       "The first (5/10) times you Burn each fight, Haste the Core for 2 second(s)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "1d9eb8d1-ef94-4847-b472-28290159e894",
@@ -4443,7 +4551,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_DOO_WarmHugs.png",
     "unifiedTooltips": [
       "When you use a Friend, Burn (2/3)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "f9628cc5-fdf8-49cf-8807-d7b85f457aa8",
@@ -4481,7 +4590,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_MON_RedundantSystems.png",
     "unifiedTooltips": [
       "If you only have one weapon, it deals triple damage and has its cooldown increased by 50%."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "9ec041be-6f89-4e95-963d-1deb7460e1d0",
@@ -4520,7 +4630,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_CircleOfLife.png",
     "unifiedTooltips": [
       "Your leftmost Weapon has lifesteal."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "6216741f-f7fe-4de0-82c0-3733263378f1",
@@ -4563,7 +4674,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_CritialProtector.png",
     "unifiedTooltips": [
       "Your Shield items have (+5%/+10%/+15%/+20%) Crit chance."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "f3abf6be-b28d-42f5-a239-7208c2dcde25",
@@ -4605,7 +4717,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_Outmaneuver.png",
     "unifiedTooltips": [
       "The first (5/10) times you Slow each fight, Haste 1 vehicle for 2 second(s)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "09c4c894-0397-47e5-9635-7b1f4c49527a",
@@ -4646,7 +4759,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_MON_MoneyIsPower_02.png",
     "unifiedTooltips": [
       "Your weapons have + damage equal to (1x/2x) your income."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "c4c70f57-c51e-4bc4-848c-0f0e7fbddd28",
@@ -4695,7 +4809,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_SmallWeaponry.png",
     "unifiedTooltips": [
       "Your Small Weapons deal (+3/+9/+18/+30) Damage."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "7f097b31-c29e-4082-a835-6d6457c2d536",
@@ -4725,7 +4840,8 @@ const data: ParsedSkillCard[] = [
       "Stelle"
     ],
     "artKey": "Icon_Skill_Ignition.png",
-    "unifiedTooltips": []
+    "unifiedTooltips": [],
+    "remarks": []
   },
   {
     "id": "3728b5fe-43aa-4f77-b7a8-b20c3b359295",
@@ -4767,7 +4883,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_CreepingToxines.png",
     "unifiedTooltips": [
       "The first (5/10) times you Slow each fight, Charge 1 Poison item 1 second(s)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "6914df97-567f-4d9a-9473-d3de39a09e86",
@@ -4810,7 +4927,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_FrozenShot.png",
     "unifiedTooltips": [
       "The first (4/8) times you use your Slowest weapon each fight, Freeze 1 item of equal or smaller size for 1 second(s)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "1fb47cc1-c38f-4240-8f7f-04a78222f5e7",
@@ -4852,7 +4970,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_Toxic.png",
     "unifiedTooltips": [
       "When you poison, your weapons gain (5/10/15) damage for the fight."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "b2e947ce-a8d9-46e0-8249-22a6a97fbffc",
@@ -4891,7 +5010,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_MON_IcicleAmmo_03.png",
     "unifiedTooltips": [
       "At the start of each fight, Freeze all non-weapon items for (2/3) second(s)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "aa59ff52-e4de-4728-bf9c-3ac8411ecbd8",
@@ -4933,7 +5053,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_LargePoison.png",
     "unifiedTooltips": [
       "Your Large Poison items have (+4/+8/+12/+16) Poison."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "3715da61-af37-49c6-aa7d-68804484b685",
@@ -4980,7 +5101,8 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "Your Burn items have (+2/+4/+6) Burn.",
       "Your Poison items have (+2/+4/+6) Poison."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "25c63d19-8254-47f8-acc9-519ee5a69e1f",
@@ -5029,7 +5151,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_LeftHanded.png",
     "unifiedTooltips": [
       "Your leftmost Weapon deals (+20/+30/+40/+50) Damage."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "82d8a964-4068-44c0-a123-af96e5c350d4",
@@ -5071,7 +5194,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_HeavyMettle.png",
     "unifiedTooltips": [
       "Your Shield items have + Shield equal to (2/3/4) times your level. [NaN]"
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "8e02521d-4353-4a1d-9d2e-80f6f1e22f53",
@@ -5110,7 +5234,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_SKILL_MON_PurifyingFlame.png",
     "unifiedTooltips": [
       "When you gain Regeneration, a Burn item gains (1/2) Burn for the fight."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "9cd3f8a9-3ca8-482b-8f4c-79f9d1d3400e",
@@ -5148,7 +5273,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_Trader.png",
     "unifiedTooltips": [
       "At the start of each day, your items gain (1/2) value."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "b7edb810-2ead-4e1c-965d-d787eacc6fd3",
@@ -5196,7 +5322,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_Shatter.png",
     "unifiedTooltips": [
       "When you freeze, your Weapons gain (+10/+15/+20) damage for the fight."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "69e15083-66e9-40ca-a3c9-f8bdd8b3887d",
@@ -5231,7 +5358,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_DesperateFreeze.png",
     "unifiedTooltips": [
       "The first time you fall below half health each fight, remove Freeze and Slow from your items and Cleanse half your Burn and Poison."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "13989ad3-2122-4d86-a323-bb90fda8360b",
@@ -5270,6 +5398,9 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_Bloodhound.png",
     "unifiedTooltips": [
       "The first time your enemy falls below half health each fight, Charge your items (2/3/4) second(s)."
+    ],
+    "remarks": [
+      "This is bugged in the current patch and doesn't work."
     ]
   },
   {
@@ -5307,7 +5438,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_MON_VoidEnergy01.png",
     "unifiedTooltips": [
       "When you Burn, charge a Shield item 1 second."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "83d940dd-4b3d-4b0c-9f46-43d0041f5626",
@@ -5347,7 +5479,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_MedicalTraining.png",
     "unifiedTooltips": [
       "When you Heal, an item gains (3%/5%) Crit Chance for the fight."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "0045d15e-ac74-436f-a200-eeedab7baf90",
@@ -5388,7 +5521,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_Backroom.png",
     "unifiedTooltips": [
       "When you visit a Merchant, gain (25/50/75) Max Health."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "e634860d-fec5-43c1-a6ca-a349450ae9c8",
@@ -5435,7 +5569,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_HeavyFirepower.png",
     "unifiedTooltips": [
       "If you have 4 or fewer items in play, your Weapons have (+25/+50/+75) damage."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "cbd2810c-4713-4503-a97d-30e73ccaebb7",
@@ -5479,7 +5614,8 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you Burn with an item, Poison (1/2).",
       "When you Poison with an item, Burn (2/4)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "34ad2511-dec9-4e8f-8392-1cc691e77b87",
@@ -5528,7 +5664,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_DeadlyEye.png",
     "unifiedTooltips": [
       "Your Weapons have (+5%/+10%/+15%/+20%) Crit chance."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "f3f43bb9-1177-458f-8244-aaf409a050dd",
@@ -5572,7 +5709,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_BalancedFriendship.png",
     "unifiedTooltips": [
       "Your Weapons have (+2/+4/+6) damage and Shield items have (+2/+4/+6) shield for each friend you have. [0, 0]"
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "f2782115-1920-4bf2-9306-32697bcfee15",
@@ -5616,7 +5754,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_CriticalCaptain.png",
     "unifiedTooltips": [
       "The first time you use a Large item each fight, your items gain (+4%/+8%/+12%/+16%) Crit Chance for the fight."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "d56a6e90-f664-4791-8b78-5c8bd3f45f80",
@@ -5656,7 +5795,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_SickBurn.png",
     "unifiedTooltips": [
       "The first (5/10) times you Poison each fight, charge 1 Burn item 1 second(s)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "7931571a-3d32-41e8-bf7b-ca6b4d1b7a3d",
@@ -5698,7 +5838,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_BurningShield.png",
     "unifiedTooltips": [
       "The first time you fall below half health each fight, Shield equal to (2/3/4) times the Burn on your opponent. [0]"
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "f568cc30-31d8-48b3-8d26-a0f2032ebc6f",
@@ -5737,7 +5878,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_PlatinumHeart.png",
     "unifiedTooltips": [
       "You have (+300/+500) Max Health for each Diamond-tier item you have. [0]"
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "d1505b87-551f-4786-818c-3c441f920d7b",
@@ -5778,7 +5920,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_Re-Tooled.png",
     "unifiedTooltips": [
       "Your leftmost Tool has +1 Multicast."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "31e244c7-e013-4e6c-a51c-4f0ca8d10472",
@@ -5821,7 +5964,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_StrongArm.png",
     "unifiedTooltips": [
       "Your Weapons have + Damage equal to (1x/2x/3x) your income. [NaN]"
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "50eaea1d-0159-4feb-b855-9965cd7eddc2",
@@ -5861,7 +6005,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_DOO_HeavyMachinery.png",
     "unifiedTooltips": [
       "The first (5/10) times you use The Core each fight, Haste 1 item for 2 second(s)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "ab0ae449-82f3-414d-82d0-1ebc73ba5ee5",
@@ -5905,7 +6050,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_CommandShip.png",
     "unifiedTooltips": [
       "If you have a vehicle, reduce your non-vehicle items' cooldowns by (10%/15%/20%)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "560a532c-73f4-4edd-b197-0127e2ca4cc9",
@@ -5950,7 +6096,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_ArmsDealer.png",
     "unifiedTooltips": [
       "When you buy a Weapon, gain (20/30/40/50) Max Health."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "e43da7b1-1190-469a-b6c6-43d8e3ca0ad6",
@@ -5999,7 +6146,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_StandardOrdinance.png",
     "unifiedTooltips": [
       "Your Medium Weapons deal (+6/+18/+36/+60) Damage."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "66d65bb7-09fa-4262-b0a1-12a29ac9e946",
@@ -6040,7 +6188,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_GlassCannon.png",
     "unifiedTooltips": [
       "Both players' weapons have double damage."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "05ea3ce6-0626-45c5-af36-a7711200d431",
@@ -6083,7 +6232,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_InitialChill.png",
     "unifiedTooltips": [
       "The first time you use a Large item each fight, Freeze an item for (3/4/5) second(s)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "9a8aedfe-6b97-4db9-8676-c774292637ee",
@@ -6123,7 +6273,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_DOO_TitaniumCasing.png",
     "unifiedTooltips": [
       "When you use The Core, your Shield items gain (15/30) Shield for the fight."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "18c6637b-14c7-4311-b853-e3fd74c613eb",
@@ -6172,7 +6323,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_RightHanded.png",
     "unifiedTooltips": [
       "Your rightmost Weapon has (+20/+30/+40/+50) Damage."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "e2b02661-62c8-42da-be35-3b15eebdb31d",
@@ -6211,7 +6363,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_MON_VolkasEnforcer_03.png",
     "unifiedTooltips": [
       "When you Freeze, your Shield items gain (3/5) Shield for the fight."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "c1ffec09-0567-47fe-b80e-4f55f62ee7fd",
@@ -6253,7 +6406,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_MON_AnythingToWin_03.png",
     "unifiedTooltips": [
       "When you use a non-weapon item, Burn (1/2/3) and Poison (1/2/3)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "7b6a982f-7196-4d3e-8674-825fddba80d2",
@@ -6290,7 +6444,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_MON_RoamingIsle_01",
     "unifiedTooltips": [
       "When you Heal, charge a Shield item 1 second."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "035a7356-9021-4ba9-8c87-6a88181660ea",
@@ -6328,7 +6483,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_MON_ThickSkin_03.png",
     "unifiedTooltips": [
       "Your Weapons have Lifesteal."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "b49dd22b-ef95-4f7e-954e-556e1e431d4a",
@@ -6375,7 +6531,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_KeenEye.png",
     "unifiedTooltips": [
       "Your items have (+4%/+8%/+12%/+16%) Crit chance."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "6a2b0ffc-bb7b-4ad3-a20c-8b46f9684a12",
@@ -6417,7 +6574,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_QuickIgnition.png",
     "unifiedTooltips": [
       "At the start of each fight, Haste (2/3) Burn items for 2 second(s)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "a2200487-1d56-4383-8671-781049f8f7de",
@@ -6464,7 +6622,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_HonedArcenal.png",
     "unifiedTooltips": [
       "Your items have (+1%/+3%/+5%) Crit Chance per Weapon you have. [0%]"
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "369a6704-2727-4cea-be27-01b76c82df45",
@@ -6505,7 +6664,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_MON_GlidedShell_03.png",
     "unifiedTooltips": [
       "The first time you fall below half health each fight, Shield equal to (30%/50%/80%) of your Max Health. [0]"
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "72010bea-fadf-4f64-9cba-d34bfd014388",
@@ -6543,7 +6703,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_MON_DraconicRage.png",
     "unifiedTooltips": [
       "When you use a Medium item, a Burn item gains (10/15) burn for the fight."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "57a19498-4525-4f15-9aa2-d0b21cf20d73",
@@ -6587,7 +6748,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_DOO_PartyLikeIts11111001111.png",
     "unifiedTooltips": [
       "When you upgrade a Friend, your other items gain (3/6/9) bonus Damage, (3/6/9) bonus Shield and (1/2/3) bonus Burn."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "08adc2fd-986c-4e8f-914e-fda9703ace3d",
@@ -6626,7 +6788,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_MON_AssaultFocus.png",
     "unifiedTooltips": [
       "When any non-weapon item is used, slow it for (2/4) second(s)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "b6c90dc6-f497-4fe4-90a1-759947180884",
@@ -6672,7 +6835,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_Fiery.png",
     "unifiedTooltips": [
       "Your Burn items have (+2/+4/+6/+8) Burn."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "254017cc-e3b9-486e-9276-850867ceba6b",
@@ -6716,7 +6880,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_StandardizedDefences.png",
     "unifiedTooltips": [
       "Your Medium Shield items have (+6/+18/+36/+60) shield."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "53aa52ea-b2b7-4b8a-8109-4f67fb4a3e29",
@@ -6757,7 +6922,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_MON_HulkingExperiment_01",
     "unifiedTooltips": [
       "You have (2/4/6) Regeneration for each item with Ammo you have. [0]"
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "cac848c8-dc77-4277-ba9f-df282b9f36ef",
@@ -6800,7 +6966,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_NaniteHealing.png",
     "unifiedTooltips": [
       "Your Small Heal items have (+3/+9/+18/+30) Heal."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "639fdb70-8dde-4301-ab75-426556a65eb6",
@@ -6838,7 +7005,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_MON_BananaBreak_01.png",
     "unifiedTooltips": [
       "When you use a large item, haste an item for (3/4) second(s)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "5de1aaae-adb9-48a4-81fc-aff714956656",
@@ -6876,7 +7044,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_MON_Pyromania_03.png",
     "unifiedTooltips": [
       "When you use a large item, Burn (10/15)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "d53d5ba0-b087-42a2-9523-2a44d9001e07",
@@ -6916,7 +7085,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_Tinkerer.png",
     "unifiedTooltips": [
       "Your items have +2% crit chance. When you start a fight, increase this bonus by (+2%/+4%/+6%)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "6a332b72-d300-486b-9659-1ca83e064ed2",
@@ -6960,7 +7130,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_StayingPower.png",
     "unifiedTooltips": [
       "When you use a Tool, Heal (5/10/15/20)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "9ff2cb3f-99dd-425b-b44f-14a1d0271f56",
@@ -7002,7 +7173,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_StopThat.png",
     "unifiedTooltips": [
       "The first time you fall below half health each fight, slow (2/4/4) items for (2/2/6) second(s)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "d08258b5-be49-410e-a650-4dfa01b35662",
@@ -7048,7 +7220,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_InvigoratingCold.png",
     "unifiedTooltips": [
       "The first time you Freeze each fight, Haste (1/2/3) items for 2 second(s)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "2c4b4d14-19db-4d75-9fb6-a377d9ca9882",
@@ -7089,7 +7262,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_MON_ChillingTouch.png",
     "unifiedTooltips": [
       "The first time you Freeze each fight, Slow all your opponent's items for (3/5/7) second(s)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "0cb66928-870b-4c6b-9325-2c53f774eab9",
@@ -7135,7 +7309,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_FinalFlame.png",
     "unifiedTooltips": [
       "Your rightmost Burn item has (+3/+6/+9/+12) Burn."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "56450d16-bc69-43fd-bb89-4aff071cda29",
@@ -7173,7 +7348,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_MON_Unrelenting.png",
     "unifiedTooltips": [
       "When you use an item, Shield (20/40)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "51cec489-1988-48ff-95af-0235b374803e",
@@ -7215,7 +7391,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_MON_Rigged.png",
     "unifiedTooltips": [
       "At the start of each fight, Haste (2/3/4/5) items for 3 second(s)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "9d910b0a-9ef3-447f-ab41-195effb68f21",
@@ -7258,7 +7435,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_HotSpot.png",
     "unifiedTooltips": [
       "When you use your leftmost item, Burn (2/3/4)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "81881146-f3ba-4092-9041-9f68cc30b732",
@@ -7296,7 +7474,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_Lethargy.png",
     "unifiedTooltips": [
       "All items have a cooldown increase of (30%/50%)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "b6936741-8ec9-42f1-a6ec-d76061141f7d",
@@ -7339,7 +7518,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_StandardizedCare.png",
     "unifiedTooltips": [
       "Your Medium Heal items have (+6/+18/+36/+60) Heal."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "6e95c90d-e4b4-42c3-b5e9-3c390d762c92",
@@ -7380,7 +7560,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_Conditioning.png",
     "unifiedTooltips": [
       "The first (4/8) times your enemy uses a non-weapon item each fight, Charge 1 Weapon 1 second(s)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "42ca6153-fe5b-44b4-a043-f14870659472",
@@ -7422,7 +7603,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_ChillZone.png",
     "unifiedTooltips": [
       "At the start of each fight, Haste (1/2/3) Aquatic items for 2 second(s)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "5780e3ce-316c-4871-bfb8-45261b686fc2",
@@ -7465,7 +7647,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_CaptainsCharge.png",
     "unifiedTooltips": [
       "The first time you use a Large item each fight, Haste (2/3/4) items for 3 second(s)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "4797e5ba-c3ac-4b32-a7ef-93c0a45d1c4f",
@@ -7507,7 +7690,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_MON_TheRightTool.png",
     "unifiedTooltips": [
       "Your non-tool items have (+5%/+10%/+15%) Crit Chance for each tool you have. [0]"
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "1e63e9bd-603a-4965-a6e8-4e180377c0ff",
@@ -7549,7 +7733,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_TemporalStrike.png",
     "unifiedTooltips": [
       "If you have exactly one weapon, the first (5/10) times you use it each fight, Slow 1 item for 3 second(s)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "40118425-c016-4400-826d-f6ea40b2fc39",
@@ -7592,7 +7777,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_FlashyMechanic.png",
     "unifiedTooltips": [
       "When you use a Tool, items adjacent to it gain (3%/6%/9%) Crit chance."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "b76a00ad-8034-4ad8-9f55-9fdc279cf60e",
@@ -7635,7 +7821,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_MON_TimetoTinker01.png",
     "unifiedTooltips": [
       "When you Haste, Shield (10/20/30/40)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "fb409226-bf38-4275-b775-7fab879a1d6f",
@@ -7673,7 +7860,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_MON_EmergencyReload.png",
     "unifiedTooltips": [
       "When you use a Tool, reload 1 to adjacent items."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "292f58c0-409b-4de7-a8d2-099a8629aa5e",
@@ -7717,7 +7905,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_Toughness.png",
     "unifiedTooltips": [
       "Your Shield items have (+10/+15/+20/+25) Shield."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "a2351de3-f077-4631-81fa-5b0f8c2cbb23",
@@ -7751,7 +7940,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_MON_IntotheVoid.png",
     "unifiedTooltips": [
       "At the start of each fight, destroy an item on each player's board for the fight."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "09c59ebf-d2f9-4862-9c30-396b9ddfdd89",
@@ -7785,7 +7975,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_MON_FieryRebirth_01.png",
     "unifiedTooltips": [
       "The first time you would die each fight, Heal to full."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "3c42764f-2a89-4fa2-b901-ca2ec127c411",
@@ -7822,7 +8013,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_MON_BananaBreak_02.png",
     "unifiedTooltips": [
       "Your Shield items have + Shield equal to the value of your Items. [0]"
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "dfe40f90-61de-46dc-b807-0da587140e9d",
@@ -7860,7 +8052,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_MON_Ambush.png",
     "unifiedTooltips": [
       "At the start of each fight, deal damage equal to (15%/30%) of the enemy's Max Health."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "f38a0fb0-b94a-4701-9330-d14a943ac5c4",
@@ -7907,7 +8100,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_RightEyeDominant.png",
     "unifiedTooltips": [
       "Your rightmost item has (+8%/+16%/+24%/+32%) Crit chance."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "61ffd0e3-a0fe-43d2-8112-85fc90580d71",
@@ -7949,7 +8143,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_PropertyMogul.png",
     "unifiedTooltips": [
       "When you buy a Property, gain (50/100/150) Max Health."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "3735516a-1517-40fe-b158-9ccee3758fef",
@@ -7995,7 +8190,8 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you use an item, your items gain (10%/15%) crit chance for the fight.",
       "Your items have 100% less crit chance."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "1e75f81b-f982-4642-b33d-497336784f9e",
@@ -8036,7 +8232,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_StunningHit.png",
     "unifiedTooltips": [
       "The first time you Crit each fight, Freeze an item for (3/4/5) second(s)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "d2f910bc-3490-456f-8ab0-aedda752bc5c",
@@ -8077,6 +8274,9 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_VAN_CrashingWaves",
     "unifiedTooltips": [
       "The first (5/10) times you use an Aquatic item each fight, Haste 1 weapon for 1 second(s)."
+    ],
+    "remarks": [
+      "This is bugged in the current patch and doesn't work."
     ]
   },
   {
@@ -8116,7 +8316,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_PYG_GenerousTip.png",
     "unifiedTooltips": [
       "When you gain gold, gain Max Health equal to (1x/2x) the amount of gold gained."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "f0955884-1ea7-4cac-ad73-c30798d3642c",
@@ -8161,7 +8362,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_SharpCorners.png",
     "unifiedTooltips": [
       "When you Shield, your weapons gain (3/6/9) damage for the fight."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "f6883b13-0dd2-475f-92e9-760102341bda",
@@ -8203,7 +8405,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_Conflagration.png",
     "unifiedTooltips": [
       "When you use an item with Burn, that item gains (1/2) Burn for the fight."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "f7ae1ab0-16dc-46af-9a77-b23b7f33104f",
@@ -8244,7 +8447,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_BackupDefenses.png",
     "unifiedTooltips": [
       "The first time you fall below half health each fight, Shield equal to (20%/30%) of your Max Health. [0%]"
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "158c1575-71c6-406c-82c9-f4435d9b37ca",
@@ -8282,7 +8486,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_ThickShield.png",
     "unifiedTooltips": [
       "The first time you fall below half health each fight, use your highest Shield item."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "8c36b532-0eb5-49f8-9128-a50b17ef3eed",
@@ -8324,7 +8529,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_FlankingToxins.png",
     "unifiedTooltips": [
       "The first time you use a Large item each fight, adjacent Poison items gain (4/6/8) Poison for the fight."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "7518cb66-252b-4b9c-9d4d-269aaad8daf3",
@@ -8366,7 +8572,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_FlankingFire.png",
     "unifiedTooltips": [
       "The first time you use a Large item each fight, Adjacent items gain (7/10/13) Burn for the fight."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "ec327a59-8fde-444f-b29b-73b22c248c4e",
@@ -8402,7 +8609,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_PYG_Renovation.png",
     "unifiedTooltips": [
       "When you level up, upgrade a Property."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "b9ac862b-7599-4d1c-96c7-99e4edaad05f",
@@ -8445,7 +8653,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_ReserveShield.png",
     "unifiedTooltips": [
       "The first time you use a Large item each fight, Shield equal to (10%/20%/30%) of your max health."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "6b47d5d7-cd43-4efb-9e3b-5ee3c07a7f7d",
@@ -8485,7 +8694,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_LongStride.png",
     "unifiedTooltips": [
       "If you have 4 or fewer items, your items have their cooldowns reduced by (4%/8%/12%)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "e5602f0a-0f7f-4832-97cc-59bc7b605804",
@@ -8526,7 +8736,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_DOO_FrozenSynapse.png",
     "unifiedTooltips": [
       "The first (5/10) times you Freeze each fight, Haste the Core for 2 second(s)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "315dc6e8-bc86-4ea5-9c6a-23848028456a",
@@ -8567,7 +8778,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_Gunner.png",
     "unifiedTooltips": [
       "Your items have (+1/+2/+3) Max Ammo."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "32e45628-c864-4f99-a2e8-94efe6f37cdc",
@@ -8608,7 +8820,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_StaticAcceleration.png",
     "unifiedTooltips": [
       "When you Haste, your items gain (+1%/+2%) crit chance for the fight."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "52f43602-8404-4a38-9d16-b1845489851c",
@@ -8650,7 +8863,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_MON_ToxicAlacrity.png",
     "unifiedTooltips": [
       "Your leftmost item with Ammo has (+1/+2/+3/+4) Max Ammo."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "20db8a31-f74d-40d2-a5a5-db28e3261bea",
@@ -8692,7 +8906,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_MON_DiamondFangs.png",
     "unifiedTooltips": [
       "Your Small Diamond-tier items have their cooldowns reduced by (30%/40%/50%/60%)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "62154f7f-ea50-4703-aa2e-d2d4ae55e9b0",
@@ -8735,7 +8950,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_BigNumbers.png",
     "unifiedTooltips": [
       "Your large items have (+25%/+50%) crit chance"
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "fb89bd6d-2677-435a-a73a-e0350cdab29e",
@@ -8779,7 +8995,8 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The Core has its cooldown reduced by (10%/15%).",
       "While you have Burn, double this effect."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "883043eb-5a5f-4fa2-9cae-185f51019b11",
@@ -8823,7 +9040,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_Microfiber.png",
     "unifiedTooltips": [
       "Your Small Shield items have (+3/+9/+18/+30) shield."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "ffceb0c7-7913-4339-8013-f1bcc67cca9c",
@@ -8863,7 +9081,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_MON_Pyromania_01.png",
     "unifiedTooltips": [
       "At the start of each fight, burn (17/25/35)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "2aabac27-fb64-44df-96f5-b1dac0b23b1c",
@@ -8905,7 +9124,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_HardenedShield.png",
     "unifiedTooltips": [
       "When your enemy uses a Weapon, your Shield items gain (5/10/15) Shield for the fight."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "65a77e2d-6c13-46c2-ae28-c521502a8be3",
@@ -8948,7 +9168,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_MedicalWard.png",
     "unifiedTooltips": [
       "Your Large Heal items have (+12/+36/+72/+120) Heal."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "d1e825ba-653c-4993-8002-50c3933c5827",
@@ -8988,7 +9209,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_DOO_MachineLearning.png",
     "unifiedTooltips": [
       "When you buy or upgrade this, upgrade the core."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "42c33f6c-a233-4ad1-8f04-b1cadac3a15f",
@@ -9028,7 +9250,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_ToxicInjector.png",
     "unifiedTooltips": [
       "At the start of each fight, Haste (2/3) Poison items for 2 second(s)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "9dacb0ad-a016-40ff-a54a-24d807c0988f",
@@ -9068,7 +9291,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_MON_DeathWish_02.png",
     "unifiedTooltips": [
       "Your leftmost and rightmost items have their cooldowns reduced by (5%/10%/15%)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "4e2e23aa-a3d1-46b0-9d59-c06fb64bea2f",
@@ -9111,7 +9335,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_FirstResponder.png",
     "unifiedTooltips": [
       "Your leftmost Heal item has (+20/+35/+50/+65) Heal."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "ff37ca26-2e4a-49bc-982d-49ff434e7295",
@@ -9148,7 +9373,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_FlashyReload.png",
     "unifiedTooltips": [
       "When you Crit with an item, reload another item +1 ammo."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "8a42ef6e-3a7e-41f4-a741-6a33839afe64",
@@ -9191,7 +9417,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_ReachingTheSummit.png",
     "unifiedTooltips": [
       "When you Freeze, your items gain (+2%/+4%) Crit Chance for the fight."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "c38468ba-2636-4818-a821-6fb7e73d7110",
@@ -9238,7 +9465,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_NoisyCricket.png",
     "unifiedTooltips": [
       "If you have at least 7 items in play, your Weapons deal (+20/+25/+30) damage."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "614a7ba0-6c7f-4686-88e2-42ecfe2d8735",
@@ -9281,7 +9509,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_HealingPower.png",
     "unifiedTooltips": [
       "Your Heal items have (+10/+20/+30/+40) Heal."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "1aa32e3b-fb93-4d4e-9630-f6168cd77cdc",
@@ -9325,7 +9554,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_FinalDose.png",
     "unifiedTooltips": [
       "Your rightmost Poison item has (+3/+6/+9/+12) Poison."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "1c4c5aaa-6aa2-4329-a55a-ac75e987ee95",
@@ -9365,7 +9595,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_MON_Lurk_02.png",
     "unifiedTooltips": [
       "Your items have (+2%/+3%) Crit Chance for each weapon you have. [0]"
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "5ff845f5-6cb5-40b8-957f-8a6ae47c3962",
@@ -9412,7 +9643,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_RedEnvelope.png",
     "unifiedTooltips": [
       "When you buy this, gain 10 gold."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "cdf1d8f2-851b-43a8-bc8b-6d3ce2d4bca9",
@@ -9452,7 +9684,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_PYG_TallBuildings.png",
     "unifiedTooltips": [
       "When you use a Property, haste items adjacent to it (1/2) second(s)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "ee178ba8-666d-426f-8499-1bd611a91802",
@@ -9494,7 +9727,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_MON_LivingFlame_01",
     "unifiedTooltips": [
       "The first time your enemy falls below half health, Burn (10/15/20/25)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "94b80fbf-4d21-4439-beb2-e1bdf56cea03",
@@ -9541,7 +9775,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_FlankingShots.png",
     "unifiedTooltips": [
       "The first time you use a Large item each fight, adjacent weapons gain (15/30/50) Damage for the fight."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "ab4d7a85-3eb2-43e8-aa11-f94581f5690f",
@@ -9582,7 +9817,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_LivingFlame.png",
     "unifiedTooltips": [
       "The first time you fall below half health each fight, your Burn items have their cooldowns reduced by 50% for the fight."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "e9218caf-28ed-4e9a-a24b-358d4852d88b",
@@ -9627,7 +9863,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_Frostfire.png",
     "unifiedTooltips": [
       "The first time you Burn each fight, Freeze an item for (3/4/5) second(s)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "280eb842-0600-4f2c-bbf9-01926b43f1dc",
@@ -9669,7 +9906,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_EmergencyBurn.png",
     "unifiedTooltips": [
       "The first time you fall below half health each fight, Burn (20/30/40)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "4b491993-ccc9-4021-a347-5492a51f7b30",
@@ -9712,7 +9950,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_SecondWind.png",
     "unifiedTooltips": [
       "The first time you use a Large item each fight, heal (20%/40%/60%) of your max health."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "dfeaa982-9ed6-4aee-840e-628fa8b508bd",
@@ -9752,7 +9991,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_QuickExposure.png",
     "unifiedTooltips": [
       "When you Poison, your enemy loses (5/10) Max Health for the fight."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "549263e2-4ab4-4fe8-a552-e94486b3e91b",
@@ -9793,7 +10033,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_HealingWeapon.png",
     "unifiedTooltips": [
       "The first (5/10) times you use a Weapon each fight, Charge 1 Heal item 1 second(s)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "fa2dfc79-67be-4307-95d9-b4279ab58900",
@@ -9837,7 +10078,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_BuddySystem.png",
     "unifiedTooltips": [
       "If you have exactly one friend, reduce its and the Core's cooldown by (5%/10%/15%)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "b3c4ed70-958a-42e5-b4d4-16b27c03ac54",
@@ -9880,7 +10122,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_KnifeTricks.png",
     "unifiedTooltips": [
       "When you use a weapon, reduce its cooldown by 5% for the fight."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "76ae19fd-2783-4c21-919a-cdce66bb8948",
@@ -9923,7 +10166,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_STE_WorkinHard.png",
     "unifiedTooltips": [
       "Your weapons have +7 Damage for each Tool you have. [0]"
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "f9170d20-9caa-41ca-82dd-9536f2f75dd6",
@@ -9966,7 +10210,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_MON_Neophiliac.png",
     "unifiedTooltips": [
       "The first time you freeze, burn, slow, poison, and haste each fight, charge an item (2/4) second(s)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "abba2590-426d-449f-8f19-4a3bd51ae4fe",
@@ -10006,7 +10251,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_PYG_Industrialist.png",
     "unifiedTooltips": [
       "Reduce the cooldown of your Properties by (10%/15%)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "756024f8-ad19-4f9b-a3c1-3a93c285b5d1",
@@ -10050,7 +10296,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_MON_PackLoyalty_04.png",
     "unifiedTooltips": [
       "When you use a Weapon, give it (+2%/+4%/+6%/+8%) crit Chance for the fight."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "e2bed270-5a6c-46ae-ab7e-a0d34f6da903",
@@ -10091,7 +10338,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_CommercialZoning.png",
     "unifiedTooltips": [
       "When you use a Property, deal damage equal to (1x/2x) your gold. [NaN]"
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "d52f6759-3ab5-46f4-87d1-bc719634c0d8",
@@ -10128,7 +10376,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_BulletTime.png",
     "unifiedTooltips": [
       "When you Freeze, reload an Weapon 1 ammo."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "c318939d-3ba2-41d8-ad5d-1b8267c0cf22",
@@ -10170,7 +10419,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_SKILL_MON_AugmentedDefenses.png",
     "unifiedTooltips": [
       "Your Shield items have +1 Shield. When you sell a small item, increase this bonus by (+1/+2/+3/+4) Shield."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "015bc348-773e-4009-87ff-231452431bba",
@@ -10219,7 +10469,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_HeavyWeaponry.png",
     "unifiedTooltips": [
       "Your Large Weapons deal (+12/+36/+72/+120) Damage."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "d5b180a2-9dfa-43e3-bfb9-3e15dac0398e",
@@ -10263,7 +10514,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_MON_MegaDrain_01.png",
     "unifiedTooltips": [
       "At the start of each fight, Haste a weapon (3/5/7/9) second(s)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "13bcf77b-0ad0-4dd3-85ed-927799691a72",
@@ -10304,7 +10556,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_Tempering.png",
     "unifiedTooltips": [
       "When you use a weapon, give it (+3/+6/+9) damage for the fight."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "3849770c-59df-4471-b0b0-f02713be8bb0",
@@ -10346,7 +10599,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_MON_HighImpact.png",
     "unifiedTooltips": [
       "Your item's cooldowns are reduced by (5%/10%) if you have a Vehicle, reduced by (5%/10%) if you have a Weapon, and reduced by (5%/10%) if you have a Tool."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "b7938579-8bc3-4bbf-b002-ffa1870acd50",
@@ -10387,7 +10641,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_MON_Drain_01",
     "unifiedTooltips": [
       "When you Slow, Haste a Weapon (1/2) second(s)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "fd3f0e7b-27ac-4bde-87f8-5ec61b19c4f7",
@@ -10429,7 +10684,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_Sabotage.png",
     "unifiedTooltips": [
       "The first (5/10) times you use a Tool each fight, Slow 1 item for 1 second(s)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "ed7379d4-38ee-48b0-9ef0-61ed3c57ec22",
@@ -10472,7 +10728,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_SKILL_MON_ExtremeComfort.png",
     "unifiedTooltips": [
       "When you heal, your Shield items gain (1/2/3/4) shield for the fight."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "11a262fe-e1e7-4656-a07c-f6a3a1249352",
@@ -10518,7 +10775,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_SecondDegreeBurns.png",
     "unifiedTooltips": [
       "Your Medium Burn items have (+2/+4/+6/+8) Burn."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "9b8912ec-1219-4cdf-acd5-cf9b73438280",
@@ -10561,7 +10819,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_NetLauncher.png",
     "unifiedTooltips": [
       "The first time you use a Large item each fight, Slow (2/3/4) item(s) for 3 second(s)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "64727f7e-adfd-4f25-aa4e-1f127b9d5b70",
@@ -10600,7 +10859,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_MON_AllTalk_02.png",
     "unifiedTooltips": [
       "While you have more than half Health, your weapons have (+25/+50) damage."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "c7261fd4-ef40-4091-abb2-dcf5694ae2ac",
@@ -10641,7 +10901,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_Endurance.png",
     "unifiedTooltips": [
       "When you use a weapon, give your Healing items (+10/+20/+30) Healing for the fight."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "61c83a38-2976-45d1-95c7-cafe4f34ed51",
@@ -10685,7 +10946,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_SlowandSteady.png",
     "unifiedTooltips": [
       "When you Slow, your weapons gain (3/6) damage for the fight."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "76ac0aa6-ef43-4a5b-9a30-f0ab4186dc83",
@@ -10727,7 +10989,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_HealthyLifestyle.png",
     "unifiedTooltips": [
       "You have (1/2/3) Regeneration for each non-weapon item you have. [0]"
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "35cd34d4-80f5-48bd-95ed-5bb7fde3d21c",
@@ -10768,7 +11031,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_FlankingAid.png",
     "unifiedTooltips": [
       "The first time you use a Large item each fight, Adjacent items gain (15/20/25) Healing for the fight."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "04168bfd-eac1-40ff-ad34-bc10cb92e636",
@@ -10812,7 +11076,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_InitialDose.png",
     "unifiedTooltips": [
       "Your leftmost Poison item has (+3/+6/+9/+12) Poison."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "bead31da-27fe-4056-ab77-1adbb37bb973",
@@ -10854,7 +11119,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_PYG_GrandOpening.png",
     "unifiedTooltips": [
       "You have (+1/+2/+3) income for each Property you have (including Stash)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "13d1b66a-1d45-4e8e-9921-8312253fc48e",
@@ -10894,7 +11160,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_VAN_BarnacleCrusted",
     "unifiedTooltips": [
       "Reduce the cooldown of your aquatic items by (10%/20%)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "2a2ef40a-38d6-4441-ad43-76fc01f31eb4",
@@ -10936,7 +11203,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_PrecisionDiver.png",
     "unifiedTooltips": [
       "Your Aquatic items have (+8%/+10%/+12%) Crit chance."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "4a443bdd-f949-4fb5-9ccd-a710f74d2311",
@@ -10972,7 +11240,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_MON_BarrelOfThieves_01.png",
     "unifiedTooltips": [
       "Your items have +0 damage for each ammo you have on your items in play. [0]"
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "063df89c-4fe9-4e89-a0c4-a0af4dedc9bb",
@@ -11012,7 +11281,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_RapidRelief.png",
     "unifiedTooltips": [
       "While your enemy has more health than you, your Heal items have their cooldowns reduced by (5%/10%)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "b8f04ea6-ecdd-46a0-9ae6-397a090d294b",
@@ -11050,7 +11320,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_RapidInfection.png",
     "unifiedTooltips": [
       "When you Poison, enemy Weapons lose (2/4) damage."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "d09d1ff8-a49b-485b-b1e3-ea50c4af5781",
@@ -11096,7 +11367,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_FireStarter.png",
     "unifiedTooltips": [
       "Your leftmost Burn item has (+3/+6/+9/+12) Burn."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "7a301c09-3e32-473a-ba6c-89097657a400",
@@ -11141,7 +11413,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_FlankingCriticals.png",
     "unifiedTooltips": [
       "The first time you use a Large item each fight, Adjacent items gain (15%/20%/25%) Crit Chance for the fight."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "8e4fed70-3ad9-488d-8c77-f926c1621544",
@@ -11178,7 +11451,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_ReelEmIn.png",
     "unifiedTooltips": [
       "The first time your enemy falls below half health each fight, your items have their cooldowns reduced by 50% for the fight."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "b7c2ce67-0da5-4360-9eda-b328817affe6",
@@ -11222,7 +11496,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_HeavyShielding.png",
     "unifiedTooltips": [
       "Your Large Shield items have (+12/+36/+72/+120) shield."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "4bcc9eeb-5fa9-4b1f-85b1-d3dfd198d38f",
@@ -11266,7 +11541,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_SKILL_MON_AugmentedWeaponry.png",
     "unifiedTooltips": [
       "Your weapons have +1 Damage. When you sell a small item, increase this bonus by (+1/+2/+3/+4) Damage."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "202e4917-e744-41bf-965a-81edcded9d5f",
@@ -11309,7 +11585,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_ExoticHerbs.png",
     "unifiedTooltips": [
       "Your Poison items have (+2/+4/+6) Poison for each Weapon you have. [0]"
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "ae41f574-fc9f-492a-8ae0-45853ab607a6",
@@ -11351,7 +11628,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_CriticalInvestments.png",
     "unifiedTooltips": [
       "Your Properties have (+10%/+15%/+20%) Crit chance."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "3b4c3700-6c77-4954-a3e1-dfeaeab08c4a",
@@ -11393,7 +11671,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_HardlyWorkin.png",
     "unifiedTooltips": [
       "When you Slow, gain (2/4) Regeneration for the fight."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "08db2099-a4a9-4d95-afad-e86d4abbf829",
@@ -11436,7 +11715,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_ExposingToxins.png",
     "unifiedTooltips": [
       "When you Poison, your items gain (+1%/+2%/+3%) Crit Chance for the fight."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "dec273b3-155e-4fbd-9629-5dbd2900e032",
@@ -11477,7 +11757,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_CoolantLeak.png",
     "unifiedTooltips": [
       "The first (4/8) times you use your rightmost item each fight, Freeze 1 item for 1 second(s)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "2efc2530-badd-4460-9b03-9d34a10a85de",
@@ -11522,7 +11803,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_FireAccelerant.png",
     "unifiedTooltips": [
       "When your items gain Freeze, Burn (8/12/16)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "42a245de-4281-40d1-ad98-7a79b471aefe",
@@ -11564,7 +11846,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_Berserker.png",
     "unifiedTooltips": [
       "While your enemy has more health than you, your Weapons have their cooldowns reduced by (5%/10%/20%)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "daec4b27-bd32-434e-85ef-4bd4629e7d11",
@@ -11607,7 +11890,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_BoldUnderPressure.png",
     "unifiedTooltips": [
       "The first time you fall below half health each fight, Haste (2/4/6) items 2 second(s)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "5fca38e0-2144-422d-b9bd-85a3cd443215",
@@ -11622,14 +11906,12 @@ const data: ParsedSkillCard[] = [
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 10 seconds",
           "Your Shield Vehicles gain 30% Shield.",
           "Your Weapon Vehicles gain 30% Damage."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 10 seconds",
           "Your Shield Vehicles gain 60% Shield.",
           "Your Weapon Vehicles gain 60% Damage."
         ]
@@ -11648,10 +11930,10 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_Flagship.png",
     "unifiedTooltips": [
-      "Cooldown 10 seconds",
       "Your Shield Vehicles gain (30%/60%) Shield.",
       "Your Weapon Vehicles gain (30%/60%) Damage."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "fd927bfc-ff5a-4d9c-87ce-b9510a22e444",
@@ -11696,7 +11978,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_ImprovisedProtection.png",
     "unifiedTooltips": [
       "When you Crit, your Shield items gain (5/10/15) Shield for the fight."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "03968f2d-5f40-464a-bf1f-9475836157cd",
@@ -11736,7 +12019,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_MON_ALittleOfEverything_01.png",
     "unifiedTooltips": [
       "When you use an item with Ammo, reload (1/2/3) the item to the left of it."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "8e2f3e1c-bd00-4b58-b746-a6ae18f804c3",
@@ -11772,7 +12056,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_MON_Lurk_01.png",
     "unifiedTooltips": [
       "If you have only one medium item, its cooldown is reduced by 30%."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "e7488436-6835-4e5e-971c-ba0a60f58529",
@@ -11811,7 +12096,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_SlowMotion.png",
     "unifiedTooltips": [
       "The first (4/8) times you use an Ammo item each fight, Slow 1 item for 1 second(s)."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "f422485c-b23a-4c3f-9ad4-9d22718dc204",
@@ -11856,7 +12142,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_ArtillerySpotter.png",
     "unifiedTooltips": [
       "If you have 4 or fewer items, your items have (+5%/+10%/+20%) Crit Chance."
-    ]
+    ],
+    "remarks": []
   },
   {
     "id": "e8770458-220a-45bd-bfef-d6045b152d29",
@@ -11890,7 +12177,8 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_MON_TurnOutYourPockets_03.png",
     "unifiedTooltips": [
       "Enemy cooldowns are increased by 1 second(s)."
-    ]
+    ],
+    "remarks": []
   }
 ];
 
