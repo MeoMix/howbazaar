@@ -669,6 +669,11 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
             remarks.push("Restorative Enchantment is implemented weird. Crit Chance scales with item tier, so 20% at Bronze or 50% at Diamond. This is the only enchant in the game which scales with tier. Expect this to change.")
         }
 
+        if (name === "Shipwreck") {
+            remarks.push("Radiant Enchantment is bugged and doesn't work in the current patch. Do not enchant your item with Radiant.");
+        }
+
+
         return {
             id: card.Id,
             name,
