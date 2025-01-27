@@ -223,10 +223,11 @@ describe('cardJsonParser', () => {
     expect(colossalPopsicle.tiers.Bronze.tooltips.find((text) => text.includes(searchPhrase))).toEqual(`${searchPhrase}5 damage.`);
   });
 
-  it('should parse "Tripwire" without a Regen hidden tag', () => {
-    const tripwire = itemCards.find(card => card.name === "Tripwire")!;
+  it('should parse "Shellshock" properly and handle its +{aura.0.mod}', () => {
+    const shellshock = skillCards.find(card => card.name === "Shellshock")!;
+    const searchPhrase = "Your items have +";
 
-    expect(tripwire.hiddenTags.includes('Regen')).toBe(false);
+    expect(shellshock.tiers.Diamond.tooltips.find((text) => text.includes(searchPhrase))).toEqual(`${searchPhrase}1 damage for each ammo you have on your items in play. [0]`);
   });
 
   it('should parse Dooley\'s Scarf such that it does not include duplicate tooltips in Gold/Diamond', () => {

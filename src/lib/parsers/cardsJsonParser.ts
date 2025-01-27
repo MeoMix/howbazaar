@@ -59,8 +59,12 @@ function getAttributeInfo(
             (action.Value?.$type === "TReferenceValueCardAttribute" || action.Value?.$type === "TReferenceValueCardAttributeAggregate") &&
             action.Value?.Target?.$type !== "TTargetCardSelf"
         ) {
-            // Some values require context based on game state beyond the current card which isn't known to this website.
-            attributeValue = 0;
+            if (qualifier.isMod) {
+                attributeValue = action.Value.Modifier?.Value.Value ?? 0;
+            } else {
+                // Some values require context based on game state beyond the current card which isn't known to this website.
+                attributeValue = 0;
+            }
         } else if (action.Value?.Modifier) {
             // If there's a modifier, and if modifier mode is multiply, then get the attribute type and multiply it by modifier rather than just using modifier.
             attributeValue = action.Value.Modifier.Value.Value ?? action.Value.Modifier.Value.DefaultValue!;
@@ -676,7 +680,6 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
         if (name === "Bootstraps" || name === "Hammer" || name === "Wrench" || name === "Schematics") {
             remarks.push("This item is currently disabled and not available in game.");
         }
-
 
         return {
             id: card.Id,

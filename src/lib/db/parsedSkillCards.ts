@@ -11263,7 +11263,7 @@ const data: ParsedSkillCard[] = [
       },
       "Diamond": {
         "tooltips": [
-          "Your items have +0 damage for each ammo you have on your items in play. [0]"
+          "Your items have +1 damage for each ammo you have on your items in play. [0]"
         ]
       },
       "Legendary": {
@@ -11280,7 +11280,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_MON_BarrelOfThieves_01.png",
     "unifiedTooltips": [
-      "Your items have +0 damage for each ammo you have on your items in play. [0]"
+      "Your items have +1 damage for each ammo you have on your items in play. [0]"
     ],
     "remarks": []
   },
