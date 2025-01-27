@@ -1648,6 +1648,47 @@ const data: ParsedSkillCard[] = [
     "remarks": []
   },
   {
+    "id": "37efcae2-779d-4a60-95c6-0d663d7e0113",
+    "name": "Double Down",
+    "startingTier": "Diamond",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": []
+      },
+      "Diamond": {
+        "tooltips": [
+          "The first time you fall below half health each fight, double the damage of your leftmost Weapon for the fight."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Weapon"
+    ],
+    "hiddenTags": [
+      "DamageReference"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Vanessa",
+      "Dooley",
+      "Pygmalien"
+    ],
+    "artKey": "Icon_Skill_DoubleDown.png",
+    "unifiedTooltips": [
+      "The first time you fall below half health each fight, double the damage of your leftmost Weapon for the fight."
+    ],
+    "remarks": []
+  },
+  {
     "id": "b57df6d6-fc6c-4401-ad41-77f83388eabe",
     "name": "Distributed Systems",
     "startingTier": "Gold",

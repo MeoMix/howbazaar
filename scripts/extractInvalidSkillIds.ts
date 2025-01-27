@@ -27,6 +27,8 @@ const allowedList = [
   'a80d8cc7-3472-45cb-ac33-11fe7e583e42',
   // Toxic Weapons
   '202e4917-e744-41bf-965a-81edcded9d5f',
+  // Double Down
+  '37efcae2-779d-4a60-95c6-0d663d7e0113'
 ];
 
 const disallowedList = [
