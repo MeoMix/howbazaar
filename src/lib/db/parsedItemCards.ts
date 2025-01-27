@@ -9552,7 +9552,9 @@ const data: ParsedItemCard[] = [
       "Your tools and vehicles have (25%/50%) Crit Chance.",
       "When you use a Tool, Charge a Vehicle (1/2) second(s)."
     ],
-    "remarks": []
+    "remarks": [
+      "This item is currently disabled and not available in game."
+    ]
   },
   {
     "id": "8a0aad5c-caff-4963-b8e9-861bc5ace1ce",
@@ -20996,130 +20998,6 @@ const data: ParsedItemCard[] = [
     "remarks": []
   },
   {
-    "id": "bfa28eec-84de-41cb-bc5c-8de700a5d21f",
-    "name": "Focused Core",
-    "startingTier": "Bronze",
-    "tiers": {
-      "Bronze": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Charge the item to the right of this 1 second(s).",
-          "Haste the item to the right of this 1 second(s).",
-          "When you use any item to the left of this, Charge this 1 second(s)."
-        ]
-      },
-      "Silver": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Charge the item to the right of this 2 second(s).",
-          "Haste the item to the right of this 2 second(s).",
-          "When you use any item to the left of this, Charge this 2 second(s)."
-        ]
-      },
-      "Gold": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Charge the item to the right of this 3 second(s).",
-          "Haste the item to the right of this 3 second(s).",
-          "When you use any item to the left of this, Charge this 3 second(s)."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Charge the item to the right of this 4 second(s).",
-          "Haste the item to the right of this 4 second(s).",
-          "When you use any item to the left of this, Charge this 4 second(s)."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [
-      "Core",
-      "Tech",
-      "Unsellable"
-    ],
-    "hiddenTags": [
-      "Haste",
-      "Charge"
-    ],
-    "size": "Medium",
-    "heroes": [
-      "Dooley"
-    ],
-    "enchantments": [
-      {
-        "type": "Heavy",
-        "tooltips": [
-          "Slow 2 items for 3 second(s)."
-        ]
-      },
-      {
-        "type": "Icy",
-        "tooltips": [
-          "Freeze 1 item for 3 second(s)."
-        ]
-      },
-      {
-        "type": "Turbo",
-        "tooltips": [
-          "This has double Haste duration."
-        ]
-      },
-      {
-        "type": "Shielded",
-        "tooltips": [
-          "Shield 80."
-        ]
-      },
-      {
-        "type": "Restorative",
-        "tooltips": [
-          "Heal 120."
-        ]
-      },
-      {
-        "type": "Toxic",
-        "tooltips": [
-          "Poison 8."
-        ]
-      },
-      {
-        "type": "Fiery",
-        "tooltips": [
-          "Burn 12."
-        ]
-      },
-      {
-        "type": "Shiny",
-        "tooltips": [
-          "This has +1 Multicast."
-        ]
-      },
-      {
-        "type": "Deadly",
-        "tooltips": [
-          "Your items to the right gain +10% Crit Chance for the fight."
-        ]
-      },
-      {
-        "type": "Obsidian",
-        "tooltips": [
-          "This has Lifesteal."
-        ]
-      }
-    ],
-    "unifiedTooltips": [
-      "Cooldown 6 seconds",
-      "Charge the item to the right of this (1/2/3/4) second(s).",
-      "Haste the item to the right of this (1/2/3/4) second(s).",
-      "When you use any item to the left of this, Charge this (1/2/3/4) second(s)."
-    ],
-    "remarks": []
-  },
-  {
     "id": "a0c3a02b-4d29-4159-805e-3501463d1ca1",
     "name": "Caltrops",
     "startingTier": "Gold",
@@ -26913,7 +26791,9 @@ const data: ParsedItemCard[] = [
       "Deal (20/40/80) damage.",
       "When you Level Up, if you have at least 3 tools, upgrade an item of a lower tier."
     ],
-    "remarks": []
+    "remarks": [
+      "This item is currently disabled and not available in game."
+    ]
   },
   {
     "id": "1afb5eef-e964-4767-b9a6-8d1a76cef645",
@@ -42075,7 +41955,9 @@ const data: ParsedItemCard[] = [
       "Deal (10/20) damage.",
       "At the start of each day, upgrade a Tool of a lower tier."
     ],
-    "remarks": []
+    "remarks": [
+      "This item is currently disabled and not available in game."
+    ]
   },
   {
     "id": "fd95b873-24a4-4af6-8b08-296f24a3576c",
@@ -46685,7 +46567,9 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "Every 50 you spend, upgrade an item of a lower tier. [Gold Spent: 0]"
     ],
-    "remarks": []
+    "remarks": [
+      "This item is currently disabled and not available in game."
+    ]
   },
   {
     "id": "b0f10d7f-d1df-4fb5-a88f-01b8cffd7fe4",
