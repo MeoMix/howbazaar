@@ -725,6 +725,7 @@ function parseSkillCards(cardsJson: CardsJson): ParsedSkillCard[] {
         const abilities = Object.values(card.Abilities);
         const auras = Object.values(card.Auras);
         const tierMap = getTierMap(card);
+        const remarks = [] as string[];
 
         let tiers = Object.fromEntries((Object.entries(tierMap) as Entries<typeof tierMap>).map(
             ([tierName, tier]) => {
@@ -766,6 +767,18 @@ function parseSkillCards(cardsJson: CardsJson): ParsedSkillCard[] {
 
         const unifiedTooltips = unifyTooltips(Object.entries(tiers).map(([, tier]) => tier.tooltips));
 
+        if (name === "Crashing Waves") {
+            remarks.push("This is bugged in the current patch and doesn't work.")
+        }
+
+        if (name === "Bloodhound") {
+            remarks.push("This is bugged in the current patch and doesn't work.")
+        }
+
+        if (name === "Poison Tyrant") {
+            remarks.push("This is partially bugged in the current patch and only triggers when you poison not when enemy poisons.")
+        }
+
         return {
             id: card.Id,
             name,
@@ -776,7 +789,8 @@ function parseSkillCards(cardsJson: CardsJson): ParsedSkillCard[] {
             size: card.Size,
             heroes: card.Heroes,
             artKey: card.ArtKey,
-            unifiedTooltips
+            unifiedTooltips,
+            remarks
         };
     });
 
