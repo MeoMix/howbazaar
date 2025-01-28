@@ -2759,6 +2759,49 @@ const data: ParsedSkillCard[] = [
     "remarks": []
   },
   {
+    "id": "e41f6a66-9257-45c3-b249-9f9ef0f93f3e",
+    "name": "Venomous Blade",
+    "startingTier": "Gold",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": [
+          "The first 4 times you use a Weapon each fight, Charge 1 Poison item 1 second(s)."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "The first 8 times you use a Weapon each fight, Charge 1 Poison item 1 second(s)."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Weapon"
+    ],
+    "hiddenTags": [
+      "Charge",
+      "PoisonReference"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Vanessa",
+      "Mak"
+    ],
+    "artKey": "Icon_Skill_VenomousBlade.png",
+    "unifiedTooltips": [
+      "The first (4/8) times you use a Weapon each fight, Charge 1 Poison item 1 second(s)."
+    ],
+    "remarks": []
+  },
+  {
     "id": "d179345d-953d-4c59-a324-5c2504951644",
     "name": "Emergency Draught",
     "startingTier": "Silver",
