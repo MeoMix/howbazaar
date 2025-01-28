@@ -27,7 +27,21 @@ export const GET: RequestHandler = ({ url, request }) => {
         return new Response(null, { status: 304 });
     }
 
-    const response: MonsterEncounterDaysApiResponse = { data: monsterEncounterDays.sort((a, b) => a.day - b.day), version: serverVersion };
+    const response: MonsterEncounterDaysApiResponse = {
+        data: monsterEncounterDays.sort((a, b) => {
+            if (a.day === "event" && b.day === "event") {
+                return 0; // Both are "event", so they are equal
+            }
+            if (a.day === "event") {
+                return 1; // "event" should come after any number
+            }
+            if (b.day === "event") {
+                return -1; // "event" should come after any number
+            }
+            return a.day - b.day; // Both are numbers, so sort numerically
+        }),
+        version: serverVersion,
+    };
 
     return json(response,
         {

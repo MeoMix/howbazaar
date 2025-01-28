@@ -106,6 +106,7 @@ export function getMonsterEncounterDays(
                         health: monster.health,
                         items,
                         skills,
+                        day: dayHour.day
                     };
                 }).filter(result => result !== null);
 

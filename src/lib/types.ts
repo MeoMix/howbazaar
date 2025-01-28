@@ -59,6 +59,7 @@ export type ParsedSkillCard = {
     heroes: Hero[];
     artKey: string;
     unifiedTooltips: string[];
+    remarks: string[];
 };
 
 export type ClientSideSkillCard = {
@@ -72,6 +73,7 @@ export type ClientSideSkillCard = {
     heroes: Hero[];
     unifiedTooltips: string[];
     combatEncounters: ClientSideCombatEncounterSummary[];
+    remarks: string[];
 };
 
 export type ClientSideCombatEncounterSummary = {
@@ -130,6 +132,7 @@ export type ClientSideMonsterEncounter = {
     health: number;
     items: ClientSideMonsterEncounterItem[];
     skills: ClientSideMonsterEncounterSkill[];
+    day: ClientSideMonsterEncounterDay['day'];
 };
 
 export type ClientSideMonsterEncounterDay = {

@@ -19,6 +19,12 @@
         <span class={`text-xl text-green-700 whitespace-nowrap`}>
             {monsterEncounter.health} health
         </span>
+
+        ·
+
+        <span class={`text-xl whitespace-nowrap`}>
+            Day {monsterEncounter.day}
+        </span>
     </div>
 
     <div
