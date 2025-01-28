@@ -1970,30 +1970,6 @@
           "InstanceId": null,
           "Tier": "Silver",
           "Attributes": {}
-        },
-        {
-          "$type": "TCardInstanceSkill",
-          "TemplateId": "18c6637b-14c7-4311-b853-e3fd74c613eb",
-          "TemplateVersion": "1.0.0",
-          "InstanceId": null,
-          "Tier": "Silver",
-          "Attributes": {}
-        },
-        {
-          "$type": "TCardInstanceSkill",
-          "TemplateId": "25c63d19-8254-47f8-acc9-519ee5a69e1f",
-          "TemplateVersion": "1.0.0",
-          "InstanceId": null,
-          "Tier": "Silver",
-          "Attributes": {}
-        },
-        {
-          "$type": "TCardInstanceSkill",
-          "TemplateId": "c4c70f57-c51e-4bc4-848c-0f0e7fbddd28",
-          "TemplateVersion": "1.0.0",
-          "InstanceId": null,
-          "Tier": "Silver",
-          "Attributes": {}
         }
       ],
       "Stash": {
