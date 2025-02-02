@@ -39510,7 +39510,7 @@ const data: ParsedItemCard[] = [
       "Your Aquatic items have +1 Multicast."
     ],
     "remarks": [
-      "Radiant Enchantment is bugged and doesn't work in the current patch. Do not enchant your item with Radiant."
+      "Radiant Enchantment is bugged and doesn't work in the current patch. Do not enchant Shipwreck with Radiant."
     ]
   },
   {
@@ -45492,7 +45492,9 @@ const data: ParsedItemCard[] = [
       "Weapon Properties adjacent to this have + Damage equal to (1x/2x) the value of your highest value item. [0]",
       "Shield Properties adjacent to this have + Shield equal to (1x/2x) the value of your highest value item. [0]"
     ],
-    "remarks": []
+    "remarks": [
+      "Deadly Enchantment is bugged and doesn't work in the current patch. Do not enchant Open Sign with Deadly."
+    ]
   },
   {
     "id": "a5fda359-ceb0-4b00-bcac-810c9cecef8e",
