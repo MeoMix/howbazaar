@@ -11716,6 +11716,48 @@ const data: ParsedSkillCard[] = [
     "remarks": []
   },
   {
+    "id": "cd6ac6ef-dafb-4001-a338-52e791bec4c3",
+    "name": "Slow Burn",
+    "startingTier": "Gold",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": [
+          "The first 5 times you Slow each fight, Charge 1 Burn item 1 second(s)."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "The first 10 times you Slow each fight, Charge 1 Burn item 1 second(s)."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "Charge",
+      "BurnReference",
+      "SlowReference"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Vanessa",
+      "Mak"
+    ],
+    "artKey": "Icon_Skill_SlowBurn.png",
+    "unifiedTooltips": [
+      "The first (5/10) times you Slow each fight, Charge 1 Burn item 1 second(s)."
+    ],
+    "remarks": []
+  },
+  {
     "id": "ae41f574-fc9f-492a-8ae0-45853ab607a6",
     "name": "Critical Investments",
     "startingTier": "Silver",

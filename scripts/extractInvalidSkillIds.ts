@@ -32,7 +32,9 @@ const allowedList = [
   // Venomous Blade
   'e41f6a66-9257-45c3-b249-9f9ef0f93f3e',
   // Toxic Shield
-  'a9b441e1-5824-4855-9359-2ab4643d9ff5'
+  'a9b441e1-5824-4855-9359-2ab4643d9ff5',
+  // Slow Burn
+  'cd6ac6ef-dafb-4001-a338-52e791bec4c3'
 ];
 
 const disallowedList = [
