@@ -674,11 +674,15 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
         }
 
         if (name === "Shipwreck") {
-            remarks.push("Radiant Enchantment is bugged and doesn't work in the current patch. Do not enchant your item with Radiant.");
+            remarks.push("Radiant Enchantment is bugged and doesn't work in the current patch. Do not enchant Shipwreck with Radiant.");
         }
 
         if (name === "Bootstraps" || name === "Hammer" || name === "Wrench") {
             remarks.push("This item is currently disabled and not available in game.");
+        }
+
+        if (name === "Open Sign") {
+            remarks.push("Deadly Enchantment is bugged and doesn't work in the current patch. Do not enchant Open Sign with Deadly.");
         }
 
         return {
