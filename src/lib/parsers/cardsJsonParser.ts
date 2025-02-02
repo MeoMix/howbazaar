@@ -677,7 +677,7 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
             remarks.push("Radiant Enchantment is bugged and doesn't work in the current patch. Do not enchant your item with Radiant.");
         }
 
-        if (name === "Bootstraps" || name === "Hammer" || name === "Wrench" || name === "Schematics") {
+        if (name === "Bootstraps" || name === "Hammer" || name === "Wrench") {
             remarks.push("This item is currently disabled and not available in game.");
         }
 
