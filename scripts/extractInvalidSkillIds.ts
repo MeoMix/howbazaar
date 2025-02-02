@@ -30,7 +30,9 @@ const allowedList = [
   // Double Down
   '37efcae2-779d-4a60-95c6-0d663d7e0113',
   // Venomous Blade
-  'e41f6a66-9257-45c3-b249-9f9ef0f93f3e'
+  'e41f6a66-9257-45c3-b249-9f9ef0f93f3e',
+  // Toxic Shield
+  'a9b441e1-5824-4855-9359-2ab4643d9ff5'
 ];
 
 const disallowedList = [

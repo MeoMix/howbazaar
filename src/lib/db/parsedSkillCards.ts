@@ -6138,6 +6138,49 @@ const data: ParsedSkillCard[] = [
     "remarks": []
   },
   {
+    "id": "a9b441e1-5824-4855-9359-2ab4643d9ff5",
+    "name": "Toxic Shield",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "The first time you fall below half health each fight, Shield equal to 2 times the Poison on your opponent. [0]"
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "The first time you fall below half health each fight, Shield equal to 3 times the Poison on your opponent. [0]"
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "The first time you fall below half health each fight, Shield equal to 4 times the Poison on your opponent. [0]"
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "PoisonReference",
+      "Shield"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Mak",
+      "Dooley"
+    ],
+    "artKey": "Icon_Skill_ToxicShield.png",
+    "unifiedTooltips": [
+      "The first time you fall below half health each fight, Shield equal to (2/3/4) times the Poison on your opponent. [0]"
+    ],
+    "remarks": []
+  },
+  {
     "id": "560a532c-73f4-4edd-b197-0127e2ca4cc9",
     "name": "Arms Dealer",
     "startingTier": "Bronze",

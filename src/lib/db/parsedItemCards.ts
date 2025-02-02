@@ -9552,9 +9552,7 @@ const data: ParsedItemCard[] = [
       "Your tools and vehicles have (25%/50%) Crit Chance.",
       "When you use a Tool, Charge a Vehicle (1/2) second(s)."
     ],
-    "remarks": [
-      "This item is currently disabled and not available in game."
-    ]
+    "remarks": []
   },
   {
     "id": "8a0aad5c-caff-4963-b8e9-861bc5ace1ce",
