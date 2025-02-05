@@ -302,7 +302,7 @@ describe('cardJsonParser', () => {
       const restorativeEnchantment = forceField.enchantments.find(enchantment => enchantment.type === 'Restorative')!;
 
       expect(restorativeEnchantment.tooltips.length).toEqual(1);
-      expect(restorativeEnchantment.tooltips[0]).toEqual('Heal equal to your shield.');
+      expect(restorativeEnchantment.tooltips[0]).toEqual('Heal equal to your Shield.');
     });
 
     it('should parse "Shielded Bunker" correctly by properly calculating its {ability.e1} value as non-zero', () => {
@@ -321,12 +321,39 @@ describe('cardJsonParser', () => {
       expect(restorativeEnchantment.tooltips[1]).toEqual('Your other Heal items have +20% Crit Chance.');
     });
 
+    it('should parse "Restorative Beach Ball" correctly by properly parsing {aura.e2.mod}', () => {
+      const beachBall = itemCards.find(card => card.name === "Beach Ball")!;
+      const restorativeBeachBall = beachBall.enchantments.find(enchantment => enchantment.type === 'Restorative')!;
+
+      expect(restorativeBeachBall.tooltips.length).toEqual(1);
+      expect(restorativeBeachBall.tooltips[0]).toEqual('Heal 15 for each Aquatic or Toy item you have.');
+    });
+
     it('should contain no enchantment tooltips with {, except for Induction Aegis with enchantmentType Heavy', () => {
       const invalidCards = [];
 
       for (const card of itemCards) {
         const invalidTooltips = card.enchantments
           .flatMap(enchantment => enchantment.tooltips.filter(tooltip => tooltip.includes('{')));
+
+        if (invalidTooltips.length > 0) {
+          invalidCards.push({
+            name: card.name,
+            tooltips: invalidTooltips,
+          });
+        }
+      }
+
+      // If no invalid tooltips are found, make the assertion to confirm
+      expect(invalidCards).toEqual([]);
+    });
+
+    it('should contain no enchantment tooltips with the debug keyword MISSING', () => {
+      const invalidCards = [];
+
+      for (const card of itemCards) {
+        const invalidTooltips = card.enchantments
+          .flatMap(enchantment => enchantment.tooltips.filter(tooltip => tooltip.includes('MISSING')));
 
         if (invalidTooltips.length > 0) {
           invalidCards.push({

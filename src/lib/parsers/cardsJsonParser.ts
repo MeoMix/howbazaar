@@ -363,7 +363,7 @@ function filterTooltipsByStartingTier(
             // Empty tooltips for tiers preceding the startingTier
             return [
                 tierType,
-                (tierOrder.indexOf(tierType as TierType) >= startingIndex && tierType !== "Legendary") 
+                (tierOrder.indexOf(tierType as TierType) >= startingIndex && tierType !== "Legendary")
                     ? { tooltips: tier.tooltips }
                     : { tooltips: [] as string[] },
             ];
@@ -467,6 +467,11 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
                 };
             }
 
+            if (card.Localization.Title.Text === "Beach Ball" && enchantmentType === "Restorative") {
+                console.log('yo');
+                debugger;
+            }
+
             const enchantmentAbilities = Object.values(enchantment.Abilities).filter(item => item.Action) as Ability[];
             const enchantmentAuras = Object.values(enchantment.Auras).filter(item => item.Action) as Aura[];
 
@@ -506,8 +511,14 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
                         // Perform actions with `aura` and `suffix` as needed
                         // Example condition: check if `aura` has the required properties
                         if (aura.Action.$type === "TAuraActionCardModifyAttribute" && aura.Action.Target?.$type === "TTargetCardSelf") {
-                            // TODO: Why do I need an exception here?
-                            if (card.Localization.Title.Text === "Flamethrower" && enchantmentType === "Toxic") {
+                            // TODO: Why do I need exceptions here?
+                            if (
+                                (card.Localization.Title.Text === "Flamethrower" && enchantmentType === "Toxic") || 
+                                (card.Localization.Title.Text === "Beach Ball" && (enchantmentType === "Restorative" || enchantmentType === "Shielded" || enchantmentType === "Toxic"|| enchantmentType === "Fiery" )) ||
+                                (card.Localization.Title.Text === "Astrolabe" && (enchantmentType === "Restorative" || enchantmentType === "Shielded" || enchantmentType === "Toxic"|| enchantmentType === "Fiery" )) ||
+                                (card.Localization.Title.Text === "Forklift" && (enchantmentType === "Restorative" || enchantmentType === "Shielded" || enchantmentType === "Toxic"|| enchantmentType === "Fiery" )) ||
+                                (card.Localization.Title.Text === "Rowboat" && (enchantmentType === "Restorative" || enchantmentType === "Shielded" || enchantmentType === "Toxic"|| enchantmentType === "Fiery" ))
+                            ) {
                                 return true;
                             }
 
