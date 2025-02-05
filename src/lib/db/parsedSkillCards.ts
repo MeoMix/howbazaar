@@ -6949,6 +6949,50 @@ const data: ParsedSkillCard[] = [
     "remarks": []
   },
   {
+    "id": "3865bde8-45b8-49d6-8945-0453c24251a9",
+    "name": "Sharpshooter",
+    "startingTier": "Bronze",
+    "tiers": {
+      "Bronze": {
+        "tooltips": [
+          "Your Ammo items have +3% Crit chance."
+        ]
+      },
+      "Silver": {
+        "tooltips": [
+          "Your Ammo items have +6% Crit chance."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Your Ammo items have +9% Crit chance."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Your Ammo items have +12% Crit chance."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "AmmoReference"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Vanessa",
+      "Mak"
+    ],
+    "artKey": "Icon_Skill_Sharpshooter.png",
+    "unifiedTooltips": [
+      "Your Ammo items have (+3%/+6%/+9%/+12%) Crit chance."
+    ],
+    "remarks": []
+  },
+  {
     "id": "cac848c8-dc77-4277-ba9f-df282b9f36ef",
     "name": "Nanite Healing",
     "startingTier": "Bronze",

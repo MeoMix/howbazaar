@@ -34,7 +34,9 @@ const allowedList = [
   // Toxic Shield
   'a9b441e1-5824-4855-9359-2ab4643d9ff5',
   // Slow Burn
-  'cd6ac6ef-dafb-4001-a338-52e791bec4c3'
+  'cd6ac6ef-dafb-4001-a338-52e791bec4c3',
+  // Sharpshooter
+  '3865bde8-45b8-49d6-8945-0453c24251a9'
 ];
 
 const disallowedList = [
