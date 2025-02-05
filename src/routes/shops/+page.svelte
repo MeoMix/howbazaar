@@ -71,6 +71,9 @@
     class="mx-auto w-full max-w-full sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg"
 >
     <div class="text-lg my-4">
+        <div class="text-red-500 font-semibold">This info is out of date as of the current patch and I don't have access to the data that would allow me to update it.</div>
+        <div class="text-red-500 font-semibold">I'll probably take this page down soon.</div>
+        
         <div>
             I'll add some actual shop information to this page soon™, but
             people have been frequently asking for the drop %s.
