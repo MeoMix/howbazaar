@@ -2280,9 +2280,7 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you or your enemy Poisons, gain (2/4/6/8) Regeneration for the fight."
     ],
-    "remarks": [
-      "This is partially bugged in the current patch and only triggers when you poison not when enemy poisons."
-    ]
+    "remarks": []
   },
   {
     "id": "0526054f-98da-4e95-be68-d25b26bb0fe3",
@@ -5433,9 +5431,7 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first time your enemy falls below half health each fight, Charge your items (2/3/4) second(s)."
     ],
-    "remarks": [
-      "This is bugged in the current patch and doesn't work."
-    ]
+    "remarks": []
   },
   {
     "id": "f74f460e-6b49-43a9-9b9f-9b6fe36d28e9",
@@ -8302,9 +8298,7 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first (5/10) times you use an Aquatic item each fight, Haste 1 weapon for 1 second(s)."
     ],
-    "remarks": [
-      "This is bugged in the current patch and doesn't work."
-    ]
+    "remarks": []
   },
   {
     "id": "c6a57594-4358-44de-b888-64216df4aa05",

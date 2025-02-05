@@ -609,11 +609,6 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
                 }
             } else {
                 tooltips = getDisplayedTooltips(rawTooltips, enchantmentAbilities, enchantmentAuras, enchantmentAttributes);
-
-                // TODO: Do this intelligently not patch fix
-                if (card.Localization.Title.Text === "Force Field" && enchantmentType === "Restorative") {
-                    tooltips = ["Heal equal to your shield."];
-                }
             }
 
             if (card.Localization.Title.Text === "Uwashiwali Bird" && enchantmentType === "Shiny") {
@@ -638,15 +633,6 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
             })
         ) as typeof tiers;
 
-        if (name === "Multitool") {
-            const searchString = "Slow an item";
-            const brokenTooltipIndex = tiers.Bronze.tooltips.findIndex(tooltip => tooltip.includes(searchString));
-
-            if (brokenTooltipIndex > -1) {
-                tiers.Bronze.tooltips[brokenTooltipIndex] = tiers.Bronze.tooltips[brokenTooltipIndex].replace(searchString, "Slow 1 item");
-            }
-        }
-
         // Fix bad data related to starting tiers. These are all Legendary.
         let startingTier = card.StartingTier;
         const invalidLegendaries = ["Eye of the Colossus", "Infernal Greatsword", "Octopus", "Necronomicon", "Scythe", "Singularity", "Soul of the District", "Teddy", "The Eclipse", "Flamberge"];
@@ -666,6 +652,10 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
 
         if (name === "Bootstraps" || name === "Hammer" || name === "Wrench") {
             remarks.push("This item is currently disabled and not available in game.");
+        }
+
+        if (name === "Open Sign") {
+            remarks.push("Deadly Enchantment is bugged and doesn't work in the current patch. Do not enchant Open Sign with Deadly.");
         }
 
         return {
@@ -765,18 +755,6 @@ function parseSkillCards(cardsJson: CardsJson): ParsedSkillCard[] {
         tiers = filterTooltipsByStartingTier(startingTier, tiers);
 
         const unifiedTooltips = unifyTooltips(Object.entries(tiers).map(([, tier]) => tier.tooltips));
-
-        if (name === "Crashing Waves") {
-            remarks.push("This is bugged in the current patch and doesn't work.")
-        }
-
-        if (name === "Bloodhound") {
-            remarks.push("This is bugged in the current patch and doesn't work.")
-        }
-
-        if (name === "Poison Tyrant") {
-            remarks.push("This is partially bugged in the current patch and only triggers when you poison not when enemy poisons.")
-        }
 
         return {
             id: card.Id,
