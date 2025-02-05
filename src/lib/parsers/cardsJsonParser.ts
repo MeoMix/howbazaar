@@ -655,11 +655,7 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
         if (name === "Security Camera") {
             remarks.push("Restorative Enchantment is implemented weird. Crit Chance scales with item tier, so 20% at Bronze or 50% at Diamond. This is the only enchant in the game which scales with tier. Expect this to change.")
         }
-
-        if (name === "Bootstraps" || name === "Hammer" || name === "Wrench") {
-            remarks.push("This item is currently disabled and not available in game.");
-        }
-
+        
         if (name === "Open Sign") {
             remarks.push("Deadly Enchantment is bugged and doesn't work in the current patch. Do not enchant Open Sign with Deadly.");
         }
