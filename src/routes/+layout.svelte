@@ -70,7 +70,7 @@
             >
                 <!-- How Bazaar -->
                 <Badge border large color="green" class="whitespace-nowrap">
-                    Updated Jan 22
+                    Updated Feb 05
                 </Badge>
             </span>
         </NavBrand>
