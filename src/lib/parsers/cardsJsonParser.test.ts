@@ -35,7 +35,7 @@ describe('cardJsonParser', () => {
       const alphaRay = itemCards.find(card => card.name === "Alpha Ray")!;
 
       expect(alphaRay.unifiedTooltips[2]).toEqual(
-        'When you use the Core or another Ray, your Weapons gain (+3/+6/+9/+12) Damage for the fight.'
+        'When you use the Core or another Ray, your Weapons gain (+2/+3/+4/+5) Damage for the fight.'
       );
     });
 
@@ -67,7 +67,7 @@ describe('cardJsonParser', () => {
       const beachBall = itemCards.find(card => card.name === "Beach Ball")!;
 
       expect(beachBall.unifiedTooltips[1]).toEqual(
-        'Haste (1/2/3/4) Aquatic item(s) for 2 second(s).'
+        'Haste (1/2/3/4) Aquatic or Toy item(s) for 2 second(s).'
       );
     });
 
@@ -181,13 +181,6 @@ describe('cardJsonParser', () => {
     expect(healthyCollector.tiers.Bronze.tooltips.find((text) => text.includes(searchPhrase))).toEqual(`${searchPhrase}35 Max Health for each Non-Weapon item you have. [0]`);
   });
 
-  it('should parse "Memory Card" correctly by replacing its {ability.1} with a correct value', () => {
-    const healthyCollector = itemCards.find(card => card.name === "Memory Card")!;
-    const searchPhrase = "When you sell this, give The Core + Damage equal to this item's value.";
-
-    expect(healthyCollector.tiers.Bronze.tooltips.find((text) => text.includes(searchPhrase))).toEqual(`${searchPhrase} 1`);
-  });
-
   it('should parse "Crook" correctly by replacing its {aura.1} with a correct value (by relying on modifiers)', () => {
     const crook = itemCards.find(card => card.name === "Crook")!;
     const searchPhrase = "Your Medium Weapons have +";
@@ -221,13 +214,6 @@ describe('cardJsonParser', () => {
     const searchPhrase = "When you sell this, your leftmost weapon gains +";
 
     expect(colossalPopsicle.tiers.Bronze.tooltips.find((text) => text.includes(searchPhrase))).toEqual(`${searchPhrase}5 damage.`);
-  });
-
-  it('should parse "Shellshock" properly and handle its +{aura.0.mod}', () => {
-    const shellshock = skillCards.find(card => card.name === "Shellshock")!;
-    const searchPhrase = "Your items have +";
-
-    expect(shellshock.tiers.Diamond.tooltips.find((text) => text.includes(searchPhrase))).toEqual(`${searchPhrase}1 damage for each ammo you have on your items in play. [0]`);
   });
 
   it('should parse Dooley\'s Scarf such that it does not include duplicate tooltips in Gold/Diamond', () => {
@@ -296,14 +282,6 @@ describe('cardJsonParser', () => {
       expect(deadlyEnchantment.tooltips[0]).toEqual('Shield Properties adjacent to this have + Crit Chance equal to the value of your highest value item. [0]');
     });
 
-    it('should parse "Deadly Port" correctly by replacing its {aura.e1.} (which is a typo) with a correct value', () => {
-      const port = itemCards.find(card => card.name === "Port")!;
-      const deadlyEnchantment = port.enchantments.find(enchantment => enchantment.type === 'Deadly')!;
-
-      expect(deadlyEnchantment.tooltips.length).toEqual(1);
-      expect(deadlyEnchantment.tooltips[0]).toEqual('Your items with Ammo have +20% Crit Chance.');
-    });
-
     it('should parse "Orbital Polisher" correctly by excluding Shiny which is an invalid enchantment', () => {
       const orbitalPolisher = itemCards.find(card => card.name === "Orbital Polisher")!;
       const shinyEnchantment = orbitalPolisher.enchantments.find(enchantment => enchantment.type === 'Shiny')!;
@@ -311,12 +289,12 @@ describe('cardJsonParser', () => {
       expect(shinyEnchantment).toBeUndefined();
     });
 
-    it('should parse "Deadly Sextant" correctly by replacing its {aura.0} with a correct value', () => {
+    it('should parse "Deadly Sextant" correctly by replacing its {aura.e1} with a correct value', () => {
       const sextant = itemCards.find(card => card.name === "Sextant")!;
       const deadlyEnchantment = sextant.enchantments.find(enchantment => enchantment.type === 'Deadly')!;
 
       expect(deadlyEnchantment.tooltips.length).toEqual(1);
-      expect(deadlyEnchantment.tooltips[0]).toEqual('Adjacent items have an additional +25% Crit Chance');
+      expect(deadlyEnchantment.tooltips[0]).toEqual('Your items have +10% Crit Chance.');
     });
 
     it('should parse "Restorative Force Field" correctly by replacing its "Heal {ability.e1}." with a reference to Shield Amount', () => {
@@ -327,20 +305,12 @@ describe('cardJsonParser', () => {
       expect(restorativeEnchantment.tooltips[0]).toEqual('Heal equal to your shield.');
     });
 
-    it('should parse "Toxic Flamethrower" correctly by replacing its "{aura.e9}" with a reference to Custom_3 (poison multiplier)', () => {
-      const flamethrower = itemCards.find(card => card.name === "Flamethrower")!;
-      const toxicEnchantment = flamethrower.enchantments.find(enchantment => enchantment.type === 'Toxic')!;
-
-      expect(toxicEnchantment.tooltips.length).toEqual(1);
-      expect(toxicEnchantment.tooltips[0]).toEqual('Poison equal to 2 time(s) this item\'s damage.');
-    });
-
     it('should parse "Shielded Bunker" correctly by properly calculating its {ability.e1} value as non-zero', () => {
       const bunker = itemCards.find(card => card.name === "Bunker")!;
       const shieldedEnchantment = bunker.enchantments.find(enchantment => enchantment.type === 'Shielded')!;
 
       expect(shieldedEnchantment.tooltips.length).toEqual(1);
-      expect(shieldedEnchantment.tooltips[0]).toEqual('At the start of each fight, shield 180.');
+      expect(shieldedEnchantment.tooltips[0]).toEqual('The first time you fall below half health each fight, Shield 300.');
     });
 
     it('should parse "Restorative Security Camera" correctly by reading its value from the base items attribute at the default tier', () => {
