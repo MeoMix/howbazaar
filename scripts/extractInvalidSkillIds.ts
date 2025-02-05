@@ -45,7 +45,13 @@ const disallowedList = [
   // Stout Fire:
   // "d08bdeb9-ef08-48be-9df7-0edd9fcff6cf"
   // "[DEBUG] Defense Grid"
-  "69edc2fa-7aba-457e-bbcf-05f2e0f18139"
+  "69edc2fa-7aba-457e-bbcf-05f2e0f18139",
+  // Heavy Weaponry
+  "015bc348-773e-4009-87ff-231452431bba",
+  // Standard Ordnance
+  "e43da7b1-1190-469a-b6c6-43d8e3ca0ad6",
+  // Small Weaponry
+  "c4c70f57-c51e-4bc4-848c-0f0e7fbddd28",
 ];
 
 // Filter the entries
