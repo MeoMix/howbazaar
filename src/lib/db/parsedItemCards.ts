@@ -767,29 +767,25 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+0 MISSING",
-          "0 Shield"
+          "Shield 10 for each Unique type you have."
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+0 MISSING",
-          "0 Heal"
+          "Heal 15 for each Unique type you have."
         ]
       },
       {
         "type": "Toxic",
         "tooltips": [
-          "+0 MISSING",
-          "0 Poison"
+          "Poison 1 for each Unique type you have."
         ]
       },
       {
         "type": "Fiery",
         "tooltips": [
-          "+0 MISSING",
-          "0 Burn"
+          "Burn 2 for each Unique type you have."
         ]
       },
       {
@@ -1798,29 +1794,25 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+0 MISSING",
-          "0 Shield"
+          "Shield 50 for each item to the left of this."
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+0 MISSING",
-          "0 Heal"
+          "Heal 75 for each item to the left of this."
         ]
       },
       {
         "type": "Toxic",
         "tooltips": [
-          "+0 MISSING",
-          "0 Poison"
+          "Poison 5 for each item to the left of this."
         ]
       },
       {
         "type": "Fiery",
         "tooltips": [
-          "+0 MISSING",
-          "0 Burn"
+          "Burn 7 for each item to the left of this."
         ]
       },
       {
@@ -21776,29 +21768,25 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+0 MISSING",
-          "0 Shield"
+          "Shield 8 for each non-Weapon item you have."
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+0 MISSING",
-          "0 Heal"
+          "Heal 12 for each non-Weapon item you have."
         ]
       },
       {
         "type": "Toxic",
         "tooltips": [
-          "+0 MISSING",
-          "0 Poison"
+          "Poison 1 for each non-Weapon item you have."
         ]
       },
       {
         "type": "Fiery",
         "tooltips": [
-          "+0 MISSING",
-          "0 Burn"
+          "Burn 1 for each non-Weapon item you have."
         ]
       },
       {
@@ -28277,9 +28265,7 @@ const data: ParsedItemCard[] = [
       "Deal (20/40/80) damage.",
       "When you Level Up, if you have at least 3 tools, upgrade an item of a lower tier."
     ],
-    "remarks": [
-      "This item is currently disabled and not available in game."
-    ]
+    "remarks": []
   },
   {
     "id": "1afb5eef-e964-4767-b9a6-8d1a76cef645",
@@ -38635,29 +38621,25 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+0 MISSING",
-          "0 Shield"
+          "Shield 10 for each Aquatic or Toy item you have."
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+0 MISSING",
-          "0 Heal"
+          "Heal 15 for each Aquatic or Toy item you have."
         ]
       },
       {
         "type": "Toxic",
         "tooltips": [
-          "+0 MISSING",
-          "0 Poison"
+          "Poison 1 for each Aquatic or Toy item you have."
         ]
       },
       {
         "type": "Fiery",
         "tooltips": [
-          "+0 MISSING",
-          "0 Burn"
+          "Burn 1 for each Aquatic or Toy item you have."
         ]
       },
       {
@@ -44414,9 +44396,7 @@ const data: ParsedItemCard[] = [
       "Deal (10/20) damage.",
       "At the start of each day, upgrade a Tool of a lower tier."
     ],
-    "remarks": [
-      "This item is currently disabled and not available in game."
-    ]
+    "remarks": []
   },
   {
     "id": "fd95b873-24a4-4af6-8b08-296f24a3576c",
@@ -49276,9 +49256,7 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "Every 50 you spend, upgrade an item of a lower tier. [Gold Spent: 0]"
     ],
-    "remarks": [
-      "This item is currently disabled and not available in game."
-    ]
+    "remarks": []
   },
   {
     "id": "b0f10d7f-d1df-4fb5-a88f-01b8cffd7fe4",
