@@ -4847,56 +4847,6 @@ const data: ParsedSkillCard[] = [
     "remarks": []
   },
   {
-    "id": "c4c70f57-c51e-4bc4-848c-0f0e7fbddd28",
-    "name": "Small Weaponry",
-    "startingTier": "Bronze",
-    "tiers": {
-      "Bronze": {
-        "tooltips": [
-          "Your Small Weapons deal +3 Damage."
-        ]
-      },
-      "Silver": {
-        "tooltips": [
-          "Your Small Weapons deal +9 Damage."
-        ]
-      },
-      "Gold": {
-        "tooltips": [
-          "Your Small Weapons deal +18 Damage."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "Your Small Weapons deal +30 Damage."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [
-      "Weapon"
-    ],
-    "hiddenTags": [
-      "DamageReference"
-    ],
-    "size": "Medium",
-    "heroes": [
-      "Jules",
-      "Stelle",
-      "Mak",
-      "Dooley",
-      "Vanessa",
-      "Pygmalien"
-    ],
-    "artKey": "Icon_Skill_SmallWeaponry.png",
-    "unifiedTooltips": [
-      "Your Small Weapons deal (+3/+9/+18/+30) Damage."
-    ],
-    "remarks": []
-  },
-  {
     "id": "7f097b31-c29e-4082-a835-6d6457c2d536",
     "name": "Ignition",
     "startingTier": "Diamond",
@@ -6223,56 +6173,6 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_ArmsDealer.png",
     "unifiedTooltips": [
       "When you buy a Weapon, permanently gain (20/30/40/50) Max Health."
-    ],
-    "remarks": []
-  },
-  {
-    "id": "e43da7b1-1190-469a-b6c6-43d8e3ca0ad6",
-    "name": "Standard Ordnance",
-    "startingTier": "Bronze",
-    "tiers": {
-      "Bronze": {
-        "tooltips": [
-          "Your Medium Weapons deal +6 Damage."
-        ]
-      },
-      "Silver": {
-        "tooltips": [
-          "Your Medium Weapons deal +18 Damage."
-        ]
-      },
-      "Gold": {
-        "tooltips": [
-          "Your Medium Weapons deal +36 Damage."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "Your Medium Weapons deal +60 Damage."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [
-      "Weapon"
-    ],
-    "hiddenTags": [
-      "DamageReference"
-    ],
-    "size": "Medium",
-    "heroes": [
-      "Jules",
-      "Stelle",
-      "Mak",
-      "Dooley",
-      "Vanessa",
-      "Pygmalien"
-    ],
-    "artKey": "Icon_Skill_StandardOrdinance.png",
-    "unifiedTooltips": [
-      "Your Medium Weapons deal (+6/+18/+36/+60) Damage."
     ],
     "remarks": []
   },
@@ -10586,56 +10486,6 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_SKILL_MON_AugmentedDefenses.png",
     "unifiedTooltips": [
       "Your Shield items have +1 Shield. When you sell a small item, increase this bonus by (+1/+2/+3/+4) Shield."
-    ],
-    "remarks": []
-  },
-  {
-    "id": "015bc348-773e-4009-87ff-231452431bba",
-    "name": "Heavy Weaponry",
-    "startingTier": "Bronze",
-    "tiers": {
-      "Bronze": {
-        "tooltips": [
-          "Your Large Weapons deal +12 Damage."
-        ]
-      },
-      "Silver": {
-        "tooltips": [
-          "Your Large Weapons deal +36 Damage."
-        ]
-      },
-      "Gold": {
-        "tooltips": [
-          "Your Large Weapons deal +72 Damage."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "Your Large Weapons deal +120 Damage."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [
-      "Weapon"
-    ],
-    "hiddenTags": [
-      "DamageReference"
-    ],
-    "size": "Medium",
-    "heroes": [
-      "Jules",
-      "Stelle",
-      "Mak",
-      "Dooley",
-      "Vanessa",
-      "Pygmalien"
-    ],
-    "artKey": "Icon_Skill_HeavyWeaponry.png",
-    "unifiedTooltips": [
-      "Your Large Weapons deal (+12/+36/+72/+120) Damage."
     ],
     "remarks": []
   },
