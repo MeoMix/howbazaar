@@ -620,15 +620,6 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
                 tooltips = ["This has +1 Multicast for each Property you have."]
             }
 
-            // Explicitly filter out Radiant's default case because only complete beginners don't know what it does
-            // and because it appears on ~every item while also being quite wordy. Just doesn't add a lot of value.
-            if (enchantmentType === "Radiant" && tooltips[0]?.includes("This cannot be Frozen")) {
-                return {
-                    type: enchantmentType,
-                    tooltips: []
-                };
-            }
-
             return {
                 type: enchantmentType,
                 tooltips,
@@ -673,16 +664,8 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
             remarks.push("Restorative Enchantment is implemented weird. Crit Chance scales with item tier, so 20% at Bronze or 50% at Diamond. This is the only enchant in the game which scales with tier. Expect this to change.")
         }
 
-        if (name === "Shipwreck") {
-            remarks.push("Radiant Enchantment is bugged and doesn't work in the current patch. Do not enchant Shipwreck with Radiant.");
-        }
-
         if (name === "Bootstraps" || name === "Hammer" || name === "Wrench") {
             remarks.push("This item is currently disabled and not available in game.");
-        }
-
-        if (name === "Open Sign") {
-            remarks.push("Deadly Enchantment is bugged and doesn't work in the current patch. Do not enchant Open Sign with Deadly.");
         }
 
         return {

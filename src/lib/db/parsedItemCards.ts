@@ -104,6 +104,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "+50% Crit Chance"
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -216,6 +222,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -334,6 +346,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Your Piranhas have +50% Crit Chance."
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -445,6 +463,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -662,6 +686,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "+50% Crit Chance"
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -772,6 +802,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "Your items have +10% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -891,6 +927,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "This has Lifesteal."
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -995,6 +1037,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -1103,6 +1151,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "The Core has +50% Crit Chance."
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -1209,6 +1263,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "This has double Crit Chance bonus."
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -1307,6 +1367,12 @@ const data: ParsedItemCard[] = [
         "type": "Shiny",
         "tooltips": [
           "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -1417,6 +1483,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "+50% Crit Chance"
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -1523,6 +1595,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "This has double Crit Chance bonus."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -1633,6 +1711,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -1749,6 +1833,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -1925,6 +2015,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "+50% Crit Chance"
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -2035,6 +2131,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -2150,6 +2252,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Obsidian",
         "tooltips": [
           "This has Lifesteal."
@@ -2259,6 +2367,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "+50% Crit Chance"
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -2358,6 +2472,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "This has double Crit Chance bonus."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -2459,6 +2579,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -2563,6 +2689,12 @@ const data: ParsedItemCard[] = [
         "type": "Shiny",
         "tooltips": [
           "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -2670,6 +2802,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "An item gains +20% Crit Chance for the fight."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -2780,6 +2918,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Your Shield items gain +10% Crit Chance for the fight."
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -2886,6 +3030,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -2999,6 +3149,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
@@ -3048,6 +3204,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -3157,6 +3319,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -3271,6 +3439,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "Your items gain +25% Crit Chance for the fight."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -3387,6 +3561,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -3514,6 +3694,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -3679,6 +3865,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Your items gain +10% Crit Chance for the fight."
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -3781,6 +3973,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -3885,6 +4083,12 @@ const data: ParsedItemCard[] = [
         "type": "Shiny",
         "tooltips": [
           "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -4001,6 +4205,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "Your Vehicles have +50% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -4119,6 +4329,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Obsidian",
         "tooltips": [
           "This has Lifesteal."
@@ -4222,6 +4438,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "This has +1 Multicast."
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -4319,6 +4541,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -4445,6 +4673,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Obsidian",
         "tooltips": [
           "This has Lifesteal."
@@ -4550,6 +4784,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Your Aquatic items have +25% Crit Chance."
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -4639,6 +4879,12 @@ const data: ParsedItemCard[] = [
         "type": "Shiny",
         "tooltips": [
           "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -4746,6 +4992,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
@@ -4847,6 +5099,12 @@ const data: ParsedItemCard[] = [
         "type": "Shiny",
         "tooltips": [
           "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -4958,6 +5216,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "Your Tools have +20% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -5072,6 +5336,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Obsidian",
         "tooltips": [
           "This has Lifesteal."
@@ -5181,6 +5451,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -5361,6 +5637,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Obsidian",
         "tooltips": [
           "This has Lifesteal."
@@ -5531,6 +5813,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Your weapons gain 10% Crit Chance for the fight."
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -5637,6 +5925,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -5749,6 +6043,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Obsidian",
         "tooltips": [
           "This has Lifesteal."
@@ -5855,6 +6155,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "The item to the left of this gains +20% Crit Chance for the fight."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -5964,6 +6270,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -6085,6 +6397,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Obsidian",
         "tooltips": [
           "This has Lifesteal."
@@ -6198,6 +6516,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -6316,6 +6640,12 @@ const data: ParsedItemCard[] = [
         "type": "Shiny",
         "tooltips": [
           "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -6507,6 +6837,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Obsidian",
         "tooltips": [
           "This has Lifesteal."
@@ -6618,6 +6954,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "+50% Crit Chance"
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -6724,6 +7066,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -6834,6 +7182,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -6959,6 +7313,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "+50% Crit Chance"
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -7080,6 +7440,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "+50% Crit Chance"
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -7178,6 +7544,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "When you use the leftmost item, the rightmost item gains +25% Crit Chance for the fight."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -7295,6 +7667,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Obsidian",
         "tooltips": [
           "This has Lifesteal."
@@ -7400,6 +7778,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "This has +1 Multicast."
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -7504,6 +7888,12 @@ const data: ParsedItemCard[] = [
         "type": "Shiny",
         "tooltips": [
           "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -7622,6 +8012,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Obsidian",
         "tooltips": [
           "This has Lifesteal."
@@ -7728,6 +8124,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -7854,6 +8256,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "+50% Crit Chance"
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -7965,6 +8373,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "+50% Crit Chance"
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -8066,6 +8480,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -8174,6 +8594,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "+50% Crit Chance"
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -8269,6 +8695,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "Adjacent items have +25% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -8374,6 +8806,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "The Weapon to the right of this gains +20% Crit Chance for the fight."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -8485,6 +8923,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "+50% Crit Chance"
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -8595,6 +9039,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -8718,6 +9168,12 @@ const data: ParsedItemCard[] = [
         "type": "Shiny",
         "tooltips": [
           "Double Value"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -8853,6 +9309,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -9075,6 +9537,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "+50% Crit Chance"
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -9191,6 +9659,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -9310,6 +9784,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Obsidian",
         "tooltips": [
           "This has Lifesteal."
@@ -9412,6 +9892,12 @@ const data: ParsedItemCard[] = [
         "type": "Shiny",
         "tooltips": [
           "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -9519,6 +10005,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -9661,6 +10153,12 @@ const data: ParsedItemCard[] = [
         "type": "Shiny",
         "tooltips": [
           "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -9812,6 +10310,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Obsidian",
         "tooltips": [
           "This has Lifesteal."
@@ -9926,6 +10430,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "+50% Crit Chance"
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -10039,6 +10549,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Obsidian",
         "tooltips": [
           "This has Lifesteal."
@@ -10133,6 +10649,12 @@ const data: ParsedItemCard[] = [
         "type": "Fiery",
         "tooltips": [
           "When you use the item to the right of this, burn 3."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -10229,6 +10751,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "Adjacent items have +25% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -10337,6 +10865,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "Your Vehicles have +50% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -10457,6 +10991,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Obsidian",
         "tooltips": [
           "This has Lifesteal."
@@ -10567,6 +11107,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -10710,6 +11256,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "This has +1 Multicast."
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -10821,6 +11373,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Your Weapons gain 10% Crit Chance for the fight."
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -10922,6 +11480,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "This has +1 Multicast."
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -11013,6 +11577,12 @@ const data: ParsedItemCard[] = [
         "type": "Shiny",
         "tooltips": [
           "This has double Slow duration."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -11123,6 +11693,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Obsidian",
         "tooltips": [
           "This has Lifesteal."
@@ -11226,6 +11802,12 @@ const data: ParsedItemCard[] = [
         "type": "Shiny",
         "tooltips": [
           "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -11344,6 +11926,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Obsidian",
         "tooltips": [
           "This has Lifesteal."
@@ -11452,6 +12040,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -11564,6 +12158,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -11680,6 +12280,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -11800,6 +12406,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "+50% Crit Chance"
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -11904,6 +12516,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -12023,6 +12641,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "+50% Crit Chance"
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -12120,6 +12744,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -12221,6 +12851,12 @@ const data: ParsedItemCard[] = [
         "type": "Shiny",
         "tooltips": [
           "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -12340,6 +12976,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Obsidian",
         "tooltips": [
           "This has Lifesteal."
@@ -12445,6 +13087,12 @@ const data: ParsedItemCard[] = [
         "type": "Shiny",
         "tooltips": [
           "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -12556,6 +13204,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "+50% Crit Chance"
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -12660,6 +13314,12 @@ const data: ParsedItemCard[] = [
         "type": "Shiny",
         "tooltips": [
           "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -12772,6 +13432,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -12891,6 +13557,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Obsidian",
         "tooltips": [
           "This has Lifesteal."
@@ -13001,6 +13673,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Your items have +10% Crit Chance."
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -13104,6 +13782,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -13214,6 +13898,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "+50% Crit Chance"
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -13323,6 +14013,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -13436,6 +14132,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "+50% Crit Chance"
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -13535,6 +14237,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -13650,6 +14358,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "+50% Crit Chance"
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -13760,6 +14474,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -13885,6 +14605,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Obsidian",
         "tooltips": [
           "This has Lifesteal."
@@ -14002,6 +14728,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Your items gain 3% Crit Chance for the fight."
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -14115,6 +14847,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "+50% Crit Chance"
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -14216,6 +14954,12 @@ const data: ParsedItemCard[] = [
         "type": "Shiny",
         "tooltips": [
           "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -14333,6 +15077,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -14549,6 +15299,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Obsidian",
         "tooltips": [
           "This has Lifesteal."
@@ -14671,6 +15427,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Obsidian",
         "tooltips": [
           "This has Lifesteal."
@@ -14779,6 +15541,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "This has double Crit Chance bonus."
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -14877,6 +15645,12 @@ const data: ParsedItemCard[] = [
         "type": "Shiny",
         "tooltips": [
           "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -14984,6 +15758,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -15106,6 +15886,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "+50% Crit Chance"
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -15206,6 +15992,12 @@ const data: ParsedItemCard[] = [
         "type": "Shiny",
         "tooltips": [
           "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -15313,6 +16105,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Your Ammo items have +20% Crit Chance."
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -15419,6 +16217,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "When you use a Property, your items gain +20% Crit Chance for the fight."
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -15514,6 +16318,12 @@ const data: ParsedItemCard[] = [
         "type": "Shiny",
         "tooltips": [
           "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -15622,6 +16432,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "+50% Crit Chance"
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -15728,6 +16544,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -15840,6 +16662,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "This has +1 Multicast."
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -15947,6 +16775,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "If you have two or fewer weapons, they have Lifesteal."
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -16051,6 +16885,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -16167,6 +17007,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "+50% Crit Chance"
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -16282,6 +17128,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "This has double value gain."
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -16391,6 +17243,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -16509,6 +17367,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "+50% Crit Chance"
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -16615,6 +17479,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
@@ -16714,6 +17584,12 @@ const data: ParsedItemCard[] = [
         "type": "Shiny",
         "tooltips": [
           "This has double Regeneration gain."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -16815,6 +17691,12 @@ const data: ParsedItemCard[] = [
         "type": "Shiny",
         "tooltips": [
           "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -16924,6 +17806,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -17040,6 +17928,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "+50% Crit Chance"
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -17155,6 +18049,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "+50% Crit Chance"
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -17262,6 +18162,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "The Weapon to the left of this has +50% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -17371,6 +18277,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -17486,6 +18398,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -17609,6 +18527,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Obsidian",
         "tooltips": [
           "This has Lifesteal."
@@ -17721,6 +18645,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -17841,6 +18771,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "+50% Crit Chance"
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -17943,6 +18879,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "Adjacent items gain +10% Crit Chance for the fight."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -18048,6 +18990,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -18166,6 +19114,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "+50% Crit Chance"
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -18258,6 +19212,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "This has +1 Multicast."
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -18304,7 +19264,14 @@ const data: ParsedItemCard[] = [
     "heroes": [
       "Pygmalien"
     ],
-    "enchantments": [],
+    "enchantments": [
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      }
+    ],
     "unifiedTooltips": [
       "When you sell this, get 3 Spare Change."
     ],
@@ -18454,6 +19421,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -18628,6 +19601,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Obsidian",
         "tooltips": [
           "This has Lifesteal."
@@ -18744,6 +19723,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Obsidian",
         "tooltips": [
           "This has Lifesteal."
@@ -18854,6 +19839,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "This has double Crit Chance bonus."
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -18897,7 +19888,14 @@ const data: ParsedItemCard[] = [
     "heroes": [
       "Pygmalien"
     ],
-    "enchantments": [],
+    "enchantments": [
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      }
+    ],
     "unifiedTooltips": [
       "When you sell this, get 3 Small items from any hero."
     ],
@@ -18998,6 +19996,12 @@ const data: ParsedItemCard[] = [
         "type": "Shiny",
         "tooltips": [
           "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -19119,6 +20123,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Obsidian",
         "tooltips": [
           "This has Lifesteal."
@@ -19182,6 +20192,12 @@ const data: ParsedItemCard[] = [
         "type": "Shiny",
         "tooltips": [
           "This has double value."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -19293,6 +20309,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -19410,6 +20432,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "This has double Crit damage."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -19541,6 +20569,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Obsidian",
         "tooltips": [
           "This has Lifesteal."
@@ -19652,6 +20686,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -19827,6 +20867,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "+50% Crit Chance"
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -19937,6 +20983,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "+50% Crit Chance"
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -20034,6 +21086,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -20145,6 +21203,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "This has +1 Multicast."
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -20246,6 +21310,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -20363,6 +21433,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -20487,6 +21563,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Obsidian",
         "tooltips": [
           "This has Lifesteal."
@@ -20608,6 +21690,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Obsidian",
         "tooltips": [
           "This has Lifesteal."
@@ -20720,6 +21808,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Deadly",
         "tooltips": [
           "Your non-Weapon items gain +10% Crit Chance for the fight."
@@ -20827,6 +21921,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -20940,6 +22040,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Adjacent Friends have +25% Crit Chance."
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -21051,6 +22157,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "+50% Crit Chance"
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -21142,6 +22254,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "When your enemy uses an item, your items gain 5% Crit Chance for the fight."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -21252,6 +22370,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Your items gain 5% Crit Chance for the fight."
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -21361,6 +22485,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "+50% Crit Chance"
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -21459,6 +22589,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -21628,6 +22764,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "+50% Crit Chance"
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -21731,6 +22873,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -21838,6 +22986,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -21959,6 +23113,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -22087,6 +23247,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Obsidian",
         "tooltips": [
           "This has Lifesteal."
@@ -22192,6 +23358,12 @@ const data: ParsedItemCard[] = [
         "type": "Shiny",
         "tooltips": [
           "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -22307,6 +23479,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "+50% Crit Chance"
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -22417,6 +23595,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Adjacent Tools and Food items have +25% Crit Chance."
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -22510,6 +23694,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "This has double Crit Chance bonus."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -22610,6 +23800,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -22720,6 +23916,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -22838,6 +24040,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "The item to the left gains +25% Crit Chance for the fight."
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -22946,6 +24154,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "+50% Crit Chance"
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -23043,6 +24257,12 @@ const data: ParsedItemCard[] = [
         "type": "Shiny",
         "tooltips": [
           "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -23154,6 +24374,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "This has double Crit Chance bonus."
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -23261,6 +24487,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -23382,6 +24614,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Obsidian",
         "tooltips": [
           "This has Lifesteal."
@@ -23488,6 +24726,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Obsidian",
         "tooltips": [
           "This has Lifesteal."
@@ -23587,6 +24831,12 @@ const data: ParsedItemCard[] = [
         "type": "Shiny",
         "tooltips": [
           "This has double damage bonus."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -23752,6 +25002,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Your weapons have + Crit Chance % equal to this item's value."
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -23861,6 +25117,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -23975,6 +25237,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "Your Core has +50% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -24130,6 +25398,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Adjacent items gain 10% Crit chance for the fight."
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -24239,6 +25513,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -24364,6 +25644,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Obsidian",
         "tooltips": [
           "This has Lifesteal."
@@ -24464,6 +25750,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "The item to the left of this has +50% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -24574,6 +25866,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "+50% Crit Chance"
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -24620,7 +25918,14 @@ const data: ParsedItemCard[] = [
     "heroes": [
       "Pygmalien"
     ],
-    "enchantments": [],
+    "enchantments": [
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      }
+    ],
     "unifiedTooltips": [
       "When you sell this, get 3 Chocolate Bars."
     ],
@@ -24731,6 +26036,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -24846,6 +26157,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Your items have +10% Crit Chance."
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -24957,6 +26274,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -25073,6 +26396,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Obsidian",
         "tooltips": [
           "This has Lifesteal."
@@ -25178,6 +26507,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -25376,6 +26711,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Obsidian",
         "tooltips": [
           "This has Lifesteal."
@@ -25428,6 +26769,12 @@ const data: ParsedItemCard[] = [
         "type": "Shiny",
         "tooltips": [
           "+1 Multicast"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -25536,6 +26883,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "+50% Crit Chance"
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -25642,6 +26995,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "+50% Crit Chance"
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -25699,6 +27058,12 @@ const data: ParsedItemCard[] = [
         "type": "Shiny",
         "tooltips": [
           "This has double Crit Chance bonus."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -25798,6 +27163,12 @@ const data: ParsedItemCard[] = [
         "type": "Shiny",
         "tooltips": [
           "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -25901,6 +27272,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -26014,6 +27391,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "This has double Crit Chance bonus."
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -26119,6 +27502,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "+50% Crit Chance"
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -26218,6 +27607,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "Adjacent items gain 10% Crit Chance for the fight."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -26331,6 +27726,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -26452,6 +27853,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Obsidian",
         "tooltips": [
           "This has Lifesteal."
@@ -26560,6 +27967,12 @@ const data: ParsedItemCard[] = [
         "type": "Shiny",
         "tooltips": [
           "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -26719,6 +28132,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -26958,6 +28377,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
@@ -27072,6 +28497,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Your Piggles have -1 cooldown."
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -27176,6 +28607,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "+50% Crit Chance"
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -27279,6 +28716,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -27396,6 +28839,12 @@ const data: ParsedItemCard[] = [
         "type": "Shiny",
         "tooltips": [
           "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -27519,6 +28968,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -27649,6 +29104,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "+50% Crit Chance"
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -27751,6 +29212,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "This has +1 Multicast."
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -27850,6 +29317,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "At the start of each day, your items gain 10% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -27954,6 +29427,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "+50% Crit Chance"
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -28053,6 +29532,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "Adjacent Ammo items have +25% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -28157,6 +29642,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -28264,6 +29755,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "This has double Crit Chance bonus."
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -28368,6 +29865,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -28486,6 +29989,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Obsidian",
         "tooltips": [
           "This has Lifesteal."
@@ -28590,6 +30099,12 @@ const data: ParsedItemCard[] = [
         "type": "Shiny",
         "tooltips": [
           "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -28702,6 +30217,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -28824,6 +30345,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "+50% Crit Chance"
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -28936,6 +30463,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -29053,6 +30586,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Obsidian",
         "tooltips": [
           "This has Lifesteal."
@@ -29158,6 +30697,12 @@ const data: ParsedItemCard[] = [
         "type": "Shiny",
         "tooltips": [
           "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -29268,6 +30813,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Your items have +25% Crit Chance."
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -29374,6 +30925,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -29525,6 +31082,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "This has +1 Multicast."
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -29588,6 +31151,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Adjacent Weapons have +20% Crit Chance.",
           "When you sell this, your Weapons gain 5% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -29687,6 +31256,12 @@ const data: ParsedItemCard[] = [
         "type": "Shiny",
         "tooltips": [
           "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -29793,6 +31368,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -29915,6 +31496,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -30075,6 +31662,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Deadly",
         "tooltips": [
           "When you use a Weapon, it gains +10% Crit Chance for the fight."
@@ -30194,6 +31787,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "+50% Crit Chance"
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -30307,6 +31906,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -30424,6 +32029,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -30571,6 +32182,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "+50% Crit Chance"
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -30675,6 +32292,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "Your items gain 10% Crit Chance for the fight."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -30788,6 +32411,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -30913,6 +32542,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Obsidian",
         "tooltips": [
           "This has Lifesteal."
@@ -30973,6 +32608,12 @@ const data: ParsedItemCard[] = [
         "type": "Golden",
         "tooltips": [
           "When you buy a property, gain 1 Gold."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -31062,6 +32703,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "This has +1 Multicast."
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -31121,6 +32768,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "Adjacent properties have +50% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -31272,6 +32925,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Obsidian",
         "tooltips": [
           "This has Lifesteal."
@@ -31389,6 +33048,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Obsidian",
         "tooltips": [
           "This has Lifesteal."
@@ -31503,6 +33168,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Your Lifesteal Weapons have +50% Crit Chance."
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -31613,6 +33284,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "+50% Crit Chance"
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -31672,6 +33349,12 @@ const data: ParsedItemCard[] = [
         "type": "Shiny",
         "tooltips": [
           "Double Health Max"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -31776,6 +33459,12 @@ const data: ParsedItemCard[] = [
         "type": "Shiny",
         "tooltips": [
           "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -31889,6 +33578,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -32006,6 +33701,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "+50% Crit Chance"
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -32118,6 +33819,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "+50% Crit Chance"
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -32223,6 +33930,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "Your Shield items and Weapons gain +10% Crit Chance for the fight."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -32333,6 +34046,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -32448,6 +34167,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "The weapon to the left has +50% Crit Chance."
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -32556,6 +34281,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -32668,6 +34399,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "This has +1 Multicast."
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -32769,6 +34506,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -32876,6 +34619,12 @@ const data: ParsedItemCard[] = [
         "type": "Shiny",
         "tooltips": [
           "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -32993,6 +34742,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Obsidian",
         "tooltips": [
           "This has Lifesteal."
@@ -33056,6 +34811,12 @@ const data: ParsedItemCard[] = [
         "type": "Shiny",
         "tooltips": [
           "Get 2 Gumballs and Spare Change instead."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -33170,6 +34931,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Obsidian",
         "tooltips": [
           "This has Lifesteal."
@@ -33277,6 +35044,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -33386,6 +35159,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -33504,6 +35283,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Obsidian",
         "tooltips": [
           "This has Lifesteal."
@@ -33566,6 +35351,12 @@ const data: ParsedItemCard[] = [
         "type": "Shiny",
         "tooltips": [
           "Double Value"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -33678,6 +35469,12 @@ const data: ParsedItemCard[] = [
         "type": "Shiny",
         "tooltips": [
           "At the start of each hour, get an additional 2 Spare Change."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -33794,6 +35591,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Obsidian",
         "tooltips": [
           "This has Lifesteal."
@@ -33901,6 +35704,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "This has +1 Multicast."
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -33997,6 +35806,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -34107,6 +35922,12 @@ const data: ParsedItemCard[] = [
         "type": "Shiny",
         "tooltips": [
           "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -34220,6 +36041,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "+50% Crit Chance"
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -34325,6 +36152,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -34443,6 +36276,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Your weapons and tools gain 25% Crit Chance for the fight."
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -34560,6 +36399,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "When you sell this, the Core gains Crit Chance equal to this item's value. 1"
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -34661,6 +36506,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -34775,6 +36626,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -34976,6 +36833,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Obsidian",
         "tooltips": [
           "This has Lifesteal."
@@ -35091,6 +36954,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -35215,6 +37084,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Obsidian",
         "tooltips": [
           "This has Lifesteal."
@@ -35332,6 +37207,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "+50% Crit Chance"
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -35442,6 +37323,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -35556,6 +37443,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
@@ -35656,6 +37549,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "This has double Crit Chance bonus."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -35762,6 +37661,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -35922,6 +37827,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Adjacent items have +25% Crit Chance."
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -36017,6 +37928,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -36123,6 +38040,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -36289,6 +38212,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Obsidian",
         "tooltips": [
           "This has Lifesteal."
@@ -36398,6 +38327,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -36521,6 +38456,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Your items gain Crit Chance equal to this item's value for the fight."
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -36613,6 +38554,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "Your items have Crit Chance equal to this item's value."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -36724,6 +38671,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Your Aquatic and Toy items gain +10% Crit Chance for the fight."
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -36829,6 +38782,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "When you Heal, your items gain +10% Crit Chance for the fight."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -36937,6 +38896,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "When you Slow, your items gain +10% Crit Chance for the fight."
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -37044,6 +39009,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "+50% Crit Chance"
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -37150,6 +39121,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -37263,6 +39240,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Your items gain 10% Crit Chance for the fight."
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -37368,6 +39351,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -37482,6 +39471,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "+50% Crit Chance"
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -37588,6 +39583,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "This has double Crit Chance bonus."
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -37691,6 +39692,12 @@ const data: ParsedItemCard[] = [
         "type": "Shiny",
         "tooltips": [
           "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -37799,6 +39806,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "The Property to the left has +50% Crit Chance."
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -37900,6 +39913,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -38011,6 +40030,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "+50% Crit Chance"
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -38112,6 +40137,12 @@ const data: ParsedItemCard[] = [
         "type": "Shiny",
         "tooltips": [
           "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -38226,6 +40257,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Obsidian",
         "tooltips": [
           "This has Lifesteal."
@@ -38329,6 +40366,12 @@ const data: ParsedItemCard[] = [
         "type": "Shiny",
         "tooltips": [
           "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -38478,6 +40521,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Your items have +25% Crit Chance."
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -38586,6 +40635,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -38705,6 +40760,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Obsidian",
         "tooltips": [
           "This has Lifesteal."
@@ -38815,6 +40876,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "+50% Crit Chance"
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -38906,6 +40973,12 @@ const data: ParsedItemCard[] = [
         "type": "Shiny",
         "tooltips": [
           "Double Value"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -39075,6 +41148,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Adjacent items gain 10% Crit Chance for the fight."
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -39195,6 +41274,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Obsidian",
         "tooltips": [
           "This has Lifesteal."
@@ -39294,6 +41379,12 @@ const data: ParsedItemCard[] = [
         "type": "Shiny",
         "tooltips": [
           "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -39400,6 +41491,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -39517,6 +41614,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "+50% Crit Chance"
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -39620,6 +41723,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Adjacent items have an additional +25% Crit Chance"
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -39716,14 +41825,18 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Your Aquatic items have +10% Crit Chance."
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
       "Your Aquatic items have +1 Multicast."
     ],
-    "remarks": [
-      "Radiant Enchantment is bugged and doesn't work in the current patch. Do not enchant Shipwreck with Radiant."
-    ]
+    "remarks": []
   },
   {
     "id": "447c40e6-7aec-4391-8be7-df4952815d40",
@@ -39813,6 +41926,12 @@ const data: ParsedItemCard[] = [
         "type": "Shiny",
         "tooltips": [
           "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -39923,6 +42042,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -40035,6 +42160,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -40156,6 +42287,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Obsidian",
         "tooltips": [
           "This has Lifesteal."
@@ -40259,6 +42396,12 @@ const data: ParsedItemCard[] = [
         "type": "Shiny",
         "tooltips": [
           "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -40368,6 +42511,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "+50% Crit Chance"
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -40472,6 +42621,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -40578,6 +42733,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -40700,6 +42861,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Obsidian",
         "tooltips": [
           "This has Lifesteal."
@@ -40818,6 +42985,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "+50% Crit Chance"
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -40928,6 +43101,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "+50% Crit Chance"
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -41032,6 +43211,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -41152,6 +43337,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Obsidian",
         "tooltips": [
           "This has Lifesteal."
@@ -41269,6 +43460,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Obsidian",
         "tooltips": [
           "This has Lifesteal."
@@ -41381,6 +43578,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "Adjacent Ammo items have +25% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -41495,6 +43698,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Obsidian",
         "tooltips": [
           "This has Lifesteal."
@@ -41595,6 +43804,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "Your items gain +25% Crit Chance for the fight."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -41708,6 +43923,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Obsidian",
         "tooltips": [
           "This has Lifesteal."
@@ -41817,6 +44038,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -41938,6 +44165,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
@@ -42045,6 +44278,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "Enemy items have -100% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -42288,6 +44527,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Obsidian",
         "tooltips": [
           "This has Lifesteal."
@@ -42495,6 +44740,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "This has +1 Multicast."
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -42607,6 +44858,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "+50% Crit Chance"
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -42713,6 +44970,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
@@ -42812,6 +45075,12 @@ const data: ParsedItemCard[] = [
         "type": "Shiny",
         "tooltips": [
           "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -42929,6 +45198,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -43152,6 +45427,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Obsidian",
         "tooltips": [
           "This has Lifesteal."
@@ -43268,6 +45549,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "+50% Crit Chance"
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -43377,6 +45664,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "+50% Crit Chance"
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -43481,6 +45774,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -43651,6 +45950,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Deadly",
         "tooltips": [
           "Your friends gain +10% Crit Chance for the fight."
@@ -43761,6 +46066,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "The Ammo item to the right of this gains +20% Crit Chance for the fight."
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -43868,6 +46179,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -43982,6 +46299,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -44151,6 +46474,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Obsidian",
         "tooltips": [
           "This has Lifesteal."
@@ -44267,6 +46596,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Obsidian",
         "tooltips": [
           "This has Lifesteal."
@@ -44364,6 +46699,12 @@ const data: ParsedItemCard[] = [
         "type": "Shiny",
         "tooltips": [
           "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -44491,6 +46832,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "This has double value gain."
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -44600,6 +46947,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -44714,6 +47067,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "+50% Crit Chance"
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -44805,6 +47164,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "Your Small items have +20% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -44915,6 +47280,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Your Aquatic items have +25% Crit Chance."
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -45020,6 +47391,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -45134,6 +47511,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -45252,6 +47635,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "+50% Crit Chance"
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -45364,6 +47753,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "+50% Crit Chance"
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -45466,6 +47861,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Obsidian",
         "tooltips": [
           "This has Lifesteal."
@@ -45554,6 +47955,12 @@ const data: ParsedItemCard[] = [
         "type": "Fiery",
         "tooltips": [
           "When your enemy uses an item, burn 4."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -45655,6 +48062,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "+50% Crit Chance"
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -45718,6 +48131,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "Shield Properties adjacent to this have + Crit Chance equal to the value of your highest value item. [0]"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -45841,6 +48260,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -46005,6 +48430,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Obsidian",
         "tooltips": [
           "This has Lifesteal."
@@ -46111,6 +48542,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -46231,6 +48668,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Obsidian",
         "tooltips": [
           "This has Lifesteal."
@@ -46346,6 +48789,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "+50% Crit Chance"
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -46458,6 +48907,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Obsidian",
         "tooltips": [
           "This has Lifesteal."
@@ -46563,6 +49018,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -46681,6 +49142,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -46894,6 +49361,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "This has double Slow duration."
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -46996,6 +49469,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -47175,6 +49654,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Obsidian",
         "tooltips": [
           "This has Lifesteal."
@@ -47292,6 +49777,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Obsidian",
         "tooltips": [
           "This has Lifesteal."
@@ -47404,6 +49895,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Obsidian",
         "tooltips": [
           "This has Lifesteal."
@@ -47501,6 +49998,12 @@ const data: ParsedItemCard[] = [
         "type": "Shiny",
         "tooltips": [
           "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -47612,6 +50115,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       },
       {
@@ -47732,6 +50241,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Obsidian",
         "tooltips": [
           "This has Lifesteal."
@@ -47839,6 +50354,12 @@ const data: ParsedItemCard[] = [
         "type": "Shiny",
         "tooltips": [
           "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -47953,6 +50474,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
         "type": "Obsidian",
         "tooltips": [
           "This has Lifesteal."
@@ -48054,6 +50581,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "When you use an adjacent item, the other adjacent item gains 25% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -48164,6 +50697,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Your items gain +20% Crit Chance for the fight."
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -48224,6 +50763,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "This has double Crit Chance bonus."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -48325,6 +50870,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "+50% Crit Chance"
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -48425,6 +50976,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "This has double Crit Chance bonus."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -48532,6 +51089,12 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Adjacent properties have +25% Crit Chance."
         ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
       }
     ],
     "unifiedTooltips": [
@@ -48623,6 +51186,12 @@ const data: ParsedItemCard[] = [
         "type": "Shiny",
         "tooltips": [
           "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
@@ -48738,6 +51307,12 @@ const data: ParsedItemCard[] = [
         "type": "Deadly",
         "tooltips": [
           "This has double Crit Chance bonus."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
         ]
       }
     ],
