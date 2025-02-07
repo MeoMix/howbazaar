@@ -36,7 +36,11 @@ const allowedList = [
   // Slow Burn
   'cd6ac6ef-dafb-4001-a338-52e791bec4c3',
   // Sharpshooter
-  '3865bde8-45b8-49d6-8945-0453c24251a9'
+  '3865bde8-45b8-49d6-8945-0453c24251a9',
+  // Counterstrike
+  'c5bff6ad-5d13-4cf3-9941-98f3cf913949',
+  // Small Refresh
+  '8b513e67-9c49-4fed-a7e4-335d982367ac'
 ];
 
 const disallowedList = [

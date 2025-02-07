@@ -4231,6 +4231,49 @@ const data: ParsedSkillCard[] = [
     "remarks": []
   },
   {
+    "id": "8b513e67-9c49-4fed-a7e4-335d982367ac",
+    "name": "Small Refresh",
+    "startingTier": "Bronze",
+    "tiers": {
+      "Bronze": {
+        "tooltips": [
+          "When you use a small item, heal 5."
+        ]
+      },
+      "Silver": {
+        "tooltips": [
+          "When you use a small item, heal 10."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "When you use a small item, heal 15."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "When you use a small item, heal 20."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "Heal"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Common"
+    ],
+    "artKey": "Icon_Skill_MON_SmallRefresh.png",
+    "unifiedTooltips": [
+      "When you use a small item, heal (5/10/15/20)."
+    ],
+    "remarks": []
+  },
+  {
     "id": "9215b678-2833-427b-bc97-75a90968c634",
     "name": "Ravenous",
     "startingTier": "Legendary",
@@ -5183,6 +5226,49 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_LeftHanded.png",
     "unifiedTooltips": [
       "Your leftmost Weapon deals (+20/+30/+40/+50) Damage."
+    ],
+    "remarks": []
+  },
+  {
+    "id": "c5bff6ad-5d13-4cf3-9941-98f3cf913949",
+    "name": "Counterstrike",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "The first 5 times your enemy uses a weapon, Charge 1 item(s) 1 second(s)."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "The first 5 times your enemy uses a weapon, Charge 2 item(s) 1 second(s)."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "The first 5 times your enemy uses a weapon, Charge 3 item(s) 1 second(s)."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Weapon"
+    ],
+    "hiddenTags": [
+      "Charge"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Common"
+    ],
+    "artKey": "Icon_Skill_MON_Counterattack.png",
+    "unifiedTooltips": [
+      "The first 5 times your enemy uses a weapon, Charge (1/2/3) item(s) 1 second(s)."
     ],
     "remarks": []
   },

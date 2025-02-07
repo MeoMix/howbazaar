@@ -16,7 +16,13 @@ const allowedList = [
   // Black Ice:
   'f0a58209-1a26-42ac-a243-7c2fd9d6ce33',
   // Boomerang:
-  'af43730d-efaa-4a1d-adeb-bf31d536acf0'
+  'af43730d-efaa-4a1d-adeb-bf31d536acf0',
+  // Dragon Wing:
+  '292115b4-a145-476e-b3a7-0fe199b5c1af',
+  // Dragon's Breath:
+  '5a94a820-1b13-4164-bae9-f6abbd59eb2d',
+  // Salt
+  'f1c04562-6db4-45d5-a056-a4df9d185faf'
 ];
 
 const disallowedList = [

@@ -10760,6 +10760,120 @@ const data: ParsedItemCard[] = [
     "remarks": []
   },
   {
+    "id": "292115b4-a145-476e-b3a7-0fe199b5c1af",
+    "name": "Dragon Wing",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Shield 40.",
+          "When you Burn, charge this 2 second(s)."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Shield 60.",
+          "When you Burn, charge this 2 second(s)."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Shield 80.",
+          "When you Burn, charge this 2 second(s)."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Dragon"
+    ],
+    "hiddenTags": [
+      "Shield",
+      "BurnReference",
+      "Charge"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Common"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 2 item for 1 second(s)."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze 1 medium or small item for 1 second(s)."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 2 item for 1 second(s)."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "This has double Shield."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to this item's Shield."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison 4."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn 6."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      }
+    ],
+    "unifiedTooltips": [
+      "Cooldown 6 seconds",
+      "Shield (40/60/80).",
+      "When you Burn, charge this 2 second(s)."
+    ],
+    "remarks": []
+  },
+  {
     "id": "223bc3f1-8dc6-429b-8c17-af64b24836ec",
     "name": "Sirens",
     "startingTier": "Silver",
@@ -23479,6 +23593,118 @@ const data: ParsedItemCard[] = [
       "Cooldown 5 seconds",
       "Heal (25/50/100/200).",
       "When you sell this, your Heal items gain (+10/+20/+30/+40) Heal."
+    ],
+    "remarks": []
+  },
+  {
+    "id": "5a94a820-1b13-4164-bae9-f6abbd59eb2d",
+    "name": "Dragon's Breath",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 8 seconds",
+          "Burn 8.",
+          "When you use an adjacent or Dragon item, this gains +2 Burn for the fight."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 8 seconds",
+          "Burn 8.",
+          "When you use an adjacent or Dragon item, this gains +3 Burn for the fight."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 8 seconds",
+          "Burn 8.",
+          "When you use an adjacent or Dragon item, this gains +4 Burn for the fight."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Dragon"
+    ],
+    "hiddenTags": [
+      "Burn"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Mak"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 2 items for 3 second(s)."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze 1 item for 3 second(s)."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 2 items for 3 second(s)."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield 80."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal 120."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison 8."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "This has double Burn."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      }
+    ],
+    "unifiedTooltips": [
+      "Cooldown 8 seconds",
+      "Burn 8.",
+      "When you use an adjacent or Dragon item, this gains (+2/+3/+4) Burn for the fight."
     ],
     "remarks": []
   },
@@ -36527,6 +36753,110 @@ const data: ParsedItemCard[] = [
       "Cooldown 10 seconds",
       "This gains 1 Value.",
       "When you sell this, The Core gains + Damage equal to (1x/2x/3x/4x) this item's value. (1/4/12/32)"
+    ],
+    "remarks": []
+  },
+  {
+    "id": "f1c04562-6db4-45d5-a056-a4df9d185faf",
+    "name": "Salt",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 2 seconds",
+          "Adjacent items gain +1 crit chance for the fight."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 2 seconds",
+          "Adjacent items gain +2 crit chance for the fight."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 2 seconds",
+          "Adjacent items gain +3 crit chance for the fight."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Food"
+    ],
+    "hiddenTags": [
+      "Active",
+      "NonWeapon",
+      "Crit"
+    ],
+    "size": "Small",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 1 item for 1 second(s)."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze 1 item for 1 second(s)."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 1 item for 1 second(s)."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield 3."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal 4."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison 1."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn 1."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      }
+    ],
+    "unifiedTooltips": [
+      "Cooldown 2 seconds",
+      "Adjacent items gain (+1/+2/+3) crit chance for the fight."
     ],
     "remarks": []
   },
