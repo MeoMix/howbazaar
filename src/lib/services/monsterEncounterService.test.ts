@@ -71,7 +71,7 @@ describe('MonsterEncounterService', () => {
         expect(octopus?.tierType).toEqual("Legendary");
     });
 
-    it('should have item details for Lord of the Waste\'s Legendary Flamberge', () => {
+    it('should have item details for Lord of the Waste\'s Diamond Flamberge', () => {
         const lordOfTheWastes = monsterEncounterDays
             .flatMap((day) => day.groups)
             .flatMap((group) => group)
