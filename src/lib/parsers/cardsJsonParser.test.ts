@@ -249,6 +249,13 @@ describe('cardJsonParser', () => {
     expect(cooldownTooltip).toEqual("Cooldown 10 seconds");
   });
 
+  it('should parse Truffles {aura.2.mod} properly', () => {
+    const truffles = itemCards.find(card => card.name === "Truffles")!;
+    const cooldownTooltip = truffles.tiers.Silver.tooltips.find(tooltip => tooltip.includes("Heal equal to"));
+
+    expect(cooldownTooltip).toEqual("Heal equal to 1 times the value of your highest value item.");
+  });
+
   it('should contain no tooltips with {', () => {
     const disabledItemIds = [
       // Schematics is disabled due to bug so it's ~ok for Tooltip to be broken

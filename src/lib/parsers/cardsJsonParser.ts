@@ -61,6 +61,13 @@ function getAttributeInfo(
         ) {
             if (qualifier.isMod) {
                 attributeValue = action.Value.Modifier?.Value.Value ?? 0;
+
+                // If there is no Action.Value.Modifier.Value.Value then look at AttributeType
+                if (action.Value.Modifier?.Value.Value === undefined) {
+                    let modifierAttributeName = action.Value.Modifier?.Value.AttributeType;
+                    attributeValue = modifierAttributeName === undefined ? 0 : getAttributeValueFromTier(modifierAttributeName, tierAttributes, qualifier);
+                }
+
             } else {
                 // Some values require context based on game state beyond the current card which isn't known to this website.
                 attributeValue = 0;
@@ -437,6 +444,11 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
         const auras = Object.values(card.Auras);
         const tierMap = getTierMap(card);
         const remarks = [] as string[];
+
+        if (card.Localization.Title.Text === "Truffles") {
+            console.log('yo');
+            debugger;
+        }
 
         let tiers = Object.fromEntries((Object.entries(tierMap) as Entries<typeof tierMap>).map(
             ([tierName, tier]) => {

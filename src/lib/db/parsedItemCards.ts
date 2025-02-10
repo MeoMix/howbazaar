@@ -17,14 +17,14 @@ const data: ParsedItemCard[] = [
       "Gold": {
         "tooltips": [
           "Cooldown 4 seconds",
-          "Heal equal to 0 times the value of your items.",
+          "Heal equal to 4 times the value of your items.",
           "At the start of each fight, your other items gain Value equal to this item's Value for the fight."
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 4 seconds",
-          "Heal equal to 0 times the value of your items.",
+          "Heal equal to 6 times the value of your items.",
           "At the start of each fight, your other items gain Value equal to this item's Value for the fight."
         ]
       },
@@ -114,7 +114,7 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
-      "Heal equal to 0 times the value of your items.",
+      "Heal equal to (4/6) times the value of your items.",
       "At the start of each fight, your other items gain Value equal to this item's Value for the fight."
     ],
     "remarks": []
@@ -46866,21 +46866,21 @@ const data: ParsedItemCard[] = [
       "Silver": {
         "tooltips": [
           "Cooldown 4 seconds",
-          "Heal equal to 0 times the value of your highest value item.",
+          "Heal equal to 1 times the value of your highest value item.",
           "When you sell this, your leftmost item gains value equal to this item's value."
         ]
       },
       "Gold": {
         "tooltips": [
           "Cooldown 4 seconds",
-          "Heal equal to 0 times the value of your highest value item.",
+          "Heal equal to 2 times the value of your highest value item.",
           "When you sell this, your leftmost item gains value equal to this item's value."
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 4 seconds",
-          "Heal equal to 0 times the value of your highest value item.",
+          "Heal equal to 3 times the value of your highest value item.",
           "When you sell this, your leftmost item gains value equal to this item's value."
         ]
       },
@@ -46970,7 +46970,7 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
-      "Heal equal to 0 times the value of your highest value item.",
+      "Heal equal to (1/2/3) times the value of your highest value item.",
       "When you sell this, your leftmost item gains value equal to this item's value."
     ],
     "remarks": []

@@ -4061,17 +4061,17 @@ const data: ParsedSkillCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "Your Weapons have +0 damage for each ammo you have on your items in play. [0]"
+          "Your Weapons have +1 damage for each ammo you have on your items in play. [0]"
         ]
       },
       "Gold": {
         "tooltips": [
-          "Your Weapons have +0 damage for each ammo you have on your items in play. [0]"
+          "Your Weapons have +2 damage for each ammo you have on your items in play. [0]"
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Your Weapons have +0 damage for each ammo you have on your items in play. [0]"
+          "Your Weapons have +3 damage for each ammo you have on your items in play. [0]"
         ]
       },
       "Legendary": {
@@ -4089,7 +4089,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_ScopedShot.png",
     "unifiedTooltips": [
-      "Your Weapons have +0 damage for each ammo you have on your items in play. [0]"
+      "Your Weapons have (+1/+2/+3) damage for each ammo you have on your items in play. [0]"
     ],
     "remarks": []
   },
