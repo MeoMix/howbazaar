@@ -8014,7 +8014,9 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you use a Tool, reload 1 to adjacent items."
     ],
-    "remarks": []
+    "remarks": [
+      "Retool is bugged. Only reloads left adjacent item not both adjacent items."
+    ]
   },
   {
     "id": "292f58c0-409b-4de7-a8d2-099a8629aa5e",

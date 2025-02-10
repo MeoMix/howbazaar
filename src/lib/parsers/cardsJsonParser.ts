@@ -758,6 +758,10 @@ function parseSkillCards(cardsJson: CardsJson): ParsedSkillCard[] {
 
         const unifiedTooltips = unifyTooltips(Object.entries(tiers).map(([, tier]) => tier.tooltips));
 
+        if (name === "Retool") {
+            remarks.push("Retool is bugged. Only reloads left adjacent item not both adjacent items.");
+        }
+
         return {
             id: card.Id,
             name,
