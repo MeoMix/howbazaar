@@ -22606,7 +22606,7 @@ const data: ParsedItemCard[] = [
   {
     "id": "8938035e-be96-4827-bd34-7258253bd942",
     "name": "Flamberge",
-    "startingTier": "Legendary",
+    "startingTier": "Diamond",
     "tiers": {
       "Bronze": {
         "tooltips": []
@@ -22618,14 +22618,14 @@ const data: ParsedItemCard[] = [
         "tooltips": []
       },
       "Diamond": {
-        "tooltips": []
-      },
-      "Legendary": {
         "tooltips": [
           "Cooldown 8 seconds",
           "Deal 200 damage.",
           "This deals quadruple crit damage."
         ]
+      },
+      "Legendary": {
+        "tooltips": []
       }
     },
     "tags": [

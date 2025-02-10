@@ -641,7 +641,7 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
 
         // Fix bad data related to starting tiers. These are all Legendary.
         let startingTier = card.StartingTier;
-        const invalidLegendaries = ["Eye of the Colossus", "Infernal Greatsword", "Octopus", "Necronomicon", "Scythe", "Singularity", "Soul of the District", "Teddy", "The Eclipse", "Flamberge"];
+        const invalidLegendaries = ["Eye of the Colossus", "Infernal Greatsword", "Octopus", "Necronomicon", "Scythe", "Singularity", "Soul of the District", "Teddy", "The Eclipse"];
         if (invalidLegendaries.includes(name)) {
             startingTier = "Legendary";
         }
