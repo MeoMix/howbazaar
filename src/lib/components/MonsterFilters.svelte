@@ -25,7 +25,7 @@
     onMount(async () => {
         const hash = window.location.hash.slice(1);
         if (hash) {
-            searchText = hash.replace("_", " ");
+            searchText = hash.replace(/_+/g, " ");
         }
     });
 </script>
