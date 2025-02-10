@@ -22,7 +22,11 @@ const allowedList = [
   // Dragon's Breath:
   '5a94a820-1b13-4164-bae9-f6abbd59eb2d',
   // Salt
-  'f1c04562-6db4-45d5-a056-a4df9d185faf'
+  'f1c04562-6db4-45d5-a056-a4df9d185faf',
+  // Hot Sauce
+  'c0455f22-2fb9-4ce6-a65f-e874e3d86ff0',
+  // Skillet
+  '0d227497-f57f-44ef-98a8-15791e710fb6'
 ];
 
 const disallowedList = [

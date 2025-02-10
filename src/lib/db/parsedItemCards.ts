@@ -702,6 +702,114 @@ const data: ParsedItemCard[] = [
     "remarks": []
   },
   {
+    "id": "c0455f22-2fb9-4ce6-a65f-e874e3d86ff0",
+    "name": "Hot Sauce",
+    "startingTier": "Gold",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 10 seconds",
+          "Burn 10.",
+          "For each adjacent Food, this has +1 Multicast."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 10 seconds",
+          "Burn 20.",
+          "For each adjacent Food, this has +1 Multicast."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Food"
+    ],
+    "hiddenTags": [
+      "Burn"
+    ],
+    "size": "Small",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 1 item for 3 second(s)."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze 1 item of equal or smaller size for 1 second(s)."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 1 item for 3 second(s)."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield 50."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal 75."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison 5."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "This has double Burn."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      }
+    ],
+    "unifiedTooltips": [
+      "Cooldown 10 seconds",
+      "Burn (10/20).",
+      "For each adjacent Food, this has +1 Multicast."
+    ],
+    "remarks": []
+  },
+  {
     "id": "430ed105-2d64-4f3b-afd1-73ed0db39217",
     "name": "Rowboat",
     "startingTier": "Silver",
@@ -44498,6 +44606,118 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "Cooldown 2 seconds",
       "Deal (6/12/18/24) damage."
+    ],
+    "remarks": []
+  },
+  {
+    "id": "0d227497-f57f-44ef-98a8-15791e710fb6",
+    "name": "Skillet",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Burn 4.",
+          "If both adjacent items are food, this has +1 Multicast."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Burn 6.",
+          "If both adjacent items are food, this has +1 Multicast."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Burn 8.",
+          "If both adjacent items are food, this has +1 Multicast."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Tool"
+    ],
+    "hiddenTags": [
+      "Burn"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 2 items for 2 second(s)."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze 1 medium or small item for 2 second(s)."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 2 items for 2 second(s)."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield 50."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal 75."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison 5."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "This has double burn."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      }
+    ],
+    "unifiedTooltips": [
+      "Cooldown 5 seconds",
+      "Burn (4/6/8).",
+      "If both adjacent items are food, this has +1 Multicast."
     ],
     "remarks": []
   },
