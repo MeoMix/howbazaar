@@ -52,7 +52,7 @@
 
 <div class="text-lg mb-8">
     <div class="text-2xl mb-4 font-semibold">
-        Upcoming Features as of Jan 10th, 2024:
+        Upcoming Features as of Feb 16th, 2024:
     </div>
     
     <div>
@@ -62,13 +62,13 @@
             <ul class="ml-8 leading-loose">
                 <li>
                     <span>
-                        Fix some UX issues with search and exact text match. i.e. search for Barrel doesn't show Double Barrel.
+                        Play around with making search sticky so you don't have to scroll up each time to change search.
                     </span>
                     <span class="font-bold text-green-500"></span>
                 </li>
                 <li>
                     <span>
-                        Play around with making search sticky so you don't have to scroll up each time to change search.
+                        Fix some UX issues with search and exact text match. i.e. search for Barrel doesn't show Double Barrel.
                     </span>
                     <span class="font-bold text-green-500"></span>
                 </li>
@@ -97,19 +97,8 @@
                     </span>
                     <span class="font-bold text-green-500"></span>
                 </li>
-                <li>
-                    <span>
-                        Begin creating mod. Similar offerings to Bazaar Tracker, but without ads and overwolf.
-                        This will also allow website to crowdsource information about the game that isn't able to be scripted easily such as data regarding PvE, Vendors, etc.
-                        Hopefully this will be good enough to get people to switch over even though it's late to the game. :)
-                    </span>
-                    <span class="font-bold text-green-500"></span>
-                </li>
             </ul>
         </div>
-    
-    
-
     </div>
 </div>
 
