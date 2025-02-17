@@ -1,21 +1,19 @@
 <script lang="ts">
     import FilterTriToggle from "./FilterTriToggle.svelte";
     import type { Option, TriState } from "$lib/types";
-    import { Label } from "flowbite-svelte";
-    import Switch from "./Switch.svelte";
+    import { ButtonGroup, Label } from "flowbite-svelte";
+    import RadioButton from "./RadioButton.svelte";
 
     let {
         label,
         options,
         triStates = $bindable(),
         isMatchAny = $bindable(),
-        onSelect,
     }: {
         label: string;
         options: Option[];
         triStates: Record<Option["value"], TriState>;
         isMatchAny?: boolean;
-        onSelect?: (value: Record<Option["value"], TriState>) => void;
     } = $props();
 
     function handleToggle(value: Option["value"]) {
@@ -26,31 +24,31 @@
                 : triStates[value] === "on"
                   ? "off"
                   : "unset";
-
-        if (onSelect) {
-            onSelect(triStates);
-        }
     }
 </script>
 
 <div>
-    <div class="mb-2">
-        <Label class="font-semibold text-lg dark:text-bazaar-tan700"
+    <div class="flex items-center gap-2 mb-2">
+        <Label class="font-semibold text-lg dark:text-bazaar-tan700 inline-block"
             >{label}</Label
         >
         {#if isMatchAny !== undefined}
-            <Switch
-                isChecked={isMatchAny}
-                onClick={() => {
-                    isMatchAny = !isMatchAny;
-
-                    if (onSelect) {
-                        onSelect(triStates);
-                    }
-                }}
-                label="Match Any"
-                offLabel="Match All"
-            />
+            <ButtonGroup>
+                <RadioButton
+                    value="isMatchAll"
+                    group={isMatchAny ? "isMatchAny" : "isMatchAll"}
+                    onClick={() => {
+                        isMatchAny = false;
+                    }}>Match All</RadioButton
+                >
+                <RadioButton
+                    value="isMatchAny"
+                    group={isMatchAny ? "isMatchAny" : "isMatchAll"}
+                    onClick={() => {
+                        isMatchAny = true;
+                    }}>Match Any</RadioButton
+                >
+            </ButtonGroup>
         {/if}
     </div>
 

@@ -44,7 +44,7 @@
     <div class="flex justify-between items-center">
         <div class="text-lg flex-grow">
             {items.length}
-            {listItemName}{items.length === 1 ? "" : "s"} found.
+            {listItemName}{items.length === 1 ? "" : "s"}
         </div>
     
         <div class="flex space-x-2">

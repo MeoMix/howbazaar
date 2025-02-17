@@ -15,7 +15,7 @@
 </script>
 
 <Toggle
-    class="mt-2 inline-flex dark:text-bazaar-tan700"
+    class="inline-flex dark:text-bazaar-tan700"
     classDiv="dark:bg-bazaar-tan200 dark:after:bg-bazaar-tan700 peer-focus:ring-bazaar-orange dark:peer-focus:ring-bazaar-orange400 peer-checked:bg-bazaar-orange"
     checked={isChecked}
     on:click={onClick}

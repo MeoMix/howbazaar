@@ -20,6 +20,6 @@
 
 <FilterToggle
     isEnabled={isShowingAdvancedFilters}
-    label="Show Advanced Filters"
+    label="Show Filters"
     onClick={toggleAdvancedFilters}
 />

@@ -21,7 +21,7 @@
 <Card
     padding="none"
     size="xl"
-    class={`relative border-2 text-gray-900 dark:bg-bazaar-background dark:text-bazaar-tan700 dark:border-bazaar-orange`}
+    class={`relative border text-gray-900 dark:bg-bazaar-background dark:text-bazaar-tan700 dark:border-bazaar-orange`}
     {id}
 >
     <div

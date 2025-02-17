@@ -12,7 +12,7 @@
 
 <Card
     padding="none"
-    class={`text-gray-900 border-2 dark:text-white dark:bg-bazaar-background dark:text-bazaar-tan700 border-tiers-${tierType.toLowerCase()}-400 dark:border-tiers-${tierType.toLowerCase()}-400`}
+    class={`text-gray-900 border dark:text-white dark:bg-bazaar-background dark:text-bazaar-tan700 border-tiers-${tierType.toLowerCase()}-400 dark:border-tiers-${tierType.toLowerCase()}-400`}
 >
     <div class="flex items-start gap-4 py-2 pr-2">
         <div class="w-16 flex-shrink-0">
