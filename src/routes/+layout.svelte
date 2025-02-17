@@ -51,10 +51,10 @@
             <span
                 class="self-center whitespace-nowrap text-xl font-semibold dark:text-bazaar-tan700 hover:text-bazaar-orange dark:hover:text-bazaar-orange relative z-10"
             >
-                <!-- How Bazaar -->
-                <Badge border large color="green" class="whitespace-nowrap">
+                How Bazaar
+                <!-- <Badge border large color="green" class="whitespace-nowrap">
                     Updated Feb 05
-                </Badge>
+                </Badge> -->
             </span>
         </NavBrand>
 
@@ -100,11 +100,6 @@
                 class="md:p-4"
                 href={`/monsters${$page.url.search}`}
                 on:click={onNavLiClick}>Monsters</NavLi
-            >
-            <NavLi
-                class="md:p-4"
-                href={`/shops${$page.url.search}`}
-                on:click={onNavLiClick}>Shops</NavLi
             >
             <NavLi
                 class="md:p-4"
