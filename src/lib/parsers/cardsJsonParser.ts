@@ -445,11 +445,6 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
         const tierMap = getTierMap(card);
         const remarks = [] as string[];
 
-        if (card.Localization.Title.Text === "Truffles") {
-            console.log('yo');
-            debugger;
-        }
-
         let tiers = Object.fromEntries((Object.entries(tierMap) as Entries<typeof tierMap>).map(
             ([tierName, tier]) => {
                 let rawTooltips = tier.TooltipIds

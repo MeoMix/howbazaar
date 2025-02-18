@@ -12,19 +12,23 @@ export function getItems(
     const monsterEncounterDays = getMonsterEncounterDays(itemCards, skillCards, combatEncounterCards, monsters, dayHours);
 
     const mappedItemCards = itemCards.map(itemCard => {
-        const combatEncounters = monsterEncounterDays.flatMap(day =>
-            day.groups.flatMap(group =>
-                group.filter(encounter =>
-                    encounter.items.some(item => item.card.id === itemCard.id)
-                )
-            )
-        );
+        const uniqueEncounters = new Map<string, { cardId: string; cardName: string }>();
+
+        monsterEncounterDays.forEach(day => {
+            day.groups.forEach(group => {
+                group.forEach(encounter => {
+                    if (encounter.items.some(item => item.card.id === itemCard.id)) {
+                        uniqueEncounters.set(encounter.cardName, { cardId: encounter.cardId, cardName: encounter.cardName });
+                    }
+                });
+            });
+        });
 
         return {
             ...itemCard,
-            combatEncounters: combatEncounters
-                .sort((a, b) => a.level - b.level || a.cardName.localeCompare(b.cardName))
-                .map(({ cardId, cardName }) => ({ cardId, cardName })),
+            combatEncounters: Array.from(uniqueEncounters.values()).sort(
+                (a, b) => a.cardId.localeCompare(b.cardId)
+            ),
         };
     });
 
