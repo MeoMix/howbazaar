@@ -138,8 +138,8 @@ function matchesMonsterSearchText(
     if (lowerSearchText === '') return true;
 
     return substringMatch(monster.cardName, lowerSearchText) || (
-        monster.items.filter(item => matchesCardSearchText(item.card, lowerSearchText, false, false)).length > 0 ||
-        monster.skills.filter(skill => matchesCardSearchText(skill.card, lowerSearchText, false, false)).length > 0
+        monster.items.filter(item => matchesCardSearchText(item.card, lowerSearchText, false)).length > 0 ||
+        monster.skills.filter(skill => matchesCardSearchText(skill.card, lowerSearchText, false)).length > 0
     );
 }
 
