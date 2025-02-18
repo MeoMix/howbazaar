@@ -18166,7 +18166,7 @@ const data: ParsedItemCard[] = [
       "Bronze": {
         "tooltips": [
           "Cooldown 10 seconds",
-          "Lifesteal 100",
+          "Lifesteal",
           "Deal 20 damage.",
           "Your Weapons with lifesteal gain +20 damage for the fight."
         ]
@@ -18174,7 +18174,7 @@ const data: ParsedItemCard[] = [
       "Silver": {
         "tooltips": [
           "Cooldown 10 seconds",
-          "Lifesteal 100",
+          "Lifesteal",
           "Deal 40 damage.",
           "Your Weapons with lifesteal gain +40 damage for the fight."
         ]
@@ -18182,7 +18182,7 @@ const data: ParsedItemCard[] = [
       "Gold": {
         "tooltips": [
           "Cooldown 10 seconds",
-          "Lifesteal 100",
+          "Lifesteal",
           "Deal 60 damage.",
           "Your Weapons with lifesteal gain +60 damage for the fight."
         ]
@@ -18190,7 +18190,7 @@ const data: ParsedItemCard[] = [
       "Diamond": {
         "tooltips": [
           "Cooldown 10 seconds",
-          "Lifesteal 100",
+          "Lifesteal",
           "Deal 80 damage.",
           "Your Weapons with lifesteal gain +80 damage for the fight."
         ]
@@ -18273,7 +18273,7 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 10 seconds",
-      "Lifesteal 100",
+      "Lifesteal",
       "Deal (20/40/60/80) damage.",
       "Your Weapons with lifesteal gain (+20/+40/+60/+80) damage for the fight."
     ],
@@ -29450,7 +29450,7 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Cooldown 6 seconds",
           "Multicast 2",
-          "Lifesteal 100",
+          "Lifesteal",
           "Crit Chance 10%",
           "Deal 10 Damage.",
           "This deals double Crit damage."
@@ -29460,7 +29460,7 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Cooldown 6 seconds",
           "Multicast 2",
-          "Lifesteal 100",
+          "Lifesteal",
           "Crit Chance 10%",
           "Deal 20 Damage.",
           "This deals double Crit damage."
@@ -29470,7 +29470,7 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Cooldown 6 seconds",
           "Multicast 2",
-          "Lifesteal 100",
+          "Lifesteal",
           "Crit Chance 10%",
           "Deal 40 Damage.",
           "This deals double Crit damage."
@@ -29480,7 +29480,7 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Cooldown 6 seconds",
           "Multicast 2",
-          "Lifesteal 100",
+          "Lifesteal",
           "Crit Chance 10%",
           "Deal 80 Damage.",
           "This deals double Crit damage."
@@ -29565,7 +29565,7 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Multicast 2",
-      "Lifesteal 100",
+      "Lifesteal",
       "Crit Chance 10%",
       "Deal (10/20/40/80) Damage.",
       "This deals double Crit damage."
@@ -32138,7 +32138,7 @@ const data: ParsedItemCard[] = [
       "Bronze": {
         "tooltips": [
           "Cooldown 6 seconds",
-          "Lifesteal 100",
+          "Lifesteal",
           "Deal 5 Damage.",
           "When you poison, this gains 5 damage for the fight."
         ]
@@ -32146,7 +32146,7 @@ const data: ParsedItemCard[] = [
       "Silver": {
         "tooltips": [
           "Cooldown 6 seconds",
-          "Lifesteal 100",
+          "Lifesteal",
           "Deal 10 Damage.",
           "When you poison, this gains 10 damage for the fight."
         ]
@@ -32154,7 +32154,7 @@ const data: ParsedItemCard[] = [
       "Gold": {
         "tooltips": [
           "Cooldown 6 seconds",
-          "Lifesteal 100",
+          "Lifesteal",
           "Deal 20 Damage.",
           "When you poison, this gains 15 damage for the fight."
         ]
@@ -32162,7 +32162,7 @@ const data: ParsedItemCard[] = [
       "Diamond": {
         "tooltips": [
           "Cooldown 6 seconds",
-          "Lifesteal 100",
+          "Lifesteal",
           "Deal 40 Damage.",
           "When you poison, this gains 20 damage for the fight."
         ]
@@ -32247,7 +32247,7 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
-      "Lifesteal 100",
+      "Lifesteal",
       "Deal (5/10/20/40) Damage.",
       "When you poison, this gains (5/10/15/20) damage for the fight."
     ],
@@ -34053,7 +34053,7 @@ const data: ParsedItemCard[] = [
       "Bronze": {
         "tooltips": [
           "Cooldown 9 seconds",
-          "Lifesteal 100",
+          "Lifesteal",
           "Deal 5 damage.",
           "Slow 1 item for 1 second(s)."
         ]
@@ -34061,7 +34061,7 @@ const data: ParsedItemCard[] = [
       "Silver": {
         "tooltips": [
           "Cooldown 9 seconds",
-          "Lifesteal 100",
+          "Lifesteal",
           "Deal 10 damage.",
           "Slow 1 item for 2 second(s)."
         ]
@@ -34069,7 +34069,7 @@ const data: ParsedItemCard[] = [
       "Gold": {
         "tooltips": [
           "Cooldown 9 seconds",
-          "Lifesteal 100",
+          "Lifesteal",
           "Deal 20 damage.",
           "Slow 1 item for 3 second(s)."
         ]
@@ -34077,7 +34077,7 @@ const data: ParsedItemCard[] = [
       "Diamond": {
         "tooltips": [
           "Cooldown 9 seconds",
-          "Lifesteal 100",
+          "Lifesteal",
           "Deal 40 damage.",
           "Slow 1 item for 4 second(s)."
         ]
@@ -34161,7 +34161,7 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 9 seconds",
-      "Lifesteal 100",
+      "Lifesteal",
       "Deal (5/10/20/40) damage.",
       "Slow 1 item for (1/2/3/4) second(s)."
     ],
@@ -38800,7 +38800,7 @@ const data: ParsedItemCard[] = [
       "Gold": {
         "tooltips": [
           "Cooldown 3 seconds",
-          "Lifesteal 100",
+          "Lifesteal",
           "Deal 10 damage.",
           "While your enemy has Poison, this has +50% Crit Chance."
         ]
@@ -38808,7 +38808,7 @@ const data: ParsedItemCard[] = [
       "Diamond": {
         "tooltips": [
           "Cooldown 3 seconds",
-          "Lifesteal 100",
+          "Lifesteal",
           "Deal 20 damage.",
           "While your enemy has Poison, this has +100% Crit Chance."
         ]
@@ -38898,7 +38898,7 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 3 seconds",
-      "Lifesteal 100",
+      "Lifesteal",
       "Deal (10/20) damage.",
       "While your enemy has Poison, this has (+50%/+100%) Crit Chance."
     ],
@@ -43201,7 +43201,7 @@ const data: ParsedItemCard[] = [
       "Gold": {
         "tooltips": [
           "Cooldown 8 seconds",
-          "Lifesteal 100",
+          "Lifesteal",
           "Deal 50 damage.",
           "The weapon to the left of this has lifesteal."
         ]
@@ -43209,7 +43209,7 @@ const data: ParsedItemCard[] = [
       "Diamond": {
         "tooltips": [
           "Cooldown 8 seconds",
-          "Lifesteal 100",
+          "Lifesteal",
           "Deal 100 damage.",
           "The weapon to the left of this has lifesteal."
         ]
@@ -43294,7 +43294,7 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 8 seconds",
-      "Lifesteal 100",
+      "Lifesteal",
       "Deal (50/100) damage.",
       "The weapon to the left of this has lifesteal."
     ],
@@ -49355,28 +49355,28 @@ const data: ParsedItemCard[] = [
       "Bronze": {
         "tooltips": [
           "Cooldown 4 seconds",
-          "Lifesteal 100",
+          "Lifesteal",
           "Deal 14 damage."
         ]
       },
       "Silver": {
         "tooltips": [
           "Cooldown 4 seconds",
-          "Lifesteal 100",
+          "Lifesteal",
           "Deal 20 damage."
         ]
       },
       "Gold": {
         "tooltips": [
           "Cooldown 4 seconds",
-          "Lifesteal 100",
+          "Lifesteal",
           "Deal 28 damage."
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 4 seconds",
-          "Lifesteal 100",
+          "Lifesteal",
           "Deal 40 damage."
         ]
       },
@@ -49459,7 +49459,7 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
-      "Lifesteal 100",
+      "Lifesteal",
       "Deal (14/20/28/40) damage."
     ],
     "remarks": []

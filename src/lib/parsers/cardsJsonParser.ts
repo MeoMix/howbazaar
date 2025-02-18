@@ -458,7 +458,7 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
 
                 let tooltips = getDisplayedTooltips(rawTooltips, abilities, auras, tier.Attributes);
                 let attributes = getDisplayedAttributes(tier.Attributes);
-                let attributeTooltips = attributes.map(attribute => `${attribute.name} ${Math.round(attribute.value)}${attribute.valueDescriptor ?? ""}`.trim());
+                let attributeTooltips = attributes.map(attribute => `${attribute.name} ${attribute.name === "Lifesteal" ? "" : Math.round(attribute.value)}${attribute.valueDescriptor ?? ""}`.trim());
 
                 return [tierName, {
                     tooltips: [...attributeTooltips, ...tooltips],
@@ -515,11 +515,11 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
                         if (aura.Action.$type === "TAuraActionCardModifyAttribute" && aura.Action.Target?.$type === "TTargetCardSelf") {
                             // TODO: Why do I need exceptions here?
                             if (
-                                (card.Localization.Title.Text === "Flamethrower" && enchantmentType === "Toxic") || 
-                                (card.Localization.Title.Text === "Beach Ball" && (enchantmentType === "Restorative" || enchantmentType === "Shielded" || enchantmentType === "Toxic"|| enchantmentType === "Fiery" )) ||
-                                (card.Localization.Title.Text === "Astrolabe" && (enchantmentType === "Restorative" || enchantmentType === "Shielded" || enchantmentType === "Toxic"|| enchantmentType === "Fiery" )) ||
-                                (card.Localization.Title.Text === "Forklift" && (enchantmentType === "Restorative" || enchantmentType === "Shielded" || enchantmentType === "Toxic"|| enchantmentType === "Fiery" )) ||
-                                (card.Localization.Title.Text === "Rowboat" && (enchantmentType === "Restorative" || enchantmentType === "Shielded" || enchantmentType === "Toxic"|| enchantmentType === "Fiery" ))
+                                (card.Localization.Title.Text === "Flamethrower" && enchantmentType === "Toxic") ||
+                                (card.Localization.Title.Text === "Beach Ball" && (enchantmentType === "Restorative" || enchantmentType === "Shielded" || enchantmentType === "Toxic" || enchantmentType === "Fiery")) ||
+                                (card.Localization.Title.Text === "Astrolabe" && (enchantmentType === "Restorative" || enchantmentType === "Shielded" || enchantmentType === "Toxic" || enchantmentType === "Fiery")) ||
+                                (card.Localization.Title.Text === "Forklift" && (enchantmentType === "Restorative" || enchantmentType === "Shielded" || enchantmentType === "Toxic" || enchantmentType === "Fiery")) ||
+                                (card.Localization.Title.Text === "Rowboat" && (enchantmentType === "Restorative" || enchantmentType === "Shielded" || enchantmentType === "Toxic" || enchantmentType === "Fiery"))
                             ) {
                                 return true;
                             }
@@ -662,7 +662,7 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
         if (name === "Security Camera") {
             remarks.push("Restorative Enchantment is implemented weird. Crit Chance scales with item tier, so 20% at Bronze or 50% at Diamond. This is the only enchant in the game which scales with tier. Expect this to change.")
         }
-        
+
         if (name === "Open Sign") {
             remarks.push("Deadly Enchantment is bugged and doesn't work in the current patch. Do not enchant Open Sign with Deadly.");
         }
@@ -738,7 +738,7 @@ function parseSkillCards(cardsJson: CardsJson): ParsedSkillCard[] {
 
                 let tooltips = getDisplayedTooltips(rawTooltips, abilities, auras, tier.Attributes);
                 let attributes = getDisplayedAttributes(tier.Attributes);
-                let attributeTooltips = attributes.map(attribute => `${attribute.name} ${Math.round(attribute.value)}${attribute.valueDescriptor ?? ""}`.trim());
+                let attributeTooltips = attributes.map(attribute => `${attribute.name} ${attribute.name === "Lifesteal" ? "" : Math.round(attribute.value)}${attribute.valueDescriptor ?? ""}`.trim());
 
                 return [tierName, {
                     tooltips: [...attributeTooltips, ...tooltips],
