@@ -67,71 +67,78 @@
 </script>
 
 <div class="mt-8 mb-4">
-    <SearchInput placeholder="Search items..." bind:value={searchText} onClear={clearSearchInput} />
-
-    <div class="flex gap-2 mt-2">
-        <AdvancedFilterToggle bind:isShowingAdvancedFilters />
-
-        <FilterToggle
-            isEnabled={isSearchEnchantments}
-            label="Search Enchantments"
-            onClick={() => (isSearchEnchantments = !isSearchEnchantments)}
+    <div class="flex gap-2 items-center">
+        <SearchInput
+            placeholder="Search items..."
+            bind:value={searchText}
+            onClear={clearSearchInput}
         />
 
-        <Button
-            size="xs"
-            outline
-            pill
-            color={"red"}
-            on:click={clearFilters}
-            class="ml-auto transition-colors focus:outline-none border"
-        >
-            Clear Filters
-        </Button>
+        <AdvancedFilterToggle bind:isShowingAdvancedFilters />
     </div>
 
     {#if isShowingAdvancedFilters}
-        <div class="grid grid-cols-2 mt-4 gap-y-4">
-            <div class="col-span-full">
-                <MultiSelectTriFilter
-                    label="Tags"
-                    options={tagOptions}
-                    bind:triStates={tagStates}
-                    bind:isMatchAny={isMatchAnyTag}
-                />
-            </div>
-            <MultiSelectFilter
-                label="Heroes"
-                options={heroOptions}
-                bind:selectedOptionValues={selectedHeroes}
-            />
-            <MultiSelectFilter
-                label="Starting Tiers"
-                options={minimumTierOptions}
-                bind:selectedOptionValues={selectedTiers}
-            />
-            <MultiSelectFilter
-                label="Sizes"
-                options={sizeOptions}
-                bind:selectedOptionValues={selectedSizes}
-            />
-
-            <div>
-                <Label
-                    class="mb-2 font-semibold text-lg dark:text-bazaar-tan700"
-                    >Misc</Label
-                >
-
-                <div class="flex flex-wrap gap-2">
-                    <FilterToggle
-                        isEnabled={isMonsterDropsOnly}
-                        label={"Monster Drops Only"}
-                        onClick={() => {
-                            isMonsterDropsOnly = !isMonsterDropsOnly;
-                        }}
+        <div class="flex flex-col gap-y-4">
+            <div class="grid grid-cols-2 mt-4 gap-y-4">
+                <div class="col-span-full">
+                    <MultiSelectTriFilter
+                        label="Tags"
+                        options={tagOptions}
+                        bind:triStates={tagStates}
+                        bind:isMatchAny={isMatchAnyTag}
                     />
                 </div>
+                <MultiSelectFilter
+                    label="Heroes"
+                    options={heroOptions}
+                    bind:selectedOptionValues={selectedHeroes}
+                />
+                <MultiSelectFilter
+                    label="Starting Tiers"
+                    options={minimumTierOptions}
+                    bind:selectedOptionValues={selectedTiers}
+                />
+                <MultiSelectFilter
+                    label="Sizes"
+                    options={sizeOptions}
+                    bind:selectedOptionValues={selectedSizes}
+                />
+
+                <div>
+                    <Label
+                        class="mb-2 font-semibold text-lg dark:text-bazaar-tan700"
+                        >Misc</Label
+                    >
+
+                    <div class="flex flex-wrap gap-2">
+                        <FilterToggle
+                            isEnabled={isMonsterDropsOnly}
+                            label={"Monster Drops Only"}
+                            onClick={() => {
+                                isMonsterDropsOnly = !isMonsterDropsOnly;
+                            }}
+                        />
+
+                        <FilterToggle
+                            isEnabled={isSearchEnchantments}
+                            label="Search Enchantments"
+                            onClick={() =>
+                                (isSearchEnchantments = !isSearchEnchantments)}
+                        />
+                    </div>
+                </div>
             </div>
+
+            <Button
+                size="xs"
+                outline
+                pill
+                color={"red"}
+                on:click={clearFilters}
+                class="mt-4 transition-colors focus:outline-none border self-center w-auto"
+            >
+                Clear Filters
+            </Button>
         </div>
     {/if}
 </div>

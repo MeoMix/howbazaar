@@ -4,12 +4,12 @@
     let {
         isChecked,
         onClick,
-        label,
+        label = "",
         offLabel = "",
     }: {
         isChecked: boolean;
         onClick: () => void;
-        label: string;
+        label?: string;
         offLabel?: string;
     } = $props();
 </script>

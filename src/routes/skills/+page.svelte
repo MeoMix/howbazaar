@@ -17,6 +17,7 @@
     import type { PageData } from "./$types";
     import { skillsStore } from "$lib/stores/skillsStore";
     import Select from "$lib/components/Select.svelte";
+    import { Label } from "flowbite-svelte";
 
     const { data }: { data: PageData } = $props();
 
@@ -135,13 +136,18 @@
         {/snippet}
 
         {#snippet headerControls()}
-            <Select
-                options={sortOptions}
-                selectedOption={selectedSortOption}
-                onSelectOption={(option) => {
-                    selectedSortOption = option;
-                }}
-            />
+            <div class="flex items-center space-x-2">
+                <Label class="dark:text-bazaar-tan700">
+                    Sort by
+                </Label>
+                <Select
+                    options={sortOptions}
+                    selectedOption={selectedSortOption}
+                    onSelectOption={(option) => {
+                        selectedSortOption = option;
+                    }}
+                />
+            </div>
         {/snippet}
 
         <LazyLoadList

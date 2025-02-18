@@ -14,7 +14,7 @@
         dayOptions: Option[];
         searchText: string;
         selectedDay: number | undefined;
-        onSelectDay: () => void,
+        onSelectDay: () => void;
     } = $props();
 
     function clearFilters() {
@@ -34,27 +34,31 @@
 </script>
 
 <div class="mt-8 mb-4">
-    <SearchInput placeholder="Search monsters..." bind:value={searchText} onClear={clearSearchInput} />
+    <SearchInput
+        placeholder="Search monsters..."
+        bind:value={searchText}
+        onClear={clearSearchInput}
+    />
 
-    <div class="flex gap-2 mt-2">
+    <div class="flex flex-col gap-y-4">
+        <div class="grid grid-cols-1 mt-4">
+            <SingleSelectFilter
+                label="Day"
+                options={dayOptions}
+                onSelect={onSelectDay}
+                bind:selectedOptionValue={selectedDay}
+            />
+        </div>
+
         <Button
             size="xs"
             outline
             pill
             color={"red"}
             on:click={clearFilters}
-            class="ml-auto transition-colors focus:outline-none border"
+            class="mt-4 transition-colors focus:outline-none border self-center w-auto"
         >
             Clear Filters
         </Button>
-    </div>
-
-    <div class="grid grid-cols-1 mt-4">
-        <SingleSelectFilter
-            label="Day"
-            options={dayOptions}
-            onSelect={onSelectDay}
-            bind:selectedOptionValue={selectedDay}
-        />
     </div>
 </div>

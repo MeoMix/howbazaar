@@ -38,7 +38,7 @@
     });
 </script>
 
-<div class="relative w-full">
+<div class="relative flex-1">
     <!-- svelte-ignore a11y_autofocus -->
     <input
         bind:this={inputElement}
@@ -50,20 +50,20 @@
     />
     <div class="absolute inset-y-0 right-2 flex items-center justify-center">
         {#if value === ""}
-            <Badge
-                rounded
-                border
-                class="bg-white dark:bg-bazaar-background text-gray-500 dark:text-bazaar-tan700 dark:border-bazaar-brown600"
-                >ctrl + k</Badge
-            >
+          <Badge
+            rounded
+            border
+            class="bg-white dark:bg-bazaar-background text-gray-500 dark:text-bazaar-tan700 dark:border-bazaar-brown600"
+            >ctrl + k</Badge
+          >
         {:else}
-            <button
-                onclick={onClear}
-                type="button"
-                class="flex justify-center w-10 text-gray-500 dark:text-bazaar-tan700 hover:text-gray-900 dark:hover:text-bazaar-orange"
-            >
-                <CloseCircleSolid class="h-4 w-4" />
-            </button>
+          <button
+            onclick={onClear}
+            type="button"
+            class="flex items-center justify-center w-10 h-full text-gray-500 dark:text-bazaar-tan700 hover:text-gray-900 dark:hover:text-bazaar-orange"
+          >
+            <CloseCircleSolid class="h-4 w-4" />
+          </button>
         {/if}
-    </div>
+      </div>
 </div>

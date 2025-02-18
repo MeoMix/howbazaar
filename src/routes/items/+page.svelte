@@ -19,6 +19,7 @@
     import { fetchJson } from "$lib/utils/fetchUtils";
     import Switch from "$lib/components/Switch.svelte";
     import Select from "$lib/components/Select.svelte";
+    import { Label } from "flowbite-svelte";
 
     const { data }: { data: PageData } = $props();
 
@@ -147,17 +148,23 @@
         {/snippet}
 
         {#snippet headerControls()}
+            <div class="flex items-center space-x-2">
+                <Label class="dark:text-bazaar-tan700">
+                    Sort by
+                </Label>
+                <Select
+                    options={sortOptions}
+                    selectedOption={selectedSortOption}
+                    onSelectOption={(option) => {
+                        selectedSortOption = option;
+                    }}
+                />
+            </div>
+
             <Switch
                 isChecked={areEnchantmentsShown}
                 onClick={onToggleEnchantments}
-                label="Show Enchantments"
-            />
-            <Select
-                options={sortOptions}
-                selectedOption={selectedSortOption}
-                onSelectOption={(option) => {
-                    selectedSortOption = option;
-                }}
+                offLabel="Show Enchantments"
             />
         {/snippet}
 

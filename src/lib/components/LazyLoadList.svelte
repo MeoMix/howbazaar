@@ -42,12 +42,12 @@
 
 <div class="space-y-4">
     <div class="flex justify-between items-center">
-        <div class="text-lg flex-grow">
+        <div class="font-semibold flex-grow">
             {items.length}
             {listItemName}{items.length === 1 ? "" : "s"}
         </div>
     
-        <div class="flex space-x-2">
+        <div class="flex space-x-4 items-center">
             {#if headerControls}
                 {@render headerControls()}
             {/if}

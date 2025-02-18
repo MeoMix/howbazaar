@@ -64,63 +64,69 @@
 </script>
 
 <div class="mt-8 mb-4">
-    <SearchInput placeholder="Search skills..." bind:value={searchText} onClear={clearSearchInput} />
+    <div class="flex gap-2 items-center">
+        <SearchInput
+            placeholder="Search skills..."
+            bind:value={searchText}
+            onClear={clearSearchInput}
+        />
 
-    <div class="flex gap-2 mt-2">
         <AdvancedFilterToggle bind:isShowingAdvancedFilters />
-
-        <Button
-            size="xs"
-            outline
-            pill
-            color={"red"}
-            on:click={clearFilters}
-            class="ml-auto transition-colors focus:outline-none border"
-        >
-            Clear Filters
-        </Button>
     </div>
 
     {#if isShowingAdvancedFilters}
-        <div class="grid grid-cols-2 mt-4 gap-y-4">
-            <div class="col-span-full">
-                <MultiSelectTriFilter
-                    label="Tags"
-                    options={tagOptions}
-                    bind:triStates={tagStates}
-                    bind:isMatchAny={isMatchAnyTag}
-                />
-            </div>
-
-            <MultiSelectTriFilter
-                label="Heroes"
-                options={heroOptions}
-                bind:triStates={heroStates}
-                bind:isMatchAny={isMatchAnyHero}
-            />
-
-            <MultiSelectFilter
-                label="Starting Tiers"
-                options={minimumTierOptions}
-                bind:selectedOptionValues={selectedTiers}
-            />
-
-            <div>
-                <Label
-                    class="mb-2 font-semibold text-lg dark:text-bazaar-tan700"
-                    >Misc</Label
-                >
-
-                <div class="flex flex-wrap gap-2">
-                    <FilterToggle
-                        isEnabled={isMonsterDropsOnly}
-                        label={"Monster Drops Only"}
-                        onClick={() => {
-                            isMonsterDropsOnly = !isMonsterDropsOnly;
-                        }}
+        <div class="flex flex-col gap-y-4">
+            <div class="grid grid-cols-2 mt-4 gap-y-4">
+                <div class="col-span-full">
+                    <MultiSelectTriFilter
+                        label="Tags"
+                        options={tagOptions}
+                        bind:triStates={tagStates}
+                        bind:isMatchAny={isMatchAnyTag}
                     />
                 </div>
+
+                <MultiSelectTriFilter
+                    label="Heroes"
+                    options={heroOptions}
+                    bind:triStates={heroStates}
+                    bind:isMatchAny={isMatchAnyHero}
+                />
+
+                <MultiSelectFilter
+                    label="Starting Tiers"
+                    options={minimumTierOptions}
+                    bind:selectedOptionValues={selectedTiers}
+                />
+
+                <div>
+                    <Label
+                        class="mb-2 font-semibold text-lg dark:text-bazaar-tan700"
+                        >Misc</Label
+                    >
+
+                    <div class="flex flex-wrap gap-2">
+                        <FilterToggle
+                            isEnabled={isMonsterDropsOnly}
+                            label={"Monster Drops Only"}
+                            onClick={() => {
+                                isMonsterDropsOnly = !isMonsterDropsOnly;
+                            }}
+                        />
+                    </div>
+                </div>
             </div>
+
+            <Button
+                size="xs"
+                outline
+                pill
+                color={"red"}
+                on:click={clearFilters}
+                class="mt-4 transition-colors focus:outline-none border self-center w-auto"
+            >
+                Clear Filters
+            </Button>
         </div>
     {/if}
 </div>
