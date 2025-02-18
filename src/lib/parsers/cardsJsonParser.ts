@@ -313,6 +313,10 @@ function getDisplayedAttributes(attributes: Tier["Attributes"]) {
                 formattedName = "Cooldown";
             }
 
+            if (attributeName === "AmmoMax") {
+                formattedName = "Ammo";
+            }
+
             // Initialize valueDescriptor and adjust tierAttributeValue if >= 1000
             let valueDescriptor = null;
             if (attributeValue >= 1000) {

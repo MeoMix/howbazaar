@@ -2703,28 +2703,28 @@ const data: ParsedItemCard[] = [
       "Bronze": {
         "tooltips": [
           "Cooldown 8 seconds",
-          "Ammo Max 1",
+          "Ammo 1",
           "Destroy a small item."
         ]
       },
       "Silver": {
         "tooltips": [
           "Cooldown 7 seconds",
-          "Ammo Max 1",
+          "Ammo 1",
           "Destroy a small item."
         ]
       },
       "Gold": {
         "tooltips": [
           "Cooldown 6 seconds",
-          "Ammo Max 1",
+          "Ammo 1",
           "Destroy a small item."
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 5 seconds",
-          "Ammo Max 1",
+          "Ammo 1",
           "Destroy a small item."
         ]
       },
@@ -2800,7 +2800,7 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown (8/7/6/5) seconds",
-      "Ammo Max 1",
+      "Ammo 1",
       "Destroy a small item."
     ],
     "remarks": []
@@ -3443,7 +3443,7 @@ const data: ParsedItemCard[] = [
       "Bronze": {
         "tooltips": [
           "Cooldown 8 seconds",
-          "Ammo Max 1",
+          "Ammo 1",
           "Burn both players 5.",
           "Slow all enemy items for 1 second(s)."
         ]
@@ -3451,7 +3451,7 @@ const data: ParsedItemCard[] = [
       "Silver": {
         "tooltips": [
           "Cooldown 8 seconds",
-          "Ammo Max 1",
+          "Ammo 1",
           "Burn both players 10.",
           "Slow all enemy items for 2 second(s)."
         ]
@@ -3459,7 +3459,7 @@ const data: ParsedItemCard[] = [
       "Gold": {
         "tooltips": [
           "Cooldown 8 seconds",
-          "Ammo Max 1",
+          "Ammo 1",
           "Burn both players 15.",
           "Slow all enemy items for 3 second(s)."
         ]
@@ -3467,7 +3467,7 @@ const data: ParsedItemCard[] = [
       "Diamond": {
         "tooltips": [
           "Cooldown 8 seconds",
-          "Ammo Max 1",
+          "Ammo 1",
           "Burn both players 20.",
           "Slow all enemy items for 4 second(s)."
         ]
@@ -3550,7 +3550,7 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 8 seconds",
-      "Ammo Max 1",
+      "Ammo 1",
       "Burn both players (5/10/15/20).",
       "Slow all enemy items for (1/2/3/4) second(s)."
     ],
@@ -4569,7 +4569,7 @@ const data: ParsedItemCard[] = [
       "Diamond": {
         "tooltips": [
           "Cooldown 2 seconds",
-          "Ammo Max 50",
+          "Ammo 50",
           "Deal damage equal to this item's ammo."
         ]
       },
@@ -4658,7 +4658,7 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 2 seconds",
-      "Ammo Max 50",
+      "Ammo 50",
       "Deal damage equal to this item's ammo."
     ],
     "remarks": []
@@ -5581,7 +5581,7 @@ const data: ParsedItemCard[] = [
       "Bronze": {
         "tooltips": [
           "Cooldown 4 seconds",
-          "Ammo Max 10",
+          "Ammo 10",
           "Adjacent Shield items permanently gain +1 Shield.",
           "This permanently loses 1 Max Ammo and destroy this if it has 0 Max Ammo."
         ]
@@ -5589,7 +5589,7 @@ const data: ParsedItemCard[] = [
       "Silver": {
         "tooltips": [
           "Cooldown 4 seconds",
-          "Ammo Max 10",
+          "Ammo 10",
           "Adjacent Shield items permanently gain +2 Shield.",
           "This permanently loses 1 Max Ammo and destroy this if it has 0 Max Ammo."
         ]
@@ -5597,7 +5597,7 @@ const data: ParsedItemCard[] = [
       "Gold": {
         "tooltips": [
           "Cooldown 4 seconds",
-          "Ammo Max 10",
+          "Ammo 10",
           "Adjacent Shield items permanently gain +3 Shield.",
           "This permanently loses 1 Max Ammo and destroy this if it has 0 Max Ammo."
         ]
@@ -5605,7 +5605,7 @@ const data: ParsedItemCard[] = [
       "Diamond": {
         "tooltips": [
           "Cooldown 4 seconds",
-          "Ammo Max 10",
+          "Ammo 10",
           "Adjacent Shield items permanently gain +4 Shield.",
           "This permanently loses 1 Max Ammo and destroy this if it has 0 Max Ammo."
         ]
@@ -5628,7 +5628,7 @@ const data: ParsedItemCard[] = [
     "enchantments": [],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
-      "Ammo Max 10",
+      "Ammo 10",
       "Adjacent Shield items permanently gain (+1/+2/+3/+4) Shield.",
       "This permanently loses 1 Max Ammo and destroy this if it has 0 Max Ammo."
     ],
@@ -5764,7 +5764,7 @@ const data: ParsedItemCard[] = [
       "Bronze": {
         "tooltips": [
           "Cooldown 4 seconds",
-          "Ammo Max 10",
+          "Ammo 10",
           "Adjacent items permanently gain 1% Crit chance.",
           "This permanently loses 1 Max Ammo and destroy this if it has 0 Max Ammo."
         ]
@@ -5772,7 +5772,7 @@ const data: ParsedItemCard[] = [
       "Silver": {
         "tooltips": [
           "Cooldown 4 seconds",
-          "Ammo Max 10",
+          "Ammo 10",
           "Adjacent items permanently gain 2% Crit chance.",
           "This permanently loses 1 Max Ammo and destroy this if it has 0 Max Ammo."
         ]
@@ -5780,7 +5780,7 @@ const data: ParsedItemCard[] = [
       "Gold": {
         "tooltips": [
           "Cooldown 4 seconds",
-          "Ammo Max 10",
+          "Ammo 10",
           "Adjacent items permanently gain 3% Crit chance.",
           "This permanently loses 1 Max Ammo and destroy this if it has 0 Max Ammo."
         ]
@@ -5788,7 +5788,7 @@ const data: ParsedItemCard[] = [
       "Diamond": {
         "tooltips": [
           "Cooldown 4 seconds",
-          "Ammo Max 10",
+          "Ammo 10",
           "Adjacent items permanently gain 4% Crit chance.",
           "This permanently loses 1 Max Ammo and destroy this if it has 0 Max Ammo."
         ]
@@ -5811,7 +5811,7 @@ const data: ParsedItemCard[] = [
     "enchantments": [],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
-      "Ammo Max 10",
+      "Ammo 10",
       "Adjacent items permanently gain (1%/2%/3%/4%) Crit chance.",
       "This permanently loses 1 Max Ammo and destroy this if it has 0 Max Ammo."
     ],
@@ -9783,7 +9783,7 @@ const data: ParsedItemCard[] = [
       "Bronze": {
         "tooltips": [
           "Cooldown 4 seconds",
-          "Ammo Max 2",
+          "Ammo 2",
           "Deal 25 damage.",
           "Burn 3."
         ]
@@ -9791,7 +9791,7 @@ const data: ParsedItemCard[] = [
       "Silver": {
         "tooltips": [
           "Cooldown 4 seconds",
-          "Ammo Max 2",
+          "Ammo 2",
           "Deal 50 damage.",
           "Burn 6."
         ]
@@ -9799,7 +9799,7 @@ const data: ParsedItemCard[] = [
       "Gold": {
         "tooltips": [
           "Cooldown 4 seconds",
-          "Ammo Max 2",
+          "Ammo 2",
           "Deal 100 damage.",
           "Burn 9."
         ]
@@ -9807,7 +9807,7 @@ const data: ParsedItemCard[] = [
       "Diamond": {
         "tooltips": [
           "Cooldown 4 seconds",
-          "Ammo Max 2",
+          "Ammo 2",
           "Deal 200 damage.",
           "Burn 12."
         ]
@@ -9898,7 +9898,7 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
-      "Ammo Max 2",
+      "Ammo 2",
       "Deal (25/50/100/200) damage.",
       "Burn (3/6/9/12)."
     ],
@@ -11613,21 +11613,21 @@ const data: ParsedItemCard[] = [
       "Silver": {
         "tooltips": [
           "Cooldown 5 seconds",
-          "Ammo Max 1",
+          "Ammo 1",
           "Freeze 1 item(s) for 1 second(s)."
         ]
       },
       "Gold": {
         "tooltips": [
           "Cooldown 5 seconds",
-          "Ammo Max 1",
+          "Ammo 1",
           "Freeze 2 item(s) for 1 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 5 seconds",
-          "Ammo Max 1",
+          "Ammo 1",
           "Freeze 3 item(s) for 1 second(s)."
         ]
       },
@@ -11704,7 +11704,7 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
-      "Ammo Max 1",
+      "Ammo 1",
       "Freeze (1/2/3) item(s) for 1 second(s)."
     ],
     "remarks": []
@@ -12040,7 +12040,7 @@ const data: ParsedItemCard[] = [
       "Bronze": {
         "tooltips": [
           "Cooldown 4 seconds",
-          "Ammo Max 1",
+          "Ammo 1",
           "Crit Chance 25%",
           "Deal 50 damage."
         ]
@@ -12048,7 +12048,7 @@ const data: ParsedItemCard[] = [
       "Silver": {
         "tooltips": [
           "Cooldown 4 seconds",
-          "Ammo Max 1",
+          "Ammo 1",
           "Crit Chance 25%",
           "Deal 100 damage."
         ]
@@ -12056,7 +12056,7 @@ const data: ParsedItemCard[] = [
       "Gold": {
         "tooltips": [
           "Cooldown 4 seconds",
-          "Ammo Max 1",
+          "Ammo 1",
           "Crit Chance 25%",
           "Deal 150 damage."
         ]
@@ -12064,7 +12064,7 @@ const data: ParsedItemCard[] = [
       "Diamond": {
         "tooltips": [
           "Cooldown 4 seconds",
-          "Ammo Max 1",
+          "Ammo 1",
           "Crit Chance 25%",
           "Deal 200 damage."
         ]
@@ -12154,7 +12154,7 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
-      "Ammo Max 1",
+      "Ammo 1",
       "Crit Chance 25%",
       "Deal (50/100/150/200) damage."
     ],
@@ -12649,7 +12649,7 @@ const data: ParsedItemCard[] = [
       "Gold": {
         "tooltips": [
           "Cooldown 10 seconds",
-          "Ammo Max 2",
+          "Ammo 2",
           "Deal 150 damage.",
           "When you use another Ammo item, this gains 1 Multicast for the fight."
         ]
@@ -12657,7 +12657,7 @@ const data: ParsedItemCard[] = [
       "Diamond": {
         "tooltips": [
           "Cooldown 10 seconds",
-          "Ammo Max 2",
+          "Ammo 2",
           "Deal 200 damage.",
           "When you use another Ammo item, this gains 1 Multicast for the fight."
         ]
@@ -12747,7 +12747,7 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 10 seconds",
-      "Ammo Max 2",
+      "Ammo 2",
       "Deal (150/200) damage.",
       "When you use another Ammo item, this gains 1 Multicast for the fight."
     ],
@@ -13670,7 +13670,7 @@ const data: ParsedItemCard[] = [
       "Bronze": {
         "tooltips": [
           "Cooldown 8 seconds",
-          "Ammo Max 2",
+          "Ammo 2",
           "Deal 75 damage.",
           "When this gains Haste, it also gains 5% Crit Chance for the fight."
         ]
@@ -13678,7 +13678,7 @@ const data: ParsedItemCard[] = [
       "Silver": {
         "tooltips": [
           "Cooldown 8 seconds",
-          "Ammo Max 2",
+          "Ammo 2",
           "Deal 150 damage.",
           "When this gains Haste, it also gains 10% Crit Chance for the fight."
         ]
@@ -13686,7 +13686,7 @@ const data: ParsedItemCard[] = [
       "Gold": {
         "tooltips": [
           "Cooldown 8 seconds",
-          "Ammo Max 2",
+          "Ammo 2",
           "Deal 300 damage.",
           "When this gains Haste, it also gains 15% Crit Chance for the fight."
         ]
@@ -13694,7 +13694,7 @@ const data: ParsedItemCard[] = [
       "Diamond": {
         "tooltips": [
           "Cooldown 8 seconds",
-          "Ammo Max 2",
+          "Ammo 2",
           "Deal 600 damage.",
           "When this gains Haste, it also gains 20% Crit Chance for the fight."
         ]
@@ -13785,7 +13785,7 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 8 seconds",
-      "Ammo Max 2",
+      "Ammo 2",
       "Deal (75/150/300/600) damage.",
       "When this gains Haste, it also gains (5%/10%/15%/20%) Crit Chance for the fight."
     ],
@@ -14252,28 +14252,28 @@ const data: ParsedItemCard[] = [
       "Bronze": {
         "tooltips": [
           "Cooldown 3 seconds",
-          "Ammo Max 1",
+          "Ammo 1",
           "Poison both players 4."
         ]
       },
       "Silver": {
         "tooltips": [
           "Cooldown 3 seconds",
-          "Ammo Max 1",
+          "Ammo 1",
           "Poison both players 6."
         ]
       },
       "Gold": {
         "tooltips": [
           "Cooldown 3 seconds",
-          "Ammo Max 1",
+          "Ammo 1",
           "Poison both players 8."
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 3 seconds",
-          "Ammo Max 1",
+          "Ammo 1",
           "Poison both players 10."
         ]
       },
@@ -14356,7 +14356,7 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 3 seconds",
-      "Ammo Max 1",
+      "Ammo 1",
       "Poison both players (4/6/8/10)."
     ],
     "remarks": []
@@ -14967,28 +14967,28 @@ const data: ParsedItemCard[] = [
       "Bronze": {
         "tooltips": [
           "Cooldown 5 seconds",
-          "Ammo Max 1",
+          "Ammo 1",
           "Burn 6."
         ]
       },
       "Silver": {
         "tooltips": [
           "Cooldown 5 seconds",
-          "Ammo Max 1",
+          "Ammo 1",
           "Burn 9."
         ]
       },
       "Gold": {
         "tooltips": [
           "Cooldown 5 seconds",
-          "Ammo Max 1",
+          "Ammo 1",
           "Burn 12."
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 5 seconds",
-          "Ammo Max 1",
+          "Ammo 1",
           "Burn 15."
         ]
       },
@@ -15071,7 +15071,7 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
-      "Ammo Max 1",
+      "Ammo 1",
       "Burn (6/9/12/15)."
     ],
     "remarks": []
@@ -16788,28 +16788,28 @@ const data: ParsedItemCard[] = [
       "Bronze": {
         "tooltips": [
           "Cooldown 4 seconds",
-          "Ammo Max 1",
+          "Ammo 1",
           "Haste your items for 2 second(s)."
         ]
       },
       "Silver": {
         "tooltips": [
           "Cooldown 4 seconds",
-          "Ammo Max 1",
+          "Ammo 1",
           "Haste your items for 4 second(s)."
         ]
       },
       "Gold": {
         "tooltips": [
           "Cooldown 4 seconds",
-          "Ammo Max 1",
+          "Ammo 1",
           "Haste your items for 6 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 4 seconds",
-          "Ammo Max 1",
+          "Ammo 1",
           "Haste your items for 8 second(s)."
         ]
       },
@@ -16886,7 +16886,7 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
-      "Ammo Max 1",
+      "Ammo 1",
       "Haste your items for (2/4/6/8) second(s)."
     ],
     "remarks": []
@@ -17367,7 +17367,7 @@ const data: ParsedItemCard[] = [
       "Silver": {
         "tooltips": [
           "Cooldown 4 seconds",
-          "Ammo Max 2",
+          "Ammo 2",
           "Deal 120 damage.",
           "When you Haste, Reload this 1 Ammo."
         ]
@@ -17375,7 +17375,7 @@ const data: ParsedItemCard[] = [
       "Gold": {
         "tooltips": [
           "Cooldown 4 seconds",
-          "Ammo Max 2",
+          "Ammo 2",
           "Deal 180 damage.",
           "When you Haste, Reload this 1 Ammo."
         ]
@@ -17383,7 +17383,7 @@ const data: ParsedItemCard[] = [
       "Diamond": {
         "tooltips": [
           "Cooldown 4 seconds",
-          "Ammo Max 2",
+          "Ammo 2",
           "Deal 240 damage.",
           "When you Haste, Reload this 1 Ammo."
         ]
@@ -17474,7 +17474,7 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
-      "Ammo Max 2",
+      "Ammo 2",
       "Deal (120/180/240) damage.",
       "When you Haste, Reload this 1 Ammo."
     ],
@@ -18402,7 +18402,7 @@ const data: ParsedItemCard[] = [
       "Silver": {
         "tooltips": [
           "Cooldown 6 seconds",
-          "Ammo Max 6",
+          "Ammo 6",
           "Deal 60 damage.",
           "When you use another Ammo item, charge this 1 second(s)."
         ]
@@ -18410,7 +18410,7 @@ const data: ParsedItemCard[] = [
       "Gold": {
         "tooltips": [
           "Cooldown 6 seconds",
-          "Ammo Max 6",
+          "Ammo 6",
           "Deal 60 damage.",
           "When you use another Ammo item, charge this 2 second(s)."
         ]
@@ -18418,7 +18418,7 @@ const data: ParsedItemCard[] = [
       "Diamond": {
         "tooltips": [
           "Cooldown 6 seconds",
-          "Ammo Max 6",
+          "Ammo 6",
           "Deal 60 damage.",
           "When you use another Ammo item, charge this 3 second(s)."
         ]
@@ -18508,7 +18508,7 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
-      "Ammo Max 6",
+      "Ammo 6",
       "Deal 60 damage.",
       "When you use another Ammo item, charge this (1/2/3) second(s)."
     ],
@@ -19234,28 +19234,28 @@ const data: ParsedItemCard[] = [
       "Bronze": {
         "tooltips": [
           "Cooldown 4 seconds",
-          "Ammo Max 1",
+          "Ammo 1",
           "Shield 40."
         ]
       },
       "Silver": {
         "tooltips": [
           "Cooldown 4 seconds",
-          "Ammo Max 1",
+          "Ammo 1",
           "Shield 80."
         ]
       },
       "Gold": {
         "tooltips": [
           "Cooldown 4 seconds",
-          "Ammo Max 1",
+          "Ammo 1",
           "Shield 150."
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 4 seconds",
-          "Ammo Max 1",
+          "Ammo 1",
           "Shield 300."
         ]
       },
@@ -19338,7 +19338,7 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
-      "Ammo Max 1",
+      "Ammo 1",
       "Shield (40/80/150/300)."
     ],
     "remarks": []
@@ -21808,7 +21808,7 @@ const data: ParsedItemCard[] = [
       "Silver": {
         "tooltips": [
           "Cooldown 5 seconds",
-          "Ammo Max 1",
+          "Ammo 1",
           "Crit Chance 100%",
           "Deal 50 damage.",
           "When you Burn, reload this 1 ammo."
@@ -21817,7 +21817,7 @@ const data: ParsedItemCard[] = [
       "Gold": {
         "tooltips": [
           "Cooldown 5 seconds",
-          "Ammo Max 1",
+          "Ammo 1",
           "Crit Chance 100%",
           "Deal 100 damage.",
           "When you Burn, reload this 1 ammo."
@@ -21826,7 +21826,7 @@ const data: ParsedItemCard[] = [
       "Diamond": {
         "tooltips": [
           "Cooldown 5 seconds",
-          "Ammo Max 1",
+          "Ammo 1",
           "Crit Chance 100%",
           "Deal 200 damage.",
           "When you Burn, reload this 1 ammo."
@@ -21918,7 +21918,7 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
-      "Ammo Max 1",
+      "Ammo 1",
       "Crit Chance 100%",
       "Deal (50/100/200) damage.",
       "When you Burn, reload this 1 ammo."
@@ -24268,28 +24268,28 @@ const data: ParsedItemCard[] = [
       "Bronze": {
         "tooltips": [
           "Cooldown 4 seconds",
-          "Ammo Max 4",
+          "Ammo 4",
           "Charge the item to the left of this 1 second(s)."
         ]
       },
       "Silver": {
         "tooltips": [
           "Cooldown 4 seconds",
-          "Ammo Max 4",
+          "Ammo 4",
           "Charge the item to the left of this 2 second(s)."
         ]
       },
       "Gold": {
         "tooltips": [
           "Cooldown 4 seconds",
-          "Ammo Max 4",
+          "Ammo 4",
           "Charge the item to the left of this 3 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 4 seconds",
-          "Ammo Max 4",
+          "Ammo 4",
           "Charge the item to the left of this 4 second(s)."
         ]
       },
@@ -24372,7 +24372,7 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
-      "Ammo Max 4",
+      "Ammo 4",
       "Charge the item to the left of this (1/2/3/4) second(s)."
     ],
     "remarks": []
@@ -25479,7 +25479,7 @@ const data: ParsedItemCard[] = [
       "Silver": {
         "tooltips": [
           "Cooldown 3 seconds",
-          "Ammo Max 3",
+          "Ammo 3",
           "Deal 33 damage.",
           "When you Crit with another item, Charge this 1 second(s)."
         ]
@@ -25487,7 +25487,7 @@ const data: ParsedItemCard[] = [
       "Gold": {
         "tooltips": [
           "Cooldown 3 seconds",
-          "Ammo Max 3",
+          "Ammo 3",
           "Deal 33 damage.",
           "When you Crit with another item, Charge this 2 second(s)."
         ]
@@ -25495,7 +25495,7 @@ const data: ParsedItemCard[] = [
       "Diamond": {
         "tooltips": [
           "Cooldown 3 seconds",
-          "Ammo Max 3",
+          "Ammo 3",
           "Deal 33 damage.",
           "When you Crit with another item, Charge this 3 second(s)."
         ]
@@ -25586,7 +25586,7 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 3 seconds",
-      "Ammo Max 3",
+      "Ammo 3",
       "Deal 33 damage.",
       "When you Crit with another item, Charge this (1/2/3) second(s)."
     ],
@@ -25995,7 +25995,7 @@ const data: ParsedItemCard[] = [
       "Bronze": {
         "tooltips": [
           "Cooldown 4 seconds",
-          "Ammo Max 2",
+          "Ammo 2",
           "Deal 40 damage.",
           "Slow 1 item for 2 second(s)."
         ]
@@ -26003,7 +26003,7 @@ const data: ParsedItemCard[] = [
       "Silver": {
         "tooltips": [
           "Cooldown 4 seconds",
-          "Ammo Max 2",
+          "Ammo 2",
           "Deal 60 damage.",
           "Slow 1 item for 3 second(s)."
         ]
@@ -26011,7 +26011,7 @@ const data: ParsedItemCard[] = [
       "Gold": {
         "tooltips": [
           "Cooldown 4 seconds",
-          "Ammo Max 2",
+          "Ammo 2",
           "Deal 80 damage.",
           "Slow 1 item for 4 second(s)."
         ]
@@ -26019,7 +26019,7 @@ const data: ParsedItemCard[] = [
       "Diamond": {
         "tooltips": [
           "Cooldown 4 seconds",
-          "Ammo Max 2",
+          "Ammo 2",
           "Deal 100 damage.",
           "Slow 1 item for 5 second(s)."
         ]
@@ -26110,7 +26110,7 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
-      "Ammo Max 2",
+      "Ammo 2",
       "Deal (40/60/80/100) damage.",
       "Slow 1 item for (2/3/4/5) second(s)."
     ],
@@ -27871,7 +27871,7 @@ const data: ParsedItemCard[] = [
       "Gold": {
         "tooltips": [
           "Cooldown 7 seconds",
-          "Ammo Max 1",
+          "Ammo 1",
           "Burn 4.",
           "Poison 2.",
           "Freeze 1 item for 2 second(s).",
@@ -27881,7 +27881,7 @@ const data: ParsedItemCard[] = [
       "Diamond": {
         "tooltips": [
           "Cooldown 7 seconds",
-          "Ammo Max 1",
+          "Ammo 1",
           "Burn 6.",
           "Poison 3.",
           "Freeze 1 item for 3 second(s).",
@@ -27964,7 +27964,7 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
-      "Ammo Max 1",
+      "Ammo 1",
       "Burn (4/6).",
       "Poison (2/3).",
       "Freeze 1 item for (2/3) second(s).",
@@ -29583,21 +29583,21 @@ const data: ParsedItemCard[] = [
       "Silver": {
         "tooltips": [
           "Cooldown 6 seconds",
-          "Ammo Max 1",
+          "Ammo 1",
           "Slow all enemy items for 3 second(s)."
         ]
       },
       "Gold": {
         "tooltips": [
           "Cooldown 6 seconds",
-          "Ammo Max 1",
+          "Ammo 1",
           "Slow all enemy items for 4 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 6 seconds",
-          "Ammo Max 1",
+          "Ammo 1",
           "Slow all enemy items for 5 second(s)."
         ]
       },
@@ -29672,7 +29672,7 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
-      "Ammo Max 1",
+      "Ammo 1",
       "Slow all enemy items for (3/4/5) second(s)."
     ],
     "remarks": []
@@ -30347,7 +30347,7 @@ const data: ParsedItemCard[] = [
       "Silver": {
         "tooltips": [
           "Cooldown 3 seconds",
-          "Ammo Max 2",
+          "Ammo 2",
           "Deal 15 damage.",
           "When you use another Ammo item, this reloads 1 ammo."
         ]
@@ -30355,7 +30355,7 @@ const data: ParsedItemCard[] = [
       "Gold": {
         "tooltips": [
           "Cooldown 3 seconds",
-          "Ammo Max 2",
+          "Ammo 2",
           "Deal 30 damage.",
           "When you use another Ammo item, this reloads 1 ammo."
         ]
@@ -30363,7 +30363,7 @@ const data: ParsedItemCard[] = [
       "Diamond": {
         "tooltips": [
           "Cooldown 3 seconds",
-          "Ammo Max 2",
+          "Ammo 2",
           "Deal 60 damage.",
           "When you use another Ammo item, this reloads 1 ammo."
         ]
@@ -30453,7 +30453,7 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 3 seconds",
-      "Ammo Max 2",
+      "Ammo 2",
       "Deal (15/30/60) damage.",
       "When you use another Ammo item, this reloads 1 ammo."
     ],
@@ -30470,21 +30470,21 @@ const data: ParsedItemCard[] = [
       "Silver": {
         "tooltips": [
           "Cooldown 2 seconds",
-          "Ammo Max 3",
+          "Ammo 3",
           "Increase an enemy item's cooldown by 1 second(s) for the fight."
         ]
       },
       "Gold": {
         "tooltips": [
           "Cooldown 2 seconds",
-          "Ammo Max 3",
+          "Ammo 3",
           "Increase an enemy item's cooldown by 2 second(s) for the fight."
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 2 seconds",
-          "Ammo Max 3",
+          "Ammo 3",
           "Increase an enemy item's cooldown by 3 second(s) for the fight."
         ]
       },
@@ -30560,7 +30560,7 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 2 seconds",
-      "Ammo Max 3",
+      "Ammo 3",
       "Increase an enemy item's cooldown by (1/2/3) second(s) for the fight."
     ],
     "remarks": []
@@ -30940,7 +30940,7 @@ const data: ParsedItemCard[] = [
       "Silver": {
         "tooltips": [
           "Cooldown 4 seconds",
-          "Ammo Max 1",
+          "Ammo 1",
           "Multicast 2",
           "Deal 20 damage.",
           "When you use the Core, reload this."
@@ -30949,7 +30949,7 @@ const data: ParsedItemCard[] = [
       "Gold": {
         "tooltips": [
           "Cooldown 4 seconds",
-          "Ammo Max 1",
+          "Ammo 1",
           "Multicast 2",
           "Deal 30 damage.",
           "When you use the Core, reload this."
@@ -30958,7 +30958,7 @@ const data: ParsedItemCard[] = [
       "Diamond": {
         "tooltips": [
           "Cooldown 4 seconds",
-          "Ammo Max 1",
+          "Ammo 1",
           "Multicast 2",
           "Deal 40 damage.",
           "When you use the Core, reload this."
@@ -31050,7 +31050,7 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
-      "Ammo Max 1",
+      "Ammo 1",
       "Multicast 2",
       "Deal (20/30/40) damage.",
       "When you use the Core, reload this."
@@ -33933,7 +33933,7 @@ const data: ParsedItemCard[] = [
       "Bronze": {
         "tooltips": [
           "Cooldown 4 seconds",
-          "Ammo Max 2",
+          "Ammo 2",
           "Shield 30.",
           "When you sell a Tool, this gains +1 Max Ammo."
         ]
@@ -33941,7 +33941,7 @@ const data: ParsedItemCard[] = [
       "Silver": {
         "tooltips": [
           "Cooldown 4 seconds",
-          "Ammo Max 2",
+          "Ammo 2",
           "Shield 60.",
           "When you sell a Tool, this gains +1 Max Ammo."
         ]
@@ -33949,7 +33949,7 @@ const data: ParsedItemCard[] = [
       "Gold": {
         "tooltips": [
           "Cooldown 4 seconds",
-          "Ammo Max 2",
+          "Ammo 2",
           "Shield 90.",
           "When you sell a Tool, this gains +1 Max Ammo."
         ]
@@ -33957,7 +33957,7 @@ const data: ParsedItemCard[] = [
       "Diamond": {
         "tooltips": [
           "Cooldown 4 seconds",
-          "Ammo Max 2",
+          "Ammo 2",
           "Shield 120.",
           "When you sell a Tool, this gains +1 Max Ammo."
         ]
@@ -34039,7 +34039,7 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
-      "Ammo Max 2",
+      "Ammo 2",
       "Shield (30/60/90/120).",
       "When you sell a Tool, this gains +1 Max Ammo."
     ],
@@ -34641,7 +34641,7 @@ const data: ParsedItemCard[] = [
       "Silver": {
         "tooltips": [
           "Cooldown 8 seconds",
-          "Ammo Max 1",
+          "Ammo 1",
           "Deal 100 damage.",
           "When you Haste, this gains 60 damage for the fight."
         ]
@@ -34649,7 +34649,7 @@ const data: ParsedItemCard[] = [
       "Gold": {
         "tooltips": [
           "Cooldown 8 seconds",
-          "Ammo Max 1",
+          "Ammo 1",
           "Deal 100 damage.",
           "When you Haste, this gains 80 damage for the fight."
         ]
@@ -34657,7 +34657,7 @@ const data: ParsedItemCard[] = [
       "Diamond": {
         "tooltips": [
           "Cooldown 8 seconds",
-          "Ammo Max 1",
+          "Ammo 1",
           "Deal 100 damage.",
           "When you Haste, this gains 100 damage for the fight."
         ]
@@ -34748,7 +34748,7 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 8 seconds",
-      "Ammo Max 1",
+      "Ammo 1",
       "Deal 100 damage.",
       "When you Haste, this gains (60/80/100) damage for the fight."
     ],
@@ -35095,7 +35095,7 @@ const data: ParsedItemCard[] = [
       "Silver": {
         "tooltips": [
           "Cooldown 8 seconds",
-          "Ammo Max 1",
+          "Ammo 1",
           "Deal 100 damage.",
           "When you use another Aquatic or Ammo item, this gains 25 damage for the fight.",
           "If the item is Large, Reload 1 Ammo."
@@ -35104,7 +35104,7 @@ const data: ParsedItemCard[] = [
       "Gold": {
         "tooltips": [
           "Cooldown 8 seconds",
-          "Ammo Max 1",
+          "Ammo 1",
           "Deal 100 damage.",
           "When you use another Aquatic or Ammo item, this gains 50 damage for the fight.",
           "If the item is Large, Reload 1 Ammo."
@@ -35113,7 +35113,7 @@ const data: ParsedItemCard[] = [
       "Diamond": {
         "tooltips": [
           "Cooldown 8 seconds",
-          "Ammo Max 1",
+          "Ammo 1",
           "Deal 100 damage.",
           "When you use another Aquatic or Ammo item, this gains 75 damage for the fight.",
           "If the item is Large, Reload 1 Ammo."
@@ -35206,7 +35206,7 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 8 seconds",
-      "Ammo Max 1",
+      "Ammo 1",
       "Deal 100 damage.",
       "When you use another Aquatic or Ammo item, this gains (25/50/75) damage for the fight.",
       "If the item is Large, Reload 1 Ammo."
@@ -35941,7 +35941,7 @@ const data: ParsedItemCard[] = [
       "Bronze": {
         "tooltips": [
           "Cooldown 2 seconds",
-          "Ammo Max 1",
+          "Ammo 1",
           "Deal 6 damage.",
           "When you use this, reload this 1 Ammo if it is your only weapon."
         ]
@@ -35949,7 +35949,7 @@ const data: ParsedItemCard[] = [
       "Silver": {
         "tooltips": [
           "Cooldown 2 seconds",
-          "Ammo Max 1",
+          "Ammo 1",
           "Deal 12 damage.",
           "When you use this, reload this 1 Ammo if it is your only weapon."
         ]
@@ -35957,7 +35957,7 @@ const data: ParsedItemCard[] = [
       "Gold": {
         "tooltips": [
           "Cooldown 2 seconds",
-          "Ammo Max 1",
+          "Ammo 1",
           "Deal 18 damage.",
           "When you use this, reload this 1 Ammo if it is your only weapon."
         ]
@@ -35965,7 +35965,7 @@ const data: ParsedItemCard[] = [
       "Diamond": {
         "tooltips": [
           "Cooldown 2 seconds",
-          "Ammo Max 1",
+          "Ammo 1",
           "Deal 24 damage.",
           "When you use this, reload this 1 Ammo if it is your only weapon."
         ]
@@ -36055,7 +36055,7 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 2 seconds",
-      "Ammo Max 1",
+      "Ammo 1",
       "Deal (6/12/18/24) damage.",
       "When you use this, reload this 1 Ammo if it is your only weapon."
     ],
@@ -37083,7 +37083,7 @@ const data: ParsedItemCard[] = [
       "Bronze": {
         "tooltips": [
           "Cooldown 3 seconds",
-          "Ammo Max 2",
+          "Ammo 2",
           "Multicast 2",
           "Deal 25 damage."
         ]
@@ -37091,7 +37091,7 @@ const data: ParsedItemCard[] = [
       "Silver": {
         "tooltips": [
           "Cooldown 3 seconds",
-          "Ammo Max 2",
+          "Ammo 2",
           "Multicast 2",
           "Deal 50 damage."
         ]
@@ -37099,7 +37099,7 @@ const data: ParsedItemCard[] = [
       "Gold": {
         "tooltips": [
           "Cooldown 3 seconds",
-          "Ammo Max 2",
+          "Ammo 2",
           "Multicast 2",
           "Deal 75 damage."
         ]
@@ -37107,7 +37107,7 @@ const data: ParsedItemCard[] = [
       "Diamond": {
         "tooltips": [
           "Cooldown 3 seconds",
-          "Ammo Max 2",
+          "Ammo 2",
           "Multicast 2",
           "Deal 100 damage."
         ]
@@ -37197,7 +37197,7 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 3 seconds",
-      "Ammo Max 2",
+      "Ammo 2",
       "Multicast 2",
       "Deal (25/50/75/100) damage."
     ],
@@ -37542,7 +37542,7 @@ const data: ParsedItemCard[] = [
       "Silver": {
         "tooltips": [
           "Cooldown 6 seconds",
-          "Ammo Max 1",
+          "Ammo 1",
           "Deal 25 damage.",
           "Burn 6.",
           "Poison 4"
@@ -37551,7 +37551,7 @@ const data: ParsedItemCard[] = [
       "Gold": {
         "tooltips": [
           "Cooldown 6 seconds",
-          "Ammo Max 1",
+          "Ammo 1",
           "Deal 50 damage.",
           "Burn 8.",
           "Poison 6"
@@ -37560,7 +37560,7 @@ const data: ParsedItemCard[] = [
       "Diamond": {
         "tooltips": [
           "Cooldown 6 seconds",
-          "Ammo Max 1",
+          "Ammo 1",
           "Deal 100 damage.",
           "Burn 10.",
           "Poison 8"
@@ -37652,7 +37652,7 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
-      "Ammo Max 1",
+      "Ammo 1",
       "Deal (25/50/100) damage.",
       "Burn (6/8/10).",
       "Poison (4/6/8)"
@@ -38682,7 +38682,7 @@ const data: ParsedItemCard[] = [
       "Gold": {
         "tooltips": [
           "Cooldown 3 seconds",
-          "Ammo Max 3",
+          "Ammo 3",
           "Deal 24 damage.",
           "When you use an Ammo item, deal 24 damage."
         ]
@@ -38690,7 +38690,7 @@ const data: ParsedItemCard[] = [
       "Diamond": {
         "tooltips": [
           "Cooldown 3 seconds",
-          "Ammo Max 3",
+          "Ammo 3",
           "Deal 32 damage.",
           "When you use an Ammo item, deal 32 damage."
         ]
@@ -38780,7 +38780,7 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 3 seconds",
-      "Ammo Max 3",
+      "Ammo 3",
       "Deal (24/32) damage.",
       "When you use an Ammo item, deal (24/32) damage."
     ],
@@ -40155,28 +40155,28 @@ const data: ParsedItemCard[] = [
       "Bronze": {
         "tooltips": [
           "Cooldown 5 seconds",
-          "Ammo Max 1",
+          "Ammo 1",
           "Slow 2 items for 4 second(s)."
         ]
       },
       "Silver": {
         "tooltips": [
           "Cooldown 5 seconds",
-          "Ammo Max 1",
+          "Ammo 1",
           "Slow 2 items for 6 second(s)."
         ]
       },
       "Gold": {
         "tooltips": [
           "Cooldown 5 seconds",
-          "Ammo Max 1",
+          "Ammo 1",
           "Slow 2 items for 8 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 5 seconds",
-          "Ammo Max 1",
+          "Ammo 1",
           "Slow 2 items for 10 second(s)."
         ]
       },
@@ -40253,7 +40253,7 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
-      "Ammo Max 1",
+      "Ammo 1",
       "Slow 2 items for (4/6/8/10) second(s)."
     ],
     "remarks": []
@@ -40711,28 +40711,28 @@ const data: ParsedItemCard[] = [
       "Bronze": {
         "tooltips": [
           "Cooldown 2 seconds",
-          "Ammo Max 12",
+          "Ammo 12",
           "Deal 2 damage."
         ]
       },
       "Silver": {
         "tooltips": [
           "Cooldown 2 seconds",
-          "Ammo Max 12",
+          "Ammo 12",
           "Deal 4 damage."
         ]
       },
       "Gold": {
         "tooltips": [
           "Cooldown 2 seconds",
-          "Ammo Max 12",
+          "Ammo 12",
           "Deal 8 damage."
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 2 seconds",
-          "Ammo Max 12",
+          "Ammo 12",
           "Deal 16 damage."
         ]
       },
@@ -40821,7 +40821,7 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 2 seconds",
-      "Ammo Max 12",
+      "Ammo 12",
       "Deal (2/4/8/16) damage."
     ],
     "remarks": []
@@ -41722,7 +41722,7 @@ const data: ParsedItemCard[] = [
       "Bronze": {
         "tooltips": [
           "Cooldown 5 seconds",
-          "Ammo Max 1",
+          "Ammo 1",
           "Deal 25 damage.",
           "Burn 4."
         ]
@@ -41730,7 +41730,7 @@ const data: ParsedItemCard[] = [
       "Silver": {
         "tooltips": [
           "Cooldown 5 seconds",
-          "Ammo Max 1",
+          "Ammo 1",
           "Deal 75 damage.",
           "Burn 6."
         ]
@@ -41738,7 +41738,7 @@ const data: ParsedItemCard[] = [
       "Gold": {
         "tooltips": [
           "Cooldown 5 seconds",
-          "Ammo Max 1",
+          "Ammo 1",
           "Deal 150 damage.",
           "Burn 8."
         ]
@@ -41746,7 +41746,7 @@ const data: ParsedItemCard[] = [
       "Diamond": {
         "tooltips": [
           "Cooldown 5 seconds",
-          "Ammo Max 1",
+          "Ammo 1",
           "Deal 250 damage.",
           "Burn 10."
         ]
@@ -41838,7 +41838,7 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
-      "Ammo Max 1",
+      "Ammo 1",
       "Deal (25/75/150/250) damage.",
       "Burn (4/6/8/10)."
     ],
@@ -44284,7 +44284,7 @@ const data: ParsedItemCard[] = [
       "Diamond": {
         "tooltips": [
           "Cooldown 8 seconds",
-          "Ammo Max 1",
+          "Ammo 1",
           "Your weapons gain damage equal to your weakest weapon's damage for the fight. [0]"
         ]
       },
@@ -44365,7 +44365,7 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 8 seconds",
-      "Ammo Max 1",
+      "Ammo 1",
       "Your weapons gain damage equal to your weakest weapon's damage for the fight. [0]"
     ],
     "remarks": []
@@ -45544,7 +45544,7 @@ const data: ParsedItemCard[] = [
       "Silver": {
         "tooltips": [
           "Cooldown 2 seconds",
-          "Ammo Max 8",
+          "Ammo 8",
           "Shield equal to this item's Ammo.",
           "At the start of each day, this gains 1 Max Ammo."
         ]
@@ -45552,7 +45552,7 @@ const data: ParsedItemCard[] = [
       "Gold": {
         "tooltips": [
           "Cooldown 2 seconds",
-          "Ammo Max 8",
+          "Ammo 8",
           "Shield equal to this item's Ammo.",
           "At the start of each day, this gains 2 Max Ammo."
         ]
@@ -45560,7 +45560,7 @@ const data: ParsedItemCard[] = [
       "Diamond": {
         "tooltips": [
           "Cooldown 2 seconds",
-          "Ammo Max 8",
+          "Ammo 8",
           "Shield equal to this item's Ammo.",
           "At the start of each day, this gains 3 Max Ammo."
         ]
@@ -45644,7 +45644,7 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 2 seconds",
-      "Ammo Max 8",
+      "Ammo 8",
       "Shield equal to this item's Ammo.",
       "At the start of each day, this gains (1/2/3) Max Ammo."
     ],
@@ -46748,28 +46748,28 @@ const data: ParsedItemCard[] = [
       "Bronze": {
         "tooltips": [
           "Cooldown 3 seconds",
-          "Ammo Max 3",
+          "Ammo 3",
           "Burn 4."
         ]
       },
       "Silver": {
         "tooltips": [
           "Cooldown 3 seconds",
-          "Ammo Max 3",
+          "Ammo 3",
           "Burn 6."
         ]
       },
       "Gold": {
         "tooltips": [
           "Cooldown 3 seconds",
-          "Ammo Max 3",
+          "Ammo 3",
           "Burn 8."
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 3 seconds",
-          "Ammo Max 3",
+          "Ammo 3",
           "Burn 10."
         ]
       },
@@ -46850,7 +46850,7 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 3 seconds",
-      "Ammo Max 3",
+      "Ammo 3",
       "Burn (4/6/8/10)."
     ],
     "remarks": []
@@ -47382,7 +47382,7 @@ const data: ParsedItemCard[] = [
       "Bronze": {
         "tooltips": [
           "Cooldown 4 seconds",
-          "Ammo Max 10",
+          "Ammo 10",
           "Adjacent Weapons permanently gain +1 Damage.",
           "This permanently loses 1 Max Ammo and destroy this if it has 0 Max Ammo."
         ]
@@ -47390,7 +47390,7 @@ const data: ParsedItemCard[] = [
       "Silver": {
         "tooltips": [
           "Cooldown 4 seconds",
-          "Ammo Max 10",
+          "Ammo 10",
           "Adjacent Weapons permanently gain +2 Damage.",
           "This permanently loses 1 Max Ammo and destroy this if it has 0 Max Ammo."
         ]
@@ -47398,7 +47398,7 @@ const data: ParsedItemCard[] = [
       "Gold": {
         "tooltips": [
           "Cooldown 4 seconds",
-          "Ammo Max 10",
+          "Ammo 10",
           "Adjacent Weapons permanently gain +3 Damage.",
           "This permanently loses 1 Max Ammo and destroy this if it has 0 Max Ammo."
         ]
@@ -47406,7 +47406,7 @@ const data: ParsedItemCard[] = [
       "Diamond": {
         "tooltips": [
           "Cooldown 4 seconds",
-          "Ammo Max 10",
+          "Ammo 10",
           "Adjacent Weapons permanently gain +4 Damage.",
           "This permanently loses 1 Max Ammo and destroy this if it has 0 Max Ammo."
         ]
@@ -47429,7 +47429,7 @@ const data: ParsedItemCard[] = [
     "enchantments": [],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
-      "Ammo Max 10",
+      "Ammo 10",
       "Adjacent Weapons permanently gain (+1/+2/+3/+4) Damage.",
       "This permanently loses 1 Max Ammo and destroy this if it has 0 Max Ammo."
     ],
@@ -47969,7 +47969,7 @@ const data: ParsedItemCard[] = [
       "Gold": {
         "tooltips": [
           "Cooldown 4 seconds",
-          "Ammo Max 6",
+          "Ammo 6",
           "Deal 100 damage.",
           "When you Burn, charge this 1 second(s)."
         ]
@@ -47977,7 +47977,7 @@ const data: ParsedItemCard[] = [
       "Diamond": {
         "tooltips": [
           "Cooldown 4 seconds",
-          "Ammo Max 6",
+          "Ammo 6",
           "Deal 100 damage.",
           "When you Burn, charge this 2 second(s)."
         ]
@@ -48068,7 +48068,7 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
-      "Ammo Max 6",
+      "Ammo 6",
       "Deal 100 damage.",
       "When you Burn, charge this (1/2) second(s)."
     ],
@@ -49008,14 +49008,14 @@ const data: ParsedItemCard[] = [
       "Gold": {
         "tooltips": [
           "Cooldown 20 seconds",
-          "Ammo Max 1",
+          "Ammo 1",
           "Deal damage equal to your enemy's max health."
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 16 seconds",
-          "Ammo Max 1",
+          "Ammo 1",
           "Deal damage equal to your enemy's max health."
         ]
       },
@@ -49104,7 +49104,7 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown (20/16) seconds",
-      "Ammo Max 1",
+      "Ammo 1",
       "Deal damage equal to your enemy's max health."
     ],
     "remarks": []
@@ -50207,7 +50207,7 @@ const data: ParsedItemCard[] = [
       "Bronze": {
         "tooltips": [
           "Cooldown 3 seconds",
-          "Ammo Max 6",
+          "Ammo 6",
           "Crit Chance 20%",
           "Deal 8 damage.",
           "When you Crit, reload 2 Ammo."
@@ -50216,7 +50216,7 @@ const data: ParsedItemCard[] = [
       "Silver": {
         "tooltips": [
           "Cooldown 3 seconds",
-          "Ammo Max 6",
+          "Ammo 6",
           "Crit Chance 20%",
           "Deal 16 damage.",
           "When you Crit, reload 2 Ammo."
@@ -50225,7 +50225,7 @@ const data: ParsedItemCard[] = [
       "Gold": {
         "tooltips": [
           "Cooldown 3 seconds",
-          "Ammo Max 6",
+          "Ammo 6",
           "Crit Chance 20%",
           "Deal 24 damage.",
           "When you Crit, reload 2 Ammo."
@@ -50234,7 +50234,7 @@ const data: ParsedItemCard[] = [
       "Diamond": {
         "tooltips": [
           "Cooldown 3 seconds",
-          "Ammo Max 6",
+          "Ammo 6",
           "Crit Chance 20%",
           "Deal 32 damage.",
           "When you Crit, reload 2 Ammo."
@@ -50326,7 +50326,7 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 3 seconds",
-      "Ammo Max 6",
+      "Ammo 6",
       "Crit Chance 20%",
       "Deal (8/16/24/32) damage.",
       "When you Crit, reload 2 Ammo."
