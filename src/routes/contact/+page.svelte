@@ -67,10 +67,10 @@
                     <span class="font-bold text-green-500"></span>
                 </li>
                 <li>
-                    <span>
+                    <span class="line-through">
                         Fix some UX issues with search and exact text match. i.e. search for Barrel doesn't show Double Barrel.
                     </span>
-                    <span class="font-bold text-green-500"></span>
+                    <span class="font-bold text-green-500">Done!</span>
                 </li>
                 <li>
                     <span>
