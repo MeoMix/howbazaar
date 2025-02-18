@@ -17,8 +17,11 @@
         onSelectDay: () => void,
     } = $props();
 
-    function clearSearch() {
+    function clearFilters() {
         selectedDay = undefined;
+    }
+
+    function clearSearchInput() {
         searchText = "";
     }
 
@@ -31,7 +34,7 @@
 </script>
 
 <div class="mt-8 mb-4">
-    <SearchInput placeholder="Search monsters..." bind:value={searchText} />
+    <SearchInput placeholder="Search monsters..." bind:value={searchText} onClear={clearSearchInput} />
 
     <div class="flex gap-2 mt-2">
         <Button
@@ -39,10 +42,10 @@
             outline
             pill
             color={"red"}
-            on:click={clearSearch}
+            on:click={clearFilters}
             class="ml-auto transition-colors focus:outline-none border"
         >
-            Clear Search
+            Clear Filters
         </Button>
     </div>
 

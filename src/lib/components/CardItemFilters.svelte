@@ -40,7 +40,7 @@
         isMonsterDropsOnly: boolean;
     } = $props();
 
-    function clearSearch() {
+    function clearFilters() {
         selectedHeroes = [];
         selectedTiers = [];
         tagStates = Object.fromEntries(
@@ -48,10 +48,13 @@
         ) as Record<Tag | HiddenTag, TriState>;
         isMatchAnyTag = false;
         selectedSizes = [];
-        searchText = "";
         isSearchNameOnly = false;
         isSearchEnchantments = false;
         isMonsterDropsOnly = false;
+    }
+
+    function clearSearchInput() {
+        searchText = "";
     }
 
     let isShowingAdvancedFilters = $state(
@@ -68,7 +71,7 @@
 </script>
 
 <div class="mt-8 mb-4">
-    <SearchInput placeholder="Search items..." bind:value={searchText} />
+    <SearchInput placeholder="Search items..." bind:value={searchText} onClear={clearSearchInput} />
 
     <div class="flex gap-2 mt-2">
         <AdvancedFilterToggle bind:isShowingAdvancedFilters />
@@ -90,10 +93,10 @@
             outline
             pill
             color={"red"}
-            on:click={clearSearch}
+            on:click={clearFilters}
             class="ml-auto transition-colors focus:outline-none border"
         >
-            Clear Search
+            Clear Filters
         </Button>
     </div>
 
