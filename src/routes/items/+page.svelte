@@ -1,6 +1,5 @@
 <script lang="ts">
     import type {
-        ClientSideItemCard,
         Hero,
         HiddenTag,
         ItemSortOptions,
@@ -9,95 +8,24 @@
         TierType,
         TriState,
     } from "$lib/types";
-    import CardItem from "$lib/components/CardItem.svelte";
     import CardItemFilters from "$lib/components/CardItemFilters.svelte";
-    import { filterItemCards, sortCards } from "$lib/utils/filterUtils";
-    import LazyLoadList from "$lib/components/LazyLoadList.svelte";
     import type { PageData } from "./$types";
-    import { onMount } from "svelte";
-    import { itemsStore } from "$lib/stores/itemsStore";
-    import { fetchJson } from "$lib/utils/fetchUtils";
-    import Switch from "$lib/components/Switch.svelte";
-    import Select from "$lib/components/Select.svelte";
-    import { Label } from "flowbite-svelte";
+    import ItemList from "$lib/components/ItemList.svelte";
 
     const { data }: { data: PageData } = $props();
 
-    let isLoading = $state(false);
-    let hasError = $state(false);
-    let cardItems = $state([] as ClientSideItemCard[]);
-    let version = $state(null as string | null);
-
-    onMount(async () => {
-        itemsStore.subscribe((store) => {
-            // If the server informs us that what's written to the store is stale - don't use it.
-            if (data.version === store.version) {
-                cardItems = store.items;
-                version = store.version;
-            }
-        })();
-
-        if (cardItems.length === 0 || !version) {
-            try {
-                isLoading = true;
-                const response = await fetchJson<ClientSideItemCard[]>(
-                    "/api/items",
-                    data.version,
-                );
-                itemsStore.set({
-                    items: response.data,
-                    version: response.version,
-                });
-                cardItems = response.data;
-                version = response.version;
-            } catch (error) {
-                console.error(error);
-                hasError = true;
-            } finally {
-                isLoading = false;
-            }
-        }
-    });
-
     let selectedHeroes = $state([] as Hero[]);
     let selectedTiers = $state([] as TierType[]);
-
     let tagStates = $state(
         Object.fromEntries(
             data.tagOptions.map(({ value }) => [value, "unset"]),
         ) as Record<Tag | HiddenTag, TriState>,
     );
-
     let isMatchAnyTag = $state(false);
     let selectedSizes = $state([] as Size[]);
     let searchText = $state("");
     let isSearchEnchantments = $state(false);
     let isMonsterDropsOnly = $state(false);
-    // TODO: Consider persisting this in a store and/or in local storage
-    let areEnchantmentsShown = $state(true);
-    let selectedSortOption = $state("name" as ItemSortOptions);
-
-    const filteredCards = $derived(
-        sortCards(
-            filterItemCards(
-                cardItems,
-                selectedHeroes,
-                selectedTiers,
-                tagStates,
-                selectedSizes,
-                searchText,
-                isSearchEnchantments,
-                isMatchAnyTag,
-                isMonsterDropsOnly,
-            ),
-            selectedSortOption,
-        ),
-    );
-
-    const onToggleEnchantments = () => {
-        areEnchantmentsShown = !areEnchantmentsShown;
-    };
-
     let sortOptions: { name: string; value: ItemSortOptions }[] = [
         {
             value: "name",
@@ -140,39 +68,16 @@
         bind:isMonsterDropsOnly
     />
 
-    {#if isLoading}
-        <div>Loading items...</div>
-    {:else}
-        {#snippet listItem(card: ClientSideItemCard)}
-            <CardItem {card} {areEnchantmentsShown} />
-        {/snippet}
-
-        {#snippet headerControls()}
-            <div class="flex items-center space-x-2">
-                <Label class="dark:text-bazaar-tan700">
-                    Sort by
-                </Label>
-                <Select
-                    options={sortOptions}
-                    selectedOption={selectedSortOption}
-                    onSelectOption={(option) => {
-                        selectedSortOption = option;
-                    }}
-                />
-            </div>
-
-            <Switch
-                isChecked={areEnchantmentsShown}
-                onClick={onToggleEnchantments}
-                offLabel="Show Enchantments"
-            />
-        {/snippet}
-
-        <LazyLoadList
-            items={filteredCards}
-            {listItem}
-            {headerControls}
-            listItemName="item"
-        />
-    {/if}
+    <ItemList
+        serverVersion={data.version}
+        {sortOptions}
+        {selectedHeroes}
+        {selectedTiers}
+        {tagStates}
+        {selectedSizes}
+        {searchText}
+        {isSearchEnchantments}
+        {isMatchAnyTag}
+        {isMonsterDropsOnly}
+    />
 </div>
