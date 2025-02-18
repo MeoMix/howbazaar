@@ -178,7 +178,7 @@ export function filterItemCards(
     isMatchAnyTag: boolean,
     isMonsterDropsOnly: boolean
 ): ClientSideItemCard[] {
-    const lowerSearchText = searchText.toLowerCase();
+    const lowerSearchText = searchText.trim().toLowerCase();
 
     // Apply all filters (except search text) first
     const filteredCards = cards.filter(card => {
@@ -216,7 +216,7 @@ export function filterSkillCards(
     isMatchAnyHero: boolean,
     isMonsterDropsOnly: boolean
 ): ClientSideSkillCard[] {
-    const lowerSearchText = searchText.toLowerCase();
+    const lowerSearchText = searchText.trim().toLowerCase();
 
     // Apply all filters (except search text) first
     const filteredCards = cards.filter(card => {
@@ -243,7 +243,7 @@ export function filterSkillCards(
 }
 
 export function filterMonsters(monsters: ClientSideMonsterEncounter[], searchText: string) {
-    const lowerSearchText = searchText.toLowerCase();
+    const lowerSearchText = searchText.trim().toLowerCase();
 
     // Separate exact matches from filtered results
     const exactMatches = monsters.filter(monster => monster.cardName.toLowerCase() === lowerSearchText);
