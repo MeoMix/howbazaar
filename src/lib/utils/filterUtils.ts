@@ -1,6 +1,5 @@
 import type { ClientSideItemCard, ClientSideMonsterEncounter, ClientSideSkillCard, Hero, HiddenTag, ItemSortOptions, Size, SkillSortOptions, Tag, TierType, TriState } from "$lib/types";
 import type { Entries } from "type-fest";
-import levenshtein from 'fast-levenshtein';
 
 export const heroOrder = ["Vanessa", "Pygmalien", "Dooley", "Jules", "Stelle", "Mak", "Common"] as const;
 export const tierOrder = ["Bronze", "Silver", "Gold", "Diamond", "Legendary"] as const;
@@ -89,6 +88,15 @@ function matchesTagState(
     });
 }
 
+
+// Match "yo-yo" to "yoyo" but don't match "Fort" to "Port" (as would be the case with Lev distance)
+const normalize = (text: string): string => text.toLowerCase().replace(/[^\w\s]|_/g, "");
+
+// Substring and normalized matching functions
+const substringMatch = (text: string, searchText: string): boolean => {
+    return normalize(text.toLowerCase()).includes(normalize(searchText.toLowerCase()));
+}
+
 function matchesCardSearchText(
     card: ClientSideItemCard | ClientSideSkillCard,
     lowerSearchText: string,
@@ -102,42 +110,28 @@ function matchesCardSearchText(
             .filter(([tierType, tier]) => tierType !== "Legendary" && tier.tooltips.length !== 0)
         : [];
 
-    // Substring and fuzzy matching functions
-    const substringMatch = (text: string, searchText: string): boolean =>
-        text.toLowerCase().includes(searchText.toLowerCase());
+    const substringMatchArray = (arr: string[] | undefined, searchText: string): boolean =>
+        arr?.some(item => substringMatch(item, searchText)) ?? false;
 
-    const fuzzyMatch = (text: string, searchText: string, threshold: number = 1): boolean => {
-        const distance = levenshtein.get(text.toLowerCase(), searchText.toLowerCase());
-        return distance <= threshold;
-    };
-
-    const hybridMatch = (text: string, searchText: string): boolean => {
-        const isShortInput = searchText.length <= 3; // Threshold to treat short inputs differently
-        return substringMatch(text, searchText) || (!isShortInput && fuzzyMatch(text, searchText));
-    };
-
-    const hybridMatchArray = (arr: string[] | undefined, searchText: string): boolean =>
-        arr?.some(item => hybridMatch(item, searchText)) ?? false;
-
-    const hybridMatchTier = validTiers.some(([tierName, tier]) =>
-        hybridMatch(tierName, lowerSearchText) ||
-        tier.tooltips.some(tooltip => hybridMatch(tooltip, lowerSearchText))
+    const substringMatchTier = validTiers.some(([tierName, tier]) =>
+        substringMatch(tierName, lowerSearchText) ||
+        tier.tooltips.some(tooltip => substringMatch(tooltip, lowerSearchText))
     );
 
-    const hybridMatchEnchantments = isSearchEnchantments && ('enchantments' in card) && card.enchantments.some(e =>
-        hybridMatch(e.type, lowerSearchText) ||
-        e.tooltips.some(tip => hybridMatch(tip, lowerSearchText))
+    const substringMatchEnchantments = isSearchEnchantments && ('enchantments' in card) && card.enchantments.some(e =>
+        substringMatch(e.type, lowerSearchText) ||
+        e.tooltips.some(tip => substringMatch(tip, lowerSearchText))
     );
 
     return isSearchNameOnly
-        ? hybridMatch(card.name, lowerSearchText)
-        : hybridMatch(card.name, lowerSearchText) ||
-        hybridMatchArray(card.tags, lowerSearchText) ||
-        hybridMatchArray(card.hiddenTags, lowerSearchText) ||
-        (card.size && hybridMatch(card.size, lowerSearchText)) ||
-        hybridMatchArray(card.heroes, lowerSearchText) ||
-        hybridMatchTier ||
-        hybridMatchEnchantments;
+        ? substringMatch(card.name, lowerSearchText)
+        : substringMatch(card.name, lowerSearchText) ||
+        substringMatchArray(card.tags, lowerSearchText) ||
+        substringMatchArray(card.hiddenTags, lowerSearchText) ||
+        (card.size && substringMatch(card.size, lowerSearchText)) ||
+        substringMatchArray(card.heroes, lowerSearchText) ||
+        substringMatchTier ||
+        substringMatchEnchantments;
 }
 
 function matchesMonsterSearchText(
@@ -146,21 +140,7 @@ function matchesMonsterSearchText(
 ): boolean {
     if (lowerSearchText === '') return true;
 
-    // Substring and fuzzy matching functions
-    const substringMatch = (text: string, searchText: string): boolean =>
-        text.toLowerCase().includes(searchText.toLowerCase());
-
-    const fuzzyMatch = (text: string, searchText: string, threshold: number = 1): boolean => {
-        const distance = levenshtein.get(text.toLowerCase(), searchText.toLowerCase());
-        return distance <= threshold;
-    };
-
-    const hybridMatch = (text: string, searchText: string): boolean => {
-        const isShortInput = searchText.length <= 3; // Threshold to treat short inputs differently
-        return substringMatch(text, searchText) || (!isShortInput && fuzzyMatch(text, searchText));
-    };
-
-    return hybridMatch(monster.cardName, lowerSearchText) || (
+    return substringMatch(monster.cardName, lowerSearchText) || (
         monster.items.filter(item => matchesCardSearchText(item.card, lowerSearchText, false, false)).length > 0 ||
         monster.skills.filter(skill => matchesCardSearchText(skill.card, lowerSearchText, false, false)).length > 0
     );
@@ -191,15 +171,7 @@ export function filterItemCards(
         );
     });
 
-    // Separate exact matches from filtered results
-    const exactMatches = filteredCards.filter(card => card.name.toLowerCase() === lowerSearchText);
-
-    // If exact matches exist, prioritize them
-    if (exactMatches.length > 0) {
-        return exactMatches;
-    }
-
-    // Otherwise, fallback to fuzzy search on the remaining filtered cards
+    // Otherwise, fallback to normalized search on the remaining filtered cards
     return filteredCards.filter(card =>
         matchesCardSearchText(card, lowerSearchText, isSearchNameOnly, isSearchEnchantments)
     );
@@ -228,15 +200,7 @@ export function filterSkillCards(
         );
     });
 
-    // Separate exact matches from filtered results
-    const exactMatches = filteredCards.filter(card => card.name.toLowerCase() === lowerSearchText);
-
-    // If exact matches exist, prioritize them
-    if (exactMatches.length > 0) {
-        return exactMatches;
-    }
-
-    // Otherwise, fallback to fuzzy search on the remaining filtered cards
+    // Otherwise, fallback to normalized search on the remaining filtered cards
     return filteredCards.filter(card =>
         matchesCardSearchText(card, lowerSearchText, isSearchNameOnly, false)
     );
@@ -245,15 +209,7 @@ export function filterSkillCards(
 export function filterMonsters(monsters: ClientSideMonsterEncounter[], searchText: string) {
     const lowerSearchText = searchText.trim().toLowerCase();
 
-    // Separate exact matches from filtered results
-    const exactMatches = monsters.filter(monster => monster.cardName.toLowerCase() === lowerSearchText);
-
-    // If exact matches exist, prioritize them
-    if (exactMatches.length > 0) {
-        return exactMatches;
-    }
-
-    // Otherwise, fallback to fuzzy search on the remaining filtered cards
+    // Otherwise, fallback to normalized search on the remaining filtered cards
     return monsters.filter(monster =>
         matchesMonsterSearchText(monster, lowerSearchText)
     );
