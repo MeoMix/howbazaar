@@ -100,7 +100,6 @@ const substringMatch = (text: string, searchText: string): boolean => {
 function matchesCardSearchText(
     card: ClientSideItemCard | ClientSideSkillCard,
     lowerSearchText: string,
-    isSearchNameOnly: boolean,
     isSearchEnchantments: boolean
 ): boolean {
     if (lowerSearchText === '') return true;
@@ -123,9 +122,7 @@ function matchesCardSearchText(
         e.tooltips.some(tip => substringMatch(tip, lowerSearchText))
     );
 
-    return isSearchNameOnly
-        ? substringMatch(card.name, lowerSearchText)
-        : substringMatch(card.name, lowerSearchText) ||
+    return substringMatch(card.name, lowerSearchText) ||
         substringMatchArray(card.tags, lowerSearchText) ||
         substringMatchArray(card.hiddenTags, lowerSearchText) ||
         (card.size && substringMatch(card.size, lowerSearchText)) ||
@@ -153,7 +150,6 @@ export function filterItemCards(
     tagStates: Record<Tag | HiddenTag, TriState>,
     selectedSizes: Size[],
     searchText: string,
-    isSearchNameOnly: boolean,
     isSearchEnchantments: boolean,
     isMatchAnyTag: boolean,
     isMonsterDropsOnly: boolean
@@ -173,7 +169,7 @@ export function filterItemCards(
 
     // Otherwise, fallback to normalized search on the remaining filtered cards
     return filteredCards.filter(card =>
-        matchesCardSearchText(card, lowerSearchText, isSearchNameOnly, isSearchEnchantments)
+        matchesCardSearchText(card, lowerSearchText, isSearchEnchantments)
     );
 }
 
@@ -183,7 +179,6 @@ export function filterSkillCards(
     selectedTiers: TierType[],
     tagStates: Record<Tag | HiddenTag, TriState>,
     searchText: string,
-    isSearchNameOnly: boolean,
     isMatchAnyTag: boolean,
     isMatchAnyHero: boolean,
     isMonsterDropsOnly: boolean
@@ -202,7 +197,7 @@ export function filterSkillCards(
 
     // Otherwise, fallback to normalized search on the remaining filtered cards
     return filteredCards.filter(card =>
-        matchesCardSearchText(card, lowerSearchText, isSearchNameOnly, false)
+        matchesCardSearchText(card, lowerSearchText, false)
     );
 }
 

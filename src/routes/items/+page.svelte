@@ -70,7 +70,6 @@
     let isMatchAnyTag = $state(false);
     let selectedSizes = $state([] as Size[]);
     let searchText = $state("");
-    let isSearchNameOnly = $state(false);
     let isSearchEnchantments = $state(false);
     let isMonsterDropsOnly = $state(false);
     // TODO: Consider persisting this in a store and/or in local storage
@@ -86,7 +85,6 @@
                 tagStates,
                 selectedSizes,
                 searchText,
-                isSearchNameOnly,
                 isSearchEnchantments,
                 isMatchAnyTag,
                 isMonsterDropsOnly,
@@ -137,7 +135,6 @@
         bind:selectedSizes
         bind:isMatchAnyTag
         bind:searchText
-        bind:isSearchNameOnly
         bind:isSearchEnchantments
         bind:isMonsterDropsOnly
     />

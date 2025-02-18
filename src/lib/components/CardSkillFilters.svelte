@@ -19,7 +19,6 @@
         isMatchAnyTag = $bindable(),
         isMatchAnyHero = $bindable(),
         searchText = $bindable(),
-        isSearchNameOnly = $bindable(),
         isMonsterDropsOnly = $bindable(),
     }: {
         heroOptions: Option[];
@@ -32,7 +31,6 @@
         isMatchAnyTag: boolean;
         isMatchAnyHero: boolean;
         searchText: string;
-        isSearchNameOnly: boolean;
         isMonsterDropsOnly: boolean;
     } = $props();
 
@@ -46,7 +44,6 @@
         ) as Record<Tag | HiddenTag, TriState>;
         isMatchAnyTag = false;
         isMatchAnyHero = false;
-        isSearchNameOnly = false;
         isMonsterDropsOnly = false;
     }
 
@@ -61,7 +58,6 @@
     onMount(async () => {
         const hash = window.location.hash.slice(1);
         if (hash) {
-            isSearchNameOnly = true;
             searchText = hash.replace(/_+/g, " ");
         }
     });
@@ -72,12 +68,6 @@
 
     <div class="flex gap-2 mt-2">
         <AdvancedFilterToggle bind:isShowingAdvancedFilters />
-
-        <FilterToggle
-            isEnabled={isSearchNameOnly}
-            label="Search Name Only"
-            onClick={() => (isSearchNameOnly = !isSearchNameOnly)}
-        />
 
         <Button
             size="xs"

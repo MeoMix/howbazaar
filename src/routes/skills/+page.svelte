@@ -72,7 +72,6 @@
     let isMatchAnyTag = $state(false);
     let isMatchAnyHero = $state(false);
     let searchText = $state("");
-    let isSearchNameOnly = $state(false);
     let isMonsterDropsOnly = $state(false);
     let selectedSortOption = $state("name" as SkillSortOptions);
 
@@ -84,7 +83,6 @@
                 selectedTiers,
                 tagStates,
                 searchText,
-                isSearchNameOnly,
                 isMatchAnyTag,
                 isMatchAnyHero,
                 isMonsterDropsOnly,
@@ -126,7 +124,6 @@
         bind:isMatchAnyTag
         bind:isMatchAnyHero
         bind:searchText
-        bind:isSearchNameOnly
         bind:isMonsterDropsOnly
     />
 
