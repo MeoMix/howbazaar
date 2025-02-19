@@ -478,11 +478,6 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
                 };
             }
 
-            if (card.Localization.Title.Text === "Astrolabe" && enchantmentType === "Obsidian") {
-                console.log('yo');
-
-            }
-
             const enchantmentAbilities = Object.values(enchantment.Abilities).filter(item => item.Action) as Ability[];
             const enchantmentAuras = Object.values(enchantment.Auras).filter(item => item.Action) as Aura[];
 

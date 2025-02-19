@@ -7463,6 +7463,116 @@ const data: ParsedItemCard[] = [
     "remarks": []
   },
   {
+    "id": "2f4625b6-42e1-42e8-9f50-82edf038fac1",
+    "name": "Dragon Heart",
+    "startingTier": "Legendary",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": []
+      },
+      "Diamond": {
+        "tooltips": []
+      },
+      "Legendary": {
+        "tooltips": [
+          "Cooldown 10 seconds",
+          "Double the Burn of an item for the fight.",
+          "When you Burn or use a Dragon item, charge this 2 seconds."
+        ]
+      }
+    },
+    "tags": [
+      "Dragon"
+    ],
+    "hiddenTags": [
+      "BurnReference"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Common"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 2 item for 2 second(s)."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze 1 medium or small item for 2 second(s)."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 2 item for 2 second(s)."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield 50."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal 75."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison 5."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn 7."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "Your Burn items have +25% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal 50 Damage."
+        ]
+      }
+    ],
+    "unifiedTooltips": [
+      "Cooldown 10 seconds",
+      "Double the Burn of an item for the fight.",
+      "When you Burn or use a Dragon item, charge this 2 seconds."
+    ],
+    "remarks": []
+  },
+  {
     "id": "44366f1e-a46b-4b41-9bf7-a1dec75bb6d6",
     "name": "Companion Core",
     "startingTier": "Bronze",
@@ -32093,8 +32203,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+0 MISSING",
-          "0 Damage"
+          "Deal 10 Damage for each each Unique type you have."
         ]
       }
     ],
@@ -38394,7 +38503,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Haste a Weapon for {ability.0} second(s)."
+          "Haste a Weapon for 2 second(s)."
         ]
       }
     ],
@@ -45897,8 +46006,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+0 MISSING",
-          "0 Damage"
+          "Deal 10 Damage for each Aquatic or Toy item you have."
         ]
       }
     ],

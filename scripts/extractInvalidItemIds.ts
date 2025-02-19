@@ -26,7 +26,9 @@ const allowedList = [
   // Hot Sauce
   'c0455f22-2fb9-4ce6-a65f-e874e3d86ff0',
   // Skillet
-  '0d227497-f57f-44ef-98a8-15791e710fb6'
+  '0d227497-f57f-44ef-98a8-15791e710fb6',
+  // Dragon Heart
+  '2f4625b6-42e1-42e8-9f50-82edf038fac1'
 ];
 
 const disallowedList = [
