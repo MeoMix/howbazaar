@@ -17,7 +17,6 @@
     import { filterItemCards, sortCards } from "$lib/utils/filterUtils";
     import { onMount } from "svelte";
     import { itemsStore } from "$lib/stores/itemsStore";
-    import { fetchJson } from "$lib/utils/fetchUtils";
 
     let {
         serverVersion,
@@ -30,6 +29,7 @@
         isSearchEnchantments,
         isMatchAnyTag,
         isMonsterDropsOnly,
+        isHiddenWhenEmpty,
     }: {
         serverVersion: string;
         sortOptions: { name: string; value: ItemSortOptions }[];
@@ -41,6 +41,7 @@
         isSearchEnchantments: boolean;
         isMatchAnyTag: boolean;
         isMonsterDropsOnly: boolean;
+        isHiddenWhenEmpty: boolean;
     } = $props();
 
     let items = $state([] as ClientSideItemCard[]);
@@ -49,38 +50,17 @@
     let areEnchantmentsShown = $state(true);
     let isLoading = $state(false);
     let hasError = $state(false);
-    let version = $state(null as string | null);
 
-    onMount(async () => {
-        itemsStore.subscribe((store) => {
-            console.log("yo");
-            // If the server informs us that what's written to the store is stale - don't use it.
-            if (serverVersion === store.version) {
-                items = store.items;
-                version = store.version;
-            }
-        })();
+    onMount(() => {
+        const unsubscribe = itemsStore.subscribe((state) => {
+            items = state.items;
+            isLoading = state.isLoading;
+            hasError = state.hasError;
+        });
 
-        if (items.length === 0 || !version) {
-            try {
-                isLoading = true;
-                const response = await fetchJson<ClientSideItemCard[]>(
-                    "/api/items",
-                    serverVersion,
-                );
-                itemsStore.set({
-                    items: response.data,
-                    version: response.version,
-                });
-                items = response.data;
-                version = response.version;
-            } catch (error) {
-                console.error(error);
-                hasError = true;
-            } finally {
-                isLoading = false;
-            }
-        }
+        itemsStore.load(serverVersion); // Ensures we fetch fresh data if needed
+
+        return unsubscribe;
     });
 
     const filteredItems = $derived(
@@ -130,7 +110,7 @@
 
 {#if isLoading}
     <div>Loading items...</div>
-{:else}
+{:else if filteredItems.length > 0 || !isHiddenWhenEmpty}
     <LazyLoadList
         items={filteredItems}
         {listItem}

@@ -14,7 +14,6 @@
     import Select from "./Select.svelte";
     import { filterSkillCards, sortCards } from "$lib/utils/filterUtils";
     import { onMount } from "svelte";
-    import { fetchJson } from "$lib/utils/fetchUtils";
     import { skillsStore } from "$lib/stores/skillsStore";
 
     let {
@@ -27,6 +26,7 @@
         isMatchAnyTag,
         isMatchAnyHero,
         isMonsterDropsOnly,
+        isHiddenWhenEmpty,
     }: {
         serverVersion: string;
         sortOptions: { name: string; value: SkillSortOptions }[];
@@ -37,43 +37,24 @@
         isMatchAnyTag: boolean;
         isMatchAnyHero: boolean;
         isMonsterDropsOnly: boolean;
+        isHiddenWhenEmpty: boolean;
     } = $props();
 
     let selectedSortOption = $state("name" as SkillSortOptions);
     let isLoading = $state(false);
     let hasError = $state(false);
     let skills = $state([] as ClientSideSkillCard[]);
-    let version = $state(null as string | null);
 
-    onMount(async () => {
-        skillsStore.subscribe((store) => {
-            // If the server informs us that what's written to the store is stale - don't use it.
-            if (serverVersion === store.version) {
-                skills = store.skills;
-                version = store.version;
-            }
-        })();
+    onMount(() => {
+        const unsubscribe = skillsStore.subscribe((state) => {
+            skills = state.skills;
+            isLoading = state.isLoading;
+            hasError = state.hasError;
+        });
 
-        if (skills.length === 0 || !version) {
-            try {
-                isLoading = true;
-                const response = await fetchJson<ClientSideSkillCard[]>(
-                    "/api/skills",
-                    serverVersion,
-                );
-                skillsStore.set({
-                    skills: response.data,
-                    version: response.version,
-                });
-                skills = response.data;
-                version = response.version;
-            } catch (error) {
-                console.error(error);
-                hasError = true;
-            } finally {
-                isLoading = false;
-            }
-        }
+        skillsStore.load(serverVersion); // Ensures we fetch fresh data if needed
+
+        return unsubscribe;
     });
 
     const filteredSkills = $derived(
@@ -112,7 +93,7 @@
 
 {#if isLoading}
     <div>Loading skills...</div>
-{:else}
+{:else if filteredSkills.length > 0 || !isHiddenWhenEmpty}
     <LazyLoadList
         items={filteredSkills}
         {listItem}

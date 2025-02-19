@@ -79,5 +79,6 @@
         {isSearchEnchantments}
         {isMatchAnyTag}
         {isMonsterDropsOnly}
+        isHiddenWhenEmpty={false}
     />
 </div>

@@ -77,5 +77,6 @@
         {isMatchAnyTag}
         {isMatchAnyHero}
         {isMonsterDropsOnly}
+        isHiddenWhenEmpty={false}
     />
 </div>
