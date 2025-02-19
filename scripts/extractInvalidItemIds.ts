@@ -34,7 +34,10 @@ const disallowedList = [
   '0fa524e3-c2a4-4509-b91a-6b9d60da5e07',
 
   // Focused Core:
-  'bfa28eec-84de-41cb-bc5c-8de700a5d21f'
+  'bfa28eec-84de-41cb-bc5c-8de700a5d21f',
+
+  // [Debug] Regen Crit Giver:
+  '15ec15d3-b255-45a9-ad0b-543f72249752',
 ];
 
 // Filter the entries

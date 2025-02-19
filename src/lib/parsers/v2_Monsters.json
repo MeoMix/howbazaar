@@ -7504,7 +7504,7 @@
     "Player": {
       "Attributes": {
         "Prestige": 50,
-        "HealthMax": 2750,
+        "HealthMax": 2500,
         "Level": 11
       },
       "Hand": {
@@ -7556,6 +7556,22 @@
         {
           "$type": "TCardInstanceSkill",
           "TemplateId": "b3c7f45e-23f3-44c8-adca-3ca99376e848",
+          "TemplateVersion": "1.0.0",
+          "InstanceId": null,
+          "Tier": "Diamond",
+          "Attributes": {}
+        },
+        {
+          "$type": "TCardInstanceSkill",
+          "TemplateId": "9cd3f8a9-3ca8-482b-8f4c-79f9d1d3400e",
+          "TemplateVersion": "1.0.0",
+          "InstanceId": null,
+          "Tier": "Diamond",
+          "Attributes": {}
+        },
+        {
+          "$type": "TCardInstanceSkill",
+          "TemplateId": "83d940dd-4b3d-4b0c-9f46-43d0041f5626",
           "TemplateVersion": "1.0.0",
           "InstanceId": null,
           "Tier": "Diamond",

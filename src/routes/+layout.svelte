@@ -38,11 +38,11 @@
     let { children }: { children: Snippet } = $props();
 </script>
 
-<div class="flex justify-center dark:bg-bazaar-background text-red-500">
+<!-- <div class="flex justify-center dark:bg-bazaar-background text-red-500">
     Updating to the February 19th patch will take longer than usual, sorry. The source
     for the data changed as Tempo obfuscates the client to prevent modding and
     begins work on providing an API.
-</div>
+</div> -->
 
 <div
     class="flex flex-col min-h-screen bg-white dark:bg-bazaar-background text-gray-900 dark:text-bazaar-tan700"
@@ -57,10 +57,10 @@
             <span
                 class="self-center whitespace-nowrap text-xl font-semibold dark:text-bazaar-tan700 hover:text-bazaar-orange dark:hover:text-bazaar-orange relative z-10"
             >
-                How Bazaar
-                <!-- <Badge border large color="green" class="whitespace-nowrap">
-                    Updated Feb 05
-                </Badge> -->
+                <!-- How Bazaar -->
+                <Badge border large color="green" class="whitespace-nowrap">
+                    Updated Feb 19
+                </Badge>
             </span>
         </NavBrand>
 

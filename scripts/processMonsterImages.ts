@@ -52,7 +52,10 @@ const nameToFileMap: Record<string, string> = {
     'DrVortex': 'MadScientist',
     'Bouncertron': 'RoboBouncer',
     'BountyHunter': 'BountyHunters',
-    'TrashtownMayor': 'TentCityMayor'
+    'TrashtownMayor': 'TentCityMayor',
+    'PrinceMarianas': 'Hydrodude',
+    'Hellbilly': 'DeadlyCrooner',
+    'Ahexa': 'Techno-Virus'
 };
 
 async function processMonsterImages() {

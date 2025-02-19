@@ -396,7 +396,7 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
         !invalidItemIds.includes(entry.Id) &&
         !explicitlyHiddenItemIds.includes(entry.Id);
 
-    const validCards = Object.values(cardsJson).filter(isValidItemCard);
+    const validCards = Object.values(cardsJson).flat().filter(isValidItemCard);
 
     // TODO: I think I could avoid having to do this if I relied on key rather than converting to values and relying on Id.
     // Sanity check on Abilities and Aura IDs before proceeding.
@@ -478,6 +478,11 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
                 };
             }
 
+            if (card.Localization.Title.Text === "Astrolabe" && enchantmentType === "Obsidian") {
+                console.log('yo');
+
+            }
+
             const enchantmentAbilities = Object.values(enchantment.Abilities).filter(item => item.Action) as Ability[];
             const enchantmentAuras = Object.values(enchantment.Auras).filter(item => item.Action) as Aura[];
 
@@ -520,10 +525,10 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
                             // TODO: Why do I need exceptions here?
                             if (
                                 (card.Localization.Title.Text === "Flamethrower" && enchantmentType === "Toxic") ||
-                                (card.Localization.Title.Text === "Beach Ball" && (enchantmentType === "Restorative" || enchantmentType === "Shielded" || enchantmentType === "Toxic" || enchantmentType === "Fiery")) ||
+                                (card.Localization.Title.Text === "Beach Ball" && (enchantmentType === "Restorative" || enchantmentType === "Shielded" || enchantmentType === "Toxic" || enchantmentType === "Fiery" || enchantmentType === "Obsidian")) ||
                                 (card.Localization.Title.Text === "Astrolabe" && (enchantmentType === "Restorative" || enchantmentType === "Shielded" || enchantmentType === "Toxic" || enchantmentType === "Fiery")) ||
                                 (card.Localization.Title.Text === "Forklift" && (enchantmentType === "Restorative" || enchantmentType === "Shielded" || enchantmentType === "Toxic" || enchantmentType === "Fiery")) ||
-                                (card.Localization.Title.Text === "Rowboat" && (enchantmentType === "Restorative" || enchantmentType === "Shielded" || enchantmentType === "Toxic" || enchantmentType === "Fiery"))
+                                (card.Localization.Title.Text === "Rowboat" && (enchantmentType === "Restorative" || enchantmentType === "Shielded" || enchantmentType === "Toxic" || enchantmentType === "Fiery" || enchantmentType === "Obsidian"))
                             ) {
                                 return true;
                             }
@@ -625,7 +630,8 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
                     }
                 }
             } else {
-                tooltips = getDisplayedTooltips(rawTooltips, enchantmentAbilities, enchantmentAuras, enchantmentAttributes);
+                // NOTE: Needed to merge abilities into enchantmentAbilities to support Obsidian Astrolabe
+                tooltips = getDisplayedTooltips(rawTooltips, [...enchantmentAbilities, ...abilities], enchantmentAuras, enchantmentAttributes);
             }
 
             if (card.Localization.Title.Text === "Uwashiwali Bird" && enchantmentType === "Shiny") {
@@ -699,7 +705,7 @@ function parseSkillCards(cardsJson: CardsJson): ParsedSkillCard[] {
         !invalidSkillIds.includes(entry.Id) &&
         !!entry.ArtKey;
 
-    const validSkillCards = Object.values(cardsJson).filter(isValidSkillCard);
+    const validSkillCards = Object.values(cardsJson).flat().filter(isValidSkillCard);
 
     // Sanity check on Abilities and Aura IDs before proceeding.
     // This fixes "Wanted Poster" and ...
@@ -799,7 +805,7 @@ function parseCombatEncounterCards(cardsJson: CardsJson) {
         (monsterTemplateIdMapping as any)[entry.Id] &&
         entry.Localization.Title.Text !== null;
 
-    const validCards = Object.values(cardsJson).filter(isEncounter);
+    const validCards = Object.values(cardsJson).flat().filter(isEncounter);
 
     const cards = validCards.map((card) => {
         return {

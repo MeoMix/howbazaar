@@ -59,7 +59,7 @@ describe('cardJsonParser', () => {
       const balcony = itemCards.find(card => card.name === "Balcony")!;
 
       expect(balcony.unifiedTooltips[0]).toEqual(
-        'The Property to the left of this has double value in combat and has its cooldown reduced by (10%/20%/30%).'
+        'The Property to the left of this has double value in combat and has its cooldown reduced by (5%/10%/15%).'
       );
     });
 
@@ -334,6 +334,14 @@ describe('cardJsonParser', () => {
 
       expect(restorativeBeachBall.tooltips.length).toEqual(1);
       expect(restorativeBeachBall.tooltips[0]).toEqual('Heal 15 for each Aquatic or Toy item you have.');
+    });
+
+    it('should parse "Obsidian Abstrolabe" correctly by properly parsing {ability.0}', () => {
+      const astrolabe = itemCards.find(card => card.name === "Astrolabe")!;
+      const obsidianAstrolabe = astrolabe.enchantments.find(enchantment => enchantment.type === 'Obsidian')!;
+
+      expect(obsidianAstrolabe.tooltips.length).toEqual(1);
+      expect(obsidianAstrolabe.tooltips[0]).toEqual('Haste a Weapon for 2 second(s).');
     });
 
     it('should contain no enchantment tooltips with {, except for Induction Aegis with enchantmentType Heavy', () => {
