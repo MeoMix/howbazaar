@@ -19,7 +19,18 @@ const data: ParsedMonster[] = [
     "id": "e12b9ee1-de04-4bdc-ad74-2485f240cfcf",
     "level": -1,
     "health": -1,
-    "items": [],
+    "items": [
+      {
+        "templateId": "f76338d5-e09b-4319-8914-c35043d464fc",
+        "tierType": "Gold",
+        "socketId": "Socket_1"
+      },
+      {
+        "templateId": "f1c04562-6db4-45d5-a056-a4df9d185faf",
+        "tierType": "Gold",
+        "socketId": "Socket_2"
+      }
+    ],
     "skills": [
       {
         "templateId": "544be6e9-ff3e-4cb6-9759-498ac2d24d71",

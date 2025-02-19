@@ -40,20 +40,6 @@
         "Level": -1
       },
       "Hand": {
-        "Items": [],
-        "UnlockedSlots": 120
-      },
-      "Skills": [
-        {
-          "$type": "TCardInstanceSkill",
-          "TemplateId": "544be6e9-ff3e-4cb6-9759-498ac2d24d71",
-          "TemplateVersion": "1.0.0",
-          "InstanceId": null,
-          "Tier": "Gold",
-          "Attributes": {}
-        }
-      ],
-      "Stash": {
         "Items": [
           {
             "$type": "TCardInstanceItem",
@@ -76,11 +62,24 @@
             "Attributes": {}
           }
         ],
+        "UnlockedSlots": 120
+      },
+      "Skills": [
+        {
+          "$type": "TCardInstanceSkill",
+          "TemplateId": "544be6e9-ff3e-4cb6-9759-498ac2d24d71",
+          "TemplateVersion": "1.0.0",
+          "InstanceId": null,
+          "Tier": "Gold",
+          "Attributes": {}
+        }
+      ],
+      "Stash": {
+        "Items": [],
         "UnlockedSlots": 1023
       }
     }
   },
-
   "d7391818-e677-4c98-994d-71e25ed2d41c": {
     "Id": "d7391818-e677-4c98-994d-71e25ed2d41c",
     "Version": "1.0.0",
@@ -2230,8 +2229,7 @@
         ],
         "UnlockedSlots": 120
       },
-      "Skills": [
-      ],
+      "Skills": [],
       "Stash": {
         "Items": [],
         "UnlockedSlots": 1023
@@ -5293,7 +5291,7 @@
             "InstanceId": null,
             "Tier": "Gold",
             "Attributes": {}
-          },          
+          },
           {
             "$type": "TCardInstanceItem",
             "EnchantmentType": null,
