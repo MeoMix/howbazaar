@@ -38,6 +38,12 @@
     let { children }: { children: Snippet } = $props();
 </script>
 
+<div class="flex justify-center dark:bg-bazaar-background text-red-500">
+    Updating to the February 19th patch will take longer than usual, sorry. The source
+    for the data changed as Tempo obfuscates the client to prevent modding and
+    begins work on providing an API.
+</div>
+
 <div
     class="flex flex-col min-h-screen bg-white dark:bg-bazaar-background text-gray-900 dark:text-bazaar-tan700"
 >
