@@ -88,7 +88,7 @@
 
 {#if isLoading}
     <div>Loading monsters...</div>
-{:else if filteredMonsters.length > 0}
+{:else if searchText !== ""}
     <div class="mb-8">
         <LazyLoadList
             items={filteredMonsters}
