@@ -88,6 +88,11 @@
         >
             <NavLi
                 class="md:p-4"
+                href={`/${$page.url.search}`}
+                on:click={onNavLiClick}>All</NavLi
+            >
+            <NavLi
+                class="md:p-4"
                 href={`/items${$page.url.search}`}
                 on:click={onNavLiClick}>Items</NavLi
             >
