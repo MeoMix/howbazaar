@@ -8,7 +8,6 @@
     import type { PageData } from "./$types";
     import { onMount, tick } from "svelte";
     import { monsterEncounterDaysStore } from "$lib/stores/monsterEncounterDaysStore";
-    import { fetchJson } from "$lib/utils/fetchUtils";
     import MonsterFilters from "$lib/components/MonsterFilters.svelte";
     import LazyLoadList from "$lib/components/LazyLoadList.svelte";
     import { filterMonsters } from "$lib/utils/filterUtils";
@@ -18,36 +17,17 @@
     let isLoading = $state(false);
     let hasError = $state(false);
     let monsterEncounterDays = $state([] as ClientSideMonsterEncounterDay[]);
-    let version = $state(null as string | null);
 
-    onMount(async () => {
-        monsterEncounterDaysStore.subscribe((store) => {
-            // If the server informs us that what's written to the store is stale - don't use it.
-            if (data.version === store.version) {
-                monsterEncounterDays = store.monsterEncounterDays;
-                version = store.version;
-            }
-        })();
+    onMount(() => {
+        const unsubscribe = monsterEncounterDaysStore.subscribe((state) => {
+            monsterEncounterDays = state.monsterEncounterDays;
+            isLoading = state.isLoading;
+            hasError = state.hasError;
+        });
 
-        if (monsterEncounterDays.length === 0 || !version) {
-            try {
-                isLoading = true;
-                const response = await fetchJson<
-                    ClientSideMonsterEncounterDay[]
-                >("/api/monsterEncounterDays", data.version);
-                monsterEncounterDaysStore.set({
-                    monsterEncounterDays: response.data,
-                    version: response.version,
-                });
-                monsterEncounterDays = response.data;
-                version = response.version;
-            } catch (error) {
-                console.error(error);
-                hasError = true;
-            } finally {
-                isLoading = false;
-            }
-        }
+        monsterEncounterDaysStore.load(data.version); // Ensures we fetch fresh data if needed
+
+        return unsubscribe;
     });
 
     let searchText = $state("");
