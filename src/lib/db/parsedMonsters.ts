@@ -4,6 +4,30 @@ import type { ParsedMonster } from '$lib/types';
 
 const data: ParsedMonster[] = [
   {
+    "id": "8c8861cd-4309-4b36-b448-7ea6db77d2ea",
+    "level": -1,
+    "health": -1,
+    "items": [],
+    "skills": [
+      {
+        "templateId": "8b513e67-9c49-4fed-a7e4-335d982367ac",
+        "tierType": "Bronze"
+      }
+    ]
+  },
+  {
+    "id": "e12b9ee1-de04-4bdc-ad74-2485f240cfcf",
+    "level": -1,
+    "health": -1,
+    "items": [],
+    "skills": [
+      {
+        "templateId": "544be6e9-ff3e-4cb6-9759-498ac2d24d71",
+        "tierType": "Gold"
+      }
+    ]
+  },
+  {
     "id": "d7391818-e677-4c98-994d-71e25ed2d41c",
     "level": 1,
     "health": 100,
@@ -3567,7 +3591,7 @@ const data: ParsedMonster[] = [
   {
     "id": "c084c86f-7908-41d7-9c2b-13ab7dfef4b3",
     "level": 11,
-    "health": 2750,
+    "health": 2500,
     "items": [
       {
         "templateId": "fc01f3c3-5562-4616-aa12-005834d6647f",
@@ -3593,6 +3617,14 @@ const data: ParsedMonster[] = [
     "skills": [
       {
         "templateId": "b3c7f45e-23f3-44c8-adca-3ca99376e848",
+        "tierType": "Diamond"
+      },
+      {
+        "templateId": "9cd3f8a9-3ca8-482b-8f4c-79f9d1d3400e",
+        "tierType": "Diamond"
+      },
+      {
+        "templateId": "83d940dd-4b3d-4b0c-9f46-43d0041f5626",
         "tierType": "Diamond"
       }
     ]

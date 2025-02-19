@@ -55,7 +55,7 @@ const nameToFileMap: Record<string, string> = {
     'TrashtownMayor': 'TentCityMayor',
     'PrinceMarianas': 'Hydrodude',
     'Hellbilly': 'DeadlyCrooner',
-    'Ahexa': 'Techno-Virus'
+    'Ahexa': 'TechnoVirus'
 };
 
 async function processMonsterImages() {

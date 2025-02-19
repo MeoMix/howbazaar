@@ -434,6 +434,11 @@ const data: ParsedCombatEncounterCard[] = [
     "monsterTemplateId": "f0d347b0-2e9a-46da-9d82-45b65244b0f4"
   },
   {
+    "id": "4101117c-9cb0-480e-bfac-814da069ec80",
+    "name": "Street Gamer",
+    "monsterTemplateId": "8c8861cd-4309-4b36-b448-7ea6db77d2ea"
+  },
+  {
     "id": "e417b047-a681-4e85-90b7-22ab71f73bf0",
     "name": "Frost Street Challenger",
     "monsterTemplateId": "e6782454-5c72-47f3-ac43-140f0cc7eb8f"
@@ -517,6 +522,11 @@ const data: ParsedCombatEncounterCard[] = [
     "id": "1d24717f-7bfb-48e9-9320-6a69d72e233e",
     "name": "Banannabal",
     "monsterTemplateId": "7e8b7521-af5e-4c81-93c1-694e823bc5de"
+  },
+  {
+    "id": "a44c3d18-8968-4956-b3a2-5cbf3b4c12c2",
+    "name": "Yerdan",
+    "monsterTemplateId": "e12b9ee1-de04-4bdc-ad74-2485f240cfcf"
   },
   {
     "id": "7f95be65-d032-42d2-9e4b-ca2a579a380d",

@@ -1,4 +1,86 @@
 {
+  "8c8861cd-4309-4b36-b448-7ea6db77d2ea": {
+    "Id": "8c8861cd-4309-4b36-b448-7ea6db77d2ea",
+    "Version": "1.0.0",
+    "InternalName": "Street Gamer",
+    "Player": {
+      "Attributes": {
+        "Prestige": -1,
+        "HealthMax": -1,
+        "Level": -1
+      },
+      "Hand": {
+        "Items": [],
+        "UnlockedSlots": 120
+      },
+      "Skills": [
+        {
+          "$type": "TCardInstanceSkill",
+          "TemplateId": "8b513e67-9c49-4fed-a7e4-335d982367ac",
+          "TemplateVersion": "1.0.0",
+          "InstanceId": null,
+          "Tier": "Bronze",
+          "Attributes": {}
+        }
+      ],
+      "Stash": {
+        "Items": [],
+        "UnlockedSlots": 1023
+      }
+    }
+  },
+  "e12b9ee1-de04-4bdc-ad74-2485f240cfcf": {
+    "Id": "e12b9ee1-de04-4bdc-ad74-2485f240cfcf",
+    "Version": "1.0.0",
+    "InternalName": "Yerdan",
+    "Player": {
+      "Attributes": {
+        "Prestige": -1,
+        "HealthMax": -1,
+        "Level": -1
+      },
+      "Hand": {
+        "Items": [],
+        "UnlockedSlots": 120
+      },
+      "Skills": [
+        {
+          "$type": "TCardInstanceSkill",
+          "TemplateId": "544be6e9-ff3e-4cb6-9759-498ac2d24d71",
+          "TemplateVersion": "1.0.0",
+          "InstanceId": null,
+          "Tier": "Gold",
+          "Attributes": {}
+        }
+      ],
+      "Stash": {
+        "Items": [
+          {
+            "$type": "TCardInstanceItem",
+            "EnchantmentType": null,
+            "SocketId": "Socket_1",
+            "TemplateId": "f76338d5-e09b-4319-8914-c35043d464fc",
+            "TemplateVersion": "1.0.0",
+            "InstanceId": null,
+            "Tier": "Gold",
+            "Attributes": {}
+          },
+          {
+            "$type": "TCardInstanceItem",
+            "EnchantmentType": null,
+            "SocketId": "Socket_2",
+            "TemplateId": "f1c04562-6db4-45d5-a056-a4df9d185faf",
+            "TemplateVersion": "1.0.0",
+            "InstanceId": null,
+            "Tier": "Gold",
+            "Attributes": {}
+          }
+        ],
+        "UnlockedSlots": 1023
+      }
+    }
+  },
+
   "d7391818-e677-4c98-994d-71e25ed2d41c": {
     "Id": "d7391818-e677-4c98-994d-71e25ed2d41c",
     "Version": "1.0.0",
