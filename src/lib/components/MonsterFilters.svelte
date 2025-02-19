@@ -17,7 +17,8 @@
         onSelectDay: () => void;
     } = $props();
 
-    function clearFilters() {
+    function clearSearch() {
+        searchText = "";
         selectedDay = undefined;
     }
 
@@ -55,10 +56,10 @@
             outline
             pill
             color={"red"}
-            on:click={clearFilters}
+            on:click={clearSearch}
             class="mt-4 transition-colors focus:outline-none border self-center w-auto"
         >
-            Clear Filters
+            Clear Search
         </Button>
     </div>
 </div>

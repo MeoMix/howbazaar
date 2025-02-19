@@ -38,7 +38,8 @@
         isMonsterDropsOnly: boolean;
     } = $props();
 
-    function clearFilters() {
+    function clearSearch() {
+        searchText = "";
         selectedHeroes = [];
         selectedTiers = [];
         tagStates = Object.fromEntries(
@@ -134,10 +135,10 @@
                 outline
                 pill
                 color={"red"}
-                on:click={clearFilters}
+                on:click={clearSearch}
                 class="mt-4 transition-colors focus:outline-none border self-center w-auto"
             >
-                Clear Filters
+                Clear Search
             </Button>
         </div>
     {/if}

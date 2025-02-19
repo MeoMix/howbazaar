@@ -34,7 +34,8 @@
         isMonsterDropsOnly: boolean;
     } = $props();
 
-    function clearFilters() {
+    function clearSearch() {
+        searchText = "";
         heroStates = Object.fromEntries(
             heroOptions.map((option) => [option.value, "unset"]),
         ) as Record<Hero, TriState>;
@@ -122,10 +123,10 @@
                 outline
                 pill
                 color={"red"}
-                on:click={clearFilters}
+                on:click={clearSearch}
                 class="mt-4 transition-colors focus:outline-none border self-center w-auto"
             >
-                Clear Filters
+                Clear Search
             </Button>
         </div>
     {/if}
