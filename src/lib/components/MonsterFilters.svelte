@@ -36,7 +36,7 @@
 
 <div class="mt-8 mb-4">
     <SearchInput
-        placeholder="Search monsters..."
+        placeholder="Search monsters"
         bind:value={searchText}
         onClear={clearSearchInput}
     />

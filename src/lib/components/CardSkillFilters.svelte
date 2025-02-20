@@ -67,7 +67,7 @@
 <div class="mt-8 mb-4">
     <div class="flex gap-2 items-center">
         <SearchInput
-            placeholder="Search skills..."
+            placeholder="Search skills"
             bind:value={searchText}
             onClear={clearSearchInput}
         />
