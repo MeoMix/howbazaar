@@ -5,9 +5,35 @@ import type { ParsedMonster } from '$lib/types';
 const data: ParsedMonster[] = [
   {
     "id": "8c8861cd-4309-4b36-b448-7ea6db77d2ea",
-    "level": -1,
-    "health": -1,
-    "items": [],
+    "level": 4,
+    "health": 450,
+    "items": [
+      {
+        "templateId": "b57d9963-d241-40c9-8f9f-f9925a2da661",
+        "tierType": "Silver",
+        "socketId": "Socket_1"
+      },
+      {
+        "templateId": "84b74f1e-0960-4c71-bb4f-d35e114250c2",
+        "tierType": "Bronze",
+        "socketId": "Socket_1"
+      },
+      {
+        "templateId": "2df8f38b-bb9f-4247-afe9-525067c9e29e",
+        "tierType": "Silver",
+        "socketId": "Socket_1"
+      },
+      {
+        "templateId": "7fa2b9c8-f038-44f9-8143-a4f8ee7f34bf",
+        "tierType": "Silver",
+        "socketId": "Socket_1"
+      },
+      {
+        "templateId": "48d24eb0-d953-409c-9602-1d3d4c4278c5",
+        "tierType": "Silver",
+        "socketId": "Socket_1"
+      }
+    ],
     "skills": [
       {
         "templateId": "8b513e67-9c49-4fed-a7e4-335d982367ac",

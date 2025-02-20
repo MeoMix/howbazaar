@@ -6,11 +6,59 @@
     "Player": {
       "Attributes": {
         "Prestige": -1,
-        "HealthMax": -1,
-        "Level": -1
+        "HealthMax": 450,
+        "Level": 4
       },
       "Hand": {
-        "Items": [],
+        "Items": [
+          {
+            "$type": "TCardInstanceItem",
+            "EnchantmentType": null,
+            "SocketId": "Socket_1",
+            "TemplateId": "b57d9963-d241-40c9-8f9f-f9925a2da661",
+            "TemplateVersion": "1.0.0",
+            "InstanceId": null,
+            "Tier": "Silver",
+            "Attributes": {}
+          },
+          {
+            "$type": "TCardInstanceItem",
+            "EnchantmentType": null,
+            "SocketId": "Socket_1",
+            "TemplateId": "84b74f1e-0960-4c71-bb4f-d35e114250c2",
+            "TemplateVersion": "1.0.0",
+            "InstanceId": null,
+            "Tier": "Bronze",
+            "Attributes": {}
+          },       {
+            "$type": "TCardInstanceItem",
+            "EnchantmentType": null,
+            "SocketId": "Socket_1",
+            "TemplateId": "2df8f38b-bb9f-4247-afe9-525067c9e29e",
+            "TemplateVersion": "1.0.0",
+            "InstanceId": null,
+            "Tier": "Silver",
+            "Attributes": {}
+          },       {
+            "$type": "TCardInstanceItem",
+            "EnchantmentType": null,
+            "SocketId": "Socket_1",
+            "TemplateId": "7fa2b9c8-f038-44f9-8143-a4f8ee7f34bf",
+            "TemplateVersion": "1.0.0",
+            "InstanceId": null,
+            "Tier": "Silver",
+            "Attributes": {}
+          },       {
+            "$type": "TCardInstanceItem",
+            "EnchantmentType": null,
+            "SocketId": "Socket_1",
+            "TemplateId": "48d24eb0-d953-409c-9602-1d3d4c4278c5",
+            "TemplateVersion": "1.0.0",
+            "InstanceId": null,
+            "Tier": "Silver",
+            "Attributes": {}
+          }
+        ],
         "UnlockedSlots": 120
       },
       "Skills": [
