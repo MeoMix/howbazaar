@@ -1,6 +1,7 @@
 <script lang="ts">
     import type { Size } from "$lib/types";
     import { removeSpecialCharacters } from "$lib/utils/stringUtils";
+    import { PUBLIC_CDN_URL } from '$env/static/public';
 
     const {
         name,
@@ -28,7 +29,7 @@
 <div class="relative overflow-hidden rounded-md mx-auto w-full pb-[66.6667%]">
     {#if type !== "skills"}
         <img
-            src={`/images/${type}/${sanitizedCardName}.avif`}
+            src={`${PUBLIC_CDN_URL}images/${type}/${sanitizedCardName}.avif`}
             alt={`${name} background`}
             class="absolute inset-0 w-full h-full object-cover blur-xl brightness-50"
             aria-hidden="true"
@@ -36,7 +37,7 @@
     {/if}
 
     <img
-        src={`/images/${type}/${sanitizedCardName}.avif`}
+        src={`${PUBLIC_CDN_URL}images/${type}/${sanitizedCardName}.avif`}
         alt={name}
         class={`${type === "skills" ? "rounded-full" : ""} absolute top-0 bottom-0 left-0 right-0 mx-auto ${getWidthClass()} h-full object-fill`}
     />

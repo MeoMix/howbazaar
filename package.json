@@ -16,7 +16,8 @@
 		"processItemImages": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"ESNext\"}' tsx scripts/processItemImages.ts",
 		"extractInvalidItemIds": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"ESNext\"}' tsx scripts/extractInvalidItemIds.ts",
 		"extractInvalidSkillIds": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"ESNext\"}' tsx scripts/extractInvalidSkillIds.ts",
-		"extractMonsterTemplateIds": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"ESNext\"}' tsx scripts/extractMonsterTemplateIds.ts"
+		"extractMonsterTemplateIds": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"ESNext\"}' tsx scripts/extractMonsterTemplateIds.ts",
+		"upload:images": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"ESNext\"}' tsx scripts/uploadImagesToBunnyCDN.ts"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-vercel": "^5.4.7",
@@ -24,8 +25,8 @@
 		"@sveltejs/vite-plugin-svelte": "^4.0.0",
 		"@types/fast-levenshtein": "^0.0.4",
 		"@types/xxhashjs": "^0.2.4",
-		"@vercel/blob": "^0.26.0",
 		"autoprefixer": "^10.4.20",
+		"axios": "^1.7.9",
 		"dotenv": "^16.4.5",
 		"postcss": "^8.4.47",
 		"quicktype": "^23.0.170",
@@ -36,7 +37,6 @@
 		"tsx": "^4.19.2",
 		"type-fest": "^4.26.1",
 		"typescript": "^5.0.0",
-		"vercel": "^37.14.0",
 		"vite": "^5.0.3",
 		"vitest": "^2.1.4"
 	},

@@ -20,6 +20,7 @@
     import { fly } from "svelte/transition";
     import { page } from "$app/stores";
     import { clipboardState } from "$lib/stores/clipboard";
+    import { PUBLIC_CDN_URL } from "$env/static/public";
 
     let toastStatus = $state(false);
     let toastClearTimeout: ReturnType<typeof setTimeout>;
@@ -37,6 +38,10 @@
 
     let { children }: { children: Snippet } = $props();
 </script>
+
+<svelte:head>
+    <link rel="icon" href="{PUBLIC_CDN_URL}/favicon.avif" />
+</svelte:head>
 
 <!-- <div class="flex justify-center dark:bg-bazaar-background text-red-500">
     Updating to the February 19th patch will take longer than usual, sorry. The source
