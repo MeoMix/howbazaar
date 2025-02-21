@@ -1103,7 +1103,7 @@ const data: ParsedMonster[] = [
         "socketId": "Socket_3"
       },
       {
-        "templateId": "b769eef3-b324-4704-91fd-3a971c6f47b4",
+        "templateId": "c9a88c39-28e0-4618-907d-aec77f44d817",
         "tierType": "Diamond",
         "socketId": "Socket_6"
       },
