@@ -3,6 +3,7 @@
     import { copyCardLink } from "$lib/stores/clipboard";
     import { Card } from "flowbite-svelte";
     import { filterTags } from "$lib/utils/filterUtils";
+    import { parseTooltipForRendering } from "$lib/utils/tooltipUtils";
     import CardBadges from "./CardBadges.svelte";
     import UnifiedTooltips from "./UnifiedTooltips.svelte";
     import CardImage from "./CardImage.svelte";
@@ -16,6 +17,15 @@
 
     const id = $derived(card.name.replace(/\s+/g, "_"));
     const tags = $derived(filterTags(card.tags, card.hiddenTags));
+
+    // Type guard functions to check the type of tooltip part
+    function isKeywordPart(part: unknown): part is { text: string; effect: string } {
+        return typeof part === "object" && part !== null && "effect" in part;
+    }
+
+    function isTierPart(part: unknown): part is { bold: boolean; parts: { text: string; tierType: string | null }[]; original: string } {
+        return typeof part === "object" && part !== null && "bold" in part;
+    }
 </script>
 
 <Card
@@ -88,7 +98,40 @@
                             </div>
 
                             {#each enchantment.tooltips as tooltip}
-                                <div>{tooltip}</div>
+                                <div>
+                                    {#each parseTooltipForRendering(tooltip, card.startingTier) as part}
+                                        {#if typeof part === "string"}
+                                            {part}
+                                        {:else if isKeywordPart(part)}
+                                            <!-- Render keyword with game effect styling -->
+                                            <span class="font-bold text-gameEffects-{part.effect}">
+                                                {part.text}
+                                            </span>
+                                        {:else if isTierPart(part)}
+                                            <span
+                                                class={part.bold
+                                                    ? "font-semibold whitespace-nowrap"
+                                                    : ""}
+                                            >
+                                                {#each part.parts as subpart, index}
+                                                    {#if subpart.tierType}
+                                                        <span
+                                                            class={`text-tiers-${subpart.tierType.toLowerCase()}-500`}
+                                                        >
+                                                            {subpart.text}
+                                                        </span>
+                                                    {:else}
+                                                        {subpart.text}
+                                                    {/if}
+
+                                                    {#if index < part.parts.length - 1}
+                                                        {" » "}
+                                                    {/if}
+                                                {/each}
+                                            </span>
+                                        {/if}
+                                    {/each}
+                                </div>
                             {/each}
                         </div>
                     {/each}

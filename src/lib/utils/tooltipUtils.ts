@@ -263,7 +263,10 @@ function processKeywords(text: string): Array<string | TooltipKeywordPart> {
   
   while (remainingText.length > 0) {
     let matchFound = false;
+    let earliestIndex = remainingText.length;
+    let matchedKeyword = "";
     
+    // Find the earliest occurring keyword in the remaining text
     for (const keyword of sortedKeywords) {
       // Case insensitive search
       const lowerText = remainingText.toLowerCase();
@@ -272,26 +275,42 @@ function processKeywords(text: string): Array<string | TooltipKeywordPart> {
       
       if (index === -1) continue;
       
+      // Check if this is a whole word match by examining characters before and after
+      const beforeChar = index === 0 ? ' ' : remainingText[index - 1];
+      const afterChar = index + keyword.length >= remainingText.length ? ' ' : remainingText[index + keyword.length];
+      
+      // Word boundaries are spaces, punctuation, or start/end of string
+      const isWordBoundaryBefore = /[\s.,;:!?()\[\]{}]/.test(beforeChar) || index === 0;
+      const isWordBoundaryAfter = /[\s.,;:!?()\[\]{}]/.test(afterChar) || index + keyword.length === remainingText.length;
+      
+      // Only consider valid whole word matches
+      if (!isWordBoundaryBefore || !isWordBoundaryAfter) continue;
+      
+      // If this keyword appears earlier than any previously found keyword, use it
+      if (index < earliestIndex) {
+        earliestIndex = index;
+        matchedKeyword = keyword;
+        matchFound = true;
+      }
+    }
+    
+    if (matchFound) {
       // Add text before the keyword
-      if (index > 0) {
-        result.push(remainingText.substring(0, index));
+      if (earliestIndex > 0) {
+        result.push(remainingText.substring(0, earliestIndex));
       }
       
       // Add the keyword with its effect, converting to title case
-      const actualKeyword = remainingText.substring(index, index + keyword.length);
+      const actualKeyword = remainingText.substring(earliestIndex, earliestIndex + matchedKeyword.length);
       result.push({
         text: toTitleCase(actualKeyword),
-        effect: keywordEffectMap[keyword]
+        effect: keywordEffectMap[matchedKeyword]
       });
       
       // Update remaining text
-      remainingText = remainingText.substring(index + keyword.length);
-      matchFound = true;
-      break;
-    }
-    
-    // If no keyword was found, add the remaining text and exit
-    if (!matchFound) {
+      remainingText = remainingText.substring(earliestIndex + matchedKeyword.length);
+    } else {
+      // If no keyword was found, add the remaining text and exit
       result.push(remainingText);
       break;
     }
