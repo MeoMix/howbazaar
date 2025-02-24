@@ -16075,51 +16075,6 @@ const data: ParsedItemCard[] = [
     "remarks": []
   },
   {
-    "id": "35b7a978-275b-48f0-8e3d-9be2391c6a78",
-    "name": "Bulky Package",
-    "startingTier": "Bronze",
-    "tiers": {
-      "Bronze": {
-        "tooltips": [
-          "Farai will return for this"
-        ]
-      },
-      "Silver": {
-        "tooltips": [
-          "Farai will return for this"
-        ]
-      },
-      "Gold": {
-        "tooltips": [
-          "Farai will return for this"
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "Farai will return for this"
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [],
-    "hiddenTags": [
-      "Active",
-      "NonWeapon",
-      "Unsellable"
-    ],
-    "size": "Medium",
-    "heroes": [
-      "Common"
-    ],
-    "enchantments": [],
-    "unifiedTooltips": [
-      "Farai will return for this"
-    ],
-    "remarks": []
-  },
-  {
     "id": "529a7e95-b350-4fd6-96fd-fef80d4c1462",
     "name": "Old Sword",
     "startingTier": "Bronze",

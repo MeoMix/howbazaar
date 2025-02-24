@@ -40,6 +40,9 @@ const disallowedList = [
 
   // [Debug] Regen Crit Giver:
   '15ec15d3-b255-45a9-ad0b-543f72249752',
+
+  // Bulky Package:
+  '35b7a978-275b-48f0-8e3d-9be2391c6a78'
 ];
 
 // Filter the entries
