@@ -202,15 +202,113 @@ export function unifyTooltips(tooltipsByTier: string[][]): string[] {
 
 const tierOrder = ["Bronze", "Silver", "Gold", "Diamond", "Legendary"] as const;
 
+// Define keyword mappings for game effect styling
+const keywordEffectMap: Record<string, string> = {
+  "Crit Chance": "physical",
+  "Damage": "physical",
+  "Heal": "heal",
+  "Max Health": "heal",
+  "Regeneration": "heal",
+  "Ammo": "ammo",
+  "Max Ammo": "ammo",
+  "Shield": "shield",
+  "Haste": "haste",
+  "Charge": "charge",
+  "Slow": "slow",
+  "Poison": "poison",
+  "Freeze": "freeze",
+  "Burn": "burn"
+};
+
+// Define types for tooltip rendering
+export type TooltipKeywordPart = {
+  text: string;
+  effect: string;
+};
+
+export type TooltipTierPart = {
+  bold: boolean;
+  parts: { text: string; tierType: TierType | null }[];
+  original: string;
+};
+
+export type TooltipPart = string | TooltipKeywordPart | TooltipTierPart;
+
+/**
+ * Converts a string to title case (first letter of each word capitalized)
+ * 
+ * @param text The text to convert to title case
+ * @returns The title-cased text
+ */
+function toTitleCase(text: string): string {
+  return text.replace(/\w\S*/g, (word) => {
+    return word.charAt(0).toUpperCase() + word.substring(1).toLowerCase();
+  });
+}
+
+/**
+ * Processes a text string and wraps keywords with their effect styling information
+ * 
+ * @param text The text to process for keywords
+ * @returns An array of text segments with styling information
+ */
+function processKeywords(text: string): Array<string | TooltipKeywordPart> {
+  if (!text) return [text];
+  
+  const result: Array<string | TooltipKeywordPart> = [];
+  let remainingText = text;
+  
+  // Sort keywords by length (longest first) to avoid partial matches
+  const sortedKeywords = Object.keys(keywordEffectMap).sort((a, b) => b.length - a.length);
+  
+  while (remainingText.length > 0) {
+    let matchFound = false;
+    
+    for (const keyword of sortedKeywords) {
+      // Case insensitive search
+      const lowerText = remainingText.toLowerCase();
+      const lowerKeyword = keyword.toLowerCase();
+      const index = lowerText.indexOf(lowerKeyword);
+      
+      if (index === -1) continue;
+      
+      // Add text before the keyword
+      if (index > 0) {
+        result.push(remainingText.substring(0, index));
+      }
+      
+      // Add the keyword with its effect, converting to title case
+      const actualKeyword = remainingText.substring(index, index + keyword.length);
+      result.push({
+        text: toTitleCase(actualKeyword),
+        effect: keywordEffectMap[keyword]
+      });
+      
+      // Update remaining text
+      remainingText = remainingText.substring(index + keyword.length);
+      matchFound = true;
+      break;
+    }
+    
+    // If no keyword was found, add the remaining text and exit
+    if (!matchFound) {
+      result.push(remainingText);
+      break;
+    }
+  }
+  
+  return result;
+}
+
 /**
  * Parses a tooltip string and assigns colors to parts within parentheses.
  *
  * @param {string} str - The tooltip string to parse.
  * @param {string} startingTier - The starting tier of the card.
- * @returns {Array} An array of parts where each part is either a string or an array of colored segments.
+ * @returns {Array<TooltipPart>} An array of parts where each part is either a string or an object with styling information.
  */
-export function parseTooltipForRendering(str: string, startingTier: TierType) {
-    const output = [];
+export function parseTooltipForRendering(str: string, startingTier: TierType): Array<TooltipPart> {
+    const output: Array<TooltipPart> = [];
 
     const regex = /(\([^)]*\))/g; // Matches content within parentheses
     let lastIndex = 0;
@@ -219,9 +317,11 @@ export function parseTooltipForRendering(str: string, startingTier: TierType) {
     while ((match = regex.exec(str)) !== null) {
       const index = match.index;
 
-      // Add text before the current parenthesis
+      // Add text before the current parenthesis with keyword processing
       if (index > lastIndex) {
-        output.push(str.substring(lastIndex, index));
+        const textBefore = str.substring(lastIndex, index);
+        const processedText = processKeywords(textBefore);
+        output.push(...processedText);
       }
 
       // Extract content within parentheses without the parentheses
@@ -247,10 +347,11 @@ export function parseTooltipForRendering(str: string, startingTier: TierType) {
           const tierIndex = startTierIndex + i;
           if (tierIndex < tierOrder.length) {
             const tierType = tierOrder[tierIndex];
-            coloredParts.push({ text: part.trim(), tierType });
+            // Title case the text for tier-colored parts
+            coloredParts.push({ text: toTitleCase(part.trim()), tierType });
           } else {
-            // If tiers exceed the defined order, render without coloring
-            coloredParts.push({ text: part.trim(), tierType: null });
+            // If tiers exceed the defined order, render without coloring but still title case
+            coloredParts.push({ text: toTitleCase(part.trim()), tierType: null });
           }
         });
 
@@ -261,16 +362,19 @@ export function parseTooltipForRendering(str: string, startingTier: TierType) {
           original: match[1], // Original parenthesis including parentheses
         });
       } else {
-        // No slashes: Render the entire parenthesis as plain text
-        output.push(match[1]);
+        // No slashes: Process for keywords
+        const processedContent = processKeywords(match[1]);
+        output.push(...processedContent);
       }
 
       lastIndex = regex.lastIndex;
     }
 
-    // Add any remaining text after the last parenthesis
+    // Add any remaining text after the last parenthesis with keyword processing
     if (lastIndex < str.length) {
-      output.push(str.substring(lastIndex));
+      const remainingText = str.substring(lastIndex);
+      const processedRemaining = processKeywords(remainingText);
+      output.push(...processedRemaining);
     }
 
     return output;

@@ -1,7 +1,10 @@
 <script lang="ts">
-    import { Card } from "flowbite-svelte";
     import type { TierType } from "$lib/types";
-    import { parseTooltipForRendering } from "$lib/utils/tooltipUtils";
+    import {
+        parseTooltipForRendering,
+        type TooltipKeywordPart,
+        type TooltipTierPart,
+    } from "$lib/utils/tooltipUtils";
 
     const {
         unifiedTooltips,
@@ -10,6 +13,15 @@
         unifiedTooltips: string[];
         startingTier: TierType;
     } = $props();
+
+    // Type guard functions to check the type of tooltip part
+    function isKeywordPart(part: unknown): part is TooltipKeywordPart {
+        return typeof part === "object" && part !== null && "effect" in part;
+    }
+
+    function isTierPart(part: unknown): part is TooltipTierPart {
+        return typeof part === "object" && part !== null && "bold" in part;
+    }
 </script>
 
 <ul class="list-inside leading-loose">
@@ -18,14 +30,17 @@
             {#each parseTooltipForRendering(tooltip, startingTier) as part}
                 {#if typeof part === "string"}
                     {part}
-                {:else}
+                {:else if isKeywordPart(part)}
+                    <!-- Render keyword with game effect styling -->
+                    <span class="font-bold text-gameEffects-{part.effect}">
+                        {part.text}
+                    </span>
+                {:else if isTierPart(part)}
                     <span
                         class={part.bold
                             ? "font-semibold whitespace-nowrap"
                             : ""}
                     >
-                        {"( "}
-
                         {#each part.parts as subpart, index}
                             {#if subpart.tierType}
                                 <span
@@ -41,7 +56,6 @@
                                 {" » "}
                             {/if}
                         {/each}
-                        {" )"}
                     </span>
                 {/if}
             {/each}
