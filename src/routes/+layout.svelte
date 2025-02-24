@@ -160,18 +160,7 @@
 
         <div class="mx-auto text-center">
             <div>
-                <h2
-                    class="mb-4 text-sm font-semibold uppercase text-gray-400 dark:text-bazaar-tan300"
-                >
-                    Partner Websites
-                </h2>
-                <FooterLinkGroup
-                    ulClass="text-gray-700 dark:text-bazaar-tan500"
-                >
-                    <FooterLink href="https://bazaarrank.com/" target="_blank">
-                        Bazaar Rank - Legendary Player Rankings
-                    </FooterLink>
-                </FooterLinkGroup>
+
             </div>
         </div>
     </Footer>
