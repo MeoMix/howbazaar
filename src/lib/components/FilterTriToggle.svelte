@@ -1,6 +1,7 @@
 <script lang="ts">
     import type { TriState, Option } from "$lib/types";
     import { Button } from "flowbite-svelte";
+    import IconLabel from "./IconLabel.svelte";
 
     const {
         label,
@@ -53,5 +54,5 @@
     on:click={() => onClick(value)}
     class={`capitalize transition-colors focus:outline-none border py-1.5 px-3 ${getToggleClasses(state)}`}
 >
-    {label}
+    <IconLabel {label} />
 </Button>

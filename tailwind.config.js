@@ -17,6 +17,23 @@ const enchantments = {
   golden: '#F4D021',      // Bazaar's Value
 };
 
+// Add game effect colors
+const gameEffects = {
+  haste: 'rgb(0,236,195)',
+  charge: 'rgb(0,236,195)',
+  physical: 'rgb(245,80,61)',
+  slow: 'rgb(203,159,110)',
+  heal: 'rgb(142,234,49)',
+  poison: 'rgb(14,190,79)',
+  ammo: 'rgb(255,142,0)',
+  freeze: 'rgb(63,200,247)',
+  shield: 'rgb(244,207,32)',
+  lifesteal: 'rgb(157,74,111)',
+  value: 'rgb(255,205,25)',
+  burn: 'rgb(255,159,69)',
+  tag: 'rgb(152,168,254)',
+};
+
 const ogTiers = {
   bronze: '#CD7F32',
   silver: '#C0C0C0',
@@ -103,6 +120,14 @@ const safelist = [
     `dark:text-enchantments-${e}`,
     `dark:border-enchantments-${e}`,
     `dark:bg-enchantments-${e}`,
+  ]),
+  ...Object.entries(gameEffects).flatMap(([effect]) => [
+    `text-gameEffects-${effect}`,
+    `border-gameEffects-${effect}`,
+    `bg-gameEffects-${effect}`,
+    `dark:text-gameEffects-${effect}`,
+    `dark:border-gameEffects-${effect}`,
+    `dark:bg-gameEffects-${effect}`,
   ]),
   ...Object.entries(tiers).flatMap(([tier, shades]) =>
     Object.keys(shades).flatMap((shade) => [
@@ -197,9 +222,8 @@ export default {
           '950': '#440d06',
         },
 
-
-
         enchantments,
+        gameEffects,
         tiers,
         bazaar: {
           background: '#150c0b',

@@ -29,7 +29,8 @@
 
 <div>
     <div class="flex items-center gap-2 mb-2">
-        <Label class="font-semibold text-lg dark:text-bazaar-tan700 inline-block"
+        <Label
+            class="font-semibold text-lg dark:text-bazaar-tan700 inline-block"
             >{label}</Label
         >
         {#if isMatchAny !== undefined}
