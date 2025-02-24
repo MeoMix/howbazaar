@@ -5,6 +5,7 @@
         EnchantmentType,
     } from "$lib/types";
     import { Card } from "flowbite-svelte";
+    import { parseTooltipForRendering } from "$lib/utils/tooltipUtils";
     import Divider from "./Divider.svelte";
     import MonsterCardImage from "./MonsterCardImage.svelte";
 
@@ -23,6 +24,15 @@
             (enchantment) => enchantment.type === enchantmentType,
         ),
     );
+
+    // Type guard functions to check the type of tooltip part
+    function isKeywordPart(part: unknown): part is { text: string; effect: string } {
+        return typeof part === "object" && part !== null && "effect" in part;
+    }
+
+    function isTierPart(part: unknown): part is { bold: boolean; parts: { text: string; tierType: string | null }[]; original: string } {
+        return typeof part === "object" && part !== null && "bold" in part;
+    }
 </script>
 
 <Card
@@ -47,13 +57,77 @@
 
         {#each card.tiers[tierType].tooltips as tooltip}
             <div class="text-sm md:text-base">
-                {tooltip}
+                {#each parseTooltipForRendering(tooltip, card.startingTier) as part}
+                    {#if typeof part === "string"}
+                        {part}
+                    {:else if isKeywordPart(part)}
+                        <!-- Render keyword with game effect styling -->
+                        <span class="font-bold text-gameEffects-{part.effect}">
+                            {part.text}
+                        </span>
+                    {:else if isTierPart(part)}
+                        <span
+                            class={part.bold
+                                ? "font-semibold whitespace-nowrap"
+                                : ""}
+                        >
+                            {#each part.parts as subpart, index}
+                                {#if subpart.tierType}
+                                    <span
+                                        class={`text-tiers-${subpart.tierType.toLowerCase()}-500`}
+                                    >
+                                        {subpart.text}
+                                    </span>
+                                {:else}
+                                    {subpart.text}
+                                {/if}
+
+                                {#if index < part.parts.length - 1}
+                                    {" » "}
+                                {/if}
+                            {/each}
+                        </span>
+                    {/if}
+                {/each}
             </div>
         {/each}
 
         {#if enchantment}
             {#each enchantment.tooltips as tooltip}
-                <div class="text-sm md:text-base">{tooltip}</div>
+                <div class="text-sm md:text-base">
+                    {#each parseTooltipForRendering(tooltip, card.startingTier) as part}
+                        {#if typeof part === "string"}
+                            {part}
+                        {:else if isKeywordPart(part)}
+                            <!-- Render keyword with game effect styling -->
+                            <span class="font-bold text-gameEffects-{part.effect}">
+                                {part.text}
+                            </span>
+                        {:else if isTierPart(part)}
+                            <span
+                                class={part.bold
+                                    ? "font-semibold whitespace-nowrap"
+                                    : ""}
+                            >
+                                {#each part.parts as subpart, index}
+                                    {#if subpart.tierType}
+                                        <span
+                                            class={`text-tiers-${subpart.tierType.toLowerCase()}-500`}
+                                        >
+                                            {subpart.text}
+                                        </span>
+                                    {:else}
+                                        {subpart.text}
+                                    {/if}
+
+                                    {#if index < part.parts.length - 1}
+                                        {" » "}
+                                    {/if}
+                                {/each}
+                            </span>
+                        {/if}
+                    {/each}
+                </div>
             {/each}
         {/if}
     </div>
