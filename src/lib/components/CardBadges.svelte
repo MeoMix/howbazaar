@@ -1,5 +1,6 @@
 <script lang="ts">
     import { Badge } from "flowbite-svelte";
+    import IconLabel from "./IconLabel.svelte";
 
     const {
         primaryBadges,
@@ -22,7 +23,7 @@
     <div class="flex flex-wrap gap-2">
         {#each primaryBadges as primaryBadge}
             <Badge rounded border class={getBadgeClasses(primaryBadge.color)}>
-                {primaryBadge.text}
+                <IconLabel label={primaryBadge.text} />
             </Badge>
         {/each}
     </div>
@@ -35,7 +36,7 @@
                     border
                     class={getBadgeClasses(secondaryBadge.color)}
                 >
-                    {secondaryBadge.text}
+                    <IconLabel label={secondaryBadge.text} />
                 </Badge>
             {/each}
         </div>
