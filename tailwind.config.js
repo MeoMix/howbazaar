@@ -19,14 +19,14 @@ const enchantments = {
 
 // Add game effect colors
 const gameEffects = {
-  haste: 'rgb(0,236,195)',
-  charge: 'rgb(0,236,195)',
+  haste: 'rgb(63,200,247)',
+  charge: 'rgb(63,200,247)',
   physical: 'rgb(245,80,61)',
   slow: 'rgb(203,159,110)',
   heal: 'rgb(142,234,49)',
   poison: 'rgb(14,190,79)',
   ammo: 'rgb(255,142,0)',
-  freeze: 'rgb(63,200,247)',
+  freeze: 'rgb(0,236,195)',
   shield: 'rgb(244,207,32)',
   lifesteal: 'rgb(157,74,111)',
   value: 'rgb(255,205,25)',
