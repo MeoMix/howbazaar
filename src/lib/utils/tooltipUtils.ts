@@ -218,7 +218,19 @@ const keywordEffectMap: Record<string, string> = {
   "Poison": "poison",
   "Freeze": "freeze",
   "Burn": "burn",
-  "Friend": "tag"
+  "Friend": "tag",
+  "Friends": "tag",
+  "Property": "tag",
+  "Properties": "tag",
+  "Weapon": "tag",
+  "Weapons": "tag",
+  "Vehicle": "tag",
+  "Vehicles": "tag",
+  "Tool": "tag",
+  "Tools": "tag",
+  "Aquatic": "tag",
+  "Toy": "tag",
+  "Apparel": "tag"
 };
 
 // Define types for tooltip rendering
