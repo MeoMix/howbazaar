@@ -7077,50 +7077,6 @@ const data: ParsedSkillCard[] = [
     "remarks": []
   },
   {
-    "id": "cac848c8-dc77-4277-ba9f-df282b9f36ef",
-    "name": "Nanite Healing",
-    "startingTier": "Bronze",
-    "tiers": {
-      "Bronze": {
-        "tooltips": [
-          "Your Small Heal items have +3 Heal."
-        ]
-      },
-      "Silver": {
-        "tooltips": [
-          "Your Small Heal items have +9 Heal."
-        ]
-      },
-      "Gold": {
-        "tooltips": [
-          "Your Small Heal items have +18 Heal."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "Your Small Heal items have +30 Heal."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [],
-    "hiddenTags": [
-      "HealReference"
-    ],
-    "size": "Medium",
-    "heroes": [
-      "Pygmalien",
-      "Mak"
-    ],
-    "artKey": "Icon_Skill_NaniteHealing.png",
-    "unifiedTooltips": [
-      "Your Small Heal items have (+3/+9/+18/+30) Heal."
-    ],
-    "remarks": []
-  },
-  {
     "id": "639fdb70-8dde-4301-ab75-426556a65eb6",
     "name": "Trickle Down Economics",
     "startingTier": "Gold",
@@ -9146,51 +9102,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The Core has its cooldown reduced by (10%/15%).",
       "While you have Burn, double this effect."
-    ],
-    "remarks": []
-  },
-  {
-    "id": "883043eb-5a5f-4fa2-9cae-185f51019b11",
-    "name": "Microfiber",
-    "startingTier": "Bronze",
-    "tiers": {
-      "Bronze": {
-        "tooltips": [
-          "Your Small Shield items have +3 shield."
-        ]
-      },
-      "Silver": {
-        "tooltips": [
-          "Your Small Shield items have +9 shield."
-        ]
-      },
-      "Gold": {
-        "tooltips": [
-          "Your Small Shield items have +18 shield."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "Your Small Shield items have +30 shield."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [],
-    "hiddenTags": [
-      "ShieldReference"
-    ],
-    "size": "Medium",
-    "heroes": [
-      "Stelle",
-      "Dooley",
-      "Pygmalien"
-    ],
-    "artKey": "Icon_Skill_Microfiber.png",
-    "unifiedTooltips": [
-      "Your Small Shield items have (+3/+9/+18/+30) shield."
     ],
     "remarks": []
   },

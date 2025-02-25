@@ -58,6 +58,11 @@ const disallowedList = [
   "e43da7b1-1190-469a-b6c6-43d8e3ca0ad6",
   // Small Weaponry
   "c4c70f57-c51e-4bc4-848c-0f0e7fbddd28",
+  // Microfiber
+  "883043eb-5a5f-4fa2-9cae-185f51019b11",
+  // Nanite Healing
+  "cac848c8-dc77-4277-ba9f-df282b9f36ef"
+
 ];
 
 // Filter the entries
