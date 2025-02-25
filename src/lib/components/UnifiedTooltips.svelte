@@ -32,7 +32,7 @@
                     {part}
                 {:else if isKeywordPart(part)}
                     <!-- Render keyword with game effect styling -->
-                    <span class="font-bold text-gameEffects-{part.effect}">
+                    <span class="font-semibold text-gameEffects-{part.effect}">
                         {part.text}
                     </span>
                 {:else if isTierPart(part)}
