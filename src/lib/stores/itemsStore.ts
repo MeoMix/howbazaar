@@ -58,6 +58,17 @@ function createItemsStore() {
         }
     }
 
+    // Persist to localStorage whenever the store changes (only in the browser)
+    if (browser) {
+        subscribe((value) => {
+            try {
+                localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(value));
+            } catch (err) {
+                console.error(`Error saving to localStorage:`, err);
+            }
+        });
+    }
+
     return { subscribe, load };
 }
 
