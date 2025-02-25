@@ -664,14 +664,6 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
 
         const unifiedTooltips = unifyTooltips(Object.entries(tiers).map(([, tier]) => tier.tooltips));
 
-        if (name === "Security Camera") {
-            remarks.push("Restorative Enchantment is implemented weird. Crit Chance scales with item tier, so 20% at Bronze or 50% at Diamond. This is the only enchant in the game which scales with tier. Expect this to change.")
-        }
-
-        if (name === "Open Sign") {
-            remarks.push("Deadly Enchantment is bugged and doesn't work in the current patch. Do not enchant Open Sign with Deadly.");
-        }
-
         return {
             id: card.Id,
             name,
@@ -769,10 +761,6 @@ function parseSkillCards(cardsJson: CardsJson): ParsedSkillCard[] {
         tiers = filterTooltipsByStartingTier(startingTier, tiers);
 
         const unifiedTooltips = unifyTooltips(Object.entries(tiers).map(([, tier]) => tier.tooltips));
-
-        if (name === "Retool") {
-            remarks.push("Retool is bugged. Only reloads left adjacent item not both adjacent items.");
-        }
 
         return {
             id: card.Id,
