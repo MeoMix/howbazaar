@@ -7,76 +7,8 @@
 >
     <g>
         <path
-            d="M9 1.75V16.25"
-            fill="none"
-            class="stroke-current"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="1.5"
-        ></path>
-        <path
-            d="M7 3L9 5L11 3"
-            fill="none"
-            class="stroke-current"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="1.5"
-        ></path>
-        <path
-            d="M7 15L9 13L11 15"
-            fill="none"
-            class="stroke-current"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="1.5"
-        ></path>
-        <path
-            d="M2.721 5.375L15.279 12.625"
-            fill="none"
-            class="stroke-current"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="1.5"
-        ></path>
-        <path
-            d="M2.804 7.73201L5.536 7.00001L4.804 4.26801"
-            fill="none"
-            class="stroke-current"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="1.5"
-        ></path>
-        <path
-            d="M13.196 13.732L12.464 11L15.196 10.268"
-            fill="none"
-            class="stroke-current"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="1.5"
-        ></path>
-        <path
-            d="M2.721 12.625L15.279 5.375"
-            fill="none"
-            class="stroke-current"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="1.5"
-        ></path>
-        <path
-            d="M4.804 13.732L5.536 11L2.804 10.268"
-            fill="none"
-            class="stroke-current"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="1.5"
-        ></path>
-        <path
-            d="M15.196 7.73201L12.464 7.00001L13.196 4.26801"
-            fill="none"
-            class="stroke-current"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="1.5"
+            d="M14.868,6.191c-.213-.426-.642-.691-1.118-.691h-2.653l1.088-2.798c.149-.385,.099-.818-.134-1.159-.233-.34-.619-.543-1.031-.543H6.85c-.522,0-.994,.329-1.174,.819l-2.385,6.501c-.14,.383-.083,.812,.15,1.146,.234,.334,.617,.533,1.024,.533h3.79l-1.727,6.044c-.1,.348,.063,.717,.387,.878,.107,.053,.221,.078,.334,.078,.229,0,.454-.106,.6-.3L14.751,7.5c.285-.381,.33-.882,.117-1.309Z"
+            class="fill-current"
         ></path>
     </g>
 </svg>
