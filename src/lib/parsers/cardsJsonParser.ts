@@ -244,6 +244,9 @@ function replaceTemplatingWithValues(tooltip: string, abilities: Ability[], aura
 }
 
 function prettyPrintTooltip(tooltip: string) {
+    // Remove bracketed content at the end of tooltips
+    tooltip = tooltip.replace(/\s*\[[^\]]*\]\s*$/, '');
+
     // Generally format milliseconds -> seconds
     // Don't be too greedy with the matching to avoid converting Life Preserver HP or Gavel Damage
     tooltip = tooltip.replace(/\b(\d{4,})\b(?=\s+second[s]?\b)/g, (match) => {

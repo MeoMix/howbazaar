@@ -94,7 +94,7 @@ const normalize = (text: string): string => text.toLowerCase().replace(/[^\w\s]|
 
 // Substring and normalized matching functions
 const substringMatch = (text: string, searchText: string): boolean => {
-    return normalize(text.toLowerCase()).includes(normalize(searchText.toLowerCase()));
+    return text.toLowerCase().includes(searchText.toLowerCase());
 }
 
 function matchesCardSearchText(

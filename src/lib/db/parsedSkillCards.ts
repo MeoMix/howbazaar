@@ -581,22 +581,22 @@ const data: ParsedSkillCard[] = [
     "tiers": {
       "Bronze": {
         "tooltips": [
-          "You have +35 Max Health for each Non-Weapon item you have. [0]"
+          "You have +35 Max Health for each Non-Weapon item you have."
         ]
       },
       "Silver": {
         "tooltips": [
-          "You have +100 Max Health for each Non-Weapon item you have. [0]"
+          "You have +100 Max Health for each Non-Weapon item you have."
         ]
       },
       "Gold": {
         "tooltips": [
-          "You have +200 Max Health for each Non-Weapon item you have. [0]"
+          "You have +200 Max Health for each Non-Weapon item you have."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "You have +300 Max Health for each Non-Weapon item you have. [0]"
+          "You have +300 Max Health for each Non-Weapon item you have."
         ]
       },
       "Legendary": {
@@ -613,7 +613,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_HealthyCollector.png",
     "unifiedTooltips": [
-      "You have (+35/+100/+200/+300) Max Health for each Non-Weapon item you have. [0]"
+      "You have (+35/+100/+200/+300) Max Health for each Non-Weapon item you have."
     ],
     "remarks": []
   },
@@ -1138,20 +1138,20 @@ const data: ParsedSkillCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "Your Weapons have +3 Damage for each Aquatic item you have. [0]",
-          "Your Shield items have +3 Shield for each Aquatic item you have. [0]"
+          "Your Weapons have +3 Damage for each Aquatic item you have.",
+          "Your Shield items have +3 Shield for each Aquatic item you have."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Your Weapons have +6 Damage for each Aquatic item you have. [0]",
-          "Your Shield items have +6 Shield for each Aquatic item you have. [0]"
+          "Your Weapons have +6 Damage for each Aquatic item you have.",
+          "Your Shield items have +6 Shield for each Aquatic item you have."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Your Weapons have +9 Damage for each Aquatic item you have. [0]",
-          "Your Shield items have +9 Shield for each Aquatic item you have. [0]"
+          "Your Weapons have +9 Damage for each Aquatic item you have.",
+          "Your Shield items have +9 Shield for each Aquatic item you have."
         ]
       },
       "Legendary": {
@@ -1172,8 +1172,8 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_VAN_Submerged",
     "unifiedTooltips": [
-      "Your Weapons have (+3/+6/+9) Damage for each Aquatic item you have. [0]",
-      "Your Shield items have (+3/+6/+9) Shield for each Aquatic item you have. [0]"
+      "Your Weapons have (+3/+6/+9) Damage for each Aquatic item you have.",
+      "Your Shield items have (+3/+6/+9) Shield for each Aquatic item you have."
     ],
     "remarks": []
   },
@@ -1397,17 +1397,17 @@ const data: ParsedSkillCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "Your Shield items have +1 Shield for every 4 gold you have. [NaN]"
+          "Your Shield items have +1 Shield for every 4 gold you have."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Your Shield items have +1 Shield for every 3 gold you have. [NaN]"
+          "Your Shield items have +1 Shield for every 3 gold you have."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Your Shield items have +1 Shield for every 2 gold you have. [NaN]"
+          "Your Shield items have +1 Shield for every 2 gold you have."
         ]
       },
       "Legendary": {
@@ -1425,7 +1425,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_MakeshiftPlate.png",
     "unifiedTooltips": [
-      "Your Shield items have +1 Shield for every (4/3/2) gold you have. [NaN]"
+      "Your Shield items have +1 Shield for every (4/3/2) gold you have."
     ],
     "remarks": []
   },
@@ -2045,17 +2045,17 @@ const data: ParsedSkillCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "You have +100 Max Health for each Weapon you have. [0]"
+          "You have +100 Max Health for each Weapon you have."
         ]
       },
       "Gold": {
         "tooltips": [
-          "You have +200 Max Health for each Weapon you have. [0]"
+          "You have +200 Max Health for each Weapon you have."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "You have +300 Max Health for each Weapon you have. [0]"
+          "You have +300 Max Health for each Weapon you have."
         ]
       },
       "Legendary": {
@@ -2074,7 +2074,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_Brawler.png",
     "unifiedTooltips": [
-      "You have (+100/+200/+300) Max Health for each Weapon you have. [0]"
+      "You have (+100/+200/+300) Max Health for each Weapon you have."
     ],
     "remarks": []
   },
@@ -2595,22 +2595,22 @@ const data: ParsedSkillCard[] = [
     "tiers": {
       "Bronze": {
         "tooltips": [
-          "The first time you fall below half health each fight, Shield equal to 20% of your Max Health. [0]"
+          "The first time you fall below half health each fight, Shield equal to 20% of your Max Health."
         ]
       },
       "Silver": {
         "tooltips": [
-          "The first time you fall below half health each fight, Shield equal to 30% of your Max Health. [0]"
+          "The first time you fall below half health each fight, Shield equal to 30% of your Max Health."
         ]
       },
       "Gold": {
         "tooltips": [
-          "The first time you fall below half health each fight, Shield equal to 40% of your Max Health. [0]"
+          "The first time you fall below half health each fight, Shield equal to 40% of your Max Health."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "The first time you fall below half health each fight, Shield equal to 50% of your Max Health. [0]"
+          "The first time you fall below half health each fight, Shield equal to 50% of your Max Health."
         ]
       },
       "Legendary": {
@@ -2628,7 +2628,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_MON_Withdraw_01",
     "unifiedTooltips": [
-      "The first time you fall below half health each fight, Shield equal to (20%/30%/40%/50%) of your Max Health. [0]"
+      "The first time you fall below half health each fight, Shield equal to (20%/30%/40%/50%) of your Max Health."
     ],
     "remarks": []
   },
@@ -3435,17 +3435,17 @@ const data: ParsedSkillCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "You have +10 Regeneration for each non-weapon item you have in play. [0]"
+          "You have +10 Regeneration for each non-weapon item you have in play."
         ]
       },
       "Gold": {
         "tooltips": [
-          "You have +15 Regeneration for each non-weapon item you have in play. [0]"
+          "You have +15 Regeneration for each non-weapon item you have in play."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "You have +20 Regeneration for each non-weapon item you have in play. [0]"
+          "You have +20 Regeneration for each non-weapon item you have in play."
         ]
       },
       "Legendary": {
@@ -3462,7 +3462,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_MON_WatersofInfinity.png",
     "unifiedTooltips": [
-      "You have (+10/+15/+20) Regeneration for each non-weapon item you have in play. [0]"
+      "You have (+10/+15/+20) Regeneration for each non-weapon item you have in play."
     ],
     "remarks": []
   },
@@ -4061,17 +4061,17 @@ const data: ParsedSkillCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "Your Weapons have +1 damage for each ammo you have on your items in play. [0]"
+          "Your Weapons have +1 damage for each ammo you have on your items in play."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Your Weapons have +2 damage for each ammo you have on your items in play. [0]"
+          "Your Weapons have +2 damage for each ammo you have on your items in play."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Your Weapons have +3 damage for each ammo you have on your items in play. [0]"
+          "Your Weapons have +3 damage for each ammo you have on your items in play."
         ]
       },
       "Legendary": {
@@ -4089,7 +4089,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_ScopedShot.png",
     "unifiedTooltips": [
-      "Your Weapons have (+1/+2/+3) damage for each ammo you have on your items in play. [0]"
+      "Your Weapons have (+1/+2/+3) damage for each ammo you have on your items in play."
     ],
     "remarks": []
   },
@@ -5282,17 +5282,17 @@ const data: ParsedSkillCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "Your Shield items have + Shield equal to 2 times your level. [NaN]"
+          "Your Shield items have + Shield equal to 2 times your level."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Your Shield items have + Shield equal to 3 times your level. [NaN]"
+          "Your Shield items have + Shield equal to 3 times your level."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Your Shield items have + Shield equal to 4 times your level. [NaN]"
+          "Your Shield items have + Shield equal to 4 times your level."
         ]
       },
       "Legendary": {
@@ -5311,7 +5311,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_HeavyMettle.png",
     "unifiedTooltips": [
-      "Your Shield items have + Shield equal to (2/3/4) times your level. [NaN]"
+      "Your Shield items have + Shield equal to (2/3/4) times your level."
     ],
     "remarks": []
   },
@@ -5793,17 +5793,17 @@ const data: ParsedSkillCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "Your Weapons have +2 damage and Shield items have +2 shield for each friend you have. [0, 0]"
+          "Your Weapons have +2 damage and Shield items have +2 shield for each friend you have."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Your Weapons have +4 damage and Shield items have +4 shield for each friend you have. [0, 0]"
+          "Your Weapons have +4 damage and Shield items have +4 shield for each friend you have."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Your Weapons have +6 damage and Shield items have +6 shield for each friend you have. [0, 0]"
+          "Your Weapons have +6 damage and Shield items have +6 shield for each friend you have."
         ]
       },
       "Legendary": {
@@ -5824,7 +5824,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_BalancedFriendship.png",
     "unifiedTooltips": [
-      "Your Weapons have (+2/+4/+6) damage and Shield items have (+2/+4/+6) shield for each friend you have. [0, 0]"
+      "Your Weapons have (+2/+4/+6) damage and Shield items have (+2/+4/+6) shield for each friend you have."
     ],
     "remarks": []
   },
@@ -5924,17 +5924,17 @@ const data: ParsedSkillCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "The first time you fall below half health each fight, Shield equal to 2 times the Burn on your opponent. [0]"
+          "The first time you fall below half health each fight, Shield equal to 2 times the Burn on your opponent."
         ]
       },
       "Gold": {
         "tooltips": [
-          "The first time you fall below half health each fight, Shield equal to 3 times the Burn on your opponent. [0]"
+          "The first time you fall below half health each fight, Shield equal to 3 times the Burn on your opponent."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "The first time you fall below half health each fight, Shield equal to 4 times the Burn on your opponent. [0]"
+          "The first time you fall below half health each fight, Shield equal to 4 times the Burn on your opponent."
         ]
       },
       "Legendary": {
@@ -5953,7 +5953,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_BurningShield.png",
     "unifiedTooltips": [
-      "The first time you fall below half health each fight, Shield equal to (2/3/4) times the Burn on your opponent. [0]"
+      "The first time you fall below half health each fight, Shield equal to (2/3/4) times the Burn on your opponent."
     ],
     "remarks": []
   },
@@ -5970,12 +5970,12 @@ const data: ParsedSkillCard[] = [
       },
       "Gold": {
         "tooltips": [
-          "You have +300 Max Health for each Diamond-tier item you have. [0]"
+          "You have +300 Max Health for each Diamond-tier item you have."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "You have +500 Max Health for each Diamond-tier item you have. [0]"
+          "You have +500 Max Health for each Diamond-tier item you have."
         ]
       },
       "Legendary": {
@@ -5993,7 +5993,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_PlatinumHeart.png",
     "unifiedTooltips": [
-      "You have (+300/+500) Max Health for each Diamond-tier item you have. [0]"
+      "You have (+300/+500) Max Health for each Diamond-tier item you have."
     ],
     "remarks": []
   },
@@ -6049,17 +6049,17 @@ const data: ParsedSkillCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "Your Weapons have + Damage equal to your income. [NaN]"
+          "Your Weapons have + Damage equal to your income."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Your Weapons have + Damage equal to double your income. [NaN]"
+          "Your Weapons have + Damage equal to double your income."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Your Weapons have + Damage equal to triple your income. [NaN]"
+          "Your Weapons have + Damage equal to triple your income."
         ]
       },
       "Legendary": {
@@ -6079,7 +6079,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_StrongArm.png",
     "unifiedTooltips": [
-      "Your Weapons have + Damage equal to (1x/2x/3x) your income. [NaN]"
+      "Your Weapons have + Damage equal to (1x/2x/3x) your income."
     ],
     "remarks": []
   },
@@ -6179,17 +6179,17 @@ const data: ParsedSkillCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "The first time you fall below half health each fight, Shield equal to 2 times the Poison on your opponent. [0]"
+          "The first time you fall below half health each fight, Shield equal to 2 times the Poison on your opponent."
         ]
       },
       "Gold": {
         "tooltips": [
-          "The first time you fall below half health each fight, Shield equal to 3 times the Poison on your opponent. [0]"
+          "The first time you fall below half health each fight, Shield equal to 3 times the Poison on your opponent."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "The first time you fall below half health each fight, Shield equal to 4 times the Poison on your opponent. [0]"
+          "The first time you fall below half health each fight, Shield equal to 4 times the Poison on your opponent."
         ]
       },
       "Legendary": {
@@ -6208,7 +6208,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_ToxicShield.png",
     "unifiedTooltips": [
-      "The first time you fall below half health each fight, Shield equal to (2/3/4) times the Poison on your opponent. [0]"
+      "The first time you fall below half health each fight, Shield equal to (2/3/4) times the Poison on your opponent."
     ],
     "remarks": []
   },
@@ -6696,17 +6696,17 @@ const data: ParsedSkillCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "Your items have +1% Crit Chance per Weapon you have. [0%]"
+          "Your items have +1% Crit Chance per Weapon you have."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Your items have +3% Crit Chance per Weapon you have. [0%]"
+          "Your items have +3% Crit Chance per Weapon you have."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Your items have +5% Crit Chance per Weapon you have. [0%]"
+          "Your items have +5% Crit Chance per Weapon you have."
         ]
       },
       "Legendary": {
@@ -6730,7 +6730,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_HonedArcenal.png",
     "unifiedTooltips": [
-      "Your items have (+1%/+3%/+5%) Crit Chance per Weapon you have. [0%]"
+      "Your items have (+1%/+3%/+5%) Crit Chance per Weapon you have."
     ],
     "remarks": []
   },
@@ -6744,17 +6744,17 @@ const data: ParsedSkillCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "The first time you fall below half health each fight, Shield equal to 30% of your Max Health. [0]"
+          "The first time you fall below half health each fight, Shield equal to 30% of your Max Health."
         ]
       },
       "Gold": {
         "tooltips": [
-          "The first time you fall below half health each fight, Shield equal to 50% of your Max Health. [0]"
+          "The first time you fall below half health each fight, Shield equal to 50% of your Max Health."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "The first time you fall below half health each fight, Shield equal to 80% of your Max Health. [0]"
+          "The first time you fall below half health each fight, Shield equal to 80% of your Max Health."
         ]
       },
       "Legendary": {
@@ -6772,7 +6772,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_MON_GlidedShell_03.png",
     "unifiedTooltips": [
-      "The first time you fall below half health each fight, Shield equal to (30%/50%/80%) of your Max Health. [0]"
+      "The first time you fall below half health each fight, Shield equal to (30%/50%/80%) of your Max Health."
     ],
     "remarks": []
   },
@@ -7000,17 +7000,17 @@ const data: ParsedSkillCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "You have 2 Regeneration for each Ammo item you have. [0]"
+          "You have 2 Regeneration for each Ammo item you have."
         ]
       },
       "Gold": {
         "tooltips": [
-          "You have 4 Regeneration for each Ammo item you have. [0]"
+          "You have 4 Regeneration for each Ammo item you have."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "You have 6 Regeneration for each Ammo item you have. [0]"
+          "You have 6 Regeneration for each Ammo item you have."
         ]
       },
       "Legendary": {
@@ -7028,7 +7028,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_MON_HulkingExperiment_01",
     "unifiedTooltips": [
-      "You have (2/4/6) Regeneration for each Ammo item you have. [0]"
+      "You have (2/4/6) Regeneration for each Ammo item you have."
     ],
     "remarks": []
   },
@@ -7767,17 +7767,17 @@ const data: ParsedSkillCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "Your non-tool items have +5% Crit Chance for each tool you have. [0]"
+          "Your non-tool items have +5% Crit Chance for each tool you have."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Your non-tool items have +10% Crit Chance for each tool you have. [0]"
+          "Your non-tool items have +10% Crit Chance for each tool you have."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Your non-tool items have +15% Crit Chance for each tool you have. [0]"
+          "Your non-tool items have +15% Crit Chance for each tool you have."
         ]
       },
       "Legendary": {
@@ -7796,7 +7796,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_MON_TheRightTool.png",
     "unifiedTooltips": [
-      "Your non-tool items have (+5%/+10%/+15%) Crit Chance for each tool you have. [0]"
+      "Your non-tool items have (+5%/+10%/+15%) Crit Chance for each tool you have."
     ],
     "remarks": []
   },
@@ -8101,7 +8101,7 @@ const data: ParsedSkillCard[] = [
       },
       "Diamond": {
         "tooltips": [
-          "Your Shield items have + Shield equal to the value of your Items. [0]"
+          "Your Shield items have + Shield equal to the value of your Items."
         ]
       },
       "Legendary": {
@@ -8119,7 +8119,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_MON_BananaBreak_02.png",
     "unifiedTooltips": [
-      "Your Shield items have + Shield equal to the value of your Items. [0]"
+      "Your Shield items have + Shield equal to the value of your Items."
     ],
     "remarks": []
   },
@@ -8526,12 +8526,12 @@ const data: ParsedSkillCard[] = [
       },
       "Gold": {
         "tooltips": [
-          "The first time you fall below half health each fight, Shield equal to 20% of your Max Health. [0%]"
+          "The first time you fall below half health each fight, Shield equal to 20% of your Max Health."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "The first time you fall below half health each fight, Shield equal to 30% of your Max Health. [0%]"
+          "The first time you fall below half health each fight, Shield equal to 30% of your Max Health."
         ]
       },
       "Legendary": {
@@ -8551,7 +8551,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_BackupDefenses.png",
     "unifiedTooltips": [
-      "The first time you fall below half health each fight, Shield equal to (20%/30%) of your Max Health. [0%]"
+      "The first time you fall below half health each fight, Shield equal to (20%/30%) of your Max Health."
     ],
     "remarks": []
   },
@@ -9628,12 +9628,12 @@ const data: ParsedSkillCard[] = [
       },
       "Gold": {
         "tooltips": [
-          "Your items have +2% Crit Chance for each weapon you have. [0]"
+          "Your items have +2% Crit Chance for each weapon you have."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Your items have +3% Crit Chance for each weapon you have. [0]"
+          "Your items have +3% Crit Chance for each weapon you have."
         ]
       },
       "Legendary": {
@@ -9652,7 +9652,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_MON_Lurk_02.png",
     "unifiedTooltips": [
-      "Your items have (+2%/+3%) Crit Chance for each weapon you have. [0]"
+      "Your items have (+2%/+3%) Crit Chance for each weapon you have."
     ],
     "remarks": []
   },
@@ -10238,12 +10238,12 @@ const data: ParsedSkillCard[] = [
       },
       "Gold": {
         "tooltips": [
-          "Your weapons have +7 Damage for each Tool you have. [0]"
+          "Your weapons have +7 Damage for each Tool you have."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Your weapons have +7 Damage for each Tool you have. [0]"
+          "Your weapons have +7 Damage for each Tool you have."
         ]
       },
       "Legendary": {
@@ -10265,7 +10265,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_STE_WorkinHard.png",
     "unifiedTooltips": [
-      "Your weapons have +7 Damage for each Tool you have. [0]"
+      "Your weapons have +7 Damage for each Tool you have."
     ],
     "remarks": []
   },
@@ -10412,12 +10412,12 @@ const data: ParsedSkillCard[] = [
       },
       "Gold": {
         "tooltips": [
-          "When you use a Property, deal damage equal to your gold. [NaN]"
+          "When you use a Property, deal damage equal to your gold."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "When you use a Property, deal damage equal to double your gold. [NaN]"
+          "When you use a Property, deal damage equal to double your gold."
         ]
       },
       "Legendary": {
@@ -10437,7 +10437,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_CommercialZoning.png",
     "unifiedTooltips": [
-      "When you use a Property, deal damage equal to (1x/2x) your gold. [NaN]"
+      "When you use a Property, deal damage equal to (1x/2x) your gold."
     ],
     "remarks": []
   },
@@ -11009,17 +11009,17 @@ const data: ParsedSkillCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "You have 1 Regeneration for each non-weapon item you have. [0]"
+          "You have 1 Regeneration for each non-weapon item you have."
         ]
       },
       "Gold": {
         "tooltips": [
-          "You have 2 Regeneration for each non-weapon item you have. [0]"
+          "You have 2 Regeneration for each non-weapon item you have."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "You have 3 Regeneration for each non-weapon item you have. [0]"
+          "You have 3 Regeneration for each non-weapon item you have."
         ]
       },
       "Legendary": {
@@ -11038,7 +11038,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_HealthyLifestyle.png",
     "unifiedTooltips": [
-      "You have (1/2/3) Regeneration for each non-weapon item you have. [0]"
+      "You have (1/2/3) Regeneration for each non-weapon item you have."
     ],
     "remarks": []
   },
@@ -11606,17 +11606,17 @@ const data: ParsedSkillCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "Your Poison items have +2 Poison for each Weapon you have. [0]"
+          "Your Poison items have +2 Poison for each Weapon you have."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Your Poison items have +4 Poison for each Weapon you have. [0]"
+          "Your Poison items have +4 Poison for each Weapon you have."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Your Poison items have +6 Poison for each Weapon you have. [0]"
+          "Your Poison items have +6 Poison for each Weapon you have."
         ]
       },
       "Legendary": {
@@ -11636,7 +11636,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_ExoticHerbs.png",
     "unifiedTooltips": [
-      "Your Poison items have (+2/+4/+6) Poison for each Weapon you have. [0]"
+      "Your Poison items have (+2/+4/+6) Poison for each Weapon you have."
     ],
     "remarks": []
   },

@@ -7692,21 +7692,21 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Cooldown 3 seconds",
           "Shield equal to 1 times this item's value.",
-          "Every 50 you spend, upgrade this. [Gold Spent: 0]"
+          "Every 50 you spend, upgrade this."
         ]
       },
       "Silver": {
         "tooltips": [
           "Cooldown 3 seconds",
           "Shield equal to 2 times this item's value.",
-          "Every 50 you spend, upgrade this. [Gold Spent: 0]"
+          "Every 50 you spend, upgrade this."
         ]
       },
       "Gold": {
         "tooltips": [
           "Cooldown 3 seconds",
           "Shield equal to 3 times this item's value.",
-          "Every 50 you spend, upgrade this. [Gold Spent: 0]"
+          "Every 50 you spend, upgrade this."
         ]
       },
       "Diamond": {
@@ -7807,7 +7807,7 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "Cooldown 3 seconds",
       "Shield equal to (1/2/3/4) times this item's value.",
-      "Every 50 you spend, upgrade this. [Gold Spent: 0]"
+      "Every 50 you spend, upgrade this."
     ],
     "remarks": []
   },
@@ -8430,21 +8430,21 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Cooldown 5 seconds",
           "Deal 16 damage.",
-          "Your Medium Weapons have +8 Damage for each Medium item you have. [0]"
+          "Your Medium Weapons have +8 Damage for each Medium item you have."
         ]
       },
       "Gold": {
         "tooltips": [
           "Cooldown 5 seconds",
           "Deal 16 damage.",
-          "Your Medium Weapons have +16 Damage for each Medium item you have. [0]"
+          "Your Medium Weapons have +16 Damage for each Medium item you have."
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 5 seconds",
           "Deal 16 damage.",
-          "Your Medium Weapons have +24 Damage for each Medium item you have. [0]"
+          "Your Medium Weapons have +24 Damage for each Medium item you have."
         ]
       },
       "Legendary": {
@@ -8534,7 +8534,7 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Deal 16 damage.",
-      "Your Medium Weapons have (+8/+16/+24) Damage for each Medium item you have. [0]"
+      "Your Medium Weapons have (+8/+16/+24) Damage for each Medium item you have."
     ],
     "remarks": []
   },
@@ -21560,7 +21560,7 @@ const data: ParsedItemCard[] = [
           "Cooldown 10 seconds",
           "Deal 40 damage.",
           "When you buy another item, this gains that item's Types.",
-          "This has +1 Multicast for each of its Types. [0]"
+          "This has +1 Multicast for each of its Types."
         ]
       },
       "Silver": {
@@ -21568,7 +21568,7 @@ const data: ParsedItemCard[] = [
           "Cooldown 10 seconds",
           "Deal 60 damage.",
           "When you buy another item, this gains that item's Types.",
-          "This has +1 Multicast for each of its Types. [0]"
+          "This has +1 Multicast for each of its Types."
         ]
       },
       "Gold": {
@@ -21576,7 +21576,7 @@ const data: ParsedItemCard[] = [
           "Cooldown 10 seconds",
           "Deal 80 damage.",
           "When you buy another item, this gains that item's Types.",
-          "This has +1 Multicast for each of its Types. [0]"
+          "This has +1 Multicast for each of its Types."
         ]
       },
       "Diamond": {
@@ -21584,7 +21584,7 @@ const data: ParsedItemCard[] = [
           "Cooldown 10 seconds",
           "Deal 100 damage.",
           "When you buy another item, this gains that item's Types.",
-          "This has +1 Multicast for each of its Types. [0]"
+          "This has +1 Multicast for each of its Types."
         ]
       },
       "Legendary": {
@@ -21681,7 +21681,7 @@ const data: ParsedItemCard[] = [
       "Cooldown 10 seconds",
       "Deal (40/60/80/100) damage.",
       "When you buy another item, this gains that item's Types.",
-      "This has +1 Multicast for each of its Types. [0]"
+      "This has +1 Multicast for each of its Types."
     ],
     "remarks": []
   },
@@ -23816,28 +23816,28 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Cooldown 4 seconds",
           "Heal 10.",
-          "This has +1 Multicast for each Property you have. [0]"
+          "This has +1 Multicast for each Property you have."
         ]
       },
       "Silver": {
         "tooltips": [
           "Cooldown 4 seconds",
           "Heal 20.",
-          "This has +1 Multicast for each Property you have. [0]"
+          "This has +1 Multicast for each Property you have."
         ]
       },
       "Gold": {
         "tooltips": [
           "Cooldown 4 seconds",
           "Heal 40.",
-          "This has +1 Multicast for each Property you have. [0]"
+          "This has +1 Multicast for each Property you have."
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 4 seconds",
           "Heal 80.",
-          "This has +1 Multicast for each Property you have. [0]"
+          "This has +1 Multicast for each Property you have."
         ]
       },
       "Legendary": {
@@ -23925,7 +23925,7 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "Cooldown 4 seconds",
       "Heal (10/20/40/80).",
-      "This has +1 Multicast for each Property you have. [0]"
+      "This has +1 Multicast for each Property you have."
     ],
     "remarks": []
   },
@@ -25848,7 +25848,7 @@ const data: ParsedItemCard[] = [
           "Cooldown 3 seconds",
           "Ammo 0",
           "Deal 30 damage.",
-          "This has +1 Max Ammo for each Toy you have. [0]"
+          "This has +1 Max Ammo for each Toy you have."
         ]
       },
       "Silver": {
@@ -25856,7 +25856,7 @@ const data: ParsedItemCard[] = [
           "Cooldown 3 seconds",
           "Ammo 0",
           "Deal 45 damage.",
-          "This has +2 Max Ammo for each Toy you have. [0]"
+          "This has +2 Max Ammo for each Toy you have."
         ]
       },
       "Gold": {
@@ -25864,7 +25864,7 @@ const data: ParsedItemCard[] = [
           "Cooldown 3 seconds",
           "Ammo 0",
           "Deal 60 damage.",
-          "This has +3 Max Ammo for each Toy you have. [0]"
+          "This has +3 Max Ammo for each Toy you have."
         ]
       },
       "Diamond": {
@@ -25872,7 +25872,7 @@ const data: ParsedItemCard[] = [
           "Cooldown 3 seconds",
           "Ammo 0",
           "Deal 75 damage.",
-          "This has +4 Max Ammo for each Toy you have. [0]"
+          "This has +4 Max Ammo for each Toy you have."
         ]
       },
       "Legendary": {
@@ -25969,7 +25969,7 @@ const data: ParsedItemCard[] = [
       "Cooldown 3 seconds",
       "Ammo 0",
       "Deal (30/45/60/75) damage.",
-      "This has (+1/+2/+3/+4) Max Ammo for each Toy you have. [0]"
+      "This has (+1/+2/+3/+4) Max Ammo for each Toy you have."
     ],
     "remarks": []
   },
@@ -26319,19 +26319,19 @@ const data: ParsedItemCard[] = [
       "Silver": {
         "tooltips": [
           "When you win a fight, this gains 2 value.",
-          "Your weapons have + damage equal to this item's value. [0]"
+          "Your weapons have + damage equal to this item's value."
         ]
       },
       "Gold": {
         "tooltips": [
           "When you win a fight, this gains 2 value.",
-          "Your weapons have + damage equal to this item's value. [0]"
+          "Your weapons have + damage equal to this item's value."
         ]
       },
       "Diamond": {
         "tooltips": [
           "When you win a fight, this gains 2 value.",
-          "Your weapons have + damage equal to this item's value. [0]"
+          "Your weapons have + damage equal to this item's value."
         ]
       },
       "Legendary": {
@@ -26424,7 +26424,7 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "When you win a fight, this gains 2 value.",
-      "Your weapons have + damage equal to this item's value. [0]"
+      "Your weapons have + damage equal to this item's value."
     ],
     "remarks": []
   },
@@ -33877,28 +33877,28 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Cooldown 6 seconds",
           "Burn 3.",
-          "This has + Burn equal to the Burn of your non-Fire Claw items. [0]"
+          "This has + Burn equal to the Burn of your non-Fire Claw items."
         ]
       },
       "Silver": {
         "tooltips": [
           "Cooldown 6 seconds",
           "Burn 6.",
-          "This has + Burn equal to the Burn of your non-Fire Claw items. [0]"
+          "This has + Burn equal to the Burn of your non-Fire Claw items."
         ]
       },
       "Gold": {
         "tooltips": [
           "Cooldown 6 seconds",
           "Burn 9.",
-          "This has + Burn equal to the Burn of your non-Fire Claw items. [0]"
+          "This has + Burn equal to the Burn of your non-Fire Claw items."
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 6 seconds",
           "Burn 12.",
-          "This has + Burn equal to the Burn of your non-Fire Claw items. [0]"
+          "This has + Burn equal to the Burn of your non-Fire Claw items."
         ]
       },
       "Legendary": {
@@ -33984,7 +33984,7 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Burn (3/6/9/12).",
-      "This has + Burn equal to the Burn of your non-Fire Claw items. [0]"
+      "This has + Burn equal to the Burn of your non-Fire Claw items."
     ],
     "remarks": []
   },
@@ -34536,12 +34536,12 @@ const data: ParsedItemCard[] = [
       },
       "Gold": {
         "tooltips": [
-          "You have Regeneration equal to adjacent properties' values. [0]"
+          "You have Regeneration equal to adjacent properties' values."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "You have Regeneration equal to double adjacent properties' values. [0]"
+          "You have Regeneration equal to double adjacent properties' values."
         ]
       },
       "Legendary": {
@@ -34584,7 +34584,7 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "You have Regeneration equal to (1x/2x) adjacent properties' values. [0]"
+      "You have Regeneration equal to (1x/2x) adjacent properties' values."
     ],
     "remarks": []
   },
@@ -40532,21 +40532,21 @@ const data: ParsedItemCard[] = [
       "Silver": {
         "tooltips": [
           "Cooldown 5 seconds",
-          "Your weapons gain Damage equal to this item's value for the fight. [0]",
+          "Your weapons gain Damage equal to this item's value for the fight.",
           "When you buy a weapon, this gains 1 value and you gain 20 max health."
         ]
       },
       "Gold": {
         "tooltips": [
           "Cooldown 5 seconds",
-          "Your weapons gain Damage equal to this item's value for the fight. [0]",
+          "Your weapons gain Damage equal to this item's value for the fight.",
           "When you buy a weapon, this gains 2 value and you gain 50 max health."
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 5 seconds",
-          "Your weapons gain Damage equal to this item's value for the fight. [0]",
+          "Your weapons gain Damage equal to this item's value for the fight.",
           "When you buy a weapon, this gains 3 value and you gain 100 max health."
         ]
       },
@@ -40643,7 +40643,7 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
-      "Your weapons gain Damage equal to this item's value for the fight. [0]",
+      "Your weapons gain Damage equal to this item's value for the fight.",
       "When you buy a weapon, this gains (1/2/3) value and you gain (20/50/100) max health."
     ],
     "remarks": []
@@ -40659,19 +40659,19 @@ const data: ParsedItemCard[] = [
       "Silver": {
         "tooltips": [
           "When you sell an item, this gains 1 value.",
-          "You have increased max health equal to 10 times this item's value. [60]"
+          "You have increased max health equal to 10 times this item's value."
         ]
       },
       "Gold": {
         "tooltips": [
           "When you sell an item, this gains 2 value.",
-          "You have increased max health equal to 15 times this item's value. [180]"
+          "You have increased max health equal to 15 times this item's value."
         ]
       },
       "Diamond": {
         "tooltips": [
           "When you sell an item, this gains 3 value.",
-          "You have increased max health equal to 20 times this item's value. [480]"
+          "You have increased max health equal to 20 times this item's value."
         ]
       },
       "Legendary": {
@@ -40742,13 +40742,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Your Weapons have + Damage equal to this item's value. [6]"
+          "Your Weapons have + Damage equal to this item's value."
         ]
       }
     ],
     "unifiedTooltips": [
       "When you sell an item, this gains (1/2/3) value.",
-      "You have increased max health equal to (10/15/20) times this item's value. ([60]/[180]/[480])"
+      "You have increased max health equal to (10/15/20) times this item's value."
     ],
     "remarks": []
   },
@@ -46203,7 +46203,7 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Cooldown 8 seconds",
           "Ammo 1",
-          "Your weapons gain damage equal to your weakest weapon's damage for the fight. [0]"
+          "Your weapons gain damage equal to your weakest weapon's damage for the fight."
         ]
       },
       "Legendary": {
@@ -46290,7 +46290,7 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "Cooldown 8 seconds",
       "Ammo 1",
-      "Your weapons gain damage equal to your weakest weapon's damage for the fight. [0]"
+      "Your weapons gain damage equal to your weakest weapon's damage for the fight."
     ],
     "remarks": []
   },
@@ -47159,19 +47159,19 @@ const data: ParsedItemCard[] = [
       "Silver": {
         "tooltips": [
           "When you visit a Merchant, this gains 1 value.",
-          "For every 5 Merchants you visit, upgrade this. [Merchants Visited: 0]"
+          "For every 5 Merchants you visit, upgrade this."
         ]
       },
       "Gold": {
         "tooltips": [
           "When you visit a Merchant, this gains 2 value.",
-          "For every 5 Merchants you visit, upgrade this. [Merchants Visited: 0]"
+          "For every 5 Merchants you visit, upgrade this."
         ]
       },
       "Diamond": {
         "tooltips": [
           "When you visit a Merchant, this gains 3 value.",
-          "For every 5 Merchants you visit, upgrade this. [Merchants Visited: 0]"
+          "For every 5 Merchants you visit, upgrade this."
         ]
       },
       "Legendary": {
@@ -47202,7 +47202,7 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "When you visit a Merchant, this gains (1/2/3) value.",
-      "For every 5 Merchants you visit, upgrade this. [Merchants Visited: 0]"
+      "For every 5 Merchants you visit, upgrade this."
     ],
     "remarks": []
   },
@@ -51090,14 +51090,14 @@ const data: ParsedItemCard[] = [
       },
       "Gold": {
         "tooltips": [
-          "Weapon Properties adjacent to this have + Damage equal to the value of your highest value item. [0]",
-          "Shield Properties adjacent to this have + Shield equal to the value of your highest value item. [0]"
+          "Weapon Properties adjacent to this have + Damage equal to the value of your highest value item.",
+          "Shield Properties adjacent to this have + Shield equal to the value of your highest value item."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Weapon Properties adjacent to this have + Damage equal to double the value of your highest value item. [0]",
-          "Shield Properties adjacent to this have + Shield equal to double the value of your highest value item. [0]"
+          "Weapon Properties adjacent to this have + Damage equal to double the value of your highest value item.",
+          "Shield Properties adjacent to this have + Shield equal to double the value of your highest value item."
         ]
       },
       "Legendary": {
@@ -51141,8 +51141,8 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "Weapon Properties adjacent to this have + Damage equal to (1x/2x) the value of your highest value item. [0]",
-      "Shield Properties adjacent to this have + Shield equal to (1x/2x) the value of your highest value item. [0]"
+      "Weapon Properties adjacent to this have + Damage equal to (1x/2x) the value of your highest value item.",
+      "Shield Properties adjacent to this have + Shield equal to (1x/2x) the value of your highest value item."
     ],
     "remarks": []
   },
@@ -52033,17 +52033,17 @@ const data: ParsedItemCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "Every 50 you spend, upgrade an item of a lower tier. [Gold Spent: 0]"
+          "Every 50 you spend, upgrade an item of a lower tier."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Every 50 you spend, upgrade an item of a lower tier. [Gold Spent: 0]"
+          "Every 50 you spend, upgrade an item of a lower tier."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Every 50 you spend, upgrade an item of a lower tier. [Gold Spent: 0]"
+          "Every 50 you spend, upgrade an item of a lower tier."
         ]
       },
       "Legendary": {
@@ -52133,7 +52133,7 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "Every 50 you spend, upgrade an item of a lower tier. [Gold Spent: 0]"
+      "Every 50 you spend, upgrade an item of a lower tier."
     ],
     "remarks": []
   },
