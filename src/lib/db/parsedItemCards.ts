@@ -32073,9 +32073,7 @@ const data: ParsedItemCard[] = [
       "Shield (50/75/100/125).",
       "Your Shield items have (+20%/+30%/+40%/+50%) Crit Chance."
     ],
-    "remarks": [
-      "Restorative Enchantment is implemented weird. Crit Chance scales with item tier, so 20% at Bronze or 50% at Diamond. This is the only enchant in the game which scales with tier. Expect this to change."
-    ]
+    "remarks": []
   },
   {
     "id": "eed2dc49-267a-4e8c-8ea6-d37dff677e8c",
@@ -51146,9 +51144,7 @@ const data: ParsedItemCard[] = [
       "Weapon Properties adjacent to this have + Damage equal to (1x/2x) the value of your highest value item. [0]",
       "Shield Properties adjacent to this have + Shield equal to (1x/2x) the value of your highest value item. [0]"
     ],
-    "remarks": [
-      "Deadly Enchantment is bugged and doesn't work in the current patch. Do not enchant Open Sign with Deadly."
-    ]
+    "remarks": []
   },
   {
     "id": "6d6199b4-82a4-441d-9329-f4164737ac6b",
