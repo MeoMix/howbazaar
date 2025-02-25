@@ -63,28 +63,48 @@ function matchesTagState(
     tagStates: Record<Tag | HiddenTag, TriState>,
     isMatchAnyTag: boolean
 ): boolean {
+    // Convert to Sets for quick "has" checks
+    const allCardTags = new Set([...cardTags, ...cardHiddenTags]);
+
+    // Helper that knows how to handle special-cases
+    const cardHasTag = (queryTag: string): boolean => {
+        // If the user is filtering on "Economy" treat "EconomyReference" as matching
+        // This is just because we show "Economy" to the user, rather than "EconomyReference", since there is no Economy tag.
+        if (queryTag === "Economy") {
+            return allCardTags.has("EconomyReference")
+        }
+
+        // Default check: just see if card has this tag in visible or hidden tags
+        return allCardTags.has(queryTag);
+    };
+
     const tagEntries = Object.entries(tagStates);
 
     if (isMatchAnyTag) {
+        // If there are no "on" tags, everything matches automatically
         const hasOnTags = tagEntries.some(([_, state]) => state === "on");
-        if (hasOnTags) {
-            return tagEntries.some(([tag, state]) => {
-                const isTagMatch = (cardTag: string) => cardTag === tag || (cardTag === `${tag}Reference` && tag === 'Economy');
-                return state === "on" && (cardTags.some(isTagMatch) || cardHiddenTags.some(isTagMatch));
-            });
+        if (!hasOnTags) {
+            return true;
         }
-        return true; // No tags are "on"; pass all cards
+
+        // Otherwise, match if at least one of the "on" tags is found
+        return tagEntries.some(([tag, state]) => {
+            return state === "on" && cardHasTag(tag);
+        });
     }
 
+    // "All" tags mode: must satisfy every rule
     return tagEntries.every(([tag, state]) => {
-        const isTagMatch = (cardTag: string) => cardTag === tag || (cardTag === `${tag}Reference` && tag === 'Economy');
         if (state === "on") {
-            return cardTags.some(isTagMatch) || cardHiddenTags.some(isTagMatch);
+            // Must have the tag
+            return cardHasTag(tag);
         }
         if (state === "off") {
-            return !cardTags.some(isTagMatch) && !cardHiddenTags.some(isTagMatch);
+            // Must not have the tag
+            return !cardHasTag(tag);
         }
-        return true; // "unset" tags don't affect filtering
+        // For "unset" (or anything else), ignore it
+        return true;
     });
 }
 
@@ -94,7 +114,7 @@ const normalize = (text: string): string => text.toLowerCase().replace(/[^\w\s]|
 
 // Substring and normalized matching functions
 const substringMatch = (text: string, searchText: string): boolean => {
-    return text.toLowerCase().includes(searchText.toLowerCase());
+    return normalize(text.toLowerCase()).includes(normalize(searchText.toLowerCase()));
 }
 
 function matchesCardSearchText(
