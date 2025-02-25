@@ -113,20 +113,20 @@ function matchesCardSearchText(
         arr?.some(item => substringMatch(item, searchText)) ?? false;
 
     const substringMatchTier = validTiers.some(([tierName, tier]) =>
-        substringMatch(tierName, lowerSearchText) ||
+        // substringMatch(tierName, lowerSearchText) ||
         tier.tooltips.some(tooltip => substringMatch(tooltip, lowerSearchText))
     );
 
     const substringMatchEnchantments = isSearchEnchantments && ('enchantments' in card) && card.enchantments.some(e =>
-        substringMatch(e.type, lowerSearchText) ||
+        // substringMatch(e.type, lowerSearchText) ||
         e.tooltips.some(tip => substringMatch(tip, lowerSearchText))
     );
 
     return substringMatch(card.name, lowerSearchText) ||
-        substringMatchArray(card.tags, lowerSearchText) ||
-        substringMatchArray(card.hiddenTags, lowerSearchText) ||
-        (card.size && substringMatch(card.size, lowerSearchText)) ||
-        substringMatchArray(card.heroes, lowerSearchText) ||
+        // substringMatchArray(card.tags, lowerSearchText) ||
+        // substringMatchArray(card.hiddenTags, lowerSearchText) ||
+        // (card.size && substringMatch(card.size, lowerSearchText)) ||
+        //substringMatchArray(card.heroes, lowerSearchText) ||
         substringMatchTier ||
         substringMatchEnchantments;
 }
