@@ -20,6 +20,7 @@
 <div class="my-4">
     <a
         class="text-3xl font-bold text-blue-600"
+        target="_blank"
         href="https://ko-fi.com/hi_im_meo">https://ko-fi.com/hi_im_meo</a
     >
 </div>
