@@ -217,7 +217,8 @@ const keywordEffectMap: Record<string, string> = {
   "Slow": "slow",
   "Poison": "poison",
   "Freeze": "freeze",
-  "Burn": "burn"
+  "Burn": "burn",
+  "Friend": "tag"
 };
 
 // Define types for tooltip rendering
