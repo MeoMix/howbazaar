@@ -110,11 +110,11 @@ function matchesTagState(
 
 
 // Match "yo-yo" to "yoyo" but don't match "Fort" to "Port" (as would be the case with Lev distance)
-const normalize = (text: string): string => text.toLowerCase().replace(/[^\w\s]|_/g, "");
+const normalize = (text: string): string => text.replace(/[^\w\s]|_/g, "");
 
 // Substring and normalized matching functions
-const substringMatch = (text: string, searchText: string): boolean => {
-    return normalize(text.toLowerCase()).includes(normalize(searchText.toLowerCase()));
+const substringMatch = (text: string, lowerSearchText: string): boolean => {
+    return normalize(text.toLowerCase()).includes(normalize(lowerSearchText));
 }
 
 function matchesCardSearchText(
@@ -124,31 +124,32 @@ function matchesCardSearchText(
 ): boolean {
     if (lowerSearchText === '') return true;
 
-    const validTiers = card.tiers
-        ? (Object.entries(card.tiers) as Entries<typeof card.tiers>)
-            .filter(([tierType, tier]) => tierType !== "Legendary" && tier.tooltips.length !== 0)
-        : [];
+    // Early exit if card name matches
+    if (substringMatch(card.name, lowerSearchText)) {
+        return true;
+    }
 
-    const substringMatchArray = (arr: string[] | undefined, searchText: string): boolean =>
-        arr?.some(item => substringMatch(item, searchText)) ?? false;
+    // Check tiers if they exist
+    if (card.tiers) {
+        for (const [tierType, tier] of Object.entries(card.tiers) as Entries<typeof card.tiers>) {
+            if (tierType !== "Legendary" && tier.tooltips.length !== 0) {
+                if (tier.tooltips.some(tooltip => substringMatch(tooltip, lowerSearchText))) {
+                    return true; // Early exit if found
+                }
+            }
+        }
+    }
 
-    const substringMatchTier = validTiers.some(([tierName, tier]) =>
-        // substringMatch(tierName, lowerSearchText) ||
-        tier.tooltips.some(tooltip => substringMatch(tooltip, lowerSearchText))
-    );
+    // Check enchantments if enabled
+    if (isSearchEnchantments && 'enchantments' in card) {
+        for (const e of card.enchantments) {
+            if (e.tooltips.some(tip => substringMatch(tip, lowerSearchText))) {
+                return true; // Early exit if found
+            }
+        }
+    }
 
-    const substringMatchEnchantments = isSearchEnchantments && ('enchantments' in card) && card.enchantments.some(e =>
-        // substringMatch(e.type, lowerSearchText) ||
-        e.tooltips.some(tip => substringMatch(tip, lowerSearchText))
-    );
-
-    return substringMatch(card.name, lowerSearchText) ||
-        // substringMatchArray(card.tags, lowerSearchText) ||
-        // substringMatchArray(card.hiddenTags, lowerSearchText) ||
-        // (card.size && substringMatch(card.size, lowerSearchText)) ||
-        //substringMatchArray(card.heroes, lowerSearchText) ||
-        substringMatchTier ||
-        substringMatchEnchantments;
+    return false;
 }
 
 function matchesMonsterSearchText(
