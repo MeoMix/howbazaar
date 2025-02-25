@@ -21,6 +21,7 @@
     import { page } from "$app/stores";
     import { clipboardState } from "$lib/stores/clipboard";
     import { PUBLIC_CDN_URL } from "$env/static/public";
+    import { DollarOutline } from "flowbite-svelte-icons";
 
     let toastStatus = $state(false);
     let toastClearTimeout: ReturnType<typeof setTimeout>;
@@ -64,6 +65,13 @@
         </NavBrand>
 
         <div class="flex md:order-2 items-center">
+            <a
+                href="/donate{$page.url.search}"
+                class="hover:text-gray-900 dark:text-bazaar-tan700 dark:hover:text-bazaar-orange dark:hover:bg-bazaar-brown p-2.5 rounded-lg"
+            >
+                <DollarOutline />
+            </a>
+
             <a
                 href="https://discord.gg/VrGGFYEXXz"
                 target="_blank"
