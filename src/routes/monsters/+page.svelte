@@ -23,7 +23,7 @@
 </svelte:head>
 
 <div
-    class="mx-auto w-full max-w-full sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl"
+    class="w-full max-w-full sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl"
 >
     <MonsterFilters
         dayOptions={data.dayOptions}

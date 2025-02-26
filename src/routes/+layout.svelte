@@ -16,12 +16,13 @@
     } from "flowbite-svelte";
     import CheckCircleOutline from "flowbite-svelte-icons/CheckCircleOutline.svelte";
     import DiscordSolid from "flowbite-svelte-icons/DiscordSolid.svelte";
-    import { type Snippet } from "svelte";
+    import { onMount, type Snippet } from "svelte";
     import { fly } from "svelte/transition";
     import { page } from "$app/stores";
     import { clipboardState } from "$lib/stores/clipboard";
     import { PUBLIC_CDN_URL } from "$env/static/public";
     import { DollarOutline } from "flowbite-svelte-icons";
+    import { adsStore } from "$lib/stores/adsStore";
 
     let toastStatus = $state(false);
     let toastClearTimeout: ReturnType<typeof setTimeout>;
@@ -36,6 +37,20 @@
     const onNavLiClick = () => {
         isHamburgerMenuOpen = false;
     };
+
+    let showAds = $state(false);
+    onMount(() => {
+        const unsubscribe = adsStore.subscribe((state) => {
+            showAds = state.showAds;
+        });
+
+        return unsubscribe;
+    });
+
+    // TODO: Would be nice if this was implicit from the existence of the ad element.
+    let footerAdMarginOffset = $derived(
+        showAds ? "mb-[50px] sm:mb-[90px] lg:mb-0" : "",
+    );
 
     let { children }: { children: Snippet } = $props();
 </script>
@@ -130,13 +145,56 @@
         ></div>
     </Navbar>
 
-    <div
-        class="flex-grow px-2 sm:px-4 max-w-[120rem] w-full mx-auto overflow-y-hidden"
-    >
-        {@render children()}
+    <div class="flex-grow px-2 sm:px-4 max-w-[120rem] w-full mx-auto">
+        <!-- Main container with flex layout -->
+        <div class="flex justify-center w-full px-4">
+            {@render children()}
+
+            {#if showAds}
+                <!-- Vertical banner ad - hidden on smaller screens, visible on lg and above -->
+                <div class="hidden lg:block ml-4 sticky h-full top-[72px] pt-8">
+                    <div
+                        class="bg-gray-100 border border-gray-200 rounded-lg overflow-hidden"
+                    >
+                        <!-- Ad content container with responsive width -->
+                        <div
+                            class="w-[160px] xl:w-[300px] h-[600px] flex items-center justify-center"
+                        >
+                            <script
+                                async
+                                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6020599814166575"
+                                crossorigin="anonymous"
+                            ></script>
+                            <!-- vertical-banner -->
+                            <ins
+                                class="adsbygoogle"
+                                style="display:block"
+                                data-ad-client="ca-pub-6020599814166575"
+                                data-ad-slot="3801324847"
+                                data-ad-format="auto"
+                                data-full-width-responsive="true"
+                            ></ins>
+                            <script>
+                                (adsbygoogle = window.adsbygoogle || []).push(
+                                    {},
+                                );
+                            </script>
+
+                            <!-- Placeholder for the actual ad - replace with your ad code -->
+                            <!-- <div class="text-center text-gray-500">
+                                <p class="text-sm">Advertisement</p>
+                                <p class="text-xs mt-2">160x600 / 300x600</p>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            {/if}
+        </div>
     </div>
 
-    <div class="fixed bottom-0 left-0 w-full flex justify-center">
+    <div
+        class={`fixed bottom-0 left-0 w-full flex justify-center ${footerAdMarginOffset}`}
+    >
         <Toast
             position="bottom-left"
             color={"green"}
@@ -152,20 +210,40 @@
         </Toast>
     </div>
 
-    <Footer
-        footerType="sitemap"
-        class="py-6 bg-white dark:bg-bazaar-background"
-    >
-        <div
-            class="h-[1px] my-6 bg-gradient-to-r from-transparent via-gray-200 to-transparent dark:via-bazaar-orange"
-        ></div>
-
-        <div class="mx-auto text-center">
-            <div>
-                <Badge border large color="green" class="whitespace-nowrap">
-                    Updated Feb 21
-                </Badge>
+    {#if showAds}
+        <!-- Fixed horizontal banner ad for smaller screens (visible on md and below) -->
+        <div class="lg:hidden fixed bottom-0 left-0 right-0 w-full z-50">
+            <div class="bg-gray-100 border-t border-gray-200 shadow-lg">
+                <!-- Ad content container with responsive width -->
+                <div
+                    class="w-full h-[50px] sm:h-[90px] flex items-center justify-center mx-auto max-w-screen-sm"
+                >
+                    <!-- Placeholder for the actual ad - replace with your ad code -->
+                    <div class="text-center text-gray-500">
+                        <p class="text-sm">Advertisement</p>
+                        <p class="text-xs mt-1">320x50 / 728x90</p>
+                    </div>
+                </div>
             </div>
         </div>
-    </Footer>
+    {/if}
+
+    <div class={`${footerAdMarginOffset}`}>
+        <Footer
+            footerType="sitemap"
+            class={`py-6 bg-white dark:bg-bazaar-background`}
+        >
+            <div
+                class="h-[1px] my-6 bg-gradient-to-r from-transparent via-gray-200 to-transparent dark:via-bazaar-orange"
+            ></div>
+
+            <div class="mx-auto text-center">
+                <div>
+                    <Badge border large color="green" class="whitespace-nowrap">
+                        Updated Feb 21
+                    </Badge>
+                </div>
+            </div>
+        </Footer>
+    </div>
 </div>
