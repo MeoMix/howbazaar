@@ -42,6 +42,12 @@
 
 <svelte:head>
     <link rel="icon" href="{PUBLIC_CDN_URL}/favicon.avif" />
+
+    <script
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6020599814166575"
+        crossorigin="anonymous"
+    ></script>
 </svelte:head>
 
 <div
