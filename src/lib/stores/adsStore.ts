@@ -27,7 +27,6 @@ function createAdsStore() {
     // Persist to localStorage whenever the store changes (only in the browser)
     if (browser) {
         subscribe((value) => {
-            console.log('creating store - subscribe', value);
             try {
                 localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(value));
             } catch (err) {

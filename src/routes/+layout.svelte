@@ -16,13 +16,15 @@
     } from "flowbite-svelte";
     import CheckCircleOutline from "flowbite-svelte-icons/CheckCircleOutline.svelte";
     import DiscordSolid from "flowbite-svelte-icons/DiscordSolid.svelte";
-    import { onMount, type Snippet } from "svelte";
+    import { onDestroy, onMount, tick, type Snippet } from "svelte";
     import { fly } from "svelte/transition";
     import { page } from "$app/stores";
     import { clipboardState } from "$lib/stores/clipboard";
     import { PUBLIC_CDN_URL } from "$env/static/public";
     import { DollarOutline } from "flowbite-svelte-icons";
     import { adsStore } from "$lib/stores/adsStore";
+    import { browser } from "$app/environment";
+    import type { Unsubscriber } from "svelte/store";
 
     let toastStatus = $state(false);
     let toastClearTimeout: ReturnType<typeof setTimeout>;
@@ -39,12 +41,69 @@
     };
 
     let showAds = $state(false);
-    onMount(() => {
-        const unsubscribe = adsStore.subscribe((state) => {
+    let adSenseLoadFailed = $state(false);
+    let unsubscribe = $state<Unsubscriber>();
+    let stickyAdElement = $state<HTMLElement>();
+    let observer = $state<MutationObserver>();
+
+    onMount(async () => {
+        unsubscribe = adsStore.subscribe((state) => {
             showAds = state.showAds;
         });
 
-        return unsubscribe;
+        if (showAds) {
+            try {
+                await tick();
+
+                if (
+                    window.adsbygoogle?.loaded &&
+                    window.adsbygoogle?.pageState
+                ) {
+                    window.adsbygoogle.push({});
+                } else {
+                    adSenseLoadFailed = true;
+                }
+            } catch (e) {
+                console.error("AdSense failed to load:", e);
+                adSenseLoadFailed = true;
+            }
+
+            observer = new MutationObserver((mutations) => {
+                mutations.forEach((mutation) => {
+                    if (
+                        mutation.type === "attributes" &&
+                        mutation.attributeName === "style"
+                    ) {
+                        const targetElement = mutation.target as HTMLElement;
+                        // Prevent Google AdSense from overwriting the height properties.
+                        targetElement.style.height = "";
+                        targetElement.style.minHeight = "";
+                    }
+                });
+            });
+
+            let currentElement: HTMLElement | undefined | null =
+                stickyAdElement;
+            while (
+                currentElement &&
+                currentElement !== document.documentElement
+            ) {
+                observer.observe(currentElement, {
+                    attributes: true,
+                    attributeFilter: ["style"],
+                });
+                currentElement = currentElement.parentElement; // Move up the DOM tree
+            }
+        }
+    });
+
+    onDestroy(() => {
+        unsubscribe?.();
+
+        // Disconnect the mutation observer when component is destroyed
+        if (observer) {
+            observer.disconnect();
+        }
     });
 
     // TODO: Would be nice if this was implicit from the existence of the ad element.
@@ -156,42 +215,22 @@
         <div class="flex justify-center w-full px-4">
             {@render children()}
 
-            {#if showAds}
+            {#if browser && showAds && !adSenseLoadFailed}
                 <!-- Vertical banner ad - hidden on smaller screens, visible on lg and above -->
-                <div class="hidden lg:block ml-4 sticky h-full top-[72px] pt-8">
+                <div
+                    bind:this={stickyAdElement}
+                    class="hidden lg:block ml-4 sticky h-full top-[72px] pt-8"
+                >
                     <div
                         class="bg-gray-100 border border-gray-200 rounded-lg overflow-hidden"
                     >
-                        <!-- Ad content container with responsive width -->
-                        <div
-                            class="w-[160px] xl:w-[300px] h-[600px] flex items-center justify-center"
-                        >
-                            <script
-                                async
-                                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6020599814166575"
-                                crossorigin="anonymous"
-                            ></script>
-                            <!-- vertical-banner -->
-                            <ins
-                                class="adsbygoogle"
-                                style="display:block"
-                                data-ad-client="ca-pub-6020599814166575"
-                                data-ad-slot="3801324847"
-                                data-ad-format="auto"
-                                data-full-width-responsive="true"
-                            ></ins>
-                            <script>
-                                (adsbygoogle = window.adsbygoogle || []).push(
-                                    {},
-                                );
-                            </script>
-
-                            <!-- Placeholder for the actual ad - replace with your ad code -->
-                            <!-- <div class="text-center text-gray-500">
-                                <p class="text-sm">Advertisement</p>
-                                <p class="text-xs mt-2">160x600 / 300x600</p>
-                            </div> -->
-                        </div>
+                        <ins
+                            class="adsbygoogle w-[120px] xl:w-[300px] max-h-[600px]"
+                            style="display:block"
+                            data-ad-client="ca-pub-6020599814166575"
+                            data-ad-slot="3801324847"
+                            data-ad-format="auto"
+                        ></ins>
                     </div>
                 </div>
             {/if}
@@ -216,7 +255,7 @@
         </Toast>
     </div>
 
-    {#if showAds}
+    {#if browser && showAds && !adSenseLoadFailed}
         <!-- Fixed horizontal banner ad for smaller screens (visible on md and below) -->
         <div class="lg:hidden fixed bottom-0 left-0 right-0 w-full z-50">
             <div class="bg-gray-100 border-t border-gray-200 shadow-lg">
