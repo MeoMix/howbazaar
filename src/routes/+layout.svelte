@@ -259,16 +259,15 @@
         <!-- Fixed horizontal banner ad for smaller screens (visible on md and below) -->
         <div class="lg:hidden fixed bottom-0 left-0 right-0 w-full z-50">
             <div class="bg-gray-100 border-t border-gray-200 shadow-lg">
-                <!-- Ad content container with responsive width -->
-                <div
-                    class="w-full h-[50px] sm:h-[90px] flex items-center justify-center mx-auto max-w-screen-sm"
+                <ins
+                    class="adsbygoogle w-full h-[50px] sm:h-[90px]"
+                    style="display:block"
+                    data-ad-client="ca-pub-6020599814166575"
+                    data-ad-slot="6216601165"
+                    data-ad-format="auto"
+                    data-full-width-responsive="true"
                 >
-                    <!-- Placeholder for the actual ad - replace with your ad code -->
-                    <div class="text-center text-gray-500">
-                        <p class="text-sm">Advertisement</p>
-                        <p class="text-xs mt-1">320x50 / 728x90</p>
-                    </div>
-                </div>
+                </ins>
             </div>
         </div>
     {/if}
