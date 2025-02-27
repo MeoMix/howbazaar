@@ -60,6 +60,7 @@
                     window.adsbygoogle?.pageState
                 ) {
                     window.adsbygoogle.push({});
+                    window.adsbygoogle.push({});
                 } else {
                     adSenseLoadFailed = true;
                 }
