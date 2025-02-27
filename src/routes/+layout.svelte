@@ -109,7 +109,7 @@
 
     // TODO: Would be nice if this was implicit from the existence of the ad element.
     let footerAdMarginOffset = $derived(
-        showAds ? "mb-[50px] sm:mb-[90px] lg:mb-0" : "",
+        (showAds && !adSenseLoadFailed) ? "mb-[50px] sm:mb-[90px] lg:mb-0" : "",
     );
 
     let { children }: { children: Snippet } = $props();
