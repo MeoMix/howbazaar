@@ -27,6 +27,7 @@
         isMatchAnyHero,
         isMonsterDropsOnly,
         isHiddenWhenEmpty,
+        initialLoad = true,
     }: {
         serverVersion: string;
         sortOptions: { name: string; value: SkillSortOptions }[];
@@ -38,6 +39,7 @@
         isMatchAnyHero: boolean;
         isMonsterDropsOnly: boolean;
         isHiddenWhenEmpty: boolean;
+        initialLoad?: boolean;
     } = $props();
 
     let selectedSortOption = $state("name" as SkillSortOptions);
@@ -99,5 +101,6 @@
         {listItem}
         {headerControls}
         listItemName="skill"
+        {initialLoad}
     />
 {/if}

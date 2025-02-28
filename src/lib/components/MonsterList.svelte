@@ -16,12 +16,14 @@
         searchText,
         selectedMonsterEncounter,
         isHiddenWhenEmpty,
+        initialLoad = true,
     }: {
         serverVersion: string;
         selectedDay: number | undefined;
         searchText: string;
         selectedMonsterEncounter: ClientSideMonsterEncounter | undefined;
         isHiddenWhenEmpty: boolean;
+        initialLoad?: boolean;
     } = $props();
 
     let isLoading = $state(false);
@@ -94,6 +96,7 @@
             items={filteredMonsters}
             {listItem}
             listItemName="monster"
+            {initialLoad}
         />
     </div>
 {:else if !isHiddenWhenEmpty}

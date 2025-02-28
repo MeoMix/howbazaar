@@ -126,6 +126,7 @@
         {isMatchAnyHero}
         {isMonsterDropsOnly}
         isHiddenWhenEmpty={true}
+        initialLoad={false}
     />
 
     <MonsterList
@@ -134,5 +135,6 @@
         {searchText}
         selectedMonsterEncounter={undefined}
         isHiddenWhenEmpty={true}
+        initialLoad={false}
     />
 </div>
