@@ -64,15 +64,18 @@
     });
 </script>
 
+{#snippet button()}
+    <AdvancedFilterToggle bind:isShowingAdvancedFilters />
+{/snippet}
+
 <div class="mt-8 mb-4">
     <div class="flex gap-2 items-center">
         <SearchInput
             placeholder="Search skills"
+            {button}
             bind:value={searchText}
             onClear={clearSearchInput}
         />
-
-        <AdvancedFilterToggle bind:isShowingAdvancedFilters />
     </div>
 
     {#if isShowingAdvancedFilters}
