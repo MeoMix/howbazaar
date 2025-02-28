@@ -111,6 +111,14 @@ describe('cardJsonParser', () => {
       );
     });
 
+    it('should unify Upgrade Hammer', () => {
+      const upgradeHammer = itemCards.find(card => card.name === "Upgrade Hammer")!;
+
+      expect(upgradeHammer.unifiedTooltips[0]).toEqual(
+        'When you sell this, upgrade your leftmost (Bronze/Silver/Gold) (or lower)-tier item.'
+      );
+    });
+
     // it('should unify Virus Cooldown', () => {
     //   const virus = itemCards.find(card => card.name === "Virus")!;
 
