@@ -124,27 +124,36 @@ function matchesCardSearchText(
 ): boolean {
     if (lowerSearchText === '') return true;
 
-    // Early exit if card name matches
-    if (substringMatch(card.name, lowerSearchText)) {
-        return true;
-    }
+    // Split the search text by | to support searching for multiple terms
+    const searchTerms = lowerSearchText.split('|').map(term => term.trim()).filter(term => term !== '');
+    
+    // If there are no valid search terms after splitting, return true
+    if (searchTerms.length === 0) return true;
+    
+    // Check if any of the search terms match
+    for (const term of searchTerms) {
+        // Early exit if card name matches
+        if (substringMatch(card.name, term)) {
+            return true;
+        }
 
-    // Check tiers if they exist
-    if (card.tiers) {
-        for (const [tierType, tier] of Object.entries(card.tiers) as Entries<typeof card.tiers>) {
-            if (tierType !== "Legendary" && tier.tooltips.length !== 0) {
-                if (tier.tooltips.some(tooltip => substringMatch(tooltip, lowerSearchText))) {
-                    return true; // Early exit if found
+        // Check tiers if they exist
+        if (card.tiers) {
+            for (const [tierType, tier] of Object.entries(card.tiers) as Entries<typeof card.tiers>) {
+                if (tierType !== "Legendary" && tier.tooltips.length !== 0) {
+                    if (tier.tooltips.some(tooltip => substringMatch(tooltip, term))) {
+                        return true; // Early exit if found
+                    }
                 }
             }
         }
-    }
 
-    // Check enchantments if enabled
-    if (isSearchEnchantments && 'enchantments' in card) {
-        for (const e of card.enchantments) {
-            if (e.tooltips.some(tip => substringMatch(tip, lowerSearchText))) {
-                return true; // Early exit if found
+        // Check enchantments if enabled
+        if (isSearchEnchantments && 'enchantments' in card) {
+            for (const e of card.enchantments) {
+                if (e.tooltips.some(tip => substringMatch(tip, term))) {
+                    return true; // Early exit if found
+                }
             }
         }
     }
@@ -158,10 +167,22 @@ function matchesMonsterSearchText(
 ): boolean {
     if (lowerSearchText === '') return true;
 
-    return substringMatch(monster.cardName, lowerSearchText) || (
-        monster.items.filter(item => matchesCardSearchText(item.card, lowerSearchText, false)).length > 0 ||
-        monster.skills.filter(skill => matchesCardSearchText(skill.card, lowerSearchText, false)).length > 0
-    );
+    // Split the search text by | to support searching for multiple terms
+    const searchTerms = lowerSearchText.split('|').map(term => term.trim()).filter(term => term !== '');
+    
+    // If there are no valid search terms after splitting, return true
+    if (searchTerms.length === 0) return true;
+    
+    // Check if any of the search terms match
+    for (const term of searchTerms) {
+        if (substringMatch(monster.cardName, term) || 
+            monster.items.filter(item => matchesCardSearchText(item.card, term, false)).length > 0 ||
+            monster.skills.filter(skill => matchesCardSearchText(skill.card, term, false)).length > 0) {
+            return true;
+        }
+    }
+
+    return false;
 }
 
 export function filterItemCards(
