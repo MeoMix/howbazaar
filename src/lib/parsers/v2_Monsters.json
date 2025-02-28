@@ -30,7 +30,8 @@
             "InstanceId": null,
             "Tier": "Bronze",
             "Attributes": {}
-          },       {
+          },
+          {
             "$type": "TCardInstanceItem",
             "EnchantmentType": null,
             "SocketId": "Socket_1",
@@ -39,7 +40,8 @@
             "InstanceId": null,
             "Tier": "Silver",
             "Attributes": {}
-          },       {
+          },
+          {
             "$type": "TCardInstanceItem",
             "EnchantmentType": null,
             "SocketId": "Socket_1",
@@ -48,7 +50,8 @@
             "InstanceId": null,
             "Tier": "Silver",
             "Attributes": {}
-          },       {
+          },
+          {
             "$type": "TCardInstanceItem",
             "EnchantmentType": null,
             "SocketId": "Socket_1",
@@ -2845,6 +2848,14 @@
           "TemplateVersion": "1.0.0",
           "InstanceId": null,
           "Tier": "Diamond",
+          "Attributes": {}
+        },
+        {
+          "$type": "TCardInstanceSkill",
+          "TemplateId": "fbbfbef7-8fe4-4ac0-81fa-09afb59e0fcc",
+          "TemplateVersion": "1.0.0",
+          "InstanceId": null,
+          "Tier": "Bronze",
           "Attributes": {}
         }
       ],
