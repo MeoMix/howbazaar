@@ -51130,7 +51130,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Deadly",
         "tooltips": [
-          "Shield Properties adjacent to this have + Crit Chance equal to the value of your highest value item. [0]"
+          "Shield Properties adjacent to this have + Shield equal to the value of your highest value item. [0]"
         ]
       },
       {

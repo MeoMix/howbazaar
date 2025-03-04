@@ -633,7 +633,7 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
 
                 // TODO: Do this intelligently not patch fix
                 if (card.Localization.Title.Text === "Open Sign" && enchantmentType === "Deadly") {
-                    tooltips = ["Shield Properties adjacent to this have + Crit Chance equal to the value of your highest value item. [0]"]
+                    tooltips = ["Shield Properties adjacent to this have + Shield equal to the value of your highest value item. [0]"]
                 }
 
                 if (actions.length === 0) {
