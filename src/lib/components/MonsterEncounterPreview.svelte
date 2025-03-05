@@ -53,7 +53,7 @@
         </div>
 
         <div class={`text-green-700 whitespace-nowrap mb-2 md:mb-0`}>
-            {monsterEncounter.health} health
+            {monsterEncounter.health === -1 ? "<Unknown>" : monsterEncounter.health} health
         </div>
     </div>
 </button>

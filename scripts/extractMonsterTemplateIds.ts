@@ -8,7 +8,14 @@ const hardcodedMappings = {
   // The keys come from the cards json
   '4101117c-9cb0-480e-bfac-814da069ec80': '8c8861cd-4309-4b36-b448-7ea6db77d2ea',
   // Yerdan
-  'a44c3d18-8968-4956-b3a2-5cbf3b4c12c2': 'e12b9ee1-de04-4bdc-ad74-2485f240cfcf'
+  'a44c3d18-8968-4956-b3a2-5cbf3b4c12c2': 'e12b9ee1-de04-4bdc-ad74-2485f240cfcf',
+
+  // Kyver Commander
+  '54bd46ca-2dec-4fbf-bae9-4cfff1c80043': '27afe780-4867-41d6-8126-36b501c0d2ef',
+  // Scovyle
+  '91c233ed-b88c-4ec9-b3ee-cec880a14213': '7a61ddf2-dd00-462c-8312-873f0d27de64',
+  // Ghost Pepper
+  'f79e72dc-7f9b-4e7e-b14e-d4896fcf004f': 'b146714a-748a-4862-989c-19c83f6331fb',
 
   // d0202706-46dc-4c65-bf87-5e4ab63632ec
 };

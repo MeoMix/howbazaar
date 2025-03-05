@@ -186,9 +186,9 @@ async function cleanFileNames(folderPath: string) {
             newFileName = newFileName.replace(new RegExp(`^${prefix}|(?<=_)${prefix}`, 'g'), '');
         }
 
-        // Replace suffix "_Char" with "_Portrait" before the file extension
+        // Replace suffix "_Char" (case-insensitive) with "_Portrait" before the file extension
         const extension = path.extname(newFileName);
-        if (newFileName.endsWith(suffixToReplace + extension)) {
+        if (new RegExp(`${suffixToReplace}${extension}$`, 'i').test(newFileName)) {
             newFileName = newFileName.slice(0, -suffixToReplace.length - extension.length) + replacementSuffix + extension;
         }
 

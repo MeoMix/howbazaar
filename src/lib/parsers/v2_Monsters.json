@@ -9908,5 +9908,137 @@
         "UnlockedSlots": 1023
       }
     }
+  },
+  "27afe780-4867-41d6-8126-36b501c0d2ef": {
+    "Id": "27afe780-4867-41d6-8126-36b501c0d2ef",
+    "Version": "1.0.0",
+    "InternalName": "Kyver Commander",
+    "Player": {
+      "Attributes": {
+        "Prestige": -1,
+        "HealthMax": -1,
+        "Level": -1
+      },
+      "Hand": {
+        "Items": [],
+        "UnlockedSlots": 248
+      },
+      "Skills": [
+        {
+          "$type": "TCardInstanceSkill",
+          "TemplateId": "c5bff6ad-5d13-4cf3-9941-98f3cf913949",
+          "TemplateVersion": "1.0.0",
+          "InstanceId": null,
+          "Tier": "Silver",
+          "Attributes": {}
+        }
+      ],
+      "Stash": {
+        "Items": [],
+        "UnlockedSlots": 1023
+      }
+    }
+  },
+  "7a61ddf2-dd00-462c-8312-873f0d27de64": {
+    "Id": "7a61ddf2-dd00-462c-8312-873f0d27de64",
+    "Version": "1.0.0",
+    "InternalName": "Scovyle",
+    "Player": {
+      "Attributes": {
+        "Prestige": -1,
+        "HealthMax": -1,
+        "Level": -1
+      },
+      "Hand": {
+        "Items": [
+          {
+            "$type": "TCardInstanceItem",
+            "EnchantmentType": null,
+            "SocketId": "Socket_1",
+            "TemplateId": "8ff7ebb6-a783-403a-ae29-7e89d0c90040",
+            "TemplateVersion": "1.0.0",
+            "InstanceId": null,
+            "Tier": "Silver",
+            "Attributes": {}
+          },
+          {
+            "$type": "TCardInstanceItem",
+            "EnchantmentType": null,
+            "SocketId": "Socket_1",
+            "TemplateId": "0d227497-f57f-44ef-98a8-15791e710fb6",
+            "TemplateVersion": "1.0.0",
+            "InstanceId": null,
+            "Tier": "Silver",
+            "Attributes": {}
+          },
+          {
+            "$type": "TCardInstanceItem",
+            "EnchantmentType": null,
+            "SocketId": "Socket_1",
+            "TemplateId": "e6d331a7-c0e3-4619-9eee-c7c5023969bb",
+            "TemplateVersion": "1.0.0",
+            "InstanceId": null,
+            "Tier": "Silver",
+            "Attributes": {}
+          },
+          {
+            "$type": "TCardInstanceItem",
+            "EnchantmentType": null,
+            "SocketId": "Socket_1",
+            "TemplateId": "c0455f22-2fb9-4ce6-a65f-e874e3d86ff0",
+            "TemplateVersion": "1.0.0",
+            "InstanceId": null,
+            "Tier": "Gold",
+            "Attributes": {}
+          },
+          {
+            "$type": "TCardInstanceItem",
+            "EnchantmentType": null,
+            "SocketId": "Socket_1",
+            "TemplateId": "069755d6-fa1b-4c09-a7c9-31c3338184f3",
+            "TemplateVersion": "1.0.0",
+            "InstanceId": null,
+            "Tier": "Gold",
+            "Attributes": {}
+          }
+        ],
+        "UnlockedSlots": 248
+      },
+      "Skills": [],
+      "Stash": {
+        "Items": [],
+        "UnlockedSlots": 1023
+      }
+    }
+  },
+  "b146714a-748a-4862-989c-19c83f6331fb": {
+    "Id": "b146714a-748a-4862-989c-19c83f6331fb",
+    "Version": "1.0.0",
+    "InternalName": "Ghost Pepper",
+    "Player": {
+      "Attributes": {
+        "Prestige": -1,
+        "HealthMax": -1,
+        "Level": -1
+      },
+      "Hand": {
+        "Items": [],
+        "UnlockedSlots": 248
+      },
+      "Skills": [
+        {
+          "$type": "TCardInstanceSkill",
+          "TemplateId": "80b1dcad-fc56-43a2-8bcc-cc41e62a7616",
+          "TemplateVersion": "1.0.0",
+          "InstanceId": null,
+          "Tier": "Bronze",
+          "Attributes": {}
+        }
+      ],
+      "Stash": {
+        "Items": [],
+        "UnlockedSlots": 1023
+      }
+    }
   }
 }

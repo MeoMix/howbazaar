@@ -99,6 +99,11 @@ const data: ParsedCombatEncounterCard[] = [
     "monsterTemplateId": "d34242a2-02b0-4361-9402-e216cb12d165"
   },
   {
+    "id": "f79e72dc-7f9b-4e7e-b14e-d4896fcf004f",
+    "name": "Ghost Pepper",
+    "monsterTemplateId": "b146714a-748a-4862-989c-19c83f6331fb"
+  },
+  {
     "id": "47c042ba-707a-4e00-aea2-c1ed2ed880e5",
     "name": "Sabretooth",
     "monsterTemplateId": "ee37ea07-e024-447c-b89f-88b9940c19af"
@@ -384,6 +389,11 @@ const data: ParsedCombatEncounterCard[] = [
     "monsterTemplateId": "23274e3a-c38d-4aff-92b6-599103256cee"
   },
   {
+    "id": "54bd46ca-2dec-4fbf-bae9-4cfff1c80043",
+    "name": "Kyver Commander",
+    "monsterTemplateId": "27afe780-4867-41d6-8126-36b501c0d2ef"
+  },
+  {
     "id": "105b820e-34ee-484e-a7a1-011032ec7eec",
     "name": "Joyful Jack",
     "monsterTemplateId": "6d946fe1-13cc-4141-bc89-84981c4ef77f"
@@ -562,6 +572,11 @@ const data: ParsedCombatEncounterCard[] = [
     "id": "8b8ac0e2-565f-475a-b944-018627ee321c",
     "name": "PvP Encounter - End of Day",
     "monsterTemplateId": "fa5f844d-d23a-4611-98d1-38fb7f6e6535"
+  },
+  {
+    "id": "91c233ed-b88c-4ec9-b3ee-cec880a14213",
+    "name": "Scovyle",
+    "monsterTemplateId": "7a61ddf2-dd00-462c-8312-873f0d27de64"
   },
   {
     "id": "a2baf3bc-6164-4a16-ab41-48b450f694d1",

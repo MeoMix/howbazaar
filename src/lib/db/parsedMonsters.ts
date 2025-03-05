@@ -4711,6 +4711,63 @@ const data: ParsedMonster[] = [
         "tierType": "Gold"
       }
     ]
+  },
+  {
+    "id": "27afe780-4867-41d6-8126-36b501c0d2ef",
+    "level": -1,
+    "health": -1,
+    "items": [],
+    "skills": [
+      {
+        "templateId": "c5bff6ad-5d13-4cf3-9941-98f3cf913949",
+        "tierType": "Silver"
+      }
+    ]
+  },
+  {
+    "id": "7a61ddf2-dd00-462c-8312-873f0d27de64",
+    "level": -1,
+    "health": -1,
+    "items": [
+      {
+        "templateId": "8ff7ebb6-a783-403a-ae29-7e89d0c90040",
+        "tierType": "Silver",
+        "socketId": "Socket_1"
+      },
+      {
+        "templateId": "0d227497-f57f-44ef-98a8-15791e710fb6",
+        "tierType": "Silver",
+        "socketId": "Socket_1"
+      },
+      {
+        "templateId": "e6d331a7-c0e3-4619-9eee-c7c5023969bb",
+        "tierType": "Silver",
+        "socketId": "Socket_1"
+      },
+      {
+        "templateId": "c0455f22-2fb9-4ce6-a65f-e874e3d86ff0",
+        "tierType": "Gold",
+        "socketId": "Socket_1"
+      },
+      {
+        "templateId": "069755d6-fa1b-4c09-a7c9-31c3338184f3",
+        "tierType": "Gold",
+        "socketId": "Socket_1"
+      }
+    ],
+    "skills": []
+  },
+  {
+    "id": "b146714a-748a-4862-989c-19c83f6331fb",
+    "level": -1,
+    "health": -1,
+    "items": [],
+    "skills": [
+      {
+        "templateId": "80b1dcad-fc56-43a2-8bcc-cc41e62a7616",
+        "tierType": "Bronze"
+      }
+    ]
   }
 ];
 
