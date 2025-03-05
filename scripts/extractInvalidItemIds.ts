@@ -71,6 +71,8 @@ const allowedList = [
   'cdea14ac-23d0-43c2-95b3-12cedab1795a',
   // Aurora Dome
   'bb101259-4d30-4d93-9d69-b99c08f17488',
+  // Sauna
+  '21c858b6-6f6e-4bc5-9e84-3722b3dd813a'
 ];
 
 const disallowedList = [

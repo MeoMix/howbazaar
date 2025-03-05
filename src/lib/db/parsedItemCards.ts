@@ -55839,6 +55839,127 @@ const data: ParsedItemCard[] = [
     "packId": "Vanessa_Core"
   },
   {
+    "id": "21c858b6-6f6e-4bc5-9e84-3722b3dd813a",
+    "name": "Sauna",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 7 seconds",
+          "Burn 4.",
+          "When you Burn, Heal 10 and gain 1 Regeneration for the fight."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 7 seconds",
+          "Burn 5.",
+          "When you Burn, Heal 20 and gain 2 Regeneration for the fight."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 7 seconds",
+          "Burn 6.",
+          "When you Burn, Heal 30 and gain 3 Regeneration for the fight."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Property"
+    ],
+    "hiddenTags": [
+      "Burn",
+      "Heal",
+      "Regen"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Pygmalien"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 2 items for 2 second(s)."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze 1 medium or small item for 2 second(s)."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 2 items for 2 second(s)."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield equal to 10 times this item's Burn."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "This has double Heal."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to this item's Burn."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "This has double Burn."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal damage equal to 10 times this item's Burn."
+        ]
+      }
+    ],
+    "unifiedTooltips": [
+      "Cooldown 7 seconds",
+      "Burn (4/5/6).",
+      "When you Burn, Heal (10/20/30) and gain (1/2/3) Regeneration for the fight."
+    ],
+    "remarks": [],
+    "packId": "Pyg_Frozen_Assets"
+  },
+  {
     "id": "ba625e9a-9c8b-4c21-bf6e-e7a6ff264019",
     "name": "Ice Cubes",
     "startingTier": "Gold",
