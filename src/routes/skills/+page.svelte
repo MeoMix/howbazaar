@@ -3,7 +3,7 @@
         Hero,
         HiddenTag,
         SkillSearchLocationOption,
-        SkillSortOptions,
+        SkillSortOption,
         Tag,
         TierType,
         TriState,
@@ -35,7 +35,7 @@
     );
     let isMonsterDropsOnly = $state(false);
 
-    let sortOptions: { name: string; value: SkillSortOptions }[] = [
+    let sortOptions: { name: string; value: SkillSortOption }[] = [
         {
             value: "name",
             name: "Name",

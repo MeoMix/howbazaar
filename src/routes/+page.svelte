@@ -6,10 +6,10 @@
     import type {
         Hero,
         HiddenTag,
-        ItemSortOptions,
+        ItemSortOption,
         ItemSearchLocationOption,
         Size,
-        SkillSortOptions,
+        SkillSortOption,
         Tag,
         TierType,
         TriState,
@@ -55,7 +55,7 @@
 
     let isMonsterDropsOnly = $state(false);
 
-    let itemSortOptions: { name: string; value: ItemSortOptions }[] = [
+    let itemSortOptions: { name: string; value: ItemSortOption }[] = [
         {
             value: "name",
             name: "Name",
@@ -65,7 +65,7 @@
             name: "Tier",
         },
         {
-            value: "size",
+        value: "size",
             name: "Size",
         },
         {
@@ -74,7 +74,7 @@
         },
     ];
 
-    let skillSortOptions: { name: string; value: SkillSortOptions }[] = [
+    let skillSortOptions: { name: string; value: SkillSortOption }[] = [
         {
             value: "name",
             name: "Name",

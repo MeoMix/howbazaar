@@ -4,7 +4,7 @@
         Hero,
         HiddenTag,
         SkillSearchLocationOption,
-        SkillSortOptions,
+        SkillSortOption,
         Tag,
         TierType,
         TriState,
@@ -32,7 +32,7 @@
         initialLoad = true,
     }: {
         serverVersion: string;
-        sortOptions: { name: string; value: SkillSortOptions }[];
+        sortOptions: { name: string; value: SkillSortOption }[];
         heroStates: Record<Hero, TriState>;
         selectedTiers: TierType[];
         tagStates: Record<Tag | HiddenTag, TriState>;
@@ -45,7 +45,7 @@
         initialLoad?: boolean;
     } = $props();
 
-    let selectedSortOption = $state("name" as SkillSortOptions);
+    let selectedSortOption = $state("name" as SkillSortOption);
     let isLoading = $state(false);
     let hasError = $state(false);
     let skills = $state([] as ClientSideSkillCard[]);

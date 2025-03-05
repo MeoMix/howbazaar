@@ -2,7 +2,7 @@
     import type {
         Hero,
         HiddenTag,
-        ItemSortOptions,
+        ItemSortOption,
         ItemSearchLocationOption,
         Size,
         Tag,
@@ -29,7 +29,7 @@
         "name-text" as ItemSearchLocationOption,
     );
     let isMonsterDropsOnly = $state(false);
-    let sortOptions: { name: string; value: ItemSortOptions }[] = [
+    let sortOptions: { name: string; value: ItemSortOption }[] = [
         {
             value: "name",
             name: "Name",

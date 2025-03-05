@@ -3,7 +3,7 @@
         ClientSideItemCard,
         Hero,
         HiddenTag,
-        ItemSortOptions,
+        ItemSortOption,
         ItemSearchLocationOption,
         Size,
         Tag,
@@ -33,7 +33,7 @@
         isHiddenWhenEmpty,
     }: {
         serverVersion: string;
-        sortOptions: { name: string; value: ItemSortOptions }[];
+        sortOptions: { name: string; value: ItemSortOption }[];
         selectedHeroes: Hero[];
         selectedTiers: TierType[];
         tagStates: Record<Tag | HiddenTag, TriState>;
@@ -46,7 +46,7 @@
     } = $props();
 
     let items = $state([] as ClientSideItemCard[]);
-    let selectedSortOption = $state("name" as ItemSortOptions);
+    let selectedSortOption = $state("name" as ItemSortOption);
     // TODO: Consider persisting this in a store and/or in local storage
     let areEnchantmentsShown = $state(true);
     let isLoading = $state(false);

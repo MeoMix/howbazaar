@@ -1,4 +1,4 @@
-import type { ClientSideItemCard, ClientSideMonsterEncounter, ClientSideSkillCard, Hero, HiddenTag, ItemSortOptions, ItemSearchLocationOption, Size, SkillSortOptions, Tag, TierType, TriState, SkillSearchLocationOption, MonsterSearchLocationOption, AllSearchLocationOption } from "$lib/types";
+import type { ClientSideItemCard, ClientSideMonsterEncounter, ClientSideSkillCard, Hero, HiddenTag, ItemSortOption, ItemSearchLocationOption, Size, SkillSortOption, Tag, TierType, TriState, SkillSearchLocationOption, MonsterSearchLocationOption, AllSearchLocationOption } from "$lib/types";
 import type { Entries } from "type-fest";
 
 export const heroOrder = ["Vanessa", "Pygmalien", "Dooley", "Jules", "Stelle", "Mak", "Common"] as const;
@@ -266,7 +266,7 @@ export function filterTags(tags: Tag[], hiddenTags: HiddenTag[]) {
     ).sort();
 }
 
-export function sortCards<T extends (ClientSideItemCard | ClientSideSkillCard)>(cards: T[], selectedSortOption: (ItemSortOptions | SkillSortOptions)) {
+export function sortCards<T extends (ClientSideItemCard | ClientSideSkillCard)>(cards: T[], selectedSortOption: (ItemSortOption | SkillSortOption)) {
     return cards.sort((a, b) => {
         if (selectedSortOption === "name") {
             return a.name.localeCompare(b.name);
