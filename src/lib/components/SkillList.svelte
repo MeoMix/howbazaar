@@ -3,6 +3,7 @@
         ClientSideSkillCard,
         Hero,
         HiddenTag,
+        SkillSearchLocationOption,
         SkillSortOptions,
         Tag,
         TierType,
@@ -23,6 +24,7 @@
         selectedTiers,
         tagStates,
         searchText,
+        selectedSearchLocationOption,
         isMatchAnyTag,
         isMatchAnyHero,
         isMonsterDropsOnly,
@@ -35,6 +37,7 @@
         selectedTiers: TierType[];
         tagStates: Record<Tag | HiddenTag, TriState>;
         searchText: string;
+        selectedSearchLocationOption: SkillSearchLocationOption;
         isMatchAnyTag: boolean;
         isMatchAnyHero: boolean;
         isMonsterDropsOnly: boolean;
@@ -67,6 +70,7 @@
                 selectedTiers,
                 tagStates,
                 searchText,
+                selectedSearchLocationOption,
                 isMatchAnyTag,
                 isMatchAnyHero,
                 isMonsterDropsOnly,

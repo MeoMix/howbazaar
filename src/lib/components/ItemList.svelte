@@ -4,6 +4,7 @@
         Hero,
         HiddenTag,
         ItemSortOptions,
+        ItemSearchLocationOption,
         Size,
         Tag,
         TierType,
@@ -26,7 +27,7 @@
         tagStates,
         selectedSizes,
         searchText,
-        isSearchEnchantments,
+        selectedSearchLocationOption,
         isMatchAnyTag,
         isMonsterDropsOnly,
         isHiddenWhenEmpty,
@@ -38,7 +39,7 @@
         tagStates: Record<Tag | HiddenTag, TriState>;
         selectedSizes: Size[];
         searchText: string;
-        isSearchEnchantments: boolean;
+        selectedSearchLocationOption: ItemSearchLocationOption;
         isMatchAnyTag: boolean;
         isMonsterDropsOnly: boolean;
         isHiddenWhenEmpty: boolean;
@@ -72,7 +73,7 @@
                 tagStates,
                 selectedSizes,
                 searchText,
-                isSearchEnchantments,
+                selectedSearchLocationOption,
                 isMatchAnyTag,
                 isMonsterDropsOnly,
             ),

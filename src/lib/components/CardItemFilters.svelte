@@ -4,7 +4,13 @@
     import FilterToggle from "./FilterToggle.svelte";
     import { onMount } from "svelte";
     import { page } from "$app/stores";
-    import type { HiddenTag, Tag, Option, TriState } from "$lib/types";
+    import type {
+        HiddenTag,
+        Tag,
+        Option,
+        TriState,
+        ItemSearchLocationOption,
+    } from "$lib/types";
     import SearchInput from "./SearchInput.svelte";
     import MultiSelectTriFilter from "./MultiSelectTriFilter.svelte";
     import AdvancedFilterToggle from "./AdvancedFilterToggle.svelte";
@@ -20,7 +26,7 @@
         selectedSizes = $bindable(),
         isMatchAnyTag = $bindable(),
         searchText = $bindable(),
-        isSearchEnchantments = $bindable(),
+        selectedSearchLocationOption = $bindable(),
         isMonsterDropsOnly = $bindable(),
     }: {
         heroOptions: Option[];
@@ -34,12 +40,13 @@
         selectedSizes: string[];
         isMatchAnyTag: boolean;
         searchText: string;
-        isSearchEnchantments: boolean;
+        selectedSearchLocationOption: ItemSearchLocationOption;
         isMonsterDropsOnly: boolean;
     } = $props();
 
     function clearSearch() {
         searchText = "";
+        selectedSearchLocationOption = "name-text";
         selectedHeroes = [];
         selectedTiers = [];
         tagStates = Object.fromEntries(
@@ -47,7 +54,6 @@
         ) as Record<Tag | HiddenTag, TriState>;
         isMatchAnyTag = false;
         selectedSizes = [];
-        isSearchEnchantments = false;
         isMonsterDropsOnly = false;
     }
 
@@ -65,6 +71,15 @@
             searchText = hash.replace(/_+/g, " ");
         }
     });
+
+    let searchLocationOptions = $state([
+        { name: "Name", value: "name" },
+        { name: "Name & Text", value: "name-text" },
+        {
+            name: "Name, Text & Enchantments",
+            value: "name-text-enchantments",
+        },
+    ] as { name: string; value: ItemSearchLocationOption }[]);
 </script>
 
 {#snippet button()}
@@ -75,6 +90,8 @@
     <div class="flex gap-2 items-center">
         <SearchInput
             placeholder="Search items"
+            {searchLocationOptions}
+            bind:selectedSearchLocationOption
             {button}
             bind:value={searchText}
             onClear={clearSearchInput}
@@ -121,13 +138,6 @@
                             onClick={() => {
                                 isMonsterDropsOnly = !isMonsterDropsOnly;
                             }}
-                        />
-
-                        <FilterToggle
-                            isEnabled={isSearchEnchantments}
-                            label="Search Enchantments"
-                            onClick={() =>
-                                (isSearchEnchantments = !isSearchEnchantments)}
                         />
                     </div>
                 </div>

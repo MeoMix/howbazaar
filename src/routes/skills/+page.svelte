@@ -2,6 +2,7 @@
     import type {
         Hero,
         HiddenTag,
+        SkillSearchLocationOption,
         SkillSortOptions,
         Tag,
         TierType,
@@ -29,6 +30,9 @@
     let isMatchAnyTag = $state(false);
     let isMatchAnyHero = $state(false);
     let searchText = $state("");
+    let selectedSearchLocationOption = $state(
+        "name-text" as SkillSearchLocationOption,
+    );
     let isMonsterDropsOnly = $state(false);
 
     let sortOptions: { name: string; value: SkillSortOptions }[] = [
@@ -64,6 +68,7 @@
         bind:isMatchAnyTag
         bind:isMatchAnyHero
         bind:searchText
+        bind:selectedSearchLocationOption
         bind:isMonsterDropsOnly
     />
 
@@ -74,6 +79,7 @@
         {selectedTiers}
         {tagStates}
         {searchText}
+        {selectedSearchLocationOption}
         {isMatchAnyTag}
         {isMatchAnyHero}
         {isMonsterDropsOnly}
