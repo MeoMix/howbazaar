@@ -1,7 +1,7 @@
 import { writable } from 'svelte/store';
 import { browser } from '$app/environment';
 
-const LOCAL_STORAGE_KEY = 'adsStore';
+const LOCAL_STORAGE_KEY = 'adsStore_v2';
 
 type AdsStoreData = {
     showAds: boolean;
@@ -14,10 +14,10 @@ const loadFromLocalStorage = (): AdsStoreData => {
         const storedData = localStorage.getItem(LOCAL_STORAGE_KEY);
         return storedData
             ? { ...JSON.parse(storedData) }
-            : { showAds: false };
+            : { showAds: true };
     } catch (err) {
         console.error(`Error parsing localStorage key "${LOCAL_STORAGE_KEY}":`, err);
-        return { showAds: false };
+        return { showAds: true };
     }
 };
 
