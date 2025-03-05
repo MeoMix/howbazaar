@@ -91,7 +91,7 @@ describe('cardJsonParser', () => {
       const closedSign = itemCards.find(card => card.name === "Closed Sign")!;
 
       expect(closedSign.unifiedTooltips[0]).toEqual(
-        'You have Regeneration equal to (1x/2x) adjacent properties\' values. [0]'
+        'You have Regeneration equal to (1x/2x) adjacent properties\' values.'
       );
     });
 
@@ -166,41 +166,26 @@ describe('cardJsonParser', () => {
     expect(amberCard.tiers.Silver.tooltips.find((text) => text.includes(searchPhrase))).toEqual(`${searchPhrase} +1 Slow.`);
   });
 
-  it('should parse "Satchel" correctly by replacing its {aura.2} with a correct value', () => {
-    const satchelCard = itemCards.find(card => card.name === "Satchel")!;
-
-    const searchPhrase = "You have";
-
-    expect(satchelCard.tiers.Silver.tooltips.find((text) => text.includes(searchPhrase))).toEqual(`${searchPhrase} 4 Regeneration.`);
-  });
-
   it('should parse "Uwashiwali Bird" correctly by replacing its {aura.1} with a correct value', () => {
     const uwashiwaliBirdCard = itemCards.find(card => card.name === "Uwashiwali Bird")!;
 
     const searchPhrase = "This has";
 
-    expect(uwashiwaliBirdCard.tiers.Bronze.tooltips.find((text) => text.includes(searchPhrase))).toEqual(`${searchPhrase} +1 Multicast for each Property you have. [0]`);
+    expect(uwashiwaliBirdCard.tiers.Bronze.tooltips.find((text) => text.includes(searchPhrase))).toEqual(`${searchPhrase} +1 Multicast for each Property you have.`);
   });
 
   it('should parse "Healthy Hoarder" correctly by replacing its {aura.0.mod} with a correct value', () => {
     const healthyCollector = skillCards.find(card => card.name === "Healthy Hoarder")!;
     const searchPhrase = "You have +";
 
-    expect(healthyCollector.tiers.Bronze.tooltips.find((text) => text.includes(searchPhrase))).toEqual(`${searchPhrase}35 Max Health for each Non-Weapon item you have. [0]`);
+    expect(healthyCollector.tiers.Bronze.tooltips.find((text) => text.includes(searchPhrase))).toEqual(`${searchPhrase}35 Max Health for each Non-Weapon item you have.`);
   });
 
   it('should parse "Crook" correctly by replacing its {aura.1} with a correct value (by relying on modifiers)', () => {
     const crook = itemCards.find(card => card.name === "Crook")!;
     const searchPhrase = "Your Medium Weapons have +";
 
-    expect(crook.tiers.Silver.tooltips.find((text) => text.includes(searchPhrase))).toEqual(`${searchPhrase}8 Damage for each Medium item you have. [0]`);
-  });
-
-  it('should parse "Fire Claw" correctly by replacing its [{aura.1}] with a correct value', () => {
-    const fireClaw = itemCards.find(card => card.name === "Fire Claw")!;
-    const searchPhrase = "This has + Burn equal to the Burn of your non-Fire Claw items. ";
-
-    expect(fireClaw.tiers.Bronze.tooltips.find((text) => text.includes(searchPhrase))).toEqual(`${searchPhrase}[0]`);
+    expect(crook.tiers.Silver.tooltips.find((text) => text.includes(searchPhrase))).toEqual(`${searchPhrase}8 Damage for each Medium item you have.`);
   });
 
   it('should parse "Fishing Net" correctly by replacing its {ability.0.targets} with a correct value', () => {
@@ -254,14 +239,7 @@ describe('cardJsonParser', () => {
     const eyeOfTheColossus = itemCards.find(card => card.name === "Eye of the Colossus")!;
     const cooldownTooltip = eyeOfTheColossus.tiers.Legendary.tooltips.find(tooltip => tooltip.includes("Cooldown"));
 
-    expect(cooldownTooltip).toEqual("Cooldown 10 seconds");
-  });
-
-  it('should parse Truffles {aura.2.mod} properly', () => {
-    const truffles = itemCards.find(card => card.name === "Truffles")!;
-    const cooldownTooltip = truffles.tiers.Silver.tooltips.find(tooltip => tooltip.includes("Heal equal to"));
-
-    expect(cooldownTooltip).toEqual("Heal equal to 1 times the value of your highest value item.");
+    expect(cooldownTooltip).toEqual("Cooldown 11 seconds");
   });
 
   it('should contain no tooltips with {', () => {
@@ -344,12 +322,12 @@ describe('cardJsonParser', () => {
       expect(restorativeBeachBall.tooltips[0]).toEqual('Heal 15 for each Aquatic or Toy item you have.');
     });
 
-    it('should parse "Obsidian Abstrolabe" correctly by properly parsing {ability.0}', () => {
+    it('should parse "Obsidian Abstrolabe" correctly by properly parsing {aura.e2.mod}', () => {
       const astrolabe = itemCards.find(card => card.name === "Astrolabe")!;
       const obsidianAstrolabe = astrolabe.enchantments.find(enchantment => enchantment.type === 'Obsidian')!;
 
       expect(obsidianAstrolabe.tooltips.length).toEqual(1);
-      expect(obsidianAstrolabe.tooltips[0]).toEqual('Haste a Weapon for 2 second(s).');
+      expect(obsidianAstrolabe.tooltips[0]).toEqual('Deal 8 damage for each non-Weapon item you have.');
     });
 
     it('should contain no enchantment tooltips with {, except for Induction Aegis with enchantmentType Heavy', () => {

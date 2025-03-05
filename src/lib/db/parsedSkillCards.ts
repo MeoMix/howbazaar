@@ -6696,17 +6696,17 @@ const data: ParsedSkillCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "Your items have +1% Crit Chance per Weapon you have."
+          "Your items have +2% Crit Chance per Weapon you have."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Your items have +3% Crit Chance per Weapon you have."
+          "Your items have +4% Crit Chance per Weapon you have."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Your items have +5% Crit Chance per Weapon you have."
+          "Your items have +6% Crit Chance per Weapon you have."
         ]
       },
       "Legendary": {
@@ -6730,7 +6730,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_HonedArcenal.png",
     "unifiedTooltips": [
-      "Your items have (+1%/+3%/+5%) Crit Chance per Weapon you have."
+      "Your items have (+2%/+4%/+6%) Crit Chance per Weapon you have."
     ],
     "remarks": []
   },
@@ -6792,7 +6792,7 @@ const data: ParsedSkillCard[] = [
       },
       "Diamond": {
         "tooltips": [
-          "When you use a Medium item, one of your Burn items gains +15 burn for the fight."
+          "When you use a Medium item, one of your Burn items gains +10 burn for the fight."
         ]
       },
       "Legendary": {
@@ -6809,7 +6809,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_MON_DraconicRage.png",
     "unifiedTooltips": [
-      "When you use a Medium item, one of your Burn items gains +15 burn for the fight."
+      "When you use a Medium item, one of your Burn items gains +10 burn for the fight."
     ],
     "remarks": []
   },
@@ -7411,7 +7411,8 @@ const data: ParsedSkillCard[] = [
       "Dooley",
       "Jules",
       "Stelle",
-      "Mak"
+      "Mak",
+      "Pygmalien"
     ],
     "artKey": "Icon_Skill_FinalFlame.png",
     "unifiedTooltips": [
@@ -7537,7 +7538,8 @@ const data: ParsedSkillCard[] = [
       "Vanessa",
       "Dooley",
       "Jules",
-      "Stelle"
+      "Stelle",
+      "Pygmalien"
     ],
     "artKey": "Icon_Skill_HotSpot.png",
     "unifiedTooltips": [
@@ -8136,12 +8138,12 @@ const data: ParsedSkillCard[] = [
       },
       "Gold": {
         "tooltips": [
-          "At the start of each fight, deal damage equal to 15% of the enemy's Max Health."
+          "At the start of each fight, deal damage equal to 15% of your enemy's Max Health."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "At the start of each fight, deal damage equal to 30% of the enemy's Max Health."
+          "At the start of each fight, deal damage equal to 30% of your enemy's Max Health."
         ]
       },
       "Legendary": {
@@ -8158,7 +8160,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_MON_Ambush.png",
     "unifiedTooltips": [
-      "At the start of each fight, deal damage equal to (15%/30%) of the enemy's Max Health."
+      "At the start of each fight, deal damage equal to (15%/30%) of your enemy's Max Health."
     ],
     "remarks": []
   },
@@ -9916,7 +9918,8 @@ const data: ParsedSkillCard[] = [
       "Vanessa",
       "Mak",
       "Jules",
-      "Stelle"
+      "Stelle",
+      "Pygmalien"
     ],
     "artKey": "Icon_Skill_Frostfire.png",
     "unifiedTooltips": [
@@ -11414,7 +11417,8 @@ const data: ParsedSkillCard[] = [
       "Dooley",
       "Jules",
       "Stelle",
-      "Mak"
+      "Mak",
+      "Pygmalien"
     ],
     "artKey": "Icon_Skill_FireStarter.png",
     "unifiedTooltips": [

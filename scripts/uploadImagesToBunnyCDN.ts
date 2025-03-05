@@ -57,17 +57,39 @@ const getFiles = async (dir: string): Promise<string[]> => {
     return files.flat();
 };
 
-// Upload all images
+// Upload specific files
 (async () => {
     try {
-        const files = await getFiles(IMAGES_DIR);
-        console.log(`📂 Found ${files.length} images. Uploading to BunnyCDN...`);
-
-        for (const file of files) {
-          await uploadFile(file);
+        // Get file names from command line arguments
+        const fileNames = process.argv.slice(2);
+        
+        if (fileNames.length === 0) {
+            console.error("❌ Please provide at least one file name to upload");
+            process.exit(1);
         }
 
-        console.log("🎉 All images uploaded!");
+        console.log(`📂 Uploading ${fileNames.length} specified files to BunnyCDN...`);
+
+        // Get all available files in the images directory
+        const allFiles = await getFiles(IMAGES_DIR);
+        
+        // Filter files to only include the specified ones
+        const filesToUpload = allFiles.filter(file => {
+            const relativePath = relative(IMAGES_DIR, file);
+            return fileNames.includes(relativePath);
+        });
+
+        if (filesToUpload.length === 0) {
+            console.error("❌ No matching files found in the images directory");
+            process.exit(1);
+        }
+
+        // Upload the filtered files
+        for (const file of filesToUpload) {
+            await uploadFile(file);
+        }
+
+        console.log("🎉 All specified files uploaded!");
     } catch (error) {
         console.error("❌ Error:", error);
     }

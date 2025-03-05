@@ -538,7 +538,7 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
                             if (
                                 (card.Localization.Title.Text === "Flamethrower" && enchantmentType === "Toxic") ||
                                 (card.Localization.Title.Text === "Beach Ball" && (enchantmentType === "Restorative" || enchantmentType === "Shielded" || enchantmentType === "Toxic" || enchantmentType === "Fiery" || enchantmentType === "Obsidian")) ||
-                                (card.Localization.Title.Text === "Astrolabe" && (enchantmentType === "Restorative" || enchantmentType === "Shielded" || enchantmentType === "Toxic" || enchantmentType === "Fiery")) ||
+                                (card.Localization.Title.Text === "Astrolabe" && (enchantmentType === "Restorative" || enchantmentType === "Shielded" || enchantmentType === "Toxic" || enchantmentType === "Fiery" || enchantmentType === "Obsidian")) ||
                                 (card.Localization.Title.Text === "Forklift" && (enchantmentType === "Restorative" || enchantmentType === "Shielded" || enchantmentType === "Toxic" || enchantmentType === "Fiery")) ||
                                 (card.Localization.Title.Text === "Rowboat" && (enchantmentType === "Restorative" || enchantmentType === "Shielded" || enchantmentType === "Toxic" || enchantmentType === "Fiery" || enchantmentType === "Obsidian"))
                             ) {

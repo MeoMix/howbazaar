@@ -150,10 +150,10 @@
             <span
                 class="self-center whitespace-nowrap text-xl font-semibold dark:text-bazaar-tan700 hover:text-bazaar-orange dark:hover:text-bazaar-orange relative z-10"
             >
-                How Bazaar
-                <!-- <Badge border large color="green" class="whitespace-nowrap">
-                    Updated Feb 19
-                </Badge> -->
+                <!-- How Bazaar -->
+                <Badge border large color="green" class="whitespace-nowrap">
+                    Updated Mar 05
+                </Badge>
             </span>
         </NavBrand>
 
@@ -300,7 +300,7 @@
             <div class="mx-auto text-center">
                 <div>
                     <Badge border large color="green" class="whitespace-nowrap">
-                        Updated Feb 21
+                        Updated Mar 05
                     </Badge>
                 </div>
             </div>
