@@ -57,6 +57,7 @@
         isMatchAnyTag = false;
         selectedSizes = [];
         isMonsterDropsOnly = false;
+        isLatestExpansionOnly = false;
     }
 
     function clearSearchInput() {
