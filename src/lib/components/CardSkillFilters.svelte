@@ -70,6 +70,7 @@
         const hash = window.location.hash.slice(1);
         if (hash) {
             searchText = hash.replace(/_+/g, " ");
+            selectedSearchLocationOption = 'name';
         }
     });
 
