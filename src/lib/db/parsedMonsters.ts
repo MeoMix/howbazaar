@@ -4727,8 +4727,13 @@ const data: ParsedMonster[] = [
   {
     "id": "7a61ddf2-dd00-462c-8312-873f0d27de64",
     "level": -1,
-    "health": -1,
+    "health": 1400,
     "items": [
+      {
+        "templateId": "d45bb1dd-5342-4c69-b7fe-f56d3fac7d1f",
+        "tierType": "Silver",
+        "socketId": "Socket_1"
+      },
       {
         "templateId": "8ff7ebb6-a783-403a-ae29-7e89d0c90040",
         "tierType": "Silver",
@@ -4755,7 +4760,12 @@ const data: ParsedMonster[] = [
         "socketId": "Socket_1"
       }
     ],
-    "skills": []
+    "skills": [
+      {
+        "templateId": "b6c90dc6-f497-4fe4-90a1-759947180884",
+        "tierType": "Bronze"
+      }
+    ]
   },
   {
     "id": "b146714a-748a-4862-989c-19c83f6331fb",

@@ -9946,11 +9946,21 @@
     "Player": {
       "Attributes": {
         "Prestige": -1,
-        "HealthMax": -1,
+        "HealthMax": 1400,
         "Level": -1
       },
       "Hand": {
         "Items": [
+          {
+            "$type": "TCardInstanceItem",
+            "EnchantmentType": null,
+            "SocketId": "Socket_1",
+            "TemplateId": "d45bb1dd-5342-4c69-b7fe-f56d3fac7d1f",
+            "TemplateVersion": "1.0.0",
+            "InstanceId": null,
+            "Tier": "Silver",
+            "Attributes": {}
+          },
           {
             "$type": "TCardInstanceItem",
             "EnchantmentType": null,
@@ -10004,7 +10014,14 @@
         ],
         "UnlockedSlots": 248
       },
-      "Skills": [],
+      "Skills": [      {
+        "$type": "TCardInstanceSkill",
+        "TemplateId": "b6c90dc6-f497-4fe4-90a1-759947180884",
+        "TemplateVersion": "1.0.0",
+        "InstanceId": null,
+        "Tier": "Bronze",
+        "Attributes": {}
+      }],
       "Stash": {
         "Items": [],
         "UnlockedSlots": 1023
