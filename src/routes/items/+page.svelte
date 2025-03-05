@@ -2,7 +2,8 @@
     import type {
         Hero,
         HiddenTag,
-        ItemSortOptions,
+        ItemSortOption,
+        ItemSearchLocationOption,
         Size,
         Tag,
         TierType,
@@ -24,9 +25,11 @@
     let isMatchAnyTag = $state(false);
     let selectedSizes = $state([] as Size[]);
     let searchText = $state("");
-    let isSearchEnchantments = $state(false);
+    let selectedSearchLocationOption = $state(
+        "name-text" as ItemSearchLocationOption,
+    );
     let isMonsterDropsOnly = $state(false);
-    let sortOptions: { name: string; value: ItemSortOptions }[] = [
+    let sortOptions: { name: string; value: ItemSortOption }[] = [
         {
             value: "name",
             name: "Name",
@@ -64,7 +67,7 @@
         bind:selectedSizes
         bind:isMatchAnyTag
         bind:searchText
-        bind:isSearchEnchantments
+        bind:selectedSearchLocationOption
         bind:isMonsterDropsOnly
     />
 
@@ -76,7 +79,7 @@
         {tagStates}
         {selectedSizes}
         {searchText}
-        {isSearchEnchantments}
+        {selectedSearchLocationOption}
         {isMatchAnyTag}
         {isMonsterDropsOnly}
         isHiddenWhenEmpty={false}

@@ -463,6 +463,20 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
                     console.warn(card.Localization.Title.Text + ': Failed to match on tooltip');
                 }
 
+                if (card.Localization.Title.Text === "Upgrade Hammer") {
+                    if (tierName === "Silver" && rawTooltips[0] === "When you sell this, upgrade your leftmost Bronzer-tier item.") {
+                        rawTooltips[0] = "When you sell this, upgrade your leftmost Bronze (or lower)-tier item.";
+                    }
+
+                    if (tierName === "Gold" && rawTooltips[0] === "When you sell this, upgrade your leftmost Silver or lower tier item.") {
+                        rawTooltips[0] = "When you sell this, upgrade your leftmost Silver (or lower)-tier item.";
+                    }
+
+                    if (tierName === "Diamond" && rawTooltips[0] === "When you sell this, upgrade your leftmost item.") {
+                        rawTooltips[0] = "When you sell this, upgrade your leftmost Gold (or lower)-tier item.";
+                    }
+                }
+
                 let tooltips = getDisplayedTooltips(rawTooltips, abilities, auras, tier.Attributes);
                 let attributes = getDisplayedAttributes(tier.Attributes);
                 let attributeTooltips = attributes.map(attribute => `${attribute.name} ${attribute.name === "Lifesteal" ? "" : Math.round(attribute.value)}${attribute.valueDescriptor ?? ""}`.trim());
@@ -619,7 +633,7 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
 
                 // TODO: Do this intelligently not patch fix
                 if (card.Localization.Title.Text === "Open Sign" && enchantmentType === "Deadly") {
-                    tooltips = ["Shield Properties adjacent to this have + Crit Chance equal to the value of your highest value item. [0]"]
+                    tooltips = ["Shield Properties adjacent to this have + Shield equal to the value of your highest value item. [0]"]
                 }
 
                 if (actions.length === 0) {
@@ -737,11 +751,9 @@ function parseSkillCards(cardsJson: CardsJson): ParsedSkillCard[] {
                 }
 
                 let tooltips = getDisplayedTooltips(rawTooltips, abilities, auras, tier.Attributes);
-                let attributes = getDisplayedAttributes(tier.Attributes);
-                let attributeTooltips = attributes.map(attribute => `${attribute.name} ${attribute.name === "Lifesteal" ? "" : Math.round(attribute.value)}${attribute.valueDescriptor ?? ""}`.trim());
 
                 return [tierName, {
-                    tooltips: [...attributeTooltips, ...tooltips],
+                    tooltips,
                 }]
             },
         )) as Record<TierType, { tooltips: string[] }>;

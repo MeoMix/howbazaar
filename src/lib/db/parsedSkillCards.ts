@@ -12000,14 +12000,12 @@ const data: ParsedSkillCard[] = [
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 10 seconds",
           "Your Shield Vehicles gain 30% Shield.",
           "Your Weapon Vehicles gain 30% Damage."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 10 seconds",
           "Your Shield Vehicles gain 60% Shield.",
           "Your Weapon Vehicles gain 60% Damage."
         ]
@@ -12026,7 +12024,6 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_Flagship.png",
     "unifiedTooltips": [
-      "Cooldown 10 seconds",
       "Your Shield Vehicles gain (30%/60%) Shield.",
       "Your Weapon Vehicles gain (30%/60%) Damage."
     ],

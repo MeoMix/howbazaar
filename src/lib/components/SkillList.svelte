@@ -3,7 +3,8 @@
         ClientSideSkillCard,
         Hero,
         HiddenTag,
-        SkillSortOptions,
+        SkillSearchLocationOption,
+        SkillSortOption,
         Tag,
         TierType,
         TriState,
@@ -23,24 +24,28 @@
         selectedTiers,
         tagStates,
         searchText,
+        selectedSearchLocationOption,
         isMatchAnyTag,
         isMatchAnyHero,
         isMonsterDropsOnly,
         isHiddenWhenEmpty,
+        initialLoad = true,
     }: {
         serverVersion: string;
-        sortOptions: { name: string; value: SkillSortOptions }[];
+        sortOptions: { name: string; value: SkillSortOption }[];
         heroStates: Record<Hero, TriState>;
         selectedTiers: TierType[];
         tagStates: Record<Tag | HiddenTag, TriState>;
         searchText: string;
+        selectedSearchLocationOption: SkillSearchLocationOption;
         isMatchAnyTag: boolean;
         isMatchAnyHero: boolean;
         isMonsterDropsOnly: boolean;
         isHiddenWhenEmpty: boolean;
+        initialLoad?: boolean;
     } = $props();
 
-    let selectedSortOption = $state("name" as SkillSortOptions);
+    let selectedSortOption = $state("name" as SkillSortOption);
     let isLoading = $state(false);
     let hasError = $state(false);
     let skills = $state([] as ClientSideSkillCard[]);
@@ -65,6 +70,7 @@
                 selectedTiers,
                 tagStates,
                 searchText,
+                selectedSearchLocationOption,
                 isMatchAnyTag,
                 isMatchAnyHero,
                 isMonsterDropsOnly,
@@ -99,5 +105,6 @@
         {listItem}
         {headerControls}
         listItemName="skill"
+        {initialLoad}
     />
 {/if}

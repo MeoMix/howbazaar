@@ -20,7 +20,7 @@
 <div>
     <Button
         size="sm"
-        class="py-1 px-2 w-24 text-gray-900 bg-gray-50 border border-gray-300 rounded-lg focus:ring-bazaar-orange focus:border-bazaar-orange dark:bg-bazaar-brown dark:border-bazaar-brown600 dark:placeholder-gray-400 dark:text-bazaar-tan700 dark:focus:ring-bazaar-orange dark:focus:border-bazaar-orange"
+        class="font-normal text-nowrap py-2 px-2 text-gray-900 bg-gray-50 border border-gray-300 rounded-lg rounded-r-none border-r-[0] focus:border-gray-300 dark:focus:border-bazaar-brown600 focus:ring-0 dark:bg-bazaar-brown dark:border-bazaar-brown600 dark:placeholder-gray-400 dark:text-bazaar-tan700"
     >
         {options.find((option) => option.value === selectedOption)?.name}
         <ChevronDownOutline
@@ -33,7 +33,7 @@
     >
         {#each options as option}
             <DropdownItem
-                class={`w-24 hover:bg-gray-100 dark:hover:bg-bazaar-brown600 dark:hover:text-bazaar-orange ${option.value === selectedOption ? "bg-bazaar-brown600 text-bazaar-orange" : ""}`}
+                class={`text-nowrap hover:bg-gray-100 dark:hover:bg-bazaar-brown600 dark:hover:text-bazaar-orange ${option.value === selectedOption ? "bg-bazaar-brown600 text-bazaar-orange" : ""}`}
                 on:click={() => {
                     isOpen = false;
                     onSelectOption(option.value);

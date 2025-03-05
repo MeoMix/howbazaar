@@ -6,12 +6,16 @@
     import type {
         Hero,
         HiddenTag,
-        ItemSortOptions,
+        ItemSortOption,
+        ItemSearchLocationOption,
         Size,
-        SkillSortOptions,
+        SkillSortOption,
         Tag,
         TierType,
         TriState,
+        MonsterSearchLocationOption,
+        SkillSearchLocationOption,
+        AllSearchLocationOption,
     } from "$lib/types";
     import type { PageData } from "./$types";
 
@@ -40,10 +44,18 @@
     let isMatchAnyHero = $state(false);
     let selectedSizes = $state([] as Size[]);
     let searchText = $state("");
-    let isSearchEnchantments = $state(false);
+    let selectedSearchLocationOption = $state(
+        "name-text" as AllSearchLocationOption,
+    );
+
+    let itemSelectedSearchLocationOption = $derived(selectedSearchLocationOption as ItemSearchLocationOption);
+    let skillSelectedSearchLocationOption = $derived((selectedSearchLocationOption === 'name-text-enchantments' ? 'name-text' : selectedSearchLocationOption) as SkillSearchLocationOption);
+    let monsterSelectedSearchLocationOption = $derived((selectedSearchLocationOption === 'name-text-enchantments' ? 'name-text' : selectedSearchLocationOption) as MonsterSearchLocationOption);
+
+
     let isMonsterDropsOnly = $state(false);
 
-    let itemSortOptions: { name: string; value: ItemSortOptions }[] = [
+    let itemSortOptions: { name: string; value: ItemSortOption }[] = [
         {
             value: "name",
             name: "Name",
@@ -53,7 +65,7 @@
             name: "Tier",
         },
         {
-            value: "size",
+        value: "size",
             name: "Size",
         },
         {
@@ -62,7 +74,7 @@
         },
     ];
 
-    let skillSortOptions: { name: string; value: SkillSortOptions }[] = [
+    let skillSortOptions: { name: string; value: SkillSortOption }[] = [
         {
             value: "name",
             name: "Name",
@@ -98,7 +110,7 @@
         bind:isMatchAnyTag
         bind:isMatchAnyHero
         bind:searchText
-        bind:isSearchEnchantments
+        bind:selectedSearchLocationOption
         bind:isMonsterDropsOnly
     />
 
@@ -110,7 +122,7 @@
         {tagStates}
         {selectedSizes}
         {searchText}
-        {isSearchEnchantments}
+        selectedSearchLocationOption={itemSelectedSearchLocationOption}
         {isMatchAnyTag}
         {isMonsterDropsOnly}
         isHiddenWhenEmpty={true}
@@ -123,17 +135,21 @@
         {selectedTiers}
         {tagStates}
         {searchText}
+        selectedSearchLocationOption={skillSelectedSearchLocationOption}
         {isMatchAnyTag}
         {isMatchAnyHero}
         {isMonsterDropsOnly}
         isHiddenWhenEmpty={true}
+        initialLoad={false}
     />
 
     <MonsterList
         serverVersion={data.monstersVersion}
         selectedDay={undefined}
         {searchText}
+        selectedSearchLocationOption={monsterSelectedSearchLocationOption}
         selectedMonsterEncounter={undefined}
         isHiddenWhenEmpty={true}
+        initialLoad={false}
     />
 </div>

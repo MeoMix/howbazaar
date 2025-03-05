@@ -47927,17 +47927,17 @@ const data: ParsedItemCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "When you sell this, upgrade your leftmost Bronzer-tier item."
+          "When you sell this, upgrade your leftmost Bronze (or lower)-tier item."
         ]
       },
       "Gold": {
         "tooltips": [
-          "When you sell this, upgrade your leftmost Silver or lower tier item."
+          "When you sell this, upgrade your leftmost Silver (or lower)-tier item."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "When you sell this, upgrade your leftmost item."
+          "When you sell this, upgrade your leftmost Gold (or lower)-tier item."
         ]
       },
       "Legendary": {
@@ -48021,7 +48021,7 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "When you sell this, upgrade your leftmost (Bronzer-tier/Silver/item). (item/or). (/lower tier item)."
+      "When you sell this, upgrade your leftmost (Bronze/Silver/Gold) (or lower)-tier item."
     ],
     "remarks": []
   },
@@ -51130,7 +51130,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Deadly",
         "tooltips": [
-          "Shield Properties adjacent to this have + Crit Chance equal to the value of your highest value item. [0]"
+          "Shield Properties adjacent to this have + Shield equal to the value of your highest value item. [0]"
         ]
       },
       {

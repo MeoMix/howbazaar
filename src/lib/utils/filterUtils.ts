@@ -1,4 +1,4 @@
-import type { ClientSideItemCard, ClientSideMonsterEncounter, ClientSideSkillCard, Hero, HiddenTag, ItemSortOptions, Size, SkillSortOptions, Tag, TierType, TriState } from "$lib/types";
+import type { ClientSideItemCard, ClientSideMonsterEncounter, ClientSideSkillCard, Hero, HiddenTag, ItemSortOption, ItemSearchLocationOption, Size, SkillSortOption, Tag, TierType, TriState, SkillSearchLocationOption, MonsterSearchLocationOption, AllSearchLocationOption } from "$lib/types";
 import type { Entries } from "type-fest";
 
 export const heroOrder = ["Vanessa", "Pygmalien", "Dooley", "Jules", "Stelle", "Mak", "Common"] as const;
@@ -120,31 +120,40 @@ const substringMatch = (text: string, lowerSearchText: string): boolean => {
 function matchesCardSearchText(
     card: ClientSideItemCard | ClientSideSkillCard,
     lowerSearchText: string,
-    isSearchEnchantments: boolean
+    searchMode: AllSearchLocationOption
 ): boolean {
     if (lowerSearchText === '') return true;
 
-    // Early exit if card name matches
-    if (substringMatch(card.name, lowerSearchText)) {
-        return true;
-    }
+    // Split the search text by | to support searching for multiple terms
+    const searchTerms = lowerSearchText.split('|').map(term => term.trim()).filter(term => term !== '');
 
-    // Check tiers if they exist
-    if (card.tiers) {
-        for (const [tierType, tier] of Object.entries(card.tiers) as Entries<typeof card.tiers>) {
-            if (tierType !== "Legendary" && tier.tooltips.length !== 0) {
-                if (tier.tooltips.some(tooltip => substringMatch(tooltip, lowerSearchText))) {
-                    return true; // Early exit if found
+    // If there are no valid search terms after splitting, return true
+    if (searchTerms.length === 0) return true;
+
+    // Check if any of the search terms match
+    for (const term of searchTerms) {
+        // Early exit if card name matches
+        if (substringMatch(card.name, term)) {
+            return true;
+        }
+
+        // Check tiers if they exist
+        if ((searchMode === 'name-text' || searchMode === 'name-text-enchantments') && card.tiers) {
+            for (const [tierType, tier] of Object.entries(card.tiers) as Entries<typeof card.tiers>) {
+                if (tierType !== "Legendary" && tier.tooltips.length !== 0) {
+                    if (tier.tooltips.some(tooltip => substringMatch(tooltip, term))) {
+                        return true; // Early exit if found
+                    }
                 }
             }
         }
-    }
 
-    // Check enchantments if enabled
-    if (isSearchEnchantments && 'enchantments' in card) {
-        for (const e of card.enchantments) {
-            if (e.tooltips.some(tip => substringMatch(tip, lowerSearchText))) {
-                return true; // Early exit if found
+        // Check enchantments if enabled
+        if (searchMode === 'name-text-enchantments' && 'enchantments' in card) {
+            for (const e of card.enchantments) {
+                if (e.tooltips.some(tip => substringMatch(tip, term))) {
+                    return true; // Early exit if found
+                }
             }
         }
     }
@@ -155,13 +164,26 @@ function matchesCardSearchText(
 function matchesMonsterSearchText(
     monster: ClientSideMonsterEncounter,
     lowerSearchText: string,
+    searchMode: MonsterSearchLocationOption
 ): boolean {
     if (lowerSearchText === '') return true;
 
-    return substringMatch(monster.cardName, lowerSearchText) || (
-        monster.items.filter(item => matchesCardSearchText(item.card, lowerSearchText, false)).length > 0 ||
-        monster.skills.filter(skill => matchesCardSearchText(skill.card, lowerSearchText, false)).length > 0
-    );
+    // Split the search text by | to support searching for multiple terms
+    const searchTerms = lowerSearchText.split('|').map(term => term.trim()).filter(term => term !== '');
+
+    // If there are no valid search terms after splitting, return true
+    if (searchTerms.length === 0) return true;
+
+    // Check if any of the search terms match
+    for (const term of searchTerms) {
+        if (substringMatch(monster.cardName, term) ||
+            monster.items.filter(item => matchesCardSearchText(item.card, term, searchMode)).length > 0 ||
+            monster.skills.filter(skill => matchesCardSearchText(skill.card, term, searchMode)).length > 0) {
+            return true;
+        }
+    }
+
+    return false;
 }
 
 export function filterItemCards(
@@ -171,7 +193,7 @@ export function filterItemCards(
     tagStates: Record<Tag | HiddenTag, TriState>,
     selectedSizes: Size[],
     searchText: string,
-    isSearchEnchantments: boolean,
+    searchMode: ItemSearchLocationOption,
     isMatchAnyTag: boolean,
     isMonsterDropsOnly: boolean
 ): ClientSideItemCard[] {
@@ -190,7 +212,7 @@ export function filterItemCards(
 
     // Otherwise, fallback to normalized search on the remaining filtered cards
     return filteredCards.filter(card =>
-        matchesCardSearchText(card, lowerSearchText, isSearchEnchantments)
+        matchesCardSearchText(card, lowerSearchText, searchMode)
     );
 }
 
@@ -200,6 +222,7 @@ export function filterSkillCards(
     selectedTiers: TierType[],
     tagStates: Record<Tag | HiddenTag, TriState>,
     searchText: string,
+    searchMode: SkillSearchLocationOption,
     isMatchAnyTag: boolean,
     isMatchAnyHero: boolean,
     isMonsterDropsOnly: boolean
@@ -218,16 +241,20 @@ export function filterSkillCards(
 
     // Otherwise, fallback to normalized search on the remaining filtered cards
     return filteredCards.filter(card =>
-        matchesCardSearchText(card, lowerSearchText, false)
+        matchesCardSearchText(card, lowerSearchText, searchMode)
     );
 }
 
-export function filterMonsters(monsters: ClientSideMonsterEncounter[], searchText: string) {
+export function filterMonsters(
+    monsters: ClientSideMonsterEncounter[],
+    searchText: string,
+    searchMode: MonsterSearchLocationOption
+) {
     const lowerSearchText = searchText.trim().toLowerCase();
 
     // Otherwise, fallback to normalized search on the remaining filtered cards
     return monsters.filter(monster =>
-        matchesMonsterSearchText(monster, lowerSearchText)
+        matchesMonsterSearchText(monster, lowerSearchText, searchMode)
     );
 }
 
@@ -239,7 +266,7 @@ export function filterTags(tags: Tag[], hiddenTags: HiddenTag[]) {
     ).sort();
 }
 
-export function sortCards<T extends (ClientSideItemCard | ClientSideSkillCard)>(cards: T[], selectedSortOption: (ItemSortOptions | SkillSortOptions)) {
+export function sortCards<T extends (ClientSideItemCard | ClientSideSkillCard)>(cards: T[], selectedSortOption: (ItemSortOption | SkillSortOption)) {
     return cards.sort((a, b) => {
         if (selectedSortOption === "name") {
             return a.name.localeCompare(b.name);

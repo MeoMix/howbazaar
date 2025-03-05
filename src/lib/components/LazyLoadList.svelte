@@ -7,18 +7,21 @@
         listItem,
         headerControls,
         batchSize = 5,
+        initialLoad = true,
     }: {
         items: T[];
         listItemName: string;
         listItem: Snippet<[T]>;
         headerControls?: Snippet;
         batchSize?: number;
+        initialLoad?: boolean;
     } = $props();
 
-    let itemsToDisplay = $state(batchSize);
+    let itemsToDisplay = $state(initialLoad ? batchSize : 0);
     const visibleItems = $derived(items.slice(0, itemsToDisplay));
 
     let loadMoreTrigger: HTMLDivElement | null = null;
+    let componentRoot: HTMLDivElement | null = null;
 
     $effect(() => {
         if (!loadMoreTrigger) return;
@@ -38,9 +41,29 @@
 
         return () => observer.disconnect();
     });
+
+    // Add a separate observer for the component root to handle initial load
+    $effect(() => {
+        if (!componentRoot || initialLoad) return;
+
+        const rootObserver = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting && itemsToDisplay === 0) {
+                        itemsToDisplay = batchSize;
+                    }
+                });
+            },
+            { rootMargin: "0px" }
+        );
+
+        rootObserver.observe(componentRoot);
+
+        return () => rootObserver.disconnect();
+    });
 </script>
 
-<div class="space-y-4">
+<div bind:this={componentRoot} class="space-y-4">
     <div class="flex justify-between items-center">
         <div class="font-semibold flex-grow">
             {items.length}

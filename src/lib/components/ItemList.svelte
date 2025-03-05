@@ -3,7 +3,8 @@
         ClientSideItemCard,
         Hero,
         HiddenTag,
-        ItemSortOptions,
+        ItemSortOption,
+        ItemSearchLocationOption,
         Size,
         Tag,
         TierType,
@@ -26,26 +27,26 @@
         tagStates,
         selectedSizes,
         searchText,
-        isSearchEnchantments,
+        selectedSearchLocationOption,
         isMatchAnyTag,
         isMonsterDropsOnly,
         isHiddenWhenEmpty,
     }: {
         serverVersion: string;
-        sortOptions: { name: string; value: ItemSortOptions }[];
+        sortOptions: { name: string; value: ItemSortOption }[];
         selectedHeroes: Hero[];
         selectedTiers: TierType[];
         tagStates: Record<Tag | HiddenTag, TriState>;
         selectedSizes: Size[];
         searchText: string;
-        isSearchEnchantments: boolean;
+        selectedSearchLocationOption: ItemSearchLocationOption;
         isMatchAnyTag: boolean;
         isMonsterDropsOnly: boolean;
         isHiddenWhenEmpty: boolean;
     } = $props();
 
     let items = $state([] as ClientSideItemCard[]);
-    let selectedSortOption = $state("name" as ItemSortOptions);
+    let selectedSortOption = $state("name" as ItemSortOption);
     // TODO: Consider persisting this in a store and/or in local storage
     let areEnchantmentsShown = $state(true);
     let isLoading = $state(false);
@@ -72,7 +73,7 @@
                 tagStates,
                 selectedSizes,
                 searchText,
-                isSearchEnchantments,
+                selectedSearchLocationOption,
                 isMatchAnyTag,
                 isMonsterDropsOnly,
             ),
