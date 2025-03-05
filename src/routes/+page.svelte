@@ -52,8 +52,8 @@
     let skillSelectedSearchLocationOption = $derived((selectedSearchLocationOption === 'name-text-enchantments' ? 'name-text' : selectedSearchLocationOption) as SkillSearchLocationOption);
     let monsterSelectedSearchLocationOption = $derived((selectedSearchLocationOption === 'name-text-enchantments' ? 'name-text' : selectedSearchLocationOption) as MonsterSearchLocationOption);
 
-
     let isMonsterDropsOnly = $state(false);
+    let isLatestExpansionOnly = $state(false);
 
     let itemSortOptions: { name: string; value: ItemSortOption }[] = [
         {
@@ -112,6 +112,7 @@
         bind:searchText
         bind:selectedSearchLocationOption
         bind:isMonsterDropsOnly
+        bind:isLatestExpansionOnly
     />
 
     <ItemList
@@ -125,6 +126,7 @@
         selectedSearchLocationOption={itemSelectedSearchLocationOption}
         {isMatchAnyTag}
         {isMonsterDropsOnly}
+        {isLatestExpansionOnly}
         isHiddenWhenEmpty={true}
     />
 

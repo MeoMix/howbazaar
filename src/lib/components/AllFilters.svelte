@@ -30,6 +30,7 @@
         searchText = $bindable(),
         selectedSearchLocationOption = $bindable(),
         isMonsterDropsOnly = $bindable(),
+        isLatestExpansionOnly = $bindable(),
     }: {
         heroOptions: Option[];
         minimumTierOptions: Option[];
@@ -45,6 +46,7 @@
         searchText: string;
         selectedSearchLocationOption: AllSearchLocationOption;
         isMonsterDropsOnly: boolean;
+        isLatestExpansionOnly: boolean;
     } = $props();
 
     function clearSearch() {
@@ -74,7 +76,7 @@
         const hash = window.location.hash.slice(1);
         if (hash) {
             searchText = hash.replace(/_+/g, " ");
-            selectedSearchLocationOption = 'name';
+            selectedSearchLocationOption = "name";
         }
     });
 
@@ -144,6 +146,14 @@
                             label={"Monster Drops Only"}
                             onClick={() => {
                                 isMonsterDropsOnly = !isMonsterDropsOnly;
+                            }}
+                        />
+
+                        <FilterToggle
+                            isEnabled={isLatestExpansionOnly}
+                            label={"Latest Expansion Only"}
+                            onClick={() => {
+                                isLatestExpansionOnly = !isLatestExpansionOnly;
                             }}
                         />
                     </div>

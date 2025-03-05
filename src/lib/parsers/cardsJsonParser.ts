@@ -692,7 +692,8 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
             heroes: card.Heroes,
             enchantments,
             unifiedTooltips,
-            remarks
+            remarks,
+            packId: card.CardPackId
         };
     });
 
@@ -788,7 +789,8 @@ function parseSkillCards(cardsJson: CardsJson): ParsedSkillCard[] {
             heroes: card.Heroes,
             artKey: card.ArtKey,
             unifiedTooltips,
-            remarks
+            remarks,
+            packId: card.CardPackId
         };
     });
 

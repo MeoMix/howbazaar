@@ -186,6 +186,8 @@ function matchesMonsterSearchText(
     return false;
 }
 
+const latestExpansions = new Set(["Pyg_Frozen_Assets", "Vanessa_Mysteries_of_the_Deep"]);
+
 export function filterItemCards(
     cards: ClientSideItemCard[],
     selectedHeroes: Hero[],
@@ -195,7 +197,8 @@ export function filterItemCards(
     searchText: string,
     searchMode: ItemSearchLocationOption,
     isMatchAnyTag: boolean,
-    isMonsterDropsOnly: boolean
+    isMonsterDropsOnly: boolean,
+    isLatestExpansionOnly: boolean
 ): ClientSideItemCard[] {
     const lowerSearchText = searchText.trim().toLowerCase();
 
@@ -203,6 +206,7 @@ export function filterItemCards(
     const filteredCards = cards.filter(card => {
         return (
             (isMonsterDropsOnly ? card.combatEncounters.length > 0 : true) &&
+            (isLatestExpansionOnly ? latestExpansions.has(card.packId) : true) &&
             matchesHero(card.heroes, selectedHeroes) &&
             matchesTier(card.startingTier, selectedTiers) &&
             matchesTagState(card.tags, card.hiddenTags, tagStates, isMatchAnyTag) &&

@@ -30,6 +30,7 @@
         selectedSearchLocationOption,
         isMatchAnyTag,
         isMonsterDropsOnly,
+        isLatestExpansionOnly,
         isHiddenWhenEmpty,
     }: {
         serverVersion: string;
@@ -42,6 +43,7 @@
         selectedSearchLocationOption: ItemSearchLocationOption;
         isMatchAnyTag: boolean;
         isMonsterDropsOnly: boolean;
+        isLatestExpansionOnly: boolean;
         isHiddenWhenEmpty: boolean;
     } = $props();
 
@@ -76,6 +78,7 @@
                 selectedSearchLocationOption,
                 isMatchAnyTag,
                 isMonsterDropsOnly,
+                isLatestExpansionOnly,
             ),
             selectedSortOption,
         ),

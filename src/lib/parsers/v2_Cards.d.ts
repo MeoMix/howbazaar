@@ -667,7 +667,7 @@ export interface FriskyCondition {
     Id?:                 string;
 }
 
-export type CardPackID = "Pygmalien_Core" | "Core" | "Vanessa_Core" | "Stelle_Core" | "Dooley_Core" | "Pyg_Frozen_Assets" | "Jules_Core" | "Mak_Core" | "Vanessa_Mysteries_of_the_Deep" | "Vanessa";
+export type CardPackID = "Pygmalien_Core" | "Core" | "Vanessa_Core" | "Stelle_Core" | "Dooley_Core" | "Pyg_Frozen_Assets" | "Jules_Core" | "Mak_Core" | "Vanessa_Mysteries_of_the_Deep";
 
 export interface CombatantType {
     $type: CombatantTypeType;
