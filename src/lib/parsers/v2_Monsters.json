@@ -9916,11 +9916,72 @@
     "Player": {
       "Attributes": {
         "Prestige": -1,
-        "HealthMax": -1,
+        "HealthMax": 900,
         "Level": -1
       },
       "Hand": {
-        "Items": [],
+        "Items": [
+          {
+            "$type": "TCardInstanceItem",
+            "EnchantmentType": null,
+            "SocketId": "Socket_1",
+            "TemplateId": "4826832f-f3a5-4c40-b8fa-737f002074fa",
+            "TemplateVersion": "1.0.0",
+            "InstanceId": null,
+            "Tier": "Gold",
+            "Attributes": {}
+          },
+          {
+            "$type": "TCardInstanceItem",
+            "EnchantmentType": null,
+            "SocketId": "Socket_1",
+            "TemplateId": "f7241086-8b2d-4882-80c9-a0ddb46910ad",
+            "TemplateVersion": "1.0.0",
+            "InstanceId": null,
+            "Tier": "Silver",
+            "Attributes": {}
+          },
+          {
+            "$type": "TCardInstanceItem",
+            "EnchantmentType": null,
+            "SocketId": "Socket_1",
+            "TemplateId": "94e28682-a012-4dd0-8ce8-7fe180aa6127",
+            "TemplateVersion": "1.0.0",
+            "InstanceId": null,
+            "Tier": "Silver",
+            "Attributes": {}
+          },
+          {
+            "$type": "TCardInstanceItem",
+            "EnchantmentType": null,
+            "SocketId": "Socket_1",
+            "TemplateId": "94e28682-a012-4dd0-8ce8-7fe180aa6127",
+            "TemplateVersion": "1.0.0",
+            "InstanceId": null,
+            "Tier": "Silver",
+            "Attributes": {}
+          },
+          {
+            "$type": "TCardInstanceItem",
+            "EnchantmentType": null,
+            "SocketId": "Socket_1",
+            "TemplateId": "94e28682-a012-4dd0-8ce8-7fe180aa6127",
+            "TemplateVersion": "1.0.0",
+            "InstanceId": null,
+            "Tier": "Silver",
+            "Attributes": {}
+          },
+          {
+            "$type": "TCardInstanceItem",
+            "EnchantmentType": null,
+            "SocketId": "Socket_1",
+            "TemplateId": "4826832f-f3a5-4c40-b8fa-737f002074fa",
+            "TemplateVersion": "1.0.0",
+            "InstanceId": null,
+            "Tier": "Gold",
+            "Attributes": {}
+          }
+        ],
         "UnlockedSlots": 248
       },
       "Skills": [
@@ -10014,14 +10075,16 @@
         ],
         "UnlockedSlots": 248
       },
-      "Skills": [      {
-        "$type": "TCardInstanceSkill",
-        "TemplateId": "b6c90dc6-f497-4fe4-90a1-759947180884",
-        "TemplateVersion": "1.0.0",
-        "InstanceId": null,
-        "Tier": "Bronze",
-        "Attributes": {}
-      }],
+      "Skills": [
+        {
+          "$type": "TCardInstanceSkill",
+          "TemplateId": "b6c90dc6-f497-4fe4-90a1-759947180884",
+          "TemplateVersion": "1.0.0",
+          "InstanceId": null,
+          "Tier": "Bronze",
+          "Attributes": {}
+        }
+      ],
       "Stash": {
         "Items": [],
         "UnlockedSlots": 1023
