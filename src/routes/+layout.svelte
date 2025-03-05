@@ -144,14 +144,14 @@
         class="sticky top-0 z-10 bg-white dark:bg-bazaar-background dark:text-bazaar-tan700"
     >
         <NavBrand
-            href={`/items${$page.url.search}`}
+            href={`/${$page.url.search}`}
             class="relative inline-block"
         >
             <span
                 class="self-center whitespace-nowrap text-xl font-semibold dark:text-bazaar-tan700 hover:text-bazaar-orange dark:hover:text-bazaar-orange relative z-10"
             >
-                <!-- How Bazaar -->
-                <Badge border large color="green" class="whitespace-nowrap">
+                How Bazaar
+                <Badge border large color="green" class="ml-2 whitespace-nowrap">
                     Updated Mar 05
                 </Badge>
             </span>
