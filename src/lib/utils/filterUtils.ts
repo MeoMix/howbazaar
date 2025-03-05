@@ -229,7 +229,8 @@ export function filterSkillCards(
     searchMode: SkillSearchLocationOption,
     isMatchAnyTag: boolean,
     isMatchAnyHero: boolean,
-    isMonsterDropsOnly: boolean
+    isMonsterDropsOnly: boolean,
+    isLatestExpansionOnly: boolean
 ): ClientSideSkillCard[] {
     const lowerSearchText = searchText.trim().toLowerCase();
 
@@ -237,6 +238,7 @@ export function filterSkillCards(
     const filteredCards = cards.filter(card => {
         return (
             (isMonsterDropsOnly ? card.combatEncounters.length > 0 : true) &&
+            (isLatestExpansionOnly ? latestExpansions.has(card.packId) : true) &&
             matchesHeroState(card.heroes, heroStates, isMatchAnyHero) &&
             matchesTier(card.startingTier, selectedTiers) &&
             matchesTagState(card.tags, card.hiddenTags, tagStates, isMatchAnyTag)

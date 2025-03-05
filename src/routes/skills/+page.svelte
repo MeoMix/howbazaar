@@ -34,7 +34,7 @@
         "name-text" as SkillSearchLocationOption,
     );
     let isMonsterDropsOnly = $state(false);
-
+    let isLatestExpansionOnly = $state(false);
     let sortOptions: { name: string; value: SkillSortOption }[] = [
         {
             value: "name",
@@ -83,6 +83,7 @@
         {isMatchAnyTag}
         {isMatchAnyHero}
         {isMonsterDropsOnly}
+        {isLatestExpansionOnly}
         isHiddenWhenEmpty={false}
     />
 </div>

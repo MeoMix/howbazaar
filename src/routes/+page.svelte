@@ -141,6 +141,7 @@
         {isMatchAnyTag}
         {isMatchAnyHero}
         {isMonsterDropsOnly}
+        {isLatestExpansionOnly}
         isHiddenWhenEmpty={true}
         initialLoad={false}
     />
