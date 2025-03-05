@@ -23,7 +23,6 @@
     import { PUBLIC_CDN_URL } from "$env/static/public";
     import { DollarOutline } from "flowbite-svelte-icons";
     import { adsStore } from "$lib/stores/adsStore";
-    import { browser } from "$app/environment";
     import type { Unsubscriber } from "svelte/store";
 
     let toastStatus = $state(false);
@@ -43,73 +42,86 @@
     let showAds = $state(false);
     let adSenseLoadFailed = $state(false);
     let unsubscribe = $state<Unsubscriber>();
-    let stickyAdElement = $state<HTMLElement>();
+    let verticalAdContainer = $state<HTMLElement>();
     let observer = $state<MutationObserver>();
+    let mediaQuery = $state<MediaQueryList>();
+    let isLargeScreen = $state<boolean | undefined>();
 
-    onMount(async () => {
-        unsubscribe = adsStore.subscribe((state) => {
-            showAds = state.showAds;
-        });
+    const mediaQueryCallback = async () => {
+        isLargeScreen = window.matchMedia("(min-width: 1024px)").matches;
 
         if (showAds) {
-            try {
-                await tick();
-
-                if (
-                    window.adsbygoogle?.loaded &&
-                    window.adsbygoogle?.pageState
-                ) {
-                    window.adsbygoogle.push({});
-                    window.adsbygoogle.push({});
-                } else {
-                    adSenseLoadFailed = true;
-                }
-            } catch (e) {
-                console.error("AdSense failed to load:", e);
-                adSenseLoadFailed = true;
-            }
-
-            observer = new MutationObserver((mutations) => {
-                mutations.forEach((mutation) => {
-                    if (
-                        mutation.type === "attributes" &&
-                        mutation.attributeName === "style"
-                    ) {
-                        const targetElement = mutation.target as HTMLElement;
-                        // Prevent Google AdSense from overwriting the height properties.
-                        targetElement.style.height = "";
-                        targetElement.style.minHeight = "";
-                    }
-                });
-            });
-
-            let currentElement: HTMLElement | undefined | null =
-                stickyAdElement;
-            while (
-                currentElement &&
-                currentElement !== document.documentElement
-            ) {
-                observer.observe(currentElement, {
-                    attributes: true,
-                    attributeFilter: ["style"],
-                });
-                currentElement = currentElement.parentElement; // Move up the DOM tree
-            }
+            // Wait for `isLargeScreen` to redraw the ad unit
+            await tick();
+            setupAds();
         }
+    };
+
+    const setupAds = () => {
+        try {
+            if (window.adsbygoogle?.loaded && window.adsbygoogle?.pageState) {
+                window.adsbygoogle.push({});
+            } else {
+                adSenseLoadFailed = true;
+                console.error("AdSense failed to load:");
+            }
+        } catch (e) {
+            console.error("AdSense failed to load:", e);
+            adSenseLoadFailed = true;
+        }
+
+        observer = new MutationObserver((mutations) => {
+            mutations.forEach((mutation) => {
+                if (
+                    mutation.type === "attributes" &&
+                    mutation.attributeName === "style"
+                ) {
+                    const targetElement = mutation.target as HTMLElement;
+                    // Prevent Google AdSense from overwriting the height properties.
+                    targetElement.style.height = "";
+                    targetElement.style.minHeight = "";
+                }
+            });
+        });
+
+        let currentElement: HTMLElement | undefined | null =
+            verticalAdContainer;
+        while (currentElement && currentElement !== document.documentElement) {
+            observer.observe(currentElement, {
+                attributes: true,
+                attributeFilter: ["style"],
+            });
+            currentElement = currentElement.parentElement; // Move up the DOM tree
+        }
+    };
+
+    onMount(async () => {
+        mediaQuery = window.matchMedia("(min-width: 1024px)");
+        mediaQuery.addEventListener("change", mediaQueryCallback);
+        mediaQueryCallback();
+
+        unsubscribe = adsStore.subscribe(async (state) => {
+            showAds = state.showAds;
+
+            if (showAds) {
+                // NOTE: this tick is only necessary on first mount
+                await tick();
+                setupAds();
+            }
+        });
     });
 
     onDestroy(() => {
         unsubscribe?.();
 
         // Disconnect the mutation observer when component is destroyed
-        if (observer) {
-            observer.disconnect();
-        }
+        observer?.disconnect();
+        mediaQuery?.removeEventListener("change", mediaQueryCallback);
     });
 
     // TODO: Would be nice if this was implicit from the existence of the ad element.
     let footerAdMarginOffset = $derived(
-        (showAds && !adSenseLoadFailed) ? "mb-[50px] sm:mb-[90px] lg:mb-0" : "",
+        showAds && !adSenseLoadFailed ? "mb-[100px] lg:mb-0" : "",
     );
 
     let { children }: { children: Snippet } = $props();
@@ -203,7 +215,7 @@
             <NavLi
                 class="md:p-4"
                 href={`/contact${$page.url.search}`}
-                on:click={onNavLiClick}>Contact & Upcoming Features</NavLi
+                on:click={onNavLiClick}>Contact</NavLi
             >
         </NavUl>
         <div
@@ -216,11 +228,15 @@
         <div class="flex justify-center w-full px-4">
             {@render children()}
 
-            {#if browser && showAds && !adSenseLoadFailed}
-                <!-- Vertical banner ad - hidden on smaller screens, visible on lg and above -->
+            <!--
+                Vertical banner ad - hidden on smaller screens, visible on lg and above
+                Removes/adds the element entirely, rather than hiding, to ensure Google AdSense
+                only tries to initialize the ad unit when it has a valid width.
+            -->
+            {#if showAds && isLargeScreen === true && !adSenseLoadFailed}
                 <div
-                    bind:this={stickyAdElement}
-                    class="hidden lg:block ml-4 sticky h-full top-[72px] pt-8"
+                    bind:this={verticalAdContainer}
+                    class="ml-4 sticky h-full top-[72px] pt-8"
                 >
                     <div
                         class="bg-gray-100 border border-gray-200 rounded-lg overflow-hidden"
@@ -230,7 +246,7 @@
                             style="display:block"
                             data-ad-client="ca-pub-6020599814166575"
                             data-ad-slot="3801324847"
-                            data-ad-format="auto"
+                            data-ad-format="vertical"
                         ></ins>
                     </div>
                 </div>
@@ -256,17 +272,16 @@
         </Toast>
     </div>
 
-    {#if browser && showAds && !adSenseLoadFailed}
+    {#if showAds && isLargeScreen === false && !adSenseLoadFailed}
         <!-- Fixed horizontal banner ad for smaller screens (visible on md and below) -->
-        <div class="lg:hidden fixed bottom-0 left-0 right-0 w-full z-50">
+        <div class="fixed bottom-0 left-0 right-0 w-full z-50">
             <div class="bg-gray-100 border-t border-gray-200 shadow-lg">
                 <ins
-                    class="adsbygoogle w-full h-[50px] sm:h-[90px]"
-                    style="display:block"
+                    class="adsbygoogle w-full h-[100px]"
+                    style="display:block;"
                     data-ad-client="ca-pub-6020599814166575"
                     data-ad-slot="6216601165"
-                    data-ad-format="auto"
-                    data-full-width-responsive="true"
+                    data-ad-format="horizontal"
                 >
                 </ins>
             </div>

@@ -56,13 +56,13 @@
         <div class="font-semibold text-3xl mt-8">P.S.</div>
 
         <p>
-            In the near future I'll be adding an ad to the website <span
+            I placed an ad on the website <span
                 class="italic text-sm">(booo!)</span
-            > as a means of offsetting server costs.
+            > as a means of offsetting server costs (~$150/mo).
         </p>
 
         <p>
-            When this occurs, I will also include a button here that you can
+            I've included a button here that you can
             click to make the ads go away <span class="italic text-sm"
                 >(yaaaay!)</span
             >
@@ -80,7 +80,7 @@
         <p>But no pressure. Really. None at all. Not even a little bit.</p>
 
         <p class="text-sm mt-12">
-            ...just a lonely little donate button sitting there, wishing it were
+            ...just a lonely little donate link sitting there, wishing it were
             clicked by an honest, hard-working individual.
         </p>
 
