@@ -62,8 +62,8 @@
 
             If you're seeing ads and they make you angry I've included a button
             to hide them on the <a class="font-bold text-blue-600" href="/donate"
-                >Donate</a
-            > page. You don't actually have to donate to hide the ads.
+                >donate page</a
+            >. You don't actually have to donate to hide the ads, but donations are non-refundable, so please be certain before donating.
         </li>
     </ul>
 
