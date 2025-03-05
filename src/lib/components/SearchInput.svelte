@@ -66,7 +66,7 @@
           type="text"
           {placeholder}
           bind:value
-          class="block disabled:cursor-not-allowed disabled:opacity-50 rtl:text-right p-2.5 bg-gray-50 text-gray-900 dark:text-white border border-gray-300 text-sm rounded-lg rounded-l-none w-full pr-2 md:pr-12 focus:border-gray-300 dark:focus:border-bazaar-brown600 focus:ring-0 dark:bg-bazaar-brown dark:placeholder-bazaar-tan700 dark:border-bazaar-brown600"
+          class="block disabled:cursor-not-allowed disabled:opacity-50 rtl:text-right p-2.5 bg-gray-50 text-gray-900 dark:text-bazaar-tan700 border border-gray-300 text-sm rounded-lg rounded-l-none w-full pr-2 md:pr-12 focus:border-gray-300 dark:focus:border-bazaar-brown600 focus:ring-0 dark:bg-bazaar-brown dark:placeholder-bazaar-tan700 dark:border-bazaar-brown600"
         />
         <div
           class="absolute inset-y-0 right-2 flex items-center justify-center"
