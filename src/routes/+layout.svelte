@@ -24,6 +24,7 @@
     import { DollarOutline } from "flowbite-svelte-icons";
     import { adsStore } from "$lib/stores/adsStore";
     import type { Unsubscriber } from "svelte/store";
+    import UpdatedBadge from "$lib/components/UpdatedBadge.svelte";
 
     let toastStatus = $state(false);
     let toastClearTimeout: ReturnType<typeof setTimeout>;
@@ -143,19 +144,19 @@
     <Navbar
         class="sticky top-0 z-10 bg-white dark:bg-bazaar-background dark:text-bazaar-tan700"
     >
-        <NavBrand
-            href={`/${$page.url.search}`}
-            class="relative inline-block"
-        >
-            <span
-                class="self-center whitespace-nowrap text-xl font-semibold dark:text-bazaar-tan700 hover:text-bazaar-orange dark:hover:text-bazaar-orange relative z-10"
+        <div class="flex items-baseline">
+            <NavBrand
+                href={`/${$page.url.search}`}
+                class="relative inline-block"
             >
-                How Bazaar
-                <Badge border large color="green" class="ml-2 whitespace-nowrap">
-                    Updated Mar 05
-                </Badge>
-            </span>
-        </NavBrand>
+                <span
+                    class="self-center whitespace-nowrap text-xl font-semibold dark:text-bazaar-tan700 hover:text-bazaar-orange dark:hover:text-bazaar-orange relative z-10"
+                >
+                    How Bazaar
+                </span>
+            </NavBrand>
+            <UpdatedBadge />
+        </div>
 
         <div class="flex md:order-2 items-center">
             <a
@@ -298,11 +299,7 @@
             ></div>
 
             <div class="mx-auto text-center">
-                <div>
-                    <Badge border large color="green" class="whitespace-nowrap">
-                        Updated Mar 05
-                    </Badge>
-                </div>
+                <UpdatedBadge />
             </div>
         </Footer>
     </div>
