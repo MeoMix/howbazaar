@@ -4801,11 +4801,15 @@ const data: ParsedMonster[] = [
   {
     "id": "b146714a-748a-4862-989c-19c83f6331fb",
     "level": -1,
-    "health": -1,
+    "health": 1550,
     "items": [],
     "skills": [
       {
         "templateId": "80b1dcad-fc56-43a2-8bcc-cc41e62a7616",
+        "tierType": "Bronze"
+      },
+      {
+        "templateId": "b6c90dc6-f497-4fe4-90a1-759947180884",
         "tierType": "Bronze"
       }
     ]
