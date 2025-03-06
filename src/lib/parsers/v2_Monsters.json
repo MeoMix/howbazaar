@@ -87,11 +87,21 @@
     "Player": {
       "Attributes": {
         "Prestige": -1,
-        "HealthMax": -1,
+        "HealthMax": 2325,
         "Level": -1
       },
       "Hand": {
         "Items": [
+          {
+            "$type": "TCardInstanceItem",
+            "EnchantmentType": null,
+            "SocketId": "Socket_1",
+            "TemplateId": "f8b41c46-8adc-4e84-835a-831e2e3d84d1",
+            "TemplateVersion": "1.0.0",
+            "InstanceId": null,
+            "Tier": "Silver",
+            "Attributes": {}
+          },
           {
             "$type": "TCardInstanceItem",
             "EnchantmentType": null,
@@ -106,7 +116,57 @@
             "$type": "TCardInstanceItem",
             "EnchantmentType": null,
             "SocketId": "Socket_2",
+            "TemplateId": "a05d23cb-af36-42fa-aab1-568aba7f30c6",
+            "TemplateVersion": "1.0.0",
+            "InstanceId": null,
+            "Tier": "Gold",
+            "Attributes": {}
+          },
+          {
+            "$type": "TCardInstanceItem",
+            "EnchantmentType": "Shielded",
+            "SocketId": "Socket_2",
             "TemplateId": "f1c04562-6db4-45d5-a056-a4df9d185faf",
+            "TemplateVersion": "1.0.0",
+            "InstanceId": null,
+            "Tier": "Gold",
+            "Attributes": {}
+          },
+          {
+            "$type": "TCardInstanceItem",
+            "EnchantmentType": "Shielded",
+            "SocketId": "Socket_2",
+            "TemplateId": "2df8f38b-bb9f-4247-afe9-525067c9e29e",
+            "TemplateVersion": "1.0.0",
+            "InstanceId": null,
+            "Tier": "Gold",
+            "Attributes": {}
+          },
+          {
+            "$type": "TCardInstanceItem",
+            "EnchantmentType": null,
+            "SocketId": "Socket_2",
+            "TemplateId": "7fa2b9c8-f038-44f9-8143-a4f8ee7f34bf",
+            "TemplateVersion": "1.0.0",
+            "InstanceId": null,
+            "Tier": "Gold",
+            "Attributes": {}
+          },
+          {
+            "$type": "TCardInstanceItem",
+            "EnchantmentType": null,
+            "SocketId": "Socket_2",
+            "TemplateId": "8124f91b-3b4f-40ae-9493-057a0be7feb9",
+            "TemplateVersion": "1.0.0",
+            "InstanceId": null,
+            "Tier": "Gold",
+            "Attributes": {}
+          },
+          {
+            "$type": "TCardInstanceItem",
+            "EnchantmentType": null,
+            "SocketId": "Socket_2",
+            "TemplateId": "783cda9d-1550-42d5-9651-51883da5ad66",
             "TemplateVersion": "1.0.0",
             "InstanceId": null,
             "Tier": "Gold",
@@ -116,6 +176,14 @@
         "UnlockedSlots": 120
       },
       "Skills": [
+        {
+          "$type": "TCardInstanceSkill",
+          "TemplateId": "6c3d41e4-1ca7-4be5-b0e2-6cadbbd2bd27",
+          "TemplateVersion": "1.0.0",
+          "InstanceId": null,
+          "Tier": "Gold",
+          "Attributes": {}
+        },
         {
           "$type": "TCardInstanceSkill",
           "TemplateId": "544be6e9-ff3e-4cb6-9759-498ac2d24d71",

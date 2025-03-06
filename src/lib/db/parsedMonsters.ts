@@ -44,20 +44,56 @@ const data: ParsedMonster[] = [
   {
     "id": "e12b9ee1-de04-4bdc-ad74-2485f240cfcf",
     "level": -1,
-    "health": -1,
+    "health": 2325,
     "items": [
+      {
+        "templateId": "f8b41c46-8adc-4e84-835a-831e2e3d84d1",
+        "tierType": "Silver",
+        "socketId": "Socket_1"
+      },
       {
         "templateId": "f76338d5-e09b-4319-8914-c35043d464fc",
         "tierType": "Gold",
         "socketId": "Socket_1"
       },
       {
+        "templateId": "a05d23cb-af36-42fa-aab1-568aba7f30c6",
+        "tierType": "Gold",
+        "socketId": "Socket_2"
+      },
+      {
         "templateId": "f1c04562-6db4-45d5-a056-a4df9d185faf",
+        "tierType": "Gold",
+        "socketId": "Socket_2",
+        "enchantmentType": "Shielded"
+      },
+      {
+        "templateId": "2df8f38b-bb9f-4247-afe9-525067c9e29e",
+        "tierType": "Gold",
+        "socketId": "Socket_2",
+        "enchantmentType": "Shielded"
+      },
+      {
+        "templateId": "7fa2b9c8-f038-44f9-8143-a4f8ee7f34bf",
+        "tierType": "Gold",
+        "socketId": "Socket_2"
+      },
+      {
+        "templateId": "8124f91b-3b4f-40ae-9493-057a0be7feb9",
+        "tierType": "Gold",
+        "socketId": "Socket_2"
+      },
+      {
+        "templateId": "783cda9d-1550-42d5-9651-51883da5ad66",
         "tierType": "Gold",
         "socketId": "Socket_2"
       }
     ],
     "skills": [
+      {
+        "templateId": "6c3d41e4-1ca7-4be5-b0e2-6cadbbd2bd27",
+        "tierType": "Gold"
+      },
       {
         "templateId": "544be6e9-ff3e-4cb6-9759-498ac2d24d71",
         "tierType": "Gold"
