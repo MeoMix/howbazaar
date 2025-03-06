@@ -14,6 +14,16 @@ describe('cardJsonParser', () => {
     skillCards = parsedJson.skillCards;
   });
 
+  it.only('should contain no items with duplicate names', () => {
+    const duplicateNames = itemCards.filter(card => itemCards.filter(c => c.name === card.name).length > 1);
+    const duplicates = duplicateNames.map(card => ({
+      name: card.name,
+      id: card.id
+    }));
+
+    expect(duplicates).toEqual([]);
+  });
+
   describe('unifiedTooltips', () => {
     it('should unify Abacus tooltips', () => {
       const abacus = itemCards.find(card => card.name === "Abacus")!;

@@ -90,6 +90,9 @@ const disallowedList = [
 
   // [ITEM TEMPLATE]:
   'a031a51e-7b07-4055-adff-a421d2ee8943',
+
+  // [Debug] Ice Cubes:
+  'acccf128-24d7-4aaf-ae4e-7dda74e30925'
 ];
 
 // Filter the entries
