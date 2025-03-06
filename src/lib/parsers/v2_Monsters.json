@@ -10170,28 +10170,6 @@
         "Level": -1
       },
       "Hand": {
-        "Items": [],
-        "UnlockedSlots": 248
-      },
-      "Skills": [
-        {
-          "$type": "TCardInstanceSkill",
-          "TemplateId": "80b1dcad-fc56-43a2-8bcc-cc41e62a7616",
-          "TemplateVersion": "1.0.0",
-          "InstanceId": null,
-          "Tier": "Bronze",
-          "Attributes": {}
-        },
-        {
-          "$type": "TCardInstanceSkill",
-          "TemplateId": "b6c90dc6-f497-4fe4-90a1-759947180884",
-          "TemplateVersion": "1.0.0",
-          "InstanceId": null,
-          "Tier": "Bronze",
-          "Attributes": {}
-        }
-      ],
-      "Stash": {
         "Items": [
           {
             "$type": "TCardInstanceItem",
@@ -10272,7 +10250,8 @@
             "InstanceId": null,
             "Tier": "Silver",
             "Attributes": {}
-          },          {
+          },
+          {
             "$type": "TCardInstanceItem",
             "EnchantmentType": null,
             "SocketId": "Socket_1",
@@ -10283,6 +10262,28 @@
             "Attributes": {}
           }
         ],
+        "UnlockedSlots": 248
+      },
+      "Skills": [
+        {
+          "$type": "TCardInstanceSkill",
+          "TemplateId": "80b1dcad-fc56-43a2-8bcc-cc41e62a7616",
+          "TemplateVersion": "1.0.0",
+          "InstanceId": null,
+          "Tier": "Bronze",
+          "Attributes": {}
+        },
+        {
+          "$type": "TCardInstanceSkill",
+          "TemplateId": "b6c90dc6-f497-4fe4-90a1-759947180884",
+          "TemplateVersion": "1.0.0",
+          "InstanceId": null,
+          "Tier": "Bronze",
+          "Attributes": {}
+        }
+      ],
+      "Stash": {
+        "Items": [],
         "UnlockedSlots": 1023
       }
     }
