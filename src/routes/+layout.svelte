@@ -184,7 +184,7 @@
 
         <div class="flex md:order-2 items-center">
             <a
-                href="/donate{$page.url.search}"
+                href="/tip{$page.url.search}"
                 class="hover:text-gray-900 dark:text-bazaar-tan700 dark:hover:text-bazaar-orange dark:hover:bg-bazaar-brown p-2.5 rounded-lg"
             >
                 <DollarOutline />

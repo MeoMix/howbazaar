@@ -61,9 +61,9 @@
             <div class="font-semibold text-3xl mt-8">P.P.S.</div>
 
             If you're seeing ads and they make you angry I've included a button
-            to hide them on the <a class="font-bold text-blue-600" href="/donate"
-                >donate page</a
-            >. You don't actually have to donate to hide the ads, but donations are non-refundable, so please be certain before donating.
+            to hide them on the <a class="font-bold text-blue-600" href="/tip"
+                >tip page</a
+            >. You don't actually have to tip to hide the ads, but tips are non-refundable, so please be certain before giving.
         </li>
     </ul>
 

@@ -69,7 +69,7 @@
         </p>
 
         <p>
-            It'll be on the honor system, so no pressure to donate to get rid of
+            It'll be on the honor system, so no pressure to tip to get rid of
             the ads. Just click the button and they'll go away.
         </p>
 
@@ -80,7 +80,7 @@
         <p>But no pressure. Really. None at all. Not even a little bit.</p>
 
         <p class="text-sm mt-12">
-            ...just a lonely little donate link sitting there, wishing it were
+            ...just a lonely little tip link sitting there, wishing it were
             clicked by an honest, hard-working individual.
         </p>
 
