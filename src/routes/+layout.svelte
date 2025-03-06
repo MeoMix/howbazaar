@@ -58,7 +58,34 @@
         }
     };
 
+    const loadAdSenseScript = (): Promise<void> => {
+        return new Promise((resolve, reject) => {
+            if (window.adsbygoogle) {
+                resolve();
+                return;
+            }
+
+            const script = document.createElement("script");
+            script.async = true;
+            script.src =
+                "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6020599814166575";
+            script.crossOrigin = "anonymous";
+            script.onload = () => resolve();
+            script.onerror = () => {
+                adSenseLoadFailed = true;
+                console.error("Failed to load AdSense script");
+                reject();
+            };
+
+            document.head.appendChild(script);
+        });
+    };
+
     const setupAds = () => {
+        if (!window.adsbygoogle) {
+            return;
+        }
+
         try {
             if (window.adsbygoogle?.loaded && window.adsbygoogle?.pageState) {
                 window.adsbygoogle.push({});
@@ -70,6 +97,8 @@
             console.error("AdSense failed to load:", e);
             adSenseLoadFailed = true;
         }
+
+        observer?.disconnect();
 
         observer = new MutationObserver((mutations) => {
             mutations.forEach((mutation) => {
@@ -101,14 +130,15 @@
         mediaQuery.addEventListener("change", mediaQueryCallback);
         mediaQueryCallback();
 
-        unsubscribe = adsStore.subscribe(async (state) => {
-            showAds = state.showAds;
+        loadAdSenseScript().then(() => {
+            unsubscribe = adsStore.subscribe(async (state) => {
+                showAds = state.showAds;
 
-            if (showAds) {
-                // NOTE: this tick is only necessary on first mount
-                await tick();
-                setupAds();
-            }
+                if (showAds) {
+                    await tick();
+                    setupAds();
+                }
+            });
         });
     });
 
@@ -130,12 +160,6 @@
 
 <svelte:head>
     <link rel="icon" href="{PUBLIC_CDN_URL}/favicon.avif" />
-
-    <script
-        async
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6020599814166575"
-        crossorigin="anonymous"
-    ></script>
 </svelte:head>
 
 <div
