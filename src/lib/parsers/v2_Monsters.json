@@ -10270,7 +10270,7 @@
           "TemplateId": "80b1dcad-fc56-43a2-8bcc-cc41e62a7616",
           "TemplateVersion": "1.0.0",
           "InstanceId": null,
-          "Tier": "Bronze",
+          "Tier": "Gold",
           "Attributes": {}
         },
         {
@@ -10278,7 +10278,7 @@
           "TemplateId": "b6c90dc6-f497-4fe4-90a1-759947180884",
           "TemplateVersion": "1.0.0",
           "InstanceId": null,
-          "Tier": "Bronze",
+          "Tier": "Gold",
           "Attributes": {}
         }
       ],

@@ -4888,11 +4888,11 @@ const data: ParsedMonster[] = [
     "skills": [
       {
         "templateId": "80b1dcad-fc56-43a2-8bcc-cc41e62a7616",
-        "tierType": "Bronze"
+        "tierType": "Gold"
       },
       {
         "templateId": "b6c90dc6-f497-4fe4-90a1-759947180884",
-        "tierType": "Bronze"
+        "tierType": "Gold"
       }
     ]
   }
