@@ -464,22 +464,22 @@ const data: ParsedSkillCard[] = [
     "tiers": {
       "Bronze": {
         "tooltips": [
-          "When you or your enemy Burns, gain 2 Regeneration for the fight."
+          "When you Burn, gain 2 Regeneration for the fight."
         ]
       },
       "Silver": {
         "tooltips": [
-          "When you or your enemy Burns, gain 4 Regeneration for the fight."
+          "When you Burn, gain 4 Regeneration for the fight."
         ]
       },
       "Gold": {
         "tooltips": [
-          "When you or your enemy Burns, gain 6 Regeneration for the fight."
+          "When you Burn, gain 6 Regeneration for the fight."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "When you or your enemy Burns, gain 8 Regeneration for the fight."
+          "When you Burn, gain 8 Regeneration for the fight."
         ]
       },
       "Legendary": {
@@ -497,7 +497,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_MON_HeatLover.png",
     "unifiedTooltips": [
-      "When you or your enemy Burns, gain (2/4/6/8) Regeneration for the fight."
+      "When you Burn, gain (2/4/6/8) Regeneration for the fight."
     ],
     "remarks": [],
     "packId": "Core"
@@ -2297,22 +2297,22 @@ const data: ParsedSkillCard[] = [
     "tiers": {
       "Bronze": {
         "tooltips": [
-          "When you or your enemy Poisons, gain 2 Regeneration for the fight."
+          "When you Poison, gain 2 Regeneration for the fight."
         ]
       },
       "Silver": {
         "tooltips": [
-          "When you or your enemy Poisons, gain 4 Regeneration for the fight."
+          "When you Poison, gain 4 Regeneration for the fight."
         ]
       },
       "Gold": {
         "tooltips": [
-          "When you or your enemy Poisons, gain 6 Regeneration for the fight."
+          "When you Poison, gain 6 Regeneration for the fight."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "When you or your enemy Poisons, gain 8 Regeneration for the fight."
+          "When you Poison, gain 8 Regeneration for the fight."
         ]
       },
       "Legendary": {
@@ -2330,7 +2330,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_MON_RevitalizingToxins.png",
     "unifiedTooltips": [
-      "When you or your enemy Poisons, gain (2/4/6/8) Regeneration for the fight."
+      "When you Poison, gain (2/4/6/8) Regeneration for the fight."
     ],
     "remarks": [],
     "packId": "Core"

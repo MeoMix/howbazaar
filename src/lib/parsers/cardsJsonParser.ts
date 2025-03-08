@@ -249,31 +249,31 @@ function prettyPrintTooltip(tooltip: string) {
 
     // Generally format milliseconds -> seconds
     // Don't be too greedy with the matching to avoid converting Life Preserver HP or Gavel Damage
-    tooltip = tooltip.replace(/\b(\d{4,})\b(?=\s+second[s]?\b)/g, (match) => {
+    tooltip = tooltip.replace(/\b(\d{3,})\b(?=\s+second[s]?\b)/g, (match) => {
         const milliseconds = parseInt(match, 10);
         return `${milliseconds / 1000}`;
     });
 
     // Fixes Rocket Boots which display with +4000 Haste.
-    tooltip = tooltip.replace(/\b(\d{4,})\b(?=\s+Haste[s]?\b)/g, (match) => {
+    tooltip = tooltip.replace(/\b(\d{3,})\b(?=\s+Haste[s]?\b)/g, (match) => {
         const hasteLarge = parseInt(match, 10);
         return `${hasteLarge / 1000}`;
     });
 
     // Fixes Amber which display with "+1000 Slow"
-    tooltip = tooltip.replace(/\b(\d{4,})\b(?=\s+Slow[s]?\b)/g, (match) => {
+    tooltip = tooltip.replace(/\b(\d{3,})\b(?=\s+Slow[s]?\b)/g, (match) => {
         const slowLarge = parseInt(match, 10);
         return `${slowLarge / 1000}`;
     });
 
     // Fixes Marbles which displays with "slow 1000 item"
-    tooltip = tooltip.replace(/(?<=\bslow\s+)(\d{4,})\b/g, (match) => {
+    tooltip = tooltip.replace(/(?<=\bslow\s+)(\d{3,})\b/g, (match) => {
         const slowLarge = parseInt(match, 10);
         return `${slowLarge / 1000}`;
     });
 
     // Fixes Chronobarrier and Fort which displays with "cooldowns are increase by 2000"
-    tooltip = tooltip.replace(/(?<=cooldowns are increased by\s+)(\d{4,})\b/g, (match) => {
+    tooltip = tooltip.replace(/(?<=cooldowns are increased by\s+)(\d{3,})\b/g, (match) => {
         const cooldownLarge = parseInt(match, 10);
         return `${cooldownLarge / 1000}`;
     });
