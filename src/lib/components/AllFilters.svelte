@@ -15,6 +15,7 @@
     import SearchInput from "./SearchInput.svelte";
     import MultiSelectTriFilter from "./MultiSelectTriFilter.svelte";
     import AdvancedFilterToggle from "./AdvancedFilterToggle.svelte";
+    import FilterTriToggle from "./FilterTriToggle.svelte";
 
     let {
         heroOptions,
@@ -30,7 +31,7 @@
         searchText = $bindable(),
         selectedSearchLocationOption = $bindable(),
         isMonsterDropsOnly = $bindable(),
-        isLatestExpansionOnly = $bindable(),
+        latestExpansionOnlyState = $bindable(),
     }: {
         heroOptions: Option[];
         minimumTierOptions: Option[];
@@ -46,7 +47,7 @@
         searchText: string;
         selectedSearchLocationOption: AllSearchLocationOption;
         isMonsterDropsOnly: boolean;
-        isLatestExpansionOnly: boolean;
+        latestExpansionOnlyState: TriState;
     } = $props();
 
     function clearSearch() {
@@ -62,7 +63,7 @@
         isMatchAnyTag = false;
         selectedSizes = [];
         isMonsterDropsOnly = false;
-        isLatestExpansionOnly = false;
+        latestExpansionOnlyState = "unset";
     }
 
     function clearSearchInput() {
@@ -150,11 +151,18 @@
                             }}
                         />
 
-                        <FilterToggle
-                            isEnabled={isLatestExpansionOnly}
+                        <FilterTriToggle
                             label={"Latest Expansion Only"}
+                            value={latestExpansionOnlyState}
+                            state={latestExpansionOnlyState}
                             onClick={() => {
-                                isLatestExpansionOnly = !isLatestExpansionOnly;
+                                // Cycle through states for the given tag
+                                latestExpansionOnlyState =
+                                    latestExpansionOnlyState === "unset"
+                                        ? "on"
+                                        : latestExpansionOnlyState === "on"
+                                          ? "off"
+                                          : "unset";
                             }}
                         />
                     </div>

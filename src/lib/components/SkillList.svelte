@@ -28,7 +28,7 @@
         isMatchAnyTag,
         isMatchAnyHero,
         isMonsterDropsOnly,
-        isLatestExpansionOnly,
+        latestExpansionOnlyState,
         isHiddenWhenEmpty,
         initialLoad = true,
     }: {
@@ -42,7 +42,7 @@
         isMatchAnyTag: boolean;
         isMatchAnyHero: boolean;
         isMonsterDropsOnly: boolean;
-        isLatestExpansionOnly: boolean;
+        latestExpansionOnlyState: TriState;
         isHiddenWhenEmpty: boolean;
         initialLoad?: boolean;
     } = $props();
@@ -76,7 +76,7 @@
                 isMatchAnyTag,
                 isMatchAnyHero,
                 isMonsterDropsOnly,
-                isLatestExpansionOnly,
+                latestExpansionOnlyState,
             ),
             selectedSortOption,
         ),

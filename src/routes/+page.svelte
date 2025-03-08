@@ -53,7 +53,7 @@
     let monsterSelectedSearchLocationOption = $derived((selectedSearchLocationOption === 'name-text-enchantments' ? 'name-text' : selectedSearchLocationOption) as MonsterSearchLocationOption);
 
     let isMonsterDropsOnly = $state(false);
-    let isLatestExpansionOnly = $state(false);
+    let latestExpansionOnlyState = $state("unset" as TriState);
 
     let itemSortOptions: { name: string; value: ItemSortOption }[] = [
         {
@@ -112,7 +112,7 @@
         bind:searchText
         bind:selectedSearchLocationOption
         bind:isMonsterDropsOnly
-        bind:isLatestExpansionOnly
+        bind:latestExpansionOnlyState
     />
 
     <ItemList
@@ -126,7 +126,7 @@
         selectedSearchLocationOption={itemSelectedSearchLocationOption}
         {isMatchAnyTag}
         {isMonsterDropsOnly}
-        {isLatestExpansionOnly}
+        {latestExpansionOnlyState}
         isHiddenWhenEmpty={true}
     />
 
@@ -141,7 +141,7 @@
         {isMatchAnyTag}
         {isMatchAnyHero}
         {isMonsterDropsOnly}
-        {isLatestExpansionOnly}
+        {latestExpansionOnlyState}
         isHiddenWhenEmpty={true}
         initialLoad={false}
     />
