@@ -81,6 +81,7 @@
                 latestExpansionOnlyState,
             ),
             selectedSortOption,
+            searchText,
         ),
     );
 

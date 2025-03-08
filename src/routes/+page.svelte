@@ -48,9 +48,19 @@
         "name-text" as AllSearchLocationOption,
     );
 
-    let itemSelectedSearchLocationOption = $derived(selectedSearchLocationOption as ItemSearchLocationOption);
-    let skillSelectedSearchLocationOption = $derived((selectedSearchLocationOption === 'name-text-enchantments' ? 'name-text' : selectedSearchLocationOption) as SkillSearchLocationOption);
-    let monsterSelectedSearchLocationOption = $derived((selectedSearchLocationOption === 'name-text-enchantments' ? 'name-text' : selectedSearchLocationOption) as MonsterSearchLocationOption);
+    let itemSelectedSearchLocationOption = $derived(
+        selectedSearchLocationOption as ItemSearchLocationOption,
+    );
+    let skillSelectedSearchLocationOption = $derived(
+        (selectedSearchLocationOption === "name-text-enchantments"
+            ? "name-text"
+            : selectedSearchLocationOption) as SkillSearchLocationOption,
+    );
+    let monsterSelectedSearchLocationOption = $derived(
+        (selectedSearchLocationOption === "name-text-enchantments"
+            ? "name-text"
+            : selectedSearchLocationOption) as MonsterSearchLocationOption,
+    );
 
     let isMonsterDropsOnly = $state(false);
     let latestExpansionOnlyState = $state("unset" as TriState);
@@ -65,7 +75,7 @@
             name: "Tier",
         },
         {
-        value: "size",
+            value: "size",
             name: "Size",
         },
         {

@@ -79,6 +79,7 @@
                 latestExpansionOnlyState,
             ),
             selectedSortOption,
+            searchText,
         ),
     );
 </script>

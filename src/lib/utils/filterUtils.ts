@@ -272,8 +272,18 @@ export function filterTags(tags: Tag[], hiddenTags: HiddenTag[]) {
     ).sort();
 }
 
-export function sortCards<T extends (ClientSideItemCard | ClientSideSkillCard)>(cards: T[], selectedSortOption: (ItemSortOption | SkillSortOption)) {
+export function sortCards<T extends (ClientSideItemCard | ClientSideSkillCard)>(cards: T[], selectedSortOption: (ItemSortOption | SkillSortOption), searchText: string) {
     return cards.sort((a, b) => {
+        // If searchText is provided, check for exact matches first
+        if (searchText) {
+            const aExactMatch = a.name.toLowerCase() === searchText.toLowerCase();
+            const bExactMatch = b.name.toLowerCase() === searchText.toLowerCase();
+            
+            if (aExactMatch && !bExactMatch) return -1;
+            if (!aExactMatch && bExactMatch) return 1;
+            if (aExactMatch && bExactMatch) return 0;
+        }
+
         if (selectedSortOption === "name") {
             return a.name.localeCompare(b.name);
         } else if (selectedSortOption === "tier") {
