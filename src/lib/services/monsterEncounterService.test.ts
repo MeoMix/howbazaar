@@ -1,9 +1,9 @@
 import { describe, it, expect, beforeAll } from 'vitest';
-import parsedItemCards from "$lib/db/parsedItemCards";
-import parsedSkillCards from "$lib/db/parsedSkillCards";
-import parsedCombatEncounterCards from "$lib/db/parsedCombatEncounterCards";
-import parsedMonsters from "$lib/db/parsedMonsters";
-import parsedDayHours from "$lib/db/parsedDayHours";
+import parsedItemCards from "$lib/db/patches/latest/parsedItemCards";
+import parsedSkillCards from "$lib/db/patches/latest/parsedSkillCards";
+import parsedCombatEncounterCards from "$lib/db/patches/latest/parsedCombatEncounterCards";
+import parsedMonsters from "$lib/db/patches/latest/parsedMonsters";
+import parsedDayHours from "$lib/db/patches/latest/parsedDayHours";
 import type { ClientSideMonsterEncounterDay } from '$lib/types';
 import { getMonsterEncounterDays } from './monsterEncounterService';
 

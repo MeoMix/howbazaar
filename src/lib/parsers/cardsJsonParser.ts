@@ -3,7 +3,7 @@
 // https://github.com/glideapps/quicktype?tab=readme-ov-file#calling-quicktype-from-javascript
 import type { Entries } from "type-fest";
 import type { ParsedCombatEncounterCard, ParsedItemCard, ParsedSkillCard } from "$lib/types";
-import type { V2CardsD as Card, Bronze as Tier, Tiers, Tier as TierType, AbilityAction, AuraAction, Ability, Aura, Operation, Origin } from "./v2_Cards";
+import type { V2CardsD as Card, Bronze as Tier, Tiers, Tier as TierType, AbilityAction, AuraAction, Ability, Aura, Operation, Origin } from "./patches/latest/v2_Cards";
 import { unifyTooltips } from "$lib/utils/tooltipUtils";
 import type { CardsJson } from "./types.parser";
 import invalidItemIds from "./invalidItemIds.json";

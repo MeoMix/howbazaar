@@ -1,6 +1,6 @@
 import fs from 'fs';
 import path from 'path';
-import cardsJson from './v2_Cards.json';
+import cardsJson from './cards_old.json';
 
 const allowedList = [
   // Corrosive Toxins:

@@ -3,15 +3,15 @@ import type { RequestHandler } from "@sveltejs/kit";
 import type { ItemsApiResponse } from "$lib/types";
 import { getHash } from "$lib/utils/dataUtils";
 import { getItems } from "$lib/services/itemService";
-import parsedItemCards from "$lib/db/parsedItemCards";
-import parsedSkillCards from "$lib/db/parsedSkillCards";
-import parsedCombatEncounterCards from "$lib/db/parsedCombatEncounterCards";
-import parsedMonsters from "$lib/db/parsedMonsters";
-import parsedDayHours from "$lib/db/parsedDayHours";
+import parsedItemCards from "$lib/db/patches/latest/parsedItemCards";
+import parsedSkillCards from "$lib/db/patches/latest/parsedSkillCards";
+import parsedCombatEncounterCards from "$lib/db/patches/latest/parsedCombatEncounterCards";
+import parsedMonsters from "$lib/db/patches/latest/parsedMonsters";
+import parsedDayHours from "$lib/db/patches/latest/parsedDayHours";
 
 let serverVersion: string | undefined;
 
-export const GET: RequestHandler = ({ url, request }) => {
+export const GET: RequestHandler = async ({ url, request }) => {
     const items = getItems(parsedItemCards, parsedSkillCards, parsedCombatEncounterCards, parsedMonsters, parsedDayHours);
     serverVersion ??= getHash(items);
 

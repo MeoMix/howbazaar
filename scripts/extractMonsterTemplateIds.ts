@@ -1,5 +1,5 @@
 import fs from 'fs';
-import cardsJson from './v2_Cards.json';
+import cardsJson from './cards_old.json';
 
 // This is just tech debt. As new monsters get added I need a way of handling them and I'm making it fit the old process.
 const hardcodedMappings = {

@@ -1,6 +1,6 @@
 import { describe, it, expect, beforeAll } from 'vitest';
 import { parseJson } from './cardsJsonParser';
-import cardsJson from "./v2_Cards.json" assert { type: "json" };
+import cardsJson from "./patches/latest/v2_Cards.json" assert { type: "json" };
 import type { ParsedItemCard, ParsedSkillCard } from '$lib/types';
 import type { CardsJson } from './types.parser';
 
@@ -14,7 +14,7 @@ describe('cardJsonParser', () => {
     skillCards = parsedJson.skillCards;
   });
 
-  it.only('should contain no items with duplicate names', () => {
+  it('should contain no items with duplicate names', () => {
     const duplicateNames = itemCards.filter(card => itemCards.filter(c => c.name === card.name).length > 1);
     const duplicates = duplicateNames.map(card => ({
       name: card.name,
