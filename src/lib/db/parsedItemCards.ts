@@ -14273,21 +14273,21 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Cooldown 10 seconds",
           "Poison 10.",
-          "When you Haste, charge this {ability.1} second(s)."
+          "When you Haste, charge this 2 second(s)."
         ]
       },
       "Gold": {
         "tooltips": [
           "Cooldown 9 seconds",
           "Poison 10.",
-          "When you Haste, charge this {ability.1} second(s)."
+          "When you Haste, charge this 2 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 8 seconds",
           "Poison 10.",
-          "When you Haste, charge this {ability.1} second(s)."
+          "When you Haste, charge this 2 second(s)."
         ]
       },
       "Legendary": {
@@ -14377,7 +14377,7 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "Cooldown (10/9/8) seconds",
       "Poison 10.",
-      "When you Haste, charge this {ability.1} second(s)."
+      "When you Haste, charge this 2 second(s)."
     ],
     "remarks": [],
     "packId": "Vanessa_Core"
