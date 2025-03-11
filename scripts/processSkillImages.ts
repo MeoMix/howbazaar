@@ -1,7 +1,7 @@
 import * as fs from 'fs/promises';
 import path from 'path';
 
-import parsedSkillCards from "../src/lib/db/parsedSkillCards";
+import parsedSkillCards from "../src/lib/db/patches/latest/parsedSkillCards";
 import { removeSpecialCharacters } from './utils/stringUtils.ts';
 import { deleteFiles } from './utils/fileUtils.ts';
 import { checkAndResizeImages, convertImagesToAvif } from './utils/imageUtils.ts';

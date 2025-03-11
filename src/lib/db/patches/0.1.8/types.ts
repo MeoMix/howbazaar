@@ -32,8 +32,8 @@ export type ParsedItemCard = {
     packId: CorePackId | ExpansionPackId;
 };
 
-export type CorePackId = "Core" | "Pygmalien_Core" | "Vanessa_Core" | "Dooley_Core" | "Mak_Core" | "Jules_Core" | "Stelle_Core";
-export type ExpansionPackId = "Pyg_Frozen_Assets" | "Vanessa_Mysteries_of_the_Deep";
+type CorePackId = "Core" | "Pygmalien_Core" | "Vanessa_Core" | "Dooley_Core" | "Mak_Core" | "Jules_Core" | "Stelle_Core";
+type ExpansionPackId = "Pyg_Frozen_Assets" | "Vanessa_Mysteries_of_the_Deep";
 
 export type ClientSideItemCard = {
     id: string;
