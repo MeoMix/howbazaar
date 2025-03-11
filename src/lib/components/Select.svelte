@@ -17,10 +17,10 @@
     let isOpen = $state(false);
 </script>
 
-<div>
+<div class="relative w-full">
     <Button
         size="sm"
-        class="py-1 px-2 w-24 text-gray-900 bg-gray-50 border border-gray-300 rounded-lg focus:ring-bazaar-orange focus:border-bazaar-orange dark:bg-bazaar-brown dark:border-bazaar-brown600 dark:placeholder-gray-400 dark:text-bazaar-tan700 dark:focus:ring-bazaar-orange dark:focus:border-bazaar-orange"
+        class="py-1 px-2 w-full text-gray-900 bg-gray-50 border border-gray-300 rounded-lg focus:ring-bazaar-orange focus:border-bazaar-orange dark:bg-bazaar-brown dark:border-bazaar-brown600 dark:placeholder-gray-400 dark:text-bazaar-tan700 dark:focus:ring-bazaar-orange dark:focus:border-bazaar-orange"
     >
         {options.find((option) => option.value === selectedOption)?.name}
         <ChevronDownOutline
@@ -29,11 +29,11 @@
     </Button>
     <Dropdown
         bind:open={isOpen}
-        containerClass="overflow-hidden divide-y z-50 bg-white dark:bg-bazaar-brown text-gray-700 dark:text-bazaar-tan700 rounded-lg border-gray-100 dark:border-bazaar-brown600 divide-gray-100 dark:divide-bazaar-brown600"
+        containerClass="absolute w-full overflow-hidden divide-y z-50 bg-white dark:bg-bazaar-brown text-gray-700 dark:text-bazaar-tan700 rounded-lg border-gray-100 dark:border-bazaar-brown600 divide-gray-100 dark:divide-bazaar-brown600"
     >
         {#each options as option}
             <DropdownItem
-                class={`w-24 hover:bg-gray-100 dark:hover:bg-bazaar-brown600 dark:hover:text-bazaar-orange ${option.value === selectedOption ? "bg-bazaar-brown600 text-bazaar-orange" : ""}`}
+                class={`w-full hover:bg-gray-100 dark:hover:bg-bazaar-brown600 dark:hover:text-bazaar-orange ${option.value === selectedOption ? "bg-bazaar-brown600 text-bazaar-orange" : ""}`}
                 on:click={() => {
                     isOpen = false;
                     onSelectOption(option.value);

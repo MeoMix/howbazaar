@@ -8,7 +8,8 @@
         Hero,
         EnchantmentType,
     } from "$lib/types";
-    import { Card, Select } from "flowbite-svelte";
+    import Select from "$lib/components/Select.svelte";
+    import { Card } from "flowbite-svelte";
     import type { PageData } from "./$types";
     import { goto } from "$app/navigation";
 
@@ -171,14 +172,12 @@
         );
     }
 
-    function handleVersionChange(event: Event) {
-        const select = event.target as HTMLSelectElement;
-        const version = select.value;
-        goto(`?version=${version}`, { invalidateAll: true });
-    }
-
-    const items = $derived(Object.values(data.patchNotes.items) as ItemPatchNote[]);
-    const skills = $derived(Object.values(data.patchNotes.skills) as SkillPatchNote[]);
+    const items = $derived(
+        Object.values(data.patchNotes.items) as ItemPatchNote[],
+    );
+    const skills = $derived(
+        Object.values(data.patchNotes.skills) as SkillPatchNote[],
+    );
 
     // Helper function to render a patch note (used for both items and skills)
     function renderPatchNote(
@@ -196,6 +195,17 @@
             })
             .filter((note): note is RenderedPatchNote => note !== null);
     }
+
+    const versionOptions = $derived(
+        data.versions.map((version) => ({
+            name: version.label,
+            value: version.version,
+        })),
+    );
+
+    function handleVersionChange(version: string) {
+        goto(`?version=${version}`, { invalidateAll: true });
+    }
 </script>
 
 <div class="max-w-6xl mx-auto p-4">
@@ -203,16 +213,12 @@
         <h1 class="text-3xl font-bold text-gray-900 dark:text-bazaar-tan700">
             Patch Notes
         </h1>
-        <div class="w-64">
+        <div class="w-48">
             <Select
-                class="dark:bg-bazaar-background dark:text-bazaar-tan700"
-                value={data.currentVersion}
-                on:change={handleVersionChange}
-            >
-                {#each data.versions as version}
-                    <option value={version.version}>{version.label}</option>
-                {/each}
-            </Select>
+                selectedOption={data.currentVersion}
+                options={versionOptions}
+                onSelectOption={handleVersionChange}
+            />
         </div>
     </div>
 
