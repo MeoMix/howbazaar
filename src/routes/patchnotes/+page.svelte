@@ -64,8 +64,16 @@
     // Helper function to perform word-level diffing
     function getWordDiff(oldText: string | null, newText: string | null): { oldWords: WordDiff[]; newWords: WordDiff[] } {
         if (!oldText && !newText) return { oldWords: [], newWords: [] };
-        if (!oldText) return { oldWords: [], newWords: newText!.split(/\s+/).map(text => ({ text, highlight: false })) };
-        if (!newText) return { oldWords: oldText.split(/\s+/).map(text => ({ text, highlight: false })), newWords: [] };
+        // If there's no old text, the new text is entirely new (all green)
+        if (!oldText) return { 
+            oldWords: [], 
+            newWords: newText!.split(/\s+/).map(text => ({ text, highlight: true })) 
+        };
+        // If there's no new text, the old text was entirely removed (all red)
+        if (!newText) return { 
+            oldWords: oldText.split(/\s+/).map(text => ({ text, highlight: true })), 
+            newWords: [] 
+        };
 
         // Split into words but preserve the original text
         const oldWords = oldText.split(/\s+/);
