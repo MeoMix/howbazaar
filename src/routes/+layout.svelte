@@ -129,16 +129,20 @@
         mediaQuery.addEventListener("change", mediaQueryCallback);
         mediaQueryCallback();
 
-        loadAdScript().then(() => {
-            unsubscribe = adsStore.subscribe(async (state) => {
-                showAds = state.showAds;
+        if (window.isAdBlockDisabled) {
+            loadAdScript().then(() => {
+                unsubscribe = adsStore.subscribe(async (state) => {
+                    showAds = state.showAds;
 
-                if (showAds) {
-                    await tick();
-                    setupAds();
-                }
+                    if (showAds) {
+                        await tick();
+                        setupAds();
+                    }
+                });
             });
-        });
+        } else {
+            adScriptLoadFailed = true;
+        }
     });
 
     onDestroy(() => {
@@ -263,7 +267,7 @@
                     class="ml-4 sticky h-full top-[72px] pt-8"
                 >
                     <div
-                        class="bg-gray-100 border border-gray-200 rounded-lg overflow-hidden w-[120px] xl:w-[300px] "
+                        class="bg-gray-100 border border-gray-200 rounded-lg overflow-hidden w-[120px] xl:w-[300px]"
                     >
                         <div class="right-rail-1"></div>
                         <div class="right-rail-2"></div>
@@ -302,7 +306,7 @@
         <!-- Fixed horizontal banner ad for smaller screens (visible on md and below) -->
         <div class="fixed bottom-0 left-0 right-0 w-full z-50">
             <div class="bg-gray-100 border-t border-gray-200 shadow-lg">
-
+                <!-- TODO: Would be nice to have a 100px ad unit here -->
                 <!-- <ins
                     class="adsbygoogle w-full h-[100px]"
                     style="display:block;"

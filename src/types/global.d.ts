@@ -5,6 +5,7 @@ declare global {
     //   pageState?: string;
       push: (obj: any) => void;
     };
+    isAdBlockDisabled?: true;
   }
 }
 
