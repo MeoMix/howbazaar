@@ -272,15 +272,25 @@
                     bind:this={verticalAdContainer}
                     class="ml-4 sticky h-full top-[72px] pt-8"
                 >
-                    <div class="bg-gray-100 border border-gray-200 rounded-lg overflow-hidden">
-                        {#if isXlScreen}
-                            <div data-ad="right-rail-1" data-ad-size="300x250"></div>
-                            <div data-ad="right-rail-2" data-ad-size="300x600"></div>
-                        {:else}
-                            <div data-ad="right-rail-1" data-ad-size="120x250"></div>
-                            <div data-ad="right-rail-2" data-ad-size="120x600"></div>
-                        {/if}
-                    </div>
+                    {#if isXlScreen}
+                        <div
+                            data-ad="right-rail-1"
+                            data-ad-size="300x250"
+                        ></div>
+                        <div
+                            data-ad="right-rail-2"
+                            data-ad-size="300x600"
+                        ></div>
+                    {:else}
+                        <div
+                            data-ad="right-rail-1"
+                            data-ad-size="120x250"
+                        ></div>
+                        <div
+                            data-ad="right-rail-2"
+                            data-ad-size="120x600"
+                        ></div>
+                    {/if}
                 </div>
             {/if}
         </div>
