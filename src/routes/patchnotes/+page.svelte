@@ -2,11 +2,9 @@
     import UnifiedTooltip from "$lib/components/UnifiedTooltip.svelte";
     import type {
         TierType,
-        Tag,
-        HiddenTag,
-        Size,
-        Hero,
-        EnchantmentType,
+        TooltipChange,
+        ItemPatchNote,
+        SkillPatchNote,
     } from "$lib/types";
     import Select from "$lib/components/Select.svelte";
     import { Card } from "flowbite-svelte";
@@ -14,69 +12,6 @@
     import { goto } from "$app/navigation";
 
     let { data }: { data: PageData } = $props();
-
-    interface SimplePropertyChange<T> {
-        oldValue: T | null;
-        newValue: T | null;
-    }
-
-    interface ArrayPropertyChange<T> {
-        added: T[];
-        removed: T[];
-    }
-
-    interface TooltipChange {
-        index: number;
-        oldValue: string | null;
-        newValue: string | null;
-    }
-
-    interface EnchantmentChange {
-        type: EnchantmentType;
-        tooltipChanges: TooltipChange[];
-    }
-
-    interface ItemMetadata {
-        id: string;
-        name: string;
-        previousStartingTier: TierType;
-        currentStartingTier: TierType;
-    }
-
-    interface ItemPatchNote {
-        metadata: ItemMetadata;
-        name?: SimplePropertyChange<string>;
-        startingTier?: SimplePropertyChange<TierType>;
-        tags?: ArrayPropertyChange<Tag>;
-        hiddenTags?: ArrayPropertyChange<HiddenTag>;
-        size?: SimplePropertyChange<Size>;
-        heroes?: ArrayPropertyChange<Hero>;
-        tooltips?: TooltipChange[];
-        enchantments?: {
-            added: EnchantmentChange[];
-            removed: EnchantmentChange[];
-            modified: EnchantmentChange[];
-        };
-    }
-
-    interface SkillMetadata {
-        id: string;
-        name: string;
-        previousStartingTier: TierType;
-        currentStartingTier: TierType;
-        heroes: Hero[];
-    }
-
-    interface SkillPatchNote {
-        metadata: SkillMetadata;
-        name?: SimplePropertyChange<string>;
-        startingTier?: SimplePropertyChange<TierType>;
-        tags?: ArrayPropertyChange<Tag>;
-        hiddenTags?: ArrayPropertyChange<HiddenTag>;
-        size?: SimplePropertyChange<Size>;
-        heroes?: ArrayPropertyChange<Hero>;
-        tooltips?: TooltipChange[];
-    }
 
     interface RenderedPatchNote {
         propName: string;

@@ -1,4 +1,8 @@
-{
+// Auto-generated file. Do not edit directly.
+// TypeScript representation of processed data.
+import type { PatchNotes } from '$lib/types';
+
+const data: PatchNotes = {
   "version": "0.1.8",
   "items": {
     "aaf1216d-69b6-406e-98af-6a9bec12c8b4": {
@@ -10753,4 +10757,6 @@
       }
     }
   }
-}
+};
+
+export default data;

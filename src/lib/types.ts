@@ -175,3 +175,68 @@ export type SkillSearchLocationOption = "name" | "name-text";
 export type MonsterSearchLocationOption = "name" | "name-text";
 export type ItemSortOption = "name" | "tier" | "size" | "hero";
 export type SkillSortOption = "name" | "tier" | "hero";
+
+// Patch Notes Types
+export type SimplePropertyChange<T> = {
+    oldValue: T | null;
+    newValue: T | null;
+};
+
+export type ArrayPropertyChange<T> = {
+    added: T[];
+    removed: T[];
+};
+
+export type TooltipChange = {
+    index: number;
+    oldValue: string | null;
+    newValue: string | null;
+};
+
+export type EnchantmentChange = {
+    type: EnchantmentType;
+    tooltipChanges: TooltipChange[];
+};
+
+export type BaseMetadata = {
+    id: string;
+    name: string;
+    previousStartingTier: TierType;
+    currentStartingTier: TierType;
+};
+
+export type ItemMetadata = BaseMetadata;
+
+export type SkillMetadata = BaseMetadata & {
+    heroes: Hero[];
+};
+
+export type BasePatchNote = {
+    name?: SimplePropertyChange<string>;
+    startingTier?: SimplePropertyChange<TierType>;
+    tags?: ArrayPropertyChange<Tag>;
+    hiddenTags?: ArrayPropertyChange<HiddenTag>;
+    size?: SimplePropertyChange<Size>;
+    tooltips?: TooltipChange[];
+};
+
+export type ItemPatchNote = BasePatchNote & {
+    metadata: ItemMetadata;
+    heroes?: ArrayPropertyChange<Hero>;
+    enchantments?: {
+        added: EnchantmentChange[];
+        removed: EnchantmentChange[];
+        modified: EnchantmentChange[];
+    };
+};
+
+export type SkillPatchNote = BasePatchNote & {
+    metadata: SkillMetadata;
+    heroes?: ArrayPropertyChange<Hero>;
+};
+
+export type PatchNotes = {
+    version: string;
+    items: Record<string, ItemPatchNote>;
+    skills: Record<string, SkillPatchNote>;
+};

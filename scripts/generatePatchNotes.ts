@@ -483,19 +483,33 @@ async function loadParsedCards<T>(filePath: string): Promise<T> {
 }
 
 export async function generatePatchNotes(oldVersion: string, newVersion: string): Promise<void> {
+    // Read the files
+    const oldItemsPath = path.resolve(`./src/lib/db/patches/${oldVersion}/parsedItemCards.ts`);
+    const newItemsPath = path.resolve(`./src/lib/db/patches/${newVersion}/parsedItemCards.ts`);
+    const oldSkillsPath = path.resolve(`./src/lib/db/patches/${oldVersion}/parsedSkillCards.ts`);
+    const newSkillsPath = path.resolve(`./src/lib/db/patches/${newVersion}/parsedSkillCards.ts`);
+
     // Import and get the default export from both files
-    const oldItems = await loadParsedCards<ParsedItemCard[]>(`./src/lib/db/patches/${oldVersion}/parsedItemCards.ts`);
-    const newItems = await loadParsedCards<ParsedItemCard[]>(`./src/lib/db/patches/${newVersion}/parsedItemCards.ts`);
-    const oldSkills = await loadParsedCards<ParsedSkillCard[]>(`./src/lib/db/patches/${oldVersion}/parsedSkillCards.ts`);
-    const newSkills = await loadParsedCards<ParsedSkillCard[]>(`./src/lib/db/patches/${newVersion}/parsedSkillCards.ts`);
+    const { default: oldItems } = await import(oldItemsPath) as { default: ParsedItemCard[] };
+    const { default: newItems } = await import(newItemsPath) as { default: ParsedItemCard[] };
+    const { default: oldSkills } = await import(oldSkillsPath) as { default: ParsedSkillCard[] };
+    const { default: newSkills } = await import(newSkillsPath) as { default: ParsedSkillCard[] };
 
     // Generate patch notes
     const patchNotes = getPatchNotes(oldItems, newItems, oldSkills, newSkills);
     patchNotes.version = newVersion;
 
-    // Write the patch notes
-    const patchNotesPath = path.resolve(`./src/lib/db/patches/${newVersion}/patchNotes.json`);
-    writeFileSync(patchNotesPath, JSON.stringify(patchNotes, null, 2));
+    // Write the patch notes as a TypeScript file
+    const patchNotesPath = path.resolve(`./src/lib/db/patches/${newVersion}/patchNotes.ts`);
+    const fileContent = `// Auto-generated file. Do not edit directly.
+// TypeScript representation of processed data.
+import type { PatchNotes } from '$lib/types';
+
+const data: PatchNotes = ${JSON.stringify(patchNotes, null, 2)};
+
+export default data;
+`;
+    writeFileSync(patchNotesPath, fileContent);
 }
 
 // CLI argument handling
