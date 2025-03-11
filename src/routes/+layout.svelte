@@ -41,7 +41,8 @@
     };
 
     let showAds = $state(false);
-    let adSenseLoadFailed = $state(false);
+    let adScriptLoaded = $state(false);
+    let adScriptLoadFailed = $state(false);
     let unsubscribe = $state<Unsubscriber>();
     let verticalAdContainer = $state<HTMLElement>();
     let observer = $state<MutationObserver>();
@@ -58,22 +59,20 @@
         }
     };
 
-    const loadAdSenseScript = (): Promise<void> => {
+    const loadAdScript = (): Promise<void> => {
         return new Promise((resolve, reject) => {
-            if (window.adsbygoogle) {
-                resolve();
-                return;
-            }
-
             const script = document.createElement("script");
-            script.async = true;
-            script.src =
-                "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6020599814166575";
-            script.crossOrigin = "anonymous";
-            script.onload = () => resolve();
+            script.type = "module";
+            script.src = "https://js.rev.iq";
+            script.dataset.domain = "howbazaar.gg";
+            script.onload = () => {
+                console.log("Ad script loaded");
+                adScriptLoaded = true;
+                resolve();
+            };
             script.onerror = () => {
-                adSenseLoadFailed = true;
-                console.error("Failed to load AdSense script");
+                adScriptLoadFailed = true;
+                console.error("Failed to load ad script");
                 reject();
             };
 
@@ -82,47 +81,47 @@
     };
 
     const setupAds = () => {
-        if (!window.adsbygoogle) {
+        if (!adScriptLoaded) {
             return;
         }
 
-        try {
-            if (window.adsbygoogle?.loaded && window.adsbygoogle?.pageState) {
-                window.adsbygoogle.push({});
-            } else {
-                adSenseLoadFailed = true;
-                console.error("AdSense failed to load:");
-            }
-        } catch (e) {
-            console.error("AdSense failed to load:", e);
-            adSenseLoadFailed = true;
-        }
+        // try {
+        //     if (window.adsbygoogle?.loaded && window.adsbygoogle?.pageState) {
+        //         window.adsbygoogle.push({});
+        //     } else {
+        //         adScriptLoadFailed = true;
+        //         console.error("AdSense failed to load:");
+        //     }
+        // } catch (e) {
+        //     console.error("AdSense failed to load:", e);
+        //     adScriptLoadFailed = true;
+        // }
 
-        observer?.disconnect();
+        // observer?.disconnect();
 
-        observer = new MutationObserver((mutations) => {
-            mutations.forEach((mutation) => {
-                if (
-                    mutation.type === "attributes" &&
-                    mutation.attributeName === "style"
-                ) {
-                    const targetElement = mutation.target as HTMLElement;
-                    // Prevent Google AdSense from overwriting the height properties.
-                    targetElement.style.height = "";
-                    targetElement.style.minHeight = "";
-                }
-            });
-        });
+        // observer = new MutationObserver((mutations) => {
+        //     mutations.forEach((mutation) => {
+        //         if (
+        //             mutation.type === "attributes" &&
+        //             mutation.attributeName === "style"
+        //         ) {
+        //             const targetElement = mutation.target as HTMLElement;
+        //             // Prevent Google AdSense from overwriting the height properties.
+        //             targetElement.style.height = "";
+        //             targetElement.style.minHeight = "";
+        //         }
+        //     });
+        // });
 
-        let currentElement: HTMLElement | undefined | null =
-            verticalAdContainer;
-        while (currentElement && currentElement !== document.documentElement) {
-            observer.observe(currentElement, {
-                attributes: true,
-                attributeFilter: ["style"],
-            });
-            currentElement = currentElement.parentElement; // Move up the DOM tree
-        }
+        // let currentElement: HTMLElement | undefined | null =
+        //     verticalAdContainer;
+        // while (currentElement && currentElement !== document.documentElement) {
+        //     observer.observe(currentElement, {
+        //         attributes: true,
+        //         attributeFilter: ["style"],
+        //     });
+        //     currentElement = currentElement.parentElement; // Move up the DOM tree
+        // }
     };
 
     onMount(async () => {
@@ -130,7 +129,7 @@
         mediaQuery.addEventListener("change", mediaQueryCallback);
         mediaQueryCallback();
 
-        loadAdSenseScript().then(() => {
+        loadAdScript().then(() => {
             unsubscribe = adsStore.subscribe(async (state) => {
                 showAds = state.showAds;
 
@@ -152,7 +151,7 @@
 
     // TODO: Would be nice if this was implicit from the existence of the ad element.
     let footerAdMarginOffset = $derived(
-        showAds && !adSenseLoadFailed ? "mb-[100px] lg:mb-0" : "",
+        showAds && !adScriptLoadFailed ? "mb-[100px] lg:mb-0" : "",
     );
 
     let { children }: { children: Snippet } = $props();
@@ -258,21 +257,23 @@
                 Removes/adds the element entirely, rather than hiding, to ensure Google AdSense
                 only tries to initialize the ad unit when it has a valid width.
             -->
-            {#if showAds && isLargeScreen === true && !adSenseLoadFailed}
+            {#if showAds && isLargeScreen === true && !adScriptLoadFailed}
                 <div
                     bind:this={verticalAdContainer}
                     class="ml-4 sticky h-full top-[72px] pt-8"
                 >
                     <div
-                        class="bg-gray-100 border border-gray-200 rounded-lg overflow-hidden"
+                        class="bg-gray-100 border border-gray-200 rounded-lg overflow-hidden w-[120px] xl:w-[300px] "
                     >
-                        <ins
+                        <div class="right-rail-1"></div>
+                        <div class="right-rail-2"></div>
+                        <!-- <ins
                             class="adsbygoogle w-[120px] xl:w-[300px] max-h-[600px]"
                             style="display:block"
                             data-ad-client="ca-pub-6020599814166575"
                             data-ad-slot="3801324847"
                             data-ad-format="vertical"
-                        ></ins>
+                        ></ins> -->
                     </div>
                 </div>
             {/if}
@@ -297,18 +298,19 @@
         </Toast>
     </div>
 
-    {#if showAds && isLargeScreen === false && !adSenseLoadFailed}
+    {#if showAds && isLargeScreen === false && !adScriptLoadFailed}
         <!-- Fixed horizontal banner ad for smaller screens (visible on md and below) -->
         <div class="fixed bottom-0 left-0 right-0 w-full z-50">
             <div class="bg-gray-100 border-t border-gray-200 shadow-lg">
-                <ins
+
+                <!-- <ins
                     class="adsbygoogle w-full h-[100px]"
                     style="display:block;"
                     data-ad-client="ca-pub-6020599814166575"
                     data-ad-slot="6216601165"
                     data-ad-format="horizontal"
                 >
-                </ins>
+                </ins> -->
             </div>
         </div>
     {/if}
