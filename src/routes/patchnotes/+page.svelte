@@ -20,6 +20,113 @@
         currentTier: TierType;
     }
 
+    interface WordDiff {
+        text: string;
+        highlight: boolean;
+    }
+
+    // Helper function to group consecutive highlighted words
+    function groupHighlightedWords(words: WordDiff[]): { text: string; highlight: boolean }[] {
+        const groups: { text: string; highlight: boolean }[] = [];
+        let currentGroup: string[] = [];
+        let currentHighlight = false;
+
+        for (let i = 0; i < words.length; i++) {
+            const word = words[i];
+            
+            // If this is the first word or the highlight state changed
+            if (i === 0 || word.highlight !== currentHighlight) {
+                // If we have a current group, add it
+                if (currentGroup.length > 0) {
+                    groups.push({
+                        text: currentGroup.join(" "),
+                        highlight: currentHighlight
+                    });
+                    currentGroup = [];
+                }
+                currentHighlight = word.highlight;
+            }
+            
+            currentGroup.push(word.text);
+        }
+
+        // Add the last group
+        if (currentGroup.length > 0) {
+            groups.push({
+                text: currentGroup.join(" "),
+                highlight: currentHighlight
+            });
+        }
+
+        return groups;
+    }
+
+    // Helper function to perform word-level diffing
+    function getWordDiff(oldText: string | null, newText: string | null): { oldWords: WordDiff[]; newWords: WordDiff[] } {
+        if (!oldText && !newText) return { oldWords: [], newWords: [] };
+        if (!oldText) return { oldWords: [], newWords: newText!.split(/\s+/).map(text => ({ text, highlight: false })) };
+        if (!newText) return { oldWords: oldText.split(/\s+/).map(text => ({ text, highlight: false })), newWords: [] };
+
+        // Split into words but preserve the original text
+        const oldWords = oldText.split(/\s+/);
+        const newWords = newText.split(/\s+/);
+
+        // Function to normalize a word for comparison (strip punctuation and convert to lowercase)
+        const normalizeWord = (word: string) => word.toLowerCase().replace(/[.,!?;:()]/g, '');
+
+        // Create normalized versions for comparison
+        const normalizedOldWords = oldWords.map(normalizeWord);
+        const normalizedNewWords = newWords.map(normalizeWord);
+
+        // Find the longest common subsequence indices
+        function getLCS(X: string[], Y: string[]): number[][] {
+            const m = X.length;
+            const n = Y.length;
+            const L = Array(m + 1).fill(0).map(() => Array(n + 1).fill(0));
+
+            for (let i = 0; i <= m; i++) {
+                for (let j = 0; j <= n; j++) {
+                    if (i === 0 || j === 0)
+                        L[i][j] = 0;
+                    else if (X[i - 1] === Y[j - 1])
+                        L[i][j] = L[i - 1][j - 1] + 1;
+                    else
+                        L[i][j] = Math.max(L[i - 1][j], L[i][j - 1]);
+                }
+            }
+            return L;
+        }
+
+        // Get LCS table
+        const lcsTable = getLCS(normalizedOldWords, normalizedNewWords);
+
+        // Backtrack to find the actual subsequence and mark changes
+        const oldHighlighted: boolean[] = new Array(oldWords.length).fill(true);
+        const newHighlighted: boolean[] = new Array(newWords.length).fill(true);
+
+        let i = normalizedOldWords.length;
+        let j = normalizedNewWords.length;
+
+        while (i > 0 && j > 0) {
+            if (normalizedOldWords[i - 1] === normalizedNewWords[j - 1]) {
+                oldHighlighted[i - 1] = false;
+                newHighlighted[j - 1] = false;
+                i--;
+                j--;
+            } else if (lcsTable[i][j - 1] > lcsTable[i - 1][j]) {
+                j--;
+            } else {
+                i--;
+            }
+        }
+
+        // Create the final word diff arrays
+        return {
+            oldWords: oldWords.map((text, i) => ({ text, highlight: oldHighlighted[i] })),
+            newWords: newWords.map((text, i) => ({ text, highlight: newHighlighted[i] }))
+        };
+    }
+
     // Helper function to get all changed properties
     function getChangedProperties(patchNote: ItemPatchNote | SkillPatchNote) {
         return Object.entries(patchNote).filter(([key]) => key !== "metadata");
@@ -107,13 +214,6 @@
         );
     }
 
-    const items = $derived(
-        Object.values(data.patchNotes.items) as ItemPatchNote[],
-    );
-    const skills = $derived(
-        Object.values(data.patchNotes.skills) as SkillPatchNote[],
-    );
-
     // Helper function to render a patch note (used for both items and skills)
     function renderPatchNote(
         patch: ItemPatchNote | SkillPatchNote,
@@ -130,6 +230,13 @@
             })
             .filter((note): note is RenderedPatchNote => note !== null);
     }
+
+    const items = $derived(
+        Object.values(data.patchNotes.items) as ItemPatchNote[],
+    );
+    const skills = $derived(
+        Object.values(data.patchNotes.skills) as SkillPatchNote[],
+    );
 
     const versionOptions = $derived(
         data.versions.map((version) => ({
@@ -197,14 +304,24 @@
                                                 class="p-1 border-b dark:border-red-900 min-h-[1.5rem]"
                                             >
                                                 {#if tooltip}
-                                                    <UnifiedTooltip
-                                                        {tooltip}
-                                                        startingTier={previousTier}
-                                                    />
+                                                    {@const diff = getWordDiff(tooltip, aligned.new[i])}
+                                                    <div>
+                                                        {#each groupHighlightedWords(diff.oldWords) as group}
+                                                            <span class={group.highlight ? "bg-[rgba(248,81,73,0.4)]" : ""}>
+                                                                <UnifiedTooltip
+                                                                    tooltip={group.text}
+                                                                    startingTier={previousTier}
+                                                                />
+                                                            </span>
+                                                            {" "}
+                                                        {/each}
+                                                    </div>
                                                 {:else}
                                                     <div
                                                         class="italic text-gray-500 dark:text-bazaar-tan300"
-                                                    ></div>
+                                                    >
+                                                        Not set
+                                                    </div>
                                                 {/if}
                                             </div>
                                         {/each}
@@ -213,9 +330,11 @@
                                             class="p-1 border-b dark:border-red-900 min-h-[1.5rem]"
                                         >
                                             {#if change.removed?.length}
-                                                {formatArrayValues(
-                                                    change.removed,
-                                                )}
+                                                <span class="bg-[rgba(248,81,73,0.4)]">
+                                                    {formatArrayValues(
+                                                        change.removed,
+                                                    )}
+                                                </span>
                                             {:else}
                                                 <em
                                                     class="italic text-gray-500 dark:text-bazaar-tan300"
@@ -231,12 +350,14 @@
                                         <div
                                             class="p-1 border-b dark:border-red-900 min-h-[1.5rem]"
                                         >
-                                            <UnifiedTooltip
-                                                tooltip={formatValue(
-                                                    change.oldValue,
-                                                )}
-                                                startingTier={previousTier}
-                                            />
+                                            <span class="bg-[rgba(248,81,73,0.4)]">
+                                                <UnifiedTooltip
+                                                    tooltip={formatValue(
+                                                        change.oldValue,
+                                                    )}
+                                                    startingTier={previousTier}
+                                                />
+                                            </span>
                                         </div>
                                     {:else}
                                         <div
@@ -260,10 +381,18 @@
                                                 class="p-1 border-b dark:border-green-900 min-h-[1.5rem]"
                                             >
                                                 {#if tooltip}
-                                                    <UnifiedTooltip
-                                                        {tooltip}
-                                                        startingTier={currentTier}
-                                                    />
+                                                    {@const diff = getWordDiff(aligned.old[i], tooltip)}
+                                                    <div>
+                                                        {#each groupHighlightedWords(diff.newWords) as group}
+                                                            <span class={group.highlight ? "bg-[rgba(46,160,67,0.4)]" : ""}>
+                                                                <UnifiedTooltip
+                                                                    tooltip={group.text}
+                                                                    startingTier={currentTier}
+                                                                />
+                                                            </span>
+                                                            {" "}
+                                                        {/each}
+                                                    </div>
                                                 {:else}
                                                     <div
                                                         class="italic text-gray-500 dark:text-bazaar-tan300"
@@ -278,17 +407,19 @@
                                             class="p-1 border-b dark:border-green-900 min-h-[1.5rem]"
                                         >
                                             {#if change.added?.length}
-                                                {formatArrayValues(
-                                                    change.added,
-                                                )}
+                                                <span class="bg-[rgba(46,160,67,0.4)]">
+                                                    {formatArrayValues(
+                                                        change.added,
+                                                    )}
+                                                </span>
                                             {:else}
                                                 <em
                                                     class="text-gray-500 dark:text-bazaar-tan300"
                                                 >
-                                                    No new {propName ===
+                                                    No {propName ===
                                                     "hiddenTags"
                                                         ? "hidden tags"
-                                                        : propName}
+                                                        : propName} added
                                                 </em>
                                             {/if}
                                         </div>
@@ -296,12 +427,14 @@
                                         <div
                                             class="p-1 border-b dark:border-green-900 min-h-[1.5rem]"
                                         >
-                                            <UnifiedTooltip
-                                                tooltip={formatValue(
-                                                    change.newValue,
-                                                )}
-                                                startingTier={currentTier}
-                                            />
+                                            <span class="bg-[rgba(46,160,67,0.4)]">
+                                                <UnifiedTooltip
+                                                    tooltip={formatValue(
+                                                        change.newValue,
+                                                    )}
+                                                    startingTier={currentTier}
+                                                />
+                                            </span>
                                         </div>
                                     {:else}
                                         <div
@@ -362,14 +495,24 @@
                                                 class="p-1 border-b dark:border-red-900 min-h-[1.5rem]"
                                             >
                                                 {#if tooltip}
-                                                    <UnifiedTooltip
-                                                        {tooltip}
-                                                        startingTier={previousTier}
-                                                    />
+                                                    {@const diff = getWordDiff(tooltip, aligned.new[i])}
+                                                    <div>
+                                                        {#each groupHighlightedWords(diff.oldWords) as group}
+                                                            <span class={group.highlight ? "bg-[rgba(248,81,73,0.4)]" : ""}>
+                                                                <UnifiedTooltip
+                                                                    tooltip={group.text}
+                                                                    startingTier={previousTier}
+                                                                />
+                                                            </span>
+                                                            {" "}
+                                                        {/each}
+                                                    </div>
                                                 {:else}
                                                     <div
                                                         class="italic text-gray-500 dark:text-bazaar-tan300"
-                                                    ></div>
+                                                    >
+                                                        Not set
+                                                    </div>
                                                 {/if}
                                             </div>
                                         {/each}
@@ -378,9 +521,11 @@
                                             class="p-1 border-b dark:border-red-900 min-h-[1.5rem]"
                                         >
                                             {#if change.removed?.length}
-                                                {formatArrayValues(
-                                                    change.removed,
-                                                )}
+                                                <span class="bg-[rgba(248,81,73,0.4)]">
+                                                    {formatArrayValues(
+                                                        change.removed,
+                                                    )}
+                                                </span>
                                             {:else}
                                                 <em
                                                     class="italic text-gray-500 dark:text-bazaar-tan300"
@@ -396,12 +541,14 @@
                                         <div
                                             class="p-1 border-b dark:border-red-900 min-h-[1.5rem]"
                                         >
-                                            <UnifiedTooltip
-                                                tooltip={formatValue(
-                                                    change.oldValue,
-                                                )}
-                                                startingTier={previousTier}
-                                            />
+                                            <span class="bg-[rgba(248,81,73,0.4)]">
+                                                <UnifiedTooltip
+                                                    tooltip={formatValue(
+                                                        change.oldValue,
+                                                    )}
+                                                    startingTier={previousTier}
+                                                />
+                                            </span>
                                         </div>
                                     {:else}
                                         <div
@@ -425,10 +572,18 @@
                                                 class="p-1 border-b dark:border-green-900 min-h-[1.5rem]"
                                             >
                                                 {#if tooltip}
-                                                    <UnifiedTooltip
-                                                        {tooltip}
-                                                        startingTier={currentTier}
-                                                    />
+                                                    {@const diff = getWordDiff(aligned.old[i], tooltip)}
+                                                    <div>
+                                                        {#each groupHighlightedWords(diff.newWords) as group}
+                                                            <span class={group.highlight ? "bg-[rgba(46,160,67,0.4)]" : ""}>
+                                                                <UnifiedTooltip
+                                                                    tooltip={group.text}
+                                                                    startingTier={currentTier}
+                                                                />
+                                                            </span>
+                                                            {" "}
+                                                        {/each}
+                                                    </div>
                                                 {:else}
                                                     <div
                                                         class="italic text-gray-500 dark:text-bazaar-tan300"
@@ -443,17 +598,19 @@
                                             class="p-1 border-b dark:border-green-900 min-h-[1.5rem]"
                                         >
                                             {#if change.added?.length}
-                                                {formatArrayValues(
-                                                    change.added,
-                                                )}
+                                                <span class="bg-[rgba(46,160,67,0.4)]">
+                                                    {formatArrayValues(
+                                                        change.added,
+                                                    )}
+                                                </span>
                                             {:else}
                                                 <em
                                                     class="text-gray-500 dark:text-bazaar-tan300"
                                                 >
-                                                    No new {propName ===
+                                                    No {propName ===
                                                     "hiddenTags"
                                                         ? "hidden tags"
-                                                        : propName}
+                                                        : propName} added
                                                 </em>
                                             {/if}
                                         </div>
@@ -461,12 +618,14 @@
                                         <div
                                             class="p-1 border-b dark:border-green-900 min-h-[1.5rem]"
                                         >
-                                            <UnifiedTooltip
-                                                tooltip={formatValue(
-                                                    change.newValue,
-                                                )}
-                                                startingTier={currentTier}
-                                            />
+                                            <span class="bg-[rgba(46,160,67,0.4)]">
+                                                <UnifiedTooltip
+                                                    tooltip={formatValue(
+                                                        change.newValue,
+                                                    )}
+                                                    startingTier={currentTier}
+                                                />
+                                            </span>
                                         </div>
                                     {:else}
                                         <div
