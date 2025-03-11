@@ -68,9 +68,6 @@ type PatchNotes = {
     skills: Record<string, SkillPatchNote>;
 };
 
-// Properties to exclude from patch notes
-const EXCLUDED_PROPERTIES = new Set(['tiers', 'remarks', 'packId', 'unifiedTooltips']);
-
 function compareSimpleProperty<T>(oldValue: T | undefined, newValue: T | undefined): SimplePropertyChange<T> | undefined {
     if (oldValue === newValue) return undefined;
     return {
@@ -110,6 +107,7 @@ function compareArrays<T>(oldArr: T[] | undefined, newArr: T[] | undefined): Arr
     return { added, removed };
 }
 
+// TODO: I think this can be simplified.
 function compareTooltips(oldTooltips: string[] | undefined, newTooltips: string[] | undefined): TooltipChange[] | undefined {
     if (!oldTooltips && !newTooltips) return undefined;
     if (!oldTooltips) return newTooltips!.map((tooltip, index) => ({ index, oldValue: null, newValue: tooltip }));
@@ -480,18 +478,16 @@ export function getPatchNotes(oldItems: ParsedItemCard[], newItems: ParsedItemCa
     };
 }
 
-export async function generatePatchNotes(oldVersion: string, newVersion: string): Promise<void> {
-    // Read the files
-    const oldItemsPath = path.resolve(`./src/lib/db/patches/${oldVersion}/parsedItemCards.ts`);
-    const newItemsPath = path.resolve(`./src/lib/db/patches/${newVersion}/parsedItemCards.ts`);
-    const oldSkillsPath = path.resolve(`./src/lib/db/patches/${oldVersion}/parsedSkillCards.ts`);
-    const newSkillsPath = path.resolve(`./src/lib/db/patches/${newVersion}/parsedSkillCards.ts`);
+async function loadParsedCards<T>(filePath: string): Promise<T> {
+    return (await import(filePath)).default as T;
+}
 
+export async function generatePatchNotes(oldVersion: string, newVersion: string): Promise<void> {
     // Import and get the default export from both files
-    const { default: oldItems } = await import(oldItemsPath) as { default: ParsedItemCard[] };
-    const { default: newItems } = await import(newItemsPath) as { default: ParsedItemCard[] };
-    const { default: oldSkills } = await import(oldSkillsPath) as { default: ParsedSkillCard[] };
-    const { default: newSkills } = await import(newSkillsPath) as { default: ParsedSkillCard[] };
+    const oldItems = await loadParsedCards<ParsedItemCard[]>(`./src/lib/db/patches/${oldVersion}/parsedItemCards.ts`);
+    const newItems = await loadParsedCards<ParsedItemCard[]>(`./src/lib/db/patches/${newVersion}/parsedItemCards.ts`);
+    const oldSkills = await loadParsedCards<ParsedSkillCard[]>(`./src/lib/db/patches/${oldVersion}/parsedSkillCards.ts`);
+    const newSkills = await loadParsedCards<ParsedSkillCard[]>(`./src/lib/db/patches/${newVersion}/parsedSkillCards.ts`);
 
     // Generate patch notes
     const patchNotes = getPatchNotes(oldItems, newItems, oldSkills, newSkills);
