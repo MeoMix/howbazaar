@@ -47,10 +47,13 @@
     let verticalAdContainer = $state<HTMLElement>();
     let observer = $state<MutationObserver>();
     let mediaQuery = $state<MediaQueryList>();
+    let xlMediaQuery = $state<MediaQueryList>();
     let isLargeScreen = $state<boolean | undefined>();
+    let isXlScreen = $state<boolean | undefined>();
 
     const mediaQueryCallback = async () => {
         isLargeScreen = window.matchMedia("(min-width: 1024px)").matches;
+        isXlScreen = window.matchMedia("(min-width: 1280px)").matches;
 
         if (showAds) {
             // Wait for `isLargeScreen` to redraw the ad unit
@@ -126,7 +129,9 @@
 
     onMount(async () => {
         mediaQuery = window.matchMedia("(min-width: 1024px)");
+        xlMediaQuery = window.matchMedia("(min-width: 1280px)");
         mediaQuery.addEventListener("change", mediaQueryCallback);
+        xlMediaQuery.addEventListener("change", mediaQueryCallback);
         mediaQueryCallback();
 
         if (window.isAdBlockDisabled) {
@@ -151,6 +156,7 @@
         // Disconnect the mutation observer when component is destroyed
         observer?.disconnect();
         mediaQuery?.removeEventListener("change", mediaQueryCallback);
+        xlMediaQuery?.removeEventListener("change", mediaQueryCallback);
     });
 
     // TODO: Would be nice if this was implicit from the existence of the ad element.
@@ -266,20 +272,14 @@
                     bind:this={verticalAdContainer}
                     class="ml-4 sticky h-full top-[72px] pt-8"
                 >
-                    <div
-                        class="bg-gray-100 border border-gray-200 rounded-lg overflow-hidden w-[120px] xl:w-[300px]"
-                    >
-                        <!-- svelte-ignore element_invalid_self_closing_tag -->
-                        <div data-ad="right-rail-1" />
-                        <!-- svelte-ignore element_invalid_self_closing_tag -->
-                        <div data-ad="right-rail-2" />
-                        <!-- <ins
-                            class="adsbygoogle w-[120px] xl:w-[300px] max-h-[600px]"
-                            style="display:block"
-                            data-ad-client="ca-pub-6020599814166575"
-                            data-ad-slot="3801324847"
-                            data-ad-format="vertical"
-                        ></ins> -->
+                    <div class="bg-gray-100 border border-gray-200 rounded-lg overflow-hidden">
+                        {#if isXlScreen}
+                            <div data-ad="right-rail-1" data-ad-size="300x250"></div>
+                            <div data-ad="right-rail-2" data-ad-size="300x600"></div>
+                        {:else}
+                            <div data-ad="right-rail-1" data-ad-size="120x250"></div>
+                            <div data-ad="right-rail-2" data-ad-size="120x600"></div>
+                        {/if}
                     </div>
                 </div>
             {/if}
