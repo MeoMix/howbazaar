@@ -191,7 +191,7 @@
             </a>
 
             <a
-                href="https://discord.gg/VrGGFYEXXz"
+                href="https://discord.gg/scWr32PJfv"
                 target="_blank"
                 class="hover:text-gray-900 dark:text-bazaar-tan700 dark:hover:text-bazaar-orange dark:hover:bg-bazaar-brown p-2.5 rounded-lg"
             >
