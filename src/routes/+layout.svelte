@@ -269,8 +269,8 @@
                     <div
                         class="bg-gray-100 border border-gray-200 rounded-lg overflow-hidden w-[120px] xl:w-[300px]"
                     >
-                        <div class="right-rail-1"></div>
-                        <div class="right-rail-2"></div>
+                        <div data-ad="right-rail-1"></div>
+                        <div data-ad="right-rail-2"></div>
                         <!-- <ins
                             class="adsbygoogle w-[120px] xl:w-[300px] max-h-[600px]"
                             style="display:block"
