@@ -1,5 +1,5 @@
 {
-  "version": "test-current",
+  "version": "0.1.8-hotfix1",
   "items": {
     "b18e28e6-69a3-455a-8a5a-1a3170c76bb7": {
       "metadata": {
@@ -56,7 +56,7 @@
         {
           "index": 1,
           "oldValue": "Freeze (1/2/3/4) item(s) for 1 second(s).",
-          "newValue": null
+          "newValue": "Freeze (1/2/3) item(s) for 1 second(s)."
         },
         {
           "index": 2,

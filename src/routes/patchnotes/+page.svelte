@@ -8,10 +8,12 @@
         Hero,
         EnchantmentType,
     } from "$lib/types";
-    import { Card } from "flowbite-svelte";
+    import { Card, Select } from "flowbite-svelte";
     import type { PageData } from "./$types";
+    import { goto } from "$app/navigation";
 
     export let data: PageData;
+    const { patchNotes, versions, currentVersion } = data;
 
     interface SimplePropertyChange<T> {
         oldValue: T | null;
@@ -170,8 +172,14 @@
         );
     }
 
-    const items = Object.values(data.patchNotes.items) as ItemPatchNote[];
-    const skills = Object.values(data.patchNotes.skills) as SkillPatchNote[];
+    function handleVersionChange(event: Event) {
+        const select = event.target as HTMLSelectElement;
+        const version = select.value;
+        goto(`?version=${version}`);
+    }
+
+    const items = Object.values(patchNotes.items) as ItemPatchNote[];
+    const skills = Object.values(patchNotes.skills) as SkillPatchNote[];
 
     // Helper function to render a patch note (used for both items and skills)
     function renderPatchNote(patch: ItemPatchNote | SkillPatchNote): RenderedPatchNote[] {
@@ -188,8 +196,23 @@
 </script>
 
 <div class="max-w-6xl mx-auto p-4">
+    <div class="flex justify-between items-center mb-6">
+        <h1 class="text-3xl font-bold text-gray-900 dark:text-bazaar-tan700">Patch Notes</h1>
+        <div class="w-64">
+            <Select
+                class="dark:bg-bazaar-background dark:text-bazaar-tan700"
+                value={currentVersion}
+                on:change={handleVersionChange}
+            >
+                {#each versions as version}
+                    <option value={version.version}>{version.label}</option>
+                {/each}
+            </Select>
+        </div>
+    </div>
+
     {#if items.length > 0}
-        <h1 class="text-3xl font-bold mb-6 text-gray-900 dark:text-bazaar-tan700">Items</h1>
+        <h2 class="text-2xl font-bold mb-6 text-gray-900 dark:text-bazaar-tan700">Items</h2>
         {#each items as patch}
             <Card
                 padding="none"
@@ -301,7 +324,7 @@
     {/if}
 
     {#if skills.length > 0}
-        <h1 class="text-3xl font-bold mb-6 mt-8 text-gray-900 dark:text-bazaar-tan700">Skills</h1>
+        <h2 class="text-2xl font-bold mb-6 mt-8 text-gray-900 dark:text-bazaar-tan700">Skills</h2>
         {#each skills as patch}
             <Card
                 padding="none"

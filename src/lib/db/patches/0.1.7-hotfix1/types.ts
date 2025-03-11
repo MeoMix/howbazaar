@@ -2,7 +2,7 @@ export type EnchantmentType = 'Heavy' | 'Icy' | 'Turbo' | 'Shielded' | 'Restorat
 export type Hero = "Pygmalien" | "Vanessa" | "Stelle" | "Jules" | "Dooley" | "Mak" | "Common";
 export type TierType = "Silver" | "Diamond" | "Bronze" | "Gold" | "Legendary";
 export type Size = "Small" | "Medium" | "Large";
-export type Tag = "Weapon" | "Shield" | "Heal" | "Joy" | "Burn" | "Poison" | "Merchant" | "Core" | "Property" | "Friend" | "Apparel" | "Freeze" | "Aquatic" | "Toy" | "Dinosaur" | "Tool" | "Potion" | "Vehicle" | "Food" | "Dragon" | "Tech" | "Ray" | "Haste" | "Slow" | "Damage" | "Loot" | "Ingredient";
+export type Tag = "Weapon" | "Shield" | "Heal" | "Joy" | "Burn" | "Poison" | "Merchant" | "Core" | "Property" | "Friend" | "Apparel" | "Freeze" | "Aquatic" | "Toy" | "Dinosaur" | "Tool" | "Potion" | "Vehicle" | "Food" | "Dragon" | "Tech" | "Ray" | "Haste" | "Slow" | "Damage" | "Loot";
 export type HiddenTag = "HealthMax" | "Health" | "Poison" | "Income" | "Cooldown" | "Heal" | "Value" | "EconomyReference" | "Damage" | "BurnReference" | "Slow" | "Active" | "Shield" | "Burn" | "DamageReference" | "CritReference" | "Gold" | "Passive" | "NonWeapon" | "Multicast" | "Haste" | "HealReference" | "ShieldReference" | "HasteReference" | "Freeze" | "Crit" | "Ammo" | "Charge" | "JoyReference" | "Regen" | "PoisonReference" | "Joy" | "HealthReference" | "FreezeReference" | "SlowReference" | "AmmoReference" | "Toughness" | "Lifesteal" | "Experience" | "RegenReference" | "Unsellable";
 
 type ClientSideTier = {
@@ -29,11 +29,7 @@ export type ParsedItemCard = {
     enchantments: ClientSideEnchantment[];
     unifiedTooltips: string[];
     remarks: string[];
-    packId: CorePackId | ExpansionPackId;
 };
-
-type CorePackId = "Core" | "Pygmalien_Core" | "Vanessa_Core" | "Dooley_Core" | "Mak_Core" | "Jules_Core" | "Stelle_Core";
-type ExpansionPackId = "Pyg_Frozen_Assets" | "Vanessa_Mysteries_of_the_Deep";
 
 export type ClientSideItemCard = {
     id: string;
@@ -47,8 +43,7 @@ export type ClientSideItemCard = {
     enchantments: ClientSideEnchantment[];
     unifiedTooltips: string[];
     combatEncounters: ClientSideCombatEncounterSummary[];
-    remarks: string[];
-    packId: CorePackId | ExpansionPackId;
+    remarks: string[]
 };
 
 export type ParsedSkillCard = {
@@ -65,7 +60,6 @@ export type ParsedSkillCard = {
     artKey: string;
     unifiedTooltips: string[];
     remarks: string[];
-    packId: CorePackId | ExpansionPackId;
 };
 
 export type ClientSideSkillCard = {
@@ -80,7 +74,6 @@ export type ClientSideSkillCard = {
     unifiedTooltips: string[];
     combatEncounters: ClientSideCombatEncounterSummary[];
     remarks: string[];
-    packId: CorePackId | ExpansionPackId;
 };
 
 export type ClientSideCombatEncounterSummary = {

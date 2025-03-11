@@ -125,10 +125,10 @@ function compareTooltips(oldTooltips: string[] | undefined, newTooltips: string[
         const normalize = (s: string) => s.replace(/[0-9()/]/g, '');
         const normalized1 = normalize(t1);
         const normalized2 = normalize(t2);
-        
+
         // If normalized strings are identical, they're the same
         if (normalized1 === normalized2) return true;
-        
+
         // If Levenshtein distance is small enough, consider them similar
         return distance(normalized1, normalized2) <= 2;
     }
@@ -137,7 +137,7 @@ function compareTooltips(oldTooltips: string[] | undefined, newTooltips: string[
     for (let i = 0; i < oldTooltips.length; i++) {
         const oldTooltip = oldTooltips[i];
         const exactMatchIndex = newTooltips.findIndex((t, j) => !matchedIndices.has(j) && t === oldTooltip);
-        
+
         if (exactMatchIndex !== -1) {
             matchedIndices.add(exactMatchIndex);
             matchedOldIndices.add(i);
@@ -148,7 +148,7 @@ function compareTooltips(oldTooltips: string[] | undefined, newTooltips: string[
     // Second pass: find similar matches for unmatched tooltips
     for (let i = 0; i < oldTooltips.length; i++) {
         if (matchedOldIndices.has(i)) continue;
-        
+
         const oldTooltip = oldTooltips[i];
         let bestMatchIndex = -1;
         let bestMatchScore = Infinity;
@@ -156,7 +156,7 @@ function compareTooltips(oldTooltips: string[] | undefined, newTooltips: string[
         // Find the best matching tooltip
         for (let j = 0; j < newTooltips.length; j++) {
             if (matchedIndices.has(j)) continue;
-            
+
             const newTooltip = newTooltips[j];
             if (areTooltipsSimilar(oldTooltip, newTooltip)) {
                 const score = distance(oldTooltip, newTooltip);
@@ -448,15 +448,15 @@ export function getPatchNotes(oldItems: ParsedItemCard[], newItems: ParsedItemCa
     // Generate patch notes for all items
     const items: Record<string, ItemPatchNote> = {};
     const skills: Record<string, SkillPatchNote> = {};
-    
+
     // Check all items in both versions
     const allItemIds = new Set([...oldItemsMap.keys(), ...newItemsMap.keys()]);
     const allSkillIds = new Set([...oldSkillsMap.keys(), ...newSkillsMap.keys()]);
-    
+
     for (const id of allItemIds) {
         const oldItem = oldItemsMap.get(id);
         const newItem = newItemsMap.get(id);
-        
+
         const patchNote = generateItemPatchNote(oldItem, newItem);
         if (patchNote) {
             items[id] = patchNote;
@@ -466,7 +466,7 @@ export function getPatchNotes(oldItems: ParsedItemCard[], newItems: ParsedItemCa
     for (const id of allSkillIds) {
         const oldSkill = oldSkillsMap.get(id);
         const newSkill = newSkillsMap.get(id);
-        
+
         const patchNote = generateSkillPatchNote(oldSkill, newSkill);
         if (patchNote) {
             skills[id] = patchNote;
@@ -502,5 +502,28 @@ export async function generatePatchNotes(oldVersion: string, newVersion: string)
     writeFileSync(patchNotesPath, JSON.stringify(patchNotes, null, 2));
 }
 
+// CLI argument handling
+function printUsage() {
+    console.log('Usage: ts-node generatePatchNotes.ts <oldVersion> <newVersion>');
+    console.log('Example: ts-node generatePatchNotes.ts 1.0.0 1.1.0');
+    process.exit(1);
+}
+
+function getVersionsFromCLI(): { oldVersion: string; newVersion: string } {
+    const args = process.argv.slice(2); // Remove node and script name from args
+
+    if (args.length !== 2) {
+        console.error('Error: Exactly two version arguments are required.');
+        printUsage();
+    }
+
+    const [oldVersion, newVersion] = args;
+    return { oldVersion, newVersion };
+}
+
 // Run the script
-generatePatchNotes('test-previous', 'test-current').catch(console.error);
+const { oldVersion, newVersion } = getVersionsFromCLI();
+generatePatchNotes(oldVersion, newVersion).catch((error) => {
+    console.error('Error generating patch notes:', error);
+    process.exit(1);
+});
