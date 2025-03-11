@@ -269,8 +269,10 @@
                     <div
                         class="bg-gray-100 border border-gray-200 rounded-lg overflow-hidden w-[120px] xl:w-[300px]"
                     >
-                        <div data-ad="right-rail-1"></div>
-                        <div data-ad="right-rail-2"></div>
+                        <!-- svelte-ignore element_invalid_self_closing_tag -->
+                        <div data-ad="right-rail-1" />
+                        <!-- svelte-ignore element_invalid_self_closing_tag -->
+                        <div data-ad="right-rail-2" />
                         <!-- <ins
                             class="adsbygoogle w-[120px] xl:w-[300px] max-h-[600px]"
                             style="display:block"
