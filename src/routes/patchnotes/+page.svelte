@@ -292,166 +292,160 @@
 
                     {#each renderPatchNote(patch) as { propName, change, previousTier, currentTier }}
                         <div class="mb-3">
-                            <div class="grid grid-cols-[5rem_1fr_1fr] gap-2">
+                            <div class="grid grid-cols-[5rem_1fr] gap-2">
                                 <div
                                     class="text-sm text-gray-500 dark:text-bazaar-tan300 font-medium {propName ===
                                     'tooltips'
-                                        ? 'self-center'
+                                        ? 'self-start pt-2'
                                         : 'pt-2'}"
                                 >
                                     {formatPropertyName(propName)}
                                 </div>
 
-                                <!-- Previous Values -->
                                 <div class="space-y-2">
                                     {#if propName === "tooltips" && Array.isArray(change)}
-                                        {@const aligned =
-                                            getAlignedTooltips(change)}
+                                        {@const aligned = getAlignedTooltips(change)}
                                         {#each aligned.old as tooltip, i}
-                                            <div
-                                                class="p-1 border-b dark:border-red-900 min-h-[1.5rem]"
-                                            >
-                                                {#if tooltip}
-                                                    {@const diff = getWordDiff(tooltip, aligned.new[i])}
-                                                    <div>
-                                                        {#each groupHighlightedWords(diff.oldWords) as group}
-                                                            <span class={group.highlight ? "bg-[rgba(248,81,73,0.4)]" : ""}>
-                                                                <UnifiedTooltip
-                                                                    tooltip={group.text}
-                                                                    startingTier={previousTier}
-                                                                />
-                                                            </span>
-                                                            {" "}
-                                                        {/each}
-                                                    </div>
-                                                {:else}
-                                                    <div
-                                                        class="italic text-gray-500 dark:text-bazaar-tan300"
-                                                    >
-                                                        Not set
-                                                    </div>
-                                                {/if}
+                                            <div class="space-y-1">
+                                                <!-- Old Value -->
+                                                <div
+                                                    class="p-1 bg-red-500/15 dark:bg-red-900/15 min-h-[1.5rem] rounded"
+                                                >
+                                                    {#if tooltip}
+                                                        {@const diff = getWordDiff(tooltip, aligned.new[i])}
+                                                        <div>
+                                                            {#each groupHighlightedWords(diff.oldWords) as group}
+                                                                <span class={group.highlight ? "bg-[rgba(248,81,73,0.4)] px-1 rounded-sm" : ""}>
+                                                                    <UnifiedTooltip
+                                                                        tooltip={group.text}
+                                                                        startingTier={previousTier}
+                                                                    />
+                                                                </span>
+                                                                {" "}
+                                                            {/each}
+                                                        </div>
+                                                    {:else}
+                                                        <div
+                                                            class="italic text-gray-500 dark:text-bazaar-tan300"
+                                                        >
+                                                            Not set
+                                                        </div>
+                                                    {/if}
+                                                </div>
+                                                <!-- New Value -->
+                                                <div
+                                                    class="p-1 bg-green-500/15 dark:bg-green-900/15 min-h-[1.5rem] rounded"
+                                                >
+                                                    {#if aligned.new[i]}
+                                                        {@const diff = getWordDiff(tooltip, aligned.new[i])}
+                                                        <div>
+                                                            {#each groupHighlightedWords(diff.newWords) as group}
+                                                                <span class={group.highlight ? "bg-[rgba(46,160,67,0.4)] px-1 rounded-sm" : ""}>
+                                                                    <UnifiedTooltip
+                                                                        tooltip={group.text}
+                                                                        startingTier={currentTier}
+                                                                    />
+                                                                </span>
+                                                                {" "}
+                                                            {/each}
+                                                        </div>
+                                                    {:else}
+                                                        <div
+                                                            class="italic text-gray-500 dark:text-bazaar-tan300"
+                                                        >
+                                                            Removed
+                                                        </div>
+                                                    {/if}
+                                                </div>
                                             </div>
                                         {/each}
                                     {:else if propName === "tags" || propName === "hiddenTags" || propName === "heroes"}
-                                        <div
-                                            class="p-1 border-b dark:border-red-900 min-h-[1.5rem]"
-                                        >
-                                            {#if change.removed?.length}
-                                                <span class="bg-[rgba(248,81,73,0.4)]">
-                                                    {formatArrayValues(
-                                                        change.removed,
-                                                    )}
-                                                </span>
-                                            {:else}
-                                                <em
-                                                    class="italic text-gray-500 dark:text-bazaar-tan300"
-                                                >
-                                                    No {propName ===
-                                                    "hiddenTags"
-                                                        ? "hidden tags"
-                                                        : propName} removed
-                                                </em>
-                                            {/if}
-                                        </div>
-                                    {:else if change.oldValue !== undefined && change.oldValue !== null}
-                                        <div
-                                            class="p-1 border-b dark:border-red-900 min-h-[1.5rem]"
-                                        >
-                                            <span class="bg-[rgba(248,81,73,0.4)]">
-                                                <UnifiedTooltip
-                                                    tooltip={formatValue(
-                                                        change.oldValue,
-                                                    )}
-                                                    startingTier={previousTier}
-                                                />
-                                            </span>
-                                        </div>
-                                    {:else}
-                                        <div
-                                            class="p-1 border-b dark:border-red-900 min-h-[1.5rem]"
-                                        >
-                                            <em
-                                                class="italic text-gray-500 dark:text-bazaar-tan300"
-                                                >Not set</em
-                                            >
-                                        </div>
-                                    {/if}
-                                </div>
-
-                                <!-- New Values -->
-                                <div class="space-y-2">
-                                    {#if propName === "tooltips" && Array.isArray(change)}
-                                        {@const aligned =
-                                            getAlignedTooltips(change)}
-                                        {#each aligned.new as tooltip, i}
+                                        <div class="space-y-1">
+                                            <!-- Old Value -->
                                             <div
-                                                class="p-1 border-b dark:border-green-900 min-h-[1.5rem]"
+                                                class="p-1 bg-red-500/15 dark:bg-red-900/15 min-h-[1.5rem] rounded"
                                             >
-                                                {#if tooltip}
-                                                    {@const diff = getWordDiff(aligned.old[i], tooltip)}
-                                                    <div>
-                                                        {#each groupHighlightedWords(diff.newWords) as group}
-                                                            <span class={group.highlight ? "bg-[rgba(46,160,67,0.4)]" : ""}>
-                                                                <UnifiedTooltip
-                                                                    tooltip={group.text}
-                                                                    startingTier={currentTier}
-                                                                />
-                                                            </span>
-                                                            {" "}
-                                                        {/each}
-                                                    </div>
+                                                {#if change.removed?.length}
+                                                    <span class="bg-[rgba(248,81,73,0.4)] px-1 rounded-sm">
+                                                        {formatArrayValues(
+                                                            change.removed,
+                                                        )}
+                                                    </span>
                                                 {:else}
-                                                    <div
+                                                    <em
                                                         class="italic text-gray-500 dark:text-bazaar-tan300"
                                                     >
-                                                        Removed
-                                                    </div>
+                                                        No {propName ===
+                                                        "hiddenTags"
+                                                            ? "hidden tags"
+                                                            : propName} removed
+                                                    </em>
                                                 {/if}
                                             </div>
-                                        {/each}
-                                    {:else if propName === "tags" || propName === "hiddenTags" || propName === "heroes"}
-                                        <div
-                                            class="p-1 border-b dark:border-green-900 min-h-[1.5rem]"
-                                        >
-                                            {#if change.added?.length}
-                                                <span class="bg-[rgba(46,160,67,0.4)]">
-                                                    {formatArrayValues(
-                                                        change.added,
-                                                    )}
-                                                </span>
-                                            {:else}
-                                                <em
-                                                    class="text-gray-500 dark:text-bazaar-tan300"
-                                                >
-                                                    No {propName ===
-                                                    "hiddenTags"
-                                                        ? "hidden tags"
-                                                        : propName} added
-                                                </em>
-                                            {/if}
-                                        </div>
-                                    {:else if change.newValue !== undefined && change.newValue !== null}
-                                        <div
-                                            class="p-1 border-b dark:border-green-900 min-h-[1.5rem]"
-                                        >
-                                            <span class="bg-[rgba(46,160,67,0.4)]">
-                                                <UnifiedTooltip
-                                                    tooltip={formatValue(
-                                                        change.newValue,
-                                                    )}
-                                                    startingTier={currentTier}
-                                                />
-                                            </span>
+                                            <!-- New Value -->
+                                            <div
+                                                class="p-1 bg-green-500/15 dark:bg-green-900/15 min-h-[1.5rem] rounded"
+                                            >
+                                                {#if change.added?.length}
+                                                    <span class="bg-[rgba(46,160,67,0.4)] px-1 rounded-sm">
+                                                        {formatArrayValues(
+                                                            change.added,
+                                                        )}
+                                                    </span>
+                                                {:else}
+                                                    <em
+                                                        class="text-gray-500 dark:text-bazaar-tan300"
+                                                    >
+                                                        No {propName ===
+                                                        "hiddenTags"
+                                                            ? "hidden tags"
+                                                            : propName} added
+                                                    </em>
+                                                {/if}
+                                            </div>
                                         </div>
                                     {:else}
-                                        <div
-                                            class="p-1 border-b dark:border-green-900 min-h-[1.5rem]"
-                                        >
-                                            <em
-                                                class="italic text-gray-500 dark:text-bazaar-tan300"
-                                                >Removed</em
+                                        <div class="space-y-1">
+                                            <!-- Old Value -->
+                                            <div
+                                                class="p-1 bg-red-500/15 dark:bg-red-900/15 min-h-[1.5rem] rounded"
                                             >
+                                                {#if change.oldValue !== undefined && change.oldValue !== null}
+                                                    <span class="bg-[rgba(248,81,73,0.4)] px-1 rounded-sm">
+                                                        <UnifiedTooltip
+                                                            tooltip={formatValue(
+                                                                change.oldValue,
+                                                            )}
+                                                            startingTier={previousTier}
+                                                        />
+                                                    </span>
+                                                {:else}
+                                                    <em
+                                                        class="italic text-gray-500 dark:text-bazaar-tan300"
+                                                        >Not set</em
+                                                    >
+                                                {/if}
+                                            </div>
+                                            <!-- New Value -->
+                                            <div
+                                                class="p-1 bg-green-500/15 dark:bg-green-900/15 min-h-[1.5rem] rounded"
+                                            >
+                                                {#if change.newValue !== undefined && change.newValue !== null}
+                                                    <span class="bg-[rgba(46,160,67,0.4)] px-1 rounded-sm">
+                                                        <UnifiedTooltip
+                                                            tooltip={formatValue(
+                                                                change.newValue,
+                                                            )}
+                                                            startingTier={currentTier}
+                                                        />
+                                                    </span>
+                                                {:else}
+                                                    <em
+                                                        class="italic text-gray-500 dark:text-bazaar-tan300"
+                                                        >Removed</em
+                                                    >
+                                                {/if}
+                                            </div>
                                         </div>
                                     {/if}
                                 </div>
@@ -483,166 +477,160 @@
 
                     {#each renderPatchNote(patch) as { propName, change, previousTier, currentTier }}
                         <div class="mb-3">
-                            <div class="grid grid-cols-[5rem_1fr_1fr] gap-2">
+                            <div class="grid grid-cols-[5rem_1fr] gap-2">
                                 <div
                                     class="text-sm text-gray-500 dark:text-bazaar-tan300 font-medium {propName ===
                                     'tooltips'
-                                        ? 'self-center'
+                                        ? 'self-start pt-2'
                                         : 'pt-2'}"
                                 >
                                     {formatPropertyName(propName)}
                                 </div>
 
-                                <!-- Previous Values -->
                                 <div class="space-y-2">
                                     {#if propName === "tooltips" && Array.isArray(change)}
-                                        {@const aligned =
-                                            getAlignedTooltips(change)}
+                                        {@const aligned = getAlignedTooltips(change)}
                                         {#each aligned.old as tooltip, i}
-                                            <div
-                                                class="p-1 border-b dark:border-red-900 min-h-[1.5rem]"
-                                            >
-                                                {#if tooltip}
-                                                    {@const diff = getWordDiff(tooltip, aligned.new[i])}
-                                                    <div>
-                                                        {#each groupHighlightedWords(diff.oldWords) as group}
-                                                            <span class={group.highlight ? "bg-[rgba(248,81,73,0.4)]" : ""}>
-                                                                <UnifiedTooltip
-                                                                    tooltip={group.text}
-                                                                    startingTier={previousTier}
-                                                                />
-                                                            </span>
-                                                            {" "}
-                                                        {/each}
-                                                    </div>
-                                                {:else}
-                                                    <div
-                                                        class="italic text-gray-500 dark:text-bazaar-tan300"
-                                                    >
-                                                        Not set
-                                                    </div>
-                                                {/if}
+                                            <div class="space-y-1">
+                                                <!-- Old Value -->
+                                                <div
+                                                    class="p-1 bg-red-500/15 dark:bg-red-900/15 min-h-[1.5rem] rounded"
+                                                >
+                                                    {#if tooltip}
+                                                        {@const diff = getWordDiff(tooltip, aligned.new[i])}
+                                                        <div>
+                                                            {#each groupHighlightedWords(diff.oldWords) as group}
+                                                                <span class={group.highlight ? "bg-[rgba(248,81,73,0.4)] px-1 rounded-sm" : ""}>
+                                                                    <UnifiedTooltip
+                                                                        tooltip={group.text}
+                                                                        startingTier={previousTier}
+                                                                    />
+                                                                </span>
+                                                                {" "}
+                                                            {/each}
+                                                        </div>
+                                                    {:else}
+                                                        <div
+                                                            class="italic text-gray-500 dark:text-bazaar-tan300"
+                                                        >
+                                                            Not set
+                                                        </div>
+                                                    {/if}
+                                                </div>
+                                                <!-- New Value -->
+                                                <div
+                                                    class="p-1 bg-green-500/15 dark:bg-green-900/15 min-h-[1.5rem] rounded"
+                                                >
+                                                    {#if aligned.new[i]}
+                                                        {@const diff = getWordDiff(tooltip, aligned.new[i])}
+                                                        <div>
+                                                            {#each groupHighlightedWords(diff.newWords) as group}
+                                                                <span class={group.highlight ? "bg-[rgba(46,160,67,0.4)] px-1 rounded-sm" : ""}>
+                                                                    <UnifiedTooltip
+                                                                        tooltip={group.text}
+                                                                        startingTier={currentTier}
+                                                                    />
+                                                                </span>
+                                                                {" "}
+                                                            {/each}
+                                                        </div>
+                                                    {:else}
+                                                        <div
+                                                            class="italic text-gray-500 dark:text-bazaar-tan300"
+                                                        >
+                                                            Removed
+                                                        </div>
+                                                    {/if}
+                                                </div>
                                             </div>
                                         {/each}
                                     {:else if propName === "tags" || propName === "hiddenTags" || propName === "heroes"}
-                                        <div
-                                            class="p-1 border-b dark:border-red-900 min-h-[1.5rem]"
-                                        >
-                                            {#if change.removed?.length}
-                                                <span class="bg-[rgba(248,81,73,0.4)]">
-                                                    {formatArrayValues(
-                                                        change.removed,
-                                                    )}
-                                                </span>
-                                            {:else}
-                                                <em
-                                                    class="italic text-gray-500 dark:text-bazaar-tan300"
-                                                >
-                                                    No {propName ===
-                                                    "hiddenTags"
-                                                        ? "hidden tags"
-                                                        : propName} removed
-                                                </em>
-                                            {/if}
-                                        </div>
-                                    {:else if change.oldValue !== undefined && change.oldValue !== null}
-                                        <div
-                                            class="p-1 border-b dark:border-red-900 min-h-[1.5rem]"
-                                        >
-                                            <span class="bg-[rgba(248,81,73,0.4)]">
-                                                <UnifiedTooltip
-                                                    tooltip={formatValue(
-                                                        change.oldValue,
-                                                    )}
-                                                    startingTier={previousTier}
-                                                />
-                                            </span>
-                                        </div>
-                                    {:else}
-                                        <div
-                                            class="p-1 border-b dark:border-red-900 min-h-[1.5rem]"
-                                        >
-                                            <em
-                                                class="italic text-gray-500 dark:text-bazaar-tan300"
-                                                >Not set</em
-                                            >
-                                        </div>
-                                    {/if}
-                                </div>
-
-                                <!-- New Values -->
-                                <div class="space-y-2">
-                                    {#if propName === "tooltips" && Array.isArray(change)}
-                                        {@const aligned =
-                                            getAlignedTooltips(change)}
-                                        {#each aligned.new as tooltip, i}
+                                        <div class="space-y-1">
+                                            <!-- Old Value -->
                                             <div
-                                                class="p-1 border-b dark:border-green-900 min-h-[1.5rem]"
+                                                class="p-1 bg-red-500/15 dark:bg-red-900/15 min-h-[1.5rem] rounded"
                                             >
-                                                {#if tooltip}
-                                                    {@const diff = getWordDiff(aligned.old[i], tooltip)}
-                                                    <div>
-                                                        {#each groupHighlightedWords(diff.newWords) as group}
-                                                            <span class={group.highlight ? "bg-[rgba(46,160,67,0.4)]" : ""}>
-                                                                <UnifiedTooltip
-                                                                    tooltip={group.text}
-                                                                    startingTier={currentTier}
-                                                                />
-                                                            </span>
-                                                            {" "}
-                                                        {/each}
-                                                    </div>
+                                                {#if change.removed?.length}
+                                                    <span class="bg-[rgba(248,81,73,0.4)] px-1 rounded-sm">
+                                                        {formatArrayValues(
+                                                            change.removed,
+                                                        )}
+                                                    </span>
                                                 {:else}
-                                                    <div
+                                                    <em
                                                         class="italic text-gray-500 dark:text-bazaar-tan300"
                                                     >
-                                                        Removed
-                                                    </div>
+                                                        No {propName ===
+                                                        "hiddenTags"
+                                                            ? "hidden tags"
+                                                            : propName} removed
+                                                    </em>
                                                 {/if}
                                             </div>
-                                        {/each}
-                                    {:else if propName === "tags" || propName === "hiddenTags" || propName === "heroes"}
-                                        <div
-                                            class="p-1 border-b dark:border-green-900 min-h-[1.5rem]"
-                                        >
-                                            {#if change.added?.length}
-                                                <span class="bg-[rgba(46,160,67,0.4)]">
-                                                    {formatArrayValues(
-                                                        change.added,
-                                                    )}
-                                                </span>
-                                            {:else}
-                                                <em
-                                                    class="text-gray-500 dark:text-bazaar-tan300"
-                                                >
-                                                    No {propName ===
-                                                    "hiddenTags"
-                                                        ? "hidden tags"
-                                                        : propName} added
-                                                </em>
-                                            {/if}
-                                        </div>
-                                    {:else if change.newValue !== undefined && change.newValue !== null}
-                                        <div
-                                            class="p-1 border-b dark:border-green-900 min-h-[1.5rem]"
-                                        >
-                                            <span class="bg-[rgba(46,160,67,0.4)]">
-                                                <UnifiedTooltip
-                                                    tooltip={formatValue(
-                                                        change.newValue,
-                                                    )}
-                                                    startingTier={currentTier}
-                                                />
-                                            </span>
+                                            <!-- New Value -->
+                                            <div
+                                                class="p-1 bg-green-500/15 dark:bg-green-900/15 min-h-[1.5rem] rounded"
+                                            >
+                                                {#if change.added?.length}
+                                                    <span class="bg-[rgba(46,160,67,0.4)] px-1 rounded-sm">
+                                                        {formatArrayValues(
+                                                            change.added,
+                                                        )}
+                                                    </span>
+                                                {:else}
+                                                    <em
+                                                        class="text-gray-500 dark:text-bazaar-tan300"
+                                                    >
+                                                        No {propName ===
+                                                        "hiddenTags"
+                                                            ? "hidden tags"
+                                                            : propName} added
+                                                    </em>
+                                                {/if}
+                                            </div>
                                         </div>
                                     {:else}
-                                        <div
-                                            class="p-1 border-b dark:border-green-900 min-h-[1.5rem]"
-                                        >
-                                            <em
-                                                class="italic text-gray-500 dark:text-bazaar-tan300"
-                                                >Removed</em
+                                        <div class="space-y-1">
+                                            <!-- Old Value -->
+                                            <div
+                                                class="p-1 bg-red-500/15 dark:bg-red-900/15 min-h-[1.5rem] rounded"
                                             >
+                                                {#if change.oldValue !== undefined && change.oldValue !== null}
+                                                    <span class="bg-[rgba(248,81,73,0.4)] px-1 rounded-sm">
+                                                        <UnifiedTooltip
+                                                            tooltip={formatValue(
+                                                                change.oldValue,
+                                                            )}
+                                                            startingTier={previousTier}
+                                                        />
+                                                    </span>
+                                                {:else}
+                                                    <em
+                                                        class="italic text-gray-500 dark:text-bazaar-tan300"
+                                                        >Not set</em
+                                                    >
+                                                {/if}
+                                            </div>
+                                            <!-- New Value -->
+                                            <div
+                                                class="p-1 bg-green-500/15 dark:bg-green-900/15 min-h-[1.5rem] rounded"
+                                            >
+                                                {#if change.newValue !== undefined && change.newValue !== null}
+                                                    <span class="bg-[rgba(46,160,67,0.4)] px-1 rounded-sm">
+                                                        <UnifiedTooltip
+                                                            tooltip={formatValue(
+                                                                change.newValue,
+                                                            )}
+                                                            startingTier={currentTier}
+                                                        />
+                                                    </span>
+                                                {:else}
+                                                    <em
+                                                        class="italic text-gray-500 dark:text-bazaar-tan300"
+                                                        >Removed</em
+                                                    >
+                                                {/if}
+                                            </div>
                                         </div>
                                     {/if}
                                 </div>

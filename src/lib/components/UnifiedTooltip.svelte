@@ -33,7 +33,7 @@
             {part.text}
         </span>
     {:else if isTierPart(part)}
-        <span class={part.bold ? "font-semibold whitespace-nowrap" : ""}>
+        <span class={part.bold ? "font-semibold whitespace-nowrap inline-block" : ""}>
             {#each part.parts as subpart, index}
                 {#if subpart.tierType}
                     <span
