@@ -19,7 +19,7 @@
 
     async function copyLink() {
         const url = new URL(window.location.href);
-        url.hash = patch.metadata.id;
+        url.hash = patch.metadata.name.toLowerCase().replace(/\s+/g, '_');
         await navigator.clipboard.writeText(url.toString());
 
         copySuccess = true;
@@ -287,7 +287,7 @@
     padding="none"
     size="xl"
     class={`relative border text-gray-900 dark:bg-bazaar-background dark:text-bazaar-tan700 dark:border-bazaar-orange mb-3`}
-    id={patch.metadata.id}
+    id={patch.metadata.name.toLowerCase().replace(/\s+/g, '_')}
 >
     <div class="rounded-lg p-4">
         <div class="flex items-center mb-3">
