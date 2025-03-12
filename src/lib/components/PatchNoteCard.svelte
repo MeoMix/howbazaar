@@ -286,7 +286,7 @@
 <Card
     padding="none"
     size="xl"
-    class={`relative border text-gray-900 dark:bg-bazaar-background dark:text-bazaar-tan700 dark:border-bazaar-orange mb-3`}
+    class={`relative border text-gray-900 dark:bg-bazaar-background dark:text-bazaar-tan700 dark:border-bazaar-orange mb-3 scroll-mt-[80px]`}
     id={patch.metadata.name.toLowerCase().replace(/\s+/g, '_')}
 >
     <div class="rounded-lg p-4">
