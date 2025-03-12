@@ -29,8 +29,8 @@
     }
 </script>
 
-<div class="max-w-6xl mx-auto p-4">
-    <div class="flex justify-between items-center mb-6">
+<div class="w-full max-w-full sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl">
+    <div class="flex justify-between items-center my-6">
         <h1 class="text-3xl font-bold text-gray-900 dark:text-bazaar-tan700">
             Patch Notes
         </h1>
