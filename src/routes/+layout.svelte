@@ -16,6 +16,7 @@
     } from "flowbite-svelte";
     import CheckCircleOutline from "flowbite-svelte-icons/CheckCircleOutline.svelte";
     import DiscordSolid from "flowbite-svelte-icons/DiscordSolid.svelte";
+    import ClipboardOutline from "flowbite-svelte-icons/ClipboardOutline.svelte";
     import { onDestroy, onMount, tick, type Snippet } from "svelte";
     import { fly } from "svelte/transition";
     import { page } from "$app/stores";
@@ -184,7 +185,14 @@
 
         <div class="flex md:order-2 items-center">
             <a
-                href="/tip{$page.url.search}"
+                href="/patchnotes"
+                class="hover:text-gray-900 dark:text-bazaar-tan700 dark:hover:text-bazaar-orange dark:hover:bg-bazaar-brown p-2.5 rounded-lg"
+            >
+                <ClipboardOutline />
+            </a>
+
+            <a
+                href="/tip"
                 class="hover:text-gray-900 dark:text-bazaar-tan700 dark:hover:text-bazaar-orange dark:hover:bg-bazaar-brown p-2.5 rounded-lg"
             >
                 <DollarOutline />

@@ -96,7 +96,7 @@
 
 {#snippet headerControls()}
     <div class="flex items-center space-x-2">
-        <Label class="dark:text-bazaar-tan700">Sort by</Label>
+        <Label class="dark:text-bazaar-tan700 text-nowrap">Sort by</Label>
         <Select
             options={sortOptions}
             selectedOption={selectedSortOption}

@@ -2,7 +2,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 
 import { deleteFiles } from './utils/fileUtils';
-import parsedItemCards from "../src/lib/db/parsedItemCards";
+import parsedItemCards from "../src/lib/db/patches/latest/parsedItemCards";
 import { removeSpecialCharacters } from './utils/stringUtils';
 import { checkAndResizeImages, convertImagesToAvif } from './utils/imageUtils';
 
