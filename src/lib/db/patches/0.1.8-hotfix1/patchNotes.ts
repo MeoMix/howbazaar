@@ -10,7 +10,8 @@ const data: PatchNotes = {
         "id": "b18e28e6-69a3-455a-8a5a-1a3170c76bb7",
         "name": "Primordial Depth Charge",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -25,7 +26,8 @@ const data: PatchNotes = {
         "id": "2e0be4f0-0472-444a-a541-09f1ba464c64",
         "name": "Private Hot Springs",
         "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold"
+        "currentStartingTier": "Gold",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -45,7 +47,8 @@ const data: PatchNotes = {
         "id": "6546e26d-d3a2-4b57-96ca-357f4be5c375",
         "name": "Cold Room",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Pygmalien"
       },
       "startingTier": {
         "oldValue": "Bronze",
@@ -74,7 +77,8 @@ const data: PatchNotes = {
         "id": "ce6769db-f9a6-44a8-b915-afec472a2ea3",
         "name": "Dive Weights",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Vanessa"
       },
       "tags": {
         "added": [
@@ -105,7 +109,8 @@ const data: PatchNotes = {
         "id": "91766035-9d5c-49df-b6b1-25ff7328af5b",
         "name": "Pufferfish",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Vanessa"
       },
       "startingTier": {
         "oldValue": "Bronze",
@@ -129,7 +134,8 @@ const data: PatchNotes = {
         "id": "82d41afc-d1a9-41ee-a03d-fd9305bef8b5",
         "name": "Octopus",
         "previousStartingTier": "Legendary",
-        "currentStartingTier": "Legendary"
+        "currentStartingTier": "Legendary",
+        "currentHero": "Common"
       },
       "tooltips": [
         {
@@ -144,7 +150,8 @@ const data: PatchNotes = {
         "id": "194572c8-39b0-4dea-92d5-2c97f8d59554",
         "name": "Steam Ladle",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -164,7 +171,8 @@ const data: PatchNotes = {
         "id": "9d31868e-1c69-4186-a3df-8ca10dc2a80f",
         "name": "Ice Luge",
         "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold"
+        "currentStartingTier": "Gold",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -184,7 +192,8 @@ const data: PatchNotes = {
         "id": "843ddc82-9d87-4995-b81c-bf31ae45fd30",
         "name": "Bushel",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -199,7 +208,8 @@ const data: PatchNotes = {
         "id": "8048bd3a-1529-4a21-872d-20da84b223a3",
         "name": "Yeti Crab",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -219,7 +229,8 @@ const data: PatchNotes = {
         "id": "47057461-8cb1-46d2-982c-a7ca6df131c7",
         "name": "Submersible",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -244,7 +255,8 @@ const data: PatchNotes = {
         "id": "64c62815-9c8a-40fa-a963-3fc09a46bbae",
         "name": "Matchbox",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -259,7 +271,8 @@ const data: PatchNotes = {
         "id": "bb101259-4d30-4d93-9d69-b99c08f17488",
         "name": "Aurora Dome",
         "previousStartingTier": "Gold",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Pygmalien"
       },
       "startingTier": {
         "oldValue": "Gold",
@@ -288,7 +301,8 @@ const data: PatchNotes = {
         "id": "fb6e6b16-d6d0-4493-ac3f-46c26afe6c51",
         "name": "Diving Helmet",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Vanessa"
       },
       "tags": {
         "added": [
@@ -302,7 +316,8 @@ const data: PatchNotes = {
         "id": "f0608f5b-5c6a-4c71-8cc4-f8abbdd951c9",
         "name": "Uzi",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Dooley"
       },
       "tooltips": [
         {
@@ -317,7 +332,8 @@ const data: PatchNotes = {
         "id": "9f478d9d-cc98-4ff2-926a-5eeb09bd044c",
         "name": "Snowflake",
         "previousStartingTier": "Diamond",
-        "currentStartingTier": "Diamond"
+        "currentStartingTier": "Diamond",
+        "currentHero": "Common"
       },
       "tooltips": [
         {
@@ -332,7 +348,8 @@ const data: PatchNotes = {
         "id": "961e974b-5472-4298-b66b-e1f74c167c26",
         "name": "Darkwater Anglerfish",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Vanessa"
       },
       "startingTier": {
         "oldValue": "Bronze",
@@ -361,7 +378,8 @@ const data: PatchNotes = {
         "id": "34fcf624-ccba-42a8-b4fc-837e0002a163",
         "name": "Weights",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {

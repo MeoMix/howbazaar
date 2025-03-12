@@ -32,7 +32,9 @@ type BaseMetadata = {
     currentStartingTier: TierType;
 };
 
-type ItemMetadata = BaseMetadata;
+type ItemMetadata = BaseMetadata & {
+    currentHero: Hero | null;
+};
 
 type SkillMetadata = BaseMetadata & {
     heroes: Hero[];
@@ -272,7 +274,8 @@ function generateItemPatchNote(oldItem: ParsedItemCard | undefined, newItem: Par
                 id: newItem!.id,
                 name: newItem!.name,
                 previousStartingTier: newItem!.startingTier,
-                currentStartingTier: newItem!.startingTier
+                currentStartingTier: newItem!.startingTier,
+                currentHero: newItem!.heroes[0] || null
             },
             name: { oldValue: null, newValue: newItem!.name },
             startingTier: { oldValue: null, newValue: newItem!.startingTier },
@@ -294,7 +297,8 @@ function generateItemPatchNote(oldItem: ParsedItemCard | undefined, newItem: Par
                 id: oldItem.id,
                 name: oldItem.name,
                 previousStartingTier: oldItem.startingTier,
-                currentStartingTier: oldItem.startingTier
+                currentStartingTier: oldItem.startingTier,
+                currentHero: oldItem.heroes[0] || null
             },
             name: { oldValue: oldItem.name, newValue: null },
             startingTier: { oldValue: oldItem.startingTier, newValue: null },
@@ -316,7 +320,8 @@ function generateItemPatchNote(oldItem: ParsedItemCard | undefined, newItem: Par
             id: newItem.id,
             name: newItem.name,
             previousStartingTier: oldItem.startingTier,
-            currentStartingTier: newItem.startingTier
+            currentStartingTier: newItem.startingTier,
+            currentHero: newItem.heroes[0] || null
         }
     };
 

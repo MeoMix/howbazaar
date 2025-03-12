@@ -10,7 +10,8 @@ const data: PatchNotes = {
         "id": "aaf1216d-69b6-406e-98af-6a9bec12c8b4",
         "name": "Magnifying Glass",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Common"
       },
       "tooltips": [
         {
@@ -25,7 +26,8 @@ const data: PatchNotes = {
         "id": "14cd589f-5648-4fc7-82d1-c62da0047982",
         "name": "Subscraper",
         "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold"
+        "currentStartingTier": "Gold",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -40,7 +42,8 @@ const data: PatchNotes = {
         "id": "63e5a09e-ad7c-44ee-ba7d-d1b515ae8e9e",
         "name": "Fishing Net",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -55,7 +58,8 @@ const data: PatchNotes = {
         "id": "85f59c88-c391-4a03-8c3b-f312518e81de",
         "name": "Force Field",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Dooley"
       },
       "tooltips": [
         {
@@ -70,7 +74,8 @@ const data: PatchNotes = {
         "id": "41dea658-7e38-471a-aa20-e018734526f0",
         "name": "Salamander Pup",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Common"
       },
       "tooltips": [
         {
@@ -85,7 +90,8 @@ const data: PatchNotes = {
         "id": "2f4625b6-42e1-42e8-9f50-82edf038fac1",
         "name": "Dragon Heart",
         "previousStartingTier": "Legendary",
-        "currentStartingTier": "Legendary"
+        "currentStartingTier": "Legendary",
+        "currentHero": "Common"
       },
       "tooltips": [
         {
@@ -100,7 +106,8 @@ const data: PatchNotes = {
         "id": "c0455f22-2fb9-4ce6-a65f-e874e3d86ff0",
         "name": "Hot Sauce",
         "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold"
+        "currentStartingTier": "Gold",
+        "currentHero": "Jules"
       },
       "tooltips": [
         {
@@ -136,7 +143,8 @@ const data: PatchNotes = {
         "id": "430ed105-2d64-4f3b-afd1-73ed0db39217",
         "name": "Rowboat",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -151,7 +159,8 @@ const data: PatchNotes = {
         "id": "c6ab4982-da6c-4a1a-934d-820c45014646",
         "name": "Electric Eels",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -166,7 +175,8 @@ const data: PatchNotes = {
         "id": "20d85338-b625-4b9a-95a7-8a60805e061f",
         "name": "Anchor",
         "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold"
+        "currentStartingTier": "Gold",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -181,7 +191,8 @@ const data: PatchNotes = {
         "id": "5bd6513a-85ab-4ba6-b82d-af875da697cf",
         "name": "Remote Control",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Dooley"
       },
       "tooltips": [
         {
@@ -196,7 +207,8 @@ const data: PatchNotes = {
         "id": "acaebb2b-fe63-4de0-9d9e-949673c08a47",
         "name": "Igloo",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -211,7 +223,8 @@ const data: PatchNotes = {
         "id": "1d8d4dea-aaf9-4041-aa54-ae133f552d55",
         "name": "Blue Piggles R",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -247,7 +260,8 @@ const data: PatchNotes = {
         "id": "793b64b2-20a8-42ca-a592-54c9c3f814f8",
         "name": "Colossal Popsicle",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Common"
       },
       "tooltips": [
         {
@@ -262,7 +276,8 @@ const data: PatchNotes = {
         "id": "74d0780a-4d98-478e-b136-f1810bc88346",
         "name": "Forklift",
         "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold"
+        "currentStartingTier": "Gold",
+        "currentHero": "Dooley"
       },
       "tooltips": [
         {
@@ -277,7 +292,8 @@ const data: PatchNotes = {
         "id": "0022c409-c839-41e8-8022-65a407457dfe",
         "name": "Eagle Talisman",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Common"
       },
       "enchantments": {
         "added": [],
@@ -306,7 +322,8 @@ const data: PatchNotes = {
         "id": "a3d3bf9c-5b26-405d-881d-c9aa6283f142",
         "name": "Marble Scalemail",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Common"
       },
       "tooltips": [
         {
@@ -321,7 +338,8 @@ const data: PatchNotes = {
         "id": "b2681448-9dec-47c7-bb4f-58c51830735d",
         "name": "Atlatl",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -341,7 +359,8 @@ const data: PatchNotes = {
         "id": "7bff4c56-752c-47f3-89d0-e85aa917319f",
         "name": "Laser Pistol",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Dooley"
       },
       "tooltips": [
         {
@@ -356,7 +375,8 @@ const data: PatchNotes = {
         "id": "39f47d29-2ef3-4057-bb60-33acd3dd12a2",
         "name": "Cosmic Amulet",
         "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold"
+        "currentStartingTier": "Gold",
+        "currentHero": "Common"
       },
       "tooltips": [
         {
@@ -371,7 +391,8 @@ const data: PatchNotes = {
         "id": "899bc2a7-eec8-42e5-9c99-49b592617114",
         "name": "Harpoon",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -386,7 +407,8 @@ const data: PatchNotes = {
         "id": "a541c31d-7b4b-45f6-bceb-c9971f8b06b5",
         "name": "Cooling Fan",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Dooley"
       },
       "tooltips": [
         {
@@ -401,7 +423,8 @@ const data: PatchNotes = {
         "id": "c9930f2d-507e-4187-8889-b55bbd88ea18",
         "name": "Robe",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -416,7 +439,8 @@ const data: PatchNotes = {
         "id": "2e10cce3-b242-411b-a35f-0882341e71a7",
         "name": "Tesla Coil",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Dooley"
       },
       "tooltips": [
         {
@@ -431,7 +455,8 @@ const data: PatchNotes = {
         "id": "1312cf29-3dbb-446f-88b2-0d4999e68d78",
         "name": "Pearl",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -446,7 +471,8 @@ const data: PatchNotes = {
         "id": "720765c7-c0c5-4059-b3b4-53758f61338f",
         "name": "Thurible",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Mak"
       },
       "tooltips": [
         {
@@ -466,7 +492,8 @@ const data: PatchNotes = {
         "id": "a35ea0aa-ff0f-4366-b3dd-561cae7ed725",
         "name": "Plasma Grenade",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Dooley"
       },
       "tooltips": [
         {
@@ -481,7 +508,8 @@ const data: PatchNotes = {
         "id": "1b955b8d-0ea6-4437-935c-d588be5898c1",
         "name": "Cutlass",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -496,7 +524,8 @@ const data: PatchNotes = {
         "id": "7da204dd-87ed-45cb-b62b-61904b41baa4",
         "name": "Crystal Bonsai",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -511,7 +540,8 @@ const data: PatchNotes = {
         "id": "189c31f3-1641-4e05-bf78-800e71ffc0e7",
         "name": "Multitool",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Stelle"
       },
       "tooltips": [
         {
@@ -526,7 +556,8 @@ const data: PatchNotes = {
         "id": "fea7450f-bc68-4bf9-8d34-99acd9399cbe",
         "name": "Chronobarrier",
         "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold"
+        "currentStartingTier": "Gold",
+        "currentHero": "Dooley"
       },
       "tooltips": [
         {
@@ -541,7 +572,8 @@ const data: PatchNotes = {
         "id": "88e65c34-6865-4222-8eec-c18d48b2aa8d",
         "name": "Seaweed",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -556,7 +588,8 @@ const data: PatchNotes = {
         "id": "18100c8e-24db-4568-bd8c-4c8914557e11",
         "name": "Propane Tank",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Stelle"
       },
       "tooltips": [
         {
@@ -571,7 +604,8 @@ const data: PatchNotes = {
         "id": "9d289951-bda7-4f74-a5cf-dbe350c0cae5",
         "name": "Lumboars",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -586,7 +620,8 @@ const data: PatchNotes = {
         "id": "9ede03ef-5257-4a77-a725-5c4713662208",
         "name": "Dock Lines",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -601,7 +636,8 @@ const data: PatchNotes = {
         "id": "347a3f68-b4bc-49c4-856d-534b14b47459",
         "name": "Tommoo Gun",
         "previousStartingTier": "Diamond",
-        "currentStartingTier": "Diamond"
+        "currentStartingTier": "Diamond",
+        "currentHero": "Common"
       },
       "tooltips": [
         {
@@ -616,7 +652,8 @@ const data: PatchNotes = {
         "id": "6965d291-610d-46b7-a10d-83578b0e1981",
         "name": "Dog",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -631,7 +668,8 @@ const data: PatchNotes = {
         "id": "627ce721-2f70-454d-9aa2-5895ece3e6ee",
         "name": "Dam",
         "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold"
+        "currentStartingTier": "Gold",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -646,7 +684,8 @@ const data: PatchNotes = {
         "id": "6aa8be90-55f4-4fec-bd92-811e175657a1",
         "name": "Keychain",
         "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold"
+        "currentStartingTier": "Gold",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -661,7 +700,8 @@ const data: PatchNotes = {
         "id": "44c8a733-c1ae-4815-88b8-070aaa45037c",
         "name": "Life Preserver",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -676,7 +716,8 @@ const data: PatchNotes = {
         "id": "26ddca65-5309-4600-88f7-1eb5ffbb5788",
         "name": "Amber",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Mak"
       },
       "tooltips": [
         {
@@ -691,7 +732,8 @@ const data: PatchNotes = {
         "id": "4cf73614-52fd-4c59-8002-bbff087951ba",
         "name": "Toolbox",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Stelle"
       },
       "tooltips": [
         {
@@ -706,7 +748,8 @@ const data: PatchNotes = {
         "id": "dcd24486-3e93-4428-a414-caeba6720237",
         "name": "Pepper Spray",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -721,7 +764,8 @@ const data: PatchNotes = {
         "id": "c39f3c39-77d9-49ee-9850-400e7d5fe484",
         "name": "Kinetic Cannon",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Dooley"
       },
       "tooltips": [
         {
@@ -736,7 +780,8 @@ const data: PatchNotes = {
         "id": "9b499211-2c75-4781-a0e2-a0dab7d5dc5a",
         "name": "Candy Mail",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Common"
       },
       "tooltips": [
         {
@@ -751,7 +796,8 @@ const data: PatchNotes = {
         "id": "a490a838-37ed-4812-88fa-9e9a88d2eb8d",
         "name": "Haladie",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -766,7 +812,8 @@ const data: PatchNotes = {
         "id": "8863af7b-4b2d-4456-81d8-e1d9f0dce4a9",
         "name": "Super Syrup",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Common"
       },
       "tooltips": [
         {
@@ -781,7 +828,8 @@ const data: PatchNotes = {
         "id": "7f706346-b364-4791-a104-ed6fe03e87e1",
         "name": "Broken Shackles",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Common"
       },
       "tooltips": [
         {
@@ -796,7 +844,8 @@ const data: PatchNotes = {
         "id": "f2b5c675-6dc3-4c92-89b6-5d6da1e99006",
         "name": "Dooley's Scarf",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Dooley"
       },
       "tooltips": [
         {
@@ -811,7 +860,8 @@ const data: PatchNotes = {
         "id": "3de8a2de-9ae9-4e68-ac2a-0987a7fa8717",
         "name": "Race Carl",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Dooley"
       },
       "tooltips": [
         {
@@ -826,7 +876,8 @@ const data: PatchNotes = {
         "id": "893f5fec-30ed-4a1e-b896-5b086d952da4",
         "name": "Grindstone",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -841,7 +892,8 @@ const data: PatchNotes = {
         "id": "3866978f-da19-45a8-9f28-d03b6d3aafc4",
         "name": "Hydraulic Squeezer",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Stelle"
       },
       "tooltips": [
         {
@@ -856,7 +908,8 @@ const data: PatchNotes = {
         "id": "8ec1c3f9-6220-431b-b3b0-52b3be2e20f5",
         "name": "Spiky Shield",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -871,7 +924,8 @@ const data: PatchNotes = {
         "id": "e6451368-8fdf-48ae-8369-cb09cca48749",
         "name": "Railgun",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Dooley"
       },
       "tooltips": [
         {
@@ -886,7 +940,8 @@ const data: PatchNotes = {
         "id": "694a08fe-e8ff-4a45-9693-4c68f11a1f8b",
         "name": "Catalyst",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Mak"
       },
       "tags": {
         "added": [
@@ -900,7 +955,8 @@ const data: PatchNotes = {
         "id": "08630fca-24b9-4d9b-9dbf-7da743a09dfa",
         "name": "Welding Helmet",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Dooley"
       },
       "tooltips": [
         {
@@ -915,7 +971,8 @@ const data: PatchNotes = {
         "id": "a05d23cb-af36-42fa-aab1-568aba7f30c6",
         "name": "Abacus",
         "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold"
+        "currentStartingTier": "Gold",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -930,7 +987,8 @@ const data: PatchNotes = {
         "id": "a8664dac-7a88-4af0-990e-afe7217e123f",
         "name": "Ice Pick",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -945,7 +1003,8 @@ const data: PatchNotes = {
         "id": "43190b98-4f7f-4b2e-b92e-32b07b7fc2e1",
         "name": "Fixer Upper",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -960,7 +1019,8 @@ const data: PatchNotes = {
         "id": "49895243-8b5d-407f-9c8c-efdd05b3a34a",
         "name": "Money Tree",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -975,7 +1035,8 @@ const data: PatchNotes = {
         "id": "6ada601b-88a5-4eaf-8813-805bd51c7f9b",
         "name": "Regal Blade",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -990,7 +1051,8 @@ const data: PatchNotes = {
         "id": "012658f4-b289-4f10-917c-a9a1f3f9ca03",
         "name": "Ice Cream Truck",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -1005,7 +1067,8 @@ const data: PatchNotes = {
         "id": "530b642b-4a31-4cc4-a7ae-ea22d607ad4d",
         "name": "Landscraper",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -1020,7 +1083,8 @@ const data: PatchNotes = {
         "id": "d903dda8-9c30-4325-a727-c885ad972025",
         "name": "Crook",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -1035,7 +1099,8 @@ const data: PatchNotes = {
         "id": "9a7d5711-930a-4815-86cc-4e357680730c",
         "name": "Lion Cane",
         "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold"
+        "currentStartingTier": "Gold",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -1050,7 +1115,8 @@ const data: PatchNotes = {
         "id": "c926fac8-f9ba-4430-a01a-a71a32c501c7",
         "name": "ATM",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -1065,7 +1131,8 @@ const data: PatchNotes = {
         "id": "2fdde51e-5bf5-4136-b86f-3f83053cbf25",
         "name": "Vineyard",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -1080,7 +1147,8 @@ const data: PatchNotes = {
         "id": "01f6e150-ba23-429c-a43b-2508f63fc798",
         "name": "Myrrh",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Mak"
       },
       "tags": {
         "added": [
@@ -1101,7 +1169,8 @@ const data: PatchNotes = {
         "id": "b23c5988-7091-4b77-a7fb-134c0d0a3285",
         "name": "Honing Steel",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -1116,7 +1185,8 @@ const data: PatchNotes = {
         "id": "357d7a25-aae0-4d4f-9360-4ed1cc107962",
         "name": "Welding Torch",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Dooley"
       },
       "tooltips": [
         {
@@ -1131,7 +1201,8 @@ const data: PatchNotes = {
         "id": "5a4c4c98-d41e-43f8-aa39-a74847e2ff3c",
         "name": "Ledger",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Pygmalien"
       },
       "name": {
         "oldValue": "Deed",
@@ -1181,7 +1252,8 @@ const data: PatchNotes = {
         "id": "0c501dff-aa3a-4091-9c1e-2df43faef2e1",
         "name": "Tea Set",
         "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold"
+        "currentStartingTier": "Gold",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -1196,7 +1268,8 @@ const data: PatchNotes = {
         "id": "1fbbefea-2da0-46a5-b60d-dad9478ade86",
         "name": "Ice 9000",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Dooley"
       },
       "tooltips": [
         {
@@ -1211,7 +1284,8 @@ const data: PatchNotes = {
         "id": "aff2d8f4-528a-4229-8175-8901fcadcb70",
         "name": "Silk Scarf",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -1226,7 +1300,8 @@ const data: PatchNotes = {
         "id": "c74239b9-563c-4672-b664-9c9f22329f19",
         "name": "Cannon",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -1241,7 +1316,8 @@ const data: PatchNotes = {
         "id": "a5f3616b-ad8c-434a-89d0-311698061bd4",
         "name": "Isochoric Freezer",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Dooley"
       },
       "startingTier": {
         "oldValue": "Bronze",
@@ -1265,7 +1341,8 @@ const data: PatchNotes = {
         "id": "84650135-9f2d-4ee6-b1e5-a011a256ce0d",
         "name": "Angry Balloon Bot",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Dooley"
       },
       "tooltips": [
         {
@@ -1280,7 +1357,8 @@ const data: PatchNotes = {
         "id": "8a0aad5c-caff-4963-b8e9-861bc5ace1ce",
         "name": "Wand",
         "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold"
+        "currentStartingTier": "Gold",
+        "currentHero": "Common"
       },
       "tooltips": [
         {
@@ -1295,7 +1373,8 @@ const data: PatchNotes = {
         "id": "0bf49a3b-e610-4f2b-8420-1a8a7d48e70a",
         "name": "Nightshade",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Mak"
       },
       "tags": {
         "added": [
@@ -1316,7 +1395,8 @@ const data: PatchNotes = {
         "id": "e574a4ba-f984-446c-ae5b-75d75cd4b857",
         "name": "Tazidian Dagger",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Mak"
       },
       "hiddenTags": {
         "added": [
@@ -1342,7 +1422,8 @@ const data: PatchNotes = {
         "id": "ff06b63a-15ee-49be-80b1-5fb52b4e1616",
         "name": "Windmill",
         "previousStartingTier": "Diamond",
-        "currentStartingTier": "Diamond"
+        "currentStartingTier": "Diamond",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -1357,7 +1438,8 @@ const data: PatchNotes = {
         "id": "292115b4-a145-476e-b3a7-0fe199b5c1af",
         "name": "Dragon Wing",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Common"
       },
       "tooltips": [
         {
@@ -1372,7 +1454,8 @@ const data: PatchNotes = {
         "id": "223bc3f1-8dc6-429b-8c17-af64b24836ec",
         "name": "Sirens",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Stelle"
       },
       "tooltips": [
         {
@@ -1387,7 +1470,8 @@ const data: PatchNotes = {
         "id": "840b6bc5-4786-40bc-b864-cc5c2b78641a",
         "name": "Piranha",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -1402,7 +1486,8 @@ const data: PatchNotes = {
         "id": "7cbc8056-482b-4ccf-887a-ddb2702c856c",
         "name": "Fang",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Common"
       },
       "tooltips": [
         {
@@ -1422,7 +1507,8 @@ const data: PatchNotes = {
         "id": "405245d8-b81d-4015-8ed9-70e80f5eb980",
         "name": "Antimatter Chamber",
         "previousStartingTier": "Diamond",
-        "currentStartingTier": "Diamond"
+        "currentStartingTier": "Diamond",
+        "currentHero": "Dooley"
       },
       "tooltips": [
         {
@@ -1437,7 +1523,8 @@ const data: PatchNotes = {
         "id": "fc2f0122-129b-41e8-942e-a6a10a1c5962",
         "name": "Weakpoint Detector",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Dooley"
       },
       "tooltips": [
         {
@@ -1452,7 +1539,8 @@ const data: PatchNotes = {
         "id": "28db3caa-7727-4d1c-9758-df42975e4811",
         "name": "Frost Potion",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Mak"
       },
       "tooltips": [
         {
@@ -1467,7 +1555,8 @@ const data: PatchNotes = {
         "id": "9bdc7dad-5016-4743-9b44-1e20b03a1961",
         "name": "Neural Toxin",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Common"
       },
       "enchantments": {
         "added": [],
@@ -1496,7 +1585,8 @@ const data: PatchNotes = {
         "id": "865a673a-beae-4f5c-b04a-dd3fd026bc6d",
         "name": "Flagship",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -1511,7 +1601,8 @@ const data: PatchNotes = {
         "id": "2fcdf96f-e1c4-45cd-8efd-0b8352267483",
         "name": "Grenade",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -1526,7 +1617,8 @@ const data: PatchNotes = {
         "id": "f16f5464-02f0-4b00-9f7b-d7e7b65a1e80",
         "name": "Turtle Shell",
         "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold"
+        "currentStartingTier": "Gold",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -1541,7 +1633,8 @@ const data: PatchNotes = {
         "id": "3890374d-4952-471d-b550-e230d0ce5343",
         "name": "Bluenanas",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Common"
       },
       "tooltips": [
         {
@@ -1556,7 +1649,8 @@ const data: PatchNotes = {
         "id": "2a1ae50b-6d0d-48a8-9f68-b804e8793030",
         "name": "Rocket Launcher",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Dooley"
       },
       "tooltips": [
         {
@@ -1571,7 +1665,8 @@ const data: PatchNotes = {
         "id": "91766035-9d5c-49df-b6b1-25ff7328af5b",
         "name": "Pufferfish",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -1586,7 +1681,8 @@ const data: PatchNotes = {
         "id": "096e4b73-803c-4405-9710-db71b20fb183",
         "name": "Ballista",
         "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold"
+        "currentStartingTier": "Gold",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -1601,7 +1697,8 @@ const data: PatchNotes = {
         "id": "c0eb01d3-5f8e-4271-8045-ec283a47bcaa",
         "name": "Copper Ed",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Dooley"
       },
       "tooltips": [
         {
@@ -1616,7 +1713,8 @@ const data: PatchNotes = {
         "id": "5aa3022a-2e75-46a8-9cfb-983a97139d05",
         "name": "Necronomicon",
         "previousStartingTier": "Legendary",
-        "currentStartingTier": "Legendary"
+        "currentStartingTier": "Legendary",
+        "currentHero": "Common"
       },
       "tooltips": [
         {
@@ -1631,7 +1729,8 @@ const data: PatchNotes = {
         "id": "d8e476dd-8184-4cb5-8cca-df1cb66c4305",
         "name": "Yellow Piggles L",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -1667,7 +1766,8 @@ const data: PatchNotes = {
         "id": "53b62ecb-bcbc-4a86-bd6f-027467970109",
         "name": "Frozen Bludgeon",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Common"
       },
       "tooltips": [
         {
@@ -1682,7 +1782,8 @@ const data: PatchNotes = {
         "id": "6870c295-6a4d-4175-b378-c961df9933de",
         "name": "Captain's Wheel",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -1697,7 +1798,8 @@ const data: PatchNotes = {
         "id": "894df8d8-e6a5-4310-919e-7a6d85fc7e49",
         "name": "Bomb Squad",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Dooley"
       },
       "tooltips": [
         {
@@ -1712,7 +1814,8 @@ const data: PatchNotes = {
         "id": "0966f887-5aaf-44a5-90fa-ecb194270513",
         "name": "Duct Tape",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Common"
       },
       "tooltips": [
         {
@@ -1727,7 +1830,8 @@ const data: PatchNotes = {
         "id": "b4ccf465-fbf6-4fd4-b4ed-515594ed8722",
         "name": "Jellyfish",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -1742,7 +1846,8 @@ const data: PatchNotes = {
         "id": "3e97f309-24f2-4850-ab35-6eb6c1fe832f",
         "name": "Hakurvian Launcher",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Common"
       },
       "tooltips": [
         {
@@ -1757,7 +1862,8 @@ const data: PatchNotes = {
         "id": "c553a41a-1e8a-48c5-8b04-df60451b7795",
         "name": "Emerald",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Mak"
       },
       "tooltips": [
         {
@@ -1772,7 +1878,8 @@ const data: PatchNotes = {
         "id": "b20bdd25-921e-490d-a28e-599ac70d15f7",
         "name": "Textiles",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -1787,7 +1894,8 @@ const data: PatchNotes = {
         "id": "3ce7312c-aa95-4711-9a2b-827609a380b4",
         "name": "Satchel",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Mak"
       },
       "tooltips": [
         {
@@ -1914,7 +2022,8 @@ const data: PatchNotes = {
         "id": "f6f7b04f-9e4c-4107-af98-5288e8c568fd",
         "name": "Noxious Potion",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Mak"
       },
       "tooltips": [
         {
@@ -1929,7 +2038,8 @@ const data: PatchNotes = {
         "id": "82d41afc-d1a9-41ee-a03d-fd9305bef8b5",
         "name": "Octopus",
         "previousStartingTier": "Legendary",
-        "currentStartingTier": "Legendary"
+        "currentStartingTier": "Legendary",
+        "currentHero": "Common"
       },
       "tooltips": [
         {
@@ -1944,7 +2054,8 @@ const data: PatchNotes = {
         "id": "c264f900-4482-4f8c-b99d-22a5a529fb2a",
         "name": "Cannonade",
         "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold"
+        "currentStartingTier": "Gold",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -1959,7 +2070,8 @@ const data: PatchNotes = {
         "id": "59a494e4-66b2-4412-8934-dcf7d19585bf",
         "name": "Diana-Saur",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Dooley"
       },
       "tooltips": [
         {
@@ -1974,7 +2086,8 @@ const data: PatchNotes = {
         "id": "edd857da-ac11-4640-bc1a-217ef8385f72",
         "name": "Sharkclaws",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -1989,7 +2102,8 @@ const data: PatchNotes = {
         "id": "2abed747-432d-4307-98ce-0a0ec244d904",
         "name": "Apropos Chapeau",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -2004,7 +2118,8 @@ const data: PatchNotes = {
         "id": "cf3a7956-f400-42e1-bae1-d3678d76fd01",
         "name": "Fire Potion",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Mak"
       },
       "tooltips": [
         {
@@ -2019,7 +2134,8 @@ const data: PatchNotes = {
         "id": "bf90b501-0d87-49ae-a82a-5941db70179c",
         "name": "Weather Machine",
         "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold"
+        "currentStartingTier": "Gold",
+        "currentHero": "Stelle"
       },
       "tooltips": [
         {
@@ -2034,7 +2150,8 @@ const data: PatchNotes = {
         "id": "d6819596-2601-4757-8b72-2d708971023d",
         "name": "Switchblade",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -2049,7 +2166,8 @@ const data: PatchNotes = {
         "id": "529a7e95-b350-4fd6-96fd-fef80d4c1462",
         "name": "Old Sword",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Common"
       },
       "tooltips": [
         {
@@ -2064,7 +2182,8 @@ const data: PatchNotes = {
         "id": "cfc3db0f-c8f2-4acf-bf9b-80e170ca3120",
         "name": "Combat Core",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Dooley"
       },
       "tooltips": [
         {
@@ -2079,7 +2198,8 @@ const data: PatchNotes = {
         "id": "98f9fc74-145f-4d13-85bf-3229b9257aa0",
         "name": "Plasma Rifle",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Dooley"
       },
       "tooltips": [
         {
@@ -2094,7 +2214,8 @@ const data: PatchNotes = {
         "id": "b9d4df16-0876-45ee-a35e-700d7b68cb6f",
         "name": "Fuel Rod",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Dooley"
       },
       "tooltips": [
         {
@@ -2109,7 +2230,8 @@ const data: PatchNotes = {
         "id": "d4586506-d4d6-45d5-866b-796203f8d9d3",
         "name": "Yellow Piggles X",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -2145,7 +2267,8 @@ const data: PatchNotes = {
         "id": "17b00db1-57cd-40f1-ac4a-302915939b97",
         "name": "Port",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -2181,7 +2304,8 @@ const data: PatchNotes = {
         "id": "fe1a40e3-cedc-4a7f-83f0-998286f71725",
         "name": "Booby Trap",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -2196,7 +2320,8 @@ const data: PatchNotes = {
         "id": "e7cc828b-4a2b-4207-9a6a-c955553c632d",
         "name": "Beta Ray",
         "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold"
+        "currentStartingTier": "Gold",
+        "currentHero": "Dooley"
       },
       "tooltips": [
         {
@@ -2211,7 +2336,8 @@ const data: PatchNotes = {
         "id": "8ff7ebb6-a783-403a-ae29-7e89d0c90040",
         "name": "Curry",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Jules"
       },
       "tooltips": [
         {
@@ -2226,7 +2352,8 @@ const data: PatchNotes = {
         "id": "da049bef-7176-4226-b078-dac37a503835",
         "name": "Fossilized Femur",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Mak"
       },
       "tooltips": [
         {
@@ -2241,7 +2368,8 @@ const data: PatchNotes = {
         "id": "54040bca-14e5-4f6d-bfa8-b67658adda0b",
         "name": "Energy Potion",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Mak"
       },
       "tooltips": [
         {
@@ -2256,7 +2384,8 @@ const data: PatchNotes = {
         "id": "a7ceeecc-d802-4bbf-9521-afe89db4af45",
         "name": "Crane",
         "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold"
+        "currentStartingTier": "Gold",
+        "currentHero": "Dooley"
       },
       "tooltips": [
         {
@@ -2271,7 +2400,8 @@ const data: PatchNotes = {
         "id": "36211e0c-1806-4234-b661-3c05e2625a0a",
         "name": "Lighthouse",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -2286,7 +2416,8 @@ const data: PatchNotes = {
         "id": "9ad15f24-4def-4d82-8545-d73794cfbaf2",
         "name": "Coconut",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Common"
       },
       "tags": {
         "added": [
@@ -2300,7 +2431,8 @@ const data: PatchNotes = {
         "id": "2a7c377e-5ab7-4e27-bd03-ecaa29b69131",
         "name": "Javelin",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -2315,7 +2447,8 @@ const data: PatchNotes = {
         "id": "40c54925-3b1b-475d-9d68-6b668fd023fe",
         "name": "Temporary Shelter",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Common"
       },
       "tooltips": [
         {
@@ -2330,7 +2463,8 @@ const data: PatchNotes = {
         "id": "bdb95fa6-1607-4fd6-a78b-063f826df717",
         "name": "Coral",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -2345,7 +2479,8 @@ const data: PatchNotes = {
         "id": "d50bb808-14f8-4554-950d-d0630899ba85",
         "name": "Hacksaw",
         "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold"
+        "currentStartingTier": "Gold",
+        "currentHero": "Dooley"
       },
       "tooltips": [
         {
@@ -2360,7 +2495,8 @@ const data: PatchNotes = {
         "id": "a0345f93-0c0a-44fa-a7e4-2135acb16bcc",
         "name": "Runic Great Axe",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Mak"
       },
       "tooltips": [
         {
@@ -2375,7 +2511,8 @@ const data: PatchNotes = {
         "id": "60a1f7ce-4685-4f4c-86f2-5e0f23b60da0",
         "name": "Repeater",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -2390,7 +2527,8 @@ const data: PatchNotes = {
         "id": "4bb254dc-4b02-4c4b-8198-a310bdb122e4",
         "name": "Icebreaker",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Common"
       },
       "tooltips": [
         {
@@ -2405,7 +2543,8 @@ const data: PatchNotes = {
         "id": "a99be8d9-006d-4c3d-8f79-cf3a8ea65bbd",
         "name": "Mech-Moles",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Dooley"
       },
       "tooltips": [
         {
@@ -2420,7 +2559,8 @@ const data: PatchNotes = {
         "id": "7e2634eb-9489-4462-8fe4-1c5b8c07adc2",
         "name": "Sunlight Spear",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Mak"
       },
       "tooltips": [
         {
@@ -2435,7 +2575,8 @@ const data: PatchNotes = {
         "id": "42f78ed2-0141-47f3-9bcd-71b433b1273b",
         "name": "Ambergris",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -2450,7 +2591,8 @@ const data: PatchNotes = {
         "id": "8eb91c44-0e07-4e89-8cad-dfe99b8ef443",
         "name": "Red Button",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Dooley"
       },
       "tooltips": [
         {
@@ -2465,7 +2607,8 @@ const data: PatchNotes = {
         "id": "4b823c6b-3e35-47a2-9b65-177e911aca1a",
         "name": "Thrown Net",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Mak"
       },
       "tooltips": [
         {
@@ -2480,7 +2623,8 @@ const data: PatchNotes = {
         "id": "4fdc947b-3646-429e-ba4e-bb693fe44bc2",
         "name": "Shield Potion",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Mak"
       },
       "tooltips": [
         {
@@ -2500,7 +2644,8 @@ const data: PatchNotes = {
         "id": "3373c95c-6910-4414-8134-abf2ff1c90fa",
         "name": "Eye of the Colossus",
         "previousStartingTier": "Legendary",
-        "currentStartingTier": "Legendary"
+        "currentStartingTier": "Legendary",
+        "currentHero": "Common"
       },
       "tooltips": [
         {
@@ -2515,7 +2660,8 @@ const data: PatchNotes = {
         "id": "dccb72af-f46b-4a84-a0d1-918c8d285c4e",
         "name": "Flamethrower",
         "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold"
+        "currentStartingTier": "Gold",
+        "currentHero": "Dooley"
       },
       "tooltips": [
         {
@@ -2530,7 +2676,8 @@ const data: PatchNotes = {
         "id": "b02a2b57-da9c-4ad6-88ac-219b3bfec103",
         "name": "Handaxe",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -2545,7 +2692,8 @@ const data: PatchNotes = {
         "id": "ce7ff94f-29e4-4f2d-bca9-cca83eacf774",
         "name": "Blue Piggles A",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -2581,7 +2729,8 @@ const data: PatchNotes = {
         "id": "b91bfce3-8b58-44a3-8250-ca91c3100598",
         "name": "Oven Mitts",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Jules"
       },
       "tooltips": [
         {
@@ -2596,7 +2745,8 @@ const data: PatchNotes = {
         "id": "cd651487-174f-49dd-9022-c27e1fcd2f7c",
         "name": "Rune Axe",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Common"
       },
       "tooltips": [
         {
@@ -2611,7 +2761,8 @@ const data: PatchNotes = {
         "id": "f07fc136-5917-4915-a9d5-2246cb290b0d",
         "name": "Chris Army Knife",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Dooley"
       },
       "tooltips": [
         {
@@ -2626,7 +2777,8 @@ const data: PatchNotes = {
         "id": "8391a75d-56e7-4206-a16e-62dbd986925f",
         "name": "Shoe Blade",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -2641,7 +2793,8 @@ const data: PatchNotes = {
         "id": "d7cef361-2948-4b18-ad44-9c8b145d22ac",
         "name": "Beast of Burden",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Pygmalien"
       },
       "startingTier": {
         "oldValue": "Bronze",
@@ -2670,7 +2823,8 @@ const data: PatchNotes = {
         "id": "dc0a123c-61df-44c5-9281-41d0430b4123",
         "name": "Knife Set",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Jules"
       },
       "tooltips": [
         {
@@ -2685,7 +2839,8 @@ const data: PatchNotes = {
         "id": "d1788cd1-cd70-4391-a0d9-c50fc9e08d9a",
         "name": "Weather Glass",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -2700,7 +2855,8 @@ const data: PatchNotes = {
         "id": "843ddc82-9d87-4995-b81c-bf31ae45fd30",
         "name": "Bushel",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -2720,7 +2876,8 @@ const data: PatchNotes = {
         "id": "c39eed44-0e6a-4720-9d70-817b737449ec",
         "name": "Atlas Stone",
         "previousStartingTier": "Diamond",
-        "currentStartingTier": "Diamond"
+        "currentStartingTier": "Diamond",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -2735,7 +2892,8 @@ const data: PatchNotes = {
         "id": "a4b48bb6-180a-49fd-bb1c-c6beb372b6de",
         "name": "Hammock",
         "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold"
+        "currentStartingTier": "Gold",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -2750,7 +2908,8 @@ const data: PatchNotes = {
         "id": "1179ed38-2357-4718-a0c7-c30d56493d08",
         "name": "Cryosleeve",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Common"
       },
       "tooltips": [
         {
@@ -2765,7 +2924,8 @@ const data: PatchNotes = {
         "id": "0c99ece6-4aa5-40ac-a663-dc81df03a694",
         "name": "Briefcase",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -2780,7 +2940,8 @@ const data: PatchNotes = {
         "id": "97d8654e-532b-4960-8f5b-5822562d3450",
         "name": "Tiny Cutlass",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -2816,7 +2977,8 @@ const data: PatchNotes = {
         "id": "5e7abe19-0087-4bb1-a8bf-617706cc67c9",
         "name": "Musket",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -2831,7 +2993,8 @@ const data: PatchNotes = {
         "id": "844f0836-fa5f-485d-83ba-e0795dd3c937",
         "name": "Astrolabe",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -2867,7 +3030,8 @@ const data: PatchNotes = {
         "id": "6031a849-e93e-41fb-a41f-a2c4d8be8929",
         "name": "Venom",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Mak"
       },
       "tooltips": [
         {
@@ -2882,7 +3046,8 @@ const data: PatchNotes = {
         "id": "e75ea50a-e67c-47e4-a4b1-304b87b90cf9",
         "name": "IllusoRay",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -2897,7 +3062,8 @@ const data: PatchNotes = {
         "id": "ec5e8e2a-c35e-4098-bdae-63ea9f3d6fd3",
         "name": "Monocle",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -2912,7 +3078,8 @@ const data: PatchNotes = {
         "id": "95640018-a5d3-4119-8c4f-5509e161c689",
         "name": "Incense",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Mak"
       },
       "tooltips": [
         {
@@ -3014,7 +3181,8 @@ const data: PatchNotes = {
         "id": "666f4084-48cc-4558-b678-a46ba18c1bf2",
         "name": "Soldering Gun",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Dooley"
       },
       "tooltips": [
         {
@@ -3029,7 +3197,8 @@ const data: PatchNotes = {
         "id": "8938035e-be96-4827-bd34-7258253bd942",
         "name": "Flamberge",
         "previousStartingTier": "Diamond",
-        "currentStartingTier": "Diamond"
+        "currentStartingTier": "Diamond",
+        "currentHero": "Common"
       },
       "tooltips": [
         {
@@ -3044,7 +3213,8 @@ const data: PatchNotes = {
         "id": "54c74b82-0a7d-4dab-a335-f3b0b8b2157c",
         "name": "Uwashiwali Bird",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -3059,7 +3229,8 @@ const data: PatchNotes = {
         "id": "40d8b44a-8e2f-4081-8163-043d76ddbafa",
         "name": "Spacescraper",
         "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold"
+        "currentStartingTier": "Gold",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -3074,7 +3245,8 @@ const data: PatchNotes = {
         "id": "d022cc12-8fe2-442c-af6e-165eb97ed055",
         "name": "Improvised Bludgeon",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Common"
       },
       "tooltips": [
         {
@@ -3089,7 +3261,8 @@ const data: PatchNotes = {
         "id": "8ae203cd-a429-4ade-b5e3-a612a906d71a",
         "name": "Gavel",
         "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold"
+        "currentStartingTier": "Gold",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -3104,7 +3277,8 @@ const data: PatchNotes = {
         "id": "b6cd2ee1-f44f-44a5-9652-c577800a427f",
         "name": "Hot Springs",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Common"
       },
       "tooltips": [
         {
@@ -3119,7 +3293,8 @@ const data: PatchNotes = {
         "id": "5a94a820-1b13-4164-bae9-f6abbd59eb2d",
         "name": "Dragon's Breath",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Mak"
       },
       "tooltips": [
         {
@@ -3155,7 +3330,8 @@ const data: PatchNotes = {
         "id": "63356fed-efeb-461b-a57d-e9d61c821bc8",
         "name": "Butter",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Jules"
       },
       "tooltips": [
         {
@@ -3170,7 +3346,8 @@ const data: PatchNotes = {
         "id": "23960499-a306-44f3-bab4-8c901ff37dc3",
         "name": "Pyrocarbon",
         "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold"
+        "currentStartingTier": "Gold",
+        "currentHero": "Dooley"
       },
       "tooltips": [
         {
@@ -3185,7 +3362,8 @@ const data: PatchNotes = {
         "id": "2834ede9-01e9-4b68-8f1f-70f83187c78f",
         "name": "Sharkray",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -3200,7 +3378,8 @@ const data: PatchNotes = {
         "id": "c14e76be-2dd6-4d0b-8652-04c6b46412d5",
         "name": "Model Ship",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -3215,7 +3394,8 @@ const data: PatchNotes = {
         "id": "c7435ab5-dd8b-4c78-a5a4-6b2795dacaf3",
         "name": "Chum",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -3230,7 +3410,8 @@ const data: PatchNotes = {
         "id": "64c62815-9c8a-40fa-a963-3fc09a46bbae",
         "name": "Matchbox",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -3245,7 +3426,8 @@ const data: PatchNotes = {
         "id": "0fc3f9d6-01ce-4793-8ece-b0e05ef6441e",
         "name": "Slingshot",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -3260,7 +3442,8 @@ const data: PatchNotes = {
         "id": "3c9c0a73-ea2e-4ff2-be75-fd4363f72d37",
         "name": "Infernal Greatsword",
         "previousStartingTier": "Legendary",
-        "currentStartingTier": "Legendary"
+        "currentStartingTier": "Legendary",
+        "currentHero": "Common"
       },
       "tooltips": [
         {
@@ -3275,7 +3458,8 @@ const data: PatchNotes = {
         "id": "af43730d-efaa-4a1d-adeb-bf31d536acf0",
         "name": "Boomerang",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -3290,7 +3474,8 @@ const data: PatchNotes = {
         "id": "e13d521c-b960-4072-83db-fe4af598dd57",
         "name": "Throwing Knives",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -3305,7 +3490,8 @@ const data: PatchNotes = {
         "id": "7d64073a-816f-476d-b704-e58b539b9b7a",
         "name": "Motherboard",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Dooley"
       },
       "tooltips": [
         {
@@ -3320,7 +3506,8 @@ const data: PatchNotes = {
         "id": "33c9b825-946c-45f8-a0f3-8c0f493dbc45",
         "name": "Power Sander",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Dooley"
       },
       "tooltips": [
         {
@@ -3335,7 +3522,8 @@ const data: PatchNotes = {
         "id": "cbe0436a-3573-4bbb-968b-9bb61343c2a7",
         "name": "Flail",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -3350,7 +3538,8 @@ const data: PatchNotes = {
         "id": "b89ae3b6-6383-47a3-94fe-2571d30a564a",
         "name": "Bolas",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -3365,7 +3554,8 @@ const data: PatchNotes = {
         "id": "a4cb5a88-1abb-4fb0-b4dc-a1b7eedebd64",
         "name": "Jaballian Longbow",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -3380,7 +3570,8 @@ const data: PatchNotes = {
         "id": "d8106a24-647f-40c6-8587-22f977931d76",
         "name": "Water Wheel",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -3395,7 +3586,8 @@ const data: PatchNotes = {
         "id": "349fc81f-2b3a-4d39-beaa-6a0d5105a19a",
         "name": "Hatchet",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -3410,7 +3602,8 @@ const data: PatchNotes = {
         "id": "bbf63b5c-57c3-4412-beb5-18bfec2372e6",
         "name": "Pesky Pete",
         "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold"
+        "currentStartingTier": "Gold",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -3425,7 +3618,8 @@ const data: PatchNotes = {
         "id": "cbec1d5f-096e-49d0-b736-60091fd3f9aa",
         "name": "Teddy",
         "previousStartingTier": "Legendary",
-        "currentStartingTier": "Legendary"
+        "currentStartingTier": "Legendary",
+        "currentHero": "Common"
       },
       "tooltips": [
         {
@@ -3461,7 +3655,8 @@ const data: PatchNotes = {
         "id": "11a5306d-f114-4f8d-abcc-442c3a979317",
         "name": "Robotic Factory",
         "previousStartingTier": "Diamond",
-        "currentStartingTier": "Gold"
+        "currentStartingTier": "Gold",
+        "currentHero": "Dooley"
       },
       "startingTier": {
         "oldValue": "Diamond",
@@ -3592,7 +3787,8 @@ const data: PatchNotes = {
         "id": "09132149-783d-4d5a-900c-31135bffab44",
         "name": "Bandages",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -3607,7 +3803,8 @@ const data: PatchNotes = {
         "id": "0229faa7-2eec-4746-9134-ade4f3aebe45",
         "name": "Gamma Ray",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Dooley"
       },
       "tooltips": [
         {
@@ -3622,7 +3819,8 @@ const data: PatchNotes = {
         "id": "48d24eb0-d953-409c-9602-1d3d4c4278c5",
         "name": "Red Piggles X",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -3658,7 +3856,8 @@ const data: PatchNotes = {
         "id": "ae6ddbd0-d007-482a-8d2a-d3f6a5a1b29e",
         "name": "Rivet Gun",
         "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold"
+        "currentStartingTier": "Gold",
+        "currentHero": "Stelle"
       },
       "tooltips": [
         {
@@ -3673,7 +3872,8 @@ const data: PatchNotes = {
         "id": "2e4c2528-f3e8-4743-a1c9-637012d9eb76",
         "name": "Lightbulb",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Dooley"
       },
       "tooltips": [
         {
@@ -3688,7 +3888,8 @@ const data: PatchNotes = {
         "id": "2974e199-fa53-4d40-87a6-0ec6722a4aef",
         "name": "Rainbow Potion",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Mak"
       },
       "tooltips": [
         {
@@ -3703,7 +3904,8 @@ const data: PatchNotes = {
         "id": "d619c665-1d58-46e8-828f-6e7e36a86a7d",
         "name": "Orbital Polisher",
         "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold"
+        "currentStartingTier": "Gold",
+        "currentHero": "Stelle"
       },
       "tooltips": [
         {
@@ -3718,7 +3920,8 @@ const data: PatchNotes = {
         "id": "8f61677c-aa75-4275-b8b4-3cbaca1fdcbf",
         "name": "Cash Cannon",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -3754,7 +3957,8 @@ const data: PatchNotes = {
         "id": "95ff786e-b6bf-4bad-9d5c-6b2b41e9f0c3",
         "name": "Crusher Claw",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Common"
       },
       "tooltips": [
         {
@@ -3769,7 +3973,8 @@ const data: PatchNotes = {
         "id": "4e1770dd-2a10-440c-924a-c80afbbb269a",
         "name": "Rocket Boots",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Common"
       },
       "tooltips": [
         {
@@ -3784,7 +3989,8 @@ const data: PatchNotes = {
         "id": "03b1fd16-6b0d-4847-a76f-6c586f7c5958",
         "name": "Kukri",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -3799,7 +4005,8 @@ const data: PatchNotes = {
         "id": "f8dd1239-f4a3-4bca-b975-2125906e7fcb",
         "name": "Hammer",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Stelle"
       },
       "tooltips": [
         {
@@ -3814,7 +4021,8 @@ const data: PatchNotes = {
         "id": "1afb5eef-e964-4767-b9a6-8d1a76cef645",
         "name": "Black Rose",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Mak"
       },
       "hiddenTags": {
         "added": [
@@ -3938,7 +4146,8 @@ const data: PatchNotes = {
         "id": "7fa2b9c8-f038-44f9-8143-a4f8ee7f34bf",
         "name": "Piggles",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -3953,7 +4162,8 @@ const data: PatchNotes = {
         "id": "37222f02-3767-44ef-a8ed-000c90d3330e",
         "name": "Ruby",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Mak"
       },
       "tooltips": [
         {
@@ -3968,7 +4178,8 @@ const data: PatchNotes = {
         "id": "fec7b75b-980f-4744-b1c1-19ce00b117e8",
         "name": "Claw Arm",
         "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold"
+        "currentStartingTier": "Gold",
+        "currentHero": "Dooley"
       },
       "tooltips": [
         {
@@ -3983,7 +4194,8 @@ const data: PatchNotes = {
         "id": "f43844fe-cefa-40c7-ba86-e601c3596064",
         "name": "Runic Double Bow",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Mak"
       },
       "tooltips": [
         {
@@ -3998,7 +4210,8 @@ const data: PatchNotes = {
         "id": "c5362859-48d7-4f5e-84ed-f8430b84a8ae",
         "name": "Flashbang",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Stelle"
       },
       "tooltips": [
         {
@@ -4013,7 +4226,8 @@ const data: PatchNotes = {
         "id": "b642b5dd-180e-4980-bffd-c90110fdc96f",
         "name": "Soul Ring",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Mak"
       },
       "tooltips": [
         {
@@ -4028,7 +4242,8 @@ const data: PatchNotes = {
         "id": "83fae686-a12e-4626-8574-e6141f611fbc",
         "name": "Char Cole",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Dooley"
       },
       "tooltips": [
         {
@@ -4043,7 +4258,8 @@ const data: PatchNotes = {
         "id": "2df8f38b-bb9f-4247-afe9-525067c9e29e",
         "name": "Blue Piggles L",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -4079,7 +4295,8 @@ const data: PatchNotes = {
         "id": "f7241086-8b2d-4882-80c9-a0ddb46910ad",
         "name": "Junkyard Lance",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Common"
       },
       "tooltips": [
         {
@@ -4094,7 +4311,8 @@ const data: PatchNotes = {
         "id": "e6a183ce-0ea9-4981-bbfb-95be32b93de2",
         "name": "Grapeshot",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -4109,7 +4327,8 @@ const data: PatchNotes = {
         "id": "c9f75211-7012-418d-b53f-3f5ac5959b62",
         "name": "Bill Dozer",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Dooley"
       },
       "tooltips": [
         {
@@ -4124,7 +4343,8 @@ const data: PatchNotes = {
         "id": "acfdf9cc-6a8c-43ef-8b30-14f4843b2f28",
         "name": "Security Camera",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Dooley"
       },
       "tooltips": [
         {
@@ -4139,7 +4359,8 @@ const data: PatchNotes = {
         "id": "eed2dc49-267a-4e8c-8ea6-d37dff677e8c",
         "name": "Induction Aegis",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Dooley"
       },
       "tooltips": [
         {
@@ -4154,7 +4375,8 @@ const data: PatchNotes = {
         "id": "eda51b14-8420-4da4-ba82-89513e5deaa2",
         "name": "Sea Shell",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -4169,7 +4391,8 @@ const data: PatchNotes = {
         "id": "96e51b95-eaab-40ea-9a89-381727ce2434",
         "name": "Succulents",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -4184,7 +4407,8 @@ const data: PatchNotes = {
         "id": "deaad0b0-27bc-4800-928f-0fdf443d2c2d",
         "name": "Citrus",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Common"
       },
       "tags": {
         "added": [
@@ -4198,7 +4422,8 @@ const data: PatchNotes = {
         "id": "9c21ee00-116d-4868-a215-3f9b57bc8657",
         "name": "Yellow Piggles A",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -4234,7 +4459,8 @@ const data: PatchNotes = {
         "id": "b57d9963-d241-40c9-8f9f-f9925a2da661",
         "name": "Red Piggles R",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -4270,7 +4496,8 @@ const data: PatchNotes = {
         "id": "3718910f-3b43-4c4b-8904-d1dbfce56c13",
         "name": "Athanor",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Mak"
       },
       "tooltips": [
         {
@@ -4285,7 +4512,8 @@ const data: PatchNotes = {
         "id": "367c2ad9-94b3-4f01-a130-a673922244ef",
         "name": "Cookies",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Jules"
       },
       "tooltips": [
         {
@@ -4300,7 +4528,8 @@ const data: PatchNotes = {
         "id": "8019736a-bb1e-4cbd-a3f8-2bfa9b943b6f",
         "name": "Leeches",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Mak"
       },
       "tooltips": [
         {
@@ -4315,7 +4544,8 @@ const data: PatchNotes = {
         "id": "5e17cfc3-25c0-4a74-8a33-07ee972e6f6e",
         "name": "Concealed Dagger",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -4330,7 +4560,8 @@ const data: PatchNotes = {
         "id": "6b02f653-a294-443e-8b85-2be47b6a1c12",
         "name": "Venomander",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Mak"
       },
       "tooltips": [
         {
@@ -4345,7 +4576,8 @@ const data: PatchNotes = {
         "id": "e3070870-881c-497d-879f-2d91e962e0e2",
         "name": "Fire Claw",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Mak"
       },
       "tooltips": [
         {
@@ -4360,7 +4592,8 @@ const data: PatchNotes = {
         "id": "1e9649ce-e350-4c0b-b763-5e4c7e038010",
         "name": "Earrings",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Mak"
       },
       "tooltips": [
         {
@@ -4375,7 +4608,8 @@ const data: PatchNotes = {
         "id": "ab8a9c5e-3d2a-45e6-9d65-ddd0fdfdac01",
         "name": "Hammlet",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Dooley"
       },
       "tooltips": [
         {
@@ -4390,7 +4624,8 @@ const data: PatchNotes = {
         "id": "cb766f97-21b4-43b9-af0e-c47bc7a3b4fd",
         "name": "Singularity",
         "previousStartingTier": "Legendary",
-        "currentStartingTier": "Legendary"
+        "currentStartingTier": "Legendary",
+        "currentHero": "Common"
       },
       "tooltips": [
         {
@@ -4405,7 +4640,8 @@ const data: PatchNotes = {
         "id": "d06e3d7d-24a9-4fec-a9a4-55a710484382",
         "name": "Momma-Saur",
         "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold"
+        "currentStartingTier": "Gold",
+        "currentHero": "Dooley"
       },
       "tooltips": [
         {
@@ -4420,7 +4656,8 @@ const data: PatchNotes = {
         "id": "dec20bd9-9c83-4fcb-a5d2-e71352ed78d5",
         "name": "Sunderer",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Common"
       },
       "tooltips": [
         {
@@ -4435,7 +4672,8 @@ const data: PatchNotes = {
         "id": "57842875-bc49-4ec9-af82-29c2dbed4087",
         "name": "Mortar & Pestle",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Mak"
       },
       "tooltips": [
         {
@@ -4450,7 +4688,8 @@ const data: PatchNotes = {
         "id": "1abd962d-8628-47ac-a5ad-5ae02c1afc86",
         "name": "Micro Dave",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Dooley"
       },
       "tooltips": [
         {
@@ -4465,7 +4704,8 @@ const data: PatchNotes = {
         "id": "ba6ba8f6-7076-406a-89e6-ddaa39044959",
         "name": "Lifting Gloves",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Common"
       },
       "tooltips": [
         {
@@ -4480,7 +4720,8 @@ const data: PatchNotes = {
         "id": "8bbfd341-660f-4b9f-9c95-2e40c7d05c1f",
         "name": "Gearnola Bar",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Dooley"
       },
       "tooltips": [
         {
@@ -4495,7 +4736,8 @@ const data: PatchNotes = {
         "id": "5a162b5d-4802-4f56-a30e-19b3c8ef677c",
         "name": "Stinger",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Common"
       },
       "tooltips": [
         {
@@ -4510,7 +4752,8 @@ const data: PatchNotes = {
         "id": "1ce6ea48-4049-4e66-b792-d360ae9ffedf",
         "name": "Poppy Field",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Mak"
       },
       "tooltips": [
         {
@@ -4525,7 +4768,8 @@ const data: PatchNotes = {
         "id": "c45a7c22-ae24-4246-bb6c-a83324a8546c",
         "name": "Cosmic Plumage",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Common"
       },
       "tooltips": [
         {
@@ -4540,7 +4784,8 @@ const data: PatchNotes = {
         "id": "214d9c9d-d222-4afa-b63e-ca028c859647",
         "name": "Arbalest",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -4555,7 +4800,8 @@ const data: PatchNotes = {
         "id": "a87c42a5-b21e-4179-9827-ceea46c25033",
         "name": "Marbles",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -4570,7 +4816,8 @@ const data: PatchNotes = {
         "id": "3868bcee-4463-4c34-9a9b-b1ab1fa49260",
         "name": "Yellow Piggles R",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -4606,7 +4853,8 @@ const data: PatchNotes = {
         "id": "9778f31c-87b0-4d8d-8289-50e90dd7edc5",
         "name": "Torpedo",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -4621,7 +4869,8 @@ const data: PatchNotes = {
         "id": "783cda9d-1550-42d5-9651-51883da5ad66",
         "name": "Cargo Shorts",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -4636,7 +4885,8 @@ const data: PatchNotes = {
         "id": "0abf14a3-8a87-4c87-a7a9-793a3fa3d4db",
         "name": "Pet Rock",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -4651,7 +4901,8 @@ const data: PatchNotes = {
         "id": "0b4d7632-b3b4-42ce-a5fc-3fafb8f1c409",
         "name": "Hemlock",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Mak"
       },
       "tags": {
         "added": [
@@ -4672,7 +4923,8 @@ const data: PatchNotes = {
         "id": "e041875b-2949-4c56-8e01-ac50dbb06af6",
         "name": "Jitte",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -4687,7 +4939,8 @@ const data: PatchNotes = {
         "id": "00e3a7ff-af5e-47ce-a2c0-2d4ec31ac7d7",
         "name": "Narwhal",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -4738,7 +4991,8 @@ const data: PatchNotes = {
         "id": "1dcc7604-4f84-46e9-bbd1-2456317ec0ed",
         "name": "Rifle",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -4753,7 +5007,8 @@ const data: PatchNotes = {
         "id": "0c710f33-d0fd-40c8-aa2d-34fc20f23140",
         "name": "Scythe",
         "previousStartingTier": "Legendary",
-        "currentStartingTier": "Legendary"
+        "currentStartingTier": "Legendary",
+        "currentHero": "Common"
       },
       "tooltips": [
         {
@@ -4768,7 +5023,8 @@ const data: PatchNotes = {
         "id": "b263ef6f-02a9-449b-b9c5-74ec0e6cbfc9",
         "name": "Monitor Lizard",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Dooley"
       },
       "tooltips": [
         {
@@ -4783,7 +5039,8 @@ const data: PatchNotes = {
         "id": "51696368-e409-4771-8baf-22c6da533cd8",
         "name": "Junkyard Repairbot",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Common"
       },
       "tooltips": [
         {
@@ -4798,7 +5055,8 @@ const data: PatchNotes = {
         "id": "9e5e3d9e-ad05-4340-9071-4fccecb79695",
         "name": "Butterfly Swords",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -4813,7 +5071,8 @@ const data: PatchNotes = {
         "id": "027ef534-d047-4e18-8496-d9fd4773e15d",
         "name": "Dishwasher",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Jules"
       },
       "tooltips": [
         {
@@ -4828,7 +5087,8 @@ const data: PatchNotes = {
         "id": "f1c04562-6db4-45d5-a056-a4df9d185faf",
         "name": "Salt",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Jules"
       },
       "tooltips": [
         {
@@ -4843,7 +5103,8 @@ const data: PatchNotes = {
         "id": "64e3569f-e023-49a5-ab75-f9613c338d53",
         "name": "Oinkment",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -4858,7 +5119,8 @@ const data: PatchNotes = {
         "id": "3c9fb662-4088-47f6-a927-0b064154bbbb",
         "name": "Double Barrel",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -4878,7 +5140,8 @@ const data: PatchNotes = {
         "id": "bfb765fc-764c-4e16-aa17-0e10efda4b5b",
         "name": "Nitrogen Hammer",
         "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold"
+        "currentStartingTier": "Gold",
+        "currentHero": "Dooley"
       },
       "tooltips": [
         {
@@ -4893,7 +5156,8 @@ const data: PatchNotes = {
         "id": "628cd703-f0c6-4c76-b5bd-72c8aebf5314",
         "name": "Bellelista",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Dooley"
       },
       "tooltips": [
         {
@@ -4908,7 +5172,8 @@ const data: PatchNotes = {
         "id": "3d766165-a7f8-4286-8d37-976d5e101522",
         "name": "Junkyard Catapult",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Common"
       },
       "tooltips": [
         {
@@ -4923,7 +5188,8 @@ const data: PatchNotes = {
         "id": "62595dd0-5df0-4f2a-92bb-2be97f10d3fd",
         "name": "Brick Buddy",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Dooley"
       },
       "tooltips": [
         {
@@ -4938,7 +5204,8 @@ const data: PatchNotes = {
         "id": "8ff354c3-1ffa-4251-9323-272f5e9f7312",
         "name": "Alpha Ray",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Dooley"
       },
       "tooltips": [
         {
@@ -4953,7 +5220,8 @@ const data: PatchNotes = {
         "id": "40814ac2-ee63-4482-8f3b-d2242750fbd8",
         "name": "Coral Armor",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -4968,7 +5236,8 @@ const data: PatchNotes = {
         "id": "1bdbc6f6-2690-445a-877e-90dbbd5e4658",
         "name": "Barbed Wire",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Dooley"
       },
       "tooltips": [
         {
@@ -4983,7 +5252,8 @@ const data: PatchNotes = {
         "id": "cfd94b43-c547-4dea-a977-658a388e75d4",
         "name": "Void Shield",
         "previousStartingTier": "Diamond",
-        "currentStartingTier": "Diamond"
+        "currentStartingTier": "Diamond",
+        "currentHero": "Common"
       },
       "tooltips": [
         {
@@ -4998,7 +5268,8 @@ const data: PatchNotes = {
         "id": "c1c4f8fc-548d-4ae6-bfca-1c7ea2aca212",
         "name": "Omega Ray",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Dooley"
       },
       "tooltips": [
         {
@@ -5013,7 +5284,8 @@ const data: PatchNotes = {
         "id": "65527be1-b100-4a4c-98d1-4f8975368b5b",
         "name": "Pistol Sword",
         "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold"
+        "currentStartingTier": "Gold",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -5028,7 +5300,8 @@ const data: PatchNotes = {
         "id": "2c79dcd7-3205-4d41-85e9-daecb8d1c7c5",
         "name": "Basilisk Fang",
         "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold"
+        "currentStartingTier": "Gold",
+        "currentHero": "Mak"
       },
       "tooltips": [
         {
@@ -5043,7 +5316,8 @@ const data: PatchNotes = {
         "id": "3d185981-0b60-47ce-9ed3-58be5d7b2737",
         "name": "Pyg's Gym",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -5058,7 +5332,8 @@ const data: PatchNotes = {
         "id": "7efc7f90-e89c-4d26-b881-65f7d2d3bdd2",
         "name": "Beach Ball",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -5073,7 +5348,8 @@ const data: PatchNotes = {
         "id": "c2a74791-1d79-45bd-841d-2e3f2a61da8f",
         "name": "Hogwash",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -5088,7 +5364,8 @@ const data: PatchNotes = {
         "id": "0e66c016-9a8b-4aa0-8f01-b5a5fb739da4",
         "name": "Pylon",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Dooley"
       },
       "tooltips": [
         {
@@ -5103,7 +5380,8 @@ const data: PatchNotes = {
         "id": "ad02d867-252b-45b5-9625-4480807caeff",
         "name": "Cauldron",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Mak"
       },
       "tooltips": [
         {
@@ -5118,7 +5396,8 @@ const data: PatchNotes = {
         "id": "552247e1-74f8-4414-88bb-1b868f3f296d",
         "name": "Solar Farm",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Dooley"
       },
       "tooltips": [
         {
@@ -5133,7 +5412,8 @@ const data: PatchNotes = {
         "id": "0930fbea-e3ae-45d4-a1c7-a26c5abb63aa",
         "name": "Lightning Rod",
         "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold"
+        "currentStartingTier": "Gold",
+        "currentHero": "Stelle"
       },
       "tooltips": [
         {
@@ -5148,7 +5428,8 @@ const data: PatchNotes = {
         "id": "c9dd4c7b-d2c0-491a-95b6-d1a163e9d755",
         "name": "Balloon Bot",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Dooley"
       },
       "tooltips": [
         {
@@ -5163,7 +5444,8 @@ const data: PatchNotes = {
         "id": "8124f91b-3b4f-40ae-9493-057a0be7feb9",
         "name": "Blue Piggles X",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -5199,7 +5481,8 @@ const data: PatchNotes = {
         "id": "f42936ef-6efd-478a-9ed2-fd759df65f97",
         "name": "Sleeping Potion",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Mak"
       },
       "tooltips": [
         {
@@ -5251,7 +5534,8 @@ const data: PatchNotes = {
         "id": "94e28682-a012-4dd0-8ce8-7fe180aa6127",
         "name": "Busy Bee",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Common"
       },
       "tooltips": [
         {
@@ -5287,7 +5571,8 @@ const data: PatchNotes = {
         "id": "7b731de3-3598-46f4-b61f-75b7a0065d8a",
         "name": "Ectoplasm",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Common"
       },
       "tooltips": [
         {
@@ -5302,7 +5587,8 @@ const data: PatchNotes = {
         "id": "0da76b08-b287-4b9b-b57b-305af8848a81",
         "name": "Makeshift Barricade",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Common"
       },
       "tooltips": [
         {
@@ -5317,7 +5603,8 @@ const data: PatchNotes = {
         "id": "f0608f5b-5c6a-4c71-8cc4-f8abbdd951c9",
         "name": "Uzi",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Dooley"
       },
       "tooltips": [
         {
@@ -5332,7 +5619,8 @@ const data: PatchNotes = {
         "id": "e923019b-fd40-487c-85af-edaa930095b8",
         "name": "Bunker",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Gold"
+        "currentStartingTier": "Gold",
+        "currentHero": "Dooley"
       },
       "startingTier": {
         "oldValue": "Silver",
@@ -5372,7 +5660,8 @@ const data: PatchNotes = {
         "id": "aaa7d8fc-dd1b-42b3-9ea0-3b982f2f3790",
         "name": "Arc Blaster",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Dooley"
       },
       "tooltips": [
         {
@@ -5387,7 +5676,8 @@ const data: PatchNotes = {
         "id": "616089ae-766e-4f55-b4a1-d38f6a882ef1",
         "name": "Submarine",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -5402,7 +5692,8 @@ const data: PatchNotes = {
         "id": "302d710c-335d-4fd4-af3c-34789e55acd3",
         "name": "Blow Torch",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Stelle"
       },
       "tooltips": [
         {
@@ -5417,7 +5708,8 @@ const data: PatchNotes = {
         "id": "c9c9a413-59b3-4fc8-b4ab-dcfac0a44e90",
         "name": "Ganjo",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -5432,7 +5724,8 @@ const data: PatchNotes = {
         "id": "df87dc00-f0fe-4e47-b864-ad6b4bfea81a",
         "name": "Bottled Lightning",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Mak"
       },
       "tooltips": [
         {
@@ -5447,7 +5740,8 @@ const data: PatchNotes = {
         "id": "428de0f0-bf0d-4da6-9abe-dde8f2174aa9",
         "name": "Stopwatch",
         "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold"
+        "currentStartingTier": "Gold",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -5462,7 +5756,8 @@ const data: PatchNotes = {
         "id": "764ad6f5-f9a0-4edc-8692-fa166abe2ba3",
         "name": "Nanobots",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Common"
       },
       "tooltips": [
         {
@@ -5558,7 +5853,8 @@ const data: PatchNotes = {
         "id": "0e02eed0-3d9b-4651-8ce8-a48ee1c59fdf",
         "name": "Chemsnail",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Dooley"
       },
       "tooltips": [
         {
@@ -5573,7 +5869,8 @@ const data: PatchNotes = {
         "id": "f76338d5-e09b-4319-8914-c35043d464fc",
         "name": "Nargile",
         "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold"
+        "currentStartingTier": "Gold",
+        "currentHero": "Common"
       },
       "tooltips": [
         {
@@ -5588,7 +5885,8 @@ const data: PatchNotes = {
         "id": "ea887c05-b3e9-4a3c-abc6-0181bdf6bc5a",
         "name": "Shipwreck",
         "previousStartingTier": "Diamond",
-        "currentStartingTier": "Gold"
+        "currentStartingTier": "Gold",
+        "currentHero": "Vanessa"
       },
       "startingTier": {
         "oldValue": "Diamond",
@@ -5643,7 +5941,8 @@ const data: PatchNotes = {
         "id": "447c40e6-7aec-4391-8be7-df4952815d40",
         "name": "Sapphire",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Mak"
       },
       "tooltips": [
         {
@@ -5674,7 +5973,8 @@ const data: PatchNotes = {
         "id": "e6d331a7-c0e3-4619-9eee-c7c5023969bb",
         "name": "Black Pepper",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Jules"
       },
       "tooltips": [
         {
@@ -5689,7 +5989,8 @@ const data: PatchNotes = {
         "id": "bede53aa-8d47-4d6c-b302-2e684e8c3fcf",
         "name": "Junkyard Club",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Common"
       },
       "tooltips": [
         {
@@ -5704,7 +6005,8 @@ const data: PatchNotes = {
         "id": "44710a21-395d-4f78-bdaf-e562c544ae91",
         "name": "Grappling Hook",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -5719,7 +6021,8 @@ const data: PatchNotes = {
         "id": "844efa15-de6f-4fec-a438-21904969577b",
         "name": "Red Piggles A",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -5755,7 +6058,8 @@ const data: PatchNotes = {
         "id": "f0a58209-1a26-42ac-a243-7c2fd9d6ce33",
         "name": "Black Ice",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Mak"
       },
       "tooltips": [
         {
@@ -5775,7 +6079,8 @@ const data: PatchNotes = {
         "id": "f08af933-8712-44fe-9542-338e0fec0a45",
         "name": "Ouroboros Statue",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Mak"
       },
       "tooltips": [
         {
@@ -5790,7 +6095,8 @@ const data: PatchNotes = {
         "id": "86f9a35d-73d6-456c-b56d-ddb6adc64175",
         "name": "Mortal Coil",
         "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold"
+        "currentStartingTier": "Gold",
+        "currentHero": "Common"
       },
       "tooltips": [
         {
@@ -5805,7 +6111,8 @@ const data: PatchNotes = {
         "id": "832afbee-fdb4-47e2-b4ac-0206b8955816",
         "name": "Lemonade Stand",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -5820,7 +6127,8 @@ const data: PatchNotes = {
         "id": "189575f2-cf55-44ee-a70b-362ce75c9c9e",
         "name": "Wallace",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Dooley"
       },
       "tooltips": [
         {
@@ -5835,7 +6143,8 @@ const data: PatchNotes = {
         "id": "60fc7e96-c754-40be-803b-e9237aeb920d",
         "name": "Giant Ice Club",
         "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold"
+        "currentStartingTier": "Gold",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -5855,7 +6164,8 @@ const data: PatchNotes = {
         "id": "d66bcc8c-a817-4b0c-bda1-eb13b28acb2b",
         "name": "Claws",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Common"
       },
       "tooltips": [
         {
@@ -5870,7 +6180,8 @@ const data: PatchNotes = {
         "id": "3b32361e-2ddc-47b6-bcce-0ac560cb407b",
         "name": "Dragon Tooth",
         "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold"
+        "currentStartingTier": "Gold",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -5885,7 +6196,8 @@ const data: PatchNotes = {
         "id": "fcdd6627-8a87-4c3d-8bc9-59f6742da494",
         "name": "Ramrod",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -5905,7 +6217,8 @@ const data: PatchNotes = {
         "id": "9ca6a93b-10e9-4138-abd1-0ff2e7c2c985",
         "name": "Pygmalien's Dagger",
         "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold"
+        "currentStartingTier": "Gold",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -5920,7 +6233,8 @@ const data: PatchNotes = {
         "id": "c05828f1-39e6-47aa-9041-216dfa60d83d",
         "name": "Spices",
         "previousStartingTier": "Diamond",
-        "currentStartingTier": "Diamond"
+        "currentStartingTier": "Diamond",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -5935,7 +6249,8 @@ const data: PatchNotes = {
         "id": "cb519fbf-1f2c-4dd1-ba9b-3dc031fd7cbe",
         "name": "Refractor",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Mak"
       },
       "tooltips": [
         {
@@ -5950,7 +6265,8 @@ const data: PatchNotes = {
         "id": "54f957f2-9522-486b-a7c6-bb234f74846c",
         "name": "Katana",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -5965,7 +6281,8 @@ const data: PatchNotes = {
         "id": "0d227497-f57f-44ef-98a8-15791e710fb6",
         "name": "Skillet",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Jules"
       },
       "tooltips": [
         {
@@ -5980,7 +6297,8 @@ const data: PatchNotes = {
         "id": "813e44ee-d4a8-4d94-9a78-101004c5eded",
         "name": "Cove",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -5995,7 +6313,8 @@ const data: PatchNotes = {
         "id": "fb9bc349-bc38-40f4-a67e-a9c580e1e681",
         "name": "Fort",
         "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold"
+        "currentStartingTier": "Gold",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -6010,7 +6329,8 @@ const data: PatchNotes = {
         "id": "27e2ea0b-4e39-4826-be29-9f5505d5938a",
         "name": "Wrench",
         "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold"
+        "currentStartingTier": "Gold",
+        "currentHero": "Stelle"
       },
       "tooltips": [
         {
@@ -6025,7 +6345,8 @@ const data: PatchNotes = {
         "id": "fd95b873-24a4-4af6-8b08-296f24a3576c",
         "name": "Magic Carpet",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Mak"
       },
       "tooltips": [
         {
@@ -6040,7 +6361,8 @@ const data: PatchNotes = {
         "id": "b3c06ff9-f0e1-4527-81aa-2f71d7bf6503",
         "name": "Red Piggles L",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -6076,7 +6398,8 @@ const data: PatchNotes = {
         "id": "f8b41c46-8adc-4e84-835a-831e2e3d84d1",
         "name": "Goggles",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Stelle"
       },
       "tooltips": [
         {
@@ -6091,7 +6414,8 @@ const data: PatchNotes = {
         "id": "c65da89e-3504-40e7-87a8-10defcb7f07b",
         "name": "Nesting Doll",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -6106,7 +6430,8 @@ const data: PatchNotes = {
         "id": "b325d26f-0625-406c-89d4-30e011b30b9e",
         "name": "Catfish",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -6121,7 +6446,8 @@ const data: PatchNotes = {
         "id": "1cce58b4-701c-46c0-aec7-c41f81186b61",
         "name": "Spiked Buckler",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Common"
       },
       "tooltips": [
         {
@@ -6136,7 +6462,8 @@ const data: PatchNotes = {
         "id": "b4462dd4-2a2d-412b-b532-c47bba6f93c1",
         "name": "Jewelry",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -6151,7 +6478,8 @@ const data: PatchNotes = {
         "id": "014d9c98-e823-443c-98a3-6367ab81c956",
         "name": "Trained Spider",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Common"
       },
       "tooltips": [
         {
@@ -6166,7 +6494,8 @@ const data: PatchNotes = {
         "id": "baec36c3-2c41-47fa-bd54-6f1d6b34e8d0",
         "name": "Void Ray",
         "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold"
+        "currentStartingTier": "Gold",
+        "currentHero": "Common"
       },
       "tooltips": [
         {
@@ -6181,7 +6510,8 @@ const data: PatchNotes = {
         "id": "03e4c71d-5317-4c35-a0fb-5348356edc03",
         "name": "Powder Flask",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -6196,7 +6526,8 @@ const data: PatchNotes = {
         "id": "13f852ba-1d3d-4c1a-b6db-79072e0b19d0",
         "name": "Pop Snappers",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -6211,7 +6542,8 @@ const data: PatchNotes = {
         "id": "2aab9e1b-8c8d-49d0-be45-5884731ebb08",
         "name": "Truffles",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Common"
       },
       "startingTier": {
         "oldValue": "Silver",
@@ -6435,7 +6767,8 @@ const data: PatchNotes = {
         "id": "63f124c0-f94c-4850-8522-215d2e72a815",
         "name": "Power Drill",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Dooley"
       },
       "tooltips": [
         {
@@ -6455,7 +6788,8 @@ const data: PatchNotes = {
         "id": "111a690e-0afc-41f1-adb5-c8c055b64627",
         "name": "Laser Security System",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -6470,7 +6804,8 @@ const data: PatchNotes = {
         "id": "ca45968e-c996-412b-b359-7bfc3e70e893",
         "name": "Epicurean Chocolate",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Common"
       },
       "tooltips": [
         {
@@ -6485,7 +6820,8 @@ const data: PatchNotes = {
         "id": "c53eff8b-0407-4e8c-adaf-70b2a66b3528",
         "name": "Gumball Machine",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -6500,7 +6836,8 @@ const data: PatchNotes = {
         "id": "bb1b65d5-ead6-4828-adb9-688c7e2aabb6",
         "name": "Fishing Rod",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -6515,7 +6852,8 @@ const data: PatchNotes = {
         "id": "d6a5d92f-113e-4a1e-96ec-99f04ea29992",
         "name": "Blunderbuss",
         "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold"
+        "currentStartingTier": "Gold",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -6530,7 +6868,8 @@ const data: PatchNotes = {
         "id": "da73d4b8-d857-4121-9a6f-c621546d36e3",
         "name": "Clawrence",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Dooley"
       },
       "tooltips": [
         {
@@ -6545,7 +6884,8 @@ const data: PatchNotes = {
         "id": "53e336a7-709a-46a6-84ed-bb58b9e998bb",
         "name": "Tourist Chariot",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Common"
       },
       "tooltips": [
         {
@@ -6560,7 +6900,8 @@ const data: PatchNotes = {
         "id": "d154b0ed-4fe3-4abe-a08c-fbc622a64500",
         "name": "Soul of the District",
         "previousStartingTier": "Legendary",
-        "currentStartingTier": "Legendary"
+        "currentStartingTier": "Legendary",
+        "currentHero": "Common"
       },
       "tooltips": [
         {
@@ -6575,7 +6916,8 @@ const data: PatchNotes = {
         "id": "069755d6-fa1b-4c09-a7c9-31c3338184f3",
         "name": "Pickled Peppers",
         "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold"
+        "currentStartingTier": "Gold",
+        "currentHero": "Jules"
       },
       "tooltips": [
         {
@@ -6590,7 +6932,8 @@ const data: PatchNotes = {
         "id": "35355805-5d48-4a42-bb7b-68d240d9a306",
         "name": "Blowgun",
         "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold"
+        "currentStartingTier": "Gold",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -6605,7 +6948,8 @@ const data: PatchNotes = {
         "id": "84b74f1e-0960-4c71-bb4f-d35e114250c2",
         "name": "Yo-Yo",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -6620,7 +6964,8 @@ const data: PatchNotes = {
         "id": "6076200d-dc08-47a2-a7d2-dfa2e484422a",
         "name": "Ritual Dagger",
         "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold"
+        "currentStartingTier": "Gold",
+        "currentHero": "Mak"
       },
       "hiddenTags": {
         "added": [
@@ -6646,7 +6991,8 @@ const data: PatchNotes = {
         "id": "6e576444-85ce-4922-84e1-8ad88c5b83f1",
         "name": "Gatling Gun",
         "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold"
+        "currentStartingTier": "Gold",
+        "currentHero": "Stelle"
       },
       "tooltips": [
         {
@@ -6661,7 +7007,8 @@ const data: PatchNotes = {
         "id": "2fd61ab1-d256-4d43-8691-c6f730b41c67",
         "name": "Thermal Lance",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Dooley"
       },
       "tooltips": [
         {
@@ -6676,7 +7023,8 @@ const data: PatchNotes = {
         "id": "92e7ab18-a035-43c7-a53c-965aeecbe357",
         "name": "Revolver",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -6691,7 +7039,8 @@ const data: PatchNotes = {
         "id": "1ff59248-bf6c-49e1-9c45-59989df19693",
         "name": "Dragon Whelp",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Common"
       },
       "tooltips": [
         {
@@ -6727,7 +7076,8 @@ const data: PatchNotes = {
         "id": "fc8eb8ad-f5bd-495b-a157-e813dbe748bf",
         "name": "Sniper Rifle",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -6742,7 +7092,8 @@ const data: PatchNotes = {
         "id": "ba625e9a-9c8b-4c21-bf6e-e7a6ff264019",
         "name": "Ice Cubes",
         "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold"
+        "currentStartingTier": "Gold",
+        "currentHero": "Jules"
       },
       "tooltips": [
         {
@@ -6757,7 +7108,8 @@ const data: PatchNotes = {
         "id": "20198f06-d36f-4abe-88a5-c2d6b936742c",
         "name": "Rolling Pin",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Jules"
       },
       "tooltips": [
         {
@@ -6772,7 +7124,8 @@ const data: PatchNotes = {
         "id": "af24dea0-6cc9-49dc-acec-d90313b46b72",
         "name": "Clockwork Blades",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Common"
       },
       "tooltips": [
         {
@@ -6787,7 +7140,8 @@ const data: PatchNotes = {
         "id": "46b1261c-a04c-4a35-8a9e-6763a5d85c43",
         "name": "Clamera",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Vanessa"
       },
       "tooltips": [
         {
@@ -6802,7 +7156,8 @@ const data: PatchNotes = {
         "id": "34fcf624-ccba-42a8-b4fc-837e0002a163",
         "name": "Weights",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -6817,7 +7172,8 @@ const data: PatchNotes = {
         "id": "35e2a1dd-739d-4434-95c5-2b9ce5f07a5c",
         "name": "Death Caps",
         "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold"
+        "currentStartingTier": "Gold",
+        "currentHero": "Mak"
       },
       "tags": {
         "added": [
@@ -6838,7 +7194,8 @@ const data: PatchNotes = {
         "id": "ac596c59-295e-491f-8503-172b094e9773",
         "name": "Pierre Conditioner",
         "previousStartingTier": "Diamond",
-        "currentStartingTier": "Diamond"
+        "currentStartingTier": "Diamond",
+        "currentHero": "Dooley"
       },
       "tooltips": [
         {
@@ -6853,7 +7210,8 @@ const data: PatchNotes = {
         "id": "4680e750-4ea4-421a-b486-194c805ad6a8",
         "name": "Snow Globe",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Pygmalien"
       },
       "tooltips": [
         {
@@ -6868,7 +7226,8 @@ const data: PatchNotes = {
         "id": "25545684-3fd5-4adf-abcc-0e2bb6c500c1",
         "name": "Pendulum",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Gold"
+        "currentStartingTier": "Gold",
+        "currentHero": "Mak"
       },
       "startingTier": {
         "oldValue": "Bronze",
@@ -7052,7 +7411,8 @@ const data: PatchNotes = {
         "id": "25035a36-1105-4ef9-81b0-c5bb6926415b",
         "name": "Luxury Kiuas",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Pygmalien"
       },
       "name": {
         "oldValue": null,
@@ -7235,7 +7595,8 @@ const data: PatchNotes = {
         "id": "b18e28e6-69a3-455a-8a5a-1a3170c76bb7",
         "name": "Primordial Depth Charge",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Vanessa"
       },
       "name": {
         "oldValue": null,
@@ -7415,7 +7776,8 @@ const data: PatchNotes = {
         "id": "2e0be4f0-0472-444a-a541-09f1ba464c64",
         "name": "Private Hot Springs",
         "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold"
+        "currentStartingTier": "Gold",
+        "currentHero": "Pygmalien"
       },
       "name": {
         "oldValue": null,
@@ -7598,7 +7960,8 @@ const data: PatchNotes = {
         "id": "cd06b93f-ed76-40ac-a3f5-0cbb7fcc5aac",
         "name": "Volcanic Vents",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Vanessa"
       },
       "name": {
         "oldValue": null,
@@ -7769,7 +8132,8 @@ const data: PatchNotes = {
         "id": "9b739ba9-9278-45cb-9635-9ae48ac942c7",
         "name": "Slumbering Primordial",
         "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold"
+        "currentStartingTier": "Gold",
+        "currentHero": "Vanessa"
       },
       "name": {
         "oldValue": null,
@@ -7946,7 +8310,8 @@ const data: PatchNotes = {
         "id": "02f42044-50df-4c3a-abbd-942903953b79",
         "name": "VIP Pass",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Pygmalien"
       },
       "name": {
         "oldValue": null,
@@ -8127,7 +8492,8 @@ const data: PatchNotes = {
         "id": "6546e26d-d3a2-4b57-96ca-357f4be5c375",
         "name": "Cold Room",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Pygmalien"
       },
       "name": {
         "oldValue": null,
@@ -8304,7 +8670,8 @@ const data: PatchNotes = {
         "id": "ce6769db-f9a6-44a8-b915-afec472a2ea3",
         "name": "Dive Weights",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Vanessa"
       },
       "name": {
         "oldValue": null,
@@ -8488,7 +8855,8 @@ const data: PatchNotes = {
         "id": "194572c8-39b0-4dea-92d5-2c97f8d59554",
         "name": "Steam Ladle",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Pygmalien"
       },
       "name": {
         "oldValue": null,
@@ -8660,7 +9028,8 @@ const data: PatchNotes = {
         "id": "9d31868e-1c69-4186-a3df-8ca10dc2a80f",
         "name": "Ice Luge",
         "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold"
+        "currentStartingTier": "Gold",
+        "currentHero": "Pygmalien"
       },
       "name": {
         "oldValue": null,
@@ -8836,7 +9205,8 @@ const data: PatchNotes = {
         "id": "3191df3b-7e7d-4df9-9395-6fffd4207f6d",
         "name": "Zoarcid",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Vanessa"
       },
       "name": {
         "oldValue": null,
@@ -9016,7 +9386,8 @@ const data: PatchNotes = {
         "id": "6c0af8cf-273f-43c5-afb5-ef00c87ffcc8",
         "name": "Snowmobile",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Pygmalien"
       },
       "name": {
         "oldValue": null,
@@ -9195,7 +9566,8 @@ const data: PatchNotes = {
         "id": "cdea14ac-23d0-43c2-95b3-12cedab1795a",
         "name": "Hot Stones",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Pygmalien"
       },
       "name": {
         "oldValue": null,
@@ -9365,7 +9737,8 @@ const data: PatchNotes = {
         "id": "8048bd3a-1529-4a21-872d-20da84b223a3",
         "name": "Yeti Crab",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Vanessa"
       },
       "name": {
         "oldValue": null,
@@ -9538,7 +9911,8 @@ const data: PatchNotes = {
         "id": "47057461-8cb1-46d2-982c-a7ca6df131c7",
         "name": "Submersible",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Vanessa"
       },
       "name": {
         "oldValue": null,
@@ -9718,7 +10092,8 @@ const data: PatchNotes = {
         "id": "bb101259-4d30-4d93-9d69-b99c08f17488",
         "name": "Aurora Dome",
         "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold"
+        "currentStartingTier": "Gold",
+        "currentHero": "Pygmalien"
       },
       "name": {
         "oldValue": null,
@@ -9905,7 +10280,8 @@ const data: PatchNotes = {
         "id": "fb6e6b16-d6d0-4493-ac3f-46c26afe6c51",
         "name": "Diving Helmet",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Vanessa"
       },
       "name": {
         "oldValue": null,
@@ -10077,7 +10453,8 @@ const data: PatchNotes = {
         "id": "d5110378-323c-4af3-93e5-dca3451b3ea8",
         "name": "Mantis Shrimp",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Vanessa"
       },
       "name": {
         "oldValue": null,
@@ -10262,7 +10639,8 @@ const data: PatchNotes = {
         "id": "961e974b-5472-4298-b66b-e1f74c167c26",
         "name": "Darkwater Anglerfish",
         "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze"
+        "currentStartingTier": "Bronze",
+        "currentHero": "Vanessa"
       },
       "name": {
         "oldValue": null,
@@ -10435,7 +10813,8 @@ const data: PatchNotes = {
         "id": "21c858b6-6f6e-4bc5-9e84-3722b3dd813a",
         "name": "Sauna",
         "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver"
+        "currentStartingTier": "Silver",
+        "currentHero": "Pygmalien"
       },
       "name": {
         "oldValue": null,

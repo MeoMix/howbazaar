@@ -1,5 +1,5 @@
 <script lang="ts">
-    import type { ItemPatchNote, SkillPatchNote } from "$lib/types";
+    import type { ItemPatchNote, SkillPatchNote, Hero } from "$lib/types";
     import Select from "$lib/components/Select.svelte";
     import PatchNoteCard from "$lib/components/PatchNoteCard.svelte";
     import type { PageData } from "./$types";
@@ -21,6 +21,33 @@
         })),
     );
 
+    // Group items by hero
+    const itemsByHero = $derived.by(() => {
+        const heroes: Hero[] = ["Common", "Dooley", "Jules", "Mak", "Pygmalien", "Stelle", "Vanessa"];
+        const grouped: Record<Hero, ItemPatchNote[]> = {} as Record<Hero, ItemPatchNote[]>;
+        
+        // Initialize groups
+        heroes.forEach(hero => {
+            grouped[hero] = [];
+        });
+
+        // Group items by hero
+        items.forEach(item => {
+            const hero = item.metadata.currentHero;
+
+            if (hero && hero in grouped) {
+                grouped[hero].push(item);
+            }
+        });
+
+        // Sort items within each group by name
+        Object.values(grouped).forEach(group => {
+            group.sort((a, b) => a.metadata.name.localeCompare(b.metadata.name));
+        });
+
+        return grouped;
+    });
+
     function handleVersionChange(version: string) {
         goto(`?version=${version}`, { invalidateAll: true });
     }
@@ -30,7 +57,7 @@
     class="w-full max-w-full sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl"
 >
     <div class="flex justify-between items-center my-6">
-        <h1 class="text-3xl font-bold text-gray-900 dark:text-bazaar-tan700">
+        <h1 class="text-3xl font-bold">
             Patch Notes
         </h1>
         <div class="w-48">
@@ -54,31 +81,35 @@
         </a>.
     </div>
 
-    {#if items.length > 0}
+    {#if Object.values(itemsByHero).some(group => group.length > 0)}
         <h2
-            class="text-2xl font-bold mb-6 text-gray-900 dark:text-bazaar-tan700"
+            class="text-2xl font-bold mb-6"
         >
             Items
         </h2>
-        {#each items as patch}
-            <PatchNoteCard {patch} />
+        
+        {#each Object.entries(itemsByHero) as [hero, heroItems]}
+            {#if heroItems.length > 0}
+                <div class="mb-8">
+                    <h3 class="text-xl font-semibold mb-4">
+                        {hero}
+                    </h3>
+                    {#each heroItems as patch}
+                        <PatchNoteCard {patch} />
+                    {/each}
+                </div>
+            {/if}
         {/each}
     {/if}
 
     {#if skills.length > 0}
         <h2
-            class="text-2xl font-bold mb-6 mt-8 text-gray-900 dark:text-bazaar-tan700"
+            class="text-2xl font-bold mb-6 mt-8"
         >
             Skills
         </h2>
         {#each skills as patch}
             <PatchNoteCard {patch} />
         {/each}
-    {/if}
-
-    {#if items.length === 0 && skills.length === 0}
-        <div class="text-center text-gray-500 dark:text-bazaar-tan300 py-8">
-            No changes in this patch.
-        </div>
     {/if}
 </div>

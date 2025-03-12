@@ -205,7 +205,9 @@ export type BaseMetadata = {
     currentStartingTier: TierType;
 };
 
-export type ItemMetadata = BaseMetadata;
+export type ItemMetadata = BaseMetadata & {
+    currentHero: Hero;
+};
 
 export type SkillMetadata = BaseMetadata & {
     heroes: Hero[];
