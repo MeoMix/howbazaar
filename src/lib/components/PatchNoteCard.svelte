@@ -2,6 +2,7 @@
     import UnifiedTooltip from "$lib/components/UnifiedTooltip.svelte";
     import type { TierType, TooltipChange, ItemPatchNote, SkillPatchNote } from "$lib/types";
     import { Card } from "flowbite-svelte";
+    import Divider from "$lib/components/Divider.svelte";
 
     export let patch: ItemPatchNote | SkillPatchNote;
 
@@ -243,14 +244,14 @@
             {patch.metadata.name}
         </h2>
 
-        {#each renderPatchNote(patch) as { propName, change, previousTier, currentTier }}
+        {#each renderPatchNote(patch) as { propName, change, previousTier, currentTier }, i}
+            {#if i !== 0}
+                <Divider />
+            {/if}
             <div class="mb-3">
-                <div class="grid grid-cols-[5rem_1fr] gap-2">
+                <div class="grid grid-cols-[6.5rem_1fr] gap-2">
                     <div
-                        class="text-sm text-gray-500 dark:text-bazaar-tan300 font-medium {propName ===
-                        'tooltips'
-                            ? 'self-start pt-2'
-                            : 'pt-2'}"
+                        class="text-md text-gray-500 dark:text-bazaar-tan300 font-medium self-center text-right"
                     >
                         {formatPropertyName(propName)}
                     </div>
@@ -356,6 +357,135 @@
                                         </em>
                                     {/if}
                                 </div>
+                            </div>
+                        {:else if propName === "enchantments"}
+                            <div class="space-y-4">
+                                <!-- Added/Removed Enchantments -->
+                                {#if change.removed?.length || change.added?.length}
+                                    <div class="space-y-4">
+                                        <!-- Removed Enchantments -->
+                                        {#if change.removed?.length}
+                                            {#each change.removed as enchantment}
+                                                <div class="space-y-1">
+                                                    <div class="text-sm font-medium text-gray-500 dark:text-bazaar-tan300 mb-1">
+                                                        {enchantment.type}
+                                                    </div>
+                                                    <!-- Old Value -->
+                                                    <div class="p-1 bg-red-500/15 dark:bg-red-900/15 min-h-[1.5rem] rounded">
+                                                        {#each enchantment.tooltipChanges as tooltipChange}
+                                                            {#if tooltipChange.oldValue}
+                                                                <span class="bg-[rgba(248,81,73,0.4)] px-1 rounded-sm">
+                                                                    <UnifiedTooltip
+                                                                        tooltip={tooltipChange.oldValue}
+                                                                        startingTier={previousTier}
+                                                                    />
+                                                                </span>
+                                                            {/if}
+                                                        {/each}
+                                                    </div>
+                                                    <!-- New Value -->
+                                                    <div class="p-1 bg-green-500/15 dark:bg-green-900/15 min-h-[1.5rem] rounded">
+                                                        <div class="italic text-gray-500 dark:text-bazaar-tan300">
+                                                            Removed
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            {/each}
+                                        {/if}
+
+                                        <!-- Added Enchantments -->
+                                        {#if change.added?.length}
+                                            {#each change.added as enchantment}
+                                                <div class="space-y-1">
+                                                    <div class="text-sm font-medium text-gray-500 dark:text-bazaar-tan300 mb-1">
+                                                        {enchantment.type}
+                                                    </div>
+                                                    <!-- Old Value -->
+                                                    <div class="p-1 bg-red-500/15 dark:bg-red-900/15 min-h-[1.5rem] rounded">
+                                                        <div class="italic text-gray-500 dark:text-bazaar-tan300">
+                                                            Not set
+                                                        </div>
+                                                    </div>
+                                                    <!-- New Value -->
+                                                    <div class="p-1 bg-green-500/15 dark:bg-green-900/15 min-h-[1.5rem] rounded">
+                                                        {#each enchantment.tooltipChanges as tooltipChange}
+                                                            {#if tooltipChange.newValue}
+                                                                <span class="bg-[rgba(46,160,67,0.4)] px-1 rounded-sm">
+                                                                    <UnifiedTooltip
+                                                                        tooltip={tooltipChange.newValue}
+                                                                        startingTier={currentTier}
+                                                                    />
+                                                                </span>
+                                                            {/if}
+                                                        {/each}
+                                                    </div>
+                                                </div>
+                                            {/each}
+                                        {/if}
+                                    </div>
+                                {/if}
+
+                                <!-- Modified Enchantments -->
+                                {#if change.modified?.length}
+                                    {#each change.modified as enchantment}
+                                        <div class="space-y-1">
+                                            <div class="text-sm font-medium text-gray-500 dark:text-bazaar-tan300 mb-1">
+                                                {enchantment.type}
+                                            </div>
+                                            {#if enchantment.tooltipChanges}
+                                                {@const aligned = getAlignedTooltips(enchantment.tooltipChanges)}
+                                                <div class="space-y-1">
+                                                    {#each aligned.old as tooltip, i}
+                                                        <div class="space-y-1">
+                                                            <!-- Old Value -->
+                                                            <div class="p-1 bg-red-500/15 dark:bg-red-900/15 min-h-[1.5rem] rounded">
+                                                                {#if tooltip}
+                                                                    {@const diff = getWordDiff(tooltip, aligned.new[i])}
+                                                                    <div>
+                                                                        {#each groupHighlightedWords(diff.oldWords) as group}
+                                                                            <span class={group.highlight ? "bg-[rgba(248,81,73,0.4)] px-1 rounded-sm" : ""}>
+                                                                                <UnifiedTooltip
+                                                                                    tooltip={group.text}
+                                                                                    startingTier={previousTier}
+                                                                                />
+                                                                            </span>
+                                                                            {" "}
+                                                                        {/each}
+                                                                    </div>
+                                                                {:else}
+                                                                    <div class="italic text-gray-500 dark:text-bazaar-tan300">
+                                                                        Not set
+                                                                    </div>
+                                                                {/if}
+                                                            </div>
+                                                            <!-- New Value -->
+                                                            <div class="p-1 bg-green-500/15 dark:bg-green-900/15 min-h-[1.5rem] rounded">
+                                                                {#if aligned.new[i]}
+                                                                    {@const diff = getWordDiff(tooltip, aligned.new[i])}
+                                                                    <div>
+                                                                        {#each groupHighlightedWords(diff.newWords) as group}
+                                                                            <span class={group.highlight ? "bg-[rgba(46,160,67,0.4)] px-1 rounded-sm" : ""}>
+                                                                                <UnifiedTooltip
+                                                                                    tooltip={group.text}
+                                                                                    startingTier={currentTier}
+                                                                                />
+                                                                            </span>
+                                                                            {" "}
+                                                                        {/each}
+                                                                    </div>
+                                                                {:else}
+                                                                    <div class="italic text-gray-500 dark:text-bazaar-tan300">
+                                                                        Removed
+                                                                    </div>
+                                                                {/if}
+                                                            </div>
+                                                        </div>
+                                                    {/each}
+                                                </div>
+                                            {/if}
+                                        </div>
+                                    {/each}
+                                {/if}
                             </div>
                         {:else}
                             <div class="space-y-1">
