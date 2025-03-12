@@ -8672,6 +8672,49 @@ const data: ParsedSkillCard[] = [
     "packId": "Pygmalien_Core"
   },
   {
+    "id": "05ec8652-3c5f-4cba-acd1-c3eee8e49d44",
+    "name": "Healthy Heart",
+    "startingTier": "Diamond",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": []
+      },
+      "Diamond": {
+        "tooltips": [
+          "The first time you fall below half health each fight, Heal for 30% of your Max Health and Cleanse half your Burn and Poison.[0][0]"
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "Health"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Pygmalien",
+      "Vanessa",
+      "Dooley",
+      "Jules",
+      "Stelle",
+      "Mak"
+    ],
+    "artKey": "Icon_Skill_Hearty.png",
+    "unifiedTooltips": [
+      "The first time you fall below half health each fight, Heal for 30% of your Max Health and Cleanse half your Burn and Poison.[0][0]"
+    ],
+    "remarks": [],
+    "packId": "Pygmalien_Core"
+  },
+  {
     "id": "f6883b13-0dd2-475f-92e9-760102341bda",
     "name": "Conflagration",
     "startingTier": "Gold",

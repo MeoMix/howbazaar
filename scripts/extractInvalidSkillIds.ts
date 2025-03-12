@@ -40,7 +40,9 @@ const allowedList = [
   // Counterstrike
   'c5bff6ad-5d13-4cf3-9941-98f3cf913949',
   // Small Refresh
-  '8b513e67-9c49-4fed-a7e4-335d982367ac'
+  '8b513e67-9c49-4fed-a7e4-335d982367ac',
+  // Healthy Heart (Hearty)
+  '05ec8652-3c5f-4cba-acd1-c3eee8e49d44'
 ];
 
 const disallowedList = [
