@@ -1,8 +1,5 @@
 <script lang="ts">
-    import type {
-        ItemPatchNote,
-        SkillPatchNote,
-    } from "$lib/types";
+    import type { ItemPatchNote, SkillPatchNote } from "$lib/types";
     import Select from "$lib/components/Select.svelte";
     import PatchNoteCard from "$lib/components/PatchNoteCard.svelte";
     import type { PageData } from "./$types";
@@ -29,7 +26,9 @@
     }
 </script>
 
-<div class="w-full max-w-full sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl">
+<div
+    class="w-full max-w-full sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl"
+>
     <div class="flex justify-between items-center my-6">
         <h1 class="text-3xl font-bold text-gray-900 dark:text-bazaar-tan700">
             Patch Notes
@@ -43,10 +42,16 @@
         </div>
     </div>
 
-    <div class="text-gray-600 dark:text-bazaar-tan300 mb-8 text-sm">
-        Item and Skill changes derived from game data rather than manually maintained.
-        <br />
-        Full patch notes can be found on <a href="https://playthebazaar-cdn.azureedge.net/beta/PatchNotes.html" class="text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer">The Bazaar's website</a>.
+    <div class="mb-8">
+        Item and Skill changes derived from game data to detect changes not
+        mentioned in <a
+            href="https://playthebazaar-cdn.azureedge.net/beta/PatchNotes.html"
+            class="text-blue-500 hover:underline"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            The Bazaar's official patch notes
+        </a>.
     </div>
 
     {#if items.length > 0}
