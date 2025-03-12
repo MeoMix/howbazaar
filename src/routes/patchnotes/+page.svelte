@@ -43,6 +43,12 @@
         </div>
     </div>
 
+    <div class="text-gray-600 dark:text-bazaar-tan300 mb-8 text-sm">
+        Item and Skill changes derived from game data rather than manually maintained.
+        <br />
+        Full patch notes can be found on <a href="https://playthebazaar-cdn.azureedge.net/beta/PatchNotes.html" class="text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer">The Bazaar's website</a>.
+    </div>
+
     {#if items.length > 0}
         <h2
             class="text-2xl font-bold mb-6 text-gray-900 dark:text-bazaar-tan700"
