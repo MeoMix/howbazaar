@@ -66,8 +66,8 @@
                         text: tierType,
                         color: tierType.toLowerCase(),
                     },
+                    ...card.tags.map((text) => ({ text }))
                 ]}
-                secondaryBadges={card.tags.map((text) => ({ text }))}
             />
 
             <Divider />
