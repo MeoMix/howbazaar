@@ -1,5 +1,4 @@
 <script lang="ts">
-    import { onDestroy } from "svelte";
     import UnifiedTooltip from "$lib/components/UnifiedTooltip.svelte";
     import type {
         TierType,
@@ -9,34 +8,15 @@
     } from "$lib/types";
     import { Card } from "flowbite-svelte";
     import Divider from "$lib/components/Divider.svelte";
+    import CopyLinkButton from "$lib/components/CopyLinkButton.svelte";
 
-    const { patch } = $props<{
-        patch: ItemPatchNote | SkillPatchNote;
-    }>();
+    type Props =
+        | { patch: ItemPatchNote; type: "item" }
+        | { patch: SkillPatchNote; type: "skill" };
 
-    let copySuccess = $state(false);
-    let copyTimeout: ReturnType<typeof setTimeout>;
+    const { patch, type }: Props = $props();
 
-    async function copyLink() {
-        const url = new URL(window.location.href);
-        url.hash = patch.metadata.name.toLowerCase().replace(/\s+/g, '_');
-        await navigator.clipboard.writeText(url.toString());
-
-        copySuccess = true;
-
-        // Clear any existing timeout
-        if (copyTimeout) clearTimeout(copyTimeout);
-
-        // Reset after 2 seconds
-        copyTimeout = setTimeout(() => {
-            copySuccess = false;
-        }, 2000);
-    }
-
-    // Cleanup timeout on component destroy
-    onDestroy(() => {
-        if (copyTimeout) clearTimeout(copyTimeout);
-    });
+    const id = $derived(patch.metadata.name.toLowerCase().replace(/\s+/g, "_"));
 
     interface RenderedPatchNote {
         propName: string;
@@ -287,24 +267,14 @@
     padding="none"
     size="xl"
     class={`relative border text-gray-900 dark:bg-bazaar-background dark:text-bazaar-tan700 dark:border-bazaar-orange mb-3 scroll-mt-[80px]`}
-    id={patch.metadata.name.toLowerCase().replace(/\s+/g, '_')}
+    id={patch.metadata.name.toLowerCase().replace(/\s+/g, "_")}
 >
     <div class="rounded-lg p-4">
         <div class="flex items-center mb-3">
             <h2 class="text-2xl font-semibold">
                 {patch.metadata.name}
+                <CopyLinkButton {id} name={patch.metadata.name} />
             </h2>
-            <button
-                class="ml-2 text-bazaar-orange w-[1.5em] transition-all"
-                title={copySuccess ? "Link copied!" : "Copy link to this item"}
-                onclick={copyLink}
-            >
-                {#if copySuccess}
-                    ✓
-                {:else}
-                    🔗
-                {/if}
-            </button>
         </div>
 
         {#each renderPatchNote(patch) as { propName, change, previousTier, currentTier }, i}

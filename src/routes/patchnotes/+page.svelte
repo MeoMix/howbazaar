@@ -23,16 +23,27 @@
 
     // Group items by hero
     const itemsByHero = $derived.by(() => {
-        const heroes: Hero[] = ["Common", "Dooley", "Jules", "Mak", "Pygmalien", "Stelle", "Vanessa"];
-        const grouped: Record<Hero, ItemPatchNote[]> = {} as Record<Hero, ItemPatchNote[]>;
-        
+        const heroes: Hero[] = [
+            "Common",
+            "Dooley",
+            "Jules",
+            "Mak",
+            "Pygmalien",
+            "Stelle",
+            "Vanessa",
+        ];
+        const grouped: Record<Hero, ItemPatchNote[]> = {} as Record<
+            Hero,
+            ItemPatchNote[]
+        >;
+
         // Initialize groups
-        heroes.forEach(hero => {
+        heroes.forEach((hero) => {
             grouped[hero] = [];
         });
 
         // Group items by hero
-        items.forEach(item => {
+        items.forEach((item) => {
             const hero = item.metadata.currentHero;
 
             if (hero && hero in grouped) {
@@ -41,8 +52,10 @@
         });
 
         // Sort items within each group by name
-        Object.values(grouped).forEach(group => {
-            group.sort((a, b) => a.metadata.name.localeCompare(b.metadata.name));
+        Object.values(grouped).forEach((group) => {
+            group.sort((a, b) =>
+                a.metadata.name.localeCompare(b.metadata.name),
+            );
         });
 
         return grouped;
@@ -57,9 +70,7 @@
     class="w-full max-w-full sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl"
 >
     <div class="flex justify-between items-center my-6">
-        <h1 class="text-3xl font-bold">
-            Patch Notes
-        </h1>
+        <h1 class="text-3xl font-bold">Patch Notes</h1>
         <div class="w-48">
             <Select
                 selectedOption={data.currentVersion}
@@ -81,13 +92,9 @@
         </a>.
     </div>
 
-    {#if Object.values(itemsByHero).some(group => group.length > 0)}
-        <h2
-            class="text-2xl font-bold mb-6"
-        >
-            Items
-        </h2>
-        
+    {#if Object.values(itemsByHero).some((group) => group.length > 0)}
+        <h2 class="text-2xl font-bold mb-6">Items</h2>
+
         {#each Object.entries(itemsByHero) as [hero, heroItems]}
             {#if heroItems.length > 0}
                 <div class="mb-8">
@@ -95,7 +102,7 @@
                         {hero}
                     </h3>
                     {#each heroItems as patch}
-                        <PatchNoteCard {patch} />
+                        <PatchNoteCard {patch} type="item" />
                     {/each}
                 </div>
             {/if}
@@ -103,13 +110,9 @@
     {/if}
 
     {#if skills.length > 0}
-        <h2
-            class="text-2xl font-bold mb-6 mt-8"
-        >
-            Skills
-        </h2>
+        <h2 class="text-2xl font-bold mb-6 mt-8">Skills</h2>
         {#each skills as patch}
-            <PatchNoteCard {patch} />
+            <PatchNoteCard {patch} type="skill" />
         {/each}
     {/if}
 </div>

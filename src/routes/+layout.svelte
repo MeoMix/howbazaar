@@ -2,7 +2,6 @@
     import "../app.css";
 
     import {
-        Toast,
         DarkMode,
         Navbar,
         NavBrand,
@@ -14,27 +13,15 @@
         FooterLink,
         Badge,
     } from "flowbite-svelte";
-    import CheckCircleOutline from "flowbite-svelte-icons/CheckCircleOutline.svelte";
     import DiscordSolid from "flowbite-svelte-icons/DiscordSolid.svelte";
     import ClipboardOutline from "flowbite-svelte-icons/ClipboardOutline.svelte";
     import { onDestroy, onMount, tick, type Snippet } from "svelte";
-    import { fly } from "svelte/transition";
     import { page } from "$app/stores";
-    import { clipboardState } from "$lib/stores/clipboard";
     import { PUBLIC_CDN_URL } from "$env/static/public";
     import { DollarOutline } from "flowbite-svelte-icons";
     import { adsStore } from "$lib/stores/adsStore";
     import type { Unsubscriber } from "svelte/store";
     import UpdatedBadge from "$lib/components/UpdatedBadge.svelte";
-
-    let toastStatus = $state(false);
-    let toastClearTimeout: ReturnType<typeof setTimeout>;
-    clipboardState.subscribe((value) => {
-        clearTimeout(toastClearTimeout);
-        toastStatus = value !== "";
-
-        toastClearTimeout = setTimeout(() => (toastStatus = false), 3000);
-    });
 
     let isHamburgerMenuOpen = $state(false);
     const onNavLiClick = () => {
@@ -150,11 +137,6 @@
         observer?.disconnect();
         mediaQuery?.removeEventListener("change", mediaQueryCallback);
     });
-
-    // TODO: Would be nice if this was implicit from the existence of the ad element.
-    let footerAdMarginOffset = $derived(
-        showAds && !adSenseLoadFailed ? "mb-[100px] lg:mb-0" : "",
-    );
 
     let { children }: { children: Snippet } = $props();
 </script>
@@ -287,24 +269,6 @@
         </div>
     </div>
 
-    <div
-        class={`fixed bottom-0 left-0 w-full flex justify-center ${footerAdMarginOffset}`}
-    >
-        <Toast
-            position="bottom-left"
-            color={"green"}
-            transition={fly}
-            params={{ y: 100, duration: 300 }}
-            divClass={`w-full max-w-xs p-4 text-gray-500 bg-white shadow dark:text-bazaar-tan700 dark:bg-bazaar-brown dark:shadow-bazaar-brown600 gap-3`}
-            bind:toastStatus
-        >
-            <svelte:fragment slot="icon">
-                <CheckCircleOutline class="w-5 h-5" />
-            </svelte:fragment>
-            <span>Link copied to clipboard</span>
-        </Toast>
-    </div>
-
     {#if showAds && isLargeScreen === false && !adSenseLoadFailed}
         <!-- Fixed horizontal banner ad for smaller screens (visible on md and below) -->
         <div class="fixed bottom-0 left-0 right-0 w-full z-50">
@@ -321,7 +285,7 @@
         </div>
     {/if}
 
-    <div class={`${footerAdMarginOffset}`}>
+    <div class={`${showAds && !adSenseLoadFailed ? "mb-[100px] lg:mb-0" : ""}`}>
         <Footer
             footerType="sitemap"
             class={`py-6 bg-white dark:bg-bazaar-background`}
