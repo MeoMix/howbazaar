@@ -63,8 +63,8 @@
             <CardBadges
                 primaryBadges={[
                     {
-                        text: `${card.startingTier}${card.startingTier === "Legendary" ? "" : "+"}`,
-                        color: card.startingTier.toLowerCase(),
+                        text: tierType,
+                        color: tierType.toLowerCase(),
                     },
                 ]}
                 secondaryBadges={card.tags.map((text) => ({ text }))}
