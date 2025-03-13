@@ -10,7 +10,7 @@
     const id = $derived(monsterEncounter.cardName.replace(/\s+/g, "_"));
 </script>
 
-<div class="mt-8" {id}>
+<div class="mt-8 scroll-mb-[8px]" {id}>
     <div class="font-bold text-2xl mb-2">
         {monsterEncounter.cardName}
 
