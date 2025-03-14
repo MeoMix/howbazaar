@@ -10,16 +10,20 @@
     import Divider from "$lib/components/Divider.svelte";
     import CopyLinkButton from "$lib/components/CopyLinkButton.svelte";
 
-    type Props =
-        | { patch: ItemPatchNote; type: "item" }
-        | { patch: SkillPatchNote; type: "skill" };
-
-    const { patch, type }: Props = $props();
+    const { patch }: { patch: ItemPatchNote | SkillPatchNote } = $props();
 
     const id = $derived(patch.metadata.name.toLowerCase().replace(/\s+/g, "_"));
 
     interface RenderedPatchNote {
-        propName: string;
+        propName:
+            | "name"
+            | "startingTier"
+            | "tags"
+            | "hiddenTags"
+            | "size"
+            | "tooltips"
+            | "heroes"
+            | "enchantments";
         change: any;
         previousTier: TierType;
         currentTier: TierType;
@@ -163,16 +167,11 @@
         return Object.entries(patchNote).filter(([key]) => key !== "metadata");
     }
 
-    // Format array values for display
-    function formatArrayValues(values: any[]): string {
-        return values.join(", ");
-    }
-
     // Format a single value for display
     function formatValue(value: any): string {
         if (!value) return "";
         if (typeof value === "string") return value;
-        if (Array.isArray(value)) return formatArrayValues(value);
+        if (Array.isArray(value)) return value.join(", ");
         return String(value);
     }
 
@@ -263,6 +262,128 @@
     }
 </script>
 
+{#snippet diffContainer(
+    oldValue: any,
+    newValue: any,
+    previousTier: TierType,
+    currentTier: TierType,
+)}
+    <div>
+        {#if oldValue !== undefined && oldValue !== null}
+            <span class="bg-[rgba(248,81,73,0.4)] px-1 rounded-sm">
+                <UnifiedTooltip
+                    tooltip={formatValue(oldValue)}
+                    startingTier={previousTier}
+                />
+            </span>
+        {:else}
+            <span class="italic text-gray-500 dark:text-bazaar-tan300">
+                Not set
+            </span>
+        {/if}
+    </div>
+
+    <div>
+        {#if newValue !== undefined && newValue !== null}
+            <span class="bg-[rgba(46,160,67,0.4)] px-1 rounded-sm">
+                <UnifiedTooltip
+                    tooltip={formatValue(newValue)}
+                    startingTier={currentTier}
+                />
+            </span>
+        {:else}
+            <span class="italic text-gray-500 dark:text-bazaar-tan300">
+                Removed
+            </span>
+        {/if}
+    </div>
+{/snippet}
+
+{#snippet tooltipDiff(
+    oldTooltip: string | null,
+    newTooltip: string | null,
+    previousTier: TierType,
+    currentTier: TierType,
+)}
+    {#if oldTooltip}
+        {@const diff = getWordDiff(oldTooltip, newTooltip)}
+        <div>
+            {#each groupHighlightedWords(diff.oldWords) as group}
+                {#if group.highlight}
+                    <span class="bg-[rgba(248,81,73,0.4)] px-1 rounded-sm">
+                        <UnifiedTooltip
+                            tooltip={group.text}
+                            startingTier={currentTier}
+                        />
+                    </span>
+                {:else}
+                    <UnifiedTooltip
+                        tooltip={group.text}
+                        startingTier={previousTier}
+                    />
+                {/if}
+                {" "}
+            {/each}
+        </div>
+    {:else}
+        <div class="italic text-gray-500 dark:text-bazaar-tan300">Not set</div>
+    {/if}
+
+    {#if newTooltip}
+        {@const diff = getWordDiff(oldTooltip, newTooltip)}
+        <div>
+            {#each groupHighlightedWords(diff.newWords) as group}
+                {#if group.highlight}
+                    <span class="bg-[rgba(46,160,67,0.4)] px-1 rounded-sm">
+                        <UnifiedTooltip
+                            tooltip={group.text}
+                            startingTier={currentTier}
+                        />
+                    </span>
+                {:else}
+                    <UnifiedTooltip
+                        tooltip={group.text}
+                        startingTier={currentTier}
+                    />
+                {/if}
+                {" "}
+            {/each}
+        </div>
+    {:else}
+        <div class="italic text-gray-500 dark:text-bazaar-tan300">Removed</div>
+    {/if}
+{/snippet}
+
+{#snippet arrayDiff(
+    removed: any[] | undefined,
+    added: any[] | undefined,
+    propName: "tags" | "hiddenTags" | "heroes",
+)}
+    <div>
+        {#if removed?.length}
+            <span class="bg-[rgba(248,81,73,0.4)] px-1 rounded-sm">
+                {removed.join(", ")}
+            </span>
+        {:else}
+            <span class="italic text-gray-500 dark:text-bazaar-tan300">
+                No {propName === "hiddenTags" ? "hidden tags" : propName} removed
+            </span>
+        {/if}
+    </div>
+
+    <div>
+        {#if added?.length}
+            <span class="bg-[rgba(46,160,67,0.4)] px-1 rounded-sm">
+                {added.join(", ")}
+            </span>
+        {:else}
+            <span class="text-gray-500 dark:text-bazaar-tan300">
+                No {propName === "hiddenTags" ? "hidden tags" : propName} added
+            </span>
+        {/if}
+    </div>
+{/snippet}
+
 <Card
     padding="none"
     size="xl"
@@ -281,361 +402,114 @@
             {#if i !== 0}
                 <Divider />
             {/if}
-            <div class="mb-3">
-                <div class="grid grid-cols-[6.5rem_1fr] gap-2">
-                    <div
-                        class="text-md text-gray-500 dark:text-bazaar-tan300 font-medium self-center text-right"
-                    >
-                        {formatPropertyName(propName)}
-                    </div>
+            <div class="grid grid-cols-[6.5rem_1fr] gap-2">
+                <div
+                    class="text-gray-500 dark:text-bazaar-tan300 font-medium self-center text-right"
+                >
+                    {formatPropertyName(propName)}
+                </div>
 
-                    <div class="space-y-2">
-                        {#if propName === "tooltips" && Array.isArray(change)}
-                            {@const aligned = getAlignedTooltips(change)}
-                            {#each aligned.old as tooltip, i}
-                                <div class="space-y-1">
-                                    <!-- Old Value -->
-                                    <div
-                                        class="p-1 bg-red-500/15 dark:bg-red-900/15 min-h-[1.5rem] rounded"
-                                    >
-                                        {#if tooltip}
-                                            {@const diff = getWordDiff(
-                                                tooltip,
-                                                aligned.new[i],
-                                            )}
-                                            <div>
-                                                {#each groupHighlightedWords(diff.oldWords) as group}
-                                                    <span
-                                                        class={group.highlight
-                                                            ? "bg-[rgba(248,81,73,0.4)] px-1 rounded-sm"
-                                                            : ""}
-                                                    >
-                                                        <UnifiedTooltip
-                                                            tooltip={group.text}
-                                                            startingTier={previousTier}
-                                                        />
-                                                    </span>
-                                                    {" "}
-                                                {/each}
-                                            </div>
-                                        {:else}
-                                            <div
-                                                class="italic text-gray-500 dark:text-bazaar-tan300"
-                                            >
-                                                Not set
-                                            </div>
-                                        {/if}
-                                    </div>
-                                    <!-- New Value -->
-                                    <div
-                                        class="p-1 bg-green-500/15 dark:bg-green-900/15 min-h-[1.5rem] rounded"
-                                    >
-                                        {#if aligned.new[i]}
-                                            {@const diff = getWordDiff(
-                                                tooltip,
-                                                aligned.new[i],
-                                            )}
-                                            <div>
-                                                {#each groupHighlightedWords(diff.newWords) as group}
-                                                    <span
-                                                        class={group.highlight
-                                                            ? "bg-[rgba(46,160,67,0.4)] px-1 rounded-sm"
-                                                            : ""}
-                                                    >
-                                                        <UnifiedTooltip
-                                                            tooltip={group.text}
-                                                            startingTier={currentTier}
-                                                        />
-                                                    </span>
-                                                    {" "}
-                                                {/each}
-                                            </div>
-                                        {:else}
-                                            <div
-                                                class="italic text-gray-500 dark:text-bazaar-tan300"
-                                            >
-                                                Removed
-                                            </div>
-                                        {/if}
-                                    </div>
-                                </div>
-                            {/each}
-                        {:else if propName === "tags" || propName === "hiddenTags" || propName === "heroes"}
-                            <div class="space-y-1">
-                                <!-- Old Value -->
-                                <div
-                                    class="p-1 bg-red-500/15 dark:bg-red-900/15 min-h-[1.5rem] rounded"
-                                >
+                <div class="space-y-2">
+                    {#if propName === "tooltips" && Array.isArray(change)}
+                        {@const aligned = getAlignedTooltips(change)}
+                        {#each aligned.old as tooltip, i}
+                            {@render tooltipDiff(
+                                tooltip,
+                                aligned.new[i],
+                                previousTier,
+                                currentTier,
+                            )}
+                        {/each}
+                    {:else if propName === "tags" || propName === "hiddenTags" || propName === "heroes"}
+                        {@render arrayDiff(
+                            change.removed,
+                            change.added,
+                            propName,
+                        )}
+                    {:else if propName === "enchantments"}
+                        <div class="space-y-4">
+                            <!-- Added/Removed Enchantments -->
+                            {#if change.removed?.length || change.added?.length}
+                                <div class="space-y-4">
+                                    <!-- Removed Enchantments -->
                                     {#if change.removed?.length}
-                                        <span
-                                            class="bg-[rgba(248,81,73,0.4)] px-1 rounded-sm"
-                                        >
-                                            {formatArrayValues(change.removed)}
-                                        </span>
-                                    {:else}
-                                        <em
-                                            class="italic text-gray-500 dark:text-bazaar-tan300"
-                                        >
-                                            No {propName === "hiddenTags"
-                                                ? "hidden tags"
-                                                : propName} removed
-                                        </em>
-                                    {/if}
-                                </div>
-                                <!-- New Value -->
-                                <div
-                                    class="p-1 bg-green-500/15 dark:bg-green-900/15 min-h-[1.5rem] rounded"
-                                >
-                                    {#if change.added?.length}
-                                        <span
-                                            class="bg-[rgba(46,160,67,0.4)] px-1 rounded-sm"
-                                        >
-                                            {formatArrayValues(change.added)}
-                                        </span>
-                                    {:else}
-                                        <em
-                                            class="text-gray-500 dark:text-bazaar-tan300"
-                                        >
-                                            No {propName === "hiddenTags"
-                                                ? "hidden tags"
-                                                : propName} added
-                                        </em>
-                                    {/if}
-                                </div>
-                            </div>
-                        {:else if propName === "enchantments"}
-                            <div class="space-y-4">
-                                <!-- Added/Removed Enchantments -->
-                                {#if change.removed?.length || change.added?.length}
-                                    <div class="space-y-4">
-                                        <!-- Removed Enchantments -->
-                                        {#if change.removed?.length}
-                                            {#each change.removed as enchantment}
-                                                <div class="space-y-1">
-                                                    <div
-                                                        class="text-sm font-medium text-gray-500 dark:text-bazaar-tan300 mb-1"
-                                                    >
-                                                        {enchantment.type}
-                                                    </div>
-                                                    <!-- Old Value -->
-                                                    <div
-                                                        class="p-1 bg-red-500/15 dark:bg-red-900/15 min-h-[1.5rem] rounded"
-                                                    >
-                                                        {#each enchantment.tooltipChanges as tooltipChange}
-                                                            {#if tooltipChange.oldValue}
-                                                                <span
-                                                                    class="bg-[rgba(248,81,73,0.4)] px-1 rounded-sm"
-                                                                >
-                                                                    <UnifiedTooltip
-                                                                        tooltip={tooltipChange.oldValue}
-                                                                        startingTier={previousTier}
-                                                                    />
-                                                                </span>
-                                                            {/if}
-                                                        {/each}
-                                                    </div>
-                                                    <!-- New Value -->
-                                                    <div
-                                                        class="p-1 bg-green-500/15 dark:bg-green-900/15 min-h-[1.5rem] rounded"
-                                                    >
-                                                        <div
-                                                            class="italic text-gray-500 dark:text-bazaar-tan300"
-                                                        >
-                                                            Removed
-                                                        </div>
-                                                    </div>
+                                        {#each change.removed as enchantment}
+                                            <div class="space-y-1">
+                                                <div
+                                                    class="text-sm font-medium text-gray-500 dark:text-bazaar-tan300 mb-1"
+                                                >
+                                                    {enchantment.type}
                                                 </div>
-                                            {/each}
-                                        {/if}
+                                                {#each enchantment.tooltipChanges as tooltipChange}
+                                                    {@render tooltipDiff(
+                                                        tooltipChange.oldValue,
+                                                        null,
+                                                        previousTier,
+                                                        currentTier,
+                                                    )}
+                                                {/each}
+                                            </div>
+                                        {/each}
+                                    {/if}
 
-                                        <!-- Added Enchantments -->
-                                        {#if change.added?.length}
-                                            {#each change.added as enchantment}
-                                                <div class="space-y-1">
-                                                    <div
-                                                        class="text-sm font-medium text-gray-500 dark:text-bazaar-tan300 mb-1"
-                                                    >
-                                                        {enchantment.type}
-                                                    </div>
-                                                    <!-- Old Value -->
-                                                    <div
-                                                        class="p-1 bg-red-500/15 dark:bg-red-900/15 min-h-[1.5rem] rounded"
-                                                    >
-                                                        <div
-                                                            class="italic text-gray-500 dark:text-bazaar-tan300"
-                                                        >
-                                                            Not set
-                                                        </div>
-                                                    </div>
-                                                    <!-- New Value -->
-                                                    <div
-                                                        class="p-1 bg-green-500/15 dark:bg-green-900/15 min-h-[1.5rem] rounded"
-                                                    >
-                                                        {#each enchantment.tooltipChanges as tooltipChange}
-                                                            {#if tooltipChange.newValue}
-                                                                <span
-                                                                    class="bg-[rgba(46,160,67,0.4)] px-1 rounded-sm"
-                                                                >
-                                                                    <UnifiedTooltip
-                                                                        tooltip={tooltipChange.newValue}
-                                                                        startingTier={currentTier}
-                                                                    />
-                                                                </span>
-                                                            {/if}
-                                                        {/each}
-                                                    </div>
+                                    <!-- Added Enchantments -->
+                                    {#if change.added?.length}
+                                        {#each change.added as enchantment}
+                                            <div class="space-y-1">
+                                                <div
+                                                    class="text-sm font-medium text-gray-500 dark:text-bazaar-tan300 mb-1"
+                                                >
+                                                    {enchantment.type}
                                                 </div>
+                                                {#each enchantment.tooltipChanges as tooltipChange}
+                                                    {@render tooltipDiff(
+                                                        null,
+                                                        tooltipChange.newValue,
+                                                        previousTier,
+                                                        currentTier,
+                                                    )}
+                                                {/each}
+                                            </div>
+                                        {/each}
+                                    {/if}
+                                </div>
+                            {/if}
+
+                            <!-- Modified Enchantments -->
+                            {#if change.modified?.length}
+                                {#each change.modified as enchantment}
+                                    <div class="space-y-1">
+                                        <div
+                                            class="text-sm font-medium text-gray-500 dark:text-bazaar-tan300 mb-1"
+                                        >
+                                            {enchantment.type}
+                                        </div>
+                                        {#if enchantment.tooltipChanges}
+                                            {@const aligned =
+                                                getAlignedTooltips(
+                                                    enchantment.tooltipChanges,
+                                                )}
+                                            {#each aligned.old as tooltip, i}
+                                                {@render tooltipDiff(
+                                                    tooltip,
+                                                    aligned.new[i],
+                                                    previousTier,
+                                                    currentTier,
+                                                )}
                                             {/each}
                                         {/if}
                                     </div>
-                                {/if}
-
-                                <!-- Modified Enchantments -->
-                                {#if change.modified?.length}
-                                    {#each change.modified as enchantment}
-                                        <div class="space-y-1">
-                                            <div
-                                                class="text-sm font-medium text-gray-500 dark:text-bazaar-tan300 mb-1"
-                                            >
-                                                {enchantment.type}
-                                            </div>
-                                            {#if enchantment.tooltipChanges}
-                                                {@const aligned =
-                                                    getAlignedTooltips(
-                                                        enchantment.tooltipChanges,
-                                                    )}
-                                                <div class="space-y-1">
-                                                    {#each aligned.old as tooltip, i}
-                                                        <div class="space-y-1">
-                                                            <!-- Old Value -->
-                                                            <div
-                                                                class="p-1 bg-red-500/15 dark:bg-red-900/15 min-h-[1.5rem] rounded"
-                                                            >
-                                                                {#if tooltip}
-                                                                    {@const diff =
-                                                                        getWordDiff(
-                                                                            tooltip,
-                                                                            aligned
-                                                                                .new[
-                                                                                i
-                                                                            ],
-                                                                        )}
-                                                                    <div>
-                                                                        {#each groupHighlightedWords(diff.oldWords) as group}
-                                                                            <span
-                                                                                class={group.highlight
-                                                                                    ? "bg-[rgba(248,81,73,0.4)] px-1 rounded-sm"
-                                                                                    : ""}
-                                                                            >
-                                                                                <UnifiedTooltip
-                                                                                    tooltip={group.text}
-                                                                                    startingTier={previousTier}
-                                                                                />
-                                                                            </span>
-                                                                            {" "}
-                                                                        {/each}
-                                                                    </div>
-                                                                {:else}
-                                                                    <div
-                                                                        class="italic text-gray-500 dark:text-bazaar-tan300"
-                                                                    >
-                                                                        Not set
-                                                                    </div>
-                                                                {/if}
-                                                            </div>
-                                                            <!-- New Value -->
-                                                            <div
-                                                                class="p-1 bg-green-500/15 dark:bg-green-900/15 min-h-[1.5rem] rounded"
-                                                            >
-                                                                {#if aligned.new[i]}
-                                                                    {@const diff =
-                                                                        getWordDiff(
-                                                                            tooltip,
-                                                                            aligned
-                                                                                .new[
-                                                                                i
-                                                                            ],
-                                                                        )}
-                                                                    <div>
-                                                                        {#each groupHighlightedWords(diff.newWords) as group}
-                                                                            <span
-                                                                                class={group.highlight
-                                                                                    ? "bg-[rgba(46,160,67,0.4)] px-1 rounded-sm"
-                                                                                    : ""}
-                                                                            >
-                                                                                <UnifiedTooltip
-                                                                                    tooltip={group.text}
-                                                                                    startingTier={currentTier}
-                                                                                />
-                                                                            </span>
-                                                                            {" "}
-                                                                        {/each}
-                                                                    </div>
-                                                                {:else}
-                                                                    <div
-                                                                        class="italic text-gray-500 dark:text-bazaar-tan300"
-                                                                    >
-                                                                        Removed
-                                                                    </div>
-                                                                {/if}
-                                                            </div>
-                                                        </div>
-                                                    {/each}
-                                                </div>
-                                            {/if}
-                                        </div>
-                                    {/each}
-                                {/if}
-                            </div>
-                        {:else}
-                            <div class="space-y-1">
-                                <!-- Old Value -->
-                                <div
-                                    class="p-1 bg-red-500/15 dark:bg-red-900/15 min-h-[1.5rem] rounded"
-                                >
-                                    {#if change.oldValue !== undefined && change.oldValue !== null}
-                                        <span
-                                            class="bg-[rgba(248,81,73,0.4)] px-1 rounded-sm"
-                                        >
-                                            <UnifiedTooltip
-                                                tooltip={formatValue(
-                                                    change.oldValue,
-                                                )}
-                                                startingTier={previousTier}
-                                            />
-                                        </span>
-                                    {:else}
-                                        <em
-                                            class="italic text-gray-500 dark:text-bazaar-tan300"
-                                            >Not set</em
-                                        >
-                                    {/if}
-                                </div>
-                                <!-- New Value -->
-                                <div
-                                    class="p-1 bg-green-500/15 dark:bg-green-900/15 min-h-[1.5rem] rounded"
-                                >
-                                    {#if change.newValue !== undefined && change.newValue !== null}
-                                        <span
-                                            class="bg-[rgba(46,160,67,0.4)] px-1 rounded-sm"
-                                        >
-                                            <UnifiedTooltip
-                                                tooltip={formatValue(
-                                                    change.newValue,
-                                                )}
-                                                startingTier={currentTier}
-                                            />
-                                        </span>
-                                    {:else}
-                                        <em
-                                            class="italic text-gray-500 dark:text-bazaar-tan300"
-                                            >Removed</em
-                                        >
-                                    {/if}
-                                </div>
-                            </div>
-                        {/if}
-                    </div>
+                                {/each}
+                            {/if}
+                        </div>
+                    {:else}
+                        {@render diffContainer(
+                            change.oldValue,
+                            change.newValue,
+                            previousTier,
+                            currentTier,
+                        )}
+                    {/if}
                 </div>
             </div>
         {/each}

@@ -80,16 +80,28 @@
         </div>
     </div>
 
-    <div class="mb-8">
-        Item and Skill changes derived from game data to detect changes not
-        mentioned in <a
-            href="https://playthebazaar-cdn.azureedge.net/beta/PatchNotes.html"
-            class="text-blue-500 hover:underline"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            The Bazaar's official patch notes
-        </a>.
+    <div class="mb-8 space-y-4">
+        <p>
+            Item and Skill changes derived from game data to detect changes not
+            mentioned in <a
+                href="https://playthebazaar-cdn.azureedge.net/beta/PatchNotes.html"
+                class="text-blue-500 hover:underline"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                The Bazaar's official patch notes
+            </a>.
+        </p>
+        <p>
+            Changes are highlighted to show
+            <span class="bg-[rgba(248,81,73,0.4)] px-1 rounded-sm"
+                >what was removed</span
+            >
+            and
+            <span class="bg-[rgba(46,160,67,0.4)] px-1 rounded-sm"
+                >what was added</span
+            >
+        </p>
     </div>
 
     {#if Object.values(itemsByHero).some((group) => group.length > 0)}
@@ -102,7 +114,7 @@
                         {hero}
                     </h3>
                     {#each heroItems as patch}
-                        <PatchNoteCard {patch} type="item" />
+                        <PatchNoteCard {patch} />
                     {/each}
                 </div>
             {/if}
@@ -112,7 +124,7 @@
     {#if skills.length > 0}
         <h2 class="text-2xl font-bold mb-6 mt-8">Skills</h2>
         {#each skills as patch}
-            <PatchNoteCard {patch} type="skill" />
+            <PatchNoteCard {patch} />
         {/each}
     {/if}
 </div>
