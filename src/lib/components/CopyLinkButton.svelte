@@ -29,7 +29,7 @@
 </script>
 
 <button
-    class="ml-2 text-bazaar-orange w-[1.5em] transition-all"
+    class="ml-2 text-bazaar-orange text-lg"
     title={copyTimeout ? "Link copied!" : `Copy link to ${name}`}
     onclick={copyLink}
 >

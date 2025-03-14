@@ -113,9 +113,11 @@
                     <h3 class="text-xl font-semibold mb-4">
                         {hero}
                     </h3>
-                    {#each heroItems as patch}
-                        <PatchNoteCard {patch} />
-                    {/each}
+                    <div class="space-y-2">
+                        {#each heroItems as patch, i}
+                            <PatchNoteCard {patch} />
+                        {/each}
+                    </div>
                 </div>
             {/if}
         {/each}
@@ -123,8 +125,10 @@
 
     {#if skills.length > 0}
         <h2 class="text-2xl font-bold mb-6 mt-8">Skills</h2>
-        {#each skills as patch}
-            <PatchNoteCard {patch} />
-        {/each}
+        <div class="space-y-2">
+            {#each skills as patch}
+                <PatchNoteCard {patch} />
+            {/each}
+        </div>
     {/if}
 </div>

@@ -177,9 +177,9 @@
 
     // Helper function to get aligned tooltips
     function getAlignedTooltips(changes: TooltipChange[]) {
-        if (!changes?.length) return { old: [], new: [] };
+        if (!changes?.length) return [];
 
-        // First, merge changes at the same index and collect unique indices
+        // Merge changes at the same index and collect unique indices
         const mergedChanges = new Map<
             number,
             { oldValue: string | null; newValue: string | null }
@@ -202,21 +202,14 @@
             }
         }
 
-        // Convert to array and sort by index
-        const sortedChanges = Array.from(mergedChanges.entries())
+        // Convert to array, sort by index, and filter out empty changes
+        return Array.from(mergedChanges.entries())
             .filter(
                 ([_, change]) =>
                     change.oldValue !== null || change.newValue !== null,
             )
-            .sort(([a], [b]) => a - b);
-
-        if (!sortedChanges.length) return { old: [], new: [] };
-
-        // Create arrays of the exact size needed
-        const oldTooltips = sortedChanges.map(([_, change]) => change.oldValue);
-        const newTooltips = sortedChanges.map(([_, change]) => change.newValue);
-
-        return { old: oldTooltips, new: newTooltips };
+            .sort(([a], [b]) => a - b)
+            .map(([_, change]) => change);
     }
 
     // Format property name for display
@@ -387,7 +380,7 @@
 <Card
     padding="none"
     size="xl"
-    class={`relative border text-gray-900 dark:bg-bazaar-background dark:text-bazaar-tan700 dark:border-bazaar-orange mb-3 scroll-mt-[80px]`}
+    class={`relative border text-gray-900 dark:bg-bazaar-background dark:text-bazaar-tan700 dark:border-bazaar-orange scroll-mt-[80px]`}
     id={patch.metadata.name.toLowerCase().replace(/\s+/g, "_")}
 >
     <div class="rounded-lg p-4">
@@ -409,16 +402,18 @@
                     {formatPropertyName(propName)}
                 </div>
 
-                <div class="space-y-2">
+                <div>
                     {#if propName === "tooltips" && Array.isArray(change)}
                         {@const aligned = getAlignedTooltips(change)}
-                        {#each aligned.old as tooltip, i}
-                            {@render tooltipDiff(
-                                tooltip,
-                                aligned.new[i],
-                                previousTier,
-                                currentTier,
-                            )}
+                        {#each aligned as { oldValue, newValue }, i}
+                            <div class={i !== aligned.length - 1 ? "mb-2" : ""}>
+                                {@render tooltipDiff(
+                                    oldValue,
+                                    newValue,
+                                    previousTier,
+                                    currentTier,
+                                )}
+                            </div>
                         {/each}
                     {:else if propName === "tags" || propName === "hiddenTags" || propName === "heroes"}
                         {@render arrayDiff(
@@ -485,17 +480,16 @@
                                             {enchantment.type}
                                         </div>
                                         {#if enchantment.tooltipChanges}
-                                            {@const aligned =
-                                                getAlignedTooltips(
-                                                    enchantment.tooltipChanges,
-                                                )}
-                                            {#each aligned.old as tooltip, i}
-                                                {@render tooltipDiff(
-                                                    tooltip,
-                                                    aligned.new[i],
-                                                    previousTier,
-                                                    currentTier,
-                                                )}
+                                            {@const aligned = getAlignedTooltips(enchantment.tooltipChanges)}
+                                            {#each aligned as { oldValue, newValue }, i}
+                                                <div class={i !== aligned.length - 1 ? "mb-2" : ""}>
+                                                    {@render tooltipDiff(
+                                                        oldValue,
+                                                        newValue,
+                                                        previousTier,
+                                                        currentTier,
+                                                    )}
+                                                </div>
                                             {/each}
                                         {/if}
                                     </div>
