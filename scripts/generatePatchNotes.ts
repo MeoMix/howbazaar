@@ -25,11 +25,15 @@ type EnchantmentChange = {
     tooltipChanges: TooltipChange[];
 };
 
+// TODO: These types are duped from types.ts?
+
 type BaseMetadata = {
     id: string;
     name: string;
     previousStartingTier: TierType;
     currentStartingTier: TierType;
+    currentSize: Size;
+    type: "item" | "skill";
 };
 
 type ItemMetadata = BaseMetadata & {
@@ -37,6 +41,7 @@ type ItemMetadata = BaseMetadata & {
 };
 
 type SkillMetadata = BaseMetadata & {
+    // TODO: rename this to currentHeroes
     heroes: Hero[];
 };
 
@@ -275,7 +280,9 @@ function generateItemPatchNote(oldItem: ParsedItemCard | undefined, newItem: Par
                 name: newItem!.name,
                 previousStartingTier: newItem!.startingTier,
                 currentStartingTier: newItem!.startingTier,
-                currentHero: newItem!.heroes[0] || null
+                currentHero: newItem!.heroes[0] || null,
+                currentSize: newItem!.size,
+                type: "item"
             },
             name: { oldValue: null, newValue: newItem!.name },
             startingTier: { oldValue: null, newValue: newItem!.startingTier },
@@ -298,7 +305,9 @@ function generateItemPatchNote(oldItem: ParsedItemCard | undefined, newItem: Par
                 name: oldItem.name,
                 previousStartingTier: oldItem.startingTier,
                 currentStartingTier: oldItem.startingTier,
-                currentHero: oldItem.heroes[0] || null
+                currentHero: oldItem.heroes[0] || null,
+                currentSize: oldItem.size,
+                type: "item"
             },
             name: { oldValue: oldItem.name, newValue: null },
             startingTier: { oldValue: oldItem.startingTier, newValue: null },
@@ -321,7 +330,9 @@ function generateItemPatchNote(oldItem: ParsedItemCard | undefined, newItem: Par
             name: newItem.name,
             previousStartingTier: oldItem.startingTier,
             currentStartingTier: newItem.startingTier,
-            currentHero: newItem.heroes[0] || null
+            currentHero: newItem.heroes[0] || null,
+            currentSize: newItem.size,
+            type: "item"
         }
     };
 
@@ -370,7 +381,9 @@ function generateSkillPatchNote(oldSkill: ParsedSkillCard | undefined, newSkill:
                 name: newSkill!.name,
                 previousStartingTier: newSkill!.startingTier,
                 currentStartingTier: newSkill!.startingTier,
-                heroes: newSkill!.heroes
+                heroes: newSkill!.heroes,
+                currentSize: newSkill!.size,
+                type: "skill"
             },
             name: { oldValue: null, newValue: newSkill!.name },
             startingTier: { oldValue: null, newValue: newSkill!.startingTier },
@@ -388,7 +401,9 @@ function generateSkillPatchNote(oldSkill: ParsedSkillCard | undefined, newSkill:
                 name: oldSkill.name,
                 previousStartingTier: oldSkill.startingTier,
                 currentStartingTier: oldSkill.startingTier,
-                heroes: oldSkill.heroes
+                heroes: oldSkill.heroes,
+                currentSize: oldSkill.size,
+                type: "skill"
             },
             name: { oldValue: oldSkill.name, newValue: null },
             startingTier: { oldValue: oldSkill.startingTier, newValue: null },
@@ -406,7 +421,9 @@ function generateSkillPatchNote(oldSkill: ParsedSkillCard | undefined, newSkill:
             name: newSkill.name,
             previousStartingTier: oldSkill.startingTier,
             currentStartingTier: newSkill.startingTier,
-            heroes: newSkill.heroes
+            heroes: newSkill.heroes,
+            currentSize: newSkill.size,
+            type: "skill"
         }
     };
 

@@ -9,6 +9,7 @@
     import { Card } from "flowbite-svelte";
     import Divider from "$lib/components/Divider.svelte";
     import CopyLinkButton from "$lib/components/CopyLinkButton.svelte";
+    import CardImage from "$lib/components/CardImage.svelte";
 
     const { patch }: { patch: ItemPatchNote | SkillPatchNote } = $props();
 
@@ -261,9 +262,9 @@
     previousTier: TierType,
     currentTier: TierType,
 )}
-    <div>
+    <div class="opacity-60">
         {#if oldValue !== undefined && oldValue !== null}
-            <span class="bg-[rgba(248,81,73,0.4)] px-1 rounded-sm">
+            <span class="bg-patchnotes-removed px-1 rounded-sm">
                 <UnifiedTooltip
                     tooltip={formatValue(oldValue)}
                     startingTier={previousTier}
@@ -278,7 +279,7 @@
 
     <div>
         {#if newValue !== undefined && newValue !== null}
-            <span class="bg-[rgba(46,160,67,0.4)] px-1 rounded-sm">
+            <span class="bg-patchnotes-added px-1 rounded-sm">
                 <UnifiedTooltip
                     tooltip={formatValue(newValue)}
                     startingTier={currentTier}
@@ -300,10 +301,10 @@
 )}
     {#if oldTooltip}
         {@const diff = getWordDiff(oldTooltip, newTooltip)}
-        <div>
+        <div class="opacity-60">
             {#each groupHighlightedWords(diff.oldWords) as group}
                 {#if group.highlight}
-                    <span class="bg-[rgba(248,81,73,0.4)] px-1 rounded-sm">
+                    <span class="bg-patchnotes-removed px-1 rounded-sm">
                         <UnifiedTooltip
                             tooltip={group.text}
                             startingTier={currentTier}
@@ -327,7 +328,7 @@
         <div>
             {#each groupHighlightedWords(diff.newWords) as group}
                 {#if group.highlight}
-                    <span class="bg-[rgba(46,160,67,0.4)] px-1 rounded-sm">
+                    <span class="bg-patchnotes-added px-1 rounded-sm">
                         <UnifiedTooltip
                             tooltip={group.text}
                             startingTier={currentTier}
@@ -352,9 +353,9 @@
     added: any[] | undefined,
     propName: "tags" | "hiddenTags" | "heroes",
 )}
-    <div>
+    <div class="opacity-60">
         {#if removed?.length}
-            <span class="bg-[rgba(248,81,73,0.4)] px-1 rounded-sm">
+            <span class="bg-patchnotes-removed px-1 rounded-sm">
                 {removed.join(", ")}
             </span>
         {:else}
@@ -366,7 +367,7 @@
 
     <div>
         {#if added?.length}
-            <span class="bg-[rgba(46,160,67,0.4)] px-1 rounded-sm">
+            <span class="bg-patchnotes-added px-1 rounded-sm">
                 {added.join(", ")}
             </span>
         {:else}
@@ -381,131 +382,140 @@
     padding="none"
     size="xl"
     class={`relative border text-gray-900 dark:bg-bazaar-background dark:text-bazaar-tan700 dark:border-bazaar-orange scroll-mt-[80px]`}
-    id={patch.metadata.name.toLowerCase().replace(/\s+/g, "_")}
+    {id}
 >
-    <div class="rounded-lg p-4">
-        <div class="flex items-center mb-3">
-            <h2 class="text-2xl font-semibold">
-                {patch.metadata.name}
-                <CopyLinkButton {id} name={patch.metadata.name} />
-            </h2>
+    <div class="grid grid-cols-[66.66%_33.33%] md:grid-cols-[70%_30%] lg:grid-cols-[80%_20%]">
+        <div class="max-w-full col-start-2 row-span-1 md:row-span-2">
+            <CardImage 
+                name={patch.metadata.name} 
+                type={patch.metadata.type} 
+                size={patch.metadata.currentSize} 
+            />
         </div>
 
-        {#each renderPatchNote(patch) as { propName, change, previousTier, currentTier }, i}
-            {#if i !== 0}
-                <Divider />
-            {/if}
-            <div class="grid grid-cols-[6.5rem_1fr] gap-2">
-                <div
-                    class="text-gray-500 dark:text-bazaar-tan300 font-medium self-center text-right"
-                >
-                    {formatPropertyName(propName)}
-                </div>
+        <div class="col-start-1 row-start-1 px-4 py-4">
+            <div class="flex items-center mb-3">
+                <h2 class="text-2xl font-semibold">
+                    {patch.metadata.name}
+                    <CopyLinkButton {id} name={patch.metadata.name} />
+                </h2>
+            </div>
 
-                <div>
-                    {#if propName === "tooltips" && Array.isArray(change)}
-                        {@const aligned = getAlignedTooltips(change)}
-                        {#each aligned as { oldValue, newValue }, i}
-                            <div class={i !== aligned.length - 1 ? "mb-2" : ""}>
-                                {@render tooltipDiff(
-                                    oldValue,
-                                    newValue,
-                                    previousTier,
-                                    currentTier,
-                                )}
-                            </div>
-                        {/each}
-                    {:else if propName === "tags" || propName === "hiddenTags" || propName === "heroes"}
-                        {@render arrayDiff(
-                            change.removed,
-                            change.added,
-                            propName,
-                        )}
-                    {:else if propName === "enchantments"}
-                        <div class="space-y-4">
-                            <!-- Added/Removed Enchantments -->
-                            {#if change.removed?.length || change.added?.length}
-                                <div class="space-y-4">
-                                    <!-- Removed Enchantments -->
-                                    {#if change.removed?.length}
-                                        {#each change.removed as enchantment}
-                                            <div class="space-y-1">
-                                                <div
-                                                    class="text-sm font-medium text-gray-500 dark:text-bazaar-tan300 mb-1"
-                                                >
-                                                    {enchantment.type}
-                                                </div>
-                                                {#each enchantment.tooltipChanges as tooltipChange}
-                                                    {@render tooltipDiff(
-                                                        tooltipChange.oldValue,
-                                                        null,
-                                                        previousTier,
-                                                        currentTier,
-                                                    )}
-                                                {/each}
-                                            </div>
-                                        {/each}
-                                    {/if}
+            {#each renderPatchNote(patch) as { propName, change, previousTier, currentTier }, i}
+                <div class={`flex ${i !== 0 ? "mt-2" : ""}`}>
+                    <div
+                        class="w-[6.5rem] text-gray-500 dark:text-bazaar-tan300 font-medium self-center text-right pr-2"
+                    >
+                        {formatPropertyName(propName)}
+                    </div>
 
-                                    <!-- Added Enchantments -->
-                                    {#if change.added?.length}
-                                        {#each change.added as enchantment}
-                                            <div class="space-y-1">
-                                                <div
-                                                    class="text-sm font-medium text-gray-500 dark:text-bazaar-tan300 mb-1"
-                                                >
-                                                    {enchantment.type}
-                                                </div>
-                                                {#each enchantment.tooltipChanges as tooltipChange}
-                                                    {@render tooltipDiff(
-                                                        null,
-                                                        tooltipChange.newValue,
-                                                        previousTier,
-                                                        currentTier,
-                                                    )}
-                                                {/each}
-                                            </div>
-                                        {/each}
-                                    {/if}
+                    <Divider isVertical />
+
+                    <div class="flex-1 pl-2">
+                        {#if propName === "tooltips" && Array.isArray(change)}
+                            {@const aligned = getAlignedTooltips(change)}
+                            {#each aligned as { oldValue, newValue }, i}
+                                <div class={i !== aligned.length - 1 ? "mb-2" : ""}>
+                                    {@render tooltipDiff(
+                                        oldValue,
+                                        newValue,
+                                        previousTier,
+                                        currentTier,
+                                    )}
                                 </div>
-                            {/if}
+                            {/each}
+                        {:else if propName === "tags" || propName === "hiddenTags" || propName === "heroes"}
+                            {@render arrayDiff(
+                                change.removed,
+                                change.added,
+                                propName,
+                            )}
+                        {:else if propName === "enchantments"}
+                            <div class="space-y-4">
+                                <!-- Added/Removed Enchantments -->
+                                {#if change.removed?.length || change.added?.length}
+                                    <div class="space-y-4">
+                                        <!-- Removed Enchantments -->
+                                        {#if change.removed?.length}
+                                            {#each change.removed as enchantment}
+                                                <div class="space-y-1">
+                                                    <div
+                                                        class="text-sm font-medium text-gray-500 dark:text-bazaar-tan300 mb-1"
+                                                    >
+                                                        {enchantment.type}
+                                                    </div>
+                                                    {#each enchantment.tooltipChanges as tooltipChange}
+                                                        {@render tooltipDiff(
+                                                            tooltipChange.oldValue,
+                                                            null,
+                                                            previousTier,
+                                                            currentTier,
+                                                        )}
+                                                    {/each}
+                                                </div>
+                                            {/each}
+                                        {/if}
 
-                            <!-- Modified Enchantments -->
-                            {#if change.modified?.length}
-                                {#each change.modified as enchantment}
-                                    <div class="space-y-1">
-                                        <div
-                                            class="text-sm font-medium text-gray-500 dark:text-bazaar-tan300 mb-1"
-                                        >
-                                            {enchantment.type}
-                                        </div>
-                                        {#if enchantment.tooltipChanges}
-                                            {@const aligned = getAlignedTooltips(enchantment.tooltipChanges)}
-                                            {#each aligned as { oldValue, newValue }, i}
-                                                <div class={i !== aligned.length - 1 ? "mb-2" : ""}>
-                                                    {@render tooltipDiff(
-                                                        oldValue,
-                                                        newValue,
-                                                        previousTier,
-                                                        currentTier,
-                                                    )}
+                                        <!-- Added Enchantments -->
+                                        {#if change.added?.length}
+                                            {#each change.added as enchantment}
+                                                <div class="space-y-1">
+                                                    <div
+                                                        class="text-sm font-medium text-gray-500 dark:text-bazaar-tan300 mb-1"
+                                                    >
+                                                        {enchantment.type}
+                                                    </div>
+                                                    {#each enchantment.tooltipChanges as tooltipChange}
+                                                        {@render tooltipDiff(
+                                                            null,
+                                                            tooltipChange.newValue,
+                                                            previousTier,
+                                                            currentTier,
+                                                        )}
+                                                    {/each}
                                                 </div>
                                             {/each}
                                         {/if}
                                     </div>
-                                {/each}
-                            {/if}
-                        </div>
-                    {:else}
-                        {@render diffContainer(
-                            change.oldValue,
-                            change.newValue,
-                            previousTier,
-                            currentTier,
-                        )}
-                    {/if}
+                                {/if}
+
+                                <!-- Modified Enchantments -->
+                                {#if change.modified?.length}
+                                    {#each change.modified as enchantment}
+                                        <div class="space-y-1">
+                                            <div
+                                                class="text-sm font-medium text-gray-500 dark:text-bazaar-tan300 mb-1"
+                                            >
+                                                {enchantment.type}
+                                            </div>
+                                            {#if enchantment.tooltipChanges}
+                                                {@const aligned = getAlignedTooltips(enchantment.tooltipChanges)}
+                                                {#each aligned as { oldValue, newValue }, i}
+                                                    <div class={i !== aligned.length - 1 ? "mb-2" : ""}>
+                                                        {@render tooltipDiff(
+                                                            oldValue,
+                                                            newValue,
+                                                            previousTier,
+                                                            currentTier,
+                                                        )}
+                                                    </div>
+                                                {/each}
+                                            {/if}
+                                        </div>
+                                    {/each}
+                                {/if}
+                            </div>
+                        {:else}
+                            {@render diffContainer(
+                                change.oldValue,
+                                change.newValue,
+                                previousTier,
+                                currentTier,
+                            )}
+                        {/if}
+                    </div>
                 </div>
-            </div>
-        {/each}
+            {/each}
+        </div>
     </div>
 </Card>

@@ -66,6 +66,10 @@
     }
 </script>
 
+<svelte:head>
+    <title>Patch Notes · How Bazaar</title>
+</svelte:head>
+
 <div
     class="w-full max-w-full sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl"
 >
@@ -80,9 +84,9 @@
         </div>
     </div>
 
-    <div class="mb-8 space-y-4">
+    <div class="mb-6 space-y-1">
         <p>
-            Item and Skill changes derived from game data to detect changes not
+            Item and Skill changes based on game data; detects changes not
             mentioned in <a
                 href="https://playthebazaar-cdn.azureedge.net/beta/PatchNotes.html"
                 class="text-blue-500 hover:underline"
@@ -94,22 +98,22 @@
         </p>
         <p>
             Changes are highlighted to show
-            <span class="bg-[rgba(248,81,73,0.4)] px-1 rounded-sm"
+            <span class="bg-patchnotes-removed px-1 rounded-sm"
                 >what was removed</span
             >
             and
-            <span class="bg-[rgba(46,160,67,0.4)] px-1 rounded-sm"
-                >what was added</span
+            <span class="bg-patchnotes-added px-1 rounded-sm"
+                >what was added.</span
             >
         </p>
     </div>
 
     {#if Object.values(itemsByHero).some((group) => group.length > 0)}
-        <h2 class="text-2xl font-bold mb-6">Items</h2>
+        <h2 class="text-2xl font-bold my-4">Items</h2>
 
         {#each Object.entries(itemsByHero) as [hero, heroItems]}
             {#if heroItems.length > 0}
-                <div class="mb-8">
+                <div class="my-4">
                     <h3 class="text-xl font-semibold mb-4">
                         {hero}
                     </h3>
@@ -124,7 +128,7 @@
     {/if}
 
     {#if skills.length > 0}
-        <h2 class="text-2xl font-bold mb-6 mt-8">Skills</h2>
+        <h2 class="text-2xl font-bold my-4">Skills</h2>
         <div class="space-y-2">
             {#each skills as patch}
                 <PatchNoteCard {patch} />

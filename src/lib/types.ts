@@ -203,6 +203,8 @@ export type BaseMetadata = {
     name: string;
     previousStartingTier: TierType;
     currentStartingTier: TierType;
+    currentSize: Size;
+    type: "item" | "skill";
 };
 
 export type ItemMetadata = BaseMetadata & {

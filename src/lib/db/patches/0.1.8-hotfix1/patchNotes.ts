@@ -11,7 +11,9 @@ const data: PatchNotes = {
         "name": "Primordial Depth Charge",
         "previousStartingTier": "Silver",
         "currentStartingTier": "Silver",
-        "currentHero": "Vanessa"
+        "currentHero": "Vanessa",
+        "currentSize": "Medium",
+        "type": "item"
       },
       "tooltips": [
         {
@@ -27,7 +29,9 @@ const data: PatchNotes = {
         "name": "Private Hot Springs",
         "previousStartingTier": "Gold",
         "currentStartingTier": "Gold",
-        "currentHero": "Pygmalien"
+        "currentHero": "Pygmalien",
+        "currentSize": "Large",
+        "type": "item"
       },
       "tooltips": [
         {
@@ -48,7 +52,9 @@ const data: PatchNotes = {
         "name": "Cold Room",
         "previousStartingTier": "Bronze",
         "currentStartingTier": "Silver",
-        "currentHero": "Pygmalien"
+        "currentHero": "Pygmalien",
+        "currentSize": "Medium",
+        "type": "item"
       },
       "startingTier": {
         "oldValue": "Bronze",
@@ -78,7 +84,9 @@ const data: PatchNotes = {
         "name": "Dive Weights",
         "previousStartingTier": "Silver",
         "currentStartingTier": "Silver",
-        "currentHero": "Vanessa"
+        "currentHero": "Vanessa",
+        "currentSize": "Small",
+        "type": "item"
       },
       "tags": {
         "added": [
@@ -110,7 +118,9 @@ const data: PatchNotes = {
         "name": "Pufferfish",
         "previousStartingTier": "Bronze",
         "currentStartingTier": "Silver",
-        "currentHero": "Vanessa"
+        "currentHero": "Vanessa",
+        "currentSize": "Medium",
+        "type": "item"
       },
       "startingTier": {
         "oldValue": "Bronze",
@@ -135,7 +145,9 @@ const data: PatchNotes = {
         "name": "Octopus",
         "previousStartingTier": "Legendary",
         "currentStartingTier": "Legendary",
-        "currentHero": "Common"
+        "currentHero": "Common",
+        "currentSize": "Medium",
+        "type": "item"
       },
       "tooltips": [
         {
@@ -151,7 +163,9 @@ const data: PatchNotes = {
         "name": "Steam Ladle",
         "previousStartingTier": "Bronze",
         "currentStartingTier": "Bronze",
-        "currentHero": "Pygmalien"
+        "currentHero": "Pygmalien",
+        "currentSize": "Small",
+        "type": "item"
       },
       "tooltips": [
         {
@@ -172,7 +186,9 @@ const data: PatchNotes = {
         "name": "Ice Luge",
         "previousStartingTier": "Gold",
         "currentStartingTier": "Gold",
-        "currentHero": "Pygmalien"
+        "currentHero": "Pygmalien",
+        "currentSize": "Small",
+        "type": "item"
       },
       "tooltips": [
         {
@@ -193,7 +209,9 @@ const data: PatchNotes = {
         "name": "Bushel",
         "previousStartingTier": "Bronze",
         "currentStartingTier": "Bronze",
-        "currentHero": "Pygmalien"
+        "currentHero": "Pygmalien",
+        "currentSize": "Medium",
+        "type": "item"
       },
       "tooltips": [
         {
@@ -209,7 +227,9 @@ const data: PatchNotes = {
         "name": "Yeti Crab",
         "previousStartingTier": "Bronze",
         "currentStartingTier": "Bronze",
-        "currentHero": "Vanessa"
+        "currentHero": "Vanessa",
+        "currentSize": "Small",
+        "type": "item"
       },
       "tooltips": [
         {
@@ -230,7 +250,9 @@ const data: PatchNotes = {
         "name": "Submersible",
         "previousStartingTier": "Silver",
         "currentStartingTier": "Silver",
-        "currentHero": "Vanessa"
+        "currentHero": "Vanessa",
+        "currentSize": "Medium",
+        "type": "item"
       },
       "tooltips": [
         {
@@ -256,7 +278,9 @@ const data: PatchNotes = {
         "name": "Matchbox",
         "previousStartingTier": "Bronze",
         "currentStartingTier": "Bronze",
-        "currentHero": "Pygmalien"
+        "currentHero": "Pygmalien",
+        "currentSize": "Small",
+        "type": "item"
       },
       "tooltips": [
         {
@@ -272,7 +296,9 @@ const data: PatchNotes = {
         "name": "Aurora Dome",
         "previousStartingTier": "Gold",
         "currentStartingTier": "Silver",
-        "currentHero": "Pygmalien"
+        "currentHero": "Pygmalien",
+        "currentSize": "Medium",
+        "type": "item"
       },
       "startingTier": {
         "oldValue": "Gold",
@@ -302,7 +328,9 @@ const data: PatchNotes = {
         "name": "Diving Helmet",
         "previousStartingTier": "Silver",
         "currentStartingTier": "Silver",
-        "currentHero": "Vanessa"
+        "currentHero": "Vanessa",
+        "currentSize": "Medium",
+        "type": "item"
       },
       "tags": {
         "added": [
@@ -317,7 +345,9 @@ const data: PatchNotes = {
         "name": "Uzi",
         "previousStartingTier": "Bronze",
         "currentStartingTier": "Bronze",
-        "currentHero": "Dooley"
+        "currentHero": "Dooley",
+        "currentSize": "Small",
+        "type": "item"
       },
       "tooltips": [
         {
@@ -333,7 +363,9 @@ const data: PatchNotes = {
         "name": "Snowflake",
         "previousStartingTier": "Diamond",
         "currentStartingTier": "Diamond",
-        "currentHero": "Common"
+        "currentHero": "Common",
+        "currentSize": "Small",
+        "type": "item"
       },
       "tooltips": [
         {
@@ -349,7 +381,9 @@ const data: PatchNotes = {
         "name": "Darkwater Anglerfish",
         "previousStartingTier": "Bronze",
         "currentStartingTier": "Silver",
-        "currentHero": "Vanessa"
+        "currentHero": "Vanessa",
+        "currentSize": "Medium",
+        "type": "item"
       },
       "startingTier": {
         "oldValue": "Bronze",
@@ -379,7 +413,9 @@ const data: PatchNotes = {
         "name": "Weights",
         "previousStartingTier": "Bronze",
         "currentStartingTier": "Bronze",
-        "currentHero": "Pygmalien"
+        "currentHero": "Pygmalien",
+        "currentSize": "Medium",
+        "type": "item"
       },
       "tooltips": [
         {
@@ -399,7 +435,9 @@ const data: PatchNotes = {
         "currentStartingTier": "Bronze",
         "heroes": [
           "Common"
-        ]
+        ],
+        "currentSize": "Medium",
+        "type": "skill"
       },
       "tooltips": [
         {
@@ -422,7 +460,9 @@ const data: PatchNotes = {
         "currentStartingTier": "Bronze",
         "heroes": [
           "Common"
-        ]
+        ],
+        "currentSize": "Medium",
+        "type": "skill"
       },
       "tooltips": [
         {
