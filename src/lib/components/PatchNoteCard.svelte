@@ -384,7 +384,7 @@
     class={`relative border text-gray-900 dark:bg-bazaar-background dark:text-bazaar-tan700 dark:border-bazaar-orange scroll-mt-[80px]`}
     {id}
 >
-    <div class="grid grid-cols-[66.66%_33.33%] md:grid-cols-[70%_30%] lg:grid-cols-[80%_20%]">
+    <div class="grid grid-cols-[70%_30%] md:grid-cols-[80%_20%] lg:grid-cols-[85%_15%]">
         <div class="max-w-full col-start-2 row-span-1 md:row-span-2">
             <CardImage 
                 name={patch.metadata.name} 
