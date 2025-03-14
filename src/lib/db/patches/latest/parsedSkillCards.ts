@@ -8687,7 +8687,7 @@ const data: ParsedSkillCard[] = [
       },
       "Diamond": {
         "tooltips": [
-          "The first time you fall below half health each fight, Heal for 30% of your Max Health and Cleanse half your Burn and Poison.[0][0]"
+          "The first time you fall below half health each fight, Heal for 30% of your Max Health and Cleanse half your Burn and Poison."
         ]
       },
       "Legendary": {
@@ -8709,7 +8709,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_Hearty.png",
     "unifiedTooltips": [
-      "The first time you fall below half health each fight, Heal for 30% of your Max Health and Cleanse half your Burn and Poison.[0][0]"
+      "The first time you fall below half health each fight, Heal for 30% of your Max Health and Cleanse half your Burn and Poison."
     ],
     "remarks": [],
     "packId": "Pygmalien_Core"
