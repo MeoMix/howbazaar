@@ -390,6 +390,7 @@
                 name={patch.metadata.name} 
                 type={patch.metadata.type} 
                 size={patch.metadata.currentSize} 
+                isLazy
             />
         </div>
 
@@ -440,7 +441,7 @@
                                             {#each change.removed as enchantment}
                                                 <div class="space-y-1">
                                                     <div
-                                                        class="text-sm font-medium text-gray-500 dark:text-bazaar-tan300 mb-1"
+                                                        class="text-sm font-medium text-enchantments-{enchantment.type.toLowerCase()} mb-1 opacity-60"
                                                     >
                                                         {enchantment.type}
                                                     </div>
@@ -461,7 +462,7 @@
                                             {#each change.added as enchantment}
                                                 <div class="space-y-1">
                                                     <div
-                                                        class="text-sm font-medium text-gray-500 dark:text-bazaar-tan300 mb-1"
+                                                        class="text-sm font-medium text-enchantments-{enchantment.type.toLowerCase()} mb-1 opacity-60"
                                                     >
                                                         {enchantment.type}
                                                     </div>
@@ -484,7 +485,7 @@
                                     {#each change.modified as enchantment}
                                         <div class="space-y-1">
                                             <div
-                                                class="text-sm font-medium text-gray-500 dark:text-bazaar-tan300 mb-1"
+                                                class="text-sm font-medium text-enchantments-{enchantment.type.toLowerCase()} mb-1 opacity-60"
                                             >
                                                 {enchantment.type}
                                             </div>
