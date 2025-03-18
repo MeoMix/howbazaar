@@ -1878,7 +1878,7 @@ const data: ParsedMonster[] = [
       },
       {
         "templateId": "dc3bf5cb-45fa-46c7-9a0e-3f3bfb01697d",
-        "tierType": "Gold",
+        "tierType": "Silver",
         "socketId": "Socket_8"
       }
     ],
