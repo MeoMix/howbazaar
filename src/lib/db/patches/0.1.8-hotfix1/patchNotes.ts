@@ -268,7 +268,7 @@ const data: PatchNotes = {
         {
           "index": 3,
           "oldValue": null,
-          "newValue": "If you have another Vehicle or Large Item, reduce this item's cooldown by 50%."
+          "newValue": "If you have another vehicle or large item, reduce this item's cooldown by 50%."
         }
       ]
     },
@@ -318,7 +318,7 @@ const data: PatchNotes = {
         {
           "index": 2,
           "oldValue": null,
-          "newValue": "When you Freeze, your Shield items gain (+5/+10/+15) Shield for the fight."
+          "newValue": "When you Freeze, your Shield items get (+5/+10/+15) Shield for the fight."
         }
       ]
     },
@@ -371,7 +371,12 @@ const data: PatchNotes = {
         {
           "index": 0,
           "oldValue": "When you sell this, Your leftmost Freeze item gains +1 second to Freeze.",
-          "newValue": "When you sell this, Your leftmost Freeze item gains +0.5 second to Freeze."
+          "newValue": null
+        },
+        {
+          "index": 0,
+          "oldValue": null,
+          "newValue": "When you sell this, your leftmost Freeze item gains +0.5 seconds to Freeze."
         }
       ]
     },
@@ -403,7 +408,7 @@ const data: PatchNotes = {
         {
           "index": 2,
           "oldValue": "When you Slow, charge this 1 second(s).",
-          "newValue": "When you Slow, charge this 2 second(s)."
+          "newValue": "When you Slow, charge this 2 seconds."
         }
       ]
     },

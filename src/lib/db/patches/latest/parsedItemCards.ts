@@ -11662,8 +11662,8 @@ const data: ParsedItemCard[] = [
     },
     "tags": [
       "Aquatic",
-      "Apparel",
-      "Tool"
+      "Tool",
+      "Apparel"
     ],
     "hiddenTags": [
       "Haste",
@@ -27726,7 +27726,7 @@ const data: ParsedItemCard[] = [
           "Cooldown 6 seconds",
           "Deal 24 damage.",
           "Shield equal to this item's damage.",
-          "If you have another Vehicle or Large Item, reduce this item's cooldown by 50%."
+          "If you have another vehicle or large item, reduce this item's cooldown by 50%."
         ]
       },
       "Gold": {
@@ -27734,7 +27734,7 @@ const data: ParsedItemCard[] = [
           "Cooldown 6 seconds",
           "Deal 36 damage.",
           "Shield equal to this item's damage.",
-          "If you have another Vehicle or Large Item, reduce this item's cooldown by 50%."
+          "If you have another vehicle or large item, reduce this item's cooldown by 50%."
         ]
       },
       "Diamond": {
@@ -27742,7 +27742,7 @@ const data: ParsedItemCard[] = [
           "Cooldown 6 seconds",
           "Deal 48 damage.",
           "Shield equal to this item's damage.",
-          "If you have another Vehicle or Large Item, reduce this item's cooldown by 50%."
+          "If you have another vehicle or large item, reduce this item's cooldown by 50%."
         ]
       },
       "Legendary": {
@@ -27835,7 +27835,7 @@ const data: ParsedItemCard[] = [
       "Cooldown 6 seconds",
       "Deal (24/36/48) damage.",
       "Shield equal to this item's damage.",
-      "If you have another Vehicle or Large Item, reduce this item's cooldown by 50%."
+      "If you have another vehicle or large item, reduce this item's cooldown by 50%."
     ],
     "remarks": [],
     "packId": "Vanessa_Mysteries_of_the_Deep"
@@ -34197,21 +34197,21 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Cooldown 5 seconds",
           "Shield 5.",
-          "When you Freeze, your Shield items gain +5 Shield for the fight."
+          "When you Freeze, your Shield items get +5 Shield for the fight."
         ]
       },
       "Gold": {
         "tooltips": [
           "Cooldown 5 seconds",
           "Shield 10.",
-          "When you Freeze, your Shield items gain +10 Shield for the fight."
+          "When you Freeze, your Shield items get +10 Shield for the fight."
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 5 seconds",
           "Shield 15.",
-          "When you Freeze, your Shield items gain +15 Shield for the fight."
+          "When you Freeze, your Shield items get +15 Shield for the fight."
         ]
       },
       "Legendary": {
@@ -34303,7 +34303,7 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Shield (5/10/15).",
-      "When you Freeze, your Shield items gain (+5/+10/+15) Shield for the fight."
+      "When you Freeze, your Shield items get (+5/+10/+15) Shield for the fight."
     ],
     "remarks": [],
     "packId": "Pyg_Frozen_Assets"
@@ -42639,9 +42639,9 @@ const data: ParsedItemCard[] = [
       }
     },
     "tags": [
-      "Apparel",
       "Aquatic",
-      "Tool"
+      "Tool",
+      "Apparel"
     ],
     "hiddenTags": [
       "Shield"
@@ -50003,7 +50003,7 @@ const data: ParsedItemCard[] = [
       },
       "Diamond": {
         "tooltips": [
-          "When you sell this, Your leftmost Freeze item gains +0.5 second to Freeze."
+          "When you sell this, your leftmost Freeze item gains +0.5 seconds to Freeze."
         ]
       },
       "Legendary": {
@@ -50093,7 +50093,7 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "When you sell this, Your leftmost Freeze item gains +0.5 second to Freeze."
+      "When you sell this, your leftmost Freeze item gains +0.5 seconds to Freeze."
     ],
     "remarks": [],
     "packId": "Core"
@@ -50591,21 +50591,21 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Cooldown 10 seconds",
           "Burn 10.",
-          "When you Slow, charge this 2 second(s)."
+          "When you Slow, charge this 2 seconds."
         ]
       },
       "Gold": {
         "tooltips": [
           "Cooldown 9 seconds",
           "Burn 10.",
-          "When you Slow, charge this 2 second(s)."
+          "When you Slow, charge this 2 seconds."
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 8 seconds",
           "Burn 10.",
-          "When you Slow, charge this 2 second(s)."
+          "When you Slow, charge this 2 seconds."
         ]
       },
       "Legendary": {
@@ -50695,7 +50695,7 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "Cooldown (10/9/8) seconds",
       "Burn 10.",
-      "When you Slow, charge this 2 second(s)."
+      "When you Slow, charge this 2 seconds."
     ],
     "remarks": [],
     "packId": "Vanessa_Mysteries_of_the_Deep"
