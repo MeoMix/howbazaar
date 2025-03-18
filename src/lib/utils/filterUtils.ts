@@ -276,8 +276,12 @@ export function sortCards<T extends (ClientSideItemCard | ClientSideSkillCard)>(
     return cards.sort((a, b) => {
         // If searchText is provided, check for exact matches first
         if (searchText) {
-            const aExactMatch = a.name.toLowerCase() === searchText.toLowerCase();
-            const bExactMatch = b.name.toLowerCase() === searchText.toLowerCase();
+            // Split search text by pipe and trim each term
+            const searchTerms = searchText.split('|').map(term => term.trim().toLowerCase());
+            
+            // Check if either card exactly matches any search term
+            const aExactMatch = searchTerms.some(term => a.name.toLowerCase() === term);
+            const bExactMatch = searchTerms.some(term => b.name.toLowerCase() === term);
             
             if (aExactMatch && !bExactMatch) return -1;
             if (!aExactMatch && bExactMatch) return 1;
