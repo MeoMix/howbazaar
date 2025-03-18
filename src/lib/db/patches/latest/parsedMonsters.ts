@@ -1902,7 +1902,8 @@ const data: ParsedMonster[] = [
       {
         "templateId": "3b924a0a-f423-4286-8d08-9ade57b2ebae",
         "tierType": "Silver",
-        "socketId": "Socket_2"
+        "socketId": "Socket_2",
+        "enchantmentType": "Shielded"
       },
       {
         "templateId": "6965d291-610d-46b7-a10d-83578b0e1981",

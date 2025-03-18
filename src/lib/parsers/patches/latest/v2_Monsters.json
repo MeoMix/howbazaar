@@ -4003,7 +4003,7 @@
           },
           {
             "$type": "TCardInstanceItem",
-            "EnchantmentType": null,
+            "EnchantmentType": "Shielded",
             "SocketId": "Socket_2",
             "TemplateId": "3b924a0a-f423-4286-8d08-9ade57b2ebae",
             "TemplateVersion": "1.0.0",
