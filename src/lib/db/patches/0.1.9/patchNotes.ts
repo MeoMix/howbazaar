@@ -3713,64 +3713,6 @@ const data: PatchNotes = {
           "newValue": "The first time you fall below half health each fight, double your enemy's Poison."
         }
       ]
-    },
-    "05ec8652-3c5f-4cba-acd1-c3eee8e49d44": {
-      "metadata": {
-        "id": "05ec8652-3c5f-4cba-acd1-c3eee8e49d44",
-        "name": "Healthy Heart",
-        "previousStartingTier": "Diamond",
-        "currentStartingTier": "Diamond",
-        "heroes": [
-          "Pygmalien",
-          "Vanessa",
-          "Dooley",
-          "Jules",
-          "Stelle",
-          "Mak"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "name": {
-        "oldValue": null,
-        "newValue": "Healthy Heart"
-      },
-      "startingTier": {
-        "oldValue": null,
-        "newValue": "Diamond"
-      },
-      "tags": {
-        "added": [],
-        "removed": []
-      },
-      "hiddenTags": {
-        "added": [
-          "Health"
-        ],
-        "removed": []
-      },
-      "size": {
-        "oldValue": null,
-        "newValue": "Medium"
-      },
-      "heroes": {
-        "added": [
-          "Pygmalien",
-          "Vanessa",
-          "Dooley",
-          "Jules",
-          "Stelle",
-          "Mak"
-        ],
-        "removed": []
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": null,
-          "newValue": "The first time you fall below half health each fight, Heal for 30% of your Max Health and Cleanse half your Burn and Poison."
-        }
-      ]
     }
   }
 };
