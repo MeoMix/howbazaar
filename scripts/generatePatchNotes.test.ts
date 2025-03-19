@@ -65,7 +65,7 @@ describe('getPatchNotes', () => {
             startingTier: 'Silver' as TierType
         })];
 
-        const patchNotes = getPatchNotes(oldItems, newItems, emptySkills, emptySkills);
+        const patchNotes = getPatchNotes(oldItems, newItems, emptySkills, emptySkills, "test");
 
         expect(patchNotes.items['test-id']).toMatchObject({
             metadata: {
@@ -96,7 +96,7 @@ describe('getPatchNotes', () => {
             hiddenTags: ['HealthMax', 'Damage'] as HiddenTag[]
         })];
 
-        const patchNotes = getPatchNotes(oldItems, newItems, emptySkills, emptySkills);
+        const patchNotes = getPatchNotes(oldItems, newItems, emptySkills, emptySkills, "test");
 
         expect(patchNotes.items['test-id']).toMatchObject({
             metadata: {
@@ -133,7 +133,7 @@ describe('getPatchNotes', () => {
             }]
         })];
 
-        const patchNotes = getPatchNotes(oldItems, newItems, emptySkills, emptySkills);
+        const patchNotes = getPatchNotes(oldItems, newItems, emptySkills, emptySkills, "test");
 
         expect(patchNotes.items['test-id']).toMatchObject({
             metadata: {
@@ -170,7 +170,7 @@ describe('getPatchNotes', () => {
             name: 'New Item'
         })];
 
-        const patchNotes = getPatchNotes(oldItems, newItems, emptySkills, emptySkills);
+        const patchNotes = getPatchNotes(oldItems, newItems, emptySkills, emptySkills, "test");
 
         expect(patchNotes.items).toMatchObject({
             'removed-id': {
@@ -237,7 +237,7 @@ describe('getPatchNotes', () => {
             unifiedTooltips: ['Your weapons deal +10 damage']
         })];
 
-        const patchNotes = getPatchNotes(emptyItems, emptyItems, oldSkills, newSkills);
+        const patchNotes = getPatchNotes(emptyItems, emptyItems, oldSkills, newSkills, "test");
 
         expect(patchNotes.skills['test-skill-id']).toMatchObject({
             metadata: {
@@ -274,14 +274,14 @@ describe('getPatchNotes', () => {
             unifiedTooltips: ['Gain 5 shield', 'Deal 10 damage']
         })];
 
-        const patchNotes = getPatchNotes(oldItems, newItems, emptySkills, emptySkills);
+        const patchNotes = getPatchNotes(oldItems, newItems, emptySkills, emptySkills, "test");
         expect(patchNotes.items['test-id']).toBeUndefined();
     });
 
     it('should return empty patch notes when no changes occur', () => {
         const items = [createMockItem()];
         const skills = [createMockSkill()];
-        const patchNotes = getPatchNotes(items, items, skills, skills);
+        const patchNotes = getPatchNotes(items, items, skills, skills, "test");
         expect(patchNotes.items).toEqual({});
         expect(patchNotes.skills).toEqual({});
     });
@@ -301,7 +301,7 @@ describe('getPatchNotes', () => {
             }]
         })];
 
-        const patchNotes = getPatchNotes(oldItems, newItems, emptySkills, emptySkills);
+        const patchNotes = getPatchNotes(oldItems, newItems, emptySkills, emptySkills, "test");
 
         expect(patchNotes.items['test-id']).toMatchObject({
             metadata: {
@@ -350,7 +350,7 @@ describe('getPatchNotes', () => {
             ]
         })];
 
-        const patchNotes = getPatchNotes(oldItems, newItems, emptySkills, emptySkills);
+        const patchNotes = getPatchNotes(oldItems, newItems, emptySkills, emptySkills, "test");
 
         expect(patchNotes.items['test-id']).toMatchObject({
             metadata: {
@@ -407,7 +407,7 @@ describe('getPatchNotes', () => {
             ]
         })];
 
-        const patchNotes = getPatchNotes(oldItems, newItems, emptySkills, emptySkills);
+        const patchNotes = getPatchNotes(oldItems, newItems, emptySkills, emptySkills, "test");
         expect(patchNotes.items['test-id']).toBeUndefined();
     });
 }); 
