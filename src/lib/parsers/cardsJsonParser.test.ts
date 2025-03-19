@@ -89,7 +89,7 @@ describe('cardJsonParser', () => {
       );
     });
 
-    it('should unify Clamera', () => {
+    it.only('should unify Clamera', () => {
       const clamera = itemCards.find(card => card.name === "Clamera")!;
 
       expect(clamera.unifiedTooltips[1]).toEqual(

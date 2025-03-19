@@ -452,6 +452,7 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
         const tierMap = getTierMap(card);
         const remarks = [] as string[];
 
+
         let tiers = Object.fromEntries((Object.entries(tierMap) as Entries<typeof tierMap>).map(
             ([tierName, tier]) => {
                 let rawTooltips = tier.TooltipIds
@@ -476,6 +477,7 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
                         rawTooltips[0] = "When you sell this, upgrade your leftmost Gold (or lower)-tier item.";
                     }
                 }
+
 
                 let tooltips = getDisplayedTooltips(rawTooltips, abilities, auras, tier.Attributes);
                 let attributes = getDisplayedAttributes(tier.Attributes);
