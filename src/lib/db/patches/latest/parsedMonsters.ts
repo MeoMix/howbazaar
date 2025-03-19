@@ -1060,7 +1060,7 @@ const data: ParsedMonster[] = [
     "items": [
       {
         "templateId": "292115b4-a145-476e-b3a7-0fe199b5c1af",
-        "tierType": "Silver",
+        "tierType": "Gold",
         "socketId": "Socket_0"
       },
       {
@@ -1080,7 +1080,7 @@ const data: ParsedMonster[] = [
       },
       {
         "templateId": "292115b4-a145-476e-b3a7-0fe199b5c1af",
-        "tierType": "Silver",
+        "tierType": "Gold",
         "socketId": "Socket_9"
       }
     ],
