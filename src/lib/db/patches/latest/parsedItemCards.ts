@@ -54078,7 +54078,7 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "When your enemy uses an item, Freeze it for (05/1). second(s)."
+      "When your enemy uses an item, Freeze it for (0.5/1) second(s)."
     ],
     "remarks": [],
     "packId": "Vanessa_Core"
@@ -57524,7 +57524,7 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
-      "Freeze 1 for (1/15/2). second(s).",
+      "Freeze 1 for (1/1.5/2) second(s).",
       "This has +1 Multicast for each adjacent Property."
     ],
     "remarks": [],

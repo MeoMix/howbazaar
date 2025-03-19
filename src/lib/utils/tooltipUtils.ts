@@ -174,14 +174,28 @@ function replaceAorAnWithOne(input: string): string {
     });
 }
 
-function adjustPunctuationInsideParentheses(input: string): string {
-    return input.replace(/\(([^)]+)\)/g, (_, content) => {
-        // Remove all periods and commas from inside the parentheses
-        const sanitizedContent = content.replace(/[.,]+/g, '').trim();
-        // Append a single period or comma outside if any existed inside
-        const punctuation = content.match(/[.,]/) ? '.' : '';
-        return `(${sanitizedContent})${punctuation}`;
-    });
+export function adjustPunctuationInsideParentheses(input: string): string {
+  return input.replace(/\(([^)]+)\)/g, (_, content: string) => {
+      // Remove punctuation unless it's between two digits (part of a number)
+      const sanitizedContent = content.replace(
+          /([.,])/g,
+          (match, punct, offset, str) => {
+              const prevChar = str[offset - 1];
+              const nextChar = str[offset + 1];
+              // Keep punctuation if between two digits
+              if (/\d/.test(prevChar) && /\d/.test(nextChar)) {
+                  return punct;
+              }
+              // Otherwise, remove it (we'll move punctuation outside)
+              return '';
+          }
+      ).trim();
+
+      // Add a period outside if any punctuation was removed (except inside numbers)
+      const punctuationRemoved = /([.,])(?!\d)/.test(content);
+
+      return `(${sanitizedContent})${punctuationRemoved ? '.' : ''}`;
+  });
 }
 
 export function unifyTooltips(tooltipsByTier: string[][]): string[] {

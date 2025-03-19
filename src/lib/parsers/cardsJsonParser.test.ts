@@ -89,11 +89,20 @@ describe('cardJsonParser', () => {
       );
     });
 
-    it.only('should unify Clamera', () => {
+    // TODO: FIX ME.
+    it('should unify Clamera', () => {
       const clamera = itemCards.find(card => card.name === "Clamera")!;
 
       expect(clamera.unifiedTooltips[1]).toEqual(
         'Slow (1/2/3/4) item(s) for 1 second(s).',
+      );
+    });
+
+    it('should unify Iceberg and not move 0.5 period outside of parentheses', () => {
+      const iceberg = itemCards.find(card => card.name === "Iceberg")!;
+
+      expect(iceberg.unifiedTooltips[0]).toEqual(
+        'When your enemy uses an item, Freeze it for (0.5/1) second(s).',
       );
     });
 
