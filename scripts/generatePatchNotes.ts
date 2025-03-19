@@ -3,6 +3,26 @@ import path from 'path';
 import type { ParsedItemCard, ParsedSkillCard, TierType, Tag, HiddenTag, Size, Hero, EnchantmentType } from '../src/lib/types';
 import { distance } from 'fastest-levenshtein';
 
+// Version-specific exclusions for patch notes
+// This is useful for hotfixes and retroactive changes that shouldn't appear in patch notes
+const excludedIds = {
+    items: new Map<string, Set<string>>([
+        // Format: ['version', new Set(['id1', 'id2', ...])]
+        // Example: ['0.1.9', new Set(['healthy-heart-id'])]
+    ]),
+    skills: new Map<string, Set<string>>([
+        // Format: ['version', new Set(['id1', 'id2', ...])]
+        // Example: ['0.1.9', new Set(['some-skill-id'])]
+        ['0.1.9', new Set(['05ec8652-3c5f-4cba-acd1-c3eee8e49d44'])]
+    ])
+};
+
+// Helper function to check if an ID should be excluded for a specific version
+function shouldExcludeId(id: string, version: string, type: 'items' | 'skills'): boolean {
+    const exclusions = excludedIds[type].get(version);
+    return exclusions?.has(id) ?? false;
+}
+
 // Types for the patch notes output
 type SimplePropertyChange<T> = {
     oldValue: T | null;
@@ -458,7 +478,7 @@ function generateSkillPatchNote(oldSkill: ParsedSkillCard | undefined, newSkill:
 }
 
 // Run the script
-export function getPatchNotes(oldItems: ParsedItemCard[], newItems: ParsedItemCard[], oldSkills: ParsedSkillCard[], newSkills: ParsedSkillCard[]): PatchNotes {
+export function getPatchNotes(oldItems: ParsedItemCard[], newItems: ParsedItemCard[], oldSkills: ParsedSkillCard[], newSkills: ParsedSkillCard[], version: string): PatchNotes {
     // Create maps for easier lookup
     const oldItemsMap = new Map(oldItems.map((item: ParsedItemCard) => [item.id, item]));
     const newItemsMap = new Map(newItems.map((item: ParsedItemCard) => [item.id, item]));
@@ -474,6 +494,9 @@ export function getPatchNotes(oldItems: ParsedItemCard[], newItems: ParsedItemCa
     const allSkillIds = new Set([...oldSkillsMap.keys(), ...newSkillsMap.keys()]);
 
     for (const id of allItemIds) {
+        // Skip excluded items for this version
+        if (shouldExcludeId(id, version, 'items')) continue;
+
         const oldItem = oldItemsMap.get(id);
         const newItem = newItemsMap.get(id);
 
@@ -484,6 +507,9 @@ export function getPatchNotes(oldItems: ParsedItemCard[], newItems: ParsedItemCa
     }
 
     for (const id of allSkillIds) {
+        // Skip excluded skills for this version
+        if (shouldExcludeId(id, version, 'skills')) continue;
+
         const oldSkill = oldSkillsMap.get(id);
         const newSkill = newSkillsMap.get(id);
 
@@ -494,7 +520,7 @@ export function getPatchNotes(oldItems: ParsedItemCard[], newItems: ParsedItemCa
     }
 
     return {
-        version: 'current', // This will be overridden by generatePatchNotes
+        version,
         items,
         skills
     };
@@ -514,8 +540,7 @@ export async function generatePatchNotes(oldVersion: string, newVersion: string)
     const { default: newSkills } = await import(newSkillsPath) as { default: ParsedSkillCard[] };
 
     // Generate patch notes
-    const patchNotes = getPatchNotes(oldItems, newItems, oldSkills, newSkills);
-    patchNotes.version = newVersion;
+    const patchNotes = getPatchNotes(oldItems, newItems, oldSkills, newSkills, newVersion);
 
     // Write the patch notes as a TypeScript file
     const patchNotesPath = path.resolve(`./src/lib/db/patches/${newVersion}/patchNotes.ts`);
