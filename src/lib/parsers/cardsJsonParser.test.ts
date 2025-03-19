@@ -285,12 +285,12 @@ describe('cardJsonParser', () => {
   });
 
   describe('Enchantments', () => {
-    it('should parse "Deadly Open Sign" correctly by creating a verbose tooltip referencing sell value of items and adjacent properties', () => {
+    it('should parse "Deadly Open Sign" correctly', () => {
       const deadlyOpenSign = itemCards.find(card => card.name === "Open Sign")!;
       const deadlyEnchantment = deadlyOpenSign.enchantments.find(enchantment => enchantment.type === 'Deadly')!;
 
       expect(deadlyEnchantment.tooltips.length).toEqual(1);
-      expect(deadlyEnchantment.tooltips[0]).toEqual('Shield Properties adjacent to this have + Shield equal to the value of your highest value item. [0]');
+      expect(deadlyEnchantment.tooltips[0]).toEqual('Your adjacent Properties have +Crit Chance equal to the value of your highest value item.');
     });
 
     it('should parse "Orbital Polisher" correctly by excluding Shiny which is an invalid enchantment', () => {
