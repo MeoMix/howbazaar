@@ -500,10 +500,6 @@ export function getPatchNotes(oldItems: ParsedItemCard[], newItems: ParsedItemCa
     };
 }
 
-async function loadParsedCards<T>(filePath: string): Promise<T> {
-    return (await import(filePath)).default as T;
-}
-
 export async function generatePatchNotes(oldVersion: string, newVersion: string): Promise<void> {
     // Read the files
     const oldItemsPath = path.resolve(`./src/lib/db/patches/${oldVersion}/parsedItemCards.ts`);
@@ -553,9 +549,11 @@ function getVersionsFromCLI(): { oldVersion: string; newVersion: string } {
     return { oldVersion, newVersion };
 }
 
-// Run the script
-const { oldVersion, newVersion } = getVersionsFromCLI();
-generatePatchNotes(oldVersion, newVersion).catch((error) => {
-    console.error('Error generating patch notes:', error);
-    process.exit(1);
-});
+// Only run the CLI code if this file is being run directly
+if (require.main === module) {
+    const { oldVersion, newVersion } = getVersionsFromCLI();
+    generatePatchNotes(oldVersion, newVersion).catch((error) => {
+        console.error('Error generating patch notes:', error);
+        process.exit(1);
+    });
+}
