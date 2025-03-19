@@ -24,7 +24,8 @@
         Object.values(data.patchNotes.items) as ItemPatchNote[],
     );
     const skills = $derived(
-        Object.values(data.patchNotes.skills) as SkillPatchNote[],
+        Object.values(data.patchNotes.skills)
+            .sort((a, b) => a.metadata.name.localeCompare(b.metadata.name)) as SkillPatchNote[],
     );
 
     const versionOptions = $derived(
