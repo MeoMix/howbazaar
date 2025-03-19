@@ -478,7 +478,6 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
                     }
                 }
 
-
                 let tooltips = getDisplayedTooltips(rawTooltips, abilities, auras, tier.Attributes);
                 let attributes = getDisplayedAttributes(tier.Attributes);
                 let attributeTooltips = attributes.map(attribute => `${attribute.name} ${attribute.name === "Lifesteal" ? "" : Math.round(attribute.value)}${attribute.valueDescriptor ?? ""}`.trim());

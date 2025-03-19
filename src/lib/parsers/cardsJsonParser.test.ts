@@ -89,7 +89,6 @@ describe('cardJsonParser', () => {
       );
     });
 
-    // TODO: FIX ME.
     it('should unify Clamera', () => {
       const clamera = itemCards.find(card => card.name === "Clamera")!;
 

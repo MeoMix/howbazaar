@@ -114,26 +114,42 @@ function convertMultipliersToPercentages(input: string): string {
     });
 }
 
-function normalizePlurality(input: string): string {
-    return input.replace(/\(([^)]+)\)/g, (match, group) => {
-        const parts = group.split('/');
-        const uniqueParts = Array.from(new Set(parts));
+export function normalizePlurality(input: string): string {
+  // Step 1: Temporarily replace (s) with a marker
+  const placeholder = '__PLURAL_MARKER__';
+  const inputWithMarker = input.replace(/\(s\)/g, placeholder);
 
-        // Check if all parts differ solely by plurality (e.g., "item/items/items/items")
-        if (
-            uniqueParts.length === 2 &&
-            uniqueParts[1] === `${uniqueParts[0]}s`
-        ) {
-            return `${uniqueParts[0]}(s)`; // Replace with the plural form (e.g., "items")
-        }
+  // Step 2: Run the plurality normalization as before
+  const result = inputWithMarker.replace(/\(([^)]+)\)/g, (match: string, group: string) => {
+      const parts = group.split('/');
+      const uniqueParts = Array.from(new Set(parts));
 
-        // Do not alter groups that are simple optional suffixes like "(s)"
-        if (uniqueParts.length === 1) {
-            return match; // Retain "(s)" or similar cases unchanged
-        }
+      if (uniqueParts.length === 2) {
+          const [a, b] = uniqueParts;
 
-        return match; // Keep original match if no conditions are met
-    });
+          // Case 1: item/items => item(s)
+          if (b === `${a}s`) {
+              return `${a}(s)`;
+          }
+
+          // Case 2: item/item(s) or items/item(s) => item(s)
+          if (
+              (a === b.replace(placeholder, '')) || 
+              (b === a.replace(placeholder, ''))
+          ) {
+              return a.includes(placeholder) ? a : b;
+          }
+      }
+
+      if (uniqueParts.length === 1) {
+          return match;
+      }
+
+      return match;
+  });
+
+  // Step 3: Restore (s) from the marker
+  return result.replace(new RegExp(placeholder, 'g'), '(s)');
 }
 
 /**

@@ -56544,7 +56544,7 @@ const data: ParsedItemCard[] = [
       "Bronze": {
         "tooltips": [
           "Cooldown 10 seconds",
-          "Slow 1 item(s) for 1 second(s).",
+          "Slow 1 item for 1 second(s).",
           "At the start of each fight, use this."
         ]
       },
