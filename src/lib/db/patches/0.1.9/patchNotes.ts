@@ -2005,7 +2005,7 @@ const data: PatchNotes = {
         {
           "index": 0,
           "oldValue": "When your enemy uses an item, Freeze it for 1 second(s).",
-          "newValue": "When your enemy uses an item, Freeze it for (05/1). second(s)."
+          "newValue": "When your enemy uses an item, Freeze it for (0.5/1) second(s)."
         }
       ],
       "enchantments": {
@@ -2142,340 +2142,9 @@ const data: PatchNotes = {
         {
           "index": 1,
           "oldValue": null,
-          "newValue": "Freeze 1 for (1/15/2). second(s)."
+          "newValue": "Freeze 1 for (1/1.5/2) second(s)."
         }
       ]
-    },
-    "34476196-7d30-4664-8fe3-e99411022a86": {
-      "metadata": {
-        "id": "34476196-7d30-4664-8fe3-e99411022a86",
-        "name": "Zordsword",
-        "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver",
-        "currentHero": "Dooley",
-        "currentSize": "Medium",
-        "type": "item"
-      },
-      "name": {
-        "oldValue": null,
-        "newValue": "Zordsword"
-      },
-      "startingTier": {
-        "oldValue": null,
-        "newValue": "Silver"
-      },
-      "tags": {
-        "added": [
-          "Weapon"
-        ],
-        "removed": []
-      },
-      "hiddenTags": {
-        "added": [
-          "Damage",
-          "Burn",
-          "Cooldown"
-        ],
-        "removed": []
-      },
-      "size": {
-        "oldValue": null,
-        "newValue": "Medium"
-      },
-      "heroes": {
-        "added": [
-          "Dooley"
-        ],
-        "removed": []
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": null,
-          "newValue": "Cooldown 8 seconds"
-        }
-      ],
-      "enchantments": {
-        "added": [
-          {
-            "type": "Heavy",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": null,
-                "newValue": "Slow 1 item for 3 second(s)."
-              }
-            ]
-          },
-          {
-            "type": "Icy",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": null,
-                "newValue": "Freeze 1 item for 2 second(s)."
-              }
-            ]
-          },
-          {
-            "type": "Turbo",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": null,
-                "newValue": "Haste 1 item for 3 second(s)."
-              }
-            ]
-          },
-          {
-            "type": "Shielded",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": null,
-                "newValue": "Shield 12."
-              }
-            ]
-          },
-          {
-            "type": "Restorative",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": null,
-                "newValue": "Heal 16."
-              }
-            ]
-          },
-          {
-            "type": "Toxic",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": null,
-                "newValue": "Poison 2."
-              }
-            ]
-          },
-          {
-            "type": "Fiery",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": null,
-                "newValue": "Burn 4."
-              }
-            ]
-          },
-          {
-            "type": "Shiny",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": null,
-                "newValue": "This has +1 Multicast."
-              }
-            ]
-          },
-          {
-            "type": "Deadly",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": null,
-                "newValue": "+50% Crit Chance"
-              }
-            ]
-          },
-          {
-            "type": "Radiant",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": null,
-                "newValue": "This cannot be Frozen, Slowed or Destroyed."
-              }
-            ]
-          }
-        ],
-        "removed": [],
-        "modified": []
-      }
-    },
-    "8981892b-ce2a-43dc-a08e-2b5e8f8884fc": {
-      "metadata": {
-        "id": "8981892b-ce2a-43dc-a08e-2b5e8f8884fc",
-        "name": "Obsidian Shard",
-        "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze",
-        "currentHero": "Mak",
-        "currentSize": "Small",
-        "type": "item"
-      },
-      "name": {
-        "oldValue": null,
-        "newValue": "Obsidian Shard"
-      },
-      "startingTier": {
-        "oldValue": null,
-        "newValue": "Bronze"
-      },
-      "tags": {
-        "added": [
-          "Weapon",
-          "Ingredient"
-        ],
-        "removed": []
-      },
-      "hiddenTags": {
-        "added": [
-          "Damage"
-        ],
-        "removed": []
-      },
-      "size": {
-        "oldValue": null,
-        "newValue": "Small"
-      },
-      "heroes": {
-        "added": [
-          "Mak"
-        ],
-        "removed": []
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": null,
-          "newValue": "Cooldown 4 seconds"
-        },
-        {
-          "index": 1,
-          "oldValue": null,
-          "newValue": "Deal (5/10/15/20) damage."
-        },
-        {
-          "index": 2,
-          "oldValue": null,
-          "newValue": "When this is transformed, enchant it with Obsidian if able."
-        }
-      ],
-      "enchantments": {
-        "added": [
-          {
-            "type": "Heavy",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": null,
-                "newValue": "Slow 1 item for 2 second(s)."
-              }
-            ]
-          },
-          {
-            "type": "Icy",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": null,
-                "newValue": "Freeze 1 small item for 1 second(s)."
-              }
-            ]
-          },
-          {
-            "type": "Turbo",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": null,
-                "newValue": "Haste 1 item for 2 second(s)."
-              }
-            ]
-          },
-          {
-            "type": "Shielded",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": null,
-                "newValue": "Shield equal to this item's damage."
-              }
-            ]
-          },
-          {
-            "type": "Restorative",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": null,
-                "newValue": "Heal equal to this item's Damage."
-              }
-            ]
-          },
-          {
-            "type": "Toxic",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": null,
-                "newValue": "Poison equal to 10% of this item's damage."
-              }
-            ]
-          },
-          {
-            "type": "Fiery",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": null,
-                "newValue": "Burn equal to 10% of this item's damage."
-              }
-            ]
-          },
-          {
-            "type": "Shiny",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": null,
-                "newValue": "This has +1 Multicast."
-              }
-            ]
-          },
-          {
-            "type": "Deadly",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": null,
-                "newValue": "+50% Crit Chance"
-              }
-            ]
-          },
-          {
-            "type": "Radiant",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": null,
-                "newValue": "This cannot be Frozen, Slowed or Destroyed."
-              }
-            ]
-          },
-          {
-            "type": "Obsidian",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": null,
-                "newValue": "This has double Damage."
-              }
-            ]
-          }
-        ],
-        "removed": [],
-        "modified": []
-      }
     }
   },
   "skills": {
@@ -3465,125 +3134,25 @@ const data: PatchNotes = {
         }
       ]
     },
-    "f790df42-e8e6-4329-aaeb-8a757c02c326": {
+    "e43da7b1-1190-469a-b6c6-43d8e3ca0ad6": {
       "metadata": {
-        "id": "f790df42-e8e6-4329-aaeb-8a757c02c326",
-        "name": "Vital Renewal",
-        "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze",
+        "id": "e43da7b1-1190-469a-b6c6-43d8e3ca0ad6",
+        "name": "Steelstorm",
+        "previousStartingTier": "Silver",
+        "currentStartingTier": "Silver",
         "heroes": [
-          "Mak"
+          "Vanessa"
         ],
         "currentSize": "Medium",
         "type": "skill"
       },
       "name": {
         "oldValue": null,
-        "newValue": "Vital Renewal"
+        "newValue": "Steelstorm"
       },
       "startingTier": {
         "oldValue": null,
-        "newValue": "Bronze"
-      },
-      "tags": {
-        "added": [
-          "Potion"
-        ],
-        "removed": []
-      },
-      "hiddenTags": {
-        "added": [
-          "Cooldown"
-        ],
-        "removed": []
-      },
-      "size": {
-        "oldValue": null,
-        "newValue": "Medium"
-      },
-      "heroes": {
-        "added": [
-          "Mak"
-        ],
-        "removed": []
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": null,
-          "newValue": "When you Slow, Freeze, Poison or Burn, gain (2/4/6/8) Regeneration for the fight."
-        }
-      ]
-    },
-    "8509674b-3c4b-4250-9bb4-666ef7402654": {
-      "metadata": {
-        "id": "8509674b-3c4b-4250-9bb4-666ef7402654",
-        "name": "Alchemical Precision",
-        "previousStartingTier": "Diamond",
-        "currentStartingTier": "Diamond",
-        "heroes": [
-          "Mak"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "name": {
-        "oldValue": null,
-        "newValue": "Alchemical Precision"
-      },
-      "startingTier": {
-        "oldValue": null,
-        "newValue": "Diamond"
-      },
-      "tags": {
-        "added": [
-          "Potion"
-        ],
-        "removed": []
-      },
-      "hiddenTags": {
-        "added": [
-          "Cooldown"
-        ],
-        "removed": []
-      },
-      "size": {
-        "oldValue": null,
-        "newValue": "Medium"
-      },
-      "heroes": {
-        "added": [
-          "Mak"
-        ],
-        "removed": []
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": null,
-          "newValue": "Your Potions have their cooldowns reduced by 1 second."
-        }
-      ]
-    },
-    "42a673e6-f6cd-45ea-89e2-d37614271016": {
-      "metadata": {
-        "id": "42a673e6-f6cd-45ea-89e2-d37614271016",
-        "name": "Crimson Dash",
-        "previousStartingTier": "Diamond",
-        "currentStartingTier": "Diamond",
-        "heroes": [
-          "Mak"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "name": {
-        "oldValue": null,
-        "newValue": "Crimson Dash"
-      },
-      "startingTier": {
-        "oldValue": null,
-        "newValue": "Diamond"
+        "newValue": "Silver"
       },
       "tags": {
         "added": [
@@ -3593,7 +3162,7 @@ const data: PatchNotes = {
       },
       "hiddenTags": {
         "added": [
-          "Cooldown"
+          "DamageReference"
         ],
         "removed": []
       },
@@ -3603,7 +3172,7 @@ const data: PatchNotes = {
       },
       "heroes": {
         "added": [
-          "Mak"
+          "Vanessa"
         ],
         "removed": []
       },
@@ -3611,106 +3180,7 @@ const data: PatchNotes = {
         {
           "index": 0,
           "oldValue": null,
-          "newValue": "Your Lifesteal weapons have their cooldowns reduced by 1 second."
-        }
-      ]
-    },
-    "db94a1da-532e-42e1-af25-5033b0fc8bcb": {
-      "metadata": {
-        "id": "db94a1da-532e-42e1-af25-5033b0fc8bcb",
-        "name": "Essence Overflow",
-        "previousStartingTier": "Diamond",
-        "currentStartingTier": "Diamond",
-        "heroes": [
-          "Mak"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "name": {
-        "oldValue": null,
-        "newValue": "Essence Overflow"
-      },
-      "startingTier": {
-        "oldValue": null,
-        "newValue": "Diamond"
-      },
-      "tags": {
-        "added": [
-          "Weapon"
-        ],
-        "removed": []
-      },
-      "hiddenTags": {
-        "added": [
-          "DamageReference",
-          "RegenReference"
-        ],
-        "removed": []
-      },
-      "size": {
-        "oldValue": null,
-        "newValue": "Medium"
-      },
-      "heroes": {
-        "added": [
-          "Mak"
-        ],
-        "removed": []
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": null,
-          "newValue": "Your weapons have + damage equal to your Regeneration."
-        }
-      ]
-    },
-    "f45baa82-ff32-4337-88b9-71f7a8f2336f": {
-      "metadata": {
-        "id": "f45baa82-ff32-4337-88b9-71f7a8f2336f",
-        "name": "Biohazard",
-        "previousStartingTier": "Diamond",
-        "currentStartingTier": "Diamond",
-        "heroes": [
-          "Mak"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "name": {
-        "oldValue": null,
-        "newValue": "Biohazard"
-      },
-      "startingTier": {
-        "oldValue": null,
-        "newValue": "Diamond"
-      },
-      "tags": {
-        "added": [],
-        "removed": []
-      },
-      "hiddenTags": {
-        "added": [
-          "Poison"
-        ],
-        "removed": []
-      },
-      "size": {
-        "oldValue": null,
-        "newValue": "Medium"
-      },
-      "heroes": {
-        "added": [
-          "Mak"
-        ],
-        "removed": []
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": null,
-          "newValue": "The first time you fall below half health each fight, double your enemy's Poison."
+          "newValue": "Your Weapons have (+4/+8/+12) Damage for each Weapon you have."
         }
       ]
     }

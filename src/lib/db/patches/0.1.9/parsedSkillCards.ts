@@ -2200,52 +2200,6 @@ const data: ParsedSkillCard[] = [
     "packId": "Dooley_Core"
   },
   {
-    "id": "f790df42-e8e6-4329-aaeb-8a757c02c326",
-    "name": "Vital Renewal",
-    "startingTier": "Bronze",
-    "tiers": {
-      "Bronze": {
-        "tooltips": [
-          "When you Slow, Freeze, Poison or Burn, gain 2 Regeneration for the fight."
-        ]
-      },
-      "Silver": {
-        "tooltips": [
-          "When you Slow, Freeze, Poison or Burn, gain 4 Regeneration for the fight."
-        ]
-      },
-      "Gold": {
-        "tooltips": [
-          "When you Slow, Freeze, Poison or Burn, gain 6 Regeneration for the fight."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "When you Slow, Freeze, Poison or Burn, gain 8 Regeneration for the fight."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [
-      "Potion"
-    ],
-    "hiddenTags": [
-      "Cooldown"
-    ],
-    "size": "Medium",
-    "heroes": [
-      "Mak"
-    ],
-    "artKey": "Icon_Skill_Placeholder.png",
-    "unifiedTooltips": [
-      "When you Slow, Freeze, Poison or Burn, gain (2/4/6/8) Regeneration for the fight."
-    ],
-    "remarks": [],
-    "packId": "Mak_Core"
-  },
-  {
     "id": "6bd675c5-a9a3-4a04-b3b3-c6ed09904bc2",
     "name": "Clean Storefront",
     "startingTier": "Silver",
@@ -3452,46 +3406,6 @@ const data: ParsedSkillCard[] = [
     ],
     "remarks": [],
     "packId": "Pygmalien_Core"
-  },
-  {
-    "id": "8509674b-3c4b-4250-9bb4-666ef7402654",
-    "name": "Alchemical Precision",
-    "startingTier": "Diamond",
-    "tiers": {
-      "Bronze": {
-        "tooltips": []
-      },
-      "Silver": {
-        "tooltips": []
-      },
-      "Gold": {
-        "tooltips": []
-      },
-      "Diamond": {
-        "tooltips": [
-          "Your Potions have their cooldowns reduced by 1 second."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [
-      "Potion"
-    ],
-    "hiddenTags": [
-      "Cooldown"
-    ],
-    "size": "Medium",
-    "heroes": [
-      "Mak"
-    ],
-    "artKey": "Icon_Skill_Placeholder.png",
-    "unifiedTooltips": [
-      "Your Potions have their cooldowns reduced by 1 second."
-    ],
-    "remarks": [],
-    "packId": "Mak_Core"
   },
   {
     "id": "fbbfbef7-8fe4-4ac0-81fa-09afb59e0fcc",
@@ -5860,87 +5774,6 @@ const data: ParsedSkillCard[] = [
     "packId": "Pygmalien_Core"
   },
   {
-    "id": "42a673e6-f6cd-45ea-89e2-d37614271016",
-    "name": "Crimson Dash",
-    "startingTier": "Diamond",
-    "tiers": {
-      "Bronze": {
-        "tooltips": []
-      },
-      "Silver": {
-        "tooltips": []
-      },
-      "Gold": {
-        "tooltips": []
-      },
-      "Diamond": {
-        "tooltips": [
-          "Your Lifesteal weapons have their cooldowns reduced by 1 second."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [
-      "Weapon"
-    ],
-    "hiddenTags": [
-      "Cooldown"
-    ],
-    "size": "Medium",
-    "heroes": [
-      "Mak"
-    ],
-    "artKey": "Icon_Skill_Placeholder.png",
-    "unifiedTooltips": [
-      "Your Lifesteal weapons have their cooldowns reduced by 1 second."
-    ],
-    "remarks": [],
-    "packId": "Mak_Core"
-  },
-  {
-    "id": "db94a1da-532e-42e1-af25-5033b0fc8bcb",
-    "name": "Essence Overflow",
-    "startingTier": "Diamond",
-    "tiers": {
-      "Bronze": {
-        "tooltips": []
-      },
-      "Silver": {
-        "tooltips": []
-      },
-      "Gold": {
-        "tooltips": []
-      },
-      "Diamond": {
-        "tooltips": [
-          "Your weapons have + damage equal to your Regeneration."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [
-      "Weapon"
-    ],
-    "hiddenTags": [
-      "DamageReference",
-      "RegenReference"
-    ],
-    "size": "Medium",
-    "heroes": [
-      "Mak"
-    ],
-    "artKey": "Icon_Skill_Placeholder.png",
-    "unifiedTooltips": [
-      "Your weapons have + damage equal to your Regeneration."
-    ],
-    "remarks": [],
-    "packId": "Mak_Core"
-  },
-  {
     "id": "e634860d-fec5-43c1-a6ca-a349450ae9c8",
     "name": "Heavy Firepower",
     "startingTier": "Silver",
@@ -6571,6 +6404,50 @@ const data: ParsedSkillCard[] = [
     ],
     "remarks": [],
     "packId": "Vanessa_Core"
+  },
+  {
+    "id": "e43da7b1-1190-469a-b6c6-43d8e3ca0ad6",
+    "name": "Steelstorm",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Your Weapons have +4 Damage for each Weapon you have."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Your Weapons have +8 Damage for each Weapon you have."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Your Weapons have +12 Damage for each Weapon you have."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Weapon"
+    ],
+    "hiddenTags": [
+      "DamageReference"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Vanessa"
+    ],
+    "artKey": "Icon_Skill_StandardOrdinance.png",
+    "unifiedTooltips": [
+      "Your Weapons have (+4/+8/+12) Damage for each Weapon you have."
+    ],
+    "remarks": [],
+    "packId": "Jules_Core"
   },
   {
     "id": "66d65bb7-09fa-4262-b0a1-12a29ac9e946",
@@ -8415,44 +8292,6 @@ const data: ParsedSkillCard[] = [
     ],
     "remarks": [],
     "packId": "Core"
-  },
-  {
-    "id": "f45baa82-ff32-4337-88b9-71f7a8f2336f",
-    "name": "Biohazard",
-    "startingTier": "Diamond",
-    "tiers": {
-      "Bronze": {
-        "tooltips": []
-      },
-      "Silver": {
-        "tooltips": []
-      },
-      "Gold": {
-        "tooltips": []
-      },
-      "Diamond": {
-        "tooltips": [
-          "The first time you fall below half health each fight, double your enemy's Poison."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [],
-    "hiddenTags": [
-      "Poison"
-    ],
-    "size": "Medium",
-    "heroes": [
-      "Mak"
-    ],
-    "artKey": "Icon_Skill_Placeholder.png",
-    "unifiedTooltips": [
-      "The first time you fall below half health each fight, double your enemy's Poison."
-    ],
-    "remarks": [],
-    "packId": "Mak_Core"
   },
   {
     "id": "09c59ebf-d2f9-4862-9c30-396b9ddfdd89",

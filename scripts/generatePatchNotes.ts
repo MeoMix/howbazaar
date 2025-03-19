@@ -550,10 +550,10 @@ function getVersionsFromCLI(): { oldVersion: string; newVersion: string } {
 }
 
 // Only run the CLI code if this file is being run directly
-if (require.main === module) {
+// if (require.main === module) {
     const { oldVersion, newVersion } = getVersionsFromCLI();
     generatePatchNotes(oldVersion, newVersion).catch((error) => {
         console.error('Error generating patch notes:', error);
         process.exit(1);
     });
-}
+// }

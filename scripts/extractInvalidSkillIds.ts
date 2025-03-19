@@ -56,15 +56,23 @@ const disallowedList = [
   "69edc2fa-7aba-457e-bbcf-05f2e0f18139",
   // Heavy Weaponry
   "015bc348-773e-4009-87ff-231452431bba",
-  // Standard Ordnance
-  "e43da7b1-1190-469a-b6c6-43d8e3ca0ad6",
   // Small Weaponry
   "c4c70f57-c51e-4bc4-848c-0f0e7fbddd28",
   // Microfiber
   "883043eb-5a5f-4fa2-9cae-185f51019b11",
   // Nanite Healing
-  "cac848c8-dc77-4277-ba9f-df282b9f36ef"
+  "cac848c8-dc77-4277-ba9f-df282b9f36ef",
 
+  // Vital Renewal:
+  "f790df42-e8e6-4329-aaeb-8a757c02c326",
+  // Alchemical Precision:
+  "8509674b-3c4b-4250-9bb4-666ef7402654",
+  // Crimson Dash:
+  "42a673e6-f6cd-45ea-89e2-d37614271016",
+  // Essence Overflow:
+  "db94a1da-532e-42e1-af25-5033b0fc8bcb",
+  // Biohazard:
+  "f45baa82-ff32-4337-88b9-71f7a8f2336f"
 ];
 
 // Filter the entries
