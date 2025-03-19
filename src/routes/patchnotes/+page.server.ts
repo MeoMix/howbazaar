@@ -22,7 +22,7 @@ const AVAILABLE_VERSIONS: PatchVersion[] = [
     }
 ];
 
-export async function load({ url }) {
+export async function load({ url, cookies }) {
     const requestedVersion = url.searchParams.get('version') || AVAILABLE_VERSIONS[0].version;
     const selectedVersion = AVAILABLE_VERSIONS.find(v => v.version === requestedVersion) || AVAILABLE_VERSIONS[0];
 
@@ -35,9 +35,13 @@ export async function load({ url }) {
 
     const { default: patchNotes } = await module() as { default: PatchNotes };
 
+    // Get viewMode from cookie, default to "full"
+    const viewMode = cookies.get('patchNotesViewMode') as "full" | "compact" || "full";
+
     return {
         patchNotes,
         versions: AVAILABLE_VERSIONS,
-        currentVersion: selectedVersion.version
+        currentVersion: selectedVersion.version,
+        viewMode
     };
 }

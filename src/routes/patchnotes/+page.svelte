@@ -4,8 +4,11 @@
     import PatchNoteCard from "$lib/components/PatchNoteCard.svelte";
     import type { PageData } from "./$types";
     import { goto } from "$app/navigation";
+    import { browser } from "$app/environment";
 
     let { data }: { data: PageData } = $props();
+
+    let viewMode = $state(data.viewMode);
 
     const items = $derived(
         Object.values(data.patchNotes.items) as ItemPatchNote[],
@@ -20,6 +23,11 @@
             value: version.version,
         })),
     );
+
+    const viewOptions = [
+        { name: "Compact", value: "compact" },
+        { name: "Card", value: "full" },
+    ];
 
     // Group items by hero
     const itemsByHero = $derived.by(() => {
@@ -64,6 +72,18 @@
     function handleVersionChange(version: string) {
         goto(`?version=${version}`, { invalidateAll: true });
     }
+
+    function handleViewChange(view: string) {
+        viewMode = view as "full" | "compact";
+        
+        if (browser) {
+            // Set cookie with 1 year expiry
+            document.cookie = `patchNotesViewMode=${view};path=/;max-age=31536000`;
+        }
+        
+        // Reload the page to get the new cookie value
+        goto(window.location.pathname, { invalidateAll: true });
+    }
 </script>
 
 <svelte:head>
@@ -75,12 +95,21 @@
 >
     <div class="flex justify-between items-center my-6">
         <h1 class="text-3xl font-bold">Patch Notes</h1>
-        <div class="w-48">
-            <Select
-                selectedOption={data.currentVersion}
-                options={versionOptions}
-                onSelectOption={handleVersionChange}
-            />
+        <div class="flex items-center gap-4">
+            <div class="w-32">
+                <Select
+                    selectedOption={viewMode}
+                    options={viewOptions}
+                    onSelectOption={handleViewChange}
+                />
+            </div>
+            <div class="w-48">
+                <Select
+                    selectedOption={data.currentVersion}
+                    options={versionOptions}
+                    onSelectOption={handleVersionChange}
+                />
+            </div>
         </div>
     </div>
 
@@ -109,17 +138,15 @@
     </div>
 
     {#if Object.values(itemsByHero).some((group) => group.length > 0)}
-        <h2 class="text-2xl font-bold my-4">Items</h2>
-
         {#each Object.entries(itemsByHero) as [hero, heroItems]}
             {#if heroItems.length > 0}
-                <div class="my-4">
-                    <h3 class="text-xl font-semibold mb-4">
-                        {hero}
-                    </h3>
-                    <div class="space-y-2">
-                        {#each heroItems as patch, i}
-                            <PatchNoteCard {patch} />
+                <div class="mb-2">
+                    <h2 class="text-2xl font-bold mb-2">
+                        {hero} Items
+                    </h2>
+                    <div class={`${viewMode === "compact" ? "grid grid-cols-1 md:grid-cols-2 gap-2" : "space-y-2"}`}>
+                        {#each heroItems as patch}
+                            <PatchNoteCard state={viewMode} {patch} />
                         {/each}
                     </div>
                 </div>
@@ -128,10 +155,10 @@
     {/if}
 
     {#if skills.length > 0}
-        <h2 class="text-2xl font-bold my-4">Skills</h2>
-        <div class="space-y-2">
+        <h2 class="text-2xl font-bold mb-2">Skills</h2>
+        <div class={`${viewMode === "compact" ? "grid grid-cols-1 md:grid-cols-2 gap-2" : "space-y-2"}`}>
             {#each skills as patch}
-                <PatchNoteCard {patch} />
+                <PatchNoteCard state={viewMode} {patch} />
             {/each}
         </div>
     {/if}
