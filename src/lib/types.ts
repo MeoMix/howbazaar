@@ -244,3 +244,9 @@ export type PatchNotes = {
     items: Record<string, ItemPatchNote>;
     skills: Record<string, SkillPatchNote>;
 };
+
+export interface PatchVersion {
+    version: string;
+    label: string;
+    path: string;
+}

@@ -6,12 +6,17 @@
         ItemPatchNote,
         SkillPatchNote,
     } from "$lib/types";
-    import { Card } from "flowbite-svelte";
     import Divider from "$lib/components/Divider.svelte";
     import CopyLinkButton from "$lib/components/CopyLinkButton.svelte";
     import CardImage from "$lib/components/CardImage.svelte";
 
-    const { patch, state = "full" }: { patch: ItemPatchNote | SkillPatchNote; state?: "full" | "compact" } = $props();
+    const {
+        patch,
+        viewMode,
+    }: {
+        patch: ItemPatchNote | SkillPatchNote;
+        viewMode?: "full" | "compact";
+    } = $props();
 
     const id = $derived(patch.metadata.name.toLowerCase().replace(/\s+/g, "_"));
 
@@ -379,13 +384,13 @@
 {/snippet}
 
 <div
-    class={`rounded-lg relative ${state === "full" ? "border" : ""} text-gray-900 dark:bg-bazaar-background dark:text-bazaar-tan700 dark:border-bazaar-orange scroll-mt-[80px]`}
+    class={`rounded-lg relative ${viewMode === "full" ? "border" : ""} text-gray-900 dark:bg-bazaar-background dark:text-bazaar-tan700 dark:border-bazaar-orange scroll-mt-[80px]`}
     {id}
 >
     <div
         class="grid grid-cols-[70%_30%] md:grid-cols-[80%_20%] lg:grid-cols-[85%_15%]"
     >
-        {#if state === "full"}
+        {#if viewMode === "full"}
             <div class="max-w-full col-start-2 row-span-1 md:row-span-2">
                 <CardImage
                     name={patch.metadata.name}
@@ -396,13 +401,17 @@
             </div>
         {/if}
 
-        <div class={`col-start-1 row-start-1 ${state === "full" ? "px-4 py-4" : "px-0 py-0"}`}>
-            <div class={`flex items-center ${state === "full" ? "mb-3" : ""}`}>
-                <h2 class={`text-2xl font-semibold ${state === "compact" ? "text-bazaar-orange" : ""}`}>
+        <div
+            class={`col-start-1 row-start-1 ${viewMode === "full" ? "px-4 py-4" : "px-0 py-0"}`}
+        >
+            <div
+                class={`flex items-center mb-2`}
+            >
+                <h2
+                    class={`text-2xl font-semibold ${viewMode === "compact" ? "text-bazaar-orange" : ""}`}
+                >
                     {patch.metadata.name}
-                    {#if state === "full"}
-                        <CopyLinkButton {id} name={patch.metadata.name} />
-                    {/if}
+                    <CopyLinkButton {id} name={patch.metadata.name} />
                 </h2>
             </div>
 

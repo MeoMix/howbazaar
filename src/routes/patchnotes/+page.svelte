@@ -3,12 +3,22 @@
     import Select from "$lib/components/Select.svelte";
     import PatchNoteCard from "$lib/components/PatchNoteCard.svelte";
     import type { PageData } from "./$types";
-    import { goto } from "$app/navigation";
+    import { goto, invalidateAll } from "$app/navigation";
     import { browser } from "$app/environment";
+    import { onMount } from "svelte";
 
     let { data }: { data: PageData } = $props();
 
     let viewMode = $state(data.viewMode);
+
+    // Mark versions as seen when the page loads
+    // Do this client-side to avoid marking seen during pre-rendering because user might not actually visit the page
+    onMount(async () => {
+        if (browser) {
+            await fetch('/api/patchnotes/mark-seen', { method: 'POST' });
+            invalidateAll();
+        }
+    });
 
     const items = $derived(
         Object.values(data.patchNotes.items) as ItemPatchNote[],
@@ -146,7 +156,7 @@
                     </h2>
                     <div class={`${viewMode === "compact" ? "grid grid-cols-1 md:grid-cols-2 gap-2" : "space-y-2"}`}>
                         {#each heroItems as patch}
-                            <PatchNoteCard state={viewMode} {patch} />
+                            <PatchNoteCard {viewMode} {patch} />
                         {/each}
                     </div>
                 </div>
@@ -158,7 +168,7 @@
         <h2 class="text-2xl font-bold mb-2">Skills</h2>
         <div class={`${viewMode === "compact" ? "grid grid-cols-1 md:grid-cols-2 gap-2" : "space-y-2"}`}>
             {#each skills as patch}
-                <PatchNoteCard state={viewMode} {patch} />
+                <PatchNoteCard {viewMode} {patch} />
             {/each}
         </div>
     {/if}

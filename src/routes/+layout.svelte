@@ -162,15 +162,19 @@
                     How Bazaar
                 </span>
             </NavBrand>
-            <UpdatedBadge />
         </div>
 
         <div class="flex md:order-2 items-center">
             <a
                 href="/patchnotes"
-                class="hover:text-gray-900 dark:text-bazaar-tan700 dark:hover:text-bazaar-orange dark:hover:bg-bazaar-brown p-2.5 rounded-lg"
+                class="hover:text-gray-900 dark:text-bazaar-tan700 dark:hover:text-bazaar-orange dark:hover:bg-bazaar-brown p-2.5 rounded-lg relative group"
             >
                 <ClipboardOutline />
+                {#if $page.data.hasNewVersions}
+                    <span
+                        class="absolute top-2 right-2 w-2 h-2 bg-gameEffects-heal rounded-full ring-2 ring-white dark:ring-bazaar-background dark:group-hover:ring-bazaar-brown"
+                    ></span>
+                {/if}
             </a>
 
             <a
