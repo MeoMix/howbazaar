@@ -47305,7 +47305,7 @@ const data: ParsedItemCard[] = [
       },
       "Diamond": {
         "tooltips": [
-          "When you sell this, your leftmost Freeze item gains +500 Freeze duration."
+          "When you sell this, your leftmost Freeze item gains +0.5 Freeze duration."
         ]
       },
       "Legendary": {
@@ -47377,7 +47377,7 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "When you sell this, your leftmost Freeze item gains +500 Freeze duration."
+      "When you sell this, your leftmost Freeze item gains +0.5 Freeze duration."
     ],
     "remarks": [],
     "packId": "Core"

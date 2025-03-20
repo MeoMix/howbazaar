@@ -260,6 +260,11 @@ describe('cardJsonParser', () => {
     expect(cooldownTooltip).toEqual("Cooldown 11 seconds");
   });
 
+  it('should parse Snowflakes half second effect properly', () => {
+    const snowflake = itemCards.find(card => card.name === "Snowflake")!;
+    expect(snowflake.tiers.Diamond.tooltips[0]).toContain(`+0.5 Freeze duration.`);
+  });
+
   it('should contain no tooltips with {', () => {
     const disabledItemIds = [
       // Schematics is disabled due to bug so it's ~ok for Tooltip to be broken

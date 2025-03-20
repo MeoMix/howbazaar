@@ -73,6 +73,7 @@ function getAttributeInfo(
                 attributeValue = 0;
             }
         } else if (action.Value?.Modifier) {
+            attributeName = action.AttributeType!;
             // If there's a modifier, and if modifier mode is multiply, then get the attribute type and multiply it by modifier rather than just using modifier.
             attributeValue = action.Value.Modifier.Value.Value ?? action.Value.Modifier.Value.DefaultValue!;
             operation = action.Operation!;
@@ -83,6 +84,11 @@ function getAttributeInfo(
                 if (action.Value.Modifier.Value.Value === undefined) {
                     let modifierAttributeName = action.Value.Modifier.Value.AttributeType;
                     attributeValue = modifierAttributeName === undefined ? 0 : getAttributeValueFromTier(modifierAttributeName, tierAttributes, qualifier);
+                }
+
+                // Freeze, Slow, and Haste deal with time and are expressed in milliseconds. Convert to seconds.
+                if ((attributeName == "FreezeAmount" || attributeName == "SlowAmount" || attributeName == "HasteAmount") && attributeValue && attributeValue >= 100) {
+                    attributeValue /= 1000;
                 }
 
                 return {
@@ -455,6 +461,12 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
         const auras = Object.values(card.Auras);
         const tierMap = getTierMap(card);
         const remarks = [] as string[];
+
+        if (card.Localization.Title.Text === "Snowflake") {
+            console.log(card);
+            debugger;
+        }
+
 
         let tiers = Object.fromEntries((Object.entries(tierMap) as Entries<typeof tierMap>).map(
             ([tierName, tier]) => {
