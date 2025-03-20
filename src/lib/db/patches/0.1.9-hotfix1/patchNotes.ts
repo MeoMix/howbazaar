@@ -130,7 +130,7 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": null,
-                "newValue": "When you sell this, your leftmost Freeze item gains +200 Freeze duration."
+                "newValue": "When you sell this, your leftmost Freeze item gains +0.2 Freeze duration."
               }
             ]
           },
@@ -270,7 +270,7 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": null,
-                "newValue": "When you sell this, your leftmost Freeze item gains +200 Freeze duration."
+                "newValue": "When you sell this, your leftmost Freeze item gains +0.2 Freeze duration."
               }
             ]
           },
@@ -431,7 +431,7 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": null,
-                "newValue": "When you sell this, your leftmost Freeze item gains +200 Freeze duration."
+                "newValue": "When you sell this, your leftmost Freeze item gains +0.2 Freeze duration."
               }
             ]
           },
@@ -598,7 +598,7 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": null,
-                "newValue": "When you sell this, your leftmost Freeze item gains +200 Freeze duration."
+                "newValue": "When you sell this, your leftmost Freeze item gains +0.2 Freeze duration."
               }
             ]
           },
@@ -749,7 +749,7 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": null,
-                "newValue": "When you sell this, your leftmost Freeze item gains +200 Freeze duration."
+                "newValue": "When you sell this, your leftmost Freeze item gains +0.2 Freeze duration."
               }
             ]
           },
@@ -922,7 +922,7 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": null,
-                "newValue": "When you sell this, your leftmost Freeze item gains +200 Freeze duration."
+                "newValue": "When you sell this, your leftmost Freeze item gains +0.2 Freeze duration."
               }
             ]
           },
@@ -1040,7 +1040,7 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": null,
-                "newValue": "When you sell this, your leftmost Freeze item gains +200 Freeze duration."
+                "newValue": "When you sell this, your leftmost Freeze item gains +0.2 Freeze duration."
               }
             ]
           },
@@ -1148,7 +1148,7 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": null,
-                "newValue": "When you sell this, your leftmost Freeze item gains +200 Freeze duration."
+                "newValue": "When you sell this, your leftmost Freeze item gains +0.2 Freeze duration."
               }
             ]
           },
@@ -1332,7 +1332,7 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": null,
-                "newValue": "When you sell this, your leftmost Freeze item gains +200 Freeze duration."
+                "newValue": "When you sell this, your leftmost Freeze item gains +0.2 Freeze duration."
               }
             ]
           },
@@ -1495,7 +1495,7 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": null,
-                "newValue": "When you sell this, your leftmost Freeze item gains +200 Freeze duration."
+                "newValue": "When you sell this, your leftmost Freeze item gains +0.2 Freeze duration."
               }
             ]
           },
@@ -1683,7 +1683,7 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": null,
-                "newValue": "When you sell this, your leftmost Freeze item gains +200 Freeze duration."
+                "newValue": "When you sell this, your leftmost Freeze item gains +0.2 Freeze duration."
               }
             ]
           },
@@ -1844,7 +1844,7 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": null,
-                "newValue": "When you sell this, your leftmost Freeze item gains +200 Freeze duration."
+                "newValue": "When you sell this, your leftmost Freeze item gains +0.2 Freeze duration."
               }
             ]
           },
@@ -2050,7 +2050,7 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": null,
-                "newValue": "When you sell this, your leftmost Freeze item gains +200 Freeze duration."
+                "newValue": "When you sell this, your leftmost Freeze item gains +0.2 Freeze duration."
               }
             ]
           },
@@ -2233,7 +2233,7 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": null,
-                "newValue": "When you sell this, your leftmost Freeze item gains +200 Freeze duration."
+                "newValue": "When you sell this, your leftmost Freeze item gains +0.2 Freeze duration."
               }
             ]
           },
@@ -2619,7 +2619,7 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": null,
-                "newValue": "When you sell this, your leftmost Freeze item gains +200 Freeze duration."
+                "newValue": "When you sell this, your leftmost Freeze item gains +0.2 Freeze duration."
               }
             ]
           },
@@ -2802,7 +2802,7 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": null,
-                "newValue": "When you sell this, your leftmost Freeze item gains +200 Freeze duration."
+                "newValue": "When you sell this, your leftmost Freeze item gains +0.2 Freeze duration."
               }
             ]
           },
@@ -3002,7 +3002,7 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": null,
-                "newValue": "When you sell this, your leftmost Freeze item gains +200 Freeze duration."
+                "newValue": "When you sell this, your leftmost Freeze item gains +0.2 Freeze duration."
               }
             ]
           },
@@ -3142,7 +3142,7 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": null,
-                "newValue": "When you sell this, your leftmost Freeze item gains +200 Freeze duration."
+                "newValue": "When you sell this, your leftmost Freeze item gains +0.2 Freeze duration."
               }
             ]
           },
@@ -3260,7 +3260,7 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": null,
-                "newValue": "When you sell this, your leftmost Freeze item gains +200 Freeze duration."
+                "newValue": "When you sell this, your leftmost Freeze item gains +0.2 Freeze duration."
               }
             ]
           },
