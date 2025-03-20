@@ -1585,6 +1585,76 @@ const data: PatchNotes = {
         "modified": []
       }
     },
+    "783cda9d-1550-42d5-9651-51883da5ad66": {
+      "metadata": {
+        "id": "783cda9d-1550-42d5-9651-51883da5ad66",
+        "name": "Cargo Shorts",
+        "previousStartingTier": "Bronze",
+        "currentStartingTier": "Bronze",
+        "currentHero": "Pygmalien",
+        "currentSize": "Medium",
+        "type": "item"
+      },
+      "hiddenTags": {
+        "added": [
+          "Heal"
+        ],
+        "removed": []
+      },
+      "tooltips": [
+        {
+          "index": 0,
+          "oldValue": "Cooldown 7 seconds",
+          "newValue": "Cooldown 6 seconds"
+        },
+        {
+          "index": 1,
+          "oldValue": "Heal (20/30/40/50).",
+          "newValue": null
+        },
+        {
+          "index": 2,
+          "oldValue": "Shield (20/30/40/50).",
+          "newValue": null
+        },
+        {
+          "index": 4,
+          "oldValue": "Your Apparel have -5% cooldown for each type this has.",
+          "newValue": null
+        },
+        {
+          "index": 1,
+          "oldValue": null,
+          "newValue": "Heal (10/15/20/25) for each type this has."
+        },
+        {
+          "index": 2,
+          "oldValue": null,
+          "newValue": "Shield (10/15/20/25) for each type this has."
+        }
+      ],
+      "enchantments": {
+        "added": [],
+        "removed": [],
+        "modified": [
+          {
+            "type": "Icy",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": "Freeze 2 small or medium item for 1 second(s).",
+                "newValue": null
+              },
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Freeze 2 small item for 1 second(s)."
+              }
+            ]
+          }
+        ]
+      }
+    },
     "d0a15bf6-fc3a-47c5-84c5-7c34c6996598": {
       "metadata": {
         "id": "d0a15bf6-fc3a-47c5-84c5-7c34c6996598",
@@ -2706,6 +2776,206 @@ const data: PatchNotes = {
           }
         ],
         "modified": [
+          {
+            "type": "Heavy",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": "...and Enchant the item with Heavy if able.",
+                "newValue": null
+              },
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "When you sell this, your leftmost Slow item gains +1 Slow duration."
+              }
+            ]
+          },
+          {
+            "type": "Icy",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": "...and Enchant the item with Icy if able.",
+                "newValue": null
+              },
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "When you sell this, your leftmost Freeze item gains +0.2 Freeze duration."
+              }
+            ]
+          },
+          {
+            "type": "Turbo",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": "...and Enchant the item with Turbo if able.",
+                "newValue": null
+              },
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "When you sell this, your leftmost Haste item gains +1 Haste duration."
+              }
+            ]
+          },
+          {
+            "type": "Shielded",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": "...and Enchant the item with Shielded if able.",
+                "newValue": null
+              },
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "When you sell this, your leftmost Shield item gains +20 Shield."
+              }
+            ]
+          },
+          {
+            "type": "Restorative",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": "...and Enchant the item with Restorative if able.",
+                "newValue": null
+              },
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "When you sell this, your leftmost Heal item gains +30 Heal."
+              }
+            ]
+          },
+          {
+            "type": "Toxic",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": "...and Enchant the item with Toxic if able.",
+                "newValue": null
+              },
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "When you sell this, your leftmost Poison item gains +2 Poison."
+              }
+            ]
+          },
+          {
+            "type": "Fiery",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": "...and Enchant the item with Fiery if able.",
+                "newValue": null
+              },
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "When you sell this, your leftmost Burn item gains +2 Burn."
+              }
+            ]
+          },
+          {
+            "type": "Deadly",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": "...and Enchant the item with Deadly if able.",
+                "newValue": null
+              },
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "When you sell this, your leftmost item gains 10% Crit Chance."
+              }
+            ]
+          },
+          {
+            "type": "Obsidian",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": "...and Enchant the item with Obsidian if able.",
+                "newValue": null
+              },
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "When you sell this, your leftmost Weapon item gains +20 damage."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "2aab9e1b-8c8d-49d0-be45-5884731ebb08": {
+      "metadata": {
+        "id": "2aab9e1b-8c8d-49d0-be45-5884731ebb08",
+        "name": "Truffles",
+        "previousStartingTier": "Bronze",
+        "currentStartingTier": "Bronze",
+        "currentHero": "Common",
+        "currentSize": "Small",
+        "type": "item"
+      },
+      "tooltips": [
+        {
+          "index": 0,
+          "oldValue": "When you sell this, your leftmost item gains value equal to this item's value.",
+          "newValue": null
+        },
+        {
+          "index": 0,
+          "oldValue": null,
+          "newValue": "When you sell this, your leftmost item (+1/+2/+3/+4) value."
+        }
+      ],
+      "enchantments": {
+        "added": [],
+        "removed": [
+          {
+            "type": "Shiny",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": "...and Enchant the item with Shiny if able.",
+                "newValue": null
+              }
+            ]
+          },
+          {
+            "type": "Radiant",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": "...and Enchant the item with Radiant if able.",
+                "newValue": null
+              }
+            ]
+          }
+        ],
+        "modified": [
+          {
+            "type": "Golden",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": "...and Enchant the item with Golden if able.",
+                "newValue": null
+              },
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "This has double value gain."
+              }
+            ]
+          },
           {
             "type": "Heavy",
             "tooltipChanges": [

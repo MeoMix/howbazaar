@@ -13611,22 +13611,22 @@ const data: ParsedItemCard[] = [
     "tiers": {
       "Bronze": {
         "tooltips": [
-          "When you sell this, your leftmost item gains value equal to this item's value."
+          "When you sell this, your leftmost item +1 value."
         ]
       },
       "Silver": {
         "tooltips": [
-          "When you sell this, your leftmost item gains value equal to this item's value."
+          "When you sell this, your leftmost item +2 value."
         ]
       },
       "Gold": {
         "tooltips": [
-          "When you sell this, your leftmost item gains value equal to this item's value."
+          "When you sell this, your leftmost item +3 value."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "When you sell this, your leftmost item gains value equal to this item's value."
+          "When you sell this, your leftmost item +4 value."
         ]
       },
       "Legendary": {
@@ -13649,78 +13649,66 @@ const data: ParsedItemCard[] = [
       {
         "type": "Golden",
         "tooltips": [
-          "...and Enchant the item with Golden if able."
+          "This has double value gain."
         ]
       },
       {
         "type": "Heavy",
         "tooltips": [
-          "...and Enchant the item with Heavy if able."
+          "When you sell this, your leftmost Slow item gains +1 Slow duration."
         ]
       },
       {
         "type": "Icy",
         "tooltips": [
-          "...and Enchant the item with Icy if able."
+          "When you sell this, your leftmost Freeze item gains +0.2 Freeze duration."
         ]
       },
       {
         "type": "Turbo",
         "tooltips": [
-          "...and Enchant the item with Turbo if able."
+          "When you sell this, your leftmost Haste item gains +1 Haste duration."
         ]
       },
       {
         "type": "Shielded",
         "tooltips": [
-          "...and Enchant the item with Shielded if able."
+          "When you sell this, your leftmost Shield item gains +20 Shield."
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "...and Enchant the item with Restorative if able."
+          "When you sell this, your leftmost Heal item gains +30 Heal."
         ]
       },
       {
         "type": "Toxic",
         "tooltips": [
-          "...and Enchant the item with Toxic if able."
+          "When you sell this, your leftmost Poison item gains +2 Poison."
         ]
       },
       {
         "type": "Fiery",
         "tooltips": [
-          "...and Enchant the item with Fiery if able."
-        ]
-      },
-      {
-        "type": "Shiny",
-        "tooltips": [
-          "...and Enchant the item with Shiny if able."
+          "When you sell this, your leftmost Burn item gains +2 Burn."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "...and Enchant the item with Deadly if able."
-        ]
-      },
-      {
-        "type": "Radiant",
-        "tooltips": [
-          "...and Enchant the item with Radiant if able."
+          "When you sell this, your leftmost item gains 10% Crit Chance."
         ]
       },
       {
         "type": "Obsidian",
         "tooltips": [
-          "...and Enchant the item with Obsidian if able."
+          "When you sell this, your leftmost Weapon item gains +20 damage."
         ]
       }
     ],
     "unifiedTooltips": [
-      "When you sell this, your leftmost item gains value equal to this item's value."
+      "When you sell this, your leftmost item (+1/+2/+3/+4) value."
     ],
     "remarks": [],
     "packId": "Core"
@@ -16167,38 +16155,34 @@ const data: ParsedItemCard[] = [
     "tiers": {
       "Bronze": {
         "tooltips": [
-          "Cooldown 7 seconds",
-          "Heal 20.",
-          "Shield 20.",
-          "This has the Types of items you have in your Stash.",
-          "Your Apparel have -5% cooldown for each type this has."
+          "Cooldown 6 seconds",
+          "Heal 10 for each type this has.",
+          "Shield 10 for each type this has.",
+          "This has the Types of items you have in your Stash."
         ]
       },
       "Silver": {
         "tooltips": [
-          "Cooldown 7 seconds",
-          "Heal 30.",
-          "Shield 30.",
-          "This has the Types of items you have in your Stash.",
-          "Your Apparel have -5% cooldown for each type this has."
+          "Cooldown 6 seconds",
+          "Heal 15 for each type this has.",
+          "Shield 15 for each type this has.",
+          "This has the Types of items you have in your Stash."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 7 seconds",
-          "Heal 40.",
-          "Shield 40.",
-          "This has the Types of items you have in your Stash.",
-          "Your Apparel have -5% cooldown for each type this has."
+          "Cooldown 6 seconds",
+          "Heal 20 for each type this has.",
+          "Shield 20 for each type this has.",
+          "This has the Types of items you have in your Stash."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 7 seconds",
-          "Heal 50.",
-          "Shield 50.",
-          "This has the Types of items you have in your Stash.",
-          "Your Apparel have -5% cooldown for each type this has."
+          "Cooldown 6 seconds",
+          "Heal 25 for each type this has.",
+          "Shield 25 for each type this has.",
+          "This has the Types of items you have in your Stash."
         ]
       },
       "Legendary": {
@@ -16209,7 +16193,8 @@ const data: ParsedItemCard[] = [
       "Apparel"
     ],
     "hiddenTags": [
-      "Shield"
+      "Shield",
+      "Heal"
     ],
     "size": "Medium",
     "heroes": [
@@ -16225,7 +16210,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Icy",
         "tooltips": [
-          "Freeze 2 small or medium item for 1 second(s)."
+          "Freeze 2 small item for 1 second(s)."
         ]
       },
       {
@@ -16284,11 +16269,10 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "Cooldown 7 seconds",
-      "Heal (20/30/40/50).",
-      "Shield (20/30/40/50).",
-      "This has the Types of items you have in your Stash.",
-      "Your Apparel have -5% cooldown for each type this has."
+      "Cooldown 6 seconds",
+      "Heal (10/15/20/25) for each type this has.",
+      "Shield (10/15/20/25) for each type this has.",
+      "This has the Types of items you have in your Stash."
     ],
     "remarks": [],
     "packId": "Pygmalien_Core"

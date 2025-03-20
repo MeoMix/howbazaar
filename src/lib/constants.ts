@@ -1,7 +1,5 @@
 import type { PatchVersion } from './types';
 
-export const CURRENT_MAJOR_VERSION = '0.1.9';
-
 export const AVAILABLE_VERSIONS: PatchVersion[] = [
     {
         version: '0.1.9-hotfix1',
