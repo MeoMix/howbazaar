@@ -312,7 +312,7 @@
                     <span class="bg-patchnotes-removed px-1 rounded-sm">
                         <UnifiedTooltip
                             tooltip={group.text}
-                            startingTier={currentTier}
+                            startingTier={previousTier}
                         />
                     </span>
                 {:else}
