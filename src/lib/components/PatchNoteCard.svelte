@@ -107,7 +107,7 @@
 
         // Function to normalize a word for comparison (strip punctuation and convert to lowercase)
         const normalizeWord = (word: string) =>
-            word.toLowerCase().replace(/[.,!?;:()]/g, "");
+            word.toLowerCase().replace(/[.,!?;:]/g, "");
 
         // Create normalized versions for comparison
         const normalizedOldWords = oldWords.map(normalizeWord);
