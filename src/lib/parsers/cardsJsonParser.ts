@@ -9,6 +9,7 @@ import type { CardsJson } from "./types.parser";
 import invalidItemIds from "./invalidItemIds.json";
 import invalidSkillIds from "./invalidSkillIds.json";
 import monsterTemplateIdMapping from "./monsterTemplateIdMapping.json";
+import { CURRENT_MAJOR_VERSION } from "$lib/constants";
 
 // JSON contains testing data which isn't shown in game during normal operations
 // I didn't see a good flag for hiding these so I'm explicitly banning them.
@@ -400,6 +401,7 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
         entry.Tiers !== undefined &&
         entry.Localization.Title.Text !== null &&
         !entry.Localization.Title.Text.includes("[DEBUG]") &&
+        entry.Version === CURRENT_MAJOR_VERSION &&
         !invalidItemIds.includes(entry.Id) &&
         !explicitlyHiddenItemIds.includes(entry.Id);
 
@@ -706,6 +708,7 @@ function parseSkillCards(cardsJson: CardsJson): ParsedSkillCard[] {
         entry.Tiers !== undefined &&
         entry.Localization.Title.Text !== null &&
         !entry.Localization.Title.Text.includes("[DEBUG]") &&
+        entry.Version === CURRENT_MAJOR_VERSION &&
         !invalidSkillIds.includes(entry.Id) &&
         !!entry.ArtKey;
 
@@ -802,6 +805,7 @@ function parseCombatEncounterCards(cardsJson: CardsJson) {
         // entry.SpawningEligibility !== "Never" &&
         entry.CombatantType !== undefined &&
         (monsterTemplateIdMapping as any)[entry.Id] &&
+        entry.Version === CURRENT_MAJOR_VERSION &&
         entry.Localization.Title.Text !== null;
 
     const validCards = Object.values(cardsJson).flat().filter(isEncounter);

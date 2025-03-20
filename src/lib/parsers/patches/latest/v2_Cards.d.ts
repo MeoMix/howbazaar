@@ -2209,4 +2209,4 @@ export interface Bronze {
     TooltipIds: number[];
 }
 
-export type Version = "1.0.0" | "0.0.0";
+export type Version = "1.0.0" | "0.0.0" | "0.1.7" | "0.1.8" | "0.1.9";
