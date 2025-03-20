@@ -115,6 +115,11 @@ function getAttributeInfo(
         // so that we can say stuff like "Heal equal to shield" rather than "Heal 0" when there's no shield in an out of game context.
     }
 
+    // Freeze, Slow, and Haste deal with time and are expressed in milliseconds. Convert to seconds.
+    if ((attributeName == "FreezeAmount" || attributeName == "SlowAmount" || attributeName == "HasteAmount") && attributeValue && attributeValue >= 100) {
+        attributeValue /= 1000;
+    }
+
     return {
         name: attributeName,
         value: attributeValue,
@@ -352,7 +357,6 @@ function getDisplayedTooltips(tooltips: string[], abilities: Ability[], auras: A
     return displayedTooltips;
 }
 
-
 // Sometimes data gets left behind in tiers (i.e. an items starting tier is changed to Gold and the underlying data retains info regarding Silver)
 // Drop this data as to not confuse unifyTooltips.
 // Also, Legendary data only applies to Legendary items not to all items, so drop Legendary from non-Legendary items even though it's a "tier above"
@@ -451,7 +455,6 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
         const auras = Object.values(card.Auras);
         const tierMap = getTierMap(card);
         const remarks = [] as string[];
-
 
         let tiers = Object.fromEntries((Object.entries(tierMap) as Entries<typeof tierMap>).map(
             ([tierName, tier]) => {

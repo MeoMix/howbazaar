@@ -98,7 +98,12 @@ const disallowedList = [
   '34476196-7d30-4664-8fe3-e99411022a86',
 
   // Obsidian Shard:
-  '8981892b-ce2a-43dc-a08e-2b5e8f8884fc'
+  '8981892b-ce2a-43dc-a08e-2b5e8f8884fc',
+
+  // 0.1.8 truffles:
+  '2aab9e1b-8c8d-49d0-be45-5884731ebb08',
+  // 0.1.8 cargo shorts:
+  '783cda9d-1550-42d5-9651-51883da5ad66'
 ];
 
 // Filter the entries

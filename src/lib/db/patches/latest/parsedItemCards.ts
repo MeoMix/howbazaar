@@ -5265,7 +5265,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Icy",
         "tooltips": [
-          "When you sell this, your leftmost Freeze item gains +200 Freeze duration."
+          "When you sell this, your leftmost Freeze item gains +0.2 Freeze duration."
         ]
       },
       {
@@ -6227,7 +6227,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Icy",
         "tooltips": [
-          "When you sell this, your leftmost Freeze item gains +200 Freeze duration."
+          "When you sell this, your leftmost Freeze item gains +0.2 Freeze duration."
         ]
       },
       {
@@ -13605,127 +13605,6 @@ const data: ParsedItemCard[] = [
     "packId": "Vanessa_Core"
   },
   {
-    "id": "2aab9e1b-8c8d-49d0-be45-5884731ebb08",
-    "name": "Truffles",
-    "startingTier": "Bronze",
-    "tiers": {
-      "Bronze": {
-        "tooltips": [
-          "When you sell this, your leftmost item gains value equal to this item's value."
-        ]
-      },
-      "Silver": {
-        "tooltips": [
-          "When you sell this, your leftmost item gains value equal to this item's value."
-        ]
-      },
-      "Gold": {
-        "tooltips": [
-          "When you sell this, your leftmost item gains value equal to this item's value."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "When you sell this, your leftmost item gains value equal to this item's value."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [
-      "Food",
-      "Loot"
-    ],
-    "hiddenTags": [
-      "Value",
-      "EconomyReference"
-    ],
-    "size": "Small",
-    "heroes": [
-      "Common"
-    ],
-    "enchantments": [
-      {
-        "type": "Golden",
-        "tooltips": [
-          "...and Enchant the item with Golden if able."
-        ]
-      },
-      {
-        "type": "Heavy",
-        "tooltips": [
-          "...and Enchant the item with Heavy if able."
-        ]
-      },
-      {
-        "type": "Icy",
-        "tooltips": [
-          "...and Enchant the item with Icy if able."
-        ]
-      },
-      {
-        "type": "Turbo",
-        "tooltips": [
-          "...and Enchant the item with Turbo if able."
-        ]
-      },
-      {
-        "type": "Shielded",
-        "tooltips": [
-          "...and Enchant the item with Shielded if able."
-        ]
-      },
-      {
-        "type": "Restorative",
-        "tooltips": [
-          "...and Enchant the item with Restorative if able."
-        ]
-      },
-      {
-        "type": "Toxic",
-        "tooltips": [
-          "...and Enchant the item with Toxic if able."
-        ]
-      },
-      {
-        "type": "Fiery",
-        "tooltips": [
-          "...and Enchant the item with Fiery if able."
-        ]
-      },
-      {
-        "type": "Shiny",
-        "tooltips": [
-          "...and Enchant the item with Shiny if able."
-        ]
-      },
-      {
-        "type": "Deadly",
-        "tooltips": [
-          "...and Enchant the item with Deadly if able."
-        ]
-      },
-      {
-        "type": "Radiant",
-        "tooltips": [
-          "...and Enchant the item with Radiant if able."
-        ]
-      },
-      {
-        "type": "Obsidian",
-        "tooltips": [
-          "...and Enchant the item with Obsidian if able."
-        ]
-      }
-    ],
-    "unifiedTooltips": [
-      "When you sell this, your leftmost item gains value equal to this item's value."
-    ],
-    "remarks": [],
-    "packId": "Core"
-  },
-  {
     "id": "ba6ba8f6-7076-406a-89e6-ddaa39044959",
     "name": "Lifting Gloves",
     "startingTier": "Bronze",
@@ -15873,7 +15752,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Icy",
         "tooltips": [
-          "When you sell this, your leftmost Freeze item gains +200 Freeze duration."
+          "When you sell this, your leftmost Freeze item gains +0.2 Freeze duration."
         ]
       },
       {
@@ -16156,139 +16035,6 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Your Small items have (+1/+2) value."
-    ],
-    "remarks": [],
-    "packId": "Pygmalien_Core"
-  },
-  {
-    "id": "783cda9d-1550-42d5-9651-51883da5ad66",
-    "name": "Cargo Shorts",
-    "startingTier": "Bronze",
-    "tiers": {
-      "Bronze": {
-        "tooltips": [
-          "Cooldown 7 seconds",
-          "Heal 20.",
-          "Shield 20.",
-          "This has the Types of items you have in your Stash.",
-          "Your Apparel have -5% cooldown for each type this has."
-        ]
-      },
-      "Silver": {
-        "tooltips": [
-          "Cooldown 7 seconds",
-          "Heal 30.",
-          "Shield 30.",
-          "This has the Types of items you have in your Stash.",
-          "Your Apparel have -5% cooldown for each type this has."
-        ]
-      },
-      "Gold": {
-        "tooltips": [
-          "Cooldown 7 seconds",
-          "Heal 40.",
-          "Shield 40.",
-          "This has the Types of items you have in your Stash.",
-          "Your Apparel have -5% cooldown for each type this has."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "Cooldown 7 seconds",
-          "Heal 50.",
-          "Shield 50.",
-          "This has the Types of items you have in your Stash.",
-          "Your Apparel have -5% cooldown for each type this has."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [
-      "Apparel"
-    ],
-    "hiddenTags": [
-      "Shield"
-    ],
-    "size": "Medium",
-    "heroes": [
-      "Pygmalien"
-    ],
-    "enchantments": [
-      {
-        "type": "Heavy",
-        "tooltips": [
-          "Slow 2 item for 2 second(s)."
-        ]
-      },
-      {
-        "type": "Icy",
-        "tooltips": [
-          "Freeze 2 small or medium item for 1 second(s)."
-        ]
-      },
-      {
-        "type": "Turbo",
-        "tooltips": [
-          "Haste 2 item for 2 second(s)."
-        ]
-      },
-      {
-        "type": "Shielded",
-        "tooltips": [
-          "This has double Shield."
-        ]
-      },
-      {
-        "type": "Restorative",
-        "tooltips": [
-          "This has double Heal."
-        ]
-      },
-      {
-        "type": "Toxic",
-        "tooltips": [
-          "Poison equal to 10% of this item's Heal."
-        ]
-      },
-      {
-        "type": "Fiery",
-        "tooltips": [
-          "Burn equal to 10% of this item's Heal."
-        ]
-      },
-      {
-        "type": "Shiny",
-        "tooltips": [
-          "This has +1 Multicast."
-        ]
-      },
-      {
-        "type": "Deadly",
-        "tooltips": [
-          "+50% Crit Chance"
-        ]
-      },
-      {
-        "type": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
-        "type": "Obsidian",
-        "tooltips": [
-          "Deal damage equal to this item's Heal."
-        ]
-      }
-    ],
-    "unifiedTooltips": [
-      "Cooldown 7 seconds",
-      "Heal (20/30/40/50).",
-      "Shield (20/30/40/50).",
-      "This has the Types of items you have in your Stash.",
-      "Your Apparel have -5% cooldown for each type this has."
     ],
     "remarks": [],
     "packId": "Pygmalien_Core"
@@ -17639,7 +17385,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Icy",
         "tooltips": [
-          "When you sell this, your leftmost Freeze item gains +200 Freeze duration."
+          "When you sell this, your leftmost Freeze item gains +0.2 Freeze duration."
         ]
       },
       {
@@ -19472,7 +19218,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Icy",
         "tooltips": [
-          "When you sell this, your leftmost Freeze item gains +200 Freeze duration."
+          "When you sell this, your leftmost Freeze item gains +0.2 Freeze duration."
         ]
       },
       {
@@ -22816,7 +22562,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Icy",
         "tooltips": [
-          "When you sell this, your leftmost Freeze item gains +200 Freeze duration."
+          "When you sell this, your leftmost Freeze item gains +0.2 Freeze duration."
         ]
       },
       {
@@ -23761,7 +23507,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Icy",
         "tooltips": [
-          "When you sell this, your leftmost Freeze item gains +200 Freeze duration."
+          "When you sell this, your leftmost Freeze item gains +0.2 Freeze duration."
         ]
       },
       {
@@ -30825,7 +30571,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Icy",
         "tooltips": [
-          "When you sell this, your leftmost Freeze item gains +200 Freeze duration."
+          "When you sell this, your leftmost Freeze item gains +0.2 Freeze duration."
         ]
       },
       {
@@ -31966,7 +31712,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Icy",
         "tooltips": [
-          "When you sell this, your leftmost Freeze item gains +200 Freeze duration."
+          "When you sell this, your leftmost Freeze item gains +0.2 Freeze duration."
         ]
       },
       {
@@ -38029,7 +37775,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Icy",
         "tooltips": [
-          "When you sell this, your leftmost Freeze item gains +200 Freeze duration."
+          "When you sell this, your leftmost Freeze item gains +0.2 Freeze duration."
         ]
       },
       {
@@ -39584,7 +39330,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Icy",
         "tooltips": [
-          "When you sell this, your leftmost Freeze item gains +200 Freeze duration."
+          "When you sell this, your leftmost Freeze item gains +0.2 Freeze duration."
         ]
       },
       {
@@ -42672,7 +42418,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Icy",
         "tooltips": [
-          "When you sell this, your leftmost Freeze item gains +200 Freeze duration."
+          "When you sell this, your leftmost Freeze item gains +0.2 Freeze duration."
         ]
       },
       {
@@ -43214,7 +42960,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Icy",
         "tooltips": [
-          "When you sell this, your leftmost Freeze item gains +200 Freeze duration."
+          "When you sell this, your leftmost Freeze item gains +0.2 Freeze duration."
         ]
       },
       {
@@ -50279,7 +50025,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Icy",
         "tooltips": [
-          "When you sell this, your leftmost Freeze item gains +200 Freeze duration."
+          "When you sell this, your leftmost Freeze item gains +0.2 Freeze duration."
         ]
       },
       {
@@ -53708,7 +53454,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Icy",
         "tooltips": [
-          "When you sell this, your leftmost Freeze item gains +200 Freeze duration."
+          "When you sell this, your leftmost Freeze item gains +0.2 Freeze duration."
         ]
       },
       {
@@ -55425,7 +55171,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Icy",
         "tooltips": [
-          "When you sell this, your leftmost Freeze item gains +200 Freeze duration."
+          "When you sell this, your leftmost Freeze item gains +0.2 Freeze duration."
         ]
       },
       {
@@ -56060,7 +55806,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Icy",
         "tooltips": [
-          "When you sell this, your leftmost Freeze item gains +200 Freeze duration."
+          "When you sell this, your leftmost Freeze item gains +0.2 Freeze duration."
         ]
       },
       {
@@ -57588,7 +57334,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Icy",
         "tooltips": [
-          "When you sell this, your leftmost Freeze item gains +200 Freeze duration."
+          "When you sell this, your leftmost Freeze item gains +0.2 Freeze duration."
         ]
       },
       {
@@ -57639,244 +57385,6 @@ const data: ParsedItemCard[] = [
     ],
     "remarks": [],
     "packId": "Core"
-  },
-  {
-    "id": "2aab9e1b-8c8d-49d0-be45-5884731ebb08",
-    "name": "Truffles",
-    "startingTier": "Bronze",
-    "tiers": {
-      "Bronze": {
-        "tooltips": [
-          "When you sell this, your leftmost item +1 value."
-        ]
-      },
-      "Silver": {
-        "tooltips": [
-          "When you sell this, your leftmost item +2 value."
-        ]
-      },
-      "Gold": {
-        "tooltips": [
-          "When you sell this, your leftmost item +3 value."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "When you sell this, your leftmost item +4 value."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [
-      "Food",
-      "Loot"
-    ],
-    "hiddenTags": [
-      "Value",
-      "EconomyReference"
-    ],
-    "size": "Small",
-    "heroes": [
-      "Common"
-    ],
-    "enchantments": [
-      {
-        "type": "Golden",
-        "tooltips": [
-          "This has double value gain."
-        ]
-      },
-      {
-        "type": "Heavy",
-        "tooltips": [
-          "When you sell this, your leftmost Slow item gains +1 Slow duration."
-        ]
-      },
-      {
-        "type": "Icy",
-        "tooltips": [
-          "When you sell this, your leftmost Freeze item gains +200 Freeze duration."
-        ]
-      },
-      {
-        "type": "Turbo",
-        "tooltips": [
-          "When you sell this, your leftmost Haste item gains +1 Haste duration."
-        ]
-      },
-      {
-        "type": "Shielded",
-        "tooltips": [
-          "When you sell this, your leftmost Shield item gains +20 Shield."
-        ]
-      },
-      {
-        "type": "Restorative",
-        "tooltips": [
-          "When you sell this, your leftmost Heal item gains +30 Heal."
-        ]
-      },
-      {
-        "type": "Toxic",
-        "tooltips": [
-          "When you sell this, your leftmost Poison item gains +2 Poison."
-        ]
-      },
-      {
-        "type": "Fiery",
-        "tooltips": [
-          "When you sell this, your leftmost Burn item gains +2 Burn."
-        ]
-      },
-      {
-        "type": "Deadly",
-        "tooltips": [
-          "When you sell this, your leftmost item gains 10% Crit Chance."
-        ]
-      },
-      {
-        "type": "Obsidian",
-        "tooltips": [
-          "When you sell this, your leftmost Weapon item gains +20 damage."
-        ]
-      }
-    ],
-    "unifiedTooltips": [
-      "When you sell this, your leftmost item (+1/+2/+3/+4) value."
-    ],
-    "remarks": [],
-    "packId": "Core"
-  },
-  {
-    "id": "783cda9d-1550-42d5-9651-51883da5ad66",
-    "name": "Cargo Shorts",
-    "startingTier": "Bronze",
-    "tiers": {
-      "Bronze": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Heal 10 for each type this has.",
-          "Shield 10 for each type this has.",
-          "This has the Types of items you have in your Stash."
-        ]
-      },
-      "Silver": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Heal 15 for each type this has.",
-          "Shield 15 for each type this has.",
-          "This has the Types of items you have in your Stash."
-        ]
-      },
-      "Gold": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Heal 20 for each type this has.",
-          "Shield 20 for each type this has.",
-          "This has the Types of items you have in your Stash."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Heal 25 for each type this has.",
-          "Shield 25 for each type this has.",
-          "This has the Types of items you have in your Stash."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [
-      "Apparel"
-    ],
-    "hiddenTags": [
-      "Shield",
-      "Heal"
-    ],
-    "size": "Medium",
-    "heroes": [
-      "Pygmalien"
-    ],
-    "enchantments": [
-      {
-        "type": "Heavy",
-        "tooltips": [
-          "Slow 2 item for 2 second(s)."
-        ]
-      },
-      {
-        "type": "Icy",
-        "tooltips": [
-          "Freeze 2 small item for 1 second(s)."
-        ]
-      },
-      {
-        "type": "Turbo",
-        "tooltips": [
-          "Haste 2 item for 2 second(s)."
-        ]
-      },
-      {
-        "type": "Shielded",
-        "tooltips": [
-          "This has double Shield."
-        ]
-      },
-      {
-        "type": "Restorative",
-        "tooltips": [
-          "This has double Heal."
-        ]
-      },
-      {
-        "type": "Toxic",
-        "tooltips": [
-          "Poison equal to 10% of this item's Heal."
-        ]
-      },
-      {
-        "type": "Fiery",
-        "tooltips": [
-          "Burn equal to 10% of this item's Heal."
-        ]
-      },
-      {
-        "type": "Shiny",
-        "tooltips": [
-          "This has +1 Multicast."
-        ]
-      },
-      {
-        "type": "Deadly",
-        "tooltips": [
-          "+50% Crit Chance"
-        ]
-      },
-      {
-        "type": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
-        "type": "Obsidian",
-        "tooltips": [
-          "Deal damage equal to this item's Heal."
-        ]
-      }
-    ],
-    "unifiedTooltips": [
-      "Cooldown 6 seconds",
-      "Heal (10/15/20/25) for each type this has.",
-      "Shield (10/15/20/25) for each type this has.",
-      "This has the Types of items you have in your Stash."
-    ],
-    "remarks": [],
-    "packId": "Pygmalien_Core"
   }
 ];
 

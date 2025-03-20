@@ -285,6 +285,14 @@ describe('cardJsonParser', () => {
   });
 
   describe('Enchantments', () => {
+    it('should parse "Icy Blue Gumball" correctly by converting +200 Freeze duration to +0.2 Freeze duration', () => {
+      const blueGumball = itemCards.find(card => card.name === "Blue Gumball")!;
+      const icyBlueGumball = blueGumball.enchantments.find(enchantment => enchantment.type === 'Icy')!;
+
+      expect(icyBlueGumball.tooltips.length).toEqual(1);
+      expect(icyBlueGumball.tooltips[0]).toEqual('When you sell this, your leftmost Freeze item gains +0.2 Freeze duration.');
+    });
+
     it('should parse "Deadly Open Sign" correctly', () => {
       const deadlyOpenSign = itemCards.find(card => card.name === "Open Sign")!;
       const deadlyEnchantment = deadlyOpenSign.enchantments.find(enchantment => enchantment.type === 'Deadly')!;
