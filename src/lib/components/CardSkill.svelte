@@ -39,12 +39,14 @@
                         {
                             text: `${card.startingTier}${card.startingTier === "Legendary" ? "" : "+"}`,
                             color: card.startingTier.toLowerCase(),
+                            showIcon: false,
                         },
                         ...card.heroes.map((text) => ({
                             text,
+                            showIcon: false,
                         })),
                     ]}
-                    secondaryBadges={tags.map((text) => ({ text }))}
+                    secondaryBadges={tags.map((text) => ({ text, showIcon: true }))}
                 />
 
                 {#if card.combatEncounters.length > 0}

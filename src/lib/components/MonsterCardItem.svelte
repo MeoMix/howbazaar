@@ -65,8 +65,9 @@
                     {
                         text: tierType,
                         color: tierType.toLowerCase(),
+                        showIcon: false,
                     },
-                    ...card.tags.map((text) => ({ text }))
+                    ...card.tags.map((text) => ({ text, showIcon: true }))
                 ]}
             />
 
