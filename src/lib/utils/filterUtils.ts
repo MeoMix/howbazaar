@@ -109,8 +109,8 @@ function matchesTagState(
 }
 
 
-// Match "yo-yo" to "yoyo" but don't match "Fort" to "Port" (as would be the case with Lev distance)
-const normalize = (text: string): string => text.replace(/[^\w\s]|_/g, "");
+// Match "yo-yo" to "yoyo" and "ice cream" to "icecream"
+const normalize = (text: string): string => text.replace(/[^\w]|_/g, "");
 
 // Substring and normalized matching functions
 const substringMatch = (text: string, lowerSearchText: string): boolean => {
