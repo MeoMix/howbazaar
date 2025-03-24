@@ -4,7 +4,7 @@ dotenv.config({ path: './.env.local' });
 import axios from 'axios';
 import { readdir } from 'fs/promises';
 import { createReadStream } from 'fs';
-import { join, relative, dirname } from 'path';
+import { join, relative } from 'path';
 
 // Load environment variables
 const API_KEY = process.env.BUNNY_API_KEY;
@@ -32,6 +32,7 @@ const uploadFile = async (filePath: string) => {
 
         const fileStream = createReadStream(filePath);
 
+        // NOTE: This won't purge cache - need to go into the GUI to do that if the file existed previously.
         const response = await axios.put(storagePath, fileStream, {
             headers: {
                 AccessKey: API_KEY!,
