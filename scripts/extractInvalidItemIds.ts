@@ -99,6 +99,9 @@ const disallowedList = [
 
   // Obsidian Shard:
   '8981892b-ce2a-43dc-a08e-2b5e8f8884fc',
+
+  // Ice 9000:
+  '1fbbefea-2da0-46a5-b60d-dad9478ade86'
 ];
 
 // Filter the entries
