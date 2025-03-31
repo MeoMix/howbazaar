@@ -9,7 +9,13 @@
     import Divider from "./Divider.svelte";
     import CopyLinkButton from "./CopyLinkButton.svelte";
 
-    const { card }: { card: ClientSideSkillCard } = $props();
+    const { 
+        card,
+        showCopyLink = true,
+    }: { 
+        card: ClientSideSkillCard;
+        showCopyLink?: boolean;
+    } = $props();
 
     const id = $derived(card.name.replace(/\s+/g, "_"));
     const tags = $derived(filterTags(card.tags, card.hiddenTags));
@@ -31,7 +37,9 @@
             <div class="flex flex-col gap-2 relative">
                 <div class="font-bold text-2xl">
                     {card.name}
-                    <CopyLinkButton {id} name={card.name} />
+                    {#if showCopyLink}
+                        <CopyLinkButton {id} name={card.name} />
+                    {/if}
                 </div>
 
                 <CardBadges

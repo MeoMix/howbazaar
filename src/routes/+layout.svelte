@@ -17,6 +17,8 @@
     import ClipboardOutline from "flowbite-svelte-icons/ClipboardOutline.svelte";
     import { onDestroy, onMount, tick, type Snippet } from "svelte";
     import { page } from "$app/stores";
+    import { browser } from "$app/environment";
+    import { invalidateAll } from "$app/navigation";
     import { PUBLIC_CDN_URL } from "$env/static/public";
     import { DollarOutline } from "flowbite-svelte-icons";
     import { adsStore } from "$lib/stores/adsStore";
@@ -148,6 +150,14 @@
 <div
     class="flex flex-col min-h-screen bg-white dark:bg-bazaar-background text-gray-900 dark:text-bazaar-tan700"
 >
+    {#if !$page.data.hasSeenMakPreview}
+        <div class="border-b border-bazaar-orange/20 dark:border-bazaar-orange/30 text-bazaar-orange dark:text-bazaar-orange px-4 py-2 text-center">
+            <a href="/patchnotes/mak-preview" class="hover:underline">
+                How Bazaar got early access to Mak's new items! Click to see an exclusive preview 🧪
+            </a>
+        </div>
+    {/if}
+
     <Navbar
         class="sticky top-0 z-10 bg-white dark:bg-bazaar-background dark:text-bazaar-tan700"
     >
