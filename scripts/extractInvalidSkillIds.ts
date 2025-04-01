@@ -72,7 +72,10 @@ const disallowedList = [
   // Essence Overflow:
   "db94a1da-532e-42e1-af25-5033b0fc8bcb",
   // Biohazard:
-  "f45baa82-ff32-4337-88b9-71f7a8f2336f"
+  "f45baa82-ff32-4337-88b9-71f7a8f2336f",
+
+  // Ravenous:
+  "9215b678-2833-427b-bc97-75a90968c634"
 ];
 
 // Filter the entries
