@@ -141,7 +141,7 @@
     <!-- Athanor -->
     <div class="mb-6">
         <img
-            src={`${PUBLIC_CDN_URL}images/preview/thumbnail-Mak-Athanor.avif`}
+            src={`${PUBLIC_CDN_URL}images/preview/thumbnail-Mak-Athanor.avif?v=1`}
             alt="Athanor"
         />
 
@@ -296,7 +296,7 @@
     <!-- Boiling Flask -->
     <div class="mb-6">
         <img
-            src={`${PUBLIC_CDN_URL}images/preview/thumbnail-mak-BoilingFlask.avif`}
+            src={`${PUBLIC_CDN_URL}images/preview/thumbnail-mak-BoilingFlask.avif?v=1`}
             alt="Boiling Flask"
         />
 
@@ -360,7 +360,7 @@
     <!-- Bottled Explosion -->
     <div class="mb-6">
         <img
-            src={`${PUBLIC_CDN_URL}images/preview/thumbnail-mak-BottledExplosion.avif`}
+            src={`${PUBLIC_CDN_URL}images/preview/thumbnail-mak-BottledExplosion.avif?v=1`}
             alt="Bottled Explosion"
         />
 
@@ -433,7 +433,7 @@
     <!-- Covetous Raven -->
     <div class="mb-6">
         <img
-            src={`${PUBLIC_CDN_URL}images/preview/thumbnail-mak-CovetousRaven.avif`}
+            src={`${PUBLIC_CDN_URL}images/preview/thumbnail-mak-CovetousRaven.avif?v=1`}
             alt="Covetous Raven"
         />
 
