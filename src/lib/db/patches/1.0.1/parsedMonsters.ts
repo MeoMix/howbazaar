@@ -1759,7 +1759,7 @@ const data: ParsedMonster[] = [
       },
       {
         "templateId": "bfb765fc-764c-4e16-aa17-0e10efda4b5b",
-        "tierType": "Diamond",
+        "tierType": "Gold",
         "socketId": "Socket_3"
       },
       {
