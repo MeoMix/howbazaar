@@ -29,7 +29,7 @@
         "name-text" as ItemSearchLocationOption,
     );
     let isMonsterDropsOnly = $state(false);
-    let latestExpansionOnlyState = $state("unset" as TriState);
+    let latestExpansionsOnlyState = $state("unset" as TriState);
     let sortOptions: { name: string; value: ItemSortOption }[] = [
         {
             value: "name",
@@ -70,7 +70,7 @@
         bind:searchText
         bind:selectedSearchLocationOption
         bind:isMonsterDropsOnly
-        bind:latestExpansionOnlyState
+        bind:latestExpansionsOnlyState
     />
 
     <ItemList
@@ -84,7 +84,7 @@
         {selectedSearchLocationOption}
         {isMatchAnyTag}
         {isMonsterDropsOnly}
-        {latestExpansionOnlyState}
+        {latestExpansionsOnlyState}
         isHiddenWhenEmpty={false}
     />
 </div>

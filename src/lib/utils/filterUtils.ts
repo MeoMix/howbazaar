@@ -186,7 +186,7 @@ function matchesMonsterSearchText(
     return false;
 }
 
-const latestExpansions = new Set(["Pyg_Frozen_Assets", "Vanessa_Mysteries_of_the_Deep"]);
+const latestExpansions = new Set(["Dooley_Dooltron", "Vanessa_The_Gang"]);
 
 export function filterItemCards(
     cards: ClientSideItemCard[],
@@ -198,7 +198,7 @@ export function filterItemCards(
     searchMode: ItemSearchLocationOption,
     isMatchAnyTag: boolean,
     isMonsterDropsOnly: boolean,
-    latestExpansionOnlyState: TriState
+    latestExpansionsOnlyState: TriState
 ): ClientSideItemCard[] {
     const lowerSearchText = searchText.trim().toLowerCase();
 
@@ -206,7 +206,7 @@ export function filterItemCards(
     const filteredCards = cards.filter(card => {
         return (
             (isMonsterDropsOnly ? card.combatEncounters.length > 0 : true) &&
-            (latestExpansionOnlyState === "on" ? latestExpansions.has(card.packId) : (latestExpansionOnlyState === "off" ? !latestExpansions.has(card.packId) : true)) &&
+            (latestExpansionsOnlyState === "on" ? latestExpansions.has(card.packId) : (latestExpansionsOnlyState === "off" ? !latestExpansions.has(card.packId) : true)) &&
             matchesHero(card.heroes, selectedHeroes) &&
             matchesTier(card.startingTier, selectedTiers) &&
             matchesTagState(card.tags, card.hiddenTags, tagStates, isMatchAnyTag) &&
@@ -230,7 +230,7 @@ export function filterSkillCards(
     isMatchAnyTag: boolean,
     isMatchAnyHero: boolean,
     isMonsterDropsOnly: boolean,
-    latestExpansionOnlyState: TriState
+    latestExpansionsOnlyState: TriState
 ): ClientSideSkillCard[] {
     const lowerSearchText = searchText.trim().toLowerCase();
 
@@ -238,7 +238,7 @@ export function filterSkillCards(
     const filteredCards = cards.filter(card => {
         return (
             (isMonsterDropsOnly ? card.combatEncounters.length > 0 : true) &&
-            (latestExpansionOnlyState === "on" ? latestExpansions.has(card.packId) : (latestExpansionOnlyState === "off" ? !latestExpansions.has(card.packId) : true)) &&
+            (latestExpansionsOnlyState === "on" ? latestExpansions.has(card.packId) : (latestExpansionsOnlyState === "off" ? !latestExpansions.has(card.packId) : true)) &&
             matchesHeroState(card.heroes, heroStates, isMatchAnyHero) &&
             matchesTier(card.startingTier, selectedTiers) &&
             matchesTagState(card.tags, card.hiddenTags, tagStates, isMatchAnyTag)
