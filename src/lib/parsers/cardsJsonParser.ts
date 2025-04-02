@@ -12,9 +12,9 @@ import monsterTemplateIdMapping from "./monsterTemplateIdMapping.json";
 
 // Card packs that should be filtered out
 const disallowedCardPacks = [
-  "Vanessa_The_Gang",
+//   "Vanessa_The_Gang",
   // Add more card packs to filter here as needed
-];
+] as string[];
 
 // JSON contains testing data which isn't shown in game during normal operations
 // I didn't see a good flag for hiding these so I'm explicitly banning them.

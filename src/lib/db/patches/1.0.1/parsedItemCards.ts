@@ -3066,6 +3066,121 @@ const data: ParsedItemCard[] = [
     "packId": "Pygmalien_Core"
   },
   {
+    "id": "9b44aac3-173a-4d22-92f7-e2678b33c230",
+    "name": "Card Table",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "A Friend gains +1 Multicast for the fight.",
+          "Increase this item's cooldown by 4 second(s) for the fight."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "A Friend gains +1 Multicast for the fight.",
+          "Increase this item's cooldown by 3 second(s) for the fight."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "A Friend gains +1 Multicast for the fight.",
+          "Increase this item's cooldown by 2 second(s) for the fight."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Vanessa"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 2 items for 2 second(s)."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze 1 medium or small item for 1 second(s)."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 2 items for 2 second(s)."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield 40."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal 60."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison 4."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn 6."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "Your Friends gain +10% Crit Chance for the fight."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal 40 Damage."
+        ]
+      }
+    ],
+    "unifiedTooltips": [
+      "Cooldown 4 seconds",
+      "A Friend gains +1 Multicast for the fight.",
+      "Increase this item's cooldown by (4/3/2) second(s) for the fight."
+    ],
+    "remarks": [],
+    "packId": "Vanessa_The_Gang"
+  },
+  {
     "id": "18e2e46f-6419-44b3-80fa-11b13bc7b831",
     "name": "Billboard",
     "startingTier": "Gold",
@@ -3424,6 +3539,118 @@ const data: ParsedItemCard[] = [
     ],
     "remarks": [],
     "packId": "Core"
+  },
+  {
+    "id": "f04739ec-b829-46a6-b821-e153dc25e668",
+    "name": "Piano",
+    "startingTier": "Gold",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": [
+          "When you use a Friend, Haste it for 1 second(s).",
+          "Adjacent items are Friends."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "When you use a Friend, Haste it for 2 second(s).",
+          "Adjacent items are Friends."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Tool"
+    ],
+    "hiddenTags": [
+      "Haste"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Vanessa"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "When you use a Friend, Slow 1 item for 1 second(s)."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "When you use a Friend, Freeze 1 small item for 1 second(s)."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "This has double Haste duration."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "When you use a Friend, Shield 10."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "When you use a Friend, Heal 15."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "When you use a Friend, Poison 1."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "When you use a Friend, Burn 1."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "Adjacent items have +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "Your Friends have +25% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "When you use a Friend, Deal 10 Damage."
+        ]
+      }
+    ],
+    "unifiedTooltips": [
+      "When you use a Friend, Haste it for (1/2) second(s).",
+      "Adjacent items are Friends."
+    ],
+    "remarks": [],
+    "packId": "Vanessa_The_Gang"
   },
   {
     "id": "49f2d11c-6c2b-465f-a7f4-90315dee7670",
@@ -3918,6 +4145,126 @@ const data: ParsedItemCard[] = [
     ],
     "remarks": [],
     "packId": "Mak_Core"
+  },
+  {
+    "id": "c20cf1f9-63af-4672-92de-08a6e6110e43",
+    "name": "Seashadow",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 2 seconds",
+          "Reduce the cooldown of your other items by 10% for this fight.",
+          "Increase this item's cooldown by 4 second(s) for the fight."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 2 seconds",
+          "Reduce the cooldown of your other items by 10% for this fight.",
+          "Increase this item's cooldown by 3 second(s) for the fight."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 2 seconds",
+          "Reduce the cooldown of your other items by 10% for this fight.",
+          "Increase this item's cooldown by 2 second(s) for the fight."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Friend",
+      "Vehicle"
+    ],
+    "hiddenTags": [
+      "Cooldown"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Vanessa"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 2 items for 4 second(s)."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze 1 medium or small item for 2 second(s)."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 2 items for 4 second(s)."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield 60."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal 90."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison 6."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn 9."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "Your items have +20% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal 60 Damage."
+        ]
+      }
+    ],
+    "unifiedTooltips": [
+      "Cooldown 2 seconds",
+      "Reduce the cooldown of your other items by 10% for this fight.",
+      "Increase this item's cooldown by (4/3/2) second(s) for the fight."
+    ],
+    "remarks": [],
+    "packId": "Vanessa_The_Gang"
   },
   {
     "id": "71231a4d-4ba5-48ee-8d6d-4a533d08bebf",
@@ -6028,6 +6375,127 @@ const data: ParsedItemCard[] = [
     ],
     "remarks": [],
     "packId": "Jules_Core"
+  },
+  {
+    "id": "273f7009-d835-49a9-99c9-589fdb7c4593",
+    "name": "Mr. Richardson",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Shield 10.",
+          "When you Haste or Slow, this gains +5 Shield for the fight."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Shield 10.",
+          "When you Haste or Slow, this gains +10 Shield for the fight."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Shield 10.",
+          "When you Haste or Slow, this gains +15 Shield for the fight."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Friend"
+    ],
+    "hiddenTags": [
+      "Shield",
+      "HasteReference",
+      "SlowReference"
+    ],
+    "size": "Small",
+    "heroes": [
+      "Vanessa"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 1 item for 3 second(s)."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze 1 small item for 1 second(s)."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 1 item for 3 second(s)."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "This has double Shield."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to this item's Shield."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to 10% of this item's Shield."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn equal to 10% of this item's Shield."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal damage equal to this item's Shield."
+        ]
+      }
+    ],
+    "unifiedTooltips": [
+      "Cooldown 6 seconds",
+      "Shield 10.",
+      "When you Haste or Slow, this gains (+5/+10/+15) Shield for the fight."
+    ],
+    "remarks": [],
+    "packId": "Vanessa_The_Gang"
   },
   {
     "id": "8bbfd341-660f-4b9f-9c95-2e40c7d05c1f",
@@ -12427,6 +12895,136 @@ const data: ParsedItemCard[] = [
     "packId": "Core"
   },
   {
+    "id": "2d395818-28b0-46b5-87a8-bf384c846344",
+    "name": "Calico",
+    "startingTier": "Bronze",
+    "tiers": {
+      "Bronze": {
+        "tooltips": [
+          "Cooldown 7 seconds",
+          "Deal 10 damage.",
+          "When you use another Weapon, this gains +5% Crit chance for the fight.",
+          "This deals double Crit damage."
+        ]
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 7 seconds",
+          "Deal 20 damage.",
+          "When you use another Weapon, this gains +10% Crit chance for the fight.",
+          "This deals double Crit damage."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 7 seconds",
+          "Deal 30 damage.",
+          "When you use another Weapon, this gains +15% Crit chance for the fight.",
+          "This deals double Crit damage."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 7 seconds",
+          "Deal 40 damage.",
+          "When you use another Weapon, this gains +20% Crit chance for the fight.",
+          "This deals double Crit damage."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Friend",
+      "Weapon"
+    ],
+    "hiddenTags": [
+      "Damage",
+      "CritReference"
+    ],
+    "size": "Small",
+    "heroes": [
+      "Vanessa"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 1 item for 6 second(s)."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze 1 small item for 3 second(s)."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 1 item for 6 second(s)."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield equal to this item's damage."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to this item's Damage."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to 10% of this item's damage."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn equal to 10% of this item's damage."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "This has double Crit Chance bonus."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "This has double Damage."
+        ]
+      }
+    ],
+    "unifiedTooltips": [
+      "Cooldown 7 seconds",
+      "Deal (10/20/30/40) damage.",
+      "When you use another Weapon, this gains (+5%/+10%/+15%/+20%) Crit chance for the fight.",
+      "This deals double Crit damage."
+    ],
+    "remarks": [],
+    "packId": "Vanessa_The_Gang"
+  },
+  {
     "id": "ac92c118-c073-465c-8d89-abafa0dcb144",
     "name": "Genie Lamp",
     "startingTier": "Diamond",
@@ -13897,6 +14495,129 @@ const data: ParsedItemCard[] = [
     ],
     "remarks": [],
     "packId": "Stelle_Core"
+  },
+  {
+    "id": "47e97343-d790-4ecc-8ccd-d2f7e9949494",
+    "name": "Old Saltclaw",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Damage 10.",
+          "When you Haste or Slow, this gains +5 Damage for the fight."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Damage 10.",
+          "When you Haste or Slow, this gains +10 Damage for the fight."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Damage 10.",
+          "When you Haste or Slow, this gains +15 Damage for the fight."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Aquatic",
+      "Friend",
+      "Weapon"
+    ],
+    "hiddenTags": [
+      "Damage",
+      "HasteReference",
+      "SlowReference"
+    ],
+    "size": "Small",
+    "heroes": [
+      "Vanessa"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 1 item for 3 second(s)."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze 1 small item for 1 second(s)."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 1 item for 3 second(s)."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield equal to this item's damage."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to this item's Damage."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to 10% of this item's damage."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn equal to 10% of this item's damage."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "This has double Damage."
+        ]
+      }
+    ],
+    "unifiedTooltips": [
+      "Cooldown 6 seconds",
+      "Damage 10.",
+      "When you Haste or Slow, this gains (+5/+10/+15) Damage for the fight."
+    ],
+    "remarks": [],
+    "packId": "Vanessa_The_Gang"
   },
   {
     "id": "2aab9e1b-8c8d-49d0-be45-5884731ebb08",
@@ -24933,6 +25654,129 @@ const data: ParsedItemCard[] = [
     "packId": "Dooley_Core"
   },
   {
+    "id": "7d3b7b54-382d-4991-997d-2f78381d7690",
+    "name": "Shot Glasses",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 3 seconds",
+          "Ammo 2",
+          "Haste your items for 1 second(s).",
+          "Slow your items for 1 second(s)."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 3 seconds",
+          "Ammo 3",
+          "Haste your items for 1 second(s).",
+          "Slow your items for 1 second(s)."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 3 seconds",
+          "Ammo 4",
+          "Haste your items for 1 second(s).",
+          "Slow your items for 1 second(s)."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "Ammo",
+      "Haste",
+      "Slow"
+    ],
+    "size": "Small",
+    "heroes": [
+      "Vanessa"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "This has half Slow duration."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze 1 small item for 1 second(s)."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "This has double Haste duration."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield 20."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal 30."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison 2."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn 2."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "Your small items have +25% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal 20 damage."
+        ]
+      }
+    ],
+    "unifiedTooltips": [
+      "Cooldown 3 seconds",
+      "Ammo (2/3/4)",
+      "Haste your items for 1 second(s).",
+      "Slow your items for 1 second(s)."
+    ],
+    "remarks": [],
+    "packId": "Vanessa_The_Gang"
+  },
+  {
     "id": "627ce721-2f70-454d-9aa2-5895ece3e6ee",
     "name": "Dam",
     "startingTier": "Gold",
@@ -27234,6 +28078,133 @@ const data: ParsedItemCard[] = [
     ],
     "remarks": [],
     "packId": "Stelle_Core"
+  },
+  {
+    "id": "8908d2d1-1a7e-4f97-8ecb-6834e96b1eab",
+    "name": "Captain's Quarters",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Haste 1 Vehicle for 2 second(s).\n \n Charge 1 Tool 1 second(s).",
+          "Reload 1 Ammo item 1 Ammo.",
+          "A Weapon gains +20 damage for the fight."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Haste 1 Vehicle for 3 second(s).\n \n Charge 1 Tool 2 second(s).",
+          "Reload 1 Ammo item 2 Ammo.",
+          "A Weapon gains +30 damage for the fight."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Haste 1 Vehicle for 4 second(s).\n \n Charge 1 Tool 3 second(s).",
+          "Reload 1 Ammo item 3 Ammo.",
+          "A Weapon gains +40 damage for the fight."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Aquatic",
+      "Property"
+    ],
+    "hiddenTags": [
+      "Haste",
+      "Charge",
+      "DamageReference",
+      "AmmoReference"
+    ],
+    "size": "Large",
+    "heroes": [
+      "Vanessa"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 3 items for 2 second(s)."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze 1 item for 1 second(s)."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "This has double Haste duration."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield 60."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal 90."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison 6."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn 9."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "Your items have +20% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "This has double damage bonus."
+        ]
+      }
+    ],
+    "unifiedTooltips": [
+      "Cooldown 4 seconds",
+      "Haste 1 Vehicle for (2/3/4) second(s). Charge 1 Tool (1/2/3) second(s).",
+      "Reload 1 Ammo item (1/2/3) Ammo.",
+      "A Weapon gains (+20/+30/+40) damage for the fight."
+    ],
+    "remarks": [],
+    "packId": "Vanessa_The_Gang"
   },
   {
     "id": "3ce7312c-aa95-4711-9a2b-827609a380b4",
@@ -34619,6 +35590,131 @@ const data: ParsedItemCard[] = [
     ],
     "remarks": [],
     "packId": "Vanessa_Core"
+  },
+  {
+    "id": "7ccaa9ae-c915-49f2-863a-aa333c41b7fb",
+    "name": "Seadog's Saloon",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Haste 1 item for 2 second(s).",
+          "Slow 1 item for 2 second(s).",
+          "This has +1 Multicast for each Friend you have."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Haste 1 item for 2 second(s).",
+          "Slow 1 item for 2 second(s).",
+          "This has +1 Multicast for each Friend you have."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Haste 1 item for 2 second(s).",
+          "Slow 1 item for 2 second(s).",
+          "This has +1 Multicast for each Friend you have."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Aquatic",
+      "Property"
+    ],
+    "hiddenTags": [
+      "Haste",
+      "Slow"
+    ],
+    "size": "Large",
+    "heroes": [
+      "Vanessa"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "This has double Slow duration."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze 1 item for 1 second(s)."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "This has double Haste duration."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield 30."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal 45."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison 3."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn 4."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "Your Friends have +25% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal 30 Damage."
+        ]
+      }
+    ],
+    "unifiedTooltips": [
+      "Cooldown (6/5/4) seconds",
+      "Haste 1 item for 2 second(s).",
+      "Slow 1 item for 2 second(s).",
+      "This has +1 Multicast for each Friend you have."
+    ],
+    "remarks": [],
+    "packId": "Vanessa_The_Gang"
   },
   {
     "id": "bf90b501-0d87-49ae-a82a-5941db70179c",
@@ -42981,6 +44077,130 @@ const data: ParsedItemCard[] = [
     ],
     "remarks": [],
     "packId": "Vanessa_Core"
+  },
+  {
+    "id": "f3c0551a-782b-44e3-b0da-e3825366d20e",
+    "name": "Orange Julian",
+    "startingTier": "Bronze",
+    "tiers": {
+      "Bronze": {
+        "tooltips": [
+          "Cooldown 11 seconds",
+          "Your weapons gain +10 damage for the fight.",
+          "When you gain gold, increase the damage bonus of this item by the amount gained."
+        ]
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 10 seconds",
+          "Your weapons gain +10 damage for the fight.",
+          "When you gain gold, increase the damage bonus of this item by the amount gained."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 9 seconds",
+          "Your weapons gain +10 damage for the fight.",
+          "When you gain gold, increase the damage bonus of this item by the amount gained."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 8 seconds",
+          "Your weapons gain +10 damage for the fight.",
+          "When you gain gold, increase the damage bonus of this item by the amount gained."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Friend"
+    ],
+    "hiddenTags": [
+      "DamageReference",
+      "EconomyReference"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Vanessa"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 2 items for 4 second(s)."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze 1 medium or small item for 2 second(s)."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 2 items for 4 second(s)."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield 90."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal 135."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison 9."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn 13."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "Your Weapons gain 10% Crit Chance for the fight."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "This has double Damage bonus"
+        ]
+      }
+    ],
+    "unifiedTooltips": [
+      "Cooldown (11/10/9/8) seconds",
+      "Your weapons gain +10 damage for the fight.",
+      "When you gain gold, increase the damage bonus of this item by the amount gained."
+    ],
+    "remarks": [],
+    "packId": "Vanessa_The_Gang"
   },
   {
     "id": "a0345f93-0c0a-44fa-a7e4-2135acb16bcc",

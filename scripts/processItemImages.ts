@@ -132,7 +132,11 @@ const cleanFileName = (fileName: string): string => {
     'Dootron': 'Dooltron',
     'Dootron Mainframe': 'DooltronMainframe',
     'TheDooshield': 'ZShield',
-    'TheDooblade': 'ZSword'
+    'TheDooblade': 'ZSword',
+    "TrustySteed" :"Seashadow",
+    "CrubbyLobster": "OldSaltclaw",
+    "LongTail": "MrRichardson",
+    "SaltydogSaloon": "SeadogsSaloon"
   };
 
   // Sometimes there's a literal space at the end of the filename. Madness.
@@ -158,10 +162,7 @@ const cleanFileName = (fileName: string): string => {
 
   // Strip special characters like hyphens to match parsedItemCard logic
   const { name, ext } = path.parse(fileName);
-  const renamed = renameRules[name] ?? name;
-  const normalized = removeSpecialCharacters(renamed);
-
-  return normalized + ext;
+  return removeSpecialCharacters(name) + ext;
 };
 
 // TODO: This script should ideally intelligently copy files to the end directory
@@ -237,8 +238,8 @@ async function cleanFileNames() {
   for (const file of files) {
     const filePath = path.join(assetPath, file);
 
-    const { name } = path.parse(file); // Split file name and extension
-    const newFileName = `${cleanFileName(name)}`; // Append the cleaned name with the original extension
+    const { name, ext } = path.parse(file); // Split file name and extension
+    const newFileName = `${cleanFileName(name)}${ext}`; // Append the cleaned name with the original extension
     const newFilePath = path.join(assetPath, newFileName);
 
     if (newFileName !== file) {
