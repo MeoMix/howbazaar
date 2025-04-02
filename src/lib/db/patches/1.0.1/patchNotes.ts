@@ -10782,6 +10782,186 @@ const data: PatchNotes = {
         "modified": []
       }
     },
+    "1fbbefea-2da0-46a5-b60d-dad9478ade86": {
+      "metadata": {
+        "id": "1fbbefea-2da0-46a5-b60d-dad9478ade86",
+        "name": "Ice 9000",
+        "previousStartingTier": "Silver",
+        "currentStartingTier": "Silver",
+        "currentHero": "Dooley",
+        "currentSize": "Medium",
+        "type": "item"
+      },
+      "name": {
+        "oldValue": null,
+        "newValue": "Ice 9000"
+      },
+      "startingTier": {
+        "oldValue": null,
+        "newValue": "Silver"
+      },
+      "tags": {
+        "added": [
+          "Friend"
+        ],
+        "removed": []
+      },
+      "hiddenTags": {
+        "added": [
+          "Freeze",
+          "Poison"
+        ],
+        "removed": []
+      },
+      "size": {
+        "oldValue": null,
+        "newValue": "Medium"
+      },
+      "heroes": {
+        "added": [
+          "Dooley"
+        ],
+        "removed": []
+      },
+      "tooltips": [
+        {
+          "index": 0,
+          "oldValue": null,
+          "newValue": "Cooldown 9 seconds"
+        },
+        {
+          "index": 1,
+          "oldValue": null,
+          "newValue": "Poison 9."
+        },
+        {
+          "index": 2,
+          "oldValue": null,
+          "newValue": "Freeze (1/2/3) item for 1 second(s)."
+        },
+        {
+          "index": 3,
+          "oldValue": null,
+          "newValue": "When you Freeze, this gains (3/6/9) Poison for the fight."
+        }
+      ],
+      "enchantments": {
+        "added": [
+          {
+            "type": "Heavy",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Slow 1 item for 2 second(s)."
+              }
+            ]
+          },
+          {
+            "type": "Icy",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Freeze 1 medium or small item for 1 second(s)."
+              }
+            ]
+          },
+          {
+            "type": "Turbo",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Haste 1 item for 2 second(s)."
+              }
+            ]
+          },
+          {
+            "type": "Shielded",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Shield equal to 10 times this item's Poison."
+              }
+            ]
+          },
+          {
+            "type": "Restorative",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Heal equal to 10 times this item's Poison."
+              }
+            ]
+          },
+          {
+            "type": "Toxic",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "This has double Poison."
+              }
+            ]
+          },
+          {
+            "type": "Fiery",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Burn equal to this item's Poison."
+              }
+            ]
+          },
+          {
+            "type": "Shiny",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "This has +1 Multicast."
+              }
+            ]
+          },
+          {
+            "type": "Deadly",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "+50% Crit Chance"
+              }
+            ]
+          },
+          {
+            "type": "Radiant",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "This cannot be Frozen, Slowed or Destroyed."
+              }
+            ]
+          },
+          {
+            "type": "Obsidian",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Deal damage equal to 10 times this item's Poison."
+              }
+            ]
+          }
+        ],
+        "removed": [],
+        "modified": []
+      }
+    },
     "f2bb81c1-926e-447b-89aa-8c981604570c": {
       "metadata": {
         "id": "f2bb81c1-926e-447b-89aa-8c981604570c",
