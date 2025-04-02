@@ -57915,6 +57915,134 @@ const data: ParsedItemCard[] = [
     "packId": "Core"
   },
   {
+    "id": "34476196-7d30-4664-8fe3-e99411022a86",
+    "name": "Z-Sword",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 8 seconds",
+          "Deal 75 damage.",
+          "Burn 12.",
+          "Adjacent items have their cooldown reduced by 10%.",
+          "This has +1 Multicast if you have a Large item."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 8 seconds",
+          "Deal 100 damage.",
+          "Burn 16.",
+          "Adjacent items have their cooldown reduced by 20%.",
+          "This has +1 Multicast if you have a Large item."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 8 seconds",
+          "Deal 125 damage.",
+          "Burn 20.",
+          "Adjacent items have their cooldown reduced by 20%.",
+          "This has +1 Multicast if you have a Large item."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Weapon",
+      "Tech"
+    ],
+    "hiddenTags": [
+      "Burn"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Dooley"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 2 item for 4 second(s)."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze 1 medium or small item for 2 second(s)."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 2 item for 4 second(s)."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield equal to this item's damage."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to this item's Damage."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to 10% of this item's damage."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "This has double Burn."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "This has double Damage."
+        ]
+      }
+    ],
+    "unifiedTooltips": [
+      "Cooldown 8 seconds",
+      "Deal (75/100/125) damage.",
+      "Burn (12/16/20).",
+      "Adjacent items have their cooldown reduced by (10%/20%/20%).",
+      "This has +1 Multicast if you have a Large item."
+    ],
+    "remarks": [],
+    "packId": "Dooley_Dooltron"
+  },
+  {
     "id": "dec20bd9-9c83-4fcb-a5d2-e71352ed78d5",
     "name": "Sunderer",
     "startingTier": "Bronze",

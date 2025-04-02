@@ -126,7 +126,13 @@ const cleanFileName = (fileName: string): string => {
     'PrimordialDepthCharge': 'ElementalDepthCharge',
     'FuelRod': 'DefenseMatrix',
     'JaballianDrum': 'JabalianDrum',
-    'JaballianLongbow': 'JabalianLongbow' 
+    'JaballianLongbow': 'JabalianLongbow',
+    'ShieldPotion': 'InvulnerabilityPotion',
+    'SattComm': 'SatComm',
+    'Dootron': 'Dooltron',
+    'Dootron Mainframe': 'DooltronMainframe',
+    'TheDooshield': 'ZShield',
+    'TheDooblade': 'ZSword'
   };
 
   // Sometimes there's a literal space at the end of the filename. Madness.
@@ -135,11 +141,14 @@ const cleanFileName = (fileName: string): string => {
   // Remove the "CF_" prefix and the following size identifier if present
   fileName = fileName.replace(/^(CF|PNG)_[SML]_/, '');
 
-  // Remove any three-letter identifier if present (Van, Pyg, etc)
-  fileName = fileName.replace(/^[A-Z]{3}_/i, '');
+  // Remove specific three-letter identifiers if present (Van, Pyg, Doo, Jul, Ste, Mak)
+  fileName = fileName.replace(/^(VAN|PYG|PIG|DOO|JUL|STE|STL|MAK|MAC|ADV|NEU|NTR)[-_]/i, '');
 
   // Remove _D or _D1 from end of file name
   fileName = fileName.replace(/_D\d?$/, '');
+
+  // Remove _T or _T1 from end of file name
+  fileName = fileName.replace(/_T\d?$/, '');
 
   // Apply specific renaming rules if the filename matches any key in renameRules
   const baseName = path.basename(fileName, path.extname(fileName)); // Get base filename without extension
@@ -173,7 +182,9 @@ async function processItemImages() {
   console.log('fileCleanNameMap', fileCleanNameMap);
 
   // Extract the clean filenames and card names into sets for quick lookups
-  const cleanedFileNames = new Set(fileCleanNameMap.values());
+  const cleanedFileNames = new Set(
+    Array.from(fileCleanNameMap.values()).map(removeSpecialCharacters)
+  );
   const itemCardNameSet = new Set(itemCardNames);
 
   // Determine missing file names

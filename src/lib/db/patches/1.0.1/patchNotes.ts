@@ -10418,6 +10418,191 @@ const data: PatchNotes = {
         "removed": [],
         "modified": []
       }
+    },
+    "34476196-7d30-4664-8fe3-e99411022a86": {
+      "metadata": {
+        "id": "34476196-7d30-4664-8fe3-e99411022a86",
+        "name": "Z-Sword",
+        "previousStartingTier": "Silver",
+        "currentStartingTier": "Silver",
+        "currentHero": "Dooley",
+        "currentSize": "Medium",
+        "type": "item"
+      },
+      "name": {
+        "oldValue": null,
+        "newValue": "Z-Sword"
+      },
+      "startingTier": {
+        "oldValue": null,
+        "newValue": "Silver"
+      },
+      "tags": {
+        "added": [
+          "Weapon",
+          "Tech"
+        ],
+        "removed": []
+      },
+      "hiddenTags": {
+        "added": [
+          "Burn"
+        ],
+        "removed": []
+      },
+      "size": {
+        "oldValue": null,
+        "newValue": "Medium"
+      },
+      "heroes": {
+        "added": [
+          "Dooley"
+        ],
+        "removed": []
+      },
+      "tooltips": [
+        {
+          "index": 0,
+          "oldValue": null,
+          "newValue": "Cooldown 8 seconds"
+        },
+        {
+          "index": 1,
+          "oldValue": null,
+          "newValue": "Deal (75/100/125) damage."
+        },
+        {
+          "index": 2,
+          "oldValue": null,
+          "newValue": "Burn (12/16/20)."
+        },
+        {
+          "index": 3,
+          "oldValue": null,
+          "newValue": "Adjacent items have their cooldown reduced by (10%/20%/20%)."
+        },
+        {
+          "index": 4,
+          "oldValue": null,
+          "newValue": "This has +1 Multicast if you have a Large item."
+        }
+      ],
+      "enchantments": {
+        "added": [
+          {
+            "type": "Heavy",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Slow 2 item for 4 second(s)."
+              }
+            ]
+          },
+          {
+            "type": "Icy",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Freeze 1 medium or small item for 2 second(s)."
+              }
+            ]
+          },
+          {
+            "type": "Turbo",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Haste 2 item for 4 second(s)."
+              }
+            ]
+          },
+          {
+            "type": "Shielded",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Shield equal to this item's damage."
+              }
+            ]
+          },
+          {
+            "type": "Restorative",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Heal equal to this item's Damage."
+              }
+            ]
+          },
+          {
+            "type": "Toxic",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Poison equal to 10% of this item's damage."
+              }
+            ]
+          },
+          {
+            "type": "Fiery",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "This has double Burn."
+              }
+            ]
+          },
+          {
+            "type": "Shiny",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "This has +1 Multicast."
+              }
+            ]
+          },
+          {
+            "type": "Deadly",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "+50% Crit Chance"
+              }
+            ]
+          },
+          {
+            "type": "Radiant",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "This cannot be Frozen, Slowed or Destroyed."
+              }
+            ]
+          },
+          {
+            "type": "Obsidian",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "This has double Damage."
+              }
+            ]
+          }
+        ],
+        "removed": [],
+        "modified": []
+      }
     }
   },
   "skills": {
