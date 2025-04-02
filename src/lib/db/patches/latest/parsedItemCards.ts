@@ -130,125 +130,6 @@ const data: ParsedItemCard[] = [
     "packId": "Vanessa_Core"
   },
   {
-    "id": "5abf3441-11cb-4dbd-8d69-d4829f8df687",
-    "name": "Star Chart",
-    "startingTier": "Bronze",
-    "tiers": {
-      "Bronze": {
-        "tooltips": [
-          "Adjacent items have +10% Crit Chance.",
-          "Adjacent items have their cooldown reduced by 10%."
-        ]
-      },
-      "Silver": {
-        "tooltips": [
-          "Adjacent items have +15% Crit Chance.",
-          "Adjacent items have their cooldown reduced by 15%."
-        ]
-      },
-      "Gold": {
-        "tooltips": [
-          "Adjacent items have +20% Crit Chance.",
-          "Adjacent items have their cooldown reduced by 20%."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "Adjacent items have +25% Crit Chance.",
-          "Adjacent items have their cooldown reduced by 25%."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [
-      "Tool"
-    ],
-    "hiddenTags": [
-      "Cooldown",
-      "Crit"
-    ],
-    "size": "Medium",
-    "heroes": [
-      "Vanessa"
-    ],
-    "enchantments": [
-      {
-        "type": "Heavy",
-        "tooltips": [
-          "The first time you fall below half health each fight, Slow 3 items for 4 second(s)."
-        ]
-      },
-      {
-        "type": "Icy",
-        "tooltips": [
-          "The first time you fall below half health each fight, Freeze 2 items for 4 second(s)."
-        ]
-      },
-      {
-        "type": "Turbo",
-        "tooltips": [
-          "The first time you fall below half health each fight, Haste 3 items for 4 second(s)."
-        ]
-      },
-      {
-        "type": "Shielded",
-        "tooltips": [
-          "The first time you fall below half health each fight, Shield 120."
-        ]
-      },
-      {
-        "type": "Restorative",
-        "tooltips": [
-          "The first time you fall below half health each fight, Heal 180."
-        ]
-      },
-      {
-        "type": "Toxic",
-        "tooltips": [
-          "The first time you fall below half health each fight, poison 12."
-        ]
-      },
-      {
-        "type": "Fiery",
-        "tooltips": [
-          "The first time you fall below half health each fight, burn 18."
-        ]
-      },
-      {
-        "type": "Shiny",
-        "tooltips": [
-          "This has double Crit Chance bonus and cooldown reduction."
-        ]
-      },
-      {
-        "type": "Deadly",
-        "tooltips": [
-          "This has double Crit Chance bonus."
-        ]
-      },
-      {
-        "type": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
-        "type": "Obsidian",
-        "tooltips": [
-          "The first time you fall below half health each fight, Deal 120 damage."
-        ]
-      }
-    ],
-    "unifiedTooltips": [
-      "Adjacent items have (+10%/+15%/+20%/+25%) Crit Chance.",
-      "Adjacent items have their cooldown reduced by (10%/15%/20%/25%)."
-    ],
-    "remarks": [],
-    "packId": "Vanessa_Core"
-  },
-  {
     "id": "3b32361e-2ddc-47b6-bcce-0ac560cb407b",
     "name": "Dragon Tooth",
     "startingTier": "Gold",
@@ -371,6 +252,125 @@ const data: ParsedItemCard[] = [
     ],
     "remarks": [],
     "packId": "Pygmalien_Core"
+  },
+  {
+    "id": "5abf3441-11cb-4dbd-8d69-d4829f8df687",
+    "name": "Star Chart",
+    "startingTier": "Bronze",
+    "tiers": {
+      "Bronze": {
+        "tooltips": [
+          "Adjacent items have +10% Crit Chance.",
+          "Adjacent items have their cooldown reduced by 10%."
+        ]
+      },
+      "Silver": {
+        "tooltips": [
+          "Adjacent items have +15% Crit Chance.",
+          "Adjacent items have their cooldown reduced by 15%."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Adjacent items have +20% Crit Chance.",
+          "Adjacent items have their cooldown reduced by 20%."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Adjacent items have +25% Crit Chance.",
+          "Adjacent items have their cooldown reduced by 25%."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Tool"
+    ],
+    "hiddenTags": [
+      "Cooldown",
+      "Crit"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Vanessa"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "The first time you fall below half health each fight, Slow 3 items for 4 second(s)."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "The first time you fall below half health each fight, Freeze 2 items for 4 second(s)."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "The first time you fall below half health each fight, Haste 3 items for 4 second(s)."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "The first time you fall below half health each fight, Shield 120."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "The first time you fall below half health each fight, Heal 180."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "The first time you fall below half health each fight, poison 12."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "The first time you fall below half health each fight, burn 18."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has double Crit Chance bonus and cooldown reduction."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "This has double Crit Chance bonus."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "The first time you fall below half health each fight, Deal 120 damage."
+        ]
+      }
+    ],
+    "unifiedTooltips": [
+      "Adjacent items have (+10%/+15%/+20%/+25%) Crit Chance.",
+      "Adjacent items have their cooldown reduced by (10%/15%/20%/25%)."
+    ],
+    "remarks": [],
+    "packId": "Vanessa_Core"
   },
   {
     "id": "a05d23cb-af36-42fa-aab1-568aba7f30c6",
@@ -1340,14 +1340,14 @@ const data: ParsedItemCard[] = [
       "Gold": {
         "tooltips": [
           "Cooldown 11 seconds",
-          "Deal 400 damage.",
+          "Deal 450 damage.",
           "When you use another Tech, charge this 2 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 11 seconds",
-          "Deal 500 damage.",
+          "Deal 600 damage.",
           "When you use another Tech, charge this 2 second(s)."
         ]
       },
@@ -1436,7 +1436,7 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 11 seconds",
-      "Deal (300/400/500) damage.",
+      "Deal (300/450/600) damage.",
       "When you use another Tech, charge this 2 second(s)."
     ],
     "remarks": [],
@@ -1453,22 +1453,25 @@ const data: ParsedItemCard[] = [
       "Silver": {
         "tooltips": [
           "Cooldown 5 seconds",
-          "Burn 1 for each unique type you have.",
-          "Poison 1 for each unique type you have."
+          "Burn 1 for each type this has.",
+          "Poison 1 for each type this has.",
+          "This has the Types of items you have."
         ]
       },
       "Gold": {
         "tooltips": [
           "Cooldown 5 seconds",
-          "Burn 2 for each unique type you have.",
-          "Poison 2 for each unique type you have."
+          "Burn 2 for each type this has.",
+          "Poison 2 for each type this has.",
+          "This has the Types of items you have."
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 5 seconds",
-          "Burn 3 for each unique type you have.",
-          "Poison 3 for each unique type you have."
+          "Burn 3 for each type this has.",
+          "Poison 3 for each type this has.",
+          "This has the Types of items you have."
         ]
       },
       "Legendary": {
@@ -1556,8 +1559,9 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
-      "Burn (1/2/3) for each unique type you have.",
-      "Poison (1/2/3) for each unique type you have."
+      "Burn (1/2/3) for each type this has.",
+      "Poison (1/2/3) for each type this has.",
+      "This has the Types of items you have."
     ],
     "remarks": [],
     "packId": "Mak_Core"
@@ -1808,29 +1812,29 @@ const data: ParsedItemCard[] = [
     "tiers": {
       "Bronze": {
         "tooltips": [
-          "Cooldown 9 seconds",
-          "Haste the Aquatic item to the right for 2 second(s).",
+          "Cooldown 5 seconds",
+          "Haste the Aquatic item to the right of this for 2 second(s).",
           "At the start of each day, get a Small aquatic item."
         ]
       },
       "Silver": {
         "tooltips": [
-          "Cooldown 9 seconds",
-          "Haste the Aquatic item to the right for 3 second(s).",
+          "Cooldown 5 seconds",
+          "Haste the Aquatic item to the right of this for 2 second(s).",
           "At the start of each day, get a Small aquatic item."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 9 seconds",
-          "Haste the Aquatic item to the right for 4 second(s).",
+          "Cooldown 5 seconds",
+          "Haste the Aquatic item to the right of this for 2 second(s).",
           "At the start of each day, get a Small aquatic item."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 9 seconds",
-          "Haste the Aquatic item to the right for 5 second(s).",
+          "Cooldown 5 seconds",
+          "Haste the Aquatic item to the right of this for 2 second(s).",
           "At the start of each day, get a Small aquatic item."
         ]
       },
@@ -1853,73 +1857,73 @@ const data: ParsedItemCard[] = [
       {
         "type": "Heavy",
         "tooltips": [
-          "Slow 2 items for 3 second(s)."
+          "...and Enchant the item with Heavy if able."
         ]
       },
       {
         "type": "Icy",
         "tooltips": [
-          "Freeze 1 medium or small item for 3 second(s)."
+          "...and Enchant the item with Icy if able."
         ]
       },
       {
         "type": "Turbo",
         "tooltips": [
-          "This has double Haste duration."
+          "...and Enchant the item with Turbo if able."
         ]
       },
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield 80."
+          "...and Enchant the item with Shielded if able."
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal 120."
+          "...and Enchant the item with Restorative if able."
         ]
       },
       {
         "type": "Toxic",
         "tooltips": [
-          "Poison 8."
+          "...and Enchant the item with Toxic if able."
         ]
       },
       {
         "type": "Fiery",
         "tooltips": [
-          "Burn 12."
+          "...and Enchant the item with Fiery if able."
         ]
       },
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "...and Enchant the item with Shiny if able."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "Your Aquatic items have +25% Crit Chance."
+          "...and Enchant the item with Deadly if able."
         ]
       },
       {
         "type": "Radiant",
         "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
+          "...and Enchant the item with Radiant if able."
         ]
       },
       {
         "type": "Obsidian",
         "tooltips": [
-          "Your Aquatic Weapons have +20 damage."
+          "...and Enchant the item with Obsidian if able."
         ]
       }
     ],
     "unifiedTooltips": [
-      "Cooldown 9 seconds",
-      "Haste the Aquatic item to the right for (2/3/4/5) second(s).",
+      "Cooldown 5 seconds",
+      "Haste the Aquatic item to the right of this for 2 second(s).",
       "At the start of each day, get a Small aquatic item."
     ],
     "remarks": [],
@@ -2121,7 +2125,7 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Cooldown 8 seconds",
           "Ammo 3",
-          "Haste 1 item for 1 second(s).",
+          "Haste 1 item(s) for 1 second(s).",
           "For each adjacent Aquatic item, reduce this item's cooldown by 1 second.",
           "This has + Multicast equal to its ammo."
         ]
@@ -2130,7 +2134,7 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Cooldown 8 seconds",
           "Ammo 3",
-          "Haste 1 item for 2 second(s).",
+          "Haste 1 item(s) for 2 second(s).",
           "For each adjacent Aquatic item, reduce this item's cooldown by 1 second.",
           "This has + Multicast equal to its ammo."
         ]
@@ -2139,7 +2143,7 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Cooldown 8 seconds",
           "Ammo 3",
-          "Haste 1 item for 3 second(s).",
+          "Haste 1 item(s) for 3 second(s).",
           "For each adjacent Aquatic item, reduce this item's cooldown by 1 second.",
           "This has + Multicast equal to its ammo."
         ]
@@ -2233,7 +2237,7 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "Cooldown 8 seconds",
       "Ammo 3",
-      "Haste 1 item for (1/2/3) second(s).",
+      "Haste 1 item(s) for (1/2/3) second(s).",
       "For each adjacent Aquatic item, reduce this item's cooldown by 1 second.",
       "This has + Multicast equal to its ammo."
     ],
@@ -2717,14 +2721,14 @@ const data: ParsedItemCard[] = [
       "Bronze": {
         "tooltips": [
           "Cooldown 9 seconds",
-          "Shield 5.",
+          "Shield 10.",
           "Deal damage equal to your shield."
         ]
       },
       "Silver": {
         "tooltips": [
           "Cooldown 9 seconds",
-          "Shield 10.",
+          "Shield 15.",
           "Deal damage equal to your shield."
         ]
       },
@@ -2738,7 +2742,7 @@ const data: ParsedItemCard[] = [
       "Diamond": {
         "tooltips": [
           "Cooldown 9 seconds",
-          "Shield 40.",
+          "Shield 25.",
           "Deal damage equal to your shield."
         ]
       },
@@ -2827,7 +2831,7 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 9 seconds",
-      "Shield (5/10/20/40).",
+      "Shield (10/15/20/25).",
       "Deal damage equal to your shield."
     ],
     "remarks": [],
@@ -2846,13 +2850,13 @@ const data: ParsedItemCard[] = [
       },
       "Gold": {
         "tooltips": [
-          "When you use the item to the left of this, charge the item to the right for 1 second(s).",
+          "When you use the item to the left of this, charge the item to the right of this for 1 second(s).",
           "When you use the Core, it gains +20 damage for the fight."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "When you use the item to the left of this, charge the item to the right for 2 second(s).",
+          "When you use the item to the left of this, charge the item to the right of this for 2 second(s).",
           "When you use the Core, it gains +40 damage for the fight."
         ]
       },
@@ -2934,7 +2938,7 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "When you use the item to the left of this, charge the item to the right for (1/2) second(s).",
+      "When you use the item to the left of this, charge the item to the right of this for (1/2) second(s).",
       "When you use the Core, it gains (+20/+40) damage for the fight."
     ],
     "remarks": [],
@@ -3062,6 +3066,121 @@ const data: ParsedItemCard[] = [
     "packId": "Pygmalien_Core"
   },
   {
+    "id": "9b44aac3-173a-4d22-92f7-e2678b33c230",
+    "name": "Card Table",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "A Friend gains +1 Multicast for the fight.",
+          "Increase this item's cooldown by 4 second(s) for the fight."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "A Friend gains +1 Multicast for the fight.",
+          "Increase this item's cooldown by 3 second(s) for the fight."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "A Friend gains +1 Multicast for the fight.",
+          "Increase this item's cooldown by 2 second(s) for the fight."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Vanessa"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 2 items for 2 second(s)."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze 1 medium or small item for 1 second(s)."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 2 items for 2 second(s)."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield 40."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal 60."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison 4."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn 6."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "Your Friends gain +10% Crit Chance for the fight."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal 40 Damage."
+        ]
+      }
+    ],
+    "unifiedTooltips": [
+      "Cooldown 4 seconds",
+      "A Friend gains +1 Multicast for the fight.",
+      "Increase this item's cooldown by (4/3/2) second(s) for the fight."
+    ],
+    "remarks": [],
+    "packId": "Vanessa_The_Gang"
+  },
+  {
     "id": "18e2e46f-6419-44b3-80fa-11b13bc7b831",
     "name": "Billboard",
     "startingTier": "Gold",
@@ -3096,7 +3215,6 @@ const data: ParsedItemCard[] = [
       "Property"
     ],
     "hiddenTags": [
-      "Shield",
       "Crit",
       "EconomyReference",
       "Value"
@@ -3121,7 +3239,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Icy",
         "tooltips": [
-          "Freeze 3 item for 1 second(s)."
+          "Freeze 3 medium or small item for 1 second(s)."
         ]
       },
       {
@@ -3423,6 +3541,118 @@ const data: ParsedItemCard[] = [
     "packId": "Core"
   },
   {
+    "id": "f04739ec-b829-46a6-b821-e153dc25e668",
+    "name": "Piano",
+    "startingTier": "Gold",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": [
+          "When you use a Friend, Haste it for 1 second(s).",
+          "Adjacent items are Friends."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "When you use a Friend, Haste it for 2 second(s).",
+          "Adjacent items are Friends."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Tool"
+    ],
+    "hiddenTags": [
+      "Haste"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Vanessa"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "When you use a Friend, Slow 1 item for 1 second(s)."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "When you use a Friend, Freeze 1 small item for 1 second(s)."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "This has double Haste duration."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "When you use a Friend, Shield 10."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "When you use a Friend, Heal 15."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "When you use a Friend, Poison 1."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "When you use a Friend, Burn 1."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "Adjacent items have +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "Your Friends have +25% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "When you use a Friend, Deal 10 Damage."
+        ]
+      }
+    ],
+    "unifiedTooltips": [
+      "When you use a Friend, Haste it for (1/2) second(s).",
+      "Adjacent items are Friends."
+    ],
+    "remarks": [],
+    "packId": "Vanessa_The_Gang"
+  },
+  {
     "id": "49f2d11c-6c2b-465f-a7f4-90315dee7670",
     "name": "DJ Rob0t",
     "startingTier": "Silver",
@@ -3434,7 +3664,7 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Cooldown 10 seconds",
           "Haste your Friends for 2 second(s).",
-          "When you buy this, get 3 Nanobots.",
+          "When you buy this, get 1 Nanobots.",
           "When you use another Friend, charge this 1 second."
         ]
       },
@@ -3442,7 +3672,7 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Cooldown 9 seconds",
           "Haste your Friends for 2 second(s).",
-          "When you buy this, get 3 Nanobots.",
+          "When you buy this, get 1 Nanobots.",
           "When you use another Friend, charge this 1 second."
         ]
       },
@@ -3450,7 +3680,7 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Cooldown 8 seconds",
           "Haste your Friends for 2 second(s).",
-          "When you buy this, get 3 Nanobots.",
+          "When you buy this, get 1 Nanobots.",
           "When you use another Friend, charge this 1 second."
         ]
       },
@@ -3539,7 +3769,7 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "Cooldown (10/9/8) seconds",
       "Haste your Friends for 2 second(s).",
-      "When you buy this, get 3 Nanobots.",
+      "When you buy this, get 1 Nanobots.",
       "When you use another Friend, charge this 1 second."
     ],
     "remarks": [],
@@ -3668,135 +3898,6 @@ const data: ParsedItemCard[] = [
     "packId": "Core"
   },
   {
-    "id": "fd95b873-24a4-4af6-8b08-296f24a3576c",
-    "name": "Magic Carpet",
-    "startingTier": "Bronze",
-    "tiers": {
-      "Bronze": {
-        "tooltips": [
-          "Cooldown 5 seconds",
-          "Crit Chance 25%",
-          "Deal 10 Damage.",
-          "When you Crit, reduce this item's cooldown by 10% for the fight."
-        ]
-      },
-      "Silver": {
-        "tooltips": [
-          "Cooldown 5 seconds",
-          "Crit Chance 25%",
-          "Deal 15 Damage.",
-          "When you Crit, reduce this item's cooldown by 10% for the fight."
-        ]
-      },
-      "Gold": {
-        "tooltips": [
-          "Cooldown 5 seconds",
-          "Crit Chance 25%",
-          "Deal 20 Damage.",
-          "When you Crit, reduce this item's cooldown by 10% for the fight."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "Cooldown 5 seconds",
-          "Crit Chance 25%",
-          "Deal 40 Damage.",
-          "When you Crit, reduce this item's cooldown by 10% for the fight."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [
-      "Vehicle",
-      "Weapon"
-    ],
-    "hiddenTags": [
-      "Damage"
-    ],
-    "size": "Medium",
-    "heroes": [
-      "Mak"
-    ],
-    "enchantments": [
-      {
-        "type": "Heavy",
-        "tooltips": [
-          "Slow 2 items for 1 second(s)."
-        ]
-      },
-      {
-        "type": "Icy",
-        "tooltips": [
-          "Freeze 1 medium or small item for 1 second(s)."
-        ]
-      },
-      {
-        "type": "Turbo",
-        "tooltips": [
-          "Haste 2 items for 1 second(s)."
-        ]
-      },
-      {
-        "type": "Shielded",
-        "tooltips": [
-          "Shield equal to this item's damage."
-        ]
-      },
-      {
-        "type": "Restorative",
-        "tooltips": [
-          "Heal equal to this item's Damage."
-        ]
-      },
-      {
-        "type": "Toxic",
-        "tooltips": [
-          "Poison equal to 10% of this item's damage."
-        ]
-      },
-      {
-        "type": "Fiery",
-        "tooltips": [
-          "Burn equal to 10% of this item's damage."
-        ]
-      },
-      {
-        "type": "Shiny",
-        "tooltips": [
-          "This has +1 Multicast."
-        ]
-      },
-      {
-        "type": "Deadly",
-        "tooltips": [
-          "+50% Crit Chance"
-        ]
-      },
-      {
-        "type": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
-        "type": "Obsidian",
-        "tooltips": [
-          "This has double Damage."
-        ]
-      }
-    ],
-    "unifiedTooltips": [
-      "Cooldown 5 seconds",
-      "Crit Chance 25%",
-      "Deal (10/15/20/40) Damage.",
-      "When you Crit, reduce this item's cooldown by 10% for the fight."
-    ],
-    "remarks": [],
-    "packId": "Mak_Core"
-  },
-  {
     "id": "628cd703-f0c6-4c76-b5bd-72c8aebf5314",
     "name": "Bellelista",
     "startingTier": "Silver",
@@ -3922,6 +4023,250 @@ const data: ParsedItemCard[] = [
     "packId": "Dooley_Core"
   },
   {
+    "id": "fd95b873-24a4-4af6-8b08-296f24a3576c",
+    "name": "Magic Carpet",
+    "startingTier": "Bronze",
+    "tiers": {
+      "Bronze": {
+        "tooltips": [
+          "Cooldown 7 seconds",
+          "Deal 50 Damage.",
+          "When you Crit, reduce this item's cooldown by 1 second(s) for the fight."
+        ]
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 7 seconds",
+          "Deal 100 Damage.",
+          "When you Crit, reduce this item's cooldown by 1 second(s) for the fight."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 7 seconds",
+          "Deal 150 Damage.",
+          "When you Crit, reduce this item's cooldown by 1 second(s) for the fight."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 7 seconds",
+          "Deal 200 Damage.",
+          "When you Crit, reduce this item's cooldown by 1 second(s) for the fight."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Vehicle",
+      "Weapon"
+    ],
+    "hiddenTags": [
+      "Damage"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Mak"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 2 items for 1 second(s)."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze 1 medium or small item for 1 second(s)."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 2 items for 1 second(s)."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield equal to this item's damage."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to this item's Damage."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to 10% of this item's damage."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn equal to 10% of this item's damage."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "This has double Damage."
+        ]
+      }
+    ],
+    "unifiedTooltips": [
+      "Cooldown 7 seconds",
+      "Deal (50/100/150/200) Damage.",
+      "When you Crit, reduce this item's cooldown by 1 second(s) for the fight."
+    ],
+    "remarks": [],
+    "packId": "Mak_Core"
+  },
+  {
+    "id": "c20cf1f9-63af-4672-92de-08a6e6110e43",
+    "name": "Seashadow",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 2 seconds",
+          "Reduce the cooldown of your other items by 10% for this fight.",
+          "Increase this item's cooldown by 4 second(s) for the fight."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 2 seconds",
+          "Reduce the cooldown of your other items by 10% for this fight.",
+          "Increase this item's cooldown by 3 second(s) for the fight."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 2 seconds",
+          "Reduce the cooldown of your other items by 10% for this fight.",
+          "Increase this item's cooldown by 2 second(s) for the fight."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Friend",
+      "Vehicle"
+    ],
+    "hiddenTags": [
+      "Cooldown"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Vanessa"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 2 items for 4 second(s)."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze 1 medium or small item for 2 second(s)."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 2 items for 4 second(s)."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield 60."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal 90."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison 6."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn 9."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "Your items have +20% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal 60 Damage."
+        ]
+      }
+    ],
+    "unifiedTooltips": [
+      "Cooldown 2 seconds",
+      "Reduce the cooldown of your other items by 10% for this fight.",
+      "Increase this item's cooldown by (4/3/2) second(s) for the fight."
+    ],
+    "remarks": [],
+    "packId": "Vanessa_The_Gang"
+  },
+  {
     "id": "71231a4d-4ba5-48ee-8d6d-4a533d08bebf",
     "name": "Lens",
     "startingTier": "Gold",
@@ -3935,14 +4280,14 @@ const data: ParsedItemCard[] = [
       "Gold": {
         "tooltips": [
           "Cooldown 6 seconds",
-          "The Core gains +5 damage for the fight.",
+          "Charge another Tech item 1 second(s).",
           "When this gains haste, charge it 1 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 6 seconds",
-          "The Core gains +10 damage for the fight.",
+          "Charge another Tech item 2 second(s).",
           "When this gains haste, charge it 2 second(s)."
         ]
       },
@@ -4032,7 +4377,7 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
-      "The Core gains (+5/+10) damage for the fight.",
+      "Charge another Tech item (1/2) second(s).",
       "When this gains haste, charge it (1/2) second(s)."
     ],
     "remarks": [],
@@ -4202,75 +4547,57 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "type": "Golden",
-        "tooltips": [
-          "Get an additional Loot item."
-        ]
-      },
-      {
         "type": "Heavy",
         "tooltips": [
-          "Slow 2 items for 1 second(s)."
+          "...and Enchant the item with Heavy if able."
         ]
       },
       {
         "type": "Icy",
         "tooltips": [
-          "Freeze 1 medium or small item for 1 second(s)."
+          "...and Enchant the item with Icy if able."
         ]
       },
       {
         "type": "Turbo",
         "tooltips": [
-          "Haste 2 items for 1 second(s)."
+          "...and Enchant the item with Turbo if able."
         ]
       },
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to this item's damage."
+          "...and Enchant the item with Shielded if able."
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to this item's Damage."
+          "...and Enchant the item with Restorative if able."
         ]
       },
       {
         "type": "Toxic",
         "tooltips": [
-          "Poison equal to 10% of this item's damage."
+          "...and Enchant the item with Toxic if able."
         ]
       },
       {
         "type": "Fiery",
         "tooltips": [
-          "Burn equal to 10% of this item's damage."
-        ]
-      },
-      {
-        "type": "Shiny",
-        "tooltips": [
-          "This has +1 Multicast."
+          "...and Enchant the item with Fiery if able."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
-        ]
-      },
-      {
-        "type": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
+          "...and Enchant the item with Deadly if able."
         ]
       },
       {
         "type": "Obsidian",
         "tooltips": [
-          "This has double Damage."
+          "...and Enchant the item with Obsidian if able."
         ]
       }
     ],
@@ -4285,30 +4612,26 @@ const data: ParsedItemCard[] = [
   {
     "id": "b642b5dd-180e-4980-bffd-c90110fdc96f",
     "name": "Soul Ring",
-    "startingTier": "Silver",
+    "startingTier": "Gold",
     "tiers": {
       "Bronze": {
         "tooltips": []
       },
       "Silver": {
-        "tooltips": [
-          "Cooldown 9 seconds",
-          "Poison equal to your Regeneration.",
-          "You have +1 Regeneration."
-        ]
+        "tooltips": []
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 9 seconds",
+          "Cooldown 10 seconds",
           "Poison equal to your Regeneration.",
-          "You have +2 Regeneration."
+          "You have +10 Regeneration."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 9 seconds",
+          "Cooldown 10 seconds",
           "Poison equal to your Regeneration.",
-          "You have +3 Regeneration."
+          "You have +20 Regeneration."
         ]
       },
       "Legendary": {
@@ -4348,13 +4671,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield 40."
+          "Shield equal to 10 times this item's Poison."
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal 60."
+          "Heal equal to 10 times this item's Poison."
         ]
       },
       {
@@ -4366,7 +4689,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Fiery",
         "tooltips": [
-          "Burn equal to your Regeneration."
+          "Burn equal to this item's Poison."
         ]
       },
       {
@@ -4386,12 +4709,18 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "This cannot be Frozen, Slowed or Destroyed."
         ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal damage equal to 10 times this item's Poison."
+        ]
       }
     ],
     "unifiedTooltips": [
-      "Cooldown 9 seconds",
+      "Cooldown 10 seconds",
       "Poison equal to your Regeneration.",
-      "You have (+1/+2/+3) Regeneration."
+      "You have (+10/+20) Regeneration."
     ],
     "remarks": [],
     "packId": "Mak_Core"
@@ -4511,34 +4840,30 @@ const data: ParsedItemCard[] = [
   {
     "id": "1afb5eef-e964-4767-b9a6-8d1a76cef645",
     "name": "Black Rose",
-    "startingTier": "Bronze",
+    "startingTier": "Silver",
     "tiers": {
       "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
         "tooltips": [
-          "Cooldown 7 seconds",
+          "Cooldown 8 seconds",
           "Gain 4 Regeneration for the fight.",
           "When you Poison, this gains +1 Regeneration for the fight."
         ]
       },
-      "Silver": {
+      "Gold": {
         "tooltips": [
-          "Cooldown 7 seconds",
+          "Cooldown 8 seconds",
           "Gain 4 Regeneration for the fight.",
           "When you Poison, this gains +2 Regeneration for the fight."
         ]
       },
-      "Gold": {
-        "tooltips": [
-          "Cooldown 7 seconds",
-          "Gain 4 Regeneration for the fight.",
-          "When you Poison, this gains +3 Regeneration for the fight."
-        ]
-      },
       "Diamond": {
         "tooltips": [
-          "Cooldown 7 seconds",
+          "Cooldown 8 seconds",
           "Gain 4 Regeneration for the fight.",
-          "When you Poison, this gains +4 Regeneration for the fight."
+          "When you Poison, this gains +3 Regeneration for the fight."
         ]
       },
       "Legendary": {
@@ -4558,7 +4883,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Heavy",
         "tooltips": [
-          "Slow 1 item for 1 second(s)."
+          "Slow 1 item for 3 second(s)."
         ]
       },
       {
@@ -4570,7 +4895,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Turbo",
         "tooltips": [
-          "Haste 1 item for 1 second(s)."
+          "Haste 1 item for 3 second(s)."
         ]
       },
       {
@@ -4623,9 +4948,9 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "Cooldown 7 seconds",
+      "Cooldown 8 seconds",
       "Gain 4 Regeneration for the fight.",
-      "When you Poison, this gains (+1/+2/+3/+4) Regeneration for the fight."
+      "When you Poison, this gains (+1/+2/+3) Regeneration for the fight."
     ],
     "remarks": [],
     "packId": "Mak_Core"
@@ -4870,23 +5195,23 @@ const data: ParsedItemCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "Cooldown 6 seconds",
+          "Cooldown 9 seconds",
           "Freeze 1 item(s) for 1 second(s).",
-          "Your other Freeze items have +0.5 Freeze duration."
+          "Your other Freeze items have +1 Freeze duration."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 6 seconds",
+          "Cooldown 9 seconds",
           "Freeze 2 item(s) for 1 second(s).",
-          "Your other Freeze items have +0.5 Freeze duration."
+          "Your other Freeze items have +1 Freeze duration."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 6 seconds",
+          "Cooldown 9 seconds",
           "Freeze 3 item(s) for 1 second(s).",
-          "Your other Freeze items have +0.5 Freeze duration."
+          "Your other Freeze items have +1 Freeze duration."
         ]
       },
       "Legendary": {
@@ -4964,9 +5289,9 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "Cooldown 6 seconds",
+      "Cooldown 9 seconds",
       "Freeze (1/2/3) item(s) for 1 second(s).",
-      "Your other Freeze items have +0.5 Freeze duration."
+      "Your other Freeze items have +1 Freeze duration."
     ],
     "remarks": [],
     "packId": "Mak_Core"
@@ -4979,28 +5304,28 @@ const data: ParsedItemCard[] = [
       "Bronze": {
         "tooltips": [
           "Cooldown 8 seconds",
-          "Haste 1 item for 1 second(s).",
+          "Haste 1 item(s) for 1 second(s).",
           "For each adjacent Tool or Food item, this gains +1 Multicast."
         ]
       },
       "Silver": {
         "tooltips": [
           "Cooldown 8 seconds",
-          "Haste 1 item for 2 second(s).",
+          "Haste 1 item(s) for 2 second(s).",
           "For each adjacent Tool or Food item, this gains +1 Multicast."
         ]
       },
       "Gold": {
         "tooltips": [
           "Cooldown 8 seconds",
-          "Haste 1 item for 3 second(s).",
+          "Haste 1 item(s) for 3 second(s).",
           "For each adjacent Tool or Food item, this gains +1 Multicast."
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 8 seconds",
-          "Haste 1 item for 4 second(s).",
+          "Haste 1 item(s) for 4 second(s).",
           "For each adjacent Tool or Food item, this gains +1 Multicast."
         ]
       },
@@ -5088,7 +5413,7 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 8 seconds",
-      "Haste 1 item for (1/2/3/4) second(s).",
+      "Haste 1 item(s) for (1/2/3/4) second(s).",
       "For each adjacent Tool or Food item, this gains +1 Multicast."
     ],
     "remarks": [],
@@ -5223,22 +5548,22 @@ const data: ParsedItemCard[] = [
     "tiers": {
       "Bronze": {
         "tooltips": [
-          "When you sell this, permanently gain 1 Regeneration."
+          "When you sell this, you gain 1 Regeneration."
         ]
       },
       "Silver": {
         "tooltips": [
-          "When you sell this, permanently gain 2 Regeneration."
+          "When you sell this, you gain 2 Regeneration."
         ]
       },
       "Gold": {
         "tooltips": [
-          "When you sell this, permanently gain 3 Regeneration."
+          "When you sell this, you gain 3 Regeneration."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "When you sell this, permanently gain 4 Regeneration."
+          "When you sell this, you gain 4 Regeneration."
         ]
       },
       "Legendary": {
@@ -5259,60 +5584,60 @@ const data: ParsedItemCard[] = [
       {
         "type": "Heavy",
         "tooltips": [
-          "When you sell this, your leftmost Slow item gains +1 Slow duration."
+          "When you sell this, your leftmost Slow item gains +0.2 Slow duration."
         ]
       },
       {
         "type": "Icy",
         "tooltips": [
-          "When you sell this, your leftmost Freeze item gains +0.2 Freeze duration."
+          "When you sell this, your leftmost Freeze item gains +0.1 Freeze duration."
         ]
       },
       {
         "type": "Turbo",
         "tooltips": [
-          "When you sell this, your leftmost Haste item gains +1 Haste duration."
+          "When you sell this, your leftmost Haste item gains +0.2 Haste duration."
         ]
       },
       {
         "type": "Shielded",
         "tooltips": [
-          "When you sell this, your leftmost Shield item gains +20 Shield."
+          "When you sell this, your leftmost Shield item gains +10 Shield."
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "When you sell this, your leftmost Heal item gains +30 Heal."
+          "When you sell this, your leftmost Heal item gains +15 Heal."
         ]
       },
       {
         "type": "Toxic",
         "tooltips": [
-          "When you sell this, your leftmost Poison item gains +2 Poison."
+          "When you sell this, your leftmost Poison item gains +1 Poison."
         ]
       },
       {
         "type": "Fiery",
         "tooltips": [
-          "When you sell this, your leftmost Burn item gains +2 Burn."
+          "When you sell this, your leftmost Burn item gains +1 Burn."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "When you sell this, your leftmost item gains 10% Crit Chance."
+          "When you sell this, your leftmost item gains 2% Crit Chance."
         ]
       },
       {
         "type": "Obsidian",
         "tooltips": [
-          "When you sell this, your leftmost Weapon item gains +20 damage."
+          "When you sell this, your leftmost Weapon item gains +10 damage."
         ]
       }
     ],
     "unifiedTooltips": [
-      "When you sell this, permanently gain (1/2/3/4) Regeneration."
+      "When you sell this, you gain (1/2/3/4) Regeneration."
     ],
     "remarks": [],
     "packId": "Core"
@@ -5868,7 +6193,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Turbo",
         "tooltips": [
-          "Haste the item to the left for 1 second(s)."
+          "Haste the item to the left of this for 1 second(s)."
         ]
       },
       {
@@ -6052,6 +6377,127 @@ const data: ParsedItemCard[] = [
     "packId": "Jules_Core"
   },
   {
+    "id": "273f7009-d835-49a9-99c9-589fdb7c4593",
+    "name": "Mr. Richardson",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Shield 10.",
+          "When you Haste or Slow, this gains +5 Shield for the fight."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Shield 10.",
+          "When you Haste or Slow, this gains +10 Shield for the fight."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Shield 10.",
+          "When you Haste or Slow, this gains +15 Shield for the fight."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Friend"
+    ],
+    "hiddenTags": [
+      "Shield",
+      "HasteReference",
+      "SlowReference"
+    ],
+    "size": "Small",
+    "heroes": [
+      "Vanessa"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 1 item for 3 second(s)."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze 1 small item for 1 second(s)."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 1 item for 3 second(s)."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "This has double Shield."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to this item's Shield."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to 10% of this item's Shield."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn equal to 10% of this item's Shield."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal damage equal to this item's Shield."
+        ]
+      }
+    ],
+    "unifiedTooltips": [
+      "Cooldown 6 seconds",
+      "Shield 10.",
+      "When you Haste or Slow, this gains (+5/+10/+15) Shield for the fight."
+    ],
+    "remarks": [],
+    "packId": "Vanessa_The_Gang"
+  },
+  {
     "id": "8bbfd341-660f-4b9f-9c95-2e40c7d05c1f",
     "name": "Gearnola Bar",
     "startingTier": "Bronze",
@@ -6221,55 +6667,55 @@ const data: ParsedItemCard[] = [
       {
         "type": "Heavy",
         "tooltips": [
-          "When you sell this, your leftmost Slow item gains +1 Slow duration."
+          "When you sell this, your leftmost Slow item gains +0.2 Slow duration."
         ]
       },
       {
         "type": "Icy",
         "tooltips": [
-          "When you sell this, your leftmost Freeze item gains +0.2 Freeze duration."
+          "When you sell this, your leftmost Freeze item gains +0.1 Freeze duration."
         ]
       },
       {
         "type": "Turbo",
         "tooltips": [
-          "When you sell this, your leftmost Haste item gains +1 Haste duration."
+          "When you sell this, your leftmost Haste item gains +0.2 Haste duration."
         ]
       },
       {
         "type": "Shielded",
         "tooltips": [
-          "When you sell this, your leftmost Shield item gains +20 Shield."
+          "When you sell this, your leftmost Shield item gains +10 Shield."
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "When you sell this, your leftmost Heal item gains +30 Heal."
+          "When you sell this, your leftmost Heal item gains +15 Heal."
         ]
       },
       {
         "type": "Toxic",
         "tooltips": [
-          "When you sell this, your leftmost Poison item gains +2 Poison."
+          "When you sell this, your leftmost Poison item gains +1 Poison."
         ]
       },
       {
         "type": "Fiery",
         "tooltips": [
-          "When you sell this, your leftmost Burn item gains +2 Burn."
+          "When you sell this, your leftmost Burn item gains +1 Burn."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "When you sell this, your leftmost item gains 10% Crit Chance."
+          "When you sell this, your leftmost item gains 2% Crit Chance."
         ]
       },
       {
         "type": "Obsidian",
         "tooltips": [
-          "When you sell this, your leftmost Weapon item gains +20 damage."
+          "When you sell this, your leftmost Weapon item gains +10 damage."
         ]
       }
     ],
@@ -6507,129 +6953,6 @@ const data: ParsedItemCard[] = [
     "packId": "Vanessa_Core"
   },
   {
-    "id": "53099361-599f-4c1a-ad4a-d2fbb491b756",
-    "name": "Langxian",
-    "startingTier": "Bronze",
-    "tiers": {
-      "Bronze": {
-        "tooltips": [
-          "Cooldown 10 seconds",
-          "Deal 40 damage.",
-          "When you win a fight with Langxian in play, this gains 40 damage."
-        ]
-      },
-      "Silver": {
-        "tooltips": [
-          "Cooldown 10 seconds",
-          "Deal 40 damage.",
-          "When you win a fight with Langxian in play, this gains 60 damage."
-        ]
-      },
-      "Gold": {
-        "tooltips": [
-          "Cooldown 10 seconds",
-          "Deal 40 damage.",
-          "When you win a fight with Langxian in play, this gains 80 damage."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "Cooldown 10 seconds",
-          "Deal 40 damage.",
-          "When you win a fight with Langxian in play, this gains 100 damage."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [
-      "Weapon"
-    ],
-    "hiddenTags": [
-      "Damage"
-    ],
-    "size": "Medium",
-    "heroes": [
-      "Vanessa"
-    ],
-    "enchantments": [
-      {
-        "type": "Heavy",
-        "tooltips": [
-          "Slow 2 items for 3 second(s)."
-        ]
-      },
-      {
-        "type": "Icy",
-        "tooltips": [
-          "Freeze 1 medium or small item for 3 second(s)."
-        ]
-      },
-      {
-        "type": "Turbo",
-        "tooltips": [
-          "Haste 2 items for 3 second(s)."
-        ]
-      },
-      {
-        "type": "Shielded",
-        "tooltips": [
-          "Shield equal to this item's damage."
-        ]
-      },
-      {
-        "type": "Restorative",
-        "tooltips": [
-          "Heal equal to this item's Damage."
-        ]
-      },
-      {
-        "type": "Toxic",
-        "tooltips": [
-          "Poison equal to 10% of this item's damage."
-        ]
-      },
-      {
-        "type": "Fiery",
-        "tooltips": [
-          "Burn equal to 10% of this item's damage."
-        ]
-      },
-      {
-        "type": "Shiny",
-        "tooltips": [
-          "This has +1 Multicast."
-        ]
-      },
-      {
-        "type": "Deadly",
-        "tooltips": [
-          "+50% Crit Chance"
-        ]
-      },
-      {
-        "type": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
-        "type": "Obsidian",
-        "tooltips": [
-          "This has double Damage."
-        ]
-      }
-    ],
-    "unifiedTooltips": [
-      "Cooldown 10 seconds",
-      "Deal 40 damage.",
-      "When you win a fight with Langxian in play, this gains (40/60/80/100) damage."
-    ],
-    "remarks": [],
-    "packId": "Vanessa_Core"
-  },
-  {
     "id": "40c54925-3b1b-475d-9d68-6b668fd023fe",
     "name": "Temporary Shelter",
     "startingTier": "Bronze",
@@ -6751,6 +7074,129 @@ const data: ParsedItemCard[] = [
     ],
     "remarks": [],
     "packId": "Core"
+  },
+  {
+    "id": "53099361-599f-4c1a-ad4a-d2fbb491b756",
+    "name": "Langxian",
+    "startingTier": "Bronze",
+    "tiers": {
+      "Bronze": {
+        "tooltips": [
+          "Cooldown 10 seconds",
+          "Deal 40 damage.",
+          "When you win a fight with Langxian in play, this gains 40 damage."
+        ]
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 10 seconds",
+          "Deal 40 damage.",
+          "When you win a fight with Langxian in play, this gains 60 damage."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 10 seconds",
+          "Deal 40 damage.",
+          "When you win a fight with Langxian in play, this gains 80 damage."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 10 seconds",
+          "Deal 40 damage.",
+          "When you win a fight with Langxian in play, this gains 100 damage."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Weapon"
+    ],
+    "hiddenTags": [
+      "Damage"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Vanessa"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 2 items for 3 second(s)."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze 1 medium or small item for 3 second(s)."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 2 items for 3 second(s)."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield equal to this item's damage."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to this item's Damage."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to 10% of this item's damage."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn equal to 10% of this item's damage."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "This has double Damage."
+        ]
+      }
+    ],
+    "unifiedTooltips": [
+      "Cooldown 10 seconds",
+      "Deal 40 damage.",
+      "When you win a fight with Langxian in play, this gains (40/60/80/100) damage."
+    ],
+    "remarks": [],
+    "packId": "Vanessa_Core"
   },
   {
     "id": "39f47d29-2ef3-4057-bb60-33acd3dd12a2",
@@ -6980,7 +7426,7 @@ const data: ParsedItemCard[] = [
       "Bronze": {
         "tooltips": [
           "Cooldown 6 seconds",
-          "Deal 5 damage.",
+          "Deal 10 damage.",
           "The first time you fall below half health each fight, slow all enemy items for 1 second(s)."
         ]
       },
@@ -6994,14 +7440,14 @@ const data: ParsedItemCard[] = [
       "Gold": {
         "tooltips": [
           "Cooldown 6 seconds",
-          "Deal 30 damage.",
+          "Deal 20 damage.",
           "The first time you fall below half health each fight, slow all enemy items for 3 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 6 seconds",
-          "Deal 50 damage.",
+          "Deal 25 damage.",
           "The first time you fall below half health each fight, slow all enemy items for 4 second(s)."
         ]
       },
@@ -7090,7 +7536,7 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
-      "Deal (5/15/30/50) damage.",
+      "Deal (10/15/20/25) damage.",
       "The first time you fall below half health each fight, slow all enemy items for (1/2/3/4) second(s)."
     ],
     "remarks": [],
@@ -7468,12 +7914,12 @@ const data: ParsedItemCard[] = [
       },
       "Gold": {
         "tooltips": [
-          "You have Regeneration equal to adjacent properties' values."
+          "You have Regeneration equal to 50% of the value of adjacent properties."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "You have Regeneration equal to double adjacent properties' values."
+          "You have Regeneration equal to 100% of the value of adjacent properties."
         ]
       },
       "Legendary": {
@@ -7497,9 +7943,15 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Restorative",
+        "tooltips": [
+          "This has double Regeneration."
+        ]
+      },
+      {
         "type": "Shiny",
         "tooltips": [
-          "You have additional Regeneration equal to the value of adjacent properties."
+          "This has double Regeneration."
         ]
       },
       {
@@ -7516,7 +7968,7 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "You have Regeneration equal to (1x/2x) adjacent properties' values."
+      "You have Regeneration equal to (50%/100%) of the value of adjacent properties."
     ],
     "remarks": [],
     "packId": "Pygmalien_Core"
@@ -7581,7 +8033,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Icy",
         "tooltips": [
-          "Freeze 1 medium or small item for 2 second(s)."
+          "Freeze 1 medium or small item for 1 second(s)."
         ]
       },
       {
@@ -7621,15 +8073,15 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
-        "type": "Deadly",
-        "tooltips": [
-          "+50% Crit Chance"
-        ]
-      },
-      {
         "type": "Radiant",
         "tooltips": [
           "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "+50% Crit Chance"
         ]
       },
       {
@@ -7657,17 +8109,17 @@ const data: ParsedItemCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "When you use an adjacent Weapon, Slow 1 item for 1 second(s)."
+          "When you use an adjacent Weapon, Slow 1 item(s) for 1 second(s)."
         ]
       },
       "Gold": {
         "tooltips": [
-          "When you use an adjacent Weapon, Slow 1 item for 2 second(s)."
+          "When you use an adjacent Weapon, Slow 1 item(s) for 2 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "When you use an adjacent Weapon, Slow 1 item for 3 second(s)."
+          "When you use an adjacent Weapon, Slow 1 item(s) for 3 second(s)."
         ]
       },
       "Legendary": {
@@ -7745,7 +8197,7 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "When you use an adjacent Weapon, Slow 1 item for (1/2/3) second(s)."
+      "When you use an adjacent Weapon, Slow 1 item(s) for (1/2/3) second(s)."
     ],
     "remarks": [],
     "packId": "Core"
@@ -7759,28 +8211,28 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Cooldown 7 seconds",
           "Deal 20 damage.",
-          "When you Heal, this gains 5 damage for the fight."
+          "When you Heal, this gains 10 damage for the fight."
         ]
       },
       "Silver": {
         "tooltips": [
           "Cooldown 7 seconds",
           "Deal 40 damage.",
-          "When you Heal, this gains 10 damage for the fight."
+          "When you Heal, this gains 20 damage for the fight."
         ]
       },
       "Gold": {
         "tooltips": [
           "Cooldown 7 seconds",
           "Deal 80 damage.",
-          "When you Heal, this gains 15 damage for the fight."
+          "When you Heal, this gains 30 damage for the fight."
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 7 seconds",
           "Deal 160 damage.",
-          "When you Heal, this gains 20 damage for the fight."
+          "When you Heal, this gains 40 damage for the fight."
         ]
       },
       "Legendary": {
@@ -7869,7 +8321,7 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Deal (20/40/80/160) damage.",
-      "When you Heal, this gains (5/10/15/20) damage for the fight."
+      "When you Heal, this gains (10/20/30/40) damage for the fight."
     ],
     "remarks": [],
     "packId": "Pygmalien_Core"
@@ -8229,35 +8681,29 @@ const data: ParsedItemCard[] = [
   },
   {
     "id": "4fdc947b-3646-429e-ba4e-bb693fe44bc2",
-    "name": "Shield Potion",
-    "startingTier": "Bronze",
+    "name": "Invulnerability Potion",
+    "startingTier": "Gold",
     "tiers": {
       "Bronze": {
-        "tooltips": [
-          "Cooldown 5 seconds",
-          "Ammo 1",
-          "Shield 60."
-        ]
+        "tooltips": []
       },
       "Silver": {
-        "tooltips": [
-          "Cooldown 5 seconds",
-          "Ammo 1",
-          "Shield 120."
-        ]
+        "tooltips": []
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 5 seconds",
+          "Cooldown 10 seconds",
           "Ammo 1",
-          "Shield 180."
+          "You take no damage for 1 second(s).",
+          "The first time you fall below half health each fight, use this."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 5 seconds",
+          "Cooldown 10 seconds",
           "Ammo 1",
-          "Shield 240."
+          "You take no damage for 2 second(s).",
+          "The first time you fall below half health each fight, use this."
         ]
       },
       "Legendary": {
@@ -8268,7 +8714,6 @@ const data: ParsedItemCard[] = [
       "Potion"
     ],
     "hiddenTags": [
-      "Shield",
       "Ammo"
     ],
     "size": "Small",
@@ -8297,37 +8742,31 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "This has double Shield."
+          "Shield 40."
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to this item's Shield."
+          "Heal 60."
         ]
       },
       {
         "type": "Toxic",
         "tooltips": [
-          "Poison equal to 10% of this item's Shield."
+          "Poison 4."
         ]
       },
       {
         "type": "Fiery",
         "tooltips": [
-          "Burn equal to 10% of this item's Shield."
+          "Burn 6."
         ]
       },
       {
         "type": "Shiny",
         "tooltips": [
           "This has +1 Multicast."
-        ]
-      },
-      {
-        "type": "Deadly",
-        "tooltips": [
-          "+50% Crit Chance"
         ]
       },
       {
@@ -8339,14 +8778,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal damage equal to this item's Shield."
+          "Deal 40 Damage."
         ]
       }
     ],
     "unifiedTooltips": [
-      "Cooldown 5 seconds",
+      "Cooldown 10 seconds",
       "Ammo 1",
-      "Shield (60/120/180/240)."
+      "You take no damage for (1/2) second(s).",
+      "The first time you fall below half health each fight, use this."
     ],
     "remarks": [],
     "packId": "Mak_Core"
@@ -8462,6 +8902,134 @@ const data: ParsedItemCard[] = [
     ],
     "remarks": [],
     "packId": "Core"
+  },
+  {
+    "id": "e0420e4b-b53b-4b05-8074-1622200ca9ce",
+    "name": "Z-Shield",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 8 seconds",
+          "Shield 75.",
+          "Freeze 1 item for 1 second(s).",
+          "Adjacent items have their cooldown reduced by 10%.",
+          "This has +1 Multicast if you have a Large item."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 8 seconds",
+          "Shield 100.",
+          "Freeze 1 item for 2 second(s).",
+          "Adjacent items have their cooldown reduced by 15%.",
+          "This has +1 Multicast if you have a Large item."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 8 seconds",
+          "Shield 125.",
+          "Freeze 1 item for 3 second(s).",
+          "Adjacent items have their cooldown reduced by 20%.",
+          "This has +1 Multicast if you have a Large item."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Tech"
+    ],
+    "hiddenTags": [
+      "Shield",
+      "Freeze"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Dooley"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 2 items for 4 second(s)."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "This has double Freeze duration."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 2 items for 4 second(s)."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "This has double Shield."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to this item's Shield."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to 10% of this item's Shield."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn equal to 10% of this item's Shield."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal damage equal to this item's Shield."
+        ]
+      }
+    ],
+    "unifiedTooltips": [
+      "Cooldown 8 seconds",
+      "Shield (75/100/125).",
+      "Freeze 1 item for (1/2/3) second(s).",
+      "Adjacent items have their cooldown reduced by (10%/15%/20%).",
+      "This has +1 Multicast if you have a Large item."
+    ],
+    "remarks": [],
+    "packId": "Dooley_Dooltron"
   },
   {
     "id": "d903dda8-9c30-4325-a727-c885ad972025",
@@ -9780,7 +10348,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Deadly",
         "tooltips": [
-          "The item to the left gains +25% Crit Chance for the fight."
+          "The item to the left of this gains +25% Crit Chance for the fight."
         ]
       },
       {
@@ -9816,21 +10384,21 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Cooldown 7 seconds",
           "Deal 50 damage.",
-          "If you have another Tool, Ammo, Property or Friend this has +1 Multicast for each."
+          "If you have another Tool, Property, Friend, or Ammo item this has +1 Multicast for each."
         ]
       },
       "Gold": {
         "tooltips": [
           "Cooldown 7 seconds",
           "Deal 75 damage.",
-          "If you have another Tool, Ammo, Property or Friend this has +1 Multicast for each."
+          "If you have another Tool, Property, Friend, or Ammo item this has +1 Multicast for each."
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 7 seconds",
           "Deal 100 damage.",
-          "If you have another Tool, Ammo, Property or Friend this has +1 Multicast for each."
+          "If you have another Tool, Property, Friend, or Ammo item this has +1 Multicast for each."
         ]
       },
       "Legendary": {
@@ -9921,7 +10489,7 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Deal (50/75/100) damage.",
-      "If you have another Tool, Ammo, Property or Friend this has +1 Multicast for each."
+      "If you have another Tool, Property, Friend, or Ammo item this has +1 Multicast for each."
     ],
     "remarks": [],
     "packId": "Vanessa_Core"
@@ -10109,28 +10677,28 @@ const data: ParsedItemCard[] = [
       "Bronze": {
         "tooltips": [
           "Cooldown 9 seconds",
-          "Slow 1 item for 3 second(s).",
+          "Slow 1 item(s) for 3 second(s).",
           "At the start of each day, get a Piranha."
         ]
       },
       "Silver": {
         "tooltips": [
           "Cooldown 9 seconds",
-          "Slow 2 item for 3 second(s).",
+          "Slow 2 item(s) for 3 second(s).",
           "At the start of each day, get a Piranha."
         ]
       },
       "Gold": {
         "tooltips": [
           "Cooldown 9 seconds",
-          "Slow 3 item for 3 second(s).",
+          "Slow 3 item(s) for 3 second(s).",
           "At the start of each day, get a Piranha."
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 9 seconds",
-          "Slow 4 item for 3 second(s).",
+          "Slow 4 item(s) for 3 second(s).",
           "At the start of each day, get a Piranha."
         ]
       },
@@ -10153,43 +10721,167 @@ const data: ParsedItemCard[] = [
       {
         "type": "Heavy",
         "tooltips": [
-          "This has double Slow duration."
+          "...and Enchant the item with Heavy if able."
         ]
       },
       {
         "type": "Icy",
         "tooltips": [
-          "Freeze 1 medium or small item for 3 second(s)."
+          "...and Enchant the item with Icy if able."
         ]
       },
       {
         "type": "Turbo",
         "tooltips": [
-          "Haste 2 items for 3 second(s)."
+          "...and Enchant the item with Turbo if able."
         ]
       },
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield 80."
+          "...and Enchant the item with Shielded if able."
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal 120."
+          "...and Enchant the item with Restorative if able."
         ]
       },
       {
         "type": "Toxic",
         "tooltips": [
-          "Poison 8."
+          "...and Enchant the item with Toxic if able."
         ]
       },
       {
         "type": "Fiery",
         "tooltips": [
-          "Burn 12."
+          "...and Enchant the item with Fiery if able."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "...and Enchant the item with Shiny if able."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "...and Enchant the item with Deadly if able."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "...and Enchant the item with Radiant if able."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "...and Enchant the item with Obsidian if able."
+        ]
+      }
+    ],
+    "unifiedTooltips": [
+      "Cooldown 9 seconds",
+      "Slow (1/2/3/4) item(s) for 3 second(s).",
+      "At the start of each day, get a Piranha."
+    ],
+    "remarks": [],
+    "packId": "Vanessa_Core"
+  },
+  {
+    "id": "55e65c01-8279-485d-9d63-79ec0c2129cb",
+    "name": "YLW-M4NT1S",
+    "startingTier": "Bronze",
+    "tiers": {
+      "Bronze": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Haste 1 item(s) for 1 second(s).",
+          "When an adjacent item Burns, charge this 1 second(s)."
+        ]
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Haste 2 item(s) for 1 second(s).",
+          "When an adjacent item Burns, charge this 1 second(s)."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Haste 3 item(s) for 1 second(s).",
+          "When an adjacent item Burns, charge this 1 second(s)."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Haste 4 item(s) for 1 second(s).",
+          "When an adjacent item Burns, charge this 1 second(s)."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Friend"
+    ],
+    "hiddenTags": [
+      "Haste",
+      "BurnReference"
+    ],
+    "size": "Small",
+    "heroes": [
+      "Dooley"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 1 item for 3 second(s)."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze 1 small item for 1 second(s)."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "This has double Haste duration."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield 20."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal 30."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison 2."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn 3."
         ]
       },
       {
@@ -10201,7 +10893,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Deadly",
         "tooltips": [
-          "Your Piranhas have +50% Crit Chance."
+          "Your Friends have +20% Crit Chance."
         ]
       },
       {
@@ -10213,17 +10905,17 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal 80 Damage."
+          "Deal 20 Damage."
         ]
       }
     ],
     "unifiedTooltips": [
-      "Cooldown 9 seconds",
-      "Slow (1/2/3/4) item for 3 second(s).",
-      "At the start of each day, get a Piranha."
+      "Cooldown 6 seconds",
+      "Haste (1/2/3/4) item(s) for 1 second(s).",
+      "When an adjacent item Burns, charge this 1 second(s)."
     ],
     "remarks": [],
-    "packId": "Vanessa_Core"
+    "packId": "Dooley_Dooltron"
   },
   {
     "id": "41dea658-7e38-471a-aa20-e018734526f0",
@@ -10768,34 +11460,30 @@ const data: ParsedItemCard[] = [
   {
     "id": "28db3caa-7727-4d1c-9758-df42975e4811",
     "name": "Frost Potion",
-    "startingTier": "Bronze",
+    "startingTier": "Silver",
     "tiers": {
       "Bronze": {
-        "tooltips": [
-          "Cooldown 5 seconds",
-          "Ammo 1",
-          "Freeze 1 small item(s) for 2 second(s)."
-        ]
+        "tooltips": []
       },
       "Silver": {
         "tooltips": [
-          "Cooldown 5 seconds",
+          "Cooldown 6 seconds",
           "Ammo 1",
-          "Freeze 2 small item(s) for 2 second(s)."
+          "Freeze 1 item(s) for 1 second(s)."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 5 seconds",
+          "Cooldown 6 seconds",
           "Ammo 1",
-          "Freeze 3 small item(s) for 2 second(s)."
+          "Freeze 2 item(s) for 1 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 5 seconds",
+          "Cooldown 6 seconds",
           "Ammo 1",
-          "Freeze 4 small item(s) for 2 second(s)."
+          "Freeze 3 item(s) for 1 second(s)."
         ]
       },
       "Legendary": {
@@ -10876,9 +11564,9 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "Cooldown 5 seconds",
+      "Cooldown 6 seconds",
       "Ammo 1",
-      "Freeze (1/2/3/4) small item(s) for 2 second(s)."
+      "Freeze (1/2/3) item(s) for 1 second(s)."
     ],
     "remarks": [],
     "packId": "Mak_Core"
@@ -11000,6 +11688,129 @@ const data: ParsedItemCard[] = [
     "packId": "Pygmalien_Core"
   },
   {
+    "id": "b3ab39e0-c40c-44e7-bda7-09cf9ad63ec9",
+    "name": "Sat-Comm",
+    "startingTier": "Bronze",
+    "tiers": {
+      "Bronze": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Haste the Friend to the right of this for 2 second(s).",
+          "At the start of each day, get a Small Friend from any Hero."
+        ]
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Haste the Friend to the right of this for 2 second(s).",
+          "At the start of each day, get a Small Friend from any Hero."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Haste the Friend to the right of this for 2 second(s).",
+          "At the start of each day, get a Small Friend from any Hero."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Haste the Friend to the right of this for 5 second(s).",
+          "At the start of each day, get a Small Friend from any Hero."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Tech"
+    ],
+    "hiddenTags": [
+      "Haste"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Dooley"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "...and Enchant the item with Heavy if able."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "...and Enchant the item with Icy if able."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "...and Enchant the item with Turbo if able."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "...and Enchant the item with Shielded if able."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "...and Enchant the item with Restorative if able."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "...and Enchant the item with Toxic if able."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "...and Enchant the item with Fiery if able."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "...and Enchant the item with Shiny if able."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "...and Enchant the item with Deadly if able."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "...and Enchant the item with Radiant if able."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "...and Enchant the item with Obsidian if able."
+        ]
+      }
+    ],
+    "unifiedTooltips": [
+      "Cooldown 5 seconds",
+      "Haste the Friend to the right of this for (2/2/2/5) second(s).",
+      "At the start of each day, get a Small Friend from any Hero."
+    ],
+    "remarks": [],
+    "packId": "Dooley_Dooltron"
+  },
+  {
     "id": "0966f887-5aaf-44a5-90fa-ecb194270513",
     "name": "Duct Tape",
     "startingTier": "Silver",
@@ -11009,23 +11820,23 @@ const data: ParsedItemCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "Cooldown 7 seconds",
-          "Slow 1 item for 1 second(s).",
-          "When you use an adjacent item, Shield 5."
+          "Cooldown 6 seconds",
+          "Slow 1 item(s) for 1 second(s).",
+          "When you use the item to the left of this, Shield 5."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 7 seconds",
-          "Slow 1 item for 2 second(s).",
-          "When you use an adjacent item, Shield 10."
+          "Cooldown 6 seconds",
+          "Slow 1 item(s) for 2 second(s).",
+          "When you use the item to the left of this, Shield 10."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 7 seconds",
-          "Slow 1 item for 3 second(s).",
-          "When you use an adjacent item, Shield 15."
+          "Cooldown 6 seconds",
+          "Slow 1 item(s) for 3 second(s).",
+          "When you use the item to the left of this, Shield 15."
         ]
       },
       "Legendary": {
@@ -11106,9 +11917,9 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "Cooldown 7 seconds",
-      "Slow 1 item for (1/2/3) second(s).",
-      "When you use an adjacent item, Shield (5/10/15)."
+      "Cooldown 6 seconds",
+      "Slow 1 item(s) for (1/2/3) second(s).",
+      "When you use the item to the left of this, Shield (5/10/15)."
     ],
     "remarks": [],
     "packId": "Core"
@@ -11124,7 +11935,7 @@ const data: ParsedItemCard[] = [
       "Silver": {
         "tooltips": [
           "Cooldown 8 seconds",
-          "Slow 1 item for 1 second(s).",
+          "Slow 1 item(s) for 1 second(s).",
           "Haste 1 item for 1 second(s).",
           "For each adjacent Vehicle, this has +1 Multicast."
         ]
@@ -11132,7 +11943,7 @@ const data: ParsedItemCard[] = [
       "Gold": {
         "tooltips": [
           "Cooldown 8 seconds",
-          "Slow 1 item for 2 second(s).",
+          "Slow 1 item(s) for 2 second(s).",
           "Haste 1 item for 2 second(s).",
           "For each adjacent Vehicle, this has +1 Multicast."
         ]
@@ -11140,7 +11951,7 @@ const data: ParsedItemCard[] = [
       "Diamond": {
         "tooltips": [
           "Cooldown 8 seconds",
-          "Slow 1 item for 3 second(s).",
+          "Slow 1 item(s) for 3 second(s).",
           "Haste 1 item for 3 second(s).",
           "For each adjacent Vehicle, this has +1 Multicast."
         ]
@@ -11228,7 +12039,7 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 8 seconds",
-      "Slow 1 item for (1/2/3) second(s).",
+      "Slow 1 item(s) for (1/2/3) second(s).",
       "Haste 1 item for (1/2/3) second(s).",
       "For each adjacent Vehicle, this has +1 Multicast."
     ],
@@ -11365,29 +12176,29 @@ const data: ParsedItemCard[] = [
     "tiers": {
       "Bronze": {
         "tooltips": [
-          "Cooldown 7 seconds",
-          "Your weapons gain +3 damage for the fight.",
+          "Cooldown 6 seconds",
+          "Your weapons gain +5 damage for the fight.",
           "When you slow, charge this 2 second(s)."
         ]
       },
       "Silver": {
         "tooltips": [
-          "Cooldown 7 seconds",
-          "Your weapons gain +6 damage for the fight.",
+          "Cooldown 6 seconds",
+          "Your weapons gain +10 damage for the fight.",
           "When you slow, charge this 2 second(s)."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 7 seconds",
-          "Your weapons gain +9 damage for the fight.",
+          "Cooldown 6 seconds",
+          "Your weapons gain +15 damage for the fight.",
           "When you slow, charge this 2 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 7 seconds",
-          "Your weapons gain +12 damage for the fight.",
+          "Cooldown 6 seconds",
+          "Your weapons gain +20 damage for the fight.",
           "When you slow, charge this 2 second(s)."
         ]
       },
@@ -11476,8 +12287,8 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "Cooldown 7 seconds",
-      "Your weapons gain (+3/+6/+9/+12) damage for the fight.",
+      "Cooldown 6 seconds",
+      "Your weapons gain (+5/+10/+15/+20) damage for the fight.",
       "When you slow, charge this 2 second(s)."
     ],
     "remarks": [],
@@ -11644,9 +12455,75 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
+        "type": "Golden",
+        "tooltips": [
+          "...and Enchant the item with Golden if able."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "...and Enchant the item with Heavy if able."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "...and Enchant the item with Icy if able."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "...and Enchant the item with Turbo if able."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "...and Enchant the item with Shielded if able."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "...and Enchant the item with Restorative if able."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "...and Enchant the item with Toxic if able."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "...and Enchant the item with Fiery if able."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "...and Enchant the item with Shiny if able."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "...and Enchant the item with Deadly if able."
+        ]
+      },
+      {
         "type": "Radiant",
         "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
+          "...and Enchant the item with Radiant if able."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "...and Enchant the item with Obsidian if able."
         ]
       }
     ],
@@ -11666,28 +12543,28 @@ const data: ParsedItemCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "Cooldown 9 seconds",
+          "Cooldown 8 seconds",
           "Ammo 1",
           "Deal 100 damage.",
-          "When you use another Aquatic or Ammo item, this gains 25 damage for the fight.",
+          "When you use another Aquatic or Ammo item, this gains 30 damage for the fight.",
           "If the item is Large, Reload 1 Ammo."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 9 seconds",
+          "Cooldown 8 seconds",
           "Ammo 1",
           "Deal 100 damage.",
-          "When you use another Aquatic or Ammo item, this gains 50 damage for the fight.",
+          "When you use another Aquatic or Ammo item, this gains 60 damage for the fight.",
           "If the item is Large, Reload 1 Ammo."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 9 seconds",
+          "Cooldown 8 seconds",
           "Ammo 1",
           "Deal 100 damage.",
-          "When you use another Aquatic or Ammo item, this gains 75 damage for the fight.",
+          "When you use another Aquatic or Ammo item, this gains 90 damage for the fight.",
           "If the item is Large, Reload 1 Ammo."
         ]
       },
@@ -11777,10 +12654,10 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "Cooldown 9 seconds",
+      "Cooldown 8 seconds",
       "Ammo 1",
       "Deal 100 damage.",
-      "When you use another Aquatic or Ammo item, this gains (25/50/75) damage for the fight.",
+      "When you use another Aquatic or Ammo item, this gains (30/60/90) damage for the fight.",
       "If the item is Large, Reload 1 Ammo."
     ],
     "remarks": [],
@@ -12018,6 +12895,136 @@ const data: ParsedItemCard[] = [
     "packId": "Core"
   },
   {
+    "id": "2d395818-28b0-46b5-87a8-bf384c846344",
+    "name": "Calico",
+    "startingTier": "Bronze",
+    "tiers": {
+      "Bronze": {
+        "tooltips": [
+          "Cooldown 7 seconds",
+          "Deal 10 damage.",
+          "When you use another Weapon, this gains +5% Crit chance for the fight.",
+          "This deals double Crit damage."
+        ]
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 7 seconds",
+          "Deal 20 damage.",
+          "When you use another Weapon, this gains +10% Crit chance for the fight.",
+          "This deals double Crit damage."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 7 seconds",
+          "Deal 30 damage.",
+          "When you use another Weapon, this gains +15% Crit chance for the fight.",
+          "This deals double Crit damage."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 7 seconds",
+          "Deal 40 damage.",
+          "When you use another Weapon, this gains +20% Crit chance for the fight.",
+          "This deals double Crit damage."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Friend",
+      "Weapon"
+    ],
+    "hiddenTags": [
+      "Damage",
+      "CritReference"
+    ],
+    "size": "Small",
+    "heroes": [
+      "Vanessa"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 1 item for 6 second(s)."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze 1 small item for 3 second(s)."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 1 item for 6 second(s)."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield equal to this item's damage."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to this item's Damage."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to 10% of this item's damage."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn equal to 10% of this item's damage."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "This has double Crit Chance bonus."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "This has double Damage."
+        ]
+      }
+    ],
+    "unifiedTooltips": [
+      "Cooldown 7 seconds",
+      "Deal (10/20/30/40) damage.",
+      "When you use another Weapon, this gains (+5%/+10%/+15%/+20%) Crit chance for the fight.",
+      "This deals double Crit damage."
+    ],
+    "remarks": [],
+    "packId": "Vanessa_The_Gang"
+  },
+  {
     "id": "ac92c118-c073-465c-8d89-abafa0dcb144",
     "name": "Genie Lamp",
     "startingTier": "Diamond",
@@ -12055,117 +13062,6 @@ const data: ParsedItemCard[] = [
     ],
     "remarks": [],
     "packId": "Core"
-  },
-  {
-    "id": "07df297d-e116-42a4-9596-4af674764d1b",
-    "name": "Globe",
-    "startingTier": "Silver",
-    "tiers": {
-      "Bronze": {
-        "tooltips": []
-      },
-      "Silver": {
-        "tooltips": [
-          "At the start of each day, permanently gain 100 Max Health."
-        ]
-      },
-      "Gold": {
-        "tooltips": [
-          "At the start of each day, permanently gain 200 Max Health."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "At the start of each day, permanently gain 300 Max Health."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [
-      "Tool"
-    ],
-    "hiddenTags": [
-      "Health"
-    ],
-    "size": "Medium",
-    "heroes": [
-      "Pygmalien"
-    ],
-    "enchantments": [
-      {
-        "type": "Heavy",
-        "tooltips": [
-          "At the start of each fight, Slow 3 items for 5 second(s)."
-        ]
-      },
-      {
-        "type": "Icy",
-        "tooltips": [
-          "At the start of each fight, Freeze 2 medium or small items for 4 second(s)."
-        ]
-      },
-      {
-        "type": "Turbo",
-        "tooltips": [
-          "At the start of each fight, Haste 3 items for 5 second(s)."
-        ]
-      },
-      {
-        "type": "Shielded",
-        "tooltips": [
-          "At the start of each fight, Shield 120."
-        ]
-      },
-      {
-        "type": "Restorative",
-        "tooltips": [
-          "You have +12 Regeneration."
-        ]
-      },
-      {
-        "type": "Toxic",
-        "tooltips": [
-          "At the start of each fight, poison 12."
-        ]
-      },
-      {
-        "type": "Fiery",
-        "tooltips": [
-          "At the start of each fight, burn 16."
-        ]
-      },
-      {
-        "type": "Shiny",
-        "tooltips": [
-          "This has double Max Health gain."
-        ]
-      },
-      {
-        "type": "Deadly",
-        "tooltips": [
-          "Your Tools have +20% Crit Chance."
-        ]
-      },
-      {
-        "type": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
-        "type": "Obsidian",
-        "tooltips": [
-          "At the start of each fight, Deal 120 Damage."
-        ]
-      }
-    ],
-    "unifiedTooltips": [
-      "At the start of each day, permanently gain (100/200/300) Max Health."
-    ],
-    "remarks": [],
-    "packId": "Pygmalien_Core"
   },
   {
     "id": "33c9b825-946c-45f8-a0f3-8c0f493dbc45",
@@ -12292,6 +13188,117 @@ const data: ParsedItemCard[] = [
     "packId": "Dooley_Core"
   },
   {
+    "id": "07df297d-e116-42a4-9596-4af674764d1b",
+    "name": "Globe",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "At the start of each day, permanently gain 100 Max Health."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "At the start of each day, permanently gain 200 Max Health."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "At the start of each day, permanently gain 300 Max Health."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Tool"
+    ],
+    "hiddenTags": [
+      "Health"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Pygmalien"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "At the start of each fight, Slow 3 items for 5 second(s)."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "At the start of each fight, Freeze 2 medium or small items for 4 second(s)."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "At the start of each fight, Haste 3 items for 5 second(s)."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "At the start of each fight, Shield 120."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "You have +12 Regeneration."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "At the start of each fight, poison 12."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "At the start of each fight, burn 16."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has double Max Health gain."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "Your Tools have +20% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "At the start of each fight, Deal 120 Damage."
+        ]
+      }
+    ],
+    "unifiedTooltips": [
+      "At the start of each day, permanently gain (100/200/300) Max Health."
+    ],
+    "remarks": [],
+    "packId": "Pygmalien_Core"
+  },
+  {
     "id": "37222f02-3767-44ef-a8ed-000c90d3330e",
     "name": "Ruby",
     "startingTier": "Bronze",
@@ -12415,30 +13422,26 @@ const data: ParsedItemCard[] = [
   {
     "id": "6031a849-e93e-41fb-a41f-a2c4d8be8929",
     "name": "Venom",
-    "startingTier": "Silver",
+    "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
-        "tooltips": []
+        "tooltips": [
+          "When you use an adjacent Weapon, Poison 1."
+        ]
       },
       "Silver": {
         "tooltips": [
-          "Cooldown 4 seconds",
-          "Poison 3.",
-          "When you use an adjacent Weapon, this gains +1 Poison for the fight."
+          "When you use an adjacent Weapon, Poison 2."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 4 seconds",
-          "Poison 3.",
-          "When you use an adjacent Weapon, this gains +2 Poison for the fight."
+          "When you use an adjacent Weapon, Poison 3."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 4 seconds",
-          "Poison 3.",
-          "When you use an adjacent Weapon, this gains +3 Poison for the fight."
+          "When you use an adjacent Weapon, Poison 4."
         ]
       },
       "Legendary": {
@@ -12457,31 +13460,31 @@ const data: ParsedItemCard[] = [
       {
         "type": "Heavy",
         "tooltips": [
-          "Slow 1 item for 1 second(s)."
+          "When you use an adjacent Weapon, Slow 1 item for 1 second(s)."
         ]
       },
       {
         "type": "Icy",
         "tooltips": [
-          "Freeze 1 small item for 1 second(s)."
+          "When you use an adjacent Weapon, Freeze 1 small item for 1 second(s)."
         ]
       },
       {
         "type": "Turbo",
         "tooltips": [
-          "Haste 1 item for 1 second(s)."
+          "When you use an adjacent Weapon, Haste 1 item for 1 second(s)."
         ]
       },
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 10 times this item's Poison."
+          "When you use an adjacent Weapon, Shield equal to 10 times this item's Poison."
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 10 times this item's Poison."
+          "When you use an adjacent Weapon, Heal equal to 10 times this item's Poison."
         ]
       },
       {
@@ -12493,7 +13496,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Fiery",
         "tooltips": [
-          "Burn equal to this item's Poison."
+          "When you use an adjacent Weapon, Burn equal to this item's Poison."
         ]
       },
       {
@@ -12517,14 +13520,12 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal damage equal to 10 times this item's Poison."
+          "When you use an adjacent Weapon, Deal damage equal to 10 times this item's Poison."
         ]
       }
     ],
     "unifiedTooltips": [
-      "Cooldown 4 seconds",
-      "Poison 3.",
-      "When you use an adjacent Weapon, this gains (+1/+2/+3) Poison for the fight."
+      "When you use an adjacent Weapon, Poison (1/2/3/4)."
     ],
     "remarks": [],
     "packId": "Mak_Core"
@@ -12665,25 +13666,25 @@ const data: ParsedItemCard[] = [
       "Silver": {
         "tooltips": [
           "Cooldown 6 seconds",
-          "Deal 5 damage.",
+          "Deal 10 damage.",
           "Slow 1 item for 1 second(s).",
-          "When you slow, this gains 5 damage for the fight."
+          "When you slow, this gains 10 damage for the fight."
         ]
       },
       "Gold": {
         "tooltips": [
           "Cooldown 6 seconds",
-          "Deal 10 damage.",
+          "Deal 20 damage.",
           "Slow 1 item for 2 second(s).",
-          "When you slow, this gains 10 damage for the fight."
+          "When you slow, this gains 20 damage for the fight."
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 6 seconds",
-          "Deal 15 damage.",
+          "Deal 30 damage.",
           "Slow 1 item for 3 second(s).",
-          "When you slow, this gains 20 damage for the fight."
+          "When you slow, this gains 30 damage for the fight."
         ]
       },
       "Legendary": {
@@ -12771,9 +13772,9 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
-      "Deal (5/10/15) damage.",
+      "Deal (10/20/30) damage.",
       "Slow 1 item for (1/2/3) second(s).",
-      "When you slow, this gains (5/10/20) damage for the fight."
+      "When you slow, this gains (10/20/30) damage for the fight."
     ],
     "remarks": [],
     "packId": "Vanessa_Core"
@@ -13078,7 +14079,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Turbo",
         "tooltips": [
-          "Haste the item to the left for 1 second(s)."
+          "Haste the item to the left of this for 1 second(s)."
         ]
       },
       {
@@ -13140,26 +14141,33 @@ const data: ParsedItemCard[] = [
   {
     "id": "35e2a1dd-739d-4434-95c5-2b9ce5f07a5c",
     "name": "Death Caps",
-    "startingTier": "Gold",
+    "startingTier": "Silver",
     "tiers": {
       "Bronze": {
         "tooltips": []
       },
       "Silver": {
-        "tooltips": []
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Poison 2.",
+          "Your Poison items gain +2 Poison for the fight.",
+          "When this is transformed, enchant it with Toxic if able."
+        ]
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 6 seconds",
-          "Poison 1.",
-          "Your Poison items gain +1 Poison for the fight."
+          "Cooldown 5 seconds",
+          "Poison 2.",
+          "Your Poison items gain +4 Poison for the fight.",
+          "When this is transformed, enchant it with Toxic if able."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 6 seconds",
+          "Cooldown 5 seconds",
           "Poison 2.",
-          "Your Poison items gain +2 Poison for the fight."
+          "Your Poison items gain +6 Poison for the fight.",
+          "When this is transformed, enchant it with Toxic if able."
         ]
       },
       "Legendary": {
@@ -13167,7 +14175,7 @@ const data: ParsedItemCard[] = [
       }
     },
     "tags": [
-      "Ingredient"
+      "Reagent"
     ],
     "hiddenTags": [
       "Poison"
@@ -13180,19 +14188,19 @@ const data: ParsedItemCard[] = [
       {
         "type": "Heavy",
         "tooltips": [
-          "Slow 2 items for 2 second(s)."
+          "Slow 2 items for 1 second(s)."
         ]
       },
       {
         "type": "Icy",
         "tooltips": [
-          "Freeze 1 medium or small item for 2 second(s)."
+          "Freeze 1 medium or small item for 1 second(s)."
         ]
       },
       {
         "type": "Turbo",
         "tooltips": [
-          "Haste 2 items for 2 second(s)."
+          "Haste 2 items for 1 second(s)."
         ]
       },
       {
@@ -13245,9 +14253,10 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "Cooldown 6 seconds",
-      "Poison (1/2).",
-      "Your Poison items gain (+1/+2) Poison for the fight."
+      "Cooldown 5 seconds",
+      "Poison 2.",
+      "Your Poison items gain (+2/+4/+6) Poison for the fight.",
+      "When this is transformed, enchant it with Toxic if able."
     ],
     "remarks": [],
     "packId": "Mak_Core"
@@ -13310,19 +14319,19 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "When you use a Friend, shield 20."
+          "When you use a Friend, shield 30."
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "When you use a Friend, heal 30."
+          "When you use a Friend, heal 45."
         ]
       },
       {
         "type": "Toxic",
         "tooltips": [
-          "When you use a Friend, poison 2."
+          "When you use a Friend, poison 3."
         ]
       },
       {
@@ -13352,7 +14361,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "When you use a Friend, Deal 20 Damage."
+          "When you use a Friend, Deal 30 Damage."
         ]
       }
     ],
@@ -13488,6 +14497,238 @@ const data: ParsedItemCard[] = [
     "packId": "Stelle_Core"
   },
   {
+    "id": "47e97343-d790-4ecc-8ccd-d2f7e9949494",
+    "name": "Old Saltclaw",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Damage 10.",
+          "When you Haste or Slow, this gains +5 Damage for the fight."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Damage 10.",
+          "When you Haste or Slow, this gains +10 Damage for the fight."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Damage 10.",
+          "When you Haste or Slow, this gains +15 Damage for the fight."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Aquatic",
+      "Friend",
+      "Weapon"
+    ],
+    "hiddenTags": [
+      "Damage",
+      "HasteReference",
+      "SlowReference"
+    ],
+    "size": "Small",
+    "heroes": [
+      "Vanessa"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 1 item for 3 second(s)."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze 1 small item for 1 second(s)."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 1 item for 3 second(s)."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield equal to this item's damage."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to this item's Damage."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to 10% of this item's damage."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn equal to 10% of this item's damage."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "This has double Damage."
+        ]
+      }
+    ],
+    "unifiedTooltips": [
+      "Cooldown 6 seconds",
+      "Damage 10.",
+      "When you Haste or Slow, this gains (+5/+10/+15) Damage for the fight."
+    ],
+    "remarks": [],
+    "packId": "Vanessa_The_Gang"
+  },
+  {
+    "id": "2aab9e1b-8c8d-49d0-be45-5884731ebb08",
+    "name": "Truffles",
+    "startingTier": "Bronze",
+    "tiers": {
+      "Bronze": {
+        "tooltips": [
+          "When you sell this, your leftmost item +1 value."
+        ]
+      },
+      "Silver": {
+        "tooltips": [
+          "When you sell this, your leftmost item +2 value."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "When you sell this, your leftmost item +3 value."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "When you sell this, your leftmost item +4 value."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Food",
+      "Loot"
+    ],
+    "hiddenTags": [
+      "Value",
+      "EconomyReference"
+    ],
+    "size": "Small",
+    "heroes": [
+      "Common"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value gain."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "When you sell this, your leftmost Slow item gains +1 Slow duration."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "When you sell this, your leftmost Freeze item gains +0.2 Freeze duration."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "When you sell this, your leftmost Haste item gains +1 Haste duration."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "When you sell this, your leftmost Shield item gains +20 Shield."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "When you sell this, your leftmost Heal item gains +30 Heal."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "When you sell this, your leftmost Poison item gains +2 Poison."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "When you sell this, your leftmost Burn item gains +2 Burn."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "When you sell this, your leftmost item gains 10% Crit Chance."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "When you sell this, your leftmost Weapon item gains +20 damage."
+        ]
+      }
+    ],
+    "unifiedTooltips": [
+      "When you sell this, your leftmost item (+1/+2/+3/+4) value."
+    ],
+    "remarks": [],
+    "packId": "Core"
+  },
+  {
     "id": "899bc2a7-eec8-42e5-9c99-49b592617114",
     "name": "Harpoon",
     "startingTier": "Bronze",
@@ -13603,115 +14844,6 @@ const data: ParsedItemCard[] = [
     ],
     "remarks": [],
     "packId": "Vanessa_Core"
-  },
-  {
-    "id": "2aab9e1b-8c8d-49d0-be45-5884731ebb08",
-    "name": "Truffles",
-    "startingTier": "Bronze",
-    "tiers": {
-      "Bronze": {
-        "tooltips": [
-          "When you sell this, your leftmost item +1 value."
-        ]
-      },
-      "Silver": {
-        "tooltips": [
-          "When you sell this, your leftmost item +2 value."
-        ]
-      },
-      "Gold": {
-        "tooltips": [
-          "When you sell this, your leftmost item +3 value."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "When you sell this, your leftmost item +4 value."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [
-      "Food",
-      "Loot"
-    ],
-    "hiddenTags": [
-      "Value",
-      "EconomyReference"
-    ],
-    "size": "Small",
-    "heroes": [
-      "Common"
-    ],
-    "enchantments": [
-      {
-        "type": "Golden",
-        "tooltips": [
-          "This has double value gain."
-        ]
-      },
-      {
-        "type": "Heavy",
-        "tooltips": [
-          "When you sell this, your leftmost Slow item gains +1 Slow duration."
-        ]
-      },
-      {
-        "type": "Icy",
-        "tooltips": [
-          "When you sell this, your leftmost Freeze item gains +0.2 Freeze duration."
-        ]
-      },
-      {
-        "type": "Turbo",
-        "tooltips": [
-          "When you sell this, your leftmost Haste item gains +1 Haste duration."
-        ]
-      },
-      {
-        "type": "Shielded",
-        "tooltips": [
-          "When you sell this, your leftmost Shield item gains +20 Shield."
-        ]
-      },
-      {
-        "type": "Restorative",
-        "tooltips": [
-          "When you sell this, your leftmost Heal item gains +30 Heal."
-        ]
-      },
-      {
-        "type": "Toxic",
-        "tooltips": [
-          "When you sell this, your leftmost Poison item gains +2 Poison."
-        ]
-      },
-      {
-        "type": "Fiery",
-        "tooltips": [
-          "When you sell this, your leftmost Burn item gains +2 Burn."
-        ]
-      },
-      {
-        "type": "Deadly",
-        "tooltips": [
-          "When you sell this, your leftmost item gains 10% Crit Chance."
-        ]
-      },
-      {
-        "type": "Obsidian",
-        "tooltips": [
-          "When you sell this, your leftmost Weapon item gains +20 damage."
-        ]
-      }
-    ],
-    "unifiedTooltips": [
-      "When you sell this, your leftmost item (+1/+2/+3/+4) value."
-    ],
-    "remarks": [],
-    "packId": "Core"
   },
   {
     "id": "ba6ba8f6-7076-406a-89e6-ddaa39044959",
@@ -14404,28 +15536,28 @@ const data: ParsedItemCard[] = [
     "tiers": {
       "Bronze": {
         "tooltips": [
-          "Cooldown 7 seconds",
+          "Cooldown 6 seconds",
           "Poison 1.",
           "Gain 1 Regeneration for the fight."
         ]
       },
       "Silver": {
         "tooltips": [
-          "Cooldown 7 seconds",
+          "Cooldown 6 seconds",
           "Poison 2.",
           "Gain 2 Regeneration for the fight."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 7 seconds",
+          "Cooldown 5 seconds",
           "Poison 3.",
           "Gain 3 Regeneration for the fight."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 7 seconds",
+          "Cooldown 5 seconds",
           "Poison 4.",
           "Gain 4 Regeneration for the fight."
         ]
@@ -14514,7 +15646,7 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "Cooldown 7 seconds",
+      "Cooldown (6/6/5/5) seconds",
       "Poison (1/2/3/4).",
       "Gain (1/2/3/4) Regeneration for the fight."
     ],
@@ -15017,34 +16149,30 @@ const data: ParsedItemCard[] = [
   {
     "id": "e3070870-881c-497d-879f-2d91e962e0e2",
     "name": "Fire Claw",
-    "startingTier": "Bronze",
+    "startingTier": "Silver",
     "tiers": {
       "Bronze": {
-        "tooltips": [
-          "Cooldown 7 seconds",
-          "Burn 3.",
-          "This has + Burn equal to the Burn of your non-Fire Claw items."
-        ]
+        "tooltips": []
       },
       "Silver": {
         "tooltips": [
           "Cooldown 7 seconds",
           "Burn 6.",
-          "This has + Burn equal to the Burn of your non-Fire Claw items."
+          "This has + Burn equal to 50% of the Burn of your non-Fire Claw items."
         ]
       },
       "Gold": {
         "tooltips": [
           "Cooldown 7 seconds",
           "Burn 9.",
-          "This has + Burn equal to the Burn of your non-Fire Claw items."
+          "This has + Burn equal to 75% of the Burn of your non-Fire Claw items."
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 7 seconds",
           "Burn 12.",
-          "This has + Burn equal to the Burn of your non-Fire Claw items."
+          "This has + Burn equal to 100% of the Burn of your non-Fire Claw items."
         ]
       },
       "Legendary": {
@@ -15129,15 +16257,254 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
-      "Burn (3/6/9/12).",
-      "This has + Burn equal to the Burn of your non-Fire Claw items."
+      "Burn (6/9/12).",
+      "This has + Burn equal to (50%/75%/100%) of the Burn of your non-Fire Claw items."
     ],
     "remarks": [],
     "packId": "Mak_Core"
   },
   {
+    "id": "d4c0cf1e-7856-4e40-877f-c77b34f596ed",
+    "name": "RED-F1R3FLY",
+    "startingTier": "Bronze",
+    "tiers": {
+      "Bronze": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Burn 4.",
+          "When an adjacent item Hastes or Slows, charge this 1 second(s)."
+        ]
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Burn 6.",
+          "When an adjacent item Hastes or Slows, charge this 1 second(s)."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Burn 8.",
+          "When an adjacent item Hastes or Slows, charge this 1 second(s)."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Burn 10.",
+          "When an adjacent item Hastes or Slows, charge this 1 second(s)."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Friend"
+    ],
+    "hiddenTags": [
+      "Burn",
+      "HasteReference",
+      "SlowReference"
+    ],
+    "size": "Small",
+    "heroes": [
+      "Dooley"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 1 item for 3 second(s)."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze 1 small item for 1 second(s)."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 1 item for 3 second(s)."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield equal to 10 times this item's Burn."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to 10 times this item's Burn."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to this item's Burn."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "This has double Burn."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal damage equal to 10 times this item's Burn."
+        ]
+      }
+    ],
+    "unifiedTooltips": [
+      "Cooldown 6 seconds",
+      "Burn (4/6/8/10).",
+      "When an adjacent item Hastes or Slows, charge this 1 second(s)."
+    ],
+    "remarks": [],
+    "packId": "Dooley_Dooltron"
+  },
+  {
+    "id": "85fc3511-fd04-45ed-b273-e3dece9cd77f",
+    "name": "Dooltron Mainframe",
+    "startingTier": "Gold",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": [
+          "When you use a friend, charge the Core 1 second(s) and Haste a Large item 1 second(s).",
+          "Your Dooltron has the Core type."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "When you use a friend, charge the Core 2 second(s) and Haste a Large item 2 second(s).",
+          "Your Dooltron has the Core type."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Property",
+      "Tech"
+    ],
+    "hiddenTags": [
+      "Charge",
+      "Haste"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Dooley"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "When you use a Friend, slow 1 item for 2 second(s)."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "When you use a Friend, freeze 1 small item for 1 second(s)."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "This has double Haste duration."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "When you use a Friend, shield 20."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "When you use a Friend, heal 30."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "When you use a Friend, poison 2."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "When you use a Friend, burn 2."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has double Charge amount."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "Your Friends have +20% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "When you use a Friend, Deal 20 Damage."
+        ]
+      }
+    ],
+    "unifiedTooltips": [
+      "When you use a friend, charge the Core (1/2) second(s) and Haste a Large item (1/2) second(s).",
+      "Your Dooltron has the Core type."
+    ],
+    "remarks": [],
+    "packId": "Dooley_Dooltron"
+  },
+  {
     "id": "9ab4ba04-0c08-4374-b86e-e94dcaaca334",
-    "name": "Jaballian Drum",
+    "name": "Jabalian Drum",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -15145,19 +16512,19 @@ const data: ParsedItemCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "When you use a weapon, your weapons gain 1 Damage for the fight.",
+          "When you use a weapon, your weapons gain 5 Damage for the fight.",
           "When you use a Weapon, Haste it for 1 second(s)."
         ]
       },
       "Gold": {
         "tooltips": [
-          "When you use a weapon, your weapons gain 2 Damage for the fight.",
+          "When you use a weapon, your weapons gain 10 Damage for the fight.",
           "When you use a Weapon, Haste it for 2 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "When you use a weapon, your weapons gain 3 Damage for the fight.",
+          "When you use a weapon, your weapons gain 15 Damage for the fight.",
           "When you use a Weapon, Haste it for 3 second(s)."
         ]
       },
@@ -15243,7 +16610,7 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "When you use a weapon, your weapons gain (1/2/3) Damage for the fight.",
+      "When you use a weapon, your weapons gain (5/10/15) Damage for the fight.",
       "When you use a Weapon, Haste it for (1/2/3) second(s)."
     ],
     "remarks": [],
@@ -15432,30 +16799,30 @@ const data: ParsedItemCard[] = [
     "tiers": {
       "Bronze": {
         "tooltips": [
-          "Cooldown 6 seconds",
-          "Deal 8 damage.",
+          "Cooldown 7 seconds",
+          "Deal 10 damage.",
           "When you use the Core or another Ray, your Weapons gain +2 Damage for the fight."
         ]
       },
       "Silver": {
         "tooltips": [
-          "Cooldown 6 seconds",
-          "Deal 12 damage.",
-          "When you use the Core or another Ray, your Weapons gain +3 Damage for the fight."
+          "Cooldown 7 seconds",
+          "Deal 15 damage.",
+          "When you use the Core or another Ray, your Weapons gain +4 Damage for the fight."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 6 seconds",
-          "Deal 16 damage.",
-          "When you use the Core or another Ray, your Weapons gain +4 Damage for the fight."
+          "Cooldown 7 seconds",
+          "Deal 20 damage.",
+          "When you use the Core or another Ray, your Weapons gain +6 Damage for the fight."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 6 seconds",
-          "Deal 20 damage.",
-          "When you use the Core or another Ray, your Weapons gain +5 Damage for the fight."
+          "Cooldown 7 seconds",
+          "Deal 25 damage.",
+          "When you use the Core or another Ray, your Weapons gain +8 Damage for the fight."
         ]
       },
       "Legendary": {
@@ -15542,9 +16909,9 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "Cooldown 6 seconds",
-      "Deal (8/12/16/20) damage.",
-      "When you use the Core or another Ray, your Weapons gain (+2/+3/+4/+5) Damage for the fight."
+      "Cooldown 7 seconds",
+      "Deal (10/15/20/25) damage.",
+      "When you use the Core or another Ray, your Weapons gain (+2/+4/+6/+8) Damage for the fight."
     ],
     "remarks": [],
     "packId": "Dooley_Core"
@@ -15635,13 +17002,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Toxic",
         "tooltips": [
-          "Poison 2."
+          "Poison equal to 10% of this item's Damage."
         ]
       },
       {
         "type": "Fiery",
         "tooltips": [
-          "Burn 3."
+          "Burn equal to 10% of this item's Damage."
         ]
       },
       {
@@ -15687,36 +17054,36 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Cooldown 6 seconds",
           "Ammo 1",
-          "Crit Chance 25%",
-          "Deal 30 damage.",
-          "Burn 4."
+          "Crit Chance 100%",
+          "Deal 20 damage.",
+          "Burn 2."
         ]
       },
       "Silver": {
         "tooltips": [
           "Cooldown 6 seconds",
           "Ammo 1",
-          "Crit Chance 25%",
-          "Deal 60 damage.",
-          "Burn 6."
+          "Crit Chance 100%",
+          "Deal 30 damage.",
+          "Burn 3."
         ]
       },
       "Gold": {
         "tooltips": [
           "Cooldown 6 seconds",
           "Ammo 1",
-          "Crit Chance 25%",
-          "Deal 90 damage.",
-          "Burn 8."
+          "Crit Chance 100%",
+          "Deal 40 damage.",
+          "Burn 4."
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 6 seconds",
           "Ammo 1",
-          "Crit Chance 25%",
-          "Deal 120 damage.",
-          "Burn 10."
+          "Crit Chance 100%",
+          "Deal 50 damage.",
+          "Burn 5."
         ]
       },
       "Legendary": {
@@ -15807,9 +17174,9 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Ammo 1",
-      "Crit Chance 25%",
-      "Deal (30/60/90/120) damage.",
-      "Burn (4/6/8/10)."
+      "Crit Chance 100%",
+      "Deal (20/30/40/50) damage.",
+      "Burn (2/3/4/5)."
     ],
     "remarks": [],
     "packId": "Mak_Core"
@@ -15976,6 +17343,55 @@ const data: ParsedItemCard[] = [
     "packId": "Core"
   },
   {
+    "id": "234ae6aa-b94b-456d-a2fb-f0cbcaa9c655",
+    "name": "Loupe",
+    "startingTier": "Gold",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": [
+          "Your Small items have +1 value."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Your Small items have +2 value."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Tool"
+    ],
+    "hiddenTags": [
+      "Value"
+    ],
+    "size": "Small",
+    "heroes": [
+      "Pygmalien"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "Your small items have an additional +1 value."
+        ]
+      }
+    ],
+    "unifiedTooltips": [
+      "Your Small items have (+1/+2) value."
+    ],
+    "remarks": [],
+    "packId": "Pygmalien_Core"
+  },
+  {
     "id": "f0608f5b-5c6a-4c71-8cc4-f8abbdd951c9",
     "name": "Uzi",
     "startingTier": "Bronze",
@@ -15983,29 +17399,29 @@ const data: ParsedItemCard[] = [
       "Bronze": {
         "tooltips": [
           "Cooldown 2 seconds",
-          "Ammo 12",
-          "Deal 2 damage."
+          "Ammo 6",
+          "Deal 10 damage."
         ]
       },
       "Silver": {
         "tooltips": [
           "Cooldown 2 seconds",
-          "Ammo 12",
-          "Deal 4 damage."
+          "Ammo 8",
+          "Deal 10 damage."
         ]
       },
       "Gold": {
         "tooltips": [
           "Cooldown 2 seconds",
-          "Ammo 12",
-          "Deal 8 damage."
+          "Ammo 10",
+          "Deal 10 damage."
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 2 seconds",
           "Ammo 12",
-          "Deal 16 damage."
+          "Deal 10 damage."
         ]
       },
       "Legendary": {
@@ -16093,60 +17509,11 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 2 seconds",
-      "Ammo 12",
-      "Deal (2/4/8/16) damage."
+      "Ammo (6/8/10/12)",
+      "Deal 10 damage."
     ],
     "remarks": [],
     "packId": "Dooley_Core"
-  },
-  {
-    "id": "234ae6aa-b94b-456d-a2fb-f0cbcaa9c655",
-    "name": "Loupe",
-    "startingTier": "Gold",
-    "tiers": {
-      "Bronze": {
-        "tooltips": []
-      },
-      "Silver": {
-        "tooltips": []
-      },
-      "Gold": {
-        "tooltips": [
-          "Your Small items have +1 value."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "Your Small items have +2 value."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [
-      "Tool"
-    ],
-    "hiddenTags": [
-      "Value"
-    ],
-    "size": "Small",
-    "heroes": [
-      "Pygmalien"
-    ],
-    "enchantments": [
-      {
-        "type": "Golden",
-        "tooltips": [
-          "Your small items have an additional +1 value."
-        ]
-      }
-    ],
-    "unifiedTooltips": [
-      "Your Small items have (+1/+2) value."
-    ],
-    "remarks": [],
-    "packId": "Pygmalien_Core"
   },
   {
     "id": "783cda9d-1550-42d5-9651-51883da5ad66",
@@ -16477,126 +17844,6 @@ const data: ParsedItemCard[] = [
     "packId": "Core"
   },
   {
-    "id": "ae039b3e-ef98-4dc7-a97c-1e06d2627e57",
-    "name": "Nitro",
-    "startingTier": "Silver",
-    "tiers": {
-      "Bronze": {
-        "tooltips": []
-      },
-      "Silver": {
-        "tooltips": [
-          "Cooldown 4 seconds",
-          "Burn both players 4.",
-          "Charge 1 item 1 second(s)."
-        ]
-      },
-      "Gold": {
-        "tooltips": [
-          "Cooldown 4 seconds",
-          "Burn both players 6.",
-          "Charge 1 item 2 second(s)."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "Cooldown 4 seconds",
-          "Burn both players 8.",
-          "Charge 1 item 3 second(s)."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [
-      "Tech"
-    ],
-    "hiddenTags": [
-      "Burn",
-      "Charge"
-    ],
-    "size": "Small",
-    "heroes": [
-      "Dooley"
-    ],
-    "enchantments": [
-      {
-        "type": "Heavy",
-        "tooltips": [
-          "Slow 1 item for 1 second(s)."
-        ]
-      },
-      {
-        "type": "Icy",
-        "tooltips": [
-          "Freeze 1 small item for 1 second(s)."
-        ]
-      },
-      {
-        "type": "Turbo",
-        "tooltips": [
-          "Haste 1 item for 1 second(s)."
-        ]
-      },
-      {
-        "type": "Shielded",
-        "tooltips": [
-          "Shield equal to 10 times this item's Burn."
-        ]
-      },
-      {
-        "type": "Restorative",
-        "tooltips": [
-          "Heal equal to 10 times this item's Burn."
-        ]
-      },
-      {
-        "type": "Toxic",
-        "tooltips": [
-          "Poison equal to this item's Burn."
-        ]
-      },
-      {
-        "type": "Fiery",
-        "tooltips": [
-          "This has double Burn."
-        ]
-      },
-      {
-        "type": "Shiny",
-        "tooltips": [
-          "This has +1 Multicast."
-        ]
-      },
-      {
-        "type": "Deadly",
-        "tooltips": [
-          "+50% Crit Chance"
-        ]
-      },
-      {
-        "type": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
-        "type": "Obsidian",
-        "tooltips": [
-          "Deal damage equal to 10 times this item's Burn."
-        ]
-      }
-    ],
-    "unifiedTooltips": [
-      "Cooldown 4 seconds",
-      "Burn both players (4/6/8).",
-      "Charge 1 item (1/2/3) second(s)."
-    ],
-    "remarks": [],
-    "packId": "Dooley_Core"
-  },
-  {
     "id": "53e336a7-709a-46a6-84ed-bb58b9e998bb",
     "name": "Tourist Chariot",
     "startingTier": "Bronze",
@@ -16721,6 +17968,126 @@ const data: ParsedItemCard[] = [
     "packId": "Core"
   },
   {
+    "id": "ae039b3e-ef98-4dc7-a97c-1e06d2627e57",
+    "name": "Nitro",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Burn both players 4.",
+          "Charge 1 item 1 second(s)."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Burn both players 6.",
+          "Charge 1 item 2 second(s)."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Burn both players 8.",
+          "Charge 1 item 3 second(s)."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Tech"
+    ],
+    "hiddenTags": [
+      "Burn",
+      "Charge"
+    ],
+    "size": "Small",
+    "heroes": [
+      "Dooley"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 1 item for 1 second(s)."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze 1 small item for 1 second(s)."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 1 item for 1 second(s)."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield equal to 10 times this item's Burn."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to 10 times this item's Burn."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to this item's Burn."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "This has double Burn."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal damage equal to 10 times this item's Burn."
+        ]
+      }
+    ],
+    "unifiedTooltips": [
+      "Cooldown 4 seconds",
+      "Burn both players (4/6/8).",
+      "Charge 1 item (1/2/3) second(s)."
+    ],
+    "remarks": [],
+    "packId": "Dooley_Core"
+  },
+  {
     "id": "a87c42a5-b21e-4179-9827-ceea46c25033",
     "name": "Marbles",
     "startingTier": "Bronze",
@@ -16728,28 +18095,28 @@ const data: ParsedItemCard[] = [
       "Bronze": {
         "tooltips": [
           "Cooldown 5 seconds",
-          "Slow 1 item for 1 second(s).",
+          "Slow 1 item(s) for 1 second(s).",
           "When you use an adjacent item, charge this 1 second(s)."
         ]
       },
       "Silver": {
         "tooltips": [
           "Cooldown 5 seconds",
-          "Slow 1 item for 2 second(s).",
+          "Slow 1 item(s) for 2 second(s).",
           "When you use an adjacent item, charge this 1 second(s)."
         ]
       },
       "Gold": {
         "tooltips": [
           "Cooldown 5 seconds",
-          "Slow 1 item for 3 second(s).",
+          "Slow 1 item(s) for 3 second(s).",
           "When you use an adjacent item, charge this 1 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 5 seconds",
-          "Slow 1 item for 4 second(s).",
+          "Slow 1 item(s) for 4 second(s).",
           "When you use an adjacent item, charge this 1 second(s)."
         ]
       },
@@ -16831,7 +18198,7 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
-      "Slow 1 item for (1/2/3/4) second(s).",
+      "Slow 1 item(s) for (1/2/3/4) second(s).",
       "When you use an adjacent item, charge this 1 second(s)."
     ],
     "remarks": [],
@@ -17577,8 +18944,8 @@ const data: ParsedItemCard[] = [
     "packId": "Core"
   },
   {
-    "id": "d45bb1dd-5342-4c69-b7fe-f56d3fac7d1f",
-    "name": "Cinders",
+    "id": "14b297c5-db65-492d-aad7-9ffe101cae5f",
+    "name": "Incendiary Rounds",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -17586,112 +18953,19 @@ const data: ParsedItemCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "When you sell this, your leftmost Burn item gains +1 Burn."
+          "When you use an adjacent item, Burn 1.",
+          "Adjacent items have +1 ammo."
         ]
       },
       "Gold": {
-        "tooltips": [
-          "When you sell this, your leftmost Burn item gains +2 Burn."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "When you sell this, your leftmost Burn item gains +4 Burn."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [
-      "Loot"
-    ],
-    "hiddenTags": [
-      "BurnReference"
-    ],
-    "size": "Small",
-    "heroes": [
-      "Common"
-    ],
-    "enchantments": [
-      {
-        "type": "Heavy",
-        "tooltips": [
-          "When you sell this, your leftmost Slow item gains +1 Slow duration."
-        ]
-      },
-      {
-        "type": "Icy",
-        "tooltips": [
-          "When you sell this, your leftmost Freeze item gains +0.2 Freeze duration."
-        ]
-      },
-      {
-        "type": "Turbo",
-        "tooltips": [
-          "When you sell this, your leftmost Haste item gains +1 Haste duration."
-        ]
-      },
-      {
-        "type": "Shielded",
-        "tooltips": [
-          "When you sell this, your leftmost Shield item gains +20 Shield."
-        ]
-      },
-      {
-        "type": "Restorative",
-        "tooltips": [
-          "When you sell this, your leftmost Heal item gains +30 Heal."
-        ]
-      },
-      {
-        "type": "Toxic",
-        "tooltips": [
-          "When you sell this, your leftmost Poison item gains +2 Poison."
-        ]
-      },
-      {
-        "type": "Fiery",
-        "tooltips": [
-          "This has double Burn bonus."
-        ]
-      },
-      {
-        "type": "Deadly",
-        "tooltips": [
-          "When you sell this, your leftmost item gains 10% Crit Chance."
-        ]
-      },
-      {
-        "type": "Obsidian",
-        "tooltips": [
-          "When you sell this, your leftmost Weapon item gains +20 damage."
-        ]
-      }
-    ],
-    "unifiedTooltips": [
-      "When you sell this, your leftmost Burn item gains (+1/+2/+4) Burn."
-    ],
-    "remarks": [],
-    "packId": "Core"
-  },
-  {
-    "id": "14b297c5-db65-492d-aad7-9ffe101cae5f",
-    "name": "Incendiary Rounds",
-    "startingTier": "Diamond",
-    "tiers": {
-      "Bronze": {
-        "tooltips": []
-      },
-      "Silver": {
-        "tooltips": []
-      },
-      "Gold": {
-        "tooltips": []
-      },
-      "Diamond": {
         "tooltips": [
           "When you use an adjacent item, Burn 2.",
+          "Adjacent items have +1 ammo."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "When you use an adjacent item, Burn 3.",
           "Adjacent items have +1 ammo."
         ]
       },
@@ -17777,11 +19051,112 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "When you use an adjacent item, Burn 2.",
+      "When you use an adjacent item, Burn (1/2/3).",
       "Adjacent items have +1 ammo."
     ],
     "remarks": [],
     "packId": "Vanessa_Core"
+  },
+  {
+    "id": "d45bb1dd-5342-4c69-b7fe-f56d3fac7d1f",
+    "name": "Cinders",
+    "startingTier": "Bronze",
+    "tiers": {
+      "Bronze": {
+        "tooltips": [
+          "When you sell this, your leftmost Burn item gains +1 Burn."
+        ]
+      },
+      "Silver": {
+        "tooltips": [
+          "When you sell this, your leftmost Burn item gains +2 Burn."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "When you sell this, your leftmost Burn item gains +3 Burn."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "When you sell this, your leftmost Burn item gains +4 Burn."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Loot"
+    ],
+    "hiddenTags": [
+      "BurnReference"
+    ],
+    "size": "Small",
+    "heroes": [
+      "Common"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "When you sell this, your leftmost Slow item gains +0.2 Slow duration."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "When you sell this, your leftmost Freeze item gains +0.1 Freeze duration."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "When you sell this, your leftmost Haste item gains +0.2 Haste duration."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "When you sell this, your leftmost Shield item gains +10 Shield."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "When you sell this, your leftmost Heal item gains +15 Heal."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "When you sell this, your leftmost Poison item gains +1 Poison."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "This has double Burn bonus."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "When you sell this, your leftmost item gains 2% Crit Chance."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "When you sell this, your leftmost Weapon item gains +10 damage."
+        ]
+      }
+    ],
+    "unifiedTooltips": [
+      "When you sell this, your leftmost Burn item gains (+1/+2/+3/+4) Burn."
+    ],
+    "remarks": [],
+    "packId": "Core"
   },
   {
     "id": "1bdbc6f6-2690-445a-877e-90dbbd5e4658",
@@ -18039,21 +19414,21 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Cooldown 6 seconds",
           "Deal 15 damage for each Friend you have.",
-          "This item's cooldown is reduced by 1 second for each adjacent Friend."
+          "This item's cooldown is reducd by 1 second for each adjacent Friend."
         ]
       },
       "Gold": {
         "tooltips": [
           "Cooldown 6 seconds",
           "Deal 20 damage for each Friend you have.",
-          "This item's cooldown is reduced by 1 second for each adjacent Friend."
+          "This item's cooldown is reducd by 1 second for each adjacent Friend."
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 6 seconds",
           "Deal 25 damage for each Friend you have.",
-          "This item's cooldown is reduced by 1 second for each adjacent Friend."
+          "This item's cooldown is reducd by 1 second for each adjacent Friend."
         ]
       },
       "Legendary": {
@@ -18142,7 +19517,7 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Deal (15/20/25) damage for each Friend you have.",
-      "This item's cooldown is reduced by 1 second for each adjacent Friend."
+      "This item's cooldown is reducd by 1 second for each adjacent Friend."
     ],
     "remarks": [],
     "packId": "Core"
@@ -18158,21 +19533,21 @@ const data: ParsedItemCard[] = [
       "Silver": {
         "tooltips": [
           "Cooldown 5 seconds",
-          "Slow 1 item for 2 second(s).",
+          "Slow 1 item(s) for 2 second(s).",
           "When you use the Core, charge this 1 second(s)."
         ]
       },
       "Gold": {
         "tooltips": [
           "Cooldown 5 seconds",
-          "Slow 1 item for 3 second(s).",
+          "Slow 1 item(s) for 3 second(s).",
           "When you use the Core, charge this 1 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 5 seconds",
-          "Slow 1 item for 4 second(s).",
+          "Slow 1 item(s) for 4 second(s).",
           "When you use the Core, charge this 1 second(s)."
         ]
       },
@@ -18254,7 +19629,7 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
-      "Slow 1 item for (2/3/4) second(s).",
+      "Slow 1 item(s) for (2/3/4) second(s).",
       "When you use the Core, charge this 1 second(s)."
     ],
     "remarks": [],
@@ -18395,12 +19770,12 @@ const data: ParsedItemCard[] = [
       },
       "Gold": {
         "tooltips": [
-          "When you use an adjacent item, charge the other adjacent item for 1 second(s) and it gains 10% Crit Chance for the fight."
+          "When you use an adjacent item, charge the other adjacent item for 1 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "When you use an adjacent item, charge the other adjacent item for 2 second(s) and it gains 20% Crit Chance for the fight."
+          "When you use an adjacent item, charge the other adjacent item for 2 second(s)."
         ]
       },
       "Legendary": {
@@ -18411,7 +19786,6 @@ const data: ParsedItemCard[] = [
       "Tool"
     ],
     "hiddenTags": [
-      "Crit",
       "Charge"
     ],
     "size": "Medium",
@@ -18422,55 +19796,55 @@ const data: ParsedItemCard[] = [
       {
         "type": "Heavy",
         "tooltips": [
-          "The first time you fall below half health each fight, Slow 3 items for 4 second(s)."
+          "When you use an adjacent item, slow 1 item for 1 second(s)."
         ]
       },
       {
         "type": "Icy",
         "tooltips": [
-          "The first time you fall below half health each fight, Freeze 2 items for 4 second(s)."
+          "When you use an adjacent item, freeze 1 small item for 1 second(s)."
         ]
       },
       {
         "type": "Turbo",
         "tooltips": [
-          "The first time you fall below half health each fight, Haste 3 items for 4 second(s)."
+          "When you use an adjacent item, haste it for 1 second(s)."
         ]
       },
       {
         "type": "Shielded",
         "tooltips": [
-          "The first time you fall below half health each fight, Shield 120."
+          "When you use an adjacent item, shield 10."
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "The first time you fall below half health each fight, Heal 180."
+          "When you use an adjacent item, Heal 15."
         ]
       },
       {
         "type": "Toxic",
         "tooltips": [
-          "The first time you fall below half health each fight, poison 12."
+          "When you use an adjacent item, Poison 1."
         ]
       },
       {
         "type": "Fiery",
         "tooltips": [
-          "The first time you fall below half health each fight, burn 12."
+          "When you use an adjacent item, Burn 1."
         ]
       },
       {
         "type": "Shiny",
         "tooltips": [
-          "This has double Crit Chance bonus."
+          "This has double Charge."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "This has double Crit Chance bonus."
+          "Adjacent items have +25% Crit Chance."
         ]
       },
       {
@@ -18482,12 +19856,12 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "The first time you fall below half health each fight, Deal 120 damage."
+          "When you use an adjacent item, deal Damage 10."
         ]
       }
     ],
     "unifiedTooltips": [
-      "When you use an adjacent item, charge the other adjacent item for (1/2) second(s) and it gains (10%/20%) Crit Chance for the fight."
+      "When you use an adjacent item, charge the other adjacent item for (1/2) second(s)."
     ],
     "remarks": [],
     "packId": "Mak_Core"
@@ -18862,124 +20236,6 @@ const data: ParsedItemCard[] = [
     "packId": "Vanessa_Core"
   },
   {
-    "id": "0b4d7632-b3b4-42ce-a5fc-3fafb8f1c409",
-    "name": "Hemlock",
-    "startingTier": "Bronze",
-    "tiers": {
-      "Bronze": {
-        "tooltips": [
-          "Cooldown 7 seconds",
-          "Poison 2."
-        ]
-      },
-      "Silver": {
-        "tooltips": [
-          "Cooldown 7 seconds",
-          "Poison 3."
-        ]
-      },
-      "Gold": {
-        "tooltips": [
-          "Cooldown 7 seconds",
-          "Poison 4."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "Cooldown 7 seconds",
-          "Poison 5."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [
-      "Ingredient"
-    ],
-    "hiddenTags": [
-      "Poison"
-    ],
-    "size": "Small",
-    "heroes": [
-      "Mak"
-    ],
-    "enchantments": [
-      {
-        "type": "Heavy",
-        "tooltips": [
-          "Slow 1 item for 2 second(s)."
-        ]
-      },
-      {
-        "type": "Icy",
-        "tooltips": [
-          "Freeze 1 small item for 1 second(s)."
-        ]
-      },
-      {
-        "type": "Turbo",
-        "tooltips": [
-          "Haste 1 item for 2 second(s)."
-        ]
-      },
-      {
-        "type": "Shielded",
-        "tooltips": [
-          "Shield equal to 10 times this item's Poison."
-        ]
-      },
-      {
-        "type": "Restorative",
-        "tooltips": [
-          "Heal equal to 10 times this item's Poison."
-        ]
-      },
-      {
-        "type": "Toxic",
-        "tooltips": [
-          "This has double Poison."
-        ]
-      },
-      {
-        "type": "Fiery",
-        "tooltips": [
-          "Burn equal to this item's Poison."
-        ]
-      },
-      {
-        "type": "Shiny",
-        "tooltips": [
-          "This has +1 Multicast."
-        ]
-      },
-      {
-        "type": "Deadly",
-        "tooltips": [
-          "+50% Crit Chance"
-        ]
-      },
-      {
-        "type": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
-        "type": "Obsidian",
-        "tooltips": [
-          "Deal damage equal to 10 times this item's Poison."
-        ]
-      }
-    ],
-    "unifiedTooltips": [
-      "Cooldown 7 seconds",
-      "Poison (2/3/4/5)."
-    ],
-    "remarks": [],
-    "packId": "Mak_Core"
-  },
-  {
     "id": "0229faa7-2eec-4746-9134-ade4f3aebe45",
     "name": "Gamma Ray",
     "startingTier": "Silver",
@@ -18990,22 +20246,22 @@ const data: ParsedItemCard[] = [
       "Silver": {
         "tooltips": [
           "Cooldown 7 seconds",
-          "Poison 2.",
-          "When you use the Core or another Ray, this and adjacent Poison items gain 1 Poison for the fight."
+          "Poison 4.",
+          "When you use the Core or another Ray, this and adjacent Poison items gain 2 Poison for the fight."
         ]
       },
       "Gold": {
         "tooltips": [
           "Cooldown 7 seconds",
-          "Poison 3.",
-          "When you use the Core or another Ray, this and adjacent Poison items gain 2 Poison for the fight."
+          "Poison 6.",
+          "When you use the Core or another Ray, this and adjacent Poison items gain 3 Poison for the fight."
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 7 seconds",
-          "Poison 4.",
-          "When you use the Core or another Ray, this and adjacent Poison items gain 3 Poison for the fight."
+          "Poison 8.",
+          "When you use the Core or another Ray, this and adjacent Poison items gain 4 Poison for the fight."
         ]
       },
       "Legendary": {
@@ -19092,11 +20348,134 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
-      "Poison (2/3/4).",
-      "When you use the Core or another Ray, this and adjacent Poison items gain (1/2/3) Poison for the fight."
+      "Poison (4/6/8).",
+      "When you use the Core or another Ray, this and adjacent Poison items gain (2/3/4) Poison for the fight."
     ],
     "remarks": [],
     "packId": "Dooley_Core"
+  },
+  {
+    "id": "0b4d7632-b3b4-42ce-a5fc-3fafb8f1c409",
+    "name": "Hemlock",
+    "startingTier": "Bronze",
+    "tiers": {
+      "Bronze": {
+        "tooltips": [
+          "Cooldown 7 seconds",
+          "Poison 2.",
+          "When this is transformed, enchant it with Toxic if able."
+        ]
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 7 seconds",
+          "Poison 3.",
+          "When this is transformed, enchant it with Toxic if able."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 7 seconds",
+          "Poison 4.",
+          "When this is transformed, enchant it with Toxic if able."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 7 seconds",
+          "Poison 5.",
+          "When this is transformed, enchant it with Toxic if able."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Reagent"
+    ],
+    "hiddenTags": [
+      "Poison"
+    ],
+    "size": "Small",
+    "heroes": [
+      "Mak"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 1 item for 2 second(s)."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze 1 small item for 1 second(s)."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 1 item for 2 second(s)."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield equal to 10 times this item's Poison."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to 10 times this item's Poison."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "This has double Poison."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn equal to this item's Poison."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal damage equal to 10 times this item's Poison."
+        ]
+      }
+    ],
+    "unifiedTooltips": [
+      "Cooldown 7 seconds",
+      "Poison (2/3/4/5).",
+      "When this is transformed, enchant it with Toxic if able."
+    ],
+    "remarks": [],
+    "packId": "Mak_Core"
   },
   {
     "id": "367c2ad9-94b3-4f01-a130-a673922244ef",
@@ -19349,7 +20728,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Turbo",
         "tooltips": [
-          "Haste 1 items for 2 second(s)."
+          "Haste 1 item for 2 second(s)."
         ]
       },
       {
@@ -19450,43 +20829,43 @@ const data: ParsedItemCard[] = [
       {
         "type": "Heavy",
         "tooltips": [
-          "When you sell this, your leftmost Slow item gains +1 Slow duration."
+          "When you sell this, your leftmost Slow item gains +0.2 Slow duration."
         ]
       },
       {
         "type": "Icy",
         "tooltips": [
-          "When you sell this, your leftmost Freeze item gains +0.2 Freeze duration."
+          "When you sell this, your leftmost Freeze item gains +0.1 Freeze duration."
         ]
       },
       {
         "type": "Turbo",
         "tooltips": [
-          "When you sell this, your leftmost Haste item gains +1 Haste duration."
+          "When you sell this, your leftmost Haste item gains +0.2 Haste duration."
         ]
       },
       {
         "type": "Shielded",
         "tooltips": [
-          "When you sell this, your leftmost Shield item gains +20 Shield."
+          "When you sell this, your leftmost Shield item gains +10 Shield."
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "When you sell this, your leftmost Heal item gains +30 Heal."
+          "When you sell this, your leftmost Heal item gains +15 Heal."
         ]
       },
       {
         "type": "Toxic",
         "tooltips": [
-          "When you sell this, your leftmost Poison item gains +2 Poison."
+          "When you sell this, your leftmost Poison item gains +1 Poison."
         ]
       },
       {
         "type": "Fiery",
         "tooltips": [
-          "When you sell this, your leftmost Burn item gains +2 Burn."
+          "When you sell this, your leftmost Burn item gains +1 Burn."
         ]
       },
       {
@@ -19498,7 +20877,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "When you sell this, your leftmost Weapon item gains +20 damage."
+          "When you sell this, your leftmost Weapon item gains +10 damage."
         ]
       }
     ],
@@ -19521,14 +20900,14 @@ const data: ParsedItemCard[] = [
       },
       "Gold": {
         "tooltips": [
-          "Weapon Properties adjacent to this have + Damage equal to 1 times the value of your highest value item.",
-          "Shield Properties adjacent to this have + Shield equal to 1 times the value of your highest value item."
+          "Weapon Properties adjacent to this have + Damage equal to 50% of the value of your highest value item.",
+          "Shield Properties adjacent to this have + Shield equal to 50% of the value of your highest value item."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Weapon Properties adjacent to this have + Damage equal to 2 times the value of your highest value item.",
-          "Shield Properties adjacent to this have + Shield equal to 2 times the value of your highest value item."
+          "Weapon Properties adjacent to this have + Damage equal to 100% of the value of your highest value item.",
+          "Shield Properties adjacent to this have + Shield equal to 100% of the value of your highest value item."
         ]
       },
       "Legendary": {
@@ -19572,8 +20951,8 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "Weapon Properties adjacent to this have + Damage equal to (1/2) times the value of your highest value item.",
-      "Shield Properties adjacent to this have + Shield equal to (1/2) times the value of your highest value item."
+      "Weapon Properties adjacent to this have + Damage equal to (50%/100%) of the value of your highest value item.",
+      "Shield Properties adjacent to this have + Shield equal to (50%/100%) of the value of your highest value item."
     ],
     "remarks": [],
     "packId": "Pygmalien_Core"
@@ -19585,30 +20964,30 @@ const data: ParsedItemCard[] = [
     "tiers": {
       "Bronze": {
         "tooltips": [
-          "Cooldown 7 seconds",
+          "Cooldown 8 seconds",
           "Deal 15 damage.",
-          "When you Slow, charge this 1 second(s)."
+          "When you Slow, charge this 2 second(s)."
         ]
       },
       "Silver": {
         "tooltips": [
-          "Cooldown 7 seconds",
+          "Cooldown 8 seconds",
           "Deal 25 damage.",
-          "When you Slow, charge this 1 second(s)."
+          "When you Slow, charge this 2 second(s)."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 7 seconds",
+          "Cooldown 8 seconds",
           "Deal 35 damage.",
-          "When you Slow, charge this 1 second(s)."
+          "When you Slow, charge this 2 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 7 seconds",
+          "Cooldown 8 seconds",
           "Deal 50 damage.",
-          "When you Slow, charge this 1 second(s)."
+          "When you Slow, charge this 2 second(s)."
         ]
       },
       "Legendary": {
@@ -19697,9 +21076,9 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "Cooldown 7 seconds",
+      "Cooldown 8 seconds",
       "Deal (15/25/35/50) damage.",
-      "When you Slow, charge this 1 second(s)."
+      "When you Slow, charge this 2 second(s)."
     ],
     "remarks": [],
     "packId": "Dooley_Core"
@@ -19948,27 +21327,27 @@ const data: ParsedItemCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "Cooldown 6 seconds",
+          "Cooldown 7 seconds",
           "Ammo 1",
-          "Burn 3. Poison 3.",
+          "Burn 3.\n \n Poison 3.",
           "Freeze 1 small item for 1 second(s).",
           "Slow 1 item for 2 second(s)."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 6 seconds",
+          "Cooldown 7 seconds",
           "Ammo 1",
-          "Burn 6. Poison 6.",
+          "Burn 6.\n \n Poison 6.",
           "Freeze 1 small item for 2 second(s).",
           "Slow 1 item for 3 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 6 seconds",
+          "Cooldown 7 seconds",
           "Ammo 1",
-          "Burn 9. Poison 9.",
+          "Burn 9.\n \n Poison 9.",
           "Freeze 1 small item for 3 second(s).",
           "Slow 1 item for 4 second(s)."
         ]
@@ -20060,7 +21439,7 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "Cooldown 6 seconds",
+      "Cooldown 7 seconds",
       "Ammo 1",
       "Burn (3/6/9). Poison (3/6/9).",
       "Freeze 1 small item for (1/2/3) second(s).",
@@ -20554,30 +21933,30 @@ const data: ParsedItemCard[] = [
     "tiers": {
       "Bronze": {
         "tooltips": [
-          "Cooldown 6 seconds",
+          "Cooldown 5 seconds",
           "Ammo 1",
           "Burn 6."
         ]
       },
       "Silver": {
         "tooltips": [
-          "Cooldown 6 seconds",
+          "Cooldown 5 seconds",
           "Ammo 1",
-          "Burn 9."
+          "Burn 8."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 6 seconds",
+          "Cooldown 5 seconds",
           "Ammo 1",
-          "Burn 12."
+          "Burn 10."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 6 seconds",
+          "Cooldown 5 seconds",
           "Ammo 1",
-          "Burn 15."
+          "Burn 12."
         ]
       },
       "Legendary": {
@@ -20664,9 +22043,9 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "Cooldown 6 seconds",
+      "Cooldown 5 seconds",
       "Ammo 1",
-      "Burn (6/9/12/15)."
+      "Burn (6/8/10/12)."
     ],
     "remarks": [],
     "packId": "Mak_Core"
@@ -20678,22 +22057,22 @@ const data: ParsedItemCard[] = [
     "tiers": {
       "Bronze": {
         "tooltips": [
-          "At the start of each fight, freeze 1 item for 3 second(s)."
+          "At the start of each fight, freeze 1 item(s) for 3 second(s)."
         ]
       },
       "Silver": {
         "tooltips": [
-          "At the start of each fight, freeze 1 item for 4 second(s)."
+          "At the start of each fight, freeze 1 item(s) for 4 second(s)."
         ]
       },
       "Gold": {
         "tooltips": [
-          "At the start of each fight, freeze 1 item for 5 second(s)."
+          "At the start of each fight, freeze 1 item(s) for 5 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "At the start of each fight, freeze 1 item for 6 second(s)."
+          "At the start of each fight, freeze 1 item(s) for 6 second(s)."
         ]
       },
       "Legendary": {
@@ -20765,7 +22144,7 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "At the start of each fight, freeze 1 item for (3/4/5/6) second(s)."
+      "At the start of each fight, freeze 1 item(s) for (3/4/5/6) second(s)."
     ],
     "remarks": [],
     "packId": "Core"
@@ -21008,8 +22387,8 @@ const data: ParsedItemCard[] = [
           "Cooldown 6 seconds",
           "Deal 30 damage.",
           "Shield 30.",
-          "When you use any item to the left of this, this gains 10 Damage for the fight.",
-          "When you use any item to the right of this, this gains 10 Shield for the fight."
+          "When you use any item to the left of this, this gains 15 Damage for the fight.",
+          "When you use any item to the right of this, this gains 15 Shield for the fight."
         ]
       },
       "Gold": {
@@ -21017,8 +22396,8 @@ const data: ParsedItemCard[] = [
           "Cooldown 6 seconds",
           "Deal 30 damage.",
           "Shield 30.",
-          "When you use any item to the left of this, this gains 20 Damage for the fight.",
-          "When you use any item to the right of this, this gains 20 Shield for the fight."
+          "When you use any item to the left of this, this gains 30 Damage for the fight.",
+          "When you use any item to the right of this, this gains 30 Shield for the fight."
         ]
       },
       "Diamond": {
@@ -21026,8 +22405,8 @@ const data: ParsedItemCard[] = [
           "Cooldown 6 seconds",
           "Deal 30 damage.",
           "Shield 30.",
-          "When you use any item to the left of this, this gains 30 Damage for the fight.",
-          "When you use any item to the right of this, this gains 30 Shield for the fight."
+          "When you use any item to the left of this, this gains 45 Damage for the fight.",
+          "When you use any item to the right of this, this gains 45 Shield for the fight."
         ]
       },
       "Legendary": {
@@ -21120,8 +22499,8 @@ const data: ParsedItemCard[] = [
       "Cooldown 6 seconds",
       "Deal 30 damage.",
       "Shield 30.",
-      "When you use any item to the left of this, this gains (10/20/30) Damage for the fight.",
-      "When you use any item to the right of this, this gains (10/20/30) Shield for the fight."
+      "When you use any item to the left of this, this gains (15/30/45) Damage for the fight.",
+      "When you use any item to the right of this, this gains (15/30/45) Shield for the fight."
     ],
     "remarks": [],
     "packId": "Dooley_Core"
@@ -21134,25 +22513,29 @@ const data: ParsedItemCard[] = [
       "Bronze": {
         "tooltips": [
           "Cooldown 6 seconds",
-          "Gain 4 Regeneration for the fight."
+          "Gain 1 Regeneration for the fight.",
+          "When this is transformed, enchant it with Restorative if able."
         ]
       },
       "Silver": {
         "tooltips": [
           "Cooldown 6 seconds",
-          "Gain 4 Regeneration for the fight."
+          "Gain 3 Regeneration for the fight.",
+          "When this is transformed, enchant it with Restorative if able."
         ]
       },
       "Gold": {
         "tooltips": [
           "Cooldown 6 seconds",
-          "Gain 4 Regeneration for the fight."
+          "Gain 5 Regeneration for the fight.",
+          "When this is transformed, enchant it with Restorative if able."
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 6 seconds",
-          "Gain 4 Regeneration for the fight."
+          "Gain 7 Regeneration for the fight.",
+          "When this is transformed, enchant it with Restorative if able."
         ]
       },
       "Legendary": {
@@ -21160,7 +22543,7 @@ const data: ParsedItemCard[] = [
       }
     },
     "tags": [
-      "Ingredient"
+      "Reagent"
     ],
     "hiddenTags": [
       "Regen"
@@ -21239,7 +22622,8 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
-      "Gain 4 Regeneration for the fight."
+      "Gain (1/3/5/7) Regeneration for the fight.",
+      "When this is transformed, enchant it with Restorative if able."
     ],
     "remarks": [],
     "packId": "Mak_Core"
@@ -21254,7 +22638,7 @@ const data: ParsedItemCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "Cooldown 5 seconds",
+          "Cooldown 4 seconds",
           "Heal equal to 2 times this item's value.",
           "At the start of each fight with Crystal Bonsai, this gains 6 value.",
           "When you lose a fight with Crystal Bonsai, permanently destroy this."
@@ -21262,7 +22646,7 @@ const data: ParsedItemCard[] = [
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 5 seconds",
+          "Cooldown 4 seconds",
           "Heal equal to 3 times this item's value.",
           "At the start of each fight with Crystal Bonsai, this gains 9 value.",
           "When you lose a fight with Crystal Bonsai, permanently destroy this."
@@ -21270,7 +22654,7 @@ const data: ParsedItemCard[] = [
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 5 seconds",
+          "Cooldown 4 seconds",
           "Heal equal to 4 times this item's value.",
           "At the start of each fight with Crystal Bonsai, this gains 12 value.",
           "When you lose a fight with Crystal Bonsai, permanently destroy this."
@@ -21365,7 +22749,7 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "Cooldown 5 seconds",
+      "Cooldown 4 seconds",
       "Heal equal to (2/3/4) times this item's value.",
       "At the start of each fight with Crystal Bonsai, this gains (6/9/12) value.",
       "When you lose a fight with Crystal Bonsai, permanently destroy this."
@@ -22260,26 +23644,26 @@ const data: ParsedItemCard[] = [
     "tiers": {
       "Bronze": {
         "tooltips": [
-          "Cooldown 5 seconds",
-          "Deal 6 damage."
+          "Cooldown 4 seconds",
+          "Deal 10 damage."
         ]
       },
       "Silver": {
         "tooltips": [
-          "Cooldown 5 seconds",
-          "Deal 12 damage."
+          "Cooldown 4 seconds",
+          "Deal 20 damage."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 5 seconds",
-          "Deal 18 damage."
+          "Cooldown 4 seconds",
+          "Deal 30 damage."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 5 seconds",
-          "Deal 24 damage."
+          "Cooldown 4 seconds",
+          "Deal 40 damage."
         ]
       },
       "Legendary": {
@@ -22367,8 +23751,8 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "Cooldown 5 seconds",
-      "Deal (6/12/18/24) damage."
+      "Cooldown 4 seconds",
+      "Deal (10/20/30/40) damage."
     ],
     "remarks": [],
     "packId": "Vanessa_Core"
@@ -22410,7 +23794,9 @@ const data: ParsedItemCard[] = [
         "tooltips": []
       }
     },
-    "tags": [],
+    "tags": [
+      "Toy"
+    ],
     "hiddenTags": [
       "Burn",
       "Ammo"
@@ -22752,6 +24138,129 @@ const data: ParsedItemCard[] = [
     "packId": "Dooley_Core"
   },
   {
+    "id": "6693a3f1-cc7c-4a3a-942f-d2e308b22338",
+    "name": "Sulphur",
+    "startingTier": "Bronze",
+    "tiers": {
+      "Bronze": {
+        "tooltips": [
+          "Cooldown 7 seconds",
+          "Burn 2.",
+          "When this is transformed, enchant it with Fiery if able."
+        ]
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 7 seconds",
+          "Burn 3.",
+          "When this is transformed, enchant it with Fiery if able."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 7 seconds",
+          "Burn 4.",
+          "When this is transformed, enchant it with Fiery if able."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 7 seconds",
+          "Burn 5.",
+          "When this is transformed, enchant it with Fiery if able."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Reagent"
+    ],
+    "hiddenTags": [
+      "Burn"
+    ],
+    "size": "Small",
+    "heroes": [
+      "Mak"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 1 item for 3 second(s)."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze 1 small item for 2 second(s)."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 1 item for 3 second(s)."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield equal to 10 times this item's Burn."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to 10 times this item's Burn."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to this item's Burn."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "This has double Burn."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal damage equal to 10 times this item's Burn."
+        ]
+      }
+    ],
+    "unifiedTooltips": [
+      "Cooldown 7 seconds",
+      "Burn (2/3/4/5).",
+      "When this is transformed, enchant it with Fiery if able."
+    ],
+    "remarks": [],
+    "packId": "Mak_Core"
+  },
+  {
     "id": "1a3d4cde-333c-4936-b147-263d73f6d200",
     "name": "Chocolate Bar",
     "startingTier": "Bronze",
@@ -22794,55 +24303,55 @@ const data: ParsedItemCard[] = [
       {
         "type": "Heavy",
         "tooltips": [
-          "When you sell this, your leftmost Slow item gains +1 Slow duration."
+          "When you sell this, your leftmost Slow item gains +0.2 Slow duration."
         ]
       },
       {
         "type": "Icy",
         "tooltips": [
-          "When you sell this, your leftmost Freeze item gains +0.2 Freeze duration."
+          "When you sell this, your leftmost Freeze item gains +0.1 Freeze duration."
         ]
       },
       {
         "type": "Turbo",
         "tooltips": [
-          "When you sell this, your leftmost Haste item gains +1 Haste duration."
+          "When you sell this, your leftmost Haste item gains +0.2 Haste duration."
         ]
       },
       {
         "type": "Shielded",
         "tooltips": [
-          "When you sell this, your leftmost Shield item gains +20 Shield."
+          "When you sell this, your leftmost Shield item gains +10 Shield."
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "When you sell this, your leftmost Heal item gains +30 Heal."
+          "When you sell this, your leftmost Heal item gains +15 Heal."
         ]
       },
       {
         "type": "Toxic",
         "tooltips": [
-          "When you sell this, your leftmost Poison item gains +2 Poison."
+          "When you sell this, your leftmost Poison item gains +1 Poison."
         ]
       },
       {
         "type": "Fiery",
         "tooltips": [
-          "When you sell this, your leftmost Burn item gains +2 Burn."
+          "When you sell this, your leftmost Burn item gains +1 Burn."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "When you sell this, your leftmost item gains 10% Crit Chance."
+          "When you sell this, your leftmost item gains 2% Crit Chance."
         ]
       },
       {
         "type": "Obsidian",
         "tooltips": [
-          "When you sell this, your leftmost Weapon item gains +20 damage."
+          "When you sell this, your leftmost Weapon item gains +10 damage."
         ]
       }
     ],
@@ -23091,6 +24600,129 @@ const data: ParsedItemCard[] = [
     "packId": "Pygmalien_Core"
   },
   {
+    "id": "54c74b82-0a7d-4dab-a335-f3b0b8b2157c",
+    "name": "Uwashiwali Bird",
+    "startingTier": "Bronze",
+    "tiers": {
+      "Bronze": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Heal 10.",
+          "This has +1 Multicast for each Property you have."
+        ]
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Heal 20.",
+          "This has +1 Multicast for each Property you have."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Heal 40.",
+          "This has +1 Multicast for each Property you have."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Heal 80.",
+          "This has +1 Multicast for each Property you have."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Friend"
+    ],
+    "hiddenTags": [
+      "Heal"
+    ],
+    "size": "Small",
+    "heroes": [
+      "Pygmalien"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 1 item for 1 second(s)."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze 1 small item for 1 second(s)."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 1 item for 1 second(s)."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield equal to this item's Heal."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "This has double Heal."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to 10% of this item's Heal."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn equal to 10% of this item's Heal."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast for each Property you have."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal damage equal to this item's Heal."
+        ]
+      }
+    ],
+    "unifiedTooltips": [
+      "Cooldown 5 seconds",
+      "Heal (10/20/40/80).",
+      "This has +1 Multicast for each Property you have."
+    ],
+    "remarks": [],
+    "packId": "Pygmalien_Core"
+  },
+  {
     "id": "aaa7d8fc-dd1b-42b3-9ea0-3b982f2f3790",
     "name": "Arc Blaster",
     "startingTier": "Bronze",
@@ -23213,129 +24845,6 @@ const data: ParsedItemCard[] = [
     ],
     "remarks": [],
     "packId": "Dooley_Core"
-  },
-  {
-    "id": "54c74b82-0a7d-4dab-a335-f3b0b8b2157c",
-    "name": "Uwashiwali Bird",
-    "startingTier": "Bronze",
-    "tiers": {
-      "Bronze": {
-        "tooltips": [
-          "Cooldown 5 seconds",
-          "Heal 10.",
-          "This has +1 Multicast for each Property you have."
-        ]
-      },
-      "Silver": {
-        "tooltips": [
-          "Cooldown 5 seconds",
-          "Heal 20.",
-          "This has +1 Multicast for each Property you have."
-        ]
-      },
-      "Gold": {
-        "tooltips": [
-          "Cooldown 5 seconds",
-          "Heal 40.",
-          "This has +1 Multicast for each Property you have."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "Cooldown 5 seconds",
-          "Heal 80.",
-          "This has +1 Multicast for each Property you have."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [
-      "Friend"
-    ],
-    "hiddenTags": [
-      "Heal"
-    ],
-    "size": "Small",
-    "heroes": [
-      "Pygmalien"
-    ],
-    "enchantments": [
-      {
-        "type": "Heavy",
-        "tooltips": [
-          "Slow 1 item for 1 second(s)."
-        ]
-      },
-      {
-        "type": "Icy",
-        "tooltips": [
-          "Freeze 1 small item for 1 second(s)."
-        ]
-      },
-      {
-        "type": "Turbo",
-        "tooltips": [
-          "Haste 1 item for 1 second(s)."
-        ]
-      },
-      {
-        "type": "Shielded",
-        "tooltips": [
-          "Shield equal to this item's Heal."
-        ]
-      },
-      {
-        "type": "Restorative",
-        "tooltips": [
-          "This has double Heal."
-        ]
-      },
-      {
-        "type": "Toxic",
-        "tooltips": [
-          "Poison equal to 10% of this item's Heal."
-        ]
-      },
-      {
-        "type": "Fiery",
-        "tooltips": [
-          "Burn equal to 10% of this item's Heal."
-        ]
-      },
-      {
-        "type": "Shiny",
-        "tooltips": [
-          "This has +1 Multicast for each Property you have."
-        ]
-      },
-      {
-        "type": "Deadly",
-        "tooltips": [
-          "+50% Crit Chance"
-        ]
-      },
-      {
-        "type": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
-        "type": "Obsidian",
-        "tooltips": [
-          "Deal damage equal to this item's Heal."
-        ]
-      }
-    ],
-    "unifiedTooltips": [
-      "Cooldown 5 seconds",
-      "Heal (10/20/40/80).",
-      "This has +1 Multicast for each Property you have."
-    ],
-    "remarks": [],
-    "packId": "Pygmalien_Core"
   },
   {
     "id": "5e17cfc3-25c0-4a74-8a33-07ee972e6f6e",
@@ -23593,20 +25102,20 @@ const data: ParsedItemCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "Cooldown 11 seconds",
-          "Use the Core."
+          "Cooldown 10 seconds",
+          "Use a Core."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 9 seconds",
-          "Use the Core."
+          "Cooldown 8 seconds",
+          "Use a Core."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 7 seconds",
-          "Use the Core."
+          "Cooldown 6 seconds",
+          "Use a Core."
         ]
       },
       "Legendary": {
@@ -23690,8 +25199,8 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "Cooldown (11/9/7) seconds",
-      "Use the Core."
+      "Cooldown (10/8/6) seconds",
+      "Use a Core."
     ],
     "remarks": [],
     "packId": "Dooley_Core"
@@ -23739,55 +25248,55 @@ const data: ParsedItemCard[] = [
       {
         "type": "Heavy",
         "tooltips": [
-          "When you sell this, your leftmost Slow item gains +1 Slow duration."
+          "When you sell this, your leftmost Slow item gains +0.2 Slow duration."
         ]
       },
       {
         "type": "Icy",
         "tooltips": [
-          "When you sell this, your leftmost Freeze item gains +0.2 Freeze duration."
+          "When you sell this, your leftmost Freeze item gains +0.1 Freeze duration."
         ]
       },
       {
         "type": "Turbo",
         "tooltips": [
-          "When you sell this, your leftmost Haste item gains +1 Haste duration."
+          "When you sell this, your leftmost Haste item gains +0.2 Haste duration."
         ]
       },
       {
         "type": "Shielded",
         "tooltips": [
-          "When you sell this, your leftmost Shield item gains +20 Shield."
+          "When you sell this, your leftmost Shield item gains +10 Shield."
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "When you sell this, your leftmost Heal item gains +30 Heal."
+          "When you sell this, your leftmost Heal item gains +15 Heal."
         ]
       },
       {
         "type": "Toxic",
         "tooltips": [
-          "When you sell this, your leftmost Poison item gains +2 Poison."
+          "When you sell this, your leftmost Poison item gains +1 Poison."
         ]
       },
       {
         "type": "Fiery",
         "tooltips": [
-          "When you sell this, your leftmost Burn item gains +2 Burn."
+          "When you sell this, your leftmost Burn item gains +1 Burn."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "When you sell this, your leftmost item gains 10% Crit Chance."
+          "When you sell this, your leftmost item gains 2% Crit Chance."
         ]
       },
       {
         "type": "Obsidian",
         "tooltips": [
-          "When you sell this, your leftmost Weapon item gains +20 damage."
+          "When you sell this, your leftmost Weapon item gains +10 damage."
         ]
       }
     ],
@@ -24070,12 +25579,202 @@ const data: ParsedItemCard[] = [
     "heroes": [
       "Dooley"
     ],
-    "enchantments": [],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "...and Enchant the item with Heavy if able."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "...and Enchant the item with Icy if able."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "...and Enchant the item with Turbo if able."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "...and Enchant the item with Shielded if able."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "...and Enchant the item with Restorative if able."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "...and Enchant the item with Toxic if able."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "...and Enchant the item with Fiery if able."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "...and Enchant the item with Shiny if able."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "...and Enchant the item with Deadly if able."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "...and Enchant the item with Radiant if able."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "...and Enchant the item with Obsidian if able."
+        ]
+      }
+    ],
     "unifiedTooltips": [
       "When you Level Up, get a Tech item."
     ],
     "remarks": [],
     "packId": "Dooley_Core"
+  },
+  {
+    "id": "7d3b7b54-382d-4991-997d-2f78381d7690",
+    "name": "Shot Glasses",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 3 seconds",
+          "Ammo 2",
+          "Haste your items for 1 second(s).",
+          "Slow your items for 1 second(s)."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 3 seconds",
+          "Ammo 3",
+          "Haste your items for 1 second(s).",
+          "Slow your items for 1 second(s)."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 3 seconds",
+          "Ammo 4",
+          "Haste your items for 1 second(s).",
+          "Slow your items for 1 second(s)."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "Ammo",
+      "Haste",
+      "Slow"
+    ],
+    "size": "Small",
+    "heroes": [
+      "Vanessa"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "This has half Slow duration."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze 1 small item for 1 second(s)."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "This has double Haste duration."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield 20."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal 30."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison 2."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn 2."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "Your small items have +25% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal 20 damage."
+        ]
+      }
+    ],
+    "unifiedTooltips": [
+      "Cooldown 3 seconds",
+      "Ammo (2/3/4)",
+      "Haste your items for 1 second(s).",
+      "Slow your items for 1 second(s)."
+    ],
+    "remarks": [],
+    "packId": "Vanessa_The_Gang"
   },
   {
     "id": "627ce721-2f70-454d-9aa2-5895ece3e6ee",
@@ -24194,7 +25893,7 @@ const data: ParsedItemCard[] = [
   {
     "id": "ac596c59-295e-491f-8503-172b094e9773",
     "name": "Pierre Conditioner",
-    "startingTier": "Diamond",
+    "startingTier": "Gold",
     "tiers": {
       "Bronze": {
         "tooltips": []
@@ -24203,13 +25902,17 @@ const data: ParsedItemCard[] = [
         "tooltips": []
       },
       "Gold": {
-        "tooltips": []
+        "tooltips": [
+          "Cooldown 8 seconds",
+          "Freeze 1 item(s) for 1 second(s).",
+          "When you use a Friend or the Core, charge this 1 second(s)."
+        ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 6 seconds",
-          "Freeze 1 medium or small item for 1 second(s).",
-          "When you use the Core, Freeze 1 item for 1 second(s)."
+          "Cooldown 8 seconds",
+          "Freeze 2 item(s) for 1 second(s).",
+          "When you use a Friend or the Core, charge this 1 second(s)."
         ]
       },
       "Legendary": {
@@ -24289,9 +25992,9 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "Cooldown 6 seconds",
-      "Freeze 1 medium or small item for 1 second(s).",
-      "When you use the Core, Freeze 1 item for 1 second(s)."
+      "Cooldown 8 seconds",
+      "Freeze (1/2) item(s) for 1 second(s).",
+      "When you use a Friend or the Core, charge this 1 second(s)."
     ],
     "remarks": [],
     "packId": "Dooley_Core"
@@ -24421,39 +26124,31 @@ const data: ParsedItemCard[] = [
   },
   {
     "id": "b9d4df16-0876-45ee-a35e-700d7b68cb6f",
-    "name": "Fuel Rod",
-    "startingTier": "Bronze",
+    "name": "Defense Matrix",
+    "startingTier": "Silver",
     "tiers": {
       "Bronze": {
-        "tooltips": [
-          "Cooldown 9 seconds",
-          "Burn both players 5.",
-          "Haste adjacent items for 1 second(s).",
-          "Adjacent Vehicles have their cooldowns reduced by 5%."
-        ]
+        "tooltips": []
       },
       "Silver": {
         "tooltips": [
-          "Cooldown 9 seconds",
-          "Burn both players 10.",
-          "Haste adjacent items for 2 second(s).",
-          "Adjacent Vehicles have their cooldowns reduced by 10%."
+          "Cooldown 8 seconds",
+          "Haste adjacent items for 1 second(s).",
+          "When you use an adjacent item, Shield 5."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 9 seconds",
-          "Burn both players 15.",
-          "Haste adjacent items for 3 second(s).",
-          "Adjacent Vehicles have their cooldowns reduced by 15%."
+          "Cooldown 8 seconds",
+          "Haste adjacent items for 2 second(s).",
+          "When you use an adjacent item, Shield 10."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 9 seconds",
-          "Burn both players 20.",
-          "Haste adjacent items for 4 second(s).",
-          "Adjacent Vehicles have their cooldowns reduced by 20%."
+          "Cooldown 8 seconds",
+          "Haste adjacent items for 3 second(s).",
+          "When you use an adjacent item, Shield 15."
         ]
       },
       "Legendary": {
@@ -24464,7 +26159,7 @@ const data: ParsedItemCard[] = [
       "Tech"
     ],
     "hiddenTags": [
-      "Burn",
+      "Shield",
       "Haste"
     ],
     "size": "Medium",
@@ -24475,13 +26170,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Heavy",
         "tooltips": [
-          "Slow 2 items for 3 second(s)."
+          "When you use an adjacent item, slow 1 item for 1 second(s)."
         ]
       },
       {
         "type": "Icy",
         "tooltips": [
-          "Freeze 1 medium or small item for 3 second(s)."
+          "When you use an adjacent item, freeze 1 small item for 1 second(s)."
         ]
       },
       {
@@ -24493,25 +26188,25 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 10 times this item's Burn."
+          "This has double Shield."
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 10 times this item's Burn."
+          "When you use an adjacent item, Heal 15."
         ]
       },
       {
         "type": "Toxic",
         "tooltips": [
-          "Poison equal to this item's Burn."
+          "When you use an adjacent item, Poison 1."
         ]
       },
       {
         "type": "Fiery",
         "tooltips": [
-          "This has double Burn."
+          "When you use an adjacent item, Burn 1."
         ]
       },
       {
@@ -24523,7 +26218,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "Adjacent items have +25% Crit Chance."
         ]
       },
       {
@@ -24535,15 +26230,14 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal damage equal to 10 times this item's Burn."
+          "When you use an adjacent item, deal Damage 10."
         ]
       }
     ],
     "unifiedTooltips": [
-      "Cooldown 9 seconds",
-      "Burn both players (5/10/15/20).",
-      "Haste adjacent items for (1/2/3/4) second(s).",
-      "Adjacent Vehicles have their cooldowns reduced by (5%/10%/15%/20%)."
+      "Cooldown 8 seconds",
+      "Haste adjacent items for (1/2/3) second(s).",
+      "When you use an adjacent item, Shield (5/10/15)."
     ],
     "remarks": [],
     "packId": "Dooley_Core"
@@ -24682,21 +26376,21 @@ const data: ParsedItemCard[] = [
       "Silver": {
         "tooltips": [
           "Cooldown 4 seconds",
-          "Slow 1 item for 1 second(s).",
+          "Slow 1 item(s) for 1 second(s).",
           "When you Slow, Haste 1 item for 1 second(s)."
         ]
       },
       "Gold": {
         "tooltips": [
           "Cooldown 4 seconds",
-          "Slow 1 item for 2 second(s).",
+          "Slow 1 item(s) for 2 second(s).",
           "When you Slow, Haste 1 item for 2 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 4 seconds",
-          "Slow 1 item for 3 second(s).",
+          "Slow 1 item(s) for 3 second(s).",
           "When you Slow, Haste 1 item for 3 second(s)."
         ]
       },
@@ -24785,7 +26479,7 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
-      "Slow 1 item for (1/2/3) second(s).",
+      "Slow 1 item(s) for (1/2/3) second(s).",
       "When you Slow, Haste 1 item for (1/2/3) second(s)."
     ],
     "remarks": [],
@@ -25044,28 +26738,28 @@ const data: ParsedItemCard[] = [
     "tiers": {
       "Bronze": {
         "tooltips": [
-          "Cooldown 5 seconds",
+          "Cooldown 4 seconds",
           "Deal 1 damage.",
           "When you use an adjacent item, charge this 1 second(s)."
         ]
       },
       "Silver": {
         "tooltips": [
-          "Cooldown 5 seconds",
+          "Cooldown 4 seconds",
           "Deal 1 damage.",
           "When you use an adjacent item, charge this 2 second(s)."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 5 seconds",
+          "Cooldown 4 seconds",
           "Deal 1 damage.",
           "When you use an adjacent item, charge this 3 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 5 seconds",
+          "Cooldown 4 seconds",
           "Deal 1 damage.",
           "When you use an adjacent item, charge this 4 second(s)."
         ]
@@ -25154,7 +26848,7 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "Cooldown 5 seconds",
+      "Cooldown 4 seconds",
       "Deal 1 damage.",
       "When you use an adjacent item, charge this (1/2/3/4) second(s)."
     ],
@@ -25344,21 +27038,21 @@ const data: ParsedItemCard[] = [
       "Silver": {
         "tooltips": [
           "Cooldown 7 seconds",
-          "Freeze 1 for 1 second(s).",
+          "Freeze 1 item for 1 second(s).",
           "This has +1 Multicast for each adjacent Property."
         ]
       },
       "Gold": {
         "tooltips": [
           "Cooldown 7 seconds",
-          "Freeze 1 for 1.5 second(s).",
+          "Freeze 1 item for 1.5 second(s).",
           "This has +1 Multicast for each adjacent Property."
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 7 seconds",
-          "Freeze 1 for 2 second(s).",
+          "Freeze 1 item for 2 second(s).",
           "This has +1 Multicast for each adjacent Property."
         ]
       },
@@ -25447,7 +27141,7 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
-      "Freeze 1 for (1/1.5/2) second(s).",
+      "Freeze 1 item for (1/1.5/2) second(s).",
       "This has +1 Multicast for each adjacent Property."
     ],
     "remarks": [],
@@ -25688,122 +27382,6 @@ const data: ParsedItemCard[] = [
     "packId": "Pyg_Frozen_Assets"
   },
   {
-    "id": "94e28682-a012-4dd0-8ce8-7fe180aa6127",
-    "name": "Busy Bee",
-    "startingTier": "Silver",
-    "tiers": {
-      "Bronze": {
-        "tooltips": []
-      },
-      "Silver": {
-        "tooltips": [
-          "Cooldown 7 seconds",
-          "Deal 5 damage."
-        ]
-      },
-      "Gold": {
-        "tooltips": [
-          "Cooldown 7 seconds",
-          "Deal 10 damage."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "Cooldown 7 seconds",
-          "Deal 20 damage."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [
-      "Weapon",
-      "Friend"
-    ],
-    "hiddenTags": [
-      "Damage"
-    ],
-    "size": "Small",
-    "heroes": [
-      "Common"
-    ],
-    "enchantments": [
-      {
-        "type": "Heavy",
-        "tooltips": [
-          "Slow 1 item for 1 second(s)."
-        ]
-      },
-      {
-        "type": "Icy",
-        "tooltips": [
-          "Freeze 1 small item for 1 second(s)."
-        ]
-      },
-      {
-        "type": "Turbo",
-        "tooltips": [
-          "Haste 1 item for 1 second(s)."
-        ]
-      },
-      {
-        "type": "Shielded",
-        "tooltips": [
-          "Shield equal to this item's damage."
-        ]
-      },
-      {
-        "type": "Restorative",
-        "tooltips": [
-          "Heal equal to this item's Damage."
-        ]
-      },
-      {
-        "type": "Toxic",
-        "tooltips": [
-          "Poison equal to 10% of this item's damage."
-        ]
-      },
-      {
-        "type": "Fiery",
-        "tooltips": [
-          "Burn equal to 10% of this item's damage."
-        ]
-      },
-      {
-        "type": "Shiny",
-        "tooltips": [
-          "This has +1 Multicast."
-        ]
-      },
-      {
-        "type": "Deadly",
-        "tooltips": [
-          "+50% Crit Chance"
-        ]
-      },
-      {
-        "type": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
-        "type": "Obsidian",
-        "tooltips": [
-          "This has double Damage."
-        ]
-      }
-    ],
-    "unifiedTooltips": [
-      "Cooldown 7 seconds",
-      "Deal (5/10/20) damage."
-    ],
-    "remarks": [],
-    "packId": "Core"
-  },
-  {
     "id": "88e65c34-6865-4222-8eec-c18d48b2aa8d",
     "name": "Seaweed",
     "startingTier": "Bronze",
@@ -25925,6 +27503,122 @@ const data: ParsedItemCard[] = [
     ],
     "remarks": [],
     "packId": "Vanessa_Core"
+  },
+  {
+    "id": "94e28682-a012-4dd0-8ce8-7fe180aa6127",
+    "name": "Busy Bee",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 7 seconds",
+          "Deal 10 damage."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 7 seconds",
+          "Deal 20 damage."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 7 seconds",
+          "Deal 30 damage."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Weapon",
+      "Friend"
+    ],
+    "hiddenTags": [
+      "Damage"
+    ],
+    "size": "Small",
+    "heroes": [
+      "Common"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 1 item for 1 second(s)."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze 1 small item for 1 second(s)."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 1 item for 1 second(s)."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield equal to this item's damage."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to this item's Damage."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to 10% of this item's damage."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn equal to 10% of this item's damage."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "This has double Damage."
+        ]
+      }
+    ],
+    "unifiedTooltips": [
+      "Cooldown 7 seconds",
+      "Deal (10/20/30) damage."
+    ],
+    "remarks": [],
+    "packId": "Core"
   },
   {
     "id": "4a30e8b0-f1d1-44c0-b2a7-0a8d12c1e297",
@@ -26386,6 +28080,133 @@ const data: ParsedItemCard[] = [
     "packId": "Stelle_Core"
   },
   {
+    "id": "8908d2d1-1a7e-4f97-8ecb-6834e96b1eab",
+    "name": "Captain's Quarters",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Haste 1 Vehicle for 2 second(s).\n \n Charge 1 Tool 1 second(s).",
+          "Reload 1 Ammo item 1 Ammo.",
+          "A Weapon gains +20 damage for the fight."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Haste 1 Vehicle for 3 second(s).\n \n Charge 1 Tool 2 second(s).",
+          "Reload 1 Ammo item 2 Ammo.",
+          "A Weapon gains +30 damage for the fight."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Haste 1 Vehicle for 4 second(s).\n \n Charge 1 Tool 3 second(s).",
+          "Reload 1 Ammo item 3 Ammo.",
+          "A Weapon gains +40 damage for the fight."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Aquatic",
+      "Property"
+    ],
+    "hiddenTags": [
+      "Haste",
+      "Charge",
+      "DamageReference",
+      "AmmoReference"
+    ],
+    "size": "Large",
+    "heroes": [
+      "Vanessa"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 3 items for 2 second(s)."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze 1 item for 1 second(s)."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "This has double Haste duration."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield 60."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal 90."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison 6."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn 9."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "Your items have +20% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "This has double damage bonus."
+        ]
+      }
+    ],
+    "unifiedTooltips": [
+      "Cooldown 4 seconds",
+      "Haste 1 Vehicle for (2/3/4) second(s). Charge 1 Tool (1/2/3) second(s).",
+      "Reload 1 Ammo item (1/2/3) Ammo.",
+      "A Weapon gains (+20/+30/+40) damage for the fight."
+    ],
+    "remarks": [],
+    "packId": "Vanessa_The_Gang"
+  },
+  {
     "id": "3ce7312c-aa95-4711-9a2b-827609a380b4",
     "name": "Satchel",
     "startingTier": "Silver",
@@ -26396,24 +28217,24 @@ const data: ParsedItemCard[] = [
       "Silver": {
         "tooltips": [
           "Cooldown 8 seconds",
-          "Reload an item.",
-          "When you reload, gain 5 Regeneration for the fight.",
+          "Reload 2 items.",
+          "When you reload, gain 2 Regeneration for the fight.",
           "When you buy a Potion, increase this item's +Regeneration by +1."
         ]
       },
       "Gold": {
         "tooltips": [
           "Cooldown 8 seconds",
-          "Reload an item.",
-          "When you reload, gain 5 Regeneration for the fight.",
+          "Reload 2 items.",
+          "When you reload, gain 6 Regeneration for the fight.",
           "When you buy a Potion, increase this item's +Regeneration by +2."
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 8 seconds",
-          "Reload an item.",
-          "When you reload, gain 5 Regeneration for the fight.",
+          "Reload 2 items.",
+          "When you reload, gain 10 Regeneration for the fight.",
           "When you buy a Potion, increase this item's +Regeneration by +3."
         ]
       },
@@ -26502,8 +28323,8 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 8 seconds",
-      "Reload an item.",
-      "When you reload, gain 5 Regeneration for the fight.",
+      "Reload 2 items.",
+      "When you reload, gain (2/6/10) Regeneration for the fight.",
       "When you buy a Potion, increase this item's +Regeneration by (+1/+2/+3)."
     ],
     "remarks": [],
@@ -26518,28 +28339,28 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Cooldown 5 seconds",
           "Poison 3.",
-          "When this gains Haste, this gains +1 Poison for the fight."
+          "When this gains Haste, this gains +3 Poison for the fight."
         ]
       },
       "Silver": {
         "tooltips": [
           "Cooldown 5 seconds",
           "Poison 3.",
-          "When this gains Haste, this gains +2 Poison for the fight."
+          "When this gains Haste, this gains +6 Poison for the fight."
         ]
       },
       "Gold": {
         "tooltips": [
           "Cooldown 5 seconds",
           "Poison 3.",
-          "When this gains Haste, this gains +3 Poison for the fight."
+          "When this gains Haste, this gains +9 Poison for the fight."
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 5 seconds",
           "Poison 3.",
-          "When this gains Haste, this gains +4 Poison for the fight."
+          "When this gains Haste, this gains +12 Poison for the fight."
         ]
       },
       "Legendary": {
@@ -26629,7 +28450,7 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Poison 3.",
-      "When this gains Haste, this gains (+1/+2/+3/+4) Poison for the fight."
+      "When this gains Haste, this gains (+3/+6/+9/+12) Poison for the fight."
     ],
     "remarks": [],
     "packId": "Vanessa_Core"
@@ -26797,28 +28618,28 @@ const data: ParsedItemCard[] = [
       "Bronze": {
         "tooltips": [
           "Cooldown 8 seconds",
-          "Slow 1 item for 1 second(s).",
+          "Slow 1 item(s) for 1 second(s).",
           "For each adjacent Friend or Ray, this has +1 Multicast."
         ]
       },
       "Silver": {
         "tooltips": [
           "Cooldown 8 seconds",
-          "Slow 1 item for 2 second(s).",
+          "Slow 1 item(s) for 2 second(s).",
           "For each adjacent Friend or Ray, this has +1 Multicast."
         ]
       },
       "Gold": {
         "tooltips": [
           "Cooldown 8 seconds",
-          "Slow 1 item for 3 second(s).",
+          "Slow 1 item(s) for 3 second(s).",
           "For each adjacent Friend or Ray, this has +1 Multicast."
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 8 seconds",
-          "Slow 1 item for 4 second(s).",
+          "Slow 1 item(s) for 4 second(s).",
           "For each adjacent Friend or Ray, this has +1 Multicast."
         ]
       },
@@ -26908,11 +28729,131 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 8 seconds",
-      "Slow 1 item for (1/2/3/4) second(s).",
+      "Slow 1 item(s) for (1/2/3/4) second(s).",
       "For each adjacent Friend or Ray, this has +1 Multicast."
     ],
     "remarks": [],
     "packId": "Vanessa_Core"
+  },
+  {
+    "id": "7d64073a-816f-476d-b704-e58b539b9b7a",
+    "name": "Motherboard",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Haste adjacent items for 1 second(s).",
+          "When you use an adjacent Tech item, charge this 1 second(s)."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Haste adjacent items for 2 second(s).",
+          "When you use an adjacent Tech item, charge this 1 second(s)."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Haste adjacent items for 3 second(s).",
+          "When you use an adjacent Tech item, charge this 1 second(s)."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Tech"
+    ],
+    "hiddenTags": [
+      "DamageReference",
+      "Haste"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Dooley"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 2 items for 2 second(s)."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze 1 medium or small item for 2 second(s)."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "This has double Haste duration."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield 50."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal 75."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison 5."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn 7."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "Your Core has +50% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal 50 Damage."
+        ]
+      }
+    ],
+    "unifiedTooltips": [
+      "Cooldown 5 seconds",
+      "Haste adjacent items for (1/2/3) second(s).",
+      "When you use an adjacent Tech item, charge this 1 second(s)."
+    ],
+    "remarks": [],
+    "packId": "Dooley_Core"
   },
   {
     "id": "f16526f8-f3f7-4b79-aec0-b6bd729806a1",
@@ -27030,126 +28971,6 @@ const data: ParsedItemCard[] = [
     "packId": "Dooley_Core"
   },
   {
-    "id": "7d64073a-816f-476d-b704-e58b539b9b7a",
-    "name": "Motherboard",
-    "startingTier": "Silver",
-    "tiers": {
-      "Bronze": {
-        "tooltips": []
-      },
-      "Silver": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Haste the Core for 2 second(s).",
-          "When the Core gains Haste, it gains +10 damage for the fight."
-        ]
-      },
-      "Gold": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Haste the Core for 3 second(s).",
-          "When the Core gains Haste, it gains +20 damage for the fight."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Haste the Core for 4 second(s).",
-          "When the Core gains Haste, it gains +30 damage for the fight."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [
-      "Tech"
-    ],
-    "hiddenTags": [
-      "DamageReference",
-      "Haste"
-    ],
-    "size": "Medium",
-    "heroes": [
-      "Dooley"
-    ],
-    "enchantments": [
-      {
-        "type": "Heavy",
-        "tooltips": [
-          "Slow 2 items for 2 second(s)."
-        ]
-      },
-      {
-        "type": "Icy",
-        "tooltips": [
-          "Freeze 1 medium or small item for 2 second(s)."
-        ]
-      },
-      {
-        "type": "Turbo",
-        "tooltips": [
-          "This has double Haste duration."
-        ]
-      },
-      {
-        "type": "Shielded",
-        "tooltips": [
-          "Shield 50."
-        ]
-      },
-      {
-        "type": "Restorative",
-        "tooltips": [
-          "Heal 75."
-        ]
-      },
-      {
-        "type": "Toxic",
-        "tooltips": [
-          "Poison 5."
-        ]
-      },
-      {
-        "type": "Fiery",
-        "tooltips": [
-          "Burn 7."
-        ]
-      },
-      {
-        "type": "Shiny",
-        "tooltips": [
-          "This has +1 Multicast."
-        ]
-      },
-      {
-        "type": "Deadly",
-        "tooltips": [
-          "Your Core has +50% Crit Chance."
-        ]
-      },
-      {
-        "type": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
-        "type": "Obsidian",
-        "tooltips": [
-          "Deal 50 Damage."
-        ]
-      }
-    ],
-    "unifiedTooltips": [
-      "Cooldown 6 seconds",
-      "Haste the Core for (2/3/4) second(s).",
-      "When the Core gains Haste, it gains (+10/+20/+30) damage for the fight."
-    ],
-    "remarks": [],
-    "packId": "Dooley_Core"
-  },
-  {
     "id": "6146cacd-202c-489f-88c0-f77ef3e0fda6",
     "name": "Bayonet",
     "startingTier": "Bronze",
@@ -27246,7 +29067,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Deadly",
         "tooltips": [
-          "The weapon to the left has +50% Crit Chance."
+          "The weapon to the left of this has +50% Crit Chance."
         ]
       },
       {
@@ -27707,7 +29528,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Deadly",
         "tooltips": [
-          "Adjacent Ammo items have +25% Crit Chance."
+          "Adjacent Ammo items have +50% Crit Chance."
         ]
       },
       {
@@ -28210,17 +30031,17 @@ const data: ParsedItemCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "When you use the item to the left of this, haste the item to the right of this for 1 second(s)."
+          "After you buy 3 Reagents, transform this and enchant it."
         ]
       },
       "Gold": {
         "tooltips": [
-          "When you use the item to the left of this, haste the item to the right of this for 2 second(s)."
+          "After you buy 3 Reagents, transform this and enchant it."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "When you use the item to the left of this, haste the item to the right of this for 3 second(s)."
+          "After you buy 3 Reagents, transform this and enchant it."
         ]
       },
       "Legendary": {
@@ -28228,67 +30049,16 @@ const data: ParsedItemCard[] = [
       }
     },
     "tags": [
-      "Ingredient"
+      "Reagent"
     ],
-    "hiddenTags": [
-      "Haste"
-    ],
+    "hiddenTags": [],
     "size": "Small",
     "heroes": [
       "Mak"
     ],
-    "enchantments": [
-      {
-        "type": "Heavy",
-        "tooltips": [
-          "When you use the item to the left of this, Slow 1 item for 2 second(s)."
-        ]
-      },
-      {
-        "type": "Icy",
-        "tooltips": [
-          "When you use the item to the left of this, Freeze 1 small item for 1 second(s)."
-        ]
-      },
-      {
-        "type": "Turbo",
-        "tooltips": [
-          "This has double Haste duration."
-        ]
-      },
-      {
-        "type": "Shielded",
-        "tooltips": [
-          "When you use the item to the left of this, Shield 15."
-        ]
-      },
-      {
-        "type": "Restorative",
-        "tooltips": [
-          "When you use the item to the left of this, Heal 20."
-        ]
-      },
-      {
-        "type": "Toxic",
-        "tooltips": [
-          "When you use the item to the left of this, Poison 1."
-        ]
-      },
-      {
-        "type": "Fiery",
-        "tooltips": [
-          "When you use the item to the left of this, Burn 2."
-        ]
-      },
-      {
-        "type": "Deadly",
-        "tooltips": [
-          "When you use the item to the left of this, the item to the right of this gains 20% Crit Chance for the fight."
-        ]
-      }
-    ],
+    "enchantments": [],
     "unifiedTooltips": [
-      "When you use the item to the left of this, haste the item to the right of this for (1/2/3) second(s)."
+      "After you buy 3 Reagents, transform this and enchant it."
     ],
     "remarks": [],
     "packId": "Mak_Core"
@@ -28416,124 +30186,6 @@ const data: ParsedItemCard[] = [
     "packId": "Pygmalien_Core"
   },
   {
-    "id": "f0a58209-1a26-42ac-a243-7c2fd9d6ce33",
-    "name": "Black Ice",
-    "startingTier": "Silver",
-    "tiers": {
-      "Bronze": {
-        "tooltips": []
-      },
-      "Silver": {
-        "tooltips": [
-          "Cooldown 7 seconds",
-          "Freeze 1 medium or small item(s) for 1 second(s).",
-          "When you Freeze, Poison 6."
-        ]
-      },
-      "Gold": {
-        "tooltips": [
-          "Cooldown 7 seconds",
-          "Freeze 2 medium or small item(s) for 1 second(s).",
-          "When you Freeze, Poison 8."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "Cooldown 7 seconds",
-          "Freeze 2 medium or small item(s) for 1 second(s).",
-          "When you Freeze, Poison 10."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [],
-    "hiddenTags": [
-      "Poison",
-      "Freeze"
-    ],
-    "size": "Medium",
-    "heroes": [
-      "Mak"
-    ],
-    "enchantments": [
-      {
-        "type": "Heavy",
-        "tooltips": [
-          "Slow 1 item for 2 second(s)."
-        ]
-      },
-      {
-        "type": "Icy",
-        "tooltips": [
-          "This has double Freeze duration."
-        ]
-      },
-      {
-        "type": "Turbo",
-        "tooltips": [
-          "Haste 1 item for 2 second(s)."
-        ]
-      },
-      {
-        "type": "Shielded",
-        "tooltips": [
-          "When you Freeze, Shield equal to 10 times this item's Poison."
-        ]
-      },
-      {
-        "type": "Restorative",
-        "tooltips": [
-          "When you Freeze, Heal equal to 10 times this item's Poison."
-        ]
-      },
-      {
-        "type": "Toxic",
-        "tooltips": [
-          "This has double Poison"
-        ]
-      },
-      {
-        "type": "Fiery",
-        "tooltips": [
-          "When you Freeze, Burn equal to this item's Poison."
-        ]
-      },
-      {
-        "type": "Shiny",
-        "tooltips": [
-          "This has +1 Multicast."
-        ]
-      },
-      {
-        "type": "Deadly",
-        "tooltips": [
-          "+50% Crit Chance"
-        ]
-      },
-      {
-        "type": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
-        "type": "Obsidian",
-        "tooltips": [
-          "When you Freeze, Deal damage equal to 10 times this item's Poison."
-        ]
-      }
-    ],
-    "unifiedTooltips": [
-      "Cooldown 7 seconds",
-      "Freeze (1/2/2) medium or small item(s) for 1 second(s).",
-      "When you Freeze, Poison (6/8/10)."
-    ],
-    "remarks": [],
-    "packId": "Mak_Core"
-  },
-  {
     "id": "020a0ec0-21e6-41af-899f-063573ba9ca5",
     "name": "Virus",
     "startingTier": "Silver",
@@ -28655,6 +30307,124 @@ const data: ParsedItemCard[] = [
     ],
     "remarks": [],
     "packId": "Dooley_Core"
+  },
+  {
+    "id": "f0a58209-1a26-42ac-a243-7c2fd9d6ce33",
+    "name": "Black Ice",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 7 seconds",
+          "Freeze 1 item(s) for 1 second(s).",
+          "When you Freeze, Poison 6."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 7 seconds",
+          "Freeze 2 item(s) for 1 second(s).",
+          "When you Freeze, Poison 8."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 7 seconds",
+          "Freeze 3 item(s) for 1 second(s).",
+          "When you Freeze, Poison 10."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "Poison",
+      "Freeze"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Mak"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 1 item for 2 second(s)."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "This has double Freeze duration."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 1 item for 2 second(s)."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "When you Freeze, Shield equal to 10 times this item's Poison."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "When you Freeze, Heal equal to 10 times this item's Poison."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "This has double Poison"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "When you Freeze, Burn equal to this item's Poison."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "When you Freeze, Deal damage equal to 10 times this item's Poison."
+        ]
+      }
+    ],
+    "unifiedTooltips": [
+      "Cooldown 7 seconds",
+      "Freeze (1/2/3) item(s) for 1 second(s).",
+      "When you Freeze, Poison (6/8/10)."
+    ],
+    "remarks": [],
+    "packId": "Mak_Core"
   },
   {
     "id": "2e0be4f0-0472-444a-a541-09f1ba464c64",
@@ -28780,6 +30550,124 @@ const data: ParsedItemCard[] = [
     "packId": "Pyg_Frozen_Assets"
   },
   {
+    "id": "54f957f2-9522-486b-a7c6-bb234f74846c",
+    "name": "Katana",
+    "startingTier": "Bronze",
+    "tiers": {
+      "Bronze": {
+        "tooltips": [
+          "Cooldown 2 seconds",
+          "Deal 5 damage."
+        ]
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 2 seconds",
+          "Deal 10 damage."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 2 seconds",
+          "Deal 15 damage."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 2 seconds",
+          "Deal 20 damage."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Weapon"
+    ],
+    "hiddenTags": [
+      "Damage"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Vanessa"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 2 items for 1 second(s)."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze 1 medium or small item for 1 second(s)."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 2 items for 1 second(s)."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield equal to this item's damage."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to this item's Damage."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to 10% of this item's damage."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn equal to 10% of this item's damage."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "This has double Damage."
+        ]
+      }
+    ],
+    "unifiedTooltips": [
+      "Cooldown 2 seconds",
+      "Deal (5/10/15/20) damage."
+    ],
+    "remarks": [],
+    "packId": "Vanessa_Core"
+  },
+  {
     "id": "d8106a24-647f-40c6-8587-22f977931d76",
     "name": "Water Wheel",
     "startingTier": "Silver",
@@ -28895,124 +30783,6 @@ const data: ParsedItemCard[] = [
       "Cooldown (10/9/8) seconds",
       "Haste your other items for 2 second(s).",
       "When you use an adjacent item, charge this 2 second(s)."
-    ],
-    "remarks": [],
-    "packId": "Vanessa_Core"
-  },
-  {
-    "id": "54f957f2-9522-486b-a7c6-bb234f74846c",
-    "name": "Katana",
-    "startingTier": "Bronze",
-    "tiers": {
-      "Bronze": {
-        "tooltips": [
-          "Cooldown 3 seconds",
-          "Deal 6 damage."
-        ]
-      },
-      "Silver": {
-        "tooltips": [
-          "Cooldown 3 seconds",
-          "Deal 12 damage."
-        ]
-      },
-      "Gold": {
-        "tooltips": [
-          "Cooldown 3 seconds",
-          "Deal 18 damage."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "Cooldown 3 seconds",
-          "Deal 24 damage."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [
-      "Weapon"
-    ],
-    "hiddenTags": [
-      "Damage"
-    ],
-    "size": "Medium",
-    "heroes": [
-      "Vanessa"
-    ],
-    "enchantments": [
-      {
-        "type": "Heavy",
-        "tooltips": [
-          "Slow 2 items for 1 second(s)."
-        ]
-      },
-      {
-        "type": "Icy",
-        "tooltips": [
-          "Freeze 1 medium or small item for 1 second(s)."
-        ]
-      },
-      {
-        "type": "Turbo",
-        "tooltips": [
-          "Haste 2 items for 1 second(s)."
-        ]
-      },
-      {
-        "type": "Shielded",
-        "tooltips": [
-          "Shield equal to this item's damage."
-        ]
-      },
-      {
-        "type": "Restorative",
-        "tooltips": [
-          "Heal equal to this item's Damage."
-        ]
-      },
-      {
-        "type": "Toxic",
-        "tooltips": [
-          "Poison equal to 10% of this item's damage."
-        ]
-      },
-      {
-        "type": "Fiery",
-        "tooltips": [
-          "Burn equal to 10% of this item's damage."
-        ]
-      },
-      {
-        "type": "Shiny",
-        "tooltips": [
-          "This has +1 Multicast."
-        ]
-      },
-      {
-        "type": "Deadly",
-        "tooltips": [
-          "+50% Crit Chance"
-        ]
-      },
-      {
-        "type": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
-        "type": "Obsidian",
-        "tooltips": [
-          "This has double Damage."
-        ]
-      }
-    ],
-    "unifiedTooltips": [
-      "Cooldown 3 seconds",
-      "Deal (6/12/18/24) damage."
     ],
     "remarks": [],
     "packId": "Vanessa_Core"
@@ -29505,6 +31275,131 @@ const data: ParsedItemCard[] = [
     "packId": "Stelle_Core"
   },
   {
+    "id": "f2bb81c1-926e-447b-89aa-8c981604570c",
+    "name": "BLK-SP1D3R",
+    "startingTier": "Bronze",
+    "tiers": {
+      "Bronze": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Slow 1 item(s) for 1 second(s).",
+          "When an adjacent item Poisons or Burns, charge this 1 second(s)."
+        ]
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Slow 2 item(s) for 1 second(s).",
+          "When an adjacent item Poisons or Burns, charge this 1 second(s)."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Slow 3 item(s) for 1 second(s).",
+          "When an adjacent item Poisons or Burns, charge this 1 second(s)."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Slow 4 item(s) for 1 second(s).",
+          "When an adjacent item Poisons or Burns, charge this 1 second(s)."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Friend"
+    ],
+    "hiddenTags": [
+      "Slow",
+      "PoisonReference",
+      "BurnReference"
+    ],
+    "size": "Small",
+    "heroes": [
+      "Dooley"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "This has double Slow duration."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze 1 small item for 1 second(s)."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 1 item for 3 second(s)."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield 20."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal 30."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison 2."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn 3."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "Your Friends have +20% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal 20 Damage."
+        ]
+      }
+    ],
+    "unifiedTooltips": [
+      "Cooldown 6 seconds",
+      "Slow (1/2/3/4) item(s) for 1 second(s).",
+      "When an adjacent item Poisons or Burns, charge this 1 second(s)."
+    ],
+    "remarks": [],
+    "packId": "Dooley_Dooltron"
+  },
+  {
     "id": "48d24eb0-d953-409c-9602-1d3d4c4278c5",
     "name": "Red Piggles X",
     "startingTier": "Bronze",
@@ -29874,23 +31769,23 @@ const data: ParsedItemCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "Cooldown 9 seconds",
-          "Burn 1.",
-          "When you use another friend, this gains 1 Burn for the fight."
-        ]
-      },
-      "Gold": {
-        "tooltips": [
-          "Cooldown 9 seconds",
+          "Cooldown 8 seconds",
           "Burn 2.",
           "When you use another friend, this gains 2 Burn for the fight."
         ]
       },
-      "Diamond": {
+      "Gold": {
         "tooltips": [
-          "Cooldown 9 seconds",
+          "Cooldown 8 seconds",
           "Burn 3.",
           "When you use another friend, this gains 3 Burn for the fight."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 8 seconds",
+          "Burn 4.",
+          "When you use another friend, this gains 4 Burn for the fight."
         ]
       },
       "Legendary": {
@@ -29976,9 +31871,9 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "Cooldown 9 seconds",
-      "Burn (1/2/3).",
-      "When you use another friend, this gains (1/2/3) Burn for the fight."
+      "Cooldown 8 seconds",
+      "Burn (2/3/4).",
+      "When you use another friend, this gains (2/3/4) Burn for the fight."
     ],
     "remarks": [],
     "packId": "Dooley_Core"
@@ -29994,7 +31889,7 @@ const data: ParsedItemCard[] = [
       "Silver": {
         "tooltips": [
           "Cooldown 6 seconds",
-          "Deal 30 damage.",
+          "Deal 20 damage.",
           "When you use a Friend, this gains 15 damage for the fight."
         ]
       },
@@ -30008,7 +31903,7 @@ const data: ParsedItemCard[] = [
       "Diamond": {
         "tooltips": [
           "Cooldown 6 seconds",
-          "Deal 40 damage.",
+          "Deal 20 damage.",
           "When you use a Friend, this gains 25 damage for the fight."
         ]
       },
@@ -30097,7 +31992,7 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
-      "Deal (30/20/40) damage.",
+      "Deal 20 damage.",
       "When you use a Friend, this gains (15/20/25) damage for the fight."
     ],
     "remarks": [],
@@ -30359,7 +32254,7 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Cooldown 3 seconds",
           "Ammo 1",
-          "Deal 6 damage.",
+          "Deal 8 damage.",
           "When you use this, Reload this 1 Ammo if it is your only weapon with a cooldown."
         ]
       },
@@ -30367,7 +32262,7 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Cooldown 3 seconds",
           "Ammo 1",
-          "Deal 12 damage.",
+          "Deal 16 damage.",
           "When you use this, Reload this 1 Ammo if it is your only weapon with a cooldown."
         ]
       },
@@ -30375,7 +32270,7 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Cooldown 3 seconds",
           "Ammo 1",
-          "Deal 18 damage.",
+          "Deal 30 damage.",
           "When you use this, Reload this 1 Ammo if it is your only weapon with a cooldown."
         ]
       },
@@ -30383,7 +32278,7 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Cooldown 3 seconds",
           "Ammo 1",
-          "Deal 24 damage.",
+          "Deal 48 damage.",
           "When you use this, Reload this 1 Ammo if it is your only weapon with a cooldown."
         ]
       },
@@ -30473,7 +32368,7 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "Cooldown 3 seconds",
       "Ammo 1",
-      "Deal (6/12/18/24) damage.",
+      "Deal (8/16/30/48) damage.",
       "When you use this, Reload this 1 Ammo if it is your only weapon with a cooldown."
     ],
     "remarks": [],
@@ -30680,43 +32575,43 @@ const data: ParsedItemCard[] = [
       {
         "type": "Heavy",
         "tooltips": [
-          "When you sell this, your leftmost Slow item gains +1 Slow duration."
+          "When you sell this, your leftmost Slow item gains +0.2 Slow duration."
         ]
       },
       {
         "type": "Icy",
         "tooltips": [
-          "When you sell this, your leftmost Freeze item gains +0.2 Freeze duration."
+          "When you sell this, your leftmost Freeze item gains +0.1 Freeze duration."
         ]
       },
       {
         "type": "Turbo",
         "tooltips": [
-          "When you sell this, your leftmost Haste item gains +1 Haste duration."
+          "When you sell this, your leftmost Haste item gains +0.2 Haste duration."
         ]
       },
       {
         "type": "Shielded",
         "tooltips": [
-          "When you sell this, your leftmost Shield item gains +20 Shield."
+          "When you sell this, your leftmost Shield item gains +10 Shield."
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "When you sell this, your leftmost Heal item gains +30 Heal."
+          "When you sell this, your leftmost Heal item gains +15 Heal."
         ]
       },
       {
         "type": "Toxic",
         "tooltips": [
-          "When you sell this, your leftmost Poison item gains +2 Poison."
+          "When you sell this, your leftmost Poison item gains +1 Poison."
         ]
       },
       {
         "type": "Fiery",
         "tooltips": [
-          "When you sell this, your leftmost Burn item gains +2 Burn."
+          "When you sell this, your leftmost Burn item gains +1 Burn."
         ]
       },
       {
@@ -30728,7 +32623,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "When you sell this, your leftmost Weapon item gains +20 damage."
+          "When you sell this, your leftmost Weapon item gains +10 damage."
         ]
       }
     ],
@@ -30911,33 +32806,39 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
-        "type": "Shielded",
+        "type": "Restorative",
         "tooltips": [
-          "When you slow, shield 30."
+          "When you slow, Heal equal to 10 times this item's Regeneration."
         ]
       },
       {
-        "type": "Restorative",
+        "type": "Shielded",
         "tooltips": [
-          "When you slow, heal 45."
+          "When you slow, Shield equal to 10 times this item's Regeneration."
         ]
       },
       {
         "type": "Toxic",
         "tooltips": [
-          "When you slow, poison 3."
+          "When you slow, Poison equal to this item's Regeneration."
         ]
       },
       {
         "type": "Fiery",
         "tooltips": [
-          "When you slow, burn 5."
+          "When you slow, Burn equal to this item's Regeneration."
         ]
       },
       {
         "type": "Shiny",
         "tooltips": [
           "This has double Regeneration."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "When you Slow, your items gain +5% Crit Chance for the fight."
         ]
       },
       {
@@ -30949,7 +32850,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "When you Slow, Deal 30 damage."
+          "When you Slow, Deal damage equal to 10 times this item's Regeneration."
         ]
       }
     ],
@@ -31100,17 +33001,17 @@ const data: ParsedItemCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "When you sell 10 items, adjacent items gain 5 value."
+          "When you sell 10 items, adjacent items gain 4 value."
         ]
       },
       "Gold": {
         "tooltips": [
-          "When you sell 10 items, adjacent items gain 10 value."
+          "When you sell 10 items, adjacent items gain 8 value."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "When you sell 10 items, adjacent items gain 15 value."
+          "When you sell 10 items, adjacent items gain 12 value."
         ]
       },
       "Legendary": {
@@ -31146,7 +33047,7 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "When you sell 10 items, adjacent items gain (5/10/15) value."
+      "When you sell 10 items, adjacent items gain (4/8/12) value."
     ],
     "remarks": [],
     "packId": "Pygmalien_Core"
@@ -31158,30 +33059,34 @@ const data: ParsedItemCard[] = [
     "tiers": {
       "Bronze": {
         "tooltips": [
-          "Cooldown 5 seconds",
-          "Poison 2.",
-          "When you Heal or gain Regeneration, this gains +1 Poison for the fight."
+          "Cooldown 6 seconds",
+          "Poison 6.",
+          "When you Heal or gain Regeneration, this gains +2 Poison for the fight.",
+          "When this is transformed, enchant it with Toxic if able."
         ]
       },
       "Silver": {
         "tooltips": [
-          "Cooldown 5 seconds",
-          "Poison 4.",
-          "When you Heal or gain Regeneration, this gains +2 Poison for the fight."
+          "Cooldown 6 seconds",
+          "Poison 6.",
+          "When you Heal or gain Regeneration, this gains +4 Poison for the fight.",
+          "When this is transformed, enchant it with Toxic if able."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 5 seconds",
+          "Cooldown 6 seconds",
           "Poison 6.",
-          "When you Heal or gain Regeneration, this gains +3 Poison for the fight."
+          "When you Heal or gain Regeneration, this gains +6 Poison for the fight.",
+          "When this is transformed, enchant it with Toxic if able."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 5 seconds",
-          "Poison 8.",
-          "When you Heal or gain Regeneration, this gains +4 Poison for the fight."
+          "Cooldown 6 seconds",
+          "Poison 6.",
+          "When you Heal or gain Regeneration, this gains +8 Poison for the fight.",
+          "When this is transformed, enchant it with Toxic if able."
         ]
       },
       "Legendary": {
@@ -31189,7 +33094,7 @@ const data: ParsedItemCard[] = [
       }
     },
     "tags": [
-      "Ingredient"
+      "Reagent"
     ],
     "hiddenTags": [
       "Poison",
@@ -31269,12 +33174,125 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "Cooldown 5 seconds",
-      "Poison (2/4/6/8).",
-      "When you Heal or gain Regeneration, this gains (+1/+2/+3/+4) Poison for the fight."
+      "Cooldown 6 seconds",
+      "Poison 6.",
+      "When you Heal or gain Regeneration, this gains (+2/+4/+6/+8) Poison for the fight.",
+      "When this is transformed, enchant it with Toxic if able."
     ],
     "remarks": [],
     "packId": "Mak_Core"
+  },
+  {
+    "id": "ce0ee6fc-ff37-488c-95e1-f975339dec75",
+    "name": "Pitchfork",
+    "startingTier": "Bronze",
+    "tiers": {
+      "Bronze": {
+        "tooltips": [
+          "Cooldown 10 seconds",
+          "Deal 50 damage.",
+          "At the start of each day, get a Truffle. If you have a Property, get a second Truffle."
+        ]
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 10 seconds",
+          "Deal 75 damage.",
+          "At the start of each day, get a Truffle. If you have a Property, get a second Truffle."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 10 seconds",
+          "Deal 100 damage.",
+          "At the start of each day, get a Truffle. If you have a Property, get a second Truffle."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 10 seconds",
+          "Deal 125 damage.",
+          "At the start of each day, get a Truffle. If you have a Property, get a second Truffle."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Weapon",
+      "Tool"
+    ],
+    "hiddenTags": [
+      "Damage"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Pygmalien"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "...and Enchant the item with Heavy if able."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "...and Enchant the item with Icy if able."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "...and Enchant the item with Turbo if able."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "...and Enchant the item with Shielded if able."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "...and Enchant the item with Restorative if able."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "...and Enchant the item with Toxic if able."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "...and Enchant the item with Fiery if able."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "...and Enchant the item with Deadly if able."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "...and Enchant the item with Obsidian if able."
+        ]
+      }
+    ],
+    "unifiedTooltips": [
+      "Cooldown 10 seconds",
+      "Deal (50/75/100/125) damage.",
+      "At the start of each day, get a Truffle. If you have a Property, get a second Truffle."
+    ],
+    "remarks": [],
+    "packId": "Pygmalien_Core"
   },
   {
     "id": "012658f4-b289-4f10-917c-a9a1f3f9ca03",
@@ -31287,21 +33305,21 @@ const data: ParsedItemCard[] = [
       "Silver": {
         "tooltips": [
           "Cooldown 9 seconds",
-          "Freeze 1 item for 1 second(s).",
+          "Freeze 1 item(s) for 1 second(s).",
           "When you use another non-weapon item, charge this 1 second(s)."
         ]
       },
       "Gold": {
         "tooltips": [
           "Cooldown 9 seconds",
-          "Freeze 1 item for 2 second(s).",
+          "Freeze 2 item(s) for 1 second(s).",
           "When you use another non-weapon item, charge this 1 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 9 seconds",
-          "Freeze 1 item for 3 second(s).",
+          "Freeze 3 item(s) for 1 second(s).",
           "When you use another non-weapon item, charge this 1 second(s)."
         ]
       },
@@ -31310,7 +33328,8 @@ const data: ParsedItemCard[] = [
       }
     },
     "tags": [
-      "Vehicle"
+      "Vehicle",
+      "Food"
     ],
     "hiddenTags": [
       "Freeze",
@@ -31370,6 +33389,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Deadly",
+        "tooltips": [
+          "Your Non-Weapon items have +30% Crit Chance."
+        ]
+      },
+      {
         "type": "Radiant",
         "tooltips": [
           "This cannot be Frozen, Slowed or Destroyed."
@@ -31384,7 +33409,7 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 9 seconds",
-      "Freeze 1 item for (1/2/3) second(s).",
+      "Freeze (1/2/3) item(s) for 1 second(s).",
       "When you use another non-weapon item, charge this 1 second(s)."
     ],
     "remarks": [],
@@ -31753,7 +33778,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "Double Health Max"
+          "This has double Max Health bonus."
         ]
       },
       {
@@ -31821,55 +33846,55 @@ const data: ParsedItemCard[] = [
       {
         "type": "Heavy",
         "tooltips": [
-          "When you sell this, your leftmost Slow item gains +1 Slow duration."
+          "When you sell this, your leftmost Slow item gains +0.2 Slow duration."
         ]
       },
       {
         "type": "Icy",
         "tooltips": [
-          "When you sell this, your leftmost Freeze item gains +0.2 Freeze duration."
+          "When you sell this, your leftmost Freeze item gains +0.1 Freeze duration."
         ]
       },
       {
         "type": "Turbo",
         "tooltips": [
-          "When you sell this, your leftmost Haste item gains +1 Haste duration."
+          "When you sell this, your leftmost Haste item gains +0.2 Haste duration."
         ]
       },
       {
         "type": "Shielded",
         "tooltips": [
-          "When you sell this, your leftmost Shield item gains +20 Shield."
+          "When you sell this, your leftmost Shield item gains +10 Shield."
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "When you sell this, your leftmost Heal item gains +30 Heal."
+          "When you sell this, your leftmost Heal item gains +15 Heal."
         ]
       },
       {
         "type": "Toxic",
         "tooltips": [
-          "When you sell this, your leftmost Poison item gains +2 Poison."
+          "When you sell this, your leftmost Poison item gains +1 Poison."
         ]
       },
       {
         "type": "Fiery",
         "tooltips": [
-          "When you sell this, your leftmost Burn item gains +2 Burn."
+          "When you sell this, your leftmost Burn item gains +1 Burn."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "When you sell this, your leftmost item gains 10% Crit Chance."
+          "When you sell this, your leftmost item gains 2% Crit Chance."
         ]
       },
       {
         "type": "Obsidian",
         "tooltips": [
-          "When you sell this, your leftmost Weapon item gains +20 damage."
+          "When you sell this, your leftmost Weapon item gains +10 damage."
         ]
       }
     ],
@@ -31938,7 +33963,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Turbo",
         "tooltips": [
-          "Haste the Weapon to the right for 1 second(s)."
+          "Haste the Weapon to the right of this for 1 second(s)."
         ]
       },
       {
@@ -32247,29 +34272,29 @@ const data: ParsedItemCard[] = [
       "Bronze": {
         "tooltips": [
           "Cooldown 5 seconds",
-          "Deal 12 damage.",
-          "Your Weapons gain +3 damage for the fight."
+          "Deal 10 damage.",
+          "Your Weapons gain +10 damage for the fight."
         ]
       },
       "Silver": {
         "tooltips": [
           "Cooldown 5 seconds",
-          "Deal 18 damage.",
-          "Your Weapons gain +6 damage for the fight."
+          "Deal 20 damage.",
+          "Your Weapons gain +20 damage for the fight."
         ]
       },
       "Gold": {
         "tooltips": [
           "Cooldown 5 seconds",
-          "Deal 24 damage.",
-          "Your Weapons gain +9 damage for the fight."
+          "Deal 30 damage.",
+          "Your Weapons gain +30 damage for the fight."
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 5 seconds",
-          "Deal 30 damage.",
-          "Your Weapons gain +12 damage for the fight."
+          "Deal 40 damage.",
+          "Your Weapons gain +40 damage for the fight."
         ]
       },
       "Legendary": {
@@ -32361,8 +34386,8 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
-      "Deal (12/18/24/30) damage.",
-      "Your Weapons gain (+3/+6/+9/+12) damage for the fight."
+      "Deal (10/20/30/40) damage.",
+      "Your Weapons gain (+10/+20/+30/+40) damage for the fight."
     ],
     "remarks": [],
     "packId": "Vanessa_Core"
@@ -32488,30 +34513,30 @@ const data: ParsedItemCard[] = [
     "tiers": {
       "Bronze": {
         "tooltips": [
-          "Cooldown 9 seconds",
+          "Cooldown 8 seconds",
           "Deal 5 damage.",
-          "When you heal, this gains 3 damage for the fight."
+          "When you heal, this gains 5 damage for the fight."
         ]
       },
       "Silver": {
         "tooltips": [
-          "Cooldown 9 seconds",
+          "Cooldown 8 seconds",
           "Deal 10 damage.",
-          "When you heal, this gains 6 damage for the fight."
+          "When you heal, this gains 10 damage for the fight."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 9 seconds",
-          "Deal 20 damage.",
-          "When you heal, this gains 9 damage for the fight."
+          "Cooldown 8 seconds",
+          "Deal 15 damage.",
+          "When you heal, this gains 15 damage for the fight."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 9 seconds",
-          "Deal 40 damage.",
-          "When you heal, this gains 12 damage for the fight."
+          "Cooldown 8 seconds",
+          "Deal 20 damage.",
+          "When you heal, this gains 20 damage for the fight."
         ]
       },
       "Legendary": {
@@ -32598,9 +34623,9 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "Cooldown 9 seconds",
-      "Deal (5/10/20/40) damage.",
-      "When you heal, this gains (3/6/9/12) damage for the fight."
+      "Cooldown 8 seconds",
+      "Deal (5/10/15/20) damage.",
+      "When you heal, this gains (5/10/15/20) damage for the fight."
     ],
     "remarks": [],
     "packId": "Pygmalien_Core"
@@ -32971,14 +34996,14 @@ const data: ParsedItemCard[] = [
       "Gold": {
         "tooltips": [
           "Cooldown 7 seconds",
-          "Freeze 1 small item for 1 second(s).",
+          "Freeze 1 item(s) for 1 second(s).",
           "When you use the Core or another Ray, charge this 1 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 7 seconds",
-          "Freeze 1 small item for 2 second(s).",
+          "Freeze 2 item(s) for 1 second(s).",
           "When you use the Core or another Ray, charge this 1 second(s)."
         ]
       },
@@ -33060,7 +35085,7 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
-      "Freeze 1 small item for (1/2) second(s).",
+      "Freeze (1/2) item(s) for 1 second(s).",
       "When you use the Core or another Ray, charge this 1 second(s)."
     ],
     "remarks": [],
@@ -33443,6 +35468,131 @@ const data: ParsedItemCard[] = [
     "packId": "Vanessa_Core"
   },
   {
+    "id": "7ccaa9ae-c915-49f2-863a-aa333c41b7fb",
+    "name": "Seadog's Saloon",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Haste 1 item for 2 second(s).",
+          "Slow 1 item for 2 second(s).",
+          "This has +1 Multicast for each Friend you have."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Haste 1 item for 2 second(s).",
+          "Slow 1 item for 2 second(s).",
+          "This has +1 Multicast for each Friend you have."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Haste 1 item for 2 second(s).",
+          "Slow 1 item for 2 second(s).",
+          "This has +1 Multicast for each Friend you have."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Aquatic",
+      "Property"
+    ],
+    "hiddenTags": [
+      "Haste",
+      "Slow"
+    ],
+    "size": "Large",
+    "heroes": [
+      "Vanessa"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "This has double Slow duration."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze 1 item for 1 second(s)."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "This has double Haste duration."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield 30."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal 45."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison 3."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn 4."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "Your Friends have +25% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal 30 Damage."
+        ]
+      }
+    ],
+    "unifiedTooltips": [
+      "Cooldown (6/5/4) seconds",
+      "Haste 1 item for 2 second(s).",
+      "Slow 1 item for 2 second(s).",
+      "This has +1 Multicast for each Friend you have."
+    ],
+    "remarks": [],
+    "packId": "Vanessa_The_Gang"
+  },
+  {
     "id": "bf90b501-0d87-49ae-a82a-5941db70179c",
     "name": "Weather Machine",
     "startingTier": "Gold",
@@ -33571,34 +35721,34 @@ const data: ParsedItemCard[] = [
     "tiers": {
       "Bronze": {
         "tooltips": [
-          "Cooldown 7 seconds",
-          "Burn 4.",
-          "Reload your Potions 1 Ammo and Charge them 1 second(s).",
-          "At the start of each day, get a Small Potion item."
+          "Cooldown 5 seconds",
+          "Reload your items.",
+          "When you use a Potion, Burn 2.",
+          "At the start of each day, get a Small Potion."
         ]
       },
       "Silver": {
         "tooltips": [
-          "Cooldown 7 seconds",
-          "Burn 6.",
-          "Reload your Potions 1 Ammo and Charge them 1 second(s).",
-          "At the start of each day, get a Small Potion item."
+          "Cooldown 5 seconds",
+          "Reload your items.",
+          "When you use a Potion, Burn 4.",
+          "At the start of each day, get a Small Potion."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 7 seconds",
-          "Burn 8.",
-          "Reload your Potions 1 Ammo and Charge them 1 second(s).",
-          "At the start of each day, get a Small Potion item."
+          "Cooldown 5 seconds",
+          "Reload your items.",
+          "When you use a Potion, Burn 6.",
+          "At the start of each day, get a Small Potion."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 7 seconds",
-          "Burn 10.",
-          "Reload your Potions 1 Ammo and Charge them 1 second(s).",
-          "At the start of each day, get a Small Potion item."
+          "Cooldown 5 seconds",
+          "Reload your items.",
+          "When you use a Potion, Burn 8.",
+          "At the start of each day, get a Small Potion."
         ]
       },
       "Legendary": {
@@ -33621,37 +35771,37 @@ const data: ParsedItemCard[] = [
       {
         "type": "Heavy",
         "tooltips": [
-          "Slow 3 items for 2 second(s)."
+          "When you use a Potion, Slow 1 item for 2 second(s)."
         ]
       },
       {
         "type": "Icy",
         "tooltips": [
-          "Freeze 1 item for 3 second(s)."
+          "When you use a Potion, Freeze 1 item for 1 second(s)."
         ]
       },
       {
         "type": "Turbo",
         "tooltips": [
-          "Haste 3 items for 2 second(s)."
+          "When you use a Potion, Haste 1 item for 2 second(s)."
         ]
       },
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 10 times this item's Burn."
+          "When you use a Potion, Shield equal to 10 times this item's Burn."
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 10 times this item's Burn."
+          "When you use a Potion, Heal equal to 10 times this item's Burn."
         ]
       },
       {
         "type": "Toxic",
         "tooltips": [
-          "Poison equal to this item's Burn."
+          "When you use a Potion, Poison equal to this item's Burn."
         ]
       },
       {
@@ -33669,7 +35819,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "Your Potions have +25% Crit Chance."
         ]
       },
       {
@@ -33681,15 +35831,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal damage equal to 10 times this item's Burn."
+          "When you use a Potion, deal damage equal to 10 times this item's Burn."
         ]
       }
     ],
     "unifiedTooltips": [
-      "Cooldown 7 seconds",
-      "Burn (4/6/8/10).",
-      "Reload your Potions 1 Ammo and Charge them 1 second(s).",
-      "At the start of each day, get a Small Potion item."
+      "Cooldown 5 seconds",
+      "Reload your items.",
+      "When you use a Potion, Burn (2/4/6/8).",
+      "At the start of each day, get a Small Potion."
     ],
     "remarks": [],
     "packId": "Mak_Core"
@@ -34769,6 +36919,131 @@ const data: ParsedItemCard[] = [
     "packId": "Core"
   },
   {
+    "id": "41bc6bab-d7a6-42e4-9815-546de8640d4e",
+    "name": "Dooltron",
+    "startingTier": "Gold",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 30 seconds",
+          "Deal 1000 damage.",
+          "When you Haste, Slow, Poison, Freeze, or Burn, charge this 1 second(s).",
+          "When you use a Friend, Shield 100."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 30 seconds",
+          "Deal 2000 damage.",
+          "When you Haste, Slow, Poison, Freeze, or Burn, charge this 2 second(s).",
+          "When you use a Friend, Shield 200."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Friend",
+      "Weapon"
+    ],
+    "hiddenTags": [
+      "PoisonReference",
+      "FreezeReference",
+      "BurnReference",
+      "HasteReference",
+      "SlowReference",
+      "Damage",
+      "Charge"
+    ],
+    "size": "Large",
+    "heroes": [
+      "Dooley"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 3 items for 10 second(s)."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze 1 item for 15 second(s)."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 3 items for 10 second(s)."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield equal to this item's damage."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to this item's damage."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to 10% of this item's damage."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn equal to 10% of this item's damage."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "This has double Damage."
+        ]
+      }
+    ],
+    "unifiedTooltips": [
+      "Cooldown 30 seconds",
+      "Deal (1000/2000) damage.",
+      "When you Haste, Slow, Poison, Freeze, or Burn, charge this (1/2) second(s).",
+      "When you use a Friend, Shield (100/200)."
+    ],
+    "remarks": [],
+    "packId": "Dooley_Dooltron"
+  },
+  {
     "id": "f1c04562-6db4-45d5-a056-a4df9d185faf",
     "name": "Salt",
     "startingTier": "Silver",
@@ -35013,34 +37288,30 @@ const data: ParsedItemCard[] = [
     "tiers": {
       "Bronze": {
         "tooltips": [
-          "Cooldown 4 seconds",
+          "Cooldown 5 seconds",
           "Ammo 1",
-          "Poison both players 4.",
-          "Gain Regeneration for the fight equal to half your current Poison."
+          "Poison 3."
         ]
       },
       "Silver": {
         "tooltips": [
-          "Cooldown 4 seconds",
+          "Cooldown 5 seconds",
           "Ammo 1",
-          "Poison both players 6.",
-          "Gain Regeneration for the fight equal to half your current Poison."
+          "Poison 6."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 4 seconds",
+          "Cooldown 5 seconds",
           "Ammo 1",
-          "Poison both players 8.",
-          "Gain Regeneration for the fight equal to half your current Poison."
+          "Poison 9."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 4 seconds",
+          "Cooldown 5 seconds",
           "Ammo 1",
-          "Poison both players 10.",
-          "Gain Regeneration for the fight equal to half your current Poison."
+          "Poison 12."
         ]
       },
       "Legendary": {
@@ -35052,7 +37323,6 @@ const data: ParsedItemCard[] = [
     ],
     "hiddenTags": [
       "Poison",
-      "Regen",
       "Ammo"
     ],
     "size": "Small",
@@ -35087,7 +37357,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Restorative",
         "tooltips": [
-          "This has double Regeneration."
+          "Heal equal to 10 times this item's Poison."
         ]
       },
       {
@@ -35128,10 +37398,9 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "Cooldown 4 seconds",
+      "Cooldown 5 seconds",
       "Ammo 1",
-      "Poison both players (4/6/8/10).",
-      "Gain Regeneration for the fight equal to half your current Poison."
+      "Poison (3/6/9/12)."
     ],
     "remarks": [],
     "packId": "Mak_Core"
@@ -35488,7 +37757,7 @@ const data: ParsedItemCard[] = [
       "Bronze": {
         "tooltips": [
           "Cooldown 10 seconds",
-          "Slow 1 item for 1 second(s).",
+          "Slow 1 item(s) for 1 second(s).",
           "At the start of each fight, use this."
         ]
       },
@@ -35610,15 +37879,15 @@ const data: ParsedItemCard[] = [
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 6 seconds",
-          "Slow 1 item for 1 second(s).",
+          "Cooldown 5 seconds",
+          "Slow 1 item(s) for 2 second(s).",
           "This has +1 Multicast for each Weapon or friend your enemy has."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 6 seconds",
-          "Slow 1 item for 2 second(s).",
+          "Cooldown 5 seconds",
+          "Slow 1 item(s) for 3 second(s).",
           "This has +1 Multicast for each Weapon or friend your enemy has."
         ]
       },
@@ -35697,8 +37966,8 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "Cooldown 6 seconds",
-      "Slow 1 item for (1/2) second(s).",
+      "Cooldown 5 seconds",
+      "Slow 1 item(s) for (2/3) second(s).",
       "This has +1 Multicast for each Weapon or friend your enemy has."
     ],
     "remarks": [],
@@ -35828,28 +38097,28 @@ const data: ParsedItemCard[] = [
       "Bronze": {
         "tooltips": [
           "Cooldown 5 seconds",
-          "Haste another item for 1 second(s).",
+          "Haste 1 item for 1 second(s).",
           "Slow 1 item for 1 second(s)."
         ]
       },
       "Silver": {
         "tooltips": [
           "Cooldown 5 seconds",
-          "Haste another item for 2 second(s).",
+          "Haste 1 item for 2 second(s).",
           "Slow 1 item for 2 second(s)."
         ]
       },
       "Gold": {
         "tooltips": [
           "Cooldown 5 seconds",
-          "Haste another item for 3 second(s).",
+          "Haste 1 item for 3 second(s).",
           "Slow 1 item for 3 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 5 seconds",
-          "Haste another item for 4 second(s).",
+          "Haste 1 item for 4 second(s).",
           "Slow 1 item for 4 second(s)."
         ]
       },
@@ -35938,7 +38207,7 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
-      "Haste another item for (1/2/3/4) second(s).",
+      "Haste 1 item for (1/2/3/4) second(s).",
       "Slow 1 item for (1/2/3/4) second(s)."
     ],
     "remarks": [],
@@ -36136,21 +38405,21 @@ const data: ParsedItemCard[] = [
       "Silver": {
         "tooltips": [
           "Cooldown 8 seconds",
-          "Deal 75 damage.",
+          "Deal 100 damage.",
           "When you Shield, Charge this 2 second(s)."
         ]
       },
       "Gold": {
         "tooltips": [
           "Cooldown 8 seconds",
-          "Deal 100 damage.",
+          "Deal 150 damage.",
           "When you Shield, Charge this 2 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 8 seconds",
-          "Deal 125 damage.",
+          "Deal 200 damage.",
           "When you Shield, Charge this 2 second(s)."
         ]
       },
@@ -36240,7 +38509,7 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 8 seconds",
-      "Deal (50/75/100/125) damage.",
+      "Deal (50/100/150/200) damage.",
       "When you Shield, Charge this 2 second(s)."
     ],
     "remarks": [],
@@ -36499,7 +38768,7 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Cooldown 7 seconds",
           "Ammo 6",
-          "Deal 60 damage.",
+          "Deal 90 damage.",
           "When you use another Ammo item, charge this 2 second(s)."
         ]
       },
@@ -36507,7 +38776,7 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Cooldown 7 seconds",
           "Ammo 6",
-          "Deal 60 damage.",
+          "Deal 120 damage.",
           "When you use another Ammo item, charge this 3 second(s)."
         ]
       },
@@ -36597,7 +38866,7 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Ammo 6",
-      "Deal 60 damage.",
+      "Deal (60/90/120) damage.",
       "When you use another Ammo item, charge this (1/2/3) second(s)."
     ],
     "remarks": [],
@@ -36733,134 +39002,6 @@ const data: ParsedItemCard[] = [
     "packId": "Dooley_Core"
   },
   {
-    "id": "9d289951-bda7-4f74-a5cf-dbe350c0cae5",
-    "name": "Lumboars",
-    "startingTier": "Bronze",
-    "tiers": {
-      "Bronze": {
-        "tooltips": [
-          "Cooldown 9 seconds",
-          "Multicast 2",
-          "Deal 5 damage.",
-          "Your weapons gain 2 damage for the fight."
-        ]
-      },
-      "Silver": {
-        "tooltips": [
-          "Cooldown 9 seconds",
-          "Multicast 2",
-          "Deal 10 damage.",
-          "Your weapons gain 4 damage for the fight."
-        ]
-      },
-      "Gold": {
-        "tooltips": [
-          "Cooldown 9 seconds",
-          "Multicast 2",
-          "Deal 20 damage.",
-          "Your weapons gain 6 damage for the fight."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "Cooldown 9 seconds",
-          "Multicast 2",
-          "Deal 40 damage.",
-          "Your weapons gain 8 damage for the fight."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [
-      "Weapon"
-    ],
-    "hiddenTags": [
-      "Damage"
-    ],
-    "size": "Medium",
-    "heroes": [
-      "Pygmalien"
-    ],
-    "enchantments": [
-      {
-        "type": "Heavy",
-        "tooltips": [
-          "Slow 2 items for 1 second(s)."
-        ]
-      },
-      {
-        "type": "Icy",
-        "tooltips": [
-          "Freeze 1 medium or small item for 1 second(s)."
-        ]
-      },
-      {
-        "type": "Turbo",
-        "tooltips": [
-          "Haste 2 items for 1 second(s)."
-        ]
-      },
-      {
-        "type": "Shielded",
-        "tooltips": [
-          "Shield equal to this item's damage."
-        ]
-      },
-      {
-        "type": "Restorative",
-        "tooltips": [
-          "Heal equal to this item's Damage."
-        ]
-      },
-      {
-        "type": "Toxic",
-        "tooltips": [
-          "Poison equal to 10% of this item's damage."
-        ]
-      },
-      {
-        "type": "Fiery",
-        "tooltips": [
-          "Burn equal to 10% of this item's damage."
-        ]
-      },
-      {
-        "type": "Shiny",
-        "tooltips": [
-          "This has +1 Multicast."
-        ]
-      },
-      {
-        "type": "Deadly",
-        "tooltips": [
-          "+50% Crit Chance"
-        ]
-      },
-      {
-        "type": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
-        "type": "Obsidian",
-        "tooltips": [
-          "This has double Damage."
-        ]
-      }
-    ],
-    "unifiedTooltips": [
-      "Cooldown 9 seconds",
-      "Multicast 2",
-      "Deal (5/10/20/40) damage.",
-      "Your weapons gain (2/4/6/8) damage for the fight."
-    ],
-    "remarks": [],
-    "packId": "Pygmalien_Core"
-  },
-  {
     "id": "6ada601b-88a5-4eaf-8813-805bd51c7f9b",
     "name": "Regal Blade",
     "startingTier": "Bronze",
@@ -36985,6 +39126,134 @@ const data: ParsedItemCard[] = [
       "Cooldown 7 seconds",
       "Deal (10/20/40/80) damage.",
       "When you sell a Weapon, this gains (10/20/30/40) damage."
+    ],
+    "remarks": [],
+    "packId": "Pygmalien_Core"
+  },
+  {
+    "id": "9d289951-bda7-4f74-a5cf-dbe350c0cae5",
+    "name": "Lumboars",
+    "startingTier": "Bronze",
+    "tiers": {
+      "Bronze": {
+        "tooltips": [
+          "Cooldown 7 seconds",
+          "Multicast 2",
+          "Deal 10 damage.",
+          "Your weapons gain 5 damage for the fight."
+        ]
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 7 seconds",
+          "Multicast 2",
+          "Deal 10 damage.",
+          "Your weapons gain 10 damage for the fight."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 7 seconds",
+          "Multicast 2",
+          "Deal 10 damage.",
+          "Your weapons gain 15 damage for the fight."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 7 seconds",
+          "Multicast 2",
+          "Deal 10 damage.",
+          "Your weapons gain 20 damage for the fight."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Weapon"
+    ],
+    "hiddenTags": [
+      "Damage"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Pygmalien"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 2 items for 1 second(s)."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze 1 medium or small item for 1 second(s)."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 2 items for 1 second(s)."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield equal to this item's damage."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to this item's Damage."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to 10% of this item's damage."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn equal to 10% of this item's damage."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "This has double Damage."
+        ]
+      }
+    ],
+    "unifiedTooltips": [
+      "Cooldown 7 seconds",
+      "Multicast 2",
+      "Deal 10 damage.",
+      "Your weapons gain (5/10/15/20) damage for the fight."
     ],
     "remarks": [],
     "packId": "Pygmalien_Core"
@@ -37246,21 +39515,21 @@ const data: ParsedItemCard[] = [
       "Silver": {
         "tooltips": [
           "Cooldown 7 seconds",
-          "Freeze 1 item for 1 second(s).",
+          "Freeze 1 item(s) for 1 second(s).",
           "When you use a Property, Charge this 1 second(s)."
         ]
       },
       "Gold": {
         "tooltips": [
           "Cooldown 7 seconds",
-          "Freeze 1 item for 2 second(s).",
+          "Freeze 1 item(s) for 2 second(s).",
           "When you use a Property, Charge this 1 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 7 seconds",
-          "Freeze 1 item for 3 second(s).",
+          "Freeze 1 item(s) for 3 second(s).",
           "When you use a Property, Charge this 1 second(s)."
         ]
       },
@@ -37348,7 +39617,7 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
-      "Freeze 1 item for (1/2/3) second(s).",
+      "Freeze 1 item(s) for (1/2/3) second(s).",
       "When you use a Property, Charge this 1 second(s)."
     ],
     "remarks": [],
@@ -37482,25 +39751,25 @@ const data: ParsedItemCard[] = [
       "Silver": {
         "tooltips": [
           "Cooldown 11 seconds",
-          "Gain 2 Regeneration for the fight.",
+          "Deal damage equal to the Regeneration plus the Burn on both players.",
           "Burn equal to your Regeneration.",
-          "Deal damage equal to the Regeneration plus the Burn on both players."
+          "You have +4 Regeneration."
         ]
       },
       "Gold": {
         "tooltips": [
           "Cooldown 11 seconds",
-          "Gain 4 Regeneration for the fight.",
+          "Deal damage equal to the Regeneration plus the Burn on both players.",
           "Burn equal to your Regeneration.",
-          "Deal damage equal to the Regeneration plus the Burn on both players."
+          "You have +8 Regeneration."
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 11 seconds",
-          "Gain 6 Regeneration for the fight.",
+          "Deal damage equal to the Regeneration plus the Burn on both players.",
           "Burn equal to your Regeneration.",
-          "Deal damage equal to the Regeneration plus the Burn on both players."
+          "You have +12 Regeneration."
         ]
       },
       "Legendary": {
@@ -37548,7 +39817,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Restorative",
         "tooltips": [
-          "This has double Regeneration."
+          "Heal equal to this item's Damage."
         ]
       },
       {
@@ -37590,9 +39859,9 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 11 seconds",
-      "Gain (2/4/6) Regeneration for the fight.",
+      "Deal damage equal to the Regeneration plus the Burn on both players.",
       "Burn equal to your Regeneration.",
-      "Deal damage equal to the Regeneration plus the Burn on both players."
+      "You have (+4/+8/+12) Regeneration."
     ],
     "remarks": [],
     "packId": "Mak_Core"
@@ -37723,30 +39992,34 @@ const data: ParsedItemCard[] = [
   {
     "id": "cb519fbf-1f2c-4dd1-ba9b-3dc031fd7cbe",
     "name": "Refractor",
-    "startingTier": "Silver",
+    "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
-        "tooltips": []
-      },
-      "Silver": {
         "tooltips": [
-          "Cooldown 8 seconds",
+          "Cooldown 6 seconds",
           "Deal 20 damage.",
           "When you Slow, Freeze, Burn or Poison, this gains 10 damage for the fight."
         ]
       },
-      "Gold": {
+      "Silver": {
         "tooltips": [
-          "Cooldown 8 seconds",
+          "Cooldown 6 seconds",
           "Deal 20 damage.",
           "When you Slow, Freeze, Burn or Poison, this gains 20 damage for the fight."
         ]
       },
-      "Diamond": {
+      "Gold": {
         "tooltips": [
-          "Cooldown 8 seconds",
+          "Cooldown 6 seconds",
           "Deal 20 damage.",
           "When you Slow, Freeze, Burn or Poison, this gains 30 damage for the fight."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Deal 20 damage.",
+          "When you Slow, Freeze, Burn or Poison, this gains 40 damage for the fight."
         ]
       },
       "Legendary": {
@@ -37836,9 +40109,9 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "Cooldown 8 seconds",
+      "Cooldown 6 seconds",
       "Deal 20 damage.",
-      "When you Slow, Freeze, Burn or Poison, this gains (10/20/30) damage for the fight."
+      "When you Slow, Freeze, Burn or Poison, this gains (10/20/30/40) damage for the fight."
     ],
     "remarks": [],
     "packId": "Mak_Core"
@@ -37846,24 +40119,26 @@ const data: ParsedItemCard[] = [
   {
     "id": "dc3bf5cb-45fa-46c7-9a0e-3f3bfb01697d",
     "name": "Sharpening Stone",
-    "startingTier": "Silver",
+    "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
-        "tooltips": []
-      },
-      "Silver": {
         "tooltips": [
           "When you sell this, your leftmost Weapon gains 5 Damage."
         ]
       },
-      "Gold": {
+      "Silver": {
         "tooltips": [
           "When you sell this, your leftmost Weapon gains 10 Damage."
         ]
       },
-      "Diamond": {
+      "Gold": {
         "tooltips": [
           "When you sell this, your leftmost Weapon gains 15 Damage."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "When you sell this, your leftmost Weapon gains 20 Damage."
         ]
       },
       "Legendary": {
@@ -37884,49 +40159,49 @@ const data: ParsedItemCard[] = [
       {
         "type": "Heavy",
         "tooltips": [
-          "When you sell this, your leftmost Slow item gains +1 Slow duration."
+          "When you sell this, your leftmost Slow item gains +0.2 Slow duration."
         ]
       },
       {
         "type": "Icy",
         "tooltips": [
-          "When you sell this, your leftmost Freeze item gains +0.2 Freeze duration."
+          "When you sell this, your leftmost Freeze item gains +0.1 Freeze duration."
         ]
       },
       {
         "type": "Turbo",
         "tooltips": [
-          "When you sell this, your leftmost Haste item gains +1 Haste duration."
+          "When you sell this, your leftmost Haste item gains +0.2 Haste duration."
         ]
       },
       {
         "type": "Shielded",
         "tooltips": [
-          "When you sell this, your leftmost Shield item gains +20 Shield."
+          "When you sell this, your leftmost Shield item gains +10 Shield."
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "When you sell this, your leftmost Heal item gains +30 Heal."
+          "When you sell this, your leftmost Heal item gains +15 Heal."
         ]
       },
       {
         "type": "Toxic",
         "tooltips": [
-          "When you sell this, your leftmost Poison item gains +2 Poison."
+          "When you sell this, your leftmost Poison item gains +1 Poison."
         ]
       },
       {
         "type": "Fiery",
         "tooltips": [
-          "When you sell this, your leftmost Burn item gains +2 Burn."
+          "When you sell this, your leftmost Burn item gains +1 Burn."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "When you sell this, your leftmost item gains 10% Crit Chance."
+          "When you sell this, your leftmost item gains 2% Crit Chance."
         ]
       },
       {
@@ -37937,7 +40212,7 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "When you sell this, your leftmost Weapon gains (5/10/15) Damage."
+      "When you sell this, your leftmost Weapon gains (5/10/15/20) Damage."
     ],
     "remarks": [],
     "packId": "Core"
@@ -38300,19 +40575,19 @@ const data: ParsedItemCard[] = [
       {
         "type": "Heavy",
         "tooltips": [
-          "Slow 1 item for 2 second(s)."
+          "Slow 1 item for 1 second(s)."
         ]
       },
       {
         "type": "Icy",
         "tooltips": [
-          "Freeze 1 item for 1 second(s)."
+          "Freeze 1 item for 0.5 second(s)."
         ]
       },
       {
         "type": "Turbo",
         "tooltips": [
-          "Haste 1 item for 2 second(s)."
+          "Haste 1 item for 1 second(s)."
         ]
       },
       {
@@ -38486,115 +40761,6 @@ const data: ParsedItemCard[] = [
     "packId": "Dooley_Core"
   },
   {
-    "id": "905f9340-4272-4f82-88e4-4a2f79f1be96",
-    "name": "Disguise",
-    "startingTier": "Silver",
-    "tiers": {
-      "Bronze": {
-        "tooltips": []
-      },
-      "Silver": {
-        "tooltips": [
-          "When you buy this, get a non-Vanessa item.",
-          "Your items from other Heroes have +15% Crit Chance."
-        ]
-      },
-      "Gold": {
-        "tooltips": [
-          "When you buy this, get a non-Vanessa item.",
-          "Your items from other Heroes have +30% Crit Chance."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "When you buy this, get a non-Vanessa item.",
-          "Your items from other Heroes have +50% Crit Chance."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [
-      "Apparel"
-    ],
-    "hiddenTags": [
-      "Crit"
-    ],
-    "size": "Medium",
-    "heroes": [
-      "Vanessa"
-    ],
-    "enchantments": [
-      {
-        "type": "Heavy",
-        "tooltips": [
-          "When you use an item from another hero, Slow 1 item for 3 second(s)."
-        ]
-      },
-      {
-        "type": "Icy",
-        "tooltips": [
-          "When you use an item from another hero, Freeze 1 medium or small item for 1 second(s)."
-        ]
-      },
-      {
-        "type": "Turbo",
-        "tooltips": [
-          "When you use an item from another hero, haste it for 3 second(s)."
-        ]
-      },
-      {
-        "type": "Shielded",
-        "tooltips": [
-          "When you use an item from another hero, shield 20."
-        ]
-      },
-      {
-        "type": "Restorative",
-        "tooltips": [
-          "When you use an item from another hero, heal 30."
-        ]
-      },
-      {
-        "type": "Toxic",
-        "tooltips": [
-          "When you use an item from another hero, poison 2."
-        ]
-      },
-      {
-        "type": "Fiery",
-        "tooltips": [
-          "When you use an item from another hero, burn 3."
-        ]
-      },
-      {
-        "type": "Deadly",
-        "tooltips": [
-          "This has double Crit Chance bonus."
-        ]
-      },
-      {
-        "type": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
-        "type": "Obsidian",
-        "tooltips": [
-          "When you use an item from another hero, Deal 20 Damage."
-        ]
-      }
-    ],
-    "unifiedTooltips": [
-      "When you buy this, get a non-Vanessa item.",
-      "Your items from other Heroes have (+15%/+30%/+50%) Crit Chance."
-    ],
-    "remarks": [],
-    "packId": "Vanessa_Core"
-  },
-  {
     "id": "189575f2-cf55-44ee-a70b-362ce75c9c9e",
     "name": "Wallace",
     "startingTier": "Bronze",
@@ -38716,6 +40882,115 @@ const data: ParsedItemCard[] = [
     ],
     "remarks": [],
     "packId": "Dooley_Core"
+  },
+  {
+    "id": "905f9340-4272-4f82-88e4-4a2f79f1be96",
+    "name": "Disguise",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "When you buy this, get a non-Vanessa item.",
+          "Your items from other Heroes have +15% Crit Chance."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "When you buy this, get a non-Vanessa item.",
+          "Your items from other Heroes have +30% Crit Chance."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "When you buy this, get a non-Vanessa item.",
+          "Your items from other Heroes have +50% Crit Chance."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Apparel"
+    ],
+    "hiddenTags": [
+      "Crit"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Vanessa"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "When you use an item from another hero, Slow 1 item for 3 second(s)."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "When you use an item from another hero, Freeze 1 medium or small item for 1 second(s)."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "When you use an item from another hero, haste it for 3 second(s)."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "When you use an item from another hero, shield 20."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "When you use an item from another hero, heal 30."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "When you use an item from another hero, poison 2."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "When you use an item from another hero, burn 3."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "This has double Crit Chance bonus."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "When you use an item from another hero, Deal 20 Damage."
+        ]
+      }
+    ],
+    "unifiedTooltips": [
+      "When you buy this, get a non-Vanessa item.",
+      "Your items from other Heroes have (+15%/+30%/+50%) Crit Chance."
+    ],
+    "remarks": [],
+    "packId": "Vanessa_Core"
   },
   {
     "id": "2fd61ab1-d256-4d43-8691-c6f730b41c67",
@@ -39345,19 +41620,19 @@ const data: ParsedItemCard[] = [
       "Silver": {
         "tooltips": [
           "When your enemy uses a weapon, charge your Busy Bees 2 second(s).",
-          "When you buy a Property, get a Busy Bee and your Busy Bees gain +5 damage."
+          "When you buy a Property, get a Busy Bee and your Busy Bees gain +10 damage."
         ]
       },
       "Gold": {
         "tooltips": [
           "When your enemy uses a weapon, charge your Busy Bees 2 second(s).",
-          "When you buy a Property, get a Busy Bee and your Busy Bees gain +10 damage."
+          "When you buy a Property, get a Busy Bee and your Busy Bees gain +20 damage."
         ]
       },
       "Diamond": {
         "tooltips": [
           "When your enemy uses a weapon, charge your Busy Bees 2 second(s).",
-          "When you buy a Property, get a Busy Bee and your Busy Bees gain +15 damage."
+          "When you buy a Property, get a Busy Bee and your Busy Bees gain +30 damage."
         ]
       },
       "Legendary": {
@@ -39377,21 +41652,75 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "type": "Golden",
+        "type": "Heavy",
         "tooltips": [
-          "When you buy a property, gain 1 Gold."
+          "...and Enchant the item with Heavy if able."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "...and Enchant the item with Icy if able."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "...and Enchant the item with Turbo if able."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "...and Enchant the item with Shielded if able."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "...and Enchant the item with Restorative if able."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "...and Enchant the item with Toxic if able."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "...and Enchant the item with Fiery if able."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "...and Enchant the item with Shiny if able."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "...and Enchant the item with Deadly if able."
         ]
       },
       {
         "type": "Radiant",
         "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
+          "...and Enchant the item with Radiant if able."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "...and Enchant the item with Obsidian if able."
         ]
       }
     ],
     "unifiedTooltips": [
       "When your enemy uses a weapon, charge your Busy Bees 2 second(s).",
-      "When you buy a Property, get a Busy Bee and your Busy Bees gain (+5/+10/+15) damage."
+      "When you buy a Property, get a Busy Bee and your Busy Bees gain (+10/+20/+30) damage."
     ],
     "remarks": [],
     "packId": "Pygmalien_Core"
@@ -39439,55 +41768,55 @@ const data: ParsedItemCard[] = [
       {
         "type": "Heavy",
         "tooltips": [
-          "When you sell this, your leftmost Slow item gains +1 Slow duration."
+          "When you sell this, your leftmost Slow item gains +0.2 Slow duration."
         ]
       },
       {
         "type": "Icy",
         "tooltips": [
-          "When you sell this, your leftmost Freeze item gains +0.2 Freeze duration."
+          "When you sell this, your leftmost Freeze item gains +0.1 Freeze duration."
         ]
       },
       {
         "type": "Turbo",
         "tooltips": [
-          "When you sell this, your leftmost Haste item gains +1 Haste duration."
+          "When you sell this, your leftmost Haste item gains +0.2 Haste duration."
         ]
       },
       {
         "type": "Shielded",
         "tooltips": [
-          "When you sell this, your leftmost Shield item gains +20 Shield."
+          "When you sell this, your leftmost Shield item gains +10 Shield."
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "When you sell this, your leftmost Heal item gains +30 Heal."
+          "When you sell this, your leftmost Heal item gains +15 Heal."
         ]
       },
       {
         "type": "Toxic",
         "tooltips": [
-          "When you sell this, your leftmost Poison item gains +2 Poison."
+          "When you sell this, your leftmost Poison item gains +1 Poison."
         ]
       },
       {
         "type": "Fiery",
         "tooltips": [
-          "When you sell this, your leftmost Burn item gains +2 Burn."
+          "When you sell this, your leftmost Burn item gains +1 Burn."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "When you sell this, your leftmost item gains 10% Crit Chance."
+          "When you sell this, your leftmost item gains 2% Crit Chance."
         ]
       },
       {
         "type": "Obsidian",
         "tooltips": [
-          "When you sell this, your leftmost Weapon item gains +20 damage."
+          "When you sell this, your leftmost Weapon item gains +10 damage."
         ]
       }
     ],
@@ -39813,6 +42142,12 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Shiny",
+        "tooltips": [
+          "This has double Crit Chance bonus."
+        ]
+      },
+      {
         "type": "Deadly",
         "tooltips": [
           "This has double Crit Chance bonus."
@@ -39827,7 +42162,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Your Weapons have +10 damage."
+          "When you Crit, Deal 10 Damage."
         ]
       }
     ],
@@ -39875,7 +42210,8 @@ const data: ParsedItemCard[] = [
       }
     },
     "tags": [
-      "Tool"
+      "Tool",
+      "Relic"
     ],
     "hiddenTags": [
       "Regen",
@@ -40359,7 +42695,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Heavy",
         "tooltips": [
-          "Slow 2 items for 1 second(s)."
+          "Slow 2 items for 2 second(s)."
         ]
       },
       {
@@ -40371,7 +42707,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Turbo",
         "tooltips": [
-          "Haste 2 items for 1 second(s)."
+          "Haste 2 items for 2 second(s)."
         ]
       },
       {
@@ -40821,8 +43157,7 @@ const data: ParsedItemCard[] = [
       }
     },
     "tags": [
-      "Weapon",
-      "Toy"
+      "Weapon"
     ],
     "hiddenTags": [
       "Damage"
@@ -41452,7 +43787,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Icy",
         "tooltips": [
-          "Freeze 1 medium or small item for 2 second(s)."
+          "Freeze 1 medium or small item for 1 second(s)."
         ]
       },
       {
@@ -41620,6 +43955,130 @@ const data: ParsedItemCard[] = [
     "packId": "Vanessa_Core"
   },
   {
+    "id": "f3c0551a-782b-44e3-b0da-e3825366d20e",
+    "name": "Orange Julian",
+    "startingTier": "Bronze",
+    "tiers": {
+      "Bronze": {
+        "tooltips": [
+          "Cooldown 11 seconds",
+          "Your weapons gain +10 damage for the fight.",
+          "When you gain gold, increase the damage bonus of this item by the amount gained."
+        ]
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 10 seconds",
+          "Your weapons gain +10 damage for the fight.",
+          "When you gain gold, increase the damage bonus of this item by the amount gained."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 9 seconds",
+          "Your weapons gain +10 damage for the fight.",
+          "When you gain gold, increase the damage bonus of this item by the amount gained."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 8 seconds",
+          "Your weapons gain +10 damage for the fight.",
+          "When you gain gold, increase the damage bonus of this item by the amount gained."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Friend"
+    ],
+    "hiddenTags": [
+      "DamageReference",
+      "EconomyReference"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Vanessa"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 2 items for 4 second(s)."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze 1 medium or small item for 2 second(s)."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 2 items for 4 second(s)."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield 90."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal 135."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison 9."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn 13."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "Your Weapons gain 10% Crit Chance for the fight."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "This has double Damage bonus"
+        ]
+      }
+    ],
+    "unifiedTooltips": [
+      "Cooldown (11/10/9/8) seconds",
+      "Your weapons gain +10 damage for the fight.",
+      "When you gain gold, increase the damage bonus of this item by the amount gained."
+    ],
+    "remarks": [],
+    "packId": "Vanessa_The_Gang"
+  },
+  {
     "id": "a0345f93-0c0a-44fa-a7e4-2135acb16bcc",
     "name": "Runic Great Axe",
     "startingTier": "Silver",
@@ -41632,7 +44091,7 @@ const data: ParsedItemCard[] = [
           "Cooldown 11 seconds",
           "Lifesteal",
           "Deal 80 damage.",
-          "Your Lifesteal weapons have double damage."
+          "Your Lifesteal weapons have +100% Crit Chance."
         ]
       },
       "Gold": {
@@ -41640,7 +44099,7 @@ const data: ParsedItemCard[] = [
           "Cooldown 11 seconds",
           "Lifesteal",
           "Deal 120 damage.",
-          "Your Lifesteal weapons have double damage."
+          "Your Lifesteal weapons have +100% Crit Chance."
         ]
       },
       "Diamond": {
@@ -41648,7 +44107,7 @@ const data: ParsedItemCard[] = [
           "Cooldown 11 seconds",
           "Lifesteal",
           "Deal 160 damage.",
-          "Your Lifesteal weapons have double damage."
+          "Your Lifesteal weapons have +100% Crit Chance."
         ]
       },
       "Legendary": {
@@ -41737,7 +44196,7 @@ const data: ParsedItemCard[] = [
       "Cooldown 11 seconds",
       "Lifesteal",
       "Deal (80/120/160) damage.",
-      "Your Lifesteal weapons have double damage."
+      "Your Lifesteal weapons have +100% Crit Chance."
     ],
     "remarks": [],
     "packId": "Mak_Core"
@@ -41872,28 +44331,28 @@ const data: ParsedItemCard[] = [
     "tiers": {
       "Bronze": {
         "tooltips": [
-          "Cooldown 4 seconds",
+          "Cooldown 5 seconds",
           "Burn 4.",
           "When you use a non-weapon item, Charge this 1 second(s)."
         ]
       },
       "Silver": {
         "tooltips": [
-          "Cooldown 4 seconds",
+          "Cooldown 5 seconds",
           "Burn 5.",
           "When you use a non-weapon item, Charge this 1 second(s)."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 4 seconds",
+          "Cooldown 5 seconds",
           "Burn 6.",
           "When you use a non-weapon item, Charge this 1 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 4 seconds",
+          "Cooldown 5 seconds",
           "Burn 7.",
           "When you use a non-weapon item, Charge this 1 second(s)."
         ]
@@ -41979,7 +44438,7 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "Cooldown 4 seconds",
+      "Cooldown 5 seconds",
       "Burn (4/5/6/7).",
       "When you use a non-weapon item, Charge this 1 second(s)."
     ],
@@ -41997,7 +44456,7 @@ const data: ParsedItemCard[] = [
       "Silver": {
         "tooltips": [
           "Cooldown 7 seconds",
-          "Haste 1 item for 2 second(s).",
+          "Haste 1 item(s) for 2 second(s).",
           "Shield 20.",
           "When you Burn, charge this 2 second(s)."
         ]
@@ -42005,7 +44464,7 @@ const data: ParsedItemCard[] = [
       "Gold": {
         "tooltips": [
           "Cooldown 7 seconds",
-          "Haste 1 item for 3 second(s).",
+          "Haste 1 item(s) for 3 second(s).",
           "Shield 30.",
           "When you Burn, charge this 2 second(s)."
         ]
@@ -42013,7 +44472,7 @@ const data: ParsedItemCard[] = [
       "Diamond": {
         "tooltips": [
           "Cooldown 7 seconds",
-          "Haste 1 item for 4 second(s).",
+          "Haste 1 item(s) for 4 second(s).",
           "Shield 40.",
           "When you Burn, charge this 2 second(s)."
         ]
@@ -42104,7 +44563,7 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
-      "Haste 1 item for (2/3/4) second(s).",
+      "Haste 1 item(s) for (2/3/4) second(s).",
       "Shield (20/30/40).",
       "When you Burn, charge this 2 second(s)."
     ],
@@ -42370,28 +44829,28 @@ const data: ParsedItemCard[] = [
     "tiers": {
       "Bronze": {
         "tooltips": [
-          "Cooldown 9 seconds",
+          "Cooldown 7 seconds",
           "Your Lifesteal Weapons gain +10 damage for the fight.",
           "The weapon to the right of this has Lifesteal."
         ]
       },
       "Silver": {
         "tooltips": [
-          "Cooldown 9 seconds",
+          "Cooldown 7 seconds",
           "Your Lifesteal Weapons gain +15 damage for the fight.",
           "The weapon to the right of this has Lifesteal."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 9 seconds",
+          "Cooldown 7 seconds",
           "Your Lifesteal Weapons gain +20 damage for the fight.",
           "The weapon to the right of this has Lifesteal."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 9 seconds",
+          "Cooldown 7 seconds",
           "Your Lifesteal Weapons gain +25 damage for the fight.",
           "The weapon to the right of this has Lifesteal."
         ]
@@ -42479,7 +44938,7 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "Cooldown 9 seconds",
+      "Cooldown 7 seconds",
       "Your Lifesteal Weapons gain (+10/+15/+20/+25) damage for the fight.",
       "The weapon to the right of this has Lifesteal."
     ],
@@ -42527,61 +44986,55 @@ const data: ParsedItemCard[] = [
       {
         "type": "Heavy",
         "tooltips": [
-          "When you sell this, your leftmost Slow item gains +1 Slow duration."
+          "When you sell this, your leftmost Slow item gains +0.2 Slow duration."
         ]
       },
       {
         "type": "Icy",
         "tooltips": [
-          "When you sell this, your leftmost Freeze item gains +0.2 Freeze duration."
+          "When you sell this, your leftmost Freeze item gains +0.1 Freeze duration."
         ]
       },
       {
         "type": "Turbo",
         "tooltips": [
-          "When you sell this, your leftmost Haste item gains +1 Haste duration."
+          "When you sell this, your leftmost Haste item gains +0.2 Haste duration."
         ]
       },
       {
         "type": "Shielded",
         "tooltips": [
-          "When you sell this, your leftmost Shield item gains +20 Shield."
+          "When you sell this, your leftmost Shield item gains +10 Shield."
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "When you sell this, your leftmost Heal item gains +30 Heal."
+          "When you sell this, your leftmost Heal item gains +15 Heal."
         ]
       },
       {
         "type": "Toxic",
         "tooltips": [
-          "When you sell this, your leftmost Poison item gains +2 Poison."
+          "When you sell this, your leftmost Poison item gains +1 Poison."
         ]
       },
       {
         "type": "Fiery",
         "tooltips": [
-          "When you sell this, your leftmost Burn item gains +2 Burn."
-        ]
-      },
-      {
-        "type": "Shiny",
-        "tooltips": [
-          "This has double Max Ammo bonus."
+          "When you sell this, your leftmost Burn item gains +1 Burn."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "When you sell this, your leftmost item gains 10% Crit Chance."
+          "When you sell this, your leftmost item gains 2% Crit Chance."
         ]
       },
       {
         "type": "Obsidian",
         "tooltips": [
-          "When you sell this, your leftmost Weapon item gains +20 damage."
+          "When you sell this, your leftmost Weapon item gains +10 damage."
         ]
       }
     ],
@@ -43016,9 +45469,57 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "type": "Golden",
+        "type": "Heavy",
         "tooltips": [
-          "Your Chocolate Bars and Spare Change have +1 value."
+          "...and Enchant the item with Heavy if able."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "...and Enchant the item with Icy if able."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "...and Enchant the item with Turbo if able."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "...and Enchant the item with Shielded if able."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "...and Enchant the item with Restorative if able."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "...and Enchant the item with Toxic if able."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "...and Enchant the item with Fiery if able."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "...and Enchant the item with Deadly if able."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "...and Enchant the item with Obsidian if able."
         ]
       }
     ],
@@ -43031,19 +45532,21 @@ const data: ParsedItemCard[] = [
   {
     "id": "562d768a-6aaf-4704-be8b-4dc9e6311b11",
     "name": "Extract",
-    "startingTier": "Silver",
+    "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
-        "tooltips": []
+        "tooltips": [
+          "When you sell this, your leftmost Poison item gains +2 Poison."
+        ]
       },
       "Silver": {
         "tooltips": [
-          "When you sell this, your leftmost Poison item gains +1 Poison."
+          "When you sell this, your leftmost Poison item gains +2 Poison."
         ]
       },
       "Gold": {
         "tooltips": [
-          "When you sell this, your leftmost Poison item gains +2 Poison."
+          "When you sell this, your leftmost Poison item gains +3 Poison."
         ]
       },
       "Diamond": {
@@ -43069,31 +45572,31 @@ const data: ParsedItemCard[] = [
       {
         "type": "Heavy",
         "tooltips": [
-          "When you sell this, your leftmost Slow item gains +1 Slow duration."
+          "When you sell this, your leftmost Slow item gains +0.2 Slow duration."
         ]
       },
       {
         "type": "Icy",
         "tooltips": [
-          "When you sell this, your leftmost Freeze item gains +0.2 Freeze duration."
+          "When you sell this, your leftmost Freeze item gains +0.1 Freeze duration."
         ]
       },
       {
         "type": "Turbo",
         "tooltips": [
-          "When you sell this, your leftmost Haste item gains +1 Haste duration."
+          "When you sell this, your leftmost Haste item gains +0.2 Haste duration."
         ]
       },
       {
         "type": "Shielded",
         "tooltips": [
-          "When you sell this, your leftmost Shield item gains +20 Shield."
+          "When you sell this, your leftmost Shield item gains +10 Shield."
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "When you sell this, your leftmost Heal item gains +30 Heal."
+          "When you sell this, your leftmost Heal item gains +15 Heal."
         ]
       },
       {
@@ -43105,24 +45608,24 @@ const data: ParsedItemCard[] = [
       {
         "type": "Fiery",
         "tooltips": [
-          "When you sell this, your leftmost Burn item gains +2 Burn."
+          "When you sell this, your leftmost Burn item gains +1 Burn."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "When you sell this, your leftmost item gains 10% Crit Chance."
+          "When you sell this, your leftmost item gains 2% Crit Chance."
         ]
       },
       {
         "type": "Obsidian",
         "tooltips": [
-          "When you sell this, your leftmost Weapon item gains +20 damage."
+          "When you sell this, your leftmost Weapon item gains +10 damage."
         ]
       }
     ],
     "unifiedTooltips": [
-      "When you sell this, your leftmost Poison item gains (+1/+2/+4) Poison."
+      "When you sell this, your leftmost Poison item gains (+2/+2/+3/+4) Poison."
     ],
     "remarks": [],
     "packId": "Core"
@@ -43648,21 +46151,24 @@ const data: ParsedItemCard[] = [
       "Silver": {
         "tooltips": [
           "Cooldown 6 seconds",
-          "Shield 50.",
+          "Shield 25.",
+          "When you use an Aquatic item, this gains +5 Shield for the fight.",
           "Adjacent items are Aquatic."
         ]
       },
       "Gold": {
         "tooltips": [
           "Cooldown 6 seconds",
-          "Shield 75.",
+          "Shield 25.",
+          "When you use an Aquatic item, this gains +10 Shield for the fight.",
           "Adjacent items are Aquatic."
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 6 seconds",
-          "Shield 100.",
+          "Shield 25.",
+          "When you use an Aquatic item, this gains +15 Shield for the fight.",
           "Adjacent items are Aquatic."
         ]
       },
@@ -43752,7 +46258,8 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
-      "Shield (50/75/100).",
+      "Shield 25.",
+      "When you use an Aquatic item, this gains (+5/+10/+15) Shield for the fight.",
       "Adjacent items are Aquatic."
     ],
     "remarks": [],
@@ -43761,24 +46268,27 @@ const data: ParsedItemCard[] = [
   {
     "id": "a4475e25-4562-4228-9e36-99ae0986b23c",
     "name": "Palanquin",
-    "startingTier": "Gold",
+    "startingTier": "Silver",
     "tiers": {
       "Bronze": {
         "tooltips": []
       },
       "Silver": {
-        "tooltips": []
+        "tooltips": [
+          "Your items have +15% Crit Chance.",
+          "When you Crit with an item, reduce its cooldown by 5% for the fight."
+        ]
       },
       "Gold": {
         "tooltips": [
-          "Your items have +20% Crit Chance.",
-          "When you Crit with an item, reduce its cooldown by 5% for the fight."
+          "Your items have +30% Crit Chance.",
+          "When you Crit with an item, reduce its cooldown by 10% for the fight."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Your items have +40% Crit Chance.",
-          "When you Crit with an item, reduce its cooldown by 10% for the fight."
+          "Your items have +50% Crit Chance.",
+          "When you Crit with an item, reduce its cooldown by 15% for the fight."
         ]
       },
       "Legendary": {
@@ -43786,7 +46296,8 @@ const data: ParsedItemCard[] = [
       }
     },
     "tags": [
-      "Vehicle"
+      "Vehicle",
+      "Dinosaur"
     ],
     "hiddenTags": [
       "Crit",
@@ -43842,7 +46353,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has Crit Chance bonus and double Cooldown Reduction."
+          "This has double Cooldown Reduction."
         ]
       },
       {
@@ -43865,8 +46376,8 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "Your items have (+20%/+40%) Crit Chance.",
-      "When you Crit with an item, reduce its cooldown by (5%/10%) for the fight."
+      "Your items have (+15%/+30%/+50%) Crit Chance.",
+      "When you Crit with an item, reduce its cooldown by (5%/10%/15%) for the fight."
     ],
     "remarks": [],
     "packId": "Mak_Core"
@@ -44004,29 +46515,29 @@ const data: ParsedItemCard[] = [
     "tiers": {
       "Bronze": {
         "tooltips": [
-          "Cooldown 6 seconds",
-          "Freeze 1 small item for 1 second(s).",
+          "Cooldown 5 seconds",
+          "Freeze 1 item(s) for 1 second(s).",
           "Cleanse half your Burn."
         ]
       },
       "Silver": {
         "tooltips": [
-          "Cooldown 6 seconds",
-          "Freeze 1 small item for 2 second(s).",
+          "Cooldown 5 seconds",
+          "Freeze 2 item(s) for 1 second(s).",
           "Cleanse half your Burn."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 6 seconds",
-          "Freeze 1 small item for 3 second(s).",
+          "Cooldown 5 seconds",
+          "Freeze 3 item(s) for 1 second(s).",
           "Cleanse half your Burn."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 6 seconds",
-          "Freeze 1 small item for 4 second(s).",
+          "Cooldown 5 seconds",
+          "Freeze 3 item(s) for 4 second(s).",
           "Cleanse half your Burn."
         ]
       },
@@ -44105,8 +46616,8 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "Cooldown 6 seconds",
-      "Freeze 1 small item for (1/2/3/4) second(s).",
+      "Cooldown 5 seconds",
+      "Freeze (1/2/3/3) item(s) for (1/1/1/4) second(s).",
       "Cleanse half your Burn."
     ],
     "remarks": [],
@@ -44122,30 +46633,32 @@ const data: ParsedItemCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "Cooldown 9 seconds",
+          "Cooldown 6 seconds",
           "Poison 4.",
-          "When you Poison, gain +2 Regeneration for the fight."
+          "When you Poison, gain 2 Regeneration for the fight."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 9 seconds",
-          "Poison 5.",
-          "When you Poison, gain +4 Regeneration for the fight."
+          "Cooldown 6 seconds",
+          "Poison 6.",
+          "When you Poison, gain 6 Regeneration for the fight."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 9 seconds",
-          "Poison 6.",
-          "When you Poison, gain +6 Regeneration for the fight."
+          "Cooldown 6 seconds",
+          "Poison 8.",
+          "When you Poison, gain 10 Regeneration for the fight."
         ]
       },
       "Legendary": {
         "tooltips": []
       }
     },
-    "tags": [],
+    "tags": [
+      "Relic"
+    ],
     "hiddenTags": [
       "Poison",
       "Regen"
@@ -44158,19 +46671,19 @@ const data: ParsedItemCard[] = [
       {
         "type": "Heavy",
         "tooltips": [
-          "Slow 1 item for 3 second(s)."
+          "Slow 1 item for 2 second(s)."
         ]
       },
       {
         "type": "Icy",
         "tooltips": [
-          "Freeze 1 medium or small item for 2 second(s)."
+          "Freeze 1 medium or small item for 1 second(s)."
         ]
       },
       {
         "type": "Turbo",
         "tooltips": [
-          "Haste 1 item for 3 second(s)."
+          "Haste 1 item for 2 second(s)."
         ]
       },
       {
@@ -44223,9 +46736,9 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "Cooldown 9 seconds",
-      "Poison (4/5/6).",
-      "When you Poison, gain (+2/+4/+6) Regeneration for the fight."
+      "Cooldown 6 seconds",
+      "Poison (4/6/8).",
+      "When you Poison, gain (2/6/10) Regeneration for the fight."
     ],
     "remarks": [],
     "packId": "Mak_Core"
@@ -44515,67 +47028,67 @@ const data: ParsedItemCard[] = [
       {
         "type": "Heavy",
         "tooltips": [
-          "Slow 1 item for 2 second(s)."
+          "...and Enchant the item with Heavy if able."
         ]
       },
       {
         "type": "Icy",
         "tooltips": [
-          "Freeze 1 small item for 1 second(s)."
+          "...and Enchant the item with Icy if able."
         ]
       },
       {
         "type": "Turbo",
         "tooltips": [
-          "Haste 1 item for 2 second(s)."
+          "...and Enchant the item with Turbo if able."
         ]
       },
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield 35."
+          "...and Enchant the item with Shielded if able."
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal 50."
+          "...and Enchant the item with Restorative if able."
         ]
       },
       {
         "type": "Toxic",
         "tooltips": [
-          "Poison 3."
+          "...and Enchant the item with Toxic if able."
         ]
       },
       {
         "type": "Fiery",
         "tooltips": [
-          "Burn 5."
+          "...and Enchant the item with Fiery if able."
         ]
       },
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "...and Enchant the item with Shiny if able."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "Your Piggles have -1 cooldown."
+          "...and Enchant the item with Deadly if able."
         ]
       },
       {
         "type": "Radiant",
         "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
+          "...and Enchant the item with Radiant if able."
         ]
       },
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal 35 Damage."
+          "...and Enchant the item with Obsidian if able."
         ]
       }
     ],
@@ -44783,24 +47296,24 @@ const data: ParsedItemCard[] = [
       "Silver": {
         "tooltips": [
           "Cooldown 7 seconds",
-          "Freeze 1 item for 1 second(s).",
-          "Shield 50.",
+          "Freeze 1 item(s) for 1 second(s).",
+          "When you Freeze, Shield 50.",
           "The first time you fall below half health each fight, use this."
         ]
       },
       "Gold": {
         "tooltips": [
           "Cooldown 7 seconds",
-          "Freeze 1 item for 2 second(s).",
-          "Shield 100.",
+          "Freeze 2 item(s) for 1 second(s).",
+          "When you Freeze, Shield 75.",
           "The first time you fall below half health each fight, use this."
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 7 seconds",
-          "Freeze 1 item for 3 second(s).",
-          "Shield 200.",
+          "Freeze 3 item(s) for 1 second(s).",
+          "When you Freeze, Shield 100.",
           "The first time you fall below half health each fight, use this."
         ]
       },
@@ -44889,8 +47402,8 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
-      "Freeze 1 item for (1/2/3) second(s).",
-      "Shield (50/100/200).",
+      "Freeze (1/2/3) item(s) for 1 second(s).",
+      "When you Freeze, Shield (50/75/100).",
       "The first time you fall below half health each fight, use this."
     ],
     "remarks": [],
@@ -45013,7 +47526,7 @@ const data: ParsedItemCard[] = [
   },
   {
     "id": "b18e28e6-69a3-455a-8a5a-1a3170c76bb7",
-    "name": "Primordial Depth Charge",
+    "name": "Elemental Depth Charge",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -45387,14 +47900,14 @@ const data: ParsedItemCard[] = [
       "Gold": {
         "tooltips": [
           "Cooldown 7 seconds",
-          "Deal 160 Damage.",
+          "Deal 200 Damage.",
           "When you use another Weapon, Charge this 2 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 7 seconds",
-          "Deal 200 Damage.",
+          "Deal 300 Damage.",
           "When you use another Weapon, Charge this 2 second(s)."
         ]
       },
@@ -45482,7 +47995,7 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
-      "Deal (160/200) Damage.",
+      "Deal (200/300) Damage.",
       "When you use another Weapon, Charge this 2 second(s)."
     ],
     "remarks": [],
@@ -45717,126 +48230,6 @@ const data: ParsedItemCard[] = [
     "packId": "Vanessa_Core"
   },
   {
-    "id": "a7ceeecc-d802-4bbf-9521-afe89db4af45",
-    "name": "Crane",
-    "startingTier": "Gold",
-    "tiers": {
-      "Bronze": {
-        "tooltips": []
-      },
-      "Silver": {
-        "tooltips": []
-      },
-      "Gold": {
-        "tooltips": [
-          "Cooldown 11 seconds",
-          "Deal 100 damage.",
-          "When you use an adjacent Large item, this gains 30% damage for the fight.",
-          "When you use an adjacent Medium item, this gains 20% damage for the fight."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "Cooldown 11 seconds",
-          "Deal 200 damage.",
-          "When you use an adjacent Large item, this gains 60% damage for the fight.",
-          "When you use an adjacent Medium item, this gains 40% damage for the fight."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [
-      "Vehicle",
-      "Weapon",
-      "Tool"
-    ],
-    "hiddenTags": [
-      "Damage"
-    ],
-    "size": "Large",
-    "heroes": [
-      "Dooley"
-    ],
-    "enchantments": [
-      {
-        "type": "Heavy",
-        "tooltips": [
-          "Slow 3 items for 3 second(s)."
-        ]
-      },
-      {
-        "type": "Icy",
-        "tooltips": [
-          "Freeze 1 item for 4 second(s)."
-        ]
-      },
-      {
-        "type": "Turbo",
-        "tooltips": [
-          "Haste 3 items for 3 second(s)."
-        ]
-      },
-      {
-        "type": "Shielded",
-        "tooltips": [
-          "Shield equal to this item's damage."
-        ]
-      },
-      {
-        "type": "Restorative",
-        "tooltips": [
-          "Heal equal to this item's Damage."
-        ]
-      },
-      {
-        "type": "Toxic",
-        "tooltips": [
-          "Poison equal to 10% of this item's damage."
-        ]
-      },
-      {
-        "type": "Fiery",
-        "tooltips": [
-          "Burn equal to 10% of this item's damage."
-        ]
-      },
-      {
-        "type": "Shiny",
-        "tooltips": [
-          "This has +1 Multicast."
-        ]
-      },
-      {
-        "type": "Deadly",
-        "tooltips": [
-          "+50% Crit Chance"
-        ]
-      },
-      {
-        "type": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
-        "type": "Obsidian",
-        "tooltips": [
-          "This has double Damage."
-        ]
-      }
-    ],
-    "unifiedTooltips": [
-      "Cooldown 11 seconds",
-      "Deal (100/200) damage.",
-      "When you use an adjacent Large item, this gains (30%/60%) damage for the fight.",
-      "When you use an adjacent Medium item, this gains (20%/40%) damage for the fight."
-    ],
-    "remarks": [],
-    "packId": "Dooley_Core"
-  },
-  {
     "id": "961e974b-5472-4298-b66b-e1f74c167c26",
     "name": "Darkwater Anglerfish",
     "startingTier": "Silver",
@@ -45956,6 +48349,126 @@ const data: ParsedItemCard[] = [
     ],
     "remarks": [],
     "packId": "Vanessa_Mysteries_of_the_Deep"
+  },
+  {
+    "id": "a7ceeecc-d802-4bbf-9521-afe89db4af45",
+    "name": "Crane",
+    "startingTier": "Gold",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 11 seconds",
+          "Deal 100 damage.",
+          "When you use an adjacent Large item, this gains 30% damage for the fight.",
+          "When you use an adjacent Medium item, this gains 20% damage for the fight."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 11 seconds",
+          "Deal 200 damage.",
+          "When you use an adjacent Large item, this gains 60% damage for the fight.",
+          "When you use an adjacent Medium item, this gains 40% damage for the fight."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Vehicle",
+      "Weapon",
+      "Tool"
+    ],
+    "hiddenTags": [
+      "Damage"
+    ],
+    "size": "Large",
+    "heroes": [
+      "Dooley"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 3 items for 3 second(s)."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze 1 item for 4 second(s)."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 3 items for 3 second(s)."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield equal to this item's damage."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to this item's Damage."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to 10% of this item's damage."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn equal to 10% of this item's damage."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "This has double Damage."
+        ]
+      }
+    ],
+    "unifiedTooltips": [
+      "Cooldown 11 seconds",
+      "Deal (100/200) damage.",
+      "When you use an adjacent Large item, this gains (30%/60%) damage for the fight.",
+      "When you use an adjacent Medium item, this gains (20%/40%) damage for the fight."
+    ],
+    "remarks": [],
+    "packId": "Dooley_Core"
   },
   {
     "id": "8a0aad5c-caff-4963-b8e9-861bc5ace1ce",
@@ -46432,28 +48945,28 @@ const data: ParsedItemCard[] = [
       "Bronze": {
         "tooltips": [
           "Cooldown 7 seconds",
-          "Freeze 1 item for 1 second(s).",
+          "Freeze 1 item(s) for 1 second(s).",
           "When you freeze, adjacent Poison items gain +1 Poison for the fight."
         ]
       },
       "Silver": {
         "tooltips": [
           "Cooldown 7 seconds",
-          "Freeze 1 item for 1 second(s).",
+          "Freeze 1 item(s) for 1 second(s).",
           "When you freeze, adjacent Poison items gain +2 Poison for the fight."
         ]
       },
       "Gold": {
         "tooltips": [
           "Cooldown 7 seconds",
-          "Freeze 1 item for 1 second(s).",
+          "Freeze 1 item(s) for 1 second(s).",
           "When you freeze, adjacent Poison items gain +3 Poison for the fight."
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 7 seconds",
-          "Freeze 1 item for 1 second(s).",
+          "Freeze 1 item(s) for 1 second(s).",
           "When you freeze, adjacent Poison items gain +4 Poison for the fight."
         ]
       },
@@ -46543,7 +49056,7 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
-      "Freeze 1 item for 1 second(s).",
+      "Freeze 1 item(s) for 1 second(s).",
       "When you freeze, adjacent Poison items gain (+1/+2/+3/+4) Poison for the fight."
     ],
     "remarks": [],
@@ -47049,29 +49562,29 @@ const data: ParsedItemCard[] = [
     "tiers": {
       "Bronze": {
         "tooltips": [
-          "Cooldown 6 seconds",
-          "Burn 4.",
+          "Cooldown 7 seconds",
+          "Burn 8.",
           "While you have Shield, this item's cooldown is reduced by 50%."
         ]
       },
       "Silver": {
         "tooltips": [
           "Cooldown 6 seconds",
-          "Burn 6.",
+          "Burn 8.",
           "While you have Shield, this item's cooldown is reduced by 50%."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 6 seconds",
+          "Cooldown 5 seconds",
           "Burn 8.",
           "While you have Shield, this item's cooldown is reduced by 50%."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 6 seconds",
-          "Burn 10.",
+          "Cooldown 4 seconds",
+          "Burn 8.",
           "While you have Shield, this item's cooldown is reduced by 50%."
         ]
       },
@@ -47159,8 +49672,8 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "Cooldown 6 seconds",
-      "Burn (4/6/8/10).",
+      "Cooldown (7/6/5/4) seconds",
+      "Burn 8.",
       "While you have Shield, this item's cooldown is reduced by 50%."
     ],
     "remarks": [],
@@ -47201,7 +49714,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Heavy",
         "tooltips": [
-          "When you sell this, your leftmost Slow item gains +1 Slow duration."
+          "When you sell this, your leftmost Slow item gains +0.2 Slow duration."
         ]
       },
       {
@@ -47213,43 +49726,43 @@ const data: ParsedItemCard[] = [
       {
         "type": "Turbo",
         "tooltips": [
-          "When you sell this, your leftmost Haste item gains +1 Haste duration."
+          "When you sell this, your leftmost Haste item gains +0.2 Haste duration."
         ]
       },
       {
         "type": "Shielded",
         "tooltips": [
-          "When you sell this, your leftmost Shield item gains +20 Shield."
+          "When you sell this, your leftmost Shield item gains +10 Shield."
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "When you sell this, your leftmost Heal item gains +30 Heal."
+          "When you sell this, your leftmost Heal item gains +15 Heal."
         ]
       },
       {
         "type": "Toxic",
         "tooltips": [
-          "When you sell this, your leftmost Poison item gains +2 Poison."
+          "When you sell this, your leftmost Poison item gains +1 Poison."
         ]
       },
       {
         "type": "Fiery",
         "tooltips": [
-          "When you sell this, your leftmost Burn item gains +2 Burn."
+          "When you sell this, your leftmost Burn item gains +1 Burn."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "When you sell this, your leftmost item gains 10% Crit Chance."
+          "When you sell this, your leftmost item gains 2% Crit Chance."
         ]
       },
       {
         "type": "Obsidian",
         "tooltips": [
-          "When you sell this, your leftmost Weapon item gains +20 damage."
+          "When you sell this, your leftmost Weapon item gains +10 damage."
         ]
       }
     ],
@@ -47833,9 +50346,57 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "type": "Radiant",
+        "type": "Heavy",
         "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
+          "...and Enchant the item with Heavy if able."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "...and Enchant the item with Icy if able."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "...and Enchant the item with Turbo if able."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "...and Enchant the item with Shielded if able."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "...and Enchant the item with Restorative if able."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "...and Enchant the item with Toxic if able."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "...and Enchant the item with Fiery if able."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "...and Enchant the item with Deadly if able."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "...and Enchant the item with Obsidian if able."
         ]
       }
     ],
@@ -47846,30 +50407,36 @@ const data: ParsedItemCard[] = [
     "packId": "Pygmalien_Core"
   },
   {
-    "id": "baec36c3-2c41-47fa-bd54-6f1d6b34e8d0",
-    "name": "Void Ray",
-    "startingTier": "Gold",
+    "id": "5795875a-9917-46a6-9334-ee835e4caefc",
+    "name": "BLU-B33TL3",
+    "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
-        "tooltips": []
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Freeze 1 item(s) for 0.5 second(s).",
+          "When an adjacent item Poisons, charge this 1 second(s)."
+        ]
       },
       "Silver": {
-        "tooltips": []
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Freeze 2 item(s) for 0.5 second(s).",
+          "When an adjacent item Poisons, charge this 1 second(s)."
+        ]
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 7 seconds",
-          "Multicast 2",
-          "Burn 4.",
-          "When you Shield, this gains 1 Burn for the fight."
+          "Cooldown 6 seconds",
+          "Freeze 3 item(s) for 0.5 second(s).",
+          "When an adjacent item Poisons, charge this 1 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 7 seconds",
-          "Multicast 2",
-          "Burn 6.",
-          "When you Shield, this gains 2 Burn for the fight."
+          "Cooldown 6 seconds",
+          "Freeze 4 item(s) for 0.5 second(s).",
+          "When an adjacent item Poisons, charge this 1 second(s)."
         ]
       },
       "Legendary": {
@@ -47877,57 +50444,57 @@ const data: ParsedItemCard[] = [
       }
     },
     "tags": [
-      "Ray"
+      "Friend"
     ],
     "hiddenTags": [
-      "Burn",
-      "ShieldReference"
+      "Freeze",
+      "PoisonReference"
     ],
-    "size": "Medium",
+    "size": "Small",
     "heroes": [
-      "Common"
+      "Dooley"
     ],
     "enchantments": [
       {
         "type": "Heavy",
         "tooltips": [
-          "Slow 2 items for 2 second(s)."
+          "Slow 1 item for 3 second(s)."
         ]
       },
       {
         "type": "Icy",
         "tooltips": [
-          "Freeze 1 medium or small item for 2 second(s)."
+          "This has double Freeze duration."
         ]
       },
       {
         "type": "Turbo",
         "tooltips": [
-          "Haste 2 items for 2 second(s)."
+          "Haste 1 item for 3 second(s)."
         ]
       },
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 10 times this item's Burn."
+          "Shield 20."
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 10 times this item's Burn."
+          "Heal 30."
         ]
       },
       {
         "type": "Toxic",
         "tooltips": [
-          "Poison equal to this item's Burn."
+          "Poison 2."
         ]
       },
       {
         "type": "Fiery",
         "tooltips": [
-          "This has double Burn."
+          "Burn 3."
         ]
       },
       {
@@ -47939,7 +50506,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "Your Friends have +20% Crit Chance."
         ]
       },
       {
@@ -47951,18 +50518,17 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal damage equal to 10 times this item's Burn."
+          "Deal 20 Damage."
         ]
       }
     ],
     "unifiedTooltips": [
-      "Cooldown 7 seconds",
-      "Multicast 2",
-      "Burn (4/6).",
-      "When you Shield, this gains (1/2) Burn for the fight."
+      "Cooldown 6 seconds",
+      "Freeze (1/2/3/4) item(s) for 0.5 second(s).",
+      "When an adjacent item Poisons, charge this 1 second(s)."
     ],
     "remarks": [],
-    "packId": "Core"
+    "packId": "Dooley_Dooltron"
   },
   {
     "id": "43190b98-4f7f-4b2e-b92e-32b07b7fc2e1",
@@ -48092,6 +50658,125 @@ const data: ParsedItemCard[] = [
     ],
     "remarks": [],
     "packId": "Pygmalien_Core"
+  },
+  {
+    "id": "baec36c3-2c41-47fa-bd54-6f1d6b34e8d0",
+    "name": "Void Ray",
+    "startingTier": "Gold",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 7 seconds",
+          "Multicast 2",
+          "Burn 4.",
+          "When you Shield, this gains 1 Burn for the fight."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 7 seconds",
+          "Multicast 2",
+          "Burn 6.",
+          "When you Shield, this gains 2 Burn for the fight."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Ray"
+    ],
+    "hiddenTags": [
+      "Burn",
+      "ShieldReference"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Common"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 2 items for 2 second(s)."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze 1 medium or small item for 2 second(s)."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 2 items for 2 second(s)."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield equal to 10 times this item's Burn."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to 10 times this item's Burn."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to this item's Burn."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "This has double Burn."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal damage equal to 10 times this item's Burn."
+        ]
+      }
+    ],
+    "unifiedTooltips": [
+      "Cooldown 7 seconds",
+      "Multicast 2",
+      "Burn (4/6).",
+      "When you Shield, this gains (1/2) Burn for the fight."
+    ],
+    "remarks": [],
+    "packId": "Core"
   },
   {
     "id": "40d8b44a-8e2f-4081-8163-043d76ddbafa",
@@ -48693,30 +51378,30 @@ const data: ParsedItemCard[] = [
     "tiers": {
       "Bronze": {
         "tooltips": [
-          "Cooldown 7 seconds",
-          "Slow 1 item for 3 second(s).",
-          "Gain 2 Regeneration for the fight."
+          "Cooldown 6 seconds",
+          "Slow 1 item(s) for 1 second(s).",
+          "Gain 1 Regeneration for the fight."
         ]
       },
       "Silver": {
         "tooltips": [
-          "Cooldown 7 seconds",
-          "Slow 1 item for 4 second(s).",
-          "Gain 4 Regeneration for the fight."
+          "Cooldown 6 seconds",
+          "Slow 1 item(s) for 2 second(s).",
+          "Gain 3 Regeneration for the fight."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 7 seconds",
-          "Slow 1 item for 5 second(s).",
-          "Gain 6 Regeneration for the fight."
+          "Cooldown 6 seconds",
+          "Slow 1 item(s) for 3 second(s).",
+          "Gain 5 Regeneration for the fight."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 7 seconds",
-          "Slow 1 item for 6 second(s).",
-          "Gain 8 Regeneration for the fight."
+          "Cooldown 6 seconds",
+          "Slow 1 item(s) for 4 second(s).",
+          "Gain 7 Regeneration for the fight."
         ]
       },
       "Legendary": {
@@ -48801,9 +51486,9 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "Cooldown 7 seconds",
-      "Slow 1 item for (3/4/5/6) second(s).",
-      "Gain (2/4/6/8) Regeneration for the fight."
+      "Cooldown 6 seconds",
+      "Slow 1 item(s) for (1/2/3/4) second(s).",
+      "Gain (1/3/5/7) Regeneration for the fight."
     ],
     "remarks": [],
     "packId": "Mak_Core"
@@ -48820,21 +51505,21 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Cooldown 9 seconds",
           "Deal 100 damage.",
-          "When you use a Small item, this gains 20 damage for the fight."
+          "When you use a Small item, this gains 25 damage for the fight."
         ]
       },
       "Gold": {
         "tooltips": [
           "Cooldown 9 seconds",
           "Deal 100 damage.",
-          "When you use a Small item, this gains 30 damage for the fight."
+          "When you use a Small item, this gains 50 damage for the fight."
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 9 seconds",
           "Deal 100 damage.",
-          "When you use a Small item, this gains 40 damage for the fight."
+          "When you use a Small item, this gains 75 damage for the fight."
         ]
       },
       "Legendary": {
@@ -48923,7 +51608,7 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "Cooldown 9 seconds",
       "Deal 100 damage.",
-      "When you use a Small item, this gains (20/30/40) damage for the fight."
+      "When you use a Small item, this gains (25/50/75) damage for the fight."
     ],
     "remarks": [],
     "packId": "Dooley_Core"
@@ -48938,19 +51623,19 @@ const data: ParsedItemCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "Cooldown 7 seconds",
+          "Cooldown 6 seconds",
           "Shield equal to your gold."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 7 seconds",
+          "Cooldown 6 seconds",
           "Shield equal to double your gold."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 7 seconds",
+          "Cooldown 6 seconds",
           "Shield equal to triple your gold."
         ]
       },
@@ -49045,7 +51730,7 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "Cooldown 7 seconds",
+      "Cooldown 6 seconds",
       "Shield equal to (1x/2x/3x) your gold."
     ],
     "remarks": [],
@@ -49061,24 +51746,24 @@ const data: ParsedItemCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "Cooldown 7 seconds",
-          "Deal 10 Damage.",
+          "Cooldown 6 seconds",
+          "Deal 50 Damage.",
           "Slow 1 item for 2 second(s).",
           "When your enemy uses an item, Charge this 1 second(s)."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 7 seconds",
-          "Deal 10 Damage.",
+          "Cooldown 6 seconds",
+          "Deal 50 Damage.",
           "Slow 1 item for 2 second(s).",
           "When your enemy uses an item, Charge this 2 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 7 seconds",
-          "Deal 10 Damage.",
+          "Cooldown 6 seconds",
+          "Deal 50 Damage.",
           "Slow 1 item for 2 second(s).",
           "When your enemy uses an item, Charge this 3 second(s)."
         ]
@@ -49169,8 +51854,8 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "Cooldown 7 seconds",
-      "Deal 10 Damage.",
+      "Cooldown 6 seconds",
+      "Deal 50 Damage.",
       "Slow 1 item for 2 second(s).",
       "When your enemy uses an item, Charge this (1/2/3) second(s)."
     ],
@@ -49433,23 +52118,26 @@ const data: ParsedItemCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "Cooldown 9 seconds",
-          "Burn 8.",
-          "When you use an adjacent or Dragon item, this gains +2 Burn for the fight."
+          "Cooldown 12 seconds",
+          "Ammo 1",
+          "Burn 10.",
+          "When you use an adjacent or Dragon item, this gains +6 Burn for the fight."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 9 seconds",
-          "Burn 8.",
-          "When you use an adjacent or Dragon item, this gains +3 Burn for the fight."
+          "Cooldown 12 seconds",
+          "Ammo 1",
+          "Burn 10.",
+          "When you use an adjacent or Dragon item, this gains +8 Burn for the fight."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 9 seconds",
-          "Burn 8.",
-          "When you use an adjacent or Dragon item, this gains +4 Burn for the fight."
+          "Cooldown 12 seconds",
+          "Ammo 1",
+          "Burn 10.",
+          "When you use an adjacent or Dragon item, this gains +10 Burn for the fight."
         ]
       },
       "Legendary": {
@@ -49457,10 +52145,12 @@ const data: ParsedItemCard[] = [
       }
     },
     "tags": [
-      "Dragon"
+      "Dragon",
+      "Potion"
     ],
     "hiddenTags": [
-      "Burn"
+      "Burn",
+      "Ammo"
     ],
     "size": "Medium",
     "heroes": [
@@ -49470,19 +52160,19 @@ const data: ParsedItemCard[] = [
       {
         "type": "Heavy",
         "tooltips": [
-          "Slow 2 items for 3 second(s)."
+          "Slow 2 items for 4 second(s)."
         ]
       },
       {
         "type": "Icy",
         "tooltips": [
-          "Freeze 1 medium or small item for 3 second(s)."
+          "Freeze 1 medium or small item for 4 second(s)."
         ]
       },
       {
         "type": "Turbo",
         "tooltips": [
-          "Haste 2 items for 3 second(s)."
+          "Haste 2 items for 4 second(s)."
         ]
       },
       {
@@ -49535,9 +52225,10 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "Cooldown 9 seconds",
-      "Burn 8.",
-      "When you use an adjacent or Dragon item, this gains (+2/+3/+4) Burn for the fight."
+      "Cooldown 12 seconds",
+      "Ammo 1",
+      "Burn 10.",
+      "When you use an adjacent or Dragon item, this gains (+6/+8/+10) Burn for the fight."
     ],
     "remarks": [],
     "packId": "Mak_Core"
@@ -49552,22 +52243,22 @@ const data: ParsedItemCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "Cooldown 6 seconds",
-          "Gain 20 Max Health for the fight.",
+          "Cooldown 5 seconds",
+          "Gain 50 Max Health for the fight.",
           "When you Haste or Slow, Charge this 1 second(s)."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 6 seconds",
-          "Gain 30 Max Health for the fight.",
+          "Cooldown 5 seconds",
+          "Gain 75 Max Health for the fight.",
           "When you Haste or Slow, Charge this 1 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 6 seconds",
-          "Gain 40 Max Health for the fight.",
+          "Cooldown 5 seconds",
+          "Gain 100 Max Health for the fight.",
           "When you Haste or Slow, Charge this 1 second(s)."
         ]
       },
@@ -49656,8 +52347,8 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "Cooldown 6 seconds",
-      "Gain (20/30/40) Max Health for the fight.",
+      "Cooldown 5 seconds",
+      "Gain (50/75/100) Max Health for the fight.",
       "When you Haste or Slow, Charge this 1 second(s)."
     ],
     "remarks": [],
@@ -49724,6 +52415,131 @@ const data: ParsedItemCard[] = [
     ],
     "remarks": [],
     "packId": "Core"
+  },
+  {
+    "id": "c7c21196-e41e-4569-a579-25826648cdc6",
+    "name": "GRN-W4SP",
+    "startingTier": "Bronze",
+    "tiers": {
+      "Bronze": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Poison 4.",
+          "When an adjacent item Slows or Freezes, charge this 1 second(s)."
+        ]
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Poison 6.",
+          "When an adjacent item Slows or Freezes, charge this 1 second(s)."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Poison 8.",
+          "When an adjacent item Slows or Freezes, charge this 1 second(s)."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Poison 10.",
+          "When an adjacent item Slows or Freezes, charge this 1 second(s)."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Friend"
+    ],
+    "hiddenTags": [
+      "Poison",
+      "FreezeReference",
+      "SlowReference"
+    ],
+    "size": "Small",
+    "heroes": [
+      "Dooley"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 1 item for 3 second(s)."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze 1 small item for 1 second(s)."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 1 item for 3 second(s)."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield equal to 10 times this item's Poison."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to 10 times this item's Poison."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "This has double Poison."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn equal to this item's Poison."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal damage equal to 10 times this item's Poison."
+        ]
+      }
+    ],
+    "unifiedTooltips": [
+      "Cooldown 6 seconds",
+      "Poison (4/6/8/10).",
+      "When an adjacent item Slows or Freezes, charge this 1 second(s)."
+    ],
+    "remarks": [],
+    "packId": "Dooley_Dooltron"
   },
   {
     "id": "60fc7e96-c754-40be-803b-e9237aeb920d",
@@ -50134,49 +52950,49 @@ const data: ParsedItemCard[] = [
       {
         "type": "Heavy",
         "tooltips": [
-          "When you sell this, your leftmost Slow item gains +1 Slow duration."
+          "When you sell this, your leftmost Slow item gains +0.2 Slow duration."
         ]
       },
       {
         "type": "Icy",
         "tooltips": [
-          "When you sell this, your leftmost Freeze item gains +0.2 Freeze duration."
+          "When you sell this, your leftmost Freeze item gains +0.1 Freeze duration."
         ]
       },
       {
         "type": "Turbo",
         "tooltips": [
-          "When you sell this, your leftmost Haste item gains +1 Haste duration."
+          "When you sell this, your leftmost Haste item gains +0.2 Haste duration."
         ]
       },
       {
         "type": "Shielded",
         "tooltips": [
-          "When you sell this, your leftmost Shield item gains +20 Shield."
+          "When you sell this, your leftmost Shield item gains +10 Shield."
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "When you sell this, your leftmost Heal item gains +30 Heal."
+          "When you sell this, your leftmost Heal item gains +15 Heal."
         ]
       },
       {
         "type": "Toxic",
         "tooltips": [
-          "When you sell this, your leftmost Poison item gains +2 Poison."
+          "When you sell this, your leftmost Poison item gains +1 Poison."
         ]
       },
       {
         "type": "Fiery",
         "tooltips": [
-          "When you sell this, your leftmost Burn item gains +2 Burn."
+          "When you sell this, your leftmost Burn item gains +1 Burn."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "When you sell this, your leftmost item gains 10% Crit Chance."
+          "When you sell this, your leftmost item gains 2% Crit Chance."
         ]
       },
       {
@@ -50307,7 +53123,7 @@ const data: ParsedItemCard[] = [
   },
   {
     "id": "a4cb5a88-1abb-4fb0-b4dc-a1b7eedebd64",
-    "name": "Jaballian Longbow",
+    "name": "Jabalian Longbow",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
@@ -50524,13 +53340,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "The Property to the left has +1 Multicast."
+          "The Property to the left of this has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "The Property to the left has +50% Crit Chance."
+          "The Property to the left of this has +50% Crit Chance."
         ]
       },
       {
@@ -50814,13 +53630,13 @@ const data: ParsedItemCard[] = [
       },
       "Gold": {
         "tooltips": [
-          "When you win a fight against a player, gain 2 XP. If you had Wanted Poster in play, gain 1 additional XP.",
+          "When you win a fight against a player, gain 1 XP. If you had Wanted Poster in play, gain 1 additional XP.",
           "Your items have 20% Crit Chance."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "When you win a fight against a player, gain 3 XP. If you had Wanted Poster in play, gain 1 additional XP.",
+          "When you win a fight against a player, gain 1 XP. If you had Wanted Poster in play, gain 1 additional XP.",
           "Your items have 30% Crit Chance."
         ]
       },
@@ -50906,7 +53722,7 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "When you win a fight against a player, gain (1/2/3) XP. If you had Wanted Poster in play, gain 1 additional XP.",
+      "When you win a fight against a player, gain 1 XP. If you had Wanted Poster in play, gain 1 additional XP.",
       "Your items have (10%/20%/30%) Crit Chance."
     ],
     "remarks": [],
@@ -50971,7 +53787,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Turbo",
         "tooltips": [
-          "Haste the item to the left for 1 second(s)."
+          "Haste the item to the left of this for 1 second(s)."
         ]
       },
       {
@@ -51039,32 +53855,28 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Cooldown 6 seconds",
           "Deal 5 damage.",
-          "Gain 1 Regeneration for the fight.",
-          "Adjacent Potions have +1 Ammo."
+          "The potion to the left of this has +1 Ammo."
         ]
       },
       "Silver": {
         "tooltips": [
           "Cooldown 6 seconds",
           "Deal 10 damage.",
-          "Gain 2 Regeneration for the fight.",
-          "Adjacent Potions have +1 Ammo."
+          "The potion to the left of this has +2 Ammo."
         ]
       },
       "Gold": {
         "tooltips": [
           "Cooldown 6 seconds",
           "Deal 15 damage.",
-          "Gain 3 Regeneration for the fight.",
-          "Adjacent Potions have +1 Ammo."
+          "The potion to the left of this has +3 Ammo."
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 6 seconds",
           "Deal 20 damage.",
-          "Gain 4 Regeneration for the fight.",
-          "Adjacent Potions have +1 Ammo."
+          "The potion to the left of this has +4 Ammo."
         ]
       },
       "Legendary": {
@@ -51076,7 +53888,6 @@ const data: ParsedItemCard[] = [
     ],
     "hiddenTags": [
       "Damage",
-      "Regen",
       "AmmoReference"
     ],
     "size": "Small",
@@ -51154,8 +53965,7 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Deal (5/10/15/20) damage.",
-      "Gain (1/2/3/4) Regeneration for the fight.",
-      "Adjacent Potions have +1 Ammo."
+      "The potion to the left of this has (+1/+2/+3/+4) Ammo."
     ],
     "remarks": [],
     "packId": "Mak_Core"
@@ -51663,45 +54473,35 @@ const data: ParsedItemCard[] = [
   {
     "id": "f43844fe-cefa-40c7-ba86-e601c3596064",
     "name": "Runic Double Bow",
-    "startingTier": "Bronze",
+    "startingTier": "Silver",
     "tiers": {
       "Bronze": {
-        "tooltips": [
-          "Cooldown 7 seconds",
-          "Multicast 2",
-          "Lifesteal",
-          "Crit Chance 10%",
-          "Deal 20 Damage.",
-          "This deals double Crit damage."
-        ]
+        "tooltips": []
       },
       "Silver": {
         "tooltips": [
-          "Cooldown 7 seconds",
+          "Cooldown 8 seconds",
           "Multicast 2",
           "Lifesteal",
-          "Crit Chance 10%",
-          "Deal 30 Damage.",
+          "Deal 25 Damage.",
           "This deals double Crit damage."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 7 seconds",
+          "Cooldown 8 seconds",
           "Multicast 2",
           "Lifesteal",
-          "Crit Chance 10%",
-          "Deal 40 Damage.",
+          "Deal 35 Damage.",
           "This deals double Crit damage."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 7 seconds",
+          "Cooldown 8 seconds",
           "Multicast 2",
           "Lifesteal",
-          "Crit Chance 10%",
-          "Deal 50 Damage.",
+          "Deal 45 Damage.",
           "This deals double Crit damage."
         ]
       },
@@ -51788,11 +54588,10 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "Cooldown 7 seconds",
+      "Cooldown 8 seconds",
       "Multicast 2",
       "Lifesteal",
-      "Crit Chance 10%",
-      "Deal (20/30/40/50) Damage.",
+      "Deal (25/35/45) Damage.",
       "This deals double Crit damage."
     ],
     "remarks": [],
@@ -52096,31 +54895,31 @@ const data: ParsedItemCard[] = [
       {
         "type": "Heavy",
         "tooltips": [
-          "Slow 2 items for 3 second(s)."
+          "Slow 2 items for 2 second(s)."
         ]
       },
       {
         "type": "Icy",
         "tooltips": [
-          "Freeze 1 medium or small item for 3 second(s)."
+          "Freeze 1 medium or small item for 1 second(s)."
         ]
       },
       {
         "type": "Turbo",
         "tooltips": [
-          "Haste 2 items for 3 second(s)."
+          "Haste 2 item for 2 second(s)."
         ]
       },
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield 80. When you Haste, this gains +20 Shield for the fight."
+          "Shield equal to 10 times this item's Poison."
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal 120. When you Haste, this gains +30 Heal for the fight."
+          "Heal equal to 10 times this item's Poison."
         ]
       },
       {
@@ -52132,7 +54931,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Fiery",
         "tooltips": [
-          "Burn 12. When you Haste, this gains +4 Burn for the fight."
+          "Burn equal to this item's Poison."
         ]
       },
       {
@@ -52142,9 +54941,21 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
+        "type": "Deadly",
+        "tooltips": [
+          "+50% Crit Chance"
+        ]
+      },
+      {
         "type": "Radiant",
         "tooltips": [
           "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal damage equal to 10 times this item's Poison."
         ]
       }
     ],
@@ -52275,18 +55086,18 @@ const data: ParsedItemCard[] = [
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 9 seconds",
-          "Deal 50 damage.",
-          "Freeze 1 medium or small item for 1 second(s).",
-          "When you freeze, this gains 40 damage for the fight."
+          "Cooldown 10 seconds",
+          "Deal 200 damage.",
+          "Freeze 1 item for 1 second(s).",
+          "When you freeze, charge this 1 second this gains 100 damage for the fight."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 9 seconds",
-          "Deal 50 damage.",
-          "Freeze 1 medium or small item for 2 second(s).",
-          "When you freeze, this gains 50 damage for the fight."
+          "Cooldown 10 seconds",
+          "Deal 200 damage.",
+          "Freeze 1 item for 2 second(s).",
+          "When you freeze, charge this 1 second this gains 200 damage for the fight."
         ]
       },
       "Legendary": {
@@ -52373,10 +55184,10 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "Cooldown 9 seconds",
-      "Deal 50 damage.",
-      "Freeze 1 medium or small item for (1/2) second(s).",
-      "When you freeze, this gains (40/50) damage for the fight."
+      "Cooldown 10 seconds",
+      "Deal 200 damage.",
+      "Freeze 1 item for (1/2) second(s).",
+      "When you freeze, charge this 1 second this gains (100/200) damage for the fight."
     ],
     "remarks": [],
     "packId": "Dooley_Core"
@@ -52553,26 +55364,26 @@ const data: ParsedItemCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "Cooldown 10 seconds",
-          "Shield equal to this item's value.",
-          "When you use another item, this gains +Shield equal to the value of that item for the fight.",
-          "At the start of each hour, this gains +1 value."
+          "Cooldown 7 seconds",
+          "Shield 200.",
+          "Your Shield items have +Shield equal to this item's value.",
+          "When you sell 10 items, give this +5 value."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 9 seconds",
-          "Shield equal to this item's value.",
-          "When you use another item, this gains +Shield equal to the value of that item for the fight.",
-          "At the start of each hour, this gains +2 value."
+          "Cooldown 7 seconds",
+          "Shield 200.",
+          "Your Shield items have +Shield equal to this item's value.",
+          "When you sell 10 items, give this +10 value."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 8 seconds",
-          "Shield equal to this item's value.",
-          "When you use another item, this gains +Shield equal to the value of that item for the fight.",
-          "At the start of each hour, this gains +3 value."
+          "Cooldown 7 seconds",
+          "Shield 200.",
+          "Your Shield items have +Shield equal to this item's value.",
+          "When you sell 10 items, give this +15 value."
         ]
       },
       "Legendary": {
@@ -52660,10 +55471,10 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "Cooldown (10/9/8) seconds",
-      "Shield equal to this item's value.",
-      "When you use another item, this gains +Shield equal to the value of that item for the fight.",
-      "At the start of each hour, this gains (+1/+2/+3) value."
+      "Cooldown 7 seconds",
+      "Shield 200.",
+      "Your Shield items have +Shield equal to this item's value.",
+      "When you sell 10 items, give this (+5/+10/+15) value."
     ],
     "remarks": [],
     "packId": "Pygmalien_Core"
@@ -52922,19 +55733,19 @@ const data: ParsedItemCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "When you Crit, Haste 1 item for 1 second(s).",
+          "When you Crit, Haste 1 item(s) for 1 second(s).",
           "Adjacent items have +15% Crit Chance."
         ]
       },
       "Gold": {
         "tooltips": [
-          "When you Crit, Haste 1 item for 2 second(s).",
+          "When you Crit, Haste 1 item(s) for 2 second(s).",
           "Adjacent items have +30% Crit Chance."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "When you Crit, Haste 1 item for 3 second(s).",
+          "When you Crit, Haste 1 item(s) for 3 second(s).",
           "Adjacent items have +50% Crit Chance."
         ]
       },
@@ -53023,7 +55834,7 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "When you Crit, Haste 1 item for (1/2/3) second(s).",
+      "When you Crit, Haste 1 item(s) for (1/2/3) second(s).",
       "Adjacent items have (+15%/+30%/+50%) Crit Chance."
     ],
     "remarks": [],
@@ -53045,7 +55856,7 @@ const data: ParsedItemCard[] = [
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 7 seconds",
+          "Cooldown 6 seconds",
           "Deal 1 damage.",
           "Double this item's damage for the fight."
         ]
@@ -53133,7 +55944,7 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "Cooldown 7 seconds",
+      "Cooldown 6 seconds",
       "Deal 1 damage.",
       "Double this item's damage for the fight."
     ],
@@ -53151,22 +55962,22 @@ const data: ParsedItemCard[] = [
       "Silver": {
         "tooltips": [
           "Cooldown 7 seconds",
-          "Deal 30 damage.",
+          "Deal 40 damage.",
           "When you Haste, this gains 20 damage for the fight."
         ]
       },
       "Gold": {
         "tooltips": [
           "Cooldown 7 seconds",
-          "Deal 30 damage.",
-          "When you Haste, this gains 30 damage for the fight."
+          "Deal 40 damage.",
+          "When you Haste, this gains 40 damage for the fight."
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 7 seconds",
-          "Deal 30 damage.",
-          "When you Haste, this gains 40 damage for the fight."
+          "Deal 40 damage.",
+          "When you Haste, this gains 60 damage for the fight."
         ]
       },
       "Legendary": {
@@ -53257,8 +56068,8 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
-      "Deal 30 damage.",
-      "When you Haste, this gains (20/30/40) damage for the fight."
+      "Deal 40 damage.",
+      "When you Haste, this gains (20/40/60) damage for the fight."
     ],
     "remarks": [],
     "packId": "Vanessa_Core"
@@ -53441,7 +56252,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Golden",
         "tooltips": [
-          "This has double value."
+          "This has +Max Ammo equal to your Income."
         ]
       },
       {
@@ -53989,7 +56800,7 @@ const data: ParsedItemCard[] = [
   },
   {
     "id": "da049bef-7176-4226-b078-dac37a503835",
-    "name": "Fossilized Femur",
+    "name": "Magnus' Femur",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -54021,7 +56832,8 @@ const data: ParsedItemCard[] = [
       }
     },
     "tags": [
-      "Weapon"
+      "Weapon",
+      "Relic"
     ],
     "hiddenTags": [
       "Damage",
@@ -54263,7 +57075,9 @@ const data: ParsedItemCard[] = [
       "Aquatic",
       "Vehicle"
     ],
-    "hiddenTags": [],
+    "hiddenTags": [
+      "Crit"
+    ],
     "size": "Large",
     "heroes": [
       "Vanessa"
@@ -54510,67 +57324,67 @@ const data: ParsedItemCard[] = [
       {
         "type": "Heavy",
         "tooltips": [
-          "Slow 2 items for 3 second(s)."
+          "...and Enchant the item with Heavy if able."
         ]
       },
       {
         "type": "Icy",
         "tooltips": [
-          "Freeze 1 medium or small item for 3 second(s)."
+          "...and Enchant the item with Icy if able."
         ]
       },
       {
         "type": "Turbo",
         "tooltips": [
-          "Haste 2 items for 3 second(s)."
+          "...and Enchant the item with Turbo if able."
         ]
       },
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to this item's damage."
+          "...and Enchant the item with Shielded if able."
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to this item's Damage."
+          "...and Enchant the item with Restorative if able."
         ]
       },
       {
         "type": "Toxic",
         "tooltips": [
-          "Poison equal to 10% of this item's damage."
+          "...and Enchant the item with Toxic if able."
         ]
       },
       {
         "type": "Fiery",
         "tooltips": [
-          "Burn equal to 10% of this item's damage."
+          "...and Enchant the item with Fiery if able."
         ]
       },
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "...and Enchant the item with Shiny if able."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "...and Enchant the item with Deadly if able."
         ]
       },
       {
         "type": "Radiant",
         "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
+          "...and Enchant the item with Radiant if able."
         ]
       },
       {
         "type": "Obsidian",
         "tooltips": [
-          "This has double Damage."
+          "...and Enchant the item with Obsidian if able."
         ]
       }
     ],
@@ -55280,19 +58094,19 @@ const data: ParsedItemCard[] = [
       {
         "type": "Heavy",
         "tooltips": [
-          "When you sell this, your leftmost Slow item gains +1 Slow duration."
+          "When you sell this, your leftmost Slow item gains +0.2 Slow duration."
         ]
       },
       {
         "type": "Icy",
         "tooltips": [
-          "When you sell this, your leftmost Freeze item gains +0.2 Freeze duration."
+          "When you sell this, your leftmost Freeze item gains +0.1 Freeze duration."
         ]
       },
       {
         "type": "Turbo",
         "tooltips": [
-          "When you sell this, your leftmost Haste item gains +1 Haste duration."
+          "When you sell this, your leftmost Haste item gains +0.2 Haste duration."
         ]
       },
       {
@@ -55304,31 +58118,31 @@ const data: ParsedItemCard[] = [
       {
         "type": "Restorative",
         "tooltips": [
-          "When you sell this, your leftmost Heal item gains +30 Heal."
+          "When you sell this, your leftmost Heal item gains +15 Heal."
         ]
       },
       {
         "type": "Toxic",
         "tooltips": [
-          "When you sell this, your leftmost Poison item gains +2 Poison."
+          "When you sell this, your leftmost Poison item gains +1 Poison."
         ]
       },
       {
         "type": "Fiery",
         "tooltips": [
-          "When you sell this, your leftmost Burn item gains +2 Burn."
+          "When you sell this, your leftmost Burn item gains +1 Burn."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "When you sell this, your leftmost item gains 10% Crit Chance."
+          "When you sell this, your leftmost item gains 2% Crit Chance."
         ]
       },
       {
         "type": "Obsidian",
         "tooltips": [
-          "When you sell this, your leftmost Weapon item gains +20 damage."
+          "When you sell this, your leftmost Weapon item gains +10 damage."
         ]
       }
     ],
@@ -55915,19 +58729,19 @@ const data: ParsedItemCard[] = [
       {
         "type": "Heavy",
         "tooltips": [
-          "When you sell this, your leftmost Slow item gains +1 Slow duration."
+          "When you sell this, your leftmost Slow item gains +0.2 Slow duration."
         ]
       },
       {
         "type": "Icy",
         "tooltips": [
-          "When you sell this, your leftmost Freeze item gains +0.2 Freeze duration."
+          "When you sell this, your leftmost Freeze item gains +0.1 Freeze duration."
         ]
       },
       {
         "type": "Turbo",
         "tooltips": [
-          "When you sell this, your leftmost Haste item gains +1 Haste duration."
+          "When you sell this, your leftmost Haste item gains +0.2 Haste duration."
         ]
       },
       {
@@ -55939,31 +58753,31 @@ const data: ParsedItemCard[] = [
       {
         "type": "Restorative",
         "tooltips": [
-          "When you sell this, your leftmost Heal item gains +30 Heal."
+          "When you sell this, your leftmost Heal item gains +15 Heal."
         ]
       },
       {
         "type": "Toxic",
         "tooltips": [
-          "When you sell this, your leftmost Poison item gains +2 Poison."
+          "When you sell this, your leftmost Poison item gains +1 Poison."
         ]
       },
       {
         "type": "Fiery",
         "tooltips": [
-          "When you sell this, your leftmost Burn item gains +2 Burn."
+          "When you sell this, your leftmost Burn item gains +1 Burn."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "When you sell this, your leftmost item gains 10% Crit Chance."
+          "When you sell this, your leftmost item gains 2% Crit Chance."
         ]
       },
       {
         "type": "Obsidian",
         "tooltips": [
-          "When you sell this, your leftmost Weapon item gains +20 damage."
+          "When you sell this, your leftmost Weapon item gains +10 damage."
         ]
       }
     ],
@@ -56204,21 +59018,21 @@ const data: ParsedItemCard[] = [
       "Bronze": {
         "tooltips": [
           "Cooldown 5 seconds",
-          "Deal 5 damage.",
+          "Deal 10 damage.",
           "Your enemy's Shield items lose 5 Shield for the fight."
         ]
       },
       "Silver": {
         "tooltips": [
           "Cooldown 5 seconds",
-          "Deal 10 damage.",
+          "Deal 20 damage.",
           "Your enemy's Shield items lose 10 Shield for the fight."
         ]
       },
       "Gold": {
         "tooltips": [
           "Cooldown 5 seconds",
-          "Deal 20 damage.",
+          "Deal 30 damage.",
           "Your enemy's Shield items lose 15 Shield for the fight."
         ]
       },
@@ -56313,7 +59127,7 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
-      "Deal (5/10/20/40) damage.",
+      "Deal (10/20/30/40) damage.",
       "Your enemy's Shield items lose (5/10/15/20) Shield for the fight."
     ],
     "remarks": [],
@@ -56557,26 +59371,26 @@ const data: ParsedItemCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "Cooldown 10 seconds",
-          "Heal equal to this item's value.",
-          "When you use another item, this gains Heal equal to the value of that item for the fight.",
-          "At the start of each hour, this gains +1 value."
+          "Cooldown 6 seconds",
+          "Heal 200.",
+          "Your Heal items have +Heal equal to this item's value.",
+          "When you sell 10 items, give this +5 value."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 9 seconds",
-          "Heal equal to this item's value.",
-          "When you use another item, this gains Heal equal to the value of that item for the fight.",
-          "At the start of each hour, this gains +2 value."
+          "Cooldown 6 seconds",
+          "Heal 200.",
+          "Your Heal items have +Heal equal to this item's value.",
+          "When you sell 10 items, give this +10 value."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 8 seconds",
-          "Heal equal to this item's value.",
-          "When you use another item, this gains Heal equal to the value of that item for the fight.",
-          "At the start of each hour, this gains +3 value."
+          "Cooldown 6 seconds",
+          "Heal 200.",
+          "Your Heal items have +Heal equal to this item's value.",
+          "When you sell 10 items, give this +15 value."
         ]
       },
       "Legendary": {
@@ -56664,10 +59478,10 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "Cooldown (10/9/8) seconds",
-      "Heal equal to this item's value.",
-      "When you use another item, this gains Heal equal to the value of that item for the fight.",
-      "At the start of each hour, this gains (+1/+2/+3) value."
+      "Cooldown 6 seconds",
+      "Heal 200.",
+      "Your Heal items have +Heal equal to this item's value.",
+      "When you sell 10 items, give this (+5/+10/+15) value."
     ],
     "remarks": [],
     "packId": "Pygmalien_Core"
@@ -56681,14 +59495,14 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Cooldown 6 seconds",
           "Burn 3.",
-          "Gain 3 Regeneration for the fight."
+          "Gain 1 Regeneration for the fight."
         ]
       },
       "Silver": {
         "tooltips": [
           "Cooldown 6 seconds",
           "Burn 5.",
-          "Gain 5 Regeneration for the fight."
+          "Gain 4 Regeneration for the fight."
         ]
       },
       "Gold": {
@@ -56702,7 +59516,7 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Cooldown 6 seconds",
           "Burn 9.",
-          "Gain 9 Regeneration for the fight."
+          "Gain 10 Regeneration for the fight."
         ]
       },
       "Legendary": {
@@ -56789,7 +59603,7 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Burn (3/5/7/9).",
-      "Gain (3/5/7/9) Regeneration for the fight."
+      "Gain (1/4/7/10) Regeneration for the fight."
     ],
     "remarks": [],
     "packId": "Pyg_Frozen_Assets"
@@ -56797,30 +59611,27 @@ const data: ParsedItemCard[] = [
   {
     "id": "1ce6ea48-4049-4e66-b792-d360ae9ffedf",
     "name": "Poppy Field",
-    "startingTier": "Bronze",
+    "startingTier": "Silver",
     "tiers": {
       "Bronze": {
-        "tooltips": [
-          "When you use a Weapon, Poison 3.",
-          "Your Weapons have + Damage equal to the Poison on your enemy."
-        ]
+        "tooltips": []
       },
       "Silver": {
         "tooltips": [
           "When you use a Weapon, Poison 4.",
-          "Your Weapons have + Damage equal to the Poison on your enemy."
+          "Your Weapons have + Damage equal to 50% of the Poison on your enemy."
         ]
       },
       "Gold": {
         "tooltips": [
           "When you use a Weapon, Poison 5.",
-          "Your Weapons have + Damage equal to the Poison on your enemy."
+          "Your Weapons have + Damage equal to 75% of the Poison on your enemy."
         ]
       },
       "Diamond": {
         "tooltips": [
           "When you use a Weapon, Poison 6.",
-          "Your Weapons have + Damage equal to the Poison on your enemy."
+          "Your Weapons have + Damage equal to 100% of the Poison on your enemy."
         ]
       },
       "Legendary": {
@@ -56890,7 +59701,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Deadly",
         "tooltips": [
-          "Your Weapons have + Crit Chance % equal to this item's Poison."
+          "Your Weapons have + Crit Chance % equal to Poison on your enemy."
         ]
       },
       {
@@ -56907,8 +59718,8 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "When you use a Weapon, Poison (3/4/5/6).",
-      "Your Weapons have + Damage equal to the Poison on your enemy."
+      "When you use a Weapon, Poison (4/5/6).",
+      "Your Weapons have + Damage equal to (50%/75%/100%) of the Poison on your enemy."
     ],
     "remarks": [],
     "packId": "Mak_Core"
@@ -56946,9 +59757,7 @@ const data: ParsedItemCard[] = [
         "tooltips": []
       }
     },
-    "tags": [
-      "Tech"
-    ],
+    "tags": [],
     "hiddenTags": [
       "DamageReference",
       "Cooldown"
@@ -57046,15 +59855,15 @@ const data: ParsedItemCard[] = [
       "Gold": {
         "tooltips": [
           "Cooldown 5 seconds",
-          "Deal 40 damage.",
-          "When this gains Haste, this and the weapon to the left gains 20 damage for the fight."
+          "Deal 20 damage.",
+          "When this gains Haste, this and the weapon to the left of this gains 40 damage for the fight."
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 5 seconds",
-          "Deal 40 damage.",
-          "When this gains Haste, this and the weapon to the left gains 25 damage for the fight."
+          "Deal 20 damage.",
+          "When this gains Haste, this and the weapon to the left of this gains 60 damage for the fight."
         ]
       },
       "Legendary": {
@@ -57143,8 +59952,8 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
-      "Deal 40 damage.",
-      "When this gains Haste, this and the weapon to the left gains (20/25) damage for the fight."
+      "Deal 20 damage.",
+      "When this gains Haste, this and the weapon to the left of this gains (40/60) damage for the fight."
     ],
     "remarks": [],
     "packId": "Dooley_Core"
@@ -57443,55 +60252,55 @@ const data: ParsedItemCard[] = [
       {
         "type": "Heavy",
         "tooltips": [
-          "When you sell this, your leftmost Slow item gains +1 Slow duration."
+          "When you sell this, your leftmost Slow item gains +0.2 Slow duration."
         ]
       },
       {
         "type": "Icy",
         "tooltips": [
-          "When you sell this, your leftmost Freeze item gains +0.2 Freeze duration."
+          "When you sell this, your leftmost Freeze item gains +0.1 Freeze duration."
         ]
       },
       {
         "type": "Turbo",
         "tooltips": [
-          "When you sell this, your leftmost Haste item gains +1 Haste duration."
+          "When you sell this, your leftmost Haste item gains +0.2 Haste duration."
         ]
       },
       {
         "type": "Shielded",
         "tooltips": [
-          "When you sell this, your leftmost Shield item gains +20 Shield."
+          "When you sell this, your leftmost Shield item gains +10 Shield."
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "When you sell this, your leftmost Heal item gains +30 Heal."
+          "When you sell this, your leftmost Heal item gains +15 Heal."
         ]
       },
       {
         "type": "Toxic",
         "tooltips": [
-          "When you sell this, your leftmost Poison item gains +2 Poison."
+          "When you sell this, your leftmost Poison item gains +1 Poison."
         ]
       },
       {
         "type": "Fiery",
         "tooltips": [
-          "When you sell this, your leftmost Burn item gains +2 Burn."
+          "When you sell this, your leftmost Burn item gains +1 Burn."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "When you sell this, your leftmost item gains 10% Crit Chance."
+          "When you sell this, your leftmost item gains 2% Crit Chance."
         ]
       },
       {
         "type": "Obsidian",
         "tooltips": [
-          "When you sell this, your leftmost Weapon item gains +20 damage."
+          "When you sell this, your leftmost Weapon item gains +10 damage."
         ]
       }
     ],

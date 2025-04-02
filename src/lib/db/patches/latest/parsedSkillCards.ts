@@ -142,17 +142,17 @@ const data: ParsedSkillCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "The first 2 times you use your rightmost item each fight, Charge 1 Slow item 1 second(s)."
+          "The first 3 times you use your rightmost item each fight, Charge 1 Slow item 1 second(s)."
         ]
       },
       "Gold": {
         "tooltips": [
-          "The first 4 times you use your rightmost item each fight, Charge 1 Slow item 1 second(s)."
+          "The first 6 times you use your rightmost item each fight, Charge 1 Slow item 1 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "The first 6 times you use your rightmost item each fight, Charge 1 Slow item 1 second(s)."
+          "The first 9 times you use your rightmost item each fight, Charge 1 Slow item 1 second(s)."
         ]
       },
       "Legendary": {
@@ -171,7 +171,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_RightyTighty.png",
     "unifiedTooltips": [
-      "The first (2/4/6) times you use your rightmost item each fight, Charge 1 Slow item 1 second(s)."
+      "The first (3/6/9) times you use your rightmost item each fight, Charge 1 Slow item 1 second(s)."
     ],
     "remarks": [],
     "packId": "Dooley_Core"
@@ -877,8 +877,7 @@ const data: ParsedSkillCard[] = [
     ],
     "size": "Medium",
     "heroes": [
-      "Pygmalien",
-      "Mak"
+      "Pygmalien"
     ],
     "artKey": "Icon_Skill_Endurance.png",
     "unifiedTooltips": [
@@ -932,52 +931,6 @@ const data: ParsedSkillCard[] = [
     "packId": "Core"
   },
   {
-    "id": "9d910b0a-9ef3-447f-ab41-195effb68f21",
-    "name": "Hot Spot",
-    "startingTier": "Silver",
-    "tiers": {
-      "Bronze": {
-        "tooltips": []
-      },
-      "Silver": {
-        "tooltips": [
-          "When you use your leftmost item, Burn 2."
-        ]
-      },
-      "Gold": {
-        "tooltips": [
-          "When you use your leftmost item, Burn 3."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "When you use your leftmost item, Burn 4."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [],
-    "hiddenTags": [
-      "Burn"
-    ],
-    "size": "Medium",
-    "heroes": [
-      "Vanessa",
-      "Dooley",
-      "Jules",
-      "Stelle",
-      "Pygmalien"
-    ],
-    "artKey": "Icon_Skill_HotSpot.png",
-    "unifiedTooltips": [
-      "When you use your leftmost item, Burn (2/3/4)."
-    ],
-    "remarks": [],
-    "packId": "Vanessa_Core"
-  },
-  {
     "id": "71433809-d05a-4544-9959-aff20ae5db93",
     "name": "Iron Sharpens Iron",
     "startingTier": "Silver",
@@ -1019,6 +972,52 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_IronSharpensIron.png",
     "unifiedTooltips": [
       "Your leftmost Weapon has +2 damage. When you buy a weapon, increase this bonus by (2/3/4)."
+    ],
+    "remarks": [],
+    "packId": "Vanessa_Core"
+  },
+  {
+    "id": "9d910b0a-9ef3-447f-ab41-195effb68f21",
+    "name": "Hot Spot",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "When you use your leftmost item, Burn 2."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "When you use your leftmost item, Burn 3."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "When you use your leftmost item, Burn 4."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "Burn"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Vanessa",
+      "Dooley",
+      "Jules",
+      "Stelle",
+      "Pygmalien"
+    ],
+    "artKey": "Icon_Skill_HotSpot.png",
+    "unifiedTooltips": [
+      "When you use your leftmost item, Burn (2/3/4)."
     ],
     "remarks": [],
     "packId": "Vanessa_Core"
@@ -1237,44 +1236,6 @@ const data: ParsedSkillCard[] = [
     "packId": "Dooley_Core"
   },
   {
-    "id": "8e2f3e1c-bd00-4b58-b746-a6ae18f804c3",
-    "name": "Hyper Focus",
-    "startingTier": "Diamond",
-    "tiers": {
-      "Bronze": {
-        "tooltips": []
-      },
-      "Silver": {
-        "tooltips": []
-      },
-      "Gold": {
-        "tooltips": []
-      },
-      "Diamond": {
-        "tooltips": [
-          "If you have only one medium item, its cooldown is reduced by 30%."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [],
-    "hiddenTags": [
-      "Cooldown"
-    ],
-    "size": "Medium",
-    "heroes": [
-      "Common"
-    ],
-    "artKey": "Icon_Skill_MON_Lurk_01.png",
-    "unifiedTooltips": [
-      "If you have only one medium item, its cooldown is reduced by 30%."
-    ],
-    "remarks": [],
-    "packId": "Core"
-  },
-  {
     "id": "13f4df45-8f29-4a48-8a2b-b8176e17c85d",
     "name": "Retaliatory Toxins",
     "startingTier": "Gold",
@@ -1314,6 +1275,44 @@ const data: ParsedSkillCard[] = [
     ],
     "remarks": [],
     "packId": "Pygmalien_Core"
+  },
+  {
+    "id": "8e2f3e1c-bd00-4b58-b746-a6ae18f804c3",
+    "name": "Hyper Focus",
+    "startingTier": "Diamond",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": []
+      },
+      "Diamond": {
+        "tooltips": [
+          "If you have only one medium item, its cooldown is reduced by 30%."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "Cooldown"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Common"
+    ],
+    "artKey": "Icon_Skill_MON_Lurk_01.png",
+    "unifiedTooltips": [
+      "If you have only one medium item, its cooldown is reduced by 30%."
+    ],
+    "remarks": [],
+    "packId": "Core"
   },
   {
     "id": "d1505b87-551f-4786-818c-3c441f920d7b",
@@ -1724,17 +1723,17 @@ const data: ParsedSkillCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "The first 5 times you slow each fight, Charge 1 Regeneration item 1 second(s)."
+          "The first 5 times times you slow each fight, Charge 1 Regeneration item 1 second(s)."
         ]
       },
       "Gold": {
         "tooltips": [
-          "The first 10 times you slow each fight, Charge 1 Regeneration item 1 second(s)."
+          "The first 10 times times you slow each fight, Charge 1 Regeneration item 1 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "The first 15 times you slow each fight, Charge 1 Regeneration item 1 second(s)."
+          "The first 15 times times you slow each fight, Charge 1 Regeneration item 1 second(s)."
         ]
       },
       "Legendary": {
@@ -1753,7 +1752,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_HardlyWorkin.png",
     "unifiedTooltips": [
-      "The first (5/10/15) times you slow each fight, Charge 1 Regeneration item 1 second(s)."
+      "The first (5/10/15) times times you slow each fight, Charge 1 Regeneration item 1 second(s)."
     ],
     "remarks": [],
     "packId": "Dooley_Core"
@@ -1977,17 +1976,17 @@ const data: ParsedSkillCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "The first time you Crit each fight, Freeze 1 item for 3 second(s)."
+          "The first time you Crit each fight, Freeze 1 item(s) for 3 second(s)."
         ]
       },
       "Gold": {
         "tooltips": [
-          "The first time you Crit each fight, Freeze 1 item for 4 second(s)."
+          "The first time you Crit each fight, Freeze 1 item(s) for 4 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "The first time you Crit each fight, Freeze 1 item for 5 second(s)."
+          "The first time you Crit each fight, Freeze 1 item(s) for 5 second(s)."
         ]
       },
       "Legendary": {
@@ -2005,7 +2004,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_StunningHit.png",
     "unifiedTooltips": [
-      "The first time you Crit each fight, Freeze 1 item for (3/4/5) second(s)."
+      "The first time you Crit each fight, Freeze 1 item(s) for (3/4/5) second(s)."
     ],
     "remarks": [],
     "packId": "Dooley_Core"
@@ -2146,50 +2145,6 @@ const data: ParsedSkillCard[] = [
     "packId": "Vanessa_Core"
   },
   {
-    "id": "fd3f0e7b-27ac-4bde-87f8-5ec61b19c4f7",
-    "name": "Sabotage",
-    "startingTier": "Gold",
-    "tiers": {
-      "Bronze": {
-        "tooltips": []
-      },
-      "Silver": {
-        "tooltips": []
-      },
-      "Gold": {
-        "tooltips": [
-          "The first 5 times you use a Tool each fight, Slow 1 item for 1 second(s)."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "The first 10 times you use a Tool each fight, Slow 1 item for 1 second(s)."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [
-      "Tool"
-    ],
-    "hiddenTags": [
-      "Slow"
-    ],
-    "size": "Medium",
-    "heroes": [
-      "Vanessa",
-      "Dooley",
-      "Stelle"
-    ],
-    "artKey": "Icon_Skill_Sabotage.png",
-    "unifiedTooltips": [
-      "The first (5/10) times you use a Tool each fight, Slow 1 item for 1 second(s)."
-    ],
-    "remarks": [],
-    "packId": "Vanessa_Core"
-  },
-  {
     "id": "b7c2ce67-0da5-4360-9eda-b328817affe6",
     "name": "Heavy Shielding",
     "startingTier": "Bronze",
@@ -2234,6 +2189,50 @@ const data: ParsedSkillCard[] = [
     ],
     "remarks": [],
     "packId": "Jules_Core"
+  },
+  {
+    "id": "fd3f0e7b-27ac-4bde-87f8-5ec61b19c4f7",
+    "name": "Sabotage",
+    "startingTier": "Gold",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": [
+          "The first 5 times you use a Tool each fight, Slow 1 item(s) for 1 second(s)."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "The first 10 times you use a Tool each fight, Slow 1 item(s) for 1 second(s)."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Tool"
+    ],
+    "hiddenTags": [
+      "Slow"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Vanessa",
+      "Dooley",
+      "Stelle"
+    ],
+    "artKey": "Icon_Skill_Sabotage.png",
+    "unifiedTooltips": [
+      "The first (5/10) times you use a Tool each fight, Slow 1 item(s) for 1 second(s)."
+    ],
+    "remarks": [],
+    "packId": "Vanessa_Core"
   },
   {
     "id": "cdf1d8f2-851b-43a8-bc8b-6d3ce2d4bca9",
@@ -2284,22 +2283,22 @@ const data: ParsedSkillCard[] = [
     "tiers": {
       "Bronze": {
         "tooltips": [
-          "At the start of each fight, slow 1 item for 3 second(s)."
+          "At the start of each fight, slow 1 item(s) for 3 second(s)."
         ]
       },
       "Silver": {
         "tooltips": [
-          "At the start of each fight, slow 1 item for 5 second(s)."
+          "At the start of each fight, slow 1 item(s) for 5 second(s)."
         ]
       },
       "Gold": {
         "tooltips": [
-          "At the start of each fight, slow 1 item for 7 second(s)."
+          "At the start of each fight, slow 1 item(s) for 7 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "At the start of each fight, slow 1 item for 9 second(s)."
+          "At the start of each fight, slow 1 item(s) for 9 second(s)."
         ]
       },
       "Legendary": {
@@ -2316,7 +2315,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_MON_RogueScrapper_01.png",
     "unifiedTooltips": [
-      "At the start of each fight, slow 1 item for (3/5/7/9) second(s)."
+      "At the start of each fight, slow 1 item(s) for (3/5/7/9) second(s)."
     ],
     "remarks": [],
     "packId": "Core"
@@ -2642,8 +2641,7 @@ const data: ParsedSkillCard[] = [
     ],
     "size": "Medium",
     "heroes": [
-      "Dooley",
-      "Mak"
+      "Dooley"
     ],
     "artKey": "Icon_Skill_BurningShield.png",
     "unifiedTooltips": [
@@ -3304,17 +3302,17 @@ const data: ParsedSkillCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "While your enemy has more health than you, your Heal items have their cooldowns reduced by 5%."
+          "While your enemy has more health than you, your Heal and Regeneration items have their cooldowns reduced by 5%."
         ]
       },
       "Gold": {
         "tooltips": [
-          "While your enemy has more health than you, your Heal items have their cooldowns reduced by 10%."
+          "While your enemy has more health than you, your Heal and Regeneration items have their cooldowns reduced by 10%."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "While your enemy has more health than you, your Heal items have their cooldowns reduced by 15%."
+          "While your enemy has more health than you, your Heal and Regeneration items have their cooldowns reduced by 15%."
         ]
       },
       "Legendary": {
@@ -3333,7 +3331,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_RapidRelief.png",
     "unifiedTooltips": [
-      "While your enemy has more health than you, your Heal items have their cooldowns reduced by (5%/10%/15%)."
+      "While your enemy has more health than you, your Heal and Regeneration items have their cooldowns reduced by (5%/10%/15%)."
     ],
     "remarks": [],
     "packId": "Pygmalien_Core"
@@ -3398,12 +3396,12 @@ const data: ParsedSkillCard[] = [
       },
       "Gold": {
         "tooltips": [
-          "The first 5 times you use The Core each fight, Slow 1 item for 2 second(s)."
+          "The first 5 times you use The Core each fight, Slow 1 item(s) for 2 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "The first 10 times you use The Core each fight, Slow 1 item for 2 second(s)."
+          "The first 10 times you use The Core each fight, Slow 1 item(s) for 2 second(s)."
         ]
       },
       "Legendary": {
@@ -3422,7 +3420,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_CPUThrotteling.png",
     "unifiedTooltips": [
-      "The first (5/10) times you use The Core each fight, Slow 1 item for 2 second(s)."
+      "The first (5/10) times you use The Core each fight, Slow 1 item(s) for 2 second(s)."
     ],
     "remarks": [],
     "packId": "Dooley_Core"
@@ -3528,12 +3526,12 @@ const data: ParsedSkillCard[] = [
       },
       "Gold": {
         "tooltips": [
-          "The first 4 times you use an Ammo item each fight, Slow 1 item for 1 second(s)."
+          "The first 4 times you use an Ammo item each fight, Slow 1 item(s) for 1 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "The first 8 times you use an Ammo item each fight, Slow 1 item for 1 second(s)."
+          "The first 8 times you use an Ammo item each fight, Slow 1 item(s) for 1 second(s)."
         ]
       },
       "Legendary": {
@@ -3551,7 +3549,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_SlowMotion.png",
     "unifiedTooltips": [
-      "The first (4/8) times you use an Ammo item each fight, Slow 1 item for 1 second(s)."
+      "The first (4/8) times you use an Ammo item each fight, Slow 1 item(s) for 1 second(s)."
     ],
     "remarks": [],
     "packId": "Vanessa_Core"
@@ -3648,22 +3646,22 @@ const data: ParsedSkillCard[] = [
     "tiers": {
       "Bronze": {
         "tooltips": [
-          "Your leftmost Burn item has +3 Burn."
+          "Your leftmost Burn item has +2 Burn."
         ]
       },
       "Silver": {
         "tooltips": [
-          "Your leftmost Burn item has +6 Burn."
+          "Your leftmost Burn item has +4 Burn."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Your leftmost Burn item has +9 Burn."
+          "Your leftmost Burn item has +6 Burn."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Your leftmost Burn item has +12 Burn."
+          "Your leftmost Burn item has +8 Burn."
         ]
       },
       "Legendary": {
@@ -3685,7 +3683,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_FireStarter.png",
     "unifiedTooltips": [
-      "Your leftmost Burn item has (+3/+6/+9/+12) Burn."
+      "Your leftmost Burn item has (+2/+4/+6/+8) Burn."
     ],
     "remarks": [],
     "packId": "Vanessa_Core"
@@ -3875,22 +3873,22 @@ const data: ParsedSkillCard[] = [
     "tiers": {
       "Bronze": {
         "tooltips": [
-          "Your leftmost Poison item has +3 Poison."
+          "Your leftmost Poison item has +2 Poison."
         ]
       },
       "Silver": {
         "tooltips": [
-          "Your leftmost Poison item has +6 Poison."
+          "Your leftmost Poison item has +4 Poison."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Your leftmost Poison item has +9 Poison."
+          "Your leftmost Poison item has +6 Poison."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Your leftmost Poison item has +12 Poison."
+          "Your leftmost Poison item has +8 Poison."
         ]
       },
       "Legendary": {
@@ -3909,7 +3907,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_InitialDose.png",
     "unifiedTooltips": [
-      "Your leftmost Poison item has (+3/+6/+9/+12) Poison."
+      "Your leftmost Poison item has (+2/+4/+6/+8) Poison."
     ],
     "remarks": [],
     "packId": "Vanessa_Core"
@@ -4058,22 +4056,22 @@ const data: ParsedSkillCard[] = [
     "tiers": {
       "Bronze": {
         "tooltips": [
-          "Your Burn items have +2 Burn."
+          "Your Burn items have +1 Burn."
         ]
       },
       "Silver": {
         "tooltips": [
-          "Your Burn items have +4 Burn."
+          "Your Burn items have +2 Burn."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Your Burn items have +6 Burn."
+          "Your Burn items have +3 Burn."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Your Burn items have +8 Burn."
+          "Your Burn items have +4 Burn."
         ]
       },
       "Legendary": {
@@ -4094,7 +4092,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_Fiery.png",
     "unifiedTooltips": [
-      "Your Burn items have (+2/+4/+6/+8) Burn."
+      "Your Burn items have (+1/+2/+3/+4) Burn."
     ],
     "remarks": [],
     "packId": "Vanessa_Core"
@@ -4334,12 +4332,12 @@ const data: ParsedSkillCard[] = [
       },
       "Gold": {
         "tooltips": [
-          "The first 5 times you use The Core each fight, Haste 1 item for 2 second(s)."
+          "The first 5 times you use The Core each fight, Haste 1 item(s) for 2 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "The first 10 times you use The Core each fight, Haste 1 item for 2 second(s)."
+          "The first 10 times you use The Core each fight, Haste 1 item(s) for 2 second(s)."
         ]
       },
       "Legendary": {
@@ -4358,7 +4356,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_DOO_HeavyMachinery.png",
     "unifiedTooltips": [
-      "The first (5/10) times you use The Core each fight, Haste 1 item for 2 second(s)."
+      "The first (5/10) times you use The Core each fight, Haste 1 item(s) for 2 second(s)."
     ],
     "remarks": [],
     "packId": "Dooley_Core"
@@ -4609,7 +4607,8 @@ const data: ParsedSkillCard[] = [
     ],
     "size": "Medium",
     "heroes": [
-      "Dooley",
+      "Vanessa",
+      "Jules",
       "Mak"
     ],
     "artKey": "Icon_Skill_MothtoaFlame.png",
@@ -5026,17 +5025,17 @@ const data: ParsedSkillCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "The first time you Haste each fight, Freeze 1 item for 3 second(s)."
+          "The first time you Haste each fight, Freeze 1 item(s) for 3 second(s)."
         ]
       },
       "Gold": {
         "tooltips": [
-          "The first time you Haste each fight, Freeze 1 item for 4 second(s)."
+          "The first time you Haste each fight, Freeze 1 item(s) for 4 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "The first time you Haste each fight, Freeze 1 item for 5 second(s)."
+          "The first time you Haste each fight, Freeze 1 item(s) for 5 second(s)."
         ]
       },
       "Legendary": {
@@ -5057,7 +5056,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_QuickFreeze.png",
     "unifiedTooltips": [
-      "The first time you Haste each fight, Freeze 1 item for (3/4/5) second(s)."
+      "The first time you Haste each fight, Freeze 1 item(s) for (3/4/5) second(s)."
     ],
     "remarks": [],
     "packId": "Dooley_Core"
@@ -5322,8 +5321,7 @@ const data: ParsedSkillCard[] = [
     ],
     "size": "Medium",
     "heroes": [
-      "Pygmalien",
-      "Mak"
+      "Pygmalien"
     ],
     "artKey": "Icon_Skill_CriticalAid.png",
     "unifiedTooltips": [
@@ -6560,12 +6558,12 @@ const data: ParsedSkillCard[] = [
       },
       "Gold": {
         "tooltips": [
-          "The first 4 times you use a Weapon each fight, charge 1 item 1 second(s)."
+          "The first 4 times you use a Weapon each fight, charge 1 item(s) 1 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "The first 8 times you use a Weapon each fight, charge 1 item 1 second(s)."
+          "The first 8 times you use a Weapon each fight, charge 1 item(s) 1 second(s)."
         ]
       },
       "Legendary": {
@@ -6584,7 +6582,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_ExtraArms.png",
     "unifiedTooltips": [
-      "The first (4/8) times you use a Weapon each fight, charge 1 item 1 second(s)."
+      "The first (4/8) times you use a Weapon each fight, charge 1 item(s) 1 second(s)."
     ],
     "remarks": [],
     "packId": "Vanessa_Core"
@@ -6777,17 +6775,17 @@ const data: ParsedSkillCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "The first time you Poison each fight, Freeze 1 item for 2 second(s)."
+          "The first time you Poison each fight, Freeze 1 item(s) for 2 second(s)."
         ]
       },
       "Gold": {
         "tooltips": [
-          "The first time you Poison each fight, Freeze 1 item for 3 second(s)."
+          "The first time you Poison each fight, Freeze 1 item(s) for 3 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "The first time you Poison each fight, Freeze 1 item for 4 second(s)."
+          "The first time you Poison each fight, Freeze 1 item(s) for 4 second(s)."
         ]
       },
       "Legendary": {
@@ -6807,7 +6805,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_ParalyticPoison.png",
     "unifiedTooltips": [
-      "The first time you Poison each fight, Freeze 1 item for (2/3/4) second(s)."
+      "The first time you Poison each fight, Freeze 1 item(s) for (2/3/4) second(s)."
     ],
     "remarks": [],
     "packId": "Dooley_Core"
@@ -7231,12 +7229,12 @@ const data: ParsedSkillCard[] = [
       },
       "Gold": {
         "tooltips": [
-          "The first 3 times you Shield each fight, Freeze 1 item for 2 second(s)."
+          "The first 3 times you Shield each fight, Freeze 1 item(s) for 2 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "The first 6 times you Shield each fight, Freeze 1 item for 2 second(s)."
+          "The first 6 times you Shield each fight, Freeze 1 item(s) for 2 second(s)."
         ]
       },
       "Legendary": {
@@ -7254,7 +7252,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_MON_VolkasEnforcer_03.png",
     "unifiedTooltips": [
-      "The first (3/6) times you Shield each fight, Freeze 1 item for 2 second(s)."
+      "The first (3/6) times you Shield each fight, Freeze 1 item(s) for 2 second(s)."
     ],
     "remarks": [],
     "packId": "Core"
@@ -7799,17 +7797,17 @@ const data: ParsedSkillCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "The first time you Slow each fight, Freeze 1 item for 2 second(s)."
+          "The first time you Slow each fight, Freeze 1 item(s) for 2 second(s)."
         ]
       },
       "Gold": {
         "tooltips": [
-          "The first time you Slow each fight, Freeze 1 item for 3 second(s)."
+          "The first time you Slow each fight, Freeze 1 item(s) for 3 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "The first time you Slow each fight, Freeze 1 item for 4 second(s)."
+          "The first time you Slow each fight, Freeze 1 item(s) for 4 second(s)."
         ]
       },
       "Legendary": {
@@ -7830,7 +7828,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_CreepingChill.png",
     "unifiedTooltips": [
-      "The first time you Slow each fight, Freeze 1 item for (2/3/4) second(s)."
+      "The first time you Slow each fight, Freeze 1 item(s) for (2/3/4) second(s)."
     ],
     "remarks": [],
     "packId": "Dooley_Core"
@@ -7848,12 +7846,12 @@ const data: ParsedSkillCard[] = [
       },
       "Gold": {
         "tooltips": [
-          "The first 5 times you use your leftmost item each fight, Haste 1 item for 1 second(s)."
+          "The first 5 times you use your leftmost item each fight, Haste 1 item(s) for 1 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "The first 10 times you use your leftmost item each fight, Haste 1 item for 1 second(s)."
+          "The first 10 times you use your leftmost item each fight, Haste 1 item(s) for 1 second(s)."
         ]
       },
       "Legendary": {
@@ -7872,7 +7870,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_STE_LeftyLoosey.png",
     "unifiedTooltips": [
-      "The first (5/10) times you use your leftmost item each fight, Haste 1 item for 1 second(s)."
+      "The first (5/10) times you use your leftmost item each fight, Haste 1 item(s) for 1 second(s)."
     ],
     "remarks": [],
     "packId": "Dooley_Core"
@@ -9194,17 +9192,17 @@ const data: ParsedSkillCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "When you Crit, Haste 1 item for 1 second(s)."
+          "When you Crit, Haste 1 item(s) for 1 second(s)."
         ]
       },
       "Gold": {
         "tooltips": [
-          "When you Crit, Haste 1 item for 2 second(s)."
+          "When you Crit, Haste 1 item(s) for 2 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "When you Crit, Haste 1 item for 3 second(s)."
+          "When you Crit, Haste 1 item(s) for 3 second(s)."
         ]
       },
       "Legendary": {
@@ -9222,7 +9220,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_MON_Skyfall_01.png",
     "unifiedTooltips": [
-      "When you Crit, Haste 1 item for (1/2/3) second(s)."
+      "When you Crit, Haste 1 item(s) for (1/2/3) second(s)."
     ],
     "remarks": [],
     "packId": "Core"
@@ -9521,12 +9519,12 @@ const data: ParsedSkillCard[] = [
       },
       "Gold": {
         "tooltips": [
-          "The first 5 times use the Core each fight, Freeze 1 item of equal or smaller size for 1 second(s)."
+          "The first 5 times use the Core each fight, Freeze 1 item(s) of equal or smaller size for 1 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "The first 10 times use the Core each fight, Freeze 1 item of equal or smaller size for 1 second(s)."
+          "The first 10 times use the Core each fight, Freeze 1 item(s) of equal or smaller size for 1 second(s)."
         ]
       },
       "Legendary": {
@@ -9545,7 +9543,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_DOO_LiquidCooled.png",
     "unifiedTooltips": [
-      "The first (5/10) times use the Core each fight, Freeze 1 item of equal or smaller size for 1 second(s)."
+      "The first (5/10) times use the Core each fight, Freeze 1 item(s) of equal or smaller size for 1 second(s)."
     ],
     "remarks": [],
     "packId": "Dooley_Core"
@@ -9585,8 +9583,7 @@ const data: ParsedSkillCard[] = [
     "size": "Medium",
     "heroes": [
       "Pygmalien",
-      "Vanessa",
-      "Mak"
+      "Vanessa"
     ],
     "artKey": "Icon_Skill_ImprovisedHealing.png",
     "unifiedTooltips": [
@@ -9692,7 +9689,7 @@ const data: ParsedSkillCard[] = [
       },
       "Diamond": {
         "tooltips": [
-          "When you slow, charge 1 item 1 second(s)."
+          "When you slow, charge 1 item(s) 1 second(s)."
         ]
       },
       "Legendary": {
@@ -9710,7 +9707,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_MON_Smack_01.png",
     "unifiedTooltips": [
-      "When you slow, charge 1 item 1 second(s)."
+      "When you slow, charge 1 item(s) 1 second(s)."
     ],
     "remarks": [],
     "packId": "Core"
@@ -10154,12 +10151,12 @@ const data: ParsedSkillCard[] = [
       },
       "Gold": {
         "tooltips": [
-          "The first time you freeze, burn, slow, poison, and haste each fight, charge 1 item 2 second(s)."
+          "The first time you freeze, burn, slow, poison, and haste each fight, charge 1 item(s) 2 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "The first time you freeze, burn, slow, poison, and haste each fight, charge 1 item 3 second(s)."
+          "The first time you freeze, burn, slow, poison, and haste each fight, charge 1 item(s) 3 second(s)."
         ]
       },
       "Legendary": {
@@ -10181,7 +10178,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_MON_Neophiliac.png",
     "unifiedTooltips": [
-      "The first time you freeze, burn, slow, poison, and haste each fight, charge 1 item (2/3) second(s)."
+      "The first time you freeze, burn, slow, poison, and haste each fight, charge 1 item(s) (2/3) second(s)."
     ],
     "remarks": [],
     "packId": "Core"
@@ -10290,17 +10287,17 @@ const data: ParsedSkillCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "The first time you Burn each fight, Freeze 1 item for 2 second(s)."
+          "The first time you Burn each fight, Freeze 1 item(s) for 2 second(s)."
         ]
       },
       "Gold": {
         "tooltips": [
-          "The first time you Burn each fight, Freeze 1 item for 3 second(s)."
+          "The first time you Burn each fight, Freeze 1 item(s) for 3 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "The first time you Burn each fight, Freeze 1 item for 4 second(s)."
+          "The first time you Burn each fight, Freeze 1 item(s) for 4 second(s)."
         ]
       },
       "Legendary": {
@@ -10323,7 +10320,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_Frostfire.png",
     "unifiedTooltips": [
-      "The first time you Burn each fight, Freeze 1 item for (2/3/4) second(s)."
+      "The first time you Burn each fight, Freeze 1 item(s) for (2/3/4) second(s)."
     ],
     "remarks": [],
     "packId": "Dooley_Core"
@@ -10803,13 +10800,13 @@ const data: ParsedSkillCard[] = [
       },
       "Gold": {
         "tooltips": [
-          "Your items have +30% Crit Chance.",
+          "Your items have +50% Crit Chance.",
           "When you use an item, all your items lose 10% crit chance for the fight."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Your items have +50% Crit Chance.",
+          "Your items have +75% Crit Chance.",
           "When you use an item, all your items lose 10% crit chance for the fight."
         ]
       },
@@ -10832,7 +10829,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_FirstStrike.png",
     "unifiedTooltips": [
-      "Your items have (+30%/+50%) Crit Chance.",
+      "Your items have (+50%/+75%) Crit Chance.",
       "When you use an item, all your items lose 10% crit chance for the fight."
     ],
     "remarks": [],
@@ -10890,17 +10887,17 @@ const data: ParsedSkillCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "You have 1 Regeneration for each non-weapon item you have."
+          "You have 2 Regeneration for each non-weapon item you have."
         ]
       },
       "Gold": {
         "tooltips": [
-          "You have 2 Regeneration for each non-weapon item you have."
+          "You have 4 Regeneration for each non-weapon item you have."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "You have 3 Regeneration for each non-weapon item you have."
+          "You have 6 Regeneration for each non-weapon item you have."
         ]
       },
       "Legendary": {
@@ -10909,7 +10906,6 @@ const data: ParsedSkillCard[] = [
     },
     "tags": [],
     "hiddenTags": [
-      "NonWeapon",
       "Regen"
     ],
     "size": "Medium",
@@ -10919,7 +10915,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_HealthyLifestyle.png",
     "unifiedTooltips": [
-      "You have (1/2/3) Regeneration for each non-weapon item you have."
+      "You have (2/4/6) Regeneration for each non-weapon item you have."
     ],
     "remarks": [],
     "packId": "Pygmalien_Core"
@@ -10931,22 +10927,22 @@ const data: ParsedSkillCard[] = [
     "tiers": {
       "Bronze": {
         "tooltips": [
-          "Your rightmost Burn item has +3 Burn."
+          "Your rightmost Burn item has +2 Burn."
         ]
       },
       "Silver": {
         "tooltips": [
-          "Your rightmost Burn item has +6 Burn."
+          "Your rightmost Burn item has +4 Burn."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Your rightmost Burn item has +9 Burn."
+          "Your rightmost Burn item has +6 Burn."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Your rightmost Burn item has +12 Burn."
+          "Your rightmost Burn item has +8 Burn."
         ]
       },
       "Legendary": {
@@ -10968,10 +10964,51 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_FinalFlame.png",
     "unifiedTooltips": [
-      "Your rightmost Burn item has (+3/+6/+9/+12) Burn."
+      "Your rightmost Burn item has (+2/+4/+6/+8) Burn."
     ],
     "remarks": [],
     "packId": "Vanessa_Core"
+  },
+  {
+    "id": "13989ad3-2122-4d86-a323-bb90fda8360b",
+    "name": "Bloodhound",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "The first time your enemy falls below half health each fight, Charge your items 2 second(s)."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "The first time your enemy falls below half health each fight, Charge your items 3 second(s)."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "The first time your enemy falls below half health each fight, Charge your items 4 second(s)."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Vanessa",
+      "Jules"
+    ],
+    "artKey": "Icon_Skill_Bloodhound.png",
+    "unifiedTooltips": [
+      "The first time your enemy falls below half health each fight, Charge your items (2/3/4) second(s)."
+    ],
+    "remarks": [],
+    "packId": "Dooley_Core"
   },
   {
     "id": "a59bc243-7c8b-447a-8ab7-968f662b1c50",
@@ -11014,47 +11051,6 @@ const data: ParsedSkillCard[] = [
     ],
     "remarks": [],
     "packId": "Core"
-  },
-  {
-    "id": "13989ad3-2122-4d86-a323-bb90fda8360b",
-    "name": "Bloodhound",
-    "startingTier": "Silver",
-    "tiers": {
-      "Bronze": {
-        "tooltips": []
-      },
-      "Silver": {
-        "tooltips": [
-          "The first time your enemy falls below half health each fight, Charge your items 2 second(s)."
-        ]
-      },
-      "Gold": {
-        "tooltips": [
-          "The first time your enemy falls below half health each fight, Charge your items 3 second(s)."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "The first time your enemy falls below half health each fight, Charge your items 4 second(s)."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [],
-    "hiddenTags": [],
-    "size": "Medium",
-    "heroes": [
-      "Vanessa",
-      "Jules"
-    ],
-    "artKey": "Icon_Skill_Bloodhound.png",
-    "unifiedTooltips": [
-      "The first time your enemy falls below half health each fight, Charge your items (2/3/4) second(s)."
-    ],
-    "remarks": [],
-    "packId": "Dooley_Core"
   },
   {
     "id": "6b47d5d7-cd43-4efb-9e3b-5ee3c07a7f7d",
@@ -11240,17 +11236,17 @@ const data: ParsedSkillCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "The first time you use a Large item each fight, Freeze 1 item for 3 second(s)."
+          "The first time you use a Large item each fight, Freeze 1 item(s) for 3 second(s)."
         ]
       },
       "Gold": {
         "tooltips": [
-          "The first time you use a Large item each fight, Freeze 1 item for 4 second(s)."
+          "The first time you use a Large item each fight, Freeze 1 item(s) for 4 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "The first time you use a Large item each fight, Freeze 1 item for 5 second(s)."
+          "The first time you use a Large item each fight, Freeze 1 item(s) for 5 second(s)."
         ]
       },
       "Legendary": {
@@ -11270,7 +11266,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_InitialChill.png",
     "unifiedTooltips": [
-      "The first time you use a Large item each fight, Freeze 1 item for (3/4/5) second(s)."
+      "The first time you use a Large item each fight, Freeze 1 item(s) for (3/4/5) second(s)."
     ],
     "remarks": [],
     "packId": "Pygmalien_Core"
@@ -11620,22 +11616,22 @@ const data: ParsedSkillCard[] = [
     "tiers": {
       "Bronze": {
         "tooltips": [
-          "Your Poison items have +2 Poison."
+          "Your Poison items have +1 Poison."
         ]
       },
       "Silver": {
         "tooltips": [
-          "Your Poison items have +4 Poison."
+          "Your Poison items have +2 Poison."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Your Poison items have +6 Poison."
+          "Your Poison items have +3 Poison."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Your Poison items have +8 Poison."
+          "Your Poison items have +4 Poison."
         ]
       },
       "Legendary": {
@@ -11654,7 +11650,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_ImprovedToxins.png",
     "unifiedTooltips": [
-      "Your Poison items have (+2/+4/+6/+8) Poison."
+      "Your Poison items have (+1/+2/+3/+4) Poison."
     ],
     "remarks": [],
     "packId": "Vanessa_Core"
@@ -11800,12 +11796,12 @@ const data: ParsedSkillCard[] = [
       },
       "Gold": {
         "tooltips": [
-          "The first 5 times you Crit each fight, Charge 1 item 1 second(s)."
+          "The first 5 times you Crit each fight, Charge 1 item(s) 1 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "The first 10 times you Crit each fight, Charge 1 item 1 second(s)."
+          "The first 10 times you Crit each fight, Charge 1 item(s) 1 second(s)."
         ]
       },
       "Legendary": {
@@ -11824,7 +11820,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_Alacrity.png",
     "unifiedTooltips": [
-      "The first (5/10) times you Crit each fight, Charge 1 item 1 second(s)."
+      "The first (5/10) times you Crit each fight, Charge 1 item(s) 1 second(s)."
     ],
     "remarks": [],
     "packId": "Pygmalien_Core"
@@ -12277,8 +12273,7 @@ const data: ParsedSkillCard[] = [
     ],
     "size": "Medium",
     "heroes": [
-      "Pygmalien",
-      "Mak"
+      "Pygmalien"
     ],
     "artKey": "Icon_Skill_HealingPower.png",
     "unifiedTooltips": [
@@ -12344,12 +12339,12 @@ const data: ParsedSkillCard[] = [
       },
       "Gold": {
         "tooltips": [
-          "The first 4 times you Shield each fight, Charge 1 item 1 second(s)."
+          "The first 4 times you Shield each fight, Charge 1 item(s) 1 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "The first 8 times you Shield each fight, Charge 1 item 1 second(s)."
+          "The first 8 times you Shield each fight, Charge 1 item(s) 1 second(s)."
         ]
       },
       "Legendary": {
@@ -12368,7 +12363,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_DOO_NumberOneStunner.png",
     "unifiedTooltips": [
-      "The first (4/8) times you Shield each fight, Charge 1 item 1 second(s)."
+      "The first (4/8) times you Shield each fight, Charge 1 item(s) 1 second(s)."
     ],
     "remarks": [],
     "packId": "Pygmalien_Core"
@@ -12408,8 +12403,7 @@ const data: ParsedSkillCard[] = [
     ],
     "size": "Medium",
     "heroes": [
-      "Pygmalien",
-      "Mak"
+      "Pygmalien"
     ],
     "artKey": "Icon_Skill_FirstResponder.png",
     "unifiedTooltips": [
@@ -12577,8 +12571,7 @@ const data: ParsedSkillCard[] = [
     ],
     "size": "Medium",
     "heroes": [
-      "Pygmalien",
-      "Mak"
+      "Pygmalien"
     ],
     "artKey": "Icon_Skill_FollowUpCare.png",
     "unifiedTooltips": [
@@ -12594,22 +12587,22 @@ const data: ParsedSkillCard[] = [
     "tiers": {
       "Bronze": {
         "tooltips": [
-          "Your rightmost Poison item has +3 Poison."
+          "Your rightmost Poison item has +2 Poison."
         ]
       },
       "Silver": {
         "tooltips": [
-          "Your rightmost Poison item has +6 Poison."
+          "Your rightmost Poison item has +4 Poison."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Your rightmost Poison item has +9 Poison."
+          "Your rightmost Poison item has +6 Poison."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Your rightmost Poison item has +12 Poison."
+          "Your rightmost Poison item has +8 Poison."
         ]
       },
       "Legendary": {
@@ -12628,7 +12621,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_FinalDose.png",
     "unifiedTooltips": [
-      "Your rightmost Poison item has (+3/+6/+9/+12) Poison."
+      "Your rightmost Poison item has (+2/+4/+6/+8) Poison."
     ],
     "remarks": [],
     "packId": "Vanessa_Core"

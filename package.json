@@ -18,6 +18,7 @@
 		"extractInvalidItemIds": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"ESNext\"}' tsx scripts/extractInvalidItemIds.ts",
 		"extractInvalidSkillIds": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"ESNext\"}' tsx scripts/extractInvalidSkillIds.ts",
 		"extractMonsterTemplateIds": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"ESNext\"}' tsx scripts/extractMonsterTemplateIds.ts",
+		"fetchCards": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"ESNext\"}' tsx scripts/fetchCards.ts",
 		"upload:images": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"ESNext\"}' tsx scripts/uploadImagesToBunnyCDN.ts"
 	},
 	"devDependencies": {

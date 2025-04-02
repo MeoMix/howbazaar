@@ -45,7 +45,7 @@ describe('cardJsonParser', () => {
       const alphaRay = itemCards.find(card => card.name === "Alpha Ray")!;
 
       expect(alphaRay.unifiedTooltips[2]).toEqual(
-        'When you use the Core or another Ray, your Weapons gain (+2/+3/+4/+5) Damage for the fight.'
+        'When you use the Core or another Ray, your Weapons gain (+2/+4/+6/+8) Damage for the fight.'
       );
     });
 
@@ -109,7 +109,7 @@ describe('cardJsonParser', () => {
       const closedSign = itemCards.find(card => card.name === "Closed Sign")!;
 
       expect(closedSign.unifiedTooltips[0]).toEqual(
-        'You have Regeneration equal to (1x/2x) adjacent properties\' values.'
+        'You have Regeneration equal to (50%/100%) of the value of adjacent properties.'
       );
     });
 
@@ -210,7 +210,7 @@ describe('cardJsonParser', () => {
     const fishingNet = itemCards.find(card => card.name === "Fishing Net")!;
     const searchPhrase = "Slow ";
 
-    expect(fishingNet.tiers.Bronze.tooltips.find((text) => text.includes(searchPhrase))).toEqual(`${searchPhrase}1 item for 3 second(s).`);
+    expect(fishingNet.tiers.Bronze.tooltips.find((text) => text.includes(searchPhrase))).toEqual(`${searchPhrase}1 item(s) for 3 second(s).`);
   });
 
   it('should parse "Colossal Popsicle" correctly by replacing {ability.2} with a correct value involving the spawning of additional cards.', () => {
@@ -295,7 +295,7 @@ describe('cardJsonParser', () => {
       const icyBlueGumball = blueGumball.enchantments.find(enchantment => enchantment.type === 'Icy')!;
 
       expect(icyBlueGumball.tooltips.length).toEqual(1);
-      expect(icyBlueGumball.tooltips[0]).toEqual('When you sell this, your leftmost Freeze item gains +0.2 Freeze duration.');
+      expect(icyBlueGumball.tooltips[0]).toEqual('When you sell this, your leftmost Freeze item gains +0.1 Freeze duration.');
     });
 
     it('should parse "Deadly Open Sign" correctly', () => {
