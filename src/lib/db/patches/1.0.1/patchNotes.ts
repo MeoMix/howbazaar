@@ -13396,6 +13396,52 @@ const data: PatchNotes = {
           "newValue": "Your rightmost Poison item has (+2/+4/+6/+8) Poison."
         }
       ]
+    },
+    "9215b678-2833-427b-bc97-75a90968c634": {
+      "metadata": {
+        "id": "9215b678-2833-427b-bc97-75a90968c634",
+        "name": "Ravenous",
+        "previousStartingTier": "Legendary",
+        "currentStartingTier": "Legendary",
+        "heroes": [
+          "Common"
+        ],
+        "currentSize": "Medium",
+        "type": "skill"
+      },
+      "name": {
+        "oldValue": null,
+        "newValue": "Ravenous"
+      },
+      "startingTier": {
+        "oldValue": null,
+        "newValue": "Legendary"
+      },
+      "tags": {
+        "added": [],
+        "removed": []
+      },
+      "hiddenTags": {
+        "added": [],
+        "removed": []
+      },
+      "size": {
+        "oldValue": null,
+        "newValue": "Medium"
+      },
+      "heroes": {
+        "added": [
+          "Common"
+        ],
+        "removed": []
+      },
+      "tooltips": [
+        {
+          "index": 0,
+          "oldValue": null,
+          "newValue": "The first time you fall below half health each fight, destroy an item for the fight."
+        }
+      ]
     }
   }
 };

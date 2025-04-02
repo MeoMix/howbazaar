@@ -3075,42 +3075,6 @@ const data: ParsedSkillCard[] = [
     "packId": "Vanessa_Core"
   },
   {
-    "id": "9215b678-2833-427b-bc97-75a90968c634",
-    "name": "Ravenous",
-    "startingTier": "Legendary",
-    "tiers": {
-      "Bronze": {
-        "tooltips": []
-      },
-      "Silver": {
-        "tooltips": []
-      },
-      "Gold": {
-        "tooltips": []
-      },
-      "Diamond": {
-        "tooltips": []
-      },
-      "Legendary": {
-        "tooltips": [
-          "The first time you fall below half health each fight, destroy an item for the fight."
-        ]
-      }
-    },
-    "tags": [],
-    "hiddenTags": [],
-    "size": "Medium",
-    "heroes": [
-      "Common"
-    ],
-    "artKey": "Icon_Skill_Ravenous.png",
-    "unifiedTooltips": [
-      "The first time you fall below half health each fight, destroy an item for the fight."
-    ],
-    "remarks": [],
-    "packId": "Pygmalien_Core"
-  },
-  {
     "id": "f6883b13-0dd2-475f-92e9-760102341bda",
     "name": "Conflagration",
     "startingTier": "Silver",

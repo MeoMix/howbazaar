@@ -9504,6 +9504,14 @@
       "Skills": [
         {
           "$type": "TCardInstanceSkill",
+          "TemplateId": "9215b678-2833-427b-bc97-75a90968c634",
+          "TemplateVersion": "1.0.0",
+          "InstanceId": null,
+          "Tier": "Bronze",
+          "Attributes": {}
+        },
+        {
+          "$type": "TCardInstanceSkill",
           "TemplateId": "fbbfbef7-8fe4-4ac0-81fa-09afb59e0fcc",
           "TemplateVersion": "1.0.0",
           "InstanceId": null,
