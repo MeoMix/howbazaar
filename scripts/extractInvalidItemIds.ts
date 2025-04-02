@@ -73,6 +73,11 @@ const allowedList = [
   'bb101259-4d30-4d93-9d69-b99c08f17488',
   // Sauna
   '21c858b6-6f6e-4bc5-9e84-3722b3dd813a',
+
+  
+  // Mak_Core:
+  // Calcinator:
+  '3e3bda1d-81ba-4719-8772-417d8b834e99',
 ];
 
 const disallowedList = [

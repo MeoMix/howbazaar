@@ -11835,6 +11835,185 @@ const data: PatchNotes = {
         "modified": []
       }
     },
+    "3e3bda1d-81ba-4719-8772-417d8b834e99": {
+      "metadata": {
+        "id": "3e3bda1d-81ba-4719-8772-417d8b834e99",
+        "name": "Calcinator",
+        "previousStartingTier": "Bronze",
+        "currentStartingTier": "Bronze",
+        "currentHero": "Mak",
+        "currentSize": "Medium",
+        "type": "item"
+      },
+      "name": {
+        "oldValue": null,
+        "newValue": "Calcinator"
+      },
+      "startingTier": {
+        "oldValue": null,
+        "newValue": "Bronze"
+      },
+      "tags": {
+        "added": [
+          "Tool"
+        ],
+        "removed": []
+      },
+      "hiddenTags": {
+        "added": [
+          "Burn"
+        ],
+        "removed": []
+      },
+      "size": {
+        "oldValue": null,
+        "newValue": "Medium"
+      },
+      "heroes": {
+        "added": [
+          "Mak"
+        ],
+        "removed": []
+      },
+      "tooltips": [
+        {
+          "index": 0,
+          "oldValue": null,
+          "newValue": "Cooldown 8 seconds"
+        },
+        {
+          "index": 1,
+          "oldValue": null,
+          "newValue": "Burn 8."
+        },
+        {
+          "index": 2,
+          "oldValue": null,
+          "newValue": "When you transform a Reagent, this permanently gains (+2/+3/+4/+5) Burn."
+        },
+        {
+          "index": 3,
+          "oldValue": null,
+          "newValue": "At the start of each day, get a Chunk of Lead."
+        }
+      ],
+      "enchantments": {
+        "added": [
+          {
+            "type": "Heavy",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Slow 2 items for 3 second(s)."
+              }
+            ]
+          },
+          {
+            "type": "Icy",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Freeze 1 small or medium item for 3 second(s)."
+              }
+            ]
+          },
+          {
+            "type": "Turbo",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Haste 2 items for 3 second(s)."
+              }
+            ]
+          },
+          {
+            "type": "Shielded",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Shield equal to 10 times this item's Burn."
+              }
+            ]
+          },
+          {
+            "type": "Restorative",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Heal equal to 10 times this item's Burn."
+              }
+            ]
+          },
+          {
+            "type": "Toxic",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Poison equal to this item's Burn."
+              }
+            ]
+          },
+          {
+            "type": "Fiery",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "This has double Burn."
+              }
+            ]
+          },
+          {
+            "type": "Shiny",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "This has +1 Multicast."
+              }
+            ]
+          },
+          {
+            "type": "Deadly",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "+50% Crit Chance"
+              }
+            ]
+          },
+          {
+            "type": "Radiant",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "This cannot be Frozen, Slowed or Destroyed."
+              }
+            ]
+          },
+          {
+            "type": "Obsidian",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Deal damage equal to 10 times this item's Burn."
+              }
+            ]
+          }
+        ],
+        "removed": [],
+        "modified": []
+      }
+    },
     "5795875a-9917-46a6-9334-ee835e4caefc": {
       "metadata": {
         "id": "5795875a-9917-46a6-9334-ee835e4caefc",

@@ -48233,6 +48233,134 @@ const data: ParsedItemCard[] = [
     "packId": "Pygmalien_Core"
   },
   {
+    "id": "3e3bda1d-81ba-4719-8772-417d8b834e99",
+    "name": "Calcinator",
+    "startingTier": "Bronze",
+    "tiers": {
+      "Bronze": {
+        "tooltips": [
+          "Cooldown 8 seconds",
+          "Burn 8.",
+          "When you transform a Reagent, this permanently gains +2 Burn.",
+          "At the start of each day, get a Chunk of Lead."
+        ]
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 8 seconds",
+          "Burn 8.",
+          "When you transform a Reagent, this permanently gains +3 Burn.",
+          "At the start of each day, get a Chunk of Lead."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 8 seconds",
+          "Burn 8.",
+          "When you transform a Reagent, this permanently gains +4 Burn.",
+          "At the start of each day, get a Chunk of Lead."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 8 seconds",
+          "Burn 8.",
+          "When you transform a Reagent, this permanently gains +5 Burn.",
+          "At the start of each day, get a Chunk of Lead."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Tool"
+    ],
+    "hiddenTags": [
+      "Burn"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Mak"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 2 items for 3 second(s)."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze 1 small or medium item for 3 second(s)."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 2 items for 3 second(s)."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield equal to 10 times this item's Burn."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to 10 times this item's Burn."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to this item's Burn."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "This has double Burn."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal damage equal to 10 times this item's Burn."
+        ]
+      }
+    ],
+    "unifiedTooltips": [
+      "Cooldown 8 seconds",
+      "Burn 8.",
+      "When you transform a Reagent, this permanently gains (+2/+3/+4/+5) Burn.",
+      "At the start of each day, get a Chunk of Lead."
+    ],
+    "remarks": [],
+    "packId": "Mak_Core"
+  },
+  {
     "id": "36211e0c-1806-4234-b661-3c05e2625a0a",
     "name": "Lighthouse",
     "startingTier": "Silver",
