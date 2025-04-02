@@ -12155,52 +12155,6 @@ const data: PatchNotes = {
         ]
       }
     },
-    "9215b678-2833-427b-bc97-75a90968c634": {
-      "metadata": {
-        "id": "9215b678-2833-427b-bc97-75a90968c634",
-        "name": "Ravenous",
-        "previousStartingTier": "Legendary",
-        "currentStartingTier": "Legendary",
-        "heroes": [
-          "Common"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "name": {
-        "oldValue": "Ravenous",
-        "newValue": null
-      },
-      "startingTier": {
-        "oldValue": "Legendary",
-        "newValue": null
-      },
-      "tags": {
-        "added": [],
-        "removed": []
-      },
-      "hiddenTags": {
-        "added": [],
-        "removed": []
-      },
-      "size": {
-        "oldValue": "Medium",
-        "newValue": null
-      },
-      "heroes": {
-        "added": [],
-        "removed": [
-          "Common"
-        ]
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "The first time you fall below half health each fight, destroy an item for the fight.",
-          "newValue": null
-        }
-      ]
-    },
     "063df89c-4fe9-4e89-a0c4-a0af4dedc9bb": {
       "metadata": {
         "id": "063df89c-4fe9-4e89-a0c4-a0af4dedc9bb",
