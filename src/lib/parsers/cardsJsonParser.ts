@@ -10,6 +10,12 @@ import invalidItemIds from "./invalidItemIds.json";
 import invalidSkillIds from "./invalidSkillIds.json";
 import monsterTemplateIdMapping from "./monsterTemplateIdMapping.json";
 
+// Card packs that should be filtered out
+const disallowedCardPacks = [
+  "Vanessa_The_Gang",
+  // Add more card packs to filter here as needed
+];
+
 // JSON contains testing data which isn't shown in game during normal operations
 // I didn't see a good flag for hiding these so I'm explicitly banning them.
 // Originally I tried filtering out "GuidOnly" but there's many items which should be shown
@@ -407,7 +413,8 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
         entry.Localization.Title.Text !== null &&
         !entry.Localization.Title.Text.includes("[DEBUG]") &&
         !invalidItemIds.includes(entry.Id) &&
-        !explicitlyHiddenItemIds.includes(entry.Id);
+        !explicitlyHiddenItemIds.includes(entry.Id) &&
+        !(entry.CardPackId && disallowedCardPacks.includes(entry.CardPackId));
 
     const validCards = Object.values(cardsJson).flat().filter(isValidItemCard);
 
