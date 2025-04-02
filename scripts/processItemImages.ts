@@ -122,6 +122,9 @@ const cleanFileName = (fileName: string): string => {
     'DarkwaterAnglerfish (1)': 'DarkwaterAnglerfish',
     'Nanobots': 'Nanobot',
     'SustainingPotion': 'NoxiousPotion', // It's weird because the item is definitely Noxious Potion, and there's an image for it, but it's not the right one.
+    'FossilizedFemur': 'MagnusFemur',
+    'PrimordialDepthCharge': 'ElementalDepthCharge',
+    'FuelRod': 'DefenseMatrix'
   };
 
   // Sometimes there's a literal space at the end of the filename. Madness.
