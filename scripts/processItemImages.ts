@@ -156,7 +156,12 @@ const cleanFileName = (fileName: string): string => {
     fileName = renameRules[baseName] + path.extname(fileName); // Replace base name and keep the extension
   }
 
-  return fileName;
+  // Strip special characters like hyphens to match parsedItemCard logic
+  const { name, ext } = path.parse(fileName);
+  const renamed = renameRules[name] ?? name;
+  const normalized = removeSpecialCharacters(renamed);
+
+  return normalized + ext;
 };
 
 // TODO: This script should ideally intelligently copy files to the end directory
@@ -182,9 +187,7 @@ async function processItemImages() {
   console.log('fileCleanNameMap', fileCleanNameMap);
 
   // Extract the clean filenames and card names into sets for quick lookups
-  const cleanedFileNames = new Set(
-    Array.from(fileCleanNameMap.values()).map(removeSpecialCharacters)
-  );
+  const cleanedFileNames = new Set(fileCleanNameMap.values());
   const itemCardNameSet = new Set(itemCardNames);
 
   // Determine missing file names
@@ -234,8 +237,8 @@ async function cleanFileNames() {
   for (const file of files) {
     const filePath = path.join(assetPath, file);
 
-    const { name, ext } = path.parse(file); // Split file name and extension
-    const newFileName = `${cleanFileName(name)}${ext}`; // Append the cleaned name with the original extension
+    const { name } = path.parse(file); // Split file name and extension
+    const newFileName = `${cleanFileName(name)}`; // Append the cleaned name with the original extension
     const newFilePath = path.join(assetPath, newFileName);
 
     if (newFileName !== file) {
