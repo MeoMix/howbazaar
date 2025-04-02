@@ -128,7 +128,7 @@
         <p>
             Item and Skill changes based on game data; detects changes not
             mentioned in <a
-                href="https://playthebazaar-cdn.azureedge.net/beta/PatchNotes.html"
+                href="https://playthebazaar-cdn.azureedge.net/thebazaar/PatchNotes.html"
                 class="text-blue-500 hover:underline"
                 target="_blank"
                 rel="noopener noreferrer"
