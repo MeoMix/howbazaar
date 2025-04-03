@@ -2558,14 +2558,19 @@ const data: ParsedMonster[] = [
     "health": 1925,
     "items": [
       {
-        "templateId": "6870c295-6a4d-4175-b378-c961df9933de",
-        "tierType": "Gold",
-        "socketId": "Socket_0"
-      },
-      {
         "templateId": "4a30e8b0-f1d1-44c0-b2a7-0a8d12c1e297",
         "tierType": "Gold",
         "socketId": "Socket_2"
+      },
+      {
+        "templateId": "bbf63b5c-57c3-4412-beb5-18bfec2372e6",
+        "tierType": "Gold",
+        "socketId": "Socket_9"
+      },
+      {
+        "templateId": "6870c295-6a4d-4175-b378-c961df9933de",
+        "tierType": "Gold",
+        "socketId": "Socket_0"
       },
       {
         "templateId": "e31de147-378e-40af-a6ba-3314fc0bf601",
@@ -2573,19 +2578,14 @@ const data: ParsedMonster[] = [
         "socketId": "Socket_5"
       },
       {
-        "templateId": "865a673a-beae-4f5c-b04a-dd3fd026bc6d",
-        "tierType": "Gold",
-        "socketId": "Socket_7"
-      },
-      {
         "templateId": "13f852ba-1d3d-4c1a-b6db-79072e0b19d0",
         "tierType": "Silver",
         "socketId": "Socket_8"
       },
       {
-        "templateId": "bbf63b5c-57c3-4412-beb5-18bfec2372e6",
+        "templateId": "865a673a-beae-4f5c-b04a-dd3fd026bc6d",
         "tierType": "Gold",
-        "socketId": "Socket_9"
+        "socketId": "Socket_7"
       }
     ],
     "skills": [
