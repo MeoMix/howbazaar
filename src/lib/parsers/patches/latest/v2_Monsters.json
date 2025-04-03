@@ -6472,36 +6472,6 @@
       }
     }
   },
-  "e98f8212-6dc2-463d-87cc-9d407c60c50d": {
-    "Id": "e98f8212-6dc2-463d-87cc-9d407c60c50d",
-    "Version": "1.0.0",
-    "InternalName": "Sparring Partner",
-    "Player": {
-      "Attributes": {
-        "Prestige": 50,
-        "HealthMax": 1000,
-        "Level": 20
-      },
-      "Hand": {
-        "Items": [],
-        "UnlockedSlots": 1023
-      },
-      "Skills": [
-        {
-          "$type": "TCardInstanceSkill",
-          "TemplateId": "fcb51ffd-6d25-4e74-871a-7dc0de2bae91",
-          "TemplateVersion": "1.0.0",
-          "InstanceId": null,
-          "Tier": "Legendary",
-          "Attributes": {}
-        }
-      ],
-      "Stash": {
-        "Items": [],
-        "UnlockedSlots": 1023
-      }
-    }
-  },
   "7719b6d8-7977-4d49-88a2-da29a19ad235": {
     "Id": "7719b6d8-7977-4d49-88a2-da29a19ad235",
     "Version": "1.0.0",

@@ -5880,42 +5880,6 @@ const data: ParsedSkillCard[] = [
     "packId": "Core"
   },
   {
-    "id": "fcb51ffd-6d25-4e74-871a-7dc0de2bae91",
-    "name": "Sparring Partner",
-    "startingTier": "Legendary",
-    "tiers": {
-      "Bronze": {
-        "tooltips": []
-      },
-      "Silver": {
-        "tooltips": []
-      },
-      "Gold": {
-        "tooltips": []
-      },
-      "Diamond": {
-        "tooltips": []
-      },
-      "Legendary": {
-        "tooltips": [
-          "When you would die, Cleanse all Burn and Poison, double your Max Health and Heal to full. In addition, your enemy gains 1 Gold."
-        ]
-      }
-    },
-    "tags": [],
-    "hiddenTags": [],
-    "size": "Medium",
-    "heroes": [
-      "Common"
-    ],
-    "artKey": "Icon_Skill_MON_MoneyMachine.png",
-    "unifiedTooltips": [
-      "When you would die, Cleanse all Burn and Poison, double your Max Health and Heal to full. In addition, your enemy gains 1 Gold."
-    ],
-    "remarks": [],
-    "packId": "Core"
-  },
-  {
     "id": "6bd675c5-a9a3-4a04-b3b3-c6ed09904bc2",
     "name": "Clean Storefront",
     "startingTier": "Silver",
