@@ -19,13 +19,13 @@
         "ArmoredCore": 2
     },
     "skills": {
-        "AugmentedDefenses": 2,
-        "AugmentedWeaponry": 2,
-        "CleanStorefront": 2,
-        "DistributedSystems": 2,
-        "ExtremeComfort": 2,
-        "LeftyLoosey": 2,
-        "MasterSalesman": 2,
-        "SharpenedSteel": 2
+        "AugmentedDefenses": 3,
+        "AugmentedWeaponry": 3,
+        "CleanStorefront": 3,
+        "DistributedSystems": 3,
+        "ExtremeComfort": 3,
+        "LeftyLoosey": 3,
+        "MasterSalesman": 3,
+        "SharpenedSteel": 3
     }
 } 

@@ -31,16 +31,12 @@ const purgeCache = async (relativePath: string) => {
     const fullUrl = `${PULL_ZONE_URL}images/${relativePath}`.replace(/\\/g, '/');
 
     try {
-        const response = await axios.post("https://api.bunny.net/purge", {
-            urls: [fullUrl]
-        }, {
+        const response = await axios.post("https://api.bunny.net/purge", null, {
+            params: { url: fullUrl },
             headers: {
-                AccessKey: PURGE_API_KEY,
-                "Content-Type": "application/json",
+                AccessKey: PURGE_API_KEY
             }
         });
-
-        //
 
         console.log(`🧹 Cache purged for: ${fullUrl} - Status: ${response.status}`);
     } catch (error: any) {
