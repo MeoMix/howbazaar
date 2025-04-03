@@ -22777,6 +22777,106 @@ const data: PatchNotes = {
         }
       ]
     },
+    "af42d725-dc55-4f6f-9de6-b7a4c7f7013e": {
+      "metadata": {
+        "id": "af42d725-dc55-4f6f-9de6-b7a4c7f7013e",
+        "name": "Heavy Drinker",
+        "previousStartingTier": "Gold",
+        "currentStartingTier": "Gold",
+        "heroes": [
+          "Mak"
+        ],
+        "currentSize": "Medium",
+        "type": "skill"
+      },
+      "name": {
+        "oldValue": null,
+        "newValue": "Heavy Drinker"
+      },
+      "startingTier": {
+        "oldValue": null,
+        "newValue": "Gold"
+      },
+      "tags": {
+        "added": [
+          "Potion",
+          "Weapon"
+        ],
+        "removed": []
+      },
+      "hiddenTags": {
+        "added": [
+          "DamageReference",
+          "Regen"
+        ],
+        "removed": []
+      },
+      "size": {
+        "oldValue": null,
+        "newValue": "Medium"
+      },
+      "heroes": {
+        "added": [
+          "Mak"
+        ],
+        "removed": []
+      },
+      "tooltips": [
+        {
+          "index": 0,
+          "oldValue": null,
+          "newValue": "When you use a potion, increase the damage of your weapons by 1 and gain (1/2) Regeneration for the fight."
+        }
+      ]
+    },
+    "6640af95-3999-43b2-b32d-fae5caf0b8cc": {
+      "metadata": {
+        "id": "6640af95-3999-43b2-b32d-fae5caf0b8cc",
+        "name": "Brewmaster",
+        "previousStartingTier": "Gold",
+        "currentStartingTier": "Gold",
+        "heroes": [
+          "Mak"
+        ],
+        "currentSize": "Medium",
+        "type": "skill"
+      },
+      "name": {
+        "oldValue": null,
+        "newValue": "Brewmaster"
+      },
+      "startingTier": {
+        "oldValue": null,
+        "newValue": "Gold"
+      },
+      "tags": {
+        "added": [
+          "Potion"
+        ],
+        "removed": []
+      },
+      "hiddenTags": {
+        "added": [],
+        "removed": []
+      },
+      "size": {
+        "oldValue": null,
+        "newValue": "Medium"
+      },
+      "heroes": {
+        "added": [
+          "Mak"
+        ],
+        "removed": []
+      },
+      "tooltips": [
+        {
+          "index": 0,
+          "oldValue": null,
+          "newValue": "At the start of each fight, a random Potion gains (+1/+2) Multicast for the fight."
+        }
+      ]
+    },
     "f45baa82-ff32-4337-88b9-71f7a8f2336f": {
       "metadata": {
         "id": "f45baa82-ff32-4337-88b9-71f7a8f2336f",
@@ -22825,6 +22925,56 @@ const data: PatchNotes = {
         }
       ]
     },
+    "ca3da34f-a982-4ae4-bea0-8dddac873650": {
+      "metadata": {
+        "id": "ca3da34f-a982-4ae4-bea0-8dddac873650",
+        "name": "Stocked",
+        "previousStartingTier": "Silver",
+        "currentStartingTier": "Silver",
+        "heroes": [
+          "Mak"
+        ],
+        "currentSize": "Medium",
+        "type": "skill"
+      },
+      "name": {
+        "oldValue": null,
+        "newValue": "Stocked"
+      },
+      "startingTier": {
+        "oldValue": null,
+        "newValue": "Silver"
+      },
+      "tags": {
+        "added": [
+          "Potion"
+        ],
+        "removed": []
+      },
+      "hiddenTags": {
+        "added": [
+          "Ammo"
+        ],
+        "removed": []
+      },
+      "size": {
+        "oldValue": null,
+        "newValue": "Medium"
+      },
+      "heroes": {
+        "added": [
+          "Mak"
+        ],
+        "removed": []
+      },
+      "tooltips": [
+        {
+          "index": 0,
+          "oldValue": null,
+          "newValue": "Your Potions have (+1/+2/+3) Ammo."
+        }
+      ]
+    },
     "9215b678-2833-427b-bc97-75a90968c634": {
       "metadata": {
         "id": "9215b678-2833-427b-bc97-75a90968c634",
@@ -22868,6 +23018,56 @@ const data: PatchNotes = {
           "index": 0,
           "oldValue": null,
           "newValue": "The first time you fall below half health each fight, destroy an item for the fight."
+        }
+      ]
+    },
+    "878440a6-99e8-4178-8d3f-38c94fb8c334": {
+      "metadata": {
+        "id": "878440a6-99e8-4178-8d3f-38c94fb8c334",
+        "name": "Thirsty",
+        "previousStartingTier": "Gold",
+        "currentStartingTier": "Gold",
+        "heroes": [
+          "Mak"
+        ],
+        "currentSize": "Medium",
+        "type": "skill"
+      },
+      "name": {
+        "oldValue": null,
+        "newValue": "Thirsty"
+      },
+      "startingTier": {
+        "oldValue": null,
+        "newValue": "Gold"
+      },
+      "tags": {
+        "added": [
+          "Potion"
+        ],
+        "removed": []
+      },
+      "hiddenTags": {
+        "added": [
+          "Regen"
+        ],
+        "removed": []
+      },
+      "size": {
+        "oldValue": null,
+        "newValue": "Medium"
+      },
+      "heroes": {
+        "added": [
+          "Mak"
+        ],
+        "removed": []
+      },
+      "tooltips": [
+        {
+          "index": 0,
+          "oldValue": null,
+          "newValue": "The first (4/8) times you use a potion each fight, gain 20 Regeneration for the fight."
         }
       ]
     },
@@ -23067,6 +23267,62 @@ const data: PatchNotes = {
           "index": 0,
           "oldValue": null,
           "newValue": "The first time you Over-heal each fight, Haste your items for (2/4) second(s)."
+        }
+      ]
+    },
+    "edb9b01b-b4ce-4a77-848e-0a49b8a23c16": {
+      "metadata": {
+        "id": "edb9b01b-b4ce-4a77-848e-0a49b8a23c16",
+        "name": "Potent Potables",
+        "previousStartingTier": "Silver",
+        "currentStartingTier": "Silver",
+        "heroes": [
+          "Mak"
+        ],
+        "currentSize": "Medium",
+        "type": "skill"
+      },
+      "name": {
+        "oldValue": null,
+        "newValue": "Potent Potables"
+      },
+      "startingTier": {
+        "oldValue": null,
+        "newValue": "Silver"
+      },
+      "tags": {
+        "added": [
+          "Potion"
+        ],
+        "removed": []
+      },
+      "hiddenTags": {
+        "added": [
+          "PoisonReference",
+          "BurnReference"
+        ],
+        "removed": []
+      },
+      "size": {
+        "oldValue": null,
+        "newValue": "Medium"
+      },
+      "heroes": {
+        "added": [
+          "Mak"
+        ],
+        "removed": []
+      },
+      "tooltips": [
+        {
+          "index": 0,
+          "oldValue": null,
+          "newValue": "Your Poison items have (+1/+2/+3) Poison for each potion you have."
+        },
+        {
+          "index": 1,
+          "oldValue": null,
+          "newValue": "Your Burn items have (+1/+2/+3) Burn for each potion you have."
         }
       ]
     }

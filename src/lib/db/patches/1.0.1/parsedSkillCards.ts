@@ -4,6 +4,50 @@ import type { ParsedSkillCard } from '$lib/types';
 
 const data: ParsedSkillCard[] = [
   {
+    "id": "af42d725-dc55-4f6f-9de6-b7a4c7f7013e",
+    "name": "Heavy Drinker",
+    "startingTier": "Gold",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": [
+          "When you use a potion, increase the damage of your weapons by 1 and gain 1 Regeneration for the fight."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "When you use a potion, increase the damage of your weapons by 1 and gain 2 Regeneration for the fight."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Potion",
+      "Weapon"
+    ],
+    "hiddenTags": [
+      "DamageReference",
+      "Regen"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Mak"
+    ],
+    "artKey": "Icon_Skill_Placeholder.png",
+    "unifiedTooltips": [
+      "When you use a potion, increase the damage of your weapons by 1 and gain (1/2) Regeneration for the fight."
+    ],
+    "remarks": [],
+    "packId": "Mak_Core"
+  },
+  {
     "id": "756024f8-ad19-4f9b-a3c1-3a93c285b5d1",
     "name": "Aggressive",
     "startingTier": "Bronze",
@@ -48,6 +92,46 @@ const data: ParsedSkillCard[] = [
     ],
     "remarks": [],
     "packId": "Core"
+  },
+  {
+    "id": "6640af95-3999-43b2-b32d-fae5caf0b8cc",
+    "name": "Brewmaster",
+    "startingTier": "Gold",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": [
+          "At the start of each fight, a random Potion gains +1 Multicast for the fight."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "At the start of each fight, a random Potion gains +2 Multicast for the fight."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Potion"
+    ],
+    "hiddenTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Mak"
+    ],
+    "artKey": "Icon_Skill_Mak_Brewmaster.png",
+    "unifiedTooltips": [
+      "At the start of each fight, a random Potion gains (+1/+2) Multicast for the fight."
+    ],
+    "remarks": [],
+    "packId": "Mak_Core"
   },
   {
     "id": "d1e825ba-653c-4993-8002-50c3933c5827",
@@ -2561,6 +2645,50 @@ const data: ParsedSkillCard[] = [
     ],
     "remarks": [],
     "packId": "Core"
+  },
+  {
+    "id": "ca3da34f-a982-4ae4-bea0-8dddac873650",
+    "name": "Stocked",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Your Potions have +1 Ammo."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Your Potions have +2 Ammo."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Your Potions have +3 Ammo."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Potion"
+    ],
+    "hiddenTags": [
+      "Ammo"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Mak"
+    ],
+    "artKey": "Icon_Skill_Mak_Stocked.png",
+    "unifiedTooltips": [
+      "Your Potions have (+1/+2/+3) Ammo."
+    ],
+    "remarks": [],
+    "packId": "Mak_Core"
   },
   {
     "id": "c2e26fae-a435-44ff-8613-8977247ee972",
@@ -5916,6 +6044,48 @@ const data: ParsedSkillCard[] = [
     ],
     "remarks": [],
     "packId": "Vanessa_Core"
+  },
+  {
+    "id": "878440a6-99e8-4178-8d3f-38c94fb8c334",
+    "name": "Thirsty",
+    "startingTier": "Gold",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": [
+          "The first 4 times you use a potion each fight, gain 20 Regeneration for the fight."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "The first 8 times you use a potion each fight, gain 20 Regeneration for the fight."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Potion"
+    ],
+    "hiddenTags": [
+      "Regen"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Mak"
+    ],
+    "artKey": "Icon_Skill_Mak_Thirsty.png",
+    "unifiedTooltips": [
+      "The first (4/8) times you use a potion each fight, gain 20 Regeneration for the fight."
+    ],
+    "remarks": [],
+    "packId": "Mak_Core"
   },
   {
     "id": "f6a49c4a-7ee7-4aa7-8162-392eee2d3835",
@@ -12527,6 +12697,55 @@ const data: ParsedSkillCard[] = [
     ],
     "remarks": [],
     "packId": "Pygmalien_Core"
+  },
+  {
+    "id": "edb9b01b-b4ce-4a77-848e-0a49b8a23c16",
+    "name": "Potent Potables",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Your Poison items have +1 Poison for each potion you have.",
+          "Your Burn items have +1 Burn for each potion you have."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Your Poison items have +2 Poison for each potion you have.",
+          "Your Burn items have +2 Burn for each potion you have."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Your Poison items have +3 Poison for each potion you have.",
+          "Your Burn items have +3 Burn for each potion you have."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Potion"
+    ],
+    "hiddenTags": [
+      "PoisonReference",
+      "BurnReference"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Mak"
+    ],
+    "artKey": "Icon_Skill_Mak_PotentPotables.png",
+    "unifiedTooltips": [
+      "Your Poison items have (+1/+2/+3) Poison for each potion you have.",
+      "Your Burn items have (+1/+2/+3) Burn for each potion you have."
+    ],
+    "remarks": [],
+    "packId": "Mak_Core"
   },
   {
     "id": "cb8e9ed1-764e-4fa5-a2b8-61c2eddcbf7e",

@@ -48,8 +48,27 @@ const allowedList = [
   // Dumpster Diving
   '8a9a98fe-b1bd-4da7-8233-dffd3845aa45',
   // Explosive Potions
-  'dbd50f7c-4261-4afd-93da-2f4d9e33509e'
+  'dbd50f7c-4261-4afd-93da-2f4d9e33509e',
+  // Brewmaster
+  '6640af95-3999-43b2-b32d-fae5caf0b8cc',
+  // Thirsty
+  '878440a6-99e8-4178-8d3f-38c94fb8c334',
+  // Stocked
+  'ca3da34f-a982-4ae4-bea0-8dddac873650',
+  // Potent Potables
+  'edb9b01b-b4ce-4a77-848e-0a49b8a23c16',
+  // Heavy Drinker
+  'af42d725-dc55-4f6f-9de6-b7a4c7f7013e',
+
+  // TODO: Not enabled yet.
+  // "e78b1599-ca80-47b0-b386-04ae403994d5", Virulent Research
+  // "8089e76c-1565-457b-9cd5-fc38f60bd185", Immunocompromised
 ];
+
+const allowedPackIds = [
+  // Note quite all enabled yet
+ // 'Mak_Core'
+] as string[];
 
 const disallowedList = [
   // Cauterize:
@@ -80,7 +99,10 @@ const disallowedList = [
 // Filter the entries
 const getIdsByCriteria = (data: any) => {
   return [...disallowedList, ...Object.values(data)
-    .filter((entry: any) => entry.Type === "Skill" && entry.SpawningEligibility === "Never" && !allowedList.includes(entry.Id))
+    .filter((entry: any) => entry.Type === "Skill" &&
+      entry.SpawningEligibility === "Never" &&
+      !allowedList.includes(entry.Id) &&
+      !allowedPackIds.includes(entry.CardPackId))
     .map((entry: any) => entry.Id)];
 };
 
