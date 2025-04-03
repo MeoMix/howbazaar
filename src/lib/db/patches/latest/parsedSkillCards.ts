@@ -52,7 +52,7 @@ const data: ParsedSkillCard[] = [
   {
     "id": "6640af95-3999-43b2-b32d-fae5caf0b8cc",
     "name": "Brewmaster",
-    "startingTier": "Gold",
+    "startingTier": "Diamond",
     "tiers": {
       "Bronze": {
         "tooltips": []
@@ -61,13 +61,11 @@ const data: ParsedSkillCard[] = [
         "tooltips": []
       },
       "Gold": {
-        "tooltips": [
-          "At the start of each fight, a random Potion gains +1 Multicast for the fight."
-        ]
+        "tooltips": []
       },
       "Diamond": {
         "tooltips": [
-          "At the start of each fight, a random Potion gains +2 Multicast for the fight."
+          "At the start of each fight, a random Potion gains +1 Multicast for the fight."
         ]
       },
       "Legendary": {
@@ -84,7 +82,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_Mak_Brewmaster.png",
     "unifiedTooltips": [
-      "At the start of each fight, a random Potion gains (+1/+2) Multicast for the fight."
+      "At the start of each fight, a random Potion gains +1 Multicast for the fight."
     ],
     "remarks": [],
     "packId": "Mak_Core"
@@ -971,52 +969,6 @@ const data: ParsedSkillCard[] = [
     "packId": "Core"
   },
   {
-    "id": "71433809-d05a-4544-9959-aff20ae5db93",
-    "name": "Iron Sharpens Iron",
-    "startingTier": "Silver",
-    "tiers": {
-      "Bronze": {
-        "tooltips": []
-      },
-      "Silver": {
-        "tooltips": [
-          "Your leftmost Weapon has +2 damage. When you buy a weapon, increase this bonus by 2."
-        ]
-      },
-      "Gold": {
-        "tooltips": [
-          "Your leftmost Weapon has +2 damage. When you buy a weapon, increase this bonus by 3."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "Your leftmost Weapon has +2 damage. When you buy a weapon, increase this bonus by 4."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [
-      "Weapon"
-    ],
-    "hiddenTags": [
-      "DamageReference"
-    ],
-    "size": "Medium",
-    "heroes": [
-      "Vanessa",
-      "Jules",
-      "Mak"
-    ],
-    "artKey": "Icon_Skill_IronSharpensIron.png",
-    "unifiedTooltips": [
-      "Your leftmost Weapon has +2 damage. When you buy a weapon, increase this bonus by (2/3/4)."
-    ],
-    "remarks": [],
-    "packId": "Vanessa_Core"
-  },
-  {
     "id": "9d910b0a-9ef3-447f-ab41-195effb68f21",
     "name": "Hot Spot",
     "startingTier": "Silver",
@@ -1058,6 +1010,52 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_HotSpot.png",
     "unifiedTooltips": [
       "When you use your leftmost item, Burn (2/3/4)."
+    ],
+    "remarks": [],
+    "packId": "Vanessa_Core"
+  },
+  {
+    "id": "71433809-d05a-4544-9959-aff20ae5db93",
+    "name": "Iron Sharpens Iron",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Your leftmost Weapon has +2 damage. When you buy a weapon, increase this bonus by 2."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Your leftmost Weapon has +2 damage. When you buy a weapon, increase this bonus by 3."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Your leftmost Weapon has +2 damage. When you buy a weapon, increase this bonus by 4."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Weapon"
+    ],
+    "hiddenTags": [
+      "DamageReference"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Vanessa",
+      "Jules",
+      "Mak"
+    ],
+    "artKey": "Icon_Skill_IronSharpensIron.png",
+    "unifiedTooltips": [
+      "Your leftmost Weapon has +2 damage. When you buy a weapon, increase this bonus by (2/3/4)."
     ],
     "remarks": [],
     "packId": "Vanessa_Core"
@@ -7019,6 +7017,50 @@ const data: ParsedSkillCard[] = [
     "packId": "Dooley_Core"
   },
   {
+    "id": "7518cb66-252b-4b9c-9d4d-269aaad8daf3",
+    "name": "Flanking Fire",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "The first time you use a Large item each fight, Adjacent items gain 7 Burn for the fight."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "The first time you use a Large item each fight, Adjacent items gain 10 Burn for the fight."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "The first time you use a Large item each fight, Adjacent items gain 13 Burn for the fight."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "BurnReference"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Vanessa",
+      "Jules",
+      "Stelle"
+    ],
+    "artKey": "Icon_Skill_FlankingFire.png",
+    "unifiedTooltips": [
+      "The first time you use a Large item each fight, Adjacent items gain (7/10/13) Burn for the fight."
+    ],
+    "remarks": [],
+    "packId": "Pygmalien_Core"
+  },
+  {
     "id": "94b80fbf-4d21-4439-beb2-e1bdf56cea03",
     "name": "Flanking Shots",
     "startingTier": "Silver",
@@ -7063,50 +7105,6 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_FlankingShots.png",
     "unifiedTooltips": [
       "The first time you use a Large item each fight, adjacent weapons gain (15/30/50) Damage for the fight."
-    ],
-    "remarks": [],
-    "packId": "Pygmalien_Core"
-  },
-  {
-    "id": "7518cb66-252b-4b9c-9d4d-269aaad8daf3",
-    "name": "Flanking Fire",
-    "startingTier": "Silver",
-    "tiers": {
-      "Bronze": {
-        "tooltips": []
-      },
-      "Silver": {
-        "tooltips": [
-          "The first time you use a Large item each fight, Adjacent items gain 7 Burn for the fight."
-        ]
-      },
-      "Gold": {
-        "tooltips": [
-          "The first time you use a Large item each fight, Adjacent items gain 10 Burn for the fight."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "The first time you use a Large item each fight, Adjacent items gain 13 Burn for the fight."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [],
-    "hiddenTags": [
-      "BurnReference"
-    ],
-    "size": "Medium",
-    "heroes": [
-      "Vanessa",
-      "Jules",
-      "Stelle"
-    ],
-    "artKey": "Icon_Skill_FlankingFire.png",
-    "unifiedTooltips": [
-      "The first time you use a Large item each fight, Adjacent items gain (7/10/13) Burn for the fight."
     ],
     "remarks": [],
     "packId": "Pygmalien_Core"
@@ -8264,17 +8262,17 @@ const data: ParsedSkillCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "When you Slow, Freeze, Poison or Burn, a Regeneration item gains 1 Regeneration for the fight."
+          "When you Slow, Freeze, Poison or Burn with an item, a Regeneration item gains 1 Regeneration for the fight."
         ]
       },
       "Gold": {
         "tooltips": [
-          "When you Slow, Freeze, Poison or Burn, a Regeneration item gains 2 Regeneration for the fight."
+          "When you Slow, Freeze, Poison or Burn with an item, a Regeneration item gains 2 Regeneration for the fight."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "When you Slow, Freeze, Poison or Burn, a Regeneration item gains 3 Regeneration for the fight."
+          "When you Slow, Freeze, Poison or Burn with an item, a Regeneration item gains 3 Regeneration for the fight."
         ]
       },
       "Legendary": {
@@ -8291,7 +8289,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_Mak_VitalRenewal.png",
     "unifiedTooltips": [
-      "When you Slow, Freeze, Poison or Burn, a Regeneration item gains (1/2/3) Regeneration for the fight."
+      "When you Slow, Freeze, Poison or Burn with an item, a Regeneration item gains (1/2/3) Regeneration for the fight."
     ],
     "remarks": [],
     "packId": "Mak_Core"
@@ -11701,42 +11699,6 @@ const data: ParsedSkillCard[] = [
     "packId": "Vanessa_Core"
   },
   {
-    "id": "e8770458-220a-45bd-bfef-d6045b152d29",
-    "name": "Bonk",
-    "startingTier": "Diamond",
-    "tiers": {
-      "Bronze": {
-        "tooltips": []
-      },
-      "Silver": {
-        "tooltips": []
-      },
-      "Gold": {
-        "tooltips": []
-      },
-      "Diamond": {
-        "tooltips": [
-          "Enemy cooldowns are increased by 1 second(s)."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [],
-    "hiddenTags": [],
-    "size": "Medium",
-    "heroes": [
-      "Common"
-    ],
-    "artKey": "Icon_Skill_MON_TurnOutYourPockets_03.png",
-    "unifiedTooltips": [
-      "Enemy cooldowns are increased by 1 second(s)."
-    ],
-    "remarks": [],
-    "packId": "Core"
-  },
-  {
     "id": "721fa7ca-3451-4bbd-ac17-ffcff4a31ac6",
     "name": "Overheal Haste",
     "startingTier": "Gold",
@@ -11777,6 +11739,42 @@ const data: ParsedSkillCard[] = [
     ],
     "remarks": [],
     "packId": "Pygmalien_Core"
+  },
+  {
+    "id": "e8770458-220a-45bd-bfef-d6045b152d29",
+    "name": "Bonk",
+    "startingTier": "Diamond",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": []
+      },
+      "Diamond": {
+        "tooltips": [
+          "Enemy cooldowns are increased by 1 second(s)."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Common"
+    ],
+    "artKey": "Icon_Skill_MON_TurnOutYourPockets_03.png",
+    "unifiedTooltips": [
+      "Enemy cooldowns are increased by 1 second(s)."
+    ],
+    "remarks": [],
+    "packId": "Core"
   },
   {
     "id": "7f097b31-c29e-4082-a835-6d6457c2d536",
