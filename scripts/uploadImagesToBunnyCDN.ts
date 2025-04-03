@@ -8,6 +8,9 @@ import { join, relative } from 'path';
 
 // Load environment variables
 const API_KEY = process.env.BUNNY_API_KEY;
+const PURGE_API_KEY = process.env.BUNNY_PURGE_API_KEY;
+const PULL_ZONE_URL = process.env.BUNNY_PULL_ZONE_URL;
+
 const STORAGE_NAME = process.env.BUNNY_STORAGE_NAME;
 const STORAGE_URL = `https://storage.bunnycdn.com/${STORAGE_NAME}/images`;
 
@@ -19,20 +22,41 @@ if (!API_KEY || !STORAGE_NAME) {
 // NOTE: This doesn't include the favicon which is a directory above. No real reason to not support it.
 const IMAGES_DIR = "static/images";
 
+const purgeCache = async (relativePath: string) => {
+    if (!PURGE_API_KEY || !PULL_ZONE_URL) {
+        console.warn("⚠️ Skipping cache purge - missing purge API key or pull zone URL");
+        return;
+    }
+
+    const fullUrl = `${PULL_ZONE_URL}images/${relativePath}`.replace(/\\/g, '/');
+
+    try {
+        const response = await axios.post("https://api.bunny.net/purge", {
+            urls: [fullUrl]
+        }, {
+            headers: {
+                AccessKey: PURGE_API_KEY,
+                "Content-Type": "application/json",
+            }
+        });
+
+        //
+
+        console.log(`🧹 Cache purged for: ${fullUrl} - Status: ${response.status}`);
+    } catch (error: any) {
+        console.error(`❌ Failed to purge cache for ${fullUrl}:`, error.response?.data || error.message);
+    }
+};
+
 // Function to upload a file
 const uploadFile = async (filePath: string) => {
     try {
-        // Get relative path (e.g., "items/ATM.avif" from "static/images/items/ATM.avif")
         const relativePath = relative(IMAGES_DIR, filePath);
-
-        // Construct the full storage path (e.g., "/images/items/ATM.avif")
-        const storagePath = `${STORAGE_URL}/${relativePath}`.replace(/\\/g, '/'); // Ensure UNIX-style paths
-
+        const storagePath = `${STORAGE_URL}/${relativePath}`.replace(/\\/g, '/');
         console.log(`📤 Uploading: ${filePath} → ${storagePath}`);
 
         const fileStream = createReadStream(filePath);
 
-        // NOTE: This won't purge cache - need to go into the GUI to do that if the file existed previously.
         const response = await axios.put(storagePath, fileStream, {
             headers: {
                 AccessKey: API_KEY!,
@@ -41,6 +65,8 @@ const uploadFile = async (filePath: string) => {
         });
 
         console.log(`✅ Uploaded: ${relativePath} - Status: ${response.status}`);
+
+        await purgeCache(relativePath); // Add this line
     } catch (error: any) {
         console.error(`❌ Failed to upload ${filePath}:`, error.response?.data || error.message);
     }
@@ -63,7 +89,7 @@ const getFiles = async (dir: string): Promise<string[]> => {
     try {
         // Get file names from command line arguments
         const fileNames = process.argv.slice(2);
-        
+
         if (fileNames.length === 0) {
             console.error("❌ Please provide at least one file name to upload");
             process.exit(1);
@@ -73,7 +99,7 @@ const getFiles = async (dir: string): Promise<string[]> => {
 
         // Get all available files in the images directory
         const allFiles = await getFiles(IMAGES_DIR);
-        
+
         // Filter files to only include the specified ones
         const filesToUpload = allFiles.filter(file => {
             const relativePath = relative(IMAGES_DIR, file);
