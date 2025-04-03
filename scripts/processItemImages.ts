@@ -136,7 +136,21 @@ const cleanFileName = (fileName: string): string => {
     "TrustySteed" :"Seashadow",
     "CrubbyLobster": "OldSaltclaw",
     "LongTail": "MrRichardson",
-    "SaltydogSaloon": "SeadogsSaloon"
+    "SaltydogSaloon": "SeadogsSaloon",
+    "FrozenFire": "FrozenFlame",
+    "Runeblade": "RunicBlade",
+    "CursePotion": "CrocodileTears",
+    "FireFLies": "Fireflies",
+    "IceWeaselpede": "Weaselpede",
+    "RunicSai": "RunicDaggers",
+    "AlienRaven": "CovetousRaven",
+    "HidingSpot": "Cellar",
+    "TheTomeOfYyahan": "TheTomeofYyahan",
+    "RecycleBin": "RecyclingBin",
+    "ElixirofImmortality":"RegenerationPotion",
+    "Frostfinger": "IceClaw",
+    "Portrait": "MementoMori",
+    // "NoxiousPotion": "RunicPotion",
   };
 
   // Sometimes there's a literal space at the end of the filename. Madness.
@@ -262,7 +276,8 @@ async function duplicateFiles() {
     'YellowPigglesA': ['YellowPigglesX', 'YellowPigglesL', 'YellowPigglesR'],
     'BluePigglesA': ['BluePigglesX', 'BluePigglesL', 'BluePigglesR'],
     // TODO: It's weird this is needed?
-    'Cutlass': ['TinyCutlass']
+    'Cutlass': ['TinyCutlass'],
+    'NoxiousPotion': ['RunicPotion'],
   };
 
   try {
