@@ -14,11 +14,6 @@ const data: ParsedCombatEncounterCard[] = [
     "monsterTemplateId": "2551f0d8-a57c-4670-993d-13b8b7ee2791"
   },
   {
-    "id": "5ee7d5e2-1df7-4335-9cac-09a5c749b859",
-    "name": "Training Dummy",
-    "monsterTemplateId": "1d95020b-e3a7-4210-8a8e-638126b2137b"
-  },
-  {
     "id": "69af3106-78fd-4a74-b150-ec41442cdbba",
     "name": "Lich",
     "monsterTemplateId": "266a6b58-ec93-4d4a-8cea-549caa4224e1"
@@ -384,11 +379,6 @@ const data: ParsedCombatEncounterCard[] = [
     "monsterTemplateId": "fc5aa4c0-8d87-457b-bc3c-2ebf0b07d12d"
   },
   {
-    "id": "d0e031f9-16c8-4ebf-a9bf-986dc3f41a1f",
-    "name": "Skill Board Test Monster",
-    "monsterTemplateId": "a6d543e2-e4fc-4e7d-a2b3-998ee6ef1a50"
-  },
-  {
     "id": "72411b58-e99a-44a9-a43f-9767896c7508",
     "name": "Mr. Moo",
     "monsterTemplateId": "0a633def-7135-408c-bcc7-785f5172ee34"
@@ -557,11 +547,6 @@ const data: ParsedCombatEncounterCard[] = [
     "id": "f9e17ce4-c82d-44c2-8406-ad33277a3b1c",
     "name": "Sergeant Suds",
     "monsterTemplateId": "e27b5f5f-2b71-42c5-a839-37e0aca0a8a5"
-  },
-  {
-    "id": "b98f8dc6-5173-4882-a227-a3019c486c37",
-    "name": "QA Test Monster",
-    "monsterTemplateId": "5b3da8f1-5834-4a8d-967f-f98e8989b26f"
   },
   {
     "id": "1ea147f3-5712-4333-b347-8fd65d08f009",
