@@ -1358,6 +1358,44 @@ const data: ParsedSkillCard[] = [
     "packId": "Pygmalien_Core"
   },
   {
+    "id": "f45baa82-ff32-4337-88b9-71f7a8f2336f",
+    "name": "Biohazard",
+    "startingTier": "Diamond",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": []
+      },
+      "Diamond": {
+        "tooltips": [
+          "The first time you fall below half health each fight, double your enemy's Poison."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "Poison"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Mak"
+    ],
+    "artKey": "Icon_Skill_Mak_Biohazard.png",
+    "unifiedTooltips": [
+      "The first time you fall below half health each fight, double your enemy's Poison."
+    ],
+    "remarks": [],
+    "packId": "Mak_Core"
+  },
+  {
     "id": "c3f674a0-4025-45e1-b611-bf70fd6f279c",
     "name": "Lifting",
     "startingTier": "Silver",
@@ -6708,6 +6746,50 @@ const data: ParsedSkillCard[] = [
     "packId": "Core"
   },
   {
+    "id": "dbd50f7c-4261-4afd-93da-2f4d9e33509e",
+    "name": "Explosive Potions",
+    "startingTier": "Gold",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": [
+          "The first 4 times you use a potion each fight, charge 1 Weapon or Burn item 1 second(s)."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "The first 8 times you use a potion each fight, charge 1 Weapon or Burn item 1 second(s)."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Weapon",
+      "Potion"
+    ],
+    "hiddenTags": [
+      "Charge",
+      "BurnReference"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Mak"
+    ],
+    "artKey": "Icon_Skill_Mak_ExplosivePotions.png",
+    "unifiedTooltips": [
+      "The first (4/8) times you use a potion each fight, charge 1 Weapon or Burn item 1 second(s)."
+    ],
+    "remarks": [],
+    "packId": "Mak_Core"
+  },
+  {
     "id": "292f58c0-409b-4de7-a8d2-099a8629aa5e",
     "name": "Toughness",
     "startingTier": "Bronze",
@@ -8083,6 +8165,48 @@ const data: ParsedSkillCard[] = [
     "packId": "Core"
   },
   {
+    "id": "f790df42-e8e6-4329-aaeb-8a757c02c326",
+    "name": "Vital Renewal",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "When you Slow, Freeze, Poison or Burn, a Regeneration item gains 1 Regeneration for the fight."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "When you Slow, Freeze, Poison or Burn, a Regeneration item gains 2 Regeneration for the fight."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "When you Slow, Freeze, Poison or Burn, a Regeneration item gains 3 Regeneration for the fight."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "Cooldown"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Mak"
+    ],
+    "artKey": "Icon_Skill_Mak_VitalRenewal.png",
+    "unifiedTooltips": [
+      "When you Slow, Freeze, Poison or Burn, a Regeneration item gains (1/2/3) Regeneration for the fight."
+    ],
+    "remarks": [],
+    "packId": "Mak_Core"
+  },
+  {
     "id": "a885b513-3fe3-4795-a10e-c2e4f6b5f1f6",
     "name": "Parting Shot",
     "startingTier": "Gold",
@@ -9080,6 +9204,50 @@ const data: ParsedSkillCard[] = [
     ],
     "remarks": [],
     "packId": "Core"
+  },
+  {
+    "id": "8a9a98fe-b1bd-4da7-8233-dffd3845aa45",
+    "name": "Dumpster Diving",
+    "startingTier": "Bronze",
+    "tiers": {
+      "Bronze": {
+        "tooltips": [
+          "At the start of each day, get a random Potion."
+        ]
+      },
+      "Silver": {
+        "tooltips": [
+          "At the start of each day, get a random Potion."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "At the start of each day, get a random Potion."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "At the start of each day, get a random Potion."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Potion"
+    ],
+    "hiddenTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Mak"
+    ],
+    "artKey": "Icon_Skill_Mak_DumpsterDiving.png",
+    "unifiedTooltips": [
+      "At the start of each day, get a random Potion."
+    ],
+    "remarks": [],
+    "packId": "Mak_Core"
   },
   {
     "id": "ab0ae449-82f3-414d-82d0-1ebc73ba5ee5",

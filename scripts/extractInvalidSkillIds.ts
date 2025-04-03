@@ -44,7 +44,11 @@ const allowedList = [
   // Healthy Heart (Hearty)
   '05ec8652-3c5f-4cba-acd1-c3eee8e49d44',
   // Overheal Haste
-  '721fa7ca-3451-4bbd-ac17-ffcff4a31ac6'
+  '721fa7ca-3451-4bbd-ac17-ffcff4a31ac6',
+  // Dumpster Diving
+  '8a9a98fe-b1bd-4da7-8233-dffd3845aa45',
+  // Explosive Potions
+  'dbd50f7c-4261-4afd-93da-2f4d9e33509e'
 ];
 
 const disallowedList = [
@@ -65,16 +69,12 @@ const disallowedList = [
   // Nanite Healing
   "cac848c8-dc77-4277-ba9f-df282b9f36ef",
 
-  // Vital Renewal:
-  "f790df42-e8e6-4329-aaeb-8a757c02c326",
   // Alchemical Precision:
   "8509674b-3c4b-4250-9bb4-666ef7402654",
   // Crimson Dash:
   "42a673e6-f6cd-45ea-89e2-d37614271016",
   // Essence Overflow:
-  "db94a1da-532e-42e1-af25-5033b0fc8bcb",
-  // Biohazard:
-  "f45baa82-ff32-4337-88b9-71f7a8f2336f"
+  "db94a1da-532e-42e1-af25-5033b0fc8bcb"
 ];
 
 // Filter the entries

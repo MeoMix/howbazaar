@@ -17,7 +17,15 @@
         "Goggles": 2,
         "Nargile": 2,
         "ArmoredCore": 2
-
-
+    },
+    "skills": {
+        "AugmentedDefenses": 2,
+        "AugmentedWeaponry": 2,
+        "CleanStorefront": 2,
+        "DistributedSystems": 2,
+        "ExtremeComfort": 2,
+        "LeftyLoosey": 2,
+        "MasterSalesman": 2,
+        "SharpenedSteel": 2
     }
 } 
