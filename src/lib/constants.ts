@@ -2,14 +2,14 @@ import type { PatchVersion } from './types';
 
 export const AVAILABLE_VERSIONS: PatchVersion[] = [
     {
-        version: '1.0.1-hotfix1',
-        label: 'Version 1.0.1 Hotfix 1',
-        path: '1.0.1-hotfix1/patchNotes.ts'
+        version: '1.0.0-hotfix1',
+        label: 'Version 1.0.0 Hotfix 1',
+        path: '1.0.0-hotfix1/patchNotes.ts'
     },
     {
-        version: '1.0.1',
-        label: 'Version 1.0.1',
-        path: '1.0.1/patchNotes.ts'
+        version: '1.0.0',
+        label: 'Version 1.0.0',
+        path: '1.0.0/patchNotes.ts'
     },
     {
         version: '0.1.9-hotfix1',
