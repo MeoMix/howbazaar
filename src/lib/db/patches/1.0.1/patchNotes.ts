@@ -22777,6 +22777,54 @@ const data: PatchNotes = {
         }
       ]
     },
+    "f45baa82-ff32-4337-88b9-71f7a8f2336f": {
+      "metadata": {
+        "id": "f45baa82-ff32-4337-88b9-71f7a8f2336f",
+        "name": "Biohazard",
+        "previousStartingTier": "Diamond",
+        "currentStartingTier": "Diamond",
+        "heroes": [
+          "Mak"
+        ],
+        "currentSize": "Medium",
+        "type": "skill"
+      },
+      "name": {
+        "oldValue": null,
+        "newValue": "Biohazard"
+      },
+      "startingTier": {
+        "oldValue": null,
+        "newValue": "Diamond"
+      },
+      "tags": {
+        "added": [],
+        "removed": []
+      },
+      "hiddenTags": {
+        "added": [
+          "Poison"
+        ],
+        "removed": []
+      },
+      "size": {
+        "oldValue": null,
+        "newValue": "Medium"
+      },
+      "heroes": {
+        "added": [
+          "Mak"
+        ],
+        "removed": []
+      },
+      "tooltips": [
+        {
+          "index": 0,
+          "oldValue": null,
+          "newValue": "The first time you fall below half health each fight, double your enemy's Poison."
+        }
+      ]
+    },
     "9215b678-2833-427b-bc97-75a90968c634": {
       "metadata": {
         "id": "9215b678-2833-427b-bc97-75a90968c634",
@@ -22820,6 +22868,154 @@ const data: PatchNotes = {
           "index": 0,
           "oldValue": null,
           "newValue": "The first time you fall below half health each fight, destroy an item for the fight."
+        }
+      ]
+    },
+    "dbd50f7c-4261-4afd-93da-2f4d9e33509e": {
+      "metadata": {
+        "id": "dbd50f7c-4261-4afd-93da-2f4d9e33509e",
+        "name": "Explosive Potions",
+        "previousStartingTier": "Gold",
+        "currentStartingTier": "Gold",
+        "heroes": [
+          "Mak"
+        ],
+        "currentSize": "Medium",
+        "type": "skill"
+      },
+      "name": {
+        "oldValue": null,
+        "newValue": "Explosive Potions"
+      },
+      "startingTier": {
+        "oldValue": null,
+        "newValue": "Gold"
+      },
+      "tags": {
+        "added": [
+          "Weapon",
+          "Potion"
+        ],
+        "removed": []
+      },
+      "hiddenTags": {
+        "added": [
+          "Charge",
+          "BurnReference"
+        ],
+        "removed": []
+      },
+      "size": {
+        "oldValue": null,
+        "newValue": "Medium"
+      },
+      "heroes": {
+        "added": [
+          "Mak"
+        ],
+        "removed": []
+      },
+      "tooltips": [
+        {
+          "index": 0,
+          "oldValue": null,
+          "newValue": "The first (4/8) times you use a potion each fight, charge 1 Weapon or Burn item 1 second(s)."
+        }
+      ]
+    },
+    "f790df42-e8e6-4329-aaeb-8a757c02c326": {
+      "metadata": {
+        "id": "f790df42-e8e6-4329-aaeb-8a757c02c326",
+        "name": "Vital Renewal",
+        "previousStartingTier": "Silver",
+        "currentStartingTier": "Silver",
+        "heroes": [
+          "Mak"
+        ],
+        "currentSize": "Medium",
+        "type": "skill"
+      },
+      "name": {
+        "oldValue": null,
+        "newValue": "Vital Renewal"
+      },
+      "startingTier": {
+        "oldValue": null,
+        "newValue": "Silver"
+      },
+      "tags": {
+        "added": [],
+        "removed": []
+      },
+      "hiddenTags": {
+        "added": [
+          "Cooldown"
+        ],
+        "removed": []
+      },
+      "size": {
+        "oldValue": null,
+        "newValue": "Medium"
+      },
+      "heroes": {
+        "added": [
+          "Mak"
+        ],
+        "removed": []
+      },
+      "tooltips": [
+        {
+          "index": 0,
+          "oldValue": null,
+          "newValue": "When you Slow, Freeze, Poison or Burn, a Regeneration item gains (1/2/3) Regeneration for the fight."
+        }
+      ]
+    },
+    "8a9a98fe-b1bd-4da7-8233-dffd3845aa45": {
+      "metadata": {
+        "id": "8a9a98fe-b1bd-4da7-8233-dffd3845aa45",
+        "name": "Dumpster Diving",
+        "previousStartingTier": "Bronze",
+        "currentStartingTier": "Bronze",
+        "heroes": [
+          "Mak"
+        ],
+        "currentSize": "Medium",
+        "type": "skill"
+      },
+      "name": {
+        "oldValue": null,
+        "newValue": "Dumpster Diving"
+      },
+      "startingTier": {
+        "oldValue": null,
+        "newValue": "Bronze"
+      },
+      "tags": {
+        "added": [
+          "Potion"
+        ],
+        "removed": []
+      },
+      "hiddenTags": {
+        "added": [],
+        "removed": []
+      },
+      "size": {
+        "oldValue": null,
+        "newValue": "Medium"
+      },
+      "heroes": {
+        "added": [
+          "Mak"
+        ],
+        "removed": []
+      },
+      "tooltips": [
+        {
+          "index": 0,
+          "oldValue": null,
+          "newValue": "At the start of each day, get a random Potion."
         }
       ]
     },
