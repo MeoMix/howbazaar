@@ -28,16 +28,15 @@ const allowedList = [
   // Skillet
   '0d227497-f57f-44ef-98a8-15791e710fb6',
   // Dragon Heart
-  '2f4625b6-42e1-42e8-9f50-82edf038fac1',
-  // Calcinator:
-  '3e3bda1d-81ba-4719-8772-417d8b834e99',
+  '2f4625b6-42e1-42e8-9f50-82edf038fac1'
 ];
 
 const allowedPackIds = [
   'Vanessa_Core',
   'Vanessa_Mysteries_of_the_Deep',
   'Pygmalien_Core',
-  'Pyg_Frozen_Assets'
+  'Pyg_Frozen_Assets',
+  'Mak_Core'
 ];
 
 const disallowedList = [
