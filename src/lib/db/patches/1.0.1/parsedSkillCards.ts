@@ -4,50 +4,6 @@ import type { ParsedSkillCard } from '$lib/types';
 
 const data: ParsedSkillCard[] = [
   {
-    "id": "af42d725-dc55-4f6f-9de6-b7a4c7f7013e",
-    "name": "Heavy Drinker",
-    "startingTier": "Gold",
-    "tiers": {
-      "Bronze": {
-        "tooltips": []
-      },
-      "Silver": {
-        "tooltips": []
-      },
-      "Gold": {
-        "tooltips": [
-          "When you use a potion, increase the damage of your weapons by 1 and gain 1 Regeneration for the fight."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "When you use a potion, increase the damage of your weapons by 1 and gain 2 Regeneration for the fight."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [
-      "Potion",
-      "Weapon"
-    ],
-    "hiddenTags": [
-      "DamageReference",
-      "Regen"
-    ],
-    "size": "Medium",
-    "heroes": [
-      "Mak"
-    ],
-    "artKey": "Icon_Skill_Placeholder.png",
-    "unifiedTooltips": [
-      "When you use a potion, increase the damage of your weapons by 1 and gain (1/2) Regeneration for the fight."
-    ],
-    "remarks": [],
-    "packId": "Mak_Core"
-  },
-  {
     "id": "756024f8-ad19-4f9b-a3c1-3a93c285b5d1",
     "name": "Aggressive",
     "startingTier": "Bronze",

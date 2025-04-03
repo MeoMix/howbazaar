@@ -22777,58 +22777,6 @@ const data: PatchNotes = {
         }
       ]
     },
-    "af42d725-dc55-4f6f-9de6-b7a4c7f7013e": {
-      "metadata": {
-        "id": "af42d725-dc55-4f6f-9de6-b7a4c7f7013e",
-        "name": "Heavy Drinker",
-        "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold",
-        "heroes": [
-          "Mak"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "name": {
-        "oldValue": null,
-        "newValue": "Heavy Drinker"
-      },
-      "startingTier": {
-        "oldValue": null,
-        "newValue": "Gold"
-      },
-      "tags": {
-        "added": [
-          "Potion",
-          "Weapon"
-        ],
-        "removed": []
-      },
-      "hiddenTags": {
-        "added": [
-          "DamageReference",
-          "Regen"
-        ],
-        "removed": []
-      },
-      "size": {
-        "oldValue": null,
-        "newValue": "Medium"
-      },
-      "heroes": {
-        "added": [
-          "Mak"
-        ],
-        "removed": []
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": null,
-          "newValue": "When you use a potion, increase the damage of your weapons by 1 and gain (1/2) Regeneration for the fight."
-        }
-      ]
-    },
     "6640af95-3999-43b2-b32d-fae5caf0b8cc": {
       "metadata": {
         "id": "6640af95-3999-43b2-b32d-fae5caf0b8cc",

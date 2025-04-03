@@ -58,7 +58,7 @@ const allowedList = [
   // Potent Potables
   'edb9b01b-b4ce-4a77-848e-0a49b8a23c16',
   // Heavy Drinker
-  'af42d725-dc55-4f6f-9de6-b7a4c7f7013e',
+  // 'af42d725-dc55-4f6f-9de6-b7a4c7f7013e',
 
   // TODO: Not enabled yet.
   // "e78b1599-ca80-47b0-b386-04ae403994d5", Virulent Research
