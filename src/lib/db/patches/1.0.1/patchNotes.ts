@@ -22654,6 +22654,57 @@ const data: PatchNotes = {
           "newValue": "The first time you fall below half health each fight, destroy an item for the fight."
         }
       ]
+    },
+    "721fa7ca-3451-4bbd-ac17-ffcff4a31ac6": {
+      "metadata": {
+        "id": "721fa7ca-3451-4bbd-ac17-ffcff4a31ac6",
+        "name": "Overheal Haste",
+        "previousStartingTier": "Gold",
+        "currentStartingTier": "Gold",
+        "heroes": [
+          "Pygmalien",
+          "Vanessa"
+        ],
+        "currentSize": "Medium",
+        "type": "skill"
+      },
+      "name": {
+        "oldValue": null,
+        "newValue": "Overheal Haste"
+      },
+      "startingTier": {
+        "oldValue": null,
+        "newValue": "Gold"
+      },
+      "tags": {
+        "added": [],
+        "removed": []
+      },
+      "hiddenTags": {
+        "added": [
+          "HealReference",
+          "Haste"
+        ],
+        "removed": []
+      },
+      "size": {
+        "oldValue": null,
+        "newValue": "Medium"
+      },
+      "heroes": {
+        "added": [
+          "Pygmalien",
+          "Vanessa"
+        ],
+        "removed": []
+      },
+      "tooltips": [
+        {
+          "index": 0,
+          "oldValue": null,
+          "newValue": "The first time you Over-heal each fight, Haste your items for (2/4) second(s)."
+        }
+      ]
     }
   }
 };

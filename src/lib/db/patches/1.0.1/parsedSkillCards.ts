@@ -11479,6 +11479,48 @@ const data: ParsedSkillCard[] = [
     "packId": "Core"
   },
   {
+    "id": "721fa7ca-3451-4bbd-ac17-ffcff4a31ac6",
+    "name": "Overheal Haste",
+    "startingTier": "Gold",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": [
+          "The first time you Over-heal each fight, Haste your items for 2 second(s)."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "The first time you Over-heal each fight, Haste your items for 4 second(s)."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "HealReference",
+      "Haste"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Pygmalien",
+      "Vanessa"
+    ],
+    "artKey": "Icon_Skill_QuickHeal.png",
+    "unifiedTooltips": [
+      "The first time you Over-heal each fight, Haste your items for (2/4) second(s)."
+    ],
+    "remarks": [],
+    "packId": "Pygmalien_Core"
+  },
+  {
     "id": "7f097b31-c29e-4082-a835-6d6457c2d536",
     "name": "Ignition",
     "startingTier": "Diamond",
