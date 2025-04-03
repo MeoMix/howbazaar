@@ -5895,7 +5895,7 @@
             "TemplateId": "ad02d867-252b-45b5-9625-4480807caeff",
             "TemplateVersion": "1.0.0",
             "InstanceId": null,
-            "Tier": "Gold",
+            "Tier": "Silver",
             "Attributes": {}
           },
           {
@@ -5905,7 +5905,7 @@
             "TemplateId": "7b731de3-3598-46f4-b61f-75b7a0065d8a",
             "TemplateVersion": "1.0.0",
             "InstanceId": null,
-            "Tier": "Gold",
+            "Tier": "Silver",
             "Attributes": {}
           },
           {
@@ -5915,7 +5915,7 @@
             "TemplateId": "e21985a8-fe05-4142-ab65-93c110545ec3",
             "TemplateVersion": "1.0.0",
             "InstanceId": null,
-            "Tier": "Gold",
+            "Tier": "Silver",
             "Attributes": {}
           },
           {
@@ -5935,7 +5935,7 @@
             "TemplateId": "e21985a8-fe05-4142-ab65-93c110545ec3",
             "TemplateVersion": "1.0.0",
             "InstanceId": null,
-            "Tier": "Gold",
+            "Tier": "Silver",
             "Attributes": {}
           },
           {
@@ -5955,7 +5955,7 @@
             "TemplateId": "c553a41a-1e8a-48c5-8b04-df60451b7795",
             "TemplateVersion": "1.0.0",
             "InstanceId": null,
-            "Tier": "Silver",
+            "Tier": "Gold",
             "Attributes": {}
           },
           {
@@ -5974,18 +5974,18 @@
       "Skills": [
         {
           "$type": "TCardInstanceSkill",
-          "TemplateId": "2c4b4d14-19db-4d75-9fb6-a377d9ca9882",
-          "TemplateVersion": "1.0.0",
-          "InstanceId": null,
-          "Tier": "Silver",
-          "Attributes": {}
-        },
-        {
-          "$type": "TCardInstanceSkill",
           "TemplateId": "b21d98f7-d677-4598-8b53-5bfd8301d26a",
           "TemplateVersion": "1.0.0",
           "InstanceId": null,
           "Tier": "Gold",
+          "Attributes": {}
+        },
+        {
+          "$type": "TCardInstanceSkill",
+          "TemplateId": "2c4b4d14-19db-4d75-9fb6-a377d9ca9882",
+          "TemplateVersion": "1.0.0",
+          "InstanceId": null,
+          "Tier": "Silver",
           "Attributes": {}
         }
       ],
