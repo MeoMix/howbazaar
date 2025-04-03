@@ -150,7 +150,6 @@ const cleanFileName = (fileName: string): string => {
     "ElixirofImmortality":"RegenerationPotion",
     "Frostfinger": "IceClaw",
     "Portrait": "MementoMori",
-    // "NoxiousPotion": "RunicPotion",
   };
 
   // Sometimes there's a literal space at the end of the filename. Madness.

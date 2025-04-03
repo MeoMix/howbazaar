@@ -28,7 +28,9 @@ const allowedList = [
   // Skillet
   '0d227497-f57f-44ef-98a8-15791e710fb6',
   // Dragon Heart
-  '2f4625b6-42e1-42e8-9f50-82edf038fac1'
+  '2f4625b6-42e1-42e8-9f50-82edf038fac1',
+  // 3D Printer
+  '723880db-8a97-4833-a9a1-80c75cde4c17',
 ];
 
 const allowedPackIds = [

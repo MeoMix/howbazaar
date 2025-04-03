@@ -2463,6 +2463,117 @@ const data: ParsedItemCard[] = [
     "packId": "Pygmalien_Core"
   },
   {
+    "id": "723880db-8a97-4833-a9a1-80c75cde4c17",
+    "name": "3D Printer",
+    "startingTier": "Gold",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Transform into 3 copies of the small item to the left of this for the fight."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Transform into 3 copies of the small item to the left of this for the fight."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Tool",
+      "Tech"
+    ],
+    "hiddenTags": [],
+    "size": "Large",
+    "heroes": [
+      "Dooley"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "...and Enchant the transformations with Heavy if able."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "...and Enchant the transformations with Icy if able."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "...and Enchant the transformations with Turbo if able."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "...and Enchant the transformations with Shielded if able."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "...and Enchant the transformations with Restorative if able."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "...and Enchant the transformations with Toxic if able."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "...and Enchant the transformations with Fiery if able."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "...and Enchant the transformations with Shiny if able."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "...and Enchant the transformations with Deadly if able."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "...and Enchant the transformations with Radiant if able."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "...and Enchant the transformations with Obsidian if able."
+        ]
+      }
+    ],
+    "unifiedTooltips": [
+      "Cooldown (5/4) seconds",
+      "Transform into 3 copies of the small item to the left of this for the fight."
+    ],
+    "remarks": [],
+    "packId": "Dooley_Core"
+  },
+  {
     "id": "acfdf9cc-6a8c-43ef-8b30-14f4843b2f28",
     "name": "Security Camera",
     "startingTier": "Bronze",

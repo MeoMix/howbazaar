@@ -8316,6 +8316,174 @@ const data: PatchNotes = {
         ]
       }
     },
+    "723880db-8a97-4833-a9a1-80c75cde4c17": {
+      "metadata": {
+        "id": "723880db-8a97-4833-a9a1-80c75cde4c17",
+        "name": "3D Printer",
+        "previousStartingTier": "Gold",
+        "currentStartingTier": "Gold",
+        "currentHero": "Dooley",
+        "currentSize": "Large",
+        "type": "item"
+      },
+      "name": {
+        "oldValue": null,
+        "newValue": "3D Printer"
+      },
+      "startingTier": {
+        "oldValue": null,
+        "newValue": "Gold"
+      },
+      "tags": {
+        "added": [
+          "Tool",
+          "Tech"
+        ],
+        "removed": []
+      },
+      "hiddenTags": {
+        "added": [],
+        "removed": []
+      },
+      "size": {
+        "oldValue": null,
+        "newValue": "Large"
+      },
+      "heroes": {
+        "added": [
+          "Dooley"
+        ],
+        "removed": []
+      },
+      "tooltips": [
+        {
+          "index": 0,
+          "oldValue": null,
+          "newValue": "Cooldown (5/4) seconds"
+        },
+        {
+          "index": 1,
+          "oldValue": null,
+          "newValue": "Transform into 3 copies of the small item to the left of this for the fight."
+        }
+      ],
+      "enchantments": {
+        "added": [
+          {
+            "type": "Heavy",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "...and Enchant the transformations with Heavy if able."
+              }
+            ]
+          },
+          {
+            "type": "Icy",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "...and Enchant the transformations with Icy if able."
+              }
+            ]
+          },
+          {
+            "type": "Turbo",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "...and Enchant the transformations with Turbo if able."
+              }
+            ]
+          },
+          {
+            "type": "Shielded",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "...and Enchant the transformations with Shielded if able."
+              }
+            ]
+          },
+          {
+            "type": "Restorative",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "...and Enchant the transformations with Restorative if able."
+              }
+            ]
+          },
+          {
+            "type": "Toxic",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "...and Enchant the transformations with Toxic if able."
+              }
+            ]
+          },
+          {
+            "type": "Fiery",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "...and Enchant the transformations with Fiery if able."
+              }
+            ]
+          },
+          {
+            "type": "Shiny",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "...and Enchant the transformations with Shiny if able."
+              }
+            ]
+          },
+          {
+            "type": "Deadly",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "...and Enchant the transformations with Deadly if able."
+              }
+            ]
+          },
+          {
+            "type": "Radiant",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "...and Enchant the transformations with Radiant if able."
+              }
+            ]
+          },
+          {
+            "type": "Obsidian",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "...and Enchant the transformations with Obsidian if able."
+              }
+            ]
+          }
+        ],
+        "removed": [],
+        "modified": []
+      }
+    },
     "c65e6801-7d3d-43e0-907e-ff7260efaf58": {
       "metadata": {
         "id": "c65e6801-7d3d-43e0-907e-ff7260efaf58",
