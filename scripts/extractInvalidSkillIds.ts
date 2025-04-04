@@ -43,6 +43,10 @@ const allowedList = [
   '8b513e67-9c49-4fed-a7e4-335d982367ac',
   // Healthy Heart (Hearty)
   '05ec8652-3c5f-4cba-acd1-c3eee8e49d44',
+  // Streamline Weapon
+  '3d9279b1-dbf8-4193-8989-8d2b022533af',
+  // Searing Flames
+  '53315fc2-ef04-45fc-b269-9d4932c52621',
   // Overheal Haste
   '721fa7ca-3451-4bbd-ac17-ffcff4a31ac6',
   // Dumpster Diving

@@ -5792,6 +5792,49 @@ const data: ParsedSkillCard[] = [
     "packId": "Core"
   },
   {
+    "id": "53315fc2-ef04-45fc-b269-9d4932c52621",
+    "name": "Searing Flames",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "When one of your Burn items gains Haste, if it already has Haste, it gains 1 Burn for the fight."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "When one of your Burn items gains Haste, if it already has Haste, it gains 2 Burn for the fight."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "When one of your Burn items gains Haste, if it already has Haste, it gains 3 Burn for the fight."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "BurnReference",
+      "HasteReference"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Dooley"
+    ],
+    "artKey": "Icon_Skill_SearingBlade.png",
+    "unifiedTooltips": [
+      "When one of your Burn items gains Haste, if it already has Haste, it gains (1/2/3) Burn for the fight."
+    ],
+    "remarks": [],
+    "packId": "Vanessa_Core"
+  },
+  {
     "id": "1c4c5aaa-6aa2-4329-a55a-ac75e987ee95",
     "name": "Arms Race",
     "startingTier": "Gold",
@@ -9077,6 +9120,51 @@ const data: ParsedSkillCard[] = [
     ],
     "remarks": [],
     "packId": "Core"
+  },
+  {
+    "id": "3d9279b1-dbf8-4193-8989-8d2b022533af",
+    "name": "Streamline Weapon",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "When one of your Weapons gains Haste, if it already has Haste, it gains +5 damage."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "When one of your Weapons gains Haste, if it already has Haste, it gains +10 damage."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "When one of your Weapons gains Haste, if it already has Haste, it gains +15 damage."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Weapon"
+    ],
+    "hiddenTags": [
+      "DamageReference",
+      "HasteReference"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Vanessa"
+    ],
+    "artKey": "Icon_Skill_FinesseWeapon.png",
+    "unifiedTooltips": [
+      "When one of your Weapons gains Haste, if it already has Haste, it gains (+5/+10/+15) damage."
+    ],
+    "remarks": [],
+    "packId": "Pygmalien_Core"
   },
   {
     "id": "115c2677-6880-4400-af80-f5afa3d502fe",

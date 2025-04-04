@@ -16,7 +16,8 @@ const excludedIds = {
         // Example: ['0.1.9', new Set(['some-skill-id'])]
         ['0.1.9', new Set(['05ec8652-3c5f-4cba-acd1-c3eee8e49d44'])],
         ['0.1.9-hotfix1', new Set(['9215b678-2833-427b-bc97-75a90968c634'])],
-        ['1.0.0', new Set(['fcb51ffd-6d25-4e74-871a-7dc0de2bae91'])]
+        ['1.0.0', new Set(['fcb51ffd-6d25-4e74-871a-7dc0de2bae91'])],
+        ['1.0.0-hotfix1', new Set(['3d9279b1-dbf8-4193-8989-8d2b022533af', '53315fc2-ef04-45fc-b269-9d4932c52621'])]
     ])
 };
 

@@ -3,7 +3,7 @@
 import type { PatchNotes } from '$lib/types';
 
 const data: PatchNotes = {
-  "version": "1.0.1",
+  "version": "1.0.0",
   "items": {
     "e6451368-8fdf-48ae-8369-cb09cca48749": {
       "metadata": {
