@@ -219,17 +219,22 @@
             -->
             {#if showAds && isLargeScreen === true && !adScriptLoadFailed}
                 <div
-                    class="ml-4 sticky h-full top-[72px] pt-8 overflow-hidden {isXlScreen
-                        ? 'w-[300px]'
-                        : 'w-[120px]'}"
+                    class="ml-4 sticky h-full top-[72px] pt-8 overflow-hidden"
+                    style="width: {isXlScreen ? '300px' : '120px'};"
                 >
-                    <div
-                        data-ad="right-rail-2"
-                        data-ad-size={`${isXlScreen ? 300 : 120}x600`}
-                        style="width: {isXlScreen
-                            ? '300px'
-                            : '120px'}; height: 600px;"
-                    ></div>
+                    {#if isXlScreen}
+                        <div
+                            data-ad="right-rail-2"
+                            data-ad-size="300x600"
+                            style="width: 300px; height: 600px;"
+                        ></div>
+                    {:else}
+                        <div
+                            data-ad="right-rail-2"
+                            data-ad-size="120x600"
+                            style="width: 120px; height: 600px;"
+                        ></div>
+                    {/if}
                 </div>
             {/if}
         </div>
