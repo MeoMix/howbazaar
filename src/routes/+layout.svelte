@@ -218,7 +218,11 @@
                 only tries to initialize the ad unit when it has a valid width.
             -->
             {#if showAds && isLargeScreen === true && !adScriptLoadFailed}
-                <div class="ml-4 sticky h-full top-[72px] pt-8">
+                <div
+                    class="ml-4 sticky h-full top-[72px] pt-8 overflow-hidden {isXlScreen
+                        ? 'w-[300px]'
+                        : 'w-[120px]'}"
+                >
                     <div
                         data-ad="right-rail-2"
                         data-ad-size={`${isXlScreen ? 300 : 120}x600`}
