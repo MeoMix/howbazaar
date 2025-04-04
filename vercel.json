@@ -19,5 +19,12 @@
             ]
             
         }
+    ],
+    "redirects": [
+        {
+            "source": "/ads.txt",
+            "destination": "https://rev.iq/howbazaar.gg/ads.txt",
+            "permanent": true
+        }
     ]
 }
