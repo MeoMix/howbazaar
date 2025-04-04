@@ -1274,6 +1274,44 @@ const data: ParsedSkillCard[] = [
     "packId": "Dooley_Core"
   },
   {
+    "id": "8e2f3e1c-bd00-4b58-b746-a6ae18f804c3",
+    "name": "Hyper Focus",
+    "startingTier": "Diamond",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": []
+      },
+      "Diamond": {
+        "tooltips": [
+          "If you have only one medium item, its cooldown is reduced by 30%."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "Cooldown"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Common"
+    ],
+    "artKey": "Icon_Skill_MON_Lurk_01.png",
+    "unifiedTooltips": [
+      "If you have only one medium item, its cooldown is reduced by 30%."
+    ],
+    "remarks": [],
+    "packId": "Core"
+  },
+  {
     "id": "13f4df45-8f29-4a48-8a2b-b8176e17c85d",
     "name": "Retaliatory Toxins",
     "startingTier": "Gold",
@@ -1313,44 +1351,6 @@ const data: ParsedSkillCard[] = [
     ],
     "remarks": [],
     "packId": "Pygmalien_Core"
-  },
-  {
-    "id": "8e2f3e1c-bd00-4b58-b746-a6ae18f804c3",
-    "name": "Hyper Focus",
-    "startingTier": "Diamond",
-    "tiers": {
-      "Bronze": {
-        "tooltips": []
-      },
-      "Silver": {
-        "tooltips": []
-      },
-      "Gold": {
-        "tooltips": []
-      },
-      "Diamond": {
-        "tooltips": [
-          "If you have only one medium item, its cooldown is reduced by 30%."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [],
-    "hiddenTags": [
-      "Cooldown"
-    ],
-    "size": "Medium",
-    "heroes": [
-      "Common"
-    ],
-    "artKey": "Icon_Skill_MON_Lurk_01.png",
-    "unifiedTooltips": [
-      "If you have only one medium item, its cooldown is reduced by 30%."
-    ],
-    "remarks": [],
-    "packId": "Core"
   },
   {
     "id": "d1505b87-551f-4786-818c-3c441f920d7b",
@@ -10793,6 +10793,48 @@ const data: ParsedSkillCard[] = [
     "packId": "Pygmalien_Core"
   },
   {
+    "id": "03968f2d-5f40-464a-bf1f-9475836157cd",
+    "name": "Jury Rigger",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "When you use an Ammo item, Reload the item to the left of it 1 Ammo."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "When you use an Ammo item, Reload the item to the left of it 2 Ammo."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "When you use an Ammo item, Reload the item to the left of it 3 Ammo."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "Ammo"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Common"
+    ],
+    "artKey": "Icon_Skill_MON_ALittleOfEverything_01.png",
+    "unifiedTooltips": [
+      "When you use an Ammo item, Reload the item to the left of it (1/2/3) Ammo."
+    ],
+    "remarks": [],
+    "packId": "Core"
+  },
+  {
     "id": "a9b441e1-5824-4855-9359-2ab4643d9ff5",
     "name": "Toxic Shield",
     "startingTier": "Silver",
@@ -10835,48 +10877,6 @@ const data: ParsedSkillCard[] = [
     ],
     "remarks": [],
     "packId": "Mak_Core"
-  },
-  {
-    "id": "03968f2d-5f40-464a-bf1f-9475836157cd",
-    "name": "Jury Rigger",
-    "startingTier": "Silver",
-    "tiers": {
-      "Bronze": {
-        "tooltips": []
-      },
-      "Silver": {
-        "tooltips": [
-          "When you use an Ammo item, Reload the item to the left of it 1 Ammo."
-        ]
-      },
-      "Gold": {
-        "tooltips": [
-          "When you use an Ammo item, Reload the item to the left of it 2 Ammo."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "When you use an Ammo item, Reload the item to the left of it 3 Ammo."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [],
-    "hiddenTags": [
-      "Ammo"
-    ],
-    "size": "Medium",
-    "heroes": [
-      "Common"
-    ],
-    "artKey": "Icon_Skill_MON_ALittleOfEverything_01.png",
-    "unifiedTooltips": [
-      "When you use an Ammo item, Reload the item to the left of it (1/2/3) Ammo."
-    ],
-    "remarks": [],
-    "packId": "Core"
   },
   {
     "id": "8d41a164-2667-4df4-91ed-3da224b8c63a",
