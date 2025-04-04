@@ -9,16 +9,11 @@
         NavLi,
         NavHamburger,
         Footer,
-        FooterLinkGroup,
-        FooterLink,
-        Badge,
     } from "flowbite-svelte";
     import DiscordSolid from "flowbite-svelte-icons/DiscordSolid.svelte";
     import ClipboardOutline from "flowbite-svelte-icons/ClipboardOutline.svelte";
-    import { onDestroy, onMount, tick, type Snippet } from "svelte";
+    import { onDestroy, onMount, type Snippet } from "svelte";
     import { page } from "$app/stores";
-    import { browser } from "$app/environment";
-    import { invalidateAll } from "$app/navigation";
     import { PUBLIC_CDN_URL } from "$env/static/public";
     import { DollarOutline } from "flowbite-svelte-icons";
     import { adsStore } from "$lib/stores/adsStore";
@@ -34,8 +29,6 @@
     let adScriptLoaded = $state(false);
     let adScriptLoadFailed = $state(false);
     let unsubscribe = $state<Unsubscriber>();
-    let verticalAdContainer = $state<HTMLElement>();
-    let observer = $state<MutationObserver>();
     let mediaQuery = $state<MediaQueryList>();
     let xlMediaQuery = $state<MediaQueryList>();
     let isLargeScreen = $state<boolean | undefined>();
@@ -44,12 +37,6 @@
     const mediaQueryCallback = async () => {
         isLargeScreen = window.matchMedia("(min-width: 1024px)").matches;
         isXlScreen = window.matchMedia("(min-width: 1280px)").matches;
-
-        if (showAds) {
-            // Wait for `isLargeScreen` to redraw the ad unit
-            await tick();
-            setupAds();
-        }
     };
 
     const loadAdScript = (): Promise<void> => {
@@ -73,50 +60,6 @@
         });
     };
 
-    const setupAds = () => {
-        if (!adScriptLoaded) {
-            return;
-        }
-
-        // try {
-        //     if (window.adsbygoogle?.loaded && window.adsbygoogle?.pageState) {
-        //         window.adsbygoogle.push({});
-        //     } else {
-        //         adScriptLoadFailed = true;
-        //         console.error("AdSense failed to load:");
-        //     }
-        // } catch (e) {
-        //     console.error("AdSense failed to load:", e);
-        //     adScriptLoadFailed = true;
-        // }
-
-        // observer?.disconnect();
-
-        // observer = new MutationObserver((mutations) => {
-        //     mutations.forEach((mutation) => {
-        //         if (
-        //             mutation.type === "attributes" &&
-        //             mutation.attributeName === "style"
-        //         ) {
-        //             const targetElement = mutation.target as HTMLElement;
-        //             // Prevent Google AdSense from overwriting the height properties.
-        //             targetElement.style.height = "";
-        //             targetElement.style.minHeight = "";
-        //         }
-        //     });
-        // });
-
-        // let currentElement: HTMLElement | undefined | null =
-        //     verticalAdContainer;
-        // while (currentElement && currentElement !== document.documentElement) {
-        //     observer.observe(currentElement, {
-        //         attributes: true,
-        //         attributeFilter: ["style"],
-        //     });
-        //     currentElement = currentElement.parentElement; // Move up the DOM tree
-        // }
-    };
-
     onMount(async () => {
         mediaQuery = window.matchMedia("(min-width: 1024px)");
         xlMediaQuery = window.matchMedia("(min-width: 1280px)");
@@ -125,15 +68,12 @@
         mediaQueryCallback();
 
         if (window.isAdBlockDisabled) {
-            loadAdScript().then(() => {
-                unsubscribe = adsStore.subscribe(async (state) => {
-                    showAds = state.showAds;
+            unsubscribe = adsStore.subscribe(async (state) => {
+                showAds = state.showAds;
 
-                    if (showAds) {
-                        await tick();
-                        setupAds();
-                    }
-                });
+                if (showAds) {
+                    await loadAdScript();
+                }
             });
         } else {
             adScriptLoadFailed = true;
@@ -142,9 +82,6 @@
 
     onDestroy(() => {
         unsubscribe?.();
-
-        // Disconnect the mutation observer when component is destroyed
-        observer?.disconnect();
         mediaQuery?.removeEventListener("change", mediaQueryCallback);
         xlMediaQuery?.removeEventListener("change", mediaQueryCallback);
     });
@@ -160,9 +97,12 @@
     class="flex flex-col min-h-screen bg-white dark:bg-bazaar-background text-gray-900 dark:text-bazaar-tan700"
 >
     {#if !$page.data.hasSeenMakPreview}
-        <div class="border-b border-bazaar-orange/20 dark:border-bazaar-orange/30 text-bazaar-orange dark:text-bazaar-orange px-4 py-2 text-center">
+        <div
+            class="border-b border-bazaar-orange/20 dark:border-bazaar-orange/30 text-bazaar-orange dark:text-bazaar-orange px-4 py-2 text-center"
+        >
             <a href="/patchnotes/mak-preview" class="hover:underline">
-                How Bazaar got early access to Mak's new items! Click to see an exclusive preview 🧪
+                How Bazaar got early access to Mak's new items! Click to see an
+                exclusive preview 🧪
             </a>
         </div>
     {/if}
@@ -272,52 +212,29 @@
                 only tries to initialize the ad unit when it has a valid width.
             -->
             {#if showAds && isLargeScreen === true && !adScriptLoadFailed}
-                <div
-                    bind:this={verticalAdContainer}
-                    class="ml-4 sticky h-full top-[72px] pt-8"
-                >
-                    {#if isXlScreen}
-                        <div
-                            data-ad="right-rail-1"
-                            data-ad-size="300x250"
-                        ></div>
-                        <div
-                            data-ad="right-rail-2"
-                            data-ad-size="300x600"
-                        ></div>
-                    {:else}
-                        <div
-                            data-ad="right-rail-1"
-                            data-ad-size="120x250"
-                        ></div>
-                        <div
-                            data-ad="right-rail-2"
-                            data-ad-size="120x600"
-                        ></div>
-                    {/if}
+                <div class="ml-4 sticky h-full top-[72px] pt-8">
+                    <div
+                        data-ad="right-rail-2"
+                        data-ad-size={`${isXlScreen ? 300 : 120}x600`}
+                    ></div>
                 </div>
             {/if}
         </div>
     </div>
 
     {#if showAds && isLargeScreen === false && !adScriptLoadFailed}
-        <!-- Fixed horizontal banner ad for smaller screens (visible on md and below) -->
+        <!-- 
+            Fixed horizontal banner ad for smaller screens (visible on md and below) 
+            Width is arbitrary - RevIQ script will resize to fit the width of the viewport.
+        -->
         <div class="fixed bottom-0 left-0 right-0 w-full z-50">
-            <div class="bg-gray-100 border-t border-gray-200 shadow-lg">
-                <!-- TODO: Would be nice to have a 100px ad unit here -->
-                <!-- <ins
-                    class="adsbygoogle w-full h-[100px]"
-                    style="display:block;"
-                    data-ad-client="ca-pub-6020599814166575"
-                    data-ad-slot="6216601165"
-                    data-ad-format="horizontal"
-                >
-                </ins> -->
-            </div>
+            <div data-ad="anchor" data-ad-size="1024x100"></div>
         </div>
     {/if}
 
-    <div class={`${showAds && !adScriptLoadFailed ? "mb-[100px] lg:mb-0" : ""}`}>
+    <div
+        class={`${showAds && !adScriptLoadFailed ? "mb-[100px] lg:mb-0" : ""}`}
+    >
         <Footer
             footerType="sitemap"
             class={`py-6 bg-white dark:bg-bazaar-background`}
