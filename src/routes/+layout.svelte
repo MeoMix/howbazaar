@@ -98,7 +98,7 @@
         ) as HTMLElement;
         if (adElement) {
             if (showAds && isLargeScreen === false && !adScriptLoadFailed) {
-                adElement.style.display = "block";
+                adElement.style.display = "flex";
             } else {
                 adElement.style.display = "none";
             }
@@ -222,6 +222,10 @@
                     class="ml-4 sticky h-full top-[72px] pt-8 overflow-hidden"
                     style="width: {isXlScreen ? '300px' : '120px'};"
                 >
+                    <!--
+                        Render two distinct divs rather than just updating ad-size to allow the injected Google Adsense iframe to be recreated.
+                        In the future, it might be better to just go for 300x600 always and use overflow: hidden on the parent as long as 51% of the ad is visible.
+                     -->
                     {#if isXlScreen}
                         <div
                             data-ad="right-rail-2"
