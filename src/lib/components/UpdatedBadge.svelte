@@ -2,11 +2,6 @@
     import { Badge } from "flowbite-svelte";
 </script>
 
-<a
-    href="https://playthebazaar-cdn.azureedge.net/beta/PatchNotes.html"
-    target="_blank"
->
-    <Badge border large color="green" class="ml-2 whitespace-nowrap">
-        Patch 0.1.8 - Mar 07
-    </Badge>
-</a>
+<Badge border large color="green" class="ml-2 whitespace-nowrap">
+    Live Version - Patch 1.0.0 Hotfix 1 - Released Apr 03
+</Badge>

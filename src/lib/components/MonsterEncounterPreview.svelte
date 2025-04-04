@@ -1,7 +1,7 @@
 <script lang="ts">
     import type { ClientSideMonsterEncounter } from "$lib/types";
     import { removeSpecialCharacters } from "$lib/utils/stringUtils";
-    import { PUBLIC_CDN_URL } from "$env/static/public";
+    import { getImageUrl } from "$lib/utils/imageUtils";
 
     const {
         monsterEncounter,
@@ -15,6 +15,7 @@
     const sanitizedCardName = $derived(
         removeSpecialCharacters(monsterEncounter.cardName),
     );
+    const imageUrl = $derived(getImageUrl("monsters", sanitizedCardName));
 
     function viewDetails() {
         toggleEncounter(monsterEncounter);
@@ -30,7 +31,7 @@
         style="clip-path: inset(0 0 10px 0 round 0 0 5% 5%);"
     >
         <img
-            src={`${PUBLIC_CDN_URL}images/monsters/${sanitizedCardName}.avif`}
+            src={imageUrl}
             alt={`${monsterEncounter.cardName}`}
             class={`absolute top-0 left-0 h-full w-full transition-all scale-110 group-hover:scale-[125%] ${isActive ? "scale-[125%]" : ""}`}
             loading="lazy"

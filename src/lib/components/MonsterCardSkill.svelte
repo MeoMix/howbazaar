@@ -3,6 +3,7 @@
     import { Card } from "flowbite-svelte";
     import Divider from "./Divider.svelte";
     import MonsterCardImage from "./MonsterCardImage.svelte";
+    import CardBadges from "./CardBadges.svelte";
 
     const {
         card,
@@ -20,11 +21,24 @@
         </div>
 
         <div class="flex flex-col">
-            <div class="font-bold text-lg md:text-xl">
-                {card.name}
-            </div>
+            <div class="flex flex-col gap-2 relative">
+                <div class="font-bold text-lg md:text-xl">
+                    {card.name}
+                </div>
 
-            <Divider />
+                <CardBadges
+                    primaryBadges={[
+                        {
+                            text: tierType,
+                            color: tierType.toLowerCase(),
+                            showIcon: false,
+                        },
+                        ...card.tags.map((text) => ({ text, showIcon: true }))
+                    ]}
+                />
+
+                <Divider />
+            </div>
 
             {#each card.tiers[tierType].tooltips as tooltip}
                 <div class="text-sm md:text-base">

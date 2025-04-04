@@ -2,7 +2,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 
 import { deleteFiles } from './utils/fileUtils';
-import parsedItemCards from "../src/lib/db/parsedItemCards";
+import parsedItemCards from "../src/lib/db/patches/latest/parsedItemCards";
 import { removeSpecialCharacters } from './utils/stringUtils';
 import { checkAndResizeImages, convertImagesToAvif } from './utils/imageUtils';
 
@@ -86,7 +86,7 @@ const cleanFileName = (fileName: string): string => {
     'MarbleScaleMail': 'MarbleScalemail',
     'PepperMill': 'BlackPepper',
     'Claw': 'ClawArm',
-    'Jaballianlongbow': 'JaballianLongbow',
+    'Jaballianlongbow': 'JabalianLongbow',
     'JaballianDagger': 'PygmaliensDagger',
     'SlingShot': 'Slingshot',
     'BusyBees': 'BusyBee',
@@ -113,13 +113,42 @@ const cleanFileName = (fileName: string): string => {
     'Titanium': 'Pyrocarbon',
     'AlienAxe': 'RuneAxe',
     'PowerShoes': 'AgilityBoots',
-    'NuclearReactor': 'FuelRod',
+    'NuclearReactor': 'DefenseMatrix',
     'ForkLift': 'Forklift',
     'Waterwheel': 'WaterWheel',
     'Silk': 'SilkScarf',
     'PreservedDragonsBreath': 'DragonsBreath',
     'snowmobile': 'Snowmobile',
     'DarkwaterAnglerfish (1)': 'DarkwaterAnglerfish',
+    'Nanobots': 'Nanobot',
+    'FossilizedFemur': 'MagnusFemur',
+    'PrimordialDepthCharge': 'ElementalDepthCharge',
+    'JaballianDrum': 'JabalianDrum',
+    'ShieldPotion': 'InvulnerabilityPotion',
+    'SattComm': 'SatComm',
+    'Dootron': 'Dooltron',
+    'Dootron Mainframe': 'DooltronMainframe',
+    'TheDooshield': 'ZShield',
+    'TheDooblade': 'ZSword',
+    "TrustySteed" :"Seashadow",
+    "CrubbyLobster": "OldSaltclaw",
+    "LongTail": "MrRichardson",
+    "SaltydogSaloon": "SeadogsSaloon",
+    "FrozenFire": "FrozenFlame",
+    "Runeblade": "RunicBlade",
+    "CursePotion": "CrocodileTears",
+    "FireFLies": "Fireflies",
+    "IceWeaselpede": "Weaselpede",
+    "RunicSai": "RunicDaggers",
+    "AlienRaven": "CovetousRaven",
+    "HidingSpot": "Cellar",
+    "TheTomeOfYyahan": "TheTomeofYyahan",
+    "RecycleBin": "RecyclingBin",
+    "ElixirofImmortality":"RegenerationPotion",
+    "Frostfinger": "IceClaw",
+    "Portrait": "MementoMori",
+    'SustainingPotion': 'NoxiousPotion', // It's weird because the item is definitely Noxious Potion, and there's an image for it, but it's not the right one.
+    'NoxiousPotion': 'RunicPotion',
   };
 
   // Sometimes there's a literal space at the end of the filename. Madness.
@@ -128,11 +157,14 @@ const cleanFileName = (fileName: string): string => {
   // Remove the "CF_" prefix and the following size identifier if present
   fileName = fileName.replace(/^(CF|PNG)_[SML]_/, '');
 
-  // Remove any three-letter identifier if present (Van, Pyg, etc)
-  fileName = fileName.replace(/^[A-Z]{3}_/i, '');
+  // Remove specific three-letter identifiers if present (Van, Pyg, Doo, Jul, Ste, Mak)
+  fileName = fileName.replace(/^(VAN|PYG|PIG|DOO|JUL|STE|STL|MAK|MAC|ADV|NEU|NTR)[-_]/i, '');
 
   // Remove _D or _D1 from end of file name
   fileName = fileName.replace(/_D\d?$/, '');
+
+  // Remove _T or _T1 from end of file name
+  fileName = fileName.replace(/_T\d?$/, '');
 
   // Apply specific renaming rules if the filename matches any key in renameRules
   const baseName = path.basename(fileName, path.extname(fileName)); // Get base filename without extension
@@ -140,7 +172,9 @@ const cleanFileName = (fileName: string): string => {
     fileName = renameRules[baseName] + path.extname(fileName); // Replace base name and keep the extension
   }
 
-  return fileName;
+  // Strip special characters like hyphens to match parsedItemCard logic
+  const { name, ext } = path.parse(fileName);
+  return removeSpecialCharacters(name) + ext;
 };
 
 // TODO: This script should ideally intelligently copy files to the end directory
@@ -153,7 +187,7 @@ async function processItemImages() {
   const itemCardNames = parsedItemCards.map(item => removeSpecialCharacters(item.name));
 
   console.log('Cleaning file names');
-  await cleanFileNames();
+  await cleanFileNamesTwoPhase();
 
   console.log('Duplicating files');
   await duplicateFiles();
@@ -161,7 +195,7 @@ async function processItemImages() {
   const files = await fs.promises.readdir(assetPath);
 
   // Create a map of file -> cleanFileName
-  const fileCleanNameMap = new Map(files.map(file => [file, cleanFileName(path.parse(file).name)]));
+  const fileCleanNameMap = new Map(files.map(file => [file, path.parse(file).name]));
 
   console.log('fileCleanNameMap', fileCleanNameMap);
 
@@ -209,26 +243,40 @@ async function deleteKnownUselessFiles() {
   await deleteFiles(filesToDelete, assetPath);
 }
 
-async function cleanFileNames() {
+async function cleanFileNamesTwoPhase() {
   const files = await fs.promises.readdir(assetPath);
 
-  // Extract full file names, including extensions
-  for (const file of files) {
-    const filePath = path.join(assetPath, file);
+  // 1) Build the rename map: originalFile → { tempFile, finalFile }
+  //    Note: Use something guaranteed unique for tempFile to avoid collisions
+  const renameMap = files.map(file => {
+    const { name, ext } = path.parse(file); 
+    const finalName = cleanFileName(name) + ext;
+    return {
+      originalFile: file,
+      tempFile: `tmp__${file}`,
+      finalFile: finalName,
+    };
+  });
 
-    const { name, ext } = path.parse(file); // Split file name and extension
-    const newFileName = `${cleanFileName(name)}${ext}`; // Append the cleaned name with the original extension
-    const newFilePath = path.join(assetPath, newFileName);
+  // 2) Phase 1: rename to tmp__name
+  for (const { originalFile, tempFile } of renameMap) {
+    const oldPath = path.join(assetPath, originalFile);
+    const tmpPath = path.join(assetPath, tempFile);
+    await fs.promises.rename(oldPath, tmpPath);
+  }
 
-    if (newFileName !== file) {
-      try {
-        await fs.promises.rename(filePath, newFilePath);
-        console.log(`Renamed ${file} to ${newFileName}`);
-      } catch (err) {
-        console.error(`Error renaming ${file} to ${newFileName}:`, err);
-      }
-    } else {
-      console.log(`No renaming needed for: ${file}`);
+  // 3) Phase 2: rename tmp__name → final
+  for (const { tempFile, finalFile } of renameMap) {
+    const tmpPath = path.join(assetPath, tempFile);
+    const finalPath = path.join(assetPath, finalFile);
+
+    // Make sure we handle existing final name collisions 
+    // by removing or skipping if needed. Or handle errors as you wish.
+    try {
+      await fs.promises.rename(tmpPath, finalPath);
+      console.log(`Renamed ${tempFile} → ${finalFile}`);
+    } catch (err) {
+      console.error(`Error renaming ${tempFile} to ${finalFile}:`, err);
     }
   }
 }
@@ -240,7 +288,7 @@ async function duplicateFiles() {
     'YellowPigglesA': ['YellowPigglesX', 'YellowPigglesL', 'YellowPigglesR'],
     'BluePigglesA': ['BluePigglesX', 'BluePigglesL', 'BluePigglesR'],
     // TODO: It's weird this is needed?
-    'Cutlass': ['TinyCutlass']
+    'Cutlass': ['TinyCutlass'],
   };
 
   try {

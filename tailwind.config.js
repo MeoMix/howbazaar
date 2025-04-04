@@ -34,6 +34,12 @@ const gameEffects = {
   tag: 'rgb(152,168,254)',
 };
 
+// Colors used for patch note diffs
+const patchnotes = {
+  removed: 'rgba(248,81,73,0.4)',
+  added: 'rgba(46,160,67,0.4)',
+};
+
 const ogTiers = {
   bronze: '#CD7F32',
   silver: '#C0C0C0',
@@ -128,6 +134,14 @@ const safelist = [
     `dark:text-gameEffects-${effect}`,
     `dark:border-gameEffects-${effect}`,
     `dark:bg-gameEffects-${effect}`,
+  ]),
+  ...Object.entries(patchnotes).flatMap(([type]) => [
+    `text-patchnotes-${type}`,
+    `border-patchnotes-${type}`,
+    `bg-patchnotes-${type}`,
+    `dark:text-patchnotes-${type}`,
+    `dark:border-patchnotes-${type}`,
+    `dark:bg-patchnotes-${type}`,
   ]),
   ...Object.entries(tiers).flatMap(([tier, shades]) =>
     Object.keys(shades).flatMap((shade) => [
@@ -224,6 +238,7 @@ export default {
 
         enchantments,
         gameEffects,
+        patchnotes,
         tiers,
         bazaar: {
           background: '#150c0b',

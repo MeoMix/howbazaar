@@ -24,7 +24,7 @@
                 have lists that show everything I've got planned in my
                 <a
                     class="font-bold text-blue-600"
-                    href="https://discord.gg/VrGGFYEXXz"
+                    href="https://discord.gg/scWr32PJfv"
                     target="_blank">HowBazaar Discord Server</a
                 >.
             </p>

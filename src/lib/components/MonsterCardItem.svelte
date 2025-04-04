@@ -8,6 +8,7 @@
     import { parseTooltipForRendering } from "$lib/utils/tooltipUtils";
     import Divider from "./Divider.svelte";
     import MonsterCardImage from "./MonsterCardImage.svelte";
+    import CardBadges from "./CardBadges.svelte";
 
     const {
         card,
@@ -26,11 +27,17 @@
     );
 
     // Type guard functions to check the type of tooltip part
-    function isKeywordPart(part: unknown): part is { text: string; effect: string } {
+    function isKeywordPart(
+        part: unknown,
+    ): part is { text: string; effect: string } {
         return typeof part === "object" && part !== null && "effect" in part;
     }
 
-    function isTierPart(part: unknown): part is { bold: boolean; parts: { text: string; tierType: string | null }[]; original: string } {
+    function isTierPart(part: unknown): part is {
+        bold: boolean;
+        parts: { text: string; tierType: string | null }[];
+        original: string;
+    } {
         return typeof part === "object" && part !== null && "bold" in part;
     }
 </script>
@@ -42,18 +49,30 @@
     <MonsterCardImage name={card.name} type="items" size={card.size} />
 
     <div class="flex flex-col px-4 pb-4 py-2 relative">
-        <div class="font-bold text-lg md:text-xl">
-            {#if enchantment}
-                <span
-                    class={`text-enchantments-${enchantment.type.toLowerCase()}`}
-                >
-                    {enchantment.type}
-                </span>
-            {/if}
-            {card.name}
-        </div>
+        <div class="flex flex-col gap-2 relative">
+            <div class="font-bold text-lg md:text-xl">
+                {#if enchantment}
+                    <span
+                        class={`text-enchantments-${enchantment.type.toLowerCase()}`}
+                    >
+                        {enchantment.type}
+                    </span>
+                {/if}
+                {card.name}
+            </div>
+            <CardBadges
+                primaryBadges={[
+                    {
+                        text: tierType,
+                        color: tierType.toLowerCase(),
+                        showIcon: false,
+                    },
+                    ...card.tags.map((text) => ({ text, showIcon: true }))
+                ]}
+            />
 
-        <Divider />
+            <Divider />
+        </div>
 
         {#each card.tiers[tierType].tooltips as tooltip}
             <div class="text-sm md:text-base">
@@ -62,7 +81,9 @@
                         {part}
                     {:else if isKeywordPart(part)}
                         <!-- Render keyword with game effect styling -->
-                        <span class="font-semibold text-gameEffects-{part.effect}">
+                        <span
+                            class="font-semibold text-gameEffects-{part.effect}"
+                        >
                             {part.text}
                         </span>
                     {:else if isTierPart(part)}
@@ -100,7 +121,9 @@
                             {part}
                         {:else if isKeywordPart(part)}
                             <!-- Render keyword with game effect styling -->
-                            <span class="font-semibold text-gameEffects-{part.effect}">
+                            <span
+                                class="font-semibold text-gameEffects-{part.effect}"
+                            >
                                 {part.text}
                             </span>
                         {:else if isTierPart(part)}

@@ -1,7 +1,7 @@
 import * as fs from 'fs/promises';
 import path from 'path';
 
-import parsedSkillCards from "../src/lib/db/parsedSkillCards";
+import parsedSkillCards from "../src/lib/db/patches/latest/parsedSkillCards";
 import { removeSpecialCharacters } from './utils/stringUtils.ts';
 import { deleteFiles } from './utils/fileUtils.ts';
 import { checkAndResizeImages, convertImagesToAvif } from './utils/imageUtils.ts';
@@ -38,6 +38,7 @@ async function renameSkillImages() {
 
     // Rename files and collect unused files
     const renamedFiles = new Set<string>();
+    const processedArtKeys = new Map<string, string>(); // Map of artKey to its current file path
 
     for (const { artKey, nameWithoutSpecialCharacters } of skillArtEntries) {
         const originalFile = files.find(file => path.parse(file).name === artKey);
@@ -45,10 +46,18 @@ async function renameSkillImages() {
             const originalFilePath = `${assetPath}${originalFile}`;
             const newFilePath = `${assetPath}${nameWithoutSpecialCharacters}${path.extname(originalFile)}`;
 
-            // Rename the file if the new name is different from the current name
-            if (originalFilePath !== newFilePath) {
-                await fs.rename(originalFilePath, newFilePath);
-                console.log(`Renamed "${originalFile}" to "${nameWithoutSpecialCharacters}${path.extname(originalFile)}"`);
+            // If this artKey has been processed before, copy from its current location
+            if (processedArtKeys.has(artKey)) {
+                const sourcePath = processedArtKeys.get(artKey)!;
+                await fs.copyFile(sourcePath, newFilePath);
+                console.log(`Copied "${path.basename(sourcePath)}" to "${nameWithoutSpecialCharacters}${path.extname(originalFile)}"`);
+            } else {
+                // First time seeing this artKey, move the file
+                if (originalFilePath !== newFilePath) {
+                    await fs.rename(originalFilePath, newFilePath);
+                    console.log(`Renamed "${originalFile}" to "${nameWithoutSpecialCharacters}${path.extname(originalFile)}"`);
+                }
+                processedArtKeys.set(artKey, newFilePath);
             }
 
             // Add the original file name to renamedFiles

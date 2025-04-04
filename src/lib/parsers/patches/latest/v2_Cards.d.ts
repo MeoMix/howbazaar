@@ -164,7 +164,7 @@ export interface FluffyCondition {
 
 export type Operator = "Any" | "None";
 
-export type Tag = "Weapon" | "Shield" | "Heal" | "Joy" | "Burn" | "Poison" | "Merchant" | "Core" | "Property" | "Friend" | "Apparel" | "Freeze" | "Aquatic" | "Toy" | "Dinosaur" | "Tool" | "Potion" | "Vehicle" | "Food" | "Dragon" | "Tech" | "Ray" | "Haste" | "Slow" | "Damage" | "Loot";
+export type Tag = "Weapon" | "Shield" | "Heal" | "Joy" | "Burn" | "Poison" | "Merchant" | "Core" | "Property" | "Friend" | "Apparel" | "Freeze" | "Aquatic" | "Toy" | "Dinosaur" | "Tool" | "Potion" | "Vehicle" | "Food" | "Dragon" | "Tech" | "Ray" | "Haste" | "Slow" | "Damage" | "Loot" | "Relic";
 
 export type TargetSection = "OpponentHand" | "AbsolutePlayerHand" | "SelfHand" | "AbsolutePlayerHandAndStash" | "AllHands" | "SelfHandAndStash" | "SelfNeighbors" | "SelfBoard" | "OpponentBoard";
 
@@ -2209,4 +2209,4 @@ export interface Bronze {
     TooltipIds: number[];
 }
 
-export type Version = "1.0.0" | "0.0.0";
+export type Version = "1.0.0" | "0.0.0" | "0.1.7" | "0.1.8" | "0.1.9";

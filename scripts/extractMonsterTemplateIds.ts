@@ -17,6 +17,7 @@ const hardcodedMappings = {
   // Ghost Pepper
   'f79e72dc-7f9b-4e7e-b14e-d4896fcf004f': 'b146714a-748a-4862-989c-19c83f6331fb',
 
+
   // d0202706-46dc-4c65-bf87-5e4ab63632ec
 };
 

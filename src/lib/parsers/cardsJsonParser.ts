@@ -10,18 +10,14 @@ import invalidItemIds from "./invalidItemIds.json";
 import invalidSkillIds from "./invalidSkillIds.json";
 import monsterTemplateIdMapping from "./monsterTemplateIdMapping.json";
 
-// JSON contains testing data which isn't shown in game during normal operations
-// I didn't see a good flag for hiding these so I'm explicitly banning them.
-// Originally I tried filtering out "GuidOnly" but there's many items which should be shown
-// that fit this critera - such as Dooley's cores.
-const explicitlyHiddenItemIds = [
-    // "TEST ENCHANTMENT KATANA"
-    "54f957f2-9522-486b-a7c6-bb234f74846e",
-    // "[Community Team] Katana"
-    "16e3ebba-d530-489c-8439-3b47a4182c09",
-    // "Gingerbread Man" (Joy isn't enabled currently),
-    "8b2ce029-7f69-401c-9811-3a6398237a90"
-];
+// Card packs that should be filtered out
+const disallowedCardPacks = [
+//   "Vanessa_The_Gang",
+  // Add more card packs to filter here as needed
+] as string[];
+
+// Keywords that indicate a card should be filtered out
+const invalidKeywords = ["[", "]", "Debug", "Test"] as const;
 
 const tierOrder: TierType[] = ["Bronze", "Silver", "Gold", "Diamond", "Legendary"];
 
@@ -73,6 +69,7 @@ function getAttributeInfo(
                 attributeValue = 0;
             }
         } else if (action.Value?.Modifier) {
+            attributeName = action.AttributeType!;
             // If there's a modifier, and if modifier mode is multiply, then get the attribute type and multiply it by modifier rather than just using modifier.
             attributeValue = action.Value.Modifier.Value.Value ?? action.Value.Modifier.Value.DefaultValue!;
             operation = action.Operation!;
@@ -83,6 +80,11 @@ function getAttributeInfo(
                 if (action.Value.Modifier.Value.Value === undefined) {
                     let modifierAttributeName = action.Value.Modifier.Value.AttributeType;
                     attributeValue = modifierAttributeName === undefined ? 0 : getAttributeValueFromTier(modifierAttributeName, tierAttributes, qualifier);
+                }
+
+                // Freeze, Slow, and Haste deal with time and are expressed in milliseconds. Convert to seconds.
+                if ((attributeName == "FreezeAmount" || attributeName == "SlowAmount" || attributeName == "HasteAmount") && attributeValue && attributeValue >= 100) {
+                    attributeValue /= 1000;
                 }
 
                 return {
@@ -113,6 +115,11 @@ function getAttributeInfo(
         attributeValue = getAttributeValueFromTier(attributeName, tierAttributes, qualifier);
         // Sometimes the value might be 0 and it would be more useful to include some information about a referential value
         // so that we can say stuff like "Heal equal to shield" rather than "Heal 0" when there's no shield in an out of game context.
+    }
+
+    // Freeze, Slow, and Haste deal with time and are expressed in milliseconds. Convert to seconds.
+    if ((attributeName == "FreezeAmount" || attributeName == "SlowAmount" || attributeName == "HasteAmount") && attributeValue && attributeValue >= 100) {
+        attributeValue /= 1000;
     }
 
     return {
@@ -245,7 +252,7 @@ function replaceTemplatingWithValues(tooltip: string, abilities: Ability[], aura
 
 function prettyPrintTooltip(tooltip: string) {
     // Remove bracketed content at the end of tooltips
-    tooltip = tooltip.replace(/\s*\[[^\]]*\]\s*$/, '');
+    tooltip = tooltip.replace(/\s*(?:\[[^\]]*\])+\s*$/, '');
 
     // Generally format milliseconds -> seconds
     // Don't be too greedy with the matching to avoid converting Life Preserver HP or Gavel Damage
@@ -352,7 +359,6 @@ function getDisplayedTooltips(tooltips: string[], abilities: Ability[], auras: A
     return displayedTooltips;
 }
 
-
 // Sometimes data gets left behind in tiers (i.e. an items starting tier is changed to Gold and the underlying data retains info regarding Silver)
 // Drop this data as to not confuse unifyTooltips.
 // Also, Legendary data only applies to Legendary items not to all items, so drop Legendary from non-Legendary items even though it's a "tier above"
@@ -389,15 +395,32 @@ type ValidItemCard = Card & { Tiers: Tiers, Type: "Item", Localization: { Title:
 type ValidSkillCard = Card & { Tiers: Tiers, Type: "Skill", Localization: { Title: { Text: string } } };
 type ValidCombatEncounterCard = Card & { Type: "CombatEncounter", Localization: { Title: { Text: string } }, CombatantType: { MonsterTemplateId: string; } };
 
+// Helper function to check for invalid keywords in a string
+function hasInvalidKeywords(text: string): boolean {
+    // Convert text to lowercase for case-insensitive comparison
+    const lowerText = text.toLowerCase();
+    
+    // Check for each invalid keyword
+    return invalidKeywords.some(keyword => {
+        // For square brackets, check for exact matches
+        if (keyword === "[" || keyword === "]") {
+            return text.includes(keyword);
+        }
+        // For "Debug" and "Test", check for word boundaries to avoid matching substrings
+        return new RegExp(`\\b${keyword.toLowerCase()}\\b`).test(lowerText);
+    });
+}
+
 function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
     const isValidItemCard = (entry: Card): entry is ValidItemCard =>
         entry.Type === "Item" &&
         // entry.SpawningEligibility !== "Never" &&
         entry.Tiers !== undefined &&
         entry.Localization.Title.Text !== null &&
-        !entry.Localization.Title.Text.includes("[DEBUG]") &&
+        !hasInvalidKeywords(entry.Localization.Title.Text) &&
+        !hasInvalidKeywords(entry.InternalName) &&
         !invalidItemIds.includes(entry.Id) &&
-        !explicitlyHiddenItemIds.includes(entry.Id);
+        !(entry.CardPackId && disallowedCardPacks.includes(entry.CardPackId));
 
     const validCards = Object.values(cardsJson).flat().filter(isValidItemCard);
 
@@ -451,6 +474,12 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
         const auras = Object.values(card.Auras);
         const tierMap = getTierMap(card);
         const remarks = [] as string[];
+
+        if (card.Localization.Title.Text === "Snowflake") {
+            console.log(card);
+            debugger;
+        }
+
 
         let tiers = Object.fromEntries((Object.entries(tierMap) as Entries<typeof tierMap>).map(
             ([tierName, tier]) => {
@@ -631,11 +660,6 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
                     tooltips.push(tooltip);
                 }
 
-                // TODO: Do this intelligently not patch fix
-                if (card.Localization.Title.Text === "Open Sign" && enchantmentType === "Deadly") {
-                    tooltips = ["Shield Properties adjacent to this have + Shield equal to the value of your highest value item. [0]"]
-                }
-
                 if (actions.length === 0) {
                     for (let [attributeName, attributeValue] of Object.entries(enchantmentAttributes)) {
                         tooltips.push(`${attributeName}${attributeName === "Lifesteal" ? "" : Math.round(attributeValue)}`.trim());
@@ -706,7 +730,8 @@ function parseSkillCards(cardsJson: CardsJson): ParsedSkillCard[] {
         // entry.SpawningEligibility !== "Never" &&
         entry.Tiers !== undefined &&
         entry.Localization.Title.Text !== null &&
-        !entry.Localization.Title.Text.includes("[DEBUG]") &&
+        !hasInvalidKeywords(entry.Localization.Title.Text) &&
+        !hasInvalidKeywords(entry.InternalName) &&
         !invalidSkillIds.includes(entry.Id) &&
         !!entry.ArtKey;
 
@@ -803,7 +828,9 @@ function parseCombatEncounterCards(cardsJson: CardsJson) {
         // entry.SpawningEligibility !== "Never" &&
         entry.CombatantType !== undefined &&
         (monsterTemplateIdMapping as any)[entry.Id] &&
-        entry.Localization.Title.Text !== null;
+        entry.Localization.Title.Text !== null &&
+        !hasInvalidKeywords(entry.Localization.Title.Text) &&
+        !hasInvalidKeywords(entry.InternalName);
 
     const validCards = Object.values(cardsJson).flat().filter(isEncounter);
 

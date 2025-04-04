@@ -6,8 +6,8 @@
         primaryBadges,
         secondaryBadges = [],
     }: {
-        primaryBadges: { text: string; color?: string }[];
-        secondaryBadges?: { text: string; color?: string }[];
+        primaryBadges: { text: string; color?: string, showIcon?: boolean }[];
+        secondaryBadges?: { text: string; color?: string, showIcon?: boolean }[];
     } = $props();
 
     const getBadgeClasses = (color?: string) => {
@@ -23,7 +23,11 @@
     <div class="flex flex-wrap gap-2">
         {#each primaryBadges as primaryBadge}
             <Badge rounded border class={getBadgeClasses(primaryBadge.color)}>
-                <IconLabel label={primaryBadge.text} />
+                {#if primaryBadge.showIcon}
+                    <IconLabel label={primaryBadge.text} />
+                {:else}
+                    {primaryBadge.text}
+                {/if}
             </Badge>
         {/each}
     </div>
@@ -36,7 +40,11 @@
                     border
                     class={getBadgeClasses(secondaryBadge.color)}
                 >
-                    <IconLabel label={secondaryBadge.text} />
+                    {#if secondaryBadge.showIcon}
+                        <IconLabel label={secondaryBadge.text} />
+                    {:else}
+                        {secondaryBadge.text}
+                    {/if}
                 </Badge>
             {/each}
         </div>

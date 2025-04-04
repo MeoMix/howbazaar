@@ -40,8 +40,39 @@ const allowedList = [
   // Counterstrike
   'c5bff6ad-5d13-4cf3-9941-98f3cf913949',
   // Small Refresh
-  '8b513e67-9c49-4fed-a7e4-335d982367ac'
+  '8b513e67-9c49-4fed-a7e4-335d982367ac',
+  // Healthy Heart (Hearty)
+  '05ec8652-3c5f-4cba-acd1-c3eee8e49d44',
+  // Streamline Weapon
+  '3d9279b1-dbf8-4193-8989-8d2b022533af',
+  // Searing Flames
+  '53315fc2-ef04-45fc-b269-9d4932c52621',
+  // Overheal Haste
+  '721fa7ca-3451-4bbd-ac17-ffcff4a31ac6',
+  // Dumpster Diving
+  '8a9a98fe-b1bd-4da7-8233-dffd3845aa45',
+  // Explosive Potions
+  'dbd50f7c-4261-4afd-93da-2f4d9e33509e',
+  // Brewmaster
+  '6640af95-3999-43b2-b32d-fae5caf0b8cc',
+  // Thirsty
+  '878440a6-99e8-4178-8d3f-38c94fb8c334',
+  // Stocked
+  'ca3da34f-a982-4ae4-bea0-8dddac873650',
+  // Potent Potables
+  'edb9b01b-b4ce-4a77-848e-0a49b8a23c16',
+  // Heavy Drinker
+  // 'af42d725-dc55-4f6f-9de6-b7a4c7f7013e',
+
+  // TODO: Not enabled yet.
+  // "e78b1599-ca80-47b0-b386-04ae403994d5", Virulent Research
+  // "8089e76c-1565-457b-9cd5-fc38f60bd185", Immunocompromised
 ];
+
+const allowedPackIds = [
+  // Note quite all enabled yet
+ // 'Mak_Core'
+] as string[];
 
 const disallowedList = [
   // Cauterize:
@@ -54,21 +85,30 @@ const disallowedList = [
   "69edc2fa-7aba-457e-bbcf-05f2e0f18139",
   // Heavy Weaponry
   "015bc348-773e-4009-87ff-231452431bba",
-  // Standard Ordnance
-  "e43da7b1-1190-469a-b6c6-43d8e3ca0ad6",
   // Small Weaponry
   "c4c70f57-c51e-4bc4-848c-0f0e7fbddd28",
   // Microfiber
   "883043eb-5a5f-4fa2-9cae-185f51019b11",
   // Nanite Healing
-  "cac848c8-dc77-4277-ba9f-df282b9f36ef"
+  "cac848c8-dc77-4277-ba9f-df282b9f36ef",
 
+  // Alchemical Precision:
+  "8509674b-3c4b-4250-9bb4-666ef7402654",
+  // Crimson Dash:
+  "42a673e6-f6cd-45ea-89e2-d37614271016",
+  // Essence Overflow:
+  "db94a1da-532e-42e1-af25-5033b0fc8bcb",
+  // Sparring Partner:
+  "fcb51ffd-6d25-4e74-871a-7dc0de2bae91"
 ];
 
 // Filter the entries
 const getIdsByCriteria = (data: any) => {
   return [...disallowedList, ...Object.values(data)
-    .filter((entry: any) => entry.Type === "Skill" && entry.SpawningEligibility === "Never" && !allowedList.includes(entry.Id))
+    .filter((entry: any) => entry.Type === "Skill" &&
+      entry.SpawningEligibility === "Never" &&
+      !allowedList.includes(entry.Id) &&
+      !allowedPackIds.includes(entry.CardPackId))
     .map((entry: any) => entry.Id)];
 };
 

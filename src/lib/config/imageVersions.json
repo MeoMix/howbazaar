@@ -1,0 +1,32 @@
+{
+    "items": {
+        "NoxiousPotion": 2,
+        "UpgradeHammer": 2,
+        "BagofJewels": 2,
+        "Bellelista": 2,
+        "BillDozer": 2,
+        "BlowTorch": 2,
+        "CompanionCore": 2,
+        "CoolingFan": 2,
+        "EagleTalisman": 2,
+        "FirstAiden": 2,
+        "WeaponizedCore": 2,
+        "SharpeningStone": 2,
+        "MedKit": 2,
+        "DragonHeart": 2,
+        "Goggles": 2,
+        "Nargile": 2,
+        "ArmoredCore": 2,
+        "RunicPotion": 2
+    },
+    "skills": {
+        "AugmentedDefenses": 3,
+        "AugmentedWeaponry": 3,
+        "CleanStorefront": 3,
+        "DistributedSystems": 3,
+        "ExtremeComfort": 3,
+        "LeftyLoosey": 3,
+        "MasterSalesman": 3,
+        "SharpenedSteel": 3
+    }
+} 

@@ -2221,7 +2221,7 @@
             "TemplateId": "292115b4-a145-476e-b3a7-0fe199b5c1af",
             "TemplateVersion": "1.0.0",
             "InstanceId": null,
-            "Tier": "Silver",
+            "Tier": "Gold",
             "Attributes": {}
           },
           {
@@ -2261,7 +2261,7 @@
             "TemplateId": "292115b4-a145-476e-b3a7-0fe199b5c1af",
             "TemplateVersion": "1.0.0",
             "InstanceId": null,
-            "Tier": "Silver",
+            "Tier": "Gold",
             "Attributes": {}
           }
         ],
@@ -3957,7 +3957,7 @@
             "TemplateId": "dc3bf5cb-45fa-46c7-9a0e-3f3bfb01697d",
             "TemplateVersion": "1.0.0",
             "InstanceId": null,
-            "Tier": "Gold",
+            "Tier": "Silver",
             "Attributes": {}
           }
         ],
@@ -4003,7 +4003,7 @@
           },
           {
             "$type": "TCardInstanceItem",
-            "EnchantmentType": null,
+            "EnchantmentType": "Shielded",
             "SocketId": "Socket_2",
             "TemplateId": "3b924a0a-f423-4286-8d08-9ade57b2ebae",
             "TemplateVersion": "1.0.0",
@@ -7786,7 +7786,7 @@
     "Player": {
       "Attributes": {
         "Prestige": 50,
-        "HealthMax": 350,
+        "HealthMax": 300,
         "Level": 3
       },
       "Hand": {

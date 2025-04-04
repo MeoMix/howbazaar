@@ -2,7 +2,6 @@
     import "../app.css";
 
     import {
-        Toast,
         DarkMode,
         Navbar,
         NavBrand,
@@ -14,26 +13,17 @@
         FooterLink,
         Badge,
     } from "flowbite-svelte";
-    import CheckCircleOutline from "flowbite-svelte-icons/CheckCircleOutline.svelte";
     import DiscordSolid from "flowbite-svelte-icons/DiscordSolid.svelte";
+    import ClipboardOutline from "flowbite-svelte-icons/ClipboardOutline.svelte";
     import { onDestroy, onMount, tick, type Snippet } from "svelte";
-    import { fly } from "svelte/transition";
     import { page } from "$app/stores";
-    import { clipboardState } from "$lib/stores/clipboard";
+    import { browser } from "$app/environment";
+    import { invalidateAll } from "$app/navigation";
     import { PUBLIC_CDN_URL } from "$env/static/public";
     import { DollarOutline } from "flowbite-svelte-icons";
     import { adsStore } from "$lib/stores/adsStore";
     import type { Unsubscriber } from "svelte/store";
     import UpdatedBadge from "$lib/components/UpdatedBadge.svelte";
-
-    let toastStatus = $state(false);
-    let toastClearTimeout: ReturnType<typeof setTimeout>;
-    clipboardState.subscribe((value) => {
-        clearTimeout(toastClearTimeout);
-        toastStatus = value !== "";
-
-        toastClearTimeout = setTimeout(() => (toastStatus = false), 3000);
-    });
 
     let isHamburgerMenuOpen = $state(false);
     const onNavLiClick = () => {
@@ -159,11 +149,6 @@
         xlMediaQuery?.removeEventListener("change", mediaQueryCallback);
     });
 
-    // TODO: Would be nice if this was implicit from the existence of the ad element.
-    let footerAdMarginOffset = $derived(
-        showAds && !adScriptLoadFailed ? "mb-[100px] lg:mb-0" : "",
-    );
-
     let { children }: { children: Snippet } = $props();
 </script>
 
@@ -174,6 +159,14 @@
 <div
     class="flex flex-col min-h-screen bg-white dark:bg-bazaar-background text-gray-900 dark:text-bazaar-tan700"
 >
+    {#if !$page.data.hasSeenMakPreview}
+        <div class="border-b border-bazaar-orange/20 dark:border-bazaar-orange/30 text-bazaar-orange dark:text-bazaar-orange px-4 py-2 text-center">
+            <a href="/patchnotes/mak-preview" class="hover:underline">
+                How Bazaar got early access to Mak's new items! Click to see an exclusive preview 🧪
+            </a>
+        </div>
+    {/if}
+
     <Navbar
         class="sticky top-0 z-10 bg-white dark:bg-bazaar-background dark:text-bazaar-tan700"
     >
@@ -188,19 +181,30 @@
                     How Bazaar
                 </span>
             </NavBrand>
-            <UpdatedBadge />
         </div>
 
         <div class="flex md:order-2 items-center">
             <a
-                href="/tip{$page.url.search}"
+                href="/patchnotes"
+                class="hover:text-gray-900 dark:text-bazaar-tan700 dark:hover:text-bazaar-orange dark:hover:bg-bazaar-brown p-2.5 rounded-lg relative group"
+            >
+                <ClipboardOutline />
+                {#if $page.data.hasNewVersions}
+                    <span
+                        class="absolute top-2 right-2 w-2 h-2 bg-gameEffects-heal rounded-full ring-2 ring-white dark:ring-bazaar-background dark:group-hover:ring-bazaar-brown"
+                    ></span>
+                {/if}
+            </a>
+
+            <a
+                href="/tip"
                 class="hover:text-gray-900 dark:text-bazaar-tan700 dark:hover:text-bazaar-orange dark:hover:bg-bazaar-brown p-2.5 rounded-lg"
             >
                 <DollarOutline />
             </a>
 
             <a
-                href="https://discord.gg/VrGGFYEXXz"
+                href="https://discord.gg/scWr32PJfv"
                 target="_blank"
                 class="hover:text-gray-900 dark:text-bazaar-tan700 dark:hover:text-bazaar-orange dark:hover:bg-bazaar-brown p-2.5 rounded-lg"
             >
@@ -296,24 +300,6 @@
         </div>
     </div>
 
-    <div
-        class={`fixed bottom-0 left-0 w-full flex justify-center ${footerAdMarginOffset}`}
-    >
-        <Toast
-            position="bottom-left"
-            color={"green"}
-            transition={fly}
-            params={{ y: 100, duration: 300 }}
-            divClass={`w-full max-w-xs p-4 text-gray-500 bg-white shadow dark:text-bazaar-tan700 dark:bg-bazaar-brown dark:shadow-bazaar-brown600 gap-3`}
-            bind:toastStatus
-        >
-            <svelte:fragment slot="icon">
-                <CheckCircleOutline class="w-5 h-5" />
-            </svelte:fragment>
-            <span>Link copied to clipboard</span>
-        </Toast>
-    </div>
-
     {#if showAds && isLargeScreen === false && !adScriptLoadFailed}
         <!-- Fixed horizontal banner ad for smaller screens (visible on md and below) -->
         <div class="fixed bottom-0 left-0 right-0 w-full z-50">
@@ -331,7 +317,7 @@
         </div>
     {/if}
 
-    <div class={`${footerAdMarginOffset}`}>
+    <div class={`${showAds && !adScriptLoadFailed ? "mb-[100px] lg:mb-0" : ""}`}>
         <Footer
             footerType="sitemap"
             class={`py-6 bg-white dark:bg-bazaar-background`}

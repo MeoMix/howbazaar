@@ -3,7 +3,7 @@ import type { The04747408_De0E4944_B79D23_Ca41008619 as Monster } from "$lib/par
 import type { V2DayHoursD as DayHour } from "$lib/parsers/patches/latest/v2_DayHours";
 
 export type CardsJson = {
-    "0.1.8": Card[];
+    [version: string]: Card[];
 };
 
 export type MonstersJson = { [key: string]: Monster };

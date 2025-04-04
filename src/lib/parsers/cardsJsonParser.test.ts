@@ -45,7 +45,7 @@ describe('cardJsonParser', () => {
       const alphaRay = itemCards.find(card => card.name === "Alpha Ray")!;
 
       expect(alphaRay.unifiedTooltips[2]).toEqual(
-        'When you use the Core or another Ray, your Weapons gain (+2/+3/+4/+5) Damage for the fight.'
+        'When you use the Core or another Ray, your Weapons gain (+2/+4/+6/+8) Damage for the fight.'
       );
     });
 
@@ -97,11 +97,19 @@ describe('cardJsonParser', () => {
       );
     });
 
+    it('should unify Iceberg and not move 0.5 period outside of parentheses', () => {
+      const iceberg = itemCards.find(card => card.name === "Iceberg")!;
+
+      expect(iceberg.unifiedTooltips[0]).toEqual(
+        'When your enemy uses an item, Freeze it for (0.5/1) second(s).',
+      );
+    });
+
     it('should unify Closed Sign', () => {
       const closedSign = itemCards.find(card => card.name === "Closed Sign")!;
 
       expect(closedSign.unifiedTooltips[0]).toEqual(
-        'You have Regeneration equal to (1x/2x) adjacent properties\' values.'
+        'You have Regeneration equal to (50%/100%) of the value of adjacent properties.'
       );
     });
 
@@ -202,7 +210,7 @@ describe('cardJsonParser', () => {
     const fishingNet = itemCards.find(card => card.name === "Fishing Net")!;
     const searchPhrase = "Slow ";
 
-    expect(fishingNet.tiers.Bronze.tooltips.find((text) => text.includes(searchPhrase))).toEqual(`${searchPhrase}1 item for 3 second(s).`);
+    expect(fishingNet.tiers.Bronze.tooltips.find((text) => text.includes(searchPhrase))).toEqual(`${searchPhrase}1 item(s) for 3 second(s).`);
   });
 
   it('should parse "Colossal Popsicle" correctly by replacing {ability.2} with a correct value involving the spawning of additional cards.', () => {
@@ -252,6 +260,11 @@ describe('cardJsonParser', () => {
     expect(cooldownTooltip).toEqual("Cooldown 11 seconds");
   });
 
+  it('should parse Snowflakes half second effect properly', () => {
+    const snowflake = itemCards.find(card => card.name === "Snowflake")!;
+    expect(snowflake.tiers.Diamond.tooltips[0]).toContain(`+0.5 Freeze duration.`);
+  });
+
   it('should contain no tooltips with {', () => {
     const disabledItemIds = [
       // Schematics is disabled due to bug so it's ~ok for Tooltip to be broken
@@ -277,12 +290,20 @@ describe('cardJsonParser', () => {
   });
 
   describe('Enchantments', () => {
-    it('should parse "Deadly Open Sign" correctly by creating a verbose tooltip referencing sell value of items and adjacent properties', () => {
+    it('should parse "Icy Blue Gumball" correctly by converting +200 Freeze duration to +0.2 Freeze duration', () => {
+      const blueGumball = itemCards.find(card => card.name === "Blue Gumball")!;
+      const icyBlueGumball = blueGumball.enchantments.find(enchantment => enchantment.type === 'Icy')!;
+
+      expect(icyBlueGumball.tooltips.length).toEqual(1);
+      expect(icyBlueGumball.tooltips[0]).toEqual('When you sell this, your leftmost Freeze item gains +0.1 Freeze duration.');
+    });
+
+    it('should parse "Deadly Open Sign" correctly', () => {
       const deadlyOpenSign = itemCards.find(card => card.name === "Open Sign")!;
       const deadlyEnchantment = deadlyOpenSign.enchantments.find(enchantment => enchantment.type === 'Deadly')!;
 
       expect(deadlyEnchantment.tooltips.length).toEqual(1);
-      expect(deadlyEnchantment.tooltips[0]).toEqual('Shield Properties adjacent to this have + Shield equal to the value of your highest value item. [0]');
+      expect(deadlyEnchantment.tooltips[0]).toEqual('Your adjacent Properties have +Crit Chance equal to the value of your highest value item.');
     });
 
     it('should parse "Orbital Polisher" correctly by excluding Shiny which is an invalid enchantment', () => {

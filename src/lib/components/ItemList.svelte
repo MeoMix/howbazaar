@@ -30,7 +30,7 @@
         selectedSearchLocationOption,
         isMatchAnyTag,
         isMonsterDropsOnly,
-        latestExpansionOnlyState,
+        latestExpansionsOnlyState,
         isHiddenWhenEmpty,
     }: {
         serverVersion: string;
@@ -43,7 +43,7 @@
         selectedSearchLocationOption: ItemSearchLocationOption;
         isMatchAnyTag: boolean;
         isMonsterDropsOnly: boolean;
-        latestExpansionOnlyState: TriState;
+        latestExpansionsOnlyState: TriState;
         isHiddenWhenEmpty: boolean;
     } = $props();
 
@@ -78,7 +78,7 @@
                 selectedSearchLocationOption,
                 isMatchAnyTag,
                 isMonsterDropsOnly,
-                latestExpansionOnlyState,
+                latestExpansionsOnlyState,
             ),
             selectedSortOption,
             searchText,
@@ -96,7 +96,7 @@
 
 {#snippet headerControls()}
     <div class="flex items-center space-x-2">
-        <Label class="dark:text-bazaar-tan700">Sort by</Label>
+        <Label class="dark:text-bazaar-tan700 text-nowrap">Sort by</Label>
         <Select
             options={sortOptions}
             selectedOption={selectedSortOption}

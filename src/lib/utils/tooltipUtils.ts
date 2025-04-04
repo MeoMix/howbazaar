@@ -114,26 +114,42 @@ function convertMultipliersToPercentages(input: string): string {
     });
 }
 
-function normalizePlurality(input: string): string {
-    return input.replace(/\(([^)]+)\)/g, (match, group) => {
-        const parts = group.split('/');
-        const uniqueParts = Array.from(new Set(parts));
+export function normalizePlurality(input: string): string {
+  // Step 1: Temporarily replace (s) with a marker
+  const placeholder = '__PLURAL_MARKER__';
+  const inputWithMarker = input.replace(/\(s\)/g, placeholder);
 
-        // Check if all parts differ solely by plurality (e.g., "item/items/items/items")
-        if (
-            uniqueParts.length === 2 &&
-            uniqueParts[1] === `${uniqueParts[0]}s`
-        ) {
-            return `${uniqueParts[0]}(s)`; // Replace with the plural form (e.g., "items")
-        }
+  // Step 2: Run the plurality normalization as before
+  const result = inputWithMarker.replace(/\(([^)]+)\)/g, (match: string, group: string) => {
+      const parts = group.split('/');
+      const uniqueParts = Array.from(new Set(parts));
 
-        // Do not alter groups that are simple optional suffixes like "(s)"
-        if (uniqueParts.length === 1) {
-            return match; // Retain "(s)" or similar cases unchanged
-        }
+      if (uniqueParts.length === 2) {
+          const [a, b] = uniqueParts;
 
-        return match; // Keep original match if no conditions are met
-    });
+          // Case 1: item/items => item(s)
+          if (b === `${a}s`) {
+              return `${a}(s)`;
+          }
+
+          // Case 2: item/item(s) or items/item(s) => item(s)
+          if (
+              (a === b.replace(placeholder, '')) || 
+              (b === a.replace(placeholder, ''))
+          ) {
+              return a.includes(placeholder) ? a : b;
+          }
+      }
+
+      if (uniqueParts.length === 1) {
+          return match;
+      }
+
+      return match;
+  });
+
+  // Step 3: Restore (s) from the marker
+  return result.replace(new RegExp(placeholder, 'g'), '(s)');
 }
 
 /**
@@ -174,14 +190,28 @@ function replaceAorAnWithOne(input: string): string {
     });
 }
 
-function adjustPunctuationInsideParentheses(input: string): string {
-    return input.replace(/\(([^)]+)\)/g, (_, content) => {
-        // Remove all periods and commas from inside the parentheses
-        const sanitizedContent = content.replace(/[.,]+/g, '').trim();
-        // Append a single period or comma outside if any existed inside
-        const punctuation = content.match(/[.,]/) ? '.' : '';
-        return `(${sanitizedContent})${punctuation}`;
-    });
+export function adjustPunctuationInsideParentheses(input: string): string {
+  return input.replace(/\(([^)]+)\)/g, (_, content: string) => {
+      // Remove punctuation unless it's between two digits (part of a number)
+      const sanitizedContent = content.replace(
+          /([.,])/g,
+          (match, punct, offset, str) => {
+              const prevChar = str[offset - 1];
+              const nextChar = str[offset + 1];
+              // Keep punctuation if between two digits
+              if (/\d/.test(prevChar) && /\d/.test(nextChar)) {
+                  return punct;
+              }
+              // Otherwise, remove it (we'll move punctuation outside)
+              return '';
+          }
+      ).trim();
+
+      // Add a period outside if any punctuation was removed (except inside numbers)
+      const punctuationRemoved = /([.,])(?!\d)/.test(content);
+
+      return `(${sanitizedContent})${punctuationRemoved ? '.' : ''}`;
+  });
 }
 
 export function unifyTooltips(tooltipsByTier: string[][]): string[] {
@@ -206,18 +236,26 @@ const tierOrder = ["Bronze", "Silver", "Gold", "Diamond", "Legendary"] as const;
 const keywordEffectMap: Record<string, string> = {
   "Crit Chance": "physical",
   "Damage": "physical",
+  "Damages": "physical",
   "Heal": "heal",
+  "Heals": "heal",
   "Max Health": "heal",
   "Regeneration": "heal",
   "Ammo": "ammo",
   "Max Ammo": "ammo",
   "Shield": "shield",
+  "Shields": "shield",
   "Haste": "haste",
+  "Hastes": "haste",
   "Charge": "charge",
+  "Charges": "charge",
   "Slow": "slow",
+  "Slows": "slow",
   "Poison": "poison",
+  "Poisons": "poison",
   "Freeze": "freeze",
   "Burn": "burn",
+  "Burns": "burn",
   "Friend": "tag",
   "Friends": "tag",
   "Property": "tag",

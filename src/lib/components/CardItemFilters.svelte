@@ -29,7 +29,7 @@
         searchText = $bindable(),
         selectedSearchLocationOption = $bindable(),
         isMonsterDropsOnly = $bindable(),
-        latestExpansionOnlyState = $bindable(),
+        latestExpansionsOnlyState = $bindable(),
     }: {
         heroOptions: Option[];
         minimumTierOptions: Option[];
@@ -44,7 +44,7 @@
         searchText: string;
         selectedSearchLocationOption: ItemSearchLocationOption;
         isMonsterDropsOnly: boolean;
-        latestExpansionOnlyState: TriState;
+        latestExpansionsOnlyState: TriState;
     } = $props();
 
     function clearSearch() {
@@ -58,7 +58,7 @@
         isMatchAnyTag = false;
         selectedSizes = [];
         isMonsterDropsOnly = false;
-        latestExpansionOnlyState = "unset";
+        latestExpansionsOnlyState = "unset";
     }
 
     function clearSearchInput() {
@@ -146,15 +146,15 @@
                         />
 
                         <FilterTriToggle
-                            label={"Latest Expansion Only"}
-                            value={latestExpansionOnlyState}
-                            state={latestExpansionOnlyState}
+                            label={"Latest Expansions Only"}
+                            value={latestExpansionsOnlyState}
+                            state={latestExpansionsOnlyState}
                             onClick={() => {
                                 // Cycle through states for the given tag
-                                latestExpansionOnlyState =
-                                    latestExpansionOnlyState === "unset"
+                                latestExpansionsOnlyState =
+                                    latestExpansionsOnlyState === "unset"
                                         ? "on"
-                                        : latestExpansionOnlyState === "on"
+                                        : latestExpansionsOnlyState === "on"
                                           ? "off"
                                           : "unset";
                             }}

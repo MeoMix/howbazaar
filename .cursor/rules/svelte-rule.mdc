@@ -1,0 +1,12 @@
+---
+description: Writing proper Svelte code
+globs: *.svelte
+alwaysApply: false
+---
+
+## Svelte Guidelines
+
+- Always write using Svelte 5 syntax using runes
+- Snippets are used for creating components without declaring new component files.
+- Snippets have syntax that looks like {#snippet}{/snippet} and contain DOM markup.
+- Snippets do not go within the <script></script> block.
