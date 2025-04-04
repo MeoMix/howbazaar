@@ -5,11 +5,7 @@ export async function load({ cookies }) {
     const seenVersionsCookie = cookies.get('seenPatchVersions');
     const seenVersions = seenVersionsCookie ? JSON.parse(seenVersionsCookie) : [];
 
-    // Check if user has seen the Mak preview banner
-    const hasSeenMakPreview = cookies.get('seenMakPreview') === 'true';
-
     return {
         hasNewVersions: AVAILABLE_VERSIONS.some(version => !seenVersions.includes(version.version)),
-        hasSeenMakPreview
     };
 }
