@@ -37,6 +37,8 @@
     const mediaQueryCallback = async () => {
         isLargeScreen = window.matchMedia("(min-width: 1024px)").matches;
         isXlScreen = window.matchMedia("(min-width: 1280px)").matches;
+
+        toggleAdVisibility();
     };
 
     const loadAdScript = (): Promise<void> => {
@@ -73,6 +75,7 @@
 
                 if (showAds) {
                     await loadAdScript();
+                    toggleAdVisibility();
                 }
             });
         } else {
@@ -87,6 +90,20 @@
     });
 
     let { children }: { children: Snippet } = $props();
+
+    // Function to toggle the visibility of the injected ad element
+    const toggleAdVisibility = () => {
+        const adElement = document.querySelector(
+            "[data-reviq-sticky-ad]",
+        ) as HTMLElement;
+        if (adElement) {
+            if (showAds && isLargeScreen === false && !adScriptLoadFailed) {
+                adElement.style.display = "block";
+            } else {
+                adElement.style.display = "none";
+            }
+        }
+    };
 </script>
 
 <svelte:head>
@@ -201,29 +218,18 @@
                 only tries to initialize the ad unit when it has a valid width.
             -->
             {#if showAds && isLargeScreen === true && !adScriptLoadFailed}
-                <div
-                    class="ml-4 sticky h-full top-[72px] pt-8 {isXlScreen
-                        ? 'w-[300px]'
-                        : 'w-[120px]'}"
-                >
+                <div class="ml-4 sticky h-full top-[72px] pt-8">
                     <div
                         data-ad="right-rail-2"
                         data-ad-size={`${isXlScreen ? 300 : 120}x600`}
+                        style="width: {isXlScreen
+                            ? '300px'
+                            : '120px'}; height: 600px;"
                     ></div>
                 </div>
             {/if}
         </div>
     </div>
-
-    {#if showAds && isLargeScreen === false && !adScriptLoadFailed}
-        <!-- 
-            Fixed horizontal banner ad for smaller screens (visible on md and below) 
-            Width is arbitrary - RevIQ script will resize to fit the width of the viewport.
-        -->
-        <div class="fixed bottom-0 left-0 right-0 w-full z-50 h-[100px]">
-            <div data-ad="anchor" data-ad-size="1024x100"></div>
-        </div>
-    {/if}
 
     <div
         class={`${showAds && !adScriptLoadFailed ? "mb-[100px] lg:mb-0" : ""}`}
