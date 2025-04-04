@@ -201,7 +201,11 @@
                 only tries to initialize the ad unit when it has a valid width.
             -->
             {#if showAds && isLargeScreen === true && !adScriptLoadFailed}
-                <div class="ml-4 sticky h-full top-[72px] pt-8">
+                <div
+                    class="ml-4 sticky h-full top-[72px] pt-8 {isXlScreen
+                        ? 'w-[300px]'
+                        : 'w-[120px]'}"
+                >
                     <div
                         data-ad="right-rail-2"
                         data-ad-size={`${isXlScreen ? 300 : 120}x600`}
@@ -216,7 +220,7 @@
             Fixed horizontal banner ad for smaller screens (visible on md and below) 
             Width is arbitrary - RevIQ script will resize to fit the width of the viewport.
         -->
-        <div class="fixed bottom-0 left-0 right-0 w-full z-50">
+        <div class="fixed bottom-0 left-0 right-0 w-full z-50 h-[100px]">
             <div data-ad="anchor" data-ad-size="1024x100"></div>
         </div>
     {/if}
