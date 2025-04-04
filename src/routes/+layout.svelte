@@ -226,13 +226,11 @@
                         <div
                             data-ad="right-rail-2"
                             data-ad-size="300x600"
-                            style="width: 300px; height: 600px;"
                         ></div>
                     {:else}
                         <div
                             data-ad="right-rail-2"
                             data-ad-size="120x600"
-                            style="width: 120px; height: 600px;"
                         ></div>
                     {/if}
                 </div>
