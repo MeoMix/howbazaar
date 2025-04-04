@@ -575,6 +575,49 @@ const data: ParsedSkillCard[] = [
     "packId": "Core"
   },
   {
+    "id": "ef4e5045-91c6-4973-8aed-1f29300e1db4",
+    "name": "Overheal Regeneration",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "When you Over-heal, gain 5 Regeneration for the fight."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "When you Over-heal, gain 10 Regeneration for the fight."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "When you Over-heal, gain 15 Regeneration for the fight."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "HealReference",
+      "Regen"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Pygmalien"
+    ],
+    "artKey": "Icon_Skill_ConcentratedHealing.png",
+    "unifiedTooltips": [
+      "When you Over-heal, gain (5/10/15) Regeneration for the fight."
+    ],
+    "remarks": [],
+    "packId": "Pygmalien_Core"
+  },
+  {
     "id": "1fb47cc1-c38f-4240-8f7f-04a78222f5e7",
     "name": "Toxic",
     "startingTier": "Silver",

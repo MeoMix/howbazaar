@@ -45,6 +45,8 @@ const allowedList = [
   '05ec8652-3c5f-4cba-acd1-c3eee8e49d44',
   // Streamline Weapon
   '3d9279b1-dbf8-4193-8989-8d2b022533af',
+  // Overheal Regeneration
+  'ef4e5045-91c6-4973-8aed-1f29300e1db4',
   // Searing Flames
   '53315fc2-ef04-45fc-b269-9d4932c52621',
   // Overheal Haste
