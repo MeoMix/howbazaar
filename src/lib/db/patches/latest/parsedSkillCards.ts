@@ -2264,6 +2264,50 @@ const data: ParsedSkillCard[] = [
     "packId": "Vanessa_Core"
   },
   {
+    "id": "fd3f0e7b-27ac-4bde-87f8-5ec61b19c4f7",
+    "name": "Sabotage",
+    "startingTier": "Gold",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": [
+          "The first 5 times you use a Tool each fight, Slow 1 item(s) for 1 second(s)."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "The first 10 times you use a Tool each fight, Slow 1 item(s) for 1 second(s)."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Tool"
+    ],
+    "hiddenTags": [
+      "Slow"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Vanessa",
+      "Dooley",
+      "Stelle"
+    ],
+    "artKey": "Icon_Skill_Sabotage.png",
+    "unifiedTooltips": [
+      "The first (5/10) times you use a Tool each fight, Slow 1 item(s) for 1 second(s)."
+    ],
+    "remarks": [],
+    "packId": "Vanessa_Core"
+  },
+  {
     "id": "b7c2ce67-0da5-4360-9eda-b328817affe6",
     "name": "Heavy Shielding",
     "startingTier": "Bronze",
@@ -2308,50 +2352,6 @@ const data: ParsedSkillCard[] = [
     ],
     "remarks": [],
     "packId": "Jules_Core"
-  },
-  {
-    "id": "fd3f0e7b-27ac-4bde-87f8-5ec61b19c4f7",
-    "name": "Sabotage",
-    "startingTier": "Gold",
-    "tiers": {
-      "Bronze": {
-        "tooltips": []
-      },
-      "Silver": {
-        "tooltips": []
-      },
-      "Gold": {
-        "tooltips": [
-          "The first 5 times you use a Tool each fight, Slow 1 item(s) for 1 second(s)."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "The first 10 times you use a Tool each fight, Slow 1 item(s) for 1 second(s)."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [
-      "Tool"
-    ],
-    "hiddenTags": [
-      "Slow"
-    ],
-    "size": "Medium",
-    "heroes": [
-      "Vanessa",
-      "Dooley",
-      "Stelle"
-    ],
-    "artKey": "Icon_Skill_Sabotage.png",
-    "unifiedTooltips": [
-      "The first (5/10) times you use a Tool each fight, Slow 1 item(s) for 1 second(s)."
-    ],
-    "remarks": [],
-    "packId": "Vanessa_Core"
   },
   {
     "id": "cdf1d8f2-851b-43a8-bc8b-6d3ce2d4bca9",
@@ -7103,50 +7103,6 @@ const data: ParsedSkillCard[] = [
     "packId": "Dooley_Core"
   },
   {
-    "id": "7518cb66-252b-4b9c-9d4d-269aaad8daf3",
-    "name": "Flanking Fire",
-    "startingTier": "Silver",
-    "tiers": {
-      "Bronze": {
-        "tooltips": []
-      },
-      "Silver": {
-        "tooltips": [
-          "The first time you use a Large item each fight, Adjacent items gain 7 Burn for the fight."
-        ]
-      },
-      "Gold": {
-        "tooltips": [
-          "The first time you use a Large item each fight, Adjacent items gain 10 Burn for the fight."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "The first time you use a Large item each fight, Adjacent items gain 13 Burn for the fight."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [],
-    "hiddenTags": [
-      "BurnReference"
-    ],
-    "size": "Medium",
-    "heroes": [
-      "Vanessa",
-      "Jules",
-      "Stelle"
-    ],
-    "artKey": "Icon_Skill_FlankingFire.png",
-    "unifiedTooltips": [
-      "The first time you use a Large item each fight, Adjacent items gain (7/10/13) Burn for the fight."
-    ],
-    "remarks": [],
-    "packId": "Pygmalien_Core"
-  },
-  {
     "id": "94b80fbf-4d21-4439-beb2-e1bdf56cea03",
     "name": "Flanking Shots",
     "startingTier": "Silver",
@@ -7191,6 +7147,50 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_FlankingShots.png",
     "unifiedTooltips": [
       "The first time you use a Large item each fight, adjacent weapons gain (15/30/50) Damage for the fight."
+    ],
+    "remarks": [],
+    "packId": "Pygmalien_Core"
+  },
+  {
+    "id": "7518cb66-252b-4b9c-9d4d-269aaad8daf3",
+    "name": "Flanking Fire",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "The first time you use a Large item each fight, Adjacent items gain 7 Burn for the fight."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "The first time you use a Large item each fight, Adjacent items gain 10 Burn for the fight."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "The first time you use a Large item each fight, Adjacent items gain 13 Burn for the fight."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "BurnReference"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Vanessa",
+      "Jules",
+      "Stelle"
+    ],
+    "artKey": "Icon_Skill_FlankingFire.png",
+    "unifiedTooltips": [
+      "The first time you use a Large item each fight, Adjacent items gain (7/10/13) Burn for the fight."
     ],
     "remarks": [],
     "packId": "Pygmalien_Core"
@@ -9121,50 +9121,6 @@ const data: ParsedSkillCard[] = [
     "packId": "Core"
   },
   {
-    "id": "239aeabb-0b0c-484d-a761-ee68ede3223c",
-    "name": "Lash Out",
-    "startingTier": "Bronze",
-    "tiers": {
-      "Bronze": {
-        "tooltips": [
-          "At the start of each fight, Poison 3."
-        ]
-      },
-      "Silver": {
-        "tooltips": [
-          "At the start of each fight, Poison 6."
-        ]
-      },
-      "Gold": {
-        "tooltips": [
-          "At the start of each fight, Poison 9."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "At the start of each fight, Poison 12."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [],
-    "hiddenTags": [
-      "Poison"
-    ],
-    "size": "Medium",
-    "heroes": [
-      "Common"
-    ],
-    "artKey": "Icon_Skill_MON_LashOut_01",
-    "unifiedTooltips": [
-      "At the start of each fight, Poison (3/6/9/12)."
-    ],
-    "remarks": [],
-    "packId": "Core"
-  },
-  {
     "id": "3d9279b1-dbf8-4193-8989-8d2b022533af",
     "name": "Streamline Weapon",
     "startingTier": "Silver",
@@ -9208,6 +9164,50 @@ const data: ParsedSkillCard[] = [
     ],
     "remarks": [],
     "packId": "Pygmalien_Core"
+  },
+  {
+    "id": "239aeabb-0b0c-484d-a761-ee68ede3223c",
+    "name": "Lash Out",
+    "startingTier": "Bronze",
+    "tiers": {
+      "Bronze": {
+        "tooltips": [
+          "At the start of each fight, Poison 3."
+        ]
+      },
+      "Silver": {
+        "tooltips": [
+          "At the start of each fight, Poison 6."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "At the start of each fight, Poison 9."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "At the start of each fight, Poison 12."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "Poison"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Common"
+    ],
+    "artKey": "Icon_Skill_MON_LashOut_01",
+    "unifiedTooltips": [
+      "At the start of each fight, Poison (3/6/9/12)."
+    ],
+    "remarks": [],
+    "packId": "Core"
   },
   {
     "id": "115c2677-6880-4400-af80-f5afa3d502fe",
@@ -11393,47 +11393,6 @@ const data: ParsedSkillCard[] = [
     "packId": "Vanessa_Core"
   },
   {
-    "id": "13989ad3-2122-4d86-a323-bb90fda8360b",
-    "name": "Bloodhound",
-    "startingTier": "Silver",
-    "tiers": {
-      "Bronze": {
-        "tooltips": []
-      },
-      "Silver": {
-        "tooltips": [
-          "The first time your enemy falls below half health each fight, Charge your items 2 second(s)."
-        ]
-      },
-      "Gold": {
-        "tooltips": [
-          "The first time your enemy falls below half health each fight, Charge your items 3 second(s)."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "The first time your enemy falls below half health each fight, Charge your items 4 second(s)."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [],
-    "hiddenTags": [],
-    "size": "Medium",
-    "heroes": [
-      "Vanessa",
-      "Jules"
-    ],
-    "artKey": "Icon_Skill_Bloodhound.png",
-    "unifiedTooltips": [
-      "The first time your enemy falls below half health each fight, Charge your items (2/3/4) second(s)."
-    ],
-    "remarks": [],
-    "packId": "Dooley_Core"
-  },
-  {
     "id": "a59bc243-7c8b-447a-8ab7-968f662b1c50",
     "name": "Waters of Infinity",
     "startingTier": "Silver",
@@ -11474,6 +11433,47 @@ const data: ParsedSkillCard[] = [
     ],
     "remarks": [],
     "packId": "Core"
+  },
+  {
+    "id": "13989ad3-2122-4d86-a323-bb90fda8360b",
+    "name": "Bloodhound",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "The first time your enemy falls below half health each fight, Charge your items 2 second(s)."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "The first time your enemy falls below half health each fight, Charge your items 3 second(s)."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "The first time your enemy falls below half health each fight, Charge your items 4 second(s)."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Vanessa",
+      "Jules"
+    ],
+    "artKey": "Icon_Skill_Bloodhound.png",
+    "unifiedTooltips": [
+      "The first time your enemy falls below half health each fight, Charge your items (2/3/4) second(s)."
+    ],
+    "remarks": [],
+    "packId": "Dooley_Core"
   },
   {
     "id": "6b47d5d7-cd43-4efb-9e3b-5ee3c07a7f7d",
@@ -11830,6 +11830,42 @@ const data: ParsedSkillCard[] = [
     "packId": "Vanessa_Core"
   },
   {
+    "id": "e8770458-220a-45bd-bfef-d6045b152d29",
+    "name": "Bonk",
+    "startingTier": "Diamond",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": []
+      },
+      "Diamond": {
+        "tooltips": [
+          "Enemy cooldowns are increased by 1 second(s)."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Common"
+    ],
+    "artKey": "Icon_Skill_MON_TurnOutYourPockets_03.png",
+    "unifiedTooltips": [
+      "Enemy cooldowns are increased by 1 second(s)."
+    ],
+    "remarks": [],
+    "packId": "Core"
+  },
+  {
     "id": "721fa7ca-3451-4bbd-ac17-ffcff4a31ac6",
     "name": "Overheal Haste",
     "startingTier": "Gold",
@@ -11870,42 +11906,6 @@ const data: ParsedSkillCard[] = [
     ],
     "remarks": [],
     "packId": "Pygmalien_Core"
-  },
-  {
-    "id": "e8770458-220a-45bd-bfef-d6045b152d29",
-    "name": "Bonk",
-    "startingTier": "Diamond",
-    "tiers": {
-      "Bronze": {
-        "tooltips": []
-      },
-      "Silver": {
-        "tooltips": []
-      },
-      "Gold": {
-        "tooltips": []
-      },
-      "Diamond": {
-        "tooltips": [
-          "Enemy cooldowns are increased by 1 second(s)."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [],
-    "hiddenTags": [],
-    "size": "Medium",
-    "heroes": [
-      "Common"
-    ],
-    "artKey": "Icon_Skill_MON_TurnOutYourPockets_03.png",
-    "unifiedTooltips": [
-      "Enemy cooldowns are increased by 1 second(s)."
-    ],
-    "remarks": [],
-    "packId": "Core"
   },
   {
     "id": "7f097b31-c29e-4082-a835-6d6457c2d536",
