@@ -48,9 +48,6 @@ const disallowedList = [
   // Bulky Package:
   '35b7a978-275b-48f0-8e3d-9be2391c6a78',
 
-  // Obsidian Shard:
-  '8981892b-ce2a-43dc-a08e-2b5e8f8884fc',
-
   // "Gingerbread Man" (Joy isn't enabled currently),
   "8b2ce029-7f69-401c-9811-3a6398237a90"
 ];

@@ -53839,6 +53839,135 @@ const data: ParsedItemCard[] = [
     "packId": "Vanessa_Mysteries_of_the_Deep"
   },
   {
+    "id": "8981892b-ce2a-43dc-a08e-2b5e8f8884fc",
+    "name": "Shard of Obsidian",
+    "startingTier": "Bronze",
+    "tiers": {
+      "Bronze": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Lifesteal",
+          "Deal 5 damage.",
+          "When this is transformed, enchant it with Obsidian if able."
+        ]
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Lifesteal",
+          "Deal 10 damage.",
+          "When this is transformed, enchant it with Obsidian if able."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Lifesteal",
+          "Deal 15 damage.",
+          "When this is transformed, enchant it with Obsidian if able."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Lifesteal",
+          "Deal 20 damage.",
+          "When this is transformed, enchant it with Obsidian if able."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Weapon",
+      "Reagent"
+    ],
+    "hiddenTags": [
+      "Damage"
+    ],
+    "size": "Small",
+    "heroes": [
+      "Mak"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 1 item for 2 second(s)."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze 1 small item for 1 second(s)."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 1 item for 2 second(s)."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield equal to this item's damage."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to this item's Damage."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to 10% of this item's damage."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn equal to 10% of this item's damage."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "This has double Damage."
+        ]
+      }
+    ],
+    "unifiedTooltips": [
+      "Cooldown 4 seconds",
+      "Lifesteal",
+      "Deal (5/10/15/20) damage.",
+      "When this is transformed, enchant it with Obsidian if able."
+    ],
+    "remarks": [],
+    "packId": "Mak_Core"
+  },
+  {
     "id": "8a0aad5c-caff-4963-b8e9-861bc5ace1ce",
     "name": "Wand",
     "startingTier": "Gold",

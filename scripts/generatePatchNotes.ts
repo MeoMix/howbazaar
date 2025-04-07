@@ -9,7 +9,8 @@ const excludedIds = {
     items: new Map<string, Set<string>>([
         // Format: ['version', new Set(['id1', 'id2', ...])]
         // Example: ['0.1.9', new Set(['healthy-heart-id'])]
-        ['0.1.9-hotfix1', new Set(['1fbbefea-2da0-46a5-b60d-dad9478ade86'])]
+        ['0.1.9-hotfix1', new Set(['1fbbefea-2da0-46a5-b60d-dad9478ade86'])],
+        ['1.0.0-hotfix3', new Set(['8981892b-ce2a-43dc-a08e-2b5e8f8884fc'])],
     ]),
     skills: new Map<string, Set<string>>([
         // Format: ['version', new Set(['id1', 'id2', ...])]
