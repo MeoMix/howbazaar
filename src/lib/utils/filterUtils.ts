@@ -139,8 +139,8 @@ function matchesCardSearchText(
 
         // Check tiers if they exist
         if ((searchMode === 'name-text' || searchMode === 'name-text-enchantments') && card.tiers) {
-            for (const [tierType, tier] of Object.entries(card.tiers) as Entries<typeof card.tiers>) {
-                if (tierType !== "Legendary" && tier.tooltips.length !== 0) {
+            for (const [_tierType, tier] of Object.entries(card.tiers) as Entries<typeof card.tiers>) {
+                if (tier.tooltips.length !== 0) {
                     if (tier.tooltips.some(tooltip => substringMatch(tooltip, term))) {
                         return true; // Early exit if found
                     }
