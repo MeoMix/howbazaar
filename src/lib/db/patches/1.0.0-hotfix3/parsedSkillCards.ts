@@ -11300,6 +11300,46 @@ const data: ParsedSkillCard[] = [
     "packId": "Pygmalien_Core"
   },
   {
+    "id": "42a673e6-f6cd-45ea-89e2-d37614271016",
+    "name": "Crimson Dash",
+    "startingTier": "Diamond",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": []
+      },
+      "Diamond": {
+        "tooltips": [
+          "Your Lifesteal weapons have their cooldowns reduced by 1 second."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Weapon"
+    ],
+    "hiddenTags": [
+      "Cooldown"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Mak"
+    ],
+    "artKey": "Icon_Skill_Mak_CrimsonDash.png",
+    "unifiedTooltips": [
+      "Your Lifesteal weapons have their cooldowns reduced by 1 second."
+    ],
+    "remarks": [],
+    "packId": "Mak_Core"
+  },
+  {
     "id": "2aabac27-fb64-44df-96f5-b1dac0b23b1c",
     "name": "Hardened Shield",
     "startingTier": "Gold",

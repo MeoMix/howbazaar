@@ -96,8 +96,6 @@ const disallowedList = [
 
   // Alchemical Precision:
   "8509674b-3c4b-4250-9bb4-666ef7402654",
-  // Crimson Dash:
-  "42a673e6-f6cd-45ea-89e2-d37614271016",
   // Sparring Partner:
   "fcb51ffd-6d25-4e74-871a-7dc0de2bae91"
 ];
