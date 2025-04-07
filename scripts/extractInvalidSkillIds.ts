@@ -98,8 +98,6 @@ const disallowedList = [
   "8509674b-3c4b-4250-9bb4-666ef7402654",
   // Crimson Dash:
   "42a673e6-f6cd-45ea-89e2-d37614271016",
-  // Essence Overflow:
-  "db94a1da-532e-42e1-af25-5033b0fc8bcb",
   // Sparring Partner:
   "fcb51ffd-6d25-4e74-871a-7dc0de2bae91"
 ];

@@ -130,6 +130,47 @@ const data: ParsedSkillCard[] = [
     "packId": "Dooley_Core"
   },
   {
+    "id": "db94a1da-532e-42e1-af25-5033b0fc8bcb",
+    "name": "Essence Overflow",
+    "startingTier": "Diamond",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": []
+      },
+      "Diamond": {
+        "tooltips": [
+          "Your weapons have + damage equal to your Regeneration."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Weapon"
+    ],
+    "hiddenTags": [
+      "DamageReference",
+      "RegenReference"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Mak"
+    ],
+    "artKey": "Icon_Skill_Mak_Essenceoverflow.png",
+    "unifiedTooltips": [
+      "Your weapons have + damage equal to your Regeneration."
+    ],
+    "remarks": [],
+    "packId": "Mak_Core"
+  },
+  {
     "id": "3b3b1f2b-7f43-440d-807b-61eea3a65cb0",
     "name": "Void Rage",
     "startingTier": "Gold",

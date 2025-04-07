@@ -20,6 +20,7 @@ const excludedIds = {
         ['1.0.0', new Set(['fcb51ffd-6d25-4e74-871a-7dc0de2bae91'])],
         ['1.0.0-hotfix1', new Set(['3d9279b1-dbf8-4193-8989-8d2b022533af', '53315fc2-ef04-45fc-b269-9d4932c52621'])],
         ['1.0.0-hotfix2', new Set(['ef4e5045-91c6-4973-8aed-1f29300e1db4'])],
+        ['1.0.0-hotfix3', new Set(['db94a1da-532e-42e1-af25-5033b0fc8bcb'])],
     ])
 };
 
