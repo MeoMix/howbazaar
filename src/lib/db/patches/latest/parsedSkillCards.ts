@@ -1053,52 +1053,6 @@ const data: ParsedSkillCard[] = [
     "packId": "Core"
   },
   {
-    "id": "9d910b0a-9ef3-447f-ab41-195effb68f21",
-    "name": "Hot Spot",
-    "startingTier": "Silver",
-    "tiers": {
-      "Bronze": {
-        "tooltips": []
-      },
-      "Silver": {
-        "tooltips": [
-          "When you use your leftmost item, Burn 2."
-        ]
-      },
-      "Gold": {
-        "tooltips": [
-          "When you use your leftmost item, Burn 3."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "When you use your leftmost item, Burn 4."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [],
-    "hiddenTags": [
-      "Burn"
-    ],
-    "size": "Medium",
-    "heroes": [
-      "Vanessa",
-      "Dooley",
-      "Jules",
-      "Stelle",
-      "Pygmalien"
-    ],
-    "artKey": "Icon_Skill_HotSpot.png",
-    "unifiedTooltips": [
-      "When you use your leftmost item, Burn (2/3/4)."
-    ],
-    "remarks": [],
-    "packId": "Vanessa_Core"
-  },
-  {
     "id": "71433809-d05a-4544-9959-aff20ae5db93",
     "name": "Iron Sharpens Iron",
     "startingTier": "Silver",
@@ -1140,6 +1094,52 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_IronSharpensIron.png",
     "unifiedTooltips": [
       "Your leftmost Weapon has +2 damage. When you buy a weapon, increase this bonus by (2/3/4)."
+    ],
+    "remarks": [],
+    "packId": "Vanessa_Core"
+  },
+  {
+    "id": "9d910b0a-9ef3-447f-ab41-195effb68f21",
+    "name": "Hot Spot",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "When you use your leftmost item, Burn 2."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "When you use your leftmost item, Burn 3."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "When you use your leftmost item, Burn 4."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "Burn"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Vanessa",
+      "Dooley",
+      "Jules",
+      "Stelle",
+      "Pygmalien"
+    ],
+    "artKey": "Icon_Skill_HotSpot.png",
+    "unifiedTooltips": [
+      "When you use your leftmost item, Burn (2/3/4)."
     ],
     "remarks": [],
     "packId": "Vanessa_Core"
@@ -1358,44 +1358,6 @@ const data: ParsedSkillCard[] = [
     "packId": "Dooley_Core"
   },
   {
-    "id": "8e2f3e1c-bd00-4b58-b746-a6ae18f804c3",
-    "name": "Hyper Focus",
-    "startingTier": "Diamond",
-    "tiers": {
-      "Bronze": {
-        "tooltips": []
-      },
-      "Silver": {
-        "tooltips": []
-      },
-      "Gold": {
-        "tooltips": []
-      },
-      "Diamond": {
-        "tooltips": [
-          "If you have only one medium item, its cooldown is reduced by 30%."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [],
-    "hiddenTags": [
-      "Cooldown"
-    ],
-    "size": "Medium",
-    "heroes": [
-      "Common"
-    ],
-    "artKey": "Icon_Skill_MON_Lurk_01.png",
-    "unifiedTooltips": [
-      "If you have only one medium item, its cooldown is reduced by 30%."
-    ],
-    "remarks": [],
-    "packId": "Core"
-  },
-  {
     "id": "13f4df45-8f29-4a48-8a2b-b8176e17c85d",
     "name": "Retaliatory Toxins",
     "startingTier": "Gold",
@@ -1435,6 +1397,44 @@ const data: ParsedSkillCard[] = [
     ],
     "remarks": [],
     "packId": "Pygmalien_Core"
+  },
+  {
+    "id": "8e2f3e1c-bd00-4b58-b746-a6ae18f804c3",
+    "name": "Hyper Focus",
+    "startingTier": "Diamond",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": []
+      },
+      "Diamond": {
+        "tooltips": [
+          "If you have only one medium item, its cooldown is reduced by 30%."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "Cooldown"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Common"
+    ],
+    "artKey": "Icon_Skill_MON_Lurk_01.png",
+    "unifiedTooltips": [
+      "If you have only one medium item, its cooldown is reduced by 30%."
+    ],
+    "remarks": [],
+    "packId": "Core"
   },
   {
     "id": "d1505b87-551f-4786-818c-3c441f920d7b",
@@ -2305,50 +2305,6 @@ const data: ParsedSkillCard[] = [
     "packId": "Vanessa_Core"
   },
   {
-    "id": "fd3f0e7b-27ac-4bde-87f8-5ec61b19c4f7",
-    "name": "Sabotage",
-    "startingTier": "Gold",
-    "tiers": {
-      "Bronze": {
-        "tooltips": []
-      },
-      "Silver": {
-        "tooltips": []
-      },
-      "Gold": {
-        "tooltips": [
-          "The first 5 times you use a Tool each fight, Slow 1 item(s) for 1 second(s)."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "The first 10 times you use a Tool each fight, Slow 1 item(s) for 1 second(s)."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [
-      "Tool"
-    ],
-    "hiddenTags": [
-      "Slow"
-    ],
-    "size": "Medium",
-    "heroes": [
-      "Vanessa",
-      "Dooley",
-      "Stelle"
-    ],
-    "artKey": "Icon_Skill_Sabotage.png",
-    "unifiedTooltips": [
-      "The first (5/10) times you use a Tool each fight, Slow 1 item(s) for 1 second(s)."
-    ],
-    "remarks": [],
-    "packId": "Vanessa_Core"
-  },
-  {
     "id": "b7c2ce67-0da5-4360-9eda-b328817affe6",
     "name": "Heavy Shielding",
     "startingTier": "Bronze",
@@ -2393,6 +2349,50 @@ const data: ParsedSkillCard[] = [
     ],
     "remarks": [],
     "packId": "Jules_Core"
+  },
+  {
+    "id": "fd3f0e7b-27ac-4bde-87f8-5ec61b19c4f7",
+    "name": "Sabotage",
+    "startingTier": "Gold",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": [
+          "The first 5 times you use a Tool each fight, Slow 1 item(s) for 1 second(s)."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "The first 10 times you use a Tool each fight, Slow 1 item(s) for 1 second(s)."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Tool"
+    ],
+    "hiddenTags": [
+      "Slow"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Vanessa",
+      "Dooley",
+      "Stelle"
+    ],
+    "artKey": "Icon_Skill_Sabotage.png",
+    "unifiedTooltips": [
+      "The first (5/10) times you use a Tool each fight, Slow 1 item(s) for 1 second(s)."
+    ],
+    "remarks": [],
+    "packId": "Vanessa_Core"
   },
   {
     "id": "cdf1d8f2-851b-43a8-bc8b-6d3ce2d4bca9",
@@ -4865,22 +4865,22 @@ const data: ParsedSkillCard[] = [
     "tiers": {
       "Bronze": {
         "tooltips": [
-          "Your Burn items have +2% Crit Chance."
+          "Your Burn items have +5% Crit Chance."
         ]
       },
       "Silver": {
         "tooltips": [
-          "Your Burn items have +4% Crit Chance."
+          "Your Burn items have +10% Crit Chance."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Your Burn items have +6% Crit Chance."
+          "Your Burn items have +15% Crit Chance."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Your Burn items have +8% Crit Chance."
+          "Your Burn items have +20% Crit Chance."
         ]
       },
       "Legendary": {
@@ -4897,7 +4897,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_MON_FlameWall_01",
     "unifiedTooltips": [
-      "Your Burn items have (+2%/+4%/+6%/+8%) Crit Chance."
+      "Your Burn items have (+5%/+10%/+15%/+20%) Crit Chance."
     ],
     "remarks": [],
     "packId": "Core"
@@ -9162,6 +9162,50 @@ const data: ParsedSkillCard[] = [
     "packId": "Core"
   },
   {
+    "id": "239aeabb-0b0c-484d-a761-ee68ede3223c",
+    "name": "Lash Out",
+    "startingTier": "Bronze",
+    "tiers": {
+      "Bronze": {
+        "tooltips": [
+          "At the start of each fight, Poison 3."
+        ]
+      },
+      "Silver": {
+        "tooltips": [
+          "At the start of each fight, Poison 6."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "At the start of each fight, Poison 9."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "At the start of each fight, Poison 12."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "Poison"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Common"
+    ],
+    "artKey": "Icon_Skill_MON_LashOut_01",
+    "unifiedTooltips": [
+      "At the start of each fight, Poison (3/6/9/12)."
+    ],
+    "remarks": [],
+    "packId": "Core"
+  },
+  {
     "id": "3d9279b1-dbf8-4193-8989-8d2b022533af",
     "name": "Streamline Weapon",
     "startingTier": "Silver",
@@ -9205,50 +9249,6 @@ const data: ParsedSkillCard[] = [
     ],
     "remarks": [],
     "packId": "Pygmalien_Core"
-  },
-  {
-    "id": "239aeabb-0b0c-484d-a761-ee68ede3223c",
-    "name": "Lash Out",
-    "startingTier": "Bronze",
-    "tiers": {
-      "Bronze": {
-        "tooltips": [
-          "At the start of each fight, Poison 3."
-        ]
-      },
-      "Silver": {
-        "tooltips": [
-          "At the start of each fight, Poison 6."
-        ]
-      },
-      "Gold": {
-        "tooltips": [
-          "At the start of each fight, Poison 9."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "At the start of each fight, Poison 12."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [],
-    "hiddenTags": [
-      "Poison"
-    ],
-    "size": "Medium",
-    "heroes": [
-      "Common"
-    ],
-    "artKey": "Icon_Skill_MON_LashOut_01",
-    "unifiedTooltips": [
-      "At the start of each fight, Poison (3/6/9/12)."
-    ],
-    "remarks": [],
-    "packId": "Core"
   },
   {
     "id": "115c2677-6880-4400-af80-f5afa3d502fe",
@@ -11474,6 +11474,47 @@ const data: ParsedSkillCard[] = [
     "packId": "Vanessa_Core"
   },
   {
+    "id": "13989ad3-2122-4d86-a323-bb90fda8360b",
+    "name": "Bloodhound",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "The first time your enemy falls below half health each fight, Charge your items 2 second(s)."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "The first time your enemy falls below half health each fight, Charge your items 3 second(s)."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "The first time your enemy falls below half health each fight, Charge your items 4 second(s)."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Vanessa",
+      "Jules"
+    ],
+    "artKey": "Icon_Skill_Bloodhound.png",
+    "unifiedTooltips": [
+      "The first time your enemy falls below half health each fight, Charge your items (2/3/4) second(s)."
+    ],
+    "remarks": [],
+    "packId": "Dooley_Core"
+  },
+  {
     "id": "a59bc243-7c8b-447a-8ab7-968f662b1c50",
     "name": "Waters of Infinity",
     "startingTier": "Silver",
@@ -11514,47 +11555,6 @@ const data: ParsedSkillCard[] = [
     ],
     "remarks": [],
     "packId": "Core"
-  },
-  {
-    "id": "13989ad3-2122-4d86-a323-bb90fda8360b",
-    "name": "Bloodhound",
-    "startingTier": "Silver",
-    "tiers": {
-      "Bronze": {
-        "tooltips": []
-      },
-      "Silver": {
-        "tooltips": [
-          "The first time your enemy falls below half health each fight, Charge your items 2 second(s)."
-        ]
-      },
-      "Gold": {
-        "tooltips": [
-          "The first time your enemy falls below half health each fight, Charge your items 3 second(s)."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "The first time your enemy falls below half health each fight, Charge your items 4 second(s)."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [],
-    "hiddenTags": [],
-    "size": "Medium",
-    "heroes": [
-      "Vanessa",
-      "Jules"
-    ],
-    "artKey": "Icon_Skill_Bloodhound.png",
-    "unifiedTooltips": [
-      "The first time your enemy falls below half health each fight, Charge your items (2/3/4) second(s)."
-    ],
-    "remarks": [],
-    "packId": "Dooley_Core"
   },
   {
     "id": "6b47d5d7-cd43-4efb-9e3b-5ee3c07a7f7d",
@@ -12878,6 +12878,48 @@ const data: ParsedSkillCard[] = [
     "packId": "Mak_Core"
   },
   {
+    "id": "1df8d85a-9095-4ab9-952a-c668a4d5d51c",
+    "name": "Electrified Hull",
+    "startingTier": "Gold",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": [
+          "The first 4 times you Shield each fight, Charge 1 item(s) 1 second(s)."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "The first 8 times you Shield each fight, Charge 1 item(s) 1 second(s)."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "ShieldReference",
+      "Charge"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Pygmalien",
+      "Dooley"
+    ],
+    "artKey": "Icon_Skill_DOO_NumberOneStunner.png",
+    "unifiedTooltips": [
+      "The first (4/8) times you Shield each fight, Charge 1 item(s) 1 second(s)."
+    ],
+    "remarks": [],
+    "packId": "Pygmalien_Core"
+  },
+  {
     "id": "cb8e9ed1-764e-4fa5-a2b8-61c2eddcbf7e",
     "name": "Grease Fire",
     "startingTier": "Gold",
@@ -12920,48 +12962,6 @@ const data: ParsedSkillCard[] = [
     ],
     "remarks": [],
     "packId": "Dooley_Core"
-  },
-  {
-    "id": "1df8d85a-9095-4ab9-952a-c668a4d5d51c",
-    "name": "Electrified Hull",
-    "startingTier": "Gold",
-    "tiers": {
-      "Bronze": {
-        "tooltips": []
-      },
-      "Silver": {
-        "tooltips": []
-      },
-      "Gold": {
-        "tooltips": [
-          "The first 4 times you Shield each fight, Charge 1 item(s) 1 second(s)."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "The first 8 times you Shield each fight, Charge 1 item(s) 1 second(s)."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [],
-    "hiddenTags": [
-      "ShieldReference",
-      "Charge"
-    ],
-    "size": "Medium",
-    "heroes": [
-      "Pygmalien",
-      "Dooley"
-    ],
-    "artKey": "Icon_Skill_DOO_NumberOneStunner.png",
-    "unifiedTooltips": [
-      "The first (4/8) times you Shield each fight, Charge 1 item(s) 1 second(s)."
-    ],
-    "remarks": [],
-    "packId": "Pygmalien_Core"
   },
   {
     "id": "4e2e23aa-a3d1-46b0-9d59-c06fb64bea2f",
