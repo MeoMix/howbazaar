@@ -1,8 +1,11 @@
 import * as fs from 'fs';
 import * as path from 'path';
+import { createHash } from 'crypto';
 
-import { deleteFiles } from './utils/fileUtils';
+import { deleteFiles, copyAndRenameFiles } from './utils/fileUtils';
 import parsedItemCards from "../src/lib/db/patches/latest/parsedItemCards";
+// TODO: Prolly want to reuse this so accidents don't occur with diverging implementations.
+// TODO: This wouldn't be necessary if I looked things up by GUID instead of name. And then I wouldn't need to update CDN when an item is renamed.
 import { removeSpecialCharacters } from './utils/stringUtils';
 import { checkAndResizeImages, convertImagesToAvif } from './utils/imageUtils';
 
@@ -11,301 +14,143 @@ import { checkAndResizeImages, convertImagesToAvif } from './utils/imageUtils';
 // .\AssetStudioModCLI "C:\Program Files\Tempo Launcher - Beta\The Bazaar game_64\bazaarwinprodlatest\TheBazaar_Data\StreamingAssets\aa\StandaloneWindows64" --filter-by-name CF_,PNG_,Ectoplasm,Seaweed,Octopus,Snowflake -g none --image-format jpg -t tex2d -o ./items
 // .\AssetStudioModCLI "C:\Program Files\Tempo Launcher - Beta\The Bazaar game_64\bazaarwinprodlatest\TheBazaar_Data\StreamingAssets\aa\StandaloneWindows64" --filter-by-name _CardData -g none -t monoBehaviour -o ./carddata
 
-// Results in missing these exports:
-// Missing 10 item images: [
-//   'Ectoplasm', //Ectoplasm
-//   'BarofGold', // this one was just a file name issue
-//   'IllusoRay', // this is because this one is formatted as PNG_S_VAN_IllusoRay
-//   'ThievesGuildMedallion', // PNG_S_NTR_ThievesGuildMedallion
-//   'Seaweed', // Seaweed1
-//   'RedPigglesX', // duplicate file
-//   'PeskyPete', // CF_S_Van_PeskyPete_D
-//   'Barrel', // CF_M_Van_Barrel_D
-//   'TinyCutlass', // Reuse cutlass
-//   'Octopus', // Flat_Octopus
-//   'Snowflake' //Snowflake
-//   'FuelRod', //NuclearReactor
-// ]
+interface CardGuidMap {
+  [key: string]: string;
+}
 
-// Directory containing your images
 const inputDirectory = './scripts/images/';
 const assetType = 'items';
 const assetPath = `${inputDirectory}${assetType}/`;
 const outputDirectory = './static/images/';
 
-// Remove unwanted prefixes and suffixes from the filename
-const cleanFileName = (fileName: string): string => {
-  // Define one-off renaming rules
-  const renameRules: { [key: string]: string } = {
-    'Fangs': 'Fang',
-    'BlueBananas': 'Bluenanas',
-    'Cinder': 'Cinders',
-    'VialOfBlood': 'VialofBlood',
-    'EyeOfTheColossus': 'EyeoftheColossus',
-    'SoulOfTheDistrict': 'SouloftheDistrict',
-    'Saphire': 'Sapphire',
-    'GoodDog': 'Dog',
-    'GoldBar': 'BarofGold',
-    'ClockworkDaggers': 'ClockworkBlades',
-    'GolfClub': 'GolfClubs',
-    'CrowsNest': 'CrowsNest',
-    'Forcefield': 'ForceField',
-    'HakurvanLauncher': 'HakurvianLauncher',
-    'SolarPanels': 'SolarFarm',
-    'AlienLeeches': 'Leeches',
-    'KirgSalamanderPup': 'SalamanderPup',
-    'OuroborusStatue': 'OuroborosStatue',
-    'CosmicAmulet1': 'CosmicAmulet',
-    'CrusherClaw1': 'CrusherClaw',
-    'TommyGun': 'TommooGun',
-    'MortarandPestle': 'MortarPestle',
-    'Silencer ': 'Silencer',
-    'GumballRed': 'RedGumball',
-    'GumballGreen': 'GreenGumball',
-    'GumballBlue': 'BlueGumball',
-    'GumballYellow': 'YellowGumball',
-    'TuskBayonets': 'TuskedHelm',
-    'PigglesRed': 'RedPigglesA',
-    'PigglesYellow': 'YellowPigglesA',
-    'PigglesBlue': 'BluePigglesA',
-    'Snowball': 'Icicle',
-    'Fireballs': 'CharCole',
-    'Snowtel': 'Igloo',
-    'FlashGrenade': 'Flashbang',
-    'CaptainsWheel': 'CaptainsWheel',
-    'Seaweed1': 'Seaweed',
-    'Ring': 'SoulRing',
-    'AvantGuard': 'Cybersecurity',
-    'Whip': 'MortalCoil',
-    'Sickle': 'IcePick',
-    'Flat_Octopus': 'Octopus',
-    'PickledAlienVeggies': 'PickledPeppers',
-    'Blowtorch': 'BlowTorch',
-    'ChronoBarrier': 'Chronobarrier',
-    'DragonsTooth': 'DragonTooth',
-    'DJCircuitBreaker': 'DJRob0t',
-    'MarbleScaleMail': 'MarbleScalemail',
-    'PepperMill': 'BlackPepper',
-    'Claw': 'ClawArm',
-    'Jaballianlongbow': 'JabalianLongbow',
-    'JaballianDagger': 'PygmaliensDagger',
-    'SlingShot': 'Slingshot',
-    'BusyBees': 'BusyBee',
-    'BelleLista': 'Bellelista',
-    'ViciousTeddyBear': 'Teddy',
-    'Boots': 'Bootstraps',
-    'Dinonysus': 'MommaSaur',
-    'TrappedDoor': 'BoobyTrap',
-    'SwitchBlade': 'Switchblade',
-    'Schematic': 'Schematics',
-    'Chassis': 'CombatCore',
-    'PowerCore': 'TheCore',
-    'Contract': 'Ledger',
-    'MetalSaw': 'Hacksaw',
-    'Matryoshka': 'NestingDoll',
-    'Stash': 'Lockbox',
-    'EpicEpicureanChocolate': 'EpicureanChocolate',
-    'DooleysBed': 'ChargingStation',
-    'Chuck': 'Clawrence',
-    'Balista': 'Ballista',
-    'BuisnessCard': 'BusinessCard',
-    'WallMaker': 'BrickBuddy',
-    'Roburglars': 'MechMoles',
-    'Titanium': 'Pyrocarbon',
-    'AlienAxe': 'RuneAxe',
-    'PowerShoes': 'AgilityBoots',
-    'NuclearReactor': 'DefenseMatrix',
-    'ForkLift': 'Forklift',
-    'Waterwheel': 'WaterWheel',
-    'Silk': 'SilkScarf',
-    'PreservedDragonsBreath': 'DragonsBreath',
-    'snowmobile': 'Snowmobile',
-    'DarkwaterAnglerfish (1)': 'DarkwaterAnglerfish',
-    'Nanobots': 'Nanobot',
-    'FossilizedFemur': 'MagnusFemur',
-    'PrimordialDepthCharge': 'ElementalDepthCharge',
-    'JaballianDrum': 'JabalianDrum',
-    'ShieldPotion': 'InvulnerabilityPotion',
-    'SattComm': 'SatComm',
-    'Dootron': 'Dooltron',
-    'Dootron Mainframe': 'DooltronMainframe',
-    'TheDooshield': 'ZShield',
-    'TheDooblade': 'ZSword',
-    "TrustySteed" :"Seashadow",
-    "CrubbyLobster": "OldSaltclaw",
-    "LongTail": "MrRichardson",
-    "SaltydogSaloon": "SeadogsSaloon",
-    "FrozenFire": "FrozenFlame",
-    "Runeblade": "RunicBlade",
-    "CursePotion": "CrocodileTears",
-    "FireFLies": "Fireflies",
-    "IceWeaselpede": "Weaselpede",
-    "RunicSai": "RunicDaggers",
-    "AlienRaven": "CovetousRaven",
-    "HidingSpot": "Cellar",
-    "TheTomeOfYyahan": "TheTomeofYyahan",
-    "RecycleBin": "RecyclingBin",
-    "ElixirofImmortality":"RegenerationPotion",
-    "Frostfinger": "IceClaw",
-    "Portrait": "MementoMori",
-    'SustainingPotion': 'NoxiousPotion', // It's weird because the item is definitely Noxious Potion, and there's an image for it, but it's not the right one.
-    'NoxiousPotion': 'RunicPotion',
-    'ObsidianShard': 'ShardofObsidian'
-  };
-
-  // Sometimes there's a literal space at the end of the filename. Madness.
-  fileName = fileName.trim();
-
-  // Remove the "CF_" prefix and the following size identifier if present
-  fileName = fileName.replace(/^(CF|PNG)_[SML]_/, '');
-
-  // Remove specific three-letter identifiers if present (Van, Pyg, Doo, Jul, Ste, Mak)
-  fileName = fileName.replace(/^(VAN|PYG|PIG|DOO|JUL|STE|STL|MAK|MAC|ADV|NEU|NTR)[-_]/i, '');
-
-  // Remove _D or _D1 from end of file name
-  fileName = fileName.replace(/_D\d?$/, '');
-
-  // Remove _T or _T1 from end of file name
-  fileName = fileName.replace(/_T\d?$/, '');
-
-  // Apply specific renaming rules if the filename matches any key in renameRules
-  const baseName = path.basename(fileName, path.extname(fileName)); // Get base filename without extension
-  if (renameRules[baseName]) {
-    fileName = renameRules[baseName] + path.extname(fileName); // Replace base name and keep the extension
-  }
-
-  // Strip special characters like hyphens to match parsedItemCard logic
-  const { name, ext } = path.parse(fileName);
-  return removeSpecialCharacters(name) + ext;
+const RENAME_RULES: { [key: string]: string } = {
+  'BuisnessCard': 'BusinessCard',
+  'PowerCore': 'TheCore',
+  'Matryoshka': 'NestingDoll',
+  'Saphire': 'Sapphire',
+  'PickledAlienVeggies': 'PickledPeppers',
+  'CrusherClaw1': 'CrustaceanClaw',
+  'CosmicAmulet1': 'CosmicAmulet',
+  'Seaweed1': 'Seaweed',
+  'MetalSaw': 'Hacksaw',
+  'Balista': 'Ballista',
+  'EpicEpicureanChocolate': 'EpicEpicureanChoclate',
+  'CursePotion': 'CrocodileTears',
+  'AvantGuard': 'Cybersecurity',
+  'ArmoredCore': 'OblivionCore',
+  'CrubbyLobster': 'CrabbyLobster'
 };
 
-// TODO: This script should ideally intelligently copy files to the end directory
-// Right now it triggers git commits on files which were (effectively) unmodified.
-// Process files with or without making changes based on dry run mode
-async function processItemImages() {
-  await deleteKnownUselessFiles();
+// Track which rename rules are used
+const usedRenameRules = new Set<string>();
 
-  // Parse data
-  const itemCardNames = parsedItemCards.map(item => removeSpecialCharacters(item.name));
-
-  console.log('Cleaning file names');
-  await cleanFileNamesTwoPhase();
-
-  console.log('Duplicating files');
-  await duplicateFiles();
-
-  const files = await fs.promises.readdir(assetPath);
-
-  // Create a map of file -> cleanFileName
-  const fileCleanNameMap = new Map(files.map(file => [file, path.parse(file).name]));
-
-  console.log('fileCleanNameMap', fileCleanNameMap);
-
-  // Extract the clean filenames and card names into sets for quick lookups
-  const cleanedFileNames = new Set(fileCleanNameMap.values());
-  const itemCardNameSet = new Set(itemCardNames);
-
-  // Determine missing file names
-  const missingFileNames = itemCardNames.filter(cardName => !cleanedFileNames.has(cardName));
-
-  // Exit if there are missing files
-  if (missingFileNames.length > 0) {
-    console.error(`Missing ${missingFileNames.length} item images:`, missingFileNames);
-    return;
-  }
-
-  // Determine unused files
-  const unusedFiles = Array.from(fileCleanNameMap.entries())
-    .filter(([_, cleanName]) => !itemCardNameSet.has(cleanName))
-    .map(([originalFile]) => originalFile);
-
-  if (unusedFiles.length > 0) {
-    console.log(`Unused files:`, unusedFiles);
-    await deleteFiles(unusedFiles, assetPath);
-  }
-
-  await convertImagesToAvif(`${assetPath}`, `${inputDirectory}/${assetType}-avif`);
-  await checkAndResizeImages(`${inputDirectory}/${assetType}-avif`, `${outputDirectory}/${assetType}`);
+function normalizeName(name: string): string {
+  return name
+    .replace(/\s*\(\d+\)$/, '') // Remove trailing " (1)", " (2)", etc.
+    .replace(/\s+/g, '')        // Remove all whitespace
+    .toLowerCase();             // Lowercase
 }
 
-processItemImages().catch(console.error);
+// TODO: Figure out how to simplify this a bit. It still seems convoluted.
+// Function to try and find a matching file using rename rules
+function findMatchingFile(expectedName: string, imageFiles: string[]): string | undefined {
+  const normalizedExpected = normalizeName(expectedName);
+
+  // Try reverse lookup from rename rules
+  const possibleOriginalNames = Object.entries(RENAME_RULES)
+    .filter(([_, value]) => normalizeName(value) === normalizedExpected)
+    .map(([key]) => key);
+
+  for (const originalName of possibleOriginalNames) {
+    const normalizedOriginal = normalizeName(originalName);
+    const pattern = new RegExp(`_${normalizedOriginal}_`, 'i');
+
+    const match = imageFiles.find(file => {
+      const baseName = normalizeName(path.parse(file).name);
+      return pattern.test(`_${baseName}_`);
+    });
+
+    if (match) {
+      usedRenameRules.add(originalName);
+      return match;
+    }
+  }
+
+  // Regex: match name wrapped in underscores (e.g. _Amber_)
+  const pattern = new RegExp(`_${normalizedExpected}_`, 'i');
+
+  // Try bounded match first
+  const boundedMatch = imageFiles.find(file => {
+    const baseName = normalizeName(path.parse(file).name);
+    return pattern.test(`_${baseName}_`); // Add underscores to enforce boundaries
+  });
+
+  if (boundedMatch) return boundedMatch;
+
+  return undefined;
+}
 
 async function deleteKnownUselessFiles() {
   const files = await fs.promises.readdir(assetPath);
   const filesToDelete = files.filter(file =>
+    file.includes('FX_') ||
+    file.includes('_FX') ||
+    file.includes('_Mask') ||
     file.endsWith('Mask.jpeg') ||
-    file.endsWith('._FX.jpeg') ||
     file.endsWith('Portrait.jpeg') ||
     file.endsWith('PortraitBG.jpeg') ||
     // There's two files both named "Feather" and only one is correct (the purple feather)
     file.endsWith('CF_S_STE_Feather_D.jpeg') ||
+    // This is causing confusion with "Windmill". There's probably a more robust way of matching on Windmill without needing this.
+    file.endsWith('CF_L_PYG_Windmill_Baloons.jpeg') ||
     /_#\d{1,10}\.jpeg$/.test(file) // Matches '_#<numbers>.jpeg', where <numbers> is 1-10 digits
   );
 
   await deleteFiles(filesToDelete, assetPath);
 }
 
-async function cleanFileNamesTwoPhase() {
-  const files = await fs.promises.readdir(assetPath);
-
-  // 1) Build the rename map: originalFile → { tempFile, finalFile }
-  //    Note: Use something guaranteed unique for tempFile to avoid collisions
-  const renameMap = files.map(file => {
-    const { name, ext } = path.parse(file); 
-    const finalName = cleanFileName(name) + ext;
-    return {
-      originalFile: file,
-      tempFile: `tmp__${file}`,
-      finalFile: finalName,
-    };
-  });
-
-  // 2) Phase 1: rename to tmp__name
-  for (const { originalFile, tempFile } of renameMap) {
-    const oldPath = path.join(assetPath, originalFile);
-    const tmpPath = path.join(assetPath, tempFile);
-    await fs.promises.rename(oldPath, tmpPath);
-  }
-
-  // 3) Phase 2: rename tmp__name → final
-  for (const { tempFile, finalFile } of renameMap) {
-    const tmpPath = path.join(assetPath, tempFile);
-    const finalPath = path.join(assetPath, finalFile);
-
-    // Make sure we handle existing final name collisions 
-    // by removing or skipping if needed. Or handle errors as you wish.
-    try {
-      await fs.promises.rename(tmpPath, finalPath);
-      console.log(`Renamed ${tempFile} → ${finalFile}`);
-    } catch (err) {
-      console.error(`Error renaming ${tempFile} to ${finalFile}:`, err);
-    }
-  }
+interface DuplicateConfig {
+  files: string[];
+  deleteOnCopy: boolean;
 }
 
 async function duplicateFiles() {
-  // Map of files to duplicate
-  const duplicateMappings = {
-    'RedPigglesA': ['RedPigglesX', 'RedPigglesL', 'RedPigglesR'],
-    'YellowPigglesA': ['YellowPigglesX', 'YellowPigglesL', 'YellowPigglesR'],
-    'BluePigglesA': ['BluePigglesX', 'BluePigglesL', 'BluePigglesR'],
-    // TODO: It's weird this is needed?
-    'Cutlass': ['TinyCutlass'],
+  // Map of files to duplicate with configuration
+  const duplicateMappings: Record<string, DuplicateConfig> = {
+    'PigglesRed': {
+      files: ['RedPigglesA', 'RedPigglesX', 'RedPigglesL', 'RedPigglesR'],
+      deleteOnCopy: true
+    },
+    'PigglesYellow': {
+      files: ['YellowPigglesA', 'YellowPigglesX', 'YellowPigglesL', 'YellowPigglesR'],
+      deleteOnCopy: true
+    },
+    'PigglesBlue': {
+      files: ['BluePigglesA', 'BluePigglesX', 'BluePigglesL', 'BluePigglesR'],
+      deleteOnCopy: true
+    },
+    'Cutlass': {
+      files: ['TinyCutlass'],
+      deleteOnCopy: false
+    }
   };
 
   try {
     const files = await fs.promises.readdir(assetPath);
     const missingFiles: string[] = [];
+    const filesToDelete: string[] = [];
 
-    for (const [sourceFile, targetFiles] of Object.entries(duplicateMappings)) {
-      // Find source file by name regardless of extension
-      const sourceMatch = files.find(file => path.parse(file).name === sourceFile);
+    for (const [sourceFile, config] of Object.entries(duplicateMappings)) {
+      // Find source file by containing the name (loose match)
+      const sourceMatch = files.find(file =>
+        path.parse(file).name.toLowerCase().includes(sourceFile.toLowerCase())
+      );
 
       if (sourceMatch) {
         const sourceFilePath = path.join(assetPath, sourceMatch);
         const sourceExt = path.extname(sourceMatch);
 
-        for (const targetFile of targetFiles) {
+        for (const targetFile of config.files) {
           const targetFilePath = path.join(assetPath, `${targetFile}${sourceExt}`);
 
           try {
@@ -316,8 +161,26 @@ async function duplicateFiles() {
             console.error(`Error copying ${sourceMatch} to ${targetFile}${sourceExt}:`, err.message);
           }
         }
+
+        // Add source file to deletion list if configured
+        if (config.deleteOnCopy) {
+          filesToDelete.push(sourceMatch);
+        }
       } else {
         missingFiles.push(sourceFile);
+      }
+    }
+
+    // Delete the source files that are marked for deletion
+    if (filesToDelete.length > 0) {
+      console.log('\nDeleting source files:');
+      for (const file of filesToDelete) {
+        try {
+          await fs.promises.unlink(path.join(assetPath, file));
+          console.log(`Deleted ${file}`);
+        } catch (err) {
+          console.error(`Error deleting ${file}:`, err.message);
+        }
       }
     }
 
@@ -329,3 +192,85 @@ async function duplicateFiles() {
     console.error('Error reading directory:', err.message);
   }
 }
+
+async function processItemImages() {
+  await deleteKnownUselessFiles();
+
+  console.log('Duplicating files');
+  await duplicateFiles();
+
+  // Load the GUID to name mapping
+  const guidMapPath = './scripts/cardGuidToName.json';
+  const guidMapContent = await fs.promises.readFile(guidMapPath, 'utf-8');
+  const guidToName = JSON.parse(guidMapContent) as CardGuidMap;
+
+  // Read all image files
+  const imageFiles = await fs.promises.readdir(assetPath);
+
+  const missingImages: { id: string; name: string; expectedFile: string }[] = [];
+  const foundImages: { id: string; name: string; matchedFile: string }[] = [];
+
+  // For each parsed item card
+  for (const card of parsedItemCards) {
+    const assetName = guidToName[card.id];
+
+    if (!assetName) {
+      missingImages.push({
+        id: card.id,
+        name: card.name,
+        expectedFile: 'Unknown - No GUID mapping found'
+      });
+      continue;
+    }
+
+    // Look for a file that includes this name
+    const matchingFile = findMatchingFile(assetName, imageFiles);
+
+    if (!matchingFile) {
+      missingImages.push({
+        id: card.id,
+        name: card.name,
+        expectedFile: assetName
+      });
+    } else {
+      foundImages.push({
+        id: card.id,
+        name: card.name,
+        matchedFile: matchingFile
+      });
+    }
+  }
+
+  // Log results
+  console.log(`\nProcessing complete!`);
+  console.log(`Found ${foundImages.length} matching images`);
+  console.log(`Missing ${missingImages.length} images\n`);
+
+  if (missingImages.length > 0) {
+    console.log('Missing images:');
+    console.table(missingImages);
+    throw new Error('Missing required images');
+  }
+
+  // Log unused rename rules
+  const allRules = new Set(Object.keys(RENAME_RULES));
+  const unusedRules = Array.from(allRules).filter(rule => !usedRenameRules.has(rule));
+
+  if (unusedRules.length > 0) {
+    console.log('\nUnused rename rules:');
+    const unusedRulesList = unusedRules.map(originalName => ({
+      original: originalName,
+      renamed: RENAME_RULES[originalName]
+    }));
+    console.table(unusedRulesList);
+  }
+
+  // If we got here, we found all images, so proceed with conversion
+  const copiedFiles = await copyAndRenameFiles(foundImages, assetPath, `${inputDirectory}/${assetType}-renamed`);
+  const convertedFiles = await convertImagesToAvif(copiedFiles, `${inputDirectory}/${assetType}-avif`);
+  const resizedFiles = await checkAndResizeImages(convertedFiles, `${outputDirectory}/${assetType}`);
+
+  console.log('Processed', resizedFiles.length, 'files');
+}
+
+processItemImages().catch(console.error);
