@@ -63,6 +63,10 @@ const allowedList = [
   'ca3da34f-a982-4ae4-bea0-8dddac873650',
   // Potent Potables
   'edb9b01b-b4ce-4a77-848e-0a49b8a23c16',
+
+  // Calming Heals
+  '571b3909-e04c-454f-86ae-61cc46ea3066',
+
   // Heavy Drinker
   // 'af42d725-dc55-4f6f-9de6-b7a4c7f7013e',
 

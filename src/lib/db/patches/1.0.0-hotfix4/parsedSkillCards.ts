@@ -3577,6 +3577,49 @@ const data: ParsedSkillCard[] = [
     "packId": "Pygmalien_Core"
   },
   {
+    "id": "571b3909-e04c-454f-86ae-61cc46ea3066",
+    "name": "Calming Heals",
+    "startingTier": "Gold",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": [
+          "The first 5 times you Slow each fight, Charge 1 Heal item 1 second(s)."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "The first 10 times you Slow each fight, Charge 1 Heal item 1 second(s)."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "Charge",
+      "HealReference",
+      "SlowReference"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Pygmalien",
+      "Mak"
+    ],
+    "artKey": "Icon_Skill_TraumaKit.png",
+    "unifiedTooltips": [
+      "The first (5/10) times you Slow each fight, Charge 1 Heal item 1 second(s)."
+    ],
+    "remarks": [],
+    "packId": "Pygmalien_Core"
+  },
+  {
     "id": "f0955884-1ea7-4cac-ad73-c30798d3642c",
     "name": "Sharp Corners",
     "startingTier": "Silver",
