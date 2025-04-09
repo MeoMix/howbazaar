@@ -14,10 +14,11 @@
 		"generatePatchNotes": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"ESNext\"}' tsx scripts/generatePatchNotes.ts",
 		"processSkillImages": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"ESNext\"}' tsx scripts/processSkillImages.ts",
 		"processMonsterImages": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"ESNext\"}' tsx scripts/processMonsterImages.ts",
-		"processItemImages": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"ESNext\"}' tsx scripts/processItemImages.ts",
+		"processItemImages": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"ESNext\"}' tsx scripts/processItemImages_v2.ts",
 		"extractInvalidItemIds": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"ESNext\"}' tsx scripts/extractInvalidItemIds.ts",
 		"extractInvalidSkillIds": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"ESNext\"}' tsx scripts/extractInvalidSkillIds.ts",
 		"extractMonsterTemplateIds": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"ESNext\"}' tsx scripts/extractMonsterTemplateIds.ts",
+		"processCardData": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"ESNext\"}' tsx scripts/processCardData.ts",
 		"fetchCards": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"ESNext\"}' tsx scripts/fetchCards.ts",
 		"upload:images": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"ESNext\"}' tsx scripts/uploadImagesToBunnyCDN.ts"
 	},

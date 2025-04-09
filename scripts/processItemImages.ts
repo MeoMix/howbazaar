@@ -9,6 +9,7 @@ import { checkAndResizeImages, convertImagesToAvif } from './utils/imageUtils';
 // Command:
 // Needs to be whole folder - not all assets found in defaultlocalgroup_assets_all
 // .\AssetStudioModCLI "C:\Program Files\Tempo Launcher - Beta\The Bazaar game_64\bazaarwinprodlatest\TheBazaar_Data\StreamingAssets\aa\StandaloneWindows64" --filter-by-name CF_,PNG_,Ectoplasm,Seaweed,Octopus,Snowflake -g none --image-format jpg -t tex2d -o ./items
+// .\AssetStudioModCLI "C:\Program Files\Tempo Launcher - Beta\The Bazaar game_64\bazaarwinprodlatest\TheBazaar_Data\StreamingAssets\aa\StandaloneWindows64" --filter-by-name _CardData -g none -t monoBehaviour -o ./carddata
 
 // Results in missing these exports:
 // Missing 10 item images: [
