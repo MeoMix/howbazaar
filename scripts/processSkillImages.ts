@@ -3,7 +3,7 @@ import path from 'path';
 
 import parsedSkillCards from "../src/lib/db/patches/latest/parsedSkillCards";
 import { removeSpecialCharacters } from './utils/stringUtils.ts';
-import { deleteFiles } from './utils/fileUtils.ts';
+import { copyAndRenameFiles, deleteFiles } from './utils/fileUtils.ts';
 import { checkAndResizeImages, convertImagesToAvif } from './utils/imageUtils.ts';
 
 // Command:
@@ -21,6 +21,7 @@ async function renameSkillImages() {
         const nameWithoutSpecialCharacters = removeSpecialCharacters(name);
         const artKeyWithoutExtension = path.parse(artKey).name; // Remove file extension from artKey
         return { artKey: artKeyWithoutExtension, nameWithoutSpecialCharacters, name };
+    // TODO: Why do I need to filter this here? Should filter out earlier if a card doesn't have an artKey.
     }).filter(entry => !!entry.artKey);
 
     // Get file names in the local directory (without extensions)
@@ -73,6 +74,7 @@ async function renameSkillImages() {
 
     // TODO: sanitizeFileNames ?
 
+    const copiedFiles = await copyAndRenameFiles(foundImages, assetPath, `${inputDirectory}/${assetType}-renamed`);
     await convertImagesToAvif(`${assetPath}`, `${inputDirectory}/${assetType}-avif`);
     await checkAndResizeImages(`${inputDirectory}/${assetType}-avif`, `${outputDirectory}/${assetType}`);
 }
