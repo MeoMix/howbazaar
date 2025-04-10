@@ -10,7 +10,7 @@
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"test": "vitest",
 		"generate-types": "npx quicktype src/lib/parsers/patches/latest/v2_Cards.json -o src/lib/parsers/patches/latest/v2_Cards.d.ts --just-types --prefer-unions && npx quicktype src/lib/parsers/patches/latest/v2_Monsters.json -o src/lib/parsers/patches/latest/v2_Monsters.d.ts --just-types --prefer-unions && npx quicktype src/lib/parsers/patches/latest/v2_DayHours.json -o src/lib/parsers/patches/latest/v2_DayHours.d.ts --just-types --prefer-unions",
-		"parseGameJson": "node scripts/parseGameJson.ts",
+		"parseGameJson": "tsx scripts/parseGameJson.ts",
 		"generatePatchNotes": "tsx scripts/generatePatchNotes.ts",
 		"processSkillImages": "tsx scripts/processSkillImages.ts",
 		"processMonsterImages": "tsx scripts/processMonsterImages.ts",

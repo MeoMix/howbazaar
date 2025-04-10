@@ -93,6 +93,8 @@ const disallowedList = [
   "015bc348-773e-4009-87ff-231452431bba",
   // Small Weaponry
   "c4c70f57-c51e-4bc4-848c-0f0e7fbddd28",
+  // Flanking Toxins
+  "8c36b532-0eb5-49f8-9128-a50b17ef3eed",
   // Microfiber
   "883043eb-5a5f-4fa2-9cae-185f51019b11",
   // Nanite Healing

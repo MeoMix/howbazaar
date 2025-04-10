@@ -9425,50 +9425,6 @@ const data: ParsedSkillCard[] = [
     "packId": "Vanessa_Core"
   },
   {
-    "id": "8c36b532-0eb5-49f8-9128-a50b17ef3eed",
-    "name": "Flanking Toxins",
-    "startingTier": "Silver",
-    "tiers": {
-      "Bronze": {
-        "tooltips": []
-      },
-      "Silver": {
-        "tooltips": [
-          "The first time you use a Large item each fight, adjacent Poison items gain 4 Poison for the fight."
-        ]
-      },
-      "Gold": {
-        "tooltips": [
-          "The first time you use a Large item each fight, adjacent Poison items gain 6 Poison for the fight."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "The first time you use a Large item each fight, adjacent Poison items gain 8 Poison for the fight."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [],
-    "hiddenTags": [
-      "PoisonReference"
-    ],
-    "size": "Medium",
-    "heroes": [
-      "Vanessa",
-      "Dooley",
-      "Mak"
-    ],
-    "artKey": "Icon_Skill_FlankingToxins.png",
-    "unifiedTooltips": [
-      "The first time you use a Large item each fight, adjacent Poison items gain (4/6/8) Poison for the fight."
-    ],
-    "remarks": [],
-    "packId": "Vanessa_Core"
-  },
-  {
     "id": "dfe40f90-61de-46dc-b807-0da587140e9d",
     "name": "Ambush",
     "startingTier": "Gold",

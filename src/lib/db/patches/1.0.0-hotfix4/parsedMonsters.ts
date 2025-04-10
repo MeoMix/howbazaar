@@ -2021,12 +2021,7 @@ const data: ParsedMonster[] = [
         "socketId": "Socket_8"
       }
     ],
-    "skills": [
-      {
-        "templateId": "8c36b532-0eb5-49f8-9128-a50b17ef3eed",
-        "tierType": "Silver"
-      }
-    ]
+    "skills": []
   },
   {
     "id": "16038f84-3cec-4ccd-b58b-2ce974442142",
