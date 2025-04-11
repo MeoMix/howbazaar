@@ -103,7 +103,9 @@ const disallowedList = [
   // Alchemical Precision:
   "8509674b-3c4b-4250-9bb4-666ef7402654",
   // Sparring Partner:
-  "fcb51ffd-6d25-4e74-871a-7dc0de2bae91"
+  "fcb51ffd-6d25-4e74-871a-7dc0de2bae91",
+  // Toxic Exposure:
+  "dfeaa982-9ed6-4aee-840e-628fa8b508bd"
 ];
 
 // Filter the entries

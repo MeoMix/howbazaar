@@ -5528,48 +5528,6 @@ const data: ParsedSkillCard[] = [
     "packId": "Core"
   },
   {
-    "id": "dfeaa982-9ed6-4aee-840e-628fa8b508bd",
-    "name": "Toxic Exposure",
-    "startingTier": "Gold",
-    "tiers": {
-      "Bronze": {
-        "tooltips": []
-      },
-      "Silver": {
-        "tooltips": []
-      },
-      "Gold": {
-        "tooltips": [
-          "When you Poison, your enemy loses 5 Max Health for the fight."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "When you Poison, your enemy loses 10 Max Health for the fight."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [],
-    "hiddenTags": [
-      "PoisonReference"
-    ],
-    "size": "Medium",
-    "heroes": [
-      "Vanessa",
-      "Dooley",
-      "Mak"
-    ],
-    "artKey": "Icon_Skill_QuickExposure.png",
-    "unifiedTooltips": [
-      "When you Poison, your enemy loses (5/10) Max Health for the fight."
-    ],
-    "remarks": [],
-    "packId": "Vanessa_Core"
-  },
-  {
     "id": "12291452-e5c6-4d98-98c6-69f766536dbd",
     "name": "Critical Aid",
     "startingTier": "Bronze",
