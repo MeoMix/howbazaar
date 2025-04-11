@@ -46,7 +46,7 @@
     padding="none"
     class={`h-full relative text-gray-900 border dark:bg-bazaar-background dark:text-bazaar-tan700 border-tiers-${tierType.toLowerCase()}-400 dark:border-tiers-${tierType.toLowerCase()}-400`}
 >
-    <MonsterCardImage name={card.name} type="items" size={card.size} />
+    <MonsterCardImage name={card.name} id={card.id} type="items" size={card.size} />
 
     <div class="flex flex-col px-4 pb-4 py-2 relative">
         <div class="flex flex-col gap-2 relative">

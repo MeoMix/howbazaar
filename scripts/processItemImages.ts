@@ -2,9 +2,6 @@ import * as fs from 'fs';
 import * as path from 'path';
 import { deleteFiles, copyAndRenameFiles } from './utils/fileUtils';
 import parsedItemCards from "../src/lib/db/patches/latest/parsedItemCards";
-// TODO: Prolly want to reuse this so accidents don't occur with diverging implementations.
-// TODO: This wouldn't be necessary if I looked things up by GUID instead of name. And then I wouldn't need to update CDN when an item is renamed.
-import { removeSpecialCharacters } from './utils/stringUtils';
 import { checkAndResizeImages, convertImagesToAvif } from './utils/imageUtils';
 
 // .\AssetStudioModCLI "C:\Program Files\Tempo Launcher - Beta\The Bazaar game_64\bazaarwinprodlatest\TheBazaar_Data\StreamingAssets\aa\StandaloneWindows64" --filter-by-name CF_,PNG_,Ectoplasm,Seaweed,Octopus,Snowflake -g none --image-format jpg -t tex2d -o ./items
@@ -94,17 +91,31 @@ async function processItemImages() {
         throw new Error('Missing required images');
     }
 
+    const imageCopyDescriptors = foundImages.map(({ id, matchedFile }) => ({
+        fileName: id,
+        relativePath: matchedFile
+    }));
+
     const copyAndRenamePath = path.join(inputDirectory, `${assetType}-renamed`);
-    const copiedFiles = await copyAndRenameFiles(foundImages, assetPath, copyAndRenamePath);
+    const copiedFiles = await copyAndRenameFiles(imageCopyDescriptors, assetPath, copyAndRenamePath);
     console.log(`Copied and renamed ${copiedFiles.length} files to ${copyAndRenamePath}`);
+    if (copiedFiles.length !== imageCopyDescriptors.length) {
+        throw new Error('Copied files count mismatch. Exiting early.');
+    }
 
     const avifPath = path.join(inputDirectory, `${assetType}-avif`);
     const convertedFiles = await convertImagesToAvif(copiedFiles, avifPath);
     console.log(`Converted to AVIF: ${convertedFiles.length} files.`);
+    if (convertedFiles.length !== copiedFiles.length) {
+        throw new Error('Converted files count mismatch. Exiting early.');
+    }
 
     const outputPath = path.join(outputDirectory, assetType);
     const resizedFiles = await checkAndResizeImages(convertedFiles, outputPath);
     console.log(`Resized ${resizedFiles.length} images into ${outputPath}`);
+    if (resizedFiles.length !== convertedFiles.length) {
+        throw new Error('Resized files count mismatch. Exiting early.');
+    }
 }
 
 processItemImages().catch(console.error);
@@ -155,6 +166,7 @@ function findMatchingFile(expectedName: string, imageFiles: string[]): string | 
     return undefined;
 }
 
+// TODO: Instead of mutating the original folder, express this through filtering.
 async function deleteKnownUselessFiles() {
     const files = await fs.promises.readdir(assetPath);
     const filesToDelete = files.filter(file =>

@@ -4,7 +4,7 @@ import sharp from 'sharp';
 
 // TODO: It would be nice to always have logging enabled but to find a way to make it less verbose.
 // Logging configuration
-const LOGGING_ENABLED = false;
+const LOGGING_ENABLED = true;
 
 function log(message: string, error?: any) {
     if (LOGGING_ENABLED) {
@@ -134,11 +134,26 @@ export async function mergeImages(pairs: ImagePair[], outputFolder: string): Pro
             try {
                 if (background) {
                     const bgImage = sharp(background);
-                    const { width, height } = await bgImage.metadata();
+                    const fgImage = sharp(foreground);
+                    const bgMetadata = await bgImage.metadata();
+                    const fgMetadata = await fgImage.metadata();
+
+                    // If foreground is larger than background, scale it down to match
+                    let processedForeground: string | Buffer = foreground;
+                    if ((fgMetadata.width && bgMetadata.width && fgMetadata.width > bgMetadata.width) ||
+                        (fgMetadata.height && bgMetadata.height && fgMetadata.height > bgMetadata.height)) {
+                        log(`Scaling down foreground image ${path.basename(foreground)} to match background dimensions`);
+                        processedForeground = await fgImage
+                            .resize(bgMetadata.width, bgMetadata.height, {
+                                fit: 'contain',
+                                background: { r: 0, g: 0, b: 0, alpha: 0 }
+                            })
+                            .toBuffer();
+                    }
 
                     await bgImage
-                        .composite([{ input: foreground, gravity: 'center' }])
-                        .resize(width, height)
+                        .composite([{ input: processedForeground, gravity: 'center' }])
+                        .resize(bgMetadata.width, bgMetadata.height)
                         .toFile(outputPath);
 
                     log(`Merged ${path.basename(foreground)} + ${path.basename(background)} -> ${baseName}.png`);

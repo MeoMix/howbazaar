@@ -394,6 +394,7 @@
             <div class="max-w-full col-start-2 row-span-1 md:row-span-2">
                 <CardImage
                     name={patch.metadata.name}
+                    id={patch.metadata.id}
                     type={patch.metadata.type}
                     size={patch.metadata.currentSize}
                     isLazy

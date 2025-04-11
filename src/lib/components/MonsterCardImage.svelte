@@ -1,20 +1,20 @@
 <script lang="ts">
     import type { Size } from "$lib/types";
-    import { removeSpecialCharacters } from "$lib/utils/stringUtils";
     import { getImageUrl } from "$lib/utils/imageUtils";
 
     const {
         name,
+        id,
         type,
         size,
     }: {
         name: string;
+        id: string;
         type: "items" | "skills";
         size: Size;
     } = $props();
 
-    const sanitizedCardName = $derived(removeSpecialCharacters(name));
-    const imageUrl = $derived(getImageUrl(type, sanitizedCardName));
+    const imageUrl = $derived(getImageUrl(type, id));
 
     function getWidthClass() {
         if (size === "Small") {

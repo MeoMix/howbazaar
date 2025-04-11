@@ -17,13 +17,13 @@ export async function deleteFiles(files: string[], assetPath: string): Promise<v
     await Promise.all(deletePromises);
 }
 
-async function hashFile(filepath: string): Promise<string> {
-    const data = await fs.promises.readFile(filepath);
+async function hashFile(filePath: string): Promise<string> {
+    const data = await fs.promises.readFile(filePath);
     return createHash('sha256').update(data).digest('hex');
 }
 
 export async function copyAndRenameFiles(
-    foundImages: { name: string; matchedFile: string }[],
+    imageCopyDescriptors: { fileName: string; relativePath: string }[],
     sourceDir: string,
     outputDir: string
 ): Promise<string[]> {
@@ -33,10 +33,10 @@ export async function copyAndRenameFiles(
 
     const copiedFiles: string[] = [];
 
-    for (const { name, matchedFile } of foundImages) {
-        const sourcePath = path.join(sourceDir, matchedFile);
-        const cleanName = removeSpecialCharacters(name);
-        const targetPath = path.join(outputDir, `${cleanName}${path.extname(matchedFile)}`);
+    for (const { fileName, relativePath } of imageCopyDescriptors) {
+        const sourcePath = path.join(sourceDir, relativePath);
+        const fileExtension = path.extname(relativePath);
+        const targetPath = path.join(outputDir, `${fileName}${fileExtension}`);
 
         try {
             // Check if target file exists
@@ -52,7 +52,7 @@ export async function copyAndRenameFiles(
                 // First check size and mtime as a quick filter
                 if (sourceStats.size === targetStats.size &&
                     sourceStats.mtimeMs === targetStats.mtimeMs) {
-                    console.log(`Skipping identical file (quick check): ${cleanName}${path.extname(matchedFile)}`);
+                    console.log(`Skipping identical file (quick check): ${fileName}${fileExtension}`);
                     continue;
                 }
 
@@ -63,7 +63,7 @@ export async function copyAndRenameFiles(
                 ]);
 
                 if (sourceHash === targetHash) {
-                    console.log(`Skipping identical file (hash check): ${cleanName}${path.extname(matchedFile)}`);
+                    console.log(`Skipping identical file (hash check): ${fileName}${fileExtension}`);
                     continue;
                 }
             } catch {
@@ -72,10 +72,10 @@ export async function copyAndRenameFiles(
 
             // Copy the file
             await fs.promises.copyFile(sourcePath, targetPath);
-            console.log(`Copied and renamed: ${matchedFile} -> ${cleanName}${path.extname(matchedFile)}`);
+            console.log(`Copied and renamed: ${relativePath} -> ${fileName}${fileExtension}`);
             copiedFiles.push(targetPath);
         } catch (err) {
-            console.error(`Error copying ${matchedFile} to ${cleanName}${path.extname(matchedFile)}:`, err);
+            console.error(`Error copying ${relativePath} to ${fileName}${fileExtension}:`, err);
         }
     }
 

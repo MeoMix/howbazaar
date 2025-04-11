@@ -14,6 +14,7 @@ const outputDirectory = './static/images/';
 
 async function processSkillImages() {
     const skillEntries = parsedSkillCards.map(card => ({
+        id: card.id,
         artKey: card.artKey,
         name: card.name
     })).filter(entry => !!entry.artKey);
@@ -21,7 +22,7 @@ async function processSkillImages() {
     const imageFiles = await fsPromises.readdir(assetPath);
 
     const missingImages: { artKey: string; name: string }[] = [];
-    const foundImages: { artKey: string; name: string; matchedFile: string }[] = [];
+    const foundImages: { id: string; artKey: string; name: string; matchedFile: string }[] = [];
 
     for (const entry of skillEntries) {
         const matched = findMatchingFile(entry.artKey, imageFiles);
@@ -33,6 +34,7 @@ async function processSkillImages() {
             });
         } else {
             foundImages.push({
+                id: entry.id,
                 artKey: entry.artKey,
                 name: entry.name,
                 matchedFile: matched
@@ -49,17 +51,31 @@ async function processSkillImages() {
         throw new Error('Missing required skill images. Exiting early.');
     }
 
+    const imageCopyDescriptors = foundImages.map(({ id, matchedFile }) => ({
+        fileName: id,
+        relativePath: matchedFile
+    }));
+
     const copyAndRenamePath = path.join(inputDirectory, `${assetType}-renamed`);
-    const copiedFiles = await copyAndRenameFiles(foundImages, assetPath, copyAndRenamePath);
+    const copiedFiles = await copyAndRenameFiles(imageCopyDescriptors, assetPath, copyAndRenamePath);
     console.log(`Copied and renamed ${copiedFiles.length} files to ${copyAndRenamePath}`);
+    if (copiedFiles.length !== imageCopyDescriptors.length) {
+        throw new Error('Copied files count mismatch. Exiting early.');
+    }
 
     const avifPath = path.join(inputDirectory, `${assetType}-avif`);
     const convertedFiles = await convertImagesToAvif(copiedFiles, avifPath);
     console.log(`Converted to AVIF: ${convertedFiles.length} files.`);
+    if (convertedFiles.length !== copiedFiles.length) {
+        throw new Error('Converted files count mismatch. Exiting early.');
+    }
 
     const outputPath = path.join(outputDirectory, assetType);
     const resizedFiles = await checkAndResizeImages(convertedFiles, outputPath);
     console.log(`Resized ${resizedFiles.length} images into ${outputPath}`);
+    if (resizedFiles.length !== convertedFiles.length) {
+        throw new Error('Resized files count mismatch. Exiting early.');
+    }
 }
 
 processSkillImages().catch(console.error);

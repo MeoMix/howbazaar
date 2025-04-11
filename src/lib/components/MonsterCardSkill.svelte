@@ -17,7 +17,7 @@
 >
     <div class="flex items-start gap-4 py-2 pr-2">
         <div class="w-16 flex-shrink-0">
-            <MonsterCardImage name={card.name} type="skills" size={card.size} />
+            <MonsterCardImage name={card.name} id={card.id} type="skills" size={card.size} />
         </div>
 
         <div class="flex flex-col">

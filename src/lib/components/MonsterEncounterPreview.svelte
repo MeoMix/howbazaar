@@ -1,6 +1,5 @@
 <script lang="ts">
     import type { ClientSideMonsterEncounter } from "$lib/types";
-    import { removeSpecialCharacters } from "$lib/utils/stringUtils";
     import { getImageUrl } from "$lib/utils/imageUtils";
 
     const {
@@ -12,10 +11,8 @@
         toggleEncounter: (encounter: ClientSideMonsterEncounter) => void;
         isActive: boolean;
     } = $props();
-    const sanitizedCardName = $derived(
-        removeSpecialCharacters(monsterEncounter.cardName),
-    );
-    const imageUrl = $derived(getImageUrl("monsters", sanitizedCardName));
+
+    const imageUrl = $derived(getImageUrl("monsters", monsterEncounter.cardId));
 
     function viewDetails() {
         toggleEncounter(monsterEncounter);

@@ -31,7 +31,7 @@
         class="grid grid-cols-[66.66%_33.33%] md:grid-cols-[70%_30%] lg:grid-cols-[75%_25%]"
     >
         <div class="max-w-full col-start-2 row-span-1 md:row-span-2">
-            <CardImage name={card.name} type="skill" size={card.size} />
+            <CardImage name={card.name} id={card.id} type="skill" size={card.size} />
         </div>
         <div class="col-start-1 row-start-1 px-4 pt-4">
             <div class="flex flex-col gap-2 relative">

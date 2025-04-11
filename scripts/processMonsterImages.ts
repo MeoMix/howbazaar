@@ -40,12 +40,14 @@ async function processMonsterImages() {
         parsedDayHours
     );
 
-    const monsterEncounterNames = monsterEncounterDays.flatMap(({ groups }) =>
+    const monsterEncounters = monsterEncounterDays.flatMap(({ groups }) =>
         groups.flatMap((group) =>
             group.map((monsterEncounter) =>
-                // TODO: Necessary?
-                removeSpecialCharacters(monsterEncounter.cardName)
-            )
+            ({
+                cardId: monsterEncounter.cardId,
+                // TODO: Is it necessary to call removeSpecialCharacters here? Double check.
+                name: removeSpecialCharacters(monsterEncounter.cardName)
+            }))
         )
     );
 
@@ -54,27 +56,31 @@ async function processMonsterImages() {
     const imageFiles = await fsPromises.readdir(assetPath);
 
     const missingImages: { name: string }[] = [];
-    const foundImages: { name: string; matchedFile: string }[] = [];
+    const foundImages: { isPortrait: boolean; cardId: string; name: string; matchedFile: string }[] = [];
 
-    for (const encounterName of monsterEncounterNames) {
-        const sourceName = nameToFileMap[encounterName] ?? encounterName;
+    for (const monsterEncounter of monsterEncounters) {
+        const sourceName = nameToFileMap[monsterEncounter.name] ?? monsterEncounter.name;
 
         const matchedPortrait = findMatchingFile(imageFiles, sourceName, '_Portrait');
         const matchedPortraitBG = findMatchingFile(imageFiles, sourceName, '_PortraitBG');
 
         if (!matchedPortrait) {
-            missingImages.push({ name: encounterName });
+            missingImages.push({ name: monsterEncounter.name });
             continue;
         }
 
         foundImages.push({
-            name: `${encounterName}_Portrait`,
+            isPortrait: true,
+            cardId: monsterEncounter.cardId,
+            name: monsterEncounter.name,
             matchedFile: matchedPortrait
         });
 
         if (matchedPortraitBG) {
             foundImages.push({
-                name: `${encounterName}_PortraitBG`,
+                isPortrait: false,
+                cardId: monsterEncounter.cardId,
+                name: monsterEncounter.name,
                 matchedFile: matchedPortraitBG
             });
         }
@@ -89,9 +95,17 @@ async function processMonsterImages() {
         throw new Error('Missing required encounter images. Exiting early.');
     }
 
+    const imageCopyDescriptors = foundImages.map(({ isPortrait, cardId, matchedFile }) => ({
+        fileName: isPortrait ? `${cardId}_Portrait` : `${cardId}_PortraitBG`,
+        relativePath: matchedFile
+    }));
+
     const copyAndRenamePath = path.join(inputDirectory, `${assetType}-renamed`);
-    const copiedFiles = await copyAndRenameFiles(foundImages, assetPath, copyAndRenamePath);
+    const copiedFiles = await copyAndRenameFiles(imageCopyDescriptors, assetPath, copyAndRenamePath);
     console.log(`Copied and renamed ${copiedFiles.length} files to ${copyAndRenamePath}`);
+    if (copiedFiles.length !== imageCopyDescriptors.length) {
+        throw new Error('Copied files count mismatch. Exiting early.');
+    }
 
     // It's possible that there's unpaired images when background doesn't exist but foreground does due to incomplete design.
     const { pairs: imagePairs, unmatched } = pairImages(copiedFiles);
@@ -100,14 +114,23 @@ async function processMonsterImages() {
     const mergePath = path.join(inputDirectory, `${assetType}-merged`);
     const mergedFiles = await mergeImages(imagePairs, mergePath);
     console.log(`Merged ${mergedFiles.length} files into ${mergePath}`);
+    if (mergedFiles.length !== imagePairs.length) {
+        throw new Error('Merged files count mismatch. Exiting early.');
+    }
 
     const avifPath = path.join(inputDirectory, `${assetType}-avif`);
     const convertedFiles = await convertImagesToAvif([...mergedFiles, ...unmatched], avifPath);
     console.log(`Converted to AVIF: ${convertedFiles.length} files.`);
+    if (convertedFiles.length !== mergedFiles.length + unmatched.length) {
+        throw new Error('Converted files count mismatch. Exiting early.');
+    }
 
     const outputPath = path.join(outputDirectory, assetType);
     const resizedFiles = await checkAndResizeImages(convertedFiles, outputPath);
     console.log(`Resized ${resizedFiles.length} images into ${outputPath}`);
+    if (resizedFiles.length !== convertedFiles.length) {
+        throw new Error('Resized files count mismatch. Exiting early.');
+    }
 }
 
 processMonsterImages().catch(console.error);
@@ -127,6 +150,7 @@ function findMatchingFile(imageFiles: string[], targetName: string, type: '_Port
         normalized = normalized.replace(/_BG(?=\.[^.]+$)/, '_PortraitBG');
         normalized = normalized.replace(/_char(?=\.[^.]+$)/i, '_Portrait');
 
+        // TODO: is this necessary still?
         normalized = getSanitizedFileName(normalized);
 
         if (normalized === `${targetName}${type}.png`) {
