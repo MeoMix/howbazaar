@@ -9161,7 +9161,7 @@
     "Player": {
       "Attributes": {
         "Prestige": 50,
-        "HealthMax": 550,
+        "HealthMax": 450,
         "Level": 4
       },
       "Hand": {
