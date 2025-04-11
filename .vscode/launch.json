@@ -12,6 +12,16 @@
         "args": ["run", "${relativeFile}"],
         "smartStep": true,
         "console": "integratedTerminal"
+      },
+      {
+        "type": "node",
+        "request": "launch",
+        "name": "Debug current file with tsx",
+        "runtimeExecutable": "npx",
+        "runtimeArgs": ["tsx"],
+        "program": "${file}",
+        "skipFiles": ["<node_internals>/**"],
+        "sourceMaps": true
       }
     ]
   }

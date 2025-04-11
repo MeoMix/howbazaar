@@ -22,7 +22,7 @@ async function validateItemImages() {
     // For each parsed item card
     for (const card of parsedItemCards) {
         const assetName = guidToName[card.id];
-        
+
         if (!assetName) {
             missingImages.push({
                 id: card.id,
@@ -33,7 +33,7 @@ async function validateItemImages() {
         }
 
         // Look for a file that includes this name
-        const matchingFile = imageFiles.find(file => 
+        const matchingFile = imageFiles.find(file =>
             file.toLowerCase().includes(assetName.toLowerCase())
         );
 

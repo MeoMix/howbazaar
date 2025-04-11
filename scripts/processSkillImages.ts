@@ -1,80 +1,92 @@
-import * as fs from 'fs';
-import * as path from 'path';
-import parsedSkillCards from "../src/lib/db/patches/latest/parsedSkillCards";
-import { removeSpecialCharacters } from './utils/stringUtils';
-import { copyAndRenameFiles } from './utils/fileUtils';
-import { checkAndResizeImages, convertImagesToAvif } from './utils/imageUtils';
+import fsPromises from 'fs/promises';
+import path from 'path';
+
+// Example data imports. Replace or rename as needed:
+import parsedSkillCards from '../src/lib/db/patches/latest/parsedSkillCards.ts';
+import { copyAndRenameFiles } from './utils/fileUtils.ts';
+import { convertImagesToAvif, checkAndResizeImages } from './utils/imageUtils.ts';
+import { removeSpecialCharacters } from './utils/stringUtils.ts';
 
 const inputDirectory = './scripts/images/';
-const assetType = 'skills';
-const assetPath = path.join(inputDirectory, assetType);
-const outputDirectory = './static/images';
+const assetType = 'skills'; // or 'monsters', etc.
+const assetPath = `${inputDirectory}${assetType}/`;
+const renamedAssetPath = `${inputDirectory}${assetType}-renamed/`;
+const outputDirectory = './static/images/';
 
-// This function attempts to find the exact matching file (by artKey) in the provided list of files.
 function findMatchingFile(artKey: string, files: string[]): string | undefined {
-  // artKey might already be a base name without extension or might have an extension
-  // We typically match it as the exact (base) filename if possible
-  const baseArtKey = path.parse(artKey).name.toLowerCase();
+    // artKey might already be a base name without extension or might have an extension
+    // We typically match it as the exact (base) filename if possible
+    const baseArtKey = path.parse(artKey).name.toLowerCase();
 
-  // We find a file in `files` whose base name (lowercased) matches baseArtKey
-  return files.find(f => path.parse(f).name.toLowerCase() === baseArtKey);
+    // We find a file in `files` whose base name (lowercased) matches baseArtKey
+    return files.find(f => path.parse(f).name.toLowerCase() === baseArtKey);
 }
 
 async function processSkillImages() {
-  console.log(`\nStarting skill image processing...`);
-
-  // 1) Gather skill data, filtering out anything with no artKey
-  const skillEntries = parsedSkillCards
-    .filter(card => !!card.artKey)
-    .map(card => ({
-      artKey: card.artKey,
-      name: card.name
+    // 1) Gather your "entries" from data. In this example, let's assume each skill card has an `artKey` and a `name`.
+    //    E.g.:
+    const skillEntries = parsedSkillCards.map(card => ({
+        artKey: card.artKey,
+        name: card.name
     }));
 
-  // 2) Read the actual skill image files in that folder
-  let imageFiles = await fs.promises.readdir(assetPath);
+    // 2) Read the actual skill image files in that folder
+    const imageFiles = await fsPromises.readdir(assetPath);
 
-  // 3) Find matches / track missing
-  const missingImages: { artKey: string; name: string }[] = [];
-  const foundImages: { artKey: string; name: string; matchedFile: string }[] = [];
+    // 3) Find matches / track missing
+    const missingImages: { artKey: string; name: string }[] = [];
+    const foundImages: { artKey: string; name: string; matchedFile: string }[] = [];
 
-  for (const entry of skillEntries) {
-    const matched = findMatchingFile(entry.artKey, imageFiles);
+    for (const entry of skillEntries) {
+        const matched = findMatchingFile(entry.artKey, imageFiles);
 
-    if (!matched) {
-      missingImages.push({
-        artKey: entry.artKey,
-        name: entry.name
-      });
-    } else {
-      foundImages.push({
-        artKey: entry.artKey,
-        name: entry.name,
-        matchedFile: matched
-      });
+        if (!matched) {
+            missingImages.push({
+                artKey: entry.artKey,
+                name: entry.name
+            });
+        } else {
+            foundImages.push({
+                artKey: entry.artKey,
+                name: entry.name,
+                matchedFile: matched
+            });
+        }
     }
-  }
 
-  // Log how many were found / missing
-  console.log(`Found ${foundImages.length} matching images.`);
-  console.log(`Missing ${missingImages.length} images.`);
+    // 4) Log how many were found / missing
+    console.log(`Found ${foundImages.length} matching images.`);
+    console.log(`Missing ${missingImages.length} images.`);
 
-  if (missingImages.length > 0) {
-    console.log('Missing images:');
-    console.table(missingImages);
-    throw new Error('Missing required skill images');
-  }
+    if (missingImages.length > 0) {
+        console.log('Missing images:');
+        console.table(missingImages);
+        throw new Error('Missing required skill images. Exiting early.');
+    }
 
-  const toRename = foundImages.map(item => ({
-    name: removeSpecialCharacters(item.name),
-    matchedFile: item.matchedFile
-  }));
+    const toRename = foundImages.map(item => {
+        // TODO: Either it's OK to call this here, but copyAndRenameFile shouldn't, or don't call it here.
+        const sanitized = removeSpecialCharacters(item.name);
+        return {
+            name: sanitized,
+            matchedFile: item.matchedFile
+        };
+    });
 
-  const copiedFiles = await copyAndRenameFiles(toRename, assetPath, `${inputDirectory}/${assetType}-renamed`);
-  const convertedFiles = await convertImagesToAvif(copiedFiles, `${inputDirectory}/${assetType}-avif`);
-  const resizedFiles = await checkAndResizeImages(convertedFiles, `${outputDirectory}/${assetType}`);
+    const copiedFiles = await copyAndRenameFiles(toRename, assetPath, renamedAssetPath);
+    console.log(`Copied and renamed ${copiedFiles.length} files to ${renamedAssetPath}`);
 
-  console.log(`\nSkill image processing complete. Copied: ${copiedFiles.length}, converted: ${convertedFiles.length}, resized: ${resizedFiles.length}`);
+    const avifOutputPath = path.join(inputDirectory, `${assetType}-avif`);
+    const convertedFiles = await convertImagesToAvif(copiedFiles, avifOutputPath);
+    console.log(`Converted to AVIF: ${convertedFiles.length} files.`);
+
+    const finalOutputPath = path.join(outputDirectory, assetType);
+    const resizedFiles = await checkAndResizeImages(convertedFiles, finalOutputPath);
+    console.log(`Resized ${resizedFiles.length} images into ${finalOutputPath}`);
 }
 
-processSkillImages().catch(console.error);
+// Run it
+processSkillImages().catch(err => {
+    console.error('Error processing skill images:', err);
+    process.exit(1); // or handle error as desired
+});

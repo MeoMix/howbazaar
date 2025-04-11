@@ -1,8 +1,8 @@
-import fs from 'fs';
 import fsPromises from 'fs/promises';
 import path from 'path';
 import sharp from 'sharp';
 
+// TODO: It would be nice to always have logging enabled but to find a way to make it less verbose.
 // Logging configuration
 const LOGGING_ENABLED = false;
 
@@ -23,7 +23,7 @@ export async function convertImagesToAvif(input: string | string[], outputFolder
         await fsPromises.mkdir(outputFolder, { recursive: true });
 
         // Handle both string (folder) and string[] (files) input
-        const files = typeof input === 'string' 
+        const files = typeof input === 'string'
             ? await fsPromises.readdir(input)
             : input;
 
@@ -61,7 +61,7 @@ export async function checkAndResizeImages(input: string | string[], outputFolde
         await fsPromises.mkdir(outputFolder, { recursive: true });
 
         // Handle both string (folder) and string[] (files) input
-        const files = typeof input === 'string' 
+        const files = typeof input === 'string'
             ? (await fsPromises.readdir(input)).filter(async (file) => {
                 const filePath = path.join(input, file);
                 return (await fsPromises.stat(filePath)).isFile();
@@ -115,3 +115,56 @@ export async function checkAndResizeImages(input: string | string[], outputFolde
         return [];
     }
 }
+
+export type ImagePair = {
+    baseName: string;
+     // TODO: Maybe these aren't optional?
+    portrait?: string;
+    background?: string;
+}
+
+export async function mergeImages(pairs: ImagePair[], outputFolder: string): Promise<string[]> {
+    try {
+        await fsPromises.mkdir(outputFolder, { recursive: true });
+
+        const mergedFiles: string[] = [];
+
+        const mergePromises = pairs.map(async ({ baseName, portrait, background }) => {
+            const outputPath = path.join(outputFolder, `${baseName}.png`);
+
+            try {
+                if (portrait && background) {
+                    const bgImage = sharp(background);
+                    const { width, height } = await bgImage.metadata();
+
+                    await bgImage
+                        .composite([{ input: portrait, gravity: 'center' }])
+                        .resize(width, height)
+                        .toFile(outputPath);
+
+                    log(`Merged ${path.basename(portrait)} + ${path.basename(background)} -> ${baseName}.png`);
+                } else {
+                    const singleFile = portrait || background;
+                    if (!singleFile) {
+                        log(`No source image for ${baseName}, skipping.`);
+                        return;
+                    }
+
+                    await sharp(singleFile).toFile(outputPath);
+                    log(`Copied ${path.basename(singleFile)} -> ${baseName}.png`);
+                }
+
+                mergedFiles.push(outputPath);
+            } catch (err) {
+                log(`Error processing ${baseName}:`, err);
+            }
+        });
+
+        await Promise.all(mergePromises);
+        return mergedFiles;
+    } catch (err) {
+        log('Error creating output folder or merging images:', err);
+        return [];
+    }
+}
+

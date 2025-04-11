@@ -1,0 +1,15 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    // I tried setting this to NodeNext, but it conflicted with importing types via $lib
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "target": "ES2022",
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": true,
+    "noEmit": true
+  },
+  "include": [
+    "**/*"
+  ]
+}
