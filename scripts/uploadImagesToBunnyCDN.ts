@@ -46,7 +46,7 @@ const purgeCache = async (relativePath: string) => {
 };
 
 // Function to upload a file
-const uploadFile = async (filePath: string) => {
+const uploadFile = async (filePath: string, skipCachePurge: boolean = false) => {
     try {
         const relativePath = relative(IMAGES_DIR, filePath);
         const storagePath = `${STORAGE_URL}/${relativePath}`.replace(/\\/g, '/');
@@ -63,7 +63,9 @@ const uploadFile = async (filePath: string) => {
 
         console.log(`✅ Uploaded: ${relativePath} - Status: ${response.status}`);
 
-        await purgeCache(relativePath); // Add this line
+        if (!skipCachePurge) {
+            await purgeCache(relativePath);
+        }
     } catch (error: any) {
         console.error(`❌ Failed to upload ${filePath}:`, error.response?.data || error.message);
     }
@@ -92,8 +94,9 @@ function getChangedImageFiles(): string[] {
 // Upload specific files
 (async () => {
     try {
-        // Check for --changed flag
+        // Check for flags
         const useChangedFiles = process.argv.includes('--changed');
+        const skipCachePurge = process.argv.includes('--no-purge');
         let fileNames: string[];
 
         if (useChangedFiles) {
@@ -130,7 +133,7 @@ function getChangedImageFiles(): string[] {
 
         // Upload the filtered files
         for (const file of filesToUpload) {
-            await uploadFile(file);
+            await uploadFile(file, skipCachePurge);
         }
 
         console.log("🎉 All specified files uploaded!");
