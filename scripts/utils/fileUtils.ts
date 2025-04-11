@@ -1,7 +1,6 @@
 import * as fs from 'fs';
 import path from 'path';
 import { createHash } from 'crypto';
-import { removeSpecialCharacters } from './stringUtils';
 
 export async function deleteFiles(files: string[], assetPath: string): Promise<void> {
     // Create an array of promises for deleting unused files

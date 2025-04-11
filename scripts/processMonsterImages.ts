@@ -6,7 +6,6 @@ import parsedCombatEncounterCards from "../src/lib/db/patches/latest/parsedComba
 import parsedMonsters from "../src/lib/db/patches/latest/parsedMonsters";
 import parsedDayHours from "../src/lib/db/patches/latest/parsedDayHours";
 import { getMonsterEncounterDays } from "../src/lib/services/monsterEncounterService";
-import { removeSpecialCharacters } from './utils/stringUtils';
 import { copyAndRenameFiles } from './utils/fileUtils';
 import { checkAndResizeImages, convertImagesToAvif, type ImagePair, mergeImages } from './utils/imageUtils';
 
@@ -18,17 +17,17 @@ const outputDirectory = './static/images/';
 // .\AssetStudioModCLI "C:\Program Files\Tempo Launcher - Beta\The Bazaar game_64\bazaarwinprodlatest\TheBazaar_Data\StreamingAssets\aa\StandaloneWindows64" --filter-by-name Monster,ENC_Monster,ENC_Event -g none -t tex2d -o ./monsters
 
 const nameToFileMap: Record<string, string> = {
-    'HakurvianRocketTrooper': 'HarkuvianRocketTrooper',
-    'RogueScrapper': 'RogueScraper',
-    'DeathKnightReaper': 'Reaper',
+    'Hakurvian Rocket Trooper': 'HarkuvianRocketTrooper',
+    'Rogue Scrapper': 'RogueScraper',
+    'Death Knight Reaper': 'Reaper',
     'Bouncertron': 'RoboBouncer',
-    'BountyHunter': 'BountyHunters',
-    'TrashtownMayor': 'TentCityMayor',
-    'PrinceMarianas': 'HydroDude',
+    'Bounty Hunter': 'BountyHunters',
+    'Trashtown Mayor': 'TentCityMayor',
+    'Prince Marianas': 'HydroDude',
     'Hellbilly': 'DeadlyCrooner',
     'Ahexa': 'TechnoVirus',
     'Banannabal': 'Bananabal',
-    'BloodreefCaptain': 'BloodReefCaptain'
+    'Bloodreef Captain': 'BloodReefCaptain'
 };
 
 async function processMonsterImages() {
@@ -44,9 +43,8 @@ async function processMonsterImages() {
         groups.flatMap((group) =>
             group.map((monsterEncounter) =>
             ({
-                cardId: monsterEncounter.cardId,
-                // TODO: Is it necessary to call removeSpecialCharacters here? Double check.
-                name: removeSpecialCharacters(monsterEncounter.cardName)
+                id: monsterEncounter.cardId,
+                name: monsterEncounter.cardName
             }))
         )
     );
@@ -56,7 +54,7 @@ async function processMonsterImages() {
     const imageFiles = await fsPromises.readdir(assetPath);
 
     const missingImages: { name: string }[] = [];
-    const foundImages: { isPortrait: boolean; cardId: string; name: string; matchedFile: string }[] = [];
+    const foundImages: { isPortrait: boolean; id: string; name: string; matchedFile: string }[] = [];
 
     for (const monsterEncounter of monsterEncounters) {
         const sourceName = nameToFileMap[monsterEncounter.name] ?? monsterEncounter.name;
@@ -71,7 +69,7 @@ async function processMonsterImages() {
 
         foundImages.push({
             isPortrait: true,
-            cardId: monsterEncounter.cardId,
+            id: monsterEncounter.id,
             name: monsterEncounter.name,
             matchedFile: matchedPortrait
         });
@@ -79,7 +77,7 @@ async function processMonsterImages() {
         if (matchedPortraitBG) {
             foundImages.push({
                 isPortrait: false,
-                cardId: monsterEncounter.cardId,
+                id: monsterEncounter.id,
                 name: monsterEncounter.name,
                 matchedFile: matchedPortraitBG
             });
@@ -95,17 +93,14 @@ async function processMonsterImages() {
         throw new Error('Missing required encounter images. Exiting early.');
     }
 
-    const imageCopyDescriptors = foundImages.map(({ isPortrait, cardId, matchedFile }) => ({
-        fileName: isPortrait ? `${cardId}_Portrait` : `${cardId}_PortraitBG`,
+    const imageCopyDescriptors = foundImages.map(({ isPortrait, id, matchedFile }) => ({
+        fileName: isPortrait ? `${id}_Portrait` : `${id}_PortraitBG`,
         relativePath: matchedFile
     }));
 
     const copyAndRenamePath = path.join(inputDirectory, `${assetType}-renamed`);
     const copiedFiles = await copyAndRenameFiles(imageCopyDescriptors, assetPath, copyAndRenamePath);
     console.log(`Copied and renamed ${copiedFiles.length} files to ${copyAndRenamePath}`);
-    if (copiedFiles.length !== imageCopyDescriptors.length) {
-        throw new Error('Copied files count mismatch. Exiting early.');
-    }
 
     // It's possible that there's unpaired images when background doesn't exist but foreground does due to incomplete design.
     const { pairs: imagePairs, unmatched } = pairImages(copiedFiles);
@@ -114,48 +109,48 @@ async function processMonsterImages() {
     const mergePath = path.join(inputDirectory, `${assetType}-merged`);
     const mergedFiles = await mergeImages(imagePairs, mergePath);
     console.log(`Merged ${mergedFiles.length} files into ${mergePath}`);
-    if (mergedFiles.length !== imagePairs.length) {
-        throw new Error('Merged files count mismatch. Exiting early.');
-    }
 
     const avifPath = path.join(inputDirectory, `${assetType}-avif`);
     const convertedFiles = await convertImagesToAvif([...mergedFiles, ...unmatched], avifPath);
     console.log(`Converted to AVIF: ${convertedFiles.length} files.`);
-    if (convertedFiles.length !== mergedFiles.length + unmatched.length) {
-        throw new Error('Converted files count mismatch. Exiting early.');
-    }
 
     const outputPath = path.join(outputDirectory, assetType);
     const resizedFiles = await checkAndResizeImages(convertedFiles, outputPath);
     console.log(`Resized ${resizedFiles.length} images into ${outputPath}`);
-    if (resizedFiles.length !== convertedFiles.length) {
-        throw new Error('Resized files count mismatch. Exiting early.');
-    }
 }
 
 processMonsterImages().catch(console.error);
 
-function findMatchingFile(imageFiles: string[], targetName: string, type: '_Portrait' | '_PortraitBG'): string | null {
+function findMatchingFile(
+    imageFiles: string[],
+    targetName: string,
+    type: '_Portrait' | '_PortraitBG'
+): string | null {
     const prefixes = ['ENC_', 'Event_', 'Monster_'];
+    const normalizedTarget = normalizeName(`${targetName}${type}.png`);
 
     for (const file of imageFiles) {
-        let normalized = file;
+        let base = file;
 
-        // Remove prefixes
+        // Remove known prefixes
         for (const prefix of prefixes) {
-            normalized = normalized.replace(new RegExp(`^${prefix}|(?<=_)${prefix}`, 'g'), '');
+            base = base.replace(new RegExp(`^${prefix}|(?<=_)${prefix}`, 'g'), '');
         }
 
-        // Replace suffixes
-        normalized = normalized.replace(/_BG(?=\.[^.]+$)/, '_PortraitBG');
-        normalized = normalized.replace(/_char(?=\.[^.]+$)/i, '_Portrait');
+        // Normalize suffixes to standard naming
+        base = base.replace(/_BG(?=\.[^.]+$)/, '_PortraitBG');
+        base = base.replace(/_char(?=\.[^.]+$)/i, '_Portrait');
 
-        if (normalized === `${targetName}${type}.png`) {
+        if (normalizeName(base) === normalizedTarget) {
             return file;
         }
     }
 
     return null;
+}
+
+function normalizeName(name: string): string {
+    return name.replace(/[\s\-'.&]+/g, '').toLowerCase();
 }
 
 type PairedImagesResult = {

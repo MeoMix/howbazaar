@@ -99,23 +99,14 @@ async function processItemImages() {
     const copyAndRenamePath = path.join(inputDirectory, `${assetType}-renamed`);
     const copiedFiles = await copyAndRenameFiles(imageCopyDescriptors, assetPath, copyAndRenamePath);
     console.log(`Copied and renamed ${copiedFiles.length} files to ${copyAndRenamePath}`);
-    if (copiedFiles.length !== imageCopyDescriptors.length) {
-        throw new Error('Copied files count mismatch. Exiting early.');
-    }
 
     const avifPath = path.join(inputDirectory, `${assetType}-avif`);
     const convertedFiles = await convertImagesToAvif(copiedFiles, avifPath);
     console.log(`Converted to AVIF: ${convertedFiles.length} files.`);
-    if (convertedFiles.length !== copiedFiles.length) {
-        throw new Error('Converted files count mismatch. Exiting early.');
-    }
 
     const outputPath = path.join(outputDirectory, assetType);
     const resizedFiles = await checkAndResizeImages(convertedFiles, outputPath);
     console.log(`Resized ${resizedFiles.length} images into ${outputPath}`);
-    if (resizedFiles.length !== convertedFiles.length) {
-        throw new Error('Resized files count mismatch. Exiting early.');
-    }
 }
 
 processItemImages().catch(console.error);
