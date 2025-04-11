@@ -6,7 +6,7 @@ import parsedCombatEncounterCards from "../src/lib/db/patches/latest/parsedComba
 import parsedMonsters from "../src/lib/db/patches/latest/parsedMonsters";
 import parsedDayHours from "../src/lib/db/patches/latest/parsedDayHours";
 import { getMonsterEncounterDays } from "../src/lib/services/monsterEncounterService";
-import { getSanitizedFileName, removeSpecialCharacters } from './utils/stringUtils';
+import { removeSpecialCharacters } from './utils/stringUtils';
 import { copyAndRenameFiles } from './utils/fileUtils';
 import { checkAndResizeImages, convertImagesToAvif, type ImagePair, mergeImages } from './utils/imageUtils';
 
@@ -149,9 +149,6 @@ function findMatchingFile(imageFiles: string[], targetName: string, type: '_Port
         // Replace suffixes
         normalized = normalized.replace(/_BG(?=\.[^.]+$)/, '_PortraitBG');
         normalized = normalized.replace(/_char(?=\.[^.]+$)/i, '_Portrait');
-
-        // TODO: is this necessary still?
-        normalized = getSanitizedFileName(normalized);
 
         if (normalized === `${targetName}${type}.png`) {
             return file;
