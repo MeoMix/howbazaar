@@ -15,44 +15,20 @@ const assetType = 'monsters';
 const assetPath = `${inputDirectory}${assetType}/`;
 const outputDirectory = './static/images/';
 
-// NOTES:
-// Got the majority of encounter images by searching for _Portrait and exporting all those that started with Monster and ended in Portrait
-// This resulted in 11 missing:
-// 'EnclaveWeeper', -- didn't have Monster prefix
-// 'LoanShark', -- didn't have Monster prefix
-// 'Retiree', -- only one copy exists (with the BG suffix)
-// 'Banannabal', -- suffixed with Char, prefixed with ENC (ENC_Monster_Banannabal_Char)
-// 'Pyro', -- suffixed with Char, prefixed with ENC (ENC_Monster_Pyro_Char)
-// 'HauntedKimono', suffixed with Char, prefixed with ENC (ENC_Monster_HauntedKimono_Char)
-// 'SergeantSuds', -- only one copy exists (with the BG suffix)
-// 'ChillyCharles', -- only one copy exists (with the BG suffix)
-// 'FerrosKhan', -- prefixed with ENC
-// 'EnclaveRevenant', -- prefixed with Event
-// 'Robo-Bouncer' -- only one copy exists (with the BG suffix), named Robobouncer
-// 'Bounty Hunter' -- prefixed with ENC
-// 'Mimic' -- prefixed with ENC
+// .\AssetStudioModCLI "C:\Program Files\Tempo Launcher - Beta\The Bazaar game_64\bazaarwinprodlatest\TheBazaar_Data\StreamingAssets\aa\StandaloneWindows64" --filter-by-name Monster,ENC_Monster,ENC_Event -g none -t tex2d -o ./monsters
 
 const nameToFileMap: Record<string, string> = {
-    'DireInglet': 'DireIngle',
     'HakurvianRocketTrooper': 'HarkuvianRocketTrooper',
-    'LordoftheWastes': 'LordOfTheWastes',
-    'BurninatorBot': 'IncinerationBot',
-    'ShockTrooper': 'Shocktrooper',
-    'ScoutTrooper': 'Scouttrooper',
-    'PropertyBaron': 'PropertyMogul',
-    'KyverDrone': 'KyverNest',
-    'TrashGolem': 'TrashBandit',
     'RogueScrapper': 'RogueScraper',
-    'TempestFlamedancer': 'TempestBravo',
-    'Thug': 'Mugger',
     'DeathKnightReaper': 'Reaper',
-    'DrVortex': 'MadScientist',
     'Bouncertron': 'RoboBouncer',
     'BountyHunter': 'BountyHunters',
     'TrashtownMayor': 'TentCityMayor',
-    'PrinceMarianas': 'Hydrodude',
+    'PrinceMarianas': 'HydroDude',
     'Hellbilly': 'DeadlyCrooner',
-    'Ahexa': 'TechnoVirus'
+    'Ahexa': 'TechnoVirus',
+    'Banannabal': 'Bananabal',
+    'BloodreefCaptain': 'BloodReefCaptain'
 };
 
 async function processMonsterImages() {
@@ -67,51 +43,43 @@ async function processMonsterImages() {
     const monsterEncounterNames = monsterEncounterDays.flatMap(({ groups }) =>
         groups.flatMap((group) =>
             group.map((monsterEncounter) =>
+                // TODO: Necessary?
                 removeSpecialCharacters(monsterEncounter.cardName)
             )
         )
     );
 
-    await cleanFileNames(assetPath);
-
     console.log('Scanning for monster images...');
 
-    // 1) Read the actual image files in that folder
     const imageFiles = await fsPromises.readdir(assetPath);
 
-    // 2) Find matches / track missing
     const missingImages: { name: string }[] = [];
     const foundImages: { name: string; matchedFile: string }[] = [];
 
     for (const encounterName of monsterEncounterNames) {
         const sourceName = nameToFileMap[encounterName] ?? encounterName;
-        const portraitFile = `${sourceName}_Portrait.png`;
-        const portraitBGFile = `${sourceName}_PortraitBG.png`;
 
-        const hasPortrait = imageFiles.includes(portraitFile);
-        const hasPortraitBG = imageFiles.includes(portraitBGFile);
+        const matchedPortrait = findMatchingFile(imageFiles, sourceName, '_Portrait');
+        const matchedPortraitBG = findMatchingFile(imageFiles, sourceName, '_PortraitBG');
 
-        if (!hasPortrait && !hasPortraitBG) {
+        if (!matchedPortrait) {
             missingImages.push({ name: encounterName });
             continue;
         }
 
-        if (hasPortrait) {
-            foundImages.push({
-                name: `${encounterName}_Portrait`,
-                matchedFile: portraitFile
-            });
-        }
+        foundImages.push({
+            name: `${encounterName}_Portrait`,
+            matchedFile: matchedPortrait
+        });
 
-        if (hasPortraitBG) {
+        if (matchedPortraitBG) {
             foundImages.push({
                 name: `${encounterName}_PortraitBG`,
-                matchedFile: portraitBGFile
+                matchedFile: matchedPortraitBG
             });
         }
     }
 
-    // 3) Log how many were found / missing
     console.log(`Found ${foundImages.length} matching images.`);
     console.log(`Missing ${missingImages.length} images.`);
 
@@ -121,33 +89,53 @@ async function processMonsterImages() {
         throw new Error('Missing required encounter images. Exiting early.');
     }
 
-    // 4) Rename and copy files
-    const toRename = foundImages.map(item => ({
-        name: item.name,
-        matchedFile: item.matchedFile
-    }));
+    const copyAndRenamePath = path.join(inputDirectory, `${assetType}-renamed`);
+    const copiedFiles = await copyAndRenameFiles(foundImages, assetPath, copyAndRenamePath);
+    console.log(`Copied and renamed ${copiedFiles.length} files to ${copyAndRenamePath}`);
 
-    const renamedAssetPath = `${inputDirectory}${assetType}-renamed/`;
-    const copiedFiles = await copyAndRenameFiles(toRename, assetPath, renamedAssetPath);
-
-    console.log(`Copied and renamed ${copiedFiles.length} files to ${renamedAssetPath}`);
-
-    console.log('Merging, converting, and resizing images...');
+    // It's possible that there's unpaired images when background doesn't exist but foreground does due to incomplete design.
     const { pairs: imagePairs, unmatched } = pairImages(copiedFiles);
-    const mergedAssetPath = path.join(inputDirectory, `${assetType}-merged`);
-    const mergedFiles = await mergeImages(imagePairs, mergedAssetPath);
-    console.log(`Merged ${mergedFiles.length} files into ${mergedAssetPath}`);
+    console.log(`Found ${imagePairs.length} pairs and ${unmatched.length} unmatched files.`);
 
-    // It's possible that there's an unpaired image due to the image being in an unfinished design state.
-    const convertedFiles = await convertImagesToAvif([...mergedFiles, ...unmatched], `${inputDirectory}/${assetType}-avif`);
+    const mergePath = path.join(inputDirectory, `${assetType}-merged`);
+    const mergedFiles = await mergeImages(imagePairs, mergePath);
+    console.log(`Merged ${mergedFiles.length} files into ${mergePath}`);
 
-    const finalOutputPath = path.join(outputDirectory, assetType);
-    const resizedFiles = await checkAndResizeImages(convertedFiles, finalOutputPath);
+    const avifPath = path.join(inputDirectory, `${assetType}-avif`);
+    const convertedFiles = await convertImagesToAvif([...mergedFiles, ...unmatched], avifPath);
+    console.log(`Converted to AVIF: ${convertedFiles.length} files.`);
 
-    console.log(`Resized ${resizedFiles.length} images into ${finalOutputPath}`);
+    const outputPath = path.join(outputDirectory, assetType);
+    const resizedFiles = await checkAndResizeImages(convertedFiles, outputPath);
+    console.log(`Resized ${resizedFiles.length} images into ${outputPath}`);
 }
 
 processMonsterImages().catch(console.error);
+
+function findMatchingFile(imageFiles: string[], targetName: string, type: '_Portrait' | '_PortraitBG'): string | null {
+    const prefixes = ['ENC_', 'Event_', 'Monster_'];
+
+    for (const file of imageFiles) {
+        let normalized = file;
+
+        // Remove prefixes
+        for (const prefix of prefixes) {
+            normalized = normalized.replace(new RegExp(`^${prefix}|(?<=_)${prefix}`, 'g'), '');
+        }
+
+        // Replace suffixes
+        normalized = normalized.replace(/_BG(?=\.[^.]+$)/, '_PortraitBG');
+        normalized = normalized.replace(/_char(?=\.[^.]+$)/i, '_Portrait');
+
+        normalized = getSanitizedFileName(normalized);
+
+        if (normalized === `${targetName}${type}.png`) {
+            return file;
+        }
+    }
+
+    return null;
+}
 
 type PairedImagesResult = {
     pairs: ImagePair[];
@@ -175,7 +163,7 @@ export function pairImages(files: string[]): PairedImagesResult {
         }
 
         if (type === '_Portrait') {
-            pairMap[baseName].portrait = fullPath;
+            pairMap[baseName].foreground = fullPath;
         } else if (type === '_PortraitBG') {
             pairMap[baseName].background = fullPath;
         }
@@ -183,38 +171,4 @@ export function pairImages(files: string[]): PairedImagesResult {
 
     const pairs = Object.values(pairMap) as ImagePair[];
     return { pairs, unmatched };
-}
-
-async function cleanFileNames(folderPath: string) {
-    const prefixes = ["ENC_", "Event_", "Monster_"];
-    const suffixToReplace = "_Char";
-    const replacementSuffix = "_Portrait";
-
-    const files = await fsPromises.readdir(folderPath);
-
-    for (const file of files) {
-        const originalFilePath = path.join(folderPath, file);
-        const stats = await fsPromises.stat(originalFilePath);
-        if (!stats.isFile()) continue;
-
-        let newFileName = file;
-        for (const prefix of prefixes) {
-            newFileName = newFileName.replace(new RegExp(`^${prefix}|(?<=_)${prefix}`, 'g'), '');
-        }
-
-        const extension = path.extname(newFileName);
-        if (new RegExp(`${suffixToReplace}${extension}$`, 'i').test(newFileName)) {
-            newFileName = newFileName.slice(0, -suffixToReplace.length - extension.length) + replacementSuffix + extension;
-        }
-
-        newFileName = newFileName.replace(/_BG(?=\.[^.]+$)/, '_PortraitBG');
-        newFileName = getSanitizedFileName(newFileName);
-
-        const newFilePath = path.join(folderPath, newFileName);
-
-        if (originalFilePath !== newFilePath) {
-            await fsPromises.rename(originalFilePath, newFilePath);
-            console.log(`Renamed: ${file} → ${newFileName}`);
-        }
-    }
 }

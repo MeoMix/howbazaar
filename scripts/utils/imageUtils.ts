@@ -118,8 +118,7 @@ export async function checkAndResizeImages(input: string | string[], outputFolde
 
 export type ImagePair = {
     baseName: string;
-     // TODO: Maybe these aren't optional?
-    portrait?: string;
+    foreground: string;
     background?: string;
 }
 
@@ -129,29 +128,23 @@ export async function mergeImages(pairs: ImagePair[], outputFolder: string): Pro
 
         const mergedFiles: string[] = [];
 
-        const mergePromises = pairs.map(async ({ baseName, portrait, background }) => {
+        const mergePromises = pairs.map(async ({ baseName, foreground, background }) => {
             const outputPath = path.join(outputFolder, `${baseName}.png`);
 
             try {
-                if (portrait && background) {
+                if (background) {
                     const bgImage = sharp(background);
                     const { width, height } = await bgImage.metadata();
 
                     await bgImage
-                        .composite([{ input: portrait, gravity: 'center' }])
+                        .composite([{ input: foreground, gravity: 'center' }])
                         .resize(width, height)
                         .toFile(outputPath);
 
-                    log(`Merged ${path.basename(portrait)} + ${path.basename(background)} -> ${baseName}.png`);
+                    log(`Merged ${path.basename(foreground)} + ${path.basename(background)} -> ${baseName}.png`);
                 } else {
-                    const singleFile = portrait || background;
-                    if (!singleFile) {
-                        log(`No source image for ${baseName}, skipping.`);
-                        return;
-                    }
-
-                    await sharp(singleFile).toFile(outputPath);
-                    log(`Copied ${path.basename(singleFile)} -> ${baseName}.png`);
+                    await sharp(foreground).toFile(outputPath);
+                    log(`Copied ${path.basename(foreground)} -> ${baseName}.png`);
                 }
 
                 mergedFiles.push(outputPath);

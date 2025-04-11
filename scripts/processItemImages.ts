@@ -7,8 +7,6 @@ import parsedItemCards from "../src/lib/db/patches/latest/parsedItemCards";
 import { removeSpecialCharacters } from './utils/stringUtils';
 import { checkAndResizeImages, convertImagesToAvif } from './utils/imageUtils';
 
-// Command:
-// Needs to be whole folder - not all assets found in defaultlocalgroup_assets_all
 // .\AssetStudioModCLI "C:\Program Files\Tempo Launcher - Beta\The Bazaar game_64\bazaarwinprodlatest\TheBazaar_Data\StreamingAssets\aa\StandaloneWindows64" --filter-by-name CF_,PNG_,Ectoplasm,Seaweed,Octopus,Snowflake -g none --image-format jpg -t tex2d -o ./items
 // .\AssetStudioModCLI "C:\Program Files\Tempo Launcher - Beta\The Bazaar game_64\bazaarwinprodlatest\TheBazaar_Data\StreamingAssets\aa\StandaloneWindows64" --filter-by-name _CardData -g none -t monoBehaviour -o ./carddata
 
@@ -41,6 +39,75 @@ const RENAME_RULES: { [key: string]: string } = {
 
 // Track which rename rules are used
 const usedRenameRules = new Set<string>();
+
+async function processItemImages() {
+    await deleteKnownUselessFiles();
+
+    console.log('Duplicating files');
+    await duplicateFiles();
+
+    const guidMapPath = './scripts/cardGuidToName.json';
+    const guidMapContent = await fs.promises.readFile(guidMapPath, 'utf-8');
+    const guidToName = JSON.parse(guidMapContent) as CardGuidMap;
+
+    const imageFiles = await fs.promises.readdir(assetPath);
+
+    const missingImages: { id: string; name: string; expectedFile: string }[] = [];
+    const foundImages: { id: string; name: string; matchedFile: string }[] = [];
+
+    for (const card of parsedItemCards) {
+        const assetName = guidToName[card.id];
+
+        if (!assetName) {
+            missingImages.push({
+                id: card.id,
+                name: card.name,
+                expectedFile: 'Unknown - No GUID mapping found'
+            });
+            continue;
+        }
+
+        // Look for a file that includes this name
+        const matchingFile = findMatchingFile(assetName, imageFiles);
+
+        if (!matchingFile) {
+            missingImages.push({
+                id: card.id,
+                name: card.name,
+                expectedFile: assetName
+            });
+        } else {
+            foundImages.push({
+                id: card.id,
+                name: card.name,
+                matchedFile: matchingFile
+            });
+        }
+    }
+
+    console.log(`Found ${foundImages.length} matching images`);
+    console.log(`Missing ${missingImages.length} images`);
+
+    if (missingImages.length > 0) {
+        console.log('Missing images:');
+        console.table(missingImages);
+        throw new Error('Missing required images');
+    }
+
+    const copyAndRenamePath = path.join(inputDirectory, `${assetType}-renamed`);
+    const copiedFiles = await copyAndRenameFiles(foundImages, assetPath, copyAndRenamePath);
+    console.log(`Copied and renamed ${copiedFiles.length} files to ${copyAndRenamePath}`);
+
+    const avifPath = path.join(inputDirectory, `${assetType}-avif`);
+    const convertedFiles = await convertImagesToAvif(copiedFiles, avifPath);
+    console.log(`Converted to AVIF: ${convertedFiles.length} files.`);
+
+    const outputPath = path.join(outputDirectory, assetType);
+    const resizedFiles = await checkAndResizeImages(convertedFiles, outputPath);
+    console.log(`Resized ${resizedFiles.length} images into ${outputPath}`);
+}
+
+processItemImages().catch(console.error);
 
 function normalizeName(name: string): string {
     return name
@@ -202,85 +269,3 @@ async function duplicateFiles() {
         }
     }
 }
-
-async function processItemImages() {
-    await deleteKnownUselessFiles();
-
-    console.log('Duplicating files');
-    await duplicateFiles();
-
-    // Load the GUID to name mapping
-    const guidMapPath = './scripts/cardGuidToName.json';
-    const guidMapContent = await fs.promises.readFile(guidMapPath, 'utf-8');
-    const guidToName = JSON.parse(guidMapContent) as CardGuidMap;
-
-    // Read all image files
-    const imageFiles = await fs.promises.readdir(assetPath);
-
-    const missingImages: { id: string; name: string; expectedFile: string }[] = [];
-    const foundImages: { id: string; name: string; matchedFile: string }[] = [];
-
-    // For each parsed item card
-    for (const card of parsedItemCards) {
-        const assetName = guidToName[card.id];
-
-        if (!assetName) {
-            missingImages.push({
-                id: card.id,
-                name: card.name,
-                expectedFile: 'Unknown - No GUID mapping found'
-            });
-            continue;
-        }
-
-        // Look for a file that includes this name
-        const matchingFile = findMatchingFile(assetName, imageFiles);
-
-        if (!matchingFile) {
-            missingImages.push({
-                id: card.id,
-                name: card.name,
-                expectedFile: assetName
-            });
-        } else {
-            foundImages.push({
-                id: card.id,
-                name: card.name,
-                matchedFile: matchingFile
-            });
-        }
-    }
-
-    // Log results
-    console.log(`\nProcessing complete!`);
-    console.log(`Found ${foundImages.length} matching images`);
-    console.log(`Missing ${missingImages.length} images\n`);
-
-    if (missingImages.length > 0) {
-        console.log('Missing images:');
-        console.table(missingImages);
-        throw new Error('Missing required images');
-    }
-
-    // Log unused rename rules
-    const allRules = new Set(Object.keys(RENAME_RULES));
-    const unusedRules = Array.from(allRules).filter(rule => !usedRenameRules.has(rule));
-
-    if (unusedRules.length > 0) {
-        console.log('\nUnused rename rules:');
-        const unusedRulesList = unusedRules.map(originalName => ({
-            original: originalName,
-            renamed: RENAME_RULES[originalName]
-        }));
-        console.table(unusedRulesList);
-    }
-
-    // If we got here, we found all images, so proceed with conversion
-    const copiedFiles = await copyAndRenameFiles(foundImages, assetPath, `${inputDirectory}/${assetType}-renamed`);
-    const convertedFiles = await convertImagesToAvif(copiedFiles, `${inputDirectory}/${assetType}-avif`);
-    const resizedFiles = await checkAndResizeImages(convertedFiles, `${outputDirectory}/${assetType}`);
-
-    console.log('Processed', resizedFiles.length, 'files');
-}
-
-processItemImages().catch(console.error);

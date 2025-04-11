@@ -5,6 +5,7 @@ import axios from 'axios';
 import { readdir } from 'fs/promises';
 import { createReadStream } from 'fs';
 import { join, relative } from 'path';
+import { execSync } from 'child_process';
 
 // Load environment variables
 const API_KEY = process.env.BUNNY_API_KEY;
@@ -80,18 +81,38 @@ const getFiles = async (dir: string): Promise<string[]> => {
     return files.flat();
 };
 
+function getChangedImageFiles(): string[] {
+    const output = execSync(`git diff --name-only HEAD`, { encoding: "utf-8" });
+    return output
+        .split("\n")
+        .filter((line: string) => line.match(/\.(png|jpe?g|gif|webp|avif)$/i))
+        .filter((line: string) => line.startsWith("static/images/"));
+}
+
 // Upload specific files
 (async () => {
     try {
-        // Get file names from command line arguments
-        const fileNames = process.argv.slice(2);
+        // Check for --changed flag
+        const useChangedFiles = process.argv.includes('--changed');
+        let fileNames: string[];
 
-        if (fileNames.length === 0) {
-            console.error("❌ Please provide at least one file name to upload");
-            process.exit(1);
+        if (useChangedFiles) {
+            fileNames = getChangedImageFiles().map(file => relative(IMAGES_DIR, file));
+            if (fileNames.length === 0) {
+                console.log("ℹ️ No changed image files found");
+                process.exit(0);
+            }
+            console.log(`📂 Found ${fileNames.length} changed image files to upload...`);
+        } else {
+            // Get file names from command line arguments, excluding any flags
+            fileNames = process.argv.slice(2).filter(arg => !arg.startsWith('--'));
+
+            if (fileNames.length === 0) {
+                console.error("❌ Please provide at least one file name to upload or use --changed flag");
+                process.exit(1);
+            }
+            console.log(`📂 Uploading ${fileNames.length} specified files to BunnyCDN...`);
         }
-
-        console.log(`📂 Uploading ${fileNames.length} specified files to BunnyCDN...`);
 
         // Get all available files in the images directory
         const allFiles = await getFiles(IMAGES_DIR);
