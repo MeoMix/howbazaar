@@ -18,7 +18,6 @@
 		"extractInvalidItemIds": "tsx scripts/extractInvalidItemIds.ts",
 		"extractInvalidSkillIds": "tsx scripts/extractInvalidSkillIds.ts",
 		"extractMonsterTemplateIds": "tsx scripts/extractMonsterTemplateIds.ts",
-		"processCardData": "tsx scripts/processCardData.ts",
 		"fetchCards": "tsx scripts/fetchCards.ts",
 		"upload:images": "tsx scripts/uploadImagesToBunnyCDN.ts"
 	},
