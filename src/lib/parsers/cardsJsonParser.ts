@@ -3,7 +3,7 @@
 // https://github.com/glideapps/quicktype?tab=readme-ov-file#calling-quicktype-from-javascript
 import type { Entries } from "type-fest";
 import type { ParsedCombatEncounterCard, ParsedItemCard, ParsedSkillCard } from "$lib/types";
-import type { V2CardsD as Card, Bronze as Tier, Tiers, Tier as TierType, AbilityAction, AuraAction, Ability, Aura, Operation, Origin } from "./patches/latest/v2_Cards";
+import type { V2CardsD as Card, Bronze as Tier, Tiers, Tier as TierType, AbilityAction, AuraAction, Ability, Aura, Operation, Origin } from "./patches/latest/cards";
 import { unifyTooltips } from "$lib/utils/tooltipUtils";
 import type { CardsJson } from "./types.parser";
 import invalidItemIds from "./invalidItemIds";
@@ -170,7 +170,7 @@ function getAttributeValueFromTier(attributeName: string, tierAttributes: Tier["
 }
 
 function getTierMap(card: (ValidItemCard | ValidSkillCard)) {
-    // Tier Attributes in v2_Cards.json are represented with an implied inheritance hierarchy.
+    // Tier Attributes in cards.json are represented with an implied inheritance hierarchy.
     // That is, all attributes declared in Bronze are inherited by Silver and then Silver can overwrite attributes
     // by declaring them again. This isn't an especially useful way of working with the data. So, manually
     // perform the merge operation such that looking at a given tier shows all the current values.

@@ -25,7 +25,7 @@ describe('MonsterEncounterService', () => {
         expect(seaShells).toHaveLength(1);
     });
 
-    it('should have an Eccentric Etherwright even though they are duplicate entries in v2_Cards which might confuse v2_Monsters', () => {
+    it('should have an Eccentric Etherwright even though they are duplicate entries in cards.json which might confuse v2_Monsters', () => {
         const eccentricEtherwrightEncounter = monsterEncounterDays.find((monsterEncounterDay) =>
             monsterEncounterDay.groups.some((group) =>
                 group.some((monsterEncounter) =>
