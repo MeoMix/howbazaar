@@ -3,5 +3,5 @@
 </script>
 
 <Badge border large color="green" class="ml-2 whitespace-nowrap">
-    Live Version - Patch 1.0.0 Hotfix 4 - Released Apr 9
+    Live Version - v1.0.0 - Apr 16
 </Badge>

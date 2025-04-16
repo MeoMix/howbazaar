@@ -1,6 +1,6 @@
 import { describe, it, expect, beforeAll } from 'vitest';
 import { parseJson } from './cardsJsonParser';
-import cardsJson from "./data/latest/cards.json" assert { type: "json" };
+import cardsJson from "./data/cards.json" assert { type: "json" };
 import type { ParsedItemCard, ParsedSkillCard } from '$lib/types';
 import type { CardsJson } from './types.parser';
 
@@ -77,7 +77,7 @@ describe('cardJsonParser', () => {
       const beachBall = itemCards.find(card => card.name === "Beach Ball")!;
 
       expect(beachBall.unifiedTooltips[1]).toEqual(
-        'Haste (1/2/3/4) Aquatic or Toy item(s) for 2 second(s).'
+        'Haste (2/3/4/5) Aquatic or Toy item(s) for 2 second(s).'
       );
     });
 

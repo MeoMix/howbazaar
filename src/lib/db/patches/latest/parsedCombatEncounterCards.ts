@@ -95,7 +95,7 @@ const data: ParsedCombatEncounterCard[] = [
   },
   {
     "id": "38936647-a688-49d1-8e5c-9c2c79f18a18",
-    "name": "Scout Trooper",
+    "name": "Hooverbike Hooligan",
     "monsterTemplateId": "336e5dad-8ca4-4263-817c-2141136e5e71"
   },
   {
@@ -580,7 +580,7 @@ const data: ParsedCombatEncounterCard[] = [
   },
   {
     "id": "59917a2d-3253-44f4-aaa4-ca30b512eb59",
-    "name": "Hakurvian Rocket Trooper",
+    "name": "Harkuvian Rocket Trooper",
     "monsterTemplateId": "aa372e93-c5b0-42e9-8b0c-cd4746d0382c"
   },
   {
