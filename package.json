@@ -15,9 +15,6 @@
 		"processSkillImages": "tsx scripts/processSkillImages.ts",
 		"processMonsterImages": "tsx scripts/processMonsterImages.ts",
 		"processItemImages": "tsx scripts/processItemImages.ts",
-		"extractInvalidItemIds": "tsx scripts/extractInvalidItemIds.ts",
-		"extractInvalidSkillIds": "tsx scripts/extractInvalidSkillIds.ts",
-		"extractMonsterTemplateIds": "tsx scripts/extractMonsterTemplateIds.ts",
 		"fetchCards": "tsx scripts/fetchCards.ts",
 		"upload:images": "tsx scripts/uploadImagesToBunnyCDN.ts"
 	},
