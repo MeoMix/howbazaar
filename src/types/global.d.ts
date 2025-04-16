@@ -1,10 +1,11 @@
 declare global {
   interface Window {
-    adsbygoogle?: {
-      loaded: boolean;
-      pageState?: string;
+    reviq?: {
+    //   loaded: boolean;
+    //   pageState?: string;
       push: (obj: any) => void;
     };
+    isAdBlockDisabled?: true;
   }
 }
 
