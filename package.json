@@ -15,7 +15,6 @@
 		"processSkillImages": "tsx scripts/processSkillImages.ts",
 		"processMonsterImages": "tsx scripts/processMonsterImages.ts",
 		"processItemImages": "tsx scripts/processItemImages.ts",
-		"fetchCards": "tsx scripts/fetchCards.ts",
 		"upload:images": "tsx scripts/uploadImagesToBunnyCDN.ts",
 		"pullLatestPatch": "tsx scripts/pullLatestPatch.ts"
 	},
