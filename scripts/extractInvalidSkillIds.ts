@@ -3,8 +3,6 @@ import path from 'path';
 import cardsJson from './cards_old.json';
 
 const allowedList = [
-  // Corrosive Toxins:
-  'b8f04ea6-ecdd-46a0-9ae6-397a090d294b',
   // Burning Shield:
   '7931571a-3d32-41e8-bf7b-ca6b4d1b7a3d',
   // Machine Learning:

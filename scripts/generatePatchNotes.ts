@@ -21,7 +21,7 @@ const excludedIds = {
         ['1.0.0-hotfix1', new Set(['3d9279b1-dbf8-4193-8989-8d2b022533af', '53315fc2-ef04-45fc-b269-9d4932c52621'])],
         ['1.0.0-hotfix2', new Set(['ef4e5045-91c6-4973-8aed-1f29300e1db4'])],
         ['1.0.0-hotfix3', new Set(['db94a1da-532e-42e1-af25-5033b0fc8bcb', '42a673e6-f6cd-45ea-89e2-d37614271016'])],
-        ['1.0.0-hotfix4', new Set(['571b3909-e04c-454f-86ae-61cc46ea3066', '8c36b532-0eb5-49f8-9128-a50b17ef3eed', 'dfeaa982-9ed6-4aee-840e-628fa8b508bd'])],
+        ['1.0.0-hotfix4', new Set(['571b3909-e04c-454f-86ae-61cc46ea3066', '8c36b532-0eb5-49f8-9128-a50b17ef3eed', 'dfeaa982-9ed6-4aee-840e-628fa8b508bd', 'b8f04ea6-ecdd-46a0-9ae6-397a090d294b'])],
     ])
 };
 

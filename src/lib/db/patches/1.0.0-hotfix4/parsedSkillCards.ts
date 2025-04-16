@@ -6494,46 +6494,6 @@ const data: ParsedSkillCard[] = [
     "packId": "Dooley_Core"
   },
   {
-    "id": "b8f04ea6-ecdd-46a0-9ae6-397a090d294b",
-    "name": "Corrosive Toxins",
-    "startingTier": "Gold",
-    "tiers": {
-      "Bronze": {
-        "tooltips": []
-      },
-      "Silver": {
-        "tooltips": []
-      },
-      "Gold": {
-        "tooltips": [
-          "When you Poison, enemy Weapons lose 2 damage."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "When you Poison, enemy Weapons lose 4 damage."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [],
-    "hiddenTags": [
-      "PoisonReference"
-    ],
-    "size": "Medium",
-    "heroes": [
-      "Mak"
-    ],
-    "artKey": "Icon_Skill_RapidInfection.png",
-    "unifiedTooltips": [
-      "When you Poison, enemy Weapons lose (2/4) damage."
-    ],
-    "remarks": [],
-    "packId": "Vanessa_Core"
-  },
-  {
     "id": "42ca6153-fe5b-44b4-a043-f14870659472",
     "name": "Oceanic Rush",
     "startingTier": "Silver",
