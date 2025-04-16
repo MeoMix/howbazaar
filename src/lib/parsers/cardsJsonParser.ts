@@ -6,14 +6,14 @@ import type { ParsedCombatEncounterCard, ParsedItemCard, ParsedSkillCard } from 
 import type { V2CardsD as Card, Bronze as Tier, Tiers, Tier as TierType, AbilityAction, AuraAction, Ability, Aura, Operation, Origin } from "./patches/latest/v2_Cards";
 import { unifyTooltips } from "$lib/utils/tooltipUtils";
 import type { CardsJson } from "./types.parser";
-import invalidItemIds from "./invalidItemIds.json";
-import invalidSkillIds from "./invalidSkillIds.json";
-import monsterTemplateIdMapping from "./monsterTemplateIdMapping.json";
+import invalidItemIds from "./invalidItemIds";
+import invalidSkillIds from "./invalidSkillIds";
+import monsterTemplateIdMapping from "./monsterTemplateIdMapping";
 
 // Card packs that should be filtered out
 const disallowedCardPacks = [
-//   "Vanessa_The_Gang",
-  // Add more card packs to filter here as needed
+    //   "Vanessa_The_Gang",
+    // Add more card packs to filter here as needed
 ] as string[];
 
 // Keywords that indicate a card should be filtered out
@@ -399,7 +399,7 @@ type ValidCombatEncounterCard = Card & { Type: "CombatEncounter", Localization: 
 function hasInvalidKeywords(text: string): boolean {
     // Convert text to lowercase for case-insensitive comparison
     const lowerText = text.toLowerCase();
-    
+
     // Check for each invalid keyword
     return invalidKeywords.some(keyword => {
         // For square brackets, check for exact matches
@@ -419,7 +419,7 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
         entry.Localization.Title.Text !== null &&
         !hasInvalidKeywords(entry.Localization.Title.Text) &&
         !hasInvalidKeywords(entry.InternalName) &&
-        !invalidItemIds.includes(entry.Id) &&
+        !(entry.Id in invalidItemIds) &&
         !(entry.CardPackId && disallowedCardPacks.includes(entry.CardPackId));
 
     const validCards = Object.values(cardsJson).flat().filter(isValidItemCard);
@@ -732,7 +732,7 @@ function parseSkillCards(cardsJson: CardsJson): ParsedSkillCard[] {
         entry.Localization.Title.Text !== null &&
         !hasInvalidKeywords(entry.Localization.Title.Text) &&
         !hasInvalidKeywords(entry.InternalName) &&
-        !invalidSkillIds.includes(entry.Id) &&
+        !(entry.Id in invalidSkillIds) &&
         !!entry.ArtKey;
 
     const validSkillCards = Object.values(cardsJson).flat().filter(isValidSkillCard);
@@ -838,7 +838,7 @@ function parseCombatEncounterCards(cardsJson: CardsJson) {
         return {
             id: card.Id,
             name: card.Localization.Title.Text,
-            monsterTemplateId: (monsterTemplateIdMapping as any)[card.Id]
+            monsterTemplateId: (monsterTemplateIdMapping as any)[card.Id].monsterTemplateId
         };
     });
 
