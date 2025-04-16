@@ -1,8 +1,8 @@
 import fs from 'fs';
 import path from 'path';
-import cardsJson from '../src/lib/parsers/patches/latest/cards.json' with { type: "json" };
-import monstersJson from '../src/lib/parsers/patches/latest/v2_Monsters.json' with { type: "json" };
-import dayHoursJson from '../src/lib/parsers/patches/latest/v2_DayHours.json' with { type: "json" };
+import cardsJson from '../src/lib/parsers/data/cards.json' with { type: "json" };
+import monstersJson from '../src/lib/parsers/data/v2_Monsters.json' with { type: "json" };
+import dayHoursJson from '../src/lib/parsers/data/v2_DayHours.json' with { type: "json" };
 import { parseJson as parseCardsJson } from '../src/lib/parsers/cardsJsonParser.ts';
 import { parseJson as parseMonstersJson } from '../src/lib/parsers/monstersJsonParser.ts';
 import { parseJson as parseDayHoursJson } from '../src/lib/parsers/dayHoursJsonParser.ts';

@@ -9,7 +9,7 @@
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"test": "vitest",
-		"generate-types": "npx quicktype src/lib/parsers/patches/latest/cards.json -o src/lib/parsers/patches/latest/cards.d.ts --just-types --prefer-unions && npx quicktype src/lib/parsers/patches/latest/v2_Monsters.json -o src/lib/parsers/patches/latest/v2_Monsters.d.ts --just-types --prefer-unions && npx quicktype src/lib/parsers/patches/latest/v2_DayHours.json -o src/lib/parsers/patches/latest/v2_DayHours.d.ts --just-types --prefer-unions",
+		"generate-types": "npx quicktype src/lib/parsers/data/cards.json -o src/lib/parsers/data/cards.d.ts --just-types --prefer-unions && npx quicktype src/lib/parsers/data/v2_Monsters.json -o src/lib/parsers/data/v2_Monsters.d.ts --just-types --prefer-unions && npx quicktype src/lib/parsers/data/v2_DayHours.json -o src/lib/parsers/data/v2_DayHours.d.ts --just-types --prefer-unions",
 		"parseGameJson": "tsx scripts/parseGameJson.ts",
 		"generatePatchNotes": "tsx scripts/generatePatchNotes.ts",
 		"processSkillImages": "tsx scripts/processSkillImages.ts",

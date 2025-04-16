@@ -1,6 +1,6 @@
 import { describe, it, expect, beforeAll } from 'vitest';
 import { parseJson } from './monstersJsonParser';
-import monstersJson from "./patches/latest/v2_Monsters.json" assert { type: "json" };
+import monstersJson from "./data/latest/v2_Monsters.json" assert { type: "json" };
 import type { ParsedMonster } from '$lib/types';
 import type { MonstersJson } from './types.parser';
 

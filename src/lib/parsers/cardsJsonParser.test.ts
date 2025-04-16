@@ -1,6 +1,6 @@
 import { describe, it, expect, beforeAll } from 'vitest';
 import { parseJson } from './cardsJsonParser';
-import cardsJson from "./patches/latest/cards.json" assert { type: "json" };
+import cardsJson from "./data/latest/cards.json" assert { type: "json" };
 import type { ParsedItemCard, ParsedSkillCard } from '$lib/types';
 import type { CardsJson } from './types.parser';
 
