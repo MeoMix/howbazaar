@@ -37,6 +37,23 @@
     } {
         return typeof part === "object" && part !== null && "bold" in part;
     }
+
+    function getPackName(packId: ClientSideItemCard["packId"]): string {
+        // First replace underscores with spaces
+        let packName = packId.replace(/_/g, " ");
+        
+        // Remove any hero names from the pack name
+        for (const hero of card.heroes) {
+            packName = packName.replace(hero, "").trim();
+        }
+        
+        // Append "Expansion" to the name
+        return `${packName} Expansion`;
+    }
+
+    function shouldShowPackName(packId: string): boolean {
+        return !packId.toLowerCase().includes("core");
+    }
 </script>
 
 <Card
@@ -67,7 +84,11 @@
                             color: card.startingTier.toLowerCase(),
                             showIcon: false,
                         },
-                        ...[...card.heroes, card.size].map((text) => ({
+                        ...[
+                            ...card.heroes, 
+                            card.size,
+                            ...(shouldShowPackName(card.packId) ? [getPackName(card.packId)] : [])
+                        ].map((text) => ({
                             text,
                             showIcon: false,
                         })),

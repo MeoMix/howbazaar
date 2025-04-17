@@ -43,6 +43,7 @@ export type ClientSideItemCard = {
     tags: Tag[];
     hiddenTags: HiddenTag[];
     size: Size;
+    // TODO: Items can only have a single hero.
     heroes: Hero[];
     enchantments: ClientSideEnchantment[];
     unifiedTooltips: string[];
