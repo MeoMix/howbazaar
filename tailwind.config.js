@@ -37,7 +37,7 @@ const gameEffects = {
 // Colors used for patch note diffs
 const patchnotes = {
   removed: 'rgba(248,81,73,0.4)',
-  added: 'rgba(46,160,67,0.4)',
+  added: 'rgba(37,99,235,0.4)',
 };
 
 const ogTiers = {
