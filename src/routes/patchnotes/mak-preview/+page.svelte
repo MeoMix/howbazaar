@@ -4,60 +4,38 @@
     import { itemsStore } from "$lib/stores/itemsStore";
     import { skillsStore } from "$lib/stores/skillsStore";
     import type { ClientSideItemCard, ClientSideSkillCard } from "$lib/types";
-    import type { PageData } from "./$types";
-    import CardItem from "$lib/components/CardItem.svelte";
-    import CardSkill from "$lib/components/CardSkill.svelte";
-    import ItemSkillTooltip from "$lib/components/ItemSkillTooltip.svelte";
     import { browser } from "$app/environment";
     import { invalidateAll } from "$app/navigation";
-
-    const { data }: { data: PageData } = $props();
+    import Tooltip from "$lib/components/Tooltip.svelte";
+    import CardItem from "$lib/components/CardItem.svelte";
+    import CardSkill from "$lib/components/CardSkill.svelte";
+    import { tooltip, tooltipState } from "$lib/actions/tooltip.svelte";
 
     // Mark Mak preview as seen when the page loads
     onMount(async () => {
         if (browser) {
-            await fetch('/api/mak-preview/mark-seen', { method: 'POST' });
+            await fetch("/api/mak-preview/mark-seen", { method: "POST" });
             invalidateAll();
         }
     });
 
-    let isLoadingItems = $state(false);
-    let hasItemsError = $state(false);
     let items = $state([] as ClientSideItemCard[]);
-
-    onMount(() => {
-        const unsubscribe = itemsStore.subscribe((state) => {
-            items = state.items;
-            isLoadingItems = state.isLoading;
-            hasItemsError = state.hasError;
-        });
-
-        itemsStore.load(data.itemsVersion); // Ensures we fetch fresh data if needed
-
-        return unsubscribe;
-    });
-
-    let isLoadingSkills = $state(false);
-    let hasSkillsError = $state(false);
     let skills = $state([] as ClientSideSkillCard[]);
+
     onMount(() => {
-        const unsubscribe = skillsStore.subscribe((state) => {
-            skills = state.skills;
-            isLoadingSkills = state.isLoading;
-            hasSkillsError = state.hasError;
+        const itemsUnsubscribe = itemsStore.subscribe((state) => {
+            items = state.items;
         });
 
-        skillsStore.load(data.skillsVersion); // Ensures we fetch fresh data if needed
+        const skillsUnsubscribe = skillsStore.subscribe((state) => {
+            skills = state.skills;
+        });
 
-        return unsubscribe;
+        return () => {
+            itemsUnsubscribe();
+            skillsUnsubscribe();
+        };
     });
-
-    // Tooltip state
-    let tooltipX = $state(0);
-    let tooltipY = $state(0);
-    let tooltipVisible = $state(false);
-    let hoveredItem = $state<ClientSideItemCard | undefined>();
-    let hoveredSkill = $state<ClientSideSkillCard | undefined>();
 
     // Helper function to find item/skill by name
     function findItemByName(name: string): ClientSideItemCard | undefined {
@@ -67,58 +45,25 @@
     function findSkillByName(name: string): ClientSideSkillCard | undefined {
         return skills.find((skill) => skill.name === name);
     }
-
-    // Event handlers
-    function handleMouseMove(event: MouseEvent) {
-        tooltipX = event.clientX;
-        tooltipY = event.clientY;
-    }
-
-    function handleTouchMove(event: TouchEvent) {
-        const touch = event.touches[0];
-        tooltipX = touch.clientX;
-        tooltipY = touch.clientY;
-    }
-
-    function handleMouseLeave() {
-        tooltipVisible = false;
-        hoveredItem = undefined;
-        hoveredSkill = undefined;
-    }
-
-    function handleTouchEnd() {
-        tooltipVisible = false;
-        hoveredItem = undefined;
-        hoveredSkill = undefined;
-    }
-
-    // Add event listeners on mount
-    onMount(() => {
-        window.addEventListener("mousemove", handleMouseMove);
-        window.addEventListener("touchmove", handleTouchMove);
-        window.addEventListener("mouseleave", handleMouseLeave);
-        window.addEventListener("touchend", handleTouchEnd);
-
-        return () => {
-            window.removeEventListener("mousemove", handleMouseMove);
-            window.removeEventListener("touchmove", handleTouchMove);
-            window.removeEventListener("mouseleave", handleMouseLeave);
-            window.removeEventListener("touchend", handleTouchEnd);
-        };
-    });
 </script>
 
 <svelte:head>
     <title>Mak Preview · How Bazaar</title>
 </svelte:head>
 
-<ItemSkillTooltip
-    item={hoveredItem}
-    skill={hoveredSkill}
-    x={tooltipX}
-    y={tooltipY}
-    isVisible={tooltipVisible}
-/>
+{#if tooltipState.hoveredItem || tooltipState.hoveredSkill}
+    <Tooltip x={tooltipState.x} y={tooltipState.y}>
+        {#if tooltipState.hoveredItem}
+            <CardItem
+                card={tooltipState.hoveredItem}
+                areEnchantmentsShown={false}
+                showCopyLink={false}
+            />
+        {:else if tooltipState.hoveredSkill}
+            <CardSkill card={tooltipState.hoveredSkill} showCopyLink={false} />
+        {/if}
+    </Tooltip>
+{/if}
 
 <div
     class="w-full max-w-full sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl"
@@ -162,16 +107,7 @@
                 <li>
                     Feels spiritually similar to <em
                         class="font-bold text-blue-500 cursor-pointer"
-                        onmouseenter={() => {
-                            hoveredItem = findItemByName("Port");
-                            tooltipVisible = true;
-                        }}
-                        onmouseleave={handleMouseLeave}
-                        ontouchstart={() => {
-                            hoveredItem = findItemByName("Port");
-                            tooltipVisible = true;
-                        }}
-                        ontouchend={handleTouchEnd}>Port</em
+                        use:tooltip={{ item: findItemByName("Port") }}>Port</em
                     >—reloading your items and giving you a small item each day.
                     Will it be as powerful as Port was in its heyday? Only time
                     will tell!
@@ -180,107 +116,45 @@
                     There are eight Mak potions already in the game:
                     <em
                         class="font-bold text-blue-500 cursor-pointer"
-                        onmouseenter={() => {
-                            hoveredItem = findItemByName("Bottled Lightning");
-                            tooltipVisible = true;
-                        }}
-                        onmouseleave={handleMouseLeave}
-                        ontouchstart={() => {
-                            hoveredItem = findItemByName("Bottled Lightning");
-                            tooltipVisible = true;
-                        }}
-                        ontouchend={handleTouchEnd}>Bottled Lightning</em
+                        use:tooltip={{
+                            item: findItemByName("Bottled Lightning"),
+                        }}>Bottled Lightning</em
                     >,
                     <em
                         class="font-bold text-blue-500 cursor-pointer"
-                        onmouseenter={() => {
-                            hoveredItem = findItemByName("Energy Potion");
-                            tooltipVisible = true;
-                        }}
-                        onmouseleave={handleMouseLeave}
-                        ontouchstart={() => {
-                            hoveredItem = findItemByName("Energy Potion");
-                            tooltipVisible = true;
-                        }}
-                        ontouchend={handleTouchEnd}>Energy Potion</em
+                        use:tooltip={{ item: findItemByName("Energy Potion") }}
+                        >Energy Potion</em
                     >,
                     <em
                         class="font-bold text-blue-500 cursor-pointer"
-                        onmouseenter={() => {
-                            hoveredItem = findItemByName("Fire Potion");
-                            tooltipVisible = true;
-                        }}
-                        onmouseleave={handleMouseLeave}
-                        ontouchstart={() => {
-                            hoveredItem = findItemByName("Fire Potion");
-                            tooltipVisible = true;
-                        }}
-                        ontouchend={handleTouchEnd}>Fire Potion</em
+                        use:tooltip={{ item: findItemByName("Fire Potion") }}
+                        >Fire Potion</em
                     >,
                     <em
                         class="font-bold text-blue-500 cursor-pointer"
-                        onmouseenter={() => {
-                            hoveredItem = findItemByName("Frost Potion");
-                            tooltipVisible = true;
-                        }}
-                        onmouseleave={handleMouseLeave}
-                        ontouchstart={() => {
-                            hoveredItem = findItemByName("Frost Potion");
-                            tooltipVisible = true;
-                        }}
-                        ontouchend={handleTouchEnd}>Frost Potion</em
+                        use:tooltip={{ item: findItemByName("Frost Potion") }}
+                        >Frost Potion</em
                     >,
                     <em
                         class="font-bold text-blue-500 cursor-pointer"
-                        onmouseenter={() => {
-                            hoveredItem = findItemByName("Noxious Potion");
-                            tooltipVisible = true;
-                        }}
-                        onmouseleave={handleMouseLeave}
-                        ontouchstart={() => {
-                            hoveredItem = findItemByName("Noxious Potion");
-                            tooltipVisible = true;
-                        }}
-                        ontouchend={handleTouchEnd}>Noxious Potion</em
+                        use:tooltip={{ item: findItemByName("Noxious Potion") }}
+                        >Noxious Potion</em
                     >,
                     <em
                         class="font-bold text-blue-500 cursor-pointer"
-                        onmouseenter={() => {
-                            hoveredItem = findItemByName("Rainbow Potion");
-                            tooltipVisible = true;
-                        }}
-                        onmouseleave={handleMouseLeave}
-                        ontouchstart={() => {
-                            hoveredItem = findItemByName("Rainbow Potion");
-                            tooltipVisible = true;
-                        }}
-                        ontouchend={handleTouchEnd}>Rainbow Potion</em
+                        use:tooltip={{ item: findItemByName("Rainbow Potion") }}
+                        >Rainbow Potion</em
                     >,
                     <em
                         class="font-bold text-blue-500 cursor-pointer"
-                        onmouseenter={() => {
-                            hoveredItem = findItemByName("Shield Potion");
-                            tooltipVisible = true;
-                        }}
-                        onmouseleave={handleMouseLeave}
-                        ontouchstart={() => {
-                            hoveredItem = findItemByName("Shield Potion");
-                            tooltipVisible = true;
-                        }}
-                        ontouchend={handleTouchEnd}>Shield Potion</em
+                        use:tooltip={{ item: findItemByName("Shield Potion") }}
+                        >Shield Potion</em
                     >, and
                     <em
                         class="font-bold text-blue-500 cursor-pointer"
-                        onmouseenter={() => {
-                            hoveredItem = findItemByName("Sleeping Potion");
-                            tooltipVisible = true;
-                        }}
-                        onmouseleave={handleMouseLeave}
-                        ontouchstart={() => {
-                            hoveredItem = findItemByName("Sleeping Potion");
-                            tooltipVisible = true;
-                        }}
-                        ontouchend={handleTouchEnd}>Sleeping Potion</em
+                        use:tooltip={{
+                            item: findItemByName("Sleeping Potion"),
+                        }}>Sleeping Potion</em
                     >. Athanor makes building around these items much more
                     viable.
                 </li>
@@ -326,30 +200,14 @@
                     out for the
                     <em
                         class="font-bold text-blue-500 cursor-pointer"
-                        onmouseenter={() => {
-                            hoveredSkill = findSkillByName("Re-Tooled");
-                            tooltipVisible = true;
-                        }}
-                        onmouseleave={handleMouseLeave}
-                        ontouchstart={() => {
-                            hoveredSkill = findSkillByName("Re-Tooled");
-                            tooltipVisible = true;
-                        }}
-                        ontouchend={handleTouchEnd}>Re-Tooled</em
+                        use:tooltip={{ skill: findSkillByName("Re-Tooled") }}
+                        >Re-Tooled</em
                     >
                     and
                     <em
                         class="font-bold text-blue-500 cursor-pointer"
-                        onmouseenter={() => {
-                            hoveredSkill = findSkillByName("Retool");
-                            tooltipVisible = true;
-                        }}
-                        onmouseleave={handleMouseLeave}
-                        ontouchstart={() => {
-                            hoveredSkill = findSkillByName("Retool");
-                            tooltipVisible = true;
-                        }}
-                        ontouchend={handleTouchEnd}>Retool</em
+                        use:tooltip={{ skill: findSkillByName("Retool") }}
+                        >Retool</em
                     >
                     skills!
                 </li>
@@ -382,45 +240,22 @@
                 <li>
                     Also shines alongside <em
                         class="font-bold text-blue-500 cursor-pointer"
-                        onmouseenter={() => {
-                            hoveredItem = findItemByName("Poppy Field");
-                            tooltipVisible = true;
-                        }}
-                        onmouseleave={handleMouseLeave}
-                        ontouchstart={() => {
-                            hoveredItem = findItemByName("Poppy Field");
-                            tooltipVisible = true;
-                        }}
-                        ontouchend={handleTouchEnd}>Poppy Field</em
+                        use:tooltip={{ item: findItemByName("Poppy Field") }}
+                        >Poppy Field</em
                     >
                     and possibly
                     <em
                         class="font-bold text-blue-500 cursor-pointer"
-                        onmouseenter={() => {
-                            hoveredItem = findItemByName("Mortar & Pestle");
-                            tooltipVisible = true;
-                        }}
-                        onmouseleave={handleMouseLeave}
-                        ontouchstart={() => {
-                            hoveredItem = findItemByName("Mortar & Pestle");
-                            tooltipVisible = true;
-                        }}
-                        ontouchend={handleTouchEnd}>Mortar & Pestle</em
+                        use:tooltip={{
+                            item: findItemByName("Mortar & Pestle"),
+                        }}>Mortar & Pestle</em
                     >, if you're running a more potion-heavy deck.
                 </li>
                 <li>
                     If you've played with <em
                         class="font-bold text-blue-500 cursor-pointer"
-                        onmouseenter={() => {
-                            hoveredItem = findItemByName("Atlas Stone");
-                            tooltipVisible = true;
-                        }}
-                        onmouseleave={handleMouseLeave}
-                        ontouchstart={() => {
-                            hoveredItem = findItemByName("Atlas Stone");
-                            tooltipVisible = true;
-                        }}
-                        ontouchend={handleTouchEnd}>Atlas Stone</em
+                        use:tooltip={{ item: findItemByName("Atlas Stone") }}
+                        >Atlas Stone</em
                     >, this will feel familiar.
                     <strong class="text-bazaar-orange">Bottled Explosion</strong
                     > gets a shorter cooldown and higher base damage in exchange
@@ -441,7 +276,9 @@
             <p class="mb-4">
                 <strong class="text-bazaar-orange">Covetous Raven</strong> is
                 the first <em class="text-bazaar-orange">The Bazaar</em> item to
-                reference <em class="font-semibold text-gameEffects-tag">Enchanted</em> items specifically! How exciting!
+                reference
+                <em class="font-semibold text-gameEffects-tag">Enchanted</em> items
+                specifically! How exciting!
             </p>
             <ul class="list-disc list-inside">
                 <li>
@@ -462,30 +299,14 @@
                     for Mak, joining
                     <em
                         class="font-bold text-blue-500 cursor-pointer"
-                        onmouseenter={() => {
-                            hoveredItem = findItemByName("Leeches");
-                            tooltipVisible = true;
-                        }}
-                        onmouseleave={handleMouseLeave}
-                        ontouchstart={() => {
-                            hoveredItem = findItemByName("Leeches");
-                            tooltipVisible = true;
-                        }}
-                        ontouchend={handleTouchEnd}>Leeches</em
+                        use:tooltip={{ item: findItemByName("Leeches") }}
+                        >Leeches</em
                     >
                     and
                     <em
                         class="font-bold text-blue-500 cursor-pointer"
-                        onmouseenter={() => {
-                            hoveredItem = findItemByName("Venomander");
-                            tooltipVisible = true;
-                        }}
-                        onmouseleave={handleMouseLeave}
-                        ontouchstart={() => {
-                            hoveredItem = findItemByName("Venomander");
-                            tooltipVisible = true;
-                        }}
-                        ontouchend={handleTouchEnd}>Venomander</em
+                        use:tooltip={{ item: findItemByName("Venomander") }}
+                        >Venomander</em
                     >. As Mak's friend count continues to grow, we'll need to
                     keep our eyes peeled for any potential synergies.
                 </li>

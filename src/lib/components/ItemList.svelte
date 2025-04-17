@@ -55,6 +55,7 @@
     let hasError = $state(false);
 
     onMount(() => {
+        console.log("Mounting ItemList");
         const unsubscribe = itemsStore.subscribe((state) => {
             items = state.items;
             isLoading = state.isLoading;

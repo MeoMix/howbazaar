@@ -9,16 +9,59 @@
     import Divider from "$lib/components/Divider.svelte";
     import CopyLinkButton from "$lib/components/CopyLinkButton.svelte";
     import CardImage from "$lib/components/CardImage.svelte";
+    import { tooltip } from "$lib/actions/tooltip.svelte";
+    import { itemsStore } from "$lib/stores/itemsStore";
+    import { skillsStore } from "$lib/stores/skillsStore";
+    import type { ClientSideItemCard, ClientSideSkillCard } from "$lib/types";
+    import { onMount } from "svelte";
 
     const {
         patch,
         viewMode,
+        isItem,
     }: {
-        patch: ItemPatchNote | SkillPatchNote;
         viewMode?: "full" | "compact";
-    } = $props();
+    } & (
+        | { isItem: true; patch: ItemPatchNote }
+        | { isItem: false; patch: SkillPatchNote }
+    ) = $props();
+
+    let items = $state([] as ClientSideItemCard[]);
+    let skills = $state([] as ClientSideSkillCard[]);
+
+    onMount(() => {
+        const itemsUnsubscribe = itemsStore.subscribe((state) => {
+            items = state.items;
+        });
+
+        const skillsUnsubscribe = skillsStore.subscribe((state) => {
+            skills = state.skills;
+        });
+
+        return () => {
+            itemsUnsubscribe();
+            skillsUnsubscribe();
+        };
+    });
+
+    // Helper function to find item/skill by name
+    function findItemByName(name: string): ClientSideItemCard | undefined {
+        return items.find((item) => item.name === name);
+    }
+
+    function findSkillByName(name: string): ClientSideSkillCard | undefined {
+        return skills.find((skill) => skill.name === name);
+    }
 
     const id = $derived(patch.metadata.name.toLowerCase().replace(/\s+/g, "_"));
+
+    const tooltipData = $derived(() => {
+        if (isItem) {
+            return { item: findItemByName(patch.metadata.name) };
+        } else {
+            return { skill: findSkillByName(patch.metadata.name) };
+        }
+    });
 
     interface RenderedPatchNote {
         propName:
@@ -386,6 +429,7 @@
 <div
     class={`rounded-lg relative ${viewMode === "full" ? "border" : ""} text-gray-900 dark:bg-bazaar-background dark:text-bazaar-tan700 dark:border-bazaar-orange scroll-mt-[80px]`}
     {id}
+    use:tooltip={tooltipData()}
 >
     <div
         class="grid grid-cols-[70%_30%] md:grid-cols-[80%_20%] lg:grid-cols-[85%_15%]"
@@ -405,9 +449,7 @@
         <div
             class={`col-start-1 row-start-1 ${viewMode === "full" ? "px-4 py-4" : "px-0 py-0"}`}
         >
-            <div
-                class={`flex items-center mb-2`}
-            >
+            <div class={`flex items-center mb-2`}>
                 <h2
                     class={`text-2xl font-semibold ${viewMode === "compact" ? "text-bazaar-orange" : ""}`}
                 >

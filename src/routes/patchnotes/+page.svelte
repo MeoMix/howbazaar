@@ -6,6 +6,10 @@
     import { goto, invalidateAll } from "$app/navigation";
     import { browser } from "$app/environment";
     import { onMount } from "svelte";
+    import Tooltip from "$lib/components/Tooltip.svelte";
+    import CardItem from "$lib/components/CardItem.svelte";
+    import CardSkill from "$lib/components/CardSkill.svelte";
+    import { tooltipState } from "$lib/actions/tooltip.svelte";
 
     let { data }: { data: PageData } = $props();
 
@@ -15,17 +19,18 @@
     // Do this client-side to avoid marking seen during pre-rendering because user might not actually visit the page
     onMount(async () => {
         if (browser) {
-            await fetch('/api/patchnotes/mark-seen', { method: 'POST' });
+            await fetch("/api/patchnotes/mark-seen", { method: "POST" });
             invalidateAll();
         }
     });
 
-    const items = $derived(
+    const itemPatchNotes = $derived(
         Object.values(data.patchNotes.items) as ItemPatchNote[],
     );
-    const skills = $derived(
-        Object.values(data.patchNotes.skills)
-            .sort((a, b) => a.metadata.name.localeCompare(b.metadata.name)) as SkillPatchNote[],
+    const skillPatchNotes = $derived(
+        Object.values(data.patchNotes.skills).sort((a, b) =>
+            a.metadata.name.localeCompare(b.metadata.name),
+        ) as SkillPatchNote[],
     );
 
     const versionOptions = $derived(
@@ -62,7 +67,7 @@
         });
 
         // Group items by hero
-        items.forEach((item) => {
+        itemPatchNotes.forEach((item) => {
             const hero = item.metadata.currentHero;
 
             if (hero && hero in grouped) {
@@ -86,12 +91,12 @@
 
     function handleViewChange(view: string) {
         viewMode = view as "full" | "compact";
-        
+
         if (browser) {
             // Set cookie with 1 year expiry
             document.cookie = `patchNotesViewMode=${view};path=/;max-age=31536000`;
         }
-        
+
         // Reload the page to get the new cookie value
         goto(window.location.pathname, { invalidateAll: true });
     }
@@ -101,10 +106,26 @@
     <title>Patch Notes · How Bazaar</title>
 </svelte:head>
 
+{#if tooltipState.hoveredItem || tooltipState.hoveredSkill}
+    <Tooltip x={tooltipState.x} y={tooltipState.y}>
+        {#if tooltipState.hoveredItem}
+            <CardItem
+                card={tooltipState.hoveredItem}
+                areEnchantmentsShown={false}
+                showCopyLink={false}
+            />
+        {:else if tooltipState.hoveredSkill}
+            <CardSkill card={tooltipState.hoveredSkill} showCopyLink={false} />
+        {/if}
+    </Tooltip>
+{/if}
+
 <div
     class="w-full max-w-full sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl"
 >
-    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4 my-6">
+    <div
+        class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4 my-6"
+    >
         <h1 class="text-3xl font-bold whitespace-nowrap">Patch Notes</h1>
         <div class="flex flex-wrap items-center gap-4">
             <div class="w-32">
@@ -155,9 +176,11 @@
                     <h2 class="text-2xl font-bold mb-2">
                         {hero} Items
                     </h2>
-                    <div class={`${viewMode === "compact" ? "grid grid-cols-1 md:grid-cols-2 gap-2" : "space-y-2"}`}>
+                    <div
+                        class={`${viewMode === "compact" ? "grid grid-cols-1 md:grid-cols-2 gap-2" : "space-y-2"}`}
+                    >
                         {#each heroItems as patch}
-                            <PatchNoteCard {viewMode} {patch} />
+                            <PatchNoteCard {viewMode} {patch} isItem={true} />
                         {/each}
                     </div>
                 </div>
@@ -165,11 +188,13 @@
         {/each}
     {/if}
 
-    {#if skills.length > 0}
+    {#if skillPatchNotes.length > 0}
         <h2 class="text-2xl font-bold mb-2">Skills</h2>
-        <div class={`${viewMode === "compact" ? "grid grid-cols-1 md:grid-cols-2 gap-2" : "space-y-2"}`}>
-            {#each skills as patch}
-                <PatchNoteCard {viewMode} {patch} />
+        <div
+            class={`${viewMode === "compact" ? "grid grid-cols-1 md:grid-cols-2 gap-2" : "space-y-2"}`}
+        >
+            {#each skillPatchNotes as patch}
+                <PatchNoteCard {viewMode} {patch} isItem={false} />
             {/each}
         </div>
     {/if}
