@@ -13,7 +13,11 @@
     import CardSkill from "./CardSkill.svelte";
     import LazyLoadList from "./LazyLoadList.svelte";
     import Select from "./Select.svelte";
-    import { filterSkillCards, sortCards } from "$lib/utils/filterUtils";
+    import {
+        filterSkillCards,
+        searchCards,
+        sortCards,
+    } from "$lib/utils/filterUtils";
     import { onMount } from "svelte";
     import { skillsStore } from "$lib/stores/skillsStore";
 
@@ -65,22 +69,24 @@
     });
 
     const filteredSkills = $derived(
-        sortCards(
-            filterSkillCards(
-                skills,
-                heroStates,
-                selectedTiers,
-                tagStates,
-                searchText,
-                selectedSearchLocationOption,
-                isMatchAnyTag,
-                isMatchAnyHero,
-                isMonsterDropsOnly,
-                latestExpansionsOnlyState,
-            ),
-            selectedSortOption,
-            searchText,
+        filterSkillCards(
+            skills,
+            heroStates,
+            selectedTiers,
+            tagStates,
+            isMatchAnyTag,
+            isMatchAnyHero,
+            isMonsterDropsOnly,
+            latestExpansionsOnlyState,
         ),
+    );
+
+    const searchedSkills = $derived(
+        searchCards(filteredSkills, searchText, selectedSearchLocationOption),
+    );
+
+    const sortedSkills = $derived(
+        sortCards(searchedSkills, selectedSortOption, searchText),
     );
 </script>
 
@@ -103,9 +109,9 @@
 
 {#if isLoading}
     <div>Loading skills...</div>
-{:else if filteredSkills.length > 0 || !isHiddenWhenEmpty}
+{:else if sortedSkills.length > 0 || !isHiddenWhenEmpty}
     <LazyLoadList
-        items={filteredSkills}
+        items={sortedSkills}
         {listItem}
         {headerControls}
         listItemName="skill"

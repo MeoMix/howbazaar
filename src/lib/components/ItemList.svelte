@@ -15,7 +15,11 @@
     import LazyLoadList from "./LazyLoadList.svelte";
     import Select from "./Select.svelte";
     import Switch from "./Switch.svelte";
-    import { filterItemCards, sortCards } from "$lib/utils/filterUtils";
+    import {
+        filterItemCards,
+        searchCards,
+        sortCards,
+    } from "$lib/utils/filterUtils";
     import { onMount } from "svelte";
     import { itemsStore } from "$lib/stores/itemsStore";
 
@@ -55,7 +59,6 @@
     let hasError = $state(false);
 
     onMount(() => {
-        console.log("Mounting ItemList");
         const unsubscribe = itemsStore.subscribe((state) => {
             items = state.items;
             isLoading = state.isLoading;
@@ -68,22 +71,24 @@
     });
 
     const filteredItems = $derived(
-        sortCards(
-            filterItemCards(
-                items,
-                selectedHeroes,
-                selectedTiers,
-                tagStates,
-                selectedSizes,
-                searchText,
-                selectedSearchLocationOption,
-                isMatchAnyTag,
-                isMonsterDropsOnly,
-                latestExpansionsOnlyState,
-            ),
-            selectedSortOption,
-            searchText,
+        filterItemCards(
+            items,
+            selectedHeroes,
+            selectedTiers,
+            tagStates,
+            selectedSizes,
+            isMatchAnyTag,
+            isMonsterDropsOnly,
+            latestExpansionsOnlyState,
         ),
+    );
+
+    const searchedItems = $derived(
+        searchCards(filteredItems, searchText, selectedSearchLocationOption),
+    );
+
+    const sortedItems = $derived(
+        sortCards(searchedItems, selectedSortOption, searchText),
     );
 
     const onToggleEnchantments = () => {
@@ -116,9 +121,9 @@
 
 {#if isLoading}
     <div>Loading items...</div>
-{:else if filteredItems.length > 0 || !isHiddenWhenEmpty}
+{:else if sortedItems.length > 0 || !isHiddenWhenEmpty}
     <LazyLoadList
-        items={filteredItems}
+        items={sortedItems}
         {listItem}
         {headerControls}
         listItemName="item"

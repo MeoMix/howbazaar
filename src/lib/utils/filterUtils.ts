@@ -194,16 +194,11 @@ export function filterItemCards(
     selectedTiers: TierType[],
     tagStates: Record<Tag | HiddenTag, TriState>,
     selectedSizes: Size[],
-    searchText: string,
-    searchMode: ItemSearchLocationOption,
     isMatchAnyTag: boolean,
     isMonsterDropsOnly: boolean,
     latestExpansionsOnlyState: TriState
 ): ClientSideItemCard[] {
-    const lowerSearchText = searchText.trim().toLowerCase();
-
-    // Apply all filters (except search text) first
-    const filteredCards = cards.filter(card => {
+    return cards.filter(card => {
         return (
             (isMonsterDropsOnly ? card.combatEncounters.length > 0 : true) &&
             (latestExpansionsOnlyState === "on" ? latestExpansions.has(card.packId) : (latestExpansionsOnlyState === "off" ? !latestExpansions.has(card.packId) : true)) &&
@@ -213,11 +208,6 @@ export function filterItemCards(
             (selectedSizes.length === 0 || (card.size && selectedSizes.includes(card.size)))
         );
     });
-
-    // Otherwise, fallback to normalized search on the remaining filtered cards
-    return filteredCards.filter(card =>
-        matchesCardSearchText(card, lowerSearchText, searchMode)
-    );
 }
 
 export function filterSkillCards(
@@ -225,17 +215,12 @@ export function filterSkillCards(
     heroStates: Record<Hero, TriState>,
     selectedTiers: TierType[],
     tagStates: Record<Tag | HiddenTag, TriState>,
-    searchText: string,
-    searchMode: SkillSearchLocationOption,
     isMatchAnyTag: boolean,
     isMatchAnyHero: boolean,
     isMonsterDropsOnly: boolean,
     latestExpansionsOnlyState: TriState
 ): ClientSideSkillCard[] {
-    const lowerSearchText = searchText.trim().toLowerCase();
-
-    // Apply all filters (except search text) first
-    const filteredCards = cards.filter(card => {
+    return cards.filter(card => {
         return (
             (isMonsterDropsOnly ? card.combatEncounters.length > 0 : true) &&
             (latestExpansionsOnlyState === "on" ? latestExpansions.has(card.packId) : (latestExpansionsOnlyState === "off" ? !latestExpansions.has(card.packId) : true)) &&
@@ -244,21 +229,25 @@ export function filterSkillCards(
             matchesTagState(card.tags, card.hiddenTags, tagStates, isMatchAnyTag)
         );
     });
-
-    // Otherwise, fallback to normalized search on the remaining filtered cards
-    return filteredCards.filter(card =>
-        matchesCardSearchText(card, lowerSearchText, searchMode)
-    );
 }
 
-export function filterMonsters(
+export function searchCards<T extends ClientSideItemCard | ClientSideSkillCard>(
+    cards: T[],
+    searchText: string,
+    searchMode: AllSearchLocationOption
+): T[] {
+    const lowerSearchText = searchText.trim().toLowerCase();
+    
+    return cards.filter(card => matchesCardSearchText(card, lowerSearchText, searchMode));
+}
+
+export function searchMonsters(
     monsters: ClientSideMonsterEncounter[],
     searchText: string,
     searchMode: MonsterSearchLocationOption
 ) {
     const lowerSearchText = searchText.trim().toLowerCase();
 
-    // Otherwise, fallback to normalized search on the remaining filtered cards
     return monsters.filter(monster =>
         matchesMonsterSearchText(monster, lowerSearchText, searchMode)
     );
@@ -273,16 +262,16 @@ export function filterTags(tags: Tag[], hiddenTags: HiddenTag[]) {
 }
 
 export function sortCards<T extends (ClientSideItemCard | ClientSideSkillCard)>(cards: T[], selectedSortOption: (ItemSortOption | SkillSortOption), searchText: string) {
-    return cards.sort((a, b) => {
+    return [...cards].sort((a, b) => {
         // If searchText is provided, check for exact matches first
         if (searchText) {
             // Split search text by pipe and trim each term
             const searchTerms = searchText.split('|').map(term => term.trim().toLowerCase());
-            
+
             // Check if either card exactly matches any search term
             const aExactMatch = searchTerms.some(term => a.name.toLowerCase() === term);
             const bExactMatch = searchTerms.some(term => b.name.toLowerCase() === term);
-            
+
             if (aExactMatch && !bExactMatch) return -1;
             if (!aExactMatch && bExactMatch) return 1;
             if (aExactMatch && bExactMatch) return 0;

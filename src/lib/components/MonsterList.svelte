@@ -8,7 +8,7 @@
     import LazyLoadList from "./LazyLoadList.svelte";
     import MonsterEncounter from "./MonsterEncounter.svelte";
     import { monsterEncounterDaysStore } from "$lib/stores/monsterEncounterDaysStore";
-    import { filterMonsters } from "$lib/utils/filterUtils";
+    import { searchMonsters } from "$lib/utils/filterUtils";
     import MonsterEncounterPreview from "./MonsterEncounterPreview.svelte";
 
     let {
@@ -39,10 +39,10 @@
             : monsterEncounterDays.filter(({ day }) => selectedDay === day),
     );
 
-    const filteredMonsters = $derived(
+    const searchedMonsters = $derived(
         searchText === ""
             ? []
-            : filterMonsters(
+            : searchMonsters(
                   filteredMonsterEncounterDays.flatMap((encounter) =>
                       encounter.groups.flatMap((group) => group),
                   ),
@@ -94,10 +94,10 @@
 
 {#if isLoading}
     <div>Loading monsters...</div>
-{:else if filteredMonsters.length > 0 || (!isHiddenWhenEmpty && searchText != "")}
+{:else if searchedMonsters.length > 0 || (!isHiddenWhenEmpty && searchText != "")}
     <div class="mb-8">
         <LazyLoadList
-            items={filteredMonsters}
+            items={searchedMonsters}
             {listItem}
             listItemName="monster"
             {initialLoad}
