@@ -268,6 +268,9 @@ const keywordEffectMap: Record<string, string> = {
   "Tools": "tag",
   "Aquatic": "tag",
   "Toy": "tag",
+  "Toys": "tag",
+  "Reagent": "tag",
+  "Reagents": "tag",
   "Apparel": "tag"
 };
 
