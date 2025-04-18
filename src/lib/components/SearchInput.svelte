@@ -24,14 +24,19 @@
 
   let inputElement: HTMLInputElement | null = null;
 
-  function focusInput() {
-    inputElement?.focus();
+  function focusInput(selectText = false) {
+    if (inputElement) {
+      inputElement.focus();
+      if (selectText) {
+        inputElement.select();
+      }
+    }
   }
 
   function handleShortcut(event: KeyboardEvent) {
     if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === "k") {
       event.preventDefault();
-      focusInput();
+      focusInput(true);
     }
   }
 
@@ -55,7 +60,7 @@
           selectedOption={selectedSearchLocationOption}
           onSelectOption={(option) => {
             selectedSearchLocationOption = option;
-            focusInput();
+            focusInput(false);
           }}
         />
 
