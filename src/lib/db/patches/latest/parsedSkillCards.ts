@@ -3065,46 +3065,6 @@ const data: ParsedSkillCard[] = [
     "packId": "Mak_Core"
   },
   {
-    "id": "b2cc190c-ddbd-487c-b99a-ed21150b6c10",
-    "name": "Chocoholic",
-    "startingTier": "Gold",
-    "tiers": {
-      "Bronze": {
-        "tooltips": []
-      },
-      "Silver": {
-        "tooltips": []
-      },
-      "Gold": {
-        "tooltips": [
-          "When you sell a medium or large item, get a Chocolate Bar."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "When you sell a medium or large item, get 2 Chocolate Bars."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [],
-    "hiddenTags": [
-      "Health"
-    ],
-    "size": "Medium",
-    "heroes": [
-      "Pygmalien"
-    ],
-    "artKey": "Icon_Skill_PYG_Chocoholic.png",
-    "unifiedTooltips": [
-      "When you sell a medium or large item, get (1/2) Chocolate Bar(s)."
-    ],
-    "remarks": [],
-    "packId": "Pygmalien_Core"
-  },
-  {
     "id": "13d1b66a-1d45-4e8e-9921-8312253fc48e",
     "name": "Barnacle Crusted",
     "startingTier": "Gold",
@@ -3145,6 +3105,46 @@ const data: ParsedSkillCard[] = [
     ],
     "remarks": [],
     "packId": "Vanessa_Core"
+  },
+  {
+    "id": "b2cc190c-ddbd-487c-b99a-ed21150b6c10",
+    "name": "Chocoholic",
+    "startingTier": "Gold",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": [
+          "When you sell a medium or large item, get a Chocolate Bar."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "When you sell a medium or large item, get 2 Chocolate Bars."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "Health"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Pygmalien"
+    ],
+    "artKey": "Icon_Skill_PYG_Chocoholic.png",
+    "unifiedTooltips": [
+      "When you sell a medium or large item, get (1/2) Chocolate Bar(s)."
+    ],
+    "remarks": [],
+    "packId": "Pygmalien_Core"
   },
   {
     "id": "eea71cd9-2688-4c4d-99e7-6eee44cf47a2",
@@ -6808,12 +6808,12 @@ const data: ParsedSkillCard[] = [
       },
       "Gold": {
         "tooltips": [
-          "The first 4 times you use a Weapon each fight, charge 1 item(s) 1 second(s)."
+          "The first 4 times you use a Weapon each fight, charge another item 1 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "The first 8 times you use a Weapon each fight, charge 1 item(s) 1 second(s)."
+          "The first 8 times you use a Weapon each fight, charge another item 1 second(s)."
         ]
       },
       "Legendary": {
@@ -6832,7 +6832,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_ExtraArms.png",
     "unifiedTooltips": [
-      "The first (4/8) times you use a Weapon each fight, charge 1 item(s) 1 second(s)."
+      "The first (4/8) times you use a Weapon each fight, charge another item 1 second(s)."
     ],
     "remarks": [],
     "packId": "Vanessa_Core"
@@ -9123,6 +9123,50 @@ const data: ParsedSkillCard[] = [
     "packId": "Core"
   },
   {
+    "id": "239aeabb-0b0c-484d-a761-ee68ede3223c",
+    "name": "Lash Out",
+    "startingTier": "Bronze",
+    "tiers": {
+      "Bronze": {
+        "tooltips": [
+          "At the start of each fight, Poison 3."
+        ]
+      },
+      "Silver": {
+        "tooltips": [
+          "At the start of each fight, Poison 6."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "At the start of each fight, Poison 9."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "At the start of each fight, Poison 12."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "Poison"
+    ],
+    "size": "Medium",
+    "heroes": [
+      "Common"
+    ],
+    "artKey": "Icon_Skill_MON_LashOut_01",
+    "unifiedTooltips": [
+      "At the start of each fight, Poison (3/6/9/12)."
+    ],
+    "remarks": [],
+    "packId": "Core"
+  },
+  {
     "id": "3d9279b1-dbf8-4193-8989-8d2b022533af",
     "name": "Streamline Weapon",
     "startingTier": "Silver",
@@ -9166,50 +9210,6 @@ const data: ParsedSkillCard[] = [
     ],
     "remarks": [],
     "packId": "Pygmalien_Core"
-  },
-  {
-    "id": "239aeabb-0b0c-484d-a761-ee68ede3223c",
-    "name": "Lash Out",
-    "startingTier": "Bronze",
-    "tiers": {
-      "Bronze": {
-        "tooltips": [
-          "At the start of each fight, Poison 3."
-        ]
-      },
-      "Silver": {
-        "tooltips": [
-          "At the start of each fight, Poison 6."
-        ]
-      },
-      "Gold": {
-        "tooltips": [
-          "At the start of each fight, Poison 9."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "At the start of each fight, Poison 12."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [],
-    "hiddenTags": [
-      "Poison"
-    ],
-    "size": "Medium",
-    "heroes": [
-      "Common"
-    ],
-    "artKey": "Icon_Skill_MON_LashOut_01",
-    "unifiedTooltips": [
-      "At the start of each fight, Poison (3/6/9/12)."
-    ],
-    "remarks": [],
-    "packId": "Core"
   },
   {
     "id": "115c2677-6880-4400-af80-f5afa3d502fe",
