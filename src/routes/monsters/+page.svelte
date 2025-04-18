@@ -6,6 +6,10 @@
     import type { PageData } from "./$types";
     import MonsterFilters from "$lib/components/MonsterFilters.svelte";
     import MonsterList from "$lib/components/MonsterList.svelte";
+    import { tooltipState } from "$lib/actions/tooltip.svelte";
+    import CardItem from "$lib/components/CardItem.svelte";
+    import CardSkill from "$lib/components/CardSkill.svelte";
+    import Tooltip from "$lib/components/Tooltip.svelte";
 
     const { data }: { data: PageData } = $props();
 
@@ -27,6 +31,20 @@
 <svelte:head>
     <title>Monsters · How Bazaar</title>
 </svelte:head>
+
+{#if tooltipState.hoveredItem || tooltipState.hoveredSkill}
+    <Tooltip x={tooltipState.x} y={tooltipState.y}>
+        {#if tooltipState.hoveredItem}
+            <CardItem
+                card={tooltipState.hoveredItem}
+                areEnchantmentsShown={false}
+                showCopyLink={false}
+            />
+        {:else if tooltipState.hoveredSkill}
+            <CardSkill card={tooltipState.hoveredSkill} showCopyLink={false} />
+        {/if}
+    </Tooltip>
+{/if}
 
 <div
     class="w-full max-w-full sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl"

@@ -18,6 +18,10 @@
         AllSearchLocationOption,
     } from "$lib/types";
     import type { PageData } from "./$types";
+    import { tooltipState } from "$lib/actions/tooltip.svelte";
+    import CardItem from "$lib/components/CardItem.svelte";
+    import CardSkill from "$lib/components/CardSkill.svelte";
+    import Tooltip from "$lib/components/Tooltip.svelte";
 
     const { data }: { data: PageData } = $props();
 
@@ -103,6 +107,20 @@
 <svelte:head>
     <title>All · How Bazaar</title>
 </svelte:head>
+
+{#if tooltipState.hoveredItem || tooltipState.hoveredSkill}
+    <Tooltip x={tooltipState.x} y={tooltipState.y}>
+        {#if tooltipState.hoveredItem}
+            <CardItem
+                card={tooltipState.hoveredItem}
+                areEnchantmentsShown={false}
+                showCopyLink={false}
+            />
+        {:else if tooltipState.hoveredSkill}
+            <CardSkill card={tooltipState.hoveredSkill} showCopyLink={false} />
+        {/if}
+    </Tooltip>
+{/if}
 
 <!-- Main content area -->
 <div

@@ -4,11 +4,11 @@
         TierType,
         EnchantmentType,
     } from "$lib/types";
-    import { Card } from "flowbite-svelte";
     import { parseTooltipForRendering } from "$lib/utils/tooltipUtils";
     import Divider from "./Divider.svelte";
     import MonsterCardImage from "./MonsterCardImage.svelte";
     import CardBadges from "./CardBadges.svelte";
+    import { tooltip } from "$lib/actions/tooltip.svelte";
 
     const {
         card,
@@ -42,11 +42,16 @@
     }
 </script>
 
-<Card
-    padding="none"
-    class={`h-full relative text-gray-900 border dark:bg-bazaar-background dark:text-bazaar-tan700 border-tiers-${tierType.toLowerCase()}-400 dark:border-tiers-${tierType.toLowerCase()}-400`}
+<div
+    class={`rounded-lg h-full relative text-gray-900 border dark:bg-bazaar-background dark:text-bazaar-tan700 border-tiers-${tierType.toLowerCase()}-400 dark:border-tiers-${tierType.toLowerCase()}-400`}
+    use:tooltip={{ item: card }}
 >
-    <MonsterCardImage name={card.name} id={card.id} type="items" size={card.size} />
+    <MonsterCardImage
+        name={card.name}
+        id={card.id}
+        type="items"
+        size={card.size}
+    />
 
     <div class="flex flex-col px-4 pb-4 py-2 relative">
         <div class="flex flex-col gap-2 relative">
@@ -67,7 +72,7 @@
                         color: tierType.toLowerCase(),
                         showIcon: false,
                     },
-                    ...card.tags.map((text) => ({ text, showIcon: true }))
+                    ...card.tags.map((text) => ({ text, showIcon: true })),
                 ]}
             />
 
@@ -154,4 +159,4 @@
             {/each}
         {/if}
     </div>
-</Card>
+</div>

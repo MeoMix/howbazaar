@@ -44,22 +44,17 @@
         };
     });
 
-    // Helper function to find item/skill by name
-    function findItemByName(name: string): ClientSideItemCard | undefined {
-        return items.find((item) => item.name === name);
-    }
-
-    function findSkillByName(name: string): ClientSideSkillCard | undefined {
-        return skills.find((skill) => skill.name === name);
-    }
-
     const id = $derived(patch.metadata.name.toLowerCase().replace(/\s+/g, "_"));
 
     const tooltipData = $derived(() => {
         if (isItem) {
-            return { item: findItemByName(patch.metadata.name) };
+            return {
+                item: items.find(({ name }) => name === patch.metadata.name),
+            };
         } else {
-            return { skill: findSkillByName(patch.metadata.name) };
+            return {
+                skill: skills.find(({ name }) => name === patch.metadata.name),
+            };
         }
     });
 
