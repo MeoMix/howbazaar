@@ -424,7 +424,6 @@
 <div
     class={`rounded-lg relative ${viewMode === "full" ? "border" : ""} text-gray-900 dark:bg-bazaar-background dark:text-bazaar-tan700 dark:border-bazaar-orange scroll-mt-[80px]`}
     {id}
-    use:tooltip={tooltipData()}
 >
     <div
         class="grid grid-cols-[70%_30%] md:grid-cols-[80%_20%] lg:grid-cols-[85%_15%]"
@@ -447,6 +446,7 @@
             <div class={`flex items-center mb-2`}>
                 <h2
                     class={`text-2xl font-semibold ${viewMode === "compact" ? "text-bazaar-orange" : ""}`}
+                    use:tooltip={tooltipData()}
                 >
                     {patch.metadata.name}
                     <CopyLinkButton {id} name={patch.metadata.name} />
