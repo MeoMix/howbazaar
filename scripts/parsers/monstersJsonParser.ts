@@ -1,5 +1,5 @@
 
-import type { EnchantmentType, ParsedMonster } from "../types";
+import type { EnchantmentType, ParsedMonster } from "$lib/types";
 import type { MonstersJson } from "./types.parser";
 
 export function parseJson(monstersJson: MonstersJson): ParsedMonster[] {

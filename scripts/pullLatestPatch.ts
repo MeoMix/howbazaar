@@ -4,7 +4,7 @@ import fetch from 'node-fetch';
 
 const CARDS_URL = 'https://cdn.playthebazaar.com/bazaardesigndataprod/cards.json';
 const TIMESTAMP_FILE = './scripts/cardsJsonLastModified.txt';
-const OUTPUT_DIR = './src/lib/parsers/data';
+const OUTPUT_DIR = './scripts/parsers/data';
 
 async function getStoredTimestamp(): Promise<string | null> {
     try {

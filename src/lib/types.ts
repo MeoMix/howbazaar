@@ -96,6 +96,11 @@ export type ParsedCombatEncounterCard = {
     monsterTemplateId: string;
 };
 
+export type ParsedMerchantCard = {
+    id: string;
+    name: string;
+}
+
 export type ParsedMonster = {
     id: string;
     level: number;

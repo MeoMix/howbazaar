@@ -48,15 +48,7 @@ describe('cardJsonParser', () => {
         'When you use the Core or another Ray, your Weapons gain (+2/+4/+6/+8) Damage for the fight.'
       );
     });
-
-    // it('should unify Ambergris', () => {
-    //   const ambergris = itemCards.find(card => card.name === "Ambergris")!;
-
-    //   expect(ambergris.unifiedTooltips[2]).toEqual(
-    //     'When you buy another Aquatic item, this gains (1/2/3/4) Value.'
-    //   );
-    // });
-
+    
     it('should unify Atlas Stone (no changes)', () => {
       const atlasStone = itemCards.find(card => card.name === "Atlas Stone")!;
 

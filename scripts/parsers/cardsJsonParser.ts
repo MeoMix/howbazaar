@@ -2,7 +2,7 @@
 // I think I can generate a better typedef by interfacing with quicktype-core rather than the CLI
 // https://github.com/glideapps/quicktype?tab=readme-ov-file#calling-quicktype-from-javascript
 import type { Entries } from "type-fest";
-import type { ParsedCombatEncounterCard, ParsedItemCard, ParsedSkillCard } from "$lib/types";
+import type { ParsedCombatEncounterCard, ParsedItemCard, ParsedMerchantCard, ParsedSkillCard } from "$lib/types";
 import type { V2CardsD as Card, Bronze as Tier, Tiers, Tier as TierType, AbilityAction, AuraAction, Ability, Aura, Operation, Origin } from "./data/cards";
 import { unifyTooltips } from "$lib/utils/tooltipUtils";
 import type { CardsJson } from "./types.parser";
@@ -394,6 +394,7 @@ function filterTooltipsByStartingTier(
 type ValidItemCard = Card & { Tiers: Tiers, Type: "Item", Localization: { Title: { Text: string } } };
 type ValidSkillCard = Card & { Tiers: Tiers, Type: "Skill", Localization: { Title: { Text: string } } };
 type ValidCombatEncounterCard = Card & { Type: "CombatEncounter", Localization: { Title: { Text: string } }, CombatantType: { MonsterTemplateId: string; } };
+type ValidMerchantCard = Card & { Type: "EventEncounter", Localization: { Title: { Text: string } }, Tags: ["Merchant"] };
 
 // Helper function to check for invalid keywords in a string
 function hasInvalidKeywords(text: string): boolean {
@@ -825,7 +826,6 @@ function parseSkillCards(cardsJson: CardsJson): ParsedSkillCard[] {
 function parseCombatEncounterCards(cardsJson: CardsJson) {
     const isEncounter = (entry: Card): entry is ValidCombatEncounterCard =>
         entry.Type === "CombatEncounter" &&
-        // entry.SpawningEligibility !== "Never" &&
         entry.CombatantType !== undefined &&
         (monsterTemplateIdMapping as any)[entry.Id] &&
         entry.Localization.Title.Text !== null &&
@@ -845,18 +845,41 @@ function parseCombatEncounterCards(cardsJson: CardsJson) {
     return cards;
 }
 
+function parseMerchantCards(cardsJson: CardsJson) {
+    const isMerchant = (entry: Card):  entry is ValidMerchantCard =>
+        entry.Type === "EventEncounter" &&
+        entry.Tags.includes("Merchant") &&
+        entry.Localization.Title.Text !== null &&
+        !hasInvalidKeywords(entry.Localization.Title.Text) &&
+        !hasInvalidKeywords(entry.InternalName);
+
+    const validCards = Object.values(cardsJson).flat().filter(isMerchant);
+
+    const cards = validCards.map((card) => {
+        return {
+            id: card.Id,
+            name: card.Localization.Title.Text,
+        }
+    });
+
+    return cards;
+}
+
 export function parseJson(cardsJson: CardsJson): {
     itemCards: ParsedItemCard[],
     skillCards: ParsedSkillCard[],
     combatEncounterCards: ParsedCombatEncounterCard[],
+    merchantCards: ParsedMerchantCard[]
 } {
     const itemCards = parseItemCards(cardsJson);
     const skillCards = parseSkillCards(cardsJson);
     const combatEncounterCards = parseCombatEncounterCards(cardsJson);
+    const merchantCards = parseMerchantCards(cardsJson);
 
     return {
         itemCards,
         skillCards,
         combatEncounterCards,
+        merchantCards
     };
 }

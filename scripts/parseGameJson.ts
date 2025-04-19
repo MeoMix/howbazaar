@@ -1,12 +1,12 @@
 import fs from 'fs';
 import path from 'path';
-import cardsJson from '../src/lib/parsers/data/cards.json' with { type: "json" };
-import monstersJson from '../src/lib/parsers/data/v2_Monsters.json' with { type: "json" };
-import dayHoursJson from '../src/lib/parsers/data/v2_DayHours.json' with { type: "json" };
-import { parseJson as parseCardsJson } from '../src/lib/parsers/cardsJsonParser.ts';
-import { parseJson as parseMonstersJson } from '../src/lib/parsers/monstersJsonParser.ts';
-import { parseJson as parseDayHoursJson } from '../src/lib/parsers/dayHoursJsonParser.ts';
-import type { CardsJson, DayHoursJson, MonstersJson } from '../src/lib/parsers/types.parser';
+import cardsJson from './parsers/data/cards.json' with { type: "json" };
+import monstersJson from './parsers/data/v2_Monsters.json' with { type: "json" };
+import dayHoursJson from './parsers/data/v2_DayHours.json' with { type: "json" };
+import { parseJson as parseCardsJson } from './parsers/cardsJsonParser.ts';
+import { parseJson as parseMonstersJson } from './parsers/monstersJsonParser.ts';
+import { parseJson as parseDayHoursJson } from './parsers/dayHoursJsonParser.ts';
+import type { CardsJson, DayHoursJson, MonstersJson } from './parsers/types.parser';
 
 async function parseGameJson() {
     try {
@@ -14,7 +14,8 @@ async function parseGameJson() {
         const {
             itemCards,
             skillCards,
-            combatEncounterCards
+            combatEncounterCards,
+            merchantCards
         } = parseCardsJson(cardsJson as CardsJson);
         const monsters = parseMonstersJson(monstersJson as MonstersJson);
         const dayHours = parseDayHoursJson(dayHoursJson as DayHoursJson);
@@ -23,6 +24,7 @@ async function parseGameJson() {
         writeTypeScriptDefaultExport('parsedItemCards', itemCards, 'ParsedItemCard');
         writeTypeScriptDefaultExport('parsedSkillCards', skillCards, 'ParsedSkillCard');
         writeTypeScriptDefaultExport('parsedCombatEncounterCards', combatEncounterCards, 'ParsedCombatEncounterCard');
+        writeTypeScriptDefaultExport('parsedMerchantCards', merchantCards, 'ParsedMerchantCard');
         writeTypeScriptDefaultExport('parsedMonsters', monsters, 'ParsedMonster');
         writeTypeScriptDefaultExport('parsedDayHours', dayHours, 'ParsedDayHour');
     } catch (error) {
