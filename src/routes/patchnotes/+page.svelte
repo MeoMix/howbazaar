@@ -169,6 +169,12 @@
         </p>
     </div>
 
+    {#if itemPatchNotes.length === 0 && skillPatchNotes.length === 0}
+        <div class="text-center py-8">
+            <p class="font-bold text-lg text-bazaar-orange">There were no changes to the game with this weeks downtime. It was just server maintenance.</p>
+        </div>
+    {/if}
+
     {#if Object.values(itemsByHero).some((group) => group.length > 0)}
         {#each Object.entries(itemsByHero) as [hero, heroItems]}
             {#if heroItems.length > 0}
