@@ -1,4 +1,4 @@
-import type { ClientSideItemCard, ClientSideMonsterEncounter, ClientSideSkillCard, Hero, HiddenTag, ItemSortOption, ItemSearchLocationOption, Size, SkillSortOption, Tag, TierType, TriState, SkillSearchLocationOption, MonsterSearchLocationOption, AllSearchLocationOption } from "$lib/types";
+import type { ClientSideItemCard, ClientSideMonsterEncounter, ClientSideSkillCard, Hero, HiddenTag, ItemSortOption, Size, SkillSortOption, Tag, TierType, TriState, MonsterSearchLocationOption, AllSearchLocationOption, ClientSideMerchantCard } from "$lib/types";
 import type { Entries } from "type-fest";
 
 export const heroOrder = ["Vanessa", "Pygmalien", "Dooley", "Jules", "Stelle", "Mak", "Common"] as const;
@@ -60,7 +60,7 @@ function matchesTier(cardTier: TierType, selectedTiers: TierType[]): boolean {
 function matchesTagState(
     cardTags: string[],
     cardHiddenTags: string[],
-    tagStates: Record<Tag | HiddenTag, TriState>,
+    tagStates: Partial<Record<Tag | HiddenTag, TriState>>,
     isMatchAnyTag: boolean
 ): boolean {
     // Convert to Sets for quick "has" checks
@@ -192,7 +192,7 @@ export function filterItemCards(
     cards: ClientSideItemCard[],
     selectedHeroes: Hero[],
     selectedTiers: TierType[],
-    tagStates: Record<Tag | HiddenTag, TriState>,
+    tagStates: Partial<Record<Tag | HiddenTag, TriState>>,
     selectedSizes: Size[],
     isMatchAnyTag: boolean,
     isMonsterDropsOnly: boolean,
@@ -214,7 +214,7 @@ export function filterSkillCards(
     cards: ClientSideSkillCard[],
     heroStates: Record<Hero, TriState>,
     selectedTiers: TierType[],
-    tagStates: Record<Tag | HiddenTag, TriState>,
+    tagStates: Partial<Record<Tag | HiddenTag, TriState>>,
     isMatchAnyTag: boolean,
     isMatchAnyHero: boolean,
     isMonsterDropsOnly: boolean,
@@ -237,7 +237,7 @@ export function searchCards<T extends ClientSideItemCard | ClientSideSkillCard>(
     searchMode: AllSearchLocationOption
 ): T[] {
     const lowerSearchText = searchText.trim().toLowerCase();
-    
+
     return cards.filter(card => matchesCardSearchText(card, lowerSearchText, searchMode));
 }
 
@@ -250,6 +250,17 @@ export function searchMonsters(
 
     return monsters.filter(monster =>
         matchesMonsterSearchText(monster, lowerSearchText, searchMode)
+    );
+}
+
+export function searchMerchants(
+    merchants: ClientSideMerchantCard[],
+    searchText: string,
+) {
+    const lowerSearchText = searchText.trim().toLowerCase();
+
+    return merchants.filter(merchant =>
+        true
     );
 }
 

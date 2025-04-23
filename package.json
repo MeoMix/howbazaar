@@ -16,7 +16,8 @@
 		"processMonsterImages": "tsx scripts/processMonsterImages.ts",
 		"processItemImages": "tsx scripts/processItemImages.ts",
 		"upload:images": "tsx scripts/uploadImagesToBunnyCDN.ts",
-		"pullLatestPatch": "tsx scripts/pullLatestPatch.ts"
+		"pullLatestPatch": "tsx scripts/pullLatestPatch.ts",
+		"generateMerchantFilterMapping": "tsx scripts/parsers/generateMerchantFilterMapping.ts"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-vercel": "^5.4.7",

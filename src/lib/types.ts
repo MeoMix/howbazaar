@@ -99,6 +99,22 @@ export type ParsedCombatEncounterCard = {
 export type ParsedMerchantCard = {
     id: string;
     name: string;
+    heroes: Hero[];
+    description: string;
+}
+
+export type ClientSideMerchantCard = {
+    id: string;
+    name: string;
+    heroes: Hero[];
+    description: string;
+    filters: {
+        sizes?: Size[];
+        tagStates?: Partial<Record<Tag | HiddenTag, TriState>>;
+        tiers?: TierType[];
+        // TODO: heroes?
+        heros?: Hero[];
+    }
 }
 
 export type ParsedMonster = {
@@ -172,6 +188,11 @@ export type SkillsApiResponse = {
 
 export type MonsterEncounterDaysApiResponse = {
     data: ClientSideMonsterEncounterDay[];
+    version: string;
+}
+
+export type MerchantsApiResponse = {
+    data: ClientSideMerchantCard[];
     version: string;
 }
 

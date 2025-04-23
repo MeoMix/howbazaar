@@ -17,7 +17,7 @@ const disallowedCardPacks = [
 ] as string[];
 
 // Keywords that indicate a card should be filtered out
-const invalidKeywords = ["[", "]", "Debug", "Test"] as const;
+const invalidKeywords = ["[", "]", "Debug", "Test", "Tutorial"] as const;
 
 const tierOrder: TierType[] = ["Bronze", "Silver", "Gold", "Diamond", "Legendary"];
 
@@ -394,7 +394,7 @@ function filterTooltipsByStartingTier(
 type ValidItemCard = Card & { Tiers: Tiers, Type: "Item", Localization: { Title: { Text: string } } };
 type ValidSkillCard = Card & { Tiers: Tiers, Type: "Skill", Localization: { Title: { Text: string } } };
 type ValidCombatEncounterCard = Card & { Type: "CombatEncounter", Localization: { Title: { Text: string } }, CombatantType: { MonsterTemplateId: string; } };
-type ValidMerchantCard = Card & { Type: "EventEncounter", Localization: { Title: { Text: string } }, Tags: ["Merchant"] };
+type ValidMerchantCard = Card & { Type: "EventEncounter", Localization: { Title: { Text: string }; Description: { Text: string } }, Tags: ["Merchant"] };
 
 // Helper function to check for invalid keywords in a string
 function hasInvalidKeywords(text: string): boolean {
@@ -846,12 +846,17 @@ function parseCombatEncounterCards(cardsJson: CardsJson) {
 }
 
 function parseMerchantCards(cardsJson: CardsJson) {
-    const isMerchant = (entry: Card):  entry is ValidMerchantCard =>
+    // TODO: In the future can add support for Jules and Stelle. No need to show a merchant that can't be encountered
+    // by the player.
+    const allowedHeroes = ["Vanessa", "Pygmalien", "Dooley", "Mak", "Common"] as const;
+    
+    const isMerchant = (entry: Card): entry is ValidMerchantCard =>
         entry.Type === "EventEncounter" &&
         entry.Tags.includes("Merchant") &&
         entry.Localization.Title.Text !== null &&
         !hasInvalidKeywords(entry.Localization.Title.Text) &&
-        !hasInvalidKeywords(entry.InternalName);
+        !hasInvalidKeywords(entry.InternalName) &&
+        entry.Heroes.some(hero => allowedHeroes.includes(hero as any)); // Cast needed since Hero type includes Jules and Stelle
 
     const validCards = Object.values(cardsJson).flat().filter(isMerchant);
 
@@ -859,6 +864,9 @@ function parseMerchantCards(cardsJson: CardsJson) {
         return {
             id: card.Id,
             name: card.Localization.Title.Text,
+            heroes: card.Heroes,
+            description: card.Localization.Description.Text,
+            // TODO: Reroll cost seems useful but not immediately.
         }
     });
 

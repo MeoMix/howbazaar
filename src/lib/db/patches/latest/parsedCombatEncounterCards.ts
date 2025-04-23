@@ -549,11 +549,6 @@ const data: ParsedCombatEncounterCard[] = [
     "monsterTemplateId": "e27b5f5f-2b71-42c5-a839-37e0aca0a8a5"
   },
   {
-    "id": "1ea147f3-5712-4333-b347-8fd65d08f009",
-    "name": "Fanged Inglet",
-    "monsterTemplateId": "d7391818-e677-4c98-994d-71e25ed2d41c"
-  },
-  {
     "id": "45de3316-8847-4321-ba1c-83a808bad369",
     "name": "Frost Street Champion",
     "monsterTemplateId": "e873dbd7-86aa-4fec-9206-28591346939a"

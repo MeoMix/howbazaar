@@ -198,6 +198,11 @@
             >
             <NavLi
                 class="md:p-4"
+                href={`/merchants${$page.url.search}`}
+                on:click={onNavLiClick}>Merchants</NavLi
+            >
+            <NavLi
+                class="md:p-4"
                 href={`/contact${$page.url.search}`}
                 on:click={onNavLiClick}>Contact</NavLi
             >

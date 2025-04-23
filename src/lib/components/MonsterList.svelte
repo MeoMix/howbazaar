@@ -33,6 +33,18 @@
     let hasError = $state(false);
     let monsterEncounterDays = $state([] as ClientSideMonsterEncounterDay[]);
 
+    onMount(() => {
+        const unsubscribe = monsterEncounterDaysStore.subscribe((state) => {
+            monsterEncounterDays = state.monsterEncounterDays;
+            isLoading = state.isLoading;
+            hasError = state.hasError;
+        });
+
+        monsterEncounterDaysStore.load(serverVersion); // Ensures we fetch fresh data if needed
+
+        return unsubscribe;
+    });
+
     const filteredMonsterEncounterDays = $derived(
         selectedDay === undefined
             ? monsterEncounterDays
@@ -47,7 +59,7 @@
                       encounter.groups.flatMap((group) => group),
                   ),
                   searchText,
-                  selectedSearchLocationOption
+                  selectedSearchLocationOption,
               ),
     );
 
@@ -74,18 +86,6 @@
             }
         }
     }
-
-    onMount(() => {
-        const unsubscribe = monsterEncounterDaysStore.subscribe((state) => {
-            monsterEncounterDays = state.monsterEncounterDays;
-            isLoading = state.isLoading;
-            hasError = state.hasError;
-        });
-
-        monsterEncounterDaysStore.load(serverVersion); // Ensures we fetch fresh data if needed
-
-        return unsubscribe;
-    });
 </script>
 
 {#snippet listItem(monsterEncounter: ClientSideMonsterEncounter)}
