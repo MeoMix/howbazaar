@@ -3,7 +3,7 @@ import { PUBLIC_CDN_URL } from '$env/static/public';
 
 const useLocalImages = false;
 
-export function getImageUrl(type: string, id: string): string {
+export function getImageUrl(type: "items" | "skills" | "monsters" | "merchants", id: string): string {
     if (useLocalImages) {
         return `/images/${type}/${id}.avif`;
     }

@@ -4,12 +4,34 @@
     import MerchantCardImage from "./MerchantCardImage.svelte";
     import CardBadges from "./CardBadges.svelte";
     import { tooltip } from "$lib/actions/tooltip.svelte";
+    import UnifiedTooltips from "./UnifiedTooltips.svelte";
+    import { filterTags } from "$lib/utils/filterUtils";
 
     const {
         card,
     }: {
         card: ClientSideItemCard;
     } = $props();
+
+    const tags = $derived(filterTags(card.tags, card.hiddenTags));
+
+    // TODO: Move this to a util file rather than copy/pasting.
+    function getPackName(packId: ClientSideItemCard["packId"]): string {
+        // First replace underscores with spaces
+        let packName = packId.replace(/_/g, " ");
+
+        // Remove any hero names from the pack name
+        for (const hero of card.heroes) {
+            packName = packName.replace(hero, "").trim();
+        }
+
+        // Append "Expansion" to the name
+        return `${packName} Expansion`;
+    }
+
+    function shouldShowPackName(packId: string): boolean {
+        return !packId.toLowerCase().includes("core");
+    }
 </script>
 
 <div
@@ -23,18 +45,41 @@
         size={card.size}
     />
 
-    <div class="flex flex-col px-4 pb-4 py-2 relative">
-        <div class="flex flex-col gap-2 relative">
+    <div class="flex flex-col px-0 pb-4 py-2 relative">
+        <div class="px-4 flex flex-col gap-2 relative">
             <div class="font-bold text-lg md:text-xl">
                 {card.name}
             </div>
             <CardBadges
                 primaryBadges={[
-                    ...card.tags.map((text) => ({ text, showIcon: true })),
+                    {
+                        text: `${card.startingTier}${card.startingTier === "Legendary" ? "" : "+"}`,
+                        color: card.startingTier.toLowerCase(),
+                        showIcon: false,
+                    },
+                    ...[
+                        ...card.heroes,
+                        card.size,
+                        ...(shouldShowPackName(card.packId)
+                            ? [getPackName(card.packId)]
+                            : []),
+                    ].map((text) => ({
+                        text,
+                        showIcon: false,
+                    })),
                 ]}
+                secondaryBadges={tags.map((text) => ({ text, showIcon: true }))}
             />
 
             <Divider />
+        </div>
+        <div
+            class={`col-start-1 row-start-2 col-span-2 md:col-span-1 px-4 pb-4`}
+        >
+            <UnifiedTooltips
+                unifiedTooltips={card.unifiedTooltips}
+                startingTier={card.startingTier}
+            />
         </div>
     </div>
 </div>

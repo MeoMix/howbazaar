@@ -1,4 +1,4 @@
-import type { ClientSideItemCard, ClientSideMonsterEncounter, ClientSideSkillCard, Hero, HiddenTag, ItemSortOption, Size, SkillSortOption, Tag, TierType, TriState, MonsterSearchLocationOption, AllSearchLocationOption, ClientSideMerchantCard } from "$lib/types";
+import type { ClientSideItemCard, ClientSideMonsterEncounter, ClientSideSkillCard, Hero, HiddenTag, ItemSortOption, Size, SkillSortOption, Tag, TierType, TriState, MonsterSearchLocationOption, AllSearchLocationOption, ClientSideMerchantCard, MerchantSearchLocationOption } from "$lib/types";
 import type { Entries } from "type-fest";
 
 export const heroOrder = ["Vanessa", "Pygmalien", "Dooley", "Jules", "Stelle", "Mak", "Common"] as const;
@@ -186,6 +186,31 @@ function matchesMonsterSearchText(
     return false;
 }
 
+function matchesMerchantSearchText(
+    merchant: ClientSideMerchantCard,
+    merchantItemsMap: Map<string, ClientSideItemCard[]>,
+    lowerSearchText: string,
+    searchMode: MerchantSearchLocationOption
+): boolean {
+    if (lowerSearchText === '') return true;
+
+    // Split the search text by | to support searching for multiple terms
+    const searchTerms = lowerSearchText.split('|').map(term => term.trim()).filter(term => term !== '');
+
+    // If there are no valid search terms after splitting, return true
+    if (searchTerms.length === 0) return true;
+
+    // Check if any of the search terms match
+    for (const term of searchTerms) {
+        if (substringMatch(merchant.name, term) ||
+            (merchantItemsMap.get(merchant.id) ?? []).filter(item => matchesCardSearchText(item, term, searchMode)).length > 0) {
+            return true;
+        }
+    }
+
+    return false;
+}
+
 const latestExpansions = new Set(["Dooley_Dooltron", "Vanessa_The_Gang"]);
 
 export function filterItemCards(
@@ -255,12 +280,14 @@ export function searchMonsters(
 
 export function searchMerchants(
     merchants: ClientSideMerchantCard[],
+    merchantItemsMap: Map<string, ClientSideItemCard[]>,
     searchText: string,
+    searchMode: MerchantSearchLocationOption,
 ) {
     const lowerSearchText = searchText.trim().toLowerCase();
 
     return merchants.filter(merchant =>
-        true
+        matchesMerchantSearchText(merchant, merchantItemsMap, lowerSearchText, searchMode)
     );
 }
 

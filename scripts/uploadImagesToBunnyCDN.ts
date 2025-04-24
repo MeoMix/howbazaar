@@ -86,23 +86,17 @@ const getFiles = async (dir: string): Promise<string[]> => {
 // Returns a list of image files that have been added, modified, or untracked.
 // Does not include deleted files.
 function getChangedImageFiles(): string[] {
-    const output = execSync(`git status --porcelain`, { encoding: "utf-8" });
+    const trackedOutput = execSync(`git diff --name-only --diff-filter=AM`, { encoding: "utf-8" });
+    const untrackedOutput = execSync(`git ls-files --others --exclude-standard`, { encoding: "utf-8" });
 
-    return output
-        .split("\n")
+    const allFiles = [...trackedOutput.split("\n"), ...untrackedOutput.split("\n")]
         .map(line => line.trim())
-        .filter(line => line.length > 0)
-        .map(line => ({
-            status: line.slice(0, 2).trim(),
-            file: line.slice(3)
-        }))
-        .filter(({ status, file }) =>
-            // Only include added (A), modified (M), or untracked (??)
-            /^(A|M|\?\?)$/.test(status) &&
+        .filter(file =>
             file.startsWith("static/images/") &&
             /\.(png|jpe?g|gif|webp|avif)$/i.test(file)
-        )
-        .map(({ file }) => file);
+        );
+
+    return Array.from(new Set(allFiles)); // remove any duplicates just in case
 }
 
 // Upload specific files

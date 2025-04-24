@@ -1,15 +1,30 @@
-import type { MerchantsApiResponse } from "$lib/types";
+import type { ItemsApiResponse, MerchantsApiResponse } from "$lib/types";
 import { getCardFilterOptions } from "$lib/utils/filterUtils";
 
 export async function load({ fetch }) {
-    const response = await fetch('/api/merchants');
+    const merchantsResponse = await fetch('/api/merchants');
 
-    if (!response.ok) {
-        throw new Error(`Failed to load merchants: ${response.statusText}`);
+    if (!merchantsResponse.ok) {
+        throw new Error(`Failed to load merchants: ${merchantsResponse.statusText}`);
     }
 
-    const { data: merchants, version }: MerchantsApiResponse = await response.json();
-    // const { heroOptions, tagOptions, minimumTierOptions, sizeOptions } = getCardFilterOptions(merchants)
+    const { version }: MerchantsApiResponse = await merchantsResponse.json();
 
-    return { version };
+    const itemsResponse = await fetch('/api/items');
+
+    if (!itemsResponse.ok) {
+        throw new Error(`Failed to load items: ${itemsResponse.statusText}`);
+    }
+
+    const { data: items }: ItemsApiResponse = await itemsResponse.json();
+
+    const { heroOptions, tagOptions, minimumTierOptions, sizeOptions } = getCardFilterOptions(items);
+
+    return {
+        heroOptions,
+        tagOptions,
+        minimumTierOptions,
+        sizeOptions,
+        version,
+    };
 }

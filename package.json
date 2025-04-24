@@ -14,6 +14,7 @@
 		"generatePatchNotes": "tsx scripts/generatePatchNotes.ts",
 		"processSkillImages": "tsx scripts/processSkillImages.ts",
 		"processMonsterImages": "tsx scripts/processMonsterImages.ts",
+		"processMerchantImages": "tsx scripts/processMerchantImages.ts",
 		"processItemImages": "tsx scripts/processItemImages.ts",
 		"upload:images": "tsx scripts/uploadImagesToBunnyCDN.ts",
 		"pullLatestPatch": "tsx scripts/pullLatestPatch.ts",

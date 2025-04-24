@@ -15,9 +15,11 @@
         {monsterEncounter.cardName}
 
         ·
-        
+
         <span class={`text-xl text-green-700 whitespace-nowrap`}>
-            {monsterEncounter.health === -1 ? "<Unknown>" : monsterEncounter.health} health
+            {monsterEncounter.health === -1
+                ? "<Unknown>"
+                : monsterEncounter.health} health
         </span>
 
         ·

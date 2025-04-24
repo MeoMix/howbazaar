@@ -3,10 +3,21 @@
     import type {
         ClientSideItemCard,
         ClientSideMerchantCard,
+        Hero,
+        HiddenTag,
+        MerchantSearchLocationOption,
+        Size,
+        Tag,
+        TierType,
+        TriState,
     } from "$lib/types";
     import { merchantsStore } from "$lib/stores/merchantsStore";
     import LazyLoadList from "./LazyLoadList.svelte";
-    import { searchMerchants } from "$lib/utils/filterUtils";
+    import {
+        filterItemCards,
+        searchCards,
+        searchMerchants,
+    } from "$lib/utils/filterUtils";
     import MerchantCard from "./MerchantCard.svelte";
     import MerchantPreview from "./MerchantPreview.svelte";
     import { itemsStore } from "$lib/stores/itemsStore";
@@ -15,14 +26,26 @@
         serverVersion,
         searchText,
         selectedMerchant,
+        selectedSearchLocationOption,
         isHiddenWhenEmpty,
         initialLoad = true,
+        selectedHeroes,
+        selectedTiers,
+        tagStates,
+        selectedSizes,
+        isMatchAnyTag,
     }: {
         serverVersion: string;
         searchText: string;
+        selectedSearchLocationOption: MerchantSearchLocationOption;
         selectedMerchant: ClientSideMerchantCard | undefined;
         isHiddenWhenEmpty: boolean;
         initialLoad?: boolean;
+        selectedHeroes: Hero[];
+        selectedTiers: TierType[];
+        tagStates: Record<Tag | HiddenTag, TriState>;
+        selectedSizes: Size[];
+        isMatchAnyTag: boolean;
     } = $props();
 
     let isLoadingMerchants = $state(false);
@@ -56,10 +79,60 @@
         };
     });
 
+    const filteredItems = $derived(
+        filterItemCards(
+            items,
+            selectedHeroes,
+            selectedTiers,
+            tagStates,
+            selectedSizes,
+            isMatchAnyTag,
+            false,
+            "unset",
+        ),
+    );
+
+    const searchedItems = $derived(
+        searchCards(filteredItems, searchText, selectedSearchLocationOption),
+    );
+
     const filteredMerchants = $derived(merchants.filter(() => true));
 
+    const merchantItemsMap = $derived(
+        new Map(
+            filteredMerchants.map((merchant) => [
+                merchant.id,
+                filterItemCards(
+                    searchedItems,
+                    merchant.filters.heros ?? [],
+                    merchant.filters.tiers ?? [],
+                    merchant.filters.tagStates ?? {},
+                    merchant.filters.sizes ?? [],
+                    true,
+                    false,
+                    "unset",
+                ),
+            ]),
+        ),
+    );
+
+    const isSearchFilterApplied = $derived(
+        searchText !== "" ||
+            selectedHeroes.length > 0 ||
+            selectedTiers.length > 0 ||
+            selectedSizes.length > 0 ||
+            Object.values(tagStates).some((state) => state !== "unset"),
+    );
+
     const searchedMerchants = $derived(
-        searchText === "" ? [] : searchMerchants(filteredMerchants, searchText),
+        !isSearchFilterApplied
+            ? []
+            : searchMerchants(
+                  filteredMerchants,
+                  merchantItemsMap,
+                  searchText,
+                  selectedSearchLocationOption,
+              ),
     );
 
     async function toggleMerchant(merchant: ClientSideMerchantCard) {
@@ -86,12 +159,15 @@
 </script>
 
 {#snippet listItem(merchant: ClientSideMerchantCard)}
-    <MerchantCard {merchant} {items} />
+    <MerchantCard
+        {merchant}
+        merchantItems={merchantItemsMap.get(merchant.id) ?? []}
+    />
 {/snippet}
 
 {#if isLoadingMerchants || isLoadingItems}
     <div>Loading merchants...</div>
-{:else if searchedMerchants.length > 0 || (!isHiddenWhenEmpty && searchText != "")}
+{:else if searchedMerchants.length > 0 || (!isHiddenWhenEmpty && isSearchFilterApplied)}
     <div class="mb-8">
         <LazyLoadList
             items={searchedMerchants}
@@ -108,10 +184,13 @@
                 {toggleMerchant}
                 isActive={selectedMerchant?.id === merchant.id}
             />
-
-            {#if merchant.id === selectedMerchant?.id}
-                <MerchantCard merchant={selectedMerchant} {items} />
-            {/if}
         {/each}
     </div>
+
+    {#if selectedMerchant?.id}
+        <MerchantCard
+            merchant={selectedMerchant}
+            merchantItems={merchantItemsMap.get(selectedMerchant.id) ?? []}
+        />
+    {/if}
 {/if}
