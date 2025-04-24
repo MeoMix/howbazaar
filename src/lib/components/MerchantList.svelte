@@ -96,11 +96,9 @@
         searchCards(filteredItems, searchText, selectedSearchLocationOption),
     );
 
-    const filteredMerchants = $derived(merchants.filter(() => true));
-
     const merchantItemsMap = $derived(
         new Map(
-            filteredMerchants.map((merchant) => [
+            merchants.map((merchant) => [
                 merchant.id,
                 filterItemCards(
                     searchedItems,
@@ -113,6 +111,12 @@
                     "unset",
                 ),
             ]),
+        ),
+    );
+
+    const filteredMerchants = $derived(
+        merchants.filter(
+            (merchant) => (merchantItemsMap.get(merchant.id) ?? []).length > 0,
         ),
     );
 
