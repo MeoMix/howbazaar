@@ -25,7 +25,7 @@ export const merchantFilterMapping: { [key: string]: { name: string, tagStates?:
     "2745a661-095c-44a5-bb6e-8dc76e07bda2": { name: "Knightshade", tagStates: { Poison: "on" } },
     "892de564-d894-4e07-ab21-959e16e8cdf8": { name: "Luxe", tierFilter: ["Diamond"] },
     "4475cff5-6105-4f4a-978c-b282e36173eb": { name: "Mak", heroFilter: ["Mak"] },
-    "b8f55bb0-536e-4d5f-a328-d38f88c6d479": { name: "Midsworth", sizeFilter: ["Small", "Medium"] },
+    "b8f55bb0-536e-4d5f-a328-d38f88c6d479": { name: "Midsworth", sizeFilter: ["Small", "Large"] },
     "912c8b09-3b76-4aa1-8e21-245e0dfb5046": { name: "Mittel", sizeFilter: ["Medium"] },
     "e30d8bef-5bea-4e95-b4c2-e29e17325a82": { name: "Mr. Morland", tagStates: { Property: "on" }, heroFilter: ["Pygmalien"] },
     "1a21931f-6183-4251-914b-c8f83dc58a30": { name: "Nautica", tagStates: { Aquatic: "on" }, heroFilter: ["Vanessa"] },
