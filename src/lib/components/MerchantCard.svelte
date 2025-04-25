@@ -27,7 +27,7 @@
     </div>
 {/snippet}
 
-<div class="mt-8 scroll-mb-[8px] scroll-mt-[80px]" {id}>
+<div class="mt-8 scroll-mb-[8px]" {id}>
     <div class="font-bold text-2xl mb-2">
         {merchant.name}
 

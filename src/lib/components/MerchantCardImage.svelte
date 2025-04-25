@@ -30,6 +30,13 @@
 <div class="relative overflow-hidden rounded-md mx-auto w-full pb-[66.6667%]">
     <img
         src={imageUrl}
+        alt={`${name} background`}
+        class="absolute inset-0 w-full h-full object-cover blur-xl brightness-50"
+        aria-hidden="true"
+    />
+
+    <img
+        src={imageUrl}
         alt={name}
         class={`absolute top-0 bottom-0 left-0 right-0 mx-auto ${getWidthClass()} h-full object-fill`}
     />
