@@ -57,7 +57,7 @@
 </script>
 
 <div
-    class={`rounded-lg h-full relative text-gray-900 border dark:bg-bazaar-background dark:text-bazaar-tan700`}
+    class={`rounded-lg h-full relative text-gray-900 border dark:bg-bazaar-background dark:text-bazaar-tan700 dark:border-bazaar-orange`}
     use:tooltip={{ item: card }}
 >
     <MerchantCardImage
