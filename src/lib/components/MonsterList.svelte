@@ -100,6 +100,7 @@
             items={searchedMonsters}
             {listItem}
             listItemName="monster"
+            listClasses="space-y-4"
             {initialLoad}
         />
     </div>

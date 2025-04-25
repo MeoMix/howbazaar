@@ -127,5 +127,6 @@
         {listItem}
         {headerControls}
         listItemName="item"
+        listClasses="space-y-4"
     />
 {/if}

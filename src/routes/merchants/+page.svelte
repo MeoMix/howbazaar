@@ -45,6 +45,7 @@
         reach out on Discord and provide feedback on how you'd like it to function.
     </div>
 
+    <!-- TODO: Don't shoe Legendary filter or Core tag. -->
     <MerchantFilters
         heroOptions={data.heroOptions}
         minimumTierOptions={data.minimumTierOptions}

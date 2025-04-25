@@ -41,7 +41,7 @@ export const merchantFilterMapping: { [key: string]: { name: string, tagStates?:
     // TODO: Would be nice to only show Silver+ tier details.
     "ec81a27c-590c-43a1-a353-804a23b5e5d9": { name: "Silvia" },
     "e48b3243-1e7e-4a97-bf4f-0699fd0b4616": { name: "Stelle", heroFilter: ["Stelle"] },
-    // TODO: Any hero?
+    // TODO: Want is missing because it's from Common/Core, but need to exclude piggles.
     "22bb0004-5131-4588-a567-03ee3c96003b": { name: "Tatiana", tagStates: { Toy: "on" } },
     "b1b1f445-e625-4397-b4e2-ee4feeb729fa": { name: "Tinker", tagStates: { Friend: "on" } },
     "3e871bbb-fb25-417f-8643-cb43456c3fc7": { name: "Tok's Clocks", tagStates: { Haste: "on", Slow: "on", Cooldown: "on" } },
