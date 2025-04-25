@@ -9,6 +9,10 @@ export function getMerchants(
     const mappedMerchantCards = merchantCards.map(merchantCard => {
         const filterMapping = merchantFilterMapping[merchantCard.id];
 
+        if (!filterMapping) {
+            throw new Error(`No filter mapping found for merchant card ${merchantCard.id}`);
+        }
+
         return {
             ...merchantCard,
             filters: {
