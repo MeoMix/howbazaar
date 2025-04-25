@@ -39,6 +39,12 @@
 <div
     class="w-full max-w-full sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl"
 >
+    <div class="text-lg mt-4 text-red-500">
+        Hi! I know the UX for this isn't quite right yet. I'll work on improving
+        it over the upcoming days. Just wanted to ship something. Feel free to
+        reach out on Discord and provide feedback on how you'd like it to function.
+    </div>
+
     <MerchantFilters
         heroOptions={data.heroOptions}
         minimumTierOptions={data.minimumTierOptions}
