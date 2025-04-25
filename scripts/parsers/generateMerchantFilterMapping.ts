@@ -3,20 +3,23 @@ import fs from 'fs';
 import path from 'path';
 
 // Create the mapping object
-const merchantFilterMapping: { [key: string]: { name: string } } = {};
+const merchantFilterMapping: { [key: string]: { name: string, heroes: string[] } } = {};
 
 // Populate the mapping from the parsed merchant cards
 data.forEach(merchant => {
-    merchantFilterMapping[merchant.id] = { name: merchant.name };
+    merchantFilterMapping[merchant.id] = { 
+        name: merchant.name,
+        heroes: merchant.heroes
+    };
 });
 
 // Convert to string format with custom formatting
 const entries = Object.entries(merchantFilterMapping)
     .sort(([, a], [, b]) => a.name.localeCompare(b.name))
-    .map(([key, value]) => `    "${key}": { "name": "${value.name}" }`)
+    .map(([key, value]) => `    "${key}": { "name": "${value.name}", "heroes": ${JSON.stringify(value.heroes)} }`)
     .join(',\n');
 
-const outputContent = `export const merchantFilterMapping: { [key: string]: { name: string } } = {
+const outputContent = `export const merchantFilterMapping: { [key: string]: { name: string, heroes: string[] } } = {
 ${entries}
 };
 `;

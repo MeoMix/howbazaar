@@ -1,4 +1,5 @@
 import type { ParsedMerchantCard, ClientSideMerchantCard } from "$lib/types";
+// TODO: Weird to be pulling in from parsers here.
 import { merchantFilterMapping } from "../../../scripts/parsers/merchantFilterMapping";
 
 // TODO: This shouldn't be ClientSideMerchantCard[]
