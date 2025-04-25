@@ -4,7 +4,7 @@ import type { Hero, HiddenTag, Size, Tag, TierType, TriState } from "$lib/types"
 export const merchantFilterMapping: { [key: string]: { name: string, tagStates?: Partial<Record<Tag | HiddenTag, TriState>>, sizeFilter?: Size[], tierFilter?: TierType[], heroFilter?: Hero[] } } = {
     "dc12f4bd-6c33-41f0-b7ad-d62a0be09a47": { name: "Aila", tagStates: { Weapon: "on" } },
     "705c0d8e-8513-49ce-82e8-81782cdac316": { name: "Ande", sizeFilter: ["Small"] },
-    "8f0aea10-9894-4ded-a726-72b23142589c": { name: "Barkun", sizeFilter: ["Small", "Medium"] },
+    "8f0aea10-9894-4ded-a726-72b23142589c": { name: "Barkun", sizeFilter: ["Medium", "Large"] },
     "b1288f12-2cf9-4473-a43e-4dd521703990": { name: "Chronos", tagStates: { Haste: "on" } },
     "ef25f92c-484a-48de-b6de-8fc6429823ca": { name: "Cobweb", tagStates: { Slow: "on" } },
     "816e6ba0-8f5f-412e-9756-8e1901dd9d49": { name: "Colt", tagStates: { Ammo: "on" } },
