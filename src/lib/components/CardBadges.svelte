@@ -6,8 +6,12 @@
         primaryBadges,
         secondaryBadges = [],
     }: {
-        primaryBadges: { text: string; color?: string, showIcon?: boolean }[];
-        secondaryBadges?: { text: string; color?: string, showIcon?: boolean }[];
+        primaryBadges: { text: string; color?: string; showIcon?: boolean }[];
+        secondaryBadges?: {
+            text: string;
+            color?: string;
+            showIcon?: boolean;
+        }[];
     } = $props();
 
     const getBadgeClasses = (color?: string) => {
@@ -17,36 +21,27 @@
             return "dark:bg-bazaar-brown text-gray-500 dark:text-bazaar-tan700 dark:border-bazaar-brown600";
         }
     };
+
+    const allBadges = $derived(
+        [
+            { list: primaryBadges, key: "primary" },
+            { list: secondaryBadges, key: "secondary" },
+        ].filter(({ list }) => list.length > 0),
+    );
 </script>
 
 <div class="flex flex-col gap-2">
-    <div class="flex flex-wrap gap-2">
-        {#each primaryBadges as primaryBadge}
-            <Badge rounded border class={getBadgeClasses(primaryBadge.color)}>
-                {#if primaryBadge.showIcon}
-                    <IconLabel label={primaryBadge.text} />
-                {:else}
-                    {primaryBadge.text}
-                {/if}
-            </Badge>
-        {/each}
-    </div>
-
-    {#if secondaryBadges.length > 0}
+    {#each allBadges as { list, key } (key)}
         <div class="flex flex-wrap gap-2">
-            {#each secondaryBadges as secondaryBadge}
-                <Badge
-                    rounded
-                    border
-                    class={getBadgeClasses(secondaryBadge.color)}
-                >
-                    {#if secondaryBadge.showIcon}
-                        <IconLabel label={secondaryBadge.text} />
+            {#each list as badge}
+                <Badge rounded border class={getBadgeClasses(badge.color)}>
+                    {#if badge.showIcon}
+                        <IconLabel label={badge.text} />
                     {:else}
-                        {secondaryBadge.text}
+                        {badge.text}
                     {/if}
                 </Badge>
             {/each}
         </div>
-    {/if}
+    {/each}
 </div>

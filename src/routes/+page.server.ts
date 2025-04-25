@@ -1,4 +1,4 @@
-import type { ItemsApiResponse, MonsterEncounterDaysApiResponse, SkillsApiResponse } from "$lib/types";
+import type { ItemsApiResponse, MerchantsApiResponse, MonsterEncounterDaysApiResponse, SkillsApiResponse } from "$lib/types";
 import { getCardFilterOptions } from "$lib/utils/filterUtils";
 
 export async function load({ fetch }) {
@@ -27,6 +27,14 @@ export async function load({ fetch }) {
 
     const { version: monstersVersion }: MonsterEncounterDaysApiResponse = await monsterEncounterDaysResponse.json();
 
+    const merchantsResponse = await fetch('/api/merchants');
+
+    if (!merchantsResponse.ok) {
+        throw new Error(`Failed to load merchants: ${merchantsResponse.statusText}`);
+    }
+
+    const { version: merchantsVersion }: MerchantsApiResponse = await merchantsResponse.json();
+
     return {
         heroOptions,
         tagOptions,
@@ -34,6 +42,7 @@ export async function load({ fetch }) {
         sizeOptions,
         itemsVersion,
         skillsVersion,
-        monstersVersion
+        monstersVersion,
+        merchantsVersion
     };
 }

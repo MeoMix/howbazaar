@@ -7,13 +7,11 @@
         id,
         type,
         size,
-        isLazy = false,
     }: {
         name: string;
         id: string;
         type: "items";
         size: Size;
-        isLazy?: boolean;
     } = $props();
 
     const imageUrl = $derived(getImageUrl(type, id));
@@ -34,6 +32,5 @@
         src={imageUrl}
         alt={name}
         class={`absolute top-0 bottom-0 left-0 right-0 mx-auto ${getWidthClass()} h-full object-fill`}
-        loading={isLazy ? "lazy" : undefined}
     />
 </div>

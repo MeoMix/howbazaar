@@ -60,13 +60,12 @@
     class={`rounded-lg h-full relative text-gray-900 border dark:bg-bazaar-background dark:text-bazaar-tan700`}
     use:tooltip={{ item: card }}
 >
-    <!-- <MerchantCardImage
+    <MerchantCardImage
         name={card.name}
         id={card.id}
         type="items"
         size={card.size}
-        isLazy={true}
-    /> -->
+    />
 
     <div class="flex flex-col px-0 pb-4 py-2 relative">
         <div class="px-4 flex flex-col gap-2 relative">

@@ -16,12 +16,14 @@
         MonsterSearchLocationOption,
         SkillSearchLocationOption,
         AllSearchLocationOption,
+        MerchantSearchLocationOption,
     } from "$lib/types";
     import type { PageData } from "./$types";
     import { tooltipState } from "$lib/actions/tooltip.svelte";
     import CardItem from "$lib/components/CardItem.svelte";
     import CardSkill from "$lib/components/CardSkill.svelte";
     import Tooltip from "$lib/components/Tooltip.svelte";
+    import MerchantList from "$lib/components/MerchantList.svelte";
 
     const { data }: { data: PageData } = $props();
 
@@ -64,6 +66,11 @@
         (selectedSearchLocationOption === "name-text-enchantments"
             ? "name-text"
             : selectedSearchLocationOption) as MonsterSearchLocationOption,
+    );
+    let merchantSelectedSearchLocationOption = $derived(
+        (selectedSearchLocationOption === "name-text-enchantments"
+            ? "name-text"
+            : selectedSearchLocationOption) as MerchantSearchLocationOption,
     );
 
     let isMonsterDropsOnly = $state(false);
@@ -180,6 +187,21 @@
         {searchText}
         selectedSearchLocationOption={monsterSelectedSearchLocationOption}
         selectedMonsterEncounter={undefined}
+        isHiddenWhenEmpty={true}
+        initialLoad={false}
+    />
+
+    <MerchantList
+        itemsServerVersion={data.itemsVersion}
+        merchantsServerVersion={data.merchantsVersion}
+        {searchText}
+        selectedMerchant={undefined}
+        selectedSearchLocationOption={merchantSelectedSearchLocationOption}
+        {selectedHeroes}
+        {selectedTiers}
+        {tagStates}
+        {selectedSizes}
+        {isMatchAnyTag}
         isHiddenWhenEmpty={true}
         initialLoad={false}
     />

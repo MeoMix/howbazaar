@@ -52,7 +52,7 @@
             {merchant.name}
         </div>
 
-        <div class={`mb-2 md:mb-0`}>
+        <div class={`mb-2 md:mb-0 text-bazaar-tan300`}>
             {sellsDescription}
         </div>
     </div>

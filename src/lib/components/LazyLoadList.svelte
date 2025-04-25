@@ -3,6 +3,7 @@
 
     const {
         items,
+        listClasses,
         listItemName,
         listItem,
         headerControls,
@@ -10,6 +11,7 @@
         initialLoad = true,
     }: {
         items: T[];
+        listClasses?: string;
         listItemName: string;
         listItem: Snippet<[T]>;
         headerControls?: Snippet;
@@ -54,7 +56,7 @@
                     }
                 });
             },
-            { rootMargin: "0px" }
+            { rootMargin: "0px" },
         );
 
         rootObserver.observe(componentRoot);
@@ -69,7 +71,7 @@
             {items.length}
             {listItemName}{items.length === 1 ? "" : "s"}
         </div>
-    
+
         <div class="flex space-x-4 items-center">
             {#if headerControls}
                 {@render headerControls()}
@@ -77,9 +79,11 @@
         </div>
     </div>
 
-    {#each visibleItems as item}
-        {@render listItem(item)}
-    {/each}
+    <div class="{listClasses}">
+        {#each visibleItems as item}
+            {@render listItem(item)}
+        {/each}
+    </div>
 </div>
 
 <div bind:this={loadMoreTrigger} class="h-1"></div>

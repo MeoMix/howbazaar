@@ -81,6 +81,8 @@
         };
     });
 
+    // Start by applying user filters to the items under consideration.
+    // This will ensure each merchant only shows items relevant to the user's filters.
     const filteredItems = $derived(
         filterItemCards(
             items,
@@ -102,10 +104,18 @@
         new Map(
             merchants.map((merchant) => [
                 merchant.id,
+                // Apply filters to the item pool again, but this time customized to the specific merchant.
+                // This will ensure each merchant only shows items relevant to the specific merchant.
                 filterItemCards(
                     searchedItems,
                     merchant.filters.heros ?? [],
-                    merchant.filters.tiers ?? [],
+                    // If tier isn't provided then show all tiers but exclude Legendary because merchants don't sell legendary items.
+                    merchant.filters.tiers ?? [
+                        "Bronze",
+                        "Silver",
+                        "Gold",
+                        "Diamond",
+                    ],
                     merchant.filters.tagStates ?? {},
                     merchant.filters.sizes ?? [],
                     true,
