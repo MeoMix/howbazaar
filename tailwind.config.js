@@ -178,6 +178,22 @@ export default {
   darkMode: 'selector',
   theme: {
     extend: {
+      maskImage: {
+        'ammo': 'url("/icons/ammo.svg")',
+        'burn': 'url("/icons/burn.svg")',
+        'charge': 'url("/icons/charge.svg")',
+        'crit': 'url("/icons/crit.svg")',
+        'damage': 'url("/icons/damage.svg")',
+        'freeze': 'url("/icons/freeze.svg")',
+        'haste': 'url("/icons/haste.svg")',
+        'heal': 'url("/icons/heal.svg")',
+        'health': 'url("/icons/health.svg")',
+        'poison': 'url("/icons/poison.svg")',
+        'shield': 'url("/icons/shield.svg")',
+        'slow': 'url("/icons/slow.svg")',
+        'value': 'url("/icons/value.svg")',
+      },
+
       colors: {
         // Palette generated from Fiery
         red: {
@@ -303,5 +319,21 @@ export default {
     },
   },
   safelist,
-  plugins: [flowbitePlugin],
+  plugins: [flowbitePlugin, function ({ matchUtilities, theme }) {
+    matchUtilities(
+      {
+        mask: (value) => ({
+          maskImage: value,
+          WebkitMaskImage: value,
+          maskRepeat: 'no-repeat',
+          WebkitMaskRepeat: 'no-repeat',
+          maskPosition: 'center',
+          WebkitMaskPosition: 'center',
+          maskSize: 'contain',
+          WebkitMaskSize: 'contain',
+        }),
+      },
+      { values: theme('maskImage') }
+    );
+  }],
 };
