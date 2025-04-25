@@ -115,6 +115,7 @@ export type ClientSideMerchantCard = {
         // TODO: heroes?
         heros?: Hero[];
         invalidPacks?: (CorePackId | ExpansionPackId)[];
+        isMatchAnyTag?: false;
     }
 }
 

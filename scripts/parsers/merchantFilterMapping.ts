@@ -2,7 +2,7 @@ import type { CorePackId, ExpansionPackId, Hero, HiddenTag, Size, Tag, TierType,
 
 // NOTE: Hero filter is implied to be all released heros if unspecified.
 // NOTE: Invalid pack filter is implied to be all except Core if unspecified.
-export const merchantFilterMapping: { [key: string]: { name: string, tagStates?: Partial<Record<Tag | HiddenTag, TriState>>, sizeFilter?: Size[], tierFilter?: TierType[], heroFilter?: Hero[], invalidPackFilter?: (CorePackId | ExpansionPackId)[] } } = {
+export const merchantFilterMapping: { [key: string]: { name: string, tagStates?: Partial<Record<Tag | HiddenTag, TriState>>, isMatchAnyTag?: false, sizeFilter?: Size[], tierFilter?: TierType[], heroFilter?: Hero[], invalidPackFilter?: (CorePackId | ExpansionPackId)[] } } = {
     "dc12f4bd-6c33-41f0-b7ad-d62a0be09a47": { name: "Aila", tagStates: { Weapon: "on" } },
     "705c0d8e-8513-49ce-82e8-81782cdac316": { name: "Ande", sizeFilter: ["Small"] },
     "8f0aea10-9894-4ded-a726-72b23142589c": { name: "Barkun", sizeFilter: ["Medium", "Large"] },
@@ -22,7 +22,7 @@ export const merchantFilterMapping: { [key: string]: { name: string, tagStates?:
     "85db60ee-3619-4e39-bfb2-2f4ac56f172b": { name: "Jay Jay" },
     "7fdc233f-b81f-4216-a646-4c807c2240da": { name: "Jules", heroFilter: ["Jules"] },
     "a4fa13f8-6beb-4b6c-839b-60af167628d9": { name: "Kev's Armory", tagStates: { Health: "on", Shield: "on" } },
-    "5b7c5fc4-c942-44fe-9ca8-726dc36a2ad6": { name: "Kina", tagStates: { Weapon: "off" } },
+    "5b7c5fc4-c942-44fe-9ca8-726dc36a2ad6": { name: "Kina", tagStates: { Weapon: "off" }, isMatchAnyTag: false },
     "2745a661-095c-44a5-bb6e-8dc76e07bda2": { name: "Knightshade", tagStates: { Poison: "on" } },
     // TODO: Would be nice to only show Diamond+ tier details.
     "892de564-d894-4e07-ab21-959e16e8cdf8": { name: "Luxe" },

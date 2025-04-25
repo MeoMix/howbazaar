@@ -126,10 +126,10 @@
                     ],
                     merchant.filters.tagStates ?? {},
                     merchant.filters.sizes ?? [],
-                    true,
+                    merchant.filters.isMatchAnyTag ?? true,
                     false,
                     "unset",
-                    merchant.filters.invalidPacks ?? ["Core"]
+                    merchant.filters.invalidPacks ?? ["Core"],
                 ),
             ]),
         ),

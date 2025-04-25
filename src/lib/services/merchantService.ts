@@ -21,6 +21,7 @@ export function getMerchants(
                 tiers: filterMapping.tierFilter,
                 heros: filterMapping.heroFilter,
                 invalidPacks: filterMapping.invalidPackFilter,
+                isMatchAnyTag: filterMapping.isMatchAnyTag,
             },
         };
     });
