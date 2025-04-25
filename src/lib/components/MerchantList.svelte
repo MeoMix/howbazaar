@@ -108,13 +108,13 @@
                 // This will ensure each merchant only shows items relevant to the specific merchant.
                 filterItemCards(
                     searchedItems,
-                    // If heroes isn't provided then show all heroes except Common.
+                    // If heroes isn't provided then show all released heroes except Common.
                     merchant.filters.heros ?? [
                         "Vanessa",
                         "Pygmalien",
                         "Dooley",
-                        "Jules",
-                        "Stelle",
+                        // "Jules",
+                        // "Stelle",
                         "Mak",
                     ],
                     // If tier isn't provided then show all tiers but exclude Legendary because merchants don't sell legendary items.
