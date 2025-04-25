@@ -20,6 +20,7 @@ export function getMerchants(
                 tagStates: filterMapping.tagStates,
                 tiers: filterMapping.tierFilter,
                 heros: filterMapping.heroFilter,
+                invalidPacks: filterMapping.invalidPackFilter,
             },
         };
     });

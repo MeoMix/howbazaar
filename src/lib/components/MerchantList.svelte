@@ -93,8 +93,6 @@
             isMatchAnyTag,
             false,
             "unset",
-            // Filter stuff like Piggles Blue out
-            ["Core"]
         ),
     );
 
@@ -131,6 +129,7 @@
                     true,
                     false,
                     "unset",
+                    merchant.filters.invalidPacks ?? ["Core"]
                 ),
             ]),
         ),

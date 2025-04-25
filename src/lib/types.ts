@@ -114,6 +114,7 @@ export type ClientSideMerchantCard = {
         tiers?: TierType[];
         // TODO: heroes?
         heros?: Hero[];
+        invalidPacks?: (CorePackId | ExpansionPackId)[];
     }
 }
 
