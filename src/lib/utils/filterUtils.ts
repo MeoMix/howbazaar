@@ -1,4 +1,4 @@
-import type { ClientSideItemCard, ClientSideMonsterEncounter, ClientSideSkillCard, Hero, HiddenTag, ItemSortOption, Size, SkillSortOption, Tag, TierType, TriState, MonsterSearchLocationOption, AllSearchLocationOption, ClientSideMerchantCard, MerchantSearchLocationOption } from "$lib/types";
+import type { ClientSideItemCard, ClientSideMonsterEncounter, ClientSideSkillCard, Hero, HiddenTag, ItemSortOption, Size, SkillSortOption, Tag, TierType, TriState, MonsterSearchLocationOption, AllSearchLocationOption, ClientSideMerchantCard, MerchantSearchLocationOption, ExpansionPackId, CorePackId } from "$lib/types";
 import type { Entries } from "type-fest";
 
 export const heroOrder = ["Vanessa", "Pygmalien", "Dooley", "Jules", "Stelle", "Mak", "Common"] as const;
@@ -221,7 +221,8 @@ export function filterItemCards(
     selectedSizes: Size[],
     isMatchAnyTag: boolean,
     isMonsterDropsOnly: boolean,
-    latestExpansionsOnlyState: TriState
+    latestExpansionsOnlyState: TriState,
+    excludedPackIds?: (CorePackId | ExpansionPackId)[]
 ): ClientSideItemCard[] {
     return cards.filter(card => {
         return (
@@ -230,7 +231,8 @@ export function filterItemCards(
             matchesHero(card.heroes, selectedHeroes) &&
             matchesTier(card.startingTier, selectedTiers) &&
             matchesTagState(card.tags, card.hiddenTags, tagStates, isMatchAnyTag) &&
-            (selectedSizes.length === 0 || (card.size && selectedSizes.includes(card.size)))
+            (selectedSizes.length === 0 || (card.size && selectedSizes.includes(card.size))) &&
+            (excludedPackIds === undefined || !excludedPackIds.includes(card.packId))
         );
     });
 }

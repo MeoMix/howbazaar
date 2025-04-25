@@ -93,6 +93,8 @@
             isMatchAnyTag,
             false,
             "unset",
+            // Filter stuff like Piggles Blue out
+            ["Core"]
         ),
     );
 
