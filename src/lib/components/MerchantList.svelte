@@ -88,7 +88,7 @@
             items,
             selectedHeroes,
             selectedTiers,
-            tagStates,
+            { ...tagStates, Core: "off" },
             selectedSizes,
             isMatchAnyTag,
             false,
