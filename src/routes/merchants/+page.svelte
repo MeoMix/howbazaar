@@ -54,7 +54,8 @@
     />
 
     <MerchantList
-        serverVersion={data.version}
+        itemsServerVersion={data.itemsVersion}
+        merchantsServerVersion={data.version}
         {searchText}
         {selectedMerchant}
         {selectedSearchLocationOption}

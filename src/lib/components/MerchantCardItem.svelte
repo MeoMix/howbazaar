@@ -32,45 +32,48 @@
     function shouldShowPackName(packId: string): boolean {
         return !packId.toLowerCase().includes("core");
     }
+
+    const primaryBadges = $derived([
+        {
+            text: `${card.startingTier}${card.startingTier === "Legendary" ? "" : "+"}`,
+            color: card.startingTier.toLowerCase(),
+            showIcon: false,
+        },
+        ...[
+            ...card.heroes,
+            card.size,
+            ...(shouldShowPackName(card.packId)
+                ? [getPackName(card.packId)]
+                : []),
+        ].map((text) => ({
+            text,
+            showIcon: false,
+        })),
+    ]);
+
+    const secondaryBadges = $derived(
+        tags.map((text) => ({ text, showIcon: true })),
+    );
 </script>
 
 <div
     class={`rounded-lg h-full relative text-gray-900 border dark:bg-bazaar-background dark:text-bazaar-tan700`}
     use:tooltip={{ item: card }}
 >
-    <MerchantCardImage
+    <!-- <MerchantCardImage
         name={card.name}
         id={card.id}
         type="items"
         size={card.size}
-    />
+        isLazy={true}
+    /> -->
 
     <div class="flex flex-col px-0 pb-4 py-2 relative">
         <div class="px-4 flex flex-col gap-2 relative">
             <div class="font-bold text-lg md:text-xl">
                 {card.name}
             </div>
-            <CardBadges
-                primaryBadges={[
-                    {
-                        text: `${card.startingTier}${card.startingTier === "Legendary" ? "" : "+"}`,
-                        color: card.startingTier.toLowerCase(),
-                        showIcon: false,
-                    },
-                    ...[
-                        ...card.heroes,
-                        card.size,
-                        ...(shouldShowPackName(card.packId)
-                            ? [getPackName(card.packId)]
-                            : []),
-                    ].map((text) => ({
-                        text,
-                        showIcon: false,
-                    })),
-                ]}
-                secondaryBadges={tags.map((text) => ({ text, showIcon: true }))}
-            />
-
+            <CardBadges {primaryBadges} {secondaryBadges} />
             <Divider />
         </div>
         <div

@@ -13,6 +13,8 @@
         merchantItems: ClientSideItemCard[];
     } = $props();
     const id = $derived(merchant.name.replace(/\s+/g, "_"));
+    // Don't show the "Buys..." bit as it's only relevant in game.
+    const sellsDescription = $derived(merchant.description.replace(/Buys[\s\S]*$/, "").trim());
 </script>
 
 <div class="mt-8 scroll-mb-[8px]" {id}>
@@ -22,7 +24,7 @@
         ·
 
         <span class={`text-xl`}>
-            {merchant.description}
+            {sellsDescription}
         </span>
     </div>
 

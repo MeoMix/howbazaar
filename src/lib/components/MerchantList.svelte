@@ -23,7 +23,8 @@
     import { itemsStore } from "$lib/stores/itemsStore";
 
     let {
-        serverVersion,
+        itemsServerVersion,
+        merchantsServerVersion,
         searchText,
         selectedMerchant,
         selectedSearchLocationOption,
@@ -35,7 +36,8 @@
         selectedSizes,
         isMatchAnyTag,
     }: {
-        serverVersion: string;
+        itemsServerVersion: string;
+        merchantsServerVersion: string;
         searchText: string;
         selectedSearchLocationOption: MerchantSearchLocationOption;
         selectedMerchant: ClientSideMerchantCard | undefined;
@@ -63,7 +65,7 @@
             hasErrorItems = state.hasError;
         });
 
-        itemsStore.load(serverVersion); // Ensures we fetch fresh data if needed
+        itemsStore.load(itemsServerVersion); // Ensures we fetch fresh data if needed
 
         const unsubscribeMerchants = merchantsStore.subscribe((state) => {
             merchants = state.merchants;
@@ -71,7 +73,7 @@
             hasErrorMerchants = state.hasError;
         });
 
-        merchantsStore.load(serverVersion); // Ensures we fetch fresh data if needed
+        merchantsStore.load(merchantsServerVersion); // Ensures we fetch fresh data if needed
 
         return () => {
             unsubscribeMerchants();

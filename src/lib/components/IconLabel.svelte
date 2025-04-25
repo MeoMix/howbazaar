@@ -15,76 +15,40 @@
         ValueIcon,
     } from "./Icon";
 
-    // Map of label names to their corresponding icon components
-    const iconMap: Record<string, any> = {
-        // Ammo related
-        Ammo: AmmoIcon,
-        AmmoReference: AmmoIcon,
-
-        // Burn related
-        Burn: BurnIcon,
-        BurnReference: BurnIcon,
-
-        // Charge related
-        Charge: ChargeIcon,
-
-        // Crit related
-        Crit: CritIcon,
-        CritReference: CritIcon,
-
-        // Damage related
-        Damage: DamageIcon,
-        DamageReference: DamageIcon,
-
-        // Economy related
-        EconomyReference: ValueIcon,
-        Gold: ValueIcon,
-        Value: ValueIcon,
-
-        // Freeze related
-        Freeze: FreezeIcon,
-        FreezeReference: FreezeIcon,
-
-        // Haste related
-        Haste: HasteIcon,
-        HasteReference: HasteIcon,
-
-        // Heal related
-        Heal: HealIcon,
-        HealReference: HealIcon,
-
-        // Health related
-        Health: HealthIcon,
-        HealthReference: HealthIcon,
-
-        // Poison related
-        Poison: PoisonIcon,
-        PoisonReference: PoisonIcon,
-
-        // Shield related
-        Shield: ShieldIcon,
-        ShieldReference: ShieldIcon,
-
-        // Slow related
-        Slow: SlowIcon,
-        SlowReference: SlowIcon,
-    };
-
     const {
         label,
-        size = "default",
     }: {
         label: string;
-        size?: "small" | "default" | "large";
     } = $props();
-
-    // Get the icon component for the label
-    const IconComponent = $derived(iconMap[label] || null);
 </script>
 
 <div class="flex items-center gap-1">
-    {#if IconComponent}
-        <IconComponent {size} />
+    {#if label === "Ammo" || label === "AmmoReference"}
+        <AmmoIcon />
+    {:else if label === "Burn" || label === "BurnReference"}
+        <BurnIcon />
+    {:else if label === "Charge"}
+        <ChargeIcon />
+    {:else if label === "Crit" || label === "CritReference"}
+        <CritIcon />
+    {:else if label === "Damage" || label === "DamageReference"}
+        <DamageIcon />
+    {:else if label === "EconomyReference" || label === "Gold" || label === "Value"}
+        <ValueIcon />
+    {:else if label === "Freeze" || label === "FreezeReference"}
+        <FreezeIcon />
+    {:else if label === "Haste" || label === "HasteReference"}
+        <HasteIcon />
+    {:else if label === "Heal" || label === "HealReference"}
+        <HealIcon />
+    {:else if label === "Health" || label === "HealthReference"}
+        <HealthIcon />
+    {:else if label === "Poison" || label === "PoisonReference"}
+        <PoisonIcon />
+    {:else if label === "Shield" || label === "ShieldReference"}
+        <ShieldIcon />
+    {:else if label === "Slow" || label === "SlowReference"}
+        <SlowIcon />
     {/if}
     <span>{label}</span>
 </div>

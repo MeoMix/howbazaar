@@ -16,7 +16,7 @@ export async function load({ fetch }) {
         throw new Error(`Failed to load items: ${itemsResponse.statusText}`);
     }
 
-    const { data: items }: ItemsApiResponse = await itemsResponse.json();
+    const { data: items, version: itemsVersion }: ItemsApiResponse = await itemsResponse.json();
 
     const { heroOptions, tagOptions, minimumTierOptions, sizeOptions } = getCardFilterOptions(items);
 
@@ -26,5 +26,6 @@ export async function load({ fetch }) {
         minimumTierOptions,
         sizeOptions,
         version,
+        itemsVersion,
     };
 }

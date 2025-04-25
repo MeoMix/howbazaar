@@ -13,6 +13,8 @@
     } = $props();
 
     const imageUrl = $derived(getImageUrl("merchants", merchant.id));
+    // Don't show the "Buys..." bit as it's only relevant in game.
+    const sellsDescription = $derived(merchant.description.replace(/Buys[\s\S]*$/, "").trim());
 
     function viewDetails() {
         toggleMerchant(merchant);
@@ -51,7 +53,7 @@
         </div>
 
         <div class={`mb-2 md:mb-0`}>
-            {merchant.description}
+            {sellsDescription}
         </div>
     </div>
 </button>
