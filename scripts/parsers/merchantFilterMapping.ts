@@ -15,7 +15,8 @@ export const merchantFilterMapping: { [key: string]: { name: string, tagStates?:
     "0ff275f7-60ef-4428-acb6-1a138d03152d": { name: "Eli", tagStates: { Potion: "on" }, heroFilter: ["Mak"] },
     "7bd967dd-4631-4252-bdff-ee0bd5e3ddb7": { name: "Flex", tagStates: { HealthMax: "on" }, heroFilter: ["Pygmalien"] },
     "c246ee53-51ea-40c1-ac2f-71435e179531": { name: "Freiya", tagStates: { Freeze: "on" } },
-    "1f72700a-fe11-4792-8a47-9e52b9387f29": { name: "Goldie", tierFilter: ["Gold"] },
+    // TODO: Would be nice to only show Gold+ tier details.
+    "1f72700a-fe11-4792-8a47-9e52b9387f29": { name: "Goldie" },
     "43dbd6ed-6989-4ae4-acdc-f8bfcb8a008f": { name: "Hef", tagStates: { Burn: "on" } },
     "2708055d-a8be-4c2f-a8d6-574e884a254e": { name: "Herma", tagStates: { Regen: "on", Heal: "on" }, heroFilter: ["Pygmalien", "Mak"] },
     "85db60ee-3619-4e39-bfb2-2f4ac56f172b": { name: "Jay Jay" },
@@ -23,7 +24,8 @@ export const merchantFilterMapping: { [key: string]: { name: string, tagStates?:
     "a4fa13f8-6beb-4b6c-839b-60af167628d9": { name: "Kev's Armory", tagStates: { Health: "on", Shield: "on" } },
     "5b7c5fc4-c942-44fe-9ca8-726dc36a2ad6": { name: "Kina", tagStates: { Weapon: "off" } },
     "2745a661-095c-44a5-bb6e-8dc76e07bda2": { name: "Knightshade", tagStates: { Poison: "on" } },
-    "892de564-d894-4e07-ab21-959e16e8cdf8": { name: "Luxe", tierFilter: ["Diamond"] },
+    // TODO: Would be nice to only show Diamond+ tier details.
+    "892de564-d894-4e07-ab21-959e16e8cdf8": { name: "Luxe" },
     "4475cff5-6105-4f4a-978c-b282e36173eb": { name: "Mak", heroFilter: ["Mak"] },
     "b8f55bb0-536e-4d5f-a328-d38f88c6d479": { name: "Midsworth", sizeFilter: ["Small", "Large"] },
     "912c8b09-3b76-4aa1-8e21-245e0dfb5046": { name: "Mittel", sizeFilter: ["Medium"] },
@@ -36,7 +38,8 @@ export const merchantFilterMapping: { [key: string]: { name: string, tagStates?:
     "323e2c05-f077-4774-84a5-9e89d8d1c9b9": { name: "Quixel", sizeFilter: ["Small", "Medium"] },
     // Enchanted items only -- not well supported with current UI.
     "b690812d-108b-49ce-82f3-e1a41379022c": { name: "Serafina" },
-    "ec81a27c-590c-43a1-a353-804a23b5e5d9": { name: "Silvia", tierFilter: ["Silver"] },
+    // TODO: Would be nice to only show Silver+ tier details.
+    "ec81a27c-590c-43a1-a353-804a23b5e5d9": { name: "Silvia" },
     "e48b3243-1e7e-4a97-bf4f-0699fd0b4616": { name: "Stelle", heroFilter: ["Stelle"] },
     // TODO: Any hero?
     "22bb0004-5131-4588-a567-03ee3c96003b": { name: "Tatiana", tagStates: { Toy: "on" } },
