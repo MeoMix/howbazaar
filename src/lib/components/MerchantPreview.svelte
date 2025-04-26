@@ -36,7 +36,7 @@
             loading="lazy"
         />
         <div
-            class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+            class="absolute inset-0 bg-black bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
         >
             <span
                 class="text-white font-bold text-xs sm:text-sm md:text-base lg:text-lg"

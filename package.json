@@ -46,9 +46,9 @@
 	"dependencies": {
 		"@vercel/analytics": "^1.5.0",
 		"fast-json-stable-stringify": "^2.1.0",
-		"flowbite": "^2.5.2",
-		"flowbite-svelte": "^0.47.3",
-		"flowbite-svelte-icons": "^2.0.2",
+		"flowbite": "^3.1.2",
+		"flowbite-svelte": "^0.48.6",
+		"flowbite-svelte-icons": "^2.1.1",
 		"xxhashjs": "^0.2.2"
 	}
 }
