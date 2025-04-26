@@ -21,9 +21,9 @@
 		"generateMerchantFilterMapping": "tsx scripts/parsers/generateMerchantFilterMapping.ts"
 	},
 	"devDependencies": {
-		"@sveltejs/adapter-vercel": "^5.4.7",
-		"@sveltejs/kit": "^2.0.0",
-		"@sveltejs/vite-plugin-svelte": "^4.0.0",
+		"@sveltejs/adapter-vercel": "^5.7.0",
+		"@sveltejs/kit": "^2.20.7",
+		"@sveltejs/vite-plugin-svelte": "^5.0.3",
 		"@types/node-fetch": "^2.6.12",
 		"@types/xxhashjs": "^0.2.4",
 		"autoprefixer": "^10.4.20",
@@ -35,14 +35,14 @@
 		"postcss": "^8.4.47",
 		"quicktype": "^23.0.170",
 		"sharp": "^0.33.5",
-		"svelte": "^5.0.0",
-		"svelte-check": "^4.0.0",
+		"svelte": "^5.28.2",
+		"svelte-check": "^4.1.6",
 		"tailwindcss": "^3.4.14",
 		"tsx": "^4.19.2",
 		"type-fest": "^4.26.1",
 		"typescript": "^5.0.0",
-		"vite": "^5.0.3",
-		"vitest": "^2.1.4"
+		"vite": "^6.3.3",
+		"vitest": "^3.1.2"
 	},
 	"dependencies": {
 		"@vercel/analytics": "^1.3.2",
