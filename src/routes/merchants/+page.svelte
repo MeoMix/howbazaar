@@ -37,7 +37,7 @@
 </svelte:head>
 
 <div
-    class="w-full max-w-full sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl"
+    class="w-full max-w-full sm:max-w-(--breakpoint-sm) md:max-w-(--breakpoint-md) lg:max-w-(--breakpoint-lg) xl:max-w-(--breakpoint-xl)"
 >
     <div class="text-lg mt-4 text-red-500">
         Hi! I know the UX for this isn't quite right yet. I'll work on improving

@@ -169,7 +169,7 @@
                 pill
                 color={"red"}
                 on:click={clearSearch}
-                class="mt-4 transition-colors focus:outline-none border self-center w-auto"
+                class="mt-4 transition-colors focus:outline-hidden border self-center w-auto"
             >
                 Clear Search
             </Button>

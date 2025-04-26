@@ -25,7 +25,7 @@
     outline={!isEnabled}
     pill
     on:click={onClick}
-    class={`text-nowrap capitalize transition-colors focus:outline-none border py-1.5 px-3 ${getToggleClasses(isEnabled)}`}
+    class={`text-nowrap capitalize transition-colors focus:outline-hidden border py-1.5 px-3 ${getToggleClasses(isEnabled)}`}
 >
     {label}
 </Button>

@@ -67,7 +67,7 @@
 
 <div bind:this={componentRoot} class="space-y-4">
     <div class="flex justify-between items-center">
-        <div class="font-semibold flex-grow">
+        <div class="font-semibold grow">
             {items.length}
             {listItemName}{items.length === 1 ? "" : "s"}
         </div>

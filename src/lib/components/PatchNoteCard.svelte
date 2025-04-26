@@ -307,7 +307,7 @@
 )}
     <div class="opacity-60">
         {#if oldValue !== undefined && oldValue !== null}
-            <span class="bg-patchnotes-removed px-1 rounded-sm">
+            <span class="bg-patchnotes-removed px-1 rounded-xs">
                 <UnifiedTooltip
                     tooltip={formatValue(oldValue)}
                     startingTier={previousTier}
@@ -322,7 +322,7 @@
 
     <div>
         {#if newValue !== undefined && newValue !== null}
-            <span class="bg-patchnotes-added px-1 rounded-sm">
+            <span class="bg-patchnotes-added px-1 rounded-xs">
                 <UnifiedTooltip
                     tooltip={formatValue(newValue)}
                     startingTier={currentTier}
@@ -347,7 +347,7 @@
         <div class="opacity-60">
             {#each groupHighlightedWords(diff.oldWords) as group}
                 {#if group.highlight}
-                    <span class="bg-patchnotes-removed px-1 rounded-sm">
+                    <span class="bg-patchnotes-removed px-1 rounded-xs">
                         <UnifiedTooltip
                             tooltip={group.text}
                             startingTier={previousTier}
@@ -371,7 +371,7 @@
         <div>
             {#each groupHighlightedWords(diff.newWords) as group}
                 {#if group.highlight}
-                    <span class="bg-patchnotes-added px-1 rounded-sm">
+                    <span class="bg-patchnotes-added px-1 rounded-xs">
                         <UnifiedTooltip
                             tooltip={group.text}
                             startingTier={currentTier}
@@ -398,7 +398,7 @@
 )}
     <div class="opacity-60">
         {#if removed?.length}
-            <span class="bg-patchnotes-removed px-1 rounded-sm">
+            <span class="bg-patchnotes-removed px-1 rounded-xs">
                 {removed.join(", ")}
             </span>
         {:else}
@@ -410,7 +410,7 @@
 
     <div>
         {#if added?.length}
-            <span class="bg-patchnotes-added px-1 rounded-sm">
+            <span class="bg-patchnotes-added px-1 rounded-xs">
                 {added.join(", ")}
             </span>
         {:else}

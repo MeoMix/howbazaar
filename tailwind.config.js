@@ -1,160 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 import flowbitePlugin from 'flowbite/plugin';
 
-// Regular Color; F6D9AB
-const enchantments = {
-  heavy: '#CCA06E',       // Bazaar's Slow
-  icy: '#3EC8F8',         // Bazaar's Freeze
-  turbo: '#00EAC2',       // Bazaar's Haste
-  shielded: '#F4D021',    // Bazaar's Shield
-  restorative: '#8FEA31', // Bazaar's Heal
-  toxic: '#0EBE4E',       // Bazaar's Poison
-  fiery: '#FA943E',       // Bazaar's Burn Orange
-  shiny: '#F6D9AB',       // Bazaar's Regular
-  deadly: '#F5523C',      // Bazaar's Crit
-  radiant: '#F6D9AB',     // Bazaar's Regular
-  obsidian: '#F6D9AB',    // Bazaar's Regular
-  golden: '#F4D021',      // Bazaar's Value
-};
-
-// Add game effect colors
-const gameEffects = {
-  haste: 'rgb(0,236,195)',
-  charge: 'rgb(0,236,195)',
-  physical: 'rgb(245,80,61)',
-  slow: 'rgb(203,159,110)',
-  heal: 'rgb(142,234,49)',
-  poison: 'rgb(14,190,79)',
-  ammo: 'rgb(255,142,0)',
-  freeze: 'rgb(63,200,247)',
-  shield: 'rgb(244,207,32)',
-  lifesteal: 'rgb(157,74,111)',
-  value: 'rgb(255,205,25)',
-  burn: 'rgb(255,159,69)',
-  tag: 'rgb(152,168,254)',
-};
-
-// Colors used for patch note diffs
-const patchnotes = {
-  removed: 'rgba(248,81,73,0.4)',
-  added: 'rgba(37,99,235,0.4)',
-};
-
-const ogTiers = {
-  bronze: '#CD7F32',
-  silver: '#C0C0C0',
-  gold: '#FFD700',
-  diamond: '#B9F2FF',
-  legendary: '#FFAA33',
-};
-
-const tiers = {
-  bronze: {
-    50: '#fcf7ee',
-    100: '#f5e8d0',
-    200: '#e9d09e',
-    300: '#deb46b',
-    400: '#d69c49',
-    500: '#cd7f32',
-    600: '#b5622a',
-    700: '#974826',
-    800: '#7c3924',
-    900: '#663121',
-    950: '#3a170e',
-  },
-  silver: {
-    50: '#f7f7f7',
-    100: '#f0f0f0',
-    200: '#e3e3e3',
-    300: '#d1d1d1',
-    400: '#c0c0c0',
-    500: '#aaaaaa',
-    600: '#969696',
-    700: '#818181',
-    800: '#6a6a6a',
-    900: '#585858',
-    950: '#333333',
-  },
-  gold: {
-    50: '#fdfde9',
-    100: '#fcfac5',
-    200: '#fbf18d',
-    300: '#f8e24c',
-    400: '#f4d021',
-    500: '#e4b60e',
-    600: '#c58e09',
-    700: '#9d650b',
-    800: '#825011',
-    900: '#6e4215',
-    950: '#402208',
-  },
-  diamond: {
-    50: '#ecfcff',
-    100: '#b9f2ff',
-    200: '#a3ebfe',
-    300: '#64dbfc',
-    400: '#1ec1f2',
-    500: '#02a3d8',
-    600: '#0481b6',
-    700: '#0b6893',
-    800: '#135577',
-    900: '#144765',
-    950: '#072e45',
-  },
-  legendary: {
-    50: '#fff8eb',
-    100: '#ffecc6',
-    200: '#ffd788',
-    300: '#ffbc4a',
-    400: '#ffaa33',
-    500: '#f97e07',
-    600: '#dd5902',
-    700: '#b73b06',
-    800: '#942c0c',
-    900: '#7a250d',
-    950: '#461102',
-  },
-};
-
-// Dynamically generate class strings for Tailwind safelist
-const safelist = [
-  'sr-only',
-  ...Object.entries(enchantments).flatMap(([e]) => [
-    `text-enchantments-${e}`,
-    `border-enchantments-${e}`,
-    `bg-enchantments-${e}`,
-    `dark:text-enchantments-${e}`,
-    `dark:border-enchantments-${e}`,
-    `dark:bg-enchantments-${e}`,
-  ]),
-  ...Object.entries(gameEffects).flatMap(([effect]) => [
-    `text-gameEffects-${effect}`,
-    `border-gameEffects-${effect}`,
-    `bg-gameEffects-${effect}`,
-    `dark:text-gameEffects-${effect}`,
-    `dark:border-gameEffects-${effect}`,
-    `dark:bg-gameEffects-${effect}`,
-  ]),
-  ...Object.entries(patchnotes).flatMap(([type]) => [
-    `text-patchnotes-${type}`,
-    `border-patchnotes-${type}`,
-    `bg-patchnotes-${type}`,
-    `dark:text-patchnotes-${type}`,
-    `dark:border-patchnotes-${type}`,
-    `dark:bg-patchnotes-${type}`,
-  ]),
-  ...Object.entries(tiers).flatMap(([tier, shades]) =>
-    Object.keys(shades).flatMap((shade) => [
-      `text-tiers-${tier}-${shade}`,
-      `border-tiers-${tier}-${shade}`,
-      `bg-tiers-${tier}-${shade}`,
-      `dark:text-tiers-${tier}-${shade}`,
-      `dark:border-tiers-${tier}-${shade}`,
-      `dark:bg-tiers-${tier}-${shade}`,
-    ])
-  ),
-];
-
 export default {
   content: [
     './src/**/*.{html,js,svelte,ts}',
@@ -252,10 +98,108 @@ export default {
           '950': '#440d06',
         },
 
-        enchantments,
-        gameEffects,
-        patchnotes,
-        tiers,
+        enchantments: {
+          heavy: '#CCA06E',       // Bazaar's Slow
+          icy: '#3EC8F8',         // Bazaar's Freeze
+          turbo: '#00EAC2',       // Bazaar's Haste
+          shielded: '#F4D021',    // Bazaar's Shield
+          restorative: '#8FEA31', // Bazaar's Heal
+          toxic: '#0EBE4E',       // Bazaar's Poison
+          fiery: '#FA943E',       // Bazaar's Burn Orange
+          shiny: '#F6D9AB',       // Bazaar's Regular
+          deadly: '#F5523C',      // Bazaar's Crit
+          radiant: '#F6D9AB',     // Bazaar's Regular
+          obsidian: '#F6D9AB',    // Bazaar's Regular
+          golden: '#F4D021',      // Bazaar's Value
+        },
+
+        game: {
+          haste: 'rgb(0,236,195)',
+          charge: 'rgb(0,236,195)',
+          physical: 'rgb(245,80,61)',
+          slow: 'rgb(203,159,110)',
+          heal: 'rgb(142,234,49)',
+          poison: 'rgb(14,190,79)',
+          ammo: 'rgb(255,142,0)',
+          freeze: 'rgb(63,200,247)',
+          shield: 'rgb(244,207,32)',
+          lifesteal: 'rgb(157,74,111)',
+          value: 'rgb(255,205,25)',
+          burn: 'rgb(255,159,69)',
+          tag: 'rgb(152,168,254)',
+        },
+        patchnotes: {
+          removed: 'rgba(248,81,73,0.4)',
+          added: 'rgba(37,99,235,0.4)',
+        },
+        tiers: {
+          bronze: {
+            50: '#fcf7ee',
+            100: '#f5e8d0',
+            200: '#e9d09e',
+            300: '#deb46b',
+            400: '#d69c49',
+            500: '#cd7f32',
+            600: '#b5622a',
+            700: '#974826',
+            800: '#7c3924',
+            900: '#663121',
+            950: '#3a170e',
+          },
+          silver: {
+            50: '#f7f7f7',
+            100: '#f0f0f0',
+            200: '#e3e3e3',
+            300: '#d1d1d1',
+            400: '#c0c0c0',
+            500: '#aaaaaa',
+            600: '#969696',
+            700: '#818181',
+            800: '#6a6a6a',
+            900: '#585858',
+            950: '#333333',
+          },
+          gold: {
+            50: '#fdfde9',
+            100: '#fcfac5',
+            200: '#fbf18d',
+            300: '#f8e24c',
+            400: '#f4d021',
+            500: '#e4b60e',
+            600: '#c58e09',
+            700: '#9d650b',
+            800: '#825011',
+            900: '#6e4215',
+            950: '#402208',
+          },
+          diamond: {
+            50: '#ecfcff',
+            100: '#b9f2ff',
+            200: '#a3ebfe',
+            300: '#64dbfc',
+            400: '#1ec1f2',
+            500: '#02a3d8',
+            600: '#0481b6',
+            700: '#0b6893',
+            800: '#135577',
+            900: '#144765',
+            950: '#072e45',
+          },
+          legendary: {
+            50: '#fff8eb',
+            100: '#ffecc6',
+            200: '#ffd788',
+            300: '#ffbc4a',
+            400: '#ffaa33',
+            500: '#f97e07',
+            600: '#dd5902',
+            700: '#b73b06',
+            800: '#942c0c',
+            900: '#7a250d',
+            950: '#461102',
+          },
+        },
+
         bazaar: {
           background: '#150c0b',
           orange400: '#ea8e16',
@@ -318,7 +262,6 @@ export default {
       },
     },
   },
-  safelist,
   plugins: [flowbitePlugin, function ({ matchUtilities, theme }) {
     matchUtilities(
       {

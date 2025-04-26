@@ -25,16 +25,16 @@
 </svelte:head>
 
 <div
-    class="w-full max-w-full sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl"
+    class="w-full max-w-full sm:max-w-(--breakpoint-sm) md:max-w-(--breakpoint-md) lg:max-w-(--breakpoint-lg) xl:max-w-(--breakpoint-xl)"
 >
     <div class="font-semibold text-4xl my-4 mt-8">So.</div>
 
     <div class="text-lg leading-loose">
         <p>
             You want to pay me some <span
-                class="font-bold text-gameEffects-freeze">cold.</span
-            > <span class="font-bold text-gameEffects-physical">hard.</span>
-            <span class="font-bold text-gameEffects-poison">cash.</span>
+                class="font-bold text-game-freeze">cold.</span
+            > <span class="font-bold text-game-physical">hard.</span>
+            <span class="font-bold text-game-poison">cash.</span>
             to say, <span class="font-semibold italic">"Thank you!"</span> for the
             service, do you?
         </p>
@@ -90,7 +90,7 @@
             pill
             color={"red"}
             on:click={toggleAds}
-            class="mt-4 transition-colors focus:outline-none border self-center w-auto"
+            class="mt-4 transition-colors focus:outline-hidden border self-center w-auto"
         >
             {buttonLabel}
         </Button>

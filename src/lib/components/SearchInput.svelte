@@ -97,7 +97,7 @@
     </div>
 
     {#if button}
-      <div class="flex-shrink-0 flex items-center">
+      <div class="shrink-0 flex items-center">
         {@render button()}
       </div>
     {/if}

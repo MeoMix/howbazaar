@@ -121,7 +121,7 @@
 {/if}
 
 <div
-    class="w-full max-w-full sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl"
+    class="w-full max-w-full sm:max-w-(--breakpoint-sm) md:max-w-(--breakpoint-md) lg:max-w-(--breakpoint-lg) xl:max-w-(--breakpoint-xl)"
 >
     <div
         class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4 my-6"
@@ -159,11 +159,11 @@
         </p>
         <p>
             Changes are highlighted to show
-            <span class="bg-patchnotes-removed px-1 rounded-sm"
+            <span class="bg-patchnotes-removed px-1 rounded-xs"
                 >what was removed</span
             >
             and
-            <span class="bg-patchnotes-added px-1 rounded-sm"
+            <span class="bg-patchnotes-added px-1 rounded-xs"
                 >what was added.</span
             >
         </p>

@@ -20,7 +20,7 @@
 <div>
     <Button
         size="sm"
-        class="font-normal text-nowrap py-2 px-2 text-gray-900 bg-gray-50 border border-gray-300 rounded-lg rounded-r-none border-r-[0] focus:border-gray-300 dark:focus:border-bazaar-brown600 focus:ring-0 dark:bg-bazaar-brown dark:border-bazaar-brown600 dark:placeholder-gray-400 dark:text-bazaar-tan700"
+        class="font-normal text-nowrap py-2 px-2 text-gray-900 bg-gray-50 border border-gray-300 rounded-lg rounded-r-none border-r-0 focus:border-gray-300 dark:focus:border-bazaar-brown600 focus:ring-0 dark:bg-bazaar-brown dark:border-bazaar-brown600 dark:placeholder-gray-400 dark:text-bazaar-tan700"
     >
         {options.find((option) => option.value === selectedOption)?.name}
         <ChevronDownOutline

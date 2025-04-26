@@ -66,14 +66,14 @@
 {/if}
 
 <div
-    class="w-full max-w-full sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl"
+    class="w-full max-w-full sm:max-w-(--breakpoint-sm) md:max-w-(--breakpoint-md) lg:max-w-(--breakpoint-lg) xl:max-w-(--breakpoint-xl)"
 >
     <div class="mb-6">
         <h1 class="text-3xl font-bold my-6">Mak Preview</h1>
 
         <div>
             The Bazaar's newest hero, <span
-                class="font-bold text-gameEffects-poison">Mak</span
+                class="font-bold text-game-poison">Mak</span
             >, is just around the corner—and
             <em class="text-bazaar-orange">How Bazaar</em> got early access to a
             handful of their new items! I'm thrilled to be able to share these with
@@ -93,9 +93,9 @@
         <div class="mt-4">
             <p class="mb-4">
                 <span class="font-bold text-bazaar-orange">Athanor</span> is an
-                <span class="font-bold text-gameEffects-value">Economy</span>
+                <span class="font-bold text-game-value">Economy</span>
                 item for Mak which brews a
-                <span class="text-gameEffects-tag font-bold">Potion</span> each day!
+                <span class="text-game-tag font-bold">Potion</span> each day!
             </p>
             <ul class="list-disc list-inside">
                 <li>
@@ -178,9 +178,9 @@
             <p class="mb-4">
                 <strong class="text-bazaar-orange">Boiling Flask</strong> scales
                 the power of your board by giving
-                <span class="font-bold text-gameEffects-tag">+1 Multicast</span>
+                <span class="font-bold text-game-tag">+1 Multicast</span>
                 to adjacent
-                <span class="font-bold text-gameEffects-tag">Potions</span>.
+                <span class="font-bold text-game-tag">Potions</span>.
             </p>
             <ul class="list-disc list-inside">
                 <li>
@@ -195,7 +195,7 @@
                     ammo, letting you reload without waste.
                 </li>
                 <li>
-                    The <span class="font-bold text-gameEffects-tag">Tool</span>
+                    The <span class="font-bold text-game-tag">Tool</span>
                     tag unlocks a few more possibilities for this item. Keep an eye
                     out for the
                     <em
@@ -226,9 +226,9 @@
             <p class="mb-4">
                 <strong class="text-bazaar-orange">Bottled Explosion</strong>
                 has the potential to scale to crazy amounts of
-                <span class="font-bold text-gameEffects-physical">Damage</span>
+                <span class="font-bold text-game-physical">Damage</span>
                 if you can keep it full of
-                <span class="font-bold text-gameEffects-ammo">Ammo</span>.
+                <span class="font-bold text-game-ammo">Ammo</span>.
             </p>
             <ul class="list-disc list-inside">
                 <li>
@@ -277,7 +277,7 @@
                 <strong class="text-bazaar-orange">Covetous Raven</strong> is
                 the first <em class="text-bazaar-orange">The Bazaar</em> item to
                 reference
-                <em class="font-semibold text-gameEffects-tag">Enchanted</em> items
+                <em class="font-semibold text-game-tag">Enchanted</em> items
                 specifically! How exciting!
             </p>
             <ul class="list-disc list-inside">
@@ -293,7 +293,7 @@
                     with a couple this item will trigger constantly!
                 </li>
                 <li>
-                    It's the third <span class="font-bold text-gameEffects-tag"
+                    It's the third <span class="font-bold text-game-tag"
                         >Friend</span
                     >
                     for Mak, joining

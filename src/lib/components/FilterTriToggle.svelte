@@ -52,7 +52,7 @@
     pill
     color="none"
     on:click={() => onClick(value)}
-    class={`capitalize transition-colors focus:outline-none border py-1.5 px-3 ${getToggleClasses(state)}`}
+    class={`capitalize transition-colors focus:outline-hidden border py-1.5 px-3 ${getToggleClasses(state)}`}
 >
     <IconLabel {label} />
 </Button>

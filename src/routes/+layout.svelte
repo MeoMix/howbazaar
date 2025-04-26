@@ -137,7 +137,7 @@
                 <ClipboardOutline />
                 {#if $page.data.hasNewVersions}
                     <span
-                        class="absolute top-2 right-2 w-2 h-2 bg-gameEffects-heal rounded-full ring-2 ring-white dark:ring-bazaar-background dark:group-hover:ring-bazaar-brown"
+                        class="absolute top-2 right-2 w-2 h-2 bg-game-heal rounded-full ring-2 ring-white dark:ring-bazaar-background dark:group-hover:ring-bazaar-brown"
                     ></span>
                 {/if}
             </a>
@@ -161,7 +161,7 @@
             />
             <NavHamburger
                 class="hover:text-gray-900 dark:text-bazaar-tan700 dark:hover:text-bazaar-orange dark:hover:bg-bazaar-brown"
-                classMenu="outline-none"
+                classMenu="outline-hidden"
                 onClick={() => {
                     isHamburgerMenuOpen = !isHamburgerMenuOpen;
                 }}
@@ -208,11 +208,11 @@
             >
         </NavUl>
         <div
-            class="absolute inset-x-0 bottom-0 h-[1px] bg-gradient-to-r from-transparent via-gray-200 to-transparent dark:via-bazaar-orange"
+            class="absolute inset-x-0 bottom-0 h-[1px] bg-linear-to-r from-transparent via-gray-200 to-transparent dark:via-bazaar-orange"
         ></div>
     </Navbar>
 
-    <div class="flex-grow px-2 sm:px-4 max-w-[120rem] w-full mx-auto">
+    <div class="grow px-2 sm:px-4 max-w-[120rem] w-full mx-auto">
         <!-- Main container with flex layout -->
         <div class="flex justify-center w-full px-4">
             {@render children()}
@@ -255,7 +255,7 @@
             class={`py-6 bg-white dark:bg-bazaar-background`}
         >
             <div
-                class="h-[1px] my-6 bg-gradient-to-r from-transparent via-gray-200 to-transparent dark:via-bazaar-orange"
+                class="h-[1px] my-6 bg-linear-to-r from-transparent via-gray-200 to-transparent dark:via-bazaar-orange"
             ></div>
 
             <div class="mx-auto text-center">

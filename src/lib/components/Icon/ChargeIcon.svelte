@@ -1,3 +1,3 @@
 <span
-    class="inline-block w-3 h-3 bg-current text-gameEffects-charge mask-charge"
+    class="inline-block w-3 h-3 bg-current text-game-charge mask-charge"
 ></span>

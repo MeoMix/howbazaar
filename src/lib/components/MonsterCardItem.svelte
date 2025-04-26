@@ -87,7 +87,7 @@
                     {:else if isKeywordPart(part)}
                         <!-- Render keyword with game effect styling -->
                         <span
-                            class="font-semibold text-gameEffects-{part.effect}"
+                            class="font-semibold text-game-{part.effect}"
                         >
                             {part.text}
                         </span>
@@ -127,7 +127,7 @@
                         {:else if isKeywordPart(part)}
                             <!-- Render keyword with game effect styling -->
                             <span
-                                class="font-semibold text-gameEffects-{part.effect}"
+                                class="font-semibold text-game-{part.effect}"
                             >
                                 {part.text}
                             </span>

@@ -24,7 +24,7 @@
     class={`p-2 pb-0 border rounded-lg border-bazaar-brown w-full flex flex-col md:flex-row items-center md:items-start group hover:text-bazaar-orange dark:hover:text-bazaar-orange dark:hover:border-bazaar-orange ${isActive ? "border-bazaar-orange text-bazaar-orange dark:text-bazaar-orange" : ""}`}
 >
     <div
-        class="max-w-24 relative rounded-t-full overflow-hidden transition-all transform w-[10rem] aspect-[1/1] md:mr-4"
+        class="max-w-24 relative rounded-t-full overflow-hidden transition-all transform w-[10rem] aspect-1/1 md:mr-4"
         style="clip-path: inset(0 0 10px 0 round 0 0 5% 5%);"
     >
         <img
