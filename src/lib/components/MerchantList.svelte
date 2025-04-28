@@ -55,7 +55,6 @@
     let merchants = $state([] as ClientSideMerchantCard[]);
     let isLoadingItems = $state(false);
     let hasErrorItems = $state(false);
-    // TODO: Apply filters to items after implementing search filters.
     let items = $state([] as ClientSideItemCard[]);
 
     onMount(() => {
@@ -81,6 +80,43 @@
         };
     });
 
+    const matchedMerchantIds = $derived(() => {
+        const lowerSearchText = searchText.toLowerCase();
+        const tokens = lowerSearchText
+            .split("|")
+            .map((t) => t.trim())
+            .filter((t) => t !== "");
+
+        const matches = new Set<string>();
+
+        for (const token of tokens) {
+            for (const merchant of merchants) {
+                if (merchant.name.toLowerCase().includes(token)) {
+                    matches.add(merchant.id);
+                }
+            }
+        }
+
+        return matches;
+    });
+
+    const leftoverSearchText = $derived(() => {
+        const lowerSearchText = searchText.toLowerCase();
+        let tokens = lowerSearchText
+            .split("|")
+            .map((t) => t.trim())
+            .filter((t) => t !== "");
+
+        // Remove any tokens that match a merchant name
+        tokens = tokens.filter((token) => {
+            return !merchants.some((merchant) =>
+                merchant.name.toLowerCase().includes(token),
+            );
+        });
+
+        return tokens.join(" | "); // reassemble
+    });
+
     // Start by applying user filters to the items under consideration.
     // This will ensure each merchant only shows items relevant to the user's filters.
     const filteredItems = $derived(
@@ -97,7 +133,11 @@
     );
 
     const searchedItems = $derived(
-        searchCards(filteredItems, searchText, selectedSearchLocationOption),
+        searchCards(
+            filteredItems,
+            leftoverSearchText(),
+            selectedSearchLocationOption,
+        ),
     );
 
     const merchantItemsMap = $derived(
@@ -135,11 +175,24 @@
         ),
     );
 
-    const filteredMerchants = $derived(
-        merchants.filter(
+    // const filteredMerchants = $derived(
+    //     merchants.filter(
+    //         (merchant) => (merchantItemsMap.get(merchant.id) ?? []).length > 0,
+    //     ),
+    // );
+
+    const filteredMerchants = $derived(() => {
+        let candidates = merchants.filter(
             (merchant) => (merchantItemsMap.get(merchant.id) ?? []).length > 0,
-        ),
-    );
+        );
+
+        // If user matched merchant names, filter down to only those
+        if (matchedMerchantIds().size > 0) {
+            candidates = candidates.filter((m) => matchedMerchantIds().has(m.id));
+        }
+
+        return candidates;
+    });
 
     const isSearchFilterApplied = $derived(
         searchText !== "" ||
@@ -153,7 +206,7 @@
         !isSearchFilterApplied
             ? []
             : searchMerchants(
-                  filteredMerchants,
+                  filteredMerchants(),
                   merchantItemsMap,
                   searchText,
                   selectedSearchLocationOption,
@@ -203,7 +256,7 @@
     </div>
 {:else if !isHiddenWhenEmpty}
     <div class="grid grid-cols-3 gap-1">
-        {#each filteredMerchants as merchant}
+        {#each filteredMerchants() as merchant}
             <MerchantPreview
                 {merchant}
                 {toggleMerchant}
