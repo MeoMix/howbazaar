@@ -81,6 +81,10 @@
     });
 
     const matchedMerchantIds = $derived(() => {
+        if (selectedMerchant) {
+            return new Set([selectedMerchant.id]);
+        }
+
         const lowerSearchText = searchText.toLowerCase();
         const tokens = lowerSearchText
             .split("|")
@@ -101,6 +105,8 @@
     });
 
     const leftoverSearchText = $derived(() => {
+        if (selectedMerchant) return searchText;
+
         const lowerSearchText = searchText.toLowerCase();
         let tokens = lowerSearchText
             .split("|")
@@ -114,7 +120,7 @@
             );
         });
 
-        return tokens.join(" | "); // reassemble
+        return tokens.join(" | ");
     });
 
     // Start by applying user filters to the items under consideration.
@@ -175,11 +181,9 @@
         ),
     );
 
-    // const filteredMerchants = $derived(
-    //     merchants.filter(
-    //         (merchant) => (merchantItemsMap.get(merchant.id) ?? []).length > 0,
-    //     ),
-    // );
+    $effect(() => {
+        console.log("matchedMerchantIds", matchedMerchantIds());
+    });
 
     const filteredMerchants = $derived(() => {
         let candidates = merchants.filter(
@@ -188,10 +192,16 @@
 
         // If user matched merchant names, filter down to only those
         if (matchedMerchantIds().size > 0) {
-            candidates = candidates.filter((m) => matchedMerchantIds().has(m.id));
+            candidates = candidates.filter((m) =>
+                matchedMerchantIds().has(m.id),
+            );
         }
 
         return candidates;
+    });
+
+    $effect(() => {
+        console.log("filteredMerchants", filteredMerchants());
     });
 
     const isSearchFilterApplied = $derived(
@@ -202,16 +212,27 @@
             Object.values(tagStates).some((state) => state !== "unset"),
     );
 
-    const searchedMerchants = $derived(
-        !isSearchFilterApplied
-            ? []
-            : searchMerchants(
-                  filteredMerchants(),
-                  merchantItemsMap,
-                  searchText,
-                  selectedSearchLocationOption,
-              ),
-    );
+    const searchedMerchants = $derived(() => {
+        if (!isSearchFilterApplied) return [];
+
+        if (selectedMerchant) {
+            return filteredMerchants().filter(
+                (m) => m.id === selectedMerchant!.id,
+            );
+        }
+
+        return searchMerchants(
+            filteredMerchants(),
+            merchantItemsMap,
+            searchText,
+            selectedSearchLocationOption,
+        );
+    });
+
+    $effect(() => {
+        console.log("searchedMerchants", searchedMerchants());
+        console.log("effectiveSearchText:", searchText);
+    });
 
     async function toggleMerchant(merchant: ClientSideMerchantCard) {
         if (selectedMerchant?.id === merchant.id) {
@@ -229,7 +250,7 @@
             if (targetElement) {
                 targetElement.scrollIntoView({
                     behavior: "smooth",
-                    block: "nearest",
+                    block: "start",
                 });
             }
         }
@@ -245,10 +266,10 @@
 
 {#if isLoadingMerchants || isLoadingItems}
     <div>Loading merchants...</div>
-{:else if searchedMerchants.length > 0 || (!isHiddenWhenEmpty && isSearchFilterApplied)}
+{:else if searchedMerchants().length > 0 || (!isHiddenWhenEmpty && isSearchFilterApplied)}
     <div class="mb-8">
         <LazyLoadList
-            items={searchedMerchants}
+            items={searchedMerchants()}
             {listItem}
             listItemName="merchant"
             {initialLoad}
