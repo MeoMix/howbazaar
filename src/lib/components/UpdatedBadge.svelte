@@ -1,7 +1,8 @@
 <script>
     import { Badge } from "flowbite-svelte";
+    import { AVAILABLE_VERSIONS } from "$lib/constants";
 </script>
 
 <Badge border large color="green" class="ml-2 whitespace-nowrap">
-    Live Version - v1.0.0 - Apr 23
+    Live Version - {AVAILABLE_VERSIONS[0].label}
 </Badge>
