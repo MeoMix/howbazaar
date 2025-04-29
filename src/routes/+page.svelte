@@ -191,7 +191,7 @@
         initialLoad={false}
     />
 
-    <MerchantList
+    <!-- <MerchantList
         itemsServerVersion={data.itemsVersion}
         merchantsServerVersion={data.merchantsVersion}
         {searchText}
@@ -204,5 +204,5 @@
         {isMatchAnyTag}
         isHiddenWhenEmpty={true}
         initialLoad={false}
-    />
+    /> -->
 </div>
