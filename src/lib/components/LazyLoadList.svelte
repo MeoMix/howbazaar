@@ -9,6 +9,7 @@
         headerControls,
         batchSize = 5,
         initialLoad = true,
+        totalItemCount,
     }: {
         items: T[];
         listClasses?: string;
@@ -17,6 +18,7 @@
         headerControls?: Snippet;
         batchSize?: number;
         initialLoad?: boolean;
+        totalItemCount?: number;
     } = $props();
 
     let itemsToDisplay = $state(initialLoad ? batchSize : 0);
@@ -70,6 +72,10 @@
         <div class="font-semibold grow">
             {items.length}
             {listItemName}{items.length === 1 ? "" : "s"}
+            {#if totalItemCount && totalItemCount > items.length}
+                out of {totalItemCount}
+                {listItemName}{totalItemCount === 1 ? "" : "s"}
+            {/if}
         </div>
 
         <div class="flex space-x-4 items-center">
@@ -79,7 +85,7 @@
         </div>
     </div>
 
-    <div class="{listClasses}">
+    <div class={listClasses}>
         {#each visibleItems as item}
             {@render listItem(item)}
         {/each}

@@ -188,7 +188,7 @@ function matchesMonsterSearchText(
 
 function matchesMerchantSearchText(
     merchant: ClientSideMerchantCard,
-    merchantItemsMap: Map<string, ClientSideItemCard[]>,
+    merchantItemsMap: Map<string, { filteredItems: ClientSideItemCard[] }>,
     lowerSearchText: string,
     searchMode: MerchantSearchLocationOption
 ): boolean {
@@ -203,7 +203,7 @@ function matchesMerchantSearchText(
     // Check if any of the search terms match
     for (const term of searchTerms) {
         if (substringMatch(merchant.name, term) ||
-            (merchantItemsMap.get(merchant.id) ?? []).filter(item => matchesCardSearchText(item, term, searchMode)).length > 0) {
+            (merchantItemsMap.get(merchant.id)?.filteredItems ?? []).filter(item => matchesCardSearchText(item, term, searchMode)).length > 0) {
             return true;
         }
     }
@@ -282,7 +282,7 @@ export function searchMonsters(
 
 export function searchMerchants(
     merchants: ClientSideMerchantCard[],
-    merchantItemsMap: Map<string, ClientSideItemCard[]>,
+    merchantItemsMap: Map<string, { filteredItems: ClientSideItemCard[] }>,
     searchText: string,
     searchMode: MerchantSearchLocationOption,
 ) {

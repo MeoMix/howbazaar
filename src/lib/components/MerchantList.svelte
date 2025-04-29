@@ -127,10 +127,19 @@
     // This will ensure each merchant only shows items relevant to the user's filters.
     const filteredItems = $derived(
         filterItemCards(
-            items,
+            filterItemCards(
+                items,
+                [],
+                [],
+                { Core: "off" },
+                [],
+                false,
+                false,
+                "unset",
+            ),
             selectedHeroes,
             selectedTiers,
-            { ...tagStates, Core: "off" },
+            tagStates,
             selectedSizes,
             isMatchAnyTag,
             false,
@@ -150,40 +159,81 @@
         new Map(
             merchants.map((merchant) => [
                 merchant.id,
-                // Apply filters to the item pool again, but this time customized to the specific merchant.
-                // This will ensure each merchant only shows items relevant to the specific merchant.
-                filterItemCards(
-                    searchedItems,
-                    // If heroes isn't provided then show all released heroes except Common.
-                    merchant.filters.heros ?? [
-                        "Vanessa",
-                        "Pygmalien",
-                        "Dooley",
-                        // "Jules",
-                        // "Stelle",
-                        "Mak",
-                    ],
-                    // If tier isn't provided then show all tiers but exclude Legendary because merchants don't sell legendary items.
-                    merchant.filters.tiers ?? [
-                        "Bronze",
-                        "Silver",
-                        "Gold",
-                        "Diamond",
-                    ],
-                    merchant.filters.tagStates ?? {},
-                    merchant.filters.sizes ?? [],
-                    merchant.filters.isMatchAnyTag ?? true,
-                    false,
-                    "unset",
-                    merchant.filters.invalidPacks ?? ["Core"],
-                ),
+                {
+                    totalItemCount: filterItemCards(
+                        filterItemCards(
+                            items,
+                            // Filter out heroes from total item count if set because users care about probabilities from the
+                            // perspective of the hero they're playing in-game not the total potential pool of items.
+                            selectedHeroes,
+                            [],
+                            { Core: "off" },
+                            [],
+                            false,
+                            false,
+                            "unset",
+                        ),
+
+                        // If heroes isn't provided then show all released heroes except Common.
+                        merchant.filters.heros ?? [
+                            "Vanessa",
+                            "Pygmalien",
+                            "Dooley",
+                            // "Jules",
+                            // "Stelle",
+                            "Mak",
+                        ],
+                        // If tier isn't provided then show all tiers but exclude Legendary because merchants don't sell legendary items.
+                        merchant.filters.tiers ?? [
+                            "Bronze",
+                            "Silver",
+                            "Gold",
+                            "Diamond",
+                        ],
+                        merchant.filters.tagStates ?? {},
+                        merchant.filters.sizes ?? [],
+                        merchant.filters.isMatchAnyTag ?? true,
+                        false,
+                        "unset",
+                        merchant.filters.invalidPacks ?? ["Core"],
+                    ).length,
+                    // Apply filters to the item pool again, but this time customized to the specific merchant.
+                    // This will ensure each merchant only shows items relevant to the specific merchant.
+                    filteredItems: filterItemCards(
+                        searchedItems,
+                        // If heroes isn't provided then show all released heroes except Common.
+                        merchant.filters.heros ?? [
+                            "Vanessa",
+                            "Pygmalien",
+                            "Dooley",
+                            // "Jules",
+                            // "Stelle",
+                            "Mak",
+                        ],
+                        // If tier isn't provided then show all tiers but exclude Legendary because merchants don't sell legendary items.
+                        merchant.filters.tiers ?? [
+                            "Bronze",
+                            "Silver",
+                            "Gold",
+                            "Diamond",
+                        ],
+                        merchant.filters.tagStates ?? {},
+                        merchant.filters.sizes ?? [],
+                        merchant.filters.isMatchAnyTag ?? true,
+                        false,
+                        "unset",
+                        merchant.filters.invalidPacks ?? ["Core"],
+                    ),
+                },
             ]),
         ),
     );
 
     const filteredMerchants = $derived(() => {
         let candidates = merchants.filter(
-            (merchant) => (merchantItemsMap.get(merchant.id) ?? []).length > 0,
+            (merchant) =>
+                (merchantItemsMap.get(merchant.id)?.filteredItems ?? [])
+                    .length > 0,
         );
 
         // If user matched merchant names, filter down to only those
@@ -247,7 +297,8 @@
 {#snippet listItem(merchant: ClientSideMerchantCard)}
     <MerchantCard
         {merchant}
-        merchantItems={merchantItemsMap.get(merchant.id) ?? []}
+        merchantItems={merchantItemsMap.get(merchant.id)?.filteredItems ?? []}
+        totalItemCount={merchantItemsMap.get(merchant.id)?.totalItemCount ?? 0}
     />
 {/snippet}
 
@@ -276,7 +327,10 @@
     {#if selectedMerchant?.id}
         <MerchantCard
             merchant={selectedMerchant}
-            merchantItems={merchantItemsMap.get(selectedMerchant.id) ?? []}
+            merchantItems={merchantItemsMap.get(selectedMerchant.id)
+                ?.filteredItems ?? []}
+            totalItemCount={merchantItemsMap.get(selectedMerchant.id)
+                ?.totalItemCount ?? 0}
         />
     {/if}
 {/if}
