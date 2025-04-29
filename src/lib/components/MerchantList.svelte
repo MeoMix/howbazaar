@@ -181,10 +181,6 @@
         ),
     );
 
-    $effect(() => {
-        console.log("matchedMerchantIds", matchedMerchantIds());
-    });
-
     const filteredMerchants = $derived(() => {
         let candidates = merchants.filter(
             (merchant) => (merchantItemsMap.get(merchant.id) ?? []).length > 0,
@@ -198,10 +194,6 @@
         }
 
         return candidates;
-    });
-
-    $effect(() => {
-        console.log("filteredMerchants", filteredMerchants());
     });
 
     const isSearchFilterApplied = $derived(
@@ -227,11 +219,6 @@
             searchText,
             selectedSearchLocationOption,
         );
-    });
-
-    $effect(() => {
-        console.log("searchedMerchants", searchedMerchants());
-        console.log("effectiveSearchText:", searchText);
     });
 
     async function toggleMerchant(merchant: ClientSideMerchantCard) {
