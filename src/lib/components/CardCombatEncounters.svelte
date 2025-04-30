@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { page } from "$app/stores";
+    import { page } from "$app/state";
     import type { ClientSideCombatEncounterSummary } from "$lib/types";
 
     const {
@@ -11,7 +11,7 @@
     {#each combatEncounters as combatEncounter, index}
         <div class="whitespace-nowrap flex gap-1 items-center">
             <a
-                href={`/monsters${$page.url.search}#${combatEncounter.cardName.replace(/\s+/g, "_")}`}
+                href={`/monsters${page.url.search}#${combatEncounter.cardName.replace(/\s+/g, "_")}`}
                 class="text-blue-600 dark:text-blue-500 hover:underline"
             >
                 {combatEncounter.cardName}

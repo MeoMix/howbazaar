@@ -13,7 +13,7 @@
     import DiscordSolid from "flowbite-svelte-icons/DiscordSolid.svelte";
     import ClipboardOutline from "flowbite-svelte-icons/ClipboardOutline.svelte";
     import { onDestroy, onMount, type Snippet } from "svelte";
-    import { page } from "$app/stores";
+    import { page } from "$app/state";
     import { PUBLIC_CDN_URL } from "$env/static/public";
     import { DollarOutline } from "flowbite-svelte-icons";
     import { adsStore } from "$lib/stores/adsStore";
@@ -118,7 +118,7 @@
     >
         <div class="flex items-baseline">
             <NavBrand
-                href={`/${$page.url.search}`}
+                href={`/${page.url.search}`}
                 class="relative inline-block"
             >
                 <span
@@ -135,7 +135,7 @@
                 class="hover:text-gray-900 dark:text-bazaar-tan700 dark:hover:text-bazaar-orange dark:hover:bg-bazaar-brown p-2.5 rounded-lg relative group"
             >
                 <ClipboardOutline />
-                {#if $page.data.hasNewVersions}
+                {#if page.data.hasNewVersions}
                     <span
                         class="absolute top-2 right-2 w-2 h-2 bg-game-heal rounded-full ring-2 ring-white dark:ring-bazaar-background dark:group-hover:ring-bazaar-brown"
                     ></span>
@@ -169,7 +169,7 @@
         </div>
 
         <NavUl
-            activeUrl={`${$page.url.pathname}${$page.url.search}`}
+            activeUrl={`${page.url.pathname}${page.url.search}`}
             nonActiveClass="dark:text-bazaar-tan700 md:dark:hover:text-bazaar-orange hover:bg-gray-200 dark:hover:bg-bazaar-brown hover:text-bazaar-orange dark:hover:text-bazaar-orange md:hover:bg-transparent md:dark:hover:bg-transparent"
             activeClass="text-bazaar-orange dark:text-bazaar-orange md:text-bazaar-orange md:dark:text-bazaar-orange bg-gray-200 dark:bg-bazaar-brown md:bg-transparent md:dark:bg-transparent"
             ulClass="flex flex-col mt-4 md:flex-row md:space-x-0 rtl:space-x-reverse md:mt-0 md:text-sm md:font-medium dark:bg-bazaar-background dark:border-bazaar-brown"
@@ -178,32 +178,32 @@
         >
             <NavLi
                 class="md:p-4"
-                href={`/${$page.url.search}`}
+                href={`/${page.url.search}`}
                 on:click={onNavLiClick}>All</NavLi
             >
             <NavLi
                 class="md:p-4"
-                href={`/items${$page.url.search}`}
+                href={`/items${page.url.search}`}
                 on:click={onNavLiClick}>Items</NavLi
             >
             <NavLi
                 class="md:p-4"
-                href={`/skills${$page.url.search}`}
+                href={`/skills${page.url.search}`}
                 on:click={onNavLiClick}>Skills</NavLi
             >
             <NavLi
                 class="md:p-4"
-                href={`/monsters${$page.url.search}`}
+                href={`/monsters${page.url.search}`}
                 on:click={onNavLiClick}>Monsters</NavLi
             >
             <NavLi
                 class="md:p-4"
-                href={`/merchants${$page.url.search}`}
+                href={`/merchants${page.url.search}`}
                 on:click={onNavLiClick}>Merchants</NavLi
             >
             <NavLi
                 class="md:p-4"
-                href={`/contact${$page.url.search}`}
+                href={`/contact${page.url.search}`}
                 on:click={onNavLiClick}>Contact</NavLi
             >
         </NavUl>

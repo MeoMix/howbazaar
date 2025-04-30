@@ -1,9 +1,8 @@
 <script lang="ts">
-    import { Button, Label } from "flowbite-svelte";
+    import { Button } from "flowbite-svelte";
     import MultiSelectFilter from "./MultiSelectFilter.svelte";
-    import FilterToggle from "./FilterToggle.svelte";
     import { onMount } from "svelte";
-    import { page } from "$app/stores";
+    import { page } from "$app/state";
     import type {
         HiddenTag,
         Tag,
@@ -59,7 +58,7 @@
     }
 
     let isShowingAdvancedFilters = $state(
-        $page.url.searchParams.get("isShowingAdvancedFilters") === "true",
+        page.url.searchParams.get("isShowingAdvancedFilters") === "true",
     );
 
     onMount(async () => {

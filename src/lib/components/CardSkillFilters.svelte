@@ -3,7 +3,7 @@
     import MultiSelectFilter from "./MultiSelectFilter.svelte";
     import FilterToggle from "./FilterToggle.svelte";
     import { onMount } from "svelte";
-    import { page } from "$app/stores";
+    import { page } from "$app/state";
     import type {
         Hero,
         HiddenTag,
@@ -63,7 +63,7 @@
     }
 
     let isShowingAdvancedFilters = $state(
-        $page.url.searchParams.get("isShowingAdvancedFilters") === "true",
+        page.url.searchParams.get("isShowingAdvancedFilters") === "true",
     );
 
     onMount(async () => {
