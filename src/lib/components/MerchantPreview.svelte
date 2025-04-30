@@ -1,6 +1,7 @@
 <script lang="ts">
     import type { ClientSideMerchantCard } from "$lib/types";
     import { getImageUrl } from "$lib/utils/imageUtils";
+    import MerchantDescription from "./MerchantDescription.svelte";
 
     const {
         merchant,
@@ -13,8 +14,6 @@
     } = $props();
 
     const imageUrl = $derived(getImageUrl("merchants", merchant.id));
-    // Don't show the "Buys..." bit as it's only relevant in game.
-    const sellsDescription = $derived(merchant.description.replace(/Buys[\s\S]*$/, "").trim());
 
     function viewDetails() {
         toggleMerchant(merchant);
@@ -53,7 +52,7 @@
         </div>
 
         <div class={`mb-2 md:mb-0 text-bazaar-tan300`}>
-            {sellsDescription}
+            <MerchantDescription description={merchant.description} />
         </div>
     </div>
 </button>

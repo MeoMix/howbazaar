@@ -1,3 +1,3 @@
 <span
-    class="inline-block w-3 h-3 bg-current text-game-physical mask-crit"
+    class="inline-block w-3 h-3 bg-current text-game-damage mask-crit"
 ></span>

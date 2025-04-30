@@ -116,7 +116,7 @@ export default {
         game: {
           haste: 'rgb(0,236,195)',
           charge: 'rgb(0,236,195)',
-          physical: 'rgb(245,80,61)',
+          damage: 'rgb(245,80,61)',
           slow: 'rgb(203,159,110)',
           heal: 'rgb(142,234,49)',
           poison: 'rgb(14,190,79)',

@@ -5,6 +5,7 @@
     } from "$lib/types";
     import LazyLoadList from "./LazyLoadList.svelte";
     import MerchantCardItem from "./MerchantCardItem.svelte";
+    import MerchantDescription from "./MerchantDescription.svelte";
 
     let {
         merchant,
@@ -17,10 +18,6 @@
     } = $props();
 
     const id = $derived(merchant.name.replace(/\s+/g, "_"));
-    // Don't show the "Buys..." bit as it's only relevant in game.
-    const sellsDescription = $derived(
-        merchant.description.replace(/Buys[\s\S]*$/, "").trim(),
-    );
 </script>
 
 {#snippet listItem(card: ClientSideItemCard)}
@@ -36,7 +33,7 @@
         ·
 
         <span class={`text-xl text-bazaar-tan300`}>
-            {sellsDescription}
+            <MerchantDescription description={merchant.description} />
         </span>
     </div>
 

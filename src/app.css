@@ -26,7 +26,7 @@
 }
 
 @source inline('sr-only');
-@source inline('{text,border,bg,dark:text,dark:border,dark:bg,}-game-{haste,charge,physical,slow,heal,poison,ammo,freeze,shield,lifesteal,value,burn,tag}');
+@source inline('{text,border,bg,dark:text,dark:border,dark:bg,}-game-{haste,charge,damage,slow,heal,poison,ammo,freeze,shield,lifesteal,value,burn,tag}');
 @source inline('{text,border,bg,dark:text,dark:border,dark:bg,}-enchantments-{heavy,icy,turbo,shielded,restorative,toxic,fiery,shiny,deadly,radiant,obsidian,golden}');
 @source inline('{text,border,bg,dark:text,dark:border,dark:bg,}-patchnotes-{removed,added}');
 @source inline('{text,border,bg,dark:text,dark:border,dark:bg,}-tiers-{bronze,silver,gold,diamond,legendary}-{50,100,200,300,400,500,600,700,800,900,950}');

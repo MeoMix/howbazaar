@@ -226,7 +226,7 @@
             <p class="mb-4">
                 <strong class="text-bazaar-orange">Bottled Explosion</strong>
                 has the potential to scale to crazy amounts of
-                <span class="font-bold text-game-physical">Damage</span>
+                <span class="font-bold text-game-damage">Damage</span>
                 if you can keep it full of
                 <span class="font-bold text-game-ammo">Ammo</span>.
             </p>
