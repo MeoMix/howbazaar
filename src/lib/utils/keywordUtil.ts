@@ -1,4 +1,5 @@
 export type KeywordPart = {
+    type: "keyword";
     text: string;
     effect: string;
 };
@@ -70,6 +71,7 @@ export function highlightKeywords(text: string): Array<string | KeywordPart> {
         )!;
 
         parts.push({
+            type: "keyword",
             text: matchedText,
             effect: keywordEffectMap[effectKey],
         });

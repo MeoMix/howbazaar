@@ -1,5 +1,6 @@
 <script lang="ts">
     import { highlightKeywords } from "$lib/utils/keywordUtil";
+    import KeywordPart from "./KeywordPart.svelte";
 
     let {
         description,
@@ -19,10 +20,8 @@
     {#each parts as part}
         {#if typeof part === "string"}
             {part}
-        {:else if part.effect}
-            <span class="font-semibold text-game-{part.effect} capitalize"
-                >{part.text}</span
-            >
+        {:else if part.type === "keyword"}
+            <KeywordPart {part} />
         {/if}
     {/each}
 </span>

@@ -233,26 +233,34 @@ export function unifyTooltips(tooltipsByTier: string[][]): string[] {
 
 const tierOrder = ["Bronze", "Silver", "Gold", "Diamond", "Legendary"] as const;
 
-export type TooltipTierPart = {
-  bold: boolean;
+export type TierPart = {
+  type: "tier";
   parts: { text: string; tierType: TierType | null }[];
-  original: string;
 };
 
-export type TooltipPart = string | KeywordPart | TooltipTierPart;
+export type TooltipPart = string | KeywordPart | TierPart;
 
-export function parseTieredTooltip(str: string, startingTier: TierType): Array<string | TooltipTierPart> {
-  const output: Array<string | TooltipTierPart | string> = [];
+export function highlightTiers(text: string, startingTier: TierType): Array<string | TierPart> {
+  if (!text) {
+    return [];
+  }
+
+  const startTierIndex = tierOrder.indexOf(startingTier);
+  if (startTierIndex === -1) {
+    console.warn(`Invalid startingTier: ${startingTier}`);
+    return [text];
+  }
+
+  const output: Array<string | TierPart> = [];
   const regex = /(\([^)]*\))/g;
   let lastIndex = 0;
-  let match;
+  let match: RegExpExecArray | null;
 
-  while ((match = regex.exec(str)) !== null) {
+  while ((match = regex.exec(text)) !== null) {
     const index = match.index;
 
     if (index > lastIndex) {
-      const textBefore = str.substring(lastIndex, index);
-      output.push(textBefore);
+      output.push(text.substring(lastIndex, index));
     }
 
     const parenthesisContent = match[1].slice(1, -1);
@@ -260,21 +268,14 @@ export function parseTieredTooltip(str: string, startingTier: TierType): Array<s
 
     if (containsSlashes) {
       const parts = parenthesisContent.split("/");
-      let startTierIndex = tierOrder.indexOf(startingTier);
-      if (startTierIndex === -1) startTierIndex = 0;
-
-      const coloredParts = parts.map((part, i) => {
-        const tierIndex = startTierIndex + i;
-        return {
-          text: part.trim(),
-          tierType: tierIndex < tierOrder.length ? tierOrder[tierIndex] : null,
-        };
-      });
+      const coloredParts = parts.map((part, i) => ({
+        text: part.trim(),
+        tierType: tierOrder[startTierIndex + i] ?? null,
+      }));
 
       output.push({
-        bold: true,
+        type: "tier",
         parts: coloredParts,
-        original: match[1],
       });
     } else {
       output.push(match[1]);
@@ -283,8 +284,8 @@ export function parseTieredTooltip(str: string, startingTier: TierType): Array<s
     lastIndex = regex.lastIndex;
   }
 
-  if (lastIndex < str.length) {
-    output.push(str.substring(lastIndex));
+  if (lastIndex < text.length) {
+    output.push(text.substring(lastIndex));
   }
 
   return output;
