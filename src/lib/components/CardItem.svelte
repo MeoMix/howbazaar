@@ -113,7 +113,7 @@
                 <Divider />
 
                 <div
-                    class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-4"
+                    class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4"
                 >
                     {#each card.enchantments as enchantment}
                         <div>
