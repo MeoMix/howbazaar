@@ -23,7 +23,7 @@ const keywordEffects: Record<string, string[]> = {
         "Tool", "Tools",
         "Aquatic", "Toy", "Toys",
         "Reagent", "Reagents",
-        "Apparel"
+        "Apparel", "Potion", "Potions"
     ]
 };
 
