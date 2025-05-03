@@ -15,6 +15,7 @@ const keywordEffects: Record<string, string[]> = {
     poison: ["Poison", "Poisons"],
     freeze: ["Freeze"],
     burn: ["Burn", "Burns"],
+    value: ["Economic"],
     tag: [
         "Friend", "Friends",
         "Property", "Properties",
