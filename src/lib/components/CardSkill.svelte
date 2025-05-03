@@ -18,7 +18,7 @@
     } = $props();
 
     const id = $derived(card.name.replace(/\s+/g, "_"));
-    const tags = $derived(filterTags(card.tags, card.hiddenTags));
+    const tags = $derived(filterTags(card.tags, card.hiddenTags, card.customTags));
 </script>
 
 <Card

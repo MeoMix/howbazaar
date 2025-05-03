@@ -10,7 +10,7 @@ export function getCardFilterOptions(cards: (ClientSideItemCard | ClientSideSkil
     const minimumTierOptions = tierOrder.map(minimumTier => ({ name: minimumTier, value: minimumTier }));
     const sizeOptions = sizeOrder.map(size => ({ name: size, value: size }));
     const tagOptions = Array.from(
-        new Set(cards.flatMap((card) => filterTags(card.tags, card.hiddenTags)))
+        new Set(cards.flatMap((card) => filterTags(card.tags, card.hiddenTags, card.customTags)))
     ).sort().map(tag => ({ name: tag, value: tag }));
 
     return {
@@ -294,9 +294,9 @@ export function searchMerchants(
 
 // TODO: There's probably a better spot to put this, but rename EconomyReference to Economy because there's no Economy
 // tag, so might as well use a shorter form.
-export function filterTags(tags: Tag[], hiddenTags: HiddenTag[]) {
+export function filterTags(tags: Tag[], hiddenTags: HiddenTag[], customTags: CustomTag[]) {
     return Array.from(
-        new Set([...tags, ...hiddenTags].map(tag => tag.replace('EconomyReference', 'Economy')))
+        new Set([...tags, ...hiddenTags, ...customTags].map(tag => tag.replace('EconomyReference', 'Economy')))
     ).sort();
 }
 

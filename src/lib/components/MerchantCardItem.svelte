@@ -13,7 +13,7 @@
         card: ClientSideItemCard;
     } = $props();
 
-    const tags = $derived(filterTags(card.tags, card.hiddenTags));
+    const tags = $derived(filterTags(card.tags, card.hiddenTags, card.customTags));
 
     // TODO: Move this to a util file rather than copy/pasting.
     function getPackName(packId: ClientSideItemCard["packId"]): string {

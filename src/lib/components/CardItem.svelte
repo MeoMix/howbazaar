@@ -21,7 +21,7 @@
     } = $props();
 
     const id = $derived(card.name.replace(/\s+/g, "_"));
-    const tags = $derived(filterTags(card.tags, card.hiddenTags));
+    const tags = $derived(filterTags(card.tags, card.hiddenTags, card.customTags));
 
     function getPackName(packId: ClientSideItemCard["packId"]): string {
         // First replace underscores with spaces

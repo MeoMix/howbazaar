@@ -173,8 +173,6 @@
                             false,
                             "unset",
                         ),
-
-                        // If heroes isn't provided then show all released heroes except Common.
                         merchant.filters.heroes ?? [
                             "Vanessa",
                             "Pygmalien",
@@ -192,8 +190,6 @@
                     // This will ensure each merchant only shows items relevant to the specific merchant.
                     filteredItems: filterItemCards(
                         searchedItems,
-                        // TODO: Why not Common?
-                        // If heroes isn't provided then show all released heroes except Common.
                         merchant.filters.heroes ?? [
                             "Vanessa",
                             "Pygmalien",
