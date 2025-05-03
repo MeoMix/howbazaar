@@ -195,7 +195,7 @@
                         merchant.filters.isMatchAnyTag ?? true,
                         false,
                         "unset",
-                        [] // merchant.filters.invalidPacks ?? ["Core"],
+                        merchant.filters.invalidPacks ?? ["Core"],
                     ).length,
                     // Apply filters to the item pool again, but this time customized to the specific merchant.
                     // This will ensure each merchant only shows items relevant to the specific merchant.
@@ -223,7 +223,7 @@
                         merchant.filters.isMatchAnyTag ?? true,
                         false,
                         "unset",
-                        [] // merchant.filters.invalidPacks ?? ["Core"],
+                        merchant.filters.invalidPacks ?? ["Core"],
                     ),
                 },
             ]),
