@@ -20,6 +20,8 @@ const disallowedCardPacks = [
 // Keywords that indicate a card should be filtered out
 const invalidKeywords = ["[", "]", "Debug", "Test", "Tutorial"] as const;
 
+const invalidTags = ["Lifesteal", "Loot", "NonWeapon", "Passive"];
+
 const tierOrder: TierType[] = ["Bronze", "Silver", "Gold", "Diamond", "Legendary"];
 
 type AttributeQualifier =
@@ -677,7 +679,6 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
             };
         }).filter(enchantment => enchantment.tooltips.length > 0) : [];
 
-        let hiddenTags = card.HiddenTags;
         const name = card.Localization.Title.Text;
 
         // Generally sanitisize each tier of tooltips and ensure there's no duplicates.
@@ -707,8 +708,8 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
             name,
             startingTier,
             tiers,
-            tags: card.Tags,
-            hiddenTags,
+            tags: card.Tags.filter(tag => !invalidTags.includes(tag)),
+            hiddenTags: card.HiddenTags.filter(tag => !invalidTags.includes(tag)),
             customTags: customTagMap[card.Id] ?? [],
             size: card.Size,
             heroes: card.Heroes,
@@ -782,7 +783,6 @@ function parseSkillCards(cardsJson: CardsJson): ParsedSkillCard[] {
             },
         )) as Record<TierType, { tooltips: string[] }>;
 
-        let hiddenTags = card.HiddenTags;
         const name = card.Localization.Title.Text;
 
         // Generally sanitisize each tier of tooltips and ensure there's no duplicates.
@@ -806,8 +806,8 @@ function parseSkillCards(cardsJson: CardsJson): ParsedSkillCard[] {
             name,
             startingTier,
             tiers,
-            tags: card.Tags,
-            hiddenTags,
+            tags: card.Tags.filter(tag => !invalidTags.includes(tag)),
+            hiddenTags: card.HiddenTags.filter(tag => !invalidTags.includes(tag)),
             customTags: customTagMap[card.Id] ?? [],
             size: card.Size,
             heroes: card.Heroes,

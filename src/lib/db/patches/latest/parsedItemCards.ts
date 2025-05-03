@@ -6283,9 +6283,7 @@ const data: ParsedItemCard[] = [
         "tooltips": []
       }
     },
-    "tags": [
-      "Loot"
-    ],
+    "tags": [],
     "hiddenTags": [
       "Regen"
     ],
@@ -7620,9 +7618,7 @@ const data: ParsedItemCard[] = [
         "tooltips": []
       }
     },
-    "tags": [
-      "Loot"
-    ],
+    "tags": [],
     "hiddenTags": [
       "Cooldown"
     ],
@@ -14323,10 +14319,7 @@ const data: ParsedItemCard[] = [
       }
     },
     "tags": [],
-    "hiddenTags": [
-      "Passive",
-      "NonWeapon"
-    ],
+    "hiddenTags": [],
     "customTags": [
       "Unpurchasable"
     ],
@@ -18307,9 +18300,7 @@ const data: ParsedItemCard[] = [
         "tooltips": []
       }
     },
-    "tags": [
-      "Loot"
-    ],
+    "tags": [],
     "hiddenTags": [],
     "customTags": [],
     "size": "Small",
@@ -20891,9 +20882,7 @@ const data: ParsedItemCard[] = [
         "tooltips": []
       }
     },
-    "tags": [
-      "Loot"
-    ],
+    "tags": [],
     "hiddenTags": [
       "BurnReference"
     ],
@@ -32985,8 +32974,7 @@ const data: ParsedItemCard[] = [
       "Tool"
     ],
     "hiddenTags": [
-      "Damage",
-      "Lifesteal"
+      "Damage"
     ],
     "customTags": [
       "Unpurchasable"
@@ -33680,9 +33668,7 @@ const data: ParsedItemCard[] = [
         "tooltips": []
       }
     },
-    "tags": [
-      "Loot"
-    ],
+    "tags": [],
     "hiddenTags": [],
     "customTags": [
       "Unpurchasable"
@@ -36466,9 +36452,7 @@ const data: ParsedItemCard[] = [
         "tooltips": []
       }
     },
-    "tags": [
-      "Loot"
-    ],
+    "tags": [],
     "hiddenTags": [
       "Crit"
     ],
@@ -37980,9 +37964,7 @@ const data: ParsedItemCard[] = [
         "tooltips": []
       }
     },
-    "tags": [
-      "Loot"
-    ],
+    "tags": [],
     "hiddenTags": [],
     "customTags": [
       "Unpurchasable"
@@ -45062,9 +45044,7 @@ const data: ParsedItemCard[] = [
         "tooltips": []
       }
     },
-    "tags": [
-      "Loot"
-    ],
+    "tags": [],
     "hiddenTags": [
       "DamageReference"
     ],
@@ -46929,9 +46909,7 @@ const data: ParsedItemCard[] = [
         "tooltips": []
       }
     },
-    "tags": [
-      "Loot"
-    ],
+    "tags": [],
     "hiddenTags": [
       "Cooldown"
     ],
@@ -50427,9 +50405,7 @@ const data: ParsedItemCard[] = [
         "tooltips": []
       }
     },
-    "tags": [
-      "Loot"
-    ],
+    "tags": [],
     "hiddenTags": [
       "AmmoReference"
     ],
@@ -51132,9 +51108,7 @@ const data: ParsedItemCard[] = [
         "tooltips": []
       }
     },
-    "tags": [
-      "Loot"
-    ],
+    "tags": [],
     "hiddenTags": [
       "PoisonReference"
     ],
@@ -55811,9 +55785,7 @@ const data: ParsedItemCard[] = [
         "tooltips": []
       }
     },
-    "tags": [
-      "Loot"
-    ],
+    "tags": [],
     "hiddenTags": [],
     "customTags": [
       "Unpurchasable"
@@ -62239,9 +62211,7 @@ const data: ParsedItemCard[] = [
         "tooltips": []
       }
     },
-    "tags": [
-      "Loot"
-    ],
+    "tags": [],
     "hiddenTags": [],
     "customTags": [
       "Unpurchasable"
@@ -63758,9 +63728,7 @@ const data: ParsedItemCard[] = [
         "tooltips": []
       }
     },
-    "tags": [
-      "Loot"
-    ],
+    "tags": [],
     "hiddenTags": [
       "HealReference"
     ],
@@ -65197,10 +65165,7 @@ const data: ParsedItemCard[] = [
       }
     },
     "tags": [],
-    "hiddenTags": [
-      "Passive",
-      "NonWeapon"
-    ],
+    "hiddenTags": [],
     "customTags": [],
     "size": "Small",
     "heroes": [
@@ -65486,9 +65451,7 @@ const data: ParsedItemCard[] = [
         "tooltips": []
       }
     },
-    "tags": [
-      "Loot"
-    ],
+    "tags": [],
     "hiddenTags": [
       "ShieldReference"
     ],
@@ -66077,9 +66040,7 @@ const data: ParsedItemCard[] = [
         "tooltips": []
       }
     },
-    "tags": [
-      "Loot"
-    ],
+    "tags": [],
     "hiddenTags": [
       "Experience"
     ],

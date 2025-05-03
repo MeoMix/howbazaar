@@ -1285,7 +1285,6 @@ const data: ParsedSkillCard[] = [
       "Weapon"
     ],
     "hiddenTags": [
-      "Lifesteal",
       "Crit"
     ],
     "customTags": [],
@@ -2032,9 +2031,7 @@ const data: ParsedSkillCard[] = [
       }
     },
     "tags": [],
-    "hiddenTags": [
-      "NonWeapon"
-    ],
+    "hiddenTags": [],
     "customTags": [],
     "size": "Medium",
     "heroes": [
@@ -2113,8 +2110,7 @@ const data: ParsedSkillCard[] = [
     },
     "tags": [],
     "hiddenTags": [
-      "Freeze",
-      "NonWeapon"
+      "Freeze"
     ],
     "customTags": [],
     "size": "Medium",
@@ -2950,8 +2946,7 @@ const data: ParsedSkillCard[] = [
     "tags": [],
     "hiddenTags": [
       "Poison",
-      "Burn",
-      "NonWeapon"
+      "Burn"
     ],
     "customTags": [],
     "size": "Medium",
@@ -5725,9 +5720,7 @@ const data: ParsedSkillCard[] = [
     "tags": [
       "Weapon"
     ],
-    "hiddenTags": [
-      "Lifesteal"
-    ],
+    "hiddenTags": [],
     "customTags": [],
     "size": "Medium",
     "heroes": [
@@ -8516,8 +8509,7 @@ const data: ParsedSkillCard[] = [
     },
     "tags": [],
     "hiddenTags": [
-      "Slow",
-      "NonWeapon"
+      "Slow"
     ],
     "customTags": [],
     "size": "Medium",
@@ -12466,9 +12458,7 @@ const data: ParsedSkillCard[] = [
     "tags": [
       "Weapon"
     ],
-    "hiddenTags": [
-      "Lifesteal"
-    ],
+    "hiddenTags": [],
     "customTags": [],
     "size": "Medium",
     "heroes": [
@@ -12880,8 +12870,7 @@ const data: ParsedSkillCard[] = [
     },
     "tags": [],
     "hiddenTags": [
-      "Crit",
-      "NonWeapon"
+      "Crit"
     ],
     "customTags": [],
     "size": "Medium",
