@@ -19,8 +19,7 @@ export function getMerchants(
                 sizes: filterMapping.sizeFilter,
                 tagStates: filterMapping.tagStates,
                 tiers: filterMapping.tierFilter,
-                heros: filterMapping.heroFilter,
-                invalidPacks: filterMapping.invalidPackFilter,
+                heroes: filterMapping.heroFilter,
                 isMatchAnyTag: filterMapping.isMatchAnyTag,
             },
         };

@@ -200,7 +200,8 @@ const invalidItemIds: Record<string, string> = {
   "6cf87784-bca9-4735-a431-15bc88c97f78": "Compass",
   "334ee28f-cec4-431a-aaef-19bdcba5cbcc": "Steam Washer",
   "5e95fcfd-bacb-4bb6-bf65-fb16ba602b3d": "Jambalaya",
-  "26a15140-798a-4ac5-9df9-711ccc3cf89d": "Pastry Cart"
+  "26a15140-798a-4ac5-9df9-711ccc3cf89d": "Pastry Cart",
+  "367c2ad9-94b3-4f01-a130-a673922244ef": "Cookies"
 };
 
 export default invalidItemIds;

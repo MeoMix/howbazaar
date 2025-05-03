@@ -118,9 +118,7 @@ export type ClientSideMerchantCard = {
         sizes?: Size[];
         tagStates?: Partial<Record<Tag | HiddenTag, TriState>>;
         tiers?: TierType[];
-        // TODO: heroes?
-        heros?: Hero[];
-        invalidPacks?: (CorePackId | ExpansionPackId)[];
+        heroes?: Hero[];
         isMatchAnyTag?: false;
     }
 }

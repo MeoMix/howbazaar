@@ -223,7 +223,6 @@ export function filterItemCards(
     isMatchAnyTag: boolean,
     isMonsterDropsOnly: boolean,
     latestExpansionsOnlyState: TriState,
-    excludedPackIds?: (CorePackId | ExpansionPackId)[]
 ): ClientSideItemCard[] {
     return cards.filter(card => {
         return (
@@ -232,8 +231,7 @@ export function filterItemCards(
             matchesHero(card.heroes, selectedHeroes) &&
             matchesTier(card.startingTier, selectedTiers) &&
             matchesTagState(card.tags, card.hiddenTags, card.customTags, tagStates, isMatchAnyTag) &&
-            (selectedSizes.length === 0 || (card.size && selectedSizes.includes(card.size))) &&
-            (excludedPackIds === undefined || !excludedPackIds.includes(card.packId))
+            (selectedSizes.length === 0 || (card.size && selectedSizes.includes(card.size)))
         );
     });
 }

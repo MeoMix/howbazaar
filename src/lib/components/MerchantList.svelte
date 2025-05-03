@@ -175,27 +175,18 @@
                         ),
 
                         // If heroes isn't provided then show all released heroes except Common.
-                        merchant.filters.heros ?? [
+                        merchant.filters.heroes ?? [
                             "Vanessa",
                             "Pygmalien",
                             "Dooley",
-                            // "Jules",
-                            // "Stelle",
                             "Mak",
                         ],
-                        // If tier isn't provided then show all tiers but exclude Legendary because merchants don't sell legendary items.
-                        merchant.filters.tiers ?? [
-                            "Bronze",
-                            "Silver",
-                            "Gold",
-                            "Diamond",
-                        ],
+                        merchant.filters.tiers ?? [],
                         merchant.filters.tagStates ?? {},
                         merchant.filters.sizes ?? [],
                         merchant.filters.isMatchAnyTag ?? true,
                         false,
                         "unset",
-                        merchant.filters.invalidPacks ?? ["Core"],
                     ).length,
                     // Apply filters to the item pool again, but this time customized to the specific merchant.
                     // This will ensure each merchant only shows items relevant to the specific merchant.
@@ -203,27 +194,18 @@
                         searchedItems,
                         // TODO: Why not Common?
                         // If heroes isn't provided then show all released heroes except Common.
-                        merchant.filters.heros ?? [
+                        merchant.filters.heroes ?? [
                             "Vanessa",
                             "Pygmalien",
                             "Dooley",
-                            // "Jules",
-                            // "Stelle",
                             "Mak",
                         ],
-                        // If tier isn't provided then show all tiers but exclude Legendary because merchants don't sell legendary items.
-                        merchant.filters.tiers ?? [
-                            "Bronze",
-                            "Silver",
-                            "Gold",
-                            "Diamond",
-                        ],
+                        merchant.filters.tiers ?? [],
                         merchant.filters.tagStates ?? {},
                         merchant.filters.sizes ?? [],
                         merchant.filters.isMatchAnyTag ?? true,
                         false,
                         "unset",
-                        merchant.filters.invalidPacks ?? ["Core"],
                     ),
                 },
             ]),

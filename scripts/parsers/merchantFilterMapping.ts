@@ -2,7 +2,7 @@ import type { CorePackId, ExpansionPackId, Hero, HiddenTag, Size, Tag, TierType,
 
 // NOTE: Hero filter is implied to be all released heros if unspecified.
 // NOTE: Invalid pack filter is implied to be all except Core if unspecified.
-export const merchantFilterMapping: { [key: string]: { name: string, tagStates?: Partial<Record<Tag | HiddenTag, TriState>>, isMatchAnyTag?: false, sizeFilter?: Size[], tierFilter?: TierType[], heroFilter?: Hero[], invalidPackFilter?: (CorePackId | ExpansionPackId)[] } } = {
+export const merchantFilterMapping: { [key: string]: { name: string, tagStates?: Partial<Record<Tag | HiddenTag, TriState>>, isMatchAnyTag?: false, sizeFilter?: Size[], tierFilter?: TierType[], heroFilter?: Hero[] } } = {
     "dc12f4bd-6c33-41f0-b7ad-d62a0be09a47": { name: "Aila", tagStates: { Weapon: "on" } },
     "705c0d8e-8513-49ce-82e8-81782cdac316": { name: "Ande", sizeFilter: ["Small"] },
     "8f0aea10-9894-4ded-a726-72b23142589c": { name: "Barkun", sizeFilter: ["Medium", "Large"] },
@@ -11,7 +11,7 @@ export const merchantFilterMapping: { [key: string]: { name: string, tagStates?:
     // TODO: It's weird that Colt doesn't sell AmmoReference.
     // TODO: Add "Stelle" on release.
     "816e6ba0-8f5f-412e-9756-8e1901dd9d49": { name: "Colt", tagStates: { Ammo: "on" }, heroFilter: ["Vanessa" /*, "Stelle"*/] },
-    "c6cffe25-8e94-4a7b-a821-3e3c7093333b": { name: "Curio", tierFilter: ["Bronze"], heroFilter: ["Common"], invalidPackFilter: [] },
+    "c6cffe25-8e94-4a7b-a821-3e3c7093333b": { name: "Curio", tierFilter: ["Bronze"], heroFilter: ["Common"] },
     "4580fb31-b2ea-4f9b-9ab9-2979602f83d8": { name: "Dooley", heroFilter: ["Dooley"] },
     "0ff275f7-60ef-4428-acb6-1a138d03152d": { name: "Eli", tagStates: { Potion: "on" }, heroFilter: ["Mak"] },
     "7bd967dd-4631-4252-bdff-ee0bd5e3ddb7": { name: "Flex", tagStates: { Health: "on", HealthReference: "on" }, heroFilter: ["Pygmalien"] },
@@ -44,7 +44,7 @@ export const merchantFilterMapping: { [key: string]: { name: string, tagStates?:
     "ec81a27c-590c-43a1-a353-804a23b5e5d9": { name: "Silvia" },
     "e48b3243-1e7e-4a97-bf4f-0699fd0b4616": { name: "Stelle", heroFilter: ["Stelle"] },
     // TODO: I don't remember why I exclude Common by default.
-    "22bb0004-5131-4588-a567-03ee3c96003b": { name: "Tatiana", tagStates: { Toy: "on" }, invalidPackFilter: [], heroFilter: ["Vanessa", "Pygmalien", "Dooley", "Mak", "Common"] },
+    "22bb0004-5131-4588-a567-03ee3c96003b": { name: "Tatiana", tagStates: { Toy: "on" }, heroFilter: ["Vanessa", "Pygmalien", "Dooley", "Mak", "Common"] },
     "b1b1f445-e625-4397-b4e2-ee4feeb729fa": { name: "Tinker", tagStates: { Friend: "on" } },
     // TODO: Include Jules/Stelle on release.
     "3e871bbb-fb25-417f-8643-cb43456c3fc7": { name: "Tok's Clocks", tagStates: { Haste: "on", HasteReference: "on", Slow: "on", SlowReference: "on", Cooldown: "on" }, heroFilter: ["Vanessa", "Dooley", "Mak"] },
