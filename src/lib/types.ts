@@ -2,8 +2,10 @@ export type EnchantmentType = 'Heavy' | 'Icy' | 'Turbo' | 'Shielded' | 'Restorat
 export type Hero = "Pygmalien" | "Vanessa" | "Stelle" | "Jules" | "Dooley" | "Mak" | "Common";
 export type TierType = "Silver" | "Diamond" | "Bronze" | "Gold" | "Legendary";
 export type Size = "Small" | "Medium" | "Large";
-export type Tag = "Weapon" | "Shield" | "Heal" | "Joy" | "Burn" | "Poison" | "Merchant" | "Core" | "Property" | "Friend" | "Apparel" | "Freeze" | "Aquatic" | "Toy" | "Dinosaur" | "Tool" | "Potion" | "Vehicle" | "Food" | "Dragon" | "Tech" | "Ray" | "Haste" | "Slow" | "Damage" | "Loot" | "Ingredient" | "Relic" | "Reagent";
-export type HiddenTag = "HealthMax" | "Health" | "Poison" | "Income" | "Cooldown" | "Heal" | "Value" | "EconomyReference" | "Damage" | "BurnReference" | "Slow" | "Active" | "Shield" | "Burn" | "DamageReference" | "CritReference" | "Gold" | "Passive" | "NonWeapon" | "Multicast" | "Haste" | "HealReference" | "ShieldReference" | "HasteReference" | "Freeze" | "Crit" | "Ammo" | "Charge" | "JoyReference" | "Regen" | "PoisonReference" | "Joy" | "HealthReference" | "FreezeReference" | "SlowReference" | "AmmoReference" | "Toughness" | "Lifesteal" | "Experience" | "RegenReference" | "Unsellable";
+export type Tag = "Weapon" | "Shield" | "Heal" | "Joy" | "Burn" | "Poison" | "Merchant" | "Core" | "Property" | "Friend" | "Apparel" | "Freeze" | "Aquatic" | "Toy" | "Dinosaur" | "Tool" | "Potion" | "Vehicle" | "Food" | "Dragon" | "Tech" | "Ray" | "Haste" | "Slow" | "Damage" | "Loot" | "Ingredient" | "Relic" | "Reagent" | "Regen";
+// TODO: Why is Regen both a Tag and a HiddenTag?
+export type HiddenTag = "Health" | "Poison" | "Income" | "Cooldown" | "Heal" | "Value" | "EconomyReference" | "Damage" | "BurnReference" | "Slow" | "Active" | "Shield" | "Burn" | "DamageReference" | "CritReference" | "Gold" | "Passive" | "NonWeapon" | "Multicast" | "Haste" | "HealReference" | "ShieldReference" | "HasteReference" | "Freeze" | "Crit" | "Ammo" | "Charge" | "JoyReference" | "Regen" | "PoisonReference" | "Joy" | "HealthReference" | "FreezeReference" | "SlowReference" | "AmmoReference" | "Toughness" | "Lifesteal" | "Experience" | "RegenReference" | "Unsellable";
+export type CustomTag = "Unpurchasable";
 
 type ClientSideTier = {
     tooltips: string[];
@@ -24,6 +26,7 @@ export type ParsedItemCard = {
     } };
     tags: Tag[];
     hiddenTags: HiddenTag[];
+    customTags: CustomTag[];
     size: Size;
     heroes: Hero[];
     enchantments: ClientSideEnchantment[];
@@ -42,6 +45,7 @@ export type ClientSideItemCard = {
     tiers: { [key in TierType]: ClientSideTier };
     tags: Tag[];
     hiddenTags: HiddenTag[];
+    customTags: CustomTag[];
     size: Size;
     // TODO: Items can only have a single hero.
     heroes: Hero[];
@@ -61,6 +65,7 @@ export type ParsedSkillCard = {
     } };
     tags: Tag[];
     hiddenTags: HiddenTag[];
+    customTags: CustomTag[];
     size: Size;
     heroes: Hero[];
     artKey: string;
@@ -76,6 +81,7 @@ export type ClientSideSkillCard = {
     tiers: { [key in TierType]: ClientSideTier };
     tags: Tag[];
     hiddenTags: HiddenTag[];
+    customTags: CustomTag[];
     size: Size;
     heroes: Hero[];
     unifiedTooltips: string[];

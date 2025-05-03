@@ -3,12 +3,13 @@
 // https://github.com/glideapps/quicktype?tab=readme-ov-file#calling-quicktype-from-javascript
 import type { Entries } from "type-fest";
 import type { ParsedCombatEncounterCard, ParsedItemCard, ParsedMerchantCard, ParsedSkillCard } from "$lib/types";
-import type { V2CardsD as Card, Bronze as Tier, Tiers, Tier as TierType, AbilityAction, AuraAction, Ability, Aura, Operation, Origin } from "./data/cards";
+import type { The100 as Card, Bronze as Tier, Tiers, Tier as TierType, AbilityAction, AuraAction, Ability, Aura, Operation, Origin } from "./data/cards";
 import { unifyTooltips } from "$lib/utils/tooltipUtils";
 import type { CardsJson } from "./types.parser";
 import invalidItemIds from "./invalidItemIds";
 import invalidSkillIds from "./invalidSkillIds";
 import monsterTemplateIdMapping from "./monsterTemplateIdMapping";
+import customTagMap from "./customTagsMap";
 
 // Card packs that should be filtered out
 const disallowedCardPacks = [
@@ -37,12 +38,10 @@ function getAttributeInfo(
     name: string | undefined;
     value: number | undefined;
     operation: Operation | undefined;
-    targetMode: Origin | undefined;
 } {
     let attributeValue: number | undefined;
     let attributeName = "MISSING";
     let operation: Operation | undefined;
-    let targetMode: Origin | undefined;
     const actionType = action.$type;
 
     if (actionType.includes("ModifyAttribute")) {
@@ -50,7 +49,6 @@ function getAttributeInfo(
             attributeName = action.AttributeType!;
             attributeValue = action.Value.Value;
             operation = action.Operation!;
-            targetMode = action.Target?.TargetMode;
         } else if (
             (action.Value?.$type === "TReferenceValueCardAttribute" || action.Value?.$type === "TReferenceValueCardAttributeAggregate") &&
             action.Value?.Target?.$type !== "TTargetCardSelf"
@@ -73,7 +71,7 @@ function getAttributeInfo(
             // If there's a modifier, and if modifier mode is multiply, then get the attribute type and multiply it by modifier rather than just using modifier.
             attributeValue = action.Value.Modifier.Value.Value ?? action.Value.Modifier.Value.DefaultValue!;
             operation = action.Operation!;
-            targetMode = action.Target?.TargetMode;
+            
 
             if (qualifier.isMod) {
                 // If there is no Action.Value.Modifier.Value.Value then look at AttributeType
@@ -91,7 +89,7 @@ function getAttributeInfo(
                     name: attributeName,
                     value: attributeValue,
                     operation,
-                    targetMode
+                    
                 };
             }
 
@@ -126,7 +124,6 @@ function getAttributeInfo(
         name: attributeName,
         value: attributeValue,
         operation,
-        targetMode
     };
 }
 
@@ -654,9 +651,8 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
                         .trim();
 
                     let chance = (sign !== "Double" && name?.includes('Chance')) ? '%' : '';
-                    let prefixString = result.targetMode === "Neighbor" ? "Adjacent items have an additional " : "";
 
-                    let tooltip = `${prefixString}${sign}${sign === "Double" ? '' : value}${chance} ${name}`;
+                    let tooltip = `${sign}${sign === "Double" ? '' : value}${chance} ${name}`;
 
                     tooltips.push(tooltip);
                 }
@@ -713,6 +709,7 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
             tiers,
             tags: card.Tags,
             hiddenTags,
+            customTags: customTagMap[card.Id] ?? [],
             size: card.Size,
             heroes: card.Heroes,
             enchantments,
@@ -811,6 +808,7 @@ function parseSkillCards(cardsJson: CardsJson): ParsedSkillCard[] {
             tiers,
             tags: card.Tags,
             hiddenTags,
+            customTags: customTagMap[card.Id] ?? [],
             size: card.Size,
             heroes: card.Heroes,
             artKey: card.ArtKey,

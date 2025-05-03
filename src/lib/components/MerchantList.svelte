@@ -131,7 +131,7 @@
                 items,
                 [],
                 [],
-                { Core: "off" },
+                { Unpurchasable: "off" },
                 [],
                 false,
                 false,
@@ -167,7 +167,7 @@
                             // perspective of the hero they're playing in-game not the total potential pool of items.
                             selectedHeroes,
                             [],
-                            { Core: "off" },
+                            { Unpurchasable: "off" },
                             [],
                             false,
                             false,
@@ -195,12 +195,13 @@
                         merchant.filters.isMatchAnyTag ?? true,
                         false,
                         "unset",
-                        merchant.filters.invalidPacks ?? ["Core"],
+                        [] // merchant.filters.invalidPacks ?? ["Core"],
                     ).length,
                     // Apply filters to the item pool again, but this time customized to the specific merchant.
                     // This will ensure each merchant only shows items relevant to the specific merchant.
                     filteredItems: filterItemCards(
                         searchedItems,
+                        // TODO: Why not Common?
                         // If heroes isn't provided then show all released heroes except Common.
                         merchant.filters.heros ?? [
                             "Vanessa",
@@ -222,7 +223,7 @@
                         merchant.filters.isMatchAnyTag ?? true,
                         false,
                         "unset",
-                        merchant.filters.invalidPacks ?? ["Core"],
+                        [] // merchant.filters.invalidPacks ?? ["Core"],
                     ),
                 },
             ]),
@@ -277,19 +278,19 @@
         } else {
             selectedMerchant = merchant;
 
-            await tick();
+            // await tick();
 
-            // Do this manually so it works even if data is fetched after page loads
-            const targetElement = document.getElementById(
-                merchant.name.replace(/\s+/g, "_"),
-            );
+            // // Do this manually so it works even if data is fetched after page loads
+            // const targetElement = document.getElementById(
+            //     merchant.name.replace(/\s+/g, "_"),
+            // );
 
-            if (targetElement) {
-                targetElement.scrollIntoView({
-                    behavior: "smooth",
-                    block: "start",
-                });
-            }
+            // if (targetElement) {
+            //     targetElement.scrollIntoView({
+            //         behavior: "smooth",
+            //         block: "start",
+            //     });
+            // }
         }
     }
 </script>
@@ -311,6 +312,7 @@
             {listItem}
             listItemName="merchant"
             {initialLoad}
+            batchSize={10}
         />
     </div>
 {:else if !isHiddenWhenEmpty}

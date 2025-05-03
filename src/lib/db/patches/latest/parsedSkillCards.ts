@@ -38,6 +38,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Crit"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -76,6 +77,7 @@ const data: ParsedSkillCard[] = [
       "Potion"
     ],
     "hiddenTags": [],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Mak"
@@ -118,6 +120,7 @@ const data: ParsedSkillCard[] = [
       "Core"
     ],
     "hiddenTags": [],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -159,6 +162,7 @@ const data: ParsedSkillCard[] = [
       "DamageReference",
       "RegenReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Mak"
@@ -200,6 +204,7 @@ const data: ParsedSkillCard[] = [
       "Haste",
       "BurnReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -242,6 +247,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Slow"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley",
@@ -287,6 +293,7 @@ const data: ParsedSkillCard[] = [
       "ShieldReference",
       "CritReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -333,6 +340,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Ammo"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -378,6 +386,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Health"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -421,6 +430,7 @@ const data: ParsedSkillCard[] = [
       "SlowReference",
       "Crit"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -466,6 +476,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Cooldown"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley",
@@ -513,6 +524,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Crit"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -561,6 +573,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Haste"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -604,6 +617,7 @@ const data: ParsedSkillCard[] = [
       "Shield",
       "HealthReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -647,6 +661,7 @@ const data: ParsedSkillCard[] = [
       "HealReference",
       "Regen"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -690,6 +705,7 @@ const data: ParsedSkillCard[] = [
       "DamageReference",
       "PoisonReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -737,6 +753,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "DamageReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -780,6 +797,7 @@ const data: ParsedSkillCard[] = [
       "DamageReference",
       "EconomyReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -820,6 +838,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "DamageReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -865,6 +884,7 @@ const data: ParsedSkillCard[] = [
       "BurnReference",
       "Haste"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -912,6 +932,7 @@ const data: ParsedSkillCard[] = [
       "SlowReference",
       "Haste"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -954,6 +975,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Health"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -997,6 +1019,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "HealReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -1041,6 +1064,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Gold"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -1085,6 +1109,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "DamageReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -1129,6 +1154,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Burn"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -1175,6 +1201,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Crit"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -1217,6 +1244,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Cooldown"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -1260,6 +1288,7 @@ const data: ParsedSkillCard[] = [
       "Lifesteal",
       "Crit"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -1302,6 +1331,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "DamageReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -1345,6 +1375,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Burn"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley",
@@ -1384,6 +1415,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Cooldown"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -1424,6 +1456,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Poison"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -1463,6 +1496,7 @@ const data: ParsedSkillCard[] = [
       "Tool"
     ],
     "hiddenTags": [],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -1506,6 +1540,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Poison"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Mak"
@@ -1550,6 +1585,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "DamageReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -1596,6 +1632,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Crit"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -1644,6 +1681,7 @@ const data: ParsedSkillCard[] = [
       "Haste",
       "BurnReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -1686,6 +1724,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Crit"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -1729,6 +1768,7 @@ const data: ParsedSkillCard[] = [
       "PoisonReference",
       "CritReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -1776,6 +1816,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Cooldown"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -1816,6 +1857,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Shield"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -1861,6 +1903,7 @@ const data: ParsedSkillCard[] = [
       "BurnReference",
       "Cooldown"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -1906,6 +1949,7 @@ const data: ParsedSkillCard[] = [
       "RegenReference",
       "Charge"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Mak"
@@ -1946,6 +1990,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Haste"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -1990,6 +2035,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "NonWeapon"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -2028,6 +2074,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Crit"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -2069,6 +2116,7 @@ const data: ParsedSkillCard[] = [
       "Freeze",
       "NonWeapon"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -2112,6 +2160,7 @@ const data: ParsedSkillCard[] = [
       "Poison",
       "Burn"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -2158,6 +2207,7 @@ const data: ParsedSkillCard[] = [
       "CritReference",
       "Freeze"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -2201,6 +2251,7 @@ const data: ParsedSkillCard[] = [
       "Charge",
       "PoisonReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -2244,6 +2295,7 @@ const data: ParsedSkillCard[] = [
       "PoisonReference",
       "SlowReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -2288,6 +2340,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Charge"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -2337,6 +2390,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "ShieldReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Stelle",
@@ -2381,6 +2435,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Slow"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -2425,6 +2480,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Haste"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -2469,6 +2525,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Slow"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -2507,6 +2564,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Cooldown"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -2549,6 +2607,7 @@ const data: ParsedSkillCard[] = [
       "Tool"
     ],
     "hiddenTags": [],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -2591,6 +2650,7 @@ const data: ParsedSkillCard[] = [
       "BurnReference",
       "ShieldReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -2631,6 +2691,7 @@ const data: ParsedSkillCard[] = [
     },
     "tags": [],
     "hiddenTags": [],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -2673,6 +2734,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Burn"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -2717,6 +2779,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Ammo"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Mak"
@@ -2755,6 +2818,7 @@ const data: ParsedSkillCard[] = [
       "Friend"
     ],
     "hiddenTags": [],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -2800,6 +2864,7 @@ const data: ParsedSkillCard[] = [
       "DamageReference",
       "ShieldReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -2843,6 +2908,7 @@ const data: ParsedSkillCard[] = [
       "BurnReference",
       "Shield"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -2887,6 +2953,7 @@ const data: ParsedSkillCard[] = [
       "Burn",
       "NonWeapon"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -2933,6 +3000,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Haste"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -2975,6 +3043,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "ShieldReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -3013,6 +3082,7 @@ const data: ParsedSkillCard[] = [
     },
     "tags": [],
     "hiddenTags": [],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -3053,6 +3123,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Regen"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Mak"
@@ -3095,6 +3166,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Cooldown"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -3135,6 +3207,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Health"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -3179,6 +3252,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Ammo"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -3222,6 +3296,7 @@ const data: ParsedSkillCard[] = [
       "FreezeReference",
       "Slow"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -3264,6 +3339,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Damage"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -3301,6 +3377,7 @@ const data: ParsedSkillCard[] = [
     },
     "tags": [],
     "hiddenTags": [],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -3343,6 +3420,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "BurnReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -3390,6 +3468,7 @@ const data: ParsedSkillCard[] = [
       "Haste",
       "SlowReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -3433,6 +3512,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Crit"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -3481,6 +3561,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "DamageReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley",
@@ -3521,6 +3602,7 @@ const data: ParsedSkillCard[] = [
     },
     "tags": [],
     "hiddenTags": [],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -3564,6 +3646,7 @@ const data: ParsedSkillCard[] = [
       "HealReference",
       "Cooldown"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -3607,6 +3690,7 @@ const data: ParsedSkillCard[] = [
       "HealReference",
       "SlowReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -3653,6 +3737,7 @@ const data: ParsedSkillCard[] = [
       "ShieldReference",
       "DamageReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -3697,6 +3782,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Slow"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -3739,6 +3825,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Haste"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -3785,6 +3872,7 @@ const data: ParsedSkillCard[] = [
       "Regen",
       "AmmoReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -3826,6 +3914,7 @@ const data: ParsedSkillCard[] = [
       "Slow",
       "AmmoReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -3869,6 +3958,7 @@ const data: ParsedSkillCard[] = [
       "Poison",
       "Crit"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -3911,6 +4001,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Cooldown"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -3955,6 +4046,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "BurnReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -3999,6 +4091,7 @@ const data: ParsedSkillCard[] = [
       "Ammo",
       "CritReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -4042,6 +4135,7 @@ const data: ParsedSkillCard[] = [
       "Haste",
       "FreezeReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley",
@@ -4091,6 +4185,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Burn"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -4138,6 +4233,7 @@ const data: ParsedSkillCard[] = [
       "BurnReference",
       "DamageReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -4182,6 +4278,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "PoisonReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -4225,6 +4322,7 @@ const data: ParsedSkillCard[] = [
       "FreezeReference",
       "Crit"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -4276,6 +4374,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "DamageReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -4319,6 +4418,7 @@ const data: ParsedSkillCard[] = [
       "Heal",
       "HealthReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -4365,6 +4465,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "BurnReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -4410,6 +4511,7 @@ const data: ParsedSkillCard[] = [
       "Shield",
       "HealthReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -4450,6 +4552,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Cooldown"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -4495,6 +4598,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "BurnReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -4543,6 +4647,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Gold"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -4587,6 +4692,7 @@ const data: ParsedSkillCard[] = [
       "Burn",
       "Cooldown"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -4633,6 +4739,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Haste"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -4676,6 +4783,7 @@ const data: ParsedSkillCard[] = [
       "SlowReference",
       "Regen"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -4715,6 +4823,7 @@ const data: ParsedSkillCard[] = [
       "FreezeReference",
       "Ammo"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -4759,6 +4868,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "DamageReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -4801,6 +4911,7 @@ const data: ParsedSkillCard[] = [
       "Vehicle"
     ],
     "hiddenTags": [],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Stelle"
@@ -4844,6 +4955,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Health"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -4888,6 +5000,7 @@ const data: ParsedSkillCard[] = [
       "Regen",
       "BurnReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -4934,6 +5047,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "BurnReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -4978,6 +5092,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "DamageReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley",
@@ -5023,6 +5138,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Freeze"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -5066,6 +5182,7 @@ const data: ParsedSkillCard[] = [
       "Shield",
       "HealthReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -5106,6 +5223,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Health"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -5155,6 +5273,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Heal"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -5198,6 +5317,7 @@ const data: ParsedSkillCard[] = [
       "Freeze",
       "HealthReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -5244,6 +5364,7 @@ const data: ParsedSkillCard[] = [
       "Ammo",
       "DamageReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -5287,6 +5408,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Poison"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -5330,6 +5452,7 @@ const data: ParsedSkillCard[] = [
       "HasteReference",
       "Freeze"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley",
@@ -5373,6 +5496,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Cooldown"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -5421,6 +5545,7 @@ const data: ParsedSkillCard[] = [
       "FreezeReference",
       "Charge"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -5471,6 +5596,7 @@ const data: ParsedSkillCard[] = [
       "PoisonReference",
       "BurnReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -5516,6 +5642,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Cooldown"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -5560,6 +5687,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "HealthReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -5600,6 +5728,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Lifesteal"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -5646,6 +5775,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "DamageReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Jules",
@@ -5691,6 +5821,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "CritReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -5731,6 +5862,7 @@ const data: ParsedSkillCard[] = [
       "Shield",
       "EconomyReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -5774,6 +5906,7 @@ const data: ParsedSkillCard[] = [
       "Charge",
       "HealReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -5819,6 +5952,7 @@ const data: ParsedSkillCard[] = [
       "FreezeReference",
       "DamageReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -5865,6 +5999,7 @@ const data: ParsedSkillCard[] = [
       "DamageReference",
       "HealthReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -5908,6 +6043,7 @@ const data: ParsedSkillCard[] = [
       "BurnReference",
       "HasteReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -5950,6 +6086,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Crit"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -5994,6 +6131,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Haste"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -6036,6 +6174,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Value"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -6079,6 +6218,7 @@ const data: ParsedSkillCard[] = [
       "Burn",
       "Ammo"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -6122,6 +6262,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Regen"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Mak"
@@ -6164,6 +6305,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Burn"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -6212,6 +6354,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Crit"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -6261,6 +6404,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Crit"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -6310,6 +6454,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "DamageReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -6348,6 +6493,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Value"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -6394,6 +6540,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Heal"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -6439,6 +6586,7 @@ const data: ParsedSkillCard[] = [
       "DamageReference",
       "CritReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -6481,6 +6629,7 @@ const data: ParsedSkillCard[] = [
       "BurnReference",
       "Shield"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley",
@@ -6526,6 +6675,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Haste"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -6570,6 +6720,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "PoisonReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Mak"
@@ -6612,6 +6763,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "ShieldReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -6659,6 +6811,7 @@ const data: ParsedSkillCard[] = [
       "Shield",
       "HealthReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -6701,6 +6854,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "DamageReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -6743,6 +6897,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Poison"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -6784,6 +6939,7 @@ const data: ParsedSkillCard[] = [
       "HealReference",
       "ShieldReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -6826,6 +6982,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Charge"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -6866,6 +7023,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "DamageReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -6910,6 +7068,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Burn"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -6954,6 +7113,7 @@ const data: ParsedSkillCard[] = [
       "Charge",
       "BurnReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Mak"
@@ -6998,6 +7158,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "ShieldReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -7045,6 +7206,7 @@ const data: ParsedSkillCard[] = [
       "DamageReference",
       "SlowReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -7091,6 +7253,7 @@ const data: ParsedSkillCard[] = [
       "PoisonReference",
       "Freeze"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley",
@@ -7137,6 +7300,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "DamageReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -7184,6 +7348,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "BurnReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -7229,6 +7394,7 @@ const data: ParsedSkillCard[] = [
       "BurnReference",
       "Crit"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -7273,6 +7439,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "DamageReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -7319,6 +7486,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "DamageReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Jules",
@@ -7367,6 +7535,7 @@ const data: ParsedSkillCard[] = [
       "DamageReference",
       "EconomyReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -7407,6 +7576,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "DamageReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -7452,6 +7622,7 @@ const data: ParsedSkillCard[] = [
       "FreezeReference",
       "Cooldown"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -7499,6 +7670,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Crit"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -7540,6 +7712,7 @@ const data: ParsedSkillCard[] = [
       "Freeze",
       "ShieldReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -7581,6 +7754,7 @@ const data: ParsedSkillCard[] = [
       "BurnReference",
       "RegenReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -7625,6 +7799,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "ShieldReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -7672,6 +7847,7 @@ const data: ParsedSkillCard[] = [
       "FreezeReference",
       "DamageReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -7713,6 +7889,7 @@ const data: ParsedSkillCard[] = [
       "BurnReference",
       "CritReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -7757,6 +7934,7 @@ const data: ParsedSkillCard[] = [
       "ShieldReference",
       "Cooldown"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -7799,6 +7977,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "AmmoReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -7843,6 +8022,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "ShieldReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Stelle",
@@ -7889,6 +8069,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "DamageReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -7933,6 +8114,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "ShieldReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -7980,6 +8162,7 @@ const data: ParsedSkillCard[] = [
       "HasteReference",
       "Crit"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley",
@@ -8026,6 +8209,7 @@ const data: ParsedSkillCard[] = [
       "Shield",
       "EconomyReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -8070,6 +8254,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Cooldown"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -8113,6 +8298,7 @@ const data: ParsedSkillCard[] = [
       "SlowReference",
       "Freeze"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley",
@@ -8156,6 +8342,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Haste"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley",
@@ -8202,6 +8389,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "BurnReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -8244,6 +8432,7 @@ const data: ParsedSkillCard[] = [
       "Property"
     ],
     "hiddenTags": [],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -8286,6 +8475,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Burn"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley",
@@ -8329,6 +8519,7 @@ const data: ParsedSkillCard[] = [
       "Slow",
       "NonWeapon"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -8371,6 +8562,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Cooldown"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Mak"
@@ -8412,6 +8604,7 @@ const data: ParsedSkillCard[] = [
       "Crit",
       "AmmoReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -8452,6 +8645,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Crit"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -8496,6 +8690,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Charge"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -8536,6 +8731,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "ShieldReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -8581,6 +8777,7 @@ const data: ParsedSkillCard[] = [
       "SlowReference",
       "Cooldown"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -8627,6 +8824,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "AmmoReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -8670,6 +8868,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Regen"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -8716,6 +8915,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "ShieldReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -8762,6 +8962,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Crit"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -8813,6 +9014,7 @@ const data: ParsedSkillCard[] = [
       "BurnReference",
       "Regen"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -8858,6 +9060,7 @@ const data: ParsedSkillCard[] = [
       "Regen",
       "PoisonReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -8897,6 +9100,7 @@ const data: ParsedSkillCard[] = [
       "Regen",
       "PoisonReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -8934,6 +9138,7 @@ const data: ParsedSkillCard[] = [
     },
     "tags": [],
     "hiddenTags": [],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -8978,6 +9183,7 @@ const data: ParsedSkillCard[] = [
       "RegenReference",
       "Crit"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -9021,6 +9227,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Slow"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -9065,6 +9272,7 @@ const data: ParsedSkillCard[] = [
       "Vehicle"
     ],
     "hiddenTags": [],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -9111,6 +9319,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Cooldown"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -9155,6 +9364,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Poison"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -9200,6 +9410,7 @@ const data: ParsedSkillCard[] = [
       "DamageReference",
       "HasteReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -9245,6 +9456,7 @@ const data: ParsedSkillCard[] = [
       "HealthReference",
       "Shield"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -9287,6 +9499,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Value"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -9330,6 +9543,7 @@ const data: ParsedSkillCard[] = [
       "PoisonReference",
       "Haste"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -9371,6 +9585,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Damage"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -9415,6 +9630,7 @@ const data: ParsedSkillCard[] = [
       "Potion"
     ],
     "hiddenTags": [],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Mak"
@@ -9459,6 +9675,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Cooldown"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -9503,6 +9720,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Haste"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -9550,6 +9768,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Crit"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -9595,6 +9814,7 @@ const data: ParsedSkillCard[] = [
       "CritReference",
       "Haste"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -9640,6 +9860,7 @@ const data: ParsedSkillCard[] = [
       "ShieldReference",
       "DamageReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -9687,6 +9908,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Health"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -9734,6 +9956,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "DamageReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Jules",
@@ -9783,6 +10006,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "ShieldReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -9828,6 +10052,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "DamageReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley",
@@ -9876,6 +10101,7 @@ const data: ParsedSkillCard[] = [
       "Haste",
       "FreezeReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -9918,6 +10144,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Freeze"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -9961,6 +10188,7 @@ const data: ParsedSkillCard[] = [
       "HealReference",
       "CritReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -10004,6 +10232,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "HealReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -10043,6 +10272,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Burn"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -10082,6 +10312,7 @@ const data: ParsedSkillCard[] = [
       "SlowReference",
       "Charge"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -10126,6 +10357,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "HealReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -10165,6 +10397,7 @@ const data: ParsedSkillCard[] = [
     },
     "tags": [],
     "hiddenTags": [],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley",
@@ -10210,6 +10443,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Cooldown"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -10254,6 +10488,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Ammo"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -10298,6 +10533,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Health"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -10341,6 +10577,7 @@ const data: ParsedSkillCard[] = [
       "Damage",
       "EconomyReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -10383,6 +10620,7 @@ const data: ParsedSkillCard[] = [
       "BurnReference",
       "ShieldReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -10423,6 +10661,7 @@ const data: ParsedSkillCard[] = [
       "Property"
     ],
     "hiddenTags": [],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -10464,6 +10703,7 @@ const data: ParsedSkillCard[] = [
       "DamageReference",
       "Gold"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -10508,6 +10748,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Crit"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -10553,6 +10794,7 @@ const data: ParsedSkillCard[] = [
       "HasteReference",
       "Cooldown"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -10597,6 +10839,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "HealReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -10642,6 +10885,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Crit"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -10690,6 +10934,7 @@ const data: ParsedSkillCard[] = [
       "BurnReference",
       "Freeze"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley",
@@ -10737,6 +10982,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "ShieldReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -10779,6 +11025,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Slow"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -10824,6 +11071,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Ammo"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -10867,6 +11115,7 @@ const data: ParsedSkillCard[] = [
       "PoisonReference",
       "Shield"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Mak",
@@ -10906,6 +11155,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Crit"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -10952,6 +11202,7 @@ const data: ParsedSkillCard[] = [
       "Damage",
       "EconomyReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -10988,6 +11239,7 @@ const data: ParsedSkillCard[] = [
     },
     "tags": [],
     "hiddenTags": [],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -11033,6 +11285,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "DamageReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -11076,6 +11329,7 @@ const data: ParsedSkillCard[] = [
       "Ammo",
       "DamageReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -11115,6 +11369,7 @@ const data: ParsedSkillCard[] = [
       "Poison",
       "HealReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -11156,6 +11411,7 @@ const data: ParsedSkillCard[] = [
       "Charge",
       "PoisonReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -11199,6 +11455,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Crit"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -11245,6 +11502,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Cooldown"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Mak"
@@ -11285,6 +11543,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "ShieldReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -11329,6 +11588,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Regen"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -11374,6 +11634,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "BurnReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -11419,6 +11680,7 @@ const data: ParsedSkillCard[] = [
     },
     "tags": [],
     "hiddenTags": [],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -11462,6 +11724,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Regen"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -11504,6 +11767,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Cooldown"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -11548,6 +11812,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "ShieldReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -11591,6 +11856,7 @@ const data: ParsedSkillCard[] = [
       "Health",
       "EconomyReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -11631,6 +11897,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Crit"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -11678,6 +11945,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Freeze"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -11724,6 +11992,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "DamageReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -11768,6 +12037,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "PoisonReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -11811,6 +12081,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "FreezeReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -11852,6 +12123,7 @@ const data: ParsedSkillCard[] = [
     },
     "tags": [],
     "hiddenTags": [],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -11893,6 +12165,7 @@ const data: ParsedSkillCard[] = [
       "HealReference",
       "Haste"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -11928,6 +12201,7 @@ const data: ParsedSkillCard[] = [
     },
     "tags": [],
     "hiddenTags": [],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Stelle"
@@ -11970,6 +12244,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Gold"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -12017,6 +12292,7 @@ const data: ParsedSkillCard[] = [
       "HealReference",
       "ShieldReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -12061,6 +12337,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Crit"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -12105,6 +12382,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "PoisonReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -12147,6 +12425,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Charge"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -12190,6 +12469,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Lifesteal"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -12235,6 +12515,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Income"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -12276,6 +12557,7 @@ const data: ParsedSkillCard[] = [
       "Charge",
       "CritReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -12321,6 +12603,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "PoisonReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -12367,6 +12650,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Crit"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -12416,6 +12700,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Crit"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -12465,6 +12750,7 @@ const data: ParsedSkillCard[] = [
       "DamageReference",
       "ShieldReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -12506,6 +12792,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Health"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -12549,6 +12836,7 @@ const data: ParsedSkillCard[] = [
       "BurnReference",
       "SlowReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",
@@ -12595,6 +12883,7 @@ const data: ParsedSkillCard[] = [
       "Crit",
       "NonWeapon"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -12647,6 +12936,7 @@ const data: ParsedSkillCard[] = [
       "DamageReference",
       "SlowReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [],
     "artKey": "Icon_Skill_MON_Trained.png",
@@ -12690,6 +12980,7 @@ const data: ParsedSkillCard[] = [
       "Shield",
       "HasteReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -12734,6 +13025,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "HealReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -12782,6 +13074,7 @@ const data: ParsedSkillCard[] = [
       "PoisonReference",
       "BurnReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Mak"
@@ -12824,6 +13117,7 @@ const data: ParsedSkillCard[] = [
       "ShieldReference",
       "Charge"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -12867,6 +13161,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Burn"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley",
@@ -12913,6 +13208,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "HealReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -12955,6 +13251,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Haste"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley",
@@ -12997,6 +13294,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Haste"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -13035,6 +13333,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Shield"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien",
@@ -13081,6 +13380,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "HealReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -13125,6 +13425,7 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "PoisonReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa",

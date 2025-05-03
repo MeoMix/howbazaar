@@ -1,7 +1,7 @@
-import type { ClientSideItemCard, ClientSideMonsterEncounter, ClientSideSkillCard, Hero, HiddenTag, ItemSortOption, Size, SkillSortOption, Tag, TierType, TriState, MonsterSearchLocationOption, AllSearchLocationOption, ClientSideMerchantCard, MerchantSearchLocationOption, ExpansionPackId, CorePackId } from "$lib/types";
+import type { ClientSideItemCard, ClientSideMonsterEncounter, ClientSideSkillCard, Hero, HiddenTag, ItemSortOption, Size, SkillSortOption, Tag, TierType, TriState, MonsterSearchLocationOption, AllSearchLocationOption, ClientSideMerchantCard, MerchantSearchLocationOption, ExpansionPackId, CorePackId, CustomTag } from "$lib/types";
 import type { Entries } from "type-fest";
 
-export const heroOrder = ["Vanessa", "Pygmalien", "Dooley", "Jules", "Stelle", "Mak", "Common"] as const;
+export const heroOrder = ["Vanessa", "Pygmalien", "Dooley", "Mak", "Jules", "Stelle", "Common"] as const;
 export const tierOrder = ["Bronze", "Silver", "Gold", "Diamond", "Legendary"] as const;
 export const sizeOrder = ["Small", "Medium", "Large"];
 
@@ -60,11 +60,12 @@ function matchesTier(cardTier: TierType, selectedTiers: TierType[]): boolean {
 function matchesTagState(
     cardTags: string[],
     cardHiddenTags: string[],
-    tagStates: Partial<Record<Tag | HiddenTag, TriState>>,
+    cardCustomTags: CustomTag[],
+    tagStates: Partial<Record<Tag | HiddenTag | CustomTag, TriState>>,
     isMatchAnyTag: boolean
 ): boolean {
     // Convert to Sets for quick "has" checks
-    const allCardTags = new Set([...cardTags, ...cardHiddenTags]);
+    const allCardTags = new Set([...cardTags, ...cardHiddenTags, ...cardCustomTags]);
 
     // Helper that knows how to handle special-cases
     const cardHasTag = (queryTag: string): boolean => {
@@ -217,7 +218,7 @@ export function filterItemCards(
     cards: ClientSideItemCard[],
     selectedHeroes: Hero[],
     selectedTiers: TierType[],
-    tagStates: Partial<Record<Tag | HiddenTag, TriState>>,
+    tagStates: Partial<Record<Tag | HiddenTag | CustomTag, TriState>>,
     selectedSizes: Size[],
     isMatchAnyTag: boolean,
     isMonsterDropsOnly: boolean,
@@ -230,7 +231,7 @@ export function filterItemCards(
             (latestExpansionsOnlyState === "on" ? latestExpansions.has(card.packId) : (latestExpansionsOnlyState === "off" ? !latestExpansions.has(card.packId) : true)) &&
             matchesHero(card.heroes, selectedHeroes) &&
             matchesTier(card.startingTier, selectedTiers) &&
-            matchesTagState(card.tags, card.hiddenTags, tagStates, isMatchAnyTag) &&
+            matchesTagState(card.tags, card.hiddenTags, card.customTags, tagStates, isMatchAnyTag) &&
             (selectedSizes.length === 0 || (card.size && selectedSizes.includes(card.size))) &&
             (excludedPackIds === undefined || !excludedPackIds.includes(card.packId))
         );
@@ -241,7 +242,7 @@ export function filterSkillCards(
     cards: ClientSideSkillCard[],
     heroStates: Record<Hero, TriState>,
     selectedTiers: TierType[],
-    tagStates: Partial<Record<Tag | HiddenTag, TriState>>,
+    tagStates: Partial<Record<Tag | HiddenTag | CustomTag, TriState>>,
     isMatchAnyTag: boolean,
     isMatchAnyHero: boolean,
     isMonsterDropsOnly: boolean,
@@ -253,7 +254,7 @@ export function filterSkillCards(
             (latestExpansionsOnlyState === "on" ? latestExpansions.has(card.packId) : (latestExpansionsOnlyState === "off" ? !latestExpansions.has(card.packId) : true)) &&
             matchesHeroState(card.heroes, heroStates, isMatchAnyHero) &&
             matchesTier(card.startingTier, selectedTiers) &&
-            matchesTagState(card.tags, card.hiddenTags, tagStates, isMatchAnyTag)
+            matchesTagState(card.tags, card.hiddenTags, card.customTags, tagStates, isMatchAnyTag)
         );
     });
 }

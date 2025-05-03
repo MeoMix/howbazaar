@@ -1,4 +1,6 @@
 export interface V2MonstersD {
+    "8c8861cd-4309-4b36-b448-7ea6db77d2ea": The04747408_De0E4944_B79D23_Ca41008619;
+    "e12b9ee1-de04-4bdc-ad74-2485f240cfcf": The04747408_De0E4944_B79D23_Ca41008619;
     "d7391818-e677-4c98-994d-71e25ed2d41c": The04747408_De0E4944_B79D23_Ca41008619;
     "1d95020b-e3a7-4210-8a8e-638126b2137b": The04747408_De0E4944_B79D23_Ca41008619;
     "54030dd4-8051-4c21-abcd-9205df585ea5": The04747408_De0E4944_B79D23_Ca41008619;
@@ -45,7 +47,7 @@ export interface V2MonstersD {
     "fd181d89-0706-4220-bb95-637af574b61b": The04747408_De0E4944_B79D23_Ca41008619;
     "ee26b888-c50f-43cf-848b-ca572b6e9583": The04747408_De0E4944_B79D23_Ca41008619;
     "16038f84-3cec-4ccd-b58b-2ce974442142": The04747408_De0E4944_B79D23_Ca41008619;
-    "5a882cdb-c8df-497b-86d5-b27ba95225ed": The5A882CdbC8Df497B86D5B27Ba95225Ed;
+    "5a882cdb-c8df-497b-86d5-b27ba95225ed": The5_A882CdbC8Df497_B86_D5B27Ba95225Ed;
     "709e1dce-7e91-4612-b010-d107a6800158": The04747408_De0E4944_B79D23_Ca41008619;
     "6d946fe1-13cc-4141-bc89-84981c4ef77f": The04747408_De0E4944_B79D23_Ca41008619;
     "924c56d7-1a5e-4e57-a6b2-bb0c2362980e": The04747408_De0E4944_B79D23_Ca41008619;
@@ -66,7 +68,6 @@ export interface V2MonstersD {
     "f43985fe-7e14-4797-a86d-71ee83195154": The04747408_De0E4944_B79D23_Ca41008619;
     "8ef44226-7c66-417e-9f31-4cc636a68866": The04747408_De0E4944_B79D23_Ca41008619;
     "337c2af9-4815-4c14-b537-159f5fc80be3": The04747408_De0E4944_B79D23_Ca41008619;
-    "e98f8212-6dc2-463d-87cc-9d407c60c50d": The04747408_De0E4944_B79D23_Ca41008619;
     "7719b6d8-7977-4d49-88a2-da29a19ad235": The04747408_De0E4944_B79D23_Ca41008619;
     "4c1a67f6-f9b4-4a46-8481-d252a24544e7": The04747408_De0E4944_B79D23_Ca41008619;
     "418f33bf-b721-4e89-a1dd-c375b3174df9": The04747408_De0E4944_B79D23_Ca41008619;
@@ -95,7 +96,7 @@ export interface V2MonstersD {
     "7e8b7521-af5e-4c81-93c1-694e823bc5de": The04747408_De0E4944_B79D23_Ca41008619;
     "73163ebc-46fd-43f0-9693-8666ccc9da09": The04747408_De0E4944_B79D23_Ca41008619;
     "2b157e1b-3340-44b2-934e-4fc84a2b9beb": The04747408_De0E4944_B79D23_Ca41008619;
-    "ecb2508b-07b1-4712-a82a-fb47c433ed6a": The04747408_De0E4944_B79D23_Ca41008619;
+    "ecb2508b-07b1-4712-a82a-fb47c433ed6a": The5_A882CdbC8Df497_B86_D5B27Ba95225Ed;
     "e6782454-5c72-47f3-ac43-140f0cc7eb8f": The04747408_De0E4944_B79D23_Ca41008619;
     "b5409ad0-edb2-49eb-8dee-6d4ec238e10e": The04747408_De0E4944_B79D23_Ca41008619;
     "b712a602-1843-4fc3-85ad-b8e3b7bca489": The04747408_De0E4944_B79D23_Ca41008619;
@@ -105,6 +106,9 @@ export interface V2MonstersD {
     "2551f0d8-a57c-4670-993d-13b8b7ee2791": The04747408_De0E4944_B79D23_Ca41008619;
     "f73ab4b7-f33d-4d65-bb3f-2fea8d003500": The04747408_De0E4944_B79D23_Ca41008619;
     "616ce451-b85d-478a-82a8-8a28105994f5": The04747408_De0E4944_B79D23_Ca41008619;
+    "27afe780-4867-41d6-8126-36b501c0d2ef": The04747408_De0E4944_B79D23_Ca41008619;
+    "7a61ddf2-dd00-462c-8312-873f0d27de64": The04747408_De0E4944_B79D23_Ca41008619;
+    "b146714a-748a-4862-989c-19c83f6331fb": The04747408_De0E4944_B79D23_Ca41008619;
 }
 
 export interface The04747408_De0E4944_B79D23_Ca41008619 {
@@ -126,7 +130,6 @@ export interface PurpleAttributes {
     HealthMax:    number;
     Level:        number;
     HealthRegen?: number;
-    Income?:      number;
 }
 
 export interface Hand {
@@ -156,7 +159,7 @@ export type Version = "1.0.0";
 
 export type Tier = "Silver" | "Bronze" | "Gold" | "Diamond" | "Legendary";
 
-export interface The5A882CdbC8Df497B86D5B27Ba95225Ed {
+export interface The5_A882CdbC8Df497_B86_D5B27Ba95225Ed {
     Id:           string;
     Version:      Version;
     InternalName: string;
@@ -173,7 +176,7 @@ export interface The5A882CdbC8Df497B86D5B27Ba95225EdPlayer {
 export interface FluffyAttributes {
     Prestige:  number;
     HealthMax: number;
-    Gold:      number;
+    Gold?:     number;
     Income:    number;
     Level:     number;
 }

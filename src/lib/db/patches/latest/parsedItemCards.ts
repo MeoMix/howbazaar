@@ -47,6 +47,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "DamageReference"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Vanessa"
@@ -167,6 +168,7 @@ const data: ParsedItemCard[] = [
       "Gold",
       "DamageReference"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Pygmalien"
@@ -293,6 +295,7 @@ const data: ParsedItemCard[] = [
       "Cooldown",
       "Crit"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -406,6 +409,7 @@ const data: ParsedItemCard[] = [
       "Shield",
       "EconomyReference"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Pygmalien"
@@ -524,6 +528,9 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "EconomyReference"
     ],
+    "customTags": [
+      "Unpurchasable"
+    ],
     "size": "Small",
     "heroes": [
       "Common"
@@ -569,6 +576,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Value"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Pygmalien"
@@ -638,6 +646,9 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Damage",
       "Charge"
+    ],
+    "customTags": [
+      "Unpurchasable"
     ],
     "size": "Medium",
     "heroes": [
@@ -764,6 +775,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Damage"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -881,6 +893,7 @@ const data: ParsedItemCard[] = [
       "Haste",
       "DamageReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -991,6 +1004,7 @@ const data: ParsedItemCard[] = [
       "Poison",
       "Slow"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -1106,6 +1120,7 @@ const data: ParsedItemCard[] = [
       "Haste",
       "BurnReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -1235,6 +1250,7 @@ const data: ParsedItemCard[] = [
       "Ammo",
       "Slow"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Vanessa"
@@ -1356,6 +1372,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Damage"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Dooley"
@@ -1479,6 +1496,7 @@ const data: ParsedItemCard[] = [
       "Burn",
       "Poison"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Mak"
@@ -1601,6 +1619,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Heal"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Common"
@@ -1718,6 +1737,7 @@ const data: ParsedItemCard[] = [
       "Cooldown",
       "Ammo"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Pygmalien"
@@ -1843,6 +1863,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Haste"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -1959,6 +1980,7 @@ const data: ParsedItemCard[] = [
       "HealReference",
       "ShieldReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -2027,6 +2049,7 @@ const data: ParsedItemCard[] = [
       "Burn",
       "Damage"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -2156,6 +2179,7 @@ const data: ParsedItemCard[] = [
       "Cooldown",
       "Ammo"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Vanessa"
@@ -2272,6 +2296,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Freeze"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Pygmalien"
@@ -2376,6 +2401,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Charge"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Pygmalien"
@@ -2488,6 +2514,7 @@ const data: ParsedItemCard[] = [
       "Tech"
     ],
     "hiddenTags": [],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Dooley"
@@ -2611,6 +2638,7 @@ const data: ParsedItemCard[] = [
       "Crit",
       "Shield"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -2738,6 +2766,7 @@ const data: ParsedItemCard[] = [
       "Shield",
       "Burn"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Dooley"
@@ -2862,6 +2891,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "Shield"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -2976,6 +3006,7 @@ const data: ParsedItemCard[] = [
       "Charge",
       "DamageReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -3092,6 +3123,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "Poison"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Mak"
@@ -3214,6 +3246,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Shield"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -3331,6 +3364,7 @@ const data: ParsedItemCard[] = [
       "Value",
       "EconomyReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Mak"
@@ -3378,6 +3412,7 @@ const data: ParsedItemCard[] = [
     },
     "tags": [],
     "hiddenTags": [],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -3498,6 +3533,7 @@ const data: ParsedItemCard[] = [
       "Value",
       "Shield"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Pygmalien"
@@ -3628,6 +3664,7 @@ const data: ParsedItemCard[] = [
       "Shield",
       "Ammo"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Vanessa"
@@ -3739,6 +3776,7 @@ const data: ParsedItemCard[] = [
       "Burn",
       "Shield"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -3852,6 +3890,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Haste"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -3973,6 +4012,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Haste"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -4096,6 +4136,7 @@ const data: ParsedItemCard[] = [
       "Burn",
       "Damage"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Common"
@@ -4220,6 +4261,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "HasteReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -4345,6 +4387,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Damage"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Mak"
@@ -4465,6 +4508,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Cooldown"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -4582,6 +4626,7 @@ const data: ParsedItemCard[] = [
       "HasteReference",
       "Charge"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Dooley"
@@ -4701,6 +4746,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Health"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Dooley"
@@ -4820,6 +4866,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "EconomyReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -4924,6 +4971,7 @@ const data: ParsedItemCard[] = [
       "Poison",
       "Regen"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Mak"
@@ -5045,6 +5093,7 @@ const data: ParsedItemCard[] = [
       "Regen",
       "Burn"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Mak"
@@ -5157,6 +5206,7 @@ const data: ParsedItemCard[] = [
       "Poison",
       "Regen"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -5276,6 +5326,7 @@ const data: ParsedItemCard[] = [
       "Regen",
       "PoisonReference"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Mak"
@@ -5399,6 +5450,7 @@ const data: ParsedItemCard[] = [
       "Regen",
       "Ammo"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Mak"
@@ -5528,6 +5580,7 @@ const data: ParsedItemCard[] = [
       "Poison",
       "Regen"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Mak"
@@ -5657,6 +5710,9 @@ const data: ParsedItemCard[] = [
       "Damage",
       "Crit"
     ],
+    "customTags": [
+      "Unpurchasable"
+    ],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -5772,6 +5828,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Burn"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Common"
@@ -5869,6 +5926,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Freeze"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Mak"
@@ -5986,6 +6044,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Haste"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Jules"
@@ -6108,6 +6167,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "HasteReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -6223,6 +6283,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Regen"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Common"
@@ -6324,6 +6385,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "EconomyReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -6394,6 +6456,7 @@ const data: ParsedItemCard[] = [
       "Shield",
       "FreezeReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -6512,6 +6575,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "Haste"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Dooley"
@@ -6632,6 +6696,7 @@ const data: ParsedItemCard[] = [
       "EconomyReference",
       "Value"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Pygmalien"
@@ -6701,6 +6766,9 @@ const data: ParsedItemCard[] = [
     ],
     "hiddenTags": [
       "ShieldReference"
+    ],
+    "customTags": [
+      "Unpurchasable"
     ],
     "size": "Small",
     "heroes": [
@@ -6819,6 +6887,9 @@ const data: ParsedItemCard[] = [
     ],
     "hiddenTags": [
       "ShieldReference"
+    ],
+    "customTags": [
+      "Unpurchasable"
     ],
     "size": "Small",
     "heroes": [
@@ -6942,6 +7013,7 @@ const data: ParsedItemCard[] = [
       "Burn",
       "Charge"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Jules"
@@ -7064,6 +7136,7 @@ const data: ParsedItemCard[] = [
       "HasteReference",
       "SlowReference"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Vanessa"
@@ -7181,6 +7254,7 @@ const data: ParsedItemCard[] = [
       "BurnReference",
       "PoisonReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Mak"
@@ -7302,6 +7376,7 @@ const data: ParsedItemCard[] = [
       "Freeze",
       "PoisonReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Mak"
@@ -7428,6 +7503,7 @@ const data: ParsedItemCard[] = [
       "Shield",
       "Ammo"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Dooley"
@@ -7544,6 +7620,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Cooldown"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Common"
@@ -7639,6 +7716,7 @@ const data: ParsedItemCard[] = [
     },
     "tags": [],
     "hiddenTags": [],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Pygmalien"
@@ -7756,6 +7834,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "Freeze"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Vanessa"
@@ -7880,6 +7959,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Shield"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Common"
@@ -8003,6 +8083,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Damage"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -8118,6 +8199,7 @@ const data: ParsedItemCard[] = [
       "Crit",
       "HasteReference"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Common"
@@ -8231,6 +8313,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Haste"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Vanessa"
@@ -8347,6 +8430,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "Slow"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Pygmalien"
@@ -8471,6 +8555,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "DamageReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -8589,6 +8674,7 @@ const data: ParsedItemCard[] = [
       "Ammo",
       "Slow"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Stelle"
@@ -8706,6 +8792,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Shield"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Vanessa"
@@ -8816,6 +8903,7 @@ const data: ParsedItemCard[] = [
       "EconomyReference",
       "Regen"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -8898,6 +8986,7 @@ const data: ParsedItemCard[] = [
       "Shield",
       "Gold"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -9015,6 +9104,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Slow"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Common"
@@ -9131,6 +9221,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "HealReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -9242,6 +9333,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "BurnReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -9364,6 +9456,9 @@ const data: ParsedItemCard[] = [
       "Haste",
       "Charge"
     ],
+    "customTags": [
+      "Unpurchasable"
+    ],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -9479,6 +9574,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Burn"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Jules"
@@ -9596,6 +9692,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Ammo"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Mak"
@@ -9703,6 +9800,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "Ammo"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Common"
@@ -9829,6 +9927,7 @@ const data: ParsedItemCard[] = [
       "Shield",
       "Freeze"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -9952,6 +10051,7 @@ const data: ParsedItemCard[] = [
       "DamageReference",
       "Damage"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -10075,6 +10175,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Crit"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Vanessa"
@@ -10194,6 +10295,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Crit"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Dooley"
@@ -10304,6 +10406,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Damage"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Common"
@@ -10430,6 +10533,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "Crit"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Vanessa"
@@ -10550,6 +10654,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "BurnReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -10674,6 +10779,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Shield"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -10802,6 +10908,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "Shield"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -10931,6 +11038,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "Slow"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -11049,6 +11157,7 @@ const data: ParsedItemCard[] = [
       "DamageReference",
       "Cooldown"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -11172,6 +11281,7 @@ const data: ParsedItemCard[] = [
       "Ammo",
       "Charge"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Dooley"
@@ -11294,6 +11404,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "AmmoReference"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Vanessa"
@@ -11407,6 +11518,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "ShieldReference"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Dooley"
@@ -11519,6 +11631,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Value"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Pygmalien"
@@ -11593,6 +11706,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Slow"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -11713,6 +11827,7 @@ const data: ParsedItemCard[] = [
       "Haste",
       "BurnReference"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Dooley"
@@ -11836,6 +11951,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Burn"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -11960,6 +12076,7 @@ const data: ParsedItemCard[] = [
       "Burn",
       "FreezeReference"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Pygmalien"
@@ -12077,6 +12194,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Charge"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Mak"
@@ -12203,6 +12321,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "Slow"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Vanessa"
@@ -12310,6 +12429,7 @@ const data: ParsedItemCard[] = [
       "Apparel"
     ],
     "hiddenTags": [],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -12377,6 +12497,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Slow"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Mak"
@@ -12491,6 +12612,7 @@ const data: ParsedItemCard[] = [
       "Ammo",
       "Freeze"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Mak"
@@ -12600,6 +12722,7 @@ const data: ParsedItemCard[] = [
       "Value",
       "EconomyReference"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Pygmalien"
@@ -12724,6 +12847,7 @@ const data: ParsedItemCard[] = [
       "Haste",
       "Ammo"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Mak"
@@ -12848,6 +12972,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Haste"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -12968,6 +13093,7 @@ const data: ParsedItemCard[] = [
       "Shield",
       "Slow"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Common"
@@ -13083,6 +13209,7 @@ const data: ParsedItemCard[] = [
       "Haste",
       "Slow"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Stelle"
@@ -13207,6 +13334,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Damage"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Common"
@@ -13332,6 +13460,7 @@ const data: ParsedItemCard[] = [
       "SlowReference",
       "Charge"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -13456,6 +13585,7 @@ const data: ParsedItemCard[] = [
       "Burn",
       "Haste"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Dooley"
@@ -13567,6 +13697,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "EconomyReference"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Pygmalien"
@@ -13699,6 +13830,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "Ammo"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -13818,6 +13950,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Shield"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Pygmalien"
@@ -13932,6 +14065,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Damage"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -14061,6 +14195,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "CritReference"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Vanessa"
@@ -14170,6 +14305,7 @@ const data: ParsedItemCard[] = [
       "Passive",
       "NonWeapon"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Common"
@@ -14214,6 +14350,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Health"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -14336,6 +14473,7 @@ const data: ParsedItemCard[] = [
       "ShieldReference",
       "DamageReference"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Dooley"
@@ -14457,6 +14595,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Burn"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Mak"
@@ -14570,6 +14709,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Poison"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Mak"
@@ -14686,6 +14826,7 @@ const data: ParsedItemCard[] = [
       "CritReference",
       "Ammo"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Vanessa"
@@ -14810,6 +14951,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "Slow"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Vanessa"
@@ -14936,6 +15078,7 @@ const data: ParsedItemCard[] = [
       "FreezeReference",
       "HasteReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -15051,6 +15194,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Damage"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Common"
@@ -15170,6 +15314,9 @@ const data: ParsedItemCard[] = [
     ],
     "hiddenTags": [
       "CritReference"
+    ],
+    "customTags": [
+      "Unpurchasable"
     ],
     "size": "Small",
     "heroes": [
@@ -15294,6 +15441,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "Ammo"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Mak"
@@ -15417,6 +15565,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Poison"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Mak"
@@ -15528,6 +15677,7 @@ const data: ParsedItemCard[] = [
       "Tech"
     ],
     "hiddenTags": [],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Dooley"
@@ -15650,6 +15800,7 @@ const data: ParsedItemCard[] = [
       "Shield",
       "Cooldown"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Stelle"
@@ -15773,6 +15924,7 @@ const data: ParsedItemCard[] = [
       "HasteReference",
       "SlowReference"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Vanessa"
@@ -15889,6 +16041,7 @@ const data: ParsedItemCard[] = [
       "Value",
       "EconomyReference"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Common"
@@ -16004,6 +16157,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Ammo"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -16122,6 +16276,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "DamageReference"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Common"
@@ -16241,6 +16396,7 @@ const data: ParsedItemCard[] = [
       "Value",
       "EconomyReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -16371,6 +16527,7 @@ const data: ParsedItemCard[] = [
       "Ammo",
       "HasteReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -16491,6 +16648,9 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "DamageReference"
     ],
+    "customTags": [
+      "Unpurchasable"
+    ],
     "size": "Small",
     "heroes": [
       "Pygmalien"
@@ -16607,6 +16767,7 @@ const data: ParsedItemCard[] = [
       "Income",
       "Health"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Pygmalien"
@@ -16682,6 +16843,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Heal"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -16806,6 +16968,7 @@ const data: ParsedItemCard[] = [
       "Poison",
       "Regen"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Mak"
@@ -16930,6 +17093,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "Freeze"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Common"
@@ -17051,6 +17215,7 @@ const data: ParsedItemCard[] = [
       "Haste",
       "Ammo"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Mak"
@@ -17164,6 +17329,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "AmmoReference"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Mak"
@@ -17289,6 +17455,7 @@ const data: ParsedItemCard[] = [
       "HasteReference",
       "ShieldReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -17414,6 +17581,7 @@ const data: ParsedItemCard[] = [
       "Heal",
       "ShieldReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -17531,6 +17699,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Burn"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Mak"
@@ -17656,6 +17825,7 @@ const data: ParsedItemCard[] = [
       "HasteReference",
       "SlowReference"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Dooley"
@@ -17771,6 +17941,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Cooldown"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Mak"
@@ -17884,6 +18055,7 @@ const data: ParsedItemCard[] = [
       "Charge",
       "Haste"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -17998,6 +18170,7 @@ const data: ParsedItemCard[] = [
       "Haste",
       "DamageReference"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Pygmalien"
@@ -18110,6 +18283,7 @@ const data: ParsedItemCard[] = [
       "Loot"
     ],
     "hiddenTags": [],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Common"
@@ -18167,6 +18341,7 @@ const data: ParsedItemCard[] = [
       "EconomyReference",
       "Shield"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -18297,6 +18472,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Damage"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Dooley"
@@ -18424,6 +18600,9 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Damage",
       "CritReference"
+    ],
+    "customTags": [
+      "Unpurchasable"
     ],
     "size": "Small",
     "heroes": [
@@ -18560,6 +18739,7 @@ const data: ParsedItemCard[] = [
       "Burn",
       "Ammo"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Mak"
@@ -18675,6 +18855,9 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Health"
     ],
+    "customTags": [
+      "Unpurchasable"
+    ],
     "size": "Small",
     "heroes": [
       "Common"
@@ -18789,6 +18972,9 @@ const data: ParsedItemCard[] = [
       "ShieldReference",
       "Ammo"
     ],
+    "customTags": [
+      "Unpurchasable"
+    ],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -18847,6 +19033,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "Ammo"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Dooley"
@@ -18958,6 +19145,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Value"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Pygmalien"
@@ -19024,6 +19212,7 @@ const data: ParsedItemCard[] = [
       "Shield",
       "Heal"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -19154,6 +19343,7 @@ const data: ParsedItemCard[] = [
       "Value",
       "EconomyReference"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Pygmalien"
@@ -19280,6 +19470,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Crit"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Common"
@@ -19345,6 +19536,7 @@ const data: ParsedItemCard[] = [
       "Burn",
       "Charge"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Dooley"
@@ -19469,6 +19661,7 @@ const data: ParsedItemCard[] = [
       "Shield",
       "Value"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Common"
@@ -19592,6 +19785,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Slow"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Pygmalien"
@@ -19709,6 +19903,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "Shield"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Vanessa"
@@ -19836,6 +20031,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "FreezeReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -19945,6 +20141,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "Burn"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Common"
@@ -20066,6 +20263,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Damage"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Stelle"
@@ -20199,6 +20397,7 @@ const data: ParsedItemCard[] = [
       "Ammo",
       "BurnReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -20325,6 +20524,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Damage"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Common"
@@ -20440,6 +20640,9 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "EconomyReference"
     ],
+    "customTags": [
+      "Unpurchasable"
+    ],
     "size": "Small",
     "heroes": [
       "Common"
@@ -20547,6 +20750,7 @@ const data: ParsedItemCard[] = [
       "Burn",
       "AmmoReference"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Vanessa"
@@ -20661,6 +20865,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "BurnReference"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Common"
@@ -20767,6 +20972,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "ShieldReference"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Dooley"
@@ -20891,6 +21097,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "DamageReference"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Common"
@@ -21011,6 +21218,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Damage"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Common"
@@ -21130,6 +21338,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Slow"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Dooley"
@@ -21245,6 +21454,7 @@ const data: ParsedItemCard[] = [
       "Potion"
     ],
     "hiddenTags": [],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Mak"
@@ -21367,6 +21577,7 @@ const data: ParsedItemCard[] = [
       "Heal",
       "Shield"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Pygmalien"
@@ -21478,6 +21689,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Charge"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Mak"
@@ -21595,6 +21807,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Shield"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -21719,6 +21932,7 @@ const data: ParsedItemCard[] = [
       "Heal",
       "Haste"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Dooley"
@@ -21844,6 +22058,7 @@ const data: ParsedItemCard[] = [
       "SlowReference",
       "FreezeReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -21965,6 +22180,7 @@ const data: ParsedItemCard[] = [
       "Burn",
       "RegenReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Mak"
@@ -22088,6 +22304,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Poison"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Mak"
@@ -22207,6 +22424,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Poison"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Dooley"
@@ -22330,6 +22548,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Regen"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Jules"
@@ -22388,6 +22607,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "Ammo"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -22518,6 +22738,7 @@ const data: ParsedItemCard[] = [
       "PoisonReference",
       "Damage"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -22631,6 +22852,9 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "CritReference"
     ],
+    "customTags": [
+      "Unpurchasable"
+    ],
     "size": "Small",
     "heroes": [
       "Common"
@@ -22730,6 +22954,7 @@ const data: ParsedItemCard[] = [
       "EconomyReference",
       "DamageReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -22813,6 +23038,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "SlowReference"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Dooley"
@@ -22929,6 +23155,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "Ammo"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Vanessa"
@@ -23053,6 +23280,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Haste"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -23176,6 +23404,7 @@ const data: ParsedItemCard[] = [
       "Slow",
       "Ammo"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Mak"
@@ -23307,6 +23536,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "PoisonReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Mak"
@@ -23426,6 +23656,9 @@ const data: ParsedItemCard[] = [
     ],
     "hiddenTags": [
       "ShieldReference"
+    ],
+    "customTags": [
+      "Unpurchasable"
     ],
     "size": "Small",
     "heroes": [
@@ -23549,6 +23782,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Heal"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Vanessa"
@@ -23658,6 +23892,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Cooldown"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -23769,6 +24004,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Cooldown"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Mak"
@@ -23888,6 +24124,7 @@ const data: ParsedItemCard[] = [
       "Crit",
       "Ammo"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Mak"
@@ -24012,6 +24249,7 @@ const data: ParsedItemCard[] = [
       "Burn",
       "Ammo"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Mak"
@@ -24125,6 +24363,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Freeze"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Common"
@@ -24229,6 +24468,7 @@ const data: ParsedItemCard[] = [
       "Heal",
       "EconomyReference"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Pygmalien"
@@ -24342,6 +24582,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "AmmoReference"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Vanessa"
@@ -24469,6 +24710,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "Shield"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Dooley"
@@ -24594,6 +24836,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Regen"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Mak"
@@ -24716,6 +24959,7 @@ const data: ParsedItemCard[] = [
       "EconomyReference",
       "Value"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Pygmalien"
@@ -24847,6 +25091,7 @@ const data: ParsedItemCard[] = [
       "Poison",
       "Shield"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Dooley"
@@ -24971,6 +25216,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Damage"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -25096,6 +25342,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Damage"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -25219,6 +25466,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "Poison"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Mak"
@@ -25349,6 +25597,7 @@ const data: ParsedItemCard[] = [
       "Burn",
       "Damage"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -25474,6 +25723,7 @@ const data: ParsedItemCard[] = [
       "DamageReference",
       "Haste"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Jules"
@@ -25605,6 +25855,7 @@ const data: ParsedItemCard[] = [
       "Haste",
       "BurnReference"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Vanessa"
@@ -25727,6 +25978,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "Charge"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Vanessa"
@@ -25848,6 +26100,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Damage"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Vanessa"
@@ -25971,6 +26224,7 @@ const data: ParsedItemCard[] = [
       "Burn",
       "Ammo"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Vanessa"
@@ -26095,6 +26349,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Damage"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Vanessa"
@@ -26218,6 +26473,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Burn"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Mak"
@@ -26343,6 +26599,9 @@ const data: ParsedItemCard[] = [
       "Damage",
       "Charge"
     ],
+    "customTags": [
+      "Unpurchasable"
+    ],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -26459,6 +26718,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Health"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Common"
@@ -26555,6 +26815,7 @@ const data: ParsedItemCard[] = [
       "DamageReference",
       "Ammo"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Pygmalien"
@@ -26682,6 +26943,7 @@ const data: ParsedItemCard[] = [
       "ShieldReference",
       "DamageReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -26806,6 +27068,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Heal"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Pygmalien"
@@ -26930,6 +27193,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Damage"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Dooley"
@@ -27050,6 +27314,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "Gold"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Vanessa"
@@ -27176,6 +27441,7 @@ const data: ParsedItemCard[] = [
       "Burn",
       "Charge"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Jules"
@@ -27290,6 +27556,7 @@ const data: ParsedItemCard[] = [
       "Tech"
     ],
     "hiddenTags": [],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Dooley"
@@ -27404,6 +27671,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Regen"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Common"
@@ -27509,6 +27777,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Burn"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Stelle"
@@ -27627,6 +27896,7 @@ const data: ParsedItemCard[] = [
       "ShieldReference",
       "DamageReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -27739,6 +28009,7 @@ const data: ParsedItemCard[] = [
       "Crit",
       "Charge"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -27859,6 +28130,7 @@ const data: ParsedItemCard[] = [
       "Haste",
       "Slow"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Vanessa"
@@ -27974,6 +28246,7 @@ const data: ParsedItemCard[] = [
       "Property"
     ],
     "hiddenTags": [],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Vanessa"
@@ -28091,6 +28364,7 @@ const data: ParsedItemCard[] = [
       "Ammo",
       "Health"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Mak"
@@ -28200,6 +28474,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Freeze"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -28316,6 +28591,7 @@ const data: ParsedItemCard[] = [
       "Slow",
       "Haste"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Mak"
@@ -28430,6 +28706,7 @@ const data: ParsedItemCard[] = [
       "FreezeReference",
       "Shield"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -28553,6 +28830,7 @@ const data: ParsedItemCard[] = [
       "Shield",
       "Haste"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -28676,6 +28954,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Poison"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Common"
@@ -28796,6 +29075,7 @@ const data: ParsedItemCard[] = [
       "Slow",
       "Haste"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Dooley"
@@ -28919,6 +29199,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Damage"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Pygmalien"
@@ -29042,6 +29323,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Damage"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Vanessa"
@@ -29165,6 +29447,7 @@ const data: ParsedItemCard[] = [
       "Ammo",
       "Slow"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Mak"
@@ -29267,6 +29550,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "EconomyReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -29329,6 +29613,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Damage"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Pygmalien"
@@ -29449,6 +29734,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Freeze"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -29570,6 +29856,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Poison"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Mak"
@@ -29682,6 +29969,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Freeze"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Vanessa"
@@ -29803,6 +30091,7 @@ const data: ParsedItemCard[] = [
       "Freeze",
       "Regen"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -29921,6 +30210,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Damage"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Common"
@@ -30043,6 +30333,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Heal"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Vanessa"
@@ -30163,6 +30454,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Crit"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Vanessa"
@@ -30289,6 +30581,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Regen"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Mak"
@@ -30399,6 +30692,7 @@ const data: ParsedItemCard[] = [
     },
     "tags": [],
     "hiddenTags": [],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Mak"
@@ -30514,6 +30808,7 @@ const data: ParsedItemCard[] = [
       "Shield",
       "Cooldown"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -30625,6 +30920,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Haste"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Dooley"
@@ -30738,6 +31034,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Damage"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Stelle"
@@ -30864,6 +31161,7 @@ const data: ParsedItemCard[] = [
       "DamageReference",
       "AmmoReference"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Vanessa"
@@ -30988,6 +31286,7 @@ const data: ParsedItemCard[] = [
       "AmmoReference",
       "Regen"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Mak"
@@ -31115,6 +31414,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "CritReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Mak"
@@ -31242,6 +31542,7 @@ const data: ParsedItemCard[] = [
       "Poison",
       "HasteReference"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Vanessa"
@@ -31361,6 +31662,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Damage"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Vanessa"
@@ -31466,6 +31768,7 @@ const data: ParsedItemCard[] = [
     },
     "tags": [],
     "hiddenTags": [],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Common"
@@ -31522,6 +31825,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Slow"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Vanessa"
@@ -31634,6 +31938,7 @@ const data: ParsedItemCard[] = [
       "Regen",
       "AmmoReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Mak"
@@ -31752,6 +32057,7 @@ const data: ParsedItemCard[] = [
       "DamageReference",
       "Haste"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -31868,6 +32174,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Charge"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Dooley"
@@ -31982,6 +32289,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Damage"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Vanessa"
@@ -32106,6 +32414,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "Regen"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Mak"
@@ -32234,6 +32543,7 @@ const data: ParsedItemCard[] = [
       "Crit",
       "HasteReference"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Stelle"
@@ -32353,6 +32663,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Damage"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Dooley"
@@ -32462,6 +32773,7 @@ const data: ParsedItemCard[] = [
       "Tech"
     ],
     "hiddenTags": [],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Common"
@@ -32577,6 +32889,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "AmmoReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -32697,6 +33010,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "Lifesteal"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -32817,6 +33131,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Ammo"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Mak"
@@ -32925,6 +33240,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Damage"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Dooley"
@@ -33035,6 +33351,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Charge"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Dooley"
@@ -33152,6 +33469,7 @@ const data: ParsedItemCard[] = [
       "AmmoReference",
       "CritReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Mak"
@@ -33272,6 +33590,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "BurnReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -33385,6 +33704,9 @@ const data: ParsedItemCard[] = [
       "Loot"
     ],
     "hiddenTags": [],
+    "customTags": [
+      "Unpurchasable"
+    ],
     "size": "Small",
     "heroes": [
       "Common"
@@ -33438,6 +33760,7 @@ const data: ParsedItemCard[] = [
       "Shield",
       "Heal"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -33560,6 +33883,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Poison"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Dooley"
@@ -33679,6 +34003,7 @@ const data: ParsedItemCard[] = [
       "Poison",
       "Freeze"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Mak"
@@ -33800,6 +34125,7 @@ const data: ParsedItemCard[] = [
       "Burn",
       "Freeze"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Pygmalien"
@@ -33922,6 +34248,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Haste"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Vanessa"
@@ -34041,6 +34368,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Damage"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -34163,6 +34491,7 @@ const data: ParsedItemCard[] = [
       "Freeze",
       "Poison"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -34292,6 +34621,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "CritReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -34407,6 +34737,7 @@ const data: ParsedItemCard[] = [
       "Heal",
       "HealthReference"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Pygmalien"
@@ -34527,6 +34858,7 @@ const data: ParsedItemCard[] = [
       "Poison",
       "HasteReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -34649,6 +34981,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Regen"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Mak"
@@ -34773,6 +35106,7 @@ const data: ParsedItemCard[] = [
       "Burn",
       "Haste"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Stelle"
@@ -34895,6 +35229,7 @@ const data: ParsedItemCard[] = [
       "PoisonReference",
       "BurnReference"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Dooley"
@@ -35014,6 +35349,9 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "DamageReference"
     ],
+    "customTags": [
+      "Unpurchasable"
+    ],
     "size": "Small",
     "heroes": [
       "Pygmalien"
@@ -35131,6 +35469,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "Shield"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Stelle"
@@ -35255,6 +35594,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Damage"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -35374,6 +35714,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Burn"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Dooley"
@@ -35494,6 +35835,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Damage"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -35617,6 +35959,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Shield"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -35741,6 +36084,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "Cooldown"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -35869,6 +36213,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "Ammo"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -35990,6 +36335,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Damage"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -36097,6 +36443,7 @@ const data: ParsedItemCard[] = [
       "Apparel"
     ],
     "hiddenTags": [],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Common"
@@ -36143,6 +36490,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Crit"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Common"
@@ -36238,6 +36586,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Heal"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Mak"
@@ -36344,6 +36693,7 @@ const data: ParsedItemCard[] = [
       "Heal",
       "Cooldown"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -36459,6 +36809,7 @@ const data: ParsedItemCard[] = [
       "Regen",
       "SlowReference"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Vanessa"
@@ -36587,6 +36938,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "HasteReference"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Vanessa"
@@ -36699,6 +37051,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Value"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -36775,6 +37128,7 @@ const data: ParsedItemCard[] = [
       "Burn",
       "Poison"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Mak"
@@ -36904,6 +37258,7 @@ const data: ParsedItemCard[] = [
       "HealReference",
       "RegenReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Mak"
@@ -37029,6 +37384,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Damage"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -37138,6 +37494,7 @@ const data: ParsedItemCard[] = [
       "Freeze",
       "Charge"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Pygmalien"
@@ -37251,6 +37608,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Health"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -37307,6 +37665,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "ShieldReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -37426,6 +37785,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Shield"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Vanessa"
@@ -37543,6 +37903,7 @@ const data: ParsedItemCard[] = [
       "Value",
       "EconomyReference"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Pygmalien"
@@ -37641,6 +38002,7 @@ const data: ParsedItemCard[] = [
       "Loot"
     ],
     "hiddenTags": [],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Common"
@@ -37755,6 +38117,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "Freeze"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Mak"
@@ -37875,6 +38238,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "DamageReference"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Vanessa"
@@ -37994,6 +38358,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Damage"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Jules"
@@ -38109,6 +38474,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Value"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -38172,6 +38538,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Value"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -38240,6 +38607,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Damage"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -38368,6 +38736,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "HealReference"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Pygmalien"
@@ -38482,6 +38851,7 @@ const data: ParsedItemCard[] = [
       "Health",
       "Heal"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -38606,6 +38976,9 @@ const data: ParsedItemCard[] = [
       "Shield",
       "Charge"
     ],
+    "customTags": [
+      "Unpurchasable"
+    ],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -38723,6 +39096,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "DamageReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -38835,6 +39209,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Freeze"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -38943,6 +39318,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Freeze"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Dooley"
@@ -39064,6 +39440,7 @@ const data: ParsedItemCard[] = [
       "Burn",
       "Poison"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Common"
@@ -39193,6 +39570,7 @@ const data: ParsedItemCard[] = [
       "DamageReference",
       "HealReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -39314,6 +39692,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Burn"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Vanessa"
@@ -39437,6 +39816,7 @@ const data: ParsedItemCard[] = [
       "Haste",
       "Slow"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Vanessa"
@@ -39553,6 +39933,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Charge"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Mak"
@@ -39668,6 +40049,7 @@ const data: ParsedItemCard[] = [
       "Freeze",
       "Slow"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Stelle"
@@ -39792,6 +40174,7 @@ const data: ParsedItemCard[] = [
       "Burn",
       "AmmoReference"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Mak"
@@ -39914,6 +40297,7 @@ const data: ParsedItemCard[] = [
       "ShieldReference",
       "Damage"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -40032,6 +40416,7 @@ const data: ParsedItemCard[] = [
       "Vehicle"
     ],
     "hiddenTags": [],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -40152,6 +40537,7 @@ const data: ParsedItemCard[] = [
       "Shield",
       "EconomyReference"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Pygmalien"
@@ -40275,6 +40661,7 @@ const data: ParsedItemCard[] = [
       "Poison",
       "Heal"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Common"
@@ -40394,6 +40781,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Burn"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Jules"
@@ -40514,6 +40902,7 @@ const data: ParsedItemCard[] = [
       "Heal",
       "Health"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Pygmalien"
@@ -40639,6 +41028,7 @@ const data: ParsedItemCard[] = [
       "Poison",
       "Haste"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Vanessa"
@@ -40756,6 +41146,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Slow"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -40867,6 +41258,9 @@ const data: ParsedItemCard[] = [
     ],
     "hiddenTags": [
       "CritReference"
+    ],
+    "customTags": [
+      "Unpurchasable"
     ],
     "size": "Small",
     "heroes": [
@@ -40992,6 +41386,7 @@ const data: ParsedItemCard[] = [
       "Charge",
       "Shield"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Dooley"
@@ -41117,6 +41512,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "SlowReference"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Mak"
@@ -41233,6 +41629,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Crit"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Jules"
@@ -41349,6 +41746,7 @@ const data: ParsedItemCard[] = [
       "Value",
       "EconomyReference"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Pygmalien"
@@ -41479,6 +41877,7 @@ const data: ParsedItemCard[] = [
       "Poison",
       "Ammo"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Mak"
@@ -41595,6 +41994,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Freeze"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Dooley"
@@ -41711,6 +42111,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Shield"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -41825,6 +42226,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "HealthReference"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Pygmalien"
@@ -41947,6 +42349,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Slow"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Vanessa"
@@ -42054,6 +42457,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Slow"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Mak"
@@ -42164,6 +42568,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "Health"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -42288,6 +42693,7 @@ const data: ParsedItemCard[] = [
       "Haste",
       "Slow"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Stelle"
@@ -42416,6 +42822,9 @@ const data: ParsedItemCard[] = [
       "Crit",
       "Ammo"
     ],
+    "customTags": [
+      "Unpurchasable"
+    ],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -42461,6 +42870,7 @@ const data: ParsedItemCard[] = [
       "Apparel"
     ],
     "hiddenTags": [],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -42590,6 +43000,7 @@ const data: ParsedItemCard[] = [
       "ShieldReference",
       "Damage"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -42706,6 +43117,7 @@ const data: ParsedItemCard[] = [
       "DamageReference",
       "ShieldReference"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Stelle"
@@ -42823,6 +43235,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Damage"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Pygmalien"
@@ -42943,6 +43356,7 @@ const data: ParsedItemCard[] = [
       "PoisonReference",
       "RegenReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Mak"
@@ -43067,6 +43481,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "Ammo"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -43195,6 +43610,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "Ammo"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -43324,6 +43740,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Damage"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -43448,6 +43865,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Damage"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -43582,6 +44000,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "Slow"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Common"
@@ -43700,6 +44119,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "Charge"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Stelle"
@@ -43813,6 +44233,9 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "EconomyReference"
     ],
+    "customTags": [
+      "Unpurchasable"
+    ],
     "size": "Small",
     "heroes": [
       "Common"
@@ -43918,6 +44341,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Freeze"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -44034,6 +44458,7 @@ const data: ParsedItemCard[] = [
       "Slow",
       "Crit"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -44090,7 +44515,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Deadly",
         "tooltips": [
-          "Adjacent items have an additional +25% Crit Chance"
+          "+25% Crit Chance"
         ]
       },
       {
@@ -44160,6 +44585,7 @@ const data: ParsedItemCard[] = [
       "Burn",
       "Damage"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Mak"
@@ -44283,6 +44709,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Burn"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Dooley"
@@ -44411,6 +44838,7 @@ const data: ParsedItemCard[] = [
       "SlowReference",
       "FreezeReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Mak"
@@ -44532,6 +44960,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "PoisonReference"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Mak"
@@ -44649,6 +45078,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "DamageReference"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Common"
@@ -44759,6 +45189,7 @@ const data: ParsedItemCard[] = [
       "DamageReference",
       "HealReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -44879,6 +45310,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Damage"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Mak"
@@ -44996,6 +45428,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Slow"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Mak"
@@ -45105,6 +45538,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Value"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Dooley"
@@ -45179,6 +45613,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Damage"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Pygmalien"
@@ -45305,6 +45740,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Haste"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Dooley"
@@ -45418,6 +45854,7 @@ const data: ParsedItemCard[] = [
       "Ammo",
       "Regen"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Mak"
@@ -45541,6 +45978,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Shield"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Dooley"
@@ -45657,6 +46095,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Crit"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -45770,6 +46209,7 @@ const data: ParsedItemCard[] = [
       "Burn",
       "HasteReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -45894,6 +46334,7 @@ const data: ParsedItemCard[] = [
       "Shield",
       "Heal"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -46017,6 +46458,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Shield"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -46148,6 +46590,7 @@ const data: ParsedItemCard[] = [
       "BurnReference",
       "Regen"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Dooley"
@@ -46268,6 +46711,9 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "CritReference"
     ],
+    "customTags": [
+      "Unpurchasable"
+    ],
     "size": "Small",
     "heroes": [
       "Pygmalien"
@@ -46384,6 +46830,7 @@ const data: ParsedItemCard[] = [
       "DamageReference",
       "Charge"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -46498,6 +46945,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Cooldown"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Common"
@@ -46599,6 +47047,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Burn"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Jules"
@@ -46718,6 +47167,9 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "DamageReference"
     ],
+    "customTags": [
+      "Unpurchasable"
+    ],
     "size": "Small",
     "heroes": [
       "Pygmalien"
@@ -46832,6 +47284,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Crit"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Vanessa"
@@ -46955,6 +47408,7 @@ const data: ParsedItemCard[] = [
       "Regen",
       "Burn"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Mak"
@@ -47082,6 +47536,7 @@ const data: ParsedItemCard[] = [
       "Ammo",
       "Slow"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Dooley"
@@ -47199,6 +47654,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "SlowReference"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Common"
@@ -47304,6 +47760,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Haste"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -47425,6 +47882,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Shield"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -47554,6 +48012,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "Shield"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Pygmalien"
@@ -47676,6 +48135,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Heal"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Pygmalien"
@@ -47790,6 +48250,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Haste"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Dooley"
@@ -47900,6 +48361,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Damage"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -48020,6 +48482,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "Ammo"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -48139,6 +48602,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "Crit"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Mak"
@@ -48259,6 +48723,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "AmmoReference"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Vanessa"
@@ -48385,6 +48850,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Poison"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Mak"
@@ -48510,6 +48976,7 @@ const data: ParsedItemCard[] = [
       "Value",
       "DamageReference"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Dooley"
@@ -48639,6 +49106,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Burn"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -48756,6 +49224,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Damage"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Mak"
@@ -48864,6 +49333,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Slow"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -48980,6 +49450,7 @@ const data: ParsedItemCard[] = [
       "DamageReference",
       "EconomyReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -49102,6 +49573,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Damage"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Mak"
@@ -49226,6 +49698,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Damage"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -49347,6 +49820,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Burn"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Pygmalien"
@@ -49471,6 +49945,7 @@ const data: ParsedItemCard[] = [
       "Shield",
       "Haste"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Jules"
@@ -49596,6 +50071,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "EconomyReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -49718,6 +50194,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Damage"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Stelle"
@@ -49851,6 +50328,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "DamageReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Mak"
@@ -49965,6 +50443,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "AmmoReference"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Common"
@@ -50080,6 +50559,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "CritReference"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Vanessa"
@@ -50194,6 +50674,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Regen"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Mak"
@@ -50325,6 +50806,7 @@ const data: ParsedItemCard[] = [
       "CritReference",
       "Ammo"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Vanessa"
@@ -50450,6 +50932,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Burn"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -50561,6 +51044,7 @@ const data: ParsedItemCard[] = [
       "Property"
     ],
     "hiddenTags": [],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -50662,6 +51146,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "PoisonReference"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Common"
@@ -50776,6 +51261,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "Freeze"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -50899,6 +51385,7 @@ const data: ParsedItemCard[] = [
       "Value",
       "DamageReference"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Pygmalien"
@@ -51029,6 +51516,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Shield"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -51157,6 +51645,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "Ammo"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Vanessa"
@@ -51282,6 +51771,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Shield"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -51401,6 +51891,7 @@ const data: ParsedItemCard[] = [
       "Crit",
       "Cooldown"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Mak"
@@ -51520,6 +52011,7 @@ const data: ParsedItemCard[] = [
       "Heal",
       "Health"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Pygmalien"
@@ -51643,6 +52135,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Freeze"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Dooley"
@@ -51757,6 +52250,7 @@ const data: ParsedItemCard[] = [
       "Poison",
       "Regen"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Mak"
@@ -51876,6 +52370,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Damage"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Common"
@@ -51991,6 +52486,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Damage"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -52114,6 +52610,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Charge"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Pygmalien"
@@ -52240,6 +52737,7 @@ const data: ParsedItemCard[] = [
       "Value",
       "EconomyReference"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Vanessa"
@@ -52361,6 +52859,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Health"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Common"
@@ -52422,6 +52921,7 @@ const data: ParsedItemCard[] = [
       "Freeze",
       "Shield"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Pygmalien"
@@ -52538,6 +53038,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Burn"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Vanessa"
@@ -52664,6 +53165,7 @@ const data: ParsedItemCard[] = [
       "Freeze",
       "Ammo"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -52784,6 +53286,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Burn"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Dooley"
@@ -52900,6 +53403,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "Regen"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Mak"
@@ -53009,6 +53513,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Cooldown"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -53126,6 +53631,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Damage"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Vanessa"
@@ -53253,6 +53759,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Poison"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Mak"
@@ -53381,6 +53888,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Burn"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Mak"
@@ -53503,6 +54011,7 @@ const data: ParsedItemCard[] = [
       "Burn",
       "SlowReference"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Vanessa"
@@ -53624,6 +54133,7 @@ const data: ParsedItemCard[] = [
       "Burn",
       "SlowReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -53743,6 +54253,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Damage"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Dooley"
@@ -53872,6 +54383,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Damage"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Mak"
@@ -53986,6 +54498,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Charge"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Common"
@@ -54105,6 +54618,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "Shield"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Dooley"
@@ -54221,6 +54735,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "Poison"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Vanessa"
@@ -54339,6 +54854,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "Ammo"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Vanessa"
@@ -54465,6 +54981,7 @@ const data: ParsedItemCard[] = [
       "Freeze",
       "PoisonReference"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Vanessa"
@@ -54584,6 +55101,7 @@ const data: ParsedItemCard[] = [
       "Ammo",
       "BurnReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -54708,6 +55226,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Damage"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Stelle"
@@ -54834,6 +55353,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "HasteReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Jules"
@@ -54958,6 +55478,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "DamageReference"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Common"
@@ -55070,6 +55591,7 @@ const data: ParsedItemCard[] = [
     },
     "tags": [],
     "hiddenTags": [],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Mak"
@@ -55193,6 +55715,7 @@ const data: ParsedItemCard[] = [
       "Burn",
       "ShieldReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -55300,6 +55823,7 @@ const data: ParsedItemCard[] = [
       "Loot"
     ],
     "hiddenTags": [],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Common"
@@ -55409,6 +55933,9 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Burn",
       "Charge"
+    ],
+    "customTags": [
+      "Unpurchasable"
     ],
     "size": "Medium",
     "heroes": [
@@ -55532,6 +56059,7 @@ const data: ParsedItemCard[] = [
       "Burn",
       "Poison"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Mak"
@@ -55645,6 +56173,7 @@ const data: ParsedItemCard[] = [
       "Shield",
       "Damage"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -55753,6 +56282,7 @@ const data: ParsedItemCard[] = [
       "Tech"
     ],
     "hiddenTags": [],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Dooley"
@@ -55865,6 +56395,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "DamageReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -55937,6 +56468,7 @@ const data: ParsedItemCard[] = [
       "Crit",
       "BurnReference"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Dooley"
@@ -56050,6 +56582,7 @@ const data: ParsedItemCard[] = [
       "Toy"
     ],
     "hiddenTags": [],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -56156,6 +56689,7 @@ const data: ParsedItemCard[] = [
       "Freeze",
       "PoisonReference"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Dooley"
@@ -56279,6 +56813,7 @@ const data: ParsedItemCard[] = [
       "Shield",
       "EconomyReference"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Pygmalien"
@@ -56403,6 +56938,7 @@ const data: ParsedItemCard[] = [
       "Burn",
       "ShieldReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -56521,6 +57057,7 @@ const data: ParsedItemCard[] = [
       "EconomyReference",
       "Value"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Pygmalien"
@@ -56636,6 +57173,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "AmmoReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Mak"
@@ -56755,6 +57293,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Damage"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Common"
@@ -56874,6 +57413,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Haste"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -56993,6 +57533,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Haste"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -57111,6 +57652,7 @@ const data: ParsedItemCard[] = [
       "Ammo",
       "HasteReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -57236,6 +57778,7 @@ const data: ParsedItemCard[] = [
       "Burn",
       "SlowReference"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Mak"
@@ -57358,6 +57901,7 @@ const data: ParsedItemCard[] = [
       "Regen",
       "Slow"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Mak"
@@ -57478,6 +58022,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Damage"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Dooley"
@@ -57599,6 +58144,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Burn"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Mak"
@@ -57717,6 +58263,7 @@ const data: ParsedItemCard[] = [
       "Shield",
       "EconomyReference"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Pygmalien"
@@ -57847,6 +58394,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "Slow"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Vanessa"
@@ -57983,6 +58531,7 @@ const data: ParsedItemCard[] = [
       "Burn",
       "SlowReference"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Vanessa"
@@ -58095,6 +58644,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Damage"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -58218,6 +58768,7 @@ const data: ParsedItemCard[] = [
       "Burn",
       "Ammo"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Mak"
@@ -58340,6 +58891,7 @@ const data: ParsedItemCard[] = [
       "SlowReference",
       "HasteReference"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Mak"
@@ -58468,6 +59020,9 @@ const data: ParsedItemCard[] = [
       "DamageReference",
       "Ammo"
     ],
+    "customTags": [
+      "Unpurchasable"
+    ],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -58527,6 +59082,7 @@ const data: ParsedItemCard[] = [
       "FreezeReference",
       "SlowReference"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Dooley"
@@ -58645,6 +59201,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "Freeze"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Pygmalien"
@@ -58763,6 +59320,7 @@ const data: ParsedItemCard[] = [
       "EconomyReference",
       "Value"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -58894,6 +59452,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "Cooldown"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Dooley"
@@ -59008,6 +59567,9 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "DamageReference"
     ],
+    "customTags": [
+      "Unpurchasable"
+    ],
     "size": "Small",
     "heroes": [
       "Common"
@@ -59108,6 +59670,7 @@ const data: ParsedItemCard[] = [
       "Crit",
       "Cooldown"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -59235,6 +59798,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "HealthReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -59350,6 +59914,7 @@ const data: ParsedItemCard[] = [
       "Value",
       "Cooldown"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -59476,6 +60041,7 @@ const data: ParsedItemCard[] = [
       "Shield",
       "Burn"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -59600,6 +60166,7 @@ const data: ParsedItemCard[] = [
       "Heal",
       "Health"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Common"
@@ -59715,6 +60282,7 @@ const data: ParsedItemCard[] = [
       "Crit",
       "Experience"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -59832,6 +60400,9 @@ const data: ParsedItemCard[] = [
     ],
     "hiddenTags": [
       "DamageReference"
+    ],
+    "customTags": [
+      "Unpurchasable"
     ],
     "size": "Small",
     "heroes": [
@@ -59956,6 +60527,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "AmmoReference"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Mak"
@@ -60072,6 +60644,7 @@ const data: ParsedItemCard[] = [
       "Value",
       "DamageReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -60202,6 +60775,7 @@ const data: ParsedItemCard[] = [
       "Value",
       "Heal"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Vanessa"
@@ -60331,6 +60905,7 @@ const data: ParsedItemCard[] = [
       "Freeze",
       "Shield"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -60449,6 +61024,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Slow"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Mak"
@@ -60578,6 +61154,7 @@ const data: ParsedItemCard[] = [
       "Ammo",
       "Burn"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -60704,6 +61281,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Damage"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Mak"
@@ -60834,6 +61412,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Damage"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Mak"
@@ -60955,6 +61534,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "AmmoReference"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Vanessa"
@@ -61075,6 +61655,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "EconomyReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -61205,6 +61786,7 @@ const data: ParsedItemCard[] = [
       "Poison",
       "HasteReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -61319,6 +61901,7 @@ const data: ParsedItemCard[] = [
       "Tool"
     ],
     "hiddenTags": [],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Mak"
@@ -61431,6 +62014,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Freeze"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Jules"
@@ -61542,6 +62126,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "Freeze"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -61656,6 +62241,9 @@ const data: ParsedItemCard[] = [
       "Loot"
     ],
     "hiddenTags": [],
+    "customTags": [
+      "Unpurchasable"
+    ],
     "size": "Small",
     "heroes": [
       "Common"
@@ -61711,6 +62299,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "Ammo"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Mak"
@@ -61828,6 +62417,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "AmmoReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -61954,6 +62544,7 @@ const data: ParsedItemCard[] = [
       "Value",
       "EconomyReference"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Pygmalien"
@@ -62073,6 +62664,7 @@ const data: ParsedItemCard[] = [
       "DamageReference",
       "Cooldown"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Common"
@@ -62198,6 +62790,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Shield"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -62317,6 +62910,7 @@ const data: ParsedItemCard[] = [
       "Crit",
       "Haste"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -62427,6 +63021,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Damage"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -62550,6 +63145,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "HasteReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -62668,6 +63264,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "CritReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Mak"
@@ -62790,6 +63387,7 @@ const data: ParsedItemCard[] = [
       "Heal",
       "Regen"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Pygmalien"
@@ -62919,6 +63517,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "Ammo"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Pygmalien"
@@ -63043,6 +63642,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "Haste"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -63158,6 +63758,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "HealReference"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Common"
@@ -63269,6 +63870,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "EconomyReference"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Pygmalien"
@@ -63382,6 +63984,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Cooldown"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Dooley"
@@ -63503,6 +64106,7 @@ const data: ParsedItemCard[] = [
       "Burn",
       "Freeze"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Mak"
@@ -63625,6 +64229,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "SlowReference"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Mak"
@@ -63744,6 +64349,7 @@ const data: ParsedItemCard[] = [
       "Value",
       "EconomyReference"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Pygmalien"
@@ -63862,6 +64468,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Crit"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Vanessa"
@@ -63976,6 +64583,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Charge"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Dooley"
@@ -64099,6 +64707,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Damage"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -64220,6 +64829,7 @@ const data: ParsedItemCard[] = [
       "BurnReference",
       "Charge"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -64340,6 +64950,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "HealthReference"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Pygmalien"
@@ -64466,6 +65077,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "Shield"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -64581,6 +65193,7 @@ const data: ParsedItemCard[] = [
       "Passive",
       "NonWeapon"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Common"
@@ -64629,6 +65242,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Shield"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Vanessa"
@@ -64754,6 +65368,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "Cooldown"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -64869,6 +65484,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "ShieldReference"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Common"
@@ -64973,6 +65589,9 @@ const data: ParsedItemCard[] = [
     ],
     "hiddenTags": [
       "CritReference"
+    ],
+    "customTags": [
+      "Unpurchasable"
     ],
     "size": "Small",
     "heroes": [
@@ -65096,6 +65715,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "Ammo"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Vanessa"
@@ -65220,6 +65840,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Damage"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Pygmalien"
@@ -65340,6 +65961,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Damage"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -65453,6 +66075,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Experience"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Common"
@@ -65503,6 +66126,9 @@ const data: ParsedItemCard[] = [
     "tags": [],
     "hiddenTags": [
       "ShieldReference"
+    ],
+    "customTags": [
+      "Unpurchasable"
     ],
     "size": "Small",
     "heroes": [
@@ -65601,6 +66227,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Charge"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Common"
@@ -65713,6 +66340,9 @@ const data: ParsedItemCard[] = [
     ],
     "hiddenTags": [
       "ShieldReference"
+    ],
+    "customTags": [
+      "Unpurchasable"
     ],
     "size": "Small",
     "heroes": [
@@ -65839,6 +66469,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Burn"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -65964,6 +66595,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Damage"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Common"
@@ -66083,6 +66715,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Ammo"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -66198,6 +66831,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Slow"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
@@ -66316,6 +66950,7 @@ const data: ParsedItemCard[] = [
       "EconomyReference",
       "Value"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Pygmalien"
@@ -66439,6 +67074,7 @@ const data: ParsedItemCard[] = [
       "Burn",
       "Regen"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Pygmalien"
@@ -66556,6 +67192,7 @@ const data: ParsedItemCard[] = [
       "Poison",
       "DamageReference"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Mak"
@@ -66673,6 +67310,7 @@ const data: ParsedItemCard[] = [
       "DamageReference",
       "Cooldown"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Vanessa"
@@ -66793,6 +67431,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "HasteReference"
     ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Dooley"
@@ -66914,6 +67553,7 @@ const data: ParsedItemCard[] = [
       "Shield",
       "Damage"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Dooley"
@@ -67043,6 +67683,7 @@ const data: ParsedItemCard[] = [
       "Damage",
       "Crit"
     ],
+    "customTags": [],
     "size": "Large",
     "heroes": [
       "Common"
@@ -67159,6 +67800,7 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Health"
     ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Common"
