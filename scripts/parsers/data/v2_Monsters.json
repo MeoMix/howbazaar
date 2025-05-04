@@ -4549,16 +4549,6 @@
           {
             "$type": "TCardInstanceItem",
             "EnchantmentType": null,
-            "SocketId": "Socket_5",
-            "TemplateId": "96e51b95-eaab-40ea-9a89-381727ce2434",
-            "TemplateVersion": "1.0.0",
-            "InstanceId": null,
-            "Tier": "Silver",
-            "Attributes": {}
-          },
-          {
-            "$type": "TCardInstanceItem",
-            "EnchantmentType": null,
             "SocketId": "Socket_6",
             "TemplateId": "c65e6801-7d3d-43e0-907e-ff7260efaf58",
             "TemplateVersion": "1.0.0",
@@ -4569,6 +4559,16 @@
           {
             "$type": "TCardInstanceItem",
             "EnchantmentType": null,
+            "SocketId": "Socket_5",
+            "TemplateId": "843ddc82-9d87-4995-b81c-bf31ae45fd30",
+            "TemplateVersion": "1.0.0",
+            "InstanceId": null,
+            "Tier": "Silver",
+            "Attributes": {}
+          },
+          {
+            "$type": "TCardInstanceItem",
+            "EnchantmentType": "Toxic",
             "SocketId": "Socket_8",
             "TemplateId": "96e51b95-eaab-40ea-9a89-381727ce2434",
             "TemplateVersion": "1.0.0",

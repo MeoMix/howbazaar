@@ -2157,19 +2157,20 @@ const data: ParsedMonster[] = [
         "socketId": "Socket_2"
       },
       {
-        "templateId": "96e51b95-eaab-40ea-9a89-381727ce2434",
-        "tierType": "Silver",
-        "socketId": "Socket_5"
-      },
-      {
         "templateId": "c65e6801-7d3d-43e0-907e-ff7260efaf58",
         "tierType": "Silver",
         "socketId": "Socket_6"
       },
       {
+        "templateId": "843ddc82-9d87-4995-b81c-bf31ae45fd30",
+        "tierType": "Silver",
+        "socketId": "Socket_5"
+      },
+      {
         "templateId": "96e51b95-eaab-40ea-9a89-381727ce2434",
         "tierType": "Silver",
-        "socketId": "Socket_8"
+        "socketId": "Socket_8",
+        "enchantmentType": "Toxic"
       },
       {
         "templateId": "562d768a-6aaf-4704-be8b-4dc9e6311b11",
