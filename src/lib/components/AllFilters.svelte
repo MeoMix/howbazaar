@@ -30,7 +30,7 @@
         isMatchAnyHero = $bindable(),
         searchText = $bindable(),
         selectedSearchLocationOption = $bindable(),
-        isMonsterDropsOnly = $bindable(),
+        monsterDropsOnlyState = $bindable(),
         latestExpansionsOnlyState = $bindable(),
     }: {
         heroOptions: Option[];
@@ -46,7 +46,7 @@
         isMatchAnyHero: boolean;
         searchText: string;
         selectedSearchLocationOption: AllSearchLocationOption;
-        isMonsterDropsOnly: boolean;
+        monsterDropsOnlyState: TriState;
         latestExpansionsOnlyState: TriState;
     } = $props();
 
@@ -62,7 +62,7 @@
         ) as Record<Tag | HiddenTag, TriState>;
         isMatchAnyTag = false;
         selectedSizes = [];
-        isMonsterDropsOnly = false;
+        monsterDropsOnlyState = "unset";
         latestExpansionsOnlyState = "unset";
     }
 
@@ -143,11 +143,17 @@
                     >
 
                     <div class="flex flex-wrap gap-2">
-                        <FilterToggle
-                            isEnabled={isMonsterDropsOnly}
+                        <FilterTriToggle
+                            value={monsterDropsOnlyState}
+                            state={monsterDropsOnlyState}
                             label={"Monster Drops Only"}
                             onClick={() => {
-                                isMonsterDropsOnly = !isMonsterDropsOnly;
+                                monsterDropsOnlyState =
+                                    monsterDropsOnlyState === "unset"
+                                        ? "on"
+                                        : monsterDropsOnlyState === "on"
+                                          ? "off"
+                                          : "unset";
                             }}
                         />
 

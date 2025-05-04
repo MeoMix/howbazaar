@@ -31,7 +31,7 @@
         selectedSearchLocationOption,
         isMatchAnyTag,
         isMatchAnyHero,
-        isMonsterDropsOnly,
+        monsterDropsOnlyState,
         latestExpansionsOnlyState,
         isHiddenWhenEmpty,
         initialLoad = true,
@@ -45,7 +45,7 @@
         selectedSearchLocationOption: SkillSearchLocationOption;
         isMatchAnyTag: boolean;
         isMatchAnyHero: boolean;
-        isMonsterDropsOnly: boolean;
+        monsterDropsOnlyState: TriState;
         latestExpansionsOnlyState: TriState;
         isHiddenWhenEmpty: boolean;
         initialLoad?: boolean;
@@ -76,7 +76,7 @@
             tagStates,
             isMatchAnyTag,
             isMatchAnyHero,
-            isMonsterDropsOnly,
+            monsterDropsOnlyState,
             latestExpansionsOnlyState,
         ),
     );

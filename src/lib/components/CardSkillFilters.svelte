@@ -15,6 +15,7 @@
     import SearchInput from "./SearchInput.svelte";
     import MultiSelectTriFilter from "./MultiSelectTriFilter.svelte";
     import AdvancedFilterToggle from "./AdvancedFilterToggle.svelte";
+    import FilterTriToggle from "./FilterTriToggle.svelte";
 
     let {
         heroOptions,
@@ -27,7 +28,7 @@
         isMatchAnyHero = $bindable(),
         searchText = $bindable(),
         selectedSearchLocationOption = $bindable(),
-        isMonsterDropsOnly = $bindable(),
+        monsterDropsOnlyState = $bindable(),
     }: {
         heroOptions: Option[];
         minimumTierOptions: Option[];
@@ -40,7 +41,7 @@
         isMatchAnyHero: boolean;
         searchText: string;
         selectedSearchLocationOption: SkillSearchLocationOption;
-        isMonsterDropsOnly: boolean;
+        monsterDropsOnlyState: TriState;
     } = $props();
 
     function clearSearch() {
@@ -55,7 +56,7 @@
         ) as Record<Tag | HiddenTag, TriState>;
         isMatchAnyTag = false;
         isMatchAnyHero = false;
-        isMonsterDropsOnly = false;
+        monsterDropsOnlyState = "unset";
     }
 
     function clearSearchInput() {
@@ -128,11 +129,17 @@
                     >
 
                     <div class="flex flex-wrap gap-2">
-                        <FilterToggle
-                            isEnabled={isMonsterDropsOnly}
+                        <FilterTriToggle
+                            value={monsterDropsOnlyState}
+                            state={monsterDropsOnlyState}
                             label={"Monster Drops Only"}
                             onClick={() => {
-                                isMonsterDropsOnly = !isMonsterDropsOnly;
+                                monsterDropsOnlyState =
+                                    monsterDropsOnlyState === "unset"
+                                        ? "on"
+                                        : monsterDropsOnlyState === "on"
+                                          ? "off"
+                                          : "unset";
                             }}
                         />
                     </div>

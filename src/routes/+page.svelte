@@ -73,7 +73,7 @@
             : selectedSearchLocationOption) as MerchantSearchLocationOption,
     );
 
-    let isMonsterDropsOnly = $state(false);
+    let monsterDropsOnlyState = $state("unset" as TriState);
     let latestExpansionsOnlyState = $state("unset" as TriState);
 
     let itemSortOptions: { name: string; value: ItemSortOption }[] = [
@@ -146,7 +146,7 @@
         bind:isMatchAnyHero
         bind:searchText
         bind:selectedSearchLocationOption
-        bind:isMonsterDropsOnly
+        bind:monsterDropsOnlyState
         bind:latestExpansionsOnlyState
     />
 
@@ -160,7 +160,7 @@
         {searchText}
         selectedSearchLocationOption={itemSelectedSearchLocationOption}
         {isMatchAnyTag}
-        {isMonsterDropsOnly}
+        {monsterDropsOnlyState}
         {latestExpansionsOnlyState}
         isHiddenWhenEmpty={true}
     />
@@ -175,7 +175,7 @@
         selectedSearchLocationOption={skillSelectedSearchLocationOption}
         {isMatchAnyTag}
         {isMatchAnyHero}
-        {isMonsterDropsOnly}
+        {monsterDropsOnlyState}
         {latestExpansionsOnlyState}
         isHiddenWhenEmpty={true}
         initialLoad={false}

@@ -221,12 +221,12 @@ export function filterItemCards(
     tagStates: Partial<Record<Tag | HiddenTag | CustomTag, TriState>>,
     selectedSizes: Size[],
     isMatchAnyTag: boolean,
-    isMonsterDropsOnly: boolean,
+    monsterDropsOnlyState: TriState,
     latestExpansionsOnlyState: TriState,
 ): ClientSideItemCard[] {
     return cards.filter(card => {
         return (
-            (isMonsterDropsOnly ? card.combatEncounters.length > 0 : true) &&
+            (monsterDropsOnlyState === "on" ? card.combatEncounters.length > 0 : (monsterDropsOnlyState === "off" ? card.combatEncounters.length === 0 : true)) &&
             (latestExpansionsOnlyState === "on" ? latestExpansions.has(card.packId) : (latestExpansionsOnlyState === "off" ? !latestExpansions.has(card.packId) : true)) &&
             matchesHero(card.heroes, selectedHeroes) &&
             matchesTier(card.startingTier, selectedTiers) &&
@@ -243,12 +243,12 @@ export function filterSkillCards(
     tagStates: Partial<Record<Tag | HiddenTag | CustomTag, TriState>>,
     isMatchAnyTag: boolean,
     isMatchAnyHero: boolean,
-    isMonsterDropsOnly: boolean,
+    monsterDropsOnlyState: TriState,
     latestExpansionsOnlyState: TriState
 ): ClientSideSkillCard[] {
     return cards.filter(card => {
         return (
-            (isMonsterDropsOnly ? card.combatEncounters.length > 0 : true) &&
+            (monsterDropsOnlyState === "on" ? card.combatEncounters.length > 0 : (monsterDropsOnlyState === "off" ? card.combatEncounters.length === 0 : true)) &&
             (latestExpansionsOnlyState === "on" ? latestExpansions.has(card.packId) : (latestExpansionsOnlyState === "off" ? !latestExpansions.has(card.packId) : true)) &&
             matchesHeroState(card.heroes, heroStates, isMatchAnyHero) &&
             matchesTier(card.startingTier, selectedTiers) &&

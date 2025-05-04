@@ -33,7 +33,7 @@
     let selectedSearchLocationOption = $state(
         "name-text" as SkillSearchLocationOption,
     );
-    let isMonsterDropsOnly = $state(false);
+    let monsterDropsOnlyState = $state("unset" as TriState);
     let latestExpansionsOnlyState = $state("unset" as TriState);
     let sortOptions: { name: string; value: SkillSortOption }[] = [
         {
@@ -69,7 +69,7 @@
         bind:isMatchAnyHero
         bind:searchText
         bind:selectedSearchLocationOption
-        bind:isMonsterDropsOnly
+        bind:monsterDropsOnlyState
     />
 
     <SkillList
@@ -82,7 +82,7 @@
         {selectedSearchLocationOption}
         {isMatchAnyTag}
         {isMatchAnyHero}
-        {isMonsterDropsOnly}
+        {monsterDropsOnlyState}
         {latestExpansionsOnlyState}
         isHiddenWhenEmpty={false}
     />
