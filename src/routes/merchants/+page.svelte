@@ -3,6 +3,7 @@
     import MerchantList from "$lib/components/MerchantList.svelte";
     import type {
         ClientSideMerchantCard,
+        ExpansionPackId,
         Hero,
         HiddenTag,
         MerchantSearchLocationOption,
@@ -30,6 +31,7 @@
     let selectedSearchLocationOption = $state(
         "name-text" as MerchantSearchLocationOption,
     );
+    let selectedExpansions = $state([] as ExpansionPackId[]);
 </script>
 
 <svelte:head>
@@ -50,6 +52,7 @@
         minimumTierOptions={data.minimumTierOptions}
         tagOptions={data.tagOptions}
         sizeOptions={data.sizeOptions}
+        expansionOptions={data.expansionOptions}
         bind:selectedHeroes
         bind:selectedTiers
         bind:tagStates
@@ -57,6 +60,7 @@
         bind:isMatchAnyTag
         bind:searchText
         bind:selectedSearchLocationOption
+        bind:selectedExpansions
     />
 
     <MerchantList
@@ -70,6 +74,7 @@
         {tagStates}
         {selectedSizes}
         {isMatchAnyTag}
+        {selectedExpansions}
         isHiddenWhenEmpty={false}
     />
 </div>

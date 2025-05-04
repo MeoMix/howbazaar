@@ -1,5 +1,6 @@
 import type { ClientSideItemCard, ClientSideMonsterEncounter, ClientSideSkillCard, Hero, HiddenTag, ItemSortOption, Size, SkillSortOption, Tag, TierType, TriState, MonsterSearchLocationOption, AllSearchLocationOption, ClientSideMerchantCard, MerchantSearchLocationOption, ExpansionPackId, CorePackId, CustomTag } from "$lib/types";
 import type { Entries } from "type-fest";
+import { getExpansionPackName, isExpansionPack } from "./cardUtils";
 
 export const heroOrder = ["Vanessa", "Pygmalien", "Dooley", "Mak", "Jules", "Stelle", "Common"] as const;
 export const tierOrder = ["Bronze", "Silver", "Gold", "Diamond", "Legendary"] as const;
@@ -9,15 +10,21 @@ export function getCardFilterOptions(cards: (ClientSideItemCard | ClientSideSkil
     const heroOptions = heroOrder.map(hero => ({ name: hero, value: hero }));
     const minimumTierOptions = tierOrder.map(minimumTier => ({ name: minimumTier, value: minimumTier }));
     const sizeOptions = sizeOrder.map(size => ({ name: size, value: size }));
+
     const tagOptions = Array.from(
         new Set(cards.flatMap((card) => filterTags(card.tags, card.hiddenTags, card.customTags)))
     ).sort().map(tag => ({ name: tag, value: tag }));
+
+    const expansionOptions = Array.from(
+        new Set(cards.map(card => card.packId).filter(isExpansionPack))
+    ).sort().map(expansion => ({ name: getExpansionPackName(expansion), value: expansion }));
 
     return {
         heroOptions,
         minimumTierOptions,
         tagOptions,
-        sizeOptions
+        sizeOptions,
+        expansionOptions
     };
 }
 
@@ -55,6 +62,10 @@ function matchesHeroState(
 
 function matchesTier(cardTier: TierType, selectedTiers: TierType[]): boolean {
     return selectedTiers.length === 0 || selectedTiers.includes(cardTier);
+}
+
+function matchesExpansion(cardPackId: CorePackId | ExpansionPackId, selectedExpansions: ExpansionPackId[]): boolean {
+    return selectedExpansions.length === 0 || (isExpansionPack(cardPackId) && selectedExpansions.includes(cardPackId));
 }
 
 function matchesTagState(
@@ -222,12 +233,12 @@ export function filterItemCards(
     selectedSizes: Size[],
     isMatchAnyTag: boolean,
     monsterDropsOnlyState: TriState,
-    latestExpansionsOnlyState: TriState,
+    selectedExpansions: ExpansionPackId[],
 ): ClientSideItemCard[] {
     return cards.filter(card => {
         return (
             (monsterDropsOnlyState === "on" ? card.combatEncounters.length > 0 : (monsterDropsOnlyState === "off" ? card.combatEncounters.length === 0 : true)) &&
-            (latestExpansionsOnlyState === "on" ? latestExpansions.has(card.packId) : (latestExpansionsOnlyState === "off" ? !latestExpansions.has(card.packId) : true)) &&
+            matchesExpansion(card.packId, selectedExpansions) &&
             matchesHero(card.heroes, selectedHeroes) &&
             matchesTier(card.startingTier, selectedTiers) &&
             matchesTagState(card.tags, card.hiddenTags, card.customTags, tagStates, isMatchAnyTag) &&
@@ -244,12 +255,10 @@ export function filterSkillCards(
     isMatchAnyTag: boolean,
     isMatchAnyHero: boolean,
     monsterDropsOnlyState: TriState,
-    latestExpansionsOnlyState: TriState
 ): ClientSideSkillCard[] {
     return cards.filter(card => {
         return (
             (monsterDropsOnlyState === "on" ? card.combatEncounters.length > 0 : (monsterDropsOnlyState === "off" ? card.combatEncounters.length === 0 : true)) &&
-            (latestExpansionsOnlyState === "on" ? latestExpansions.has(card.packId) : (latestExpansionsOnlyState === "off" ? !latestExpansions.has(card.packId) : true)) &&
             matchesHeroState(card.heroes, heroStates, isMatchAnyHero) &&
             matchesTier(card.startingTier, selectedTiers) &&
             matchesTagState(card.tags, card.hiddenTags, card.customTags, tagStates, isMatchAnyTag)

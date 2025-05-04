@@ -9,6 +9,10 @@
     import Divider from "./Divider.svelte";
     import CopyLinkButton from "./CopyLinkButton.svelte";
     import UnifiedTooltip from "./UnifiedTooltip.svelte";
+    import {
+        getExpansionPackName,
+        isExpansionPack,
+    } from "$lib/utils/cardUtils";
 
     const {
         card,
@@ -21,24 +25,9 @@
     } = $props();
 
     const id = $derived(card.name.replace(/\s+/g, "_"));
-    const tags = $derived(filterTags(card.tags, card.hiddenTags, card.customTags));
-
-    function getPackName(packId: ClientSideItemCard["packId"]): string {
-        // First replace underscores with spaces
-        let packName = packId.replace(/_/g, " ");
-
-        // Remove any hero names from the pack name
-        for (const hero of card.heroes) {
-            packName = packName.replace(hero, "").trim();
-        }
-
-        // Append "Expansion" to the name
-        return `${packName} Expansion`;
-    }
-
-    function shouldShowPackName(packId: string): boolean {
-        return !packId.toLowerCase().includes("core");
-    }
+    const tags = $derived(
+        filterTags(card.tags, card.hiddenTags, card.customTags),
+    );
 </script>
 
 <Card
@@ -77,8 +66,8 @@
                         ...[
                             ...card.heroes,
                             card.size,
-                            ...(shouldShowPackName(card.packId)
-                                ? [getPackName(card.packId)]
+                            ...(isExpansionPack(card.packId)
+                                ? [getExpansionPackName(card.packId)]
                                 : []),
                         ].map((text) => ({
                             text,

@@ -33,7 +33,6 @@
         heroOptions: Option[];
         minimumTierOptions: Option[];
         tagOptions: Option[];
-        canFilterEnchantments?: boolean;
         heroStates: Record<Hero, TriState>;
         selectedTiers: string[];
         tagStates: Record<Tag | HiddenTag, TriState>;

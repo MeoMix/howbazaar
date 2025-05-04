@@ -3,6 +3,7 @@
     import type {
         ClientSideItemCard,
         ClientSideMerchantCard,
+        ExpansionPackId,
         Hero,
         HiddenTag,
         MerchantSearchLocationOption,
@@ -35,6 +36,7 @@
         tagStates,
         selectedSizes,
         isMatchAnyTag,
+        selectedExpansions,
     }: {
         itemsServerVersion: string;
         merchantsServerVersion: string;
@@ -48,6 +50,7 @@
         tagStates: Record<Tag | HiddenTag, TriState>;
         selectedSizes: Size[];
         isMatchAnyTag: boolean;
+        selectedExpansions: ExpansionPackId[];
     } = $props();
 
     let isLoadingMerchants = $state(false);
@@ -134,16 +137,16 @@
                 { Unpurchasable: "off" },
                 [],
                 false,
-                false,
                 "unset",
+                selectedExpansions,
             ),
             selectedHeroes,
             selectedTiers,
             tagStates,
             selectedSizes,
             isMatchAnyTag,
-            false,
             "unset",
+            selectedExpansions,
         ),
     );
 
@@ -170,8 +173,8 @@
                             { Unpurchasable: "off" },
                             [],
                             false,
-                            false,
                             "unset",
+                            selectedExpansions,
                         ),
                         merchant.filters.heroes ?? [
                             "Vanessa",
@@ -183,8 +186,8 @@
                         merchant.filters.tagStates ?? {},
                         merchant.filters.sizes ?? [],
                         merchant.filters.isMatchAnyTag ?? true,
-                        false,
                         "unset",
+                        selectedExpansions,
                     ).length,
                     // Apply filters to the item pool again, but this time customized to the specific merchant.
                     // This will ensure each merchant only shows items relevant to the specific merchant.
@@ -200,8 +203,8 @@
                         merchant.filters.tagStates ?? {},
                         merchant.filters.sizes ?? [],
                         merchant.filters.isMatchAnyTag ?? true,
-                        false,
                         "unset",
+                        selectedExpansions,
                     ),
                 },
             ]),
@@ -230,7 +233,8 @@
             selectedHeroes.length > 0 ||
             selectedTiers.length > 0 ||
             selectedSizes.length > 0 ||
-            Object.values(tagStates).some((state) => state !== "unset"),
+            Object.values(tagStates).some((state) => state !== "unset") ||
+            selectedExpansions.length > 0,
     );
 
     const searchedMerchants = $derived(() => {

@@ -17,6 +17,7 @@
         SkillSearchLocationOption,
         AllSearchLocationOption,
         MerchantSearchLocationOption,
+        ExpansionPackId,
     } from "$lib/types";
     import type { PageData } from "./$types";
     import { tooltipState } from "$lib/actions/tooltip.svelte";
@@ -46,6 +47,8 @@
             .map(([hero]) => hero as Hero), // Extract the hero name
     );
 
+    let selectedExpansions = $state([] as ExpansionPackId[]);
+
     let isMatchAnyTag = $state(false);
     let isMatchAnyHero = $state(false);
     let selectedSizes = $state([] as Size[]);
@@ -74,7 +77,6 @@
     );
 
     let monsterDropsOnlyState = $state("unset" as TriState);
-    let latestExpansionsOnlyState = $state("unset" as TriState);
 
     let itemSortOptions: { name: string; value: ItemSortOption }[] = [
         {
@@ -138,16 +140,17 @@
         minimumTierOptions={data.minimumTierOptions}
         tagOptions={data.tagOptions}
         sizeOptions={data.sizeOptions}
+        expansionOptions={data.expansionOptions}
         bind:heroStates
         bind:selectedTiers
         bind:tagStates
         bind:selectedSizes
+        bind:selectedExpansions
         bind:isMatchAnyTag
         bind:isMatchAnyHero
         bind:searchText
         bind:selectedSearchLocationOption
         bind:monsterDropsOnlyState
-        bind:latestExpansionsOnlyState
     />
 
     <ItemList
@@ -161,7 +164,7 @@
         selectedSearchLocationOption={itemSelectedSearchLocationOption}
         {isMatchAnyTag}
         {monsterDropsOnlyState}
-        {latestExpansionsOnlyState}
+        {selectedExpansions}
         isHiddenWhenEmpty={true}
     />
 
@@ -176,7 +179,6 @@
         {isMatchAnyTag}
         {isMatchAnyHero}
         {monsterDropsOnlyState}
-        {latestExpansionsOnlyState}
         isHiddenWhenEmpty={true}
         initialLoad={false}
     />

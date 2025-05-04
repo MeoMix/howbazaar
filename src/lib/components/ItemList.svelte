@@ -9,6 +9,7 @@
         Tag,
         TierType,
         TriState,
+        ExpansionPackId,
     } from "$lib/types";
     import { Label } from "flowbite-svelte";
     import CardItem from "./CardItem.svelte";
@@ -34,7 +35,7 @@
         selectedSearchLocationOption,
         isMatchAnyTag,
         monsterDropsOnlyState,
-        latestExpansionsOnlyState,
+        selectedExpansions,
         isHiddenWhenEmpty,
     }: {
         serverVersion: string;
@@ -47,7 +48,7 @@
         selectedSearchLocationOption: ItemSearchLocationOption;
         isMatchAnyTag: boolean;
         monsterDropsOnlyState: TriState;
-        latestExpansionsOnlyState: TriState;
+        selectedExpansions: ExpansionPackId[];
         isHiddenWhenEmpty: boolean;
     } = $props();
 
@@ -79,7 +80,7 @@
             selectedSizes,
             isMatchAnyTag,
             monsterDropsOnlyState,
-            latestExpansionsOnlyState,
+            selectedExpansions,
         ),
     );
 

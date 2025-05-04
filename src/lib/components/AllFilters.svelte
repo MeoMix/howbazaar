@@ -1,7 +1,6 @@
 <script lang="ts">
     import { Button, Label } from "flowbite-svelte";
     import MultiSelectFilter from "./MultiSelectFilter.svelte";
-    import FilterToggle from "./FilterToggle.svelte";
     import { onMount } from "svelte";
     import { page } from "$app/state";
     import type {
@@ -11,6 +10,7 @@
         TriState,
         Hero,
         AllSearchLocationOption,
+        ExpansionPackId,
     } from "$lib/types";
     import SearchInput from "./SearchInput.svelte";
     import MultiSelectTriFilter from "./MultiSelectTriFilter.svelte";
@@ -22,32 +22,33 @@
         minimumTierOptions,
         tagOptions,
         sizeOptions,
+        expansionOptions,
         heroStates = $bindable(),
         selectedTiers = $bindable(),
         tagStates = $bindable(),
         selectedSizes = $bindable(),
+        selectedExpansions = $bindable(),
         isMatchAnyTag = $bindable(),
         isMatchAnyHero = $bindable(),
         searchText = $bindable(),
         selectedSearchLocationOption = $bindable(),
         monsterDropsOnlyState = $bindable(),
-        latestExpansionsOnlyState = $bindable(),
     }: {
         heroOptions: Option[];
         minimumTierOptions: Option[];
         tagOptions: Option[];
         sizeOptions: Option[];
-        canFilterEnchantments?: boolean;
+        expansionOptions: Option[];
         heroStates: Record<Hero, TriState>;
         selectedTiers: string[];
         tagStates: Record<Tag | HiddenTag, TriState>;
         selectedSizes: string[];
+        selectedExpansions: ExpansionPackId[];
         isMatchAnyTag: boolean;
         isMatchAnyHero: boolean;
         searchText: string;
         selectedSearchLocationOption: AllSearchLocationOption;
         monsterDropsOnlyState: TriState;
-        latestExpansionsOnlyState: TriState;
     } = $props();
 
     function clearSearch() {
@@ -63,7 +64,7 @@
         isMatchAnyTag = false;
         selectedSizes = [];
         monsterDropsOnlyState = "unset";
-        latestExpansionsOnlyState = "unset";
+        selectedExpansions = [];
     }
 
     function clearSearchInput() {
@@ -135,6 +136,11 @@
                     options={sizeOptions}
                     bind:selectedOptionValues={selectedSizes}
                 />
+                <MultiSelectFilter
+                    label="Expansions"
+                    options={expansionOptions}
+                    bind:selectedOptionValues={selectedExpansions}
+                />
 
                 <div>
                     <Label
@@ -152,21 +158,6 @@
                                     monsterDropsOnlyState === "unset"
                                         ? "on"
                                         : monsterDropsOnlyState === "on"
-                                          ? "off"
-                                          : "unset";
-                            }}
-                        />
-
-                        <FilterTriToggle
-                            label={"Latest Expansions Only"}
-                            value={latestExpansionsOnlyState}
-                            state={latestExpansionsOnlyState}
-                            onClick={() => {
-                                // Cycle through states for the given tag
-                                latestExpansionsOnlyState =
-                                    latestExpansionsOnlyState === "unset"
-                                        ? "on"
-                                        : latestExpansionsOnlyState === "on"
                                           ? "off"
                                           : "unset";
                             }}

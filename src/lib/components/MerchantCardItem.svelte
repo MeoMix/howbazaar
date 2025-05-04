@@ -6,6 +6,10 @@
     import { tooltip } from "$lib/actions/tooltip.svelte";
     import UnifiedTooltips from "./UnifiedTooltips.svelte";
     import { filterTags } from "$lib/utils/filterUtils";
+    import {
+        getExpansionPackName,
+        isExpansionPack,
+    } from "$lib/utils/cardUtils";
 
     const {
         card,
@@ -13,25 +17,9 @@
         card: ClientSideItemCard;
     } = $props();
 
-    const tags = $derived(filterTags(card.tags, card.hiddenTags, card.customTags));
-
-    // TODO: Move this to a util file rather than copy/pasting.
-    function getPackName(packId: ClientSideItemCard["packId"]): string {
-        // First replace underscores with spaces
-        let packName = packId.replace(/_/g, " ");
-
-        // Remove any hero names from the pack name
-        for (const hero of card.heroes) {
-            packName = packName.replace(hero, "").trim();
-        }
-
-        // Append "Expansion" to the name
-        return `${packName} Expansion`;
-    }
-
-    function shouldShowPackName(packId: string): boolean {
-        return !packId.toLowerCase().includes("core");
-    }
+    const tags = $derived(
+        filterTags(card.tags, card.hiddenTags, card.customTags),
+    );
 
     const primaryBadges = $derived([
         {
@@ -42,8 +30,8 @@
         ...[
             ...card.heroes,
             card.size,
-            ...(shouldShowPackName(card.packId)
-                ? [getPackName(card.packId)]
+            ...(isExpansionPack(card.packId)
+                ? [getExpansionPackName(card.packId)]
                 : []),
         ].map((text) => ({
             text,

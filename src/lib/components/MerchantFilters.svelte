@@ -9,6 +9,7 @@
         Option,
         TriState,
         ItemSearchLocationOption,
+        ExpansionPackId,
     } from "$lib/types";
     import SearchInput from "./SearchInput.svelte";
     import MultiSelectTriFilter from "./MultiSelectTriFilter.svelte";
@@ -19,6 +20,7 @@
         minimumTierOptions,
         tagOptions,
         sizeOptions,
+        expansionOptions,
         selectedHeroes = $bindable(),
         selectedTiers = $bindable(),
         tagStates = $bindable(),
@@ -26,12 +28,13 @@
         isMatchAnyTag = $bindable(),
         searchText = $bindable(),
         selectedSearchLocationOption = $bindable(),
+        selectedExpansions = $bindable(),
     }: {
         heroOptions: Option[];
         minimumTierOptions: Option[];
         tagOptions: Option[];
         sizeOptions: Option[];
-        canFilterEnchantments?: boolean;
+        expansionOptions: Option[];
         selectedHeroes: string[];
         selectedTiers: string[];
         tagStates: Record<Tag | HiddenTag, TriState>;
@@ -39,6 +42,7 @@
         isMatchAnyTag: boolean;
         searchText: string;
         selectedSearchLocationOption: ItemSearchLocationOption;
+        selectedExpansions: ExpansionPackId[];
     } = $props();
 
     function clearSearch() {
@@ -51,6 +55,7 @@
         ) as Record<Tag | HiddenTag, TriState>;
         isMatchAnyTag = false;
         selectedSizes = [];
+        selectedExpansions = [];
     }
 
     function clearSearchInput() {
@@ -116,6 +121,11 @@
                     label="Sizes"
                     options={sizeOptions}
                     bind:selectedOptionValues={selectedSizes}
+                />
+                <MultiSelectFilter
+                    label="Expansions"
+                    options={expansionOptions}
+                    bind:selectedOptionValues={selectedExpansions}
                 />
             </div>
 

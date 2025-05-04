@@ -32,7 +32,6 @@
         isMatchAnyTag,
         isMatchAnyHero,
         monsterDropsOnlyState,
-        latestExpansionsOnlyState,
         isHiddenWhenEmpty,
         initialLoad = true,
     }: {
@@ -46,7 +45,6 @@
         isMatchAnyTag: boolean;
         isMatchAnyHero: boolean;
         monsterDropsOnlyState: TriState;
-        latestExpansionsOnlyState: TriState;
         isHiddenWhenEmpty: boolean;
         initialLoad?: boolean;
     } = $props();
@@ -77,7 +75,6 @@
             isMatchAnyTag,
             isMatchAnyHero,
             monsterDropsOnlyState,
-            latestExpansionsOnlyState,
         ),
     );
 
