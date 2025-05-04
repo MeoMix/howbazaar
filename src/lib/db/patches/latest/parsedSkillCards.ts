@@ -2354,53 +2354,6 @@ const data: ParsedSkillCard[] = [
     "packId": "Vanessa_Core"
   },
   {
-    "id": "b7c2ce67-0da5-4360-9eda-b328817affe6",
-    "name": "Heavy Shielding",
-    "startingTier": "Bronze",
-    "tiers": {
-      "Bronze": {
-        "tooltips": [
-          "Your Large Shield items have +12 shield."
-        ]
-      },
-      "Silver": {
-        "tooltips": [
-          "Your Large Shield items have +36 shield."
-        ]
-      },
-      "Gold": {
-        "tooltips": [
-          "Your Large Shield items have +72 shield."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "Your Large Shield items have +120 shield."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [],
-    "hiddenTags": [
-      "ShieldReference"
-    ],
-    "customTags": [],
-    "size": "Medium",
-    "heroes": [
-      "Stelle",
-      "Dooley",
-      "Pygmalien"
-    ],
-    "artKey": "Icon_Skill_HeavyShielding.png",
-    "unifiedTooltips": [
-      "Your Large Shield items have (+12/+36/+72/+120) shield."
-    ],
-    "remarks": [],
-    "packId": "Jules_Core"
-  },
-  {
     "id": "fd3f0e7b-27ac-4bde-87f8-5ec61b19c4f7",
     "name": "Sabotage",
     "startingTier": "Gold",
@@ -3006,51 +2959,6 @@ const data: ParsedSkillCard[] = [
     ],
     "remarks": [],
     "packId": "Core"
-  },
-  {
-    "id": "5e193004-5e5f-4166-96a0-9a51a3ef8443",
-    "name": "Flanking Shield",
-    "startingTier": "Silver",
-    "tiers": {
-      "Bronze": {
-        "tooltips": []
-      },
-      "Silver": {
-        "tooltips": [
-          "The first time you use a Large item each fight, adjacent Shield items gain 15 Shield for the fight."
-        ]
-      },
-      "Gold": {
-        "tooltips": [
-          "The first time you use a Large item each fight, adjacent Shield items gain 30 Shield for the fight."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "The first time you use a Large item each fight, adjacent Shield items gain 50 Shield for the fight."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [],
-    "hiddenTags": [
-      "ShieldReference"
-    ],
-    "customTags": [],
-    "size": "Medium",
-    "heroes": [
-      "Pygmalien",
-      "Dooley",
-      "Stelle"
-    ],
-    "artKey": "Icon_Skill_FlankingShield.png",
-    "unifiedTooltips": [
-      "The first time you use a Large item each fight, adjacent Shield items gain (15/30/50) Shield for the fight."
-    ],
-    "remarks": [],
-    "packId": "Pygmalien_Core"
   },
   {
     "id": "a2351de3-f077-4631-81fa-5b0f8c2cbb23",
@@ -4556,55 +4464,6 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_ReelEmIn.png",
     "unifiedTooltips": [
       "The first time your enemy falls below half health each fight, your items have their cooldowns reduced by 50% for the fight."
-    ],
-    "remarks": [],
-    "packId": "Vanessa_Core"
-  },
-  {
-    "id": "11a262fe-e1e7-4656-a07c-f6a3a1249352",
-    "name": "Second Degree Burns",
-    "startingTier": "Bronze",
-    "tiers": {
-      "Bronze": {
-        "tooltips": [
-          "Your Medium Burn items have +2 Burn."
-        ]
-      },
-      "Silver": {
-        "tooltips": [
-          "Your Medium Burn items have +4 Burn."
-        ]
-      },
-      "Gold": {
-        "tooltips": [
-          "Your Medium Burn items have +6 Burn."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "Your Medium Burn items have +8 Burn."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [],
-    "hiddenTags": [
-      "BurnReference"
-    ],
-    "customTags": [],
-    "size": "Medium",
-    "heroes": [
-      "Vanessa",
-      "Dooley",
-      "Jules",
-      "Stelle",
-      "Mak"
-    ],
-    "artKey": "Icon_Skill_SecondDegreeBurns.png",
-    "unifiedTooltips": [
-      "Your Medium Burn items have (+2/+4/+6/+8) Burn."
     ],
     "remarks": [],
     "packId": "Vanessa_Core"
@@ -6681,51 +6540,6 @@ const data: ParsedSkillCard[] = [
     "packId": "Pygmalien_Core"
   },
   {
-    "id": "aa59ff52-e4de-4728-bf9c-3ac8411ecbd8",
-    "name": "Large Poisons",
-    "startingTier": "Bronze",
-    "tiers": {
-      "Bronze": {
-        "tooltips": [
-          "Your Large Poison items have +4 Poison."
-        ]
-      },
-      "Silver": {
-        "tooltips": [
-          "Your Large Poison items have +8 Poison."
-        ]
-      },
-      "Gold": {
-        "tooltips": [
-          "Your Large Poison items have +12 Poison."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "Your Large Poison items have +16 Poison."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [],
-    "hiddenTags": [
-      "PoisonReference"
-    ],
-    "customTags": [],
-    "size": "Medium",
-    "heroes": [
-      "Mak"
-    ],
-    "artKey": "Icon_Skill_LargePoison.png",
-    "unifiedTooltips": [
-      "Your Large Poison items have (+4/+8/+12/+16) Poison."
-    ],
-    "remarks": [],
-    "packId": "Mak_Core"
-  },
-  {
     "id": "82d8a964-4068-44c0-a123-af96e5c350d4",
     "name": "Heavy Mettle",
     "startingTier": "Silver",
@@ -7259,101 +7073,6 @@ const data: ParsedSkillCard[] = [
     ],
     "remarks": [],
     "packId": "Dooley_Core"
-  },
-  {
-    "id": "94b80fbf-4d21-4439-beb2-e1bdf56cea03",
-    "name": "Flanking Shots",
-    "startingTier": "Silver",
-    "tiers": {
-      "Bronze": {
-        "tooltips": []
-      },
-      "Silver": {
-        "tooltips": [
-          "The first time you use a Large item each fight, adjacent weapons gain 15 Damage for the fight."
-        ]
-      },
-      "Gold": {
-        "tooltips": [
-          "The first time you use a Large item each fight, adjacent weapons gain 30 Damage for the fight."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "The first time you use a Large item each fight, adjacent weapons gain 50 Damage for the fight."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [
-      "Weapon"
-    ],
-    "hiddenTags": [
-      "DamageReference"
-    ],
-    "customTags": [],
-    "size": "Medium",
-    "heroes": [
-      "Pygmalien",
-      "Vanessa",
-      "Dooley",
-      "Jules",
-      "Stelle",
-      "Mak"
-    ],
-    "artKey": "Icon_Skill_FlankingShots.png",
-    "unifiedTooltips": [
-      "The first time you use a Large item each fight, adjacent weapons gain (15/30/50) Damage for the fight."
-    ],
-    "remarks": [],
-    "packId": "Pygmalien_Core"
-  },
-  {
-    "id": "7518cb66-252b-4b9c-9d4d-269aaad8daf3",
-    "name": "Flanking Fire",
-    "startingTier": "Silver",
-    "tiers": {
-      "Bronze": {
-        "tooltips": []
-      },
-      "Silver": {
-        "tooltips": [
-          "The first time you use a Large item each fight, Adjacent items gain 7 Burn for the fight."
-        ]
-      },
-      "Gold": {
-        "tooltips": [
-          "The first time you use a Large item each fight, Adjacent items gain 10 Burn for the fight."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "The first time you use a Large item each fight, Adjacent items gain 13 Burn for the fight."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [],
-    "hiddenTags": [
-      "BurnReference"
-    ],
-    "customTags": [],
-    "size": "Medium",
-    "heroes": [
-      "Vanessa",
-      "Jules",
-      "Stelle"
-    ],
-    "artKey": "Icon_Skill_FlankingFire.png",
-    "unifiedTooltips": [
-      "The first time you use a Large item each fight, Adjacent items gain (7/10/13) Burn for the fight."
-    ],
-    "remarks": [],
-    "packId": "Pygmalien_Core"
   },
   {
     "id": "7434f3a5-2432-4603-b6d7-46febb9272fd",
@@ -7983,53 +7702,6 @@ const data: ParsedSkillCard[] = [
     "packId": "Core"
   },
   {
-    "id": "254017cc-e3b9-486e-9276-850867ceba6b",
-    "name": "Standardized Defenses",
-    "startingTier": "Bronze",
-    "tiers": {
-      "Bronze": {
-        "tooltips": [
-          "Your Medium Shield items have +6 shield."
-        ]
-      },
-      "Silver": {
-        "tooltips": [
-          "Your Medium Shield items have +18 shield."
-        ]
-      },
-      "Gold": {
-        "tooltips": [
-          "Your Medium Shield items have +36 shield."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "Your Medium Shield items have +60 shield."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [],
-    "hiddenTags": [
-      "ShieldReference"
-    ],
-    "customTags": [],
-    "size": "Medium",
-    "heroes": [
-      "Stelle",
-      "Dooley",
-      "Pygmalien"
-    ],
-    "artKey": "Icon_Skill_StandardizedDefences.png",
-    "unifiedTooltips": [
-      "Your Medium Shield items have (+6/+18/+36/+60) shield."
-    ],
-    "remarks": [],
-    "packId": "Jules_Core"
-  },
-  {
     "id": "4797e5ba-c3ac-4b32-a7ef-93c0a45d1c4f",
     "name": "The Right Tool",
     "startingTier": "Silver",
@@ -8348,55 +8020,6 @@ const data: ParsedSkillCard[] = [
     ],
     "remarks": [],
     "packId": "Dooley_Core"
-  },
-  {
-    "id": "b1b9ff21-32ac-436a-bd3c-120563b26bea",
-    "name": "Third Degree Burns",
-    "startingTier": "Bronze",
-    "tiers": {
-      "Bronze": {
-        "tooltips": [
-          "Your Large Burn items have +4 Burn."
-        ]
-      },
-      "Silver": {
-        "tooltips": [
-          "Your Large Burn items have +8 Burn."
-        ]
-      },
-      "Gold": {
-        "tooltips": [
-          "Your Large Burn items have +12 Burn."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "Your Large Burn items have +16 Burn."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [],
-    "hiddenTags": [
-      "BurnReference"
-    ],
-    "customTags": [],
-    "size": "Medium",
-    "heroes": [
-      "Vanessa",
-      "Dooley",
-      "Jules",
-      "Stelle",
-      "Mak"
-    ],
-    "artKey": "Icon_Skill_ThirdDegreeBurns.png",
-    "unifiedTooltips": [
-      "Your Large Burn items have (+4/+8/+12/+16) Burn."
-    ],
-    "remarks": [],
-    "packId": "Vanessa_Core"
   },
   {
     "id": "ec327a59-8fde-444f-b29b-73b22c248c4e",
@@ -9728,53 +9351,6 @@ const data: ParsedSkillCard[] = [
     "packId": "Pygmalien_Core"
   },
   {
-    "id": "f2782115-1920-4bf2-9306-32697bcfee15",
-    "name": "Critical Captain",
-    "startingTier": "Bronze",
-    "tiers": {
-      "Bronze": {
-        "tooltips": [
-          "The first time you use a Large item each fight, your items gain +4% Crit Chance for the fight."
-        ]
-      },
-      "Silver": {
-        "tooltips": [
-          "The first time you use a Large item each fight, your items gain +8% Crit Chance for the fight."
-        ]
-      },
-      "Gold": {
-        "tooltips": [
-          "The first time you use a Large item each fight, your items gain +12% Crit Chance for the fight."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "The first time you use a Large item each fight, your items gain +16% Crit Chance for the fight."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [],
-    "hiddenTags": [
-      "Crit"
-    ],
-    "customTags": [],
-    "size": "Medium",
-    "heroes": [
-      "Vanessa",
-      "Dooley",
-      "Stelle"
-    ],
-    "artKey": "Icon_Skill_CriticalCaptain.png",
-    "unifiedTooltips": [
-      "The first time you use a Large item each fight, your items gain (+4%/+8%/+12%/+16%) Crit Chance for the fight."
-    ],
-    "remarks": [],
-    "packId": "Pygmalien_Core"
-  },
-  {
     "id": "870ed8e7-9c1f-4be0-b84c-00ebcf475a74",
     "name": "Cosmic Wind",
     "startingTier": "Silver",
@@ -10194,50 +9770,6 @@ const data: ParsedSkillCard[] = [
     "packId": "Pygmalien_Core"
   },
   {
-    "id": "35cd34d4-80f5-48bd-95ed-5bb7fde3d21c",
-    "name": "Flanking Aid",
-    "startingTier": "Silver",
-    "tiers": {
-      "Bronze": {
-        "tooltips": []
-      },
-      "Silver": {
-        "tooltips": [
-          "The first time you use a Large item each fight, Adjacent items gain +15 Heal for the fight."
-        ]
-      },
-      "Gold": {
-        "tooltips": [
-          "The first time you use a Large item each fight, Adjacent items gain +20 Heal for the fight."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "The first time you use a Large item each fight, Adjacent items gain +25 Heal for the fight."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [],
-    "hiddenTags": [
-      "HealReference"
-    ],
-    "customTags": [],
-    "size": "Medium",
-    "heroes": [
-      "Pygmalien",
-      "Mak"
-    ],
-    "artKey": "Icon_Skill_FlankingAid.png",
-    "unifiedTooltips": [
-      "The first time you use a Large item each fight, Adjacent items gain (+15/+20/+25) Heal for the fight."
-    ],
-    "remarks": [],
-    "packId": "Pygmalien_Core"
-  },
-  {
     "id": "72010bea-fadf-4f64-9cba-d34bfd014388",
     "name": "Draconic Rage",
     "startingTier": "Diamond",
@@ -10315,52 +9847,6 @@ const data: ParsedSkillCard[] = [
     ],
     "remarks": [],
     "packId": "Core"
-  },
-  {
-    "id": "b6936741-8ec9-42f1-a6ec-d76061141f7d",
-    "name": "Standardized Care",
-    "startingTier": "Bronze",
-    "tiers": {
-      "Bronze": {
-        "tooltips": [
-          "Your Medium Heal items have +6 Heal."
-        ]
-      },
-      "Silver": {
-        "tooltips": [
-          "Your Medium Heal items have +18 Heal."
-        ]
-      },
-      "Gold": {
-        "tooltips": [
-          "Your Medium Heal items have +36 Heal."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "Your Medium Heal items have +60 Heal."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [],
-    "hiddenTags": [
-      "HealReference"
-    ],
-    "customTags": [],
-    "size": "Medium",
-    "heroes": [
-      "Pygmalien",
-      "Mak"
-    ],
-    "artKey": "Icon_Skill_StandardizedCare.png",
-    "unifiedTooltips": [
-      "Your Medium Heal items have (+6/+18/+36/+60) Heal."
-    ],
-    "remarks": [],
-    "packId": "Pygmalien_Core"
   },
   {
     "id": "1798b189-818a-456d-b7c5-efddf8da15c2",
@@ -10797,52 +10283,6 @@ const data: ParsedSkillCard[] = [
     ],
     "remarks": [],
     "packId": "Core"
-  },
-  {
-    "id": "65a77e2d-6c13-46c2-ae28-c521502a8be3",
-    "name": "Medical Ward",
-    "startingTier": "Bronze",
-    "tiers": {
-      "Bronze": {
-        "tooltips": [
-          "Your Large Heal items have +12 Heal."
-        ]
-      },
-      "Silver": {
-        "tooltips": [
-          "Your Large Heal items have +36 Heal."
-        ]
-      },
-      "Gold": {
-        "tooltips": [
-          "Your Large Heal items have +72 Heal."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "Your Large Heal items have +120 Heal."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [],
-    "hiddenTags": [
-      "HealReference"
-    ],
-    "customTags": [],
-    "size": "Medium",
-    "heroes": [
-      "Pygmalien",
-      "Mak"
-    ],
-    "artKey": "Icon_Skill_MedicalWard.png",
-    "unifiedTooltips": [
-      "Your Large Heal items have (+12/+36/+72/+120) Heal."
-    ],
-    "remarks": [],
-    "packId": "Pygmalien_Core"
   },
   {
     "id": "f422485c-b23a-4c3f-9ad4-9d22718dc204",
@@ -12559,53 +11999,6 @@ const data: ParsedSkillCard[] = [
     ],
     "remarks": [],
     "packId": "Pygmalien_Core"
-  },
-  {
-    "id": "07fbd5ab-c52a-42d8-801d-8992c44714de",
-    "name": "Standardized Toxins",
-    "startingTier": "Bronze",
-    "tiers": {
-      "Bronze": {
-        "tooltips": [
-          "Your Medium Poison items have +2 Poison."
-        ]
-      },
-      "Silver": {
-        "tooltips": [
-          "Your Medium Poison items have +4 Poison."
-        ]
-      },
-      "Gold": {
-        "tooltips": [
-          "Your Medium Poison items have +6 Poison."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "Your Medium Poison items have +8 Poison."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [],
-    "hiddenTags": [
-      "PoisonReference"
-    ],
-    "customTags": [],
-    "size": "Medium",
-    "heroes": [
-      "Vanessa",
-      "Dooley",
-      "Mak"
-    ],
-    "artKey": "Icon_Skill_StandadizedPoison.png",
-    "unifiedTooltips": [
-      "Your Medium Poison items have (+2/+4/+6/+8) Poison."
-    ],
-    "remarks": [],
-    "packId": "Vanessa_Core"
   },
   {
     "id": "a2200487-1d56-4383-8671-781049f8f7de",

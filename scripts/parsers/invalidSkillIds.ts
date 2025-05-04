@@ -84,7 +84,20 @@ const invalidSkillIds: Record<string, string> = {
   "7ce449d2-0843-4fee-9bdf-dacf380afb8f": "Regular Maintenance",
   "530f34ea-250a-476c-ac4e-417b37841c8a": "Concentrated Defense",
   "dab89eb6-be1a-4651-a4d8-44c2d2716569": "Vengeful Strike",
-  "7f803167-d540-4ea9-bd46-9b6bdad687d3": "Growth Spurt"
+  "7f803167-d540-4ea9-bd46-9b6bdad687d3": "Growth Spurt",
+  "11a262fe-e1e7-4656-a07c-f6a3a1249352": "Second Degree Burns",
+  "b6936741-8ec9-42f1-a6ec-d76061141f7d": "Standardized Care",
+  "254017cc-e3b9-486e-9276-850867ceba6b": "Standardized Defenses",
+  "07fbd5ab-c52a-42d8-801d-8992c44714de": "Standardized Toxins",
+  "f2782115-1920-4bf2-9306-32697bcfee15": "Critical Captain",
+  "35cd34d4-80f5-48bd-95ed-5bb7fde3d21c": "Flanking Aid",
+  "7518cb66-252b-4b9c-9d4d-269aaad8daf3": "Flanking Fire",
+  "5e193004-5e5f-4166-96a0-9a51a3ef8443": "Flanking Shield",
+  "94b80fbf-4d21-4439-beb2-e1bdf56cea03": "Flanking Shots",
+  "b7c2ce67-0da5-4360-9eda-b328817affe6": "Heavy Shielding",
+  "aa59ff52-e4de-4728-bf9c-3ac8411ecbd8": "Large Poisons",
+  "65a77e2d-6c13-46c2-ae28-c521502a8be3": "Medical Ward",
+  "b1b9ff21-32ac-436a-bd3c-120563b26bea": "Third Degree Burns",
 };
 
 export default invalidSkillIds;
