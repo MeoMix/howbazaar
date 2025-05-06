@@ -206,8 +206,8 @@ export default {
           orange: '#ff9c1c',
           tan200: '#453e3d',
           tan300: '#7c6d5f',
-          tan700: '#f0cead',
           tan500: '#e4b181',
+          tan700: '#f0cead',
           tan900: '#fbddb3',
           brown: '#443027',
           brown600: '#5a4024'

@@ -34,7 +34,7 @@
             You want to pay me some <span
                 class="font-bold text-game-freeze">cold.</span
             > <span class="font-bold text-game-damage">hard.</span>
-            <span class="font-bold text-game-poison">cash.</span>
+            <span class="font-bold text-game-value">cash.</span>
             to say, <span class="font-semibold italic">"Thank you!"</span> for the
             service, do you?
         </p>

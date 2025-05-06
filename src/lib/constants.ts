@@ -4,66 +4,79 @@ export const AVAILABLE_VERSIONS: PatchVersion[] = [
     {
         version: '1.0.0-Apr302025',
         label: 'v1.0.0 - Apr 30',
+        date: 'Apr 30',
         path: '1.0.0-Apr302025/patchNotes.ts'
     },
     {
         version: '1.0.0-Apr232025',
         label: 'v1.0.0 - Apr 23',
+        date: 'Apr 23',
         path: '1.0.0-Apr232025/patchNotes.ts'
     },
     {
         version: '1.0.0-Apr182025',
         label: 'v1.0.0 - Apr 18',
+        date: 'Apr 18',
         path: '1.0.0-Apr182025/patchNotes.ts'
     },
     {
         version: '1.0.0-Apr162025',
         label: 'v1.0.0 - Apr 16',
+        date: 'Apr 16',
         path: '1.0.0-Apr162025/patchNotes.ts'
     },
     {
         version: '1.0.0-hotfix4',
         label: 'v1.0.0 Hotfix 4 - Apr 9',
+        date: 'Apr 9',
         path: '1.0.0-hotfix4/patchNotes.ts'
     },
     {
         version: '1.0.0-hotfix3',
         label: 'v1.0.0 Hotfix 3 - Apr 7',
+        date: 'Apr 7',
         path: '1.0.0-hotfix3/patchNotes.ts'
     },
     {
         version: '1.0.0-hotfix2',
         label: 'v1.0.0 Hotfix 2 - Apr 4',
+        date: 'Apr 4',
         path: '1.0.0-hotfix2/patchNotes.ts'
     },
     {
         version: '1.0.0-hotfix1',
         label: 'v1.0.0 Hotfix 1 - Apr 3',
+        date: 'Apr 3',
         path: '1.0.0-hotfix1/patchNotes.ts'
     },
     {
         version: '1.0.0',
         label: 'v1.0.0 - Apr 2',
+        date: 'Apr 2',
         path: '1.0.0/patchNotes.ts'
     },
     {
         version: '0.1.9-hotfix1',
         label: 'v0.1.9 Hotfix 1 - Mar 20',
+        date: 'Mar 20',
         path: '0.1.9-hotfix1/patchNotes.ts'
     },
     {
         version: '0.1.9',
         label: 'v0.1.9 - Mar 19',
+        date: 'Mar 19',
         path: '0.1.9/patchNotes.ts'
     },
     {
         version: '0.1.8-hotfix1',
         label: 'v0.1.8 Hotfix 1 - Mar 7',
+        date: 'Mar 7',
         path: '0.1.8-hotfix1/patchNotes.ts'
     },
     {
         version: '0.1.8',
         label: 'v0.1.8 - Mar 5',
+        date: 'Mar 5',
         path: '0.1.8/patchNotes.ts'
     }
 ]; 

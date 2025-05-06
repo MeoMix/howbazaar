@@ -282,5 +282,6 @@ export type PatchNotes = {
 export interface PatchVersion {
     version: string;
     label: string;
+    date: string;
     path: string;
 }

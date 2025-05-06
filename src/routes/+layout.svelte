@@ -19,6 +19,7 @@
     import { adsStore } from "$lib/stores/adsStore";
     import type { Unsubscriber } from "svelte/store";
     import UpdatedBadge from "$lib/components/UpdatedBadge.svelte";
+    import { AVAILABLE_VERSIONS } from "$lib/constants";
 
     let isHamburgerMenuOpen = $state(false);
     const onNavLiClick = () => {
@@ -132,14 +133,14 @@
         <div class="flex md:order-2 items-center">
             <a
                 href="/patchnotes"
-                class="hover:text-gray-900 dark:text-bazaar-tan700 dark:hover:text-bazaar-orange dark:hover:bg-bazaar-brown p-2.5 rounded-lg relative group"
+                class="flex items-center gap-1 hover:text-gray-900 dark:text-bazaar-tan700 dark:hover:text-bazaar-orange dark:hover:bg-bazaar-brown p-2.5 rounded-lg"
             >
                 <ClipboardOutline />
-                {#if page.data.hasNewVersions}
-                    <span
-                        class="absolute top-2 right-2 w-2 h-2 bg-game-heal rounded-full ring-2 ring-white dark:ring-bazaar-background dark:group-hover:ring-bazaar-brown"
-                    ></span>
-                {/if}
+                <span
+                    class={`relative text-xs font-medium  ${page.data.hasNewVersions ? "animate-pulse text-green-500 dark:text-green-500" : "text-gray-500 dark:text-bazaar-tan500"} whitespace-nowrap`}
+                >
+                    {AVAILABLE_VERSIONS[0].date}
+                </span>
             </a>
 
             <a
