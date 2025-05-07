@@ -6,6 +6,8 @@ export const merchantFilterMapping: { [key: string]: { name: string, tagStates?:
     "dc12f4bd-6c33-41f0-b7ad-d62a0be09a47": { name: "Aila", tagStates: { Weapon: "on" } },
     "705c0d8e-8513-49ce-82e8-81782cdac316": { name: "Ande", sizeFilter: ["Small"] },
     "8f0aea10-9894-4ded-a726-72b23142589c": { name: "Barkun", sizeFilter: ["Medium", "Large"] },
+    // TODO: Bex?
+    "34dc624d-1046-4e2d-906d-1fd8d19647d8": { name: "Bex" },
     "b1288f12-2cf9-4473-a43e-4dd521703990": { name: "Chronos", tagStates: { Haste: "on", HasteReference: "on" } },
     "ef25f92c-484a-48de-b6de-8fc6429823ca": { name: "Cobweb", tagStates: { Slow: "on", SlowReference: "on" } },
     // TODO: It's weird that Colt doesn't sell AmmoReference.
@@ -18,6 +20,7 @@ export const merchantFilterMapping: { [key: string]: { name: string, tagStates?:
     "c246ee53-51ea-40c1-ac2f-71435e179531": { name: "Freiya", tagStates: { Freeze: "on", FreezeReference: "on" } },
     // TODO: Would be nice to only show Gold+ tier details.
     "1f72700a-fe11-4792-8a47-9e52b9387f29": { name: "Goldie" },
+    "9fc8b5a3-f522-4999-b310-26a0fadc7708": { name: "Gaseo", tagStates: { Apparel: "on" }, heroFilter: ["Vanessa", "Pygmalien", "Dooley", "Mak", "Common"] },
     "43dbd6ed-6989-4ae4-acdc-f8bfcb8a008f": { name: "Hef", tagStates: { Burn: "on", BurnReference: "on" } },
     // TODO: It's weird that Herma sells Health and HealthReference.
     "2708055d-a8be-4c2f-a8d6-574e884a254e": { name: "Herma", tagStates: { Regen: "on", RegenReference: "on", Heal: "on", HealReference: "on", Health: "on", HealthReference: "on" }, heroFilter: ["Pygmalien", "Mak"] },

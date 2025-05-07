@@ -1,6 +1,3 @@
-// Auto-generated file. Do not edit directly.
-// TypeScript representation of invalid skill IDs and their names.
-
 const invalidSkillIds: Record<string, string> = {
   "7e32e9be-23d1-4d3f-a103-0a0db10bc4f4": "Cauterize",
   "4589a64c-fdc8-4334-a2c7-05a3a8b2c5da": "Rapid Thaw",
@@ -10,7 +7,6 @@ const invalidSkillIds: Record<string, string> = {
   "8c36b532-0eb5-49f8-9128-a50b17ef3eed": "Flanking Toxins",
   "883043eb-5a5f-4fa2-9cae-185f51019b11": "Microfiber",
   "cac848c8-dc77-4277-ba9f-df282b9f36ef": "Nanite Healing",
-  "8509674b-3c4b-4250-9bb4-666ef7402654": "Alchemical Precision",
   "fcb51ffd-6d25-4e74-871a-7dc0de2bae91": "Sparring Partner",
   "dfeaa982-9ed6-4aee-840e-628fa8b508bd": "Toxic Exposure",
   "3c90df05-0cf7-4555-bebc-4eedd5d46356": "Thrill of the Flight",

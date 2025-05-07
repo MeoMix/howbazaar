@@ -4,7 +4,8 @@ export type TierType = "Silver" | "Diamond" | "Bronze" | "Gold" | "Legendary";
 export type Size = "Small" | "Medium" | "Large";
 export type Tag = "Weapon" | "Shield" | "Heal" | "Joy" | "Burn" | "Poison" | "Merchant" | "Core" | "Property" | "Friend" | "Apparel" | "Freeze" | "Aquatic" | "Toy" | "Dinosaur" | "Tool" | "Potion" | "Vehicle" | "Food" | "Dragon" | "Tech" | "Ray" | "Haste" | "Slow" | "Damage" | "Loot" | "Ingredient" | "Relic" | "Reagent" | "Regen";
 // TODO: Why is Regen both a Tag and a HiddenTag?
-export type HiddenTag = "Health" | "Poison" | "Income" | "Cooldown" | "Heal" | "Value" | "EconomyReference" | "Damage" | "BurnReference" | "Slow" | "Active" | "Shield" | "Burn" | "DamageReference" | "CritReference" | "Gold" | "Passive" | "NonWeapon" | "Multicast" | "Haste" | "HealReference" | "ShieldReference" | "HasteReference" | "Freeze" | "Crit" | "Ammo" | "Charge" | "JoyReference" | "Regen" | "PoisonReference" | "Joy" | "HealthReference" | "FreezeReference" | "SlowReference" | "AmmoReference" | "Toughness" | "Lifesteal" | "Experience" | "RegenReference" | "Unsellable";
+// TODO: Why is HealthMax both a Tag and a HiddenTag?
+export type HiddenTag = "HealthMax" | "Health" | "Poison" | "Income" | "Cooldown" | "Heal" | "Value" | "EconomyReference" | "Damage" | "BurnReference" | "Slow" | "Active" | "Shield" | "Burn" | "DamageReference" | "CritReference" | "Gold" | "Passive" | "NonWeapon" | "Multicast" | "Haste" | "HealReference" | "ShieldReference" | "HasteReference" | "Freeze" | "Crit" | "Ammo" | "Charge" | "JoyReference" | "Regen" | "PoisonReference" | "Joy" | "HealthReference" | "FreezeReference" | "SlowReference" | "AmmoReference" | "Toughness" | "Lifesteal" | "Experience" | "RegenReference" | "Unsellable";
 export type CustomTag = "Unpurchasable";
 
 type ClientSideTier = {
@@ -35,8 +36,9 @@ export type ParsedItemCard = {
     packId: CorePackId | ExpansionPackId;
 };
 
-export type CorePackId = "Core" | "Pygmalien_Core" | "Vanessa_Core" | "Dooley_Core" | "Mak_Core" | "Jules_Core" | "Stelle_Core";
-export type ExpansionPackId = "Pyg_Frozen_Assets" | "Vanessa_Mysteries_of_the_Deep" | "Dooley_Dooltron" | "Vanessa_The_Gang";
+// TODO: Why is Pygmalien in the Core pack?
+export type CorePackId = "Core" | "Pygmalien_Core" | "Vanessa_Core" | "Dooley_Core" | "Mak_Core" | "Jules_Core" | "Stelle_Core" | "Pygmalien";
+export type ExpansionPackId = "Pyg_Frozen_Assets" | "Vanessa_Mysteries_of_the_Deep" | "Dooley_Dooltron" | "Vanessa_The_Gang" | "Pyg_Investment_Opportunities" | "Mak_Dangerous_Experiments";
 
 export type ClientSideItemCard = {
     id: string;

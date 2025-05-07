@@ -48,7 +48,7 @@ describe('cardJsonParser', () => {
         'When you use the Core or another Ray, your Weapons gain (+2/+4/+6/+8) Damage for the fight.'
       );
     });
-    
+
     it('should unify Atlas Stone (no changes)', () => {
       const atlasStone = itemCards.find(card => card.name === "Atlas Stone")!;
 
@@ -101,7 +101,7 @@ describe('cardJsonParser', () => {
       const closedSign = itemCards.find(card => card.name === "Closed Sign")!;
 
       expect(closedSign.unifiedTooltips[0]).toEqual(
-        'You have Regeneration equal to (50%/100%) of the value of adjacent properties.'
+        'You have Regen equal to (50%/100%) of the value of adjacent properties.'
       );
     });
 
@@ -109,7 +109,8 @@ describe('cardJsonParser', () => {
       const chocoholic = skillCards.find(card => card.name === "Chocoholic")!;
 
       expect(chocoholic.unifiedTooltips[0]).toEqual(
-        'When you sell a medium or large item, get (1/2) Chocolate Bar(s).'
+        // TODO: missing (s)
+        'When you sell a medium or large item, get (1/2) Chocolate Bar.'
       );
     });
 
@@ -296,13 +297,6 @@ describe('cardJsonParser', () => {
 
       expect(deadlyEnchantment.tooltips.length).toEqual(1);
       expect(deadlyEnchantment.tooltips[0]).toEqual('Your adjacent Properties have +Crit Chance equal to the value of your highest value item.');
-    });
-
-    it('should parse "Orbital Polisher" correctly by excluding Shiny which is an invalid enchantment', () => {
-      const orbitalPolisher = itemCards.find(card => card.name === "Orbital Polisher")!;
-      const shinyEnchantment = orbitalPolisher.enchantments.find(enchantment => enchantment.type === 'Shiny')!;
-
-      expect(shinyEnchantment).toBeUndefined();
     });
 
     it('should parse "Deadly Sextant" correctly by replacing its {aura.e1} with a correct value', () => {

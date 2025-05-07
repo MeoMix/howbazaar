@@ -1,6 +1,3 @@
-// Auto-generated file. Do not edit directly.
-// TypeScript representation of invalid item IDs and their names.
-
 const invalidItemIds: Record<string, string> = {
   "bfa28eec-84de-41cb-bc5c-8de700a5d21f": "Focused Core",
   "35b7a978-275b-48f0-8e3d-9be2391c6a78": "Bulky Package",
@@ -68,7 +65,6 @@ const invalidItemIds: Record<string, string> = {
   "4fa001c3-dba5-40fa-9674-b61912fa8d2e": "Fruit Press",
   "62b6d48b-90e5-41a8-8fa1-aa6ba11a7303": "Freefall Simulator",
   "c8daaaa2-e652-465a-8d5b-718c33674f0c": "Angle Grinder Drone",
-  "1d354dcf-8736-4bab-9dc1-7d9054d6c4d4": "Hologram Projector",
   "a046d7a0-effe-41c0-850f-de1f4bfa08f2": "Serving Platter",
   "004cb876-1ed2-4a4b-88d4-475cea76a03d": "Airplane Glue",
   "b6176b94-5ad0-4664-8669-c2950a5d4278": "Pinwheel",

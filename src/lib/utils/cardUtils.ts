@@ -7,7 +7,8 @@ export const CORE_PACK_IDS: Set<CorePackId> = new Set([
     "Dooley_Core",
     "Mak_Core",
     "Jules_Core",
-    "Stelle_Core"
+    "Stelle_Core",
+    "Pygmalien"
 ]);
 
 export const HEROES = ["Vanessa", "Pygmalien", "Dooley", "Mak", "Jules", "Stelle"] as const;

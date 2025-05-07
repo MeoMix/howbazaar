@@ -3,11 +3,12 @@
 // https://github.com/glideapps/quicktype?tab=readme-ov-file#calling-quicktype-from-javascript
 import type { Entries } from "type-fest";
 import type { ParsedCombatEncounterCard, ParsedItemCard, ParsedMerchantCard, ParsedSkillCard } from "$lib/types";
-import type { The100 as Card, Bronze as Tier, Tiers, Tier as TierType, AbilityAction, AuraAction, Ability, Aura, Operation, Origin } from "./data/cards";
+import type { The200 as Card, Bronze as Tier, Tiers, Tier as TierType, AbilityAction, AuraAction, Ability, Aura, Operation, Origin } from "./data/cards";
 import { unifyTooltips } from "$lib/utils/tooltipUtils";
 import type { CardsJson } from "./types.parser";
 import invalidItemIds from "./invalidItemIds";
 import invalidSkillIds from "./invalidSkillIds";
+import invalidMerchantIds from "./invalidMerchantIds";
 import monsterTemplateIdMapping from "./monsterTemplateIdMapping";
 import customTagMap from "./customTagsMap";
 
@@ -106,6 +107,9 @@ function getAttributeInfo(
     } else if (actionType === "TActionGameSpawnCards") {
         if (action.SpawnContext?.Limit.$type === "TFixedValue") {
             attributeValue = action.SpawnContext.Limit.Value;
+        } else if (action.SpawnContext?.Limit?.$type === "TReferenceValueCardAttribute" && action.SpawnContext?.Limit?.Target?.$type !== "TTargetCardSelf") {
+        } else if (action.SpawnContext?.Limit?.AttributeType) {
+            attributeName = action.SpawnContext?.Limit?.AttributeType;
         }
     } else {
         attributeName = actionType.replace(/^TAction(Card|Player)/, "");
@@ -475,12 +479,6 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
         const tierMap = getTierMap(card);
         const remarks = [] as string[];
 
-        if (card.Localization.Title.Text === "Snowflake") {
-            console.log(card);
-            debugger;
-        }
-
-
         let tiers = Object.fromEntries((Object.entries(tierMap) as Entries<typeof tierMap>).map(
             ([tierName, tier]) => {
                 let rawTooltips = tier.TooltipIds
@@ -764,6 +762,12 @@ function parseSkillCards(cardsJson: CardsJson): ParsedSkillCard[] {
         const tierMap = getTierMap(card);
         const remarks = [] as string[];
 
+        if (card.Localization.Title.Text === "Chocoholic") {
+            console.log(card);
+            debugger;
+        }
+
+
         let tiers = Object.fromEntries((Object.entries(tierMap) as Entries<typeof tierMap>).map(
             ([tierName, tier]) => {
                 let rawTooltips = tier.TooltipIds
@@ -848,15 +852,16 @@ function parseMerchantCards(cardsJson: CardsJson) {
     // by the player.
     const allowedHeroes = ["Vanessa", "Pygmalien", "Dooley", "Mak", "Common"] as const;
     
-    const isMerchant = (entry: Card): entry is ValidMerchantCard =>
+    const isValidMerchant = (entry: Card): entry is ValidMerchantCard =>
         entry.Type === "EventEncounter" &&
         entry.Tags.includes("Merchant") &&
         entry.Localization.Title.Text !== null &&
+        !(entry.Id in invalidMerchantIds) &&
         !hasInvalidKeywords(entry.Localization.Title.Text) &&
         !hasInvalidKeywords(entry.InternalName) &&
         entry.Heroes.some(hero => allowedHeroes.includes(hero as any)); // Cast needed since Hero type includes Jules and Stelle
 
-    const validCards = Object.values(cardsJson).flat().filter(isMerchant);
+    const validCards = Object.values(cardsJson).flat().filter(isValidMerchant);
 
     const cards = validCards.map((card) => {
         return {

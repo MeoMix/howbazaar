@@ -157,7 +157,7 @@ export type SocketID = "Socket_2" | "Socket_3" | "Socket_4" | "Socket_5" | "Sock
 
 export type Version = "1.0.0";
 
-export type Tier = "Silver" | "Bronze" | "Gold" | "Diamond" | "Legendary";
+export type Tier = "Gold" | "Silver" | "Diamond" | "Bronze" | "Legendary";
 
 export interface The5_A882CdbC8Df497_B86_D5B27Ba95225Ed {
     Id:           string;
