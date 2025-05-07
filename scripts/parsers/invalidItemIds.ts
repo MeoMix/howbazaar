@@ -198,7 +198,9 @@ const invalidItemIds: Record<string, string> = {
   "334ee28f-cec4-431a-aaef-19bdcba5cbcc": "Steam Washer",
   "5e95fcfd-bacb-4bb6-bf65-fb16ba602b3d": "Jambalaya",
   "26a15140-798a-4ac5-9df9-711ccc3cf89d": "Pastry Cart",
-  "367c2ad9-94b3-4f01-a130-a673922244ef": "Cookies"
+  "367c2ad9-94b3-4f01-a130-a673922244ef": "Cookies",
+  "e5af5b7c-2e8f-4135-8e14-8d1ea71908de": "Sword of Morguloth",
+  "4b99310e-ea89-4324-89fe-d2649dfd8ff6": "Oblivion Core"
 };
 
 export default invalidItemIds;

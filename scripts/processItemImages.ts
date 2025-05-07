@@ -4,6 +4,8 @@ import { copyAndRenameFiles } from './utils/fileUtils';
 import parsedItemCards from "../src/lib/db/patches/latest/parsedItemCards";
 import { checkAndResizeImages, convertImagesToAvif } from './utils/imageUtils';
 
+// TODO: Tortuga maps to invalid item ID and wasn't caught/flagged.
+
 // .\AssetStudioModCLI "C:\Program Files\Tempo Launcher - Beta\The Bazaar game_64\bazaarwinprodlatest\TheBazaar_Data\StreamingAssets\aa\StandaloneWindows64" --filter-by-name CF_,PNG_,Ectoplasm,Seaweed,Octopus,Snowflake -g none --image-format jpg -t tex2d -o ./items
 // .\AssetStudioModCLI "C:\Program Files\Tempo Launcher - Beta\The Bazaar game_64\bazaarwinprodlatest\TheBazaar_Data\StreamingAssets\aa\StandaloneWindows64" --filter-by-name _CardData -g none -t monoBehaviour -o ./items_carddata
 
@@ -129,6 +131,7 @@ async function processCardDataFiles(): Promise<ExpectedImage[]> {
             const invalidGuidFixes: Record<string, string> = {
                 // For some reason ATM's cardGUID maps to a Dooley skill?
                 'ATM': 'c926fac8-f9ba-4430-a01a-a71a32c501c7',
+                'Tortuga': 'f8a38ad1-5e5a-4c95-9bd1-55c81c31b117',
                 // Balance doesn't exist as a card in-game, but it does have a CardData file, and its GUID points to "Scales"
                 'Balance': '',
                 'OblivionCore': '',
