@@ -253,104 +253,6 @@ const data: ParsedItemCard[] = [
     "packId": "Core"
   },
   {
-    "id": "e5af5b7c-2e8f-4135-8e14-8d1ea71908de",
-    "name": "Sword of Morguloth",
-    "startingTier": "Legendary",
-    "tiers": {
-      "Bronze": {
-        "tooltips": []
-      },
-      "Silver": {
-        "tooltips": []
-      },
-      "Gold": {
-        "tooltips": []
-      },
-      "Diamond": {
-        "tooltips": []
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [
-      "Weapon"
-    ],
-    "hiddenTags": [
-      "Damage"
-    ],
-    "customTags": [],
-    "size": "Medium",
-    "heroes": [
-      "Common"
-    ],
-    "enchantments": [
-      {
-        "type": "Heavy",
-        "tooltips": [
-          "Slow 1 item for 3 second(s)."
-        ]
-      },
-      {
-        "type": "Icy",
-        "tooltips": [
-          "Freeze 1 item for 2 second(s)."
-        ]
-      },
-      {
-        "type": "Turbo",
-        "tooltips": [
-          "Haste 1 item for 3 second(s)."
-        ]
-      },
-      {
-        "type": "Shielded",
-        "tooltips": [
-          "Shield 12."
-        ]
-      },
-      {
-        "type": "Restorative",
-        "tooltips": [
-          "Heal 16."
-        ]
-      },
-      {
-        "type": "Toxic",
-        "tooltips": [
-          "Poison 2."
-        ]
-      },
-      {
-        "type": "Fiery",
-        "tooltips": [
-          "Burn 4."
-        ]
-      },
-      {
-        "type": "Shiny",
-        "tooltips": [
-          "This has +1 Multicast."
-        ]
-      },
-      {
-        "type": "Deadly",
-        "tooltips": [
-          "+50% Crit Chance"
-        ]
-      },
-      {
-        "type": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      }
-    ],
-    "unifiedTooltips": [],
-    "remarks": [],
-    "packId": "Core"
-  },
-  {
     "id": "63e5a09e-ad7c-44ee-ba7d-d1b515ae8e9e",
     "name": "Fishing Net",
     "startingTier": "Bronze",
@@ -29446,223 +29348,6 @@ const data: ParsedItemCard[] = [
     ],
     "remarks": [],
     "packId": "Pygmalien_Core"
-  },
-  {
-    "id": "3174b74a-9e67-4db7-ba98-0d4935b2586d",
-    "name": "Coupon",
-    "startingTier": "Bronze",
-    "tiers": {
-      "Bronze": {
-        "tooltips": [
-          "When you sell this to a merchant, reduce a Merchant item's value by 25%."
-        ]
-      },
-      "Silver": {
-        "tooltips": [
-          "When you sell this to a merchant, reduce a Merchant item's value by 50%."
-        ]
-      },
-      "Gold": {
-        "tooltips": [
-          "When you sell this to a merchant, reduce a Merchant item's value by 75%."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "When you sell this to a merchant, reduce a Merchant item's value by 100%."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [],
-    "hiddenTags": [],
-    "customTags": [],
-    "size": "Small",
-    "heroes": [
-      "Common"
-    ],
-    "enchantments": [
-      {
-        "type": "Heavy",
-        "tooltips": [
-          "When you sell this, your leftmost Slow item gains +0.2 Slow duration."
-        ]
-      },
-      {
-        "type": "Icy",
-        "tooltips": [
-          "When you sell this, your leftmost Freeze item gains +0.1 Freeze duration."
-        ]
-      },
-      {
-        "type": "Turbo",
-        "tooltips": [
-          "When you sell this, your leftmost Haste item gains +0.2 Haste duration."
-        ]
-      },
-      {
-        "type": "Shielded",
-        "tooltips": [
-          "When you sell this, your leftmost Shield item gains +10 Shield."
-        ]
-      },
-      {
-        "type": "Restorative",
-        "tooltips": [
-          "When you sell this, your leftmost Heal item gains +15 Heal."
-        ]
-      },
-      {
-        "type": "Toxic",
-        "tooltips": [
-          "When you sell this, your leftmost Poison item gains +1 Poison."
-        ]
-      },
-      {
-        "type": "Fiery",
-        "tooltips": [
-          "When you sell this, your leftmost Burn item gains +1 Burn."
-        ]
-      },
-      {
-        "type": "Deadly",
-        "tooltips": [
-          "When you sell this, your leftmost item gains 2% Crit Chance."
-        ]
-      },
-      {
-        "type": "Obsidian",
-        "tooltips": [
-          "When you sell this, your leftmost Weapon item gains +10 damage."
-        ]
-      }
-    ],
-    "unifiedTooltips": [
-      "When you sell this to a merchant, reduce a Merchant item's value by (25%/50%/75%/100%)."
-    ],
-    "remarks": [],
-    "packId": "Core"
-  },
-  {
-    "id": "4b99310e-ea89-4324-89fe-d2649dfd8ff6",
-    "name": "Oblivion Core",
-    "startingTier": "Silver",
-    "tiers": {
-      "Bronze": {
-        "tooltips": []
-      },
-      "Silver": {
-        "tooltips": [
-          "Cooldown 20 seconds",
-          "Destroy the rightmost items on your board and your opponent's board for the fight.",
-          "When you use any item to the left of this, Charge this 1 second(s)."
-        ]
-      },
-      "Gold": {
-        "tooltips": [
-          "Cooldown 15 seconds",
-          "Destroy the rightmost items on your board and your opponent's board for the fight.",
-          "When you use any item to the left of this, Charge this 1 second(s)."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "Cooldown 10 seconds",
-          "Destroy the rightmost items on your board and your opponent's board for the fight.",
-          "When you use any item to the left of this, Charge this 1 second(s)."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [
-      "Core",
-      "Tech"
-    ],
-    "hiddenTags": [],
-    "customTags": [],
-    "size": "Medium",
-    "heroes": [
-      "Dooley"
-    ],
-    "enchantments": [
-      {
-        "type": "Heavy",
-        "tooltips": [
-          "Slow 1 item for 4 second(s)."
-        ]
-      },
-      {
-        "type": "Icy",
-        "tooltips": [
-          "Freeze 1 medium or small item for 2 second(s)."
-        ]
-      },
-      {
-        "type": "Turbo",
-        "tooltips": [
-          "Haste 1 item for 4 second(s)."
-        ]
-      },
-      {
-        "type": "Shielded",
-        "tooltips": [
-          "Shield 80."
-        ]
-      },
-      {
-        "type": "Restorative",
-        "tooltips": [
-          "Heal 120."
-        ]
-      },
-      {
-        "type": "Toxic",
-        "tooltips": [
-          "Poison 8."
-        ]
-      },
-      {
-        "type": "Fiery",
-        "tooltips": [
-          "Burn 12."
-        ]
-      },
-      {
-        "type": "Shiny",
-        "tooltips": [
-          "This has +1 Multicast."
-        ]
-      },
-      {
-        "type": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
-        "type": "Deadly",
-        "tooltips": [
-          "Your friends gain +10% Crit Chance for the fight."
-        ]
-      },
-      {
-        "type": "Obsidian",
-        "tooltips": [
-          "Your friends gain +20 damage for the fight."
-        ]
-      }
-    ],
-    "unifiedTooltips": [
-      "Cooldown (20/15/10) seconds",
-      "Destroy the rightmost items on your board and your opponent's board for the fight.",
-      "When you use any item to the left of this, Charge this 1 second(s)."
-    ],
-    "remarks": [],
-    "packId": "Dooley_Core"
   },
   {
     "id": "2215483f-1fc3-495a-b492-d917dd7d588c",
@@ -61578,6 +61263,132 @@ const data: ParsedItemCard[] = [
     ],
     "remarks": [],
     "packId": "Core"
+  },
+  {
+    "id": "071cf90c-57a4-40f2-8d79-4c87f0d100d4",
+    "name": "Test Subject Alpha",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 10 seconds",
+          "Deal 50 damage.",
+          "When you use an adjacent item, Poison both players 10.",
+          "When you Poison, this gains +Damage for the fight equal to the amount Poisoned."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 8 seconds",
+          "Deal 50 damage.",
+          "When you use an adjacent item, Poison both players 20.",
+          "When you Poison, this gains +Damage for the fight equal to the amount Poisoned."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Deal 50 damage.",
+          "When you use an adjacent item, Poison both players 30.",
+          "When you Poison, this gains +Damage for the fight equal to the amount Poisoned."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Weapon",
+      "Friend"
+    ],
+    "hiddenTags": [
+      "Damage",
+      "Poison"
+    ],
+    "customTags": [],
+    "size": "Large",
+    "heroes": [
+      "Mak"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 3 items for 3 second(s)."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze 1 item for 4 second(s)."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 3 items for 3 second(s)."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield equal to this item's Damage."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to this item's Damage."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "This has double Poison."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn equal to 10% of this item's damage."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "This has double Damage."
+        ]
+      }
+    ],
+    "unifiedTooltips": [
+      "Cooldown (10/8/6) seconds",
+      "Deal 50 damage.",
+      "When you use an adjacent item, Poison both players (10/20/30).",
+      "When you Poison, this gains +Damage for the fight equal to the amount Poisoned."
+    ],
+    "remarks": [],
+    "packId": "Mak_Dangerous_Experiments"
   },
   {
     "id": "b3c06ff9-f0e1-4527-81aa-2f71d7bf6503",

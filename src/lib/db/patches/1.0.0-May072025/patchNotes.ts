@@ -6654,154 +6654,6 @@ const data: PatchNotes = {
         "modified": []
       }
     },
-    "e5af5b7c-2e8f-4135-8e14-8d1ea71908de": {
-      "metadata": {
-        "id": "e5af5b7c-2e8f-4135-8e14-8d1ea71908de",
-        "name": "Sword of Morguloth",
-        "previousStartingTier": "Legendary",
-        "currentStartingTier": "Legendary",
-        "currentHero": "Common",
-        "currentSize": "Medium",
-        "type": "item"
-      },
-      "name": {
-        "oldValue": null,
-        "newValue": "Sword of Morguloth"
-      },
-      "startingTier": {
-        "oldValue": null,
-        "newValue": "Legendary"
-      },
-      "tags": {
-        "added": [
-          "Weapon"
-        ],
-        "removed": []
-      },
-      "hiddenTags": {
-        "added": [
-          "Damage"
-        ],
-        "removed": []
-      },
-      "size": {
-        "oldValue": null,
-        "newValue": "Medium"
-      },
-      "heroes": {
-        "added": [
-          "Common"
-        ],
-        "removed": []
-      },
-      "tooltips": [],
-      "enchantments": {
-        "added": [
-          {
-            "type": "Heavy",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": null,
-                "newValue": "Slow 1 item for 3 second(s)."
-              }
-            ]
-          },
-          {
-            "type": "Icy",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": null,
-                "newValue": "Freeze 1 item for 2 second(s)."
-              }
-            ]
-          },
-          {
-            "type": "Turbo",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": null,
-                "newValue": "Haste 1 item for 3 second(s)."
-              }
-            ]
-          },
-          {
-            "type": "Shielded",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": null,
-                "newValue": "Shield 12."
-              }
-            ]
-          },
-          {
-            "type": "Restorative",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": null,
-                "newValue": "Heal 16."
-              }
-            ]
-          },
-          {
-            "type": "Toxic",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": null,
-                "newValue": "Poison 2."
-              }
-            ]
-          },
-          {
-            "type": "Fiery",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": null,
-                "newValue": "Burn 4."
-              }
-            ]
-          },
-          {
-            "type": "Shiny",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": null,
-                "newValue": "This has +1 Multicast."
-              }
-            ]
-          },
-          {
-            "type": "Deadly",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": null,
-                "newValue": "+50% Crit Chance"
-              }
-            ]
-          },
-          {
-            "type": "Radiant",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": null,
-                "newValue": "This cannot be Frozen, Slowed or Destroyed."
-              }
-            ]
-          }
-        ],
-        "removed": [],
-        "modified": []
-      }
-    },
     "b84f4145-cb4b-4d08-a6f7-0f41b06a0e1f": {
       "metadata": {
         "id": "b84f4145-cb4b-4d08-a6f7-0f41b06a0e1f",
@@ -8560,319 +8412,6 @@ const data: PatchNotes = {
         "modified": []
       }
     },
-    "3174b74a-9e67-4db7-ba98-0d4935b2586d": {
-      "metadata": {
-        "id": "3174b74a-9e67-4db7-ba98-0d4935b2586d",
-        "name": "Coupon",
-        "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze",
-        "currentHero": "Common",
-        "currentSize": "Small",
-        "type": "item"
-      },
-      "name": {
-        "oldValue": null,
-        "newValue": "Coupon"
-      },
-      "startingTier": {
-        "oldValue": null,
-        "newValue": "Bronze"
-      },
-      "tags": {
-        "added": [],
-        "removed": []
-      },
-      "hiddenTags": {
-        "added": [],
-        "removed": []
-      },
-      "size": {
-        "oldValue": null,
-        "newValue": "Small"
-      },
-      "heroes": {
-        "added": [
-          "Common"
-        ],
-        "removed": []
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": null,
-          "newValue": "When you sell this to a merchant, reduce a Merchant item's value by (25%/50%/75%/100%)."
-        }
-      ],
-      "enchantments": {
-        "added": [
-          {
-            "type": "Heavy",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": null,
-                "newValue": "When you sell this, your leftmost Slow item gains +0.2 Slow duration."
-              }
-            ]
-          },
-          {
-            "type": "Icy",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": null,
-                "newValue": "When you sell this, your leftmost Freeze item gains +0.1 Freeze duration."
-              }
-            ]
-          },
-          {
-            "type": "Turbo",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": null,
-                "newValue": "When you sell this, your leftmost Haste item gains +0.2 Haste duration."
-              }
-            ]
-          },
-          {
-            "type": "Shielded",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": null,
-                "newValue": "When you sell this, your leftmost Shield item gains +10 Shield."
-              }
-            ]
-          },
-          {
-            "type": "Restorative",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": null,
-                "newValue": "When you sell this, your leftmost Heal item gains +15 Heal."
-              }
-            ]
-          },
-          {
-            "type": "Toxic",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": null,
-                "newValue": "When you sell this, your leftmost Poison item gains +1 Poison."
-              }
-            ]
-          },
-          {
-            "type": "Fiery",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": null,
-                "newValue": "When you sell this, your leftmost Burn item gains +1 Burn."
-              }
-            ]
-          },
-          {
-            "type": "Deadly",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": null,
-                "newValue": "When you sell this, your leftmost item gains 2% Crit Chance."
-              }
-            ]
-          },
-          {
-            "type": "Obsidian",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": null,
-                "newValue": "When you sell this, your leftmost Weapon item gains +10 damage."
-              }
-            ]
-          }
-        ],
-        "removed": [],
-        "modified": []
-      }
-    },
-    "4b99310e-ea89-4324-89fe-d2649dfd8ff6": {
-      "metadata": {
-        "id": "4b99310e-ea89-4324-89fe-d2649dfd8ff6",
-        "name": "Oblivion Core",
-        "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver",
-        "currentHero": "Dooley",
-        "currentSize": "Medium",
-        "type": "item"
-      },
-      "name": {
-        "oldValue": null,
-        "newValue": "Oblivion Core"
-      },
-      "startingTier": {
-        "oldValue": null,
-        "newValue": "Silver"
-      },
-      "tags": {
-        "added": [
-          "Core",
-          "Tech"
-        ],
-        "removed": []
-      },
-      "hiddenTags": {
-        "added": [],
-        "removed": []
-      },
-      "size": {
-        "oldValue": null,
-        "newValue": "Medium"
-      },
-      "heroes": {
-        "added": [
-          "Dooley"
-        ],
-        "removed": []
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": null,
-          "newValue": "Cooldown (20/15/10) seconds"
-        },
-        {
-          "index": 1,
-          "oldValue": null,
-          "newValue": "Destroy the rightmost items on your board and your opponent's board for the fight."
-        },
-        {
-          "index": 2,
-          "oldValue": null,
-          "newValue": "When you use any item to the left of this, Charge this 1 second(s)."
-        }
-      ],
-      "enchantments": {
-        "added": [
-          {
-            "type": "Heavy",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": null,
-                "newValue": "Slow 1 item for 4 second(s)."
-              }
-            ]
-          },
-          {
-            "type": "Icy",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": null,
-                "newValue": "Freeze 1 medium or small item for 2 second(s)."
-              }
-            ]
-          },
-          {
-            "type": "Turbo",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": null,
-                "newValue": "Haste 1 item for 4 second(s)."
-              }
-            ]
-          },
-          {
-            "type": "Shielded",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": null,
-                "newValue": "Shield 80."
-              }
-            ]
-          },
-          {
-            "type": "Restorative",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": null,
-                "newValue": "Heal 120."
-              }
-            ]
-          },
-          {
-            "type": "Toxic",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": null,
-                "newValue": "Poison 8."
-              }
-            ]
-          },
-          {
-            "type": "Fiery",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": null,
-                "newValue": "Burn 12."
-              }
-            ]
-          },
-          {
-            "type": "Shiny",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": null,
-                "newValue": "This has +1 Multicast."
-              }
-            ]
-          },
-          {
-            "type": "Radiant",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": null,
-                "newValue": "This cannot be Frozen, Slowed or Destroyed."
-              }
-            ]
-          },
-          {
-            "type": "Deadly",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": null,
-                "newValue": "Your friends gain +10% Crit Chance for the fight."
-              }
-            ]
-          },
-          {
-            "type": "Obsidian",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": null,
-                "newValue": "Your friends gain +20 damage for the fight."
-              }
-            ]
-          }
-        ],
-        "removed": [],
-        "modified": []
-      }
-    },
     "2215483f-1fc3-495a-b492-d917dd7d588c": {
       "metadata": {
         "id": "2215483f-1fc3-495a-b492-d917dd7d588c",
@@ -10568,6 +10107,187 @@ const data: PatchNotes = {
         "modified": []
       }
     },
+    "071cf90c-57a4-40f2-8d79-4c87f0d100d4": {
+      "metadata": {
+        "id": "071cf90c-57a4-40f2-8d79-4c87f0d100d4",
+        "name": "Test Subject Alpha",
+        "previousStartingTier": "Silver",
+        "currentStartingTier": "Silver",
+        "currentHero": "Mak",
+        "currentSize": "Large",
+        "type": "item"
+      },
+      "name": {
+        "oldValue": null,
+        "newValue": "Test Subject Alpha"
+      },
+      "startingTier": {
+        "oldValue": null,
+        "newValue": "Silver"
+      },
+      "tags": {
+        "added": [
+          "Weapon",
+          "Friend"
+        ],
+        "removed": []
+      },
+      "hiddenTags": {
+        "added": [
+          "Damage",
+          "Poison"
+        ],
+        "removed": []
+      },
+      "size": {
+        "oldValue": null,
+        "newValue": "Large"
+      },
+      "heroes": {
+        "added": [
+          "Mak"
+        ],
+        "removed": []
+      },
+      "tooltips": [
+        {
+          "index": 0,
+          "oldValue": null,
+          "newValue": "Cooldown (10/8/6) seconds"
+        },
+        {
+          "index": 1,
+          "oldValue": null,
+          "newValue": "Deal 50 damage."
+        },
+        {
+          "index": 2,
+          "oldValue": null,
+          "newValue": "When you use an adjacent item, Poison both players (10/20/30)."
+        },
+        {
+          "index": 3,
+          "oldValue": null,
+          "newValue": "When you Poison, this gains +Damage for the fight equal to the amount Poisoned."
+        }
+      ],
+      "enchantments": {
+        "added": [
+          {
+            "type": "Heavy",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Slow 3 items for 3 second(s)."
+              }
+            ]
+          },
+          {
+            "type": "Icy",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Freeze 1 item for 4 second(s)."
+              }
+            ]
+          },
+          {
+            "type": "Turbo",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Haste 3 items for 3 second(s)."
+              }
+            ]
+          },
+          {
+            "type": "Shielded",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Shield equal to this item's Damage."
+              }
+            ]
+          },
+          {
+            "type": "Restorative",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Heal equal to this item's Damage."
+              }
+            ]
+          },
+          {
+            "type": "Toxic",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "This has double Poison."
+              }
+            ]
+          },
+          {
+            "type": "Fiery",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Burn equal to 10% of this item's damage."
+              }
+            ]
+          },
+          {
+            "type": "Shiny",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "This has +1 Multicast."
+              }
+            ]
+          },
+          {
+            "type": "Deadly",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "+50% Crit Chance"
+              }
+            ]
+          },
+          {
+            "type": "Radiant",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "This cannot be Frozen, Slowed or Destroyed."
+              }
+            ]
+          },
+          {
+            "type": "Obsidian",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "This has double Damage."
+              }
+            ]
+          }
+        ],
+        "removed": [],
+        "modified": []
+      }
+    },
     "2230803d-e409-42a6-8f0c-8fc83f343699": {
       "metadata": {
         "id": "2230803d-e409-42a6-8f0c-8fc83f343699",
@@ -11024,12 +10744,7 @@ const data: PatchNotes = {
         {
           "index": 0,
           "oldValue": "When you sell a medium or large item, get (1/2) Chocolate Bar(s).",
-          "newValue": null
-        },
-        {
-          "index": 0,
-          "oldValue": null,
-          "newValue": "When you sell a medium or large item, get {ability.0} Chocolate Bar."
+          "newValue": "When you sell a medium or large item, get (1/2) Chocolate Bar."
         }
       ]
     },
@@ -11408,7 +11123,7 @@ const data: PatchNotes = {
         {
           "index": 0,
           "oldValue": null,
-          "newValue": "When you buy a property, get {ability.0} Chocolate Bar and {ability.0} Spare Change."
+          "newValue": "When you buy a property, get (1/2) Chocolate Bar and (1/2) Spare Change."
         }
       ]
     },

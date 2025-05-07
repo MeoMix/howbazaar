@@ -200,7 +200,8 @@ const invalidItemIds: Record<string, string> = {
   "26a15140-798a-4ac5-9df9-711ccc3cf89d": "Pastry Cart",
   "367c2ad9-94b3-4f01-a130-a673922244ef": "Cookies",
   "e5af5b7c-2e8f-4135-8e14-8d1ea71908de": "Sword of Morguloth",
-  "4b99310e-ea89-4324-89fe-d2649dfd8ff6": "Oblivion Core"
+  "4b99310e-ea89-4324-89fe-d2649dfd8ff6": "Oblivion Core",
+  "3174b74a-9e67-4db7-ba98-0d4935b2586d": "Custom Scope"
 };
 
 export default invalidItemIds;

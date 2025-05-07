@@ -434,14 +434,6 @@ const data: ParsedMerchantCard[] = [
     "description": "Sells Enchanted Items"
   },
   {
-    "id": "34dc624d-1046-4e2d-906d-1fd8d19647d8",
-    "name": "Bex",
-    "heroes": [
-      "Common"
-    ],
-    "description": "Sells sports equipment."
-  },
-  {
     "id": "7bd967dd-4631-4252-bdff-ee0bd5e3ddb7",
     "name": "Flex",
     "heroes": [

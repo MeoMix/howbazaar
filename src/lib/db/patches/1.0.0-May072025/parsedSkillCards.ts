@@ -4643,12 +4643,12 @@ const data: ParsedSkillCard[] = [
       },
       "Gold": {
         "tooltips": [
-          "When you sell a medium or large item, get {ability.0} Chocolate Bar."
+          "When you sell a medium or large item, get 1 Chocolate Bar."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "When you sell a medium or large item, get {ability.0} Chocolate Bar."
+          "When you sell a medium or large item, get 2 Chocolate Bar."
         ]
       },
       "Legendary": {
@@ -4666,7 +4666,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_PYG_Chocoholic.png",
     "unifiedTooltips": [
-      "When you sell a medium or large item, get {ability.0} Chocolate Bar."
+      "When you sell a medium or large item, get (1/2) Chocolate Bar."
     ],
     "remarks": [],
     "packId": "Pygmalien_Core"
@@ -4814,12 +4814,12 @@ const data: ParsedSkillCard[] = [
       },
       "Gold": {
         "tooltips": [
-          "When you buy a property, get {ability.0} Chocolate Bar and {ability.0} Spare Change."
+          "When you buy a property, get 1 Chocolate Bar and 1 Spare Change."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "When you buy a property, get {ability.0} Chocolate Bar and {ability.0} Spare Change."
+          "When you buy a property, get 2 Chocolate Bar and 2 Spare Change."
         ]
       },
       "Legendary": {
@@ -4837,7 +4837,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_Reclaimer.png",
     "unifiedTooltips": [
-      "When you buy a property, get {ability.0} Chocolate Bar and {ability.0} Spare Change."
+      "When you buy a property, get (1/2) Chocolate Bar and (1/2) Spare Change."
     ],
     "remarks": [],
     "packId": "Pygmalien_Core"
