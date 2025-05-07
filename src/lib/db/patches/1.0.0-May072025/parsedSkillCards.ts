@@ -1436,6 +1436,45 @@ const data: ParsedSkillCard[] = [
     "packId": "Pygmalien_Core"
   },
   {
+    "id": "83cf85fa-f486-4486-ba76-c28f4db60677",
+    "name": "Valley Fever",
+    "startingTier": "Diamond",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": []
+      },
+      "Diamond": {
+        "tooltips": [
+          "At the start of each fight, Burn yourself 2."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "Burn"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Common"
+    ],
+    "artKey": "Icon_Skill_ConcentratedFlame.png",
+    "unifiedTooltips": [
+      "At the start of each fight, Burn yourself 2."
+    ],
+    "remarks": [],
+    "packId": "Core"
+  },
+  {
     "id": "f6a49c4a-7ee7-4aa7-8162-392eee2d3835",
     "name": "First Flames",
     "startingTier": "Silver",
@@ -5100,39 +5139,6 @@ const data: ParsedSkillCard[] = [
     "packId": "Vanessa_Core"
   },
   {
-    "id": "1034cd09-ce16-44ad-9a73-ba86a592c9d2",
-    "name": "Keen Edge",
-    "startingTier": "Diamond",
-    "tiers": {
-      "Bronze": {
-        "tooltips": []
-      },
-      "Silver": {
-        "tooltips": []
-      },
-      "Gold": {
-        "tooltips": []
-      },
-      "Diamond": {
-        "tooltips": []
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [],
-    "hiddenTags": [],
-    "customTags": [],
-    "size": "Medium",
-    "heroes": [
-      "Vanessa"
-    ],
-    "artKey": "Icon_Skill_VAN_KeenEdge",
-    "unifiedTooltips": [],
-    "remarks": [],
-    "packId": "Vanessa_Core"
-  },
-  {
     "id": "6216741f-f7fe-4de0-82c0-3733263378f1",
     "name": "Critical Protector",
     "startingTier": "Bronze",
@@ -5266,39 +5272,6 @@ const data: ParsedSkillCard[] = [
     ],
     "remarks": [],
     "packId": "Core"
-  },
-  {
-    "id": "7f097b31-c29e-4082-a835-6d6457c2d536",
-    "name": "Ignition",
-    "startingTier": "Diamond",
-    "tiers": {
-      "Bronze": {
-        "tooltips": []
-      },
-      "Silver": {
-        "tooltips": []
-      },
-      "Gold": {
-        "tooltips": []
-      },
-      "Diamond": {
-        "tooltips": []
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [],
-    "hiddenTags": [],
-    "customTags": [],
-    "size": "Medium",
-    "heroes": [
-      "Stelle"
-    ],
-    "artKey": "Icon_Skill_Ignition.png",
-    "unifiedTooltips": [],
-    "remarks": [],
-    "packId": "Stelle_Core"
   },
   {
     "id": "3728b5fe-43aa-4f77-b7a8-b20c3b359295",
@@ -10794,6 +10767,45 @@ const data: ParsedSkillCard[] = [
     ],
     "remarks": [],
     "packId": "Pygmalien_Core"
+  },
+  {
+    "id": "dfeaa982-9ed6-4aee-840e-628fa8b508bd",
+    "name": "Insect Bite",
+    "startingTier": "Diamond",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": []
+      },
+      "Diamond": {
+        "tooltips": [
+          "At the start of each fight, Poison yourself 2."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "Poison"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Common"
+    ],
+    "artKey": "Icon_Skill_QuickExposure.png",
+    "unifiedTooltips": [
+      "At the start of each fight, Poison yourself 2."
+    ],
+    "remarks": [],
+    "packId": "Core"
   },
   {
     "id": "549263e2-4ab4-4fe8-a552-e94486b3e91b",

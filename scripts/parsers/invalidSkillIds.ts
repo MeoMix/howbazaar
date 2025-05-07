@@ -8,7 +8,6 @@ const invalidSkillIds: Record<string, string> = {
   "883043eb-5a5f-4fa2-9cae-185f51019b11": "Microfiber",
   "cac848c8-dc77-4277-ba9f-df282b9f36ef": "Nanite Healing",
   "fcb51ffd-6d25-4e74-871a-7dc0de2bae91": "Sparring Partner",
-  "dfeaa982-9ed6-4aee-840e-628fa8b508bd": "Toxic Exposure",
   "3c90df05-0cf7-4555-bebc-4eedd5d46356": "Thrill of the Flight",
   "6ef03e95-f3af-47d8-871f-e8c1e043a195": "Medic's Shield",
   "e10188fc-6b44-49b8-afbb-6c9d41b9b85f": "Surrounded by Joy",
@@ -18,7 +17,6 @@ const invalidSkillIds: Record<string, string> = {
   "cf56751a-0973-486f-aec4-c8b21227b648": "Middle of the Pack",
   "5f63004e-26dd-460d-b359-38a84ffa66c1": "protein powder",
   "c08396cd-ffc6-4b3f-86f8-18c053bee76f": "Swole",
-  "83cf85fa-f486-4486-ba76-c28f4db60677": "Concentrated Flame",
   "f9b262a7-73fc-43b0-ad69-da351e927829": "First Degree Burns",
   "cf20ff77-7f51-42ca-8451-a3a1befe3d66": "Above the Clouds",
   "0283b102-e0ef-4df4-b447-c5208049bf02": "Buffed and Polished",
@@ -94,6 +92,8 @@ const invalidSkillIds: Record<string, string> = {
   "aa59ff52-e4de-4728-bf9c-3ac8411ecbd8": "Large Poisons",
   "65a77e2d-6c13-46c2-ae28-c521502a8be3": "Medical Ward",
   "b1b9ff21-32ac-436a-bd3c-120563b26bea": "Third Degree Burns",
+  "1034cd09-ce16-44ad-9a73-ba86a592c9d2": "Keen Edge",
+  "7f097b31-c29e-4082-a835-6d6457c2d536": "Ignition"
 };
 
 export default invalidSkillIds;

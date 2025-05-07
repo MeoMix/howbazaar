@@ -11178,6 +11178,46 @@ const data: PatchNotes = {
         }
       ]
     },
+    "7f097b31-c29e-4082-a835-6d6457c2d536": {
+      "metadata": {
+        "id": "7f097b31-c29e-4082-a835-6d6457c2d536",
+        "name": "Ignition",
+        "previousStartingTier": "Diamond",
+        "currentStartingTier": "Diamond",
+        "heroes": [
+          "Stelle"
+        ],
+        "currentSize": "Medium",
+        "type": "skill"
+      },
+      "name": {
+        "oldValue": "Ignition",
+        "newValue": null
+      },
+      "startingTier": {
+        "oldValue": "Diamond",
+        "newValue": null
+      },
+      "tags": {
+        "added": [],
+        "removed": []
+      },
+      "hiddenTags": {
+        "added": [],
+        "removed": []
+      },
+      "size": {
+        "oldValue": "Medium",
+        "newValue": null
+      },
+      "heroes": {
+        "added": [],
+        "removed": [
+          "Stelle"
+        ]
+      },
+      "tooltips": []
+    },
     "113091ab-c543-4745-9dc4-18ab1cdfb3b8": {
       "metadata": {
         "id": "113091ab-c543-4745-9dc4-18ab1cdfb3b8",
@@ -11202,6 +11242,54 @@ const data: PatchNotes = {
           "index": 0,
           "oldValue": null,
           "newValue": "When you win a fight against a Hero, gain (2/3/4/5) gold."
+        }
+      ]
+    },
+    "83cf85fa-f486-4486-ba76-c28f4db60677": {
+      "metadata": {
+        "id": "83cf85fa-f486-4486-ba76-c28f4db60677",
+        "name": "Valley Fever",
+        "previousStartingTier": "Diamond",
+        "currentStartingTier": "Diamond",
+        "heroes": [
+          "Common"
+        ],
+        "currentSize": "Medium",
+        "type": "skill"
+      },
+      "name": {
+        "oldValue": null,
+        "newValue": "Valley Fever"
+      },
+      "startingTier": {
+        "oldValue": null,
+        "newValue": "Diamond"
+      },
+      "tags": {
+        "added": [],
+        "removed": []
+      },
+      "hiddenTags": {
+        "added": [
+          "Burn"
+        ],
+        "removed": []
+      },
+      "size": {
+        "oldValue": null,
+        "newValue": "Medium"
+      },
+      "heroes": {
+        "added": [
+          "Common"
+        ],
+        "removed": []
+      },
+      "tooltips": [
+        {
+          "index": 0,
+          "oldValue": null,
+          "newValue": "At the start of each fight, Burn yourself 2."
         }
       ]
     },
@@ -11255,46 +11343,6 @@ const data: PatchNotes = {
         }
       ]
     },
-    "1034cd09-ce16-44ad-9a73-ba86a592c9d2": {
-      "metadata": {
-        "id": "1034cd09-ce16-44ad-9a73-ba86a592c9d2",
-        "name": "Keen Edge",
-        "previousStartingTier": "Diamond",
-        "currentStartingTier": "Diamond",
-        "heroes": [
-          "Vanessa"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "name": {
-        "oldValue": null,
-        "newValue": "Keen Edge"
-      },
-      "startingTier": {
-        "oldValue": null,
-        "newValue": "Diamond"
-      },
-      "tags": {
-        "added": [],
-        "removed": []
-      },
-      "hiddenTags": {
-        "added": [],
-        "removed": []
-      },
-      "size": {
-        "oldValue": null,
-        "newValue": "Medium"
-      },
-      "heroes": {
-        "added": [
-          "Vanessa"
-        ],
-        "removed": []
-      },
-      "tooltips": []
-    },
     "4d8b7111-c324-4558-af3c-d7c8df61618d": {
       "metadata": {
         "id": "4d8b7111-c324-4558-af3c-d7c8df61618d",
@@ -11343,6 +11391,54 @@ const data: PatchNotes = {
           "index": 0,
           "oldValue": null,
           "newValue": "Your Toys and Apparel have their cooldowns reduced by (5%/10%)."
+        }
+      ]
+    },
+    "dfeaa982-9ed6-4aee-840e-628fa8b508bd": {
+      "metadata": {
+        "id": "dfeaa982-9ed6-4aee-840e-628fa8b508bd",
+        "name": "Insect Bite",
+        "previousStartingTier": "Diamond",
+        "currentStartingTier": "Diamond",
+        "heroes": [
+          "Common"
+        ],
+        "currentSize": "Medium",
+        "type": "skill"
+      },
+      "name": {
+        "oldValue": null,
+        "newValue": "Insect Bite"
+      },
+      "startingTier": {
+        "oldValue": null,
+        "newValue": "Diamond"
+      },
+      "tags": {
+        "added": [],
+        "removed": []
+      },
+      "hiddenTags": {
+        "added": [
+          "Poison"
+        ],
+        "removed": []
+      },
+      "size": {
+        "oldValue": null,
+        "newValue": "Medium"
+      },
+      "heroes": {
+        "added": [
+          "Common"
+        ],
+        "removed": []
+      },
+      "tooltips": [
+        {
+          "index": 0,
+          "oldValue": null,
+          "newValue": "At the start of each fight, Poison yourself 2."
         }
       ]
     }

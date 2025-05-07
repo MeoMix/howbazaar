@@ -258,6 +258,23 @@ describe('cardJsonParser', () => {
     expect(snowflake.tiers.Diamond.tooltips[0]).toContain(`+0.5 Freeze duration.`);
   });
 
+  it('every card should have a tooltip', () => {
+    const invalidCards = [];
+
+    for (const card of [...itemCards, ...skillCards]) {
+      const tooltips = Object.values(card.tiers).flatMap(tier => tier.tooltips);
+
+      if (tooltips.length === 0) {
+        invalidCards.push({
+          name: card.name,
+        });
+      }
+    }
+
+    // If no invalid tooltips are found, make the assertion to confirm
+    expect(invalidCards).toEqual([]);
+  });
+
   it('should contain no tooltips with {', () => {
     const disabledItemIds = [
       // Schematics is disabled due to bug so it's ~ok for Tooltip to be broken
