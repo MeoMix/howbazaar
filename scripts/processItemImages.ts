@@ -71,11 +71,12 @@ async function processItemImages() {
     console.log(`Found ${foundImages.length} matching images`);
     console.log(`Missing ${missingImages.length} images`);
 
-    // if (missingImages.length > 0) {
-    //     console.log('Missing images:');
-    //     console.table(missingImages);
-    //     throw new Error('Missing required images');
-    // }
+    // TODO: Why did these break on Piggles?
+    if (missingImages.length > 0) {
+        console.log('Missing images:');
+        console.table(missingImages);
+        throw new Error('Missing required images');
+    }
 
     const imageCopyDescriptors = foundImages.map(({ id, matchedFile }) => ({
         fileName: id,

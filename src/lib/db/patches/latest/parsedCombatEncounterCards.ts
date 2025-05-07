@@ -409,6 +409,11 @@ const data: ParsedCombatEncounterCard[] = [
     "monsterTemplateId": "6d939dd0-fd9b-46b8-8861-cccb818757da"
   },
   {
+    "id": "d0e031f9-16c8-4ebf-a9bf-986dc3f41a1f",
+    "name": "Skill Board Test Monster",
+    "monsterTemplateId": "a6d543e2-e4fc-4e7d-a2b3-998ee6ef1a50"
+  },
+  {
     "id": "7294ff99-ca2b-409e-838f-0efdb10dded0",
     "name": "Zookeeper",
     "monsterTemplateId": "2551f0d8-a57c-4670-993d-13b8b7ee2791"
@@ -492,6 +497,11 @@ const data: ParsedCombatEncounterCard[] = [
     "id": "b511bd4d-5ad6-4f54-bc74-89622da4d956",
     "name": "Ahexa",
     "monsterTemplateId": "ee26b888-c50f-43cf-848b-ca572b6e9583"
+  },
+  {
+    "id": "b98f8dc6-5173-4882-a227-a3019c486c37",
+    "name": "QA Test Monster",
+    "monsterTemplateId": "5b3da8f1-5834-4a8d-967f-f98e8989b26f"
   },
   {
     "id": "78139f32-94b1-4dc6-9ef0-374c3c8863a7",

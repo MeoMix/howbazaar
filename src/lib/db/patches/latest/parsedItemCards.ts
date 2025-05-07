@@ -61580,6 +61580,132 @@ const data: ParsedItemCard[] = [
     "packId": "Core"
   },
   {
+    "id": "071cf90c-57a4-40f2-8d79-4c87f0d100d4",
+    "name": "Test Subject Alpha",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 10 seconds",
+          "Deal 50 damage.",
+          "When you use an adjacent item, Poison both players 10.",
+          "When you Poison, this gains +Damage for the fight equal to the amount Poisoned."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 8 seconds",
+          "Deal 50 damage.",
+          "When you use an adjacent item, Poison both players 20.",
+          "When you Poison, this gains +Damage for the fight equal to the amount Poisoned."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Deal 50 damage.",
+          "When you use an adjacent item, Poison both players 30.",
+          "When you Poison, this gains +Damage for the fight equal to the amount Poisoned."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Weapon",
+      "Friend"
+    ],
+    "hiddenTags": [
+      "Damage",
+      "Poison"
+    ],
+    "customTags": [],
+    "size": "Large",
+    "heroes": [
+      "Mak"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 3 items for 3 second(s)."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze 1 item for 4 second(s)."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 3 items for 3 second(s)."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield equal to this item's Damage."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to this item's Damage."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "This has double Poison."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn equal to 10% of this item's damage."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "This has double Damage."
+        ]
+      }
+    ],
+    "unifiedTooltips": [
+      "Cooldown (10/8/6) seconds",
+      "Deal 50 damage.",
+      "When you use an adjacent item, Poison both players (10/20/30).",
+      "When you Poison, this gains +Damage for the fight equal to the amount Poisoned."
+    ],
+    "remarks": [],
+    "packId": "Mak_Dangerous_Experiments"
+  },
+  {
     "id": "b3c06ff9-f0e1-4527-81aa-2f71d7bf6503",
     "name": "Red Piggles L",
     "startingTier": "Bronze",

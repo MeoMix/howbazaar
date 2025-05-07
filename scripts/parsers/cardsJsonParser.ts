@@ -19,7 +19,7 @@ const disallowedCardPacks = [
 ] as string[];
 
 // Keywords that indicate a card should be filtered out
-const invalidKeywords = ["[", "]", "Debug", "Test", "Tutorial"] as const;
+const invalidKeywords = ["[", "]", "Debug", "Tutorial"] as const;
 
 const invalidTags = ["Lifesteal", "Loot", "NonWeapon", "Passive"];
 

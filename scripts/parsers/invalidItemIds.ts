@@ -1,4 +1,5 @@
 const invalidItemIds: Record<string, string> = {
+  "ed5688bd-99ff-4734-84f4-95fa1210c8bd": "Dam Test",
   "bfa28eec-84de-41cb-bc5c-8de700a5d21f": "Focused Core",
   "35b7a978-275b-48f0-8e3d-9be2391c6a78": "Bulky Package",
   "8b2ce029-7f69-401c-9811-3a6398237a90": "Gingerbread Man",
