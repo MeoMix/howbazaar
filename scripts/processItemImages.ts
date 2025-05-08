@@ -46,6 +46,20 @@ async function processItemImages() {
     const knownCardIds = new Set(parsedItemCards.map(card => card.id));
     const filteredImages = expectedImages.filter(image => knownCardIds.has(image.cardGUID));
 
+    // Early exit if lengths don't match
+    const expectedGUIDs = new Set(expectedImages.map(e => e.cardGUID));
+    const missingFromExpected = [...knownCardIds].filter(id => !expectedGUIDs.has(id));
+    
+    if (missingFromExpected.length > 0) {
+        console.log('Card GUIDs in parsedItemCards missing from expectedImages:');
+        console.table(missingFromExpected.map(id => {
+                const card = parsedItemCards.find(c => c.id === id);
+                return { id, name: card?.name ?? 'Unknown' };
+        }));
+
+        throw new Error(`Mismatch between parsedItemCards and expectedImages: missing ${missingFromExpected.length}`);
+    }
+
     const imageFiles = await fs.promises.readdir(assetPath);
 
     const missingImages: { id: string; name: string; expectedFile: string }[] = [];
