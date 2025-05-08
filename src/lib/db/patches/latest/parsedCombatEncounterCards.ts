@@ -580,7 +580,7 @@ const data: ParsedCombatEncounterCard[] = [
   },
   {
     "id": "4101117c-9cb0-480e-bfac-814da069ec80",
-    "name": "Degenerate",
+    "name": "Street Gamer",
     "monsterTemplateId": "8c8861cd-4309-4b36-b448-7ea6db77d2ea"
   },
   {

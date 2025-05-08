@@ -2695,22 +2695,22 @@ const data: ParsedSkillCard[] = [
     "tiers": {
       "Bronze": {
         "tooltips": [
-          "At the start of each fight, slow 1 item(s) for 3 second(s)."
+          "The first time you use an item each fight, slow 1 item(s) for 3 second(s)."
         ]
       },
       "Silver": {
         "tooltips": [
-          "At the start of each fight, slow 1 item(s) for 5 second(s)."
+          "The first time you use an item each fight, slow 1 item(s) for 4 second(s)."
         ]
       },
       "Gold": {
         "tooltips": [
-          "At the start of each fight, slow 1 item(s) for 7 second(s)."
+          "The first time you use an item each fight, slow 1 item(s) for 5 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "At the start of each fight, slow 1 item(s) for 9 second(s)."
+          "The first time you use an item each fight, slow 1 item(s) for 6 second(s)."
         ]
       },
       "Legendary": {
@@ -2728,7 +2728,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_MON_RogueScrapper_01.png",
     "unifiedTooltips": [
-      "At the start of each fight, slow 1 item(s) for (3/5/7/9) second(s)."
+      "The first time you use an item each fight, slow 1 item(s) for (3/4/5/6) second(s)."
     ],
     "remarks": [],
     "packId": "Core"
@@ -5425,12 +5425,12 @@ const data: ParsedSkillCard[] = [
       },
       "Gold": {
         "tooltips": [
-          "At the start of each fight, Freeze all non-weapon items for 2 second(s)."
+          "The first time you use an item each fight, Freeze all non-weapon items for 2 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "At the start of each fight, Freeze all non-weapon items for 3 second(s)."
+          "The first time you use an item each fight, Freeze all non-weapon items for 3 second(s)."
         ]
       },
       "Legendary": {
@@ -5448,7 +5448,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_MON_IcicleAmmo_03.png",
     "unifiedTooltips": [
-      "At the start of each fight, Freeze all non-weapon items for (2/3) second(s)."
+      "The first time you use an item each fight, Freeze all non-weapon items for (2/3) second(s)."
     ],
     "remarks": [],
     "packId": "Core"
@@ -7388,7 +7388,7 @@ const data: ParsedSkillCard[] = [
       "Your Toys and Apparel have their cooldowns reduced by (5%/10%)."
     ],
     "remarks": [],
-    "packId": "Pygmalien"
+    "packId": "Pygmalien_Core"
   },
   {
     "id": "72010bea-fadf-4f64-9cba-d34bfd014388",
@@ -8060,26 +8060,24 @@ const data: ParsedSkillCard[] = [
   {
     "id": "51cec489-1988-48ff-95af-0235b374803e",
     "name": "Rigged",
-    "startingTier": "Bronze",
+    "startingTier": "Silver",
     "tiers": {
       "Bronze": {
-        "tooltips": [
-          "At the start of each fight, Haste 2 items for 3 second(s)."
-        ]
+        "tooltips": []
       },
       "Silver": {
         "tooltips": [
-          "At the start of each fight, Haste 3 items for 3 second(s)."
+          "The first time you use an item each fight, Haste your items for 1 second(s)."
         ]
       },
       "Gold": {
         "tooltips": [
-          "At the start of each fight, Haste 4 items for 3 second(s)."
+          "The first time you use an item each fight, Haste your items for 2 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "At the start of each fight, Haste 5 items for 3 second(s)."
+          "The first time you use an item each fight, Haste your items for 3 second(s)."
         ]
       },
       "Legendary": {
@@ -8097,7 +8095,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_MON_Rigged.png",
     "unifiedTooltips": [
-      "At the start of each fight, Haste (2/3/4/5) items for 3 second(s)."
+      "The first time you use an item each fight, Haste your items for (1/2/3) second(s)."
     ],
     "remarks": [],
     "packId": "Core"
@@ -11302,22 +11300,22 @@ const data: ParsedSkillCard[] = [
     "tiers": {
       "Bronze": {
         "tooltips": [
-          "At the start of each fight, Haste a weapon 3 second(s)."
+          "The first time you use an item, Haste 1 Weapon 3 seconds."
         ]
       },
       "Silver": {
         "tooltips": [
-          "At the start of each fight, Haste a weapon 5 second(s)."
+          "The first time you use an item, Haste 1 Weapon 4 seconds."
         ]
       },
       "Gold": {
         "tooltips": [
-          "At the start of each fight, Haste a weapon 7 second(s)."
+          "The first time you use an item, Haste 1 Weapon 5 seconds."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "At the start of each fight, Haste a weapon 9 second(s)."
+          "The first time you use an item, Haste 1 Weapon 6 seconds."
         ]
       },
       "Legendary": {
@@ -11337,7 +11335,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_MON_MegaDrain_01.png",
     "unifiedTooltips": [
-      "At the start of each fight, Haste a weapon (3/5/7/9) second(s)."
+      "The first time you use an item, Haste 1 Weapon (3/4/5/6) seconds."
     ],
     "remarks": [],
     "packId": "Core"
