@@ -73,12 +73,11 @@ async function processItemImages() {
     console.log(`Found ${foundImages.length} matching images`);
     console.log(`Missing ${missingImages.length} images`);
 
-    // TODO: Why did these break on Piggles?
-    // if (missingImages.length > 0) {
-    //     console.log('Missing images:');
-    //     console.table(missingImages);
-    //     throw new Error('Missing required images');
-    // }
+    if (missingImages.length > 0) {
+        console.log('Missing images:');
+        console.table(missingImages);
+        throw new Error('Missing required images');
+    }
 
     const imageCopyDescriptors = foundImages.map(({ id, matchedFile }) => ({
         fileName: id,
@@ -115,18 +114,7 @@ async function processCardDataFiles(): Promise<ExpectedImage[]> {
             const filePath = path.join(cardDataDir, file);
             const fileContent = await fs.promises.readFile(filePath, 'utf-8');
             const cardData = JSON.parse(fileContent) as { m_Name: string; cardGUID: string };
-
-            const rawName = cardData.m_Name.replace('_CardData', '');
-
-            // Name corrections for items that need their display names fixed
-            const nameCorrections: Record<string, string> = {
-                'PigglesYellow': 'YellowPigglesA',
-                'PigglesRed': 'RedPigglesR',
-                'PigglesBlue': 'BluePigglesA'
-            };
-
-            const correctedName = nameCorrections[rawName] ?? rawName;
-            const nameWithoutSpaces = correctedName.replace(/\s+/g, '');
+            const cardName = cardData.m_Name.replace('_CardData', '');
 
             const invalidGuidFixes: Record<string, string> = {
                 // For some reason ATM's cardGUID maps to a Dooley skill?
@@ -140,9 +128,11 @@ async function processCardDataFiles(): Promise<ExpectedImage[]> {
                 'FocusedCore': ''
             };
 
-            const guid = invalidGuidFixes[correctedName] ?? cardData.cardGUID;
+            const guid = invalidGuidFixes[cardName] ?? cardData.cardGUID;
 
             if (guid) {
+                const nameWithoutSpaces = cardName.replace(/\s+/g, '');
+
                 expectedImages.push({
                     cardGUID: guid,
                     name: nameWithoutSpaces
@@ -153,19 +143,22 @@ async function processCardDataFiles(): Promise<ExpectedImage[]> {
         // Piggles: each base image covers multiple variants
         expectedImages.push(
             // Red
-            { cardGUID: '844efa15-de6f-4fec-a438-21904969577b', name: 'RedPigglesA', imageAlias: 'RedPigglesR' },
-            { cardGUID: '48d24eb0-d953-409c-9602-1d3d4c4278c5', name: 'RedPigglesX', imageAlias: 'RedPigglesR' },
-            { cardGUID: 'b3c06ff9-f0e1-4527-81aa-2f71d7bf6503', name: 'RedPigglesL', imageAlias: 'RedPigglesR' },
+            { cardGUID: '844efa15-de6f-4fec-a438-21904969577b', name: 'RedPigglesA', imageAlias: 'PigglesRed' },
+            { cardGUID: 'b3c06ff9-f0e1-4527-81aa-2f71d7bf6503', name: 'RedPigglesL', imageAlias: 'PigglesRed' },
+            { cardGUID: 'b57d9963-d241-40c9-8f9f-f9925a2da661', name: 'RedPigglesR', imageAlias: 'PigglesRed' },
+            { cardGUID: '48d24eb0-d953-409c-9602-1d3d4c4278c5', name: 'RedPigglesX', imageAlias: 'PigglesRed' },
 
             // Blue
-            { cardGUID: '1d8d4dea-aaf9-4041-aa54-ae133f552d55', name: 'BluePigglesR', imageAlias: 'BluePigglesA' },
-            { cardGUID: '2df8f38b-bb9f-4247-afe9-525067c9e29e', name: 'BluePigglesL', imageAlias: 'BluePigglesA' },
-            { cardGUID: '8124f91b-3b4f-40ae-9493-057a0be7feb9', name: 'BluePigglesX', imageAlias: 'BluePigglesA' },
+            { cardGUID: 'ce7ff94f-29e4-4f2d-bca9-cca83eacf774', name: 'BluePigglesA', imageAlias: 'PigglesBlue' },
+            { cardGUID: '2df8f38b-bb9f-4247-afe9-525067c9e29e', name: 'BluePigglesL', imageAlias: 'PigglesBlue' },
+            { cardGUID: '1d8d4dea-aaf9-4041-aa54-ae133f552d55', name: 'BluePigglesR', imageAlias: 'PigglesBlue' },
+            { cardGUID: '8124f91b-3b4f-40ae-9493-057a0be7feb9', name: 'BluePigglesX', imageAlias: 'PigglesBlue' },
 
             // Yellow
-            { cardGUID: 'd4586506-d4d6-45d5-866b-796203f8d9d3', name: 'YellowPigglesX', imageAlias: 'YellowPigglesA' },
-            { cardGUID: 'd8e476dd-8184-4cb5-8cca-df1cb66c4305', name: 'YellowPigglesL', imageAlias: 'YellowPigglesA' },
-            { cardGUID: '3868bcee-4463-4c34-9a9b-b1ab1fa49260', name: 'YellowPigglesR', imageAlias: 'YellowPigglesA' },
+            { cardGUID: '9c21ee00-116d-4868-a215-3f9b57bc8657', name: 'YellowPigglesA', imageAlias: 'PigglesYellow' },
+            { cardGUID: 'd8e476dd-8184-4cb5-8cca-df1cb66c4305', name: 'YellowPigglesL', imageAlias: 'PigglesYellow' },
+            { cardGUID: 'd4586506-d4d6-45d5-866b-796203f8d9d3', name: 'YellowPigglesX', imageAlias: 'PigglesYellow' },
+            { cardGUID: '3868bcee-4463-4c34-9a9b-b1ab1fa49260', name: 'YellowPigglesR', imageAlias: 'PigglesYellow' },
         );
 
         // Tiny Cutlass (uses Cutlass image)
