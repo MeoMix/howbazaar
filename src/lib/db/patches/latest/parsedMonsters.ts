@@ -2013,7 +2013,7 @@ const data: ParsedMonster[] = [
         "socketId": "Socket_1"
       },
       {
-        "templateId": "ae039b3e-ef98-4dc7-a97c-1e06d2627e57",
+        "templateId": "8451b8d1-2b0f-433f-bf88-36054ff4525f",
         "tierType": "Silver",
         "socketId": "Socket_2"
       },
@@ -2026,11 +2026,6 @@ const data: ParsedMonster[] = [
         "templateId": "552247e1-74f8-4414-88bb-1b868f3f296d",
         "tierType": "Silver",
         "socketId": "Socket_4"
-      },
-      {
-        "templateId": "020a0ec0-21e6-41af-899f-063573ba9ca5",
-        "tierType": "Silver",
-        "socketId": "Socket_7"
       },
       {
         "templateId": "2434460c-af35-4dde-a69f-1f8781c807d2",
