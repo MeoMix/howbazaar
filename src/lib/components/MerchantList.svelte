@@ -277,25 +277,26 @@
     }
 </script>
 
-{#snippet listItem(merchant: ClientSideMerchantCard)}
-    <MerchantCard
-        {merchant}
-        merchantItems={merchantItemsMap.get(merchant.id)?.filteredItems ?? []}
-        totalItemCount={merchantItemsMap.get(merchant.id)?.totalItemCount ?? 0}
-    />
-{/snippet}
-
 {#if isLoadingMerchants || isLoadingItems}
     <div>Loading merchants...</div>
 {:else if searchedMerchants().length > 0 || (!isHiddenWhenEmpty && isSearchFilterApplied)}
     <div class="mb-8">
         <LazyLoadList
             items={searchedMerchants()}
-            {listItem}
             listItemName="merchant"
             {initialLoad}
             batchSize={10}
-        />
+        >
+            {#snippet listItem(merchant: ClientSideMerchantCard)}
+                <MerchantCard
+                    {merchant}
+                    merchantItems={merchantItemsMap.get(merchant.id)
+                        ?.filteredItems ?? []}
+                    totalItemCount={merchantItemsMap.get(merchant.id)
+                        ?.totalItemCount ?? 0}
+                />
+            {/snippet}
+        </LazyLoadList>
     </div>
 {:else if !isHiddenWhenEmpty}
     <div class="grid grid-cols-3 gap-1">

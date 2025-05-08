@@ -70,7 +70,7 @@
         const hash = window.location.hash.slice(1);
         if (hash) {
             searchText = hash.replace(/_+/g, " ");
-            selectedSearchLocationOption = 'name';
+            selectedSearchLocationOption = "name";
         }
     });
 
@@ -80,20 +80,19 @@
     ] as { name: string; value: SkillSearchLocationOption }[]);
 </script>
 
-{#snippet button()}
-    <AdvancedFilterToggle bind:isShowingAdvancedFilters />
-{/snippet}
-
 <div class="mt-8 mb-4">
     <div class="flex gap-2 items-center">
         <SearchInput
             placeholder="Search skills"
             {searchLocationOptions}
             bind:selectedSearchLocationOption
-            {button}
             bind:value={searchText}
             onClear={clearSearchInput}
-        />
+        >
+            {#snippet actions()}
+                <AdvancedFilterToggle bind:isShowingAdvancedFilters />
+            {/snippet}
+        </SearchInput>
     </div>
 
     {#if isShowingAdvancedFilters}

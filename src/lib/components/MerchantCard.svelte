@@ -20,12 +20,6 @@
     const id = $derived(merchant.name.replace(/\s+/g, "_"));
 </script>
 
-{#snippet listItem(card: ClientSideItemCard)}
-    <div class="flex flex-col">
-        <MerchantCardItem {card} />
-    </div>
-{/snippet}
-
 <div class="mt-8 scroll-mt-[80px]" {id}>
     <div class="font-bold text-2xl mb-2">
         {merchant.name}
@@ -40,11 +34,14 @@
     <div class={`grid gap-8 mt-4 grid-cols-[auto]`}>
         <LazyLoadList
             items={merchantItems}
-            {listItem}
             listItemName="item"
             listClasses="grid gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 col-span-full md:col-span-1"
             {totalItemCount}
             batchSize={10}
-        />
+        >
+            {#snippet listItem(card: ClientSideItemCard)}
+                <MerchantCardItem {card} />
+            {/snippet}
+        </LazyLoadList>
     </div>
 </div>

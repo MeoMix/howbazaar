@@ -12,14 +12,14 @@
     value = $bindable(),
     selectedSearchLocationOption = $bindable(),
     onClear,
-    button,
+    actions,
   }: {
     placeholder: string;
     searchLocationOptions: { name: string; value: AllSearchLocationOption }[];
     value: string;
     selectedSearchLocationOption: AllSearchLocationOption;
     onClear: () => void;
-    button?: Snippet;
+    actions?: Snippet;
   } = $props();
 
   let inputElement: HTMLInputElement | null = null;
@@ -96,9 +96,9 @@
       </div>
     </div>
 
-    {#if button}
+    {#if actions}
       <div class="shrink-0 flex items-center">
-        {@render button()}
+        {@render actions()}
       </div>
     {/if}
   </div>

@@ -88,21 +88,20 @@
     }
 </script>
 
-{#snippet listItem(monsterEncounter: ClientSideMonsterEncounter)}
-    <MonsterEncounter {monsterEncounter} />
-{/snippet}
-
 {#if isLoading}
     <div>Loading monsters...</div>
 {:else if searchedMonsters.length > 0 || (!isHiddenWhenEmpty && searchText != "")}
     <div class="mb-8">
         <LazyLoadList
             items={searchedMonsters}
-            {listItem}
             listItemName="monster"
             listClasses="space-y-4"
             {initialLoad}
-        />
+        >
+            {#snippet listItem(monsterEncounter: ClientSideMonsterEncounter)}
+                <MonsterEncounter {monsterEncounter} />
+            {/snippet}
+        </LazyLoadList>
     </div>
 {:else if !isHiddenWhenEmpty}
     {#each filteredMonsterEncounterDays as monsterEncounterDay}

@@ -93,20 +93,19 @@
     ] as { name: string; value: AllSearchLocationOption }[]);
 </script>
 
-{#snippet button()}
-    <AdvancedFilterToggle bind:isShowingAdvancedFilters />
-{/snippet}
-
 <div class="mt-8 mb-4">
     <div class="flex gap-2 items-center">
         <SearchInput
             placeholder="Search items, skills, and monsters"
             bind:selectedSearchLocationOption
             {searchLocationOptions}
-            {button}
             bind:value={searchText}
             onClear={clearSearchInput}
-        />
+        >
+            {#snippet actions()}
+                <AdvancedFilterToggle bind:isShowingAdvancedFilters />
+            {/snippet}
+        </SearchInput>
     </div>
 
     {#if isShowingAdvancedFilters}

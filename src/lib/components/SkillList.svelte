@@ -87,32 +87,32 @@
     );
 </script>
 
-{#snippet listItem(card: ClientSideSkillCard)}
-    <CardSkill {card} />
-{/snippet}
-
-{#snippet headerControls()}
-    <div class="flex items-center space-x-2">
-        <Label class="dark:text-bazaar-tan700 text-nowrap">Sort by</Label>
-        <Select
-            options={sortOptions}
-            selectedOption={selectedSortOption}
-            onSelectOption={(option) => {
-                selectedSortOption = option;
-            }}
-        />
-    </div>
-{/snippet}
-
 {#if isLoading}
     <div>Loading skills...</div>
 {:else if sortedSkills.length > 0 || !isHiddenWhenEmpty}
     <LazyLoadList
         items={sortedSkills}
-        {listItem}
-        {headerControls}
         listItemName="skill"
         listClasses="space-y-4"
         {initialLoad}
-    />
+    >
+        {#snippet listItem(card: ClientSideSkillCard)}
+            <CardSkill {card} />
+        {/snippet}
+
+        {#snippet headerControls()}
+            <div class="flex items-center space-x-2">
+                <Label class="dark:text-bazaar-tan700 text-nowrap"
+                    >Sort by</Label
+                >
+                <Select
+                    options={sortOptions}
+                    selectedOption={selectedSortOption}
+                    onSelectOption={(option) => {
+                        selectedSortOption = option;
+                    }}
+                />
+            </div>
+        {/snippet}
+    </LazyLoadList>
 {/if}

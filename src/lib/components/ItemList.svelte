@@ -97,37 +97,37 @@
     };
 </script>
 
-{#snippet listItem(card: ClientSideItemCard)}
-    <CardItem {card} {areEnchantmentsShown} />
-{/snippet}
-
-{#snippet headerControls()}
-    <div class="flex items-center space-x-2">
-        <Label class="dark:text-bazaar-tan700 text-nowrap">Sort by</Label>
-        <Select
-            options={sortOptions}
-            selectedOption={selectedSortOption}
-            onSelectOption={(option) => {
-                selectedSortOption = option;
-            }}
-        />
-    </div>
-
-    <Switch
-        isChecked={areEnchantmentsShown}
-        onClick={onToggleEnchantments}
-        offLabel="Show Enchantments"
-    />
-{/snippet}
-
 {#if isLoading}
     <div>Loading items...</div>
 {:else if sortedItems.length > 0 || !isHiddenWhenEmpty}
     <LazyLoadList
         items={sortedItems}
-        {listItem}
-        {headerControls}
         listItemName="item"
         listClasses="space-y-4"
-    />
+    >
+        {#snippet listItem(card: ClientSideItemCard)}
+            <CardItem {card} {areEnchantmentsShown} />
+        {/snippet}
+
+        {#snippet headerControls()}
+            <div class="flex items-center space-x-2">
+                <Label class="dark:text-bazaar-tan700 text-nowrap"
+                    >Sort by</Label
+                >
+                <Select
+                    options={sortOptions}
+                    selectedOption={selectedSortOption}
+                    onSelectOption={(option) => {
+                        selectedSortOption = option;
+                    }}
+                />
+            </div>
+
+            <Switch
+                isChecked={areEnchantmentsShown}
+                onClick={onToggleEnchantments}
+                offLabel="Show Enchantments"
+            />
+        {/snippet}
+    </LazyLoadList>
 {/if}
