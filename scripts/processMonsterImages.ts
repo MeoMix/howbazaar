@@ -28,7 +28,6 @@ const nameToFileMap: Record<string, string> = {
     'Ahexa': 'TechnoVirus',
     'Banannabal': 'Bananabal',
     'Bloodreef Captain': 'BloodReefCaptain',
-    'Degenerate': 'StreetGamer',
     'Hooverbike Hooligan': 'ScoutTrooper'
 };
 
