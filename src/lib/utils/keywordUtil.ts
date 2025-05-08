@@ -6,7 +6,7 @@ export type KeywordPart = {
 
 const keywordEffects: Record<string, string[]> = {
     damage: ["Crit Chance", "Damage", "Damages"],
-    heal: ["Heal", "Heals", "Health", "Max Health", "Regeneration"],
+    heal: ["Heal", "Heals", "Health", "Max Health", "Regeneration", "Regen"],
     ammo: ["Ammo", "Max Ammo"],
     shield: ["Shield", "Shields"],
     haste: ["Haste", "Hastes"],
