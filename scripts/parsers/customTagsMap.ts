@@ -57,9 +57,6 @@ const customTagsMap: Record<string, CustomTag[]> = {
     // Critical Core:
     "a5fda359-ceb0-4b00-bcac-810c9cecef8e": ["Unpurchasable"],
 
-    // Cryosleeve
-    "1179ed38-2357-4718-a0c7-c30d56493d08": ["Unpurchasable"],
-
     // Dragon Heart
     "2f4625b6-42e1-42e8-9f50-82edf038fac1": ["Unpurchasable"],
 

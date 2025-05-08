@@ -29756,9 +29756,7 @@ const data: ParsedItemCard[] = [
       "Freeze",
       "Shield"
     ],
-    "customTags": [
-      "Unpurchasable"
-    ],
+    "customTags": [],
     "size": "Medium",
     "heroes": [
       "Common"
