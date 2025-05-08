@@ -762,12 +762,6 @@ function parseSkillCards(cardsJson: CardsJson): ParsedSkillCard[] {
         const tierMap = getTierMap(card);
         const remarks = [] as string[];
 
-        if (card.Localization.Title.Text === "Chocoholic") {
-            console.log(card);
-            debugger;
-        }
-
-
         let tiers = Object.fromEntries((Object.entries(tierMap) as Entries<typeof tierMap>).map(
             ([tierName, tier]) => {
                 let rawTooltips = tier.TooltipIds
