@@ -1,12 +1,15 @@
 <script lang="ts">
     import { Button } from "flowbite-svelte";
+    import type { Snippet } from "svelte";
 
     const {
         label,
+        icon,
         isEnabled,
         onClick,
     }: {
-        label: string;
+        label?: string;
+        icon?: Snippet;
         isEnabled: boolean;
         onClick: () => void;
     } = $props();
@@ -25,7 +28,12 @@
     outline={!isEnabled}
     pill
     on:click={onClick}
-    class={`text-nowrap capitalize transition-colors focus:outline-hidden border py-1.5 px-3 ${getToggleClasses(isEnabled)}`}
+    class={`transition-colors focus:outline-hidden border py-1.5 px-3 ${getToggleClasses(isEnabled)}`}
 >
-    {label}
+    {#if icon}
+        {@render icon()}
+    {/if}
+    {#if label}
+        <span class="text-nowrap capitalize">{label}</span>
+    {/if}
 </Button>

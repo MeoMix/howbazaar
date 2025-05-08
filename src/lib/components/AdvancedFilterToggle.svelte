@@ -2,6 +2,7 @@
     import { goto } from "$app/navigation";
     import FilterToggle from "./FilterToggle.svelte";
     import { page } from "$app/state";
+    import { AdjustmentsHorizontalOutline } from "flowbite-svelte-icons";
 
     let {
         isShowingAdvancedFilters = $bindable(),
@@ -20,6 +21,9 @@
 
 <FilterToggle
     isEnabled={isShowingAdvancedFilters}
-    label="Filters"
     onClick={toggleAdvancedFilters}
-/>
+>
+    {#snippet icon()}
+        <AdjustmentsHorizontalOutline class="w-7 h-7" />
+    {/snippet}
+</FilterToggle>
