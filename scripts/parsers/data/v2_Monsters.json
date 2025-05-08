@@ -2405,8 +2405,8 @@
           {
             "$type": "TCardInstanceItem",
             "EnchantmentType": null,
-            "SocketId": "Socket_6",
-            "TemplateId": "c9a88c39-28e0-4618-907d-aec77f44d817",
+            "SocketId": "Socket_9",
+            "TemplateId": "55ef5f5c-0ffc-4598-a6bd-66d8235da56a",
             "TemplateVersion": "1.0.0",
             "InstanceId": null,
             "Tier": "Diamond",
@@ -2419,14 +2419,14 @@
             "TemplateId": "6e576444-85ce-4922-84e1-8ad88c5b83f1",
             "TemplateVersion": "1.0.0",
             "InstanceId": null,
-            "Tier": "Gold",
+            "Tier": "Diamond",
             "Attributes": {}
           },
           {
             "$type": "TCardInstanceItem",
             "EnchantmentType": null,
-            "SocketId": "Socket_9",
-            "TemplateId": "55ef5f5c-0ffc-4598-a6bd-66d8235da56a",
+            "SocketId": "Socket_6",
+            "TemplateId": "c9a88c39-28e0-4618-907d-aec77f44d817",
             "TemplateVersion": "1.0.0",
             "InstanceId": null,
             "Tier": "Diamond",

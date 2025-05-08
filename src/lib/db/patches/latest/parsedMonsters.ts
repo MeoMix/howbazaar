@@ -1148,19 +1148,19 @@ const data: ParsedMonster[] = [
         "socketId": "Socket_3"
       },
       {
-        "templateId": "c9a88c39-28e0-4618-907d-aec77f44d817",
-        "tierType": "Diamond",
-        "socketId": "Socket_6"
-      },
-      {
-        "templateId": "6e576444-85ce-4922-84e1-8ad88c5b83f1",
-        "tierType": "Gold",
-        "socketId": "Socket_7"
-      },
-      {
         "templateId": "55ef5f5c-0ffc-4598-a6bd-66d8235da56a",
         "tierType": "Diamond",
         "socketId": "Socket_9"
+      },
+      {
+        "templateId": "6e576444-85ce-4922-84e1-8ad88c5b83f1",
+        "tierType": "Diamond",
+        "socketId": "Socket_7"
+      },
+      {
+        "templateId": "c9a88c39-28e0-4618-907d-aec77f44d817",
+        "tierType": "Diamond",
+        "socketId": "Socket_6"
       }
     ],
     "skills": [
