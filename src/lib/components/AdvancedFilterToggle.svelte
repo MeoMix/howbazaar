@@ -24,6 +24,6 @@
     onClick={toggleAdvancedFilters}
 >
     {#snippet icon()}
-        <AdjustmentsHorizontalOutline class="w-7 h-7" />
+        <AdjustmentsHorizontalOutline class="w-5 h-5" />
     {/snippet}
 </FilterToggle>
