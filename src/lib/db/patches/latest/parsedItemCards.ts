@@ -124,7 +124,6 @@ const data: ParsedItemCard[] = [
       "Heal equal to (4/6) times the value of your items.",
       "At the start of each fight, your other items gain Value equal to this item's Value for the fight."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -249,7 +248,6 @@ const data: ParsedItemCard[] = [
       "Deal (5/15/30/50) damage.",
       "When you sell this, your leftmost weapon gains (+5/+15/+30/+50) damage."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -374,7 +372,6 @@ const data: ParsedItemCard[] = [
       "Slow (1/2/3/4) item(s) for 3 second(s).",
       "At the start of each day, get a Piranha."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -496,7 +493,6 @@ const data: ParsedItemCard[] = [
       "Shield (30/40/50).",
       "Deal damage equal to your shield."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -541,7 +537,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "Sells for gold"
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -662,7 +657,6 @@ const data: ParsedItemCard[] = [
       "When you Poison yourself, your weapons gain + damage for the fight equal to (1/2) times the amount Poisoned.",
       "The Weapon to the left has Lifesteal."
     ],
-    "remarks": [],
     "packId": "Mak_Dangerous_Experiments"
   },
   {
@@ -794,7 +788,6 @@ const data: ParsedItemCard[] = [
       "Burn equal to this item's value.",
       "When you sell a Property, this item gains (3/5/7/9) value."
     ],
-    "remarks": [],
     "packId": "Pyg_Frozen_Assets"
   },
   {
@@ -841,7 +834,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "Sells for gold"
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -965,7 +957,6 @@ const data: ParsedItemCard[] = [
       "Burn (4/6/8/10).",
       "When you sell this, your leftmost Burn item gains (+3/+4/+5/+6) Burn."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -1079,7 +1070,6 @@ const data: ParsedItemCard[] = [
       "Double the Burn of an item for the fight.",
       "When you Burn or use a Dragon item, charge this 2 seconds."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -1195,7 +1185,6 @@ const data: ParsedItemCard[] = [
       "Burn (10/20).",
       "For each adjacent Food, this has +1 Multicast."
     ],
-    "remarks": [],
     "packId": "Jules_Core"
   },
   {
@@ -1314,7 +1303,6 @@ const data: ParsedItemCard[] = [
       "Charge adjacent items (1/2/3) second(s).",
       "If you have 5 or more unique Types, reduce this item's cooldown by 50%."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -1441,7 +1429,6 @@ const data: ParsedItemCard[] = [
       "Slow 1 item for 2 second(s).",
       "When your enemy uses an item, Charge this (1/2/3) second(s)."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -1559,7 +1546,6 @@ const data: ParsedItemCard[] = [
       "Deal damage equal to (20%/30%) of your enemy's Max Health.",
       "When you use an adjacent item, this gains Haste for (2/4) second(s)."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -1673,7 +1659,6 @@ const data: ParsedItemCard[] = [
       "Cooldown (10/8/6) seconds",
       "Use a Core."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -1787,7 +1772,6 @@ const data: ParsedItemCard[] = [
       "Adjacent items have (+10%/+15%/+20%/+25%) Crit Chance.",
       "Adjacent items have their cooldown reduced by (10%/15%/20%/25%)."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -1900,7 +1884,6 @@ const data: ParsedItemCard[] = [
       "Cooldown 4 seconds",
       "Haste the Core for (1/2/3/4) second(s)."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -2020,7 +2003,6 @@ const data: ParsedItemCard[] = [
       "Reload an item.",
       "Gain (2/4/6) Regen for the fight."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -2145,7 +2127,6 @@ const data: ParsedItemCard[] = [
       "When you Freeze, Shield (50/75/100).",
       "The first time you fall below half health each fight, use this."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -2266,7 +2247,6 @@ const data: ParsedItemCard[] = [
       "Cooldown 4 seconds",
       "The item to the right of this gains (4%/8%/12%/16%) Crit Chance for the fight."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -2394,7 +2374,6 @@ const data: ParsedItemCard[] = [
       "Freeze 2 items for (1/2/3) second(s).",
       "When you sell this, gain 2 Icicles."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -2520,7 +2499,6 @@ const data: ParsedItemCard[] = [
       "When you use an Adjacent item, Charge this (1/1.5/2) second(s).",
       "If you have another Tool, Apparel, Tech, Weapon, or Friend, this has (+50/+100/+150) Damage for each."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -2620,7 +2598,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "When you sell this, your leftmost item gains (5%/10%/15%/20%) Crit Chance."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -2744,7 +2721,6 @@ const data: ParsedItemCard[] = [
       "Shield (20/60/120/200).",
       "When you sell this, your Shield items gain (3/6/9/12) Shield."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -2869,7 +2845,6 @@ const data: ParsedItemCard[] = [
       "Deal (20/30/40/50) damage.",
       "This item's cooldown is reduced by 1% for every 2 damage it has."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -2989,7 +2964,6 @@ const data: ParsedItemCard[] = [
       "Cooldown 4 seconds",
       "Deal (8/16/24/32) damage."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -3108,7 +3082,6 @@ const data: ParsedItemCard[] = [
       "Cooldown 3 seconds",
       "Burn (2/4/6/8)."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -3245,7 +3218,6 @@ const data: ParsedItemCard[] = [
       "Deal damage equal to (1/2/3/4) times your Income.",
       "While in play, you have (+1/+2/+3/+4) Income."
     ],
-    "remarks": [],
     "packId": "Pyg_Investment_Opportunities"
   },
   {
@@ -3354,7 +3326,6 @@ const data: ParsedItemCard[] = [
       "Cooldown 4 seconds",
       "Transform into a (Gold/Diamond) copy of the medium, non-legendary item to the left of this for the fight."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -3467,7 +3438,6 @@ const data: ParsedItemCard[] = [
       "Deal (50/75/100/125) damage.",
       "At the start of each day, get a Truffle. If you have a Property, get a second Truffle."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -3579,7 +3549,6 @@ const data: ParsedItemCard[] = [
       "Your items have (+15%/+30%/+50%) Crit Chance.",
       "When you Crit with an item, reduce its cooldown by (5%/10%/15%) for the fight."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -3697,7 +3666,6 @@ const data: ParsedItemCard[] = [
       "Shield (50/100).",
       "When this gains haste, your items gain (+3%/+5%) crit chance for the fight."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -3815,7 +3783,6 @@ const data: ParsedItemCard[] = [
       "Ammo 1",
       "Destroy a small item."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -3939,7 +3906,6 @@ const data: ParsedItemCard[] = [
       "Damage 10.",
       "When you Haste or Slow, this gains (+5/+10/+15) Damage for the fight."
     ],
-    "remarks": [],
     "packId": "Vanessa_The_Gang"
   },
   {
@@ -4067,7 +4033,6 @@ const data: ParsedItemCard[] = [
       "Poison 4, Burn 4, and Freeze 1 medium or small item for 0.5 second(s).",
       "This has +1 Multicast for each other Aquatic item you have."
     ],
-    "remarks": [],
     "packId": "Vanessa_Mysteries_of_the_Deep"
   },
   {
@@ -4188,7 +4153,6 @@ const data: ParsedItemCard[] = [
       "The Core gains (+5%/+10%/+15%) Crit Chance for the fight.",
       "While either player has Burn, this item's cooldown is reduced by 50%."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -4312,7 +4276,6 @@ const data: ParsedItemCard[] = [
       "Shield 100.",
       "When you use an adjacent item, charge this 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -4422,7 +4385,6 @@ const data: ParsedItemCard[] = [
       "Charge adjacent items (1/2) second(s).",
       "If you have the same amount of items on both sides of this, Charge all other items instead."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -4543,7 +4505,6 @@ const data: ParsedItemCard[] = [
       "Deal (60/90/120) damage.",
       "When you use an adjacent Tech, charge 1 item 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -4667,7 +4628,6 @@ const data: ParsedItemCard[] = [
       "Shield (10/20/30/40).",
       "When you use another Aquatic item, Charge this 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -4715,7 +4675,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "When you sell this, upgrade your leftmost item."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -4841,7 +4800,6 @@ const data: ParsedItemCard[] = [
       "Burn (3/5/7/9).",
       "Gain (1/2/3/4) Regen for the fight."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -4970,7 +4928,6 @@ const data: ParsedItemCard[] = [
       "Burn both players (5/10/15/20).",
       "Slow all enemy items for (1/2/3/4) second(s)."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -5094,7 +5051,6 @@ const data: ParsedItemCard[] = [
       "Burn (2/3/4/5).",
       "When this is transformed, enchant it with Fiery if able."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -5224,7 +5180,6 @@ const data: ParsedItemCard[] = [
       "Deal (10/20/30/40) damage.",
       "This deals double Crit damage."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -5354,7 +5309,6 @@ const data: ParsedItemCard[] = [
       "At the start of each fight with Crystal Bonsai, this gains (6/9/12) value.",
       "When you lose a fight with Crystal Bonsai, permanently destroy this."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -5456,7 +5410,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "When you sell this, permanently gain (10/20/30/40) Max Health."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -5581,7 +5534,6 @@ const data: ParsedItemCard[] = [
       "Haste 1 item for (1/2/3/4) second(s).",
       "Slow 1 item for (1/2/3/4) second(s)."
     ],
-    "remarks": [],
     "packId": "Stelle_Core"
   },
   {
@@ -5698,7 +5650,6 @@ const data: ParsedItemCard[] = [
       "Shield (75/100).",
       "Non-tech item cooldowns are increased by (1/2) second(s)."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -5822,7 +5773,6 @@ const data: ParsedItemCard[] = [
       "Heal 20.",
       "When you use an Aquatic item, this gains (+5/+10/+15/+20) Heal for the fight."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -5947,7 +5897,6 @@ const data: ParsedItemCard[] = [
       "Burn both players (4/6/8).",
       "If you have a Vehicle, at the start of each fight, use this."
     ],
-    "remarks": [],
     "packId": "Stelle_Core"
   },
   {
@@ -6076,7 +6025,6 @@ const data: ParsedItemCard[] = [
       "Deal 10 damage.",
       "Your weapons gain (5/10/15/20) damage for the fight."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -6193,7 +6141,6 @@ const data: ParsedItemCard[] = [
       "Cooldown 5 seconds",
       "Slow (2/3/4) item(s) for 3 second(s)."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -6308,7 +6255,6 @@ const data: ParsedItemCard[] = [
       "Ammo 50",
       "Deal damage equal to this item's ammo."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -6429,7 +6375,6 @@ const data: ParsedItemCard[] = [
       "Deal (60/80/100) damage.",
       "When you use another Relic or Enchanted item, Charge this 2 second(s)."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -6560,7 +6505,6 @@ const data: ParsedItemCard[] = [
       "Deal (10/20/40/80) Damage",
       "When you sell a small item, this gains (3/6/9/12) damage."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -6675,7 +6619,6 @@ const data: ParsedItemCard[] = [
       "Destroy this and all smaller items for the fight.",
       "When you use another Aquatic item, charge this (1/2) second(s)."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -6778,7 +6721,6 @@ const data: ParsedItemCard[] = [
       "Cooldown (12/9) seconds",
       "Use a property."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -6903,7 +6845,6 @@ const data: ParsedItemCard[] = [
       "Shield (10/20/40/80).",
       "The first time you would die each fight, Heal (200/600/1200/2000)."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -7015,7 +6956,6 @@ const data: ParsedItemCard[] = [
       "Slow (1/2/3) item(s) for 3 second(s).",
       "Your other Slow items have +1 Slow."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -7136,7 +7076,6 @@ const data: ParsedItemCard[] = [
       "Freeze 1 item(s) for (1/2/3) second(s).",
       "While your enemy has poison, this has +1 Multicast."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -7260,7 +7199,6 @@ const data: ParsedItemCard[] = [
       "The first time you fall below half health each fight, Freeze ALL other items for 3 seconds.",
       "When you Freeze, Charge this 4 second(s)."
     ],
-    "remarks": [],
     "packId": "Pyg_Frozen_Assets"
   },
   {
@@ -7385,7 +7323,6 @@ const data: ParsedItemCard[] = [
       "Shield (10/30/50/100).",
       "Your other tools have their cooldowns reduced by (5%/10%/15%/20%)."
     ],
-    "remarks": [],
     "packId": "Stelle_Core"
   },
   {
@@ -7509,7 +7446,6 @@ const data: ParsedItemCard[] = [
       "Multicast 3",
       "Burn (3/6/9/12)."
     ],
-    "remarks": [],
     "packId": "Vanessa_Mysteries_of_the_Deep"
   },
   {
@@ -7639,7 +7575,6 @@ const data: ParsedItemCard[] = [
       "Freeze (1/2/3/4) item(s) for 1 second(s).",
       "When you Freeze, this gains (+20/+30/+40/+50) damage for the fight."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -7764,7 +7699,6 @@ const data: ParsedItemCard[] = [
       "Deal (10/15/20/25) damage.",
       "The first time you fall below half health each fight, slow all enemy items for (1/2/3/4) second(s)."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -7885,7 +7819,6 @@ const data: ParsedItemCard[] = [
       "Deal 100 damage.",
       "When you use a Small item, this gains (25/50/75) damage for the fight."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -7950,7 +7883,6 @@ const data: ParsedItemCard[] = [
       "Adjacent Shield items permanently gain (+1/+2/+3/+4) Shield.",
       "This permanently loses 1 Max Ammo and destroy this if it has 0 Max Ammo."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -8071,7 +8003,6 @@ const data: ParsedItemCard[] = [
       "Freeze (1/2/3) item(s) for 0.5 second(s).",
       "When an adjacent item Poisons, charge this 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Dooley_Dooltron"
   },
   {
@@ -8083,28 +8014,28 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Cooldown 7 seconds",
           "Multicast 2",
-          "Deal 4 damage."
+          "Deal 5 damage."
         ]
       },
       "Silver": {
         "tooltips": [
-          "Cooldown 7 seconds",
+          "Cooldown 6 seconds",
           "Multicast 2",
-          "Deal 8 damage."
+          "Deal 5 damage."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 7 seconds",
+          "Cooldown 5 seconds",
           "Multicast 2",
-          "Deal 16 damage."
+          "Deal 5 damage."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 7 seconds",
+          "Cooldown 4 seconds",
           "Multicast 2",
-          "Deal 32 damage."
+          "Deal 5 damage."
         ]
       },
       "Legendary": {
@@ -8191,11 +8122,10 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "Cooldown 7 seconds",
+      "Cooldown (7/6/5/4) seconds",
       "Multicast 2",
-      "Deal (4/8/16/32) damage."
+      "Deal 5 damage."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -8260,7 +8190,6 @@ const data: ParsedItemCard[] = [
       "Adjacent items permanently gain (1%/2%/3%/4%) Crit chance.",
       "This permanently loses 1 Max Ammo and destroy this if it has 0 Max Ammo."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -8381,7 +8310,6 @@ const data: ParsedItemCard[] = [
       "Your weapons gain (4/8/12) damage for the fight.",
       "When you use a Weapon, charge this 2 second(s)."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -8502,7 +8430,6 @@ const data: ParsedItemCard[] = [
       "Shield (75/100/125).",
       "When this or an adjacent item gains Freeze, remove it."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -8625,7 +8552,6 @@ const data: ParsedItemCard[] = [
       "Deal (90/120/150) damage",
       "When you Haste, charge this 2 seconds."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -8755,7 +8681,6 @@ const data: ParsedItemCard[] = [
       "Gain (1/2/3/4) Regen for the fight.",
       "If you have no other weapons, this has +1 Multicast."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -8871,7 +8796,6 @@ const data: ParsedItemCard[] = [
       "Cooldown 4 seconds",
       "The weapon to the left of this gains (+10/+20/+30) damage for the fight."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -8996,7 +8920,6 @@ const data: ParsedItemCard[] = [
       "Your weapons gain (3/6/9) damage for the fight.",
       "When you use another Tool, Charge this 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Stelle_Core"
   },
   {
@@ -9118,7 +9041,6 @@ const data: ParsedItemCard[] = [
       "Deal (75/100) damage.",
       "When you poison, freeze, or burn, charge this (1/2) second(s) and this gains (+75/+100) Damage for the fight."
     ],
-    "remarks": [],
     "packId": "Vanessa_Mysteries_of_the_Deep"
   },
   {
@@ -9243,7 +9165,6 @@ const data: ParsedItemCard[] = [
       "Shield (10/15/20/25).",
       "Deal damage equal to your shield."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -9364,7 +9285,6 @@ const data: ParsedItemCard[] = [
       "Your Potions have their cooldowns reduced by (10%/15%/20%).",
       "When you visit a Merchant, transform the small item to the left of this into a random Potion."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -9485,7 +9405,6 @@ const data: ParsedItemCard[] = [
       "Deal (300/450/600) damage.",
       "When you use another Tech, charge this 2 second(s)."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -9613,7 +9532,6 @@ const data: ParsedItemCard[] = [
       "This and shield items to the right of this gain (+20/+30/+40) Shield for the fight.",
       "When you use any item to the left of this, Charge this 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -9658,40 +9576,29 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "When you sell this, transform your leftmost Small item."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
     "id": "ffcc9b4e-24f2-479b-ab80-7bfbaec664f2",
     "name": "Proboscis",
-    "startingTier": "Bronze",
+    "startingTier": "Silver",
     "tiers": {
       "Bronze": {
-        "tooltips": [
-          "Cooldown 4 seconds",
-          "Deal 4 damage.",
-          "When you Slow, Charge this 1 second."
-        ]
+        "tooltips": []
       },
       "Silver": {
         "tooltips": [
-          "Cooldown 4 seconds",
-          "Deal 8 damage.",
-          "When you Slow, Charge this 1 second."
+          "When you Slow, deal 8 damage."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 4 seconds",
-          "Deal 12 damage.",
-          "When you Slow, Charge this 1 second."
+          "When you Slow, deal 12 damage."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 4 seconds",
-          "Deal 16 damage.",
-          "When you Slow, Charge this 1 second."
+          "When you Slow, deal 16 damage."
         ]
       },
       "Legendary": {
@@ -9720,55 +9627,43 @@ const data: ParsedItemCard[] = [
       {
         "type": "Icy",
         "tooltips": [
-          "Freeze 1 small item for 1 second(s)."
+          "When you Slow, Freeze 1 small item for 1 second(s)."
         ]
       },
       {
         "type": "Turbo",
         "tooltips": [
-          "Haste 1 item for 1 second(s)."
+          "When you Slow, Haste 1 item for 1 second(s)."
         ]
       },
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to this item's damage."
+          "When you Slow, Shield equal to this item's damage."
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to this item's damage."
+          "When you Slow, Heal equal to this item's damage."
         ]
       },
       {
         "type": "Toxic",
         "tooltips": [
-          "Poison equal to 10% of this item's damage."
+          "When you Slow, Poison equal to 10% of this item's damage."
         ]
       },
       {
         "type": "Fiery",
         "tooltips": [
-          "Burn equal to 10% of this item's damage."
+          "When you Slow, Burn equal to 10% of this item's damage."
         ]
       },
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
-        ]
-      },
-      {
-        "type": "Deadly",
-        "tooltips": [
-          "+50% Crit Chance"
-        ]
-      },
-      {
-        "type": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
+          "This has double Damage."
         ]
       },
       {
@@ -9779,11 +9674,8 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "Cooldown 4 seconds",
-      "Deal (4/8/12/16) damage.",
-      "When you Slow, Charge this 1 second."
+      "When you Slow, deal (8/12/16) damage."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -9908,7 +9800,6 @@ const data: ParsedItemCard[] = [
       "Shield (10/20/30/40).",
       "Burn (2/4/6/8)."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -10028,7 +9919,6 @@ const data: ParsedItemCard[] = [
       "Cooldown 5 seconds",
       "Shield equal to (1x/2x) the value of the adjacent items."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -10154,7 +10044,6 @@ const data: ParsedItemCard[] = [
       "Freeze 1 for 1 second(s).",
       "When you Freeze, this gains (10/15/20) damage for the fight."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -10284,7 +10173,6 @@ const data: ParsedItemCard[] = [
       "Shield equal to (1/2/3/4) times this item's value.",
       "Every 50 you spend, upgrade this."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -10421,7 +10309,6 @@ const data: ParsedItemCard[] = [
       "When you Level Up and at the start of each day, get a Spare Change.",
       "When you sell a Spare Change, this gains (+2/+4/+6/+8) Value."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -10525,7 +10412,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "When you use your leftmost item, charge your rightmost item (1/2) second(s)."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -10655,7 +10541,6 @@ const data: ParsedItemCard[] = [
       "Deal (10/20/40/80) damage.",
       "When you sell a Weapon, this gains (10/20/30/40) damage."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -10777,7 +10662,6 @@ const data: ParsedItemCard[] = [
       "Freeze (1/2/3) item(s) for 1 second(s).",
       "When you use another non-weapon item, charge this 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -10903,7 +10787,6 @@ const data: ParsedItemCard[] = [
       "Your Shield items have +Shield equal to this item's value.",
       "When you sell 10 items, give this (+5/+10/+15) value."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -11025,7 +10908,6 @@ const data: ParsedItemCard[] = [
       "Deal 16 damage.",
       "Your Medium Weapons have (+8/+16/+24) Damage for each Medium item you have."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -11142,7 +11024,6 @@ const data: ParsedItemCard[] = [
       "Deal damage equal to (10%/20%) of your Max Health.",
       "When you Level Up, permanently gain (100/200) Max Health."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -11268,7 +11149,6 @@ const data: ParsedItemCard[] = [
       "Haste adjacent Properties for (1/2/3) second(s).",
       "When you use an adjacent Property, increase its value and this item's value by 1."
     ],
-    "remarks": [],
     "packId": "Pyg_Frozen_Assets"
   },
   {
@@ -11401,7 +11281,6 @@ const data: ParsedItemCard[] = [
       "Shield equal to (1/2/3/4) times your Income.",
       "When you buy this, gain (+1/+2/+3/+5) Income."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -11527,7 +11406,6 @@ const data: ParsedItemCard[] = [
       "Burn (4/6/8/10).",
       "When an adjacent item Hastes or Slows, charge this 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Dooley_Dooltron"
   },
   {
@@ -11657,7 +11535,6 @@ const data: ParsedItemCard[] = [
       "You have +Regen equal to this item's value.",
       "When you sell 10 items, give this (+5/+10/+15) value and get a Truffle."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -11765,7 +11642,6 @@ const data: ParsedItemCard[] = [
       "The first time you would die each fight, Heal for (25%/50%) of your Max Health.",
       "Your Heal and Regen items have +1 Multicast."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -11889,7 +11765,6 @@ const data: ParsedItemCard[] = [
       "Gain (1/3/5/7) Regen for the fight.",
       "When this is transformed, enchant it with Restorative if able."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -11998,7 +11873,6 @@ const data: ParsedItemCard[] = [
       "When you use an adjacent item, Burn (1/2/3).",
       "Adjacent items have +1 ammo."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -12117,7 +11991,6 @@ const data: ParsedItemCard[] = [
       "Cooldown 5 seconds",
       "The weapon to the right of this gains (+8/+12/+16/+20) damage for the fight."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -12238,7 +12111,6 @@ const data: ParsedItemCard[] = [
       "Shield (20/40/60).",
       "This has +1 Multicast for each item you have in play with value over 10."
     ],
-    "remarks": [],
     "packId": "Pyg_Investment_Opportunities"
   },
   {
@@ -12363,7 +12235,6 @@ const data: ParsedItemCard[] = [
       "When you Freeze, gain (3/6/9) Regen for the fight.",
       "When your enemy uses an item, charge this 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Pyg_Frozen_Assets"
   },
   {
@@ -12488,7 +12359,6 @@ const data: ParsedItemCard[] = [
       "Burn 8.",
       "While you have Shield, this item's cooldown is reduced by 50%."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -12614,7 +12484,6 @@ const data: ParsedItemCard[] = [
       "Deal 50 damage.",
       "When you Heal or gain Regen, this gains (10/20/30/40) damage for the fight."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -12714,7 +12583,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "When you sell this, your leftmost Shield item gains (+3/+6/+12/+24) Shield."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -12824,7 +12692,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "When you sell 10 items, adjacent items gain (3/5/7) value."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -12920,7 +12787,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "When you sell this, recover 5 Prestige."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -13038,7 +12904,6 @@ const data: ParsedItemCard[] = [
       "Permanently gain (10/20) Max Health.",
       "Gain (10/20) Regen for the fight."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -13146,7 +13011,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "When you sell this, upgrade The Core. (/and reduce its cooldown by 1 second(s).)"
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -13271,7 +13135,6 @@ const data: ParsedItemCard[] = [
       "Freeze (1/2/3) item for 1 second(s).",
       "When you Freeze, this gains (3/6/9) Poison for the fight."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -13401,7 +13264,6 @@ const data: ParsedItemCard[] = [
       "Shield (10/20/40/80).",
       "When you sell another non-weapon item, this gains Shield (6/12/18/24)."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -13513,7 +13375,6 @@ const data: ParsedItemCard[] = [
       "Ammo 1",
       "Heal equal to (50%/100%) of your Max Health."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -13640,7 +13501,6 @@ const data: ParsedItemCard[] = [
       "Deal (10/15/20/25) damage.",
       "If this is adjacent to a Regen item, gain (2/4/6/8) Regen for the fight. If this is adjacent to a Burn item, Burn (2/4/6/8). If this is adjacent to a Poison item, Poison (2/4/6/8)."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -13771,7 +13631,6 @@ const data: ParsedItemCard[] = [
       "Deal (40/60/80/100) damage.",
       "Burn (4/6/8/10)."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -13881,7 +13740,6 @@ const data: ParsedItemCard[] = [
       "Cooldown 5 seconds",
       "Freeze an item with a cooldown of 5 seconds or less for (1/2/3) second(s)."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -14003,7 +13861,6 @@ const data: ParsedItemCard[] = [
       "Deal 10 damage.",
       "When you lose Shield, this gains damage equal to (10%/20%/40%) of the Shield lost."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -14135,7 +13992,6 @@ const data: ParsedItemCard[] = [
       "For each adjacent Aquatic item, reduce this item's cooldown by 1 second.",
       "This has + Multicast equal to its ammo."
     ],
-    "remarks": [],
     "packId": "Vanessa_Mysteries_of_the_Deep"
   },
   {
@@ -14246,7 +14102,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "When you Level Up, get a Tech item."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -14353,7 +14208,6 @@ const data: ParsedItemCard[] = [
       "Cooldown 6 seconds",
       "Charge your other non-weapon items (1/2) second(s)."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -14409,7 +14263,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "At the start of each hour, this gains (1/2/3) value."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -14527,7 +14380,6 @@ const data: ParsedItemCard[] = [
       "When you use an item, deal 100 damage.",
       "The first time you fall below half health each fight, use this."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -14658,7 +14510,6 @@ const data: ParsedItemCard[] = [
       "When you Heal or gain Regen, this gains (+2/+4/+6/+8) Poison for the fight.",
       "When this is transformed, enchant it with Toxic if able."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -14770,7 +14621,6 @@ const data: ParsedItemCard[] = [
       "Cooldown (5/4) seconds",
       "Transform into 3 (Gold/Diamond) copies of the small, non-legendary item to the left of this for the fight."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -14895,7 +14745,6 @@ const data: ParsedItemCard[] = [
       "Deal (5/10/15/20) damage.",
       "The potion to the left of this has (+1/+2/+3/+4) Ammo."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -14998,7 +14847,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "When you use the item to the right of this, Haste it for (1/2/3/4) second(s). If it is a weapon, it also gains (+3/+5/+7/+9) damage for the fight."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -15110,7 +14958,6 @@ const data: ParsedItemCard[] = [
       "Charge adjacent items 1 second(s).",
       "When you use another item, Charge this 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -15234,7 +15081,6 @@ const data: ParsedItemCard[] = [
       "Shield (40/60/80).",
       "When you Burn, charge this 2 second(s)."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -15358,7 +15204,6 @@ const data: ParsedItemCard[] = [
       "Your Poison items have (+10/+15) Poison.",
       "For every 20 Poison on the enemy, this has +1 Multicast."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -15481,7 +15326,6 @@ const data: ParsedItemCard[] = [
       "Haste 1 item for (1/2/3) second(s).",
       "For each adjacent Vehicle, this has +1 Multicast."
     ],
-    "remarks": [],
     "packId": "Stelle_Core"
   },
   {
@@ -15606,7 +15450,6 @@ const data: ParsedItemCard[] = [
       "When you win a fight with this in play, increase its value by (+3/+6/+9).",
       "When you lose a fight with this in play, permanently destroy this and gain Gold equal to its Value."
     ],
-    "remarks": [],
     "packId": "Pyg_Investment_Opportunities"
   },
   {
@@ -15732,7 +15575,6 @@ const data: ParsedItemCard[] = [
       "Slow 1 item for 2 second(s).",
       "This has +1 Multicast for each Friend you have."
     ],
-    "remarks": [],
     "packId": "Vanessa_The_Gang"
   },
   {
@@ -15864,7 +15706,6 @@ const data: ParsedItemCard[] = [
       "Deal (6/12/18/24) damage.",
       "This deals double Crit damage."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -15983,7 +15824,6 @@ const data: ParsedItemCard[] = [
       "Cooldown 3 seconds",
       "Deal (5/10/15/20) damage."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -16099,7 +15939,6 @@ const data: ParsedItemCard[] = [
       "Reload adjacent Potions.",
       "Adjacent potions have +1 Multicast."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -16155,7 +15994,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "Your Small items have (+1/+2) value."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -16248,12 +16086,6 @@ const data: ParsedItemCard[] = [
         ]
       },
       {
-        "type": "Radiant",
-        "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
-        ]
-      },
-      {
         "type": "Obsidian",
         "tooltips": [
           "Deal 150 Damage."
@@ -16266,7 +16098,6 @@ const data: ParsedItemCard[] = [
       "When this is Destroyed, destroy 3 enemy items for the fight.",
       "When you use another Tech, charge this 2 second(s)."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -16383,7 +16214,6 @@ const data: ParsedItemCard[] = [
       "Cooldown 2 seconds",
       "Your items gain (+3/+4/+5) value for the fight."
     ],
-    "remarks": [],
     "packId": "Pyg_Investment_Opportunities"
   },
   {
@@ -16503,7 +16333,6 @@ const data: ParsedItemCard[] = [
       "Burn (5/10/15).",
       "This has +1 Multicast for each item you have in play with value over 10."
     ],
-    "remarks": [],
     "packId": "Pyg_Investment_Opportunities"
   },
   {
@@ -16628,7 +16457,6 @@ const data: ParsedItemCard[] = [
       "Poison (2/4/6).",
       "When either player uses a weapon, charge this 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -16754,7 +16582,6 @@ const data: ParsedItemCard[] = [
       "Your weapons gain (+5/+10/+15/+20) damage for the fight.",
       "When you slow, charge this 2 second(s)."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -16869,7 +16696,6 @@ const data: ParsedItemCard[] = [
       "Ammo 1",
       "Freeze (1/2/3) item(s) for 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -16969,7 +16795,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "When you use an adjacent Weapon, Slow 1 item(s) for (1/2/3) second(s)."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -17092,7 +16917,6 @@ const data: ParsedItemCard[] = [
       "Deal (50/75/100) damage.",
       "If you have another Tool, Property, Friend, or Ammo item this has +1 Multicast for each."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -17206,7 +17030,6 @@ const data: ParsedItemCard[] = [
       "Permanently gain (10/15/20) Max Health.",
       "When you use an adjacent friend, charge this 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -17335,7 +17158,6 @@ const data: ParsedItemCard[] = [
       "The first time you fall below half Health each fight, you take no damage for (1/1.5/2) second(s) and gain (25/50/75) Regen for the fight.",
       "Your Weapons have + Damage equal to your Regen."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -17454,7 +17276,6 @@ const data: ParsedItemCard[] = [
       "The Burn item to the left of this gains + Burn equal to your Regen for the fight.",
       "The Poison item to the right of this gains + Poison equal to your Regen for the fight."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -17584,7 +17405,6 @@ const data: ParsedItemCard[] = [
       "Crit Chance 25%",
       "Deal (50/100/150/200) damage."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -17700,7 +17520,6 @@ const data: ParsedItemCard[] = [
       "A Friend gains +1 Multicast for the fight.",
       "Increase this item's cooldown by (4/3/2) second(s) for the fight."
     ],
-    "remarks": [],
     "packId": "Vanessa_The_Gang"
   },
   {
@@ -17819,7 +17638,6 @@ const data: ParsedItemCard[] = [
       "Your Shield items gain (+10/+15) Shield for the fight.",
       "When you use another non-weapon item, charge this 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -17944,7 +17762,6 @@ const data: ParsedItemCard[] = [
       "Heal (10/20/40/80).",
       "When you sell this, permanently gain (20/60/120/200) Max Health."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -18075,7 +17892,6 @@ const data: ParsedItemCard[] = [
       "Deal (8/12/16/20) damage.",
       "Burn (2/3/4/5)."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -18204,7 +18020,6 @@ const data: ParsedItemCard[] = [
       "When you transform a Reagent, this permanently gains (+2/+3/+4/+5) Regen.",
       "When you buy this, get a Catalyst."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -18326,7 +18141,6 @@ const data: ParsedItemCard[] = [
       "Poison (10/20/30).",
       "When you Haste, charge this 2 second(s)."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -18446,7 +18260,6 @@ const data: ParsedItemCard[] = [
       "Deal (150/200) damage.",
       "When you use another Ammo item, this gains 1 Multicast for the fight."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -18571,7 +18384,6 @@ const data: ParsedItemCard[] = [
       "Poison 3.",
       "Shield 15."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -18686,7 +18498,6 @@ const data: ParsedItemCard[] = [
       "Gain 10 Regen for the fight.",
       "When any non-weapon is used, Charge this 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -18807,7 +18618,6 @@ const data: ParsedItemCard[] = [
       "Cooldown 4 seconds",
       "Your Shield item to the left of this gains (+4/+8/+12/+16) Shield for the fight."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -18937,7 +18747,6 @@ const data: ParsedItemCard[] = [
       "Freeze 1 item for (1/2/3/4) second(s).",
       "When you Freeze, your weapons gain (4/6/8/10) damage for the fight."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -19058,7 +18867,6 @@ const data: ParsedItemCard[] = [
       "Haste adjacent items for (1/2/3) second(s).",
       "If you have a Vehicle or Large item, reduce this item's cooldown by 50%."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -19183,7 +18991,6 @@ const data: ParsedItemCard[] = [
       "Burn 6.",
       "When you use an adjacent friend, Haste this 2 second(s)."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -19300,7 +19107,6 @@ const data: ParsedItemCard[] = [
       "Slow 1 item(s) for (1/2/3) second(s).",
       "When you use the item to the left of this, Shield (5/10/15)."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -19426,7 +19232,6 @@ const data: ParsedItemCard[] = [
       "Poison (3/6/9/12).",
       "When you use an adjacent Aquatic item, this gains Haste for (1/2/3/4) second(s)."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -19557,7 +19362,6 @@ const data: ParsedItemCard[] = [
       "Deal (75/150/300/600) damage.",
       "When this gains Haste, it also gains (5%/10%/15%/20%) Crit Chance for the fight."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -19669,7 +19473,6 @@ const data: ParsedItemCard[] = [
       "When you Crit, Haste 1 item(s) for (1/2/3) second(s).",
       "Adjacent items have (+15%/+30%/+50%) Crit Chance."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -19791,7 +19594,6 @@ const data: ParsedItemCard[] = [
       "Poison both players (5/10/15).",
       "When you Poison yourself, gain (10/15/20) Regen for the fight and Haste 1 item for 2 second(s)."
     ],
-    "remarks": [],
     "packId": "Mak_Dangerous_Experiments"
   },
   {
@@ -19913,7 +19715,6 @@ const data: ParsedItemCard[] = [
       "Poison (1/2/3/4).",
       "Your other Poison items have (+3/+4/+5/+6) Poison."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -19997,13 +19798,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Toxic",
         "tooltips": [
-          "Poison equal to 10% of this item's Shield."
+          "Poison equal to 10% of this item's Heal."
         ]
       },
       {
         "type": "Fiery",
         "tooltips": [
-          "Burn equal to 10% of this item's Shield."
+          "Burn equal to 10% of this item's Heal."
         ]
       },
       {
@@ -20027,7 +19828,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal damage equal to this item's Shield."
+          "Deal damage equal to this item's Heal."
         ]
       }
     ],
@@ -20036,7 +19837,6 @@ const data: ParsedItemCard[] = [
       "Heal equal to your Shield.",
       "When you Over-heal, Shield (20/30/40/50)."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -20165,7 +19965,6 @@ const data: ParsedItemCard[] = [
       "Adjacent items have their cooldown reduced by (10%/15%/20%).",
       "This has +1 Multicast if you have a Large item."
     ],
-    "remarks": [],
     "packId": "Dooley_Dooltron"
   },
   {
@@ -20290,7 +20089,6 @@ const data: ParsedItemCard[] = [
       "When you reload, gain 2 Regen for the fight.",
       "When you buy a Potion, increase this item's Regen by (+2/+4/+6)."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -20386,7 +20184,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "The first time you would die each fight, Heal for 1 and take no damage for (1/2) second(s)."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -20511,7 +20308,6 @@ const data: ParsedItemCard[] = [
       "Ammo 1",
       "Poison (3/6/9/12)."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -20627,7 +20423,6 @@ const data: ParsedItemCard[] = [
       "Multicast 8",
       "Deal 8 damage."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -20747,7 +20542,6 @@ const data: ParsedItemCard[] = [
       "Deal (100/200/300) Damage.",
       "When you use another Weapon, Charge this 2 second(s)."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -20873,7 +20667,6 @@ const data: ParsedItemCard[] = [
       "If your enemy has at least (6/5/4) items, destroy a small enemy item for the fight.",
       "When you destroy an item during combat, your Dinosaurs permanently gain (10/15/20) damage."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -21002,7 +20795,6 @@ const data: ParsedItemCard[] = [
       "Deal (10/20/30/40) damage.",
       "Your other Weapons gain (+10/+20/+30/+40) damage for the fight."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -21132,7 +20924,6 @@ const data: ParsedItemCard[] = [
       "Your Shield items gain (6/9/12) Shield for the fight.",
       "If you have another Tool, Weapon, Property or Apparel this has +1 Multicast for each."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -21257,7 +21048,6 @@ const data: ParsedItemCard[] = [
       "Ammo 1",
       "Burn (6/8/10/12)."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -21380,7 +21170,6 @@ const data: ParsedItemCard[] = [
       "Freeze 1 item for (1/2) second(s).",
       "Slow 1 item for (2/3) second(s)."
     ],
-    "remarks": [],
     "packId": "Stelle_Core"
   },
   {
@@ -21504,7 +21293,6 @@ const data: ParsedItemCard[] = [
       "Deal (30/45/60/75) damage.",
       "When you use an adjacent Weapon, it gains (+3/+6/+9/+12) damage for the fight."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -21547,7 +21335,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "Sells for gold"
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -21672,7 +21459,6 @@ const data: ParsedItemCard[] = [
       "Deal (5/10/20/40) damage.",
       "When you sell this, your leftmost weapon gains (+4/+6/+8/+10) Damage."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -21804,7 +21590,6 @@ const data: ParsedItemCard[] = [
       "When you use any item to the left of this, this gains (15/30/45) Damage for the fight.",
       "When you use any item to the right of this, this gains (15/30/45) Shield for the fight."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -21913,7 +21698,6 @@ const data: ParsedItemCard[] = [
       "When you win a fight against a Hero, gain 1 XP. If you had Wanted Poster in play, gain 1 additional XP.",
       "Your items have (10%/20%/30%) Crit Chance."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -22027,7 +21811,6 @@ const data: ParsedItemCard[] = [
       "Slow 1 item(s) for (2/3/4) second(s).",
       "When you use the Core, charge this 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -22148,7 +21931,6 @@ const data: ParsedItemCard[] = [
       "Deal (50/100/200) damage.",
       "When you Burn, this gains (25/50/75) damage for the fight."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -22269,7 +22051,6 @@ const data: ParsedItemCard[] = [
       "Haste adjacent items for (1/2/3) second(s).",
       "When you use an adjacent item, Shield (5/10/15)."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -22394,7 +22175,6 @@ const data: ParsedItemCard[] = [
       "If you have 3 or more Weapons, they gain (+20/+30/+40/+50) Damage for the fight.",
       "If you have 3 or more Shield items, they gain (+20/+30/+40/+50) Shield for the fight."
     ],
-    "remarks": [],
     "packId": "Pyg_Investment_Opportunities"
   },
   {
@@ -22515,7 +22295,6 @@ const data: ParsedItemCard[] = [
       "Cooldown 4 seconds",
       "Your Shield items gain (1/2/3/4) Shield for the fight."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -22636,7 +22415,6 @@ const data: ParsedItemCard[] = [
       "Reload all your items (1/2/3) Ammo and charge them 1 second(s).",
       "At the start of each day, get a Small Ammo item from any hero."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -22760,7 +22538,6 @@ const data: ParsedItemCard[] = [
       "Haste your items for 1 second(s).",
       "Slow your items for 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Vanessa_The_Gang"
   },
   {
@@ -22880,7 +22657,6 @@ const data: ParsedItemCard[] = [
       "Freeze 1 item(s) for (1/2/3) second(s).",
       "When you use a Property, Charge this 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -22990,7 +22766,6 @@ const data: ParsedItemCard[] = [
       "Freeze (1/2) item(s) for 1 second(s).",
       "When you use the Core or another Ray, charge this 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -23111,7 +22886,6 @@ const data: ParsedItemCard[] = [
       "Burn (4/6/8).",
       "Charge another small item (3/4/5) second(s)."
     ],
-    "remarks": [],
     "packId": "Jules_Core"
   },
   {
@@ -23233,7 +23007,6 @@ const data: ParsedItemCard[] = [
       "Deal 300 damage.",
       "When you Slow, Charge this 2 second(s) and this gains (+25/+50/+75) Damage for the fight."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -23348,7 +23121,6 @@ const data: ParsedItemCard[] = [
       "Ammo 1",
       "Haste your other items for (1/2/3) second(s)."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -23462,7 +23234,6 @@ const data: ParsedItemCard[] = [
       "Your weapons have (+20%/+40%/+60%/+80%) Crit Chance.",
       "If you have exactly one weapon, that Weapon has lifesteal."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -23583,7 +23354,6 @@ const data: ParsedItemCard[] = [
       "When you use an adjacent Large item, this gains (30%/60%) damage for the fight.",
       "When you use an adjacent Medium item, this gains (20%/40%) damage for the fight."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -23705,7 +23475,6 @@ const data: ParsedItemCard[] = [
       "Burn 20.",
       "When you Slow, charge this 2 second(s)."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -23807,7 +23576,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "When you sell this, permanently gain (10/20/30/40) Max Health."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -23873,7 +23641,6 @@ const data: ParsedItemCard[] = [
       "When you sell this, get Spare Change equal to its value.",
       "At the start of each hour, spend 2 gold to gain 1 value."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -23999,7 +23766,6 @@ const data: ParsedItemCard[] = [
       "Deal (120/180/240) damage.",
       "When you Haste, Reload this 1 Ammo."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -24104,7 +23870,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "When you use a Potion, transform it into a Potion for the fight and gain (2/3/4) Regen for the fight."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -24228,7 +23993,6 @@ const data: ParsedItemCard[] = [
       "Shield (10/20/40/80).",
       "When you sell a Small item, this gains (5/10/15/20) Shield."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -24352,7 +24116,6 @@ const data: ParsedItemCard[] = [
       "Heal 20.",
       "When you buy an Aquatic item, this gains Heal (3/6/9/12)."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -24461,7 +24224,6 @@ const data: ParsedItemCard[] = [
       "When you Slow, gain (5/10) Regen for the fight.",
       "At the start of each hour, get a Coconut or Citrus."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -24582,7 +24344,6 @@ const data: ParsedItemCard[] = [
       "Haste (2/3/4) item(s) for 1 second(s).",
       "When an adjacent item Burns, charge this 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Dooley_Dooltron"
   },
   {
@@ -24707,7 +24468,6 @@ const data: ParsedItemCard[] = [
       "Burn 2.",
       "When you Freeze, this gains (+2/+4/+6/+8) Burn for the fight."
     ],
-    "remarks": [],
     "packId": "Pyg_Frozen_Assets"
   },
   {
@@ -24829,7 +24589,6 @@ const data: ParsedItemCard[] = [
       "Shield 20.",
       "When you use an adjacent non-weapon item, this gains (10/15/20/25) Shield for the fight."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -24946,7 +24705,6 @@ const data: ParsedItemCard[] = [
       "Deal (25/50) damage.",
       "The first time you use this each fight, destroy a small enemy item for the fight."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -25065,7 +24823,6 @@ const data: ParsedItemCard[] = [
       "Freeze adjacent items for 1 second(s).",
       "Reduce the cooldown of adjacent items by (1/2) second(s) for the fight."
     ],
-    "remarks": [],
     "packId": "Pyg_Frozen_Assets"
   },
   {
@@ -25189,7 +24946,6 @@ const data: ParsedItemCard[] = [
       "Poison yourself (1/2/3/4) for each Virus on your board.",
       "Transform another non-legendary small item on each player's board into Virus for the rest of the fight."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -25313,7 +25069,6 @@ const data: ParsedItemCard[] = [
       "Deal (80/120/160) damage.",
       "Your Lifesteal weapons have +100% Crit Chance."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -25425,7 +25180,6 @@ const data: ParsedItemCard[] = [
       "The weapon to the left of this has (+10/+20/+30/+50) damage.",
       "If you have exactly one weapon, reduce its cooldown by (15%/20%/25%/30%)."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -25550,7 +25304,6 @@ const data: ParsedItemCard[] = [
       "Deal (60/90/120) damage.",
       "When you use another Ammo item, charge this (1/2/3) second(s)."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -25658,7 +25411,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "At the start of each fight, transform into a (Gold/Diamond) copy of another small, non-legendary item you have for the fight."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -25784,7 +25536,6 @@ const data: ParsedItemCard[] = [
       "When any item gains freeze, charge this (1/2/3) second(s).",
       "When this item gains Freeze, remove Freeze from it."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -25912,7 +25663,6 @@ const data: ParsedItemCard[] = [
       "Reload 1 Ammo item (1/2/3) Ammo.",
       "A Weapon gains (+20/+30/+40) damage for the fight."
     ],
-    "remarks": [],
     "packId": "Vanessa_The_Gang"
   },
   {
@@ -26039,7 +25789,6 @@ const data: ParsedItemCard[] = [
       "When this gains Haste, your weapons gain (4/6/8) damage for the fight.",
       "When this gains Haste, your Shield items gain (4/6/8) shield for the fight."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -26166,7 +25915,6 @@ const data: ParsedItemCard[] = [
       "Burn equal to your Regen.",
       "You have (+4/+8/+12) Regen."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -26298,7 +26046,6 @@ const data: ParsedItemCard[] = [
       "Heal equal to (1x/2x/3x/4x) this item's value.",
       "When you buy another Aquatic item, this gains (1/2/3/4) Value."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -26420,7 +26167,6 @@ const data: ParsedItemCard[] = [
       "Shield 10.",
       "When you Haste or Slow, this gains (+5/+10/+15) Shield for the fight."
     ],
-    "remarks": [],
     "packId": "Vanessa_The_Gang"
   },
   {
@@ -26536,7 +26282,6 @@ const data: ParsedItemCard[] = [
       "Cooldown 7 seconds",
       "Charge adjacent Large items (2/3/4) second(s)."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -26644,7 +26389,6 @@ const data: ParsedItemCard[] = [
       "Slow 1 item(s) for (2/3) second(s).",
       "This has +1 Multicast for each Weapon or friend your enemy has."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -26757,7 +26501,6 @@ const data: ParsedItemCard[] = [
       "You take no damage for (1/2) second(s).",
       "The first time you fall below half health each fight, use this."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -26865,7 +26608,6 @@ const data: ParsedItemCard[] = [
       "Destroy an enemy item for the fight.",
       "When you use an adjacent item, charge this 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -26910,7 +26652,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "When you sell this, get 3 Spare Change."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -27010,7 +26751,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "When you sell this, your leftmost Ammo item gains (1/2/3) Max Ammo."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -27128,7 +26868,6 @@ const data: ParsedItemCard[] = [
       "Deal (2/4) damage.",
       "Burn equal to (1/2) times this item's damage."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -27140,28 +26879,28 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Cooldown 7 seconds",
           "Gain 2 Regen for the fight.",
-          "When you visit a Merchant, permanently destroy the item to the left of this to increase this item's Regen by its Value."
+          "When you visit a Merchant, permanently destroy the item to the left of this to increase this item's Regen by its Value, then get a Chunk of Lead."
         ]
       },
       "Silver": {
         "tooltips": [
           "Cooldown 6 seconds",
           "Gain 2 Regen for the fight.",
-          "When you visit a Merchant, permanently destroy the item to the left of this to increase this item's Regen by its Value."
+          "When you visit a Merchant, permanently destroy the item to the left of this to increase this item's Regen by its Value, then get a Chunk of Lead."
         ]
       },
       "Gold": {
         "tooltips": [
           "Cooldown 5 seconds",
           "Gain 2 Regen for the fight.",
-          "When you visit a Merchant, permanently destroy the item to the left of this to increase this item's Regen by its Value."
+          "When you visit a Merchant, permanently destroy the item to the left of this to increase this item's Regen by its Value, then get a Chunk of Lead."
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 4 seconds",
           "Gain 2 Regen for the fight.",
-          "When you visit a Merchant, permanently destroy the item to the left of this to increase this item's Regen by its Value."
+          "When you visit a Merchant, permanently destroy the item to the left of this to increase this item's Regen by its Value, then get a Chunk of Lead."
         ]
       },
       "Legendary": {
@@ -27250,9 +26989,8 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "Cooldown (7/6/5/4) seconds",
       "Gain 2 Regen for the fight.",
-      "When you visit a Merchant, permanently destroy the item to the left of this to increase this item's Regen by its Value."
+      "When you visit a Merchant, permanently destroy the item to the left of this to increase this item's Regen by its Value, then get a Chunk of Lead."
     ],
-    "remarks": [],
     "packId": "Mak_Dangerous_Experiments"
   },
   {
@@ -27373,7 +27111,6 @@ const data: ParsedItemCard[] = [
       "Ammo 1",
       "Your items gain +100% Crit Chance for (3/4/5) seconds."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -27473,7 +27210,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "When you sell this, you gain (1/2/3/4) Regen."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -27602,7 +27338,6 @@ const data: ParsedItemCard[] = [
       "Deal (10/15/20/25) damage.",
       "Your weapons have (+6/+9/+12/+15) damage."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -27726,7 +27461,6 @@ const data: ParsedItemCard[] = [
       "Deal (8/16/24/32) damage.",
       "This has double damage."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -27847,7 +27581,6 @@ const data: ParsedItemCard[] = [
       "Cooldown 4 seconds",
       "Adjacent items gain (2%/4%/6%/8%) Crit Chance for the fight."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -27963,7 +27696,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "When you sell this, get 3 Small items from any hero."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -28089,7 +27821,6 @@ const data: ParsedItemCard[] = [
       "Shield (20/30/40).",
       "When you Burn, charge this 2 second(s)."
     ],
-    "remarks": [],
     "packId": "Jules_Core"
   },
   {
@@ -28214,7 +27945,6 @@ const data: ParsedItemCard[] = [
       "Deal (15/30/60/120) damage.",
       "When you sell this, your weapons gain (+1/+2/+3/+4) Damage."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -28274,7 +28004,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "At the start of each hour, set this item's value to a number between 0 and (5/10/20/40)."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -28401,7 +28130,6 @@ const data: ParsedItemCard[] = [
       "Deal 15 damage.",
       "Shield 15."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -28526,7 +28254,6 @@ const data: ParsedItemCard[] = [
       "Crit Chance (15%/30%/50%/100%)",
       "Deal (20/40/60/80) damage."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -28659,7 +28386,6 @@ const data: ParsedItemCard[] = [
       "Haste adjacent items for (1/2/3/4) seconds.",
       "When you Burn, charge this 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Vanessa_Mysteries_of_the_Deep"
   },
   {
@@ -28791,7 +28517,6 @@ const data: ParsedItemCard[] = [
       "This has the Types of items you have.",
       "This has +1 Multicast for each of its Types."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -28912,7 +28637,6 @@ const data: ParsedItemCard[] = [
       "Deal (30/40/60) damage.",
       "When you use another weapon, charge this 2 second(s)."
     ],
-    "remarks": [],
     "packId": "Jules_Core"
   },
   {
@@ -29014,7 +28738,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "When you sell this, your items gain (+1%/+2%/+3%/+4%) Crit Chance."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -29122,7 +28845,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "Adjacent items have their cooldowns reduced by (4%/8%/12%/16%)."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -29249,7 +28971,6 @@ const data: ParsedItemCard[] = [
       "Poison (2/3/4).",
       "If you have another item with Burn, Poison, Slow, or Freeze, this has +1 Multicast for each."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -29380,40 +29101,35 @@ const data: ParsedItemCard[] = [
       "Gain Regen equal to 10% of this item's Heal for the fight.",
       "When you Shield, charge this 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
     "id": "2215483f-1fc3-495a-b492-d917dd7d588c",
     "name": "Speedrunner",
-    "startingTier": "Bronze",
+    "startingTier": "Silver",
     "tiers": {
       "Bronze": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "Charge 1 non-Toy item(s) 1 second(s).",
-          "When you use another Toy, charge this 1 second."
-        ]
+        "tooltips": []
       },
       "Silver": {
         "tooltips": [
           "Cooldown 6 seconds",
-          "Charge 1 non-Toy item(s) 2 second(s).",
-          "When you use another Toy, charge this 1 second."
+          "Charge 1 non-Toy item(s) 1 second(s).",
+          "When you use an adjacent Toy, charge this 1 second."
         ]
       },
       "Gold": {
         "tooltips": [
           "Cooldown 6 seconds",
-          "Charge 1 non-Toy item(s) 3 second(s).",
-          "When you use another Toy, charge this 1 second."
+          "Charge 1 non-Toy item(s) 2 second(s).",
+          "When you use an adjacent Toy, charge this 1 second."
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 6 seconds",
-          "Charge 1 non-Toy item(s) 4 second(s).",
-          "When you use another Toy, charge this 1 second."
+          "Charge 1 non-Toy item(s) 3 second(s).",
+          "When you use an adjacent Toy, charge this 1 second."
         ]
       },
       "Legendary": {
@@ -29502,10 +29218,9 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
-      "Charge 1 non-Toy item(s) (1/2/3/4) second(s).",
-      "When you use another Toy, charge this 1 second."
+      "Charge 1 non-Toy item(s) (1/2/3) second(s).",
+      "When you use an adjacent Toy, charge this 1 second."
     ],
-    "remarks": [],
     "packId": "Pyg_Investment_Opportunities"
   },
   {
@@ -29632,7 +29347,6 @@ const data: ParsedItemCard[] = [
       "This gains (+10/+20/+30) Damage for the fight.",
       "When this gains Haste or when you Freeze, Charge this 2 second(s)."
     ],
-    "remarks": [],
     "packId": "Pyg_Frozen_Assets"
   },
   {
@@ -29744,7 +29458,6 @@ const data: ParsedItemCard[] = [
       "Deal 1 damage.",
       "Double this item's damage for the fight."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -29863,7 +29576,6 @@ const data: ParsedItemCard[] = [
       "When ANY item gains Freeze, Shield (50/75/100).",
       "When one of your items gains Freeze, reduce the duration by half."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -29978,7 +29690,6 @@ const data: ParsedItemCard[] = [
       "Heal (100/200).",
       "This item's cooldown is reduced by 5 seconds for each adjacent large item."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -30109,7 +29820,6 @@ const data: ParsedItemCard[] = [
       "Deal (20/40/60/80) damage.",
       "When you sell this, get 2 Spare Change."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -30241,7 +29951,6 @@ const data: ParsedItemCard[] = [
       "Deal (6/12/24/48) damage.",
       "This deals double Crit damage."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -30371,7 +30080,6 @@ const data: ParsedItemCard[] = [
       "Deal (100/150/200) damage.",
       "When you Burn, Reload this 1 ammo."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -30491,7 +30199,6 @@ const data: ParsedItemCard[] = [
       "Haste a non-weapon item for 2 second(s).",
       "When you use another non-weapon item, Charge this 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -30591,7 +30298,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "When you use the weapon to the left of this, Poison (2/3/4/5)."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -30717,7 +30423,6 @@ const data: ParsedItemCard[] = [
       "Slow 1 item(s) for (1/2/3/4) second(s).",
       "For each adjacent Friend or Ray, this has +1 Multicast."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -30841,7 +30546,6 @@ const data: ParsedItemCard[] = [
       "Cooldown 6 seconds",
       "Shield equal to (1x/2x/3x) your gold."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -30945,7 +30649,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "When your enemy uses an item, deal (1/10) damage."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -31068,7 +30771,6 @@ const data: ParsedItemCard[] = [
       "Slow (1/2/3/4) item(s) for 1 second(s).",
       "Gain (1/3/5/7) Regen for the fight."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -31192,7 +30894,6 @@ const data: ParsedItemCard[] = [
       "This has +1 Multicast if it is adjacent to a Friend.",
       "This has +1 Multicast if it is adjacent to a Tool."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -31306,7 +31007,6 @@ const data: ParsedItemCard[] = [
       "Deal 200 damage.",
       "This deals quadruple crit damage."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -31406,7 +31106,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "When you sell this, reduce your items' cooldowns by (2%/4%/6%/8%)."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -31529,7 +31228,6 @@ const data: ParsedItemCard[] = [
       "Burn (3/5/7/9).",
       "Gain (1/4/7/10) Regen for the fight."
     ],
-    "remarks": [],
     "packId": "Pyg_Frozen_Assets"
   },
   {
@@ -31653,7 +31351,6 @@ const data: ParsedItemCard[] = [
       "Heal (20/30/40/50).",
       "This has +1 Multicast for each Property you have."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -31758,7 +31455,6 @@ const data: ParsedItemCard[] = [
       "When you use a Friend, Haste it for (1/2) second(s).",
       "Adjacent items are Friends."
     ],
-    "remarks": [],
     "packId": "Vanessa_The_Gang"
   },
   {
@@ -31876,7 +31572,6 @@ const data: ParsedItemCard[] = [
       "Shield equal to (2/3) times the value of your items.",
       "This has triple value in combat."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -31997,7 +31692,6 @@ const data: ParsedItemCard[] = [
       "Deal (30/40/50) damage for each Weapon or Tech item you have.",
       "This deals (2/3/4) times damage if it is your only friend."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -32127,7 +31821,6 @@ const data: ParsedItemCard[] = [
       "Slow 2 items for (3/4/5/6) second(s).",
       "When you sell this, your leftmost Slow item gains +1 Slow duration."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -32249,7 +31942,6 @@ const data: ParsedItemCard[] = [
       "Slow (1/2/3) item(s) for 1 second(s).",
       "When an adjacent item Poisons or Burns, charge this 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Dooley_Dooltron"
   },
   {
@@ -32375,7 +32067,6 @@ const data: ParsedItemCard[] = [
       "Freeze 1 item(s) for 1 second(s).",
       "When you freeze, adjacent Poison items gain (+2/+4/+6/+8) Poison for the fight."
     ],
-    "remarks": [],
     "packId": "Vanessa_Mysteries_of_the_Deep"
   },
   {
@@ -32504,7 +32195,6 @@ const data: ParsedItemCard[] = [
       "Charge all items to the right of this 1 second(s).",
       "When you use any item to the left of this, Charge this 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -32618,7 +32308,6 @@ const data: ParsedItemCard[] = [
       "Cooldown 9 seconds",
       "Deal (500/1000) damage to the player with less health."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -32740,7 +32429,6 @@ const data: ParsedItemCard[] = [
       "Heal (25/50/100/200).",
       "When you sell this, your Heal items gain (+10/+20/+30/+40) Heal."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -32866,7 +32554,6 @@ const data: ParsedItemCard[] = [
       "Burn 10.",
       "When you use an adjacent item or Dragon item, this gains (+6/+8/+10) Burn for the fight."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -32990,7 +32677,6 @@ const data: ParsedItemCard[] = [
       "Haste 1 item(s) for (1/2/3/4) second(s).",
       "For each adjacent Tool or Food item, this gains +1 Multicast."
     ],
-    "remarks": [],
     "packId": "Jules_Core"
   },
   {
@@ -33113,7 +32799,6 @@ const data: ParsedItemCard[] = [
       "Gain 3 Regen for the fight.",
       "When you use a potion, this gains (+3/+6/+9) Burn and (+3/+6/+9) Regen for the fight."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -33221,7 +32906,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "Your items have (+10%/+20%/+30%/+40%) Crit Chance."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -33337,7 +33021,6 @@ const data: ParsedItemCard[] = [
       "Shield (75/150).",
       "When you gain Burn, Haste your items (1/2) second(s)."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -33461,7 +33144,6 @@ const data: ParsedItemCard[] = [
       "Deal 40 damage.",
       "When you Haste, this gains (20/40/60) damage for the fight."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -33586,7 +33268,6 @@ const data: ParsedItemCard[] = [
       "Ammo 4",
       "Charge the item to the left of this (1/2/3/4) second(s)."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -33708,7 +33389,6 @@ const data: ParsedItemCard[] = [
       "Shield (30/40/50).",
       "Adjacent Toys have +1 Multicast."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -33825,7 +33505,6 @@ const data: ParsedItemCard[] = [
       "Charge the Tech item to the right of this (1/2) second(s).",
       "When this gains haste, charge this (1/2) second(s)."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -33949,7 +33628,6 @@ const data: ParsedItemCard[] = [
       "Your Aquatic items gain (+4%/+6%/+8%/+10%) Crit Chance for the fight.",
       "When you buy this, get a Piranha."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -34071,7 +33749,6 @@ const data: ParsedItemCard[] = [
       "Adjacent items gain (+3/+6/+9) value for the fight.",
       "When you use an adjacent item, Heal equal to the value of adjacent items."
     ],
-    "remarks": [],
     "packId": "Pyg_Investment_Opportunities"
   },
   {
@@ -34199,7 +33876,6 @@ const data: ParsedItemCard[] = [
       "Shield equal to this item's damage.",
       "If you have another vehicle or large item, reduce this item's cooldown by 50%."
     ],
-    "remarks": [],
     "packId": "Vanessa_Mysteries_of_the_Deep"
   },
   {
@@ -34321,7 +33997,6 @@ const data: ParsedItemCard[] = [
       "Burn (4/5/6/7).",
       "When you use a non-weapon item, Charge this 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -34447,7 +34122,6 @@ const data: ParsedItemCard[] = [
       "Deal (5/10/15) Damage.",
       "Double this item's damage for the fight."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -34584,7 +34258,6 @@ const data: ParsedItemCard[] = [
       "Deal (30/45/60/75) damage.",
       "This has (+1/+2/+3/+4) Max Ammo for each Toy you have."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -34701,7 +34374,6 @@ const data: ParsedItemCard[] = [
       "Burn equal to this item's damage.",
       "This gains Damage equal to your enemy's Burn for the fight."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -34803,7 +34475,6 @@ const data: ParsedItemCard[] = [
       "When you use the item to the left of this, charge the item to the right of this for (1/2) second(s).",
       "When you use the Core, it gains (+20/+40) damage for the fight."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -34903,7 +34574,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "When you sell this, your leftmost Poison item gains (+1/+2/+3/+4) Poison."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -35019,7 +34689,6 @@ const data: ParsedItemCard[] = [
       "When you win a fight, this gains (3/6/9) value.",
       "Your weapons have + damage equal to this item's value."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -35133,7 +34802,6 @@ const data: ParsedItemCard[] = [
       "Deal (20/30/40/50) damage.",
       "When you win a fight against a Monster with this, get a random Loot item."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -35259,7 +34927,6 @@ const data: ParsedItemCard[] = [
       "Deal 33 damage.",
       "When you Crit with another item, Charge this (1/2/3) second(s)."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -35380,7 +35047,6 @@ const data: ParsedItemCard[] = [
       "Haste adjacent items for (1/2/3) second(s).",
       "When you use an adjacent Tech item, charge this 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -35425,7 +35091,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "You have (+50%/+75%/+100%) Max Health."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -35550,7 +35215,6 @@ const data: ParsedItemCard[] = [
       "Haste the item to the right of this for (1/2/3/4) second(s).",
       "Slow the item to the left of this for 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -35674,7 +35338,6 @@ const data: ParsedItemCard[] = [
       "Multicast 3",
       "Deal (8/16/24/32) damage."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -35805,7 +35468,6 @@ const data: ParsedItemCard[] = [
       "Deal (40/60/80/100) damage.",
       "Slow 1 item for (2/3/4/5) second(s)."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -35907,7 +35569,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "The item to the left of this has its cooldown reduced by (25%/50%)."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -36032,7 +35693,6 @@ const data: ParsedItemCard[] = [
       "Heal (20/30/40/50).",
       "Haste 1 item for (1/2/3/4) second(s)."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -36143,7 +35803,6 @@ const data: ParsedItemCard[] = [
       "When you use a potion, deal (10/15/20) damage.",
       "When you Reload or transform a potion, this gains (+10/+15/+20) damage for the fight."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -36243,7 +35902,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "When you sell this, get 3 Chocolate Bars."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -36373,7 +36031,6 @@ const data: ParsedItemCard[] = [
       "Deal (30/60/120/240) damage.",
       "This has +1 Multicast if you have more health than your enemy."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -36485,7 +36142,6 @@ const data: ParsedItemCard[] = [
       "Cooldown 3 seconds",
       "Transform into a (Silver/Gold/Diamond) copy of another small, non-legendary item you have for the fight."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -36606,7 +36262,6 @@ const data: ParsedItemCard[] = [
       "Haste your other items for 2 second(s).",
       "When you use an adjacent item, charge this 2 second(s)."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -36737,7 +36392,6 @@ const data: ParsedItemCard[] = [
       "When you use another Weapon, this gains (+5%/+10%/+15%/+20%) Crit chance for the fight.",
       "This deals double Crit damage."
     ],
-    "remarks": [],
     "packId": "Vanessa_The_Gang"
   },
   {
@@ -36863,7 +36517,6 @@ const data: ParsedItemCard[] = [
       "Deal (6/12/24/48) damage.",
       "When you buy this, get a Truffle."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -36984,7 +36637,6 @@ const data: ParsedItemCard[] = [
       "Deal damage equal to (30%/40%/50%) of your enemy's Max Health and destroy this.",
       "When you Burn, charge this 2 second(s)."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -37100,7 +36752,6 @@ const data: ParsedItemCard[] = [
       "Burn (4/6).",
       "For each adjacent Friend or Property, this gains (+4/+8) Burn."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -37200,7 +36851,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "At the start of each fight, freeze 1 item(s) for (3/4/5/6) second(s)."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -37321,7 +36971,6 @@ const data: ParsedItemCard[] = [
       "Deal 100 damage.",
       "When you use another Toy, Friend or Ammo item, charge this 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -37422,7 +37071,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "Your Friends have +1 Multicast."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -37545,7 +37193,6 @@ const data: ParsedItemCard[] = [
       "Heal (5/10/20/40).",
       "Shield (5/10/20/40)."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -37665,7 +37312,6 @@ const data: ParsedItemCard[] = [
       "Poison (4/6/8).",
       "When you use the Core or another Ray, this and adjacent Poison items gain (2/3/4) Poison for the fight."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -37724,7 +37370,6 @@ const data: ParsedItemCard[] = [
       "Adjacent items have (+3%/+6%/+9%/+12%) Crit chance.",
       "When you sell this, your items gain (+1%/+2%/+3%/+4%) Crit Chance."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -37845,7 +37490,6 @@ const data: ParsedItemCard[] = [
       "Cooldown 4 seconds",
       "Your weapons gain (1/2/3/4) damage for the fight."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -37963,7 +37607,6 @@ const data: ParsedItemCard[] = [
       "Deal (20/40) Damage.",
       "When you use the item to the right of this, Charge the item to the left of this (1/2) second(s)."
     ],
-    "remarks": [],
     "packId": "Stelle_Core"
   },
   {
@@ -38089,7 +37732,6 @@ const data: ParsedItemCard[] = [
       "Deal 1 Damage.",
       "When your enemy takes damage, this gains (+10/+20/+30) Damage for the fight."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -38209,7 +37851,6 @@ const data: ParsedItemCard[] = [
       "Charge the Tech item to the right of this 1 second(s).",
       "When you buy this, get a small Tech item."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -38341,7 +37982,6 @@ const data: ParsedItemCard[] = [
       "Freeze 1 small item for (1/2/3) second(s).",
       "Slow 1 item for (2/3/4) second(s)."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -38458,7 +38098,6 @@ const data: ParsedItemCard[] = [
       "Adjacent Weapons gain (5/10) Damage for the fight.",
       "Adjacent Shield items gain (5/10) Shield for the fight."
     ],
-    "remarks": [],
     "packId": "Stelle_Core"
   },
   {
@@ -38585,7 +38224,6 @@ const data: ParsedItemCard[] = [
       "Deal (50/100/200) damage.",
       "When you gain gold, this gains + damage equal to (1x/2x/3x) the amount of gold gained."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -38711,7 +38349,6 @@ const data: ParsedItemCard[] = [
       "Deal damage equal to the highest Shield value of items you have.",
       "Your Shield items gain (+2/+4/+6/+8) Shield for the fight."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -38833,7 +38470,6 @@ const data: ParsedItemCard[] = [
       "A Poison item gains + Poison equal to (15%/25%) of this item's damage for the fight.",
       "A Regen item gains + Regen equal to (15%/25%) of this item's damage for the fight."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -38952,7 +38588,6 @@ const data: ParsedItemCard[] = [
       "Haste adjacent items for (1/2/3/4) second(s).",
       "When you sell this, your leftmost Haste item gains +1 Haste duration."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -39072,7 +38707,6 @@ const data: ParsedItemCard[] = [
       "Deal 20 damage.",
       "When you Crit, double this item's damage for the fight."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -39170,7 +38804,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "At the start of each day, get a Chocolate Bar, Spare Change and Truffle."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -39296,7 +38929,6 @@ const data: ParsedItemCard[] = [
       "Deal 15 damage.",
       "When you heal or gain Regen, this gains (+5/+10/+15/+20) damage for the fight."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -39402,7 +39034,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "When you transform a Reagent, permanently gain (5/10/15) Regen."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -39529,7 +39160,6 @@ const data: ParsedItemCard[] = [
       "Deal (20/40/80) damage.",
       "When you Level Up, if you have at least 3 tools, upgrade an item of a lower tier."
     ],
-    "remarks": [],
     "packId": "Stelle_Core"
   },
   {
@@ -39648,7 +39278,6 @@ const data: ParsedItemCard[] = [
       "Gain 4 Regen for the fight.",
       "When you Poison, this gains (+1/+2/+3) Regen for the fight."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -39777,7 +39406,6 @@ const data: ParsedItemCard[] = [
       "When you win a fight, get a Piggle.",
       "At the start of each day, upgrade a random Piggle."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -39899,7 +39527,6 @@ const data: ParsedItemCard[] = [
       "Burn (3/6/9/12).",
       "Your other Burn items have (+3/+4/+5/+6) Burn."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -40021,7 +39648,6 @@ const data: ParsedItemCard[] = [
       "Deal 20 damage.",
       "When this gains Haste, this and the weapon to the left of this gains (20/40/60) damage for the fight."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -40149,7 +39775,6 @@ const data: ParsedItemCard[] = [
       "This and Burn items to the right of this gain (2/4/6) Burn for the fight.",
       "When you use any item to the left of this, Charge this 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -40280,7 +39905,6 @@ const data: ParsedItemCard[] = [
       "Deal (10/15/20/25) damage.",
       "Shield (10/15/20/25)."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -40408,7 +40032,6 @@ const data: ParsedItemCard[] = [
       "Deal (25/35/45) Damage.",
       "This deals double Crit damage."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -40521,7 +40144,6 @@ const data: ParsedItemCard[] = [
       "Ammo 1",
       "Slow all enemy items for (3/4/5) second(s)."
     ],
-    "remarks": [],
     "packId": "Stelle_Core"
   },
   {
@@ -40627,7 +40249,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "At the start of each day, permanently gain (100/200/300) Max Health."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -40744,7 +40365,6 @@ const data: ParsedItemCard[] = [
       "Poison equal to your Regen.",
       "You have (+10/+20) Regen."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -40867,7 +40487,6 @@ const data: ParsedItemCard[] = [
       "Burn (3/6/9) for each type this has.",
       "When you sell an item, this gains that item's type(s)."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -40973,7 +40592,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "Adjacent items have (+1/+2/+3/+4) Max Ammo."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -41093,7 +40711,6 @@ const data: ParsedItemCard[] = [
       "Burn (2/3/4).",
       "When you use another friend, this gains (2/3/4) Burn for the fight."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -41214,7 +40831,6 @@ const data: ParsedItemCard[] = [
       "Cooldown 4 seconds",
       "The item to the left of this gains (4%/8%/12%/16%) Crit Chance for the fight."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -41333,7 +40949,6 @@ const data: ParsedItemCard[] = [
       "Cooldown 11 seconds",
       "Deal (15/30/60/100) damage for each Small item you have (including Stash)."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -41458,7 +41073,6 @@ const data: ParsedItemCard[] = [
       "Deal (15/30/60) damage.",
       "When you use another Ammo item, Reload 1 ammo."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -41572,7 +41186,6 @@ const data: ParsedItemCard[] = [
       "Ammo 3",
       "Increase an enemy item's cooldown by (1/2/3) second(s) for the fight."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -41699,7 +41312,6 @@ const data: ParsedItemCard[] = [
       "When you use another Friend, this gains (10/20/30) damage for the fight.",
       "Your other Friends' cooldowns are reduced by (10%/20%/30%)."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -41823,7 +41435,6 @@ const data: ParsedItemCard[] = [
       "Shield 20.",
       "When you Freeze, your Shield items get (+10/+20/+30) Shield for the fight."
     ],
-    "remarks": [],
     "packId": "Pyg_Frozen_Assets"
   },
   {
@@ -41952,7 +41563,6 @@ const data: ParsedItemCard[] = [
       "This has +1 Multicast for each adjacent Potion or Reagent.",
       "At the start of each day, get a Catalyst."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -42080,7 +41690,6 @@ const data: ParsedItemCard[] = [
       "Shield (50/75/100/125).",
       "Your Shield items have (+20%/+30%/+40%/+50%) Crit Chance."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -42193,7 +41802,6 @@ const data: ParsedItemCard[] = [
       "The Sandstorm begins!",
       "Slow (1/2/3) item for 3 second(s)."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -42318,7 +41926,6 @@ const data: ParsedItemCard[] = [
       "Shield 20.",
       "Burn 2."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -42448,7 +42055,6 @@ const data: ParsedItemCard[] = [
       "Deal (20/30/40) damage.",
       "When you use the Core, Reload this."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -42573,7 +42179,6 @@ const data: ParsedItemCard[] = [
       "Your weapons gain +10 damage for the fight.",
       "When you gain gold, increase the damage bonus of this item by the amount gained."
     ],
-    "remarks": [],
     "packId": "Vanessa_The_Gang"
   },
   {
@@ -42692,7 +42297,6 @@ const data: ParsedItemCard[] = [
       "Cooldown 6 seconds",
       "Shield (10/15/20/25) for each Aquatic item you have."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -42803,7 +42407,6 @@ const data: ParsedItemCard[] = [
       "Aquatic items to the left of this have their cooldowns reduced by (10%/20%/30%).",
       "Weapons to the right of this have (+25/+50/+100) damage."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -42925,7 +42528,6 @@ const data: ParsedItemCard[] = [
       "Heal (1/2/3/4).",
       "This permanently gains (+1/+2/+3/+4) Heal."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -43027,7 +42629,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "When you sell this, permanently gain (1/2/3/4) Regen."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -43148,7 +42749,6 @@ const data: ParsedItemCard[] = [
       "Cooldown 4 seconds",
       "Adjacent Shield items (+2/+4/+6/+8) Shield for the fight."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -43214,7 +42814,6 @@ const data: ParsedItemCard[] = [
       "Adjacent Weapons have (+5/+10/+20/+40) damage.",
       "When you sell this, your weapons gain (2/4/6/8) damage."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -43335,7 +42934,6 @@ const data: ParsedItemCard[] = [
       "Cooldown 4 seconds",
       "The weapon to the right of this gains (+4/+8/+12/+16) damage for the fight."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -43456,7 +43054,6 @@ const data: ParsedItemCard[] = [
       "Multicast 2",
       "Deal damage equal to (10%/15%/20%) of your Max Health."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -43581,7 +43178,6 @@ const data: ParsedItemCard[] = [
       "When you use a Potion, Burn (8/12/16).",
       "At the start of each day, get a Catalyst."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -43690,7 +43286,6 @@ const data: ParsedItemCard[] = [
       "When you use a weapon, your weapons gain (5/10/15) Damage for the fight.",
       "When you use a Weapon, Haste it for (1/2/3) second(s)."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -43802,7 +43397,6 @@ const data: ParsedItemCard[] = [
       "When you poison yourself, Poison (4/8/12).",
       "When you use an adjacent item, Poison yourself (4/8/12) and gain (2/4/6) Regen for the fight."
     ],
-    "remarks": [],
     "packId": "Mak_Dangerous_Experiments"
   },
   {
@@ -43933,7 +43527,6 @@ const data: ParsedItemCard[] = [
       "Deal 20 Damage.",
       "When you poison, this gains (10/15/20/25) damage for the fight."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -44060,7 +43653,6 @@ const data: ParsedItemCard[] = [
       "Deal (30/40/50) damage.",
       "Gain (1/2/3) gold."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -44185,7 +43777,6 @@ const data: ParsedItemCard[] = [
       "Poison (1/2/3/4).",
       "Gain (1/2/3/4) Regen for the fight."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -44224,7 +43815,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "When you sell this, gain access to the genie Rit."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -44338,7 +43928,6 @@ const data: ParsedItemCard[] = [
       "At the start of each fight, Poison yourself (4/8/12/16).",
       "The item to the left of this has + Crit Chance equal to your Poison."
     ],
-    "remarks": [],
     "packId": "Mak_Dangerous_Experiments"
   },
   {
@@ -44456,7 +44045,6 @@ const data: ParsedItemCard[] = [
       "Burn (6/9/12).",
       "This has + Burn equal to (50%/75%/100%) of the Burn of your other items."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -44577,7 +44165,6 @@ const data: ParsedItemCard[] = [
       "Reduce the cooldown of your other items by 10% for this fight.",
       "Increase this item's cooldown by (4/3/2) second(s) for the fight."
     ],
-    "remarks": [],
     "packId": "Vanessa_The_Gang"
   },
   {
@@ -44699,7 +44286,6 @@ const data: ParsedItemCard[] = [
       "Gain (50/75/100) Max Health for the fight.",
       "When you Haste or Slow, Charge this 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -44826,7 +44412,6 @@ const data: ParsedItemCard[] = [
       "Deal (15/25/35/50) damage.",
       "When you Slow, charge this 2 second(s)."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -44957,7 +44542,6 @@ const data: ParsedItemCard[] = [
       "Burn (4/6/8/10).",
       "When you use another Weapon or Haste, charge this 2 second(s)."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -45027,25 +44611,25 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "When you use a Busy Bee, Shield equal to the Damage of your strongest Busy Bee."
+          "When one of your Busy Bees deals damage, Shield equal to the Damage dealt."
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "When you use a Busy Bee, Heal equal to the Damage of your strongest Busy Bee."
+          "When one of your Busy Bees deals damage, Heal equal to the Damage dealt."
         ]
       },
       {
         "type": "Toxic",
         "tooltips": [
-          "When you use a Busy Bee, Poison equal to 10% of the Damage of your strongest Busy Bee."
+          "When one of your Busy Bees deals damage, Poison equal to 10% of the Damage dealt."
         ]
       },
       {
         "type": "Fiery",
         "tooltips": [
-          "When you use a Busy Bee, Burn equal to 10% of the Damage of your strongest Busy Bee."
+          "When one of your Busy Bees deals damage, Burn equal to 10% of the Damage dealt."
         ]
       },
       {
@@ -45072,7 +44656,6 @@ const data: ParsedItemCard[] = [
       "When you buy this, get 2 Busy Bees.",
       "When you buy a Property, your Busy Bees gain (+10/+15/+20) damage."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -45176,7 +44759,6 @@ const data: ParsedItemCard[] = [
       "Cooldown 10 seconds",
       "Destroy a small enemy item for the fight."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -45249,7 +44831,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "You have Regen equal to (50%/100%) of the value of adjacent properties."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -45292,7 +44873,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "Sells for gold"
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -45416,7 +44996,6 @@ const data: ParsedItemCard[] = [
       "When you Haste, Slow, Poison, or Burn, charge this 1 second(s).",
       "At the start of each day, get a Reagent."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -45538,7 +45117,6 @@ const data: ParsedItemCard[] = [
       "Ammo 1",
       "Transform into 2 small potions for the fight."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -45659,7 +45237,6 @@ const data: ParsedItemCard[] = [
       "If your enemy has at least (5/4) items, destroy a small or medium enemy item for the fight.",
       "When you destroy an item during combat, your Dinosaurs permanently gain (30/40) damage."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -45783,7 +45360,6 @@ const data: ParsedItemCard[] = [
       "Deal (10/20/30/40) damage.",
       "Your enemy's Shield items lose (5/10/15/20) Shield for the fight."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -45891,7 +45467,6 @@ const data: ParsedItemCard[] = [
       "The weapon to the right of this has (+15%/+20%/+25%) Crit Chance.",
       "If you have exactly one weapon, when you Crit with it charge a non-weapon item (1/1.5/2) second(s)."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -46020,7 +45595,6 @@ const data: ParsedItemCard[] = [
       "The weapon to the right of this has Lifesteal.",
       "At the start of each day, get a Catalyst."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -46144,7 +45718,6 @@ const data: ParsedItemCard[] = [
       "Burn (6/8/10/12).",
       "When you use a small item, charge this 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -46207,7 +45780,6 @@ const data: ParsedItemCard[] = [
       "At the start of each hour, permanently gain (10/20/30) Max Health.",
       "You have (+1/+2/+3) Income."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -46326,7 +45898,6 @@ const data: ParsedItemCard[] = [
       "Your weapons gain (1/2/3/4) damage for the fight.",
       "When you sell this, your weapons gain (3/6/9/12) damage."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -46454,7 +46025,6 @@ const data: ParsedItemCard[] = [
       "Shield (30/60/90/120).",
       "When you sell a Tool, this gains +1 Max Ammo."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -46584,7 +46154,6 @@ const data: ParsedItemCard[] = [
       "Deal (5/10/20/40) damage.",
       "Slow 1 item for (1/2/3/4) second(s)."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -46691,7 +46260,6 @@ const data: ParsedItemCard[] = [
       "ALL Weapon cooldowns are increased by (+1/+2) second(s).",
       "Your non-weapon items' cooldowns are decreased by (1/2) second(s)."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -46802,7 +46370,6 @@ const data: ParsedItemCard[] = [
       "When you use a Weapon, Poison (4/5/6).",
       "Your Weapons have + Damage equal to (50%/75%/100%) of the Poison on your enemy."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -46924,7 +46491,6 @@ const data: ParsedItemCard[] = [
       "Your Shield items gain (+10/+20/+30) Shield and your Weapons (+10/+20/+30) damage for the fight.",
       "When you crit, charge this 3 second(s)."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -47048,7 +46614,6 @@ const data: ParsedItemCard[] = [
       "Deal (10/20/30/40) damage.",
       "This has +1 Multicast if it is adjacent to a Friend. Double this if it is your only Friend."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -47156,7 +46721,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "When you use the Weapon to the left of this, deal (10/15/20/25) damage."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -47282,7 +46846,6 @@ const data: ParsedItemCard[] = [
       "Deal 100 damage.",
       "When you Haste, this gains (60/80/100) damage for the fight."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -47406,7 +46969,6 @@ const data: ParsedItemCard[] = [
       "Slow 1 item(s) for (1/2/3/4) second(s).",
       "When you use an adjacent item, charge this 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -47523,7 +47085,6 @@ const data: ParsedItemCard[] = [
       "This has double value in combat.",
       "If you have 5 or fewer items in play, this has +1 Multicast."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -47644,7 +47205,6 @@ const data: ParsedItemCard[] = [
       "Cooldown 4 seconds",
       "Your Shield item to the right of this gains (+4/+8/+12/+16) Shield for the fight."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -47775,7 +47335,6 @@ const data: ParsedItemCard[] = [
       "When you use another Aquatic or Ammo item, this gains (30/60/90) damage for the fight.",
       "If the item is Large, Reload 1 Ammo."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -47905,7 +47464,6 @@ const data: ParsedItemCard[] = [
       "Shield (10/15/20/25) for each type this has.",
       "This has the Types of items you have in your Stash."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -48032,7 +47590,6 @@ const data: ParsedItemCard[] = [
       "Deal (8/16/24/32) damage.",
       "If this is your only friend, your items have (+10%/+15%/+20%/+25%) Crit Chance."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -48156,7 +47713,6 @@ const data: ParsedItemCard[] = [
       "Poison (2/3/4/5).",
       "When this is transformed, enchant it with Toxic if able."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -48282,7 +47838,6 @@ const data: ParsedItemCard[] = [
       "Slow 1 item for (1/2/3) second(s).",
       "When you slow, this gains (10/20/30) damage for the fight."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -48401,7 +47956,6 @@ const data: ParsedItemCard[] = [
       "Charge your other Relics and Enchanted items (1/2) second(s).",
       "At the start of each day, get a Catalyst."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -48522,7 +48076,6 @@ const data: ParsedItemCard[] = [
       "Cooldown 4 seconds",
       "Deal (10/20/30/40) damage."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -48584,7 +48137,6 @@ const data: ParsedItemCard[] = [
       "When you lose a fight with Stained Glass Window in play, permanently destroy this.",
       "If you have 5 or fewer items in play, their cooldowns are reduced by (10%/20%)."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -48638,7 +48190,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "After you fight a Hero with this in play, permanently gain (100/200/300/400) Max Health."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -48698,7 +48249,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "At the start of each day, get 2 Spare Change."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -48828,7 +48378,6 @@ const data: ParsedItemCard[] = [
       "Deal (8/16/30/48) damage.",
       "When you use this, Reload this 1 Ammo if it is your only weapon with a cooldown."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -48940,7 +48489,6 @@ const data: ParsedItemCard[] = [
       "Freeze (1/2/3) item(s) for 1 second(s).",
       "Cleanse half your Burn."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -49052,7 +48600,6 @@ const data: ParsedItemCard[] = [
       "Cooldown 11 seconds",
       "Deal damage equal to a third of your enemy's max health."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -49173,7 +48720,6 @@ const data: ParsedItemCard[] = [
       "Poison 5.",
       "When this gains Haste, this gains (+5/+10/+15) Poison for the fight."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -49298,7 +48844,6 @@ const data: ParsedItemCard[] = [
       "Heal (30/60/120/240).",
       "When you sell this, your leftmost Heal item gains (+5/+15/+30/+50) Heal."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -49418,7 +48963,6 @@ const data: ParsedItemCard[] = [
       "Multicast (2/3/4)",
       "Deal 5 damage."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -49543,7 +49087,6 @@ const data: ParsedItemCard[] = [
       "Haste your tools for (1/2/3/4) second(s).",
       "Your Weapons gain (+10/+20/+40/+80) damage for the fight."
     ],
-    "remarks": [],
     "packId": "Jules_Core"
   },
   {
@@ -49674,7 +49217,6 @@ const data: ParsedItemCard[] = [
       "This gains 1 Value.",
       "When you sell this, The Core gains + Damage equal to (1x/2x/3x/4x) this item's value. (1/4/12/32)"
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -49790,7 +49332,6 @@ const data: ParsedItemCard[] = [
       "Cooldown 3 seconds",
       "Adjacent items gain (+10%/+15%/+20%) crit chance for the fight."
     ],
-    "remarks": [],
     "packId": "Jules_Core"
   },
   {
@@ -49909,7 +49450,6 @@ const data: ParsedItemCard[] = [
       "Heal equal to (1/2/3) times your gold.",
       "Cleanse half your Burn and Poison."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -50031,7 +49571,6 @@ const data: ParsedItemCard[] = [
       "Burn (8/12/16/20).",
       "When you use a small item, Charge this 2 second(s)."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -50161,7 +49700,6 @@ const data: ParsedItemCard[] = [
       "Multicast 2",
       "Deal (20/40/60/80) damage."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -50255,7 +49793,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "At the start of each fight, Burn (6/9/12/15)."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -50375,7 +49912,6 @@ const data: ParsedItemCard[] = [
       "Freeze 1 item for (1/2) second(s).",
       "When you freeze, charge this 1 second and this gains (100/200) damage for the fight."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -50496,7 +50032,6 @@ const data: ParsedItemCard[] = [
       "Burn 10.",
       "When you gain Regen, charge this 2 second(s)."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -50622,7 +50157,6 @@ const data: ParsedItemCard[] = [
       "When you Haste, this gains (10/20/30) damage for the fight.",
       "When this gains Haste, charge this 2 second(s)."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -50754,7 +50288,6 @@ const data: ParsedItemCard[] = [
       "Burn (6/8/10).",
       "Poison (4/6/8)"
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -50879,7 +50412,6 @@ const data: ParsedItemCard[] = [
       "Shield 20.",
       "When you use an adjacent Friend, this gains (10/15/20/25) Shield for the fight."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -51004,7 +50536,6 @@ const data: ParsedItemCard[] = [
       "Deal (10/15/20/25) damage.",
       "When you use the Core or another Ray, your Weapons gain (+2/+4/+6/+8) Damage for the fight."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -51129,7 +50660,6 @@ const data: ParsedItemCard[] = [
       "Shield 50.",
       "When you buy another Aquatic item, this gains (5/10/15/20) Shield."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -51233,7 +50763,6 @@ const data: ParsedItemCard[] = [
       "When you buy this, get a non-Vanessa item.",
       "Your items from other Heroes have (+15%/+30%/+50%) Crit Chance."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -51354,7 +50883,6 @@ const data: ParsedItemCard[] = [
       "Deal 10 damage.",
       "When you Shield, this gains (5/10/15) Damage for the fight."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -51456,7 +50984,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "When you sell this, permanently gain (10/20/30/40) Max Health."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -51572,7 +51099,6 @@ const data: ParsedItemCard[] = [
       "Cooldown (7/6/5) seconds",
       "Charge adjacent items 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -51685,7 +51211,6 @@ const data: ParsedItemCard[] = [
       "Gain Shield equal to your enemy's burn.",
       "When your enemy uses an item, Burn 1."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -51805,7 +51330,6 @@ const data: ParsedItemCard[] = [
       "Burn (4/6/8).",
       "When you use the Core or another Ray, this and adjacent Burn items gain (2/3/4) Burn for the fight."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -51931,7 +51455,6 @@ const data: ParsedItemCard[] = [
       "When you use an Aquatic item, this gains (+10/+20/+30) Shield for the fight.",
       "Adjacent items are Aquatic."
     ],
-    "remarks": [],
     "packId": "Vanessa_Mysteries_of_the_Deep"
   },
   {
@@ -52031,7 +51554,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "When you sell this, your leftmost Heal item gains (5/10/20/40) Heal."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -52151,7 +51673,6 @@ const data: ParsedItemCard[] = [
       "Deal (24/32) damage.",
       "When you use an Ammo item, deal (24/32) damage."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -52271,7 +51792,6 @@ const data: ParsedItemCard[] = [
       "Deal (10/20) damage.",
       "While your enemy has Poison, this has (+50%/+100%) Crit Chance."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -52284,23 +51804,23 @@ const data: ParsedItemCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "Cooldown 12 seconds",
+          "Cooldown 11 seconds",
           "Your weapons gain Damage equal to this item's value for the fight.",
-          "When you buy a weapon, this gains 2 value and you gain 20 max health."
+          "When you buy a weapon, this gains 3 value and you gain 20 max health."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 10 seconds",
+          "Cooldown 9 seconds",
           "Your weapons gain Damage equal to this item's value for the fight.",
-          "When you buy a weapon, this gains 4 value and you gain 50 max health."
+          "When you buy a weapon, this gains 5 value and you gain 50 max health."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 8 seconds",
+          "Cooldown 7 seconds",
           "Your weapons gain Damage equal to this item's value for the fight.",
-          "When you buy a weapon, this gains 6 value and you gain 100 max health."
+          "When you buy a weapon, this gains 7 value and you gain 100 max health."
         ]
       },
       "Legendary": {
@@ -52396,11 +51916,10 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "Cooldown (12/10/8) seconds",
+      "Cooldown (11/9/7) seconds",
       "Your weapons gain Damage equal to this item's value for the fight.",
-      "When you buy a weapon, this gains (2/4/6) value and you gain (20/50/100) max health."
+      "When you buy a weapon, this gains (3/5/7) value and you gain (20/50/100) max health."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -52500,7 +52019,6 @@ const data: ParsedItemCard[] = [
       "When you sell an item, this gains (1/2/3) value.",
       "You have increased max health equal to (10/15/20) times this item's value."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -52620,7 +52138,6 @@ const data: ParsedItemCard[] = [
       "Cooldown 5 seconds",
       "Haste (2/3/4/5) Aquatic or Toy item(s) for 2 second(s)."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -52742,7 +52259,6 @@ const data: ParsedItemCard[] = [
       "Heal equal to 10% of your Max Health.",
       "When you Heal or gain Regen, gain (50/75/100) Max Health for the fight."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -52869,7 +52385,6 @@ const data: ParsedItemCard[] = [
       "Adjacent items gain (+5/+10/+15/+20) Shield for the fight.",
       "When the item to the left of this Shields, deal (5/10/15/20) damage."
     ],
-    "remarks": [],
     "packId": "Pyg_Investment_Opportunities"
   },
   {
@@ -52990,7 +52505,6 @@ const data: ParsedItemCard[] = [
       "Slow 1 item(s) for (1/2/3) second(s).",
       "When you Slow, Haste 1 item for (1/2/3) second(s)."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -53115,7 +52629,6 @@ const data: ParsedItemCard[] = [
       "Poison (1/2/3) for each type this has.",
       "This has the Types of items you have."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -53244,7 +52757,6 @@ const data: ParsedItemCard[] = [
       "When you transform a Reagent, this permanently gains (+3/+5/+7/+9) Poison.",
       "At the start of each day, spend 3 Gold to get a Chunk of Lead."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -53365,7 +52877,6 @@ const data: ParsedItemCard[] = [
       "Burn both players (4/6/8).",
       "Charge 1 item (1/2/3) second(s)."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -53492,7 +53003,6 @@ const data: ParsedItemCard[] = [
       "Gain (6/9/12) Regen for the fight.",
       "When you Burn, charge this 2 seconds."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -53612,7 +53122,6 @@ const data: ParsedItemCard[] = [
       "Shield (10/20).",
       "When any player uses an item, this gains (10/20) damage and (10/20) shield for the fight."
     ],
-    "remarks": [],
     "packId": "Stelle_Core"
   },
   {
@@ -53662,7 +53171,6 @@ const data: ParsedItemCard[] = [
       "At the start of each day, get a Catalyst.",
       "When you sell Catalyst, gain (1/2/3) Regen."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -53782,7 +53290,6 @@ const data: ParsedItemCard[] = [
       "Shield 20.",
       "When you use a Weapon, this gains (10/15/20) Shield for the fight."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -53903,7 +53410,6 @@ const data: ParsedItemCard[] = [
       "Cooldown 4 seconds",
       "Your items gain (+1%/+2%/+3%/+4%) Crit Chance for the fight."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -54021,7 +53527,6 @@ const data: ParsedItemCard[] = [
       "Ammo 1",
       "Slow the slowest enemy item for (3/4/5/6) second(s)."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -54134,7 +53639,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "The Property to the left of this has double value in combat and has its cooldown reduced by (5%/10%/15%)."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -54259,7 +53763,6 @@ const data: ParsedItemCard[] = [
       "Deal (5/10/20/40) damage.",
       "This has +1 Multicast for each player with Poison."
     ],
-    "remarks": [],
     "packId": "Mak_Dangerous_Experiments"
   },
   {
@@ -54378,7 +53881,6 @@ const data: ParsedItemCard[] = [
       "Cooldown 7 seconds",
       "Deal (10/20/30) damage."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -54499,7 +54001,6 @@ const data: ParsedItemCard[] = [
       "Poison (1/2/3).",
       "Heal equal to your enemy's Poison."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -54615,7 +54116,6 @@ const data: ParsedItemCard[] = [
       "Slow 1 item(s) for (1/2/3/4) second(s).",
       "When you sell this, your leftmost Slow item gains (+1/+2/+3/+4) Slow duration."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -54628,16 +54128,16 @@ const data: ParsedItemCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "Cooldown 12 seconds",
-          "Deal 300 damage.",
+          "Cooldown 14 seconds",
+          "Deal 200 damage.",
           "Haste your other items 1 second(s).",
           "When you use another Friend, charge this 2 second(s)."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 11 seconds",
-          "Deal 600 damage.",
+          "Cooldown 12 seconds",
+          "Deal 400 damage.",
           "Haste your other items 1 second(s).",
           "When you use another Friend, charge this 2 second(s)."
         ]
@@ -54645,7 +54145,7 @@ const data: ParsedItemCard[] = [
       "Diamond": {
         "tooltips": [
           "Cooldown 10 seconds",
-          "Deal 900 damage.",
+          "Deal 800 damage.",
           "Haste your other items 1 second(s).",
           "When you use another Friend, charge this 2 second(s)."
         ]
@@ -54738,12 +54238,11 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "Cooldown (12/11/10) seconds",
-      "Deal (300/600/900) damage.",
+      "Cooldown (14/12/10) seconds",
+      "Deal (200/400/800) damage.",
       "Haste your other items 1 second(s).",
       "When you use another Friend, charge this 2 second(s)."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -54867,7 +54366,6 @@ const data: ParsedItemCard[] = [
       "Haste the Friend to the right of this for (2/2/2/5) second(s).",
       "At the start of each day, get a Small Friend from any Hero."
     ],
-    "remarks": [],
     "packId": "Dooley_Dooltron"
   },
   {
@@ -54992,7 +54490,6 @@ const data: ParsedItemCard[] = [
       "Ammo (6/8/10/12)",
       "Deal 10 damage."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -55103,7 +54600,6 @@ const data: ParsedItemCard[] = [
       "When you use a Weapon, your items with Shield gain (+10/+20/+30) Shield for the fight.",
       "When you use a Shield item, your Weapons gain (+10/+20/+30) Damage for the fight."
     ],
-    "remarks": [],
     "packId": "Pyg_Investment_Opportunities"
   },
   {
@@ -55242,7 +54738,6 @@ const data: ParsedItemCard[] = [
       "Burn 2.",
       "When you slow, this gains (+10/+15/+20/+25) damage and (+2/+4/+6/+8) burn for the fight."
     ],
-    "remarks": [],
     "packId": "Vanessa_Mysteries_of_the_Deep"
   },
   {
@@ -55366,7 +54861,6 @@ const data: ParsedItemCard[] = [
       "When you buy this, get 1 Nanobots.",
       "When you use another Friend, charge this 1 second."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -55496,7 +54990,6 @@ const data: ParsedItemCard[] = [
       "Deal (10/20/30/40) damage.",
       "This loses 25% Crit Chance for the fight."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -55596,7 +55089,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "When you sell this, your leftmost Weapon gains (5/10/15/20) Damage."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -55713,7 +55205,6 @@ const data: ParsedItemCard[] = [
       "Cooldown 5 seconds",
       "Your Poison items gain (+2/+3/+4/+5) Poison for the fight."
     ],
-    "remarks": [],
     "packId": "Mak_Dangerous_Experiments"
   },
   {
@@ -55820,7 +55311,6 @@ const data: ParsedItemCard[] = [
       "You take (10%/20%) less damage.",
       "Your Shield items have +1 Multicast."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -55945,7 +55435,6 @@ const data: ParsedItemCard[] = [
       "Deal (20/40/60/80) damage.",
       "When you use another Tech, charge this 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -56069,7 +55558,6 @@ const data: ParsedItemCard[] = [
       "Deal (50/75/100) damage.",
       "Shield equal to this item's damage."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -56194,7 +55682,6 @@ const data: ParsedItemCard[] = [
       "Gain (1/2/3) Regen for the fight.",
       "Reload this."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -56319,7 +55806,6 @@ const data: ParsedItemCard[] = [
       "Deal (10/20/30/40) Damage.",
       "When you Slow or Poison, Charge this 2 second(s)."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -56438,7 +55924,6 @@ const data: ParsedItemCard[] = [
       "Cooldown 7 seconds",
       "Burn (2/4/6/8)."
     ],
-    "remarks": [],
     "packId": "Stelle_Core"
   },
   {
@@ -56477,7 +55962,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "When you sell this, gain access to the Thieves Guild."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -56535,7 +56019,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "When you visit a Merchant, this and the item to the left of this gains (1/2/3/4) value."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -56635,7 +56118,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "When you sell this, your leftmost Burn item gains (+1/+2/+3/+4) Burn."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -56764,7 +56246,6 @@ const data: ParsedItemCard[] = [
       "Adjacent Heal items gain (10/15/20/25) Heal for the fight.",
       "Adjacent Shield items gain (10/15/20/25) Shield for the fight."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -56901,7 +56382,6 @@ const data: ParsedItemCard[] = [
       "Deal (20/30/40/50) damage.",
       "Burn (2/3/4/5)."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -57009,7 +56489,6 @@ const data: ParsedItemCard[] = [
       "Cooldown 11 seconds",
       "Freeze both players' items for (1/2) second(s)."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -57132,7 +56611,6 @@ const data: ParsedItemCard[] = [
       "Deal (15/20/25) damage for each Friend you have.",
       "This item's cooldown is reduced by 1 second for each adjacent Friend."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -57257,7 +56735,6 @@ const data: ParsedItemCard[] = [
       "Poison (4/8/12/16).",
       "Slow (1/2/3/4) item for 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -57377,7 +56854,6 @@ const data: ParsedItemCard[] = [
       "Adjacent items have (+25%/+50%) Crit Chance.",
       "When you Crit, Charge this 2 second(s)."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -57480,7 +56956,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "Your Aquatic items have +1 Multicast."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -57597,7 +57072,6 @@ const data: ParsedItemCard[] = [
       "Slow 1 item(s) for (1/2/3/4) second(s).",
       "When this or an adjacent item Slows, Haste the item to the left of this for (1/2/3/4) second(s)."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -57709,7 +57183,6 @@ const data: ParsedItemCard[] = [
       "Freeze (1/2/3) item(s) for 1 second(s).",
       "Your other Freeze items have +1 Freeze duration."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -57834,7 +57307,6 @@ const data: ParsedItemCard[] = [
       "Burn (2/3/4).",
       "Charge adjacent items (1/2/3) second(s)."
     ],
-    "remarks": [],
     "packId": "Jules_Core"
   },
   {
@@ -57959,7 +57431,6 @@ const data: ParsedItemCard[] = [
       "Deal (30/60/120/240) damage.",
       "When you sell this, your weapons gain (4/6/8/10) damage."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -58085,7 +57556,6 @@ const data: ParsedItemCard[] = [
       "Deal (12/18/24/32) damage.",
       "Slow 1 item for (2/3/4/5) second(s)."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -58206,7 +57676,6 @@ const data: ParsedItemCard[] = [
       "Cooldown 4 seconds",
       "Adjacent weapons (+3/+6/+9/+12) damage for the fight."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -58325,7 +57794,6 @@ const data: ParsedItemCard[] = [
       "Freeze (1/2/3) item(s) for 1 second(s).",
       "When you Freeze, Poison (6/8/10)."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -58446,7 +57914,6 @@ const data: ParsedItemCard[] = [
       "Poison (4/6/8).",
       "When you Poison, gain (2/6/10) Regen for the fight."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -58568,7 +58035,6 @@ const data: ParsedItemCard[] = [
       "Deal (50/100) damage.",
       "The weapon to the left of this has lifesteal."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -58692,7 +58158,6 @@ const data: ParsedItemCard[] = [
       "Slow 1 item(s) for (1/2/3/4) second(s).",
       "When this is transformed, enchant it with Heavy if able."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -58821,7 +58286,6 @@ const data: ParsedItemCard[] = [
       "This and weapons to the right of this gain (+20/+30/+40) damage for the fight.",
       "When you use any item to the left of this, Charge this 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -58948,7 +58412,6 @@ const data: ParsedItemCard[] = [
       "Gain Regen equal to 5% of your Max Health for the fight.",
       "When you sell a Small item, permanently gain (+10/+20/+40) Max Health."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -59072,7 +58535,6 @@ const data: ParsedItemCard[] = [
       "Shield 10.",
       "This gains (10/15/20/25) Shield for the fight."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -59192,7 +58654,6 @@ const data: ParsedItemCard[] = [
       "When any item gains Freeze, Charge this 3 second(s).",
       "The first time you fall below half health each fight, Freeze 1 item(s) for 99 second(s)."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -59316,7 +58777,6 @@ const data: ParsedItemCard[] = [
       "Deal (10/20/30/40) Damage.",
       "This deals double Crit damage."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -59441,7 +58901,6 @@ const data: ParsedItemCard[] = [
       "Deal (10/20) damage.",
       "At the start of each fight with Dragon Tooth, spend 3 gold and your weapons permanently gain (5/10) damage."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -59565,7 +59024,6 @@ const data: ParsedItemCard[] = [
       "Your Ammo items have (+20%/+30%/+40%) Crit Chance.",
       "When one of your items run out of ammo, Charge this 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -59689,7 +59147,6 @@ const data: ParsedItemCard[] = [
       "Deal damage equal to (1x/2x) this item's value.",
       "When you sell an item, this gains (1/2) value."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -59800,7 +59257,6 @@ const data: ParsedItemCard[] = [
       "Ammo 1",
       "Your weapons gain damage equal to your weakest weapon's damage for the fight."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -59928,7 +59384,6 @@ const data: ParsedItemCard[] = [
       "Deal 20 damage.",
       "When you Slow, Freeze, Burn or Poison, this gains (10/20/30/40) damage for the fight."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -60036,7 +59491,6 @@ const data: ParsedItemCard[] = [
       "Ammo 1",
       "Reduce your enemy's Max Health by (10%/15%/20%) for the fight."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -60155,7 +59609,6 @@ const data: ParsedItemCard[] = [
       "Cooldown 2 seconds",
       "Deal (5/10/15/20) damage."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -60284,7 +59737,6 @@ const data: ParsedItemCard[] = [
       "Adjacent items have their cooldown reduced by (10%/15%/20%).",
       "This has +1 Multicast if you have a Large item."
     ],
-    "remarks": [],
     "packId": "Dooley_Dooltron"
   },
   {
@@ -60404,7 +59856,6 @@ const data: ParsedItemCard[] = [
       "Burn (4/6/8).",
       "If both adjacent items are food, this has +1 Multicast."
     ],
-    "remarks": [],
     "packId": "Jules_Core"
   },
   {
@@ -60529,7 +59980,6 @@ const data: ParsedItemCard[] = [
       "When you Freeze, this gains (+4/+8/+12) Burn for the fight.",
       "The first time you fall below half health each fight, Freeze all enemy items for (1/2/3) seconds."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -60662,7 +60112,6 @@ const data: ParsedItemCard[] = [
       "Shield equal to (1x/2x/3x/4x) this item's value.",
       "When you sell an item, this gains (1/1/1/2) value."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -60781,7 +60230,6 @@ const data: ParsedItemCard[] = [
       "All item cooldowns are increased by (1/2) second(s).",
       "Your items with a cooldown of 8 seconds or greater have +1 Multicast."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -60904,7 +60352,6 @@ const data: ParsedItemCard[] = [
       "Deal (10/20) damage.",
       "At the start of each day, upgrade a Tool of a lower tier."
     ],
-    "remarks": [],
     "packId": "Stelle_Core"
   },
   {
@@ -61029,7 +60476,6 @@ const data: ParsedItemCard[] = [
       "Deal (50/100/150/200) Damage.",
       "When you Crit, reduce this item's cooldown by 1 second(s) for the fight."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -61089,7 +60535,6 @@ const data: ParsedItemCard[] = [
       "When you visit a Merchant, this gains (1/2/3) value.",
       "For every 5 Merchants you visit, upgrade this."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -61191,7 +60636,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "Sells for gold."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -61285,7 +60729,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "When you sell this, your leftmost Freeze item gains +0.5 Freeze duration."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -61411,7 +60854,6 @@ const data: ParsedItemCard[] = [
       "When you use an adjacent item, Poison both players (10/20/30).",
       "When you Poison, this gains +Damage for the fight equal to the amount Poisoned."
     ],
-    "remarks": [],
     "packId": "Mak_Dangerous_Experiments"
   },
   {
@@ -61532,7 +60974,6 @@ const data: ParsedItemCard[] = [
       "Cooldown 4 seconds",
       "The weapon to the left of this gains (+4/+8/+12/+16) damage for the fight."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -61659,7 +61100,6 @@ const data: ParsedItemCard[] = [
       "Shield (15/30/60/120).",
       "When this gains Haste, your items gain (+2%/+4%/+6%/+8%) Crit chance for the fight."
     ],
-    "remarks": [],
     "packId": "Stelle_Core"
   },
   {
@@ -61784,7 +61224,6 @@ const data: ParsedItemCard[] = [
       "Shield equal to this item's Ammo.",
       "At the start of each day, this gains (1/2/3) Max Ammo."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -61898,7 +61337,6 @@ const data: ParsedItemCard[] = [
       "Cooldown 4 seconds",
       "Haste 1 adjacent item for (1/2/3) second(s)."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -62020,7 +61458,6 @@ const data: ParsedItemCard[] = [
       "Burn (10/20/30).",
       "When you Slow, charge this 2 seconds."
     ],
-    "remarks": [],
     "packId": "Vanessa_Mysteries_of_the_Deep"
   },
   {
@@ -62146,7 +61583,6 @@ const data: ParsedItemCard[] = [
       "Poison 3.",
       "When this gains Haste, this gains (+2/+4/+6/+8) Poison for the fight."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -62244,7 +61680,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "When you sell this, upgrade your leftmost (Bronze/Silver/Gold) (or lower)-tier item."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -62374,7 +61809,6 @@ const data: ParsedItemCard[] = [
       "Shield (10/20/40/80).",
       "When you sell this, your leftmost item gains (+4/+6/+8/+10) Damage if it is a Weapon and (+4/+6/+8/+10) Shield if it is a Shield item."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -62488,7 +61922,6 @@ const data: ParsedItemCard[] = [
       "At the start of each day, get a Catalyst and transform the small item to the left of this into a random Potion.",
       "When you buy this, get a Small Reagent."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -62614,7 +62047,6 @@ const data: ParsedItemCard[] = [
       "Cooldown 4 seconds",
       "Shield equal to (1x/2x/3x/4x) this item's value."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -62739,7 +62171,6 @@ const data: ParsedItemCard[] = [
       "Haste your Lifesteal weapons for 1 second(s).",
       "A Weapon gains Lifesteal for the fight."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -62863,7 +62294,6 @@ const data: ParsedItemCard[] = [
       "Poison (1/2/3/4).",
       "When you sell this, your leftmost Poison item gains (+1/+2/+3/+4) Poison."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -62985,7 +62415,6 @@ const data: ParsedItemCard[] = [
       "Burn (4/6).",
       "When you Shield, this gains (1/2) Burn for the fight."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -63085,7 +62514,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "When you sell this, reduce your leftmost item's cooldown by (3%/6%/9%/12%)."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -63210,7 +62638,6 @@ const data: ParsedItemCard[] = [
       "Haste adjacent items (2/3/4) second(s).",
       "When you use another Friend, Charge this 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -63319,7 +62746,6 @@ const data: ParsedItemCard[] = [
       "When you use a friend, charge the Core (1/2) second(s) and Haste a Large item (1/2) second(s).",
       "Your Dooltron has the Core type."
     ],
-    "remarks": [],
     "packId": "Dooley_Dooltron"
   },
   {
@@ -63438,7 +62864,6 @@ const data: ParsedItemCard[] = [
       "Cooldown 5 seconds",
       "Reload the item to the right of this (1/2/3/4) Ammo."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -63563,7 +62988,6 @@ const data: ParsedItemCard[] = [
       "Ammo 3",
       "Burn (4/6/8/10)."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -63672,7 +63096,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "When you sell this, your leftmost item (+1/+2/+3/+4) value."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -63724,7 +63147,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "When you sell this, gain (1/2/3) XP."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -63854,7 +63276,6 @@ const data: ParsedItemCard[] = [
       "Deal 100 damage.",
       "When you Haste, Slow, Freeze, Poison, or Burn, charge this 2 second(s)."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -63978,7 +63399,6 @@ const data: ParsedItemCard[] = [
       "Deal (5/10/20/40) damage.",
       "When you use a property, this gains (10/20/30/40) damage for the fight."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -64101,7 +63521,6 @@ const data: ParsedItemCard[] = [
       "Poison both players (2/4/6/8).",
       "Gain Regen for the fight equal to this item's Poison."
     ],
-    "remarks": [],
     "packId": "Mak_Dangerous_Experiments"
   },
   {
@@ -64226,7 +63645,6 @@ const data: ParsedItemCard[] = [
       "Deal 1 damage.",
       "Poison equal to this item's damage."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -64333,7 +63751,6 @@ const data: ParsedItemCard[] = [
       "Cooldown 10 seconds",
       "Freeze both players' non-Core items for (2/3) second(s)."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -64398,7 +63815,6 @@ const data: ParsedItemCard[] = [
       "Adjacent Weapons permanently gain (+1/+2/+3/+4) Damage.",
       "This permanently loses 1 Max Ammo and destroy this if it has 0 Max Ammo."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -64526,7 +63942,6 @@ const data: ParsedItemCard[] = [
       "When you Shield or Heal, give your items (+1/+2) value for the fight.",
       "This item's cooldown is reduced by 1% for every value it has."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -64632,7 +64047,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "The item to the left of this is a Vehicle and has its cooldown reduced by (5%/10%/15%)."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -64759,7 +64173,6 @@ const data: ParsedItemCard[] = [
       "Shield (10/20/30).",
       "At the start of each hour, spend 2 gold to get a Gumball."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -64859,7 +64272,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "At the start of each fight, your Small items gain Haste for (1/2/3) second(s)."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -64984,7 +64396,6 @@ const data: ParsedItemCard[] = [
       "Haste the Aquatic item to the right of this for 2 second(s).",
       "At the start of each day, get a Small aquatic item."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -65114,7 +64525,6 @@ const data: ParsedItemCard[] = [
       "Deal (5/10/15/20) damage.",
       "When this is transformed, enchant it with Obsidian if able."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -65235,7 +64645,6 @@ const data: ParsedItemCard[] = [
       "Deal 100 damage.",
       "When you Burn, charge this (1/2) second(s)."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -65356,7 +64765,6 @@ const data: ParsedItemCard[] = [
       "Deal 20 damage.",
       "When you use a Friend, this gains (20/40/60) damage for the fight."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -65481,7 +64889,6 @@ const data: ParsedItemCard[] = [
       "Shield (20/40/80/160).",
       "When you sell this, your items gain (+1/+2/+3/+4) value."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -65608,7 +65015,6 @@ const data: ParsedItemCard[] = [
       "When your opponent uses a Weapon or Burn item, Charge this 2 second(s).",
       "The first time you fall below half health each fight, use this."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -65718,7 +65124,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "When this is transformed, gain a Chunk of Gold."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -65833,7 +65238,6 @@ const data: ParsedItemCard[] = [
       "Shield equal to your current Health.",
       "Deal damage equal to your shield."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -65938,7 +65342,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "When your enemy uses an item, Freeze it for (0.5/1) second(s)."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -66054,7 +65457,6 @@ const data: ParsedItemCard[] = [
       "Burn (5/10).",
       "When you Burn, this gains (5/10) Burn for the fight."
     ],
-    "remarks": [],
     "packId": "Jules_Core"
   },
   {
@@ -66125,7 +65527,6 @@ const data: ParsedItemCard[] = [
       "Weapon Properties adjacent to this have + Damage equal to (50%/100%) of the value of your highest value item.",
       "Shield Properties adjacent to this have + Shield equal to (50%/100%) of the value of your highest value item."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -66258,7 +65659,6 @@ const data: ParsedItemCard[] = [
       "When you use any item to the left of this, Charge this 1 second(s).",
       "When you Crit with any item, Charge this 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -66360,7 +65760,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "When you sell this, your weapons gain (1/2/3/4) damage."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -66481,7 +65880,6 @@ const data: ParsedItemCard[] = [
       "Ammo 1",
       "Gain (8/16/24) Regen for the fight."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -66606,7 +66004,6 @@ const data: ParsedItemCard[] = [
       "Burn (3/4/5/6).",
       "When you Slow, this gains (+1/+2/+3/+4) Burn for the fight."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -66723,7 +66120,6 @@ const data: ParsedItemCard[] = [
       "Ammo 1",
       "Deal damage equal to your enemy's max health."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -66840,7 +66236,6 @@ const data: ParsedItemCard[] = [
       "Deal 2 damage.",
       "Poison equal to this item's damage."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -66965,7 +66360,6 @@ const data: ParsedItemCard[] = [
       "Deal 1 damage.",
       "When you use an adjacent item, charge this (1/2/3/4) second(s)."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -67082,7 +66476,6 @@ const data: ParsedItemCard[] = [
       "Deal 2 damage.",
       "Gain Regen for the fight equal to this item's damage."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -67206,7 +66599,6 @@ const data: ParsedItemCard[] = [
       "Deal 40 damage.",
       "When you win a fight with Langxian in play, this gains (40/60/80/100) damage."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -67322,7 +66714,6 @@ const data: ParsedItemCard[] = [
       "Deal (50/100) damage.",
       "Reduce this item's cooldown by (10%/20%) for the fight."
     ],
-    "remarks": [],
     "packId": "Stelle_Core"
   },
   {
@@ -67448,7 +66839,6 @@ const data: ParsedItemCard[] = [
       "Deal (50/100/150/200) damage.",
       "When you Shield, Charge this 2 second(s)."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -67564,7 +66954,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "Every 50 you spend, upgrade an item of a lower tier."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -67693,7 +67082,6 @@ const data: ParsedItemCard[] = [
       "When you transform a Reagent, this permanently gains (+3/+5/+7/+9) Burn.",
       "At the start of each day, spend 3 Gold to get a Chunk of Lead."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -67795,7 +67183,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "When your enemy uses an item, Slow it for (1/2) second(s)."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -67907,7 +67294,6 @@ const data: ParsedItemCard[] = [
       "When a player uses a Weapon, Poison that player (3/4/5).",
       "When you use a non-Weapon item, gain (3/4/5) Regen for the fight."
     ],
-    "remarks": [],
     "packId": "Mak_Dangerous_Experiments"
   },
   {
@@ -68028,7 +67414,6 @@ const data: ParsedItemCard[] = [
       "Burn 5.",
       "When this gains Haste, this gains (5/10/15) Burn for the fight."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -68130,7 +67515,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "When you sell this, your Shield items gain (1/2/3/4) Shield."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -68266,7 +67650,6 @@ const data: ParsedItemCard[] = [
       "Deal (8/16/24/32) damage.",
       "When you Crit, Reload this 2 Ammo."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -68391,7 +67774,6 @@ const data: ParsedItemCard[] = [
       "Deal 1 damage.",
       "Burn equal to this item's damage."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -68511,7 +67893,6 @@ const data: ParsedItemCard[] = [
       "Deal 100 damage.",
       "This deals (3/5/10) times more damage if it is your only weapon."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -68633,7 +68014,6 @@ const data: ParsedItemCard[] = [
       "Burn (4/5/6).",
       "When you Burn, Heal (15/30/45) and gain (2/4/6) Regen for the fight."
     ],
-    "remarks": [],
     "packId": "Pyg_Frozen_Assets"
   },
   {
@@ -68740,7 +68120,6 @@ const data: ParsedItemCard[] = [
       "Cooldown 10 seconds",
       "Freeze 3 small items for (1/2) second(s)."
     ],
-    "remarks": [],
     "packId": "Jules_Core"
   },
   {
@@ -68866,7 +68245,6 @@ const data: ParsedItemCard[] = [
       "Deal (10/20/40/80) Damage",
       "When this gains haste, it gains (+10/+20/+40/+80) damage for the fight."
     ],
-    "remarks": [],
     "packId": "Jules_Core"
   },
   {
@@ -68991,7 +68369,6 @@ const data: ParsedItemCard[] = [
       "Deal (20/40/80/160) damage.",
       "When you sell this, reduce your items' cooldown by (1%/2%/3%/4%)."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -69001,29 +68378,29 @@ const data: ParsedItemCard[] = [
     "tiers": {
       "Bronze": {
         "tooltips": [
-          "Cooldown 10 seconds",
-          "Slow 1 item(s) for 1 second(s).",
+          "Cooldown 7 seconds",
+          "Slow 1 item(s) for 3 second(s).",
           "At the start of each fight, use this."
         ]
       },
       "Silver": {
         "tooltips": [
-          "Cooldown 10 seconds",
-          "Slow 2 item(s) for 1 second(s).",
+          "Cooldown 6 seconds",
+          "Slow 1 item(s) for 3 second(s).",
           "At the start of each fight, use this."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 10 seconds",
-          "Slow 3 item(s) for 1 second(s).",
+          "Cooldown 5 seconds",
+          "Slow 1 item(s) for 3 second(s).",
           "At the start of each fight, use this."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 10 seconds",
-          "Slow 4 item(s) for 1 second(s).",
+          "Cooldown 4 seconds",
+          "Slow 1 item(s) for 3 second(s).",
           "At the start of each fight, use this."
         ]
       },
@@ -69111,11 +68488,10 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "Cooldown 10 seconds",
-      "Slow (1/2/3/4) item(s) for 1 second(s).",
+      "Cooldown (7/6/5/4) seconds",
+      "Slow 1 item(s) for 3 second(s).",
       "At the start of each fight, use this."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -69240,7 +68616,6 @@ const data: ParsedItemCard[] = [
       "Deal (50/75/100/125) damage.",
       "At the start of each day, get a small item from any hero."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -69344,7 +68719,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "When you use an adjacent item, Haste the other adjacent item for (1/2/3) second(s)."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -69470,7 +68844,6 @@ const data: ParsedItemCard[] = [
       "Poison (4/6/8/10).",
       "When an adjacent item Slows or Freezes, charge this 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Dooley_Dooltron"
   },
   {
@@ -69595,7 +68968,6 @@ const data: ParsedItemCard[] = [
       "Your weapons gain (+10/+15/+20/+25) Damage and your Heal items gain (+10/+15/+20/+25) Heal for the fight.",
       "When you Over-heal, charge this 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -69657,7 +69029,6 @@ const data: ParsedItemCard[] = [
       "Adjacent items have (+25%/+50%) Crit Chance.",
       "Adjacent items have bonus damage, heal, or shield equal to their Crit Chance."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -69781,7 +69152,6 @@ const data: ParsedItemCard[] = [
       "Your Poison items gain (+2/+4/+6) Poison for the fight.",
       "When this is transformed, enchant it with Toxic if able."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -69889,7 +69259,6 @@ const data: ParsedItemCard[] = [
       "Adjacent items have (+25%/+50%) Crit Chance.",
       "At the start of each fight, an enemy item has its cooldown increased by (3/6) second(s)."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -70016,7 +69385,6 @@ const data: ParsedItemCard[] = [
       "When you Haste, Slow, Poison, Freeze, or Burn, charge this (1/2) second(s).",
       "When you use a Friend, Shield (50/100)."
     ],
-    "remarks": [],
     "packId": "Dooley_Dooltron"
   },
   {
@@ -70137,7 +69505,6 @@ const data: ParsedItemCard[] = [
       "Freeze 1 item for (1/1.5/2) second(s).",
       "This has +1 Multicast for each adjacent Property."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -70247,7 +69614,6 @@ const data: ParsedItemCard[] = [
       "Freeze (1/2) item(s) for 1 second(s).",
       "When you use a Friend or the Core, charge this 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -70376,7 +69742,6 @@ const data: ParsedItemCard[] = [
       "Deal (10/15/20) damage.",
       "When you Crit with another item, charge this 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -70480,7 +69845,6 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "When you use an adjacent item, charge the other adjacent item for (1/2) second(s)."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   }
 ];

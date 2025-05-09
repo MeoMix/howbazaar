@@ -42,7 +42,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you Crit with an item, it gains (+5%/+10%) Crit Chance for the fight."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -89,7 +88,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first time you Haste each fight, Freeze 1 item(s) for (3/4/5) second(s)."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -133,7 +131,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "If you have at least 7 items, your items have their cooldowns reduced by (5%/10%/15%)."
     ],
-    "remarks": [],
     "packId": "Jules_Core"
   },
   {
@@ -178,7 +175,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you use a Vehicle, your items gain (10%/20%/30%) Crit chance."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -221,7 +217,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first (5/10) times you Burn each fight, Charge 1 Shield item 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -271,7 +266,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "Your leftmost item has (+8%/+16%/+24%/+32%) Crit chance."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -319,7 +313,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you burn, your items gain (+1%/+2%/+3%) Crit Chance for the fight."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -369,7 +362,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "Your Non-Weapon items have (+5%/+10%/+15%/+20%) Crit chance."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -414,7 +406,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "At the start of each fight, gain (1/2/3/4) gold."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -460,7 +451,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you Burn, gain (2/4/6/8) Regen for the fight."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -506,7 +496,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "While your enemy has more health than you, your Shield items have their cooldowns reduced by (5%/10%/20%)."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -547,7 +536,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "You have Regen equal to half the Poison on your enemy."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -590,7 +578,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "You have (+35/+100/+200/+300) Max Health for each Non-Weapon item you have."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -633,7 +620,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first (5/10) times use the Core each fight, Freeze 1 item(s) of equal or smaller size for 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -676,7 +662,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you Crit, your Poison items gain (1/2) Poison for the fight."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -723,7 +708,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you Crit, your weapons gain (5/10/15) Damage for the fight."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -770,7 +754,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "Your leftmost Weapon has +2 damage. When you buy a weapon, increase this bonus by (2/3/4)."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -818,7 +801,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first time you use an item each fight, shield equal to (10%/20%/35%/50%) of your max health."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -863,7 +845,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you Crit, your Heal items gain (+10/+20/+30) Heal for the fight."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -906,7 +887,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you Crit, your Burn items gain (1/2) Burn for the fight."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -949,7 +929,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first (5/10) times you use The Core each fight, Slow 1 item(s) for 2 second(s)."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -994,7 +973,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "While you have less health than your opponent, your items gain (10%/15%/20%) Crit Chance."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -1039,7 +1017,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "Your Burn items have (+5%/+10%/+15%/+20%) Crit Chance."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -1081,7 +1058,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "Your weapons have + damage equal to your gold."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -1120,7 +1096,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you use a small item, Charge a large item for 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -1171,7 +1146,6 @@ const data: ParsedSkillCard[] = [
       "Your Weapons have (+3/+6/+9) Damage for each Aquatic item you have.",
       "Your Shield items have (+3/+6/+9) Shield for each Aquatic item you have."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -1213,7 +1187,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When your enemy uses an item, Poison (1/2)."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -1258,7 +1231,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you use a tool, Burn (3/5)."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -1305,7 +1277,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "Your weapons have +1 Damage. When you buy a Weapon, increase this bonus by (+1/+2/+3) Damage."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -1347,7 +1318,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you burn, Haste an item for (1/2) second(s)."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -1388,7 +1358,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When any player uses an item, all items gain (2%/4%) Crit Chance for the fight."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -1432,7 +1401,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "Your Shield items have +1 Shield for every (4/3/2) gold you have."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -1471,7 +1439,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "At the start of each fight, Burn yourself 2."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -1518,7 +1485,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first time you use a Large item each fight, Burn (10/15/20)."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -1565,7 +1531,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you level up, Your Weapons gain (+5/+10/+15/+20) damage. If you have a Weapon Core, double this."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -1610,7 +1575,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you use a Weapon, Adjacent items gain (4%/8%/12%) Crit Chance for the fight."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -1653,7 +1617,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first (5/10) times you Crit each fight, Charge 1 item(s) 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -1698,7 +1661,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "Your rightmost Heal item has (+20/+35/+50/+65) Heal."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -1741,7 +1703,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first time you fall below half health each fight, double the damage of your leftmost Weapon for the fight."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -1782,7 +1743,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you use a large item, haste (2/3) small items for (2/3) second(s)."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -1826,7 +1786,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first time you fall below half health each fight, Freeze all enemy items for (1/2/3) second(s)."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -1869,7 +1828,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "Double the damage of your Large weapons."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -1914,7 +1872,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first time you fall below 50% health each fight, Reload (2/4/6/8) items."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -1962,7 +1919,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "If you have 5 or fewer items, you have (+500/+1000/+2000) Max Health."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -2010,7 +1966,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you Burn, your Weapons gain (+2/+4/+6/+8) damage for the fight."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -2057,7 +2012,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you Slow, your items gain (+1%/+2%/+3%) Crit Chance for the fight."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -2104,7 +2058,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first time you Slow each fight, Freeze 1 item(s) for (2/3/4) second(s)."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -2149,7 +2102,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "You have (+100/+200/+300) Max Health for each Weapon you have."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -2188,7 +2140,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "Your items have double value during combat."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -2231,7 +2182,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you Burn with an item, gain Shield equal to (1x/2x) that item's Burn."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -2274,7 +2224,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you Slow, Freeze, Poison or Burn with an item, a Regen item gains (1/2/3) Regen for the fight."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -2317,7 +2266,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "Your leftmost item has (+15/+30/+50) value during combat."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -2360,7 +2308,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first (4/8) times you Shield each fight, Charge 1 item(s) 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -2406,7 +2353,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you Poison, gain (2/4/6/8) Regen for the fight."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -2452,7 +2398,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you slow, a weapon gains (+5/+10/+15/+20) damage for the fight."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -2499,7 +2444,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "If you have exactly 1 weapon, your Shield items have (+10/+20/+30) shield."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -2547,7 +2491,6 @@ const data: ParsedSkillCard[] = [
       "If you have exactly one weapon, it has (+5/+10) Max Ammo.",
       "...if it is also Aquatic, it has (+25/+50) Damage."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -2597,7 +2540,6 @@ const data: ParsedSkillCard[] = [
       "Your Poison items have (+1/+2/+3) Poison for each potion you have.",
       "Your Burn items have (+1/+2/+3) Burn for each potion you have."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -2640,7 +2582,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first (4/8) times you use a Weapon each fight, charge 1 item(s) 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -2685,7 +2626,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "You have (10/20/30) Regen."
     ],
-    "remarks": [],
     "packId": "Stelle_Core"
   },
   {
@@ -2730,7 +2670,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first time you use an item each fight, slow 1 item(s) for (3/4/5/6) second(s)."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -2775,7 +2714,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "If you have exactly one weapon, it has Lifesteal and (5%/10%) Crit Chance."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -2821,7 +2759,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first time you fall below half health each fight, Shield equal to (20%/30%/40%/50%) of your Max Health."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -2861,7 +2798,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first time you fall below half health each fight, double all your items' Crit Chance for the fight."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -2906,7 +2842,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you use a Property, adjacent items gain (5%/10%/15%) Crit chance for the fight."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -2951,7 +2886,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first (4/8) times you use a Weapon each fight, Charge 1 Poison item 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -2992,7 +2926,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first time you fall below half health each fight, gain (1/2) times your Regen for the fight."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -3037,7 +2970,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first (3/6/9) times you use your rightmost item each fight, Charge 1 Slow item 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -3084,7 +3016,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "Your Poison items have (+1/+2/+3/+4) Poison."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -3129,7 +3060,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you use the Core, adjacent weapons gain (10/20/30) damage for the fight."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -3173,7 +3103,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first (5/10) times you Slow each fight, Charge 1 Heal item 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -3218,7 +3147,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you use a weapon, Weapons adjacent to it gain (+3/+6/+9) damage for the fight."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -3264,7 +3192,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you use a Property, your Weapons gain (+5/+10/+15) damage and your Shield items gain (+5/+10/+15) shield for the fight."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -3304,7 +3231,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you Level Up, upgrade a (Bronze-tier/Silver-tier) item."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -3346,7 +3272,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "You have Regen equal to half the Burn on your enemy."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -3385,7 +3310,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first time you fall below half health in a fight, use your Friends."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -3430,7 +3354,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you use an Ammo item, Burn (2/3/4)."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -3475,7 +3398,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first time you use a Large item each fight, Poison (10/15/20)."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -3516,7 +3438,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "Your Potions have their cooldowns reduced by 1 second."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -3568,7 +3489,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "Your Weapons deal (+10/+15/+20/+25) Damage."
     ],
-    "remarks": [],
     "packId": "Jules_Core"
   },
   {
@@ -3609,7 +3529,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "If you have no weapons, your items' cooldowns are reduced by (10%/20%)."
     ],
-    "remarks": [],
     "packId": "Jules_Core"
   },
   {
@@ -3652,7 +3571,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "You have (+10/+15/+20) Regen for each non-weapon item you have."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -3696,7 +3614,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "Your leftmost and rightmost Weapons have + Damage equal to (1x/2x) their value."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -3744,7 +3661,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first (3/6) times you use a non-Weapon item each fight, Charge 1 Weapon 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -3786,7 +3702,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you use an item with Ammo, it gains (+5%/+10%) Crit Chance for the fight."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -3829,7 +3744,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you use a Friend, Poison (1/2)."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -3872,7 +3786,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first (5/10) times you use your leftmost item each fight, Haste 1 item(s) for 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -3913,7 +3826,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you use The Core, reduce an item's cooldown by 5% for the fight."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -3956,7 +3868,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first time you Over-heal each fight, Haste your items for (2/4) second(s)."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -4002,7 +3913,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first time you Poison each fight, Freeze 1 item(s) for (2/3/4) second(s)."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -4046,7 +3956,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you Crit, Haste 1 item(s) for (1/2/3) second(s)."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -4091,7 +4000,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first (5/10) times you use a Tool each fight, Haste 1 Tool for 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -4135,7 +4043,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you use a Friend, your weapons gain (3/6) damage for the fight."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -4175,7 +4082,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you Heal, charge 1 Poison item 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -4215,7 +4121,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you slow, charge 1 item(s) 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -4262,7 +4167,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you win a fight against a Hero, gain (2/3/4/5) gold."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -4309,7 +4213,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you use a weapon, your Shield items gain (3/6/9) Shield for the fight."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -4353,7 +4256,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "Your Weapons have (+1/+2/+3) damage for each ammo you have on your items in play."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -4402,7 +4304,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "Your leftmost Shield item has (+20/+30/+40/+50) Shield."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -4447,7 +4348,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "At the start of each fight, Poison (3/6/9/12)."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -4496,7 +4396,6 @@ const data: ParsedSkillCard[] = [
       "Your items have (+50%/+75%) Crit Chance.",
       "When you use an item, all your items lose 10% crit chance for the fight."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -4541,7 +4440,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you use a small item, heal (5/10/15/20)."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -4578,7 +4476,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first time you fall below half health each fight, destroy an item for the fight."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -4627,7 +4524,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "Your rightmost Shield item has (+20/+30/+40/+50) Shield."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -4666,7 +4562,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you destroy an item during combat, your Weapons gain (100/200) damage and your burn items gain (10/20) Burn for the fight."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -4707,7 +4602,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you sell a medium or large item, get (1/2) Chocolate Bar."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -4748,7 +4642,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you use a weapon with Lifesteal, Freeze a smaller item for 2 second(s)."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -4794,7 +4687,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you freeze, your weapons gain (2/4/6/8) damage for the fight."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -4837,7 +4729,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first (4/8) times you use a potion each fight, gain 20 Regen for the fight."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -4878,7 +4769,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you buy a property, get (1/2) Chocolate Bar and (1/2) Spare Change."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -4923,7 +4813,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "Your Heal items have (+5%/+10%/+15%/+20%) Crit chance."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -4967,7 +4856,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first (5/10) times you Burn each fight, Haste the Core for 2 second(s)."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -5012,7 +4900,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "Your Potions have (+1/+2/+3) Ammo."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -5054,7 +4941,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you use a Friend, Burn (2/3)."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -5095,7 +4981,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "If you only have one weapon, it deals triple damage and has its cooldown increased by 50%."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -5135,7 +5020,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "Your leftmost Weapon has lifesteal."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -5181,7 +5065,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "Your Shield items have (+5%/+10%/+15%/+20%) Crit chance."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -5226,7 +5109,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first (5/10) times you Slow each fight, Haste 1 vehicle for 2 second(s)."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -5270,7 +5152,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "Your weapons have + damage equal to (1x/2x) your income."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -5315,7 +5196,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first (5/10) times you Slow each fight, Charge 1 Poison item 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -5364,7 +5244,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "Your Weapons' cooldowns are reduced by (5%/10%/15%) while your enemy has a Frozen item."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -5409,7 +5288,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you poison, your weapons gain (5/10/15) damage for the fight."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -5450,7 +5328,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first time you use an item each fight, Freeze all non-weapon items for (2/3) second(s)."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -5500,7 +5377,6 @@ const data: ParsedSkillCard[] = [
       "Your Burn items have (+2/+4/+6) Burn.",
       "Your Poison items have (+2/+4/+6) Poison."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -5552,7 +5428,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "Your leftmost Weapon deals (+20/+30/+40/+50) Damage."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -5597,7 +5472,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first 5 times your enemy uses a weapon, Charge (1/2/3) item(s) 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -5642,7 +5516,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "Your Shield items have + Shield equal to (2/3/4) times your level."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -5684,7 +5557,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you gain Regen, a Burn item gains (1/2) Burn for the fight."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -5725,7 +5597,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "Your items have (+1/+2) value."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -5776,7 +5647,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you freeze, your Weapons gain (+10/+15/+20) damage for the fight."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -5814,7 +5684,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first time you fall below half health each fight, remove Freeze and Slow from your items and Cleanse half your Burn and Poison."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -5856,7 +5725,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first time your enemy falls below half health each fight, Charge your items (2/3/4) second(s)."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -5896,7 +5764,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you Burn, charge a Shield item 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -5942,7 +5809,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you Heal or gain Regen, an item gains (3%/6%/9%) Crit Chance for the fight."
     ],
-    "remarks": [],
     "packId": "Stelle_Core"
   },
   {
@@ -5987,7 +5853,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "At the start of each day, get a random Potion."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -6031,7 +5896,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you visit a Merchant, permanently gain (25/50/75) Max Health."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -6072,7 +5936,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "Your Lifesteal weapons have their cooldowns reduced by 1 second."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -6114,7 +5977,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "Your weapons have + damage equal to your Regen."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -6158,7 +6020,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you Over-heal, gain (5/10/15) Regen for the fight."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -6208,7 +6069,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "If you have 5 or fewer items in play, your Weapons have (+25/+50/+75) damage."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -6255,7 +6115,6 @@ const data: ParsedSkillCard[] = [
       "When you Burn with an item, Poison (1/2).",
       "When you Poison with an item, Burn (2/4)."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -6307,7 +6166,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "Your Weapons have (+5%/+10%/+15%/+20%) Crit chance."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -6354,7 +6212,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "Your Weapons have (+2/+4/+6) damage and Shield items have (+2/+4/+6) shield for each friend you have."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -6397,7 +6254,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first (5/10) times you Poison each fight, charge 1 Burn item 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -6441,7 +6297,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first time you fall below half health each fight, Shield equal to (2/3/4) times the Burn on your opponent."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -6483,7 +6338,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "You have (+300/+500) Max Health for each Diamond-tier item you have."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -6527,7 +6381,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "Your leftmost Tool has +1 Multicast."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -6573,7 +6426,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "Your Weapons have + Damage equal to (1x/2x/3x) your income."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -6616,7 +6468,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first (5/10) times you use The Core each fight, Haste 1 item(s) for 2 second(s)."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -6663,7 +6514,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "If you have a vehicle, reduce your non-vehicle items' cooldowns by (10%/15%/20%)."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -6708,7 +6558,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first time you fall below half health each fight, Shield equal to (2/3/4) times the Poison on your opponent."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -6756,7 +6605,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you buy a Weapon, permanently gain (20/30/40/50) Max Health."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -6801,7 +6649,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "Your Weapons have (+4/+8/+12) Damage for each Weapon you have."
     ],
-    "remarks": [],
     "packId": "Jules_Core"
   },
   {
@@ -6845,7 +6692,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "Both players' weapons have double damage."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -6891,7 +6737,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first time you use a Large item each fight, Freeze 1 item(s) for (3/4/5) second(s)."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -6934,7 +6779,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you use The Core, your Shield items gain (15/30) Shield for the fight."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -6986,7 +6830,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "Your rightmost Weapon has (+20/+30/+40/+50) Damage."
     ],
-    "remarks": [],
     "packId": "Jules_Core"
   },
   {
@@ -7028,7 +6871,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first (3/6) times you Shield each fight, Freeze 1 item(s) for 2 second(s)."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -7072,7 +6914,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you use a non-weapon item, Burn (1/2/3) and Poison (1/2/3)."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -7112,7 +6953,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you Heal, charge a Shield item 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -7151,7 +6991,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "Your Weapons have Lifesteal."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -7201,7 +7040,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "Your items have (+4%/+8%/+12%/+16%) Crit chance."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -7249,7 +7087,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first time you use an item each fight, Haste (1/2/3) Burn item(s) for 2 second(s)."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -7299,7 +7136,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "Your items have (+2%/+4%/+6%) Crit Chance per Weapon you have."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -7343,7 +7179,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first time you fall below half health each fight, Shield equal to (30%/50%/80%) of your Max Health."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -7387,7 +7222,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "Your Toys and Apparel have their cooldowns reduced by (5%/10%)."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -7426,7 +7260,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you use a Medium item, one of your Burn items gains +10 burn for the fight."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -7473,7 +7306,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you upgrade a Friend, your other items gain (3/6/9) bonus Damage, (3/6/9) bonus Shield and (1/2/3) bonus Burn."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -7514,7 +7346,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When any non-weapon item is used, slow it for (2/4) second(s)."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -7563,7 +7394,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "Your Burn items have (+1/+2/+3/+4) Burn."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -7607,7 +7437,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "You have (2/4/6) Regen for each Ammo item you have."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -7653,7 +7482,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "Your Ammo items have (+3%/+6%/+9%/+12%) Crit chance."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -7694,7 +7522,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you use a large item, haste another item for (3/4) second(s)."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -7735,7 +7562,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you use a large item, Burn (10/15)."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -7778,7 +7604,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "Your items have +2% crit chance. When you start a fight, increase this bonus by (+2%/+4%/+6%)."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -7825,7 +7650,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you use a Tool, Heal (5/10/15/20)."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -7870,7 +7694,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first time you fall below half health each fight, slow (2/4/6) items for 2 second(s)."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -7919,7 +7742,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first time you Freeze each fight, Haste (1/2/3) item(s) for 2 second(s)."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -7963,7 +7785,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first time you Freeze each fight, Slow all enemy items for (3/5/7) second(s)."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -8013,7 +7834,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "Your rightmost Burn item has (+2/+4/+6/+8) Burn."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -8054,7 +7874,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you use an item, Shield (20/40)."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -8097,7 +7916,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first time you use an item each fight, Haste your items for (1/2/3) second(s)."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -8144,7 +7962,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you use your leftmost item, Burn (2/3/4)."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -8187,7 +8004,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "All item cooldowns are increased by (1/2/3) second(s)."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -8231,7 +8047,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first (4/8) times your enemy uses a non-weapon item each fight, Charge 1 Weapon 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -8276,7 +8091,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first time you use an item each fight, Haste (1/2/3) Aquatic item(s) for 2 second(s)."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -8322,7 +8136,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first time you use a Large item each fight, Haste (2/3/4) items for 3 second(s)."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -8367,7 +8180,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "Your non-tool items have (+5%/+10%/+15%) Crit Chance for each tool you have."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -8415,7 +8227,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "If you have exactly one weapon, its cooldown is reduced by (5%/10%/15%) while your enemy has a Slowed item."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -8461,7 +8272,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you use a Tool, items adjacent to it gain (3%/6%/9%) Crit chance."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -8507,7 +8317,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you Haste, Shield (10/20/30/40)."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -8548,7 +8357,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you use a Tool, Reload an adjacent item."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -8595,7 +8403,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "Your Shield items have (+10/+15/+20/+25) Shield."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -8632,7 +8439,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "At the start of each fight, destroy an item on each player's board for the fight."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -8671,7 +8477,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first time you fall below half health each fight, double your enemy's Poison."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -8708,7 +8513,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first time you would die each fight, Heal to full."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -8748,7 +8552,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "Your Shield items have + Shield equal to the value of your Items."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -8789,7 +8592,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "At the start of each fight, deal damage equal to (15%/30%) of your enemy's Max Health."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -8828,7 +8630,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "At the start of each fight, a random Potion gains +1 Multicast for the fight."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -8878,7 +8679,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "Your rightmost item has (+8%/+16%/+24%/+32%) Crit chance."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -8923,7 +8723,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you buy a Property, permanently gain (50/100/150) Max Health."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -8972,7 +8771,6 @@ const data: ParsedSkillCard[] = [
       "When you use an item, your items gain (3%/6%) crit chance for the fight.",
       "Your items have 100% less crit chance."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -9016,7 +8814,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When one of your Burn items gains Haste, if it already has Haste, it gains (1/2/3) Burn for the fight."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -9060,7 +8857,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first time you Crit each fight, Freeze 1 item(s) for (3/4/5) second(s)."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -9104,7 +8900,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first (5/10) times you use an Aquatic item each fight, Haste 1 weapon for 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -9149,7 +8944,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first (4/8) times you use a potion each fight, charge 1 Weapon or Burn item 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Mak_Core"
   },
   {
@@ -9191,7 +8985,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you gain gold, permanently gain Max Health equal to (1x/2x) the amount of gold gained."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -9239,7 +9032,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you Shield, your weapons gain (3/6/9) damage for the fight."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -9283,7 +9075,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first time you fall below half health each fight, Heal for 30% of your Max Health and Cleanse half your Burn and Poison."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -9329,7 +9120,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When one of your Weapons gains Haste, if it already has Haste, it gains (+5/+10/+15) damage."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -9376,7 +9166,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you use an item with Burn, that item gains (1/2/3) Burn for the fight."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -9420,7 +9209,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first time you fall below half health each fight, Shield equal to (20%/30%) of your Max Health."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -9461,7 +9249,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first time you fall below half health each fight, use your highest Shield item."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -9500,7 +9287,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you level up, upgrade a Property."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -9546,7 +9332,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first time you use a Large item each fight, Shield equal to (10%/20%/30%) of your max health."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -9589,7 +9374,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "If you have 5 or fewer items, your items have their cooldowns reduced by (4%/8%/12%)."
     ],
-    "remarks": [],
     "packId": "Jules_Core"
   },
   {
@@ -9633,7 +9417,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first (5/10) times you Freeze each fight, Haste the Core for 2 second(s)."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -9677,7 +9460,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "Your items have (+1/+2/+3) Max Ammo."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -9724,7 +9506,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you Haste, your items gain (+1%/+2%/+3%) crit chance for the fight."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -9769,7 +9550,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "Your leftmost Ammo item has (+1/+2/+3/+4) Max Ammo."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -9814,7 +9594,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "Your Small Diamond-tier items have their cooldowns reduced by (30%/40%/50%/60%)."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -9860,7 +9639,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "Your large items have (+25%/+50%) crit chance"
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -9907,7 +9685,6 @@ const data: ParsedSkillCard[] = [
       "The Core has its cooldown reduced by (10%/15%).",
       "While you have Burn, double this effect."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -9950,7 +9727,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "At the start of each fight, burn (17/25/35)."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -9993,7 +9769,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When your enemy uses a Weapon, your Shield items gain (5/10) Shield for the fight."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -10036,7 +9811,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you buy or upgrade this, upgrade the core."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -10081,7 +9855,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first time you use an item each fight, Haste (1/2/3) Poison item(s) for 2 second(s)."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -10124,7 +9897,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "Your leftmost and rightmost items have their cooldowns reduced by (5%/10%/15%)."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -10169,7 +9941,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "Your leftmost Heal item has (+20/+35/+50/+65) Heal."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -10209,7 +9980,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you Crit with an item, Reload another item 1 ammo."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -10256,7 +10026,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you Freeze, your items gain (+3%/+6%) Crit Chance for the fight."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -10306,7 +10075,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "If you have at least 7 items in play, your Weapons deal (+20/+25/+30) damage."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -10351,7 +10119,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "Your Heal items have (+10/+20/+30/+40) Heal."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -10398,7 +10165,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "Your rightmost Poison item has (+2/+4/+6/+8) Poison."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -10441,7 +10207,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "Your items have (+2%/+3%) Crit Chance for each weapon you have."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -10491,7 +10256,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you buy this, gain 10 gold."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -10534,7 +10298,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you use a Property, haste items adjacent to it (1/2) second(s)."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -10579,7 +10342,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first time your enemy falls below half health each fight, Burn (10/15/20/25)."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -10623,7 +10385,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first time you fall below half health each fight, your Burn items have their cooldowns reduced by 50% for the fight."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -10672,7 +10433,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first time you Burn each fight, Freeze 1 item(s) for (2/3/4) second(s)."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -10717,7 +10477,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first time you fall below half health each fight, Burn (20/30/40)."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -10763,7 +10522,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first time you use a Large item each fight, heal (20%/40%/60%) of your max health."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -10802,7 +10560,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "At the start of each fight, Poison yourself 2."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -10846,7 +10603,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first (5/10) times you use a Weapon each fight, Charge 1 Heal item 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -10893,7 +10649,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "If you have exactly one friend, reduce its and the Core's cooldown by (5%/10%/15%)."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -10939,7 +10694,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you use a weapon, reduce its cooldown by 5% for the fight."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -10983,7 +10737,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you Slow, gain (2/4) Regen for the fight."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -11029,7 +10782,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "Your weapons have (+7/+14) Damage for each Tool you have."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -11075,7 +10827,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first time you freeze, burn, slow, poison, and haste each fight, charge 1 item(s) (2/3) second(s)."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -11118,7 +10869,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "Reduce the cooldown of your Properties by (10%/15%)."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -11165,7 +10915,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you use a Weapon, it gains (+2%/+4%/+6%/+8%) crit Chance for the fight."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -11209,7 +10958,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you use a Property, deal damage equal to (1x/2x) your gold."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -11249,7 +10997,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you Freeze, Reload a Weapon 1 ammo."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -11290,7 +11037,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "Your Shield items have +1 Shield. When you sell a small item, increase this bonus by (+1/+2) Shield."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -11337,7 +11083,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first time you use an item, Haste 1 Weapon (3/4/5/6) seconds."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -11381,7 +11126,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you use a weapon, it gains (+3/+6/+9) damage for the fight."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -11426,7 +11170,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "Your item's cooldowns are reduced by (5%/10%) if you have a Vehicle, reduced by (5%/10%) if you have a Weapon, and reduced by (5%/10%) if you have a Tool."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -11470,7 +11213,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you Slow, Haste a Weapon (1/2) second(s)."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -11515,7 +11257,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first (5/10) times you use a Tool each fight, Slow 1 item(s) for 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -11561,7 +11302,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you heal, your Shield items gain (1/2/3/4) shield for the fight."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -11607,7 +11347,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first time you use a Large item each fight, Slow (2/3/4) item(s) for 3 second(s)."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -11649,7 +11388,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "While you have more than half Health, your weapons have (+25/+50) damage."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -11692,7 +11430,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you use a weapon, your Heal items gain (+10/+20/+30) Heal for the fight."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -11741,7 +11478,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you Slow, your weapons gain (2/4/6) damage for the fight."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -11785,7 +11521,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "You have (2/4/6) Regen for each non-weapon item you have."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -11832,7 +11567,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "Your leftmost Poison item has (+2/+4/+6/+8) Poison."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -11877,7 +11611,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "You have (+1/+2/+3) income for each Property you have (including Stash)."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -11920,7 +11653,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "Reduce the cooldown of your aquatic items by (10%/20%)."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -11965,7 +11697,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "Your Aquatic items have (+8%/+10%/+12%) Crit chance."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -12004,7 +11735,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "If you have exactly 2 Weapons, your items have +50% Crit Chance."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -12049,7 +11779,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "While your enemy has more health than you, your Heal and Regen items have their cooldowns reduced by (5%/10%/15%)."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -12099,7 +11828,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "Your leftmost Burn item has (+2/+4/+6/+8) Burn."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -12147,7 +11875,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first time you use a Large item each fight, Adjacent items gain (15%/20%/25%) Crit Chance for the fight."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -12187,7 +11914,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first time your enemy falls below half health each fight, your items have their cooldowns reduced by 50% for the fight."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -12230,7 +11956,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "Your weapons have +1 Damage. When you sell a small item, increase this bonus by (+1/+2) Damage."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -12276,7 +12001,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "Your Poison items have (+2/+4/+6) Poison for each Weapon you have."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -12320,7 +12044,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first (5/10) times you Slow each fight, Charge 1 Burn item 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -12365,7 +12088,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "Your Properties have (+10%/+15%/+20%) Crit chance."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -12410,7 +12132,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first (5/10/15) times times you slow each fight, Charge 1 Regen item 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Dooley_Core"
   },
   {
@@ -12456,7 +12177,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you Poison, your items gain (+1%/+2%/+3%) Crit Chance for the fight."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -12504,7 +12224,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first (3/6/9) times you use your rightmost item each fight, Charge 1 Freeze item 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -12552,7 +12271,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When your items gain Freeze, Burn (8/12/16)."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -12597,7 +12315,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "While your enemy has more health than you, your Weapons have their cooldowns reduced by (5%/10%/20%)."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -12643,7 +12360,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first time you fall below half health each fight, Haste (2/4/6) items 2 second(s)."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -12687,7 +12403,6 @@ const data: ParsedSkillCard[] = [
       "Your Shield Vehicles gain (30%/60%) Shield.",
       "Your Weapon Vehicles gain (30%/60%) Damage."
     ],
-    "remarks": [],
     "packId": "Stelle_Core"
   },
   {
@@ -12735,7 +12450,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you Crit, your Shield items gain (5/10/15) Shield for the fight."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -12778,7 +12492,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "When you use an Ammo item, Reload the item to the left of it (1/2/3) Ammo."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -12817,7 +12530,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "If you have only one medium item, its cooldown is reduced by 30%."
     ],
-    "remarks": [],
     "packId": "Core"
   },
   {
@@ -12859,7 +12571,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "The first (4/8) times you use an Ammo item each fight, Slow 1 item(s) for 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Vanessa_Core"
   },
   {
@@ -12909,7 +12620,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "If you have 5 or fewer items, your items have (+10%/+20%/+30%/+40%) Crit Chance."
     ],
-    "remarks": [],
     "packId": "Pygmalien_Core"
   },
   {
@@ -12946,7 +12656,6 @@ const data: ParsedSkillCard[] = [
     "unifiedTooltips": [
       "Enemy cooldowns are increased by 1 second(s)."
     ],
-    "remarks": [],
     "packId": "Core"
   }
 ];
