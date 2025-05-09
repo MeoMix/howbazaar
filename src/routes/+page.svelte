@@ -172,7 +172,6 @@
         merchantsServerVersion={data.merchantsVersion}
         {searchText}
         selectedMerchant={undefined}
-        selectedSearchLocationOption={merchantSelectedSearchLocationOption}
         {selectedHeroes}
         {selectedTiers}
         {tagStates}

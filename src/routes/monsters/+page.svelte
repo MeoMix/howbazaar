@@ -1,8 +1,5 @@
 <script lang="ts">
-    import type {
-        ClientSideMonsterEncounter,
-        MonsterSearchLocationOption,
-    } from "$lib/types";
+    import type { ClientSideMonsterEncounter } from "$lib/types";
     import type { PageData } from "./$types";
     import MonsterFilters from "$lib/components/MonsterFilters.svelte";
     import MonsterList from "$lib/components/MonsterList.svelte";
@@ -15,9 +12,6 @@
 
     let searchText = $state("");
     let selectedDay = $state(undefined) as number | undefined;
-    let selectedSearchLocationOption = $state(
-        "name-text" as MonsterSearchLocationOption,
-    );
 
     let selectedMonsterEncounter = $state() as
         | ClientSideMonsterEncounter
@@ -52,7 +46,6 @@
     <MonsterFilters
         dayOptions={data.dayOptions}
         bind:searchText
-        bind:selectedSearchLocationOption
         bind:selectedDay
         {onSelectDay}
     />
@@ -61,7 +54,6 @@
         serverVersion={data.version}
         {selectedDay}
         {searchText}
-        {selectedSearchLocationOption}
         {selectedMonsterEncounter}
         isHiddenWhenEmpty={false}
     />

@@ -8,6 +8,7 @@
     import MultiSelectTriFilter from "./MultiSelectTriFilter.svelte";
     import AdvancedFilterToggle from "./AdvancedFilterToggle.svelte";
     import FilterTriToggle from "./FilterTriToggle.svelte";
+    import { CloseOutline } from "flowbite-svelte-icons";
 
     let {
         heroOptions,
@@ -61,6 +62,16 @@
             searchText = hash.replace(/_+/g, " ");
         }
     });
+
+    const isSearchActive = $derived(
+        searchText !== "" ||
+            isMatchAnyTag ||
+            isMatchAnyHero ||
+            selectedTiers.length > 0 ||
+            monsterDropsOnlyState !== "unset" ||
+            Object.values(tagStates).some((state) => state !== "unset") ||
+            Object.values(heroStates).some((state) => state !== "unset"),
+    );
 </script>
 
 <div class="mt-8 mb-4">
@@ -71,7 +82,20 @@
             onClear={clearSearchInput}
         >
             {#snippet actions()}
-                <AdvancedFilterToggle bind:isShowingAdvancedFilters />
+                <div class="flex gap-2 items-center">
+                    <AdvancedFilterToggle bind:isShowingAdvancedFilters />
+
+                    <Button
+                        size="sm"
+                        outline
+                        pill
+                        disabled={!isSearchActive}
+                        color="red"
+                        on:click={clearSearch}
+                    >
+                        <CloseOutline class="w-5 h-5" />
+                    </Button>
+                </div>
             {/snippet}
         </SearchInput>
     </div>
@@ -126,17 +150,6 @@
                     </div>
                 </div>
             </div>
-
-            <Button
-                size="xs"
-                outline
-                pill
-                color={"red"}
-                on:click={clearSearch}
-                class="mt-4 transition-colors focus:outline-hidden border self-center w-auto"
-            >
-                Clear Search
-            </Button>
         </div>
     {/if}
 </div>

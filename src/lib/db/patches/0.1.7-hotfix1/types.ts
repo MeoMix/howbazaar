@@ -162,9 +162,5 @@ export type MonsterEncounterDaysApiResponse = {
     version: string;
 }
 
-export type AllSearchLocationOption = ItemSearchLocationOption | SkillSearchLocationOption | MonsterSearchLocationOption;
-export type ItemSearchLocationOption = "name" | "name-text" | "name-text-enchantments";
-export type SkillSearchLocationOption = "name" | "name-text";
-export type MonsterSearchLocationOption = "name" | "name-text";
 export type ItemSortOption = "name" | "tier" | "size" | "hero";
 export type SkillSortOption = "name" | "tier" | "hero";
