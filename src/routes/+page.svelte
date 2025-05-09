@@ -129,45 +129,48 @@
         bind:monsterDropsOnlyState
     />
 
-    <ItemList
-        serverVersion={data.itemsVersion}
-        sortOptions={itemSortOptions}
-        {selectedHeroes}
-        {selectedTiers}
-        {tagStates}
-        {selectedSizes}
-        {searchText}
-        {isMatchAnyTag}
-        {monsterDropsOnlyState}
-        {selectedExpansions}
-        {selectedEnchantmentTypes}
-        isHiddenWhenEmpty={true}
-    />
+    <div class="flex flex-col gap-2">
+        <ItemList
+            serverVersion={data.itemsVersion}
+            sortOptions={itemSortOptions}
+            {selectedHeroes}
+            {selectedTiers}
+            {tagStates}
+            {selectedSizes}
+            {searchText}
+            {isMatchAnyTag}
+            {monsterDropsOnlyState}
+            {selectedExpansions}
+            {selectedEnchantmentTypes}
+            isHiddenWhenEmpty={true}
+        />
 
-    <SkillList
-        serverVersion={data.skillsVersion}
-        sortOptions={skillSortOptions}
-        {heroStates}
-        {selectedTiers}
-        {tagStates}
-        {searchText}
-        {isMatchAnyTag}
-        {isMatchAnyHero}
-        {monsterDropsOnlyState}
-        isHiddenWhenEmpty={true}
-        initialLoad={false}
-    />
+        {#if selectedExpansions.length === 0 && selectedEnchantmentTypes.length === 0}
+            <SkillList
+                serverVersion={data.skillsVersion}
+                sortOptions={skillSortOptions}
+                {heroStates}
+                {selectedTiers}
+                {tagStates}
+                {searchText}
+                {isMatchAnyTag}
+                {isMatchAnyHero}
+                {monsterDropsOnlyState}
+                isHiddenWhenEmpty={true}
+                initialLoad={false}
+            />
+        {/if}
 
-    <MonsterList
-        serverVersion={data.monstersVersion}
-        selectedDay={undefined}
-        {searchText}
-        selectedMonsterEncounter={undefined}
-        isHiddenWhenEmpty={true}
-        initialLoad={false}
-    />
+        <MonsterList
+            serverVersion={data.monstersVersion}
+            selectedDay={undefined}
+            {searchText}
+            selectedMonsterEncounter={undefined}
+            isHiddenWhenEmpty={true}
+            initialLoad={false}
+        />
 
-    <!-- <MerchantList
+        <!-- <MerchantList
         itemsServerVersion={data.itemsVersion}
         merchantsServerVersion={data.merchantsVersion}
         {searchText}
@@ -180,4 +183,5 @@
         isHiddenWhenEmpty={true}
         initialLoad={false}
     /> -->
+    </div>
 </div>
