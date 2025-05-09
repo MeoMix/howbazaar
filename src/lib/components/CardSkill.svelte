@@ -74,16 +74,5 @@
                 startingTier={card.startingTier}
             />
         </div>
-
-        {#if card.remarks.length > 0}
-            <div class="px-4 pb-4">
-                <div class="text-yellow-500 font-bold">
-                    !! HOWBAZAAR DEVELOPER REMARK !!
-                </div>
-                {#each card.remarks as remark}
-                    <div>{remark}</div>
-                {/each}
-            </div>
-        {/if}
     </div>
 </Card>

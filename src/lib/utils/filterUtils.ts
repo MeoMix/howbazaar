@@ -1,4 +1,4 @@
-import type { ClientSideItemCard, ClientSideMonsterEncounter, ClientSideSkillCard, Hero, HiddenTag, ItemSortOption, Size, SkillSortOption, Tag, TierType, TriState, MonsterSearchLocationOption, AllSearchLocationOption, ClientSideMerchantCard, MerchantSearchLocationOption, ExpansionPackId, CorePackId, CustomTag } from "$lib/types";
+import type { ClientSideItemCard, ClientSideMonsterEncounter, ClientSideSkillCard, Hero, HiddenTag, ItemSortOption, Size, SkillSortOption, Tag, TierType, TriState, ClientSideMerchantCard, ExpansionPackId, CorePackId, CustomTag, EnchantmentType, ClientSideEnchantment } from "$lib/types";
 import type { Entries } from "type-fest";
 import { getExpansionPackName, isExpansionPack } from "./cardUtils";
 
@@ -13,23 +13,34 @@ export function getCardFilterOptions(cards: (ClientSideItemCard | ClientSideSkil
 
     const tagOptions = Array.from(
         new Set(cards.flatMap((card) => filterTags(card.tags, card.hiddenTags, card.customTags)))
-    ).sort().map(tag => ({ name: tag, value: tag }));
+    ).sort((a, b) => a.localeCompare(b)).map(tag => ({ name: tag, value: tag }));
 
     const expansionOptions = Array.from(
         new Set(cards.map(card => card.packId).filter(isExpansionPack))
-    ).sort().map(expansion => ({ name: getExpansionPackName(expansion), value: expansion }));
+    ).sort((a, b) => getExpansionPackName(a).localeCompare(getExpansionPackName(b))).map(expansion => ({ name: getExpansionPackName(expansion), value: expansion }));
+
+    const enchantmentOptions = Array.from(
+        new Set(cards.flatMap((card) =>
+            'enchantments' in card ? card.enchantments.map((enchantment) => enchantment.type) : []
+        ))
+    ).sort((a, b) => a.localeCompare(b)).map(enchantment => ({ name: enchantment, value: enchantment }));
 
     return {
         heroOptions,
         minimumTierOptions,
         tagOptions,
         sizeOptions,
-        expansionOptions
+        expansionOptions,
+        enchantmentOptions
     };
 }
 
 function matchesHero(cardHeroes: Hero[], selectedHeroes: Hero[]): boolean {
     return selectedHeroes.length === 0 || selectedHeroes.some(hero => cardHeroes.includes(hero));
+}
+
+function matchesEnchantment(cardEnchantments: ClientSideEnchantment[], selectedEnchantments: EnchantmentType[]): boolean {
+    return selectedEnchantments.length === 0 || selectedEnchantments.some(enchantment => cardEnchantments.some(cardEnchantment => cardEnchantment.type === enchantment));
 }
 
 function matchesHeroState(
@@ -132,7 +143,6 @@ const substringMatch = (text: string, lowerSearchText: string): boolean => {
 function matchesCardSearchText(
     card: ClientSideItemCard | ClientSideSkillCard,
     lowerSearchText: string,
-    searchMode: AllSearchLocationOption
 ): boolean {
     if (lowerSearchText === '') return true;
 
@@ -149,21 +159,9 @@ function matchesCardSearchText(
             return true;
         }
 
-        // Check tiers if they exist
-        if ((searchMode === 'name-text' || searchMode === 'name-text-enchantments') && card.tiers) {
-            for (const [_tierType, tier] of Object.entries(card.tiers) as Entries<typeof card.tiers>) {
-                if (tier.tooltips.length !== 0) {
-                    if (tier.tooltips.some(tooltip => substringMatch(tooltip, term))) {
-                        return true; // Early exit if found
-                    }
-                }
-            }
-        }
-
-        // Check enchantments if enabled
-        if (searchMode === 'name-text-enchantments' && 'enchantments' in card) {
-            for (const e of card.enchantments) {
-                if (e.tooltips.some(tip => substringMatch(tip, term))) {
+        for (const [_tierType, tier] of Object.entries(card.tiers) as Entries<typeof card.tiers>) {
+            if (tier.tooltips.length !== 0) {
+                if (tier.tooltips.some(tooltip => substringMatch(tooltip, term))) {
                     return true; // Early exit if found
                 }
             }
@@ -176,7 +174,6 @@ function matchesCardSearchText(
 function matchesMonsterSearchText(
     monster: ClientSideMonsterEncounter,
     lowerSearchText: string,
-    searchMode: MonsterSearchLocationOption
 ): boolean {
     if (lowerSearchText === '') return true;
 
@@ -189,8 +186,8 @@ function matchesMonsterSearchText(
     // Check if any of the search terms match
     for (const term of searchTerms) {
         if (substringMatch(monster.cardName, term) ||
-            monster.items.filter(item => matchesCardSearchText(item.card, term, searchMode)).length > 0 ||
-            monster.skills.filter(skill => matchesCardSearchText(skill.card, term, searchMode)).length > 0) {
+            monster.items.filter(item => matchesCardSearchText(item.card, term)).length > 0 ||
+            monster.skills.filter(skill => matchesCardSearchText(skill.card, term)).length > 0) {
             return true;
         }
     }
@@ -202,7 +199,6 @@ function matchesMerchantSearchText(
     merchant: ClientSideMerchantCard,
     merchantItemsMap: Map<string, { filteredItems: ClientSideItemCard[] }>,
     lowerSearchText: string,
-    searchMode: MerchantSearchLocationOption
 ): boolean {
     if (lowerSearchText === '') return true;
 
@@ -215,15 +211,13 @@ function matchesMerchantSearchText(
     // Check if any of the search terms match
     for (const term of searchTerms) {
         if (substringMatch(merchant.name, term) ||
-            (merchantItemsMap.get(merchant.id)?.filteredItems ?? []).filter(item => matchesCardSearchText(item, term, searchMode)).length > 0) {
+            (merchantItemsMap.get(merchant.id)?.filteredItems ?? []).filter(item => matchesCardSearchText(item, term)).length > 0) {
             return true;
         }
     }
 
     return false;
 }
-
-const latestExpansions = new Set(["Dooley_Dooltron", "Vanessa_The_Gang"]);
 
 export function filterItemCards(
     cards: ClientSideItemCard[],
@@ -234,6 +228,7 @@ export function filterItemCards(
     isMatchAnyTag: boolean,
     monsterDropsOnlyState: TriState,
     selectedExpansions: ExpansionPackId[],
+    selectedEnchantments: EnchantmentType[],
 ): ClientSideItemCard[] {
     return cards.filter(card => {
         return (
@@ -242,7 +237,8 @@ export function filterItemCards(
             matchesHero(card.heroes, selectedHeroes) &&
             matchesTier(card.startingTier, selectedTiers) &&
             matchesTagState(card.tags, card.hiddenTags, card.customTags, tagStates, isMatchAnyTag) &&
-            (selectedSizes.length === 0 || (card.size && selectedSizes.includes(card.size)))
+            (selectedSizes.length === 0 || selectedSizes.includes(card.size)) &&
+            matchesEnchantment(card.enchantments, selectedEnchantments)
         );
     });
 }
@@ -269,22 +265,20 @@ export function filterSkillCards(
 export function searchCards<T extends ClientSideItemCard | ClientSideSkillCard>(
     cards: T[],
     searchText: string,
-    searchMode: AllSearchLocationOption
 ): T[] {
     const lowerSearchText = searchText.trim().toLowerCase();
 
-    return cards.filter(card => matchesCardSearchText(card, lowerSearchText, searchMode));
+    return cards.filter(card => matchesCardSearchText(card, lowerSearchText));
 }
 
 export function searchMonsters(
     monsters: ClientSideMonsterEncounter[],
     searchText: string,
-    searchMode: MonsterSearchLocationOption
 ) {
     const lowerSearchText = searchText.trim().toLowerCase();
 
     return monsters.filter(monster =>
-        matchesMonsterSearchText(monster, lowerSearchText, searchMode)
+        matchesMonsterSearchText(monster, lowerSearchText)
     );
 }
 
@@ -292,12 +286,11 @@ export function searchMerchants(
     merchants: ClientSideMerchantCard[],
     merchantItemsMap: Map<string, { filteredItems: ClientSideItemCard[] }>,
     searchText: string,
-    searchMode: MerchantSearchLocationOption,
 ) {
     const lowerSearchText = searchText.trim().toLowerCase();
 
     return merchants.filter(merchant =>
-        matchesMerchantSearchText(merchant, merchantItemsMap, lowerSearchText, searchMode)
+        matchesMerchantSearchText(merchant, merchantItemsMap, lowerSearchText)
     );
 }
 

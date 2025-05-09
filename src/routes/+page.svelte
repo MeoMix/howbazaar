@@ -7,17 +7,13 @@
         Hero,
         HiddenTag,
         ItemSortOption,
-        ItemSearchLocationOption,
         Size,
         SkillSortOption,
         Tag,
         TierType,
         TriState,
-        MonsterSearchLocationOption,
-        SkillSearchLocationOption,
-        AllSearchLocationOption,
-        MerchantSearchLocationOption,
         ExpansionPackId,
+        EnchantmentType,
     } from "$lib/types";
     import type { PageData } from "./$types";
     import { tooltipState } from "$lib/actions/tooltip.svelte";
@@ -53,28 +49,7 @@
     let isMatchAnyHero = $state(false);
     let selectedSizes = $state([] as Size[]);
     let searchText = $state("");
-    let selectedSearchLocationOption = $state(
-        "name-text" as AllSearchLocationOption,
-    );
-
-    let itemSelectedSearchLocationOption = $derived(
-        selectedSearchLocationOption as ItemSearchLocationOption,
-    );
-    let skillSelectedSearchLocationOption = $derived(
-        (selectedSearchLocationOption === "name-text-enchantments"
-            ? "name-text"
-            : selectedSearchLocationOption) as SkillSearchLocationOption,
-    );
-    let monsterSelectedSearchLocationOption = $derived(
-        (selectedSearchLocationOption === "name-text-enchantments"
-            ? "name-text"
-            : selectedSearchLocationOption) as MonsterSearchLocationOption,
-    );
-    let merchantSelectedSearchLocationOption = $derived(
-        (selectedSearchLocationOption === "name-text-enchantments"
-            ? "name-text"
-            : selectedSearchLocationOption) as MerchantSearchLocationOption,
-    );
+    let selectedEnchantmentTypes = $state([] as EnchantmentType[]);
 
     let monsterDropsOnlyState = $state("unset" as TriState);
 
@@ -141,15 +116,16 @@
         tagOptions={data.tagOptions}
         sizeOptions={data.sizeOptions}
         expansionOptions={data.expansionOptions}
+        enchantmentOptions={data.enchantmentOptions}
         bind:heroStates
         bind:selectedTiers
         bind:tagStates
         bind:selectedSizes
         bind:selectedExpansions
+        bind:selectedEnchantmentTypes
         bind:isMatchAnyTag
         bind:isMatchAnyHero
         bind:searchText
-        bind:selectedSearchLocationOption
         bind:monsterDropsOnlyState
     />
 
@@ -161,10 +137,10 @@
         {tagStates}
         {selectedSizes}
         {searchText}
-        selectedSearchLocationOption={itemSelectedSearchLocationOption}
         {isMatchAnyTag}
         {monsterDropsOnlyState}
         {selectedExpansions}
+        {selectedEnchantmentTypes}
         isHiddenWhenEmpty={true}
     />
 
@@ -175,7 +151,6 @@
         {selectedTiers}
         {tagStates}
         {searchText}
-        selectedSearchLocationOption={skillSelectedSearchLocationOption}
         {isMatchAnyTag}
         {isMatchAnyHero}
         {monsterDropsOnlyState}
@@ -187,7 +162,6 @@
         serverVersion={data.monstersVersion}
         selectedDay={undefined}
         {searchText}
-        selectedSearchLocationOption={monsterSelectedSearchLocationOption}
         selectedMonsterEncounter={undefined}
         isHiddenWhenEmpty={true}
         initialLoad={false}

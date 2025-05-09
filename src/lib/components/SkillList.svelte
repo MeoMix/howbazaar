@@ -3,7 +3,6 @@
         ClientSideSkillCard,
         Hero,
         HiddenTag,
-        SkillSearchLocationOption,
         SkillSortOption,
         Tag,
         TierType,
@@ -28,7 +27,6 @@
         selectedTiers,
         tagStates,
         searchText,
-        selectedSearchLocationOption,
         isMatchAnyTag,
         isMatchAnyHero,
         monsterDropsOnlyState,
@@ -41,7 +39,6 @@
         selectedTiers: TierType[];
         tagStates: Record<Tag | HiddenTag, TriState>;
         searchText: string;
-        selectedSearchLocationOption: SkillSearchLocationOption;
         isMatchAnyTag: boolean;
         isMatchAnyHero: boolean;
         monsterDropsOnlyState: TriState;
@@ -78,9 +75,7 @@
         ),
     );
 
-    const searchedSkills = $derived(
-        searchCards(filteredSkills, searchText, selectedSearchLocationOption),
-    );
+    const searchedSkills = $derived(searchCards(filteredSkills, searchText));
 
     const sortedSkills = $derived(
         sortCards(searchedSkills, selectedSortOption, searchText),

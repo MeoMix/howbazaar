@@ -2,26 +2,23 @@
     import { Button } from "flowbite-svelte";
     import SearchInput from "./SearchInput.svelte";
     import SingleSelectFilter from "./SingleSelectFilter.svelte";
-    import type { MonsterSearchLocationOption, Option } from "$lib/types";
+    import type { Option } from "$lib/types";
     import { onMount } from "svelte";
 
     let {
         dayOptions,
         searchText = $bindable(),
-        selectedSearchLocationOption = $bindable(),
         selectedDay = $bindable(),
         onSelectDay,
     }: {
         dayOptions: Option[];
         searchText: string;
-        selectedSearchLocationOption: MonsterSearchLocationOption;
         selectedDay: number | undefined;
         onSelectDay: () => void;
     } = $props();
 
     function clearSearch() {
         searchText = "";
-        selectedSearchLocationOption = "name-text";
         selectedDay = undefined;
     }
 
@@ -35,18 +32,11 @@
             searchText = hash.replace(/_+/g, " ");
         }
     });
-
-    let searchLocationOptions = $state([
-        { name: "Name", value: "name" },
-        { name: "Name & Text", value: "name-text" },
-    ] as { name: string; value: MonsterSearchLocationOption }[]);
 </script>
 
 <div class="mt-8 mb-4">
     <SearchInput
         placeholder="Search monsters"
-        {searchLocationOptions}
-        bind:selectedSearchLocationOption
         bind:value={searchText}
         onClear={clearSearchInput}
     />

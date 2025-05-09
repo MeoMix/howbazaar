@@ -3,12 +3,12 @@
         Hero,
         HiddenTag,
         ItemSortOption,
-        ItemSearchLocationOption,
         Size,
         Tag,
         TierType,
         TriState,
         ExpansionPackId,
+        EnchantmentType,
     } from "$lib/types";
     import CardItemFilters from "$lib/components/CardItemFilters.svelte";
     import type { PageData } from "./$types";
@@ -26,11 +26,9 @@
     let isMatchAnyTag = $state(false);
     let selectedSizes = $state([] as Size[]);
     let searchText = $state("");
-    let selectedSearchLocationOption = $state(
-        "name-text" as ItemSearchLocationOption,
-    );
     let monsterDropsOnlyState = $state("unset" as TriState);
     let selectedExpansions = $state([] as ExpansionPackId[]);
+    let selectedEnchantmentTypes = $state([] as EnchantmentType[]);
     let sortOptions: { name: string; value: ItemSortOption }[] = [
         {
             value: "name",
@@ -64,15 +62,16 @@
         tagOptions={data.tagOptions}
         sizeOptions={data.sizeOptions}
         expansionOptions={data.expansionOptions}
+        enchantmentOptions={data.enchantmentOptions}
         bind:selectedHeroes
         bind:selectedTiers
         bind:tagStates
         bind:selectedSizes
         bind:isMatchAnyTag
         bind:searchText
-        bind:selectedSearchLocationOption
         bind:monsterDropsOnlyState
         bind:selectedExpansions
+        bind:selectedEnchantmentTypes
     />
 
     <ItemList
@@ -83,10 +82,10 @@
         {tagStates}
         {selectedSizes}
         {searchText}
-        {selectedSearchLocationOption}
         {isMatchAnyTag}
         {monsterDropsOnlyState}
         {selectedExpansions}
+        {selectedEnchantmentTypes}
         isHiddenWhenEmpty={false}
     />
 </div>

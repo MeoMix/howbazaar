@@ -2,7 +2,6 @@
     import type {
         ClientSideMonsterEncounter,
         ClientSideMonsterEncounterDay,
-        MonsterSearchLocationOption,
     } from "$lib/types";
     import { onMount, tick } from "svelte";
     import LazyLoadList from "./LazyLoadList.svelte";
@@ -15,7 +14,6 @@
         serverVersion,
         selectedDay,
         searchText,
-        selectedSearchLocationOption,
         selectedMonsterEncounter,
         isHiddenWhenEmpty,
         initialLoad = true,
@@ -23,7 +21,6 @@
         serverVersion: string;
         selectedDay: number | undefined;
         searchText: string;
-        selectedSearchLocationOption: MonsterSearchLocationOption;
         selectedMonsterEncounter: ClientSideMonsterEncounter | undefined;
         isHiddenWhenEmpty: boolean;
         initialLoad?: boolean;
@@ -59,7 +56,6 @@
                       encounter.groups.flatMap((group) => group),
                   ),
                   searchText,
-                  selectedSearchLocationOption,
               ),
     );
 

@@ -3,40 +3,29 @@
   import { CloseCircleSolid, InfoCircleSolid } from "flowbite-svelte-icons";
   import { onMount } from "svelte";
   import type { Snippet } from "svelte";
-  import SearchInputSelect from "./SearchInputSelect.svelte";
-  import type { AllSearchLocationOption } from "$lib/types";
 
   let {
     placeholder,
-    searchLocationOptions,
     value = $bindable(),
-    selectedSearchLocationOption = $bindable(),
     onClear,
     actions,
   }: {
     placeholder: string;
-    searchLocationOptions: { name: string; value: AllSearchLocationOption }[];
     value: string;
-    selectedSearchLocationOption: AllSearchLocationOption;
     onClear: () => void;
     actions?: Snippet;
   } = $props();
 
   let inputElement: HTMLInputElement | null = null;
 
-  function focusInput(selectText = false) {
-    if (inputElement) {
-      inputElement.focus();
-      if (selectText) {
-        inputElement.select();
-      }
-    }
-  }
-
   function handleShortcut(event: KeyboardEvent) {
     if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === "k") {
       event.preventDefault();
-      focusInput(true);
+
+      if (inputElement) {
+        inputElement.focus();
+        inputElement.select();
+      }
     }
   }
 
@@ -55,15 +44,6 @@
       <div
         class="flex items-center focus-within:ring-2 focus-within:ring-bazaar-orange focus-within:rounded-lg"
       >
-        <SearchInputSelect
-          options={searchLocationOptions}
-          selectedOption={selectedSearchLocationOption}
-          onSelectOption={(option) => {
-            selectedSearchLocationOption = option;
-            focusInput(false);
-          }}
-        />
-
         <!-- svelte-ignore a11y_autofocus -->
         <input
           bind:this={inputElement}
@@ -71,7 +51,7 @@
           type="text"
           {placeholder}
           bind:value
-          class="block disabled:cursor-not-allowed disabled:opacity-50 rtl:text-right p-2.5 bg-gray-50 text-gray-900 dark:text-bazaar-tan700 border border-gray-300 text-sm rounded-lg rounded-l-none w-full pr-2 md:pr-12 focus:border-gray-300 dark:focus:border-bazaar-brown600 focus:ring-0 dark:bg-bazaar-brown dark:placeholder-bazaar-tan700 dark:border-bazaar-brown600"
+          class="block disabled:cursor-not-allowed disabled:opacity-50 rtl:text-right p-2.5 bg-gray-50 text-gray-900 dark:text-bazaar-tan700 border border-gray-300 text-sm rounded-lg w-full pr-2 md:pr-12 focus:border-gray-300 dark:focus:border-bazaar-brown600 focus:ring-0 dark:bg-bazaar-brown dark:placeholder-bazaar-tan700 dark:border-bazaar-brown600"
         />
         <div
           class="absolute inset-y-0 right-2 flex items-center justify-center"

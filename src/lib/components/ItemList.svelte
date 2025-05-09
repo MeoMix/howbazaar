@@ -4,12 +4,12 @@
         Hero,
         HiddenTag,
         ItemSortOption,
-        ItemSearchLocationOption,
         Size,
         Tag,
         TierType,
         TriState,
         ExpansionPackId,
+        EnchantmentType,
     } from "$lib/types";
     import { Label } from "flowbite-svelte";
     import CardItem from "./CardItem.svelte";
@@ -32,10 +32,10 @@
         tagStates,
         selectedSizes,
         searchText,
-        selectedSearchLocationOption,
         isMatchAnyTag,
         monsterDropsOnlyState,
         selectedExpansions,
+        selectedEnchantmentTypes,
         isHiddenWhenEmpty,
     }: {
         serverVersion: string;
@@ -45,10 +45,10 @@
         tagStates: Record<Tag | HiddenTag, TriState>;
         selectedSizes: Size[];
         searchText: string;
-        selectedSearchLocationOption: ItemSearchLocationOption;
         isMatchAnyTag: boolean;
         monsterDropsOnlyState: TriState;
         selectedExpansions: ExpansionPackId[];
+        selectedEnchantmentTypes: EnchantmentType[];
         isHiddenWhenEmpty: boolean;
     } = $props();
 
@@ -81,11 +81,12 @@
             isMatchAnyTag,
             monsterDropsOnlyState,
             selectedExpansions,
+            selectedEnchantmentTypes,
         ),
     );
 
     const searchedItems = $derived(
-        searchCards(filteredItems, searchText, selectedSearchLocationOption),
+        searchCards(filteredItems, searchText),
     );
 
     const sortedItems = $derived(
@@ -106,7 +107,7 @@
         listClasses="space-y-4"
     >
         {#snippet listItem(card: ClientSideItemCard)}
-            <CardItem {card} {areEnchantmentsShown} />
+            <CardItem {card} {areEnchantmentsShown} {selectedEnchantmentTypes} />
         {/snippet}
 
         {#snippet headerControls()}

@@ -1,12 +1,12 @@
 <script lang="ts">
-    import { onMount, tick } from "svelte";
+    // TODO: Add support for selectedEnchantmentTypes once I support merchants with enchantments.
+    import { onMount } from "svelte";
     import type {
         ClientSideItemCard,
         ClientSideMerchantCard,
         ExpansionPackId,
         Hero,
         HiddenTag,
-        MerchantSearchLocationOption,
         Size,
         Tag,
         TierType,
@@ -28,7 +28,6 @@
         merchantsServerVersion,
         searchText,
         selectedMerchant,
-        selectedSearchLocationOption,
         isHiddenWhenEmpty,
         initialLoad = true,
         selectedHeroes,
@@ -41,7 +40,6 @@
         itemsServerVersion: string;
         merchantsServerVersion: string;
         searchText: string;
-        selectedSearchLocationOption: MerchantSearchLocationOption;
         selectedMerchant: ClientSideMerchantCard | undefined;
         isHiddenWhenEmpty: boolean;
         initialLoad?: boolean;
@@ -139,6 +137,7 @@
                 false,
                 "unset",
                 selectedExpansions,
+                [],
             ),
             selectedHeroes,
             selectedTiers,
@@ -147,15 +146,12 @@
             isMatchAnyTag,
             "unset",
             selectedExpansions,
+            [],
         ),
     );
 
     const searchedItems = $derived(
-        searchCards(
-            filteredItems,
-            leftoverSearchText(),
-            selectedSearchLocationOption,
-        ),
+        searchCards(filteredItems, leftoverSearchText()),
     );
 
     const merchantItemsMap = $derived(
@@ -175,6 +171,7 @@
                             false,
                             "unset",
                             selectedExpansions,
+                            [],
                         ),
                         merchant.filters.heroes ?? [
                             "Vanessa",
@@ -188,6 +185,7 @@
                         merchant.filters.isMatchAnyTag ?? true,
                         "unset",
                         selectedExpansions,
+                        [],
                     ).length,
                     // Apply filters to the item pool again, but this time customized to the specific merchant.
                     // This will ensure each merchant only shows items relevant to the specific merchant.
@@ -205,6 +203,7 @@
                         merchant.filters.isMatchAnyTag ?? true,
                         "unset",
                         selectedExpansions,
+                        [],
                     ),
                 },
             ]),
@@ -250,7 +249,6 @@
             filteredMerchants(),
             merchantItemsMap,
             searchText,
-            selectedSearchLocationOption,
         );
     });
 
@@ -259,20 +257,6 @@
             selectedMerchant = undefined;
         } else {
             selectedMerchant = merchant;
-
-            // await tick();
-
-            // // Do this manually so it works even if data is fetched after page loads
-            // const targetElement = document.getElementById(
-            //     merchant.name.replace(/\s+/g, "_"),
-            // );
-
-            // if (targetElement) {
-            //     targetElement.scrollIntoView({
-            //         behavior: "smooth",
-            //         block: "start",
-            //     });
-            // }
         }
     }
 </script>

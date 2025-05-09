@@ -6,7 +6,6 @@
         ExpansionPackId,
         Hero,
         HiddenTag,
-        MerchantSearchLocationOption,
         Size,
         Tag,
         TierType,
@@ -28,9 +27,6 @@
     );
     let isMatchAnyTag = $state(false);
     let selectedSizes = $state([] as Size[]);
-    let selectedSearchLocationOption = $state(
-        "name-text" as MerchantSearchLocationOption,
-    );
     let selectedExpansions = $state([] as ExpansionPackId[]);
 </script>
 
@@ -59,7 +55,6 @@
         bind:selectedSizes
         bind:isMatchAnyTag
         bind:searchText
-        bind:selectedSearchLocationOption
         bind:selectedExpansions
     />
 
@@ -68,7 +63,6 @@
         merchantsServerVersion={data.version}
         {searchText}
         {selectedMerchant}
-        {selectedSearchLocationOption}
         {selectedHeroes}
         {selectedTiers}
         {tagStates}

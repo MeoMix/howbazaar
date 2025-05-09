@@ -1,17 +1,9 @@
 <script lang="ts">
     import { Button, Label } from "flowbite-svelte";
     import MultiSelectFilter from "./MultiSelectFilter.svelte";
-    import FilterToggle from "./FilterToggle.svelte";
     import { onMount } from "svelte";
     import { page } from "$app/state";
-    import type {
-        Hero,
-        HiddenTag,
-        Tag,
-        Option,
-        TriState,
-        SkillSearchLocationOption,
-    } from "$lib/types";
+    import type { Hero, HiddenTag, Tag, Option, TriState } from "$lib/types";
     import SearchInput from "./SearchInput.svelte";
     import MultiSelectTriFilter from "./MultiSelectTriFilter.svelte";
     import AdvancedFilterToggle from "./AdvancedFilterToggle.svelte";
@@ -27,7 +19,6 @@
         isMatchAnyTag = $bindable(),
         isMatchAnyHero = $bindable(),
         searchText = $bindable(),
-        selectedSearchLocationOption = $bindable(),
         monsterDropsOnlyState = $bindable(),
     }: {
         heroOptions: Option[];
@@ -39,13 +30,11 @@
         isMatchAnyTag: boolean;
         isMatchAnyHero: boolean;
         searchText: string;
-        selectedSearchLocationOption: SkillSearchLocationOption;
         monsterDropsOnlyState: TriState;
     } = $props();
 
     function clearSearch() {
         searchText = "";
-        selectedSearchLocationOption = "name-text";
         heroStates = Object.fromEntries(
             heroOptions.map((option) => [option.value, "unset"]),
         ) as Record<Hero, TriState>;
@@ -70,22 +59,14 @@
         const hash = window.location.hash.slice(1);
         if (hash) {
             searchText = hash.replace(/_+/g, " ");
-            selectedSearchLocationOption = "name";
         }
     });
-
-    let searchLocationOptions = $state([
-        { name: "Name", value: "name" },
-        { name: "Name & Text", value: "name-text" },
-    ] as { name: string; value: SkillSearchLocationOption }[]);
 </script>
 
 <div class="mt-8 mb-4">
     <div class="flex gap-2 items-center">
         <SearchInput
             placeholder="Search skills"
-            {searchLocationOptions}
-            bind:selectedSearchLocationOption
             bind:value={searchText}
             onClear={clearSearchInput}
         >
@@ -97,7 +78,9 @@
 
     {#if isShowingAdvancedFilters}
         <div class="flex flex-col gap-y-4">
-            <div class="grid grid-cols-2 mt-4 gap-y-4">
+            <div
+                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-4 gap-y-4 gap-x-4"
+            >
                 <div class="col-span-full">
                     <MultiSelectTriFilter
                         label="Tags"

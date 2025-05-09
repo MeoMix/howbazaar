@@ -1,5 +1,5 @@
 <script lang="ts">
-    import type { ClientSideItemCard } from "$lib/types";
+    import type { ClientSideItemCard, EnchantmentType } from "$lib/types";
     import { Card } from "flowbite-svelte";
     import { filterTags } from "$lib/utils/filterUtils";
     import CardBadges from "./CardBadges.svelte";
@@ -18,15 +18,29 @@
         card,
         areEnchantmentsShown,
         showCopyLink = true,
+        selectedEnchantmentTypes,
     }: {
         card: ClientSideItemCard;
         areEnchantmentsShown: boolean;
         showCopyLink?: boolean;
+        selectedEnchantmentTypes?: EnchantmentType[];
     } = $props();
 
     const id = $derived(card.name.replace(/\s+/g, "_"));
     const tags = $derived(
         filterTags(card.tags, card.hiddenTags, card.customTags),
+    );
+
+    const shownEnchantments = $derived(
+        areEnchantmentsShown
+            ? card.enchantments
+                  .filter((enchantment) =>
+                      selectedEnchantmentTypes?.length
+                          ? selectedEnchantmentTypes.includes(enchantment.type)
+                          : true,
+                  )
+                  .sort((a, b) => a.type.localeCompare(b.type))
+            : [],
     );
 </script>
 
@@ -97,14 +111,24 @@
                 startingTier={card.startingTier}
             />
         </div>
-        {#if card.enchantments.length > 0 && areEnchantmentsShown}
+        {#if shownEnchantments.length > 0}
             <div class="col-span-2 px-4 pb-4">
                 <Divider />
 
                 <div
-                    class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4"
+                    class={`grid gap-4 ${
+                        shownEnchantments.length === 1
+                            ? "grid-cols-1"
+                            : shownEnchantments.length === 2
+                              ? "grid-cols-2 sm:grid-cols-2"
+                              : shownEnchantments.length === 3
+                                ? "grid-cols-2 sm:grid-cols-3"
+                                : shownEnchantments.length === 4
+                                  ? "grid-cols-2 sm:grid-cols-2 md:grid-cols-4"
+                                  : "grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5"
+                    }`}
                 >
-                    {#each card.enchantments as enchantment}
+                    {#each shownEnchantments as enchantment}
                         <div>
                             <div
                                 class={`text-lg font-semibold text-enchantments-${enchantment.type.toLowerCase()}`}
@@ -121,16 +145,6 @@
                         </div>
                     {/each}
                 </div>
-            </div>
-        {/if}
-        {#if card.remarks.length > 0}
-            <div class="px-4 pb-4">
-                <div class="text-yellow-500 font-bold">
-                    !! HOWBAZAAR DEVELOPER REMARK !!
-                </div>
-                {#each card.remarks as remark}
-                    <div>{remark}</div>
-                {/each}
             </div>
         {/if}
     </div>

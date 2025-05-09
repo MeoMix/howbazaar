@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import type { ParsedItemCard, ParsedSkillCard, TierType, Tag, HiddenTag, Size, Hero, EnchantmentType, CorePackId } from '../src/lib/types';
+import type { ParsedItemCard, ParsedSkillCard, TierType, Tag, HiddenTag, Size, Hero, EnchantmentType, CorePackId, CustomTag } from '../src/lib/types';
 import { getPatchNotes } from './generatePatchNotes';
 
 // Helper function to create tiers object
@@ -19,12 +19,12 @@ const createMockItem = (overrides: Partial<ParsedItemCard> = {}): ParsedItemCard
         startingTier: 'Bronze' as TierType,
         tags: ['Weapon'] as Tag[],
         hiddenTags: [] as HiddenTag[],
+        customTags: [] as CustomTag[],
         size: 'Medium' as Size,
         heroes: ['Pygmalien', 'Common'] as Hero[],
         unifiedTooltips: ['Deal 10 damage'],
         enchantments: [],
         tiers: createTiers(),
-        remarks: [],
         packId: 'Core' as CorePackId
     };
     return structuredClone({ ...defaultContent, ...overrides });
@@ -38,11 +38,11 @@ const createMockSkill = (overrides: Partial<ParsedSkillCard> = {}): ParsedSkillC
         startingTier: 'Bronze' as TierType,
         tags: [] as Tag[],
         hiddenTags: [] as HiddenTag[],
+        customTags: [] as CustomTag[],
         size: 'Medium' as Size,
         heroes: ['Pygmalien', 'Common'] as Hero[],
         unifiedTooltips: ['Your weapons deal +5 damage'],
         tiers: createTiers(),
-        remarks: [],
         packId: 'Core' as CorePackId,
         artKey: 'Icon_Skill_Test.png'
     };

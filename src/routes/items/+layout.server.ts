@@ -9,7 +9,7 @@ export async function load({ fetch }) {
     }
 
     const { data: items, version }: ItemsApiResponse = await response.json();
-    const { heroOptions, tagOptions, minimumTierOptions, sizeOptions, expansionOptions } = getCardFilterOptions(items)
+    const { heroOptions, tagOptions, minimumTierOptions, sizeOptions, expansionOptions, enchantmentOptions } = getCardFilterOptions(items)
 
     return {
         heroOptions,
@@ -17,6 +17,7 @@ export async function load({ fetch }) {
         minimumTierOptions,
         sizeOptions,
         expansionOptions,
+        enchantmentOptions,
         version,
     };
 }

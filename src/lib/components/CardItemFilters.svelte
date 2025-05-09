@@ -8,8 +8,8 @@
         Tag,
         Option,
         TriState,
-        ItemSearchLocationOption,
         ExpansionPackId,
+        EnchantmentType,
     } from "$lib/types";
     import SearchInput from "./SearchInput.svelte";
     import MultiSelectTriFilter from "./MultiSelectTriFilter.svelte";
@@ -22,35 +22,36 @@
         tagOptions,
         sizeOptions,
         expansionOptions,
+        enchantmentOptions,
         selectedHeroes = $bindable(),
         selectedTiers = $bindable(),
         tagStates = $bindable(),
         selectedSizes = $bindable(),
         isMatchAnyTag = $bindable(),
         searchText = $bindable(),
-        selectedSearchLocationOption = $bindable(),
         monsterDropsOnlyState = $bindable(),
         selectedExpansions = $bindable(),
+        selectedEnchantmentTypes = $bindable(),
     }: {
         heroOptions: Option[];
         minimumTierOptions: Option[];
         tagOptions: Option[];
         sizeOptions: Option[];
         expansionOptions: Option[];
+        enchantmentOptions: Option[];
         selectedHeroes: string[];
         selectedTiers: string[];
         tagStates: Record<Tag | HiddenTag, TriState>;
         selectedSizes: string[];
         isMatchAnyTag: boolean;
         searchText: string;
-        selectedSearchLocationOption: ItemSearchLocationOption;
         monsterDropsOnlyState: TriState;
         selectedExpansions: ExpansionPackId[];
+        selectedEnchantmentTypes: EnchantmentType[];
     } = $props();
 
     function clearSearch() {
         searchText = "";
-        selectedSearchLocationOption = "name-text";
         selectedHeroes = [];
         selectedTiers = [];
         tagStates = Object.fromEntries(
@@ -74,26 +75,14 @@
         const hash = window.location.hash.slice(1);
         if (hash) {
             searchText = hash.replace(/_+/g, " ");
-            selectedSearchLocationOption = "name";
         }
     });
-
-    let searchLocationOptions = $state([
-        { name: "Name", value: "name" },
-        { name: "Name & Text", value: "name-text" },
-        {
-            name: "Name, Text & Enchantments",
-            value: "name-text-enchantments",
-        },
-    ] as { name: string; value: ItemSearchLocationOption }[]);
 </script>
 
 <div class="mt-8 mb-4">
     <div class="flex gap-2 items-center">
         <SearchInput
             placeholder="Search items"
-            {searchLocationOptions}
-            bind:selectedSearchLocationOption
             bind:value={searchText}
             onClear={clearSearchInput}
         >
@@ -105,7 +94,9 @@
 
     {#if isShowingAdvancedFilters}
         <div class="flex flex-col gap-y-4">
-            <div class="grid grid-cols-2 mt-4 gap-y-4">
+            <div
+                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-4 gap-y-4 gap-x-4"
+            >
                 <div class="col-span-full">
                     <MultiSelectTriFilter
                         label="Tags"
@@ -133,6 +124,11 @@
                     label="Expansions"
                     options={expansionOptions}
                     bind:selectedOptionValues={selectedExpansions}
+                />
+                <MultiSelectFilter
+                    label="Enchantments"
+                    options={enchantmentOptions}
+                    bind:selectedOptionValues={selectedEnchantmentTypes}
                 />
 
                 <div>

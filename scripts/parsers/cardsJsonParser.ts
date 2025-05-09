@@ -477,7 +477,6 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
         const abilities = Object.values(card.Abilities);
         const auras = Object.values(card.Auras);
         const tierMap = getTierMap(card);
-        const remarks = [] as string[];
 
         let tiers = Object.fromEntries((Object.entries(tierMap) as Entries<typeof tierMap>).map(
             ([tierName, tier]) => {
@@ -713,7 +712,6 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
             heroes: card.Heroes,
             enchantments,
             unifiedTooltips,
-            remarks,
             packId: card.CardPackId
         };
     });
@@ -760,7 +758,6 @@ function parseSkillCards(cardsJson: CardsJson): ParsedSkillCard[] {
         const abilities = Object.values(card.Abilities);
         const auras = Object.values(card.Auras);
         const tierMap = getTierMap(card);
-        const remarks = [] as string[];
 
         let tiers = Object.fromEntries((Object.entries(tierMap) as Entries<typeof tierMap>).map(
             ([tierName, tier]) => {
@@ -811,7 +808,6 @@ function parseSkillCards(cardsJson: CardsJson): ParsedSkillCard[] {
             heroes: card.Heroes,
             artKey: card.ArtKey,
             unifiedTooltips,
-            remarks,
             packId: card.CardPackId
         };
     });

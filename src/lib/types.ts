@@ -12,7 +12,7 @@ type ClientSideTier = {
     tooltips: string[];
 };
 
-type ClientSideEnchantment = {
+export type ClientSideEnchantment = {
     type: EnchantmentType;
     tooltips: string[];
 };
@@ -32,7 +32,6 @@ export type ParsedItemCard = {
     heroes: Hero[];
     enchantments: ClientSideEnchantment[];
     unifiedTooltips: string[];
-    remarks: string[];
     packId: CorePackId | ExpansionPackId;
 };
 
@@ -54,7 +53,6 @@ export type ClientSideItemCard = {
     enchantments: ClientSideEnchantment[];
     unifiedTooltips: string[];
     combatEncounters: ClientSideCombatEncounterSummary[];
-    remarks: string[];
     packId: CorePackId | ExpansionPackId;
 };
 
@@ -72,7 +70,6 @@ export type ParsedSkillCard = {
     heroes: Hero[];
     artKey: string;
     unifiedTooltips: string[];
-    remarks: string[];
     packId: CorePackId | ExpansionPackId;
 };
 
@@ -88,7 +85,6 @@ export type ClientSideSkillCard = {
     heroes: Hero[];
     unifiedTooltips: string[];
     combatEncounters: ClientSideCombatEncounterSummary[];
-    remarks: string[];
     packId: CorePackId | ExpansionPackId;
 };
 
@@ -204,11 +200,6 @@ export type MerchantsApiResponse = {
     version: string;
 }
 
-export type AllSearchLocationOption = ItemSearchLocationOption | SkillSearchLocationOption | MonsterSearchLocationOption;
-export type ItemSearchLocationOption = "name" | "name-text" | "name-text-enchantments";
-export type SkillSearchLocationOption = "name" | "name-text";
-export type MonsterSearchLocationOption = "name" | "name-text";
-export type MerchantSearchLocationOption = "name" | "name-text";
 export type ItemSortOption = "name" | "tier" | "size" | "hero";
 export type SkillSortOption = "name" | "tier" | "hero";
 

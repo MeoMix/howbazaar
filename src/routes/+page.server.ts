@@ -17,7 +17,7 @@ export async function load({ fetch }) {
     }
 
     const { data: skills, version: skillsVersion }: SkillsApiResponse = await skillsResponse.json();
-    const { heroOptions, tagOptions, minimumTierOptions, sizeOptions, expansionOptions } = getCardFilterOptions([...items, ...skills]);
+    const { heroOptions, tagOptions, minimumTierOptions, sizeOptions, expansionOptions, enchantmentOptions } = getCardFilterOptions([...items, ...skills]);
 
     const monsterEncounterDaysResponse = await fetch('/api/monsterEncounterDays');
 
@@ -41,6 +41,7 @@ export async function load({ fetch }) {
         minimumTierOptions,
         sizeOptions,
         expansionOptions,
+        enchantmentOptions,
         itemsVersion,
         skillsVersion,
         monstersVersion,
