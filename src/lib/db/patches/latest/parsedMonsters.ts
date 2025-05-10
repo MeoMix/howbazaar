@@ -10,7 +10,7 @@ const data: ParsedMonster[] = [
     "items": [
       {
         "templateId": "b57d9963-d241-40c9-8f9f-f9925a2da661",
-        "tierType": "Silver",
+        "tierType": "Gold",
         "socketId": "Socket_1"
       },
       {
@@ -20,17 +20,17 @@ const data: ParsedMonster[] = [
       },
       {
         "templateId": "2df8f38b-bb9f-4247-afe9-525067c9e29e",
-        "tierType": "Silver",
-        "socketId": "Socket_1"
-      },
-      {
-        "templateId": "7fa2b9c8-f038-44f9-8143-a4f8ee7f34bf",
         "tierType": "Gold",
         "socketId": "Socket_1"
       },
       {
-        "templateId": "48d24eb0-d953-409c-9602-1d3d4c4278c5",
+        "templateId": "7fa2b9c8-f038-44f9-8143-a4f8ee7f34bf",
         "tierType": "Silver",
+        "socketId": "Socket_1"
+      },
+      {
+        "templateId": "48d24eb0-d953-409c-9602-1d3d4c4278c5",
+        "tierType": "Gold",
         "socketId": "Socket_1"
       }
     ],
