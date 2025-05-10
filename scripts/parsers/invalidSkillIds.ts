@@ -6,7 +6,6 @@ const invalidSkillIds: Record<string, string> = {
   "c4c70f57-c51e-4bc4-848c-0f0e7fbddd28": "Small Weaponry",
   "8c36b532-0eb5-49f8-9128-a50b17ef3eed": "Flanking Toxins",
   "883043eb-5a5f-4fa2-9cae-185f51019b11": "Microfiber",
-  "cac848c8-dc77-4277-ba9f-df282b9f36ef": "Nanite Healing",
   "fcb51ffd-6d25-4e74-871a-7dc0de2bae91": "Sparring Partner",
   "3c90df05-0cf7-4555-bebc-4eedd5d46356": "Thrill of the Flight",
   "6ef03e95-f3af-47d8-871f-e8c1e043a195": "Medic's Shield",
@@ -80,7 +79,6 @@ const invalidSkillIds: Record<string, string> = {
   "dab89eb6-be1a-4651-a4d8-44c2d2716569": "Vengeful Strike",
   "7f803167-d540-4ea9-bd46-9b6bdad687d3": "Growth Spurt",
   "11a262fe-e1e7-4656-a07c-f6a3a1249352": "Second Degree Burns",
-  "b6936741-8ec9-42f1-a6ec-d76061141f7d": "Standardized Care",
   "254017cc-e3b9-486e-9276-850867ceba6b": "Standardized Defenses",
   "07fbd5ab-c52a-42d8-801d-8992c44714de": "Standardized Toxins",
   "f2782115-1920-4bf2-9306-32697bcfee15": "Critical Captain",
@@ -90,7 +88,6 @@ const invalidSkillIds: Record<string, string> = {
   "94b80fbf-4d21-4439-beb2-e1bdf56cea03": "Flanking Shots",
   "b7c2ce67-0da5-4360-9eda-b328817affe6": "Heavy Shielding",
   "aa59ff52-e4de-4728-bf9c-3ac8411ecbd8": "Large Poisons",
-  "65a77e2d-6c13-46c2-ae28-c521502a8be3": "Medical Ward",
   "b1b9ff21-32ac-436a-bd3c-120563b26bea": "Third Degree Burns",
   "1034cd09-ce16-44ad-9a73-ba86a592c9d2": "Keen Edge",
   "7f097b31-c29e-4082-a835-6d6457c2d536": "Ignition"

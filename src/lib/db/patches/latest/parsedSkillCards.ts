@@ -7485,6 +7485,51 @@ const data: ParsedSkillCard[] = [
     "packId": "Vanessa_Core"
   },
   {
+    "id": "cac848c8-dc77-4277-ba9f-df282b9f36ef",
+    "name": "Herbal Supplements",
+    "startingTier": "Bronze",
+    "tiers": {
+      "Bronze": {
+        "tooltips": [
+          "Your Regen items have +1 Regen."
+        ]
+      },
+      "Silver": {
+        "tooltips": [
+          "Your Regen items have +2 Regen."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Your Regen items have +3 Regen."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Your Regen items have +4 Regen."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "RegenReference"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Pygmalien",
+      "Mak"
+    ],
+    "artKey": "Icon_Skill_NaniteHealing.png",
+    "unifiedTooltips": [
+      "Your Regen items have (+1/+2/+3/+4) Regen."
+    ],
+    "packId": "Pygmalien_Core"
+  },
+  {
     "id": "639fdb70-8dde-4301-ab75-426556a65eb6",
     "name": "Trickle Down Economics",
     "startingTier": "Gold",
@@ -8003,6 +8048,51 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_Lethargy.png",
     "unifiedTooltips": [
       "All item cooldowns are increased by (1/2/3) second(s)."
+    ],
+    "packId": "Pygmalien_Core"
+  },
+  {
+    "id": "b6936741-8ec9-42f1-a6ec-d76061141f7d",
+    "name": "Vital Reserve",
+    "startingTier": "Bronze",
+    "tiers": {
+      "Bronze": {
+        "tooltips": [
+          "Your rightmost Regen item has +2 Regen."
+        ]
+      },
+      "Silver": {
+        "tooltips": [
+          "Your rightmost Regen item has +4 Regen."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Your rightmost Regen item has +6 Regen."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Your rightmost Regen item has +8 Regen."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "RegenReference"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Pygmalien",
+      "Mak"
+    ],
+    "artKey": "Icon_Skill_StandardizedCare.png",
+    "unifiedTooltips": [
+      "Your rightmost Regen item has (+2/+4/+6/+8) Regen."
     ],
     "packId": "Pygmalien_Core"
   },
@@ -9768,6 +9858,51 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_HardenedShield.png",
     "unifiedTooltips": [
       "When your enemy uses a Weapon, your Shield items gain (5/10) Shield for the fight."
+    ],
+    "packId": "Pygmalien_Core"
+  },
+  {
+    "id": "65a77e2d-6c13-46c2-ae28-c521502a8be3",
+    "name": "Walk-in Clinic",
+    "startingTier": "Bronze",
+    "tiers": {
+      "Bronze": {
+        "tooltips": [
+          "Your leftmost Regen item has +2 Regen."
+        ]
+      },
+      "Silver": {
+        "tooltips": [
+          "Your leftmost Regen item has +4 Regen."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Your leftmost Regen item has +6 Regen."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Your leftmost Regen item has +8 Regen."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "HealReference"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Pygmalien",
+      "Mak"
+    ],
+    "artKey": "Icon_Skill_MedicalWard.png",
+    "unifiedTooltips": [
+      "Your leftmost Regen item has (+2/+4/+6/+8) Regen."
     ],
     "packId": "Pygmalien_Core"
   },
