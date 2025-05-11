@@ -49,6 +49,8 @@
         <input
           bind:this={inputElement}
           autofocus
+          autocorrect="off"
+          spellcheck="false"
           type="text"
           {placeholder}
           bind:value
