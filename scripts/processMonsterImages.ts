@@ -8,13 +8,12 @@ import parsedDayHours from "../src/lib/db/patches/latest/parsedDayHours";
 import { getMonsterEncounterDays } from "../src/lib/services/monsterEncounterService";
 import { copyAndRenameFiles } from './utils/fileUtils';
 import { checkAndResizeImages, convertImagesToAvif, type ImagePair, mergeImages } from './utils/imageUtils';
+import { extractAssets } from './utils/assetStudioUtil';
 
 const inputDirectory = './scripts/images/';
 const assetType = 'monsters';
 const assetPath = `${inputDirectory}${assetType}/`;
 const outputDirectory = './static/images/';
-
-// .\AssetStudioModCLI "C:\Program Files\Tempo Launcher - Beta\The Bazaar game_64\bazaarwinprodlatest\TheBazaar_Data\StreamingAssets\aa\StandaloneWindows64" --filter-by-name Monster,ENC_Monster,ENC_Event -g none -t tex2d -o ./monsters
 
 const nameToFileMap: Record<string, string> = {
     'Hakurvian Rocket Trooper': 'HarkuvianRocketTrooper',
@@ -32,6 +31,12 @@ const nameToFileMap: Record<string, string> = {
 };
 
 async function processMonsterImages() {
+    await extractAssets({
+        outputPath: `${inputDirectory}monsters`,
+        filterByName: 'Monster,ENC_Monster,ENC_Event',
+        type: 'tex2d',
+    });
+
     const monsterEncounterDays = getMonsterEncounterDays(
         parsedItemCards,
         parsedSkillCards,

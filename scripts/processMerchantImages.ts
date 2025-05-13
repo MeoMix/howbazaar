@@ -4,13 +4,12 @@ import parsedMerchantCards from "../src/lib/db/patches/latest/parsedMerchantCard
 import { getMerchants } from "../src/lib/services/merchantService";
 import { copyAndRenameFiles } from './utils/fileUtils';
 import { checkAndResizeImages, convertImagesToAvif, type ImagePair, mergeImages } from './utils/imageUtils';
+import { extractAssets } from './utils/assetStudioUtil';
 
 const inputDirectory = './scripts/images/';
 const assetType = 'merchants';
 const assetPath = `${inputDirectory}${assetType}/`;
 const outputDirectory = './static/images/';
-
-// .\AssetStudioModCLI "C:\Program Files\Tempo Launcher - Beta\The Bazaar game_64\bazaarwinprodlatest\TheBazaar_Data\StreamingAssets\aa\StandaloneWindows64" --filter-by-name ENC_Merchant,ENC_Mechant,Skin_MAK_01a_Portrait -g none -t tex2d -o ./merchants
 
 const nameToFileMap: Record<string, string> = {
     'Silvia': 'Sterling',
@@ -24,6 +23,12 @@ const portraitOverrides: Record<string, string> = {
 };
 
 async function processMerchantImages() {
+    await extractAssets({
+        outputPath: `${inputDirectory}merchants`,
+        filterByName: 'ENC_Merchant,ENC_Mechant,Skin_MAK_01a_Portrait',
+        type: 'tex2d',
+    });
+
     const merchants = getMerchants(
         parsedMerchantCards,
     );

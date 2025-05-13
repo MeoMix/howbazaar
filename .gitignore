@@ -20,5 +20,10 @@ Thumbs.db
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 
+dotnet-install.sh
 /scripts/images/*
+/scripts/game/*
 .env*.local
+
+# Don't check in last modified timestamp since 3gb file isn't checked in.
+gameZipLastModified.txt

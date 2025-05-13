@@ -18,6 +18,7 @@
 		"processItemImages": "tsx scripts/processItemImages.ts",
 		"upload:images": "tsx scripts/uploadImagesToBunnyCDN.ts",
 		"pullLatestPatch": "tsx scripts/pullLatestPatch.ts",
+		"pullLatestGame": "tsx scripts/pullLatestGame.ts",
 		"generateMerchantFilterMapping": "tsx scripts/parsers/generateMerchantFilterMapping.ts"
 	},
 	"devDependencies": {
@@ -26,6 +27,7 @@
 		"@sveltejs/vite-plugin-svelte": "^5.0.3",
 		"@tailwindcss/vite": "^4.1.4",
 		"@types/node-fetch": "^2.6.12",
+		"@types/unzipper": "^0.10.11",
 		"@types/xxhashjs": "^0.2.4",
 		"axios": "^1.9.0",
 		"dotenv": "^16.5.0",
@@ -40,6 +42,7 @@
 		"tsx": "^4.19.3",
 		"type-fest": "^4.40.0",
 		"typescript": "^5.8.3",
+		"unzipper": "^0.12.3",
 		"vite": "^6.3.3",
 		"vitest": "^3.1.2"
 	},

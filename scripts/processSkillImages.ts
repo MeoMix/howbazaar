@@ -4,8 +4,7 @@ import path from 'path';
 import parsedSkillCards from '../src/lib/db/patches/latest/parsedSkillCards.ts';
 import { copyAndRenameFiles } from './utils/fileUtils.ts';
 import { convertImagesToAvif, checkAndResizeImages } from './utils/imageUtils.ts';
-
-// .\AssetStudioModCLI "C:\Program Files\Tempo Launcher - Beta\The Bazaar game_64\bazaarwinprodlatest\TheBazaar_Data\StreamingAssets\aa\StandaloneWindows64\defaultlocalgroup_assets_all.bundle" --filter-by-name Icon_SKILL -g none -t tex2d -o ./skills
+import { extractAssets } from './utils/assetStudioUtil.ts';
 
 const inputDirectory = './scripts/images/';
 const assetType = 'skills';
@@ -13,6 +12,12 @@ const assetPath = `${inputDirectory}${assetType}/`;
 const outputDirectory = './static/images/';
 
 async function processSkillImages() {
+    await extractAssets({
+        outputPath: `${inputDirectory}skills`,
+        filterByName: 'Icon_SKILL',
+        type: 'tex2d',
+    });
+
     const skillEntries = parsedSkillCards.map(card => ({
         id: card.id,
         artKey: card.artKey,

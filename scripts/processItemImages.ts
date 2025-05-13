@@ -3,11 +3,7 @@ import * as path from 'path';
 import { copyAndRenameFiles } from './utils/fileUtils';
 import parsedItemCards from "../src/lib/db/patches/latest/parsedItemCards";
 import { checkAndResizeImages, convertImagesToAvif } from './utils/imageUtils';
-
-// TODO: Tortuga maps to invalid item ID and wasn't caught/flagged.
-
-// .\AssetStudioModCLI "C:\Program Files\Tempo Launcher - Beta\The Bazaar game_64\bazaarwinprodlatest\TheBazaar_Data\StreamingAssets\aa\StandaloneWindows64" --filter-by-name CF_,PNG_,Ectoplasm,Seaweed,Octopus,Snowflake -g none --image-format jpg -t tex2d -o ./items
-// .\AssetStudioModCLI "C:\Program Files\Tempo Launcher - Beta\The Bazaar game_64\bazaarwinprodlatest\TheBazaar_Data\StreamingAssets\aa\StandaloneWindows64" --filter-by-name _CardData -g none -t monoBehaviour -o ./items_carddata
+import { extractAssets } from './utils/assetStudioUtil';
 
 interface ExpectedImage {
     cardGUID: string;
@@ -41,6 +37,18 @@ const nameToFileMap: { [key: string]: string } = {
 };
 
 async function processItemImages() {
+    await extractAssets({
+        outputPath: `${inputDirectory}items`,
+        filterByName: 'CF_,PNG_,Ectoplasm,Seaweed,Octopus,Snowflake',
+        type: 'tex2d',
+        imageFormat: 'jpg'
+    });
+    await extractAssets({
+        outputPath: `${inputDirectory}items_carddata`,
+        filterByName: '_CardData',
+        type: 'monoBehaviour'
+    });
+
     const expectedImages = await processCardDataFiles();
 
     const knownCardIds = new Set(parsedItemCards.map(card => card.id));
@@ -49,12 +57,12 @@ async function processItemImages() {
     // Early exit if lengths don't match
     const expectedGUIDs = new Set(expectedImages.map(e => e.cardGUID));
     const missingFromExpected = [...knownCardIds].filter(id => !expectedGUIDs.has(id));
-    
+
     if (missingFromExpected.length > 0) {
         console.log('Card GUIDs in parsedItemCards missing from expectedImages:');
         console.table(missingFromExpected.map(id => {
-                const card = parsedItemCards.find(c => c.id === id);
-                return { id, name: card?.name ?? 'Unknown' };
+            const card = parsedItemCards.find(c => c.id === id);
+            return { id, name: card?.name ?? 'Unknown' };
         }));
 
         throw new Error(`Mismatch between parsedItemCards and expectedImages: missing ${missingFromExpected.length}`);
