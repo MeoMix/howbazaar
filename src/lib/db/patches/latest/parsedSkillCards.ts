@@ -4405,22 +4405,22 @@ const data: ParsedSkillCard[] = [
     "tiers": {
       "Bronze": {
         "tooltips": [
-          "When you use a small item, heal 5."
+          "The first 5 times you use a small item each fight, Heal 5."
         ]
       },
       "Silver": {
         "tooltips": [
-          "When you use a small item, heal 10."
+          "The first 10 times you use a small item each fight, Heal 10."
         ]
       },
       "Gold": {
         "tooltips": [
-          "When you use a small item, heal 15."
+          "The first 15 times you use a small item each fight, Heal 15."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "When you use a small item, heal 20."
+          "The first 20 times you use a small item each fight, Heal 20."
         ]
       },
       "Legendary": {
@@ -4438,7 +4438,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_MON_SmallRefresh.png",
     "unifiedTooltips": [
-      "When you use a small item, heal (5/10/15/20)."
+      "The first (5/10/15/20) times you use a small item each fight, Heal (5/10/15/20)."
     ],
     "packId": "Core"
   },
@@ -8511,7 +8511,7 @@ const data: ParsedSkillCard[] = [
       },
       "Diamond": {
         "tooltips": [
-          "At the start of each fight, destroy an item on each player's board for the fight."
+          "The first time you use an item, destroy an item on each player's board for the fight."
         ]
       },
       "Legendary": {
@@ -8527,7 +8527,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_MON_IntotheVoid.png",
     "unifiedTooltips": [
-      "At the start of each fight, destroy an item on each player's board for the fight."
+      "The first time you use an item, destroy an item on each player's board for the fight."
     ],
     "packId": "Core"
   },

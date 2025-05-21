@@ -2441,31 +2441,31 @@ const data: ParsedItemCard[] = [
       {
         "type": "Turbo",
         "tooltips": [
-          "This has double Haste duration."
+          "Haste 3 items for 3 second(s)."
         ]
       },
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield 1 for each item to the left of this."
+          "Shield equal to this item's damage."
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal 1 for each item to the left of this."
+          "Heal equal to this item's damage."
         ]
       },
       {
         "type": "Toxic",
         "tooltips": [
-          "Poison 0.1 for each item to the left of this."
+          "Poison equal to 10% of this item's damage."
         ]
       },
       {
         "type": "Fiery",
         "tooltips": [
-          "Burn 0.1 for each item to the left of this."
+          "Burn equal to 10% of this item's damage."
         ]
       },
       {
@@ -3091,7 +3091,7 @@ const data: ParsedItemCard[] = [
     "tiers": {
       "Bronze": {
         "tooltips": [
-          "Cooldown 5 seconds",
+          "Cooldown 6 seconds",
           "Multicast 2",
           "Deal damage equal to 1 times your Income.",
           "While in play, you have +1 Income."
@@ -3099,7 +3099,7 @@ const data: ParsedItemCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "Cooldown 5 seconds",
+          "Cooldown 6 seconds",
           "Multicast 2",
           "Deal damage equal to 2 times your Income.",
           "While in play, you have +2 Income."
@@ -3107,7 +3107,7 @@ const data: ParsedItemCard[] = [
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 5 seconds",
+          "Cooldown 6 seconds",
           "Multicast 2",
           "Deal damage equal to 3 times your Income.",
           "While in play, you have +3 Income."
@@ -3115,7 +3115,7 @@ const data: ParsedItemCard[] = [
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 5 seconds",
+          "Cooldown 6 seconds",
           "Multicast 2",
           "Deal damage equal to 4 times your Income.",
           "While in play, you have +4 Income."
@@ -3213,7 +3213,7 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "Cooldown 5 seconds",
+      "Cooldown 6 seconds",
       "Multicast 2",
       "Deal damage equal to (1/2/3/4) times your Income.",
       "While in play, you have (+1/+2/+3/+4) Income."
@@ -7713,21 +7713,21 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Cooldown 9 seconds",
           "Deal 100 damage.",
-          "When you use a Small item, this gains 25 damage for the fight."
+          "When you use a Small item, Charge the core 1 second and this gains 25 damage for the fight."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 9 seconds",
+          "Cooldown 8 seconds",
           "Deal 100 damage.",
-          "When you use a Small item, this gains 50 damage for the fight."
+          "When you use a Small item, Charge the core 1 second and this gains 50 damage for the fight."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 9 seconds",
+          "Cooldown 7 seconds",
           "Deal 100 damage.",
-          "When you use a Small item, this gains 75 damage for the fight."
+          "When you use a Small item, Charge the core 1 second and this gains 75 damage for the fight."
         ]
       },
       "Legendary": {
@@ -7815,9 +7815,9 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "Cooldown 9 seconds",
+      "Cooldown (9/8/7) seconds",
       "Deal 100 damage.",
-      "When you use a Small item, this gains (25/50/75) damage for the fight."
+      "When you use a Small item, Charge the core 1 second and this gains (25/50/75) damage for the fight."
     ],
     "packId": "Dooley_Core"
   },
@@ -8012,28 +8012,28 @@ const data: ParsedItemCard[] = [
     "tiers": {
       "Bronze": {
         "tooltips": [
-          "Cooldown 7 seconds",
+          "Cooldown 8 seconds",
           "Multicast 2",
           "Deal 5 damage."
         ]
       },
       "Silver": {
         "tooltips": [
-          "Cooldown 6 seconds",
+          "Cooldown 7 seconds",
           "Multicast 2",
           "Deal 5 damage."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 5 seconds",
+          "Cooldown 6 seconds",
           "Multicast 2",
           "Deal 5 damage."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 4 seconds",
+          "Cooldown 5 seconds",
           "Multicast 2",
           "Deal 5 damage."
         ]
@@ -8122,7 +8122,7 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "Cooldown (7/6/5/4) seconds",
+      "Cooldown (8/7/6/5) seconds",
       "Multicast 2",
       "Deal 5 damage."
     ],
@@ -9297,7 +9297,7 @@ const data: ParsedItemCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "Cooldown 11 seconds",
+          "Cooldown 12 seconds",
           "Deal 300 damage.",
           "When you use another Tech, charge this 2 second(s)."
         ]
@@ -9311,7 +9311,7 @@ const data: ParsedItemCard[] = [
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 11 seconds",
+          "Cooldown 10 seconds",
           "Deal 600 damage.",
           "When you use another Tech, charge this 2 second(s)."
         ]
@@ -9401,7 +9401,7 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "Cooldown 11 seconds",
+      "Cooldown (12/11/10) seconds",
       "Deal (300/450/600) damage.",
       "When you use another Tech, charge this 2 second(s)."
     ],
@@ -9435,7 +9435,7 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Cooldown 6 seconds",
           "Shield 20.",
-          "This and shield items to the right of this gain +40 Shield for the fight.",
+          "This and shield items to the right of this gain +60 Shield for the fight.",
           "When you use any item to the left of this, Charge this 1 second(s)."
         ]
       },
@@ -9529,7 +9529,7 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Shield 20.",
-      "This and shield items to the right of this gain (+20/+30/+40) Shield for the fight.",
+      "This and shield items to the right of this gain (+20/+30/+60) Shield for the fight.",
       "When you use any item to the left of this, Charge this 1 second(s)."
     ],
     "packId": "Dooley_Core"
@@ -9618,12 +9618,6 @@ const data: ParsedItemCard[] = [
       "Common"
     ],
     "enchantments": [
-      {
-        "type": "Heavy",
-        "tooltips": [
-          "Slow 1 item for 1 second(s)."
-        ]
-      },
       {
         "type": "Icy",
         "tooltips": [
@@ -17035,12 +17029,15 @@ const data: ParsedItemCard[] = [
   {
     "id": "c135f23d-b8b4-4aa8-9a11-b288ae05908c",
     "name": "Staff of the Moose",
-    "startingTier": "Silver",
+    "startingTier": "Gold",
     "tiers": {
       "Bronze": {
         "tooltips": []
       },
       "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
         "tooltips": [
           "Cooldown 10 seconds",
           "Multicast 2",
@@ -17049,21 +17046,12 @@ const data: ParsedItemCard[] = [
           "Your Weapons have + Damage equal to your Regen."
         ]
       },
-      "Gold": {
-        "tooltips": [
-          "Cooldown 10 seconds",
-          "Multicast 2",
-          "Deal 200 damage.",
-          "The first time you fall below half Health each fight, you take no damage for 1.5 second(s) and gain 50 Regen for the fight.",
-          "Your Weapons have + Damage equal to your Regen."
-        ]
-      },
       "Diamond": {
         "tooltips": [
           "Cooldown 10 seconds",
           "Multicast 2",
           "Deal 200 damage.",
-          "The first time you fall below half Health each fight, you take no damage for 2 second(s) and gain 75 Regen for the fight.",
+          "The first time you fall below half Health each fight, you take no damage for 2 second(s) and gain 50 Regen for the fight.",
           "Your Weapons have + Damage equal to your Regen."
         ]
       },
@@ -17155,7 +17143,7 @@ const data: ParsedItemCard[] = [
       "Cooldown 10 seconds",
       "Multicast 2",
       "Deal 200 damage.",
-      "The first time you fall below half Health each fight, you take no damage for (1/1.5/2) second(s) and gain (25/50/75) Regen for the fight.",
+      "The first time you fall below half Health each fight, you take no damage for (1/2) second(s) and gain (25/50) Regen for the fight.",
       "Your Weapons have + Damage equal to your Regen."
     ],
     "packId": "Mak_Core"
@@ -19487,21 +19475,21 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Cooldown 6 seconds",
           "Poison both players 5.",
-          "When you Poison yourself, gain 10 Regen for the fight and Haste 1 item for 2 second(s)."
+          "When you Poison yourself, gain 10 Regen for the fight and Haste 1 item for 1 second(s)."
         ]
       },
       "Gold": {
         "tooltips": [
           "Cooldown 6 seconds",
           "Poison both players 10.",
-          "When you Poison yourself, gain 15 Regen for the fight and Haste 1 item for 2 second(s)."
+          "When you Poison yourself, gain 15 Regen for the fight and Haste 1 item for 1 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 6 seconds",
           "Poison both players 15.",
-          "When you Poison yourself, gain 20 Regen for the fight and Haste 1 item for 2 second(s)."
+          "When you Poison yourself, gain 20 Regen for the fight and Haste 1 item for 1 second(s)."
         ]
       },
       "Legendary": {
@@ -19592,7 +19580,7 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Poison both players (5/10/15).",
-      "When you Poison yourself, gain (10/15/20) Regen for the fight and Haste 1 item for 2 second(s)."
+      "When you Poison yourself, gain (10/15/20) Regen for the fight and Haste 1 item for 1 second(s)."
     ],
     "packId": "Mak_Dangerous_Experiments"
   },
@@ -21823,23 +21811,23 @@ const data: ParsedItemCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "Cooldown 9 seconds",
+          "Cooldown 10 seconds",
           "Deal 50 damage.",
-          "When you Burn, this gains 25 damage for the fight."
+          "When you Burn, this gains 20 damage for the fight and Charge this 1 second."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 9 seconds",
+          "Cooldown 10 seconds",
           "Deal 100 damage.",
-          "When you Burn, this gains 50 damage for the fight."
+          "When you Burn, this gains 40 damage for the fight and Charge this 1 second."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 9 seconds",
+          "Cooldown 10 seconds",
           "Deal 200 damage.",
-          "When you Burn, this gains 75 damage for the fight."
+          "When you Burn, this gains 60 damage for the fight and Charge this 1 second."
         ]
       },
       "Legendary": {
@@ -21927,9 +21915,9 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "Cooldown 9 seconds",
+      "Cooldown 10 seconds",
       "Deal (50/100/200) damage.",
-      "When you Burn, this gains (25/50/75) damage for the fight."
+      "When you Burn, this gains (20/40/60) damage for the fight and Charge this 1 second."
     ],
     "packId": "Dooley_Core"
   },
@@ -22061,22 +22049,22 @@ const data: ParsedItemCard[] = [
       "Bronze": {
         "tooltips": [
           "Cooldown 5 seconds",
-          "If you have 3 or more Weapons, they gain +20 Damage for the fight.",
-          "If you have 3 or more Shield items, they gain +20 Shield for the fight."
+          "If you have 3 or more Weapons, they gain +15 Damage for the fight.",
+          "If you have 3 or more Shield items, they gain +15 Shield for the fight."
         ]
       },
       "Silver": {
         "tooltips": [
           "Cooldown 5 seconds",
-          "If you have 3 or more Weapons, they gain +30 Damage for the fight.",
-          "If you have 3 or more Shield items, they gain +30 Shield for the fight."
+          "If you have 3 or more Weapons, they gain +25 Damage for the fight.",
+          "If you have 3 or more Shield items, they gain +25 Shield for the fight."
         ]
       },
       "Gold": {
         "tooltips": [
           "Cooldown 5 seconds",
-          "If you have 3 or more Weapons, they gain +40 Damage for the fight.",
-          "If you have 3 or more Shield items, they gain +40 Shield for the fight."
+          "If you have 3 or more Weapons, they gain +35 Damage for the fight.",
+          "If you have 3 or more Shield items, they gain +35 Shield for the fight."
         ]
       },
       "Diamond": {
@@ -22172,8 +22160,8 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
-      "If you have 3 or more Weapons, they gain (+20/+30/+40/+50) Damage for the fight.",
-      "If you have 3 or more Shield items, they gain (+20/+30/+40/+50) Shield for the fight."
+      "If you have 3 or more Weapons, they gain (+15/+25/+35/+50) Damage for the fight.",
+      "If you have 3 or more Shield items, they gain (+15/+25/+35/+50) Shield for the fight."
     ],
     "packId": "Pyg_Investment_Opportunities"
   },
@@ -23778,17 +23766,17 @@ const data: ParsedItemCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "When you use a Potion, transform it into a Potion for the fight and gain 2 Regen for the fight."
+          "When you use a Potion, transform it into a Potion for the fight and gain 3 Regen for the fight."
         ]
       },
       "Gold": {
         "tooltips": [
-          "When you use a Potion, transform it into a Potion for the fight and gain 3 Regen for the fight."
+          "When you use a Potion, transform it into a Potion for the fight and gain 6 Regen for the fight."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "When you use a Potion, transform it into a Potion for the fight and gain 4 Regen for the fight."
+          "When you use a Potion, transform it into a Potion for the fight and gain 9 Regen for the fight."
         ]
       },
       "Legendary": {
@@ -23868,7 +23856,7 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "When you use a Potion, transform it into a Potion for the fight and gain (2/3/4) Regen for the fight."
+      "When you use a Potion, transform it into a Potion for the fight and gain (3/6/9) Regen for the fight."
     ],
     "packId": "Mak_Core"
   },
@@ -24606,14 +24594,16 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Cooldown 7 seconds",
           "Deal 25 damage.",
-          "The first time you use this each fight, destroy a small enemy item for the fight."
+          "The first time you use this each fight, destroy a small or medium item for the fight.",
+          "When you destroy an item during combat, double this item's damage for the fight."
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 7 seconds",
           "Deal 50 damage.",
-          "The first time you use this each fight, destroy a small enemy item for the fight."
+          "The first time you use this each fight, destroy a small or medium item for the fight.",
+          "When you destroy an item during combat, double this item's damage for the fight."
         ]
       },
       "Legendary": {
@@ -24703,7 +24693,8 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Deal (25/50) damage.",
-      "The first time you use this each fight, destroy a small enemy item for the fight."
+      "The first time you use this each fight, destroy a small or medium item for the fight.",
+      "When you destroy an item during combat, double this item's damage for the fight."
     ],
     "packId": "Dooley_Core"
   },
@@ -26082,7 +26073,8 @@ const data: ParsedItemCard[] = [
       }
     },
     "tags": [
-      "Friend"
+      "Friend",
+      "Aquatic"
     ],
     "hiddenTags": [
       "Shield",
@@ -26877,30 +26869,34 @@ const data: ParsedItemCard[] = [
     "tiers": {
       "Bronze": {
         "tooltips": [
-          "Cooldown 7 seconds",
+          "Cooldown 8 seconds",
           "Gain 2 Regen for the fight.",
-          "When you visit a Merchant, permanently destroy the item to the left of this to increase this item's Regen by its Value, then get a Chunk of Lead."
+          "When you visit a Merchant, permanently destroy the item to the left of this to increase this item's Regen by its Value.",
+          "When you destroy an item, gain 2 Gold."
         ]
       },
       "Silver": {
         "tooltips": [
-          "Cooldown 6 seconds",
+          "Cooldown 7 seconds",
           "Gain 2 Regen for the fight.",
-          "When you visit a Merchant, permanently destroy the item to the left of this to increase this item's Regen by its Value, then get a Chunk of Lead."
+          "When you visit a Merchant, permanently destroy the item to the left of this to increase this item's Regen by its Value.",
+          "When you destroy an item, gain 4 Gold."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 5 seconds",
+          "Cooldown 6 seconds",
           "Gain 2 Regen for the fight.",
-          "When you visit a Merchant, permanently destroy the item to the left of this to increase this item's Regen by its Value, then get a Chunk of Lead."
+          "When you visit a Merchant, permanently destroy the item to the left of this to increase this item's Regen by its Value.",
+          "When you destroy an item, gain 6 Gold."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 4 seconds",
+          "Cooldown 5 seconds",
           "Gain 2 Regen for the fight.",
-          "When you visit a Merchant, permanently destroy the item to the left of this to increase this item's Regen by its Value, then get a Chunk of Lead."
+          "When you visit a Merchant, permanently destroy the item to the left of this to increase this item's Regen by its Value.",
+          "When you destroy an item, gain 8 Gold."
         ]
       },
       "Legendary": {
@@ -26987,9 +26983,10 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "Cooldown (7/6/5/4) seconds",
+      "Cooldown (8/7/6/5) seconds",
       "Gain 2 Regen for the fight.",
-      "When you visit a Merchant, permanently destroy the item to the left of this to increase this item's Regen by its Value, then get a Chunk of Lead."
+      "When you visit a Merchant, permanently destroy the item to the left of this to increase this item's Regen by its Value.",
+      "When you destroy an item, gain (2/4/6/8) Gold."
     ],
     "packId": "Mak_Dangerous_Experiments"
   },
@@ -29233,10 +29230,10 @@ const data: ParsedItemCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "Cooldown 7 seconds",
+          "Cooldown 8 seconds",
           "Deal 20 damage.",
           "This gains +10 Damage for the fight.",
-          "When this gains Haste or when you Freeze, Charge this 2 second(s)."
+          "When you Haste or Freeze, Charge this 2 second(s)."
         ]
       },
       "Gold": {
@@ -29244,15 +29241,15 @@ const data: ParsedItemCard[] = [
           "Cooldown 7 seconds",
           "Deal 20 damage.",
           "This gains +20 Damage for the fight.",
-          "When this gains Haste or when you Freeze, Charge this 2 second(s)."
+          "When you Haste or Freeze, Charge this 2 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 7 seconds",
+          "Cooldown 6 seconds",
           "Deal 20 damage.",
           "This gains +30 Damage for the fight.",
-          "When this gains Haste or when you Freeze, Charge this 2 second(s)."
+          "When you Haste or Freeze, Charge this 2 second(s)."
         ]
       },
       "Legendary": {
@@ -29342,26 +29339,38 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "Cooldown 7 seconds",
+      "Cooldown (8/7/6) seconds",
       "Deal 20 damage.",
       "This gains (+10/+20/+30) Damage for the fight.",
-      "When this gains Haste or when you Freeze, Charge this 2 second(s)."
+      "When you Haste or Freeze, Charge this 2 second(s)."
     ],
     "packId": "Pyg_Frozen_Assets"
   },
   {
     "id": "c39eed44-0e6a-4720-9d70-817b737449ec",
     "name": "Atlas Stone",
-    "startingTier": "Diamond",
+    "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
-        "tooltips": []
+        "tooltips": [
+          "Cooldown 9 seconds",
+          "Deal 1 damage.",
+          "Double this item's damage for the fight."
+        ]
       },
       "Silver": {
-        "tooltips": []
+        "tooltips": [
+          "Cooldown 8 seconds",
+          "Deal 1 damage.",
+          "Double this item's damage for the fight."
+        ]
       },
       "Gold": {
-        "tooltips": []
+        "tooltips": [
+          "Cooldown 7 seconds",
+          "Deal 1 damage.",
+          "Double this item's damage for the fight."
+        ]
       },
       "Diamond": {
         "tooltips": [
@@ -29454,7 +29463,7 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "Cooldown 6 seconds",
+      "Cooldown (9/8/7/6) seconds",
       "Deal 1 damage.",
       "Double this item's damage for the fight."
     ],
@@ -31591,14 +31600,14 @@ const data: ParsedItemCard[] = [
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 10 seconds",
+          "Cooldown 9 seconds",
           "Deal 40 damage for each Weapon or Tech item you have.",
           "This deals 3 times damage if it is your only friend."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 10 seconds",
+          "Cooldown 8 seconds",
           "Deal 50 damage for each Weapon or Tech item you have.",
           "This deals 4 times damage if it is your only friend."
         ]
@@ -31688,7 +31697,7 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "Cooldown 10 seconds",
+      "Cooldown (10/9/8) seconds",
       "Deal (30/40/50) damage for each Weapon or Tech item you have.",
       "This deals (2/3/4) times damage if it is your only friend."
     ],
@@ -35705,20 +35714,20 @@ const data: ParsedItemCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "When you use a potion, deal 10 damage.",
-          "When you Reload or transform a potion, this gains +10 damage for the fight."
-        ]
-      },
-      "Gold": {
-        "tooltips": [
           "When you use a potion, deal 15 damage.",
           "When you Reload or transform a potion, this gains +15 damage for the fight."
         ]
       },
+      "Gold": {
+        "tooltips": [
+          "When you use a potion, deal 30 damage.",
+          "When you Reload or transform a potion, this gains +30 damage for the fight."
+        ]
+      },
       "Diamond": {
         "tooltips": [
-          "When you use a potion, deal 20 damage.",
-          "When you Reload or transform a potion, this gains +20 damage for the fight."
+          "When you use a potion, deal 45 damage.",
+          "When you Reload or transform a potion, this gains +45 damage for the fight."
         ]
       },
       "Legendary": {
@@ -35800,8 +35809,8 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "When you use a potion, deal (10/15/20) damage.",
-      "When you Reload or transform a potion, this gains (+10/+15/+20) damage for the fight."
+      "When you use a potion, deal (15/30/45) damage.",
+      "When you Reload or transform a potion, this gains (+15/+30/+45) damage for the fight."
     ],
     "packId": "Mak_Core"
   },
@@ -36154,21 +36163,21 @@ const data: ParsedItemCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "Cooldown 10 seconds",
+          "Cooldown 8 seconds",
           "Haste your other items for 2 second(s).",
           "When you use an adjacent item, charge this 2 second(s)."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 9 seconds",
+          "Cooldown 7 seconds",
           "Haste your other items for 2 second(s).",
           "When you use an adjacent item, charge this 2 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 8 seconds",
+          "Cooldown 6 seconds",
           "Haste your other items for 2 second(s).",
           "When you use an adjacent item, charge this 2 second(s)."
         ]
@@ -36258,7 +36267,7 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "Cooldown (10/9/8) seconds",
+      "Cooldown (8/7/6) seconds",
       "Haste your other items for 2 second(s).",
       "When you use an adjacent item, charge this 2 second(s)."
     ],
@@ -36654,14 +36663,14 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Cooldown 7 seconds",
           "Burn 4.",
-          "For each adjacent Friend or Property, this gains +4 Burn."
+          "For each adjacent Friend or Property, this gains +1 Multicast."
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 7 seconds",
           "Burn 6.",
-          "For each adjacent Friend or Property, this gains +8 Burn."
+          "For each adjacent Friend or Property, this gains +1 Multicast."
         ]
       },
       "Legendary": {
@@ -36750,7 +36759,7 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Burn (4/6).",
-      "For each adjacent Friend or Property, this gains (+4/+8) Burn."
+      "For each adjacent Friend or Property, this gains +1 Multicast."
     ],
     "packId": "Vanessa_Core"
   },
@@ -39678,7 +39687,7 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Cooldown 6 seconds",
           "Burn 4.",
-          "This and Burn items to the right of this gain 6 Burn for the fight.",
+          "This and Burn items to the right of this gain 8 Burn for the fight.",
           "When you use any item to the left of this, Charge this 1 second(s)."
         ]
       },
@@ -39772,7 +39781,7 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Burn 4.",
-      "This and Burn items to the right of this gain (2/4/6) Burn for the fight.",
+      "This and Burn items to the right of this gain (2/4/8) Burn for the fight.",
       "When you use any item to the left of this, Charge this 1 second(s)."
     ],
     "packId": "Dooley_Core"
@@ -43190,19 +43199,19 @@ const data: ParsedItemCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "When you use a weapon, your weapons gain 5 Damage for the fight.",
+          "When you use a weapon, your weapons gain 3 Damage for the fight.",
           "When you use a Weapon, Haste it for 1 second(s)."
         ]
       },
       "Gold": {
         "tooltips": [
-          "When you use a weapon, your weapons gain 10 Damage for the fight.",
+          "When you use a weapon, your weapons gain 6 Damage for the fight.",
           "When you use a Weapon, Haste it for 2 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "When you use a weapon, your weapons gain 15 Damage for the fight.",
+          "When you use a weapon, your weapons gain 9 Damage for the fight.",
           "When you use a Weapon, Haste it for 3 second(s)."
         ]
       },
@@ -43283,7 +43292,7 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "When you use a weapon, your weapons gain (5/10/15) Damage for the fight.",
+      "When you use a weapon, your weapons gain (3/6/9) Damage for the fight.",
       "When you use a Weapon, Haste it for (1/2/3) second(s)."
     ],
     "packId": "Pygmalien_Core"
@@ -44563,14 +44572,14 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "When your enemy uses a weapon, charge your Busy Bees 2 second(s).",
           "When you buy this, get 2 Busy Bees.",
-          "When you buy a Property, your Busy Bees gain +15 damage."
+          "When you buy a Property, your Busy Bees gain +20 damage."
         ]
       },
       "Diamond": {
         "tooltips": [
           "When your enemy uses a weapon, charge your Busy Bees 2 second(s).",
           "When you buy this, get 2 Busy Bees.",
-          "When you buy a Property, your Busy Bees gain +20 damage."
+          "When you buy a Property, your Busy Bees gain +30 damage."
         ]
       },
       "Legendary": {
@@ -44654,7 +44663,7 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "When your enemy uses a weapon, charge your Busy Bees 2 second(s).",
       "When you buy this, get 2 Busy Bees.",
-      "When you buy a Property, your Busy Bees gain (+10/+15/+20) damage."
+      "When you buy a Property, your Busy Bees gain (+10/+20/+30) damage."
     ],
     "packId": "Pygmalien_Core"
   },
@@ -49798,13 +49807,18 @@ const data: ParsedItemCard[] = [
   {
     "id": "bfb765fc-764c-4e16-aa17-0e10efda4b5b",
     "name": "Nitrogen Hammer",
-    "startingTier": "Gold",
+    "startingTier": "Silver",
     "tiers": {
       "Bronze": {
         "tooltips": []
       },
       "Silver": {
-        "tooltips": []
+        "tooltips": [
+          "Cooldown 10 seconds",
+          "Deal 200 damage.",
+          "Freeze 1 item for 1 second(s).",
+          "When you freeze, charge this 1 second and this gains 50 damage for the fight."
+        ]
       },
       "Gold": {
         "tooltips": [
@@ -49818,7 +49832,7 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Cooldown 10 seconds",
           "Deal 200 damage.",
-          "Freeze 1 item for 2 second(s).",
+          "Freeze 1 item for 1 second(s).",
           "When you freeze, charge this 1 second and this gains 200 damage for the fight."
         ]
       },
@@ -49909,8 +49923,8 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "Cooldown 10 seconds",
       "Deal 200 damage.",
-      "Freeze 1 item for (1/2) second(s).",
-      "When you freeze, charge this 1 second and this gains (100/200) damage for the fight."
+      "Freeze 1 item for 1 second(s).",
+      "When you freeze, charge this 1 second and this gains (50/100/200) damage for the fight."
     ],
     "packId": "Dooley_Core"
   },
@@ -50297,28 +50311,28 @@ const data: ParsedItemCard[] = [
     "tiers": {
       "Bronze": {
         "tooltips": [
-          "Cooldown 6 seconds",
+          "Cooldown 5 seconds",
           "Shield 20.",
           "When you use an adjacent Friend, this gains 10 Shield for the fight."
         ]
       },
       "Silver": {
         "tooltips": [
-          "Cooldown 6 seconds",
+          "Cooldown 5 seconds",
           "Shield 20.",
           "When you use an adjacent Friend, this gains 15 Shield for the fight."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 6 seconds",
+          "Cooldown 5 seconds",
           "Shield 20.",
           "When you use an adjacent Friend, this gains 20 Shield for the fight."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 6 seconds",
+          "Cooldown 5 seconds",
           "Shield 20.",
           "When you use an adjacent Friend, this gains 25 Shield for the fight."
         ]
@@ -50408,7 +50422,7 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "Cooldown 6 seconds",
+      "Cooldown 5 seconds",
       "Shield 20.",
       "When you use an adjacent Friend, this gains (10/15/20/25) Shield for the fight."
     ],
@@ -51707,7 +51721,8 @@ const data: ParsedItemCard[] = [
       }
     },
     "tags": [
-      "Weapon"
+      "Weapon",
+      "Relic"
     ],
     "hiddenTags": [
       "Damage",
@@ -53158,6 +53173,7 @@ const data: ParsedItemCard[] = [
       "Tool"
     ],
     "hiddenTags": [
+      "Regen",
       "Value",
       "EconomyReference"
     ],
@@ -53648,28 +53664,28 @@ const data: ParsedItemCard[] = [
     "tiers": {
       "Bronze": {
         "tooltips": [
-          "Cooldown 5 seconds",
+          "Cooldown 6 seconds",
           "Deal 5 damage.",
           "This has +1 Multicast for each player with Poison."
         ]
       },
       "Silver": {
         "tooltips": [
-          "Cooldown 5 seconds",
+          "Cooldown 6 seconds",
           "Deal 10 damage.",
           "This has +1 Multicast for each player with Poison."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 5 seconds",
+          "Cooldown 6 seconds",
           "Deal 20 damage.",
           "This has +1 Multicast for each player with Poison."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 5 seconds",
+          "Cooldown 6 seconds",
           "Deal 40 damage.",
           "This has +1 Multicast for each player with Poison."
         ]
@@ -53759,7 +53775,7 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "Cooldown 5 seconds",
+      "Cooldown 6 seconds",
       "Deal (5/10/20/40) damage.",
       "This has +1 Multicast for each player with Poison."
     ],
@@ -58188,7 +58204,7 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Cooldown 6 seconds",
           "Deal 20 damage.",
-          "This and weapons to the right of this gain +40 damage for the fight.",
+          "This and weapons to the right of this gain +60 damage for the fight.",
           "When you use any item to the left of this, Charge this 1 second(s)."
         ]
       },
@@ -58283,7 +58299,7 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Deal 20 damage.",
-      "This and weapons to the right of this gain (+20/+30/+40) damage for the fight.",
+      "This and weapons to the right of this gain (+20/+30/+60) damage for the fight.",
       "When you use any item to the left of this, Charge this 1 second(s)."
     ],
     "packId": "Dooley_Core"
@@ -58421,28 +58437,28 @@ const data: ParsedItemCard[] = [
     "tiers": {
       "Bronze": {
         "tooltips": [
-          "Cooldown 7 seconds",
+          "Cooldown 6 seconds",
           "Shield 10.",
           "This gains 10 Shield for the fight."
         ]
       },
       "Silver": {
         "tooltips": [
-          "Cooldown 7 seconds",
+          "Cooldown 6 seconds",
           "Shield 10.",
           "This gains 15 Shield for the fight."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 7 seconds",
+          "Cooldown 6 seconds",
           "Shield 10.",
           "This gains 20 Shield for the fight."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 7 seconds",
+          "Cooldown 6 seconds",
           "Shield 10.",
           "This gains 25 Shield for the fight."
         ]
@@ -58531,7 +58547,7 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "Cooldown 7 seconds",
+      "Cooldown 6 seconds",
       "Shield 10.",
       "This gains (10/15/20/25) Shield for the fight."
     ],
@@ -58550,17 +58566,17 @@ const data: ParsedItemCard[] = [
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 12 seconds",
+          "Cooldown 10 seconds",
           "Deal 1000 damage.",
-          "When any item gains Freeze, Charge this 3 second(s).",
+          "When any item gains Freeze, Charge this 2 second(s).",
           "The first time you fall below half health each fight, Freeze 1 item(s) for 99 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 12 seconds",
+          "Cooldown 10 seconds",
           "Deal 1500 damage.",
-          "When any item gains Freeze, Charge this 3 second(s).",
+          "When any item gains Freeze, Charge this 2 second(s).",
           "The first time you fall below half health each fight, Freeze 1 item(s) for 99 second(s)."
         ]
       },
@@ -58649,9 +58665,9 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "Cooldown 12 seconds",
+      "Cooldown 10 seconds",
       "Deal (1000/1500) damage.",
-      "When any item gains Freeze, Charge this 3 second(s).",
+      "When any item gains Freeze, Charge this 2 second(s).",
       "The first time you fall below half health each fight, Freeze 1 item(s) for 99 second(s)."
     ],
     "packId": "Pygmalien_Core"
@@ -60741,25 +60757,25 @@ const data: ParsedItemCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "Cooldown 10 seconds",
+          "Cooldown 9 seconds",
           "Deal 50 damage.",
-          "When you use an adjacent item, Poison both players 10.",
+          "When you use an adjacent item, Poison both players 15.",
           "When you Poison, this gains +Damage for the fight equal to the amount Poisoned."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 8 seconds",
+          "Cooldown 7 seconds",
           "Deal 50 damage.",
-          "When you use an adjacent item, Poison both players 20.",
+          "When you use an adjacent item, Poison both players 30.",
           "When you Poison, this gains +Damage for the fight equal to the amount Poisoned."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 6 seconds",
+          "Cooldown 5 seconds",
           "Deal 50 damage.",
-          "When you use an adjacent item, Poison both players 30.",
+          "When you use an adjacent item, Poison both players 45.",
           "When you Poison, this gains +Damage for the fight equal to the amount Poisoned."
         ]
       },
@@ -60849,9 +60865,9 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "Cooldown (10/8/6) seconds",
+      "Cooldown (9/7/5) seconds",
       "Deal 50 damage.",
-      "When you use an adjacent item, Poison both players (10/20/30).",
+      "When you use an adjacent item, Poison both players (15/30/45).",
       "When you Poison, this gains +Damage for the fight equal to the amount Poisoned."
     ],
     "packId": "Mak_Dangerous_Experiments"
@@ -64405,7 +64421,7 @@ const data: ParsedItemCard[] = [
     "tiers": {
       "Bronze": {
         "tooltips": [
-          "Cooldown 4 seconds",
+          "Cooldown 5 seconds",
           "Lifesteal",
           "Deal 5 damage.",
           "When this is transformed, enchant it with Obsidian if able."
@@ -64413,7 +64429,7 @@ const data: ParsedItemCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "Cooldown 4 seconds",
+          "Cooldown 5 seconds",
           "Lifesteal",
           "Deal 10 damage.",
           "When this is transformed, enchant it with Obsidian if able."
@@ -64421,7 +64437,7 @@ const data: ParsedItemCard[] = [
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 4 seconds",
+          "Cooldown 5 seconds",
           "Lifesteal",
           "Deal 15 damage.",
           "When this is transformed, enchant it with Obsidian if able."
@@ -64429,7 +64445,7 @@ const data: ParsedItemCard[] = [
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 4 seconds",
+          "Cooldown 5 seconds",
           "Lifesteal",
           "Deal 20 damage.",
           "When this is transformed, enchant it with Obsidian if able."
@@ -64520,7 +64536,7 @@ const data: ParsedItemCard[] = [
       }
     ],
     "unifiedTooltips": [
-      "Cooldown 4 seconds",
+      "Cooldown 5 seconds",
       "Lifesteal",
       "Deal (5/10/15/20) damage.",
       "When this is transformed, enchant it with Obsidian if able."

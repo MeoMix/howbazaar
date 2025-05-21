@@ -85,7 +85,7 @@ describe('cardJsonParser', () => {
       const clamera = itemCards.find(card => card.name === "Clamera")!;
 
       expect(clamera.unifiedTooltips[1]).toEqual(
-        'Slow (1/2/3/4) item(s) for 1 second(s).',
+        'Slow 1 item(s) for 3 second(s).',
       );
     });
 
