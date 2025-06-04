@@ -3,7 +3,7 @@
 // https://github.com/glideapps/quicktype?tab=readme-ov-file#calling-quicktype-from-javascript
 import type { Entries } from "type-fest";
 import type { ParsedCombatEncounterCard, ParsedItemCard, ParsedMerchantCard, ParsedSkillCard } from "$lib/types";
-import type { The200 as Card, Bronze as Tier, Tiers, Tier as TierType, AbilityAction, AuraAction, Ability, Aura, Operation, Origin } from "./data/cards";
+import type { The200 as Card, Bronze as Tier, Tiers, Tier as TierType, AbilityAction, AuraAction, Ability, Aura, Operation } from "./data/cards";
 import { unifyTooltips } from "$lib/utils/tooltipUtils";
 import type { CardsJson } from "./types.parser";
 import invalidItemIds from "./invalidItemIds";
@@ -12,9 +12,12 @@ import invalidMerchantIds from "./invalidMerchantIds";
 import monsterTemplateIdMapping from "./monsterTemplateIdMapping";
 import customTagMap from "./customTagsMap";
 
+const CURRENT_VERSION = "3.0.0";
+
 // Card packs that should be filtered out
 const disallowedCardPacks = [
-    //   "Vanessa_The_Gang",
+    "Vanessa_From_the_Shadows",
+    "Pyg_Pigglestorm"
     // Add more card packs to filter here as needed
 ] as string[];
 
@@ -426,7 +429,7 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
         !(entry.Id in invalidItemIds) &&
         !(entry.CardPackId && disallowedCardPacks.includes(entry.CardPackId));
 
-    const validCards = Object.values(cardsJson).flat().filter(isValidItemCard);
+    const validCards = Object.values(cardsJson[CURRENT_VERSION]).flat().filter(isValidItemCard);
 
     // TODO: I think I could avoid having to do this if I relied on key rather than converting to values and relying on Id.
     // Sanity check on Abilities and Aura IDs before proceeding.
@@ -730,7 +733,7 @@ function parseSkillCards(cardsJson: CardsJson): ParsedSkillCard[] {
         !(entry.Id in invalidSkillIds) &&
         !!entry.ArtKey;
 
-    const validSkillCards = Object.values(cardsJson).flat().filter(isValidSkillCard);
+    const validSkillCards = Object.values(cardsJson[CURRENT_VERSION]).flat().filter(isValidSkillCard);
 
     // Sanity check on Abilities and Aura IDs before proceeding.
     // This fixes "Wanted Poster" and ...
@@ -824,7 +827,7 @@ function parseCombatEncounterCards(cardsJson: CardsJson) {
         !hasInvalidKeywords(entry.Localization.Title.Text) &&
         !hasInvalidKeywords(entry.InternalName);
 
-    const validCards = Object.values(cardsJson).flat().filter(isEncounter);
+    const validCards = Object.values(cardsJson[CURRENT_VERSION]).flat().filter(isEncounter);
 
     const cards = validCards.map((card) => {
         return {
@@ -851,7 +854,7 @@ function parseMerchantCards(cardsJson: CardsJson) {
         !hasInvalidKeywords(entry.InternalName) &&
         entry.Heroes.some(hero => allowedHeroes.includes(hero as any)); // Cast needed since Hero type includes Jules and Stelle
 
-    const validCards = Object.values(cardsJson).flat().filter(isValidMerchant);
+    const validCards = Object.values(cardsJson[CURRENT_VERSION]).flat().filter(isValidMerchant);
 
     const cards = validCards.map((card) => {
         return {

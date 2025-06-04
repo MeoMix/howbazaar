@@ -25,9 +25,10 @@ const nameToFileMap: Record<string, string> = {
     'Prince Marianas': 'HydroDude',
     'Hellbilly': 'DeadlyCrooner',
     'Ahexa': 'TechnoVirus',
-    'Banannabal': 'Bananabal',
+    'Banannibal': 'Bananabal',
     'Bloodreef Captain': 'BloodReefCaptain',
-    'Hooverbike Hooligan': 'ScoutTrooper'
+    'Hoverbike Hooligan': 'ScoutTrooper',
+    'Eight Arm Davvy': 'VeteranOctopus'
 };
 
 async function processMonsterImages() {

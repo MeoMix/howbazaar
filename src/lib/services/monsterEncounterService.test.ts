@@ -50,23 +50,23 @@ describe('MonsterEncounterService', () => {
         expect(viperEncounter).toBeDefined();
     });
 
-    it('should not contain duplicate entries for Veteran Octopus', () => {
-        const veteranOctopusEncounters = monsterEncounterDays.flatMap((monsterEncounterDay) =>
+    it('should not contain duplicate entries for Eight Arm Davvy', () => {
+        const eightArmDavvyEncounters = monsterEncounterDays.flatMap((monsterEncounterDay) =>
             monsterEncounterDay.groups.flatMap((group) =>
-                group.filter((monsterEncounter) => monsterEncounter.cardName === "Veteran Octopus")
+                group.filter((monsterEncounter) => monsterEncounter.cardName === "Eight Arm Davvy")
             )
         );
 
-        expect(veteranOctopusEncounters.length).toBe(1);
+        expect(eightArmDavvyEncounters.length).toBe(1);
     });
 
-    it('should consider Veteran Octopus\'s Octopus item a Legendary', () => {
-        const veteranOctopus = monsterEncounterDays
+    it('should consider Eight Arm Davvy\'s Octopus item a Legendary', () => {
+        const eightArmDavvy = monsterEncounterDays
             .flatMap((day) => day.groups)
             .flatMap((group) => group)
-            .find((monsterEncounter) => monsterEncounter.cardName === "Veteran Octopus");
+            .find((monsterEncounter) => monsterEncounter.cardName === "Eight Arm Davvy");
 
-        const octopus = veteranOctopus?.items.find(item => item.card.name === "Octopus");
+        const octopus = eightArmDavvy?.items.find(item => item.card.name === "Octopus");
 
         expect(octopus?.tierType).toEqual("Legendary");
     });

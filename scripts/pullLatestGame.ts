@@ -63,6 +63,8 @@ async function main() {
 
         if (storedTimestamp === lastModified) {
             console.log('Data is up to date');
+            await extractZip(OUTPUT_FILE, OUTPUT_DIR);
+
             return;
         }
 

@@ -45,7 +45,7 @@ describe('cardJsonParser', () => {
       const alphaRay = itemCards.find(card => card.name === "Alpha Ray")!;
 
       expect(alphaRay.unifiedTooltips[2]).toEqual(
-        'When you use the Core or another Ray, your Weapons gain (+2/+4/+6/+8) Damage for the fight.'
+        'When you use the Core or another Ray, your Weapons gain (+4/+6/+8) Damage for the fight.'
       );
     });
 
@@ -85,7 +85,7 @@ describe('cardJsonParser', () => {
       const clamera = itemCards.find(card => card.name === "Clamera")!;
 
       expect(clamera.unifiedTooltips[1]).toEqual(
-        'Slow 1 item(s) for 3 second(s).',
+        'Slow 1 item for 3 second(s).',
       );
     });
 
@@ -109,8 +109,7 @@ describe('cardJsonParser', () => {
       const chocoholic = skillCards.find(card => card.name === "Chocoholic")!;
 
       expect(chocoholic.unifiedTooltips[0]).toEqual(
-        // TODO: missing (s)
-        'When you sell a medium or large item, get (1/2) Chocolate Bar.'
+        'When you sell a medium or large item, get (1/2) Chocolate Bar(s).'
       );
     });
 
@@ -146,8 +145,8 @@ describe('cardJsonParser', () => {
     const searchPhrase = "Your other Friends' cooldowns are reduced by";
 
     const expectedTooltips = {
-      Diamond: `${searchPhrase} 30%.`,
-      Gold: `${searchPhrase} 20%.`,
+      Diamond: `${searchPhrase} 20%.`,
+      Gold: `${searchPhrase} 15%.`,
       Silver: `${searchPhrase} 10%.`,
     };
 
@@ -172,9 +171,9 @@ describe('cardJsonParser', () => {
   it('should parse "Amber" correctly by replacing its {aura.1} with a correct value', () => {
     const amberCard = itemCards.find(card => card.name === "Amber")!;
 
-    const searchPhrase = "Your other Slow items have";
+    const searchPhrase = "Your items Slow for";
 
-    expect(amberCard.tiers.Silver.tooltips.find((text) => text.includes(searchPhrase))).toEqual(`${searchPhrase} +1 Slow.`);
+    expect(amberCard.tiers.Silver.tooltips.find((text) => text.includes(searchPhrase))).toEqual(`${searchPhrase} 1 more second.`);
   });
 
   it('should parse "Uwashiwali Bird" correctly by replacing its {aura.1} with a correct value', () => {
@@ -321,7 +320,7 @@ describe('cardJsonParser', () => {
       const deadlyEnchantment = sextant.enchantments.find(enchantment => enchantment.type === 'Deadly')!;
 
       expect(deadlyEnchantment.tooltips.length).toEqual(1);
-      expect(deadlyEnchantment.tooltips[0]).toEqual('Your items have +10% Crit Chance.');
+      expect(deadlyEnchantment.tooltips[0]).toEqual('Your items have +20% Crit Chance.');
     });
 
     it('should parse "Restorative Force Field" correctly by replacing its "Heal {ability.e1}." with a reference to Shield Amount', () => {
@@ -361,7 +360,7 @@ describe('cardJsonParser', () => {
       const obsidianAstrolabe = astrolabe.enchantments.find(enchantment => enchantment.type === 'Obsidian')!;
 
       expect(obsidianAstrolabe.tooltips.length).toEqual(1);
-      expect(obsidianAstrolabe.tooltips[0]).toEqual('Deal 8 damage for each non-Weapon item you have.');
+      expect(obsidianAstrolabe.tooltips[0]).toEqual('Deal 20 damage for each non-Weapon item you have.');
     });
 
     it('should contain no enchantment tooltips with {, except for Induction Aegis with enchantmentType Heavy', () => {

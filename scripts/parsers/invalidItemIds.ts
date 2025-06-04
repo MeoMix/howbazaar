@@ -201,7 +201,13 @@ const invalidItemIds: Record<string, string> = {
   "367c2ad9-94b3-4f01-a130-a673922244ef": "Cookies",
   "e5af5b7c-2e8f-4135-8e14-8d1ea71908de": "Sword of Morguloth",
   "4b99310e-ea89-4324-89fe-d2649dfd8ff6": "Oblivion Core",
-  "3174b74a-9e67-4db7-ba98-0d4935b2586d": "Custom Scope"
+  "3174b74a-9e67-4db7-ba98-0d4935b2586d": "Custom Scope",
+  
+  "6028b902-ccf6-4cca-bc37-de4649806460": "Biomerge Arm",
+  "41581a59-fd9b-42c6-a97e-9b5587b9cbdf": "Ethergy Conduit",
+  "2e3f4a5b-6c7d-8e9f-0a1b-2c3d4e5f6a7b": "Soulstone",
+  "0c1d2e3f-4a5b-6c7d-8e9f-0a1b2c3d4e5f": "Sands of Time",
+  "e2a09e24-d454-450f-a39a-23f505ee32fa": "Friendly Doll"
 };
 
 export default invalidItemIds;
