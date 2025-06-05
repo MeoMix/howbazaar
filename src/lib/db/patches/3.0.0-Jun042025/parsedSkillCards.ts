@@ -2122,20 +2122,20 @@ const data: ParsedSkillCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "When you Burn or Poison, your Poison items gain +2 Poison for the fight.",
-          "When you Burn or Poison, your Burn items gain +2 Burn for the fight."
+          "When you Burn, your Poison items gain +3 Poison for the fight.",
+          "When you Poison, your Burn items gain +3 Burn for the fight."
         ]
       },
       "Gold": {
         "tooltips": [
-          "When you Burn or Poison, your Poison items gain +3 Poison for the fight.",
-          "When you Burn or Poison, your Burn items gain +3 Burn for the fight."
+          "When you Burn, your Poison items gain +4 Poison for the fight.",
+          "When you Poison, your Burn items gain +4 Burn for the fight."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "When you Burn or Poison, your Poison items gain +4 Poison for the fight.",
-          "When you Burn or Poison, your Burn items gain +4 Burn for the fight."
+          "When you Burn, your Poison items gain +5 Poison for the fight.",
+          "When you Poison, your Burn items gain +5 Burn for the fight."
         ]
       },
       "Legendary": {
@@ -2156,8 +2156,8 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_ToxicFlame.png",
     "unifiedTooltips": [
-      "When you Burn or Poison, your Poison items gain (+2/+3/+4) Poison for the fight.",
-      "When you Burn or Poison, your Burn items gain (+2/+3/+4) Burn for the fight."
+      "When you Burn, your Poison items gain (+3/+4/+5) Poison for the fight.",
+      "When you Poison, your Burn items gain (+3/+4/+5) Burn for the fight."
     ],
     "packId": "Vanessa_Core"
   },
@@ -7511,22 +7511,22 @@ const data: ParsedSkillCard[] = [
     "tiers": {
       "Bronze": {
         "tooltips": [
-          "When you freeze, your Weapons gain +30 damage for the fight."
+          "When you freeze, a Weapon gains +30 damage for the fight."
         ]
       },
       "Silver": {
         "tooltips": [
-          "When you freeze, your Weapons gain +60 damage for the fight."
+          "When you freeze, a Weapon gains +60 damage for the fight."
         ]
       },
       "Gold": {
         "tooltips": [
-          "When you freeze, your Weapons gain +90 damage for the fight."
+          "When you freeze, a Weapon gains +90 damage for the fight."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "When you freeze, your Weapons gain +120 damage for the fight."
+          "When you freeze, a Weapon gains +120 damage for the fight."
         ]
       },
       "Legendary": {
@@ -7547,7 +7547,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_MON_TheColdShoulder_01.png",
     "unifiedTooltips": [
-      "When you freeze, your Weapons gain (+30/+60/+90/+120) damage for the fight."
+      "When you freeze, a Weapon gains (+30/+60/+90/+120) damage for the fight."
     ],
     "packId": "Core"
   },
@@ -10646,48 +10646,6 @@ const data: ParsedSkillCard[] = [
     "packId": "Pygmalien_Core"
   },
   {
-    "id": "03968f2d-5f40-464a-bf1f-9475836157cd",
-    "name": "Jury Rigger",
-    "startingTier": "Silver",
-    "tiers": {
-      "Bronze": {
-        "tooltips": []
-      },
-      "Silver": {
-        "tooltips": [
-          "When you use an Ammo item, Reload the item to the left of it 1 Ammo."
-        ]
-      },
-      "Gold": {
-        "tooltips": [
-          "When you use an Ammo item, Reload the item to the left of it 2 Ammo."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "When you use an Ammo item, Reload the item to the left of it 3 Ammo."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [],
-    "hiddenTags": [
-      "Ammo"
-    ],
-    "customTags": [],
-    "size": "Medium",
-    "heroes": [
-      "Common"
-    ],
-    "artKey": "Icon_Skill_MON_ALittleOfEverything_01.png",
-    "unifiedTooltips": [
-      "When you use an Ammo item, Reload the item to the left of it (1/2/3) Ammo."
-    ],
-    "packId": "Core"
-  },
-  {
     "id": "a9b441e1-5824-4855-9359-2ab4643d9ff5",
     "name": "Toxic Shield",
     "startingTier": "Silver",
@@ -10730,6 +10688,48 @@ const data: ParsedSkillCard[] = [
       "The first time you fall below half health each fight, Shield equal to (2/3/4) times the Poison on your opponent."
     ],
     "packId": "Mak_Core"
+  },
+  {
+    "id": "03968f2d-5f40-464a-bf1f-9475836157cd",
+    "name": "Jury Rigger",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "When you use an Ammo item, Reload the item to the left of it 1 Ammo."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "When you use an Ammo item, Reload the item to the left of it 2 Ammo."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "When you use an Ammo item, Reload the item to the left of it 3 Ammo."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "Ammo"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Common"
+    ],
+    "artKey": "Icon_Skill_MON_ALittleOfEverything_01.png",
+    "unifiedTooltips": [
+      "When you use an Ammo item, Reload the item to the left of it (1/2/3) Ammo."
+    ],
+    "packId": "Core"
   },
   {
     "id": "0d8cd0dc-67ab-4c3c-b11c-88e78559a900",

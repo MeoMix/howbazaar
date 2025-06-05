@@ -91,6 +91,24 @@ const data: PatchNotes = {
         }
       ]
     },
+    "5bd6513a-85ab-4ba6-b82d-af875da697cf": {
+      "metadata": {
+        "id": "5bd6513a-85ab-4ba6-b82d-af875da697cf",
+        "name": "Remote Control",
+        "previousStartingTier": "Silver",
+        "currentStartingTier": "Silver",
+        "currentHero": "Dooley",
+        "currentSize": "Small",
+        "type": "item"
+      },
+      "tooltips": [
+        {
+          "index": 0,
+          "oldValue": "Cooldown (10/8/6) seconds",
+          "newValue": "Cooldown (10/9/8) seconds"
+        }
+      ]
+    },
     "5abf3441-11cb-4dbd-8d69-d4829f8df687": {
       "metadata": {
         "id": "5abf3441-11cb-4dbd-8d69-d4829f8df687",
@@ -481,6 +499,23 @@ const data: PatchNotes = {
             ]
           }
         ]
+      }
+    },
+    "7616c8b5-17d0-40fb-bc34-d663b8633e84": {
+      "metadata": {
+        "id": "7616c8b5-17d0-40fb-bc34-d663b8633e84",
+        "name": "Ice Claw",
+        "previousStartingTier": "Bronze",
+        "currentStartingTier": "Bronze",
+        "currentHero": "Mak",
+        "currentSize": "Medium",
+        "type": "item"
+      },
+      "tags": {
+        "added": [
+          "Relic"
+        ],
+        "removed": []
       }
     },
     "9b739ba9-9278-45cb-9635-9ae48ac942c7": {
@@ -1348,7 +1383,7 @@ const data: PatchNotes = {
         {
           "index": 0,
           "oldValue": "Cooldown 7 seconds",
-          "newValue": "Cooldown (8/7/6) seconds"
+          "newValue": "Cooldown (10/9/8) seconds"
         },
         {
           "index": 1,
@@ -1904,6 +1939,29 @@ const data: PatchNotes = {
         "removed": []
       }
     },
+    "95ff786e-b6bf-4bad-9d5c-6b2b41e9f0c3": {
+      "metadata": {
+        "id": "95ff786e-b6bf-4bad-9d5c-6b2b41e9f0c3",
+        "name": "Crusher Claw",
+        "previousStartingTier": "Bronze",
+        "currentStartingTier": "Bronze",
+        "currentHero": "Common",
+        "currentSize": "Medium",
+        "type": "item"
+      },
+      "tooltips": [
+        {
+          "index": 1,
+          "oldValue": "Deal damage equal to the highest Shield value of items you have.",
+          "newValue": null
+        },
+        {
+          "index": 1,
+          "oldValue": null,
+          "newValue": "Deal damage equal to the highest Shield of items you have."
+        }
+      ]
+    },
     "11a79e75-592d-4e39-8fb1-f8da7f3ae135": {
       "metadata": {
         "id": "11a79e75-592d-4e39-8fb1-f8da7f3ae135",
@@ -2005,6 +2063,51 @@ const data: PatchNotes = {
           "Relic"
         ],
         "removed": []
+      }
+    },
+    "437100de-1d03-4ce2-8336-0d1cdf0b0b8f": {
+      "metadata": {
+        "id": "437100de-1d03-4ce2-8336-0d1cdf0b0b8f",
+        "name": "Vat of Acid",
+        "previousStartingTier": "Silver",
+        "currentStartingTier": "Silver",
+        "currentHero": "Mak",
+        "currentSize": "Large",
+        "type": "item"
+      },
+      "tooltips": [
+        {
+          "index": 3,
+          "oldValue": "When you sell an item, this gains that item's type(s).",
+          "newValue": "When you sell an item, this gains that item's types."
+        }
+      ]
+    },
+    "55377bdf-359b-495c-895c-c7852511c915": {
+      "metadata": {
+        "id": "55377bdf-359b-495c-895c-c7852511c915",
+        "name": "Cannonball",
+        "previousStartingTier": "Bronze",
+        "currentStartingTier": "Bronze",
+        "currentHero": "Vanessa",
+        "currentSize": "Small",
+        "type": "item"
+      },
+      "enchantments": {
+        "added": [],
+        "removed": [],
+        "modified": [
+          {
+            "type": "Obsidian",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": "Ajacent Weapons have +20 damage.",
+                "newValue": "Adjacent Weapons have +20 damage."
+              }
+            ]
+          }
+        ]
       }
     },
     "c9f75211-7012-418d-b53f-3f5ac5959b62": {
@@ -2161,6 +2264,23 @@ const data: PatchNotes = {
         "currentStartingTier": "Diamond",
         "currentHero": "Common",
         "currentSize": "Small",
+        "type": "item"
+      },
+      "tags": {
+        "added": [
+          "Relic"
+        ],
+        "removed": []
+      }
+    },
+    "e3070870-881c-497d-879f-2d91e962e0e2": {
+      "metadata": {
+        "id": "e3070870-881c-497d-879f-2d91e962e0e2",
+        "name": "Fire Claw",
+        "previousStartingTier": "Silver",
+        "currentStartingTier": "Silver",
+        "currentHero": "Mak",
+        "currentSize": "Medium",
         "type": "item"
       },
       "tags": {
@@ -10048,7 +10168,7 @@ const data: PatchNotes = {
         {
           "index": 0,
           "oldValue": null,
-          "newValue": "When you freeze, your Weapons gain (+30/+60/+90/+120) damage for the fight."
+          "newValue": "When you freeze, a Weapon gains (+30/+60/+90/+120) damage for the fight."
         }
       ]
     },
@@ -10264,12 +10384,12 @@ const data: PatchNotes = {
         {
           "index": 0,
           "oldValue": null,
-          "newValue": "When you Burn or Poison, your Poison items gain (+2/+3/+4) Poison for the fight."
+          "newValue": "When you Burn, your Poison items gain (+3/+4/+5) Poison for the fight."
         },
         {
           "index": 1,
           "oldValue": null,
-          "newValue": "When you Burn or Poison, your Burn items gain (+2/+3/+4) Burn for the fight."
+          "newValue": "When you Poison, your Burn items gain (+3/+4/+5) Burn for the fight."
         }
       ]
     },
