@@ -23,7 +23,7 @@ export function getSkills(
         return {
             ...skillCard,
             combatEncounters: combatEncounters
-                .sort((a, b) => a.level - b.level || a.cardName.localeCompare(b.cardName))
+                .sort((a, b) => a.cardName.localeCompare(b.cardName))
                 .map(({ cardId, cardName }) => ({ cardId, cardName })),
         };
     });

@@ -8,7 +8,7 @@ export function getMonsterEncounterDays(
     monsters: ParsedMonster[],
     dayHours: ParsedDayHour[]
 ): ClientSideMonsterEncounterDay[] {
-    const monsterEncounterDayHours = dayHours.filter(({ day, hour }) => day <= 10 && hour === 3);
+    const monsterEncounterDayHours = dayHours.filter(({ day }) => day <= 10);
 
     // Sparring Partner, Mr. Moo, Bounty Hunter, and Mimic are "Event" monsters
     const allMonsterEncounters = [...monsterEncounterDayHours, {

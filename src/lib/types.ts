@@ -137,7 +137,6 @@ export type ParsedMonster = {
 
 export type ParsedDayHour = {
     day: number;
-    hour: number;
     spawnGroups: {
         // TODO: maybe rename to cardId for clarity
         ids: string[]
