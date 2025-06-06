@@ -8,13 +8,13 @@ export interface V2MonstersD {
 
 export interface Item {
     EnchantmentType: null | string;
-    TemplateId:      string;
+    Id:              string;
     Tier:            Tier;
 }
 
 export type Tier = "Bronze" | "Silver" | "Gold" | "Diamond" | "Legendary";
 
 export interface Skill {
-    TemplateId: string;
-    Tier:       Tier;
+    Id:   string;
+    Tier: Tier;
 }

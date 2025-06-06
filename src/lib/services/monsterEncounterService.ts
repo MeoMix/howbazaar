@@ -51,15 +51,15 @@ export function getMonsterEncounterDays(
                     const monster = monsters.find(monster => monster.id === combatEncounter.id);
 
                     if (monster === undefined) {
-                        //console.log(`Failed to find monster with templateId: ${combatEncounter.id}`);
+                        //console.log(`Failed to find monster with id: ${combatEncounter.id}`);
                         return null;
                     }
 
                     const items = monster.items.map(item => {
-                        const itemCard = itemCards.find(card => card.id === item.templateId);
+                        const itemCard = itemCards.find(card => card.id === item.id);
 
                         if (itemCard === undefined) {
-                            //console.log(`Failed to find card item with id: ${item.templateId}`);
+                            //console.log(`Failed to find card item with id: ${item.id}`);
                             return null;
                         }
 
@@ -79,10 +79,10 @@ export function getMonsterEncounterDays(
                     }).filter(result => result !== null);
 
                     const skills = monster.skills.map(skill => {
-                        const skillCard = skillCards.find(card => card.id === skill.templateId);
+                        const skillCard = skillCards.find(card => card.id === skill.id);
 
                         if (skillCard === undefined) {
-                            //console.log(`Failed to find card skill with id: ${skill.templateId}`);
+                            //console.log(`Failed to find card skill with id: ${skill.id}`);
                             return null;
                         }
 

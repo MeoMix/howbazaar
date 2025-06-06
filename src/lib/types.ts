@@ -124,12 +124,12 @@ export type ParsedMonster = {
     id: string;
     health: number;
     items: {
-        templateId: string;
+        id: string;
         tierType: TierType;
         enchantmentType?: EnchantmentType;
     }[];
     skills: {
-        templateId: string;
+        id: string;
         tierType: TierType;
     }[];
 }

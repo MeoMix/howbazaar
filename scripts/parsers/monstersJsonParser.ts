@@ -9,13 +9,13 @@ export function parseJson(monstersJson: MonstersJson): ParsedMonster[] {
                 id: monster.Id,
                 health: monster.Health,
                 items: monster.Items.map(item => ({
-                    templateId: item.TemplateId,
+                    id: item.Id,
                     tierType: item.Tier,
                     // TODO: Weird this isn't typed appropriately
                     enchantmentType: (item.EnchantmentType as EnchantmentType) ?? undefined
                 })),
                 skills: monster.Skills.map(skill => ({
-                    templateId: skill.TemplateId,
+                    id: skill.Id,
                     tierType: skill.Tier
                 })),
             };
