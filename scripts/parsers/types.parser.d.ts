@@ -1,5 +1,5 @@
-import type { V2CardsD as Card } from "$lib/parsers/cards";
-import type { The04747408_De0E4944_B79D23_Ca41008619 as Monster } from "./data/v2_Monsters";
+import type { The300 as Card } from "./data/cards";
+import type { V2MonstersD as Monster } from "./data/v2_Monsters";
 import type { V2DayHoursD as DayHour } from "./data/v2_DayHours";
 
 export type CardsJson = {

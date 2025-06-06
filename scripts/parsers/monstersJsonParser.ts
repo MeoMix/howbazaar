@@ -7,14 +7,14 @@ export function parseJson(monstersJson: MonstersJson): ParsedMonster[] {
         .map(monster => {
             return {
                 id: monster.Id,
-                health: monster.Player.Attributes.HealthMax,
-                items: monster.Player.Hand.Items.map(item => ({
+                health: monster.Health,
+                items: monster.Items.map(item => ({
                     templateId: item.TemplateId,
                     tierType: item.Tier,
                     // TODO: Weird this isn't typed appropriately
                     enchantmentType: (item.EnchantmentType as EnchantmentType) ?? undefined
                 })),
-                skills: monster.Player.Skills.map(skill => ({
+                skills: monster.Skills.map(skill => ({
                     templateId: skill.TemplateId,
                     tierType: skill.Tier
                 })),
