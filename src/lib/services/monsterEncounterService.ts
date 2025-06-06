@@ -102,7 +102,6 @@ export function getMonsterEncounterDays(
                     return {
                         cardId,
                         cardName,
-                        level: monster.level,
                         health: monster.health,
                         items,
                         skills,

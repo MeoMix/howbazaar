@@ -18,7 +18,6 @@ export interface V2MonstersD {
     "f8cf1723-aa0c-4019-8c59-842cecda1c93": The04747408_De0E4944_B79D23_Ca41008619;
     "e27b5f5f-2b71-42c5-a839-37e0aca0a8a5": The04747408_De0E4944_B79D23_Ca41008619;
     "e38c6e90-e0b3-495f-9d18-9facf49a336f": The04747408_De0E4944_B79D23_Ca41008619;
-    "867110c7-92f5-49d9-a074-2d687548e47e": The04747408_De0E4944_B79D23_Ca41008619;
     "0a633def-7135-408c-bcc7-785f5172ee34": The04747408_De0E4944_B79D23_Ca41008619;
     "c4488147-71e7-4383-95d7-f96910221060": The04747408_De0E4944_B79D23_Ca41008619;
     "29549218-4198-44f1-8ebc-e118dd693ddb": The04747408_De0E4944_B79D23_Ca41008619;
@@ -26,33 +25,26 @@ export interface V2MonstersD {
     "3e334eda-0f62-4852-bf50-dcab11d4e967": The04747408_De0E4944_B79D23_Ca41008619;
     "6c87be29-e82d-4ce1-ac79-8a642b8e0c4f": The04747408_De0E4944_B79D23_Ca41008619;
     "626224f6-4aea-458f-8947-86a4798de419": The04747408_De0E4944_B79D23_Ca41008619;
-    "8e823884-a27d-46cd-bddc-9815a224aae4": The04747408_De0E4944_B79D23_Ca41008619;
     "518bd4b2-97f4-44f9-8b74-933962339751": The04747408_De0E4944_B79D23_Ca41008619;
     "ea63dae1-1d9c-4422-8c2a-96260b787dd1": The04747408_De0E4944_B79D23_Ca41008619;
     "67f30669-0e12-4d59-82fc-6b033fa064c3": The04747408_De0E4944_B79D23_Ca41008619;
     "b54dbad3-bc06-481a-ba99-a2421c047665": The04747408_De0E4944_B79D23_Ca41008619;
-    "0af10a6e-4ea8-4f76-b3f7-c0364ce6d42b": The04747408_De0E4944_B79D23_Ca41008619;
     "53c31151-ad92-4181-9720-d0825eea866b": The04747408_De0E4944_B79D23_Ca41008619;
     "1ed6f8c6-13a9-48a2-995f-c61af0602777": The04747408_De0E4944_B79D23_Ca41008619;
-    "d2fdf346-78ae-4694-8c9d-45285f09d408": The04747408_De0E4944_B79D23_Ca41008619;
-    "5b3da8f1-5834-4a8d-967f-f98e8989b26f": The04747408_De0E4944_B79D23_Ca41008619;
     "05c7cd54-75a3-4eae-9a1a-798c90b0db2d": The04747408_De0E4944_B79D23_Ca41008619;
-    "b41bd40f-c380-4342-bfa2-3dbf772d956d": The04747408_De0E4944_B79D23_Ca41008619;
-    "70eaf194-d60a-4605-aac2-41f84ea84c46": The04747408_De0E4944_B79D23_Ca41008619;
     "9af5fe85-c06f-4227-906c-e5f8df83a0fd": The04747408_De0E4944_B79D23_Ca41008619;
     "e873dbd7-86aa-4fec-9206-28591346939a": The04747408_De0E4944_B79D23_Ca41008619;
-    "8c211464-5961-449b-b5e9-b222c601e3c1": The04747408_De0E4944_B79D23_Ca41008619;
+    "8c211464-5961-449b-b5e9-b222c601e3c1": The616_Ce451B85D478_A82_A88_A28105994F5;
     "6d939dd0-fd9b-46b8-8861-cccb818757da": The04747408_De0E4944_B79D23_Ca41008619;
     "f820c620-244a-46c4-bace-51eb70ce48e6": The04747408_De0E4944_B79D23_Ca41008619;
     "fd181d89-0706-4220-bb95-637af574b61b": The04747408_De0E4944_B79D23_Ca41008619;
     "ee26b888-c50f-43cf-848b-ca572b6e9583": The04747408_De0E4944_B79D23_Ca41008619;
     "16038f84-3cec-4ccd-b58b-2ce974442142": The04747408_De0E4944_B79D23_Ca41008619;
-    "5a882cdb-c8df-497b-86d5-b27ba95225ed": The5_A882CdbC8Df497_B86_D5B27Ba95225Ed;
+    "5a882cdb-c8df-497b-86d5-b27ba95225ed": The5A882CdbC8Df497B86D5B27Ba95225Ed;
     "709e1dce-7e91-4612-b010-d107a6800158": The04747408_De0E4944_B79D23_Ca41008619;
     "6d946fe1-13cc-4141-bc89-84981c4ef77f": The04747408_De0E4944_B79D23_Ca41008619;
     "924c56d7-1a5e-4e57-a6b2-bb0c2362980e": The04747408_De0E4944_B79D23_Ca41008619;
     "622b8e58-b073-4c75-9d57-322d0f16435d": The04747408_De0E4944_B79D23_Ca41008619;
-    "a6d543e2-e4fc-4e7d-a2b3-998ee6ef1a50": The04747408_De0E4944_B79D23_Ca41008619;
     "dd985314-939f-4388-86dc-50ef8e7c25b7": The04747408_De0E4944_B79D23_Ca41008619;
     "b6ca5c91-632d-4093-87f9-cbd0d649740e": The04747408_De0E4944_B79D23_Ca41008619;
     "fdcb435f-d6c4-4657-81b5-1888e8eefe5a": The04747408_De0E4944_B79D23_Ca41008619;
@@ -61,12 +53,8 @@ export interface V2MonstersD {
     "d34242a2-02b0-4361-9402-e216cb12d165": The04747408_De0E4944_B79D23_Ca41008619;
     "820dd8f1-6721-4c32-88a4-b5071566dcc4": The04747408_De0E4944_B79D23_Ca41008619;
     "266a6b58-ec93-4d4a-8cea-549caa4224e1": The04747408_De0E4944_B79D23_Ca41008619;
-    "479ad0ec-51a9-4d26-ba63-8062d3814619": The04747408_De0E4944_B79D23_Ca41008619;
-    "80a6cd15-2213-493f-904f-fb6ce7c60270": The04747408_De0E4944_B79D23_Ca41008619;
-    "55902c8f-01af-4234-bc56-852113c85ac9": The04747408_De0E4944_B79D23_Ca41008619;
     "fc5aa4c0-8d87-457b-bc3c-2ebf0b07d12d": The04747408_De0E4944_B79D23_Ca41008619;
     "f43985fe-7e14-4797-a86d-71ee83195154": The04747408_De0E4944_B79D23_Ca41008619;
-    "8ef44226-7c66-417e-9f31-4cc636a68866": The04747408_De0E4944_B79D23_Ca41008619;
     "337c2af9-4815-4c14-b537-159f5fc80be3": The04747408_De0E4944_B79D23_Ca41008619;
     "7719b6d8-7977-4d49-88a2-da29a19ad235": The04747408_De0E4944_B79D23_Ca41008619;
     "4c1a67f6-f9b4-4a46-8481-d252a24544e7": The04747408_De0E4944_B79D23_Ca41008619;
@@ -74,7 +62,6 @@ export interface V2MonstersD {
     "e18b8358-920d-48d7-b90c-37e455135991": The04747408_De0E4944_B79D23_Ca41008619;
     "c2fd54df-9cd2-4f61-ae6e-9b6c8cf87785": The04747408_De0E4944_B79D23_Ca41008619;
     "d64499b5-a27c-4fb8-bc7d-28a2e091b929": The04747408_De0E4944_B79D23_Ca41008619;
-    "b236a2b6-3bbb-4f3e-b505-ba67605312de": The04747408_De0E4944_B79D23_Ca41008619;
     "23274e3a-c38d-4aff-92b6-599103256cee": The04747408_De0E4944_B79D23_Ca41008619;
     "50a31ea0-ed74-484a-b04b-30f6fe273958": The04747408_De0E4944_B79D23_Ca41008619;
     "b40ae00e-f6df-4920-90a4-a49ea53fbdb5": The04747408_De0E4944_B79D23_Ca41008619;
@@ -92,20 +79,17 @@ export interface V2MonstersD {
     "f57b2a63-e4a2-4d9a-88b3-b1c3a3cf36d7": The04747408_De0E4944_B79D23_Ca41008619;
     "04747408-de0e-4944-b79d-23ca41008619": The04747408_De0E4944_B79D23_Ca41008619;
     "b3f9a83f-772b-4286-bf21-cd2d86a13b58": The04747408_De0E4944_B79D23_Ca41008619;
-    "3a2f9a4b-f573-46d4-a2ed-1ed0088da55b": The04747408_De0E4944_B79D23_Ca41008619;
     "7e8b7521-af5e-4c81-93c1-694e823bc5de": The04747408_De0E4944_B79D23_Ca41008619;
     "73163ebc-46fd-43f0-9693-8666ccc9da09": The04747408_De0E4944_B79D23_Ca41008619;
     "2b157e1b-3340-44b2-934e-4fc84a2b9beb": The04747408_De0E4944_B79D23_Ca41008619;
-    "ecb2508b-07b1-4712-a82a-fb47c433ed6a": The5_A882CdbC8Df497_B86_D5B27Ba95225Ed;
+    "ecb2508b-07b1-4712-a82a-fb47c433ed6a": The04747408_De0E4944_B79D23_Ca41008619;
     "e6782454-5c72-47f3-ac43-140f0cc7eb8f": The04747408_De0E4944_B79D23_Ca41008619;
-    "b5409ad0-edb2-49eb-8dee-6d4ec238e10e": The04747408_De0E4944_B79D23_Ca41008619;
     "b712a602-1843-4fc3-85ad-b8e3b7bca489": The04747408_De0E4944_B79D23_Ca41008619;
     "7f6cecb6-3f07-4606-8d62-21c0b5e4e369": The04747408_De0E4944_B79D23_Ca41008619;
-    "55823d26-5fa0-46ca-9d3d-50bbbff5068b": The04747408_De0E4944_B79D23_Ca41008619;
     "0a70a9ab-4508-4ff4-984e-9a20f0b3d517": The04747408_De0E4944_B79D23_Ca41008619;
     "2551f0d8-a57c-4670-993d-13b8b7ee2791": The04747408_De0E4944_B79D23_Ca41008619;
     "f73ab4b7-f33d-4d65-bb3f-2fea8d003500": The04747408_De0E4944_B79D23_Ca41008619;
-    "616ce451-b85d-478a-82a8-8a28105994f5": The04747408_De0E4944_B79D23_Ca41008619;
+    "616ce451-b85d-478a-82a8-8a28105994f5": The616_Ce451B85D478_A82_A88_A28105994F5;
     "27afe780-4867-41d6-8126-36b501c0d2ef": The04747408_De0E4944_B79D23_Ca41008619;
     "7a61ddf2-dd00-462c-8312-873f0d27de64": The04747408_De0E4944_B79D23_Ca41008619;
     "b146714a-748a-4862-989c-19c83f6331fb": The04747408_De0E4944_B79D23_Ca41008619;
@@ -113,7 +97,6 @@ export interface V2MonstersD {
 
 export interface The04747408_De0E4944_B79D23_Ca41008619 {
     Id:           string;
-    Version:      Version;
     InternalName: string;
     Player:       The04747408De0E4944B79D23Ca41008619Player;
 }
@@ -122,46 +105,31 @@ export interface The04747408De0E4944B79D23Ca41008619Player {
     Attributes: PurpleAttributes;
     Hand:       Hand;
     Skills:     Skill[];
-    Stash:      Hand;
 }
 
 export interface PurpleAttributes {
-    Prestige:     number;
-    HealthMax:    number;
-    Level:        number;
-    HealthRegen?: number;
+    HealthMax: number;
 }
 
 export interface Hand {
-    Items:         Skill[];
-    UnlockedSlots: number;
+    Items: Item[];
 }
 
-export interface Skill {
-    $type:            Type;
-    EnchantmentType?: null | string;
-    SocketId?:        SocketID;
-    TemplateId:       string;
-    TemplateVersion:  Version;
-    InstanceId:       null;
-    Tier:             Tier;
-    Attributes:       SkillAttributes;
+export interface Item {
+    EnchantmentType: null | string;
+    TemplateId:      string;
+    Tier:            Tier;
 }
-
-export type Type = "TCardInstanceItem" | "TCardInstanceSkill";
-
-export interface SkillAttributes {
-}
-
-export type SocketID = "Socket_2" | "Socket_3" | "Socket_4" | "Socket_5" | "Socket_6" | "Socket_7" | "Socket_0" | "Socket_1" | "Socket_8" | "Socket_9";
-
-export type Version = "1.0.0";
 
 export type Tier = "Gold" | "Silver" | "Diamond" | "Bronze" | "Legendary";
 
-export interface The5_A882CdbC8Df497_B86_D5B27Ba95225Ed {
+export interface Skill {
+    TemplateId: string;
+    Tier:       Tier;
+}
+
+export interface The5A882CdbC8Df497B86D5B27Ba95225Ed {
     Id:           string;
-    Version:      Version;
     InternalName: string;
     Player:       The5A882CdbC8Df497B86D5B27Ba95225EdPlayer;
 }
@@ -170,13 +138,27 @@ export interface The5A882CdbC8Df497B86D5B27Ba95225EdPlayer {
     Attributes: FluffyAttributes;
     Hand:       Hand;
     Skills:     Skill[];
-    Stash:      Hand;
 }
 
 export interface FluffyAttributes {
-    Prestige:  number;
     HealthMax: number;
-    Gold?:     number;
+    Gold:      number;
     Income:    number;
-    Level:     number;
+}
+
+export interface The616_Ce451B85D478_A82_A88_A28105994F5 {
+    Id:           string;
+    InternalName: string;
+    Player:       The616Ce451B85D478A82A88A28105994F5Player;
+}
+
+export interface The616Ce451B85D478A82A88A28105994F5Player {
+    Attributes: TentacledAttributes;
+    Hand:       Hand;
+    Skills:     Skill[];
+}
+
+export interface TentacledAttributes {
+    HealthMax:   number;
+    HealthRegen: number;
 }

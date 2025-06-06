@@ -3,7 +3,7 @@
 // https://github.com/glideapps/quicktype?tab=readme-ov-file#calling-quicktype-from-javascript
 import type { Entries } from "type-fest";
 import type { ParsedCombatEncounterCard, ParsedItemCard, ParsedMerchantCard, ParsedSkillCard } from "$lib/types";
-import type { The200 as Card, Bronze as Tier, Tiers, Tier as TierType, AbilityAction, AuraAction, Ability, Aura, Operation } from "./data/cards";
+import type { The300 as Card, LegendaryClass as Tier, The300_Tiers as Tiers, Tier as TierType, AbilityAction, AuraAction, Ability, Aura, Operation } from "./data/cards";
 import { unifyTooltips } from "$lib/utils/tooltipUtils";
 import type { CardsJson } from "./types.parser";
 import invalidItemIds from "./invalidItemIds";
@@ -77,7 +77,7 @@ function getAttributeInfo(
             // If there's a modifier, and if modifier mode is multiply, then get the attribute type and multiply it by modifier rather than just using modifier.
             attributeValue = action.Value.Modifier.Value.Value ?? action.Value.Modifier.Value.DefaultValue!;
             operation = action.Operation!;
-            
+
 
             if (qualifier.isMod) {
                 // If there is no Action.Value.Modifier.Value.Value then look at AttributeType
@@ -95,7 +95,7 @@ function getAttributeInfo(
                     name: attributeName,
                     value: attributeValue,
                     operation,
-                    
+
                 };
             }
 
@@ -844,7 +844,7 @@ function parseMerchantCards(cardsJson: CardsJson) {
     // TODO: In the future can add support for Jules and Stelle. No need to show a merchant that can't be encountered
     // by the player.
     const allowedHeroes = ["Vanessa", "Pygmalien", "Dooley", "Mak", "Common"] as const;
-    
+
     const isValidMerchant = (entry: Card): entry is ValidMerchantCard =>
         entry.Type === "EventEncounter" &&
         entry.Tags.includes("Merchant") &&

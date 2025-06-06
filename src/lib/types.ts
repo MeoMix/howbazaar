@@ -1,11 +1,11 @@
 export type EnchantmentType = 'Heavy' | 'Icy' | 'Turbo' | 'Shielded' | 'Restorative' | 'Toxic' | 'Fiery' | 'Shiny' | 'Deadly' | 'Radiant' | 'Obsidian' | 'Golden';
-export type Hero = "Pygmalien" | "Vanessa" | "Stelle" | "Jules" | "Dooley" | "Mak" | "Common";
+export type Hero = "Pygmalien" | "Vanessa" | "Stelle" | "Jules" | "Dooley" | "Mak" | "Common" | "Hero7";
 export type TierType = "Silver" | "Diamond" | "Bronze" | "Gold" | "Legendary";
 export type Size = "Small" | "Medium" | "Large";
-export type Tag = "Weapon" | "Shield" | "Heal" | "Joy" | "Burn" | "Poison" | "Merchant" | "Core" | "Property" | "Friend" | "Apparel" | "Freeze" | "Aquatic" | "Toy" | "Dinosaur" | "Tool" | "Potion" | "Vehicle" | "Food" | "Dragon" | "Tech" | "Ray" | "Haste" | "Slow" | "Damage" | "Loot" | "Ingredient" | "Relic" | "Reagent" | "Regen";
+export type Tag = "Weapon" | "Shield" | "Heal" | "Joy" | "Burn" | "Poison" | "Merchant" | "Core" | "Property" | "Friend" | "Apparel" | "Freeze" | "Aquatic" | "Toy" | "Dinosaur" | "Tool" | "Potion" | "Vehicle" | "Food" | "Dragon" | "Tech" | "Ray" | "Haste" | "Slow" | "Damage" | "Loot" | "Ingredient" | "Relic" | "Reagent" | "Regen" | "Quest" | "Charge";
 // TODO: Why is Regen both a Tag and a HiddenTag?
 // TODO: Why is HealthMax both a Tag and a HiddenTag?
-export type HiddenTag = "HealthMax" | "Health" | "Poison" | "Income" | "Cooldown" | "Heal" | "Value" | "EconomyReference" | "Damage" | "BurnReference" | "Slow" | "Active" | "Shield" | "Burn" | "DamageReference" | "CritReference" | "Gold" | "Passive" | "NonWeapon" | "Multicast" | "Haste" | "HealReference" | "ShieldReference" | "HasteReference" | "Freeze" | "Crit" | "Ammo" | "Charge" | "JoyReference" | "Regen" | "PoisonReference" | "Joy" | "HealthReference" | "FreezeReference" | "SlowReference" | "AmmoReference" | "Toughness" | "Lifesteal" | "Experience" | "RegenReference" | "Unsellable" | "TechReference" | "PotionReference" | "Quest";
+export type HiddenTag = "Health" | "Level" | "Gold" | "Burn" | "Shield" | "DamageReference" | "Regen" | "Damage" | "Active" | "Haste" | "Cooldown" | "Crit" | "Ammo" | "EconomyReference" | "PotionReference" | "Value" | "Charge" | "Multicast" | "RegenReference" | "JoyReference" | "Heal" | "BurnReference" | "NonWeapon" | "Slow" | "ShieldReference" | "CritReference" | "Poison" | "SlowReference" | "TechReference" | "Freeze" | "HealReference" | "PoisonReference" | "Joy" | "Toughness" | "HasteReference" | "Lifesteal" | "Income" | "FreezeReference" | "Quest" | "AmmoReference" | "Passive" | "HealthReference" | "Experience" | "Unsellable" | "Regeneration";
 export type CustomTag = "Unpurchasable";
 
 type ClientSideTier = {
@@ -37,7 +37,7 @@ export type ParsedItemCard = {
 
 // TODO: Why is Pygmalien in the Core pack?
 export type CorePackId = "Core" | "Pygmalien_Core" | "Vanessa_Core" | "Dooley_Core" | "Mak_Core" | "Jules_Core" | "Stelle_Core" | "Pygmalien";
-export type ExpansionPackId = "Pyg_Frozen_Assets" | "Vanessa_Mysteries_of_the_Deep" | "Dooley_Dooltron" | "Vanessa_The_Gang" | "Pyg_Investment_Opportunities" | "Mak_Dangerous_Experiments";
+export type ExpansionPackId = "Pyg_Frozen_Assets" | "Vanessa_Mysteries_of_the_Deep" | "Mak_Lost_Treasures" |"Vanessa_From_the_Shadows" | "Pyg_Pigglestorm" | "Dooley_Primal_Dooley" | "Dooley_Dooltron" | "Vanessa_The_Gang" | "Pyg_Investment_Opportunities" | "Mak_Dangerous_Experiments";
 
 export type ClientSideItemCard = {
     id: string;
@@ -123,13 +123,10 @@ export type ClientSideMerchantCard = {
 
 export type ParsedMonster = {
     id: string;
-    level: number;
     health: number;
     items: {
         templateId: string;
         tierType: TierType;
-        // TODO: ideally this property wouldn't be sent client side as it's not needed
-        socketId: string;
         enchantmentType?: EnchantmentType;
     }[];
     skills: {
@@ -161,7 +158,6 @@ type ClientSideMonsterEncounterSkill = {
 export type ClientSideMonsterEncounter = {
     cardId: string;
     cardName: string;
-    level: number;
     health: number;
     items: ClientSideMonsterEncounterItem[];
     skills: ClientSideMonsterEncounterSkill[];

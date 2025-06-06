@@ -1,18 +1,16 @@
 export interface CardsD {
-    "2.0.0": The200[];
+    "3.0.0": The300[];
 }
 
-export interface The200 {
-    $type:                         The200_$Type;
-    IsReselectable?:               boolean;
+export interface The300 {
+    $type:                         The300_$Type;
+    StartingTier:                  Tier;
+    Tiers?:                        The300_Tiers;
     Type:                          Type;
-    ExperienceAwardUponSelection?: number;
-    Attributes?:                   The200_Attributes | null;
     Id:                            string;
     Version:                       Version;
     InternalName:                  string;
-    InternalDescription:           The200_InternalDescription | null;
-    StartingTier:                  Tier;
+    InternalDescription:           The300_InternalDescription | null;
     Size:                          Size;
     Heroes:                        Hero[];
     Tags:                          Tag[];
@@ -21,22 +19,25 @@ export interface The200 {
     CardPackId:                    CardPackID;
     TranslationKey:                string;
     AudioKey:                      null | string;
-    Localization:                  The200_Localization;
+    Localization:                  The300_Localization;
     Abilities:                     { [key: string]: Ability };
     Auras:                         { [key: string]: Aura };
-    Tiers?:                        Tiers;
-    Enchantments?:                 Enchantments | null;
-    Transform?:                    Transform | null;
     CombatantType?:                CombatantType;
     RewardCombatGold?:             number;
-    RewardVictory?:                Reward;
-    RewardDefeat?:                 Reward;
+    RewardVictory?:                RewardDefeatClass;
+    RewardDefeat?:                 RewardDefeatClass;
+    ExperienceAwardUponSelection?: number;
+    Attributes?:                   The300_Attributes | null;
+    Enchantments?:                 Enchantments | null;
+    Transform?:                    Transform | null;
+    Quests?:                       Quest[] | null;
+    IsReselectable?:               boolean;
     SelectionContext?:             SelectionContext | null;
     SelectionRequirements?:        null;
     SelectionCriteria?:            SelectionCriteria;
 }
 
-export type The200_$Type = "TCardEncounterStep" | "TCardItem" | "TCardEncounterCombat" | "TCardSkill" | "TCardEncounterEvent" | "TCardEncounterPedestal";
+export type The300_$Type = "TCardSkill" | "TCardEncounterCombat" | "TCardItem" | "TCardEncounterStep" | "TCardEncounterEvent" | "TCardEncounterPedestal";
 
 export interface Ability {
     Id:                  string;
@@ -48,23 +49,24 @@ export interface Ability {
     InternalName:        string;
     InternalDescription: null | string;
     MigrationData:       string;
-    VFXConfig:           VFXConfig | null;
+    VFXConfig:           VFXConfig;
     TranslationKey:      string;
+    WorksIn:             WorksIn;
 }
 
 export interface AbilityAction {
-    $type:            PurpleType;
-    AttributeType?:   AttributeType;
-    Value?:           TentacledValue | null;
+    $type:            CompletionEffectType;
+    Value?:           StickyValue | null;
+    AttributeType?:   string;
     Operation?:       Operation;
     Duration?:        PurpleDuration | null;
+    TargetCount?:     Limit | null;
     Target?:          PurpleTarget;
     ReferenceValue?:  null;
-    TargetCount?:     Limit | null;
-    UpgradeToTier?:   AttributeType | null;
     SpawnContext?:    PurpleSpawnContext;
-    TargetPlayer?:    TargetPlayer;
-    Enchantment?:     string;
+    UpgradeToTier?:   Tier | null;
+    TargetPlayer?:    ActionTargetPlayer;
+    Enchantment?:     EnchantmentEnum;
     PreventOverride?: boolean;
     Abilities?:       null;
     Enchantments?:    EnchantmentElement[];
@@ -72,9 +74,7 @@ export interface AbilityAction {
     Source?:          Source;
 }
 
-export type PurpleType = "TActionPlayerModifyAttribute" | "TActionPlayerHeal" | "TActionPlayerDamage" | "TActionCardSlow" | "TActionCardUpgrade" | "TActionPlayerShieldApply" | "TActionPlayerPoisonApply" | "TActionPlayerBurnApply" | "TActionGameDealCards" | "TActionGameSpawnCards" | "TActionCardModifyAttribute" | "TActionCardCharge" | "TActionCardFreeze" | "TActionCardEnchant" | "TActionCardForceUse" | "TActionCardHaste" | "TActionCardReload" | "TActionCardTransform" | "TActionPlayerRegenApply" | "TActionCardDisable" | "TActionPlayerJoyApply" | "TActionPlayerReviveHeal" | "TActionCardEnchantRandom" | "TActionPlayerPoisonRemove" | "TActionCardBeginSandstorm" | "TActionCardAddTagsList" | "TActionPlayerBurnRemove" | "TActionCardDestroy" | "TActionCardAddTagsBySource" | "TAuraActionCardModifyAttribute";
-
-export type AttributeType = "HealthMax" | "CritChance" | "Gold" | "BurnApplyAmount" | "DamageAmount" | "JoyApplyAmount" | "Income" | "CooldownMax" | "Experience" | "PoisonApplyAmount" | "Custom_1" | "ShieldApplyAmount" | "HealAmount" | "Cooldown" | "Prestige" | "SellPrice" | "RegenApplyAmount" | "HealthRegen" | "Multicast" | "PercentDamageReduction" | "AmmoMax" | "Freeze" | "Shield" | "FreezeAmount" | "Custom_0" | "BuyPrice" | "Counter" | "Custom_3" | "Custom_2" | "Custom_5" | "Slow" | "HasteAmount" | "SlowAmount" | "Lifesteal" | "Custom_4" | "Health" | "Custom_8" | "Ammo" | "Burn" | "Poison" | "Haste" | "Level" | "Joy" | "DamageCrit" | "FreezeTargets" | "ChargeAmount" | "BurnRemoveAmount" | "RerollCostModifier" | "PoisonRemoveAmount";
+export type CompletionEffectType = "TActionCardModifyAttribute" | "TActionPlayerDamage" | "TActionPlayerShieldApply" | "TActionGameDealCards" | "TActionCardUpgrade" | "TActionPlayerModifyAttribute" | "TActionCardHaste" | "TActionCardCharge" | "TActionPlayerPoisonApply" | "TActionGameSpawnCards" | "TActionPlayerBurnApply" | "TActionPlayerHeal" | "TActionCardEnchant" | "TActionCardTransform" | "TActionCardFreeze" | "TActionPlayerRegenApply" | "TActionPlayerJoyApply" | "TActionExitReplacementSet" | "TActionCardSlow" | "TActionCardForceUse" | "TActionCardEnchantRandom" | "TActionPlayerPoisonRemove" | "TActionCardAddTagsList" | "TActionCardDisable" | "TActionCardReload" | "TActionCardBeginSandstorm" | "TActionPlayerReviveHeal" | "TActionCardEnchantRemove" | "TActionPlayerBurnRemove" | "TActionCardAddTagsBySource" | "TActionCardDestroy" | "TAuraActionCardModifyAttribute";
 
 export interface PurpleDuration {
     $type:         DurationType;
@@ -86,69 +86,68 @@ export type DurationType = "TDeterminantDuration" | "TCombatDuration";
 
 export type DurationTypeEnum = "UntilEndOfCombat" | "UntilEndOfDay";
 
+export type EnchantmentEnum = "Golden" | "Heavy" | "Icy" | "Turbo" | "Shielded" | "Restorative" | "Toxic" | "Fiery" | "Shiny" | "Deadly" | "Radiant" | "Obsidian" | "Mystical" | "Ethereal";
+
 export interface EnchantmentElement {
-    Enchantment: string;
+    Enchantment: EnchantmentEnum;
     Weight:      number;
 }
 
-export type Operation = "Add" | "Multiply" | "Subtract";
+export type Operation = "Add" | "Subtract" | "Multiply";
 
 export interface Source {
     $type:          SourceType;
-    TargetMode?:    TargetMode;
+    Origin?:        Origin;
+    TargetMode?:    Origin;
+    IncludeOrigin?: boolean;
     Conditions:     PurpleConditions | null;
-    TargetSection?: TargetSection;
     ExcludeSelf?:   boolean;
+    TargetSection?: TargetSection;
 }
 
-export type SourceType = "TTargetPlayerAbsolute" | "TTargetCardSelf" | "TTargetCardXMost" | "TTargetCardSection" | "TTargetPlayerRelative" | "TTargetCardTriggerSource" | "TTargetCardRandom" | "TTargetCardPositional" | "TTargetPlayer" | "TCardConditionalAnd" | "TCardConditionalOr";
+export type SourceType = "TTargetCardPositional" | "TTargetPlayerRelative" | "TTargetCardSelf" | "TTargetCardTriggerSource" | "TTargetPlayerAbsolute" | "TTargetCardRandom" | "TTargetCardSection" | "TTargetCardXMost" | "TTargetPlayer" | "TCardConditionalAnd" | "TCardConditionalOr" | "TCardConditionalHasEnchantment";
 
 export interface PurpleConditions {
     $type:               ConditionType;
-    Attribute?:          AttributeType;
+    Enchantment?:        EnchantmentEnum;
+    IsNot?:              boolean;
+    Conditions?:         PurpleCondition[] | TentacledConditions | null;
+    Attribute?:          Attribute;
     ComparisonOperator?: Comparison;
     ComparisonValue?:    PurpleValue;
-    Tags?:               Tag[];
+    Heroes?:             Hero[];
     Operator?:           Operator;
-    AttributeType?:      AttributeType;
-    Conditions?:         PurpleCondition[];
+    Tags?:               Tag[];
+    CardType?:           Type;
+    Sizes?:              Size[];
+    AttributeType?:      Attribute;
     Tiers?:              Tier[];
-    IsNot?:              boolean;
+    Id?:                 string;
 }
 
-export type ConditionType = "TCardConditionalAttribute" | "TCardConditionalTag" | "TCardConditionalAttributeLowest" | "TCardConditionalAnd" | "TCardConditionalHiddenTag" | "TPlayerConditionalAttribute" | "TCardConditionalTier" | "TCardConditionalOr" | "TCardConditionalEnchantmentEligible" | "TCardConditionalSize" | "TCardConditionalTriggerSource" | "TCardConditionalHasEnchantment" | "TCardConditionalId" | "TCardConditionalAttributeHighest" | "TCardConditionalPlayerHero" | "TCardConditionalType";
+export type ConditionType = "TCardConditionalHasEnchantment" | "TCardConditionalAnd" | "TTargetCardSelf" | "TCardConditionalOr" | "TCardConditionalAttribute" | "TPlayerConditionalAttribute" | "TCardConditionalHero" | "TCardConditionalTag" | "TCardConditionalType" | "TCardConditionalSize" | "TCardConditionalAttributeHighest" | "TCardConditionalTier" | "TCardConditionalHiddenTag" | "TCardConditionalAttributeLowest" | "TCardConditionalId" | "TCardConditionalCanCrit" | "TCardConditionalEnchantmentEligible" | "TCardConditionalTriggerSource" | "TCardConditionalPlayerHero";
 
-export type Comparison = "GreaterThan" | "LessThanOrEqual" | "Equal" | "LessThan" | "GreaterThanOrEqual" | "NotEqual";
+export type Attribute = "AmmoMax" | "Health" | "Custom_0" | "Freeze" | "Shield" | "Slow" | "Custom_5" | "Custom_4" | "Ammo" | "Custom_8" | "CooldownMax" | "DamageAmount" | "CritChance" | "ShieldApplyAmount" | "Lifesteal" | "SellPrice" | "Haste" | "Custom_1" | "Custom_2" | "Custom_3" | "BurnApplyAmount" | "PoisonApplyAmount" | "RegenApplyAmount" | "DamageCrit" | "HealAmount" | "HealthRegen" | "HealthMax" | "Income" | "Burn" | "Poison" | "ChargeAmount" | "HasteAmount";
 
-export interface FluffyConditions {
-    $type:              ConditionType;
-    Attribute:          AttributeType;
-    ComparisonOperator: Comparison;
-    ComparisonValue:    PurpleValue;
-}
+export type Type = "Item" | "Skill" | "CombatEncounter" | "EncounterStep" | "EventEncounter" | "PedestalEncounter";
 
-export interface ComparisonValueSubject {
-    $type:       SourceType;
-    Conditions:  FluffyConditions | null;
-    TargetMode?: TargetMode;
-}
+export type Comparison = "LessThanOrEqual" | "LessThan" | "GreaterThanOrEqual" | "GreaterThan" | "Equal" | "NotEqual";
 
 export interface PurpleValue {
     $type:          ComparisonValueType;
-    Value?:         number;
-    Target?:        ComparisonValueSubject;
-    AttributeType?: AttributeType;
+    Target?:        PrerequisiteTarget;
+    AttributeType?: Attribute;
     DefaultValue?:  number;
-    Modifier?:      ComparisonValueModifier;
+    Modifier?:      ComparisonValueModifier | null;
+    Value?:         number;
 }
 
-export type TargetMode = "Self" | "Opponent" | "Player" | "LeftMostCard" | "Neighbor" | "RightCard" | "LeftCard" | "RightMostCard" | "Both" | "AllRightCards" | "AllLeftCards";
-
-export type ComparisonValueType = "TFixedValue" | "TReferenceValuePlayerAttribute" | "TReferenceValuePlayerAttributeChange" | "TReferenceValueCardAttribute" | "TRangeValue" | "TReferenceValueCardCount" | "TReferenceValueCardAttributeAggregate" | "TReferenceValueCardTagCount";
+export type ComparisonValueType = "TReferenceValueCardAttribute" | "TFixedValue" | "TReferenceValuePlayerAttribute" | "TReferenceValuePlayerAttributeChange" | "TReferenceValueCardCount" | "TRangeValue" | "TReferenceValueCardAttributeAggregate" | "TReferenceValueCardTagCount";
 
 export interface ComparisonValueModifier {
-    ModifyMode: Operation;
-    Value:      ComparisonValue;
+    ModifyMode:  Operation;
+    Value:       ComparisonValue;
+    ShouldRound: boolean;
 }
 
 export interface ComparisonValue {
@@ -156,43 +155,96 @@ export interface ComparisonValue {
     Value: number;
 }
 
+export interface FluffyValue {
+    $type:          ComparisonValueType;
+    Target?:        PrerequisiteTarget;
+    AttributeType?: Attribute;
+    DefaultValue?:  number;
+    Modifier?:      ComparisonValueModifier;
+    Value?:         number;
+}
+
+export interface FluffyConditions {
+    $type:              ConditionType;
+    Attribute:          Attribute;
+    ComparisonOperator: Comparison;
+    ComparisonValue:    FluffyValue;
+}
+
+export interface PrerequisiteTarget {
+    $type:       SourceType;
+    Conditions:  FluffyConditions | null;
+    TargetMode?: Origin;
+}
+
+export type Origin = "Self" | "Opponent" | "LeftCard" | "RightCard" | "Player" | "LeftMostCard" | "Neighbor" | "RightMostCard" | "Both" | "AllLeftCards" | "AllRightCards";
+
 export interface PurpleCondition {
     $type:               ConditionType;
-    Attribute?:          AttributeType;
+    Conditions?:         FluffyCondition[] | TentacledConditions | null;
+    Sizes?:              Size[];
+    IsNot?:              boolean;
+    Attribute?:          Attribute;
     ComparisonOperator?: Comparison;
     ComparisonValue?:    ComparisonValue;
-    Conditions?:         TriggerConditions[];
+    Heroes?:             Hero[];
+    Operator?:           Operator;
+    Tags?:               Tag[];
+    CardType?:           Type;
 }
 
 export interface FluffyCondition {
     $type:               ConditionType;
-    Tags?:               Tag[];
-    Operator?:           Operator;
-    Enchantment?:        ConditionEnchantment;
+    Sizes?:              Size[];
     IsNot?:              boolean;
-    Attribute?:          AttributeType;
+    Attribute?:          Attribute;
     ComparisonOperator?: Comparison;
     ComparisonValue?:    ComparisonValue;
-    Conditions?:         TriggerConditions[];
+    Heroes?:             Hero[];
+    Operator?:           Operator;
+    Tags?:               Tag[];
+    Conditions?:         TentacledCondition[];
 }
 
-export interface TriggerConditions {
-    $type:        ConditionType;
-    Tags?:        Tag[];
-    Operator?:    Operator;
-    Conditions?:  FluffyCondition[];
-    Enchantment?: string;
+export interface TentacledCondition {
+    $type:    ConditionType;
+    Tags:     Tag[];
+    Operator: Operator;
 }
-
-export type ConditionEnchantment = "Radiant" | "Obsidian" | "Deadly";
 
 export type Operator = "Any" | "None";
 
-export type Tag = "Merchant" | "Weapon" | "Shield" | "Heal" | "Joy" | "Burn" | "Poison" | "Regen" | "Core" | "Friend" | "Aquatic" | "Toy" | "Tool" | "Dinosaur" | "Dragon" | "Relic" | "Tech" | "Food" | "Ray" | "Potion" | "Property" | "Vehicle" | "Slow" | "Freeze" | "Reagent" | "Apparel" | "Haste" | "Damage" | "Loot";
+export type Tag = "Heal" | "Weapon" | "Shield" | "Potion" | "Core" | "Food" | "Poison" | "Burn" | "Tech" | "Friend" | "Regen" | "Property" | "Tool" | "Relic" | "Freeze" | "Dinosaur" | "Aquatic" | "Reagent" | "Toy" | "Ray" | "Haste" | "Joy" | "Slow" | "Vehicle" | "Dragon" | "Apparel" | "Damage" | "Merchant" | "Loot" | "Quest" | "Charge";
 
-export type Tier = "Gold" | "Silver" | "Diamond" | "Bronze" | "Legendary";
+export type Hero = "Mak" | "Common" | "Vanessa" | "Jules" | "Pygmalien" | "Stelle" | "Dooley" | "Hero7";
 
-export type TargetSection = "SelfHand" | "AbsolutePlayerHandAndStash" | "SelfBoard" | "AllHands" | "OpponentHand" | "AbsolutePlayerHand" | "SelfHandAndStash" | "AbsoluteOpponentHand" | "SelfNeighbors" | "SelfStash";
+export type Size = "Small" | "Medium" | "Large";
+
+export interface ValueSubject {
+    $type:      SourceType;
+    Conditions: FluffyCondition[] | TentacledConditions | null;
+}
+
+export interface TentacledValue {
+    $type:          ComparisonValueType;
+    Value?:         number | number;
+    Target?:        ValueSubject;
+    AttributeType?: Attribute;
+    DefaultValue?:  number;
+    Modifier?:      ComparisonValueModifier | null;
+}
+
+export interface TentacledConditions {
+    $type:               ConditionType;
+    Attribute?:          Attribute;
+    ComparisonOperator?: Comparison;
+    ComparisonValue?:    TentacledValue;
+    Enchantment?:        EnchantmentEnum;
+}
+
+export type Tier = "Diamond" | "Legendary" | "Bronze" | "Silver" | "Gold";
+
+export type TargetSection = "SelfHand" | "SelfBoard" | "SelfHandAndStash" | "OpponentHand" | "SelfStash" | "AllHands" | "AbsolutePlayerHandAndStash" | "AbsolutePlayerHand" | "AbsoluteOpponentHand" | "SelfNeighbors";
 
 export interface PurpleSpawnContext {
     $type: SpawnContextType;
@@ -204,205 +256,326 @@ export type SpawnContextType = "TSpawnContextQuery";
 export interface Limit {
     $type:          ComparisonValueType;
     Value?:         number;
-    Target?:        ConditionsClass;
-    AttributeType?: AttributeType;
+    Target?:        ValueSubject;
+    AttributeType?: Attribute;
     DefaultValue?:  number;
     Modifier?:      ComparisonValueModifier | null;
 }
 
-export interface ConditionsClass {
-    $type:      SourceType;
-    Conditions: TentacledCondition[] | TentacledConditions | null;
-}
-
-export interface TentacledCondition {
-    $type:               ConditionType;
-    Attribute?:          AttributeType;
-    ComparisonOperator?: Comparison;
-    ComparisonValue?:    ComparisonValue;
-    Tags?:               Tag[];
-    Operator?:           Operator;
-    Conditions?:         StickyCondition[];
-}
-
-export interface StickyCondition {
-    $type:    ConditionType;
-    Tags:     Tag[];
-    Operator: Operator;
-}
-
-export interface TentacledConditions {
-    $type:               ConditionType;
-    Attribute?:          AttributeType;
-    ComparisonOperator?: Comparison;
-    ComparisonValue?:    ComparisonValue;
-    Tiers?:              Tier[];
-    IsNot?:              boolean;
-    Enchantment?:        string;
-}
-
 export interface PurpleTarget {
     $type:          SourceType;
-    TargetMode?:    TargetMode;
-    Conditions:     TentacledCondition[] | StickyConditions | null;
-    ExcludeSelf?:   boolean;
     TargetSection?: TargetSection;
-    Origin?:        Origin;
+    ExcludeSelf?:   boolean;
+    Conditions:     StickyConditions | null;
+    TargetMode?:    Origin;
+    Origin?:        PurpleOrigin;
     IncludeOrigin?: boolean;
 }
 
 export interface StickyConditions {
     $type:               ConditionType;
-    Attribute?:          AttributeType;
-    ComparisonOperator?: Comparison;
-    ComparisonValue?:    PurpleComparisonValue;
-    Conditions?:         IndigoCondition[];
     Tags?:               Tag[];
     Operator?:           Operator;
-    Enchantment?:        null | string;
-    Tiers?:              Tier[];
+    Attribute?:          Attribute;
+    ComparisonOperator?: Comparison;
+    ComparisonValue?:    PurpleComparisonValue;
+    Conditions?:         StickyCondition[];
     IsNot?:              boolean;
-    Sizes?:              Size[];
+    Enchantment?:        EnchantmentEnum | null;
+    Tiers?:              Tier[];
+    AttributeType?:      Attribute;
     Id?:                 string;
-    AttributeType?:      AttributeType;
-    IsSameAsPlayerHero?: boolean;
+    Sizes?:              Size[];
+    Heroes?:             Hero[];
     CardType?:           Type;
+    IsSameAsPlayerHero?: boolean;
 }
-
-export type Type = "Item" | "EncounterStep" | "CombatEncounter" | "Skill" | "EventEncounter" | "PedestalEncounter";
 
 export interface PurpleComparisonValue {
     $type:          ComparisonValueType;
     Value?:         number;
-    Target?:        ComparisonValueSubject;
-    AttributeType?: AttributeType;
-    DefaultValue?:  number;
-    Modifier?:      ComparisonValueModifier | null;
-}
-
-export interface IndigoCondition {
-    $type:               ConditionType;
-    Tiers?:              Tier[];
-    IsNot?:              boolean;
-    Attribute?:          AttributeType;
-    ComparisonOperator?: Comparison;
-    ComparisonValue?:    ComparisonValue;
-    Conditions?:         IndecentCondition[];
-    Tags?:               Tag[];
-    Operator?:           Operator;
-    Sizes?:              Size[];
-    Enchantment?:        null | string;
-    CardType?:           Type;
-    Id?:                 string;
-    IsSameAsPlayerHero?: boolean;
-    AttributeType?:      AttributeType;
-}
-
-export interface IndecentCondition {
-    $type:               ConditionType;
-    Tags?:               Tag[];
-    Operator?:           Operator;
-    Attribute?:          AttributeType;
-    ComparisonOperator?: Comparison;
-    ComparisonValue?:    ComparisonValue;
-    AttributeType?:      AttributeType;
-    Enchantment?:        null | string;
-    IsNot?:              boolean;
-    CardType?:           Type;
-    Sizes?:              Size[];
-    Conditions?:         FluffyCondition[];
-}
-
-export type Size = "Small" | "Medium" | "Large";
-
-export type Origin = "Self" | "TriggerSource";
-
-export interface TargetPlayer {
-    $type:          SourceType;
-    TargetMode?:    TargetMode;
-    Conditions:     IndigoConditions | null;
-    ExcludeSelf?:   boolean;
-    TargetSection?: TargetSection;
-}
-
-export interface IndigoConditions {
-    $type:               ConditionType;
-    Attribute?:          AttributeType;
-    ComparisonOperator?: Comparison;
-    ComparisonValue?:    FluffyValue;
-    Tags?:               Tag[];
-    Operator?:           Operator;
-    Conditions?:         HilariousCondition[];
-    CardType?:           Type;
-    IsNot?:              boolean;
-    Sizes?:              Size[];
-    Tiers?:              Tier[];
-    AttributeType?:      AttributeType;
-}
-
-export interface FluffyValue {
-    $type:          ComparisonValueType;
-    Target?:        ComparisonValueSubject;
-    AttributeType?: AttributeType;
-    DefaultValue?:  number;
-    Modifier?:      ComparisonValueModifier | null;
-    Value?:         number;
-}
-
-export interface HilariousCondition {
-    $type:               ConditionType;
-    Tags?:               Tag[];
-    Operator?:           Operator;
-    Attribute?:          AttributeType;
-    ComparisonOperator?: Comparison;
-    ComparisonValue?:    ComparisonValue;
-}
-
-export interface TentacledValue {
-    $type:          ComparisonValueType;
     Target?:        FluffyTarget;
-    AttributeType?: AttributeType;
+    AttributeType?: Attribute;
     DefaultValue?:  number;
-    Modifier?:      PurpleModifier | null;
-    Value?:         number;
-    MinValue?:      number;
-    MaxValue?:      number;
-}
-
-export interface PurpleModifier {
-    ModifyMode: Operation;
-    Value:      Limit;
-}
-
-export interface FluffyTarget {
-    $type:          SourceType;
-    TargetMode?:    TargetMode;
-    Conditions:     TentacledCondition[] | IndecentConditions | null;
-    TargetSection?: TargetSection;
-    ExcludeSelf?:   boolean;
-}
-
-export interface IndecentConditions {
-    $type:               ConditionType;
-    Attribute?:          AttributeType;
-    ComparisonOperator?: Comparison;
-    ComparisonValue?:    FluffyComparisonValue;
-    Tags?:               Tag[];
-    Operator?:           Operator;
-    AttributeType?:      AttributeType;
-    Conditions?:         PurpleCondition[];
-    Tiers?:              Tier[];
-    IsNot?:              boolean;
-    Enchantment?:        string;
+    Modifier?:      ComparisonValueModifier | null;
 }
 
 export interface FluffyComparisonValue {
     $type:          ComparisonValueType;
-    Value?:         number;
-    Target?:        ComparisonValueSubject;
-    AttributeType?: AttributeType;
+    Target?:        FluffyTarget;
+    AttributeType?: Attribute;
     DefaultValue?:  number;
-    Modifier?:      ComparisonValueModifier;
+    Modifier?:      ComparisonValueModifier | null;
+    Value?:         number;
+}
+
+export interface IndigoConditions {
+    $type:               ConditionType;
+    Attribute?:          Attribute;
+    ComparisonOperator?: Comparison;
+    ComparisonValue?:    FluffyComparisonValue;
+    Tiers?:              Tier[];
+    IsNot?:              boolean;
+    CardType?:           Type;
+}
+
+export interface FluffyTarget {
+    $type:        SourceType;
+    Conditions:   IndigoConditions | null;
+    TargetMode?:  Origin;
+    ExcludeSelf?: boolean;
+}
+
+export interface StickyCondition {
+    $type:               ConditionType;
+    Tags?:               Tag[];
+    Operator?:           Operator;
+    Attribute?:          Attribute;
+    ComparisonOperator?: Comparison;
+    ComparisonValue?:    ComparisonValue;
+    Tiers?:              Tier[];
+    IsNot?:              boolean;
+    Sizes?:              Size[];
+    Enchantment?:        EnchantmentEnum | null;
+    Conditions?:         IndigoCondition[];
+    CardType?:           Type;
+    Heroes?:             Hero[];
+    Id?:                 string;
+    AttributeType?:      Attribute;
+    IsSameAsPlayerHero?: boolean;
+}
+
+export interface IndigoCondition {
+    $type:               ConditionType;
+    Tags?:               Tag[];
+    Operator?:           Operator;
+    Attribute?:          Attribute;
+    ComparisonOperator?: Comparison;
+    ComparisonValue?:    ComparisonValue;
+    AttributeType?:      Attribute;
+    Conditions?:         IndecentCondition[];
+    Heroes?:             Hero[];
+    IsNot?:              boolean;
+    Id?:                 string;
+    Sizes?:              Size[];
+    Enchantment?:        EnchantmentEnum | null;
+    IsSameAsPlayerHero?: boolean;
+    CardType?:           Type;
+}
+
+export interface IndecentCondition {
+    $type:               ConditionType;
+    Sizes?:              Size[];
+    IsNot?:              boolean;
+    Attribute?:          Attribute;
+    ComparisonOperator?: Comparison;
+    ComparisonValue?:    ComparisonValue;
+    Tags?:               Tag[];
+    Operator?:           Operator;
+    Tiers?:              Tier[];
+    Enchantment?:        EnchantmentEnum | null;
+    Heroes?:             Hero[];
+    Conditions?:         HilariousCondition[];
+    Id?:                 string;
+    CardType?:           Type;
+}
+
+export interface HilariousCondition {
+    $type:       ConditionType;
+    Tags?:       Tag[];
+    Operator?:   Operator;
+    Conditions?: AmbitiousCondition[];
+    Heroes?:     Hero[];
+}
+
+export interface TriggerConditions {
+    $type:       ConditionType;
+    Tags?:       Tag[];
+    Operator?:   Operator;
+    Conditions?: AmbitiousCondition[];
+    Heroes?:     Hero[];
+}
+
+export interface AmbitiousCondition {
+    $type:               ConditionType;
+    Tags?:               Tag[];
+    Operator?:           Operator;
+    Attribute?:          Attribute;
+    ComparisonOperator?: Comparison;
+    ComparisonValue?:    ComparisonValue;
+    Enchantment?:        EnchantmentEnum;
+    IsNot?:              boolean;
+    Heroes?:             Hero[];
+    Conditions?:         TriggerConditions[];
+    CardType?:           Type;
+}
+
+export type PurpleOrigin = "Self" | "TriggerSource";
+
+export interface ActionTargetPlayer {
+    $type:          SourceType;
+    TargetMode?:    Origin;
+    Conditions:     IndecentConditions | null;
+    ExcludeSelf?:   boolean;
+    TargetSection?: TargetSection;
+}
+
+export interface IndecentConditions {
+    $type:               ConditionType;
+    Attribute?:          Attribute;
+    ComparisonOperator?: Comparison;
+    ComparisonValue?:    TentacledComparisonValue;
+    Tiers?:              Tier[];
+    IsNot?:              boolean;
+    CardType?:           Type;
+    Conditions?:         CunningCondition[];
+    Heroes?:             Hero[];
+    Operator?:           Operator;
+    Tags?:               Tag[];
+    Sizes?:              Size[];
+    AttributeType?:      Attribute;
+    Id?:                 string;
+}
+
+export interface TentacledComparisonValue {
+    $type:          ComparisonValueType;
+    Value?:         number;
+    Target?:        FluffyTarget;
+    AttributeType?: Attribute;
+    DefaultValue?:  number;
+    Modifier?:      ComparisonValueModifier | null;
+}
+
+export interface CunningCondition {
+    $type:               ConditionType;
+    Heroes?:             Hero[];
+    Operator?:           Operator;
+    Attribute?:          Attribute;
+    ComparisonOperator?: Comparison;
+    ComparisonValue?:    ComparisonValue;
+    Tags?:               Tag[];
+    CardType?:           Type;
+    IsNot?:              boolean;
+}
+
+export interface StickyValue {
+    $type:          ComparisonValueType;
+    Value?:         number;
+    Target?:        TentacledTarget;
+    AttributeType?: PurpleAttributeType;
+    DefaultValue?:  number;
+    Modifier?:      PurpleModifier | null;
+    MinValue?:      number;
+    MaxValue?:      number;
+}
+
+export type PurpleAttributeType = "SellPrice" | "Custom_0" | "Custom_2" | "Custom_1" | "Custom_3" | "Custom_4" | "RegenApplyAmount" | "HealAmount" | "DamageAmount" | "HealthMax" | "Level" | "Gold" | "Income" | "AmmoMax" | "CooldownMax" | "BurnApplyAmount" | "Burn" | "PoisonApplyAmount";
+
+export interface PurpleModifier {
+    ModifyMode:  Operation;
+    Value:       Limit;
+    ShouldRound: boolean;
+}
+
+export interface TentacledTarget {
+    $type:          SourceType;
+    Conditions:     FluffyCondition[] | HilariousConditions | null;
+    TargetMode?:    Origin;
+    TargetSection?: TargetSection;
+    ExcludeSelf?:   boolean;
+    Origin?:        Origin;
+    IncludeOrigin?: boolean;
+}
+
+export interface HilariousConditions {
+    $type:               ConditionType;
+    Tags?:               Tag[];
+    Operator?:           Operator;
+    Attribute?:          Attribute;
+    ComparisonOperator?: Comparison;
+    ComparisonValue?:    StickyComparisonValue;
+    AttributeType?:      Attribute;
+    Conditions?:         MagentaCondition[];
+    Heroes?:             Hero[];
+    IsNot?:              boolean;
+    Id?:                 string;
+    Sizes?:              Size[];
+    Enchantment?:        EnchantmentEnum | null;
+    IsSameAsPlayerHero?: boolean;
+    CardType?:           Type;
+    Tiers?:              Tier[];
+}
+
+export interface StickyComparisonValue {
+    $type:          ComparisonValueType;
+    Value?:         number;
+    Target?:        StickyTarget;
+    AttributeType?: Attribute;
+    DefaultValue?:  number;
+    Modifier?:      ComparisonValueModifier | null;
+}
+
+export interface IndigoComparisonValue {
+    $type:          ComparisonValueType;
+    Target?:        StickyTarget;
+    AttributeType?: Attribute;
+    DefaultValue?:  number;
+    Modifier?:      ComparisonValueModifier | null;
+    Value?:         number;
+}
+
+export interface AmbitiousConditions {
+    $type:               ConditionType;
+    Attribute?:          Attribute;
+    ComparisonOperator?: Comparison;
+    ComparisonValue?:    IndigoComparisonValue;
+    Enchantment?:        EnchantmentEnum;
+}
+
+export interface StickyTarget {
+    $type:       SourceType;
+    Conditions:  FluffyCondition[] | AmbitiousConditions | null;
+    TargetMode?: Origin;
+}
+
+export interface MagentaCondition {
+    $type:               ConditionType;
+    Sizes?:              Size[];
+    IsNot?:              boolean;
+    Attribute?:          Attribute;
+    ComparisonOperator?: Comparison;
+    ComparisonValue?:    ComparisonValue;
+    Tags?:               Tag[];
+    Operator?:           Operator;
+    Tiers?:              Tier[];
+    Enchantment?:        EnchantmentEnum | null;
+    Heroes?:             Hero[];
+    Conditions?:         FriskyCondition[];
+    Id?:                 string;
+    CardType?:           Type;
+}
+
+export interface FriskyCondition {
+    $type:        ConditionType;
+    Tags?:        Tag[];
+    Operator?:    Operator;
+    CardType?:    Type;
+    IsNot?:       boolean;
+    Sizes?:       Size[];
+    Enchantment?: EnchantmentEnum | null;
+    Conditions?:  MischievousCondition[];
+}
+
+export interface MischievousCondition {
+    $type:               ConditionType;
+    Tags?:               Tag[];
+    Operator?:           Operator;
+    Attribute?:          Attribute;
+    ComparisonOperator?: Comparison;
+    ComparisonValue?:    ComparisonValue;
+    Id?:                 string;
+    IsNot?:              boolean;
+    Enchantment?:        EnchantmentEnum;
 }
 
 export type ActiveIn = "HandOnly" | "HandAndStash";
@@ -414,127 +587,142 @@ export interface AbilityPrerequisite {
     Amount?:         number;
     Conditions?:     PrerequisiteConditions;
     SubjectOther?:   null;
-    Attribute?:      AttributeType;
-    AttributeOther?: AttributeType;
+    Attribute?:      Attribute;
+    AttributeOther?: Attribute;
 }
 
-export type PrerequisiteType = "TPrerequisiteCardCount" | "TPrerequisitePlayer" | "TPrerequisiteRun" | "TPrerequisiteCardAttributeComparator";
+export type PrerequisiteType = "TPrerequisiteCardCount" | "TPrerequisiteRun" | "TPrerequisitePlayer" | "TPrerequisiteCardAttributeComparator";
 
 export interface PrerequisiteConditions {
-    $type:              FluffyType;
+    $type:              PurpleType;
     CurrentDay:         number;
     ComparisonOperator: Comparison;
 }
 
-export type FluffyType = "TRunConditionalCurrentDay";
+export type PurpleType = "TRunConditionalCurrentDay";
 
 export interface PurpleSubject {
     $type:          SourceType;
-    Conditions:     TentacledCondition[] | HilariousConditions | null;
-    TargetMode?:    TargetMode;
-    TargetSection?: TargetSection;
+    Conditions:     FluffyCondition[] | CunningConditions | null;
     ExcludeSelf?:   boolean;
-    Origin?:        TargetMode;
+    TargetSection?: TargetSection;
+    TargetMode?:    Origin;
+    Origin?:        Origin;
     IncludeOrigin?: boolean;
 }
 
-export interface HilariousConditions {
+export interface CunningConditions {
     $type:               ConditionType;
-    Attribute?:          AttributeType;
+    Attribute?:          PurpleAttribute;
     ComparisonOperator?: Comparison;
-    ComparisonValue?:    TentacledComparisonValue;
+    ComparisonValue?:    IndecentComparisonValue;
     Sizes?:              Size[];
     IsNot?:              boolean;
     Tags?:               Tag[];
     Operator?:           Operator;
-    Conditions?:         AmbitiousCondition[];
+    Conditions?:         BraggadociousCondition[];
     Tiers?:              Tier[];
-    Enchantment?:        null | string;
-    IsSameAsPlayerHero?: boolean;
     CardType?:           Type;
-    AttributeType?:      AttributeType;
+    Heroes?:             Hero[];
+    AttributeType?:      Attribute;
+    Id?:                 string;
+    Enchantment?:        EnchantmentEnum;
 }
 
-export interface TentacledComparisonValue {
+export type PurpleAttribute = "Custom_0" | "Health" | "Custom_5" | "Custom_4" | "Ammo" | "Custom_8" | "AmmoMax" | "Custom_1" | "Custom_3" | "BurnApplyAmount" | "PoisonApplyAmount" | "RegenApplyAmount" | "Custom_2" | "Gold" | "SellPrice" | "Freeze" | "Shield" | "Slow" | "CooldownMax" | "Lifesteal" | "Haste";
+
+export interface IndecentComparisonValue {
     $type:          ComparisonValueType;
-    Target?:        ComparisonValueTarget;
-    AttributeType?: AttributeType;
+    Target?:        IndigoTarget;
+    AttributeType?: Attribute;
     DefaultValue?:  number;
     Modifier?:      ComparisonValueModifier | null;
     Value?:         number;
 }
 
-export interface ComparisonValueTarget {
-    $type:          SourceType;
-    Conditions:     IndigoConditions | null;
-    TargetMode?:    TargetMode;
-    ExcludeSelf?:   boolean;
-    TargetSection?: TargetSection;
+export interface HilariousComparisonValue {
+    $type:          ComparisonValueType;
+    Target?:        IndigoTarget;
+    AttributeType?: Attribute;
+    DefaultValue?:  number;
+    Modifier?:      ComparisonValueModifier | null;
+    Value?:         number;
 }
 
-export interface AmbitiousCondition {
+export interface MagentaConditions {
     $type:               ConditionType;
-    Id?:                 string;
-    IsNot?:              boolean;
-    Tags?:               Tag[];
-    Operator?:           Operator;
-    Attribute?:          AttributeType;
+    Attribute?:          Attribute;
     ComparisonOperator?: Comparison;
-    ComparisonValue?:    ComparisonValue;
-    AttributeType?:      AttributeType;
-    Conditions?:         CunningCondition[];
-    Enchantment?:        null | string;
-    Sizes?:              Size[];
-}
-
-export interface CunningCondition {
-    $type:               ConditionType;
-    Enchantment?:        ConditionEnchantment | null;
-    IsNot?:              boolean;
-    Sizes?:              Size[];
+    ComparisonValue?:    HilariousComparisonValue;
     Tiers?:              Tier[];
-    Tags?:               Tag[];
-    Operator?:           Operator;
-    Conditions?:         MagentaCondition[];
-    Attribute?:          AttributeType;
-    ComparisonOperator?: Comparison;
-    ComparisonValue?:    ComparisonValue;
-    Id?:                 string;
-    AttributeType?:      AttributeType;
-    IsSameAsPlayerHero?: boolean;
-}
-
-export interface MagentaCondition {
-    $type:               ConditionType;
-    Tags?:               Tag[];
-    Operator?:           Operator;
-    Attribute?:          AttributeType;
-    ComparisonOperator?: Comparison;
-    ComparisonValue?:    ComparisonValue;
-    Enchantment?:        null;
     IsNot?:              boolean;
+    CardType?:           Type;
+    Enchantment?:        EnchantmentEnum;
 }
 
-export type Priority = "Medium" | "Low" | "High" | "Lowest" | "Immediate" | "Highest";
+export interface IndigoTarget {
+    $type:        SourceType;
+    Conditions:   FluffyCondition[] | MagentaConditions | null;
+    TargetMode?:  Origin;
+    ExcludeSelf?: boolean;
+}
+
+export interface BraggadociousCondition {
+    $type:               ConditionType;
+    Id?:                 string;
+    IsNot?:              boolean;
+    Tags?:               Tag[];
+    Operator?:           Operator;
+    Attribute?:          Attribute;
+    ComparisonOperator?: Comparison;
+    ComparisonValue?:    ComparisonValue;
+    AttributeType?:      Attribute;
+    Conditions?:         Condition1[];
+    Heroes?:             Hero[];
+    Sizes?:              Size[];
+    Enchantment?:        EnchantmentEnum | null;
+    IsSameAsPlayerHero?: boolean;
+    CardType?:           Type;
+}
+
+export interface Condition1 {
+    $type:               ConditionType;
+    Sizes?:              Size[];
+    IsNot?:              boolean;
+    Attribute?:          Attribute;
+    ComparisonOperator?: Comparison;
+    ComparisonValue?:    ComparisonValue;
+    Tags?:               Tag[];
+    Operator?:           Operator;
+    Tiers?:              Tier[];
+    Enchantment?:        EnchantmentEnum | null;
+    Heroes?:             Hero[];
+    Conditions?:         TentacledCondition[];
+    Id?:                 string;
+}
+
+export type Priority = "Low" | "Medium" | "High" | "Highest" | "Immediate" | "Lowest";
 
 export interface AbilityTrigger {
     $type:             TriggerType;
     Subject?:          FluffySubject;
-    Target?:           TentacledTarget | null;
     CombatType?:       null | string;
-    AttributeType?:    AttributeType;
-    ChangeType?:       ChangeType;
-    Source?:           null;
-    CombatOutcome?:    CombatOutcome | null;
     Conditions?:       TriggerConditions;
-    AttributeChanged?: AttributeType;
+    Target?:           ActionTargetPlayer | null;
+    Source?:           null;
+    AttributeType?:    TriggerAttributeType;
+    ChangeType?:       ChangeType;
+    AttributeChanged?: Attribute;
     PreviousValue?:    PreviousValue | null;
     CurrentValue?:     null;
+    CombatOutcome?:    CombatOutcome | null;
 }
 
-export type TriggerType = "TTriggerOnCardSelected" | "TTriggerOnCardFired" | "TTriggerOnCardCritted" | "TTriggerOnCardPerformedHaste" | "TTriggerOnItemUsed" | "TTriggerOnCardPerformedBurn" | "TTriggerOnCardSold" | "TTriggerOnFightStarted" | "TTriggerOnCardPurchased" | "TTriggerOnPlayerAttributeChanged" | "TTriggerOnCardPerformedSlow" | "TTriggerOnPlayerDied" | "TTriggerOnHourStarted" | "TTriggerOnCardPerformedShield" | "TTriggerOnCardPerformedPoison" | "TTriggerOnFightEnded" | "TTriggerOnCardPerformedOverHeal" | "TTriggerOnCardPerformedHeal" | "TTriggerOnCardPerformedDestruction" | "TTriggerOnCardPerformedFreeze" | "TTriggerOnDayStarted" | "TTriggerOnEncounterSelected" | "TTriggerOnCardTransformed" | "TTriggerOnCardAttributeChanged" | "TTriggerOnCardUpgraded" | "TTriggerOnBeforeCardDestroyed" | "TTriggerOnCardPerformedReload" | "TTriggerOnCardPerformedRegen" | "TTriggerOnCardReloaded" | "TTriggerOnBeforeCardTransformed";
+export type TriggerType = "TTriggerOnItemUsed" | "TTriggerOnCardFired" | "TTriggerOnFightStarted" | "TTriggerOnCardSelected" | "TTriggerOnEncounterSelected" | "TTriggerOnCardPerformedBurn" | "TTriggerOnCardCritted" | "TTriggerOnCardPerformedSlow" | "TTriggerOnSandstorm" | "TTriggerOnCardPerformedOverHeal" | "TTriggerOnCardPerformedPoison" | "TTriggerOnCardUpgraded" | "TTriggerOnPlayerAttributeChanged" | "TTriggerOnCardAttributeChanged" | "TTriggerOnDayStarted" | "TTriggerOnCardPurchased" | "TTriggerOnCardSold" | "TTriggerOnPlayerDied" | "TTriggerOnCardPerformedFreeze" | "TTriggerOnCardPerformedDestruction" | "TTriggerOnFightEnded" | "TTriggerOnCardPerformedShield" | "TTriggerOnCardPerformedHaste" | "TTriggerOnCardPerformedHeal" | "TTriggerOnHourStarted" | "TTriggerOnCardPerformedRegen" | "TTriggerOnCardTransformed" | "TTriggerOnBeforeCardDestroyed" | "TTriggerOnCardPerformedReload" | "TTriggerOnCardPerformedDamage" | "TTriggerOnCardReloaded" | "TTriggerOnBeforeCardTransformed" | "TTriggerOnCardQuestCompleted";
 
-export type ChangeType = "Gain" | "Loss";
+export type TriggerAttributeType = "Custom_1" | "HealthMax" | "Health" | "Custom_0" | "Poison" | "Burn" | "DamageAmount" | "ShieldApplyAmount" | "HealAmount" | "SellPrice" | "Income" | "Custom_2" | "Custom_3" | "Custom_4" | "RegenApplyAmount" | "CritChance" | "HealthRegen" | "Shield" | "Ammo" | "BurnApplyAmount" | "Level" | "Gold" | "AmmoMax" | "PoisonApplyAmount";
+
+export type ChangeType = "Loss" | "Gain";
 
 export type CombatOutcome = "Win" | "Lose";
 
@@ -548,92 +736,67 @@ export interface FluffySubject {
     $type:          SourceType;
     TargetSection?: TargetSection;
     ExcludeSelf?:   boolean;
-    Conditions:     AmbitiousConditions | null;
-    TargetMode?:    TargetMode;
-    Origin?:        Origin;
+    Conditions:     FriskyConditions | null;
+    TargetMode?:    Origin;
+    Origin?:        PurpleOrigin;
     IncludeOrigin?: boolean;
 }
 
-export interface AmbitiousConditions {
+export interface FriskyConditions {
     $type:               ConditionType;
     Tags?:               Tag[];
     Operator?:           Operator;
-    Sizes?:              Size[];
-    IsNot?:              boolean;
-    Conditions?:         FriskyCondition[];
-    Attribute?:          AttributeType;
+    Attribute?:          Attribute;
     ComparisonOperator?: Comparison;
     ComparisonValue?:    PurpleComparisonValue;
+    Conditions?:         Condition2[];
+    Sizes?:              Size[];
+    IsNot?:              boolean;
     CardType?:           Type;
-    Enchantment?:        PurpleEnchantment | null;
-    Id?:                 string;
+    Heroes?:             Hero[];
+    Enchantment?:        EnchantmentEnum | null;
     Tiers?:              Tier[];
+    Id?:                 string;
+    AttributeType?:      Attribute;
     IsSameAsPlayerHero?: boolean;
-    AttributeType?:      AttributeType;
 }
 
-export interface FriskyCondition {
+export interface Condition2 {
     $type:               ConditionType;
     CardType?:           Type;
     IsNot?:              boolean;
     Tags?:               Tag[];
     Operator?:           Operator;
     Sizes?:              Size[];
-    Attribute?:          AttributeType;
+    Attribute?:          Attribute;
     ComparisonOperator?: Comparison;
     ComparisonValue?:    ComparisonValue;
+    Conditions?:         Condition3[];
+    Enchantment?:        EnchantmentEnum | null;
     Tiers?:              Tier[];
-    Enchantment?:        null | string;
+    Heroes?:             Hero[];
     Id?:                 string;
-    Conditions?:         MischievousCondition[];
-    AttributeType?:      AttributeType;
+    AttributeType?:      Attribute;
     IsSameAsPlayerHero?: boolean;
 }
 
-export interface MischievousCondition {
+export interface Condition3 {
     $type:               ConditionType;
     Tags?:               Tag[];
     Operator?:           Operator;
-    Attribute?:          AttributeType;
+    Attribute?:          Attribute;
     ComparisonOperator?: Comparison;
     ComparisonValue?:    ComparisonValue;
-    Conditions?:         FluffyCondition[];
-    Enchantment?:        string;
-}
-
-export type PurpleEnchantment = "Radiant" | "Shiny" | "Toxic";
-
-export interface TentacledTarget {
-    $type:          SourceType;
-    TargetMode?:    TargetMode;
-    Conditions:     CunningConditions | null;
-    ExcludeSelf?:   boolean;
-    TargetSection?: TargetSection;
-}
-
-export interface CunningConditions {
-    $type:               ConditionType;
-    Attribute?:          AttributeType;
-    ComparisonOperator?: Comparison;
-    ComparisonValue?:    FluffyValue;
-    Tags?:               Tag[];
-    Operator?:           Operator;
-    Conditions?:         BraggadociousCondition[];
-    CardType?:           Type;
     IsNot?:              boolean;
+    AttributeType?:      Attribute;
+    Conditions?:         Condition1[];
+    Heroes?:             Hero[];
+    Id?:                 string;
     Sizes?:              Size[];
+    Enchantment?:        EnchantmentEnum | null;
+    IsSameAsPlayerHero?: boolean;
+    CardType?:           Type;
     Tiers?:              Tier[];
-    AttributeType?:      AttributeType;
-}
-
-export interface BraggadociousCondition {
-    $type:               ConditionType;
-    Tags?:               Tag[];
-    Operator?:           Operator;
-    Attribute?:          AttributeType;
-    ComparisonOperator?: Comparison;
-    ComparisonValue?:    ComparisonValue;
-    Conditions?:         TriggerConditions[];
 }
 
 export interface VFXConfig {
@@ -642,7 +805,9 @@ export interface VFXConfig {
     VFXIsTakeover:  boolean;
 }
 
-export interface The200_Attributes {
+export type WorksIn = "Anywhere" | "CombatOnly" | "OutOfCombatOnly";
+
+export interface The300_Attributes {
     BuyPrice?:         number;
     SellPrice?:        number;
     RegenApplyAmount?: number;
@@ -656,111 +821,181 @@ export interface Aura {
     InternalName:        string;
     InternalDescription: string;
     MigrationData:       string;
-    VFXConfig:           VFXConfig;
+    VFXConfig:           VFXConfig | null;
     TranslationKey:      string;
+    WorksIn:             WorksIn;
 }
 
 export interface AuraAction {
-    $type:          TentacledType;
-    AttributeType?: AttributeType;
+    $type:          FluffyType;
+    AttributeType?: string;
     Operation?:     Operation;
-    Value?:         StickyValue;
-    Target:         StickyTarget;
-    Source?:        TargetPlayer;
+    Value?:         IndigoValue;
+    Target:         IndecentTarget;
     Tags?:          Tag[];
+    Source?:        TargetPlayerClass;
 }
 
-export type TentacledType = "TAuraActionCardModifyAttribute" | "TAuraActionPlayerModifyAttribute" | "TAuraActionCardAddTagsBySource" | "TAuraActionCardAddTagsList";
+export type FluffyType = "TAuraActionCardModifyAttribute" | "TAuraActionPlayerModifyAttribute" | "TAuraActionCardAddTagsList" | "TAuraActionCardAddTagsBySource";
 
-export interface StickyTarget {
+export interface TargetPlayerClass {
     $type:          SourceType;
-    Conditions:     TentacledCondition[] | MagentaConditions | null;
-    TargetMode?:    TargetMode;
     ExcludeSelf?:   boolean;
+    Conditions:     MischievousConditions | null;
+    TargetMode?:    Origin;
     TargetSection?: TargetSection;
-    Origin?:        Origin;
+}
+
+export interface MischievousConditions {
+    $type:               ConditionType;
+    Conditions?:         CunningCondition[];
+    Attribute?:          Attribute;
+    ComparisonOperator?: Comparison;
+    ComparisonValue?:    PurpleValue;
+    Heroes?:             Hero[];
+    Operator?:           Operator;
+    Tags?:               Tag[];
+    CardType?:           Type;
+    IsNot?:              boolean;
+    Sizes?:              Size[];
+    AttributeType?:      Attribute;
+    Tiers?:              Tier[];
+    Id?:                 string;
+}
+
+export interface IndecentTarget {
+    $type:          SourceType;
+    TargetSection?: TargetSection;
+    ExcludeSelf?:   boolean;
+    Conditions:     FluffyCondition[] | BraggadociousConditions | null;
+    TargetMode?:    Origin;
+    Origin?:        PurpleOrigin;
     IncludeOrigin?: boolean;
 }
 
-export interface MagentaConditions {
+export interface BraggadociousConditions {
     $type:               ConditionType;
     Tags?:               Tag[];
     Operator?:           Operator;
-    Attribute?:          AttributeType;
+    Attribute?:          Attribute;
     ComparisonOperator?: Comparison;
-    ComparisonValue?:    ComparisonValue;
-    AttributeType?:      AttributeType;
-    Conditions?:         FriskyCondition[];
-    Enchantment?:        null | string;
+    ComparisonValue?:    Limit;
+    Conditions?:         Condition4[];
     Sizes?:              Size[];
     IsNot?:              boolean;
     CardType?:           Type;
-    Id?:                 string;
+    Heroes?:             Hero[];
+    Enchantment?:        EnchantmentEnum | null;
     Tiers?:              Tier[];
+    Id?:                 string;
+    AttributeType?:      Attribute;
+    IsSameAsPlayerHero?: boolean;
 }
 
-export interface StickyValue {
+export interface Condition4 {
+    $type:               ConditionType;
+    CardType?:           Type;
+    IsNot?:              boolean;
+    Tags?:               Tag[];
+    Operator?:           Operator;
+    Sizes?:              Size[];
+    Attribute?:          Attribute;
+    ComparisonOperator?: Comparison;
+    ComparisonValue?:    ComparisonValue;
+    Conditions?:         Condition5[];
+    Enchantment?:        EnchantmentEnum | null;
+    AttributeType?:      Attribute;
+    Tiers?:              Tier[];
+    Id?:                 string;
+    Heroes?:             Hero[];
+    IsSameAsPlayerHero?: boolean;
+}
+
+export interface Condition5 {
+    $type:               ConditionType;
+    Tags?:               Tag[];
+    Operator?:           Operator;
+    Attribute?:          Attribute;
+    ComparisonOperator?: Comparison;
+    ComparisonValue?:    ComparisonValue;
+    IsNot?:              boolean;
+    Conditions?:         AmbitiousCondition[];
+    Heroes?:             Hero[];
+}
+
+export interface IndigoValue {
     $type:          ComparisonValueType;
-    Target?:        IndigoTarget;
-    AttributeType?: AttributeType;
+    Target?:        HilariousTarget;
+    AttributeType?: TriggerAttributeType;
     DefaultValue?:  number;
     Modifier?:      PurpleModifier | null;
-    Distinct?:      boolean;
     Value?:         number;
+    Distinct?:      boolean;
 }
 
-export interface IndigoTarget {
+export interface HilariousTarget {
     $type:          SourceType;
     TargetSection?: TargetSection;
     ExcludeSelf?:   boolean;
-    Conditions:     TentacledCondition[] | FriskyConditions | null;
-    TargetMode?:    TargetMode;
-    Origin?:        TargetMode;
+    Conditions:     FluffyCondition[] | Conditions1 | null;
+    TargetMode?:    Origin;
+    Origin?:        PurpleOrigin;
     IncludeOrigin?: boolean;
 }
 
-export interface FriskyConditions {
+export interface Conditions1 {
     $type:               ConditionType;
-    Enchantment?:        null | string;
-    IsNot?:              boolean;
-    Sizes?:              Size[];
-    Tiers?:              Tier[];
     Tags?:               Tag[];
     Operator?:           Operator;
-    AttributeType?:      AttributeType;
-    Conditions?:         Condition1[];
-    Id?:                 string;
-    Attribute?:          AttributeType;
+    Attribute?:          Attribute;
     ComparisonOperator?: Comparison;
-    ComparisonValue?:    PurpleComparisonValue;
+    ComparisonValue?:    StickyComparisonValue;
+    Conditions?:         Condition6[];
+    IsNot?:              boolean;
+    Enchantment?:        EnchantmentEnum | null;
+    Tiers?:              Tier[];
+    AttributeType?:      Attribute;
+    Id?:                 string;
+    Sizes?:              Size[];
+    Heroes?:             Hero[];
     CardType?:           Type;
+    IsSameAsPlayerHero?: boolean;
 }
 
-export interface Condition1 {
+export interface Condition6 {
     $type:               ConditionType;
     Tags?:               Tag[];
     Operator?:           Operator;
-    Sizes?:              Size[];
-    IsNot?:              boolean;
-    Enchantment?:        null | string;
-    Attribute?:          AttributeType;
+    Attribute?:          Attribute;
     ComparisonOperator?: Comparison;
     ComparisonValue?:    ComparisonValue;
+    Tiers?:              Tier[];
+    IsNot?:              boolean;
+    Sizes?:              Size[];
+    Enchantment?:        EnchantmentEnum | null;
+    Conditions?:         Condition7[];
     CardType?:           Type;
-    Conditions?:         Condition2[];
+    Heroes?:             Hero[];
     Id?:                 string;
 }
 
-export interface Condition2 {
-    $type:        ConditionType;
-    Id?:          string;
-    IsNot?:       boolean;
-    Tags?:        Tag[];
-    Operator?:    Operator;
-    Enchantment?: InternalDescription;
+export interface Condition7 {
+    $type:               ConditionType;
+    Tags?:               Tag[];
+    Operator?:           Operator;
+    Attribute?:          Attribute;
+    ComparisonOperator?: Comparison;
+    ComparisonValue?:    ComparisonValue;
+    AttributeType?:      Attribute;
+    Conditions?:         Condition1[];
+    Heroes?:             Hero[];
+    IsNot?:              boolean;
+    Id?:                 string;
+    Sizes?:              Size[];
+    Enchantment?:        EnchantmentEnum | null;
+    IsSameAsPlayerHero?: boolean;
+    CardType?:           Type;
 }
-
-export type InternalDescription = "Sets the value of heal" | "" | "Sets the value of Heal" | "Sets the value of shield" | "Sets shield" | "Sets the value of ShieldApplyAmount" | "Heal 12 for each non-Weapon item you have." | "Sets the value of Restorative Submersible" | "Heal 15 for each Aquatic or Toy item you have." | "Sets the value of Restorative Submarine Ability" | "Sets the value of Restorative Test Subject Alpha" | "Restorative" | "Sets the value of Restorative The Boulder" | "Sets the value of Restorative Dragon Whelp";
 
 export interface AuraPrerequisite {
     $type:       PrerequisiteType;
@@ -771,56 +1006,48 @@ export interface AuraPrerequisite {
 
 export interface TentacledSubject {
     $type:          SourceType;
-    Conditions:     TentacledCondition[] | MischievousConditions | null;
-    TargetMode?:    TargetMode;
-    Origin?:        TargetMode;
+    Origin?:        Origin;
+    TargetMode?:    Origin;
     IncludeOrigin?: boolean;
+    Conditions:     FluffyCondition[] | Conditions2 | null;
     TargetSection?: TargetSection;
     ExcludeSelf?:   boolean;
 }
 
-export interface MischievousConditions {
+export interface Conditions2 {
     $type:               ConditionType;
-    Sizes?:              Size[];
-    IsNot?:              boolean;
-    Attribute?:          AttributeType;
-    ComparisonOperator?: Comparison;
-    ComparisonValue?:    PurpleComparisonValue;
     Tags?:               Tag[];
     Operator?:           Operator;
-    Conditions?:         Condition3[];
+    Sizes?:              Size[];
+    IsNot?:              boolean;
+    Attribute?:          Attribute;
+    ComparisonOperator?: Comparison;
+    ComparisonValue?:    StickyComparisonValue;
+    Conditions?:         Condition8[];
+    Heroes?:             Hero[];
     CardType?:           Type;
+    AttributeType?:      Attribute;
     Tiers?:              Tier[];
-    AttributeType?:      AttributeType;
     Id?:                 string;
-    Enchantment?:        string;
+    Enchantment?:        EnchantmentEnum | null;
 }
 
-export interface Condition3 {
+export interface Condition8 {
     $type:               ConditionType;
     CardType?:           Type;
     IsNot?:              boolean;
     Tags?:               Tag[];
     Operator?:           Operator;
     Sizes?:              Size[];
-    Enchantment?:        InternalDescription | null;
-    Conditions?:         Condition4[];
-    Attribute?:          AttributeType;
+    Enchantment?:        EnchantmentEnum | null;
+    Conditions?:         MischievousCondition[];
+    Heroes?:             Hero[];
+    Attribute?:          Attribute;
     ComparisonOperator?: Comparison;
     ComparisonValue?:    ComparisonValue;
 }
 
-export interface Condition4 {
-    $type:        ConditionType;
-    Id?:          string;
-    IsNot?:       boolean;
-    Tags?:        Tag[];
-    Operator?:    Operator;
-    Enchantment?: string;
-    Conditions?:  FluffyCondition[];
-}
-
-export type CardPackID = "Pygmalien_Core" | "Core" | "Vanessa_Core" | "Stelle_Core" | "Dooley_Core" | "Mak_Dangerous_Experiments" | "Pyg_Frozen_Assets" | "Mak_Core" | "Jules_Core" | "Pyg_Investment_Opportunities" | "Vanessa_The_Gang" | "Vanessa_Mysteries_of_the_Deep" | "Dooley_Dooltron" | "Pygmalien";
+export type CardPackID = "Mak_Core" | "Core" | "Vanessa_From_the_Shadows" | "Vanessa_Core" | "Jules_Core" | "Pygmalien_Core" | "Stelle_Core" | "Dooley_Core" | "Dooley_Primal_Dooley" | "Mak_Dangerous_Experiments" | "Pyg_Frozen_Assets" | "Vanessa_Mysteries_of_the_Deep" | "Vanessa_The_Gang" | "Pyg_Pigglestorm" | "Pyg_Investment_Opportunities" | "Mak_Lost_Treasures" | "Dooley_Dooltron";
 
 export interface CombatantType {
     $type: CombatantTypeType;
@@ -830,7 +1057,6 @@ export interface CombatantType {
 export type CombatantTypeType = "TCombatantMonster";
 
 export interface Enchantments {
-    Golden?:      Golden;
     Heavy?:       Heavy;
     Icy?:         Icy;
     Turbo?:       Turbo;
@@ -842,6 +1068,7 @@ export interface Enchantments {
     Deadly?:      Deadly;
     Radiant?:     Radiant;
     Obsidian?:    Obsidian;
+    Golden?:      Golden;
 }
 
 export interface Deadly {
@@ -872,17 +1099,18 @@ export interface PurpleE1 {
     MigrationData:       string;
     VFXConfig:           VFXConfig;
     TranslationKey:      string;
+    WorksIn:             WorksIn;
 }
 
 export interface PurpleAction {
-    $type:            PurpleType;
-    Value?:           Limit;
-    AttributeType?:   AttributeType;
+    $type:            CompletionEffectType;
+    Value?:           TentacledValue;
+    AttributeType?:   Attribute;
     Operation?:       Operation;
     Duration:         FluffyDuration | null;
     TargetCount:      ComparisonValue | null;
-    Target:           IndecentTarget;
-    Enchantment?:     ConditionEnchantment;
+    Target:           AmbitiousTarget;
+    Enchantment?:     EnchantmentEnum;
     PreventOverride?: boolean;
 }
 
@@ -891,53 +1119,62 @@ export interface FluffyDuration {
     DurationType: DurationTypeEnum;
 }
 
-export interface IndecentTarget {
+export interface AmbitiousTarget {
     $type:          SourceType;
     TargetSection?: TargetSection;
     ExcludeSelf?:   boolean;
-    Conditions:     BraggadociousConditions | null;
-    TargetMode?:    TargetMode;
-    Origin?:        Origin;
+    Conditions:     Conditions3 | null;
+    TargetMode?:    Origin;
+    Origin?:        PurpleOrigin;
     IncludeOrigin?: boolean;
 }
 
-export interface BraggadociousConditions {
+export interface Conditions3 {
     $type:               ConditionType;
     Tags?:               Tag[];
     Operator?:           Operator;
-    Sizes?:              Size[];
-    IsNot?:              boolean;
-    Conditions?:         Condition5[];
-    Attribute?:          AttributeType;
+    Attribute?:          Attribute;
     ComparisonOperator?: Comparison;
     ComparisonValue?:    ComparisonValue;
+    Conditions?:         Condition9[];
+    Sizes?:              Size[];
+    IsNot?:              boolean;
     CardType?:           Type;
-    Enchantment?:        ConditionEnchantment | null;
-    Id?:                 string;
+    Heroes?:             Hero[];
+    Enchantment?:        EnchantmentEnum | null;
     Tiers?:              Tier[];
+    Id?:                 string;
+    AttributeType?:      Attribute;
+    IsSameAsPlayerHero?: boolean;
 }
 
-export interface Condition5 {
+export interface Condition9 {
     $type:               ConditionType;
     CardType?:           Type;
     IsNot?:              boolean;
     Tags?:               Tag[];
     Operator?:           Operator;
     Sizes?:              Size[];
-    Attribute?:          AttributeType;
+    Attribute?:          Attribute;
     ComparisonOperator?: Comparison;
     ComparisonValue?:    ComparisonValue;
-    Tiers?:              Tier[];
-    Enchantment?:        string;
-    Id?:                 string;
-    Conditions?:         HilariousCondition[];
-    AttributeType?:      AttributeType;
-    IsSameAsPlayerHero?: boolean;
+    Conditions?:         Condition10[];
+    Enchantment?:        EnchantmentEnum | null;
+}
+
+export interface Condition10 {
+    $type:               ConditionType;
+    Tags?:               Tag[];
+    Operator?:           Operator;
+    Attribute?:          Attribute;
+    ComparisonOperator?: Comparison;
+    ComparisonValue?:    ComparisonValue;
+    IsNot?:              boolean;
 }
 
 export interface PurplePrerequisite {
     $type:       PrerequisiteType;
-    Subject:     ComparisonValueSubject;
+    Subject:     PrerequisiteTarget;
     Comparison?: Comparison;
     Amount?:     number;
 }
@@ -945,50 +1182,40 @@ export interface PurplePrerequisite {
 export interface PurpleTrigger {
     $type:             TriggerType;
     Subject?:          StickySubject;
-    AttributeType?:    AttributeType;
+    AttributeChanged?: Attribute;
     ChangeType?:       ChangeType;
-    Source?:           null;
-    Target?:           null;
-    AttributeChanged?: AttributeType;
     PreviousValue?:    null;
     CurrentValue?:     null;
+    Source?:           null;
+    AttributeType?:    Attribute;
+    Target?:           null;
 }
 
 export interface StickySubject {
     $type:          SourceType;
-    Conditions:     Conditions1 | null;
-    TargetMode?:    TargetMode;
-    ExcludeSelf?:   boolean;
+    Conditions:     Conditions4 | null;
+    TargetMode?:    Origin;
     TargetSection?: TargetSection;
-    Origin?:        TargetMode;
+    ExcludeSelf?:   boolean;
+    Origin?:        Origin;
     IncludeOrigin?: boolean;
 }
 
-export interface Conditions1 {
+export interface Conditions4 {
     $type:               ConditionType;
     Tags?:               Tag[];
     Operator?:           Operator;
-    Attribute?:          AttributeType;
+    Attribute?:          Attribute;
     ComparisonOperator?: Comparison;
     ComparisonValue?:    ComparisonValue;
-    AttributeType?:      AttributeType;
-    Conditions?:         Condition6[];
-    Enchantment?:        ConditionEnchantment;
-}
-
-export interface Condition6 {
-    $type:               ConditionType;
-    Enchantment?:        ConditionEnchantment | null;
+    AttributeType?:      Attribute;
+    Conditions?:         Condition1[];
+    Heroes?:             Hero[];
     IsNot?:              boolean;
-    Sizes?:              Size[];
-    Tiers?:              Tier[];
-    Tags?:               Tag[];
-    Operator?:           Operator;
-    Conditions?:         HilariousCondition[];
-    Attribute?:          AttributeType;
-    ComparisonOperator?: Comparison;
-    ComparisonValue?:    ComparisonValue;
     Id?:                 string;
+    Sizes?:              Size[];
+    Enchantment?:        EnchantmentEnum | null;
+    IsSameAsPlayerHero?: boolean;
 }
 
 export interface PurpleE2 {
@@ -999,118 +1226,89 @@ export interface PurpleE2 {
     Prerequisites:       null;
     Priority:            Priority;
     InternalName:        string;
-    InternalDescription: PurpleInternalDescription;
+    InternalDescription: string;
     MigrationData:       string;
     VFXConfig:           VFXConfig;
     TranslationKey:      string;
+    WorksIn:             WorksIn;
 }
 
 export interface FluffyAction {
-    $type:         PurpleType;
+    $type:         CompletionEffectType;
     Value:         ComparisonValue;
-    AttributeType: AttributeType;
+    AttributeType: Attribute;
     Operation:     Operation;
     Duration:      FluffyDuration;
     TargetCount:   null;
-    Target:        HilariousTarget;
+    Target:        CunningTarget;
 }
 
-export interface HilariousTarget {
+export interface CunningTarget {
     $type:          SourceType;
-    Conditions:     ConditionsClass | null;
-    Origin?:        TargetMode;
-    TargetMode?:    TargetMode;
-    IncludeOrigin?: boolean;
-    TargetSection?: TargetSection;
+    Conditions:     Conditions5 | null;
+    TargetMode?:    Origin;
     ExcludeSelf?:   boolean;
+    Origin?:        Origin;
+    IncludeOrigin?: boolean;
 }
 
-export type E2ID = "e2" | "e3" | "e4" | "e5" | "e6";
+export interface Conditions5 {
+    $type:       ConditionType;
+    Conditions?: Condition11[];
+    Tags?:       Tag[];
+    Operator?:   Operator;
+}
 
-export type PurpleInternalDescription = "Deadly 50" | "Deadly 2" | "" | "Deadly" | "Deadly 1" | "Deadly 20" | "Deadly 30" | "Deadly 25" | "Deadly 2x" | "Shiny 1" | "Deadly 10" | "Crit Chance 25%";
+export interface Condition11 {
+    $type:               ConditionType;
+    Sizes?:              Size[];
+    IsNot?:              boolean;
+    Attribute?:          Attribute;
+    ComparisonOperator?: Comparison;
+    ComparisonValue?:    ComparisonValue;
+    Tags?:               Tag[];
+    Operator?:           Operator;
+    Conditions?:         FriskyCondition[];
+}
+
+export type E2ID = "e2";
 
 export interface FluffyTrigger {
     $type:             TriggerType;
-    Subject:           ActionSubject;
-    AttributeChanged?: AttributeType;
+    Subject:           IndigoSubject;
+    AttributeChanged?: Attribute;
     ChangeType?:       ChangeType;
     PreviousValue?:    null;
     CurrentValue?:     null;
     Source?:           null;
-    Target?:           null;
 }
 
-export interface ActionSubject {
+export interface IndigoSubject {
     $type:          SourceType;
-    Conditions:     Conditions2 | null;
-    TargetMode?:    TargetMode;
-    TargetSection?: TargetSection;
-    ExcludeSelf?:   boolean;
-    Origin?:        TargetMode;
+    Origin?:        Origin;
+    TargetMode?:    Origin;
     IncludeOrigin?: boolean;
+    Conditions:     Conditions6 | null;
 }
 
-export interface Conditions2 {
-    $type:               ConditionType;
-    Attribute?:          AttributeType;
-    ComparisonOperator?: Comparison;
-    ComparisonValue?:    IndigoValue;
-    Tags?:               Tag[];
-    Operator?:           Operator;
-    Sizes?:              Size[];
-    IsNot?:              boolean;
-    Tiers?:              Tier[];
-    Conditions?:         Condition7[];
-    Enchantment?:        null;
-    IsSameAsPlayerHero?: boolean;
-}
-
-export interface IndigoValue {
-    $type:          ComparisonValueType;
-    Value?:         number;
-    Target?:        TargetPlayer;
-    AttributeType?: AttributeType;
-    DefaultValue?:  number;
-    Modifier?:      ComparisonValueModifier | null;
-}
-
-export interface Condition7 {
-    $type:               ConditionType;
-    Attribute?:          AttributeType;
-    ComparisonOperator?: Comparison;
-    ComparisonValue?:    ComparisonValue;
-    Conditions?:         Condition8[];
-    Tags?:               Tag[];
-    Operator?:           Operator;
-    Sizes?:              Size[];
-    IsNot?:              boolean;
-    Enchantment?:        null | string;
-    Id?:                 string;
-}
-
-export interface Condition8 {
-    $type:               ConditionType;
-    Tags?:               Tag[];
-    Operator?:           Operator;
-    Attribute?:          AttributeType;
-    ComparisonOperator?: Comparison;
-    ComparisonValue?:    ComparisonValue;
-    Conditions?:         Condition9[];
-    Enchantment?:        ConditionEnchantment | null;
-    IsNot?:              boolean;
-    Sizes?:              Size[];
-    Tiers?:              Tier[];
-    Id?:                 string;
-    AttributeType?:      AttributeType;
-    IsSameAsPlayerHero?: boolean;
-}
-
-export interface Condition9 {
-    $type:        ConditionType;
-    Tags?:        Tag[];
-    Operator?:    Operator;
-    Enchantment?: null;
+export interface Conditions6 {
+    $type:        SourceType;
+    Enchantment?: EnchantmentEnum;
     IsNot?:       boolean;
+    Conditions?:  Condition12[] | TentacledConditions | null;
+}
+
+export interface Condition12 {
+    $type:               ConditionType;
+    Conditions?:         FluffyCondition[] | TentacledConditions | null;
+    Sizes?:              Size[];
+    IsNot?:              boolean;
+    Attribute?:          Attribute;
+    ComparisonOperator?: Comparison;
+    ComparisonValue?:    ComparisonValue;
+    Heroes?:             Hero[];
+    Operator?:           Operator;
+    Tags?:               Tag[];
 }
 
 export interface DeadlyAttributes {
@@ -1132,38 +1330,72 @@ export interface FluffyE1 {
     MigrationData:       string;
     VFXConfig:           VFXConfig;
     TranslationKey:      string;
+    WorksIn:             WorksIn;
 }
 
 export interface TentacledAction {
-    $type:         PurpleType;
-    AttributeType: AttributeType;
+    $type:         CompletionEffectType;
+    AttributeType: Attribute;
     Operation:     Operation;
-    Value:         IndigoValue;
-    Target:        ActionSubject;
+    Value:         IndecentValue;
+    Target:        MagentaTarget;
 }
 
-export type E1ID = "e1" | "e9";
+export interface MagentaTarget {
+    $type:          SourceType;
+    Conditions:     Conditions7 | null;
+    Origin?:        Origin;
+    TargetMode?:    Origin;
+    IncludeOrigin?: boolean;
+    TargetSection?: TargetSection;
+    ExcludeSelf?:   boolean;
+}
+
+export interface Conditions7 {
+    $type:       ConditionType;
+    Conditions?: Condition13[];
+    Tags?:       Tag[];
+    Operator?:   Operator;
+    Id?:         string;
+    IsNot?:      boolean;
+    CardType?:   Type;
+}
+
+export interface Condition13 {
+    $type:               ConditionType;
+    Conditions?:         MagentaCondition[];
+    Tags?:               Tag[];
+    Operator?:           Operator;
+    Attribute?:          Attribute;
+    ComparisonOperator?: Comparison;
+    ComparisonValue?:    ComparisonValue;
+    IsNot?:              boolean;
+    Enchantment?:        EnchantmentEnum | null;
+    Id?:                 string;
+    Sizes?:              Size[];
+    Tiers?:              Tier[];
+    Heroes?:             Hero[];
+    CardType?:           Type;
+}
+
+export interface IndecentValue {
+    $type:          ComparisonValueType;
+    Value?:         number;
+    Target?:        TargetPlayerClass;
+    DefaultValue?:  number;
+    Modifier?:      ComparisonValueModifier | null;
+    AttributeType?: Attribute;
+}
+
+export type E1ID = "e1" | "q2";
+
+export type PurpleInternalDescription = "Deadly 50" | "Deadly" | "Crit Chance 25%" | "" | "Deadly 2x" | "Deadly 25" | "Deadly 20" | "Deadly 2" | "Deadly 30" | "Shiny 1" | "Deadly 1" | "Deadly 10";
 
 export interface FluffyPrerequisite {
     $type:      PrerequisiteType;
-    Subject:    AmbitiousTarget;
+    Subject:    CunningTarget;
     Comparison: Comparison;
     Amount:     number;
-}
-
-export interface AmbitiousTarget {
-    $type:          SourceType;
-    Conditions:     Conditions3 | null;
-    TargetMode?:    TargetMode;
-    Origin?:        TargetMode;
-    IncludeOrigin?: boolean;
-}
-
-export interface Conditions3 {
-    $type:       ConditionType;
-    Tags?:       Tag[];
-    Operator?:   Operator;
-    Conditions?: TentacledCondition[];
 }
 
 export interface FluffyE2 {
@@ -1176,17 +1408,18 @@ export interface FluffyE2 {
     MigrationData:       string;
     VFXConfig:           VFXConfig;
     TranslationKey:      string;
+    WorksIn:             WorksIn;
 }
 
 export interface StickyAction {
-    $type:         PurpleType;
-    AttributeType: AttributeType;
+    $type:         CompletionEffectType;
+    AttributeType: Attribute;
     Operation:     Operation;
     Value:         ComparisonValue;
-    Target:        AmbitiousTarget;
+    Target:        CunningTarget;
 }
 
-export type HiddenTag = "HealthMax" | "Health" | "Poison" | "Burn" | "Income" | "Cooldown" | "Heal" | "Value" | "EconomyReference" | "Damage" | "BurnReference" | "Slow" | "Active" | "Shield" | "DamageReference" | "CritReference" | "Gold" | "Passive" | "NonWeapon" | "Multicast" | "HealReference" | "ShieldReference" | "HasteReference" | "Freeze" | "Haste" | "Crit" | "Regen" | "AmmoReference" | "Charge" | "JoyReference" | "PoisonReference" | "Ammo" | "SlowReference" | "Joy" | "HealthReference" | "FreezeReference" | "RegenReference" | "Toughness" | "Lifesteal" | "Unsellable" | "Experience";
+export type HiddenTag = "Health" | "Level" | "Gold" | "Burn" | "Shield" | "DamageReference" | "Regen" | "Damage" | "Active" | "Haste" | "Cooldown" | "Crit" | "Ammo" | "EconomyReference" | "PotionReference" | "Value" | "Charge" | "Multicast" | "RegenReference" | "JoyReference" | "Heal" | "BurnReference" | "NonWeapon" | "Slow" | "ShieldReference" | "CritReference" | "Poison" | "SlowReference" | "TechReference" | "Freeze" | "HealReference" | "PoisonReference" | "Joy" | "Toughness" | "HasteReference" | "Lifesteal" | "Income" | "FreezeReference" | "Quest" | "AmmoReference" | "Passive" | "HealthReference" | "Experience" | "Unsellable" | "Regeneration";
 
 export interface DeadlyLocalization {
     Tooltips: Tooltip[];
@@ -1224,60 +1457,112 @@ export interface TentacledE1 {
     Trigger:             TentacledTrigger;
     ActiveIn:            ActiveIn;
     Action:              IndigoAction;
-    Prerequisites:       PurplePrerequisite[] | null;
+    Prerequisites:       TentacledPrerequisite[] | null;
     Priority:            Priority;
     InternalName:        string;
     InternalDescription: string;
     MigrationData:       string;
     VFXConfig:           VFXConfig;
     TranslationKey:      string;
+    WorksIn:             WorksIn;
 }
 
 export interface IndigoAction {
-    $type:            PurpleType;
+    $type:            CompletionEffectType;
     ReferenceValue?:  null;
-    Target:           ActionSubject;
+    Target:           FriskyTarget;
     Value?:           IndecentValue;
-    AttributeType?:   AttributeType;
+    AttributeType?:   Attribute;
     Operation?:       Operation;
-    Duration?:        FluffyDuration | null;
+    Duration?:        PurpleDuration | null;
     TargetCount?:     null;
-    Enchantment?:     string;
+    Enchantment?:     EnchantmentEnum;
     PreventOverride?: boolean;
 }
 
-export interface IndecentValue {
-    $type:          ComparisonValueType;
-    Value?:         number;
-    Target?:        CunningTarget;
-    AttributeType?: AttributeType;
-    DefaultValue?:  number;
-    Modifier?:      ComparisonValueModifier | null;
-}
-
-export interface CunningTarget {
+export interface FriskyTarget {
     $type:          SourceType;
-    Conditions:     Conditions4 | null;
+    TargetMode?:    Origin;
+    Conditions:     Conditions8 | null;
     TargetSection?: TargetSection;
     ExcludeSelf?:   boolean;
+    Origin?:        Origin;
+    IncludeOrigin?: boolean;
 }
 
-export interface Conditions4 {
-    $type:         ConditionType;
-    AttributeType: AttributeType;
+export interface Conditions8 {
+    $type:        ConditionType;
+    Tags?:        Tag[];
+    Operator?:    Operator;
+    Conditions?:  Condition14[];
+    Enchantment?: null;
+    IsNot?:       boolean;
+}
+
+export interface Condition14 {
+    $type:        ConditionType;
+    Tags?:        Tag[];
+    Operator?:    Operator;
+    Enchantment?: EnchantmentEnum;
+}
+
+export interface TentacledPrerequisite {
+    $type:       PrerequisiteType;
+    Subject:     IndecentSubject;
+    Comparison?: Comparison;
+    Amount?:     number;
+}
+
+export interface IndecentSubject {
+    $type:        SourceType;
+    Conditions:   FluffyConditions;
+    TargetMode?:  Origin;
+    ExcludeSelf?: boolean;
 }
 
 export interface TentacledTrigger {
     $type:             TriggerType;
-    Subject?:          ActionSubject;
-    AttributeType?:    AttributeType;
+    Subject?:          HilariousSubject;
+    AttributeType?:    Attribute;
     ChangeType?:       ChangeType;
     Source?:           null;
-    Target?:           ComparisonValueSubject | null;
-    AttributeChanged?: AttributeType;
+    AttributeChanged?: Attribute;
     PreviousValue?:    null;
     CurrentValue?:     null;
     CombatType?:       null;
+    Target?:           PrerequisiteTarget | null;
+}
+
+export interface HilariousSubject {
+    $type:          SourceType;
+    TargetMode?:    Origin;
+    Conditions:     Conditions9 | null;
+    Origin?:        Origin;
+    IncludeOrigin?: boolean;
+    TargetSection?: TargetSection;
+    ExcludeSelf?:   boolean;
+}
+
+export interface Conditions9 {
+    $type:               ConditionType;
+    Tags?:               Tag[];
+    Operator?:           Operator;
+    Conditions?:         Condition15[];
+    Attribute?:          Attribute;
+    ComparisonOperator?: Comparison;
+    ComparisonValue?:    ComparisonValue;
+    Enchantment?:        null;
+    IsNot?:              boolean;
+    IsSameAsPlayerHero?: boolean;
+    Id?:                 string;
+}
+
+export interface Condition15 {
+    $type:        ConditionType;
+    Tags?:        Tag[];
+    Operator?:    Operator;
+    Enchantment?: null;
+    IsNot?:       boolean;
 }
 
 export interface TentacledE2 {
@@ -1285,38 +1570,39 @@ export interface TentacledE2 {
     Trigger:             StickyTrigger;
     ActiveIn:            ActiveIn;
     Action:              IndecentAction;
-    Prerequisites:       The3_Prerequisite[] | null;
+    Prerequisites:       E2Prerequisite[] | null;
     Priority:            Priority;
     InternalName:        string;
     InternalDescription: string;
     MigrationData:       string;
     VFXConfig:           VFXConfig;
     TranslationKey:      string;
+    WorksIn:             WorksIn;
 }
 
 export interface IndecentAction {
-    $type:           PurpleType;
-    Value?:          ComparisonValue;
-    AttributeType?:  AttributeType;
+    $type:           CompletionEffectType;
+    Value?:          ComparisonValue | null;
+    AttributeType?:  Attribute;
     Operation?:      Operation;
-    Duration?:       FluffyDuration;
+    Duration?:       FluffyDuration | null;
     TargetCount?:    null;
-    Target:          Source;
+    Target:          TargetPlayerClass;
     ReferenceValue?: null;
 }
 
-export interface The3_Prerequisite {
+export interface E2Prerequisite {
     $type:   PrerequisiteType;
-    Subject: ComparisonValueSubject;
+    Subject: PrerequisiteTarget;
 }
 
 export interface StickyTrigger {
     $type:             TriggerType;
-    Subject?:          Source;
-    AttributeType?:    AttributeType;
+    Subject?:          TargetPlayerClass;
+    AttributeType?:    Attribute;
     ChangeType?:       ChangeType;
     Source?:           null;
-    AttributeChanged?: AttributeType;
+    AttributeChanged?: Attribute;
     PreviousValue?:    null;
     CurrentValue?:     null;
     Target?:           null;
@@ -1330,8 +1616,8 @@ export interface FieryAttributes {
 
 export interface FieryAuras {
     e2?: StickyE2;
-    e1?: StickyE1;
     e3?: PurpleE3;
+    e1?: StickyE1;
 }
 
 export interface StickyE1 {
@@ -1344,24 +1630,25 @@ export interface StickyE1 {
     MigrationData:       string;
     VFXConfig:           VFXConfig;
     TranslationKey:      string;
+    WorksIn:             WorksIn;
 }
 
 export interface HilariousAction {
-    $type:         TentacledType;
-    AttributeType: AttributeType;
+    $type:         FluffyType;
+    AttributeType: Attribute;
     Operation:     Operation;
-    Value:         Limit;
-    Target:        MagentaTarget;
+    Value:         TentacledValue;
+    Target:        MischievousTarget;
 }
 
-export interface MagentaTarget {
+export interface MischievousTarget {
     $type:          SourceType;
-    Conditions:     StickyCondition | null;
-    TargetMode?:    TargetMode;
+    Origin?:        Origin;
+    TargetMode?:    Origin;
+    IncludeOrigin?: boolean;
+    Conditions:     TentacledCondition | null;
     TargetSection?: TargetSection;
     ExcludeSelf?:   boolean;
-    Origin?:        TargetMode;
-    IncludeOrigin?: boolean;
 }
 
 export interface StickyE2 {
@@ -1370,41 +1657,33 @@ export interface StickyE2 {
     Action:              AmbitiousAction;
     Prerequisites:       null;
     InternalName:        string;
-    InternalDescription: FluffyInternalDescription;
+    InternalDescription: string;
     MigrationData:       string;
     VFXConfig:           VFXConfig;
     TranslationKey:      string;
+    WorksIn:             WorksIn;
 }
 
 export interface AmbitiousAction {
-    $type:         PurpleType;
-    AttributeType: AttributeType;
+    $type:         CompletionEffectType;
+    AttributeType: Attribute;
     Operation:     Operation;
     Value:         HilariousValue;
-    Target:        ConditionsClass;
+    Target:        ValueSubject;
 }
 
 export interface HilariousValue {
     $type:          ComparisonValueType;
-    Target?:        FriskyTarget;
-    AttributeType?: AttributeType;
+    Target?:        TargetPlayerClass;
+    AttributeType?: Attribute;
     DefaultValue?:  number;
     Modifier?:      ComparisonValueModifier;
     Distinct?:      boolean;
     Value?:         number;
 }
 
-export interface FriskyTarget {
-    $type:          SourceType;
-    Conditions:     StickyCondition | null;
-    TargetSection?: TargetSection;
-    ExcludeSelf?:   boolean;
-}
-
-export type FluffyInternalDescription = "Sets the value of burn" | "Sets the value of Burn" | "" | "Burn 1 for each non-Weapon item you have." | "Burn 1 for each Aquatic or Toy item you have." | "Sets the value of shield" | "Sets the value of Shield" | "Sets the value of ShieldApplyAmount" | "Shield 8 for each non-Weapon item you have." | "Sets Shield" | "Shield 10 for each Aquatic or Toy item you have." | "Sets the value of Shielded Test Subject Alpha" | "Sets the value of Shielded The Boulder" | "Deal 10 damage for each Unique type you have." | "Deal 8 damage for each non-Weapon item you have." | "Obsidian 2" | "Deal 10 Damage for each Aquatic or Toy item you have." | "Sets the value of Damage" | "Sets the value of poison" | "Sets the value of Poison" | "Poison 1 for each non-Weapon item you have." | "Sets the value of heal" | "Poison 1 for each Aquatic or Toy item you have.";
-
 export interface PurpleE3 {
-    Id:                  E2ID;
+    Id:                  E3ID;
     ActiveIn:            ActiveIn;
     Action:              CunningAction;
     Prerequisites:       null;
@@ -1412,18 +1691,19 @@ export interface PurpleE3 {
     InternalDescription: string;
     MigrationData:       string;
     VFXConfig:           VFXConfig;
-    TranslationKey:      PurpleTranslationKey;
+    TranslationKey:      string;
+    WorksIn:             WorksIn;
 }
 
 export interface CunningAction {
-    $type:         PurpleType;
-    AttributeType: AttributeType;
+    $type:         CompletionEffectType;
+    AttributeType: Attribute;
     Operation:     Operation;
-    Value:         FluffyValue;
-    Target:        TargetPlayer;
+    Value:         PurpleValue;
+    Target:        TargetPlayerClass;
 }
 
-export type PurpleTranslationKey = "b7b4b93275c7490d6e2b0997872ba2e1" | "93826b7b7a154c7823629388e16a3823" | "979608f87a0c2ed7baf5d05e4ee935f1" | "e45684454d745b0e77f71face9b2ebb6" | "94b6b97fa820b28535181c40302b5363";
+export type E3ID = "e3";
 
 export interface Golden {
     Attributes:   Attributes;
@@ -1448,20 +1728,21 @@ export interface IndigoE1 {
     Prerequisites:       null;
     Priority:            Priority;
     InternalName:        string;
-    InternalDescription: TentacledInternalDescription;
+    InternalDescription: FluffyInternalDescription;
     MigrationData:       string;
     VFXConfig:           VFXConfig;
     TranslationKey:      string;
+    WorksIn:             WorksIn;
 }
 
 export interface MagentaAction {
-    $type:          PurpleType;
-    AttributeType?: AttributeType;
-    Value?:         PurpleValue;
+    $type:          CompletionEffectType;
+    AttributeType?: TriggerAttributeType;
+    Value?:         FluffyValue;
     Operation?:     Operation;
     Duration?:      null;
-    Target?:        Source;
-    TargetPlayer?:  Source;
+    Target?:        TargetPlayerClass;
+    TargetPlayer?:  TargetPlayerClass;
     SpawnContext?:  FluffySpawnContext;
     TargetCount?:   null;
 }
@@ -1471,14 +1752,40 @@ export interface FluffySpawnContext {
     Limit: ComparisonValue;
 }
 
-export type TentacledInternalDescription = "Golden 1" | "Shiny 1" | "" | "Golden 100" | "At the start of each fight double value" | "Golden 0";
+export type FluffyInternalDescription = "Golden 0" | "" | "Golden 1" | "Shiny 1" | "Golden 100" | "At the start of each fight double value";
 
 export interface IndigoTrigger {
     $type:          TriggerType;
-    Subject:        TargetPlayer;
-    AttributeType?: AttributeType;
+    Subject:        CompletionEffectSubject;
+    AttributeType?: TriggerAttributeType;
     ChangeType?:    ChangeType;
     Source?:        null;
+}
+
+export interface AmbitiousComparisonValue {
+    $type:          ComparisonValueType;
+    Value?:         number;
+    Target?:        CompletionEffectSubject;
+    AttributeType?: Attribute;
+    DefaultValue?:  number;
+    Modifier?:      ComparisonValueModifier | null;
+}
+
+export interface Conditions10 {
+    $type:               ConditionType;
+    Attribute?:          Attribute;
+    ComparisonOperator?: Comparison;
+    ComparisonValue?:    AmbitiousComparisonValue;
+    Tiers?:              Tier[];
+    IsNot?:              boolean;
+    CardType?:           Type;
+}
+
+export interface CompletionEffectSubject {
+    $type:        SourceType;
+    TargetMode?:  Origin;
+    Conditions:   Conditions10 | null;
+    ExcludeSelf?: boolean;
 }
 
 export interface Attributes {
@@ -1494,18 +1801,29 @@ export interface IndecentE1 {
     Action:              FriskyAction;
     Prerequisites:       null;
     InternalName:        string;
-    InternalDescription: TentacledInternalDescription;
+    InternalDescription: FluffyInternalDescription;
     MigrationData:       string;
     VFXConfig:           VFXConfig;
     TranslationKey:      string;
+    WorksIn:             WorksIn;
 }
 
 export interface FriskyAction {
-    $type:         TentacledType;
-    AttributeType: AttributeType;
+    $type:         FluffyType;
+    AttributeType: Attribute;
     Operation:     Operation;
-    Value:         PurpleValue;
-    Target:        ActionSubject;
+    Value:         FluffyValue;
+    Target:        BraggadociousTarget;
+}
+
+export interface BraggadociousTarget {
+    $type:          SourceType;
+    Origin?:        Origin;
+    TargetMode?:    Origin;
+    IncludeOrigin?: boolean;
+    Conditions:     FriskyCondition | null;
+    TargetSection?: TargetSection;
+    ExcludeSelf?:   boolean;
 }
 
 export interface Heavy {
@@ -1530,115 +1848,137 @@ export interface The3 {
     Trigger:             The3_Trigger;
     ActiveIn:            ActiveIn;
     Action:              The3_Action;
-    Prerequisites:       The3_Prerequisite[];
+    Prerequisites:       E2Prerequisite[] | null;
     Priority:            Priority;
     InternalName:        The3_InternalName;
     InternalDescription: string;
     MigrationData:       string;
     VFXConfig:           VFXConfig;
-    TranslationKey:      string;
+    TranslationKey:      The3_TranslationKey;
+    WorksIn:             WorksIn;
 }
 
 export interface The3_Action {
-    $type:          PurpleType;
-    TargetCount?:   null;
-    Target?:        ConditionsClass;
-    Value?:         ComparisonValue | null;
-    AttributeType?: AttributeType;
-    Operation?:     Operation;
-    Duration?:      FluffyDuration | null;
-    TargetPlayer?:  TargetPlayer;
-    SpawnContext?:  FluffySpawnContext;
+    $type:         CompletionEffectType;
+    Value:         ComparisonValue;
+    AttributeType: Attribute;
+    Operation:     Operation;
+    Duration:      FluffyDuration | null;
+    TargetCount:   null;
+    Target:        ValueSubject;
 }
 
-export type The3_InternalName = "Counter Increment" | "Heavy Hogwash Ability 2" | "" | "Turbo Hogwash Ability 2";
+export type The3_InternalName = "Counter Increment" | "";
+
+export type The3_TranslationKey = "1765d39b625142ba0ad0f322f5e114ca" | "286b0e5fdfb97664b0b52b7612c183bf";
 
 export interface The3_Trigger {
-    $type:         TriggerType;
-    Subject:       ComparisonValueSubject;
-    AttributeType: AttributeType;
-    ChangeType:    ChangeType;
-    Source:        null;
+    $type:          TriggerType;
+    Subject?:       PrerequisiteTarget;
+    AttributeType?: Attribute;
+    ChangeType?:    ChangeType;
+    Source?:        null;
 }
 
 export interface HilariousE1 {
     Id:                  string;
-    Trigger:             IndecentTrigger;
+    Trigger:             TentacledTrigger;
     ActiveIn:            ActiveIn;
     Action:              MischievousAction;
-    Prerequisites:       PurplePrerequisite[] | null;
+    Prerequisites:       TentacledPrerequisite[] | null;
     Priority:            Priority;
     InternalName:        string;
-    InternalDescription: StickyInternalDescription;
+    InternalDescription: TentacledInternalDescription;
     MigrationData:       string;
     VFXConfig:           VFXConfig;
     TranslationKey:      string;
+    WorksIn:             WorksIn;
 }
 
 export interface MischievousAction {
-    $type:            PurpleType;
+    $type:            CompletionEffectType;
     Value?:           ComparisonValue | null;
     TargetCount:      null;
-    Target:           ActionSubject;
-    AttributeType?:   AttributeType;
+    Target:           Target1;
+    AttributeType?:   FluffyAttributeType;
     Operation?:       Operation;
     Duration?:        null;
-    Enchantment?:     string;
+    Enchantment?:     EnchantmentEnum;
     PreventOverride?: boolean;
 }
 
-export type StickyInternalDescription = "" | "Heavy" | "If the item is not enchanted, enchant it with Heavy if able." | "Turbo" | "Turbo 2" | "Turbo 3" | "If the item is not enchanted, enchant it with Turbo if able.";
+export type FluffyAttributeType = "SlowAmount" | "HasteAmount" | "FreezeAmount" | "Custom_0" | "FreezeTargets" | "Multicast" | "DamageAmount" | "ChargeAmount" | "PoisonApplyAmount" | "RegenApplyAmount" | "Custom_1" | "SellPrice" | "AmmoMax" | "Lifesteal" | "Custom_4" | "HealthMax" | "PercentCooldownReduction" | "CritChance";
 
-export interface IndecentTrigger {
-    $type:          TriggerType;
-    Subject?:       ActionSubject;
-    AttributeType?: AttributeType;
-    ChangeType?:    ChangeType;
-    Source?:        null;
-    Target?:        ComparisonValueSubject | null;
-    CombatType?:    null;
+export interface Target1 {
+    $type:          SourceType;
+    TargetMode?:    Origin;
+    Conditions:     Conditions11 | null;
+    Origin?:        Origin;
+    IncludeOrigin?: boolean;
+    TargetSection?: TargetSection;
+    ExcludeSelf?:   boolean;
 }
+
+export interface Conditions11 {
+    $type:               ConditionType;
+    Tags?:               Tag[];
+    Operator?:           Operator;
+    Attribute?:          Attribute;
+    ComparisonOperator?: Comparison;
+    ComparisonValue?:    ComparisonValue;
+    Tiers?:              Tier[];
+    IsNot?:              boolean;
+    Sizes?:              Size[];
+    Enchantment?:        EnchantmentEnum | null;
+    Conditions?:         Condition16[];
+    CardType?:           Type;
+    Heroes?:             Hero[];
+    Id?:                 string;
+}
+
+export interface Condition16 {
+    $type:               ConditionType;
+    Tags?:               Tag[];
+    Operator?:           Operator;
+    Attribute?:          Attribute;
+    ComparisonOperator?: Comparison;
+    ComparisonValue?:    ComparisonValue;
+    AttributeType?:      Attribute;
+    IsNot?:              boolean;
+    Enchantment?:        EnchantmentEnum;
+    Sizes?:              Size[];
+    Tiers?:              Tier[];
+    Id?:                 string;
+    Heroes?:             Hero[];
+    IsSameAsPlayerHero?: boolean;
+    Conditions?:         TriggerConditions[];
+}
+
+export type TentacledInternalDescription = "" | "Heavy" | "If the item is not enchanted, enchant it with Heavy if able." | "Turbo" | "Turbo 3" | "Turbo 2" | "If the item is not enchanted, enchant it with Turbo if able.";
 
 export interface IndigoE2 {
     Id:                  E2ID;
-    Trigger:             HilariousTrigger;
+    Trigger:             The3_Trigger;
     ActiveIn:            ActiveIn;
     Action:              BraggadociousAction;
-    Prerequisites:       The3_Prerequisite[] | null;
+    Prerequisites:       E2Prerequisite[] | null;
     Priority:            Priority;
     InternalName:        The3_InternalName;
     InternalDescription: string;
     MigrationData:       string;
     VFXConfig:           VFXConfig;
-    TranslationKey:      string;
+    TranslationKey:      The3_TranslationKey;
+    WorksIn:             WorksIn;
 }
 
 export interface BraggadociousAction {
-    $type:          PurpleType;
+    $type:          CompletionEffectType;
     Value:          ComparisonValue | null;
-    AttributeType?: AttributeType;
+    AttributeType?: Attribute;
     Operation?:     Operation;
     Duration?:      FluffyDuration;
     TargetCount:    null;
-    Target:         MischievousTarget;
-}
-
-export interface MischievousTarget {
-    $type:          SourceType;
-    Conditions:     PurpleCondition | null;
-    ExcludeSelf?:   boolean;
-    TargetSection?: TargetSection;
-}
-
-export interface HilariousTrigger {
-    $type:          TriggerType;
-    CombatType?:    null;
-    CombatOutcome?: null;
-    Subject?:       TargetPlayer;
-    Target?:        null;
-    AttributeType?: AttributeType;
-    ChangeType?:    ChangeType;
-    Source?:        null;
+    Target:         TargetPlayerClass;
 }
 
 export interface HeavyAttributes {
@@ -1649,27 +1989,28 @@ export interface HeavyAttributes {
 }
 
 export interface HeavyAuras {
-    e1?: E9Class;
+    e1?: Q2Class;
 }
 
-export interface E9Class {
+export interface Q2Class {
     Id:                  E1ID;
     ActiveIn:            ActiveIn;
-    Action:              E9Action;
+    Action:              Action1;
     Prerequisites:       null;
     InternalName:        string;
     InternalDescription: string;
     MigrationData:       string;
     VFXConfig:           VFXConfig;
     TranslationKey:      string;
+    WorksIn:             WorksIn;
 }
 
-export interface E9Action {
-    $type:         PurpleType;
-    AttributeType: AttributeType;
+export interface Action1 {
+    $type:         CompletionEffectType;
+    AttributeType: FluffyAttributeType;
     Operation:     Operation;
     Value:         ComparisonValue;
-    Target:        ConditionsClass;
+    Target:        ValueSubject;
 }
 
 export interface Icy {
@@ -1685,61 +2026,81 @@ export interface Icy {
 
 export interface IcyAbilities {
     e1?:  AmbitiousE1;
-    e2?:  IndecentE2;
+    e2?:  The3;
     "3"?: The3;
 }
 
 export interface AmbitiousE1 {
     Id:                  string;
-    Trigger:             AmbitiousTrigger;
+    Trigger:             IndecentTrigger;
     ActiveIn:            ActiveIn;
-    Action:              MischievousAction;
-    Prerequisites:       PurplePrerequisite[] | null;
+    Action:              Action2;
+    Prerequisites:       TentacledPrerequisite[] | null;
     Priority:            Priority;
     InternalName:        string;
-    InternalDescription: IndigoInternalDescription;
+    InternalDescription: StickyInternalDescription;
     MigrationData:       string;
     VFXConfig:           VFXConfig;
     TranslationKey:      string;
+    WorksIn:             WorksIn;
 }
 
-export type IndigoInternalDescription = "" | "Icy" | "Icy 2" | "If the item is not enchanted, enchant it with Icy if able.";
-
-export interface AmbitiousTrigger {
-    $type:          TriggerType;
-    Subject?:       ActionSubject;
-    AttributeType?: AttributeType;
-    ChangeType?:    ChangeType;
-    Source?:        null;
-    Target?:        Source | null;
-    CombatType?:    null;
+export interface Action2 {
+    $type:            CompletionEffectType;
+    Value?:           ComparisonValue | null;
+    TargetCount:      null;
+    Target:           Target2;
+    AttributeType?:   FluffyAttributeType;
+    Operation?:       Operation;
+    Duration?:        null;
+    Enchantment?:     EnchantmentEnum;
+    PreventOverride?: boolean;
 }
 
-export interface IndecentE2 {
-    Id:                  E2ID;
-    Trigger:             HilariousTrigger;
-    ActiveIn:            ActiveIn;
-    Action:              Action1;
-    Prerequisites:       The3_Prerequisite[] | null;
-    Priority:            Priority;
-    InternalName:        PurpleInternalName;
-    InternalDescription: string;
-    MigrationData:       string;
-    VFXConfig:           VFXConfig;
-    TranslationKey:      string;
+export interface Target2 {
+    $type:          SourceType;
+    ExcludeSelf?:   boolean;
+    TargetSection?: TargetSection;
+    Conditions:     ConditionsConditions | null;
+    TargetMode?:    Origin;
+    Origin?:        Origin;
+    IncludeOrigin?: boolean;
 }
 
-export interface Action1 {
-    $type:          PurpleType;
-    Value:          ComparisonValue | null;
-    AttributeType?: AttributeType;
-    Operation?:     Operation;
-    Duration?:      FluffyDuration;
-    TargetCount:    null;
-    Target:         TargetPlayer;
+export interface ConditionsConditions {
+    $type:        ConditionType;
+    Tags?:        Tag[];
+    Operator?:    Operator;
+    Conditions?:  Condition17[];
+    Enchantment?: EnchantmentEnum | null;
+    IsNot?:       boolean;
+    Sizes?:       Size[];
 }
 
-export type PurpleInternalName = "Counter Increment" | "Icy Hogwash Ability 2";
+export interface Condition17 {
+    $type:               ConditionType;
+    Tags?:               Tag[];
+    Operator?:           Operator;
+    Enchantment?:        EnchantmentEnum;
+    Attribute?:          Attribute;
+    ComparisonOperator?: Comparison;
+    ComparisonValue?:    ComparisonValue;
+}
+
+export type StickyInternalDescription = "" | "Icy" | "Icy 2" | "If the item is not enchanted, enchant it with Icy if able.";
+
+export interface IndecentTrigger {
+    $type:             TriggerType;
+    Subject?:          StickySubject;
+    AttributeType?:    Attribute;
+    ChangeType?:       ChangeType;
+    Source?:           null;
+    AttributeChanged?: Attribute;
+    PreviousValue?:    null;
+    CurrentValue?:     null;
+    CombatType?:       null;
+    Target?:           CompletionEffectSubject | null;
+}
 
 export interface IcyAttributes {
     FreezeTargets?: number;
@@ -1762,64 +2123,51 @@ export interface Obsidian {
 
 export interface ObsidianAbilities {
     e1?: CunningE1;
-    e2?: HilariousE2;
+    e2?: The3;
 }
 
 export interface CunningE1 {
     Id:                  string;
-    Trigger:             TentacledTrigger;
-    ActiveIn:            ActiveIn;
-    Action:              Action2;
-    Prerequisites:       PurplePrerequisite[] | null;
-    Priority:            Priority;
-    InternalName:        string;
-    InternalDescription: IndecentInternalDescription;
-    MigrationData:       string;
-    VFXConfig:           VFXConfig;
-    TranslationKey:      string;
-}
-
-export interface Action2 {
-    $type:            PurpleType;
-    ReferenceValue?:  null;
-    Target:           ActionSubject;
-    Value?:           ComparisonValue;
-    AttributeType?:   AttributeType;
-    Operation?:       Operation;
-    Duration?:        FluffyDuration | null;
-    TargetCount?:     null;
-    Enchantment?:     ConditionEnchantment;
-    PreventOverride?: boolean;
-}
-
-export type IndecentInternalDescription = "" | "Obsidian" | "Your Aquatic Weapons gain +5 damage for the fight." | "If the item is not enchanted, enchant it with Obsidian if able.";
-
-export interface HilariousE2 {
-    Id:                  E2ID;
     Trigger:             HilariousTrigger;
     ActiveIn:            ActiveIn;
     Action:              Action3;
-    Prerequisites:       The3_Prerequisite[] | null;
+    Prerequisites:       PurplePrerequisite[] | null;
     Priority:            Priority;
-    InternalName:        FluffyInternalName;
-    InternalDescription: string;
+    InternalName:        string;
+    InternalDescription: IndigoInternalDescription;
     MigrationData:       string;
     VFXConfig:           VFXConfig;
     TranslationKey:      string;
+    WorksIn:             WorksIn;
 }
 
 export interface Action3 {
-    $type:           PurpleType;
-    Value?:          ComparisonValue;
-    AttributeType?:  AttributeType;
-    Operation?:      Operation;
-    Duration?:       FluffyDuration | null;
-    TargetCount?:    null;
-    Target:          TargetPlayer;
-    ReferenceValue?: null;
+    $type:            CompletionEffectType;
+    ReferenceValue?:  null;
+    Target:           FriskyTarget;
+    Value?:           ComparisonValue;
+    AttributeType?:   Attribute;
+    Operation?:       Operation;
+    Duration?:        FluffyDuration | null;
+    TargetCount?:     null;
+    Enchantment?:     EnchantmentEnum;
+    PreventOverride?: boolean;
 }
 
-export type FluffyInternalName = "Counter Increment" | "Obsidian Hogwash Ability";
+export type IndigoInternalDescription = "" | "Obsidian" | "Your Aquatic Weapons gain +5 damage for the fight." | "If the item is not enchanted, enchant it with Obsidian if able.";
+
+export interface HilariousTrigger {
+    $type:             TriggerType;
+    Subject?:          AmbitiousTarget;
+    AttributeType?:    Attribute;
+    ChangeType?:       ChangeType;
+    Source?:           null;
+    CombatType?:       null;
+    Target?:           TargetPlayerClass | null;
+    AttributeChanged?: Attribute;
+    PreviousValue?:    null;
+    CurrentValue?:     null;
+}
 
 export interface ObsidianAttributes {
     DamageAmount?: number;
@@ -1828,8 +2176,8 @@ export interface ObsidianAttributes {
 }
 
 export interface ObsidianAuras {
-    e2?: StickyE2;
     e1?: MagentaE1;
+    e2?: StickyE2;
     e3?: FluffyE3;
 }
 
@@ -1839,30 +2187,31 @@ export interface MagentaE1 {
     Action:              Action4;
     Prerequisites:       null;
     InternalName:        string;
-    InternalDescription: HilariousInternalDescription;
+    InternalDescription: IndecentInternalDescription;
     MigrationData:       string;
     VFXConfig:           VFXConfig;
     TranslationKey:      string;
+    WorksIn:             WorksIn;
 }
 
 export interface Action4 {
-    $type:         PurpleType;
-    AttributeType: AttributeType;
+    $type:         CompletionEffectType;
+    AttributeType: Attribute;
     Operation:     Operation;
     Value:         AmbitiousValue;
-    Target:        ActionSubject;
+    Target:        MagentaTarget;
 }
 
 export interface AmbitiousValue {
     $type:          ComparisonValueType;
     Value?:         number;
-    Target?:        AmbitiousTarget;
-    AttributeType?: AttributeType;
+    Target?:        IndigoSubject;
+    AttributeType?: Attribute;
     DefaultValue?:  number;
     Modifier?:      ComparisonValueModifier | null;
 }
 
-export type HilariousInternalDescription = "" | "Obsidian 2" | "Obsidian 1";
+export type IndecentInternalDescription = "" | "Obsidian 2" | "Obsidian 1";
 
 export interface FluffyE3 {
     Id:                  string;
@@ -1873,29 +2222,30 @@ export interface FluffyE3 {
     InternalDescription: E3InternalDescription;
     MigrationData:       string;
     VFXConfig:           VFXConfig;
-    TranslationKey:      FluffyTranslationKey;
+    TranslationKey:      E3TranslationKey;
+    WorksIn:             WorksIn;
 }
 
 export interface Action5 {
-    $type:         PurpleType;
-    AttributeType: AttributeType;
+    $type:         CompletionEffectType;
+    AttributeType: Attribute;
     Operation:     Operation;
-    Value:         Limit;
-    Target:        ConditionsClass;
+    Value:         TentacledValue;
+    Target:        ValueSubject;
 }
 
 export type E3InternalDescription = "" | "Original Amount" | "Obsidian" | "Sets the value of Damage";
 
-export type E3InternalName = "Tooltip Handling" | "Obsidian Luxury Tents Aura" | "Obsidian Ledger Aura" | "Obsidian Memento Mori Aura" | "Obsidian Hogwash Aura";
+export type E3InternalName = "Tooltip Handling" | "Obsidian Luxury Tents Aura" | "Obsidian Memento Mori Aura" | "Obsidian Ledger Aura";
 
 export interface E3Prerequisite {
     $type:      PrerequisiteType;
-    Subject:    ConditionsClass;
+    Subject:    ValueSubject;
     Comparison: Comparison;
     Amount:     number;
 }
 
-export type FluffyTranslationKey = "9ed8516049000a0e1a90054e0aab06ce" | "a193d872e6cb3a8dc2d05aedb98955c0" | "93911bec96cb67bfcc317e7f7665af7b" | "b7b4b93275c7490d6e2b0997872ba2e1" | "93826b7b7a154c7823629388e16a3823";
+export type E3TranslationKey = "9ed8516049000a0e1a90054e0aab06ce" | "a193d872e6cb3a8dc2d05aedb98955c0" | "93911bec96cb67bfcc317e7f7665af7b" | "106d47e56a8a3813026e1611617d058d" | "b7b4b93275c7490d6e2b0997872ba2e1" | "93826b7b7a154c7823629388e16a3823";
 
 export interface Radiant {
     Attributes:   Attributes;
@@ -1910,59 +2260,80 @@ export interface Radiant {
 
 export interface RadiantAbilities {
     e1?: FriskyE1;
-    e2?: AmbitiousE2;
+    e2?: IndecentE2;
 }
 
 export interface FriskyE1 {
     Id:                  string;
-    Trigger:             CunningTrigger;
+    Trigger:             FluffyTrigger;
     ActiveIn:            ActiveIn;
-    Action:              MischievousAction;
+    Action:              Action6;
     Prerequisites:       null;
     Priority:            Priority;
     InternalName:        string;
-    InternalDescription: AmbitiousInternalDescription;
+    InternalDescription: HilariousInternalDescription;
     MigrationData:       string;
     VFXConfig:           VFXConfig;
     TranslationKey:      string;
+    WorksIn:             WorksIn;
 }
 
-export type AmbitiousInternalDescription = "When this item gains Freeze, remove Freeze from it." | "Radiant" | "When this item gains Haste, remove Haste from it." | "If the item is not enchanted, enchant it with Radiant if able.";
-
-export interface CunningTrigger {
-    $type:             TriggerType;
-    Subject:           AmbitiousTarget;
-    AttributeChanged?: AttributeType;
-    ChangeType?:       ChangeType;
-    PreviousValue?:    null;
-    CurrentValue?:     null;
-    Source?:           null;
+export interface Action6 {
+    $type:            CompletionEffectType;
+    Value?:           ComparisonValue;
+    AttributeType?:   Attribute;
+    Operation?:       Operation;
+    Duration:         null;
+    TargetCount:      null;
+    Target:           Target3;
+    Enchantment?:     EnchantmentEnum;
+    PreventOverride?: boolean;
 }
 
-export interface AmbitiousE2 {
+export interface Target3 {
+    $type:          SourceType;
+    Conditions:     Conditions12 | null;
+    TargetSection?: TargetSection;
+    ExcludeSelf?:   boolean;
+    Origin?:        Origin;
+    TargetMode?:    Origin;
+    IncludeOrigin?: boolean;
+}
+
+export interface Conditions12 {
+    $type:        SourceType;
+    Enchantment?: EnchantmentEnum | null;
+    IsNot?:       boolean;
+    Conditions?:  ConditionsConditions[];
+}
+
+export type HilariousInternalDescription = "When this item gains Freeze, remove Freeze from it." | "When this item gains Haste, remove Haste from it." | "Radiant" | "If the item is not enchanted, enchant it with Radiant if able.";
+
+export interface IndecentE2 {
     Id:                  E2ID;
-    Trigger:             MagentaTrigger;
+    Trigger:             AmbitiousTrigger;
     ActiveIn:            ActiveIn;
     Action:              The3_Action;
     Prerequisites:       null;
     Priority:            Priority;
-    InternalName:        TentacledInternalName;
-    InternalDescription: CunningInternalDescription;
+    InternalName:        PurpleInternalName;
+    InternalDescription: AmbitiousInternalDescription;
     MigrationData:       string;
     VFXConfig:           VFXConfig;
-    TranslationKey:      E2TranslationKey;
+    TranslationKey:      PurpleTranslationKey;
+    WorksIn:             WorksIn;
 }
 
-export type CunningInternalDescription = "When this item gains Slow, remove Slow from it.";
+export type AmbitiousInternalDescription = "When this item gains Slow, remove Slow from it.";
 
-export type TentacledInternalName = "Radiant Slow" | "Radiant Dooltron";
+export type PurpleInternalName = "Radiant Slow" | "Radiant Dooltron";
 
-export type E2TranslationKey = "db02baf95ec3866b3bcf0761025fd005";
+export type PurpleTranslationKey = "db02baf95ec3866b3bcf0761025fd005";
 
-export interface MagentaTrigger {
+export interface AmbitiousTrigger {
     $type:            TriggerType;
-    Subject:          ConditionsClass;
-    AttributeChanged: AttributeType;
+    Subject:          ValueSubject;
+    AttributeChanged: Attribute;
     ChangeType:       ChangeType;
     PreviousValue:    null;
     CurrentValue:     null;
@@ -1972,7 +2343,7 @@ export interface MagentaTrigger {
 export interface Restorative {
     Attributes:   RestorativeAttributes;
     Abilities:    FieryAbilities;
-    Auras:        RestorativeAuras;
+    Auras:        FieryAuras;
     Tags:         any[];
     HiddenTags:   HiddenTag[];
     Localization: DeadlyLocalization;
@@ -1983,63 +2354,8 @@ export interface Restorative {
 export interface RestorativeAttributes {
     HealAmount?:       number;
     Custom_4?:         number;
-    Custom_5?:         number;
     RegenApplyAmount?: number;
-}
-
-export interface RestorativeAuras {
-    e1?: StickyE1;
-    e2?: CunningE2;
-    e3?: TentacledE3;
-}
-
-export interface CunningE2 {
-    Id:                  E2ID;
-    ActiveIn:            ActiveIn;
-    Action:              Action6;
-    Prerequisites:       null;
-    InternalName:        string;
-    InternalDescription: InternalDescription;
-    MigrationData:       string;
-    VFXConfig:           VFXConfig;
-    TranslationKey:      string;
-}
-
-export interface Action6 {
-    $type:         PurpleType;
-    AttributeType: AttributeType;
-    Operation:     Operation;
-    Value:         CunningValue;
-    Target:        ConditionsClass;
-}
-
-export interface CunningValue {
-    $type:          ComparisonValueType;
-    Target:         TargetPlayer;
-    AttributeType?: AttributeType;
-    DefaultValue:   number;
-    Modifier:       ComparisonValueModifier;
-    Distinct?:      boolean;
-}
-
-export interface TentacledE3 {
-    Id:                  E2ID;
-    ActiveIn:            ActiveIn;
-    Action:              Action7;
-    Prerequisites:       null;
-    InternalName:        string;
-    InternalDescription: string;
-    MigrationData:       string;
-    VFXConfig:           VFXConfig;
-    TranslationKey:      PurpleTranslationKey;
-}
-
-export interface Action7 {
-    $type:         PurpleType;
-    AttributeType: AttributeType;
-    Operation:     Operation;
-    Value:         Limit;
-    Target:        TargetPlayer;
+    Custom_5?:         number;
 }
 
 export interface Shielded {
@@ -2054,41 +2370,35 @@ export interface Shielded {
 }
 
 export interface ShieldedAbilities {
-    e1?: MischievousE1;
-    e2?: MagentaE2;
+    e1?: TentacledE1;
+    e2?: HilariousE2;
 }
 
-export interface MischievousE1 {
-    Id:                  string;
-    Trigger:             IndecentTrigger;
-    ActiveIn:            ActiveIn;
-    Action:              IndigoAction;
-    Prerequisites:       PurplePrerequisite[] | null;
-    Priority:            Priority;
-    InternalName:        string;
-    InternalDescription: MagentaInternalDescription;
-    MigrationData:       string;
-    VFXConfig:           VFXConfig;
-    TranslationKey:      string;
-}
-
-export type MagentaInternalDescription = "" | "Shielded" | "set " | "Shielded 1" | "If the item is not enchanted, enchant it with Shielded if able.";
-
-export interface MagentaE2 {
+export interface HilariousE2 {
     Id:                  E2ID;
-    Trigger:             HilariousTrigger;
+    Trigger:             CunningTrigger;
     ActiveIn:            ActiveIn;
     Action:              IndecentAction;
-    Prerequisites:       The3_Prerequisite[] | null;
+    Prerequisites:       E2Prerequisite[] | null;
     Priority:            Priority;
     InternalName:        string;
-    InternalDescription: FriskyInternalDescription;
+    InternalDescription: CunningInternalDescription;
     MigrationData:       string;
     VFXConfig:           VFXConfig;
     TranslationKey:      string;
+    WorksIn:             WorksIn;
 }
 
-export type FriskyInternalDescription = "" | "Your other Shield items gain +9 Shield for the fight." | "Deal {ability.0} damage to the player with less health.";
+export type CunningInternalDescription = "" | "Your other Shield items gain +9 Shield for the fight." | "Deal {ability.0} damage to the player with less health.";
+
+export interface CunningTrigger {
+    $type:          TriggerType;
+    Subject?:       TargetPlayerClass;
+    AttributeType?: TriggerAttributeType;
+    ChangeType?:    ChangeType;
+    Source?:        null;
+    Target?:        null;
+}
 
 export interface ShieldedAttributes {
     ShieldApplyAmount?: number;
@@ -2098,8 +2408,29 @@ export interface ShieldedAttributes {
 
 export interface ShieldedAuras {
     e2?: StickyE2;
-    e1?: StickyE1;
     e3?: TentacledE3;
+    e1?: StickyE1;
+}
+
+export interface TentacledE3 {
+    Id:                  E3ID;
+    ActiveIn:            ActiveIn;
+    Action:              Action7;
+    Prerequisites:       null;
+    InternalName:        string;
+    InternalDescription: string;
+    MigrationData:       string;
+    VFXConfig:           VFXConfig;
+    TranslationKey:      string;
+    WorksIn:             WorksIn;
+}
+
+export interface Action7 {
+    $type:         CompletionEffectType;
+    AttributeType: Attribute;
+    Operation:     Operation;
+    Value:         TentacledValue;
+    Target:        TargetPlayerClass;
 }
 
 export interface Shiny {
@@ -2114,12 +2445,12 @@ export interface Shiny {
 }
 
 export interface ShinyAbilities {
-    e1?: BraggadociousE1;
+    e1?: MischievousE1;
 }
 
-export interface BraggadociousE1 {
+export interface MischievousE1 {
     Id:                  string;
-    Trigger:             FriskyTrigger;
+    Trigger:             MagentaTrigger;
     ActiveIn:            ActiveIn;
     Action:              Action8;
     Prerequisites:       null;
@@ -2129,24 +2460,25 @@ export interface BraggadociousE1 {
     MigrationData:       string;
     VFXConfig:           VFXConfig;
     TranslationKey:      string;
+    WorksIn:             WorksIn;
 }
 
 export interface Action8 {
-    $type:            PurpleType;
-    Enchantment?:     PurpleEnchantment;
+    $type:            CompletionEffectType;
+    ReferenceValue?:  null;
+    Target?:          Target3;
+    TargetPlayer?:    TargetPlayerClass;
+    SpawnContext?:    FluffySpawnContext;
+    Enchantment?:     EnchantmentEnum;
     Duration?:        null;
     PreventOverride?: boolean;
     TargetCount?:     null;
-    Target?:          ActionSubject;
-    ReferenceValue?:  null;
-    TargetPlayer?:    TargetPlayer;
-    SpawnContext?:    FluffySpawnContext;
 }
 
-export interface FriskyTrigger {
+export interface MagentaTrigger {
     $type:       TriggerType;
-    Subject?:    AmbitiousTarget;
     CombatType?: null;
+    Subject?:    CunningTarget;
     Source?:     null;
 }
 
@@ -2157,93 +2489,85 @@ export interface ShinyAttributes {
 }
 
 export interface ShinyAuras {
-    e1?: E11;
-    e2?: E3Class;
-    e3?: E3Class;
-    e9?: E9Class;
-    e4?: E3Class;
-    e5?: E3Class;
-    e6?: E3Class;
+    e1?: BraggadociousE1;
+    e2?: AmbitiousE2;
+    e3?: E4Class;
+    e4?: E4Class;
+    e5?: E4Class;
+    e6?: E4Class;
 }
 
-export interface E11 {
+export interface BraggadociousE1 {
     Id:                  E1ID;
     ActiveIn:            ActiveIn;
     Action:              Action9;
-    Prerequisites:       TentacledPrerequisite[] | null;
+    Prerequisites:       StickyPrerequisite[] | null;
     InternalName:        string;
-    InternalDescription: MischievousInternalDescription;
+    InternalDescription: MagentaInternalDescription;
     MigrationData:       string;
     VFXConfig:           VFXConfig;
     TranslationKey:      string;
+    WorksIn:             WorksIn;
 }
 
 export interface Action9 {
-    $type:         TentacledType;
-    AttributeType: AttributeType;
+    $type:         FluffyType;
+    AttributeType: FluffyAttributeType;
     Operation:     Operation;
     Value:         AmbitiousValue;
-    Target:        BraggadociousTarget;
+    Target:        StickySubject;
 }
 
-export interface BraggadociousTarget {
-    $type:          SourceType;
-    Conditions:     Conditions5 | null;
-    TargetSection?: TargetSection;
-    TargetMode?:    TargetMode;
-    ExcludeSelf?:   boolean;
-    Origin?:        TargetMode;
-    IncludeOrigin?: boolean;
+export type MagentaInternalDescription = "Shiny 1" | "Shiny" | "" | "Shiny 2" | "Sets the value of burn" | "Golden 1" | "Shiny None" | "Icy 2" | "XP 2x" | "Deadly 25" | "Sets the value of poison";
+
+export interface StickyPrerequisite {
+    $type:       PrerequisiteType;
+    Subject:     TargetPlayerClass;
+    Comparison?: Comparison;
+    Amount?:     number;
 }
 
-export interface Conditions5 {
-    $type:               ConditionType;
-    Tags?:               Tag[];
-    Operator?:           Operator;
-    Conditions?:         BraggadociousCondition[];
-    Sizes?:              Size[];
-    IsNot?:              boolean;
-    Attribute?:          AttributeType;
-    ComparisonOperator?: Comparison;
-    ComparisonValue?:    ComparisonValue;
-}
-
-export type MischievousInternalDescription = "Shiny 1" | "Shiny" | "" | "Golden 1" | "Shiny 2" | "Sets the value of burn" | "Deadly 25" | "XP 2x" | "Icy 2" | "Shiny None";
-
-export interface TentacledPrerequisite {
-    $type:      PrerequisiteType;
-    Subject:    Source;
-    Comparison: Comparison;
-    Amount:     number;
-}
-
-export interface E3Class {
+export interface AmbitiousE2 {
     Id:                  E2ID;
     ActiveIn:            ActiveIn;
     Action:              E4Action;
-    Prerequisites:       E3Prerequisite[] | null;
+    Prerequisites:       null;
+    InternalName:        string;
+    InternalDescription: MagentaInternalDescription;
+    MigrationData:       string;
+    VFXConfig:           VFXConfig;
+    TranslationKey:      string;
+    WorksIn:             WorksIn;
+}
+
+export interface E4Action {
+    $type:         CompletionEffectType;
+    AttributeType: Attribute;
+    Operation:     Operation;
+    Value:         CunningValue;
+    Target:        IndigoSubject;
+}
+
+export interface CunningValue {
+    $type:          ComparisonValueType;
+    Value?:         number;
+    Target?:        IndigoSubject;
+    AttributeType?: Attribute;
+    DefaultValue?:  number;
+    Modifier?:      null;
+}
+
+export interface E4Class {
+    Id:                  string;
+    ActiveIn:            ActiveIn;
+    Action:              E4Action;
+    Prerequisites:       null;
     InternalName:        string;
     InternalDescription: string;
     MigrationData:       string;
     VFXConfig:           VFXConfig;
     TranslationKey:      string;
-}
-
-export interface E4Action {
-    $type:         PurpleType;
-    AttributeType: AttributeType;
-    Operation:     Operation;
-    Value:         MagentaValue;
-    Target:        AmbitiousTarget;
-}
-
-export interface MagentaValue {
-    $type:          ComparisonValueType;
-    Target?:        AmbitiousTarget;
-    AttributeType?: AttributeType;
-    DefaultValue?:  number;
-    Modifier?:      PurpleModifier | null;
-    Value?:         number;
+    WorksIn:             WorksIn;
 }
 
 export interface Toxic {
@@ -2282,18 +2606,239 @@ export interface TurboAttributes {
     Custom_5?:     number;
 }
 
-export type Hero = "Pygmalien" | "Common" | "Vanessa" | "Dooley" | "Jules" | "Stelle" | "Mak";
+export type The300_InternalDescription = "" | "Side with the merchant and shoo the customer away." | "Sells items" | "You feed the creature and it leads you to an item!" | "The creature hums with happiness and you feel at peace." | "Day 1" | "The creature purrs with joy and you feel warm inside." | "Sells Items" | "Spend your time looking for spare change instead of investing." | "Close the circus down and free all the animals." | "Gain a Diamond-tier item" | "You own the circus! What do you want to do with it?" | "Have a nice day :)" | "Any investment helps!" | "Keep the wallet for yourself.";
 
-export type The200_InternalDescription = "" | "Sells Items" | "Day 1" | "Keep the wallet for yourself." | "Any investment helps!" | "The creature hums with happiness and you feel at peace." | "Spend your time looking for spare change instead of investing." | "Gain a Diamond-tier item" | "The creature purrs with joy and you feel warm inside." | "Sells items" | "You own the circus! What do you want to do with it?" | "Close the circus down and free all the animals." | "You feed the creature and it leads you to an item!" | "Side with the merchant and shoo the customer away." | "Have a nice day :)";
-
-export interface The200_Localization {
+export interface The300_Localization {
     Title:       Title;
     Description: Title | null;
     FlavorText:  null;
     Tooltips:    Tooltip[];
 }
 
+export interface Quest {
+    Prerequisites: any[];
+    Repeatable:    Repeatable | null;
+    Entries:       Entry[];
+    IsRepeatable:  boolean;
+}
+
+export interface Entry {
+    AttributeType:    string;
+    Prerequisites:    E3Prerequisite[] | null;
+    Trigger:          EntryTrigger;
+    Target:           number;
+    Update:           Update;
+    Reward:           Reward;
+    CompletionEffect: CompletionEffect | null;
+    Localization:     DeadlyLocalization;
+    IconKeyOverride:  HiddenTag | null;
+}
+
+export interface CompletionEffect {
+    $type:         CompletionEffectType;
+    AttributeType: TriggerAttributeType;
+    Value:         ComparisonValue;
+    Operation:     Operation;
+    Duration:      null;
+    Target:        CompletionEffectSubject;
+}
+
 export interface Reward {
+    Tiers:        RewardTiers | null;
+    Attributes:   RewardAttributes | null;
+    Abilities:    RewardAbilities;
+    Auras:        RewardAuras;
+    Tags:         any[];
+    HiddenTags:   Tag[];
+    Localization: DeadlyLocalization;
+    HasAbilities: boolean;
+    HasAuras:     boolean;
+}
+
+export interface RewardAbilities {
+    q2?: Q2;
+    q1?: AbilitiesQ1;
+    q3?: Q3;
+    q4?: Q4;
+    q5?: Q4;
+}
+
+export interface AbilitiesQ1 {
+    Id:                  string;
+    Trigger:             Q1Trigger;
+    ActiveIn:            ActiveIn;
+    Action:              Action10;
+    Prerequisites:       null;
+    Priority:            Priority;
+    InternalName:        string;
+    InternalDescription: string;
+    MigrationData:       string;
+    VFXConfig:           VFXConfig;
+    TranslationKey:      string;
+    WorksIn:             WorksIn;
+}
+
+export interface Action10 {
+    $type:           CompletionEffectType;
+    Value?:          TentacledValue | null;
+    AttributeType?:  Attribute;
+    Operation?:      Operation;
+    Duration?:       FluffyDuration;
+    TargetCount?:    null;
+    Target:          CompletionEffectSubject;
+    ReferenceValue?: null;
+}
+
+export interface Q1Trigger {
+    $type:    TriggerType;
+    Subject?: TargetPlayerClass;
+    Target?:  null;
+}
+
+export interface Q2 {
+    Id:                  E1ID;
+    Trigger:             Q2Trigger;
+    ActiveIn:            ActiveIn;
+    Action:              Q3Action;
+    Prerequisites:       null;
+    Priority:            Priority;
+    InternalName:        string;
+    InternalDescription: string;
+    MigrationData:       string;
+    VFXConfig:           VFXConfig;
+    TranslationKey:      string;
+    WorksIn:             WorksIn;
+}
+
+export interface Q3Action {
+    $type:           CompletionEffectType;
+    Value?:          null;
+    TargetCount?:    null;
+    Target:          TargetPlayerClass;
+    ReferenceValue?: null;
+    Duration?:       FluffyDuration;
+}
+
+export interface Q2Trigger {
+    $type:    TriggerType;
+    Subject?: TargetPlayerClass;
+}
+
+export interface Q3 {
+    Id:                  string;
+    Trigger:             Q3Trigger;
+    ActiveIn:            ActiveIn;
+    Action:              Q3Action;
+    Prerequisites:       null;
+    Priority:            Priority;
+    InternalName:        string;
+    InternalDescription: string;
+    MigrationData:       string;
+    VFXConfig:           VFXConfig;
+    TranslationKey:      string;
+    WorksIn:             WorksIn;
+}
+
+export interface Q3Trigger {
+    $type: TriggerType;
+}
+
+export interface Q4 {
+    Id:                  string;
+    Trigger:             Q3Trigger;
+    ActiveIn:            ActiveIn;
+    Action:              Q4Action;
+    Prerequisites:       null;
+    Priority:            Priority;
+    InternalName:        string;
+    InternalDescription: string;
+    MigrationData:       string;
+    VFXConfig:           VFXConfig;
+    TranslationKey:      string;
+    WorksIn:             WorksIn;
+}
+
+export interface Q4Action {
+    $type:       CompletionEffectType;
+    Value:       null;
+    TargetCount: null;
+    Target:      TargetPlayerClass;
+}
+
+export interface RewardAttributes {
+    ChargeAmount?:   number;
+    ChargeTargets?:  number;
+    EnchantTargets?: number;
+}
+
+export interface RewardAuras {
+    q1?: AurasQ1;
+    q2?: Q2Class;
+}
+
+export interface AurasQ1 {
+    Id:                  string;
+    ActiveIn:            ActiveIn;
+    Action:              Action11;
+    Prerequisites:       null;
+    InternalName:        string;
+    InternalDescription: string;
+    MigrationData:       string;
+    VFXConfig:           VFXConfig;
+    TranslationKey:      string;
+    WorksIn:             WorksIn;
+}
+
+export interface Action11 {
+    $type:         FluffyType;
+    AttributeType: HiddenTag;
+    Operation:     Operation;
+    Value:         ComparisonValue;
+    Target:        CompletionEffectSubject;
+}
+
+export interface RewardTiers {
+    Silver:  PurpleBronze;
+    Gold:    PurpleBronze;
+    Diamond: PurpleBronze;
+    Bronze?: PurpleBronze;
+}
+
+export interface PurpleBronze {
+    Attributes: BronzeAttributes;
+}
+
+export interface BronzeAttributes {
+    PoisonApplyAmount?: number;
+    BurnApplyAmount?:   number;
+    SlowAmount?:        number;
+    SlowTargets?:       number;
+    FreezeAmount?:      number;
+    FreezeTargets?:     number;
+    RegenApplyAmount?:  number;
+}
+
+export interface EntryTrigger {
+    $type:             TriggerType;
+    Subject:           TargetPlayerClass;
+    AttributeChanged?: Attribute;
+    ChangeType?:       ChangeType;
+    PreviousValue?:    null;
+    CurrentValue?:     null;
+    Source?:           null;
+    Target?:           null;
+}
+
+export interface Update {
+    Value:    ComparisonValue;
+    Duration: null;
+}
+
+export interface Repeatable {
+    Prerequisites: null;
+}
+
+export interface RewardDefeatClass {
     SelectionContextRules: Rules | null;
     GoldReward:            number;
     ExperienceReward:      number;
@@ -2328,26 +2873,26 @@ export interface SelectionCriteria {
 
 export interface SelectionCriteriaCondition {
     $type:        ConditionType;
-    Enchantment?: string;
+    Enchantment?: EnchantmentEnum;
     IsNot?:       boolean;
     CardType?:    Type;
-    Conditions?:  Condition10[];
+    Conditions?:  Condition18[];
 }
 
-export interface Condition10 {
+export interface Condition18 {
     $type:       ConditionType;
-    Enchantment: string;
+    Enchantment: EnchantmentEnum;
 }
 
-export interface Tiers {
-    Gold?:      Bronze;
-    Diamond:    Bronze;
-    Bronze?:    Bronze;
-    Silver?:    Bronze;
-    Legendary?: Bronze;
+export interface The300_Tiers {
+    Gold?:      LegendaryClass;
+    Diamond:    LegendaryClass;
+    Bronze?:    LegendaryClass;
+    Silver?:    LegendaryClass;
+    Legendary?: LegendaryClass;
 }
 
-export interface Bronze {
+export interface LegendaryClass {
     Attributes: { [key: string]: number };
     AbilityIds: string[];
     AuraIds:    string[];
@@ -2365,7 +2910,7 @@ export interface TransformAbilities {
 
 export interface T1 {
     Id:                  string;
-    Trigger:             T1Trigger;
+    Trigger:             Q3Trigger;
     ActiveIn:            ActiveIn;
     Action:              T1Action;
     Prerequisites:       null;
@@ -2375,21 +2920,18 @@ export interface T1 {
     MigrationData:       string;
     VFXConfig:           null;
     TranslationKey:      string;
+    WorksIn:             WorksIn;
 }
 
 export interface T1Action {
-    $type:            PurpleType;
-    Enchantment?:     string;
+    $type:            CompletionEffectType;
+    Enchantment?:     EnchantmentEnum;
     Duration?:        null;
     PreventOverride?: boolean;
     TargetCount?:     null;
-    Target?:          ConditionsClass;
-    TargetPlayer?:    TargetPlayer;
+    Target?:          ValueSubject;
+    TargetPlayer?:    TargetPlayerClass;
     SpawnContext?:    FluffySpawnContext;
 }
 
-export interface T1Trigger {
-    $type: TriggerType;
-}
-
-export type Version = "2.0.0";
+export type Version = "3.0.0";
