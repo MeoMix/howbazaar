@@ -97,7 +97,6 @@ export type ParsedCombatEncounterCard = {
     id: string;
     // TODO: this could be more tightly typed
     name: string;
-    monsterTemplateId: string;
 };
 
 export type ParsedMerchantCard = {

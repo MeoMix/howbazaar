@@ -9,7 +9,6 @@ import type { CardsJson } from "./types.parser";
 import invalidItemIds from "./invalidItemIds";
 import invalidSkillIds from "./invalidSkillIds";
 import invalidMerchantIds from "./invalidMerchantIds";
-import monsterTemplateIdMapping from "./monsterTemplateIdMapping";
 import customTagMap from "./customTagsMap";
 
 const CURRENT_VERSION = "3.0.0";
@@ -399,7 +398,7 @@ function filterTooltipsByStartingTier(
 
 type ValidItemCard = Card & { Tiers: Tiers, Type: "Item", Localization: { Title: { Text: string } } };
 type ValidSkillCard = Card & { Tiers: Tiers, Type: "Skill", Localization: { Title: { Text: string } } };
-type ValidCombatEncounterCard = Card & { Type: "CombatEncounter", Localization: { Title: { Text: string } }, CombatantType: { MonsterTemplateId: string; } };
+type ValidCombatEncounterCard = Card & { Type: "CombatEncounter", Localization: { Title: { Text: string } } };
 type ValidMerchantCard = Card & { Type: "EventEncounter", Localization: { Title: { Text: string }; Description: { Text: string } }, Tags: ["Merchant"] };
 
 // Helper function to check for invalid keywords in a string
@@ -822,7 +821,6 @@ function parseCombatEncounterCards(cardsJson: CardsJson) {
     const isEncounter = (entry: Card): entry is ValidCombatEncounterCard =>
         entry.Type === "CombatEncounter" &&
         entry.CombatantType !== undefined &&
-        (monsterTemplateIdMapping as any)[entry.Id] &&
         entry.Localization.Title.Text !== null &&
         !hasInvalidKeywords(entry.Localization.Title.Text) &&
         !hasInvalidKeywords(entry.InternalName);
@@ -833,7 +831,6 @@ function parseCombatEncounterCards(cardsJson: CardsJson) {
         return {
             id: card.Id,
             name: card.Localization.Title.Text,
-            monsterTemplateId: (monsterTemplateIdMapping as any)[card.Id].monsterTemplateId
         };
     });
 

@@ -12,7 +12,7 @@ export interface Item {
     Tier:            Tier;
 }
 
-export type Tier = "Gold" | "Silver" | "Diamond" | "Bronze" | "Legendary";
+export type Tier = "Bronze" | "Silver" | "Gold" | "Diamond" | "Legendary";
 
 export interface Skill {
     TemplateId: string;
