@@ -15,6 +15,15 @@ export function getMonsterEncounterDays(
         day: "event" as const,
         spawnGroups: [{
             ids: [
+                // 
+                "a5103989-fb08-4ac6-a5e8-6a610e0b1d46",
+                // Greenheart Guardian
+                "d1dc075f-f5d4-4bb7-9655-55591e123941",
+                // Mythkeeper
+                "4ce6d441-4aed-455b-b83f-0b057b462515",
+                // Blowguns Trap - Fiery/Toxic/Obsidian
+                // Caltrops Door - Fiery/Toxic/Obsidian
+                // Boulder Trap - Fiery/Toxic/Obsidian
                 // Sparring Partner
                 "60be5dca-6908-439c-843a-92dcb5b5dc4e",
                 // Mr. Moo

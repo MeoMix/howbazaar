@@ -3809,6 +3809,115 @@ const data: ParsedItemCard[] = [
     "packId": "Mak_Core"
   },
   {
+    "id": "41581a59-fd9b-42c6-a97e-9b5587b9cbdf",
+    "name": "Ethergy Conduit",
+    "startingTier": "Gold",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": [
+          "When you Poison or use a Relic, your items gain +2% crit chance for the fight.",
+          "When you Crit, Charge your Relics 1 second."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "When you Poison or use a Relic, your items gain +4% crit chance for the fight.",
+          "When you Crit, Charge your Relics 1 second."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Relic"
+    ],
+    "hiddenTags": [
+      "Crit",
+      "Charge",
+      "PoisonReference"
+    ],
+    "customTags": [],
+    "size": "Large",
+    "heroes": [
+      "Common"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "When you Crit, Slow 1 item for 3 second(s)."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "When you Crit, Freeze 1 item for 1 second(s)."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "When you Crit, Haste 1 item for 3 second(s)."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "When you Crit, Shield 75."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "When you Crit, Heal 50."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "When you Crit, poison 3."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "When you Crit, burn 3."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has double Crit Chance bonus.",
+          "This has double Charge amount."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "This has double Crit Chance bonus."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "When you Crit, Deal 50 Damage."
+        ]
+      }
+    ],
+    "unifiedTooltips": [
+      "When you Poison or use a Relic, your items gain (+2%/+4%) crit chance for the fight.",
+      "When you Crit, Charge your Relics 1 second."
+    ],
+    "packId": "Core"
+  },
+  {
     "id": "9b44aac3-173a-4d22-92f7-e2678b33c230",
     "name": "Card Table",
     "startingTier": "Silver",

@@ -41,7 +41,8 @@ const nameToFileMap: { [key: string]: string } = {
     // Oh hell yeah we're mapping to a Cyrillic character
     'Cleaver': 'Сleaver',
     'Soulstone': 'SoulStone',
-    'SandsOfTime': 'TomeOfTime'
+    'SandsOfTime': 'TomeOfTime',
+    'EthergyConduit': 'LargeRelic'
 };
 
 async function processItemImages() {
@@ -161,6 +162,7 @@ async function processCardDataFiles(): Promise<ExpectedImage[]> {
                 'Hand': '6028b902-ccf6-4cca-bc37-de4649806460',
                 'SoulStone': '2e3f4a5b-6c7d-8e9f-0a1b-2c3d4e5f6a7b',
                 'TomeOfTime': '0c1d2e3f-4a5b-6c7d-8e9f-0a1b2c3d4e5f',
+                'LargeRelic': '41581a59-fd9b-42c6-a97e-9b5587b9cbdf',
                 // Balance doesn't exist as a card in-game, but it does have a CardData file, and its GUID points to "Scales"
                 'Balance': '',
                 'OblivionCore': '',
