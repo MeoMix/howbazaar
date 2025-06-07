@@ -266,7 +266,19 @@ function findMatchingFile(expectedName: string, imageFiles: string[]): string | 
         );
     };
 
-    const match = imageFiles.find(file => {
+    // Create a copy of the array before sorting
+    const sortedFiles = [...imageFiles].sort((a, b) => {
+        const nameA = path.parse(a).name.replace(/\s+/g, '');
+        const nameB = path.parse(b).name.replace(/\s+/g, '');
+    
+        if (nameA.length !== nameB.length) {
+            return nameA.length - nameB.length;
+        }
+    
+        return nameA.localeCompare(nameB);
+    });
+
+    const match = sortedFiles.find(file => {
         if (shouldSkip(file)) return false;
 
         const baseName = path.parse(file).name.replace(/\s+/g, '');
