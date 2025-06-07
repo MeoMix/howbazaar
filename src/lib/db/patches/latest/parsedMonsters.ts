@@ -2740,7 +2740,7 @@ const data: ParsedMonster[] = [
         "tierType": "Silver"
       },
       {
-        "id": "905f9340-4272-4f82-88e4-4a2f79f1be96",
+        "id": "9ede03ef-5257-4a77-a725-5c4713662208",
         "tierType": "Gold"
       },
       {
@@ -2784,7 +2784,7 @@ const data: ParsedMonster[] = [
         "tierType": "Silver"
       },
       {
-        "id": "905f9340-4272-4f82-88e4-4a2f79f1be96",
+        "id": "9ede03ef-5257-4a77-a725-5c4713662208",
         "tierType": "Gold"
       },
       {
