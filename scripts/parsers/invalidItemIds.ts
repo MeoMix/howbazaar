@@ -201,8 +201,6 @@ const invalidItemIds: Record<string, string> = {
   "3174b74a-9e67-4db7-ba98-0d4935b2586d": "Custom Scope",
   
   "41581a59-fd9b-42c6-a97e-9b5587b9cbdf": "Ethergy Conduit",
-  "2e3f4a5b-6c7d-8e9f-0a1b-2c3d4e5f6a7b": "Soulstone",
-  "0c1d2e3f-4a5b-6c7d-8e9f-0a1b2c3d4e5f": "Sands of Time"
 };
 
 export default invalidItemIds;
