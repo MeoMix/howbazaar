@@ -16,6 +16,10 @@ const assetType = 'items';
 const assetPath = `${inputDirectory}${assetType}/`;
 const outputDirectory = './static/images/';
 
+// Parse command line arguments
+const args = process.argv.slice(2);
+const shouldExtract = !args.includes('--no-extract');
+
 const nameToFileMap: { [key: string]: string } = {
     'BusinessCard': 'BuisnessCard',
     'TheCore': 'PowerCore',
@@ -33,21 +37,28 @@ const nameToFileMap: { [key: string]: string } = {
     'CrabbyLobster': 'CrubbyLobster',
     'DarkwaterAnglerfish': 'DarkwaterAnglerfish(1)',
     'JuicerBro': 'Juiecerbro',
-    'DoodleGlass': 'DoodleGlas'
+    'DoodleGlass': 'DoodleGlas',
+    // Oh hell yeah we're mapping to a Cyrillic character
+    'Cleaver': 'Сleaver'
 };
 
 async function processItemImages() {
-    await extractAssets({
-        outputPath: `${inputDirectory}items`,
-        filterByName: 'CF_,PNG_,Ectoplasm,Seaweed,Octopus,Snowflake',
-        type: 'tex2d',
-        imageFormat: 'jpg'
-    });
-    await extractAssets({
-        outputPath: `${inputDirectory}items_carddata`,
-        filterByName: '_CardData',
-        type: 'monoBehaviour'
-    });
+    if (shouldExtract) {
+        console.log('Running asset extraction...');
+        await extractAssets({
+            outputPath: `${inputDirectory}items`,
+            filterByName: 'CF_,PNG_,Ectoplasm,Seaweed,Octopus,Snowflake',
+            type: 'tex2d',
+            imageFormat: 'jpg'
+        });
+        await extractAssets({
+            outputPath: `${inputDirectory}items_carddata`,
+            filterByName: '_CardData',
+            type: 'monoBehaviour'
+        });
+    } else {
+        console.log('Skipping asset extraction...');
+    }
 
     const expectedImages = await processCardDataFiles();
 
@@ -143,6 +154,9 @@ async function processCardDataFiles(): Promise<ExpectedImage[]> {
                 'ATM': 'c926fac8-f9ba-4430-a01a-a71a32c501c7',
                 'Tortuga': 'f8a38ad1-5e5a-4c95-9bd1-55c81c31b117',
                 'CustomScope': 'b2709d56-2c69-444f-8fd5-5cd237e6c053',
+                'SwordMorguloth': 'e5af5b7c-2e8f-4135-8e14-8d1ea71908de',
+                'VentriloquistDoll': 'e2a09e24-d454-450f-a39a-23f505ee32fa',
+                'Hand': '6028b902-ccf6-4cca-bc37-de4649806460',
                 // Balance doesn't exist as a card in-game, but it does have a CardData file, and its GUID points to "Scales"
                 'Balance': '',
                 'OblivionCore': '',
