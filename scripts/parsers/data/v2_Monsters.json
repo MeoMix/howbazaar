@@ -2420,8 +2420,8 @@
   },
   "c69bf8e8-944c-4b42-b59e-8ad568e0d3f7": {
     "Id": "c69bf8e8-944c-4b42-b59e-8ad568e0d3f7",
-    "InternalName": "Giant Mosquito Monster",
-    "Health": 250,
+    "InternalName": "Giant Mosquito",
+    "Health": 200,
     "Items": [
       {
         "EnchantmentType": null,
