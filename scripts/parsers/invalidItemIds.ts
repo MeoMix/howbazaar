@@ -30,7 +30,6 @@ const invalidItemIds: Record<string, string> = {
   "16667da1-b904-4a3f-a1b5-a18fe4e6705a": "Oven",
   "461e9a8d-331b-46a2-b604-6b04312b3214": "Lightning Butterfly",
   "31dfbc9c-1231-4781-a0a9-a7e3cd458fa8": "Paper Airplane",
-  "f4bef5b2-773b-44bf-84a0-67ae325604f7": "Cleaver",
   "fcf57212-34e9-4049-b40c-751d18b1af40": "Microwave",
   "30f2cdd1-6464-4133-a83e-6c4029e7a73f": "Hoverboard",
   "d9b24744-c718-458e-b836-d61227ab5711": "Gyro Gunsight",
@@ -141,7 +140,6 @@ const invalidItemIds: Record<string, string> = {
   "29f00f8e-e98b-4b7b-a233-4520e7680b84": "Darts",
   "50ab510b-b840-495f-ba8b-d94a658f7134": "Squirrel Suit",
   "5b1af837-bae6-4a78-ab2a-ac711f87db49": "Rice Cooker",
-  "66132d49-d270-49b9-899f-f5be8017b989": "Box Cutter",
   "809d6638-4e8e-4b14-867a-c6feccbeae9d": "Altimeter",
   "1192dfd6-3f2d-4077-9edf-ca37417aa8e3": "Buster",
   "b9246968-8eed-49c7-954e-6cd8f9feda36": "Oxygen Mask",
@@ -199,15 +197,12 @@ const invalidItemIds: Record<string, string> = {
   "5e95fcfd-bacb-4bb6-bf65-fb16ba602b3d": "Jambalaya",
   "26a15140-798a-4ac5-9df9-711ccc3cf89d": "Pastry Cart",
   "367c2ad9-94b3-4f01-a130-a673922244ef": "Cookies",
-  "e5af5b7c-2e8f-4135-8e14-8d1ea71908de": "Sword of Morguloth",
   "4b99310e-ea89-4324-89fe-d2649dfd8ff6": "Oblivion Core",
   "3174b74a-9e67-4db7-ba98-0d4935b2586d": "Custom Scope",
   
-  "6028b902-ccf6-4cca-bc37-de4649806460": "Biomerge Arm",
   "41581a59-fd9b-42c6-a97e-9b5587b9cbdf": "Ethergy Conduit",
   "2e3f4a5b-6c7d-8e9f-0a1b-2c3d4e5f6a7b": "Soulstone",
-  "0c1d2e3f-4a5b-6c7d-8e9f-0a1b2c3d4e5f": "Sands of Time",
-  "e2a09e24-d454-450f-a39a-23f505ee32fa": "Friendly Doll"
+  "0c1d2e3f-4a5b-6c7d-8e9f-0a1b2c3d4e5f": "Sands of Time"
 };
 
 export default invalidItemIds;
