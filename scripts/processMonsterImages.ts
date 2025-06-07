@@ -18,7 +18,6 @@ const outputDirectory = './static/images/';
 const nameToFileMap: Record<string, string> = {
     'Hakurvian Rocket Trooper': 'HarkuvianRocketTrooper',
     'Rogue Scrapper': 'RogueScraper',
-    'Death Knight Reaper': 'Reaper',
     'Bouncertron': 'RoboBouncer',
     'Bounty Hunter': 'BountyHunters',
     'Trashtown Mayor': 'TentCityMayor',
@@ -28,7 +27,13 @@ const nameToFileMap: Record<string, string> = {
     'Banannibal': 'Bananabal',
     'Bloodreef Captain': 'BloodReefCaptain',
     'Hoverbike Hooligan': 'ScoutTrooper',
-    'Eight Arm Davvy': 'VeteranOctopus'
+    'Eight Arm Davvy': 'VeteranOctopus',
+    'Foundation Weeper': 'EnclaveWeeper',
+    'Foundation Revenant': 'EnclaveRevenant',
+    'Tempest Bravo': 'TempestFlamedancer',
+    'Annex Trooper': 'ShockTrooper',
+    'Void Knight': 'Reaper',
+    'Ventriloquist': 'VentriloquistMugger',
 };
 
 async function processMonsterImages() {

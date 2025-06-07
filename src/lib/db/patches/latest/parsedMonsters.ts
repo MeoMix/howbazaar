@@ -4,6 +4,142 @@ import type { ParsedMonster } from '$lib/types';
 
 const data: ParsedMonster[] = [
   {
+    "id": "41c5f103-2d76-4a51-ae28-ee294490b071",
+    "health": 450,
+    "items": [
+      {
+        "id": "0022c409-c839-41e8-8022-65a407457dfe",
+        "tierType": "Silver"
+      },
+      {
+        "id": "b23c5988-7091-4b77-a7fb-134c0d0a3285",
+        "tierType": "Gold"
+      },
+      {
+        "id": "e2a09e24-d454-450f-a39a-23f505ee32fa",
+        "tierType": "Silver"
+      },
+      {
+        "id": "d6819596-2601-4757-8b72-2d708971023d",
+        "tierType": "Gold"
+      },
+      {
+        "id": "9e5e3d9e-ad05-4340-9071-4fccecb79695",
+        "tierType": "Silver"
+      },
+      {
+        "id": "529a7e95-b350-4fd6-96fd-fef80d4c1462",
+        "tierType": "Gold"
+      },
+      {
+        "id": "dc3bf5cb-45fa-46c7-9a0e-3f3bfb01697d",
+        "tierType": "Gold"
+      },
+      {
+        "id": "7f706346-b364-4791-a104-ed6fe03e87e1",
+        "tierType": "Silver"
+      }
+    ],
+    "skills": [
+      {
+        "id": "0d8cd0dc-67ab-4c3c-b11c-88e78559a900",
+        "tierType": "Silver"
+      }
+    ]
+  },
+  {
+    "id": "3e80e4e9-13e6-441c-b770-a82a0297ad47",
+    "health": 2325,
+    "items": [
+      {
+        "id": "9778f31c-87b0-4d8d-8289-50e90dd7edc5",
+        "tierType": "Gold"
+      },
+      {
+        "id": "d5110378-323c-4af3-93e5-dca3451b3ea8",
+        "tierType": "Silver"
+      },
+      {
+        "id": "7d3b7b54-382d-4991-997d-2f78381d7690",
+        "tierType": "Silver"
+      },
+      {
+        "id": "b18e28e6-69a3-455a-8a5a-1a3170c76bb7",
+        "tierType": "Gold"
+      },
+      {
+        "id": "df87dc00-f0fe-4e47-b864-ad6b4bfea81a",
+        "tierType": "Gold"
+      },
+      {
+        "id": "840b6bc5-4786-40bc-b864-cc5c2b78641a",
+        "tierType": "Diamond"
+      },
+      {
+        "id": "6028b902-ccf6-4cca-bc37-de4649806460",
+        "tierType": "Gold"
+      }
+    ],
+    "skills": [
+      {
+        "id": "ff37ca26-2e4a-49bc-982d-49ff434e7295",
+        "tierType": "Diamond"
+      },
+      {
+        "id": "22e88b23-7497-4cb9-92a9-6d5e6bde6373",
+        "tierType": "Gold"
+      }
+    ]
+  },
+  {
+    "id": "20863550-960f-4713-99eb-2ff2e4cfb3ef",
+    "health": 4700,
+    "items": [
+      {
+        "id": "f4bef5b2-773b-44bf-84a0-67ae325604f7",
+        "tierType": "Gold"
+      },
+      {
+        "id": "66132d49-d270-49b9-899f-f5be8017b989",
+        "tierType": "Diamond"
+      },
+      {
+        "id": "b02a2b57-da9c-4ad6-88ac-219b3bfec103",
+        "tierType": "Diamond"
+      },
+      {
+        "id": "a490a838-37ed-4812-88fa-9e9a88d2eb8d",
+        "tierType": "Gold"
+      },
+      {
+        "id": "f07fc136-5917-4915-a9d5-2246cb290b0d",
+        "tierType": "Gold"
+      },
+      {
+        "id": "6076200d-dc08-47a2-a7d2-dfa2e484422a",
+        "tierType": "Gold"
+      },
+      {
+        "id": "e5af5b7c-2e8f-4135-8e14-8d1ea71908de",
+        "tierType": "Legendary"
+      },
+      {
+        "id": "ae142862-37fd-42b6-b131-48977d29595e",
+        "tierType": "Diamond"
+      }
+    ],
+    "skills": [
+      {
+        "id": "fbbfbef7-8fe4-4ac0-81fa-09afb59e0fcc",
+        "tierType": "Diamond"
+      },
+      {
+        "id": "178d4272-35c7-4d10-9deb-58d074d2cbea",
+        "tierType": "Gold"
+      }
+    ]
+  },
+  {
     "id": "4101117c-9cb0-480e-bfac-814da069ec80",
     "health": 450,
     "items": [

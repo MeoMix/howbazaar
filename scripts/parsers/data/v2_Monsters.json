@@ -1,4 +1,166 @@
 {
+  "41c5f103-2d76-4a51-ae28-ee294490b071": {
+    "Id": "41c5f103-2d76-4a51-ae28-ee294490b071",
+    "InternalName": "Ventriloquist",
+    "Health": 450,
+    "Items": [
+      {
+        "EnchantmentType": null,
+        "Id": "0022c409-c839-41e8-8022-65a407457dfe",
+        "Tier": "Silver"
+      },
+      {
+        "EnchantmentType": null,
+        "Id": "b23c5988-7091-4b77-a7fb-134c0d0a3285",
+        "Tier": "Gold"
+      },
+      {
+        "EnchantmentType": null,
+        "Id": "e2a09e24-d454-450f-a39a-23f505ee32fa",
+        "Tier": "Silver"
+      },
+      {
+        "EnchantmentType": null,
+        "Id": "d6819596-2601-4757-8b72-2d708971023d",
+        "Tier": "Gold"
+      },
+      {
+        "EnchantmentType": null,
+        "Id": "9e5e3d9e-ad05-4340-9071-4fccecb79695",
+        "Tier": "Silver"
+      },
+      {
+        "EnchantmentType": null,
+        "Id": "529a7e95-b350-4fd6-96fd-fef80d4c1462",
+        "Tier": "Gold"
+      },
+      {
+        "EnchantmentType": null,
+        "Id": "dc3bf5cb-45fa-46c7-9a0e-3f3bfb01697d",
+        "Tier": "Gold"
+      },
+      {
+        "EnchantmentType": null,
+        "Id": "7f706346-b364-4791-a104-ed6fe03e87e1",
+        "Tier": "Silver"
+      }
+    ],
+    "Skills": [
+      {
+        "Id": "0d8cd0dc-67ab-4c3c-b11c-88e78559a900",
+        "Tier": "Silver"
+      }
+    ]
+  },
+  "3e80e4e9-13e6-441c-b770-a82a0297ad47": {
+    "Id": "3e80e4e9-13e6-441c-b770-a82a0297ad47",
+    "InternalName": "Terrorform",
+    "Health": 2325,
+    "Items": [
+      {
+        "EnchantmentType": null,
+        "Id": "9778f31c-87b0-4d8d-8289-50e90dd7edc5",
+        "Tier": "Gold"
+      },
+      {
+        "EnchantmentType": null,
+        "Id": "d5110378-323c-4af3-93e5-dca3451b3ea8",
+        "Tier": "Silver"
+      },
+      {
+        "EnchantmentType": null,
+        "Id": "7d3b7b54-382d-4991-997d-2f78381d7690",
+        "Tier": "Silver"
+      },
+      {
+        "EnchantmentType": null,
+        "Id": "b18e28e6-69a3-455a-8a5a-1a3170c76bb7",
+        "Tier": "Gold"
+      },
+      {
+        "EnchantmentType": null,
+        "Id": "df87dc00-f0fe-4e47-b864-ad6b4bfea81a",
+        "Tier": "Gold"
+      },
+      {
+        "EnchantmentType": null,
+        "Id": "840b6bc5-4786-40bc-b864-cc5c2b78641a",
+        "Tier": "Diamond"
+      },
+      {
+        "EnchantmentType": null,
+        "Id": "6028b902-ccf6-4cca-bc37-de4649806460",
+        "Tier": "Gold"
+      }
+    ],
+    "Skills": [
+      {
+        "Id": "ff37ca26-2e4a-49bc-982d-49ff434e7295",
+        "Tier": "Diamond"
+      },
+      {
+        "Id": "22e88b23-7497-4cb9-92a9-6d5e6bde6373",
+        "Tier": "Gold"
+      }
+    ]
+  },
+  "20863550-960f-4713-99eb-2ff2e4cfb3ef": {
+    "Id": "20863550-960f-4713-99eb-2ff2e4cfb3ef",
+    "InternalName": "Morguloth",
+    "Health": 4700,
+    "Items": [
+      {
+        "EnchantmentType": null,
+        "Id": "f4bef5b2-773b-44bf-84a0-67ae325604f7",
+        "Tier": "Gold"
+      },
+      {
+        "EnchantmentType": null,
+        "Id": "66132d49-d270-49b9-899f-f5be8017b989",
+        "Tier": "Diamond"
+      },
+      {
+        "EnchantmentType": null,
+        "Id": "b02a2b57-da9c-4ad6-88ac-219b3bfec103",
+        "Tier": "Diamond"
+      },
+      {
+        "EnchantmentType": null,
+        "Id": "a490a838-37ed-4812-88fa-9e9a88d2eb8d",
+        "Tier": "Gold"
+      },
+      {
+        "EnchantmentType": null,
+        "Id": "f07fc136-5917-4915-a9d5-2246cb290b0d",
+        "Tier": "Gold"
+      },
+      {
+        "EnchantmentType": null,
+        "Id": "6076200d-dc08-47a2-a7d2-dfa2e484422a",
+        "Tier": "Gold"
+      },
+      {
+        "EnchantmentType": null,
+        "Id": "e5af5b7c-2e8f-4135-8e14-8d1ea71908de",
+        "Tier": "Legendary"
+      },
+      {
+        "EnchantmentType": null,
+        "Id": "ae142862-37fd-42b6-b131-48977d29595e",
+        "Tier": "Diamond"
+      }
+    ],
+    "Skills": [
+      {
+        "Id": "fbbfbef7-8fe4-4ac0-81fa-09afb59e0fcc",
+        "Tier": "Diamond"
+      },
+      {
+        "Id": "178d4272-35c7-4d10-9deb-58d074d2cbea",
+        "Tier": "Gold"
+      }
+    ]
+  },
   "4101117c-9cb0-480e-bfac-814da069ec80": {
     "Id": "4101117c-9cb0-480e-bfac-814da069ec80",
     "InternalName": "Street Gamer",
@@ -428,7 +590,7 @@
   },
   "962bf2b2-fc1b-4ad3-9526-15d76d3bb0de": {
     "Id": "962bf2b2-fc1b-4ad3-9526-15d76d3bb0de",
-    "InternalName": "Enclave Weeper",
+    "InternalName": "Foundation Weeper",
     "Health": 1550,
     "Items": [
       {
@@ -2287,7 +2449,7 @@
         "Tier": "Bronze"
       }
     ]
-  }, 
+  },
   "70e45a3a-3bf6-4097-aa14-be9e7d794914": {
     "Id": "70e45a3a-3bf6-4097-aa14-be9e7d794914",
     "InternalName": "Rogue Scrapper (Bronze)",
@@ -2467,7 +2629,7 @@
         "Tier": "Gold"
       }
     ]
-  }, 
+  },
   "a9b27854-6f5c-4414-b458-90c54c444171": {
     "Id": "a9b27854-6f5c-4414-b458-90c54c444171",
     "InternalName": "Trash Golem (Silver)",
@@ -3134,7 +3296,7 @@
   },
   "d9e56b4c-8ad2-465d-b44c-45a7f2562bde": {
     "Id": "d9e56b4c-8ad2-465d-b44c-45a7f2562bde",
-    "InternalName": "Shock Trooper",
+    "InternalName": "Annex Trooper",
     "Health": 1925,
     "Items": [
       {
@@ -3596,7 +3758,7 @@
   },
   "fc3dee8e-aef5-41c9-95a8-d91ad54adede": {
     "Id": "fc3dee8e-aef5-41c9-95a8-d91ad54adede",
-    "InternalName": "Enclave Revenant",
+    "InternalName": "Foundation Revenant",
     "Health": 3200,
     "Items": [
       {
@@ -3757,7 +3919,7 @@
   },
   "be75b034-f986-4cdd-b871-5e8258865c29": {
     "Id": "be75b034-f986-4cdd-b871-5e8258865c29",
-    "InternalName": "Death Knight Reaper",
+    "InternalName": "Void Knight",
     "Health": 3675,
     "Items": [
       {
@@ -4348,7 +4510,7 @@
   },
   "04b60df4-91d9-4065-94e0-f9f462a3b104": {
     "Id": "04b60df4-91d9-4065-94e0-f9f462a3b104",
-    "InternalName": "Tempest Flamedancer",
+    "InternalName": "Tempest Bravo",
     "Health": 300,
     "Items": [
       {
