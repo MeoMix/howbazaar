@@ -19,7 +19,8 @@
 		"upload:images": "tsx scripts/uploadImagesToBunnyCDN.ts",
 		"pullLatestPatch": "tsx scripts/pullLatestPatch.ts",
 		"pullLatestGame": "tsx scripts/pullLatestGame.ts",
-		"generateMerchantFilterMapping": "tsx scripts/parsers/generateMerchantFilterMapping.ts"
+		"generateMerchantFilterMapping": "tsx scripts/parsers/generateMerchantFilterMapping.ts",
+		"findSimilar": "tsx scripts/findSimilar.ts"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-vercel": "^5.7.0",
@@ -32,6 +33,7 @@
 		"axios": "^1.9.0",
 		"dotenv": "^16.5.0",
 		"fastest-levenshtein": "^1.0.16",
+		"image-hash": "^5.3.2",
 		"jest-diff": "^29.7.0",
 		"node-fetch": "^3.3.2",
 		"quicktype": "^23.0.175",
