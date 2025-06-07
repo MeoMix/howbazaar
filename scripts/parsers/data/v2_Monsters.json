@@ -494,7 +494,7 @@
   },
   "ae118438-c54d-4129-98d1-b576e4a4d380": {
     "Id": "ae118438-c54d-4129-98d1-b576e4a4d380",
-    "InternalName": "Preening Duelist Monster",
+    "InternalName": "Preening Duelist",
     "Health": 650,
     "Items": [
       {
@@ -690,7 +690,7 @@
     "Skills": [
       {
         "Id": "b57df6d6-fc6c-4401-ad41-77f83388eabe",
-        "Tier": "Gold"
+        "Tier": "Diamond"
       },
       {
         "Id": "b49dd22b-ef95-4f7e-954e-556e1e431d4a",
@@ -2175,17 +2175,22 @@
     "Items": [
       {
         "EnchantmentType": null,
-        "Id": "8391a75d-56e7-4206-a16e-62dbd986925f",
+        "Id": "2c79dcd7-3205-4d41-85e9-daecb8d1c7c5",
+        "Tier": "Gold"
+      },
+      {
+        "EnchantmentType": "Obsidian",
+        "Id": "2989cfa7-86d3-40f7-9946-e417a25d9535",
         "Tier": "Gold"
       },
       {
         "EnchantmentType": null,
-        "Id": "8938035e-be96-4827-bd34-7258253bd942",
-        "Tier": "Diamond"
+        "Id": "25545684-3fd5-4adf-abcc-0e2bb6c500c1",
+        "Tier": "Gold"
       },
       {
-        "EnchantmentType": null,
-        "Id": "25545684-3fd5-4adf-abcc-0e2bb6c500c1",
+        "EnchantmentType": "Toxic",
+        "Id": "2989cfa7-86d3-40f7-9946-e417a25d9535",
         "Tier": "Gold"
       },
       {
@@ -2195,12 +2200,12 @@
       },
       {
         "EnchantmentType": null,
-        "Id": "01f6e150-ba23-429c-a43b-2508f63fc798",
-        "Tier": "Gold"
+        "Id": "af24dea0-6cc9-49dc-acec-d90313b46b72",
+        "Tier": "Diamond"
       },
       {
         "EnchantmentType": null,
-        "Id": "5a9bd869-4614-4edf-941d-5f44e0bb1519",
+        "Id": "54040bca-14e5-4f6d-bfa8-b67658adda0b",
         "Tier": "Diamond"
       }
     ],
@@ -2887,7 +2892,7 @@
       {
         "EnchantmentType": null,
         "Id": "ca77281c-f912-4db3-86ce-64842a4ccdaa",
-        "Tier": "Silver"
+        "Tier": "Gold"
       }
     ],
     "Skills": [
@@ -4367,7 +4372,7 @@
     "Skills": [
       {
         "Id": "09c4c894-0397-47e5-9635-7b1f4c49527a",
-        "Tier": "Gold"
+        "Tier": "Silver"
       },
       {
         "Id": "d2f910bc-3490-456f-8ab0-aedda752bc5c",
@@ -4633,11 +4638,11 @@
     "Skills": [
       {
         "Id": "f74f460e-6b49-43a9-9b9f-9b6fe36d28e9",
-        "Tier": "Gold"
+        "Tier": "Diamond"
       },
       {
         "Id": "3b3b1f2b-7f43-440d-807b-61eea3a65cb0",
-        "Tier": "Gold"
+        "Tier": "Diamond"
       }
     ]
   },

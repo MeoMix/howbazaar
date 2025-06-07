@@ -587,7 +587,7 @@ const data: ParsedMonster[] = [
     "skills": [
       {
         "id": "b57df6d6-fc6c-4401-ad41-77f83388eabe",
-        "tierType": "Gold"
+        "tierType": "Diamond"
       },
       {
         "id": "b49dd22b-ef95-4f7e-954e-556e1e431d4a",
@@ -1852,27 +1852,33 @@ const data: ParsedMonster[] = [
     "health": 2750,
     "items": [
       {
-        "id": "8391a75d-56e7-4206-a16e-62dbd986925f",
+        "id": "2c79dcd7-3205-4d41-85e9-daecb8d1c7c5",
         "tierType": "Gold"
       },
       {
-        "id": "8938035e-be96-4827-bd34-7258253bd942",
-        "tierType": "Diamond"
+        "id": "2989cfa7-86d3-40f7-9946-e417a25d9535",
+        "tierType": "Gold",
+        "enchantmentType": "Obsidian"
       },
       {
         "id": "25545684-3fd5-4adf-abcc-0e2bb6c500c1",
         "tierType": "Gold"
       },
       {
+        "id": "2989cfa7-86d3-40f7-9946-e417a25d9535",
+        "tierType": "Gold",
+        "enchantmentType": "Toxic"
+      },
+      {
         "id": "fd95b873-24a4-4af6-8b08-296f24a3576c",
         "tierType": "Gold"
       },
       {
-        "id": "01f6e150-ba23-429c-a43b-2508f63fc798",
-        "tierType": "Gold"
+        "id": "af24dea0-6cc9-49dc-acec-d90313b46b72",
+        "tierType": "Diamond"
       },
       {
-        "id": "5a9bd869-4614-4edf-941d-5f44e0bb1519",
+        "id": "54040bca-14e5-4f6d-bfa8-b67658adda0b",
         "tierType": "Diamond"
       }
     ],
@@ -2455,7 +2461,7 @@ const data: ParsedMonster[] = [
       },
       {
         "id": "ca77281c-f912-4db3-86ce-64842a4ccdaa",
-        "tierType": "Silver"
+        "tierType": "Gold"
       }
     ],
     "skills": [
@@ -3713,7 +3719,7 @@ const data: ParsedMonster[] = [
     "skills": [
       {
         "id": "09c4c894-0397-47e5-9635-7b1f4c49527a",
-        "tierType": "Gold"
+        "tierType": "Silver"
       },
       {
         "id": "d2f910bc-3490-456f-8ab0-aedda752bc5c",
@@ -3949,11 +3955,11 @@ const data: ParsedMonster[] = [
     "skills": [
       {
         "id": "f74f460e-6b49-43a9-9b9f-9b6fe36d28e9",
-        "tierType": "Gold"
+        "tierType": "Diamond"
       },
       {
         "id": "3b3b1f2b-7f43-440d-807b-61eea3a65cb0",
-        "tierType": "Gold"
+        "tierType": "Diamond"
       }
     ]
   },
