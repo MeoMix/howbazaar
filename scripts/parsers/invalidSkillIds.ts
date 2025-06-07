@@ -1,4 +1,6 @@
 const invalidSkillIds: Record<string, string> = {
+  "edc0d83d-323e-4f3f-af66-ff5fe958387c": "[SKILL TEMPLATE]",
+
   "7e32e9be-23d1-4d3f-a103-0a0db10bc4f4": "Cauterize",
   "4589a64c-fdc8-4334-a2c7-05a3a8b2c5da": "Rapid Thaw",
   "69edc2fa-7aba-457e-bbcf-05f2e0f18139": "[DEBUG] Defense Grid",

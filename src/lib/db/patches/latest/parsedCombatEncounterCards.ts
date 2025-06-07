@@ -12,6 +12,10 @@ const data: ParsedCombatEncounterCard[] = [
     "name": "Zookeeper"
   },
   {
+    "id": "5ee7d5e2-1df7-4335-9cac-09a5c749b859",
+    "name": "Training Dummy"
+  },
+  {
     "id": "3e80e4e9-13e6-441c-b770-a82a0297ad47",
     "name": "Terrorform"
   },
@@ -44,6 +48,10 @@ const data: ParsedCombatEncounterCard[] = [
     "name": "Property Baron"
   },
   {
+    "id": "7570c77c-7d47-4ab2-ab33-a140bcdf4b70",
+    "name": "Blowguns Trap"
+  },
+  {
     "id": "b79845a7-f806-4e7a-9011-d98ebd22a323",
     "name": "Viper"
   },
@@ -58,6 +66,10 @@ const data: ParsedCombatEncounterCard[] = [
   {
     "id": "581a229a-1490-4996-9fff-d189c08fd639",
     "name": "Giant Mosquito"
+  },
+  {
+    "id": "a5103989-fb08-4ac6-a5e8-6a610e0b1d46",
+    "name": "Qomatz"
   },
   {
     "id": "55046a2f-f81e-4720-aefa-e74b14a06dad",
@@ -148,6 +160,10 @@ const data: ParsedCombatEncounterCard[] = [
     "name": "Fanged Inglet"
   },
   {
+    "id": "967508d9-5c1b-4084-a445-23e53a3839bc",
+    "name": "Caltrops Trap"
+  },
+  {
     "id": "66245d12-d5eb-4c08-9185-6ddaf626bbd3",
     "name": "Covetous Thief"
   },
@@ -204,6 +220,10 @@ const data: ParsedCombatEncounterCard[] = [
     "name": "Preening Duelist"
   },
   {
+    "id": "3b0b8b93-75bd-4a2d-8001-1cb8171e71bb",
+    "name": "Boulder Trap"
+  },
+  {
     "id": "fc3dee8e-aef5-41c9-95a8-d91ad54adede",
     "name": "Foundation Revenant"
   },
@@ -248,6 +268,10 @@ const data: ParsedCombatEncounterCard[] = [
     "name": "Dragon"
   },
   {
+    "id": "9283b658-2d0b-4c0a-8e62-b185a8ac6ad0",
+    "name": "Blowguns Trap"
+  },
+  {
     "id": "58477f3f-70f1-4000-9ad0-9e0f44b42349",
     "name": "Volkas Enforcer"
   },
@@ -272,6 +296,10 @@ const data: ParsedCombatEncounterCard[] = [
     "name": "Virtual PVP Neltharion"
   },
   {
+    "id": "2a4e119c-bd71-4657-b47a-a56559acf94b",
+    "name": "[MONSTER ENCOUNTER TEMPLATE]"
+  },
+  {
     "id": "bc5fa0a4-8ca9-4384-a283-9c7c84b27169",
     "name": "Dire Mosquito"
   },
@@ -290,6 +318,14 @@ const data: ParsedCombatEncounterCard[] = [
   {
     "id": "492c7f84-3cb2-40bb-8a55-29355143bee2",
     "name": "Hulking Experiment"
+  },
+  {
+    "id": "4ce6d441-4aed-455b-b83f-0b057b462515",
+    "name": "Mythkeeper"
+  },
+  {
+    "id": "e915e6f0-93c1-46cc-a546-3867f192bb17",
+    "name": "Caltrops Trap"
   },
   {
     "id": "96349563-bfb5-46ef-8dff-dbf1ff0d4196",
@@ -332,6 +368,10 @@ const data: ParsedCombatEncounterCard[] = [
     "name": "Scovyle"
   },
   {
+    "id": "d1dc075f-f5d4-4bb7-9655-55591e123941",
+    "name": "Greenheart Guardian"
+  },
+  {
     "id": "23a21c0f-e163-4817-ba15-0e899d19d387",
     "name": "Chilly Charles"
   },
@@ -350,6 +390,10 @@ const data: ParsedCombatEncounterCard[] = [
   {
     "id": "365122bf-7bb0-4fa3-93bd-06bf5a94e324",
     "name": "Trash Golem"
+  },
+  {
+    "id": "14854ca0-bd1f-4f63-951b-97c1afb3af3b",
+    "name": "Blowguns Trap"
   },
   {
     "id": "0f0b2074-06d7-4aea-a5aa-9e603602215a",
@@ -404,6 +448,10 @@ const data: ParsedCombatEncounterCard[] = [
     "name": "Infernal Frigate"
   },
   {
+    "id": "b654d08b-cd50-44af-b92c-ebf189d81547",
+    "name": "Boulder Trap"
+  },
+  {
     "id": "f79e72dc-7f9b-4e7e-b14e-d4896fcf004f",
     "name": "Ghost Pepper"
   },
@@ -432,12 +480,20 @@ const data: ParsedCombatEncounterCard[] = [
     "name": "Flame Juggler"
   },
   {
+    "id": "16a97acb-0b8c-4d04-b30a-c861a52a82e2",
+    "name": "Caltrops Trap"
+  },
+  {
     "id": "d50543f3-132c-4c43-9230-50a5e96087d9",
     "name": "Loan Shark"
   },
   {
     "id": "1d24717f-7bfb-48e9-9320-6a69d72e233e",
     "name": "Banannibal"
+  },
+  {
+    "id": "374416cd-89ed-451d-a131-e3839400432e",
+    "name": "Boulder Trap"
   },
   {
     "id": "a44c3d18-8968-4956-b3a2-5cbf3b4c12c2",

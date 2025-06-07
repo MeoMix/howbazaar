@@ -69491,6 +69491,44 @@ const data: ParsedItemCard[] = [
     "packId": "Pygmalien_Core"
   },
   {
+    "id": "77c8ef2d-62c8-4214-993d-648915c93e83",
+    "name": "Temple Expedition Ticket",
+    "startingTier": "Legendary",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": []
+      },
+      "Diamond": {
+        "tooltips": []
+      },
+      "Legendary": {
+        "tooltips": [
+          "On Day 9, allows you to embark on the Temple Expedition."
+        ]
+      }
+    },
+    "tags": [
+      "Loot"
+    ],
+    "hiddenTags": [],
+    "customTags": [],
+    "size": "Small",
+    "heroes": [
+      "Common"
+    ],
+    "enchantments": [],
+    "unifiedTooltips": [
+      "On Day 9, allows you to embark on the Temple Expedition."
+    ],
+    "packId": "Core"
+  },
+  {
     "id": "2834ede9-01e9-4b68-8f1f-70f83187c78f",
     "name": "Sharkray",
     "startingTier": "Silver",

@@ -21,7 +21,7 @@ const disallowedCardPacks = [
 ] as string[];
 
 // Keywords that indicate a card should be filtered out
-const invalidKeywords = ["[", "]", "Debug", "Tutorial"] as const;
+const invalidKeywords = ["Debug", "Tutorial"] as const;
 
 const invalidTags = ["Lifesteal", "NonWeapon", "Passive"];
 
@@ -408,10 +408,6 @@ function hasInvalidKeywords(text: string): boolean {
 
     // Check for each invalid keyword
     return invalidKeywords.some(keyword => {
-        // For square brackets, check for exact matches
-        if (keyword === "[" || keyword === "]") {
-            return text.includes(keyword);
-        }
         // For "Debug" and "Test", check for word boundaries to avoid matching substrings
         return new RegExp(`\\b${keyword.toLowerCase()}\\b`).test(lowerText);
     });

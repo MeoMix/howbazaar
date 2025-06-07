@@ -1,5 +1,9 @@
 const invalidItemIds: Record<string, string> = {
+  "16e3ebba-d530-489c-8439-3b47a4182c09": "Katanta Test",
   "ed5688bd-99ff-4734-84f4-95fa1210c8bd": "Dam Test",
+  "273b7c90-a4be-4226-b374-94a7c01f07d9": "Small Item Template",
+  "a031a51e-7b07-4055-adff-a421d2ee8943": "Medium Item Template",
+  "599c27bd-2e78-45a6-9390-aeb349a20e29": "Large Item Template",
   "bfa28eec-84de-41cb-bc5c-8de700a5d21f": "Focused Core",
   "35b7a978-275b-48f0-8e3d-9be2391c6a78": "Bulky Package",
   "8b2ce029-7f69-401c-9811-3a6398237a90": "Gingerbread Man",

@@ -144,6 +144,10 @@ const data: ParsedMonster[] = [
     "health": 450,
     "items": [
       {
+        "id": "77c8ef2d-62c8-4214-993d-648915c93e83",
+        "tierType": "Legendary"
+      },
+      {
         "id": "b57d9963-d241-40c9-8f9f-f9925a2da661",
         "tierType": "Gold"
       },
@@ -508,8 +512,8 @@ const data: ParsedMonster[] = [
     "health": 1550,
     "items": [
       {
-        "id": "562d768a-6aaf-4704-be8b-4dc9e6311b11",
-        "tierType": "Bronze"
+        "id": "77c8ef2d-62c8-4214-993d-648915c93e83",
+        "tierType": "Legendary"
       },
       {
         "id": "09132149-783d-4d5a-900c-31135bffab44",
@@ -665,6 +669,10 @@ const data: ParsedMonster[] = [
     "health": 1200,
     "items": [
       {
+        "id": "77c8ef2d-62c8-4214-993d-648915c93e83",
+        "tierType": "Legendary"
+      },
+      {
         "id": "08bb5055-bd8d-4f86-bff6-24f8cb47f509",
         "tierType": "Bronze"
       },
@@ -709,6 +717,10 @@ const data: ParsedMonster[] = [
     "id": "dbc00a8b-7fae-4792-a9da-698d3cd4f578",
     "health": 1200,
     "items": [
+      {
+        "id": "77c8ef2d-62c8-4214-993d-648915c93e83",
+        "tierType": "Legendary"
+      },
       {
         "id": "08bb5055-bd8d-4f86-bff6-24f8cb47f509",
         "tierType": "Bronze"
@@ -1704,6 +1716,10 @@ const data: ParsedMonster[] = [
     "health": 400,
     "items": [
       {
+        "id": "77c8ef2d-62c8-4214-993d-648915c93e83",
+        "tierType": "Legendary"
+      },
+      {
         "id": "6ba3778c-e760-44f3-b3b4-a4b4ca267cc2",
         "tierType": "Silver"
       },
@@ -1744,8 +1760,12 @@ const data: ParsedMonster[] = [
     "health": 1200,
     "items": [
       {
+        "id": "77c8ef2d-62c8-4214-993d-648915c93e83",
+        "tierType": "Legendary"
+      },
+      {
         "id": "dc3bf5cb-45fa-46c7-9a0e-3f3bfb01697d",
-        "tierType": "Silver"
+        "tierType": "Bronze"
       },
       {
         "id": "3b924a0a-f423-4286-8d08-9ade57b2ebae",
@@ -2564,6 +2584,10 @@ const data: ParsedMonster[] = [
     "health": 650,
     "items": [
       {
+        "id": "77c8ef2d-62c8-4214-993d-648915c93e83",
+        "tierType": "Legendary"
+      },
+      {
         "id": "6ba3778c-e760-44f3-b3b4-a4b4ca267cc2",
         "tierType": "Gold"
       },
@@ -2592,6 +2616,10 @@ const data: ParsedMonster[] = [
     "health": 650,
     "items": [
       {
+        "id": "77c8ef2d-62c8-4214-993d-648915c93e83",
+        "tierType": "Legendary"
+      },
+      {
         "id": "6ba3778c-e760-44f3-b3b4-a4b4ca267cc2",
         "tierType": "Gold"
       },
@@ -2619,6 +2647,10 @@ const data: ParsedMonster[] = [
     "id": "8eb6cf35-27ab-4726-b9f7-05133a4b94b8",
     "health": 900,
     "items": [
+      {
+        "id": "77c8ef2d-62c8-4214-993d-648915c93e83",
+        "tierType": "Legendary"
+      },
       {
         "id": "da766a09-0352-4966-829f-20bda8da48d7",
         "tierType": "Gold"
@@ -2852,6 +2884,10 @@ const data: ParsedMonster[] = [
     "health": 1700,
     "items": [
       {
+        "id": "77c8ef2d-62c8-4214-993d-648915c93e83",
+        "tierType": "Legendary"
+      },
+      {
         "id": "5ded844c-5279-4c30-9198-309fba0b651b",
         "tierType": "Gold"
       },
@@ -2878,10 +2914,6 @@ const data: ParsedMonster[] = [
       {
         "id": "46b1261c-a04c-4a35-8a9e-6763a5d85c43",
         "tierType": "Silver"
-      },
-      {
-        "id": "5a9bd869-4614-4edf-941d-5f44e0bb1519",
-        "tierType": "Diamond"
       },
       {
         "id": "5ded844c-5279-4c30-9198-309fba0b651b",
@@ -2904,6 +2936,10 @@ const data: ParsedMonster[] = [
     "health": 1700,
     "items": [
       {
+        "id": "77c8ef2d-62c8-4214-993d-648915c93e83",
+        "tierType": "Legendary"
+      },
+      {
         "id": "5ded844c-5279-4c30-9198-309fba0b651b",
         "tierType": "Gold"
       },
@@ -2930,10 +2966,6 @@ const data: ParsedMonster[] = [
       {
         "id": "46b1261c-a04c-4a35-8a9e-6763a5d85c43",
         "tierType": "Silver"
-      },
-      {
-        "id": "5a9bd869-4614-4edf-941d-5f44e0bb1519",
-        "tierType": "Diamond"
       },
       {
         "id": "5ded844c-5279-4c30-9198-309fba0b651b",
@@ -3171,6 +3203,10 @@ const data: ParsedMonster[] = [
     "id": "8e389a21-9e14-49c4-bdf3-24183f9f9295",
     "health": 300,
     "items": [
+      {
+        "id": "77c8ef2d-62c8-4214-993d-648915c93e83",
+        "tierType": "Legendary"
+      },
       {
         "id": "08bb5055-bd8d-4f86-bff6-24f8cb47f509",
         "tierType": "Bronze"
@@ -3652,6 +3688,10 @@ const data: ParsedMonster[] = [
     "health": 900,
     "items": [
       {
+        "id": "77c8ef2d-62c8-4214-993d-648915c93e83",
+        "tierType": "Legendary"
+      },
+      {
         "id": "9ad15f24-4def-4d82-8545-d73794cfbaf2",
         "tierType": "Diamond"
       },
@@ -3687,7 +3727,7 @@ const data: ParsedMonster[] = [
       },
       {
         "id": "61c83a38-2976-45d1-95c7-cafe4f34ed51",
-        "tierType": "Gold"
+        "tierType": "Silver"
       }
     ]
   },
@@ -4015,6 +4055,10 @@ const data: ParsedMonster[] = [
     "id": "54bd46ca-2dec-4fbf-bae9-4cfff1c80043",
     "health": 900,
     "items": [
+      {
+        "id": "77c8ef2d-62c8-4214-993d-648915c93e83",
+        "tierType": "Legendary"
+      },
       {
         "id": "4826832f-f3a5-4c40-b8fa-737f002074fa",
         "tierType": "Gold"
