@@ -14843,9 +14843,7 @@ const data: ParsedItemCard[] = [
       "Shield",
       "Slow"
     ],
-    "customTags": [
-      "Unpurchasable"
-    ],
+    "customTags": [],
     "size": "Small",
     "heroes": [
       "Dooley"

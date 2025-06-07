@@ -66,9 +66,6 @@ const customTagsMap: Record<string, CustomTag[]> = {
     // Dragon Wing
     "292115b4-a145-476e-b3a7-0fe199b5c1af": ["Unpurchasable"],
 
-    // Duct Tape
-    "0966f887-5aaf-44a5-90fa-ecb194270513": ["Unpurchasable"],
-
     // Ectoplasm
     "7b731de3-3598-46f4-b61f-75b7a0065d8a": ["Unpurchasable"],
 
