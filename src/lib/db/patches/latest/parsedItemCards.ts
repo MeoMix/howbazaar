@@ -72380,6 +72380,130 @@ const data: ParsedItemCard[] = [
     "packId": "Vanessa_Core"
   },
   {
+    "id": "ad80a892-eddc-4856-9a62-9e8f305dd922",
+    "name": "Hydraulic Press",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 20 seconds",
+          "Deal 0 damage.",
+          "At the end of each fight, permanently destroy the item to the left of this, and this gains that item’s Types.",
+          "This has +damage equal to 100 times the number of Types it has."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 20 seconds",
+          "Deal 0 damage.",
+          "At the end of each fight, permanently destroy the item to the left of this, and this gains that item’s Types.",
+          "This has +damage equal to 200 times the number of Types it has."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 20 seconds",
+          "Deal 0 damage.",
+          "At the end of each fight, permanently destroy the item to the left of this, and this gains that item’s Types.",
+          "This has +damage equal to 300 times the number of Types it has."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Weapon",
+      "Tool"
+    ],
+    "hiddenTags": [
+      "Damage"
+    ],
+    "customTags": [],
+    "size": "Large",
+    "heroes": [
+      "Dooley"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 3 items for 2 second(s)."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze 1 item for 3 second(s)."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 3 item for 2 second(s)."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield equal to this item's damage."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to this item's Damage."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to 10% of this item's damage."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn equal to 10% of this item's damage."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "This has double Damage."
+        ]
+      }
+    ],
+    "unifiedTooltips": [
+      "Cooldown 20 seconds",
+      "Deal 0 damage.",
+      "At the end of each fight, permanently destroy the item to the left of this, and this gains that item’s Types.",
+      "This has +damage equal to (100/200/300) times the number of Types it has."
+    ],
+    "packId": "Dooley_Core"
+  },
+  {
     "id": "3b924a0a-f423-4286-8d08-9ade57b2ebae",
     "name": "Brass Knuckles",
     "startingTier": "Bronze",

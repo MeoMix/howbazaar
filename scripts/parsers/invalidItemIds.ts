@@ -122,7 +122,6 @@ const invalidItemIds: Record<string, string> = {
   "e58f2534-e50e-49da-acdf-5bb270d77a3c": "Hang Glider",
   "c8e95316-8a46-43cd-8fc7-09ce609e8b38": "MagShield",
   "58928d1a-27ef-43be-89e2-81e627dae954": "Stelle's Workshop",
-  "ad80a892-eddc-4856-9a62-9e8f305dd922": "Hydraulic Press",
   "10ff0767-2cf5-49f5-ae5d-bea93d1d3672": "Eject Button",
   "cfca6975-d74c-41b1-a179-ae796058ca18": "Solar Drone",
   "1894ef72-327a-4b36-b336-1a58d2366492": "Flare Gun",
