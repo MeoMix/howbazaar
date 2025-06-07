@@ -1725,7 +1725,7 @@ const data: ParsedMonster[] = [
       },
       {
         "id": "9d289951-bda7-4f74-a5cf-dbe350c0cae5",
-        "tierType": "Silver"
+        "tierType": "Bronze"
       },
       {
         "id": "dc3bf5cb-45fa-46c7-9a0e-3f3bfb01697d",
