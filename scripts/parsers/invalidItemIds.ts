@@ -199,8 +199,8 @@ const invalidItemIds: Record<string, string> = {
   "367c2ad9-94b3-4f01-a130-a673922244ef": "Cookies",
   "4b99310e-ea89-4324-89fe-d2649dfd8ff6": "Oblivion Core",
   "3174b74a-9e67-4db7-ba98-0d4935b2586d": "Custom Scope",
-  
   "41581a59-fd9b-42c6-a97e-9b5587b9cbdf": "Ethergy Conduit",
+  "dd438f4e-77ea-4b7a-b59e-ae8906c49da8": "Augment Reagents"
 };
 
 export default invalidItemIds;
