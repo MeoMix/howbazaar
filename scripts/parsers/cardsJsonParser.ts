@@ -23,7 +23,7 @@ const disallowedCardPacks = [
 // Keywords that indicate a card should be filtered out
 const invalidKeywords = ["[", "]", "Debug", "Tutorial"] as const;
 
-const invalidTags = ["Lifesteal", "Loot", "NonWeapon", "Passive"];
+const invalidTags = ["Lifesteal", "NonWeapon", "Passive"];
 
 const tierOrder: TierType[] = ["Bronze", "Silver", "Gold", "Diamond", "Legendary"];
 
