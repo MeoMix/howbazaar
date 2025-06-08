@@ -396,7 +396,9 @@ function filterTooltipsByStartingTier(
     ) as Record<TierType, { tooltips: string[] }>;
 }
 
-type ValidItemCard = Card & { Tiers: Tiers, Type: "Item", Localization: { Title: { Text: string } } };
+type ValidItemCard = Card & {
+    Tiers: Tiers, Type: "Item", Localization: { Title: { Text: string } }
+};
 type ValidSkillCard = Card & { Tiers: Tiers, Type: "Skill", Localization: { Title: { Text: string } } };
 type ValidCombatEncounterCard = Card & { Type: "CombatEncounter", Localization: { Title: { Text: string } } };
 type ValidMerchantCard = Card & { Type: "EventEncounter", Localization: { Title: { Text: string }; Description: { Text: string } }, Tags: ["Merchant"] };
@@ -698,6 +700,44 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
 
         const unifiedTooltips = unifyTooltips(Object.entries(tiers).map(([, tier]) => tier.tooltips));
 
+        const quests = card.Quests?.map(quest => ({
+            entries: quest.Entries.map(entry => {
+                const rawTooltips = entry.Reward?.Localization?.Tooltips
+                    .map(tooltip => tooltip.Content.Text)
+                    .filter((tooltip): tooltip is string => tooltip !== undefined && tooltip !== null);
+
+                let rewardTiers = Object.fromEntries((Object.entries(tierMap) as Entries<typeof tierMap>).map(
+                    ([tierName, tier]) => {
+                        // TODO: I think this kind of implies should be iterating over tiers that are on the entity guaranteed?
+                        // Or it shouldn't be necessary if the way data rendering worked was smarter?
+                        if (tierName === "Legendary") {
+                            return [tierName, {
+                                tooltips: []
+                            }];
+                        }
+
+                        const tierAttributes = tier.Attributes;
+                        const rewardAttributes = entry.Reward?.Attributes ?? {};
+                        const rewardTierAttributes = (entry.Reward?.Tiers?.[tierName]?.Attributes ?? {}) as { [key: string]: number };
+                        const mergedRewardAttributes = { ...tierAttributes, ...rewardAttributes, ...rewardTierAttributes };
+                        const rewardAbilities = Object.values(entry.Reward?.Abilities ?? {});
+                        let tooltips = getDisplayedTooltips(rawTooltips, rewardAbilities, [], mergedRewardAttributes);
+
+                        return [tierName, {
+                            tooltips,
+                        }]
+                    },
+                )) as Record<TierType, { tooltips: string[] }>;
+
+                let rewardTooltips = unifyTooltips(Object.entries(rewardTiers).map(([, tier]) => tier.tooltips));
+
+                return {
+                    tooltips: entry.Localization?.Tooltips.map(tooltip => tooltip.Content.Text).filter((tooltip): tooltip is string => tooltip !== undefined && tooltip !== null),
+                    rewardTooltips: rewardTooltips,
+                };
+            })
+        })) ?? [];
+
         return {
             id: card.Id,
             name,
@@ -709,6 +749,7 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
             size: card.Size,
             heroes: card.Heroes,
             enchantments,
+            quests,
             unifiedTooltips,
             packId: card.CardPackId
         };

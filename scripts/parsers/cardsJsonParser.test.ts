@@ -24,6 +24,40 @@ describe('cardJsonParser', () => {
     expect(duplicates).toEqual([]);
   });
 
+  describe('quests', () => {
+    it('should unify all of Blank Slate\'s quest reward tooltips involving ability.q1 references', () => {
+      const blankSlate = itemCards.find(card => card.name === "Blank Slate")!;
+
+      expect(blankSlate.quests[0].entries[0].rewardTooltips[0]).toEqual(
+        'Poison (5/10/15/20).'
+      );
+
+      expect(blankSlate.quests[1].entries[0].rewardTooltips[0]).toEqual(
+        'Gain (5/10/15/20) Regen for the fight.'
+      );
+
+      expect(blankSlate.quests[4].entries[0].rewardTooltips[0]).toEqual(
+        'Freeze (1/2/3/4) items for 0.5 second(s).'
+      );
+    });
+
+    it('should unify Frost Totem\'s quest reward tooltips involving ability.q2 references', () => {
+      const frostTotem = itemCards.find(card => card.name === "Frost Totem")!;
+
+      expect(frostTotem.quests[1].entries[0].rewardTooltips[0]).toEqual(
+        'When you use another Relic, charge this 1 second(s).'
+      );
+    });
+
+    it('should unify Idol of Decay\'s quest reward tooltips involving ability.q1 references', () => {
+      const idolOfDecay = itemCards.find(card => card.name === "Idol of Decay")!;
+      
+      expect(idolOfDecay.quests[0].entries[0].rewardTooltips[0]).toEqual(
+        'When you Poison, this gains (2/4/6/8) Poison for the fight.'
+      );
+    });
+  });
+
   describe('unifiedTooltips', () => {
     it('should unify Abacus tooltips', () => {
       const abacus = itemCards.find(card => card.name === "Abacus")!;

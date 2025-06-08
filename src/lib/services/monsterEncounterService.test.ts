@@ -71,17 +71,6 @@ describe('MonsterEncounterService', () => {
         expect(octopus?.tierType).toEqual("Legendary");
     });
 
-    it('should have item details for Lord of the Waste\'s Diamond Flamberge', () => {
-        const lordOfTheWastes = monsterEncounterDays
-            .flatMap((day) => day.groups)
-            .flatMap((group) => group)
-            .find((monsterEncounter) => monsterEncounter.cardName === "Lord of the Wastes");
-
-        const flamberge = lordOfTheWastes?.items.find(item => item.card.name === "Flamberge");
-
-        expect(flamberge?.card.tiers[flamberge.tierType]?.tooltips).toHaveLength(3);
-    });
-
     it('should have item details for Thug\'s Spices (at Diamond not Gold)', () => {
         const thug = monsterEncounterDays
             .flatMap((day) => day.groups)

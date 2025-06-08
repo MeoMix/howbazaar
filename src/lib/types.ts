@@ -17,6 +17,13 @@ export type ClientSideEnchantment = {
     tooltips: string[];
 };
 
+export type ClientSideQuest = {
+    entries: {
+        tooltips: string[];
+        rewardTooltips: string[];
+    }[];
+};
+
 // TODO: Fix naming
 export type ParsedItemCard = {
     id: string;
@@ -30,7 +37,9 @@ export type ParsedItemCard = {
     customTags: CustomTag[];
     size: Size;
     heroes: Hero[];
+    // TODO: Shouldn't be "ClientSide" already here
     enchantments: ClientSideEnchantment[];
+    quests: ClientSideQuest[];
     unifiedTooltips: string[];
     packId: CorePackId | ExpansionPackId;
 };
@@ -51,6 +60,7 @@ export type ClientSideItemCard = {
     // TODO: Items can only have a single hero.
     heroes: Hero[];
     enchantments: ClientSideEnchantment[];
+    quests: ClientSideQuest[];
     unifiedTooltips: string[];
     combatEncounters: ClientSideCombatEncounterSummary[];
     packId: CorePackId | ExpansionPackId;

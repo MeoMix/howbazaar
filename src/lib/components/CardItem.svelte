@@ -111,6 +111,49 @@
                 startingTier={card.startingTier}
             />
         </div>
+
+        {#if card.quests.length > 0}
+            <div class="col-span-2 px-4 pb-4">
+                <Divider />
+
+                <div
+                    class={`grid gap-4 ${
+                        card.quests.length === 1
+                            ? "grid-cols-1"
+                            : card.quests.length === 2
+                              ? "grid-cols-2 sm:grid-cols-2"
+                              : card.quests.length === 3
+                                ? "grid-cols-2 sm:grid-cols-3"
+                                : card.quests.length === 4
+                                  ? "grid-cols-2 sm:grid-cols-2 md:grid-cols-4"
+                                  : "grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5"
+                    }`}
+                >
+                    {#each card.quests as quest}
+                        {#each quest.entries as entry}
+                            <div>
+                                <div class="text-lg font-semibold">
+                                    <UnifiedTooltips
+                                        unifiedTooltips={entry.tooltips}
+                                        startingTier={card.startingTier}
+                                    />
+                                </div>
+
+                                {#if entry.rewardTooltips.length > 0}
+                                    {#each entry.rewardTooltips as tooltip}
+                                        <UnifiedTooltip
+                                            {tooltip}
+                                            startingTier={card.startingTier}
+                                        />
+                                    {/each}
+                                {/if}
+                            </div>
+                        {/each}
+                    {/each}
+                </div>
+            </div>
+        {/if}
+
         {#if shownEnchantments.length > 0}
             <div class="col-span-2 px-4 pb-4">
                 <Divider />

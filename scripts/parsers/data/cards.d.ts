@@ -107,7 +107,19 @@ export interface Source {
 
 export type SourceType = "TTargetCardPositional" | "TTargetPlayerRelative" | "TTargetCardSelf" | "TTargetCardTriggerSource" | "TTargetPlayerAbsolute" | "TTargetCardRandom" | "TTargetCardSection" | "TTargetCardXMost" | "TTargetPlayer" | "TCardConditionalAnd" | "TCardConditionalOr" | "TCardConditionalHasEnchantment";
 
-export interface PurpleConditions {
+export type Attribute = "AmmoMax" | "Health" | "Custom_0" | "Freeze" | "Shield" | "Slow" | "Custom_5" | "Custom_4" | "Ammo" | "Custom_8" | "CooldownMax" | "DamageAmount" | "CritChance" | "ShieldApplyAmount" | "Lifesteal" | "SellPrice" | "Haste" | "Custom_1" | "Custom_2" | "Custom_3" | "BurnApplyAmount" | "PoisonApplyAmount" | "RegenApplyAmount" | "DamageCrit" | "HealAmount" | "HealthRegen" | "HealthMax" | "Income" | "Burn" | "Poison" | "ChargeAmount" | "HasteAmount";
+
+export interface TargetPlayer {
+    $type:          TargetPlayerType;
+    ExcludeSelf?:   boolean;
+    Conditions:     TargetPlayerConditions | null;
+    TargetMode?:    Origin;
+    TargetSection?: TargetSection;
+}
+
+export type TargetPlayerType = "TTargetCardTriggerSource" | "TTargetCardSelf" | "TTargetPlayerRelative" | "TTargetPlayerAbsolute" | "TTargetCardRandom" | "TTargetCardSection" | "TTargetCardXMost" | "TTargetCardPositional" | "TTargetPlayer" | "TCardConditionalOr" | "TCardConditionalAnd" | "TCardConditionalHasEnchantment";
+
+export interface TargetPlayerConditions {
     $type:               ConditionType;
     Enchantment?:        EnchantmentEnum;
     IsNot?:              boolean;
@@ -733,7 +745,7 @@ export interface PreviousValue {
 }
 
 export interface FluffySubject {
-    $type:          SourceType;
+    $type:          TargetPlayerType;
     TargetSection?: TargetSection;
     ExcludeSelf?:   boolean;
     Conditions:     FriskyConditions | null;
@@ -2203,7 +2215,7 @@ export interface Action4 {
 }
 
 export interface AmbitiousValue {
-    $type:          ComparisonValueType;
+    $type:          ReferenceValueType;
     Value?:         number;
     Target?:        IndigoSubject;
     AttributeType?: Attribute;

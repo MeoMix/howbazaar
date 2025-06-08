@@ -124,6 +124,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 8 seconds",
       "Deal (10/15/20/25) damage.",
@@ -249,6 +250,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 10 seconds",
       "Deal (10/20) damage.",
@@ -364,6 +366,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Adjacent items have (+10%/+15%/+20%/+25%) Crit Chance.",
       "Adjacent items have their cooldown reduced by (10%/15%/20%/25%)."
@@ -411,6 +414,7 @@ const data: ParsedItemCard[] = [
       "Common"
     ],
     "enchantments": [],
+    "quests": [],
     "unifiedTooltips": [
       "Sells for gold"
     ],
@@ -529,6 +533,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Shield equal to (1x/2x) the value of the adjacent items."
@@ -588,6 +593,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "When you visit a Merchant, this gains (1/2/3) value.",
       "For every 5 Merchants you visit, upgrade this."
@@ -714,6 +720,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown (6/5/4) seconds",
       "Deal 50 damage.",
@@ -839,6 +846,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 9 seconds",
       "Deal 80 damage.",
@@ -944,6 +952,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "When you use the item to the right of this, Haste it for (1/2/3/4) second(s). If it is a weapon, it also gains (+3/+5/+7/+9) damage for the fight."
     ],
@@ -1066,6 +1075,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Poison (4/8/12/16).",
@@ -1190,6 +1200,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 8 seconds",
       "Shield (10/20/30).",
@@ -1306,6 +1317,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Shield (75/150).",
@@ -1435,6 +1447,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Ammo 2",
@@ -1550,6 +1563,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "At the start of each fight, Poison yourself (4/8/12/16).",
       "The item to the left of this has + Crit Chance equal to your Poison."
@@ -1674,6 +1688,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown (13/12/11/10) seconds",
       "Deal (100/250/500/800) damage.",
@@ -1797,6 +1812,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Burn (1/2/3) for each type this has.",
@@ -1921,6 +1937,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Heal (25/50/100/200).",
@@ -2030,6 +2047,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "At the start of each fight, transform into a (Gold/Diamond) copy of another small, non-legendary item you have for the fight."
     ],
@@ -2145,6 +2163,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Ammo 1",
@@ -2270,6 +2289,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Haste the Aquatic item to the right of this for 2 second(s).",
@@ -2332,6 +2352,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Adjacent items have (+25%/+50%) Crit Chance.",
       "Adjacent items have bonus damage, heal, or shield equal to their Crit Chance."
@@ -2452,6 +2473,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown (10/8/6) seconds",
       "Deal 2 damage.",
@@ -2581,6 +2603,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 8 seconds",
       "Ammo 4",
@@ -2691,6 +2714,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 11 seconds",
       "Freeze both players' items for (1/2) second(s)."
@@ -2801,6 +2825,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Charge adjacent items 1 second(s).",
@@ -2913,6 +2938,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown (5/4) seconds",
       "Transform into 3 (Gold/Diamond) copies of the small, non-legendary item to the left of this for the fight."
@@ -3030,6 +3056,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "When an item runs out of Ammo, Deal (100/200) damage.",
       "The item to the left of this has +100% Crit Chance and +1 Max Ammo.",
@@ -3157,6 +3184,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 9 seconds",
       "Shield (50/75/100/125).",
@@ -3281,6 +3309,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown (7/6/5/4) seconds",
       "Shield 20.",
@@ -3405,6 +3434,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 9 seconds",
       "Shield (10/15/20/25).",
@@ -3507,6 +3537,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "When you use the item to the left of this, charge the item to the right of this for (1/2) second(s).",
       "When you use the Core, it gains (+20/+40) damage for the fight."
@@ -3629,6 +3660,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 9 seconds",
       "Deal (20/40/60) damage.",
@@ -3751,6 +3783,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Shield (30/40/50).",
@@ -3802,6 +3835,7 @@ const data: ParsedItemCard[] = [
       "Mak"
     ],
     "enchantments": [],
+    "quests": [],
     "unifiedTooltips": [
       "At the start of each day, get a Catalyst.",
       "When you sell Catalyst, gain (1/2/3) Regen."
@@ -3911,6 +3945,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "When you Poison or use a Relic, your items gain (+2%/+4%) crit chance for the fight.",
       "When you Crit, Charge your Relics 1 second."
@@ -4025,6 +4060,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
       "A Friend gains +1 Multicast for the fight.",
@@ -4151,6 +4187,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Shield (200/300).",
@@ -4275,6 +4312,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 2 seconds",
       "Ammo 8",
@@ -4390,6 +4428,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 8 seconds",
       "Gain Shield equal to your enemy's burn.",
@@ -4504,6 +4543,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 8 seconds",
       "Lifesteal",
@@ -4611,6 +4651,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "When you use a Friend, Haste it for (1/2) second(s).",
       "Adjacent items are Friends."
@@ -4732,6 +4773,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown (10/9/8) seconds",
       "Haste your Friends for 2 second(s).",
@@ -4857,6 +4899,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown (10/9/8) seconds",
       "Deal 1 damage.",
@@ -4981,6 +5024,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 9 seconds",
       "Deal 40 damage.",
@@ -5106,6 +5150,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Deal (50/100/150/200) Damage.",
@@ -5226,6 +5271,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 2 seconds",
       "Reduce the cooldown of your other items by 8% for this fight.",
@@ -5343,6 +5389,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Charge the Tech item to the right of this (1/2) second(s).",
@@ -5456,6 +5503,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown (10/9/8) seconds",
       "Permanently gain (10/15/20) Max Health.",
@@ -5569,6 +5617,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Deal (20/30/40/50) damage.",
@@ -5686,6 +5735,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 10 seconds",
       "Poison equal to your Regen.",
@@ -5808,6 +5858,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Burn 3.",
@@ -5924,6 +5975,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Poison 10.",
@@ -6043,6 +6095,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 8 seconds",
       "Gain 4 Regen for the fight.",
@@ -6166,6 +6219,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
       "Ammo 1",
@@ -6295,6 +6349,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Poison (1/2/3/4).",
@@ -6426,6 +6481,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown (7/6/5) seconds",
       "Deal 50 damage.",
@@ -6523,6 +6579,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "At the start of each fight, Burn (6/9/12/15)."
     ],
@@ -6634,6 +6691,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 8 seconds",
       "Freeze (1/2/3) item(s) for 1 second(s).",
@@ -6757,6 +6815,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 8 seconds",
       "Haste 1 item(s) for (1/2/3/4) second(s).",
@@ -6879,6 +6938,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 9 seconds",
       "Deal (90/120/150) damage",
@@ -6982,6 +7042,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "When you sell this, permanently gain (1/2/3/4) Regen."
     ],
@@ -7041,6 +7102,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "At the start of each day, get 2 Spare Change."
     ],
@@ -7159,6 +7221,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Shield (75/100/125).",
@@ -7280,6 +7343,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
       "Adjacent items gain (+3/+6/+9) value for the fight.",
@@ -7397,6 +7461,32 @@ const data: ParsedItemCard[] = [
         "type": "Obsidian",
         "tooltips": [
           "Deal 50 Damage."
+        ]
+      }
+    ],
+    "quests": [
+      {
+        "entries": [
+          {
+            "tooltips": [
+              "Buy 4 Freeze items"
+            ],
+            "rewardTooltips": [
+              "This has +1 Multicast."
+            ]
+          }
+        ]
+      },
+      {
+        "entries": [
+          {
+            "tooltips": [
+              "Buy 5 Relics"
+            ],
+            "rewardTooltips": [
+              "When you use another Relic, charge this 1 second(s)."
+            ]
+          }
         ]
       }
     ],
@@ -7529,6 +7619,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 10 seconds",
       "Deal 50 damage.",
@@ -7650,6 +7741,32 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [
+      {
+        "entries": [
+          {
+            "tooltips": [
+              "Buy 6 Burn items"
+            ],
+            "rewardTooltips": [
+              "When you Burn, this gains (2/4/6/8) Burn for the fight."
+            ]
+          }
+        ]
+      },
+      {
+        "entries": [
+          {
+            "tooltips": [
+              "Have 75+ Burn on this item."
+            ],
+            "rewardTooltips": [
+              "This has +1 Multicast."
+            ]
+          }
+        ]
+      }
+    ],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Burn (2/4/6/8)."
@@ -7761,6 +7878,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "When a player uses a Weapon, Poison that player (3/4/5).",
       "When you use a non-Weapon item, gain (3/4/5) Regen for the fight."
@@ -7826,6 +7944,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "When you sell this, get Spare Change equal to its value.",
       "At the start of each hour, spend 2 gold to gain 1 value."
@@ -7946,6 +8065,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
       "Adjacent Shield items (+2/+4/+6/+8) Shield for the fight."
@@ -8068,6 +8188,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 8 seconds",
       "Multicast 2",
@@ -8190,6 +8311,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
       "Your Shield item to the left of this gains (+4/+8/+12/+16) Shield for the fight."
@@ -8311,6 +8433,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Shield 10.",
@@ -8431,6 +8554,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 8 seconds",
       "Shield (20/40/60).",
@@ -8550,6 +8674,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown (10/8) seconds",
       "Gain (5/10) Regen for the fight.",
@@ -8686,6 +8811,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Multicast 2",
@@ -8811,6 +8937,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Deal (5/10/20/40) damage.",
@@ -8931,6 +9058,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Freeze 1 item(s) for (1/2/3) second(s).",
@@ -9057,6 +9185,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Ammo 2",
@@ -9159,6 +9288,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "When you sell this, reduce your leftmost item's cooldown by (3%/6%/9%)."
     ],
@@ -9260,6 +9390,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown (9/6) seconds",
       "Use a property."
@@ -9383,6 +9514,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Deal 25 damage.",
@@ -9507,6 +9639,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Shield (10/20/40/80).",
@@ -9631,6 +9764,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 10 seconds",
       "Deal 40 damage.",
@@ -9750,6 +9884,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 9 seconds",
       "Shield (50/100).",
@@ -9851,6 +9986,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "At the start of each fight, your Small items gain Haste for (1/2/3) second(s)."
     ],
@@ -9973,6 +10109,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Deal (10/15/20/25) damage.",
@@ -10097,6 +10234,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 11 seconds",
       "Deal (30/60/120/240) damage.",
@@ -10209,6 +10347,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Ammo 1",
@@ -10332,6 +10471,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Shield (10/20/30/40).",
@@ -10406,6 +10546,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "You have Regen equal to (50%/100%) of the value of adjacent properties."
     ],
@@ -10515,6 +10656,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "When you use a Weapon, your items with Shield gain (+10/+20/+30) Shield for the fight.",
       "When you use a Shield item, your Weapons gain (+10/+20/+30) Damage for the fight."
@@ -10640,6 +10782,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Shield (10/20/30).",
@@ -10741,6 +10884,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "When you use an adjacent Weapon, Slow 1 item(s) for (1/2/3) second(s)."
     ],
@@ -10864,6 +11008,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Deal 50 damage.",
@@ -10978,6 +11123,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 11 seconds",
       "Double the Burn of an item for the fight.",
@@ -11102,6 +11248,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown (6/5/4) seconds",
       "Haste adjacent items (2/3/4) second(s).",
@@ -11217,6 +11364,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 11 seconds",
       "Burn (5/10).",
@@ -11328,6 +11476,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 10 seconds",
       "Ammo 1",
@@ -11455,6 +11604,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 8 seconds",
       "Shield (75/100/125).",
@@ -11571,6 +11721,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 3 seconds",
       "Ammo 50",
@@ -11692,6 +11843,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Deal 16 damage.",
@@ -11815,6 +11967,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Your Aquatic items gain (+4%/+6%/+8%/+10%) Crit Chance for the fight.",
@@ -11934,6 +12087,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown (5/4/3) seconds",
       "Charge the Tech item to the right of this 1 second(s).",
@@ -12047,6 +12201,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 9 seconds",
       "Deal 200 damage.",
@@ -12158,6 +12313,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "At the start of each day, this gains +4 value.",
       "When you sell this, get an enchanted Friend from any hero.",
@@ -12284,6 +12440,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Deal (8/16/24/32) damage.",
@@ -12393,6 +12550,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 8 seconds",
       "Freeze 1 item for 1 second(s).",
@@ -12514,6 +12672,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 20 seconds",
       "Deal damage equal to (30%/40%/50%) of your enemy's Max Health and destroy this.",
@@ -12639,6 +12798,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Shield 50.",
@@ -12767,6 +12927,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 9 seconds",
       "Deal (10/20/40/80) damage.",
@@ -12896,6 +13057,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 8 seconds",
       "Deal (20/40/80/160) damage.",
@@ -13009,6 +13171,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Aquatic items to the left of this have their cooldowns reduced by (10%/15%/20%).",
       "Weapons to the right of this have (+25/+50/+100) damage."
@@ -13132,6 +13295,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
       "Ammo 4",
@@ -13254,6 +13418,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Deal (50/75/100) damage.",
@@ -13361,6 +13526,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "You take (10%/20%) less damage.",
       "Your Shield items have +1 Multicast."
@@ -13480,6 +13646,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Deal (15/20/25) damage for each Friend you have.",
@@ -13539,6 +13706,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "When you visit a Merchant, this and the item to the left of this gains (1/2/3/4) value."
     ],
@@ -13661,6 +13829,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 9 seconds",
       "Slow (1/2/3/4) item(s) for 3 second(s).",
@@ -13781,6 +13950,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Haste (2/3/4) item(s) for 1 second(s).",
@@ -13904,6 +14074,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 9 seconds",
       "Burn (4/6/8/10).",
@@ -14028,6 +14199,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
       "Burn 2.",
@@ -14145,6 +14317,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
       "Enchant another non-enchanted item for the fight.",
@@ -14188,6 +14361,7 @@ const data: ParsedItemCard[] = [
       "Common"
     ],
     "enchantments": [],
+    "quests": [],
     "unifiedTooltips": [
       "When you sell this, upgrade your leftmost item."
     ],
@@ -14311,6 +14485,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Deal (12/18/24/32) damage.",
@@ -14428,6 +14603,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
       "Ammo 1",
@@ -14542,6 +14718,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Ammo 1",
@@ -14657,6 +14834,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Deal damage equal to 3 times the value of your items.",
@@ -14781,6 +14959,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
       "Ammo (1/2/3)",
@@ -14905,6 +15084,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Haste the Friend to the right of this for (2/2/2/5) second(s).",
@@ -15019,6 +15199,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Slow 1 item(s) for (1/2/3) second(s).",
@@ -15140,6 +15321,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 8 seconds",
       "Slow 1 item(s) for (1/2/3) second(s).",
@@ -15264,6 +15446,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
       "Deal (10/20/30/40) Damage.",
@@ -15389,6 +15572,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Your weapons gain (+5/+10/+15/+20) damage for the fight.",
@@ -15513,6 +15697,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown (10/8/6/4) seconds",
       "Burn 6.",
@@ -15630,6 +15815,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "When you sell this, get 3 Small items from any hero."
     ],
@@ -15756,6 +15942,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 8 seconds",
       "Ammo 1",
@@ -15875,6 +16062,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 8 seconds",
       "Shield (100/150).",
@@ -15991,6 +16179,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 8 seconds",
       "Multicast 8",
@@ -16120,6 +16309,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Deal (10/20/30/40) damage.",
@@ -16163,6 +16353,7 @@ const data: ParsedItemCard[] = [
       "Common"
     ],
     "enchantments": [],
+    "quests": [],
     "unifiedTooltips": [
       "When you sell this, gain access to the genie Rit."
     ],
@@ -16268,6 +16459,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "At the start of each day, permanently gain (100/200/300) Max Health."
     ],
@@ -16390,6 +16582,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Haste the item to the right of this for (1/2/3/4) second(s).",
@@ -16513,6 +16706,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 10 seconds",
       "Burn (3/6/9/12).",
@@ -16614,6 +16808,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "When you use the weapon to the left of this, Poison (2/3/4/5)."
     ],
@@ -16736,6 +16931,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
       "Ammo 3",
@@ -16861,6 +17057,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Deal (10/20/30) damage.",
@@ -16987,6 +17184,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown (8/7/6) seconds",
       "Deal 20 damage.",
@@ -17104,6 +17302,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 15 seconds",
       "Use all your other items.",
@@ -17226,6 +17425,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
       "The item to the left of this gains (4%/8%/12%/16%) Crit Chance for the fight."
@@ -17349,6 +17549,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Ammo 1",
@@ -17472,6 +17673,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Poison 2.",
@@ -17575,6 +17777,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Your Friends have +1 Multicast."
     ],
@@ -17697,6 +17900,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Shield (10/30/50/100).",
@@ -17820,6 +18024,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Damage 10.",
@@ -17943,6 +18148,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown (9/8/7/6) seconds",
       "Ammo 1",
@@ -18053,6 +18259,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "When you sell this, your leftmost item (+1/+2/+3/+4) value."
     ],
@@ -18177,6 +18384,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown (6/5/4/3) seconds",
       "Charge 1 Tech item 1 second.",
@@ -18308,6 +18516,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 8 seconds",
       "Burn equal to this item's value.",
@@ -18426,6 +18635,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Your weapons gain (1/2/3/4) damage for the fight.",
@@ -18550,6 +18760,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 9 seconds",
       "Ammo 1",
@@ -18615,6 +18826,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "At the start of each hour, permanently gain (10/20/30) Max Health.",
       "You have (+1/+2/+3) Income."
@@ -18735,6 +18947,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
       "Adjacent weapons (+3/+6/+9/+12) damage for the fight."
@@ -18858,6 +19071,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 8 seconds",
       "Heal (30/60/120/240).",
@@ -18982,6 +19196,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Poison (1/2/3/4).",
@@ -19108,6 +19323,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 9 seconds",
       "Deal (50/100/200) damage.",
@@ -19223,6 +19439,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Ammo 1",
@@ -19344,6 +19561,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Your Potions have (+1/+2/+3) Ammo.",
       "Your Potions have their cooldowns reduced by (10%/15%/20%).",
@@ -19469,6 +19687,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Deal (50/75/100) damage.",
@@ -19599,6 +19818,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Heal (20/40/60/80).",
@@ -19719,6 +19939,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Burn (6/9/12).",
@@ -19828,6 +20049,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Adjacent items have their cooldowns reduced by (3%/6%/9%/12%)."
     ],
@@ -19951,6 +20173,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Burn (4/6/8/10).",
@@ -20060,6 +20283,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "When you use a friend, charge the Core (1/2) second(s) and Haste a Large item (1/2) second(s).",
       "Your Dooltron has the Core type."
@@ -20171,6 +20395,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "When you use a weapon, your weapons gain (3/6/9) Damage for the fight.",
       "When you use a Weapon, Haste it for (1/2/3) second(s)."
@@ -20216,6 +20441,7 @@ const data: ParsedItemCard[] = [
       "Common"
     ],
     "enchantments": [],
+    "quests": [],
     "unifiedTooltips": [
       "Sells for gold"
     ],
@@ -20346,6 +20572,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
       "Shield equal to (1/2/3/4) times your Income.",
@@ -20466,6 +20693,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Deal (15/20/25) damage.",
@@ -20590,6 +20818,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "If you have 3 or more Weapons, they gain (+15/+25/+35/+50) Damage for the fight.",
@@ -20720,6 +20949,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Multicast 2",
@@ -20855,6 +21085,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Ammo 1",
@@ -20960,6 +21191,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "When you sell this, permanently gain (10/20/30/40) Max Health."
     ],
@@ -21070,6 +21302,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 8 seconds",
       "Burn 5 for each Burn item you have.",
@@ -21193,6 +21426,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
       "Poison both players (2/4/6/8).",
@@ -21256,6 +21490,7 @@ const data: ParsedItemCard[] = [
       "Common"
     ],
     "enchantments": [],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
       "Ammo 10",
@@ -21381,6 +21616,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 2 seconds",
       "Ammo (6/8/10/12)",
@@ -21438,6 +21674,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Your Small items have (+1/+2) value."
     ],
@@ -21564,6 +21801,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Heal (10/15/20/25) for each type this has.",
@@ -21700,6 +21938,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 3 seconds",
       "Heal equal to double this item's Value.",
@@ -21760,6 +21999,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Adjacent items have (+3%/+6%/+9%/+12%) Crit chance.",
       "When you sell this, your items gain (+1%/+2%/+3%/+4%) Crit Chance."
@@ -21879,6 +22119,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
       "Burn both players (4/6/8).",
@@ -22003,6 +22244,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Shield (20/40/80/160).",
@@ -22126,6 +22368,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Slow 1 item(s) for (1/2/3/4) second(s).",
@@ -22249,6 +22492,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
       "Deal (50/75/100) damage.",
@@ -22372,6 +22616,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Deal (100/200/300) damage.",
@@ -22490,6 +22735,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 9 seconds",
       "Deal 2 damage.",
@@ -22617,6 +22863,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 10 seconds",
       "Deal (20/40/80) damage.",
@@ -22744,6 +22991,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Ammo 1",
@@ -22870,6 +23118,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Deal (5/15/30/50) damage.",
@@ -22981,6 +23230,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "When this is transformed outside of combat, gain a Chunk of Gold."
     ],
@@ -23088,6 +23338,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "When you use an adjacent item, Burn (1/2/3).",
       "Adjacent items have +1 ammo."
@@ -23190,6 +23441,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "When you sell this, your leftmost Burn item gains (+1/+2/+3/+4) Burn."
     ],
@@ -23308,6 +23560,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Deal 10 damage.",
@@ -23432,6 +23685,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Deal (5/10/20/40) damage.",
@@ -23544,6 +23798,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 8 seconds",
       "Poison 5 for each Poison item you have.",
@@ -23673,6 +23928,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 3 seconds",
       "Deal 10 damage.",
@@ -23794,6 +24050,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Shield (40/60/80).",
@@ -23916,6 +24173,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Deal (15/20/25) damage for each Friend you have.",
@@ -24029,6 +24287,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Slow 1 item(s) for (2/3/4) second(s).",
@@ -24150,6 +24409,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 2 seconds",
       "Ammo 1",
@@ -24272,6 +24532,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Heal (5/10/20/40).",
@@ -24378,6 +24639,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "When you use an adjacent item, charge the other adjacent item for (1/2) second(s)."
     ],
@@ -24495,6 +24757,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Shield 20.",
@@ -24619,6 +24882,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
       "Heal (20/30/40/50).",
@@ -24744,6 +25008,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Burn (4/6/8).",
@@ -24865,6 +25130,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown (10/9/8) seconds",
       "Burn 10.",
@@ -24988,6 +25254,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Poison (2/3/4/5).",
@@ -25107,6 +25374,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Poison (4/6/8).",
@@ -25225,6 +25493,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
       "Ammo 3",
@@ -25355,6 +25624,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown (15/14/13/12) seconds",
       "Deal 100 damage.",
@@ -25458,6 +25728,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "When you sell this, your items gain (+1%/+2%/+3%/+4%) Crit Chance."
     ],
@@ -25527,6 +25798,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Weapon Properties adjacent to this have + Damage equal to (50%/100%) of the value of your highest value item.",
       "Shield Properties adjacent to this have + Shield equal to (50%/100%) of the value of your highest value item."
@@ -25652,6 +25924,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 8 seconds",
       "Deal (15/25/35/50) damage.",
@@ -25769,6 +26042,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown (20/16) seconds",
       "Ammo 1",
@@ -25887,6 +26161,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Haste adjacent items for (1/2/3/4) second(s).",
@@ -26016,6 +26291,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Ammo 1",
@@ -26147,6 +26423,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 8 seconds",
       "Lifesteal",
@@ -26269,6 +26546,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
       "Your Shield item to the right of this gains (+4/+8/+12/+16) Shield for the fight."
@@ -26392,6 +26670,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Heal 20.",
@@ -26501,6 +26780,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "When you sell this, upgrade The Core. (/and reduce its cooldown by 1 second(s).)"
     ],
@@ -26606,6 +26886,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "ALL Weapon cooldowns are increased by (+1/+2) second(s).",
       "Your non-weapon items' cooldowns are decreased by (1/2) second(s)."
@@ -26725,6 +27006,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Ammo 1",
@@ -26849,6 +27131,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Ammo 1",
@@ -26950,6 +27233,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "At the start of each fight, freeze 1 item(s) for (3/4/5/6) second(s)."
     ],
@@ -27068,6 +27352,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Deal (15/20/25) damage for each Friend you have.",
@@ -27175,6 +27460,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Adjacent items have (+1/+2/+3/+4) Max Ammo."
     ],
@@ -27302,6 +27588,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Deal 30 damage.",
@@ -27427,6 +27714,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Gain (1/3/5/7) Regen for the fight.",
@@ -27557,6 +27845,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
       "Heal equal to (2/3/4) times this item's value.",
@@ -27682,6 +27971,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown (6/5/4/3) seconds",
       "Poison 3.",
@@ -27812,6 +28102,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Deal (10/20/40/80) Damage",
@@ -27931,6 +28222,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 11 seconds",
       "Deal 100 damage.",
@@ -28054,6 +28346,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown (12/11/10) seconds",
       "Multicast 3",
@@ -28184,6 +28477,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Multicast 3",
@@ -28309,6 +28603,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 9 seconds",
       "Haste your tools for (1/2/3/4) second(s).",
@@ -28440,6 +28735,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Deal (20/30/40/50) damage.",
@@ -28563,6 +28859,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 30 seconds",
       "Deal (75/100) damage.",
@@ -28684,6 +28981,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
       "Deal (10/20/30/40) damage."
@@ -28807,6 +29105,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 3 seconds",
       "Ammo 3",
@@ -28931,6 +29230,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Crit Chance (15%/30%/50%/100%)",
@@ -29058,6 +29358,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown (7/6/5) seconds",
       "Deal 20 damage.",
@@ -29182,6 +29483,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Burn (2/3/4/5).",
@@ -29285,6 +29587,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "When you sell this, permanently gain (10/20/30/40) Max Health."
     ],
@@ -29393,6 +29696,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 9 seconds",
       "Ammo 1",
@@ -29520,6 +29824,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Adjacent weapons gain (10/15/20/25) Damage for the fight.",
@@ -29644,6 +29949,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Heal (20/30/40/50).",
@@ -29769,6 +30075,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Deal (20/40/60/80) damage.",
@@ -29895,6 +30202,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 9 seconds",
       "Deal (30/40/50) damage.",
@@ -30015,6 +30323,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 9 seconds",
       "Burn (4/6/8).",
@@ -30129,6 +30438,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown (10/9/8) seconds",
       "Use a Core."
@@ -30231,6 +30541,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "When you sell this, permanently gain (1/2/3/4) Regen."
     ],
@@ -30342,6 +30653,48 @@ const data: ParsedItemCard[] = [
         "type": "Obsidian",
         "tooltips": [
           "Deal damage equal to 10 times this item's Regen."
+        ]
+      }
+    ],
+    "quests": [
+      {
+        "entries": [
+          {
+            "tooltips": [
+              "Buy 8 Poison items"
+            ],
+            "rewardTooltips": [
+              "Poison ({abilityq1}/3/6/9)."
+            ]
+          },
+          {
+            "tooltips": [
+              "Buy 8 Burn items"
+            ],
+            "rewardTooltips": [
+              "Burn ({abilityq2}/3/6/9)."
+            ]
+          }
+        ]
+      },
+      {
+        "entries": [
+          {
+            "tooltips": [
+              "Buy 4 Slow items"
+            ],
+            "rewardTooltips": [
+              "Slow ({abilityq3targets}/1/2/3). items for ({abilityq3}/1/1/1). second(s)."
+            ]
+          },
+          {
+            "tooltips": [
+              "Buy 4 Freeze items"
+            ],
+            "rewardTooltips": [
+              "Freeze ({abilityq4targets}/1/2/3). items for ({abilityq4}/0.5/0.5/0.5). second(s)."
+            ]
+          }
         ]
       }
     ],
@@ -30463,6 +30816,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Burn (2/4/6/8)."
@@ -30585,6 +30939,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Your Shield items gain (+10/+20/+30) Shield and your Weapons (+10/+20/+30) damage for the fight.",
@@ -30698,6 +31053,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "When you Level Up, get a Tech item."
     ],
@@ -30818,6 +31174,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
       "Ammo (2/3/4)",
@@ -30933,6 +31290,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 25 seconds",
       "Destroy this and all smaller items for the fight.",
@@ -31044,6 +31402,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 11 seconds",
       "Ammo 1",
@@ -31153,6 +31512,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 8 seconds",
       "Freeze (1/2) item(s) for 1 second(s).",
@@ -31274,6 +31634,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 15 seconds",
       "Deal 100 damage.",
@@ -31392,6 +31753,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Slow 1 item(s) for (1/2/3/4) second(s).",
@@ -31515,6 +31877,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Shield 20.",
@@ -31635,6 +31998,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 8 seconds",
       "Haste adjacent items for (1/2/3) second(s).",
@@ -31758,6 +32122,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Poison (1/2/3/4).",
@@ -31882,6 +32247,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown (9/7/5) seconds",
       "Deal 50 damage.",
@@ -32003,6 +32369,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
       "Slow 1 item(s) for (1/2/3) second(s).",
@@ -32126,6 +32493,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown (8/7/6/5) seconds",
       "Multicast 2",
@@ -32249,6 +32617,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 9 seconds",
       "Deal (30/45/60/75) damage.",
@@ -32360,6 +32729,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Ammo 1",
@@ -32482,6 +32852,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Poison both players (5/10/15).",
@@ -32606,6 +32977,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
       "Deal 1 damage.",
@@ -32652,6 +33024,7 @@ const data: ParsedItemCard[] = [
       "Pygmalien"
     ],
     "enchantments": [],
+    "quests": [],
     "unifiedTooltips": [
       "When you sell this, get 3 Spare Change."
     ],
@@ -32770,6 +33143,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Freeze 1 item for (1/1.5/2) second(s).",
@@ -32893,6 +33267,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Poison (1/2/3/4).",
@@ -32999,6 +33374,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "When your enemy uses an item, Freeze it for (0.5/1) second(s)."
     ],
@@ -33120,6 +33496,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 12 seconds",
       "Freeze (1/2/3) item(s) for 1 second(s).",
@@ -33244,6 +33621,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Heal 20.",
@@ -33363,6 +33741,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Deal (10/20/30) damage."
@@ -33476,6 +33855,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Your weapons have (+20%/+40%/+60%/+80%) Crit Chance.",
       "If you have exactly one weapon, that Weapon has lifesteal."
@@ -33583,6 +33963,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "The weapon to the right of this has (+15%/+20%/+25%) Crit Chance.",
       "If you have exactly one weapon, when you Crit with it charge a non-weapon item 1 second(s)."
@@ -33709,6 +34090,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Gain 1 Regen for the fight.",
@@ -33821,6 +34203,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
       "Transform into a (Gold/Diamond) copy of the medium, non-legendary item to the left of this for the fight."
@@ -33936,6 +34319,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Shield (75/100).",
@@ -34041,6 +34425,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "When you use an adjacent item, Haste the other adjacent item for (1/2/3) second(s)."
     ],
@@ -34154,6 +34539,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Deal (50/100) damage.",
@@ -34280,6 +34666,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
       "Haste 1 Vehicle for (2/3/4) second(s). Charge 1 Tool (1/2/3) second(s).",
@@ -34407,6 +34794,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Adjacent items gain (+5/+10/+15/+20) Shield for the fight.",
@@ -34531,6 +34919,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown (8/7/6) seconds",
       "Reload 2 items.",
@@ -34646,6 +35035,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 8 seconds",
       "Burn 10.",
@@ -34774,6 +35164,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Multicast 2",
@@ -34901,6 +35292,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Poison 3.",
@@ -35020,6 +35412,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 8 seconds",
       "Multicast (2/3/4)",
@@ -35060,6 +35453,7 @@ const data: ParsedItemCard[] = [
       "Common"
     ],
     "enchantments": [],
+    "quests": [],
     "unifiedTooltips": [
       "When you sell this, gain access to the Thieves Guild."
     ],
@@ -35183,6 +35577,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 8 seconds",
       "Slow 1 item(s) for (1/2/3/4) second(s).",
@@ -35290,6 +35685,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "When you use a Potion, transform it into a Potion for the fight and gain (3/6/9) Regen for the fight."
     ],
@@ -35409,6 +35805,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Haste adjacent items for (1/2/3) second(s).",
@@ -35525,6 +35922,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown (7/6/5) seconds",
       "Charge adjacent items 1 second(s)."
@@ -35643,6 +36041,68 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [
+      {
+        "entries": [
+          {
+            "tooltips": [
+              "Poison 50 times"
+            ],
+            "rewardTooltips": [
+              "Poison (5/10/15/20)."
+            ]
+          }
+        ]
+      },
+      {
+        "entries": [
+          {
+            "tooltips": [
+              "Gain Regen 40 times"
+            ],
+            "rewardTooltips": [
+              "Gain (5/10/15/20) Regen for the fight."
+            ]
+          }
+        ]
+      },
+      {
+        "entries": [
+          {
+            "tooltips": [
+              "Burn 30 times"
+            ],
+            "rewardTooltips": [
+              "Burn (5/10/15/20)."
+            ]
+          }
+        ]
+      },
+      {
+        "entries": [
+          {
+            "tooltips": [
+              "Slow 20 times"
+            ],
+            "rewardTooltips": [
+              "Slow (1/2/3/4) items for 1 second(s)."
+            ]
+          }
+        ]
+      },
+      {
+        "entries": [
+          {
+            "tooltips": [
+              "Freeze 10 times"
+            ],
+            "rewardTooltips": [
+              "Freeze (1/2/3/4) items for 0.5 second(s)."
+            ]
+          }
+        ]
+      }
+    ],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "When you use another Relic, charge this 1 second(s)."
@@ -35751,6 +36211,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "When you use the Weapon to the left of this, deal (10/15/20/25) damage."
     ],
@@ -35870,6 +36331,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 10 seconds",
       "Multicast 2",
@@ -35998,6 +36460,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 8 seconds",
       "Shield (15/30/60/120).",
@@ -36122,6 +36585,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 9 seconds",
       "Deal 200 damage.",
@@ -36227,6 +36691,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 10 seconds",
       "Destroy a small enemy item for the fight."
@@ -36348,6 +36813,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Reload adjacent Ammo items 1 Ammo.",
@@ -36469,6 +36935,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 9 seconds",
       "Lifesteal",
@@ -36577,6 +37044,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 8 seconds",
       "Ammo 1",
@@ -36697,6 +37165,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
       "Deal (8/16/24/32) damage."
@@ -36801,6 +37270,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "When you use your leftmost item, charge your rightmost item (1/2) second(s)."
     ],
@@ -36918,6 +37388,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
       "Reload an item.",
@@ -37039,6 +37510,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 10 seconds",
       "Deal (50/100/200) damage.",
@@ -37087,6 +37559,7 @@ const data: ParsedItemCard[] = [
       "Common"
     ],
     "enchantments": [],
+    "quests": [],
     "unifiedTooltips": [
       "When you sell this, transform your leftmost Small item."
     ],
@@ -37207,6 +37680,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Heal equal to your Shield.",
@@ -37330,6 +37804,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown (9/8/7/6) seconds",
       "Poison yourself (1/2/3/4) for each Virus on your board.",
@@ -37448,6 +37923,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Freeze (1/2/3) item(s) for 1 second(s).",
@@ -37565,6 +38041,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 2 seconds",
       "Your items gain (+3/+4/+5) value for the fight."
@@ -37685,6 +38162,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Burn (8/12).",
@@ -37806,6 +38284,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 2 seconds",
       "Deal (5/10/15/20) damage."
@@ -37925,6 +38404,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown (8/7/6) seconds",
       "Haste your other items for 2 second(s).",
@@ -38048,6 +38528,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 9 seconds",
       "Poison 9.",
@@ -38177,6 +38658,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Multicast 2",
@@ -38286,6 +38768,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "The first time you would die each fight, Heal for (25%/50%) of your Max Health.",
       "Your Heal and Regen items have +1 Multicast."
@@ -38406,6 +38889,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 8 seconds",
       "Poison (10/20/30).",
@@ -38528,6 +39012,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Gain (5/10/15) Regen for the fight.",
@@ -38652,6 +39137,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Haste your Vehicles for (3/4/5) second(s).",
@@ -38774,6 +39260,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Slow (1/2/3) item(s) for 1 second(s).",
@@ -38892,6 +39379,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 11 seconds",
       "Deal (10/20) damage.",
@@ -39014,6 +39502,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
       "Your weapons gain (1/2/3/4) damage for the fight."
@@ -39136,6 +39625,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Multicast 3",
@@ -39255,6 +39745,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 8 seconds",
       "Burn (2/3/4).",
@@ -39375,6 +39866,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Deal 20 damage.",
@@ -39498,6 +39990,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 9 seconds",
       "Shield (20/60/120/200).",
@@ -39623,6 +40116,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 11 seconds",
       "Deal (20/30/40/50) damage.",
@@ -39751,6 +40245,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 3 seconds",
       "Ammo 1",
@@ -39873,6 +40368,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Deal (60/90/120) damage.",
@@ -39970,6 +40466,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "When you sell this, recover 5 Prestige."
     ],
@@ -40071,6 +40568,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "When you sell this, your leftmost item gains (5%/10%/15%/20%) Crit Chance."
     ],
@@ -40168,6 +40666,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "The first time you would die each fight, Heal for 1 and take no damage for (1/2) second(s)."
     ],
@@ -40280,6 +40779,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 13 seconds",
       "Heal (100/200).",
@@ -40389,6 +40889,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "When you Slow, gain (5/10) Regen for the fight.",
       "At the start of each hour, get a Coconut or Citrus."
@@ -40517,6 +41018,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 10 seconds",
       "Deal (40/60/80/100) damage.",
@@ -40629,6 +41131,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "When you sell 10 items, adjacent items gain (3/5/7) value."
     ],
@@ -40753,6 +41256,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Deal (10/15/20/25) damage.",
@@ -40882,6 +41386,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Poison 6.",
@@ -40995,6 +41500,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 10 seconds",
       "Deal (50/75/100/125) damage.",
@@ -41116,6 +41622,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 9 seconds",
       "Freeze (1/2/3) item(s) for 1 second(s).",
@@ -41162,6 +41669,7 @@ const data: ParsedItemCard[] = [
       "Pygmalien"
     ],
     "enchantments": [],
+    "quests": [],
     "unifiedTooltips": [
       "You have (+50%/+75%/+100%) Max Health."
     ],
@@ -41285,6 +41793,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 9 seconds",
       "Deal damage equal to the highest Shield of items you have.",
@@ -41404,6 +41913,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Shield (10/15/20/25) for each Aquatic item you have."
@@ -41503,6 +42013,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "When you sell an item, this gains (1/2/3) value.",
       "You have increased max health equal to (10/15/20) times this item's value."
@@ -41621,6 +42132,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "When you sell this, upgrade your leftmost (Bronze/Silver/Gold) (or lower)-tier item."
     ],
@@ -41748,6 +42260,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 9 seconds",
       "Deal 50 damage.",
@@ -41868,6 +42381,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "The weapon to the right of this gains (+8/+12/+16/+20) damage for the fight."
@@ -41975,6 +42489,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "At the start of each fight, Enchant 1 non-enchanted item on each player's board for the fight.",
       "When an enemy uses an Enchanted Item, charge 1 Enchanted item 2 seconds."
@@ -42094,6 +42609,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Deal (30/40/60) damage.",
@@ -42155,6 +42671,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "When you win a fight with Stained Glass Window in play, your Properties in play gain (5/10) value.",
       "When you lose a fight with Stained Glass Window in play, permanently destroy this.",
@@ -42214,6 +42731,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "At the start of each hour, this gains (1/2/3) value."
     ],
@@ -42340,6 +42858,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Deal (10/20/30/40) damage.",
@@ -42458,6 +42977,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Heal equal to (5%/10%) of your Max Health.",
@@ -42584,6 +43104,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 8 seconds",
       "Deal 15 damage.",
@@ -42710,6 +43231,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown (7/6/5) seconds",
       "Shield 20.",
@@ -42827,6 +43349,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
       "The weapon to the left of this gains (+10/+20/+30) damage for the fight."
@@ -42946,6 +43469,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Deal (15/20/25) damage for each Friend you have.",
@@ -43053,6 +43577,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 10 seconds",
       "Freeze both players' non-Core items for (2/3) second(s)."
@@ -43161,6 +43686,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Freeze (1/2) item(s) for 1 second(s).",
@@ -43290,6 +43816,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Ammo 1",
@@ -43419,6 +43946,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Your weapons gain (6/9/12) Damage for the fight.",
@@ -43540,6 +44068,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 3 seconds",
       "Burn (2/4/6/8)."
@@ -43663,6 +44192,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown (6/5/4) seconds",
       "Haste 1 item for 2 second(s).",
@@ -43773,6 +44303,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Charge adjacent items (1/2) second(s).",
@@ -43894,6 +44425,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Burn (4/6).",
@@ -44019,6 +44551,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Reload adjacent items.",
@@ -44141,6 +44674,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
       "Deal 10 damage.",
@@ -44259,6 +44793,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 9 seconds",
       "Charge adjacent items (1/2/3) second(s).",
@@ -44386,6 +44921,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
       "Shield equal to (1x/2x/3x/4x) this item's value."
@@ -44505,6 +45041,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Poison (1/2/3).",
@@ -44624,6 +45161,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Burn (4/6/8).",
@@ -44745,6 +45283,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown (7/6/5) seconds",
       "Heal equal to 10% of your Max Health.",
@@ -44870,6 +45409,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Poison (3/6/9/12).",
@@ -44982,6 +45522,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "When you poison yourself, Poison (4/8/12).",
       "When you use an adjacent item, Poison yourself (4/8/12) and gain (2/4/6) Regen for the fight."
@@ -45098,6 +45639,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Slow (2/3/4) item(s) for 3 second(s)."
@@ -45218,6 +45760,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
       "Your items gain (+1%/+2%/+3%/+4%) Crit Chance for the fight."
@@ -45342,6 +45885,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 30 seconds",
       "Deal (1000/2000) damage.",
@@ -45467,6 +46011,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 10 seconds",
       "Deal (10/20/30/40) Damage.",
@@ -45583,6 +46128,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 3 seconds",
       "Adjacent items gain (+10%/+15%/+20%) crit chance for the fight."
@@ -45705,6 +46251,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Heal equal to (4/6) times the value of your items.",
@@ -45829,6 +46376,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Ammo 1",
@@ -45939,6 +46487,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Freeze an item with a cooldown of 5 seconds or less for (1/2/3) second(s)."
@@ -46061,6 +46610,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown (7/6/5/4) seconds",
       "Shield 100.",
@@ -46175,6 +46725,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 9 seconds",
       "Deal (500/1000) damage to the player with less health."
@@ -46297,6 +46848,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown (7/6/5/4) seconds",
       "Slow 1 item for 3 second(s).",
@@ -46404,6 +46956,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Slow 1 item(s) for (2/3) second(s).",
@@ -46520,6 +47073,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Deal damage equal to (10%/20%) of your Max Health.",
@@ -46644,6 +47198,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Haste 1 item for (1/2/3/4) second(s).",
@@ -46707,6 +47262,7 @@ const data: ParsedItemCard[] = [
       "Common"
     ],
     "enchantments": [],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
       "Ammo 10",
@@ -46825,6 +47381,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Every 50 you spend, upgrade an item of a lower tier."
     ],
@@ -46948,6 +47505,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 8 seconds",
       "Deal (50/100/150/200) damage.",
@@ -47064,6 +47622,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 8 seconds",
       "Adjacent Weapons gain (5/10) Damage for the fight.",
@@ -47188,6 +47747,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Deal (5/15/30/50) damage.",
@@ -47314,6 +47874,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown (14/12/10) seconds",
       "Deal (200/400/800) damage.",
@@ -47438,6 +47999,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 9 seconds",
       "Deal (5/10/20/40) damage.",
@@ -47561,6 +48123,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Ammo 6",
@@ -47682,6 +48245,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Deal 25 damage.",
@@ -47809,6 +48373,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown (8/7/6/5) seconds",
       "Deal 60 damage.",
@@ -47936,6 +48501,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
       "Ammo 1",
@@ -48055,6 +48621,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Your Poison items gain (+2/+3/+4/+5) Poison for the fight."
@@ -48182,6 +48749,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Multicast 2",
@@ -48312,6 +48880,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Deal (10/20/40/80) damage.",
@@ -48440,6 +49009,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 10 seconds",
       "Lifesteal",
@@ -48558,6 +49128,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 10 seconds",
       "Deal (20/40) Damage.",
@@ -48661,6 +49232,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Sells for gold."
     ],
@@ -48778,6 +49350,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Freeze 1 item(s) for (1/2/3) second(s).",
@@ -48896,6 +49469,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Slow (2/3) items for 2 second(s).",
@@ -49022,6 +49596,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown (12/11/10) seconds",
       "Deal damage equal to the Regen plus the Burn on both players.",
@@ -49145,6 +49720,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Burn (1/2/3).",
@@ -49265,6 +49841,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Charge an adjacent Relic (1/2/3) second(s).",
@@ -49392,6 +49969,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Deal 20 damage.",
@@ -49513,6 +50091,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 10 seconds",
       "Lifesteal",
@@ -49639,6 +50218,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Your weapons gain (+10/+15/+20/+25) Damage and your Heal items gain (+10/+15/+20/+25) Heal for the fight.",
@@ -49742,6 +50322,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "When you sell this, your leftmost Weapon gains (5/10/15/20) Damage."
     ],
@@ -49860,6 +50441,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 8 seconds",
       "Deal (60/80/100) damage.",
@@ -49973,6 +50555,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Slow (1/2/3) item(s) for 3 second(s).",
@@ -50034,6 +50617,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "At the start of each hour, set this item's value to a number between 0 and (5/10/20/40)."
     ],
@@ -50162,6 +50746,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 10 seconds",
       "Deal (50/75/100) damage.",
@@ -50283,6 +50868,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Ammo 1",
@@ -50396,6 +50982,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
       "Haste the Core for (1/2/3/4) second(s)."
@@ -50499,6 +51086,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "When you buy this, get a non-Vanessa item.",
       "Your items from other Heroes have (+15%/+30%/+50%) Crit Chance."
@@ -50621,6 +51209,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Shield 10.",
@@ -50741,6 +51330,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Burn 5.",
@@ -50865,6 +51455,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Shield (10/20/40/80).",
@@ -50994,6 +51585,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 8 seconds",
       "Shield (10/20/40/80).",
@@ -51119,6 +51711,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 9 seconds",
       "Haste your other items for (1/2/3) second(s).",
@@ -51241,6 +51834,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
       "Adjacent items gain (2%/4%/6%/8%) Crit Chance for the fight."
@@ -51354,6 +51948,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "When your enemy uses a weapon, charge your Busy Bees 2 second(s).",
       "When you buy this, get 2 Busy Bees.",
@@ -51455,6 +52050,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "When you sell this, reduce your items' cooldowns by (2%/4%/6%)."
     ],
@@ -51568,6 +52164,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 11 seconds",
       "Burn (10/20).",
@@ -51689,6 +52286,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
       "The weapon to the right of this gains (+4/+8/+12/+16) damage for the fight."
@@ -51798,6 +52396,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Your items have (+10%/+20%/+30%/+40%) Crit Chance."
     ],
@@ -51921,6 +52520,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Burn (3/5/7/9).",
@@ -52048,6 +52648,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Ammo (1/2/3/4)",
@@ -52145,6 +52746,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "When you Slow, deal (8/12/16) damage."
     ],
@@ -52262,6 +52864,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown (7/6/5) seconds",
       "Haste a non-weapon item for 2 second(s).",
@@ -52383,6 +52986,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Shield 20.",
@@ -52513,6 +53117,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 10 seconds",
       "Multicast 2",
@@ -52635,6 +53240,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Heal (1/2/3/4).",
@@ -52751,6 +53357,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
       "Haste 1 adjacent item for (1/2/3) second(s)."
@@ -52855,6 +53462,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "When your enemy uses an item, deal (1/10) damage."
     ],
@@ -52981,6 +53589,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
       "Ammo 2",
@@ -53101,6 +53710,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
       "Lifesteal",
@@ -53221,6 +53831,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Reload the item to the right of this (1/2/3/4) Ammo."
@@ -53347,6 +53958,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Poison 6.",
@@ -53478,6 +54090,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 10 seconds",
       "This gains 1 Value.",
@@ -53601,6 +54214,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Multicast 3",
@@ -53713,6 +54327,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "When you use a potion, deal (15/30/45) damage.",
       "When you Reload or transform a potion, this gains (+15/+30/+45) damage for the fight."
@@ -53815,6 +54430,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "When your enemy uses an item, Slow it for (1/2) second(s)."
     ],
@@ -53937,6 +54553,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown (11/10/9/8) seconds",
       "Your weapons gain +10 damage for the fight.",
@@ -54065,6 +54682,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown (7/6/5) seconds",
       "Deal 30 damage.",
@@ -54196,6 +54814,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Deal 10 damage.",
@@ -54321,6 +54940,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 11 seconds",
       "Lifesteal",
@@ -54441,6 +55061,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Poison both players 5.",
@@ -54566,6 +55187,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Deal (10/20/30/40) damage.",
@@ -54687,6 +55309,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Burn (4/5/6/7).",
@@ -54811,6 +55434,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Haste 1 item(s) for (2/3/4) second(s).",
@@ -54942,6 +55566,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Deal (20/40/60/80) damage.",
@@ -55064,6 +55689,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
       "Deal (10/20) damage.",
@@ -55189,6 +55815,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Burn (2/4/6/8) for each Relic or Tool you have.",
@@ -55292,6 +55919,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "When you sell this, your leftmost Ammo item gains (1/2/3) Max Ammo."
     ],
@@ -55417,6 +56045,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Your Lifesteal Weapons gain (+10/+15/+20/+25) damage for the fight.",
@@ -55548,6 +56177,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Crit Chance 20%",
@@ -55656,6 +56286,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "When you transform a Reagent, permanently gain (5/10/15) Regen."
     ],
@@ -55777,6 +56408,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Burn (6/8/10/12).",
@@ -55910,6 +56542,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
       "Ammo 6",
@@ -56011,6 +56644,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "At the start of each day, get a Chocolate Bar, Spare Change and Truffle."
     ],
@@ -56112,6 +56746,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "When you sell this, your leftmost Poison item gains (+1/+2/+3/+4) Poison."
     ],
@@ -56238,6 +56873,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 13 seconds",
       "Deal (15/30/60/120) damage.",
@@ -56367,6 +57003,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown (11/9/7) seconds",
       "Your weapons gain Damage equal to this item's value for the fight.",
@@ -56491,6 +57128,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Shield 20.",
@@ -56619,6 +57257,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Ammo 1",
@@ -56744,6 +57383,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Shield 25.",
@@ -56857,6 +57497,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Your items have (+15%/+30%/+50%) Crit Chance.",
       "When you Crit with an item, reduce its cooldown by (4%/8%/12%) for the fight."
@@ -56982,6 +57623,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown (12/11/10) seconds",
       "Gain Regen equal to 5% of your Max Health for the fight.",
@@ -57093,6 +57735,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Freeze (1/2/3) item(s) for 1 second(s).",
@@ -57210,6 +57853,32 @@ const data: ParsedItemCard[] = [
         "type": "Obsidian",
         "tooltips": [
           "Deal damage equal to 10 times this item's Regen."
+        ]
+      }
+    ],
+    "quests": [
+      {
+        "entries": [
+          {
+            "tooltips": [
+              "Complete 1 quest on another item"
+            ],
+            "rewardTooltips": [
+              "Poison ({abilityq1}/5/10/15)."
+            ]
+          }
+        ]
+      },
+      {
+        "entries": [
+          {
+            "tooltips": [
+              "Complete 2 quests on other items"
+            ],
+            "rewardTooltips": [
+              "Freeze ({abilityq2targets}/1/1/1). items for ({abilityq2}/0.5/0.5/0.5). second(s)."
+            ]
+          }
         ]
       }
     ],
@@ -57332,6 +58001,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Burn (5/10/15).",
@@ -57452,6 +58122,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Poison (4/6/8).",
@@ -57570,6 +58241,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Deal (25/50) damage.",
@@ -57690,6 +58362,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 11 seconds",
       "Deal (15/30/60/100) damage for each Small item you have (including Stash)."
@@ -57816,6 +58489,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 8 seconds",
       "Charge adjacent Small items (1/2/3/4) second(s).",
@@ -57949,6 +58623,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
       "Shield equal to (1x/2x/3x/4x) this item's value.",
@@ -58004,6 +58679,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "After you fight a Hero with this in play, permanently gain (100/200/300/400) Max Health."
     ],
@@ -58125,6 +58801,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Freeze (1/2/3) item(s) for 1 second(s).",
@@ -58241,6 +58918,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Burn (4/6).",
@@ -58367,6 +59045,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown (12/10/8) seconds",
       "Ammo 1",
@@ -58487,6 +59166,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Burn (4/6/8).",
@@ -58604,6 +59284,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown (9/7) seconds",
       "Deal 2 damage.",
@@ -58723,6 +59404,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Deal (100/200/300) Damage.",
@@ -58826,6 +59508,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "The item to the left of this has its cooldown reduced by (20%/40%)."
     ],
@@ -58952,6 +59635,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Poison (4/8/12/16).",
@@ -59080,6 +59764,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Burn 6.",
@@ -59202,6 +59887,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown (10/8/6) seconds",
       "Burn 20.",
@@ -59323,6 +60009,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 8 seconds",
       "Burn (10/20/30).",
@@ -59442,6 +60129,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 11 seconds",
       "Deal (100/200) damage.",
@@ -59571,6 +60259,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Lifesteal",
@@ -59680,6 +60369,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Charge your other non-weapon items (1/2) second(s)."
@@ -59806,6 +60496,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown (6/5/4/3) seconds",
       "Deal 15 damage.",
@@ -59923,6 +60614,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown (9/7) seconds",
       "Deal 2 damage.",
@@ -60041,6 +60733,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 11 seconds",
       "Ammo 2",
@@ -60171,6 +60864,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Haste adjacent items for (1/2/3) second(s).",
@@ -60297,6 +60991,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Freeze 1 item(s) for 1 second(s).",
@@ -60416,6 +61111,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Ammo 6",
@@ -60540,6 +61236,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 10 seconds",
       "Deal (30/60/120) damage.",
@@ -60666,6 +61363,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 11 seconds",
       "Deal (10/20/40/80) Damage",
@@ -60790,6 +61488,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 8 seconds",
       "Deal (15/30/60/120) damage.",
@@ -60910,6 +61609,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Poison 4.",
@@ -61022,6 +61722,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 3 seconds",
       "Transform into a (Silver/Gold/Diamond) copy of another small, non-legendary item you have for the fight."
@@ -61145,6 +61846,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown (7/6/5/4) seconds",
       "Burn 8.",
@@ -61242,6 +61944,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "When you sell this, your leftmost Freeze item gains +0.5 Freeze duration."
     ],
@@ -61366,6 +62069,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown (7/6/5) seconds",
       "Burn 4.",
@@ -61488,6 +62192,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Poison (3/6/9) for each type this has.",
@@ -61604,6 +62309,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 13 seconds",
       "Shield equal to your current Health.",
@@ -61709,6 +62415,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown (30/24) seconds",
       "Destroy this.",
@@ -61776,6 +62483,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Adjacent Weapons have (+5/+10/+20/+40) damage.",
       "When you sell this, your weapons gain (2/4/6/8) damage."
@@ -61895,6 +62603,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "The Core gains (+5%/+10%/+15%) Crit Chance for the fight.",
@@ -61996,6 +62705,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "When you sell this, get 3 Chocolate Bars."
     ],
@@ -62114,6 +62824,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Freeze (1/2/3) item(s) for 0.5 second(s).",
@@ -62235,6 +62946,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Multicast 2",
@@ -62365,6 +63077,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
       "Shield equal to (1/2/3/4) times this item's value.",
@@ -62482,6 +63195,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Shield equal to (2/3) times the value of your items.",
@@ -62598,6 +63312,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown (10/9) seconds",
       "Reload adjacent Potions.",
@@ -62717,6 +63432,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 3 seconds",
       "Deal (5/10/15/20) damage."
@@ -62836,6 +63552,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Haste (2/3/4/5) Aquatic or Toy item(s) for 2 second(s)."
@@ -62955,6 +63672,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Haste adjacent items for (1/2/3) second(s).",
@@ -63068,6 +63786,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown (7/6/5) seconds",
       "Slow 1 item(s) for 1 second(s).",
@@ -63192,6 +63911,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Ammo 2",
@@ -63317,6 +64037,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Burn (3/4/5/6).",
@@ -63439,6 +64160,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Slow (1/2/3/4) item(s) for 1 second(s).",
@@ -63559,6 +64281,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown (9/8/7) seconds",
       "Deal 100 damage.",
@@ -63680,6 +64403,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 9 seconds",
       "Burn (8/12/16/20).",
@@ -63804,6 +64528,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Shield equal to (1x/2x/3x) your gold."
@@ -63928,6 +64653,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown (8/7/6) seconds",
       "Deal 50 Damage.",
@@ -64049,6 +64775,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Charge 1 non-Toy item(s) (1/2/3) second(s).",
@@ -64176,6 +64903,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown (8/7/6/5) seconds",
       "Gain 2 Regen for the fight.",
@@ -64313,6 +65041,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 9 seconds",
       "Ammo 2",
@@ -64428,6 +65157,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 11 seconds",
       "Deal damage equal to a third of your enemy's max health."
@@ -64520,6 +65250,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "When any player uses an item, Freeze it 1 second(s).",
       "When any item gains Freeze, remove all Freeze from it.",
@@ -64645,6 +65376,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 10 seconds",
       "Ammo 1",
@@ -64768,6 +65500,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Gain (50/75/100) Max Health for the fight.",
@@ -64831,6 +65564,7 @@ const data: ParsedItemCard[] = [
       "Common"
     ],
     "enchantments": [],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
       "Ammo 10",
@@ -64957,6 +65691,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Poison (4/6/8/10).",
@@ -65076,6 +65811,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 10 seconds",
       "Deal (1000/1500) damage.",
@@ -65200,6 +65936,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Deal damage equal to (1x/2x) this item's value.",
@@ -65323,6 +66060,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Gain Regen for the fight equal to (1/2/3) times this item's value.",
@@ -65449,6 +66187,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Deal (10/20/40) damage.",
@@ -65553,6 +66292,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "When you sell this, your weapons gain (1/2/3/4) damage."
     ],
@@ -65659,6 +66399,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Adjacent items have (+25%/+50%) Crit Chance.",
       "At the start of each fight, an enemy item has its cooldown increased by (3/6) second(s)."
@@ -65787,6 +66528,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 9 seconds",
       "Multicast 2",
@@ -65902,6 +66644,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "The Property to the left of this has double value in combat and has its cooldown reduced by (5%/10%/15%)."
     ],
@@ -66024,6 +66767,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
       "Shield (10/20/30/40).",
@@ -66148,6 +66892,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 10 seconds",
       "Heal (10/20/40/80).",
@@ -66257,6 +67002,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "When you win a fight against a Hero, gain 1 XP. If you had Wanted Poster in play, gain 1 additional XP.",
       "Your items have (10%/20%/30%) Crit Chance."
@@ -66368,6 +67114,20 @@ const data: ParsedItemCard[] = [
         "type": "Obsidian",
         "tooltips": [
           "This has double Damage."
+        ]
+      }
+    ],
+    "quests": [
+      {
+        "entries": [
+          {
+            "tooltips": [
+              "A Weapon is used 50 times"
+            ],
+            "rewardTooltips": [
+              "This enchants a second item."
+            ]
+          }
         ]
       }
     ],
@@ -66494,6 +67254,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
       "The weapon to the left of this gains (+4/+8/+12/+16) damage for the fight."
@@ -66619,6 +67380,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Deal (5/10/15/20) damage.",
@@ -66737,6 +67499,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "When you win a fight, this gains (3/6/9) value.",
       "Your weapons have + damage equal to this item's value."
@@ -66853,6 +67616,32 @@ const data: ParsedItemCard[] = [
         "type": "Obsidian",
         "tooltips": [
           "Deal 50 Damage."
+        ]
+      }
+    ],
+    "quests": [
+      {
+        "entries": [
+          {
+            "tooltips": [
+              "Buy 6 Slow items"
+            ],
+            "rewardTooltips": [
+              "This has +1 Multicast."
+            ]
+          }
+        ]
+      },
+      {
+        "entries": [
+          {
+            "tooltips": [
+              "Buy 5 Relics"
+            ],
+            "rewardTooltips": [
+              "When you use another Relic, charge this 1 second(s)."
+            ]
+          }
         ]
       }
     ],
@@ -66987,6 +67776,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Heal equal to (1x/2x/3x/4x) this item's value.",
@@ -67104,6 +67894,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
       "Freeze this and adjacent items for 1 second(s).",
@@ -67228,6 +68019,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Slow 1 item(s) for (1/2/3/4) second(s).",
@@ -67357,6 +68149,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Ammo 2",
@@ -67484,6 +68277,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Multicast 2",
@@ -67614,6 +68408,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Crit Chance (100%/125%/150%/175%)",
@@ -67735,6 +68530,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Reload all your items (1/2/3) Ammo and charge them 1 second(s).",
@@ -67861,6 +68657,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Deal (50/100/200) damage.",
@@ -67981,6 +68778,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Poison 5.",
@@ -68097,6 +68895,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "At the start of each day, get a Catalyst and transform the small item to the left of this into a random Potion.",
       "When you buy this, get a Small Reagent."
@@ -68217,6 +69016,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 3 seconds",
       "Deal (5/15/25) damage.",
@@ -68324,6 +69124,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 10 seconds",
       "Freeze 3 small items for (1/2) second(s)."
@@ -68446,6 +69247,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 10 seconds",
       "Deal 200 damage.",
@@ -68495,6 +69297,7 @@ const data: ParsedItemCard[] = [
       "Common"
     ],
     "enchantments": [],
+    "quests": [],
     "unifiedTooltips": [
       "Sells for gold"
     ],
@@ -68621,6 +69424,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Deal (10/20/30/40) damage.",
@@ -68741,6 +69545,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Deal (15/20/25) damage for each Friend you have.",
@@ -68865,6 +69670,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 13 seconds",
       "Ammo 1",
@@ -68984,6 +69790,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 9 seconds",
       "Multicast 2",
@@ -69110,6 +69917,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Shield 200.",
@@ -69231,6 +70039,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 8 seconds",
       "Your weapons gain (4/8/12) damage for the fight.",
@@ -69356,6 +70165,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 20 seconds",
       "Shield (100/200/300/400).",
@@ -69469,6 +70279,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "When you Crit, Haste 1 item(s) for (1/2/3) second(s).",
       "Adjacent items have (+15%/+30%/+50%) Crit Chance."
@@ -69592,6 +70403,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown (9/8/7/6) seconds",
       "Deal 1 damage.",
@@ -69632,6 +70444,7 @@ const data: ParsedItemCard[] = [
       "Common"
     ],
     "enchantments": [],
+    "quests": [],
     "unifiedTooltips": [
       "On Day 9, allows you to embark on the Temple Expedition."
     ],
@@ -69753,6 +70566,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Deal 40 damage.",
@@ -69872,6 +70686,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown (12/10) seconds",
       "Lifesteal",
@@ -69994,6 +70809,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Burn (4/5/6).",
@@ -70129,6 +70945,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
       "Ammo 0",
@@ -70233,6 +71050,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "When you sell this, your leftmost Heal item gains (5/10/20/40) Heal."
     ],
@@ -70348,6 +71166,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 13 seconds",
       "Deal damage equal to (20%/30%) of your enemy's Max Health.",
@@ -70473,6 +71292,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Deal (6/12/24/48) damage.",
@@ -70580,6 +71400,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "The item to the left of this is a Vehicle and has its cooldown reduced by (5%/10%/15%)."
     ],
@@ -70690,6 +71511,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Deal 100 damage.",
@@ -70813,6 +71635,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Burn 8.",
@@ -70935,6 +71758,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown (17/15/13) seconds",
       "Deal 300 damage.",
@@ -71060,6 +71884,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Haste adjacent Properties for (1/2/3) second(s).",
@@ -71166,6 +71991,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Your Aquatic items have +1 Multicast."
     ],
@@ -71280,6 +72106,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown (10/9/8) seconds",
       "Charge adjacent Large items for half their cooldown."
@@ -71403,6 +72230,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 10 seconds",
       "Deal (50/75/100/125) damage.",
@@ -71526,6 +72354,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Shield (40/60/80).",
@@ -71646,6 +72475,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 12 seconds",
       "Multicast 2",
@@ -71772,6 +72602,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Deal (24/36/48) damage.",
@@ -71817,6 +72648,7 @@ const data: ParsedItemCard[] = [
       "Common"
     ],
     "enchantments": [],
+    "quests": [],
     "unifiedTooltips": [
       "Sells for gold"
     ],
@@ -71932,6 +72764,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Shield 25.",
@@ -72057,6 +72890,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Deal (20/40/80/160) damage.",
@@ -72171,6 +73005,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 8 seconds",
       "Poison 10.",
@@ -72275,6 +73110,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "When you sell this, your leftmost Shield item gains (+3/+6/+12/+24) Shield."
     ],
@@ -72394,6 +73230,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
       "The item to the right of this gains (4%/8%/12%/16%) Crit Chance for the fight."
@@ -72516,6 +73353,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
       "Ammo 2",
@@ -72640,6 +73478,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 20 seconds",
       "Deal 0 damage.",
@@ -72764,6 +73603,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 8 seconds",
       "Deal (8/16/24/32) damage.",
@@ -72888,6 +73728,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown (10/9/8) seconds",
       "Deal 30 damage.",
@@ -73009,6 +73850,32 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [
+      {
+        "entries": [
+          {
+            "tooltips": [
+              "Buy 8 Poison items"
+            ],
+            "rewardTooltips": [
+              "When you Poison, this gains (2/4/6/8) Poison for the fight."
+            ]
+          }
+        ]
+      },
+      {
+        "entries": [
+          {
+            "tooltips": [
+              "Have 75+ Poison on this item."
+            ],
+            "rewardTooltips": [
+              "This has +1 Multicast."
+            ]
+          }
+        ]
+      }
+    ],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Poison (2/4/6/8)."
@@ -73063,6 +73930,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "When you sell this, gain (1/2/3) XP."
     ],
@@ -73164,6 +74032,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "When you sell this, your Shield items gain (1/2/3/4) Shield."
     ],
@@ -73269,6 +74138,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 11 seconds",
       "Destroy an enemy item for the fight.",
@@ -73390,6 +74260,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 4 seconds",
       "Your Shield items gain (1/2/3/4) Shield for the fight."
@@ -73515,6 +74386,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 8 seconds",
       "Deal (75/100/125) damage.",
@@ -73635,6 +74507,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Shield (30/60).",
@@ -73759,6 +74632,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Deal (10/20/30/40) damage.",
@@ -73879,6 +74753,32 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [
+      {
+        "entries": [
+          {
+            "tooltips": [
+              "Buy 8 Regen items"
+            ],
+            "rewardTooltips": [
+              "When you Regen, this gains (2/4/6/8) Regen for the fight."
+            ]
+          }
+        ]
+      },
+      {
+        "entries": [
+          {
+            "tooltips": [
+              "Have 75+ Regen on this item."
+            ],
+            "rewardTooltips": [
+              "This has +1 Multicast."
+            ]
+          }
+        ]
+      }
+    ],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Gain (2/4/6/8) Regen for the fight."
@@ -73991,6 +74891,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 1 seconds",
       "Ammo 3",
@@ -74106,6 +75007,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Slow 1 item(s) for (1/2/3/4) second(s).",
@@ -74233,6 +75135,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Heal 200.",
@@ -74357,6 +75260,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Burn (3/5/7/9).",
@@ -74468,6 +75372,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "When you use a Weapon, Poison (4/5/6).",
       "Your Weapons have + Damage equal to (50%/75%/100%) of the Poison on your enemy."
@@ -74579,6 +75484,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "The weapon to the left of this has (+10/+20/+30/+50) damage.",
       "If you have exactly one weapon, reduce its cooldown by (10%/15%/20%/25%)."
@@ -74699,6 +75605,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Deal 20 damage.",
@@ -74820,6 +75727,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Shield (30/40/50).",
@@ -74949,6 +75857,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "Cooldown 9 seconds",
       "Ammo 2",
@@ -75053,6 +75962,7 @@ const data: ParsedItemCard[] = [
         ]
       }
     ],
+    "quests": [],
     "unifiedTooltips": [
       "When you sell this, permanently gain (10/20/30/40) Max Health."
     ],
