@@ -4,6 +4,12 @@ import type { ParsedMonster } from '$lib/types';
 
 const data: ParsedMonster[] = [
   {
+    "id": "",
+    "health": -1,
+    "items": [],
+    "skills": []
+  },
+  {
     "id": "a5103989-fb08-4ac6-a5e8-6a610e0b1d46",
     "health": 2750,
     "items": [

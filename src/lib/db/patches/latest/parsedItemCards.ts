@@ -30683,7 +30683,7 @@ const data: ParsedItemCard[] = [
               "Buy 8 Poison items"
             ],
             "rewardTooltips": [
-              "Poison ({abilityq1}/3/6/9)."
+              "Poison (3/6/9)."
             ]
           },
           {
@@ -30691,7 +30691,7 @@ const data: ParsedItemCard[] = [
               "Buy 8 Burn items"
             ],
             "rewardTooltips": [
-              "Burn ({abilityq2}/3/6/9)."
+              "Burn (3/6/9)."
             ]
           }
         ]
@@ -30703,7 +30703,7 @@ const data: ParsedItemCard[] = [
               "Buy 4 Slow items"
             ],
             "rewardTooltips": [
-              "Slow ({abilityq3targets}/1/2/3). items for ({abilityq3}/1/1/1). second(s)."
+              "Slow (1/2/3) items for 1 second(s)."
             ]
           },
           {
@@ -30711,7 +30711,7 @@ const data: ParsedItemCard[] = [
               "Buy 4 Freeze items"
             ],
             "rewardTooltips": [
-              "Freeze ({abilityq4targets}/1/2/3). items for ({abilityq4}/0.5/0.5/0.5). second(s)."
+              "Freeze (1/2/3) items for 0.5 second(s)."
             ]
           }
         ]
@@ -57987,7 +57987,7 @@ const data: ParsedItemCard[] = [
               "Complete 1 quest on another item"
             ],
             "rewardTooltips": [
-              "Poison ({abilityq1}/5/10/15)."
+              "Poison (5/10/15)."
             ]
           }
         ]
@@ -57999,7 +57999,7 @@ const data: ParsedItemCard[] = [
               "Complete 2 quests on other items"
             ],
             "rewardTooltips": [
-              "Freeze ({abilityq2targets}/1/1/1). items for ({abilityq2}/0.5/0.5/0.5). second(s)."
+              "Freeze 1 items for 0.5 second(s)."
             ]
           }
         ]
@@ -67247,9 +67247,7 @@ const data: ParsedItemCard[] = [
             "tooltips": [
               "A Weapon is used 50 times"
             ],
-            "rewardTooltips": [
-              "This enchants a second item."
-            ]
+            "rewardTooltips": []
           }
         ]
       }

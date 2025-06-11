@@ -716,6 +716,12 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
                             }];
                         }
 
+                        if (tierOrder.indexOf(tierName) < tierOrder.indexOf(card.StartingTier)) {
+                            return [tierName, {
+                                tooltips: []
+                            }];
+                        }
+
                         const tierAttributes = tier.Attributes;
                         const rewardAttributes = entry.Reward?.Attributes ?? {};
                         const rewardTierAttributes = (entry.Reward?.Tiers?.[tierName]?.Attributes ?? {}) as { [key: string]: number };

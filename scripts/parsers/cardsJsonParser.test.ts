@@ -37,7 +37,7 @@ describe('cardJsonParser', () => {
       );
 
       expect(blankSlate.quests[4].entries[0].rewardTooltips[0]).toEqual(
-        'Freeze (1/2/3/4) items for 0.5 second(s).'
+        'Freeze 1 items for 0.5 second(s).'
       );
     });
 
@@ -45,16 +45,48 @@ describe('cardJsonParser', () => {
       const frostTotem = itemCards.find(card => card.name === "Frost Totem")!;
 
       expect(frostTotem.quests[1].entries[0].rewardTooltips[0]).toEqual(
-        'When you use another Relic, charge this 1 second(s).'
+        'When you use an adjacent Relic, charge this 1 second(s).'
       );
     });
 
     it('should unify Idol of Decay\'s quest reward tooltips involving ability.q1 references', () => {
       const idolOfDecay = itemCards.find(card => card.name === "Idol of Decay")!;
-      
+
       expect(idolOfDecay.quests[0].entries[0].rewardTooltips[0]).toEqual(
         'When you Poison, this gains (2/4/6/8) Poison for the fight.'
       );
+    });
+
+    it('should unify Tomb of the Ancients\'s quest reward tooltips involving ability.q1 references', () => {
+      const tombOfTheAncients = itemCards.find(card => card.name === "Tomb of the Ancients")!;
+
+      expect(tombOfTheAncients.quests[0].entries[0].rewardTooltips[0]).toEqual(
+        'Poison (5/10/15).'
+      );
+    });
+
+    it('should contain no quest reward tooltips with {', () => {
+      const invalidCards = [];
+
+      for (const card of [...itemCards, ...skillCards]) {
+        if ('quests' in card) {
+          const questRewardTooltips = card.quests.flatMap(quest => 
+            quest.entries.flatMap(entry => entry.rewardTooltips)
+          );
+          
+          const invalidTooltips = questRewardTooltips.filter(tooltip => tooltip.includes('{'));
+
+          if (invalidTooltips.length > 0) {
+            invalidCards.push({
+              name: card.name,
+              tooltips: invalidTooltips,
+            });
+          }
+        }
+      }
+
+      // If no invalid tooltips are found, make the assertion to confirm
+      expect(invalidCards).toEqual([]);
     });
   });
 
