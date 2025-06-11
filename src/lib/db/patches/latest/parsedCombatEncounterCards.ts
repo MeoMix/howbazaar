@@ -296,12 +296,12 @@ const data: ParsedCombatEncounterCard[] = [
     "name": "Virtual PVP Neltharion"
   },
   {
-    "id": "bc5fa0a4-8ca9-4384-a283-9c7c84b27169",
-    "name": "Dire Mosquito"
-  },
-  {
     "id": "2a4e119c-bd71-4657-b47a-a56559acf94b",
     "name": "[MONSTER ENCOUNTER TEMPLATE]"
+  },
+  {
+    "id": "bc5fa0a4-8ca9-4384-a283-9c7c84b27169",
+    "name": "Dire Mosquito"
   },
   {
     "id": "91e59b0c-968c-4c45-9391-5104571fee28",
@@ -424,12 +424,12 @@ const data: ParsedCombatEncounterCard[] = [
     "name": "Ahexa"
   },
   {
-    "id": "20863550-960f-4713-99eb-2ff2e4cfb3ef",
-    "name": "Morguloth"
-  },
-  {
     "id": "1eabe08b-2949-407d-b22d-c6e579e0cd14",
     "name": "Rogue Scrapper"
+  },
+  {
+    "id": "20863550-960f-4713-99eb-2ff2e4cfb3ef",
+    "name": "Morguloth"
   },
   {
     "id": "20b58ee9-3db0-4d8a-9bf6-afb8742a16a0",
