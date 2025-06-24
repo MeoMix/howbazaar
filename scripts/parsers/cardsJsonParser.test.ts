@@ -323,6 +323,13 @@ describe('cardJsonParser', () => {
     expect(snowflake.tiers.Diamond.tooltips[0]).toContain(`+0.5 Freeze duration.`);
   });
 
+  it.only('should parse "Captain\'s Wheel properly by replacing {aura.1} with correct value', () => {
+    const captainWheel = itemCards.find(card => card.name === "Captain's Wheel")!;
+    const searchPhrase = "If you have a Vehicle or Large item";
+
+    expect(captainWheel.tiers.Silver.tooltips.find((text) => text.includes(searchPhrase))).toEqual(`${searchPhrase}, reduce this item's cooldown by 2.5 seconds.`);
+  });
+
   it('every card should have a tooltip', () => {
     const invalidCards = [];
 
