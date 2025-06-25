@@ -1,68 +1,4 @@
 {
-  "": {
-    "Id": "",
-    "InternalName": "",
-    "Health": -1,
-    "Items": [],
-    "Skills": []
-  },
-  "": {
-    "Id": "",
-    "InternalName": "",
-    "Health": -1,
-    "Items": [],
-    "Skills": []
-  },
-  "": {
-    "Id": "",
-    "InternalName": "",
-    "Health": -1,
-    "Items": [],
-    "Skills": []
-  },
-  "": {
-    "Id": "",
-    "InternalName": "",
-    "Health": -1,
-    "Items": [],
-    "Skills": []
-  },
-  "": {
-    "Id": "",
-    "InternalName": "",
-    "Health": -1,
-    "Items": [],
-    "Skills": []
-  },
-  "": {
-    "Id": "",
-    "InternalName": "",
-    "Health": -1,
-    "Items": [],
-    "Skills": []
-  },
-  "": {
-    "Id": "",
-    "InternalName": "",
-    "Health": -1,
-    "Items": [],
-    "Skills": []
-  },
-  "": {
-    "Id": "",
-    "InternalName": "",
-    "Health": -1,
-    "Items": [],
-    "Skills": []
-  },
-  "": {
-    "Id": "",
-    "InternalName": "",
-    "Health": -1,
-    "Items": [],
-    "Skills": []
-  },
-
   "a5103989-fb08-4ac6-a5e8-6a610e0b1d46": {
     "Id": "a5103989-fb08-4ac6-a5e8-6a610e0b1d46",
     "InternalName": "Qomatz",
@@ -185,7 +121,7 @@
         "Tier": "Gold"
       },
       {
-        "EnchantmentType": null,
+        "EnchantmentType": "Shielded",
         "Id": "7b731de3-3598-46f4-b61f-75b7a0065d8a",
         "Tier": "Gold"
       },

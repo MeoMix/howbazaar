@@ -117,7 +117,8 @@ const data: ParsedMonster[] = [
       },
       {
         "id": "7b731de3-3598-46f4-b61f-75b7a0065d8a",
-        "tierType": "Gold"
+        "tierType": "Gold",
+        "enchantmentType": "Shielded"
       },
       {
         "id": "4e7b6813-338f-43f2-a47b-5ccde7d50007",
