@@ -3335,10 +3335,6 @@ const data: ParsedMonster[] = [
         "tierType": "Legendary"
       },
       {
-        "id": "08bb5055-bd8d-4f86-bff6-24f8cb47f509",
-        "tierType": "Bronze"
-      },
-      {
         "id": "df87dc00-f0fe-4e47-b864-ad6b4bfea81a",
         "tierType": "Silver"
       },
@@ -3351,8 +3347,8 @@ const data: ParsedMonster[] = [
         "tierType": "Silver"
       },
       {
-        "id": "08bb5055-bd8d-4f86-bff6-24f8cb47f509",
-        "tierType": "Bronze"
+        "id": "694a08fe-e8ff-4a45-9693-4c68f11a1f8b",
+        "tierType": "Silver"
       }
     ],
     "skills": [

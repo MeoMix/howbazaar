@@ -3919,11 +3919,6 @@
       },
       {
         "EnchantmentType": null,
-        "Id": "08bb5055-bd8d-4f86-bff6-24f8cb47f509",
-        "Tier": "Bronze"
-      },
-      {
-        "EnchantmentType": null,
         "Id": "df87dc00-f0fe-4e47-b864-ad6b4bfea81a",
         "Tier": "Silver"
       },
@@ -3939,8 +3934,8 @@
       },
       {
         "EnchantmentType": null,
-        "Id": "08bb5055-bd8d-4f86-bff6-24f8cb47f509",
-        "Tier": "Bronze"
+        "Id": "694a08fe-e8ff-4a45-9693-4c68f11a1f8b",
+        "Tier": "Silver"
       }
     ],
     "Skills": [
