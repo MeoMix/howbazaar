@@ -8244,6 +8244,53 @@ const data: ParsedSkillCard[] = [
     "packId": "Mak_Core"
   },
   {
+    "id": "546166b0-03bf-42e9-8370-9ad05d1f00c8",
+    "name": "Supply Cache",
+    "startingTier": "Bronze",
+    "tiers": {
+      "Bronze": {
+        "tooltips": [
+          "At the start of each day, get 2 Loot items."
+        ]
+      },
+      "Silver": {
+        "tooltips": [
+          "At the start of each day, get 2 Loot items."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "At the start of each day, get 2 Loot items."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "At the start of each day, get 2 Loot items."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Vanessa",
+      "Dooley",
+      "Jules",
+      "Stelle",
+      "Mak",
+      "Pygmalien"
+    ],
+    "artKey": "Icon_Skill_SupplyCache",
+    "unifiedTooltips": [
+      "At the start of each day, get 2 Loot items."
+    ],
+    "packId": "Core"
+  },
+  {
     "id": "a885b513-3fe3-4795-a10e-c2e4f6b5f1f6",
     "name": "Parting Shot",
     "startingTier": "Gold",

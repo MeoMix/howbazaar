@@ -8897,6 +8897,62 @@ const data: PatchNotes = {
         ],
         "removed": []
       }
+    },
+    "546166b0-03bf-42e9-8370-9ad05d1f00c8": {
+      "metadata": {
+        "id": "546166b0-03bf-42e9-8370-9ad05d1f00c8",
+        "name": "Supply Cache",
+        "previousStartingTier": "Bronze",
+        "currentStartingTier": "Bronze",
+        "heroes": [
+          "Vanessa",
+          "Dooley",
+          "Jules",
+          "Stelle",
+          "Mak",
+          "Pygmalien"
+        ],
+        "currentSize": "Medium",
+        "type": "skill"
+      },
+      "name": {
+        "oldValue": null,
+        "newValue": "Supply Cache"
+      },
+      "startingTier": {
+        "oldValue": null,
+        "newValue": "Bronze"
+      },
+      "tags": {
+        "added": [],
+        "removed": []
+      },
+      "hiddenTags": {
+        "added": [],
+        "removed": []
+      },
+      "size": {
+        "oldValue": null,
+        "newValue": "Medium"
+      },
+      "heroes": {
+        "added": [
+          "Vanessa",
+          "Dooley",
+          "Jules",
+          "Stelle",
+          "Mak",
+          "Pygmalien"
+        ],
+        "removed": []
+      },
+      "tooltips": [
+        {
+          "index": 0,
+          "oldValue": null,
+          "newValue": "At the start of each day, get 2 Loot items."
+        }
+      ]
     }
   }
 };
