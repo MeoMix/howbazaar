@@ -322,12 +322,7 @@
       },
       {
         "EnchantmentType": null,
-        "Id": "84b74f1e-0960-4c71-bb4f-d35e114250c2",
-        "Tier": "Bronze"
-      },
-      {
-        "EnchantmentType": null,
-        "Id": "2df8f38b-bb9f-4247-afe9-525067c9e29e",
+        "Id": "ae126c7d-8f0f-4a23-b11f-da56e5353220",
         "Tier": "Gold"
       },
       {
@@ -337,7 +332,12 @@
       },
       {
         "EnchantmentType": null,
-        "Id": "48d24eb0-d953-409c-9602-1d3d4c4278c5",
+        "Id": "4997b886-940a-4882-92f2-e5c8042749df",
+        "Tier": "Silver"
+      },
+      {
+        "EnchantmentType": null,
+        "Id": "d8e476dd-8184-4cb5-8cca-df1cb66c4305",
         "Tier": "Gold"
       }
     ],
