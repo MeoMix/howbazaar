@@ -206,7 +206,7 @@ const invalidItemIds: Record<string, string> = {
   "fdb8f063-d430-4391-9dc4-79b9f9bda25b": "Elixir of Immortality",
   "c7432844-9341-411b-8a1f-8662d46c181f": "Large Package",
   "4ddb3806-a5ee-4cfd-985f-19f184580ade": "Small Package",
-  "d0b0c34c-f616-4a51-a0f4-fe63216cf8af": "Moon Orb",
+  // "d0b0c34c-f616-4a51-a0f4-fe63216cf8af": "Moon Orb",
   "9d871e47-c760-42aa-84ab-995f5bf3f394": "Epsilon Ray"
 };
 

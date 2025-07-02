@@ -42,7 +42,21 @@ const nameToFileMap: { [key: string]: string } = {
     'Cleaver': 'Сleaver',
     'Soulstone': 'SoulStone',
     'SandsOfTime': 'TomeOfTime',
-    'EthergyConduit': 'LargeRelic'
+    'EthergyConduit': 'LargeRelic',
+    'CEGreenPiggles': 'PremiumCollectorsEditionPiggles_Green',
+    'CEOrangePiggles': 'PremiumCollectorsEditionPiggles_Orange',
+    'CERedPiggles': 'PremiumCollectorsEditionPiggles_Red',
+    'CEYellowPiggles': 'PremiumCollectorsEditionPiggles_Yellow',
+    'PremiumColectorsEditionPiggles': 'PremiumCollectorsEditionPiggles',
+    'PigglesBlueA': 'Piggles_Blue_A',
+    'PigglesBlueL': 'Piggles_Blue_L',
+    'PigglesBlueR': 'Piggles_Blue_R',
+    'PigglesRedA': 'Piggles_Red_A',
+    'PigglesRedL': 'Piggles_Red_L',
+    'PigglesRedR': 'Piggles_Red_R',
+    'PigglesYellowA': 'Piggles_Yellow_A',
+    'PigglesYellowL': 'Piggles_Yellow_L',
+    'PigglesYellowR': 'Piggles_Yellow_R',
 };
 
 async function processItemImages() {
@@ -181,27 +195,6 @@ async function processCardDataFiles(): Promise<ExpectedImage[]> {
                 });
             }
         }
-
-        // Piggles: each base image covers multiple variants
-        expectedImages.push(
-            // Red
-            { cardGUID: '844efa15-de6f-4fec-a438-21904969577b', name: 'RedPigglesA', imageAlias: 'PigglesRed' },
-            { cardGUID: 'b3c06ff9-f0e1-4527-81aa-2f71d7bf6503', name: 'RedPigglesL', imageAlias: 'PigglesRed' },
-            { cardGUID: 'b57d9963-d241-40c9-8f9f-f9925a2da661', name: 'RedPigglesR', imageAlias: 'PigglesRed' },
-            { cardGUID: '48d24eb0-d953-409c-9602-1d3d4c4278c5', name: 'RedPigglesX', imageAlias: 'PigglesRed' },
-
-            // Blue
-            { cardGUID: 'ce7ff94f-29e4-4f2d-bca9-cca83eacf774', name: 'BluePigglesA', imageAlias: 'PigglesBlue' },
-            { cardGUID: '2df8f38b-bb9f-4247-afe9-525067c9e29e', name: 'BluePigglesL', imageAlias: 'PigglesBlue' },
-            { cardGUID: '1d8d4dea-aaf9-4041-aa54-ae133f552d55', name: 'BluePigglesR', imageAlias: 'PigglesBlue' },
-            { cardGUID: '8124f91b-3b4f-40ae-9493-057a0be7feb9', name: 'BluePigglesX', imageAlias: 'PigglesBlue' },
-
-            // Yellow
-            { cardGUID: '9c21ee00-116d-4868-a215-3f9b57bc8657', name: 'YellowPigglesA', imageAlias: 'PigglesYellow' },
-            { cardGUID: 'd8e476dd-8184-4cb5-8cca-df1cb66c4305', name: 'YellowPigglesL', imageAlias: 'PigglesYellow' },
-            { cardGUID: 'd4586506-d4d6-45d5-866b-796203f8d9d3', name: 'YellowPigglesX', imageAlias: 'PigglesYellow' },
-            { cardGUID: '3868bcee-4463-4c34-9a9b-b1ab1fa49260', name: 'YellowPigglesR', imageAlias: 'PigglesYellow' },
-        );
 
         // Tiny Cutlass (uses Cutlass image)
         expectedImages.push({

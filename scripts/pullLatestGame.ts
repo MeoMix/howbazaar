@@ -5,7 +5,8 @@ import fetch from 'node-fetch';
 import { pipeline } from 'stream/promises';
 import unzipper from 'unzipper';
 
-const GAME_URL = 'https://cdn.playthebazaar.com/bazaarprodbuild/The_Bazaar_game_64.zip';
+// TODO: For some reason this is downloading an old version of the game?
+const GAME_URL = 'https://cdn.playthebazaar.com/bazaarprodbuild/bazaarwinprodlatest.zip';
 const TIMESTAMP_FILE = './scripts/gameZipLastModified.txt';
 const OUTPUT_DIR = './scripts/game';
 const OUTPUT_FILE = path.join(OUTPUT_DIR, 'game.zip');
@@ -61,10 +62,10 @@ async function main() {
         const lastModified = headResponse.headers.get('last-modified');
         if (!lastModified) throw new Error('No last-modified header found');
 
-        // if (storedTimestamp === lastModified) {
-        //     console.log('Data is up to date');
-        //     return;
-        // }
+        if (storedTimestamp === lastModified) {
+            console.log('Data is up to date');
+            return;
+        }
 
         console.log(storedTimestamp ? 'New data available, downloading...' : 'No timestamp file found, downloading...');
 
