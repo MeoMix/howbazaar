@@ -14849,7 +14849,7 @@ const data: ParsedItemCard[] = [
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 7 seconds",
+          "Cooldown 6.5 seconds",
           "Haste 3 item(s) for 1 second(s).",
           "When an adjacent item Burns, charge this 1 second(s)."
         ]
@@ -14947,7 +14947,7 @@ const data: ParsedItemCard[] = [
     ],
     "quests": [],
     "unifiedTooltips": [
-      "Cooldown (7/7/6) seconds",
+      "Cooldown (7/6.5/6) seconds",
       "Haste (2/3/4) item(s) for 1 second(s).",
       "When an adjacent item Burns, charge this 1 second(s)."
     ],
@@ -21314,7 +21314,7 @@ const data: ParsedItemCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "Cooldown 7 seconds",
+          "Cooldown 6.5 seconds",
           "Burn 6.",
           "When an adjacent item Hastes or Slows, charge this 1 second(s)."
         ]
@@ -21328,7 +21328,7 @@ const data: ParsedItemCard[] = [
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 6 seconds",
+          "Cooldown 5.5 seconds",
           "Burn 10.",
           "When an adjacent item Hastes or Slows, charge this 1 second(s)."
         ]
@@ -21420,7 +21420,7 @@ const data: ParsedItemCard[] = [
     ],
     "quests": [],
     "unifiedTooltips": [
-      "Cooldown (7/7/6/6) seconds",
+      "Cooldown (7/6.5/6/5.5) seconds",
       "Burn (4/6/8/10).",
       "When an adjacent item Hastes or Slows, charge this 1 second(s)."
     ],
@@ -68350,7 +68350,7 @@ const data: ParsedItemCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "Cooldown 7 seconds",
+          "Cooldown 6.5 seconds",
           "Poison 6.",
           "When an adjacent item Slows or Freezes, charge this 1 second(s)."
         ]
@@ -68364,7 +68364,7 @@ const data: ParsedItemCard[] = [
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 6 seconds",
+          "Cooldown 5.5 seconds",
           "Poison 10.",
           "When an adjacent item Slows or Freezes, charge this 1 second(s)."
         ]
@@ -68456,7 +68456,7 @@ const data: ParsedItemCard[] = [
     ],
     "quests": [],
     "unifiedTooltips": [
-      "Cooldown (7/7/6/6) seconds",
+      "Cooldown (7/6.5/6/5.5) seconds",
       "Poison (4/6/8/10).",
       "When an adjacent item Slows or Freezes, charge this 1 second(s)."
     ],

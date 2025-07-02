@@ -297,6 +297,22 @@ function prettyPrintTooltip(tooltip: string) {
     return tooltip;
 }
 
+// Round stuff like 5.99 to 6.0 (or nearest integer) but leave 5.5 untouched.
+function getRoundedAttributeValue(value: number) {
+    let displayValue;
+
+    // Round to 1 decimal to remove floating noise
+    let rounded = Math.round(value * 10) / 10;
+
+    if (Number.isInteger(rounded)) {
+        displayValue = rounded.toString(); // show as "6"
+    } else {
+        displayValue = rounded.toString(); // show as "5.5"
+    }
+
+    return displayValue;
+}
+
 function getDisplayedAttributes(attributes: Tier["Attributes"]) {
     // Filter and format tier attributes for display
     let displayedAttributes = Object.entries(attributes)
@@ -509,7 +525,12 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
 
                 let tooltips = getDisplayedTooltips(rawTooltips, abilities, auras, tier.Attributes);
                 let attributes = getDisplayedAttributes(tier.Attributes);
-                let attributeTooltips = attributes.map(attribute => `${attribute.name} ${attribute.name === "Lifesteal" ? "" : Math.round(attribute.value)}${attribute.valueDescriptor ?? ""}`.trim());
+
+                let attributeTooltips = attributes.map(attribute => {
+                    const displayValue = getRoundedAttributeValue(attribute.value);
+                
+                    return `${attribute.name} ${attribute.name === "Lifesteal" ? "" : displayValue}${attribute.valueDescriptor ?? ""}`.trim();
+                });
 
                 return [tierName, {
                     tooltips: [...attributeTooltips, ...tooltips],
@@ -662,7 +683,8 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
 
                 if (actions.length === 0) {
                     for (let [attributeName, attributeValue] of Object.entries(enchantmentAttributes)) {
-                        tooltips.push(`${attributeName}${attributeName === "Lifesteal" ? "" : Math.round(attributeValue)}`.trim());
+                        const displayValue = getRoundedAttributeValue(attributeValue);
+                        tooltips.push(`${attributeName}${attributeName === "Lifesteal" ? "" : displayValue}`.trim());
                     }
                 }
             } else {

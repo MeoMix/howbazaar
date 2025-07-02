@@ -204,6 +204,12 @@ describe('cardJsonParser', () => {
     // });
   });
 
+  it('should not round half-second cooldown to nearest integer', () => {
+    const greenWaspCard = itemCards.find(card => card.name === "GRN-W4SP")!;
+
+    expect(greenWaspCard.tiers.Silver.tooltips[0]).toEqual("Cooldown 6.5 seconds");
+  });
+
   // TODO: This might not be a special test case anymore
   it('should parse "Bill Dozer" correctly with correct cooldown reduction texts for each tier', () => {
     const billDozerCard = itemCards.find(card => card.name === "Bill Dozer")!;

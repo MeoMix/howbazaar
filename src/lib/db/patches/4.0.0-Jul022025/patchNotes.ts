@@ -573,7 +573,7 @@ const data: PatchNotes = {
         {
           "index": 0,
           "oldValue": "Cooldown 6 seconds",
-          "newValue": "Cooldown (7/7/6) seconds"
+          "newValue": "Cooldown (7/6.5/6) seconds"
         }
       ]
     },
@@ -924,7 +924,7 @@ const data: PatchNotes = {
         {
           "index": 0,
           "oldValue": "Cooldown 6 seconds",
-          "newValue": "Cooldown (7/7/6/6) seconds"
+          "newValue": "Cooldown (7/6.5/6/5.5) seconds"
         }
       ]
     },
@@ -2829,7 +2829,7 @@ const data: PatchNotes = {
         {
           "index": 0,
           "oldValue": "Cooldown 6 seconds",
-          "newValue": "Cooldown (7/7/6/6) seconds"
+          "newValue": "Cooldown (7/6.5/6/5.5) seconds"
         }
       ]
     },
