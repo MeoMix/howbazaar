@@ -101,7 +101,6 @@ const invalidItemIds: Record<string, string> = {
   "940310f6-c96e-4635-a822-9baa94bd24c3": "Unused Card_4349",
   "c8abacb3-3d98-4266-9842-775a5683ac8c": "Pantry",
   "10bd6498-7d7f-4567-b80c-d30a133ae109": "Oxygen Tank",
-  "a01cd513-8d2b-45c7-b5ba-6d4dcdd23065": "Lunch Box",
   "a16f1388-d900-4871-8baf-873e38190f9a": "Trail Mix",
   "3af3eb73-de4e-44cd-9510-761f8b24b799": "Unused Card_4347",
   "f206ba7b-5496-46fd-abe8-bca5cfebbf2d": "Pogo Stick",
@@ -206,7 +205,7 @@ const invalidItemIds: Record<string, string> = {
   "fdb8f063-d430-4391-9dc4-79b9f9bda25b": "Elixir of Immortality",
   "c7432844-9341-411b-8a1f-8662d46c181f": "Large Package",
   "4ddb3806-a5ee-4cfd-985f-19f184580ade": "Small Package",
-  // "d0b0c34c-f616-4a51-a0f4-fe63216cf8af": "Moon Orb",
+  "d0b0c34c-f616-4a51-a0f4-fe63216cf8af": "Moon Orb",
   "9d871e47-c760-42aa-84ab-995f5bf3f394": "Epsilon Ray"
 };
 

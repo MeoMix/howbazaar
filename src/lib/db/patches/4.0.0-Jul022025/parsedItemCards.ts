@@ -60051,6 +60051,114 @@ const data: ParsedItemCard[] = [
     "packId": "Mak_Core"
   },
   {
+    "id": "a01cd513-8d2b-45c7-b5ba-6d4dcdd23065",
+    "name": "Lunch Box",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "At the start of each day, get a Small Food item from any Hero.",
+          "When you sell a Food item, permanently gain 1 Regen."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "At the start of each day, get a Small Food item from any Hero.",
+          "When you sell a Food item, permanently gain 2 Regen."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "At the start of each day, get a Small Food item from any Hero.",
+          "When you sell a Food item, permanently gain 3 Regen."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "Regen"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Stelle"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 2 items for 2 second(s)."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze 1 item for 4 second(s)."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 2 items for 2 second(s)."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "+18 Shield"
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal 24."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison 4."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn 6."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This cannot be Frozen, Slowed or Destroyed."
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "At the start of each day, get a Small Food item from any Hero.",
+      "When you sell a Food item, permanently gain (1/2/3) Regen."
+    ],
+    "packId": "Stelle_Core"
+  },
+  {
     "id": "832afbee-fdb4-47e2-b4ac-0206b8955816",
     "name": "Lemonade Stand",
     "startingTier": "Silver",
