@@ -192,6 +192,10 @@ const data: ParsedCombatEncounterCard[] = [
     "name": "Oasis Guardian"
   },
   {
+    "id": "e51634b6-ce99-4038-97e4-b9d86bdddae0",
+    "name": "Slumbering Primordial"
+  },
+  {
     "id": "93d7bb74-2d23-4ccc-a99f-9380afaf738a",
     "name": "Dr. Vortex"
   },
@@ -214,6 +218,10 @@ const data: ParsedCombatEncounterCard[] = [
   {
     "id": "776c224d-1e4e-4a20-8516-550b94c05ff1",
     "name": "Void Colossus"
+  },
+  {
+    "id": "96c9ede1-34f3-442c-89d3-befbef196729",
+    "name": "Gibbus"
   },
   {
     "id": "ae118438-c54d-4129-98d1-b576e4a4d380",
@@ -296,6 +304,10 @@ const data: ParsedCombatEncounterCard[] = [
     "name": "Virtual PVP Neltharion"
   },
   {
+    "id": "25f54463-2cca-419a-b0e8-8f5297896992",
+    "name": "Dooltron"
+  },
+  {
     "id": "2a4e119c-bd71-4657-b47a-a56559acf94b",
     "name": "[MONSTER ENCOUNTER TEMPLATE]"
   },
@@ -338,6 +350,14 @@ const data: ParsedCombatEncounterCard[] = [
   {
     "id": "e3a8efa1-1dfc-4dd5-a1fe-7daaa8315e18",
     "name": "Infernal"
+  },
+  {
+    "id": "35d68424-87ba-4d8a-8776-8d8302a425f9",
+    "name": "Product Demonstrator"
+  },
+  {
+    "id": "27f9cc4c-3f9e-494a-a13d-99797114c53c",
+    "name": "Rex Spex"
   },
   {
     "id": "62d59e46-31cc-411d-af27-0f3bf82ca57b",
@@ -386,6 +406,10 @@ const data: ParsedCombatEncounterCard[] = [
   {
     "id": "962bf2b2-fc1b-4ad3-9526-15d76d3bb0de",
     "name": "Foundation Weeper"
+  },
+  {
+    "id": "fd862d85-66cd-431f-a85a-07742cbc2e1b",
+    "name": "Test Subject Alpha"
   },
   {
     "id": "365122bf-7bb0-4fa3-93bd-06bf5a94e324",
@@ -462,6 +486,10 @@ const data: ParsedCombatEncounterCard[] = [
   {
     "id": "325c88c3-9496-44bf-b900-4adf1f84bf2f",
     "name": "Eccentric Etherwright"
+  },
+  {
+    "id": "2b68a81d-ea7e-401b-a374-77529470383f",
+    "name": "Tortuga"
   },
   {
     "id": "1400ea5b-6492-4c41-9bf9-c7016973ee0a",

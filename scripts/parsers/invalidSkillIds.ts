@@ -92,7 +92,12 @@ const invalidSkillIds: Record<string, string> = {
   "aa59ff52-e4de-4728-bf9c-3ac8411ecbd8": "Large Poisons",
   "b1b9ff21-32ac-436a-bd3c-120563b26bea": "Third Degree Burns",
   "1034cd09-ce16-44ad-9a73-ba86a592c9d2": "Keen Edge",
-  "7f097b31-c29e-4082-a835-6d6457c2d536": "Ignition"
+  "7f097b31-c29e-4082-a835-6d6457c2d536": "Ignition",
+  "2b081d19-8f82-44fd-b6d2-0daeaf97a85e": "Frontline Logistics",
+  "43b5e350-ec7f-4236-aaa4-fbcd0c7721de": "Product Showcase",
+  "546166b0-03bf-42e9-8370-9ad05d1f00c8": "Supply Cache",
+  "cda0b592-db91-4840-8ab1-ae5c261205e6": "Truffleholic",
+  "8ccadf9b-11f9-4cf7-9462-b287926abb99": "Wax and Wane"
 };
 
 export default invalidSkillIds;

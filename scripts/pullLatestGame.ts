@@ -61,10 +61,10 @@ async function main() {
         const lastModified = headResponse.headers.get('last-modified');
         if (!lastModified) throw new Error('No last-modified header found');
 
-        if (storedTimestamp === lastModified) {
-            console.log('Data is up to date');
-            return;
-        }
+        // if (storedTimestamp === lastModified) {
+        //     console.log('Data is up to date');
+        //     return;
+        // }
 
         console.log(storedTimestamp ? 'New data available, downloading...' : 'No timestamp file found, downloading...');
 

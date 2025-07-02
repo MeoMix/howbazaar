@@ -301,7 +301,7 @@ describe('cardJsonParser', () => {
     const criticalCore = itemCards.find(card => card.name === "Critical Core")!;
     const cooldownTooltip = criticalCore.tiers["Gold"].tooltips.find(tooltip => tooltip.includes("Cooldown"));
 
-    expect(cooldownTooltip).toContain("6 seconds");
+    expect(cooldownTooltip).toContain("7 seconds");
   });
 
   it('should fix Multitool\'s extraneous "an" in tooltip', () => {
@@ -323,7 +323,7 @@ describe('cardJsonParser', () => {
     expect(snowflake.tiers.Diamond.tooltips[0]).toContain(`+0.5 Freeze duration.`);
   });
 
-  it.only('should parse "Captain\'s Wheel properly by replacing {aura.1} with correct value', () => {
+  it('should parse "Captain\'s Wheel properly by replacing {aura.1} with correct value', () => {
     const captainWheel = itemCards.find(card => card.name === "Captain's Wheel")!;
     const searchPhrase = "If you have a Vehicle or Large item";
 

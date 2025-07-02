@@ -3,7 +3,7 @@
 // https://github.com/glideapps/quicktype?tab=readme-ov-file#calling-quicktype-from-javascript
 import type { Entries } from "type-fest";
 import type { ParsedCombatEncounterCard, ParsedItemCard, ParsedMerchantCard, ParsedSkillCard } from "$lib/types";
-import type { The300 as Card, LegendaryClass as Tier, The300_Tiers as Tiers, Tier as TierType, AbilityAction, AuraAction, Ability, Aura, Operation } from "./data/cards";
+import type { The400 as Card, LegendaryClass as Tier, The400_Tiers as Tiers, Tier as TierType, AbilityAction, AuraAction, Ability, Aura, Operation } from "./data/cards";
 import { unifyTooltips } from "$lib/utils/tooltipUtils";
 import type { CardsJson } from "./types.parser";
 import invalidItemIds from "./invalidItemIds";
@@ -11,12 +11,10 @@ import invalidSkillIds from "./invalidSkillIds";
 import invalidMerchantIds from "./invalidMerchantIds";
 import customTagMap from "./customTagsMap";
 
-const CURRENT_VERSION = "3.0.0";
+const CURRENT_VERSION = "4.0.0";
 
 // Card packs that should be filtered out
 const disallowedCardPacks = [
-    "Vanessa_From_the_Shadows",
-    "Pyg_Pigglestorm"
     // Add more card packs to filter here as needed
 ] as string[];
 
@@ -77,7 +75,6 @@ function getAttributeInfo(
             attributeValue = action.Value.Modifier.Value.Value ?? action.Value.Modifier.Value.DefaultValue!;
             operation = action.Operation!;
 
-
             if (qualifier.isMod) {
                 // If there is no Action.Value.Modifier.Value.Value then look at AttributeType
                 if (action.Value.Modifier.Value.Value === undefined) {
@@ -94,7 +91,6 @@ function getAttributeInfo(
                     name: attributeName,
                     value: attributeValue,
                     operation,
-
                 };
             }
 
@@ -103,6 +99,14 @@ function getAttributeInfo(
                 let modifierAttributeValue = modifierAttributeName === undefined ? 0 : getAttributeValueFromTier(modifierAttributeName, tierAttributes, qualifier);
                 attributeValue *= modifierAttributeValue;
             }
+
+
+            // TODO: This is a weird hacky edge case?
+            if (attributeValue === 0 && operation === "Add" && action.Value.AttributeType) {
+                attributeName = action.Value.AttributeType;
+                attributeValue = undefined;
+            }
+
         } else if (action.Value?.AttributeType) {
             attributeName = action.Value.AttributeType;
         }

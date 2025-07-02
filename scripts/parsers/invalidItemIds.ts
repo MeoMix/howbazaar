@@ -202,7 +202,12 @@ const invalidItemIds: Record<string, string> = {
   "367c2ad9-94b3-4f01-a130-a673922244ef": "Cookies",
   "4b99310e-ea89-4324-89fe-d2649dfd8ff6": "Oblivion Core",
   "3174b74a-9e67-4db7-ba98-0d4935b2586d": "Custom Scope",
-  "dd438f4e-77ea-4b7a-b59e-ae8906c49da8": "Augment Reagents"
+  "dd438f4e-77ea-4b7a-b59e-ae8906c49da8": "Augment Reagents",
+  "fdb8f063-d430-4391-9dc4-79b9f9bda25b": "Elixir of Immortality",
+  "c7432844-9341-411b-8a1f-8662d46c181f": "Large Package",
+  "4ddb3806-a5ee-4cfd-985f-19f184580ade": "Small Package",
+  "d0b0c34c-f616-4a51-a0f4-fe63216cf8af": "Moon Orb",
+  "9d871e47-c760-42aa-84ab-995f5bf3f394": "Epsilon Ray"
 };
 
 export default invalidItemIds;

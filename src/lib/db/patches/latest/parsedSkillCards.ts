@@ -663,17 +663,17 @@ const data: ParsedSkillCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "When you poison, your weapons gain 5 damage for the fight."
+          "When you poison, your weapons gain 3 damage for the fight."
         ]
       },
       "Gold": {
         "tooltips": [
-          "When you poison, your weapons gain 10 damage for the fight."
+          "When you poison, your weapons gain 6 damage for the fight."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "When you poison, your weapons gain 15 damage for the fight."
+          "When you poison, your weapons gain 9 damage for the fight."
         ]
       },
       "Legendary": {
@@ -693,7 +693,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_Toxic.png",
     "unifiedTooltips": [
-      "When you poison, your weapons gain (5/10/15) damage for the fight."
+      "When you poison, your weapons gain (3/6/9) damage for the fight."
     ],
     "packId": "Vanessa_Core"
   },
@@ -2122,20 +2122,20 @@ const data: ParsedSkillCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "When you Burn, your Poison items gain +3 Poison for the fight.",
-          "When you Poison, your Burn items gain +3 Burn for the fight."
+          "When you Burn, your Poison items gain +1 Poison for the fight.",
+          "When you Poison, your Burn items gain +1 Burn for the fight."
         ]
       },
       "Gold": {
         "tooltips": [
-          "When you Burn, your Poison items gain +4 Poison for the fight.",
-          "When you Poison, your Burn items gain +4 Burn for the fight."
+          "When you Burn, your Poison items gain +2 Poison for the fight.",
+          "When you Poison, your Burn items gain +2 Burn for the fight."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "When you Burn, your Poison items gain +5 Poison for the fight.",
-          "When you Poison, your Burn items gain +5 Burn for the fight."
+          "When you Burn, your Poison items gain +3 Poison for the fight.",
+          "When you Poison, your Burn items gain +3 Burn for the fight."
         ]
       },
       "Legendary": {
@@ -2156,8 +2156,8 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_ToxicFlame.png",
     "unifiedTooltips": [
-      "When you Burn, your Poison items gain (+3/+4/+5) Poison for the fight.",
-      "When you Poison, your Burn items gain (+3/+4/+5) Burn for the fight."
+      "When you Burn, your Poison items gain (+1/+2/+3) Poison for the fight.",
+      "When you Poison, your Burn items gain (+1/+2/+3) Burn for the fight."
     ],
     "packId": "Vanessa_Core"
   },
@@ -2537,7 +2537,9 @@ const data: ParsedSkillCard[] = [
     "tags": [
       "Tool"
     ],
-    "hiddenTags": [],
+    "hiddenTags": [
+      "CritReference"
+    ],
     "customTags": [],
     "size": "Medium",
     "heroes": [
@@ -4550,22 +4552,22 @@ const data: ParsedSkillCard[] = [
     "tiers": {
       "Bronze": {
         "tooltips": [
-          "When you Slow, gain 1 Regen for the fight."
+          "When you use a small item, gain 1 Regen for the fight."
         ]
       },
       "Silver": {
         "tooltips": [
-          "When you Slow, gain 2 Regen for the fight."
+          "When you use a small item, gain 2 Regen for the fight."
         ]
       },
       "Gold": {
         "tooltips": [
-          "When you Slow, gain 3 Regen for the fight."
+          "When you use a small item, gain 3 Regen for the fight."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "When you Slow, gain 4 Regen for the fight."
+          "When you use a small item, gain 4 Regen for the fight."
         ]
       },
       "Legendary": {
@@ -4586,7 +4588,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_MON_RelaxBro.png",
     "unifiedTooltips": [
-      "When you Slow, gain (1/2/3/4) Regen for the fight."
+      "When you use a small item, gain (1/2/3/4) Regen for the fight."
     ],
     "packId": "Core"
   },
@@ -4796,6 +4798,7 @@ const data: ParsedSkillCard[] = [
     "size": "Medium",
     "heroes": [
       "Vanessa",
+      "Dooley",
       "Jules",
       "Mak"
     ],
@@ -4836,7 +4839,8 @@ const data: ParsedSkillCard[] = [
     },
     "tags": [],
     "hiddenTags": [
-      "BurnReference"
+      "BurnReference",
+      "CritReference"
     ],
     "customTags": [],
     "size": "Medium",
@@ -5214,17 +5218,17 @@ const data: ParsedSkillCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "The first time you Haste each fight, Freeze 1 item(s) for 3 second(s)."
+          "The first time you Haste each fight, Freeze 1 item(s) for 2 second(s)."
         ]
       },
       "Gold": {
         "tooltips": [
-          "The first time you Haste each fight, Freeze 1 item(s) for 4 second(s)."
+          "The first time you Haste each fight, Freeze 1 item(s) for 3 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "The first time you Haste each fight, Freeze 1 item(s) for 5 second(s)."
+          "The first time you Haste each fight, Freeze 1 item(s) for 4 second(s)."
         ]
       },
       "Legendary": {
@@ -5246,7 +5250,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_QuickFreeze.png",
     "unifiedTooltips": [
-      "The first time you Haste each fight, Freeze 1 item(s) for (3/4/5) second(s)."
+      "The first time you Haste each fight, Freeze 1 item(s) for (2/3/4) second(s)."
     ],
     "packId": "Dooley_Core"
   },
@@ -5502,7 +5506,8 @@ const data: ParsedSkillCard[] = [
     },
     "tags": [],
     "hiddenTags": [
-      "HealthReference"
+      "HealthReference",
+      "CritReference"
     ],
     "customTags": [],
     "size": "Medium",
@@ -6435,6 +6440,7 @@ const data: ParsedSkillCard[] = [
     "size": "Medium",
     "heroes": [
       "Vanessa",
+      "Dooley",
       "Mak"
     ],
     "artKey": "Icon_Skill_ImprovisedWeaponry.png",
@@ -8305,7 +8311,7 @@ const data: ParsedSkillCard[] = [
       "Weapon"
     ],
     "hiddenTags": [
-      "Crit"
+      "CritReference"
     ],
     "customTags": [],
     "size": "Medium",
@@ -8915,7 +8921,9 @@ const data: ParsedSkillCard[] = [
     "tags": [
       "Vehicle"
     ],
-    "hiddenTags": [],
+    "hiddenTags": [
+      "CritReference"
+    ],
     "customTags": [],
     "size": "Medium",
     "heroes": [
@@ -9074,17 +9082,17 @@ const data: ParsedSkillCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "The first time you use an item each fight, shield equal to 20% of your max health."
+          "The first time you use an item each fight, shield equal to 15% of your max health."
         ]
       },
       "Gold": {
         "tooltips": [
-          "The first time you use an item each fight, shield equal to 35% of your max health."
+          "The first time you use an item each fight, shield equal to 20% of your max health."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "The first time you use an item each fight, shield equal to 50% of your max health."
+          "The first time you use an item each fight, shield equal to 25% of your max health."
         ]
       },
       "Legendary": {
@@ -9105,7 +9113,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_DefenseGrid.png",
     "unifiedTooltips": [
-      "The first time you use an item each fight, shield equal to (10%/20%/35%/50%) of your max health."
+      "The first time you use an item each fight, shield equal to (10%/15%/20%/25%) of your max health."
     ],
     "packId": "Pygmalien_Core"
   },
@@ -9588,7 +9596,8 @@ const data: ParsedSkillCard[] = [
     },
     "tags": [],
     "hiddenTags": [
-      "ShieldReference"
+      "ShieldReference",
+      "CritReference"
     ],
     "customTags": [],
     "size": "Medium",
@@ -11208,12 +11217,12 @@ const data: ParsedSkillCard[] = [
       },
       "Gold": {
         "tooltips": [
-          "When your enemy uses a Weapon, your Shield items gain 5 Shield for the fight."
+          "When your enemy uses a Weapon, your Shield items gain 10 Shield for the fight."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "When your enemy uses a Weapon, your Shield items gain 10 Shield for the fight."
+          "When your enemy uses a Weapon, your Shield items gain 20 Shield for the fight."
         ]
       },
       "Legendary": {
@@ -11233,7 +11242,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_HardenedShield.png",
     "unifiedTooltips": [
-      "When your enemy uses a Weapon, your Shield items gain (5/10) Shield for the fight."
+      "When your enemy uses a Weapon, your Shield items gain (10/20) Shield for the fight."
     ],
     "packId": "Pygmalien_Core"
   },
@@ -11332,12 +11341,10 @@ const data: ParsedSkillCard[] = [
   {
     "id": "a59bc243-7c8b-447a-8ab7-968f662b1c50",
     "name": "Waters of Infinity",
-    "startingTier": "Bronze",
+    "startingTier": "Silver",
     "tiers": {
       "Bronze": {
-        "tooltips": [
-          "You have +10 Regen for each non-weapon item you have."
-        ]
+        "tooltips": []
       },
       "Silver": {
         "tooltips": [
@@ -11369,7 +11376,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_MON_WatersofInfinity.png",
     "unifiedTooltips": [
-      "You have (+10/+20/+30/+40) Regen for each non-weapon item you have."
+      "You have (+20/+30/+40) Regen for each non-weapon item you have."
     ],
     "packId": "Core"
   },
@@ -12593,7 +12600,9 @@ const data: ParsedSkillCard[] = [
     ],
     "customTags": [],
     "size": "Medium",
-    "heroes": [],
+    "heroes": [
+      "Common"
+    ],
     "artKey": "Icon_Skill_MON_Trained.png",
     "unifiedTooltips": [
       "When you Slow, your Weapons gain (+5/+10/+15/+20) Damage for the fight."

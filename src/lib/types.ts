@@ -46,7 +46,7 @@ export type ParsedItemCard = {
 
 // TODO: Why is Pygmalien in the Core pack?
 export type CorePackId = "Core" | "Pygmalien_Core" | "Vanessa_Core" | "Dooley_Core" | "Mak_Core" | "Jules_Core" | "Stelle_Core" | "Pygmalien";
-export type ExpansionPackId = "Pyg_Frozen_Assets" | "Vanessa_Mysteries_of_the_Deep" | "Mak_Lost_Treasures" |"Vanessa_From_the_Shadows" | "Pyg_Pigglestorm" | "Dooley_Primal_Dooley" | "Dooley_Dooltron" | "Vanessa_The_Gang" | "Pyg_Investment_Opportunities" | "Mak_Dangerous_Experiments";
+export type ExpansionPackId = "Pyg_Frozen_Assets" | "Vanessa_Mysteries_of_the_Deep" | "Mak_Lost_Treasures" | "Pyg_Pigglestorm" | "Dooley_Primal_Dooley" | "Dooley_Dooltron" | "Vanessa_The_Gang" | "Pyg_Investment_Opportunities" | "Mak_Dangerous_Experiments" | "Pyg_Pigglestorm" | "Vanessa_From_the_Shadows";
 
 export type ClientSideItemCard = {
     id: string;
