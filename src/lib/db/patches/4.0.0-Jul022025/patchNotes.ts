@@ -2981,6 +2981,23 @@ const data: PatchNotes = {
         "removed": []
       }
     },
+    "ea887c05-b3e9-4a3c-abc6-0181bdf6bc5a": {
+      "metadata": {
+        "id": "ea887c05-b3e9-4a3c-abc6-0181bdf6bc5a",
+        "name": "Shipwreck",
+        "previousStartingTier": "Diamond",
+        "currentStartingTier": "Diamond",
+        "currentHero": "Vanessa",
+        "currentSize": "Large",
+        "type": "item"
+      },
+      "hiddenTags": {
+        "added": [],
+        "removed": [
+          "Crit"
+        ]
+      }
+    },
     "1d8d4dea-aaf9-4041-aa54-ae133f552d55": {
       "metadata": {
         "id": "1d8d4dea-aaf9-4041-aa54-ae133f552d55",
@@ -5062,7 +5079,7 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": null,
-                "newValue": "Slow 1 item for 1 second(s)."
+                "newValue": "...and Enchant the item with Heavy if able."
               }
             ]
           },
@@ -5072,7 +5089,7 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": null,
-                "newValue": "Freeze 1 item for 0.5 second(s)."
+                "newValue": "...and Enchant the item with Icy if able."
               }
             ]
           },
@@ -5082,7 +5099,7 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": null,
-                "newValue": "Haste 1 item for 1 second(s)."
+                "newValue": "...and Enchant the item with Turbo if able."
               }
             ]
           },
@@ -5092,7 +5109,7 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": null,
-                "newValue": "Shield 20."
+                "newValue": "...and Enchant the item with Shielded if able."
               }
             ]
           },
@@ -5102,7 +5119,7 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": null,
-                "newValue": "Heal 20."
+                "newValue": "...and Enchant the item with Restorative if able."
               }
             ]
           },
@@ -5112,7 +5129,7 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": null,
-                "newValue": "Poison 2."
+                "newValue": "...and Enchant the item with Toxic if able."
               }
             ]
           },
@@ -5122,7 +5139,7 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": null,
-                "newValue": "Burn 2."
+                "newValue": "...and Enchant the item with Fiery if able."
               }
             ]
           },
@@ -5132,7 +5149,7 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": null,
-                "newValue": "This has +1 Multicast."
+                "newValue": "...and Enchant the item with Shiny if able."
               }
             ]
           },
@@ -5142,7 +5159,7 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": null,
-                "newValue": "Adjacent items have +25% Crit Chance."
+                "newValue": "...and Enchant the item with Deadly if able."
               }
             ]
           },
@@ -5152,7 +5169,7 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": null,
-                "newValue": "This cannot be Frozen, Slowed or Destroyed."
+                "newValue": "...and Enchant the item with Radiant if able."
               }
             ]
           },
@@ -5162,7 +5179,7 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": null,
-                "newValue": "Deal 20 Damage."
+                "newValue": "...and Enchant the item with Obsidian if able."
               }
             ]
           }

@@ -27348,67 +27348,67 @@ const data: ParsedItemCard[] = [
       {
         "type": "Heavy",
         "tooltips": [
-          "Slow 1 item for 1 second(s)."
+          "...and Enchant the item with Heavy if able."
         ]
       },
       {
         "type": "Icy",
         "tooltips": [
-          "Freeze 1 item for 0.5 second(s)."
+          "...and Enchant the item with Icy if able."
         ]
       },
       {
         "type": "Turbo",
         "tooltips": [
-          "Haste 1 item for 1 second(s)."
+          "...and Enchant the item with Turbo if able."
         ]
       },
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield 20."
+          "...and Enchant the item with Shielded if able."
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal 20."
+          "...and Enchant the item with Restorative if able."
         ]
       },
       {
         "type": "Toxic",
         "tooltips": [
-          "Poison 2."
+          "...and Enchant the item with Toxic if able."
         ]
       },
       {
         "type": "Fiery",
         "tooltips": [
-          "Burn 2."
+          "...and Enchant the item with Fiery if able."
         ]
       },
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "...and Enchant the item with Shiny if able."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "Adjacent items have +25% Crit Chance."
+          "...and Enchant the item with Deadly if able."
         ]
       },
       {
         "type": "Radiant",
         "tooltips": [
-          "This cannot be Frozen, Slowed or Destroyed."
+          "...and Enchant the item with Radiant if able."
         ]
       },
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal 20 Damage."
+          "...and Enchant the item with Obsidian if able."
         ]
       }
     ],
@@ -75422,9 +75422,7 @@ const data: ParsedItemCard[] = [
       "Property",
       "Relic"
     ],
-    "hiddenTags": [
-      "Crit"
-    ],
+    "hiddenTags": [],
     "customTags": [],
     "size": "Large",
     "heroes": [
