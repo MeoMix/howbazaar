@@ -307,39 +307,44 @@ const data: ParsedMonster[] = [
     "health": 1925,
     "items": [
       {
-        "id": "f8b41c46-8adc-4e84-835a-831e2e3d84d1",
-        "tierType": "Silver"
-      },
-      {
-        "id": "f76338d5-e09b-4319-8914-c35043d464fc",
+        "id": "d5ad07b5-9b1e-4000-848e-503861851e2b",
         "tierType": "Gold"
       },
       {
-        "id": "a05d23cb-af36-42fa-aab1-568aba7f30c6",
+        "id": "23da3858-b9ac-480d-9c80-da662c92d67a",
         "tierType": "Gold"
+      },
+      {
+        "id": "b57d9963-d241-40c9-8f9f-f9925a2da661",
+        "tierType": "Diamond"
       },
       {
         "id": "f1c04562-6db4-45d5-a056-a4df9d185faf",
-        "tierType": "Gold",
-        "enchantmentType": "Shielded"
+        "tierType": "Gold"
       },
       {
         "id": "2df8f38b-bb9f-4247-afe9-525067c9e29e",
-        "tierType": "Gold",
-        "enchantmentType": "Shielded"
+        "tierType": "Gold"
       },
       {
         "id": "7fa2b9c8-f038-44f9-8143-a4f8ee7f34bf",
         "tierType": "Diamond"
       },
       {
-        "id": "8124f91b-3b4f-40ae-9493-057a0be7feb9",
+        "id": "84b74f1e-0960-4c71-bb4f-d35e114250c2",
         "tierType": "Gold"
       },
       {
-        "id": "783cda9d-1550-42d5-9651-51883da5ad66",
-        "tierType": "Gold",
-        "enchantmentType": "Obsidian"
+        "id": "844efa15-de6f-4fec-a438-21904969577b",
+        "tierType": "Diamond"
+      },
+      {
+        "id": "ae126c7d-8f0f-4a23-b11f-da56e5353220",
+        "tierType": "Diamond"
+      },
+      {
+        "id": "b3c06ff9-f0e1-4527-81aa-2f71d7bf6503",
+        "tierType": "Diamond"
       }
     ],
     "skills": [
