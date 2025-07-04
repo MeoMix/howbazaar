@@ -8250,22 +8250,22 @@ const data: ParsedSkillCard[] = [
     "tiers": {
       "Bronze": {
         "tooltips": [
-          "At the start of each day, get 2 Loot items."
+          "At the start of each day, get a Loot item."
         ]
       },
       "Silver": {
         "tooltips": [
-          "At the start of each day, get 2 Loot items."
+          "At the start of each day, get a Loot item."
         ]
       },
       "Gold": {
         "tooltips": [
-          "At the start of each day, get 2 Loot items."
+          "At the start of each day, get a Loot item."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "At the start of each day, get 2 Loot items."
+          "At the start of each day, get a Loot item."
         ]
       },
       "Legendary": {
@@ -8286,7 +8286,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_SupplyCache",
     "unifiedTooltips": [
-      "At the start of each day, get 2 Loot items."
+      "At the start of each day, get a Loot item."
     ],
     "packId": "Core"
   },

@@ -865,20 +865,17 @@ const data: ParsedItemCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "Adjacent items have their cooldowns reduced by 10%.",
-          "When you use an adjacent item, deal 20 Damage."
+          "When you use an adjacent item, deal 40 Damage."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Adjacent items have their cooldowns reduced by 15%.",
-          "When you use an adjacent item, deal 30 Damage."
+          "When you use an adjacent item, deal 60 Damage."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Adjacent items have their cooldowns reduced by 20%.",
-          "When you use an adjacent item, deal 40 Damage."
+          "When you use an adjacent item, deal 80 Damage."
         ]
       },
       "Legendary": {
@@ -965,8 +962,7 @@ const data: ParsedItemCard[] = [
     ],
     "quests": [],
     "unifiedTooltips": [
-      "Adjacent items have their cooldowns reduced by (10%/15%/20%).",
-      "When you use an adjacent item, deal (20/30/40) Damage."
+      "When you use an adjacent item, deal (40/60/80) Damage."
     ],
     "packId": "Vanessa_From_the_Shadows"
   },
@@ -1103,25 +1099,25 @@ const data: ParsedItemCard[] = [
     "tiers": {
       "Bronze": {
         "tooltips": [
-          "Cooldown 4 seconds",
+          "Cooldown 5 seconds",
           "Shield equal to triple this item's value."
         ]
       },
       "Silver": {
         "tooltips": [
-          "Cooldown 4 seconds",
+          "Cooldown 5 seconds",
           "Shield equal to triple this item's value."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 4 seconds",
+          "Cooldown 5 seconds",
           "Shield equal to triple this item's value."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 4 seconds",
+          "Cooldown 5 seconds",
           "Shield equal to triple this item's value."
         ]
       },
@@ -1210,7 +1206,7 @@ const data: ParsedItemCard[] = [
     ],
     "quests": [],
     "unifiedTooltips": [
-      "Cooldown 4 seconds",
+      "Cooldown 5 seconds",
       "Shield equal to triple this item's value."
     ],
     "packId": "Core"
@@ -1325,28 +1321,28 @@ const data: ParsedItemCard[] = [
     "tiers": {
       "Bronze": {
         "tooltips": [
-          "Cooldown 6 seconds",
+          "Cooldown 5 seconds",
           "Poison 4.",
           "Slow 1 item for 1 second(s)."
         ]
       },
       "Silver": {
         "tooltips": [
-          "Cooldown 6 seconds",
+          "Cooldown 5 seconds",
           "Poison 8.",
           "Slow 2 item for 1 second(s)."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 6 seconds",
+          "Cooldown 5 seconds",
           "Poison 12.",
           "Slow 3 item for 1 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 6 seconds",
+          "Cooldown 5 seconds",
           "Poison 16.",
           "Slow 4 item for 1 second(s)."
         ]
@@ -1437,7 +1433,7 @@ const data: ParsedItemCard[] = [
     ],
     "quests": [],
     "unifiedTooltips": [
-      "Cooldown 6 seconds",
+      "Cooldown 5 seconds",
       "Poison (4/8/12/16).",
       "Slow (1/2/3/4) item for 1 second(s)."
     ],
@@ -10770,24 +10766,22 @@ const data: ParsedItemCard[] = [
   {
     "id": "2aab9da1-bfd1-4f3f-8cda-69f3c909158b",
     "name": "Holsters",
-    "startingTier": "Silver",
+    "startingTier": "Gold",
     "tiers": {
       "Bronze": {
         "tooltips": []
       },
       "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
         "tooltips": [
           "At the start of each fight, your Small items gain Haste for 1 second(s)."
         ]
       },
-      "Gold": {
-        "tooltips": [
-          "At the start of each fight, your Small items gain Haste for 2 second(s)."
-        ]
-      },
       "Diamond": {
         "tooltips": [
-          "At the start of each fight, your Small items gain Haste for 3 second(s)."
+          "At the start of each fight, your Small items gain Haste for 2 second(s)."
         ]
       },
       "Legendary": {
@@ -10863,7 +10857,7 @@ const data: ParsedItemCard[] = [
     ],
     "quests": [],
     "unifiedTooltips": [
-      "At the start of each fight, your Small items gain Haste for (1/2/3) second(s)."
+      "At the start of each fight, your Small items gain Haste for (1/2) second(s)."
     ],
     "packId": "Vanessa_Core"
   },
@@ -10874,26 +10868,26 @@ const data: ParsedItemCard[] = [
     "tiers": {
       "Bronze": {
         "tooltips": [
-          "Cooldown 6 seconds",
-          "Burn equal to this item's value."
+          "Cooldown 5 seconds",
+          "Burn equal to half this item's value."
         ]
       },
       "Silver": {
         "tooltips": [
-          "Cooldown 6 seconds",
-          "Burn equal to this item's value."
+          "Cooldown 5 seconds",
+          "Burn equal to half this item's value."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 6 seconds",
-          "Burn equal to this item's value."
+          "Cooldown 5 seconds",
+          "Burn equal to half this item's value."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 6 seconds",
-          "Burn equal to this item's value."
+          "Cooldown 5 seconds",
+          "Burn equal to half this item's value."
         ]
       },
       "Legendary": {
@@ -10981,8 +10975,8 @@ const data: ParsedItemCard[] = [
     ],
     "quests": [],
     "unifiedTooltips": [
-      "Cooldown 6 seconds",
-      "Burn equal to this item's value."
+      "Cooldown 5 seconds",
+      "Burn equal to half this item's value."
     ],
     "packId": "Core"
   },
@@ -15724,9 +15718,12 @@ const data: ParsedItemCard[] = [
   {
     "id": "d305ef99-9ace-4d66-820d-a5d3d42b6bae",
     "name": "Dart Launcher",
-    "startingTier": "Bronze",
+    "startingTier": "Silver",
     "tiers": {
       "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
         "tooltips": [
           "Cooldown 4 seconds",
           "Ammo 4",
@@ -15735,7 +15732,7 @@ const data: ParsedItemCard[] = [
           "If this is adjacent to a Poison item, Poison 3."
         ]
       },
-      "Silver": {
+      "Gold": {
         "tooltips": [
           "Cooldown 4 seconds",
           "Ammo 4",
@@ -15744,22 +15741,13 @@ const data: ParsedItemCard[] = [
           "If this is adjacent to a Poison item, Poison 6."
         ]
       },
-      "Gold": {
+      "Diamond": {
         "tooltips": [
           "Cooldown 4 seconds",
           "Ammo 4",
           "Deal 15 damage.",
           "If this is adjacent to a Slow item, Slow 3 item(s) for 1 second(s).",
           "If this is adjacent to a Poison item, Poison 9."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "Cooldown 4 seconds",
-          "Ammo 4",
-          "Deal 20 damage.",
-          "If this is adjacent to a Slow item, Slow 4 item(s) for 1 second(s).",
-          "If this is adjacent to a Poison item, Poison 12."
         ]
       },
       "Legendary": {
@@ -15852,9 +15840,9 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "Cooldown 4 seconds",
       "Ammo 4",
-      "Deal (5/10/15/20) damage.",
-      "If this is adjacent to a Slow item, Slow (1/2/3/4) item(s) for 1 second(s).",
-      "If this is adjacent to a Poison item, Poison (3/6/9/12)."
+      "Deal (5/10/15) damage.",
+      "If this is adjacent to a Slow item, Slow (1/2/3) item(s) for 1 second(s).",
+      "If this is adjacent to a Poison item, Poison (3/6/9)."
     ],
     "packId": "Vanessa_From_the_Shadows"
   },
@@ -27302,30 +27290,30 @@ const data: ParsedItemCard[] = [
     "tiers": {
       "Bronze": {
         "tooltips": [
-          "Cooldown 3 seconds",
+          "Cooldown 4 seconds",
           "Adjacent items gain Value +3 for the fight.",
-          "When you win a fight, get a Premium Piggle."
+          "At the start of each day, get a Premium Piggle."
         ]
       },
       "Silver": {
         "tooltips": [
-          "Cooldown 3 seconds",
+          "Cooldown 4 seconds",
           "Adjacent items gain Value +6 for the fight.",
-          "When you win a fight, get a Premium Piggle."
+          "At the start of each day, get a Premium Piggle."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 3 seconds",
+          "Cooldown 4 seconds",
           "Adjacent items gain Value +9 for the fight.",
-          "When you win a fight, get a Premium Piggle."
+          "At the start of each day, get a Premium Piggle."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 3 seconds",
+          "Cooldown 4 seconds",
           "Adjacent items gain Value +12 for the fight.",
-          "When you win a fight, get a Premium Piggle."
+          "At the start of each day, get a Premium Piggle."
         ]
       },
       "Legendary": {
@@ -27414,9 +27402,9 @@ const data: ParsedItemCard[] = [
     ],
     "quests": [],
     "unifiedTooltips": [
-      "Cooldown 3 seconds",
+      "Cooldown 4 seconds",
       "Adjacent items gain Value (+3/+6/+9/+12) for the fight.",
-      "When you win a fight, get a Premium Piggle."
+      "At the start of each day, get a Premium Piggle."
     ],
     "packId": "Pyg_Pigglestorm"
   },
@@ -32679,7 +32667,7 @@ const data: ParsedItemCard[] = [
       "Silver": {
         "tooltips": [
           "Cooldown 5 seconds",
-          "Ammo 2",
+          "Ammo 1",
           "Haste your items for 1 second(s).",
           "Slow your items for 1 second(s)."
         ]
@@ -32687,7 +32675,7 @@ const data: ParsedItemCard[] = [
       "Gold": {
         "tooltips": [
           "Cooldown 5 seconds",
-          "Ammo 3",
+          "Ammo 2",
           "Haste your items for 1 second(s).",
           "Slow your items for 1 second(s)."
         ]
@@ -32695,7 +32683,7 @@ const data: ParsedItemCard[] = [
       "Diamond": {
         "tooltips": [
           "Cooldown 5 seconds",
-          "Ammo 4",
+          "Ammo 3",
           "Haste your items for 1 second(s).",
           "Slow your items for 1 second(s)."
         ]
@@ -32786,7 +32774,7 @@ const data: ParsedItemCard[] = [
     "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
-      "Ammo (2/3/4)",
+      "Ammo (1/2/3)",
       "Haste your items for 1 second(s).",
       "Slow your items for 1 second(s)."
     ],
@@ -39890,19 +39878,19 @@ const data: ParsedItemCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "Cooldown 2 seconds",
+          "Cooldown 3 seconds",
           "Your items gain +3 value for the fight."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 2 seconds",
+          "Cooldown 3 seconds",
           "Your items gain +4 value for the fight."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 2 seconds",
+          "Cooldown 3 seconds",
           "Your items gain +5 value for the fight."
         ]
       },
@@ -39993,7 +39981,7 @@ const data: ParsedItemCard[] = [
     ],
     "quests": [],
     "unifiedTooltips": [
-      "Cooldown 2 seconds",
+      "Cooldown 3 seconds",
       "Your items gain (+3/+4/+5) value for the fight."
     ],
     "packId": "Pyg_Investment_Opportunities"
@@ -43979,9 +43967,7 @@ const data: ParsedItemCard[] = [
         "tooltips": []
       }
     },
-    "tags": [
-      "Loot"
-    ],
+    "tags": [],
     "hiddenTags": [],
     "customTags": [
       "Unpurchasable"
@@ -50447,25 +50433,25 @@ const data: ParsedItemCard[] = [
     "tiers": {
       "Bronze": {
         "tooltips": [
-          "Cooldown 4 seconds",
+          "Cooldown 5 seconds",
           "Deal damage equal to triple this item's value."
         ]
       },
       "Silver": {
         "tooltips": [
-          "Cooldown 4 seconds",
+          "Cooldown 5 seconds",
           "Deal damage equal to triple this item's value."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 4 seconds",
+          "Cooldown 5 seconds",
           "Deal damage equal to triple this item's value."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 4 seconds",
+          "Cooldown 5 seconds",
           "Deal damage equal to triple this item's value."
         ]
       },
@@ -50555,7 +50541,7 @@ const data: ParsedItemCard[] = [
     ],
     "quests": [],
     "unifiedTooltips": [
-      "Cooldown 4 seconds",
+      "Cooldown 5 seconds",
       "Deal damage equal to triple this item's value."
     ],
     "packId": "Core"
@@ -52562,25 +52548,25 @@ const data: ParsedItemCard[] = [
     "tiers": {
       "Bronze": {
         "tooltips": [
-          "Cooldown 4 seconds",
+          "Cooldown 5 seconds",
           "Heal equal to triple this item's value."
         ]
       },
       "Silver": {
         "tooltips": [
-          "Cooldown 4 seconds",
+          "Cooldown 5 seconds",
           "Heal equal to triple this item's value."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 4 seconds",
+          "Cooldown 5 seconds",
           "Heal equal to triple this item's value."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 4 seconds",
+          "Cooldown 5 seconds",
           "Heal equal to triple this item's value."
         ]
       },
@@ -52669,7 +52655,7 @@ const data: ParsedItemCard[] = [
     ],
     "quests": [],
     "unifiedTooltips": [
-      "Cooldown 4 seconds",
+      "Cooldown 5 seconds",
       "Heal equal to triple this item's value."
     ],
     "packId": "Core"
@@ -54356,17 +54342,17 @@ const data: ParsedItemCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "Your items have +20% Crit Chance."
+          "Your items have +15% Crit Chance."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Your items have +30% Crit Chance."
+          "Your items have +20% Crit Chance."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Your items have +40% Crit Chance."
+          "Your items have +25% Crit Chance."
         ]
       },
       "Legendary": {
@@ -54449,7 +54435,7 @@ const data: ParsedItemCard[] = [
     ],
     "quests": [],
     "unifiedTooltips": [
-      "Your items have (+10%/+20%/+30%/+40%) Crit Chance."
+      "Your items have (+10%/+15%/+20%/+25%) Crit Chance."
     ],
     "packId": "Vanessa_Core"
   },
@@ -58479,34 +58465,30 @@ const data: ParsedItemCard[] = [
   {
     "id": "7153afb9-c4c6-4449-8d70-d1b88fc86c1a",
     "name": "Money Furnace",
-    "startingTier": "Bronze",
+    "startingTier": "Silver",
     "tiers": {
       "Bronze": {
-        "tooltips": [
-          "Cooldown 12 seconds",
-          "Burn 1.",
-          "When you spend gold,this gains +Burn equal to the amount of gold spent."
-        ]
+        "tooltips": []
       },
       "Silver": {
         "tooltips": [
-          "Cooldown 11 seconds",
-          "Burn 1.",
-          "When you spend gold,this gains +Burn equal to the amount of gold spent."
+          "Cooldown 8 seconds",
+          "Burn equal to this item's value.",
+          "At the start of each fight, if this is in play, spend 8 Gold to increase this items value by 4."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 10 seconds",
-          "Burn 1.",
-          "When you spend gold,this gains +Burn equal to the amount of gold spent."
+          "Cooldown 8 seconds",
+          "Burn equal to this item's value.",
+          "At the start of each fight, if this is in play, spend 6 Gold to increase this items value by 4."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 9 seconds",
-          "Burn 1.",
-          "When you spend gold,this gains +Burn equal to the amount of gold spent."
+          "Cooldown 8 seconds",
+          "Burn equal to this item's value.",
+          "At the start of each fight, if this is in play, spend 4 Gold to increase this items value by 4."
         ]
       },
       "Legendary": {
@@ -58517,7 +58499,9 @@ const data: ParsedItemCard[] = [
       "Tool"
     ],
     "hiddenTags": [
-      "Burn"
+      "Burn",
+      "EconomyReference",
+      "Value"
     ],
     "customTags": [],
     "size": "Medium",
@@ -58528,37 +58512,37 @@ const data: ParsedItemCard[] = [
       {
         "type": "Heavy",
         "tooltips": [
-          "Slow 2 item for 3 second(s)."
+          "Slow 2 items for 3 second(s)."
         ]
       },
       {
         "type": "Icy",
         "tooltips": [
-          "Freeze 2 small item for 1 second(s)."
+          "Freeze 2 item for 1 second(s)."
         ]
       },
       {
         "type": "Turbo",
         "tooltips": [
-          "Haste 2 item for 3 second(s)."
+          "Haste 2 items for 3 second(s)."
         ]
       },
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 10 times this item's Burn."
+          "Shield equal to 10 times this item's value."
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 10 times this item's Burn."
+          "Heal equal to 10 times this item's value."
         ]
       },
       {
         "type": "Toxic",
         "tooltips": [
-          "Poison equal to this item's Burn."
+          "Poison equal to this item's value."
         ]
       },
       {
@@ -58588,15 +58572,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal damage equal to 10 times this item's Burn."
+          "Deal damage equal to 10 times this item's value."
         ]
       }
     ],
     "quests": [],
     "unifiedTooltips": [
-      "Cooldown (12/11/10/9) seconds",
-      "Burn 1.",
-      "When you spend gold,this gains +Burn equal to the amount of gold spent."
+      "Cooldown 8 seconds",
+      "Burn equal to this item's value.",
+      "At the start of each fight, if this is in play, spend (8/6/4) Gold to increase this items value by 4."
     ],
     "packId": "Pyg_Pigglestorm"
   },
@@ -59303,33 +59287,33 @@ const data: ParsedItemCard[] = [
     "tiers": {
       "Bronze": {
         "tooltips": [
-          "Cooldown 8 seconds",
+          "Cooldown 10 seconds",
           "Burn 3.",
-          "When you Crit, your Burn items gain +3 Burn for the fight.",
+          "When you Crit, your Burn items gain +2 Burn for the fight.",
           "When you Slow, Charge this 2 seconds."
         ]
       },
       "Silver": {
         "tooltips": [
-          "Cooldown 8 seconds",
+          "Cooldown 10 seconds",
           "Burn 6.",
-          "When you Crit, your Burn items gain +6 Burn for the fight.",
+          "When you Crit, your Burn items gain +4 Burn for the fight.",
           "When you Slow, Charge this 2 seconds."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 8 seconds",
+          "Cooldown 10 seconds",
           "Burn 9.",
-          "When you Crit, your Burn items gain +9 Burn for the fight.",
+          "When you Crit, your Burn items gain +6 Burn for the fight.",
           "When you Slow, Charge this 2 seconds."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 8 seconds",
+          "Cooldown 10 seconds",
           "Burn 12.",
-          "When you Crit, your Burn items gain +12 Burn for the fight.",
+          "When you Crit, your Burn items gain +8 Burn for the fight.",
           "When you Slow, Charge this 2 seconds."
         ]
       },
@@ -59421,9 +59405,9 @@ const data: ParsedItemCard[] = [
     ],
     "quests": [],
     "unifiedTooltips": [
-      "Cooldown 8 seconds",
+      "Cooldown 10 seconds",
       "Burn (3/6/9/12).",
-      "When you Crit, your Burn items gain (+3/+6/+9/+12) Burn for the fight.",
+      "When you Crit, your Burn items gain (+2/+4/+6/+8) Burn for the fight.",
       "When you Slow, Charge this 2 seconds."
     ],
     "packId": "Vanessa_From_the_Shadows"
@@ -64275,27 +64259,20 @@ const data: ParsedItemCard[] = [
   {
     "id": "d5ad07b5-9b1e-4000-848e-503861851e2b",
     "name": "Tournament Arena",
-    "startingTier": "Silver",
+    "startingTier": "Diamond",
     "tiers": {
       "Bronze": {
         "tooltips": []
       },
       "Silver": {
-        "tooltips": [
-          "Your Toys have +1 Multicast.",
-          "At the start of each day, get a random Toy."
-        ]
+        "tooltips": []
       },
       "Gold": {
-        "tooltips": [
-          "Your Toys have +1 Multicast.",
-          "At the start of each day, get a random Toy."
-        ]
+        "tooltips": []
       },
       "Diamond": {
         "tooltips": [
-          "Your Toys have +1 Multicast.",
-          "At the start of each day, get a random Toy."
+          "Your Toys have +1 Multicast."
         ]
       },
       "Legendary": {
@@ -64375,8 +64352,7 @@ const data: ParsedItemCard[] = [
     ],
     "quests": [],
     "unifiedTooltips": [
-      "Your Toys have +1 Multicast.",
-      "At the start of each day, get a random Toy."
+      "Your Toys have +1 Multicast."
     ],
     "packId": "Pyg_Pigglestorm"
   },
@@ -64499,28 +64475,28 @@ const data: ParsedItemCard[] = [
     "tiers": {
       "Bronze": {
         "tooltips": [
-          "Cooldown 8 seconds",
+          "Cooldown 7 seconds",
           "Burn 8.",
           "While you have Shield, this item's cooldown is reduced by 2 seconds."
         ]
       },
       "Silver": {
         "tooltips": [
-          "Cooldown 7 seconds",
+          "Cooldown 6 seconds",
           "Burn 8.",
           "While you have Shield, this item's cooldown is reduced by 2 seconds."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 6 seconds",
+          "Cooldown 5 seconds",
           "Burn 8.",
           "While you have Shield, this item's cooldown is reduced by 2 seconds."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 5 seconds",
+          "Cooldown 4 seconds",
           "Burn 8.",
           "While you have Shield, this item's cooldown is reduced by 2 seconds."
         ]
@@ -64611,7 +64587,7 @@ const data: ParsedItemCard[] = [
     ],
     "quests": [],
     "unifiedTooltips": [
-      "Cooldown (8/7/6/5) seconds",
+      "Cooldown (7/6/5/4) seconds",
       "Burn 8.",
       "While you have Shield, this item's cooldown is reduced by 2 seconds."
     ],
@@ -74544,28 +74520,28 @@ const data: ParsedItemCard[] = [
     "tiers": {
       "Bronze": {
         "tooltips": [
-          "Cooldown 7 seconds",
+          "Cooldown 8 seconds",
           "Deal 10 Damage\n\nShield 10\n\nHeal 10\n\nBurn 1",
           "When you use a small item, charge this 1 second(s)."
         ]
       },
       "Silver": {
         "tooltips": [
-          "Cooldown 7 seconds",
+          "Cooldown 8 seconds",
           "Deal 20 Damage\n\nShield 20\n\nHeal 20\n\nBurn 2",
           "When you use a small item, charge this 1 second(s)."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 7 seconds",
+          "Cooldown 8 seconds",
           "Deal 30 Damage\n\nShield 30\n\nHeal 30\n\nBurn 3",
           "When you use a small item, charge this 1 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 7 seconds",
+          "Cooldown 8 seconds",
           "Deal 40 Damage\n\nShield 40\n\nHeal 40\n\nBurn 4",
           "When you use a small item, charge this 1 second(s)."
         ]
@@ -74660,7 +74636,7 @@ const data: ParsedItemCard[] = [
     ],
     "quests": [],
     "unifiedTooltips": [
-      "Cooldown 7 seconds",
+      "Cooldown 8 seconds",
       "Deal (10/20/30/40) Damage Shield (10/20/30/40) Heal (10/20/30/40) Burn (1/2/3/4)",
       "When you use a small item, charge this 1 second(s)."
     ],
@@ -74782,7 +74758,7 @@ const data: ParsedItemCard[] = [
           "Cooldown 8 seconds",
           "Ammo 3",
           "Deal 5 damage.",
-          "This has +Multicast equal to its current ammo.",
+          "This has Multicast equal to its current ammo.",
           "When you use this, spend all its Ammo."
         ]
       },
@@ -74791,7 +74767,7 @@ const data: ParsedItemCard[] = [
           "Cooldown 8 seconds",
           "Ammo 4",
           "Deal 10 damage.",
-          "This has +Multicast equal to its current ammo.",
+          "This has Multicast equal to its current ammo.",
           "When you use this, spend all its Ammo."
         ]
       },
@@ -74800,7 +74776,7 @@ const data: ParsedItemCard[] = [
           "Cooldown 8 seconds",
           "Ammo 5",
           "Deal 15 damage.",
-          "This has +Multicast equal to its current ammo.",
+          "This has Multicast equal to its current ammo.",
           "When you use this, spend all its Ammo."
         ]
       },
@@ -74809,7 +74785,7 @@ const data: ParsedItemCard[] = [
           "Cooldown 8 seconds",
           "Ammo 6",
           "Deal 20 damage.",
-          "This has +Multicast equal to its current ammo.",
+          "This has Multicast equal to its current ammo.",
           "When you use this, spend all its Ammo."
         ]
       },
@@ -74902,7 +74878,7 @@ const data: ParsedItemCard[] = [
       "Cooldown 8 seconds",
       "Ammo (3/4/5/6)",
       "Deal (5/10/15/20) damage.",
-      "This has +Multicast equal to its current ammo.",
+      "This has Multicast equal to its current ammo.",
       "When you use this, spend all its Ammo."
     ],
     "packId": "Vanessa_From_the_Shadows"
