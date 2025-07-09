@@ -1048,52 +1048,6 @@ const data: ParsedSkillCard[] = [
     "packId": "Core"
   },
   {
-    "id": "71433809-d05a-4544-9959-aff20ae5db93",
-    "name": "Iron Sharpens Iron",
-    "startingTier": "Silver",
-    "tiers": {
-      "Bronze": {
-        "tooltips": []
-      },
-      "Silver": {
-        "tooltips": [
-          "Your leftmost Weapon has +2 damage. When you buy a weapon, increase this bonus by 2."
-        ]
-      },
-      "Gold": {
-        "tooltips": [
-          "Your leftmost Weapon has +2 damage. When you buy a weapon, increase this bonus by 3."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "Your leftmost Weapon has +2 damage. When you buy a weapon, increase this bonus by 4."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [
-      "Weapon"
-    ],
-    "hiddenTags": [
-      "DamageReference"
-    ],
-    "customTags": [],
-    "size": "Medium",
-    "heroes": [
-      "Vanessa",
-      "Jules",
-      "Mak"
-    ],
-    "artKey": "Icon_Skill_IronSharpensIron.png",
-    "unifiedTooltips": [
-      "Your leftmost Weapon has +2 damage. When you buy a weapon, increase this bonus by (2/3/4)."
-    ],
-    "packId": "Vanessa_Core"
-  },
-  {
     "id": "9d910b0a-9ef3-447f-ab41-195effb68f21",
     "name": "Hot Spot",
     "startingTier": "Silver",
@@ -1136,6 +1090,52 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_HotSpot.png",
     "unifiedTooltips": [
       "When you use your leftmost item, Burn (2/3/4)."
+    ],
+    "packId": "Vanessa_Core"
+  },
+  {
+    "id": "71433809-d05a-4544-9959-aff20ae5db93",
+    "name": "Iron Sharpens Iron",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Your leftmost Weapon has +2 damage. When you buy a weapon, increase this bonus by 2."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Your leftmost Weapon has +2 damage. When you buy a weapon, increase this bonus by 3."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Your leftmost Weapon has +2 damage. When you buy a weapon, increase this bonus by 4."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Weapon"
+    ],
+    "hiddenTags": [
+      "DamageReference"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Vanessa",
+      "Jules",
+      "Mak"
+    ],
+    "artKey": "Icon_Skill_IronSharpensIron.png",
+    "unifiedTooltips": [
+      "Your leftmost Weapon has +2 damage. When you buy a weapon, increase this bonus by (2/3/4)."
     ],
     "packId": "Vanessa_Core"
   },
@@ -1268,47 +1268,6 @@ const data: ParsedSkillCard[] = [
     "packId": "Vanessa_Core"
   },
   {
-    "id": "81d2e9a9-1731-457d-9601-0ded9c19b28f",
-    "name": "Siphoned Shield",
-    "startingTier": "Gold",
-    "tiers": {
-      "Bronze": {
-        "tooltips": []
-      },
-      "Silver": {
-        "tooltips": []
-      },
-      "Gold": {
-        "tooltips": [
-          "Your Shield items have +Shield equal to 100% of the poison on your opponent."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "Your Shield items have +Shield equal to 200% of the poison on your opponent."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [],
-    "hiddenTags": [
-      "ShieldReference",
-      "PoisonReference"
-    ],
-    "customTags": [],
-    "size": "Medium",
-    "heroes": [
-      "Common"
-    ],
-    "artKey": "Icon_Skill_MON_SiphonedShield",
-    "unifiedTooltips": [
-      "Your Shield items have +Shield equal to (100%/200%) of the poison on your opponent."
-    ],
-    "packId": "Core"
-  },
-  {
     "id": "66d65bb7-09fa-4262-b0a1-12a29ac9e946",
     "name": "Glass Cannon",
     "startingTier": "Diamond",
@@ -1350,6 +1309,47 @@ const data: ParsedSkillCard[] = [
       "Both players' weapons have double damage."
     ],
     "packId": "Vanessa_Core"
+  },
+  {
+    "id": "81d2e9a9-1731-457d-9601-0ded9c19b28f",
+    "name": "Siphoned Shield",
+    "startingTier": "Gold",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": [
+          "Your Shield items have +Shield equal to 100% of the poison on your opponent."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Your Shield items have +Shield equal to 200% of the poison on your opponent."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "ShieldReference",
+      "PoisonReference"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Common"
+    ],
+    "artKey": "Icon_Skill_MON_SiphonedShield",
+    "unifiedTooltips": [
+      "Your Shield items have +Shield equal to (100%/200%) of the poison on your opponent."
+    ],
+    "packId": "Core"
   },
   {
     "id": "1d9eb8d1-ef94-4847-b472-28290159e894",
@@ -8544,50 +8544,6 @@ const data: ParsedSkillCard[] = [
     "packId": "Vanessa_Core"
   },
   {
-    "id": "a1975546-334f-4137-85cc-43a4c8ae49f3",
-    "name": "Regenerative",
-    "startingTier": "Silver",
-    "tiers": {
-      "Bronze": {
-        "tooltips": []
-      },
-      "Silver": {
-        "tooltips": [
-          "You have 10 Regen."
-        ]
-      },
-      "Gold": {
-        "tooltips": [
-          "You have 20 Regen."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "You have 30 Regen."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [],
-    "hiddenTags": [
-      "Regen"
-    ],
-    "customTags": [],
-    "size": "Medium",
-    "heroes": [
-      "Vanessa",
-      "Stelle",
-      "Mak"
-    ],
-    "artKey": "Icon_Skill_Regenerative.png",
-    "unifiedTooltips": [
-      "You have (10/20/30) Regen."
-    ],
-    "packId": "Stelle_Core"
-  },
-  {
     "id": "976d7de6-8191-44c4-8270-2ebc47775fe8",
     "name": "Rear Shielding",
     "startingTier": "Bronze",
@@ -8634,6 +8590,50 @@ const data: ParsedSkillCard[] = [
       "Your rightmost Shield item has (+20/+30/+40/+50) Shield."
     ],
     "packId": "Pygmalien_Core"
+  },
+  {
+    "id": "a1975546-334f-4137-85cc-43a4c8ae49f3",
+    "name": "Regenerative",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "You have 10 Regen."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "You have 20 Regen."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "You have 30 Regen."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "Regen"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Vanessa",
+      "Stelle",
+      "Mak"
+    ],
+    "artKey": "Icon_Skill_Regenerative.png",
+    "unifiedTooltips": [
+      "You have (10/20/30) Regen."
+    ],
+    "packId": "Stelle_Core"
   },
   {
     "id": "3735516a-1517-40fe-b158-9ccee3758fef",
@@ -11386,6 +11386,47 @@ const data: ParsedSkillCard[] = [
     "packId": "Vanessa_Core"
   },
   {
+    "id": "13989ad3-2122-4d86-a323-bb90fda8360b",
+    "name": "Bloodhound",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "The first time your enemy falls below half health each fight, Charge your items 2 second(s)."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "The first time your enemy falls below half health each fight, Charge your items 3 second(s)."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "The first time your enemy falls below half health each fight, Charge your items 4 second(s)."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Vanessa",
+      "Jules"
+    ],
+    "artKey": "Icon_Skill_Bloodhound.png",
+    "unifiedTooltips": [
+      "The first time your enemy falls below half health each fight, Charge your items (2/3/4) second(s)."
+    ],
+    "packId": "Dooley_Core"
+  },
+  {
     "id": "a59bc243-7c8b-447a-8ab7-968f662b1c50",
     "name": "Waters of Infinity",
     "startingTier": "Silver",
@@ -11426,47 +11467,6 @@ const data: ParsedSkillCard[] = [
       "You have (+20/+30/+40) Regen for each non-weapon item you have."
     ],
     "packId": "Core"
-  },
-  {
-    "id": "13989ad3-2122-4d86-a323-bb90fda8360b",
-    "name": "Bloodhound",
-    "startingTier": "Silver",
-    "tiers": {
-      "Bronze": {
-        "tooltips": []
-      },
-      "Silver": {
-        "tooltips": [
-          "The first time your enemy falls below half health each fight, Charge your items 2 second(s)."
-        ]
-      },
-      "Gold": {
-        "tooltips": [
-          "The first time your enemy falls below half health each fight, Charge your items 3 second(s)."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "The first time your enemy falls below half health each fight, Charge your items 4 second(s)."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [],
-    "hiddenTags": [],
-    "customTags": [],
-    "size": "Medium",
-    "heroes": [
-      "Vanessa",
-      "Jules"
-    ],
-    "artKey": "Icon_Skill_Bloodhound.png",
-    "unifiedTooltips": [
-      "The first time your enemy falls below half health each fight, Charge your items (2/3/4) second(s)."
-    ],
-    "packId": "Dooley_Core"
   },
   {
     "id": "6b47d5d7-cd43-4efb-9e3b-5ee3c07a7f7d",
@@ -11821,42 +11821,6 @@ const data: ParsedSkillCard[] = [
     "packId": "Vanessa_Core"
   },
   {
-    "id": "e8770458-220a-45bd-bfef-d6045b152d29",
-    "name": "Bonk",
-    "startingTier": "Diamond",
-    "tiers": {
-      "Bronze": {
-        "tooltips": []
-      },
-      "Silver": {
-        "tooltips": []
-      },
-      "Gold": {
-        "tooltips": []
-      },
-      "Diamond": {
-        "tooltips": [
-          "Enemy cooldowns are increased by 1 second(s)."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [],
-    "hiddenTags": [],
-    "customTags": [],
-    "size": "Medium",
-    "heroes": [
-      "Common"
-    ],
-    "artKey": "Icon_Skill_MON_TurnOutYourPockets_03.png",
-    "unifiedTooltips": [
-      "Enemy cooldowns are increased by 1 second(s)."
-    ],
-    "packId": "Core"
-  },
-  {
     "id": "721fa7ca-3451-4bbd-ac17-ffcff4a31ac6",
     "name": "Healthy Jolt",
     "startingTier": "Gold",
@@ -11897,6 +11861,42 @@ const data: ParsedSkillCard[] = [
       "The first time you Over-heal each fight, Haste your items for (2/4) second(s)."
     ],
     "packId": "Pygmalien_Core"
+  },
+  {
+    "id": "e8770458-220a-45bd-bfef-d6045b152d29",
+    "name": "Bonk",
+    "startingTier": "Diamond",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": []
+      },
+      "Diamond": {
+        "tooltips": [
+          "Enemy cooldowns are increased by 1 second(s)."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Common"
+    ],
+    "artKey": "Icon_Skill_MON_TurnOutYourPockets_03.png",
+    "unifiedTooltips": [
+      "Enemy cooldowns are increased by 1 second(s)."
+    ],
+    "packId": "Core"
   },
   {
     "id": "4d8b7111-c324-4558-af3c-d7c8df61618d",
@@ -12796,6 +12796,48 @@ const data: ParsedSkillCard[] = [
     "packId": "Mak_Core"
   },
   {
+    "id": "1df8d85a-9095-4ab9-952a-c668a4d5d51c",
+    "name": "Electrified Hull",
+    "startingTier": "Gold",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": [
+          "The first 4 times you Shield each fight, Charge 1 item(s) 1 second(s)."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "The first 8 times you Shield each fight, Charge 1 item(s) 1 second(s)."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "ShieldReference",
+      "Charge"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Pygmalien",
+      "Dooley"
+    ],
+    "artKey": "Icon_Skill_DOO_NumberOneStunner.png",
+    "unifiedTooltips": [
+      "The first (4/8) times you Shield each fight, Charge 1 item(s) 1 second(s)."
+    ],
+    "packId": "Pygmalien_Core"
+  },
+  {
     "id": "cb8e9ed1-764e-4fa5-a2b8-61c2eddcbf7e",
     "name": "Grease Fire",
     "startingTier": "Gold",
@@ -12838,48 +12880,6 @@ const data: ParsedSkillCard[] = [
       "When you use a tool, Burn (3/5)."
     ],
     "packId": "Dooley_Core"
-  },
-  {
-    "id": "1df8d85a-9095-4ab9-952a-c668a4d5d51c",
-    "name": "Electrified Hull",
-    "startingTier": "Gold",
-    "tiers": {
-      "Bronze": {
-        "tooltips": []
-      },
-      "Silver": {
-        "tooltips": []
-      },
-      "Gold": {
-        "tooltips": [
-          "The first 4 times you Shield each fight, Charge 1 item(s) 1 second(s)."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "The first 8 times you Shield each fight, Charge 1 item(s) 1 second(s)."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [],
-    "hiddenTags": [
-      "ShieldReference",
-      "Charge"
-    ],
-    "customTags": [],
-    "size": "Medium",
-    "heroes": [
-      "Pygmalien",
-      "Dooley"
-    ],
-    "artKey": "Icon_Skill_DOO_NumberOneStunner.png",
-    "unifiedTooltips": [
-      "The first (4/8) times you Shield each fight, Charge 1 item(s) 1 second(s)."
-    ],
-    "packId": "Pygmalien_Core"
   },
   {
     "id": "4e2e23aa-a3d1-46b0-9d59-c06fb64bea2f",
