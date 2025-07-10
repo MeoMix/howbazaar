@@ -103,7 +103,7 @@ const data: PatchNotes = {
         {
           "index": 2,
           "oldValue": null,
-          "newValue": "Shield 10 damage."
+          "newValue": "Shield 10."
         }
       ],
       "enchantments": {
@@ -329,7 +329,88 @@ const data: PatchNotes = {
           "oldValue": null,
           "newValue": "Your Potions have their cooldowns reduced by (1/1.5/2) seconds."
         }
-      ]
+      ],
+      "enchantments": {
+        "added": [],
+        "removed": [],
+        "modified": [
+          {
+            "type": "Shielded",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": "When you use a Potion, Shield equal to 10 times this item's Regen.",
+                "newValue": null
+              },
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "When you use a Potion, Shield 25."
+              }
+            ]
+          },
+          {
+            "type": "Restorative",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": "When you use a Potion, Heal equal to 10 times this item's Regen.",
+                "newValue": null
+              },
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "When you use a Potion, Heal 25"
+              }
+            ]
+          },
+          {
+            "type": "Toxic",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": "When you use a Potion, Poison equal to this item's Regen.",
+                "newValue": null
+              },
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "When you use a Potion, Poison 2."
+              }
+            ]
+          },
+          {
+            "type": "Fiery",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": "When you use a Potion, Burn equal to this item's Regen.",
+                "newValue": null
+              },
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "When you use a Potion, Burn 2."
+              }
+            ]
+          },
+          {
+            "type": "Obsidian",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": "When you use a Potion, Deal Damage equal to 10 times this item's Regen.",
+                "newValue": null
+              },
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "When you use a Potion, Deal 25 Damage."
+              }
+            ]
+          }
+        ]
+      }
     },
     "da73d4b8-d857-4121-9a6f-c621546d36e3": {
       "metadata": {
@@ -513,7 +594,7 @@ const data: PatchNotes = {
         {
           "index": 2,
           "oldValue": "When you Slow, Charge this 2 second(s) and this gains (+25/+50/+75) Damage for the fight.",
-          "newValue": "When you Slow, Charge this 2 second(s) and this gains (+25/+50) Damage for the fight."
+          "newValue": "When you Slow, Charge this 2 second(s) and this gains (+50/+75) Damage for the fight."
         }
       ]
     },
