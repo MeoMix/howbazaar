@@ -754,11 +754,6 @@
     "Items": [
       {
         "EnchantmentType": null,
-        "Id": "77c8ef2d-62c8-4214-993d-648915c93e83",
-        "Tier": "Legendary"
-      },
-      {
-        "EnchantmentType": null,
         "Id": "09132149-783d-4d5a-900c-31135bffab44",
         "Tier": "Silver"
       },
@@ -789,8 +784,8 @@
       },
       {
         "EnchantmentType": null,
-        "Id": "08bb5055-bd8d-4f86-bff6-24f8cb47f509",
-        "Tier": "Bronze"
+        "Id": "77c8ef2d-62c8-4214-993d-648915c93e83",
+        "Tier": "Legendary"
       }
     ],
     "Skills": [
