@@ -46,7 +46,7 @@
         return new Promise((resolve, reject) => {
             const script = document.createElement("script");
             script.type = "module";
-            script.src = "https://js.rev.iq";
+            script.src = "https://js.rev.iq/howbazaar.gg";
             script.dataset.domain = "howbazaar.gg";
             script.onload = () => {
                 console.log("Ad script loaded");
