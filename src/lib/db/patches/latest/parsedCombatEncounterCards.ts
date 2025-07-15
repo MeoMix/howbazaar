@@ -448,12 +448,12 @@ const data: ParsedCombatEncounterCard[] = [
     "name": "Ahexa"
   },
   {
-    "id": "1eabe08b-2949-407d-b22d-c6e579e0cd14",
-    "name": "Rogue Scrapper"
-  },
-  {
     "id": "20863550-960f-4713-99eb-2ff2e4cfb3ef",
     "name": "Morguloth"
+  },
+  {
+    "id": "1eabe08b-2949-407d-b22d-c6e579e0cd14",
+    "name": "Rogue Scrapper"
   },
   {
     "id": "20b58ee9-3db0-4d8a-9bf6-afb8742a16a0",

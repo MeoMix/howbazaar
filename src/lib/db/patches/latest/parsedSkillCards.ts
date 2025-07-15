@@ -8544,6 +8544,50 @@ const data: ParsedSkillCard[] = [
     "packId": "Vanessa_Core"
   },
   {
+    "id": "a1975546-334f-4137-85cc-43a4c8ae49f3",
+    "name": "Regenerative",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "You have 10 Regen."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "You have 20 Regen."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "You have 30 Regen."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "Regen"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Vanessa",
+      "Stelle",
+      "Mak"
+    ],
+    "artKey": "Icon_Skill_Regenerative.png",
+    "unifiedTooltips": [
+      "You have (10/20/30) Regen."
+    ],
+    "packId": "Stelle_Core"
+  },
+  {
     "id": "976d7de6-8191-44c4-8270-2ebc47775fe8",
     "name": "Rear Shielding",
     "startingTier": "Bronze",
@@ -8590,50 +8634,6 @@ const data: ParsedSkillCard[] = [
       "Your rightmost Shield item has (+20/+30/+40/+50) Shield."
     ],
     "packId": "Pygmalien_Core"
-  },
-  {
-    "id": "a1975546-334f-4137-85cc-43a4c8ae49f3",
-    "name": "Regenerative",
-    "startingTier": "Silver",
-    "tiers": {
-      "Bronze": {
-        "tooltips": []
-      },
-      "Silver": {
-        "tooltips": [
-          "You have 10 Regen."
-        ]
-      },
-      "Gold": {
-        "tooltips": [
-          "You have 20 Regen."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "You have 30 Regen."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [],
-    "hiddenTags": [
-      "Regen"
-    ],
-    "customTags": [],
-    "size": "Medium",
-    "heroes": [
-      "Vanessa",
-      "Stelle",
-      "Mak"
-    ],
-    "artKey": "Icon_Skill_Regenerative.png",
-    "unifiedTooltips": [
-      "You have (10/20/30) Regen."
-    ],
-    "packId": "Stelle_Core"
   },
   {
     "id": "3735516a-1517-40fe-b158-9ccee3758fef",
@@ -9029,6 +9029,50 @@ const data: ParsedSkillCard[] = [
     "packId": "Core"
   },
   {
+    "id": "239aeabb-0b0c-484d-a761-ee68ede3223c",
+    "name": "Lash Out",
+    "startingTier": "Bronze",
+    "tiers": {
+      "Bronze": {
+        "tooltips": [
+          "At the start of each fight, Poison 3."
+        ]
+      },
+      "Silver": {
+        "tooltips": [
+          "At the start of each fight, Poison 6."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "At the start of each fight, Poison 9."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "At the start of each fight, Poison 12."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "Poison"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Common"
+    ],
+    "artKey": "Icon_Skill_MON_LashOut_01",
+    "unifiedTooltips": [
+      "At the start of each fight, Poison (3/6/9/12)."
+    ],
+    "packId": "Core"
+  },
+  {
     "id": "3d9279b1-dbf8-4193-8989-8d2b022533af",
     "name": "Streamline Weapon",
     "startingTier": "Silver",
@@ -9072,50 +9116,6 @@ const data: ParsedSkillCard[] = [
       "When one of your Weapons gains Haste, if it already has Haste, it gains (+5/+10/+15) damage."
     ],
     "packId": "Pygmalien_Core"
-  },
-  {
-    "id": "239aeabb-0b0c-484d-a761-ee68ede3223c",
-    "name": "Lash Out",
-    "startingTier": "Bronze",
-    "tiers": {
-      "Bronze": {
-        "tooltips": [
-          "At the start of each fight, Poison 3."
-        ]
-      },
-      "Silver": {
-        "tooltips": [
-          "At the start of each fight, Poison 6."
-        ]
-      },
-      "Gold": {
-        "tooltips": [
-          "At the start of each fight, Poison 9."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "At the start of each fight, Poison 12."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [],
-    "hiddenTags": [
-      "Poison"
-    ],
-    "customTags": [],
-    "size": "Medium",
-    "heroes": [
-      "Common"
-    ],
-    "artKey": "Icon_Skill_MON_LashOut_01",
-    "unifiedTooltips": [
-      "At the start of each fight, Poison (3/6/9/12)."
-    ],
-    "packId": "Core"
   },
   {
     "id": "115c2677-6880-4400-af80-f5afa3d502fe",
@@ -12796,48 +12796,6 @@ const data: ParsedSkillCard[] = [
     "packId": "Mak_Core"
   },
   {
-    "id": "1df8d85a-9095-4ab9-952a-c668a4d5d51c",
-    "name": "Electrified Hull",
-    "startingTier": "Gold",
-    "tiers": {
-      "Bronze": {
-        "tooltips": []
-      },
-      "Silver": {
-        "tooltips": []
-      },
-      "Gold": {
-        "tooltips": [
-          "The first 4 times you Shield each fight, Charge 1 item(s) 1 second(s)."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "The first 8 times you Shield each fight, Charge 1 item(s) 1 second(s)."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [],
-    "hiddenTags": [
-      "ShieldReference",
-      "Charge"
-    ],
-    "customTags": [],
-    "size": "Medium",
-    "heroes": [
-      "Pygmalien",
-      "Dooley"
-    ],
-    "artKey": "Icon_Skill_DOO_NumberOneStunner.png",
-    "unifiedTooltips": [
-      "The first (4/8) times you Shield each fight, Charge 1 item(s) 1 second(s)."
-    ],
-    "packId": "Pygmalien_Core"
-  },
-  {
     "id": "cb8e9ed1-764e-4fa5-a2b8-61c2eddcbf7e",
     "name": "Grease Fire",
     "startingTier": "Gold",
@@ -12880,6 +12838,48 @@ const data: ParsedSkillCard[] = [
       "When you use a tool, Burn (3/5)."
     ],
     "packId": "Dooley_Core"
+  },
+  {
+    "id": "1df8d85a-9095-4ab9-952a-c668a4d5d51c",
+    "name": "Electrified Hull",
+    "startingTier": "Gold",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": [
+          "The first 4 times you Shield each fight, Charge 1 item(s) 1 second(s)."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "The first 8 times you Shield each fight, Charge 1 item(s) 1 second(s)."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "ShieldReference",
+      "Charge"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Pygmalien",
+      "Dooley"
+    ],
+    "artKey": "Icon_Skill_DOO_NumberOneStunner.png",
+    "unifiedTooltips": [
+      "The first (4/8) times you Shield each fight, Charge 1 item(s) 1 second(s)."
+    ],
+    "packId": "Pygmalien_Core"
   },
   {
     "id": "4e2e23aa-a3d1-46b0-9d59-c06fb64bea2f",

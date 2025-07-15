@@ -498,6 +498,9 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
         const auras = Object.values(card.Auras);
         const tierMap = getTierMap(card);
 
+        // TODO: Example text here.
+        // Example: "foo bar" - this is a silly example to showcase Cursor's amazing code editing capabilities!
+
         let tiers = Object.fromEntries((Object.entries(tierMap) as Entries<typeof tierMap>).map(
             ([tierName, tier]) => {
                 let rawTooltips = tier.TooltipIds
