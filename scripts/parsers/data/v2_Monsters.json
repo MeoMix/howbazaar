@@ -940,11 +940,6 @@
       },
       {
         "EnchantmentType": null,
-        "Id": "08bb5055-bd8d-4f86-bff6-24f8cb47f509",
-        "Tier": "Bronze"
-      },
-      {
-        "EnchantmentType": null,
         "Id": "1afb5eef-e964-4767-b9a6-8d1a76cef645",
         "Tier": "Gold"
       },
