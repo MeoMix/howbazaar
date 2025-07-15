@@ -47,7 +47,8 @@
             const script = document.createElement("script");
             script.type = "module";
             script.src = "https://js.rev.iq/howbazaar.gg";
-            script.dataset.domain = "howbazaar.gg";
+            // TODO: mark dev if staging/development
+
             script.onload = () => {
                 console.log("Ad script loaded");
                 adScriptLoaded = true;
