@@ -2,7 +2,7 @@ declare global {
   interface Window {
     reviq?: {
       push: (obj: any) => void;
-    };
+    } | Array<() => void>;
     isAdBlockDisabled?: true;
   }
 }

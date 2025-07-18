@@ -20,6 +20,7 @@
     import type { Unsubscriber } from "svelte/store";
     import UpdatedBadge from "$lib/components/UpdatedBadge.svelte";
     import { AVAILABLE_VERSIONS } from "$lib/constants";
+    import { dev } from "$app/environment";
 
     let isHamburgerMenuOpen = $state(false);
     const onNavLiClick = () => {
@@ -38,21 +39,31 @@
     const mediaQueryCallback = async () => {
         isLargeScreen = window.matchMedia("(min-width: 1024px)").matches;
         isXlScreen = window.matchMedia("(min-width: 1280px)").matches;
-
-        toggleAdVisibility();
     };
 
     const loadAdScript = (): Promise<void> => {
         return new Promise((resolve, reject) => {
+            // Need to await async logic on RevIQ's side after injecting the script.
+            window.reviq = window.reviq || [];
+            window.reviq?.push(() => {
+                console.log("Ad script fully initialized");
+                adScriptLoaded = true;
+                resolve();
+            });
+
             const script = document.createElement("script");
             script.type = "module";
             script.src = "https://js.rev.iq/howbazaar.gg";
+            if (dev) {
+                script.setAttribute("dev", "");
+            } else {
+                script.removeAttribute("dev");
+            }
+
             // TODO: mark dev if staging/development
 
             script.onload = () => {
-                console.log("Ad script loaded");
-                adScriptLoaded = true;
-                resolve();
+                console.log("Ad script loaded (but not fully initialized)");
             };
             script.onerror = () => {
                 adScriptLoadFailed = true;
@@ -77,7 +88,6 @@
 
                 if (showAds) {
                     await loadAdScript();
-                    toggleAdVisibility();
                 }
             });
         } else {
@@ -92,20 +102,6 @@
     });
 
     let { children }: { children: Snippet } = $props();
-
-    // Function to toggle the visibility of the injected ad element
-    const toggleAdVisibility = () => {
-        const adElement = document.querySelector(
-            "[data-reviq-sticky-ad]",
-        ) as HTMLElement;
-        if (adElement) {
-            if (showAds && isLargeScreen === false && !adScriptLoadFailed) {
-                adElement.style.display = "flex";
-            } else {
-                adElement.style.display = "none";
-            }
-        }
-    };
 </script>
 
 <svelte:head>
