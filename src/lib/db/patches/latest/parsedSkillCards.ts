@@ -1048,52 +1048,6 @@ const data: ParsedSkillCard[] = [
     "packId": "Core"
   },
   {
-    "id": "71433809-d05a-4544-9959-aff20ae5db93",
-    "name": "Iron Sharpens Iron",
-    "startingTier": "Silver",
-    "tiers": {
-      "Bronze": {
-        "tooltips": []
-      },
-      "Silver": {
-        "tooltips": [
-          "Your leftmost Weapon has +2 damage. When you buy a weapon, increase this bonus by 2."
-        ]
-      },
-      "Gold": {
-        "tooltips": [
-          "Your leftmost Weapon has +2 damage. When you buy a weapon, increase this bonus by 3."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "Your leftmost Weapon has +2 damage. When you buy a weapon, increase this bonus by 4."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [
-      "Weapon"
-    ],
-    "hiddenTags": [
-      "DamageReference"
-    ],
-    "customTags": [],
-    "size": "Medium",
-    "heroes": [
-      "Vanessa",
-      "Jules",
-      "Mak"
-    ],
-    "artKey": "Icon_Skill_IronSharpensIron.png",
-    "unifiedTooltips": [
-      "Your leftmost Weapon has +2 damage. When you buy a weapon, increase this bonus by (2/3/4)."
-    ],
-    "packId": "Vanessa_Core"
-  },
-  {
     "id": "9d910b0a-9ef3-447f-ab41-195effb68f21",
     "name": "Hot Spot",
     "startingTier": "Silver",
@@ -1136,6 +1090,52 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_HotSpot.png",
     "unifiedTooltips": [
       "When you use your leftmost item, Burn (2/3/4)."
+    ],
+    "packId": "Vanessa_Core"
+  },
+  {
+    "id": "71433809-d05a-4544-9959-aff20ae5db93",
+    "name": "Iron Sharpens Iron",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Your leftmost Weapon has +2 damage. When you buy a weapon, increase this bonus by 2."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Your leftmost Weapon has +2 damage. When you buy a weapon, increase this bonus by 3."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Your leftmost Weapon has +2 damage. When you buy a weapon, increase this bonus by 4."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Weapon"
+    ],
+    "hiddenTags": [
+      "DamageReference"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Vanessa",
+      "Jules",
+      "Mak"
+    ],
+    "artKey": "Icon_Skill_IronSharpensIron.png",
+    "unifiedTooltips": [
+      "Your leftmost Weapon has +2 damage. When you buy a weapon, increase this bonus by (2/3/4)."
     ],
     "packId": "Vanessa_Core"
   },
@@ -1393,6 +1393,44 @@ const data: ParsedSkillCard[] = [
     "packId": "Dooley_Core"
   },
   {
+    "id": "8e2f3e1c-bd00-4b58-b746-a6ae18f804c3",
+    "name": "Hyper Focus",
+    "startingTier": "Diamond",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": []
+      },
+      "Diamond": {
+        "tooltips": [
+          "If you have only one medium item, its cooldown is reduced by 25%."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "Cooldown"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Common"
+    ],
+    "artKey": "Icon_Skill_MON_Lurk_01.png",
+    "unifiedTooltips": [
+      "If you have only one medium item, its cooldown is reduced by 25%."
+    ],
+    "packId": "Core"
+  },
+  {
     "id": "13f4df45-8f29-4a48-8a2b-b8176e17c85d",
     "name": "Retaliatory Toxins",
     "startingTier": "Gold",
@@ -1432,44 +1470,6 @@ const data: ParsedSkillCard[] = [
       "When your enemy uses an item, Poison (1/2)."
     ],
     "packId": "Pygmalien_Core"
-  },
-  {
-    "id": "8e2f3e1c-bd00-4b58-b746-a6ae18f804c3",
-    "name": "Hyper Focus",
-    "startingTier": "Diamond",
-    "tiers": {
-      "Bronze": {
-        "tooltips": []
-      },
-      "Silver": {
-        "tooltips": []
-      },
-      "Gold": {
-        "tooltips": []
-      },
-      "Diamond": {
-        "tooltips": [
-          "If you have only one medium item, its cooldown is reduced by 25%."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [],
-    "hiddenTags": [
-      "Cooldown"
-    ],
-    "customTags": [],
-    "size": "Medium",
-    "heroes": [
-      "Common"
-    ],
-    "artKey": "Icon_Skill_MON_Lurk_01.png",
-    "unifiedTooltips": [
-      "If you have only one medium item, its cooldown is reduced by 25%."
-    ],
-    "packId": "Core"
   },
   {
     "id": "d1505b87-551f-4786-818c-3c441f920d7b",
@@ -10697,6 +10697,48 @@ const data: ParsedSkillCard[] = [
     "packId": "Pygmalien_Core"
   },
   {
+    "id": "03968f2d-5f40-464a-bf1f-9475836157cd",
+    "name": "Jury Rigger",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "When you use an Ammo item, Reload the item to the left of it 1 Ammo."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "When you use an Ammo item, Reload the item to the left of it 2 Ammo."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "When you use an Ammo item, Reload the item to the left of it 3 Ammo."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "Ammo"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Common"
+    ],
+    "artKey": "Icon_Skill_MON_ALittleOfEverything_01.png",
+    "unifiedTooltips": [
+      "When you use an Ammo item, Reload the item to the left of it (1/2/3) Ammo."
+    ],
+    "packId": "Core"
+  },
+  {
     "id": "a9b441e1-5824-4855-9359-2ab4643d9ff5",
     "name": "Toxic Shield",
     "startingTier": "Silver",
@@ -10739,48 +10781,6 @@ const data: ParsedSkillCard[] = [
       "The first time you fall below half health each fight, Shield equal to (2/3/4) times the Poison on your opponent."
     ],
     "packId": "Mak_Core"
-  },
-  {
-    "id": "03968f2d-5f40-464a-bf1f-9475836157cd",
-    "name": "Jury Rigger",
-    "startingTier": "Silver",
-    "tiers": {
-      "Bronze": {
-        "tooltips": []
-      },
-      "Silver": {
-        "tooltips": [
-          "When you use an Ammo item, Reload the item to the left of it 1 Ammo."
-        ]
-      },
-      "Gold": {
-        "tooltips": [
-          "When you use an Ammo item, Reload the item to the left of it 2 Ammo."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "When you use an Ammo item, Reload the item to the left of it 3 Ammo."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [],
-    "hiddenTags": [
-      "Ammo"
-    ],
-    "customTags": [],
-    "size": "Medium",
-    "heroes": [
-      "Common"
-    ],
-    "artKey": "Icon_Skill_MON_ALittleOfEverything_01.png",
-    "unifiedTooltips": [
-      "When you use an Ammo item, Reload the item to the left of it (1/2/3) Ammo."
-    ],
-    "packId": "Core"
   },
   {
     "id": "0d8cd0dc-67ab-4c3c-b11c-88e78559a900",
