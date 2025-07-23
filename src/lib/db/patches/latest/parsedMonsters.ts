@@ -644,6 +644,10 @@ const data: ParsedMonster[] = [
     "health": 1550,
     "items": [
       {
+        "id": "562d768a-6aaf-4704-be8b-4dc9e6311b11",
+        "tierType": "Silver"
+      },
+      {
         "id": "09132149-783d-4d5a-900c-31135bffab44",
         "tierType": "Silver"
       },
