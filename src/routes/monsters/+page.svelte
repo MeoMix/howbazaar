@@ -43,6 +43,11 @@
 <div
     class="w-full max-w-full sm:max-w-(--breakpoint-sm) md:max-w-(--breakpoint-md) lg:max-w-(--breakpoint-lg) xl:max-w-(--breakpoint-xl)"
 >
+    <div class="text-lg mt-4 text-red-500">
+        I haven't updated monsters for the 5.0.0 Stelle release yet.
+        Please DM me on Discord with screenshots of missing/incorrect encounters. Thank you!
+    </div>
+
     <MonsterFilters
         dayOptions={data.dayOptions}
         bind:searchText
