@@ -6,7 +6,7 @@ import { pipeline } from 'stream/promises';
 import unzipper from 'unzipper';
 
 // TODO: For some reason this is downloading an old version of the game?
-const GAME_URL = 'https://cdn.playthebazaar.com/bazaarprodbuild/bazaarwinprodlatest.zip';
+const GAME_URL = 'https://data.playthebazaar.com/game/windows/buildx64.zip';
 const TIMESTAMP_FILE = './scripts/gameZipLastModified.txt';
 const OUTPUT_DIR = './scripts/game';
 const OUTPUT_FILE = path.join(OUTPUT_DIR, 'game.zip');
