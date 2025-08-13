@@ -106,6 +106,12 @@ type PatchNotes = {
 
 function compareSimpleProperty<T>(oldValue: T | undefined, newValue: T | undefined): SimplePropertyChange<T> | undefined {
     if (oldValue === newValue) return undefined;
+    
+    // For string-like values, do case-insensitive comparison
+    if (typeof oldValue === 'string' && typeof newValue === 'string') {
+        if (oldValue.toLowerCase() === newValue.toLowerCase()) return undefined;
+    }
+    
     return {
         oldValue: oldValue ?? null,
         newValue: newValue ?? null
@@ -120,21 +126,46 @@ function compareArrays<T>(oldArr: T[] | undefined, newArr: T[] | undefined): Arr
     const added: T[] = [];
     const removed: T[] = [];
 
-    // Convert arrays to Sets for O(1) lookups
-    const oldSet = new Set(oldArr);
-    const newSet = new Set(newArr);
+    // For string-like arrays, do case-insensitive comparison
+    if (oldArr.length > 0 && typeof oldArr[0] === 'string') {
+        // Convert arrays to Sets with lowercase values for O(1) lookups
+        const oldSet = new Set(oldArr.map(item => (item as string).toLowerCase()));
+        const newSet = new Set(newArr.map(item => (item as string).toLowerCase()));
+        
+        // Create maps to preserve original values
+        const oldMap = new Map(oldArr.map(item => [(item as string).toLowerCase(), item]));
+        const newMap = new Map(newArr.map(item => [(item as string).toLowerCase(), item]));
 
-    // Find removed items (in old but not in new)
-    for (const item of oldSet) {
-        if (!newSet.has(item)) {
-            removed.push(item);
+        // Find removed items (in old but not in new)
+        for (const [lowerKey, originalItem] of oldMap) {
+            if (!newSet.has(lowerKey)) {
+                removed.push(originalItem);
+            }
         }
-    }
 
-    // Find added items (in new but not in old)
-    for (const item of newSet) {
-        if (!oldSet.has(item)) {
-            added.push(item);
+        // Find added items (in new but not in old)
+        for (const [lowerKey, originalItem] of newMap) {
+            if (!oldSet.has(lowerKey)) {
+                added.push(originalItem);
+            }
+        }
+    } else {
+        // For non-string arrays, use original logic
+        const oldSet = new Set(oldArr);
+        const newSet = new Set(newArr);
+
+        // Find removed items (in old but not in new)
+        for (const item of oldSet) {
+            if (!newSet.has(item)) {
+                removed.push(item);
+            }
+        }
+
+        // Find added items (in new but not in old)
+        for (const item of newSet) {
+            if (!oldSet.has(item)) {
+                added.push(item);
+            }
         }
     }
 
@@ -155,8 +186,8 @@ function compareTooltips(oldTooltips: string[] | undefined, newTooltips: string[
 
     // Helper function to check if two tooltips are similar enough to be considered the same
     function areTooltipsSimilar(t1: string, t2: string): boolean {
-        // Remove all numbers and special characters for comparison
-        const normalize = (s: string) => s.replace(/[0-9()/]/g, '');
+        // Remove all numbers and special characters for comparison, and convert to lowercase
+        const normalize = (s: string) => s.replace(/[0-9()/]/g, '').toLowerCase();
         const normalized1 = normalize(t1);
         const normalized2 = normalize(t2);
 
@@ -167,10 +198,10 @@ function compareTooltips(oldTooltips: string[] | undefined, newTooltips: string[
         return distance(normalized1, normalized2) <= 2;
     }
 
-    // First pass: find exact matches
+    // First pass: find exact matches (case-insensitive)
     for (let i = 0; i < oldTooltips.length; i++) {
         const oldTooltip = oldTooltips[i];
-        const exactMatchIndex = newTooltips.findIndex((t, j) => !matchedIndices.has(j) && t === oldTooltip);
+        const exactMatchIndex = newTooltips.findIndex((t, j) => !matchedIndices.has(j) && t.toLowerCase() === oldTooltip.toLowerCase());
 
         if (exactMatchIndex !== -1) {
             matchedIndices.add(exactMatchIndex);

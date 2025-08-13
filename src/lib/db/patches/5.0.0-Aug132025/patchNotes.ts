@@ -20,11 +20,6 @@ const data: PatchNotes = {
           "index": 1,
           "oldValue": "Deal (10/15/20/25) damage.",
           "newValue": "Deal (10/15/20/25) Damage"
-        },
-        {
-          "index": 2,
-          "oldValue": "Your weapons have (+6/+9/+12/+15) damage.",
-          "newValue": "Your Weapons have (+6/+9/+12/+15) Damage."
         }
       ],
       "enchantments": {
@@ -159,11 +154,6 @@ const data: PatchNotes = {
           "index": 1,
           "oldValue": "Deal (20/40/60/80) Damage.",
           "newValue": "Deal (20/40/60/80) Damage"
-        },
-        {
-          "index": 2,
-          "oldValue": "The first (1/2/3/4) times you crit with this each fight, you take no damage for 1 second.",
-          "newValue": "The first (1/2/3/4) times you crit with this each fight, you take no Damage for 1 second."
         }
       ],
       "enchantments": {
@@ -278,16 +268,6 @@ const data: PatchNotes = {
           "index": 1,
           "oldValue": "Deal (10/20) damage.",
           "newValue": "Deal (10/20) Damage"
-        },
-        {
-          "index": 2,
-          "oldValue": "At the start of each fight with Dragon Tooth, spend 3 gold and your weapons permanently gain (5/10) damage.",
-          "newValue": null
-        },
-        {
-          "index": 2,
-          "oldValue": null,
-          "newValue": "At the start of each fight with Dragon Tooth, spend 3 Gold and your Weapons permanently gain (5/10) Damage."
         }
       ],
       "enchantments": {
@@ -571,24 +551,6 @@ const data: PatchNotes = {
           }
         ]
       }
-    },
-    "f212afe2-08d1-40e3-978b-762d345bc7e5": {
-      "metadata": {
-        "id": "f212afe2-08d1-40e3-978b-762d345bc7e5",
-        "name": "Spare Change",
-        "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze",
-        "currentHero": "Common",
-        "currentSize": "Small",
-        "type": "item"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "Sells for gold",
-          "newValue": "Sells for Gold"
-        }
-      ]
     },
     "a05d23cb-af36-42fa-aab1-568aba7f30c6": {
       "metadata": {
@@ -997,21 +959,6 @@ const data: PatchNotes = {
                 "newValue": "When you use an adjacent item, Burn equal to 5% of this item's Damage."
               }
             ]
-          },
-          {
-            "type": "Shiny",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "This has double cooldown reduction.",
-                "newValue": "This has double Cooldown reduction."
-              },
-              {
-                "index": 1,
-                "oldValue": "This has double damage.",
-                "newValue": "This has double Damage."
-              }
-            ]
           }
         ]
       }
@@ -1031,16 +978,6 @@ const data: PatchNotes = {
           "index": 1,
           "oldValue": "Deal 80 damage.",
           "newValue": "Deal 80 Damage"
-        },
-        {
-          "index": 2,
-          "oldValue": "The first time you use this each fight, destroy a small enemy item for the fight.",
-          "newValue": "The first time you use this each fight, destroy a Small enemy item for the fight."
-        },
-        {
-          "index": 3,
-          "oldValue": "When you destroy an item during combat, your Dinosaurs permanently gain (10/15/20) damage.",
-          "newValue": "When you destroy an item during combat, your Dinosaurs permanently gain (10/15/20) Damage."
         }
       ],
       "enchantments": {
@@ -1274,13 +1211,6 @@ const data: PatchNotes = {
         "currentSize": "Medium",
         "type": "item"
       },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "When you use the item to the right of this, Haste it for (1/2/3/4) second(s). If it is a weapon, it also gains (+3/+5/+7/+9) damage for the fight.",
-          "newValue": "When you use the item to the right of this, Haste it for (1/2/3/4) second(s). If it is a Weapon, it also gains (+3/+5/+7/+9) Damage for the fight."
-        }
-      ],
       "enchantments": {
         "added": [
           {
@@ -1347,32 +1277,12 @@ const data: PatchNotes = {
             ]
           },
           {
-            "type": "Shielded",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you use the item to the right of this, shield 20.",
-                "newValue": "When you use the item to the right of this, Shield 20."
-              }
-            ]
-          },
-          {
             "type": "Restorative",
             "tooltipChanges": [
               {
                 "index": 0,
                 "oldValue": "When you use the item to the right of this, heal 30.",
                 "newValue": "When you use the item to the right of this, Heal 20."
-              }
-            ]
-          },
-          {
-            "type": "Toxic",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you use the item to the right of this, poison 2.",
-                "newValue": "When you use the item to the right of this, Poison 2."
               }
             ]
           },
@@ -1398,16 +1308,6 @@ const data: PatchNotes = {
                 "index": 0,
                 "oldValue": null,
                 "newValue": "The item to the right of this is immune to Freeze, Slow and Destroy."
-              }
-            ]
-          },
-          {
-            "type": "Obsidian",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "This has double damage bonus.",
-                "newValue": "This has double Damage bonus."
               }
             ]
           }
@@ -2178,11 +2078,6 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": "When you Crit with the item to the left of this, slow 1 item for 2 second(s).",
-                "newValue": null
-              },
-              {
-                "index": 0,
-                "oldValue": null,
                 "newValue": "When you Crit with the item to the left of this, Slow an item for 1 second(s)."
               }
             ]
@@ -2208,11 +2103,6 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": "When you Crit with the item to the left of this, haste 1 item for 2 second(s).",
-                "newValue": null
-              },
-              {
-                "index": 0,
-                "oldValue": null,
                 "newValue": "When you Crit with the item to the left of this, Haste an item for 2 second(s)."
               }
             ]
@@ -2606,11 +2496,6 @@ const data: PatchNotes = {
           "index": 2,
           "oldValue": "Slow (1/2/3) item(s) for 1 second(s).",
           "newValue": "Slow (1/2/3) item(s) for 1 second(s)"
-        },
-        {
-          "index": 3,
-          "oldValue": "When you Slow or Crit, this and adjacent Weapons gain (+3/+6/+9) damage for the fight.",
-          "newValue": "When you Slow or Crit, this and adjacent Weapons gain (+3/+6/+9) Damage for the fight."
         }
       ],
       "enchantments": {
@@ -2719,24 +2604,6 @@ const data: PatchNotes = {
           }
         ]
       }
-    },
-    "1d354dcf-8736-4bab-9dc1-7d9054d6c4d4": {
-      "metadata": {
-        "id": "1d354dcf-8736-4bab-9dc1-7d9054d6c4d4",
-        "name": "Hologram Projector",
-        "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold",
-        "currentHero": "Dooley",
-        "currentSize": "Small",
-        "type": "item"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "At the start of each fight, transform into a (Gold/Diamond) copy of another small, non-legendary item you have for the fight.",
-          "newValue": "At the start of each fight, transform into a (Gold/Diamond) copy of another Small, non-legendary item you have for the fight."
-        }
-      ]
     },
     "9d31868e-1c69-4186-a3df-8ca10dc2a80f": {
       "metadata": {
@@ -2892,11 +2759,6 @@ const data: PatchNotes = {
           "index": 1,
           "oldValue": "Haste the Aquatic item to the right of this for 2 second(s).",
           "newValue": "Haste the Aquatic item to the right of this for 2 second(s)"
-        },
-        {
-          "index": 2,
-          "oldValue": "At the start of each day, get a Small aquatic item.",
-          "newValue": "At the start of each day, get a Small Aquatic item."
         }
       ]
     },
@@ -2910,18 +2772,6 @@ const data: PatchNotes = {
         "currentSize": "Medium",
         "type": "item"
       },
-      "tooltips": [
-        {
-          "index": 1,
-          "oldValue": "Adjacent items have bonus damage, heal, or shield equal to their Crit Chance.",
-          "newValue": null
-        },
-        {
-          "index": 1,
-          "oldValue": null,
-          "newValue": "Adjacent items have bonus Damage, Heal, or Shield equal to their Crit Chance."
-        }
-      ],
       "enchantments": {
         "added": [
           {
@@ -3132,16 +2982,6 @@ const data: PatchNotes = {
                 "index": 0,
                 "oldValue": "Poison equal to 10% of this item's damage.",
                 "newValue": "Poison equal to 5% of this item's Damage"
-              }
-            ]
-          },
-          {
-            "type": "Fiery",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "This has double burn.",
-                "newValue": "This has double Burn."
               }
             ]
           },
@@ -3720,16 +3560,6 @@ const data: PatchNotes = {
             ]
           },
           {
-            "type": "Shiny",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "This has double damage.",
-                "newValue": "This has double Damage."
-              }
-            ]
-          },
-          {
             "type": "Radiant",
             "tooltipChanges": [
               {
@@ -4004,11 +3834,6 @@ const data: PatchNotes = {
         {
           "index": 2,
           "oldValue": "Deal damage equal to your shield.",
-          "newValue": null
-        },
-        {
-          "index": 2,
-          "oldValue": null,
           "newValue": "Deal Damage equal to your Shield"
         }
       ],
@@ -4909,11 +4734,6 @@ const data: PatchNotes = {
           "index": 1,
           "oldValue": "Shield (200/300).",
           "newValue": "Shield (200/300)"
-        },
-        {
-          "index": 3,
-          "oldValue": "This item's cooldown is reduced by 1% for every value it has.",
-          "newValue": "This item's Cooldown is reduced by 1% for every value it has."
         }
       ],
       "enchantments": {
@@ -5271,11 +5091,6 @@ const data: PatchNotes = {
           "index": 2,
           "oldValue": "Deal 50 damage for each Weapon you have.",
           "newValue": "Deal 50 Damage for each Weapon you have"
-        },
-        {
-          "index": 3,
-          "oldValue": "This item's cooldown is reduced by 1 second for each other Relic you have.",
-          "newValue": "This item's Cooldown is reduced by 1 second for each other Relic you have."
         }
       ],
       "enchantments": {
@@ -6485,11 +6300,6 @@ const data: PatchNotes = {
           "index": 1,
           "oldValue": "Permanently gain (10/15/20) Max Health.",
           "newValue": "Permanently gain (10/15/20) Max Health"
-        },
-        {
-          "index": 2,
-          "oldValue": "When you use an adjacent friend, charge this 1 second(s).",
-          "newValue": "When you use an adjacent Friend, charge this 1 second(s)."
         }
       ],
       "enchantments": {
@@ -6916,11 +6726,6 @@ const data: PatchNotes = {
           "index": 2,
           "oldValue": "Gain 10 Regen for the fight.",
           "newValue": "Gain 10 Regen for the fight"
-        },
-        {
-          "index": 3,
-          "oldValue": "When any non-weapon is used, Charge this 1 second(s).",
-          "newValue": "When any non-Weapon is used, Charge this 1 second(s)."
         }
       ],
       "enchantments": {
@@ -7437,11 +7242,6 @@ const data: PatchNotes = {
           "index": 2,
           "oldValue": "Gain (1/2/3/4) Regen for the fight.",
           "newValue": "Gain (1/2/3/4) Regen for the fight"
-        },
-        {
-          "index": 3,
-          "oldValue": "If you have no other weapons, this has +1 Multicast.",
-          "newValue": "If you have no other Weapons, this has +1 Multicast."
         }
       ],
       "enchantments": {
@@ -7710,16 +7510,6 @@ const data: PatchNotes = {
         "removed": [],
         "modified": [
           {
-            "type": "Heavy",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "At the start of each fight, slow 2 item for 4 second(s).",
-                "newValue": "At the start of each fight, Slow 2 item for 4 second(s)."
-              }
-            ]
-          },
-          {
             "type": "Icy",
             "tooltipChanges": [
               {
@@ -7731,16 +7521,6 @@ const data: PatchNotes = {
                 "index": 0,
                 "oldValue": null,
                 "newValue": "At the start of each fight, Freeze 2 items for 2 second(s)."
-              }
-            ]
-          },
-          {
-            "type": "Turbo",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "At the start of each fight, haste 2 item for 4 second(s).",
-                "newValue": "At the start of each fight, Haste 2 item for 4 second(s)."
               }
             ]
           },
@@ -8213,16 +7993,6 @@ const data: PatchNotes = {
                 "index": 0,
                 "oldValue": "When you sell this, your leftmost Heal item gains +15 Heal.",
                 "newValue": "When you sell this, your leftmost Heal item gains +10 Heal."
-              }
-            ]
-          },
-          {
-            "type": "Obsidian",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you sell this, your leftmost Weapon item gains +10 damage.",
-                "newValue": "When you sell this, your leftmost Weapon item gains +10 Damage."
               }
             ]
           }
@@ -8922,11 +8692,6 @@ const data: PatchNotes = {
         {
           "index": 0,
           "oldValue": "When a player uses a Weapon, Poison that player (3/4/5).",
-          "newValue": null
-        },
-        {
-          "index": 0,
-          "oldValue": null,
           "newValue": "When ANY Player uses a Weapon, Poison that Player (3/4/5)."
         }
       ],
@@ -9016,11 +8781,6 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": "When a player uses a Weapon, Burn equal to this item's Poison.",
-                "newValue": null
-              },
-              {
-                "index": 0,
-                "oldValue": null,
                 "newValue": "When ANY Player uses a Weapon, Burn equal to this item's Poison."
               }
             ]
@@ -9041,35 +8801,12 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": "When a player uses a Weapon, deal damage equal to 5 times this item's Poison.",
-                "newValue": null
-              },
-              {
-                "index": 0,
-                "oldValue": null,
                 "newValue": "When ANY Player uses a Weapon, deal Damage equal to 5 times this item's Poison."
               }
             ]
           }
         ]
       }
-    },
-    "855cf2a5-930b-43db-b388-9f814f80a4fb": {
-      "metadata": {
-        "id": "855cf2a5-930b-43db-b388-9f814f80a4fb",
-        "name": "Piggy Bank",
-        "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze",
-        "currentHero": "Pygmalien",
-        "currentSize": "Small",
-        "type": "item"
-      },
-      "tooltips": [
-        {
-          "index": 1,
-          "oldValue": "At the start of each hour, spend 2 gold to gain 1 value.",
-          "newValue": "At the start of each hour, spend 2 Gold to gain 1 value."
-        }
-      ]
     },
     "9c21ee00-116d-4868-a215-3f9b57bc8657": {
       "metadata": {
@@ -10503,13 +10240,6 @@ const data: PatchNotes = {
         "currentSize": "Small",
         "type": "item"
       },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "When you sell this, reduce your leftmost item's cooldown by (3%/6%/9%).",
-          "newValue": "When you sell this, reduce your leftmost item's Cooldown by (3%/6%/9%)."
-        }
-      ],
       "enchantments": {
         "added": [],
         "removed": [],
@@ -10521,16 +10251,6 @@ const data: PatchNotes = {
                 "index": 0,
                 "oldValue": "When you sell this, your leftmost Heal item gains +15 Heal.",
                 "newValue": "When you sell this, your leftmost Heal item gains +10 Heal."
-              }
-            ]
-          },
-          {
-            "type": "Obsidian",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you sell this, your leftmost Weapon item gains +10 damage.",
-                "newValue": "When you sell this, your leftmost Weapon item gains +10 Damage."
               }
             ]
           }
@@ -10676,11 +10396,6 @@ const data: PatchNotes = {
           "index": 2,
           "oldValue": "Freeze 1 item for 1 second(s).",
           "newValue": null
-        },
-        {
-          "index": 3,
-          "oldValue": "When you Freeze, this gains (15/20/25) damage for the fight.",
-          "newValue": "When you Freeze, this gains (15/20/25) Damage for the fight."
         },
         {
           "index": 2,
@@ -11450,52 +11165,12 @@ const data: PatchNotes = {
             ]
           },
           {
-            "type": "Restorative",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "The first time you fall below half health each fight, Heal equal to 10% of your Max Health.",
-                "newValue": "The first time you fall below half Health each fight, Heal equal to 10% of your Max Health."
-              }
-            ]
-          },
-          {
-            "type": "Toxic",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "At the start of each fight, poison 10.",
-                "newValue": "At the start of each fight, Poison 10."
-              }
-            ]
-          },
-          {
-            "type": "Fiery",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "At the start of each fight, burn 10.",
-                "newValue": "At the start of each fight, Burn 10."
-              }
-            ]
-          },
-          {
             "type": "Deadly",
             "tooltipChanges": [
               {
                 "index": 0,
                 "oldValue": "Your Small items have +25% Crit Chance.",
                 "newValue": "Your Small items have +15% Crit Chance."
-              }
-            ]
-          },
-          {
-            "type": "Obsidian",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "At the start of each fight, Deal Damage equal to 10% of your Max Health.",
-                "newValue": "At the start of each fight, deal Damage equal to 10% of your Max Health."
               }
             ]
           }
@@ -11517,11 +11192,6 @@ const data: PatchNotes = {
           "index": 1,
           "oldValue": "Deal (10/15/20/25) damage.",
           "newValue": "Deal (10/15/20/25) Damage"
-        },
-        {
-          "index": 2,
-          "oldValue": "The first time you fall below half health each fight, slow all enemy items for (1/2/3/4) second(s).",
-          "newValue": "The first time you fall below half Health each fight, Slow all enemy items for (1/2/3/4) second(s)."
         }
       ],
       "enchantments": {
@@ -11661,11 +11331,6 @@ const data: PatchNotes = {
           "index": 1,
           "oldValue": "Deal (30/60/120/240) damage.",
           "newValue": "Deal (30/60/120/240) Damage"
-        },
-        {
-          "index": 2,
-          "oldValue": "When you sell this, your weapons gain (4/6/8/10) damage.",
-          "newValue": "When you sell this, your Weapons gain (4/6/8/10) Damage."
         }
       ],
       "enchantments": {
@@ -12151,16 +11816,6 @@ const data: PatchNotes = {
         "removed": [],
         "modified": [
           {
-            "type": "Golden",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "Adjacent properties have double value.",
-                "newValue": "Adjacent Properties have double value."
-              }
-            ]
-          },
-          {
             "type": "Restorative",
             "tooltipChanges": [
               {
@@ -12270,11 +11925,6 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": "When you use a Weapon or Shield item, slow 1 item for 1 second(s).",
-                "newValue": null
-              },
-              {
-                "index": 0,
-                "oldValue": null,
                 "newValue": "When you use a Weapon or Shield item, Slow an item for 1 second(s)."
               }
             ]
@@ -12310,62 +11960,12 @@ const data: PatchNotes = {
             ]
           },
           {
-            "type": "Shielded",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you use a Weapon or Shield item, shield 30.",
-                "newValue": "When you use a Weapon or Shield item, Shield 30."
-              }
-            ]
-          },
-          {
             "type": "Restorative",
             "tooltipChanges": [
               {
                 "index": 0,
                 "oldValue": "When you use a Weapon or Shield item, heal 45.",
                 "newValue": "When you use a Weapon or Shield item, Heal 30."
-              }
-            ]
-          },
-          {
-            "type": "Toxic",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you use a Weapon or Shield item, poison 3.",
-                "newValue": "When you use a Weapon or Shield item, Poison 3."
-              }
-            ]
-          },
-          {
-            "type": "Fiery",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you use a Weapon or Shield item, burn 3.",
-                "newValue": "When you use a Weapon or Shield item, Burn 3."
-              }
-            ]
-          },
-          {
-            "type": "Shiny",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "This has double damage and shield bonus.",
-                "newValue": "This has double Damage and Shield bonus."
-              }
-            ]
-          },
-          {
-            "type": "Obsidian",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you use a Weapon or Shield item, Deal 30 Damage.",
-                "newValue": "When you use a Weapon or Shield item, deal 30 Damage."
               }
             ]
           }
@@ -12387,11 +11987,6 @@ const data: PatchNotes = {
           "index": 1,
           "oldValue": "Shield (10/20/30).",
           "newValue": "Shield (10/20/30)"
-        },
-        {
-          "index": 2,
-          "oldValue": "At the start of each hour, spend 2 gold to get a Gumball.",
-          "newValue": "At the start of each hour, spend 2 Gold to get a Gumball."
         }
       ],
       "enchantments": {
@@ -12574,11 +12169,6 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": "When you use an adjacent Weapon, haste 1 item for 2 second(s).",
-                "newValue": null
-              },
-              {
-                "index": 0,
-                "oldValue": null,
                 "newValue": "When you use an adjacent Weapon, Haste an item for 1 second(s)."
               }
             ]
@@ -12594,16 +12184,6 @@ const data: PatchNotes = {
             ]
           },
           {
-            "type": "Toxic",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you use an adjacent Weapon, poison 1.",
-                "newValue": "When you use an adjacent Weapon, Poison 1."
-              }
-            ]
-          },
-          {
             "type": "Shiny",
             "tooltipChanges": [
               {
@@ -12615,16 +12195,6 @@ const data: PatchNotes = {
                 "index": 0,
                 "oldValue": null,
                 "newValue": "This Slows for twice as long."
-              }
-            ]
-          },
-          {
-            "type": "Obsidian",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you use an adjacent Weapon, deal 10 damage.",
-                "newValue": "When you use an adjacent Weapon, deal 10 Damage."
               }
             ]
           }
@@ -13057,11 +12627,6 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": "Your friends gain +20 damage for the fight.",
-                "newValue": null
-              },
-              {
-                "index": 0,
-                "oldValue": null,
                 "newValue": "Your Friends gain +20 Damage for the fight"
               }
             ]
@@ -13207,11 +12772,6 @@ const data: PatchNotes = {
           "index": 2,
           "oldValue": "You take no damage for (1/2) second(s).",
           "newValue": "You take no Damage for 2 second(s)"
-        },
-        {
-          "index": 3,
-          "oldValue": "The first time you fall below half health each fight, use this.",
-          "newValue": "The first time you fall below half Health each fight, use this."
         }
       ],
       "enchantments": {
@@ -13872,11 +13432,6 @@ const data: PatchNotes = {
           "index": 1,
           "oldValue": "Charge the Tech item to the right of this 1 second(s).",
           "newValue": "Charge the Tech item to the right of this 1 second(s)"
-        },
-        {
-          "index": 2,
-          "oldValue": "When you buy this, get a small Tech item.",
-          "newValue": "When you buy this, get a Small Tech item."
         }
       ],
       "enchantments": {
@@ -13991,11 +13546,6 @@ const data: PatchNotes = {
           "index": 1,
           "oldValue": "Deal 200 damage.",
           "newValue": "Deal 200 Damage"
-        },
-        {
-          "index": 2,
-          "oldValue": "This deals quadruple crit damage.",
-          "newValue": "This deals quadruple crit Damage."
         }
       ],
       "enchantments": {
@@ -14100,13 +13650,6 @@ const data: PatchNotes = {
         "currentSize": "Small",
         "type": "item"
       },
-      "tooltips": [
-        {
-          "index": 1,
-          "oldValue": "When you sell this, get an enchanted small Friend from any hero.",
-          "newValue": "When you sell this, get an Enchanted Small Friend from any hero."
-        }
-      ],
       "enchantments": {
         "added": [],
         "removed": [],
@@ -14118,16 +13661,6 @@ const data: PatchNotes = {
                 "index": 0,
                 "oldValue": "When you sell this, your leftmost Heal item gains +15 Heal.",
                 "newValue": "When you sell this, your leftmost Heal item gains +10 Heal."
-              }
-            ]
-          },
-          {
-            "type": "Obsidian",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you sell this, your leftmost Weapon gains +10 damage.",
-                "newValue": "When you sell this, your leftmost Weapon gains +10 Damage."
               }
             ]
           }
@@ -14294,11 +13827,6 @@ const data: PatchNotes = {
           "index": 1,
           "oldValue": "Deal (8/16/24/32) damage.",
           "newValue": "Deal (8/16/24/32) Damage"
-        },
-        {
-          "index": 2,
-          "oldValue": "If this is your only friend, your items have (+10%/+15%/+20%/+25%) Crit Chance.",
-          "newValue": "If this is your only Friend, your items have (+10%/+15%/+20%/+25%) Crit Chance."
         }
       ],
       "enchantments": {
@@ -14925,11 +14453,6 @@ const data: PatchNotes = {
           "newValue": null
         },
         {
-          "index": 1,
-          "oldValue": "Weapons to the right of this have (+25/+50/+100) damage.",
-          "newValue": "Weapons to the right of this have (+25/+50/+100) Damage."
-        },
-        {
           "index": 0,
           "oldValue": null,
           "newValue": "The cooldowns of Aquatic items to the left of this are reduced by (10%/15%/20%)."
@@ -14956,11 +14479,6 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": "When you use an adjacent item, slow 1 item for 3 second(s).",
-                "newValue": null
-              },
-              {
-                "index": 0,
-                "oldValue": null,
                 "newValue": "When you use an adjacent item, Slow an item for 1 second(s)."
               }
             ]
@@ -14986,22 +14504,7 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": "When you use an adjacent item, haste 1 item for 3 second(s).",
-                "newValue": null
-              },
-              {
-                "index": 0,
-                "oldValue": null,
                 "newValue": "When you use an adjacent item, Haste an item for 1 second(s)."
-              }
-            ]
-          },
-          {
-            "type": "Shielded",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you use an adjacent item, shield 20.",
-                "newValue": "When you use an adjacent item, Shield 20."
               }
             ]
           },
@@ -15016,32 +14519,12 @@ const data: PatchNotes = {
             ]
           },
           {
-            "type": "Toxic",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you use an adjacent item, poison 2.",
-                "newValue": "When you use an adjacent item, Poison 2."
-              }
-            ]
-          },
-          {
             "type": "Fiery",
             "tooltipChanges": [
               {
                 "index": 0,
                 "oldValue": "When you use an adjacent item, burn 3.",
                 "newValue": "When you use an adjacent item, Burn 2."
-              }
-            ]
-          },
-          {
-            "type": "Obsidian",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you use an Adjacent item, Deal 20 Damage.",
-                "newValue": "When you use an Adjacent item, deal 20 Damage."
               }
             ]
           }
@@ -15331,13 +14814,6 @@ const data: PatchNotes = {
         "currentSize": "Large",
         "type": "item"
       },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "You take (10%/20%) less damage.",
-          "newValue": "You take (10%/20%) less Damage."
-        }
-      ],
       "enchantments": {
         "added": [
           {
@@ -15354,16 +14830,6 @@ const data: PatchNotes = {
         "removed": [],
         "modified": [
           {
-            "type": "Heavy",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "The first time you fall below half health each fight, Slow all enemy items for 4 second(s).",
-                "newValue": "The first time you fall below half Health each fight, Slow all enemy items for 4 second(s)."
-              }
-            ]
-          },
-          {
             "type": "Icy",
             "tooltipChanges": [
               {
@@ -15375,16 +14841,6 @@ const data: PatchNotes = {
                 "index": 0,
                 "oldValue": null,
                 "newValue": "The first time you fall below half Health each fight, Freeze 3 enemy items for 4 second(s)."
-              }
-            ]
-          },
-          {
-            "type": "Turbo",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "The first time you fall below half health each fight, Haste your items for 4 second(s).",
-                "newValue": "The first time you fall below half Health each fight, Haste your items for 4 second(s)."
               }
             ]
           },
@@ -15415,26 +14871,6 @@ const data: PatchNotes = {
                 "index": 0,
                 "oldValue": null,
                 "newValue": "The first time you fall below half Health each fight, Heal equal to 30% of your Max Health."
-              }
-            ]
-          },
-          {
-            "type": "Toxic",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "The first time you fall below half health each fight, Poison 30.",
-                "newValue": "The first time you fall below half Health each fight, Poison 30."
-              }
-            ]
-          },
-          {
-            "type": "Fiery",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "The first time you fall below half health each fight, Burn 30.",
-                "newValue": "The first time you fall below half Health each fight, Burn 30."
               }
             ]
           },
@@ -15481,11 +14917,6 @@ const data: PatchNotes = {
           "index": 1,
           "oldValue": "Deal (15/20/25) damage for each Friend you have.",
           "newValue": "Deal (15/20/25) Damage for each Friend you have"
-        },
-        {
-          "index": 2,
-          "oldValue": "This item's cooldown is reduced by 1 second for each adjacent Friend.",
-          "newValue": "This item's Cooldown is reduced by 1 second for each adjacent Friend."
         }
       ],
       "enchantments": {
@@ -17037,16 +16468,6 @@ const data: PatchNotes = {
                 "newValue": "This item is immune to Freeze, Slow and Destroy."
               }
             ]
-          },
-          {
-            "type": "Obsidian",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you use the item to the left of this, Deal damage equal to this item's Shield.",
-                "newValue": "When you use the item to the left of this, deal Damage equal to this item's Shield."
-              }
-            ]
           }
         ]
       }
@@ -17225,11 +16646,6 @@ const data: PatchNotes = {
           "index": 1,
           "oldValue": "Deal (10/20/30/40) Damage.",
           "newValue": "Deal (10/20/30/40) Damage"
-        },
-        {
-          "index": 2,
-          "oldValue": "This deals double Crit damage.",
-          "newValue": "This deals double Crit Damage."
         }
       ],
       "enchantments": {
@@ -17353,16 +16769,6 @@ const data: PatchNotes = {
         {
           "index": 1,
           "oldValue": "Your weapons gain (+5/+10/+15/+20) damage for the fight.",
-          "newValue": null
-        },
-        {
-          "index": 2,
-          "oldValue": "When you slow, charge this 2 second(s).",
-          "newValue": "When you Slow, charge this 2 second(s)."
-        },
-        {
-          "index": 1,
-          "oldValue": null,
           "newValue": "Your Weapons gain (+5/+10/+15/+20) Damage for the fight"
         }
       ],
@@ -17469,16 +16875,6 @@ const data: PatchNotes = {
                 "newValue": "This item is immune to Freeze, Slow and Destroy."
               }
             ]
-          },
-          {
-            "type": "Obsidian",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "This has double damage bonus.",
-                "newValue": "This has double Damage bonus."
-              }
-            ]
           }
         ]
       }
@@ -17503,11 +16899,6 @@ const data: PatchNotes = {
           "index": 1,
           "oldValue": "Burn 6.",
           "newValue": "Burn 6"
-        },
-        {
-          "index": 2,
-          "oldValue": "When you use an adjacent friend, Haste this 2 second(s).",
-          "newValue": "When you use an adjacent Friend, Haste this 2 second(s)."
         }
       ],
       "enchantments": {
@@ -17826,11 +17217,6 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": "When you use an Item, Slow 1 item for 1 second(s).",
-                "newValue": null
-              },
-              {
-                "index": 0,
-                "oldValue": null,
                 "newValue": "When you use an item, Slow an item for 1 second(s)."
               }
             ]
@@ -17841,11 +17227,6 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": "When you use an Item, Freeze 1 item for 0.5 second(s).",
-                "newValue": null
-              },
-              {
-                "index": 0,
-                "oldValue": null,
                 "newValue": "When you use an item, Freeze an item for 0.5 second(s)."
               }
             ]
@@ -17856,42 +17237,7 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": "When you use an Item, Haste 1 item for 1 second(s).",
-                "newValue": null
-              },
-              {
-                "index": 0,
-                "oldValue": null,
                 "newValue": "When you use an item, Haste an item for 1 second(s)."
-              }
-            ]
-          },
-          {
-            "type": "Restorative",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you use an Item, Heal 20.",
-                "newValue": "When you use an item, Heal 20."
-              }
-            ]
-          },
-          {
-            "type": "Toxic",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you use an Item, Poison 2.",
-                "newValue": "When you use an item, Poison 2."
-              }
-            ]
-          },
-          {
-            "type": "Fiery",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you use an Item, Burn 2.",
-                "newValue": "When you use an item, Burn 2."
               }
             ]
           },
@@ -17907,16 +17253,6 @@ const data: PatchNotes = {
                 "index": 0,
                 "oldValue": null,
                 "newValue": "This has double value gain."
-              }
-            ]
-          },
-          {
-            "type": "Obsidian",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you use an Item, Deal 20 Damage.",
-                "newValue": "When you use an item, deal 20 Damage."
               }
             ]
           }
@@ -17938,16 +17274,6 @@ const data: PatchNotes = {
           "index": 1,
           "oldValue": "Shield (100/150).",
           "newValue": "Shield (100/150)"
-        },
-        {
-          "index": 2,
-          "oldValue": "All item cooldowns are increased by (1/2) second(s).",
-          "newValue": "All item Cooldowns are increased by (1/2) second(s)."
-        },
-        {
-          "index": 3,
-          "oldValue": "Your items with a cooldown of 8 seconds or greater have +1 Multicast.",
-          "newValue": "Your items with a Cooldown of 8 seconds or greater have +1 Multicast."
         }
       ],
       "enchantments": {
@@ -18196,16 +17522,6 @@ const data: PatchNotes = {
           "index": 1,
           "oldValue": "Deal (10/20/30/40) damage.",
           "newValue": "Deal (10/20/30/40) Damage"
-        },
-        {
-          "index": 2,
-          "oldValue": "When you use another Weapon, this gains (+5%/+10%/+15%/+20%) Crit chance for the fight.",
-          "newValue": "When you use another Weapon, this gains (+5%/+10%/+15%/+20%) Crit Chance for the fight."
-        },
-        {
-          "index": 3,
-          "oldValue": "This deals double Crit damage.",
-          "newValue": "This deals double Crit Damage."
         }
       ],
       "enchantments": {
@@ -18773,13 +18089,6 @@ const data: PatchNotes = {
         "currentSize": "Small",
         "type": "item"
       },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "When you use the weapon to the left of this, Poison (2/3/4/5).",
-          "newValue": "When you use the Weapon to the left of this, Poison (2/3/4/5)."
-        }
-      ],
       "enchantments": {
         "added": [
           {
@@ -18811,11 +18120,6 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": "When you use the weapon to the left of this, Slow 1 item for 1 second(s).",
-                "newValue": null
-              },
-              {
-                "index": 0,
-                "oldValue": null,
                 "newValue": "When you use the Weapon to the left of this, Slow an item for 1 second(s)."
               }
             ]
@@ -18841,11 +18145,6 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": "When you use the weapon to the left of this, Haste 1 item for 1 second(s).",
-                "newValue": null
-              },
-              {
-                "index": 0,
-                "oldValue": null,
                 "newValue": "When you use the Weapon to the left of this, Haste an item for 1 second(s)."
               }
             ]
@@ -18871,26 +18170,11 @@ const data: PatchNotes = {
             ]
           },
           {
-            "type": "Fiery",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you use the weapon to the left of this, Burn equal to this item's Poison.",
-                "newValue": "When you use the Weapon to the left of this, Burn equal to this item's Poison."
-              }
-            ]
-          },
-          {
             "type": "Obsidian",
             "tooltipChanges": [
               {
                 "index": 0,
                 "oldValue": "When you use the weapon to the left of this, Deal damage equal to 10 times this item's Poison.",
-                "newValue": null
-              },
-              {
-                "index": 0,
-                "oldValue": null,
                 "newValue": "When you use the Weapon to the left of this, deal Damage equal to 5 times this item's Poison."
               }
             ]
@@ -19061,11 +18345,6 @@ const data: PatchNotes = {
           "index": 2,
           "oldValue": "Slow 1 item for (1/2/3) second(s).",
           "newValue": null
-        },
-        {
-          "index": 3,
-          "oldValue": "When you slow, this gains (10/20/30) damage for the fight.",
-          "newValue": "When you Slow, this gains (10/20/30) Damage for the fight."
         },
         {
           "index": 2,
@@ -19324,16 +18603,6 @@ const data: PatchNotes = {
           "index": 1,
           "oldValue": "Use all your other items.",
           "newValue": "Use all your other items"
-        },
-        {
-          "index": 2,
-          "oldValue": "When you use an item, deal 100 damage.",
-          "newValue": "When you use an item, deal 100 Damage."
-        },
-        {
-          "index": 3,
-          "oldValue": "The first time you fall below half health each fight, use this.",
-          "newValue": "The first time you fall below half Health each fight, use this."
         }
       ],
       "enchantments": {
@@ -19367,16 +18636,6 @@ const data: PatchNotes = {
                 "index": 0,
                 "oldValue": "Haste 3 items for 5 second(s).",
                 "newValue": "Haste 3 items for 4 second(s)"
-              }
-            ]
-          },
-          {
-            "type": "Shielded",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you use an item, Shield equal to this item's damage.",
-                "newValue": "When you use an item, Shield equal to this item's Damage."
               }
             ]
           },
@@ -19691,11 +18950,6 @@ const data: PatchNotes = {
           "index": 2,
           "oldValue": "Your Poison items gain (+2/+4/+6) Poison for the fight.",
           "newValue": "Your Poison items gain (+2/+4/+6) Poison for the fight"
-        },
-        {
-          "index": 3,
-          "oldValue": "When this is transformed, enchant it with Toxic if able.",
-          "newValue": "When this is transformed, Enchant it with Toxic if able."
         }
       ],
       "enchantments": {
@@ -19826,11 +19080,6 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": "When you use a Friend, slow 1 item for 3 second(s).",
-                "newValue": null
-              },
-              {
-                "index": 0,
-                "oldValue": null,
                 "newValue": "When you use a Friend, Slow an item for 1 second(s)."
               }
             ]
@@ -19866,16 +19115,6 @@ const data: PatchNotes = {
             ]
           },
           {
-            "type": "Shielded",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you use a Friend, shield 30.",
-                "newValue": "When you use a Friend, Shield 30."
-              }
-            ]
-          },
-          {
             "type": "Restorative",
             "tooltipChanges": [
               {
@@ -19886,42 +19125,12 @@ const data: PatchNotes = {
             ]
           },
           {
-            "type": "Toxic",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you use a Friend, poison 3.",
-                "newValue": "When you use a Friend, Poison 3."
-              }
-            ]
-          },
-          {
-            "type": "Fiery",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you use a Friend, burn 3.",
-                "newValue": "When you use a Friend, Burn 3."
-              }
-            ]
-          },
-          {
             "type": "Deadly",
             "tooltipChanges": [
               {
                 "index": 0,
                 "oldValue": "Your Friends have +25% Crit Chance.",
                 "newValue": "Your Friends have +50% Crit Chance."
-              }
-            ]
-          },
-          {
-            "type": "Obsidian",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you use a Friend, Deal 30 Damage.",
-                "newValue": "When you use a Friend, deal 30 Damage."
               }
             ]
           }
@@ -20378,33 +19587,6 @@ const data: PatchNotes = {
         ]
       }
     },
-    "2aab9e1b-8c8d-49d0-be45-5884731ebb08": {
-      "metadata": {
-        "id": "2aab9e1b-8c8d-49d0-be45-5884731ebb08",
-        "name": "Truffles",
-        "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze",
-        "currentHero": "Common",
-        "currentSize": "Small",
-        "type": "item"
-      },
-      "enchantments": {
-        "added": [],
-        "removed": [],
-        "modified": [
-          {
-            "type": "Obsidian",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you sell this, your leftmost Weapon item gains +20 damage.",
-                "newValue": "When you sell this, your leftmost Weapon item gains +20 Damage."
-              }
-            ]
-          }
-        ]
-      }
-    },
     "eb8e7853-6827-4577-b6d8-648d82d19864": {
       "metadata": {
         "id": "eb8e7853-6827-4577-b6d8-648d82d19864",
@@ -20592,16 +19774,6 @@ const data: PatchNotes = {
         {
           "index": 1,
           "oldValue": "Your weapons gain (1/2/3/4) damage for the fight.",
-          "newValue": null
-        },
-        {
-          "index": 2,
-          "oldValue": "When you sell this, your weapons gain (3/6/9/12) damage.",
-          "newValue": "When you sell this, your Weapons gain (3/6/9/12) Damage."
-        },
-        {
-          "index": 1,
-          "oldValue": null,
           "newValue": "Your Weapons gain (1/2/3/4) Damage for the fight"
         }
       ],
@@ -20706,16 +19878,6 @@ const data: PatchNotes = {
                 "index": 0,
                 "oldValue": null,
                 "newValue": "This item is immune to Freeze, Slow and Destroy."
-              }
-            ]
-          },
-          {
-            "type": "Obsidian",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "This has double damage bonus.",
-                "newValue": "This has double Damage bonus."
               }
             ]
           }
@@ -21007,11 +20169,6 @@ const data: PatchNotes = {
         {
           "index": 1,
           "oldValue": "Adjacent weapons gain (+3/+6/+9/+12) damage for the fight.",
-          "newValue": null
-        },
-        {
-          "index": 1,
-          "oldValue": null,
           "newValue": "Adjacent Weapons gain (+3/+6/+9/+12) Damage for the fight"
         }
       ],
@@ -22186,16 +21343,6 @@ const data: PatchNotes = {
             ]
           },
           {
-            "type": "Shiny",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "This has double cooldown reduction.",
-                "newValue": "This has double Cooldown reduction."
-              }
-            ]
-          },
-          {
             "type": "Deadly",
             "tooltipChanges": [
               {
@@ -22395,11 +21542,6 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": "When you use a Friend, slow 1 item for 2 second(s).",
-                "newValue": null
-              },
-              {
-                "index": 0,
-                "oldValue": null,
                 "newValue": "When you use a Friend, Slow an item for 1 second(s)."
               }
             ]
@@ -22435,52 +21577,12 @@ const data: PatchNotes = {
             ]
           },
           {
-            "type": "Shielded",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you use a Friend, shield 20.",
-                "newValue": "When you use a Friend, Shield 20."
-              }
-            ]
-          },
-          {
             "type": "Restorative",
             "tooltipChanges": [
               {
                 "index": 0,
                 "oldValue": "When you use a Friend, heal 30.",
                 "newValue": "When you use a Friend, Heal 20."
-              }
-            ]
-          },
-          {
-            "type": "Toxic",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you use a Friend, poison 2.",
-                "newValue": "When you use a Friend, Poison 2."
-              }
-            ]
-          },
-          {
-            "type": "Fiery",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you use a Friend, burn 2.",
-                "newValue": "When you use a Friend, Burn 2."
-              }
-            ]
-          },
-          {
-            "type": "Obsidian",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you use a Friend, Deal 20 Damage.",
-                "newValue": "When you use a Friend, deal 20 Damage."
               }
             ]
           }
@@ -22534,11 +21636,6 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": "When you use a weapon, slow 1 item for 3 second(s).",
-                "newValue": null
-              },
-              {
-                "index": 0,
-                "oldValue": null,
                 "newValue": "When you use a Weapon, Slow an item for 1 second(s)."
               }
             ]
@@ -22574,32 +21671,12 @@ const data: PatchNotes = {
             ]
           },
           {
-            "type": "Shielded",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you use a weapon, shield 30.",
-                "newValue": "When you use a Weapon, Shield 30."
-              }
-            ]
-          },
-          {
             "type": "Restorative",
             "tooltipChanges": [
               {
                 "index": 0,
                 "oldValue": "When you use a weapon, heal 45.",
                 "newValue": "When you use a Weapon, Heal 30."
-              }
-            ]
-          },
-          {
-            "type": "Toxic",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you use a weapon, poison 3.",
-                "newValue": "When you use a Weapon, Poison 3."
               }
             ]
           },
@@ -22617,11 +21694,6 @@ const data: PatchNotes = {
             "type": "Shiny",
             "tooltipChanges": [
               {
-                "index": 0,
-                "oldValue": "This has double damage bonus.",
-                "newValue": "This has double Damage bonus."
-              },
-              {
                 "index": 1,
                 "oldValue": "This has double Haste duration.",
                 "newValue": null
@@ -22632,37 +21704,9 @@ const data: PatchNotes = {
                 "newValue": "This Hastes for twice as long."
               }
             ]
-          },
-          {
-            "type": "Obsidian",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you use a Weapon, Deal 30 Damage.",
-                "newValue": "When you use a Weapon, deal 30 Damage."
-              }
-            ]
           }
         ]
       }
-    },
-    "fb41fdef-d83b-4674-8cb3-9a224aa8f84a": {
-      "metadata": {
-        "id": "fb41fdef-d83b-4674-8cb3-9a224aa8f84a",
-        "name": "Pelt",
-        "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze",
-        "currentHero": "Common",
-        "currentSize": "Small",
-        "type": "item"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "Sells for gold",
-          "newValue": "Sells for Gold"
-        }
-      ]
     },
     "c926fac8-f9ba-4430-a01a-a71a32c501c7": {
       "metadata": {
@@ -23081,11 +22125,6 @@ const data: PatchNotes = {
           "index": 2,
           "oldValue": "Deal (6/12/24/48) damage.",
           "newValue": "Deal (6/12/24/48) Damage"
-        },
-        {
-          "index": 3,
-          "oldValue": "This deals double Crit damage.",
-          "newValue": "This deals double Crit Damage."
         }
       ],
       "enchantments": {
@@ -23297,16 +22336,6 @@ const data: PatchNotes = {
             ]
           },
           {
-            "type": "Deadly",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "This deals double Crit damage.",
-                "newValue": "This deals double Crit Damage."
-              }
-            ]
-          },
-          {
             "type": "Radiant",
             "tooltipChanges": [
               {
@@ -23365,16 +22394,6 @@ const data: PatchNotes = {
                 "newValue": "When you sell this, your leftmost Heal item gains +20 Heal."
               }
             ]
-          },
-          {
-            "type": "Obsidian",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you sell this, your leftmost Weapon item gains +20 damage.",
-                "newValue": "When you sell this, your leftmost Weapon item gains +20 Damage."
-              }
-            ]
           }
         ]
       }
@@ -23394,11 +22413,6 @@ const data: PatchNotes = {
           "index": 1,
           "oldValue": "Burn 5 for each Burn item you have.",
           "newValue": "Burn 5 for each Burn item you have"
-        },
-        {
-          "index": 2,
-          "oldValue": "This item's cooldown is reduced by 1 second for each other Relic you have.",
-          "newValue": "This item's Cooldown is reduced by 1 second for each other Relic you have."
         }
       ],
       "enchantments": {
@@ -23659,43 +22673,6 @@ const data: PatchNotes = {
           "newValue": "This permanently loses 1 Max Ammo and destroy this if it has 0 Max Ammo"
         }
       ]
-    },
-    "234ae6aa-b94b-456d-a2fb-f0cbcaa9c655": {
-      "metadata": {
-        "id": "234ae6aa-b94b-456d-a2fb-f0cbcaa9c655",
-        "name": "Loupe",
-        "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold",
-        "currentHero": "Pygmalien",
-        "currentSize": "Small",
-        "type": "item"
-      },
-      "enchantments": {
-        "added": [],
-        "removed": [],
-        "modified": [
-          {
-            "type": "Golden",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "Your small items have +1 value.",
-                "newValue": "Your Small items have +1 value."
-              }
-            ]
-          },
-          {
-            "type": "Shiny",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "Your small items have +1 value.",
-                "newValue": "Your Small items have +1 value."
-              }
-            ]
-          }
-        ]
-      }
     },
     "f0608f5b-5c6a-4c71-8cc4-f8abbdd951c9": {
       "metadata": {
@@ -24076,24 +23053,6 @@ const data: PatchNotes = {
           }
         ]
       }
-    },
-    "f98213d6-2c40-45a7-ac35-f5eca615d9cd": {
-      "metadata": {
-        "id": "f98213d6-2c40-45a7-ac35-f5eca615d9cd",
-        "name": "Agility Boots",
-        "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze",
-        "currentHero": "Common",
-        "currentSize": "Small",
-        "type": "item"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "Adjacent items have (+3%/+6%/+9%/+12%) Crit chance.",
-          "newValue": "Adjacent items have (+3%/+6%/+9%/+12%) Crit Chance."
-        }
-      ]
     },
     "53e336a7-709a-46a6-84ed-bb58b9e998bb": {
       "metadata": {
@@ -25058,11 +24017,6 @@ const data: PatchNotes = {
           "index": 1,
           "oldValue": "Deal (5/15/30/50) damage.",
           "newValue": "Deal (5/15/30/50) Damage"
-        },
-        {
-          "index": 2,
-          "oldValue": "When you sell this, your leftmost weapon gains (+5/+15/+30/+50) damage.",
-          "newValue": "When you sell this, your leftmost Weapon gains (+5/+15/+30/+50) Damage."
         }
       ],
       "enchantments": {
@@ -25195,16 +24149,6 @@ const data: PatchNotes = {
                 "newValue": "When you sell this, your leftmost Heal item gains +10 Heal."
               }
             ]
-          },
-          {
-            "type": "Obsidian",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you sell this, your leftmost Weapon item gains +10 damage.",
-                "newValue": "When you sell this, your leftmost Weapon item gains +10 Damage."
-              }
-            ]
           }
         ]
       }
@@ -25247,11 +24191,6 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": "When you use an adjacent item, slow 1 item for 1 second(s).",
-                "newValue": null
-              },
-              {
-                "index": 0,
-                "oldValue": null,
                 "newValue": "When you use an adjacent item, Slow an item for 1 second(s)."
               }
             ]
@@ -25268,16 +24207,6 @@ const data: PatchNotes = {
                 "index": 0,
                 "oldValue": null,
                 "newValue": "When you use an adjacent item, Freeze an item for 0.5 second(s)."
-              }
-            ]
-          },
-          {
-            "type": "Turbo",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you use an adjacent item, haste it for 1 second(s).",
-                "newValue": "When you use an adjacent item, Haste it for 1 second(s)."
               }
             ]
           },
@@ -25519,11 +24448,6 @@ const data: PatchNotes = {
           "index": 1,
           "oldValue": "Deal (5/10/20/40) damage.",
           "newValue": "Deal (5/10/20/40) Damage"
-        },
-        {
-          "index": 2,
-          "oldValue": "When you sell this, your leftmost weapon gains (+4/+6/+8/+10) Damage.",
-          "newValue": "When you sell this, your leftmost Weapon gains (+4/+6/+8/+10) Damage."
         }
       ],
       "enchantments": {
@@ -25648,11 +24572,6 @@ const data: PatchNotes = {
           "index": 1,
           "oldValue": "Poison 5 for each Poison item you have.",
           "newValue": "Poison 5 for each Poison item you have"
-        },
-        {
-          "index": 2,
-          "oldValue": "This item's cooldown is reduced by 1 second for each other Relic you have.",
-          "newValue": "This item's Cooldown is reduced by 1 second for each other Relic you have."
         }
       ],
       "enchantments": {
@@ -25782,11 +24701,6 @@ const data: PatchNotes = {
           "index": 2,
           "oldValue": "Permanently decrease this item's damage by 1.",
           "newValue": "Permanently decrease this item's Damage by 1"
-        },
-        {
-          "index": 3,
-          "oldValue": "When you Level Up, this gains (10/20/30/40) damage.",
-          "newValue": "When you Level Up, this gains (10/20/30/40) Damage."
         }
       ],
       "enchantments": {
@@ -26035,11 +24949,6 @@ const data: PatchNotes = {
           "index": 1,
           "oldValue": "Deal (15/20/25) damage for each Friend you have.",
           "newValue": "Deal (15/20/25) Damage for each Friend you have"
-        },
-        {
-          "index": 2,
-          "oldValue": "This item's cooldown is reduced by 1 second for each adjacent Friend.",
-          "newValue": "This item's Cooldown is reduced by 1 second for each adjacent Friend."
         }
       ],
       "enchantments": {
@@ -26318,11 +25227,6 @@ const data: PatchNotes = {
         {
           "index": 2,
           "oldValue": "Transform into 2 small potions for the fight.",
-          "newValue": null
-        },
-        {
-          "index": 2,
-          "oldValue": null,
           "newValue": "Transform into 2 Small Potions for the fight"
         }
       ]
@@ -26488,11 +25392,6 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": "When you use an adjacent item, slow 1 item for 1 second(s).",
-                "newValue": null
-              },
-              {
-                "index": 0,
-                "oldValue": null,
                 "newValue": "When you use an adjacent item, Slow an item for 1 second(s)."
               }
             ]
@@ -26509,16 +25408,6 @@ const data: PatchNotes = {
                 "index": 0,
                 "oldValue": null,
                 "newValue": "When you use an adjacent item, Freeze an item for 0.5 second(s)."
-              }
-            ]
-          },
-          {
-            "type": "Turbo",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you use an adjacent item, haste it for 1 second(s).",
-                "newValue": "When you use an adjacent item, Haste it for 1 second(s)."
               }
             ]
           },
@@ -27121,11 +26010,6 @@ const data: PatchNotes = {
           "index": 1,
           "oldValue": "Poison (2/3/4/5).",
           "newValue": "Poison (2/3/4/5)"
-        },
-        {
-          "index": 2,
-          "oldValue": "When this is transformed, enchant it with Toxic if able.",
-          "newValue": "When this is transformed, Enchant it with Toxic if able."
         }
       ],
       "enchantments": {
@@ -27399,11 +26283,6 @@ const data: PatchNotes = {
           "index": 2,
           "oldValue": "Deal (24/32) damage.",
           "newValue": "Deal (24/32) Damage"
-        },
-        {
-          "index": 3,
-          "oldValue": "When you use an Ammo item, deal (24/32) damage.",
-          "newValue": "When you use an Ammo item, deal (24/32) Damage."
         }
       ],
       "enchantments": {
@@ -27646,16 +26525,6 @@ const data: PatchNotes = {
                 "newValue": "When you sell this, your leftmost Heal item gains +10 Heal."
               }
             ]
-          },
-          {
-            "type": "Obsidian",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you sell this, your leftmost Weapon item gains +10 damage.",
-                "newValue": "When you sell this, your leftmost Weapon item gains +10 Damage."
-              }
-            ]
           }
         ]
       }
@@ -27779,16 +26648,6 @@ const data: PatchNotes = {
         ],
         "removed": [],
         "modified": [
-          {
-            "type": "Golden",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "Adjacent properties have double value.",
-                "newValue": "Adjacent Properties have double value."
-              }
-            ]
-          },
           {
             "type": "Radiant",
             "tooltipChanges": [
@@ -28345,11 +27204,6 @@ const data: PatchNotes = {
           "index": 2,
           "oldValue": "Deal 20 Damage.",
           "newValue": "Deal 20 Damage"
-        },
-        {
-          "index": 3,
-          "oldValue": "When you poison, this gains (10/15/20/25) damage for the fight.",
-          "newValue": "When you Poison, this gains (10/15/20/25) Damage for the fight."
         }
       ],
       "enchantments": {
@@ -28748,17 +27602,12 @@ const data: PatchNotes = {
         {
           "index": 0,
           "oldValue": "ALL Weapon cooldowns are increased by (+1/+2) second(s).",
-          "newValue": null
+          "newValue": "All Weapon Cooldowns are increased by (1/1.5) second(s)."
         },
         {
           "index": 1,
           "oldValue": "Your non-weapon items' cooldowns are decreased by 1 second(s).",
           "newValue": null
-        },
-        {
-          "index": 0,
-          "oldValue": null,
-          "newValue": "All Weapon Cooldowns are increased by (1/1.5) second(s)."
         },
         {
           "index": 1,
@@ -28853,16 +27702,6 @@ const data: PatchNotes = {
                 "index": 0,
                 "oldValue": "When you use a non-Weapon item, Burn 2.",
                 "newValue": "When you use a non-Weapon item, Burn 3."
-              }
-            ]
-          },
-          {
-            "type": "Shiny",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "This has +1 second cooldown increase and decrease.",
-                "newValue": "This has +1 second Cooldown increase and decrease."
               }
             ]
           },
@@ -29210,16 +28049,6 @@ const data: PatchNotes = {
         "removed": [],
         "modified": [
           {
-            "type": "Heavy",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "At the start of each fight, slow 2 item for 4 second(s).",
-                "newValue": "At the start of each fight, Slow 2 item for 4 second(s)."
-              }
-            ]
-          },
-          {
             "type": "Icy",
             "tooltipChanges": [
               {
@@ -29231,36 +28060,6 @@ const data: PatchNotes = {
                 "index": 0,
                 "oldValue": null,
                 "newValue": "This Freezes for twice as long."
-              }
-            ]
-          },
-          {
-            "type": "Turbo",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "At the start of each fight, haste 2 items for 4 second(s).",
-                "newValue": "At the start of each fight, Haste 2 items for 4 second(s)."
-              }
-            ]
-          },
-          {
-            "type": "Shielded",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "At the start of each fight, shield 60.",
-                "newValue": "At the start of each fight, Shield 60."
-              }
-            ]
-          },
-          {
-            "type": "Toxic",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "At the start of each fight, poison 6",
-                "newValue": "At the start of each fight, Poison 6"
               }
             ]
           },
@@ -29288,16 +28087,6 @@ const data: PatchNotes = {
                 "newValue": "This Freezes for twice as long."
               }
             ]
-          },
-          {
-            "type": "Obsidian",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "At the start of each fight, deal 60 damage.",
-                "newValue": "At the start of each fight, deal 60 Damage."
-              }
-            ]
           }
         ]
       }
@@ -29317,11 +28106,6 @@ const data: PatchNotes = {
           "index": 1,
           "oldValue": "Deal (15/20/25) damage for each Friend you have.",
           "newValue": "Deal (15/20/25) Damage for each Friend you have"
-        },
-        {
-          "index": 2,
-          "oldValue": "This item's cooldown is reduced by 1 second for each adjacent Friend.",
-          "newValue": "This item's Cooldown is reduced by 1 second for each adjacent Friend."
         }
       ],
       "enchantments": {
@@ -29630,16 +28414,6 @@ const data: PatchNotes = {
                 "newValue": "At the start of each fight, Haste adjacent items for 2 second(s)."
               }
             ]
-          },
-          {
-            "type": "Obsidian",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "Adjacent Weapons have +20 damage.",
-                "newValue": "Adjacent Weapons have +20 Damage."
-              }
-            ]
           }
         ]
       }
@@ -29782,11 +28556,6 @@ const data: PatchNotes = {
           "index": 1,
           "oldValue": "Gain (1/3/5/7) Regen for the fight.",
           "newValue": "Gain (1/3/5/7) Regen for the fight"
-        },
-        {
-          "index": 2,
-          "oldValue": "When this is transformed, enchant it with Restorative if able.",
-          "newValue": "When this is transformed, Enchant it with Restorative if able."
         }
       ],
       "enchantments": {
@@ -30318,11 +29087,6 @@ const data: PatchNotes = {
           "index": 1,
           "oldValue": "Deal 100 damage.",
           "newValue": "Deal 100 Damage"
-        },
-        {
-          "index": 2,
-          "oldValue": "This deals (3/5/10) times more damage if it is your only weapon.",
-          "newValue": "This deals (3/5/10) times more Damage if it is your only Weapon."
         }
       ],
       "enchantments": {
@@ -30762,11 +29526,6 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": "Your weapons and tools gain 25% Crit Chance for the fight.",
-                "newValue": null
-              },
-              {
-                "index": 0,
-                "oldValue": null,
                 "newValue": "Your Weapons and Tools gain 25% Crit Chance for the fight"
               }
             ]
@@ -30948,16 +29707,6 @@ const data: PatchNotes = {
           "index": 1,
           "oldValue": "Deal (75/100) damage.",
           "newValue": "Deal (75/100) Damage"
-        },
-        {
-          "index": 2,
-          "oldValue": "When you poison, freeze, or burn, charge this (1/2) second(s) and this gains (+75/+100) Damage for the fight.",
-          "newValue": null
-        },
-        {
-          "index": 2,
-          "oldValue": null,
-          "newValue": "When you Poison, Freeze, or Burn, charge this (1/2) second(s) and this gains (+75/+100) Damage for the fight."
         }
       ],
       "enchantments": {
@@ -31469,11 +30218,6 @@ const data: PatchNotes = {
           "index": 1,
           "oldValue": "Burn (2/3/4/5).",
           "newValue": "Burn (2/3/4/5)"
-        },
-        {
-          "index": 2,
-          "oldValue": "When this is transformed, enchant it with Fiery if able.",
-          "newValue": "When this is transformed, Enchant it with Fiery if able."
         }
       ],
       "enchantments": {
@@ -31602,11 +30346,6 @@ const data: PatchNotes = {
         {
           "index": 2,
           "oldValue": "This and weapons to the right of this gain (+20/+30/+60) damage for the fight.",
-          "newValue": null
-        },
-        {
-          "index": 2,
-          "oldValue": null,
           "newValue": "This and Weapons to the right of this gain (+20/+30/+60) Damage for the fight"
         }
       ],
@@ -31763,16 +30502,6 @@ const data: PatchNotes = {
                 "newValue": "When you sell this, your leftmost Heal item gains +10 Heal."
               }
             ]
-          },
-          {
-            "type": "Obsidian",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you sell this, your leftmost Weapon item gains +10 damage.",
-                "newValue": "When you sell this, your leftmost Weapon item gains +10 Damage."
-              }
-            ]
           }
         ]
       }
@@ -31793,18 +30522,6 @@ const data: PatchNotes = {
         ],
         "removed": []
       },
-      "tooltips": [
-        {
-          "index": 2,
-          "oldValue": "Your weapons gain damage equal to your weakest weapon's damage for the fight.",
-          "newValue": null
-        },
-        {
-          "index": 2,
-          "oldValue": null,
-          "newValue": "Your Weapons gain Damage equal to your weakest Weapon's Damage for the fight."
-        }
-      ],
       "enchantments": {
         "added": [],
         "removed": [],
@@ -31918,16 +30635,6 @@ const data: PatchNotes = {
                 "newValue": "This item is immune to Freeze, Slow and Destroy."
               }
             ]
-          },
-          {
-            "type": "Obsidian",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "This has double damage bonus.",
-                "newValue": "This has double Damage bonus."
-              }
-            ]
           }
         ]
       }
@@ -32030,16 +30737,6 @@ const data: PatchNotes = {
                 "index": 0,
                 "oldValue": null,
                 "newValue": "This item is immune to Freeze, Slow and Destroy."
-              }
-            ]
-          },
-          {
-            "type": "Obsidian",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "This has double damage bonus.",
-                "newValue": "This has double Damage bonus."
               }
             ]
           }
@@ -32320,16 +31017,6 @@ const data: PatchNotes = {
         "added": [],
         "removed": [],
         "modified": [
-          {
-            "type": "Golden",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "This has double gold gain.",
-                "newValue": "This has double Gold gain."
-              }
-            ]
-          },
           {
             "type": "Heavy",
             "tooltipChanges": [
@@ -32626,16 +31313,6 @@ const data: PatchNotes = {
                 "newValue": "When you use an item with value over 10, Haste an item for 1 second(s)."
               }
             ]
-          },
-          {
-            "type": "Obsidian",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you use an item with value over 10, Deal 20 Damage.",
-                "newValue": "When you use an item with value over 10, deal 20 Damage."
-              }
-            ]
           }
         ]
       }
@@ -32827,16 +31504,6 @@ const data: PatchNotes = {
                 "index": 0,
                 "oldValue": "When you sell this, your leftmost Heal item gains +15 Heal.",
                 "newValue": "When you sell this, your leftmost Heal item gains +10 Heal."
-              }
-            ]
-          },
-          {
-            "type": "Obsidian",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you sell this, your leftmost Weapon item gains +10 damage.",
-                "newValue": "When you sell this, your leftmost Weapon item gains +10 Damage."
               }
             ]
           }
@@ -33264,24 +31931,6 @@ const data: PatchNotes = {
         ]
       }
     },
-    "f4827638-60ff-4101-a52f-037c04791ee5": {
-      "metadata": {
-        "id": "f4827638-60ff-4101-a52f-037c04791ee5",
-        "name": "Schematics",
-        "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver",
-        "currentHero": "Dooley",
-        "currentSize": "Medium",
-        "type": "item"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "When you Level Up, get a small Tech item.",
-          "newValue": "When you Level Up, get a Small Tech item."
-        }
-      ]
-    },
     "7d3b7b54-382d-4991-997d-2f78381d7690": {
       "metadata": {
         "id": "7d3b7b54-382d-4991-997d-2f78381d7690",
@@ -33503,32 +32152,12 @@ const data: PatchNotes = {
             ]
           },
           {
-            "type": "Restorative",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you use an aquatic item, Heal 30.",
-                "newValue": "When you use an Aquatic item, Heal 30."
-              }
-            ]
-          },
-          {
             "type": "Toxic",
             "tooltipChanges": [
               {
                 "index": 0,
                 "oldValue": "When you use an aquatic item, Poison 2.",
                 "newValue": "When you use an Aquatic item, Poison 3."
-              }
-            ]
-          },
-          {
-            "type": "Fiery",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you use an aquatic item, Burn 3.",
-                "newValue": "When you use an Aquatic item, Burn 3."
               }
             ]
           },
@@ -34125,16 +32754,6 @@ const data: PatchNotes = {
                 "newValue": "Adjacent items have +30% Crit Chance."
               }
             ]
-          },
-          {
-            "type": "Obsidian",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you use an adjacent item, Deal 20 Damage.",
-                "newValue": "When you use an adjacent item, deal 20 Damage."
-              }
-            ]
           }
         ]
       }
@@ -34480,11 +33099,6 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": "When you use an adjacent item, slow 1 item for 1 second(s).",
-                "newValue": null
-              },
-              {
-                "index": 0,
-                "oldValue": null,
                 "newValue": "When you use an adjacent item, Slow an item for 1 second(s)."
               }
             ]
@@ -34952,16 +33566,6 @@ const data: PatchNotes = {
                 "index": 0,
                 "oldValue": null,
                 "newValue": "This item is immune to Freeze, Slow and Destroy."
-              }
-            ]
-          },
-          {
-            "type": "Obsidian",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you Slow, Deal 30 Damage.",
-                "newValue": "When you Slow, deal 30 Damage."
               }
             ]
           }
@@ -36481,16 +35085,6 @@ const data: PatchNotes = {
         {
           "index": 0,
           "oldValue": "Your weapons have (+20%/+40%/+60%/+80%) Crit Chance.",
-          "newValue": null
-        },
-        {
-          "index": 1,
-          "oldValue": "If you have exactly one weapon, that Weapon has lifesteal.",
-          "newValue": "If you have exactly one Weapon, that Weapon has lifesteal."
-        },
-        {
-          "index": 0,
-          "oldValue": null,
           "newValue": "Your Weapons have (+40%/+60%/+80%) Crit Chance."
         }
       ],
@@ -36540,56 +35134,6 @@ const data: PatchNotes = {
             ]
           },
           {
-            "type": "Shielded",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you crit with a weapon, shield 60.",
-                "newValue": "When you crit with a Weapon, Shield 60."
-              }
-            ]
-          },
-          {
-            "type": "Toxic",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you crit with a weapon, poison 6",
-                "newValue": "When you crit with a Weapon, Poison 6"
-              }
-            ]
-          },
-          {
-            "type": "Fiery",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you crit with a weapon, burn 6",
-                "newValue": "When you crit with a Weapon, Burn 6"
-              }
-            ]
-          },
-          {
-            "type": "Deadly",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "Your Weapons have double Crit damage.",
-                "newValue": "Your Weapons have double Crit Damage."
-              }
-            ]
-          },
-          {
-            "type": "Shiny",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "If you have two or fewer weapons, they have Lifesteal.",
-                "newValue": "If you have two or fewer Weapons, they have Lifesteal."
-              }
-            ]
-          },
-          {
             "type": "Obsidian",
             "tooltipChanges": [
               {
@@ -36612,18 +35156,6 @@ const data: PatchNotes = {
         "currentSize": "Small",
         "type": "item"
       },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "The weapon to the right of this has (+15%/+20%/+25%) Crit Chance.",
-          "newValue": "The Weapon to the right of this has (+15%/+20%/+25%) Crit Chance."
-        },
-        {
-          "index": 1,
-          "oldValue": "If you have exactly one weapon, when you Crit with it charge a non-weapon item 1 second(s).",
-          "newValue": "If you have exactly one Weapon, when you Crit with it charge a non-Weapon item 1 second(s)."
-        }
-      ],
       "enchantments": {
         "added": [
           {
@@ -36645,11 +35177,6 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": "When you use the weapon to the right of this, Slow 1 item for 1 second(s).",
-                "newValue": null
-              },
-              {
-                "index": 0,
-                "oldValue": null,
                 "newValue": "When you use the Weapon to the right of this, Slow an item for 1 second(s)."
               }
             ]
@@ -36670,62 +35197,12 @@ const data: PatchNotes = {
             ]
           },
           {
-            "type": "Turbo",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you use the weapon to the right of this, haste it for 1 second(s).",
-                "newValue": "When you use the Weapon to the right of this, Haste it for 1 second(s)."
-              }
-            ]
-          },
-          {
-            "type": "Shielded",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you use the weapon to the right of this, shield 10.",
-                "newValue": "When you use the Weapon to the right of this, Shield 10."
-              }
-            ]
-          },
-          {
             "type": "Restorative",
             "tooltipChanges": [
               {
                 "index": 0,
                 "oldValue": "When you use the weapon to the right of this, heal 15.",
                 "newValue": "When you use the Weapon to the right of this, Heal 10."
-              }
-            ]
-          },
-          {
-            "type": "Toxic",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you use the weapon to the right of this, poison 1.",
-                "newValue": "When you use the Weapon to the right of this, Poison 1."
-              }
-            ]
-          },
-          {
-            "type": "Fiery",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you use the weapon to the right of this, burn 1.",
-                "newValue": "When you use the Weapon to the right of this, Burn 1."
-              }
-            ]
-          },
-          {
-            "type": "Obsidian",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "The weapon to the right of this has + Damage equal to its Crit Chance.",
-                "newValue": "The Weapon to the right of this has + Damage equal to its Crit Chance."
               }
             ]
           }
@@ -36899,11 +35376,6 @@ const data: PatchNotes = {
           "index": 1,
           "oldValue": "Shield (75/100).",
           "newValue": "Shield (75/100)"
-        },
-        {
-          "index": 2,
-          "oldValue": "Non-tech item cooldowns are increased by (1/2) second(s).",
-          "newValue": "Non-Tech item Cooldowns are increased by (1/2) second(s)."
         }
       ],
       "enchantments": {
@@ -37105,16 +35577,6 @@ const data: PatchNotes = {
                 "index": 0,
                 "oldValue": null,
                 "newValue": "Adjacent items have +15% Crit Chance."
-              }
-            ]
-          },
-          {
-            "type": "Obsidian",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you use an adjacent item, Deal 10 Damage.",
-                "newValue": "When you use an adjacent item, deal 10 Damage."
               }
             ]
           }
@@ -37417,16 +35879,6 @@ const data: PatchNotes = {
                 "index": 0,
                 "oldValue": null,
                 "newValue": "This item is immune to Freeze, Slow and Destroy."
-              }
-            ]
-          },
-          {
-            "type": "Obsidian",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "This has double damage bonus.",
-                "newValue": "This has double Damage bonus."
               }
             ]
           }
@@ -37736,11 +36188,6 @@ const data: PatchNotes = {
           "index": 1,
           "oldValue": "Burn 10.",
           "newValue": "Burn 10"
-        },
-        {
-          "index": 3,
-          "oldValue": "When you use adjacent relic, charge this 1 second.",
-          "newValue": "When you use adjacent Relic, charge this 1 second."
         }
       ],
       "enchantments": {
@@ -38469,16 +36916,6 @@ const data: PatchNotes = {
             ]
           },
           {
-            "type": "Shiny",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "This has double cooldown reduction.",
-                "newValue": "This has double Cooldown reduction."
-              }
-            ]
-          },
-          {
             "type": "Deadly",
             "tooltipChanges": [
               {
@@ -38983,16 +37420,6 @@ const data: PatchNotes = {
                 "newValue": "This Slows for twice as long."
               }
             ]
-          },
-          {
-            "type": "Obsidian",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you Crit with the item to the right of this, Deal 20 Damage.",
-                "newValue": "When you Crit with the item to the right of this, deal 20 Damage."
-              }
-            ]
           }
         ]
       }
@@ -39007,13 +37434,6 @@ const data: PatchNotes = {
         "currentSize": "Small",
         "type": "item"
       },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "When you use the Weapon to the left of this, deal (10/15/20/25) damage.",
-          "newValue": "When you use the Weapon to the left of this, deal (10/15/20/25) Damage."
-        }
-      ],
       "enchantments": {
         "added": [
           {
@@ -39060,36 +37480,6 @@ const data: PatchNotes = {
             ]
           },
           {
-            "type": "Turbo",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you use the weapon to the left of this, Haste it for 2 second(s).",
-                "newValue": "When you use the Weapon to the left of this, Haste it for 2 second(s)."
-              }
-            ]
-          },
-          {
-            "type": "Shielded",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you use the weapon to the left of this, Shield equal to this item's Damage.",
-                "newValue": "When you use the Weapon to the left of this, Shield equal to this item's Damage."
-              }
-            ]
-          },
-          {
-            "type": "Restorative",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you use the weapon to the left of this, Heal equal to this item's Damage.",
-                "newValue": "When you use the Weapon to the left of this, Heal equal to this item's Damage."
-              }
-            ]
-          },
-          {
             "type": "Toxic",
             "tooltipChanges": [
               {
@@ -39106,16 +37496,6 @@ const data: PatchNotes = {
                 "index": 0,
                 "oldValue": "When you use the weapon to the left of this, burn equal to 10% of this item's Damage.",
                 "newValue": "When you use the Weapon to the left of this, Burn equal to 5% of this item's Damage."
-              }
-            ]
-          },
-          {
-            "type": "Deadly",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "The weapon to the left of this has +50% Crit Chance.",
-                "newValue": "The Weapon to the left of this has +50% Crit Chance."
               }
             ]
           }
@@ -39137,11 +37517,6 @@ const data: PatchNotes = {
           "index": 2,
           "oldValue": "Deal 200 damage.",
           "newValue": "Deal 200 Damage"
-        },
-        {
-          "index": 3,
-          "oldValue": "The first time you fall below half Health each fight, you take no damage for (1/2) second(s) and gain (25/50) Regen for the fight.",
-          "newValue": "The first time you fall below half Health each fight, you take no Damage for (1/2) second(s) and gain (25/50) Regen for the fight."
         }
       ],
       "enchantments": {
@@ -39405,16 +37780,6 @@ const data: PatchNotes = {
           "index": 1,
           "oldValue": "Deal 200 damage.",
           "newValue": "Deal 200 Damage"
-        },
-        {
-          "index": 2,
-          "oldValue": "The first time you use this each fight, destroy a small or medium enemy item for the fight.",
-          "newValue": "The first time you use this each fight, destroy a Small or Medium enemy item for the fight."
-        },
-        {
-          "index": 3,
-          "oldValue": "When you destroy an item during combat, your Dinosaurs permanently gain (20/40) damage.",
-          "newValue": "When you destroy an item during combat, your Dinosaurs permanently gain (20/40) Damage."
         }
       ],
       "enchantments": {
@@ -39818,11 +38183,6 @@ const data: PatchNotes = {
           "index": 2,
           "oldValue": "Deal (50/100) damage.",
           "newValue": "Deal (50/100) Damage"
-        },
-        {
-          "index": 3,
-          "oldValue": "The weapon to the left of this has lifesteal.",
-          "newValue": "The Weapon to the left of this has lifesteal."
         }
       ],
       "enchantments": {
@@ -40903,11 +39263,6 @@ const data: PatchNotes = {
         {
           "index": 2,
           "oldValue": "Transform another non-legendary small item on each player's board into Virus for the rest of the fight.",
-          "newValue": null
-        },
-        {
-          "index": 2,
-          "oldValue": null,
           "newValue": "Transform another non-legendary Small item on each Player's board into Virus for the rest of the fight"
         }
       ],
@@ -41305,11 +39660,6 @@ const data: PatchNotes = {
           "index": 2,
           "oldValue": "Gain (8/12) Regen for the fight.",
           "newValue": "Gain (8/12) Regen for the fight"
-        },
-        {
-          "index": 3,
-          "oldValue": "The first time you fall below half health each fight, Freeze ALL other items for 3 seconds.",
-          "newValue": "The first time you fall below half Health each fight, Freeze ALL other items for 3 seconds."
         }
       ],
       "enchantments": {
@@ -41850,11 +40200,6 @@ const data: PatchNotes = {
           "index": 2,
           "oldValue": "Deal (10/20/30/40) damage.",
           "newValue": "Deal (10/20/30/40) Damage"
-        },
-        {
-          "index": 3,
-          "oldValue": "This deals double Crit damage.",
-          "newValue": "This deals double Crit Damage."
         }
       ],
       "enchantments": {
@@ -42549,13 +40894,6 @@ const data: PatchNotes = {
         "currentSize": "Large",
         "type": "item"
       },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "You take no damage for the first (8/10) seconds of each fight, or until you use an item.",
-          "newValue": "You take no Damage for the first (8/10) seconds of each fight, or until you use an item."
-        }
-      ],
       "enchantments": {
         "added": [
           {
@@ -42570,68 +40908,7 @@ const data: PatchNotes = {
           }
         ],
         "removed": [],
-        "modified": [
-          {
-            "type": "Shielded",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "The first time you use an item each fight, Shield equal to 20% of your max Health.",
-                "newValue": "The first time you use an item each fight, Shield equal to 20% of your Max Health."
-              }
-            ]
-          },
-          {
-            "type": "Restorative",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "The first time you use an item each fight, Heal equal to 20% of your max Health.",
-                "newValue": "The first time you use an item each fight, Heal equal to 20% of your Max Health."
-              }
-            ]
-          },
-          {
-            "type": "Toxic",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "The first time you use an item each fight, Poison equal to 5% of your max Health.",
-                "newValue": "The first time you use an item each fight, Poison equal to 5% of your Max Health."
-              }
-            ]
-          },
-          {
-            "type": "Fiery",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "The first time you use an item each fight, Burn equal to 5% of your max Health.",
-                "newValue": "The first time you use an item each fight, Burn equal to 5% of your Max Health."
-              }
-            ]
-          },
-          {
-            "type": "Shiny",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "The second time you use an item each fight, lose all damage reduction instead.",
-                "newValue": "The second time you use an item each fight, lose all Damage reduction instead."
-              }
-            ]
-          },
-          {
-            "type": "Obsidian",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "The first time you use an item each fight, Deal Damage equal to 20% of your max Health.",
-                "newValue": "The first time you use an item each fight, deal Damage equal to 20% of your Max Health."
-              }
-            ]
-          }
-        ]
+        "modified": []
       }
     },
     "f2bb81c1-926e-447b-89aa-8c981604570c": {
@@ -43468,11 +41745,6 @@ const data: PatchNotes = {
           "index": 1,
           "oldValue": "Deal (20/30/40/50) damage.",
           "newValue": "Deal (15/20/25/30) Damage"
-        },
-        {
-          "index": 2,
-          "oldValue": "This item's cooldown is reduced by 1% for every 2 damage it has.",
-          "newValue": "This item's Cooldown is reduced by 1% for every 2 Damage it has."
         }
       ],
       "enchantments": {
@@ -43858,16 +42130,6 @@ const data: PatchNotes = {
                 "newValue": "When you sell this, your leftmost Heal item gains +10 Heal."
               }
             ]
-          },
-          {
-            "type": "Obsidian",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you sell this, your leftmost Weapon gains +10 damage.",
-                "newValue": "When you sell this, your leftmost Weapon gains +10 Damage."
-              }
-            ]
           }
         ]
       }
@@ -43893,16 +42155,6 @@ const data: PatchNotes = {
                 "index": 0,
                 "oldValue": "When you sell this, your leftmost Heal item gains +15 Heal.",
                 "newValue": "When you sell this, your leftmost Heal item gains +10 Heal."
-              }
-            ]
-          },
-          {
-            "type": "Obsidian",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you sell this, your leftmost Weapon item gains +10 damage.",
-                "newValue": "When you sell this, your leftmost Weapon item gains +10 Damage."
               }
             ]
           }
@@ -44084,11 +42336,6 @@ const data: PatchNotes = {
           "index": 1,
           "oldValue": "Heal (100/200).",
           "newValue": "Heal (100/200)"
-        },
-        {
-          "index": 2,
-          "oldValue": "This item's cooldown is reduced by 5 seconds for each adjacent large item.",
-          "newValue": "This item's Cooldown is reduced by 5 seconds for each adjacent Large item."
         }
       ],
       "enchantments": {
@@ -44244,11 +42491,6 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": "When you slow, haste 1 item for 1 second(s).",
-                "newValue": null
-              },
-              {
-                "index": 0,
-                "oldValue": null,
                 "newValue": "When you Slow, Haste an item for 1 second(s)."
               }
             ]
@@ -44270,26 +42512,6 @@ const data: PatchNotes = {
                 "index": 0,
                 "oldValue": "When you slow, Shield equal to 10 times this item's Regen.",
                 "newValue": "When you Slow, Shield equal to 5 times this item's Regen."
-              }
-            ]
-          },
-          {
-            "type": "Toxic",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you slow, Poison equal to this item's Regen.",
-                "newValue": "When you Slow, Poison equal to this item's Regen."
-              }
-            ]
-          },
-          {
-            "type": "Fiery",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you slow, Burn equal to this item's Regen.",
-                "newValue": "When you Slow, Burn equal to this item's Regen."
               }
             ]
           },
@@ -44721,11 +42943,6 @@ const data: PatchNotes = {
           "index": 1,
           "oldValue": "Poison 6.",
           "newValue": "Poison 6"
-        },
-        {
-          "index": 3,
-          "oldValue": "When this is transformed, enchant it with Toxic if able.",
-          "newValue": "When this is transformed, Enchant it with Toxic if able."
         }
       ],
       "enchantments": {
@@ -44873,11 +43090,6 @@ const data: PatchNotes = {
           "index": 1,
           "oldValue": "Freeze (1/2/3) item(s) for 1 second(s).",
           "newValue": "Freeze (1/2/3) item(s) for 1 second(s)"
-        },
-        {
-          "index": 2,
-          "oldValue": "When you use another non-weapon item, charge this 1 second(s).",
-          "newValue": "When you use another non-Weapon item, charge this 1 second(s)."
         }
       ],
       "enchantments": {
@@ -45371,13 +43583,6 @@ const data: PatchNotes = {
         "currentSize": "Large",
         "type": "item"
       },
-      "tooltips": [
-        {
-          "index": 1,
-          "oldValue": "You have increased max health equal to (10/15/20) times this item's value.",
-          "newValue": "You have increased Max Health equal to (10/15/20) times this item's value."
-        }
-      ],
       "enchantments": {
         "added": [
           {
@@ -45481,11 +43686,6 @@ const data: PatchNotes = {
         {
           "index": 3,
           "oldValue": "When you Freeze, this gains (+20/+30/+40/+50) damage for the fight.",
-          "newValue": null
-        },
-        {
-          "index": 3,
-          "oldValue": null,
           "newValue": "When you Freeze, this gains (+50/+100) Damage for the fight."
         }
       ],
@@ -45600,11 +43800,6 @@ const data: PatchNotes = {
         {
           "index": 1,
           "oldValue": "The weapon to the right of this gains (+8/+12/+16/+20) damage for the fight.",
-          "newValue": null
-        },
-        {
-          "index": 1,
-          "oldValue": null,
           "newValue": "The Weapon to the right of this gains (+8/+12/+16/+20) Damage for the fight"
         }
       ],
@@ -45790,18 +43985,6 @@ const data: PatchNotes = {
         "currentSize": "Large",
         "type": "item"
       },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "At the start of each fight, Enchant 1 non-enchanted item on each player's board for the fight.",
-          "newValue": "At the start of each fight, Enchant 1 non-Enchanted item on each Player's board for the fight."
-        },
-        {
-          "index": 1,
-          "oldValue": "When an enemy uses an Enchanted Item, charge 1 Enchanted item 2 seconds.",
-          "newValue": "When an enemy uses an Enchanted item, charge 1 Enchanted item 2 seconds."
-        }
-      ],
       "enchantments": {
         "added": [],
         "removed": [],
@@ -45934,11 +44117,6 @@ const data: PatchNotes = {
           "index": 1,
           "oldValue": "Deal (30/40/60) damage.",
           "newValue": "Deal (30/40/60) Damage"
-        },
-        {
-          "index": 2,
-          "oldValue": "When you use another weapon, charge this 2 second(s).",
-          "newValue": "When you use another Weapon, charge this 2 second(s)."
         }
       ],
       "enchantments": {
@@ -46104,18 +44282,7 @@ const data: PatchNotes = {
           }
         ],
         "removed": [],
-        "modified": [
-          {
-            "type": "Shiny",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "This has double value bonus and double cooldown reduction.",
-                "newValue": "This has double value bonus and double Cooldown reduction."
-              }
-            ]
-          }
-        ]
+        "modified": []
       }
     },
     "edd857da-ac11-4640-bc1a-217ef8385f72": {
@@ -46663,11 +44830,6 @@ const data: PatchNotes = {
         {
           "index": 1,
           "oldValue": "The weapon to the left of this gains (+10/+20/+30) damage for the fight.",
-          "newValue": null
-        },
-        {
-          "index": 1,
-          "oldValue": null,
           "newValue": "The Weapon to the left of this gains (+10/+20/+30) Damage for the fight"
         }
       ],
@@ -46824,16 +44986,6 @@ const data: PatchNotes = {
                 "newValue": "The Weapon to the left of this is affected by Freeze and Slow for half as long."
               }
             ]
-          },
-          {
-            "type": "Obsidian",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "This has double damage bonus.",
-                "newValue": "This has double Damage bonus."
-              }
-            ]
           }
         ]
       }
@@ -46853,11 +45005,6 @@ const data: PatchNotes = {
           "index": 1,
           "oldValue": "Deal (15/20/25) damage for each Friend you have.",
           "newValue": "Deal (15/20/25) Damage for each Friend you have"
-        },
-        {
-          "index": 2,
-          "oldValue": "This item's cooldown is reduced by 1 second for each adjacent Friend.",
-          "newValue": "This item's Cooldown is reduced by 1 second for each adjacent Friend."
         }
       ],
       "enchantments": {
@@ -48296,11 +46443,6 @@ const data: PatchNotes = {
           "index": 1,
           "oldValue": "Deal 10 damage.",
           "newValue": "Deal 10 Damage"
-        },
-        {
-          "index": 2,
-          "oldValue": "When you lose Shield, this gains damage equal to the Shield lost.",
-          "newValue": "When you lose Shield, this gains Damage equal to the Shield lost."
         }
       ],
       "enchantments": {
@@ -48826,11 +46968,6 @@ const data: PatchNotes = {
           "index": 1,
           "oldValue": "Burn (4/6/8).",
           "newValue": "Burn (4/6/8)"
-        },
-        {
-          "index": 2,
-          "oldValue": "If both adjacent items are food, this has +1 Multicast.",
-          "newValue": "If both adjacent items are Food, this has +1 Multicast."
         }
       ],
       "enchantments": {
@@ -49202,13 +47339,6 @@ const data: PatchNotes = {
         "currentSize": "Medium",
         "type": "item"
       },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "When you poison yourself, Poison (4/8/12).",
-          "newValue": "When you Poison yourself, Poison (4/8/12)."
-        }
-      ],
       "enchantments": {
         "added": [
           {
@@ -50339,11 +48469,6 @@ const data: PatchNotes = {
         {
           "index": 1,
           "oldValue": "Deal (500/1000) damage to the player with less health.",
-          "newValue": null
-        },
-        {
-          "index": 1,
-          "oldValue": null,
           "newValue": "Deal (500/1000) Damage to the Player with less Health"
         }
       ],
@@ -50402,11 +48527,6 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": "Shield 500 to the player with the most health.",
-                "newValue": null
-              },
-              {
-                "index": 0,
-                "oldValue": null,
                 "newValue": "Shield 500 to the Player with the most Health"
               }
             ]
@@ -50417,11 +48537,6 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": "Heal 500 to the player with the most health.",
-                "newValue": null
-              },
-              {
-                "index": 0,
-                "oldValue": null,
                 "newValue": "Heal 500 to the Player with the most Health"
               }
             ]
@@ -50432,11 +48547,6 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": "Poison 50 to the player with the lowest health.",
-                "newValue": null
-              },
-              {
-                "index": 0,
-                "oldValue": null,
                 "newValue": "Poison 50 to the Player with the lowest Health"
               }
             ]
@@ -50447,11 +48557,6 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": "Burn 50 to the player with the lowest health.",
-                "newValue": null
-              },
-              {
-                "index": 0,
-                "oldValue": null,
                 "newValue": "Burn 50 to the Player with the lowest Health"
               }
             ]
@@ -51365,11 +49470,6 @@ const data: PatchNotes = {
           "index": 1,
           "oldValue": "Deal (5/15/30/50) damage.",
           "newValue": "Deal (5/15/30/50) Damage"
-        },
-        {
-          "index": 2,
-          "oldValue": "At the start of each fight, this permanently gains (5/10/15/20) damage.",
-          "newValue": "At the start of each fight, this permanently gains (5/10/15/20) Damage."
         }
       ],
       "enchantments": {
@@ -52611,16 +50711,6 @@ const data: PatchNotes = {
         "removed": [],
         "modified": [
           {
-            "type": "Golden",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "Your weapons have +1 value.",
-                "newValue": "Your Weapons have +1 value."
-              }
-            ]
-          },
-          {
             "type": "Heavy",
             "tooltipChanges": [
               {
@@ -52732,11 +50822,6 @@ const data: PatchNotes = {
         {
           "index": 3,
           "oldValue": "Your weapons gain (5/10/15/20) damage for the fight.",
-          "newValue": null
-        },
-        {
-          "index": 3,
-          "oldValue": null,
           "newValue": "Your Weapons gain (5/10/15/20) Damage for the fight"
         }
       ],
@@ -53186,13 +51271,6 @@ const data: PatchNotes = {
         "currentSize": "Small",
         "type": "item"
       },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "Sells for gold.",
-          "newValue": "Sells for Gold."
-        }
-      ],
       "enchantments": {
         "added": [],
         "removed": [],
@@ -53204,16 +51282,6 @@ const data: PatchNotes = {
                 "index": 0,
                 "oldValue": "When you sell this, your leftmost Heal item gains +15 Heal.",
                 "newValue": "When you sell this, your leftmost Heal item gains +10 Heal."
-              }
-            ]
-          },
-          {
-            "type": "Obsidian",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you sell this, your leftmost Weapon item gains +10 damage.",
-                "newValue": "When you sell this, your leftmost Weapon item gains +10 Damage."
               }
             ]
           }
@@ -53521,7 +51589,7 @@ const data: PatchNotes = {
         {
           "index": 1,
           "oldValue": "Deal damage equal to the Regen plus the Burn on both players.",
-          "newValue": null
+          "newValue": "Deal Damage equal to the Regen plus the Burn on both Players"
         },
         {
           "index": 2,
@@ -53532,11 +51600,6 @@ const data: PatchNotes = {
           "index": 3,
           "oldValue": "You have (+4/+8/+12) Regen.",
           "newValue": "You have +10 Regen."
-        },
-        {
-          "index": 1,
-          "oldValue": null,
-          "newValue": "Deal Damage equal to the Regen plus the Burn on both Players"
         }
       ],
       "enchantments": {
@@ -53918,11 +51981,6 @@ const data: PatchNotes = {
           "index": 1,
           "oldValue": "Deal 20 damage.",
           "newValue": "Deal 20 Damage"
-        },
-        {
-          "index": 2,
-          "oldValue": "When you Slow, Freeze, Burn or Poison, this gains (10/20/30/40) damage for the fight.",
-          "newValue": "When you Slow, Freeze, Burn or Poison, this gains (10/20/30/40) Damage for the fight."
         }
       ],
       "enchantments": {
@@ -54276,16 +52334,6 @@ const data: PatchNotes = {
                 "newValue": "This item is immune to Freeze, Slow and Destroy."
               }
             ]
-          },
-          {
-            "type": "Obsidian",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "This has double damage bonus.",
-                "newValue": "This has double Damage bonus."
-              }
-            ]
           }
         ]
       }
@@ -54311,16 +52359,6 @@ const data: PatchNotes = {
                 "index": 0,
                 "oldValue": "When you sell this, your leftmost Heal item gains +15 Heal.",
                 "newValue": "When you sell this, your leftmost Heal item gains +10 Heal."
-              }
-            ]
-          },
-          {
-            "type": "Obsidian",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "This has double damage bonus.",
-                "newValue": "This has double Damage bonus."
               }
             ]
           }
@@ -55199,16 +53237,6 @@ const data: PatchNotes = {
             ]
           },
           {
-            "type": "Shielded",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you use an item from another hero, shield 20.",
-                "newValue": "When you use an item from another hero, Shield 20."
-              }
-            ]
-          },
-          {
             "type": "Restorative",
             "tooltipChanges": [
               {
@@ -55219,32 +53247,12 @@ const data: PatchNotes = {
             ]
           },
           {
-            "type": "Toxic",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you use an item from another hero, poison 2.",
-                "newValue": "When you use an item from another hero, Poison 2."
-              }
-            ]
-          },
-          {
             "type": "Fiery",
             "tooltipChanges": [
               {
                 "index": 0,
                 "oldValue": "When you use an item from another hero, burn 3.",
                 "newValue": "When you use an item from another hero, Burn 2."
-              }
-            ]
-          },
-          {
-            "type": "Obsidian",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you use an item from another hero, Deal 20 Damage.",
-                "newValue": "When you use an item from another hero, deal 20 Damage."
               }
             ]
           }
@@ -55649,16 +53657,6 @@ const data: PatchNotes = {
         "added": [],
         "removed": [],
         "modified": [
-          {
-            "type": "Golden",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "Your non-weapon items have +1 value.",
-                "newValue": "Your non-Weapon items have +1 value."
-              }
-            ]
-          },
           {
             "type": "Heavy",
             "tooltipChanges": [
@@ -56213,13 +54211,6 @@ const data: PatchNotes = {
         "currentSize": "Small",
         "type": "item"
       },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "When you sell this, reduce your items' cooldowns by (2%/4%/6%).",
-          "newValue": "When you sell this, reduce your items' Cooldowns by (2%/4%/6%)."
-        }
-      ],
       "enchantments": {
         "added": [],
         "removed": [],
@@ -56231,16 +54222,6 @@ const data: PatchNotes = {
                 "index": 0,
                 "oldValue": "When you sell this, your leftmost Heal item gains +15 Heal.",
                 "newValue": "When you sell this, your leftmost Heal item gains +10 Heal."
-              }
-            ]
-          },
-          {
-            "type": "Obsidian",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you sell this, your leftmost Weapon item gains +10 damage.",
-                "newValue": "When you sell this, your leftmost Weapon item gains +10 Damage."
               }
             ]
           }
@@ -56385,11 +54366,6 @@ const data: PatchNotes = {
         {
           "index": 1,
           "oldValue": "The weapon to the right of this gains (+5/+10/+15/+20) damage for the fight.",
-          "newValue": null
-        },
-        {
-          "index": 1,
-          "oldValue": null,
           "newValue": "The Weapon to the right of this gains (+5/+10/+15/+20) Damage for the fight"
         }
       ],
@@ -56506,16 +54482,6 @@ const data: PatchNotes = {
                 "newValue": "The Weapon to the Right of this has +50% Crit Chance."
               }
             ]
-          },
-          {
-            "type": "Obsidian",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "This has double damage bonus.",
-                "newValue": "This has double Damage bonus."
-              }
-            ]
           }
         ]
       }
@@ -56591,32 +54557,12 @@ const data: PatchNotes = {
             ]
           },
           {
-            "type": "Toxic",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you Crit, poison 1.",
-                "newValue": "When you Crit, Poison 1."
-              }
-            ]
-          },
-          {
             "type": "Fiery",
             "tooltipChanges": [
               {
                 "index": 0,
                 "oldValue": "When you Crit, burn 2.",
                 "newValue": "When you Crit, Burn 1."
-              }
-            ]
-          },
-          {
-            "type": "Obsidian",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you Crit, Deal 10 Damage.",
-                "newValue": "When you Crit, deal 10 Damage."
               }
             ]
           }
@@ -57025,13 +54971,6 @@ const data: PatchNotes = {
         "currentSize": "Small",
         "type": "item"
       },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "When you Slow, deal (8/12/16) damage.",
-          "newValue": "When you Slow, deal (8/12/16) Damage."
-        }
-      ],
       "enchantments": {
         "added": [
           {
@@ -57083,26 +55022,6 @@ const data: PatchNotes = {
             ]
           },
           {
-            "type": "Shielded",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you Slow, Shield equal to this item's damage.",
-                "newValue": "When you Slow, Shield equal to this item's Damage."
-              }
-            ]
-          },
-          {
-            "type": "Restorative",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you Slow, Heal equal to this item's damage.",
-                "newValue": "When you Slow, Heal equal to this item's Damage."
-              }
-            ]
-          },
-          {
             "type": "Toxic",
             "tooltipChanges": [
               {
@@ -57145,11 +55064,6 @@ const data: PatchNotes = {
           "index": 1,
           "oldValue": "Haste a non-weapon item for 2 second(s).",
           "newValue": null
-        },
-        {
-          "index": 2,
-          "oldValue": "When you use another non-weapon item, Charge this 1 second(s).",
-          "newValue": "When you use another non-Weapon item, Charge this 1 second(s)."
         },
         {
           "index": 1,
@@ -57299,11 +55213,6 @@ const data: PatchNotes = {
           "index": 1,
           "oldValue": "Shield 20.",
           "newValue": "Shield 20"
-        },
-        {
-          "index": 2,
-          "oldValue": "When you use an adjacent non-weapon item, this gains (10/15/20/25) Shield for the fight.",
-          "newValue": "When you use an adjacent non-Weapon item, this gains (10/15/20/25) Shield for the fight."
         }
       ],
       "enchantments": {
@@ -58452,16 +56361,6 @@ const data: PatchNotes = {
                 "newValue": "This item is immune to Freeze, Slow and Destroy."
               }
             ]
-          },
-          {
-            "type": "Obsidian",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you use the Ammo item to the right of this, Deal 10 damage.",
-                "newValue": "When you use the Ammo item to the right of this, deal 10 Damage."
-              }
-            ]
           }
         ]
       }
@@ -58896,11 +56795,6 @@ const data: PatchNotes = {
         {
           "index": 1,
           "oldValue": "When you Reload or transform a potion, this gains (+15/+30/+45) damage for the fight.",
-          "newValue": null
-        },
-        {
-          "index": 1,
-          "oldValue": null,
           "newValue": "When you Reload or transform a Potion, this gains (+30/+45) Damage for the fight."
         }
       ],
@@ -58961,16 +56855,6 @@ const data: PatchNotes = {
                 "index": 0,
                 "oldValue": null,
                 "newValue": "When you use a Potion, Haste an item for 1 second(s)."
-              }
-            ]
-          },
-          {
-            "type": "Shielded",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you use a Potion, Shield equal to this item's damage.",
-                "newValue": "When you use a Potion, Shield equal to this item's Damage."
               }
             ]
           },
@@ -59211,17 +57095,12 @@ const data: PatchNotes = {
         {
           "index": 1,
           "oldValue": "Your weapons gain +10 damage for the fight.",
-          "newValue": null
+          "newValue": "Your Weapons gain +10 Damage for the fight"
         },
         {
           "index": 2,
           "oldValue": "When you gain gold, increase the damage bonus of this item by the amount gained.",
           "newValue": null
-        },
-        {
-          "index": 1,
-          "oldValue": null,
-          "newValue": "Your Weapons gain +10 Damage for the fight"
         },
         {
           "index": 2,
@@ -59489,16 +57368,6 @@ const data: PatchNotes = {
         {
           "index": 3,
           "oldValue": "The first time a player falls below half Health, Destroy a small item.",
-          "newValue": null
-        },
-        {
-          "index": 4,
-          "oldValue": "When you destroy an item during combat, this permanently gains (+10/+20/+30) damage.",
-          "newValue": "When you destroy an item during combat, this permanently gains (+10/+20/+30) Damage."
-        },
-        {
-          "index": 3,
-          "oldValue": null,
           "newValue": "The first time ANY Player falls below half Health, Destroy a Small item."
         }
       ],
@@ -59613,11 +57482,6 @@ const data: PatchNotes = {
           "index": 2,
           "oldValue": "Deal (80/120/160) damage.",
           "newValue": "Deal (75/125) Damage"
-        },
-        {
-          "index": 3,
-          "oldValue": "Your Lifesteal weapons have +100% Crit Chance.",
-          "newValue": "Your Lifesteal Weapons have +100% Crit Chance."
         }
       ],
       "enchantments": {
@@ -59695,16 +57559,6 @@ const data: PatchNotes = {
             ]
           },
           {
-            "type": "Deadly",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "This deals double Crit damage.",
-                "newValue": "This deals double Crit Damage."
-              }
-            ]
-          },
-          {
             "type": "Radiant",
             "tooltipChanges": [
               {
@@ -59737,11 +57591,6 @@ const data: PatchNotes = {
           "index": 1,
           "oldValue": "Poison both players 5.",
           "newValue": "Poison both Players 5"
-        },
-        {
-          "index": 2,
-          "oldValue": "When you Poison yourself, your weapons gain + damage for the fight equal to (1/2) times the amount Poisoned.",
-          "newValue": "When you Poison yourself, your Weapons gain + Damage for the fight equal to (1/2) times the amount Poisoned."
         }
       ],
       "enchantments": {
@@ -59985,11 +57834,6 @@ const data: PatchNotes = {
           "index": 1,
           "oldValue": "Burn (4/5/6/7).",
           "newValue": "Burn (4/5/6/7)"
-        },
-        {
-          "index": 2,
-          "oldValue": "When you use a non-weapon item, Charge this 1 second(s).",
-          "newValue": "When you use a non-Weapon item, Charge this 1 second(s)."
         }
       ],
       "enchantments": {
@@ -60630,11 +58474,6 @@ const data: PatchNotes = {
           "index": 1,
           "oldValue": "Your Lifesteal Weapons gain (+10/+15/+20/+25) damage for the fight.",
           "newValue": "Your Lifesteal Weapons gain (+10/+15/+20/+25) Damage for the fight"
-        },
-        {
-          "index": 2,
-          "oldValue": "The weapon to the right of this has Lifesteal.",
-          "newValue": "The Weapon to the right of this has Lifesteal."
         }
       ],
       "enchantments": {
@@ -60740,16 +58579,6 @@ const data: PatchNotes = {
                 "newValue": "This item is immune to Freeze, Slow and Destroy."
               }
             ]
-          },
-          {
-            "type": "Obsidian",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "This has double damage bonus.",
-                "newValue": "This has double Damage bonus."
-              }
-            ]
           }
         ]
       }
@@ -60777,16 +58606,6 @@ const data: PatchNotes = {
                 "newValue": "When you sell this, your leftmost Heal item gains +10 Heal."
               }
             ]
-          },
-          {
-            "type": "Obsidian",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you sell this, your leftmost Weapon item gains +10 damage.",
-                "newValue": "When you sell this, your leftmost Weapon item gains +10 Damage."
-              }
-            ]
           }
         ]
       }
@@ -60806,11 +58625,6 @@ const data: PatchNotes = {
           "index": 2,
           "oldValue": "Deal (6/12/18/24) damage.",
           "newValue": "Deal (6/12/18/24) Damage"
-        },
-        {
-          "index": 3,
-          "oldValue": "This deals double Crit damage.",
-          "newValue": "This deals double Crit Damage."
         }
       ],
       "enchantments": {
@@ -60946,62 +58760,12 @@ const data: PatchNotes = {
         "removed": [],
         "modified": [
           {
-            "type": "Heavy",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "The first time you fall below half health each fight, Slow 3 items for 4 second(s).",
-                "newValue": "The first time you fall below half Health each fight, Slow 3 items for 4 second(s)."
-              }
-            ]
-          },
-          {
-            "type": "Icy",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "The first time you fall below half health each fight, Freeze 2 items for 4 second(s).",
-                "newValue": "The first time you fall below half Health each fight, Freeze 2 items for 4 second(s)."
-              }
-            ]
-          },
-          {
-            "type": "Turbo",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "The first time you fall below half health each fight, Haste 3 items for 4 second(s).",
-                "newValue": "The first time you fall below half Health each fight, Haste 3 items for 4 second(s)."
-              }
-            ]
-          },
-          {
-            "type": "Shielded",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "The first time you fall below half health each fight, Shield 120.",
-                "newValue": "The first time you fall below half Health each fight, Shield 120."
-              }
-            ]
-          },
-          {
             "type": "Restorative",
             "tooltipChanges": [
               {
                 "index": 0,
                 "oldValue": "The first time you fall below half health each fight, Heal 180.",
                 "newValue": "The first time you fall below half Health each fight, Heal 120."
-              }
-            ]
-          },
-          {
-            "type": "Toxic",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "The first time you fall below half health each fight, poison 12.",
-                "newValue": "The first time you fall below half Health each fight, Poison 12."
               }
             ]
           },
@@ -61022,21 +58786,6 @@ const data: PatchNotes = {
                 "index": 0,
                 "oldValue": "Your Regen items have +25% Crit Chance.",
                 "newValue": "Your Regen items have +30% Crit Chance."
-              }
-            ]
-          },
-          {
-            "type": "Obsidian",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "The first time you fall below half health each fight, Deal 120 damage.",
-                "newValue": null
-              },
-              {
-                "index": 0,
-                "oldValue": null,
-                "newValue": "The first time you fall below half Health each fight, deal 120 Damage."
               }
             ]
           }
@@ -61316,11 +59065,6 @@ const data: PatchNotes = {
           "index": 1,
           "oldValue": "Burn (6/8/10/12).",
           "newValue": "Burn (6/8/10/12)"
-        },
-        {
-          "index": 2,
-          "oldValue": "When you use a small item, charge this 1 second(s).",
-          "newValue": "When you use a Small item, charge this 1 second(s)."
         }
       ],
       "enchantments": {
@@ -61441,16 +59185,6 @@ const data: PatchNotes = {
                 "index": 0,
                 "oldValue": "When you sell this, your leftmost Heal item gains +15 Heal.",
                 "newValue": "When you sell this, your leftmost Heal item gains +10 Heal."
-              }
-            ]
-          },
-          {
-            "type": "Obsidian",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you sell this, your leftmost Weapon item gains +10 damage.",
-                "newValue": "When you sell this, your leftmost Weapon item gains +10 Damage."
               }
             ]
           }
@@ -61719,17 +59453,12 @@ const data: PatchNotes = {
         {
           "index": 2,
           "oldValue": "When you buy a weapon, this gains (3/5/7) value and you gain (20/50/100) max health.",
-          "newValue": null
+          "newValue": "When you buy a Weapon, this gains (2/4/6) value and you gain (20/30/40) Max Health."
         },
         {
           "index": 1,
           "oldValue": null,
           "newValue": "Your Weapons gain Damage equal to double this item's value for the fight."
-        },
-        {
-          "index": 2,
-          "oldValue": null,
-          "newValue": "When you buy a Weapon, this gains (2/4/6) value and you gain (20/30/40) Max Health."
         }
       ],
       "enchantments": {
@@ -61843,16 +59572,6 @@ const data: PatchNotes = {
                 "index": 0,
                 "oldValue": null,
                 "newValue": "This item is immune to Freeze, Slow and Destroy."
-              }
-            ]
-          },
-          {
-            "type": "Obsidian",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "This has double damage bonus.",
-                "newValue": "This has double Damage bonus."
               }
             ]
           }
@@ -62236,13 +59955,6 @@ const data: PatchNotes = {
         "currentSize": "Large",
         "type": "item"
       },
-      "tooltips": [
-        {
-          "index": 1,
-          "oldValue": "When you Crit with an item, reduce its cooldown by (4%/8%/12%) for the fight.",
-          "newValue": "When you Crit with an item, reduce its Cooldown by (4%/8%/12%) for the fight."
-        }
-      ],
       "enchantments": {
         "added": [
           {
@@ -62592,16 +60304,6 @@ const data: PatchNotes = {
         "added": [],
         "removed": [],
         "modified": [
-          {
-            "type": "Golden",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "Your small items have +1 value",
-                "newValue": "Your Small items have +1 value"
-              }
-            ]
-          },
           {
             "type": "Heavy",
             "tooltipChanges": [
@@ -63620,11 +61322,6 @@ const data: PatchNotes = {
           "index": 1,
           "oldValue": "Freeze (1/2/3) item(s) for 1 second(s).",
           "newValue": "Freeze (1/2/3) item(s) for 1 second(s)"
-        },
-        {
-          "index": 3,
-          "oldValue": "The first time you fall below half health each fight, use this.",
-          "newValue": "The first time you fall below half Health each fight, use this."
         }
       ],
       "enchantments": {
@@ -63698,16 +61395,6 @@ const data: PatchNotes = {
                 "index": 0,
                 "oldValue": null,
                 "newValue": "This item is immune to Freeze, Slow and Destroy."
-              }
-            ]
-          },
-          {
-            "type": "Obsidian",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you Freeze, Deal damage equal to this item's Shield.",
-                "newValue": "When you Freeze, deal Damage equal to this item's Shield."
               }
             ]
           }
@@ -64130,11 +61817,6 @@ const data: PatchNotes = {
           "index": 1,
           "oldValue": "Deal 2 damage.",
           "newValue": "Deal 2 Damage"
-        },
-        {
-          "index": 2,
-          "oldValue": "Gain Regen for the fight equal to this item's damage.",
-          "newValue": "Gain Regen for the fight equal to this item's Damage."
         }
       ],
       "enchantments": {
@@ -64291,11 +61973,6 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": "When you use the item to the left of this, slow 1 item for 3 second(s).",
-                "newValue": null
-              },
-              {
-                "index": 0,
-                "oldValue": null,
                 "newValue": "When you use the item to the left of this, Slow an item for 1 second(s)."
               }
             ]
@@ -64321,22 +61998,7 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": "When you use the item to the left of this, haste 1 item for 3 second(s).",
-                "newValue": null
-              },
-              {
-                "index": 0,
-                "oldValue": null,
                 "newValue": "When you use the item to the left of this, Haste an item for 1 second(s)."
-              }
-            ]
-          },
-          {
-            "type": "Shielded",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you use the item to the left of this, shield 20",
-                "newValue": "When you use the item to the left of this, Shield 20"
               }
             ]
           },
@@ -64347,16 +62009,6 @@ const data: PatchNotes = {
                 "index": 0,
                 "oldValue": "When you use the item to the left of this, heal 30",
                 "newValue": "When you use the item to the left of this, Heal 20"
-              }
-            ]
-          },
-          {
-            "type": "Toxic",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you use the item to the left of this, poison 2",
-                "newValue": "When you use the item to the left of this, Poison 2"
               }
             ]
           },
@@ -64382,16 +62034,6 @@ const data: PatchNotes = {
                 "index": 0,
                 "oldValue": null,
                 "newValue": "The Cooldown of the item to the right of this is reduced by 20%."
-              }
-            ]
-          },
-          {
-            "type": "Obsidian",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you use the item to the left of this, Deal 20 Damage.",
-                "newValue": "When you use the item to the left of this, deal 20 Damage."
               }
             ]
           }
@@ -64970,16 +62612,6 @@ const data: PatchNotes = {
           "index": 1,
           "oldValue": "Deal (100/200) damage.",
           "newValue": "Deal (100/200) Damage"
-        },
-        {
-          "index": 2,
-          "oldValue": "When you use an adjacent Large item, this gains (30%/60%) damage for the fight.",
-          "newValue": "When you use an adjacent Large item, this gains (30%/60%) Damage for the fight."
-        },
-        {
-          "index": 3,
-          "oldValue": "When you use an adjacent Medium item, this gains (20%/40%) damage for the fight.",
-          "newValue": "When you use an adjacent Medium item, this gains (20%/40%) Damage for the fight."
         }
       ],
       "enchantments": {
@@ -65208,11 +62840,6 @@ const data: PatchNotes = {
           "index": 2,
           "oldValue": "Deal (5/10/15/20) damage.",
           "newValue": "Deal (5/10/15/20) Damage"
-        },
-        {
-          "index": 3,
-          "oldValue": "When this is transformed, enchant it with Obsidian if able.",
-          "newValue": "When this is transformed, Enchant it with Obsidian if able."
         }
       ],
       "enchantments": {
@@ -65934,11 +63561,6 @@ const data: PatchNotes = {
           "newValue": null
         },
         {
-          "index": 2,
-          "oldValue": "When you freeze, adjacent Poison items gain (+2/+4/+6/+8) Poison for the fight.",
-          "newValue": "When you Freeze, adjacent Poison items gain (+2/+4/+6/+8) Poison for the fight."
-        },
-        {
           "index": 1,
           "oldValue": null,
           "newValue": "Freeze an item for 1 second(s)"
@@ -66547,11 +64169,6 @@ const data: PatchNotes = {
           "index": 1,
           "oldValue": "Deal (15/30/60/120) damage.",
           "newValue": "Deal (15/30/60/120) Damage"
-        },
-        {
-          "index": 2,
-          "oldValue": "When you sell this, your weapons gain (+1/+2/+3/+4) Damage.",
-          "newValue": "When you sell this, your Weapons gain (+1/+2/+3/+4) Damage."
         }
       ],
       "enchantments": {
@@ -66676,11 +64293,6 @@ const data: PatchNotes = {
           "index": 1,
           "oldValue": "Poison 4.",
           "newValue": "Poison 4"
-        },
-        {
-          "index": 2,
-          "oldValue": "When an adjacent item slows, this gains (4/8/12) Poison for the fight.",
-          "newValue": "When an adjacent item Slows, this gains (4/8/12) Poison for the fight."
         }
       ],
       "enchantments": {
@@ -66842,16 +64454,6 @@ const data: PatchNotes = {
                 "index": 0,
                 "oldValue": "When you use a Toy, Haste 1 item for 1 second(s).",
                 "newValue": "When you use a Toy, Haste an item for 1 second(s)."
-              }
-            ]
-          },
-          {
-            "type": "Obsidian",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you use a Toy, Deal 30 Damage.",
-                "newValue": "When you use a Toy, deal 30 Damage."
               }
             ]
           }
@@ -67035,16 +64637,6 @@ const data: PatchNotes = {
                 "index": 0,
                 "oldValue": "When you sell this, your leftmost Heal item gains +15 Heal.",
                 "newValue": "When you sell this, your leftmost Heal item gains +10 Heal."
-              }
-            ]
-          },
-          {
-            "type": "Obsidian",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you sell this, your leftmost Weapon item gains +10 damage.",
-                "newValue": "When you sell this, your leftmost Weapon item gains +10 Damage."
               }
             ]
           }
@@ -67312,11 +64904,6 @@ const data: PatchNotes = {
         {
           "index": 2,
           "oldValue": "Deal damage equal to your shield.",
-          "newValue": null
-        },
-        {
-          "index": 2,
-          "oldValue": null,
           "newValue": "Deal Damage equal to your Shield"
         }
       ],
@@ -67547,18 +65134,6 @@ const data: PatchNotes = {
         "currentSize": "Medium",
         "type": "item"
       },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "Adjacent Weapons have (+5/+10/+20/+40) damage.",
-          "newValue": "Adjacent Weapons have (+5/+10/+20/+40) Damage."
-        },
-        {
-          "index": 1,
-          "oldValue": "When you sell this, your weapons gain (2/4/6/8) damage.",
-          "newValue": "When you sell this, your Weapons gain (2/4/6/8) Damage."
-        }
-      ],
       "enchantments": {
         "added": [
           {
@@ -68336,11 +65911,6 @@ const data: PatchNotes = {
           "index": 1,
           "oldValue": "Reload adjacent Potions.",
           "newValue": "Reload adjacent Potions"
-        },
-        {
-          "index": 2,
-          "oldValue": "Adjacent potions have +1 Multicast.",
-          "newValue": "Adjacent Potions have +1 Multicast."
         }
       ],
       "enchantments": {
@@ -69558,11 +67128,6 @@ const data: PatchNotes = {
           "index": 1,
           "oldValue": "Burn (8/12/16/20).",
           "newValue": "Burn (8/12/16/20)"
-        },
-        {
-          "index": 2,
-          "oldValue": "When you use a small item, Charge this 2 second(s).",
-          "newValue": "When you use a Small item, Charge this 2 second(s)."
         }
       ],
       "enchantments": {
@@ -70246,11 +67811,6 @@ const data: PatchNotes = {
         {
           "index": 4,
           "oldValue": "When you slow, this gains (+10/+15/+20/+25) damage and (+2/+4/+6/+8) burn for the fight.",
-          "newValue": null
-        },
-        {
-          "index": 4,
-          "oldValue": null,
           "newValue": "When you Slow, this gains (+10/+15/+20/+25) Damage and (+2/+3/+4/+5) Burn for the fight."
         }
       ],
@@ -70487,11 +68047,6 @@ const data: PatchNotes = {
           "newValue": null
         },
         {
-          "index": 2,
-          "oldValue": "When you Freeze, your Weapons gain +10 damage and your Shield items gain +10 shield for the fight.",
-          "newValue": "When you Freeze, your Weapons gain +10 Damage and your Shield items gain +10 Shield for the fight."
-        },
-        {
           "index": 1,
           "oldValue": null,
           "newValue": "All items are immune to Freeze."
@@ -70569,16 +68124,6 @@ const data: PatchNotes = {
                 "index": 0,
                 "oldValue": "When you Freeze, Burn 6.",
                 "newValue": "When you Freeze, Burn 3."
-              }
-            ]
-          },
-          {
-            "type": "Obsidian",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you Freeze, Deal 50 Damage.",
-                "newValue": "When you Freeze, deal 50 Damage."
               }
             ]
           }
@@ -71491,13 +69036,6 @@ const data: PatchNotes = {
         ],
         "removed": []
       },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "When you sell this, your weapons gain (1/2/3/4) damage.",
-          "newValue": "When you sell this, your Weapons gain (1/2/3/4) Damage."
-        }
-      ],
       "enchantments": {
         "added": [],
         "removed": [],
@@ -71509,16 +69047,6 @@ const data: PatchNotes = {
                 "index": 0,
                 "oldValue": "When you sell this, your leftmost Heal item gains +15 Heal.",
                 "newValue": "When you sell this, your leftmost Heal item gains +10 Heal."
-              }
-            ]
-          },
-          {
-            "type": "Obsidian",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "This has double damage bonus.",
-                "newValue": "This has double Damage bonus."
               }
             ]
           }
@@ -71960,11 +69488,6 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": "When you use the property to the left of this, Slow 2 item for 2 second(s).",
-                "newValue": null
-              },
-              {
-                "index": 0,
-                "oldValue": null,
                 "newValue": "When you use the Property to the left of this, Slow an item for 1 second(s)."
               }
             ]
@@ -72045,11 +69568,6 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": "When you use the property to the left of this, Deal 20 damage.",
-                "newValue": null
-              },
-              {
-                "index": 0,
-                "oldValue": null,
                 "newValue": "When you use the Property to the left of this, deal 50 Damage."
               }
             ]
@@ -72495,11 +70013,6 @@ const data: PatchNotes = {
           "index": 2,
           "oldValue": "Deal 100 Damage.",
           "newValue": "Deal 100 Damage"
-        },
-        {
-          "index": 3,
-          "oldValue": "At the start of each fight, Enchant a non-enchanted item with Obsidian for the fight.",
-          "newValue": "At the start of each fight, Enchant a non-Enchanted item with Obsidian for the fight."
         }
       ],
       "enchantments": {
@@ -72623,11 +70136,6 @@ const data: PatchNotes = {
         {
           "index": 1,
           "oldValue": "The weapon to the left of this gains (+5/+10/+15/+20) damage for the fight.",
-          "newValue": null
-        },
-        {
-          "index": 1,
-          "oldValue": null,
           "newValue": "The Weapon to the left of this gains (+5/+10/+15/+20) Damage for the fight"
         }
       ],
@@ -72744,16 +70252,6 @@ const data: PatchNotes = {
                 "newValue": "Adjacent Weapons have +25% Crit Chance."
               }
             ]
-          },
-          {
-            "type": "Obsidian",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "This has double damage bonus.",
-                "newValue": "This has double Damage bonus."
-              }
-            ]
           }
         ]
       }
@@ -72773,11 +70271,6 @@ const data: PatchNotes = {
           "index": 1,
           "oldValue": "Deal (5/10/15/20) damage.",
           "newValue": "Deal (5/10/15/20) Damage"
-        },
-        {
-          "index": 2,
-          "oldValue": "The potion to the left of this has (+1/+2/+3/+4) Ammo.",
-          "newValue": "The Potion to the left of this has (+1/+2/+3/+4) Ammo."
         }
       ],
       "enchantments": {
@@ -72904,11 +70397,6 @@ const data: PatchNotes = {
           "newValue": null
         },
         {
-          "index": 1,
-          "oldValue": "Your weapons have + damage equal to this item's value.",
-          "newValue": "Your Weapons have + Damage equal to this item's value."
-        },
-        {
           "index": 0,
           "oldValue": null,
           "newValue": "When you win a fight, this permanently gains (3/6/9) value."
@@ -72945,11 +70433,6 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": "The first time you fall below half health each fight, Freeze 2 medium or small items for 2 second(s).",
-                "newValue": null
-              },
-              {
-                "index": 0,
-                "oldValue": null,
                 "newValue": "The first time you fall below half Health each fight, Freeze 2 Medium or Small items for 4 second(s)."
               }
             ]
@@ -72961,26 +70444,6 @@ const data: PatchNotes = {
                 "index": 0,
                 "oldValue": "The first time you fall below half health each fight, Haste 2 items for 4 second(s).",
                 "newValue": "The first time you fall below half Health each fight, Haste 4 items for 4 second(s)."
-              }
-            ]
-          },
-          {
-            "type": "Deadly",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "Your weapons have + Crit Chance % equal to this item's value.",
-                "newValue": "Your Weapons have + Crit Chance % equal to this item's value."
-              }
-            ]
-          },
-          {
-            "type": "Obsidian",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "This has double damage bonus.",
-                "newValue": "This has double Damage bonus."
               }
             ]
           }
@@ -73561,11 +71024,6 @@ const data: PatchNotes = {
           "newValue": null
         },
         {
-          "index": 2,
-          "oldValue": "When this is transformed, enchant it with Heavy if able.",
-          "newValue": "When this is transformed, Enchant it with Heavy if able."
-        },
-        {
           "index": 1,
           "oldValue": null,
           "newValue": "Slow an item for (1/2/3/4) second(s)"
@@ -73812,11 +71270,6 @@ const data: PatchNotes = {
           "index": 3,
           "oldValue": "Deal (25/35/45) Damage.",
           "newValue": "Deal (25/35/45) Damage"
-        },
-        {
-          "index": 4,
-          "oldValue": "This deals double Crit damage.",
-          "newValue": "This deals double Crit Damage."
         }
       ],
       "enchantments": {
@@ -73968,16 +71421,6 @@ const data: PatchNotes = {
                 "index": 0,
                 "oldValue": "When you use a Toy, Haste 1 item for 1 second(s).",
                 "newValue": "When you use a Toy, Haste an item for 1 second(s)."
-              }
-            ]
-          },
-          {
-            "type": "Obsidian",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you use a Toy, Deal 20 Damage.",
-                "newValue": "When you use a Toy, deal 20 Damage."
               }
             ]
           }
@@ -74227,16 +71670,6 @@ const data: PatchNotes = {
                 "newValue": "This item is immune to Freeze, Slow and Destroy."
               }
             ]
-          },
-          {
-            "type": "Obsidian",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you use an Ammo item, Deal 15 Damage.",
-                "newValue": "When you use an Ammo item, deal 15 Damage."
-              }
-            ]
           }
         ]
       }
@@ -74288,16 +71721,6 @@ const data: PatchNotes = {
                 "index": 0,
                 "oldValue": "Slow 2 items for 2 second(s).",
                 "newValue": "Slow 2 items for 2 second(s)"
-              }
-            ]
-          },
-          {
-            "type": "Golden",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "This gains additional damage equal to value of the gold gained.",
-                "newValue": "This gains additional Damage equal to value of the Gold gained."
               }
             ]
           },
@@ -74553,123 +71976,7 @@ const data: PatchNotes = {
           "oldValue": null,
           "newValue": "At the start of each day, get a Catalyst and transform the Small item to the left of this into a Potion."
         }
-      ],
-      "enchantments": {
-        "added": [],
-        "removed": [],
-        "modified": [
-          {
-            "type": "Heavy",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "If the item is not enchanted, enchant it with Heavy if able.",
-                "newValue": "If the item is not Enchanted, Enchant it with Heavy if able."
-              }
-            ]
-          },
-          {
-            "type": "Icy",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "If the item is not enchanted, enchant it with Icy if able.",
-                "newValue": "If the item is not Enchanted, Enchant it with Icy if able."
-              }
-            ]
-          },
-          {
-            "type": "Turbo",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "If the item is not enchanted, enchant it with Turbo if able.",
-                "newValue": "If the item is not Enchanted, Enchant it with Turbo if able."
-              }
-            ]
-          },
-          {
-            "type": "Shielded",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "If the item is not enchanted, enchant it with Shielded if able.",
-                "newValue": "If the item is not Enchanted, Enchant it with Shielded if able."
-              }
-            ]
-          },
-          {
-            "type": "Restorative",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "If the item is not enchanted, enchant it with Restorative if able.",
-                "newValue": "If the item is not Enchanted, Enchant it with Restorative if able."
-              }
-            ]
-          },
-          {
-            "type": "Toxic",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "If the item is not enchanted, enchant it with Toxic if able.",
-                "newValue": "If the item is not Enchanted, Enchant it with Toxic if able."
-              }
-            ]
-          },
-          {
-            "type": "Fiery",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "If the item is not enchanted, enchant it with Fiery if able.",
-                "newValue": "If the item is not Enchanted, Enchant it with Fiery if able."
-              }
-            ]
-          },
-          {
-            "type": "Shiny",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "If the item is not enchanted, enchant it with Shiny if able.",
-                "newValue": "If the item is not Enchanted, Enchant it with Shiny if able."
-              }
-            ]
-          },
-          {
-            "type": "Deadly",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "If the item is not enchanted, enchant it with Deadly if able.",
-                "newValue": "If the item is not Enchanted, Enchant it with Deadly if able."
-              }
-            ]
-          },
-          {
-            "type": "Radiant",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "If the item is not enchanted, enchant it with Radiant if able.",
-                "newValue": "If the item is not Enchanted, Enchant it with Radiant if able."
-              }
-            ]
-          },
-          {
-            "type": "Obsidian",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "If the item is not enchanted, enchant it with Obsidian if able.",
-                "newValue": "If the item is not Enchanted, Enchant it with Obsidian if able."
-              }
-            ]
-          }
-        ]
-      }
+      ]
     },
     "e2a09e24-d454-450f-a39a-23f505ee32fa": {
       "metadata": {
@@ -74686,11 +71993,6 @@ const data: PatchNotes = {
           "index": 1,
           "oldValue": "Deal (5/15/25) damage.",
           "newValue": "Deal (5/15/25) Damage"
-        },
-        {
-          "index": 2,
-          "oldValue": "If this is your only friend, it has (+50%/+75%/+100%) Crit Chance.",
-          "newValue": "If this is your only Friend, it has (+50%/+75%/+100%) Crit Chance."
         }
       ],
       "enchantments": {
@@ -75062,24 +72364,6 @@ const data: PatchNotes = {
         ]
       }
     },
-    "5ded844c-5279-4c30-9198-309fba0b651b": {
-      "metadata": {
-        "id": "5ded844c-5279-4c30-9198-309fba0b651b",
-        "name": "Bag of Jewels",
-        "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze",
-        "currentHero": "Common",
-        "currentSize": "Small",
-        "type": "item"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "Sells for gold",
-          "newValue": "Sells for Gold"
-        }
-      ]
-    },
     "8caf721d-fe85-4a67-a97a-947788a100c5": {
       "metadata": {
         "id": "8caf721d-fe85-4a67-a97a-947788a100c5",
@@ -75095,11 +72379,6 @@ const data: PatchNotes = {
           "index": 1,
           "oldValue": "Deal (10/20/30/40) damage.",
           "newValue": "Deal (10/20/30/40) Damage"
-        },
-        {
-          "index": 2,
-          "oldValue": "This item's cooldown is reduced by 3 seconds if you have at least 4 other Dinosaurs, Tools or Relics.",
-          "newValue": "This item's Cooldown is reduced by 3 seconds if you have at least 4 other Dinosaurs, Tools or Relics."
         }
       ],
       "enchantments": {
@@ -75224,11 +72503,6 @@ const data: PatchNotes = {
           "index": 1,
           "oldValue": "Deal (15/20/25) damage for each Friend you have.",
           "newValue": "Deal (15/20/25) Damage for each Friend you have"
-        },
-        {
-          "index": 2,
-          "oldValue": "This item's cooldown is reduced by 1 second for each adjacent Friend.",
-          "newValue": "This item's Cooldown is reduced by 1 second for each adjacent Friend."
         }
       ],
       "enchantments": {
@@ -75728,11 +73002,6 @@ const data: PatchNotes = {
         {
           "index": 1,
           "oldValue": "Your weapons gain (4/8/12) damage for the fight.",
-          "newValue": null
-        },
-        {
-          "index": 1,
-          "oldValue": null,
           "newValue": "Your Weapons gain (4/8/12) Damage for the fight"
         }
       ],
@@ -75836,16 +73105,6 @@ const data: PatchNotes = {
             ]
           },
           {
-            "type": "Obsidian",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "This has double damage bonus.",
-                "newValue": "This has double Damage bonus."
-              }
-            ]
-          },
-          {
             "type": "Radiant",
             "tooltipChanges": [
               {
@@ -75883,11 +73142,6 @@ const data: PatchNotes = {
           "index": 2,
           "oldValue": "When your enemy uses a Weapon or Burn item, Charge this 2 second(s).",
           "newValue": null
-        },
-        {
-          "index": 3,
-          "oldValue": "The first time you fall below half health each fight, use this.",
-          "newValue": "The first time you fall below half Health each fight, use this."
         },
         {
           "index": 2,
@@ -76007,11 +73261,6 @@ const data: PatchNotes = {
           "index": 1,
           "oldValue": "Shield 10.",
           "newValue": "Shield 10"
-        },
-        {
-          "index": 2,
-          "oldValue": "When you use a Weapon, this gains (+20/+30/+40/+50) shield for the fight.",
-          "newValue": "When you use a Weapon, this gains (+20/+30/+40/+50) Shield for the fight."
         },
         {
           "index": 3,
@@ -76390,11 +73639,6 @@ const data: PatchNotes = {
           "index": 1,
           "oldValue": "Deal 40 damage.",
           "newValue": "Deal 40 Damage"
-        },
-        {
-          "index": 2,
-          "oldValue": "When you Haste, this gains (20/40/60) damage for the fight.",
-          "newValue": "When you Haste, this gains (20/40/60) Damage for the fight."
         }
       ],
       "enchantments": {
@@ -76509,11 +73753,6 @@ const data: PatchNotes = {
           "index": 2,
           "oldValue": "Deal 20 damage.",
           "newValue": "Deal 20 Damage"
-        },
-        {
-          "index": 3,
-          "oldValue": "When you Crit, double this item's damage for the fight.",
-          "newValue": "When you Crit, double this item's Damage for the fight."
         }
       ],
       "enchantments": {
@@ -76841,33 +74080,6 @@ const data: PatchNotes = {
         ]
       }
     },
-    "da766a09-0352-4966-829f-20bda8da48d7": {
-      "metadata": {
-        "id": "da766a09-0352-4966-829f-20bda8da48d7",
-        "name": "Med Kit",
-        "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze",
-        "currentHero": "Common",
-        "currentSize": "Small",
-        "type": "item"
-      },
-      "enchantments": {
-        "added": [],
-        "removed": [],
-        "modified": [
-          {
-            "type": "Obsidian",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you sell this, your leftmost Weapon item gains +20 damage.",
-                "newValue": "When you sell this, your leftmost Weapon item gains +20 Damage."
-              }
-            ]
-          }
-        ]
-      }
-    },
     "20d85338-b625-4b9a-95a7-8a60805e061f": {
       "metadata": {
         "id": "20d85338-b625-4b9a-95a7-8a60805e061f",
@@ -77131,13 +74343,6 @@ const data: PatchNotes = {
         "currentSize": "Medium",
         "type": "item"
       },
-      "tooltips": [
-        {
-          "index": 2,
-          "oldValue": "When you use a small item, charge this 1 second(s).",
-          "newValue": "When you use a Small item, charge this 1 second(s)."
-        }
-      ],
       "enchantments": {
         "added": [],
         "removed": [],
@@ -77258,46 +74463,6 @@ const data: PatchNotes = {
         "removed": [],
         "modified": [
           {
-            "type": "Heavy",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "The first time you fall below half health each fight, Slow 3 items for 2 second(s).",
-                "newValue": "The first time you fall below half Health each fight, Slow 3 items for 2 second(s)."
-              }
-            ]
-          },
-          {
-            "type": "Icy",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "The first time you fall below half health each fight, Freeze 2 items for 2 second(s).",
-                "newValue": "The first time you fall below half Health each fight, Freeze 2 items for 2 second(s)."
-              }
-            ]
-          },
-          {
-            "type": "Turbo",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "The first time you fall below half health each fight, Haste 3 items for 2 second(s).",
-                "newValue": "The first time you fall below half Health each fight, Haste 3 items for 2 second(s)."
-              }
-            ]
-          },
-          {
-            "type": "Shielded",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "The first time you fall below half health each fight, Shield 60.",
-                "newValue": "The first time you fall below half Health each fight, Shield 60."
-              }
-            ]
-          },
-          {
             "type": "Restorative",
             "tooltipChanges": [
               {
@@ -77308,57 +74473,12 @@ const data: PatchNotes = {
             ]
           },
           {
-            "type": "Toxic",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "The first time you fall below half health each fight, poison 6.",
-                "newValue": "The first time you fall below half Health each fight, Poison 6."
-              }
-            ]
-          },
-          {
-            "type": "Fiery",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "The first time you fall below half health each fight, burn 6.",
-                "newValue": "The first time you fall below half Health each fight, Burn 6."
-              }
-            ]
-          },
-          {
-            "type": "Shiny",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "This has double cooldown reduction.",
-                "newValue": "This has double Cooldown reduction."
-              }
-            ]
-          },
-          {
             "type": "Deadly",
             "tooltipChanges": [
               {
                 "index": 0,
                 "oldValue": "Your Vehicles have +50% Crit Chance.",
                 "newValue": "Your Vehicles have +15% Crit Chance."
-              }
-            ]
-          },
-          {
-            "type": "Obsidian",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "The first time you fall below half health each fight, Deal 60 damage.",
-                "newValue": null
-              },
-              {
-                "index": 0,
-                "oldValue": null,
-                "newValue": "The first time you fall below half Health each fight, deal 60 Damage."
               }
             ]
           }
@@ -78055,11 +75175,6 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": "When you use an aquatic item, slow 1 item for 3 second(s).",
-                "newValue": null
-              },
-              {
-                "index": 0,
-                "oldValue": null,
                 "newValue": "When you use an Aquatic item, Slow an item for 1 second(s)."
               }
             ]
@@ -78105,32 +75220,12 @@ const data: PatchNotes = {
             ]
           },
           {
-            "type": "Restorative",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you use an aquatic item, heal 30.",
-                "newValue": "When you use an Aquatic item, Heal 30."
-              }
-            ]
-          },
-          {
             "type": "Toxic",
             "tooltipChanges": [
               {
                 "index": 0,
                 "oldValue": "When you use an aquatic item, poison 2.",
                 "newValue": "When you use an Aquatic item, Poison 3."
-              }
-            ]
-          },
-          {
-            "type": "Fiery",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you use an aquatic item, burn 3.",
-                "newValue": "When you use an Aquatic item, Burn 3."
               }
             ]
           },
@@ -78321,11 +75416,6 @@ const data: PatchNotes = {
           "index": 1,
           "oldValue": "Deal (50/75/100/125) damage.",
           "newValue": "Deal (20/40/60/80) Damage"
-        },
-        {
-          "index": 2,
-          "oldValue": "At the start of each day, get a small item from any hero.",
-          "newValue": "At the start of each day, get a Small item from any hero."
         }
       ]
     },
@@ -78463,11 +75553,6 @@ const data: PatchNotes = {
         },
         {
           "index": 2,
-          "oldValue": "When you Burn, charge this 2 second(s).",
-          "newValue": "When you Burn, Charge this 2 second(s)."
-        },
-        {
-          "index": 2,
           "oldValue": null,
           "newValue": "An item starts Flying"
         }
@@ -78597,11 +75682,6 @@ const data: PatchNotes = {
         {
           "index": 2,
           "oldValue": "Deal damage equal to (10%/15%/20%) of your Max Health.",
-          "newValue": null
-        },
-        {
-          "index": 2,
-          "oldValue": null,
           "newValue": "Deal Damage equal to (15%/20%) of your Max Health"
         }
       ],
@@ -78831,24 +75911,6 @@ const data: PatchNotes = {
         ]
       }
     },
-    "5a9bd869-4614-4edf-941d-5f44e0bb1519": {
-      "metadata": {
-        "id": "5a9bd869-4614-4edf-941d-5f44e0bb1519",
-        "name": "Bar of Gold",
-        "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze",
-        "currentHero": "Common",
-        "currentSize": "Small",
-        "type": "item"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "Sells for gold",
-          "newValue": "Sells for Gold"
-        }
-      ]
-    },
     "f16f5464-02f0-4b00-9f7b-d7e7b65a1e80": {
       "metadata": {
         "id": "f16f5464-02f0-4b00-9f7b-d7e7b65a1e80",
@@ -78869,11 +75931,6 @@ const data: PatchNotes = {
           "index": 2,
           "oldValue": "Your Shield items gain (+10/+15) Shield for the fight.",
           "newValue": "Your Shield items gain (+10/+15) Shield for the fight"
-        },
-        {
-          "index": 3,
-          "oldValue": "When you use another non-weapon item, charge this 1 second(s).",
-          "newValue": "When you use another non-Weapon item, charge this 1 second(s)."
         }
       ],
       "enchantments": {
@@ -79237,16 +76294,6 @@ const data: PatchNotes = {
                 "index": 0,
                 "oldValue": "When you sell this, your leftmost Heal item gains +15 Heal.",
                 "newValue": "When you sell this, your leftmost Heal item gains +10 Heal."
-              }
-            ]
-          },
-          {
-            "type": "Obsidian",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you sell this, your leftmost Weapon item gains +10 damage.",
-                "newValue": "When you sell this, your leftmost Weapon item gains +10 Damage."
               }
             ]
           }
@@ -79658,11 +76705,6 @@ const data: PatchNotes = {
           "index": 1,
           "oldValue": "Deal (8/16/24/32) damage.",
           "newValue": "Deal (8/16/24/32) Damage"
-        },
-        {
-          "index": 2,
-          "oldValue": "This has double damage.",
-          "newValue": "This has double Damage."
         }
       ],
       "enchantments": {
@@ -80061,16 +77103,6 @@ const data: PatchNotes = {
                 "index": 0,
                 "oldValue": "When you sell this, your leftmost Heal item gains +15 Heal.",
                 "newValue": "When you sell this, your leftmost Heal item gains +10 Heal."
-              }
-            ]
-          },
-          {
-            "type": "Obsidian",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you sell this, your leftmost Weapon item gains +10 damage.",
-                "newValue": "When you sell this, your leftmost Weapon item gains +10 Damage."
               }
             ]
           }
@@ -81391,11 +78423,6 @@ const data: PatchNotes = {
       },
       "tooltips": [
         {
-          "index": 0,
-          "oldValue": "The weapon to the left of this has (+10/+20/+30/+50) damage.",
-          "newValue": "The Weapon to the left of this has (+10/+20/+30/+50) Damage."
-        },
-        {
           "index": 1,
           "oldValue": "If you have exactly one weapon, reduce its cooldown by (5%/10%/15%/20%).",
           "newValue": null
@@ -81427,11 +78454,6 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": "When you use the weapon to the left of this, Slow 1 item for 1 second(s).",
-                "newValue": null
-              },
-              {
-                "index": 0,
-                "oldValue": null,
                 "newValue": "When you use the Weapon to the left of this, Slow an item for 1 second(s)."
               }
             ]
@@ -81472,52 +78494,12 @@ const data: PatchNotes = {
             ]
           },
           {
-            "type": "Restorative",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you use the weapon to the left of this, heal 10.",
-                "newValue": "When you use the Weapon to the left of this, Heal 10."
-              }
-            ]
-          },
-          {
-            "type": "Toxic",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you use the weapon to the left of this, poison 1.",
-                "newValue": "When you use the Weapon to the left of this, Poison 1."
-              }
-            ]
-          },
-          {
             "type": "Fiery",
             "tooltipChanges": [
               {
                 "index": 0,
                 "oldValue": "When you use the weapon to the left of this, burn 2.",
                 "newValue": "When you use the Weapon to the left of this, Burn 1."
-              }
-            ]
-          },
-          {
-            "type": "Shiny",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "This has double bonus damage and double cooldown reduction.",
-                "newValue": "This has double bonus Damage and double Cooldown reduction."
-              }
-            ]
-          },
-          {
-            "type": "Obsidian",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "This has double damage bonus.",
-                "newValue": "This has double Damage bonus."
               }
             ]
           }
@@ -81667,11 +78649,6 @@ const data: PatchNotes = {
         {
           "index": 2,
           "oldValue": "Deal damage equal to your shield.",
-          "newValue": null
-        },
-        {
-          "index": 2,
-          "oldValue": null,
           "newValue": "Deal Damage equal to your Shield"
         }
       ],
@@ -81928,16 +78905,6 @@ const data: PatchNotes = {
                 "index": 0,
                 "oldValue": "When you sell this, your leftmost Heal item gains +15 Heal.",
                 "newValue": "When you sell this, your leftmost Heal item gains +10 Heal."
-              }
-            ]
-          },
-          {
-            "type": "Obsidian",
-            "tooltipChanges": [
-              {
-                "index": 0,
-                "oldValue": "When you sell this, your leftmost Weapon item gains +10 damage.",
-                "newValue": "When you sell this, your leftmost Weapon item gains +10 Damage."
               }
             ]
           }
@@ -86367,26 +83334,6 @@ const data: PatchNotes = {
         }
       ]
     },
-    "db94a1da-532e-42e1-af25-5033b0fc8bcb": {
-      "metadata": {
-        "id": "db94a1da-532e-42e1-af25-5033b0fc8bcb",
-        "name": "Essence Overflow",
-        "previousStartingTier": "Diamond",
-        "currentStartingTier": "Diamond",
-        "heroes": [
-          "Mak"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "Your weapons have + damage equal to your Regen.",
-          "newValue": "Your Weapons have + Damage equal to your Regen."
-        }
-      ]
-    },
     "3b3b1f2b-7f43-440d-807b-61eea3a65cb0": {
       "metadata": {
         "id": "3b3b1f2b-7f43-440d-807b-61eea3a65cb0",
@@ -86455,31 +83402,6 @@ const data: PatchNotes = {
         }
       ]
     },
-    "34ad2511-dec9-4e8f-8392-1cc691e77b87": {
-      "metadata": {
-        "id": "34ad2511-dec9-4e8f-8392-1cc691e77b87",
-        "name": "Deadly Eye",
-        "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze",
-        "heroes": [
-          "Pygmalien",
-          "Vanessa",
-          "Dooley",
-          "Jules",
-          "Stelle",
-          "Mak"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "Your Weapons have (+5%/+10%/+15%/+20%) Crit chance.",
-          "newValue": "Your Weapons have (+5%/+10%/+15%/+20%) Crit Chance."
-        }
-      ]
-    },
     "d2f910bc-3490-456f-8ab0-aedda752bc5c": {
       "metadata": {
         "id": "d2f910bc-3490-456f-8ab0-aedda752bc5c",
@@ -86500,50 +83422,6 @@ const data: PatchNotes = {
         }
       ]
     },
-    "369a6704-2727-4cea-be27-01b76c82df45": {
-      "metadata": {
-        "id": "369a6704-2727-4cea-be27-01b76c82df45",
-        "name": "Hunker Down",
-        "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver",
-        "heroes": [
-          "Common"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "When the Sandstorm starts you take (25%/50%/75%) less damage for the rest of the fight.",
-          "newValue": "When the Sandstorm starts you take (25%/50%/75%) less Damage for the rest of the fight."
-        }
-      ]
-    },
-    "ef4e5045-91c6-4973-8aed-1f29300e1db4": {
-      "metadata": {
-        "id": "ef4e5045-91c6-4973-8aed-1f29300e1db4",
-        "name": "OverHeal Regeneration",
-        "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver",
-        "heroes": [
-          "Pygmalien"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "name": {
-        "oldValue": "Overheal Regeneration",
-        "newValue": "OverHeal Regeneration"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "When you Over-heal, gain (5/10/15) Regen for the fight.",
-          "newValue": "When you Over-Heal, gain (5/10/15) Regen for the fight."
-        }
-      ]
-    },
     "1fb47cc1-c38f-4240-8f7f-04a78222f5e7": {
       "metadata": {
         "id": "1fb47cc1-c38f-4240-8f7f-04a78222f5e7",
@@ -86560,41 +83438,7 @@ const data: PatchNotes = {
       "name": {
         "oldValue": "Toxic",
         "newValue": "Toxicity"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "When you poison, your weapons gain (3/6/9) damage for the fight.",
-          "newValue": null
-        },
-        {
-          "index": 0,
-          "oldValue": null,
-          "newValue": "When you Poison, your Weapons gain (3/6/9) Damage for the fight."
-        }
-      ]
-    },
-    "37efcae2-779d-4a60-95c6-0d663d7e0113": {
-      "metadata": {
-        "id": "37efcae2-779d-4a60-95c6-0d663d7e0113",
-        "name": "Double Down",
-        "previousStartingTier": "Diamond",
-        "currentStartingTier": "Diamond",
-        "heroes": [
-          "Vanessa",
-          "Dooley",
-          "Pygmalien"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "The first time you fall below half health each fight, double the damage of your leftmost Weapon for the fight.",
-          "newValue": "The first time you fall below half Health each fight, double the Damage of your leftmost Weapon for the fight."
-        }
-      ]
+      }
     },
     "0045d15e-ac74-436f-a200-eeedab7baf90": {
       "metadata": {
@@ -86619,110 +83463,6 @@ const data: PatchNotes = {
           "index": 0,
           "oldValue": null,
           "newValue": "When you visit a Merchant, gain (25/50/75) Max Health."
-        }
-      ]
-    },
-    "c7261fd4-ef40-4091-abb2-dcf5694ae2ac": {
-      "metadata": {
-        "id": "c7261fd4-ef40-4091-abb2-dcf5694ae2ac",
-        "name": "Endurance",
-        "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver",
-        "heroes": [
-          "Pygmalien"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "When you use a weapon, your Heal items gain (+10/+20/+30) Heal for the fight.",
-          "newValue": "When you use a Weapon, your Heal items gain (+10/+20/+30) Heal for the fight."
-        }
-      ]
-    },
-    "c5936035-d32a-4d82-8dfc-44deb993b5ea": {
-      "metadata": {
-        "id": "c5936035-d32a-4d82-8dfc-44deb993b5ea",
-        "name": "Pickpocket",
-        "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze",
-        "heroes": [
-          "Common"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "At the start of each fight, gain (1/2/3/4) gold.",
-          "newValue": "At the start of each fight, gain (1/2/3/4) Gold."
-        }
-      ]
-    },
-    "71433809-d05a-4544-9959-aff20ae5db93": {
-      "metadata": {
-        "id": "71433809-d05a-4544-9959-aff20ae5db93",
-        "name": "Iron Sharpens Iron",
-        "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver",
-        "heroes": [
-          "Vanessa",
-          "Jules",
-          "Mak"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "Your leftmost Weapon has +2 damage. When you buy a weapon, increase this bonus by (2/3/4).",
-          "newValue": "Your leftmost Weapon has +2 Damage. When you buy a Weapon, increase this bonus by (2/3/4)."
-        }
-      ]
-    },
-    "abba2590-426d-449f-8f19-4a3bd51ae4fe": {
-      "metadata": {
-        "id": "abba2590-426d-449f-8f19-4a3bd51ae4fe",
-        "name": "Industrialist",
-        "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold",
-        "heroes": [
-          "Pygmalien"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "The cooldown of your Properties are reduced by (10%/15%).",
-          "newValue": "The Cooldown of your Properties are reduced by (10%/15%)."
-        }
-      ]
-    },
-    "a3695c78-63e4-45a9-a2b9-9b2827325527": {
-      "metadata": {
-        "id": "a3695c78-63e4-45a9-a2b9-9b2827325527",
-        "name": "Quality over Quantity",
-        "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold",
-        "heroes": [
-          "Vanessa",
-          "Pygmalien",
-          "Mak"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "If you have exactly one weapon, it has Lifesteal and (5%/10%) Crit Chance.",
-          "newValue": "If you have exactly one Weapon, it has Lifesteal and (5%/10%) Crit Chance."
         }
       ]
     },
@@ -86779,26 +83519,6 @@ const data: PatchNotes = {
         }
       ]
     },
-    "8e2f3e1c-bd00-4b58-b746-a6ae18f804c3": {
-      "metadata": {
-        "id": "8e2f3e1c-bd00-4b58-b746-a6ae18f804c3",
-        "name": "Hyper Focus",
-        "previousStartingTier": "Diamond",
-        "currentStartingTier": "Diamond",
-        "heroes": [
-          "Common"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "If you have only one medium item, its cooldown is reduced by 25%.",
-          "newValue": "If you have only one Medium item, its Cooldown is reduced by 25%."
-        }
-      ]
-    },
     "13f4df45-8f29-4a48-8a2b-b8176e17c85d": {
       "metadata": {
         "id": "13f4df45-8f29-4a48-8a2b-b8176e17c85d",
@@ -86847,53 +83567,6 @@ const data: PatchNotes = {
           "index": 0,
           "oldValue": null,
           "newValue": "The first time you fall below half Health each fight, double an enemy's Poison."
-        }
-      ]
-    },
-    "c3f674a0-4025-45e1-b611-bf70fd6f279c": {
-      "metadata": {
-        "id": "c3f674a0-4025-45e1-b611-bf70fd6f279c",
-        "name": "Lifting",
-        "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver",
-        "heroes": [
-          "Pygmalien",
-          "Vanessa",
-          "Jules"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "Your weapons have +1 Damage. When you buy a Weapon, increase this bonus by (+1/+2/+3) Damage.",
-          "newValue": "Your Weapons have +1 Damage. When you buy a Weapon, increase this bonus by (+1/+2/+3) Damage."
-        }
-      ]
-    },
-    "f38a0fb0-b94a-4701-9330-d14a943ac5c4": {
-      "metadata": {
-        "id": "f38a0fb0-b94a-4701-9330-d14a943ac5c4",
-        "name": "Right Eye",
-        "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze",
-        "heroes": [
-          "Pygmalien",
-          "Vanessa",
-          "Dooley",
-          "Jules",
-          "Stelle",
-          "Mak"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "Your rightmost item has (+8%/+16%/+24%/+32%) Crit chance.",
-          "newValue": "Your rightmost item has (+8%/+16%/+24%/+32%) Crit Chance."
         }
       ]
     },
@@ -87029,46 +83702,6 @@ const data: PatchNotes = {
         }
       ]
     },
-    "639fdb70-8dde-4301-ab75-426556a65eb6": {
-      "metadata": {
-        "id": "639fdb70-8dde-4301-ab75-426556a65eb6",
-        "name": "Trickle Down Economics",
-        "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold",
-        "heroes": [
-          "Common"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "When you use a large item, Haste your other items for (1/2) second(s).",
-          "newValue": "When you use a Large item, Haste your other items for (1/2) second(s)."
-        }
-      ]
-    },
-    "b2e947ce-a8d9-46e0-8249-22a6a97fbffc": {
-      "metadata": {
-        "id": "b2e947ce-a8d9-46e0-8249-22a6a97fbffc",
-        "name": "Blizzard",
-        "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold",
-        "heroes": [
-          "Common"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "The first time you use an item each fight, Freeze all non-weapon items for (1/2) second(s).",
-          "newValue": "The first time you use an item each fight, Freeze all non-Weapon items for (1/2) second(s)."
-        }
-      ]
-    },
     "1e75f81b-f982-4642-b33d-497336784f9e": {
       "metadata": {
         "id": "1e75f81b-f982-4642-b33d-497336784f9e",
@@ -87189,26 +83822,6 @@ const data: PatchNotes = {
         }
       ]
     },
-    "cdf1d8f2-851b-43a8-bc8b-6d3ce2d4bca9": {
-      "metadata": {
-        "id": "cdf1d8f2-851b-43a8-bc8b-6d3ce2d4bca9",
-        "name": "Tall Buildings",
-        "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold",
-        "heroes": [
-          "Pygmalien"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "When you use a Property, haste items adjacent to it (1/2) second(s).",
-          "newValue": "When you use a Property, Haste items adjacent to it (1/2) second(s)."
-        }
-      ]
-    },
     "aa603f52-3788-40c2-bb99-53e92a69b3f5": {
       "metadata": {
         "id": "aa603f52-3788-40c2-bb99-53e92a69b3f5",
@@ -87231,131 +83844,6 @@ const data: PatchNotes = {
           "index": 0,
           "oldValue": null,
           "newValue": "The first time you use an item each fight, Slow an item for (3/4/5/6) second(s)."
-        }
-      ]
-    },
-    "d071e4de-f87f-41b5-b02d-d622e35c0b4d": {
-      "metadata": {
-        "id": "d071e4de-f87f-41b5-b02d-d622e35c0b4d",
-        "name": "Juggler",
-        "previousStartingTier": "Diamond",
-        "currentStartingTier": "Diamond",
-        "heroes": [
-          "Common"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "When you use a small item, Charge a large item for 1 second(s).",
-          "newValue": "When you use a Small item, Charge a Large item for 1 second(s)."
-        }
-      ]
-    },
-    "40118425-c016-4400-826d-f6ea40b2fc39": {
-      "metadata": {
-        "id": "40118425-c016-4400-826d-f6ea40b2fc39",
-        "name": "Flashy Mechanic",
-        "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver",
-        "heroes": [
-          "Vanessa",
-          "Dooley",
-          "Jules",
-          "Stelle"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "When you use a Tool, items adjacent to it gain (3%/6%/9%) Crit chance.",
-          "newValue": "When you use a Tool, items adjacent to it gain (3%/6%/9%) Crit Chance."
-        }
-      ]
-    },
-    "81881146-f3ba-4092-9041-9f68cc30b732": {
-      "metadata": {
-        "id": "81881146-f3ba-4092-9041-9f68cc30b732",
-        "name": "Lethargy",
-        "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver",
-        "heroes": [
-          "Pygmalien",
-          "Stelle",
-          "Mak"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "All item cooldowns are increased by (1/2/3) second(s).",
-          "newValue": "All item Cooldowns are increased by (1/2/3) second(s)."
-        }
-      ]
-    },
-    "5de1aaae-adb9-48a4-81fc-aff714956656": {
-      "metadata": {
-        "id": "5de1aaae-adb9-48a4-81fc-aff714956656",
-        "name": "Pyromania",
-        "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver",
-        "heroes": [
-          "Common"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "When you use a large item, Burn (10/20/30).",
-          "newValue": "When you use a Large item, Burn (10/20/30)."
-        }
-      ]
-    },
-    "c2e26fae-a435-44ff-8613-8977247ee972": {
-      "metadata": {
-        "id": "c2e26fae-a435-44ff-8613-8977247ee972",
-        "name": "Intrusion Countermeasures",
-        "previousStartingTier": "Diamond",
-        "currentStartingTier": "Diamond",
-        "heroes": [
-          "Dooley"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "The first time you fall below half health in a fight, use your Friends.",
-          "newValue": "The first time you fall below half Health in a fight, use your Friends."
-        }
-      ]
-    },
-    "3d75530d-ebad-46fa-a0da-04df6cdb9e5a": {
-      "metadata": {
-        "id": "3d75530d-ebad-46fa-a0da-04df6cdb9e5a",
-        "name": "Reinforced Steel",
-        "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver",
-        "heroes": [
-          "Pygmalien"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "When you use a Property, your Weapons gain (+5/+10/+15) damage and your Shield items gain (+5/+10/+15) shield for the fight.",
-          "newValue": "When you use a Property, your Weapons gain (+5/+10/+15) Damage and your Shield items gain (+5/+10/+15) Shield for the fight."
         }
       ]
     },
@@ -87384,26 +83872,6 @@ const data: PatchNotes = {
         }
       ]
     },
-    "c1ffec09-0567-47fe-b80e-4f55f62ee7fd": {
-      "metadata": {
-        "id": "c1ffec09-0567-47fe-b80e-4f55f62ee7fd",
-        "name": "Anything to Win",
-        "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver",
-        "heroes": [
-          "Common"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "When you use a non-weapon item, Burn (1/2/3) and Poison (1/2/3).",
-          "newValue": "When you use a non-Weapon item, Burn (1/2/3) and Poison (1/2/3)."
-        }
-      ]
-    },
     "d5b180a2-9dfa-43e3-bfb9-3e15dac0398e": {
       "metadata": {
         "id": "d5b180a2-9dfa-43e3-bfb9-3e15dac0398e",
@@ -87421,66 +83889,6 @@ const data: PatchNotes = {
           "index": 0,
           "oldValue": "The first time you use an item, Haste 1 Weapon (3/4/5/6) seconds.",
           "newValue": "The first time you use an item, Haste a Weapon (3/4/5/6) seconds."
-        }
-      ]
-    },
-    "a2351de3-f077-4631-81fa-5b0f8c2cbb23": {
-      "metadata": {
-        "id": "a2351de3-f077-4631-81fa-5b0f8c2cbb23",
-        "name": "Into the Void",
-        "previousStartingTier": "Diamond",
-        "currentStartingTier": "Diamond",
-        "heroes": [
-          "Common"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "The first time you use an item, destroy an item on each player's board for the fight.",
-          "newValue": "The first time you use an item, destroy an item on each Player's board for the fight."
-        }
-      ]
-    },
-    "d179345d-953d-4c59-a324-5c2504951644": {
-      "metadata": {
-        "id": "d179345d-953d-4c59-a324-5c2504951644",
-        "name": "Emergency Draught",
-        "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold",
-        "heroes": [
-          "Mak"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "The first time you fall below half health each fight, gain (1/2) times your Regen for the fight.",
-          "newValue": "The first time you fall below half Health each fight, gain (1/2) times your Regen for the fight."
-        }
-      ]
-    },
-    "b2cc190c-ddbd-487c-b99a-ed21150b6c10": {
-      "metadata": {
-        "id": "b2cc190c-ddbd-487c-b99a-ed21150b6c10",
-        "name": "Chocoholic",
-        "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold",
-        "heroes": [
-          "Pygmalien"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "When you sell a medium or large item, get (1/2) Chocolate Bar(s).",
-          "newValue": "When you sell a Medium or Large item, get (1/2) Chocolate Bar(s)."
         }
       ]
     },
@@ -87509,67 +83917,6 @@ const data: PatchNotes = {
         }
       ]
     },
-    "eea71cd9-2688-4c4d-99e7-6eee44cf47a2": {
-      "metadata": {
-        "id": "eea71cd9-2688-4c4d-99e7-6eee44cf47a2",
-        "name": "Panic",
-        "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze",
-        "heroes": [
-          "Common"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "The first time you fall below 50% health each fight, Reload (1/2/3/4) item(s) and Charge (1/2/3/4) Ammo items 1 second.",
-          "newValue": "The first time you fall below 50% Health each fight, Reload (1/2/3/4) item(s) and Charge (1/2/3/4) Ammo items 1 second."
-        }
-      ]
-    },
-    "13bcf77b-0ad0-4dd3-85ed-927799691a72": {
-      "metadata": {
-        "id": "13bcf77b-0ad0-4dd3-85ed-927799691a72",
-        "name": "Tempering",
-        "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver",
-        "heroes": [
-          "Vanessa",
-          "Jules"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "When you use a weapon, it gains (+3/+6/+9) damage for the fight.",
-          "newValue": "When you use a Weapon, it gains (+3/+6/+9) Damage for the fight."
-        }
-      ]
-    },
-    "9215b678-2833-427b-bc97-75a90968c634": {
-      "metadata": {
-        "id": "9215b678-2833-427b-bc97-75a90968c634",
-        "name": "Ravenous",
-        "previousStartingTier": "Legendary",
-        "currentStartingTier": "Legendary",
-        "heroes": [
-          "Common"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "The first time you fall below half health each fight, destroy an item for the fight.",
-          "newValue": "The first time you fall below half Health each fight, destroy an item for the fight."
-        }
-      ]
-    },
     "f3abf6be-b28d-42f5-a239-7208c2dcde25": {
       "metadata": {
         "id": "f3abf6be-b28d-42f5-a239-7208c2dcde25",
@@ -87588,48 +83935,6 @@ const data: PatchNotes = {
           "index": 0,
           "oldValue": "The first (5/10) times you Slow each fight, Haste 1 vehicle for 2 second(s).",
           "newValue": "The first (5/10) times you Slow each fight, Haste a Vehicle for 2 second(s)."
-        }
-      ]
-    },
-    "76ae19fd-2783-4c21-919a-cdce66bb8948": {
-      "metadata": {
-        "id": "76ae19fd-2783-4c21-919a-cdce66bb8948",
-        "name": "Workin' Hard",
-        "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold",
-        "heroes": [
-          "Dooley",
-          "Jules",
-          "Stelle"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "Your weapons have (+7/+14) Damage for each Tool you have.",
-          "newValue": "Your Weapons have (+7/+14) Damage for each Tool you have."
-        }
-      ]
-    },
-    "73722d74-be04-4c9a-a925-6f235feeb11f": {
-      "metadata": {
-        "id": "73722d74-be04-4c9a-a925-6f235feeb11f",
-        "name": "Void Render",
-        "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold",
-        "heroes": [
-          "Common"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "When you destroy an item during combat, your Weapons gain (100/200) damage and your burn items gain (10/20) Burn for the fight.",
-          "newValue": "When you destroy an item during combat, your Weapons gain (100/200) Damage and your Burn items gain (10/20) Burn for the fight."
         }
       ]
     },
@@ -87677,28 +83982,6 @@ const data: PatchNotes = {
           "index": 0,
           "oldValue": "The first (5/10) times you Slow each fight, Charge 1 Heal item 1 second(s).",
           "newValue": "The first (5/10) times you Slow each fight, Charge a Heal item 1 second(s)."
-        }
-      ]
-    },
-    "f0955884-1ea7-4cac-ad73-c30798d3642c": {
-      "metadata": {
-        "id": "f0955884-1ea7-4cac-ad73-c30798d3642c",
-        "name": "Sharp Corners",
-        "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver",
-        "heroes": [
-          "Pygmalien",
-          "Dooley",
-          "Stelle"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "When you Shield, your weapons gain (3/6/9) damage for the fight.",
-          "newValue": "When you Shield, your Weapons gain (3/6/9) Damage for the fight."
         }
       ]
     },
@@ -87805,26 +84088,6 @@ const data: PatchNotes = {
         }
       ]
     },
-    "d4471fb1-a60b-4f64-9c60-ae0e8c930306": {
-      "metadata": {
-        "id": "d4471fb1-a60b-4f64-9c60-ae0e8c930306",
-        "name": "Pacifist",
-        "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold",
-        "heroes": [
-          "Pygmalien"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "If you have no weapons, your items' cooldowns are reduced by (10%/15%).",
-          "newValue": "If you have no Weapons, your items' Cooldowns are reduced by (10%/15%)."
-        }
-      ]
-    },
     "ff37ca26-2e4a-49bc-982d-49ff434e7295": {
       "metadata": {
         "id": "ff37ca26-2e4a-49bc-982d-49ff434e7295",
@@ -87879,95 +84142,6 @@ const data: PatchNotes = {
         }
       ]
     },
-    "d675442d-7d59-4f13-9209-6e1a4ae7a1fc": {
-      "metadata": {
-        "id": "d675442d-7d59-4f13-9209-6e1a4ae7a1fc",
-        "name": "Burning Rage",
-        "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze",
-        "heroes": [
-          "Common"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "When you Burn, your Weapons gain (+5/+10/+15/+20) damage for the fight.",
-          "newValue": "When you Burn, your Weapons gain (+5/+10/+15/+20) Damage for the fight."
-        }
-      ]
-    },
-    "760fd7aa-fce6-4779-818e-99ba51274010": {
-      "metadata": {
-        "id": "760fd7aa-fce6-4779-818e-99ba51274010",
-        "name": "Like Clockwork",
-        "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze",
-        "heroes": [
-          "Dooley"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "When you level up, Your Weapons gain (+5/+10/+15/+20) damage. If you have a Weapon Core, double this.",
-          "newValue": "When you level up, Your Weapons gain (+5/+10/+15/+20) Damage. If you have a Weapon Core, double this."
-        }
-      ]
-    },
-    "4b491993-ccc9-4021-a347-5492a51f7b30": {
-      "metadata": {
-        "id": "4b491993-ccc9-4021-a347-5492a51f7b30",
-        "name": "Second Wind",
-        "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver",
-        "heroes": [
-          "Pygmalien",
-          "Dooley",
-          "Mak"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "The first time you use a Large item each fight, heal (20%/40%/60%) of your max health.",
-          "newValue": null
-        },
-        {
-          "index": 0,
-          "oldValue": null,
-          "newValue": "The first time you use a Large item each fight, Heal (20%/40%/60%) of your Max Health."
-        }
-      ]
-    },
-    "f7ae1ab0-16dc-46af-9a77-b23b7f33104f": {
-      "metadata": {
-        "id": "f7ae1ab0-16dc-46af-9a77-b23b7f33104f",
-        "name": "Backup Defenses",
-        "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold",
-        "heroes": [
-          "Pygmalien",
-          "Dooley",
-          "Stelle"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "The first time you fall below half health each fight, Shield equal to (20%/30%) of your Max Health.",
-          "newValue": "The first time you fall below half Health each fight, Shield equal to (20%/30%) of your Max Health."
-        }
-      ]
-    },
     "8e4fed70-3ad9-488d-8c77-f926c1621544": {
       "metadata": {
         "id": "8e4fed70-3ad9-488d-8c77-f926c1621544",
@@ -87996,31 +84170,6 @@ const data: PatchNotes = {
           "index": 0,
           "oldValue": null,
           "newValue": "The first time an enemy falls below half Health each fight, your items' Cooldowns are halved for the fight."
-        }
-      ]
-    },
-    "5ff845f5-6cb5-40b8-957f-8a6ae47c3962": {
-      "metadata": {
-        "id": "5ff845f5-6cb5-40b8-957f-8a6ae47c3962",
-        "name": "Red Envelope",
-        "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze",
-        "heroes": [
-          "Vanessa",
-          "Pygmalien",
-          "Dooley",
-          "Jules",
-          "Stelle",
-          "Mak"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "When you buy this, gain 10 gold.",
-          "newValue": "When you buy this, gain 10 Gold."
         }
       ]
     },
@@ -88075,26 +84224,6 @@ const data: PatchNotes = {
           "index": 0,
           "oldValue": null,
           "newValue": "The first (5/10) times you use a Core each fight, Haste an item for 2 second(s)."
-        }
-      ]
-    },
-    "544be6e9-ff3e-4cb6-9759-498ac2d24d71": {
-      "metadata": {
-        "id": "544be6e9-ff3e-4cb6-9759-498ac2d24d71",
-        "name": "Relax Bro",
-        "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze",
-        "heroes": [
-          "Common"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "When you use a small item, gain (1/2/3/4) Regen for the fight.",
-          "newValue": "When you use a Small item, gain (1/2/3/4) Regen for the fight."
         }
       ]
     },
@@ -88181,133 +84310,6 @@ const data: PatchNotes = {
         }
       ]
     },
-    "09f668a1-82f6-42d5-94fa-88af3568edd8": {
-      "metadata": {
-        "id": "09f668a1-82f6-42d5-94fa-88af3568edd8",
-        "name": "Hypnotic Drain",
-        "previousStartingTier": "Diamond",
-        "currentStartingTier": "Diamond",
-        "heroes": [
-          "Common"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "When you use a weapon with Lifesteal, Freeze a smaller item for 2 second(s).",
-          "newValue": "When you use a Weapon with Lifesteal, Freeze a Smaller item for 2 second(s)."
-        }
-      ]
-    },
-    "b9ac862b-7599-4d1c-96c7-99e4edaad05f": {
-      "metadata": {
-        "id": "b9ac862b-7599-4d1c-96c7-99e4edaad05f",
-        "name": "Reserve Shield",
-        "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver",
-        "heroes": [
-          "Pygmalien",
-          "Dooley",
-          "Stelle"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "The first time you use a Large item each fight, Shield equal to (10%/20%/30%) of your max health.",
-          "newValue": "The first time you use a Large item each fight, Shield equal to (10%/20%/30%) of your Max Health."
-        }
-      ]
-    },
-    "05ec8652-3c5f-4cba-acd1-c3eee8e49d44": {
-      "metadata": {
-        "id": "05ec8652-3c5f-4cba-acd1-c3eee8e49d44",
-        "name": "Healthy Heart",
-        "previousStartingTier": "Diamond",
-        "currentStartingTier": "Diamond",
-        "heroes": [
-          "Pygmalien",
-          "Vanessa",
-          "Dooley",
-          "Jules",
-          "Stelle",
-          "Mak"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "The first time you fall below half health each fight, Heal for 30% of your Max Health and Cleanse half your Burn and Poison.",
-          "newValue": "The first time you fall below half Health each fight, Heal for 30% of your Max Health and Cleanse half your Burn and Poison."
-        }
-      ]
-    },
-    "8b513e67-9c49-4fed-a7e4-335d982367ac": {
-      "metadata": {
-        "id": "8b513e67-9c49-4fed-a7e4-335d982367ac",
-        "name": "Small Refresh",
-        "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze",
-        "heroes": [
-          "Common"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "When you use a small item, Heal (5/10/15/20).",
-          "newValue": "When you use a Small item, Heal (5/10/15/20)."
-        }
-      ]
-    },
-    "b21d98f7-d677-4598-8b53-5bfd8301d26a": {
-      "metadata": {
-        "id": "b21d98f7-d677-4598-8b53-5bfd8301d26a",
-        "name": "Petrifying Gaze",
-        "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver",
-        "heroes": [
-          "Common"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "The first time you fall below half health each fight, Freeze all enemy items for (1/2/3) second(s).",
-          "newValue": "The first time you fall below half Health each fight, Freeze all enemy items for (1/2/3) second(s)."
-        }
-      ]
-    },
-    "6550ba8c-8d90-41f8-82c8-a0af040458ce": {
-      "metadata": {
-        "id": "6550ba8c-8d90-41f8-82c8-a0af040458ce",
-        "name": "Depth Charge",
-        "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold",
-        "heroes": [
-          "Vanessa"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "If you have exactly one weapon, it has (+5/+10) Max Ammo.",
-          "newValue": "If you have exactly one Weapon, it has (+5/+10) Max Ammo."
-        }
-      ]
-    },
     "b6334c78-623c-4662-8642-8e05555d873a": {
       "metadata": {
         "id": "b6334c78-623c-4662-8642-8e05555d873a",
@@ -88333,31 +84335,6 @@ const data: PatchNotes = {
           "index": 0,
           "oldValue": null,
           "newValue": "The first time you Haste each fight, Freeze an item for (2/3/4) second(s)."
-        }
-      ]
-    },
-    "b3c4ed70-958a-42e5-b4d4-16b27c03ac54": {
-      "metadata": {
-        "id": "b3c4ed70-958a-42e5-b4d4-16b27c03ac54",
-        "name": "Knife Tricks",
-        "previousStartingTier": "Diamond",
-        "currentStartingTier": "Diamond",
-        "heroes": [
-          "Vanessa",
-          "Pygmalien",
-          "Dooley",
-          "Jules",
-          "Stelle",
-          "Mak"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "When you use a weapon, reduce its cooldown by 4% for the fight.",
-          "newValue": "When you use a Weapon, reduce its Cooldown by 4% for the fight."
         }
       ]
     },
@@ -88410,46 +84387,6 @@ const data: PatchNotes = {
         }
       ]
     },
-    "12291452-e5c6-4d98-98c6-69f766536dbd": {
-      "metadata": {
-        "id": "12291452-e5c6-4d98-98c6-69f766536dbd",
-        "name": "Critical Aid",
-        "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze",
-        "heroes": [
-          "Pygmalien"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "Your Heal items have (+5%/+10%/+15%/+20%) Crit chance.",
-          "newValue": "Your Heal items have (+5%/+10%/+15%/+20%) Crit Chance."
-        }
-      ]
-    },
-    "3c42764f-2a89-4fa2-b901-ca2ec127c411": {
-      "metadata": {
-        "id": "3c42764f-2a89-4fa2-b901-ca2ec127c411",
-        "name": "Prosperity",
-        "previousStartingTier": "Diamond",
-        "currentStartingTier": "Diamond",
-        "heroes": [
-          "Common"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "Your Shield items have + Shield equal to the value of your Items.",
-          "newValue": "Your Shield items have + Shield equal to the value of your items."
-        }
-      ]
-    },
     "549263e2-4ab4-4fe8-a552-e94486b3e91b": {
       "metadata": {
         "id": "549263e2-4ab4-4fe8-a552-e94486b3e91b",
@@ -88467,51 +84404,6 @@ const data: PatchNotes = {
           "index": 0,
           "oldValue": "The first (5/10) times you use a Weapon each fight, Charge 1 Heal item 1 second(s).",
           "newValue": "The first (5/10) times you use a Weapon each fight, Charge a Heal item 1 second(s)."
-        }
-      ]
-    },
-    "b7edb810-2ead-4e1c-965d-d787eacc6fd3": {
-      "metadata": {
-        "id": "b7edb810-2ead-4e1c-965d-d787eacc6fd3",
-        "name": "Shatter",
-        "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver",
-        "heroes": [
-          "Vanessa",
-          "Pygmalien",
-          "Dooley",
-          "Jules",
-          "Stelle",
-          "Mak"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "When you freeze, your Weapons gain (+10/+15/+20) damage for the fight.",
-          "newValue": "When you Freeze, your Weapons gain (+10/+15/+20) Damage for the fight."
-        }
-      ]
-    },
-    "64727f7e-adfd-4f25-aa4e-1f127b9d5b70": {
-      "metadata": {
-        "id": "64727f7e-adfd-4f25-aa4e-1f127b9d5b70",
-        "name": "All Talk",
-        "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver",
-        "heroes": [
-          "Common"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "While you have more than half Health, your Weapons have (+30/+60/+90) damage.",
-          "newValue": "While you have more than half Health, your Weapons have (+30/+60/+90) Damage."
         }
       ]
     },
@@ -88540,178 +84432,6 @@ const data: PatchNotes = {
         }
       ]
     },
-    "1c4c5aaa-6aa2-4329-a55a-ac75e987ee95": {
-      "metadata": {
-        "id": "1c4c5aaa-6aa2-4329-a55a-ac75e987ee95",
-        "name": "Arms Race",
-        "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze",
-        "heroes": [
-          "Common"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "Your items have (+2%/+4%/+6%/+8%) Crit Chance for each weapon you have.",
-          "newValue": "Your items have (+2%/+4%/+6%/+8%) Crit Chance for each Weapon you have."
-        }
-      ]
-    },
-    "878440a6-99e8-4178-8d3f-38c94fb8c334": {
-      "metadata": {
-        "id": "878440a6-99e8-4178-8d3f-38c94fb8c334",
-        "name": "Thirsty",
-        "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold",
-        "heroes": [
-          "Mak"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "The first (4/8) times you use a potion each fight, gain 20 Regen for the fight.",
-          "newValue": "The first (4/8) times you use a Potion each fight, gain 20 Regen for the fight."
-        }
-      ]
-    },
-    "b49dd22b-ef95-4f7e-954e-556e1e431d4a": {
-      "metadata": {
-        "id": "b49dd22b-ef95-4f7e-954e-556e1e431d4a",
-        "name": "Keen Eye",
-        "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze",
-        "heroes": [
-          "Pygmalien",
-          "Vanessa",
-          "Dooley",
-          "Jules",
-          "Stelle",
-          "Mak"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "Your items have (+4%/+8%/+12%/+16%) Crit chance.",
-          "newValue": "Your items have (+4%/+8%/+12%/+16%) Crit Chance."
-        }
-      ]
-    },
-    "00f1ae18-33a6-499d-b2ea-319ac3debab9": {
-      "metadata": {
-        "id": "00f1ae18-33a6-499d-b2ea-319ac3debab9",
-        "name": "Left Eye",
-        "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze",
-        "heroes": [
-          "Pygmalien",
-          "Vanessa",
-          "Dooley",
-          "Jules",
-          "Stelle",
-          "Mak"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "Your leftmost item has (+8%/+16%/+24%/+32%) Crit chance.",
-          "newValue": "Your leftmost item has (+8%/+16%/+24%/+32%) Crit Chance."
-        }
-      ]
-    },
-    "318e27ee-611e-4e8b-bf3b-ae9982494453": {
-      "metadata": {
-        "id": "318e27ee-611e-4e8b-bf3b-ae9982494453",
-        "name": "The Best Defense",
-        "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver",
-        "heroes": [
-          "Vanessa"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "When you use a weapon, Weapons adjacent to it gain (+3/+6/+9) damage for the fight.",
-          "newValue": "When you use a Weapon, Weapons adjacent to it gain (+3/+6/+9) Damage for the fight."
-        }
-      ]
-    },
-    "3510040e-9d43-4e2a-867e-96cc6740a139": {
-      "metadata": {
-        "id": "3510040e-9d43-4e2a-867e-96cc6740a139",
-        "name": "Improvised Weaponry",
-        "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver",
-        "heroes": [
-          "Vanessa",
-          "Dooley",
-          "Mak"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "When you Crit, your weapons gain (5/10/15) Damage for the fight.",
-          "newValue": "When you Crit, your Weapons gain (5/10/15) Damage for the fight."
-        }
-      ]
-    },
-    "050ff26a-59ec-4666-89b0-b0630a75149a": {
-      "metadata": {
-        "id": "050ff26a-59ec-4666-89b0-b0630a75149a",
-        "name": "Hard Shell",
-        "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze",
-        "heroes": [
-          "Common"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "The first time you fall below half health each fight, Shield equal to (20%/30%/40%/50%) of your Max Health.",
-          "newValue": "The first time you fall below half Health each fight, Shield equal to (20%/30%/40%/50%) of your Max Health."
-        }
-      ]
-    },
-    "4bcc9eeb-5fa9-4b1f-85b1-d3dfd198d38f": {
-      "metadata": {
-        "id": "4bcc9eeb-5fa9-4b1f-85b1-d3dfd198d38f",
-        "name": "Augmented Weaponry",
-        "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold",
-        "heroes": [
-          "Common"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "Your weapons have +1 Damage. When you sell a small item, increase this bonus by (+1/+2) Damage.",
-          "newValue": "Your Weapons have +1 Damage. When you sell a Small item, increase this bonus by (+1/+2) Damage."
-        }
-      ]
-    },
     "304d505a-d914-4264-9142-b6efb7aca1ff": {
       "metadata": {
         "id": "304d505a-d914-4264-9142-b6efb7aca1ff",
@@ -88737,48 +84457,6 @@ const data: PatchNotes = {
         }
       ]
     },
-    "f380f03c-3c71-4cae-b423-43fa31a5c3a3": {
-      "metadata": {
-        "id": "f380f03c-3c71-4cae-b423-43fa31a5c3a3",
-        "name": "Big Guns",
-        "previousStartingTier": "Diamond",
-        "currentStartingTier": "Diamond",
-        "heroes": [
-          "Vanessa",
-          "Pygmalien",
-          "Stelle"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "Double the damage of your Large weapons.",
-          "newValue": "Double the Damage of your Large Weapons."
-        }
-      ]
-    },
-    "ffceb0c7-7913-4339-8013-f1bcc67cca9c": {
-      "metadata": {
-        "id": "ffceb0c7-7913-4339-8013-f1bcc67cca9c",
-        "name": "Firestarter",
-        "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver",
-        "heroes": [
-          "Common"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "At the start of each fight, burn (15/25/35).",
-          "newValue": "At the start of each fight, Burn (15/25/35)."
-        }
-      ]
-    },
     "dbd50f7c-4261-4afd-93da-2f4d9e33509e": {
       "metadata": {
         "id": "dbd50f7c-4261-4afd-93da-2f4d9e33509e",
@@ -88796,29 +84474,6 @@ const data: PatchNotes = {
           "index": 0,
           "oldValue": "The first (4/8) times you use a potion each fight, charge 1 Weapon or Burn item 1 second(s).",
           "newValue": "The first (4/8) times you use a Potion each fight, charge a Weapon or Burn item 1 second(s)."
-        }
-      ]
-    },
-    "61c83a38-2976-45d1-95c7-cafe4f34ed51": {
-      "metadata": {
-        "id": "61c83a38-2976-45d1-95c7-cafe4f34ed51",
-        "name": "Slow and Steady",
-        "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver",
-        "heroes": [
-          "Vanessa",
-          "Dooley",
-          "Stelle",
-          "Mak"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "When you Slow, your weapons gain (2/4/6) damage for the fight.",
-          "newValue": "When you Slow, your Weapons gain (2/4/6) Damage for the fight."
         }
       ]
     },
@@ -88849,30 +84504,6 @@ const data: PatchNotes = {
         }
       ]
     },
-    "7434f3a5-2432-4603-b6d7-46febb9272fd": {
-      "metadata": {
-        "id": "7434f3a5-2432-4603-b6d7-46febb9272fd",
-        "name": "Tracer Fire",
-        "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver",
-        "heroes": [
-          "Vanessa",
-          "Dooley",
-          "Jules",
-          "Stelle",
-          "Mak"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "When you burn, your items gain (+1%/+2%/+3%) Crit Chance for the fight.",
-          "newValue": "When you Burn, your items gain (+1%/+2%/+3%) Crit Chance for the fight."
-        }
-      ]
-    },
     "3c9eefb8-f348-486b-9ec2-a4920f71bee4": {
       "metadata": {
         "id": "3c9eefb8-f348-486b-9ec2-a4920f71bee4",
@@ -88898,26 +84529,6 @@ const data: PatchNotes = {
         }
       ]
     },
-    "09c4c894-0397-47e5-9635-7b1f4c49527a": {
-      "metadata": {
-        "id": "09c4c894-0397-47e5-9635-7b1f4c49527a",
-        "name": "Power Broker",
-        "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver",
-        "heroes": [
-          "Common"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "Your weapons have +Damage equal (1/2/3) times to your income.",
-          "newValue": "Your Weapons have +Damage equal (1/2/3) times to your income."
-        }
-      ]
-    },
     "f9628cc5-fdf8-49cf-8807-d7b85f457aa8": {
       "metadata": {
         "id": "f9628cc5-fdf8-49cf-8807-d7b85f457aa8",
@@ -88940,49 +84551,6 @@ const data: PatchNotes = {
           "index": 0,
           "oldValue": null,
           "newValue": "If you only have one Weapon, it deals triple Damage and its Cooldown is increased by 50%."
-        }
-      ]
-    },
-    "6914df97-567f-4d9a-9473-d3de39a09e86": {
-      "metadata": {
-        "id": "6914df97-567f-4d9a-9473-d3de39a09e86",
-        "name": "Frozen Shot",
-        "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver",
-        "heroes": [
-          "Pygmalien",
-          "Dooley",
-          "Jules",
-          "Mak"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "Your Weapons' cooldowns are reduced by (5%/10%/15%) while your enemy has a Frozen item.",
-          "newValue": "Your Weapons' Cooldowns are reduced by (5%/10%/15%) While your enemy has a Frozen item."
-        }
-      ]
-    },
-    "ae41f574-fc9f-492a-8ae0-45853ab607a6": {
-      "metadata": {
-        "id": "ae41f574-fc9f-492a-8ae0-45853ab607a6",
-        "name": "Critical Investments",
-        "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver",
-        "heroes": [
-          "Pygmalien"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "Your Properties and Toys have (+10%/+15%/+20%) Crit chance.",
-          "newValue": "Your Properties and Toys have (+10%/+15%/+20%) Crit Chance."
         }
       ]
     },
@@ -89024,32 +84592,7 @@ const data: PatchNotes = {
         {
           "index": 0,
           "oldValue": "If you have exactly 1 weapon, your Shield items have (+10/+20/+30) shield.",
-          "newValue": null
-        },
-        {
-          "index": 0,
-          "oldValue": null,
           "newValue": "If you have exactly a Weapon, your Shield items have (+10/+20/+30) Shield."
-        }
-      ]
-    },
-    "e7cc942b-96c5-4b90-a916-b3db0ee4bfe7": {
-      "metadata": {
-        "id": "e7cc942b-96c5-4b90-a916-b3db0ee4bfe7",
-        "name": "Snowstorm",
-        "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze",
-        "heroes": [
-          "Common"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "When you freeze, a Weapon gains (+30/+60/+90/+120) damage for the fight.",
-          "newValue": "When you Freeze, a Weapon gains (+30/+60/+90/+120) Damage for the fight."
         }
       ]
     },
@@ -89075,46 +84618,6 @@ const data: PatchNotes = {
           "index": 0,
           "oldValue": null,
           "newValue": "While your enemy has more Health than you, your Shield items' Cooldowns are reduced by (5%/10%/15%)."
-        }
-      ]
-    },
-    "4797e5ba-c3ac-4b32-a7ef-93c0a45d1c4f": {
-      "metadata": {
-        "id": "4797e5ba-c3ac-4b32-a7ef-93c0a45d1c4f",
-        "name": "The Right Tool",
-        "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver",
-        "heroes": [
-          "Common"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "Your non-tool items have (+5%/+10%/+15%) Crit Chance for each tool you have.",
-          "newValue": "Your non-Tool items have (+5%/+10%/+15%) Crit Chance for each Tool you have."
-        }
-      ]
-    },
-    "1d0b3080-14a8-41c5-9449-9b48f46d4726": {
-      "metadata": {
-        "id": "1d0b3080-14a8-41c5-9449-9b48f46d4726",
-        "name": "Makeshift Plate",
-        "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver",
-        "heroes": [
-          "Pygmalien"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "Your Shield items have +1 Shield for every (4/3/2) gold you have.",
-          "newValue": "Your Shield items have +1 Shield for every (4/3/2) Gold you have."
         }
       ]
     },
@@ -89223,48 +84726,6 @@ const data: PatchNotes = {
         }
       ]
     },
-    "280eb842-0600-4f2c-bbf9-01926b43f1dc": {
-      "metadata": {
-        "id": "280eb842-0600-4f2c-bbf9-01926b43f1dc",
-        "name": "Emergency Burn",
-        "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver",
-        "heroes": [
-          "Dooley",
-          "Jules",
-          "Stelle"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "The first time you fall below half health each fight, Burn (20/30/40).",
-          "newValue": "The first time you fall below half Health each fight, Burn (20/30/40)."
-        }
-      ]
-    },
-    "08adc2fd-986c-4e8f-914e-fda9703ace3d": {
-      "metadata": {
-        "id": "08adc2fd-986c-4e8f-914e-fda9703ace3d",
-        "name": "Assault Focus",
-        "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver",
-        "heroes": [
-          "Common"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "When any non-weapon item is used, slow it for (1/2/3) second(s).",
-          "newValue": "When any non-Weapon item is used, Slow it for (1/2/3) second(s)."
-        }
-      ]
-    },
     "385d9634-f0ab-41f0-be0b-7b2eb280282f": {
       "metadata": {
         "id": "385d9634-f0ab-41f0-be0b-7b2eb280282f",
@@ -89326,26 +84787,6 @@ const data: PatchNotes = {
         }
       ]
     },
-    "c9c884fd-849e-4541-b770-4658c2e6e609": {
-      "metadata": {
-        "id": "c9c884fd-849e-4541-b770-4658c2e6e609",
-        "name": "Foreboding Winds",
-        "previousStartingTier": "Diamond",
-        "currentStartingTier": "Diamond",
-        "heroes": [
-          "Common"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "Your Weapons deal double Crit damage.",
-          "newValue": "Your Weapons deal double Crit Damage."
-        }
-      ]
-    },
     "c5bff6ad-5d13-4cf3-9941-98f3cf913949": {
       "metadata": {
         "id": "c5bff6ad-5d13-4cf3-9941-98f3cf913949",
@@ -89368,69 +84809,6 @@ const data: PatchNotes = {
           "index": 0,
           "oldValue": null,
           "newValue": "The first time an enemy uses a Weapon, Charge your items (1/2) second(s)."
-        }
-      ]
-    },
-    "c318939d-3ba2-41d8-ad5d-1b8267c0cf22": {
-      "metadata": {
-        "id": "c318939d-3ba2-41d8-ad5d-1b8267c0cf22",
-        "name": "Augmented Defenses",
-        "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold",
-        "heroes": [
-          "Common"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "Your Shield items have +1 Shield. When you sell a small item, increase this bonus by (+1/+2) Shield.",
-          "newValue": "Your Shield items have +1 Shield. When you sell a Small item, increase this bonus by (+1/+2) Shield."
-        }
-      ]
-    },
-    "1e63e9bd-603a-4965-a6e8-4e180377c0ff": {
-      "metadata": {
-        "id": "1e63e9bd-603a-4965-a6e8-4e180377c0ff",
-        "name": "Temporal Strike",
-        "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver",
-        "heroes": [
-          "Vanessa",
-          "Dooley",
-          "Mak"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "If you have exactly one weapon, its cooldown is reduced by (5%/10%/15%) while your enemy has a Slowed item.",
-          "newValue": "If you have exactly one Weapon, its Cooldown is reduced by (5%/10%/15%) while your enemy has a Slowed item."
-        }
-      ]
-    },
-    "3865bde8-45b8-49d6-8945-0453c24251a9": {
-      "metadata": {
-        "id": "3865bde8-45b8-49d6-8945-0453c24251a9",
-        "name": "Sharpshooter",
-        "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze",
-        "heroes": [
-          "Vanessa",
-          "Mak"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "Your Ammo items have (+3%/+6%/+9%/+12%) Crit chance.",
-          "newValue": "Your Ammo items have (+3%/+6%/+9%/+12%) Crit Chance."
         }
       ]
     },
@@ -89485,28 +84863,6 @@ const data: PatchNotes = {
         }
       ]
     },
-    "9ff2cb3f-99dd-425b-b44f-14a1d0271f56": {
-      "metadata": {
-        "id": "9ff2cb3f-99dd-425b-b44f-14a1d0271f56",
-        "name": "Stop That!",
-        "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver",
-        "heroes": [
-          "Vanessa",
-          "Dooley",
-          "Mak"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "The first time you fall below half health each fight, slow (2/4/6) items for 2 second(s).",
-          "newValue": "The first time you fall below half Health each fight, Slow (2/4/6) items for 2 second(s)."
-        }
-      ]
-    },
     "a03e4ce6-4480-4edc-b612-8e1f6700cc26": {
       "metadata": {
         "id": "a03e4ce6-4480-4edc-b612-8e1f6700cc26",
@@ -89526,26 +84882,6 @@ const data: PatchNotes = {
           "index": 0,
           "oldValue": "When you use a Vehicle, your items gain (10%/20%/30%) Crit chance.",
           "newValue": "When you use a Vehicle, your items gain (3%/6%/9%) Crit Chance."
-        }
-      ]
-    },
-    "3849770c-59df-4471-b0b0-f02713be8bb0": {
-      "metadata": {
-        "id": "3849770c-59df-4471-b0b0-f02713be8bb0",
-        "name": "Full Arsenal",
-        "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold",
-        "heroes": [
-          "Common"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "Your item's cooldowns are reduced by (5%/10%) if you have a Vehicle, reduced by (5%/10%) if you have a Weapon, and reduced by (5%/10%) if you have a Tool.",
-          "newValue": "Your item's Cooldowns are reduced by (5%/10%) if you have a Vehicle, reduced by (5%/10%) if you have a Weapon, and reduced by (5%/10%) if you have a Tool."
         }
       ]
     },
@@ -89571,33 +84907,6 @@ const data: PatchNotes = {
           "index": 0,
           "oldValue": null,
           "newValue": "When one of your Weapons is Hasted, if it already has Haste, it gains (+5/+10/+15) Damage."
-        }
-      ]
-    },
-    "115c2677-6880-4400-af80-f5afa3d502fe": {
-      "metadata": {
-        "id": "115c2677-6880-4400-af80-f5afa3d502fe",
-        "name": "Defense Grid",
-        "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze",
-        "heroes": [
-          "Pygmalien",
-          "Dooley",
-          "Stelle"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "The first time you use an item each fight, shield equal to (10%/15%/20%/25%) of your max health.",
-          "newValue": null
-        },
-        {
-          "index": 0,
-          "oldValue": null,
-          "newValue": "The first time you use an item each fight, Shield equal to (10%/15%/20%/25%) of your Max Health."
         }
       ]
     },
@@ -89723,32 +85032,6 @@ const data: PatchNotes = {
         }
       ]
     },
-    "f3f43bb9-1177-458f-8244-aaf409a050dd": {
-      "metadata": {
-        "id": "f3f43bb9-1177-458f-8244-aaf409a050dd",
-        "name": "Balanced Friendship",
-        "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver",
-        "heroes": [
-          "Vanessa",
-          "Dooley"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "Your Weapons have (+2/+4/+6) damage and Shield items have (+2/+4/+6) shield for each friend you have.",
-          "newValue": null
-        },
-        {
-          "index": 0,
-          "oldValue": null,
-          "newValue": "Your Weapons have (+2/+4/+6) Damage and Shield items have (+2/+4/+6) Shield for each Friend you have."
-        }
-      ]
-    },
     "560a532c-73f4-4edd-b197-0127e2ca4cc9": {
       "metadata": {
         "id": "560a532c-73f4-4edd-b197-0127e2ca4cc9",
@@ -89772,27 +85055,6 @@ const data: PatchNotes = {
           "index": 0,
           "oldValue": null,
           "newValue": "When you buy a Weapon, gain (20/30/40/50) Max Health."
-        }
-      ]
-    },
-    "6216741f-f7fe-4de0-82c0-3733263378f1": {
-      "metadata": {
-        "id": "6216741f-f7fe-4de0-82c0-3733263378f1",
-        "name": "Critical Protector",
-        "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze",
-        "heroes": [
-          "Pygmalien",
-          "Dooley"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "Your Shield items have (+5%/+10%/+15%/+20%) Crit chance.",
-          "newValue": "Your Shield items have (+5%/+10%/+15%/+20%) Crit Chance."
         }
       ]
     },
@@ -89901,26 +85163,6 @@ const data: PatchNotes = {
         }
       ]
     },
-    "72010bea-fadf-4f64-9cba-d34bfd014388": {
-      "metadata": {
-        "id": "72010bea-fadf-4f64-9cba-d34bfd014388",
-        "name": "Draconic Rage",
-        "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver",
-        "heroes": [
-          "Common"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "When you use a Medium item, a Burn item gains (+3/+6/+9) burn for the fight.",
-          "newValue": "When you use a Medium item, a Burn item gains (+3/+6/+9) Burn for the fight."
-        }
-      ]
-    },
     "7ab9d9a7-09b2-4dab-b821-eaaf0fb84523": {
       "metadata": {
         "id": "7ab9d9a7-09b2-4dab-b821-eaaf0fb84523",
@@ -90012,26 +85254,6 @@ const data: PatchNotes = {
         }
       ]
     },
-    "e2bed270-5a6c-46ae-ab7e-a0d34f6da903": {
-      "metadata": {
-        "id": "e2bed270-5a6c-46ae-ab7e-a0d34f6da903",
-        "name": "Commercial Zoning",
-        "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold",
-        "heroes": [
-          "Pygmalien"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "When you use a Property, deal damage equal to (1x/2x) your gold.",
-          "newValue": "When you use a Property, deal Damage equal to (1x/2x) your Gold."
-        }
-      ]
-    },
     "d6251362-7c11-4a7e-9d6d-97f445f2f828": {
       "metadata": {
         "id": "d6251362-7c11-4a7e-9d6d-97f445f2f828",
@@ -90049,71 +85271,6 @@ const data: PatchNotes = {
           "index": 0,
           "oldValue": "The first (5/10) times you Burn each fight, Charge 1 Shield item 1 second(s).",
           "newValue": "The first (5/10) times you Burn each fight, Charge a Shield item 1 second(s)."
-        }
-      ]
-    },
-    "c149f8da-b64e-46f4-bf80-f6f4cae88fbc": {
-      "metadata": {
-        "id": "c149f8da-b64e-46f4-bf80-f6f4cae88fbc",
-        "name": "Housewarming Gifts",
-        "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold",
-        "heroes": [
-          "Pygmalien"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "When you buy a property, get (1/2) Chocolate Bar and (1/2) Spare Change.",
-          "newValue": "When you buy a Property, get (1/2) Chocolate Bar and (1/2) Spare Change."
-        }
-      ]
-    },
-    "dff033fb-0fd4-4ae9-a9c2-ed8a81657d08": {
-      "metadata": {
-        "id": "dff033fb-0fd4-4ae9-a9c2-ed8a81657d08",
-        "name": "Cash Deposits",
-        "previousStartingTier": "Diamond",
-        "currentStartingTier": "Diamond",
-        "heroes": [
-          "Pygmalien"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "Your weapons have + damage equal to your gold.",
-          "newValue": null
-        },
-        {
-          "index": 0,
-          "oldValue": null,
-          "newValue": "Your Weapons have + Damage equal to your Gold."
-        }
-      ]
-    },
-    "b0b38699-beb0-4012-b4f0-bc424f4ba787": {
-      "metadata": {
-        "id": "b0b38699-beb0-4012-b4f0-bc424f4ba787",
-        "name": "Prime Real Estate",
-        "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver",
-        "heroes": [
-          "Pygmalien"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "When you use a Property, adjacent items gain (5%/10%/15%) Crit chance for the fight.",
-          "newValue": "When you use a Property, adjacent items gain (5%/10%/15%) Crit Chance for the fight."
         }
       ]
     },
@@ -90253,11 +85410,6 @@ const data: PatchNotes = {
       },
       "tooltips": [
         {
-          "index": 0,
-          "oldValue": "Your Rightmost Item is a Vehicle.",
-          "newValue": "Your rightmost item is a Vehicle."
-        },
-        {
           "index": 1,
           "oldValue": "Your Vehicles have their cooldowns reduced by (5%/10%/15%).",
           "newValue": null
@@ -90300,27 +85452,6 @@ const data: PatchNotes = {
           "index": 0,
           "oldValue": null,
           "newValue": "The first time you fall below half Health each fight, your items gain +50% Crit Chance for the fight."
-        }
-      ]
-    },
-    "69e15083-66e9-40ca-a3c9-f8bdd8b3887d": {
-      "metadata": {
-        "id": "69e15083-66e9-40ca-a3c9-f8bdd8b3887d",
-        "name": "Desperate Cleanse",
-        "previousStartingTier": "Diamond",
-        "currentStartingTier": "Diamond",
-        "heroes": [
-          "Pygmalien",
-          "Dooley"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "The first time you fall below half health each fight, remove Freeze and Slow from your items and Cleanse half your Burn and Poison.",
-          "newValue": "The first time you fall below half Health each fight, remove Freeze and Slow from your items and Cleanse half your Burn and Poison."
         }
       ]
     },
@@ -90442,47 +85573,6 @@ const data: PatchNotes = {
         }
       ]
     },
-    "76ac0aa6-ef43-4a5b-9a30-f0ab4186dc83": {
-      "metadata": {
-        "id": "76ac0aa6-ef43-4a5b-9a30-f0ab4186dc83",
-        "name": "Healthy Lifestyle",
-        "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver",
-        "heroes": [
-          "Pygmalien",
-          "Mak"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "You have (2/4/6) Regen for each non-weapon item you have.",
-          "newValue": "You have (2/4/6) Regen for each non-Weapon item you have."
-        }
-      ]
-    },
-    "a59bc243-7c8b-447a-8ab7-968f662b1c50": {
-      "metadata": {
-        "id": "a59bc243-7c8b-447a-8ab7-968f662b1c50",
-        "name": "Waters of Infinity",
-        "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver",
-        "heroes": [
-          "Common"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "You have (+20/+30/+40) Regen for each non-weapon item you have.",
-          "newValue": "You have (+20/+30/+40) Regen for each non-Weapon item you have."
-        }
-      ]
-    },
     "13989ad3-2122-4d86-a323-bb90fda8360b": {
       "metadata": {
         "id": "13989ad3-2122-4d86-a323-bb90fda8360b",
@@ -90534,73 +85624,6 @@ const data: PatchNotes = {
         }
       ]
     },
-    "4225d131-791a-4ea4-ab0e-80a3343a3253": {
-      "metadata": {
-        "id": "4225d131-791a-4ea4-ab0e-80a3343a3253",
-        "name": "Defensive Stance",
-        "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver",
-        "heroes": [
-          "Pygmalien",
-          "Dooley",
-          "Stelle"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "When you use a weapon, your Shield items gain (3/6/9) Shield for the fight.",
-          "newValue": "When you use a Weapon, your Shield items gain (3/6/9) Shield for the fight."
-        }
-      ]
-    },
-    "c6a57594-4358-44de-b888-64216df4aa05": {
-      "metadata": {
-        "id": "c6a57594-4358-44de-b888-64216df4aa05",
-        "name": "Healthy Tip",
-        "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold",
-        "heroes": [
-          "Pygmalien"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "When you gain gold, permanently gain Max Health equal to (1x/2x) the amount of gold gained.",
-          "newValue": "When you gain Gold, permanently gain Max Health equal to (1x/2x) the amount of Gold gained."
-        }
-      ]
-    },
-    "62154f7f-ea50-4703-aa2e-d2d4ae55e9b0": {
-      "metadata": {
-        "id": "62154f7f-ea50-4703-aa2e-d2d4ae55e9b0",
-        "name": "Big Numbers",
-        "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold",
-        "heroes": [
-          "Pygmalien",
-          "Vanessa",
-          "Dooley",
-          "Jules",
-          "Stelle",
-          "Mak"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "Your large items have (+25%/+50%) crit chance",
-          "newValue": "Your Large items have (+25%/+50%) crit chance"
-        }
-      ]
-    },
     "05ea3ce6-0626-45c5-af36-a7711200d431": {
       "metadata": {
         "id": "05ea3ce6-0626-45c5-af36-a7711200d431",
@@ -90626,26 +85649,6 @@ const data: PatchNotes = {
           "index": 0,
           "oldValue": null,
           "newValue": "The first time you use a Large item each fight, Freeze an item for (3/4/5) second(s)."
-        }
-      ]
-    },
-    "0eb35f18-3c03-4ea6-9af4-b7345bce1e3c": {
-      "metadata": {
-        "id": "0eb35f18-3c03-4ea6-9af4-b7345bce1e3c",
-        "name": "Beautiful Friendship",
-        "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold",
-        "heroes": [
-          "Dooley"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "When you use a Friend, your weapons gain (3/6) damage for the fight.",
-          "newValue": "When you use a Friend, your Weapons gain (3/6) Damage for the fight."
         }
       ]
     },
@@ -90696,35 +85699,7 @@ const data: PatchNotes = {
           "Cooldown"
         ],
         "removed": []
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "Enemy cooldowns are increased by 1 second(s).",
-          "newValue": "Enemy Cooldowns are increased by 1 second(s)."
-        }
-      ]
-    },
-    "721fa7ca-3451-4bbd-ac17-ffcff4a31ac6": {
-      "metadata": {
-        "id": "721fa7ca-3451-4bbd-ac17-ffcff4a31ac6",
-        "name": "Healthy Jolt",
-        "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold",
-        "heroes": [
-          "Pygmalien",
-          "Vanessa"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "The first time you Over-heal each fight, Haste your items for (2/4) second(s).",
-          "newValue": "The first time you Over-Heal each fight, Haste your items for (2/4) second(s)."
-        }
-      ]
+      }
     },
     "4d8b7111-c324-4558-af3c-d7c8df61618d": {
       "metadata": {
@@ -90748,68 +85723,6 @@ const data: PatchNotes = {
           "index": 0,
           "oldValue": null,
           "newValue": "Your Toys' and Apparel Cooldowns are reduced by (5%/10%)."
-        }
-      ]
-    },
-    "113091ab-c543-4745-9dc4-18ab1cdfb3b8": {
-      "metadata": {
-        "id": "113091ab-c543-4745-9dc4-18ab1cdfb3b8",
-        "name": "Arbitrage",
-        "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze",
-        "heroes": [
-          "Vanessa",
-          "Pygmalien",
-          "Stelle"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "When you win a fight against a Hero, gain (2/3/4/5) gold.",
-          "newValue": "When you win a fight against a Hero, gain (2/3/4/5) Gold."
-        }
-      ]
-    },
-    "ed7379d4-38ee-48b0-9ef0-61ed3c57ec22": {
-      "metadata": {
-        "id": "ed7379d4-38ee-48b0-9ef0-61ed3c57ec22",
-        "name": "Extreme Comfort",
-        "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze",
-        "heroes": [
-          "Common"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "When you Heal or gain Regen, your Shield items gain (3/6/9/12) shield for the fight.",
-          "newValue": "When you Heal or gain Regen, your Shield items gain (3/6/9/12) Shield for the fight."
-        }
-      ]
-    },
-    "2a2ef40a-38d6-4441-ad43-76fc01f31eb4": {
-      "metadata": {
-        "id": "2a2ef40a-38d6-4441-ad43-76fc01f31eb4",
-        "name": "Precision Diver",
-        "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver",
-        "heroes": [
-          "Vanessa"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "Your Aquatic items have (+8%/+10%/+12%) Crit chance.",
-          "newValue": "Your Aquatic items have (+8%/+10%/+12%) Crit Chance."
         }
       ]
     },
@@ -90908,31 +85821,6 @@ const data: PatchNotes = {
         }
       ]
     },
-    "b76e0b9a-481c-4128-9ed3-a290f3b21b4f": {
-      "metadata": {
-        "id": "b76e0b9a-481c-4128-9ed3-a290f3b21b4f",
-        "name": "Peaceful Eye",
-        "previousStartingTier": "Bronze",
-        "currentStartingTier": "Bronze",
-        "heroes": [
-          "Pygmalien",
-          "Vanessa",
-          "Dooley",
-          "Jules",
-          "Stelle",
-          "Mak"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "Your Non-Weapon items have (+5%/+10%/+15%/+20%) Crit chance.",
-          "newValue": "Your Non-Weapon items have (+5%/+10%/+15%/+20%) Crit Chance."
-        }
-      ]
-    },
     "0526054f-98da-4e95-be68-d25b26bb0fe3": {
       "metadata": {
         "id": "0526054f-98da-4e95-be68-d25b26bb0fe3",
@@ -90955,53 +85843,6 @@ const data: PatchNotes = {
           "index": 0,
           "oldValue": null,
           "newValue": "When you Slow, a Weapon gains (+5/+10/+15/+20) Damage for the fight."
-        }
-      ]
-    },
-    "edb9b01b-b4ce-4a77-848e-0a49b8a23c16": {
-      "metadata": {
-        "id": "edb9b01b-b4ce-4a77-848e-0a49b8a23c16",
-        "name": "Potent Potables",
-        "previousStartingTier": "Silver",
-        "currentStartingTier": "Silver",
-        "heroes": [
-          "Mak"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "Your Poison items have (+1/+2/+3) Poison for each potion you have.",
-          "newValue": "Your Poison items have (+1/+2/+3) Poison for each Potion you have."
-        },
-        {
-          "index": 1,
-          "oldValue": "Your Burn items have (+1/+2/+3) Burn for each potion you have.",
-          "newValue": "Your Burn items have (+1/+2/+3) Burn for each Potion you have."
-        }
-      ]
-    },
-    "cb8e9ed1-764e-4fa5-a2b8-61c2eddcbf7e": {
-      "metadata": {
-        "id": "cb8e9ed1-764e-4fa5-a2b8-61c2eddcbf7e",
-        "name": "Grease Fire",
-        "previousStartingTier": "Gold",
-        "currentStartingTier": "Gold",
-        "heroes": [
-          "Dooley",
-          "Jules",
-          "Stelle"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "When you use a tool, Burn (3/5).",
-          "newValue": "When you use a Tool, Burn (3/5)."
         }
       ]
     },
@@ -91050,48 +85891,6 @@ const data: PatchNotes = {
           "index": 0,
           "oldValue": "The first (5/10) times you use a Tool each fight, Haste 1 Tool for 1 second(s).",
           "newValue": "The first (5/10) times you use a Tool each fight, Haste a Tool for 1 second(s)."
-        }
-      ]
-    },
-    "b57df6d6-fc6c-4401-ad41-77f83388eabe": {
-      "metadata": {
-        "id": "b57df6d6-fc6c-4401-ad41-77f83388eabe",
-        "name": "Distributed Systems",
-        "previousStartingTier": "Diamond",
-        "currentStartingTier": "Diamond",
-        "heroes": [
-          "Common"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "When you use a Large item, Haste your small items for 1 second.",
-          "newValue": "When you use a Large item, Haste your Small items for 1 second."
-        }
-      ]
-    },
-    "158c1575-71c6-406c-82c9-f4435d9b37ca": {
-      "metadata": {
-        "id": "158c1575-71c6-406c-82c9-f4435d9b37ca",
-        "name": "Emergency Shield",
-        "previousStartingTier": "Diamond",
-        "currentStartingTier": "Diamond",
-        "heroes": [
-          "Pygmalien",
-          "Dooley",
-          "Stelle"
-        ],
-        "currentSize": "Medium",
-        "type": "skill"
-      },
-      "tooltips": [
-        {
-          "index": 0,
-          "oldValue": "The first time you fall below half health each fight, use your highest Shield item.",
-          "newValue": "The first time you fall below half Health each fight, use your highest Shield item."
         }
       ]
     },
