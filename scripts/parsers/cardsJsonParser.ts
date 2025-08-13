@@ -3,7 +3,7 @@
 // https://github.com/glideapps/quicktype?tab=readme-ov-file#calling-quicktype-from-javascript
 import type { Entries } from "type-fest";
 import type { ParsedCombatEncounterCard, ParsedItemCard, ParsedMerchantCard, ParsedSkillCard } from "$lib/types";
-import type { The400 as Card, LegendaryClass as Tier, The400_Tiers as Tiers, Tier as TierType, AbilityAction, AuraAction, Ability, Aura, Operation } from "./data/cards";
+import type { The500 as Card, LegendaryClass as Tier, The500_Tiers as Tiers, Tier as TierType, AbilityAction, AuraAction, Ability, Aura, Operation } from "./data/cards";
 import { unifyTooltips } from "$lib/utils/tooltipUtils";
 import type { CardsJson } from "./types.parser";
 import invalidItemIds from "./invalidItemIds";
@@ -11,7 +11,7 @@ import invalidSkillIds from "./invalidSkillIds";
 import invalidMerchantIds from "./invalidMerchantIds";
 import customTagMap from "./customTagsMap";
 
-const CURRENT_VERSION = "4.0.0";
+const CURRENT_VERSION = "5.0.0";
 
 // Card packs that should be filtered out
 const disallowedCardPacks = [
@@ -117,6 +117,10 @@ function getAttributeInfo(
         } else if (action.SpawnContext?.Limit?.AttributeType) {
             attributeName = action.SpawnContext?.Limit?.AttributeType;
         }
+    } else if (actionType === "TActionCardFlyingStart") {
+        // Need to look up FlyingTargets at the given tier.
+        attributeName = "FlyingTargets";
+        attributeValue = getAttributeValueFromTier(attributeName, tierAttributes, qualifier);
     } else {
         attributeName = actionType.replace(/^TAction(Card|Player)/, "");
     }
@@ -436,15 +440,15 @@ function hasInvalidKeywords(text: string): boolean {
 }
 
 function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
-    const isValidItemCard = (entry: Card): entry is ValidItemCard =>
-        entry.Type === "Item" &&
-        // entry.SpawningEligibility !== "Never" &&
-        entry.Tiers !== undefined &&
-        entry.Localization.Title.Text !== null &&
-        !hasInvalidKeywords(entry.Localization.Title.Text) &&
-        !hasInvalidKeywords(entry.InternalName) &&
-        !(entry.Id in invalidItemIds) &&
-        !(entry.CardPackId && disallowedCardPacks.includes(entry.CardPackId));
+    const isValidItemCard = (entry: Card): entry is ValidItemCard => {
+        return entry.Type === "Item" &&
+            // entry.SpawningEligibility !== "Never" &&
+            entry.Tiers !== undefined &&
+            entry.Localization.Title.Text !== null &&
+            !hasInvalidKeywords(entry.Localization.Title.Text) &&
+            !hasInvalidKeywords(entry.InternalName) &&
+            !(entry.Id in invalidItemIds)
+    };
 
     const validCards = Object.values(cardsJson[CURRENT_VERSION]).flat().filter(isValidItemCard);
 
@@ -531,7 +535,7 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
 
                 let attributeTooltips = attributes.map(attribute => {
                     const displayValue = getRoundedAttributeValue(attribute.value);
-                
+
                     return `${attribute.name} ${attribute.name === "Lifesteal" ? "" : displayValue}${attribute.valueDescriptor ?? ""}`.trim();
                 });
 
@@ -729,6 +733,10 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
 
         const unifiedTooltips = unifyTooltips(Object.entries(tiers).map(([, tier]) => tier.tooltips));
 
+        if (card.Localization.Title.Text === "Regal Blade") {
+            debugger;
+        }
+
         const quests = card.Quests?.map(quest => ({
             entries: quest.Entries.map(entry => {
                 const rawTooltips = entry.Reward?.Localization?.Tooltips
@@ -756,7 +764,10 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
                         const rewardTierAttributes = (entry.Reward?.Tiers?.[tierName]?.Attributes ?? {}) as { [key: string]: number };
                         const mergedRewardAttributes = { ...tierAttributes, ...rewardAttributes, ...rewardTierAttributes };
                         const rewardAbilities = Object.values(entry.Reward?.Abilities ?? {});
-                        let tooltips = getDisplayedTooltips(rawTooltips, rewardAbilities, [], mergedRewardAttributes);
+
+                        const rewardAuras = Object.values(entry.Reward?.Auras ?? {});
+
+                        let tooltips = getDisplayedTooltips(rawTooltips, rewardAbilities, rewardAuras, mergedRewardAttributes);
 
                         return [tierName, {
                             tooltips,
@@ -782,11 +793,11 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
             hiddenTags: card.HiddenTags.filter(tag => !invalidTags.includes(tag)),
             customTags: customTagMap[card.Id] ?? [],
             size: card.Size,
-            heroes: card.Heroes,
+            heroes: card.Heroes.filter(hero => hero !== "Hero7"),
             enchantments,
             quests,
             unifiedTooltips,
-            packId: card.CardPackId
+            // packId: card.CardPackId
         };
     });
 
@@ -879,10 +890,10 @@ function parseSkillCards(cardsJson: CardsJson): ParsedSkillCard[] {
             hiddenTags: card.HiddenTags.filter(tag => !invalidTags.includes(tag)),
             customTags: customTagMap[card.Id] ?? [],
             size: card.Size,
-            heroes: card.Heroes,
+            heroes: card.Heroes.filter(hero => hero !== "Hero7"),
             artKey: card.ArtKey,
             unifiedTooltips,
-            packId: card.CardPackId
+            // packId: card.CardPackId
         };
     });
 
@@ -929,7 +940,7 @@ function parseMerchantCards(cardsJson: CardsJson) {
         return {
             id: card.Id,
             name: card.Localization.Title.Text,
-            heroes: card.Heroes,
+            heroes: card.Heroes.filter(hero => hero !== "Hero7"),
             description: card.Localization.Description.Text,
             // TODO: Reroll cost seems useful but not immediately.
         }

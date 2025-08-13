@@ -116,6 +116,10 @@ const data: ParsedCombatEncounterCard[] = [
     "name": "Void Knight"
   },
   {
+    "id": "3c433f32-5070-4f57-82d3-9b4347da7aa3",
+    "name": "Infernal Dreadnought"
+  },
+  {
     "id": "5253c1ef-af51-43ac-a307-4e707e5747a6",
     "name": "Prince Marianas"
   },
@@ -193,7 +197,7 @@ const data: ParsedCombatEncounterCard[] = [
   },
   {
     "id": "e51634b6-ce99-4038-97e4-b9d86bdddae0",
-    "name": "Slumbering Primordial"
+    "name": "Awakened Primordial"
   },
   {
     "id": "93d7bb74-2d23-4ccc-a99f-9380afaf738a",
@@ -308,12 +312,16 @@ const data: ParsedCombatEncounterCard[] = [
     "name": "Dooltron"
   },
   {
+    "id": "2a4e119c-bd71-4657-b47a-a56559acf94b",
+    "name": "[MONSTER ENCOUNTER TEMPLATE]"
+  },
+  {
     "id": "bc5fa0a4-8ca9-4384-a283-9c7c84b27169",
     "name": "Dire Mosquito"
   },
   {
-    "id": "2a4e119c-bd71-4657-b47a-a56559acf94b",
-    "name": "[MONSTER ENCOUNTER TEMPLATE]"
+    "id": "b988bbe5-35cf-445e-bea5-ec54b8daf54a",
+    "name": "Aleppa Tantius"
   },
   {
     "id": "91e59b0c-968c-4c45-9391-5104571fee28",
@@ -362,6 +370,10 @@ const data: ParsedCombatEncounterCard[] = [
   {
     "id": "62d59e46-31cc-411d-af27-0f3bf82ca57b",
     "name": "Big Bad Wolf"
+  },
+  {
+    "id": "654e27c9-fb00-4164-b8a8-96ea42496686",
+    "name": "QA Test Radiant (Greg)"
   },
   {
     "id": "bd0711a6-d9d9-4a47-8a18-8f991057f7dd",
@@ -416,6 +428,10 @@ const data: ParsedCombatEncounterCard[] = [
     "name": "Trash Golem"
   },
   {
+    "id": "f4bc9c3d-ce22-4fd8-9b7f-27214fed9f1d",
+    "name": "Cloudtop Admiral"
+  },
+  {
     "id": "14854ca0-bd1f-4f63-951b-97c1afb3af3b",
     "name": "Blowguns Trap"
   },
@@ -462,6 +478,10 @@ const data: ParsedCombatEncounterCard[] = [
   {
     "id": "508e42ec-fdc6-4316-b1af-f85508d182b5",
     "name": "Treasure Turtle"
+  },
+  {
+    "id": "de126a7a-a0bc-4a6f-96f0-442920104fcf",
+    "name": "Grandfather Klok"
   },
   {
     "id": "d63f985a-2960-408e-97ea-f023d4afd440",

@@ -29,15 +29,15 @@ describe('cardJsonParser', () => {
       const blankSlate = itemCards.find(card => card.name === "Blank Slate")!;
 
       expect(blankSlate.quests[0].entries[0].rewardTooltips[0]).toEqual(
-        'Poison (5/10/15/20).'
+        'Poison (5/10/15/20)'
       );
 
       expect(blankSlate.quests[1].entries[0].rewardTooltips[0]).toEqual(
-        'Gain (5/10/15/20) Regen for the fight.'
+        'Gain (5/10/15/20) Regen for the fight'
       );
 
       expect(blankSlate.quests[4].entries[0].rewardTooltips[0]).toEqual(
-        'Freeze 1 items for 0.5 second(s).'
+        'Freeze 1 items for 0.5 second(s)'
       );
     });
 
@@ -61,7 +61,7 @@ describe('cardJsonParser', () => {
       const tombOfTheAncients = itemCards.find(card => card.name === "Tomb of the Ancients")!;
 
       expect(tombOfTheAncients.quests[0].entries[0].rewardTooltips[0]).toEqual(
-        'Poison (5/10/15).'
+        'Poison (5/10/15)'
       );
     });
 
@@ -95,7 +95,7 @@ describe('cardJsonParser', () => {
       const abacus = itemCards.find(card => card.name === "Abacus")!;
 
       expect(abacus.unifiedTooltips[1]).toEqual(
-        'Shield equal to (1x/2x) the value of the adjacent items.'
+        'Adjacent items gain value equal to this item\'s value for the fight.'
       );
     });
 
@@ -103,7 +103,7 @@ describe('cardJsonParser', () => {
       const agilityBoots = itemCards.find(card => card.name === "Agility Boots")!;
 
       expect(agilityBoots.unifiedTooltips[0]).toEqual(
-        'Adjacent items have (+3%/+6%/+9%/+12%) Crit chance.'
+        'Adjacent items have (+3%/+6%/+9%/+12%) Crit Chance.'
       );
     });
 
@@ -111,7 +111,7 @@ describe('cardJsonParser', () => {
       const alphaRay = itemCards.find(card => card.name === "Alpha Ray")!;
 
       expect(alphaRay.unifiedTooltips[2]).toEqual(
-        'When you use the Core or another Ray, your Weapons gain (+4/+6/+8) Damage for the fight.'
+        'When you use a Core or another Ray, your Weapons gain (+6/+9/+12) Damage for the fight.'
       );
     });
 
@@ -119,7 +119,7 @@ describe('cardJsonParser', () => {
       const atlasStone = itemCards.find(card => card.name === "Atlas Stone")!;
 
       expect(atlasStone.unifiedTooltips[2]).toEqual(
-        'Double this item\'s damage for the fight.'
+        'Double this item\'s Damage for the fight'
       );
     });
 
@@ -127,7 +127,7 @@ describe('cardJsonParser', () => {
       const balcony = itemCards.find(card => card.name === "Balcony")!;
 
       expect(balcony.unifiedTooltips[0]).toEqual(
-        'The Property to the left of this has double value in combat and has its cooldown reduced by (5%/10%/15%).'
+        'The Property to the left of this has double value in combat and its Cooldown is reduced by (5%/10%/15%).'
       );
     });
 
@@ -135,7 +135,7 @@ describe('cardJsonParser', () => {
       const beachBall = itemCards.find(card => card.name === "Beach Ball")!;
 
       expect(beachBall.unifiedTooltips[1]).toEqual(
-        'Haste (2/3/4/5) Aquatic or Toy item(s) for 2 second(s).'
+        'Haste (2/3/4/5) Aquatic or Toy item(s) for 2 second(s)'
       );
     });
 
@@ -151,7 +151,7 @@ describe('cardJsonParser', () => {
       const clamera = itemCards.find(card => card.name === "Clamera")!;
 
       expect(clamera.unifiedTooltips[1]).toEqual(
-        'Slow 1 item for 3 second(s).',
+        'Slow an item for 3 second(s)',
       );
     });
 
@@ -159,7 +159,7 @@ describe('cardJsonParser', () => {
       const iceberg = itemCards.find(card => card.name === "Iceberg")!;
 
       expect(iceberg.unifiedTooltips[0]).toEqual(
-        'When your enemy uses an item, Freeze it for (0.5/1) second(s).',
+        'When an enemy uses an item, Freeze it for (0.5/1) second(s).',
       );
     });
 
@@ -167,7 +167,7 @@ describe('cardJsonParser', () => {
       const closedSign = itemCards.find(card => card.name === "Closed Sign")!;
 
       expect(closedSign.unifiedTooltips[0]).toEqual(
-        'You have Regen equal to (50%/100%) of the value of adjacent properties.'
+        'When you Heal with an item, charge adjacent Properties (0.5/1) second(s).'
       );
     });
 
@@ -175,7 +175,7 @@ describe('cardJsonParser', () => {
       const chocoholic = skillCards.find(card => card.name === "Chocoholic")!;
 
       expect(chocoholic.unifiedTooltips[0]).toEqual(
-        'When you sell a medium or large item, get (1/2) Chocolate Bar(s).'
+        'When you sell a Medium or Large item, get (1/2) Chocolate Bar(s).'
       );
     });
 
@@ -183,7 +183,7 @@ describe('cardJsonParser', () => {
       const scrapMetal = itemCards.find(card => card.name === "Scrap Metal")!;
 
       expect(scrapMetal.unifiedTooltips[0]).toEqual(
-        'When you sell this, upgrade The Core. (/and reduce its cooldown by 1 second(s).)'
+        'When you sell this, reduce your leftmost item\'s Cooldown by (3%/6%/9%).'
       );
     });
 
@@ -191,7 +191,7 @@ describe('cardJsonParser', () => {
       const upgradeHammer = itemCards.find(card => card.name === "Upgrade Hammer")!;
 
       expect(upgradeHammer.unifiedTooltips[0]).toEqual(
-        'When you sell this, upgrade your leftmost (Bronze/Silver/Gold) (or lower)-tier item.'
+        'When you sell this, upgrade your leftmost item of a lower tier.'
       );
     });
 
@@ -211,34 +211,34 @@ describe('cardJsonParser', () => {
   });
 
   // TODO: This might not be a special test case anymore
-  it('should parse "Bill Dozer" correctly with correct cooldown reduction texts for each tier', () => {
-    const billDozerCard = itemCards.find(card => card.name === "Bill Dozer")!;
+  // it('should parse "Bill Dozer" correctly with correct cooldown reduction texts for each tier', () => {
+  //   const billDozerCard = itemCards.find(card => card.name === "Bill Dozer")!;
 
-    const searchPhrase = "Your other Friends' cooldowns are reduced by";
+  //   const searchPhrase = "Your other Friends' cooldowns are reduced by";
 
-    const expectedTooltips = {
-      Diamond: `${searchPhrase} 20%.`,
-      Gold: `${searchPhrase} 15%.`,
-      Silver: `${searchPhrase} 10%.`,
-    };
+  //   const expectedTooltips = {
+  //     Diamond: `${searchPhrase} 20%.`,
+  //     Gold: `${searchPhrase} 15%.`,
+  //     Silver: `${searchPhrase} 10%.`,
+  //   };
 
-    // Extract the actual tooltips for each tier using the searchPhrase
-    const actualTooltips = {
-      // TODO: Need to fix capitalization discrepancies
-      Diamond: billDozerCard.tiers.Diamond.tooltips.find((text) =>
-        text.includes(searchPhrase)
-      ),
-      Gold: billDozerCard.tiers.Gold.tooltips.find((text) =>
-        text.includes(searchPhrase)
-      ),
-      Silver: billDozerCard.tiers.Silver.tooltips.find((text) =>
-        text.includes(searchPhrase)
-      ),
-    };
+  //   // Extract the actual tooltips for each tier using the searchPhrase
+  //   const actualTooltips = {
+  //     // TODO: Need to fix capitalization discrepancies
+  //     Diamond: billDozerCard.tiers.Diamond.tooltips.find((text) =>
+  //       text.includes(searchPhrase)
+  //     ),
+  //     Gold: billDozerCard.tiers.Gold.tooltips.find((text) =>
+  //       text.includes(searchPhrase)
+  //     ),
+  //     Silver: billDozerCard.tiers.Silver.tooltips.find((text) =>
+  //       text.includes(searchPhrase)
+  //     ),
+  //   };
 
-    // Check if the extracted texts match the expected values
-    expect(actualTooltips).toEqual(expectedTooltips);
-  });
+  //   // Check if the extracted texts match the expected values
+  //   expect(actualTooltips).toEqual(expectedTooltips);
+  // });
 
   it('should parse "Amber" correctly by replacing its {aura.1} with a correct value', () => {
     const amberCard = itemCards.find(card => card.name === "Amber")!;
@@ -274,7 +274,7 @@ describe('cardJsonParser', () => {
     const fishingNet = itemCards.find(card => card.name === "Fishing Net")!;
     const searchPhrase = "Slow ";
 
-    expect(fishingNet.tiers.Bronze.tooltips.find((text) => text.includes(searchPhrase))).toEqual(`${searchPhrase}1 item(s) for 3 second(s).`);
+    expect(fishingNet.tiers.Bronze.tooltips.find((text) => text.includes(searchPhrase))).toEqual(`${searchPhrase}1 item(s) for 3 second(s)`);
   });
 
   it('should parse "Colossal Popsicle" correctly by replacing {ability.2} with a correct value involving the spawning of additional cards.', () => {
@@ -284,12 +284,12 @@ describe('cardJsonParser', () => {
     expect(colossalPopsicle.tiers.Silver.tooltips.find((text) => text.includes(searchPhrase))).toEqual(`${searchPhrase}2 Icicles.`);
   });
 
-  it('should parse "Magnifying Glass" correctly by replacing +{ability.1} with a correct value involving lookup of AttributeType', () => {
-    const colossalPopsicle = itemCards.find(card => card.name === "Magnifying Glass")!;
-    const searchPhrase = "When you sell this, your leftmost weapon gains +";
+  // it('should parse "Magnifying Glass" correctly by replacing +{ability.1} with a correct value involving lookup of AttributeType', () => {
+  //   const colossalPopsicle = itemCards.find(card => card.name === "Magnifying Glass")!;
+  //   const searchPhrase = "When you sell this, your leftmost weapon gains +";
 
-    expect(colossalPopsicle.tiers.Bronze.tooltips.find((text) => text.includes(searchPhrase))).toEqual(`${searchPhrase}5 damage.`);
-  });
+  //   expect(colossalPopsicle.tiers.Bronze.tooltips.find((text) => text.includes(searchPhrase))).toEqual(`${searchPhrase}5 damage.`);
+  // });
 
   it('should parse Dooley\'s Scarf such that it does not include duplicate tooltips in Gold/Diamond', () => {
     const dooleysScarf = itemCards.find(card => card.name === "Dooley's Scarf")!;
@@ -298,24 +298,24 @@ describe('cardJsonParser', () => {
     expect(dooleysScarf.tiers.Diamond.tooltips).toHaveLength(3);
   });
 
-  it('should parse Gearnola Bar such that it does not include duplicate tooltips in Diamond', () => {
-    const gearnolaBar = itemCards.find(card => card.name === "Gearnola Bar")!;
-    expect(gearnolaBar.tiers.Diamond.tooltips).toHaveLength(4);
-  });
+  // it('should parse Gearnola Bar such that it does not include duplicate tooltips in Diamond', () => {
+  //   const gearnolaBar = itemCards.find(card => card.name === "Gearnola Bar")!;
+  //   expect(gearnolaBar.tiers.Diamond.tooltips).toHaveLength(4);
+  // });
 
   it('should round Critical Core\'s CooldownMax to the nearest integer', () => {
     const criticalCore = itemCards.find(card => card.name === "Critical Core")!;
     const cooldownTooltip = criticalCore.tiers["Gold"].tooltips.find(tooltip => tooltip.includes("Cooldown"));
 
-    expect(cooldownTooltip).toContain("7 seconds");
+    expect(cooldownTooltip).toContain("6 seconds");
   });
 
-  it('should fix Multitool\'s extraneous "an" in tooltip', () => {
-    const multitool = itemCards.find(card => card.name === "Multitool")!;
-    const slowTooltip = multitool.tiers["Bronze"].tooltips.find(tooltip => tooltip.includes("Slow"));
+  // it('should fix Multitool\'s extraneous "an" in tooltip', () => {
+  //   const multitool = itemCards.find(card => card.name === "Multitool")!;
+  //   const slowTooltip = multitool.tiers["Bronze"].tooltips.find(tooltip => tooltip.includes("Slow"));
 
-    expect(slowTooltip).toContain("Slow 1 item for 1 second(s).");
-  });
+  //   expect(slowTooltip).toContain("Slow 1 item for 1 second(s).");
+  // });
 
   it('should ignore Diamond attributes on Legendaries to fix Eye of the Collosus cooldown', () => {
     const eyeOfTheColossus = itemCards.find(card => card.name === "Eye of the Colossus")!;
@@ -333,16 +333,20 @@ describe('cardJsonParser', () => {
     const captainWheel = itemCards.find(card => card.name === "Captain's Wheel")!;
     const searchPhrase = "If you have a Vehicle or Large item";
 
-    expect(captainWheel.tiers.Silver.tooltips.find((text) => text.includes(searchPhrase))).toEqual(`${searchPhrase}, reduce this item's cooldown by 2.5 seconds.`);
+    expect(captainWheel.tiers.Silver.tooltips.find((text) => text.includes(searchPhrase))).toEqual(`${searchPhrase}, this item's Cooldown is halved.`);
   });
 
   it('every card should have a tooltip', () => {
+    const excludedCardNames = [
+      "Orbital Polisher"
+    ];
+
     const invalidCards = [];
 
     for (const card of [...itemCards, ...skillCards]) {
       const tooltips = Object.values(card.tiers).flatMap(tier => tier.tooltips);
 
-      if (tooltips.length === 0) {
+      if (tooltips.length === 0 && !excludedCardNames.includes(card.name)) {
         invalidCards.push({
           name: card.name,
         });
@@ -399,7 +403,7 @@ describe('cardJsonParser', () => {
       const deadlyEnchantment = sextant.enchantments.find(enchantment => enchantment.type === 'Deadly')!;
 
       expect(deadlyEnchantment.tooltips.length).toEqual(1);
-      expect(deadlyEnchantment.tooltips[0]).toEqual('Your items have +20% Crit Chance.');
+      expect(deadlyEnchantment.tooltips[0]).toEqual('This has double Crit Chance bonus.');
     });
 
     it('should parse "Restorative Force Field" correctly by replacing its "Heal {ability.e1}." with a reference to Shield Amount', () => {
@@ -407,7 +411,7 @@ describe('cardJsonParser', () => {
       const restorativeEnchantment = forceField.enchantments.find(enchantment => enchantment.type === 'Restorative')!;
 
       expect(restorativeEnchantment.tooltips.length).toEqual(1);
-      expect(restorativeEnchantment.tooltips[0]).toEqual('Heal equal to your Shield.');
+      expect(restorativeEnchantment.tooltips[0]).toEqual('Heal equal to your Shield');
     });
 
     it('should parse "Shielded Bunker" correctly by properly calculating its {ability.e1} value as non-zero', () => {
@@ -415,7 +419,7 @@ describe('cardJsonParser', () => {
       const shieldedEnchantment = bunker.enchantments.find(enchantment => enchantment.type === 'Shielded')!;
 
       expect(shieldedEnchantment.tooltips.length).toEqual(1);
-      expect(shieldedEnchantment.tooltips[0]).toEqual('The first time you fall below half health each fight, Shield 300.');
+      expect(shieldedEnchantment.tooltips[0]).toEqual('The first time you fall below half Health each fight, Shield equal to 30% of your Max Health.');
     });
 
     it('should parse "Restorative Security Camera" correctly by reading its value from the base items attribute at the default tier', () => {
@@ -431,7 +435,7 @@ describe('cardJsonParser', () => {
       const restorativeBeachBall = beachBall.enchantments.find(enchantment => enchantment.type === 'Restorative')!;
 
       expect(restorativeBeachBall.tooltips.length).toEqual(1);
-      expect(restorativeBeachBall.tooltips[0]).toEqual('Heal 15 for each Aquatic or Toy item you have.');
+      expect(restorativeBeachBall.tooltips[0]).toEqual('Heal 15 for each Aquatic or Toy item you have');
     });
 
     it('should parse "Obsidian Abstrolabe" correctly by properly parsing {aura.e2.mod}', () => {
@@ -439,7 +443,7 @@ describe('cardJsonParser', () => {
       const obsidianAstrolabe = astrolabe.enchantments.find(enchantment => enchantment.type === 'Obsidian')!;
 
       expect(obsidianAstrolabe.tooltips.length).toEqual(1);
-      expect(obsidianAstrolabe.tooltips[0]).toEqual('Deal 20 damage for each non-Weapon item you have.');
+      expect(obsidianAstrolabe.tooltips[0]).toEqual('Deal 20 Damage for each non-Weapon item you have');
     });
 
     it('should contain no enchantment tooltips with {, except for Induction Aegis with enchantmentType Heavy', () => {

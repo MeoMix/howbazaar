@@ -1,11 +1,11 @@
 export type EnchantmentType = 'Heavy' | 'Icy' | 'Turbo' | 'Shielded' | 'Restorative' | 'Toxic' | 'Fiery' | 'Shiny' | 'Deadly' | 'Radiant' | 'Obsidian' | 'Golden';
-export type Hero = "Pygmalien" | "Vanessa" | "Stelle" | "Jules" | "Dooley" | "Mak" | "Common" | "Hero7";
+export type Hero = "Mak" | "Common" | "Vanessa" | "Jules" | "Pygmalien" | "Stelle" | "Dooley";
 export type TierType = "Silver" | "Diamond" | "Bronze" | "Gold" | "Legendary";
 export type Size = "Small" | "Medium" | "Large";
-export type Tag = "Weapon" | "Shield" | "Heal" | "Joy" | "Burn" | "Poison" | "Merchant" | "Core" | "Property" | "Friend" | "Apparel" | "Freeze" | "Aquatic" | "Toy" | "Dinosaur" | "Tool" | "Potion" | "Vehicle" | "Food" | "Dragon" | "Tech" | "Ray" | "Haste" | "Slow" | "Damage" | "Loot" | "Ingredient" | "Relic" | "Reagent" | "Regen" | "Quest" | "Charge";
+export type Tag = "Potion" | "Core" | "Food" | "Shield" | "Heal" | "Weapon" | "Poison" | "Burn" | "Property" | "Tech" | "Friend" | "Regen" | "Tool" | "Relic" | "Freeze" | "Drone" | "Vehicle" | "Dinosaur" | "Aquatic" | "Reagent" | "Toy" | "Dragon" | "Slow" | "Apparel" | "Ray" | "Haste" | "Joy" | "Damage" | "Merchant" | "Loot" | "Key" | "Map" | "Quest";
 // TODO: Why is Regen both a Tag and a HiddenTag?
 // TODO: Why is HealthMax both a Tag and a HiddenTag?
-export type HiddenTag = "Health" | "Level" | "Gold" | "Burn" | "Shield" | "DamageReference" | "Regen" | "Damage" | "Active" | "Haste" | "Cooldown" | "Crit" | "Ammo" | "EconomyReference" | "PotionReference" | "Value" | "Charge" | "Multicast" | "RegenReference" | "JoyReference" | "Heal" | "BurnReference" | "NonWeapon" | "Slow" | "ShieldReference" | "CritReference" | "Poison" | "SlowReference" | "TechReference" | "Freeze" | "HealReference" | "PoisonReference" | "Joy" | "Toughness" | "HasteReference" | "Lifesteal" | "Income" | "FreezeReference" | "Quest" | "AmmoReference" | "Passive" | "HealthReference" | "Experience" | "Unsellable" | "Regeneration";
+export type HiddenTag = "Crit" | "CritReference" | "DamageReference" | "Regen" | "Damage" | "Active" | "Haste" | "Cooldown" | "Gold" | "FlyingReference" | "EconomyReference" | "PotionReference" | "Value" | "Charge" | "Health" | "Burn" | "Multicast" | "RegenReference" | "Shield" | "JoyReference" | "Heal" | "BurnReference" | "Flying" | "Slow" | "NonWeapon" | "ShieldReference" | "Ammo" | "Poison" | "SlowReference" | "HasteReference" | "HealthReference" | "HealReference" | "TechReference" | "Freeze" | "PoisonReference" | "Joy" | "Toughness" | "Lifesteal" | "Income" | "FreezeReference" | "Quest" | "AmmoReference" | "Passive" | "AbsorbDestroy" | "AbsorbSlow" | "AbsorbFreeze" | "Experience";
 export type CustomTag = "Unpurchasable";
 
 type ClientSideTier = {
@@ -41,7 +41,7 @@ export type ParsedItemCard = {
     enchantments: ClientSideEnchantment[];
     quests: ClientSideQuest[];
     unifiedTooltips: string[];
-    packId: CorePackId | ExpansionPackId;
+    // packId: CorePackId | ExpansionPackId;
 };
 
 // TODO: Why is Pygmalien in the Core pack?
@@ -63,7 +63,7 @@ export type ClientSideItemCard = {
     quests: ClientSideQuest[];
     unifiedTooltips: string[];
     combatEncounters: ClientSideCombatEncounterSummary[];
-    packId: CorePackId | ExpansionPackId;
+    // packId: CorePackId | ExpansionPackId;
 };
 
 export type ParsedSkillCard = {
@@ -80,7 +80,7 @@ export type ParsedSkillCard = {
     heroes: Hero[];
     artKey: string;
     unifiedTooltips: string[];
-    packId: CorePackId | ExpansionPackId;
+    // packId: CorePackId | ExpansionPackId;
 };
 
 export type ClientSideSkillCard = {
@@ -95,7 +95,7 @@ export type ClientSideSkillCard = {
     heroes: Hero[];
     unifiedTooltips: string[];
     combatEncounters: ClientSideCombatEncounterSummary[];
-    packId: CorePackId | ExpansionPackId;
+    // packId: CorePackId | ExpansionPackId;
 };
 
 export type ClientSideCombatEncounterSummary = {

@@ -9,10 +9,10 @@
     import Divider from "./Divider.svelte";
     import CopyLinkButton from "./CopyLinkButton.svelte";
     import UnifiedTooltip from "./UnifiedTooltip.svelte";
-    import {
-        getExpansionPackName,
-        isExpansionPack,
-    } from "$lib/utils/cardUtils";
+    // import {
+    //     getExpansionPackName,
+    //     isExpansionPack,
+    // } from "$lib/utils/cardUtils";
 
     const {
         card,
@@ -80,9 +80,9 @@
                         ...[
                             ...card.heroes,
                             card.size,
-                            ...(isExpansionPack(card.packId)
-                                ? [getExpansionPackName(card.packId)]
-                                : []),
+                            // ...(isExpansionPack(card.packId)
+                            //     ? [getExpansionPackName(card.packId)]
+                            //     : []),
                         ].map((text) => ({
                             text,
                             showIcon: false,

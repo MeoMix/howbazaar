@@ -7,8 +7,7 @@ const data: ParsedMerchantCard[] = [
     "id": "816e6ba0-8f5f-412e-9756-8e1901dd9d49",
     "name": "Colt",
     "heroes": [
-      "Vanessa",
-      "Stelle"
+      "Vanessa"
     ],
     "description": "Sells Ammo items"
   },
@@ -36,12 +35,7 @@ const data: ParsedMerchantCard[] = [
     "id": "85db60ee-3619-4e39-bfb2-2f4ac56f172b",
     "name": "Jay Jay",
     "heroes": [
-      "Dooley",
-      "Vanessa",
-      "Mak",
-      "Pygmalien",
-      "Jules",
-      "Stelle"
+      "Common"
     ],
     "description": "Sells items."
   },
@@ -49,12 +43,7 @@ const data: ParsedMerchantCard[] = [
     "id": "ef25f92c-484a-48de-b6de-8fc6429823ca",
     "name": "Cobweb",
     "heroes": [
-      "Dooley",
-      "Vanessa",
-      "Mak",
-      "Pygmalien",
-      "Jules",
-      "Stelle"
+      "Common"
     ],
     "description": "Sells Slow items."
   },
@@ -106,14 +95,9 @@ const data: ParsedMerchantCard[] = [
     "id": "8f0aea10-9894-4ded-a726-72b23142589c",
     "name": "Barkun",
     "heroes": [
-      "Dooley",
-      "Vanessa",
-      "Mak",
-      "Pygmalien",
-      "Jules",
-      "Stelle"
+      "Common"
     ],
-    "description": "Sells medium and large items. Buys your Small items at +{aura.0} Value."
+    "description": "Sells Medium and Large items. Buys your Small items at +{aura.0} Value."
   },
   {
     "id": "4580fb31-b2ea-4f9b-9ab9-2979602f83d8",
@@ -160,51 +144,31 @@ const data: ParsedMerchantCard[] = [
     "id": "5b7c5fc4-c942-44fe-9ca8-726dc36a2ad6",
     "name": "Kina",
     "heroes": [
-      "Dooley",
-      "Vanessa",
-      "Mak",
-      "Pygmalien",
-      "Jules",
-      "Stelle"
+      "Common"
     ],
-    "description": "Sells non-weapon items."
+    "description": "Sells non-Weapon items."
   },
   {
     "id": "b8f55bb0-536e-4d5f-a328-d38f88c6d479",
     "name": "Midsworth",
     "heroes": [
-      "Dooley",
-      "Vanessa",
-      "Mak",
-      "Pygmalien",
-      "Jules",
-      "Stelle"
+      "Common"
     ],
-    "description": "Sells small and large items. Buys your medium items at +{aura.0} value."
+    "description": "Sells Small and Large items. Buys your Medium items at +{aura.0} value."
   },
   {
     "id": "912c8b09-3b76-4aa1-8e21-245e0dfb5046",
     "name": "Mittel",
     "heroes": [
-      "Dooley",
-      "Vanessa",
-      "Mak",
-      "Pygmalien",
-      "Jules",
-      "Stelle"
+      "Common"
     ],
-    "description": "Sells medium items"
+    "description": "Sells Medium items"
   },
   {
     "id": "e3b894b0-a078-4b1d-8793-ac6459a8361a",
     "name": "Valpak",
     "heroes": [
-      "Dooley",
-      "Vanessa",
-      "Mak",
-      "Pygmalien",
-      "Jules",
-      "Stelle"
+      "Common"
     ],
     "description": "Sells items. Buys your Bronze-tier items at +{aura.0} Gold."
   },
@@ -212,12 +176,7 @@ const data: ParsedMerchantCard[] = [
     "id": "ec81a27c-590c-43a1-a353-804a23b5e5d9",
     "name": "Silvia",
     "heroes": [
-      "Dooley",
-      "Vanessa",
-      "Mak",
-      "Pygmalien",
-      "Jules",
-      "Stelle"
+      "Common"
     ],
     "description": "Sells Silver-tier items"
   },
@@ -225,12 +184,7 @@ const data: ParsedMerchantCard[] = [
     "id": "892de564-d894-4e07-ab21-959e16e8cdf8",
     "name": "Luxe",
     "heroes": [
-      "Dooley",
-      "Vanessa",
-      "Mak",
-      "Pygmalien",
-      "Jules",
-      "Stelle"
+      "Common"
     ],
     "description": "Sells Diamond-tier items"
   },
@@ -238,12 +192,7 @@ const data: ParsedMerchantCard[] = [
     "id": "2745a661-095c-44a5-bb6e-8dc76e07bda2",
     "name": "Knightshade",
     "heroes": [
-      "Dooley",
-      "Vanessa",
-      "Mak",
-      "Pygmalien",
-      "Jules",
-      "Stelle"
+      "Common"
     ],
     "description": "Sells Poison items."
   },
@@ -251,12 +200,7 @@ const data: ParsedMerchantCard[] = [
     "id": "c6cffe25-8e94-4a7b-a821-3e3c7093333b",
     "name": "Curio",
     "heroes": [
-      "Dooley",
-      "Vanessa",
-      "Mak",
-      "Pygmalien",
-      "Jules",
-      "Stelle"
+      "Common"
     ],
     "description": "Sells bronze-tier Neutral items."
   },
@@ -272,12 +216,7 @@ const data: ParsedMerchantCard[] = [
     "id": "1f72700a-fe11-4792-8a47-9e52b9387f29",
     "name": "Goldie",
     "heroes": [
-      "Dooley",
-      "Vanessa",
-      "Mak",
-      "Pygmalien",
-      "Jules",
-      "Stelle"
+      "Common"
     ],
     "description": "Sells Gold-tier items"
   },
@@ -309,25 +248,15 @@ const data: ParsedMerchantCard[] = [
     "id": "323e2c05-f077-4774-84a5-9e89d8d1c9b9",
     "name": "Quixel",
     "heroes": [
-      "Dooley",
-      "Vanessa",
-      "Mak",
-      "Pygmalien",
-      "Jules",
-      "Stelle"
+      "Common"
     ],
-    "description": "Sells small and medium items. Buys your Large items at +{aura.0} value."
+    "description": "Sells Small and Medium items. Buys your Large items at +{aura.0} value."
   },
   {
     "id": "d3727a3a-3dd2-4ea7-a396-515e2c41c1b0",
     "name": "Orion",
     "heroes": [
-      "Dooley",
-      "Vanessa",
-      "Mak",
-      "Pygmalien",
-      "Jules",
-      "Stelle"
+      "Common"
     ],
     "description": "Sells Tools"
   },
@@ -355,38 +284,23 @@ const data: ParsedMerchantCard[] = [
     "id": "dc12f4bd-6c33-41f0-b7ad-d62a0be09a47",
     "name": "Aila",
     "heroes": [
-      "Dooley",
-      "Vanessa",
-      "Mak",
-      "Pygmalien",
-      "Jules",
-      "Stelle"
+      "Common"
     ],
-    "description": "Sells weapons"
+    "description": "Sells Weapons"
   },
   {
     "id": "b690812d-108b-49ce-82f3-e1a41379022c",
     "name": "Serafina",
     "heroes": [
-      "Dooley",
-      "Vanessa",
-      "Mak",
-      "Pygmalien",
-      "Jules",
-      "Stelle"
+      "Common"
     ],
-    "description": "Sells Enchanted Items"
+    "description": "Sells Enchanted items"
   },
   {
     "id": "b1288f12-2cf9-4473-a43e-4dd521703990",
     "name": "Chronos",
     "heroes": [
-      "Dooley",
-      "Vanessa",
-      "Mak",
-      "Pygmalien",
-      "Jules",
-      "Stelle"
+      "Common"
     ],
     "description": "Sells Haste items."
   },
@@ -394,12 +308,7 @@ const data: ParsedMerchantCard[] = [
     "id": "43dbd6ed-6989-4ae4-acdc-f8bfcb8a008f",
     "name": "Hef",
     "heroes": [
-      "Dooley",
-      "Vanessa",
-      "Mak",
-      "Pygmalien",
-      "Jules",
-      "Stelle"
+      "Common"
     ],
     "description": "Sells Burn items."
   },
@@ -407,25 +316,15 @@ const data: ParsedMerchantCard[] = [
     "id": "705c0d8e-8513-49ce-82e8-81782cdac316",
     "name": "Ande",
     "heroes": [
-      "Dooley",
-      "Vanessa",
-      "Mak",
-      "Pygmalien",
-      "Jules",
-      "Stelle"
+      "Common"
     ],
-    "description": "Sells small items"
+    "description": "Sells Small items"
   },
   {
     "id": "c246ee53-51ea-40c1-ac2f-71435e179531",
     "name": "Freiya",
     "heroes": [
-      "Dooley",
-      "Vanessa",
-      "Mak",
-      "Pygmalien",
-      "Jules",
-      "Stelle"
+      "Common"
     ],
     "description": "Sells Freeze items."
   },
@@ -445,14 +344,9 @@ const data: ParsedMerchantCard[] = [
     "id": "065f6793-8607-4f02-abfe-db6afb221ab2",
     "name": "Pol",
     "heroes": [
-      "Dooley",
-      "Vanessa",
-      "Mak",
-      "Pygmalien",
-      "Jules",
-      "Stelle"
+      "Common"
     ],
-    "description": "Sells large items"
+    "description": "Sells Large items"
   }
 ];
 
