@@ -800,41 +800,7 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
     return cards;
 }
 
-function findInvalidSkillsWithStelle(cardsJson: CardsJson) {
-    const wouldBeValidExceptInvalidId = (entry: Card): boolean => {
-        return entry.Type === "Skill" &&
-            // entry.SpawningEligibility !== "Never" &&
-            entry.Tiers !== undefined &&
-            entry.Localization.Title.Text !== null &&
-            !hasInvalidKeywords(entry.Localization.Title.Text) &&
-            !hasInvalidKeywords(entry.InternalName) &&
-            entry.Heroes.includes("Stelle") &&
-            !(entry.Id in invalidSkillIds) &&
-            !!entry.ArtKey;
-    };
-
-    const invalidSkillsWithStelle = Object.values(cardsJson[CURRENT_VERSION]).flat().filter(wouldBeValidExceptInvalidId);
-
-    console.log("Skills that would be valid except they're in invalidSkillIds AND have 'Stelle' in Heroes:");
-    console.log("Total count:", invalidSkillsWithStelle.length);
-
-    invalidSkillsWithStelle.forEach(skill => {
-        console.log(`- ${skill.Localization.Title.Text} (ID: ${skill.Id})`);
-        console.log(`  Heroes: [${skill.Heroes.join(", ")}]`);
-        console.log(`  Starting Tier: ${skill.StartingTier}`);
-        console.log(`  Size: ${skill.Size}`);
-        console.log(`  Tags: [${skill.Tags.join(", ")}]`);
-        console.log("---");
-    });
-
-    return invalidSkillsWithStelle;
-}
-
 function parseSkillCards(cardsJson: CardsJson): ParsedSkillCard[] {
-    const invalidSkillsWithStelle = findInvalidSkillsWithStelle(cardsJson).map(skill => skill.Id);
-    debugger;
-
-
     const isValidSkillCard = (entry: Card): entry is ValidSkillCard =>
         entry.Type === "Skill" &&
         // entry.SpawningEligibility !== "Never" &&

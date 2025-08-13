@@ -135,7 +135,10 @@ const invalidItemIds: Record<string, string> = {
   "c7432844-9341-411b-8a1f-8662d46c181f": "Large Package",
   "4ddb3806-a5ee-4cfd-985f-19f184580ade": "Small Package",
   "d0b0c34c-f616-4a51-a0f4-fe63216cf8af": "Moon Orb",
-  "9d871e47-c760-42aa-84ab-995f5bf3f394": "Epsilon Ray"
+  "9d871e47-c760-42aa-84ab-995f5bf3f394": "Epsilon Ray",
+  "0ac69b6e-67fc-4e98-ba92-cf91a5d08d97": "Acid Sprayer",
+  "3174b74a-9e67-4db7-ba98-0d4935b2586d": "Coupon",
+  "6cf87784-bca9-4735-a431-15bc88c97f78": "Compass"
 };
 
 export default invalidItemIds;

@@ -21,6 +21,15 @@ const args = process.argv.slice(2);
 const shouldExtract = !args.includes('--no-extract');
 
 const nameToFileMap: { [key: string]: string } = {
+    'ClockworkDisc': 'Disc',
+    'Daggerwing': 'Dreadnought',
+    'InFlightMeal': 'InFlightDinner',
+    'LaunchTower': 'BalloonTower',
+    'LavaRoller': 'LavaCycle',
+    'LightningButterfly': 'ElectricButterflyDrone',
+    'Pillbuggy': 'Pilbuggy',
+    'PilotsWings': 'PilotBadge',
+    'RammingBalloon': 'BalloonRam',
     'BusinessCard': 'BuisnessCard',
     'TheCore': 'PowerCore',
     'NestingDoll': 'Matryoshka',
