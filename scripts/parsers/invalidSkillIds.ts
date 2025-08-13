@@ -66,7 +66,6 @@ const invalidSkillIds: Record<string, string> = {
   "b607f75b-e245-4e4a-809e-899fcdd1e6e5": "Closing Speed",
   "d0974dba-6234-49ab-a0b1-9fae08dce22b": "Main Course",
   "915b9236-6d91-47f6-ad06-ec00c8ce7018": "Pole Position",
-  "6e7328ed-f925-4ca6-8637-9625626e12d2": "Quick Defenses",
   "8089e76c-1565-457b-9cd5-fc38f60bd185": "Immunocompromised",
   "03aa7efa-8590-470f-9ff5-8ae76e015741": "Happiness",
   "e78b1599-ca80-47b0-b386-04ae403994d5": "Virulent Research",

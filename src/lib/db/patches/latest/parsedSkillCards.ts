@@ -11713,6 +11713,49 @@ const data: ParsedSkillCard[] = [
     ]
   },
   {
+    "id": "6e7328ed-f925-4ca6-8637-9625626e12d2",
+    "name": "Quick Defenses",
+    "startingTier": "Gold",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": [
+          "Your Shield items' Cooldowns are reduced by 5%."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Your Shield items' Cooldowns are reduced by 10%."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "ShieldReference",
+      "Cooldown"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Pygmalien",
+      "Dooley",
+      "Vanessa",
+      "Stelle"
+    ],
+    "artKey": "Icon_Skill_QuickDefenses.png",
+    "unifiedTooltips": [
+      "Your Shield items' Cooldowns are reduced by (5%/10%)."
+    ]
+  },
+  {
     "id": "4225d131-791a-4ea4-ab0e-80a3343a3253",
     "name": "Defensive Stance",
     "startingTier": "Silver",
