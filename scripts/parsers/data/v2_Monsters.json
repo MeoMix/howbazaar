@@ -2019,44 +2019,6 @@
       }
     ]
   },
-  "78c335a6-42bc-45e2-a8e7-e9a1dce7502d": {
-    "Id": "78c335a6-42bc-45e2-a8e7-e9a1dce7502d",
-    "InternalName": "Cloudtop Officer",
-    "Health": 1650,
-    "Items": [
-      {
-        "EnchantmentType": null,
-        "Id": "0591d8b4-2632-4c41-9f73-48896237256d",
-        "Tier": "Gold"
-      },
-      {
-        "EnchantmentType": null,
-        "Id": "809d6638-4e8e-4b14-867a-c6feccbeae9d",
-        "Tier": "Gold"
-      },
-      {
-        "EnchantmentType": null,
-        "Id": "7cc657b3-6a37-427a-b14e-7e12c3a2277a",
-        "Tier": "Silver"
-      },
-      {
-        "EnchantmentType": null,
-        "Id": "e1f77ca7-8c4c-4e40-8a42-fd125f6104ae",
-        "Tier": "Silver"
-      },
-      {
-        "EnchantmentType": null,
-        "Id": "4bb19ca8-9729-423d-8e15-6053314b51df",
-        "Tier": "Gold"
-      }
-    ],
-    "Skills": [
-      {
-        "Id": "6e95c90d-e4b4-42c3-b5e9-3c390d762c92",
-        "Tier": "Bronze"
-      }
-    ]
-  },
   "45de3316-8847-4321-ba1c-83a808bad369": {
     "Id": "45de3316-8847-4321-ba1c-83a808bad369",
     "InternalName": "Frost Street Champion",
@@ -5040,5 +5002,75 @@
         "Tier": "Silver"
       }
     ]
+  },
+  "35d68424-87ba-4d8a-8776-8d8302a425f9": {
+    "Id": "35d68424-87ba-4d8a-8776-8d8302a425f9",
+    "InternalName": "Product Demonstrator",
+    "Health": -1,
+    "Items": [],
+    "Skills": []
+  },
+  "de126a7a-a0bc-4a6f-96f0-442920104fcf": {
+    "Id": "de126a7a-a0bc-4a6f-96f0-442920104fcf",
+    "InternalName": "Grandfather Klok",
+    "Health": -1,
+    "Items": [],
+    "Skills": []
+  },
+  "78c335a6-42bc-45e2-a8e7-e9a1dce7502d": {
+    "Id": "78c335a6-42bc-45e2-a8e7-e9a1dce7502d",
+    "InternalName": "Cloudtop Officer",
+    "Health": -1,
+    "Items": [],
+    "Skills": []
+  },
+  "f4bc9c3d-ce22-4fd8-9b7f-27214fed9f1d": {
+    "Id": "f4bc9c3d-ce22-4fd8-9b7f-27214fed9f1d",
+    "InternalName": "Cloudtop Admiral",
+    "Health": -1,
+    "Items": [],
+    "Skills": []
+  },
+  "2b68a81d-ea7e-401b-a374-77529470383f": {
+    "Id": "2b68a81d-ea7e-401b-a374-77529470383f",
+    "InternalName": "Tortuga",
+    "Health": -1,
+    "Items": [],
+    "Skills": []
+  },
+  "fd862d85-66cd-431f-a85a-07742cbc2e1b": {
+    "Id": "fd862d85-66cd-431f-a85a-07742cbc2e1b",
+    "InternalName": "Test Subject Alpha",
+    "Health": -1,
+    "Items": [],
+    "Skills": []
+  },
+  "3c433f32-5070-4f57-82d3-9b4347da7aa3": {
+    "Id": "3c433f32-5070-4f57-82d3-9b4347da7aa3",
+    "InternalName": "Infernal Dreadnought",
+    "Health": -1,
+    "Items": [],
+    "Skills": []
+  },
+  "e1c287a8-4d9b-4ab4-899a-eb54d1446d6f": {
+    "Id": "e1c287a8-4d9b-4ab4-899a-eb54d1446d6f",
+    "InternalName": "Rex Spex",
+    "Health": -1,
+    "Items": [],
+    "Skills": []
+  },
+  "25f54463-2cca-419a-b0e8-8f5297896992": {
+    "Id": "25f54463-2cca-419a-b0e8-8f5297896992",
+    "InternalName": "Dooltron",
+    "Health": -1,
+    "Items": [],
+    "Skills": []
+  },
+  "e51634b6-ce99-4038-97e4-b9d86bdddae0": {
+    "Id": "e51634b6-ce99-4038-97e4-b9d86bdddae0",
+    "InternalName": "Awakened Primordial",
+    "Health": -1,
+    "Items": [],
+    "Skills": []
   }
 }

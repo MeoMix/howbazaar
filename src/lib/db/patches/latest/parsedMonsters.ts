@@ -1724,38 +1724,6 @@ const data: ParsedMonster[] = [
     ]
   },
   {
-    "id": "78c335a6-42bc-45e2-a8e7-e9a1dce7502d",
-    "health": 1650,
-    "items": [
-      {
-        "id": "0591d8b4-2632-4c41-9f73-48896237256d",
-        "tierType": "Gold"
-      },
-      {
-        "id": "809d6638-4e8e-4b14-867a-c6feccbeae9d",
-        "tierType": "Gold"
-      },
-      {
-        "id": "7cc657b3-6a37-427a-b14e-7e12c3a2277a",
-        "tierType": "Silver"
-      },
-      {
-        "id": "e1f77ca7-8c4c-4e40-8a42-fd125f6104ae",
-        "tierType": "Silver"
-      },
-      {
-        "id": "4bb19ca8-9729-423d-8e15-6053314b51df",
-        "tierType": "Gold"
-      }
-    ],
-    "skills": [
-      {
-        "id": "6e95c90d-e4b4-42c3-b5e9-3c390d762c92",
-        "tierType": "Bronze"
-      }
-    ]
-  },
-  {
     "id": "45de3316-8847-4321-ba1c-83a808bad369",
     "health": 3675,
     "items": [
@@ -4294,6 +4262,66 @@ const data: ParsedMonster[] = [
         "tierType": "Silver"
       }
     ]
+  },
+  {
+    "id": "35d68424-87ba-4d8a-8776-8d8302a425f9",
+    "health": -1,
+    "items": [],
+    "skills": []
+  },
+  {
+    "id": "de126a7a-a0bc-4a6f-96f0-442920104fcf",
+    "health": -1,
+    "items": [],
+    "skills": []
+  },
+  {
+    "id": "78c335a6-42bc-45e2-a8e7-e9a1dce7502d",
+    "health": -1,
+    "items": [],
+    "skills": []
+  },
+  {
+    "id": "f4bc9c3d-ce22-4fd8-9b7f-27214fed9f1d",
+    "health": -1,
+    "items": [],
+    "skills": []
+  },
+  {
+    "id": "2b68a81d-ea7e-401b-a374-77529470383f",
+    "health": -1,
+    "items": [],
+    "skills": []
+  },
+  {
+    "id": "fd862d85-66cd-431f-a85a-07742cbc2e1b",
+    "health": -1,
+    "items": [],
+    "skills": []
+  },
+  {
+    "id": "3c433f32-5070-4f57-82d3-9b4347da7aa3",
+    "health": -1,
+    "items": [],
+    "skills": []
+  },
+  {
+    "id": "e1c287a8-4d9b-4ab4-899a-eb54d1446d6f",
+    "health": -1,
+    "items": [],
+    "skills": []
+  },
+  {
+    "id": "25f54463-2cca-419a-b0e8-8f5297896992",
+    "health": -1,
+    "items": [],
+    "skills": []
+  },
+  {
+    "id": "e51634b6-ce99-4038-97e4-b9d86bdddae0",
+    "health": -1,
+    "items": [],
+    "skills": []
   }
 ];
 

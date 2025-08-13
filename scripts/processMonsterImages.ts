@@ -16,6 +16,8 @@ const assetPath = `${inputDirectory}${assetType}/`;
 const outputDirectory = './static/images/';
 
 const nameToFileMap: Record<string, string> = {
+    'Infernal Dreadnought': 'InfernalDreadnaught',
+    'Awakened Primordial': 'SlumberingPrimordial',
     'Hakurvian Rocket Trooper': 'HarkuvianRocketTrooper',
     'Rogue Scrapper': 'RogueScraper',
     'Bouncertron': 'RoboBouncer',
