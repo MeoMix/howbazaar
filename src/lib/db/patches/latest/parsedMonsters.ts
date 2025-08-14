@@ -304,7 +304,7 @@ const data: ParsedMonster[] = [
   },
   {
     "id": "a44c3d18-8968-4956-b3a2-5cbf3b4c12c2",
-    "health": 1925,
+    "health": 2750,
     "items": [
       {
         "id": "d5ad07b5-9b1e-4000-848e-503861851e2b",
@@ -316,19 +316,7 @@ const data: ParsedMonster[] = [
       },
       {
         "id": "b57d9963-d241-40c9-8f9f-f9925a2da661",
-        "tierType": "Diamond"
-      },
-      {
-        "id": "f1c04562-6db4-45d5-a056-a4df9d185faf",
         "tierType": "Gold"
-      },
-      {
-        "id": "2df8f38b-bb9f-4247-afe9-525067c9e29e",
-        "tierType": "Gold"
-      },
-      {
-        "id": "7fa2b9c8-f038-44f9-8143-a4f8ee7f34bf",
-        "tierType": "Diamond"
       },
       {
         "id": "84b74f1e-0960-4c71-bb4f-d35e114250c2",
@@ -336,24 +324,24 @@ const data: ParsedMonster[] = [
       },
       {
         "id": "844efa15-de6f-4fec-a438-21904969577b",
-        "tierType": "Diamond"
+        "tierType": "Gold"
       },
       {
         "id": "ae126c7d-8f0f-4a23-b11f-da56e5353220",
-        "tierType": "Diamond"
+        "tierType": "Gold"
       },
       {
         "id": "b3c06ff9-f0e1-4527-81aa-2f71d7bf6503",
-        "tierType": "Diamond"
+        "tierType": "Gold"
       }
     ],
     "skills": [
       {
-        "id": "6c3d41e4-1ca7-4be5-b0e2-6cadbbd2bd27",
+        "id": "544be6e9-ff3e-4cb6-9759-498ac2d24d71",
         "tierType": "Gold"
       },
       {
-        "id": "544be6e9-ff3e-4cb6-9759-498ac2d24d71",
+        "id": "18c6637b-14c7-4311-b853-e3fd74c613eb",
         "tierType": "Gold"
       }
     ]
