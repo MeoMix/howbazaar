@@ -69,7 +69,10 @@
             <li>- Haunted Kimono</li>
             <li>- Rogue Scrapper</li>
             <li>- Boarrior</li>
-            <li>- Eccentric Etherwright</li>
+            <li>
+                <span class="line-through">- Eccentric Etherwright</span>
+                <span class="text-green-500">Updated!</span>
+            </li>
             <li>
                 <span class="line-through">- Giant Mosquito</span>
                 <span class="text-green-500">Updated!</span>

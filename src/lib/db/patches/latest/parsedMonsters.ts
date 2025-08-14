@@ -2700,40 +2700,8 @@ const data: ParsedMonster[] = [
     ]
   },
   {
-    "id": "66e0b55f-022d-4c54-9558-ce7d077a01dd",
-    "health": 650,
-    "items": [
-      {
-        "id": "77c8ef2d-62c8-4214-993d-648915c93e83",
-        "tierType": "Legendary"
-      },
-      {
-        "id": "6ba3778c-e760-44f3-b3b4-a4b4ca267cc2",
-        "tierType": "Gold"
-      },
-      {
-        "id": "85f59c88-c391-4a03-8c3b-f312518e81de",
-        "tierType": "Silver"
-      },
-      {
-        "id": "f8b41c46-8adc-4e84-835a-831e2e3d84d1",
-        "tierType": "Silver"
-      },
-      {
-        "id": "1bdbc6f6-2690-445a-877e-90dbbd5e4658",
-        "tierType": "Silver"
-      }
-    ],
-    "skills": [
-      {
-        "id": "51cec489-1988-48ff-95af-0235b374803e",
-        "tierType": "Bronze"
-      }
-    ]
-  },
-  {
     "id": "325c88c3-9496-44bf-b900-4adf1f84bf2f",
-    "health": 650,
+    "health": 600,
     "items": [
       {
         "id": "77c8ef2d-62c8-4214-993d-648915c93e83",
@@ -2749,11 +2717,11 @@ const data: ParsedMonster[] = [
       },
       {
         "id": "f8b41c46-8adc-4e84-835a-831e2e3d84d1",
-        "tierType": "Silver"
+        "tierType": "Bronze"
       },
       {
         "id": "1bdbc6f6-2690-445a-877e-90dbbd5e4658",
-        "tierType": "Silver"
+        "tierType": "Bronze"
       }
     ],
     "skills": [

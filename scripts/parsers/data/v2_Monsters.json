@@ -3171,48 +3171,10 @@
       }
     ]
   },
-  "66e0b55f-022d-4c54-9558-ce7d077a01dd": {
-    "Id": "66e0b55f-022d-4c54-9558-ce7d077a01dd",
-    "InternalName": "Eccentric Etherwright (Silver)",
-    "Health": 650,
-    "Items": [
-      {
-        "EnchantmentType": null,
-        "Id": "77c8ef2d-62c8-4214-993d-648915c93e83",
-        "Tier": "Legendary"
-      },
-      {
-        "EnchantmentType": null,
-        "Id": "6ba3778c-e760-44f3-b3b4-a4b4ca267cc2",
-        "Tier": "Gold"
-      },
-      {
-        "EnchantmentType": null,
-        "Id": "85f59c88-c391-4a03-8c3b-f312518e81de",
-        "Tier": "Silver"
-      },
-      {
-        "EnchantmentType": null,
-        "Id": "f8b41c46-8adc-4e84-835a-831e2e3d84d1",
-        "Tier": "Silver"
-      },
-      {
-        "EnchantmentType": null,
-        "Id": "1bdbc6f6-2690-445a-877e-90dbbd5e4658",
-        "Tier": "Silver"
-      }
-    ],
-    "Skills": [
-      {
-        "Id": "51cec489-1988-48ff-95af-0235b374803e",
-        "Tier": "Bronze"
-      }
-    ]
-  },
   "325c88c3-9496-44bf-b900-4adf1f84bf2f": {
     "Id": "325c88c3-9496-44bf-b900-4adf1f84bf2f",
     "InternalName": "Eccentric Etherwright (Gold)",
-    "Health": 650,
+    "Health": 600,
     "Items": [
       {
         "EnchantmentType": null,
@@ -3232,12 +3194,12 @@
       {
         "EnchantmentType": null,
         "Id": "f8b41c46-8adc-4e84-835a-831e2e3d84d1",
-        "Tier": "Silver"
+        "Tier": "Bronze"
       },
       {
         "EnchantmentType": null,
         "Id": "1bdbc6f6-2690-445a-877e-90dbbd5e4658",
-        "Tier": "Silver"
+        "Tier": "Bronze"
       }
     ],
     "Skills": [
