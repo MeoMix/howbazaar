@@ -4341,9 +4341,39 @@ const data: ParsedMonster[] = [
   },
   {
     "id": "78c335a6-42bc-45e2-a8e7-e9a1dce7502d",
-    "health": -1,
-    "items": [],
-    "skills": []
+    "health": 1700,
+    "items": [
+      {
+        "id": "0591d8b4-2632-4c41-9f73-48896237256d",
+        "tierType": "Gold"
+      },
+      {
+        "id": "809d6638-4e8e-4b14-867a-c6feccbeae9d",
+        "tierType": "Silver"
+      },
+      {
+        "id": "7cc657b3-6a37-427a-b14e-7e12c3a2277a",
+        "tierType": "Silver"
+      },
+      {
+        "id": "e1f77ca7-8c4c-4e40-8a42-fd125f6104ae",
+        "tierType": "Silver"
+      },
+      {
+        "id": "4bb19ca8-9729-423d-8e15-6053314b51df",
+        "tierType": "Gold"
+      },
+      {
+        "id": "fa5a2ad2-48f2-4e55-b3ef-e3e708483946",
+        "tierType": "Silver"
+      }
+    ],
+    "skills": [
+      {
+        "id": "8d51073a-d237-4be1-bc6e-440eaec106c5",
+        "tierType": "Silver"
+      }
+    ]
   },
   {
     "id": "f4bc9c3d-ce22-4fd8-9b7f-27214fed9f1d",

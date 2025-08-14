@@ -109,7 +109,10 @@
                 <span class="line-through">- Grandfather Klok</span>
                 <span class="text-green-500">Updated!</span>
             </li>
-            <li>- Cloudtop Officer</li>
+            <li>
+                <span class="line-through">- Cloudtop Officer</span>
+                <span class="text-green-500">Updated!</span>
+            </li>
             <li>- Cloudtop Admiral (Need HP only)</li>
             <li>- Tortuga (Need HP only)</li>
             <li>
