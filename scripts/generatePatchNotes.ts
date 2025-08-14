@@ -187,8 +187,8 @@ function compareTooltips(oldTooltips: string[] | undefined, newTooltips: string[
 
     // Helper function to check if two tooltips are similar enough to be considered the same
     function areTooltipsSimilar(t1: string, t2: string): boolean {
-        // Remove all numbers and special characters for comparison, and convert to lowercase
-        const normalize = (s: string) => s.replace(/[0-9()/]/g, '').toLowerCase();
+        // Remove all numbers, punctuation, and whitespace for comparison, and convert to lowercase
+        const normalize = (s: string) => s.replace(/[0-9()/.,!?;:'"`~@#$%^&*()_+\-=\[\]{}|\\<>]/g, '').replace(/\s+/g, '').toLowerCase();
         const normalized1 = normalize(t1);
         const normalized2 = normalize(t2);
 
@@ -199,10 +199,10 @@ function compareTooltips(oldTooltips: string[] | undefined, newTooltips: string[
         return distance(normalized1, normalized2) <= 2;
     }
 
-    // First pass: find exact matches (case-insensitive)
+    // First pass: find exact matches (normalized comparison)
     for (let i = 0; i < oldTooltips.length; i++) {
         const oldTooltip = oldTooltips[i];
-        const exactMatchIndex = newTooltips.findIndex((t, j) => !matchedIndices.has(j) && t.toLowerCase() === oldTooltip.toLowerCase());
+        const exactMatchIndex = newTooltips.findIndex((t, j) => !matchedIndices.has(j) && areTooltipsSimilar(t, oldTooltip));
 
         if (exactMatchIndex !== -1) {
             matchedIndices.add(exactMatchIndex);
