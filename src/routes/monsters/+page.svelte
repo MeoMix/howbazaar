@@ -61,6 +61,38 @@
             <li>- Names of all skills.</li>
             <li>- Names of all items.</li>
         </ul>
+
+        I still need the changes for these previously existing monsters:
+        <br />
+        <ul>
+            <li>- Haunted Kimono</li>
+            <li>- Rogue Scrapper</li>
+            <li>- Boarrior</li>
+            <li>- Eccentric Etherwright</li>
+            <li>- Giant Mosquito</li>
+            <li>- Street Gamer</li>
+            <li>- Foundation Weeper</li>
+            <li>- Dire Mosquito</li>
+            <li>- Sergeant Suds</li>
+            <li>- Ghost Pepper</li>
+            <li>- Thug</li>
+            <li>- Lord of the Wastes</li>
+        </ul>
+
+        I still need the changes for these new monsters:
+        <br />
+        <ul>
+            <li>- Product Demostrator</li>
+            <li>- Grandfather Klok</li>
+            <li>- Cloudtop Officer</li>
+            <li>- Cloudtop Admiral</li>
+            <li>- Tortuga</li>
+            <li>- Test Subject Alpha</li>
+            <li>- Infernal Dreadnought</li>
+            <li>- Rex Spex</li>
+            <li>- Dooltron</li>
+            <li>- Awakened Primordial</li>
+        </ul>
     </div>
 
     <MonsterFilters
