@@ -49,8 +49,7 @@ const data: ParsedDayHour[] = [
       {
         "ids": [
           "78139f32-94b1-4dc6-9ef0-374c3c8863a7",
-          "7294ff99-ca2b-409e-838f-0efdb10dded0",
-          "bc5fa0a4-8ca9-4384-a283-9c7c84b27169"
+          "7294ff99-ca2b-409e-838f-0efdb10dded0"
         ]
       },
       {
@@ -64,7 +63,8 @@ const data: ParsedDayHour[] = [
           "962bf2b2-fc1b-4ad3-9526-15d76d3bb0de",
           "d50543f3-132c-4c43-9230-50a5e96087d9",
           "e3a8efa1-1dfc-4dd5-a1fe-7daaa8315e18",
-          "69af3106-78fd-4a74-b150-ec41442cdbba"
+          "69af3106-78fd-4a74-b150-ec41442cdbba",
+          "bc5fa0a4-8ca9-4384-a283-9c7c84b27169"
         ]
       }
     ]

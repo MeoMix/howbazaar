@@ -1890,14 +1890,18 @@ const data: ParsedMonster[] = [
   },
   {
     "id": "bc5fa0a4-8ca9-4384-a283-9c7c84b27169",
-    "health": 900,
+    "health": 1700,
     "items": [
       {
         "id": "4826832f-f3a5-4c40-b8fa-737f002074fa",
         "tierType": "Silver"
       },
       {
-        "id": "4826832f-f3a5-4c40-b8fa-737f002074fa",
+        "id": "7b731de3-3598-46f4-b61f-75b7a0065d8a",
+        "tierType": "Silver"
+      },
+      {
+        "id": "ffcc9b4e-24f2-479b-ab80-7bfbaec664f2",
         "tierType": "Silver"
       },
       {
@@ -1905,8 +1909,8 @@ const data: ParsedMonster[] = [
         "tierType": "Silver"
       },
       {
-        "id": "ffcc9b4e-24f2-479b-ab80-7bfbaec664f2",
-        "tierType": "Silver"
+        "id": "5a162b5d-4802-4f56-a30e-19b3c8ef677c",
+        "tierType": "Gold"
       },
       {
         "id": "9bdc7dad-5016-4743-9b44-1e20b03a1961",
@@ -1917,7 +1921,11 @@ const data: ParsedMonster[] = [
         "tierType": "Gold"
       },
       {
-        "id": "4826832f-f3a5-4c40-b8fa-737f002074fa",
+        "id": "6031a849-e93e-41fb-a41f-a2c4d8be8929",
+        "tierType": "Gold"
+      },
+      {
+        "id": "95640018-a5d3-4119-8c4f-5509e161c689",
         "tierType": "Silver"
       },
       {
@@ -1928,6 +1936,10 @@ const data: ParsedMonster[] = [
     "skills": [
       {
         "id": "b7938579-8bc3-4bbf-b002-ffa1870acd50",
+        "tierType": "Gold"
+      },
+      {
+        "id": "0526054f-98da-4e95-be68-d25b26bb0fe3",
         "tierType": "Gold"
       }
     ]
@@ -4272,8 +4284,42 @@ const data: ParsedMonster[] = [
   {
     "id": "de126a7a-a0bc-4a6f-96f0-442920104fcf",
     "health": -1,
-    "items": [],
-    "skills": []
+    "items": [
+      {
+        "id": "189c31f3-1641-4e05-bf78-800e71ffc0e7",
+        "tierType": "Silver"
+      },
+      {
+        "id": "84a27aa9-5606-4418-a2dd-d6e4065e81c9",
+        "tierType": "Silver"
+      },
+      {
+        "id": "ae6ddbd0-d007-482a-8d2a-d3f6a5a1b29e",
+        "tierType": "Gold"
+      },
+      {
+        "id": "ca77281c-f912-4db3-86ce-64842a4ccdaa",
+        "tierType": "Silver"
+      },
+      {
+        "id": "86769097-271e-46ee-8d42-317c6d8a7a09",
+        "tierType": "Gold"
+      },
+      {
+        "id": "3310f7e3-025e-4212-9e95-756fe3af8ab1",
+        "tierType": "Silver"
+      }
+    ],
+    "skills": [
+      {
+        "id": "b67ef429-b97c-4e43-9332-2aea1d82db10",
+        "tierType": "Silver"
+      },
+      {
+        "id": "b76a00ad-8034-4ad8-9f55-9fdc279cf60e",
+        "tierType": "Silver"
+      }
+    ]
   },
   {
     "id": "78c335a6-42bc-45e2-a8e7-e9a1dce7502d",
@@ -4290,8 +4336,46 @@ const data: ParsedMonster[] = [
   {
     "id": "2b68a81d-ea7e-401b-a374-77529470383f",
     "health": -1,
-    "items": [],
-    "skills": []
+    "items": [
+      {
+        "id": "f8a38ad1-5e5a-4c95-9bd1-55c81c31b117",
+        "tierType": "Gold"
+      },
+      {
+        "id": "bbf63b5c-57c3-4412-beb5-18bfec2372e6",
+        "tierType": "Gold"
+      },
+      {
+        "id": "3191df3b-7e7d-4df9-9395-6fffd4207f6d",
+        "tierType": "Gold"
+      },
+      {
+        "id": "b325d26f-0625-406c-89d4-30e011b30b9e",
+        "tierType": "Gold"
+      },
+      {
+        "id": "91766035-9d5c-49df-b6b1-25ff7328af5b",
+        "tierType": "Gold"
+      },
+      {
+        "id": "b4ccf465-fbf6-4fd4-b4ed-515594ed8722",
+        "tierType": "Gold"
+      },
+      {
+        "id": "47e97343-d790-4ecc-8ccd-d2f7e9949494",
+        "tierType": "Gold"
+      }
+    ],
+    "skills": [
+      {
+        "id": "e781d7bd-a660-4d5a-a9bf-a7f015a14661",
+        "tierType": "Gold"
+      },
+      {
+        "id": "1d9eb8d1-ef94-4847-b472-28290159e894",
+        "tierType": "Gold"
+      }
+    ]
   },
   {
     "id": "fd862d85-66cd-431f-a85a-07742cbc2e1b",
@@ -4302,8 +4386,34 @@ const data: ParsedMonster[] = [
   {
     "id": "3c433f32-5070-4f57-82d3-9b4347da7aa3",
     "health": -1,
-    "items": [],
-    "skills": []
+    "items": [
+      {
+        "id": "3a9f3d16-9022-4709-9903-8b08b1f918dc",
+        "tierType": "Gold"
+      },
+      {
+        "id": "94144b09-eb5b-438b-a0fe-3d7494b84c84",
+        "tierType": "Gold"
+      },
+      {
+        "id": "cfca6975-d74c-41b1-a179-ae796058ca18",
+        "tierType": "Gold"
+      },
+      {
+        "id": "314136b6-8ee8-4ac9-8560-de5249c96e3e",
+        "tierType": "Gold"
+      },
+      {
+        "id": "a89a0b5d-bbbb-4818-b002-1ad0156156f7",
+        "tierType": "Gold"
+      }
+    ],
+    "skills": [
+      {
+        "id": "5de1aaae-adb9-48a4-81fc-aff714956656",
+        "tierType": "Gold"
+      }
+    ]
   },
   {
     "id": "e1c287a8-4d9b-4ab4-899a-eb54d1446d6f",

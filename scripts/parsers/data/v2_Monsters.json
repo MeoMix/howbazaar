@@ -2216,7 +2216,7 @@
   "bc5fa0a4-8ca9-4384-a283-9c7c84b27169": {
     "Id": "bc5fa0a4-8ca9-4384-a283-9c7c84b27169",
     "InternalName": "Dire Mosquito",
-    "Health": 900,
+    "Health": 1700,
     "Items": [
       {
         "EnchantmentType": null,
@@ -2225,7 +2225,12 @@
       },
       {
         "EnchantmentType": null,
-        "Id": "4826832f-f3a5-4c40-b8fa-737f002074fa",
+        "Id": "7b731de3-3598-46f4-b61f-75b7a0065d8a",
+        "Tier": "Silver"
+      },
+      {
+        "EnchantmentType": null,
+        "Id": "ffcc9b4e-24f2-479b-ab80-7bfbaec664f2",
         "Tier": "Silver"
       },
       {
@@ -2235,8 +2240,8 @@
       },
       {
         "EnchantmentType": null,
-        "Id": "ffcc9b4e-24f2-479b-ab80-7bfbaec664f2",
-        "Tier": "Silver"
+        "Id": "5a162b5d-4802-4f56-a30e-19b3c8ef677c",
+        "Tier": "Gold"
       },
       {
         "EnchantmentType": null,
@@ -2250,7 +2255,12 @@
       },
       {
         "EnchantmentType": null,
-        "Id": "4826832f-f3a5-4c40-b8fa-737f002074fa",
+        "Id": "6031a849-e93e-41fb-a41f-a2c4d8be8929",
+        "Tier": "Gold"
+      },
+      {
+        "EnchantmentType": null,
+        "Id": "95640018-a5d3-4119-8c4f-5509e161c689",
         "Tier": "Silver"
       },
       {
@@ -2262,6 +2272,10 @@
     "Skills": [
       {
         "Id": "b7938579-8bc3-4bbf-b002-ffa1870acd50",
+        "Tier": "Gold"
+      },
+      {
+        "Id": "0526054f-98da-4e95-be68-d25b26bb0fe3",
         "Tier": "Gold"
       }
     ]

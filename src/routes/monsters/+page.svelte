@@ -72,7 +72,7 @@
             <li>- Giant Mosquito</li>
             <li>- Street Gamer</li>
             <li>- Foundation Weeper</li>
-            <li>- Dire Mosquito</li>
+            <li><span class="line-through">-Dire Mosquito</span> <span class="text-green-500">Updated!</span></li>
             <li>- Sergeant Suds</li>
             <li>- Ghost Pepper</li>
             <li>- Thug</li>
