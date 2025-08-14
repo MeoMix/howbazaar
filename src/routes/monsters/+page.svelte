@@ -86,6 +86,10 @@
             <li>- Street Gamer</li>
             <li>- Foundation Weeper</li>
             <li>
+                <span class="line-through">- Retiree</span>
+                <span class="text-green-500">Updated!</span>
+            </li>
+            <li>
                 <span class="line-through">-Dire Mosquito</span>
                 <span class="text-green-500">Updated!</span>
             </li>
