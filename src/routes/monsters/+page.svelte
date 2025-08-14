@@ -90,7 +90,10 @@
                 <span class="line-through">- Sergeant Suds</span>
                 <span class="text-green-500">Updated!</span>
             </li>
-            <li>- Ghost Pepper</li>
+            <li>
+                <span class="line-through">- Ghost Pepper</span>
+                <span class="text-green-500">Updated!</span>
+            </li>
             <li>- Thug</li>
             <li>- Lord of the Wastes</li>
         </ul>
