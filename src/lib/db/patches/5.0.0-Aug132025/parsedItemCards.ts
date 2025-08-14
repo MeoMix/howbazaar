@@ -13223,6 +13223,122 @@ const data: ParsedItemCard[] = [
     ]
   },
   {
+    "id": "c8e95316-8a46-43cd-8fc7-09ce609e8b38",
+    "name": "MagShield",
+    "startingTier": "Gold",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 7 seconds",
+          "Your other items start or stop Flying",
+          "When your items start Flying, Shield 100."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 7 seconds",
+          "Your other items start or stop Flying",
+          "When your items start Flying, Shield 200."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Property"
+    ],
+    "hiddenTags": [
+      "Flying",
+      "Shield"
+    ],
+    "customTags": [],
+    "size": "Large",
+    "heroes": [
+      "Stelle"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "When your items start Flying, Slow 2 item for 1 second(s)."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "When your items start Flying, Freeze an item for 1 second(s)."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "When your items start Flying, Haste 2 items for 1 second(s)."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "This has double Shield."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "When your items start Flying, Heal equal to this item's Shield."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "When your items start Flying, Poison equal to 5% of this item's Shield."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "When your items start Flying, Burn equal to 5% of this item's Shield."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "Your items have +30% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "When your items start Flying, deal Damage equal to this item's Shield."
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown 7 seconds",
+      "Your other items start or stop Flying",
+      "When your items start Flying, Shield (100/200)."
+    ]
+  },
+  {
     "id": "9bdc7dad-5016-4743-9b44-1e20b03a1961",
     "name": "Neural Toxin",
     "startingTier": "Silver",
@@ -22780,6 +22896,138 @@ const data: ParsedItemCard[] = [
     ]
   },
   {
+    "id": "cfca6975-d74c-41b1-a179-ae796058ca18",
+    "name": "Solar Drone",
+    "startingTier": "Bronze",
+    "tiers": {
+      "Bronze": {
+        "tooltips": [
+          "Cooldown 8 seconds",
+          "Shield 10",
+          "This starts Flying",
+          "When you Burn, this gains +5 Shield for the fight."
+        ]
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 8 seconds",
+          "Shield 10",
+          "This starts Flying",
+          "When you Burn, this gains +10 Shield for the fight."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 8 seconds",
+          "Shield 10",
+          "This starts Flying",
+          "When you Burn, this gains +15 Shield for the fight."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 8 seconds",
+          "Shield 10",
+          "This starts Flying",
+          "When you Burn, this gains +20 Shield for the fight."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Vehicle",
+      "Tech",
+      "Drone"
+    ],
+    "hiddenTags": [
+      "Shield",
+      "FlyingReference",
+      "BurnReference"
+    ],
+    "customTags": [],
+    "size": "Small",
+    "heroes": [
+      "Stelle"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow an item for 4 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste an item for 4 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "This has double Shield."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to this item's Shield"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to 5% of this item's Shield"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn equal to 5% of this item's Shield"
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal Damage equal to this item's Shield"
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown 8 seconds",
+      "Shield 10",
+      "This starts Flying",
+      "When you Burn, this gains (+5/+10/+15/+20) Shield for the fight."
+    ]
+  },
+  {
     "id": "214d9c9d-d222-4afa-b63e-ca028c859647",
     "name": "Arbalest",
     "startingTier": "Silver",
@@ -25201,6 +25449,131 @@ const data: ParsedItemCard[] = [
       "Cooldown 4 seconds",
       "Shield equal to (1/2/3/4) times your Income",
       "When you buy this, gain (+1/+2/+3/+5) Income."
+    ]
+  },
+  {
+    "id": "50ab510b-b840-495f-ba8b-d94a658f7134",
+    "name": "Squirrel Suit",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "This stops Flying",
+          "When you use an adjacent Flying item, this starts Flying.",
+          "When this starts Flying, gain 6 Regen for the fight."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "This stops Flying",
+          "When you use an adjacent Flying item, this starts Flying.",
+          "When this starts Flying, gain 8 Regen for the fight."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "This stops Flying",
+          "When you use an adjacent Flying item, this starts Flying.",
+          "When this starts Flying, gain 10 Regen for the fight."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Vehicle",
+      "Apparel"
+    ],
+    "hiddenTags": [
+      "FlyingReference",
+      "Regen"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Stelle"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 2 items for 2 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 2 items for 2 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "When this starts Flying, Shield equal to 5 times this item's Regen."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "When this starts Flying, Heal equal to 5 times this item's Regen."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "When this starts Flying, Poison equal to this item's Regen."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "When this starts Flying, Burn equal to this item's Regen."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has double Regen."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "Adjacent items have +30% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "When this starts Flying, deal Damage equal to 5 times this item's Regen."
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown 6 seconds",
+      "This stops Flying",
+      "When you use an adjacent Flying item, this starts Flying.",
+      "When this starts Flying, gain (6/8/10) Regen for the fight."
     ]
   },
   {
@@ -36723,6 +37096,122 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "At the start of each fight, adjacent items gain (+2/+4/+6) value.",
       "When you use an item with more than 10 value, Shield (20/40/60)."
+    ]
+  },
+  {
+    "id": "31dfbc9c-1231-4781-a0a9-a7e3cd458fa8",
+    "name": "Paper Airplane",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "This starts or stops Flying"
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 3 seconds",
+          "This starts or stops Flying"
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 2 seconds",
+          "This starts or stops Flying"
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Vehicle",
+      "Toy"
+    ],
+    "hiddenTags": [
+      "FlyingReference"
+    ],
+    "customTags": [],
+    "size": "Small",
+    "heroes": [
+      "Stelle"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 0.5 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield 10"
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal 10"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison 1"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn 1"
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "An item gains +20% Crit Chance for the fight"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal 10 Damage"
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown (4/3/2) seconds",
+      "This starts or stops Flying"
     ]
   },
   {
@@ -51834,6 +52323,125 @@ const data: ParsedItemCard[] = [
     ]
   },
   {
+    "id": "175b351d-f28a-4f74-8bc2-6568eeb075ca",
+    "name": "Drafting Table",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 8 seconds",
+          "Charge your non-Tool items 1 second for each Tool you have",
+          "At the start of each day, if you have 3 or more Tools, upgrade a lower tier Vehicle or Drone."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 7 seconds",
+          "Charge your non-Tool items 1 second for each Tool you have",
+          "At the start of each day, if you have 3 or more Tools, upgrade a lower tier Vehicle or Drone."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Charge your non-Tool items 1 second for each Tool you have",
+          "At the start of each day, if you have 3 or more Tools, upgrade a lower tier Vehicle or Drone."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Tool"
+    ],
+    "hiddenTags": [
+      "Charge"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Stelle"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 2 items for 2 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 2 items for 2 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield 150"
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal 150"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison 15"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn 15"
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "Your Non-Tools have +50% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal 150 Damage"
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown (8/7/6) seconds",
+      "Charge your non-Tool items 1 second for each Tool you have",
+      "At the start of each day, if you have 3 or more Tools, upgrade a lower tier Vehicle or Drone."
+    ]
+  },
+  {
     "id": "893f5fec-30ed-4a1e-b896-5b086d952da4",
     "name": "Grindstone",
     "startingTier": "Silver",
@@ -56671,6 +57279,116 @@ const data: ParsedItemCard[] = [
       "Ammo 10",
       "Adjacent items permanently gain (1%/2%/3%/4%) Crit Chance",
       "This permanently loses 1 Max Ammo and destroy this if it has 0 Max Ammo"
+    ]
+  },
+  {
+    "id": "ace5e734-b0a2-4861-a2a4-f4cc9dafb79f",
+    "name": "Smoke Detector",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "When you Burn, Haste an item for 1 second(s)."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "When you Burn, Haste an item for 2 second(s)."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "When you Burn, Haste an item for 3 second(s)."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "Haste",
+      "BurnReference"
+    ],
+    "customTags": [],
+    "size": "Small",
+    "heroes": [
+      "Stelle"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "When you Burn, Slow an item for 1 second(s)."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "When you Burn, Freeze an item for 0.5 second(s)."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "This Hastes for twice as long."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "When you Burn, Shield 10."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "When you Burn, Heal 10."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "When you Burn, Poison 1."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "When you Burn with another item or skill, Burn 1."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "Your Burn items have +15% Crit Chance."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This Hastes for twice as long."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "Adjacent Burn items are affected by Freeze and Slow for half as long."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "When you Burn, deal 10 Damage."
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "When you Burn, Haste an item for (1/2/3) second(s)."
     ]
   },
   {
@@ -63353,6 +64071,131 @@ const data: ParsedItemCard[] = [
     ]
   },
   {
+    "id": "7cc657b3-6a37-427a-b14e-7e12c3a2277a",
+    "name": "Battle Balloon",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "An item starts Flying",
+          "Shield 20",
+          "When you Burn, charge this 2 second(s)."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "An item starts Flying",
+          "Shield 30",
+          "When you Burn, charge this 2 second(s)."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "An item starts Flying",
+          "Shield 40",
+          "When you Burn, charge this 2 second(s)."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Vehicle"
+    ],
+    "hiddenTags": [
+      "Shield",
+      "Flying",
+      "BurnReference"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Stelle"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 0.5 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "This has double Shield."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to this item's Shield"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to 5% of this item's Shield"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn equal to 5% of this item's Shield"
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal Damage equal to this item's Shield"
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown 6 seconds",
+      "An item starts Flying",
+      "Shield (20/30/40)",
+      "When you Burn, charge this 2 second(s)."
+    ]
+  },
+  {
     "id": "720765c7-c0c5-4059-b3b4-53758f61338f",
     "name": "Thurible",
     "startingTier": "Bronze",
@@ -64067,6 +64910,232 @@ const data: ParsedItemCard[] = [
       "Cooldown 5 seconds",
       "Shield 20",
       "When you use an adjacent non-Weapon item, this gains (10/15/20/25) Shield for the fight."
+    ]
+  },
+  {
+    "id": "d9b24744-c718-458e-b836-d61227ab5711",
+    "name": "Gyro Gunsight",
+    "startingTier": "Bronze",
+    "tiers": {
+      "Bronze": {
+        "tooltips": [
+          "When one of your Weapons starts Flying, it gains +20 Damage for the fight."
+        ]
+      },
+      "Silver": {
+        "tooltips": [
+          "When one of your Weapons starts Flying, it gains +30 Damage for the fight."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "When one of your Weapons starts Flying, it gains +40 Damage for the fight."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "When one of your Weapons starts Flying, it gains +50 Damage for the fight."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "DamageReference",
+      "FlyingReference"
+    ],
+    "customTags": [],
+    "size": "Small",
+    "heroes": [
+      "Stelle"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "When your Weapons start Flying, Slow an item for 2 second(s)."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "When your Weapons start Flying, Freeze an item for 1 second(s)."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "When your Weapons start Flying, Haste an item for 2 second(s)."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "When your Weapons start Flying, Shield 20."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "When your Weapons start Flying, Heal 20."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "When your Weapons start Flying, Poison 2."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "When your Weapons start Flying, Burn 2."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has double Damage bonus."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "Your Flying Weapons gain 10% Crit Chance for the fight."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "When your Weapons start Flying, deal 20 Damage."
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "When one of your Weapons starts Flying, it gains (+20/+30/+40/+50) Damage for the fight."
+    ]
+  },
+  {
+    "id": "4739a012-8704-44f8-acbd-032f37c41770",
+    "name": "Anemometer",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "An adjacent item starts Flying",
+          "When one of your items starts or stops Flying, Haste it for 1 second(s)."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "An adjacent item starts Flying",
+          "When one of your items starts or stops Flying, Haste it for 2 second(s)."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "An adjacent item starts Flying",
+          "When one of your items starts or stops Flying, Haste it for 3 second(s)."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Tool"
+    ],
+    "hiddenTags": [
+      "Flying",
+      "Haste"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Stelle"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 2 items for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 0.5 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "This Hastes for twice as long."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield 70"
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal 70"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison 7"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn 7"
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "Adjacent items have +30% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal 70 Damage"
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown 4 seconds",
+      "An adjacent item starts Flying",
+      "When one of your items starts or stops Flying, Haste it for (1/2/3) second(s)."
     ]
   },
   {
@@ -81418,6 +82487,130 @@ const data: ParsedItemCard[] = [
     ]
   },
   {
+    "id": "334ee28f-cec4-431a-aaef-19bdcba5cbcc",
+    "name": "Steam Washer",
+    "startingTier": "Bronze",
+    "tiers": {
+      "Bronze": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Burn 4",
+          "When you use another Vehicle, charge this 2 seconds."
+        ]
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Burn 8",
+          "When you use another Vehicle, charge this 2 seconds."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Burn 12",
+          "When you use another Vehicle, charge this 2 seconds."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Burn 16",
+          "When you use another Vehicle, charge this 2 seconds."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Vehicle",
+      "Tool"
+    ],
+    "hiddenTags": [
+      "Burn"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Stelle"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 0.5 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield equal to 5 times this item's Burn"
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to 5 times this item's Burn"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to this item's Burn"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "This has double Burn."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal Damage equal to 5 times this item's Burn"
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown 6 seconds",
+      "Burn (4/8/12/16)",
+      "When you use another Vehicle, charge this 2 seconds."
+    ]
+  },
+  {
     "id": "ae142862-37fd-42b6-b131-48977d29595e",
     "name": "Lockbox",
     "startingTier": "Silver",
@@ -85790,125 +86983,6 @@ const data: ParsedItemCard[] = [
     ]
   },
   {
-    "id": "dd438f4e-77ea-4b7a-b59e-ae8906c49da8",
-    "name": "Augment Reagents",
-    "startingTier": "Bronze",
-    "tiers": {
-      "Bronze": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "This is a Small item Template"
-        ]
-      },
-      "Silver": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "This is a Small item Template"
-        ]
-      },
-      "Gold": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "This is a Small item Template"
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "Cooldown 6 seconds",
-          "This is a Small item Template"
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [],
-    "hiddenTags": [],
-    "customTags": [],
-    "size": "Small",
-    "heroes": [
-      "Vanessa",
-      "Dooley",
-      "Jules",
-      "Stelle",
-      "Mak",
-      "Pygmalien"
-    ],
-    "enchantments": [
-      {
-        "type": "Heavy",
-        "tooltips": [
-          "Slow an item for 2 second(s)"
-        ]
-      },
-      {
-        "type": "Icy",
-        "tooltips": [
-          "Freeze an item for 1 second(s)"
-        ]
-      },
-      {
-        "type": "Turbo",
-        "tooltips": [
-          "Haste an item for 2 second(s)"
-        ]
-      },
-      {
-        "type": "Shielded",
-        "tooltips": [
-          "Shield 30"
-        ]
-      },
-      {
-        "type": "Restorative",
-        "tooltips": [
-          "Heal 30"
-        ]
-      },
-      {
-        "type": "Toxic",
-        "tooltips": [
-          "Poison 3"
-        ]
-      },
-      {
-        "type": "Fiery",
-        "tooltips": [
-          "Burn 3"
-        ]
-      },
-      {
-        "type": "Shiny",
-        "tooltips": [
-          "This has +1 Multicast."
-        ]
-      },
-      {
-        "type": "Deadly",
-        "tooltips": [
-          "+50% Crit Chance"
-        ]
-      },
-      {
-        "type": "Radiant",
-        "tooltips": [
-          "This item is immune to Freeze, Slow and Destroy."
-        ]
-      },
-      {
-        "type": "Obsidian",
-        "tooltips": [
-          "Deal 30 Damage"
-        ]
-      }
-    ],
-    "quests": [],
-    "unifiedTooltips": [
-      "Cooldown 6 seconds",
-      "This is a Small item Template"
-    ]
-  },
-  {
     "id": "d2d9344d-ee1e-4e54-9d84-af19f1d5e022",
     "name": "Piggles Launcher",
     "startingTier": "Bronze",
@@ -86867,6 +87941,124 @@ const data: ParsedItemCard[] = [
     ]
   },
   {
+    "id": "c6433adf-cebc-4b6a-9172-3d7b36f6b428",
+    "name": "Binoculars",
+    "startingTier": "Bronze",
+    "tiers": {
+      "Bronze": {
+        "tooltips": [
+          "When you buy or upgrade this, get or upgrade the Target Acquisition Skill.",
+          "At the start of each fight, your Target Acquisition's Crit Chance increases by 2%."
+        ]
+      },
+      "Silver": {
+        "tooltips": [
+          "When you buy or upgrade this, get or upgrade the Target Acquisition Skill.",
+          "At the start of each fight, your Target Acquisition's Crit Chance increases by 2%."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "When you buy or upgrade this, get or upgrade the Target Acquisition Skill.",
+          "At the start of each fight, your Target Acquisition's Crit Chance increases by 2%."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "When you buy or upgrade this, get or upgrade the Target Acquisition Skill.",
+          "At the start of each fight, your Target Acquisition's Crit Chance increases by 2%."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Tool"
+    ],
+    "hiddenTags": [
+      "CritReference"
+    ],
+    "customTags": [],
+    "size": "Small",
+    "heroes": [
+      "Stelle"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "When you Crit, Slow an item for 1 second(s)."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "When you Crit, Freeze an item for 0.5 second(s)."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "When you Crit, Haste an item for 1 second(s)."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "When you Crit, Shield 20."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "When you Crit, Heal 20."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "When you Crit, Poison 2."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "When you Crit, Burn 2."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has double Crit Chance bonus."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "This has double Crit Chance bonus."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "Adjacent items are affected by Freeze and Slow for half as long."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "When you Crit, deal 20 Damage."
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "When you buy or upgrade this, get or upgrade the Target Acquisition Skill.",
+      "At the start of each fight, your Target Acquisition's Crit Chance increases by 2%."
+    ]
+  },
+  {
     "id": "8eb91c44-0e07-4e89-8cad-dfe99b8ef443",
     "name": "Red Button",
     "startingTier": "Silver",
@@ -87754,6 +88946,127 @@ const data: ParsedItemCard[] = [
     ]
   },
   {
+    "id": "49c93b98-cd66-4d3a-923c-c4e2871e87fb",
+    "name": "Bomb Voyage",
+    "startingTier": "Gold",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Deal 100 Damage",
+          "Burn 10",
+          "When this stops Flying, use this 6 times and destroy this."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Deal 100 Damage",
+          "Burn 10",
+          "When this stops Flying, use this 12 times and destroy this."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Weapon",
+      "Vehicle"
+    ],
+    "hiddenTags": [
+      "Damage",
+      "Burn",
+      "FlyingReference"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Stelle"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 2 items for 2 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 2 items for 2 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield equal to this item's Damage"
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to this item's Damage"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to this item's Burn"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "This has double Burn."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "+50% Crit Chance"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "This has double Damage."
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown 6 seconds",
+      "Deal 100 Damage",
+      "Burn 10",
+      "When this stops Flying, use this (6/12) times and destroy this."
+    ]
+  },
+  {
     "id": "f16f5464-02f0-4b00-9f7b-d7e7b65a1e80",
     "name": "Turtle Shell",
     "startingTier": "Gold",
@@ -88108,6 +89421,116 @@ const data: ParsedItemCard[] = [
       "Poison 10",
       "When you Freeze, Poison, or Burn, your items gain +5 Poison for the fight.",
       "When you use an adjacent Relic, charge this 1 second."
+    ]
+  },
+  {
+    "id": "bd46ceff-a181-49f2-ac60-a769a062cb6d",
+    "name": "Grabinator",
+    "startingTier": "Gold",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 8 seconds",
+          "Destroy the leftmost Medium item and transform this into it for the fight"
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 7 seconds",
+          "Destroy the leftmost Medium item and transform this into it for the fight"
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Tool"
+    ],
+    "hiddenTags": [],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Stelle"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "...and Enchant the item with Heavy if able."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "...and Enchant the item with Icy if able."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "...and Enchant the item with Turbo if able."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "...and Enchant the item with Shielded if able."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "...and Enchant the item with Restorative if able."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "...and Enchant the item with Toxic if able."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "...and Enchant the item with Fiery if able."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "...and Enchant the item with Shiny if able."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "...and Enchant the item with Deadly if able."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "...and Enchant the item with Radiant if able."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "...and Enchant the item with Obsidian if able."
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown (8/7) seconds",
+      "Destroy the leftmost Medium item and transform this into it for the fight"
     ]
   },
   {
@@ -90360,6 +91783,126 @@ const data: ParsedItemCard[] = [
       "Your Heal items have +Heal equal to this item's value.",
       "You have +Regen equal to this item's value.",
       "When you sell 10 items, give this (+5/+10/+15) value and get a Truffle."
+    ]
+  },
+  {
+    "id": "b5f82e87-ffb1-4cc6-a3b3-7193b5f8862a",
+    "name": "Ornithopter",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "An adjacent item starts Flying",
+          "The Cooldown of the Flying item to the left of this is reduced by 1 second."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 3 seconds",
+          "An adjacent item starts Flying",
+          "The Cooldown of the Flying item to the left of this is reduced by 1 second."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 2 seconds",
+          "An adjacent item starts Flying",
+          "The Cooldown of the Flying item to the left of this is reduced by 1 second."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Vehicle"
+    ],
+    "hiddenTags": [
+      "Flying",
+      "Cooldown"
+    ],
+    "customTags": [],
+    "size": "Small",
+    "heroes": [
+      "Stelle"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow an item for 2 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 0.5 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste an item for 2 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield 30"
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal 30"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison 3"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn 3"
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "The item to the left of this has +15 Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal 30 Damage"
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown (4/3/2) seconds",
+      "An adjacent item starts Flying",
+      "The Cooldown of the Flying item to the left of this is reduced by 1 second."
     ]
   },
   {

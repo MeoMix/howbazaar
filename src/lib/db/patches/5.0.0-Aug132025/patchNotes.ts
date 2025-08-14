@@ -80831,6 +80831,181 @@ const data: PatchNotes = {
         "modified": []
       }
     },
+    "c8e95316-8a46-43cd-8fc7-09ce609e8b38": {
+      "metadata": {
+        "id": "c8e95316-8a46-43cd-8fc7-09ce609e8b38",
+        "name": "MagShield",
+        "previousStartingTier": "Gold",
+        "currentStartingTier": "Gold",
+        "currentHero": "Stelle",
+        "currentSize": "Large",
+        "type": "item"
+      },
+      "name": {
+        "oldValue": null,
+        "newValue": "MagShield"
+      },
+      "startingTier": {
+        "oldValue": null,
+        "newValue": "Gold"
+      },
+      "tags": {
+        "added": [
+          "Property"
+        ],
+        "removed": []
+      },
+      "hiddenTags": {
+        "added": [
+          "Flying",
+          "Shield"
+        ],
+        "removed": []
+      },
+      "size": {
+        "oldValue": null,
+        "newValue": "Large"
+      },
+      "heroes": {
+        "added": [
+          "Stelle"
+        ],
+        "removed": []
+      },
+      "tooltips": [
+        {
+          "index": 0,
+          "oldValue": null,
+          "newValue": "Cooldown 7 seconds"
+        },
+        {
+          "index": 1,
+          "oldValue": null,
+          "newValue": "Your other items start or stop Flying"
+        },
+        {
+          "index": 2,
+          "oldValue": null,
+          "newValue": "When your items start Flying, Shield (100/200)."
+        }
+      ],
+      "enchantments": {
+        "added": [
+          {
+            "type": "Heavy",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "When your items start Flying, Slow 2 item for 1 second(s)."
+              }
+            ]
+          },
+          {
+            "type": "Icy",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "When your items start Flying, Freeze an item for 1 second(s)."
+              }
+            ]
+          },
+          {
+            "type": "Turbo",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "When your items start Flying, Haste 2 items for 1 second(s)."
+              }
+            ]
+          },
+          {
+            "type": "Shielded",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "This has double Shield."
+              }
+            ]
+          },
+          {
+            "type": "Restorative",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "When your items start Flying, Heal equal to this item's Shield."
+              }
+            ]
+          },
+          {
+            "type": "Toxic",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "When your items start Flying, Poison equal to 5% of this item's Shield."
+              }
+            ]
+          },
+          {
+            "type": "Fiery",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "When your items start Flying, Burn equal to 5% of this item's Shield."
+              }
+            ]
+          },
+          {
+            "type": "Shiny",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "This has +1 Multicast."
+              }
+            ]
+          },
+          {
+            "type": "Deadly",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Your items have +30% Crit Chance."
+              }
+            ]
+          },
+          {
+            "type": "Radiant",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "This item is immune to Freeze, Slow and Destroy."
+              }
+            ]
+          },
+          {
+            "type": "Obsidian",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "When your items start Flying, deal Damage equal to this item's Shield."
+              }
+            ]
+          }
+        ],
+        "removed": [],
+        "modified": []
+      }
+    },
     "a89a0b5d-bbbb-4818-b002-1ad0156156f7": {
       "metadata": {
         "id": "a89a0b5d-bbbb-4818-b002-1ad0156156f7",
@@ -82945,6 +83120,189 @@ const data: PatchNotes = {
         "modified": []
       }
     },
+    "cfca6975-d74c-41b1-a179-ae796058ca18": {
+      "metadata": {
+        "id": "cfca6975-d74c-41b1-a179-ae796058ca18",
+        "name": "Solar Drone",
+        "previousStartingTier": "Bronze",
+        "currentStartingTier": "Bronze",
+        "currentHero": "Stelle",
+        "currentSize": "Small",
+        "type": "item"
+      },
+      "name": {
+        "oldValue": null,
+        "newValue": "Solar Drone"
+      },
+      "startingTier": {
+        "oldValue": null,
+        "newValue": "Bronze"
+      },
+      "tags": {
+        "added": [
+          "Vehicle",
+          "Tech",
+          "Drone"
+        ],
+        "removed": []
+      },
+      "hiddenTags": {
+        "added": [
+          "Shield",
+          "FlyingReference",
+          "BurnReference"
+        ],
+        "removed": []
+      },
+      "size": {
+        "oldValue": null,
+        "newValue": "Small"
+      },
+      "heroes": {
+        "added": [
+          "Stelle"
+        ],
+        "removed": []
+      },
+      "tooltips": [
+        {
+          "index": 0,
+          "oldValue": null,
+          "newValue": "Cooldown 8 seconds"
+        },
+        {
+          "index": 1,
+          "oldValue": null,
+          "newValue": "Shield 10"
+        },
+        {
+          "index": 2,
+          "oldValue": null,
+          "newValue": "This starts Flying"
+        },
+        {
+          "index": 3,
+          "oldValue": null,
+          "newValue": "When you Burn, this gains (+5/+10/+15/+20) Shield for the fight."
+        }
+      ],
+      "enchantments": {
+        "added": [
+          {
+            "type": "Heavy",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Slow an item for 4 second(s)"
+              }
+            ]
+          },
+          {
+            "type": "Icy",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Freeze an item for 1 second(s)"
+              }
+            ]
+          },
+          {
+            "type": "Turbo",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Haste an item for 4 second(s)"
+              }
+            ]
+          },
+          {
+            "type": "Shielded",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "This has double Shield."
+              }
+            ]
+          },
+          {
+            "type": "Restorative",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Heal equal to this item's Shield"
+              }
+            ]
+          },
+          {
+            "type": "Toxic",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Poison equal to 5% of this item's Shield"
+              }
+            ]
+          },
+          {
+            "type": "Fiery",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Burn equal to 5% of this item's Shield"
+              }
+            ]
+          },
+          {
+            "type": "Deadly",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "+50% Crit Chance"
+              }
+            ]
+          },
+          {
+            "type": "Shiny",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "This has +1 Multicast."
+              }
+            ]
+          },
+          {
+            "type": "Radiant",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "This item is immune to Freeze, Slow and Destroy."
+              }
+            ]
+          },
+          {
+            "type": "Obsidian",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Deal Damage equal to this item's Shield"
+              }
+            ]
+          }
+        ],
+        "removed": [],
+        "modified": []
+      }
+    },
     "0591d8b4-2632-4c41-9f73-48896237256d": {
       "metadata": {
         "id": "0591d8b4-2632-4c41-9f73-48896237256d",
@@ -83639,6 +83997,187 @@ const data: PatchNotes = {
                 "index": 0,
                 "oldValue": null,
                 "newValue": "When your items stop Flying, deal Damage equal to this item's Shield."
+              }
+            ]
+          }
+        ],
+        "removed": [],
+        "modified": []
+      }
+    },
+    "50ab510b-b840-495f-ba8b-d94a658f7134": {
+      "metadata": {
+        "id": "50ab510b-b840-495f-ba8b-d94a658f7134",
+        "name": "Squirrel Suit",
+        "previousStartingTier": "Silver",
+        "currentStartingTier": "Silver",
+        "currentHero": "Stelle",
+        "currentSize": "Medium",
+        "type": "item"
+      },
+      "name": {
+        "oldValue": null,
+        "newValue": "Squirrel Suit"
+      },
+      "startingTier": {
+        "oldValue": null,
+        "newValue": "Silver"
+      },
+      "tags": {
+        "added": [
+          "Vehicle",
+          "Apparel"
+        ],
+        "removed": []
+      },
+      "hiddenTags": {
+        "added": [
+          "FlyingReference",
+          "Regen"
+        ],
+        "removed": []
+      },
+      "size": {
+        "oldValue": null,
+        "newValue": "Medium"
+      },
+      "heroes": {
+        "added": [
+          "Stelle"
+        ],
+        "removed": []
+      },
+      "tooltips": [
+        {
+          "index": 0,
+          "oldValue": null,
+          "newValue": "Cooldown 6 seconds"
+        },
+        {
+          "index": 1,
+          "oldValue": null,
+          "newValue": "This stops Flying"
+        },
+        {
+          "index": 2,
+          "oldValue": null,
+          "newValue": "When you use an adjacent Flying item, this starts Flying."
+        },
+        {
+          "index": 3,
+          "oldValue": null,
+          "newValue": "When this starts Flying, gain (6/8/10) Regen for the fight."
+        }
+      ],
+      "enchantments": {
+        "added": [
+          {
+            "type": "Heavy",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Slow 2 items for 2 second(s)"
+              }
+            ]
+          },
+          {
+            "type": "Icy",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Freeze an item for 1 second(s)"
+              }
+            ]
+          },
+          {
+            "type": "Turbo",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Haste 2 items for 2 second(s)"
+              }
+            ]
+          },
+          {
+            "type": "Shielded",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "When this starts Flying, Shield equal to 5 times this item's Regen."
+              }
+            ]
+          },
+          {
+            "type": "Restorative",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "When this starts Flying, Heal equal to 5 times this item's Regen."
+              }
+            ]
+          },
+          {
+            "type": "Toxic",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "When this starts Flying, Poison equal to this item's Regen."
+              }
+            ]
+          },
+          {
+            "type": "Fiery",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "When this starts Flying, Burn equal to this item's Regen."
+              }
+            ]
+          },
+          {
+            "type": "Shiny",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "This has double Regen."
+              }
+            ]
+          },
+          {
+            "type": "Deadly",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Adjacent items have +30% Crit Chance."
+              }
+            ]
+          },
+          {
+            "type": "Radiant",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "This item is immune to Freeze, Slow and Destroy."
+              }
+            ]
+          },
+          {
+            "type": "Obsidian",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "When this starts Flying, deal Damage equal to 5 times this item's Regen."
               }
             ]
           }
@@ -85596,6 +86135,176 @@ const data: PatchNotes = {
                 "index": 0,
                 "oldValue": null,
                 "newValue": "When you use the item to the left of this, deal 10 Damage."
+              }
+            ]
+          }
+        ],
+        "removed": [],
+        "modified": []
+      }
+    },
+    "31dfbc9c-1231-4781-a0a9-a7e3cd458fa8": {
+      "metadata": {
+        "id": "31dfbc9c-1231-4781-a0a9-a7e3cd458fa8",
+        "name": "Paper Airplane",
+        "previousStartingTier": "Silver",
+        "currentStartingTier": "Silver",
+        "currentHero": "Stelle",
+        "currentSize": "Small",
+        "type": "item"
+      },
+      "name": {
+        "oldValue": null,
+        "newValue": "Paper Airplane"
+      },
+      "startingTier": {
+        "oldValue": null,
+        "newValue": "Silver"
+      },
+      "tags": {
+        "added": [
+          "Vehicle",
+          "Toy"
+        ],
+        "removed": []
+      },
+      "hiddenTags": {
+        "added": [
+          "FlyingReference"
+        ],
+        "removed": []
+      },
+      "size": {
+        "oldValue": null,
+        "newValue": "Small"
+      },
+      "heroes": {
+        "added": [
+          "Stelle"
+        ],
+        "removed": []
+      },
+      "tooltips": [
+        {
+          "index": 0,
+          "oldValue": null,
+          "newValue": "Cooldown (4/3/2) seconds"
+        },
+        {
+          "index": 1,
+          "oldValue": null,
+          "newValue": "This starts or stops Flying"
+        }
+      ],
+      "enchantments": {
+        "added": [
+          {
+            "type": "Heavy",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Slow an item for 1 second(s)"
+              }
+            ]
+          },
+          {
+            "type": "Icy",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Freeze an item for 0.5 second(s)"
+              }
+            ]
+          },
+          {
+            "type": "Turbo",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Haste an item for 1 second(s)"
+              }
+            ]
+          },
+          {
+            "type": "Shielded",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Shield 10"
+              }
+            ]
+          },
+          {
+            "type": "Restorative",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Heal 10"
+              }
+            ]
+          },
+          {
+            "type": "Toxic",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Poison 1"
+              }
+            ]
+          },
+          {
+            "type": "Fiery",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Burn 1"
+              }
+            ]
+          },
+          {
+            "type": "Shiny",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "This has +1 Multicast."
+              }
+            ]
+          },
+          {
+            "type": "Deadly",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "An item gains +20% Crit Chance for the fight"
+              }
+            ]
+          },
+          {
+            "type": "Radiant",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "This item is immune to Freeze, Slow and Destroy."
+              }
+            ]
+          },
+          {
+            "type": "Obsidian",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Deal 10 Damage"
               }
             ]
           }
@@ -88218,6 +88927,180 @@ const data: PatchNotes = {
         "modified": []
       }
     },
+    "175b351d-f28a-4f74-8bc2-6568eeb075ca": {
+      "metadata": {
+        "id": "175b351d-f28a-4f74-8bc2-6568eeb075ca",
+        "name": "Drafting Table",
+        "previousStartingTier": "Silver",
+        "currentStartingTier": "Silver",
+        "currentHero": "Stelle",
+        "currentSize": "Medium",
+        "type": "item"
+      },
+      "name": {
+        "oldValue": null,
+        "newValue": "Drafting Table"
+      },
+      "startingTier": {
+        "oldValue": null,
+        "newValue": "Silver"
+      },
+      "tags": {
+        "added": [
+          "Tool"
+        ],
+        "removed": []
+      },
+      "hiddenTags": {
+        "added": [
+          "Charge"
+        ],
+        "removed": []
+      },
+      "size": {
+        "oldValue": null,
+        "newValue": "Medium"
+      },
+      "heroes": {
+        "added": [
+          "Stelle"
+        ],
+        "removed": []
+      },
+      "tooltips": [
+        {
+          "index": 0,
+          "oldValue": null,
+          "newValue": "Cooldown (8/7/6) seconds"
+        },
+        {
+          "index": 1,
+          "oldValue": null,
+          "newValue": "Charge your non-Tool items 1 second for each Tool you have"
+        },
+        {
+          "index": 2,
+          "oldValue": null,
+          "newValue": "At the start of each day, if you have 3 or more Tools, upgrade a lower tier Vehicle or Drone."
+        }
+      ],
+      "enchantments": {
+        "added": [
+          {
+            "type": "Heavy",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Slow 2 items for 2 second(s)"
+              }
+            ]
+          },
+          {
+            "type": "Icy",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Freeze an item for 1 second(s)"
+              }
+            ]
+          },
+          {
+            "type": "Turbo",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Haste 2 items for 2 second(s)"
+              }
+            ]
+          },
+          {
+            "type": "Shielded",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Shield 150"
+              }
+            ]
+          },
+          {
+            "type": "Restorative",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Heal 150"
+              }
+            ]
+          },
+          {
+            "type": "Toxic",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Poison 15"
+              }
+            ]
+          },
+          {
+            "type": "Fiery",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Burn 15"
+              }
+            ]
+          },
+          {
+            "type": "Shiny",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "This has +1 Multicast."
+              }
+            ]
+          },
+          {
+            "type": "Deadly",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Your Non-Tools have +50% Crit Chance."
+              }
+            ]
+          },
+          {
+            "type": "Radiant",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "This item is immune to Freeze, Slow and Destroy."
+              }
+            ]
+          },
+          {
+            "type": "Obsidian",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Deal 150 Damage"
+              }
+            ]
+          }
+        ],
+        "removed": [],
+        "modified": []
+      }
+    },
     "3310f7e3-025e-4212-9e95-756fe3af8ab1": {
       "metadata": {
         "id": "3310f7e3-025e-4212-9e95-756fe3af8ab1",
@@ -89602,6 +90485,169 @@ const data: PatchNotes = {
                 "index": 0,
                 "oldValue": null,
                 "newValue": "This item is immune to Freeze, Slow and Destroy."
+              }
+            ]
+          }
+        ],
+        "removed": [],
+        "modified": []
+      }
+    },
+    "ace5e734-b0a2-4861-a2a4-f4cc9dafb79f": {
+      "metadata": {
+        "id": "ace5e734-b0a2-4861-a2a4-f4cc9dafb79f",
+        "name": "Smoke Detector",
+        "previousStartingTier": "Silver",
+        "currentStartingTier": "Silver",
+        "currentHero": "Stelle",
+        "currentSize": "Small",
+        "type": "item"
+      },
+      "name": {
+        "oldValue": null,
+        "newValue": "Smoke Detector"
+      },
+      "startingTier": {
+        "oldValue": null,
+        "newValue": "Silver"
+      },
+      "tags": {
+        "added": [],
+        "removed": []
+      },
+      "hiddenTags": {
+        "added": [
+          "Haste",
+          "BurnReference"
+        ],
+        "removed": []
+      },
+      "size": {
+        "oldValue": null,
+        "newValue": "Small"
+      },
+      "heroes": {
+        "added": [
+          "Stelle"
+        ],
+        "removed": []
+      },
+      "tooltips": [
+        {
+          "index": 0,
+          "oldValue": null,
+          "newValue": "When you Burn, Haste an item for (1/2/3) second(s)."
+        }
+      ],
+      "enchantments": {
+        "added": [
+          {
+            "type": "Heavy",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "When you Burn, Slow an item for 1 second(s)."
+              }
+            ]
+          },
+          {
+            "type": "Icy",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "When you Burn, Freeze an item for 0.5 second(s)."
+              }
+            ]
+          },
+          {
+            "type": "Turbo",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "This Hastes for twice as long."
+              }
+            ]
+          },
+          {
+            "type": "Shielded",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "When you Burn, Shield 10."
+              }
+            ]
+          },
+          {
+            "type": "Restorative",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "When you Burn, Heal 10."
+              }
+            ]
+          },
+          {
+            "type": "Toxic",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "When you Burn, Poison 1."
+              }
+            ]
+          },
+          {
+            "type": "Fiery",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "When you Burn with another item or skill, Burn 1."
+              }
+            ]
+          },
+          {
+            "type": "Deadly",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Your Burn items have +15% Crit Chance."
+              }
+            ]
+          },
+          {
+            "type": "Shiny",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "This Hastes for twice as long."
+              }
+            ]
+          },
+          {
+            "type": "Radiant",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Adjacent Burn items are affected by Freeze and Slow for half as long."
+              }
+            ]
+          },
+          {
+            "type": "Obsidian",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "When you Burn, deal 10 Damage."
               }
             ]
           }
@@ -91554,6 +92600,515 @@ const data: PatchNotes = {
                 "index": 0,
                 "oldValue": null,
                 "newValue": "Deal Damage equal to this item's Shield"
+              }
+            ]
+          }
+        ],
+        "removed": [],
+        "modified": []
+      }
+    },
+    "7cc657b3-6a37-427a-b14e-7e12c3a2277a": {
+      "metadata": {
+        "id": "7cc657b3-6a37-427a-b14e-7e12c3a2277a",
+        "name": "Battle Balloon",
+        "previousStartingTier": "Silver",
+        "currentStartingTier": "Silver",
+        "currentHero": "Stelle",
+        "currentSize": "Medium",
+        "type": "item"
+      },
+      "name": {
+        "oldValue": null,
+        "newValue": "Battle Balloon"
+      },
+      "startingTier": {
+        "oldValue": null,
+        "newValue": "Silver"
+      },
+      "tags": {
+        "added": [
+          "Vehicle"
+        ],
+        "removed": []
+      },
+      "hiddenTags": {
+        "added": [
+          "Shield",
+          "Flying",
+          "BurnReference"
+        ],
+        "removed": []
+      },
+      "size": {
+        "oldValue": null,
+        "newValue": "Medium"
+      },
+      "heroes": {
+        "added": [
+          "Stelle"
+        ],
+        "removed": []
+      },
+      "tooltips": [
+        {
+          "index": 0,
+          "oldValue": null,
+          "newValue": "Cooldown 6 seconds"
+        },
+        {
+          "index": 1,
+          "oldValue": null,
+          "newValue": "An item starts Flying"
+        },
+        {
+          "index": 2,
+          "oldValue": null,
+          "newValue": "Shield (20/30/40)"
+        },
+        {
+          "index": 3,
+          "oldValue": null,
+          "newValue": "When you Burn, charge this 2 second(s)."
+        }
+      ],
+      "enchantments": {
+        "added": [
+          {
+            "type": "Heavy",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Slow an item for 1 second(s)"
+              }
+            ]
+          },
+          {
+            "type": "Icy",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Freeze an item for 0.5 second(s)"
+              }
+            ]
+          },
+          {
+            "type": "Turbo",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Haste an item for 1 second(s)"
+              }
+            ]
+          },
+          {
+            "type": "Shielded",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "This has double Shield."
+              }
+            ]
+          },
+          {
+            "type": "Restorative",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Heal equal to this item's Shield"
+              }
+            ]
+          },
+          {
+            "type": "Toxic",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Poison equal to 5% of this item's Shield"
+              }
+            ]
+          },
+          {
+            "type": "Fiery",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Burn equal to 5% of this item's Shield"
+              }
+            ]
+          },
+          {
+            "type": "Shiny",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "This has +1 Multicast."
+              }
+            ]
+          },
+          {
+            "type": "Radiant",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "This item is immune to Freeze, Slow and Destroy."
+              }
+            ]
+          },
+          {
+            "type": "Deadly",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "+50% Crit Chance"
+              }
+            ]
+          },
+          {
+            "type": "Obsidian",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Deal Damage equal to this item's Shield"
+              }
+            ]
+          }
+        ],
+        "removed": [],
+        "modified": []
+      }
+    },
+    "d9b24744-c718-458e-b836-d61227ab5711": {
+      "metadata": {
+        "id": "d9b24744-c718-458e-b836-d61227ab5711",
+        "name": "Gyro Gunsight",
+        "previousStartingTier": "Bronze",
+        "currentStartingTier": "Bronze",
+        "currentHero": "Stelle",
+        "currentSize": "Small",
+        "type": "item"
+      },
+      "name": {
+        "oldValue": null,
+        "newValue": "Gyro Gunsight"
+      },
+      "startingTier": {
+        "oldValue": null,
+        "newValue": "Bronze"
+      },
+      "tags": {
+        "added": [],
+        "removed": []
+      },
+      "hiddenTags": {
+        "added": [
+          "DamageReference",
+          "FlyingReference"
+        ],
+        "removed": []
+      },
+      "size": {
+        "oldValue": null,
+        "newValue": "Small"
+      },
+      "heroes": {
+        "added": [
+          "Stelle"
+        ],
+        "removed": []
+      },
+      "tooltips": [
+        {
+          "index": 0,
+          "oldValue": null,
+          "newValue": "When one of your Weapons starts Flying, it gains (+20/+30/+40/+50) Damage for the fight."
+        }
+      ],
+      "enchantments": {
+        "added": [
+          {
+            "type": "Heavy",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "When your Weapons start Flying, Slow an item for 2 second(s)."
+              }
+            ]
+          },
+          {
+            "type": "Icy",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "When your Weapons start Flying, Freeze an item for 1 second(s)."
+              }
+            ]
+          },
+          {
+            "type": "Turbo",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "When your Weapons start Flying, Haste an item for 2 second(s)."
+              }
+            ]
+          },
+          {
+            "type": "Shielded",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "When your Weapons start Flying, Shield 20."
+              }
+            ]
+          },
+          {
+            "type": "Restorative",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "When your Weapons start Flying, Heal 20."
+              }
+            ]
+          },
+          {
+            "type": "Toxic",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "When your Weapons start Flying, Poison 2."
+              }
+            ]
+          },
+          {
+            "type": "Fiery",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "When your Weapons start Flying, Burn 2."
+              }
+            ]
+          },
+          {
+            "type": "Shiny",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "This has double Damage bonus."
+              }
+            ]
+          },
+          {
+            "type": "Deadly",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Your Flying Weapons gain 10% Crit Chance for the fight."
+              }
+            ]
+          },
+          {
+            "type": "Obsidian",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "When your Weapons start Flying, deal 20 Damage."
+              }
+            ]
+          }
+        ],
+        "removed": [],
+        "modified": []
+      }
+    },
+    "4739a012-8704-44f8-acbd-032f37c41770": {
+      "metadata": {
+        "id": "4739a012-8704-44f8-acbd-032f37c41770",
+        "name": "Anemometer",
+        "previousStartingTier": "Silver",
+        "currentStartingTier": "Silver",
+        "currentHero": "Stelle",
+        "currentSize": "Medium",
+        "type": "item"
+      },
+      "name": {
+        "oldValue": null,
+        "newValue": "Anemometer"
+      },
+      "startingTier": {
+        "oldValue": null,
+        "newValue": "Silver"
+      },
+      "tags": {
+        "added": [
+          "Tool"
+        ],
+        "removed": []
+      },
+      "hiddenTags": {
+        "added": [
+          "Flying",
+          "Haste"
+        ],
+        "removed": []
+      },
+      "size": {
+        "oldValue": null,
+        "newValue": "Medium"
+      },
+      "heroes": {
+        "added": [
+          "Stelle"
+        ],
+        "removed": []
+      },
+      "tooltips": [
+        {
+          "index": 0,
+          "oldValue": null,
+          "newValue": "Cooldown 4 seconds"
+        },
+        {
+          "index": 1,
+          "oldValue": null,
+          "newValue": "An adjacent item starts Flying"
+        },
+        {
+          "index": 2,
+          "oldValue": null,
+          "newValue": "When one of your items starts or stops Flying, Haste it for (1/2/3) second(s)."
+        }
+      ],
+      "enchantments": {
+        "added": [
+          {
+            "type": "Heavy",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Slow 2 items for 1 second(s)"
+              }
+            ]
+          },
+          {
+            "type": "Icy",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Freeze an item for 0.5 second(s)"
+              }
+            ]
+          },
+          {
+            "type": "Turbo",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "This Hastes for twice as long."
+              }
+            ]
+          },
+          {
+            "type": "Shielded",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Shield 70"
+              }
+            ]
+          },
+          {
+            "type": "Restorative",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Heal 70"
+              }
+            ]
+          },
+          {
+            "type": "Toxic",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Poison 7"
+              }
+            ]
+          },
+          {
+            "type": "Fiery",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Burn 7"
+              }
+            ]
+          },
+          {
+            "type": "Shiny",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "This has +1 Multicast."
+              }
+            ]
+          },
+          {
+            "type": "Deadly",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Adjacent items have +30% Crit Chance."
+              }
+            ]
+          },
+          {
+            "type": "Radiant",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "This item is immune to Freeze, Slow and Destroy."
+              }
+            ]
+          },
+          {
+            "type": "Obsidian",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Deal 70 Damage"
               }
             ]
           }
@@ -94969,6 +96524,181 @@ const data: PatchNotes = {
         "modified": []
       }
     },
+    "334ee28f-cec4-431a-aaef-19bdcba5cbcc": {
+      "metadata": {
+        "id": "334ee28f-cec4-431a-aaef-19bdcba5cbcc",
+        "name": "Steam Washer",
+        "previousStartingTier": "Bronze",
+        "currentStartingTier": "Bronze",
+        "currentHero": "Stelle",
+        "currentSize": "Medium",
+        "type": "item"
+      },
+      "name": {
+        "oldValue": null,
+        "newValue": "Steam Washer"
+      },
+      "startingTier": {
+        "oldValue": null,
+        "newValue": "Bronze"
+      },
+      "tags": {
+        "added": [
+          "Vehicle",
+          "Tool"
+        ],
+        "removed": []
+      },
+      "hiddenTags": {
+        "added": [
+          "Burn"
+        ],
+        "removed": []
+      },
+      "size": {
+        "oldValue": null,
+        "newValue": "Medium"
+      },
+      "heroes": {
+        "added": [
+          "Stelle"
+        ],
+        "removed": []
+      },
+      "tooltips": [
+        {
+          "index": 0,
+          "oldValue": null,
+          "newValue": "Cooldown 6 seconds"
+        },
+        {
+          "index": 1,
+          "oldValue": null,
+          "newValue": "Burn (4/8/12/16)"
+        },
+        {
+          "index": 2,
+          "oldValue": null,
+          "newValue": "When you use another Vehicle, charge this 2 seconds."
+        }
+      ],
+      "enchantments": {
+        "added": [
+          {
+            "type": "Heavy",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Slow an item for 1 second(s)"
+              }
+            ]
+          },
+          {
+            "type": "Icy",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Freeze an item for 0.5 second(s)"
+              }
+            ]
+          },
+          {
+            "type": "Turbo",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Haste an item for 1 second(s)"
+              }
+            ]
+          },
+          {
+            "type": "Shielded",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Shield equal to 5 times this item's Burn"
+              }
+            ]
+          },
+          {
+            "type": "Restorative",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Heal equal to 5 times this item's Burn"
+              }
+            ]
+          },
+          {
+            "type": "Toxic",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Poison equal to this item's Burn"
+              }
+            ]
+          },
+          {
+            "type": "Fiery",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "This has double Burn."
+              }
+            ]
+          },
+          {
+            "type": "Shiny",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "This has +1 Multicast."
+              }
+            ]
+          },
+          {
+            "type": "Deadly",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "+50% Crit Chance"
+              }
+            ]
+          },
+          {
+            "type": "Radiant",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "This item is immune to Freeze, Slow and Destroy."
+              }
+            ]
+          },
+          {
+            "type": "Obsidian",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Deal Damage equal to 5 times this item's Burn"
+              }
+            ]
+          }
+        ],
+        "removed": [],
+        "modified": []
+      }
+    },
     "92859d17-589c-4e2c-b2e7-a3a11b0d3a80": {
       "metadata": {
         "id": "92859d17-589c-4e2c-b2e7-a3a11b0d3a80",
@@ -95149,30 +96879,34 @@ const data: PatchNotes = {
         "modified": []
       }
     },
-    "dd438f4e-77ea-4b7a-b59e-ae8906c49da8": {
+    "c6433adf-cebc-4b6a-9172-3d7b36f6b428": {
       "metadata": {
-        "id": "dd438f4e-77ea-4b7a-b59e-ae8906c49da8",
-        "name": "Augment Reagents",
+        "id": "c6433adf-cebc-4b6a-9172-3d7b36f6b428",
+        "name": "Binoculars",
         "previousStartingTier": "Bronze",
         "currentStartingTier": "Bronze",
-        "currentHero": "Vanessa",
+        "currentHero": "Stelle",
         "currentSize": "Small",
         "type": "item"
       },
       "name": {
         "oldValue": null,
-        "newValue": "Augment Reagents"
+        "newValue": "Binoculars"
       },
       "startingTier": {
         "oldValue": null,
         "newValue": "Bronze"
       },
       "tags": {
-        "added": [],
+        "added": [
+          "Tool"
+        ],
         "removed": []
       },
       "hiddenTags": {
-        "added": [],
+        "added": [
+          "CritReference"
+        ],
         "removed": []
       },
       "size": {
@@ -95181,12 +96915,7 @@ const data: PatchNotes = {
       },
       "heroes": {
         "added": [
-          "Vanessa",
-          "Dooley",
-          "Jules",
-          "Stelle",
-          "Mak",
-          "Pygmalien"
+          "Stelle"
         ],
         "removed": []
       },
@@ -95194,12 +96923,12 @@ const data: PatchNotes = {
         {
           "index": 0,
           "oldValue": null,
-          "newValue": "Cooldown 6 seconds"
+          "newValue": "When you buy or upgrade this, get or upgrade the Target Acquisition Skill."
         },
         {
           "index": 1,
           "oldValue": null,
-          "newValue": "This is a Small item Template"
+          "newValue": "At the start of each fight, your Target Acquisition's Crit Chance increases by 2%."
         }
       ],
       "enchantments": {
@@ -95210,7 +96939,7 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": null,
-                "newValue": "Slow an item for 2 second(s)"
+                "newValue": "When you Crit, Slow an item for 1 second(s)."
               }
             ]
           },
@@ -95220,7 +96949,7 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": null,
-                "newValue": "Freeze an item for 1 second(s)"
+                "newValue": "When you Crit, Freeze an item for 0.5 second(s)."
               }
             ]
           },
@@ -95230,7 +96959,7 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": null,
-                "newValue": "Haste an item for 2 second(s)"
+                "newValue": "When you Crit, Haste an item for 1 second(s)."
               }
             ]
           },
@@ -95240,7 +96969,7 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": null,
-                "newValue": "Shield 30"
+                "newValue": "When you Crit, Shield 20."
               }
             ]
           },
@@ -95250,7 +96979,7 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": null,
-                "newValue": "Heal 30"
+                "newValue": "When you Crit, Heal 20."
               }
             ]
           },
@@ -95260,7 +96989,7 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": null,
-                "newValue": "Poison 3"
+                "newValue": "When you Crit, Poison 2."
               }
             ]
           },
@@ -95270,7 +96999,7 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": null,
-                "newValue": "Burn 3"
+                "newValue": "When you Crit, Burn 2."
               }
             ]
           },
@@ -95280,7 +97009,7 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": null,
-                "newValue": "This has +1 Multicast."
+                "newValue": "This has double Crit Chance bonus."
               }
             ]
           },
@@ -95290,7 +97019,7 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": null,
-                "newValue": "+50% Crit Chance"
+                "newValue": "This has double Crit Chance bonus."
               }
             ]
           },
@@ -95300,7 +97029,7 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": null,
-                "newValue": "This item is immune to Freeze, Slow and Destroy."
+                "newValue": "Adjacent items are affected by Freeze and Slow for half as long."
               }
             ]
           },
@@ -95310,7 +97039,7 @@ const data: PatchNotes = {
               {
                 "index": 0,
                 "oldValue": null,
-                "newValue": "Deal 30 Damage"
+                "newValue": "When you Crit, deal 20 Damage."
               }
             ]
           }
@@ -95481,6 +97210,355 @@ const data: PatchNotes = {
                 "index": 0,
                 "oldValue": null,
                 "newValue": "Deal 30 Damage"
+              }
+            ]
+          }
+        ],
+        "removed": [],
+        "modified": []
+      }
+    },
+    "49c93b98-cd66-4d3a-923c-c4e2871e87fb": {
+      "metadata": {
+        "id": "49c93b98-cd66-4d3a-923c-c4e2871e87fb",
+        "name": "Bomb Voyage",
+        "previousStartingTier": "Gold",
+        "currentStartingTier": "Gold",
+        "currentHero": "Stelle",
+        "currentSize": "Medium",
+        "type": "item"
+      },
+      "name": {
+        "oldValue": null,
+        "newValue": "Bomb Voyage"
+      },
+      "startingTier": {
+        "oldValue": null,
+        "newValue": "Gold"
+      },
+      "tags": {
+        "added": [
+          "Weapon",
+          "Vehicle"
+        ],
+        "removed": []
+      },
+      "hiddenTags": {
+        "added": [
+          "Damage",
+          "Burn",
+          "FlyingReference"
+        ],
+        "removed": []
+      },
+      "size": {
+        "oldValue": null,
+        "newValue": "Medium"
+      },
+      "heroes": {
+        "added": [
+          "Stelle"
+        ],
+        "removed": []
+      },
+      "tooltips": [
+        {
+          "index": 0,
+          "oldValue": null,
+          "newValue": "Cooldown 6 seconds"
+        },
+        {
+          "index": 1,
+          "oldValue": null,
+          "newValue": "Deal 100 Damage"
+        },
+        {
+          "index": 2,
+          "oldValue": null,
+          "newValue": "Burn 10"
+        },
+        {
+          "index": 3,
+          "oldValue": null,
+          "newValue": "When this stops Flying, use this (6/12) times and destroy this."
+        }
+      ],
+      "enchantments": {
+        "added": [
+          {
+            "type": "Heavy",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Slow 2 items for 2 second(s)"
+              }
+            ]
+          },
+          {
+            "type": "Icy",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Freeze an item for 1 second(s)"
+              }
+            ]
+          },
+          {
+            "type": "Turbo",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Haste 2 items for 2 second(s)"
+              }
+            ]
+          },
+          {
+            "type": "Shielded",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Shield equal to this item's Damage"
+              }
+            ]
+          },
+          {
+            "type": "Restorative",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Heal equal to this item's Damage"
+              }
+            ]
+          },
+          {
+            "type": "Toxic",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Poison equal to this item's Burn"
+              }
+            ]
+          },
+          {
+            "type": "Fiery",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "This has double Burn."
+              }
+            ]
+          },
+          {
+            "type": "Shiny",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "This has +1 Multicast."
+              }
+            ]
+          },
+          {
+            "type": "Deadly",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "+50% Crit Chance"
+              }
+            ]
+          },
+          {
+            "type": "Radiant",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "This item is immune to Freeze, Slow and Destroy."
+              }
+            ]
+          },
+          {
+            "type": "Obsidian",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "This has double Damage."
+              }
+            ]
+          }
+        ],
+        "removed": [],
+        "modified": []
+      }
+    },
+    "bd46ceff-a181-49f2-ac60-a769a062cb6d": {
+      "metadata": {
+        "id": "bd46ceff-a181-49f2-ac60-a769a062cb6d",
+        "name": "Grabinator",
+        "previousStartingTier": "Gold",
+        "currentStartingTier": "Gold",
+        "currentHero": "Stelle",
+        "currentSize": "Medium",
+        "type": "item"
+      },
+      "name": {
+        "oldValue": null,
+        "newValue": "Grabinator"
+      },
+      "startingTier": {
+        "oldValue": null,
+        "newValue": "Gold"
+      },
+      "tags": {
+        "added": [
+          "Tool"
+        ],
+        "removed": []
+      },
+      "hiddenTags": {
+        "added": [],
+        "removed": []
+      },
+      "size": {
+        "oldValue": null,
+        "newValue": "Medium"
+      },
+      "heroes": {
+        "added": [
+          "Stelle"
+        ],
+        "removed": []
+      },
+      "tooltips": [
+        {
+          "index": 0,
+          "oldValue": null,
+          "newValue": "Cooldown (8/7) seconds"
+        },
+        {
+          "index": 1,
+          "oldValue": null,
+          "newValue": "Destroy the leftmost Medium item and transform this into it for the fight"
+        }
+      ],
+      "enchantments": {
+        "added": [
+          {
+            "type": "Heavy",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "...and Enchant the item with Heavy if able."
+              }
+            ]
+          },
+          {
+            "type": "Icy",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "...and Enchant the item with Icy if able."
+              }
+            ]
+          },
+          {
+            "type": "Turbo",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "...and Enchant the item with Turbo if able."
+              }
+            ]
+          },
+          {
+            "type": "Shielded",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "...and Enchant the item with Shielded if able."
+              }
+            ]
+          },
+          {
+            "type": "Restorative",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "...and Enchant the item with Restorative if able."
+              }
+            ]
+          },
+          {
+            "type": "Toxic",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "...and Enchant the item with Toxic if able."
+              }
+            ]
+          },
+          {
+            "type": "Fiery",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "...and Enchant the item with Fiery if able."
+              }
+            ]
+          },
+          {
+            "type": "Shiny",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "...and Enchant the item with Shiny if able."
+              }
+            ]
+          },
+          {
+            "type": "Deadly",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "...and Enchant the item with Deadly if able."
+              }
+            ]
+          },
+          {
+            "type": "Radiant",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "...and Enchant the item with Radiant if able."
+              }
+            ]
+          },
+          {
+            "type": "Obsidian",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "...and Enchant the item with Obsidian if able."
               }
             ]
           }
@@ -96017,6 +98095,181 @@ const data: PatchNotes = {
                 "index": 0,
                 "oldValue": null,
                 "newValue": "Deal Damage equal to 5 times this item's Burn"
+              }
+            ]
+          }
+        ],
+        "removed": [],
+        "modified": []
+      }
+    },
+    "b5f82e87-ffb1-4cc6-a3b3-7193b5f8862a": {
+      "metadata": {
+        "id": "b5f82e87-ffb1-4cc6-a3b3-7193b5f8862a",
+        "name": "Ornithopter",
+        "previousStartingTier": "Silver",
+        "currentStartingTier": "Silver",
+        "currentHero": "Stelle",
+        "currentSize": "Small",
+        "type": "item"
+      },
+      "name": {
+        "oldValue": null,
+        "newValue": "Ornithopter"
+      },
+      "startingTier": {
+        "oldValue": null,
+        "newValue": "Silver"
+      },
+      "tags": {
+        "added": [
+          "Vehicle"
+        ],
+        "removed": []
+      },
+      "hiddenTags": {
+        "added": [
+          "Flying",
+          "Cooldown"
+        ],
+        "removed": []
+      },
+      "size": {
+        "oldValue": null,
+        "newValue": "Small"
+      },
+      "heroes": {
+        "added": [
+          "Stelle"
+        ],
+        "removed": []
+      },
+      "tooltips": [
+        {
+          "index": 0,
+          "oldValue": null,
+          "newValue": "Cooldown (4/3/2) seconds"
+        },
+        {
+          "index": 1,
+          "oldValue": null,
+          "newValue": "An adjacent item starts Flying"
+        },
+        {
+          "index": 2,
+          "oldValue": null,
+          "newValue": "The Cooldown of the Flying item to the left of this is reduced by 1 second."
+        }
+      ],
+      "enchantments": {
+        "added": [
+          {
+            "type": "Heavy",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Slow an item for 2 second(s)"
+              }
+            ]
+          },
+          {
+            "type": "Icy",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Freeze an item for 0.5 second(s)"
+              }
+            ]
+          },
+          {
+            "type": "Turbo",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Haste an item for 2 second(s)"
+              }
+            ]
+          },
+          {
+            "type": "Shielded",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Shield 30"
+              }
+            ]
+          },
+          {
+            "type": "Restorative",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Heal 30"
+              }
+            ]
+          },
+          {
+            "type": "Toxic",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Poison 3"
+              }
+            ]
+          },
+          {
+            "type": "Fiery",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Burn 3"
+              }
+            ]
+          },
+          {
+            "type": "Shiny",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "This has +1 Multicast."
+              }
+            ]
+          },
+          {
+            "type": "Deadly",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "The item to the left of this has +15 Crit Chance."
+              }
+            ]
+          },
+          {
+            "type": "Radiant",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "This item is immune to Freeze, Slow and Destroy."
+              }
+            ]
+          },
+          {
+            "type": "Obsidian",
+            "tooltipChanges": [
+              {
+                "index": 0,
+                "oldValue": null,
+                "newValue": "Deal 30 Damage"
               }
             ]
           }
