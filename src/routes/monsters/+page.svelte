@@ -83,7 +83,10 @@
                 <span class="line-through">-Dire Mosquito</span>
                 <span class="text-green-500">Updated!</span>
             </li>
-            <li>- Sergeant Suds</li>
+            <li>
+                <span class="line-through">- Sergeant Suds</span>
+                <span class="text-green-500">Updated!</span>
+            </li>
             <li>- Ghost Pepper</li>
             <li>- Thug</li>
             <li>- Lord of the Wastes</li>
