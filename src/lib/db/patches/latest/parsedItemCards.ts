@@ -38750,7 +38750,7 @@ const data: ParsedItemCard[] = [
     ],
     "quests": [],
     "unifiedTooltips": [
-      "Adjacent Non-Property items have +Crit Chance equal to (half/their) (their/Value). (Value)."
+      "Adjacent Non-Property items have +Crit Chance equal to (0.5x/1x) their Value."
     ]
   },
   {

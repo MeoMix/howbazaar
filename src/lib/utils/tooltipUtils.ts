@@ -3,6 +3,7 @@ import type { KeywordPart } from "./keywordUtil";
 
 export function replaceMultiplier(input: string): string {
   const multiplierMap: Record<string, string> = {
+    half: "0.5x",
     double: "2x",
     twice: "2x",
     triple: "3x",
@@ -11,10 +12,10 @@ export function replaceMultiplier(input: string): string {
 
   // Match "equal to (double|triple|quadruple)" and preserve the rest of the sentence
   return input.replace(
-    /equal to (double|twice|triple|quadruple)/,
+    /equal to (half|double|twice|triple|quadruple)/,
     (match, multiplier) => `equal to ${multiplierMap[multiplier]}`
   ).replace(
-    /equal to (?!2x|3x|4x)/, // For cases with "this" or other default words
+    /equal to (?!0.5x|2x|3x|4x)/, // For cases with "this" or other default words
     "equal to 1x "
   );
 }
