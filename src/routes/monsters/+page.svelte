@@ -117,7 +117,9 @@
             </li>
         </ul>
 
-        <strong>All new monster encounters have been added!</strong>
+        <strong class="text-green-500">
+            All new monster encounters have been added!
+        </strong>
     </div>
 
     <MonsterFilters
