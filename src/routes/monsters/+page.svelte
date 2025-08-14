@@ -44,8 +44,23 @@
     class="w-full max-w-full sm:max-w-(--breakpoint-sm) md:max-w-(--breakpoint-md) lg:max-w-(--breakpoint-lg) xl:max-w-(--breakpoint-xl)"
 >
     <div class="text-lg mt-4 text-red-500">
-        I haven't updated monsters for the 5.0.0 Stelle release yet.
-        Please DM me on Discord with screenshots of missing/incorrect encounters. Thank you!
+        I haven't updated monsters for the 5.0.0 Stelle release yet. Please DM
+        me on Discord with screenshots of missing/incorrect encounters. Thank
+        you!
+        <br />
+        <br />
+
+        Ideally you would tell me this info:
+        <br />
+        <ul>
+            <li>- Monster HP</li>
+            <li>
+                - Whether it appears in the first, second, or third slot for the
+                day's encounter.
+            </li>
+            <li>- Names of all skills.</li>
+            <li>- Names of all items.</li>
+        </ul>
     </div>
 
     <MonsterFilters
