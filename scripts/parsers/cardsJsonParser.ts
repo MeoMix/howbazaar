@@ -117,7 +117,7 @@ function getAttributeInfo(
         } else if (action.SpawnContext?.Limit?.AttributeType) {
             attributeName = action.SpawnContext?.Limit?.AttributeType;
         }
-    } else if (actionType === "TActionCardFlyingStart") {
+    } else if (actionType === "TActionCardFlyingStart" || actionType === "TActionCardFlyingStop") {
         // Need to look up FlyingTargets at the given tier.
         attributeName = "FlyingTargets";
         attributeValue = getAttributeValueFromTier(attributeName, tierAttributes, qualifier);

@@ -77332,7 +77332,7 @@ const data: PatchNotes = {
         {
           "index": 1,
           "oldValue": null,
-          "newValue": "{ability.0.targets} of your items stop Flying"
+          "newValue": "1 of your items stop Flying"
         },
         {
           "index": 2,
@@ -89815,7 +89815,7 @@ const data: PatchNotes = {
         {
           "index": 1,
           "oldValue": null,
-          "newValue": "{ability.0.targets} items stop Flying"
+          "newValue": "(2/3/4) items stop Flying"
         }
       ],
       "enchantments": {

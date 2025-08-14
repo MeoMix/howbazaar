@@ -3394,7 +3394,7 @@ const data: ParsedItemCard[] = [
       "Bronze": {
         "tooltips": [
           "Cooldown 8 seconds",
-          "{ability.0.targets} of your items stop Flying",
+          "1 of your items stop Flying",
           "When you use a Flying item, charge this 1 second.",
           "When your items stop Flying, Shield 40."
         ]
@@ -3402,7 +3402,7 @@ const data: ParsedItemCard[] = [
       "Silver": {
         "tooltips": [
           "Cooldown 8 seconds",
-          "{ability.0.targets} of your items stop Flying",
+          "1 of your items stop Flying",
           "When you use a Flying item, charge this 1 second.",
           "When your items stop Flying, Shield 80."
         ]
@@ -3410,7 +3410,7 @@ const data: ParsedItemCard[] = [
       "Gold": {
         "tooltips": [
           "Cooldown 8 seconds",
-          "{ability.0.targets} of your items stop Flying",
+          "1 of your items stop Flying",
           "When you use a Flying item, charge this 1 second.",
           "When your items stop Flying, Shield 120."
         ]
@@ -3418,7 +3418,7 @@ const data: ParsedItemCard[] = [
       "Diamond": {
         "tooltips": [
           "Cooldown 8 seconds",
-          "{ability.0.targets} of your items stop Flying",
+          "1 of your items stop Flying",
           "When you use a Flying item, charge this 1 second.",
           "When your items stop Flying, Shield 160."
         ]
@@ -3508,7 +3508,7 @@ const data: ParsedItemCard[] = [
     "quests": [],
     "unifiedTooltips": [
       "Cooldown 8 seconds",
-      "{ability.0.targets} of your items stop Flying",
+      "1 of your items stop Flying",
       "When you use a Flying item, charge this 1 second.",
       "When your items stop Flying, Shield (40/80/120/160)."
     ]
@@ -63158,19 +63158,19 @@ const data: ParsedItemCard[] = [
       "Silver": {
         "tooltips": [
           "Cooldown 5 seconds",
-          "{ability.0.targets} items stop Flying"
+          "2 items stop Flying"
         ]
       },
       "Gold": {
         "tooltips": [
           "Cooldown 5 seconds",
-          "{ability.0.targets} items stop Flying"
+          "3 items stop Flying"
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 5 seconds",
-          "{ability.0.targets} items stop Flying"
+          "4 items stop Flying"
         ]
       },
       "Legendary": {
@@ -63259,7 +63259,7 @@ const data: ParsedItemCard[] = [
     "quests": [],
     "unifiedTooltips": [
       "Cooldown 5 seconds",
-      "{ability.0.targets} items stop Flying"
+      "(2/3/4) items stop Flying"
     ]
   },
   {
