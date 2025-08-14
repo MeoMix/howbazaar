@@ -138,7 +138,10 @@
                 <span class="line-through">- Dooltron</span>
                 <span class="text-green-500">Updated!</span>
             </li>
-            <li>- Awakened Primordial</li>
+            <li>
+                <span class="line-through">- Awakened Primordial</span>
+                <span class="text-green-500">Updated!</span>
+            </li>
         </ul>
     </div>
 

@@ -4614,9 +4614,44 @@ const data: ParsedMonster[] = [
   },
   {
     "id": "e51634b6-ce99-4038-97e4-b9d86bdddae0",
-    "health": -1,
-    "items": [],
-    "skills": []
+    "health": 3600,
+    "items": [
+      {
+        "id": "b18e28e6-69a3-455a-8a5a-1a3170c76bb7",
+        "tierType": "Gold"
+      },
+      {
+        "id": "91766035-9d5c-49df-b6b1-25ff7328af5b",
+        "tierType": "Gold"
+      },
+      {
+        "id": "ce6769db-f9a6-44a8-b915-afec472a2ea3",
+        "tierType": "Gold"
+      },
+      {
+        "id": "14b297c5-db65-492d-aad7-9ffe101cae5f",
+        "tierType": "Gold"
+      },
+      {
+        "id": "1312cf29-3dbb-446f-88b2-0d4999e68d78",
+        "tierType": "Gold",
+        "enchantmentType": "Toxic"
+      },
+      {
+        "id": "9b739ba9-9278-45cb-9635-9ae48ac942c7",
+        "tierType": "Gold"
+      }
+    ],
+    "skills": [
+      {
+        "id": "5c6048f0-8cf1-4f37-8611-ba509a330660",
+        "tierType": "Diamond"
+      },
+      {
+        "id": "76e1e841-8b6c-4871-a077-b17f4806675d",
+        "tierType": "Gold"
+      }
+    ]
   }
 ];
 
