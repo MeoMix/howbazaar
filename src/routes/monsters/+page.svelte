@@ -86,7 +86,7 @@
             <li>- Grandfather Klok</li>
             <li>- Cloudtop Officer</li>
             <li>- Cloudtop Admiral</li>
-            <li>- Tortuga</li>
+            <li>- Tortuga (Need HP only)</li>
             <li>- Test Subject Alpha</li>
             <li>- Infernal Dreadnought</li>
             <li>- Rex Spex</li>
