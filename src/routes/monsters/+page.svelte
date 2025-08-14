@@ -97,7 +97,10 @@
             <li>- Cloudtop Officer</li>
             <li>- Cloudtop Admiral</li>
             <li>- Tortuga (Need HP only)</li>
-            <li>- Test Subject Alpha</li>
+            <li>
+                <span class="line-through">- Test Subject Alpha</span>
+                <span class="text-green-500">Updated!</span>
+            </li>
             <li>- Infernal Dreadnought (Need HP only)</li>
             <li>- Rex Spex (Need HP only)</li>
             <li>- Dooltron</li>
