@@ -107,12 +107,12 @@ type PatchNotes = {
 
 function compareSimpleProperty<T>(oldValue: T | undefined, newValue: T | undefined): SimplePropertyChange<T> | undefined {
     if (oldValue === newValue) return undefined;
-    
+
     // For string-like values, do case-insensitive comparison
     if (typeof oldValue === 'string' && typeof newValue === 'string') {
         if (oldValue.toLowerCase() === newValue.toLowerCase()) return undefined;
     }
-    
+
     return {
         oldValue: oldValue ?? null,
         newValue: newValue ?? null
@@ -132,7 +132,7 @@ function compareArrays<T>(oldArr: T[] | undefined, newArr: T[] | undefined): Arr
         // Convert arrays to Sets with lowercase values for O(1) lookups
         const oldSet = new Set(oldArr.map(item => (item as string).toLowerCase()));
         const newSet = new Set(newArr.map(item => (item as string).toLowerCase()));
-        
+
         // Create maps to preserve original values
         const oldMap = new Map(oldArr.map(item => [(item as string).toLowerCase(), item]));
         const newMap = new Map(newArr.map(item => [(item as string).toLowerCase(), item]));
@@ -187,19 +187,22 @@ function compareTooltips(oldTooltips: string[] | undefined, newTooltips: string[
 
     // Helper function to check if two tooltips are similar enough to be considered the same
     function areTooltipsSimilar(t1: string, t2: string): boolean {
-        // Remove all numbers, punctuation, and whitespace for comparison, and convert to lowercase
-        const normalize = (s: string) => s.replace(/[0-9()/.,!?;:'"`~@#$%^&*()_+\-=\[\]{}|\\<>]/g, '').replace(/\s+/g, '').toLowerCase();
+        // Remove all numbers and special characters for comparison, and convert to lowercase
+        const normalize = (s: string) =>
+            s
+                .replace(/[()/.,!?;:'"`~@#$%^&*_\-=\[\]{}|\\<>]/g, '') // removed all special characters
+                .replace(/\s+/g, '')                                   // remove all whitespace
+                .toLowerCase();
         const normalized1 = normalize(t1);
         const normalized2 = normalize(t2);
 
         // If normalized strings are identical, they're the same
         if (normalized1 === normalized2) return true;
 
-        // If Levenshtein distance is small enough, consider them similar
-        return distance(normalized1, normalized2) <= 2;
+        return false;
     }
 
-    // First pass: find exact matches (normalized comparison)
+    // First pass: find exact matches (case-insensitive)
     for (let i = 0; i < oldTooltips.length; i++) {
         const oldTooltip = oldTooltips[i];
         const exactMatchIndex = newTooltips.findIndex((t, j) => !matchedIndices.has(j) && areTooltipsSimilar(t, oldTooltip));
