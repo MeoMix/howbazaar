@@ -671,7 +671,6 @@ const data: ParsedDayHour[] = [
           "96349563-bfb5-46ef-8dff-dbf1ff0d4196",
           "265d1068-e90d-49c4-8013-ed2e856ead8f",
           "20863550-960f-4713-99eb-2ff2e4cfb3ef",
-          "071cf90c-57a4-40f2-8d79-4c87f0d100d4",
           "27f9cc4c-3f9e-494a-a13d-99797114c53c",
           "25f54463-2cca-419a-b0e8-8f5297896992",
           "e51634b6-ce99-4038-97e4-b9d86bdddae0"
