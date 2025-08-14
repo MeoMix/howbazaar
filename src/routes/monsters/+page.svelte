@@ -66,7 +66,10 @@
         I still need the changes for these previously existing monsters:
         <br />
         <ul>
-            <li>- Haunted Kimono</li>
+            <li>
+                <span class="line-through">- Haunted Kimono</span>
+                <span class="text-green-500">Updated!</span>
+            </li>
             <li>
                 <span class="line-through">- Rogue Scrapper</span>
                 <span class="text-green-500">Updated!</span>

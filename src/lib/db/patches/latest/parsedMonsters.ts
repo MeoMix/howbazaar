@@ -1371,7 +1371,12 @@ const data: ParsedMonster[] = [
         "tierType": "Bronze"
       }
     ],
-    "skills": []
+    "skills": [
+      {
+        "id": "4160a158-6809-410d-9b7a-21a27fb12f93",
+        "tierType": "Bronze"
+      }
+    ]
   },
   {
     "id": "8f73d2d6-6071-4464-bb19-8e0783de4df0",
