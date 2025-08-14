@@ -31187,7 +31187,7 @@ const data: PatchNotes = {
         {
           "index": 0,
           "oldValue": null,
-          "newValue": "Adjacent Non-Property items have +Crit Chance equal to (half/their) (their/Value). (Value)."
+          "newValue": "Adjacent Non-Property items have +Crit Chance equal to (0.5x/1x) their Value."
         }
       ],
       "enchantments": {
