@@ -133,7 +133,10 @@
                 <span class="line-through">- Infernal Dreadnought</span>
                 <span class="text-green-500">Updated!</span>
             </li>
-            <li>- Rex Spex (Need HP only)</li>
+            <li>
+                <span class="line-through">- Rex Spex</span>
+                <span class="text-green-500">Updated!</span>
+            </li>
             <li>
                 <span class="line-through">- Dooltron</span>
                 <span class="text-green-500">Updated!</span>

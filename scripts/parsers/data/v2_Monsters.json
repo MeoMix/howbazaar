@@ -5316,7 +5316,7 @@
   "e1c287a8-4d9b-4ab4-899a-eb54d1446d6f": {
     "Id": "e1c287a8-4d9b-4ab4-899a-eb54d1446d6f",
     "InternalName": "Rex Spex",
-    "Health": -1,
+    "Health": 3600,
     "Items": [
       {
         "EnchantmentType": null,
