@@ -5446,5 +5446,48 @@
         "Tier": "Gold"
       }
     ]
+  },
+  "b988bbe5-35cf-445e-bea5-ec54b8daf54a": {
+    "Id": "b988bbe5-35cf-445e-bea5-ec54b8daf54a",
+    "InternalName": "Aleppa Tantius",
+    "Health": 3050,
+    "Items": [
+      {
+        "EnchantmentType": null,
+        "Id": "58e08eca-faae-4f62-b7de-3824a717f337",
+        "Tier": "Silver"
+      },
+      {
+        "EnchantmentType": null,
+        "Id": "2e77aab4-4c38-4f0a-8953-696c55140d8e",
+        "Tier": "Gold"
+      },
+      {
+        "EnchantmentType": null,
+        "Id": "560450e3-8700-4ef9-b7c1-d3ae9937b55e",
+        "Tier": "Gold"
+      },
+      {
+        "EnchantmentType": null,
+        "Id": "5ff4d4c3-5a31-42d9-9b82-608f237e9e40",
+        "Tier": "Gold"
+      },
+      {
+        "EnchantmentType": null,
+        "Id": "94144b09-eb5b-438b-a0fe-3d7494b84c84",
+        "Tier": "Gold"
+      },
+      {
+        "EnchantmentType": null,
+        "Id": "461e9a8d-331b-46a2-b604-6b04312b3214",
+        "Tier": "Gold"
+      }
+    ],
+    "Skills": [
+      {
+        "Id": "de35c728-b2e6-4cf8-82a2-2a1a41d782fe",
+        "Tier": "Gold"
+      }
+    ]
   }
 }

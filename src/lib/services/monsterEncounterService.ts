@@ -32,6 +32,8 @@ export function getMonsterEncounterDays(
                 "0f0b2074-06d7-4aea-a5aa-9e603602215a",
                 // Mimic
                 "85420ae1-363b-4e84-8405-cc1a306b00fb",
+                // Aleppa Tantius
+                "b988bbe5-35cf-445e-bea5-ec54b8daf54a"
             ]
         }]
     }];
