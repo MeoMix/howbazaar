@@ -1976,17 +1976,17 @@ const data: ParsedMonster[] = [
     "health": 2750,
     "items": [
       {
-        "id": "2c79dcd7-3205-4d41-85e9-daecb8d1c7c5",
-        "tierType": "Gold"
-      },
-      {
         "id": "2989cfa7-86d3-40f7-9946-e417a25d9535",
         "tierType": "Gold",
         "enchantmentType": "Obsidian"
       },
       {
-        "id": "25545684-3fd5-4adf-abcc-0e2bb6c500c1",
+        "id": "2c79dcd7-3205-4d41-85e9-daecb8d1c7c5",
         "tierType": "Gold"
+      },
+      {
+        "id": "f0590898-273f-479e-b74e-3472ecfbc02f",
+        "tierType": "Diamond"
       },
       {
         "id": "2989cfa7-86d3-40f7-9946-e417a25d9535",

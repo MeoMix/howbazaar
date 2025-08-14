@@ -95,7 +95,10 @@
                 <span class="text-green-500">Updated!</span>
             </li>
             <li>- Thug</li>
-            <li>- Lord of the Wastes</li>
+            <li>
+                <span class="line-through">- Lord of the Wastes</span>
+                <span class="text-green-500">Updated!</span>
+            </li>
         </ul>
 
         I still need the changes for these new monsters:
