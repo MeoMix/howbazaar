@@ -72,7 +72,10 @@
             <li>- Giant Mosquito</li>
             <li>- Street Gamer</li>
             <li>- Foundation Weeper</li>
-            <li><span class="line-through">-Dire Mosquito</span> <span class="text-green-500">Updated!</span></li>
+            <li>
+                <span class="line-through">-Dire Mosquito</span>
+                <span class="text-green-500">Updated!</span>
+            </li>
             <li>- Sergeant Suds</li>
             <li>- Ghost Pepper</li>
             <li>- Thug</li>
@@ -83,7 +86,10 @@
         <br />
         <ul>
             <li>- Product Demostrator</li>
-            <li>- Grandfather Klok (Need HP only)</li>
+            <li>
+                <span class="line-through">- Grandfather Klok</span>
+                <span class="text-green-500">Updated!</span>
+            </li>
             <li>- Cloudtop Officer</li>
             <li>- Cloudtop Admiral</li>
             <li>- Tortuga (Need HP only)</li>

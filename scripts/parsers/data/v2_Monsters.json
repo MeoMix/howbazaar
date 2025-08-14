@@ -5027,7 +5027,7 @@
   "de126a7a-a0bc-4a6f-96f0-442920104fcf": {
     "Id": "de126a7a-a0bc-4a6f-96f0-442920104fcf",
     "InternalName": "Grandfather Klok",
-    "Health": -1,
+    "Health": 800,
     "Items": [
       {
         "EnchantmentType": null,

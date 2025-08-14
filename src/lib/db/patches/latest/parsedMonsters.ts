@@ -4283,7 +4283,7 @@ const data: ParsedMonster[] = [
   },
   {
     "id": "de126a7a-a0bc-4a6f-96f0-442920104fcf",
-    "health": -1,
+    "health": 800,
     "items": [
       {
         "id": "189c31f3-1641-4e05-bf78-800e71ffc0e7",
