@@ -110,7 +110,10 @@
                 <span class="line-through">- Test Subject Alpha</span>
                 <span class="text-green-500">Updated!</span>
             </li>
-            <li>- Infernal Dreadnought (Need HP only)</li>
+            <li>
+                <span class="line-through">- Infernal Dreadnought</span>
+                <span class="text-green-500">Updated!</span>
+            </li>
             <li>- Rex Spex (Need HP only)</li>
             <li>- Dooltron</li>
             <li>- Awakened Primordial</li>

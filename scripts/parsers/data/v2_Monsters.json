@@ -5207,7 +5207,7 @@
   "3c433f32-5070-4f57-82d3-9b4347da7aa3": {
     "Id": "3c433f32-5070-4f57-82d3-9b4347da7aa3",
     "InternalName": "Infernal Dreadnought",
-    "Health": -1,
+    "Health": 3050,
     "Items": [
       {
         "EnchantmentType": null,
