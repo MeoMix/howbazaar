@@ -750,7 +750,7 @@
   "962bf2b2-fc1b-4ad3-9526-15d76d3bb0de": {
     "Id": "962bf2b2-fc1b-4ad3-9526-15d76d3bb0de",
     "InternalName": "Foundation Weeper",
-    "Health": 1550,
+    "Health": 1350,
     "Items": [
       {
         "EnchantmentType": null,
@@ -765,12 +765,12 @@
       {
         "EnchantmentType": null,
         "Id": "f08af933-8712-44fe-9542-338e0fec0a45",
-        "Tier": "Gold"
+        "Tier": "Silver"
       },
       {
         "EnchantmentType": null,
         "Id": "35e2a1dd-739d-4434-95c5-2b9ce5f07a5c",
-        "Tier": "Gold"
+        "Tier": "Silver"
       },
       {
         "EnchantmentType": null,
