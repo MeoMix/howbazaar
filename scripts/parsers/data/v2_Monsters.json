@@ -5132,7 +5132,7 @@
   "f4bc9c3d-ce22-4fd8-9b7f-27214fed9f1d": {
     "Id": "f4bc9c3d-ce22-4fd8-9b7f-27214fed9f1d",
     "InternalName": "Cloudtop Admiral",
-    "Health": -1,
+    "Health": 2100,
     "Items": [
       {
         "EnchantmentType": null,
