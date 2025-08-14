@@ -1281,6 +1281,46 @@ const data: ParsedSkillCard[] = [
     ]
   },
   {
+    "id": "7ce449d2-0843-4fee-9bdf-dacf380afb8f",
+    "name": "Regular Maintenance",
+    "startingTier": "Gold",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": [
+          "Your Shield items have +25 Shield for each Flying item you have."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Your Shield items have +50 Shield for each Flying item you have."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "FlyingReference",
+      "ShieldReference"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Stelle"
+    ],
+    "artKey": "Icon_Skill_STE_RegularMaintenance",
+    "unifiedTooltips": [
+      "Your Shield items have (+25/+50) Shield for each Flying item you have."
+    ]
+  },
+  {
     "id": "a3695c78-63e4-45a9-a2b9-9b2827325527",
     "name": "Quality over Quantity",
     "startingTier": "Gold",
@@ -2994,6 +3034,44 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_MON_AnythingToWin_03.png",
     "unifiedTooltips": [
       "When you use a non-Weapon item, Burn (1/2/3) and Poison (1/2/3)."
+    ]
+  },
+  {
+    "id": "7edf2ff2-f644-4b68-984f-57cd51bfc0c2",
+    "name": "Eject, Eject!",
+    "startingTier": "Diamond",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": []
+      },
+      "Diamond": {
+        "tooltips": [
+          "The first time you would be defeated each fight, destroy one of your Vehicles for the fight to Heal to half health."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "HealthReference",
+      "Heal"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Stelle"
+    ],
+    "artKey": "Icon_Skill_STE_EjectEject",
+    "unifiedTooltips": [
+      "The first time you would be defeated each fight, destroy one of your Vehicles for the fight to Heal to half health."
     ]
   },
   {
@@ -10450,6 +10528,46 @@ const data: ParsedSkillCard[] = [
     ]
   },
   {
+    "id": "3c90df05-0cf7-4555-bebc-4eedd5d46356",
+    "name": "Thrill of the Flight",
+    "startingTier": "Gold",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": [
+          "Your Flying items' Cooldowns are reduced by 10%."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Your Flying items' Cooldowns are reduced by 15%."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "FlyingReference",
+      "Cooldown"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Stelle"
+    ],
+    "artKey": "Assets/TheBazaar/Art/UI/Skills/Stelle/Icon_Skill_STE_ThrillOfTheFlight.png",
+    "unifiedTooltips": [
+      "Your Flying items' Cooldowns are reduced by (10%/15%)."
+    ]
+  },
+  {
     "id": "e2bed270-5a6c-46ae-ab7e-a0d34f6da903",
     "name": "Commercial Zoning",
     "startingTier": "Gold",
@@ -11796,6 +11914,45 @@ const data: ParsedSkillCard[] = [
     ]
   },
   {
+    "id": "81075325-d0fd-4bbd-aa62-cc24a35fef79",
+    "name": "Acclimation",
+    "startingTier": "Gold",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": [
+          "Your Weapons have +10 Damage for each Flying item you have."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Your Weapons have +20 Damage for each Flying item you have."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "DamageReference"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Stelle"
+    ],
+    "artKey": "Icon_Skill_STE_Acclimation",
+    "unifiedTooltips": [
+      "Your Weapons have (+10/+20) Damage for each Flying item you have."
+    ]
+  },
+  {
     "id": "4225d131-791a-4ea4-ab0e-80a3343a3253",
     "name": "Defensive Stance",
     "startingTier": "Silver",
@@ -12176,6 +12333,46 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_QuickHeal.png",
     "unifiedTooltips": [
       "The first time you Over-Heal each fight, Haste your items for (2/4) second(s)."
+    ]
+  },
+  {
+    "id": "cf20ff77-7f51-42ca-8451-a3a1befe3d66",
+    "name": "Above the Clouds",
+    "startingTier": "Gold",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": [
+          "Your items have +8% Crit Chance for each Flying item you have."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Your items have +12% Crit Chance for each Flying item you have."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "Crit",
+      "FlyingReference"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Stelle"
+    ],
+    "artKey": "Icon_Skill_STE_AboveTheClouds",
+    "unifiedTooltips": [
+      "Your items have (+8%/+12%) Crit Chance for each Flying item you have."
     ]
   },
   {

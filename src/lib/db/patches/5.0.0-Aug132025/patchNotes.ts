@@ -101166,6 +101166,55 @@ const data: PatchNotes = {
         }
       ]
     },
+    "7ce449d2-0843-4fee-9bdf-dacf380afb8f": {
+      "metadata": {
+        "id": "7ce449d2-0843-4fee-9bdf-dacf380afb8f",
+        "name": "Regular Maintenance",
+        "previousStartingTier": "Gold",
+        "currentStartingTier": "Gold",
+        "heroes": [
+          "Stelle"
+        ],
+        "currentSize": "Medium",
+        "type": "skill"
+      },
+      "name": {
+        "oldValue": null,
+        "newValue": "Regular Maintenance"
+      },
+      "startingTier": {
+        "oldValue": null,
+        "newValue": "Gold"
+      },
+      "tags": {
+        "added": [],
+        "removed": []
+      },
+      "hiddenTags": {
+        "added": [
+          "FlyingReference",
+          "ShieldReference"
+        ],
+        "removed": []
+      },
+      "size": {
+        "oldValue": null,
+        "newValue": "Medium"
+      },
+      "heroes": {
+        "added": [
+          "Stelle"
+        ],
+        "removed": []
+      },
+      "tooltips": [
+        {
+          "index": 0,
+          "oldValue": null,
+          "newValue": "Your Shield items have (+25/+50) Shield for each Flying item you have."
+        }
+      ]
+    },
     "13d8c01f-b2a7-4a21-9892-de5b645556bc": {
       "metadata": {
         "id": "13d8c01f-b2a7-4a21-9892-de5b645556bc",
@@ -101267,6 +101316,55 @@ const data: PatchNotes = {
           "index": 1,
           "oldValue": null,
           "newValue": "Your Flying Weapons have (+20/+30/+40) Damage."
+        }
+      ]
+    },
+    "7edf2ff2-f644-4b68-984f-57cd51bfc0c2": {
+      "metadata": {
+        "id": "7edf2ff2-f644-4b68-984f-57cd51bfc0c2",
+        "name": "Eject, Eject!",
+        "previousStartingTier": "Diamond",
+        "currentStartingTier": "Diamond",
+        "heroes": [
+          "Stelle"
+        ],
+        "currentSize": "Medium",
+        "type": "skill"
+      },
+      "name": {
+        "oldValue": null,
+        "newValue": "Eject, Eject!"
+      },
+      "startingTier": {
+        "oldValue": null,
+        "newValue": "Diamond"
+      },
+      "tags": {
+        "added": [],
+        "removed": []
+      },
+      "hiddenTags": {
+        "added": [
+          "HealthReference",
+          "Heal"
+        ],
+        "removed": []
+      },
+      "size": {
+        "oldValue": null,
+        "newValue": "Medium"
+      },
+      "heroes": {
+        "added": [
+          "Stelle"
+        ],
+        "removed": []
+      },
+      "tooltips": [
+        {
+          "index": 0,
+          "oldValue": null,
+          "newValue": "The first time you would be defeated each fight, destroy one of your Vehicles for the fight to Heal to half health."
         }
       ]
     },
@@ -101624,6 +101722,55 @@ const data: PatchNotes = {
         }
       ]
     },
+    "3c90df05-0cf7-4555-bebc-4eedd5d46356": {
+      "metadata": {
+        "id": "3c90df05-0cf7-4555-bebc-4eedd5d46356",
+        "name": "Thrill of the Flight",
+        "previousStartingTier": "Gold",
+        "currentStartingTier": "Gold",
+        "heroes": [
+          "Stelle"
+        ],
+        "currentSize": "Medium",
+        "type": "skill"
+      },
+      "name": {
+        "oldValue": null,
+        "newValue": "Thrill of the Flight"
+      },
+      "startingTier": {
+        "oldValue": null,
+        "newValue": "Gold"
+      },
+      "tags": {
+        "added": [],
+        "removed": []
+      },
+      "hiddenTags": {
+        "added": [
+          "FlyingReference",
+          "Cooldown"
+        ],
+        "removed": []
+      },
+      "size": {
+        "oldValue": null,
+        "newValue": "Medium"
+      },
+      "heroes": {
+        "added": [
+          "Stelle"
+        ],
+        "removed": []
+      },
+      "tooltips": [
+        {
+          "index": 0,
+          "oldValue": null,
+          "newValue": "Your Flying items' Cooldowns are reduced by (10%/15%)."
+        }
+      ]
+    },
     "6ba408d1-dad1-4cf2-b0f9-2afe3cb94bb9": {
       "metadata": {
         "id": "6ba408d1-dad1-4cf2-b0f9-2afe3cb94bb9",
@@ -101669,6 +101816,103 @@ const data: PatchNotes = {
           "index": 0,
           "oldValue": null,
           "newValue": "If you have only one Potion, it has +1 Max Ammo and its Cooldown halved."
+        }
+      ]
+    },
+    "81075325-d0fd-4bbd-aa62-cc24a35fef79": {
+      "metadata": {
+        "id": "81075325-d0fd-4bbd-aa62-cc24a35fef79",
+        "name": "Acclimation",
+        "previousStartingTier": "Gold",
+        "currentStartingTier": "Gold",
+        "heroes": [
+          "Stelle"
+        ],
+        "currentSize": "Medium",
+        "type": "skill"
+      },
+      "name": {
+        "oldValue": null,
+        "newValue": "Acclimation"
+      },
+      "startingTier": {
+        "oldValue": null,
+        "newValue": "Gold"
+      },
+      "tags": {
+        "added": [],
+        "removed": []
+      },
+      "hiddenTags": {
+        "added": [
+          "DamageReference"
+        ],
+        "removed": []
+      },
+      "size": {
+        "oldValue": null,
+        "newValue": "Medium"
+      },
+      "heroes": {
+        "added": [
+          "Stelle"
+        ],
+        "removed": []
+      },
+      "tooltips": [
+        {
+          "index": 0,
+          "oldValue": null,
+          "newValue": "Your Weapons have (+10/+20) Damage for each Flying item you have."
+        }
+      ]
+    },
+    "cf20ff77-7f51-42ca-8451-a3a1befe3d66": {
+      "metadata": {
+        "id": "cf20ff77-7f51-42ca-8451-a3a1befe3d66",
+        "name": "Above the Clouds",
+        "previousStartingTier": "Gold",
+        "currentStartingTier": "Gold",
+        "heroes": [
+          "Stelle"
+        ],
+        "currentSize": "Medium",
+        "type": "skill"
+      },
+      "name": {
+        "oldValue": null,
+        "newValue": "Above the Clouds"
+      },
+      "startingTier": {
+        "oldValue": null,
+        "newValue": "Gold"
+      },
+      "tags": {
+        "added": [],
+        "removed": []
+      },
+      "hiddenTags": {
+        "added": [
+          "Crit",
+          "FlyingReference"
+        ],
+        "removed": []
+      },
+      "size": {
+        "oldValue": null,
+        "newValue": "Medium"
+      },
+      "heroes": {
+        "added": [
+          "Stelle"
+        ],
+        "removed": []
+      },
+      "tooltips": [
+        {
+          "index": 0,
+          "oldValue": null,
+          "newValue": "Your items have (+8%/+12%) Crit Chance for each Flying item you have."
         }
       ]
     }
