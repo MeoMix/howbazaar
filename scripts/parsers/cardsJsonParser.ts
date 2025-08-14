@@ -164,7 +164,8 @@ function getAttributeValueFromTier(attributeName: string, tierAttributes: Tier["
         "Level",
         "Health",
         "Ammo",
-        "DamageCrit"
+        "DamageCrit",
+        "EnchantTargets"
     ];
 
     const suffix = qualifier.isTargets ? "Targets" : "Amount";

@@ -79438,7 +79438,7 @@ const data: PatchNotes = {
         {
           "index": 0,
           "oldValue": null,
-          "newValue": "At the start of each fight, Enchant NaN other Non-Enchanted items for the fight."
+          "newValue": "At the start of each fight, Enchant (2/3) other Non-Enchanted items for the fight."
         },
         {
           "index": 1,

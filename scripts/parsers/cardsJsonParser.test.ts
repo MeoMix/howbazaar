@@ -70,10 +70,10 @@ describe('cardJsonParser', () => {
 
       for (const card of [...itemCards, ...skillCards]) {
         if ('quests' in card) {
-          const questRewardTooltips = card.quests.flatMap(quest => 
+          const questRewardTooltips = card.quests.flatMap(quest =>
             quest.entries.flatMap(entry => entry.rewardTooltips)
           );
-          
+
           const invalidTooltips = questRewardTooltips.filter(tooltip => tooltip.includes('{'));
 
           if (invalidTooltips.length > 0) {
@@ -358,18 +358,32 @@ describe('cardJsonParser', () => {
   });
 
   it('should contain no tooltips with {', () => {
-    const disabledItemIds = [
-      // Schematics is disabled due to bug so it's ~ok for Tooltip to be broken
-      "f4827638-60ff-4101-a52f-037c04791ee5"
-    ];
-
     const invalidCards = [];
 
     for (const card of [...itemCards, ...skillCards]) {
       const tooltips = Object.values(card.tiers).flatMap(tier => tier.tooltips);
       const invalidTooltips = tooltips.filter(tooltip => tooltip.includes('{'));
 
-      if (invalidTooltips.length > 0 && !disabledItemIds.includes(card.id)) {
+      if (invalidTooltips.length > 0) {
+        invalidCards.push({
+          name: card.name,
+          tooltips: invalidTooltips,
+        });
+      }
+    }
+
+    // If no invalid tooltips are found, make the assertion to confirm
+    expect(invalidCards).toEqual([]);
+  });
+
+  it('should contain no tooltips with NaN', () => {
+    const invalidCards = [];
+
+    for (const card of [...itemCards, ...skillCards]) {
+      const tooltips = Object.values(card.tiers).flatMap(tier => tier.tooltips);
+      const invalidTooltips = tooltips.filter(tooltip => tooltip.includes('NaN'));
+
+      if (invalidTooltips.length > 0) {
         invalidCards.push({
           name: card.name,
           tooltips: invalidTooltips,

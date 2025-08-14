@@ -17665,13 +17665,13 @@ const data: ParsedItemCard[] = [
       },
       "Gold": {
         "tooltips": [
-          "At the start of each fight, Enchant NaN other Non-Enchanted items for the fight.",
+          "At the start of each fight, Enchant 2 other Non-Enchanted items for the fight.",
           "When this is transformed, Enchant it."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "At the start of each fight, Enchant NaN other Non-Enchanted items for the fight.",
+          "At the start of each fight, Enchant 3 other Non-Enchanted items for the fight.",
           "When this is transformed, Enchant it."
         ]
       },
@@ -17759,7 +17759,7 @@ const data: ParsedItemCard[] = [
     ],
     "quests": [],
     "unifiedTooltips": [
-      "At the start of each fight, Enchant NaN other Non-Enchanted items for the fight.",
+      "At the start of each fight, Enchant (2/3) other Non-Enchanted items for the fight.",
       "When this is transformed, Enchant it."
     ]
   },
