@@ -5102,8 +5102,48 @@
     "Id": "f4bc9c3d-ce22-4fd8-9b7f-27214fed9f1d",
     "InternalName": "Cloudtop Admiral",
     "Health": -1,
-    "Items": [],
-    "Skills": []
+    "Items": [
+      {
+        "EnchantmentType": null,
+        "Id": "2ed1cf1e-8b89-490d-8ae8-7ea0662a4334",
+        "Tier": "Gold"
+      },
+      {
+        "EnchantmentType": null,
+        "Id": "6870c295-6a4d-4175-b378-c961df9933de",
+        "Tier": "Gold"
+      },
+      {
+        "EnchantmentType": null,
+        "Id": "7cc657b3-6a37-427a-b14e-7e12c3a2277a",
+        "Tier": "Silver"
+      },
+      {
+        "EnchantmentType": null,
+        "Id": "e793c9e1-072d-412f-8761-2dee7276fb89",
+        "Tier": "Gold"
+      },
+      {
+        "EnchantmentType": null,
+        "Id": "f7fede6f-1b60-47f4-b4bb-bca041d498dd",
+        "Tier": "Legendary"
+      },
+      {
+        "EnchantmentType": null,
+        "Id": "1894ef72-327a-4b36-b336-1a58d2366492",
+        "Tier": "Gold"
+      }
+    ],
+    "Skills": [
+      {
+        "Id": "9720fe19-9848-4520-ae94-e19e27b9c30f",
+        "Tier": "Diamond"
+      },
+      {
+        "Id": "fbbfbef7-8fe4-4ac0-81fa-09afb59e0fcc",
+        "Tier": "Diamond"
+      }
+    ]
   },
   "2b68a81d-ea7e-401b-a374-77529470383f": {
     "Id": "2b68a81d-ea7e-401b-a374-77529470383f",

@@ -107,7 +107,7 @@
                 <span class="text-green-500">Updated!</span>
             </li>
             <li>- Cloudtop Officer</li>
-            <li>- Cloudtop Admiral</li>
+            <li>- Cloudtop Admiral (Need HP only)</li>
             <li>- Tortuga (Need HP only)</li>
             <li>
                 <span class="line-through">- Test Subject Alpha</span>
