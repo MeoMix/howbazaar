@@ -121,7 +121,10 @@
                 <span class="text-green-500">Updated!</span>
             </li>
             <li>- Rex Spex (Need HP only)</li>
-            <li>- Dooltron</li>
+            <li>
+                <span class="line-through">- Dooltron</span>
+                <span class="text-green-500">Updated!</span>
+            </li>
             <li>- Awakened Primordial</li>
         </ul>
     </div>
