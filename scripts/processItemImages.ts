@@ -21,6 +21,7 @@ const args = process.argv.slice(2);
 const shouldExtract = !args.includes('--no-extract');
 
 const nameToFileMap: { [key: string]: string } = {
+    'CloudWhisp': 'CloudWisp',
     'ClockworkDisc': 'Disc',
     'Daggerwing': 'Dreadnought',
     'InFlightMeal': 'InFlightDinner',
@@ -264,6 +265,7 @@ function findMatchingFile(expectedName: string, imageFiles: string[]): string | 
             file.includes('FX_') ||
             file.includes('_FX') ||
             file.includes('_Mask') ||
+            file.includes('flowmap') ||
             file.endsWith('Mask.jpeg') ||
             file.endsWith('Portrait.jpeg') ||
             file.endsWith('PortraitBG.jpeg') ||
