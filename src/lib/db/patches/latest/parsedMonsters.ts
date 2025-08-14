@@ -4452,8 +4452,43 @@ const data: ParsedMonster[] = [
   {
     "id": "e1c287a8-4d9b-4ab4-899a-eb54d1446d6f",
     "health": -1,
-    "items": [],
-    "skills": []
+    "items": [
+      {
+        "id": "8caf721d-fe85-4a67-a97a-947788a100c5",
+        "tierType": "Gold"
+      },
+      {
+        "id": "e1c287a8-4d9b-4ab4-899a-eb54d1446d6f",
+        "tierType": "Gold"
+      },
+      {
+        "id": "55e65c01-8279-485d-9d63-79ec0c2129cb",
+        "tierType": "Gold"
+      },
+      {
+        "id": "77d06221-da32-4545-acb5-2976b2efa8de",
+        "tierType": "Gold",
+        "enchantmentType": "Fiery"
+      },
+      {
+        "id": "3191df3b-7e7d-4df9-9395-6fffd4207f6d",
+        "tierType": "Gold"
+      },
+      {
+        "id": "3de8a2de-9ae9-4e68-ac2a-0987a7fa8717",
+        "tierType": "Gold"
+      }
+    ],
+    "skills": [
+      {
+        "id": "cb4e5a04-ef5f-40e7-bc1c-bd90baf2f5d0",
+        "tierType": "Gold"
+      },
+      {
+        "id": "32e45628-c864-4f99-a2e8-94efe6f37cdc",
+        "tierType": "Gold"
+      }
+    ]
   },
   {
     "id": "25f54463-2cca-419a-b0e8-8f5297896992",

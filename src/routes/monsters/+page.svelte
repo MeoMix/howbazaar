@@ -95,7 +95,7 @@
             <li>- Tortuga (Need HP only)</li>
             <li>- Test Subject Alpha</li>
             <li>- Infernal Dreadnought (Need HP only)</li>
-            <li>- Rex Spex</li>
+            <li>- Rex Spex (Need HP only)</li>
             <li>- Dooltron</li>
             <li>- Awakened Primordial</li>
         </ul>
