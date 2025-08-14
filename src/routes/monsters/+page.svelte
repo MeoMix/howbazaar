@@ -85,7 +85,7 @@
         I still need the changes for these new monsters:
         <br />
         <ul>
-            <li>- Product Demostrator</li>
+            <li>- Product Demostrator (Need Skill Name Only)</li>
             <li>
                 <span class="line-through">- Grandfather Klok</span>
                 <span class="text-green-500">Updated!</span>

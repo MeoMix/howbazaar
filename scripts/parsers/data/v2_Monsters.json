@@ -5020,9 +5020,48 @@
   "35d68424-87ba-4d8a-8776-8d8302a425f9": {
     "Id": "35d68424-87ba-4d8a-8776-8d8302a425f9",
     "InternalName": "Product Demonstrator",
-    "Health": -1,
-    "Items": [],
-    "Skills": []
+    "Health": 600,
+    "Items": [
+      {
+        "EnchantmentType": null,
+        "Id": "d45bb1dd-5342-4c69-b7fe-f56d3fac7d1f",
+        "Tier": "Silver"
+      },
+      {
+        "EnchantmentType": null,
+        "Id": "10ff0767-2cf5-49f5-ae5d-bea93d1d3672",
+        "Tier": "Silver"
+      },
+      {
+        "EnchantmentType": null,
+        "Id": "5756ecfd-c374-4602-8bc9-cd0d99e1ab70",
+        "Tier": "Gold"
+      },
+      {
+        "EnchantmentType": null,
+        "Id": "b5f82e87-ffb1-4cc6-a3b3-7193b5f8862a",
+        "Tier": "Silver"
+      },
+      {
+        "EnchantmentType": null,
+        "Id": "78e3ec16-b331-4aa7-a54c-13b2f5345e59",
+        "Tier": "Silver"
+      },
+      {
+        "EnchantmentType": null,
+        "Id": "31dfbc9c-1231-4781-a0a9-a7e3cd458fa8",
+        "Tier": "Silver"
+      },
+      {
+        "EnchantmentType": null,
+        "Id": "9c3f0308-8050-4721-8fed-29e817596827",
+        "Tier": "Silver"
+      }
+    ],
+    "Skills": [{
+      "Id": "",
+      "Tier": "Gold"
+    }]
   },
   "de126a7a-a0bc-4a6f-96f0-442920104fcf": {
     "Id": "de126a7a-a0bc-4a6f-96f0-442920104fcf",
