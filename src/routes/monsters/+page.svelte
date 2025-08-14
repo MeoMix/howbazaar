@@ -44,9 +44,9 @@
     class="w-full max-w-full sm:max-w-(--breakpoint-sm) md:max-w-(--breakpoint-md) lg:max-w-(--breakpoint-lg) xl:max-w-(--breakpoint-xl)"
 >
     <div class="text-lg mt-4 text-red-500">
-        I haven't updated monsters for the 5.0.0 Stelle release yet. Please DM
-        me on Discord with screenshots of missing/incorrect encounters. Thank
-        you!
+        I have updated most monster encounters for the 5.0.0 Stelle release.
+        Please DM me on Discord with screenshots of missing/incorrect
+        encounters. Thank you!
         <br />
         <br />
 
@@ -63,63 +63,8 @@
             <li>- Names and Tier of all items.</li>
         </ul>
 
-        I still need the changes for these previously existing monsters:
-        <br />
-        <ul>
-            <li>
-                <span class="line-through">- Haunted Kimono</span>
-                <span class="text-green-500">Updated!</span>
-            </li>
-            <li>
-                <span class="line-through">- Rogue Scrapper</span>
-                <span class="text-green-500">Updated!</span>
-            </li>
-            <li>
-                <span class="line-through">- Boarrior</span>
-                <span class="text-green-500">Updated!</span>
-            </li>
-            <li>
-                <span class="line-through">- Eccentric Etherwright</span>
-                <span class="text-green-500">Updated!</span>
-            </li>
-            <li>
-                <span class="line-through">- Giant Mosquito</span>
-                <span class="text-green-500">Updated!</span>
-            </li>
-            <li>- Street Gamer</li>
-            <li>
-                <span class="line-through">- Foundation Weeper</span>
-                <span class="text-green-500">Updated!</span>
-            </li>
-            <li>
-                <span class="line-through">- Retiree</span>
-                <span class="text-green-500">Updated!</span>
-            </li>
-            <li>
-                <span class="line-through">-Dire Mosquito</span>
-                <span class="text-green-500">Updated!</span>
-            </li>
-            <li>
-                <span class="line-through">- Sergeant Suds</span>
-                <span class="text-green-500">Updated!</span>
-            </li>
-            <li>
-                <span class="line-through">- Ghost Pepper</span>
-                <span class="text-green-500">Updated!</span>
-            </li>
-            <li>
-                <span class="line-through">- Thug</span>
-                <span class="text-green-500">Updated!</span>
-            </li>
-            <li>
-                <span class="line-through">- Lord of the Wastes</span>
-                <span class="text-green-500">Updated!</span>
-            </li>
-        </ul>
-
-        <strong class="text-green-500">
-            All new monster encounters have been added!
-        </strong>
+        The only encounter still out-of-date is Street Gamer. Please send me
+        info on it!
     </div>
 
     <MonsterFilters
