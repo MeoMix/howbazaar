@@ -30,7 +30,6 @@
     let isMatchAnyHero = $state(false);
     let searchText = $state("");
     let monsterDropsOnlyState = $state("unset" as TriState);
-    let latestExpansionsOnlyState = $state("unset" as TriState);
     let sortOptions: { name: string; value: SkillSortOption }[] = [
         {
             value: "name",
@@ -77,7 +76,6 @@
         {isMatchAnyTag}
         {isMatchAnyHero}
         {monsterDropsOnlyState}
-        {latestExpansionsOnlyState}
         isHiddenWhenEmpty={false}
     />
 </div>
