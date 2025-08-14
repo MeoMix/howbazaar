@@ -4123,6 +4123,46 @@ const data: ParsedSkillCard[] = [
     ]
   },
   {
+    "id": "43b5e350-ec7f-4236-aaa4-fbcd0c7721de",
+    "name": "Product Showcase",
+    "startingTier": "Gold",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": [
+          "When one of your items runs out of ammo, charge items adjacent to it 1 second(s)."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "When one of your items runs out of ammo, charge items adjacent to it 2 second(s)."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "Ammo",
+      "Charge"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Common"
+    ],
+    "artKey": "Icon_Skill_MON_ProductShowcase",
+    "unifiedTooltips": [
+      "When one of your items runs out of ammo, charge items adjacent to it (1/2) second(s)."
+    ]
+  },
+  {
     "id": "d08258b5-be49-410e-a650-4dfa01b35662",
     "name": "Invigorating Cold",
     "startingTier": "Silver",

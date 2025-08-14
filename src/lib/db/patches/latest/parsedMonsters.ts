@@ -4294,7 +4294,7 @@ const data: ParsedMonster[] = [
     ],
     "skills": [
       {
-        "id": "",
+        "id": "43b5e350-ec7f-4236-aaa4-fbcd0c7721de",
         "tierType": "Gold"
       }
     ]

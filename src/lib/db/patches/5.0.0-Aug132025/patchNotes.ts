@@ -101369,6 +101369,55 @@ const data: PatchNotes = {
         }
       ]
     },
+    "43b5e350-ec7f-4236-aaa4-fbcd0c7721de": {
+      "metadata": {
+        "id": "43b5e350-ec7f-4236-aaa4-fbcd0c7721de",
+        "name": "Product Showcase",
+        "previousStartingTier": "Gold",
+        "currentStartingTier": "Gold",
+        "heroes": [
+          "Common"
+        ],
+        "currentSize": "Medium",
+        "type": "skill"
+      },
+      "name": {
+        "oldValue": null,
+        "newValue": "Product Showcase"
+      },
+      "startingTier": {
+        "oldValue": null,
+        "newValue": "Gold"
+      },
+      "tags": {
+        "added": [],
+        "removed": []
+      },
+      "hiddenTags": {
+        "added": [
+          "Ammo",
+          "Charge"
+        ],
+        "removed": []
+      },
+      "size": {
+        "oldValue": null,
+        "newValue": "Medium"
+      },
+      "heroes": {
+        "added": [
+          "Common"
+        ],
+        "removed": []
+      },
+      "tooltips": [
+        {
+          "index": 0,
+          "oldValue": null,
+          "newValue": "When one of your items runs out of ammo, charge items adjacent to it (1/2) second(s)."
+        }
+      ]
+    },
     "cb4e5a04-ef5f-40e7-bc1c-bd90baf2f5d0": {
       "metadata": {
         "id": "cb4e5a04-ef5f-40e7-bc1c-bd90baf2f5d0",
