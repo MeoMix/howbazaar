@@ -5094,8 +5094,37 @@
     "Id": "3c433f32-5070-4f57-82d3-9b4347da7aa3",
     "InternalName": "Infernal Dreadnought",
     "Health": -1,
-    "Items": [],
-    "Skills": []
+    "Items": [
+      {
+        "EnchantmentType": null,
+        "Id": "3a9f3d16-9022-4709-9903-8b08b1f918dc",
+        "Tier": "Gold"
+      },
+      {
+        "EnchantmentType": null,
+        "Id": "94144b09-eb5b-438b-a0fe-3d7494b84c84",
+        "Tier": "Gold"
+      },
+      {
+        "EnchantmentType": null,
+        "Id": "cfca6975-d74c-41b1-a179-ae796058ca18",
+        "Tier": "Gold"
+      },
+      {
+        "EnchantmentType": null,
+        "Id": "314136b6-8ee8-4ac9-8560-de5249c96e3e",
+        "Tier": "Gold"
+      },
+      {
+        "EnchantmentType": null,
+        "Id": "a89a0b5d-bbbb-4818-b002-1ad0156156f7",
+        "Tier": "Gold"
+      }
+    ],
+    "Skills": [{
+      "Id": "5de1aaae-adb9-48a4-81fc-aff714956656",
+      "Tier": "Gold"
+    }]
   },
   "e1c287a8-4d9b-4ab4-899a-eb54d1446d6f": {
     "Id": "e1c287a8-4d9b-4ab4-899a-eb54d1446d6f",

@@ -88,7 +88,7 @@
             <li>- Cloudtop Admiral</li>
             <li>- Tortuga (Need HP only)</li>
             <li>- Test Subject Alpha</li>
-            <li>- Infernal Dreadnought</li>
+            <li>- Infernal Dreadnought (Need HP only)</li>
             <li>- Rex Spex</li>
             <li>- Dooltron</li>
             <li>- Awakened Primordial</li>
