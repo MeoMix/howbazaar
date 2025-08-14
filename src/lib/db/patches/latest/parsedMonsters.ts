@@ -1513,32 +1513,24 @@ const data: ParsedMonster[] = [
   },
   {
     "id": "2b0437f4-6977-4f84-aeb6-6545cbf5632d",
-    "health": 1550,
+    "health": 5700,
     "items": [
       {
         "id": "5a9bd869-4614-4edf-941d-5f44e0bb1519",
         "tierType": "Diamond"
       },
       {
-        "id": "5e17cfc3-25c0-4a74-8a33-07ee972e6f6e",
+        "id": "e37638c3-4e5c-472c-96f9-b503a86e0fe3",
         "tierType": "Gold",
         "enchantmentType": "Toxic"
       },
       {
-        "id": "20d85338-b625-4b9a-95a7-8a60805e061f",
-        "tierType": "Gold"
-      },
-      {
         "id": "d022cc12-8fe2-442c-af6e-165eb97ed055",
-        "tierType": "Silver"
-      },
-      {
-        "id": "c05828f1-39e6-47aa-9041-216dfa60d83d",
         "tierType": "Gold"
       },
       {
-        "id": "bede53aa-8d47-4d6c-b302-2e684e8c3fcf",
-        "tierType": "Silver"
+        "id": "31b35938-9402-4990-b4d9-473ce5887af9",
+        "tierType": "Gold"
       },
       {
         "id": "3b924a0a-f423-4286-8d08-9ade57b2ebae",
@@ -1552,8 +1544,16 @@ const data: ParsedMonster[] = [
         "tierType": "Diamond"
       },
       {
+        "id": "6b47d5d7-cd43-4efb-9e3b-5ee3c07a7f7d",
+        "tierType": "Diamond"
+      },
+      {
+        "id": "1c40716a-d125-4deb-8ada-8b177c5ff071",
+        "tierType": "Diamond"
+      },
+      {
         "id": "fbbfbef7-8fe4-4ac0-81fa-09afb59e0fcc",
-        "tierType": "Silver"
+        "tierType": "Diamond"
       }
     ]
   },

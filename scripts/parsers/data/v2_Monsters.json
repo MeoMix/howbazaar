@@ -1775,7 +1775,7 @@
   "2b0437f4-6977-4f84-aeb6-6545cbf5632d": {
     "Id": "2b0437f4-6977-4f84-aeb6-6545cbf5632d",
     "InternalName": "Thug",
-    "Health": 1550,
+    "Health": 5700,
     "Items": [
       {
         "EnchantmentType": null,
@@ -1784,28 +1784,18 @@
       },
       {
         "EnchantmentType": "Toxic",
-        "Id": "5e17cfc3-25c0-4a74-8a33-07ee972e6f6e",
-        "Tier": "Gold"
-      },
-      {
-        "EnchantmentType": null,
-        "Id": "20d85338-b625-4b9a-95a7-8a60805e061f",
+        "Id": "e37638c3-4e5c-472c-96f9-b503a86e0fe3",
         "Tier": "Gold"
       },
       {
         "EnchantmentType": null,
         "Id": "d022cc12-8fe2-442c-af6e-165eb97ed055",
-        "Tier": "Silver"
-      },
-      {
-        "EnchantmentType": null,
-        "Id": "c05828f1-39e6-47aa-9041-216dfa60d83d",
         "Tier": "Gold"
       },
       {
         "EnchantmentType": null,
-        "Id": "bede53aa-8d47-4d6c-b302-2e684e8c3fcf",
-        "Tier": "Silver"
+        "Id": "31b35938-9402-4990-b4d9-473ce5887af9",
+        "Tier": "Gold"
       },
       {
         "EnchantmentType": "Toxic",
@@ -1819,8 +1809,16 @@
         "Tier": "Diamond"
       },
       {
+        "Id": "6b47d5d7-cd43-4efb-9e3b-5ee3c07a7f7d",
+        "Tier": "Diamond"
+      },
+      {
+        "Id": "1c40716a-d125-4deb-8ada-8b177c5ff071",
+        "Tier": "Diamond"
+      },
+      {
         "Id": "fbbfbef7-8fe4-4ac0-81fa-09afb59e0fcc",
-        "Tier": "Silver"
+        "Tier": "Diamond"
       }
     ]
   },

@@ -101,7 +101,10 @@
                 <span class="line-through">- Ghost Pepper</span>
                 <span class="text-green-500">Updated!</span>
             </li>
-            <li>- Thug</li>
+            <li>
+                <span class="line-through">- Thug</span>
+                <span class="text-green-500">Updated!</span>
+            </li>
             <li>
                 <span class="line-through">- Lord of the Wastes</span>
                 <span class="text-green-500">Updated!</span>
