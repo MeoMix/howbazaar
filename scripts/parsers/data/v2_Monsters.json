@@ -2116,13 +2116,8 @@
   "b93f5b44-ba9f-4196-a94e-c5de17ab5c5d": {
     "Id": "b93f5b44-ba9f-4196-a94e-c5de17ab5c5d",
     "InternalName": "Boarrior",
-    "Health": 400,
+    "Health": 350,
     "Items": [
-      {
-        "EnchantmentType": null,
-        "Id": "77c8ef2d-62c8-4214-993d-648915c93e83",
-        "Tier": "Legendary"
-      },
       {
         "EnchantmentType": null,
         "Id": "6ba3778c-e760-44f3-b3b4-a4b4ca267cc2",
@@ -2145,13 +2140,13 @@
       },
       {
         "EnchantmentType": null,
-        "Id": "b02a2b57-da9c-4ad6-88ac-219b3bfec103",
-        "Tier": "Silver"
+        "Id": "9d289951-bda7-4f74-a5cf-dbe350c0cae5",
+        "Tier": "Bronze"
       },
       {
         "EnchantmentType": null,
-        "Id": "9d289951-bda7-4f74-a5cf-dbe350c0cae5",
-        "Tier": "Bronze"
+        "Id": "77c8ef2d-62c8-4214-993d-648915c93e83",
+        "Tier": "Legendary"
       },
       {
         "EnchantmentType": null,
