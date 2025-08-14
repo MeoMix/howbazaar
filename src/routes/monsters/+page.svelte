@@ -83,7 +83,7 @@
         <br />
         <ul>
             <li>- Product Demostrator</li>
-            <li>- Grandfather Klok</li>
+            <li>- Grandfather Klok (Need HP only)</li>
             <li>- Cloudtop Officer</li>
             <li>- Cloudtop Admiral</li>
             <li>- Tortuga (Need HP only)</li>

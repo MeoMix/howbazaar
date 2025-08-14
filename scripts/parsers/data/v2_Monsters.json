@@ -408,7 +408,7 @@
       {
         "Id": "6c3d41e4-1ca7-4be5-b0e2-6cadbbd2bd27",
         "Tier": "Gold"
-      },     
+      },
       {
         "Id": "544be6e9-ff3e-4cb6-9759-498ac2d24d71",
         "Tier": "Gold"
@@ -5014,8 +5014,48 @@
     "Id": "de126a7a-a0bc-4a6f-96f0-442920104fcf",
     "InternalName": "Grandfather Klok",
     "Health": -1,
-    "Items": [],
-    "Skills": []
+    "Items": [
+      {
+        "EnchantmentType": null,
+        "Id": "189c31f3-1641-4e05-bf78-800e71ffc0e7",
+        "Tier": "Silver"
+      },
+      {
+        "EnchantmentType": null,
+        "Id": "84a27aa9-5606-4418-a2dd-d6e4065e81c9",
+        "Tier": "Silver"
+      },
+      {
+        "EnchantmentType": null,
+        "Id": "ae6ddbd0-d007-482a-8d2a-d3f6a5a1b29e",
+        "Tier": "Gold"
+      },
+      {
+        "EnchantmentType": null,
+        "Id": "ca77281c-f912-4db3-86ce-64842a4ccdaa",
+        "Tier": "Silver"
+      },
+      {
+        "EnchantmentType": null,
+        "Id": "86769097-271e-46ee-8d42-317c6d8a7a09",
+        "Tier": "Gold"
+      },
+      {
+        "EnchantmentType": null,
+        "Id": "3310f7e3-025e-4212-9e95-756fe3af8ab1",
+        "Tier": "Silver"
+      }
+    ],
+    "Skills": [
+      {
+        "Id": "b67ef429-b97c-4e43-9332-2aea1d82db10",
+        "Tier": "Silver"
+      },
+      {
+        "Id": "b76a00ad-8034-4ad8-9f55-9fdc279cf60e",
+        "Tier": "Silver"
+      }
+    ]
   },
   "78c335a6-42bc-45e2-a8e7-e9a1dce7502d": {
     "Id": "78c335a6-42bc-45e2-a8e7-e9a1dce7502d",
@@ -5121,10 +5161,12 @@
         "Tier": "Gold"
       }
     ],
-    "Skills": [{
-      "Id": "5de1aaae-adb9-48a4-81fc-aff714956656",
-      "Tier": "Gold"
-    }]
+    "Skills": [
+      {
+        "Id": "5de1aaae-adb9-48a4-81fc-aff714956656",
+        "Tier": "Gold"
+      }
+    ]
   },
   "e1c287a8-4d9b-4ab4-899a-eb54d1446d6f": {
     "Id": "e1c287a8-4d9b-4ab4-899a-eb54d1446d6f",
