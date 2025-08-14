@@ -5182,7 +5182,7 @@
   "2b68a81d-ea7e-401b-a374-77529470383f": {
     "Id": "2b68a81d-ea7e-401b-a374-77529470383f",
     "InternalName": "Tortuga",
-    "Health": -1,
+    "Health": 3050,
     "Items": [
       {
         "EnchantmentType": null,

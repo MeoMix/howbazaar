@@ -117,47 +117,7 @@
             </li>
         </ul>
 
-        I still need the changes for these new monsters:
-        <br />
-        <ul>
-            <li>
-                <span class="line-through">- Product Demostrator</span>
-                <span class="text-green-500">Updated!</span>
-            </li>
-            <li>
-                <span class="line-through">- Grandfather Klok</span>
-                <span class="text-green-500">Updated!</span>
-            </li>
-            <li>
-                <span class="line-through">- Cloudtop Officer</span>
-                <span class="text-green-500">Updated!</span>
-            </li>
-            <li>
-                <span class="line-through">- Cloudtop Admiral</span>
-                <span class="text-green-500">Updated!</span>
-            </li>
-            <li>- Tortuga (Need HP only)</li>
-            <li>
-                <span class="line-through">- Test Subject Alpha</span>
-                <span class="text-green-500">Updated!</span>
-            </li>
-            <li>
-                <span class="line-through">- Infernal Dreadnought</span>
-                <span class="text-green-500">Updated!</span>
-            </li>
-            <li>
-                <span class="line-through">- Rex Spex</span>
-                <span class="text-green-500">Updated!</span>
-            </li>
-            <li>
-                <span class="line-through">- Dooltron</span>
-                <span class="text-green-500">Updated!</span>
-            </li>
-            <li>
-                <span class="line-through">- Awakened Primordial</span>
-                <span class="text-green-500">Updated!</span>
-            </li>
-        </ul>
+        <strong>All new monster encounters have been added!</strong>
     </div>
 
     <MonsterFilters
