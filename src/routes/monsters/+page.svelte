@@ -43,28 +43,8 @@
 <div
     class="w-full max-w-full sm:max-w-(--breakpoint-sm) md:max-w-(--breakpoint-md) lg:max-w-(--breakpoint-lg) xl:max-w-(--breakpoint-xl)"
 >
-    <div class="text-lg mt-4 text-red-500">
-        I have updated most monster encounters for the 5.0.0 Stelle release.
-        Please DM me on Discord with screenshots of missing/incorrect
-        encounters. Thank you!
-        <br />
-        <br />
-
-        Ideally you would tell me this info:
-        <br />
-        <ul>
-            <li>- Monster HP</li>
-            <li>- Which day it appears on</li>
-            <li>
-                - Whether it appears in the first, second, or third slot for the
-                day's encounter.
-            </li>
-            <li>- Name and Tier of all skills.</li>
-            <li>- Names and Tier of all items.</li>
-        </ul>
-
-        The only encounter still out-of-date is Street Gamer. Please send me
-        info on it!
+    <div class="text-lg mt-4 text-green-500">
+        All encounters have been updated for the 5.0.0 Stelle release. Enjoy!
     </div>
 
     <MonsterFilters
