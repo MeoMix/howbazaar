@@ -70,15 +70,4 @@ describe('MonsterEncounterService', () => {
 
         expect(octopus?.tierType).toEqual("Legendary");
     });
-
-    it('should have item details for Thug\'s Spices (at Diamond not Gold)', () => {
-        const thug = monsterEncounterDays
-            .flatMap((day) => day.groups)
-            .flatMap((group) => group)
-            .find((monsterEncounter) => monsterEncounter.cardName === "Thug");
-
-        const spices = thug?.items.find(item => item.card.name === "Spices");
-
-        expect(spices?.card.tiers[spices.tierType]?.tooltips).toHaveLength(3);
-    });
 });

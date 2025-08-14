@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import type { ParsedItemCard, ParsedSkillCard, TierType, Tag, HiddenTag, Size, Hero, EnchantmentType, CorePackId, CustomTag } from '../src/lib/types';
+import type { ParsedItemCard, ParsedSkillCard, TierType, Tag, HiddenTag, Size, Hero, EnchantmentType, CustomTag, ClientSideQuest } from '../src/lib/types';
 import { getPatchNotes } from './generatePatchNotes';
 
 // Helper function to create tiers object
@@ -25,7 +25,8 @@ const createMockItem = (overrides: Partial<ParsedItemCard> = {}): ParsedItemCard
         unifiedTooltips: ['Deal 10 damage'],
         enchantments: [],
         tiers: createTiers(),
-        packId: 'Core' as CorePackId
+        // TODO: shouldn't be ClientSideQuest - just Quest
+        quests: [] as ClientSideQuest[],
     };
     return structuredClone({ ...defaultContent, ...overrides });
 };
@@ -43,7 +44,6 @@ const createMockSkill = (overrides: Partial<ParsedSkillCard> = {}): ParsedSkillC
         heroes: ['Pygmalien', 'Common'] as Hero[],
         unifiedTooltips: ['Your weapons deal +5 damage'],
         tiers: createTiers(),
-        packId: 'Core' as CorePackId,
         artKey: 'Icon_Skill_Test.png'
     };
     return structuredClone({ ...defaultContent, ...overrides });
@@ -143,8 +143,10 @@ describe('getPatchNotes', () => {
                 currentStartingTier: 'Bronze'
             },
             tooltips: [
-                { index: 0, oldValue: 'Deal 10 damage', newValue: 'Deal 15 damage' },
-                { index: 1, oldValue: 'Gain 5 shield', newValue: 'Gain 10 shield' }
+                { index: 0, oldValue: 'Deal 10 damage', newValue: null },
+                { index: 1, oldValue: 'Gain 5 shield', newValue: null },
+                { index: 0, oldValue: null, newValue: 'Deal 15 damage' },
+                { index: 1, oldValue: null, newValue: 'Gain 10 shield' }
             ],
             enchantments: {
                 added: [],
@@ -152,7 +154,8 @@ describe('getPatchNotes', () => {
                 modified: [{
                     type: 'Toxic',
                     tooltipChanges: [
-                        { index: 0, oldValue: 'Deal 5 poison damage', newValue: 'Deal 10 poison damage' }
+                        { index: 0, oldValue: 'Deal 5 poison damage', newValue: null },
+                        { index: 0, oldValue: null, newValue: 'Deal 10 poison damage' }
                     ]
                 }]
             }
@@ -260,7 +263,8 @@ describe('getPatchNotes', () => {
                 removed: []
             },
             tooltips: [
-                { index: 0, oldValue: 'Your weapons deal +5 damage', newValue: 'Your weapons deal +10 damage' }
+                { index: 0, oldValue: 'Your weapons deal +5 damage', newValue: null },
+                { index: 0, oldValue: null, newValue: 'Your weapons deal +10 damage' }
             ]
         });
     });
@@ -316,7 +320,8 @@ describe('getPatchNotes', () => {
                 modified: [{
                     type: 'Toxic',
                     tooltipChanges: [
-                        { index: 0, oldValue: 'Deal 5 poison damage', newValue: 'Deal 10 poison damage' }
+                        { index: 0, oldValue: 'Deal 5 poison damage', newValue: null },
+                        { index: 0, oldValue: null, newValue: 'Deal 10 poison damage' }
                     ]
                 }]
             }
@@ -366,13 +371,15 @@ describe('getPatchNotes', () => {
                     {
                         type: 'Toxic',
                         tooltipChanges: [
-                            { index: 0, oldValue: 'Deal 5 poison damage', newValue: 'Deal 10 poison damage' }
+                            { index: 0, oldValue: 'Deal 5 poison damage', newValue: null },
+                            { index: 0, oldValue: null, newValue: 'Deal 10 poison damage' }
                         ]
                     },
                     {
                         type: 'Frozen',
                         tooltipChanges: [
-                            { index: 0, oldValue: 'Gain 3 frost shield', newValue: 'Gain 5 frost shield' }
+                            { index: 0, oldValue: 'Gain 3 frost shield', newValue: null },
+                            { index: 0, oldValue: null, newValue: 'Gain 5 frost shield' }
                         ]
                     }
                 ]
