@@ -67,7 +67,10 @@
         <br />
         <ul>
             <li>- Haunted Kimono</li>
-            <li>- Rogue Scrapper</li>
+            <li>
+                <span class="line-through">- Rogue Scrapper</span>
+                <span class="text-green-500">Updated!</span>
+            </li>
             <li>- Boarrior</li>
             <li>
                 <span class="line-through">- Eccentric Etherwright</span>

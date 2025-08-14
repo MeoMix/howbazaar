@@ -2622,7 +2622,7 @@
   "70e45a3a-3bf6-4097-aa14-be9e7d794914": {
     "Id": "70e45a3a-3bf6-4097-aa14-be9e7d794914",
     "InternalName": "Rogue Scrapper (Bronze)",
-    "Health": 350,
+    "Health": 300,
     "Items": [
       {
         "EnchantmentType": null,
@@ -2647,7 +2647,7 @@
       {
         "EnchantmentType": null,
         "Id": "1bdbc6f6-2690-445a-877e-90dbbd5e4658",
-        "Tier": "Silver"
+        "Tier": "Bronze"
       },
       {
         "EnchantmentType": null,
@@ -2665,7 +2665,7 @@
   "1eabe08b-2949-407d-b22d-c6e579e0cd14": {
     "Id": "1eabe08b-2949-407d-b22d-c6e579e0cd14",
     "InternalName": "Rogue Scrapper (Silver)",
-    "Health": 350,
+    "Health": 300,
     "Items": [
       {
         "EnchantmentType": null,
@@ -2690,7 +2690,7 @@
       {
         "EnchantmentType": null,
         "Id": "1bdbc6f6-2690-445a-877e-90dbbd5e4658",
-        "Tier": "Silver"
+        "Tier": "Bronze"
       },
       {
         "EnchantmentType": null,
