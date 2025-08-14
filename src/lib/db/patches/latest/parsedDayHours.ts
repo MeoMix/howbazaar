@@ -154,7 +154,8 @@ const data: ParsedDayHour[] = [
       {
         "ids": [
           "38936647-a688-49d1-8e5c-9c2c79f18a18",
-          "325c88c3-9496-44bf-b900-4adf1f84bf2f"
+          "325c88c3-9496-44bf-b900-4adf1f84bf2f",
+          "c69bf8e8-944c-4b42-b59e-8ad568e0d3f7"
         ]
       }
     ]
@@ -366,8 +367,7 @@ const data: ParsedDayHour[] = [
     "spawnGroups": [
       {
         "ids": [
-          "289ff978-dd65-4484-b905-8ee16d28033c",
-          "c69bf8e8-944c-4b42-b59e-8ad568e0d3f7"
+          "289ff978-dd65-4484-b905-8ee16d28033c"
         ]
       },
       {

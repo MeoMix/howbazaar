@@ -2566,7 +2566,7 @@
   "c69bf8e8-944c-4b42-b59e-8ad568e0d3f7": {
     "Id": "c69bf8e8-944c-4b42-b59e-8ad568e0d3f7",
     "InternalName": "Giant Mosquito",
-    "Health": 200,
+    "Health": 700,
     "Items": [
       {
         "EnchantmentType": null,
@@ -2580,8 +2580,23 @@
       },
       {
         "EnchantmentType": null,
+        "Id": "ffcc9b4e-24f2-479b-ab80-7bfbaec664f2",
+        "Tier": "Silver"
+      },
+      {
+        "EnchantmentType": null,
+        "Id": "ffcc9b4e-24f2-479b-ab80-7bfbaec664f2",
+        "Tier": "Silver"
+      },
+      {
+        "EnchantmentType": null,
         "Id": "26ddca65-5309-4600-88f7-1eb5ffbb5788",
-        "Tier": "Bronze"
+        "Tier": "Silver"
+      },
+      {
+        "EnchantmentType": null,
+        "Id": "95640018-a5d3-4119-8c4f-5509e161c689",
+        "Tier": "Silver"
       },
       {
         "EnchantmentType": null,
@@ -2590,6 +2605,10 @@
       }
     ],
     "Skills": [
+      {
+        "Id": "0526054f-98da-4e95-be68-d25b26bb0fe3",
+        "Tier": "Silver"
+      },
       {
         "Id": "d5b180a2-9dfa-43e3-bfb9-3e15dac0398e",
         "Tier": "Bronze"

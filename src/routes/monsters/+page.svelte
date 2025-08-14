@@ -54,12 +54,13 @@
         <br />
         <ul>
             <li>- Monster HP</li>
+            <li>- Which day it appears on</li>
             <li>
                 - Whether it appears in the first, second, or third slot for the
                 day's encounter.
             </li>
-            <li>- Names of all skills.</li>
-            <li>- Names of all items.</li>
+            <li>- Name and Tier of all skills.</li>
+            <li>- Names and Tier of all items.</li>
         </ul>
 
         I still need the changes for these previously existing monsters:
@@ -69,7 +70,10 @@
             <li>- Rogue Scrapper</li>
             <li>- Boarrior</li>
             <li>- Eccentric Etherwright</li>
-            <li>- Giant Mosquito</li>
+            <li>
+                <span class="line-through">- Giant Mosquito</span>
+                <span class="text-green-500">Updated!</span>
+            </li>
             <li>- Street Gamer</li>
             <li>- Foundation Weeper</li>
             <li>
