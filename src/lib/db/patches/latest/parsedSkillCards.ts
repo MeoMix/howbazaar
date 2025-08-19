@@ -1208,17 +1208,17 @@ const data: ParsedSkillCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "Your items have +2% crit chance. When you start a fight, increase this bonus by +2%."
+          "Your items have +2% Crit Chance. When you start a fight, increase this bonus by +2%."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Your items have +2% crit chance. When you start a fight, increase this bonus by +4%."
+          "Your items have +2% Crit Chance. When you start a fight, increase this bonus by +4%."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Your items have +2% crit chance. When you start a fight, increase this bonus by +6%."
+          "Your items have +2% Crit Chance. When you start a fight, increase this bonus by +6%."
         ]
       },
       "Legendary": {
@@ -1236,7 +1236,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_Tinkerer.png",
     "unifiedTooltips": [
-      "Your items have +2% crit chance. When you start a fight, increase this bonus by (+2%/+4%/+6%)."
+      "Your items have +2% Crit Chance. When you start a fight, increase this bonus by (+2%/+4%/+6%)."
     ]
   },
   {
@@ -2723,7 +2723,7 @@ const data: ParsedSkillCard[] = [
       },
       "Diamond": {
         "tooltips": [
-          "When you Burn, charge a Shield item 1 second(s)."
+          "When you Burn, Charge a Shield item 1 second(s)."
         ]
       },
       "Legendary": {
@@ -2742,7 +2742,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_MON_VoidEnergy01.png",
     "unifiedTooltips": [
-      "When you Burn, charge a Shield item 1 second(s)."
+      "When you Burn, Charge a Shield item 1 second(s)."
     ]
   },
   {
@@ -3052,7 +3052,7 @@ const data: ParsedSkillCard[] = [
       },
       "Diamond": {
         "tooltips": [
-          "The first time you would be defeated each fight, destroy one of your Vehicles for the fight to Heal to half health."
+          "The first time you would be defeated each fight, destroy one of your Vehicles for the fight to Heal to half Health."
         ]
       },
       "Legendary": {
@@ -3071,7 +3071,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_STE_EjectEject",
     "unifiedTooltips": [
-      "The first time you would be defeated each fight, destroy one of your Vehicles for the fight to Heal to half health."
+      "The first time you would be defeated each fight, destroy one of your Vehicles for the fight to Heal to half Health."
     ]
   },
   {
@@ -4008,7 +4008,7 @@ const data: ParsedSkillCard[] = [
       },
       "Diamond": {
         "tooltips": [
-          "When you use a Small item, Haste a Burn, Poison or Freeze item 1000 for second."
+          "When you use a Small item, Haste a Burn, Poison or Freeze item for 1 second."
         ]
       },
       "Legendary": {
@@ -4029,7 +4029,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_MON_SlumberingPrimordial",
     "unifiedTooltips": [
-      "When you use a Small item, Haste a Burn, Poison or Freeze item 1000 for second."
+      "When you use a Small item, Haste a Burn, Poison or Freeze item for 1 second."
     ]
   },
   {
@@ -4213,12 +4213,12 @@ const data: ParsedSkillCard[] = [
       },
       "Gold": {
         "tooltips": [
-          "When one of your items runs out of ammo, charge items adjacent to it 1 second(s)."
+          "When one of your items runs out of ammo, Charge items adjacent to it 1 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "When one of your items runs out of ammo, charge items adjacent to it 2 second(s)."
+          "When one of your items runs out of ammo, Charge items adjacent to it 2 second(s)."
         ]
       },
       "Legendary": {
@@ -4237,7 +4237,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_MON_ProductShowcase",
     "unifiedTooltips": [
-      "When one of your items runs out of ammo, charge items adjacent to it (1/2) second(s)."
+      "When one of your items runs out of ammo, Charge items adjacent to it (1/2) second(s)."
     ]
   },
   {
@@ -6987,7 +6987,7 @@ const data: ParsedSkillCard[] = [
       },
       "Diamond": {
         "tooltips": [
-          "When you Heal or gain Regen, charge a Shield item 1 second(s)."
+          "When you Heal or gain Regen, Charge a Shield item 1 second(s)."
         ]
       },
       "Legendary": {
@@ -7006,7 +7006,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_MON_RoamingIsle_01",
     "unifiedTooltips": [
-      "When you Heal or gain Regen, charge a Shield item 1 second(s)."
+      "When you Heal or gain Regen, Charge a Shield item 1 second(s)."
     ]
   },
   {
@@ -7022,12 +7022,12 @@ const data: ParsedSkillCard[] = [
       },
       "Gold": {
         "tooltips": [
-          "The first 4 times you use a Weapon each fight, charge an item 1 second(s)."
+          "The first 4 times you use a Weapon each fight, Charge an item 1 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "The first 8 times you use a Weapon each fight, charge an item 1 second(s)."
+          "The first 8 times you use a Weapon each fight, Charge an item 1 second(s)."
         ]
       },
       "Legendary": {
@@ -7047,7 +7047,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_ExtraArms.png",
     "unifiedTooltips": [
-      "The first (4/8) times you use a Weapon each fight, charge an item 1 second(s)."
+      "The first (4/8) times you use a Weapon each fight, Charge an item 1 second(s)."
     ]
   },
   {
@@ -7145,12 +7145,12 @@ const data: ParsedSkillCard[] = [
       },
       "Gold": {
         "tooltips": [
-          "The first 4 times you use a Potion each fight, charge a Weapon or Burn item 1 second(s)."
+          "The first 4 times you use a Potion each fight, Charge a Weapon or Burn item 1 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "The first 8 times you use a Potion each fight, charge a Weapon or Burn item 1 second(s)."
+          "The first 8 times you use a Potion each fight, Charge a Weapon or Burn item 1 second(s)."
         ]
       },
       "Legendary": {
@@ -7173,7 +7173,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_Mak_ExplosivePotions.png",
     "unifiedTooltips": [
-      "The first (4/8) times you use a Potion each fight, charge a Weapon or Burn item 1 second(s)."
+      "The first (4/8) times you use a Potion each fight, Charge a Weapon or Burn item 1 second(s)."
     ]
   },
   {
@@ -8018,17 +8018,17 @@ const data: ParsedSkillCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "When you Haste, your items gain +1% crit chance for the fight."
+          "When you Haste, your items gain +1% Crit Chance for the fight."
         ]
       },
       "Gold": {
         "tooltips": [
-          "When you Haste, your items gain +2% crit chance for the fight."
+          "When you Haste, your items gain +2% Crit Chance for the fight."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "When you Haste, your items gain +3% crit chance for the fight."
+          "When you Haste, your items gain +3% Crit Chance for the fight."
         ]
       },
       "Legendary": {
@@ -8050,7 +8050,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_StaticAcceleration.png",
     "unifiedTooltips": [
-      "When you Haste, your items gain (+1%/+2%/+3%) crit chance for the fight."
+      "When you Haste, your items gain (+1%/+2%/+3%) Crit Chance for the fight."
     ]
   },
   {
@@ -8950,14 +8950,14 @@ const data: ParsedSkillCard[] = [
       },
       "Gold": {
         "tooltips": [
-          "When you use an item, your items gain 3% crit chance for the fight.",
-          "Your items have 100% less crit chance."
+          "When you use an item, your items gain 3% Crit Chance for the fight.",
+          "Your items have 100% less Crit Chance."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "When you use an item, your items gain 6% crit chance for the fight.",
-          "Your items have 100% less crit chance."
+          "When you use an item, your items gain 6% Crit Chance for the fight.",
+          "Your items have 100% less Crit Chance."
         ]
       },
       "Legendary": {
@@ -8980,8 +8980,8 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_BuildingCrescendo.png",
     "unifiedTooltips": [
-      "When you use an item, your items gain (3%/6%) crit chance for the fight.",
-      "Your items have 100% less crit chance."
+      "When you use an item, your items gain (3%/6%) Crit Chance for the fight.",
+      "Your items have 100% less Crit Chance."
     ]
   },
   {
@@ -11468,12 +11468,12 @@ const data: ParsedSkillCard[] = [
       },
       "Gold": {
         "tooltips": [
-          "The first 5 times you Poison each fight, charge a Burn item 1 second(s)."
+          "The first 5 times you Poison each fight, Charge a Burn item 1 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "The first 10 times you Poison each fight, charge a Burn item 1 second(s)."
+          "The first 10 times you Poison each fight, Charge a Burn item 1 second(s)."
         ]
       },
       "Legendary": {
@@ -11493,7 +11493,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_SickBurn.png",
     "unifiedTooltips": [
-      "The first (5/10) times you Poison each fight, charge a Burn item 1 second(s)."
+      "The first (5/10) times you Poison each fight, Charge a Burn item 1 second(s)."
     ]
   },
   {
@@ -11510,13 +11510,13 @@ const data: ParsedSkillCard[] = [
       "Gold": {
         "tooltips": [
           "Your items have +50% Crit Chance.",
-          "When you use an item, all your items lose 10% crit chance for the fight."
+          "When you use an item, all your items lose 10% Crit Chance for the fight."
         ]
       },
       "Diamond": {
         "tooltips": [
           "Your items have +75% Crit Chance.",
-          "When you use an item, all your items lose 10% crit chance for the fight."
+          "When you use an item, all your items lose 10% Crit Chance for the fight."
         ]
       },
       "Legendary": {
@@ -11540,7 +11540,7 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_FirstStrike.png",
     "unifiedTooltips": [
       "Your items have (+50%/+75%) Crit Chance.",
-      "When you use an item, all your items lose 10% crit chance for the fight."
+      "When you use an item, all your items lose 10% Crit Chance for the fight."
     ]
   },
   {
@@ -12050,12 +12050,12 @@ const data: ParsedSkillCard[] = [
       },
       "Gold": {
         "tooltips": [
-          "Your Large items have +25% crit chance"
+          "Your Large items have +25% Crit Chance"
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Your Large items have +50% crit chance"
+          "Your Large items have +50% Crit Chance"
         ]
       },
       "Legendary": {
@@ -12078,7 +12078,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_BigNumbers.png",
     "unifiedTooltips": [
-      "Your Large items have (+25%/+50%) crit chance"
+      "Your Large items have (+25%/+50%) Crit Chance"
     ]
   },
   {
