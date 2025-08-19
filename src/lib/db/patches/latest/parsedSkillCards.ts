@@ -12336,6 +12336,45 @@ const data: ParsedSkillCard[] = [
     ]
   },
   {
+    "id": "7f097b31-c29e-4082-a835-6d6457c2d536",
+    "name": "Start-Up Sequence",
+    "startingTier": "Diamond",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": []
+      },
+      "Diamond": {
+        "tooltips": [
+          "At the start of each fight, a Vehicle starts Flying."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Vehicle"
+    ],
+    "hiddenTags": [
+      "Flying"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Stelle"
+    ],
+    "artKey": "Icon_Skill_STE_StartUpSequence",
+    "unifiedTooltips": [
+      "At the start of each fight, a Vehicle starts Flying."
+    ]
+  },
+  {
     "id": "cf20ff77-7f51-42ca-8451-a3a1befe3d66",
     "name": "Above the Clouds",
     "startingTier": "Gold",
