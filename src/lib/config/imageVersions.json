@@ -29,7 +29,6 @@
         "b3c06ff9-f0e1-4527-81aa-2f71d7bf6503": 1,
         "b57d9963-d241-40c9-8f9f-f9925a2da661": 1,
         "63ae7341-324b-4cb5-83ad-ee17719d4079": 1
-
     },
     "skills": {
         "AugmentedDefenses": 3,
@@ -39,6 +38,7 @@
         "ExtremeComfort": 3,
         "LeftyLoosey": 3,
         "MasterSalesman": 3,
-        "SharpenedSteel": 3
+        "SharpenedSteel": 3,
+        "7f097b31-c29e-4082-a835-6d6457c2d536": 1
     }
 } 
