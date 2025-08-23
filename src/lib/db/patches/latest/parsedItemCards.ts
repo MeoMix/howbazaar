@@ -1377,7 +1377,9 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Shield"
     ],
-    "customTags": [],
+    "customTags": [
+      "Unpurchasable"
+    ],
     "size": "Small",
     "heroes": [
       "Pygmalien"
@@ -2207,7 +2209,9 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "HealReference"
     ],
-    "customTags": [],
+    "customTags": [
+      "Unpurchasable"
+    ],
     "size": "Small",
     "heroes": [
       "Pygmalien"
@@ -12066,7 +12070,9 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Burn"
     ],
-    "customTags": [],
+    "customTags": [
+      "Unpurchasable"
+    ],
     "size": "Small",
     "heroes": [
       "Pygmalien"
@@ -45545,7 +45551,9 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "HealReference"
     ],
-    "customTags": [],
+    "customTags": [
+      "Unpurchasable"
+    ],
     "size": "Small",
     "heroes": [
       "Pygmalien"
@@ -58686,7 +58694,9 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Damage"
     ],
-    "customTags": [],
+    "customTags": [
+      "Unpurchasable"
+    ],
     "size": "Small",
     "heroes": [
       "Pygmalien"
@@ -61454,7 +61464,9 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "Heal"
     ],
-    "customTags": [],
+    "customTags": [
+      "Unpurchasable"
+    ],
     "size": "Small",
     "heroes": [
       "Pygmalien"
@@ -64481,7 +64493,9 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "BurnReference"
     ],
-    "customTags": [],
+    "customTags": [
+      "Unpurchasable"
+    ],
     "size": "Small",
     "heroes": [
       "Pygmalien"
@@ -65782,7 +65796,9 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "BurnReference"
     ],
-    "customTags": [],
+    "customTags": [
+      "Unpurchasable"
+    ],
     "size": "Small",
     "heroes": [
       "Pygmalien"
@@ -81265,7 +81281,9 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "BurnReference"
     ],
-    "customTags": [],
+    "customTags": [
+      "Unpurchasable"
+    ],
     "size": "Small",
     "heroes": [
       "Pygmalien"
@@ -83238,7 +83256,9 @@ const data: ParsedItemCard[] = [
     "hiddenTags": [
       "HealReference"
     ],
-    "customTags": [],
+    "customTags": [
+      "Unpurchasable"
+    ],
     "size": "Small",
     "heroes": [
       "Pygmalien"

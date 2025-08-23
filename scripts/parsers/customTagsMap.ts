@@ -84,6 +84,13 @@ const customTagsMap: Record<string, CustomTag[]> = {
     // Green Gumball
     "d0a15bf6-fc3a-47c5-84c5-7c34c6996598": ["Unpurchasable"],
 
+    // Green Piggles A
+    "846c1398-9cc2-4aac-bc84-adadd1382f42": ["Unpurchasable"],
+    // Green Piggles R
+    "c204f622-4000-40a4-9bf4-6aa53f768b1d": ["Unpurchasable"],
+    // Green Piggles L
+    "a4b95afc-4925-4bca-878d-cabd338388a2": ["Unpurchasable"],
+
     // Gunpowder
     "3e563d2a-87e7-4e9a-bfa2-3268b27b7447": ["Unpurchasable"],
 
@@ -119,6 +126,22 @@ const customTagsMap: Record<string, CustomTag[]> = {
 
     // Octopus
     "82d41afc-d1a9-41ee-a03d-fd9305bef8b5": ["Unpurchasable"],
+    
+    // Orange Piggles A
+    "e833f9cf-39ac-44ca-a287-7bd6ddebc77e": ["Unpurchasable"],
+    // Orange Piggles R
+    "80fb0457-0337-4df1-bcb1-9ad5b8a7840c": ["Unpurchasable"],
+    // Orange Piggles L
+    "3f48a184-3c29-4049-88c4-d28edd391bda": ["Unpurchasable"],
+
+    // Premium Green Piggles
+    "5c8f6b67-ebe2-4f8e-9e2e-cef4e623c01c": ["Unpurchasable"],
+    // Premium Orange Piggles
+    "ce776fca-3f9f-44f9-b3f0-5aa623d6711b": ["Unpurchasable"],
+    // Premium Red Piggles
+    "ae126c7d-8f0f-4a23-b11f-da56e5353220": ["Unpurchasable"],
+    // Premium Yellow Piggles
+    "df67fa82-d189-4dc3-997c-69e7963189af": ["Unpurchasable"],
 
     // Red Gumball
     "6d6199b4-82a4-441d-9329-f4164737ac6b": ["Unpurchasable"],
