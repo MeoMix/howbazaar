@@ -2462,7 +2462,7 @@ const data: ParsedMonster[] = [
     "items": [
       {
         "id": "0930fbea-e3ae-45d4-a1c7-a26c5abb63aa",
-        "tierType": "Diamond"
+        "tierType": "Gold"
       },
       {
         "id": "2e4c2528-f3e8-4743-a1c9-637012d9eb76",
@@ -2470,7 +2470,7 @@ const data: ParsedMonster[] = [
       },
       {
         "id": "2e10cce3-b242-411b-a35f-0882341e71a7",
-        "tierType": "Diamond"
+        "tierType": "Gold"
       },
       {
         "id": "ca77281c-f912-4db3-86ce-64842a4ccdaa",
