@@ -125,7 +125,9 @@ const invalidItemIds: Record<string, string> = {
   "0ac69b6e-67fc-4e98-ba92-cf91a5d08d97": "Acid Sprayer",
   "3174b74a-9e67-4db7-ba98-0d4935b2586d": "Coupon",
   "6cf87784-bca9-4735-a431-15bc88c97f78": "Compass",
-  "dd438f4e-77ea-4b7a-b59e-ae8906c49da8": "Augment Reagents"
+  "dd438f4e-77ea-4b7a-b59e-ae8906c49da8": "Augment Reagents",
+  "49c93b98-cd66-4d3a-923c-c4e2871e87fb": "Bomb Voyage",
+  "c6433adf-cebc-4b6a-9172-3d7b36f6b428": "Binoculars"
 };
 
 export default invalidItemIds;
