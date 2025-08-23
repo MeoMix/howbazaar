@@ -8,7 +8,6 @@
         Tag,
         TierType,
         TriState,
-        ExpansionPackId,
         EnchantmentType,
     } from "$lib/types";
     import { Label } from "flowbite-svelte";
@@ -34,7 +33,6 @@
         searchText,
         isMatchAnyTag,
         monsterDropsOnlyState,
-        selectedExpansions,
         selectedEnchantmentTypes,
         isHiddenWhenEmpty,
     }: {
@@ -47,7 +45,6 @@
         searchText: string;
         isMatchAnyTag: boolean;
         monsterDropsOnlyState: TriState;
-        selectedExpansions: ExpansionPackId[];
         selectedEnchantmentTypes: EnchantmentType[];
         isHiddenWhenEmpty: boolean;
     } = $props();
@@ -80,7 +77,6 @@
             selectedSizes,
             isMatchAnyTag,
             monsterDropsOnlyState,
-            selectedExpansions,
             selectedEnchantmentTypes,
         ),
     );

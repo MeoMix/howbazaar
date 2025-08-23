@@ -8,7 +8,6 @@
         Tag,
         Option,
         TriState,
-        ExpansionPackId,
     } from "$lib/types";
     import SearchInput from "./SearchInput.svelte";
     import MultiSelectTriFilter from "./MultiSelectTriFilter.svelte";
@@ -20,27 +19,23 @@
         minimumTierOptions,
         tagOptions,
         sizeOptions,
-        expansionOptions,
         selectedHeroes = $bindable(),
         selectedTiers = $bindable(),
         tagStates = $bindable(),
         selectedSizes = $bindable(),
         isMatchAnyTag = $bindable(),
         searchText = $bindable(),
-        selectedExpansions = $bindable(),
     }: {
         heroOptions: Option[];
         minimumTierOptions: Option[];
         tagOptions: Option[];
         sizeOptions: Option[];
-        expansionOptions: Option[];
         selectedHeroes: string[];
         selectedTiers: string[];
         tagStates: Record<Tag | HiddenTag, TriState>;
         selectedSizes: string[];
         isMatchAnyTag: boolean;
         searchText: string;
-        selectedExpansions: ExpansionPackId[];
     } = $props();
 
     function clearSearch() {
@@ -52,7 +47,6 @@
         ) as Record<Tag | HiddenTag, TriState>;
         isMatchAnyTag = false;
         selectedSizes = [];
-        selectedExpansions = [];
     }
 
     function clearSearchInput() {
@@ -75,7 +69,6 @@
             isMatchAnyTag ||
             selectedTiers.length > 0 ||
             selectedSizes.length > 0 ||
-            selectedExpansions.length > 0 ||
             selectedHeroes.length > 0 ||
             Object.values(tagStates).some((state) => state !== "unset"),
     );
@@ -134,11 +127,6 @@
                     label="Sizes"
                     options={sizeOptions}
                     bind:selectedOptionValues={selectedSizes}
-                />
-                <MultiSelectFilter
-                    label="Expansions"
-                    options={expansionOptions}
-                    bind:selectedOptionValues={selectedExpansions}
                 />
             </div>
         </div>

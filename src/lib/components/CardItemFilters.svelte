@@ -8,7 +8,6 @@
         Tag,
         Option,
         TriState,
-        ExpansionPackId,
         EnchantmentType,
     } from "$lib/types";
     import SearchInput from "./SearchInput.svelte";
@@ -22,7 +21,6 @@
         minimumTierOptions,
         tagOptions,
         sizeOptions,
-        expansionOptions,
         enchantmentOptions,
         selectedHeroes = $bindable(),
         selectedTiers = $bindable(),
@@ -31,14 +29,12 @@
         isMatchAnyTag = $bindable(),
         searchText = $bindable(),
         monsterDropsOnlyState = $bindable(),
-        selectedExpansions = $bindable(),
         selectedEnchantmentTypes = $bindable(),
     }: {
         heroOptions: Option[];
         minimumTierOptions: Option[];
         tagOptions: Option[];
         sizeOptions: Option[];
-        expansionOptions: Option[];
         enchantmentOptions: Option[];
         selectedHeroes: string[];
         selectedTiers: string[];
@@ -47,7 +43,6 @@
         isMatchAnyTag: boolean;
         searchText: string;
         monsterDropsOnlyState: TriState;
-        selectedExpansions: ExpansionPackId[];
         selectedEnchantmentTypes: EnchantmentType[];
     } = $props();
 
@@ -61,7 +56,6 @@
         isMatchAnyTag = false;
         selectedSizes = [];
         monsterDropsOnlyState = "unset";
-        selectedExpansions = [];
     }
 
     function clearSearchInput() {
@@ -84,7 +78,6 @@
             isMatchAnyTag ||
             selectedTiers.length > 0 ||
             selectedSizes.length > 0 ||
-            selectedExpansions.length > 0 ||
             selectedHeroes.length > 0 ||
             selectedEnchantmentTypes.length > 0 ||
             monsterDropsOnlyState !== "unset" ||
@@ -145,11 +138,6 @@
                     label="Sizes"
                     options={sizeOptions}
                     bind:selectedOptionValues={selectedSizes}
-                />
-                <MultiSelectFilter
-                    label="Expansions"
-                    options={expansionOptions}
-                    bind:selectedOptionValues={selectedExpansions}
                 />
                 <MultiSelectFilter
                     label="Enchantments"

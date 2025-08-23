@@ -7,7 +7,6 @@
         Tag,
         TierType,
         TriState,
-        ExpansionPackId,
         EnchantmentType,
     } from "$lib/types";
     import CardItemFilters from "$lib/components/CardItemFilters.svelte";
@@ -27,7 +26,6 @@
     let selectedSizes = $state([] as Size[]);
     let searchText = $state("");
     let monsterDropsOnlyState = $state("unset" as TriState);
-    let selectedExpansions = $state([] as ExpansionPackId[]);
     let selectedEnchantmentTypes = $state([] as EnchantmentType[]);
     let sortOptions: { name: string; value: ItemSortOption }[] = [
         {
@@ -61,7 +59,6 @@
         minimumTierOptions={data.minimumTierOptions}
         tagOptions={data.tagOptions}
         sizeOptions={data.sizeOptions}
-        expansionOptions={data.expansionOptions}
         enchantmentOptions={data.enchantmentOptions}
         bind:selectedHeroes
         bind:selectedTiers
@@ -70,7 +67,6 @@
         bind:isMatchAnyTag
         bind:searchText
         bind:monsterDropsOnlyState
-        bind:selectedExpansions
         bind:selectedEnchantmentTypes
     />
 
@@ -84,7 +80,6 @@
         {searchText}
         {isMatchAnyTag}
         {monsterDropsOnlyState}
-        {selectedExpansions}
         {selectedEnchantmentTypes}
         isHiddenWhenEmpty={false}
     />

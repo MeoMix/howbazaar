@@ -12,7 +12,6 @@
         Tag,
         TierType,
         TriState,
-        ExpansionPackId,
         EnchantmentType,
     } from "$lib/types";
     import type { PageData } from "./$types";
@@ -42,8 +41,6 @@
             .filter(([_, state]) => state === "on") // Keep only heroes where the state is "on"
             .map(([hero]) => hero as Hero), // Extract the hero name
     );
-
-    let selectedExpansions = $state([] as ExpansionPackId[]);
 
     let isMatchAnyTag = $state(false);
     let isMatchAnyHero = $state(false);
@@ -115,13 +112,11 @@
         minimumTierOptions={data.minimumTierOptions}
         tagOptions={data.tagOptions}
         sizeOptions={data.sizeOptions}
-        expansionOptions={data.expansionOptions}
         enchantmentOptions={data.enchantmentOptions}
         bind:heroStates
         bind:selectedTiers
         bind:tagStates
         bind:selectedSizes
-        bind:selectedExpansions
         bind:selectedEnchantmentTypes
         bind:isMatchAnyTag
         bind:isMatchAnyHero
@@ -140,12 +135,11 @@
             {searchText}
             {isMatchAnyTag}
             {monsterDropsOnlyState}
-            {selectedExpansions}
             {selectedEnchantmentTypes}
             isHiddenWhenEmpty={true}
         />
 
-        {#if selectedExpansions.length === 0 && selectedEnchantmentTypes.length === 0}
+        {#if selectedEnchantmentTypes.length === 0}
             <SkillList
                 serverVersion={data.skillsVersion}
                 sortOptions={skillSortOptions}

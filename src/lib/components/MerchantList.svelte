@@ -4,7 +4,6 @@
     import type {
         ClientSideItemCard,
         ClientSideMerchantCard,
-        ExpansionPackId,
         Hero,
         HiddenTag,
         Size,
@@ -35,7 +34,6 @@
         tagStates,
         selectedSizes,
         isMatchAnyTag,
-        selectedExpansions,
     }: {
         itemsServerVersion: string;
         merchantsServerVersion: string;
@@ -48,7 +46,6 @@
         tagStates: Record<Tag | HiddenTag, TriState>;
         selectedSizes: Size[];
         isMatchAnyTag: boolean;
-        selectedExpansions: ExpansionPackId[];
     } = $props();
 
     let isLoadingMerchants = $state(false);
@@ -136,7 +133,6 @@
                 [],
                 false,
                 "unset",
-                selectedExpansions,
                 [],
             ),
             selectedHeroes,
@@ -145,7 +141,6 @@
             selectedSizes,
             isMatchAnyTag,
             "unset",
-            selectedExpansions,
             [],
         ),
     );
@@ -170,7 +165,6 @@
                             [],
                             false,
                             "unset",
-                            selectedExpansions,
                             [],
                         ),
                         merchant.filters.heroes ?? [
@@ -184,7 +178,6 @@
                         merchant.filters.sizes ?? [],
                         merchant.filters.isMatchAnyTag ?? true,
                         "unset",
-                        selectedExpansions,
                         [],
                     ).length,
                     // Apply filters to the item pool again, but this time customized to the specific merchant.
@@ -202,7 +195,6 @@
                         merchant.filters.sizes ?? [],
                         merchant.filters.isMatchAnyTag ?? true,
                         "unset",
-                        selectedExpansions,
                         [],
                     ),
                 },
@@ -232,8 +224,7 @@
             selectedHeroes.length > 0 ||
             selectedTiers.length > 0 ||
             selectedSizes.length > 0 ||
-            Object.values(tagStates).some((state) => state !== "unset") ||
-            selectedExpansions.length > 0,
+            Object.values(tagStates).some((state) => state !== "unset")
     );
 
     const searchedMerchants = $derived(() => {

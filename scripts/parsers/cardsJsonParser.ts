@@ -794,7 +794,6 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
             enchantments,
             quests,
             unifiedTooltips,
-            // packId: card.CardPackId
         };
     });
 
@@ -890,7 +889,6 @@ function parseSkillCards(cardsJson: CardsJson): ParsedSkillCard[] {
             heroes: card.Heroes.filter(hero => hero !== "Hero7"),
             artKey: card.ArtKey,
             unifiedTooltips,
-            // packId: card.CardPackId
         };
     });
 

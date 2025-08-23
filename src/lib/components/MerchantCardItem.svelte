@@ -6,10 +6,6 @@
     import { tooltip } from "$lib/actions/tooltip.svelte";
     import UnifiedTooltips from "./UnifiedTooltips.svelte";
     import { filterTags } from "$lib/utils/filterUtils";
-    // import {
-    //     getExpansionPackName,
-    //     isExpansionPack,
-    // } from "$lib/utils/cardUtils";
 
     const {
         card,
@@ -27,13 +23,7 @@
             color: card.startingTier.toLowerCase(),
             showIcon: false,
         },
-        ...[
-            ...card.heroes,
-            card.size,
-            // ...(isExpansionPack(card.packId)
-            //     ? [getExpansionPackName(card.packId)]
-            //     : []),
-        ].map((text) => ({
+        ...[...card.heroes, card.size].map((text) => ({
             text,
             showIcon: false,
         })),

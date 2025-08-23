@@ -18,14 +18,13 @@ export async function load({ fetch }) {
 
     const { data: items, version: itemsVersion }: ItemsApiResponse = await itemsResponse.json();
 
-    const { heroOptions, tagOptions, minimumTierOptions, sizeOptions, expansionOptions } = getCardFilterOptions(items);
+    const { heroOptions, tagOptions, minimumTierOptions, sizeOptions } = getCardFilterOptions(items);
 
     return {
         heroOptions,
         tagOptions,
         minimumTierOptions,
         sizeOptions,
-        expansionOptions,
         version,
         itemsVersion,
     };

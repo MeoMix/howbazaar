@@ -41,12 +41,7 @@ export type ParsedItemCard = {
     enchantments: ClientSideEnchantment[];
     quests: ClientSideQuest[];
     unifiedTooltips: string[];
-    // packId: CorePackId | ExpansionPackId;
 };
-
-// TODO: Why is Pygmalien in the Core pack?
-export type CorePackId = "Core" | "Pygmalien_Core" | "Vanessa_Core" | "Dooley_Core" | "Mak_Core" | "Jules_Core" | "Stelle_Core" | "Pygmalien";
-export type ExpansionPackId = "Pyg_Frozen_Assets" | "Vanessa_Mysteries_of_the_Deep" | "Mak_Lost_Treasures" | "Pyg_Pigglestorm" | "Dooley_Primal_Dooley" | "Dooley_Dooltron" | "Vanessa_The_Gang" | "Pyg_Investment_Opportunities" | "Mak_Dangerous_Experiments" | "Pyg_Pigglestorm" | "Vanessa_From_the_Shadows";
 
 export type ClientSideItemCard = {
     id: string;
@@ -63,7 +58,6 @@ export type ClientSideItemCard = {
     quests: ClientSideQuest[];
     unifiedTooltips: string[];
     combatEncounters: ClientSideCombatEncounterSummary[];
-    // packId: CorePackId | ExpansionPackId;
 };
 
 export type ParsedSkillCard = {
@@ -80,7 +74,6 @@ export type ParsedSkillCard = {
     heroes: Hero[];
     artKey: string;
     unifiedTooltips: string[];
-    // packId: CorePackId | ExpansionPackId;
 };
 
 export type ClientSideSkillCard = {
@@ -95,7 +88,6 @@ export type ClientSideSkillCard = {
     heroes: Hero[];
     unifiedTooltips: string[];
     combatEncounters: ClientSideCombatEncounterSummary[];
-    // packId: CorePackId | ExpansionPackId;
 };
 
 export type ClientSideCombatEncounterSummary = {

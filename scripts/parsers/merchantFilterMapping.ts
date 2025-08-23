@@ -1,4 +1,4 @@
-import type { CorePackId, ExpansionPackId, Hero, HiddenTag, Size, Tag, TierType, TriState } from "$lib/types";
+import type { Hero, HiddenTag, Size, Tag, TierType, TriState } from "$lib/types";
 
 // NOTE: Hero filter is implied to be all released heros if unspecified.
 // NOTE: Invalid pack filter is implied to be all except Core if unspecified.

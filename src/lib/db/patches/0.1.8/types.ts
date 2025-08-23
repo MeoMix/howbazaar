@@ -29,11 +29,7 @@ export type ParsedItemCard = {
     enchantments: ClientSideEnchantment[];
     unifiedTooltips: string[];
     remarks: string[];
-    packId: CorePackId | ExpansionPackId;
 };
-
-type CorePackId = "Core" | "Pygmalien_Core" | "Vanessa_Core" | "Dooley_Core" | "Mak_Core" | "Jules_Core" | "Stelle_Core";
-type ExpansionPackId = "Pyg_Frozen_Assets" | "Vanessa_Mysteries_of_the_Deep";
 
 export type ClientSideItemCard = {
     id: string;
@@ -48,7 +44,6 @@ export type ClientSideItemCard = {
     unifiedTooltips: string[];
     combatEncounters: ClientSideCombatEncounterSummary[];
     remarks: string[];
-    packId: CorePackId | ExpansionPackId;
 };
 
 export type ParsedSkillCard = {
@@ -65,7 +60,6 @@ export type ParsedSkillCard = {
     artKey: string;
     unifiedTooltips: string[];
     remarks: string[];
-    packId: CorePackId | ExpansionPackId;
 };
 
 export type ClientSideSkillCard = {
@@ -80,7 +74,6 @@ export type ClientSideSkillCard = {
     unifiedTooltips: string[];
     combatEncounters: ClientSideCombatEncounterSummary[];
     remarks: string[];
-    packId: CorePackId | ExpansionPackId;
 };
 
 export type ClientSideCombatEncounterSummary = {

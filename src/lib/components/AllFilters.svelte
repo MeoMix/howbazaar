@@ -4,14 +4,7 @@
     import MultiSelectFilter from "./MultiSelectFilter.svelte";
     import { onMount } from "svelte";
     import { page } from "$app/state";
-    import type {
-        HiddenTag,
-        Tag,
-        Option,
-        TriState,
-        Hero,
-        ExpansionPackId,
-    } from "$lib/types";
+    import type { HiddenTag, Tag, Option, TriState, Hero } from "$lib/types";
     import SearchInput from "./SearchInput.svelte";
     import MultiSelectTriFilter from "./MultiSelectTriFilter.svelte";
     import AdvancedFilterToggle from "./AdvancedFilterToggle.svelte";
@@ -22,13 +15,11 @@
         minimumTierOptions,
         tagOptions,
         sizeOptions,
-        expansionOptions,
         enchantmentOptions,
         heroStates = $bindable(),
         selectedTiers = $bindable(),
         tagStates = $bindable(),
         selectedSizes = $bindable(),
-        selectedExpansions = $bindable(),
         selectedEnchantmentTypes = $bindable(),
         isMatchAnyTag = $bindable(),
         isMatchAnyHero = $bindable(),
@@ -39,13 +30,11 @@
         minimumTierOptions: Option[];
         tagOptions: Option[];
         sizeOptions: Option[];
-        expansionOptions: Option[];
         enchantmentOptions: Option[];
         heroStates: Record<Hero, TriState>;
         selectedTiers: string[];
         tagStates: Record<Tag | HiddenTag, TriState>;
         selectedSizes: string[];
-        selectedExpansions: ExpansionPackId[];
         selectedEnchantmentTypes: string[];
         isMatchAnyTag: boolean;
         isMatchAnyHero: boolean;
@@ -66,7 +55,6 @@
         isMatchAnyHero = false;
         selectedSizes = [];
         monsterDropsOnlyState = "unset";
-        selectedExpansions = [];
     }
 
     function clearSearchInput() {
@@ -90,7 +78,6 @@
             isMatchAnyHero ||
             selectedTiers.length > 0 ||
             selectedSizes.length > 0 ||
-            selectedExpansions.length > 0 ||
             selectedEnchantmentTypes.length > 0 ||
             monsterDropsOnlyState !== "unset" ||
             Object.values(tagStates).some((state) => state !== "unset") ||
@@ -152,11 +139,6 @@
                     label="Sizes"
                     options={sizeOptions}
                     bind:selectedOptionValues={selectedSizes}
-                />
-                <MultiSelectFilter
-                    label="Expansions"
-                    options={expansionOptions}
-                    bind:selectedOptionValues={selectedExpansions}
                 />
                 <MultiSelectFilter
                     label="Enchantments"
