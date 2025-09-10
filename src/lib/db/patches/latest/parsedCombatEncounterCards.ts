@@ -312,12 +312,12 @@ const data: ParsedCombatEncounterCard[] = [
     "name": "Dooltron"
   },
   {
-    "id": "2a4e119c-bd71-4657-b47a-a56559acf94b",
-    "name": "[MONSTER ENCOUNTER TEMPLATE]"
-  },
-  {
     "id": "bc5fa0a4-8ca9-4384-a283-9c7c84b27169",
     "name": "Dire Mosquito"
+  },
+  {
+    "id": "2a4e119c-bd71-4657-b47a-a56559acf94b",
+    "name": "[MONSTER ENCOUNTER TEMPLATE]"
   },
   {
     "id": "b988bbe5-35cf-445e-bea5-ec54b8daf54a",

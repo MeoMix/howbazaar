@@ -126,8 +126,7 @@ const data: ParsedMerchantCard[] = [
       "Dooley",
       "Vanessa",
       "Mak",
-      "Jules",
-      "Stelle"
+      "Jules"
     ],
     "description": "Sells Haste, Slow and Cooldown items."
   },
@@ -202,7 +201,7 @@ const data: ParsedMerchantCard[] = [
     "heroes": [
       "Common"
     ],
-    "description": "Sells bronze-tier Neutral items."
+    "description": "Sells Bronze-tier Neutral items."
   },
   {
     "id": "0ff275f7-60ef-4428-acb6-1a138d03152d",
