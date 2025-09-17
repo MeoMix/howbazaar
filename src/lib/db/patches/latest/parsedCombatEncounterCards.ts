@@ -64,20 +64,12 @@ const data: ParsedCombatEncounterCard[] = [
     "name": "Foreman"
   },
   {
-    "id": "581a229a-1490-4996-9fff-d189c08fd639",
-    "name": "Giant Mosquito"
-  },
-  {
     "id": "a5103989-fb08-4ac6-a5e8-6a610e0b1d46",
     "name": "Qomatz"
   },
   {
     "id": "55046a2f-f81e-4720-aefa-e74b14a06dad",
     "name": "Frost Street Challenger"
-  },
-  {
-    "id": "effadef8-9223-4e90-a423-605ec5eb4fe0",
-    "name": "Giant Mosquito"
   },
   {
     "id": "04b60df4-91d9-4065-94e0-f9f462a3b104",
@@ -304,10 +296,6 @@ const data: ParsedCombatEncounterCard[] = [
     "name": "Haunted Kimono"
   },
   {
-    "id": "984203cc-9b23-4af6-af54-735b92f9c3c3",
-    "name": "Virtual PVP Neltharion"
-  },
-  {
     "id": "25f54463-2cca-419a-b0e8-8f5297896992",
     "name": "Dooltron"
   },
@@ -316,20 +304,12 @@ const data: ParsedCombatEncounterCard[] = [
     "name": "Dire Mosquito"
   },
   {
-    "id": "2a4e119c-bd71-4657-b47a-a56559acf94b",
-    "name": "[MONSTER ENCOUNTER TEMPLATE]"
-  },
-  {
     "id": "b988bbe5-35cf-445e-bea5-ec54b8daf54a",
     "name": "Aleppa Tantius"
   },
   {
     "id": "91e59b0c-968c-4c45-9391-5104571fee28",
     "name": "Outlands Dervish"
-  },
-  {
-    "id": "8f73d2d6-6071-4464-bb19-8e0783de4df0",
-    "name": "Lord Arken"
   },
   {
     "id": "a871d83c-fbe0-4b38-b004-6cc598b31239",
@@ -372,16 +352,8 @@ const data: ParsedCombatEncounterCard[] = [
     "name": "Big Bad Wolf"
   },
   {
-    "id": "654e27c9-fb00-4164-b8a8-96ea42496686",
-    "name": "QA Test Radiant (Greg)"
-  },
-  {
     "id": "bd0711a6-d9d9-4a47-8a18-8f991057f7dd",
     "name": "Kyver Drone"
-  },
-  {
-    "id": "d0e031f9-16c8-4ebf-a9bf-986dc3f41a1f",
-    "name": "Skill Board Test Monster"
   },
   {
     "id": "72411b58-e99a-44a9-a43f-9767896c7508",
@@ -448,10 +420,6 @@ const data: ParsedCombatEncounterCard[] = [
     "name": "Street Gamer"
   },
   {
-    "id": "e417b047-a681-4e85-90b7-22ab71f73bf0",
-    "name": "Frost Street Challenger"
-  },
-  {
     "id": "9e637cb7-18cf-460d-9c50-5401ee4be521",
     "name": "Retiree"
   },
@@ -470,10 +438,6 @@ const data: ParsedCombatEncounterCard[] = [
   {
     "id": "1eabe08b-2949-407d-b22d-c6e579e0cd14",
     "name": "Rogue Scrapper"
-  },
-  {
-    "id": "20b58ee9-3db0-4d8a-9bf6-afb8742a16a0",
-    "name": "Preening Duelist"
   },
   {
     "id": "508e42ec-fdc6-4316-b1af-f85508d182b5",
