@@ -327,7 +327,6 @@ const data: ParsedSkillCard[] = [
     "customTags": [],
     "size": "Medium",
     "heroes": [
-      "Pygmalien",
       "Vanessa",
       "Dooley",
       "Jules",
@@ -686,25 +685,23 @@ const data: ParsedSkillCard[] = [
   },
   {
     "id": "ef4e5045-91c6-4973-8aed-1f29300e1db4",
-    "name": "OverHeal Regeneration",
-    "startingTier": "Silver",
+    "name": "Everlasting Life",
+    "startingTier": "Gold",
     "tiers": {
       "Bronze": {
         "tooltips": []
       },
       "Silver": {
-        "tooltips": [
-          "When you Over-Heal, gain 5 Regen for the fight."
-        ]
+        "tooltips": []
       },
       "Gold": {
         "tooltips": [
-          "When you Over-Heal, gain 10 Regen for the fight."
+          "When you use a Heal or Regen item, gain 5 Max Health for the fight."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "When you Over-Heal, gain 15 Regen for the fight."
+          "When you use a Heal or Regen item, gain 10 Max Health for the fight."
         ]
       },
       "Legendary": {
@@ -714,16 +711,18 @@ const data: ParsedSkillCard[] = [
     "tags": [],
     "hiddenTags": [
       "HealReference",
-      "Regen"
+      "RegenReference",
+      "Health"
     ],
     "customTags": [],
     "size": "Medium",
     "heroes": [
-      "Pygmalien"
+      "Pygmalien",
+      "Mak"
     ],
     "artKey": "Icon_Skill_ConcentratedHealing.png",
     "unifiedTooltips": [
-      "When you Over-Heal, gain (5/10/15) Regen for the fight."
+      "When you use a Heal or Regen item, gain (5/10) Max Health for the fight."
     ]
   },
   {
@@ -772,24 +771,20 @@ const data: ParsedSkillCard[] = [
   {
     "id": "57a19498-4525-4f15-9aa2-d0b21cf20d73",
     "name": "Party Like it's 011111001111",
-    "startingTier": "Silver",
+    "startingTier": "Diamond",
     "tiers": {
       "Bronze": {
         "tooltips": []
       },
       "Silver": {
-        "tooltips": [
-          "When you upgrade a Friend, your other items gain 3 bonus Damage, 3 bonus Shield and 1 bonus Burn."
-        ]
+        "tooltips": []
       },
       "Gold": {
-        "tooltips": [
-          "When you upgrade a Friend, your other items gain 6 bonus Damage, 6 bonus Shield and 2 bonus Burn."
-        ]
+        "tooltips": []
       },
       "Diamond": {
         "tooltips": [
-          "When you upgrade a Friend, your other items gain 9 bonus Damage, 9 bonus Shield and 3 bonus Burn."
+          "Your leftmost item is a Friend"
         ]
       },
       "Legendary": {
@@ -813,7 +808,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_DOO_PartyLikeIts11111001111.png",
     "unifiedTooltips": [
-      "When you upgrade a Friend, your other items gain (3/6/9) bonus Damage, (3/6/9) bonus Shield and (1/2/3) bonus Burn."
+      "Your leftmost item is a Friend"
     ]
   },
   {
@@ -1118,51 +1113,6 @@ const data: ParsedSkillCard[] = [
     ]
   },
   {
-    "id": "71433809-d05a-4544-9959-aff20ae5db93",
-    "name": "Iron Sharpens Iron",
-    "startingTier": "Silver",
-    "tiers": {
-      "Bronze": {
-        "tooltips": []
-      },
-      "Silver": {
-        "tooltips": [
-          "Your leftmost Weapon has +2 Damage. When you buy a Weapon, increase this bonus by 2."
-        ]
-      },
-      "Gold": {
-        "tooltips": [
-          "Your leftmost Weapon has +2 Damage. When you buy a Weapon, increase this bonus by 3."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "Your leftmost Weapon has +2 Damage. When you buy a Weapon, increase this bonus by 4."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [
-      "Weapon"
-    ],
-    "hiddenTags": [
-      "DamageReference"
-    ],
-    "customTags": [],
-    "size": "Medium",
-    "heroes": [
-      "Vanessa",
-      "Jules",
-      "Mak"
-    ],
-    "artKey": "Icon_Skill_IronSharpensIron.png",
-    "unifiedTooltips": [
-      "Your leftmost Weapon has +2 Damage. When you buy a Weapon, increase this bonus by (2/3/4)."
-    ]
-  },
-  {
     "id": "9d910b0a-9ef3-447f-ab41-195effb68f21",
     "name": "Hot Spot",
     "startingTier": "Silver",
@@ -1200,11 +1150,58 @@ const data: ParsedSkillCard[] = [
       "Dooley",
       "Jules",
       "Stelle",
-      "Pygmalien"
+      "Pygmalien",
+      "Mak"
     ],
     "artKey": "Icon_Skill_HotSpot.png",
     "unifiedTooltips": [
       "When you use your leftmost item, Burn (2/3/4)."
+    ]
+  },
+  {
+    "id": "71433809-d05a-4544-9959-aff20ae5db93",
+    "name": "Iron Sharpens Iron",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Your leftmost Weapon has +3 Damage. When you buy a Weapon, increase this bonus by 3."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Your leftmost Weapon has +3 Damage. When you buy a Weapon, increase this bonus by 4."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Your leftmost Weapon has +3 Damage. When you buy a Weapon, increase this bonus by 5."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Weapon"
+    ],
+    "hiddenTags": [
+      "DamageReference"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Vanessa",
+      "Pygmalien",
+      "Jules",
+      "Mak"
+    ],
+    "artKey": "Icon_Skill_IronSharpensIron.png",
+    "unifiedTooltips": [
+      "Your leftmost Weapon has +3 Damage. When you buy a Weapon, increase this bonus by (3/4/5)."
     ]
   },
   {
@@ -1261,12 +1258,12 @@ const data: ParsedSkillCard[] = [
       },
       "Gold": {
         "tooltips": [
-          "The Cooldown of your Properties are reduced by 10%."
+          "The Cooldown of your Properties are reduced by 5%."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "The Cooldown of your Properties are reduced by 15%."
+          "The Cooldown of your Properties are reduced by 10%."
         ]
       },
       "Legendary": {
@@ -1286,7 +1283,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_PYG_Industrialist.png",
     "unifiedTooltips": [
-      "The Cooldown of your Properties are reduced by (10%/15%)."
+      "The Cooldown of your Properties are reduced by (5%/10%)."
     ]
   },
   {
@@ -1327,6 +1324,41 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_STE_RegularMaintenance",
     "unifiedTooltips": [
       "Your Shield items have (+25/+50) Shield for each Flying item you have."
+    ]
+  },
+  {
+    "id": "0f1c6082-c742-4d6a-bf11-12ded9a8bb29",
+    "name": "Cult Member",
+    "startingTier": "Legendary",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": []
+      },
+      "Diamond": {
+        "tooltips": []
+      },
+      "Legendary": {
+        "tooltips": [
+          "You have joined the Cult"
+        ]
+      }
+    },
+    "tags": [],
+    "hiddenTags": [],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Common"
+    ],
+    "artKey": "Icon_Skill_Cultemember",
+    "unifiedTooltips": [
+      "You have joined the Cult"
     ]
   },
   {
@@ -1534,6 +1566,43 @@ const data: ParsedSkillCard[] = [
     ]
   },
   {
+    "id": "8e2f3e1c-bd00-4b58-b746-a6ae18f804c3",
+    "name": "Hyper Focus",
+    "startingTier": "Diamond",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": []
+      },
+      "Diamond": {
+        "tooltips": [
+          "If you have only one Medium item, its Cooldown is reduced by 25%."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "Cooldown"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Common"
+    ],
+    "artKey": "Icon_Skill_MON_Lurk_01.png",
+    "unifiedTooltips": [
+      "If you have only one Medium item, its Cooldown is reduced by 25%."
+    ]
+  },
+  {
     "id": "13f4df45-8f29-4a48-8a2b-b8176e17c85d",
     "name": "Retaliatory Toxins",
     "startingTier": "Gold",
@@ -1571,43 +1640,6 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_RetalitoryToxins.png",
     "unifiedTooltips": [
       "When an enemy uses an item, Poison (1/2)."
-    ]
-  },
-  {
-    "id": "8e2f3e1c-bd00-4b58-b746-a6ae18f804c3",
-    "name": "Hyper Focus",
-    "startingTier": "Diamond",
-    "tiers": {
-      "Bronze": {
-        "tooltips": []
-      },
-      "Silver": {
-        "tooltips": []
-      },
-      "Gold": {
-        "tooltips": []
-      },
-      "Diamond": {
-        "tooltips": [
-          "If you have only one Medium item, its Cooldown is reduced by 25%."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [],
-    "hiddenTags": [
-      "Cooldown"
-    ],
-    "customTags": [],
-    "size": "Medium",
-    "heroes": [
-      "Common"
-    ],
-    "artKey": "Icon_Skill_MON_Lurk_01.png",
-    "unifiedTooltips": [
-      "If you have only one Medium item, its Cooldown is reduced by 25%."
     ]
   },
   {
@@ -1834,17 +1866,17 @@ const data: ParsedSkillCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "While you have less Health than your enemy, your items have 10% Crit Chance."
+          "While you have less Health than your enemy, your items have 20% Crit Chance."
         ]
       },
       "Gold": {
         "tooltips": [
-          "While you have less Health than your enemy, your items have 15% Crit Chance."
+          "While you have less Health than your enemy, your items have 40% Crit Chance."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "While you have less Health than your enemy, your items have 20% Crit Chance."
+          "While you have less Health than your enemy, your items have 60% Crit Chance."
         ]
       },
       "Legendary": {
@@ -1860,32 +1892,35 @@ const data: ParsedSkillCard[] = [
     "heroes": [
       "Vanessa",
       "Jules",
-      "Stelle"
+      "Stelle",
+      "Mak"
     ],
     "artKey": "Icon_Skill_DesperateStrike.png",
     "unifiedTooltips": [
-      "While you have less Health than your enemy, your items have (10%/15%/20%) Crit Chance."
+      "While you have less Health than your enemy, your items have (20%/40%/60%) Crit Chance."
     ]
   },
   {
     "id": "d8e7fa0a-9127-4a11-a84e-d479a011a92d",
     "name": "Improvised Poison",
-    "startingTier": "Gold",
+    "startingTier": "Silver",
     "tiers": {
       "Bronze": {
         "tooltips": []
       },
       "Silver": {
-        "tooltips": []
-      },
-      "Gold": {
         "tooltips": [
           "When you Crit, your Poison items gain 1 Poison for the fight."
         ]
       },
-      "Diamond": {
+      "Gold": {
         "tooltips": [
           "When you Crit, your Poison items gain 2 Poison for the fight."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "When you Crit, your Poison items gain 3 Poison for the fight."
         ]
       },
       "Legendary": {
@@ -1905,7 +1940,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_ImprovisedPoison.png",
     "unifiedTooltips": [
-      "When you Crit, your Poison items gain (1/2) Poison for the fight."
+      "When you Crit, your Poison items gain (1/2/3) Poison for the fight."
     ]
   },
   {
@@ -2053,14 +2088,12 @@ const data: ParsedSkillCard[] = [
       },
       "Gold": {
         "tooltips": [
-          "Your Cores' Cooldown is reduced by 10%.",
-          "While you are Burned, double this effect."
+          "Your Cores' Cooldown is reduced by 10%."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Your Cores' Cooldown is reduced by 15%.",
-          "While you are Burned, double this effect."
+          "Your Cores' Cooldown is reduced by 15%."
         ]
       },
       "Legendary": {
@@ -2081,8 +2114,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_DOO_Overclocked.png",
     "unifiedTooltips": [
-      "Your Cores' Cooldown is reduced by (10%/15%).",
-      "While you are Burned, double this effect."
+      "Your Cores' Cooldown is reduced by (10%/15%)."
     ]
   },
   {
@@ -2095,17 +2127,17 @@ const data: ParsedSkillCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "The first 5 times you Slow each fight, Charge a Regen item 1 second(s)."
+          "The first 4 times you Slow each fight, Charge a Regen item 1 second(s)."
         ]
       },
       "Gold": {
         "tooltips": [
-          "The first 10 times you Slow each fight, Charge a Regen item 1 second(s)."
+          "The first 8 times you Slow each fight, Charge a Regen item 1 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "The first 15 times you Slow each fight, Charge a Regen item 1 second(s)."
+          "The first 12 times you Slow each fight, Charge a Regen item 1 second(s)."
         ]
       },
       "Legendary": {
@@ -2125,7 +2157,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_HardlyWorkin.png",
     "unifiedTooltips": [
-      "The first (5/10/15) times you Slow each fight, Charge a Regen item 1 second(s)."
+      "The first (4/8/12) times you Slow each fight, Charge a Regen item 1 second(s)."
     ]
   },
   {
@@ -3207,45 +3239,6 @@ const data: ParsedSkillCard[] = [
     ]
   },
   {
-    "id": "b2cc190c-ddbd-487c-b99a-ed21150b6c10",
-    "name": "Chocoholic",
-    "startingTier": "Gold",
-    "tiers": {
-      "Bronze": {
-        "tooltips": []
-      },
-      "Silver": {
-        "tooltips": []
-      },
-      "Gold": {
-        "tooltips": [
-          "When you sell a Medium or Large item, get 1 Chocolate Bar(s)."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "When you sell a Medium or Large item, get 2 Chocolate Bar(s)."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [],
-    "hiddenTags": [
-      "Health"
-    ],
-    "customTags": [],
-    "size": "Medium",
-    "heroes": [
-      "Pygmalien"
-    ],
-    "artKey": "Icon_Skill_PYG_Chocoholic.png",
-    "unifiedTooltips": [
-      "When you sell a Medium or Large item, get (1/2) Chocolate Bar(s)."
-    ]
-  },
-  {
     "id": "13d1b66a-1d45-4e8e-9921-8312253fc48e",
     "name": "Barnacle Crusted",
     "startingTier": "Gold",
@@ -3284,6 +3277,45 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_VAN_BarnacleCrusted",
     "unifiedTooltips": [
       "The Cooldown of your Aquatic items is reduced by (5%/10%)."
+    ]
+  },
+  {
+    "id": "b2cc190c-ddbd-487c-b99a-ed21150b6c10",
+    "name": "Chocoholic",
+    "startingTier": "Gold",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": [
+          "When you sell a Medium or Large item, get 1 Chocolate Bar(s)."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "When you sell a Medium or Large item, get 2 Chocolate Bar(s)."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "Health"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Pygmalien"
+    ],
+    "artKey": "Icon_Skill_PYG_Chocoholic.png",
+    "unifiedTooltips": [
+      "When you sell a Medium or Large item, get (1/2) Chocolate Bar(s)."
     ]
   },
   {
@@ -3409,7 +3441,10 @@ const data: ParsedSkillCard[] = [
     "size": "Medium",
     "heroes": [
       "Vanessa",
-      "Jules"
+      "Pygmalien",
+      "Jules",
+      "Stelle",
+      "Dooley"
     ],
     "artKey": "Icon_Skill_Tempering.png",
     "unifiedTooltips": [
@@ -3486,6 +3521,7 @@ const data: ParsedSkillCard[] = [
     "size": "Medium",
     "heroes": [
       "Vanessa",
+      "Pygmalien",
       "Dooley",
       "Mak",
       "Jules",
@@ -3549,17 +3585,17 @@ const data: ParsedSkillCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "The first time you use a Large item each fight, Adjacent items gain 15% Crit Chance for the fight."
+          "The first time you use a Large item each fight, Adjacent items gain 20% Crit Chance for the fight."
         ]
       },
       "Gold": {
         "tooltips": [
-          "The first time you use a Large item each fight, Adjacent items gain 20% Crit Chance for the fight."
+          "The first time you use a Large item each fight, Adjacent items gain 40% Crit Chance for the fight."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "The first time you use a Large item each fight, Adjacent items gain 25% Crit Chance for the fight."
+          "The first time you use a Large item each fight, Adjacent items gain 60% Crit Chance for the fight."
         ]
       },
       "Legendary": {
@@ -3582,28 +3618,30 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_FlankingCriticals.png",
     "unifiedTooltips": [
-      "The first time you use a Large item each fight, Adjacent items gain (15%/20%/25%) Crit Chance for the fight."
+      "The first time you use a Large item each fight, Adjacent items gain (20%/40%/60%) Crit Chance for the fight."
     ]
   },
   {
     "id": "76ae19fd-2783-4c21-919a-cdce66bb8948",
     "name": "Workin' Hard",
-    "startingTier": "Gold",
+    "startingTier": "Silver",
     "tiers": {
       "Bronze": {
         "tooltips": []
       },
       "Silver": {
-        "tooltips": []
+        "tooltips": [
+          "The first 4 times you Haste each fight, Charge 1 Tool 1 second."
+        ]
       },
       "Gold": {
         "tooltips": [
-          "Your Weapons have +7 Damage for each Tool you have."
+          "The first 8 times you Haste each fight, Charge 1 Tool 1 second."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Your Weapons have +14 Damage for each Tool you have."
+          "The first 12 times you Haste each fight, Charge 1 Tool 1 second."
         ]
       },
       "Legendary": {
@@ -3611,11 +3649,10 @@ const data: ParsedSkillCard[] = [
       }
     },
     "tags": [
-      "Weapon",
       "Tool"
     ],
     "hiddenTags": [
-      "DamageReference"
+      "Haste"
     ],
     "customTags": [],
     "size": "Medium",
@@ -3626,7 +3663,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_STE_WorkinHard.png",
     "unifiedTooltips": [
-      "Your Weapons have (+7/+14) Damage for each Tool you have."
+      "The first (4/8/12) times you Haste each fight, Charge 1 Tool 1 second."
     ]
   },
   {
@@ -3728,12 +3765,12 @@ const data: ParsedSkillCard[] = [
       },
       "Gold": {
         "tooltips": [
-          "The first 5 times you Slow each fight, Charge a Heal item 1 second(s)."
+          "The first 5 times you Slow each fight, Charge a Heal or Regen item 1 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "The first 10 times you Slow each fight, Charge a Heal item 1 second(s)."
+          "The first 10 times you Slow each fight, Charge a Heal or Regen item 1 second(s)."
         ]
       },
       "Legendary": {
@@ -3744,7 +3781,8 @@ const data: ParsedSkillCard[] = [
     "hiddenTags": [
       "Charge",
       "HealReference",
-      "SlowReference"
+      "SlowReference",
+      "RegenReference"
     ],
     "customTags": [],
     "size": "Medium",
@@ -3754,7 +3792,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_TraumaKit.png",
     "unifiedTooltips": [
-      "The first (5/10) times you Slow each fight, Charge a Heal item 1 second(s)."
+      "The first (5/10) times you Slow each fight, Charge a Heal or Regen item 1 second(s)."
     ]
   },
   {
@@ -4108,12 +4146,12 @@ const data: ParsedSkillCard[] = [
       },
       "Gold": {
         "tooltips": [
-          "If you have no Weapons, your items' Cooldowns are reduced by 10%."
+          "If you have no Weapons, your items' Cooldowns are reduced by 5%."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "If you have no Weapons, your items' Cooldowns are reduced by 15%."
+          "If you have no Weapons, your items' Cooldowns are reduced by 10%."
         ]
       },
       "Legendary": {
@@ -4127,11 +4165,12 @@ const data: ParsedSkillCard[] = [
     "customTags": [],
     "size": "Medium",
     "heroes": [
-      "Pygmalien"
+      "Pygmalien",
+      "Mak"
     ],
     "artKey": "Icon_Skill_Minimalist.png",
     "unifiedTooltips": [
-      "If you have no Weapons, your items' Cooldowns are reduced by (10%/15%)."
+      "If you have no Weapons, your items' Cooldowns are reduced by (5%/10%)."
     ]
   },
   {
@@ -4223,46 +4262,6 @@ const data: ParsedSkillCard[] = [
     ]
   },
   {
-    "id": "43b5e350-ec7f-4236-aaa4-fbcd0c7721de",
-    "name": "Product Showcase",
-    "startingTier": "Gold",
-    "tiers": {
-      "Bronze": {
-        "tooltips": []
-      },
-      "Silver": {
-        "tooltips": []
-      },
-      "Gold": {
-        "tooltips": [
-          "When one of your items runs out of ammo, Charge items adjacent to it 1 second(s)."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "When one of your items runs out of ammo, Charge items adjacent to it 2 second(s)."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [],
-    "hiddenTags": [
-      "Ammo",
-      "Charge"
-    ],
-    "customTags": [],
-    "size": "Medium",
-    "heroes": [
-      "Common"
-    ],
-    "artKey": "Icon_Skill_MON_ProductShowcase",
-    "unifiedTooltips": [
-      "When one of your items runs out of ammo, Charge items adjacent to it (1/2) second(s)."
-    ]
-  },
-  {
     "id": "d08258b5-be49-410e-a650-4dfa01b35662",
     "name": "Invigorating Cold",
     "startingTier": "Silver",
@@ -4307,6 +4306,46 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_InvigoratingCold.png",
     "unifiedTooltips": [
       "The first time you Freeze each fight, Haste (1/2/3) item(s) for 2 second(s)."
+    ]
+  },
+  {
+    "id": "43b5e350-ec7f-4236-aaa4-fbcd0c7721de",
+    "name": "Product Showcase",
+    "startingTier": "Gold",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": [
+          "When one of your items runs out of ammo, Charge items adjacent to it 1 second(s)."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "When one of your items runs out of ammo, Charge items adjacent to it 2 second(s)."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "Ammo",
+      "Charge"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Common"
+    ],
+    "artKey": "Icon_Skill_MON_ProductShowcase",
+    "unifiedTooltips": [
+      "When one of your items runs out of ammo, Charge items adjacent to it (1/2) second(s)."
     ]
   },
   {
@@ -4658,6 +4697,7 @@ const data: ParsedSkillCard[] = [
     "size": "Medium",
     "heroes": [
       "Vanessa",
+      "Pygmalien",
       "Dooley",
       "Jules",
       "Mak",
@@ -5012,26 +5052,24 @@ const data: ParsedSkillCard[] = [
   {
     "id": "5fca38e0-2144-422d-b9bd-85a3cd443215",
     "name": "Expert Pilot",
-    "startingTier": "Bronze",
+    "startingTier": "Silver",
     "tiers": {
       "Bronze": {
-        "tooltips": [
-          "Your Vehicles have +20 Damage and Shield."
-        ]
+        "tooltips": []
       },
       "Silver": {
         "tooltips": [
-          "Your Vehicles have +30 Damage and Shield."
+          "Your Vehicles and Drones have +30 Damage and Shield."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Your Vehicles have +40 Damage and Shield."
+          "Your Vehicles and Drones have +40 Damage and Shield."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Your Vehicles have +50 Damage and Shield."
+          "Your Vehicles and Drones have +50 Damage and Shield."
         ]
       },
       "Legendary": {
@@ -5053,7 +5091,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_Flagship.png",
     "unifiedTooltips": [
-      "Your Vehicles have (+20/+30/+40/+50) Damage and Shield."
+      "Your Vehicles and Drones have (+30/+40/+50) Damage and Shield."
     ]
   },
   {
@@ -5942,12 +5980,12 @@ const data: ParsedSkillCard[] = [
       },
       "Gold": {
         "tooltips": [
-          "When you Crit with an item, it gains +5% Crit Chance for the fight."
+          "When you use an item, it gains +5% Crit Chance for the fight."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "When you Crit with an item, it gains +10% Crit Chance for the fight."
+          "When you use an item, it gains +10% Crit Chance for the fight."
         ]
       },
       "Legendary": {
@@ -5966,7 +6004,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_HonedStrike.png",
     "unifiedTooltips": [
-      "When you Crit with an item, it gains (+5%/+10%) Crit Chance for the fight."
+      "When you use an item, it gains (+5%/+10%) Crit Chance for the fight."
     ]
   },
   {
@@ -6177,7 +6215,6 @@ const data: ParsedSkillCard[] = [
     "customTags": [],
     "size": "Medium",
     "heroes": [
-      "Pygmalien",
       "Mak"
     ],
     "artKey": "Icon_Skill_NaniteHealing.png",
@@ -6449,17 +6486,17 @@ const data: ParsedSkillCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "The first time you use a Large item each fight, Burn 10."
+          "The first time you use a Large item each fight, Burn 20."
         ]
       },
       "Gold": {
         "tooltips": [
-          "The first time you use a Large item each fight, Burn 15."
+          "The first time you use a Large item each fight, Burn 40."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "The first time you use a Large item each fight, Burn 20."
+          "The first time you use a Large item each fight, Burn 60."
         ]
       },
       "Legendary": {
@@ -6481,7 +6518,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_FirstFlames.png",
     "unifiedTooltips": [
-      "The first time you use a Large item each fight, Burn (10/15/20)."
+      "The first time you use a Large item each fight, Burn (20/40/60)."
     ]
   },
   {
@@ -6663,26 +6700,24 @@ const data: ParsedSkillCard[] = [
   {
     "id": "6a332b72-d300-486b-9659-1ca83e064ed2",
     "name": "Staying Power",
-    "startingTier": "Bronze",
+    "startingTier": "Silver",
     "tiers": {
       "Bronze": {
-        "tooltips": [
-          "When you use a Tool, Heal 5."
-        ]
+        "tooltips": []
       },
       "Silver": {
         "tooltips": [
-          "When you use a Tool, Heal 10."
+          "When you use a Weapon or Tool, your Heal items gain +4 Heal for the fight."
         ]
       },
       "Gold": {
         "tooltips": [
-          "When you use a Tool, Heal 15."
+          "When you use a Weapon or Tool, your Heal items gain +8 Heal for the fight."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "When you use a Tool, Heal 20."
+          "When you use a Weapon or Tool, your Heal items gain +12 Heal for the fight."
         ]
       },
       "Legendary": {
@@ -6702,7 +6737,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_StayingPower.png",
     "unifiedTooltips": [
-      "When you use a Tool, Heal (5/10/15/20)."
+      "When you use a Weapon or Tool, your Heal items gain (+4/+8/+12) Heal for the fight."
     ]
   },
   {
@@ -6974,17 +7009,17 @@ const data: ParsedSkillCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "The first time you use a Large item each fight, Poison 10."
+          "The first time you use a Large item each fight, Poison 20."
         ]
       },
       "Gold": {
         "tooltips": [
-          "The first time you use a Large item each fight, Poison 15."
+          "The first time you use a Large item each fight, Poison 40."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "The first time you use a Large item each fight, Poison 20."
+          "The first time you use a Large item each fight, Poison 60."
         ]
       },
       "Legendary": {
@@ -7004,7 +7039,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_PoisonousOpener.png",
     "unifiedTooltips": [
-      "The first time you use a Large item each fight, Poison (10/15/20)."
+      "The first time you use a Large item each fight, Poison (20/40/60)."
     ]
   },
   {
@@ -7798,22 +7833,22 @@ const data: ParsedSkillCard[] = [
     "tiers": {
       "Bronze": {
         "tooltips": [
-          "When you Freeze, a Weapon gains +30 Damage for the fight."
+          "When you Freeze, a Weapon gains +20 Damage for the fight."
         ]
       },
       "Silver": {
         "tooltips": [
-          "When you Freeze, a Weapon gains +60 Damage for the fight."
+          "When you Freeze, a Weapon gains +40 Damage for the fight."
         ]
       },
       "Gold": {
         "tooltips": [
-          "When you Freeze, a Weapon gains +90 Damage for the fight."
+          "When you Freeze, a Weapon gains +60 Damage for the fight."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "When you Freeze, a Weapon gains +120 Damage for the fight."
+          "When you Freeze, a Weapon gains +80 Damage for the fight."
         ]
       },
       "Legendary": {
@@ -7834,28 +7869,30 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_MON_TheColdShoulder_01.png",
     "unifiedTooltips": [
-      "When you Freeze, a Weapon gains (+30/+60/+90/+120) Damage for the fight."
+      "When you Freeze, a Weapon gains (+20/+40/+60/+80) Damage for the fight."
     ]
   },
   {
     "id": "1e8293e9-c60f-464a-9d44-21e766978edc",
     "name": "Improvised Burn",
-    "startingTier": "Gold",
+    "startingTier": "Silver",
     "tiers": {
       "Bronze": {
         "tooltips": []
       },
       "Silver": {
-        "tooltips": []
-      },
-      "Gold": {
         "tooltips": [
           "When you Crit, your Burn items gain 1 Burn for the fight."
         ]
       },
-      "Diamond": {
+      "Gold": {
         "tooltips": [
           "When you Crit, your Burn items gain 2 Burn for the fight."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "When you Crit, your Burn items gain 3 Burn for the fight."
         ]
       },
       "Legendary": {
@@ -7875,7 +7912,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_ImprovisedBurn.png",
     "unifiedTooltips": [
-      "When you Crit, your Burn items gain (1/2) Burn for the fight."
+      "When you Crit, your Burn items gain (1/2/3) Burn for the fight."
     ]
   },
   {
@@ -8104,17 +8141,17 @@ const data: ParsedSkillCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "Your Shield items have +1 Shield for every 4 Gold you have."
+          "When you use a non-Shield item, your Shield items gain +3 Shield for the fight."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Your Shield items have +1 Shield for every 3 Gold you have."
+          "When you use a non-Shield item, your Shield items gain +6 Shield for the fight."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Your Shield items have +1 Shield for every 2 Gold you have."
+          "When you use a non-Shield item, your Shield items gain +9 Shield for the fight."
         ]
       },
       "Legendary": {
@@ -8123,8 +8160,7 @@ const data: ParsedSkillCard[] = [
     },
     "tags": [],
     "hiddenTags": [
-      "ShieldReference",
-      "EconomyReference"
+      "ShieldReference"
     ],
     "customTags": [],
     "size": "Medium",
@@ -8133,7 +8169,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_MakeshiftPlate.png",
     "unifiedTooltips": [
-      "Your Shield items have +1 Shield for every (4/3/2) Gold you have."
+      "When you use a non-Shield item, your Shield items gain (+3/+6/+9) Shield for the fight."
     ]
   },
   {
@@ -8275,17 +8311,17 @@ const data: ParsedSkillCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "While you are Shielded, your Weapons' Cooldowns are are reduced by 10%."
+          "While you are Shielded, your Weapons' Cooldowns are are reduced by 5%."
         ]
       },
       "Gold": {
         "tooltips": [
-          "While you are Shielded, your Weapons' Cooldowns are are reduced by 20%."
+          "While you are Shielded, your Weapons' Cooldowns are are reduced by 10%."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "While you are Shielded, your Weapons' Cooldowns are are reduced by 30%."
+          "While you are Shielded, your Weapons' Cooldowns are are reduced by 15%."
         ]
       },
       "Legendary": {
@@ -8307,7 +8343,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_MON_GuardiansFury",
     "unifiedTooltips": [
-      "While you are Shielded, your Weapons' Cooldowns are are reduced by (10%/20%/30%)."
+      "While you are Shielded, your Weapons' Cooldowns are are reduced by (5%/10%/15%)."
     ]
   },
   {
@@ -8615,12 +8651,12 @@ const data: ParsedSkillCard[] = [
       },
       "Gold": {
         "tooltips": [
-          "When you use an item with Ammo, it gains +5% Crit Chance for the fight."
+          "When you use an item with Ammo, it gains +10% Crit Chance for the fight."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "When you use an item with Ammo, it gains +10% Crit Chance for the fight."
+          "When you use an item with Ammo, it gains +15% Crit Chance for the fight."
         ]
       },
       "Legendary": {
@@ -8639,7 +8675,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_VAN_PartingShot.png",
     "unifiedTooltips": [
-      "When you use an item with Ammo, it gains (+5%/+10%) Crit Chance for the fight."
+      "When you use an item with Ammo, it gains (+10%/+15%) Crit Chance for the fight."
     ]
   },
   {
@@ -8805,24 +8841,22 @@ const data: ParsedSkillCard[] = [
   {
     "id": "1e63e9bd-603a-4965-a6e8-4e180377c0ff",
     "name": "Temporal Strike",
-    "startingTier": "Silver",
+    "startingTier": "Gold",
     "tiers": {
       "Bronze": {
         "tooltips": []
       },
       "Silver": {
-        "tooltips": [
-          "If you have exactly one Weapon, its Cooldown is reduced by 5%."
-        ]
+        "tooltips": []
       },
       "Gold": {
         "tooltips": [
-          "If you have exactly one Weapon, its Cooldown is reduced by 10%."
+          "The first 5 times you Slow each fight, Charge a Weapon 1 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "If you have exactly one Weapon, its Cooldown is reduced by 15%."
+          "The first 10 times you Slow each fight, Charge a Weapon 1 second(s)."
         ]
       },
       "Legendary": {
@@ -8833,16 +8867,20 @@ const data: ParsedSkillCard[] = [
       "Weapon"
     ],
     "hiddenTags": [
-      "Cooldown"
+      "SlowReference"
     ],
     "customTags": [],
     "size": "Medium",
     "heroes": [
-      "Vanessa"
+      "Vanessa",
+      "Mak",
+      "Stelle",
+      "Jules",
+      "Dooley"
     ],
     "artKey": "Icon_Skill_TemporalStrike.png",
     "unifiedTooltips": [
-      "If you have exactly one Weapon, its Cooldown is reduced by (5%/10%/15%)."
+      "The first (5/10) times you Slow each fight, Charge a Weapon 1 second(s)."
     ]
   },
   {
@@ -8993,14 +9031,12 @@ const data: ParsedSkillCard[] = [
       },
       "Gold": {
         "tooltips": [
-          "When you use an item, your items gain 3% Crit Chance for the fight.",
-          "Your items have 100% less Crit Chance."
+          "When you use an item, your items gain 1% Crit Chance for the fight."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "When you use an item, your items gain 6% Crit Chance for the fight.",
-          "Your items have 100% less Crit Chance."
+          "When you use an item, your items gain 2% Crit Chance for the fight."
         ]
       },
       "Legendary": {
@@ -9023,8 +9059,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_BuildingCrescendo.png",
     "unifiedTooltips": [
-      "When you use an item, your items gain (3%/6%) Crit Chance for the fight.",
-      "Your items have 100% less Crit Chance."
+      "When you use an item, your items gain (1%/2%) Crit Chance for the fight."
     ]
   },
   {
@@ -9336,12 +9371,12 @@ const data: ParsedSkillCard[] = [
       },
       "Gold": {
         "tooltips": [
-          "Your item's Cooldowns are reduced by 5% if you have a Vehicle, reduced by 5% if you have a Weapon, and reduced by 5% if you have a Tool."
+          "Your item's Cooldowns are reduced by 2% if you have a Vehicle, reduced by 2% if you have a Weapon, and reduced by 2% if you have a Tool."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Your item's Cooldowns are reduced by 10% if you have a Vehicle, reduced by 10% if you have a Weapon, and reduced by 10% if you have a Tool."
+          "Your item's Cooldowns are reduced by 4% if you have a Vehicle, reduced by 4% if you have a Weapon, and reduced by 4% if you have a Tool."
         ]
       },
       "Legendary": {
@@ -9363,7 +9398,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_MON_HighImpact.png",
     "unifiedTooltips": [
-      "Your item's Cooldowns are reduced by (5%/10%) if you have a Vehicle, reduced by (5%/10%) if you have a Weapon, and reduced by (5%/10%) if you have a Tool."
+      "Your item's Cooldowns are reduced by (2%/4%) if you have a Vehicle, reduced by (2%/4%) if you have a Weapon, and reduced by (2%/4%) if you have a Tool."
     ]
   },
   {
@@ -9810,17 +9845,17 @@ const data: ParsedSkillCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "Your Weapons have +2 Damage and Shield items have +2 Shield for each Friend you have."
+          "When you use a Friend, your Weapons gain +2 Damage and Shield items gain +2 Shield for the fight."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Your Weapons have +4 Damage and Shield items have +4 Shield for each Friend you have."
+          "When you use a Friend, your Weapons gain +4 Damage and Shield items gain +4 Shield for the fight."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Your Weapons have +6 Damage and Shield items have +6 Shield for each Friend you have."
+          "When you use a Friend, your Weapons gain +6 Damage and Shield items gain +6 Shield for the fight."
         ]
       },
       "Legendary": {
@@ -9842,7 +9877,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_BalancedFriendship.png",
     "unifiedTooltips": [
-      "Your Weapons have (+2/+4/+6) Damage and Shield items have (+2/+4/+6) Shield for each Friend you have."
+      "When you use a Friend, your Weapons gain (+2/+4/+6) Damage and Shield items gain (+2/+4/+6) Shield for the fight."
     ]
   },
   {
@@ -10236,7 +10271,6 @@ const data: ParsedSkillCard[] = [
     "customTags": [],
     "size": "Medium",
     "heroes": [
-      "Pygmalien",
       "Vanessa"
     ],
     "artKey": "Icon_Skill_ImprovisedHealing.png",
@@ -10588,12 +10622,12 @@ const data: ParsedSkillCard[] = [
       },
       "Gold": {
         "tooltips": [
-          "Your Flying items' Cooldowns are reduced by 10%."
+          "Your Flying items' Cooldowns are reduced by 5%."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Your Flying items' Cooldowns are reduced by 15%."
+          "Your Flying items' Cooldowns are reduced by 10%."
         ]
       },
       "Legendary": {
@@ -10612,7 +10646,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Assets/TheBazaar/Art/UI/Skills/Stelle/Icon_Skill_STE_ThrillOfTheFlight.png",
     "unifiedTooltips": [
-      "Your Flying items' Cooldowns are reduced by (10%/15%)."
+      "Your Flying items' Cooldowns are reduced by (5%/10%)."
     ]
   },
   {
@@ -11090,47 +11124,6 @@ const data: ParsedSkillCard[] = [
     ]
   },
   {
-    "id": "03968f2d-5f40-464a-bf1f-9475836157cd",
-    "name": "Jury Rigger",
-    "startingTier": "Silver",
-    "tiers": {
-      "Bronze": {
-        "tooltips": []
-      },
-      "Silver": {
-        "tooltips": [
-          "When you use an Ammo item, Reload the item to the left of it 1 Ammo."
-        ]
-      },
-      "Gold": {
-        "tooltips": [
-          "When you use an Ammo item, Reload the item to the left of it 2 Ammo."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "When you use an Ammo item, Reload the item to the left of it 3 Ammo."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [],
-    "hiddenTags": [
-      "Ammo"
-    ],
-    "customTags": [],
-    "size": "Medium",
-    "heroes": [
-      "Common"
-    ],
-    "artKey": "Icon_Skill_MON_ALittleOfEverything_01.png",
-    "unifiedTooltips": [
-      "When you use an Ammo item, Reload the item to the left of it (1/2/3) Ammo."
-    ]
-  },
-  {
     "id": "a9b441e1-5824-4855-9359-2ab4643d9ff5",
     "name": "Toxic Shield",
     "startingTier": "Silver",
@@ -11171,6 +11164,47 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_ToxicShield.png",
     "unifiedTooltips": [
       "The first time you fall below half Health each fight, Shield equal to (2/3/4) times the Poison on your enemy."
+    ]
+  },
+  {
+    "id": "03968f2d-5f40-464a-bf1f-9475836157cd",
+    "name": "Jury Rigger",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "When you use an Ammo item, Reload the item to the left of it 1 Ammo."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "When you use an Ammo item, Reload the item to the left of it 2 Ammo."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "When you use an Ammo item, Reload the item to the left of it 3 Ammo."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "Ammo"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Common"
+    ],
+    "artKey": "Icon_Skill_MON_ALittleOfEverything_01.png",
+    "unifiedTooltips": [
+      "When you use an Ammo item, Reload the item to the left of it (1/2/3) Ammo."
     ]
   },
   {
@@ -11563,13 +11597,13 @@ const data: ParsedSkillCard[] = [
       },
       "Gold": {
         "tooltips": [
-          "Your items have +50% Crit Chance.",
+          "Your items have +75% Crit Chance.",
           "When you use an item, all your items lose 10% Crit Chance for the fight."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Your items have +75% Crit Chance.",
+          "Your items have +100% Crit Chance.",
           "When you use an item, all your items lose 10% Crit Chance for the fight."
         ]
       },
@@ -11593,7 +11627,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_FirstStrike.png",
     "unifiedTooltips": [
-      "Your items have (+50%/+75%) Crit Chance.",
+      "Your items have (+75%/+100%) Crit Chance.",
       "When you use an item, all your items lose 10% Crit Chance for the fight."
     ]
   },
@@ -11687,17 +11721,17 @@ const data: ParsedSkillCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "You have 2 Regen for each non-Weapon item you have."
+          "You have 3 Regen for each non-Weapon item you have."
         ]
       },
       "Gold": {
         "tooltips": [
-          "You have 4 Regen for each non-Weapon item you have."
+          "You have 6 Regen for each non-Weapon item you have."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "You have 6 Regen for each non-Weapon item you have."
+          "You have 9 Regen for each non-Weapon item you have."
         ]
       },
       "Legendary": {
@@ -11716,7 +11750,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_HealthyLifestyle.png",
     "unifiedTooltips": [
-      "You have (2/4/6) Regen for each non-Weapon item you have."
+      "You have (3/6/9) Regen for each non-Weapon item you have."
     ]
   },
   {
@@ -11805,6 +11839,47 @@ const data: ParsedSkillCard[] = [
     ]
   },
   {
+    "id": "a59bc243-7c8b-447a-8ab7-968f662b1c50",
+    "name": "Waters of Infinity",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "You have +20 Regen for each non-Weapon item you have."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "You have +30 Regen for each non-Weapon item you have."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "You have +40 Regen for each non-Weapon item you have."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "Regen"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Common"
+    ],
+    "artKey": "Icon_Skill_MON_WatersofInfinity.png",
+    "unifiedTooltips": [
+      "You have (+20/+30/+40) Regen for each non-Weapon item you have."
+    ]
+  },
+  {
     "id": "13989ad3-2122-4d86-a323-bb90fda8360b",
     "name": "Bloodhound",
     "startingTier": "Silver",
@@ -11844,47 +11919,6 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_Bloodhound.png",
     "unifiedTooltips": [
       "The first time an enemy falls below half Health each fight, Charge your items (2/3/4) second(s)."
-    ]
-  },
-  {
-    "id": "a59bc243-7c8b-447a-8ab7-968f662b1c50",
-    "name": "Waters of Infinity",
-    "startingTier": "Silver",
-    "tiers": {
-      "Bronze": {
-        "tooltips": []
-      },
-      "Silver": {
-        "tooltips": [
-          "You have +20 Regen for each non-Weapon item you have."
-        ]
-      },
-      "Gold": {
-        "tooltips": [
-          "You have +30 Regen for each non-Weapon item you have."
-        ]
-      },
-      "Diamond": {
-        "tooltips": [
-          "You have +40 Regen for each non-Weapon item you have."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [],
-    "hiddenTags": [
-      "Regen"
-    ],
-    "customTags": [],
-    "size": "Medium",
-    "heroes": [
-      "Common"
-    ],
-    "artKey": "Icon_Skill_MON_WatersofInfinity.png",
-    "unifiedTooltips": [
-      "You have (+20/+30/+40) Regen for each non-Weapon item you have."
     ]
   },
   {
@@ -12185,22 +12219,24 @@ const data: ParsedSkillCard[] = [
   {
     "id": "0eb35f18-3c03-4ea6-9af4-b7345bce1e3c",
     "name": "Beautiful Friendship",
-    "startingTier": "Gold",
+    "startingTier": "Silver",
     "tiers": {
       "Bronze": {
         "tooltips": []
       },
       "Silver": {
-        "tooltips": []
-      },
-      "Gold": {
         "tooltips": [
           "When you use a Friend, your Weapons gain 3 Damage for the fight."
         ]
       },
-      "Diamond": {
+      "Gold": {
         "tooltips": [
           "When you use a Friend, your Weapons gain 6 Damage for the fight."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "When you use a Friend, your Weapons gain 9 Damage for the fight."
         ]
       },
       "Legendary": {
@@ -12221,7 +12257,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_DOO_BeautifulFriendship.png",
     "unifiedTooltips": [
-      "When you use a Friend, your Weapons gain (3/6) Damage for the fight."
+      "When you use a Friend, your Weapons gain (3/6/9) Damage for the fight."
     ]
   },
   {
@@ -12271,15 +12307,13 @@ const data: ParsedSkillCard[] = [
   {
     "id": "2efc2530-badd-4460-9b03-9d34a10a85de",
     "name": "Bombs Away!",
-    "startingTier": "Silver",
+    "startingTier": "Gold",
     "tiers": {
       "Bronze": {
         "tooltips": []
       },
       "Silver": {
-        "tooltips": [
-          "When you use a Vehicle or Drone, Burn 1."
-        ]
+        "tooltips": []
       },
       "Gold": {
         "tooltips": [
@@ -12306,44 +12340,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_FireAccelerant.png",
     "unifiedTooltips": [
-      "When you use a Vehicle or Drone, Burn (1/2/3)."
-    ]
-  },
-  {
-    "id": "e8770458-220a-45bd-bfef-d6045b152d29",
-    "name": "Bonk",
-    "startingTier": "Diamond",
-    "tiers": {
-      "Bronze": {
-        "tooltips": []
-      },
-      "Silver": {
-        "tooltips": []
-      },
-      "Gold": {
-        "tooltips": []
-      },
-      "Diamond": {
-        "tooltips": [
-          "Enemy Cooldowns are increased by 1 second(s)."
-        ]
-      },
-      "Legendary": {
-        "tooltips": []
-      }
-    },
-    "tags": [],
-    "hiddenTags": [
-      "Cooldown"
-    ],
-    "customTags": [],
-    "size": "Medium",
-    "heroes": [
-      "Common"
-    ],
-    "artKey": "Icon_Skill_MON_TurnOutYourPockets_03.png",
-    "unifiedTooltips": [
-      "Enemy Cooldowns are increased by 1 second(s)."
+      "When you use a Vehicle or Drone, Burn (2/3)."
     ]
   },
   {
@@ -12385,6 +12382,43 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_QuickHeal.png",
     "unifiedTooltips": [
       "The first time you Over-Heal each fight, Haste your items for (2/4) second(s)."
+    ]
+  },
+  {
+    "id": "e8770458-220a-45bd-bfef-d6045b152d29",
+    "name": "Bonk",
+    "startingTier": "Diamond",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": []
+      },
+      "Diamond": {
+        "tooltips": [
+          "Enemy Cooldowns are increased by 1 second(s)."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "Cooldown"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Common"
+    ],
+    "artKey": "Icon_Skill_MON_TurnOutYourPockets_03.png",
+    "unifiedTooltips": [
+      "Enemy Cooldowns are increased by 1 second(s)."
     ]
   },
   {
@@ -12511,26 +12545,24 @@ const data: ParsedSkillCard[] = [
   {
     "id": "113091ab-c543-4745-9dc4-18ab1cdfb3b8",
     "name": "Arbitrage",
-    "startingTier": "Bronze",
+    "startingTier": "Silver",
     "tiers": {
       "Bronze": {
-        "tooltips": [
-          "When you win a fight against a Hero, gain 2 Gold."
-        ]
+        "tooltips": []
       },
       "Silver": {
         "tooltips": [
-          "When you win a fight against a Hero, gain 3 Gold."
+          "Your rerolls cost 1 less Gold."
         ]
       },
       "Gold": {
         "tooltips": [
-          "When you win a fight against a Hero, gain 4 Gold."
+          "Your rerolls cost 2 less Gold."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "When you win a fight against a Hero, gain 5 Gold."
+          "Your rerolls cost 3 less Gold."
         ]
       },
       "Legendary": {
@@ -12539,18 +12571,16 @@ const data: ParsedSkillCard[] = [
     },
     "tags": [],
     "hiddenTags": [
-      "Gold"
+      "EconomyReference"
     ],
     "customTags": [],
     "size": "Medium",
     "heroes": [
-      "Vanessa",
-      "Pygmalien",
-      "Stelle"
+      "Common"
     ],
     "artKey": "Icon_Skill_CaptainsDue.png",
     "unifiedTooltips": [
-      "When you win a fight against a Hero, gain (2/3/4/5) Gold."
+      "Your rerolls cost (1/2/3) less Gold."
     ]
   },
   {

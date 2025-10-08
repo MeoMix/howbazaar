@@ -312,6 +312,10 @@ const data: ParsedCombatEncounterCard[] = [
     "name": "Outlands Dervish"
   },
   {
+    "id": "8f73d2d6-6071-4464-bb19-8e0783de4df0",
+    "name": "Lord Arken"
+  },
+  {
     "id": "a871d83c-fbe0-4b38-b004-6cc598b31239",
     "name": "Master Alchemist"
   },
@@ -388,12 +392,12 @@ const data: ParsedCombatEncounterCard[] = [
     "name": "Bloodreef Captain"
   },
   {
-    "id": "962bf2b2-fc1b-4ad3-9526-15d76d3bb0de",
-    "name": "Foundation Weeper"
-  },
-  {
     "id": "fd862d85-66cd-431f-a85a-07742cbc2e1b",
     "name": "Test Subject Alpha"
+  },
+  {
+    "id": "962bf2b2-fc1b-4ad3-9526-15d76d3bb0de",
+    "name": "Foundation Weeper"
   },
   {
     "id": "365122bf-7bb0-4fa3-93bd-06bf5a94e324",

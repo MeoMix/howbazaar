@@ -2,6 +2,12 @@ import type { PatchVersion } from './types';
 
 export const AVAILABLE_VERSIONS: PatchVersion[] = [
     {
+        version: '5.0.0-Oct082025',
+        label: 'v5.0.0 - Oct 08',
+        date: 'Oct 08',
+        path: '5.0.0-Oct082025/patchNotes.ts'
+    },
+    {
         version: '5.0.0-Sep172025',
         label: 'v5.0.0 - Sep 17',
         date: 'Sep 17',
