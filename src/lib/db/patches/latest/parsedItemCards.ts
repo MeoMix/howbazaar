@@ -105,7 +105,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -238,7 +238,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -488,7 +488,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -776,7 +776,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -967,7 +967,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -1103,7 +1103,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -1354,7 +1354,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -1482,7 +1482,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -1604,7 +1604,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -1825,13 +1825,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Poison"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Poison"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -1849,7 +1851,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -1867,7 +1869,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Poison"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -1979,7 +1982,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -2112,7 +2115,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -2350,7 +2353,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -2484,7 +2487,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -2587,13 +2590,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "When you Crit with the item to the left of this, Shield equal to 5 times this item's Poison."
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "When you Crit with the item to the left of this, Heal equal to 5 times this item's Poison."
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -2629,7 +2634,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "When you Crit with the item to the left of this, deal Damage equal to 5 times this item's Poison."
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -2733,7 +2739,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -2849,13 +2855,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Burn"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Burn"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -2873,7 +2881,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -2891,7 +2899,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Burn"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -3003,7 +3012,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -3133,7 +3142,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -3260,7 +3269,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -3496,7 +3505,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -3629,7 +3638,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -4004,7 +4013,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -4110,13 +4119,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "When your items start Flying, Shield equal to 5 times this item's Burn."
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "When your items start Flying, Heal equal to 5 times this item's Burn."
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -4134,7 +4145,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -4152,7 +4163,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "When your items start Flying, deal Damage equal to 5 times this item's Burn."
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -4269,7 +4281,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -4391,7 +4403,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -4509,7 +4521,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -4884,7 +4896,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -5015,7 +5027,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -5145,7 +5157,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -5389,7 +5401,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -5517,7 +5529,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -5623,13 +5635,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "When your items start Flying, Shield equal to 5 times this item's Regen."
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "When your items start Flying, Heal equal to 5 times this item's Regen."
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -5647,7 +5661,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -5665,7 +5679,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "When your items start Flying, deal Damage equal to 5 times this item's Regen."
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -6107,7 +6122,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -6234,7 +6249,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -6364,7 +6379,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -6485,7 +6500,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -6605,7 +6620,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -6851,7 +6866,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -6985,7 +7000,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -7111,7 +7126,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -7245,7 +7260,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -7371,7 +7386,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -7498,7 +7513,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -7646,7 +7661,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -7771,7 +7786,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -7989,13 +8004,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Poison"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Poison"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -8013,7 +8030,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -8031,7 +8048,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Poison"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -8117,13 +8135,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Burn"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Burn"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -8141,7 +8161,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -8159,7 +8179,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Burn"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -8240,13 +8261,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Poison"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Poison"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -8264,7 +8287,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -8282,7 +8305,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Poison"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -8366,13 +8390,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Regen"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Regen"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -8390,7 +8416,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -8408,7 +8434,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Regen"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -8519,7 +8546,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -8624,13 +8651,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Regen"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Regen"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -8648,7 +8677,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -8666,7 +8695,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Regen"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -8751,13 +8781,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Burn"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Burn"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -8775,7 +8807,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -8793,7 +8825,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Burn"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -8885,13 +8918,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Poison"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Poison"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -8909,7 +8944,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -8927,7 +8962,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Poison"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -9043,7 +9079,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -9139,7 +9175,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "At the start of each fight, Shield equal to 5 times this item's Burn."
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
@@ -9163,7 +9200,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "At the start of each fight, deal Damage equal to 5 times this item's Burn."
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -9274,7 +9312,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -9397,7 +9435,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -9525,7 +9563,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -9811,7 +9849,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -9933,7 +9971,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -10065,7 +10103,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -10089,7 +10127,7 @@ const data: ParsedItemCard[] = [
               "Buy 4 Freeze items"
             ],
             "rewardTooltips": [
-              "This has +1 Multicast."
+              "This has +{aura.e1} Multicast."
             ]
           }
         ]
@@ -10209,7 +10247,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -10312,13 +10350,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Burn"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Burn"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -10336,7 +10376,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -10354,7 +10394,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Burn"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -10378,7 +10419,7 @@ const data: ParsedItemCard[] = [
               "Have 75+ Burn on this item."
             ],
             "rewardTooltips": [
-              "This has +1 Multicast."
+              "This has +{aura.e1} Multicast."
             ]
           }
         ]
@@ -10460,13 +10501,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "When you use a non-Weapon item, Shield equal to 5 times this item's Poison."
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "When you use a non-Weapon item, Heal equal to 5 times this item's Poison."
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -10503,7 +10546,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "When ANY Player uses a Weapon, deal Damage equal to 5 times this item's Poison."
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -10670,7 +10714,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -10790,7 +10834,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -10894,13 +10938,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Burn"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Burn"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -10918,7 +10964,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -10936,7 +10982,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Burn"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -11047,7 +11094,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -11173,7 +11220,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -11274,13 +11321,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Regen"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Regen"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -11316,7 +11365,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Regen"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -11434,7 +11484,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -11565,7 +11615,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -11697,7 +11747,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -11952,13 +12002,13 @@ const data: ParsedItemCard[] = [
       "Gold": {
         "tooltips": [
           "Cooldown 8 seconds",
-          "Use a Property"
+          "Use another Property"
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 7 seconds",
-          "Use a Property"
+          "Use another Property"
         ]
       },
       "Legendary": {
@@ -12024,7 +12074,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -12043,7 +12093,7 @@ const data: ParsedItemCard[] = [
     "quests": [],
     "unifiedTooltips": [
       "Cooldown (8/7) seconds",
-      "Use a Property"
+      "Use another Property"
     ]
   },
   {
@@ -12147,7 +12197,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -12271,7 +12321,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -12401,7 +12451,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -12533,7 +12583,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -12637,13 +12687,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Burn"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Burn"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -12661,7 +12713,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -12679,7 +12731,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Burn"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -12899,7 +12952,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -13026,7 +13079,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -13149,7 +13202,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -13276,7 +13329,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -13406,7 +13459,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -13763,7 +13816,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -13885,7 +13938,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -14133,7 +14186,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -14254,7 +14307,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -14383,7 +14436,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -14480,13 +14533,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Burn"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Burn"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -14504,7 +14559,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -14522,7 +14577,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Burn"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -14749,7 +14805,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -14881,7 +14937,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -15009,7 +15065,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -15138,7 +15194,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -15263,7 +15319,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -15383,7 +15439,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -15507,7 +15563,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -15751,7 +15807,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -15872,7 +15928,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -16126,7 +16182,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -16260,7 +16316,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -16392,7 +16448,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -16442,7 +16498,7 @@ const data: ParsedItemCard[] = [
       "Legendary": {
         "tooltips": [
           "When you use a Vehicle or Flying item, Slow an item on each Player's board for 1 second(s).",
-          "Your items are affected by Freeze and Slow for half as long."
+          "Your Flying items are affected by Freeze and Slow for half as long."
         ]
       }
     },
@@ -16535,7 +16591,7 @@ const data: ParsedItemCard[] = [
     "quests": [],
     "unifiedTooltips": [
       "When you use a Vehicle or Flying item, Slow an item on each Player's board for 1 second(s).",
-      "Your items are affected by Freeze and Slow for half as long."
+      "Your Flying items are affected by Freeze and Slow for half as long."
     ]
   },
   {
@@ -16643,7 +16699,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -16897,7 +16953,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -17025,7 +17081,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -17273,7 +17329,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -17394,7 +17450,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -17707,7 +17763,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -17833,7 +17889,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -17932,13 +17988,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Burn"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Burn"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -17956,7 +18014,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -17974,7 +18032,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Burn"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -18062,13 +18121,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Burn"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Burn"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -18086,7 +18147,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -18104,7 +18165,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Burn"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -18381,7 +18443,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -18627,7 +18689,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -18753,7 +18815,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -18887,7 +18949,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -19009,7 +19071,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -19140,7 +19202,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -19523,7 +19585,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -19652,7 +19714,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -19779,7 +19841,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -19910,7 +19972,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -20040,7 +20102,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -20146,13 +20208,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Burn"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Burn"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -20170,7 +20234,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -20188,7 +20252,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Burn"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -20301,7 +20366,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -20550,7 +20615,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -20788,7 +20853,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -20910,7 +20975,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -21045,7 +21110,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -21333,7 +21398,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -21438,13 +21503,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Burn"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Burn"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -21462,7 +21529,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -21480,7 +21547,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Burn"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -21591,7 +21659,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -21688,13 +21756,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "When you use the Weapon to the left of this, Shield equal to 5 times this item's Poison."
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "When you use the Weapon to the left of this, Heal equal to 5 times this item's Poison."
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -21730,7 +21800,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "When you use the Weapon to the left of this, deal Damage equal to 5 times this item's Poison."
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -21835,7 +21906,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -21965,7 +22036,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -22096,7 +22167,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -22219,7 +22290,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -22341,7 +22412,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -22465,7 +22536,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -22600,7 +22671,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -22705,13 +22776,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Poison"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Poison"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -22729,7 +22802,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -22747,7 +22820,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Poison"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -22971,7 +23045,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -23100,7 +23174,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -23143,7 +23217,7 @@ const data: ParsedItemCard[] = [
           "Ammo 5",
           "Deal 20 Damage",
           "When this runs out of ammo, destroy it for the fight.",
-          "When this is destroyed, deal 5 times this item's Damage"
+          "When this is destroyed, deal {aura.e2.mod} times this item's Damage"
         ]
       },
       "Gold": {
@@ -23152,7 +23226,7 @@ const data: ParsedItemCard[] = [
           "Ammo 5",
           "Deal 30 Damage",
           "When this runs out of ammo, destroy it for the fight.",
-          "When this is destroyed, deal 5 times this item's Damage"
+          "When this is destroyed, deal {aura.e2.mod} times this item's Damage"
         ]
       },
       "Diamond": {
@@ -23161,7 +23235,7 @@ const data: ParsedItemCard[] = [
           "Ammo 5",
           "Deal 40 Damage",
           "When this runs out of ammo, destroy it for the fight.",
-          "When this is destroyed, deal 5 times this item's Damage"
+          "When this is destroyed, deal {aura.e2.mod} times this item's Damage"
         ]
       },
       "Legendary": {
@@ -23231,7 +23305,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -23259,7 +23333,7 @@ const data: ParsedItemCard[] = [
       "Ammo 5",
       "Deal (20/30/40) Damage",
       "When this runs out of ammo, destroy it for the fight.",
-      "When this is destroyed, deal 5 times this item's Damage"
+      "When this is destroyed, deal {aura.e2.mod} times this item's Damage"
     ]
   },
   {
@@ -23466,7 +23540,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -23594,7 +23668,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -23724,7 +23798,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -23860,7 +23934,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -23962,13 +24036,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Burn"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Burn"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -23986,7 +24062,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -24004,7 +24080,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Burn"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -24116,7 +24193,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -24301,7 +24378,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -24424,7 +24501,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -24530,13 +24607,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Poison"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Poison"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -24554,7 +24633,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -24572,7 +24651,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Poison"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -24686,7 +24766,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -24813,7 +24893,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -25075,7 +25155,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -25216,7 +25296,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -25353,7 +25433,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -25451,13 +25531,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Burn"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Burn"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -25475,7 +25557,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -25493,7 +25575,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Burn"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -25695,13 +25778,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Burn"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Burn"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -25719,7 +25804,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -25737,7 +25822,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Burn"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -26083,7 +26169,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -26371,7 +26457,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -26503,7 +26589,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -26609,13 +26695,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "When this starts Flying, Shield equal to 5 times this item's Regen."
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "When this starts Flying, Heal equal to 5 times this item's Regen."
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -26651,7 +26739,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "When this starts Flying, deal Damage equal to 5 times this item's Regen."
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -26760,7 +26849,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -26890,7 +26979,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -27026,7 +27115,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -27167,7 +27256,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -27366,13 +27455,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Burn"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Burn"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -27390,7 +27481,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -27408,7 +27499,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Burn"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -27520,7 +27612,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -27625,13 +27717,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Poison"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Poison"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -27649,7 +27743,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -27667,7 +27761,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Poison"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -27775,7 +27870,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -27975,7 +28070,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -28162,7 +28257,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -28275,13 +28370,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Regen"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Regen"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -28299,7 +28396,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -28317,7 +28414,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Regen"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -28436,7 +28534,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -28597,13 +28695,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Burn"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Burn"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -28621,7 +28721,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -28639,7 +28739,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Burn"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -28745,7 +28846,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -28874,7 +28975,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -29003,7 +29104,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -29138,7 +29239,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -29250,13 +29351,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Burn"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Burn"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -29274,7 +29377,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -29292,7 +29395,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Burn"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -29398,7 +29502,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -29636,7 +29740,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -29778,7 +29882,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -29909,7 +30013,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -30117,13 +30221,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "When you use an adjacent item, Shield equal to 5 times this item's Burn."
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "When you use an adjacent item, Heal equal to 5 times this item's Burn."
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -30159,7 +30265,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "When you use an adjacent item, deal Damage equal to 5 times this item's Burn."
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -30375,7 +30482,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -30505,7 +30612,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -30599,13 +30706,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Poison"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Poison"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -30623,7 +30732,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -30641,7 +30750,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Poison"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -30759,7 +30869,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -30886,7 +30996,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -31008,7 +31118,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -31133,7 +31243,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -31388,7 +31498,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -31631,7 +31741,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -31762,7 +31872,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -31869,13 +31979,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Burn"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Burn"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -31893,7 +32005,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -31911,7 +32023,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Burn"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -31996,13 +32109,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Burn"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Burn"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -32020,7 +32135,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -32038,7 +32153,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Burn"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -32125,13 +32241,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Poison"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Poison"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -32149,7 +32267,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -32167,7 +32285,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Poison"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -32250,13 +32369,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Poison"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Poison"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -32274,7 +32395,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -32292,7 +32413,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Poison"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -32650,7 +32772,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -32775,7 +32897,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -32911,7 +33033,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -33259,7 +33381,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -33382,7 +33504,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -33642,7 +33764,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -33753,13 +33875,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Burn"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Burn"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -33777,7 +33901,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -33795,7 +33919,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Burn"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -33909,7 +34034,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -34045,7 +34170,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -34167,7 +34292,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -34296,7 +34421,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -34361,75 +34486,57 @@ const data: ParsedItemCard[] = [
     ],
     "enchantments": [
       {
-        "type": "Golden",
-        "tooltips": [
-          "...and Enchant the item with Golden if able."
-        ]
-      },
-      {
         "type": "Heavy",
         "tooltips": [
-          "...and Enchant the item with Heavy if able."
+          "When you sell this, your leftmost Slow item gains +1 Slow duration."
         ]
       },
       {
         "type": "Icy",
         "tooltips": [
-          "...and Enchant the item with Icy if able."
+          "When you sell this, your leftmost Freeze item gains +0.5 Freeze duration."
         ]
       },
       {
         "type": "Turbo",
         "tooltips": [
-          "...and Enchant the item with Turbo if able."
+          "When you sell this, your leftmost Haste item gains +1 Haste duration."
         ]
       },
       {
         "type": "Shielded",
         "tooltips": [
-          "...and Enchant the item with Shielded if able."
+          "When you sell this, your leftmost Shield item gains +25 Shield."
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "...and Enchant the item with Restorative if able."
+          "When you sell this, your leftmost Heal item gains +25 Heal."
         ]
       },
       {
         "type": "Toxic",
         "tooltips": [
-          "...and Enchant the item with Toxic if able."
+          "When you sell this, your leftmost Poison item gains +5 Poison."
         ]
       },
       {
         "type": "Fiery",
         "tooltips": [
-          "...and Enchant the item with Fiery if able."
-        ]
-      },
-      {
-        "type": "Shiny",
-        "tooltips": [
-          "...and Enchant the item with Shiny if able."
+          "When you sell this, your leftmost Burn item gains +5 Burn."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "...and Enchant the item with Deadly if able."
-        ]
-      },
-      {
-        "type": "Radiant",
-        "tooltips": [
-          "...and Enchant the item with Radiant if able."
+          "This has double Cooldown reduction."
         ]
       },
       {
         "type": "Obsidian",
         "tooltips": [
-          "...and Enchant the item with Obsidian if able."
+          "When you sell this, your leftmost Weapon item gains +25 Damage."
         ]
       }
     ],
@@ -34666,7 +34773,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -34772,13 +34879,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Burn"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Burn"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -34796,7 +34905,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -34814,7 +34923,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Burn"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -35039,7 +35149,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -35159,7 +35269,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -35283,7 +35393,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -35527,7 +35637,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -35634,13 +35744,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Regen"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Regen"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -35658,7 +35770,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -35676,7 +35788,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Regen"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -35788,7 +35901,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -35919,7 +36032,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -35937,7 +36050,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Poison"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -36046,7 +36160,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -36203,7 +36317,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -36332,7 +36446,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -36467,7 +36581,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -36598,7 +36712,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -36735,7 +36849,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -36863,7 +36977,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -36990,7 +37104,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -37095,13 +37209,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Burn"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Burn"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -37119,7 +37235,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -37137,7 +37253,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Burn"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -37249,7 +37366,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -37354,13 +37471,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Burn"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Burn"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -37378,7 +37497,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -37396,7 +37515,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Burn"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -37511,7 +37631,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -37737,7 +37857,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -37870,7 +37990,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -38249,7 +38369,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -38375,7 +38495,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -38477,13 +38597,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Burn"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Burn"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -38501,7 +38623,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -38519,7 +38641,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Burn"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -38748,7 +38871,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -38867,7 +38990,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -39066,13 +39189,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Regen"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Regen"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -39090,7 +39215,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -39108,7 +39233,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Regen"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -39231,13 +39357,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Burn"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Burn"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -39255,7 +39383,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -39273,7 +39401,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Burn"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -39382,7 +39511,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -39626,7 +39755,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -39991,7 +40120,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -40118,7 +40247,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -40246,7 +40375,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -40479,7 +40608,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -40605,7 +40734,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -40731,7 +40860,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -40836,13 +40965,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Poison"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Poison"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -40860,7 +40991,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -40878,7 +41009,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Poison"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -40985,7 +41117,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -41112,7 +41244,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -41367,7 +41499,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -41496,7 +41628,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -41631,7 +41763,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -41729,13 +41861,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "When you Poison yourself, Shield equal to 5 times this item's Poison."
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "When you Poison yourself, Heal equal to 5 times this item's Poison"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -41753,7 +41887,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -41771,7 +41905,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "When you Poison yourself, deal Damage equal to 5 times this item's Poison."
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -41875,7 +42010,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -42024,13 +42159,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Poison"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Poison"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -42048,7 +42185,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -42066,7 +42203,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Poison"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -42174,7 +42312,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -42413,7 +42551,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -42518,13 +42656,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "When you Freeze, Shield equal to 5 times this item's Regen."
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Regen"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -42542,7 +42682,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -42560,7 +42700,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "When you Freeze, deal Damage equal to 5 times this item's Regen."
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -42663,7 +42804,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -42791,7 +42932,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -43142,13 +43283,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Regen"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Regen"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -43166,7 +43309,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -43184,7 +43327,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Regen"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -43405,7 +43549,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -43651,7 +43795,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -43784,7 +43928,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -43913,7 +44057,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -44019,13 +44163,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Regen"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Regen"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -44043,7 +44189,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -44061,7 +44207,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Regen"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -44140,13 +44287,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Burn"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Burn"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -44164,7 +44313,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -44182,7 +44331,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Burn"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -44295,7 +44445,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -44421,7 +44571,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -44554,7 +44704,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -44659,13 +44809,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "When you use a Friend or Flying item, Shield equal to 5 times this item's Burn"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "When you use a Friend or Flying item, Heal equal to 5 times this item's Burn"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -44683,7 +44835,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -44701,7 +44853,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "When you use a Friend or Flying item, deal Damage equal to 5 times this item's Burn"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -44790,13 +44943,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Poison"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Poison"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -44814,7 +44969,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -44832,7 +44987,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Poison"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -44939,7 +45095,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -45108,7 +45264,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -45354,7 +45510,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -45479,7 +45635,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -45580,13 +45736,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Regen"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Regen"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -45604,7 +45762,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -45622,7 +45780,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Regen"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -45643,7 +45802,7 @@ const data: ParsedItemCard[] = [
         "entries": [
           {
             "tooltips": [
-              "Gain Regen 25 times"
+              "Gain Regen 2{aura.e2.mod} times"
             ],
             "rewardTooltips": [
               "Gain (5/10/15/20) Regen for the fight"
@@ -45667,7 +45826,7 @@ const data: ParsedItemCard[] = [
         "entries": [
           {
             "tooltips": [
-              "Slow 15 times"
+              "Slow 1{aura.e2.mod} times"
             ],
             "rewardTooltips": [
               "Slow (1/2/3/4) items for 1 second(s)"
@@ -46042,7 +46201,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -46169,7 +46328,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -46296,7 +46455,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -46413,7 +46572,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -46537,7 +46696,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -46663,7 +46822,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -46789,7 +46948,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -46915,7 +47074,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -47132,13 +47291,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Regen"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Regen"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -47156,7 +47317,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -47174,7 +47335,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Regen"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -47280,7 +47442,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -47413,7 +47575,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -47580,7 +47742,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -47703,7 +47865,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -47808,13 +47970,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield an enemy equal to 5 times this item's Poison"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal an enemy equal to 5 times this item's Poison"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -47832,7 +47996,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -47850,7 +48014,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage to yourself equal to 5 times this item's Poison"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -47928,13 +48093,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "When you Freeze, Shield equal to 5 times this item's Poison."
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "When you Freeze, Heal equal to 5 times this item's Poison."
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -47952,7 +48119,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -47970,7 +48137,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "When you Freeze, deal Damage equal to 5 times this item's Poison."
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -48076,7 +48244,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -48178,13 +48346,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Burn"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Burn"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -48202,7 +48372,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -48220,7 +48390,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Burn"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -48329,7 +48500,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -48454,7 +48625,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -48579,7 +48750,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -48678,13 +48849,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Poison"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Poison"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -48702,7 +48875,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -48720,7 +48893,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Poison"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -48837,7 +49011,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -49060,13 +49234,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Poison"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Poison"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -49084,7 +49260,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -49102,7 +49278,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Poison"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -49187,13 +49364,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Regen"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Regen"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -49211,7 +49390,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -49229,7 +49408,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Regen"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -49341,7 +49521,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -49583,7 +49763,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -49834,7 +50014,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -49939,13 +50119,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Burn"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Burn"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -49963,7 +50145,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -49981,7 +50163,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Burn"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -50093,7 +50276,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -50222,7 +50405,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -50353,7 +50536,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -50487,7 +50670,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -50619,7 +50802,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -51048,7 +51231,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -51161,13 +51344,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Burn"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Burn"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -51185,7 +51370,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -51203,7 +51388,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Burn"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -51284,13 +51470,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Restorative",
         "tooltips": [
-          "When you Slow, Heal equal to 5 times this item's Regen."
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
         "type": "Shielded",
         "tooltips": [
-          "When you Slow, Shield equal to 5 times this item's Regen."
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
@@ -51326,7 +51514,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "When you Slow, deal Damage equal to 5 times this item's Regen."
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -51432,7 +51621,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -51680,7 +51869,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -51791,13 +51980,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Poison"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Poison"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -51815,7 +52006,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -51833,7 +52024,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Poison"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -52061,7 +52253,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -52308,7 +52500,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -52436,7 +52628,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -52561,7 +52753,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -52923,7 +53115,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -53179,7 +53371,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -53305,7 +53497,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -53462,14 +53654,14 @@ const data: ParsedItemCard[] = [
       },
       "Gold": {
         "tooltips": [
-          "When you win a fight with this, your Properties gain 5 value.",
+          "When you win a fight with this, your Properties gain 5 value (including Stash).",
           "When you lose a fight with this, permanently destroy it.",
           "If you have 5 or fewer items, their Cooldowns are reduced by 5%."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "When you win a fight with this, your Properties gain 10 value.",
+          "When you win a fight with this, your Properties gain 10 value (including Stash).",
           "When you lose a fight with this, permanently destroy it.",
           "If you have 5 or fewer items, their Cooldowns are reduced by 10%."
         ]
@@ -53511,7 +53703,7 @@ const data: ParsedItemCard[] = [
     ],
     "quests": [],
     "unifiedTooltips": [
-      "When you win a fight with this, your Properties gain (5/10) value.",
+      "When you win a fight with this, your Properties gain (5/10) value (including Stash).",
       "When you lose a fight with this, permanently destroy it.",
       "If you have 5 or fewer items, their Cooldowns are reduced by (5%/10%)."
     ]
@@ -53674,7 +53866,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -53773,13 +53965,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Regen"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Regen"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -53797,7 +53991,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -53815,7 +54009,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Regen"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -53932,7 +54127,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -54058,7 +54253,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -54312,7 +54507,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -54443,7 +54638,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -54574,7 +54769,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -54615,21 +54810,21 @@ const data: ParsedItemCard[] = [
       "Silver": {
         "tooltips": [
           "Cooldown 8 seconds",
-          "Charge your non-Tool items 1 second for each Tool you have",
+          "Charge your non-Tool items 0 second for each Tool you have",
           "At the start of each day, if you have 3 or more Tools, upgrade a lower tier Vehicle or Drone."
         ]
       },
       "Gold": {
         "tooltips": [
           "Cooldown 7 seconds",
-          "Charge your non-Tool items 1 second for each Tool you have",
+          "Charge your non-Tool items 0 second for each Tool you have",
           "At the start of each day, if you have 3 or more Tools, upgrade a lower tier Vehicle or Drone."
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 6 seconds",
-          "Charge your non-Tool items 1 second for each Tool you have",
+          "Charge your non-Tool items 0 second for each Tool you have",
           "At the start of each day, if you have 3 or more Tools, upgrade a lower tier Vehicle or Drone."
         ]
       },
@@ -54700,7 +54895,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -54725,7 +54920,7 @@ const data: ParsedItemCard[] = [
     "quests": [],
     "unifiedTooltips": [
       "Cooldown (8/7/6) seconds",
-      "Charge your non-Tool items 1 second for each Tool you have",
+      "Charge your non-Tool items 0 second for each Tool you have",
       "At the start of each day, if you have 3 or more Tools, upgrade a lower tier Vehicle or Drone."
     ]
   },
@@ -54950,7 +55145,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -55070,7 +55265,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -55201,7 +55396,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -55320,7 +55515,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -55444,7 +55639,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -55579,7 +55774,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -55839,7 +56034,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -55942,13 +56137,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Burn"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Burn"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -55966,7 +56163,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -55984,7 +56181,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Burn"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -56090,7 +56288,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -56212,7 +56410,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -56344,7 +56542,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -56446,13 +56644,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "When you use a Potion, Shield equal to 5 times this item's Burn."
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "When you use a Potion, Heal equal to 5 times this item's Burn."
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -56488,7 +56688,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "When you use a Potion, deal Damage equal to 5 times this item's Burn."
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -56594,7 +56795,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -56717,7 +56918,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -56846,7 +57047,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -56975,7 +57176,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -57101,7 +57302,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -57227,7 +57428,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -57328,13 +57529,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Burn"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Burn"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -57352,7 +57555,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -57370,7 +57573,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Burn"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -57474,7 +57678,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -57698,13 +57902,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Poison"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Poison"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -57722,7 +57928,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -57740,7 +57946,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Poison"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -57821,13 +58028,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "When you Poison yourself, Shield equal to 5 times this item's Poison."
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "When you Poison yourself, Heal equal to 5 times this item's Poison."
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -57864,7 +58073,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "When you Poison yourself, deal Damage equal to 5 times this item's Poison."
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -57974,7 +58184,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -58098,7 +58308,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -58225,7 +58435,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -58358,7 +58568,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -58480,7 +58690,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -58602,7 +58812,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -58708,13 +58918,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Poison"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Poison"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -58732,7 +58944,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -58750,7 +58962,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Poison"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -58854,7 +59067,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -58982,7 +59195,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -59110,7 +59323,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -59233,7 +59446,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -59352,7 +59565,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -59481,7 +59694,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -59598,7 +59811,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -59724,7 +59937,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -60155,7 +60368,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -60335,7 +60548,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -60462,7 +60675,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -60594,7 +60807,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -60723,7 +60936,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -60848,7 +61061,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -60972,7 +61185,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -61105,7 +61318,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -61234,7 +61447,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -61362,7 +61575,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -61492,7 +61705,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -61626,7 +61839,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -61753,7 +61966,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -61923,7 +62136,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -62055,7 +62268,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -62194,7 +62407,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -62322,7 +62535,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -62680,7 +62893,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -62933,7 +63146,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -63037,13 +63250,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Burn"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Burn"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -63061,7 +63276,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -63079,7 +63294,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Burn"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -63187,7 +63403,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -63310,7 +63526,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -63443,7 +63659,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -63570,7 +63786,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -63702,7 +63918,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -63738,22 +63954,22 @@ const data: ParsedItemCard[] = [
     "tiers": {
       "Bronze": {
         "tooltips": [
-          "When you sell this, your leftmost Weapon gains 5 Damage."
+          "When you sell this, your leftmost Weapon gains 4 Damage."
         ]
       },
       "Silver": {
         "tooltips": [
-          "When you sell this, your leftmost Weapon gains 10 Damage."
+          "When you sell this, your leftmost Weapon gains 8 Damage."
         ]
       },
       "Gold": {
         "tooltips": [
-          "When you sell this, your leftmost Weapon gains 20 Damage."
+          "When you sell this, your leftmost Weapon gains 16 Damage."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "When you sell this, your leftmost Weapon gains 40 Damage."
+          "When you sell this, your leftmost Weapon gains 32 Damage."
         ]
       },
       "Legendary": {
@@ -63829,7 +64045,7 @@ const data: ParsedItemCard[] = [
     ],
     "quests": [],
     "unifiedTooltips": [
-      "When you sell this, your leftmost Weapon gains (5/10/20/40) Damage."
+      "When you sell this, your leftmost Weapon gains (4/8/16/32) Damage."
     ]
   },
   {
@@ -63934,7 +64150,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -64059,7 +64275,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -64245,7 +64461,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -64375,7 +64591,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -64501,7 +64717,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -64604,13 +64820,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Regen"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Regen"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -64628,7 +64846,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -64646,7 +64864,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Regen"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -64753,7 +64972,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -64996,7 +65215,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -65098,13 +65317,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Burn"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Burn"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -65122,7 +65343,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -65140,7 +65361,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Burn"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -65252,7 +65474,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -65377,7 +65599,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -65504,7 +65726,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -65792,7 +66014,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -65894,13 +66116,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Regen"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Regen"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -65918,7 +66142,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -65936,7 +66160,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Regen"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -66041,7 +66266,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -66161,7 +66386,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -66418,7 +66643,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -66606,13 +66831,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Burn"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Burn"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -66630,7 +66857,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -66648,7 +66875,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Burn"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -66751,7 +66979,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -67000,7 +67228,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -67108,13 +67336,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Burn"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Burn"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -67132,7 +67362,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -67150,7 +67380,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Burn"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -67265,7 +67496,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -67387,7 +67618,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -67623,7 +67854,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -67750,7 +67981,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -67994,7 +68225,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -68130,7 +68361,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -68259,7 +68490,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -68381,7 +68612,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -68629,7 +68860,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -68751,7 +68982,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -68883,7 +69114,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -69010,7 +69241,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -69136,7 +69367,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -69244,13 +69475,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Poison"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Poison"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -69268,7 +69501,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -69286,7 +69519,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Poison"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -69399,7 +69633,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -69520,7 +69754,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -69625,13 +69859,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Burn"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Burn"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -69649,7 +69885,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -69667,7 +69903,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Burn"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -70008,7 +70245,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -70142,7 +70379,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -70279,7 +70516,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -70406,7 +70643,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -70513,13 +70750,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Poison"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Poison"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -70537,7 +70776,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -70555,7 +70794,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Poison"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -70661,7 +70901,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -70827,7 +71067,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -70930,13 +71170,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Burn"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Burn"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -70954,7 +71196,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -70972,7 +71214,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Burn"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -71084,7 +71327,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -71215,7 +71458,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -71333,7 +71576,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -71441,13 +71684,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Burn"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Burn"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -71465,7 +71710,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -71483,7 +71728,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Burn"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -71598,7 +71844,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -71836,7 +72082,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -71940,13 +72186,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's value"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's value"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -71964,7 +72212,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -71982,7 +72230,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's value"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -72215,7 +72464,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -72320,13 +72569,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Burn"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Burn"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -72344,7 +72595,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -72362,7 +72613,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Burn"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -72577,7 +72829,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -72812,7 +73064,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -72920,13 +73172,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Burn"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Burn"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -72944,7 +73198,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -72962,7 +73216,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Burn"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -73073,7 +73328,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -73203,7 +73458,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -73337,7 +73592,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -73936,13 +74191,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Regen"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Regen"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -73960,7 +74217,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -73978,7 +74235,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Regen"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -74083,7 +74341,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -74186,13 +74444,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Regen"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Regen"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -74210,7 +74470,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -74228,7 +74488,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Regen"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -74237,7 +74498,7 @@ const data: ParsedItemCard[] = [
         "entries": [
           {
             "tooltips": [
-              "Complete 1 quest on another item"
+              "Complete a quest on another item"
             ],
             "rewardTooltips": [
               "Poison (5/10/15)"
@@ -74331,13 +74592,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Burn"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Burn"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -74355,7 +74618,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -74373,7 +74636,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Burn"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -74457,13 +74721,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Poison"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Poison"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -74481,7 +74747,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -74499,7 +74765,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Poison"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -74606,7 +74873,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -74727,7 +74994,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -74993,7 +75260,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -75181,7 +75448,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -75283,13 +75550,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Burn"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Burn"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -75307,7 +75576,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -75325,7 +75594,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Burn"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -75432,7 +75702,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -75541,13 +75811,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Burn"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Burn"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -75565,7 +75837,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -75583,7 +75855,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Burn"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -75788,13 +76061,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Burn"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Burn"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -75812,7 +76087,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -75830,7 +76105,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Burn"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -75937,7 +76213,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -76174,7 +76450,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -76285,13 +76561,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Poison"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Poison"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -76309,7 +76587,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -76327,7 +76605,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Poison"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -76419,13 +76698,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Burn"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Burn"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -76443,7 +76724,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -76461,7 +76742,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Burn"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -76543,13 +76825,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "When you Slow, Shield equal to 5 times this item's Burn"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "When you Slow, Heal equal to 5 times this item's Burn"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -76567,7 +76851,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -76585,7 +76869,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "When you Slow, Deal Damage equal to 5 times this item's Burn"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -76692,7 +76977,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -76796,13 +77081,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Burn"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Burn"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -76820,7 +77107,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -76838,7 +77125,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Burn"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -76945,7 +77233,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -77079,7 +77367,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -77250,7 +77538,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -77370,7 +77658,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -77505,7 +77793,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -77628,7 +77916,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -77759,7 +78047,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -77887,7 +78175,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -78147,7 +78435,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -78286,7 +78574,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -78400,7 +78688,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -78532,7 +78820,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -78659,7 +78947,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -78790,7 +79078,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -78919,7 +79207,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -79021,13 +79309,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Poison"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Poison"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -79045,7 +79335,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -79063,7 +79353,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Poison"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -79379,13 +79670,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Burn"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Burn"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -79403,7 +79696,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -79421,7 +79714,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Burn"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -79532,7 +79826,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -79737,13 +80031,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Burn"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Burn"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -79761,7 +80057,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -79779,7 +80075,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Burn"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -79891,7 +80188,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -79983,13 +80280,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Burn"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Burn"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -80007,7 +80306,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -80025,7 +80324,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Burn"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -80129,7 +80429,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -80254,7 +80554,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -80605,7 +80905,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -80836,7 +81136,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -80962,7 +81262,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -81066,13 +81366,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Burn"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Burn"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -81090,7 +81392,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -81108,7 +81410,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Burn"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -81221,7 +81524,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -81338,7 +81641,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -81464,7 +81767,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -81589,7 +81892,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -81714,7 +82017,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -81839,7 +82142,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -81964,7 +82267,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -82094,7 +82397,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -82202,13 +82505,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Burn"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Burn"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -82226,7 +82531,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -82244,7 +82549,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Burn"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -82330,13 +82636,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Regen"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Regen"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -82354,7 +82662,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -82372,7 +82680,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Regen"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -82477,7 +82786,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -82580,13 +82889,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Burn"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Burn"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -82604,7 +82915,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -82622,7 +82933,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Burn"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -82728,7 +83040,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -82850,7 +83162,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -82970,7 +83282,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -83019,14 +83331,14 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Cooldown 6 seconds",
           "Charge a non-Toy item(s) 2 second(s)",
-          "When you use an adjacent Toy, Charge this 1 second."
+          "When you use an adjacent Toy, Charge this 2 second."
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 6 seconds",
           "Charge a non-Toy item(s) 3 second(s)",
-          "When you use an adjacent Toy, Charge this 1 second."
+          "When you use an adjacent Toy, Charge this 3 second."
         ]
       },
       "Legendary": {
@@ -83097,7 +83409,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -83123,7 +83435,7 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Charge a non-Toy item(s) (1/2/3) second(s)",
-      "When you use an adjacent Toy, Charge this 1 second."
+      "When you use an adjacent Toy, Charge this (1/2/3) second."
     ]
   },
   {
@@ -83200,13 +83512,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Regen"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Regen"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -83224,7 +83538,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -83242,7 +83556,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Regen"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -83367,7 +83682,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -83488,7 +83803,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -83702,13 +84017,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Burn"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Burn"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -83726,7 +84043,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -83744,7 +84061,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Burn"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -83855,7 +84173,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -84026,13 +84344,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Poison"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Poison"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -84050,7 +84370,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -84068,7 +84388,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Poison"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -84175,7 +84496,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -84422,7 +84743,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -84549,7 +84870,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -84675,7 +84996,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -84900,7 +85221,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -85148,7 +85469,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -85396,7 +85717,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -85526,7 +85847,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -85768,7 +86089,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -85889,7 +86210,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -86023,7 +86344,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -86154,7 +86475,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -86260,13 +86581,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Burn"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Burn"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -86284,7 +86607,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -86302,7 +86625,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Burn"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -86539,7 +86863,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -86563,7 +86887,7 @@ const data: ParsedItemCard[] = [
               "Buy 6 Slow items"
             ],
             "rewardTooltips": [
-              "This has +1 Multicast."
+              "This has +{aura.e1} Multicast."
             ]
           }
         ]
@@ -86689,7 +87013,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -86818,7 +87142,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -86940,7 +87264,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -87068,7 +87392,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -87203,7 +87527,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -87337,7 +87661,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -87588,7 +87912,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -87712,7 +88036,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -87842,7 +88166,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -87944,13 +88268,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "When this is Hasted, Shield equal to 5 times this item's Poison"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "When this is Hasted, Heal equal to 5 times this item's Poison"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -87968,7 +88294,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -87986,7 +88312,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "When this is Hasted, Deal Damage equal to 5 times this item's Poison"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -88217,7 +88544,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -88336,7 +88663,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -88453,7 +88780,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -88633,7 +88960,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -88753,7 +89080,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -88888,7 +89215,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -89013,7 +89340,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -89138,7 +89465,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -89270,7 +89597,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -89397,7 +89724,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -89528,7 +89855,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -89666,7 +89993,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -89920,7 +90247,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -90087,7 +90414,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -90212,7 +90539,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -90316,7 +90643,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Burn"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
@@ -90340,7 +90668,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -90358,7 +90686,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Burn"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -90475,7 +90804,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -90701,7 +91030,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -90832,7 +91161,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -90966,7 +91295,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -91225,7 +91554,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -91345,7 +91674,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -91450,13 +91779,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Burn"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Burn"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -91474,7 +91805,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -91492,7 +91823,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Burn"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -91598,7 +91930,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -91723,7 +92055,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -91959,7 +92291,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -92211,7 +92543,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -92343,7 +92675,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -92466,7 +92798,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -92598,7 +92930,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -92767,7 +93099,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -92894,7 +93226,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -93025,7 +93357,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -93237,13 +93569,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Poison"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Poison"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -93261,7 +93595,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -93279,7 +93613,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Poison"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -93484,7 +93819,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -93617,7 +93952,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -93747,7 +94082,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -93878,7 +94213,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -94003,7 +94338,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -94106,13 +94441,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Poison"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Poison"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -94130,7 +94467,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -94148,7 +94485,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Poison"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -94172,7 +94510,7 @@ const data: ParsedItemCard[] = [
               "Have 75+ Poison on this item."
             ],
             "rewardTooltips": [
-              "This has +1 Multicast."
+              "This has +{aura.e1} Multicast."
             ]
           }
         ]
@@ -94289,7 +94627,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -94569,7 +94907,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -94697,7 +95035,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -94817,7 +95155,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -94947,7 +95285,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -95166,13 +95504,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Burn"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Burn"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -95190,7 +95530,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -95208,7 +95548,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Burn"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -95293,13 +95634,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Regen"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Regen"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -95317,7 +95660,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -95335,7 +95678,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Regen"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -95359,7 +95703,7 @@ const data: ParsedItemCard[] = [
               "Have 75+ Regen on this item."
             ],
             "rewardTooltips": [
-              "This has +1 Multicast."
+              "This has +{aura.e1} Multicast."
             ]
           }
         ]
@@ -95466,7 +95810,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -95592,7 +95936,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -95719,7 +96063,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -95846,7 +96190,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -95952,13 +96296,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to 5 times this item's Burn"
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to 5 times this item's Burn"
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -95976,7 +96322,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -95994,7 +96340,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "Deal Damage equal to 5 times this item's Burn"
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -96072,13 +96419,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "When you use a Weapon, Shield equal to 5 times this item's Poison."
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "When you use a Weapon, Heal equal to 5 times this item's Poison."
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -96114,7 +96463,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "When you use a Weapon, deal Damage equal to 5 times this item's Poison."
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
@@ -96342,7 +96692,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -96469,7 +96819,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -96599,7 +96949,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {
@@ -96725,7 +97075,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "This has +1 Multicast."
+          "+1 Multicast"
         ]
       },
       {

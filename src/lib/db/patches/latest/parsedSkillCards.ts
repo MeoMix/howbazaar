@@ -796,11 +796,7 @@ const data: ParsedSkillCard[] = [
       "Tech",
       "Friend"
     ],
-    "hiddenTags": [
-      "DamageReference",
-      "ShieldReference",
-      "BurnReference"
-    ],
+    "hiddenTags": [],
     "customTags": [],
     "size": "Medium",
     "heroes": [
@@ -2202,12 +2198,10 @@ const data: ParsedSkillCard[] = [
   {
     "id": "f1c3b934-254a-459f-9078-023edbcfcb03",
     "name": "Healthy Hoarder",
-    "startingTier": "Bronze",
+    "startingTier": "Silver",
     "tiers": {
       "Bronze": {
-        "tooltips": [
-          "You have +35 Max Health for each Non-Weapon item you have."
-        ]
+        "tooltips": []
       },
       "Silver": {
         "tooltips": [
@@ -2237,7 +2231,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_HealthyCollector.png",
     "unifiedTooltips": [
-      "You have (+35/+100/+200/+300) Max Health for each Non-Weapon item you have."
+      "You have (+100/+200/+300) Max Health for each Non-Weapon item you have."
     ]
   },
   {
@@ -3631,17 +3625,17 @@ const data: ParsedSkillCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "The first 4 times you Haste each fight, Charge 1 Tool 1 second."
+          "The first 4 times you Haste each fight, Charge a Tool 1 second."
         ]
       },
       "Gold": {
         "tooltips": [
-          "The first 8 times you Haste each fight, Charge 1 Tool 1 second."
+          "The first 8 times you Haste each fight, Charge a Tool 1 second."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "The first 12 times you Haste each fight, Charge 1 Tool 1 second."
+          "The first 12 times you Haste each fight, Charge a Tool 1 second."
         ]
       },
       "Legendary": {
@@ -3663,7 +3657,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_STE_WorkinHard.png",
     "unifiedTooltips": [
-      "The first (4/8/12) times you Haste each fight, Charge 1 Tool 1 second."
+      "The first (4/8/12) times you Haste each fight, Charge a Tool 1 second."
     ]
   },
   {
