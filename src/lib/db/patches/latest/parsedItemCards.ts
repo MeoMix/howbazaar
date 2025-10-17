@@ -567,19 +567,19 @@ const data: ParsedItemCard[] = [
       {
         "type": "Heavy",
         "tooltips": [
-          "When this stops Flying, Slow an item for 2 second(s)."
+          "When this stops Flying, Slow 2 items for 4 second(s)."
         ]
       },
       {
         "type": "Icy",
         "tooltips": [
-          "When this stops Flying, Freeze an item for 0.5 second(s)."
+          "When this stops Flying, Freeze an item for 4 second(s)."
         ]
       },
       {
         "type": "Turbo",
         "tooltips": [
-          "When this stops Flying, Haste an item for 2 second(s)."
+          "When this stops Flying, Haste 2 items for 4 second(s)."
         ]
       },
       {
@@ -1312,19 +1312,19 @@ const data: ParsedItemCard[] = [
       {
         "type": "Heavy",
         "tooltips": [
-          "Slow 2 items for 3 second(s)"
+          "Slow 2 items for 2 second(s)"
         ]
       },
       {
         "type": "Icy",
         "tooltips": [
-          "Freeze 2 item(s) for 1 second(s)"
+          "Freeze an item for 1 second(s)"
         ]
       },
       {
         "type": "Turbo",
         "tooltips": [
-          "Haste 2 items for 3 second(s)"
+          "Haste 2 items for 2 second(s)"
         ]
       },
       {
@@ -2457,7 +2457,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Turbo",
         "tooltips": [
-          "Haste an item for 2 second(s)"
+          "Haste an item for 3 second(s)"
         ]
       },
       {
@@ -3239,7 +3239,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Turbo",
         "tooltips": [
-          "Haste an item for 3 second(s)"
+          "Haste an item for 2 second(s)"
         ]
       },
       {
@@ -7084,19 +7084,19 @@ const data: ParsedItemCard[] = [
       {
         "type": "Heavy",
         "tooltips": [
-          "Slow an item for 1 second(s)"
+          "Slow 2 items for 1 second(s)"
         ]
       },
       {
         "type": "Icy",
         "tooltips": [
-          "Freeze an item for 0.5 second(s)"
+          "Freeze an item for 1 second(s)"
         ]
       },
       {
         "type": "Turbo",
         "tooltips": [
-          "Haste an item for 1 second(s)"
+          "Haste 2 items for 1 second(s)"
         ]
       },
       {
@@ -8504,19 +8504,19 @@ const data: ParsedItemCard[] = [
       {
         "type": "Heavy",
         "tooltips": [
-          "Slow 2 items for 1 second(s)"
+          "Slow an item for 2 seconds"
         ]
       },
       {
         "type": "Icy",
         "tooltips": [
-          "Freeze an item for 1 second(s)"
+          "Freeze an item for 0.5 second(s)"
         ]
       },
       {
         "type": "Turbo",
         "tooltips": [
-          "Haste 2 items for 1 second(s)"
+          "Haste an item for 2 seconds"
         ]
       },
       {
@@ -10127,7 +10127,7 @@ const data: ParsedItemCard[] = [
               "Buy 4 Freeze items"
             ],
             "rewardTooltips": [
-              "This has +{aura.e1} Multicast."
+              "This has +1 Multicast."
             ]
           }
         ]
@@ -10419,7 +10419,7 @@ const data: ParsedItemCard[] = [
               "Have 75+ Burn on this item."
             ],
             "rewardTooltips": [
-              "This has +{aura.e1} Multicast."
+              "This has +1 Multicast."
             ]
           }
         ]
@@ -14265,19 +14265,19 @@ const data: ParsedItemCard[] = [
       {
         "type": "Heavy",
         "tooltips": [
-          "Slow an item for 1 second(s)"
+          "Slow 2 items for 4 second(s)"
         ]
       },
       {
         "type": "Icy",
         "tooltips": [
-          "Freeze an item for 0.5 second(s)"
+          "Freeze 2 items for 1 second(s)"
         ]
       },
       {
         "type": "Turbo",
         "tooltips": [
-          "Haste an item for 1 second(s)"
+          "Haste 2 items for 4 second(s)"
         ]
       },
       {
@@ -20190,7 +20190,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Heavy",
         "tooltips": [
-          "Slow an item for 1 second(s)"
+          "Slow an item for 3 second(s)"
         ]
       },
       {
@@ -22629,7 +22629,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Heavy",
         "tooltips": [
-          "Slow an item for 3 second(s)"
+          "Slow an item for 2 second(s)"
         ]
       },
       {
@@ -23217,7 +23217,7 @@ const data: ParsedItemCard[] = [
           "Ammo 5",
           "Deal 20 Damage",
           "When this runs out of ammo, destroy it for the fight.",
-          "When this is destroyed, deal {aura.e2.mod} times this item's Damage"
+          "When this is destroyed, deal 5 times this item's Damage"
         ]
       },
       "Gold": {
@@ -23226,7 +23226,7 @@ const data: ParsedItemCard[] = [
           "Ammo 5",
           "Deal 30 Damage",
           "When this runs out of ammo, destroy it for the fight.",
-          "When this is destroyed, deal {aura.e2.mod} times this item's Damage"
+          "When this is destroyed, deal 5 times this item's Damage"
         ]
       },
       "Diamond": {
@@ -23235,7 +23235,7 @@ const data: ParsedItemCard[] = [
           "Ammo 5",
           "Deal 40 Damage",
           "When this runs out of ammo, destroy it for the fight.",
-          "When this is destroyed, deal {aura.e2.mod} times this item's Damage"
+          "When this is destroyed, deal 5 times this item's Damage"
         ]
       },
       "Legendary": {
@@ -23333,7 +23333,7 @@ const data: ParsedItemCard[] = [
       "Ammo 5",
       "Deal (20/30/40) Damage",
       "When this runs out of ammo, destroy it for the fight.",
-      "When this is destroyed, deal {aura.e2.mod} times this item's Damage"
+      "When this is destroyed, deal 5 times this item's Damage"
     ]
   },
   {
@@ -32891,7 +32891,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Fiery",
         "tooltips": [
-          "Burn equal to 5% of this item's Damage"
+          "When you use an Ammo item, Burn equal to 5% of this item's Damage"
         ]
       },
       {
@@ -37013,26 +37013,26 @@ const data: ParsedItemCard[] = [
     "tiers": {
       "Bronze": {
         "tooltips": [
-          "Cooldown 4 seconds",
-          "Deal 10 Damage"
+          "Cooldown 3 seconds",
+          "Deal 5 Damage"
         ]
       },
       "Silver": {
         "tooltips": [
-          "Cooldown 4 seconds",
-          "Deal 20 Damage"
+          "Cooldown 3 seconds",
+          "Deal 10 Damage"
         ]
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 4 seconds",
-          "Deal 30 Damage"
+          "Cooldown 3 seconds",
+          "Deal 15 Damage"
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 4 seconds",
-          "Deal 40 Damage"
+          "Cooldown 3 seconds",
+          "Deal 20 Damage"
         ]
       },
       "Legendary": {
@@ -37128,8 +37128,8 @@ const data: ParsedItemCard[] = [
     ],
     "quests": [],
     "unifiedTooltips": [
-      "Cooldown 4 seconds",
-      "Deal (10/20/30/40) Damage"
+      "Cooldown 3 seconds",
+      "Deal (5/10/15/20) Damage"
     ]
   },
   {
@@ -41586,43 +41586,43 @@ const data: ParsedItemCard[] = [
       {
         "type": "Heavy",
         "tooltips": [
-          "Slow an item for 2 second(s)"
+          "When yo use an adjacent Weapon, Slow an item for 1 second(s)"
         ]
       },
       {
         "type": "Icy",
         "tooltips": [
-          "Freeze an item for 0.5 second(s)"
+          "When you use an adjacent Weapon, Freeze an item for 0.5 second(s)"
         ]
       },
       {
         "type": "Turbo",
         "tooltips": [
-          "Haste an item for 2 second(s)"
+          "When you use an adjacent Weapon, Haste an item for 1 second(s)"
         ]
       },
       {
         "type": "Shielded",
         "tooltips": [
-          "Shield equal to this item's Damage"
+          "When you use an adjacent Shield item, it gains +12 Shield for the fight."
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to this item's Damage"
+          "When you use an adjacent Heal item, it gains +12 Heal for the fight."
         ]
       },
       {
         "type": "Toxic",
         "tooltips": [
-          "Poison equal to 5% of this item's Damage"
+          "When you use an adjacent Poison item, it gains +3 Poison for the fight."
         ]
       },
       {
         "type": "Fiery",
         "tooltips": [
-          "Burn equal to 5% of this item's Damage"
+          "When you use an adjacent Burn item, it gains +3 Burn for the fight."
         ]
       },
       {
@@ -41646,7 +41646,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "This has double Damage."
+          "This has double Damage bonus."
         ]
       }
     ],
@@ -45802,7 +45802,7 @@ const data: ParsedItemCard[] = [
         "entries": [
           {
             "tooltips": [
-              "Gain Regen 2{aura.e2.mod} times"
+              "Gain Regen 25 times"
             ],
             "rewardTooltips": [
               "Gain (5/10/15/20) Regen for the fight"
@@ -45826,7 +45826,7 @@ const data: ParsedItemCard[] = [
         "entries": [
           {
             "tooltips": [
-              "Slow 1{aura.e2.mod} times"
+              "Slow 15 times"
             ],
             "rewardTooltips": [
               "Slow (1/2/3/4) items for 1 second(s)"
@@ -48913,7 +48913,7 @@ const data: ParsedItemCard[] = [
     "tiers": {
       "Bronze": {
         "tooltips": [
-          "Cooldown 6 seconds",
+          "Cooldown 5 seconds",
           "Multicast 2",
           "Deal 10 Damage",
           "This deals double Crit Damage."
@@ -48921,7 +48921,7 @@ const data: ParsedItemCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "Cooldown 6 seconds",
+          "Cooldown 5 seconds",
           "Multicast 2",
           "Deal 20 Damage",
           "This deals double Crit Damage."
@@ -48929,7 +48929,7 @@ const data: ParsedItemCard[] = [
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 6 seconds",
+          "Cooldown 5 seconds",
           "Multicast 2",
           "Deal 30 Damage",
           "This deals double Crit Damage."
@@ -48937,7 +48937,7 @@ const data: ParsedItemCard[] = [
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 6 seconds",
+          "Cooldown 5 seconds",
           "Multicast 2",
           "Deal 40 Damage",
           "This deals double Crit Damage."
@@ -49035,7 +49035,7 @@ const data: ParsedItemCard[] = [
     ],
     "quests": [],
     "unifiedTooltips": [
-      "Cooldown 6 seconds",
+      "Cooldown 5 seconds",
       "Multicast 2",
       "Deal (10/20/30/40) Damage",
       "This deals double Crit Damage."
@@ -49972,19 +49972,19 @@ const data: ParsedItemCard[] = [
       {
         "type": "Heavy",
         "tooltips": [
-          "Slow 2 items for 1 second(s)"
+          "Slow an item for 1 second(s)"
         ]
       },
       {
         "type": "Icy",
         "tooltips": [
-          "Freeze an item for 1 second(s)"
+          "Freeze an item for 0.5 second(s)"
         ]
       },
       {
         "type": "Turbo",
         "tooltips": [
-          "Haste 2 items for 1 second(s)"
+          "Haste an item for 1 second(s)"
         ]
       },
       {
@@ -51189,19 +51189,19 @@ const data: ParsedItemCard[] = [
       {
         "type": "Heavy",
         "tooltips": [
-          "Slow 1 items for 1 second(s)"
+          "Slow 2 items for 1 second(s)"
         ]
       },
       {
         "type": "Icy",
         "tooltips": [
-          "Freeze an item for 0.5 second(s)"
+          "Freeze an item for 1 second(s)"
         ]
       },
       {
         "type": "Turbo",
         "tooltips": [
-          "Haste 1 items for 1 second(s)"
+          "Haste 2 items for 1 second(s)"
         ]
       },
       {
@@ -54620,7 +54620,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Restorative",
         "tooltips": [
-          "Heal equal to this item's Damage"
+          "This has double Heal."
         ]
       },
       {
@@ -64245,7 +64245,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Turbo",
         "tooltips": [
-          "Haste an item for 1 second(s)"
+          "Haste an item for 3 second(s)"
         ]
       },
       {
@@ -68059,19 +68059,19 @@ const data: ParsedItemCard[] = [
       {
         "type": "Heavy",
         "tooltips": [
-          "When your Weapons start Flying, Slow an item for 2 second(s)."
+          "When your Weapons start Flying, Slow an item for 1 second(s)."
         ]
       },
       {
         "type": "Icy",
         "tooltips": [
-          "When your Weapons start Flying, Freeze an item for 1 second(s)."
+          "When your Weapons start Flying, Freeze an item for 0.5 second(s)."
         ]
       },
       {
         "type": "Turbo",
         "tooltips": [
-          "When your Weapons start Flying, Haste an item for 2 second(s)."
+          "When your Weapons start Flying, Haste an item for 1 second(s)."
         ]
       },
       {
@@ -71666,7 +71666,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Heavy",
         "tooltips": [
-          "Slow 2 items for 2 second(s)"
+          "Slow an item for 2 second(s)"
         ]
       },
       {
@@ -71678,7 +71678,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Turbo",
         "tooltips": [
-          "Haste 2 items for 2 second(s)"
+          "Haste an item for 2 second(s)"
         ]
       },
       {
@@ -76543,19 +76543,19 @@ const data: ParsedItemCard[] = [
       {
         "type": "Heavy",
         "tooltips": [
-          "Slow 2 items for 2 second(s)"
+          "Slow an item for 1 second(s)"
         ]
       },
       {
         "type": "Icy",
         "tooltips": [
-          "Freeze an item for 1 second(s)"
+          "Freeze an item for 0.5 second(s)"
         ]
       },
       {
         "type": "Turbo",
         "tooltips": [
-          "Haste 2 items for 2 second(s)"
+          "Haste an item for 1 second(s)"
         ]
       },
       {
@@ -83331,14 +83331,14 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Cooldown 6 seconds",
           "Charge a non-Toy item(s) 2 second(s)",
-          "When you use an adjacent Toy, Charge this 2 second."
+          "When you use an adjacent Toy, Charge this 1 second."
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 6 seconds",
           "Charge a non-Toy item(s) 3 second(s)",
-          "When you use an adjacent Toy, Charge this 3 second."
+          "When you use an adjacent Toy, Charge this 1 second."
         ]
       },
       "Legendary": {
@@ -83435,7 +83435,7 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "Cooldown 6 seconds",
       "Charge a non-Toy item(s) (1/2/3) second(s)",
-      "When you use an adjacent Toy, Charge this (1/2/3) second."
+      "When you use an adjacent Toy, Charge this 1 second."
     ]
   },
   {
@@ -86696,7 +86696,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Icy",
         "tooltips": [
-          "The first time you fall below half Health each fight, Freeze 2 Medium or Small items for 4 second(s)."
+          "The first time you fall below half Health each fight, Freeze 2 items for 4 second(s)."
         ]
       },
       {
@@ -86887,7 +86887,7 @@ const data: ParsedItemCard[] = [
               "Buy 6 Slow items"
             ],
             "rewardTooltips": [
-              "This has +{aura.e1} Multicast."
+              "This has +1 Multicast."
             ]
           }
         ]
@@ -90988,13 +90988,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Heavy",
         "tooltips": [
-          "Slow 2 items for 1 second(s)"
+          "Slow 2 items for 3 second(s)"
         ]
       },
       {
         "type": "Icy",
         "tooltips": [
-          "Freeze an item for 1 second(s)"
+          "Freeze 2 items for 1 second(s)"
         ]
       },
       {
@@ -94510,7 +94510,7 @@ const data: ParsedItemCard[] = [
               "Have 75+ Poison on this item."
             ],
             "rewardTooltips": [
-              "This has +{aura.e1} Multicast."
+              "This has +1 Multicast."
             ]
           }
         ]
@@ -95703,7 +95703,7 @@ const data: ParsedItemCard[] = [
               "Have 75+ Regen on this item."
             ],
             "rewardTooltips": [
-              "This has +{aura.e1} Multicast."
+              "This has +1 Multicast."
             ]
           }
         ]

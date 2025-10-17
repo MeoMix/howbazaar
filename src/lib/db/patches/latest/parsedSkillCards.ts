@@ -12570,7 +12570,12 @@ const data: ParsedSkillCard[] = [
     "customTags": [],
     "size": "Medium",
     "heroes": [
-      "Common"
+      "Pygmalien",
+      "Vanessa",
+      "Dooley",
+      "Jules",
+      "Mak",
+      "Stelle"
     ],
     "artKey": "Icon_Skill_CaptainsDue.png",
     "unifiedTooltips": [
