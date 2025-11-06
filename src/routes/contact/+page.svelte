@@ -39,7 +39,7 @@
             <p>
                 Or you can <a
                     class="font-bold text-blue-600"
-                    href="mailto:Sean.Palmer.Anderson@gmail.com"
+                    href="mailto:Meo.DDR@gmail.com"
                     >send me an email</a
                 >.
             </p>
