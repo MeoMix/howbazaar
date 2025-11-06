@@ -16,6 +16,10 @@ const data: ParsedCombatEncounterCard[] = [
     "name": "Training Dummy"
   },
   {
+    "id": "e8782aea-3511-4a9d-98d4-e25c62120547",
+    "name": "Sandwich Artist"
+  },
+  {
     "id": "3e80e4e9-13e6-441c-b770-a82a0297ad47",
     "name": "Terrorform"
   },
@@ -324,6 +328,10 @@ const data: ParsedCombatEncounterCard[] = [
     "name": "Hulking Experiment"
   },
   {
+    "id": "4b69c9fd-cf2d-4197-9b06-0327a5849041",
+    "name": "Stew"
+  },
+  {
     "id": "4ce6d441-4aed-455b-b83f-0b057b462515",
     "name": "Mythkeeper"
   },
@@ -392,12 +400,12 @@ const data: ParsedCombatEncounterCard[] = [
     "name": "Bloodreef Captain"
   },
   {
-    "id": "fd862d85-66cd-431f-a85a-07742cbc2e1b",
-    "name": "Test Subject Alpha"
-  },
-  {
     "id": "962bf2b2-fc1b-4ad3-9526-15d76d3bb0de",
     "name": "Foundation Weeper"
+  },
+  {
+    "id": "fd862d85-66cd-431f-a85a-07742cbc2e1b",
+    "name": "Test Subject Alpha"
   },
   {
     "id": "365122bf-7bb0-4fa3-93bd-06bf5a94e324",
