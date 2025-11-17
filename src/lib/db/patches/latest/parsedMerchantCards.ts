@@ -29,7 +29,7 @@ const data: ParsedMerchantCard[] = [
       "Vanessa",
       "Jules"
     ],
-    "description": "Purchase an item from this Hero (no rerolls)"
+    "description": "Purchase an item from this Hero  "
   },
   {
     "id": "85db60ee-3619-4e39-bfb2-2f4ac56f172b",
@@ -57,7 +57,7 @@ const data: ParsedMerchantCard[] = [
       "Pygmalien",
       "Vanessa"
     ],
-    "description": "Purchase an item from this Hero (no rerolls)"
+    "description": "Purchase an item from this Hero  "
   },
   {
     "id": "a4fa13f8-6beb-4b6c-839b-60af167628d9",
@@ -81,7 +81,7 @@ const data: ParsedMerchantCard[] = [
       "Pygmalien",
       "Jules"
     ],
-    "description": "Purchase an item from this Hero (no reroll)"
+    "description": "Purchase an item from this Hero"
   },
   {
     "id": "22bb0004-5131-4588-a567-03ee3c96003b",
@@ -109,7 +109,7 @@ const data: ParsedMerchantCard[] = [
       "Pygmalien",
       "Jules"
     ],
-    "description": "Purchase an item from this Hero (no rerolls)"
+    "description": "Purchase an item from this Hero  "
   },
   {
     "id": "bcdaa6d4-9057-4ea1-8110-a2dae217c55f",
@@ -269,7 +269,7 @@ const data: ParsedMerchantCard[] = [
       "Pygmalien",
       "Jules"
     ],
-    "description": "Purchase an item from this Hero (no rerolls)"
+    "description": "Purchase an item from this Hero  "
   },
   {
     "id": "1a21931f-6183-4251-914b-c8f83dc58a30",
@@ -337,7 +337,7 @@ const data: ParsedMerchantCard[] = [
       "Pygmalien",
       "Jules"
     ],
-    "description": "Purchase an item from this Hero (no rerolls)"
+    "description": "Purchase an item from this Hero  "
   },
   {
     "id": "065f6793-8607-4f02-abfe-db6afb221ab2",

@@ -764,7 +764,8 @@ const data: ParsedSkillCard[] = [
     "size": "Medium",
     "heroes": [
       "Vanessa",
-      "Mak"
+      "Mak",
+      "Dooley"
     ],
     "artKey": "Icon_Skill_Toxic.png",
     "unifiedTooltips": [
@@ -931,7 +932,8 @@ const data: ParsedSkillCard[] = [
       "Dooley",
       "Jules",
       "Stelle",
-      "Mak"
+      "Mak",
+      "Pygmalien"
     ],
     "artKey": "Icon_Skill_QuickIgnition.png",
     "unifiedTooltips": [
@@ -1234,7 +1236,9 @@ const data: ParsedSkillCard[] = [
       "Vanessa",
       "Pygmalien",
       "Jules",
-      "Mak"
+      "Mak",
+      "Dooley",
+      "Stelle"
     ],
     "artKey": "Icon_Skill_IronSharpensIron.png",
     "unifiedTooltips": [
@@ -2431,7 +2435,8 @@ const data: ParsedSkillCard[] = [
     "size": "Medium",
     "heroes": [
       "Vanessa",
-      "Mak"
+      "Mak",
+      "Dooley"
     ],
     "artKey": "Icon_Skill_ToxicFlame.png",
     "unifiedTooltips": [
@@ -2474,8 +2479,11 @@ const data: ParsedSkillCard[] = [
     "customTags": [],
     "size": "Medium",
     "heroes": [
+      "Dooley",
+      "Jules",
       "Vanessa",
-      "Jules"
+      "Mak",
+      "Stelle"
     ],
     "artKey": "Icon_Skill_StunningHit.png",
     "unifiedTooltips": [
@@ -2519,7 +2527,8 @@ const data: ParsedSkillCard[] = [
     "size": "Medium",
     "heroes": [
       "Vanessa",
-      "Mak"
+      "Mak",
+      "Dooley"
     ],
     "artKey": "Icon_Skill_VenomousBlade.png",
     "unifiedTooltips": [
@@ -2898,9 +2907,12 @@ const data: ParsedSkillCard[] = [
     "customTags": [],
     "size": "Medium",
     "heroes": [
+      "Dooley",
+      "Jules",
+      "Vanessa",
+      "Mak",
       "Pygmalien",
-      "Stelle",
-      "Mak"
+      "Stelle"
     ],
     "artKey": "Icon_Skill_Lethargy.png",
     "unifiedTooltips": [
@@ -3520,7 +3532,8 @@ const data: ParsedSkillCard[] = [
       "Pygmalien",
       "Jules",
       "Stelle",
-      "Dooley"
+      "Dooley",
+      "Mak"
     ],
     "artKey": "Icon_Skill_Tempering.png",
     "unifiedTooltips": [
@@ -3661,17 +3674,17 @@ const data: ParsedSkillCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "The first time you use a Large item each fight, Adjacent items gain 20% Crit Chance for the fight."
+          "The first time you use a Large item each fight, adjacent items gain 20% Crit Chance for the fight."
         ]
       },
       "Gold": {
         "tooltips": [
-          "The first time you use a Large item each fight, Adjacent items gain 40% Crit Chance for the fight."
+          "The first time you use a Large item each fight, adjacent items gain 40% Crit Chance for the fight."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "The first time you use a Large item each fight, Adjacent items gain 60% Crit Chance for the fight."
+          "The first time you use a Large item each fight, adjacent items gain 60% Crit Chance for the fight."
         ]
       },
       "Legendary": {
@@ -3694,7 +3707,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_FlankingCriticals.png",
     "unifiedTooltips": [
-      "The first time you use a Large item each fight, Adjacent items gain (20%/40%/60%) Crit Chance for the fight."
+      "The first time you use a Large item each fight, adjacent items gain (20%/40%/60%) Crit Chance for the fight."
     ]
   },
   {
@@ -3863,7 +3876,8 @@ const data: ParsedSkillCard[] = [
     "size": "Medium",
     "heroes": [
       "Pygmalien",
-      "Mak"
+      "Mak",
+      "Jules"
     ],
     "artKey": "Icon_Skill_TraumaKit.png",
     "unifiedTooltips": [
@@ -3910,7 +3924,8 @@ const data: ParsedSkillCard[] = [
       "Pygmalien",
       "Dooley",
       "Stelle",
-      "Jules"
+      "Jules",
+      "Vanessa"
     ],
     "artKey": "Icon_Skill_SharpCorners.png",
     "unifiedTooltips": [
@@ -4802,9 +4817,12 @@ const data: ParsedSkillCard[] = [
     "customTags": [],
     "size": "Medium",
     "heroes": [
-      "Pygmalien",
+      "Dooley",
+      "Jules",
+      "Vanessa",
       "Mak",
-      "Jules"
+      "Pygmalien",
+      "Stelle"
     ],
     "artKey": "Icon_Skill_SecondWind.png",
     "unifiedTooltips": [
@@ -5113,17 +5131,13 @@ const data: ParsedSkillCard[] = [
   {
     "id": "544be6e9-ff3e-4cb6-9759-498ac2d24d71",
     "name": "Relax Bro",
-    "startingTier": "Bronze",
+    "startingTier": "Gold",
     "tiers": {
       "Bronze": {
-        "tooltips": [
-          "When you use a Small item, gain 1 Regen for the fight."
-        ]
+        "tooltips": []
       },
       "Silver": {
-        "tooltips": [
-          "When you use a Small item, gain 2 Regen for the fight."
-        ]
+        "tooltips": []
       },
       "Gold": {
         "tooltips": [
@@ -5150,7 +5164,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_MON_RelaxBro.png",
     "unifiedTooltips": [
-      "When you use a Small item, gain (1/2/3/4) Regen for the fight."
+      "When you use a Small item, gain (3/4) Regen for the fight."
     ]
   },
   {
@@ -5538,8 +5552,7 @@ const data: ParsedSkillCard[] = [
     "customTags": [],
     "size": "Medium",
     "heroes": [
-      "Pygmalien",
-      "Jules"
+      "Pygmalien"
     ],
     "artKey": "Icon_Skill_ReserveShield.png",
     "unifiedTooltips": [
@@ -6187,7 +6200,9 @@ const data: ParsedSkillCard[] = [
     "heroes": [
       "Vanessa",
       "Mak",
-      "Jules"
+      "Jules",
+      "Stelle",
+      "Dooley"
     ],
     "artKey": "Icon_Skill_HonedStrike.png",
     "unifiedTooltips": [
@@ -6479,7 +6494,8 @@ const data: ParsedSkillCard[] = [
     "size": "Medium",
     "heroes": [
       "Dooley",
-      "Jules"
+      "Jules",
+      "Vanessa"
     ],
     "artKey": "Icon_Skill_SearingBlade.png",
     "unifiedTooltips": [
@@ -7211,7 +7227,8 @@ const data: ParsedSkillCard[] = [
     "heroes": [
       "Pygmalien",
       "Dooley",
-      "Stelle"
+      "Stelle",
+      "Jules"
     ],
     "artKey": "Icon_Skill_HeavyMettle.png",
     "unifiedTooltips": [
@@ -7499,7 +7516,10 @@ const data: ParsedSkillCard[] = [
     "customTags": [],
     "size": "Medium",
     "heroes": [
+      "Dooley",
+      "Jules",
       "Vanessa",
+      "Mak",
       "Pygmalien",
       "Stelle"
     ],
@@ -7633,7 +7653,8 @@ const data: ParsedSkillCard[] = [
       "Pygmalien",
       "Dooley",
       "Stelle",
-      "Jules"
+      "Jules",
+      "Vanessa"
     ],
     "artKey": "Icon_Skill_Toughness.png",
     "unifiedTooltips": [
@@ -8489,17 +8510,17 @@ const data: ParsedSkillCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "When you use a non-Shield item, your Shield items gain +3 Shield for the fight."
+          "When you use a non-Shield item, your Shield items gain +2 Shield for the fight."
         ]
       },
       "Gold": {
         "tooltips": [
-          "When you use a non-Shield item, your Shield items gain +6 Shield for the fight."
+          "When you use a non-Shield item, your Shield items gain +4 Shield for the fight."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "When you use a non-Shield item, your Shield items gain +9 Shield for the fight."
+          "When you use a non-Shield item, your Shield items gain +6 Shield for the fight."
         ]
       },
       "Legendary": {
@@ -8513,12 +8534,11 @@ const data: ParsedSkillCard[] = [
     "customTags": [],
     "size": "Medium",
     "heroes": [
-      "Pygmalien",
-      "Jules"
+      "Pygmalien"
     ],
     "artKey": "Icon_Skill_MakeshiftPlate.png",
     "unifiedTooltips": [
-      "When you use a non-Shield item, your Shield items gain (+3/+6/+9) Shield for the fight."
+      "When you use a non-Shield item, your Shield items gain (+2/+4/+6) Shield for the fight."
     ]
   },
   {
@@ -8643,7 +8663,10 @@ const data: ParsedSkillCard[] = [
     "heroes": [
       "Dooley",
       "Jules",
-      "Vanessa"
+      "Vanessa",
+      "Mak",
+      "Pygmalien",
+      "Stelle"
     ],
     "artKey": "Icon_Skill_STE_LeftyLoosey.png",
     "unifiedTooltips": [
@@ -8768,9 +8791,12 @@ const data: ParsedSkillCard[] = [
     "customTags": [],
     "size": "Medium",
     "heroes": [
+      "Vanessa",
       "Dooley",
       "Jules",
-      "Stelle"
+      "Stelle",
+      "Mak",
+      "Pygmalien"
     ],
     "artKey": "Icon_Skill_EmergencyBurn.png",
     "unifiedTooltips": [
@@ -10855,7 +10881,8 @@ const data: ParsedSkillCard[] = [
     "customTags": [],
     "size": "Medium",
     "heroes": [
-      "Dooley"
+      "Dooley",
+      "Stelle"
     ],
     "artKey": "Icon_Skill_DOO_AdvancedSynthetics.png",
     "unifiedTooltips": [
@@ -11541,11 +11568,12 @@ const data: ParsedSkillCard[] = [
     "customTags": [],
     "size": "Medium",
     "heroes": [
-      "Vanessa",
       "Dooley",
-      "Stelle",
+      "Jules",
+      "Vanessa",
       "Mak",
-      "Jules"
+      "Pygmalien",
+      "Stelle"
     ],
     "artKey": "Icon_Skill_NetLauncher.png",
     "unifiedTooltips": [
@@ -12005,7 +12033,8 @@ const data: ParsedSkillCard[] = [
     "size": "Medium",
     "heroes": [
       "Vanessa",
-      "Mak"
+      "Mak",
+      "Dooley"
     ],
     "artKey": "Icon_Skill_SickBurn.png",
     "unifiedTooltips": [
@@ -12175,7 +12204,8 @@ const data: ParsedSkillCard[] = [
     "size": "Medium",
     "heroes": [
       "Pygmalien",
-      "Mak"
+      "Mak",
+      "Jules"
     ],
     "artKey": "Icon_Skill_HealthyLifestyle.png",
     "unifiedTooltips": [
@@ -12382,7 +12412,8 @@ const data: ParsedSkillCard[] = [
     "size": "Medium",
     "heroes": [
       "Pygmalien",
-      "Mak"
+      "Mak",
+      "Stelle"
     ],
     "artKey": "Icon_Skill_LongStride.png",
     "unifiedTooltips": [
@@ -12512,7 +12543,8 @@ const data: ParsedSkillCard[] = [
       "Pygmalien",
       "Dooley",
       "Stelle",
-      "Jules"
+      "Jules",
+      "Vanessa"
     ],
     "artKey": "Icon_Skill_DefensiveWeapons.png",
     "unifiedTooltips": [
@@ -12595,7 +12627,8 @@ const data: ParsedSkillCard[] = [
       "Dooley",
       "Jules",
       "Stelle",
-      "Mak"
+      "Mak",
+      "Pygmalien"
     ],
     "artKey": "Icon_Skill_BigNumbers.png",
     "unifiedTooltips": [
@@ -12636,10 +12669,12 @@ const data: ParsedSkillCard[] = [
     "customTags": [],
     "size": "Medium",
     "heroes": [
-      "Pygmalien",
       "Dooley",
       "Jules",
-      "Mak"
+      "Vanessa",
+      "Mak",
+      "Pygmalien",
+      "Stelle"
     ],
     "artKey": "Icon_Skill_InitialChill.png",
     "unifiedTooltips": [
@@ -12726,7 +12761,9 @@ const data: ParsedSkillCard[] = [
     "customTags": [],
     "size": "Medium",
     "heroes": [
-      "Mak"
+      "Mak",
+      "Dooley",
+      "Vanessa"
     ],
     "artKey": "Icon_Skill_ExoticHerbs.png",
     "unifiedTooltips": [
@@ -13022,26 +13059,24 @@ const data: ParsedSkillCard[] = [
   {
     "id": "ed7379d4-38ee-48b0-9ef0-61ed3c57ec22",
     "name": "Extreme Comfort",
-    "startingTier": "Bronze",
+    "startingTier": "Silver",
     "tiers": {
       "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
         "tooltips": [
           "When you Heal or gain Regen, your Shield items gain 3 Shield for the fight."
         ]
       },
-      "Silver": {
+      "Gold": {
         "tooltips": [
           "When you Heal or gain Regen, your Shield items gain 6 Shield for the fight."
         ]
       },
-      "Gold": {
-        "tooltips": [
-          "When you Heal or gain Regen, your Shield items gain 9 Shield for the fight."
-        ]
-      },
       "Diamond": {
         "tooltips": [
-          "When you Heal or gain Regen, your Shield items gain 12 Shield for the fight."
+          "When you Heal or gain Regen, your Shield items gain 9 Shield for the fight."
         ]
       },
       "Legendary": {
@@ -13061,7 +13096,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_SKILL_MON_ExtremeComfort.png",
     "unifiedTooltips": [
-      "When you Heal or gain Regen, your Shield items gain (3/6/9/12) Shield for the fight."
+      "When you Heal or gain Regen, your Shield items gain (3/6/9) Shield for the fight."
     ]
   },
   {
@@ -13190,7 +13225,9 @@ const data: ParsedSkillCard[] = [
       "Pygmalien",
       "Vanessa",
       "Dooley",
-      "Stelle"
+      "Stelle",
+      "Jules",
+      "Mak"
     ],
     "artKey": "Icon_Skill_Conditioning.png",
     "unifiedTooltips": [
@@ -13313,7 +13350,9 @@ const data: ParsedSkillCard[] = [
     "heroes": [
       "Vanessa",
       "Mak",
-      "Jules"
+      "Jules",
+      "Dooley",
+      "Stelle"
     ],
     "artKey": "Icon_Skill_Alacrity.png",
     "unifiedTooltips": [
@@ -13375,22 +13414,22 @@ const data: ParsedSkillCard[] = [
     "tiers": {
       "Bronze": {
         "tooltips": [
-          "When you use a Weapon, Adjacent items gain 3% Crit Chance for the fight."
+          "When you use a Weapon, adjacent items gain 3% Crit Chance for the fight."
         ]
       },
       "Silver": {
         "tooltips": [
-          "When you use a Weapon, Adjacent items gain 6% Crit Chance for the fight."
+          "When you use a Weapon, adjacent items gain 6% Crit Chance for the fight."
         ]
       },
       "Gold": {
         "tooltips": [
-          "When you use a Weapon, Adjacent items gain 9% Crit Chance for the fight."
+          "When you use a Weapon, adjacent items gain 9% Crit Chance for the fight."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "When you use a Weapon, Adjacent items gain 12% Crit Chance for the fight."
+          "When you use a Weapon, adjacent items gain 12% Crit Chance for the fight."
         ]
       },
       "Legendary": {
@@ -13411,7 +13450,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_MON_SharpenedSteel.png",
     "unifiedTooltips": [
-      "When you use a Weapon, Adjacent items gain (3%/6%/9%/12%) Crit Chance for the fight."
+      "When you use a Weapon, adjacent items gain (3%/6%/9%/12%) Crit Chance for the fight."
     ]
   },
   {
@@ -13532,7 +13571,7 @@ const data: ParsedSkillCard[] = [
     "customTags": [],
     "size": "Medium",
     "heroes": [
-      "Common"
+      "Mak"
     ],
     "artKey": "Icon_Skill_MAK_ReserveCollection",
     "unifiedTooltips": [
@@ -13571,8 +13610,7 @@ const data: ParsedSkillCard[] = [
     "customTags": [],
     "size": "Medium",
     "heroes": [
-      "Pygmalien",
-      "Stelle"
+      "Pygmalien"
     ],
     "artKey": "Icon_Skill_PlatinumHeart.png",
     "unifiedTooltips": [
@@ -13615,7 +13653,8 @@ const data: ParsedSkillCard[] = [
     "heroes": [
       "Vanessa",
       "Mak",
-      "Jules"
+      "Jules",
+      "Dooley"
     ],
     "artKey": "Icon_Skill_SlowBurn.png",
     "unifiedTooltips": [
