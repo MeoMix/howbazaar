@@ -56,12 +56,6 @@
         <div class="font-semibold text-3xl mt-8">P.S.</div>
 
         <p>
-            I placed an ad on the website <span
-                class="italic text-sm">(booo!)</span
-            > as a means of offsetting server costs (~$150/mo).
-        </p>
-
-        <p>
             I've included a button here that you can
             click to make the ads go away <span class="italic text-sm"
                 >(yaaaay!)</span
