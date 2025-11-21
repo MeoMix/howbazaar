@@ -43,10 +43,6 @@
 <div
     class="w-full max-w-full sm:max-w-(--breakpoint-sm) md:max-w-(--breakpoint-md) lg:max-w-(--breakpoint-lg) xl:max-w-(--breakpoint-xl)"
 >
-    <div class="text-lg mt-4 text-green-500">
-        All encounters have been updated for the 5.0.0 Stelle release. Enjoy!
-    </div>
-
     <MonsterFilters
         dayOptions={data.dayOptions}
         bind:searchText

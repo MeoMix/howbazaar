@@ -1,4 +1,143 @@
 {
+  "96c9ede1-34f3-442c-89d3-befbef196729": {
+    "Id": "96c9ede1-34f3-442c-89d3-befbef196729",
+    "InternalName": "Gibbus",
+    "Health": 4000,
+    "Items": [
+      {
+        "EnchantmentType": null,
+        "Id": "d0b0c34c-f616-4a51-a0f4-fe63216cf8af",
+        "Tier": "Diamond"
+      },
+      {
+        "EnchantmentType": null,
+        "Id": "7d3b7b54-382d-4991-997d-2f78381d7690",
+        "Tier": "Gold"
+      },
+      {
+        "EnchantmentType": null,
+        "Id": "1e9649ce-e350-4c0b-b763-5e4c7e038010",
+        "Tier": "Gold"
+      },
+      {
+        "EnchantmentType": null,
+        "Id": "bf90b501-0d87-49ae-a82a-5941db70179c",
+        "Tier": "Gold"
+      },
+      {
+        "EnchantmentType": null,
+        "Id": "cfca6975-d74c-41b1-a179-ae796058ca18",
+        "Tier": "Gold"
+      },
+      {
+        "EnchantmentType": null,
+        "Id": "9a099710-0ecf-4587-98ba-96c1a6630f60",
+        "Tier": "Silver"
+      },
+      {
+        "EnchantmentType": null,
+        "Id": "55ef5f5c-0ffc-4598-a6bd-66d8235da56a",
+        "Tier": "Gold"
+      }
+    ],
+    "Skills": [
+      {
+        "Id": "8ccadf9b-11f9-4cf7-9462-b287926abb99",
+        "Tier": "Diamond"
+      }
+    ]
+  },
+  "e8782aea-3511-4a9d-98d4-e25c62120547": {
+    "Id": "e8782aea-3511-4a9d-98d4-e25c62120547",
+    "InternalName": "Sandwich Artist",
+    "Health": 1350,
+    "Items": [
+      {
+        "EnchantmentType": null,
+        "Id": "85bbf340-b66e-4c27-9d62-4f6181f1a6a5",
+        "Tier": "Silver"
+      },
+      {
+        "EnchantmentType": null,
+        "Id": "c25780af-ae03-4fcf-b8ea-a2bd096ec215",
+        "Tier": "Silver"
+      },
+      {
+        "EnchantmentType": null,
+        "Id": "63356fed-efeb-461b-a57d-e9d61c821bc8",
+        "Tier": "Silver"
+      },
+      {
+        "EnchantmentType": null,
+        "Id": "a00759a2-b9ae-4324-9cef-30a68a294904",
+        "Tier": "Silver"
+      },
+      {
+        "EnchantmentType": null,
+        "Id": "c400ec7f-8d7a-4845-9ab4-06bac18ef551",
+        "Tier": "Silver"
+      },
+      {
+        "EnchantmentType": null,
+        "Id": "2ffce1c9-e5da-4f9f-b8ed-69fd61befded",
+        "Tier": "Silver"
+      }
+    ],
+    "Skills": [
+      {
+        "Id": "a1975546-334f-4137-85cc-43a4c8ae49f3",
+        "Tier": "Silver"
+      }
+    ]
+  },
+  "f1a525c8-5dc4-457e-99b1-f20bc469f1e2": {
+    "Id": "4b69c9fd-cf2d-4197-9b06-0327a5849041",
+    "InternalName": "Stew",
+    "Health": 1700,
+    "Items": [
+      {
+        "EnchantmentType": null,
+        "Id": "8ff7ebb6-a783-403a-ae29-7e89d0c90040",
+        "Tier": "Silver"
+      },
+      {
+        "EnchantmentType": null,
+        "Id": "e6d331a7-c0e3-4619-9eee-c7c5023969bb",
+        "Tier": "Gold"
+      },
+      {
+        "EnchantmentType": null,
+        "Id": "b91bfce3-8b58-44a3-8250-ca91c3100598",
+        "Tier": "Silver"
+      },
+      {
+        "EnchantmentType": null,
+        "Id": "ad02d867-252b-45b5-9625-4480807caeff",
+        "Tier": "Silver"
+      },
+      {
+        "EnchantmentType": null,
+        "Id": "069755d6-fa1b-4c09-a7c9-31c3338184f3",
+        "Tier": "Gold"
+      },
+      {
+        "EnchantmentType": null,
+        "Id": "c0455f22-2fb9-4ce6-a65f-e874e3d86ff0",
+        "Tier": "Gold"
+      },
+      {
+        "EnchantmentType": null,
+        "Id": "6260416a-6433-456a-9c5c-14a18d82f940",
+        "Tier": "Silver"
+      }
+    ],
+    "Skills": [
+      {
+        "Id": "c1ffec09-0567-47fe-b80e-4f55f62ee7fd",
+        "Tier": "Gold"
+      }
+    ]
+  },
   "a5103989-fb08-4ac6-a5e8-6a610e0b1d46": {
     "Id": "a5103989-fb08-4ac6-a5e8-6a610e0b1d46",
     "InternalName": "Qomatz",
@@ -5022,10 +5161,12 @@
         "Tier": "Silver"
       }
     ],
-    "Skills": [{
-      "Id": "43b5e350-ec7f-4236-aaa4-fbcd0c7721de",
-      "Tier": "Gold"
-    }]
+    "Skills": [
+      {
+        "Id": "43b5e350-ec7f-4236-aaa4-fbcd0c7721de",
+        "Tier": "Gold"
+      }
+    ]
   },
   "de126a7a-a0bc-4a6f-96f0-442920104fcf": {
     "Id": "de126a7a-a0bc-4a6f-96f0-442920104fcf",
@@ -5102,7 +5243,7 @@
       {
         "EnchantmentType": null,
         "Id": "4bb19ca8-9729-423d-8e15-6053314b51df",
-        "Tier": "Gold"  
+        "Tier": "Gold"
       },
       {
         "EnchantmentType": null,
@@ -5376,7 +5517,7 @@
       {
         "EnchantmentType": null,
         "Id": "55e65c01-8279-485d-9d63-79ec0c2129cb",
-        "Tier": "Gold"    
+        "Tier": "Gold"
       },
       {
         "EnchantmentType": null,
