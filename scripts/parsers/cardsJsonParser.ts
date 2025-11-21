@@ -582,6 +582,7 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
             let rawTooltips = enchantment.Localization.Tooltips
                 .map(tooltip => tooltip.Content.Text).filter((tooltip): tooltip is string => tooltip !== undefined && tooltip !== null) ?? [];
 
+            // TODO: I don't think this rationale is correct anymore. It seems like this is more the rule than the exception now. Previously it was an exception.
             // Sometimes enchantments contain tooltips which aren't valid, but we can construct valid tooltips from the underlying data.
             // Detect this by finding tooltips which rely on looking up enchantment attributes by detecting enchantment attribute templating
             // in the tooltip string. Then, if the corresponding aura would modify the card itself, we know it's weird there's a tooltip
@@ -592,31 +593,6 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
 
                 const hasEnchantmentAura = matches.some(match => /\.e/.test(match[0]));
                 if (!hasEnchantmentAura) return false;
-
-                // Iterate over matches to look up the aura by id
-                for (const match of matches) {
-                    const [fullMatch, id, suffix] = match; // Destructure the match array to get id and suffix
-                    const aura = enchantmentAuras.find(a => a.Id.toLowerCase() === id.toLowerCase());
-
-                    if (aura) {
-                        // Perform actions with `aura` and `suffix` as needed
-                        // Example condition: check if `aura` has the required properties
-                        if (aura.Action.$type === "TAuraActionCardModifyAttribute" && aura.Action.Target?.$type === "TTargetCardSelf") {
-                            // TODO: Why do I need exceptions here?
-                            if (
-                                (card.Localization.Title.Text === "Flamethrower" && enchantmentType === "Toxic") ||
-                                (card.Localization.Title.Text === "Beach Ball" && (enchantmentType === "Restorative" || enchantmentType === "Shielded" || enchantmentType === "Toxic" || enchantmentType === "Fiery" || enchantmentType === "Obsidian")) ||
-                                (card.Localization.Title.Text === "Astrolabe" && (enchantmentType === "Restorative" || enchantmentType === "Shielded" || enchantmentType === "Toxic" || enchantmentType === "Fiery" || enchantmentType === "Obsidian")) ||
-                                (card.Localization.Title.Text === "Forklift" && (enchantmentType === "Restorative" || enchantmentType === "Shielded" || enchantmentType === "Toxic" || enchantmentType === "Fiery")) ||
-                                (card.Localization.Title.Text === "Rowboat" && (enchantmentType === "Restorative" || enchantmentType === "Shielded" || enchantmentType === "Toxic" || enchantmentType === "Fiery" || enchantmentType === "Obsidian"))
-                            ) {
-                                return true;
-                            }
-
-                            return false;
-                        }
-                    }
-                }
 
                 return true;
             });
