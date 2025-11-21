@@ -105,13 +105,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -132,6 +132,134 @@ const data: ParsedItemCard[] = [
       "Cooldown 3 seconds",
       "Deal (10/20/30/40) Damage",
       "The first (2/3/4/5) times you Crit with this each fight, you take no Damage for 1 second."
+    ]
+  },
+  {
+    "id": "c25780af-ae03-4fcf-b8ea-a2bd096ec215",
+    "name": "Bread Knife",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Deal damage equal to double your Regen",
+          "Haste the Food to the left of this for 1 second(s)"
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Deal damage equal to double your Regen",
+          "Haste the Food to the left of this for 2 second(s)"
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Deal damage equal to double your Regen",
+          "Haste the Food to the left of this for 3 second(s)"
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Weapon",
+      "Tool"
+    ],
+    "hiddenTags": [
+      "Damage",
+      "Haste",
+      "RegenReference"
+    ],
+    "customTags": [],
+    "size": "Small",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 2 items for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "This Hastes for twice as long."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield equal to this item's Damage"
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to this item's Damage"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to 5% of this item's Damage"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn equal to 5% of this item's Damage"
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "This has +50% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "This has double Damage."
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown 4 seconds",
+      "Deal damage equal to double your Regen",
+      "Haste the Food to the left of this for (1/2/3) second(s)"
     ]
   },
   {
@@ -238,13 +366,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -488,13 +616,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -776,7 +904,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -967,13 +1095,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -1103,13 +1231,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -1254,6 +1382,135 @@ const data: ParsedItemCard[] = [
     ]
   },
   {
+    "id": "d24d6805-6fed-4261-9e75-5cce64c03923",
+    "name": "Toaster",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Multicast 2",
+          "Burn 1",
+          "When you use an adjacent Food, this gains 1 Burn for the fight."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Multicast 2",
+          "Burn 2",
+          "When you use an adjacent Food, this gains 2 Burn for the fight."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Multicast 2",
+          "Burn 3",
+          "When you use an adjacent Food, this gains 3 Burn for the fight."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Tool"
+    ],
+    "hiddenTags": [
+      "Burn"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 0.5 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield equal to 5 times this item's Burn"
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to 5 times this item's Burn"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to this item's Burn"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "This has double Burn."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "This has +50% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal Damage equal to 5 times this item's Burn"
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown 6 seconds",
+      "Multicast 2",
+      "Burn (1/2/3)",
+      "When you use an adjacent Food, this gains (1/2/3) Burn for the fight."
+    ]
+  },
+  {
     "id": "59a494e4-66b2-4412-8934-dcf7d19585bf",
     "name": "Diana-Saur",
     "startingTier": "Silver",
@@ -1354,13 +1611,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -1482,13 +1739,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -1604,7 +1861,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -1630,6 +1887,131 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "Cooldown (5/4/3/2) seconds",
       "Adjacent items start or stop Flying"
+    ]
+  },
+  {
+    "id": "49d2fab6-9076-4a81-a7f6-b2409b6b5021",
+    "name": "Kitchen Scale",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Haste adjacent items for 1 second(s)",
+          "If adjacent items are the same size, this item's Cooldown is halved."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Haste adjacent items for 2 second(s)",
+          "If adjacent items are the same size, this item's Cooldown is halved."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Haste adjacent items for 3 second(s)",
+          "If adjacent items are the same size, this item's Cooldown is halved."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Tool"
+    ],
+    "hiddenTags": [
+      "Haste"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 0.5 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "This Hastes for twice as long."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield 50"
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal 50"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison 5"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn 5"
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "Your items have +25% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal 50 Damage"
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown 6 seconds",
+      "Haste adjacent items for (1/2/3) second(s)",
+      "If adjacent items are the same size, this item's Cooldown is halved."
     ]
   },
   {
@@ -1825,15 +2207,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Poison"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Poison"
         ]
       },
       {
@@ -1851,13 +2231,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -1869,8 +2249,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Poison"
         ]
       }
     ],
@@ -1982,13 +2361,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -2115,13 +2494,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -2145,27 +2524,170 @@ const data: ParsedItemCard[] = [
     ]
   },
   {
+    "id": "d650bafd-d5d1-4d0f-a721-066984d6c1f6",
+    "name": "Instant Noodles",
+    "startingTier": "Bronze",
+    "tiers": {
+      "Bronze": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Heated: Burn 2",
+          "Chilled: Gain 2 Regen for the fight",
+          "If you have a Medium Tool, this item's cooldown is reduced by 2 seconds."
+        ]
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Heated: Burn 4",
+          "Chilled: Gain 4 Regen for the fight",
+          "If you have a Medium Tool, this item's cooldown is reduced by 2 seconds."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Heated: Burn 6",
+          "Chilled: Gain 6 Regen for the fight",
+          "If you have a Medium Tool, this item's cooldown is reduced by 2 seconds."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Heated: Burn 8",
+          "Chilled: Gain 8 Regen for the fight",
+          "If you have a Medium Tool, this item's cooldown is reduced by 2 seconds."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Food"
+    ],
+    "hiddenTags": [
+      "Burn",
+      "Regen"
+    ],
+    "customTags": [],
+    "size": "Small",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 0.5 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Heated: Shield equal to 5 times this item's Burn",
+          "Chilled: Shield equal to 5 times this item's Regen"
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heated: Heal equal to 5 times this item's Burn",
+          "Chilled: Heal equal to 5 times this item's Regen"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Heated: Poison equal to this item's Burn",
+          "Chilled: Poison equal to this item's Regen"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "This has double Burn."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "This has +50% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Heated: Deal Damage equal to 5 times this item's Burn",
+          "Chilled: Deal Damage equal to 5 times this item's Regen"
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown 4 seconds",
+      "Heated: Burn (2/4/6/8)",
+      "Chilled: Gain (2/4/6/8) Regen for the fight",
+      "If you have a Medium Tool, this item's cooldown is reduced by 2 seconds."
+    ]
+  },
+  {
     "id": "0c4265a2-a374-4f10-a16d-cf718a3ede42",
     "name": "Luau",
-    "startingTier": "Gold",
+    "startingTier": "Silver",
     "tiers": {
       "Bronze": {
         "tooltips": []
       },
       "Silver": {
-        "tooltips": []
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Slow 1 item(s) for 2 seconds",
+          "When you Slow, gain 3 Regen for the fight"
+        ]
       },
       "Gold": {
         "tooltips": [
           "Cooldown 6 seconds",
-          "Slow 1 item(s) for 2 seconds",
+          "Slow 2 item(s) for 2 seconds",
           "When you Slow, gain 6 Regen for the fight"
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 6 seconds",
-          "Slow 2 item(s) for 2 seconds",
+          "Slow 3 item(s) for 2 seconds",
           "When you Slow, gain 9 Regen for the fight"
         ]
       },
@@ -2256,8 +2778,8 @@ const data: ParsedItemCard[] = [
     "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
-      "Slow (1/2) item(s) for 2 seconds",
-      "When you Slow, gain (6/9) Regen for the fight"
+      "Slow (1/2/3) item(s) for 2 seconds",
+      "When you Slow, gain (3/6/9) Regen for the fight"
     ]
   },
   {
@@ -2469,7 +2991,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -2603,13 +3125,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -2706,15 +3228,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "When you Crit with the item to the left of this, Shield equal to 5 times this item's Poison."
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "When you Crit with the item to the left of this, Heal equal to 5 times this item's Poison."
         ]
       },
       {
@@ -2750,8 +3270,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "When you Crit with the item to the left of this, deal Damage equal to 5 times this item's Poison."
         ]
       }
     ],
@@ -2858,13 +3377,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -2981,13 +3500,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -3097,15 +3616,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Burn"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Burn"
         ]
       },
       {
@@ -3123,13 +3640,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -3141,8 +3658,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Burn"
         ]
       }
     ],
@@ -3254,13 +3770,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -3384,7 +3900,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -3511,13 +4027,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -3747,7 +4263,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -3880,7 +4396,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -4231,15 +4747,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Burn"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Burn"
         ]
       },
       {
@@ -4257,13 +4771,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -4363,15 +4877,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "When your items start Flying, Shield equal to 5 times this item's Burn."
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "When your items start Flying, Heal equal to 5 times this item's Burn."
         ]
       },
       {
@@ -4389,7 +4901,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -4407,8 +4919,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "When your items start Flying, deal Damage equal to 5 times this item's Burn."
         ]
       }
     ],
@@ -4525,7 +5036,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -4647,7 +5158,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -4667,6 +5178,129 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "Cooldown (11/10) seconds",
       "Freeze both Players' items for 1 second(s)"
+    ]
+  },
+  {
+    "id": "c905d622-051e-4250-934c-3acb82c3ab35",
+    "name": "Dragon Steak",
+    "startingTier": "Gold",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 9 seconds",
+          "Burn 5",
+          "Heated: This has +Burn equal to its Crit Chance."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Burn 5",
+          "Heated: This has +Burn equal to its Crit Chance."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Food",
+      "Dragon"
+    ],
+    "hiddenTags": [
+      "Burn",
+      "CritReference"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 2 items for 2 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 2 items for 2 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield equal to 5 times this item's Burn"
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to 5 times this item's Burn"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to this item's Burn"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "This has double Burn."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "This has +50% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal Damage equal to 5 times this item's Burn"
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown (9/6) seconds",
+      "Burn 5",
+      "Heated: This has +Burn equal to its Crit Chance."
     ]
   },
   {
@@ -4765,7 +5399,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -5140,13 +5774,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -5271,13 +5905,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -5401,13 +6035,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -5645,13 +6279,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -5773,13 +6407,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -5800,6 +6434,141 @@ const data: ParsedItemCard[] = [
       "Cooldown (5/4/3) seconds",
       "Shield 10",
       "Adjacent Toys have +1 Multicast."
+    ]
+  },
+  {
+    "id": "62b2855d-cd2d-46cb-963b-0c191f8b7a10",
+    "name": "Excellent Vintage",
+    "startingTier": "Bronze",
+    "tiers": {
+      "Bronze": {
+        "tooltips": [
+          "Cooldown 7 seconds",
+          "Shield 30",
+          "Slow 2 items for 2 second(s)",
+          "Chilled: This has +1 Multicast"
+        ]
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 7 seconds",
+          "Shield 60",
+          "Slow 2 items for 2 second(s)",
+          "Chilled: This has +1 Multicast"
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 7 seconds",
+          "Shield 90",
+          "Slow 2 items for 2 second(s)",
+          "Chilled: This has +1 Multicast"
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 7 seconds",
+          "Shield 120",
+          "Slow 2 items for 2 second(s)",
+          "Chilled: This has +1 Multicast"
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Food"
+    ],
+    "hiddenTags": [
+      "Shield",
+      "Slow"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "This Slows for twice as long."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 2 items for 2 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "This has double Shield."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to this item's Shield"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to 5% of this item's Shield"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn equal to 5% of this item's Shield"
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "This has +50% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal Damage equal to this item's Shield"
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown 7 seconds",
+      "Shield (30/60/90/120)",
+      "Slow 2 items for 2 second(s)",
+      "Chilled: This has +1 Multicast"
     ]
   },
   {
@@ -5879,15 +6648,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "When your items start Flying, Shield equal to 5 times this item's Regen."
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "When your items start Flying, Heal equal to 5 times this item's Regen."
         ]
       },
       {
@@ -5905,7 +6672,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -5923,8 +6690,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "When your items start Flying, deal Damage equal to 5 times this item's Regen."
         ]
       }
     ],
@@ -6365,7 +7131,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -6492,7 +7258,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -6504,7 +7270,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -6622,7 +7388,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -6634,7 +7400,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -6743,13 +7509,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -6863,13 +7629,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -7109,7 +7875,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -7243,13 +8009,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -7369,13 +8135,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -7503,13 +8269,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -7629,7 +8395,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -7756,13 +8522,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -7904,7 +8670,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -8029,7 +8795,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -8247,15 +9013,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Poison"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Poison"
         ]
       },
       {
@@ -8273,13 +9037,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -8291,8 +9055,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Poison"
         ]
       }
     ],
@@ -8378,15 +9141,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Burn"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Burn"
         ]
       },
       {
@@ -8404,13 +9165,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -8422,8 +9183,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Burn"
         ]
       }
     ],
@@ -8504,15 +9264,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Poison"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Poison"
         ]
       },
       {
@@ -8530,13 +9288,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -8548,8 +9306,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Poison"
         ]
       }
     ],
@@ -8633,15 +9390,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Regen"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Regen"
         ]
       },
       {
@@ -8659,7 +9414,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -8671,14 +9426,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Regen"
         ]
       }
     ],
@@ -8781,7 +9535,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -8910,13 +9664,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -9015,15 +9769,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Regen"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Regen"
         ]
       },
       {
@@ -9041,7 +9793,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -9053,14 +9805,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Regen"
         ]
       }
     ],
@@ -9145,15 +9896,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Burn"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Burn"
         ]
       },
       {
@@ -9171,13 +9920,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -9189,8 +9938,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Burn"
         ]
       }
     ],
@@ -9282,15 +10030,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Poison"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Poison"
         ]
       },
       {
@@ -9308,13 +10054,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -9326,8 +10072,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Poison"
         ]
       }
     ],
@@ -9443,13 +10188,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -9539,8 +10284,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "At the start of each fight, Shield equal to 5 times this item's Burn."
         ]
       },
       {
@@ -9564,8 +10308,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "At the start of each fight, deal Damage equal to 5 times this item's Burn."
         ]
       }
     ],
@@ -9676,7 +10419,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -9706,28 +10449,28 @@ const data: ParsedItemCard[] = [
     "tiers": {
       "Bronze": {
         "tooltips": [
-          "Cooldown 7 seconds",
+          "Cooldown 8 seconds",
           "Haste an item for 1 second(s)",
           "For each adjacent Tool or Food item, this gains +1 Multicast."
         ]
       },
       "Silver": {
         "tooltips": [
-          "Cooldown 6 seconds",
+          "Cooldown 7 seconds",
           "Haste an item for 1 second(s)",
           "For each adjacent Tool or Food item, this gains +1 Multicast."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 5 seconds",
+          "Cooldown 6 seconds",
           "Haste an item for 1 second(s)",
           "For each adjacent Tool or Food item, this gains +1 Multicast."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 4 seconds",
+          "Cooldown 5 seconds",
           "Haste an item for 1 second(s)",
           "For each adjacent Tool or Food item, this gains +1 Multicast."
         ]
@@ -9799,7 +10542,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -9823,7 +10566,7 @@ const data: ParsedItemCard[] = [
     ],
     "quests": [],
     "unifiedTooltips": [
-      "Cooldown (7/6/5/4) seconds",
+      "Cooldown (8/7/6/5) seconds",
       "Haste an item for 1 second(s)",
       "For each adjacent Tool or Food item, this gains +1 Multicast."
     ]
@@ -9927,13 +10670,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -9954,6 +10697,136 @@ const data: ParsedItemCard[] = [
       "Cooldown (9/8/7) seconds",
       "Deal 100 Damage",
       "When you Haste, Charge this 2 seconds."
+    ]
+  },
+  {
+    "id": "13081c31-f8b4-400d-bedc-8f311b08153b",
+    "name": "Blueberry Pie",
+    "startingTier": "Bronze",
+    "tiers": {
+      "Bronze": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Shield 20",
+          "Heated: Burn equal to 20% of this item's Shield"
+        ]
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Shield 40",
+          "Heated: Burn equal to 20% of this item's Shield"
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Shield 60",
+          "Heated: Burn equal to 20% of this item's Shield"
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Shield 80",
+          "Heated: Burn equal to 20% of this item's Shield"
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Food"
+    ],
+    "hiddenTags": [
+      "Shield",
+      "Burn"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 2 items for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 2 items for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "This has double Shield."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to this item's Shield"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to 5% of this item's Shield"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "This has double Burn."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "This has +50% Crit Chance."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal Damage equal to this item's Shield"
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown 5 seconds",
+      "Shield (20/40/60/80)",
+      "Heated: Burn equal to 20% of this item's Shield"
     ]
   },
   {
@@ -10218,7 +11091,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -10246,6 +11119,131 @@ const data: ParsedItemCard[] = [
       "Adjacent Weapons gain (+30/+60/+90) Damage for the fight.",
       "Adjacent Burn items gain (+3/+6/+9) Burn for the fight.",
       "When a Flying Vehicle or Drone gains Damage or Burn during combat, Haste it 1 second(s)."
+    ]
+  },
+  {
+    "id": "1a5f9923-d686-41fc-a907-012e456bf50b",
+    "name": "Saffron",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Shield 5",
+          "Adjacent items gain +Shield for the fight equal to this item's Shield."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Shield 10",
+          "Adjacent items gain +Shield for the fight equal to this item's Shield."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Shield 15",
+          "Adjacent items gain +Shield for the fight equal to this item's Shield."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Food"
+    ],
+    "hiddenTags": [
+      "Shield"
+    ],
+    "customTags": [],
+    "size": "Small",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow an item for 2 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 0.5 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste an item for 2 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "This has double Shield."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to this item's Shield"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to 5% of this item's Shield"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn equal to 5% of this item's Shield"
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "This has +50% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal Damage equal to this item's Shield"
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown 5 seconds",
+      "Shield (5/10/15)",
+      "Adjacent items gain +Shield for the fight equal to this item's Shield."
     ]
   },
   {
@@ -10345,13 +11343,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -10467,7 +11465,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -10596,7 +11594,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -10658,7 +11656,7 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Cooldown 12 seconds",
           "Deal 50 Damage",
-          "When you use an Adjacent item, Charge this 1 second(s).",
+          "When you use an adjacent item, Charge this 1 second(s).",
           "If you have another Tool, Apparel, Tech, Weapon, Ray, Relic, Property, Vehicle or Friend, this has +150 Damage for each."
         ]
       },
@@ -10666,7 +11664,7 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Cooldown 12 seconds",
           "Deal 50 Damage",
-          "When you use an Adjacent item, Charge this 2 second(s).",
+          "When you use an adjacent item, Charge this 2 second(s).",
           "If you have another Tool, Apparel, Tech, Weapon, Ray, Relic, Property, Vehicle or Friend, this has +250 Damage for each."
         ]
       },
@@ -10740,13 +11738,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -10766,7 +11764,7 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "Cooldown 12 seconds",
       "Deal 50 Damage",
-      "When you use an Adjacent item, Charge this (1/2) second(s).",
+      "When you use an adjacent item, Charge this (1/2) second(s).",
       "If you have another Tool, Apparel, Tech, Weapon, Ray, Relic, Property, Vehicle or Friend, this has (+150/+250) Damage for each."
     ]
   },
@@ -10843,15 +11841,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Burn"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Burn"
         ]
       },
       {
@@ -10869,7 +11865,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -10881,14 +11877,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Burn"
         ]
       }
     ],
@@ -10994,15 +11989,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "When you use a non-Weapon item, Shield equal to 5 times this item's Poison."
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "When you use a non-Weapon item, Heal equal to 5 times this item's Poison."
         ]
       },
       {
@@ -11039,8 +12032,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "When ANY Player uses a Weapon, deal Damage equal to 5 times this item's Poison."
         ]
       }
     ],
@@ -11207,7 +12199,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -11327,7 +12319,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -11432,15 +12424,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Burn"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Burn"
         ]
       },
       {
@@ -11458,13 +12448,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -11476,8 +12466,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Burn"
         ]
       }
     ],
@@ -11587,13 +12576,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -11713,13 +12702,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -11814,15 +12803,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Regen"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Regen"
         ]
       },
       {
@@ -11846,7 +12833,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -11858,8 +12845,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Regen"
         ]
       }
     ],
@@ -11977,13 +12963,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -12108,13 +13094,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -12240,7 +13226,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -12567,7 +13553,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -12690,13 +13676,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -12814,13 +13800,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -12944,13 +13930,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -13076,7 +14062,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -13180,15 +14166,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Burn"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Burn"
         ]
       },
       {
@@ -13206,13 +14190,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -13224,8 +14208,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Burn"
         ]
       }
     ],
@@ -13451,13 +14434,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -13578,7 +14561,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -13701,13 +14684,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -13728,6 +14711,131 @@ const data: ParsedItemCard[] = [
       "Cooldown 11 seconds",
       "Deal (30/60/120/240) Damage",
       "When you sell this, your Weapons gain (4/6/8/10) Damage."
+    ]
+  },
+  {
+    "id": "2466b385-10c0-4a80-8a09-871c1876632d",
+    "name": "Pancakes",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Shield 10",
+          "Heated: This gains +10 Shield for the fight."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Shield 15",
+          "Heated: This gains +15 Shield for the fight."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Shield 20",
+          "Heated: This gains +20 Shield for the fight."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Food"
+    ],
+    "hiddenTags": [
+      "Shield"
+    ],
+    "customTags": [],
+    "size": "Small",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow an item for 2 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 0.5 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste an item for 2 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "This has double Shield."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to this item's Shield"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to 5% of this item's Shield"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn equal to 5% of this item's Shield"
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "This has +50% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal Damage equal to this item's Shield"
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown 4 seconds",
+      "Shield (10/15/20)",
+      "Heated: This gains (+10/+15/+20) Shield for the fight."
     ]
   },
   {
@@ -13828,7 +14936,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -13958,7 +15066,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -13970,7 +15078,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -14315,7 +15423,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -14327,7 +15435,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -14437,7 +15545,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -14683,7 +15791,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -14813,13 +15921,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -14934,7 +16042,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -15056,7 +16164,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -15068,7 +16176,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -15185,7 +16293,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -15286,15 +16394,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Burn"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Burn"
         ]
       },
       {
@@ -15312,13 +16418,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -15330,8 +16436,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Burn"
         ]
       }
     ],
@@ -15340,6 +16445,136 @@ const data: ParsedItemCard[] = [
       "Cooldown 7 seconds",
       "Burn (3/6/9)",
       "When you Burn, this gains (3/6/9) Burn for the fight."
+    ]
+  },
+  {
+    "id": "38867a93-a32f-4c75-8018-b60a205cc436",
+    "name": "Seafood Cracker",
+    "startingTier": "Bronze",
+    "tiers": {
+      "Bronze": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Deal 10 Damage",
+          "If an enemy is Shielded, this deals triple Damage."
+        ]
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Deal 20 Damage",
+          "If an enemy is Shielded, this deals triple Damage."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Deal 30 Damage",
+          "If an enemy is Shielded, this deals triple Damage."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Deal 40 Damage",
+          "If an enemy is Shielded, this deals triple Damage."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Weapon",
+      "Tool"
+    ],
+    "hiddenTags": [
+      "Damage"
+    ],
+    "customTags": [],
+    "size": "Small",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow an item for 2 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 0.5 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste an item for 2 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield equal to this item's Damage"
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to this item's Damage"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to 5% of this item's Damage"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn equal to 5% of this item's Damage"
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "This has +50% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "This has double Damage."
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown 5 seconds",
+      "Deal (10/20/30/40) Damage",
+      "If an enemy is Shielded, this deals triple Damage."
     ]
   },
   {
@@ -15558,13 +16793,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -15690,7 +16925,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -15702,7 +16937,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -15818,7 +17053,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -15947,7 +17182,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -16076,7 +17311,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -16103,6 +17338,128 @@ const data: ParsedItemCard[] = [
       "Cooldown (6/5/4/3) seconds",
       "Charge the Tech item to the right of this 1 second(s)",
       "When you buy this, get a Small Tech item."
+    ]
+  },
+  {
+    "id": "f04e5d35-874a-4770-b6c5-d60209e928d9",
+    "name": "Sushi Boat",
+    "startingTier": "Gold",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Charge your non-Heated Food 1 second(s).",
+          "When you use a Tool, Charge this 1 second(s)."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Charge your non-Heated Food 2 second(s).",
+          "When you use a Tool, Charge this 2 second(s)."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Aquatic",
+      "Vehicle"
+    ],
+    "hiddenTags": [
+      "Charge"
+    ],
+    "customTags": [],
+    "size": "Large",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 2 items for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 2 items for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield 40"
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal 40"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison 4"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn 4"
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "Your Food have +40% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal 40 Damage"
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown 6 seconds",
+      "Charge your non-Heated Food (1/2) second(s).",
+      "When you use a Tool, Charge this (1/2) second(s)."
     ]
   },
   {
@@ -16196,13 +17553,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -16320,7 +17677,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -16564,7 +17921,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -16685,7 +18042,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -16814,7 +18171,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -16939,7 +18296,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -16951,7 +18308,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -17073,13 +18430,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -17205,7 +18562,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -17217,7 +18574,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -17456,13 +18813,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -17484,6 +18841,136 @@ const data: ParsedItemCard[] = [
       "Deal (20/40/80/160) Damage",
       "Slow 2 items for (3/4/5/6) second(s)",
       "When you sell this, your leftmost Slow item gains +1 Slow duration."
+    ]
+  },
+  {
+    "id": "04b1d6bc-f179-4367-b8be-60765216c968",
+    "name": "Chopsticks",
+    "startingTier": "Bronze",
+    "tiers": {
+      "Bronze": {
+        "tooltips": [
+          "Cooldown 7 seconds",
+          "Multicast 2",
+          "Deal 5 Damage"
+        ]
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Multicast 2",
+          "Deal 5 Damage"
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Multicast 2",
+          "Deal 5 Damage"
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Multicast 2",
+          "Deal 5 Damage"
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Weapon",
+      "Tool"
+    ],
+    "hiddenTags": [
+      "Damage"
+    ],
+    "customTags": [],
+    "size": "Small",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 0.5 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield equal to this item's Damage"
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to this item's Damage"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to 5% of this item's Damage"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn equal to 5% of this item's Damage"
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "This has +50% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "This has double Damage."
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown (7/6/5/4) seconds",
+      "Multicast 2",
+      "Deal 5 Damage"
     ]
   },
   {
@@ -17710,7 +19197,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -17838,13 +19325,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -18086,7 +19573,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -18207,13 +19694,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -18424,6 +19911,136 @@ const data: ParsedItemCard[] = [
     ]
   },
   {
+    "id": "5e95fcfd-bacb-4bb6-bf65-fb16ba602b3d",
+    "name": "Jambalaya",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Gain 2 Regen for the fight",
+          "Burn 2",
+          "When you gain Regen, a Burn item gains +2 Burn for the fight."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Gain 4 Regen for the fight",
+          "Burn 4",
+          "When you gain Regen, a Burn item gains +4 Burn for the fight."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Gain 6 Regen for the fight",
+          "Burn 6",
+          "When you gain Regen, a Burn item gains +6 Burn for the fight."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Food"
+    ],
+    "hiddenTags": [
+      "Regen",
+      "Burn"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 2 items for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 2 items for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield equal to 5 times this item's Burn"
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to 5 times this item's Burn"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to this item's Burn"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "This has double Burn."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "This has +50% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal Damage equal to 5 times this item's Burn"
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown 6 seconds",
+      "Gain (2/4/6) Regen for the fight",
+      "Burn (2/4/6)",
+      "When you gain Regen, a Burn item gains (+2/+4/+6) Burn for the fight."
+    ]
+  },
+  {
     "id": "e1f77ca7-8c4c-4e40-8a42-fd125f6104ae",
     "name": "Propeller",
     "startingTier": "Silver",
@@ -18520,7 +20137,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -18646,7 +20263,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -18745,15 +20362,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Burn"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Burn"
         ]
       },
       {
@@ -18771,13 +20386,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -18789,8 +20404,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Burn"
         ]
       }
     ],
@@ -18878,15 +20492,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Burn"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Burn"
         ]
       },
       {
@@ -18904,13 +20516,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -18922,8 +20534,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Burn"
         ]
       }
     ],
@@ -19200,13 +20811,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -19446,7 +21057,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -19572,7 +21183,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -19706,13 +21317,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -19828,13 +21439,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -19856,6 +21467,131 @@ const data: ParsedItemCard[] = [
       "Deal Damage equal to (2/3) times the value of your items",
       "This has double value in combat.",
       "If you have 5 or fewer items, this has +1 Multicast."
+    ]
+  },
+  {
+    "id": "45f5bb41-ced2-4f67-b30b-b43f422f1ac5",
+    "name": "Cheese Wheel",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 8 seconds",
+          "Shield 1",
+          "Double this item's Shield for the fight"
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 7 seconds",
+          "Shield 1",
+          "Double this item's Shield for the fight"
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Shield 1",
+          "Double this item's Shield for the fight"
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Food"
+    ],
+    "hiddenTags": [
+      "Shield"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 2 items for 2 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 2 items for 2 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "This has double Shield."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to this item's Shield"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to 5% of this item's Shield"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn equal to 5% of this item's Shield"
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "This has +50% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal Damage equal to this item's Shield"
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown (8/7/6) seconds",
+      "Shield 1",
+      "Double this item's Shield for the fight"
     ]
   },
   {
@@ -19959,7 +21695,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -20352,7 +22088,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -20476,7 +22212,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -20603,7 +22339,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -20631,6 +22367,133 @@ const data: ParsedItemCard[] = [
       "Slow (1/2/3) item(s) for 1 second(s)",
       "Haste (1/2/3) item(s) for 1 second(s)",
       "For each adjacent Vehicle or Property, this has +1 Multicast."
+    ]
+  },
+  {
+    "id": "9715627a-feb1-4e26-b1d6-12f21961473c",
+    "name": "Meat Tenderizer",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Deal 10 Damage",
+          "Reduce the Cooldown of adjacent Food by 5% for the fight"
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Deal 20 Damage",
+          "Reduce the Cooldown of adjacent Food by 10% for the fight"
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Deal 30 Damage",
+          "Reduce the Cooldown of adjacent Food by 15% for the fight"
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Weapon",
+      "Tool"
+    ],
+    "hiddenTags": [
+      "Damage",
+      "DamageReference"
+    ],
+    "customTags": [],
+    "size": "Small",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow an item for 3 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 0.5 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste an item for 3 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield equal to this item's Damage"
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to this item's Damage"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to 5% of this item's Damage"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn equal to 5% of this item's Damage"
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "This has +50% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "This has double Damage."
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown 5 seconds",
+      "Deal (10/20/30) Damage",
+      "Reduce the Cooldown of adjacent Food by (5%/10%/15%) for the fight"
     ]
   },
   {
@@ -20734,13 +22597,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -20864,7 +22727,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -20970,15 +22833,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Burn"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Burn"
         ]
       },
       {
@@ -20996,13 +22857,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -21014,8 +22875,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Burn"
         ]
       }
     ],
@@ -21128,7 +22988,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -21155,6 +23015,131 @@ const data: ParsedItemCard[] = [
       "Cooldown 4 seconds",
       "Charge another Flying item (1/1.5/2/2.5) seconds",
       "At the start of each day, get a Loot item."
+    ]
+  },
+  {
+    "id": "58644fca-df07-48f8-808e-85c9cbf5fccb",
+    "name": "Cookbook",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Charge a Food 2 seconds",
+          "At the start of each day, upgrade a Food of a lower tier."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Charge a Food 3 seconds",
+          "At the start of each day, upgrade a Food of a lower tier."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Charge a Food 4 seconds",
+          "At the start of each day, upgrade a Food of a lower tier."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Tool"
+    ],
+    "hiddenTags": [
+      "Charge"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 2 items for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 2 items for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield 75"
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal 75"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison 7"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn 7"
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "Your items have +25% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal 75 Damage"
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown 4 seconds",
+      "Charge a Food (2/3/4) seconds",
+      "At the start of each day, upgrade a Food of a lower tier."
     ]
   },
   {
@@ -21490,13 +23475,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -21519,6 +23504,127 @@ const data: ParsedItemCard[] = [
       "Deal 100 Damage",
       "When you use another Aquatic or Ammo item, this gains (40/80/120) Damage for the fight.",
       "If the item is Large, double the Damage gain."
+    ]
+  },
+  {
+    "id": "833b205c-b5a6-4095-b816-a8df156ef7fa",
+    "name": "Coffee",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Haste the item to the left of this for 1 second(s)"
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Haste the item to the left of this for 2 second(s)"
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Haste the item to the left of this for 3 second(s)"
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Food"
+    ],
+    "hiddenTags": [
+      "Haste"
+    ],
+    "customTags": [],
+    "size": "Small",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 0.5 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "This Hastes for twice as long."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield 20"
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal 20"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison 2"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn 2"
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "The item to the left of this has +50% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "The item to the left of this is affected by Freeze and Slow for half as long."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal 20 Damage"
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown 4 seconds",
+      "Haste the item to the left of this for (1/2/3) second(s)"
     ]
   },
   {
@@ -21728,7 +23834,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -21850,13 +23956,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -21985,7 +24091,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -22273,7 +24379,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -22378,15 +24484,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Burn"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Burn"
         ]
       },
       {
@@ -22404,13 +24508,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -22422,8 +24526,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Burn"
         ]
       }
     ],
@@ -22534,7 +24637,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -22631,15 +24734,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "When you use the Weapon to the left of this, Shield equal to 5 times this item's Poison."
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "When you use the Weapon to the left of this, Heal equal to 5 times this item's Poison."
         ]
       },
       {
@@ -22675,8 +24776,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "When you use the Weapon to the left of this, deal Damage equal to 5 times this item's Poison."
         ]
       }
     ],
@@ -22781,13 +24881,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -22911,13 +25011,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -23039,7 +25139,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -23051,7 +25151,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -23161,7 +25261,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -23283,7 +25383,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -23407,13 +25507,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -23542,7 +25642,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -23570,6 +25670,132 @@ const data: ParsedItemCard[] = [
       "Ammo 1",
       "Haste your other Flying items for 1 second(s)",
       "(1/2/3/4) items start Flying"
+    ]
+  },
+  {
+    "id": "5ee8749e-0274-4516-bbea-0830bb2953b7",
+    "name": "Cake Batter",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Shield 20",
+          "When you use an adjacent Tool, your Heated or Chilled Food items gain +10 Shield and +1 Regen for the fight."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Shield 20",
+          "When you use an adjacent Tool, your Heated or Chilled Food items gain +20 Shield and +2 Regen for the fight."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Shield 20",
+          "When you use an adjacent Tool, your Heated or Chilled Food items gain +30 Shield and +3 Regen for the fight."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Food"
+    ],
+    "hiddenTags": [
+      "Shield",
+      "RegenReference"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 2 items for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 2 items for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "This has double Shield."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to this item's Shield"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to 5% of this item's Shield"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn equal to 5% of this item's Shield"
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "This has +50% Crit Chance."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal Damage equal to this item's Shield"
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown 6 seconds",
+      "Shield 20",
+      "When you use an adjacent Tool, your Heated or Chilled Food items gain (+10/+20/+30) Shield and (+1/+2/+3) Regen for the fight."
     ]
   },
   {
@@ -23647,15 +25873,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Poison"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Poison"
         ]
       },
       {
@@ -23673,13 +25897,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -23691,8 +25915,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Poison"
         ]
       }
     ],
@@ -23825,28 +26048,28 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Cooldown 7 seconds",
           "Haste the Tool to the right of this for 2 seconds",
-          "At the start of each day, get a Small Tool."
+          "At the start of each day, get a Small Tool from any Hero."
         ]
       },
       "Silver": {
         "tooltips": [
           "Cooldown 7 seconds",
           "Haste the Tool to the right of this for 2 seconds",
-          "At the start of each day, get a Small Tool."
+          "At the start of each day, get a Small Tool from any Hero."
         ]
       },
       "Gold": {
         "tooltips": [
           "Cooldown 7 seconds",
           "Haste the Tool to the right of this for 2 seconds",
-          "At the start of each day, get a Small Tool."
+          "At the start of each day, get a Small Tool from any Hero."
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 7 seconds",
           "Haste the Tool to the right of this for 2 seconds",
-          "At the start of each day, get a Small Tool."
+          "At the start of each day, get a Small Tool from any Hero."
         ]
       },
       "Legendary": {
@@ -23916,7 +26139,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -23942,7 +26165,7 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "Cooldown 7 seconds",
       "Haste the Tool to the right of this for 2 seconds",
-      "At the start of each day, get a Small Tool."
+      "At the start of each day, get a Small Tool from any Hero."
     ]
   },
   {
@@ -24045,13 +26268,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -24176,13 +26399,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -24411,7 +26634,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -24539,7 +26762,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -24669,7 +26892,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -24799,13 +27022,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -24907,15 +27130,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Burn"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Burn"
         ]
       },
       {
@@ -24933,13 +27154,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -24951,8 +27172,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Burn"
         ]
       }
     ],
@@ -25064,13 +27284,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -25095,29 +27315,36 @@ const data: ParsedItemCard[] = [
     ]
   },
   {
-    "id": "c9beb35d-e6c6-4e3a-ad2c-1d64db11be07",
-    "name": "Signet Ring",
-    "startingTier": "Silver",
+    "id": "468a8300-4fb1-4ba6-bdf8-59794111c0d4",
+    "name": "Spatula",
+    "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
-        "tooltips": []
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Deal 10 Damage",
+          "When you use an adjacent Food, it gains +5% Crit Chance for the fight."
+        ]
       },
       "Silver": {
         "tooltips": [
-          "At the start of each hour, gain 5 Max Health.",
-          "You have +1 Income."
+          "Cooldown 4 seconds",
+          "Deal 10 Damage",
+          "When you use an adjacent Food, it gains +10% Crit Chance for the fight."
         ]
       },
       "Gold": {
         "tooltips": [
-          "At the start of each hour, gain 10 Max Health.",
-          "You have +2 Income."
+          "Cooldown 4 seconds",
+          "Deal 10 Damage",
+          "When you use an adjacent Food, it gains +15% Crit Chance for the fight."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "At the start of each hour, gain 15 Max Health.",
-          "You have +3 Income."
+          "Cooldown 4 seconds",
+          "Deal 10 Damage",
+          "When you use an adjacent Food, it gains +20% Crit Chance for the fight."
         ]
       },
       "Legendary": {
@@ -25125,36 +27352,97 @@ const data: ParsedItemCard[] = [
       }
     },
     "tags": [
-      "Apparel",
-      "Relic"
+      "Weapon",
+      "Tool"
     ],
     "hiddenTags": [
-      "Income",
-      "Health"
+      "Damage",
+      "Crit"
     ],
     "customTags": [],
     "size": "Small",
     "heroes": [
-      "Pygmalien"
+      "Jules"
     ],
     "enchantments": [
       {
         "type": "Golden",
         "tooltips": [
-          "This has double income bonus."
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow an item for 2 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 0.5 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste an item for 2 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield equal to this item's Damage"
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to this item's Damage"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to 5% of this item's Damage"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn equal to 5% of this item's Damage"
         ]
       },
       {
         "type": "Shiny",
         "tooltips": [
-          "Double Health Max"
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "This has double Crit Chance bonus."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "This has double Damage."
         ]
       }
     ],
     "quests": [],
     "unifiedTooltips": [
-      "At the start of each hour, gain (5/10/15) Max Health.",
-      "You have (+1/+2/+3) Income."
+      "Cooldown 4 seconds",
+      "Deal 10 Damage",
+      "When you use an adjacent Food, it gains (+5%/+10%/+15%/+20%) Crit Chance for the fight."
     ]
   },
   {
@@ -25249,7 +27537,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -25275,6 +27563,69 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "Cooldown 4 seconds",
       "Adjacent Weapons gain (+3/+6/+9/+12) Damage for the fight"
+    ]
+  },
+  {
+    "id": "c9beb35d-e6c6-4e3a-ad2c-1d64db11be07",
+    "name": "Signet Ring",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "At the start of each hour, gain 5 Max Health.",
+          "You have +1 Income."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "At the start of each hour, gain 10 Max Health.",
+          "You have +2 Income."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "At the start of each hour, gain 15 Max Health.",
+          "You have +3 Income."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Apparel",
+      "Relic"
+    ],
+    "hiddenTags": [
+      "Income",
+      "Health"
+    ],
+    "customTags": [],
+    "size": "Small",
+    "heroes": [
+      "Pygmalien"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double income bonus."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "Double Health Max"
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "At the start of each hour, gain (5/10/15) Max Health.",
+      "You have (+1/+2/+3) Income."
     ]
   },
   {
@@ -25372,13 +27723,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -25478,15 +27829,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Poison"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Poison"
         ]
       },
       {
@@ -25504,13 +27853,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -25522,8 +27871,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Poison"
         ]
       }
     ],
@@ -25637,13 +27985,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -25665,6 +28013,136 @@ const data: ParsedItemCard[] = [
       "Deal (50/100/200) Damage",
       "Freeze 2 items for (1/2/3) second(s)",
       "When you sell this, gain 2 Icicles."
+    ]
+  },
+  {
+    "id": "0b13735f-7382-460d-a054-710e1a2a3799",
+    "name": "Blender",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Transform an adjacent non-Legendary Small item into a Slushee for the fight.",
+          "When you Freeze, Haste an item for 1 second(s)",
+          "Chilled: Your Slushees are Chilled"
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Transform an adjacent non-Legendary Small item into a Slushee for the fight.",
+          "When you Freeze, Haste an item for 2 second(s)",
+          "Chilled: Your Slushees are Chilled"
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Transform an adjacent non-Legendary Small item into a Slushee for the fight.",
+          "When you Freeze, Haste an item for 3 second(s)",
+          "Chilled: Your Slushees are Chilled"
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Tool"
+    ],
+    "hiddenTags": [
+      "FreezeReference",
+      "Haste"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 2 items for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "This Hastes for twice as long."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield 75"
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal 75"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison 7"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn 7"
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "Your Slushees have +50% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal 75 Damage"
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown 4 seconds",
+      "Transform an adjacent non-Legendary Small item into a Slushee for the fight.",
+      "When you Freeze, Haste an item for (1/2/3) second(s)",
+      "Chilled: Your Slushees are Chilled"
     ]
   },
   {
@@ -25764,7 +28242,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -26026,13 +28504,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -26055,6 +28533,133 @@ const data: ParsedItemCard[] = [
       "Shield 10",
       "When this is Hasted, your Weapons gain (10/15/20) Damage for the fight.",
       "When this is Hasted, your Shield items gain (10/15/20) Shield for the fight."
+    ]
+  },
+  {
+    "id": "82edae84-1f2a-4154-9273-b7274be2cf92",
+    "name": "Dragonmelon",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 8 seconds",
+          "Shield equal to 10% of your Max Health.",
+          "Chilled: You have +10% Max Health."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 8 seconds",
+          "Shield equal to 15% of your Max Health.",
+          "Chilled: You have +20% Max Health."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 8 seconds",
+          "Shield equal to 20% of your Max Health.",
+          "Chilled: You have +30% Max Health."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Food",
+      "Dragon"
+    ],
+    "hiddenTags": [
+      "Shield",
+      "Health"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 2 items for 3 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze 2 items for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 2 items for 3 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "This has double Shield."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to this item's Shield"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to 5% of this item's Shield"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn equal to 5% of this item's Shield"
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "This has +50% Crit Chance."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal Damage equal to this item's Shield"
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown 8 seconds",
+      "Shield equal to (10%/15%/20%) of your Max Health.",
+      "Chilled: You have (+10%/+20%/+30%) Max Health."
     ]
   },
   {
@@ -26167,13 +28772,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -26304,13 +28909,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -26402,15 +29007,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Burn"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Burn"
         ]
       },
       {
@@ -26428,13 +29031,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -26446,8 +29049,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Burn"
         ]
       }
     ],
@@ -26653,15 +29255,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Burn"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Burn"
         ]
       },
       {
@@ -26679,13 +29279,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -26697,8 +29297,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Burn"
         ]
       }
     ],
@@ -27044,7 +29643,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -27194,6 +29793,143 @@ const data: ParsedItemCard[] = [
     ]
   },
   {
+    "id": "74015476-fea8-4aed-ae77-01e66b28cbfe",
+    "name": "Durian",
+    "startingTier": "Bronze",
+    "tiers": {
+      "Bronze": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Shield 20",
+          "Chilled: Deal Damage equal to your Shield",
+          "Heated: Slow 1 item(s) for 1 second(s)."
+        ]
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Shield 40",
+          "Chilled: Deal Damage equal to your Shield",
+          "Heated: Slow 2 item(s) for 1 second(s)."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Shield 60",
+          "Chilled: Deal Damage equal to your Shield",
+          "Heated: Slow 3 item(s) for 1 second(s)."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Shield 80",
+          "Chilled: Deal Damage equal to your Shield",
+          "Heated: Slow 4 item(s) for 1 second(s)."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Food",
+      "Weapon"
+    ],
+    "hiddenTags": [
+      "Slow",
+      "Shield",
+      "Damage"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "This Slows for twice as long."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 2 items for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "This has double Shield."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to this item's Shield"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to 5% of this item's Shield"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn equal to 5% of this item's Shield"
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "This has +50% Crit Chance."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "This has double Damage."
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown 6 seconds",
+      "Shield (20/40/60/80)",
+      "Chilled: Deal Damage equal to your Shield",
+      "Heated: Slow (1/2/3/4) item(s) for 1 second(s)."
+    ]
+  },
+  {
     "id": "fb41fdef-d83b-4674-8cb3-9a224aa8f84a",
     "name": "Pelt",
     "startingTier": "Bronze",
@@ -27315,15 +30051,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Burn"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Burn"
         ]
       },
       {
@@ -27341,13 +30075,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -27359,8 +30093,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Burn"
         ]
       }
     ],
@@ -27466,7 +30199,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -27493,6 +30226,150 @@ const data: ParsedItemCard[] = [
       "Cooldown 5 seconds",
       "Adjacent Small items stop Flying",
       "When your items stop Flying, Shield (100/150/200)."
+    ]
+  },
+  {
+    "id": "7d83c2f2-1971-4ec8-b730-9d12aec93d76",
+    "name": "Cooking Mallet",
+    "startingTier": "Bronze",
+    "tiers": {
+      "Bronze": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Deal 10 Damage",
+          "Heated: Burn 3"
+        ]
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Deal 20 Damage",
+          "Heated: Burn 6"
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Deal 30 Damage",
+          "Heated: Burn 9"
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Deal 40 Damage",
+          "Heated: Burn 12"
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Weapon",
+      "Tool"
+    ],
+    "hiddenTags": [
+      "Damage",
+      "Burn"
+    ],
+    "customTags": [],
+    "size": "Small",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow an item for 2 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste an item for 2 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield equal to 5 times this item's Burn"
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to 5 times this item's Burn"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to this item's Burn"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "This has double Burn."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "This has +50% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "This has double Damage."
+        ]
+      }
+    ],
+    "quests": [
+      {
+        "entries": [
+          {
+            "tooltips": [
+              "Use 60 Food"
+            ],
+            "rewardTooltips": [
+              "This has +1 Multicast."
+            ]
+          }
+        ]
+      }
+    ],
+    "unifiedTooltips": [
+      "Cooldown 5 seconds",
+      "Deal (10/20/30/40) Damage",
+      "Heated: Burn (3/6/9/12)"
     ]
   },
   {
@@ -27598,13 +30475,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -27860,7 +30737,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -27986,7 +30863,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -28122,13 +30999,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -28263,7 +31140,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -28292,6 +31169,135 @@ const data: ParsedItemCard[] = [
       "Crit Chance 100%",
       "Deal (15/25/35/45) Damage",
       "Burn (1/2/3/4)"
+    ]
+  },
+  {
+    "id": "a4808bae-bdda-4115-b550-4859c54c60b0",
+    "name": "Hot Box",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 7 seconds",
+          "Adjacent Burn items gain +2 Burn for the fight.",
+          "Heated: Burn 10",
+          "When you Slow, Charge this 2 seconds."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 7 seconds",
+          "Adjacent Burn items gain +4 Burn for the fight.",
+          "Heated: Burn 20",
+          "When you Slow, Charge this 2 seconds."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 7 seconds",
+          "Adjacent Burn items gain +6 Burn for the fight.",
+          "Heated: Burn 30",
+          "When you Slow, Charge this 2 seconds."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Tool"
+    ],
+    "hiddenTags": [
+      "Burn"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 1 items for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 0.5 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 1 items for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield equal to 5 times this item's Burn"
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to 5 times this item's Burn"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to this item's Burn"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "This has double Burn."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "This has +50% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal Damage equal to 5 times this item's Burn"
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown 7 seconds",
+      "Adjacent Burn items gain (+2/+4/+6) Burn for the fight.",
+      "Heated: Burn (10/20/30)",
+      "When you Slow, Charge this 2 seconds."
     ]
   },
   {
@@ -28462,15 +31468,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Burn"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Burn"
         ]
       },
       {
@@ -28488,13 +31492,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -28506,8 +31510,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Burn"
         ]
       }
     ],
@@ -28619,7 +31622,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -28631,7 +31634,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -28724,15 +31727,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Poison"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Poison"
         ]
       },
       {
@@ -28750,13 +31751,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -28768,8 +31769,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Poison"
         ]
       }
     ],
@@ -28877,13 +31877,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -29077,13 +32077,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -29264,13 +32264,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -29400,13 +32400,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "Adjacent Tools and Food items have +25% Crit Chance."
+          "Adjacent items have +25% Crit Chance."
         ]
       },
       {
@@ -29537,13 +32537,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -29698,15 +32698,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Burn"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Burn"
         ]
       },
       {
@@ -29724,13 +32722,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -29742,8 +32740,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Burn"
         ]
       }
     ],
@@ -29849,13 +32846,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -29978,7 +32975,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -30107,13 +33104,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -30242,13 +33239,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -30354,15 +33351,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Burn"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Burn"
         ]
       },
       {
@@ -30380,13 +33375,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -30398,8 +33393,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Burn"
         ]
       }
     ],
@@ -30505,13 +33499,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -30743,13 +33737,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -30885,7 +33879,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -30913,6 +33907,127 @@ const data: ParsedItemCard[] = [
       "Ammo 1",
       "Deal (100/150/200) Damage",
       "When you Burn with an adjacent item, Reload this and it gains (+25/+50/+75) Damage for the fight."
+    ]
+  },
+  {
+    "id": "26a15140-798a-4ac5-9df9-711ccc3cf89d",
+    "name": "Pastry Cart",
+    "startingTier": "Gold",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": [
+          "Adjacent items are Chilled.",
+          "When you use a Chilled item, Freeze 1 item(s) for 0.5 seconds.",
+          "At the start of day, get a Sorbet."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Adjacent items are Chilled.",
+          "When you use a Chilled item, Freeze 2 item(s) for 0.5 seconds.",
+          "At the start of day, get a Sorbet."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Vehicle"
+    ],
+    "hiddenTags": [
+      "Freeze"
+    ],
+    "customTags": [],
+    "size": "Large",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "When you use a Chilled item, Slow an item for 1 second(s)."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "This Freezes for twice as long."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "When you use a Chilled item, Haste an item for 1 second(s)."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "When you use a Chilled item, Shield 30."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "When you use a Chilled item, Heal 30."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "When you use a Chilled item, Poison 3."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "When you use a Chilled item, Burn 3."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This Freezes 1 additional item."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "Your Chilled items have +50% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "Your Chilled items are affected by Freeze and Slow for half as long."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "When you use a Chilled item, deal 30 Damage."
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Adjacent items are Chilled.",
+      "When you use a Chilled item, Freeze (1/2) item(s) for 0.5 seconds.",
+      "At the start of day, get a Sorbet."
     ]
   },
   {
@@ -31016,13 +34131,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -31224,15 +34339,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "When you use an adjacent item, Shield equal to 5 times this item's Burn."
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "When you use an adjacent item, Heal equal to 5 times this item's Burn."
         ]
       },
       {
@@ -31268,8 +34381,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "When you use an adjacent item, deal Damage equal to 5 times this item's Burn."
         ]
       }
     ],
@@ -31485,13 +34597,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -31615,13 +34727,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -31709,15 +34821,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Poison"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Poison"
         ]
       },
       {
@@ -31735,13 +34845,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -31753,8 +34863,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Poison"
         ]
       }
     ],
@@ -31872,13 +34981,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -31999,13 +35108,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -32121,13 +35230,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -32148,6 +35257,136 @@ const data: ParsedItemCard[] = [
       "Cooldown 6 seconds",
       "Deal (15/20/25) Damage for each Friend you have",
       "This item's Cooldown is reduced by 1 second for each adjacent Friend."
+    ]
+  },
+  {
+    "id": "8307efa3-97b6-4645-a3cb-de4930880ef4",
+    "name": "Slushee",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Shield 20",
+          "Freeze an item for 0.5 second(s)",
+          "Chilled: This has +1 Multicast"
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Shield 20",
+          "Freeze an item for 0.5 second(s)",
+          "Chilled: This has +1 Multicast"
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Shield 20",
+          "Freeze an item for 0.5 second(s)",
+          "Chilled: This has +1 Multicast"
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Food"
+    ],
+    "hiddenTags": [
+      "Freeze",
+      "Shield"
+    ],
+    "customTags": [],
+    "size": "Small",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "This Freezes for twice as long."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "This has double Shield."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to this item's Shield"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to 5% of this item's Shield"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn equal to 5% of this item's Shield"
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "This has +50% Crit Chance."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal Damage equal to this item's Shield"
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown (6/5/4) seconds",
+      "Shield 20",
+      "Freeze an item for 0.5 second(s)",
+      "Chilled: This has +1 Multicast"
     ]
   },
   {
@@ -32246,7 +35485,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -32501,13 +35740,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -32744,13 +35983,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -32875,13 +36114,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -32982,15 +36221,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Burn"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Burn"
         ]
       },
       {
@@ -33008,13 +36245,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -33026,8 +36263,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Burn"
         ]
       }
     ],
@@ -33112,15 +36348,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Burn"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Burn"
         ]
       },
       {
@@ -33138,13 +36372,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -33156,8 +36390,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Burn"
         ]
       }
     ],
@@ -33244,15 +36477,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Poison"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Poison"
         ]
       },
       {
@@ -33270,13 +36501,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -33288,8 +36519,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Poison"
         ]
       }
     ],
@@ -33372,15 +36602,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Poison"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Poison"
         ]
       },
       {
@@ -33398,7 +36626,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -33416,8 +36644,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Poison"
         ]
       }
     ],
@@ -33549,6 +36776,127 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "Adjacent items have (+10%/+20%/+30%/+40%) Crit Chance.",
       "While this is Flying, this has double Crit Chance bonus."
+    ]
+  },
+  {
+    "id": "367c2ad9-94b3-4f01-a130-a673922244ef",
+    "name": "Cookies",
+    "startingTier": "Bronze",
+    "tiers": {
+      "Bronze": {
+        "tooltips": [
+          "Cooldown 2 seconds",
+          "Ammo 5",
+          "Permanently gain +4 Max Health",
+          "This permanently loses 1 Max Ammo.",
+          "At the end of each fight, if this has no Ammo, permanently destroy it."
+        ]
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 2 seconds",
+          "Ammo 5",
+          "Permanently gain +6 Max Health",
+          "This permanently loses 1 Max Ammo.",
+          "At the end of each fight, if this has no Ammo, permanently destroy it."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 2 seconds",
+          "Ammo 5",
+          "Permanently gain +8 Max Health",
+          "This permanently loses 1 Max Ammo.",
+          "At the end of each fight, if this has no Ammo, permanently destroy it."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 2 seconds",
+          "Ammo 5",
+          "Permanently gain +10 Max Health",
+          "This permanently loses 1 Max Ammo."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Food"
+    ],
+    "hiddenTags": [
+      "Health",
+      "Ammo"
+    ],
+    "customTags": [],
+    "size": "Small",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "When you sell this, your leftmost Slow item gains +0.2 Slow duration."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "When you sell this, your leftmost Freeze item gains +0.1 Freeze duration."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "When you sell this, your leftmost Haste item gains +0.2 Haste duration."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "When you sell this, your leftmost Shield item gains +10 Shield."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "When you sell this, your leftmost Heal item gains +10 Heal."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "When you sell this, your leftmost Poison item gains +1 Poison."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "When you sell this, your leftmost Burn item gains +1 Burn."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "When you sell this, your leftmost item gains 2% Crit Chance."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "When you sell this, your leftmost Weapon item gains +10 Damage."
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown 2 seconds",
+      "Ammo 5",
+      "Permanently gain (+4/+6/+8/+10) Max Health",
+      "This permanently loses 1 Max Ammo.",
+      "At the end of each fight, if this has no Ammo, permanently destroy it."
     ]
   },
   {
@@ -33775,7 +37123,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -33900,7 +37248,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -34036,13 +37384,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -34063,6 +37411,131 @@ const data: ParsedItemCard[] = [
       "Cooldown (15/13/11/9) seconds",
       "Deal 100 Damage",
       "When you Haste, Slow, Freeze, Poison, or Burn, Charge this 2 second(s)."
+    ]
+  },
+  {
+    "id": "85bbf340-b66e-4c27-9d62-4f6181f1a6a5",
+    "name": "Bread",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Gain 10 Regen for the fight",
+          "When you use an adjacent Tool, Charge this 2 seconds."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Gain 20 Regen for the fight",
+          "When you use an adjacent Tool, Charge this 2 seconds."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Gain 30 Regen for the fight",
+          "When you use an adjacent Tool, Charge this 2 seconds."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Food"
+    ],
+    "hiddenTags": [
+      "Regen"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 1 item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 0.5 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 1 item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield equal to 5 times this item's Regen"
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to 5 times this item's Regen"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to this item's Regen"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn equal to this item's Regen"
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "This has +50% Crit Chance."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal Damage equal to 5 times this item's Regen"
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown 5 seconds",
+      "Gain (10/20/30) Regen for the fight",
+      "When you use an adjacent Tool, Charge this 2 seconds."
     ]
   },
   {
@@ -34384,13 +37857,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -34507,13 +37980,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -34767,7 +38240,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -34878,15 +38351,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Burn"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Burn"
         ]
       },
       {
@@ -34904,13 +38375,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -34922,8 +38393,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Burn"
         ]
       }
     ],
@@ -35037,13 +38507,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -35173,13 +38643,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -35295,7 +38765,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -35424,7 +38894,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -35436,7 +38906,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -35559,6 +39029,136 @@ const data: ParsedItemCard[] = [
     ],
     "unifiedTooltips": [
       "When you sell this, reduce your leftmost item's Cooldown by (3%/6%)."
+    ]
+  },
+  {
+    "id": "b48baf8a-1b43-47aa-9b8e-b379057d669d",
+    "name": "Eggs",
+    "startingTier": "Bronze",
+    "tiers": {
+      "Bronze": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Gain 1 Regen for the fight",
+          "Shield 10"
+        ]
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Gain 1 Regen for the fight",
+          "Shield 10"
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 3 seconds",
+          "Gain 1 Regen for the fight",
+          "Shield 10"
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 2 seconds",
+          "Gain 1 Regen for the fight",
+          "Shield 10"
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Food"
+    ],
+    "hiddenTags": [
+      "Shield",
+      "Regen"
+    ],
+    "customTags": [],
+    "size": "Small",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 0.5 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "This has double Shield."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to this item's Shield"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to this item's Regen"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn equal to this item's Regen"
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "This has +50% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal Damage equal to this item's Shield"
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown (5/4/3/2) seconds",
+      "Gain 1 Regen for the fight",
+      "Shield 10"
     ]
   },
   {
@@ -35776,7 +39376,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -35882,15 +39482,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Burn"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Burn"
         ]
       },
       {
@@ -35908,13 +39506,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -35926,8 +39524,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Burn"
         ]
       }
     ],
@@ -36056,6 +39653,142 @@ const data: ParsedItemCard[] = [
     ]
   },
   {
+    "id": "7de37496-3534-4aa9-8400-424341d4b5e2",
+    "name": "Strawberries",
+    "startingTier": "Bronze",
+    "tiers": {
+      "Bronze": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Shield 20",
+          "Gain 2 Regen for the fight",
+          "Chilled: Freeze an item for 1 second(s)."
+        ]
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Shield 20",
+          "Gain 2 Regen for the fight",
+          "Chilled: Freeze an item for 1 second(s)."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Shield 20",
+          "Gain 2 Regen for the fight",
+          "Chilled: Freeze an item for 1 second(s)."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 3 seconds",
+          "Shield 20",
+          "Gain 2 Regen for the fight",
+          "Chilled: Freeze an item for 1 second(s)."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Food"
+    ],
+    "hiddenTags": [
+      "Shield",
+      "Regen",
+      "Freeze"
+    ],
+    "customTags": [],
+    "size": "Small",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "This Freezes for twice as long."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "This has double Shield."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to this item's Shield"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to this item's Regen"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn equal to this item's Regen"
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "This has +50% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal Damage equal to this item's Shield"
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown (6/5/4/3) seconds",
+      "Shield 20",
+      "Gain 2 Regen for the fight",
+      "Chilled: Freeze an item for 1 second(s)."
+    ]
+  },
+  {
     "id": "84a27aa9-5606-4418-a2dd-d6e4065e81c9",
     "name": "Hands of Time",
     "startingTier": "Silver",
@@ -36152,7 +39885,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -36272,13 +40005,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -36299,6 +40032,141 @@ const data: ParsedItemCard[] = [
       "Cooldown 6 seconds",
       "Deal (10/15/20) Damage for each Friend you have",
       "This item's Cooldown is reduced by 1 second for each adjacent Friend."
+    ]
+  },
+  {
+    "id": "6c57f013-ab01-4bad-a801-3818b6ecbedc",
+    "name": "Laurel's Favorite",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Shield 25",
+          "Heated: Burn 5",
+          "If this is your only Food, it has double Shield and Burn.",
+          "When you use an adjacent Food, Charge this 1 second."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Shield 50",
+          "Heated: Burn 10",
+          "If this is your only Food, it has double Shield and Burn.",
+          "When you use an adjacent Food, Charge this 1 second."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Shield 75",
+          "Heated: Burn 15",
+          "If this is your only Food, it has double Shield and Burn.",
+          "When you use an adjacent Food, Charge this 1 second."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Food",
+      "Friend"
+    ],
+    "hiddenTags": [
+      "Shield",
+      "Burn"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 2 items for 2 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 2 items for 2 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "This has double Shield."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to this item's Shield"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to this item's Burn"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "This has double Burn."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "This has +50% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal Damage equal to this item's Shield"
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown 4 seconds",
+      "Shield (25/50/75)",
+      "Heated: Burn (5/10/15)",
+      "If this is your only Food, it has double Shield and Burn.",
+      "When you use an adjacent Food, Charge this 1 second."
     ]
   },
   {
@@ -36396,13 +40264,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -36636,13 +40504,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -36766,13 +40634,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -36873,15 +40741,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Regen"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Regen"
         ]
       },
       {
@@ -36899,7 +40765,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -36911,14 +40777,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Regen"
         ]
       }
     ],
@@ -37030,13 +40895,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -37156,7 +41021,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -37168,7 +41033,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -37286,13 +41151,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -37304,8 +41169,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Poison"
         ]
       }
     ],
@@ -37414,13 +41278,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -37571,13 +41435,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -37700,13 +41564,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -37835,13 +41699,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -37866,6 +41730,383 @@ const data: ParsedItemCard[] = [
     ]
   },
   {
+    "id": "c8abacb3-3d98-4266-9842-775a5683ac8c",
+    "name": "Pantry",
+    "startingTier": "Diamond",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": []
+      },
+      "Diamond": {
+        "tooltips": [
+          "When you use a Food, charge another Food 2 seconds.",
+          "At the start of each day, get a Small or Medium Food from any Hero."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Property"
+    ],
+    "hiddenTags": [],
+    "customTags": [],
+    "size": "Large",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "When you use a Food, Slow an item for 1 second(s)."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "When you use a Food, Freeze an item for 0.5 second(s)."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "When you use a Food, Haste an item for 1 second(s)."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "When you use a Food, Shield 30."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "When you use a Food, Heal 30."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "When you use a Food, Poison 3."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "When you use a Food, Burn 3."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has double Charge amount."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "Your Food have +50% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "Your Food are affected by Freeze and Slow for half as long."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "When you use a Food, deal 30 Damage."
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "When you use a Food, charge another Food 2 seconds.",
+      "At the start of each day, get a Small or Medium Food from any Hero."
+    ]
+  },
+  {
+    "id": "aec44137-e81e-4b63-83a6-21a0b4fc5147",
+    "name": "Burrito",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 3 seconds",
+          "Shield 20",
+          "Burn 2",
+          "Gain 2 Regen for the fight",
+          "Heated: This has +100 Crit Chance"
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 3 seconds",
+          "Shield 40",
+          "Burn 4",
+          "Gain 4 Regen for the fight",
+          "Heated: This has +100 Crit Chance"
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 3 seconds",
+          "Shield 60",
+          "Burn 6",
+          "Gain 6 Regen for the fight",
+          "Heated: This has +100 Crit Chance"
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Food"
+    ],
+    "hiddenTags": [
+      "Regen",
+      "Burn",
+      "Shield"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 2 items for 2 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 0.5 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 2 items for 2 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "This has double Shield."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to this item's Shield"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to this item's Burn"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "This has double Burn."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "This has +50% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal Damage equal to this item's Shield"
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown 3 seconds",
+      "Shield (20/40/60)",
+      "Burn (2/4/6)",
+      "Gain (2/4/6) Regen for the fight",
+      "Heated: This has +100 Crit Chance"
+    ]
+  },
+  {
+    "id": "ec524335-987c-4a7d-8d27-aed15473d15c",
+    "name": "Colander",
+    "startingTier": "Bronze",
+    "tiers": {
+      "Bronze": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Gain 20 Shield",
+          "When you use a Small item, this gains 5 Shield for the fight."
+        ]
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Gain 20 Shield",
+          "When you use a Small item, this gains 10 Shield for the fight."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Gain 20 Shield",
+          "When you use a Small item, this gains 15 Shield for the fight."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Gain 20 Shield",
+          "When you use a Small item, this gains 20 Shield for the fight."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Tool"
+    ],
+    "hiddenTags": [
+      "Shield"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 2 items for 2 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 2 items for 2 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "This has double Shield."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to this item's Shield"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to 5% of this item's Shield"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn equal to 5% of this item's Shield"
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "This has +50% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal Damage equal to this item's Shield"
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown 5 seconds",
+      "Gain 20 Shield",
+      "When you use a Small item, this gains (5/10/15/20) Shield for the fight."
+    ]
+  },
+  {
     "id": "027ef534-d047-4e18-8496-d9fd4773e15d",
     "name": "Dishwasher",
     "startingTier": "Gold",
@@ -37879,14 +42120,14 @@ const data: ParsedItemCard[] = [
       "Gold": {
         "tooltips": [
           "Cooldown 6 seconds",
-          "Your other Tools and Weapons gain Haste and are Heated for 3 seconds.",
+          "Your other Tools and Weapons gain Haste and are Heated for 2 seconds.",
           "Your Heated Weapons deal double Damage."
         ]
       },
       "Diamond": {
         "tooltips": [
           "Cooldown 6 seconds",
-          "Your other Tools and Weapons gain Haste and are Heated for 5 seconds.",
+          "Your other Tools and Weapons gain Haste and are Heated for 4 seconds.",
           "Your Heated Weapons deal double Damage."
         ]
       },
@@ -37898,7 +42139,7 @@ const data: ParsedItemCard[] = [
       "Tool"
     ],
     "hiddenTags": [
-      "Charge"
+      "Haste"
     ],
     "customTags": [],
     "size": "Large",
@@ -37927,7 +42168,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Turbo",
         "tooltips": [
-          "When you use a Heated item, Haste an item for 3 second(s)."
+          "This Hastes for twice as long."
         ]
       },
       {
@@ -37982,8 +42223,139 @@ const data: ParsedItemCard[] = [
     "quests": [],
     "unifiedTooltips": [
       "Cooldown 6 seconds",
-      "Your other Tools and Weapons gain Haste and are Heated for (3/5) seconds.",
+      "Your other Tools and Weapons gain Haste and are Heated for (2/4) seconds.",
       "Your Heated Weapons deal double Damage."
+    ]
+  },
+  {
+    "id": "618271c5-5721-40ac-b1c7-43aa06a02d07",
+    "name": "Honeycomb",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Adjacent Food gains +10 Shield and +1 Regen for the fight.",
+          "Heated: Slow 2 item(s) for 1 second(s).",
+          "When you use an adjacent Food, Charge this 1 second."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Adjacent Food gains +20 Shield and +2 Regen for the fight.",
+          "Heated: Slow 3 item(s) for 1 second(s).",
+          "When you use an adjacent Food, Charge this 1 second."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Adjacent Food gains +30 Shield and +3 Regen for the fight.",
+          "Heated: Slow 4 item(s) for 1 second(s).",
+          "When you use an adjacent Food, Charge this 1 second."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Food"
+    ],
+    "hiddenTags": [
+      "Slow",
+      "RegenReference",
+      "ShieldReference"
+    ],
+    "customTags": [],
+    "size": "Small",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "This Slows for twice as long."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 0.5 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste an item for 2 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield 40"
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal 40"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison 4"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn 4"
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "Adjacent items have +30% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal 40 Damage"
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown 5 seconds",
+      "Adjacent Food gains (+10/+20/+30) Shield and (+1/+2/+3) Regen for the fight.",
+      "Heated: Slow (2/3/4) item(s) for 1 second(s).",
+      "When you use an adjacent Food, Charge this 1 second."
     ]
   },
   {
@@ -38094,13 +42466,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -38222,13 +42594,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -38349,13 +42721,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -38375,6 +42747,122 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "Cooldown 3 seconds",
       "Deal (5/10/15/20) Damage"
+    ]
+  },
+  {
+    "id": "a046d7a0-effe-41c0-850f-de1f4bfa08f2",
+    "name": "Serving Platter",
+    "startingTier": "Gold",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": [
+          "When you Crit with a Food, Charge 1 other Food 1 second."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "When you Crit with a Food, Charge 2 other Food 1 second."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Tool"
+    ],
+    "hiddenTags": [
+      "CritReference",
+      "Charge"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "When you Crit with a Food, Slow 1 item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "When you Crit with a Food, Freeze an item for 0.5 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "When you Crit with a Food, Haste 1 item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "When you Crit with a Food, Shield 25"
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "When you Crit with a Food, Heal 25"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "When you Crit with a Food, Poison 2"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "When you Crit with a Food, Burn 2"
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has double Charge amount."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "Your Food have +40% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "Your Food are affected by Freeze and Slow for half as long."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "When you Crit with a Food, Deal 25 Damage"
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "When you Crit with a Food, Charge (1/2) other Food 1 second."
     ]
   },
   {
@@ -38454,15 +42942,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Burn"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Burn"
         ]
       },
       {
@@ -38480,13 +42966,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -38498,8 +42984,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Burn"
         ]
       }
     ],
@@ -38611,7 +43096,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -38716,15 +43201,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Burn"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Burn"
         ]
       },
       {
@@ -38742,13 +43225,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -38760,8 +43243,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Burn"
         ]
       }
     ],
@@ -38876,13 +43358,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -38904,6 +43386,252 @@ const data: ParsedItemCard[] = [
       "Deal 20 Damage",
       "This and Weapons to the right of this gain (+15/+30/+60) Damage for the fight",
       "When you use any item to the left of this, Charge this 1 second(s)."
+    ]
+  },
+  {
+    "id": "325788ee-7465-4bd3-9233-df2dedb98439",
+    "name": "Jumbo Wok",
+    "startingTier": "Gold",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 3 seconds",
+          "Charge your other Heated items 1 second(s).",
+          "Heated: When you Shield or gain Regen with another Food, Burn 6."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 3 seconds",
+          "Charge your other Heated items 2 second(s).",
+          "Heated: When you Shield or gain Regen with another Food, Burn 9."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Food",
+      "Tool"
+    ],
+    "hiddenTags": [
+      "Burn",
+      "Charge",
+      "ShieldReference",
+      "RegenReference"
+    ],
+    "customTags": [],
+    "size": "Large",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 3 items for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 3 items for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Heated: When you Shield or gain Regen with another item, Shield equal to 5 times this item's Burn"
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heated: When you Shield or gain Regen with another item, Heal equal to 5 times this item's Burn"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Heated: When you Shield or gain Regen with another item, Poison equal to this item's Burn"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "This has double Burn."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "Your items have +40% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Heated: When you Shield or gain Regen with another item, Deal Damage equal to 5 times this item's Burn"
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown 3 seconds",
+      "Charge your other Heated items (1/2) second(s).",
+      "Heated: When you Shield or gain Regen with another Food, Burn (6/9)."
+    ]
+  },
+  {
+    "id": "5b1af837-bae6-4a78-ab2a-ac711f87db49",
+    "name": "Rice Cooker",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Haste your Heated items for 2 second(s)"
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Haste your Heated items for 3 second(s)"
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Haste your Heated items for 4 second(s)"
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Tool"
+    ],
+    "hiddenTags": [
+      "Haste"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 2 items for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "This Hastes for twice as long."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield 75"
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal 75"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison 7"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn 7"
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "Your Heated items have +30% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal 16 Damage"
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown 4 seconds",
+      "Haste your Heated items for (2/3/4) second(s)"
     ]
   },
   {
@@ -39102,7 +43830,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -39129,6 +43857,127 @@ const data: ParsedItemCard[] = [
       "Cooldown 9 seconds",
       "Ammo 1",
       "Your Weapons gain Damage equal to your weakest Weapon's Damage for the fight."
+    ]
+  },
+  {
+    "id": "18593111-fd25-4494-8eb4-1f279759ae33",
+    "name": "Cornucopia",
+    "startingTier": "Gold",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Heated: Charge your other Heated items 1 second(s).",
+          "Chilled: Charge your other Chilled items 1 second(s)."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Heated: Charge your other Heated items 2 second(s).",
+          "Chilled: Charge your other Chilled items 2 second(s)."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Food"
+    ],
+    "hiddenTags": [
+      "Charge"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 2 items for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 2 items for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield 100"
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal 100"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison 10"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn 10"
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "Your Heated and Chilled items have +50% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal 100 Damage"
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown 4 seconds",
+      "Heated: Charge your other Heated items (1/2) second(s).",
+      "Chilled: Charge your other Chilled items (1/2) second(s)."
     ]
   },
   {
@@ -39235,7 +44084,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -39489,7 +44338,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -39614,13 +44463,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -39740,13 +44589,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -39842,15 +44691,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Burn"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Burn"
         ]
       },
       {
@@ -39868,13 +44715,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -39886,8 +44733,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Burn"
         ]
       }
     ],
@@ -40023,6 +44869,132 @@ const data: ParsedItemCard[] = [
     ]
   },
   {
+    "id": "aea91efd-999f-4408-a4a3-2cb223dcf5bc",
+    "name": "Tea Siphon",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Burn 8",
+          "Heated: This item's cooldown is reduced by 50%"
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Burn 12",
+          "Heated: This item's cooldown is reduced by 50%"
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Burn 16",
+          "Heated: This item's cooldown is reduced by 50%"
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Tool",
+      "Food"
+    ],
+    "hiddenTags": [
+      "Burn"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 0.5 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield equal to 5 times this item's Burn"
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to 5 times this item's Burn"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to this item's Burn"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "This has double Burn."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "This has +50% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal Damage equal to 5 times this item's Burn"
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown 5 seconds",
+      "Burn (8/12/16)",
+      "Heated: This item's cooldown is reduced by 50%"
+    ]
+  },
+  {
     "id": "31dfbc9c-1231-4781-a0a9-a7e3cd458fa8",
     "name": "Paper Airplane",
     "startingTier": "Silver",
@@ -40116,7 +45088,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -40235,7 +45207,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -40261,6 +45233,128 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "Cooldown (8/7/6) seconds",
       "Use all of your Medium size Cores"
+    ]
+  },
+  {
+    "id": "f9015c36-ce33-4405-97f3-4acb6b9a4f8e",
+    "name": "Caviar",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Your Food items have +Crit Chance equal to twice this item's value.",
+          "At the start of each day, this gains +1 value."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Your Food items have +Crit Chance equal to twice this item's value.",
+          "At the start of each day, this gains +2 value."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Your Food items have +Crit Chance equal to twice this item's value.",
+          "At the start of each day, this gains +3 value."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Food"
+    ],
+    "hiddenTags": [
+      "Crit",
+      "EconomyReference"
+    ],
+    "customTags": [],
+    "size": "Small",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "When you Crit with an adjacent item, Slow 2 item for 1 second(s)."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "When you Crit with an adjacent item, Freeze 2 item for 0.5 second(s)."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "When you Crit with an adjacent item, Haste 2 item for 1 second(s)."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "When you Crit with an adjacent item, Shield 40."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "When you Crit with an adjacent item, Heal 40."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "When you Crit with an adjacent item, Poison 4."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "When you Crit with an adjacent item, Burn 4."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has double Crit Chance bonus and double value gain."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "This has double Crit Chance bonus."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "Adjacent items are affected by Freeze and Slow for half as long."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "When you Crit with an adjacent item, deal 40 Damage."
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Your Food items have +Crit Chance equal to twice this item's value.",
+      "At the start of each day, this gains (+1/+2/+3) value."
     ]
   },
   {
@@ -40434,15 +45528,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Regen"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Regen"
         ]
       },
       {
@@ -40460,7 +45552,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -40472,14 +45564,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Regen"
         ]
       }
     ],
@@ -40602,15 +45693,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Burn"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Burn"
         ]
       },
       {
@@ -40628,13 +45717,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -40646,8 +45735,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Burn"
         ]
       }
     ],
@@ -40756,7 +45844,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -40795,17 +45883,17 @@ const data: ParsedItemCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "When you Level Up, get a Small Tech item."
+          "When you Level Up, get a Small Tech item from any Hero."
         ]
       },
       "Gold": {
         "tooltips": [
-          "When you Level Up, get a Small Tech item."
+          "When you Level Up, get a Small Tech item from any Hero."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "When you Level Up, get a Small Tech item."
+          "When you Level Up, get a Small Tech item from any Hero."
         ]
       },
       "Legendary": {
@@ -40898,7 +45986,143 @@ const data: ParsedItemCard[] = [
     ],
     "quests": [],
     "unifiedTooltips": [
-      "When you Level Up, get a Small Tech item."
+      "When you Level Up, get a Small Tech item from any Hero."
+    ]
+  },
+  {
+    "id": "d1507c0e-0dea-411d-be97-52400ee0ce1a",
+    "name": "Rice",
+    "startingTier": "Bronze",
+    "tiers": {
+      "Bronze": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Gain 2 Regen for the fight",
+          "Heated: Burn equal to this item's Regen.",
+          "When this is Hasted, this gains +2 Regen for the fight."
+        ]
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Gain 4 Regen for the fight",
+          "Heated: Burn equal to this item's Regen.",
+          "When this is Hasted, this gains +4 Regen for the fight."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Gain 6 Regen for the fight",
+          "Heated: Burn equal to this item's Regen.",
+          "When this is Hasted, this gains +6 Regen for the fight."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Gain 8 Regen for the fight",
+          "Heated: Burn equal to this item's Regen.",
+          "When this is Hasted, this gains +8 Regen for the fight."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Food"
+    ],
+    "hiddenTags": [
+      "Regen",
+      "Burn",
+      "HasteReference"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 2 items for 3 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 2 items for 3 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield equal to 5 times this item's Regen"
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to 5 times this item's Regen"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to this item's Regen"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "This has double Burn."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "This has +50% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal Damage equal to 5 times this item's Regen"
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown 6 seconds",
+      "Gain (2/4/6/8) Regen for the fight",
+      "Heated: Burn equal to this item's Regen.",
+      "When this is Hasted, this gains (+2/+4/+6/+8) Regen for the fight."
     ]
   },
   {
@@ -41000,7 +46224,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -41365,7 +46589,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -41492,13 +46716,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -41620,7 +46844,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -41853,7 +47077,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -41979,7 +47203,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -41991,7 +47215,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -42105,7 +47329,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -42132,6 +47356,131 @@ const data: ParsedItemCard[] = [
       "Cooldown 5 seconds",
       "Haste adjacent items for (1/2/3) second(s)",
       "When you use an adjacent item, Shield (10/20/30)."
+    ]
+  },
+  {
+    "id": "d6eda7aa-d4fa-4992-88c7-87b89fe7f5ec",
+    "name": "Refrigerator",
+    "startingTier": "Gold",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Your Food gain +10 Shield and +1 Regen for the fight.",
+          "When you use another Chilled item, Charge this 2 seconds.",
+          "Your Chilled Food have their cooldown reduced by 10%"
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Your Food gain +20 Shield and +2 Regen for the fight.",
+          "When you use another Chilled item, Charge this 2 seconds.",
+          "Your Chilled Food have their cooldown reduced by 20%"
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Tool"
+    ],
+    "hiddenTags": [
+      "ShieldReference",
+      "RegenReference"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 1 items for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 0.5 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 1 items for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield 50"
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal 50"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison 5"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn 5"
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "Your Chilled Food have +50% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal 50 Damage"
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown 6 seconds",
+      "Your Food gain (+10/+20) Shield and (+1/+2) Regen for the fight.",
+      "When you use another Chilled item, Charge this 2 seconds.",
+      "Your Chilled Food have their cooldown reduced by (10%/20%)"
     ]
   },
   {
@@ -42210,15 +47559,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Poison"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Poison"
         ]
       },
       {
@@ -42236,13 +47583,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -42254,8 +47601,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Poison"
         ]
       }
     ],
@@ -42362,13 +47708,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -42456,7 +47802,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Icy",
         "tooltips": [
-          "This Freezes for twice as long."
+          "Freeze an item for 0.5 second(s)"
         ]
       },
       {
@@ -42492,7 +47838,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -42504,7 +47850,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -42619,7 +47965,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -42874,13 +48220,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -43003,13 +48349,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -43138,7 +48484,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -43236,15 +48582,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "When you Poison yourself, Shield equal to 5 times this item's Poison."
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "When you Poison yourself, Heal equal to 5 times this item's Poison"
         ]
       },
       {
@@ -43262,13 +48606,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -43280,8 +48624,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "When you Poison yourself, deal Damage equal to 5 times this item's Poison."
         ]
       }
     ],
@@ -43385,13 +48728,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -43534,15 +48877,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Poison"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Poison"
         ]
       },
       {
@@ -43560,13 +48901,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -43578,8 +48919,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Poison"
         ]
       }
     ],
@@ -43687,7 +49027,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -43926,7 +49266,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -44031,15 +49371,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "When you Freeze, Shield equal to 5 times this item's Regen."
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "When you Freeze, Heal equal to 5 times this item's Regen"
         ]
       },
       {
@@ -44057,7 +49395,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -44075,8 +49413,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "When you Freeze, deal Damage equal to 5 times this item's Regen."
         ]
       }
     ],
@@ -44179,13 +49516,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -44307,7 +49644,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -44319,7 +49656,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -44660,15 +49997,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Regen"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Regen"
         ]
       },
       {
@@ -44686,7 +50021,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -44698,14 +50033,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Regen"
         ]
       }
     ],
@@ -44926,13 +50260,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -45172,13 +50506,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -45305,7 +50639,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -45434,7 +50768,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -45540,15 +50874,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Regen"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Regen"
         ]
       },
       {
@@ -45566,7 +50898,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -45584,8 +50916,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Regen"
         ]
       }
     ],
@@ -45664,15 +50995,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Burn"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Burn"
         ]
       },
       {
@@ -45690,13 +51019,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -45708,8 +51037,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Burn"
         ]
       }
     ],
@@ -45822,7 +51150,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -45834,7 +51162,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -45948,7 +51276,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -46081,13 +51409,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -46186,15 +51514,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "When you use a Friend or Flying item, Shield equal to 5 times this item's Burn"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "When you use a Friend or Flying item, Heal equal to 5 times this item's Burn"
         ]
       },
       {
@@ -46212,7 +51538,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -46230,8 +51556,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "When you use a Friend or Flying item, deal Damage equal to 5 times this item's Burn"
         ]
       }
     ],
@@ -46320,15 +51645,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Poison"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Poison"
         ]
       },
       {
@@ -46346,13 +51669,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -46364,8 +51687,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Poison"
         ]
       }
     ],
@@ -46472,13 +51794,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -46641,7 +51963,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -46668,6 +51990,116 @@ const data: ParsedItemCard[] = [
       "Cooldown 8 seconds",
       "Slow an item for (1/2/3/4) second(s)",
       "For each adjacent Friend or Ray, this has +1 Multicast."
+    ]
+  },
+  {
+    "id": "a3f79928-e104-433b-9631-f3d4a99ee6e9",
+    "name": "Chocolate Coin",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "When you sell a Food, this gains +1 value.",
+          "When you sell this, your leftmost item gains Crit Chance equal to this item's value."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "When you sell a Food, this gains +2 value.",
+          "When you sell this, your leftmost item gains Crit Chance equal to this item's value."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "When you sell a Food, this gains +3 value.",
+          "When you sell this, your leftmost item gains Crit Chance equal to this item's value."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Food"
+    ],
+    "hiddenTags": [
+      "Crit",
+      "EconomyReference"
+    ],
+    "customTags": [],
+    "size": "Small",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "When you sell this, your leftmost Slow item gains +0.2 Slow duration."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "When you sell this, your leftmost Freeze item gains +0.1 Freeze duration."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "When you sell this, your leftmost Haste item gains +0.2 Haste duration."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "When you sell this, your leftmost Shield item gains +10 Shield."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "When you sell this, your leftmost Heal item gains +10 Heal."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "When you sell this, your leftmost Poison item gains +1 Poison."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "When you sell this, your leftmost Burn item gains +1 Burn."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has double Crit Chance bonus and double value gain."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "This has double Crit Chance bonus."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "When you sell this, your leftmost Weapon item gains +10 Damage."
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "When you sell a Food, this gains (+1/+2/+3) value.",
+      "When you sell this, your leftmost item gains Crit Chance equal to this item's value."
     ]
   },
   {
@@ -46887,7 +52319,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -47012,7 +52444,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -47113,15 +52545,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Regen"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Regen"
         ]
       },
       {
@@ -47139,7 +52569,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -47151,14 +52581,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Regen"
         ]
       }
     ],
@@ -47573,13 +53002,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -47707,7 +53136,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -47832,13 +53261,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -47949,7 +53378,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -47975,6 +53404,127 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "Cooldown 10 seconds",
       "Destroy a Small enemy item for the fight"
+    ]
+  },
+  {
+    "id": "577d99bd-8e44-4bb4-b7be-a8890773bbf2",
+    "name": "Universal Sauce",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 3 seconds",
+          "Your Food gain +3% Crit Chance for the fight"
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 3 seconds",
+          "Your Food gain +6% Crit Chance for the fight"
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 3 seconds",
+          "Your Food gain +9% Crit Chance for the fight"
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Food"
+    ],
+    "hiddenTags": [
+      "Crit"
+    ],
+    "customTags": [],
+    "size": "Small",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 0.5 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield 20"
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal 20"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison 2"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn 2"
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "This has double Crit Chance bonus."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal 20 Damage"
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown 3 seconds",
+      "Your Food gain (+3%/+6%/+9%) Crit Chance for the fight"
     ]
   },
   {
@@ -48073,7 +53623,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -48199,13 +53749,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -48325,7 +53875,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -48451,13 +54001,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -48668,15 +54218,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Regen"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Regen"
         ]
       },
       {
@@ -48694,7 +54242,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -48706,14 +54254,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Regen"
         ]
       }
     ],
@@ -48819,13 +54366,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -48952,13 +54499,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -48979,6 +54526,257 @@ const data: ParsedItemCard[] = [
       "Cooldown (7/6/5/4) seconds",
       "Deal 10 Damage",
       "While this is Flying, this has double Damage."
+    ]
+  },
+  {
+    "id": "124862bc-eb77-4835-9e3b-68a4c3e4490e",
+    "name": "Grill",
+    "startingTier": "Gold",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": [
+          "When you use a Food, Burn 1",
+          "When you use a Heated Food, this gains +1 Burn for the fight.",
+          "The item to the left is Heated."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "When you use a Food, Burn 1",
+          "When you use a Heated Food, this gains +2 Burn for the fight.",
+          "The item to the left is Heated."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Tool"
+    ],
+    "hiddenTags": [
+      "Burn"
+    ],
+    "customTags": [],
+    "size": "Large",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "When you use a Food, Slow an item for 1 second(s)."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "When you use a Food, Freeze an item for 0.5 second(s)."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "When you use a Food, Haste an item for 1 second(s)."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "When you use a Food, Shield equal to 5 times this item's Burn"
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "When you use a Food, Heal equal to 5 times this item's Burn"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "When you use a Food, Poison equal to this item's Burn"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "This has double Burn."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "Adjacent Food have +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "Your Food have +50% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "Your Food are affected by Freeze and Slow for half as long."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "When you use a Food, deal Damage equal to 5 times this item's Burn"
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "When you use a Food, Burn 1",
+      "When you use a Heated Food, this gains (+1/+2) Burn for the fight.",
+      "The item to the left is Heated."
+    ]
+  },
+  {
+    "id": "b194604e-80ba-448c-80e8-daff541fe207",
+    "name": "Cookie Cutters",
+    "startingTier": "Bronze",
+    "tiers": {
+      "Bronze": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Deal 10 Damage",
+          "At the start of each day, get a Cookie."
+        ]
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Deal 20 Damage",
+          "At the start of each day, get a Cookie."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Deal 30 Damage",
+          "At the start of each day, get a Cookie."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Deal 40 Damage",
+          "At the start of each day, get a Cookie."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Tool",
+      "Weapon"
+    ],
+    "hiddenTags": [
+      "Damage"
+    ],
+    "customTags": [],
+    "size": "Small",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow an item for 2 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 0.5 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste an item for 2 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield equal to this item's Damage"
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to this item's Damage"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to 5% of this item's Damage"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn equal to 5% of this item's Damage"
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "This has +50% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "This has double Damage."
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown 5 seconds",
+      "Deal (10/20/30/40) Damage",
+      "At the start of each day, get a Cookie."
     ]
   },
   {
@@ -49119,7 +54917,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -49242,13 +55040,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -49347,15 +55145,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield an enemy equal to 5 times this item's Poison"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal an enemy equal to 5 times this item's Poison"
         ]
       },
       {
@@ -49373,13 +55169,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -49391,8 +55187,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage to yourself equal to 5 times this item's Poison"
         ]
       }
     ],
@@ -49470,15 +55265,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "When you Freeze, Shield equal to 5 times this item's Poison."
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "When you Freeze, Heal equal to 5 times this item's Poison."
         ]
       },
       {
@@ -49496,7 +55289,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -49514,8 +55307,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "When you Freeze, deal Damage equal to 5 times this item's Poison."
         ]
       }
     ],
@@ -49621,7 +55413,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -49723,15 +55515,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Burn"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Burn"
         ]
       },
       {
@@ -49749,13 +55539,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -49767,8 +55557,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Burn"
         ]
       }
     ],
@@ -49877,13 +55666,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -50002,7 +55791,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -50131,7 +55920,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -50231,15 +56020,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Poison"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Poison"
         ]
       },
       {
@@ -50257,13 +56044,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -50275,8 +56062,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Poison"
         ]
       }
     ],
@@ -50393,13 +56179,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -50616,15 +56402,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Poison"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Poison"
         ]
       },
       {
@@ -50642,13 +56426,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -50660,8 +56444,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Poison"
         ]
       }
     ],
@@ -50751,15 +56534,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Regen"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Regen"
         ]
       },
       {
@@ -50777,7 +56558,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -50789,14 +56570,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Regen"
         ]
       }
     ],
@@ -50908,7 +56688,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -51150,7 +56930,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -51285,13 +57065,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -51313,6 +57093,270 @@ const data: ParsedItemCard[] = [
       "Deal (5/10/15/20) Damage",
       "This gains (+5%/+10%/+15%/+20%) Crit Chance for the fight.",
       "The Food to the left of this has +Crit Chance equal to this item's Crit Chance."
+    ]
+  },
+  {
+    "id": "2ffce1c9-e5da-4f9f-b8ed-69fd61befded",
+    "name": "Baked Potato",
+    "startingTier": "Bronze",
+    "tiers": {
+      "Bronze": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Gain 1 Regen for the fight",
+          "Heated: This has +1 Multicast"
+        ]
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Gain 2 Regen for the fight",
+          "Heated: This has +1 Multicast"
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Gain 3 Regen for the fight",
+          "Heated: This has +1 Multicast"
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Gain 4 Regen for the fight",
+          "Heated: This has +1 Multicast"
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Food"
+    ],
+    "hiddenTags": [
+      "Regen"
+    ],
+    "customTags": [],
+    "size": "Small",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 0.5 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield equal to 5 times this item's Regen"
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to 5 times this item's Regen"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to this item's Regen"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn equal to this item's Regen"
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "This has +50% Crit Chance."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal Damage equal to 5 times this item's Regen"
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown 4 seconds",
+      "Gain (1/2/3/4) Regen for the fight",
+      "Heated: This has +1 Multicast"
+    ]
+  },
+  {
+    "id": "47a8d943-cfbe-416f-9ce6-700c431b66f3",
+    "name": "Birthday Cake",
+    "startingTier": "Bronze",
+    "tiers": {
+      "Bronze": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Shield equal to this item's Crit Chance",
+          "This has +20 Crit Chance",
+          "At the start of each day, this gains +5% Crit Chance"
+        ]
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Shield equal to this item's Crit Chance",
+          "This has +20 Crit Chance",
+          "At the start of each day, this gains +10% Crit Chance"
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Shield equal to this item's Crit Chance",
+          "This has +20 Crit Chance",
+          "At the start of each day, this gains +15% Crit Chance"
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Shield equal to this item's Crit Chance",
+          "This has +20 Crit Chance",
+          "At the start of each day, this gains +20% Crit Chance"
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Food"
+    ],
+    "hiddenTags": [
+      "Shield",
+      "CritReference"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 0.5 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "This has double Shield."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to this item's Shield"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to 5% of this item's Shield"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn equal to 5% of this item's Shield"
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "This has +50% Crit Chance."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal Damage equal to this item's Shield"
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown 4 seconds",
+      "Shield equal to this item's Crit Chance",
+      "This has +20 Crit Chance",
+      "At the start of each day, this gains (+5%/+10%/+15%/+20%) Crit Chance"
     ]
   },
   {
@@ -51537,13 +57581,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -51564,6 +57608,267 @@ const data: ParsedItemCard[] = [
       "Cooldown (8/7/6/5) seconds",
       "Multicast 3",
       "Deal 20 Damage"
+    ]
+  },
+  {
+    "id": "13b8f787-33ec-47e3-84f5-a7816f651ba1",
+    "name": "Carving Fork",
+    "startingTier": "Bronze",
+    "tiers": {
+      "Bronze": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Deal 3 Damage",
+          "Your Weapons gain +3 damage for the fight"
+        ]
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Deal 6 Damage",
+          "Your Weapons gain +6 damage for the fight"
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Deal 9 Damage",
+          "Your Weapons gain +9 damage for the fight"
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Deal 12 Damage",
+          "Your Weapons gain +12 damage for the fight"
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Weapon",
+      "Tool"
+    ],
+    "hiddenTags": [
+      "Damage"
+    ],
+    "customTags": [],
+    "size": "Small",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 0.5 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield equal to this item's Damage"
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to this item's Damage"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to 5% of this item's Damage"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn equal to 5% of this item's Damage"
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "This has +50% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "This has double Damage."
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown 4 seconds",
+      "Deal (3/6/9/12) Damage",
+      "Your Weapons gain (+3/+6/+9/+12) damage for the fight"
+    ]
+  },
+  {
+    "id": "1059a4b7-9739-478c-ac00-66a270b43250",
+    "name": "Grater",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Multicast 2",
+          "Deal 5 Damage",
+          "A Food gains +5% Crit Chance for the fight"
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Multicast 2",
+          "Deal 5 Damage",
+          "A Food gains +10% Crit Chance for the fight"
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Multicast 2",
+          "Deal 5 Damage",
+          "A Food gains +15% Crit Chance for the fight"
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Weapon",
+      "Tool"
+    ],
+    "hiddenTags": [
+      "Damage",
+      "Crit"
+    ],
+    "customTags": [],
+    "size": "Small",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 0.5 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield equal to this item's Damage"
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to this item's Damage"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to 5% of this item's Damage"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn equal to 5% of this item's Damage"
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "This has +50% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "This has double Damage."
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown 6 seconds",
+      "Multicast 2",
+      "Deal 5 Damage",
+      "A Food gains (+5%/+10%/+15%) Crit Chance for the fight"
     ]
   },
   {
@@ -51642,15 +57947,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Burn"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Burn"
         ]
       },
       {
@@ -51668,13 +57971,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -51686,8 +57989,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Burn"
         ]
       }
     ],
@@ -51799,13 +58101,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -51928,13 +58230,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -52059,13 +58361,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -52193,13 +58495,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -52325,13 +58627,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -52754,13 +59056,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -52781,6 +59083,246 @@ const data: ParsedItemCard[] = [
       "Cooldown (5/4/3) seconds",
       "Heal equal to the value of adjacent items.",
       "Gain Max Health equal to this item's Heal for the fight."
+    ]
+  },
+  {
+    "id": "6254a491-e424-4573-bb8d-a7d51a26144d",
+    "name": "Freezer",
+    "startingTier": "Gold",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": [
+          "When you use an adjacent Food, Freeze an item for 0.5 second(s).",
+          "Chilled: When you Freeze, deal 100 Damage."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "When you use an adjacent Food, Freeze an item for 0.5 second(s).",
+          "Chilled: When you Freeze, deal 200 Damage."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Tool",
+      "Weapon"
+    ],
+    "hiddenTags": [
+      "Freeze"
+    ],
+    "customTags": [],
+    "size": "Large",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Chilled: When you Freeze, Slow 1 items for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "This Freezes for twice as long."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Chilled: When you Freeze, Haste an item for 1 second(s)."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Chilled: When you Freeze, Shield equal to this item's Damage"
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Chilled: When you Freeze, Heal equal to this item's Damage"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Chilled: When you Freeze, Poison equal to 5% of this item's Damage"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Chilled: When you Freeze, Burn equal to 5% of this item's Damage"
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has double Damage."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "Your Food have +40% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "Your Food are affected by Freeze and Slow for half as long."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "This has double Damage."
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "When you use an adjacent Food, Freeze an item for 0.5 second(s).",
+      "Chilled: When you Freeze, deal (100/200) Damage."
+    ]
+  },
+  {
+    "id": "90acad0b-2154-4af1-a448-5f8dc304612e",
+    "name": "Farmer's Market",
+    "startingTier": "Gold",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": [
+          "Adjacent Regen items have +Regen equal to 1% of your Max Health.",
+          "When you sell a Food, gain Max Health equal to 2 times that Food's Value.",
+          "Your Food have +1 sell value."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Adjacent Regen items have +Regen equal to 1% of your Max Health.",
+          "When you sell a Food, gain Max Health equal to 4 times that Food's Value.",
+          "Your Food have +2 sell value."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Property"
+    ],
+    "hiddenTags": [
+      "Gold"
+    ],
+    "customTags": [],
+    "size": "Large",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "When you gain Regen, Slow 1 item(s) for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "When you gain Regen, Freeze an item for 0.5 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "When you gain Regen, Haste 1 item(s) for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "When you gain Regen, Shield 40"
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "When you gain Regen, Heal 40"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "When you gain Regen, Poison 4"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "When you gain Regen, Burn 4"
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has double Food sell value bonus."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "Your Regen items have +40% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "Your Regen items are affected by Freeze and Slow for half as long."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "When you gain Regen, deal 40 Damage"
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Adjacent Regen items have +Regen equal to 1% of your Max Health.",
+      "When you sell a Food, gain Max Health equal to (2/4) times that Food's Value.",
+      "Your Food have (+1/+2) sell value."
     ]
   },
   {
@@ -52867,15 +59409,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Burn"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Burn"
         ]
       },
       {
@@ -52893,13 +59433,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -52911,8 +59451,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Burn"
         ]
       }
     ],
@@ -52993,15 +59532,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "When you Slow, Heal equal to 5 times this item's Regen."
         ]
       },
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "When you Slow, Shield equal to 5 times this item's Regen."
         ]
       },
       {
@@ -53037,8 +59574,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "When you Slow, deal Damage equal to 5 times this item's Regen."
         ]
       }
     ],
@@ -53057,7 +59593,7 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Cooldown 5 seconds",
           "Gain 2 Regen for the fight",
-          "Heated: Burn 5",
+          "Heated: Burn equal to this item's Regen",
           "Chilled: This has +15% Crit chance."
         ]
       },
@@ -53065,7 +59601,7 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Cooldown 5 seconds",
           "Gain 4 Regen for the fight",
-          "Heated: Burn 10",
+          "Heated: Burn equal to this item's Regen",
           "Chilled: This has +30% Crit chance."
         ]
       },
@@ -53073,7 +59609,7 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Cooldown 5 seconds",
           "Gain 6 Regen for the fight",
-          "Heated: Burn 15",
+          "Heated: Burn equal to this item's Regen",
           "Chilled: This has +45% Crit chance."
         ]
       },
@@ -53081,7 +59617,7 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Cooldown 5 seconds",
           "Gain 8 Regen for the fight",
-          "Heated: Burn 20",
+          "Heated: Burn equal to this item's Regen",
           "Chilled: This has +60% Crit chance."
         ]
       },
@@ -53154,13 +59690,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -53180,7 +59716,7 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "Cooldown 5 seconds",
       "Gain (2/4/6/8) Regen for the fight",
-      "Heated: Burn (5/10/15/20)",
+      "Heated: Burn equal to this item's Regen",
       "Chilled: This has (+15%/+30%/+45%/+60%) Crit chance."
     ]
   },
@@ -53196,7 +59732,7 @@ const data: ParsedItemCard[] = [
         "tooltips": [
           "Cooldown 10 seconds",
           "Deal 75 Damage",
-          "Burn 10",
+          "Burn 5",
           "When you use another Weapon or Haste, Charge this 2 second(s)."
         ]
       },
@@ -53285,13 +59821,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -53311,7 +59847,7 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "Cooldown 10 seconds",
       "Deal (75/150/250) Damage",
-      "Burn (10/15/25)",
+      "Burn (5/15/25)",
       "When you use another Weapon or Haste, Charge this 2 second(s)."
     ]
   },
@@ -53533,13 +60069,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -53644,15 +60180,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Poison"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Poison"
         ]
       },
       {
@@ -53670,13 +60204,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -53688,8 +60222,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Poison"
         ]
       }
     ],
@@ -53917,7 +60450,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -54163,13 +60696,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -54291,13 +60824,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -54416,7 +60949,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -54428,7 +60961,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -54778,13 +61311,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -55034,13 +61567,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -55070,7 +61603,7 @@ const data: ParsedItemCard[] = [
     "tiers": {
       "Bronze": {
         "tooltips": [
-          "Cooldown 7 seconds",
+          "Cooldown 8 seconds",
           "Deal 5 Damage",
           "Your Weapons gain +5 Damage for the fight",
           "When you use another Tool, Charge this 1 second(s)."
@@ -55078,7 +61611,7 @@ const data: ParsedItemCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "Cooldown 7 seconds",
+          "Cooldown 8 seconds",
           "Deal 10 Damage",
           "Your Weapons gain +10 Damage for the fight",
           "When you use another Tool, Charge this 1 second(s)."
@@ -55086,7 +61619,7 @@ const data: ParsedItemCard[] = [
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 7 seconds",
+          "Cooldown 8 seconds",
           "Deal 15 Damage",
           "Your Weapons gain +15 Damage for the fight",
           "When you use another Tool, Charge this 1 second(s)."
@@ -55094,7 +61627,7 @@ const data: ParsedItemCard[] = [
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 7 seconds",
+          "Cooldown 8 seconds",
           "Deal 20 Damage",
           "Your Weapons gain +20 Damage for the fight",
           "When you use another Tool, Charge this 1 second(s)."
@@ -55168,13 +61701,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -55192,7 +61725,7 @@ const data: ParsedItemCard[] = [
     ],
     "quests": [],
     "unifiedTooltips": [
-      "Cooldown 7 seconds",
+      "Cooldown 8 seconds",
       "Deal (5/10/15/20) Damage",
       "Your Weapons gain (+5/+10/+15/+20) Damage for the fight",
       "When you use another Tool, Charge this 1 second(s)."
@@ -55538,7 +62071,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -55637,15 +62170,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Regen"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Regen"
         ]
       },
       {
@@ -55663,7 +62194,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -55675,14 +62206,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Regen"
         ]
       }
     ],
@@ -55799,13 +62329,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -55826,6 +62356,264 @@ const data: ParsedItemCard[] = [
       "Cooldown 6 seconds",
       "Deal (10/20/30/40) Damage",
       "Your other Weapons gain (+10/+20/+30/+40) Damage for the fight"
+    ]
+  },
+  {
+    "id": "a00759a2-b9ae-4324-9cef-30a68a294904",
+    "name": "Giant Sub",
+    "startingTier": "Gold",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Shield equal to your highest Shield Food.",
+          "Gain Regen equal to your highest Regen Food for the fight.",
+          "Heated: Burn equal to your highest Burn Food.",
+          "When you use an adjacent Tool, Charge this 1 second(s)."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Shield equal to your highest Shield Food.",
+          "Gain Regen equal to your highest Regen Food for the fight.",
+          "Heated: Burn equal to your highest Burn Food.",
+          "When you use an adjacent Tool, Charge this 2 second(s)."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Food"
+    ],
+    "hiddenTags": [
+      "Burn",
+      "Shield",
+      "Regen"
+    ],
+    "customTags": [],
+    "size": "Large",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 3 items for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 3 items for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "This has double Shield."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to this item's Shield"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to this item's Regen"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "This has double Burn."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "This has +50% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal Damage equal to this item's Shield"
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown 6 seconds",
+      "Shield equal to your highest Shield Food.",
+      "Gain Regen equal to your highest Regen Food for the fight.",
+      "Heated: Burn equal to your highest Burn Food.",
+      "When you use an adjacent Tool, Charge this (1/2) second(s)."
+    ]
+  },
+  {
+    "id": "fcf57212-34e9-4049-b40c-751d18b1af40",
+    "name": "Microwave",
+    "startingTier": "Bronze",
+    "tiers": {
+      "Bronze": {
+        "tooltips": [
+          "Cooldown 8 seconds",
+          "Haste your Food for 2 seconds",
+          "Heated: This item's cooldown is reduced by 2 seconds."
+        ]
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 7 seconds",
+          "Haste your Food for 2 seconds",
+          "Heated: This item's cooldown is reduced by 2 seconds."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Haste your Food for 2 seconds",
+          "Heated: This item's cooldown is reduced by 2 seconds."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Haste your Food for 2 seconds",
+          "Heated: This item's cooldown is reduced by 2 seconds."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Tool"
+    ],
+    "hiddenTags": [
+      "Haste"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 2 items for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "This Hastes for twice as long."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield 75"
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal 75"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison 7"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn 7"
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "Your Food items have +40% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal 75 Damage"
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown (8/7/6/5) seconds",
+      "Haste your Food for 2 seconds",
+      "Heated: This item's cooldown is reduced by 2 seconds."
     ]
   },
   {
@@ -55925,7 +62713,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -56079,6 +62867,274 @@ const data: ParsedItemCard[] = [
     ]
   },
   {
+    "id": "df089fce-2f5a-495f-86ce-11b06e1474d5",
+    "name": "Azakan Stew",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 8 seconds",
+          "Shield 30",
+          "Gain 3 Regen for the fight",
+          "Heated: Burn 3",
+          "If you have another Food with, Burn, Shield, Regen or Freeze, this has +1 Multicast for each."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 7 seconds",
+          "Shield 30",
+          "Gain 3 Regen for the fight",
+          "Heated: Burn 3",
+          "If you have another Food with, Burn, Shield, Regen or Freeze, this has +1 Multicast for each."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Shield 30",
+          "Gain 3 Regen for the fight",
+          "Heated: Burn 3",
+          "If you have another Food with, Burn, Shield, Regen or Freeze, this has +1 Multicast for each."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Food"
+    ],
+    "hiddenTags": [
+      "Burn",
+      "Regen",
+      "Shield",
+      "BurnReference",
+      "RegenReference",
+      "ShieldReference",
+      "FreezeReference"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 1 items for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 0.5 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 1 items for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "This has double Shield."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to this item's Shield"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to this item's Regen"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "This has double Burn."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "This has +50% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal Damage equal to this item's Shield"
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown (8/7/6) seconds",
+      "Shield 30",
+      "Gain 3 Regen for the fight",
+      "Heated: Burn 3",
+      "If you have another Food with, Burn, Shield, Regen or Freeze, this has +1 Multicast for each."
+    ]
+  },
+  {
+    "id": "fcfcd84c-8f62-43ae-9cbb-31d3110e4696",
+    "name": "Feast",
+    "startingTier": "Gold",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Heated: Burn 3",
+          "Chilled: Gain 3 Regen for the fight",
+          "When you use a Food, increase this item's Burn and Regen by 3 for the fight."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Heated: Burn 6",
+          "Chilled: Gain 6 Regen for the fight",
+          "When you use a Food, increase this item's Burn and Regen by 6 for the fight."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Food"
+    ],
+    "hiddenTags": [
+      "Burn",
+      "Regen"
+    ],
+    "customTags": [],
+    "size": "Large",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 3 items for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze 2 items for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 3 items for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Heated: Shield equal to 5 times this item's Burn",
+          "Chilled: Shield equal to 5 times this item's Regen"
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heated: Heal equal to 5 times this item's Burn",
+          "Chilled: Heal equal to 5 times this item's Regen"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Heated: Poison equal to this item's Burn",
+          "Chilled: Poison equal to this item's Regen"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "This has double Burn."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "This has +50% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Heated: Deal Damage equal to 5 times this item's Burn",
+          "Chilled: Deal Damage equal to 5 times this item's Regen"
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown 4 seconds",
+      "Heated: Burn (3/6)",
+      "Chilled: Gain (3/6) Regen for the fight",
+      "When you use a Food, increase this item's Burn and Regen by (3/6) for the fight."
+    ]
+  },
+  {
     "id": "0c501dff-aa3a-4091-9c1e-2df43faef2e1",
     "name": "Tea Set",
     "startingTier": "Silver",
@@ -56179,13 +63235,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -56310,13 +63366,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -56441,7 +63497,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -56453,7 +63509,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -56567,7 +63623,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -56692,7 +63748,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -56817,7 +63873,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -56937,13 +63993,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -57068,13 +64124,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -57187,7 +64243,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -57311,7 +64367,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -57338,6 +64394,121 @@ const data: ParsedItemCard[] = [
       "Cooldown 7 seconds",
       "Freeze an item for (1/1.5/2) second(s)",
       "When you use a Core or another Ray, Charge this 1 second(s)."
+    ]
+  },
+  {
+    "id": "16667da1-b904-4a3f-a1b5-a18fe4e6705a",
+    "name": "Oven",
+    "startingTier": "Diamond",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": []
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Your Food gain Heated for 4 seconds.",
+          "Your other Heated items have +1 Multicast."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Tool"
+    ],
+    "hiddenTags": [],
+    "customTags": [],
+    "size": "Large",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "When you use a Heated item, Slow an item for 1 second(s)."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "When you use a Heated item, Freeze an item for 0.5 second(s)."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "When you use a Heated item, Haste an item for 1 second(s)."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "When you use a Heated item, Shield 30."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "When you use a Heated item, Heal 30."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "When you use a Heated item, Poison 3."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "When you use a Heated item, Burn 3."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has double Multicast bonus."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "Your Heated items have +50% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "Your Heated items are affected by Freeze and Slow for half as long."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "When you use a Heated item, deal 30 Damage."
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown 6 seconds",
+      "Your Food gain Heated for 4 seconds.",
+      "Your other Heated items have +1 Multicast."
     ]
   },
   {
@@ -57446,13 +64617,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -57706,7 +64877,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -57809,15 +64980,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Burn"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Burn"
         ]
       },
       {
@@ -57835,13 +65004,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -57853,8 +65022,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Burn"
         ]
       }
     ],
@@ -57960,7 +65128,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -58082,7 +65250,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -58109,6 +65277,132 @@ const data: ParsedItemCard[] = [
       "Cooldown 4 seconds",
       "Charge adjacent items (1/2) second(s)",
       "If you have the same amount of items on both sides of this, Charge all other items instead."
+    ]
+  },
+  {
+    "id": "7b4b67c6-949f-48f5-87a5-8199c346fb9a",
+    "name": "Corkscrew",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Deal 20 damage",
+          "The first time you use this each fight, use the Medium Food to the left of this."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Deal 20 damage",
+          "The first time you use this each fight, use the Medium Food to the left of this."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 3 seconds",
+          "Deal 20 damage",
+          "The first time you use this each fight, use the Medium Food to the left of this."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Weapon",
+      "Tool"
+    ],
+    "hiddenTags": [
+      "Damage"
+    ],
+    "customTags": [],
+    "size": "Small",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow an item for 2 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 0.5 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste an item for 2 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield equal to this item's Damage"
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to this item's Damage"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to 5% of this item's Damage"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn equal to 5% of this item's Damage"
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "This has +50% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "This has double Damage."
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown (5/4/3) seconds",
+      "Deal 20 damage",
+      "The first time you use this each fight, use the Medium Food to the left of this."
     ]
   },
   {
@@ -58214,7 +65508,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -58316,15 +65610,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "When you use a Potion, Shield equal to 5 times this item's Burn."
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "When you use a Potion, Heal equal to 5 times this item's Burn."
         ]
       },
       {
@@ -58360,8 +65652,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "When you use a Potion, deal Damage equal to 5 times this item's Burn."
         ]
       }
     ],
@@ -58467,13 +65758,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -58726,7 +66017,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -58855,13 +66146,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -58984,13 +66275,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -59110,13 +66401,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -59236,13 +66527,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -59272,29 +66563,29 @@ const data: ParsedItemCard[] = [
     "tiers": {
       "Bronze": {
         "tooltips": [
-          "Cooldown 5 seconds",
-          "Burn 2",
+          "Cooldown 7 seconds",
+          "Burn 3",
           "For each adjacent Food, this has +1 Multicast."
         ]
       },
       "Silver": {
         "tooltips": [
-          "Cooldown 5 seconds",
-          "Burn 4",
+          "Cooldown 6 seconds",
+          "Burn 3",
           "For each adjacent Food, this has +1 Multicast."
         ]
       },
       "Gold": {
         "tooltips": [
           "Cooldown 5 seconds",
-          "Burn 6",
+          "Burn 3",
           "For each adjacent Food, this has +1 Multicast."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 5 seconds",
-          "Burn 8",
+          "Cooldown 4 seconds",
+          "Burn 3",
           "For each adjacent Food, this has +1 Multicast."
         ]
       },
@@ -59342,15 +66633,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Burn"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Burn"
         ]
       },
       {
@@ -59368,13 +66657,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -59386,15 +66675,14 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Burn"
         ]
       }
     ],
     "quests": [],
     "unifiedTooltips": [
-      "Cooldown 5 seconds",
-      "Burn (2/4/6/8)",
+      "Cooldown (7/6/5/4) seconds",
+      "Burn 3",
       "For each adjacent Food, this has +1 Multicast."
     ]
   },
@@ -59491,13 +66779,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -59715,15 +67003,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Poison"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Poison"
         ]
       },
       {
@@ -59741,13 +67027,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -59759,8 +67045,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Poison"
         ]
       }
     ],
@@ -59841,15 +67126,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "When you Poison yourself, Shield equal to 5 times this item's Poison."
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "When you Poison yourself, Heal equal to 5 times this item's Poison."
         ]
       },
       {
@@ -59886,8 +67169,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "When you Poison yourself, deal Damage equal to 5 times this item's Poison."
         ]
       }
     ],
@@ -59997,7 +67279,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -60121,13 +67403,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -60248,13 +67530,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -60381,13 +67663,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -60507,7 +67789,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -60630,13 +67912,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -60736,15 +68018,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Poison"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Poison"
         ]
       },
       {
@@ -60762,13 +68042,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -60780,8 +68060,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Poison"
         ]
       }
     ],
@@ -60885,7 +68164,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -61013,13 +68292,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -61135,13 +68414,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -61264,7 +68543,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -61389,7 +68668,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -61401,7 +68680,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -61517,7 +68796,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -61634,13 +68913,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -61760,7 +69039,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -62090,6 +69369,132 @@ const data: ParsedItemCard[] = [
     ]
   },
   {
+    "id": "9d7b0b38-aaac-40b9-a189-4f1a0635ccb4",
+    "name": "Pumpkin",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Gain 5 Regen for the fight",
+          "When you use an adjacent Food or Tool, Shield 10."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Gain 10 Regen for the fight",
+          "When you use an adjacent Food or Tool, Shield 20."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Gain 15 Regen for the fight",
+          "When you use an adjacent Food or Tool, Shield 30."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Food"
+    ],
+    "hiddenTags": [
+      "Regen",
+      "Shield"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 2 items for 2 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 2 items for 2 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "This has double Shield."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "When you use an adjacent Food, Heal equal to this item's Shield"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to this item's Regen"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn equal to this item's Regen"
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "This has +50% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "When you use an adjacent Food, deal Damage equal to this item's Shield"
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown 6 seconds",
+      "Gain (5/10/15) Regen for the fight",
+      "When you use an adjacent Food or Tool, Shield (10/20/30)."
+    ]
+  },
+  {
     "id": "6b8ca1d0-f4ff-440d-8a9e-51efc4d7ce01",
     "name": "Harmadillo",
     "startingTier": "Bronze",
@@ -62191,13 +69596,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -62371,13 +69776,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -62498,13 +69903,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -62630,13 +70035,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -62759,13 +70164,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -62888,13 +70293,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -63012,13 +70417,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -63145,13 +70550,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -63274,7 +70679,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -63402,13 +70807,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -63532,13 +70937,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -63666,13 +71071,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -63793,13 +71198,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -63963,13 +71368,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -64095,13 +71500,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -64235,7 +71640,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -64363,7 +71768,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -64721,7 +72126,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -64847,7 +72252,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -64974,13 +72379,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -65078,15 +72483,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Burn"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Burn"
         ]
       },
       {
@@ -65104,13 +72507,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -65122,8 +72525,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Burn"
         ]
       }
     ],
@@ -65231,7 +72633,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -65354,13 +72756,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -65487,13 +72889,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -65614,13 +73016,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -65746,7 +73148,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -65978,13 +73380,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -66103,7 +73505,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -66289,13 +73691,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -66419,13 +73821,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -66545,13 +73947,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -66648,15 +74050,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Regen"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Regen"
         ]
       },
       {
@@ -66674,7 +74074,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -66686,14 +74086,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Regen"
         ]
       }
     ],
@@ -66800,7 +74199,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -66826,6 +74225,174 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "Cooldown 4 seconds",
       "Haste Your Core for (1/2/3/4) second(s)"
+    ]
+  },
+  {
+    "id": "30da8c8f-4252-4ab7-848a-eaede3922266",
+    "name": "Basket",
+    "startingTier": "Bronze",
+    "tiers": {
+      "Bronze": {
+        "tooltips": [
+          "Cooldown 8 seconds",
+          "Shield 50",
+          "Gain Regen equal to 10% of this item's Shield for the fight."
+        ]
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 7 seconds",
+          "Shield 50",
+          "Gain Regen equal to 10% of this item's Shield for the fight."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Shield 50",
+          "Gain Regen equal to 10% of this item's Shield for the fight."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Shield 50",
+          "Gain Regen equal to 10% of this item's Shield for the fight."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Food"
+    ],
+    "hiddenTags": [
+      "Shield",
+      "Regen",
+      "Quest"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 0.5 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "This has double Shield."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to this item's Shield"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to 5% of this item's Shield"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn equal to 5% of this item's Shield"
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "This has +50% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal Damage equal to this item's Shield"
+        ]
+      }
+    ],
+    "quests": [
+      {
+        "entries": [
+          {
+            "tooltips": [
+              "Sell 12 Food"
+            ],
+            "rewardTooltips": [
+              "This has +50% Crit Chance"
+            ]
+          }
+        ]
+      },
+      {
+        "entries": [
+          {
+            "tooltips": [
+              "Sell 24 Food"
+            ],
+            "rewardTooltips": [
+              "This has +1 Multicast"
+            ]
+          }
+        ]
+      },
+      {
+        "entries": [
+          {
+            "tooltips": [
+              "Sell 48 Food"
+            ],
+            "rewardTooltips": [
+              "This item's Cooldown is reduced by 2 seconds"
+            ]
+          }
+        ]
+      }
+    ],
+    "unifiedTooltips": [
+      "Cooldown (8/7/6/5) seconds",
+      "Shield 50",
+      "Gain Regen equal to 10% of this item's Shield for the fight."
     ]
   },
   {
@@ -67043,13 +74610,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -67145,15 +74712,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Burn"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Burn"
         ]
       },
       {
@@ -67171,13 +74736,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -67189,8 +74754,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Burn"
         ]
       }
     ],
@@ -67302,7 +74866,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -67314,7 +74878,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -67427,13 +74991,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -67554,13 +75118,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -67617,6 +75181,144 @@ const data: ParsedItemCard[] = [
     "unifiedTooltips": [
       "Cooldown (8/7/6/5) seconds",
       "Shield 50"
+    ]
+  },
+  {
+    "id": "aaec0eb7-8bf9-4316-911b-0ba07cf9d5d0",
+    "name": "Skewer",
+    "startingTier": "Bronze",
+    "tiers": {
+      "Bronze": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Deal 10 Damage",
+          "Gain 1 Regen for the fight",
+          "Heated: This has +100% Crit Chance."
+        ]
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Deal 20 Damage",
+          "Gain 2 Regen for the fight",
+          "Heated: This has +100% Crit Chance."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Deal 30 Damage",
+          "Gain 3 Regen for the fight",
+          "Heated: This has +100% Crit Chance."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Deal 40 Damage",
+          "Gain 4 Regen for the fight",
+          "Heated: This has +100% Crit Chance."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Food",
+      "Weapon",
+      "Tool"
+    ],
+    "hiddenTags": [
+      "Damage",
+      "Regen",
+      "Crit"
+    ],
+    "customTags": [],
+    "size": "Small",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow an item for 2 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 0.5 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste an item for 2 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield equal to this item's Damage"
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to this item's Damage"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to this item's Regen"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn equal to this item's Regen"
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "This has +50% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "This has double Damage."
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown 5 seconds",
+      "Deal (10/20/30/40) Damage",
+      "Gain (1/2/3/4) Regen for the fight",
+      "Heated: This has +100% Crit Chance."
     ]
   },
   {
@@ -67842,7 +75544,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -67854,7 +75556,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -67944,15 +75646,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Regen"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Regen"
         ]
       },
       {
@@ -67970,7 +75670,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -67988,8 +75688,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Regen"
         ]
       }
     ],
@@ -68097,7 +75796,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -68217,7 +75916,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -68368,6 +76067,267 @@ const data: ParsedItemCard[] = [
     ]
   },
   {
+    "id": "93c40197-b3ec-447e-bc1d-eef21ab88c28",
+    "name": "Laurel's Fortress",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 7 seconds",
+          "Shield 50",
+          "Gain 5 Regen for the fight.",
+          "This has +1 Multicast for each unique Type on other items you have."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Shield 100",
+          "Gain 10 Regen for the fight.",
+          "This has +1 Multicast for each unique Type on other items you have."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Shield 150",
+          "Gain 15 Regen for the fight.",
+          "This has +1 Multicast for each unique Type on other items you have."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Property"
+    ],
+    "hiddenTags": [
+      "Shield",
+      "Regen"
+    ],
+    "customTags": [],
+    "size": "Large",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 2 items for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 2 items for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "This has double Shield."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to this item's Shield"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to this item's Regen"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn equal to this item's Regen"
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "This has +50% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal Damage equal to this item's Shield"
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown (7/6/5) seconds",
+      "Shield (50/100/150)",
+      "Gain (5/10/15) Regen for the fight.",
+      "This has +1 Multicast for each unique Type on other items you have."
+    ]
+  },
+  {
+    "id": "f5de7079-8df7-498c-9043-96e8611b44a5",
+    "name": "Mouse Trap",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 2 seconds",
+          "Ammo 1",
+          "Deal Damage equal to this item's Max Ammo",
+          "This has +1 Ammo for each Small Food you have."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 2 seconds",
+          "Ammo 2",
+          "Deal Damage equal to this item's Max Ammo",
+          "This has +2 Ammo for each Small Food you have."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 2 seconds",
+          "Ammo 3",
+          "Deal Damage equal to this item's Max Ammo",
+          "This has +3 Ammo for each Small Food you have."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Weapon",
+      "Tool"
+    ],
+    "hiddenTags": [
+      "Damage",
+      "Ammo"
+    ],
+    "customTags": [],
+    "size": "Small",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 0.5 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield equal to this item's Damage"
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to this item's Damage"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to 5% of this item's Damage"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn equal to 5% of this item's Damage"
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "This has +50% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "This has double Damage."
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown 2 seconds",
+      "Ammo (1/2/3)",
+      "Deal Damage equal to this item's Max Ammo",
+      "This has (+1/+2/+3) Ammo for each Small Food you have."
+    ]
+  },
+  {
     "id": "58e08eca-faae-4f62-b7de-3824a717f337",
     "name": "Security Drone",
     "startingTier": "Bronze",
@@ -68468,13 +76428,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -68595,34 +76555,184 @@ const data: ParsedItemCard[] = [
     ]
   },
   {
+    "id": "a16f1388-d900-4871-8baf-873e38190f9a",
+    "name": "Trail Mix",
+    "startingTier": "Bronze",
+    "tiers": {
+      "Bronze": {
+        "tooltips": [
+          "Cooldown 8 seconds",
+          "Gain 5 Regen for the fight"
+        ]
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 7 seconds",
+          "Gain 5 Regen for the fight"
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Gain 5 Regen for the fight"
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Gain 5 Regen for the fight"
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Food"
+    ],
+    "hiddenTags": [
+      "Regen",
+      "Quest"
+    ],
+    "customTags": [],
+    "size": "Small",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow an item for 2 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 0.5 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste an item for 2 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield equal to 5 times this item's Regen"
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to 5 times this item's Regen"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to this item's Regen"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn equal to this item's Regen"
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "This has +50% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal Damage equal to 5 times this item's Regen"
+        ]
+      }
+    ],
+    "quests": [
+      {
+        "entries": [
+          {
+            "tooltips": [
+              "Sell 20 Food"
+            ],
+            "rewardTooltips": [
+              "This item's Cooldown is reduced by 2 seconds"
+            ]
+          }
+        ]
+      },
+      {
+        "entries": [
+          {
+            "tooltips": [
+              "Sell 40 Food"
+            ],
+            "rewardTooltips": [
+              "This has +1 Multicast"
+            ]
+          }
+        ]
+      }
+    ],
+    "unifiedTooltips": [
+      "Cooldown (8/7/6/5) seconds",
+      "Gain 5 Regen for the fight"
+    ]
+  },
+  {
     "id": "c0455f22-2fb9-4ce6-a65f-e874e3d86ff0",
     "name": "Hot Sauce",
     "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
         "tooltips": [
-          "Cooldown 8 seconds",
+          "Cooldown 9 seconds",
           "Burn 2",
           "For each adjacent Food, this has +1 Multicast."
         ]
       },
       "Silver": {
         "tooltips": [
-          "Cooldown 7 seconds",
+          "Cooldown 8 seconds",
           "Burn 2",
           "For each adjacent Food, this has +1 Multicast."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Cooldown 6 seconds",
+          "Cooldown 7 seconds",
           "Burn 2",
           "For each adjacent Food, this has +1 Multicast."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Cooldown 5 seconds",
+          "Cooldown 6 seconds",
           "Burn 2",
           "For each adjacent Food, this has +1 Multicast."
         ]
@@ -68670,15 +76780,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Burn"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Burn"
         ]
       },
       {
@@ -68696,13 +76804,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -68714,14 +76822,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Burn"
         ]
       }
     ],
     "quests": [],
     "unifiedTooltips": [
-      "Cooldown (8/7/6/5) seconds",
+      "Cooldown (9/8/7/6) seconds",
       "Burn 2",
       "For each adjacent Food, this has +1 Multicast."
     ]
@@ -68818,7 +76925,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -69065,7 +77172,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -69077,7 +77184,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -69173,15 +77280,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Burn"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Burn"
         ]
       },
       {
@@ -69199,13 +77304,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -69217,8 +77322,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Burn"
         ]
       }
     ],
@@ -69333,7 +77437,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -69455,7 +77559,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -69691,7 +77795,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -69818,7 +77922,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -69830,7 +77934,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -70062,7 +78166,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -70198,13 +78302,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -70327,13 +78431,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -70452,7 +78556,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -70698,13 +78802,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -70820,7 +78924,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -70952,13 +79056,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -71084,13 +79188,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -71210,7 +79314,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -71318,15 +79422,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Poison"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Poison"
         ]
       },
       {
@@ -71344,13 +79446,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -71362,8 +79464,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Poison"
         ]
       }
     ],
@@ -71476,7 +79577,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -71503,6 +79604,133 @@ const data: ParsedItemCard[] = [
       "Cooldown (10/9/8/7) seconds",
       "This permanently gains 1 Value",
       "When you sell this, Your Core gains +Crit Chance equal to this item's value."
+    ]
+  },
+  {
+    "id": "d459061d-e76b-4b00-91de-528679eee0e0",
+    "name": "Whisk",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Deal 15 Damage",
+          "Reduce this item's Cooldown by 1 second for the fight"
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Deal 30 Damage",
+          "Reduce this item's Cooldown by 1 second for the fight"
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Deal 45 Damage",
+          "Reduce this item's Cooldown by 1 second for the fight"
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Weapon",
+      "Tool"
+    ],
+    "hiddenTags": [
+      "Damage",
+      "Cooldown"
+    ],
+    "customTags": [],
+    "size": "Small",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 0.5 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield equal to this item's Damage"
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to this item's Damage"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to 5% of this item's Damage"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn equal to 5% of this item's Damage"
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "This has +50% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "This has double Damage."
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown 6 seconds",
+      "Deal (15/30/45) Damage",
+      "Reduce this item's Cooldown by 1 second for the fight"
     ]
   },
   {
@@ -71599,13 +79827,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Deadly",
         "tooltips": [
-          "Your items have +30% Crit Chance."
+          "Your Food have +30% Crit Chance."
         ]
       },
       {
         "type": "Shiny",
         "tooltips": [
-          "You take no damage for twice as long."
+          "This has +1 Multicast."
         ]
       },
       {
@@ -71720,7 +79948,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -71825,15 +80053,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Burn"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Burn"
         ]
       },
       {
@@ -71851,13 +80077,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -71869,8 +80095,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Burn"
         ]
       }
     ],
@@ -72214,7 +80439,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -72348,13 +80573,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -72485,13 +80710,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -72612,7 +80837,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -72719,15 +80944,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Poison"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Poison"
         ]
       },
       {
@@ -72745,13 +80968,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -72763,8 +80986,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Poison"
         ]
       }
     ],
@@ -72870,7 +81092,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -73036,13 +81258,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -73139,15 +81361,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Burn"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Burn"
         ]
       },
       {
@@ -73165,13 +81385,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -73183,8 +81403,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Burn"
         ]
       }
     ],
@@ -73295,7 +81514,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -73307,7 +81526,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -73426,13 +81645,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -73453,6 +81672,138 @@ const data: ParsedItemCard[] = [
       "Cooldown 5 seconds",
       "Deal (20/40/60/80) Damage",
       "When you sell this, get 2 Spare Change."
+    ]
+  },
+  {
+    "id": "e01e1043-3417-40f6-953e-d6a7357f2168",
+    "name": "Ulu Knife",
+    "startingTier": "Bronze",
+    "tiers": {
+      "Bronze": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Deal 10 Damage",
+          "When this is Hasted, this gains +10 Crit Chance for the fight."
+        ]
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Deal 10 Damage",
+          "When this is Hasted, this gains +15 Crit Chance for the fight."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Deal 10 Damage",
+          "When this is Hasted, this gains +20 Crit Chance for the fight."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Deal 10 Damage",
+          "When this is Hasted, this gains +25 Crit Chance for the fight."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Weapon",
+      "Tool"
+    ],
+    "hiddenTags": [
+      "Damage",
+      "Crit",
+      "HasteReference"
+    ],
+    "customTags": [],
+    "size": "Small",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow an item for 2 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 0.5 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste an item for 2 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield equal to this item's Damage"
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to this item's Damage"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to 5% of this item's Damage"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn equal to 5% of this item's Damage"
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "This has double Crit Chance bonus."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "This has double Damage."
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown 4 seconds",
+      "Deal 10 Damage",
+      "When this is Hasted, this gains (+10/+15/+20/+25) Crit Chance for the fight."
     ]
   },
   {
@@ -73544,13 +81895,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -73652,15 +82003,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Burn"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Burn"
         ]
       },
       {
@@ -73678,13 +82027,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -73696,8 +82045,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Burn"
         ]
       }
     ],
@@ -73812,7 +82160,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -74050,13 +82398,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -74154,15 +82502,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's value"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's value"
         ]
       },
       {
@@ -74180,13 +82526,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -74198,8 +82544,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's value"
         ]
       }
     ],
@@ -74432,13 +82777,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -74538,15 +82883,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Burn"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Burn"
         ]
       },
       {
@@ -74564,13 +82907,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -74582,8 +82925,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Burn"
         ]
       }
     ],
@@ -74770,7 +83112,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "When you Crith with a Food, Shield 25"
+          "When you Crit with a Food, Shield 25"
         ]
       },
       {
@@ -74794,7 +83136,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -75029,13 +83371,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -75137,15 +83479,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Burn"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Burn"
         ]
       },
       {
@@ -75163,13 +83503,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -75181,8 +83521,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Burn"
         ]
       }
     ],
@@ -75192,6 +83531,132 @@ const data: ParsedItemCard[] = [
       "Burn (6/9/12)",
       "When you Crit, your Burn items gain (+4/+6/+8) Burn for the fight.",
       "When you Slow, Charge this 2 seconds."
+    ]
+  },
+  {
+    "id": "4c7e8e5f-93ce-4962-80e7-2b01a9f20f2c",
+    "name": "Zarlic",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Haste 1 Food for 1 second(s)",
+          "When a Food's Crit Chance increases, Charge this 1 second."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Haste 2 Food for 1 second(s)",
+          "When a Food's Crit Chance increases, Charge this 1 second."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Haste 3 Food for 1 second(s)",
+          "When a Food's Crit Chance increases, Charge this 1 second."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Food"
+    ],
+    "hiddenTags": [
+      "Haste",
+      "CritReference"
+    ],
+    "customTags": [],
+    "size": "Small",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 0.5 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "This Hastes for twice as long."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield 10"
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal 10"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison 1"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn 1"
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "Your Food have +30% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal 110 Damage."
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown 6 seconds",
+      "Haste (1/2/3) Food for 1 second(s)",
+      "When a Food's Crit Chance increases, Charge this 1 second."
     ]
   },
   {
@@ -75293,7 +83758,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -75423,13 +83888,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -75557,7 +84022,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -75783,7 +84248,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Turbo",
         "tooltips": [
-          "When you use a Potion or Relic, Haste an for 1 second(s)."
+          "When you use a Potion or Relic, Haste an item for 1 second(s)."
         ]
       },
       {
@@ -76156,15 +84621,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Regen"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Regen"
         ]
       },
       {
@@ -76182,13 +84645,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -76200,8 +84663,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Regen"
         ]
       }
     ],
@@ -76306,7 +84768,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -76409,15 +84871,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Regen"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Regen"
         ]
       },
       {
@@ -76435,7 +84895,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -76447,14 +84907,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Regen"
         ]
       }
     ],
@@ -76568,15 +85027,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Burn"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Burn"
         ]
       },
       {
@@ -76594,13 +85051,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -76612,8 +85069,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Burn"
         ]
       }
     ],
@@ -76692,15 +85148,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Burn"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Burn"
         ]
       },
       {
@@ -76718,13 +85172,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -76736,8 +85190,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Burn"
         ]
       }
     ],
@@ -76821,15 +85274,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Poison"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Poison"
         ]
       },
       {
@@ -76847,13 +85298,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -76865,8 +85316,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Poison"
         ]
       }
     ],
@@ -76973,13 +85423,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -77094,13 +85544,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -77360,7 +85810,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -77372,7 +85822,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -77548,7 +85998,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -77654,15 +86104,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Burn"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Burn"
         ]
       },
       {
@@ -77680,13 +86128,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -77698,8 +86146,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Burn"
         ]
       }
     ],
@@ -77806,7 +86253,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -77915,15 +86362,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Burn"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Burn"
         ]
       },
       {
@@ -77941,13 +86386,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -77959,8 +86404,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Burn"
         ]
       }
     ],
@@ -78165,15 +86609,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Burn"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Burn"
         ]
       },
       {
@@ -78191,7 +86633,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -78209,8 +86651,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Burn"
         ]
       }
     ],
@@ -78317,13 +86758,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -78554,7 +86995,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -78566,7 +87007,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -78665,15 +87106,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Poison"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Poison"
         ]
       },
       {
@@ -78691,13 +87130,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -78709,8 +87148,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Poison"
         ]
       }
     ],
@@ -78818,13 +87256,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -78928,15 +87366,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Burn"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Burn"
         ]
       },
       {
@@ -78954,13 +87390,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -78972,8 +87408,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Burn"
         ]
       }
     ],
@@ -78983,6 +87418,157 @@ const data: ParsedItemCard[] = [
       "Burn 6",
       "When you transform a Reagent, this permanently gains (+3/+5/+7/+9) Burn.",
       "At the start of each day, spend 2 Gold to get a Chunk of Lead."
+    ]
+  },
+  {
+    "id": "b0f345cb-a769-487d-9fd4-fa5fe130f8b9",
+    "name": "Giant Lollipop",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Deal 50 damage",
+          "Heated: Slow 1 for 1 second(s)"
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Deal 100 damage",
+          "Heated: Slow 2 for 1 second(s)"
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Deal 150 damage",
+          "Heated: Slow 3 for 1 second(s)"
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Food",
+      "Weapon"
+    ],
+    "hiddenTags": [
+      "Slow"
+    ],
+    "customTags": [],
+    "size": "Large",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "This Slows for twice as long."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 2 items for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield equal to this item's Damage"
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to this item's Damage"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to 5% of this item's Damage"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn equal to 5% of this item's Damage"
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "This has +50% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "This has double Damage."
+        ]
+      }
+    ],
+    "quests": [
+      {
+        "entries": [
+          {
+            "tooltips": [
+              "Use 100 Food"
+            ],
+            "rewardTooltips": [
+              "This has +Damage equal to 5% of your Max Health"
+            ]
+          }
+        ]
+      },
+      {
+        "entries": [
+          {
+            "tooltips": [
+              "Slow 80 times"
+            ],
+            "rewardTooltips": [
+              "This has +1 Multicast."
+            ]
+          }
+        ]
+      }
+    ],
+    "unifiedTooltips": [
+      "Cooldown 5 seconds",
+      "Deal (50/100/150) damage",
+      "Heated: Slow (1/2/3) for 1 second(s)"
     ]
   },
   {
@@ -79055,15 +87641,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "When you Slow, Shield equal to 5 times this item's Burn"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "When you Slow, Heal equal to 5 times this item's Burn"
         ]
       },
       {
@@ -79081,7 +87665,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -79099,8 +87683,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "When you Slow, Deal Damage equal to 5 times this item's Burn"
         ]
       }
     ],
@@ -79207,13 +87790,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -79311,15 +87894,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Burn"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Burn"
         ]
       },
       {
@@ -79337,13 +87918,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -79355,8 +87936,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Burn"
         ]
       }
     ],
@@ -79463,7 +88043,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -79597,13 +88177,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -79768,7 +88348,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -79888,7 +88468,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -80023,13 +88603,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -80050,6 +88630,122 @@ const data: ParsedItemCard[] = [
       "Cooldown (7/6/5/4) seconds",
       "Deal 20 Damage",
       "Shield 20"
+    ]
+  },
+  {
+    "id": "06f33f60-da69-487d-9576-92d3b8da6fc9",
+    "name": "Egg Timer",
+    "startingTier": "Gold",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 12 seconds",
+          "Charge all your Food 5 seconds"
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 12 seconds",
+          "Charge all your Food 8 seconds"
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Tool"
+    ],
+    "hiddenTags": [],
+    "customTags": [],
+    "size": "Small",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow an item for 5 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 2 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste an item for 5 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield 200"
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal 200"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison 20"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn 20"
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "Your items gain +50% Crit Chance for the fight"
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal 200 Damage"
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown 12 seconds",
+      "Charge all your Food (5/8) seconds"
     ]
   },
   {
@@ -80146,13 +88842,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -80173,6 +88869,136 @@ const data: ParsedItemCard[] = [
       "Cooldown (8/6) seconds",
       "Deal 2 Damage",
       "Poison equal to this item's Damage"
+    ]
+  },
+  {
+    "id": "6260416a-6433-456a-9c5c-14a18d82f940",
+    "name": "Scorchpepper",
+    "startingTier": "Bronze",
+    "tiers": {
+      "Bronze": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Burn 2",
+          "The Food to the left of this is Heated."
+        ]
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Burn 4",
+          "The Food to the left of this is Heated."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Burn 6",
+          "The Food to the left of this is Heated."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Burn 8",
+          "The Food to the left of this is Heated."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Food"
+    ],
+    "hiddenTags": [
+      "Burn",
+      "Joy"
+    ],
+    "customTags": [],
+    "size": "Small",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow an item for 2 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 0.5 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste an item for 2 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield equal to 5 times this item's Burn"
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to 5 times this item's Burn"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to this item's Burn"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "This has double Burn."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "This has +50% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal Damage equal to 5 times this item's Burn"
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown 5 seconds",
+      "Burn (2/4/6/8)",
+      "The Food to the left of this is Heated."
     ]
   },
   {
@@ -80277,7 +89103,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -80305,6 +89131,132 @@ const data: ParsedItemCard[] = [
       "This starts or stops Flying",
       "When this starts Flying, Shield 100.",
       "When this stops Flying, Charge adjacent items 1 second."
+    ]
+  },
+  {
+    "id": "df843af8-4b2f-498b-9e06-3fad3a246a08",
+    "name": "Herb Shears",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Deal 10 Damage",
+          "Charge adjacent Food items 1 second"
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Deal 10 Damage",
+          "Charge adjacent Food items 1 second"
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 3 seconds",
+          "Deal 10 Damage",
+          "Charge adjacent Food items 1 second"
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Weapon",
+      "Tool"
+    ],
+    "hiddenTags": [
+      "Damage"
+    ],
+    "customTags": [],
+    "size": "Small",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 0.5 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield equal to this item's Damage"
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to this item's Damage"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to 5% of this item's Damage"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn equal to 5% of this item's Damage"
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "This has +50% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "This has double Damage."
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown (5/4/3) seconds",
+      "Deal 10 Damage",
+      "Charge adjacent Food items 1 second"
     ]
   },
   {
@@ -80405,7 +89357,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -80530,13 +89482,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -80642,35 +89594,31 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+0 Shield",
-          "0 Shield"
+          "Shield 10 for each Relic you have"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+0 Heal",
-          "0 Heal"
+          "Heal 10 for each Relic you have"
         ]
       },
       {
         "type": "Toxic",
         "tooltips": [
-          "+0 Poison",
-          "0 Poison"
+          "Poison 1 for each Relic you have"
         ]
       },
       {
         "type": "Fiery",
         "tooltips": [
-          "+0 Burn",
-          "0 Burn"
+          "Burn 1 for each Relic you have"
         ]
       },
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -80688,8 +89636,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+0 Damage",
-          "0 Damage"
+          "Deal 10 Damage for each Relic you have"
         ]
       }
     ],
@@ -80699,6 +89646,136 @@ const data: ParsedItemCard[] = [
       "Haste adjacent items for (1/2/3/4) second(s)",
       "If this is your only Tech item, its Cooldown is halved.",
       "At the start of each day, get a Relic from any hero."
+    ]
+  },
+  {
+    "id": "825700a8-f21b-4867-ad08-d752f13a51ab",
+    "name": "Apron",
+    "startingTier": "Bronze",
+    "tiers": {
+      "Bronze": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Gain 20 Shield",
+          "When you buy a Food, this gains +10 Shield"
+        ]
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Gain 20 Shield",
+          "When you buy a Food, this gains +20 Shield"
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Gain 20 Shield",
+          "When you buy a Food, this gains +30 Shield"
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Gain 20 Shield",
+          "When you buy a Food, this gains +40 Shield"
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Apparel",
+      "Tool"
+    ],
+    "hiddenTags": [
+      "Shield"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 2 items for 2 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 2 items for 2 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "This has double Shield."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to this item's Shield"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to 5% of this item's Shield"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn equal to 5% of this item's Shield"
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "This has +50% Crit Chance."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal Damage equal to this item's Shield"
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown 6 seconds",
+      "Gain 20 Shield",
+      "When you buy a Food, this gains (+10/+20/+30/+40) Shield"
     ]
   },
   {
@@ -80809,7 +89886,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -80923,13 +90000,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -81055,13 +90132,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -81182,7 +90259,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -81313,13 +90390,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -81442,13 +90519,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -81544,15 +90621,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Poison"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Poison"
         ]
       },
       {
@@ -81570,13 +90645,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -81588,8 +90663,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Poison"
         ]
       }
     ],
@@ -81905,15 +90979,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Burn"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Burn"
         ]
       },
       {
@@ -81931,13 +91003,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -81949,8 +91021,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Burn"
         ]
       }
     ],
@@ -82061,7 +91132,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -82107,7 +91178,7 @@ const data: ParsedItemCard[] = [
       },
       "Diamond": {
         "tooltips": [
-          "When you sell this, your leftmost Freeze item gains +0.5 Freeze duration."
+          "When you sell this, your leftmost Small or Medium Freeze item gains +0.5 Freeze duration."
         ]
       },
       "Legendary": {
@@ -82185,7 +91256,7 @@ const data: ParsedItemCard[] = [
     ],
     "quests": [],
     "unifiedTooltips": [
-      "When you sell this, your leftmost Freeze item gains +0.5 Freeze duration."
+      "When you sell this, your leftmost Small or Medium Freeze item gains +0.5 Freeze duration."
     ]
   },
   {
@@ -82266,15 +91337,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Burn"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Burn"
         ]
       },
       {
@@ -82292,7 +91361,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -82304,14 +91373,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Burn"
         ]
       }
     ],
@@ -82488,15 +91556,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Burn"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Burn"
         ]
       },
       {
@@ -82514,13 +91580,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -82532,8 +91598,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Burn"
         ]
       }
     ],
@@ -82637,13 +91702,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -82762,7 +91827,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -83113,7 +92178,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -83248,6 +92313,128 @@ const data: ParsedItemCard[] = [
     ]
   },
   {
+    "id": "9de5b9e6-d2a7-46f1-be70-ee6bded32ead",
+    "name": "Food Truck",
+    "startingTier": "Gold",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Haste adjacent items for 1 second(s)",
+          "When you Haste a Food, charge it 1 second(s)."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Haste adjacent items for 2 second(s)",
+          "When you Haste a Food, charge it 1 second(s)."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Vehicle"
+    ],
+    "hiddenTags": [
+      "Haste",
+      "Charge"
+    ],
+    "customTags": [],
+    "size": "Large",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 3 items for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "This Hastes for twice as long."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield 120"
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal 120"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison 12"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn 12"
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "Your Food items have +50% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal 120 Damage"
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown 4 seconds",
+      "Haste adjacent items for (1/2) second(s)",
+      "When you Haste a Food, charge it 1 second(s)."
+    ]
+  },
+  {
     "id": "5795875a-9917-46a6-9334-ee835e4caefc",
     "name": "BLU-B33TL3",
     "startingTier": "Silver",
@@ -83344,7 +92531,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -83470,7 +92657,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -83574,15 +92761,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Burn"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Burn"
         ]
       },
       {
@@ -83600,13 +92785,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -83618,8 +92803,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Burn"
         ]
       }
     ],
@@ -83732,13 +92916,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -83849,13 +93033,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -83971,7 +93155,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -84096,13 +93280,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -84221,7 +93405,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -84346,7 +93530,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -84471,7 +93655,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -84498,6 +93682,127 @@ const data: ParsedItemCard[] = [
       "Cooldown (7/6/5) seconds",
       "Slow an item for 1 second(s)",
       "If you have another Relic, Quest, Friend, or Enchanted item this has +1 Multicast for each."
+    ]
+  },
+  {
+    "id": "34a537c8-7edd-43db-b701-0263577d59e7",
+    "name": "Mini Fridge",
+    "startingTier": "Gold",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 7 seconds",
+          "Freeze 2 item(s) for 1 second(s)",
+          "Chilled: When you use an adjacent Food, Charge this 2 seconds."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 7 seconds",
+          "Freeze 3 item(s) for 1 second(s)",
+          "Chilled: When you use an adjacent Food, Charge this 2 seconds."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Tool"
+    ],
+    "hiddenTags": [
+      "Freeze"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 1 items for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "This Freezes for twice as long."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 1 items for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield 50"
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal 50"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison 5"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn 5"
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "Adjacent items have +40% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal 50 Damage"
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown 7 seconds",
+      "Freeze (2/3) item(s) for 1 second(s)",
+      "Chilled: When you use an adjacent Food, Charge this 2 seconds."
     ]
   },
   {
@@ -84601,13 +93906,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -84709,15 +94014,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Burn"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Burn"
         ]
       },
       {
@@ -84735,13 +94038,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -84753,8 +94056,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Burn"
         ]
       }
     ],
@@ -84840,15 +94142,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Regen"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Regen"
         ]
       },
       {
@@ -84866,13 +94166,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -84884,8 +94184,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Regen"
         ]
       }
     ],
@@ -84990,13 +94289,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -85093,15 +94392,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Burn"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Burn"
         ]
       },
       {
@@ -85119,13 +94416,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -85137,8 +94434,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Burn"
         ]
       }
     ],
@@ -85244,13 +94540,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -85366,13 +94662,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -85486,13 +94782,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -85613,7 +94909,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -85716,15 +95012,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Regen"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Regen"
         ]
       },
       {
@@ -85742,13 +95036,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -85760,8 +95054,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Regen"
         ]
       }
     ],
@@ -85886,13 +95179,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -86007,13 +95300,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -86221,15 +95514,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Burn"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Burn"
         ]
       },
       {
@@ -86247,13 +95538,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -86265,8 +95556,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Burn"
         ]
       }
     ],
@@ -86377,7 +95667,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -86552,15 +95842,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Poison"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Poison"
         ]
       },
       {
@@ -86578,13 +95866,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -86596,8 +95884,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Poison"
         ]
       }
     ],
@@ -86704,13 +95991,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -86858,6 +96145,140 @@ const data: ParsedItemCard[] = [
     ]
   },
   {
+    "id": "f105f32c-d601-4624-9971-5cb16ff0b091",
+    "name": "Pasta",
+    "startingTier": "Bronze",
+    "tiers": {
+      "Bronze": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Gain 1 Regen for the fight",
+          "Gain 10 Max Health for the fight",
+          "When this is Hasted, Charge it 1 second."
+        ]
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Gain 2 Regen for the fight",
+          "Gain 20 Max Health for the fight",
+          "When this is Hasted, Charge it 1 second."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Gain 3 Regen for the fight",
+          "Gain 30 Max Health for the fight",
+          "When this is Hasted, Charge it 1 second."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Gain 4 Regen for the fight",
+          "Gain 40 Max Health for the fight",
+          "When this is Hasted, Charge it 1 second."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Food"
+    ],
+    "hiddenTags": [
+      "Regen"
+    ],
+    "customTags": [],
+    "size": "Small",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 0.5 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield equal to 5 times this item's Regen"
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to 5 times this item's Regen"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to this item's Regen"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn equal to this item's Regen"
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "This has +50% Crit Chance."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal Damage equal to 5 times this item's Regen"
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown 4 seconds",
+      "Gain (1/2/3/4) Regen for the fight",
+      "Gain (10/20/30/40) Max Health for the fight",
+      "When this is Hasted, Charge it 1 second."
+    ]
+  },
+  {
     "id": "9ca6a93b-10e9-4138-abd1-0ff2e7c2c985",
     "name": "Jabalian Dagger",
     "startingTier": "Gold",
@@ -86951,13 +96372,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -87078,7 +96499,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -87204,13 +96625,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -87429,7 +96850,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -87677,13 +97098,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -87925,13 +97346,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -88055,13 +97476,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -88297,7 +97718,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -88418,13 +97839,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -88552,7 +97973,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -88683,13 +98104,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -88789,15 +98210,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Burn"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Burn"
         ]
       },
       {
@@ -88815,13 +98234,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -88833,8 +98252,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Burn"
         ]
       }
     ],
@@ -89071,7 +98489,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -89221,13 +98639,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -89350,7 +98768,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -89472,7 +98890,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -89600,7 +99018,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -89735,13 +99153,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -89869,13 +99287,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -90120,7 +99538,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -90244,7 +99662,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -90374,13 +99792,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -90401,6 +99819,135 @@ const data: ParsedItemCard[] = [
       "Cooldown (8/7/6/5) seconds",
       "Deal 50 Damage",
       "When you gain Gold, this gains +Damage equal to double the amount of Gold gained."
+    ]
+  },
+  {
+    "id": "e45d3e01-ed5e-4b13-b50b-668adecd485b",
+    "name": "Pasta Maker",
+    "startingTier": "Bronze",
+    "tiers": {
+      "Bronze": {
+        "tooltips": [
+          "Cooldown 7 seconds",
+          "Haste adjacent Food for 2 second(s)",
+          "At the start of each day, get a Pasta."
+        ]
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 6 seconds",
+          "Haste adjacent Food for 2 second(s)",
+          "At the start of each day, get a Pasta."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Haste adjacent Food for 2 second(s)",
+          "At the start of each day, get a Pasta."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Haste adjacent Food for 2 second(s)",
+          "At the start of each day, get a Pasta."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Tool"
+    ],
+    "hiddenTags": [
+      "Haste"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "...and Enchant the item with Golden if able."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "...and Enchant the item with Heavy if able."
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "...and Enchant the item with Icy if able."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "...and Enchant the item with Turbo if able."
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "...and Enchant the item with Shielded if able."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "...and Enchant the item with Restorative if able."
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "...and Enchant the item with Toxic if able."
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "...and Enchant the item with Fiery if able."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "...and Enchant the item with Shiny if able."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "...and Enchant the item with Deadly if able."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "...and Enchant the item with Radiant if able."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "...and Enchant the item with Obsidian if able."
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown (7/6/5/4) seconds",
+      "Haste adjacent Food for 2 second(s)",
+      "At the start of each day, get a Pasta."
     ]
   },
   {
@@ -90476,15 +100023,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "When this is Hasted, Shield equal to 5 times this item's Poison"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "When this is Hasted, Heal equal to 5 times this item's Poison"
         ]
       },
       {
@@ -90502,7 +100047,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -90520,8 +100065,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "When this is Hasted, Deal Damage equal to 5 times this item's Poison"
         ]
       }
     ],
@@ -90752,7 +100296,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -90821,7 +100365,8 @@ const data: ParsedItemCard[] = [
       "Food"
     ],
     "hiddenTags": [
-      "Freeze"
+      "Freeze",
+      "Ammo"
     ],
     "customTags": [],
     "size": "Small",
@@ -90886,7 +100431,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -91005,13 +100550,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -91185,13 +100730,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -91305,13 +100850,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -91440,13 +100985,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -91565,13 +101110,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -91690,13 +101235,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -91822,7 +101367,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -91834,7 +101379,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -91850,6 +101395,136 @@ const data: ParsedItemCard[] = [
       "Shield 200",
       "Your Shield items have +Shield equal to this item's value.",
       "When you sell 10 items, give this (+10/+20/+30) value and get a Truffle."
+    ]
+  },
+  {
+    "id": "82a40f01-8145-45ea-8185-b565dc9bad7a",
+    "name": "Pizza",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 8 seconds",
+          "Multicast 6",
+          "Gain 1 Regen for the fight",
+          "Heated: Burn 1"
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 8 seconds",
+          "Multicast 6",
+          "Gain 2 Regen for the fight",
+          "Heated: Burn 2"
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 8 seconds",
+          "Multicast 6",
+          "Gain 3 Regen for the fight",
+          "Heated: Burn 3"
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Food"
+    ],
+    "hiddenTags": [
+      "Regen",
+      "Burn"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 1 items for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 0.5 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 1 items for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield equal to 5 times this item's Regen"
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to 5 times this item's Regen"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to this item's Regen"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "This has double Burn."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "This has +50% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal Damage equal to 5 times this item's Regen"
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown 8 seconds",
+      "Multicast 6",
+      "Gain (1/2/3) Regen for the fight",
+      "Heated: Burn (1/2/3)"
     ]
   },
   {
@@ -91949,7 +101624,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -92080,13 +101755,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -92218,13 +101893,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -92246,6 +101921,132 @@ const data: ParsedItemCard[] = [
       "Shield 10",
       "When you use a Weapon, this gains (+15/+25/+35/+45) Shield for the fight.",
       "If you have another Tech item, this item's Cooldown is reduced by 2 second(s)."
+    ]
+  },
+  {
+    "id": "1d71b2a3-e098-4d78-9df2-58e2e2dccb2b",
+    "name": "Gingerbread House",
+    "startingTier": "Gold",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 7 seconds",
+          "Heated: Burn equal to 10% of your Shield.",
+          "At the start of each day, get a Gingerbread Man.",
+          "When you use another Food, gain 40 Shield."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 7 seconds",
+          "Heated: Burn equal to 10% of your Shield.",
+          "At the start of each day, get a Gingerbread Man.",
+          "When you use another Food, gain 80 Shield."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Food",
+      "Property"
+    ],
+    "hiddenTags": [
+      "Shield",
+      "Burn"
+    ],
+    "customTags": [],
+    "size": "Large",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 3 items for 2 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 3 items for 2 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "This has double Shield."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heated: Heal equal to 5 times this item's Burn"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Heated: Poison equal to this item's Burn"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "This has double Burn."
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "This has +50% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Heated: Deal Damage equal to 5 times this item's Burn"
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown 7 seconds",
+      "Heated: Burn equal to 10% of your Shield.",
+      "At the start of each day, get a Gingerbread Man.",
+      "When you use another Food, gain (40/80) Shield."
     ]
   },
   {
@@ -92344,7 +102145,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -92597,13 +102398,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -92624,6 +102425,140 @@ const data: ParsedItemCard[] = [
       "Cooldown (9/8/7/6) seconds",
       "Deal 20 Damage",
       "Double this item's Damage for the fight"
+    ]
+  },
+  {
+    "id": "4fa001c3-dba5-40fa-9674-b61912fa8d2e",
+    "name": "Fruit Press",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 7 seconds",
+          "Destroy your leftmost Food for the fight.",
+          "Deal 10 Damage",
+          "When you Destroy one of your Food, double this item's Damage for the fight.",
+          "When you use a Food, this gains +5 Damage for the fight."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 7 seconds",
+          "Destroy your leftmost Food for the fight.",
+          "Deal 10 Damage",
+          "When you Destroy one of your Food, double this item's Damage for the fight.",
+          "When you use a Food, this gains +10 Damage for the fight."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 7 seconds",
+          "Destroy your leftmost Food for the fight.",
+          "Deal 10 Damage",
+          "When you Destroy one of your Food, double this item's Damage for the fight.",
+          "When you use a Food, this gains +15 Damage for the fight."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Tool",
+      "Weapon"
+    ],
+    "hiddenTags": [
+      "Damage"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow 2 items for 2 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 1 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste 2 items for 2 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield equal to this item's Damage"
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to this item's Damage"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to 5% of this item's Damage"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn equal to 5% of this item's Damage"
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "This has +50% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "This has double Damage."
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown 7 seconds",
+      "Destroy your leftmost Food for the fight.",
+      "Deal 10 Damage",
+      "When you Destroy one of your Food, double this item's Damage for the fight.",
+      "When you use a Food, this gains (+5/+10/+15) Damage for the fight."
     ]
   },
   {
@@ -92768,13 +102703,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -92893,13 +102828,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -92997,8 +102932,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Burn"
         ]
       },
       {
@@ -93022,13 +102956,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -93040,8 +102974,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Burn"
         ]
       }
     ],
@@ -93158,13 +103091,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -93186,6 +103119,141 @@ const data: ParsedItemCard[] = [
       "Ammo 1",
       "Deal (30/45/60/75) Damage",
       "This has (+1/+2/+3/+4) Max Ammo for each Toy you have."
+    ]
+  },
+  {
+    "id": "a8b604d0-de28-400f-8a4b-d5b29ccfba27",
+    "name": "Sorbet",
+    "startingTier": "Bronze",
+    "tiers": {
+      "Bronze": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Shield 20",
+          "Freeze an item for 1 second(s)",
+          "Chilled: When you Crit, Charge this 1 second."
+        ]
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Shield 40",
+          "Freeze an item for 1 second(s)",
+          "Chilled: When you Crit, Charge this 1 second."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Shield 60",
+          "Freeze an item for 1 second(s)",
+          "Chilled: When you Crit, Charge this 1 second."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Shield 80",
+          "Freeze an item for 1 second(s)",
+          "Chilled: When you Crit, Charge this 1 second."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Food"
+    ],
+    "hiddenTags": [
+      "Freeze",
+      "Shield"
+    ],
+    "customTags": [],
+    "size": "Small",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow an item for 2 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "This Freezes for twice as long."
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste an item for 2 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "This has double Shield."
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to this item's Shield"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to 5% of this item's Shield"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn equal to 5% of this item's Shield"
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "This has +50% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "Deal Damage equal to this item's Shield"
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown 5 seconds",
+      "Shield (20/40/60/80)",
+      "Freeze an item for 1 second(s)",
+      "Chilled: When you Crit, Charge this 1 second."
     ]
   },
   {
@@ -93384,13 +103452,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -93515,13 +103583,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -93649,13 +103717,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -93908,13 +103976,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -94028,13 +104096,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -94133,15 +104201,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Burn"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Burn"
         ]
       },
       {
@@ -94159,13 +104225,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -94177,8 +104243,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Burn"
         ]
       }
     ],
@@ -94284,13 +104349,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -94409,7 +104474,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -94645,7 +104710,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -94897,7 +104962,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -95029,13 +105094,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -95152,13 +105217,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -95284,13 +105349,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -95453,7 +105518,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -95580,13 +105645,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -95711,13 +105776,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -95923,15 +105988,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Poison"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Poison"
         ]
       },
       {
@@ -95949,13 +106012,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -95967,8 +106030,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Poison"
         ]
       }
     ],
@@ -95978,6 +106040,132 @@ const data: ParsedItemCard[] = [
       "Poison 10",
       "When you Freeze, Poison, or Burn, your items gain +5 Poison for the fight.",
       "When you use an adjacent Relic, Charge this 1 second."
+    ]
+  },
+  {
+    "id": "eaad7107-19ac-4f35-b1fb-9359ca33968d",
+    "name": "Pizza Cutter",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "Cooldown 5 seconds",
+          "Deal 10 Damage",
+          "Charge the Food to the right of this 1 second, if that Food is Heated instead charge it 2 seconds."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "Cooldown 4 seconds",
+          "Deal 10 Damage",
+          "Charge the Food to the right of this 1 second, if that Food is Heated instead charge it 2 seconds."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Cooldown 3 seconds",
+          "Deal 10 Damage",
+          "Charge the Food to the right of this 1 second, if that Food is Heated instead charge it 2 seconds."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Weapon",
+      "Tool"
+    ],
+    "hiddenTags": [
+      "Damage"
+    ],
+    "customTags": [],
+    "size": "Small",
+    "heroes": [
+      "Jules"
+    ],
+    "enchantments": [
+      {
+        "type": "Golden",
+        "tooltips": [
+          "This has double value."
+        ]
+      },
+      {
+        "type": "Heavy",
+        "tooltips": [
+          "Slow an item for 2 second(s)"
+        ]
+      },
+      {
+        "type": "Icy",
+        "tooltips": [
+          "Freeze an item for 0.5 second(s)"
+        ]
+      },
+      {
+        "type": "Turbo",
+        "tooltips": [
+          "Haste an item for 2 second(s)"
+        ]
+      },
+      {
+        "type": "Shielded",
+        "tooltips": [
+          "Shield equal to this item's Damage"
+        ]
+      },
+      {
+        "type": "Restorative",
+        "tooltips": [
+          "Heal equal to this item's Damage"
+        ]
+      },
+      {
+        "type": "Toxic",
+        "tooltips": [
+          "Poison equal to 5% of this item's Damage"
+        ]
+      },
+      {
+        "type": "Fiery",
+        "tooltips": [
+          "Burn equal to 5% of this item's Damage"
+        ]
+      },
+      {
+        "type": "Shiny",
+        "tooltips": [
+          "This has +1 Multicast."
+        ]
+      },
+      {
+        "type": "Deadly",
+        "tooltips": [
+          "This has +50% Crit Chance."
+        ]
+      },
+      {
+        "type": "Radiant",
+        "tooltips": [
+          "This item is immune to Freeze, Slow and Destroy."
+        ]
+      },
+      {
+        "type": "Obsidian",
+        "tooltips": [
+          "This has double Damage."
+        ]
+      }
+    ],
+    "quests": [],
+    "unifiedTooltips": [
+      "Cooldown (5/4/3) seconds",
+      "Deal 10 Damage",
+      "Charge the Food to the right of this 1 second, if that Food is Heated instead charge it 2 seconds."
     ]
   },
   {
@@ -96173,7 +106361,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -96306,13 +106494,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -96436,13 +106624,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -96567,13 +106755,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -96692,13 +106880,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -96795,15 +106983,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Poison"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Poison"
         ]
       },
       {
@@ -96821,7 +107007,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -96833,14 +107019,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Poison"
         ]
       }
     ],
@@ -96981,13 +107166,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -97261,7 +107446,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -97384,7 +107569,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -97396,7 +107581,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -97518,13 +107703,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -97638,13 +107823,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -97768,13 +107953,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -97984,15 +108169,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Burn"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Burn"
         ]
       },
       {
@@ -98010,13 +108193,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -98028,8 +108211,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Burn"
         ]
       }
     ],
@@ -98114,15 +108296,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Regen"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Regen"
         ]
       },
       {
@@ -98140,7 +108320,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -98152,14 +108332,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Regen"
         ]
       }
     ],
@@ -98290,7 +108469,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -98420,7 +108599,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -98547,7 +108726,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -98674,13 +108853,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -98780,15 +108959,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "Shield equal to 5 times this item's Burn"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "Heal equal to 5 times this item's Burn"
         ]
       },
       {
@@ -98806,13 +108983,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -98824,8 +109001,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "Deal Damage equal to 5 times this item's Burn"
         ]
       }
     ],
@@ -98903,15 +109079,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "+NaN Shield",
-          "0 Shield"
+          "When you use a Weapon, Shield equal to 5 times this item's Poison."
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "+NaN Heal",
-          "0 Heal"
+          "When you use a Weapon, Heal equal to 5 times this item's Poison."
         ]
       },
       {
@@ -98947,8 +109121,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "+NaN Damage",
-          "0 Damage"
+          "When you use a Weapon, deal Damage equal to 5 times this item's Poison."
         ]
       }
     ],
@@ -99176,13 +109349,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -99303,13 +109476,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -99433,13 +109606,13 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
@@ -99559,7 +109732,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shiny",
         "tooltips": [
-          "+1 Multicast"
+          "This has +1 Multicast."
         ]
       },
       {
@@ -99571,7 +109744,7 @@ const data: ParsedItemCard[] = [
       {
         "type": "Deadly",
         "tooltips": [
-          "+50% Crit Chance"
+          "This has +50% Crit Chance."
         ]
       },
       {
