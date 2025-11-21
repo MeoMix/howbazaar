@@ -582,21 +582,6 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
             let rawTooltips = enchantment.Localization.Tooltips
                 .map(tooltip => tooltip.Content.Text).filter((tooltip): tooltip is string => tooltip !== undefined && tooltip !== null) ?? [];
 
-            // TODO: I don't think this rationale is correct anymore. It seems like this is more the rule than the exception now. Previously it was an exception.
-            // Sometimes enchantments contain tooltips which aren't valid, but we can construct valid tooltips from the underlying data.
-            // Detect this by finding tooltips which rely on looking up enchantment attributes by detecting enchantment attribute templating
-            // in the tooltip string. Then, if the corresponding aura would modify the card itself, we know it's weird there's a tooltip
-            // because the information can be constructed from already existing attributes.
-            rawTooltips = rawTooltips.filter((tooltip) => {
-                const matches = [...tooltip.matchAll(auraPattern)]; // Convert matchAll iterator to an array
-                if (matches.length === 0) return true;
-
-                const hasEnchantmentAura = matches.some(match => /\.e/.test(match[0]));
-                if (!hasEnchantmentAura) return false;
-
-                return true;
-            });
-
             // In scenarios involving enchantment tooltips, we might need to (rarely) rely on attribute values from the item itself.
             // This occurs with Restorative Security Camera.
             // Can't always merge starting attributes, though, because in other scenarios we need to manually construct tooltips 
