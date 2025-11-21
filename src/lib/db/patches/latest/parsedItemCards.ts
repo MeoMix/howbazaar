@@ -109473,13 +109473,15 @@ const data: ParsedItemCard[] = [
       {
         "type": "Shielded",
         "tooltips": [
-          "When you use a Weapon, Shield equal to 5 times this item's Poison."
+          "+NaN Shield",
+          "0 Shield"
         ]
       },
       {
         "type": "Restorative",
         "tooltips": [
-          "When you use a Weapon, Heal equal to 5 times this item's Poison."
+          "+NaN Heal",
+          "0 Heal"
         ]
       },
       {
@@ -109515,7 +109517,8 @@ const data: ParsedItemCard[] = [
       {
         "type": "Obsidian",
         "tooltips": [
-          "When you use a Weapon, deal Damage equal to 5 times this item's Poison."
+          "+NaN Damage",
+          "0 Damage"
         ]
       }
     ],
