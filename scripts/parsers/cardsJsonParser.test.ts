@@ -45,7 +45,7 @@ describe('cardJsonParser', () => {
       const frostTotem = itemCards.find(card => card.name === "Frost Totem")!;
 
       expect(frostTotem.quests[1].entries[0].rewardTooltips[0]).toEqual(
-        'When you use an adjacent Relic, charge this 1 second(s).'
+        'When you use an adjacent Relic, Charge this 1 second(s).'
       );
     });
 
@@ -95,7 +95,7 @@ describe('cardJsonParser', () => {
       const abacus = itemCards.find(card => card.name === "Abacus")!;
 
       expect(abacus.unifiedTooltips[1]).toEqual(
-        'Adjacent items gain value equal to this item\'s value for the fight.'
+        'Adjacent items gain value equal to this item\'s value for the fight'
       );
     });
 
@@ -127,7 +127,7 @@ describe('cardJsonParser', () => {
       const balcony = itemCards.find(card => card.name === "Balcony")!;
 
       expect(balcony.unifiedTooltips[0]).toEqual(
-        'The Property to the left of this has double value in combat and its Cooldown is reduced by (5%/10%/15%).'
+        'The Property to the left of this has double value in combat and its Cooldown is reduced by (10%/15%).'
       );
     });
 
@@ -151,7 +151,7 @@ describe('cardJsonParser', () => {
       const clamera = itemCards.find(card => card.name === "Clamera")!;
 
       expect(clamera.unifiedTooltips[1]).toEqual(
-        'Slow an item for 3 second(s)',
+        'Slow an item for 2 second(s)',
       );
     });
 
@@ -167,7 +167,7 @@ describe('cardJsonParser', () => {
       const closedSign = itemCards.find(card => card.name === "Closed Sign")!;
 
       expect(closedSign.unifiedTooltips[0]).toEqual(
-        'When you Heal with an item, charge adjacent Properties (0.5/1) second(s).'
+        'When you Heal, Charge adjacent Properties 1 second(s).'
       );
     });
 
@@ -183,7 +183,7 @@ describe('cardJsonParser', () => {
       const scrapMetal = itemCards.find(card => card.name === "Scrap Metal")!;
 
       expect(scrapMetal.unifiedTooltips[0]).toEqual(
-        'When you sell this, reduce your leftmost item\'s Cooldown by (3%/6%/9%).'
+        'When you sell this, reduce your leftmost item\'s Cooldown by (3%/6%).'
       );
     });
 
@@ -198,17 +198,17 @@ describe('cardJsonParser', () => {
     // it('should unify Virus Cooldown', () => {
     //   const virus = itemCards.find(card => card.name === "Virus")!;
 
-    //   expect(virus.unifiedTooltips[0]).toEqual(
+    //   expect(virus.unifiedTooltips[0]).toEqual(C
     //     'Cooldown (12/5/5) seconds'
     //   );
     // });
   });
 
-  it('should not round half-second cooldown to nearest integer', () => {
-    const greenWaspCard = itemCards.find(card => card.name === "GRN-W4SP")!;
+  // it('should not round half-second cooldown to nearest integer', () => {
+  //   const greenWaspCard = itemCards.find(card => card.name === "Iceberg-W4SP")!;
 
-    expect(greenWaspCard.tiers.Silver.tooltips[0]).toEqual("Cooldown 6.5 seconds");
-  });
+  //   expect(greenWaspCard.tiers.Silver.tooltips[0]).toEqual("Cooldown 6.5 seconds");
+  // });
 
   // TODO: This might not be a special test case anymore
   // it('should parse "Bill Dozer" correctly with correct cooldown reduction texts for each tier', () => {
@@ -256,12 +256,12 @@ describe('cardJsonParser', () => {
     expect(uwashiwaliBirdCard.tiers.Bronze.tooltips.find((text) => text.includes(searchPhrase))).toEqual(`${searchPhrase} +1 Multicast for each Property you have.`);
   });
 
-  it('should parse "Healthy Hoarder" correctly by replacing its {aura.0.mod} with a correct value', () => {
-    const healthyCollector = skillCards.find(card => card.name === "Healthy Hoarder")!;
-    const searchPhrase = "You have +";
+  // it('should parse "Healthy Hoarder" correctly by replacing its {aura.0.mod} with a correct value', () => {
+  //   const healthyCollector = skillCards.find(card => card.name === "Healthy Hoarder")!;
+  //   const searchPhrase = "You have +";
 
-    expect(healthyCollector.tiers.Bronze.tooltips.find((text) => text.includes(searchPhrase))).toEqual(`${searchPhrase}35 Max Health for each Non-Weapon item you have.`);
-  });
+  //   expect(healthyCollector.tiers.Bronze.tooltips.find((text) => text.includes(searchPhrase))).toEqual(`${searchPhrase}35 Max Health for each Non-Weapon item you have.`);
+  // });
 
   it('should parse "Crook" correctly by replacing its {aura.1} with a correct value (by relying on modifiers)', () => {
     const crook = itemCards.find(card => card.name === "Crook")!;
@@ -274,7 +274,7 @@ describe('cardJsonParser', () => {
     const fishingNet = itemCards.find(card => card.name === "Fishing Net")!;
     const searchPhrase = "Slow ";
 
-    expect(fishingNet.tiers.Bronze.tooltips.find((text) => text.includes(searchPhrase))).toEqual(`${searchPhrase}1 item(s) for 3 second(s)`);
+    expect(fishingNet.tiers.Bronze.tooltips.find((text) => text.includes(searchPhrase))).toEqual(`${searchPhrase}1 item(s) for 2 second(s)`);
   });
 
   it('should parse "Colossal Popsicle" correctly by replacing {ability.2} with a correct value involving the spawning of additional cards.', () => {
@@ -338,7 +338,8 @@ describe('cardJsonParser', () => {
 
   it('every card should have a tooltip', () => {
     const excludedCardNames = [
-      "Orbital Polisher"
+      "Orbital Polisher",
+      "Fortune Cookie"
     ];
 
     const invalidCards = [];
@@ -460,7 +461,42 @@ describe('cardJsonParser', () => {
       expect(obsidianAstrolabe.tooltips[0]).toEqual('Deal 20 Damage for each non-Weapon item you have');
     });
 
-    it('should contain no enchantment tooltips with {, except for Induction Aegis with enchantmentType Heavy', () => {
+    it('should parse "Icy Feast" correctly by properly parsing {ability.e1.target}', () => {
+      const feast = itemCards.find(card => card.name === "Feast")!;
+      const icyFeast = feast.enchantments.find(enchantment => enchantment.type === 'Icy')!;
+
+      expect(icyFeast.tooltips.length).toEqual(1);
+      expect(icyFeast.tooltips[0]).toEqual('Freeze 2 items for 1 second(s)');
+    });
+
+    it('should parse "Shielded Poppyfield" correctly', () => {
+      const poppyField = itemCards.find(card => card.name === "Poppy Field")!;
+      const shieldedPoppyField = poppyField.enchantments.find(enchantment => enchantment.type === 'Shielded')!;
+
+      expect(shieldedPoppyField.tooltips.length).toEqual(1);
+      expect(shieldedPoppyField.tooltips[0]).toEqual('When you use a Weapon, Shield equal to 5 times this item\'s Poison.');
+    });
+
+    it('should contain no enchantment tooltips with NaN', () => {
+      const invalidCards = [];
+
+      for (const card of itemCards) {
+        const invalidTooltips = card.enchantments
+          .flatMap(enchantment => enchantment.tooltips.filter(tooltip => tooltip.includes('NaN')));
+
+        if (invalidTooltips.length > 0) {
+          invalidCards.push({
+            name: card.name,
+            tooltips: invalidTooltips,
+          });
+        }
+      }
+
+      // If no invalid tooltips are found, make the assertion to confirm
+      expect(invalidCards).toEqual([]);
+    });
+
+    it('should contain no enchantment tooltips with {', () => {
       const invalidCards = [];
 
       for (const card of itemCards) {

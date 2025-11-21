@@ -21,6 +21,10 @@ const args = process.argv.slice(2);
 const shouldExtract = !args.includes('--no-extract');
 
 const nameToFileMap: { [key: string]: string } = {
+    // Oh hell yeah we're mapping to a Cyrillic character
+    'SeafoodCracker': 'SeafoodСracker',
+    'TrailMix': 'AlienTrailMix',
+    'Slushee': 'Juleppe',
     'CloudWhisp': 'CloudWisp',
     'ClockworkDisc': 'Disc',
     'Daggerwing': 'Dreadnought',
@@ -192,6 +196,15 @@ async function processCardDataFiles(): Promise<ExpectedImage[]> {
                 'TomeOfTime': '0c1d2e3f-4a5b-6c7d-8e9f-0a1b2c3d4e5f',
                 'LargeRelic': '41581a59-fd9b-42c6-a97e-9b5587b9cbdf',
                 'DeIcingCart': '334ee28f-cec4-431a-aaef-19bdcba5cbcc',
+                'OblivionCannon': '9131ed9a-ec14-4426-a811-ed2dc5e21eb7',
+                'RainbowStaff': '60ee95b7-92bb-4ef6-9c42-2fd52c820b95',
+                'BoomBoomBot': 'f321478b-7741-4d36-a567-ef428ad11ea9',
+                'Santoku': '080c161b-92b3-4df8-9b97-daf5d10bf85b',
+                'FlameJetDrone': '437a6ee6-741d-4119-931a-8a2662cf038e',
+                'FoulMushroom': '0b0f984c-281a-4629-bb72-c745888c1ea6',
+                'TugDrone': '490cc4cf-fd8b-4517-b3a9-f7acf604b97c',
+                'RefuelingPlane': 'd8199e77-6687-4fe7-b6a7-2d3e34145bf3',
+                'PickerDrone': 'c47744c9-d3bd-42ba-ae49-5fbff2f5d785',
                 // Balance doesn't exist as a card in-game, but it does have a CardData file, and its GUID points to "Scales"
                 'Balance': '',
                 'OblivionCore': '',

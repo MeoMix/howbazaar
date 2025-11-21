@@ -69,7 +69,8 @@ async function main() {
 
         console.log(storedTimestamp ? 'New data available, downloading...' : 'No timestamp file found, downloading...');
 
-        // Make sure output directory exists
+        // Make sure output directory exists and is clean to prevent old install data (like image assets) leaking over into new installs.
+        await fsp.rm(OUTPUT_DIR, { recursive: true, force: true });
         await fsp.mkdir(OUTPUT_DIR, { recursive: true });
 
         await downloadWithProgress(GAME_URL, OUTPUT_FILE);

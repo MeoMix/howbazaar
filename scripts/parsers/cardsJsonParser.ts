@@ -216,7 +216,7 @@ function getTierMap(card: (ValidItemCard | ValidSkillCard)) {
 
 // NOTE: intentionally use a loose regex match because sometimes the JSON data contains typos.
 // const abilityPattern = /\{a\w{0,5}y\.(\w+)(\s*\.targets)?\}/gi;
-const abilityPattern = /\{a\w{0,5}y\.(\w+)(\.targets|\.?)\|?(%)?\}/gi;
+const abilityPattern = /\{a\w{0,5}y\.(\w+)(\.targets?|\.?)\|?(%)?\}/gi;
 
 // Unified pattern for {aura.<id>}, {aura.<id>.mod}, and {aura.<id>.}
 // {aura<id>.} is a typo of {aura.<id>} and should be handled the same
@@ -228,7 +228,10 @@ function replaceTemplatingWithValues(tooltip: string, abilities: Ability[], aura
 
         let abilityValue;
         if (ability) {
-            const attributeInfo = getAttributeInfo(ability.Action, attributes, { isMod: false, isTargets: suffix === ".targets" });
+            // Support "target" or "targets" because Icy Feast is using "target" (incorrectly)
+            const isTargets = suffix && suffix.startsWith('.target');
+            // TODO: .target supported is needed for Icy Feast
+            const attributeInfo = getAttributeInfo(ability.Action, attributes, { isMod: false, isTargets });
             abilityValue = attributeInfo?.value;
         }
 
@@ -503,6 +506,8 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
         const auras = Object.values(card.Auras);
         const tierMap = getTierMap(card);
 
+
+
         // TODO: Example text here.
         // Example: "foo bar" - this is a silly example to showcase Cursor's amazing code editing capabilities!
 
@@ -552,6 +557,10 @@ function parseItemCards(cardsJson: CardsJson): ParsedItemCard[] {
                     type: enchantmentType,
                     tooltips: []
                 };
+            }
+
+            if (card.Localization.Title.Text === "Poppy Field" && enchantmentType === "Shielded") {
+                debugger;
             }
 
             const enchantmentAbilities = Object.values(enchantment.Abilities).filter(item => item.Action) as Ability[];
