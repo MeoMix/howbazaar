@@ -135,7 +135,8 @@ const data: ParsedMerchantCard[] = [
     "name": "Herma",
     "heroes": [
       "Pygmalien",
-      "Mak"
+      "Mak",
+      "Jules"
     ],
     "description": "Sells Heal and Regen items"
   },
