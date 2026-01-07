@@ -186,7 +186,8 @@ const data: ParsedMerchantCard[] = [
       "Dooley",
       "Vanessa",
       "Mak",
-      "Jules"
+      "Jules",
+      "Stelle"
     ],
     "description": "Sells Haste, Slow and Cooldown items."
   },

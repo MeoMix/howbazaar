@@ -286,7 +286,8 @@ const data: ParsedSkillCard[] = [
     "customTags": [],
     "size": "Medium",
     "heroes": [
-      "Dooley"
+      "Dooley",
+      "Pygmalien"
     ],
     "artKey": "Icon_Skill_Incinerate.png",
     "unifiedTooltips": [
@@ -1145,6 +1146,47 @@ const data: ParsedSkillCard[] = [
     ]
   },
   {
+    "id": "c6619a2a-642e-4d2b-9008-2ad9ecb9c5cc",
+    "name": "Virulent Toxins",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "The first 4 times you use a Relic each fight, Poison 5."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "The first 8 times you use a Relic each fight, Poison 5."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "The first 12 times you use a Relic each fight, Poison 5."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "Poison"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Mak"
+    ],
+    "artKey": "Icon_Skill_MAK_ToxicRegeneration",
+    "unifiedTooltips": [
+      "The first (4/8/12) times you use a Relic each fight, Poison 5."
+    ]
+  },
+  {
     "id": "2c637e34-ea4d-4532-9118-fddd9e637342",
     "name": "Improvised Heal",
     "startingTier": "Silver",
@@ -1563,7 +1605,8 @@ const data: ParsedSkillCard[] = [
     "heroes": [
       "Dooley",
       "Jules",
-      "Stelle"
+      "Stelle",
+      "Pygmalien"
     ],
     "artKey": "Icon_Skill_GreaseFire.png",
     "unifiedTooltips": [
@@ -1845,7 +1888,8 @@ const data: ParsedSkillCard[] = [
       "Dooley",
       "Jules",
       "Stelle",
-      "Mak"
+      "Mak",
+      "Pygmalien"
     ],
     "artKey": "Icon_Skill_FirstFlames.png",
     "unifiedTooltips": [
@@ -3077,7 +3121,6 @@ const data: ParsedSkillCard[] = [
     "size": "Medium",
     "heroes": [
       "Vanessa",
-      "Stelle",
       "Mak",
       "Jules"
     ],
@@ -4101,6 +4144,49 @@ const data: ParsedSkillCard[] = [
     ]
   },
   {
+    "id": "18cd63c6-6235-45f5-b4e9-74f19fcf9edc",
+    "name": "Tool Fight",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "The first time your enemy uses an item each fight, 1 of your Tools starts Flying."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "The first time your enemy uses an item each fight, 2 of your Tools starts Flying."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "The first time your enemy uses an item each fight, 3 of your Tools starts Flying."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Tool"
+    ],
+    "hiddenTags": [
+      "Flying"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Stelle"
+    ],
+    "artKey": "Icon_Skill_STE_ToolFight",
+    "unifiedTooltips": [
+      "The first time your enemy uses an item each fight, (1/2/3) of your Tools starts Flying."
+    ]
+  },
+  {
     "id": "c2e26fae-a435-44ff-8613-8977247ee972",
     "name": "Intrusion Countermeasures",
     "startingTier": "Diamond",
@@ -4135,6 +4221,44 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_DOO_IntrusionCountermeasures.png",
     "unifiedTooltips": [
       "The first time you fall below half Health in a fight, use your Friends."
+    ]
+  },
+  {
+    "id": "3618e79d-de41-4c92-9ea5-55d1f79b8330",
+    "name": "Emergency Landing",
+    "startingTier": "Diamond",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": []
+      },
+      "Diamond": {
+        "tooltips": [
+          "The first time you fall below half Health each fight, Heal 5% of your Max Health for each of your Flying items, then your items stop Flying."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "FlyingReference",
+      "Health"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Stelle"
+    ],
+    "artKey": "Icon_Skill_STE_EmergencyLanding",
+    "unifiedTooltips": [
+      "The first time you fall below half Health each fight, Heal 5% of your Max Health for each of your Flying items, then your items stop Flying."
     ]
   },
   {
@@ -4440,12 +4564,12 @@ const data: ParsedSkillCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "You have +20 Regen for each non-Weapon item you have."
+          "You have +10 Regen for each non-Weapon item you have."
         ]
       },
       "Gold": {
         "tooltips": [
-          "You have +30 Regen for each non-Weapon item you have."
+          "You have +20 Regen for each non-Weapon item you have."
         ]
       },
       "Diamond": {
@@ -4468,7 +4592,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_MON_WatersofInfinity.png",
     "unifiedTooltips": [
-      "You have (+20/+30/+40) Regen for each non-Weapon item you have."
+      "You have (+10/+20/+40) Regen for each non-Weapon item you have."
     ]
   },
   {
@@ -5478,17 +5602,17 @@ const data: ParsedSkillCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "Your leftmost Weapon is a Relic and your Dinosaur and Relic Weapons deal +20 Damage."
+          "Your leftmost Weapon is a Relic and your Dinosaur and Relic Weapons deal +15 Damage."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Your leftmost Weapon is a Relic and your Dinosaur and Relic Weapons deal +30 Damage."
+          "Your leftmost Weapon is a Relic and your Dinosaur and Relic Weapons deal +20 Damage."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Your leftmost Weapon is a Relic and your Dinosaur and Relic Weapons deal +40 Damage."
+          "Your leftmost Weapon is a Relic and your Dinosaur and Relic Weapons deal +25 Damage."
         ]
       },
       "Legendary": {
@@ -5509,7 +5633,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_DOO_PrimalRage",
     "unifiedTooltips": [
-      "Your leftmost Weapon is a Relic and your Dinosaur and Relic Weapons deal (+10/+20/+30/+40) Damage."
+      "Your leftmost Weapon is a Relic and your Dinosaur and Relic Weapons deal (+10/+15/+20/+25) Damage."
     ]
   },
   {
@@ -6057,6 +6181,43 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_DOO_WarmHugs.png",
     "unifiedTooltips": [
       "The first (4/8/12) times you use a Friend each fight, Burn 5."
+    ]
+  },
+  {
+    "id": "e8d23247-5164-4096-a4cc-db5bb2a5277d",
+    "name": "I Would Eat That",
+    "startingTier": "Diamond",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": []
+      },
+      "Diamond": {
+        "tooltips": [
+          "Your leftmost item is a Food."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Food"
+    ],
+    "hiddenTags": [],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Jules"
+    ],
+    "artKey": "Icon_Skill_JUL_IWouldEatIt",
+    "unifiedTooltips": [
+      "Your leftmost item is a Food."
     ]
   },
   {
@@ -6785,6 +6946,47 @@ const data: ParsedSkillCard[] = [
     ]
   },
   {
+    "id": "8f33e0aa-7912-4c77-9a10-609e5ce0f4e7",
+    "name": "Leverage Momentum",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "When an item is destroyed, 1 of your item(s) start Flying."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "When an item is destroyed, 2 of your item(s) start Flying."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "When an item is destroyed, 3 of your item(s) start Flying."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "Flying"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Stelle"
+    ],
+    "artKey": "Icon_Skill_STE_LeverageMomentum",
+    "unifiedTooltips": [
+      "When an item is destroyed, (1/2/3) of your item(s) start Flying."
+    ]
+  },
+  {
     "id": "9cd3f8a9-3ca8-482b-8f4c-79f9d1d3400e",
     "name": "Trader",
     "startingTier": "Gold",
@@ -7413,13 +7615,16 @@ const data: ParsedSkillCard[] = [
   {
     "id": "cbd2810c-4713-4503-a97d-30e73ccaebb7",
     "name": "Toxic Flame",
-    "startingTier": "Gold",
+    "startingTier": "Silver",
     "tiers": {
       "Bronze": {
         "tooltips": []
       },
       "Silver": {
-        "tooltips": []
+        "tooltips": [
+          "When you Burn, your Poison items gain +1 Poison for the fight.",
+          "When you Poison, your Burn items gain +1 Burn for the fight."
+        ]
       },
       "Gold": {
         "tooltips": [
@@ -7451,8 +7656,8 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_ToxicFlame.png",
     "unifiedTooltips": [
-      "When you Burn, your Poison items gain (+2/+3) Poison for the fight.",
-      "When you Poison, your Burn items gain (+2/+3) Burn for the fight."
+      "When you Burn, your Poison items gain (+1/+2/+3) Poison for the fight.",
+      "When you Poison, your Burn items gain (+1/+2/+3) Burn for the fight."
     ]
   },
   {
@@ -7628,7 +7833,8 @@ const data: ParsedSkillCard[] = [
     "customTags": [],
     "size": "Medium",
     "heroes": [
-      "Dooley"
+      "Dooley",
+      "Pygmalien"
     ],
     "artKey": "Icon_Skill_BurningShield.png",
     "unifiedTooltips": [
@@ -7847,6 +8053,49 @@ const data: ParsedSkillCard[] = [
     ]
   },
   {
+    "id": "99e9d968-218c-405a-9d82-5692190dfd3d",
+    "name": "Plowshares to Swords",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "When you use a Tool, Weapons adjacent to it gain +3 Damage for the fight."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "When you use a Tool, Weapons adjacent to it gain +6 Damage for the fight."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "When you use a Tool, Weapons adjacent to it gain +9 Damage for the fight."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Weapon",
+      "Tool"
+    ],
+    "hiddenTags": [],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Jules",
+      "Stelle"
+    ],
+    "artKey": "Icon_Skill_JUL_PlowsharestoSwords",
+    "unifiedTooltips": [
+      "When you use a Tool, Weapons adjacent to it gain (+3/+6/+9) Damage for the fight."
+    ]
+  },
+  {
     "id": "a9b441e1-5824-4855-9359-2ab4643d9ff5",
     "name": "Toxic Shield",
     "startingTier": "Silver",
@@ -7928,7 +8177,8 @@ const data: ParsedSkillCard[] = [
     "heroes": [
       "Vanessa",
       "Pygmalien",
-      "Jules"
+      "Jules",
+      "Stelle"
     ],
     "artKey": "Icon_Skill_ArmsDealer.png",
     "unifiedTooltips": [
@@ -8140,6 +8390,47 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_DOO_AncientTechnology",
     "unifiedTooltips": [
       "Your Relics are Tech."
+    ]
+  },
+  {
+    "id": "4c03126d-f0d6-44f4-8269-5133fb221c4f",
+    "name": "Toxic Regeneration",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "The first 4 times you use a Relic each fight, Poison 5."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "The first 8 times you use a Relic each fight, Poison 5."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "The first 12 times you use a Relic each fight, Poison 5."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "Poison"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Mak"
+    ],
+    "artKey": "Icon_Skill_MAK_ToxicRegeneration",
+    "unifiedTooltips": [
+      "The first (4/8/12) times you use a Relic each fight, Poison 5."
     ]
   },
   {
@@ -9887,17 +10178,17 @@ const data: ParsedSkillCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "While you are Shielded, your Weapons' Cooldowns are are reduced by 5%."
+          "While you are Shielded, your Weapons' Cooldowns are reduced by 5%."
         ]
       },
       "Gold": {
         "tooltips": [
-          "While you are Shielded, your Weapons' Cooldowns are are reduced by 10%."
+          "While you are Shielded, your Weapons' Cooldowns are reduced by 10%."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "While you are Shielded, your Weapons' Cooldowns are are reduced by 15%."
+          "While you are Shielded, your Weapons' Cooldowns are reduced by 15%."
         ]
       },
       "Legendary": {
@@ -9919,7 +10210,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_MON_GuardiansFury",
     "unifiedTooltips": [
-      "While you are Shielded, your Weapons' Cooldowns are are reduced by (5%/10%/15%)."
+      "While you are Shielded, your Weapons' Cooldowns are reduced by (5%/10%/15%)."
     ]
   },
   {
@@ -9967,6 +10258,47 @@ const data: ParsedSkillCard[] = [
     ]
   },
   {
+    "id": "583ea575-9e9c-4d56-a9a4-da41b943301d",
+    "name": "Hungry Blades",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "The first 4 times you use a Relic each fight, Poison 5."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "The first 8 times you use a Relic each fight, Poison 5."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "The first 12 times you use a Relic each fight, Poison 5."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "Poison"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Mak"
+    ],
+    "artKey": "Icon_Skill_MAK_HungryBlades",
+    "unifiedTooltips": [
+      "The first (4/8/12) times you use a Relic each fight, Poison 5."
+    ]
+  },
+  {
     "id": "b6936741-8ec9-42f1-a6ec-d76061141f7d",
     "name": "Vital Reserve",
     "startingTier": "Bronze",
@@ -10004,7 +10336,6 @@ const data: ParsedSkillCard[] = [
     "heroes": [
       "Pygmalien",
       "Mak",
-      "Stelle",
       "Jules"
     ],
     "artKey": "Icon_Skill_StandardizedCare.png",
@@ -12377,7 +12708,6 @@ const data: ParsedSkillCard[] = [
     "heroes": [
       "Pygmalien",
       "Mak",
-      "Stelle",
       "Jules"
     ],
     "artKey": "Icon_Skill_MedicalWard.png",
@@ -12992,6 +13322,47 @@ const data: ParsedSkillCard[] = [
     ]
   },
   {
+    "id": "9a913c7c-f3f4-4d53-9d14-853822c2f71e",
+    "name": "Ancient Weapons",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "The first 4 times you use a Relic each fight, Poison 5."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "The first 8 times you use a Relic each fight, Poison 5."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "The first 12 times you use a Relic each fight, Poison 5."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "Poison"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Mak"
+    ],
+    "artKey": "Icon_Skill_MAK_AncientWeapons",
+    "unifiedTooltips": [
+      "The first (4/8/12) times you use a Relic each fight, Poison 5."
+    ]
+  },
+  {
     "id": "ab4d7a85-3eb2-43e8-aa11-f94581f5690f",
     "name": "Living Flame",
     "startingTier": "Diamond",
@@ -13026,7 +13397,8 @@ const data: ParsedSkillCard[] = [
       "Dooley",
       "Mak",
       "Jules",
-      "Stelle"
+      "Stelle",
+      "Pygmalien"
     ],
     "artKey": "Icon_Skill_LivingFlame.png",
     "unifiedTooltips": [
@@ -14076,6 +14448,43 @@ const data: ParsedSkillCard[] = [
     ]
   },
   {
+    "id": "464e7a29-ef42-4242-9adc-9e99b9299a58",
+    "name": "It's a Drone",
+    "startingTier": "Diamond",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": []
+      },
+      "Diamond": {
+        "tooltips": [
+          "Your leftmost item is a Drone."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Drone"
+    ],
+    "hiddenTags": [],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Stelle"
+    ],
+    "artKey": "Icon_Skill_STE_ItsaDrone",
+    "unifiedTooltips": [
+      "Your leftmost item is a Drone."
+    ]
+  },
+  {
     "id": "9b8912ec-1219-4cdf-acd5-cf9b73438280",
     "name": "Net Launcher",
     "startingTier": "Silver",
@@ -14471,22 +14880,24 @@ const data: ParsedSkillCard[] = [
   {
     "id": "0e790e41-203a-4b07-8a06-352a2070588d",
     "name": "War Chef",
-    "startingTier": "Gold",
+    "startingTier": "Silver",
     "tiers": {
       "Bronze": {
         "tooltips": []
       },
       "Silver": {
-        "tooltips": []
-      },
-      "Gold": {
         "tooltips": [
           "Your Weapons have +10 damage for each Food item you have."
         ]
       },
-      "Diamond": {
+      "Gold": {
         "tooltips": [
           "Your Weapons have +20 damage for each Food item you have."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Your Weapons have +30 damage for each Food item you have."
         ]
       },
       "Legendary": {
@@ -14506,7 +14917,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_JUL_ChefOfWar",
     "unifiedTooltips": [
-      "Your Weapons have (+10/+20) damage for each Food item you have."
+      "Your Weapons have (+10/+20/+30) damage for each Food item you have."
     ]
   },
   {
@@ -14676,6 +15087,47 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_RapidRelief.png",
     "unifiedTooltips": [
       "While your enemy has more Health than you, your Heal and Regen items' Cooldowns are reduced by (5%/10%/15%)."
+    ]
+  },
+  {
+    "id": "2aca51d6-c6c8-43d5-98d0-88741d996378",
+    "name": "Catalytic Converter",
+    "startingTier": "Silver",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": [
+          "The first 4 times you use a Relic each fight, Poison 5."
+        ]
+      },
+      "Gold": {
+        "tooltips": [
+          "The first 8 times you use a Relic each fight, Poison 5."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "The first 12 times you use a Relic each fight, Poison 5."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "Poison"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Mak"
+    ],
+    "artKey": "Icon_Skill_MAK_CatalyticConverter",
+    "unifiedTooltips": [
+      "The first (4/8/12) times you use a Relic each fight, Poison 5."
     ]
   },
   {
@@ -15452,10 +15904,12 @@ const data: ParsedSkillCard[] = [
   {
     "id": "5fca38e0-2144-422d-b9bd-85a3cd443215",
     "name": "Expert Pilot",
-    "startingTier": "Silver",
+    "startingTier": "Bronze",
     "tiers": {
       "Bronze": {
-        "tooltips": []
+        "tooltips": [
+          "Your Vehicles and Drones have +15 Damage and Shield."
+        ]
       },
       "Silver": {
         "tooltips": [
@@ -15464,12 +15918,12 @@ const data: ParsedSkillCard[] = [
       },
       "Gold": {
         "tooltips": [
-          "Your Vehicles and Drones have +40 Damage and Shield."
+          "Your Vehicles and Drones have +45 Damage and Shield."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Your Vehicles and Drones have +50 Damage and Shield."
+          "Your Vehicles and Drones have +60 Damage and Shield."
         ]
       },
       "Legendary": {
@@ -15491,7 +15945,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_Flagship.png",
     "unifiedTooltips": [
-      "Your Vehicles and Drones have (+30/+40/+50) Damage and Shield."
+      "Your Vehicles and Drones have (+15/+30/+45/+60) Damage and Shield."
     ]
   },
   {
@@ -15656,6 +16110,43 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_MON_Lurk_01.png",
     "unifiedTooltips": [
       "If you have only one Medium item, its Cooldown is reduced by 25%."
+    ]
+  },
+  {
+    "id": "f67ea56d-22cf-4048-a321-d42688642875",
+    "name": "Barrel Roll",
+    "startingTier": "Diamond",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": []
+      },
+      "Diamond": {
+        "tooltips": [
+          "When you use a Flying item, an item adjacent to it starts Flying."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "Flying"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Stelle"
+    ],
+    "artKey": "Icon_Skill_STE_DisplacementRoll",
+    "unifiedTooltips": [
+      "When you use a Flying item, an item adjacent to it starts Flying."
     ]
   },
   {

@@ -208,6 +208,10 @@ const data: ParsedCombatEncounterCard[] = [
     "name": "Test Subject Alpha"
   },
   {
+    "id": "be111234-2b9f-4e30-b0d6-368c49780faa",
+    "name": "Mutant Baker"
+  },
+  {
     "id": "d50543f3-132c-4c43-9230-50a5e96087d9",
     "name": "Loan Shark"
   },
@@ -542,6 +546,10 @@ const data: ParsedCombatEncounterCard[] = [
   {
     "id": "8b8ac0e2-565f-475a-b944-018627ee321c",
     "name": "PvP Encounter - End of Day"
+  },
+  {
+    "id": "756baedb-c5a7-4912-adb5-00bb850c7847",
+    "name": "Castaway Corsair"
   },
   {
     "id": "91c233ed-b88c-4ec9-b3ee-cec880a14213",
