@@ -156,6 +156,10 @@ const data: ParsedCombatEncounterCard[] = [
     "name": "Product Demonstrator"
   },
   {
+    "id": "10504dc3-99cf-46be-b8ac-ea0be24c7b0b",
+    "name": "Augmented Hellbilly"
+  },
+  {
     "id": "bb1e3506-3735-4669-be90-915a55a7ee05",
     "name": "Fanged Inglet"
   },
@@ -336,6 +340,10 @@ const data: ParsedCombatEncounterCard[] = [
     "name": "Rex Spex"
   },
   {
+    "id": "4ef60802-3b84-482a-8ba5-640534a94c64",
+    "name": "The Vessel"
+  },
+  {
     "id": "96c9ede1-34f3-442c-89d3-befbef196729",
     "name": "Gibbus"
   },
@@ -458,6 +466,10 @@ const data: ParsedCombatEncounterCard[] = [
   {
     "id": "ae118438-c54d-4129-98d1-b576e4a4d380",
     "name": "Preening Duelist"
+  },
+  {
+    "id": "7718437a-cc2e-44d0-b3f1-4a370ea84fdc",
+    "name": "Conspiracy Theorist"
   },
   {
     "id": "e51634b6-ce99-4038-97e4-b9d86bdddae0",

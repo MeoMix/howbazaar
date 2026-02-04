@@ -265,12 +265,12 @@ const data: ParsedSkillCard[] = [
       },
       "Gold": {
         "tooltips": [
-          "The first 5 times you Burn each fight, Charge a Shield item 1 second(s)."
+          "The first 4 times you Burn each fight, Charge a Shield item 1 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "The first 10 times you Burn each fight, Charge a Shield item 1 second(s)."
+          "The first 8 times you Burn each fight, Charge a Shield item 1 second(s)."
         ]
       },
       "Legendary": {
@@ -291,7 +291,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_Incinerate.png",
     "unifiedTooltips": [
-      "The first (5/10) times you Burn each fight, Charge a Shield item 1 second(s)."
+      "The first (4/8) times you Burn each fight, Charge a Shield item 1 second(s)."
     ]
   },
   {
@@ -1266,7 +1266,8 @@ const data: ParsedSkillCard[] = [
       "Vanessa",
       "Mak",
       "Jules",
-      "Stelle"
+      "Stelle",
+      "Dooley"
     ],
     "artKey": "Icon_Skill_ImprovisedBurn.png",
     "unifiedTooltips": [
@@ -3458,7 +3459,8 @@ const data: ParsedSkillCard[] = [
     "customTags": [],
     "size": "Medium",
     "heroes": [
-      "Mak"
+      "Mak",
+      "Jules"
     ],
     "artKey": "Icon_Skill_EmergencyDraught.png",
     "unifiedTooltips": [
@@ -3735,12 +3737,12 @@ const data: ParsedSkillCard[] = [
       },
       "Gold": {
         "tooltips": [
-          "The first 5 times you Slow each fight, Charge a Heal or Regen item 1 second(s)."
+          "The first 4 times you Slow each fight, Charge a Heal or Regen item 1 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "The first 10 times you Slow each fight, Charge a Heal or Regen item 1 second(s)."
+          "The first 8 times you Slow each fight, Charge a Heal or Regen item 1 second(s)."
         ]
       },
       "Legendary": {
@@ -3763,7 +3765,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_TraumaKit.png",
     "unifiedTooltips": [
-      "The first (5/10) times you Slow each fight, Charge a Heal or Regen item 1 second(s)."
+      "The first (4/8) times you Slow each fight, Charge a Heal or Regen item 1 second(s)."
     ]
   },
   {
@@ -3982,25 +3984,23 @@ const data: ParsedSkillCard[] = [
   },
   {
     "id": "1798b189-818a-456d-b7c5-efddf8da15c2",
-    "name": "Advanced Synthetics",
-    "startingTier": "Silver",
+    "name": "Repair Mechanic",
+    "startingTier": "Gold",
     "tiers": {
       "Bronze": {
         "tooltips": []
       },
       "Silver": {
-        "tooltips": [
-          "When you Level Up, upgrade a lower tier item."
-        ]
+        "tooltips": []
       },
       "Gold": {
         "tooltips": [
-          "When you Level Up, upgrade a lower tier item."
+          "The first 1 times one of your items is destroyed each fight, repair it."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "When you Level Up, upgrade a lower tier item."
+          "The first 2 times one of your items is destroyed each fight, repair it."
         ]
       },
       "Legendary": {
@@ -4008,17 +4008,20 @@ const data: ParsedSkillCard[] = [
       }
     },
     "tags": [],
-    "hiddenTags": [
-      "Level"
-    ],
+    "hiddenTags": [],
     "customTags": [],
     "size": "Medium",
     "heroes": [
-      "Dooley"
+      "Stelle",
+      "Dooley",
+      "Pygmalien",
+      "Jules",
+      "Mak",
+      "Vanessa"
     ],
-    "artKey": "Icon_Skill_DOO_AdvancedSynthetics.png",
+    "artKey": "Icon_Skill_STE_MasterMechanic",
     "unifiedTooltips": [
-      "When you Level Up, upgrade a lower tier item."
+      "The first (1/2) times one of your items is destroyed each fight, repair it."
     ]
   },
   {
@@ -4649,17 +4652,17 @@ const data: ParsedSkillCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "Your Aquatic Weapons deal +30 Damage."
+          "Your Aquatic Weapons deal +25 Damage."
         ]
       },
       "Gold": {
         "tooltips": [
-          "Your Aquatic Weapons deal +40 Damage."
+          "Your Aquatic Weapons deal +30 Damage."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "Your Aquatic Weapons deal +50 Damage."
+          "Your Aquatic Weapons deal +35 Damage."
         ]
       },
       "Legendary": {
@@ -4679,7 +4682,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_VAN_DeadlyWaters",
     "unifiedTooltips": [
-      "Your Aquatic Weapons deal (+20/+30/+40/+50) Damage."
+      "Your Aquatic Weapons deal (+20/+25/+30/+35) Damage."
     ]
   },
   {
@@ -5106,7 +5109,8 @@ const data: ParsedSkillCard[] = [
     "customTags": [],
     "size": "Medium",
     "heroes": [
-      "Dooley"
+      "Dooley",
+      "Vanessa"
     ],
     "artKey": "Icon_Skill_DOO_BeautifulFriendship.png",
     "unifiedTooltips": [
@@ -5366,6 +5370,45 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_ScopedShot.png",
     "unifiedTooltips": [
       "Your Weapons have (+1/+2/+3) Damage for each ammo on your items."
+    ]
+  },
+  {
+    "id": "5ce84084-380c-4d9d-94ab-cfbfaa1d0bc2",
+    "name": "Energy Transference",
+    "startingTier": "Gold",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": [
+          "The first time one of your items is Destroyed each fight, Charge all your items 3 seconds"
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "The first time one of your items is Destroyed each fight, Charge all your items 5 seconds"
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [],
+    "hiddenTags": [
+      "Charge"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Common"
+    ],
+    "artKey": "Icon_Skill_MON_TheVessel",
+    "unifiedTooltips": [
+      "The first time one of your items is Destroyed each fight, Charge all your items (3/5) seconds"
     ]
   },
   {
@@ -6168,7 +6211,9 @@ const data: ParsedSkillCard[] = [
         "tooltips": []
       }
     },
-    "tags": [],
+    "tags": [
+      "Friend"
+    ],
     "hiddenTags": [
       "Burn"
     ],
@@ -6380,7 +6425,8 @@ const data: ParsedSkillCard[] = [
     "size": "Medium",
     "heroes": [
       "Vanessa",
-      "Stelle"
+      "Stelle",
+      "Dooley"
     ],
     "artKey": "Icon_Skill_Outmaneuver.png",
     "unifiedTooltips": [
@@ -6483,12 +6529,12 @@ const data: ParsedSkillCard[] = [
       },
       "Gold": {
         "tooltips": [
-          "The first 5 times you Slow each fight, Charge a Poison item 1 second(s)."
+          "The first 4 times you Slow each fight, Charge a Poison item 1 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "The first 10 times you Slow each fight, Charge a Poison item 1 second(s)."
+          "The first 8 times you Slow each fight, Charge a Poison item 1 second(s)."
         ]
       },
       "Legendary": {
@@ -6510,7 +6556,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_CreepingToxines.png",
     "unifiedTooltips": [
-      "The first (5/10) times you Slow each fight, Charge a Poison item 1 second(s)."
+      "The first (4/8) times you Slow each fight, Charge a Poison item 1 second(s)."
     ]
   },
   {
@@ -7101,7 +7147,11 @@ const data: ParsedSkillCard[] = [
     "size": "Medium",
     "heroes": [
       "Pygmalien",
-      "Dooley"
+      "Dooley",
+      "Jules",
+      "Stelle",
+      "Mak",
+      "Vanessa"
     ],
     "artKey": "Icon_Skill_DesperateFreeze.png",
     "unifiedTooltips": [
@@ -7768,12 +7818,12 @@ const data: ParsedSkillCard[] = [
       },
       "Gold": {
         "tooltips": [
-          "The first 5 times you Poison each fight, Charge a Burn item 1 second(s)."
+          "The first 4 times you Poison each fight, Charge a Burn item 1 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "The first 10 times you Poison each fight, Charge a Burn item 1 second(s)."
+          "The first 8 times you Poison each fight, Charge a Burn item 1 second(s)."
         ]
       },
       "Legendary": {
@@ -7795,7 +7845,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_SickBurn.png",
     "unifiedTooltips": [
-      "The first (5/10) times you Poison each fight, Charge a Burn item 1 second(s)."
+      "The first (4/8) times you Poison each fight, Charge a Burn item 1 second(s)."
     ]
   },
   {
@@ -8522,6 +8572,47 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_RightHanded.png",
     "unifiedTooltips": [
       "Your rightmost Weapon has (+20/+30/+40/+50) Damage."
+    ]
+  },
+  {
+    "id": "91339db7-21bb-47df-bca7-20b86555d7b1",
+    "name": "Retro-Tech",
+    "startingTier": "Gold",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": [
+          "Your leftmost Weapon has +10 Damage for each Tech item you have and its Cooldown reduced by +2% for each non-Tech item you have."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Your leftmost Weapon has +20 Damage for each Tech item you have and its Cooldown reduced by +3% for each non-Tech item you have."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Weapon"
+    ],
+    "hiddenTags": [
+      "Crit"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Common"
+    ],
+    "artKey": "Icon_Skills_MON_WhatsThis",
+    "unifiedTooltips": [
+      "Your leftmost Weapon has (+10/+20) Damage for each Tech item you have and its Cooldown reduced by (+2%/+3%) for each non-Tech item you have."
     ]
   },
   {
@@ -9770,7 +9861,7 @@ const data: ParsedSkillCard[] = [
       }
     },
     "tags": [
-      "Dinosaur"
+      "Relic"
     ],
     "hiddenTags": [],
     "customTags": [],
@@ -10533,12 +10624,12 @@ const data: ParsedSkillCard[] = [
       },
       "Gold": {
         "tooltips": [
-          "The first 5 times you Slow each fight, Charge a Weapon 1 second(s)."
+          "The first 4 times you Slow each fight, Charge a Weapon 1 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "The first 10 times you Slow each fight, Charge a Weapon 1 second(s)."
+          "The first 8 times you Slow each fight, Charge a Weapon 1 second(s)."
         ]
       },
       "Legendary": {
@@ -10549,7 +10640,8 @@ const data: ParsedSkillCard[] = [
       "Weapon"
     ],
     "hiddenTags": [
-      "SlowReference"
+      "SlowReference",
+      "Charge"
     ],
     "customTags": [],
     "size": "Medium",
@@ -10561,7 +10653,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_TemporalStrike.png",
     "unifiedTooltips": [
-      "The first (5/10) times you Slow each fight, Charge a Weapon 1 second(s)."
+      "The first (4/8) times you Slow each fight, Charge a Weapon 1 second(s)."
     ]
   },
   {
@@ -10612,7 +10704,7 @@ const data: ParsedSkillCard[] = [
   },
   {
     "id": "663ca415-c46a-46d1-8f63-c04080fb6a30",
-    "name": "Master Mechanic",
+    "name": "Advanced Synthetics",
     "startingTier": "Silver",
     "tiers": {
       "Bronze": {
@@ -10620,17 +10712,17 @@ const data: ParsedSkillCard[] = [
       },
       "Silver": {
         "tooltips": [
-          "When you Level Up, upgrade a lower tier item."
+          "When you buy this or Level Up, upgrade a lower tier item."
         ]
       },
       "Gold": {
         "tooltips": [
-          "When you Level Up, upgrade a lower tier item."
+          "When you buy this or Level Up, upgrade a lower tier item."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "When you Level Up, upgrade a lower tier item."
+          "When you buy this or Level Up, upgrade a lower tier item."
         ]
       },
       "Legendary": {
@@ -10644,11 +10736,12 @@ const data: ParsedSkillCard[] = [
     "customTags": [],
     "size": "Medium",
     "heroes": [
+      "Dooley",
       "Stelle"
     ],
-    "artKey": "Icon_Skill_STE_MasterMechanic",
+    "artKey": "Icon_Skill_DOO_AdvancedSynthetics.png",
     "unifiedTooltips": [
-      "When you Level Up, upgrade a lower tier item."
+      "When you buy this or Level Up, upgrade a lower tier item."
     ]
   },
   {
@@ -13636,12 +13729,12 @@ const data: ParsedSkillCard[] = [
       },
       "Gold": {
         "tooltips": [
-          "The first 5 times you use a Weapon each fight, Charge a Heal item 1 second(s)."
+          "The first 4 times you use a Weapon each fight, Charge a Heal item 1 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "The first 10 times you use a Weapon each fight, Charge a Heal item 1 second(s)."
+          "The first 8 times you use a Weapon each fight, Charge a Heal item 1 second(s)."
         ]
       },
       "Legendary": {
@@ -13663,7 +13756,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_HealingWeapon.png",
     "unifiedTooltips": [
-      "The first (5/10) times you use a Weapon each fight, Charge a Heal item 1 second(s)."
+      "The first (4/8) times you use a Weapon each fight, Charge a Heal item 1 second(s)."
     ]
   },
   {
@@ -13692,7 +13785,7 @@ const data: ParsedSkillCard[] = [
       }
     },
     "tags": [
-      "Tool"
+      "Food"
     ],
     "hiddenTags": [
       "Charge"
@@ -13839,24 +13932,22 @@ const data: ParsedSkillCard[] = [
   {
     "id": "76ae19fd-2783-4c21-919a-cdce66bb8948",
     "name": "Workin' Hard",
-    "startingTier": "Silver",
+    "startingTier": "Gold",
     "tiers": {
       "Bronze": {
         "tooltips": []
       },
       "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
         "tooltips": [
           "The first 4 times you Haste each fight, Charge a Tool 1 second."
         ]
       },
-      "Gold": {
-        "tooltips": [
-          "The first 8 times you Haste each fight, Charge a Tool 1 second."
-        ]
-      },
       "Diamond": {
         "tooltips": [
-          "The first 12 times you Haste each fight, Charge a Tool 1 second."
+          "The first 8 times you Haste each fight, Charge a Tool 1 second."
         ]
       },
       "Legendary": {
@@ -13878,7 +13969,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_STE_WorkinHard.png",
     "unifiedTooltips": [
-      "The first (4/8/12) times you Haste each fight, Charge a Tool 1 second."
+      "The first (4/8) times you Haste each fight, Charge a Tool 1 second."
     ]
   },
   {
@@ -14402,6 +14493,51 @@ const data: ParsedSkillCard[] = [
     "artKey": "Icon_Skill_Sabotage.png",
     "unifiedTooltips": [
       "The first (5/10) times you use a Tool each fight, Slow an item for 1 second(s)."
+    ]
+  },
+  {
+    "id": "2a8dc6f4-d77a-4231-8329-5c02e51a5230",
+    "name": "It's All Connected",
+    "startingTier": "Gold",
+    "tiers": {
+      "Bronze": {
+        "tooltips": []
+      },
+      "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
+        "tooltips": [
+          "Your items have their cooldown reduced by 2% for each of the following types you have: Tech, Friend, Apparel, Tool, Weapon."
+        ]
+      },
+      "Diamond": {
+        "tooltips": [
+          "Your items have their cooldown reduced by 3% for each of the following types you have: Tech, Friend, Apparel, Tool, Weapon."
+        ]
+      },
+      "Legendary": {
+        "tooltips": []
+      }
+    },
+    "tags": [
+      "Apparel",
+      "Weapon",
+      "Tool",
+      "Tech",
+      "Friend"
+    ],
+    "hiddenTags": [
+      "Cooldown"
+    ],
+    "customTags": [],
+    "size": "Medium",
+    "heroes": [
+      "Common"
+    ],
+    "artKey": "Icon_Skills_MON_TheyAreComing",
+    "unifiedTooltips": [
+      "Your items have their cooldown reduced by (2%/3%) for each of the following types you have: Tech, Friend, Apparel, Tool, Weapon."
     ]
   },
   {
@@ -15564,12 +15700,12 @@ const data: ParsedSkillCard[] = [
       },
       "Gold": {
         "tooltips": [
-          "The first 5 times you Slow each fight, Charge a Burn item 1 second(s)."
+          "The first 4 times you Slow each fight, Charge a Burn item 1 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "The first 10 times you Slow each fight, Charge a Burn item 1 second(s)."
+          "The first 8 times you Slow each fight, Charge a Burn item 1 second(s)."
         ]
       },
       "Legendary": {
@@ -15592,7 +15728,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_SlowBurn.png",
     "unifiedTooltips": [
-      "The first (5/10) times you Slow each fight, Charge a Burn item 1 second(s)."
+      "The first (4/8) times you Slow each fight, Charge a Burn item 1 second(s)."
     ]
   },
   {
@@ -15642,24 +15778,22 @@ const data: ParsedSkillCard[] = [
   {
     "id": "3b4c3700-6c77-4954-a3e1-dfeaeab08c4a",
     "name": "Hardly Workin'",
-    "startingTier": "Silver",
+    "startingTier": "Gold",
     "tiers": {
       "Bronze": {
         "tooltips": []
       },
       "Silver": {
+        "tooltips": []
+      },
+      "Gold": {
         "tooltips": [
           "The first 4 times you Slow each fight, Charge a Regen item 1 second(s)."
         ]
       },
-      "Gold": {
-        "tooltips": [
-          "The first 8 times you Slow each fight, Charge a Regen item 1 second(s)."
-        ]
-      },
       "Diamond": {
         "tooltips": [
-          "The first 12 times you Slow each fight, Charge a Regen item 1 second(s)."
+          "The first 8 times you Slow each fight, Charge a Regen item 1 second(s)."
         ]
       },
       "Legendary": {
@@ -15680,7 +15814,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_HardlyWorkin.png",
     "unifiedTooltips": [
-      "The first (4/8/12) times you Slow each fight, Charge a Regen item 1 second(s)."
+      "The first (4/8) times you Slow each fight, Charge a Regen item 1 second(s)."
     ]
   },
   {
@@ -15730,24 +15864,22 @@ const data: ParsedSkillCard[] = [
   {
     "id": "dec273b3-155e-4fbd-9629-5dbd2900e032",
     "name": "Coolant Leak",
-    "startingTier": "Silver",
+    "startingTier": "Gold",
     "tiers": {
       "Bronze": {
         "tooltips": []
       },
       "Silver": {
-        "tooltips": [
-          "The first 3 times you use your rightmost item each fight, Charge a Freeze item 1 second(s)."
-        ]
+        "tooltips": []
       },
       "Gold": {
         "tooltips": [
-          "The first 6 times you use your rightmost item each fight, Charge a Freeze item 1 second(s)."
+          "The first 4 times you use your rightmost item each fight, Charge a Freeze item 1 second(s)."
         ]
       },
       "Diamond": {
         "tooltips": [
-          "The first 9 times you use your rightmost item each fight, Charge a Freeze item 1 second(s)."
+          "The first 8 times you use your rightmost item each fight, Charge a Freeze item 1 second(s)."
         ]
       },
       "Legendary": {
@@ -15770,7 +15902,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_CoolantLeak.png",
     "unifiedTooltips": [
-      "The first (3/6/9) times you use your rightmost item each fight, Charge a Freeze item 1 second(s)."
+      "The first (4/8) times you use your rightmost item each fight, Charge a Freeze item 1 second(s)."
     ]
   },
   {
@@ -16128,7 +16260,7 @@ const data: ParsedSkillCard[] = [
       },
       "Diamond": {
         "tooltips": [
-          "When you use a Flying item, an item adjacent to it starts Flying."
+          "When you use a Flying item, adjacent items start Flying."
         ]
       },
       "Legendary": {
@@ -16146,7 +16278,7 @@ const data: ParsedSkillCard[] = [
     ],
     "artKey": "Icon_Skill_STE_DisplacementRoll",
     "unifiedTooltips": [
-      "When you use a Flying item, an item adjacent to it starts Flying."
+      "When you use a Flying item, adjacent items start Flying."
     ]
   },
   {
