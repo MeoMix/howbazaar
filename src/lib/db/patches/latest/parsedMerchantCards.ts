@@ -291,7 +291,7 @@ const data: ParsedMerchantCard[] = [
     "heroes": [
       "Common"
     ],
-    "description": "Sells items. Always sells a discounted item."
+    "description": "Sells items. Always sells discounted items."
   },
   {
     "id": "816e6ba0-8f5f-412e-9756-8e1901dd9d49",
