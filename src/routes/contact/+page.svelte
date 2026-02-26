@@ -20,16 +20,7 @@
         </li>
         <li class="mb-8">
             <p>
-                I would love to hear your ideas, feature requests, and bugs. I
-                have lists that show everything I've got planned in my
-                <a
-                    class="font-bold text-blue-600"
-                    href="https://discord.gg/scWr32PJfv"
-                    target="_blank">HowBazaar Discord Server</a
-                >.
-            </p>
-            <p>
-                If you're not partial to Discord, I can be reached via Reddit
+                I can be reached via Reddit
                 <a
                     class="font-bold text-blue-600"
                     href="https://www.reddit.com/user/MeoMix/"
