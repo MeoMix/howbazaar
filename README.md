@@ -1,38 +1,21 @@
-# sv
+# How Bazaar
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+> **Retired.** How Bazaar (howbazaar.gg) was an unofficial reference site for items, skills, monsters, and merchants in The Bazaar. Its data stopped updating after the February 2026 patch and the site has been sunset.
+>
+> The live domain now serves a single static farewell page from [`docs/`](docs/) via GitHub Pages. The last full version of the app is tagged [`archive-2026-02-04`](https://github.com/MeoMix/howbazaar/releases/tag/archive-2026-02-04).
+>
+> Questions or hellos: [Meo.DDR@gmail.com](mailto:Meo.DDR@gmail.com) · [github.com/MeoMix](https://github.com/MeoMix) · [linkedin.com/in/MeoMix](https://www.linkedin.com/in/MeoMix)
 
-## Creating a project
+## What's here
 
-If you're seeing this, you've probably already done this step. Congrats!
+- `docs/` — the static sunset page that GitHub Pages publishes to www.howbazaar.gg.
+- `src/`, `scripts/`, `static/` — the original SvelteKit app and the data pipeline that parsed game files into the site's JSON. Kept for reference; it was deployed on Vercel and expects a `PUBLIC_CDN_URL` pointing at an image CDN that no longer exists.
 
-```bash
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## Running the old app locally
 
 ```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+npm install
+PUBLIC_CDN_URL=http://localhost:5173 npm run dev
 ```
 
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+Images will not load without the CDN, but the UI and data browsing still work.

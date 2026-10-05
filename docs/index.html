@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>How Bazaar</title>
+	<meta name="description" content="How Bazaar has been retired. So long, and thanks for all the fish." />
+	<meta name="robots" content="noindex" />
+	<link rel="icon" href="/favicon.avif" type="image/avif" />
+	<style>
+		:root {
+			--bg: #150c0b;
+			--text: #f0cead;
+			--muted: #e4b181;
+			--dim: #7c6d5f;
+			--accent: #ff9c1c;
+			--rule: #443027;
+		}
+		* { box-sizing: border-box; }
+		html, body { margin: 0; padding: 0; }
+		body {
+			min-height: 100vh;
+			display: flex;
+			flex-direction: column;
+			background: var(--bg);
+			color: var(--text);
+			font: 18px/1.65 ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+			-webkit-font-smoothing: antialiased;
+		}
+		header, main, footer {
+			width: 100%;
+			max-width: 40rem;
+			margin: 0 auto;
+			padding: 0 1rem;
+		}
+		header {
+			padding-top: 1.25rem;
+			padding-bottom: 1.25rem;
+			font-size: 1.25rem;
+			font-weight: 600;
+		}
+		.rule {
+			height: 1px;
+			background: linear-gradient(to right, transparent, var(--accent), transparent);
+		}
+		main {
+			flex: 1;
+			padding-top: 3rem;
+			padding-bottom: 3rem;
+		}
+		h1 {
+			margin: 0 0 1.5rem;
+			font-size: clamp(1.9rem, 6vw, 2.75rem);
+			line-height: 1.15;
+			font-weight: 700;
+		}
+		p { margin: 0 0 1.1rem; }
+		.muted { color: var(--muted); }
+		h2 {
+			margin: 2.5rem 0 0.75rem;
+			font-size: 1.1rem;
+			text-transform: uppercase;
+			letter-spacing: 0.08em;
+			color: var(--dim);
+			font-weight: 600;
+		}
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+		li { margin: 0 0 0.6rem; }
+		li span {
+			display: inline-block;
+			min-width: 5.5rem;
+			color: var(--dim);
+		}
+		a {
+			color: var(--accent);
+			font-weight: 600;
+			text-decoration: none;
+			border-bottom: 1px solid transparent;
+			overflow-wrap: anywhere;
+		}
+		a:hover, a:focus-visible {
+			border-bottom-color: var(--accent);
+			outline: none;
+		}
+		.signoff { margin-top: 2.5rem; }
+		footer {
+			padding-top: 1.25rem;
+			padding-bottom: 1.5rem;
+			text-align: center;
+			font-size: 0.85rem;
+			color: var(--dim);
+		}
+	</style>
+</head>
+<body>
+	<header>How Bazaar</header>
+	<div class="rule"></div>
+
+	<main>
+		<h1>So long, and thanks for all the fish.</h1>
+
+		<p>
+			How Bazaar has been retired. The item, skill, monster, and merchant data
+			here stopped updating after the February 2026 patch, and rather than let
+			it drift further out of date the site is now closed.
+		</p>
+		<p class="muted">
+			Thank you to everyone who used it, reported bugs, and sent kind words.
+			It was a lot of fun to build.
+		</p>
+
+		<h2>Reach me</h2>
+		<ul>
+			<li><span>Email</span> <a href="mailto:Meo.DDR@gmail.com">Meo.DDR@gmail.com</a></li>
+			<li><span>GitHub</span> <a href="https://github.com/MeoMix" rel="me">github.com/MeoMix</a></li>
+			<li><span>LinkedIn</span> <a href="https://www.linkedin.com/in/MeoMix" rel="me">linkedin.com/in/MeoMix</a></li>
+		</ul>
+
+		<p class="signoff">
+			The source remains available at
+			<a href="https://github.com/MeoMix/howbazaar">github.com/MeoMix/howbazaar</a>.
+		</p>
+		<p>~ Meo</p>
+	</main>
+
+	<div class="rule"></div>
+	<footer>How Bazaar was an unofficial fan project and is not affiliated with Tempo.</footer>
+</body>
+</html>
